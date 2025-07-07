@@ -1,0 +1,109 @@
+EVENT_ID=20
+EVENT_NAME=Zオーダー馬
+EVENT_X=8
+EVENT_Y=18
+EVENT_PAGE=1
+OPTION_DATA_NUM=0
+EVENT_PAGE_NUM=1
+EVENT_PAGE=0
+EVENT_TILE_ID=-1
+GRAPHIC_FILENAME=CharaChip/Animal_Horse_pochi.png
+EVENT_DIRECTION=3
+EVENT_PATTERN=1
+EVENT_OPACITY=255
+EVENT_BLENDTYPE=0
+EVENT_TRIGGER_TYPE=0
+EVENT_CONDITION_0_USE=32
+EVENT_CONDITION_TARGET_0=1000000
+EVENT_CONDITION_VALUE_0=0
+EVENT_CONDITION_1_USE=32
+EVENT_CONDITION_TARGET_1=1000000
+EVENT_CONDITION_VALUE_1=0
+EVENT_CONDITION_2_USE=32
+EVENT_CONDITION_TARGET_2=1000000
+EVENT_CONDITION_VALUE_2=0
+EVENT_CONDITION_3_USE=32
+EVENT_CONDITION_TARGET_3=1000000
+EVENT_CONDITION_VALUE_3=0
+ANIME_SPEED=3
+MOVE_SPEED=3
+MOVE_FREQUENCY=3
+MOVE_TYPE=0
+CHARA_OPTION_FLAG=35
+ROUTE_OPTION_FLAG=2
+ROUTE_COMMAND_NUM=0
+OPTION_VAL_NUM=3
+OPTION_VAL_0=0
+OPTION_VAL_1=0
+OPTION_VAL_2=0
+COMMAND_NUM=32
+--
+WoditorEvCOMMAND_START
+[101][0,1]<0>()("「やあ！<\n>　ぼくはピクチャのZオーダーについて<\n>　紹介する馬だよ！")
+[102][1,1]<0>(1)("Zオーダーの例を見たい")
+[401][1,0]<0>(2)()
+[101][0,1]<1>()("「じゃあ見本を見せるね！<\n>　まずピクチャ番号10、15、20で<\n>　3つのピクチャを表示するよ！")
+[150][11,1]<1>(24608,20,0,1,1,1,255,140,85,100,0)("<C>10<\n>↓")
+[150][11,1]<1>(4096,5,0,1,1,1,255,140,115,400,0)("Picture/FaceGraphic_Edy.png")
+[290][7,0]<1>(32,0,0,26,0,-20,0)()
+[180][1,0]<1>(15)()
+[150][11,1]<1>(24608,21,0,1,1,1,255,160,90,100,0)("<C>15<\n>↓")
+[150][11,1]<1>(4096,10,0,1,1,1,255,160,120,400,0)("Picture/FaceGraphic_Wolfarl.png")
+[290][7,0]<1>(32,0,0,26,0,-20,0)()
+[180][1,0]<1>(15)()
+[150][11,1]<1>(24608,22,0,1,1,1,255,180,97,100,0)("<C>20<\n>↓")
+[150][11,1]<1>(4096,15,0,1,1,1,255,180,120,400,0)("Picture/FaceGraphic_Yuichi.png")
+[290][7,0]<1>(32,0,0,26,0,-20,0)()
+[180][1,0]<1>(15)()
+[101][0,1]<1>()("「さあ、3枚かさなって表示されたね！<\n>　表示されたばかりのピクチャは、<\n>　Zオーダーは【0】として扱われるよ！")
+[101][0,1]<1>()("「ここで<\n>　【エフェクト】コマンドの「ピクチャ」から、<\n>　真ん中のウルファールさんだけ<\n>　Zオーダーを【1】に変更してみるよ！")
+[180][1,0]<1>(5)()
+[290][7,0]<1>(448,0,10,10,1,0,0)()
+[290][7,0]<1>(448,0,21,21,1,0,0)()
+[180][1,0]<1>(25)()
+[101][0,1]<1>()("「ほら、ウルファールさんのピクチャ番号が<\n>　15番のままなのに、20番の夕一くんより<\n>　上に表示されるのが分かる？")
+[101][0,1]<1>()("「Zオーダーは、こんな風にピクチャ番号による<\n>　上下を無視して表示の優先度を<\n>　変えられる機能なんだ！")
+[150][6,0]<1>(16777218,5,120,0,0,25)()
+[101][0,1]<1>()("\f[10]「ただし、ピクチャ番号が<\n>　【-1以下】（フォグより下・★チップより上）と<\n>　【0以上】（フォグより上に表示）みたいな境界は<\n>　Zオーダーがいくら大きくても越えられないから気をつけて！")
+[101][0,1]<1>()("「Zオーダーで越えられないピクチャの境界は<\n>　ピクチャ番号【10万】【0】【-10万】、<\n>　のところにあるから、<\n>　ピクチャ番号を決めるときは注意だよ！")
+[0][0,0]<1>()()
+[421][1,0]<0>(0)()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+■Show Message:「やあ！\n　ぼくはピクチャのZオーダーについて\n　紹介する馬だよ！
+■Show Choice:/ [1] Zオーダーの例を見たい 
+-◇Case: Choice [1] Zオーダーの例を見たい                              ↓
+ |■Show Message:「じゃあ見本を見せるね！\n　まずピクチャ番号10、15、20で\n　3つのピクチャを表示するよ！
+ |■Picture Show: 20 [Bottom-Center] String[<C>10\n↓] X:140 Y:85 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ |■Picture Show: 5 [Center] File[Picture/FaceGraphic_Edy.png] X:140 Y:115 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 400% / Color R[100] G[100] B[100]
+ |■Effect Picture: 0 to 26 [Shift Position (Final Value)] Shift X 0 / Shift Y -20  [0]Frames
+ |■Wait: 15 Frames
+ |■Picture Show: 21 [Bottom-Center] String[<C>15\n↓] X:160 Y:90 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ |■Picture Show: 10 [Center] File[Picture/FaceGraphic_Wolfarl.png] X:160 Y:120 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 400% / Color R[100] G[100] B[100]
+ |■Effect Picture: 0 to 26 [Shift Position (Final Value)] Shift X 0 / Shift Y -20  [0]Frames
+ |■Wait: 15 Frames
+ |■Picture Show: 22 [Bottom-Center] String[<C>20\n↓] X:180 Y:97 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ |■Picture Show: 15 [Center] File[Picture/FaceGraphic_Yuichi.png] X:180 Y:120 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 400% / Color R[100] G[100] B[100]
+ |■Effect Picture: 0 to 26 [Shift Position (Final Value)] Shift X 0 / Shift Y -20  [0]Frames
+ |■Wait: 15 Frames
+ |■Show Message:「さあ、3枚かさなって表示されたね！\n　表示されたばかりのピクチャは、\n　Zオーダーは【0】として扱われるよ！
+ |■Show Message:「ここで\n　【エフェクト】コマンドの「ピクチャ」から、\n　真ん中のウルファールさんだけ\n　Zオーダーを【1】に変更してみるよ！
+ |■Wait: 5 Frames
+ |■Effect Picture: 10 [Z-Order]  Change to [1]
+ |■Effect Picture: 21 [Z-Order]  Change to [1]
+ |■Wait: 25 Frames
+ |■Show Message:「ほら、ウルファールさんのピクチャ番号が\n　15番のままなのに、20番の夕一くんより\n　上に表示されるのが分かる？
+ |■Show Message:「Zオーダーは、こんな風にピクチャ番号による\n　上下を無視して表示の優先度を\n　変えられる機能なんだ！
+ |■Picture Erase: 5 to 25  / 120(0)Frames
+ |■Show Message:\f[10]「ただし、ピクチャ番号が\n　【-1以下】（フォグより下・★チップより上）と\n　【0以上】（フォグより上に表示）みたいな境界は\n　Zオーダーがいくら大きくても越えられないから気をつけて！
+ |■Show Message:「Zオーダーで越えられないピクチャの境界は\n　ピクチャ番号【10万】【0】【-10万】、\n　のところにあるから、\n　ピクチャ番号を決めるときは注意だよ！
+ |■
+-◇Case: Cancel
+ |■
+◇End◇
+■
+[COMMAND_TEXT_END]

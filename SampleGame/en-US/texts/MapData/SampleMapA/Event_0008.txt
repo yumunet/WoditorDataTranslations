@@ -1,0 +1,89 @@
+EVENT_ID=8
+EVENT_NAME=エディ
+EVENT_X=32
+EVENT_Y=6
+EVENT_PAGE=1
+OPTION_DATA_NUM=0
+EVENT_PAGE_NUM=1
+EVENT_PAGE=0
+EVENT_TILE_ID=-1
+GRAPHIC_FILENAME=CharaChip/Special_Edy.png
+EVENT_DIRECTION=2
+EVENT_PATTERN=1
+EVENT_OPACITY=255
+EVENT_BLENDTYPE=0
+EVENT_TRIGGER_TYPE=0
+EVENT_CONDITION_0_USE=33
+EVENT_CONDITION_TARGET_0=1000000
+EVENT_CONDITION_VALUE_0=0
+EVENT_CONDITION_1_USE=32
+EVENT_CONDITION_TARGET_1=1000000
+EVENT_CONDITION_VALUE_1=0
+EVENT_CONDITION_2_USE=32
+EVENT_CONDITION_TARGET_2=1000000
+EVENT_CONDITION_VALUE_2=0
+EVENT_CONDITION_3_USE=32
+EVENT_CONDITION_TARGET_3=1000000
+EVENT_CONDITION_VALUE_3=0
+ANIME_SPEED=3
+MOVE_SPEED=3
+MOVE_FREQUENCY=3
+MOVE_TYPE=0
+CHARA_OPTION_FLAG=35
+ROUTE_OPTION_FLAG=2
+ROUTE_COMMAND_NUM=0
+OPTION_VAL_NUM=3
+OPTION_VAL_0=0
+OPTION_VAL_1=0
+OPTION_VAL_2=0
+COMMAND_NUM=22
+--
+WoditorEvCOMMAND_START
+[101][0,1]<0>()("P・G・エディ<\n>「オレの名はP･G･エディ！<\n>　ブラジルからやってきたオッサンだ！")
+[101][0,1]<0>()("P・G・エディ<\n>「オレは強いヤツが大好きだ！")
+[101][0,1]<0>()("P・G・エディ<\n>「あんたがレベル10以上になってたら<\n>　仲間になってやるよ！")
+[103][0,1]<0>()("ウルファールのレベルを取得し、セルフ変数1へ代入")
+[210][5,0]<0>(500022,16777218,12,10,1100001)()
+[103][0,1]<0>()("10以上になっていれば仲間になる")
+[111][4,0]<0>(1,1100001,10,1)()
+[401][1,0]<0>(1)()
+[101][0,1]<1>()("ウルファールは、すでに自分が<\n>レベル\self[1]になっていることを告げた。")
+[101][0,1]<1>()("P・G・エディ<\n>「おお、ならいいぞ！<\n>　嬢ちゃんについていこうじゃないか！")
+[103][0,1]<1>()("エディを仲間にする")
+[210][4,0]<1>(500005,2,0,13)()
+[103][0,1]<1>()("セルフ変数0を 1 にする ")
+[103][0,1]<1>()("（このページの表示条件を満たさなくなり、表示されなくなる）")
+[121][4,0]<1>(1100000,1,0,0)()
+[140][6,1]<1>(33554464,0,0,0,100,100)("SE/System_Get2_wolf.ogg")
+[101][0,1]<1>()("P･G･エディが仲間になった！")
+[103][0,1]<1>()("コック出現変数を 1 にする")
+[121][4,0]<1>(2000000,1,0,0)()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+■Show Message:P・G・エディ\n「オレの名はP･G･エディ！\n　ブラジルからやってきたオッサンだ！
+■Show Message:P・G・エディ\n「オレは強いヤツが大好きだ！
+■Show Message:P・G・エディ\n「あんたがレベル10以上になってたら\n　仲間になってやるよ！
+▼ ウルファールのレベルを取得し、セルフ変数1へ代入
+■Call Event: このEvのSelf1 = Common 22: [ ▲メンバー情報取得[数値] ] / 12:ウルファール / 10:レベル
+▼ 10以上になっていれば仲間になる
+■Condition (Number):   [1] このEvのSelf1 >=  10  
+-◇Condition:  [1]  [ このEvのSelf1 >= 10   ] Case↓
+ |■Show Message:ウルファールは、すでに自分が\nレベル\self[1]になっていることを告げた。
+ |■Show Message:P・G・エディ\n「おお、ならいいぞ！\n　嬢ちゃんについていこうじゃないか！
+ |▼ エディを仲間にする
+ |■Call Event: Common 5: [ ○メンバーの増減 ] / 0:仲間に加える / 13:P･G･エディ
+ |▼ セルフ変数0を 1 にする 
+ |▼ （このページの表示条件を満たさなくなり、表示されなくなる）
+ |■Set Variable: このEvのSelf0 = 1 + 0 
+ |■Sound: SE File[SE/System_Get2_wolf.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
+ |■Show Message:P･G･エディが仲間になった！
+ |▼ コック出現変数を 1 にする
+ |■Set Variable: V0[[サンプルゲーム]コック出現] = 1 + 0 
+ |■
+◇End◇
+■
+[COMMAND_TEXT_END]

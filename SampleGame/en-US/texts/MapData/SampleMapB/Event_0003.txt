@@ -1,0 +1,63 @@
+EVENT_ID=3
+EVENT_NAME=お店
+EVENT_X=19
+EVENT_Y=13
+EVENT_PAGE=1
+OPTION_DATA_NUM=0
+EVENT_PAGE_NUM=1
+EVENT_PAGE=0
+EVENT_TILE_ID=-1
+GRAPHIC_FILENAME=CharaChip/Chara_Civilian_Female_B.png
+EVENT_DIRECTION=2
+EVENT_PATTERN=1
+EVENT_OPACITY=255
+EVENT_BLENDTYPE=0
+EVENT_TRIGGER_TYPE=0
+EVENT_CONDITION_0_USE=32
+EVENT_CONDITION_TARGET_0=1000000
+EVENT_CONDITION_VALUE_0=0
+EVENT_CONDITION_1_USE=32
+EVENT_CONDITION_TARGET_1=1000000
+EVENT_CONDITION_VALUE_1=0
+EVENT_CONDITION_2_USE=32
+EVENT_CONDITION_TARGET_2=1000000
+EVENT_CONDITION_VALUE_2=0
+EVENT_CONDITION_3_USE=32
+EVENT_CONDITION_TARGET_3=1000000
+EVENT_CONDITION_VALUE_3=0
+ANIME_SPEED=3
+MOVE_SPEED=3
+MOVE_FREQUENCY=3
+MOVE_TYPE=0
+CHARA_OPTION_FLAG=35
+ROUTE_OPTION_FLAG=2
+ROUTE_COMMAND_NUM=0
+OPTION_VAL_NUM=3
+OPTION_VAL_0=0
+OPTION_VAL_1=0
+OPTION_VAL_2=0
+COMMAND_NUM=9
+--
+WoditorEvCOMMAND_START
+[101][0,1]<0>()("「いらっしゃい！<\n>　搭載されている基本システムでは<\n>　こんな感じで買い物ができますよ。")
+[210][2,0]<0>(500033,0)()
+[210][6,0]<0>(500034,4,1,14,-1,-1)()
+[210][6,0]<0>(500034,4,2,-3,1,-1)()
+[210][6,0]<0>(500034,4,3,-3,-1,29)()
+[210][6,0]<0>(500034,4,3,-3,-1,30)()
+[210][6,0]<0>(500034,4,1,18,-1,-1)()
+[210][3,0]<0>(500035,1,3)()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+■Show Message:「いらっしゃい！\n　搭載されている基本システムでは\n　こんな感じで買い物ができますよ。
+■Call Event: Common 33: [ 【1】 お店 初期化 ]
+■Call Event: Common 34: [ 【2】 お店 商品の追加 ] / 1:ｱｲﾃﾑ[A] / 14:薬ビン / -1:<なし> / -1:<なし>
+■Call Event: Common 34: [ 【2】 お店 商品の追加 ] / 2:武器[B] / -3:<なし> / 1:ミニブレイド / -1:<なし>
+■Call Event: Common 34: [ 【2】 お店 商品の追加 ] / 3:防具[C] / -3:<なし> / -1:<なし> / 29:マシンガン
+■Call Event: Common 34: [ 【2】 お店 商品の追加 ] / 3:防具[C] / -3:<なし> / -1:<なし> / 30:アイテム袋
+■Call Event: Common 34: [ 【2】 お店 商品の追加 ] / 1:ｱｲﾃﾑ[A] / 18:マシンガンの弾 / -1:<なし> / -1:<なし>
+■Call Event: Common 35: [ 【3】 お店処理 実行 ] / 3:売り・買い 両方
+■
+[COMMAND_TEXT_END]

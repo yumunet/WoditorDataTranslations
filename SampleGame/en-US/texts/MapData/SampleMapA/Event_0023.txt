@@ -1,0 +1,77 @@
+EVENT_ID=23
+EVENT_NAME=合成音声魔法使い
+EVENT_X=23
+EVENT_Y=25
+EVENT_PAGE=1
+OPTION_DATA_NUM=0
+EVENT_PAGE_NUM=1
+EVENT_PAGE=0
+EVENT_TILE_ID=-1
+GRAPHIC_FILENAME=CharaChip/Chara_Witch1_USM.png
+EVENT_DIRECTION=3
+EVENT_PATTERN=1
+EVENT_OPACITY=255
+EVENT_BLENDTYPE=0
+EVENT_TRIGGER_TYPE=0
+EVENT_CONDITION_0_USE=32
+EVENT_CONDITION_TARGET_0=1000000
+EVENT_CONDITION_VALUE_0=0
+EVENT_CONDITION_1_USE=32
+EVENT_CONDITION_TARGET_1=1000000
+EVENT_CONDITION_VALUE_1=0
+EVENT_CONDITION_2_USE=32
+EVENT_CONDITION_TARGET_2=1000000
+EVENT_CONDITION_VALUE_2=0
+EVENT_CONDITION_3_USE=32
+EVENT_CONDITION_TARGET_3=1000000
+EVENT_CONDITION_VALUE_3=0
+ANIME_SPEED=3
+MOVE_SPEED=3
+MOVE_FREQUENCY=3
+MOVE_TYPE=0
+CHARA_OPTION_FLAG=35
+ROUTE_OPTION_FLAG=2
+ROUTE_COMMAND_NUM=0
+OPTION_VAL_NUM=3
+OPTION_VAL_0=0
+OPTION_VAL_1=0
+OPTION_VAL_2=0
+COMMAND_NUM=16
+--
+WoditorEvCOMMAND_START
+[101][0,1]<0>()("「私は魔法使い。<\n>　Ver3.6から搭載された合成音声を聞いてみない？")
+[102][1,2]<0>(2)("日本語の音声を聞きたい","英語の音声を聞きたい")
+[401][1,0]<0>(2)()
+[122][3,1]<1>(3000000,262656,0)("<<MS_VOICE_PLAY/SPEED=1/VOL=100/VOICE=Microsoft Haruka Desktop - Japanese>>こんにちは！　日本語でしゃべりまーす")
+[101][0,1]<1>()("「こんにちは！<\n>　日本語でしゃべりまーす。")
+[101][0,1]<1>()("「どう？<\n>　Windowsに入ってない場合は<\n>　音が出ないこともあるから、<\n>　鳴ってなかったらごめんなさいね。")
+[0][0,0]<1>()()
+[401][1,0]<0>(3)()
+[122][3,1]<1>(3000000,262656,0)("<<MS_VOICE_PLAY/SPEED=1/VOL=100/VOICE=Microsoft Zira Desktop - English (United States)>>Hi there! I'm a witch who speaks English!")
+[101][0,1]<1>()("「Hi there! （こんにちは！）<\n>　I'm a witch who speaks English!<\n>（私は英語をしゃべる魔法使いです！）")
+[101][0,1]<1>()("「どう？<\n>　Windowsに入ってない場合は<\n>　音が出ないこともあるから、<\n>　鳴ってなかったらごめんなさいね。")
+[0][0,0]<1>()()
+[421][1,0]<0>(0)()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+■Show Message:「私は魔法使い。\n　Ver3.6から搭載された合成音声を聞いてみない？
+■Show Choice:/ [1] 日本語の音声を聞きたい / [2] 英語の音声を聞きたい 
+-◇Case: Choice [1] 日本語の音声を聞きたい                              ↓
+ |■Set String: S0[[サンプル]一時文字列] =<Execute Special Code>"<<MS_VOICE_PLAY/SPEED=1/VOL=100/VOICE=Microsoft Haruka Desktop - Japanese>>こんにちは！　日本語でしゃべりまーす"
+ |■Show Message:「こんにちは！\n　日本語でしゃべりまーす。
+ |■Show Message:「どう？\n　Windowsに入ってない場合は\n　音が出ないこともあるから、\n　鳴ってなかったらごめんなさいね。
+ |■
+-◇Case: Choice [2] 英語の音声を聞きたい                               ↓
+ |■Set String: S0[[サンプル]一時文字列] =<Execute Special Code>"<<MS_VOICE_PLAY/SPEED=1/VOL=100/VOICE=Microsoft Zira Desktop - English (United States)>>Hi there! I'..."
+ |■Show Message:「Hi there! （こんにちは！）\n　I'm a witch who speaks English!\n（私は英語をしゃべる魔法使いです！）
+ |■Show Message:「どう？\n　Windowsに入ってない場合は\n　音が出ないこともあるから、\n　鳴ってなかったらごめんなさいね。
+ |■
+-◇Case: Cancel
+ |■
+◇End◇
+■
+[COMMAND_TEXT_END]

@@ -1,0 +1,67 @@
+EVENT_ID=10
+EVENT_NAME=コックの看板
+EVENT_X=18
+EVENT_Y=9
+EVENT_PAGE=1
+OPTION_DATA_NUM=0
+EVENT_PAGE_NUM=1
+EVENT_PAGE=0
+EVENT_TILE_ID=659
+GRAPHIC_FILENAME=
+EVENT_DIRECTION=2
+EVENT_PATTERN=1
+EVENT_OPACITY=255
+EVENT_BLENDTYPE=0
+EVENT_TRIGGER_TYPE=0
+EVENT_CONDITION_0_USE=32
+EVENT_CONDITION_TARGET_0=1000000
+EVENT_CONDITION_VALUE_0=0
+EVENT_CONDITION_1_USE=32
+EVENT_CONDITION_TARGET_1=1000000
+EVENT_CONDITION_VALUE_1=0
+EVENT_CONDITION_2_USE=32
+EVENT_CONDITION_TARGET_2=1000000
+EVENT_CONDITION_VALUE_2=0
+EVENT_CONDITION_3_USE=32
+EVENT_CONDITION_TARGET_3=1000000
+EVENT_CONDITION_VALUE_3=0
+ANIME_SPEED=3
+MOVE_SPEED=3
+MOVE_FREQUENCY=3
+MOVE_TYPE=0
+CHARA_OPTION_FLAG=99
+ROUTE_OPTION_FLAG=2
+ROUTE_COMMAND_NUM=0
+OPTION_VAL_NUM=3
+OPTION_VAL_0=0
+OPTION_VAL_1=0
+OPTION_VAL_2=0
+COMMAND_NUM=11
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("エディを仲間にしたとき、V0が1になります。")
+[103][0,1]<0>()("1 になっていると、この看板のメッセージが変化します。")
+[111][7,0]<0>(2,2000000,0,2,2000000,1,2)()
+[401][1,0]<0>(1)()
+[101][0,1]<1>()("「ニワトリも喜ぶパン屋さん」<\n>　ただいま準備中です。")
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[101][0,1]<1>()("「ニワトリも喜ぶパン屋さん」<\n>　ただいま開店中です！<\n> 　どんどん買ってね！")
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ エディを仲間にしたとき、V0が1になります。
+▼ 1 になっていると、この看板のメッセージが変化します。
+■Condition (Number):   [1] V0[[サンプルゲーム]コック出現] ==  0  /  [2] V0[[サンプルゲーム]コック出現] ==  1  
+-◇Condition:  [1]  [ V0[[サンプルゲーム]コック出現] == 0   ] Case↓
+ |■Show Message:「ニワトリも喜ぶパン屋さん」\n　ただいま準備中です。
+ |■
+-◇Condition:  [2]  [ V0[[サンプルゲーム]コック出現] == 1   ] Case↓
+ |■Show Message:「ニワトリも喜ぶパン屋さん」\n　ただいま開店中です！\n 　どんどん買ってね！
+ |■
+◇End◇
+■
+[COMMAND_TEXT_END]

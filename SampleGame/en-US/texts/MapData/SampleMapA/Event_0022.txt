@@ -1,0 +1,145 @@
+EVENT_ID=22
+EVENT_NAME=サウンドのパン紹介オウム
+EVENT_X=23
+EVENT_Y=18
+EVENT_PAGE=1
+OPTION_DATA_NUM=0
+EVENT_PAGE_NUM=1
+EVENT_PAGE=0
+EVENT_TILE_ID=-1
+GRAPHIC_FILENAME=CharaChip/Animal_Parrot_tapis.png
+EVENT_DIRECTION=2
+EVENT_PATTERN=1
+EVENT_OPACITY=255
+EVENT_BLENDTYPE=0
+EVENT_TRIGGER_TYPE=0
+EVENT_CONDITION_0_USE=32
+EVENT_CONDITION_TARGET_0=1000000
+EVENT_CONDITION_VALUE_0=0
+EVENT_CONDITION_1_USE=32
+EVENT_CONDITION_TARGET_1=1000000
+EVENT_CONDITION_VALUE_1=0
+EVENT_CONDITION_2_USE=32
+EVENT_CONDITION_TARGET_2=1000000
+EVENT_CONDITION_VALUE_2=0
+EVENT_CONDITION_3_USE=32
+EVENT_CONDITION_TARGET_3=1000000
+EVENT_CONDITION_VALUE_3=0
+ANIME_SPEED=3
+MOVE_SPEED=3
+MOVE_FREQUENCY=3
+MOVE_TYPE=0
+CHARA_OPTION_FLAG=39
+ROUTE_OPTION_FLAG=2
+ROUTE_COMMAND_NUM=0
+OPTION_VAL_NUM=3
+OPTION_VAL_0=0
+OPTION_VAL_1=0
+OPTION_VAL_2=0
+COMMAND_NUM=50
+--
+WoditorEvCOMMAND_START
+[101][0,1]<0>()("「やあ！　サウンドのパン機能を<\n>　体験してみたくない！？")
+[102][1,1]<0>(1)("サウンドのパン機能を試す")
+[401][1,0]<0>(2)()
+[101][0,1]<1>()("「じゃあ行くよ！<\n>　音のみなもとが左右に移動してるように<\n>　聞こえるから、耳をすましてね！")
+[121][4,0]<1>(1100000,-255,0,0)()
+[179][1,0]<1>(18)()
+[121][4,0]<2>(1100000,30,0,256)()
+[140][8,0]<2>(32,0,0,0,0,0,0,1100000)()
+[121][4,0]<2>(1100001,1100000,255,0)()
+[121][4,0]<2>(1100001,6,10,13058)()
+[150][11,1]<2>(4128,12,0,1,1,1,255,1100001,110,100,0)("<C>音の場所<\n>●")
+[180][1,0]<2>(5)()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[179][1,0]<1>(18)()
+[121][4,0]<2>(1100000,30,0,512)()
+[140][8,0]<2>(32,0,0,0,0,0,0,1100000)()
+[121][4,0]<2>(1100001,1100000,255,0)()
+[121][4,0]<2>(1100001,6,10,13058)()
+[150][11,1]<2>(4128,12,0,1,1,1,255,1100001,110,100,0)("<C>音の場所<\n>●")
+[180][1,0]<2>(5)()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[179][1,0]<1>(18)()
+[121][4,0]<2>(1100000,30,0,256)()
+[140][8,0]<2>(32,0,0,0,0,0,0,1100000)()
+[121][4,0]<2>(1100001,1100000,255,0)()
+[121][4,0]<2>(1100001,6,10,13058)()
+[150][11,1]<2>(4128,12,0,1,1,1,255,1100001,110,100,0)("<C>音の場所<\n>●")
+[180][1,0]<2>(5)()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[179][1,0]<1>(18)()
+[121][4,0]<2>(1100000,30,0,512)()
+[140][8,0]<2>(32,0,0,0,0,0,0,1100000)()
+[121][4,0]<2>(1100001,1100000,255,0)()
+[121][4,0]<2>(1100001,6,10,13058)()
+[150][11,1]<2>(4128,12,0,1,1,1,255,1100001,110,100,0)("<C>音の場所<\n>●")
+[180][1,0]<2>(5)()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[180][1,0]<1>(25)()
+[150][3,0]<1>(4130,12,0)()
+[101][0,1]<1>()("「これが左右の音量の変化を変えられる、<\n>　サウンドのパン機能だよ！<\n>　分かったかな？")
+[0][0,0]<1>()()
+[421][1,0]<0>(0)()
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+■Show Message:「やあ！　サウンドのパン機能を\n　体験してみたくない！？
+■Show Choice:/ [1] サウンドのパン機能を試す 
+-◇Case: Choice [1] サウンドのパン機能を試す                             ↓
+ |■Show Message:「じゃあ行くよ！\n　音のみなもとが左右に移動してるように\n　聞こえるから、耳をすましてね！
+ |■Set Variable: このEvのSelf0 = -255 + 0 
+ |■Repeat Loop [ 18 ] Times
+ | |■Set Variable: このEvのSelf0 += 30 + 0 
+ | |■Sound: SE0[[ｼｽﾃﾑ]決定音] (0 Channel) Play / Delay: 0 Frames / Panning: このEvのSelf0
+ | |■Set Variable: このEvのSelf1 = このEvのSelf0 + 255 
+ | |■Set Variable: [Real] このEvのSelf1 *= 6 / 10 
+ | |■Picture Show: 12 [Center] String[<C>音の場所\n●] X:このEvのSelf1 Y:110 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | |■Wait: 5 Frames
+ | |■
+ |◇Loop End Point◇◇
+ |■Repeat Loop [ 18 ] Times
+ | |■Set Variable: このEvのSelf0 -= 30 + 0 
+ | |■Sound: SE0[[ｼｽﾃﾑ]決定音] (0 Channel) Play / Delay: 0 Frames / Panning: このEvのSelf0
+ | |■Set Variable: このEvのSelf1 = このEvのSelf0 + 255 
+ | |■Set Variable: [Real] このEvのSelf1 *= 6 / 10 
+ | |■Picture Show: 12 [Center] String[<C>音の場所\n●] X:このEvのSelf1 Y:110 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | |■Wait: 5 Frames
+ | |■
+ |◇Loop End Point◇◇
+ |■Repeat Loop [ 18 ] Times
+ | |■Set Variable: このEvのSelf0 += 30 + 0 
+ | |■Sound: SE0[[ｼｽﾃﾑ]決定音] (0 Channel) Play / Delay: 0 Frames / Panning: このEvのSelf0
+ | |■Set Variable: このEvのSelf1 = このEvのSelf0 + 255 
+ | |■Set Variable: [Real] このEvのSelf1 *= 6 / 10 
+ | |■Picture Show: 12 [Center] String[<C>音の場所\n●] X:このEvのSelf1 Y:110 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | |■Wait: 5 Frames
+ | |■
+ |◇Loop End Point◇◇
+ |■Repeat Loop [ 18 ] Times
+ | |■Set Variable: このEvのSelf0 -= 30 + 0 
+ | |■Sound: SE0[[ｼｽﾃﾑ]決定音] (0 Channel) Play / Delay: 0 Frames / Panning: このEvのSelf0
+ | |■Set Variable: このEvのSelf1 = このEvのSelf0 + 255 
+ | |■Set Variable: [Real] このEvのSelf1 *= 6 / 10 
+ | |■Picture Show: 12 [Center] String[<C>音の場所\n●] X:このEvのSelf1 Y:110 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | |■Wait: 5 Frames
+ | |■
+ |◇Loop End Point◇◇
+ |■Wait: 25 Frames
+ |■Picture Erase: 12  / 0(0)Frames
+ |■Show Message:「これが左右の音量の変化を変えられる、\n　サウンドのパン機能だよ！\n　分かったかな？
+ |■
+-◇Case: Cancel
+ |■Exit Event
+ |■
+◇End◇
+■
+[COMMAND_TEXT_END]

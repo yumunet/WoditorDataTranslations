@@ -1,0 +1,161 @@
+EVENT_ID=3
+EVENT_NAME=宝箱
+EVENT_X=7
+EVENT_Y=5
+EVENT_PAGE=2
+OPTION_DATA_NUM=0
+EVENT_PAGE_NUM=2
+EVENT_PAGE=0
+EVENT_TILE_ID=862
+GRAPHIC_FILENAME=
+EVENT_DIRECTION=2
+EVENT_PATTERN=1
+EVENT_OPACITY=255
+EVENT_BLENDTYPE=0
+EVENT_TRIGGER_TYPE=0
+EVENT_CONDITION_0_USE=32
+EVENT_CONDITION_TARGET_0=1000000
+EVENT_CONDITION_VALUE_0=0
+EVENT_CONDITION_1_USE=32
+EVENT_CONDITION_TARGET_1=1000000
+EVENT_CONDITION_VALUE_1=0
+EVENT_CONDITION_2_USE=32
+EVENT_CONDITION_TARGET_2=1000000
+EVENT_CONDITION_VALUE_2=0
+EVENT_CONDITION_3_USE=32
+EVENT_CONDITION_TARGET_3=1000000
+EVENT_CONDITION_VALUE_3=0
+ANIME_SPEED=3
+MOVE_SPEED=3
+MOVE_FREQUENCY=3
+MOVE_TYPE=0
+CHARA_OPTION_FLAG=36
+ROUTE_OPTION_FLAG=2
+ROUTE_COMMAND_NUM=0
+OPTION_VAL_NUM=3
+OPTION_VAL_0=0
+OPTION_VAL_1=0
+OPTION_VAL_2=0
+COMMAND_NUM=38
+--
+WoditorEvCOMMAND_START
+[101][0,1]<0>()("「『WOLF RPGエディター』<\n>　これを手にする者には試練が降りかかる」<\n>と書いてある。")
+[102][1,2]<0>(50)("開ける","まだ開けない")
+[401][1,0]<0>(2)()
+[180][1,0]<1>(10)()
+[151][2,0]<1>(2629150,15)()
+[180][1,0]<1>(20)()
+[101][0,1]<1>()("”そなたらがウディタを手にするのに<\n>　ふさわしい者かどうか、その力で示せ！”")
+[101][0,1]<1>()("”10ターン以内に<\n>　\r[我,わ]が\r[輩,はい]を倒してみせるのだ！”")
+[180][1,0]<1>(10)()
+[210][7,0]<1>(500028,16777220,34,0,1,4,1100001)()
+[111][7,0]<1>(2,1100001,1,2,1100001,0,3)()
+[401][1,0]<1>(1)()
+[103][0,1]<2>()("戦闘に勝利すると1が入っているので、以下の処理を行う")
+[151][2,0]<2>(2629150,15)()
+[180][1,0]<2>(20)()
+[101][0,1]<2>()("”おめでとう、君たちの勝ちだ”")
+[101][0,1]<2>()("”これを使って、存分に世界を創造するがいい……”")
+[151][2,0]<2>(6579300,15)()
+[180][1,0]<2>(20)()
+[121][4,0]<2>(1100000,1,0,0)()
+[140][6,1]<2>(33554464,0,0,0,100,100)("SE/System_Get3_wolf.ogg")
+[210][5,0]<2>(500000,3,20,1,0)()
+[101][0,1]<2>()("ウルファールたちは<\n>「WOLF RPGエディター」を手に入れた！")
+[101][0,1]<2>()("これはマップで使うことができるぞ！<\n>やってみよう！")
+[0][0,0]<2>()()
+[401][1,0]<1>(2)()
+[103][0,1]<2>()("負けた場合、または逃げた場合")
+[151][2,0]<2>(2629150,15)()
+[180][1,0]<2>(20)()
+[101][0,1]<2>()("”また挑戦するがいい……”")
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[151][2,0]<1>(6579300,15)()
+[0][0,0]<1>()()
+[401][1,0]<0>(3)()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+■Show Message:「『WOLF RPGエディター』\n　これを手にする者には試練が降りかかる」\nと書いてある。
+■Show Choice:/ [1] 開ける / [2] まだ開けない 
+-◇Case: Choice [1] 開ける                                      ↓
+ |■Wait: 10 Frames
+ |■Adjust Color:  R30 G30 B40 / 15 Frames
+ |■Wait: 20 Frames
+ |■Show Message:”そなたらがウディタを手にするのに\n　ふさわしい者かどうか、その力で示せ！”
+ |■Show Message:”10ターン以内に\n　\r[我,わ]が\r[輩,はい]を倒してみせるのだ！”
+ |■Wait: 10 Frames
+ |■Call Event: このEvのSelf1 = Common 28: [ ◆バトルの発生 ] / 34:ボス　[10ターン] / 0:逃走可能 / 1:イベント続行 / 4:ボスBGM
+ |■Condition (Number):   [1] このEvのSelf1 ==  1  /  [2] このEvのSelf1 <=  0  
+ |-◇Condition:  [1]  [ このEvのSelf1 == 1   ] Case↓
+ | |▼ 戦闘に勝利すると1が入っているので、以下の処理を行う
+ | |■Adjust Color:  R30 G30 B40 / 15 Frames
+ | |■Wait: 20 Frames
+ | |■Show Message:”おめでとう、君たちの勝ちだ”
+ | |■Show Message:”これを使って、存分に世界を創造するがいい……”
+ | |■Adjust Color:  R100 G100 B100 / 15 Frames
+ | |■Wait: 20 Frames
+ | |■Set Variable: このEvのSelf0 = 1 + 0 
+ | |■Sound: SE File[SE/System_Get3_wolf.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
+ | |■Call Event: Common 0: [ ○アイテム増減 ] / 20:WOLF RPGエディター / 1 / 0:なし
+ | |■Show Message:ウルファールたちは\n「WOLF RPGエディター」を手に入れた！
+ | |■Show Message:これはマップで使うことができるぞ！\nやってみよう！
+ | |■
+ |-◇Condition:  [2]  [ このEvのSelf1 <= 0   ] Case↓
+ | |▼ 負けた場合、または逃げた場合
+ | |■Adjust Color:  R30 G30 B40 / 15 Frames
+ | |■Wait: 20 Frames
+ | |■Show Message:”また挑戦するがいい……”
+ | |■
+ |◇End◇
+ |■Adjust Color:  R100 G100 B100 / 15 Frames
+ |■
+-◇Case: Choice [2] まだ開けない                                   ↓
+ |■
+◇End◇
+■
+[COMMAND_TEXT_END]
+EVENT_PAGE=1
+EVENT_TILE_ID=870
+GRAPHIC_FILENAME=
+EVENT_DIRECTION=2
+EVENT_PATTERN=1
+EVENT_OPACITY=255
+EVENT_BLENDTYPE=0
+EVENT_TRIGGER_TYPE=0
+EVENT_CONDITION_0_USE=33
+EVENT_CONDITION_TARGET_0=1100000
+EVENT_CONDITION_VALUE_0=1
+EVENT_CONDITION_1_USE=32
+EVENT_CONDITION_TARGET_1=1000000
+EVENT_CONDITION_VALUE_1=0
+EVENT_CONDITION_2_USE=32
+EVENT_CONDITION_TARGET_2=1000000
+EVENT_CONDITION_VALUE_2=0
+EVENT_CONDITION_3_USE=32
+EVENT_CONDITION_TARGET_3=1000000
+EVENT_CONDITION_VALUE_3=0
+ANIME_SPEED=3
+MOVE_SPEED=3
+MOVE_FREQUENCY=3
+MOVE_TYPE=0
+CHARA_OPTION_FLAG=36
+ROUTE_OPTION_FLAG=2
+ROUTE_COMMAND_NUM=0
+OPTION_VAL_NUM=3
+OPTION_VAL_0=0
+OPTION_VAL_1=0
+OPTION_VAL_2=0
+COMMAND_NUM=1
+--
+WoditorEvCOMMAND_START
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+■
+[COMMAND_TEXT_END]

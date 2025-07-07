@@ -1,0 +1,69 @@
+EVENT_ID=1
+EVENT_NAME=回復人
+EVENT_X=18
+EVENT_Y=15
+EVENT_PAGE=1
+OPTION_DATA_NUM=0
+EVENT_PAGE_NUM=1
+EVENT_PAGE=0
+EVENT_TILE_ID=-1
+GRAPHIC_FILENAME=CharaChip/Chara_Hero1_USM.png
+EVENT_DIRECTION=2
+EVENT_PATTERN=1
+EVENT_OPACITY=255
+EVENT_BLENDTYPE=0
+EVENT_TRIGGER_TYPE=0
+EVENT_CONDITION_0_USE=32
+EVENT_CONDITION_TARGET_0=1000000
+EVENT_CONDITION_VALUE_0=0
+EVENT_CONDITION_1_USE=32
+EVENT_CONDITION_TARGET_1=1000000
+EVENT_CONDITION_VALUE_1=0
+EVENT_CONDITION_2_USE=32
+EVENT_CONDITION_TARGET_2=1000000
+EVENT_CONDITION_VALUE_2=0
+EVENT_CONDITION_3_USE=32
+EVENT_CONDITION_TARGET_3=1000000
+EVENT_CONDITION_VALUE_3=0
+ANIME_SPEED=3
+MOVE_SPEED=3
+MOVE_FREQUENCY=3
+MOVE_TYPE=0
+CHARA_OPTION_FLAG=35
+ROUTE_OPTION_FLAG=2
+ROUTE_COMMAND_NUM=0
+OPTION_VAL_NUM=3
+OPTION_VAL_0=0
+OPTION_VAL_1=0
+OPTION_VAL_2=0
+COMMAND_NUM=12
+--
+WoditorEvCOMMAND_START
+[101][0,1]<0>()("「ここではコモンイベント15を利用して<\n>　【セーブ禁止】されているからセーブできないぜ。<\n>　ところで回復するかい？")
+[102][1,2]<0>(50)("完全回復する","何もしない")
+[401][1,0]<0>(2)()
+[101][0,1]<1>()("「完全回復、了解！<\n>　ピロリロリロ～！")
+[151][2,0]<1>(26658966,20)()
+[210][5,0]<1>(500004,3,7,-1,15)()
+[140][6,1]<1>(33554464,0,0,0,100,100)("SE/Effect_Healing1_panop.ogg")
+[0][0,0]<1>()()
+[401][1,0]<0>(3)()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+■Show Message:「ここではコモンイベント15を利用して\n　【セーブ禁止】されているからセーブできないぜ。\n　ところで回復するかい？
+■Show Choice:/ [1] 完全回復する / [2] 何もしない 
+-◇Case: Choice [1] 完全回復する                                   ↓
+ |■Show Message:「完全回復、了解！\n　ピロリロリロ～！
+ |■Adjust Color: (Flash) R150 G200 B150 / 20 Frames
+ |■Call Event: Common 4: [ ○回復・ダメージ処理 ] / 7:完全回復 / -1:パーティ全員 / 15
+ |■Sound: SE File[SE/Effect_Healing1_panop.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
+ |■
+-◇Case: Choice [2] 何もしない                                    ↓
+ |■
+◇End◇
+■
+[COMMAND_TEXT_END]

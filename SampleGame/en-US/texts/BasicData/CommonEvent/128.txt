@@ -1,0 +1,317 @@
+COMMON_ID=128
+COMMON_NAME=X┣[移]アイテム欄実行
+COMMAND_COLOR=6
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=1
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=処理モード
+VALINPUT_NAME_1=
+VALINPUT_NAME_2=
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=2
+LOADTYPE1=0
+LOADTYPE2=0
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=2
+CHOICE_STR_0_0=メニューから(新たにキャラ一覧出さない)
+CHOICE_STR_0_1=アイテム処理のみ
+CHOICE_STR_1_NUM=0
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=2
+CHOICE_VAL_0_0=0
+CHOICE_VAL_0_1=1
+CHOICE_VAL_1_NUM=0
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=
+RETURN_VAL_TARGET=-1
+CSELF_NAME_0=モード
+CSELF_NAME_1=
+CSELF_NAME_2=
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=
+CSELF_NAME_9=
+CSELF_NAME_10=一時変数
+CSELF_NAME_11=保存ｷｰ位置
+CSELF_NAME_12=
+CSELF_NAME_13=キー入力状態
+CSELF_NAME_14=キー入力状態2
+CSELF_NAME_15=
+CSELF_NAME_16=
+CSELF_NAME_17=
+CSELF_NAME_18=
+CSELF_NAME_19=
+CSELF_NAME_20=コマンド最大数
+CSELF_NAME_21=現カーソル位置
+CSELF_NAME_22=選択コード位置
+CSELF_NAME_23=選択コード番号
+CSELF_NAME_24=
+CSELF_NAME_25=
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=×座標倍率
+CSELF_NAME_29=
+CSELF_NAME_30=
+CSELF_NAME_31=
+CSELF_NAME_32=
+CSELF_NAME_33=
+CSELF_NAME_34=
+CSELF_NAME_35=一時変数
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=
+CSELF_NAME_41=
+CSELF_NAME_42=
+CSELF_NAME_43=
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=座標倍率X[x10]
+CSELF_NAME_89=座標倍率Y[x10]
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=
+COMMAND_NUM=72
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("　アイテム欄を開き、使用し、終了するまでの処理を実行します。")
+[103][0,1]<0>()("")
+[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("座標倍率を取得")
+[103][0,1]<0>()("Ver2.20　座標倍率を縦横別に修正")
+[250][5,4]<0>(18,97,0,69632,1600088)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,98,0,69632,1600089)("","基本ｼｽﾃﾑ用変数","","")
+[300][5,1]<0>(0,16777218,-1,-1,1600011)("X[移]記憶キー位置取得")
+[212][0,1]<0>()("アイテム欄実行開始")
+[103][0,1]<0>()("万能ウィンドウ設定を初期化")
+[300][2,1]<0>(0,0)("X[移]ｱｲﾃﾑ一覧算出")
+[103][0,1]<0>()("万能ウィンドウのサイズ設定")
+[121][4,0]<0>(1600035,2,1600088,8192)()
+[250][5,4]<0>(18,9,0,65536,1600035)("","基本ｼｽﾃﾑ用変数","","")
+[121][4,0]<0>(1600035,1,1600089,8192)()
+[250][5,4]<0>(18,10,0,65536,1600035)("","基本ｼｽﾃﾑ用変数","","")
+[121][4,0]<0>(1600035,28,1600088,8192)()
+[250][5,4]<0>(18,11,0,65536,1600035)("","基本ｼｽﾃﾑ用変数","","")
+[121][4,0]<0>(1600035,19,1600089,8192)()
+[250][5,4]<0>(18,12,0,65536,1600035)("","基本ｼｽﾃﾑ用変数","","")
+[121][4,0]<0>(1600035,2,0,0)()
+[250][5,4]<0>(18,13,0,65536,1600035)("","基本ｼｽﾃﾑ用変数","","")
+[121][4,0]<0>(1600035,13,0,0)()
+[250][5,4]<0>(18,14,0,65536,1600035)("","基本ｼｽﾃﾑ用変数","","")
+[121][4,0]<0>(1600035,3,1600089,8192)()
+[250][5,4]<0>(18,16,0,65536,1600035)("","基本ｼｽﾃﾑ用変数","","")
+[103][0,1]<0>()("万能ウィンドウ表示")
+[300][6,1]<0>(0,4,0,-1,4,1)("X[共]万能ｳｨﾝﾄﾞｳ描画処理")
+[179][1,0]<0>(1)()
+[103][0,1]<1>()("万能ウィンドウ選択処理を実行")
+[250][5,4]<1>(18,21,0,65536,1600011)("","基本ｼｽﾃﾑ用変数","","")
+[300][3,1]<1>(0,1,2)("X[共]万能ｳｨﾝﾄﾞｳ選択実行")
+[250][5,4]<1>(18,61,0,69632,1600011)("","基本ｼｽﾃﾑ用変数","","")
+[300][6,1]<1>(0,16777219,-1,-1,1600011,1600011)("X[移]記憶キー位置設定")
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[103][0,1]<0>()("万能ウィンドウを閉じる（自動）")
+[300][6,1]<0>(0,4,-1,0,4,1)("X[共]万能ｳｨﾝﾄﾞｳ描画処理")
+[103][0,1]<0>()("使用後の効果、必要ならターゲット指定")
+[250][5,4]<0>(18,8,0,200704,1600022)("","基本ｼｽﾃﾑ用変数","万能ウィンドウ_コード返値","")
+[106][0,1]<0>()("●アイテム欄コード > \cself[22]")
+[111][7,0]<0>(2,1600022,-100,2,1600022,0,1)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("キャンセル時は終了")
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[103][0,1]<1>()("何かアイテムを選んでいた場合、ターゲット選択 or 実行")
+[300][3,1]<1>(0,1,1600022)("X[移]ｱｲﾃﾑ使用効果処理")
+[300][4,1]<1>(0,2,-1,0)("X[移]残りアイテム数表示")
+[111][4,0]<1>(1,1600000,1,2)()
+[401][1,0]<1>(1)()
+[300][3,1]<2>(0,1,-1)("X[移]キャラ欄_全員描画")
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[250][5,4]<1>(18,1,0,462848,1600010)("","基本ｼｽﾃﾑ用変数","メニュー消去フラグ","数値")
+[111][4,0]<1>(1,1600010,1,2)()
+[401][1,0]<1>(1)()
+[172][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[213][0,1]<1>()("アイテム欄実行開始")
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ 【処理の内容】
+▼ 　アイテム欄を開き、使用し、終了するまでの処理を実行します。
+▼ 
+▼ 【このコモンイベント内で操作しているデータベース】
+▼  
+▼ 【ここから呼び出している別コモンイベント】
+▼  
+▼ 【どのコモンイベントから主に呼び出されているか】
+▼ ―――――――――――――――――――――――――――――――――――
+▼ 座標倍率を取得
+▼ Ver2.20　座標倍率を縦横別に修正
+■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "基本ｼｽﾃﾑ用変数":97:0 ] (18:座標倍率Ｘ[x10]:数値) 
+■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "基本ｼｽﾃﾑ用変数":98:0 ] (18:座標倍率Ｙ[x10]:数値) 
+■Call Event [Name]: CSelf11[保存ｷｰ位置] = ["X[移]記憶キー位置取得"] <CommonEv 116>  / -1:[移動]アイテム / -1
+●Label Point [アイテム欄実行開始] <<<<<<<<<<<<<<<<<<<<<<<<★
+▼ 万能ウィンドウ設定を初期化
+■Call Event [Name]: ["X[移]ｱｲﾃﾑ一覧算出"] <CommonEv 110> 
+▼ 万能ウィンドウのサイズ設定
+■Set Variable: CSelf35[一時変数] = 2 * CSelf88[座標倍率X[x10]] 
+■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":9:0 ] (18:万能ウィンドウ表示X:数値) =  CSelf35[一時変数]
+■Set Variable: CSelf35[一時変数] = 1 * CSelf89[座標倍率Y[x10]] 
+■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":10:0 ] (18:万能ウィンドウ表示Y:数値) =  CSelf35[一時変数]
+■Set Variable: CSelf35[一時変数] = 28 * CSelf88[座標倍率X[x10]] 
+■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":11:0 ] (18:万能ウィンドウ横サイズ:数値) =  CSelf35[一時変数]
+■Set Variable: CSelf35[一時変数] = 19 * CSelf89[座標倍率Y[x10]] 
+■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":12:0 ] (18:万能ウィンドウ縦サイズ:数値) =  CSelf35[一時変数]
+■Set Variable: CSelf35[一時変数] = 2 + 0 
+■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":13:0 ] (18:万能ウィンドウ横項目数:数値) =  CSelf35[一時変数]
+■Set Variable: CSelf35[一時変数] = 13 + 0 
+■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":14:0 ] (18:万能ウィンドウ縦項目数:数値) =  CSelf35[一時変数]
+■Set Variable: CSelf35[一時変数] = 3 * CSelf89[座標倍率Y[x10]] 
+■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":16:0 ] (18:万能ウィンドウ説明欄縦サイズ:数値) =  CSelf35[一時変数]
+▼ 万能ウィンドウ表示
+■Call Event [Name]: ["X[共]万能ｳｨﾝﾄﾞｳ描画処理"] <CommonEv 64>  / 0:表示 / -1 / 4:ｳｨﾝﾄﾞｳの下に表示 / 1:左上から展開
+■Repeat Loop [ 1 ] Times
+ |▼ 万能ウィンドウ選択処理を実行
+ |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":21:0 ] (18:万能ウィンドウ 外からカーソル指定:数値) =  CSelf11[保存ｷｰ位置]
+ |■Call Event [Name]: ["X[共]万能ｳｨﾝﾄﾞｳ選択実行"] <CommonEv 65>  / 2:選択を終えるまでループ[ｶｰｿﾙ初期化しない]
+ |■Load DB(Var):  CSelf11[保存ｷｰ位置] = VarDB[ "基本ｼｽﾃﾑ用変数":61:0 ] (18:[一時]万能ｳｨﾝﾄﾞｳ最終ｶｰｿﾙ位置:数値) 
+ |■Call Event [Name]: CSelf11[保存ｷｰ位置] = ["X[移]記憶キー位置設定"] <CommonEv 117>  / -1:[移動]アイテム / -1 / CSelf11[保存ｷｰ位置]
+ |■
+◇Loop End Point◇◇
+▼ 万能ウィンドウを閉じる（自動）
+■Call Event [Name]: ["X[共]万能ｳｨﾝﾄﾞｳ描画処理"] <CommonEv 64>  / -1:消去 / 0 / 4:ｳｨﾝﾄﾞｳの下に表示 / 1:左上から展開
+▼ 使用後の効果、必要ならターゲット指定
+■Load DB(Var):  CSelf22[選択コード位置] = VarDB[ "基本ｼｽﾃﾑ用変数":"万能ウィンドウ_コード返値":0 ] (18:8:数値) 
+■Debug Text: ●アイテム欄コード > \cself[22]
+■Condition (Number):   [1] CSelf22[選択コード位置] ==  -100  /  [2] CSelf22[選択コード位置] >=  0  
+-◇Condition:  [1]  [ CSelf22[選択コード位置] == -100   ] Case↓
+ |▼ キャンセル時は終了
+ |■Exit Event
+ |■
+-◇Condition:  [2]  [ CSelf22[選択コード位置] >= 0   ] Case↓
+ |▼ 何かアイテムを選んでいた場合、ターゲット選択 or 実行
+ |■Call Event [Name]: ["X[移]ｱｲﾃﾑ使用効果処理"] <CommonEv 118>  / CSelf22[選択コード位置]
+ |■Call Event [Name]: ["X[移]残りアイテム数表示"] <CommonEv 99>  / -1:削除 / 0
+ |■Condition (Number):   [1] CSelf0[モード] ==  1  
+ |-◇Condition:  [1]  [ CSelf0[モード] == 1   ] Case↓
+ | |■Call Event [Name]: ["X[移]キャラ欄_全員描画"] <CommonEv 92>  / -1:全員消去
+ | |■
+ |◇End◇
+ |■Load DB(Var):  CSelf10[一時変数] = VarDB[ "基本ｼｽﾃﾑ用変数":"メニュー消去フラグ":"数値" ] (18:1:0) 
+ |■Condition (Number):   [1] CSelf10[一時変数] ==  1  
+ |-◇Condition:  [1]  [ CSelf10[一時変数] == 1   ] Case↓
+ | |■Exit Event
+ | |■
+ |◇End◇
+ |●Label Jump [アイテム欄実行開始] >>>>>>>>>>>>>>>>>>>>>>>>>
+ |■
+◇End◇
+■
+[COMMAND_TEXT_END]

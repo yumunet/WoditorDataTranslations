@@ -1,0 +1,289 @@
+TYPE_ID=6
+DATANAME_LOAD_TYPE=0
+DATANAME_LOAD_NAME=
+ITEM_NUM=0
+NUMDATA_TYPE_NUM=0
+STRDATA_TYPE_NUM=0
+DATA_NUM=170
+TYPENAME=システム変数名
+ITEMNAME_NUM=0
+MEMO=* Data names have been <<\n>>overwritten from<<\n>>Editor.Lang.SystemValue.txt.
+ITEMTYPE_NUM=100
+ITEM_LOADTYPE_0=0
+ITEM_LOADTYPE_1=0
+ITEM_LOADTYPE_2=0
+ITEM_LOADTYPE_3=0
+ITEM_LOADTYPE_4=0
+ITEM_LOADTYPE_5=0
+ITEM_LOADTYPE_6=0
+ITEM_LOADTYPE_7=0
+ITEM_LOADTYPE_8=0
+ITEM_LOADTYPE_9=0
+ITEM_LOADTYPE_10=0
+ITEM_LOADTYPE_11=0
+ITEM_LOADTYPE_12=0
+ITEM_LOADTYPE_13=0
+ITEM_LOADTYPE_14=0
+ITEM_LOADTYPE_15=0
+ITEM_LOADTYPE_16=0
+ITEM_LOADTYPE_17=0
+ITEM_LOADTYPE_18=0
+ITEM_LOADTYPE_19=0
+ITEM_LOADTYPE_20=0
+ITEM_LOADTYPE_21=0
+ITEM_LOADTYPE_22=0
+ITEM_LOADTYPE_23=0
+ITEM_LOADTYPE_24=0
+ITEM_LOADTYPE_25=0
+ITEM_LOADTYPE_26=0
+ITEM_LOADTYPE_27=0
+ITEM_LOADTYPE_28=0
+ITEM_LOADTYPE_29=0
+ITEM_LOADTYPE_30=0
+ITEM_LOADTYPE_31=0
+ITEM_LOADTYPE_32=0
+ITEM_LOADTYPE_33=0
+ITEM_LOADTYPE_34=0
+ITEM_LOADTYPE_35=0
+ITEM_LOADTYPE_36=0
+ITEM_LOADTYPE_37=0
+ITEM_LOADTYPE_38=0
+ITEM_LOADTYPE_39=0
+ITEM_LOADTYPE_40=0
+ITEM_LOADTYPE_41=0
+ITEM_LOADTYPE_42=0
+ITEM_LOADTYPE_43=0
+ITEM_LOADTYPE_44=0
+ITEM_LOADTYPE_45=0
+ITEM_LOADTYPE_46=0
+ITEM_LOADTYPE_47=0
+ITEM_LOADTYPE_48=0
+ITEM_LOADTYPE_49=0
+ITEM_LOADTYPE_50=0
+ITEM_LOADTYPE_51=0
+ITEM_LOADTYPE_52=0
+ITEM_LOADTYPE_53=0
+ITEM_LOADTYPE_54=0
+ITEM_LOADTYPE_55=0
+ITEM_LOADTYPE_56=0
+ITEM_LOADTYPE_57=0
+ITEM_LOADTYPE_58=0
+ITEM_LOADTYPE_59=0
+ITEM_LOADTYPE_60=0
+ITEM_LOADTYPE_61=0
+ITEM_LOADTYPE_62=0
+ITEM_LOADTYPE_63=0
+ITEM_LOADTYPE_64=0
+ITEM_LOADTYPE_65=0
+ITEM_LOADTYPE_66=0
+ITEM_LOADTYPE_67=0
+ITEM_LOADTYPE_68=0
+ITEM_LOADTYPE_69=0
+ITEM_LOADTYPE_70=0
+ITEM_LOADTYPE_71=0
+ITEM_LOADTYPE_72=0
+ITEM_LOADTYPE_73=0
+ITEM_LOADTYPE_74=0
+ITEM_LOADTYPE_75=0
+ITEM_LOADTYPE_76=0
+ITEM_LOADTYPE_77=0
+ITEM_LOADTYPE_78=0
+ITEM_LOADTYPE_79=0
+ITEM_LOADTYPE_80=0
+ITEM_LOADTYPE_81=0
+ITEM_LOADTYPE_82=0
+ITEM_LOADTYPE_83=0
+ITEM_LOADTYPE_84=0
+ITEM_LOADTYPE_85=0
+ITEM_LOADTYPE_86=0
+ITEM_LOADTYPE_87=0
+ITEM_LOADTYPE_88=0
+ITEM_LOADTYPE_89=0
+ITEM_LOADTYPE_90=0
+ITEM_LOADTYPE_91=0
+ITEM_LOADTYPE_92=0
+ITEM_LOADTYPE_93=0
+ITEM_LOADTYPE_94=0
+ITEM_LOADTYPE_95=0
+ITEM_LOADTYPE_96=0
+ITEM_LOADTYPE_97=0
+ITEM_LOADTYPE_98=0
+ITEM_LOADTYPE_99=0
+VMEMO_NUM=0
+CHOICE_NUM=0
+CHOICE_VAL_NUM=0
+DEFAULT_VAL_NUM=0
+<<--CSV_START-->>
+
+<<!--DATANAME--!>>Face Number,
+<<!--DATANAME--!>>Message Box X,
+<<!--DATANAME--!>>Message Box Y,
+<<!--DATANAME--!>>Choice Box X,
+<<!--DATANAME--!>>Choice Box Y,
+<<!--DATANAME--!>>Message Cursor X (Add to Sys1),
+<<!--DATANAME--!>>Message Cursor Y (Add to Sys2),
+<<!--DATANAME--!>>Initial Choice (0<<COMMA>>1<<COMMA>>2...),
+<<!--DATANAME--!>>Base Font Size,
+<<!--DATANAME--!>>Message Speed (X char./s),
+<<!--DATANAME--!>>Message Wait (X frames),
+<<!--DATANAME--!>>Picture String Speed (X char./s),
+<<!--DATANAME--!>>Show Message Active? (1=YES),
+<<!--DATANAME--!>>Event Active? (1=YES),
+<<!--DATANAME--!>>Show Choice Box? (1=ON),
+<<!--DATANAME--!>>Direction Key Repeat First Wait (Frames),
+<<!--DATANAME--!>>Direction Key Repeat Next Wait (Frames),
+<<!--DATANAME--!>>Choice SE: Confirm (SysDB 3),
+<<!--DATANAME--!>>Choice SE: Select (SysDB 3),
+<<!--DATANAME--!>>Choice SE: Cancel (SysDB 3),
+<<!--DATANAME--!>>Current Choice Selected (0<<COMMA>>1<<COMMA>>2.. N/A:-1),
+<<!--DATANAME--!>>Add Shadow to String? (0=OFF/1=ON),
+<<!--DATANAME--!>>Choice Cursor Blend Mode(0:Normal/1:Add),
+<<!--DATANAME--!>>Ruby Font Size,
+<<!--DATANAME--!>>[RO] Save Data Read? (1:Success),
+<<!--DATANAME--!>>Current Save Data Number (0+),
+<<!--DATANAME--!>>Choice Box X Margin,
+<<!--DATANAME--!>>Choice Box Y Margin,
+<<!--DATANAME--!>>Elapsed Frames [Loops at 10M],
+<<!--DATANAME--!>>Playtime (in seconds),
+<<!--DATANAME--!>>[RO] Playtime (in ms),
+<<!--DATANAME--!>>[RO] Inner FPS (each second),
+<<!--DATANAME--!>>[RO] Screen FPS (each second),
+<<!--DATANAME--!>>Frame Skip Level (0-2),
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>Hero Moving? (1=YES) *Between Tiles?,
+<<!--DATANAME--!>>Hero Shadow (SysDB 9),
+<<!--DATANAME--!>>Distance Between Members (Steps),
+<<!--DATANAME--!>>Input During KB-I [1:Mouse&Touch +2:Pad],
+<<!--DATANAME--!>>[RO] KB Input (0:Entered/-1:Canceled),
+<<!--DATANAME--!>>KB Input X,
+<<!--DATANAME--!>>KB Input Y,
+<<!--DATANAME--!>>KB-I Anti-Aliasing [0:OFF/1:ON +2:Edge],
+<<!--DATANAME--!>>[RO] Net/Downloaded Size (bytes),
+<<!--DATANAME--!>>[RO] Net/Est. Size (bytes) [-1:Unknown],
+<<!--DATANAME--!>>[RO] Net/Download Speed,
+<<!--DATANAME--!>>[RO] Net/Connection Time (seconds),
+<<!--DATANAME--!>>[RO] Net/Remaining Time (seconds),
+<<!--DATANAME--!>>[RO] Net/Status -1:Failed/0:Doing/1:Done,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>◆ Key Config Below ◆,
+<<!--DATANAME--!>>Confirm Key (Keyboard),
+<<!--DATANAME--!>>Cancel Key (Keyboard),
+<<!--DATANAME--!>>Sub Key (Keyboard),
+<<!--DATANAME--!>>Confirm Key (Pad),
+<<!--DATANAME--!>>Cancel Key (Pad),
+<<!--DATANAME--!>>Sub Key (Pad),
+<<!--DATANAME--!>>◆End of Key Config◆,
+<<!--DATANAME--!>>Repeat Confirm Key? (1=ON),
+<<!--DATANAME--!>>Repeat Cancel Key? (1=ON),
+<<!--DATANAME--!>>Fog Number (SysDB 13),
+<<!--DATANAME--!>>Fog X Speed,
+<<!--DATANAME--!>>Fog Y Speed,
+<<!--DATANAME--!>>Fog Blend Mode (0:Normal/1:Add/2:Sub),
+<<!--DATANAME--!>>Fog Opacity (0-255),
+<<!--DATANAME--!>>Background Number (SysDB 13),
+<<!--DATANAME--!>>Background X Speed,
+<<!--DATANAME--!>>Background Y Speed,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>Mouse X,
+<<!--DATANAME--!>>Mouse Y,
+<<!--DATANAME--!>>Allow Mouse on Message/Choice? (1=ON),
+<<!--DATANAME--!>>Show Mouse Pointer? (1=ON),
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>Time [Year],
+<<!--DATANAME--!>>Time [Month],
+<<!--DATANAME--!>>Time [Day],
+<<!--DATANAME--!>>Time [Hour],
+<<!--DATANAME--!>>Time [Minute],
+<<!--DATANAME--!>>Time [Second],
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>Screen Resolution (For Old/0-2/-1:Other),
+<<!--DATANAME--!>>Rendering Mode (0:3D/1:Software),
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>Ally 1 Shadow (-1=Hero's),
+<<!--DATANAME--!>>Ally 2 Shadow (-1=Hero's),
+<<!--DATANAME--!>>Ally 3 Shadow (-1=Hero's),
+<<!--DATANAME--!>>Ally 4 Shadow (-1=Hero's),
+<<!--DATANAME--!>>Ally 5 Shadow (-1=Hero's),
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>Playing BGM Panning [±255],
+<<!--DATANAME--!>>Playing BGS Panning (Ch=Sys99) [±255],
+<<!--DATANAME--!>>Playing BGM Volume [%],
+<<!--DATANAME--!>>Playing BGM Tempo/Frequency [%],
+<<!--DATANAME--!>>Playing BGS Volume (Ch=Sys99) [%],
+<<!--DATANAME--!>>Playing BGS Frequency (Ch=Sys99) [%],
+<<!--DATANAME--!>>BGS Channel,
+<<!--DATANAME--!>>BGM Volume Multiplier [%],
+<<!--DATANAME--!>>BGS Volume Multiplier [%],
+<<!--DATANAME--!>>SE Volume Multiplier [%],
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>Map Scroll X,
+<<!--DATANAME--!>>Map Scroll Y,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>[RO] Processed Commands in Current Frame,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>Current Random Seed,
+<<!--DATANAME--!>>[RO] Window Active? (1=YES),
+<<!--DATANAME--!>>[RO] Test Play? (1=YES),
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>[RO] Adjusted Version (x100),
+<<!--DATANAME--!>>[RO] Game.exe Version (x100),
+<<!--DATANAME--!>>[RO] Screen Width,
+<<!--DATANAME--!>>[RO] Screen Height,
+<<!--DATANAME--!>>[RO] Tile Size,
+<<!--DATANAME--!>>[RO] Screen Resolution Multiplier [x1-3],
+<<!--DATANAME--!>>Reset Log (0=None/1=F12/2=Command),
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>Smoothly Scale Zooming Map&Ev? (1=ON)[α],
+<<!--DATANAME--!>>Sharply Scale Next Picture? (1=ON),
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>Font Thickness (1-10),
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>Don't Save Map Tiles? (1=ON),
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>Event Diagonal Move X Speed [%],
+<<!--DATANAME--!>>Event Diagonal Move Y Speed [%],
+<<!--DATANAME--!>>Hero Center X Offset,
+<<!--DATANAME--!>>Hero Center Y Offset,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>Directional Input with D-Pad? [1=ON],
+<<!--DATANAME--!>>Directional Input with L-Stick? [1=ON],
+<<!--DATANAME--!>>Precise Window Scale [0.1%] (-1=Auto),
+<<!--DATANAME--!>>Window Scale [%] (-1=Auto),
+<<!--DATANAME--!>>Screen Mode [0:Window/1:Borderless/2:FS],
+<<!--DATANAME--!>>[P] Show Full Map when Zoomed Out?(1=ON),
+<<!--DATANAME--!>>Window Scaling Mode [0:Sharp/1:Smooth],
+<<!--DATANAME--!>>[P] System Language [0:JA/1:EN],
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>[RO] Pro Commands Available? [1=YES],
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>DirectInput for PS/Switch? (Recommended),
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>[P] Next Startup Window Scale [0.1%],
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>Disable Special Char. Conversion [1=ON],
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>[RO] Character Movement Direction [4/8],
+<<!--DATANAME--!>>[RO] Character Movement Unit [0:0.5/1:1],
+<<!--DATANAME--!>>[RO] Horizontal Spacing [px],
+<<!--DATANAME--!>>[RO] Line Spacing [px],
+<<!--DATANAME--!>>[RO] Choice Separation [px],
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+
+<<--CSV_END-->>

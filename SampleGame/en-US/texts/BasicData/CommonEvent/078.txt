@@ -1,0 +1,267 @@
+COMMON_ID=78
+COMMON_NAME=X[移]戦闘コマンド取得
+COMMAND_COLOR=6
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=2
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=主人公ID
+VALINPUT_NAME_1=コマンド位置
+VALINPUT_NAME_2=コマンド番号
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=2
+LOADTYPE2=1
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=10
+CHOICE_STR_1_0=コマンド1
+CHOICE_STR_1_1=コマンド2
+CHOICE_STR_1_2=コマンド3
+CHOICE_STR_1_3=コマンド4
+CHOICE_STR_1_4=コマンド5
+CHOICE_STR_1_5=コマンド6
+CHOICE_STR_1_6=コマンド7
+CHOICE_STR_1_7=コマンド8
+CHOICE_STR_1_8=前方の空きコマンド
+CHOICE_STR_1_9=後方の空きコマンド
+CHOICE_STR_2_NUM=3
+CHOICE_STR_2_0=<消去する>
+CHOICE_STR_2_1=<消去する>
+CHOICE_STR_2_2=<消去する>
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=10
+CHOICE_VAL_1_0=0
+CHOICE_VAL_1_1=1
+CHOICE_VAL_1_2=2
+CHOICE_VAL_1_3=3
+CHOICE_VAL_1_4=4
+CHOICE_VAL_1_5=5
+CHOICE_VAL_1_6=6
+CHOICE_VAL_1_7=7
+CHOICE_VAL_1_8=-10
+CHOICE_VAL_1_9=-11
+CHOICE_VAL_2_NUM=3
+CHOICE_VAL_2_0=1
+CHOICE_VAL_2_1=6
+CHOICE_VAL_2_2=1
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=-1
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=変更できた？
+RETURN_VAL_TARGET=99
+CSELF_NAME_0=主人公ID
+CSELF_NAME_1=コマンド位置
+CSELF_NAME_2=コマンド番号
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=
+CSELF_NAME_9=
+CSELF_NAME_10=一時変数A
+CSELF_NAME_11=
+CSELF_NAME_12=
+CSELF_NAME_13=
+CSELF_NAME_14=
+CSELF_NAME_15=
+CSELF_NAME_16=
+CSELF_NAME_17=
+CSELF_NAME_18=
+CSELF_NAME_19=
+CSELF_NAME_20=処理主人公ID
+CSELF_NAME_21=処理対象
+CSELF_NAME_22=パーティーメンバー数
+CSELF_NAME_23=最大パーティ人数
+CSELF_NAME_24=
+CSELF_NAME_25=
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=
+CSELF_NAME_29=
+CSELF_NAME_30=
+CSELF_NAME_31=
+CSELF_NAME_32=
+CSELF_NAME_33=
+CSELF_NAME_34=
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=
+CSELF_NAME_41=
+CSELF_NAME_42=
+CSELF_NAME_43=
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=
+CSELF_NAME_89=
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=戦闘コマンド番号
+COMMAND_NUM=36
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("　主人公の戦闘コマンドを取得します。")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[121][4,0]<0>(1600099,-1,0,0)()
+[111][10,0]<0>(3,1600001,0,2,1600001,1,2,1600001,2,2)()
+[401][1,0]<0>(1)()
+[250][5,4]<1>(0,1600000,49,331776,1600099)("","主人公ステータス","","[コマンド1]")
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[250][5,4]<1>(0,1600000,50,331776,1600099)("","主人公ステータス","","[コマンド2]")
+[0][0,0]<1>()()
+[401][1,0]<0>(3)()
+[250][5,4]<1>(0,1600000,51,331776,1600099)("","主人公ステータス","","[コマンド3]")
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[111][10,0]<0>(3,1600001,3,2,1600001,4,2,1600001,5,2)()
+[401][1,0]<0>(1)()
+[250][5,4]<1>(0,1600000,52,331776,1600099)("","主人公ステータス","","[コマンド4]")
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[250][5,4]<1>(0,1600000,53,331776,1600099)("","主人公ステータス","","[コマンド5]")
+[0][0,0]<1>()()
+[401][1,0]<0>(3)()
+[250][5,4]<1>(0,1600000,54,331776,1600099)("","主人公ステータス","","[コマンド6]")
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[111][7,0]<0>(2,1600001,6,2,1600001,7,2)()
+[401][1,0]<0>(1)()
+[250][5,4]<1>(0,1600000,55,331776,1600099)("","主人公ステータス","","[コマンド7]")
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[250][5,4]<1>(0,1600000,56,331776,1600099)("","主人公ステータス","","[コマンド8]")
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ 【処理の内容】
+▼ 　主人公の戦闘コマンドを取得します。
+▼ ―――――――――――――――――――――――――――――――――――
+■Set Variable: CSelf99[戦闘コマンド番号] = -1 + 0 
+■Condition (Number):   [1] CSelf1[コマンド位置] ==  0  /  [2] CSelf1[コマンド位置] ==  1  /  [3] CSelf1[コマンド位置] ==  2  
+-◇Condition:  [1]  [ CSelf1[コマンド位置] == 0   ] Case↓
+ |■Load DB(Var):  CSelf99[戦闘コマンド番号] = VarDB[ "主人公ステータス":CSelf0[主人公ID]:"[コマンド1]" ] (0:-:46) 
+ |■
+-◇Condition:  [2]  [ CSelf1[コマンド位置] == 1   ] Case↓
+ |■Load DB(Var):  CSelf99[戦闘コマンド番号] = VarDB[ "主人公ステータス":CSelf0[主人公ID]:"[コマンド2]" ] (0:-:47) 
+ |■
+-◇Condition:  [3]  [ CSelf1[コマンド位置] == 2   ] Case↓
+ |■Load DB(Var):  CSelf99[戦闘コマンド番号] = VarDB[ "主人公ステータス":CSelf0[主人公ID]:"[コマンド3]" ] (0:-:48) 
+ |■
+◇End◇
+■Condition (Number):   [1] CSelf1[コマンド位置] ==  3  /  [2] CSelf1[コマンド位置] ==  4  /  [3] CSelf1[コマンド位置] ==  5  
+-◇Condition:  [1]  [ CSelf1[コマンド位置] == 3   ] Case↓
+ |■Load DB(Var):  CSelf99[戦闘コマンド番号] = VarDB[ "主人公ステータス":CSelf0[主人公ID]:"[コマンド4]" ] (0:-:49) 
+ |■
+-◇Condition:  [2]  [ CSelf1[コマンド位置] == 4   ] Case↓
+ |■Load DB(Var):  CSelf99[戦闘コマンド番号] = VarDB[ "主人公ステータス":CSelf0[主人公ID]:"[コマンド5]" ] (0:-:50) 
+ |■
+-◇Condition:  [3]  [ CSelf1[コマンド位置] == 5   ] Case↓
+ |■Load DB(Var):  CSelf99[戦闘コマンド番号] = VarDB[ "主人公ステータス":CSelf0[主人公ID]:"[コマンド6]" ] (0:-:51) 
+ |■
+◇End◇
+■Condition (Number):   [1] CSelf1[コマンド位置] ==  6  /  [2] CSelf1[コマンド位置] ==  7  
+-◇Condition:  [1]  [ CSelf1[コマンド位置] == 6   ] Case↓
+ |■Load DB(Var):  CSelf99[戦闘コマンド番号] = VarDB[ "主人公ステータス":CSelf0[主人公ID]:"[コマンド7]" ] (0:-:52) 
+ |■
+-◇Condition:  [2]  [ CSelf1[コマンド位置] == 7   ] Case↓
+ |■Load DB(Var):  CSelf99[戦闘コマンド番号] = VarDB[ "主人公ステータス":CSelf0[主人公ID]:"[コマンド8]" ] (0:-:53) 
+ |■
+◇End◇
+■
+[COMMAND_TEXT_END]

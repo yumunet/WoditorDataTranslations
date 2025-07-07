@@ -1,0 +1,309 @@
+COMMON_ID=121
+COMMON_NAME=X[移]技能使用_消費処理
+COMMAND_COLOR=6
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=2
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=発動主人公ID
+VALINPUT_NAME_1=使用技能
+VALINPUT_NAME_2=
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=0
+LOADTYPE2=0
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=0
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=0
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=次使用可能?
+RETURN_VAL_TARGET=99
+CSELF_NAME_0=発動主人公ID
+CSELF_NAME_1=使用技能
+CSELF_NAME_2=
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=
+CSELF_NAME_9=一時文字列
+CSELF_NAME_10=使用技能
+CSELF_NAME_11=消費するもの
+CSELF_NAME_12=消費ポイント
+CSELF_NAME_13=要発動アイテム
+CSELF_NAME_14=
+CSELF_NAME_15=一時変数A
+CSELF_NAME_16=
+CSELF_NAME_17=
+CSELF_NAME_18=
+CSELF_NAME_19=
+CSELF_NAME_20=
+CSELF_NAME_21=
+CSELF_NAME_22=
+CSELF_NAME_23=
+CSELF_NAME_24=
+CSELF_NAME_25=
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=
+CSELF_NAME_29=
+CSELF_NAME_30=
+CSELF_NAME_31=
+CSELF_NAME_32=
+CSELF_NAME_33=
+CSELF_NAME_34=
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=
+CSELF_NAME_41=
+CSELF_NAME_42=
+CSELF_NAME_43=
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=
+CSELF_NAME_89=
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=次使用可能？
+COMMAND_NUM=70
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("　技能を使用した際、SPや要発動アイテムを減らしたり、")
+[103][0,1]<0>()("　メッセージが表示されたりする処理をここで行います")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[121][4,0]<0>(1600099,1,0,0)()
+[122][2,1]<0>(1600009,0)("")
+[103][0,1]<0>()("アイテムの場合")
+[121][4,0]<0>(1600010,1600001,0,0)()
+[250][5,4]<0>(0,1600010,13,332288,1600009)("","技能","","使用時文章[移動](人名~")
+[250][5,4]<0>(0,1600010,4,332288,1600011)("","技能","","┏ 消費するものは？")
+[250][5,4]<0>(0,1600010,5,332288,1600012)("","技能","","┗ 消費ポイント　　 ")
+[250][5,4]<0>(0,1600010,20,332288,1600013)("","技能","","発動アイテム要する?[消費]")
+[111][4,0]<0>(1,1600000,0,1)()
+[401][1,0]<0>(1)()
+[111][7,0]<1>(2,1600011,0,2,1600011,1,2)()
+[401][1,0]<1>(1)()
+[103][0,1]<2>()("SPを消費する場合")
+[121][4,0]<2>(1600012,-1,0,768)()
+[300][6,1]<2>(0,4,1600000,23,1600012,0)("X[移]パラメータ増減")
+[103][0,1]<2>()("必要ポイントが足りなくなっていたら次使用不能にする")
+[300][5,1]<2>(0,16777218,1600000,23,1600015)("X[移]パラメータ取得")
+[121][4,0]<2>(1600012,-1,0,768)()
+[111][4,0]<2>(1,1600015,1600012,4)()
+[401][1,0]<2>(1)()
+[121][4,0]<3>(1600099,0,0,0)()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[401][1,0]<1>(2)()
+[103][0,1]<2>()("HPを消費する場合")
+[121][4,0]<2>(1600012,-1,0,768)()
+[300][6,1]<2>(0,4,1600000,22,1600012,0)("X[移]パラメータ増減")
+[103][0,1]<2>()("必要ポイントが足りなくなっていたら次使用不能にする")
+[300][5,1]<2>(0,16777218,1600000,22,1600015)("X[移]パラメータ取得")
+[121][4,0]<2>(1600012,-1,0,768)()
+[121][4,0]<2>(1600012,1,0,256)()
+[111][4,0]<2>(1,1600015,1600012,4)()
+[401][1,0]<2>(1)()
+[121][4,0]<3>(1600099,0,0,0)()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[111][4,0]<0>(1,1600013,0,1)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("発動アイテムを消費する場合")
+[300][4,1]<1>(0,2,1600013,-1)("X[共]アイテム増減")
+[103][0,1]<1>()("残り個数が0以下なら次は使用不能")
+[300][4,1]<1>(0,16777217,1600013,1600013)("X[共]ｱｲﾃﾑ所持数取得")
+[111][4,0]<1>(1,1600013,0,3)()
+[401][1,0]<1>(1)()
+[121][4,0]<2>(1600099,0,0,0)()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[103][0,1]<0>()("もし表示メッセージが存在する場合はメッセージ表示")
+[112][2,4]<0>(1,270035465)("","","","")
+[401][1,0]<0>(1)()
+[250][5,4]<1>(0,1600000,0,331776,1600008)("","主人公ステータス","","キャラ名")
+[122][2,1]<1>(1600009,0)("\cself[8]\cself[9]")
+[300][4,1]<1>(0,17,0,1600009)("X[移]メニュー時文章表示")
+[123][2,0]<1>(1600000,176)()
+[300][4,1]<1>(0,17,-1,1600009)("X[移]メニュー時文章表示")
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ 【処理の内容】
+▼ 　技能を使用した際、SPや要発動アイテムを減らしたり、
+▼ 　メッセージが表示されたりする処理をここで行います
+▼ ―――――――――――――――――――――――――――――――――――
+■Set Variable: CSelf99[次使用可能？] = 1 + 0 
+■Set String: CSelf9[一時文字列] = ""
+▼ アイテムの場合
+■Set Variable: CSelf10[使用技能] = CSelf1[使用技能] + 0 
+■Load DB(User):  CSelf9[一時文字列] = UserDB[ "技能":CSelf10[使用技能]:"使用時文章[移動](人名~" ] (0:-:13) 
+■Load DB(User):  CSelf11[消費するもの] = UserDB[ "技能":CSelf10[使用技能]:"┏ 消費するものは？" ] (0:-:4) 
+■Load DB(User):  CSelf12[消費ポイント] = UserDB[ "技能":CSelf10[使用技能]:"┗ 消費ポイント　　 " ] (0:-:5) 
+■Load DB(User):  CSelf13[要発動アイテム] = UserDB[ "技能":CSelf10[使用技能]:"発動アイテム要する?[消費]" ] (0:-:20) 
+■Condition (Number):   [1] CSelf0[発動主人公ID] >=  0  
+-◇Condition:  [1]  [ CSelf0[発動主人公ID] >= 0   ] Case↓
+ |■Condition (Number):   [1] CSelf11[消費するもの] ==  0  /  [2] CSelf11[消費するもの] ==  1  
+ |-◇Condition:  [1]  [ CSelf11[消費するもの] == 0   ] Case↓
+ | |▼ SPを消費する場合
+ | |■Set Variable: CSelf12[消費ポイント] *= -1 + 0 
+ | |■Call Event [Name]: ["X[移]パラメータ増減"] <CommonEv 70>  / CSelf0[発動主人公ID] / 23:SP / CSelf12[消費ポイント] / 0:なし
+ | |▼ 必要ポイントが足りなくなっていたら次使用不能にする
+ | |■Call Event [Name]: CSelf15[一時変数A] = ["X[移]パラメータ取得"] <CommonEv 71>  / CSelf0[発動主人公ID] / 23:SP
+ | |■Set Variable: CSelf12[消費ポイント] *= -1 + 0 
+ | |■Condition (Number):   [1] CSelf15[一時変数A] <  CSelf12[消費ポイント]  
+ | |-◇Condition:  [1]  [ CSelf15[一時変数A] < CSelf12[消費ポイント]   ] Case↓
+ | | |■Set Variable: CSelf99[次使用可能？] = 0 + 0 
+ | | |■
+ | |◇End◇
+ | |■
+ |-◇Condition:  [2]  [ CSelf11[消費するもの] == 1   ] Case↓
+ | |▼ HPを消費する場合
+ | |■Set Variable: CSelf12[消費ポイント] *= -1 + 0 
+ | |■Call Event [Name]: ["X[移]パラメータ増減"] <CommonEv 70>  / CSelf0[発動主人公ID] / 22:HP / CSelf12[消費ポイント] / 0:なし
+ | |▼ 必要ポイントが足りなくなっていたら次使用不能にする
+ | |■Call Event [Name]: CSelf15[一時変数A] = ["X[移]パラメータ取得"] <CommonEv 71>  / CSelf0[発動主人公ID] / 22:HP
+ | |■Set Variable: CSelf12[消費ポイント] *= -1 + 0 
+ | |■Set Variable: CSelf12[消費ポイント] += 1 + 0 
+ | |■Condition (Number):   [1] CSelf15[一時変数A] <  CSelf12[消費ポイント]  
+ | |-◇Condition:  [1]  [ CSelf15[一時変数A] < CSelf12[消費ポイント]   ] Case↓
+ | | |■Set Variable: CSelf99[次使用可能？] = 0 + 0 
+ | | |■
+ | |◇End◇
+ | |■
+ |◇End◇
+ |■
+◇End◇
+■Condition (Number):   [1] CSelf13[要発動アイテム] >=  0  
+-◇Condition:  [1]  [ CSelf13[要発動アイテム] >= 0   ] Case↓
+ |▼ 発動アイテムを消費する場合
+ |■Call Event [Name]: ["X[共]アイテム増減"] <CommonEv 50>  / CSelf13[要発動アイテム] / -1
+ |▼ 残り個数が0以下なら次は使用不能
+ |■Call Event [Name]: CSelf13[要発動アイテム] = ["X[共]ｱｲﾃﾑ所持数取得"] <CommonEv 54>  / CSelf13[要発動アイテム]
+ |■Condition (Number):   [1] CSelf13[要発動アイテム] <=  0  
+ |-◇Condition:  [1]  [ CSelf13[要発動アイテム] <= 0   ] Case↓
+ | |■Set Variable: CSelf99[次使用可能？] = 0 + 0 
+ | |■
+ |◇End◇
+ |■
+◇End◇
+▼ もし表示メッセージが存在する場合はメッセージ表示
+■Condition (String):   [1] CSelf9[一時文字列] is not equal to ""
+-◇Condition:  [1] [ CSelf9[一時文字列] is not equal to "" ] Case↓
+ |■Load DB(Var):  CSelf8 = VarDB[ "主人公ステータス":CSelf0[発動主人公ID]:"キャラ名" ] (0:-:0) 
+ |■Set String: CSelf9[一時文字列] = "\cself[8]\cself[9]"
+ |■Call Event [Name]: ["X[移]メニュー時文章表示"] <CommonEv 101>  / 0:初期表示 / CSelf9[一時文字列]
+ |■Key Input: CSelf0[発動主人公ID] [Wait For Input <!>]  Confirm(10) Cancel(11)
+ |■Call Event [Name]: ["X[移]メニュー時文章表示"] <CommonEv 101>  / -1:消去 / CSelf9[一時文字列]
+ |■
+◇End◇
+■
+[COMMAND_TEXT_END]

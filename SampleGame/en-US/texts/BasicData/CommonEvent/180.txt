@@ -1,0 +1,261 @@
+COMMON_ID=180
+COMMON_NAME=X[戦]バックグラウンド描画
+COMMAND_COLOR=5
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=1
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=モード
+VALINPUT_NAME_1=
+VALINPUT_NAME_2=
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=2
+LOADTYPE1=0
+LOADTYPE2=0
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=2
+CHOICE_STR_0_0=表示
+CHOICE_STR_0_1=消去
+CHOICE_STR_1_NUM=0
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=2
+CHOICE_VAL_0_0=0
+CHOICE_VAL_0_1=-1
+CHOICE_VAL_1_NUM=0
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=
+RETURN_VAL_TARGET=-1
+CSELF_NAME_0=モード
+CSELF_NAME_1=
+CSELF_NAME_2=
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=
+CSELF_NAME_9=
+CSELF_NAME_10=
+CSELF_NAME_11=
+CSELF_NAME_12=
+CSELF_NAME_13=
+CSELF_NAME_14=
+CSELF_NAME_15=
+CSELF_NAME_16=
+CSELF_NAME_17=
+CSELF_NAME_18=
+CSELF_NAME_19=
+CSELF_NAME_20=基本ピクチャ番号
+CSELF_NAME_21=一時ピクチャ番号
+CSELF_NAME_22=
+CSELF_NAME_23=
+CSELF_NAME_24=
+CSELF_NAME_25=
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=×座標倍率(x10)
+CSELF_NAME_29=
+CSELF_NAME_30=
+CSELF_NAME_31=
+CSELF_NAME_32=
+CSELF_NAME_33=
+CSELF_NAME_34=
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=
+CSELF_NAME_41=
+CSELF_NAME_42=
+CSELF_NAME_43=
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=座標倍率X[x10]
+CSELF_NAME_89=座標倍率Y[x10]
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=
+COMMAND_NUM=44
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("　戦闘時の背景を表示します。暗いグラデーションがかかります。")
+[103][0,1]<0>()("　このコモンを改造することで、戦闘背景を変更することもできるでしょう。")
+[103][0,1]<0>()("")
+[103][0,1]<0>()("")
+[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[121][4,0]<0>(1600020,10000,0,0)()
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("固定値を設定")
+[103][0,1]<0>()("Ver2.20　座標倍率を縦横別に修正")
+[250][5,4]<0>(18,97,0,69632,1600088)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,98,0,69632,1600089)("","基本ｼｽﾃﾑ用変数","","")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[111][4,0]<0>(1,1600000,-1,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<1>()("背景を消去")
+[103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[121][4,0]<1>(1600021,1600020,0,0)()
+[150][2,0]<1>(819,1600021)()
+[150][3,0]<1>(818,1600021,10)()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[111][4,0]<0>(1,1600000,0,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<1>()("背景を表示")
+[103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[121][4,0]<1>(1600021,1600020,0,0)()
+[150][2,0]<1>(819,1600021)()
+[121][4,0]<1>(1600010,32,1600088,8192)()
+[121][4,0]<1>(1600011,24,1600089,8192)()
+[121][4,0]<1>(1600010,32,0,256)()
+[121][4,0]<1>(1600011,24,0,256)()
+[150][11,1]<1>(816,1600021,10,1600010,1600011,1,255,0,0,100,0)("<GRADY-779-000>")
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ 【処理の内容】
+▼ 　戦闘時の背景を表示します。暗いグラデーションがかかります。
+▼ 　このコモンを改造することで、戦闘背景を変更することもできるでしょう。
+▼ 
+▼ 
+▼ 【このコモンイベント内で操作しているデータベース】
+▼  
+▼ 【ここから呼び出している別コモンイベント】
+▼  
+▼ 【どのコモンイベントから主に呼び出されているか】
+▼ ―――――――――――――――――――――――――――――――――――
+■Set Variable: CSelf20[基本ピクチャ番号] = 10000 + 0 
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ 固定値を設定
+▼ Ver2.20　座標倍率を縦横別に修正
+■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "基本ｼｽﾃﾑ用変数":97:0 ] (18:座標倍率Ｘ[x10]:数値) 
+■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "基本ｼｽﾃﾑ用変数":98:0 ] (18:座標倍率Ｙ[x10]:数値) 
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■Condition (Number):   [1] CSelf0[モード] ==  -1  
+-◇Condition:  [1]  [ CSelf0[モード] == -1   ] Case↓
+ |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ |▼ 背景を消去
+ |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 0 
+ |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
+ |■Picture Erase: CSelf21[一時ピクチャ番号]  / 10(0)Frames
+ |■
+◇End◇
+■Condition (Number):   [1] CSelf0[モード] ==  0  
+-◇Condition:  [1]  [ CSelf0[モード] == 0   ] Case↓
+ |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ |▼ 背景を表示
+ |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 0 
+ |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
+ |■Set Variable: CSelf10 = 32 * CSelf88[座標倍率X[x10]] 
+ |■Set Variable: CSelf11 = 24 * CSelf89[座標倍率Y[x10]] 
+ |■Set Variable: CSelf10 += 32 + 0 
+ |■Set Variable: CSelf11 += 24 + 0 
+ |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] Window[<GRADY-779-000>] Size[CSelf10,CSelf11] X:0 Y:0 / 10(0)Frames  / Pattern 1 / Opacity 255 / Multiply  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ |■
+◇End◇
+■
+[COMMAND_TEXT_END]

@@ -1,0 +1,365 @@
+COMMON_ID=79
+COMMON_NAME=X[移]パーティー情報計算
+COMMAND_COLOR=6
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=0
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=
+VALINPUT_NAME_1=
+VALINPUT_NAME_2=
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=0
+LOADTYPE2=0
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=0
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=0
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=
+RETURN_VAL_TARGET=-1
+CSELF_NAME_0=
+CSELF_NAME_1=
+CSELF_NAME_2=
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=一時文字列
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=
+CSELF_NAME_9=
+CSELF_NAME_10=一時変数A
+CSELF_NAME_11=
+CSELF_NAME_12=
+CSELF_NAME_13=
+CSELF_NAME_14=
+CSELF_NAME_15=
+CSELF_NAME_16=最大パーティ人数
+CSELF_NAME_17=
+CSELF_NAME_18=戦闘中フラグ
+CSELF_NAME_19=
+CSELF_NAME_20=処理主人公ID
+CSELF_NAME_21=処理対象
+CSELF_NAME_22=パーティーメンバー数
+CSELF_NAME_23=最終の空欄位置
+CSELF_NAME_24=
+CSELF_NAME_25=
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=
+CSELF_NAME_29=
+CSELF_NAME_30=戦闘移動先
+CSELF_NAME_31=
+CSELF_NAME_32=
+CSELF_NAME_33=
+CSELF_NAME_34=
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=ＤＢ番号
+CSELF_NAME_41=移動元
+CSELF_NAME_42=移動先
+CSELF_NAME_43=
+CSELF_NAME_44=現在参照番号
+CSELF_NAME_45=項目数
+CSELF_NAME_46=項目番号
+CSELF_NAME_47=移動元数値
+CSELF_NAME_48=
+CSELF_NAME_49=ＤＢ参照番号
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=
+CSELF_NAME_89=
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=
+COMMAND_NUM=98
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("　パーティーのメンバー数を計算しなおします。")
+[103][0,1]<0>()("　パーティー欄に隙間があったら埋めます。")
+[103][0,1]<0>()("")
+[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[121][4,0]<0>(1600022,0,0,0)()
+[121][4,0]<0>(1600021,-1,0,0)()
+[121][4,0]<0>(1600023,0,0,0)()
+[250][5,4]<0>(18,51,0,69632,1600016)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,68,0,200704,1600018)("","基本ｼｽﾃﾑ用変数","[戦闘]戦闘中フラグ","")
+[179][1,0]<0>(1600016)()
+[121][4,0]<1>(1600021,1,0,256)()
+[103][0,1]<1>()("パーティー情報DBからキャラIDを取得する")
+[121][4,0]<1>(1600010,1600021,1,0)()
+[250][5,4]<1>(3,0,1600010,69632,1600020)("","パーティー情報","","")
+[111][4,0]<1>(17,1600020,0,1)()
+[401][1,0]<1>(1)()
+[121][4,0]<2>(1600022,1,0,256)()
+[111][4,0]<2>(1,1600023,1,1)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("最後の空欄位置が前にあったら、そこへ飛ばす")
+[250][5,4]<3>(3,0,1600023,65536,1600020)("","パーティー情報","","")
+[250][5,4]<3>(3,0,1600010,65536,-1)("","パーティー情報","","")
+[111][4,0]<3>(1,1600018,1,2)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("戦闘中なので戦闘中データも移動させる")
+[121][4,0]<4>(1600030,1600023,1,4096)()
+[103][0,1]<4>()("ＤＢ10～13までの内容を移動する")
+[121][4,0]<4>(1600040,10,0,0)()
+[121][4,0]<4>(1600041,1600021,0,0)()
+[121][4,0]<4>(1600042,1600030,0,0)()
+[179][1,0]<4>(4)()
+[250][5,4]<5>(1600040,0,-1,4096,1600045)("","","","")
+[121][4,0]<5>(1600046,0,0,0)()
+[121][4,0]<5>(1600049,1100000000,0,4)()
+[121][4,0]<5>(1600049,1600040,1000000,8456)()
+[179][1,0]<5>(1600045)()
+[121][4,0]<6>(1600044,1600049,1600046,0)()
+[121][4,0]<6>(1600044,1600041,100,8448)()
+[122][3,0]<6>(1600005,2,1600044)()
+[112][2,4]<6>(17,1600005)("<<ERROR>>","","","")
+[401][1,0]<6>(1)()
+[103][0,1]<7>()("データは数値")
+[250][5,4]<7>(1600040,1600041,1600046,4096,1600047)("","","","")
+[250][5,4]<7>(1600040,1600042,1600046,0,1600047)("","","","")
+[0][0,0]<7>()()
+[420][1,0]<6>(0)()
+[103][0,1]<7>()("データは文字列")
+[250][5,4]<7>(1600040,1600042,1600046,0,1600005)("","","","")
+[0][0,0]<7>()()
+[499][0,0]<6>()()
+[121][4,0]<6>(1600046,1,0,256)()
+[0][0,0]<6>()()
+[498][0,0]<5>()()
+[121][4,0]<5>(1600040,1,0,256)()
+[0][0,0]<5>()()
+[498][0,0]<4>()()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[103][0,1]<3>()("空欄位置を一つずらす")
+[121][4,0]<3>(1600023,1,0,256)()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[420][1,0]<1>(0)()
+[111][4,0]<2>(1,1600023,0,2)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("最後の空欄位置をここで覚えておく")
+[121][4,0]<3>(1600023,1600010,0,0)()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[103][0,1]<0>()("パーティー数を格納")
+[250][5,4]<0>(18,4,0,65536,1600022)("","基本ｼｽﾃﾑ用変数","","")
+[121][4,0]<0>(1600021,1600022,0,0)()
+[170][0,0]<0>()()
+[111][4,0]<1>(1,1600021,1600016,1)()
+[401][1,0]<1>(1)()
+[171][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[250][5,4]<1>(10,1600021,-2,65536,0)("","×┏ 戦闘一時ステータス[基]","","")
+[250][5,4]<1>(11,1600021,-2,65536,0)("","×┣ 属性耐性計算結果","","")
+[250][5,4]<1>(12,1600021,-2,65536,0)("","×┣ 状態耐性計算結果","","")
+[250][5,4]<1>(13,1600021,-2,65536,0)("","×┣ 状態リスト","","")
+[121][4,0]<1>(1600021,1,0,256)()
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ 【処理の内容】
+▼ 　パーティーのメンバー数を計算しなおします。
+▼ 　パーティー欄に隙間があったら埋めます。
+▼ 
+▼ 【このコモンイベント内で操作しているデータベース】
+▼  
+▼ 【ここから呼び出している別コモンイベント】
+▼  
+▼ 【どのコモンイベントから主に呼び出されているか】
+▼ ―――――――――――――――――――――――――――――――――――
+■Set Variable: CSelf22[パーティーメンバー数] = 0 + 0 
+■Set Variable: CSelf21[処理対象] = -1 + 0 
+■Set Variable: CSelf23[最終の空欄位置] = 0 + 0 
+■Load DB(Var):  CSelf16[最大パーティ人数] = VarDB[ "基本ｼｽﾃﾑ用変数":51:0 ] (18:システム上最大パーティー人数:数値) 
+■Load DB(Var):  CSelf18[戦闘中フラグ] = VarDB[ "基本ｼｽﾃﾑ用変数":"[戦闘]戦闘中フラグ":0 ] (18:68:数値) 
+■Repeat Loop [ CSelf16[最大パーティ人数] ] Times
+ |■Set Variable: CSelf21[処理対象] += 1 + 0 
+ |▼ パーティー情報DBからキャラIDを取得する
+ |■Set Variable: CSelf10[一時変数A] = CSelf21[処理対象] + 1 
+ |■Load DB(Var):  CSelf20[処理主人公ID] = VarDB[ "パーティー情報":0:CSelf10[一時変数A] ] (6:メイン設定:-) 
+ |■Condition (Number):   [1] CSelf20[処理主人公ID] >=  0  
+ |-◇Condition:  [1]  [ CSelf20[処理主人公ID] >= 0   ] Case↓
+ | |■Set Variable: CSelf22[パーティーメンバー数] += 1 + 0 
+ | |■Condition (Number):   [1] CSelf23[最終の空欄位置] >=  1  
+ | |-◇Condition:  [1]  [ CSelf23[最終の空欄位置] >= 1   ] Case↓
+ | | |▼ 最後の空欄位置が前にあったら、そこへ飛ばす
+ | | |■Write to DB(Var): VarDB[ "パーティー情報":0:CSelf23[最終の空欄位置] ] (6:メイン設定:-) =  CSelf20[処理主人公ID]
+ | | |■Write to DB(Var): VarDB[ "パーティー情報":0:CSelf10[一時変数A] ] (6:メイン設定:-) =  -1
+ | | |■Condition (Number):   [1] CSelf18[戦闘中フラグ] ==  1  
+ | | |-◇Condition:  [1]  [ CSelf18[戦闘中フラグ] == 1   ] Case↓
+ | | | |▼ 戦闘中なので戦闘中データも移動させる
+ | | | |■Set Variable: CSelf30[戦闘移動先] = CSelf23[最終の空欄位置] - 1 
+ | | | |▼ ＤＢ10～13までの内容を移動する
+ | | | |■Set Variable: CSelf40[ＤＢ番号] = 10 + 0 
+ | | | |■Set Variable: CSelf41[移動元] = CSelf21[処理対象] + 0 
+ | | | |■Set Variable: CSelf42[移動先] = CSelf30[戦闘移動先] + 0 
+ | | | |■Repeat Loop [ 4 ] Times
+ | | | | |■Load DB(Var):  CSelf45[項目数] = VarDB[Type CSelf40[ＤＢ番号](-)'s Field Count]
+ | | | | |■Set Variable: CSelf46[項目番号] = 0 + 0 
+ | | | | |■Set Variable: CSelf49[ＤＢ参照番号] = 1100000000 + 0 
+ | | | | |■Set Variable: CSelf49[ＤＢ参照番号] += CSelf40[ＤＢ番号] * 1000000 
+ | | | | |■Repeat Loop [ CSelf45[項目数] ] Times
+ | | | | | |■Set Variable: CSelf44[現在参照番号] = CSelf49[ＤＢ参照番号] + CSelf46[項目番号] 
+ | | | | | |■Set Variable: CSelf44[現在参照番号] += CSelf41[移動元] * 100 
+ | | | | | |■Set String: CSelf5[一時文字列] = String at Position [CSelf44[現在参照番号]]
+ | | | | | |■Condition (String):   [1] CSelf5[一時文字列] is equal to "<<ERROR>>"
+ | | | | | |-◇Condition:  [1] [ CSelf5[一時文字列] is equal to "<<ERROR>>" ] Case↓
+ | | | | | | |▼ データは数値
+ | | | | | | |■Load DB(Var):  CSelf47[移動元数値] = VarDB[ CSelf40[ＤＢ番号]:CSelf41[移動元]:CSelf46[項目番号] ] (-:-:-) 
+ | | | | | | |■Write to DB(Var): VarDB[ CSelf40[ＤＢ番号]:CSelf42[移動先]:CSelf46[項目番号] ] (-:-:-) =  CSelf47[移動元数値]
+ | | | | | | |■
+ | | | | | |-◇Else
+ | | | | | | |▼ データは文字列
+ | | | | | | |■Write to DB(Var): VarDB[ CSelf40[ＤＢ番号]:CSelf42[移動先]:CSelf46[項目番号] ] (-:-:-) =  CSelf5[一時文字列]
+ | | | | | | |■
+ | | | | | |◇End◇
+ | | | | | |■Set Variable: CSelf46[項目番号] += 1 + 0 
+ | | | | | |■
+ | | | | |◇Loop End Point◇◇
+ | | | | |■Set Variable: CSelf40[ＤＢ番号] += 1 + 0 
+ | | | | |■
+ | | | |◇Loop End Point◇◇
+ | | | |■
+ | | |◇End◇
+ | | |▼ 空欄位置を一つずらす
+ | | |■Set Variable: CSelf23[最終の空欄位置] += 1 + 0 
+ | | |■
+ | |◇End◇
+ | |■
+ |-◇Else
+ | |■Condition (Number):   [1] CSelf23[最終の空欄位置] ==  0  
+ | |-◇Condition:  [1]  [ CSelf23[最終の空欄位置] == 0   ] Case↓
+ | | |▼ 最後の空欄位置をここで覚えておく
+ | | |■Set Variable: CSelf23[最終の空欄位置] = CSelf10[一時変数A] + 0 
+ | | |■
+ | |◇End◇
+ | |■
+ |◇End◇
+ |■
+◇Loop End Point◇◇
+▼ パーティー数を格納
+■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":4:0 ] (18:現在パーティー人数:数値) =  CSelf22[パーティーメンバー数]
+■Set Variable: CSelf21[処理対象] = CSelf22[パーティーメンバー数] + 0 
+■Loop Start
+ |■Condition (Number):   [1] CSelf21[処理対象] >=  CSelf16[最大パーティ人数]  
+ |-◇Condition:  [1]  [ CSelf21[処理対象] >= CSelf16[最大パーティ人数]   ] Case↓
+ | |■Break Loop
+ | |■
+ |◇End◇
+ |■Write to DB(Var): [Reset Type "×┏ 戦闘一時ステータス[基]"(10) Data CSelf21[処理対象]]
+ |■Write to DB(Var): [Reset Type "×┣ 属性耐性計算結果"(11) Data CSelf21[処理対象]]
+ |■Write to DB(Var): [Reset Type "×┣ 状態耐性計算結果"(12) Data CSelf21[処理対象]]
+ |■Write to DB(Var): [Reset Type "×┣ 状態リスト"(13) Data CSelf21[処理対象]]
+ |■Set Variable: CSelf21[処理対象] += 1 + 0 
+ |■
+◇Loop End Point◇◇
+■
+[COMMAND_TEXT_END]
