@@ -1,0 +1,261 @@
+COMMON_ID=29
+COMMON_NAME=◆[戦闘用]敵キャラの追加
+COMMAND_COLOR=0
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=戦闘中のみ有効、指定位置(1～7番）に敵キャラを追加（または置き換え）します。
+VALINPUT_NUM=3
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=出現位置
+VALINPUT_NAME_1=出現させる敵
+VALINPUT_NAME_2=上書きオプション
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=4
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=2
+LOADTYPE1=1
+LOADTYPE2=2
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=7
+CHOICE_STR_0_0=敵位置1
+CHOICE_STR_0_1=敵位置2
+CHOICE_STR_0_2=敵位置3
+CHOICE_STR_0_3=敵位置4
+CHOICE_STR_0_4=敵位置5
+CHOICE_STR_0_5=敵位置6
+CHOICE_STR_0_6=敵位置7
+CHOICE_STR_1_NUM=3
+CHOICE_STR_1_0=<消去>
+CHOICE_STR_1_1=<消去>
+CHOICE_STR_1_2=<消去>
+CHOICE_STR_2_NUM=2
+CHOICE_STR_2_0=位置が空いてたら出現
+CHOICE_STR_2_1=強制上書き
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=7
+CHOICE_VAL_0_0=0
+CHOICE_VAL_0_1=1
+CHOICE_VAL_0_2=2
+CHOICE_VAL_0_3=3
+CHOICE_VAL_0_4=4
+CHOICE_VAL_0_5=5
+CHOICE_VAL_0_6=6
+CHOICE_VAL_1_NUM=3
+CHOICE_VAL_1_0=1
+CHOICE_VAL_1_1=9
+CHOICE_VAL_1_2=1
+CHOICE_VAL_2_NUM=2
+CHOICE_VAL_2_0=0
+CHOICE_VAL_2_1=1
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=4
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=
+RETURN_VAL_TARGET=-1
+CSELF_NAME_0=出現位置
+CSELF_NAME_1=出現させる敵
+CSELF_NAME_2=上書きオプション
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=
+CSELF_NAME_9=
+CSELF_NAME_10=実対象スロット
+CSELF_NAME_11=
+CSELF_NAME_12=
+CSELF_NAME_13=
+CSELF_NAME_14=
+CSELF_NAME_15=
+CSELF_NAME_16=
+CSELF_NAME_17=
+CSELF_NAME_18=戦闘中フラグ
+CSELF_NAME_19=
+CSELF_NAME_20=
+CSELF_NAME_21=
+CSELF_NAME_22=
+CSELF_NAME_23=
+CSELF_NAME_24=
+CSELF_NAME_25=
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=
+CSELF_NAME_29=
+CSELF_NAME_30=
+CSELF_NAME_31=
+CSELF_NAME_32=
+CSELF_NAME_33=
+CSELF_NAME_34=
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=
+CSELF_NAME_41=
+CSELF_NAME_42=
+CSELF_NAME_43=
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=
+CSELF_NAME_89=
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=
+COMMAND_NUM=34
+--
+WoditorEvCOMMAND_START
+[121][4,0]<0>(1600010,1600000,10,0)()
+[250][5,4]<0>(18,68,0,200704,1600018)("","基本ｼｽﾃﾑ用変数","[戦闘]戦闘中フラグ","")
+[111][4,0]<0>(1,1600018,1,2)()
+[401][1,0]<0>(1)()
+[111][4,0]<1>(1,1600002,0,2)()
+[401][1,0]<1>(1)()
+[103][0,1]<2>()("上書きしない場合")
+[300][4,1]<2>(0,16777217,1600010,1600020)("X[戦]ｽﾛｯﾄから主人公ID取得")
+[111][4,0]<2>(1,1600020,0,1)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("もしすでに該当スロットにキャラがいた場合（または生きてた場合）は何もしない。")
+[103][0,1]<3>()("　※敵は死ぬと戦闘スロットがリセットされる")
+[172][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[103][0,1]<1>()("Ver2.28　「-1と同じ」を「-1以下」に変更")
+[111][7,0]<1>(2,1600001,0,1,1600001,-1,3)()
+[401][1,0]<1>(1)()
+[103][0,1]<2>()("出現させる場合")
+[300][5,1]<2>(0,3,1600010,1600001,0)("X[戦]敵DB→戦闘DBコピー")
+[103][0,1]<2>()(" ")
+[300][3,1]<2>(0,1,1600010)("X[戦]敵キャラ_座標算出")
+[300][4,1]<2>(0,2,0,1600010)("X[戦]敵キャラ_単体描画")
+[0][0,0]<2>()()
+[401][1,0]<1>(2)()
+[103][0,1]<2>()("消去なら逃走させる")
+[300][4,1]<2>(0,2,1600010,1)("X[戦]敵撃破処理")
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+■変数操作: CSelf10[実対象スロット] = CSelf0[出現位置] + 10 
+■DB読込(可変)： CSelf18[戦闘中フラグ] = 可変DB[ "基本ｼｽﾃﾑ用変数":"[戦闘]戦闘中フラグ":0 ] (18:68:数値) 
+■条件分岐(数値):  【1】 CSelf18[戦闘中フラグ]  が   1 と同じ 
+-◇分岐： 【1】  [ CSelf18[戦闘中フラグ]  が  1 と同じ  ]の場合↓
+ |■条件分岐(数値):  【1】 CSelf2[上書きオプション]  が   0 と同じ 
+ |-◇分岐： 【1】  [ CSelf2[上書きオプション]  が  0 と同じ  ]の場合↓
+ | |▼ 上書きしない場合
+ | |■イベントの挿入[名]： CSelf20 = ["X[戦]ｽﾛｯﾄから主人公ID取得"] <コモンEv 141>  / CSelf10[実対象スロット]
+ | |■条件分岐(数値):  【1】 CSelf20  が   0 以上 
+ | |-◇分岐： 【1】  [ CSelf20  が  0 以上  ]の場合↓
+ | | |▼ もしすでに該当スロットにキャラがいた場合（または生きてた場合）は何もしない。
+ | | |▼ 　※敵は死ぬと戦闘スロットがリセットされる
+ | | |■イベント処理中断
+ | | |■
+ | |◇分岐終了◇
+ | |■
+ |◇分岐終了◇
+ |▼ Ver2.28　「-1と同じ」を「-1以下」に変更
+ |■条件分岐(数値):  【1】 CSelf1[出現させる敵]  が   0 以上  【2】 CSelf1[出現させる敵]  が   -1 以下 
+ |-◇分岐： 【1】  [ CSelf1[出現させる敵]  が  0 以上  ]の場合↓
+ | |▼ 出現させる場合
+ | |■イベントの挿入[名]： ["X[戦]敵DB→戦闘DBコピー"] <コモンEv 144>  / CSelf10[実対象スロット] / CSelf1[出現させる敵] / 0:全てのデータコピー+状態初期化
+ | |▼  
+ | |■イベントの挿入[名]： ["X[戦]敵キャラ_座標算出"] <コモンEv 175>  / CSelf10[実対象スロット]
+ | |■イベントの挿入[名]： ["X[戦]敵キャラ_単体描画"] <コモンEv 179>  / 0:表示[アニメスライド] / CSelf10[実対象スロット]
+ | |■
+ |-◇分岐： 【2】  [ CSelf1[出現させる敵]  が  -1 以下  ]の場合↓
+ | |▼ 消去なら逃走させる
+ | |■イベントの挿入[名]： ["X[戦]敵撃破処理"] <コモンEv 171>  / CSelf10[実対象スロット] / 1:逃走処理[何も取得しない]
+ | |■
+ |◇分岐終了◇
+ |■
+◇分岐終了◇
+■
+[COMMAND_TEXT_END]

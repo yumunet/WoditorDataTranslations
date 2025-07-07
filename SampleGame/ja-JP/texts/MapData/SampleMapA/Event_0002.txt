@@ -1,0 +1,81 @@
+EVENT_ID=2
+EVENT_NAME=ダンジョンの扉
+EVENT_X=34
+EVENT_Y=11
+EVENT_PAGE=1
+OPTION_DATA_NUM=0
+EVENT_PAGE_NUM=1
+EVENT_PAGE=0
+EVENT_TILE_ID=-1
+GRAPHIC_FILENAME=
+EVENT_DIRECTION=2
+EVENT_PATTERN=1
+EVENT_OPACITY=255
+EVENT_BLENDTYPE=0
+EVENT_TRIGGER_TYPE=0
+EVENT_CONDITION_0_USE=32
+EVENT_CONDITION_TARGET_0=1000000
+EVENT_CONDITION_VALUE_0=0
+EVENT_CONDITION_1_USE=32
+EVENT_CONDITION_TARGET_1=1000000
+EVENT_CONDITION_VALUE_1=0
+EVENT_CONDITION_2_USE=32
+EVENT_CONDITION_TARGET_2=1000000
+EVENT_CONDITION_VALUE_2=0
+EVENT_CONDITION_3_USE=32
+EVENT_CONDITION_TARGET_3=1000000
+EVENT_CONDITION_VALUE_3=0
+ANIME_SPEED=3
+MOVE_SPEED=3
+MOVE_FREQUENCY=3
+MOVE_TYPE=0
+CHARA_OPTION_FLAG=35
+ROUTE_OPTION_FLAG=2
+ROUTE_COMMAND_NUM=0
+OPTION_VAL_NUM=3
+OPTION_VAL_0=0
+OPTION_VAL_1=0
+OPTION_VAL_2=0
+COMMAND_NUM=18
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("「ダンジョンのカギ」を持っているか判定し、セルフ変数0へ代入")
+[210][4,0]<0>(500017,16777217,19,1100000)()
+[103][0,1]<0>()("1個以上持ってたらダンジョンへ場所移動します")
+[103][0,1]<0>()("（ゲーム中に1個しか手に入らないものでも、")
+[103][0,1]<0>()("　条件分岐は「1個以上」とするのが安全です）")
+[111][7,0]<0>(2,1100000,1,1,1100000,0,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("ダンジョン内ではセーブを禁止する")
+[210][3,0]<1>(500015,1,0)()
+[103][0,1]<1>()("場所移動")
+[130][5,0]<1>(-1,7,27,3,32)()
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[103][0,1]<1>()("カギを持っていない場合はメッセージだけ")
+[101][0,1]<1>()("カギがかかっているようだ……<\n>どこかでカギを見つけないといけない。")
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ 「ダンジョンのカギ」を持っているか判定し、セルフ変数0へ代入
+■イベントの挿入： このEvのSelf0 = コモン17：[ ▲アイテム所持数取得 ] / 19:ダンジョンのカギ
+▼ 1個以上持ってたらダンジョンへ場所移動します
+▼ （ゲーム中に1個しか手に入らないものでも、
+▼ 　条件分岐は「1個以上」とするのが安全です）
+■条件分岐(数値):  【1】 このEvのSelf0  が   1 以上  【2】 このEvのSelf0  が   0 と同じ 
+-◇分岐： 【1】  [ このEvのSelf0  が  1 以上  ]の場合↓
+ |▼ ダンジョン内ではセーブを禁止する
+ |■イベントの挿入： コモン15：[ ○セーブ許可・禁止設定 ] / 0:セーブを禁止する
+ |▼ 場所移動
+ |■場所移動：主人公 ▲マップID3[ダンジョン] X:7 Y:27  [ﾄﾗﾝｼﾞｼｮﾝ + 暗転有り]
+ |■
+-◇分岐： 【2】  [ このEvのSelf0  が  0 と同じ  ]の場合↓
+ |▼ カギを持っていない場合はメッセージだけ
+ |■文章:カギがかかっているようだ……\nどこかでカギを見つけないといけない。
+ |■
+◇分岐終了◇
+■
+[COMMAND_TEXT_END]

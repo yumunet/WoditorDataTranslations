@@ -1,0 +1,255 @@
+COMMON_ID=34
+COMMON_NAME=【2】 お店 商品の追加
+COMMAND_COLOR=0
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=ショップに陳列するアイテム/武器/防具を一つ追加します。追加が終わったら【3】お店処理実行 を呼び出します。
+VALINPUT_NUM=4
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=追加するのは？
+VALINPUT_NAME_1=[A]ｱｲﾃﾑ
+VALINPUT_NAME_2=[B]武器
+VALINPUT_NAME_3=[C]防具
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=0
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=2
+LOADTYPE1=1
+LOADTYPE2=1
+LOADTYPE3=1
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=3
+CHOICE_STR_0_0=ｱｲﾃﾑ[A]
+CHOICE_STR_0_1=武器[B]
+CHOICE_STR_0_2=防具[C]
+CHOICE_STR_1_NUM=3
+CHOICE_STR_1_0=<なし>
+CHOICE_STR_1_1=<なし>
+CHOICE_STR_1_2=<なし>
+CHOICE_STR_2_NUM=3
+CHOICE_STR_2_0=<なし>
+CHOICE_STR_2_1=<なし>
+CHOICE_STR_2_2=<なし>
+CHOICE_STR_3_NUM=3
+CHOICE_STR_3_0=<なし>
+CHOICE_STR_3_1=<なし>
+CHOICE_STR_3_2=<なし>
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=3
+CHOICE_VAL_0_0=1
+CHOICE_VAL_0_1=2
+CHOICE_VAL_0_2=3
+CHOICE_VAL_1_NUM=3
+CHOICE_VAL_1_0=1
+CHOICE_VAL_1_1=2
+CHOICE_VAL_1_2=1
+CHOICE_VAL_2_NUM=3
+CHOICE_VAL_2_0=1
+CHOICE_VAL_2_1=3
+CHOICE_VAL_2_2=1
+CHOICE_VAL_3_NUM=3
+CHOICE_VAL_3_0=1
+CHOICE_VAL_3_1=4
+CHOICE_VAL_3_2=1
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=1
+DEFAULT_VAL_1=-1
+DEFAULT_VAL_2=-1
+DEFAULT_VAL_3=-1
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=
+RETURN_VAL_TARGET=-1
+CSELF_NAME_0=追加するのは？
+CSELF_NAME_1=[A]ｱｲﾃﾑ
+CSELF_NAME_2=[B]武器
+CSELF_NAME_3=[C]防具
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=
+CSELF_NAME_9=
+CSELF_NAME_10=商品コード
+CSELF_NAME_11=
+CSELF_NAME_12=
+CSELF_NAME_13=
+CSELF_NAME_14=
+CSELF_NAME_15=
+CSELF_NAME_16=
+CSELF_NAME_17=
+CSELF_NAME_18=
+CSELF_NAME_19=
+CSELF_NAME_20=
+CSELF_NAME_21=
+CSELF_NAME_22=
+CSELF_NAME_23=
+CSELF_NAME_24=
+CSELF_NAME_25=
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=
+CSELF_NAME_29=
+CSELF_NAME_30=
+CSELF_NAME_31=
+CSELF_NAME_32=
+CSELF_NAME_33=
+CSELF_NAME_34=
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=
+CSELF_NAME_41=
+CSELF_NAME_42=
+CSELF_NAME_43=
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=
+CSELF_NAME_89=
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=
+COMMAND_NUM=31
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("※注意　このショップ追加の時点で装備可・不可も計算しているので")
+[103][0,1]<0>()("　この追加処理から【3】を実行するまでの間にメンバー変更を行わないで下さい。")
+[103][0,1]<0>()("入力０：追加するのは？（１：アイテム　２：武器　３：防具）　入力1～３：それぞれの場合の内容")
+[103][0,1]<0>()("装備状態は　1：装備不能　2：装備可能　3：装備中　0は何も出ない")
+[111][10,0]<0>(3,1600000,1,2,1600000,2,2,1600000,3,2)()
+[401][1,0]<0>(1)()
+[111][4,0]<1>(1,1600001,0,1)()
+[401][1,0]<1>(1)()
+[121][4,0]<2>(1600010,1600001,10000,0)()
+[300][3,1]<2>(0,1,1600010)("X[移]お店商品追加")
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[111][4,0]<1>(1,1600002,0,1)()
+[401][1,0]<1>(1)()
+[121][4,0]<2>(1600010,1600002,20000,0)()
+[300][3,1]<2>(0,1,1600010)("X[移]お店商品追加")
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[401][1,0]<0>(3)()
+[111][4,0]<1>(1,1600003,0,1)()
+[401][1,0]<1>(1)()
+[121][4,0]<2>(1600010,1600003,30000,0)()
+[300][3,1]<2>(0,1,1600010)("X[移]お店商品追加")
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ※注意　このショップ追加の時点で装備可・不可も計算しているので
+▼ 　この追加処理から【3】を実行するまでの間にメンバー変更を行わないで下さい。
+▼ 入力０：追加するのは？（１：アイテム　２：武器　３：防具）　入力1～３：それぞれの場合の内容
+▼ 装備状態は　1：装備不能　2：装備可能　3：装備中　0は何も出ない
+■条件分岐(数値):  【1】 CSelf0[追加するのは？]  が   1 と同じ  【2】 CSelf0[追加するのは？]  が   2 と同じ  【3】 CSelf0[追加するのは？]  が   3 と同じ 
+-◇分岐： 【1】  [ CSelf0[追加するのは？]  が  1 と同じ  ]の場合↓
+ |■条件分岐(数値):  【1】 CSelf1[[A]ｱｲﾃﾑ]  が   0 以上 
+ |-◇分岐： 【1】  [ CSelf1[[A]ｱｲﾃﾑ]  が  0 以上  ]の場合↓
+ | |■変数操作: CSelf10[商品コード] = CSelf1[[A]ｱｲﾃﾑ] + 10000 
+ | |■イベントの挿入[名]： ["X[移]お店商品追加"] <コモンEv 83>  / CSelf10[商品コード]
+ | |■
+ |◇分岐終了◇
+ |■
+-◇分岐： 【2】  [ CSelf0[追加するのは？]  が  2 と同じ  ]の場合↓
+ |■条件分岐(数値):  【1】 CSelf2[[B]武器]  が   0 以上 
+ |-◇分岐： 【1】  [ CSelf2[[B]武器]  が  0 以上  ]の場合↓
+ | |■変数操作: CSelf10[商品コード] = CSelf2[[B]武器] + 20000 
+ | |■イベントの挿入[名]： ["X[移]お店商品追加"] <コモンEv 83>  / CSelf10[商品コード]
+ | |■
+ |◇分岐終了◇
+ |■
+-◇分岐： 【3】  [ CSelf0[追加するのは？]  が  3 と同じ  ]の場合↓
+ |■条件分岐(数値):  【1】 CSelf3[[C]防具]  が   0 以上 
+ |-◇分岐： 【1】  [ CSelf3[[C]防具]  が  0 以上  ]の場合↓
+ | |■変数操作: CSelf10[商品コード] = CSelf3[[C]防具] + 30000 
+ | |■イベントの挿入[名]： ["X[移]お店商品追加"] <コモンEv 83>  / CSelf10[商品コード]
+ | |■
+ |◇分岐終了◇
+ |■
+◇分岐終了◇
+■
+[COMMAND_TEXT_END]

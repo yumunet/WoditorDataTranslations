@@ -1,0 +1,89 @@
+EVENT_ID=14
+EVENT_NAME=エフェクト女
+EVENT_X=19
+EVENT_Y=23
+EVENT_PAGE=1
+OPTION_DATA_NUM=0
+EVENT_PAGE_NUM=1
+EVENT_PAGE=0
+EVENT_TILE_ID=-1
+GRAPHIC_FILENAME=CharaChip/Chara_Girl1_USM.png
+EVENT_DIRECTION=1
+EVENT_PATTERN=1
+EVENT_OPACITY=255
+EVENT_BLENDTYPE=0
+EVENT_TRIGGER_TYPE=0
+EVENT_CONDITION_0_USE=32
+EVENT_CONDITION_TARGET_0=1000000
+EVENT_CONDITION_VALUE_0=0
+EVENT_CONDITION_1_USE=32
+EVENT_CONDITION_TARGET_1=1000000
+EVENT_CONDITION_VALUE_1=0
+EVENT_CONDITION_2_USE=32
+EVENT_CONDITION_TARGET_2=1000000
+EVENT_CONDITION_VALUE_2=0
+EVENT_CONDITION_3_USE=32
+EVENT_CONDITION_TARGET_3=1000000
+EVENT_CONDITION_VALUE_3=0
+ANIME_SPEED=3
+MOVE_SPEED=3
+MOVE_FREQUENCY=3
+MOVE_TYPE=0
+CHARA_OPTION_FLAG=35
+ROUTE_OPTION_FLAG=2
+ROUTE_COMMAND_NUM=0
+OPTION_VAL_NUM=3
+OPTION_VAL_0=0
+OPTION_VAL_1=0
+OPTION_VAL_2=0
+COMMAND_NUM=22
+--
+WoditorEvCOMMAND_START
+[101][0,1]<0>()("「こんにちは！<\n>　何かやってみましょうか？")
+[102][1,5]<0>(5)("光ってみて","震えてみて","ズームしてみて","ズーム解除して","シェイクして")
+[401][1,0]<0>(2)()
+[180][1,0]<1>(5)()
+[290][7,0]<1>(1,40,-1,0,100,100,100)()
+[0][0,0]<1>()()
+[401][1,0]<0>(3)()
+[290][7,0]<1>(17,1,-1,0,2,0,100)()
+[0][0,0]<1>()()
+[401][1,0]<0>(4)()
+[290][7,0]<1>(2,10,0,0,160,120,200)()
+[0][0,0]<1>()()
+[401][1,0]<0>(5)()
+[290][7,0]<1>(2,10,0,0,160,120,100)()
+[0][0,0]<1>()()
+[401][1,0]<0>(6)()
+[280][2,0]<1>(68,30)()
+[0][0,0]<1>()()
+[421][1,0]<0>(0)()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+■文章:「こんにちは！\n　何かやってみましょうか？
+■文章選択肢:/ 【1】光ってみて / 【2】震えてみて / 【3】ズームしてみて / 【4】ズーム解除して / 【5】シェイクして 
+-◇選択肢：【1】 光ってみて                                    の場合↓
+ |■ウェイト：5 フレーム
+ |■キャラエフェクト：このイベント[フラッシュ] R100/G100/B100  [40]ﾌﾚｰﾑ
+ |■
+-◇選択肢：【2】 震えてみて                                    の場合↓
+ |■キャラエフェクト：このイベント[シェイク] Xｼｪｲｸ 2 / Yｼｪｲｸ 0 / 100回  [1]ﾌﾚｰﾑ
+ |■
+-◇選択肢：【3】 ズームしてみて                                  の場合↓
+ |■マップエフェクト：[ズーム] 中心X 160 / 中心Y 120 / 200％  [10]ﾌﾚｰﾑ
+ |■
+-◇選択肢：【4】 ズーム解除して                                  の場合↓
+ |■マップエフェクト：[ズーム] 中心X 160 / 中心Y 120 / 100％  [10]ﾌﾚｰﾑ
+ |■
+-◇選択肢：【5】 シェイクして                                   の場合↓
+ |■マップエフェクト：[シェイク] 強さ5 速度5 縦揺れ [30]ﾌﾚｰﾑ
+ |■
+-◇キャンセルの場合
+ |■
+◇分岐終了◇
+■
+[COMMAND_TEXT_END]
