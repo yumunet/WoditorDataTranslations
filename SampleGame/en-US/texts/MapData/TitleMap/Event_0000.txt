@@ -36,7 +36,7 @@ OPTION_VAL_NUM=3
 OPTION_VAL_0=0
 OPTION_VAL_1=0
 OPTION_VAL_2=0
-COMMAND_NUM=89
+COMMAND_NUM=91
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("――――――――――――――――――――――――――――――――――")
@@ -66,6 +66,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("Display title image. [The image used here will be the title image]")
 [103][0,1]<0>()("By default, <dqrt>TitleGraphic.png<dqrt> in the <dqrt>SystemFile<dqrt> folder is the title screen.")
 [150][11,1]<0>(0,1,0,1,1,1,255,0,0,100,0)("SystemFile/TitleGraphic.png")
+[150][11,1]<0>(20512,2,0,1,1,1,255,160,220,100,0)("\cS[1]\f[10]WOLF RPG Editor - Sample Game")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("When starting the game, insert a 1-frame wait to")
 [103][0,1]<0>()("allow for the initialization of the base system!")
@@ -89,6 +90,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<1>(9000004,-1,0,0)()
 [103][0,1]<1>()("Erase the title screen picture.")
 [150][3,0]<1>(2,1,0)()
+[150][3,0]<1>(2,2,0)()
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<1>()("Transfer to Sample Map A.")
 [103][0,1]<1>()("(Change the destination as necessary.)")
@@ -158,6 +160,7 @@ WoditorEvCOMMAND_END
 ▼ Display title image. [The image used here will be the title image]
 ▼ By default, "TitleGraphic.png" in the "SystemFile" folder is the title screen.
 ■Picture Show: 1 [Top-Left] File[SystemFile/TitleGraphic.png] X:0 Y:0 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+■Picture Show: 2 [Top-Center] String[\cS[1]\f[10]WOLF] X:160 Y:220 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
 ▼  
 ▼ When starting the game, insert a 1-frame wait to
 ▼ allow for the initialization of the base system!
@@ -181,6 +184,7 @@ WoditorEvCOMMAND_END
  |■Set Variable: Sys4:Choice Box Y = -1 + 0 
  |▼ Erase the title screen picture.
  |■Picture Erase: 1  / 0(0)Frames
+ |■Picture Erase: 2  / 0(0)Frames
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |▼ Transfer to Sample Map A.
  |▼ (Change the destination as necessary.)
