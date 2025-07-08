@@ -1,5 +1,5 @@
 EVENT_ID=19
-EVENT_NAME=タイガ
+EVENT_NAME=Taiga
 EVENT_X=11
 EVENT_Y=20
 EVENT_PAGE=1
@@ -43,111 +43,111 @@ OPTION_VAL_2=0
 COMMAND_NUM=218
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("ピクセル移動中かのSelf0変数を見て選択肢の文字列を切り替えます")
+[103][0,1]<0>()("Determine whether the hero is in pixel movement by checking the Self0 variable, and switch the choice string.")
 [111][7,0]<0>(2,1100000,0,2,1100000,1,2)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("Self0が0ならまだピクセル移動してないのでONする選択肢")
-[122][3,1]<1>(3000000,0,0)("ピクセル移動を試したい！")
+[103][0,1]<1>()("If Self0 is 0, pixel movement is off, so set the on choice.")
+[122][3,1]<1>(3000000,0,0)("I want to try pixel movement!")
 [0][0,0]<1>()()
 [401][1,0]<0>(2)()
-[103][0,1]<1>()("Self0が1ならピクセル移動中なのでOFFする選択肢")
-[122][3,1]<1>(3000000,0,0)("ピクセル移動をやめたい")
+[103][0,1]<1>()("If Self0 is 1, pixel movement is on, so set the off choice.")
+[122][3,1]<1>(3000000,0,0)("I want to stop pixel movement")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
-[101][0,1]<0>()("「あなたのライバル、トラ娘のタイガちゃんよ！<\n>　バージョン3の新機能を紹介しちゃうんだから！")
+[101][0,1]<0>()("I'm your rival, Taiga the tiger girl!<\n>I'm gonna show you the new features in Version 3!")
 [180][1,0]<0>(1)()
-[102][1,7]<0>(7)("\s[0]","ピクセル移動処理ってどう作られてるの？","ユニコード対応されたって聞いたけど？","変換エフェクトで色変えができるって！？","画面をピクチャとして取れるって！？","マスク処理のカットインを見たい！","マスクを使ったカットインの解説をお願い")
+[102][1,7]<0>(7)("\s[0]","How is pixel movement processing created?","I heard it supports Unicode?","You can change colors with filter effects?","You can capture the screen as a picture?","I want to see a cut-in with mask processing!","Please explain the cut-in using the mask")
 [401][1,0]<0>(2)()
 [111][7,0]<1>(2,1100000,0,2,1100000,1,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("Self0が0ならこれからピクセル移動開始")
-[101][0,1]<2>()("「オッケー！　マス目単位じゃなくて<\n>　ピクセル単位で移動するモードを<\n>　オンにするわよ！")
-[103][0,1]<2>()("コモンイベント名からIDを得る裏技でコモンイベントIDを得ます。")
-[103][0,1]<2>()("※「文字列操作」の「ファイル内容読込」で裏技コマンドを入れると使える。")
-[103][0,1]<2>()("　マニュアルの「文字列操作」に載ってるぞ！")
-[122][4,1]<2>(3000000,1280,0,1)("<<GET_COMMONEVENT_ID_FROM_NAME>>■主人公ピクセル移動切り替え")
-[103][0,1]<2>()("「変数操作」の裏技！")
-[103][0,1]<2>()("「39」などが入った文字列変数をむりやり数値変数に入れると")
-[103][0,1]<2>()("ちゃんと数値として読ませることができるぞ！")
+[103][0,1]<2>()("If Self0 is 0, start pixel movement.")
+[101][0,1]<2>()("Okay! I'll turn on the mode that lets you move in<\n>pixels instead of tiles!")
+[103][0,1]<2>()("Get the Common Event ID using a trick to get the ID by the Common Event name.")
+[103][0,1]<2>()("*You can use it by entering a special code in <dqrt>Execute Special Code<dqrt> of <dqrt>Set String.<dqrt>")
+[103][0,1]<2>()(" It's written on the <dqrt>Set String<dqrt> page of the manual!")
+[122][3,1]<2>(3000000,262656,0)("<<GET_COMMONEVENT_ID_FROM_NAME>>■Toggle Pixel Movement")
+[103][0,1]<2>()("A trick for Set Variable!")
+[103][0,1]<2>()("If you assign a string variable containing numbers such as <dqrt>39<dqrt> to a numeric variable,")
+[103][0,1]<2>()("you can convert it to a number!")
 [121][4,0]<2>(1100001,3000000,0,0)()
-[101][0,1]<2>()("「えーと、コモンイベント\self[1]の<\n>　『■主人公ピクセル移動切り替え』を……<\n>　ポチッ、ON！")
+[101][0,1]<2>()("Well, let's turn on Common Event \self[1]<\n><dqrt>■Toggle Pixel Movement<dqrt>...<\n>*Click* ON!")
 [140][7,1]<2>(33554464,0,0,0,100,100,0)("SystemFile/SE_Get.ogg")
-[101][0,1]<2>()("「はい、ピクセル単位での移動開始！<\n>　マス目移動から解き放たれた<\n>　ピクセル移動モードを楽しんできて！")
-[300][3,1]<2>(0,1,1)("■主人公ピクセル移動切り替え")
+[101][0,1]<2>()("Alright, you can now move in pixels!<\n>Enjoy the pixel movement mode — freedom from<\n>tile-based movement!")
+[300][3,1]<2>(0,1,1)("■Toggle Pixel Movement")
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
 [140][7,1]<2>(33554464,0,0,0,100,100,0)("SystemFile/SE_LevelUp.ogg")
-[300][3,1]<2>(0,1,-1)("■主人公ピクセル移動切り替え")
-[101][0,1]<2>()("「ピクセル移動、OFF！<\n>　まあまあ楽しかったでしょ？")
-[101][0,1]<2>()("「でもピクセル移動中は1マスの<\n>　すきまを通るのが大変になるから、<\n>　あなたがゲームを作るときは<\n>　あまり狭い道を入れないようにしてよね！？")
+[300][3,1]<2>(0,1,-1)("■Toggle Pixel Movement")
+[101][0,1]<2>()("Pixel movement, off!<\n>It was kinda fun, wasn't it?")
+[101][0,1]<2>()("But when pixel movement is on, it's tricky to pass<\n>through gaps of one tile. So, when you're making<\n>a game, try not to make the paths too narrow!")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
-[103][0,1]<1>()("テクニック： 「1を足して2で余り(％)を取る」と0→1→0→1と切り替わります！")
+[103][0,1]<1>()("Technique: Add 1 and divide by 2 to get the remainder (%), and it will switch between 0 and 1! (0→1→0→1)")
 [121][4,0]<1>(1100000,1,0,256)()
 [121][4,0]<1>(1100000,2,0,1280)()
 [0][0,0]<1>()()
 [401][1,0]<0>(3)()
-[101][0,1]<1>()("「ピクセル移動の説明が聞きたいの？<\n>　長いわよ！　覚悟しなさい！")
+[101][0,1]<1>()("Do you want to hear about pixel movement?<\n>It's a long story! Get ready!")
 [180][1,0]<1>(4)()
-[101][0,1]<1>()("「ピクセル移動処理は、<\n> 『通常のマス目単位の移動を禁止』して、<\n> 『ピクセル移動』エフェクトだけを使って<\n>　あなたを動かしてるわ！")
-[101][0,1]<1>()("「並列処理イベントで『ピクセル移動』の<\n>　エフェクトを使えば、主人公を動かしても<\n>　ちゃんとマップや人にぶつかるし、<\n>　接触イベントも起こせちゃうの！")
-[101][0,1]<1>()("「つまり、何も考えずに<\n>　マス目移動からピクセル移動に切り替えても<\n>　ほぼ問題なくゲーム進行させられるわけ！")
-[101][0,1]<1>()("「このサンプルゲームだって、<\n>　ピクセル移動状態のままクリア可能よ！")
+[101][0,1]<1>()("Pixel movement processing stops normal tile-based<\n>movement and moves you using only the<\n><dqrt>Pixel Movement<dqrt> effect!")
+[101][0,1]<1>()("If you use the <dqrt>Pixel Movement<dqrt> effect in a parallel<\n>process event, your hero can still bump into the map<\n>and characters, and it can even trigger touch events!")
+[101][0,1]<1>()("So, even if you switch from tile movement to pixel<\n>movement without a second thought, you can still<\n>progress the game with hardly any issues!")
+[101][0,1]<1>()("And even this sample game,<\n>you can clear it in the pixel movement mode!")
 [180][1,0]<1>(4)()
-[101][0,1]<1>()("「ただし……。")
-[101][0,1]<1>()("「ピクセル移動状態で『キャラが移動する演出』<\n>　のあるイベントシーンに入ると、変な所で<\n>　引っかかって動かなくなるときがあるから、<\n>　そこだけ気をつけなさいよ！")
+[101][0,1]<1>()("But...")
+[101][0,1]<1>()("When you're in the pixel movement mode and enter<\n>an event scene where your character moves, there<\n>are times when it gets stuck in strange places and<\n>stops moving, so just be careful about that!")
 [0][0,0]<1>()()
 [401][1,0]<0>(4)()
-[101][0,1]<1>()("「バージョン3から、ゲーム内で使われる<\n>　文字のコードがユニコードになったわ！<\n>　『UTF-8』っていうらしいわよ！")
-[101][0,1]<1>()("「そのおかげで、ちょっと変わった文字だって<\n>　使えるようになるわ！<\n>　たとえば……。")
-[101][0,1]<1>()("✨†神天使トラ娘タイガ†✨<\n>「うふっ、タイガちゃんで～す♥\!<\n>　<\n>　みたいな書き方だってできちゃう！")
-[101][0,1]<1>()("「ただしフォント側に入ってないと<\n>　♥も✨も使えないから、<\n>　そこは気をつけなさいよ！")
+[101][0,1]<1>()("Starting with version 3, the character codes used in<\n>the game have been changed to Unicode!<\n>It's called <dqrt>UTF-8<dqrt>!")
+[101][0,1]<1>()("That means you can now use slightly unusual<\n>characters!<\n>For example...")
+[101][0,1]<1>()("✨†Divine Angelic Tiger Girl Taiga†✨<\n>  Hehe, I'm Taiga! ♥\!<\n><\n>  You can even write like that!")
+[101][0,1]<1>()("But if the font doesn't have characters like ♥ or ✨,<\n>you can't use them, so keep that in mind!")
 [180][1,0]<1>(4)()
-[101][0,1]<1>()("「あと海外の人がゲームを遊ぶとき、<\n>　昔は文字化けしたり日本語ファイルが<\n>　読めなかったりしたらしいけど、<\n>　それもほぼなくなるみたいよ！")
-[101][0,1]<1>()("「でも『MS ゴシック』フォントなんかは<\n>　海外のWindowsだと<\n>　入ってないらしいから気をつけてね！")
-[101][0,1]<1>()("「今は海外OSにも入ってる確率が高い<\n> 『メイリオ(Meiryo)』フォントにしてあるけど、<\n>　入ってないこともあるから、二次配布が<\n>　許されてるフォントを同梱するのが安全よ！")
+[101][0,1]<1>()("Oh, and in the past, people outside Japan got garbled<\n>text, and files with Japanese names wouldn't load.<\n>But that's pretty much fixed now!")
+[101][0,1]<1>()("By the way, it's now set to use the Segoe UI font,<\n>which is included in Windows in all languages, but<\n>it doesn't cover every character.")
+[101][0,1]<1>()("So it's safer to bundle a font that's allowed for<\n>redistribution!")
 [0][0,0]<1>()()
 [401][1,0]<0>(5)()
-[101][0,1]<1>()("「オッケー！<\n>　変換エフェクトを使えば、<\n>　ピクチャの色変えなどができるわよ！")
+[101][0,1]<1>()("Okay!<\n>You can use the filter effects to change the color of<\n>the picture and more!")
 [150][11,1]<1>(0,1,0,1,1,1,255,20,20,100,0)("EnemyGraphic/GD_Basilisk(Red).png")
-[101][0,1]<1>()("「たとえばこのモンスターをベースに、<\n>　色相彩度明度の変更を試すわよ！<\n>　えい！")
+[101][0,1]<1>()("For example, I'll try changing the hue, saturation, and<\n>lightness of this monster!<\n>Here we go!")
 [290][7,0]<1>(336,0,1,1,150,0,0)()
-[101][0,1]<1>()("「はい！<\n>　エフェクトで色相を変えるだけで<\n>　こんな風に色違いの敵キャラにできたり……。")
+[101][0,1]<1>()("Look! Just by changing the hue with the effect, you<\n>can make enemy characters with different colors<\n>like this. Also...")
 [290][7,0]<1>(336,0,1,1,0,-255,0)()
-[101][0,1]<1>()("「彩度0にすればこんな風に<\n>　白黒のキャラだって<\n>　簡単に作れるわ！")
+[101][0,1]<1>()("If you set the saturation to 0, you can easily make<\n>black-and-white characters like this!")
 [150][3,0]<1>(2,1,0)()
 [150][11,1]<1>(0,1,0,6,4,10,255,20,20,300,0)("CharaChip/Special_Tiga.png")
-[101][0,1]<1>()("「次はぼかし機能！<\n>　私のこの画像を……。")
+[101][0,1]<1>()("Next up is the blur function!<\n>Let's try it on my image...")
 [290][7,0]<1>(368,0,1,1,3,-255,0)()
-[101][0,1]<1>()("「いや～ん♥\!<\n>　ってヘンなこと考えてないでしょうね！？")
+[101][0,1]<1>()("Oh my♥\!<\n>Hey, you're not thinking anything dirty, are you!?")
 [150][3,0]<1>(2,1,0)()
-[101][0,1]<1>()("「次、レベル補正！")
+[101][0,1]<1>()("Next, levels!")
 [150][11,1]<1>(0,1,0,6,4,10,255,20,20,300,0)("CharaChip/Special_Tiga.png")
-[101][0,1]<1>()("「マニアックだけど『コントラスト調整』に<\n>　近いことができるわ！")
+[101][0,1]<1>()("It's a bit technical, but it's similar to contrast<\n>adjustment!")
 [290][7,0]<1>(416,255,1,1,100,155,0)()
-[101][0,1]<1>()("「えい！　美白！")
+[101][0,1]<1>()("Yay! Shining!")
 [150][3,0]<1>(2,1,0)()
 [150][11,1]<1>(0,1,0,6,4,10,255,40,40,300,0)("CharaChip/Special_Wolfarl.png")
-[101][0,1]<1>()("「最後に階調反転！<\n>　あなたの色を反転させてみるわ！")
+[101][0,1]<1>()("Lastly, inversion!<\n>Let's try inverting your colors!")
 [290][7,0]<1>(384,0,1,1,100,155,0)()
-[101][0,1]<1>()("「えい！<\n>　何に使えばいいか分からないけど、<\n>　『ガーン！』とか言いながら<\n>　色反転すればいいんじゃない！？")
+[101][0,1]<1>()("Yeah!<\n>I don't know what to use it for, but why don't you<\n>invert the color while saying something like<\n><dqrt>Oh no!<dqrt>?")
 [150][3,0]<1>(2,1,0)()
-[101][0,1]<1>()("「これらのエフェクトは『エフェクト』コマンドの<\n>　『ピクチャ』のエフェクト内にあるから、<\n>　気になるなら探してみなさいよ！")
+[101][0,1]<1>()("These effects can be found in the <dqrt>Picture<dqrt> effect of<\n>the Effects command, so look for them if you're<\n>interested!")
 [0][0,0]<1>()()
 [401][1,0]<0>(6)()
-[101][0,1]<1>()("「そう！　『いま映ってる画面』を<\n>　ピクチャとして取得できる機能が<\n>　付いたわ！")
-[101][0,1]<1>()("「使い方は簡単！<\n>　ピクチャのファイル名に<SCREENSHOT>と<\n>　入れれば、いつもの画像みたいに<\n>　その時点の画面がピクチャとして使えるわよ！")
-[101][0,1]<1>()("「やってみるから見てなさいよ！<\n>　えーい！")
+[101][0,1]<1>()("Yeah! It has a feature that lets you capture the<\n>current screen as a picture!")
+[101][0,1]<1>()("It's easy to use!<\n>If you put <SCREENSHOT> in the picture file name,<\n>you can use the current screen as a picture just like<\n>a normal image!")
+[101][0,1]<1>()("I'll try it, so watch!<\n>Here goes!")
 [140][7,1]<1>(33554464,0,0,0,100,100,0)("SystemFile/SE_Get.ogg")
 [290][7,0]<1>(0,10,1,1,40,40,40)()
 [150][11,1]<1>(0,1,0,1,1,1,255,0,0,50,0)("<SCREENSHOT>")
 [150][11,0]<1>(1,1,0,0,0,1,255,20,20,20,0)()
 [290][7,0]<1>(16,10,1,1,20,20,20)()
 [180][1,0]<1>(20)()
-[101][0,1]<1>()("「はい、どう！？")
-[101][0,1]<1>()("「文字やピクチャもそのまま撮っちゃうから、<\n>　使い方には注意が必要だけど、<\n>　工夫すれば色々使えるはずよ！")
+[101][0,1]<1>()("What do you think!?")
+[101][0,1]<1>()("It captures text and pictures too, so you've got to be<\n>careful how you use it, but with a little creativity, you<\n>can use it in a bunch of ways!")
 [150][3,0]<1>(2,1,10)()
-[101][0,1]<1>()("「たとえばこんな使い方があるわ！")
+[101][0,1]<1>()("For example, you can use it like this...")
 [180][1,0]<1>(12)()
 [140][7,1]<1>(33554464,0,0,0,100,100,0)("SystemFile/SE_Encount.ogg")
 [150][11,1]<1>(4096,1,0,1,1,1,255,160,120,50,0)("<SCREENSHOT>")
@@ -157,48 +157,48 @@ WoditorEvCOMMAND_START
 [150][3,0]<1>(4098,1,20)()
 [150][3,0]<1>(50,2,20)()
 [180][1,0]<1>(12)()
-[101][0,1]<1>()("「みたいに、バトル開始時にありそうな<\n>　一時的な画面演出をするのにも<\n>　使えるわけ！")
-[101][0,1]<1>()("「画面を使ったダイナミックなエフェクト、<\n>　なにか考えてみたらどう！？<\n>　そして私と勝負よ！")
+[101][0,1]<1>()("You can also use it for temporary screen effects that<\n>are likely to occur at the start of a battle!")
+[101][0,1]<1>()("Why not come up with a dynamic effect using<\n>the screen!?<\n>And let's see if you can beat mine!")
 [0][0,0]<1>()()
 [401][1,0]<0>(7)()
-[101][0,1]<1>()("「オッケー！<\n>　あ、マスクっていうのは、<\n>　ピクチャなどを表示できる『範囲』を<\n>　部分的に封じる機能だと思って！")
-[101][0,1]<1>()("「じゃあ行くわよ！")
-[103][0,1]<1>()("裏でキャラと背景を表示")
+[101][0,1]<1>()("Okay!<\n>Oh, the mask is a function that partially limits<\n>the area where pictures and such are visible!")
+[101][0,1]<1>()("Well, let's go!")
+[103][0,1]<1>()("Display the character and background for now.")
 [290][7,1]<1>(67,2,0,0,0,0,0)("")
 [150][11,1]<1>(4096,1,0,1,1,1,255,160,120,100,0)("Fog_BackGround/Background_space2_pipo.jpg")
 [150][11,1]<1>(4096,2,0,6,4,3,255,160,100,1000,0)("CharaChip/Special_Tiga.png")
 [290][7,0]<1>(48,1,2,2,4,0,100000)()
 [290][7,1]<1>(19,2,1,2,0,0,0)("")
-[103][0,1]<1>()("爆発音")
+[103][0,1]<1>()("Explosion sound")
 [140][7,1]<1>(33554464,0,0,0,60,70,0)("SE/Effect_Bomb1_panop.ogg")
-[103][0,1]<1>()("マスクの表示可能範囲を中央から徐々に広げる")
+[103][0,1]<1>()("Gradually expand the visible range of the mask from the center.")
 [121][4,0]<1>(1100004,0,0,0)()
 [179][1,0]<1>(30)()
-[103][0,1]<2>()("徐々に描画範囲の幅が広がっていくマスク演出")
-[103][0,1]<2>()("毎フレーム、まず全面を表示不能にする")
+[103][0,1]<2>()("Mask effect that gradually expands the visible range.")
+[103][0,1]<2>()("First, make the entire screen invisible with a mask every frame.")
 [290][7,1]<2>(67,2,0,0,0,0,0)("")
-[103][0,1]<2>()("書き込み開始Xを計算（時間が経つほど←に）")
+[103][0,1]<2>()("Calculate the X position to draw (to the left as time passes).")
 [121][4,0]<2>(1100005,-2,1100004,8192)()
 [121][4,0]<2>(1100005,160,0,256)()
 [179][1,0]<2>(1100004)()
-[103][0,1]<3>()("斜め線みたいな黒いマスク（表示可能範囲）を1本書き込む")
+[103][0,1]<3>()("Draw a single black mask (visible area) that looks like a diagonal line.")
 [290][7,1]<3>(83,2,0,0,1100005,120,1)("SystemFile/Mask_Draw+_Slash200x480.png")
 [121][4,0]<3>(1100005,4,0,256)()
 [0][0,0]<3>()()
 [498][0,0]<2>()()
-[103][0,1]<2>()("書き込み数を増やす")
+[103][0,1]<2>()("Increase the number of lines.")
 [121][4,0]<2>(1100004,1,0,256)()
 [180][1,0]<2>(1)()
 [0][0,0]<2>()()
 [498][0,0]<1>()()
 [180][1,0]<1>(15)()
-[101][0,1]<1>()("「これが私の奥義、タイガーオーラッ！！")
+[101][0,1]<1>()("This is my secret technique, TIGER AURA!!")
 [180][1,0]<1>(15)()
 [179][1,0]<1>(30)()
-[103][0,1]<2>()("今度は幅を縮めていく")
-[103][0,1]<2>()("毎フレームリセット")
+[103][0,1]<2>()("Next, reduce the width of the visible area.")
+[103][0,1]<2>()("Reset every frame.")
 [290][7,1]<2>(67,2,0,0,0,0,0)("")
-[103][0,1]<2>()("書き込み開始Xを計算（時間が経つほど←に）")
+[103][0,1]<2>()("Calculate the X position to draw (to the left as time passes).")
 [121][4,0]<2>(1100005,-2,1100004,8192)()
 [121][4,0]<2>(1100005,160,0,256)()
 [179][1,0]<2>(1100004)()
@@ -206,41 +206,41 @@ WoditorEvCOMMAND_START
 [121][4,0]<3>(1100005,4,0,256)()
 [0][0,0]<3>()()
 [498][0,0]<2>()()
-[103][0,1]<2>()("書き込み数を増やす")
+[103][0,1]<2>()("Decrease the number of lines.")
 [121][4,0]<2>(1100004,1,0,512)()
 [180][1,0]<2>(1)()
 [0][0,0]<2>()()
 [498][0,0]<1>()()
 [290][7,1]<1>(67,2,0,0,0,0,0)("")
 [180][1,0]<1>(8)()
-[101][0,1]<1>()("「ふふん、どうだった？<\n>　真ん中のあたりだけ表示可能にして、<\n>　それ以外を描画不能にしてる感じを<\n>　イメージしてみるといいわよ！")
+[101][0,1]<1>()("Did you like it?<\n>Imagine making only the middle part visible and<\n>making the rest invisible!")
 [150][6,0]<1>(16781314,1,0,0,0,2)()
 [290][7,1]<1>(3,2,0,0,0,0,0)("")
 [0][0,0]<1>()()
 [401][1,0]<0>(8)()
-[101][0,1]<1>()("「じゃあマスクを使った<\n>　カットイン説明の始まりよ！<\n>　寝たら承知しないんだから！")
-[101][0,1]<1>()(" 「まずマスク機能は<\n>　『描く範囲を一部だけ封印する機能』<\n>　だってのはもう言ったかも<\n>　しれないけど……。")
+[101][0,1]<1>()("Now, let's start explaining the cut-in using the mask!<\n>Don't even think about falling asleep!")
+[101][0,1]<1>()("First, I might've mentioned this already, but the mask<\n>is a function that partially limits the visible area.")
 [150][11,1]<1>(4096,1,0,1,1,1,255,160,120,100,0)("Fog_BackGround/Background_space2_pipo.jpg")
 [150][11,1]<1>(4096,2,0,6,4,3,255,160,100,1000,0)("CharaChip/Special_Tiga.png")
 [290][7,0]<1>(48,1,2,2,4,0,100000)()
-[101][0,1]<1>()("「実は私のカットイン、<\n>　裏では画面いっぱいにこんな<\n>　ピクチャが出てるのよね！")
+[101][0,1]<1>()("Actually, during my cut-in, these pictures are filling<\n>the screen in the background!")
 [290][7,1]<1>(19,2,1,2,0,0,0)("")
-[101][0,1]<1>()("「で、『マスクを全面[非表示]に塗る』をした後、<\n> 『この背景』と『私のピクチャ』に対して<\n> 『マスクをON』にすると……。")
+[101][0,1]<1>()("But once I fill the mask to hide everything and turn<\n>the mask ON for this background and my picture...")
 [290][7,1]<1>(67,2,0,0,0,0,0)("")
 [180][1,0]<1>(10)()
-[101][0,1]<1>()("「はい、全部消えちゃう！")
-[101][0,1]<1>()("「実はまださっきのまま表示されてるけど、<\n>　マスクで全面を『非表示』にしたんだから<\n>　消えたように見えるのは当然よね？")
+[101][0,1]<1>()("They're gone!")
+[101][0,1]<1>()("Actually, they're still there. But I used the mask to<\n>make the whole area <dqrt>invisible,<dqrt> so no wonder it<\n>looks like they're gone, right?")
 [150][11,1]<1>(4096,3,0,1,1,1,255,60,80,20,0)("SystemFile/Mask_Draw+_Slash200x480.png")
-[101][0,1]<1>()("「あとはこんな感じの<\n>　黒いスジが入った画像で<\n>　マスクに[表示範囲]を書き込むと……。")
+[101][0,1]<1>()("Then I add <dqrt>the visible area<dqrt> on the mask using an<\n>image with a black line like this...")
 [290][7,1]<1>(83,2,0,0,160,120,1)("SystemFile/Mask_Draw+_Slash200x480.png")
-[101][0,1]<1>()("「ほら、真ん中がチラ見えするわよ！？<\n>　左の画像の黒スジがちゃんと<\n>　『表示可能範囲』になってるの分かる！？")
+[101][0,1]<1>()("Look, you can see a little of the middle now!<\n>See how that black line on the left is part of<\n><dqrt>the visible area<dqrt>!?")
 [290][7,1]<1>(83,2,0,0,155,120,1)("SystemFile/Mask_Draw+_Slash200x480.png")
 [180][1,0]<1>(12)()
 [290][7,1]<1>(83,2,0,0,150,120,1)("SystemFile/Mask_Draw+_Slash200x480.png")
 [180][1,0]<1>(12)()
 [290][7,1]<1>(83,2,0,0,145,120,1)("SystemFile/Mask_Draw+_Slash200x480.png")
 [180][1,0]<1>(12)()
-[101][0,1]<1>()("「あとはこの要領でズラしながら<\n>　表示範囲を書き足していくと……。")
+[101][0,1]<1>()("Then I just keep adding more visible areas while<\n>shifting the position like this...")
 [180][1,0]<1>(15)()
 [121][4,0]<1>(1100005,100,0,0)()
 [179][1,0]<1>(27)()
@@ -250,12 +250,12 @@ WoditorEvCOMMAND_START
 [0][0,0]<2>()()
 [498][0,0]<1>()()
 [180][1,0]<1>(15)()
-[101][0,1]<1>()("「ほら！<\n>　さっきみたいなカットインっぽくなるってわけ！")
-[101][0,1]<1>()("「私はマスクに対して毎フレーム、<\n> 『全面[非表示]に塗る→黒いスジを複数塗る』<\n>　を幅を変えて繰り返すことで、見える範囲が<\n>　広がるアニメーションを作ってたのよ！")
+[101][0,1]<1>()("Look!<\n>It's like the cut-in from earlier!")
+[101][0,1]<1>()("Basically, I repeated <dqrt>hide everything → draw more<\n>black lines than before<dqrt> on the mask every frame...<\n>That's how I made an animation that expanded<\n>the visible area!")
 [150][6,0]<1>(16777218,1,0,0,0,3)()
 [290][7,1]<1>(3,2,0,0,0,0,0)("")
 [180][1,0]<1>(10)()
-[101][0,1]<1>()("「分かったかしら！？<\n>　マスクは難しいけど、あなたが<\n>　使いこなせる日を待ってるわよ！　フン！")
+[101][0,1]<1>()("Got it!?<\n>The mask is tricky, but I'll be waiting for the day you<\n>master it! Hmph!")
 [0][0,0]<1>()()
 [421][1,0]<0>(0)()
 [0][0,0]<1>()()
@@ -264,111 +264,111 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ ピクセル移動中かのSelf0変数を見て選択肢の文字列を切り替えます
-■Condition (Number):   [1] このEvのSelf0 ==  0  /  [2] このEvのSelf0 ==  1  
--◇Condition:  [1]  [ このEvのSelf0 == 0   ] Case↓
- |▼ Self0が0ならまだピクセル移動してないのでONする選択肢
- |■Set String: S0[[サンプル]一時文字列] = "ピクセル移動を試したい！"
+▼ Determine whether the hero is in pixel movement by checking the Self0 variable, and switch the choice string.
+■Condition (Number):   [1] This Ev Self0 ==  0  /  [2] This Ev Self0 ==  1  
+-◇Condition:  [1]  [ This Ev Self0 == 0   ] Case↓
+ |▼ If Self0 is 0, pixel movement is off, so set the on choice.
+ |■Set String: S0[[サンプル]一時文字列] = "I want to try pixel movement!"
  |■
--◇Condition:  [2]  [ このEvのSelf0 == 1   ] Case↓
- |▼ Self0が1ならピクセル移動中なのでOFFする選択肢
- |■Set String: S0[[サンプル]一時文字列] = "ピクセル移動をやめたい"
+-◇Condition:  [2]  [ This Ev Self0 == 1   ] Case↓
+ |▼ If Self0 is 1, pixel movement is on, so set the off choice.
+ |■Set String: S0[[サンプル]一時文字列] = "I want to stop pixel movement"
  |■
 ◇End◇
-■Show Message:「あなたのライバル、トラ娘のタイガちゃんよ！\n　バージョン3の新機能を紹介しちゃうんだから！
+■Show Message:I'm your rival, Taiga the tiger girl!\nI'm gonna show you the new features in Version 3!
 ■Wait: 1 Frames
-■Show Choice:/ [1] \s[0] / [2] ピクセル移動処理ってどう作られてるの？ / [3] ユニコード対応されたって聞いたけど？ / [4] 変換エフェクトで色変えができるって！？ / [5] 画面をピクチャとして取れるって！？ / [6] マスク処理のカットインを見たい！ / [7] マスクを使ったカットインの解説をお願い 
+■Show Choice:/ [1] \s[0] / [2] How is pixel movement processing created? / [3] I heard it supports Unicode? / [4] You can change colors with filter effects? / [5] You can capture the screen as a picture? / [6] I want to see a cut-in with mask processing! / [7] Please explain the cut-in using the mask 
 -◇Case: Choice [1] \s[0]                                    ↓
- |■Condition (Number):   [1] このEvのSelf0 ==  0  /  [2] このEvのSelf0 ==  1  
- |-◇Condition:  [1]  [ このEvのSelf0 == 0   ] Case↓
- | |▼ Self0が0ならこれからピクセル移動開始
- | |■Show Message:「オッケー！　マス目単位じゃなくて\n　ピクセル単位で移動するモードを\n　オンにするわよ！
- | |▼ コモンイベント名からIDを得る裏技でコモンイベントIDを得ます。
- | |▼ ※「文字列操作」の「ファイル内容読込」で裏技コマンドを入れると使える。
- | |▼ 　マニュアルの「文字列操作」に載ってるぞ！
- | |■Set String: S0[[サンプル]一時文字列] =<Load File> [UTF-8] "<<GET_COMMONEVENT_ID_FROM_NAME>>■主人公ピクセル移動切り替え"
- | |▼ 「変数操作」の裏技！
- | |▼ 「39」などが入った文字列変数をむりやり数値変数に入れると
- | |▼ ちゃんと数値として読ませることができるぞ！
- | |■Set Variable: このEvのSelf1 = S0[[サンプル]一時文字列] + 0 
- | |■Show Message:「えーと、コモンイベント\self[1]の\n　『■主人公ピクセル移動切り替え』を……\n　ポチッ、ON！
+ |■Condition (Number):   [1] This Ev Self0 ==  0  /  [2] This Ev Self0 ==  1  
+ |-◇Condition:  [1]  [ This Ev Self0 == 0   ] Case↓
+ | |▼ If Self0 is 0, start pixel movement.
+ | |■Show Message:Okay! I'll turn on the mode that lets you move in\npixels instead of tiles!
+ | |▼ Get the Common Event ID using a trick to get the ID by the Common Event name.
+ | |▼ *You can use it by entering a special code in "Execute Special Code" of "Set String."
+ | |▼  It's written on the "Set String" page of the manual!
+ | |■Set String: S0[[サンプル]一時文字列] =<Execute Special Code>"<<GET_COMMONEVENT_ID_FROM_NAME>>■Toggle Pixel Movement"
+ | |▼ A trick for Set Variable!
+ | |▼ If you assign a string variable containing numbers such as "39" to a numeric variable,
+ | |▼ you can convert it to a number!
+ | |■Set Variable: This Ev Self1 = S0[[サンプル]一時文字列] + 0 
+ | |■Show Message:Well, let's turn on Common Event \self[1]\n"■Toggle Pixel Movement"...\n*Click* ON!
  | |■Sound: SE File[SystemFile/SE_Get.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
- | |■Show Message:「はい、ピクセル単位での移動開始！\n　マス目移動から解き放たれた\n　ピクセル移動モードを楽しんできて！
- | |■Call Event [Name]: ["■主人公ピクセル移動切り替え"] <CommonEv 39>  / 1:ピクセル移動ON
+ | |■Show Message:Alright, you can now move in pixels!\nEnjoy the pixel movement mode — freedom from\ntile-based movement!
+ | |■Call Event [Name]: ["■Toggle Pixel Movement"] <CommonEv 39>  / 1:ピクセル移動ON
  | |■
- |-◇Condition:  [2]  [ このEvのSelf0 == 1   ] Case↓
+ |-◇Condition:  [2]  [ This Ev Self0 == 1   ] Case↓
  | |■Sound: SE File[SystemFile/SE_LevelUp.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
- | |■Call Event [Name]: ["■主人公ピクセル移動切り替え"] <CommonEv 39>  / -1:ピクセル移動OFF
- | |■Show Message:「ピクセル移動、OFF！\n　まあまあ楽しかったでしょ？
- | |■Show Message:「でもピクセル移動中は1マスの\n　すきまを通るのが大変になるから、\n　あなたがゲームを作るときは\n　あまり狭い道を入れないようにしてよね！？
+ | |■Call Event [Name]: ["■Toggle Pixel Movement"] <CommonEv 39>  / -1:ピクセル移動OFF
+ | |■Show Message:Pixel movement, off!\nIt was kinda fun, wasn't it?
+ | |■Show Message:But when pixel movement is on, it's tricky to pass\nthrough gaps of one tile. So, when you're making\na game, try not to make the paths too narrow!
  | |■
  |◇End◇
- |▼ テクニック： 「1を足して2で余り(％)を取る」と0→1→0→1と切り替わります！
- |■Set Variable: このEvのSelf0 += 1 + 0 
- |■Set Variable: このEvのSelf0 %= 2 + 0 
+ |▼ Technique: Add 1 and divide by 2 to get the remainder (%), and it will switch between 0 and 1! (0→1→0→1)
+ |■Set Variable: This Ev Self0 += 1 + 0 
+ |■Set Variable: This Ev Self0 %= 2 + 0 
  |■
--◇Case: Choice [2] ピクセル移動処理ってどう作られてるの？                      ↓
- |■Show Message:「ピクセル移動の説明が聞きたいの？\n　長いわよ！　覚悟しなさい！
+-◇Case: Choice [2] How is pixel movement processing created? ↓
+ |■Show Message:Do you want to hear about pixel movement?\nIt's a long story! Get ready!
  |■Wait: 4 Frames
- |■Show Message:「ピクセル移動処理は、\n 『通常のマス目単位の移動を禁止』して、\n 『ピクセル移動』エフェクトだけを使って\n　あなたを動かしてるわ！
- |■Show Message:「並列処理イベントで『ピクセル移動』の\n　エフェクトを使えば、主人公を動かしても\n　ちゃんとマップや人にぶつかるし、\n　接触イベントも起こせちゃうの！
- |■Show Message:「つまり、何も考えずに\n　マス目移動からピクセル移動に切り替えても\n　ほぼ問題なくゲーム進行させられるわけ！
- |■Show Message:「このサンプルゲームだって、\n　ピクセル移動状態のままクリア可能よ！
+ |■Show Message:Pixel movement processing stops normal tile-based\nmovement and moves you using only the\n"Pixel Movement" effect!
+ |■Show Message:If you use the "Pixel Movement" effect in a parallel\nprocess event, your hero can still bump into the map\nand characters, and it can even trigger touch events!
+ |■Show Message:So, even if you switch from tile movement to pixel\nmovement without a second thought, you can still\nprogress the game with hardly any issues!
+ |■Show Message:And even this sample game,\nyou can clear it in the pixel movement mode!
  |■Wait: 4 Frames
- |■Show Message:「ただし……。
- |■Show Message:「ピクセル移動状態で『キャラが移動する演出』\n　のあるイベントシーンに入ると、変な所で\n　引っかかって動かなくなるときがあるから、\n　そこだけ気をつけなさいよ！
+ |■Show Message:But...
+ |■Show Message:When you're in the pixel movement mode and enter\nan event scene where your character moves, there\nare times when it gets stuck in strange places and\nstops moving, so just be careful about that!
  |■
--◇Case: Choice [3] ユニコード対応されたって聞いたけど？                       ↓
- |■Show Message:「バージョン3から、ゲーム内で使われる\n　文字のコードがユニコードになったわ！\n　『UTF-8』っていうらしいわよ！
- |■Show Message:「そのおかげで、ちょっと変わった文字だって\n　使えるようになるわ！\n　たとえば……。
- |■Show Message:✨†神天使トラ娘タイガ†✨\n「うふっ、タイガちゃんで～す♥\!\n　\n　みたいな書き方だってできちゃう！
- |■Show Message:「ただしフォント側に入ってないと\n　♥も✨も使えないから、\n　そこは気をつけなさいよ！
+-◇Case: Choice [3] I heard it supports Unicode?             ↓
+ |■Show Message:Starting with version 3, the character codes used in\nthe game have been changed to Unicode!\nIt's called "UTF-8"!
+ |■Show Message:That means you can now use slightly unusual\ncharacters!\nFor example...
+ |■Show Message:✨†Divine Angelic Tiger Girl Taiga†✨\n  Hehe, I'm Taiga! ♥\!\n\n  You can even write like that!
+ |■Show Message:But if the font doesn't have characters like ♥ or ✨,\nyou can't use them, so keep that in mind!
  |■Wait: 4 Frames
- |■Show Message:「あと海外の人がゲームを遊ぶとき、\n　昔は文字化けしたり日本語ファイルが\n　読めなかったりしたらしいけど、\n　それもほぼなくなるみたいよ！
- |■Show Message:「でも『MS ゴシック』フォントなんかは\n　海外のWindowsだと\n　入ってないらしいから気をつけてね！
- |■Show Message:「今は海外OSにも入ってる確率が高い\n 『メイリオ(Meiryo)』フォントにしてあるけど、\n　入ってないこともあるから、二次配布が\n　許されてるフォントを同梱するのが安全よ！
+ |■Show Message:Oh, and in the past, people outside Japan got garbled\ntext, and files with Japanese names wouldn't load.\nBut that's pretty much fixed now!
+ |■Show Message:By the way, it's now set to use the Segoe UI font,\nwhich is included in Windows in all languages, but\nit doesn't cover every character.
+ |■Show Message:So it's safer to bundle a font that's allowed for\nredistribution!
  |■
--◇Case: Choice [4] 変換エフェクトで色変えができるって！？                      ↓
- |■Show Message:「オッケー！\n　変換エフェクトを使えば、\n　ピクチャの色変えなどができるわよ！
+-◇Case: Choice [4] You can change colors with filter effects? ↓
+ |■Show Message:Okay!\nYou can use the filter effects to change the color of\nthe picture and more!
  |■Picture Show: 1 [Top-Left] File[EnemyGraphic/GD_Basilisk(Red).png] X:20 Y:20 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- |■Show Message:「たとえばこのモンスターをベースに、\n　色相彩度明度の変更を試すわよ！\n　えい！
+ |■Show Message:For example, I'll try changing the hue, saturation, and\nlightness of this monster!\nHere we go!
  |■Effect Picture: 1 [Filter/Hue Saturation Lightness] H150/S0/L0
- |■Show Message:「はい！\n　エフェクトで色相を変えるだけで\n　こんな風に色違いの敵キャラにできたり……。
+ |■Show Message:Look! Just by changing the hue with the effect, you\ncan make enemy characters with different colors\nlike this. Also...
  |■Effect Picture: 1 [Filter/Hue Saturation Lightness] H0/S-255/L0
- |■Show Message:「彩度0にすればこんな風に\n　白黒のキャラだって\n　簡単に作れるわ！
+ |■Show Message:If you set the saturation to 0, you can easily make\nblack-and-white characters like this!
  |■Picture Erase: 1  / 0(0)Frames
  |■Picture Show: 1 [Top-Left] File[CharaChip/Special_Tiga.png] X:20 Y:20 / 0(0)Frames  / Pattern 10 / Opacity 255 / Normal  / Angle 0 / Zoom 300% / Color R[100] G[100] B[100]
- |■Show Message:「次はぼかし機能！\n　私のこの画像を……。
+ |■Show Message:Next up is the blur function!\nLet's try it on my image...
  |■Effect Picture: 1 [Filter/Blur] Amount 3
- |■Show Message:「いや～ん♥\!\n　ってヘンなこと考えてないでしょうね！？
+ |■Show Message:Oh my♥\!\nHey, you're not thinking anything dirty, are you!?
  |■Picture Erase: 1  / 0(0)Frames
- |■Show Message:「次、レベル補正！
+ |■Show Message:Next, levels!
  |■Picture Show: 1 [Top-Left] File[CharaChip/Special_Tiga.png] X:20 Y:20 / 0(0)Frames  / Pattern 10 / Opacity 255 / Normal  / Angle 0 / Zoom 300% / Color R[100] G[100] B[100]
- |■Show Message:「マニアックだけど『コントラスト調整』に\n　近いことができるわ！
+ |■Show Message:It's a bit technical, but it's similar to contrast\nadjustment!
  |■Effect Picture: 1 [Filter/Levels] Old (100 to 155) => New (0 to 255)
- |■Show Message:「えい！　美白！
+ |■Show Message:Yay! Shining!
  |■Picture Erase: 1  / 0(0)Frames
  |■Picture Show: 1 [Top-Left] File[CharaChip/Special_Wolfarl.png] X:40 Y:40 / 0(0)Frames  / Pattern 10 / Opacity 255 / Normal  / Angle 0 / Zoom 300% / Color R[100] G[100] B[100]
- |■Show Message:「最後に階調反転！\n　あなたの色を反転させてみるわ！
+ |■Show Message:Lastly, inversion!\nLet's try inverting your colors!
  |■Effect Picture: 1 [Filter/Invert] 
- |■Show Message:「えい！\n　何に使えばいいか分からないけど、\n　『ガーン！』とか言いながら\n　色反転すればいいんじゃない！？
+ |■Show Message:Yeah!\nI don't know what to use it for, but why don't you\ninvert the color while saying something like\n"Oh no!"?
  |■Picture Erase: 1  / 0(0)Frames
- |■Show Message:「これらのエフェクトは『エフェクト』コマンドの\n　『ピクチャ』のエフェクト内にあるから、\n　気になるなら探してみなさいよ！
+ |■Show Message:These effects can be found in the "Picture" effect of\nthe Effects command, so look for them if you're\ninterested!
  |■
--◇Case: Choice [5] 画面をピクチャとして取れるって！？                        ↓
- |■Show Message:「そう！　『いま映ってる画面』を\n　ピクチャとして取得できる機能が\n　付いたわ！
- |■Show Message:「使い方は簡単！\n　ピクチャのファイル名に<SCREENSHOT>と\n　入れれば、いつもの画像みたいに\n　その時点の画面がピクチャとして使えるわよ！
- |■Show Message:「やってみるから見てなさいよ！\n　えーい！
+-◇Case: Choice [5] You can capture the screen as a picture? ↓
+ |■Show Message:Yeah! It has a feature that lets you capture the\ncurrent screen as a picture!
+ |■Show Message:It's easy to use!\nIf you put <SCREENSHOT> in the picture file name,\nyou can use the current screen as a picture just like\na normal image!
+ |■Show Message:I'll try it, so watch!\nHere goes!
  |■Sound: SE File[SystemFile/SE_Get.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
  |■Effect Picture: 1 [Flash] R40/G40/B40  [10]Frames
  |■Picture Show: 1 [Top-Left] File[<SCREENSHOT>] X:0 Y:0 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 50% / Color R[100] G[100] B[100]
  |■Picture Move: 1  X:20 Y:20 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 20% / Color R[100] G[100] B[100]
  |■Effect Picture: 1 [Adjust Color] R20/G20/B20  [10]Frames
  |■Wait: 20 Frames
- |■Show Message:「はい、どう！？
- |■Show Message:「文字やピクチャもそのまま撮っちゃうから、\n　使い方には注意が必要だけど、\n　工夫すれば色々使えるはずよ！
+ |■Show Message:What do you think!?
+ |■Show Message:It captures text and pictures too, so you've got to be\ncareful how you use it, but with a little creativity, you\ncan use it in a bunch of ways!
  |■Picture Erase: 1  / 10(0)Frames
- |■Show Message:「たとえばこんな使い方があるわ！
+ |■Show Message:For example, you can use it like this...
  |■Wait: 12 Frames
  |■Sound: SE File[SystemFile/SE_Encount.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
  |■Picture Show: 1 [Center] File[<SCREENSHOT>] X:160 Y:120 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 50% / Color R[100] G[100] B[100]
@@ -378,105 +378,105 @@ WoditorEvCOMMAND_END
  |■Picture Erase: 1  / 20(0)Frames
  |■Picture Erase: 2  / 20(0)Frames
  |■Wait: 12 Frames
- |■Show Message:「みたいに、バトル開始時にありそうな\n　一時的な画面演出をするのにも\n　使えるわけ！
- |■Show Message:「画面を使ったダイナミックなエフェクト、\n　なにか考えてみたらどう！？\n　そして私と勝負よ！
+ |■Show Message:You can also use it for temporary screen effects that\nare likely to occur at the start of a battle!
+ |■Show Message:Why not come up with a dynamic effect using\nthe screen!?\nAnd let's see if you can beat mine!
  |■
--◇Case: Choice [6] マスク処理のカットインを見たい！                         ↓
- |■Show Message:「オッケー！\n　あ、マスクっていうのは、\n　ピクチャなどを表示できる『範囲』を\n　部分的に封じる機能だと思って！
- |■Show Message:「じゃあ行くわよ！
- |▼ 裏でキャラと背景を表示
+-◇Case: Choice [6] I want to see a cut-in with mask processing! ↓
+ |■Show Message:Okay!\nOh, the mask is a function that partially limits\nthe area where pictures and such are visible!
+ |■Show Message:Well, let's go!
+ |▼ Display the character and background for now.
  |■Mask: [Fill Mask to [Hide] Entire]
  |■Picture Show: 1 [Center] File[Fog_BackGround/Background_space2_pipo.jpg] X:160 Y:120 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  |■Picture Show: 2 [Center] File[CharaChip/Special_Tiga.png] X:160 Y:100 / 0(0)Frames  / Pattern 3 / Opacity 255 / Normal  / Angle 0 / Zoom 1000% / Color R[100] G[100] B[100]
  |■Effect Picture: 2 [Shake] Shake X 4 / Shake Y 0 / 100000 Times  [1]Frames
  |■Mask: [Enable Picture Mask] => ID 1 to 2 
- |▼ 爆発音
+ |▼ Explosion sound
  |■Sound: SE File[SE/Effect_Bomb1_panop.ogg] Vol 60% Freq 70% (0 Channel) Play / Delay: 0 Frames
- |▼ マスクの表示可能範囲を中央から徐々に広げる
- |■Set Variable: このEvのSelf4 = 0 + 0 
+ |▼ Gradually expand the visible range of the mask from the center.
+ |■Set Variable: This Ev Self4 = 0 + 0 
  |■Repeat Loop [ 30 ] Times
- | |▼ 徐々に描画範囲の幅が広がっていくマスク演出
- | |▼ 毎フレーム、まず全面を表示不能にする
+ | |▼ Mask effect that gradually expands the visible range.
+ | |▼ First, make the entire screen invisible with a mask every frame.
  | |■Mask: [Fill Mask to [Hide] Entire]
- | |▼ 書き込み開始Xを計算（時間が経つほど←に）
- | |■Set Variable: このEvのSelf5 = -2 * このEvのSelf4 
- | |■Set Variable: このEvのSelf5 += 160 + 0 
- | |■Repeat Loop [ このEvのSelf4 ] Times
- | | |▼ 斜め線みたいな黒いマスク（表示可能範囲）を1本書き込む
- | | |■Mask: [Add Visible Area (Black) to Mask] =>[SystemFile/Mask_Draw+_Slash200x480.png] X:このEvのSelf5 Y:120 (Center)
- | | |■Set Variable: このEvのSelf5 += 4 + 0 
+ | |▼ Calculate the X position to draw (to the left as time passes).
+ | |■Set Variable: This Ev Self5 = -2 * This Ev Self4 
+ | |■Set Variable: This Ev Self5 += 160 + 0 
+ | |■Repeat Loop [ This Ev Self4 ] Times
+ | | |▼ Draw a single black mask (visible area) that looks like a diagonal line.
+ | | |■Mask: [Add Visible Area (Black) to Mask] =>[SystemFile/Mask_Draw+_Slash200x480.png] X:This Ev Self5 Y:120 (Center)
+ | | |■Set Variable: This Ev Self5 += 4 + 0 
  | | |■
  | |◇Loop End Point◇◇
- | |▼ 書き込み数を増やす
- | |■Set Variable: このEvのSelf4 += 1 + 0 
+ | |▼ Increase the number of lines.
+ | |■Set Variable: This Ev Self4 += 1 + 0 
  | |■Wait: 1 Frames
  | |■
  |◇Loop End Point◇◇
  |■Wait: 15 Frames
- |■Show Message:「これが私の奥義、タイガーオーラッ！！
+ |■Show Message:This is my secret technique, TIGER AURA!!
  |■Wait: 15 Frames
  |■Repeat Loop [ 30 ] Times
- | |▼ 今度は幅を縮めていく
- | |▼ 毎フレームリセット
+ | |▼ Next, reduce the width of the visible area.
+ | |▼ Reset every frame.
  | |■Mask: [Fill Mask to [Hide] Entire]
- | |▼ 書き込み開始Xを計算（時間が経つほど←に）
- | |■Set Variable: このEvのSelf5 = -2 * このEvのSelf4 
- | |■Set Variable: このEvのSelf5 += 160 + 0 
- | |■Repeat Loop [ このEvのSelf4 ] Times
- | | |■Mask: [Add Visible Area (Black) to Mask] =>[SystemFile/Mask_Draw+_Slash200x480.png] X:このEvのSelf5 Y:120 (Center)
- | | |■Set Variable: このEvのSelf5 += 4 + 0 
+ | |▼ Calculate the X position to draw (to the left as time passes).
+ | |■Set Variable: This Ev Self5 = -2 * This Ev Self4 
+ | |■Set Variable: This Ev Self5 += 160 + 0 
+ | |■Repeat Loop [ This Ev Self4 ] Times
+ | | |■Mask: [Add Visible Area (Black) to Mask] =>[SystemFile/Mask_Draw+_Slash200x480.png] X:This Ev Self5 Y:120 (Center)
+ | | |■Set Variable: This Ev Self5 += 4 + 0 
  | | |■
  | |◇Loop End Point◇◇
- | |▼ 書き込み数を増やす
- | |■Set Variable: このEvのSelf4 -= 1 + 0 
+ | |▼ Decrease the number of lines.
+ | |■Set Variable: This Ev Self4 -= 1 + 0 
  | |■Wait: 1 Frames
  | |■
  |◇Loop End Point◇◇
  |■Mask: [Fill Mask to [Hide] Entire]
  |■Wait: 8 Frames
- |■Show Message:「ふふん、どうだった？\n　真ん中のあたりだけ表示可能にして、\n　それ以外を描画不能にしてる感じを\n　イメージしてみるといいわよ！
+ |■Show Message:Did you like it?\nImagine making only the middle part visible and\nmaking the rest invisible!
  |■Picture Erase: 1 to 2  / 0(0)Frames
  |■Mask: [Reset All Masks (Stop)]
  |■
--◇Case: Choice [7] マスクを使ったカットインの解説をお願い                      ↓
- |■Show Message:「じゃあマスクを使った\n　カットイン説明の始まりよ！\n　寝たら承知しないんだから！
- |■Show Message: 「まずマスク機能は\n　『描く範囲を一部だけ封印する機能』\n　だってのはもう言ったかも\n　しれないけど……。
+-◇Case: Choice [7] Please explain the cut-in using the mask ↓
+ |■Show Message:Now, let's start explaining the cut-in using the mask!\nDon't even think about falling asleep!
+ |■Show Message:First, I might've mentioned this already, but the mask\nis a function that partially limits the visible area.
  |■Picture Show: 1 [Center] File[Fog_BackGround/Background_space2_pipo.jpg] X:160 Y:120 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  |■Picture Show: 2 [Center] File[CharaChip/Special_Tiga.png] X:160 Y:100 / 0(0)Frames  / Pattern 3 / Opacity 255 / Normal  / Angle 0 / Zoom 1000% / Color R[100] G[100] B[100]
  |■Effect Picture: 2 [Shake] Shake X 4 / Shake Y 0 / 100000 Times  [1]Frames
- |■Show Message:「実は私のカットイン、\n　裏では画面いっぱいにこんな\n　ピクチャが出てるのよね！
+ |■Show Message:Actually, during my cut-in, these pictures are filling\nthe screen in the background!
  |■Mask: [Enable Picture Mask] => ID 1 to 2 
- |■Show Message:「で、『マスクを全面[非表示]に塗る』をした後、\n 『この背景』と『私のピクチャ』に対して\n 『マスクをON』にすると……。
+ |■Show Message:But once I fill the mask to hide everything and turn\nthe mask ON for this background and my picture...
  |■Mask: [Fill Mask to [Hide] Entire]
  |■Wait: 10 Frames
- |■Show Message:「はい、全部消えちゃう！
- |■Show Message:「実はまださっきのまま表示されてるけど、\n　マスクで全面を『非表示』にしたんだから\n　消えたように見えるのは当然よね？
+ |■Show Message:They're gone!
+ |■Show Message:Actually, they're still there. But I used the mask to\nmake the whole area "invisible," so no wonder it\nlooks like they're gone, right?
  |■Picture Show: 3 [Center] File[SystemFile/Mask_Draw+_Slash200x480.png] X:60 Y:80 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 20% / Color R[100] G[100] B[100]
- |■Show Message:「あとはこんな感じの\n　黒いスジが入った画像で\n　マスクに[表示範囲]を書き込むと……。
+ |■Show Message:Then I add "the visible area" on the mask using an\nimage with a black line like this...
  |■Mask: [Add Visible Area (Black) to Mask] =>[SystemFile/Mask_Draw+_Slash200x480.png] X:160 Y:120 (Center)
- |■Show Message:「ほら、真ん中がチラ見えするわよ！？\n　左の画像の黒スジがちゃんと\n　『表示可能範囲』になってるの分かる！？
+ |■Show Message:Look, you can see a little of the middle now!\nSee how that black line on the left is part of\n"the visible area"!?
  |■Mask: [Add Visible Area (Black) to Mask] =>[SystemFile/Mask_Draw+_Slash200x480.png] X:155 Y:120 (Center)
  |■Wait: 12 Frames
  |■Mask: [Add Visible Area (Black) to Mask] =>[SystemFile/Mask_Draw+_Slash200x480.png] X:150 Y:120 (Center)
  |■Wait: 12 Frames
  |■Mask: [Add Visible Area (Black) to Mask] =>[SystemFile/Mask_Draw+_Slash200x480.png] X:145 Y:120 (Center)
  |■Wait: 12 Frames
- |■Show Message:「あとはこの要領でズラしながら\n　表示範囲を書き足していくと……。
+ |■Show Message:Then I just keep adding more visible areas while\nshifting the position like this...
  |■Wait: 15 Frames
- |■Set Variable: このEvのSelf5 = 100 + 0 
+ |■Set Variable: This Ev Self5 = 100 + 0 
  |■Repeat Loop [ 27 ] Times
- | |■Set Variable: このEvのSelf5 += 5 + 0 
- | |■Mask: [Add Visible Area (Black) to Mask] =>[SystemFile/Mask_Draw+_Slash200x480.png] X:このEvのSelf5 Y:120 (Center)
+ | |■Set Variable: This Ev Self5 += 5 + 0 
+ | |■Mask: [Add Visible Area (Black) to Mask] =>[SystemFile/Mask_Draw+_Slash200x480.png] X:This Ev Self5 Y:120 (Center)
  | |■Wait: 7 Frames
  | |■
  |◇Loop End Point◇◇
  |■Wait: 15 Frames
- |■Show Message:「ほら！\n　さっきみたいなカットインっぽくなるってわけ！
- |■Show Message:「私はマスクに対して毎フレーム、\n 『全面[非表示]に塗る→黒いスジを複数塗る』\n　を幅を変えて繰り返すことで、見える範囲が\n　広がるアニメーションを作ってたのよ！
+ |■Show Message:Look!\nIt's like the cut-in from earlier!
+ |■Show Message:Basically, I repeated "hide everything → draw more\nblack lines than before" on the mask every frame...\nThat's how I made an animation that expanded\nthe visible area!
  |■Picture Erase: 1 to 3  / 0(0)Frames
  |■Mask: [Reset All Masks (Stop)]
  |■Wait: 10 Frames
- |■Show Message:「分かったかしら！？\n　マスクは難しいけど、あなたが\n　使いこなせる日を待ってるわよ！　フン！
+ |■Show Message:Got it!?\nThe mask is tricky, but I'll be waiting for the day you\nmaster it! Hmph!
  |■
 -◇Case: Cancel
  |■

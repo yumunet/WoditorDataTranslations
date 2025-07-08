@@ -1,5 +1,5 @@
 EVENT_ID=2
-EVENT_NAME=ダンジョンの扉
+EVENT_NAME=Dungeon Door
 EVENT_X=34
 EVENT_Y=11
 EVENT_PAGE=1
@@ -39,42 +39,42 @@ OPTION_VAL_2=0
 COMMAND_NUM=18
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("「ダンジョンのカギ」を持っているか判定し、セルフ変数0へ代入")
+[103][0,1]<0>()("To determine whether the player has <dqrt>Dungeon Key,<dqrt> assign the item count to Self Variable 0.")
 [210][4,0]<0>(500017,16777217,19,1100000)()
-[103][0,1]<0>()("1個以上持ってたらダンジョンへ場所移動します")
-[103][0,1]<0>()("（ゲーム中に1個しか手に入らないものでも、")
-[103][0,1]<0>()("　条件分岐は「1個以上」とするのが安全です）")
+[103][0,1]<0>()("If the player has 1 or more, transfer to Dungeon.")
+[103][0,1]<0>()("  (Even if an item can only be obtained once in the game,")
+[103][0,1]<0>()("  it's safer to use the condition “1 or more.”)")
 [111][7,0]<0>(2,1100000,1,1,1100000,0,2)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("ダンジョン内ではセーブを禁止する")
+[103][0,1]<1>()("Disable saving inside the dungeon.")
 [210][3,0]<1>(500015,1,0)()
-[103][0,1]<1>()("場所移動")
+[103][0,1]<1>()("Move player.")
 [130][5,0]<1>(-1,7,27,3,32)()
 [0][0,0]<1>()()
 [401][1,0]<0>(2)()
-[103][0,1]<1>()("カギを持っていない場合はメッセージだけ")
-[101][0,1]<1>()("カギがかかっているようだ……<\n>どこかでカギを見つけないといけない。")
+[103][0,1]<1>()("If the player don't have the key, just a message.")
+[101][0,1]<1>()("It appears to be locked...<\n>You must find a key somewhere.")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ 「ダンジョンのカギ」を持っているか判定し、セルフ変数0へ代入
-■Call Event: このEvのSelf0 = Common 17: [ ▲アイテム所持数取得 ] / 19:ダンジョンのカギ
-▼ 1個以上持ってたらダンジョンへ場所移動します
-▼ （ゲーム中に1個しか手に入らないものでも、
-▼ 　条件分岐は「1個以上」とするのが安全です）
-■Condition (Number):   [1] このEvのSelf0 >=  1  /  [2] このEvのSelf0 ==  0  
--◇Condition:  [1]  [ このEvのSelf0 >= 1   ] Case↓
- |▼ ダンジョン内ではセーブを禁止する
+▼ To determine whether the player has "Dungeon Key," assign the item count to Self Variable 0.
+■Call Event: This Ev Self0 = Common 17: [ ▲アイテム所持数取得 ] / 19:ダンジョンのカギ
+▼ If the player has 1 or more, transfer to Dungeon.
+▼   (Even if an item can only be obtained once in the game,
+▼   it's safer to use the condition “1 or more.”)
+■Condition (Number):   [1] This Ev Self0 >=  1  /  [2] This Ev Self0 ==  0  
+-◇Condition:  [1]  [ This Ev Self0 >= 1   ] Case↓
+ |▼ Disable saving inside the dungeon.
  |■Call Event: Common 15: [ ○セーブ許可・禁止設定 ] / 0:セーブを禁止する
- |▼ 場所移動
- |■Transfer: Hero ▲ Map ID 3 [ダンジョン] X:7 Y:27  [Transition with Fade]
+ |▼ Move player.
+ |■Transfer: Hero ▲ Map ID 3 [Dungeon] X:7 Y:27  [Transition with Fade]
  |■
--◇Condition:  [2]  [ このEvのSelf0 == 0   ] Case↓
- |▼ カギを持っていない場合はメッセージだけ
- |■Show Message:カギがかかっているようだ……\nどこかでカギを見つけないといけない。
+-◇Condition:  [2]  [ This Ev Self0 == 0   ] Case↓
+ |▼ If the player don't have the key, just a message.
+ |■Show Message:It appears to be locked...\nYou must find a key somewhere.
  |■
 ◇End◇
 ■

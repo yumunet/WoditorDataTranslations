@@ -1,5 +1,5 @@
 EVENT_ID=12
-EVENT_NAME=宝箱
+EVENT_NAME=Chest
 EVENT_X=7
 EVENT_Y=15
 EVENT_PAGE=2
@@ -39,22 +39,22 @@ OPTION_VAL_2=0
 COMMAND_NUM=7
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("セルフ変数0　を　1　にすると、ページ2が起動して画像が変わります。")
+[103][0,1]<0>()("When Self Variable 0 is set to 1, Page 2 runs and the image changes.")
 [121][4,0]<0>(1100000,1,0,0)()
-[103][0,1]<0>()("開いた宝箱になったら、ここでアイテム入手処理を作り、メッセージを表示")
+[103][0,1]<0>()("When the chest is opened, execute the item obtain process and display a message.")
 [140][6,1]<0>(33554464,0,0,0,100,100)("SE/System_Get2_wolf.ogg")
 [210][5,0]<0>(500000,3,19,1,0)()
-[101][0,1]<0>()("宝箱には「ダンジョンのカギ」が入っていた！")
+[101][0,1]<0>()("The chest contained the Dungeon Key!")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ セルフ変数0　を　1　にすると、ページ2が起動して画像が変わります。
-■Set Variable: このEvのSelf0 = 1 + 0 
-▼ 開いた宝箱になったら、ここでアイテム入手処理を作り、メッセージを表示
+▼ When Self Variable 0 is set to 1, Page 2 runs and the image changes.
+■Set Variable: This Ev Self0 = 1 + 0 
+▼ When the chest is opened, execute the item obtain process and display a message.
 ■Sound: SE File[SE/System_Get2_wolf.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
 ■Call Event: Common 0: [ ○アイテム増減 ] / 19:ダンジョンのカギ / 1 / 0:なし
-■Show Message:宝箱には「ダンジョンのカギ」が入っていた！
+■Show Message:The chest contained the Dungeon Key!
 ■
 [COMMAND_TEXT_END]
 EVENT_PAGE=1

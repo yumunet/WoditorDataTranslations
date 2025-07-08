@@ -1,5 +1,5 @@
 EVENT_ID=4
-EVENT_NAME=コモン解説
+EVENT_NAME=Common Ev Info
 EVENT_X=16
 EVENT_Y=17
 EVENT_PAGE=1
@@ -39,15 +39,15 @@ OPTION_VAL_2=0
 COMMAND_NUM=4
 --
 WoditorEvCOMMAND_START
-[101][0,1]<0>()("「コモンイベントって知ってるかな？<\n>　どこのマップでも呼び出せるイベントのことさ。")
-[101][0,1]<0>()("「戦闘や買い物、メニューなどの処理は、<\n>　全部「コモンイベント」で作られているんだ。")
-[101][0,1]<0>()("「他にも、「アイテム増減」や「回復」の処理も<\n>　コモンイベントに入っているから、<\n>　使うときはそこから呼び出すんだよ。")
+[101][0,1]<0>()("Do you know about Common Events?<\n>They're events you can call in any map.")
+[101][0,1]<0>()("Battles, shops, and other menus are all created<\n>by commands in the Common Events.")
+[101][0,1]<0>()("Also, there are Common Events to handle adding<\n>items, recovery, and such, so call them to use those<\n>functions.")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:「コモンイベントって知ってるかな？\n　どこのマップでも呼び出せるイベントのことさ。
-■Show Message:「戦闘や買い物、メニューなどの処理は、\n　全部「コモンイベント」で作られているんだ。
-■Show Message:「他にも、「アイテム増減」や「回復」の処理も\n　コモンイベントに入っているから、\n　使うときはそこから呼び出すんだよ。
+■Show Message:Do you know about Common Events?\nThey're events you can call in any map.
+■Show Message:Battles, shops, and other menus are all created\nby commands in the Common Events.
+■Show Message:Also, there are Common Events to handle adding\nitems, recovery, and such, so call them to use those\nfunctions.
 ■
 [COMMAND_TEXT_END]

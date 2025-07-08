@@ -1,5 +1,5 @@
 EVENT_ID=18
-EVENT_NAME=宿のニワトリ
+EVENT_NAME=Inn Cat
 EVENT_X=34
 EVENT_Y=19
 EVENT_PAGE=1
@@ -43,13 +43,13 @@ OPTION_VAL_2=0
 COMMAND_NUM=3
 --
 WoditorEvCOMMAND_START
-[101][0,1]<0>()("「グラフィック合成器って知ってる？<\n>　好きなパーツを組み合わせて、<\n>　色んなキャラクター画像を作れるツールだよ！")
-[101][0,1]<0>()("「『データ集』って名前のフォルダに<\n>　入ってると思うから、見てみてね！")
+[101][0,1]<0>()("Do you know the Graphic Synthesizer?<\n>It's a tool you can use to make character images by<\n>combining parts!")
+[101][0,1]<0>()("It should be in the Other Data Collection folder, <\n>so take a look!")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:「グラフィック合成器って知ってる？\n　好きなパーツを組み合わせて、\n　色んなキャラクター画像を作れるツールだよ！
-■Show Message:「『データ集』って名前のフォルダに\n　入ってると思うから、見てみてね！
+■Show Message:Do you know the Graphic Synthesizer?\nIt's a tool you can use to make character images by\ncombining parts!
+■Show Message:It should be in the Other Data Collection folder, \nso take a look!
 ■
 [COMMAND_TEXT_END]

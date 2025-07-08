@@ -1,5 +1,5 @@
 EVENT_ID=3
-EVENT_NAME=宝箱
+EVENT_NAME=Chest
 EVENT_X=7
 EVENT_Y=5
 EVENT_PAGE=2
@@ -39,36 +39,36 @@ OPTION_VAL_2=0
 COMMAND_NUM=38
 --
 WoditorEvCOMMAND_START
-[101][0,1]<0>()("「『WOLF RPGエディター』<\n>　これを手にする者には試練が降りかかる」<\n>と書いてある。")
-[102][1,2]<0>(50)("開ける","まだ開けない")
+[101][0,1]<0>()("It reads...<\n>  <dqrt>WOLF RPG Editor<\n>  Those who touch this will undergo a trial.<dqrt>")
+[102][1,2]<0>(50)("Open the chest","Don't open it yet")
 [401][1,0]<0>(2)()
 [180][1,0]<1>(10)()
 [151][2,0]<1>(2629150,15)()
 [180][1,0]<1>(20)()
-[101][0,1]<1>()("”そなたらがウディタを手にするのに<\n>　ふさわしい者かどうか、その力で示せ！”")
-[101][0,1]<1>()("”10ターン以内に<\n>　\r[我,わ]が\r[輩,はい]を倒してみせるのだ！”")
+[101][0,1]<1>()("<dqrt>Demonstrate with your strength that you are suited<\n>to use the WOLF RPG Editor!<dqrt>")
+[101][0,1]<1>()("<dqrt>See if you can defeat me within 10 turns!<dqrt>")
 [180][1,0]<1>(10)()
 [210][7,0]<1>(500028,16777220,34,0,1,4,1100001)()
 [111][7,0]<1>(2,1100001,1,2,1100001,0,3)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("戦闘に勝利すると1が入っているので、以下の処理を行う")
+[103][0,1]<2>()("It's 1 if the player won the battle, so execute the commands below.")
 [151][2,0]<2>(2629150,15)()
 [180][1,0]<2>(20)()
-[101][0,1]<2>()("”おめでとう、君たちの勝ちだ”")
-[101][0,1]<2>()("”これを使って、存分に世界を創造するがいい……”")
+[101][0,1]<2>()("<dqrt>Congratulations. It is your victory.<dqrt>")
+[101][0,1]<2>()("<dqrt>Use this to make the world as you wish...<dqrt>")
 [151][2,0]<2>(6579300,15)()
 [180][1,0]<2>(20)()
 [121][4,0]<2>(1100000,1,0,0)()
 [140][6,1]<2>(33554464,0,0,0,100,100)("SE/System_Get3_wolf.ogg")
 [210][5,0]<2>(500000,3,20,1,0)()
-[101][0,1]<2>()("ウルファールたちは<\n>「WOLF RPGエディター」を手に入れた！")
-[101][0,1]<2>()("これはマップで使うことができるぞ！<\n>やってみよう！")
+[101][0,1]<2>()("Wolfarl's party obtained WOLF RPG Editor!")
+[101][0,1]<2>()("You can use this on the map! Give it a try!")
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[103][0,1]<2>()("負けた場合、または逃げた場合")
+[103][0,1]<2>()("If the player lost or ran away.")
 [151][2,0]<2>(2629150,15)()
 [180][1,0]<2>(20)()
-[101][0,1]<2>()("”また挑戦するがいい……”")
+[101][0,1]<2>()("<dqrt>Come take the challenge again...<dqrt>")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [151][2,0]<1>(6579300,15)()
@@ -80,41 +80,41 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:「『WOLF RPGエディター』\n　これを手にする者には試練が降りかかる」\nと書いてある。
-■Show Choice:/ [1] 開ける / [2] まだ開けない 
--◇Case: Choice [1] 開ける                                      ↓
+■Show Message:It reads...\n  "WOLF RPG Editor\n  Those who touch this will undergo a trial."
+■Show Choice:/ [1] Open the chest / [2] Don't open it yet 
+-◇Case: Choice [1] Open the chest                           ↓
  |■Wait: 10 Frames
  |■Adjust Color:  R30 G30 B40 / 15 Frames
  |■Wait: 20 Frames
- |■Show Message:”そなたらがウディタを手にするのに\n　ふさわしい者かどうか、その力で示せ！”
- |■Show Message:”10ターン以内に\n　\r[我,わ]が\r[輩,はい]を倒してみせるのだ！”
+ |■Show Message:"Demonstrate with your strength that you are suited\nto use the WOLF RPG Editor!"
+ |■Show Message:"See if you can defeat me within 10 turns!"
  |■Wait: 10 Frames
- |■Call Event: このEvのSelf1 = Common 28: [ ◆バトルの発生 ] / 34:ボス　[10ターン] / 0:逃走可能 / 1:イベント続行 / 4:ボスBGM
- |■Condition (Number):   [1] このEvのSelf1 ==  1  /  [2] このEvのSelf1 <=  0  
- |-◇Condition:  [1]  [ このEvのSelf1 == 1   ] Case↓
- | |▼ 戦闘に勝利すると1が入っているので、以下の処理を行う
+ |■Call Event: This Ev Self1 = Common 28: [ ◆バトルの発生 ] / 34:ボス　[10ターン] / 0:逃走可能 / 1:イベント続行 / 4:ボスBGM
+ |■Condition (Number):   [1] This Ev Self1 ==  1  /  [2] This Ev Self1 <=  0  
+ |-◇Condition:  [1]  [ This Ev Self1 == 1   ] Case↓
+ | |▼ It's 1 if the player won the battle, so execute the commands below.
  | |■Adjust Color:  R30 G30 B40 / 15 Frames
  | |■Wait: 20 Frames
- | |■Show Message:”おめでとう、君たちの勝ちだ”
- | |■Show Message:”これを使って、存分に世界を創造するがいい……”
+ | |■Show Message:"Congratulations. It is your victory."
+ | |■Show Message:"Use this to make the world as you wish..."
  | |■Adjust Color:  R100 G100 B100 / 15 Frames
  | |■Wait: 20 Frames
- | |■Set Variable: このEvのSelf0 = 1 + 0 
+ | |■Set Variable: This Ev Self0 = 1 + 0 
  | |■Sound: SE File[SE/System_Get3_wolf.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
  | |■Call Event: Common 0: [ ○アイテム増減 ] / 20:WOLF RPGエディター / 1 / 0:なし
- | |■Show Message:ウルファールたちは\n「WOLF RPGエディター」を手に入れた！
- | |■Show Message:これはマップで使うことができるぞ！\nやってみよう！
+ | |■Show Message:Wolfarl's party obtained WOLF RPG Editor!
+ | |■Show Message:You can use this on the map! Give it a try!
  | |■
- |-◇Condition:  [2]  [ このEvのSelf1 <= 0   ] Case↓
- | |▼ 負けた場合、または逃げた場合
+ |-◇Condition:  [2]  [ This Ev Self1 <= 0   ] Case↓
+ | |▼ If the player lost or ran away.
  | |■Adjust Color:  R30 G30 B40 / 15 Frames
  | |■Wait: 20 Frames
- | |■Show Message:”また挑戦するがいい……”
+ | |■Show Message:"Come take the challenge again..."
  | |■
  |◇End◇
  |■Adjust Color:  R100 G100 B100 / 15 Frames
  |■
--◇Case: Choice [2] まだ開けない                                   ↓
+-◇Case: Choice [2] Don't open it yet                        ↓
  |■
 ◇End◇
 ■

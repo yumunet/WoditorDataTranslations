@@ -1,5 +1,5 @@
 EVENT_ID=0
-EVENT_NAME=タイトル用イベント
+EVENT_NAME=Title Event
 EVENT_X=10
 EVENT_Y=7
 EVENT_PAGE=1
@@ -39,91 +39,91 @@ OPTION_VAL_2=0
 COMMAND_NUM=89
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("―――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【初めてWOLF RPGエディターを起動した、あなたへのメッセージ】")
+[103][0,1]<0>()("――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[A Message for First-Time WOLF RPG Editor Users]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("　このイベントは、タイトル画面を演出するための処理です。")
-[103][0,1]<0>()("　最初は、もっと中身が分かりやすい「サンプルマップＡ」のイベントを")
-[103][0,1]<0>()("　見ることをおすすめします。　まずは編集マップを切り替えましょう。")
-[103][0,1]<0>()("　")
-[103][0,1]<0>()("　編集マップを切り替える方法は、メインウィンドウ上部のアイコン、")
-[103][0,1]<0>()("　右端から3番目にある「ＭＡＰ」と書かれたアイコンをクリックし、")
-[103][0,1]<0>()("　出てきたウィンドウ内の「1：サンプルマップＡ」をクリックしてみてください。")
-[103][0,1]<0>()("　（クリックした瞬間、このウィンドウは消えてしまいますのでご注意を）")
+[103][0,1]<0>()("This event handles the presentation of the title screen.")
+[103][0,1]<0>()("We recommend that you first look at the Sample Map A events,")
+[103][0,1]<0>()("which are easier to understand. To do so, switch the current map.")
+[103][0,1]<0>()("")
+[103][0,1]<0>()("To switch the current map, click the MAP icon, which is the fourth ")
+[103][0,1]<0>()("icon from the left at the top of the main window, and then click")
+[103][0,1]<0>()("<dqrt>1:Sample Map A<dqrt> in the selection window that appears.")
+[103][0,1]<0>()("(Note that this window will disappear when you click it.)")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("　それでは、あなたの楽しいゲーム制作ライフをお祈りしています！")
-[103][0,1]<0>()("　分からないことがあれば、以下のパーフェクトガイドへどうぞ！")
+[103][0,1]<0>()("Well then, we wish you a pleasant game development life!")
+[103][0,1]<0>()("If you don't understand anything, check the Perfect Guide below! (Japanese)")
 [103][0,1]<0>()("https://www.silversecond.com/WolfRPGEditor/Guide/")
-[103][0,1]<0>()("―――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【青い [S] マークについて】")
-[103][0,1]<0>()("（ところで青い[S]マークは何かって？ そこがゲームの開始地点なんです。")
-[103][0,1]<0>()("　ゲーム開始地点を設定したいなら、イベントレイヤー中にマップを")
-[103][0,1]<0>()("　右クリックして、「ゲーム開始位置に設定」のコマンドを選んで下さい）")
-[103][0,1]<0>()("―――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("タイトル画像の表示　【ここで呼び出す画像がタイトル画像になります】")
-[103][0,1]<0>()("デフォルトでは「SystemGraphic」フォルダの「TitleGraphic.png」がタイトル画面")
+[103][0,1]<0>()("――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[About the Blue [S] Mark]")
+[103][0,1]<0>()("(By the way, what's the blue [S] mark? That's the starting position of the game.")
+[103][0,1]<0>()(" If you want to change it, go to the event layer, right-click on the map,")
+[103][0,1]<0>()(" and select <dqrt>Set Game Start Position.<dqrt>)")
+[103][0,1]<0>()("――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Title Event Starts Here]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("Display title image. [The image used here will be the title image]")
+[103][0,1]<0>()("By default, <dqrt>TitleGraphic.png<dqrt> in the <dqrt>SystemFile<dqrt> folder is the title screen.")
 [150][11,1]<0>(0,1,0,1,1,1,255,0,0,100,0)("SystemFile/TitleGraphic.png")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【タイトルイベント　ここから開始】")
-[103][0,1]<0>()(" ")
-[103][0,1]<0>()("ゲームを開始する際は基本システムの初期化を待つために")
-[103][0,1]<0>()("1フレームのウェイトを入れてください！")
-[103][0,1]<0>()("でないと文章の表示がずれてしまったりします")
+[103][0,1]<0>()("When starting the game, insert a 1-frame wait to")
+[103][0,1]<0>()("allow for the initialization of the base system!")
+[103][0,1]<0>()("If you don't, message display will be misaligned.")
 [180][1,0]<0>(1)()
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()(" ")
-[103][0,1]<0>()("もし（コモン48 X[共]基本ｼｽﾃﾑ自動初期化）でセーブが見つかっていたら")
-[103][0,1]<0>()("次の選択肢の初期値を1（コンティニュー）に")
+[103][0,1]<0>()("If a save file is found (by Common 48: X[C]Base System Auto-Initialize),")
+[103][0,1]<0>()("set the default value of the next choice to 1 (Continue).")
 [111][4,0]<0>(1,9000025,1,1)()
 [401][1,0]<0>(1)()
 [121][4,0]<1>(9000007,1,0,0)()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("選択肢ウィンドウの表示位置をやや下に移動")
+[103][0,1]<0>()("Move the display position of the choice box down a little.")
 [121][4,0]<0>(9000004,150,0,0)()
-[103][0,1]<0>()("ここでいつものゲーム開始時の選択肢表示")
-[102][1,3]<0>(19)("　スタート","コンティニュー","  ゲーム終了")
+[103][0,1]<0>()("Display the usual game start choices here.")
+[102][1,3]<0>(19)("<C>Start","<C>Continue","<C>Quit")
 [401][1,0]<0>(2)()
-[103][0,1]<1>()("選択肢ウィンドウの表示位置を元に戻しておく")
+[103][0,1]<1>()("Set the display position of the choice box back to default.")
 [121][4,0]<1>(9000004,-1,0,0)()
-[103][0,1]<1>()("タイトル画面のピクチャを消去する")
+[103][0,1]<1>()("Erase the title screen picture.")
 [150][3,0]<1>(2,1,0)()
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<1>()("ここでサンプルマップに移動")
-[103][0,1]<1>()("（移動先は、必要に応じて変更して下さい）")
+[103][0,1]<1>()("Transfer to Sample Map A.")
+[103][0,1]<1>()("(Change the destination as necessary.)")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [130][5,0]<1>(-1,15,21,1,32)()
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<1>()("「スタート」したときのここまでの処理は、必須です！　消さないように！")
+[103][0,1]<1>()("The process up to here when selecting <dqrt>Start<dqrt> is necessary! Don't delete it!")
 [103][0,1]<1>()(" ")
 [179][1,0]<1>(1)()
-[103][0,1]<2>()("ここからゲーム開始直後の演出　ここからは消しても大丈夫です")
+[103][0,1]<2>()("Below is the opening scene of the game. You can delete the below.")
 [290][7,0]<2>(2,10,0,0,160,120,200)()
-[103][0,1]<2>()("主人公が一回転する")
+[103][0,1]<2>()("Turn the hero.")
 [201][1,0]<2>(-2)()(2,[22],[47,2],[22],[47,2],[22],[47,2],[22],[47,2],[22],[47,2],[22],[47,2],[22],[47,2],[22],[21,0,0])
 [202][0,0]<2>()()
 [180][1,0]<2>(7)()
-[103][0,1]<2>()("文章の表示")
-[101][0,1]<2>()("ウルファール<\n>「ようこそ、\r[WOLF,ウルフ] RPGエディターの世界へ！<\n>　私は案内人のウルファールと申します。")
-[101][0,1]<2>()("ウルファール<\n>「このサンプルゲームでは､<\n>　WOLF RPGエディターでどんなRPGが作れるか、<\n>　という一例を紹介しているの！")
-[101][0,1]<2>()("ウルファール<\n>「付属しているベースシステムの<\n>　体験もできるので、色々試してくださいね！")
-[101][0,1]<2>()("ウルファール<\n>「では、小さな冒険の旅にレッツゴー！")
+[103][0,1]<2>()("Display messages.")
+[101][0,1]<2>()("Wolfarl<\n>  Welcome to the world of WOLF RPG Editor!<\n>  My name is Wolfarl, and I will be your guide.")
+[101][0,1]<2>()("Wolfarl<\n>  This sample game shows you an example of<\n>  what kind of RPG you can create with<\n>  WOLF RPG Editor!")
+[101][0,1]<2>()("Wolfarl<\n>  You can also try out the included base system,<\n>  so feel free to try anything you like!")
+[101][0,1]<2>()("Wolfarl<\n>  Now, let's start our little adventure!")
 [290][7,0]<2>(2,10,0,0,160,120,100)()
 [180][1,0]<2>(10)()
 [140][4,0]<2>(32,0,0,0)()
 [180][1,0]<2>(10)()
-[101][0,1]<2>()("※操作方法<\n>　\c[1]Z または スペース・Enter\c[0]：決定キー<\n>　\c[1]X または ESC\c[0]：キャンセル")
-[103][0,1]<2>()("ここまで開始メッセージ　消しても大丈夫ですよ")
+[101][0,1]<2>()("* Controls<\n>  \c[1]Z, Space, or Enter\c[0]: Confirm<\n>  \c[1]X, ESC\c[0]: Cancel")
+[103][0,1]<2>()("End of opening. You can delete up to here.")
 [0][0,0]<2>()()
 [498][0,0]<1>()()
 [0][0,0]<1>()()
 [401][1,0]<0>(3)()
-[103][0,1]<1>()("ロード処理はコモン14から呼び出すことができます")
+[103][0,1]<1>()("You can load by calling Common 14.")
 [210][3,0]<1>(500014,1,-1)()
 [0][0,0]<1>()()
 [401][1,0]<0>(4)()
-[103][0,1]<1>()("ゲームを終了させます")
+[103][0,1]<1>()("End the game.")
 [175][0,0]<1>()()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
@@ -131,91 +131,91 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ ―――――――――――――――――――――――――――――――
-▼ 【初めてWOLF RPGエディターを起動した、あなたへのメッセージ】
+▼ ――――――――――――――――――――――――――――――――――
+▼ [A Message for First-Time WOLF RPG Editor Users]
 ▼  
-▼ 　このイベントは、タイトル画面を演出するための処理です。
-▼ 　最初は、もっと中身が分かりやすい「サンプルマップＡ」のイベントを
-▼ 　見ることをおすすめします。　まずは編集マップを切り替えましょう。
-▼ 　
-▼ 　編集マップを切り替える方法は、メインウィンドウ上部のアイコン、
-▼ 　右端から3番目にある「ＭＡＰ」と書かれたアイコンをクリックし、
-▼ 　出てきたウィンドウ内の「1：サンプルマップＡ」をクリックしてみてください。
-▼ 　（クリックした瞬間、このウィンドウは消えてしまいますのでご注意を）
+▼ This event handles the presentation of the title screen.
+▼ We recommend that you first look at the Sample Map A events,
+▼ which are easier to understand. To do so, switch the current map.
+▼ 
+▼ To switch the current map, click the MAP icon, which is the fourth 
+▼ icon from the left at the top of the main window, and then click
+▼ "1:Sample Map A" in the selection window that appears.
+▼ (Note that this window will disappear when you click it.)
 ▼  
-▼ 　それでは、あなたの楽しいゲーム制作ライフをお祈りしています！
-▼ 　分からないことがあれば、以下のパーフェクトガイドへどうぞ！
+▼ Well then, we wish you a pleasant game development life!
+▼ If you don't understand anything, check the Perfect Guide below! (Japanese)
 ▼ https://www.silversecond.com/WolfRPGEditor/Guide/
-▼ ―――――――――――――――――――――――――――――――
-▼ 【青い [S] マークについて】
-▼ （ところで青い[S]マークは何かって？ そこがゲームの開始地点なんです。
-▼ 　ゲーム開始地点を設定したいなら、イベントレイヤー中にマップを
-▼ 　右クリックして、「ゲーム開始位置に設定」のコマンドを選んで下さい）
-▼ ―――――――――――――――――――――――――――――――
-▼ タイトル画像の表示　【ここで呼び出す画像がタイトル画像になります】
-▼ デフォルトでは「SystemGraphic」フォルダの「TitleGraphic.png」がタイトル画面
+▼ ――――――――――――――――――――――――――――――――――
+▼ [About the Blue [S] Mark]
+▼ (By the way, what's the blue [S] mark? That's the starting position of the game.
+▼  If you want to change it, go to the event layer, right-click on the map,
+▼  and select "Set Game Start Position.")
+▼ ――――――――――――――――――――――――――――――――――
+▼  
+▼ [Title Event Starts Here]
+▼  
+▼ Display title image. [The image used here will be the title image]
+▼ By default, "TitleGraphic.png" in the "SystemFile" folder is the title screen.
 ■Picture Show: 1 [Top-Left] File[SystemFile/TitleGraphic.png] X:0 Y:0 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
 ▼  
-▼ 【タイトルイベント　ここから開始】
-▼  
-▼ ゲームを開始する際は基本システムの初期化を待つために
-▼ 1フレームのウェイトを入れてください！
-▼ でないと文章の表示がずれてしまったりします
+▼ When starting the game, insert a 1-frame wait to
+▼ allow for the initialization of the base system!
+▼ If you don't, message display will be misaligned.
 ■Wait: 1 Frames
 ▼  
-▼  
-▼ もし（コモン48 X[共]基本ｼｽﾃﾑ自動初期化）でセーブが見つかっていたら
-▼ 次の選択肢の初期値を1（コンティニュー）に
+▼ If a save file is found (by Common 48: X[C]Base System Auto-Initialize),
+▼ set the default value of the next choice to 1 (Continue).
 ■Condition (Number):   [1] Sys25:Current Save Data Number (0+) >=  1  
 -◇Condition:  [1]  [ Sys25:Current Save Data Number (0+) >= 1   ] Case↓
  |■Set Variable: Sys7:Initial Choice (0,1,2...) = 1 + 0 
  |■
 ◇End◇
 ▼  
-▼ 選択肢ウィンドウの表示位置をやや下に移動
+▼ Move the display position of the choice box down a little.
 ■Set Variable: Sys4:Choice Box Y = 150 + 0 
-▼ ここでいつものゲーム開始時の選択肢表示
-■Show Choice:/ [1] 　スタート / [2] コンティニュー / [3]   ゲーム終了 
--◇Case: Choice [1] 　スタート                                    ↓
- |▼ 選択肢ウィンドウの表示位置を元に戻しておく
+▼ Display the usual game start choices here.
+■Show Choice:/ [1] <C>Start / [2] <C>Continue / [3] <C>Quit 
+-◇Case: Choice [1] <C>Start                                 ↓
+ |▼ Set the display position of the choice box back to default.
  |■Set Variable: Sys4:Choice Box Y = -1 + 0 
- |▼ タイトル画面のピクチャを消去する
+ |▼ Erase the title screen picture.
  |■Picture Erase: 1  / 0(0)Frames
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |▼ ここでサンプルマップに移動
- |▼ （移動先は、必要に応じて変更して下さい）
+ |▼ Transfer to Sample Map A.
+ |▼ (Change the destination as necessary.)
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |■Transfer: Hero ▲ Map ID 1 [サンプルマップA] X:15 Y:21  [Transition with Fade]
+ |■Transfer: Hero ▲ Map ID 1 [Sample Map A] X:15 Y:21  [Transition with Fade]
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |▼ 「スタート」したときのここまでの処理は、必須です！　消さないように！
+ |▼ The process up to here when selecting "Start" is necessary! Don't delete it!
  |▼  
  |■Repeat Loop [ 1 ] Times
- | |▼ ここからゲーム開始直後の演出　ここからは消しても大丈夫です
+ | |▼ Below is the opening scene of the game. You can delete the below.
  | |■Effect Map: [Zoom] Center X 160 / Center Y 120 / 200%  [10]Frames
- | |▼ 主人公が一回転する
+ | |▼ Turn the hero.
  | |■Move Route: [Skip]  Hero / Turn Right / Wait 2 Frames / Turn Right / Wait 2 Frames / Turn Right / Wait 2 Frames / Turn Right / Wait 2 Frames / Turn Right / Wait 2 Frames / Turn Right / Wait 2 Frames ...
  | |■Wait For Move Route
  | |■Wait: 7 Frames
- | |▼ 文章の表示
- | |■Show Message:ウルファール\n「ようこそ、\r[WOLF,ウルフ] RPGエディターの世界へ！\n　私は案内人のウルファールと申します。
- | |■Show Message:ウルファール\n「このサンプルゲームでは､\n　WOLF RPGエディターでどんなRPGが作れるか、\n　という一例を紹介しているの！
- | |■Show Message:ウルファール\n「付属しているベースシステムの\n　体験もできるので、色々試してくださいね！
- | |■Show Message:ウルファール\n「では、小さな冒険の旅にレッツゴー！
+ | |▼ Display messages.
+ | |■Show Message:Wolfarl\n  Welcome to the world of WOLF RPG Editor!\n  My name is Wolfarl, and I will be your guide.
+ | |■Show Message:Wolfarl\n  This sample game shows you an example of\n  what kind of RPG you can create with\n  WOLF RPG Editor!
+ | |■Show Message:Wolfarl\n  You can also try out the included base system,\n  so feel free to try anything you like!
+ | |■Show Message:Wolfarl\n  Now, let's start our little adventure!
  | |■Effect Map: [Zoom] Center X 160 / Center Y 120 / 100%  [10]Frames
  | |■Wait: 10 Frames
  | |■Sound: SE0[[ｼｽﾃﾑ]決定音] (0 Channel) Play / Delay: 0 Frames
  | |■Wait: 10 Frames
- | |■Show Message:※操作方法\n　\c[1]Z または スペース・Enter\c[0]：決定キー\n　\c[1]X または ESC\c[0]：キャンセル
- | |▼ ここまで開始メッセージ　消しても大丈夫ですよ
+ | |■Show Message:* Controls\n  \c[1]Z, Space, or Enter\c[0]: Confirm\n  \c[1]X, ESC\c[0]: Cancel
+ | |▼ End of opening. You can delete up to here.
  | |■
  |◇Loop End Point◇◇
  |■
--◇Case: Choice [2] コンティニュー                                  ↓
- |▼ ロード処理はコモン14から呼び出すことができます
+-◇Case: Choice [2] <C>Continue                              ↓
+ |▼ You can load by calling Common 14.
  |■Call Event: Common 14: [ ○各種メニュー呼出 ] / -1:ロード画面
  |■
--◇Case: Choice [3]   ゲーム終了                                  ↓
- |▼ ゲームを終了させます
+-◇Case: Choice [3] <C>Quit                                  ↓
+ |▼ End the game.
  |■Game End
  |■
 ◇End◇

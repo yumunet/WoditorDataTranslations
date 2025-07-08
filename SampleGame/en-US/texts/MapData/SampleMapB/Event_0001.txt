@@ -1,5 +1,5 @@
 EVENT_ID=1
-EVENT_NAME=市松模様解説男
+EVENT_NAME=Checker Info Dog
 EVENT_X=13
 EVENT_Y=14
 EVENT_PAGE=1
@@ -39,17 +39,17 @@ OPTION_VAL_2=0
 COMMAND_NUM=5
 --
 WoditorEvCOMMAND_START
-[101][0,1]<0>()("「この\r[市松,いちまつ]\r[模,も]\r[様,よう]の上を歩くと、<\n>　10マスに一度くらい敵と遭遇するよ！")
-[101][0,1]<0>()("「これは、イベントエディタの「接触範囲拡張」を<\n>　うまいこと使ったテクニックなんだ。")
-[101][0,1]<0>()("「この市松模様の中では、<\n>　君が一歩あるくごとに1回、エンカウントを<\n>　チェックするイベントが起動するんだ。")
-[101][0,1]<0>()("「エンカウントのポイントは、歩くたびに<\n>　どんどん増えていって、最大まで<\n>　たまったときに戦闘が始まるのさ。")
+[101][0,1]<0>()("If you walk on this checkerboard pattern, you will<\n>encounter an enemy about once every 10 tiles!")
+[101][0,1]<0>()("The technique makes clever use of the Event Editor's<\n><dqrt>Range Extension.<dqrt>")
+[101][0,1]<0>()("Every time you take a step on this checkerboard,<\n>it runs an event that checks for an encounter.")
+[101][0,1]<0>()("An encounter points variable increases for each step<\n>you take, and once it has reached the max level,<\n>a battle will begin.")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:「この\r[市松,いちまつ]\r[模,も]\r[様,よう]の上を歩くと、\n　10マスに一度くらい敵と遭遇するよ！
-■Show Message:「これは、イベントエディタの「接触範囲拡張」を\n　うまいこと使ったテクニックなんだ。
-■Show Message:「この市松模様の中では、\n　君が一歩あるくごとに1回、エンカウントを\n　チェックするイベントが起動するんだ。
-■Show Message:「エンカウントのポイントは、歩くたびに\n　どんどん増えていって、最大まで\n　たまったときに戦闘が始まるのさ。
+■Show Message:If you walk on this checkerboard pattern, you will\nencounter an enemy about once every 10 tiles!
+■Show Message:The technique makes clever use of the Event Editor's\n"Range Extension."
+■Show Message:Every time you take a step on this checkerboard,\nit runs an event that checks for an encounter.
+■Show Message:An encounter points variable increases for each step\nyou take, and once it has reached the max level,\na battle will begin.
 ■
 [COMMAND_TEXT_END]

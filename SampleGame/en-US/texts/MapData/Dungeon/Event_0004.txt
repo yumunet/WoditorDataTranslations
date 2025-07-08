@@ -1,5 +1,5 @@
 EVENT_ID=4
-EVENT_NAME=店の人
+EVENT_NAME=Shop/Save Person
 EVENT_X=20
 EVENT_Y=17
 EVENT_PAGE=1
@@ -39,8 +39,8 @@ OPTION_VAL_2=0
 COMMAND_NUM=21
 --
 WoditorEvCOMMAND_START
-[101][0,1]<0>()("「いらっしゃい！<\n>　何か買ってくぅ？それとも、セ・エ・ブ？<\n>　うふっ♪")
-[102][1,2]<0>(2)("ショップ","セーブで")
+[101][0,1]<0>()("Welcome!<\n>What're ya buyin'? Or will you s-a-v-e? Heehee ♪")
+[102][1,2]<0>(2)("Shop","Save")
 [401][1,0]<0>(2)()
 [210][2,0]<1>(500033,0)()
 [210][6,0]<1>(500034,4,1,14,-1,-1)()
@@ -63,9 +63,9 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:「いらっしゃい！\n　何か買ってくぅ？それとも、セ・エ・ブ？\n　うふっ♪
-■Show Choice:/ [1] ショップ / [2] セーブで 
--◇Case: Choice [1] ショップ                                     ↓
+■Show Message:Welcome!\nWhat're ya buyin'? Or will you s-a-v-e? Heehee ♪
+■Show Choice:/ [1] Shop / [2] Save 
+-◇Case: Choice [1] Shop                                     ↓
  |■Call Event: Common 33: [ 【1】 お店 初期化 ]
  |■Call Event: Common 34: [ 【2】 お店 商品の追加 ] / 1:ｱｲﾃﾑ[A] / 14:薬ビン / -1:<なし> / -1:<なし>
  |■Call Event: Common 34: [ 【2】 お店 商品の追加 ] / 1:ｱｲﾃﾑ[A] / 16:スグオキール / -1:<なし> / -1:<なし>
@@ -77,7 +77,7 @@ WoditorEvCOMMAND_END
  |■Call Event: Common 34: [ 【2】 お店 商品の追加 ] / 3:防具[C] / -3:<なし> / -1:<なし> / 32:シールドお守り
  |■Call Event: Common 35: [ 【3】 お店処理 実行 ] / 2:買いのみ
  |■
--◇Case: Choice [2] セーブで                                     ↓
+-◇Case: Choice [2] Save                                     ↓
  |■Call Event: Common 14: [ ○各種メニュー呼出 ] / 0:セーブ画面
  |■
 -◇Case: Cancel

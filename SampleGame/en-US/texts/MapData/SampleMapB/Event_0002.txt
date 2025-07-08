@@ -1,5 +1,5 @@
 EVENT_ID=2
-EVENT_NAME=Aへの場所移動
+EVENT_NAME=Transfer to A
 EVENT_X=11
 EVENT_Y=26
 EVENT_PAGE=1
@@ -44,6 +44,6 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Transfer: Hero ▲ Map ID 1 [サンプルマップA] X:15 Y:1  [Transition - No Fade]
+■Transfer: Hero ▲ Map ID 1 [Sample Map A] X:15 Y:1  [Transition - No Fade]
 ■
 [COMMAND_TEXT_END]

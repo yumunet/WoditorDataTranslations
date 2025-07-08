@@ -1,5 +1,5 @@
 EVENT_ID=15
-EVENT_NAME=リンゴ
+EVENT_NAME=Apples
 EVENT_X=31
 EVENT_Y=17
 EVENT_PAGE=1
@@ -39,11 +39,11 @@ OPTION_VAL_2=0
 COMMAND_NUM=2
 --
 WoditorEvCOMMAND_START
-[101][0,1]<0>()("ウルファール<\n>「リンゴのカゴね。<\n>　真っ赤でツルツルでおいしそう……。")
+[101][0,1]<0>()("Wolfarl<\n>  Apples. So red and tasty-looking...")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:ウルファール\n「リンゴのカゴね。\n　真っ赤でツルツルでおいしそう……。
+■Show Message:Wolfarl\n  Apples. So red and tasty-looking...
 ■
 [COMMAND_TEXT_END]

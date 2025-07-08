@@ -1,5 +1,5 @@
 EVENT_ID=16
-EVENT_NAME=ベッド
+EVENT_NAME=Bed
 EVENT_X=37
 EVENT_Y=18
 EVENT_PAGE=1
@@ -39,11 +39,11 @@ OPTION_VAL_2=0
 COMMAND_NUM=2
 --
 WoditorEvCOMMAND_START
-[101][0,1]<0>()("ウルファール<\n>（ベッドがまだ生暖かい！どうしよう！）")
+[101][0,1]<0>()("Wolfarl<\n>  (The bed is still a little warm! What do I do?!)")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:ウルファール\n（ベッドがまだ生暖かい！どうしよう！）
+■Show Message:Wolfarl\n  (The bed is still a little warm! What do I do?!)
 ■
 [COMMAND_TEXT_END]

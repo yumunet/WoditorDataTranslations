@@ -1,5 +1,5 @@
 EVENT_ID=7
-EVENT_NAME=ハカセ
+EVENT_NAME=Professor
 EVENT_X=4
 EVENT_Y=6
 EVENT_PAGE=1
@@ -40,74 +40,74 @@ COMMAND_NUM=74
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("-----------------------------------------------------")
-[103][0,1]<0>()("【このイベントを見てくれたあなたへ、お得な情報！】")
-[103][0,1]<0>()("　マップ上でマウス中ボタンをクリック(またはスペースキーを押す)しながら")
-[103][0,1]<0>()("　マウスを動かす（ﾄﾞﾗｯｸﾞ）と、マップを快適にスクロールできます。")
+[103][0,1]<0>()("[Useful Information to Anyone Viewing This Event!]")
+[103][0,1]<0>()("You can easily scroll the map by clicking the middle mouse button")
+[103][0,1]<0>()("(or pressing Space) and moving the mouse (dragging).")
 [103][0,1]<0>()("-----------------------------------------------------")
-[101][0,1]<0>()("「こんにちは～、ハカセでーす！<\n>　今日は何を聞きに来たのかな？")
+[101][0,1]<0>()("Hello there, I'm the Professor!<\n>What have you come to ask today?")
 [180][1,0]<0>(1)()
-[102][1,7]<0>(7)("どういう話をしてくれるの？","文字列ピクチャについて教えて","ウィンドウピクチャについて教えて","キーボードから文字入力","特殊文字について教えて","アイコンいっぱい見せて","フォント変更について教えて")
+[102][1,7]<0>(7)("What can you tell me?","Tell me about string pictures","Tell me about window pictures","Keyboard text input","Tell me about special characters","Show me lots of icons","Tell me about changing fonts")
 [401][1,0]<0>(2)()
-[101][0,1]<1>()("「ワタシはウディタの、<\n>　基本的な機能の紹介をしているの！")
-[101][0,1]<1>()("「自作システム作りたーい、ってキミや、<\n>　ウディタをバリバリ使いこなしたいキミには<\n>　ぜひ聞いていってもらいたいなっ！")
-[101][0,1]<1>()("「えー、システムなんて最初から入ってるのだけで<\n>　十分だよ～、覚えるのメンドウ！<\n>　って感じのキミは、聞かなくってもOKだぞ！")
+[101][0,1]<1>()("I can introduce you to the basic functions of the<\n>WOLF RPG Editor!")
+[101][0,1]<1>()("If you want to make your own system,<\n>or you want to master using WOLF RPG Editor,<\n>you should really stop and listen!")
+[101][0,1]<1>()("Ah, but if you don't care to learn and find the basic <\n>system is enough, then you don't really need to<\n>listen!")
 [0][0,0]<1>()()
 [401][1,0]<0>(3)()
-[101][0,1]<1>()("「WOLF RPGエディターでは<\n>　画像をピクチャとして表示するだけじゃなくて<\n>　文章をピクチャとして表示することもできるの！")
-[101][0,1]<1>()("「たとえば「ハカセサイコー！」という文章で<\n>　ピクチャを出してみるわよ！")
-[150][11,1]<1>(4128,1000,0,1,1,1,255,160,120,100,0)("\f[32]ハカセサイコー")
-[101][0,1]<1>()("「ほら、こんな風に！")
+[101][0,1]<1>()("In WOLF RPG Editor, the Picture command isn't<\n>limited to showing images—it can also show text!")
+[101][0,1]<1>()("For instance, let's show the text <dqrt>Professor Rocks!<dqrt><\n>as a picture!")
+[150][11,1]<1>(4128,1000,0,1,1,1,255,160,120,100,0)("\f[32]Professor Rocks!")
+[101][0,1]<1>()("See? Just like that!")
 [150][11,0]<1>(65537,1000,10,0,0,1,255,50,0,100,0)()
-[101][0,1]<1>()("「これはピクチャだから、<\n>　表示位置を動かしたり……。")
+[101][0,1]<1>()("Since this is a picture,<\n>we can move its display position...")
 [150][11,0]<1>(65537,1000,20,0,0,1,255,0,0,150,0)()
-[101][0,1]<1>()("「拡大縮小したりもできるわ！<\n>　ステータス画面を自作するときには<\n>　鼻血が出るほど便利なんだからっ！！")
+[101][0,1]<1>()("And have it enlarge and shrink! When you're making<\n>your own menus, it's phenomenally useful!!")
 [150][3,0]<1>(4130,1000,10)()
 [0][0,0]<1>()()
 [401][1,0]<0>(4)()
-[101][0,1]<1>()("@1<\n>「これは自由なサイズのウィンドウ画像を<\n>　ピクチャとして表示することができる機能よ！")
+[101][0,1]<1>()("This is a function which displays a freeform-size<\n>window image as a picture!")
 [150][11,1]<1>(4096,1000,10,1,1,1,255,160,120,100,0)("SystemFile/WindowBase_amania.png")
-[101][0,1]<1>()("「たとえば、縦3x横3分割できる<\n>　こんなベース画像を作っておけば……。")
+[101][0,1]<1>()("For example, if we just make a base image which can<\n>be divided into 3x3 segments...")
 [150][11,1]<1>(4144,1000,10,100,80,1,255,160,120,100,0)("SystemFile/WindowBase_amania.png")
-[101][0,1]<1>()("「こんなウィンドウや……。")
+[101][0,1]<1>()("Then we can make windows like this...")
 [150][11,1]<1>(4144,1000,10,150,60,1,255,160,120,100,0)("SystemFile/WindowBase_amania.png")
-[101][0,1]<1>()("「こんなウィンドウが、<\n>　「作りたいサイズ」を指定するだけで<\n>　簡単に作れるってワケ！")
+[101][0,1]<1>()("Or windows like this! It's as simple as specifying what<\n>size to make the window!")
 [150][3,0]<1>(4146,1000,10)()
-[101][0,1]<1>()("「これでもうサイズ違いのウィンドウを<\n>　いちいち作る必要がなくなるの！<\n>　便利でしょ！")
-[101][0,1]<1>()("「このサンプルゲームのメニューは、<\n>　ほとんどがこれを利用して作られているわ！")
+[101][0,1]<1>()("This means there's no need to make separate<\n>windows in all different sizes! Handy, yes?!")
+[101][0,1]<1>()("Most of the menus in this sample game are made<\n>using this method!")
 [0][0,0]<1>()()
 [401][1,0]<0>(5)()
-[101][0,1]<1>()("「ウディタではキーボードで文字を入力したりも<\n>　できるわよ！終わったらをEnter押してね！")
+[101][0,1]<1>()("WOLF RPG Editor even lets you input text with the<\n>keyboard! Press Enter when you are done!")
 [122][3,0]<1>(3000000,4099,30)()
 [112][2,4]<1>(17,3000000)("","","","")
 [401][1,0]<1>(1)()
-[101][0,1]<2>()("「キャンセルされましたー。")
+[101][0,1]<2>()("You cancelled it.")
 [0][0,0]<2>()()
 [420][1,0]<1>(0)()
-[101][0,1]<2>()("「今キミは<\n>　「\s[0]」<\n>　って入力したわね！")
-[101][0,1]<2>()("「ということで、名前入力を<\n>　させたいときなんかには、<\n>　この機能がとーっても便利だと思うの！")
+[101][0,1]<2>()("You just enterd<\n><dqrt>\s[0]<dqrt>!")
+[101][0,1]<2>()("I imagine this function will be quite handy when you<\n>want to have a name entry and the like!")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [0][0,0]<1>()()
 [401][1,0]<0>(6)()
-[101][0,1]<1>()("「特殊文字を使うと、こうして出てる文章に<\n>　いろどりを添えられるのよ！")
-[101][0,1]<1>()("「たとえば、Data内のBasicDataフォルダに<\n>　icon031.pngみたいなファイルを入れておくと、<\n>　文章中に「\\i[31]本」って入れるだけで<\n>　「\i[31]本」みたいに表示することができるし……。")
-[101][0,1]<1>()("「また、\\r[人生,じんせい]って入れると<\n>　 \r[人生,じんせい] という風に<\n>　ルビを付けることができたり……。\f[9]<\n>　（ルビ色はシステムDBタイプ12のデータ13で設定）")
-[101][0,1]<1>()("「\\!という文字を入れると<\n>　そこで文章を一旦停止できるの、<\n>　\!こんな風にね。")
-[101][0,1]<1>()("「他にも\\.で1/4秒のウェイトを持たせたり、\.<\n>　\\^でキー入力を待たずに文章表示を<\n>　終わらせることもできるわ、<\n>　\\^は次でやってみるわね。")
-[101][0,1]<1>()("\f[20]「ハ\.カ\.セ\.サイコー！\.\.\^")
-[101][0,1]<1>()("「ま、こんな感じね、<\n>　詳しいことは公式サイトの<\n>　WOLF RPGエディター説明書を読んでみてね。")
+[101][0,1]<1>()("With special characters, you can add various effects<\n>to text!")
+[101][0,1]<1>()("For example, if you put a file called icon031.png in<\n>the Data/BasicData folder, inserting <dqrt>\\i[31]Book<dqrt> in<\n>a message will make it display as <dqrt>\i[31]Book<dqrt>...")
+[101][0,1]<1>()("Also, by inserting \\r[jinsei,life], it will display as \r[jinsei,life],<\n>showing the latter as Ruby text...\f[9]<\n>(Ruby color is set in SystemDB Type 12 Data 13)")
+[101][0,1]<1>()("And if you insert \\!, the message will temporarily stop<\n>there. \!Like this.")
+[101][0,1]<1>()("In addition, \\. will cause a 1/4-second wait,\. and \\^<\n>will end the message display without waiting for<\n>input. Let's try out \\^ in the next message.")
+[101][0,1]<1>()("\f[20]Pro\.fes\.sor\. Rocks!\.\.\^")
+[101][0,1]<1>()("Well, you get the idea. Details are in the<\n>WOLF RPG Editor manual on the official Japanese site.")
 [0][0,0]<1>()()
 [401][1,0]<0>(7)()
-[101][0,1]<1>()("「アイコンいっぱい出してみるわよ！")
-[101][0,1]<1>()("0～9　 \i[0]\i[1]\i[2]\i[3]\i[4]\i[5]\i[6]\i[7]\i[8]\i[9]<\n>10～19 \i[10]\i[11]\i[12]\i[13]\i[14]\i[15]\i[16]\i[17]\i[18]\i[19]<\n>20～29 \i[20]\i[21]\i[22]\i[23]\i[24]\i[25]\i[26]\i[27]\i[28]\i[29]<\n>30～39 \i[30]\i[31]\i[32]\i[33]\i[34]\i[35]\i[36]\i[37]\i[38]\i[39]")
-[101][0,1]<1>()("40～49 \i[40]\i[41]\i[42]\i[43]\i[44]\i[45]\i[46]\i[47]\i[48]\i[49]<\n>50～59 \i[50]\i[51]\i[52]\i[53]\i[54]\i[55]\i[56]\i[57]\i[58]\i[59]<\n>60～69 \i[60]\i[61]\i[62]\i[63]\i[64]\i[65]\i[66]\i[67]\i[68]\i[69]<\n>70～79 \i[70]\i[71]\i[72]\i[73]\i[74]\i[75]\i[76]\i[77]\i[78]\i[79]")
-[101][0,1]<1>()("80～89 \i[80]\i[81]\i[82]\i[83]\i[84]\i[85]\i[86]\i[87]\i[88]\i[89]<\n>90～99 \i[90]\i[91]\i[92]\i[93]\i[94]\i[95]\i[96]\i[97]\i[98]\i[99]<\n>100～109 \i[100]\i[101]\i[102]\i[103]\i[104]\i[105]\i[106]\i[107]\i[108]\i[109]<\n>110～125 \i[110]\i[111]\i[112]\i[113]\i[114]\i[115]\i[116]\i[117]\i[118]\i[119]\i[120]\i[121]\i[122]\i[123]\i[124]\i[125]")
+[101][0,1]<1>()("Let's display a bunch of icons!")
+[101][0,1]<1>()("0-9 \i[0]\i[1]\i[2]\i[3]\i[4]\i[5]\i[6]\i[7]\i[8]\i[9]<\n>10-19 \i[10]\i[11]\i[12]\i[13]\i[14]\i[15]\i[16]\i[17]\i[18]\i[19]<\n>20-29 \i[20]\i[21]\i[22]\i[23]\i[24]\i[25]\i[26]\i[27]\i[28]\i[29]<\n>30-39 \i[30]\i[31]\i[32]\i[33]\i[34]\i[35]\i[36]\i[37]\i[38]\i[39]")
+[101][0,1]<1>()("40-49 \i[40]\i[41]\i[42]\i[43]\i[44]\i[45]\i[46]\i[47]\i[48]\i[49]<\n>50-59 \i[50]\i[51]\i[52]\i[53]\i[54]\i[55]\i[56]\i[57]\i[58]\i[59]<\n>60-69 \i[60]\i[61]\i[62]\i[63]\i[64]\i[65]\i[66]\i[67]\i[68]\i[69]<\n>70-79 \i[70]\i[71]\i[72]\i[73]\i[74]\i[75]\i[76]\i[77]\i[78]\i[79]")
+[101][0,1]<1>()("80-89 \i[80]\i[81]\i[82]\i[83]\i[84]\i[85]\i[86]\i[87]\i[88]\i[89]<\n>90-99 \i[90]\i[91]\i[92]\i[93]\i[94]\i[95]\i[96]\i[97]\i[98]\i[99]<\n>100-109 \i[100]\i[101]\i[102]\i[103]\i[104]\i[105]\i[106]\i[107]\i[108]\i[109]<\n>110-125 \i[110]\i[111]\i[112]\i[113]\i[114]\i[115]\i[116]\i[117]\i[118]\i[119]\i[120]\i[121]\i[122]\i[123]\i[124]\i[125]")
 [0][0,0]<1>()()
 [401][1,0]<0>(8)()
-[101][0,1]<1>()("「WOLF RPGエディターでは、<\n>　最大4種類のフォントを<\n>　使い分けることができるのよ！")
-[101][0,1]<1>()("「たとえば今使ってるメイリオ(Meiryo)や、<\n>　Arial Blackなんてフォントを<\n>　試しに見比べてみるわね。")
-[101][0,1]<1>()("メイリオ → \font[0]あいうえお 012345 ABCDE<\n>Arial Black → \font[1]　　　　　 012345 ABCDE")
-[101][0,1]<1>()("「とまあ、こんな感じね！<\n>　パソコンに入ってないフォントは全部<\n>　Yu Gothic UIになるから気を付けてね！")
+[101][0,1]<1>()("WOLF RPG Editor lets you use a maximum of<\n>4 separate fonts!")
+[101][0,1]<1>()("Let's compare the current Segoe UI<\n>with some other font such as Arial Black.")
+[101][0,1]<1>()("Segoe UI → \font[0]abcde 012345 ABCDE<\n>Arial Black → \font[1]abcde 012345 ABCDE")
+[101][0,1]<1>()("That's about it!<\n>Be aware fonts not on the player's computer will<\n>end up as Tahoma!")
 [0][0,0]<1>()()
 [421][1,0]<0>(0)()
 [0][0,0]<1>()()
@@ -117,74 +117,74 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ -----------------------------------------------------
-▼ 【このイベントを見てくれたあなたへ、お得な情報！】
-▼ 　マップ上でマウス中ボタンをクリック(またはスペースキーを押す)しながら
-▼ 　マウスを動かす（ﾄﾞﾗｯｸﾞ）と、マップを快適にスクロールできます。
+▼ [Useful Information to Anyone Viewing This Event!]
+▼ You can easily scroll the map by clicking the middle mouse button
+▼ (or pressing Space) and moving the mouse (dragging).
 ▼ -----------------------------------------------------
-■Show Message:「こんにちは～、ハカセでーす！\n　今日は何を聞きに来たのかな？
+■Show Message:Hello there, I'm the Professor!\nWhat have you come to ask today?
 ■Wait: 1 Frames
-■Show Choice:/ [1] どういう話をしてくれるの？ / [2] 文字列ピクチャについて教えて / [3] ウィンドウピクチャについて教えて / [4] キーボードから文字入力 / [5] 特殊文字について教えて / [6] アイコンいっぱい見せて / [7] フォント変更について教えて 
--◇Case: Choice [1] どういう話をしてくれるの？                            ↓
- |■Show Message:「ワタシはウディタの、\n　基本的な機能の紹介をしているの！
- |■Show Message:「自作システム作りたーい、ってキミや、\n　ウディタをバリバリ使いこなしたいキミには\n　ぜひ聞いていってもらいたいなっ！
- |■Show Message:「えー、システムなんて最初から入ってるのだけで\n　十分だよ～、覚えるのメンドウ！\n　って感じのキミは、聞かなくってもOKだぞ！
+■Show Choice:/ [1] What can you tell me? / [2] Tell me about string pictures / [3] Tell me about window pictures / [4] Keyboard text input / [5] Tell me about special characters / [6] Show me lots of icons / [7] Tell me about changing fonts 
+-◇Case: Choice [1] What can you tell me?                    ↓
+ |■Show Message:I can introduce you to the basic functions of the\nWOLF RPG Editor!
+ |■Show Message:If you want to make your own system,\nor you want to master using WOLF RPG Editor,\nyou should really stop and listen!
+ |■Show Message:Ah, but if you don't care to learn and find the basic \nsystem is enough, then you don't really need to\nlisten!
  |■
--◇Case: Choice [2] 文字列ピクチャについて教えて                           ↓
- |■Show Message:「WOLF RPGエディターでは\n　画像をピクチャとして表示するだけじゃなくて\n　文章をピクチャとして表示することもできるの！
- |■Show Message:「たとえば「ハカセサイコー！」という文章で\n　ピクチャを出してみるわよ！
- |■Picture Show: 1000 [Center] String[\f[32]ハカセサイコー] X:160 Y:120 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- |■Show Message:「ほら、こんな風に！
+-◇Case: Choice [2] Tell me about string pictures            ↓
+ |■Show Message:In WOLF RPG Editor, the Picture command isn't\nlimited to showing images—it can also show text!
+ |■Show Message:For instance, let's show the text "Professor Rocks!"\nas a picture!
+ |■Picture Show: 1000 [Center] String[\f[32]Professor ] X:160 Y:120 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ |■Show Message:See? Just like that!
  |■Picture Move: 1000  Relative X:50 Y:0 / 10(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- |■Show Message:「これはピクチャだから、\n　表示位置を動かしたり……。
+ |■Show Message:Since this is a picture,\nwe can move its display position...
  |■Picture Move: 1000  Relative X:0 Y:0 / 20(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 150% / Color R[100] G[100] B[100]
- |■Show Message:「拡大縮小したりもできるわ！\n　ステータス画面を自作するときには\n　鼻血が出るほど便利なんだからっ！！
+ |■Show Message:And have it enlarge and shrink! When you're making\nyour own menus, it's phenomenally useful!!
  |■Picture Erase: 1000  / 10(0)Frames
  |■
--◇Case: Choice [3] ウィンドウピクチャについて教えて                         ↓
- |■Show Message:@1\n「これは自由なサイズのウィンドウ画像を\n　ピクチャとして表示することができる機能よ！
+-◇Case: Choice [3] Tell me about window pictures            ↓
+ |■Show Message:This is a function which displays a freeform-size\nwindow image as a picture!
  |■Picture Show: 1000 [Center] File[SystemFile/WindowBase_amania.png] X:160 Y:120 / 10(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- |■Show Message:「たとえば、縦3x横3分割できる\n　こんなベース画像を作っておけば……。
+ |■Show Message:For example, if we just make a base image which can\nbe divided into 3x3 segments...
  |■Picture Show: 1000 [Center] Window[SystemFile/WindowBase_amania.png] Size[100,80] X:160 Y:120 / 10(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- |■Show Message:「こんなウィンドウや……。
+ |■Show Message:Then we can make windows like this...
  |■Picture Show: 1000 [Center] Window[SystemFile/WindowBase_amania.png] Size[150,60] X:160 Y:120 / 10(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- |■Show Message:「こんなウィンドウが、\n　「作りたいサイズ」を指定するだけで\n　簡単に作れるってワケ！
+ |■Show Message:Or windows like this! It's as simple as specifying what\nsize to make the window!
  |■Picture Erase: 1000  / 10(0)Frames
- |■Show Message:「これでもうサイズ違いのウィンドウを\n　いちいち作る必要がなくなるの！\n　便利でしょ！
- |■Show Message:「このサンプルゲームのメニューは、\n　ほとんどがこれを利用して作られているわ！
+ |■Show Message:This means there's no need to make separate\nwindows in all different sizes! Handy, yes?!
+ |■Show Message:Most of the menus in this sample game are made\nusing this method!
  |■
--◇Case: Choice [4] キーボードから文字入力                              ↓
- |■Show Message:「ウディタではキーボードで文字を入力したりも\n　できるわよ！終わったらをEnter押してね！
+-◇Case: Choice [4] Keyboard text input                      ↓
+ |■Show Message:WOLF RPG Editor even lets you input text with the\nkeyboard! Press Enter when you are done!
  |■Set String: S0[[サンプル]一時文字列] = Keyboard Input 30Bytes [Cancellable] 
  |■Condition (String):   [1] S0[[サンプル]一時文字列] is equal to ""
  |-◇Condition:  [1] [ S0[[サンプル]一時文字列] is equal to "" ] Case↓
- | |■Show Message:「キャンセルされましたー。
+ | |■Show Message:You cancelled it.
  | |■
  |-◇Else
- | |■Show Message:「今キミは\n　「\s[0]」\n　って入力したわね！
- | |■Show Message:「ということで、名前入力を\n　させたいときなんかには、\n　この機能がとーっても便利だと思うの！
+ | |■Show Message:You just enterd\n"\s[0]"!
+ | |■Show Message:I imagine this function will be quite handy when you\nwant to have a name entry and the like!
  | |■
  |◇End◇
  |■
--◇Case: Choice [5] 特殊文字について教えて                              ↓
- |■Show Message:「特殊文字を使うと、こうして出てる文章に\n　いろどりを添えられるのよ！
- |■Show Message:「たとえば、Data内のBasicDataフォルダに\n　icon031.pngみたいなファイルを入れておくと、\n　文章中に「\\i[31]本」って入れるだけで\n　「\i[31]本」みたいに表示することができるし……。
- |■Show Message:「また、\\r[人生,じんせい]って入れると\n　 \r[人生,じんせい] という風に\n　ルビを付けることができたり……。\f[9]\n　（ルビ色はシステムDBタイプ12のデータ13で設定）
- |■Show Message:「\\!という文字を入れると\n　そこで文章を一旦停止できるの、\n　\!こんな風にね。
- |■Show Message:「他にも\\.で1/4秒のウェイトを持たせたり、\.\n　\\^でキー入力を待たずに文章表示を\n　終わらせることもできるわ、\n　\\^は次でやってみるわね。
- |■Show Message:\f[20]「ハ\.カ\.セ\.サイコー！\.\.\^
- |■Show Message:「ま、こんな感じね、\n　詳しいことは公式サイトの\n　WOLF RPGエディター説明書を読んでみてね。
+-◇Case: Choice [5] Tell me about special characters         ↓
+ |■Show Message:With special characters, you can add various effects\nto text!
+ |■Show Message:For example, if you put a file called icon031.png in\nthe Data/BasicData folder, inserting "\\i[31]Book" in\na message will make it display as "\i[31]Book"...
+ |■Show Message:Also, by inserting \\r[jinsei,life], it will display as \r[jinsei,life],\nshowing the latter as Ruby text...\f[9]\n(Ruby color is set in SystemDB Type 12 Data 13)
+ |■Show Message:And if you insert \\!, the message will temporarily stop\nthere. \!Like this.
+ |■Show Message:In addition, \\. will cause a 1/4-second wait,\. and \\^\nwill end the message display without waiting for\ninput. Let's try out \\^ in the next message.
+ |■Show Message:\f[20]Pro\.fes\.sor\. Rocks!\.\.\^
+ |■Show Message:Well, you get the idea. Details are in the\nWOLF RPG Editor manual on the official Japanese site.
  |■
--◇Case: Choice [6] アイコンいっぱい見せて                              ↓
- |■Show Message:「アイコンいっぱい出してみるわよ！
- |■Show Message:0～9　 \i[0]\i[1]\i[2]\i[3]\i[4]\i[5]\i[6]\i[7]\i[8]\i[9]\n10～19 \i[10]\i[11]\i[12]\i[13]\i[14]\i[15]\i[16]\i[17]\i[18]\i[19]\n20～29 \i[20]\i[21]\i[22]\i[23]\i[24]\i[25]\i[26]\i[27]\i[28]\i[29]\n30～39 \i[30]\i[31]\i[32]\i[33]\i[34]\i[35]\i[36]\i[37]\i[38]\i[39]
- |■Show Message:40～49 \i[40]\i[41]\i[42]\i[43]\i[44]\i[45]\i[46]\i[47]\i[48]\i[49]\n50～59 \i[50]\i[51]\i[52]\i[53]\i[54]\i[55]\i[56]\i[57]\i[58]\i[59]\n60～69 \i[60]\i[61]\i[62]\i[63]\i[64]\i[65]\i[66]\i[67]\i[68]\i[69]\n70～79 \i[70]\i[71]\i[72]\i[73]\i[74]\i[75]\i[76]\i[77]\i[78]\i[79]
- |■Show Message:80～89 \i[80]\i[81]\i[82]\i[83]\i[84]\i[85]\i[86]\i[87]\i[88]\i[89]\n90～99 \i[90]\i[91]\i[92]\i[93]\i[94]\i[95]\i[96]\i[97]\i[98]\i[99]\n100～109 \i[100]\i[101]\i[102]\i[103]\i[104]\i[105]\i[106]\i[107]\i[108]\i[109]\n110～125 \i[110]\i[111]\i[112]\i[113]\i[114]\i[115]\i[116]\i[117]\i[118]\i[119]\i[120]\i[121]\i[122]\i[123]\i[124]\i[125]
+-◇Case: Choice [6] Show me lots of icons                    ↓
+ |■Show Message:Let's display a bunch of icons!
+ |■Show Message:0-9 \i[0]\i[1]\i[2]\i[3]\i[4]\i[5]\i[6]\i[7]\i[8]\i[9]\n10-19 \i[10]\i[11]\i[12]\i[13]\i[14]\i[15]\i[16]\i[17]\i[18]\i[19]\n20-29 \i[20]\i[21]\i[22]\i[23]\i[24]\i[25]\i[26]\i[27]\i[28]\i[29]\n30-39 \i[30]\i[31]\i[32]\i[33]\i[34]\i[35]\i[36]\i[37]\i[38]\i[39]
+ |■Show Message:40-49 \i[40]\i[41]\i[42]\i[43]\i[44]\i[45]\i[46]\i[47]\i[48]\i[49]\n50-59 \i[50]\i[51]\i[52]\i[53]\i[54]\i[55]\i[56]\i[57]\i[58]\i[59]\n60-69 \i[60]\i[61]\i[62]\i[63]\i[64]\i[65]\i[66]\i[67]\i[68]\i[69]\n70-79 \i[70]\i[71]\i[72]\i[73]\i[74]\i[75]\i[76]\i[77]\i[78]\i[79]
+ |■Show Message:80-89 \i[80]\i[81]\i[82]\i[83]\i[84]\i[85]\i[86]\i[87]\i[88]\i[89]\n90-99 \i[90]\i[91]\i[92]\i[93]\i[94]\i[95]\i[96]\i[97]\i[98]\i[99]\n100-109 \i[100]\i[101]\i[102]\i[103]\i[104]\i[105]\i[106]\i[107]\i[108]\i[109]\n110-125 \i[110]\i[111]\i[112]\i[113]\i[114]\i[115]\i[116]\i[117]\i[118]\i[119]\i[120]\i[121]\i[122]\i[123]\i[124]\i[125]
  |■
--◇Case: Choice [7] フォント変更について教えて                            ↓
- |■Show Message:「WOLF RPGエディターでは、\n　最大4種類のフォントを\n　使い分けることができるのよ！
- |■Show Message:「たとえば今使ってるメイリオ(Meiryo)や、\n　Arial Blackなんてフォントを\n　試しに見比べてみるわね。
- |■Show Message:メイリオ → \font[0]あいうえお 012345 ABCDE\nArial Black → \font[1]　　　　　 012345 ABCDE
- |■Show Message:「とまあ、こんな感じね！\n　パソコンに入ってないフォントは全部\n　Yu Gothic UIになるから気を付けてね！
+-◇Case: Choice [7] Tell me about changing fonts             ↓
+ |■Show Message:WOLF RPG Editor lets you use a maximum of\n4 separate fonts!
+ |■Show Message:Let's compare the current Segoe UI\nwith some other font such as Arial Black.
+ |■Show Message:Segoe UI → \font[0]abcde 012345 ABCDE\nArial Black → \font[1]abcde 012345 ABCDE
+ |■Show Message:That's about it!\nBe aware fonts not on the player's computer will\nend up as Tahoma!
  |■
 -◇Case: Cancel
  |■

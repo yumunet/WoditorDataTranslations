@@ -1,5 +1,5 @@
 EVENT_ID=2
-EVENT_NAME=敵エンカウント処理
+EVENT_NAME=Enemy Encounter
 EVENT_X=21
 EVENT_Y=13
 EVENT_PAGE=1

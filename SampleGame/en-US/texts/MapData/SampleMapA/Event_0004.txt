@@ -1,5 +1,5 @@
 EVENT_ID=4
-EVENT_NAME=俺の畑の人
+EVENT_NAME=Field Guy
 EVENT_X=5
 EVENT_Y=22
 EVENT_PAGE=1
@@ -41,15 +41,15 @@ COMMAND_NUM=5
 WoditorEvCOMMAND_START
 [201][1,0]<0>(-1)()(2,[26],[47,1],[21,0,0])
 [180][1,0]<0>(10)()
-[101][0,1]<0>()("「こらっ、ここはオレの畑だから<\n>　入ってくんな！")
-[101][0,1]<0>()("「ちなみにオレ、「接触範囲拡張」で<\n>　イベントの起動範囲を広げてあるから、<\n>　どこから入ってきても一発で気付くぞ！")
+[101][0,1]<0>()("Hey! This is my field, so don't you walk into it!")
+[101][0,1]<0>()("By the way, I'm usin' <dqrt>Range Extension<dqrt> to make <\n>my event trigger range bigger.<\n>Wherever you come in, I will notice right away!")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ■Move Route: [Skip]  This Event / Face Toward Hero / Wait 1 Frames / Jump - Right:[0] Down:[0]
 ■Wait: 10 Frames
-■Show Message:「こらっ、ここはオレの畑だから\n　入ってくんな！
-■Show Message:「ちなみにオレ、「接触範囲拡張」で\n　イベントの起動範囲を広げてあるから、\n　どこから入ってきても一発で気付くぞ！
+■Show Message:Hey! This is my field, so don't you walk into it!
+■Show Message:By the way, I'm usin' "Range Extension" to make \nmy event trigger range bigger.\nWherever you come in, I will notice right away!
 ■
 [COMMAND_TEXT_END]

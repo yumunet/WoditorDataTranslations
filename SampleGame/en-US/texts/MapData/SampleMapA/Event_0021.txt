@@ -1,5 +1,5 @@
 EVENT_ID=21
-EVENT_NAME=自動移動ゴブリン
+EVENT_NAME=Auto-Move Goblin
 EVENT_X=32
 EVENT_Y=17
 EVENT_PAGE=1
@@ -65,15 +65,15 @@ OPTION_VAL_2=0
 COMMAND_NUM=4
 --
 WoditorEvCOMMAND_START
-[101][0,1]<0>()("「ゴブ！　オレっちは『\c[3]自動移動[スマート]\c[0]』で<\n> \c[3]『リンゴの前』と『タルの前』をゴール地点にして<\n>　移動してる\c[0]から、オマエに通行の邪魔されても<\n>　ちゃんとよけて移動できるゴブ！")
-[101][0,1]<0>()("「でも『1×1マス分の隙間』が空いてないと<\n>　自動移動できないから、\c[2]カウンターの前の<\n>　ハンパなところ\c[0]には立たないで欲しいゴブ！")
-[101][0,1]<0>()("「せまい道だと、<\n>　意外と自動移動できないこともあるから、<\n>　『自動移動』を使うときは気をつけるゴブよ！")
+[101][0,1]<0>()("Gobu! I'm usin' \c[3]<dqrt>Auto-Move [Smart]<dqrt>\c[0] to \c[3]go back<\n>and forth between the apples and the barrel!\c[0]<\n>So even if ya get in my way, I can still dodge ya just<\n>fine, gobu!")
+[101][0,1]<0>()("But I can't move unless there's a full 1x1 tile open, so<\n>don't go standin' in \c[2]that halfway spot in front of<\n>the counter\c[0], gobu!")
+[101][0,1]<0>()("On narrow paths, Auto-Move don't always work, so<\n>keep that in mind when usin' it, gobu!")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:「ゴブ！　オレっちは『\c[3]自動移動[スマート]\c[0]』で\n \c[3]『リンゴの前』と『タルの前』をゴール地点にして\n　移動してる\c[0]から、オマエに通行の邪魔されても\n　ちゃんとよけて移動できるゴブ！
-■Show Message:「でも『1×1マス分の隙間』が空いてないと\n　自動移動できないから、\c[2]カウンターの前の\n　ハンパなところ\c[0]には立たないで欲しいゴブ！
-■Show Message:「せまい道だと、\n　意外と自動移動できないこともあるから、\n　『自動移動』を使うときは気をつけるゴブよ！
+■Show Message:Gobu! I'm usin' \c[3]"Auto-Move [Smart]"\c[0] to \c[3]go back\nand forth between the apples and the barrel!\c[0]\nSo even if ya get in my way, I can still dodge ya just\nfine, gobu!
+■Show Message:But I can't move unless there's a full 1x1 tile open, so\ndon't go standin' in \c[2]that halfway spot in front of\nthe counter\c[0], gobu!
+■Show Message:On narrow paths, Auto-Move don't always work, so\nkeep that in mind when usin' it, gobu!
 ■
 [COMMAND_TEXT_END]

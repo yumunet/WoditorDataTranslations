@@ -1,5 +1,5 @@
 EVENT_ID=5
-EVENT_NAME=目的教える女の人
+EVENT_NAME=Goal Lady
 EVENT_X=10
 EVENT_Y=25
 EVENT_PAGE=1
@@ -39,15 +39,15 @@ OPTION_VAL_2=0
 COMMAND_NUM=4
 --
 WoditorEvCOMMAND_START
-[101][0,1]<0>()("「キャンセルキーを押すと、メニューが出せるわ！<\n>　見てみてね！<\n><\n>　\f[10]※キャンセルキーは「ESC」「BS」「X」キーです。")
-[101][0,1]<0>()("「それはそうと、ここであなたがやることは<\n>　レベルを上げて仲間を増やして、<\n> 『WOLF RPGエディター』をゲットすることよ！")
-[101][0,1]<0>()("「『WOLF RPGエディター』は<\n>　ダンジョンの中にあるらしいから、<\n>　がんばってね！")
+[101][0,1]<0>()("If you press Cancel, the menu will appear!<\n>Take a look at it!<\n><\n>\f[10]* The Cancel button is Esc, Backspace, or X.")
+[101][0,1]<0>()("Also, your goal here is to level up, gain more party<\n>members, and acquire the WOLF RPG Editor!")
+[101][0,1]<0>()("The WOLF RPG Editor seems to be in the Dungeon.<\n>Good luck!")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:「キャンセルキーを押すと、メニューが出せるわ！\n　見てみてね！\n\n　\f[10]※キャンセルキーは「ESC」「BS」「X」キーです。
-■Show Message:「それはそうと、ここであなたがやることは\n　レベルを上げて仲間を増やして、\n 『WOLF RPGエディター』をゲットすることよ！
-■Show Message:「『WOLF RPGエディター』は\n　ダンジョンの中にあるらしいから、\n　がんばってね！
+■Show Message:If you press Cancel, the menu will appear!\nTake a look at it!\n\n\f[10]* The Cancel button is Esc, Backspace, or X.
+■Show Message:Also, your goal here is to level up, gain more party\nmembers, and acquire the WOLF RPG Editor!
+■Show Message:The WOLF RPG Editor seems to be in the Dungeon.\nGood luck!
 ■
 [COMMAND_TEXT_END]

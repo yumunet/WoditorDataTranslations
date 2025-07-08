@@ -1,5 +1,5 @@
 EVENT_ID=5
-EVENT_NAME=回復所
+EVENT_NAME=Recovery Nun
 EVENT_X=21
 EVENT_Y=13
 EVENT_PAGE=1
@@ -39,10 +39,10 @@ OPTION_VAL_2=0
 COMMAND_NUM=12
 --
 WoditorEvCOMMAND_START
-[101][0,1]<0>()("「こんにちは……回復なさいますか？")
-[102][1,2]<0>(50)("完全回復する","何もしない")
+[101][0,1]<0>()("Good day... Will you recover?")
+[102][1,2]<0>(50)("Full recovery","Do nothing")
 [401][1,0]<0>(2)()
-[101][0,1]<1>()("「では、完全回復です……<\n>　ピロリロリロ～……。")
+[101][0,1]<1>()("It's a full recovery.<\n>Beedle-deedle-dee...")
 [151][2,0]<1>(26658966,20)()
 [210][5,0]<1>(500004,3,7,-1,15)()
 [140][6,1]<1>(33554464,0,0,0,100,100)("SE/Effect_Healing1_panop.ogg")
@@ -54,15 +54,15 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:「こんにちは……回復なさいますか？
-■Show Choice:/ [1] 完全回復する / [2] 何もしない 
--◇Case: Choice [1] 完全回復する                                   ↓
- |■Show Message:「では、完全回復です……\n　ピロリロリロ～……。
+■Show Message:Good day... Will you recover?
+■Show Choice:/ [1] Full recovery / [2] Do nothing 
+-◇Case: Choice [1] Full recovery                            ↓
+ |■Show Message:It's a full recovery.\nBeedle-deedle-dee...
  |■Adjust Color: (Flash) R150 G200 B150 / 20 Frames
  |■Call Event: Common 4: [ ○回復・ダメージ処理 ] / 7:完全回復 / -1:パーティ全員 / 15
  |■Sound: SE File[SE/Effect_Healing1_panop.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
  |■
--◇Case: Choice [2] 何もしない                                    ↓
+-◇Case: Choice [2] Do nothing                               ↓
  |■
 ◇End◇
 ■

@@ -1,5 +1,5 @@
 EVENT_ID=13
-EVENT_NAME=街の出口（エンド）
+EVENT_NAME=Town Exit (End)
 EVENT_X=15
 EVENT_Y=29
 EVENT_PAGE=1
@@ -39,46 +39,46 @@ OPTION_VAL_2=0
 COMMAND_NUM=56
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("アイテム「WOLF RPGエディター」を持っているかどうかチェック")
+[103][0,1]<0>()("Check whether the player has the item <dqrt>WOLF RPG Editor.<dqrt>")
 [210][4,0]<0>(500017,16777217,20,1100001)()
-[103][0,1]<0>()("コモン17の判定結果はV9-0に入っています。なければ0に、あれば1以上になります")
+[103][0,1]<0>()(" ")
 [111][7,0]<0>(2,1100001,0,2,1100001,1,1)()
 [401][1,0]<0>(1)()
-[101][0,1]<1>()("帰るにはまだちょっと早い。")
+[101][0,1]<1>()("Wolfarl<\n>  It's a little too soon to leave.")
 [0][0,0]<1>()()
 [401][1,0]<0>(2)()
-[101][0,1]<1>()("夕一<\n>「ねーねー、帰ったらそのWOLF RPGエディターで<\n>　何か作ってみようよ！")
-[101][0,1]<1>()("P･G･エディ<\n>「そうだな！そろそろ帰ろうぜ！")
-[102][1,2]<1>(50)("帰る（エンド）","まだ帰らない")
+[101][0,1]<1>()("Yuichi<\n>  Hey, when we get home, let's make<\n>  something with that WOLF RPG Editor!")
+[101][0,1]<1>()("P. G. Edy<\n>  Yeah! Let's get going soon!")
+[102][1,2]<1>(50)("Leave (Ending)","Don't leave yet")
 [401][1,0]<1>(2)()
-[101][0,1]<2>()("ウルファール<\n>「画面の前のあなたも、<\n>　ここまで遊んでくれて<\n>　どうもありがとう！")
-[101][0,1]<2>()("ウルファール<\n>「これをプレイしてみて、ちょっとだけでも<\n>　WOLF RPGエディターをいじってみようって<\n>　思ってくれたらうれしいな！")
-[101][0,1]<2>()("ウルファール<\n>「それでは、またお会いしましょう！<\n>　楽しいゲーム開発ライフを送ってくださいね！")
+[101][0,1]<2>()("Wolfarl<\n>  And thank you in front of the screen<\n>  for playing, too!")
+[101][0,1]<2>()("Wolfarl<\n>  I'll be glad if playing this made you want<\n>  to tinker with WOLF RPG Editor a little!")
+[101][0,1]<2>()("Wolfarl<\n>  Well, I hope we meet again!<\n>  Have a fun time making games!")
 [140][4,0]<2>(16776960,10,0,0)()
 [151][2,0]<2>(3284510,40)()
 [180][1,0]<2>(30)()
-[103][0,1]<2>()("ここからスタッフロール開始")
+[103][0,1]<2>()("Start staff roll here.")
 [140][4,0]<2>(256,10,0,0)()
-[150][11,1]<2>(4128,1,0,1,1,1,255,160,1020,100,0)("<C>サンプルゲーム　スタッフ<\n>　<\n>　<\n>企画・制作<\n>\m[18]\c[3]SmokingWOLF\c[0]<\n>\m[50]　<\n>マップチップ<\n>\m[18]\c[3]ぴぽ\c[0]<\n>\m[50]　<\n>キャラグラフィック<\n>\m[18]\c[3]すう\c[0]<\n>\c[3]pochi\c[0]<\n>\c[3]ウディタ基本素材企画\c[0]<\n>\m[50]　<\n>敵グラフィック<\n>\m[18]\c[3]ＧＤ<\n>\m[18]　<\n>\m[18]　\c[0]<\n>\m[50]　<\n>エフェクト<\n>\m[18]\c[3]panop\c[0]<\n>\m[18]\c[3]Akira\c[0]<\n>\m[50]　<\n>アイコン素材<\n>\m[18]\c[3]枯れ草\c[0]<\n>\m[50]<\n>効果音<\n>\m[18]\c[3]panop\c[0]<\n>\m[18]\c[3]小森平\c[0]<\n>\m[18]\c[3]Koya\c[0]<\n>\m[18]\c[3]いそおき\c[0]<\n>\m[18]\c[3]くくり\c[0]<\n>\m[50]<\n>BGM<\n>\m[18]\c[3]タクミ\c[0]<\n>\m[18]\c[3]ユノ\c[0]<\n>\m[18]\c[3]鏡読み\c[0]<\n>\m[18]\c[3]Koya\c[0]<\n>\m[18]\c[3]yaeko\c[0]<\n>\m[18]\c[3]黒うさぎ\c[0]<\n>\m[18]\c[3]土鳩\c[0]<\n>\m[18]\c[3]momi\c[0]<\n><\n>\m[50]<\n>スペシャルサンクス<\n>\m[18]\c[3]デバッグにご協力くださった<\n>全ての方々\c[0]<\n>　<\n>　<\n> \c[3]プレイしてくださったあなた\c[0]<\n><\n><\n><\n><\n><\n><\n>\f[12]Thank you for Playing !<\n><\n><\n>　<\n><\n><\n><\n><\n><\n><\n>\f[18]お　し　ま　い")
+[150][11,1]<2>(20512,1,0,1,1,1,255,160,295,100,0)("<C>Sample Game - English Translation Groups<\n><\n>Version 2.24 English Translation<\n>\m[18]\c[3]Velella Himmel(vgperson)\c[0]<\n>\m[18]\c[3]Khang Ee(pke1029)\c[0]<\n><\n>Editing<\n>\m[18]\c[3]Jeffrey Casey(Widderune)\c[0]<\n>\m[32]<\n>Latest English Translation<\n>\m[18]\c[3]Yumu\c[0]<\n><\n><\n>\m[50]<\n>Original Sample Game Staff<\n><\n>Planning/Creation<\n>\m[18]\c[3]SmokingWOLF\c[0]<\n>\m[32]<\n>Map Tiles<\n>\m[18]\c[3]Pipo\c[0]<\n>\m[32]<\n>Character Images<\n>\m[18]\c[3]Suu\c[0]<\n>\c[3]pochi\c[0]<\n>\c[3]WOLF Basic Assets Project\c[0]<\n>\m[32]<\n>Enemy Images<\n>\m[18]\c[3]GD\c[0]<\n>\m[32]<\n>Effects<\n>\m[18]\c[3]panop\c[0]<\n>\m[18]\c[3]Akira\c[0]<\n>\m[32]<\n>Icons<\n>\m[18]\c[3]Karekusa\c[0]<\n>\m[32]<\n>Sound Effects<\n>\m[18]\c[3]panop\c[0]<\n>\m[18]\c[3]Taira Komori\c[0]<\n>\m[18]\c[3]Koya\c[0]<\n>\m[18]\c[3]Isooki\c[0]<\n>\m[18]\c[3]Kukuri\c[0]<\n>\m[32]<\n>BGM<\n>\m[18]\c[3]Takumi\c[0]<\n>\m[18]\c[3]Yuno\c[0]<\n>\m[18]\c[3]Kagamiyomi\c[0]<\n>\m[18]\c[3]Koya\c[0]<\n>\m[18]\c[3]yaeko\c[0]<\n>\m[18]\c[3]Kuro Usagi\c[0]<\n>\m[18]\c[3]Dobato\c[0]<\n>\m[18]\c[3]momi\c[0]<\n><\n>\m[50]<\n>Special Thanks<\n>\m[18]\c[3]Everyone who assisted<\n>in debugging\c[0]<\n><\n><\n>\c[3]And you...\c[0]<\n><\n><\n><\n><\n><\n><\n>\f[12]Thank you for playing!<\n><\n><\n><\n><\n><\n><\n><\n><\n><\n>\f[18]THE END")
 [121][4,0]<2>(1100000,0,0,0)()
 [170][0,0]<2>()()
 [180][1,0]<3>(4)()
-[103][0,1]<3>()("4フレームごとに1ピクセルずつピクチャが動いていく処理")
+[103][0,1]<3>()("Move the picture 1 pixel every four frames.")
 [123][2,0]<3>(1100001,48)()
 [111][7,0]<3>(2,1100001,0,2,1100001,10,1)()
 [401][1,0]<3>(1)()
-[103][0,1]<4>()("決定もキャンセルも押されてないとき（キー入力が0のとき）")
+[103][0,1]<4>()("When Confirm and Cancel are not pressed (key input is 0).")
 [121][4,0]<4>(1100000,1,0,256)()
 [150][11,0]<4>(65537,1,4,0,0,1,255,0,-1,100,0)()
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
-[103][0,1]<4>()("決定キー（１０）かキャンセルキー（１１）押されてたら高速でピクチャを動かす")
+[103][0,1]<4>()("When Confirm (10) or Cancel (11) is pressed, move the picture quickly.")
 [121][4,0]<4>(1100000,16,0,256)()
 [150][11,0]<4>(65537,1,4,0,0,1,255,0,-16,100,0)()
 [0][0,0]<4>()()
 [499][0,0]<3>()()
-[103][0,1]<3>()("1610ピクセル動いたら終了（スタッフロールの長さ分）")
-[111][4,0]<3>(1,1100000,1640,1)()
+[103][0,1]<3>()("After moving 1749 pixels (the length of the staff roll), end.")
+[111][4,0]<3>(1,1100000,1749,1)()
 [401][1,0]<3>(1)()
 [171][0,0]<4>()()
 [0][0,0]<4>()()
@@ -98,47 +98,47 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ アイテム「WOLF RPGエディター」を持っているかどうかチェック
-■Call Event: このEvのSelf1 = Common 17: [ ▲アイテム所持数取得 ] / 20:WOLF RPGエディター
-▼ コモン17の判定結果はV9-0に入っています。なければ0に、あれば1以上になります
-■Condition (Number):   [1] このEvのSelf1 ==  0  /  [2] このEvのSelf1 >=  1  
--◇Condition:  [1]  [ このEvのSelf1 == 0   ] Case↓
- |■Show Message:帰るにはまだちょっと早い。
+▼ Check whether the player has the item "WOLF RPG Editor."
+■Call Event: This Ev Self1 = Common 17: [ ▲アイテム所持数取得 ] / 20:WOLF RPGエディター
+▼  
+■Condition (Number):   [1] This Ev Self1 ==  0  /  [2] This Ev Self1 >=  1  
+-◇Condition:  [1]  [ This Ev Self1 == 0   ] Case↓
+ |■Show Message:Wolfarl\n  It's a little too soon to leave.
  |■
--◇Condition:  [2]  [ このEvのSelf1 >= 1   ] Case↓
- |■Show Message:夕一\n「ねーねー、帰ったらそのWOLF RPGエディターで\n　何か作ってみようよ！
- |■Show Message:P･G･エディ\n「そうだな！そろそろ帰ろうぜ！
- |■Show Choice:/ [1] 帰る（エンド） / [2] まだ帰らない 
- |-◇Case: Choice [1] 帰る（エンド）                                  ↓
- | |■Show Message:ウルファール\n「画面の前のあなたも、\n　ここまで遊んでくれて\n　どうもありがとう！
- | |■Show Message:ウルファール\n「これをプレイしてみて、ちょっとだけでも\n　WOLF RPGエディターをいじってみようって\n　思ってくれたらうれしいな！
- | |■Show Message:ウルファール\n「それでは、またお会いしましょう！\n　楽しいゲーム開発ライフを送ってくださいね！
+-◇Condition:  [2]  [ This Ev Self1 >= 1   ] Case↓
+ |■Show Message:Yuichi\n  Hey, when we get home, let's make\n  something with that WOLF RPG Editor!
+ |■Show Message:P. G. Edy\n  Yeah! Let's get going soon!
+ |■Show Choice:/ [1] Leave (Ending) / [2] Don't leave yet 
+ |-◇Case: Choice [1] Leave (Ending)                           ↓
+ | |■Show Message:Wolfarl\n  And thank you in front of the screen\n  for playing, too!
+ | |■Show Message:Wolfarl\n  I'll be glad if playing this made you want\n  to tinker with WOLF RPG Editor a little!
+ | |■Show Message:Wolfarl\n  Well, I hope we meet again!\n  Have a fun time making games!
  | |■Sound: BGM Stop  / Fade Time: 10 Frames
  | |■Adjust Color:  R30 G30 B50 / 40 Frames
  | |■Wait: 30 Frames
- | |▼ ここからスタッフロール開始
+ | |▼ Start staff roll here.
  | |■Sound: BGM1[スタッフロール] Play / Fade Time: 10 Frames
- | |■Picture Show: 1 [Center] String[<C>サンプルゲーム　スタッフ\n] X:160 Y:1020 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- | |■Set Variable: このEvのSelf0 = 0 + 0 
+ | |■Picture Show: 1 [Top-Center] String[<C>Sample Game -] X:160 Y:295 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | |■Set Variable: This Ev Self0 = 0 + 0 
  | |■Loop Start
  | | |■Wait: 4 Frames
- | | |▼ 4フレームごとに1ピクセルずつピクチャが動いていく処理
+ | | |▼ Move the picture 1 pixel every four frames.
  | | |■Key Input: This Event's Self1 /  [Normal Input]  Confirm(10) Cancel(11)
- | | |■Condition (Number):   [1] このEvのSelf1 ==  0  /  [2] このEvのSelf1 >=  10  
- | | |-◇Condition:  [1]  [ このEvのSelf1 == 0   ] Case↓
- | | | |▼ 決定もキャンセルも押されてないとき（キー入力が0のとき）
- | | | |■Set Variable: このEvのSelf0 += 1 + 0 
+ | | |■Condition (Number):   [1] This Ev Self1 ==  0  /  [2] This Ev Self1 >=  10  
+ | | |-◇Condition:  [1]  [ This Ev Self1 == 0   ] Case↓
+ | | | |▼ When Confirm and Cancel are not pressed (key input is 0).
+ | | | |■Set Variable: This Ev Self0 += 1 + 0 
  | | | |■Picture Move: 1  Relative X:0 Y:-1 / 4(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | | |■
- | | |-◇Condition:  [2]  [ このEvのSelf1 >= 10   ] Case↓
- | | | |▼ 決定キー（１０）かキャンセルキー（１１）押されてたら高速でピクチャを動かす
- | | | |■Set Variable: このEvのSelf0 += 16 + 0 
+ | | |-◇Condition:  [2]  [ This Ev Self1 >= 10   ] Case↓
+ | | | |▼ When Confirm (10) or Cancel (11) is pressed, move the picture quickly.
+ | | | |■Set Variable: This Ev Self0 += 16 + 0 
  | | | |■Picture Move: 1  Relative X:0 Y:-16 / 4(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | | |■
  | | |◇End◇
- | | |▼ 1610ピクセル動いたら終了（スタッフロールの長さ分）
- | | |■Condition (Number):   [1] このEvのSelf0 >=  1640  
- | | |-◇Condition:  [1]  [ このEvのSelf0 >= 1640   ] Case↓
+ | | |▼ After moving 1749 pixels (the length of the staff roll), end.
+ | | |■Condition (Number):   [1] This Ev Self0 >=  1749  
+ | | |-◇Condition:  [1]  [ This Ev Self0 >= 1749   ] Case↓
  | | | |■Break Loop
  | | | |■
  | | |◇End◇
@@ -148,7 +148,7 @@ WoditorEvCOMMAND_END
  | |■Wait: 32 Frames
  | |■Go to Title
  | |■
- |-◇Case: Choice [2] まだ帰らない                                   ↓
+ |-◇Case: Choice [2] Don't leave yet                          ↓
  | |■
  |◇End◇
  |■

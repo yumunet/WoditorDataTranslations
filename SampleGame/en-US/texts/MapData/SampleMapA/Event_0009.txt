@@ -1,5 +1,5 @@
 EVENT_ID=9
-EVENT_NAME=コック(パン屋)
+EVENT_NAME=Cook (Bakery)
 EVENT_X=18
 EVENT_Y=10
 EVENT_PAGE=1
@@ -40,39 +40,39 @@ COMMAND_NUM=42
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――")
-[103][0,1]<0>()("このイベントは、通常変数V0 が1になっていないと")
-[103][0,1]<0>()("表示されません（左の起動条件で設定されています）。")
+[103][0,1]<0>()("This event will not be displayed unless Normal Variable V0 is 1.")
+[103][0,1]<0>()("(This is configured in <dqrt>Conditions<dqrt> on the left.)")
 [103][0,1]<0>()("―――――――――――――――――――――――――――")
-[101][0,1]<0>()("「やあ、パンを焼こうと思ってるんだけど、<\n>　ちょっと食べていかないかい？")
-[103][0,1]<0>()("まだ新コマンドを覚えてなかったら、文字列変数0番に文字を入れる。")
-[103][0,1]<0>()("もし覚えてたら選択肢を空のままにする（その選択肢が出なくなる）")
+[101][0,1]<0>()("Hey, I'm thinking of baking some bread.<\n>You want to have some?")
+[103][0,1]<0>()("If the player hasn't yet learned the new command, set the text to String Variable 0.")
+[103][0,1]<0>()("If the player has learned it, leave the choice blank (that choice won't appear).")
 [210][6,0]<0>(500026,16777219,12,-1,12,1100001)()
 [111][7,0]<0>(2,1100001,0,2,1100001,1,1)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("全体攻撃を覚えてない（0の場合）なら、")
-[103][0,1]<1>()("「ここで食べます」の選択肢を表示")
-[122][2,1]<1>(3000000,0)("ここで食べます（技を習得）")
+[103][0,1]<1>()("If the player hasn't learned Attack All (if it's 0),")
+[103][0,1]<1>()("display the “Eat here” choice.")
+[122][3,1]<1>(3000000,0,0)("Eat here (Lean a skill)")
 [0][0,0]<1>()()
 [401][1,0]<0>(2)()
-[103][0,1]<1>()("覚えている(1以上）なら表示しない")
-[103][0,1]<1>()("（文字列を空っぽにすると選択肢に表示されなくなります）")
+[103][0,1]<1>()("If the player has learned it (1 or more), don't display the choice.")
+[103][0,1]<1>()("(If the string is blank, it won't be displayed in the choices.)")
 [122][2,1]<1>(3000000,0)("")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
-[103][0,1]<0>()("選択肢表示")
-[102][1,2]<0>(2)("\s[0]","お持ち帰りでお願いします")
+[103][0,1]<0>()("Display choices.")
+[102][1,2]<0>(2)("\s[0]","I'll have it to go")
 [401][1,0]<0>(2)()
-[103][0,1]<1>()("「ここで食べます」の場合")
-[101][0,1]<1>()("「よーし、ちょっと待っててくれよ！")
-[101][0,1]<1>()("ジュッ、シューゥゥゥ、ジュッジュッ")
-[101][0,1]<1>()("「はい、一丁あがり！<\n>　これを食べれば新しいコマンドが使えるよ！")
+[103][0,1]<1>()("When <dqrt>Eat here<dqrt> is selected.")
+[101][0,1]<1>()("Okay, just gimme a sec!")
+[101][0,1]<1>()("*shff, shff, shff-shff*")
+[101][0,1]<1>()("Here's your order!<\n>Eat this, and you can use a new command!")
 [140][6,1]<1>(33554464,0,0,0,100,100)("SE/System_Get2_wolf.ogg")
-[101][0,1]<1>()("ウルファールは「全体攻撃」を覚えた！<\n>HPを5使って敵全体に攻撃するコマンドだ！")
-[103][0,1]<1>()("戦闘コマンドを習得")
+[101][0,1]<1>()("* Wolfarl learned Attack All!<\n>  This command uses 5 HP to attack all enemies!")
+[103][0,1]<1>()("Learn battle command.")
 [210][5,0]<1>(500013,3,12,-10,12)()
 [0][0,0]<1>()()
 [401][1,0]<0>(3)()
-[103][0,1]<1>()("お店の処理")
+[103][0,1]<1>()("Shop processing.")
 [210][2,0]<1>(500033,0)()
 [210][6,0]<1>(500034,4,1,17,-1,-1)()
 [210][3,0]<1>(500035,1,2)()
@@ -85,39 +85,39 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――
-▼ このイベントは、通常変数V0 が1になっていないと
-▼ 表示されません（左の起動条件で設定されています）。
+▼ This event will not be displayed unless Normal Variable V0 is 1.
+▼ (This is configured in "Conditions" on the left.)
 ▼ ―――――――――――――――――――――――――――
-■Show Message:「やあ、パンを焼こうと思ってるんだけど、\n　ちょっと食べていかないかい？
-▼ まだ新コマンドを覚えてなかったら、文字列変数0番に文字を入れる。
-▼ もし覚えてたら選択肢を空のままにする（その選択肢が出なくなる）
-■Call Event: このEvのSelf1 = Common 26: [ ▲戦闘コマンド有無の判定 ] / 12:ウルファール / -1:どこかに / 12:全体攻撃
-■Condition (Number):   [1] このEvのSelf1 ==  0  /  [2] このEvのSelf1 >=  1  
--◇Condition:  [1]  [ このEvのSelf1 == 0   ] Case↓
- |▼ 全体攻撃を覚えてない（0の場合）なら、
- |▼ 「ここで食べます」の選択肢を表示
- |■Set String: S0[[サンプル]一時文字列] = "ここで食べます（技を習得）"
+■Show Message:Hey, I'm thinking of baking some bread.\nYou want to have some?
+▼ If the player hasn't yet learned the new command, set the text to String Variable 0.
+▼ If the player has learned it, leave the choice blank (that choice won't appear).
+■Call Event: This Ev Self1 = Common 26: [ ▲戦闘コマンド有無の判定 ] / 12:ウルファール / -1:どこかに / 12:全体攻撃
+■Condition (Number):   [1] This Ev Self1 ==  0  /  [2] This Ev Self1 >=  1  
+-◇Condition:  [1]  [ This Ev Self1 == 0   ] Case↓
+ |▼ If the player hasn't learned Attack All (if it's 0),
+ |▼ display the “Eat here” choice.
+ |■Set String: S0[[サンプル]一時文字列] = "Eat here (Lean a skill)"
  |■
--◇Condition:  [2]  [ このEvのSelf1 >= 1   ] Case↓
- |▼ 覚えている(1以上）なら表示しない
- |▼ （文字列を空っぽにすると選択肢に表示されなくなります）
+-◇Condition:  [2]  [ This Ev Self1 >= 1   ] Case↓
+ |▼ If the player has learned it (1 or more), don't display the choice.
+ |▼ (If the string is blank, it won't be displayed in the choices.)
  |■Set String: S0[[サンプル]一時文字列] = ""
  |■
 ◇End◇
-▼ 選択肢表示
-■Show Choice:/ [1] \s[0] / [2] お持ち帰りでお願いします 
+▼ Display choices.
+■Show Choice:/ [1] \s[0] / [2] I'll have it to go 
 -◇Case: Choice [1] \s[0]                                    ↓
- |▼ 「ここで食べます」の場合
- |■Show Message:「よーし、ちょっと待っててくれよ！
- |■Show Message:ジュッ、シューゥゥゥ、ジュッジュッ
- |■Show Message:「はい、一丁あがり！\n　これを食べれば新しいコマンドが使えるよ！
+ |▼ When "Eat here" is selected.
+ |■Show Message:Okay, just gimme a sec!
+ |■Show Message:*shff, shff, shff-shff*
+ |■Show Message:Here's your order!\nEat this, and you can use a new command!
  |■Sound: SE File[SE/System_Get2_wolf.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
- |■Show Message:ウルファールは「全体攻撃」を覚えた！\nHPを5使って敵全体に攻撃するコマンドだ！
- |▼ 戦闘コマンドを習得
+ |■Show Message:* Wolfarl learned Attack All!\n  This command uses 5 HP to attack all enemies!
+ |▼ Learn battle command.
  |■Call Event: Common 13: [ ○戦闘コマンドの変更 ] / 12:ウルファール / -10:空き欄（前方から） / 12:全体攻撃
  |■
--◇Case: Choice [2] お持ち帰りでお願いします                             ↓
- |▼ お店の処理
+-◇Case: Choice [2] I'll have it to go                       ↓
+ |▼ Shop processing.
  |■Call Event: Common 33: [ 【1】 お店 初期化 ]
  |■Call Event: Common 34: [ 【2】 お店 商品の追加 ] / 1:ｱｲﾃﾑ[A] / 17:おいしいパン / -1:<なし> / -1:<なし>
  |■Call Event: Common 35: [ 【3】 お店処理 実行 ] / 2:買いのみ

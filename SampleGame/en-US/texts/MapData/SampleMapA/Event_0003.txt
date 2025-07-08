@@ -1,5 +1,5 @@
 EVENT_ID=3
-EVENT_NAME=立て札
+EVENT_NAME=Sign
 EVENT_X=35
 EVENT_Y=12
 EVENT_PAGE=1
@@ -39,11 +39,11 @@ OPTION_VAL_2=0
 COMMAND_NUM=2
 --
 WoditorEvCOMMAND_START
-[101][0,1]<0>()("『ここがダンジョン入口です』<\n>と書いてある。")
+[101][0,1]<0>()("The sign reads...<\n>  <dqrt>This is the Dungeon Entrance.<dqrt>")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:『ここがダンジョン入口です』\nと書いてある。
+■Show Message:The sign reads...\n  "This is the Dungeon Entrance."
 ■
 [COMMAND_TEXT_END]

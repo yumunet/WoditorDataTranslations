@@ -1,5 +1,5 @@
 EVENT_ID=14
-EVENT_NAME=エフェクト女
+EVENT_NAME=Effect Lady
 EVENT_X=19
 EVENT_Y=23
 EVENT_PAGE=1
@@ -39,8 +39,8 @@ OPTION_VAL_2=0
 COMMAND_NUM=22
 --
 WoditorEvCOMMAND_START
-[101][0,1]<0>()("「こんにちは！<\n>　何かやってみましょうか？")
-[102][1,5]<0>(5)("光ってみて","震えてみて","ズームしてみて","ズーム解除して","シェイクして")
+[101][0,1]<0>()("Good day! <\n>What do you want to try?")
+[102][1,5]<0>(5)("Flash","Shake","Zoom in","Unzoom","Shake the screen")
 [401][1,0]<0>(2)()
 [180][1,0]<1>(5)()
 [290][7,0]<1>(1,40,-1,0,100,100,100)()
@@ -64,22 +64,22 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:「こんにちは！\n　何かやってみましょうか？
-■Show Choice:/ [1] 光ってみて / [2] 震えてみて / [3] ズームしてみて / [4] ズーム解除して / [5] シェイクして 
--◇Case: Choice [1] 光ってみて                                    ↓
+■Show Message:Good day! \nWhat do you want to try?
+■Show Choice:/ [1] Flash / [2] Shake / [3] Zoom in / [4] Unzoom / [5] Shake the screen 
+-◇Case: Choice [1] Flash                                    ↓
  |■Wait: 5 Frames
  |■Effect Character: This Event[Flash] R100/G100/B100  [40]Frames
  |■
--◇Case: Choice [2] 震えてみて                                    ↓
+-◇Case: Choice [2] Shake                                    ↓
  |■Effect Character: This Event[Shake] Shake X 2 / Shake Y 0 / 100 Times  [1]Frames
  |■
--◇Case: Choice [3] ズームしてみて                                  ↓
+-◇Case: Choice [3] Zoom in                                  ↓
  |■Effect Map: [Zoom] Center X 160 / Center Y 120 / 200%  [10]Frames
  |■
--◇Case: Choice [4] ズーム解除して                                  ↓
+-◇Case: Choice [4] Unzoom                                   ↓
  |■Effect Map: [Zoom] Center X 160 / Center Y 120 / 100%  [10]Frames
  |■
--◇Case: Choice [5] シェイクして                                   ↓
+-◇Case: Choice [5] Shake the screen                         ↓
  |■Effect Map: [Shake] Power 5 / Speed 5 / Vertical Shake  [30]Frames
  |■
 -◇Case: Cancel
