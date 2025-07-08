@@ -44,14 +44,14 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()(" ")
 [111][7,0]<0>(2,1100001,0,2,1100001,1,1)()
 [401][1,0]<0>(1)()
-[101][0,1]<1>()("Wolfarl<\n>  It's a little too soon to leave.")
+[101][0,1]<1>()("@4<\n>Wolfarl<\n>  It's a little too soon to leave.")
 [0][0,0]<1>()()
 [401][1,0]<0>(2)()
-[101][0,1]<1>()("Yuichi<\n>  Hey, when we get home, let's make<\n>  something with that WOLF RPG Editor!")
-[101][0,1]<1>()("P. G. Edy<\n>  Yeah! Let's get going soon!")
+[101][0,1]<1>()("@3<\n>Yuichi<\n>  Hey, when we get home, let's make<\n>  something with that WOLF RPG Editor!")
+[101][0,1]<1>()("@2<\n>P. G. Edy<\n>  Yeah! Let's get going soon!")
 [102][1,2]<1>(50)("Leave (Ending)","Don't leave yet")
 [401][1,0]<1>(2)()
-[101][0,1]<2>()("Wolfarl<\n>  And thank you in front of the screen<\n>  for playing, too!")
+[101][0,1]<2>()("@4<\n>Wolfarl<\n>  And thank you in front of the screen<\n>  for playing, too!")
 [101][0,1]<2>()("Wolfarl<\n>  I'll be glad if playing this made you want<\n>  to tinker with WOLF RPG Editor a little!")
 [101][0,1]<2>()("Wolfarl<\n>  Well, I hope we meet again!<\n>  Have a fun time making games!")
 [140][4,0]<2>(16776960,10,0,0)()
@@ -103,14 +103,14 @@ WoditorEvCOMMAND_END
 ▼  
 ■Condition (Number):   [1] This Ev Self1 ==  0  /  [2] This Ev Self1 >=  1  
 -◇Condition:  [1]  [ This Ev Self1 == 0   ] Case↓
- |■Show Message:Wolfarl\n  It's a little too soon to leave.
+ |■Show Message:@4\nWolfarl\n  It's a little too soon to leave.
  |■
 -◇Condition:  [2]  [ This Ev Self1 >= 1   ] Case↓
- |■Show Message:Yuichi\n  Hey, when we get home, let's make\n  something with that WOLF RPG Editor!
- |■Show Message:P. G. Edy\n  Yeah! Let's get going soon!
+ |■Show Message:@3\nYuichi\n  Hey, when we get home, let's make\n  something with that WOLF RPG Editor!
+ |■Show Message:@2\nP. G. Edy\n  Yeah! Let's get going soon!
  |■Show Choice:/ [1] Leave (Ending) / [2] Don't leave yet 
  |-◇Case: Choice [1] Leave (Ending)                           ↓
- | |■Show Message:Wolfarl\n  And thank you in front of the screen\n  for playing, too!
+ | |■Show Message:@4\nWolfarl\n  And thank you in front of the screen\n  for playing, too!
  | |■Show Message:Wolfarl\n  I'll be glad if playing this made you want\n  to tinker with WOLF RPG Editor a little!
  | |■Show Message:Wolfarl\n  Well, I hope we meet again!\n  Have a fun time making games!
  | |■Sound: BGM Stop  / Fade Time: 10 Frames
