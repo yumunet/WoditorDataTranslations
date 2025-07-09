@@ -1,0 +1,249 @@
+===================================
+    WOLF RPG Editor Sample Game
+               Manual
+
+            05/24/2025
+===================================
+
+――――――――――――――――――――――――――――――――――
+
+Introduction
+
+  This is an RPG made with WOLF RPG Editor as a sample game.
+  You can start the game by running "Game.exe."
+
+―――――――――――――――――――――――――――――――――――――――――
+
+Basic Controls
+
+  You can use the following keys.
+
+  [Z] [Enter] [Space] ...
+    The Confirm Button. Used to confirm choices or advance dialogue.
+  [X] [BackSpace] [Insert] [Esc] [Numpad 0 (when NumLock is on)] ...
+    The Cancel Button. Also used to open the menu.
+  [C] [Shift] ... The Sub Button. Hold during battle to speed up it (in the Base System).
+  [Arrow Keys] ... Used to select menu commands and choices.
+  [F4] ... Change Screen Size
+  [F11] ... Toggle Full Screen
+  [F12] ... Reset Game
+  [PrintScreen][ScrollLock][Pause] ... Take Screenshot
+
+―――――――――――――――――――――――――――――――――――――――――
+On Saving and Quitting the Game
+
+  You can save by selecting the "Save" command from the menu.
+  To quit the game, press ALT+F4.
+
+  * As a trick, select "Save" while pressing the Sub Button on the menu to open a load screen.
+
+―――――――――――――――――――――――――――――――――――――――――
+Changelog
+
+06/29/2024  Replaced Kagamiyomi's MIDI files with loop versions.
+11/12/2023  Fixed URL links in this manual.
+11/22/2022  Updated the base system to version 3. Sample Game adapted for WOLF RPG Editor 3.
+06/02/2018  Updated the base system as needed.
+06/01/2018  Fixed broken links and relocated links for resource sources.
+07/18/2011  Greatly changed resources with the update to version 2.00. Thank you very much to everyone who contributed.
+10/10/2010  Replaced sample enemy images with GD's.
+11/18/2009  Added sample image resources.
+09/25/2009  Renamed all files to English names.
+07/27/2009  Minor fixes, and included Isooki's enemy images.
+02/20/2009  Greatly enhanced map tile resources.
+11/30/2008  Changed rights of MIDI resources to "can reuse only."
+09/02/2008  Changed all characters to 8-directional, and added character creation tool to "Other Data Collection" folder.
+03/15/2008  Completely remade, and added default system.
+11/05/2007  Added feature introduction.
+04/12/2007  Released.
+
+―――――――――――――――――――――――――――――――――――――――――
+Resource Contributors
+
+- Character Image Resources
+  すう (Suu)
+  pochi (Helped make 8-direction versions and parts. Animal and monster character images.)
+  mel ("Ship" character image included with sample)
+  ウロボロス (Uroboros) (Resources included with sample: camp images, waterfall tile images, monster character images)
+  たぴす (Tapisu) (Character images), まきば (Makiba) (Character images)
+
+- Map Tile Resources
+  ぴぽ (Pipo) (https://pipoya.net/blog/)
+
+- Enemy Image Resources
+  ＧＤ (GD) (From WOLF RPG Editor Wiki)
+  * When using these resources, you must include the creator's name.
+    When "using them as is" or "modifying them to distribute as resources,"
+    please be sure to include the creator's name.
+
+- MIDI Resources (Filenames have been changed for convenience.)
+  タクミ (Takumi)
+  ユノ (Yuno)
+  鏡読み (Kagamiyomi) (From WOLF RPG Editor Wiki)
+  Koya
+  yaeko (From WOLF RPG Editor Wiki)
+  黒うさぎ (Kuro Usagi) (From WOLF RPG Editor Wiki)
+  土鳩 (Dobato) (From WOLF RPG Editor Wiki)
+  momi (From WOLF RPG Editor Wiki)
+
+- Sound Effect Resources (Filenames have been changed for convenience.)
+  panop
+  小森平 (Taira Komori) (https://taira-komori.jpn.org/)
+  Koya
+  いそおき (Isooki) (From WOLF RPG Editor Wiki)
+  くくり (Kukuri) (From WOLF RPG Editor Wiki)
+
+- Icon Resources
+  枯れ草 (Karekusa) (From WOLF RPG Editor Resource Thread)
+
+- Battle Animation Effects
+  panop
+  Akira (From WOLF RPG Editor Resource Thread)
+
+- Face Graphic Synthesizer Data and Base Images
+  いさあきえーと (Isaaki eight) (http://isaaki.web.fc2.com/)
+
+- Face Graphic Part Contributors (From Face Graphic Synthesizer Project Page)
+  korcs, うみの(Umino), haji, kk, たては(Tateha), タケゾウ(Takezou), van,
+  ぜふぃ(Zefi), あきら(Akira), アマニア(Amania), 雪雹(Yukihyo), 蛍(Hotaru),
+  ミンミン(Minmin), 計架(Keika), まーりん(Maarin), もりもる(Morimoru),
+  沙木恵(Saboku Megumi), まる太(Maruta)
+
+- Mask Images, Examples of Mask Image Usage
+  K-Shin07
+
+―――――――――――――――――――――――――――――――――――――――――
+[Other Data Collection: Version 1 Resources]
+ Monster Images
+  いそおき (Isooki)
+  すう (Suu)
+ Map Tiles
+  のり (Nori) (http://nega.client.jp/)
+  * Parts by the following creators used from WOLF RPG Editor Wiki and Resource Request Thread.
+    遊等(Yuuto), RETAW, すう(Suu), 枯れ草(Karekusa), 澄夏(Sumika), ウロっち(Urotchi), りくがめ(Rikugame)
+―――――――――――――――――――――――――――――――――――――――――
+* Rights to the resources included in the Sample Game are as follows.
+
+  - Image Resources: Can reuse, modify, and use outside of WOLF RPG Editor.
+  - MIDI Resources: Can reuse only.
+  - WAV/OGG Resources: Can reuse, modify, and use outside of WOLF RPG Editor.
+
+- Games using these resources can be sold.
+  However, sale of the resources themselves and
+  commercial use on the premise that they will be used as resources is prohibited.
+
+- "Can use outside of WOLF RPG Editor" means that they can also be used for
+  "works" developed with other game engines. [Added on 01/28/2025]
+
+- It is prohibited to distribute sample game resources included in self-made software. [Added on 01/28/2025]
+  However, users may download the sample game resources and use them
+  in works developed with that software (can use outside of WOLF RPG Editor).
+
+
+  * Reuse refers to including the files in a game for use.
+  * Modification refers to making changes to the files for use in your own game.
+
+
+* Redistribution of modified versions of the Base System is also allowed.
+
+―――――――――――――――――――――――――――――――――――――――――
+* Secondary Creation (Added on 09/05/2023)
+
+- Creating derivative works based on the characters
+  and story of the Sample Game is officially allowed.
+
+- If it is part of doujin activities, there is no problem with
+  "selling or distributing" sample game derivative works, and no permission is required.
+  However, if you plan to sell on a commercial scale, please contact via the email form below.
+  https://www.silversecond.net/contents/mail_forms/mail_works/
+―――――――――――――――――――――――――――――――――――――――――
+Copyright Notice for Libraries Used (Updated on 2/7/2021)
+  Copyright notice in the DX Library.
+
+
+- DX Library
+  山田 巧 (Takumi Yamada)
+
+- JPEG Loading
+  libjpeg: Copyright (C) 1991-2013, Thomas G. Lane, Guido Vollbeding.
+
+- PNG Loading
+  libpng: Copyright (c) 1998-2004 Glenn Randers-Pehrson.
+  zlib: Copyright (C) 1995-2012 Jean-loup Gailly and Mark Adler.
+
+- Ogg Vorbis Loading
+  Copyright (C) 2002-2009 Xiph.org Foundation
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+  notice, this list of conditions and the following disclaimer.
+
+  - Redistributions in binary form must reproduce the above copyright
+  notice, this list of conditions and the following disclaimer in the
+  documentation and/or other materials provided with the distribution.
+
+  - Neither the name of the Xiph.org Foundation nor the names of its
+  contributors may be used to endorse or promote products derived from
+  this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE FOUNDATION
+  OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+- TIFF Loading
+  libtiff: Copyright (c) 1988-1997 Sam Leffler
+      libtiff: Copyright (c) 1991-1997 Silicon Graphics, Inc.
+
+
+- Random Number Generator (Mersenne Twister)
+  Copyright (C) 1997 - 2002, Makoto Matsumoto and Takuji Nishimura,
+  All rights reserved.
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  1. Redistributions of source code must retain the above copyright
+  notice, this list of conditions and the following disclaimer.
+
+  2. Redistributions in binary form must reproduce the above copyright
+  notice, this list of conditions and the following disclaimer in the
+  documentation and/or other materials provided with the distribution.
+
+  3. The name of the author may not be used to endorse or promote products
+  derived from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+  IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+  OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+  INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+  NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+  THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+◎If you encounter bugs or other issues in this game, please contact via the link below.
+  Please visit the bug report thread on the forum.
+――――――――――――――――――――――-----
+●WOLF RPG Editor Official Website:
+https://silversecond.com/WolfRPGEditor/
+●Developer Site: SilverSecond
+https://silversecond.net/
+――――――――――――――――――――――-----
+
+* Unauthorized reproduction or commercial use of this game is prohibited.

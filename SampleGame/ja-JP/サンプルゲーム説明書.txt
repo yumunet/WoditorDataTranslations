@@ -1,0 +1,249 @@
+===================================
+　WOLF RPGエディター（ウディタ）　サンプルゲーム
+　　　　　　　説明書
+
+　　　　　　2025/05/24
+===================================
+
+――――――――――――――――――――――――――――――――――
+
+■はじめに■
+
+　このゲームはWOLF RPGエディタのサンプルゲームとして作られたRPGです。
+　「Game.exe」を実行すると、ゲームを開始することができます。
+
+―――――――――――――――――――――――――――――――――――――――――
+
+■基本操作■
+
+ 　表記されているどれかのキーを使用してください。
+
+　[Zキー] [Enter] [スペース]… 
+　　決定キー、選択肢などを決定したり、会話を進めたりするのに使用します
+　[Xキー] [BackSpace] [Insert] [Esc] [テンキー0(NumLockオン時)] … 
+　　キャンセルキー、コマンド呼び出し
+　[Cキー] [Shift] … サブキー、（基本システムの）戦闘中に押すと戦闘が早くなります
+　[十字キー] … コマンド、選択肢を選ぶ
+  [F4] … 画面サイズ変更
+  [F11] … 全画面切り換え
+  [F12] … ゲームのリセット
+  [PrintScreen][ScrollLock][Pause] … スクリーンショットの撮影
+
+―――――――――――――――――――――――――――――――――――――――――
+■セーブ・ゲーム終了について■
+
+　セーブはコマンド内の「セーブ」を選択することで行えます。
+　ゲーム終了の際はALT＋F4を押してください。
+
+　※裏技として、メニュー画面でサブキーを押しながら「セーブ」を選択するとロード画面が開きます。
+　　　　　
+―――――――――――――――――――――――――――――――――――――――――
+■更新履歴■
+
+2024/06/29　鏡読み様のMIDIファイルをループ版に差し替え
+2023/11/12　この説明書のリンク先URLを修正
+2022/11/22～　基本システムをVer3に。サンプルゲームをWOLF RPGエディター3に対応
+2018/06/02～　基本システムを随時更新
+2018/06/01　素材提供元のリンク切れ・移転に対応。
+2011/07/18　Ver2.00化で素材を大幅変更。素材提供してくださった皆さま、本当にありがとうございます。
+2010/10/10　サンプルのエネミー画像素材をＧＤさんのものに差し替え
+2009/11/18　サンプルの画像素材を追加
+2009/09/25　ファイルを全て英語名に変更しました
+2009/07/27　細部の修正・いそおきさんの敵グラフィックを同梱
+2009/02/20　マップチップ素材を大幅に強化しました
+2008/11/30　素材の権利を修正 MIDIは「二次配布のみ可」となりました
+2008/09/02　全キャラを8方向に置き換え ＆ 「その他データ」フォルダにキャラ生成ツール追加
+2008/03/15　全面的に作り直し･デフォルトシステムの追加
+2007/11/05　機能紹介追加
+2007/04/12　公開開始
+
+―――――――――――――――――――――――――――――――――――――――――
+■素材提供（敬称略）■
+
+・キャラクターチップ素材
+　すう 
+　pochi（素材の8方向化・パーツ作成でお世話になりました+動物･モンスターキャラチップ）
+　mel（サンプル同梱素材のキャラクター「船画像」）
+　ウロボロス（サンプル同梱素材のキャンプ画像・マップチップの滝、モンスターキャラチップ）
+　たぴす（キャラチップ） 、まきば（キャラチップ）
+
+・マップチップ素材
+　ぴぽ（ https://pipoya.net/blog/ ）
+
+・敵キャラクター素材
+　ＧＤ（WOLF RPGエディターWikiより）
+　※この素材は二次配布時に【作者名必須】です。
+　　素材を「そのまま素材として再配布」または「改造して素材として配布」する際は、
+　　必ず作者様の名前を記載してください。
+
+・MIDI素材 （整理の都合上、ファイル名を変更させていただいております）
+　タクミ　
+　ユノ
+　鏡読み（WOLF RPGエディターWikiより）
+　Koya
+　yaeko（WOLF RPGエディターWikiより）
+　黒うさぎ（WOLF RPGエディターWikiより）
+　土鳩（WOLF RPGエディターWikiより）
+　momi（WOLF RPGエディターWikiより）
+
+・効果音素材（整理の都合上、ファイル名を変更させていただいております）
+　panop
+　小森平（　https://taira-komori.jpn.org/ ）
+　Koya
+　いそおき（WOLF RPGエディターWikiより）
+　くくり（WOLF RPGエディターWikiより）
+
+・アイコン素材
+　枯れ草（WOLF RPGエディター素材スレッドより）
+　
+・戦闘アニメーションエフェクト
+　panop
+　Akira（WOLF RPGエディター素材スレッドより）
+
+・顔グラフィック合成データ・ベース画像
+　いさあきえーと( http://isaaki.web.fc2.com/ )
+
+・顔グラフィックパーツ協力（顔グラ合成器企画ページより）
+　korcs、うみの、haji、kk、たては、タケゾウ、van、ぜふぃ、あきら
+　アマニア、雪雹、蛍、ミンミン、計架、まーりん、もりもる、沙木恵
+　まる太、もりもる
+
+・マスク画像、マスク画像使用見本
+　K-Shin07
+
+―――――――――――――――――――――――――――――――――――――――――
+[「データ集」内　バージョン1素材集]
+【モンスターグラフィック】
+　いそおき
+　すう
+【マップチップ】
+　のり（ http://nega.client.jp/ ）
+　※ウディタWikiおよび素材依頼スレより、以下の方々のパーツを使わせていただきました。
+　　遊等・RETAW・すう・枯れ草・澄夏・ウロっち・りくがめ
+―――――――――――――――――――――――――――――――――――――――――
+※サンプルゲームに同梱されている素材の権利については
+
+　・グラフィック素材：二次利用可・改造可・ウディタ以外への利用可
+　・MIDI素材：二次利用のみ可
+　・WAV･OGG素材：二次利用可・改造可・ウディタ以外への利用可
+　
+　とさせていただきます。
+
+・「これらの素材を使用したゲーム」の商用販売も可能です。
+　ただし、「素材そのものの販売」「素材として使われる前提での商用利用は禁止」です。
+　
+・「ウディタ以外への利用可」とは別エディターで開発される「作品」にも利用が可能、
+ 　という意味です[2025/01/28追記]
+
+・「自作エディターにサンプルゲーム素材を同梱して配布」することは禁止です[2025/01/28追記]。
+  ただし、ユーザーが本サンプルゲーム素材をダウンロードし、
+  そのエディターで開発される作品に利用する場合は問題ありません(ウディタ以外への利用可)。
+
+
+　※二次利用 … 当該ファイルを同梱してゲームに使用すること
+　※改造 … ファイルに修正を加えて自分のゲームに使うこと
+
+
+※デフォルトシステムを改造した基本システムの再配布も許可します。
+
+―――――――――――――――――――――――――――――――――――――――――
+※二次創作について 　2023/09/05追記
+
+・サンプルゲームのキャラクターやストーリーを元ネタとした
+　二次創作作品を作ることを公式に許可するものとします。
+
+・同人活動の範囲であれば、サンプルゲーム二次創作作品を
+「販売・頒布」することも問題ありませんし、許可も不要です。
+　ただし、商業規模での販売を行われる場合は以下メールフォームまでご相談ください。
+　https://www.silversecond.net/contents/mail_forms/mail_works/
+―――――――――――――――――――――――――――――――――――――――――
+■利用ライブラリ著作権表記　2021/2/7更新
+　DXライブラリ内の著作権表示です。
+
+
+・DXライブラリ
+　山田　巧（Takumi Yamada） 様
+
+・JPEG読み込み機能
+　libjpeg　Copyright (C) 1991-2013, Thomas G. Lane, Guido Vollbeding.
+
+・Png読み込み機能
+　libpng　Copyright (c) 1998-2004 Glenn Randers-Pehrson.
+　zlib　Copyright (C) 1995-2012 Jean-loup Gailly and Mark Adler.
+
+・OggVorbis読み込み機能
+　Copyright (C) 2002-2009 Xiph.org Foundation
+
+　Redistribution and use in source and binary forms, with or without
+　modification, are permitted provided that the following conditions
+　are met:
+
+　- Redistributions of source code must retain the above copyright
+　notice, this list of conditions and the following disclaimer.
+
+　- Redistributions in binary form must reproduce the above copyright
+　notice, this list of conditions and the following disclaimer in the
+　documentation and/or other materials provided with the distribution.
+
+　- Neither the name of the Xiph.org Foundation nor the names of its
+　contributors may be used to endorse or promote products derived from
+　this software without specific prior written permission.
+
+　THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+　``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+　LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+　A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE FOUNDATION
+　OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+　SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+　LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+　DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+　THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+　(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+　OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+・TIFF画像読み込み機能
+　libtiff　Copyright (c) 1988-1997 Sam Leffler
+　　　libtiff　Copyright (c) 1991-1997 Silicon Graphics, Inc.
+
+
+・乱数生成機能　Mersenne Twister
+　Copyright (C) 1997 - 2002, Makoto Matsumoto and Takuji Nishimura,
+　All rights reserved.
+
+　Redistribution and use in source and binary forms, with or without
+　modification, are permitted provided that the following conditions
+　are met:
+
+　1. Redistributions of source code must retain the above copyright
+　notice, this list of conditions and the following disclaimer.
+
+　2. Redistributions in binary form must reproduce the above copyright
+　notice, this list of conditions and the following disclaimer in the
+　documentation and/or other materials provided with the distribution.
+
+　3. The name of the author may not be used to endorse or promote products
+　derived from this software without specific prior written permission.
+
+　THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+　IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+　OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+　IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+　INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+　NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+　DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+　THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+　(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+　THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+　
+
+◎このゲームで、バグなどの問題が発生した場合は、下記へご連絡ください。
+  フォーラムのバグ報告スレッドへどうぞ。
+――――――――――――――――――――――-----
+●WOLF RPGエディター公式サイトアドレス: 
+https://silversecond.com/WolfRPGEditor/
+●開発者サイト SilverSecond
+https://silversecond.net/
+――――――――――――――――――――――-----
+
+※このゲームの無断転載、及び無断商用利用は禁止です。
