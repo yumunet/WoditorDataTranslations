@@ -78,7 +78,7 @@ WoditorEvCOMMAND_END
 ■Show Message:@3\nYuichi\n  Hey there, I am Yuichi!
 ■Show Message:Yuichi\n  I am real hungry!\n  If you bring me something to eat,\n  I wll join your party!
 ▼ Get the number of items "Tasty Bread."
-■Call Event: This Ev Self1 = Common 17: [ ▲アイテム所持数取得 ] / 17:おいしいパン
+■Call Event: This Ev Self1 = Common 17: [ ▲アイテム所持数取得 ] / 17:Tasty Bread
 ▼ If there's 1 or more, display the choices.
 ■Condition (Number):   [1] This Ev Self1 >=  1  
 -◇Condition:  [1]  [ This Ev Self1 >= 1   ] Case↓
@@ -87,9 +87,9 @@ WoditorEvCOMMAND_END
  |-◇Case: Choice [1] Give Tasty Bread                         ↓
  | |■Show Message:@3\nYuichi\n  Yaaay! Thanks!\n  *Munch, munch...*
  | |▼ Remove Tasty Bread.
- | |■Call Event: Common 0: [ ○アイテム増減 ] / 17:おいしいパン / -1 / 1:あり[単位：～個]
+ | |■Call Event: Common 0: [ ○アイテム増減 ] / 17:Tasty Bread / -1 / 1:あり[単位：～個]
  | |▼ Add Yuichi to the party.
- | |■Call Event: Common 5: [ ○メンバーの増減 ] / 0:仲間に加える / 14:夕一
+ | |■Call Event: Common 5: [ ○メンバーの増減 ] / 0:仲間に加える / 14:Yuichi
  | |▼ By setting Self Variable 0 to 1 here, the condition is no longer met,
  | |▼ causing this event to disappear (become invisible).
  | |■Set Variable: This Ev Self0 = 1 + 0 

@@ -91,7 +91,7 @@ WoditorEvCOMMAND_END
 ■Show Message:Hey, I'm thinking of baking some bread.\nYou want to have some?
 ▼ If the player hasn't yet learned the new command, set the text to String Variable 0.
 ▼ If the player has learned it, leave the choice blank (that choice won't appear).
-■Call Event: This Ev Self1 = Common 26: [ ▲戦闘コマンド有無の判定 ] / 12:ウルファール / -1:どこかに / 12:全体攻撃
+■Call Event: This Ev Self1 = Common 26: [ ▲戦闘コマンド有無の判定 ] / 12:Wolfarl / -1:どこかに / 12:Attack All
 ■Condition (Number):   [1] This Ev Self1 ==  0  /  [2] This Ev Self1 >=  1  
 -◇Condition:  [1]  [ This Ev Self1 == 0   ] Case↓
  |▼ If the player hasn't learned Attack All (if it's 0),
@@ -114,12 +114,12 @@ WoditorEvCOMMAND_END
  |■Sound: SE File[SE/System_Get2_wolf.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
  |■Show Message:* Wolfarl learned Attack All!\n  This command uses 5 HP to attack all enemies!
  |▼ Learn battle command.
- |■Call Event: Common 13: [ ○戦闘コマンドの変更 ] / 12:ウルファール / -10:空き欄（前方から） / 12:全体攻撃
+ |■Call Event: Common 13: [ ○戦闘コマンドの変更 ] / 12:Wolfarl / -10:空き欄（前方から） / 12:Attack All
  |■
 -◇Case: Choice [2] I'll have it to go                       ↓
  |▼ Shop processing.
  |■Call Event: Common 33: [ 【1】 お店 初期化 ]
- |■Call Event: Common 34: [ 【2】 お店 商品の追加 ] / 1:ｱｲﾃﾑ[A] / 17:おいしいパン / -1:<なし> / -1:<なし>
+ |■Call Event: Common 34: [ 【2】 お店 商品の追加 ] / 1:ｱｲﾃﾑ[A] / 17:Tasty Bread / -1:<なし> / -1:<なし>
  |■Call Event: Common 35: [ 【3】 お店処理 実行 ] / 2:買いのみ
  |■
 -◇Case: Cancel

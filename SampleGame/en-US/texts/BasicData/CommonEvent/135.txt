@@ -291,7 +291,7 @@ WoditorEvCOMMAND_END
  |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"HP" ] (10:-:5) 
  |■Condition (Number):   [1] CSelf10[一時変数A] <=  0  
  |-◇Condition:  [1]  [ CSelf10[一時変数A] <= 0   ] Case↓
- | |■Call Event [Name]: ["X[戦]状態付与/消去"] <CommonEv 137>  / CSelf0[対象戦闘ｽﾛｯﾄ] / 0:戦闘不能 / 10:強制付与 / 1:メッセージ有り
+ | |■Call Event [Name]: ["X[戦]状態付与/消去"] <CommonEv 137>  / CSelf0[対象戦闘ｽﾛｯﾄ] / 0:Fainted / 10:強制付与 / 1:メッセージ有り
  | |■Set Variable: CSelf99[戦闘不能？] = 1 + 0 
  | |■
  |◇End◇

@@ -89,7 +89,7 @@ WoditorEvCOMMAND_END
  |■Show Message:"Demonstrate with your strength that you are suited\nto use the WOLF RPG Editor!"
  |■Show Message:"See if you can defeat me within 10 turns!"
  |■Wait: 10 Frames
- |■Call Event: This Ev Self1 = Common 28: [ ◆バトルの発生 ] / 34:ボス　[10ターン] / 0:逃走可能 / 1:イベント続行 / 4:ボスBGM
+ |■Call Event: This Ev Self1 = Common 28: [ ◆バトルの発生 ] / 34:Boss [10 Turns] / 0:逃走可能 / 1:イベント続行 / 4:ボスBGM
  |■Condition (Number):   [1] This Ev Self1 ==  1  /  [2] This Ev Self1 <=  0  
  |-◇Condition:  [1]  [ This Ev Self1 == 1   ] Case↓
  | |▼ It's 1 if the player won the battle, so execute the commands below.
@@ -101,7 +101,7 @@ WoditorEvCOMMAND_END
  | |■Wait: 20 Frames
  | |■Set Variable: This Ev Self0 = 1 + 0 
  | |■Sound: SE File[SE/System_Get3_wolf.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
- | |■Call Event: Common 0: [ ○アイテム増減 ] / 20:WOLF RPGエディター / 1 / 0:なし
+ | |■Call Event: Common 0: [ ○アイテム増減 ] / 20:WOLF RPG Editor / 1 / 0:なし
  | |■Show Message:Wolfarl's party obtained WOLF RPG Editor!
  | |■Show Message:You can use this on the map! Give it a try!
  | |■

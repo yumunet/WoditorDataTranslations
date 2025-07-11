@@ -753,7 +753,7 @@ WoditorEvCOMMAND_END
 ▼ もし「戦闘不能」に全ステ解除属性付いてた場合は、全解除状態として戦闘不能（0番）を記憶
 ■Condition (Number):   [1] CSelf21[戦闘不能ターン数] !=  0  
 -◇Condition:  [1]  [ CSelf21[戦闘不能ターン数] != 0   ] Case↓
- |■Load DB(User):  CSelf20[一時変数A] = UserDB[ "状態設定":0:"これ以外の全ｽﾃ状態を・・・" ] (8:戦闘不能:18) 
+ |■Load DB(User):  CSelf20[一時変数A] = UserDB[ "状態設定":0:"これ以外の全ｽﾃ状態を・・・" ] (8:Fainted:18) 
  |■Condition (Number):   [1] CSelf20[一時変数A] ==  1  
  |-◇Condition:  [1]  [ CSelf20[一時変数A] == 1   ] Case↓
  | |■Set Variable: CSelf18[全解除フラグ（残す状態番号を格納 -1でﾅｼ）] = 0 + 0 

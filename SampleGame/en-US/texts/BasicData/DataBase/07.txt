@@ -121,12 +121,12 @@ DEFAULT_VAL_NUM=1
 DEFAULT_VAL_0=0
 <<--CSV_START-->>
 "属性名",
-"物理攻撃",
-"炎攻撃",
-"冷気攻撃",
-"雷攻撃",
-"神聖攻撃",
-"暗黒攻撃",
+"Physical Attack",
+"Fire Attack",
+"Ice Attack",
+"Thunder Attack",
+"Holy Attack",
+"Dark Attack",
 "",
 "",
 "",

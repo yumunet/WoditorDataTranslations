@@ -61,7 +61,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ To determine whether the player has "Dungeon Key," assign the item count to Self Variable 0.
-■Call Event: This Ev Self0 = Common 17: [ ▲アイテム所持数取得 ] / 19:ダンジョンのカギ
+■Call Event: This Ev Self0 = Common 17: [ ▲アイテム所持数取得 ] / 19:Dungeon Key
 ▼ If the player has 1 or more, transfer to Dungeon.
 ▼   (Even if an item can only be obtained once in the game,
 ▼   it's safer to use the condition “1 or more.”)

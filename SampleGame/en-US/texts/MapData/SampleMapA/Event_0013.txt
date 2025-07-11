@@ -99,7 +99,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ Check whether the player has the item "WOLF RPG Editor."
-■Call Event: This Ev Self1 = Common 17: [ ▲アイテム所持数取得 ] / 20:WOLF RPGエディター
+■Call Event: This Ev Self1 = Common 17: [ ▲アイテム所持数取得 ] / 20:WOLF RPG Editor
 ▼  
 ■Condition (Number):   [1] This Ev Self1 ==  0  /  [2] This Ev Self1 >=  1  
 -◇Condition:  [1]  [ This Ev Self1 == 0   ] Case↓

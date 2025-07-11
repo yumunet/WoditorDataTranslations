@@ -314,7 +314,7 @@ WoditorEvCOMMAND_END
  | | | |■Condition (Number):   [1] CSelf18[残りHP] <=  0  
  | | | |-◇Condition:  [1]  [ CSelf18[残りHP] <= 0   ] Case↓
  | | | | |▼ 戦闘不能付与（システム的に戦闘不能にならなければ、次にHP1にする）
- | | | | |■Call Event [Name]: ["X[移]状態付与/消去"] <CommonEv 75>  / CSelf20[処理中キャラID] / 0:戦闘不能 / 1:付与
+ | | | | |■Call Event [Name]: ["X[移]状態付与/消去"] <CommonEv 75>  / CSelf20[処理中キャラID] / 0:Fainted / 1:付与
  | | | | |■Call Event [Name]: ["X[移]一時ｽﾃ計算<初期化>"] <CommonEv 122>  / CSelf20[処理中キャラID]
  | | | | |■Call Event [Name]: ["X[移]一時ｽﾃ計算<装備補正>"] <CommonEv 123>  / CSelf20[処理中キャラID]
  | | | | |■Call Event [Name]: ["X[移]一時ｽﾃ計算<状態補正>"] <CommonEv 124>  / CSelf20[処理中キャラID]
