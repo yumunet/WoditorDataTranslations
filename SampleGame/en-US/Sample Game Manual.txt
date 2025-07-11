@@ -35,7 +35,7 @@ On Saving and Quitting the Game
   You can save by selecting the "Save" command from the menu.
   To quit the game, press ALT+F4.
 
-  * As a trick, select "Save" while pressing the Sub Button on the menu to open a load screen.
+  * As a trick, select "Save" while pressing the left Ctrl key on the menu to open a load screen.
 
 ―――――――――――――――――――――――――――――――――――――――――
 Changelog
