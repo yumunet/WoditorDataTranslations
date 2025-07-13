@@ -11,8 +11,11 @@ function Split-Texts([string]$Src, [string]$Dest) {
                 Copy-Item -Path $file -Destination "$pathBase.txt"
                 continue
             }
+            elseif (-not (Test-Path -Path $pathBase)) {
+                New-Item -Path $pathBase -ItemType Directory > $null
+            }
 
-            $content = Get-Content -Path $file -Raw
+            $content = [IO.File]::ReadAllText($file)
             $sectionsContent = $content
             $prefix = ""
             $delimiter = $null
@@ -35,7 +38,7 @@ function Split-Texts([string]$Src, [string]$Dest) {
                 $parts = $content -split "(?m)^----------`r`n"
                 
                 # Map itself
-                New-Item -Path "$pathBase\Map.txt" -Value $parts[0] -Force > $null
+                [IO.File]::WriteAllText("$pathBase\Map.txt", $parts[0])
                 
                 # Map Events
                 $sectionsContent = $parts[1]
@@ -54,7 +57,7 @@ function Split-Texts([string]$Src, [string]$Dest) {
                     $index = "{0:D$Digits}" -f ($i - 1)
                     $fileName += "$index.txt"
                 }
-                New-Item -Path "$pathBase\$fileName" -Value $sections[$i] -Force > $null
+                [IO.File]::WriteAllText("$pathBase\$fileName", $sections[$i])
             }
 
             # Remove files of deleted items.

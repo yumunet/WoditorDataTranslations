@@ -26,19 +26,19 @@ function Join-Texts([string]$Src, [string]$Dest) {
                 $destFileName += ".Auto.txt"
             }
             elseif ($group -eq "MapData") {
-                $content += (Get-Content -Path "$folder\Map.txt" -Raw) + "----------`r`n"
+                $content += [IO.File]::ReadAllText("$folder\Map.txt") + "----------`r`n"
 
                 $prefix = "Event_"
                 $delimiter = "-----"
                 $destFileName += ".mps.Auto.txt"
             }
 
-            $content += Get-Content -Path "$folder\${prefix}Header.txt" -Raw
+            $content += [IO.File]::ReadAllText("$folder\${prefix}Header.txt")
             $files = Get-ChildItem -Path $folder | Where-Object { $_.Name -match "^$prefix\d+.txt$" } | Sort-Object
             foreach ($file in $files) {
-                $content += $delimiter + "`r`n" + (Get-Content -Path $file -Raw)
+                $content += $delimiter + "`r`n" + [IO.File]::ReadAllText($file)
             }
-            New-Item -Path "$Dest\$group\$destFileName" -Value $content -Force > $null
+            [IO.File]::WriteAllText("$Dest\$group\$destFileName", $content)
         }
     }
 }
