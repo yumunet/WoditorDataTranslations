@@ -6,7 +6,7 @@ $langDir = "$Project\$Locale"
 $dataDir = "$langDir\_woditor\Data"
 $outputDir = "releases"
 
-.\import.ps1 $Project $Locale
+.\scripts\import.ps1 $Project $Locale || $(exit 1)
 Remove-Item -Path "$dataDir\BasicData\AutoBackup*" -Recurse -ErrorAction SilentlyContinue
 
 if (-not (Test-Path $outputDir)) {

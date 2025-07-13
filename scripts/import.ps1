@@ -57,7 +57,7 @@ if (Test-Path -Path $dataDir) {
     $typeName = "System.Management.Automation.Host.ChoiceDescription"
     $choice = $host.ui.PromptForChoice("Confirm", "Are you sure you want to import?", @((New-Object $typeName "&No", "No"), (New-Object $typeName "&Yes", "Yes")), 0)
     if ($choice -eq 0) {
-        exit
+        exit 1
     }
 }
 
