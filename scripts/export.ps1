@@ -90,7 +90,7 @@ Split-Texts $txtDataDir $textsDir
 . scripts\.util.ps1
 Copy-Assets $dataDir $assetsDir
 Copy-Others $dataDir $othersDir
-# If there are no files in the Others folder, remove the folder.
+# If there are no files in the Others directory, remove the directory.
 if ((Get-ChildItem -Path $othersDir -Recurse -File).Count -eq 0) {
     Remove-Item -Path $othersDir -Recurse
 }

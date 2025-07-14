@@ -14,7 +14,7 @@ if ($Project -eq "") {
     # By default, update all Woditor.
     $directories = Get-ChildItem -Attributes Directory
     foreach ($dir in $directories) {
-        # Consider the folder containing the assets folder as a project.
+        # Consider the directory containing the assets directory as a project.
         if (Test-Path -Path "$dir\assets") {
             Copy-Woditor $dir
         }

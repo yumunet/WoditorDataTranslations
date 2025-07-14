@@ -5,18 +5,18 @@ function Join-Texts([string]$Src, [string]$Dest) {
     Remove-Item -Path "$Dest\MapData\*" -Recurse -ErrorAction SilentlyContinue
     Copy-Item -Path "$Src\BasicData\Game.txt" -Destination "$Dest\BasicData\Game.dat.Auto.txt"
     foreach ($group in @("BasicData", "MapData")) {
-        $folders = Get-ChildItem -Path "$Src\$group" -Attributes Directory
-        foreach ($folder in $folders) {
+        $directories = Get-ChildItem -Path "$Src\$group" -Attributes Directory
+        foreach ($dir in $directories) {
             $content = ""
-            $destFileName = $folder.Name
+            $destFileName = $dir.Name
             $prefix = ""
             $delimiter = $null
             if ($group -eq "BasicData") {
-                if ($folder.Name -eq "CommonEvent") {
+                if ($dir.Name -eq "CommonEvent") {
                     $delimiter = "--------------------------"
                     $destFileName += ".dat"
                 }
-                elseif ($folder.Name -eq "TileSetData") {
+                elseif ($dir.Name -eq "TileSetData") {
                     $delimiter = "---"
                     $destFileName += ".dat"
                 }
@@ -26,15 +26,15 @@ function Join-Texts([string]$Src, [string]$Dest) {
                 $destFileName += ".Auto.txt"
             }
             elseif ($group -eq "MapData") {
-                $content += [IO.File]::ReadAllText("$folder\Map.txt") + "----------`r`n"
+                $content += [IO.File]::ReadAllText("$dir\Map.txt") + "----------`r`n"
 
                 $prefix = "Event_"
                 $delimiter = "-----"
                 $destFileName += ".mps.Auto.txt"
             }
 
-            $content += [IO.File]::ReadAllText("$folder\${prefix}Header.txt")
-            $files = Get-ChildItem -Path $folder | Where-Object { $_.Name -match "^$prefix\d+.txt$" } | Sort-Object
+            $content += [IO.File]::ReadAllText("$dir\${prefix}Header.txt")
+            $files = Get-ChildItem -Path $dir | Where-Object { $_.Name -match "^$prefix\d+.txt$" } | Sort-Object
             foreach ($file in $files) {
                 $content += $delimiter + "`r`n" + [IO.File]::ReadAllText($file)
             }
