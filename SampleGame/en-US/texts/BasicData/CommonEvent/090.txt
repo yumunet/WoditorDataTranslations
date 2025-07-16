@@ -236,12 +236,12 @@ WoditorEvCOMMAND_START
 [250][5,4]<0>(18,7,0,69632,1600017)("","基本ｼｽﾃﾑ用変数","","")
 [250][5,4]<0>(18,6,0,69632,1600018)("","基本ｼｽﾃﾑ用変数","","")
 [250][5,4]<0>(18,5,0,69632,1600019)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(17,0,0,332288,1600008)("","画像/音声設定","","ウィンドウ画像ファイル")
-[250][5,4]<0>(17,0,0,332288,1600009)("","画像/音声設定","","カーソル画像ファイル")
+[250][5,4]<0>(17,0,0,332288,1600008)("","Images/Sounds","","Window Image File")
+[250][5,4]<0>(17,0,0,332288,1600009)("","Images/Sounds","","Cursor Image File")
 [103][0,1]<0>()("Ver2.20　座標倍率を縦横別に修正")
 [250][5,4]<0>(18,97,0,69632,1600088)("","基本ｼｽﾃﾑ用変数","","")
 [250][5,4]<0>(18,98,0,69632,1600089)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,0,17,332288,1600085)("","システム設定","","ステータス状態の表示方法")
+[250][5,4]<0>(18,0,17,332288,1600085)("","System Settings","","States Display")
 [179][1,0]<0>(1)()
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<1>()("一個あたりのキャラクター欄のサイズ指定や、各内容の表示位置などをここで指定")
@@ -389,7 +389,7 @@ WoditorEvCOMMAND_START
 [112][2,4]<2>(17,270035463)("","","","")
 [401][1,0]<2>(1)()
 [103][0,1]<3>()("顔グラフィックファイルが指定されている場合だけ表示する")
-[250][5,4]<3>(19,0,25,332288,1600056)("","システム設定","","ｽﾃｰﾀｽ 顔ｸﾞﾗﾌｨｯｸ倍率")
+[250][5,4]<3>(19,0,25,332288,1600056)("","System Settings","","Status Face Image Scale")
 [111][7,0]<3>(2,1600056,0,2,1600056,1,1)()
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("顔の表示を、枠に合わせる場合")
@@ -440,7 +440,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<2>(1600021,1600020,6,0)()
 [103][0,1]<2>()("表示位置は右上基点")
 [103][0,1]<2>()("ちなみに、カラー設定もピクチャ処理のカラーで行っている")
-[250][5,4]<2>(13,0,5,332288,1600007)("","用語設定","","[ｽﾃｰﾀｽ]レベル")
+[250][5,4]<2>(13,0,5,332288,1600007)("","Terms","","[Stats] Level")
 [150][11,1]<2>(12320,1600021,0,1,1,1,255,1600022,1600023,100,0)("\f[\cself[18]]\-[1]\E\cself[7] \cself[94]")
 [290][7,0]<2>(32,0,1600021,1600021,1600078,1600079,0)()
 [0][0,0]<2>()()
@@ -469,7 +469,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<2>()("HPの数値　（表示位置は左下基点）")
 [121][4,0]<2>(1600021,1600020,13,0)()
 [103][0,1]<2>()("ax,ayで横幅補正表示")
-[250][5,4]<2>(13,0,7,332288,1600007)("","用語設定","","[ｽﾃｰﾀｽ]HP名称")
+[250][5,4]<2>(13,0,7,332288,1600007)("","Terms","","[Stats] HP Name")
 [150][11,1]<2>(8224,1600021,0,1,1,1,255,1600022,1600023,100,0)("\f[\cself[18]]\cself[7]\ax[\cself[10]]<\n><R>\ay[0]\cself[90]\f[\cself[17]]/\cself[91]")
 [290][7,0]<2>(32,0,1600021,1600021,1600066,1600067,0)()
 [103][0,1]<2>()("ゲージ表示[上部分ゲージ]　（表示位置は左上）")
@@ -522,7 +522,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<2>()("SPの数値　（表示位置は左下基点）")
 [121][4,0]<2>(1600021,1600020,18,0)()
 [103][0,1]<2>()("ax,ayで横幅補正表示")
-[250][5,4]<2>(13,0,8,332288,1600007)("","用語設定","","[ｽﾃｰﾀｽ]SP名称")
+[250][5,4]<2>(13,0,8,332288,1600007)("","Terms","","[Stats] SP Name")
 [150][11,1]<2>(8224,1600021,0,1,1,1,255,1600022,1600023,100,0)("\f[\cself[18]]\cself[7]\ax[\cself[10]]<\n><R>\ay[0]\cself[92]\f[\cself[17]]/\cself[93]")
 [290][7,0]<2>(32,0,1600021,1600021,1600068,1600069,0)()
 [103][0,1]<2>()("ゲージ表示[上部分ゲージ]　（表示位置は左上）")
@@ -568,7 +568,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<2>(1600098,1600096,1600095,4096)()
 [121][4,0]<2>(1600098,1600096,0,1792)()
 [121][4,0]<2>(1600098,0,0,1536)()
-[250][5,4]<2>(13,0,6,332288,1600007)("","用語設定","","[ｽﾃｰﾀｽ]次LｖUP経験値")
+[250][5,4]<2>(13,0,6,332288,1600007)("","Terms","","[Stats] EXP to Next Level")
 [150][11,1]<2>(16416,1600021,0,1,1,1,255,1600022,1600023,100,0)("\f[\cself[17]]\cself[7] \cself[98]")
 [290][7,0]<2>(32,0,1600021,1600021,1600074,1600075,0)()
 [103][0,1]<2>()("ゲージ表示[上部分ゲージ]　（表示位置は左上）")
@@ -814,12 +814,12 @@ WoditorEvCOMMAND_END
 ■Load DB(Var):  CSelf17[最小フォントサイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":7:0 ] (18:システム最小フォントサイズ:数値) 
 ■Load DB(Var):  CSelf18[ミニフォントサイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":6:0 ] (18:システムミニフォントサイズ:数値) 
 ■Load DB(Var):  CSelf19[基本フォントサイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":5:0 ] (18:システム基本フォントサイズ:数値) 
-■Load DB(User):  CSelf8[ウィンドウ画像ファイル] = UserDB[ "画像/音声設定":0:"ウィンドウ画像ファイル" ] (16:画像/音声基本設定:0) 
-■Load DB(User):  CSelf9[カーソル画像ファイル] = UserDB[ "画像/音声設定":0:"カーソル画像ファイル" ] (16:画像/音声基本設定:1) 
+■Load DB(User):  CSelf8[ウィンドウ画像ファイル] = UserDB[ "Images/Sounds":0:"Window Image File" ] (16:Basic Images/Sounds:0) 
+■Load DB(User):  CSelf9[カーソル画像ファイル] = UserDB[ "Images/Sounds":0:"Cursor Image File" ] (16:Basic Images/Sounds:1) 
 ▼ Ver2.20　座標倍率を縦横別に修正
 ■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "基本ｼｽﾃﾑ用変数":97:0 ] (18:座標倍率Ｘ[x10]:数値) 
 ■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "基本ｼｽﾃﾑ用変数":98:0 ] (18:座標倍率Ｙ[x10]:数値) 
-■Load DB(User):  CSelf85[状態異常表示方法フラグ] = UserDB[ "システム設定":0:"ステータス状態の表示方法" ] (17:システム基本設定:19) 
+■Load DB(User):  CSelf85[状態異常表示方法フラグ] = UserDB[ "System Settings":0:"States Display" ] (17:Basic System Settings:19) 
 ■Repeat Loop [ 1 ] Times
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |▼ 一個あたりのキャラクター欄のサイズ指定や、各内容の表示位置などをここで指定
@@ -967,7 +967,7 @@ WoditorEvCOMMAND_END
  | |■Condition (String):   [1] CSelf7[表示項目名] is not equal to ""
  | |-◇Condition:  [1] [ CSelf7[表示項目名] is not equal to "" ] Case↓
  | | |▼ 顔グラフィックファイルが指定されている場合だけ表示する
- | | |■Load DB(User):  CSelf56[顔表示倍率] = UserDB[ "システム設定":0:"ｽﾃｰﾀｽ 顔ｸﾞﾗﾌｨｯｸ倍率" ] (17:システム基本設定:24) 
+ | | |■Load DB(User):  CSelf56[顔表示倍率] = UserDB[ "System Settings":0:"Status Face Image Scale" ] (17:Basic System Settings:24) 
  | | |■Condition (Number):   [1] CSelf56[顔表示倍率] ==  0  /  [2] CSelf56[顔表示倍率] >=  1  
  | | |-◇Condition:  [1]  [ CSelf56[顔表示倍率] == 0   ] Case↓
  | | | |▼ 顔の表示を、枠に合わせる場合
@@ -1018,7 +1018,7 @@ WoditorEvCOMMAND_END
  | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 6 
  | |▼ 表示位置は右上基点
  | |▼ ちなみに、カラー設定もピクチャ処理のカラーで行っている
- | |■Load DB(User):  CSelf7[表示項目名] = UserDB[ "用語設定":0:"[ｽﾃｰﾀｽ]レベル" ] (15:用語基本設定:5) 
+ | |■Load DB(User):  CSelf7[表示項目名] = UserDB[ "Terms":0:"[Stats] Level" ] (15:Basic Terms:5) 
  | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Right] String[\f[\cself[18]]\-] X:CSelf22[表示X] Y:CSelf23[表示Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf78[レベル表示X] / Shift Y CSelf79[レベル表示Y]  [0]Frames
  | |■
@@ -1047,7 +1047,7 @@ WoditorEvCOMMAND_END
  | |▼ HPの数値　（表示位置は左下基点）
  | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 13 
  | |▼ ax,ayで横幅補正表示
- | |■Load DB(User):  CSelf7[表示項目名] = UserDB[ "用語設定":0:"[ｽﾃｰﾀｽ]HP名称" ] (15:用語基本設定:7) 
+ | |■Load DB(User):  CSelf7[表示項目名] = UserDB[ "Terms":0:"[Stats] HP Name" ] (15:Basic Terms:7) 
  | |■Picture Show: CSelf21[一時ピクチャ番号] [Bottom-Left] String[\f[\cself[18]]\c] X:CSelf22[表示X] Y:CSelf23[表示Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf66[HP位置X] / Shift Y CSelf67[HP位置Y]  [0]Frames
  | |▼ ゲージ表示[上部分ゲージ]　（表示位置は左上）
@@ -1100,7 +1100,7 @@ WoditorEvCOMMAND_END
  | |▼ SPの数値　（表示位置は左下基点）
  | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 18 
  | |▼ ax,ayで横幅補正表示
- | |■Load DB(User):  CSelf7[表示項目名] = UserDB[ "用語設定":0:"[ｽﾃｰﾀｽ]SP名称" ] (15:用語基本設定:8) 
+ | |■Load DB(User):  CSelf7[表示項目名] = UserDB[ "Terms":0:"[Stats] SP Name" ] (15:Basic Terms:8) 
  | |■Picture Show: CSelf21[一時ピクチャ番号] [Bottom-Left] String[\f[\cself[18]]\c] X:CSelf22[表示X] Y:CSelf23[表示Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf68[SP位置X] / Shift Y CSelf69[SP位置Y]  [0]Frames
  | |▼ ゲージ表示[上部分ゲージ]　（表示位置は左上）
@@ -1146,7 +1146,7 @@ WoditorEvCOMMAND_END
  | |■Set Variable: CSelf98[残り必要EXP] = CSelf96[次までの必要EXP] - CSelf95[取得済EXP] 
  | |■Set Variable: CSelf98[残り必要EXP] Upper Bound= CSelf96[次までの必要EXP] + 0 
  | |■Set Variable: CSelf98[残り必要EXP] Lower Bound= 0 + 0 
- | |■Load DB(User):  CSelf7[表示項目名] = UserDB[ "用語設定":0:"[ｽﾃｰﾀｽ]次LｖUP経験値" ] (15:用語基本設定:6) 
+ | |■Load DB(User):  CSelf7[表示項目名] = UserDB[ "Terms":0:"[Stats] EXP to Next Level" ] (15:Basic Terms:6) 
  | |■Picture Show: CSelf21[一時ピクチャ番号] [Bottom-Right] String[\f[\cself[17]]\c] X:CSelf22[表示X] Y:CSelf23[表示Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf74[EXP位置X] / Shift Y CSelf75[EXP位置Y]  [0]Frames
  | |▼ ゲージ表示[上部分ゲージ]　（表示位置は左上）

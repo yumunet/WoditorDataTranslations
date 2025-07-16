@@ -31,35 +31,35 @@ DATATYPE_25=1023
 NUMDATA_TYPE_NUM=24
 STRDATA_TYPE_NUM=2
 DATA_NUM=42
-TYPENAME=敵ｷｬﾗ個体ﾃﾞｰﾀ
+TYPENAME=Enemies
 ITEMNAME_NUM=26
-ITEMNAME0=敵キャラ名
-ITEMNAME1=画像ファイル
-ITEMNAME2=最大HP
-ITEMNAME3=最大SP
-ITEMNAME4=攻撃力
-ITEMNAME5=防御力
-ITEMNAME6=精神攻撃
-ITEMNAME7=精神防御
-ITEMNAME8=敏捷性
-ITEMNAME9=基本命中率[%]
-ITEMNAME10=基本回避率[%]
-ITEMNAME11=クリティカル率[%]
-ITEMNAME12=取得経験値
-ITEMNAME13=取得金額
-ITEMNAME14=入手アイテム　　　　　　　　
-ITEMNAME15=┗入手率[アイテム] [%]
-ITEMNAME16=入手武器　　　　　　　　　
-ITEMNAME17=┗入手率[武器] [%]
-ITEMNAME18=入手防具　　　　　　　　　
-ITEMNAME19=┗入手率[防具] [%]
-ITEMNAME20=行動回数
-ITEMNAME21=┏ 変身条件　－－－－ 
-ITEMNAME22=┃┗  [A値]　－－－－　
-ITEMNAME23=┣ 変身キャラ　－－－－
-ITEMNAME24=┣ 変身オプション　－－　
-ITEMNAME25=┗ 変身時Ev呼出[-1:ﾅｼ]
-MEMO=Giant Chicken
+ITEMNAME0=Enemy Name
+ITEMNAME1=Image File
+ITEMNAME2=Max HP
+ITEMNAME3=Max SP
+ITEMNAME4=Attack
+ITEMNAME5=Defense
+ITEMNAME6=Magic Attack
+ITEMNAME7=Magic Defense
+ITEMNAME8=Agility
+ITEMNAME9=Base Accuracy [%]
+ITEMNAME10=Base Evasion [%]
+ITEMNAME11=Critical Rate [%]
+ITEMNAME12=Experience
+ITEMNAME13=Money
+ITEMNAME14=Item Drop                       
+ITEMNAME15=┗ Drop Rate [Item] [%]
+ITEMNAME16=Weapon Drop                        
+ITEMNAME17=┗ Drop Rate [Weapon] [%]
+ITEMNAME18=Armor Drop                       
+ITEMNAME19=┗ Drop Rate [Armor] [%]
+ITEMNAME20=Number of Actions
+ITEMNAME21=┏ Transform Condition
+ITEMNAME22=┃┗  [A] Value                  
+ITEMNAME23=┣ Transforms Into         
+ITEMNAME24=┣ Transform Option     
+ITEMNAME25=┗ Call Event [-1:None] 
+MEMO=■Item drops are obtained<<\n>>only when HP is 0.<<\n>><<\n>>Page 2 has the Number of<<\n>>Actions and Transform<<\n>>settings.<<\n>>
 ITEMTYPE_NUM=100
 ITEM_LOADTYPE_0=0
 ITEM_LOADTYPE_1=1
@@ -205,37 +205,37 @@ CHOICE_NAME_11_NUM=0
 CHOICE_NAME_12_NUM=0
 CHOICE_NAME_13_NUM=0
 CHOICE_NAME_14_NUM=3
-CHOICE_NAME_14_0=<なし>
-CHOICE_NAME_14_1=<なし>
-CHOICE_NAME_14_2=<なし>
+CHOICE_NAME_14_0=<None>
+CHOICE_NAME_14_1=<None>
+CHOICE_NAME_14_2=<None>
 CHOICE_NAME_15_NUM=0
 CHOICE_NAME_16_NUM=3
-CHOICE_NAME_16_0=<なし>
-CHOICE_NAME_16_1=<なし>
-CHOICE_NAME_16_2=<なし>
+CHOICE_NAME_16_0=<None>
+CHOICE_NAME_16_1=<None>
+CHOICE_NAME_16_2=<None>
 CHOICE_NAME_17_NUM=0
 CHOICE_NAME_18_NUM=3
-CHOICE_NAME_18_0=<なし>
-CHOICE_NAME_18_1=<なし>
-CHOICE_NAME_18_2=<なし>
+CHOICE_NAME_18_0=<None>
+CHOICE_NAME_18_1=<None>
+CHOICE_NAME_18_2=<None>
 CHOICE_NAME_19_NUM=0
 CHOICE_NAME_20_NUM=5
-CHOICE_NAME_20_0=行動しない
-CHOICE_NAME_20_1=1回行動
-CHOICE_NAME_20_2=2回行動
-CHOICE_NAME_20_3=3回行動
-CHOICE_NAME_20_4=4回行動
+CHOICE_NAME_20_0=Can't Act
+CHOICE_NAME_20_1=1 Action
+CHOICE_NAME_20_2=2 Actions
+CHOICE_NAME_20_3=3 Actions
+CHOICE_NAME_20_4=4 Actions
 CHOICE_NAME_21_NUM=4
-CHOICE_NAME_21_0=<変身しない>
-CHOICE_NAME_21_1=HPが[A値]%以下
-CHOICE_NAME_21_2=[A値]ターン開始時
-CHOICE_NAME_21_3=[A値]ターン終了
+CHOICE_NAME_21_0=<Doesn't Transform>
+CHOICE_NAME_21_1=When HP Is [A]% or Less
+CHOICE_NAME_21_2=At Start of [A] Turn
+CHOICE_NAME_21_3=At End of [A] Turn
 CHOICE_NAME_22_NUM=0
 CHOICE_NAME_23_NUM=0
 CHOICE_NAME_24_NUM=3
-CHOICE_NAME_24_0=HP・SP全快
-CHOICE_NAME_24_1=HP・SPの値そのまま
-CHOICE_NAME_24_2=HP・SPの％そのまま
+CHOICE_NAME_24_0=Fully Recover HP & SP
+CHOICE_NAME_24_1=Keep HP & SP Values
+CHOICE_NAME_24_2=Keep HP & SP %
 CHOICE_NAME_25_NUM=0
 CHOICE_VAL_NUM=26
 CHOICE_VAL_0_NUM=0
@@ -317,7 +317,7 @@ DEFAULT_VAL_23=0
 DEFAULT_VAL_24=0
 DEFAULT_VAL_25=-1
 <<--CSV_START-->>
-"敵キャラ名","画像ファイル","最大HP","最大SP","攻撃力","防御力","精神攻撃","精神防御","敏捷性","基本命中率[%]","基本回避率[%]","クリティカル率[%]","取得経験値","取得金額","入手アイテム　　　　　　　　","┗入手率[アイテム] [%]","入手武器　　　　　　　　　","┗入手率[武器] [%]","入手防具　　　　　　　　　","┗入手率[防具] [%]","行動回数","┏ 変身条件　－－－－ ","┃┗  [A値]　－－－－　","┣ 変身キャラ　－－－－","┣ 変身オプション　－－　","┗ 変身時Ev呼出[-1:ﾅｼ]",
+"Enemy Name","Image File","Max HP","Max SP","Attack","Defense","Magic Attack","Magic Defense","Agility","Base Accuracy [%]","Base Evasion [%]","Critical Rate [%]","Experience","Money","Item Drop                       ","┗ Drop Rate [Item] [%]","Weapon Drop                        ","┗ Drop Rate [Weapon] [%]","Armor Drop                       ","┗ Drop Rate [Armor] [%]","Number of Actions","┏ Transform Condition","┃┗  [A] Value                  ","┣ Transforms Into         ","┣ Transform Option     ","┗ Call Event [-1:None] ",
 "Bat","EnemyGraphic/GD_Bat.png",20,0,10,0,5,0,30,80,0,0,15,8,-1,0,-1,0,-1,0,1,0,0,0,0,-1,
 "Wolf","EnemyGraphic/GD_Dog.png",40,0,20,4,10,0,15,80,0,0,20,17,-1,0,-1,0,-1,0,1,0,0,0,0,-1,
 "Rainbow Bird","EnemyGraphic/GD_Bird(Rainbow).png",40,0,17,4,10,0,25,80,30,0,20,17,-1,0,-1,0,-1,0,1,0,0,0,0,-1,
@@ -347,7 +347,7 @@ DEFAULT_VAL_25=-1
 "----------------------","",0,0,0,0,0,0,0,80,10,0,0,0,-1,0,-1,0,-1,0,1,0,0,0,0,-1,
 "","",0,0,0,0,0,0,0,80,10,0,0,0,-1,0,-1,0,-1,0,1,0,0,0,0,-1,
 "----------------------","",0,0,0,0,0,0,0,80,10,0,0,0,-1,0,-1,0,-1,0,1,0,0,0,0,-1,
-"[Smple Game Enemies Below]","",0,0,0,0,0,0,0,80,10,0,0,0,-1,0,-1,0,-1,0,1,0,0,0,0,-1,
+"[Sample Game Enemies Below]","",0,0,0,0,0,0,0,80,10,0,0,0,-1,0,-1,0,-1,0,1,0,0,0,0,-1,
 "----------------------","",0,0,0,0,0,0,0,80,10,0,0,0,-1,0,-1,0,-1,0,1,0,0,0,0,-1,
 "Goblin","EnemyGraphic/GD_Goblin(Red).png",50,0,13,1,0,7,20,90,0,0,300,100,0,30,-1,0,-1,0,1,0,0,0,0,-1,
 "Strongoblin","EnemyGraphic/GD_Goblin(Blue).png",200,90,30,10,0,30,9,80,0,0,1000,500,0,50,-1,0,-1,0,2,0,0,0,0,-1,

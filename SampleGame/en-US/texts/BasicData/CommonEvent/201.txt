@@ -207,7 +207,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<1>()()
 [179][1,0]<1>(1)()
 [103][0,1]<2>()("もし戦闘不能を自動回復するシステムの場合は戦闘不能解除")
-[250][5,4]<2>(17,0,21,332288,1600018)("","システム設定","","移動時の戦闘不能の扱い")
+[250][5,4]<2>(17,0,21,332288,1600018)("","System Settings","","Fainted Members After Battle")
 [111][4,0]<2>(1,1600018,1,2)()
 [401][1,0]<2>(1)()
 [250][5,4]<3>(4,1600020,0,65536,0)("","┗ 状態リスト","","")
@@ -217,7 +217,7 @@ WoditorEvCOMMAND_START
 [498][0,0]<1>()()
 [179][1,0]<1>(1)()
 [103][0,1]<2>()("戦闘後HP・SP補正")
-[250][5,4]<2>(17,0,20,332288,1600019)("","システム設定","","戦闘後のHP・SPの扱い")
+[250][5,4]<2>(17,0,20,332288,1600019)("","System Settings","","HP/SP After Battle")
 [111][4,0]<2>(1,1600019,1,1)()
 [401][1,0]<2>(1)()
 [111][4,0]<3>(1,1600019,1,6)()
@@ -298,7 +298,7 @@ WoditorEvCOMMAND_END
  |◇End◇
  |■Repeat Loop [ 1 ] Times
  | |▼ もし戦闘不能を自動回復するシステムの場合は戦闘不能解除
- | |■Load DB(User):  CSelf18[戦闘不能の扱い] = UserDB[ "システム設定":0:"移動時の戦闘不能の扱い" ] (17:システム基本設定:21) 
+ | |■Load DB(User):  CSelf18[戦闘不能の扱い] = UserDB[ "System Settings":0:"Fainted Members After Battle" ] (17:Basic System Settings:21) 
  | |■Condition (Number):   [1] CSelf18[戦闘不能の扱い] ==  1  
  | |-◇Condition:  [1]  [ CSelf18[戦闘不能の扱い] == 1   ] Case↓
  | | |■Write to DB(Var): VarDB[ "┗ 状態リスト":CSelf20[対象ID]:0 ] (5:-:\udb[8:0]の残り歩数) =  0
@@ -308,7 +308,7 @@ WoditorEvCOMMAND_END
  |◇Loop End Point◇◇
  |■Repeat Loop [ 1 ] Times
  | |▼ 戦闘後HP・SP補正
- | |■Load DB(User):  CSelf19[戦闘後HP・SPの扱い] = UserDB[ "システム設定":0:"戦闘後のHP・SPの扱い" ] (17:システム基本設定:20) 
+ | |■Load DB(User):  CSelf19[戦闘後HP・SPの扱い] = UserDB[ "System Settings":0:"HP/SP After Battle" ] (17:Basic System Settings:20) 
  | |■Condition (Number):   [1] CSelf19[戦闘後HP・SPの扱い] >=  1  
  | |-◇Condition:  [1]  [ CSelf19[戦闘後HP・SPの扱い] >= 1   ] Case↓
  | | |■Condition (Number):   [1] CSelf19[戦闘後HP・SPの扱い] &  1  

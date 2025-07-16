@@ -205,7 +205,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
 [103][0,1]<2>()("デフォルト曲の場合")
-[250][5,4]<2>(19,0,48,332288,1600008)("","システム設定","","[戦闘]基本戦闘BGM")
+[250][5,4]<2>(19,0,48,332288,1600008)("","System Settings","","[Battle] Basic Battle BGM")
 [103][0,1]<2>()("戦闘BGMを再生")
 [140][7,1]<2>(33554432,10,0,0,100,100,0)("\cself[8]")
 [0][0,0]<2>()()
@@ -370,7 +370,7 @@ WoditorEvCOMMAND_START
 [179][1,0]<0>(0)()
 [212][0,1]<1>()("逃走処理")
 [103][0,1]<1>()("確率判定")
-[250][5,4]<1>(13,1600000,11,332288,1600022)("","敵グループ","","逃走成功率[%]")
+[250][5,4]<1>(13,1600000,11,332288,1600022)("","Enemy Groups","","Flee Success Rate [%]")
 [121][4,0]<1>(1600022,0,99,25088)()
 [111][4,0]<1>(17,1600022,1,1)()
 [401][1,0]<1>(1)()
@@ -401,7 +401,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<2>()()
 [420][1,0]<1>(0)()
 [103][0,1]<2>()("逃走失敗時")
-[250][5,4]<2>(14,0,30,332288,1600007)("","用語設定","","[戦闘] 逃走コマンド名")
+[250][5,4]<2>(14,0,30,332288,1600007)("","Terms","","[Battle] Flee Command")
 [122][2,1]<2>(1600007,256)("に失敗した！")
 [300][4,1]<2>(0,17,0,1600007)("X[戦]戦闘メッセージ表示")
 [213][0,1]<2>()("逃走戻り")
@@ -430,7 +430,7 @@ WoditorEvCOMMAND_START
 [111][4,0]<1>(1,1600095,-1,2)()
 [401][1,0]<1>(1)()
 [103][0,1]<2>()("負けてて、必要ならゲームオーバーイベントを呼び出す")
-[250][5,4]<2>(17,0,30,332288,1600030)("","システム設定","","[戦闘]ｹﾞｰﾑｵｰﾊﾞｰ時のEv")
+[250][5,4]<2>(17,0,30,332288,1600030)("","System Settings","","[Battle] Event on Game Over")
 [111][4,0]<2>(1,1600030,0,1)()
 [401][1,0]<2>(1)()
 [121][4,0]<3>(1600030,500000,0,256)()
@@ -470,7 +470,7 @@ WoditorEvCOMMAND_END
  | |■
  |-◇Condition:  [2]  [ CSelf3[戦闘BGM] <= -2   ] Case↓
  | |▼ デフォルト曲の場合
- | |■Load DB(User):  CSelf8[再生戦闘曲] = UserDB[ "システム設定":0:"[戦闘]基本戦闘BGM" ] (17:システム基本設定:26) 
+ | |■Load DB(User):  CSelf8[再生戦闘曲] = UserDB[ "System Settings":0:"[Battle] Basic Battle BGM" ] (17:Basic System Settings:26) 
  | |▼ 戦闘BGMを再生
  | |■Sound: BGM File[\cself[8]] Vol 100% Freq 100% Loop 0 ms Play / Fade Time: 10 Frames
  | |■
@@ -635,7 +635,7 @@ WoditorEvCOMMAND_END
 ■Repeat Loop [ 0 ] Times
  |●Label Point [逃走処理] <<<<<<<<<<<<<<<<<<<<<<<<★
  |▼ 確率判定
- |■Load DB(User):  CSelf22[逃走可能確率] = UserDB[ "敵グループ":CSelf0[敵グループ番号]:"逃走成功率[%]" ] (13:-:11) 
+ |■Load DB(User):  CSelf22[逃走可能確率] = UserDB[ "Enemy Groups":CSelf0[敵グループ番号]:"Flee Success Rate [%]" ] (13:-:11) 
  |■Set Variable: CSelf22[逃走可能確率] -= 0  to  99 
  |■Condition (Number):   [1] CSelf22[逃走可能確率] >=  1  
  |-◇Condition:  [1]  [ CSelf22[逃走可能確率] >= 1   ] Case↓
@@ -666,7 +666,7 @@ WoditorEvCOMMAND_END
  | |■
  |-◇Else
  | |▼ 逃走失敗時
- | |■Load DB(User):  CSelf7[逃走メッセージ] = UserDB[ "用語設定":0:"[戦闘] 逃走コマンド名" ] (15:用語基本設定:31) 
+ | |■Load DB(User):  CSelf7[逃走メッセージ] = UserDB[ "Terms":0:"[Battle] Flee Command" ] (15:Basic Terms:31) 
  | |■Set String: CSelf7[逃走メッセージ] += "に失敗した！"
  | |■Call Event [Name]: ["X[戦]戦闘メッセージ表示"] <CommonEv 182>  / 0:表示→自動削除 / CSelf7[逃走メッセージ]
  | |●Label Jump [逃走戻り] >>>>>>>>>>>>>>>>>>>>>>>>>
@@ -695,7 +695,7 @@ WoditorEvCOMMAND_END
  |■Condition (Number):   [1] CSelf95[勝敗結果] ==  -1  
  |-◇Condition:  [1]  [ CSelf95[勝敗結果] == -1   ] Case↓
  | |▼ 負けてて、必要ならゲームオーバーイベントを呼び出す
- | |■Load DB(User):  CSelf30[ｹﾞｰﾑｵｰﾊﾞEv] = UserDB[ "システム設定":0:"[戦闘]ｹﾞｰﾑｵｰﾊﾞｰ時のEv" ] (17:システム基本設定:30) 
+ | |■Load DB(User):  CSelf30[ｹﾞｰﾑｵｰﾊﾞEv] = UserDB[ "System Settings":0:"[Battle] Event on Game Over" ] (17:Basic System Settings:30) 
  | |■Condition (Number):   [1] CSelf30[ｹﾞｰﾑｵｰﾊﾞEv] >=  0  
  | |-◇Condition:  [1]  [ CSelf30[ｹﾞｰﾑｵｰﾊﾞEv] >= 0   ] Case↓
  | | |■Set Variable: CSelf30[ｹﾞｰﾑｵｰﾊﾞEv] += 500000 + 0 

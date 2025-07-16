@@ -26,29 +26,29 @@ DATATYPE_20=2020
 NUMDATA_TYPE_NUM=0
 STRDATA_TYPE_NUM=21
 DATA_NUM=1
-TYPENAME=画像/音声設定
+TYPENAME=Images/Sounds
 ITEMNAME_NUM=21
-ITEMNAME0=ウィンドウ画像ファイル
-ITEMNAME1=カーソル画像ファイル
-ITEMNAME2=ﾒｯｾｰｼﾞｳｨﾝﾄﾞｳ ﾍﾞｰｽ画像
-ITEMNAME3=決定 効果音ファイル
-ITEMNAME4=キャンセル 効果音ファイル
-ITEMNAME5=カーソル 効果音ファイル
-ITEMNAME6=ブザー 効果音ファイル
-ITEMNAME7=装備時 効果音ファイル
-ITEMNAME8=装備解除 効果音ファイル
-ITEMNAME9=メニュー開く 効果音ファイル
-ITEMNAME10=メニュー閉じ 効果音ファイル
-ITEMNAME11=セーブ音 効果音ファイル
-ITEMNAME12=ロード音 効果音ファイル
-ITEMNAME13=購入時 効果音ファイル
-ITEMNAME14=売却時 効果音ファイル
-ITEMNAME15=戦闘行動 効果音ファイル
-ITEMNAME16=ダメージ 効果音ファイル
-ITEMNAME17=撃破時 効果音ファイル
-ITEMNAME18=戦闘開始 効果音ファイル
-ITEMNAME19=戦闘入手 効果音ファイル
-ITEMNAME20=レベルアップ 効果音ファイル
+ITEMNAME0=Window Image File
+ITEMNAME1=Cursor Image File
+ITEMNAME2=Message Window Base Image
+ITEMNAME3=Confirm Sound File
+ITEMNAME4=Cancel Sound File
+ITEMNAME5=Cursor Sound File
+ITEMNAME6=Buzzer Sound File
+ITEMNAME7=Equip Sound File
+ITEMNAME8=Unequip Sound File
+ITEMNAME9=Menu Open Sound File
+ITEMNAME10=Menu Close Sound File
+ITEMNAME11=Save Sound File
+ITEMNAME12=Load Sound File
+ITEMNAME13=Buy Sound File
+ITEMNAME14=Sell Sound File
+ITEMNAME15=Battle Action Sound File
+ITEMNAME16=Damage Sound File
+ITEMNAME17=Defeat Sound File
+ITEMNAME18=Battle Start Sound File
+ITEMNAME19=Battle Result Sound File
+ITEMNAME20=Level Up Sound File
 MEMO=
 ITEMTYPE_NUM=100
 ITEM_LOADTYPE_0=1
@@ -175,11 +175,11 @@ VMEMO_NAME_19=
 VMEMO_NAME_20=
 CHOICE_NUM=21
 CHOICE_NAME_0_NUM=1
-CHOICE_NAME_0_0=SystemGraphic
+CHOICE_NAME_0_0=SystemFile
 CHOICE_NAME_1_NUM=1
-CHOICE_NAME_1_0=SystemGraphic
+CHOICE_NAME_1_0=SystemFile
 CHOICE_NAME_2_NUM=1
-CHOICE_NAME_2_0=SystemGraphic
+CHOICE_NAME_2_0=SystemFile
 CHOICE_NAME_3_NUM=1
 CHOICE_NAME_3_0=SE
 CHOICE_NAME_4_NUM=1
@@ -282,7 +282,7 @@ DEFAULT_VAL_18=0
 DEFAULT_VAL_19=0
 DEFAULT_VAL_20=0
 <<--CSV_START-->>
-"ウィンドウ画像ファイル","カーソル画像ファイル","ﾒｯｾｰｼﾞｳｨﾝﾄﾞｳ ﾍﾞｰｽ画像","決定 効果音ファイル","キャンセル 効果音ファイル","カーソル 効果音ファイル","ブザー 効果音ファイル","装備時 効果音ファイル","装備解除 効果音ファイル","メニュー開く 効果音ファイル","メニュー閉じ 効果音ファイル","セーブ音 効果音ファイル","ロード音 効果音ファイル","購入時 効果音ファイル","売却時 効果音ファイル","戦闘行動 効果音ファイル","ダメージ 効果音ファイル","撃破時 効果音ファイル","戦闘開始 効果音ファイル","戦闘入手 効果音ファイル","レベルアップ 効果音ファイル",
+"Window Image File","Cursor Image File","Message Window Base Image","Confirm Sound File","Cancel Sound File","Cursor Sound File","Buzzer Sound File","Equip Sound File","Unequip Sound File","Menu Open Sound File","Menu Close Sound File","Save Sound File","Load Sound File","Buy Sound File","Sell Sound File","Battle Action Sound File","Damage Sound File","Defeat Sound File","Battle Start Sound File","Battle Result Sound File","Level Up Sound File",
 "SystemFile/WindowBase_amania.png","SystemFile/CursorBase.png","SystemFile/WindowBase.png","SystemFile/SE_Enter.ogg
 90
 100","SystemFile/SE_Cancel.ogg
@@ -315,6 +315,6 @@ DEFAULT_VAL_20=0
 100
 100","SystemFile/SE_LevelUp.ogg
 100
-100",<<!--DATANAME--!>>画像/音声基本設定,
+100",<<!--DATANAME--!>>Basic Images/Sounds,
 
 <<--CSV_END-->>

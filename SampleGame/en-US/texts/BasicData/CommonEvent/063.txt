@@ -188,7 +188,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("Ver2.20　座標倍率を縦横別に修正")
 [250][5,4]<0>(18,97,0,69632,1600088)("","基本ｼｽﾃﾑ用変数","","")
 [250][5,4]<0>(18,98,0,69632,1600089)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,0,24,332288,1600009)("","画像/音声設定","","ﾒｯｾｰｼﾞｳｨﾝﾄﾞｳ ﾍﾞｰｽ画像")
+[250][5,4]<0>(18,0,24,332288,1600009)("","Images/Sounds","","Message Window Base Image")
 [121][4,0]<0>(1600035,0,0,0)()
 [103][0,1]<0>()("メッセージウィンドウの表示位置とサイズを設定")
 [121][4,0]<0>(1600038,30,1600088,8192)()
@@ -293,8 +293,8 @@ WoditorEvCOMMAND_START
 [121][4,0]<5>(1600021,1600020,1,0)()
 [121][4,0]<5>(1600021,1600090,0,256)()
 [103][0,1]<5>()("システム設定の　メッセージ顔グラフィック　拡大率を反映")
-[250][5,4]<5>(19,0,26,332288,1600023)("","システム設定","","ﾒｯｾｰｼﾞ 顔ｸﾞﾗﾌｨｯｸ倍率")
-[250][5,4]<5>(19,0,26,332288,1600024)("","システム設定","","ﾒｯｾｰｼﾞ 顔ｸﾞﾗﾌｨｯｸ倍率")
+[250][5,4]<5>(19,0,26,332288,1600023)("","System Settings","","Message Face Image Scale")
+[250][5,4]<5>(19,0,26,332288,1600024)("","System Settings","","Message Face Image Scale")
 [150][2,0]<5>(20243,1600021)()
 [150][19,0]<5>(3165968,1600021,0,1,1,-1000000,255,1600044,1600045,1600023,-1000000,1600008,16777216,0,0,0,0,0,1600024)()
 [111][4,0]<5>(1,1600023,0,2)()
@@ -423,7 +423,7 @@ WoditorEvCOMMAND_END
 ▼ Ver2.20　座標倍率を縦横別に修正
 ■Load DB(Var):  CSelf88[座標倍率X(x10)] = VarDB[ "基本ｼｽﾃﾑ用変数":97:0 ] (18:座標倍率Ｘ[x10]:数値) 
 ■Load DB(Var):  CSelf89[座標倍率Y(x10)] = VarDB[ "基本ｼｽﾃﾑ用変数":98:0 ] (18:座標倍率Ｙ[x10]:数値) 
-■Load DB(User):  CSelf9[ウィンドウ画像ファイル] = UserDB[ "画像/音声設定":0:"ﾒｯｾｰｼﾞｳｨﾝﾄﾞｳ ﾍﾞｰｽ画像" ] (16:画像/音声基本設定:2) 
+■Load DB(User):  CSelf9[ウィンドウ画像ファイル] = UserDB[ "Images/Sounds":0:"Message Window Base Image" ] (16:Basic Images/Sounds:2) 
 ■Set Variable: CSelf35[ウィンドウ表示中フラグ] = 0 + 0 
 ▼ メッセージウィンドウの表示位置とサイズを設定
 ■Set Variable: CSelf38[サイズX] = 30 * CSelf88[座標倍率X(x10)] 
@@ -528,8 +528,8 @@ WoditorEvCOMMAND_END
  | | | | |■Set Variable: CSelf21[一時ピクチャ番号A] = CSelf20[基本ピクチャ番号] + 1 
  | | | | |■Set Variable: CSelf21[一時ピクチャ番号A] += CSelf90[顔表示用ピクチャカウンタ] + 0 
  | | | | |▼ システム設定の　メッセージ顔グラフィック　拡大率を反映
- | | | | |■Load DB(User):  CSelf23[拡大率（横）] = UserDB[ "システム設定":0:"ﾒｯｾｰｼﾞ 顔ｸﾞﾗﾌｨｯｸ倍率" ] (17:システム基本設定:25) 
- | | | | |■Load DB(User):  CSelf24[拡大率（縦）] = UserDB[ "システム設定":0:"ﾒｯｾｰｼﾞ 顔ｸﾞﾗﾌｨｯｸ倍率" ] (17:システム基本設定:25) 
+ | | | | |■Load DB(User):  CSelf23[拡大率（横）] = UserDB[ "System Settings":0:"Message Face Image Scale" ] (17:Basic System Settings:25) 
+ | | | | |■Load DB(User):  CSelf24[拡大率（縦）] = UserDB[ "System Settings":0:"Message Face Image Scale" ] (17:Basic System Settings:25) 
  | | | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号A] 
  | | | | |■Picture Show: CSelf21[一時ピクチャ番号A] [Bottom-Right] File(CSelf8[顔画像ファイル]) X:CSelf44[一時座標X] Y:CSelf45[一時座標Y] / 0(0)Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom CSelf23[拡大率（横）]xCSelf24[拡大率（縦）]% / Color Same
  | | | | |■Condition (Number):   [1] CSelf23[拡大率（横）] ==  0  

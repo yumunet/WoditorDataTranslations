@@ -184,7 +184,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600050,100,0,0)()
 [121][4,0]<0>(1600051,100,0,0)()
 [103][0,1]<0>()(" ")
-[250][5,4]<0>(8,-1,20,70144,1600025)("","状態設定","","")
+[250][5,4]<0>(8,-1,20,70144,1600025)("","States","","")
 [121][4,0]<0>(1600026,-1,0,0)()
 [179][1,0]<0>(1600025)()
 [103][0,1]<1>()("状態ターンが残っていれば反映")
@@ -192,8 +192,8 @@ WoditorEvCOMMAND_START
 [250][5,4]<1>(5,1600000,1600026,69632,1600023)("","┗ 状態リスト","","")
 [111][4,0]<1>(1,1600023,0,5)()
 [401][1,0]<1>(1)()
-[250][5,4]<2>(8,1600026,26,332336,1600050)("","状態設定","","MaxHP変化率[%]")
-[250][5,4]<2>(8,1600026,27,332336,1600051)("","状態設定","","MaxSP変化率[%]")
+[250][5,4]<2>(8,1600026,26,332336,1600050)("","States","","Max HP Change [%]")
+[250][5,4]<2>(8,1600026,27,332336,1600051)("","States","","Max SP Change [%]")
 [121][4,0]<2>(1600050,100,0,1024)()
 [121][4,0]<2>(1600051,100,0,1024)()
 [0][0,0]<2>()()
@@ -239,7 +239,7 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf50[MaxHP％変化値] = 100 + 0 
 ■Set Variable: CSelf51[MaxSP％変化値] = 100 + 0 
 ▼  
-■Load DB(User):  CSelf25[最大状態数] = UserDB[Type "状態設定"(8)'s Data Count]
+■Load DB(User):  CSelf25[最大状態数] = UserDB[Type "States"(8)'s Data Count]
 ■Set Variable: CSelf26[処理中状態] = -1 + 0 
 ■Repeat Loop [ CSelf25[最大状態数] ] Times
  |▼ 状態ターンが残っていれば反映
@@ -247,8 +247,8 @@ WoditorEvCOMMAND_END
  |■Load DB(Var):  CSelf23[残りターン] = VarDB[ "┗ 状態リスト":CSelf0[対象主人公ID]:CSelf26[処理中状態] ] (5:-:-) 
  |■Condition (Number):   [1] CSelf23[残りターン] !=  0  
  |-◇Condition:  [1]  [ CSelf23[残りターン] != 0   ] Case↓
- | |■Load DB(User):  CSelf50[MaxHP％変化値] *= UserDB[ "状態設定":CSelf26[処理中状態]:"MaxHP変化率[%]" ] (8:-:26) 
- | |■Load DB(User):  CSelf51[MaxSP％変化値] *= UserDB[ "状態設定":CSelf26[処理中状態]:"MaxSP変化率[%]" ] (8:-:27) 
+ | |■Load DB(User):  CSelf50[MaxHP％変化値] *= UserDB[ "States":CSelf26[処理中状態]:"Max HP Change [%]" ] (8:-:26) 
+ | |■Load DB(User):  CSelf51[MaxSP％変化値] *= UserDB[ "States":CSelf26[処理中状態]:"Max SP Change [%]" ] (8:-:27) 
  | |■Set Variable: CSelf50[MaxHP％変化値] /= 100 + 0 
  | |■Set Variable: CSelf51[MaxSP％変化値] /= 100 + 0 
  | |■

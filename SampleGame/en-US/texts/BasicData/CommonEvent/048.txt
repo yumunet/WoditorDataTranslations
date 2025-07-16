@@ -338,7 +338,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600011,-1,0,0)()
 [179][1,0]<0>(1600010)()
 [121][4,0]<1>(1600011,1,0,256)()
-[250][5,4]<1>(18,0,22,332288,1600013)("","システム設定","","装備可能欄数")
+[250][5,4]<1>(18,0,22,332288,1600013)("","System Settings","","Equippable Slots")
 [103][0,1]<1>()("ここから装備ごとにチェックするループ")
 [121][4,0]<1>(1600014,-1,0,0)()
 [121][4,0]<1>(1600012,1600090,1,4096)()
@@ -584,7 +584,7 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf11[処理中位置] = -1 + 0 
 ■Repeat Loop [ CSelf10[最大処理数] ] Times
  |■Set Variable: CSelf11[処理中位置] += 1 + 0 
- |■Load DB(User):  CSelf13[装備種類Max数] = UserDB[ "システム設定":0:"装備可能欄数" ] (17:システム基本設定:22) 
+ |■Load DB(User):  CSelf13[装備種類Max数] = UserDB[ "System Settings":0:"Equippable Slots" ] (17:Basic System Settings:22) 
  |▼ ここから装備ごとにチェックするループ
  |■Set Variable: CSelf14[注目装備] = -1 + 0 
  |■Set Variable: CSelf12[注目装備位置（DB側）] = CSelf90[装備チェック開始位置] - 1 

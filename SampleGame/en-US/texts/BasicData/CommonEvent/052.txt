@@ -189,7 +189,7 @@ WoditorEvCOMMAND_START
 [172][0,0]<1>()()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
-[250][5,4]<0>(18,0,0,332288,1600010)("","システム設定","","アイテム最大所持数")
+[250][5,4]<0>(18,0,0,332288,1600010)("","System Settings","","Maximum Item Quantity")
 [111][4,0]<0>(1,1600000,0,1)()
 [401][1,0]<0>(1)()
 [250][5,4]<1>(6,1600000,0,69632,1600099)("","┗所持防具個数","","")
@@ -233,7 +233,7 @@ WoditorEvCOMMAND_END
  |■Exit Event
  |■
 ◇End◇
-■Load DB(User):  CSelf10[最大所持数] = UserDB[ "システム設定":0:"アイテム最大所持数" ] (17:システム基本設定:0) 
+■Load DB(User):  CSelf10[最大所持数] = UserDB[ "System Settings":0:"Maximum Item Quantity" ] (17:Basic System Settings:0) 
 ■Condition (Number):   [1] CSelf0[防具番号] >=  0  
 -◇Condition:  [1]  [ CSelf0[防具番号] >= 0   ] Case↓
  |■Load DB(Var):  CSelf99[実増減数] = VarDB[ "┗所持防具個数":CSelf0[防具番号]:0 ] (9:-:所持個数) 

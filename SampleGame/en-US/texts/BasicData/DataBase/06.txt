@@ -9,13 +9,13 @@ DATATYPE_3=1001
 NUMDATA_TYPE_NUM=2
 STRDATA_TYPE_NUM=2
 DATA_NUM=19
-TYPENAME=戦闘コマンド
+TYPENAME=Battle Commands
 ITEMNAME_NUM=4
-ITEMNAME0=コマンド名
-ITEMNAME1=コマンドの説明文
-ITEMNAME2=コマンド選択時の効果
-ITEMNAME3=使用不能になる条件
-MEMO=戦闘中に選べる<<\n>>「コマンド」の種類を<<\n>>設定します。<<\n>><<\n>>コマンドを選んだ時に直接、<<\n>>技能を発動させたり、<<\n>>「特殊技能選択」欄を<<\n>>表示させたりもできます。<<\n>><<\n>>「攻撃」や「防御」も<<\n>>ここに含みます。<<\n>>
+ITEMNAME0=Command Name
+ITEMNAME1=Description
+ITEMNAME2=Effect on Selection
+ITEMNAME3=Condition to Disable
+MEMO=Set commands that can<<\n>>be selected in battle.<<\n>><<\n>>You can also set it so<<\n>>that when a command is<<\n>>selected, it triggers a skill<<\n>>or opens the skill selection<<\n>>window.<<\n>><<\n>>"Attack" and "Defend"<<\n>>are also included here.<<\n>>
 ITEMTYPE_NUM=100
 ITEM_LOADTYPE_0=0
 ITEM_LOADTYPE_1=0
@@ -126,12 +126,12 @@ CHOICE_NUM=4
 CHOICE_NAME_0_NUM=0
 CHOICE_NAME_1_NUM=0
 CHOICE_NAME_2_NUM=3
-CHOICE_NAME_2_0=<技能選択>
-CHOICE_NAME_2_1=<アイテム選択>
-CHOICE_NAME_2_2=<選択不能>
+CHOICE_NAME_2_0=<Select Skill>
+CHOICE_NAME_2_1=<Select Item>
+CHOICE_NAME_2_2=<Can't Select>
 CHOICE_NAME_3_NUM=2
-CHOICE_NAME_3_0=なし
-CHOICE_NAME_3_1=特殊技能封印で不能
+CHOICE_NAME_3_0=None
+CHOICE_NAME_3_1=Disable If Skills Are Limited
 CHOICE_VAL_NUM=4
 CHOICE_VAL_0_NUM=0
 CHOICE_VAL_1_NUM=0
@@ -148,7 +148,7 @@ DEFAULT_VAL_1=0
 DEFAULT_VAL_2=0
 DEFAULT_VAL_3=0
 <<--CSV_START-->>
-"コマンド名","コマンドの説明文","コマンド選択時の効果","使用不能になる条件",
+"Command Name","Description","Effect on Selection","Condition to Disable",
 "Attack","Normal Attack",0,0,
 "Item","Select an item",-2,0,
 "Skills","Select a Skill",-1,0,

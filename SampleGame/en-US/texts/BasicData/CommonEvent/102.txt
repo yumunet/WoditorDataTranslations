@@ -207,9 +207,9 @@ WoditorEvCOMMAND_START
 [250][5,4]<0>(18,7,0,69632,1600017)("","基本ｼｽﾃﾑ用変数","","")
 [250][5,4]<0>(18,6,0,69632,1600018)("","基本ｼｽﾃﾑ用変数","","")
 [250][5,4]<0>(18,5,0,69632,1600019)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(17,0,0,332288,1600008)("","画像/音声設定","","ウィンドウ画像ファイル")
-[250][5,4]<0>(17,0,0,332288,1600009)("","画像/音声設定","","カーソル画像ファイル")
-[250][5,4]<0>(18,0,22,332288,1600027)("","システム設定","","装備可能欄数")
+[250][5,4]<0>(17,0,0,332288,1600008)("","Images/Sounds","","Window Image File")
+[250][5,4]<0>(17,0,0,332288,1600009)("","Images/Sounds","","Cursor Image File")
+[250][5,4]<0>(18,0,22,332288,1600027)("","System Settings","","Equippable Slots")
 [103][0,1]<0>()("Ver2.20　座標倍率を縦横別に修正")
 [250][5,4]<0>(18,97,0,69632,1600095)("","基本ｼｽﾃﾑ用変数","","")
 [250][5,4]<0>(18,98,0,69632,1600096)("","基本ｼｽﾃﾑ用変数","","")
@@ -331,7 +331,7 @@ WoditorEvCOMMAND_START
 [122][2,1]<4>(1600007,256)("<\n>")
 [250][5,4]<4>(0,1600001,0,331792,1600007)("","主人公ステータス","","肩書き")
 [122][2,1]<4>(1600007,256)("　")
-[250][5,4]<4>(13,0,5,332304,1600007)("","用語設定","","[ｽﾃｰﾀｽ]レベル")
+[250][5,4]<4>(13,0,5,332304,1600007)("","Terms","","[Stats] Level")
 [250][5,4]<4>(0,1600001,0,331776,1600010)("","主人公ステータス","","レベル")
 [122][2,1]<4>(1600007,256)(" \cself[10]")
 [103][0,1]<4>()("表示位置は左上基点")
@@ -365,7 +365,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<4>()("HPの数値　（表示位置は左下基点）")
 [121][4,0]<4>(1600021,1600020,14,0)()
 [103][0,1]<4>()("ax,ayで横幅補正表示")
-[250][5,4]<4>(13,0,7,332288,1600007)("","用語設定","","[ｽﾃｰﾀｽ]HP名称")
+[250][5,4]<4>(13,0,7,332288,1600007)("","Terms","","[Stats] HP Name")
 [150][2,0]<4>(819,1600021)()
 [150][11,1]<4>(8224,1600021,0,1,1,1,255,0,0,100,0)("\f[\cself[18]]\cself[7]\ax[\cself[10]]<\n><R>\ay[0]\cself[90]\f[\cself[17]]/\cself[91]")
 [290][7,0]<4>(32,0,1600021,1600021,1600066,1600067,0)()
@@ -422,7 +422,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<4>()("SPの数値　（表示位置は左下基点）")
 [121][4,0]<4>(1600021,1600020,18,0)()
 [103][0,1]<4>()("ax,ayで横幅補正表示")
-[250][5,4]<4>(13,0,8,332288,1600007)("","用語設定","","[ｽﾃｰﾀｽ]SP名称")
+[250][5,4]<4>(13,0,8,332288,1600007)("","Terms","","[Stats] SP Name")
 [150][2,0]<4>(819,1600021)()
 [150][11,1]<4>(8224,1600021,0,1,1,1,255,0,0,100,0)("\f[\cself[18]]\cself[7]\ax[\cself[10]]<\n><R>\ay[0]\cself[92]\f[\cself[17]]/\cself[93]")
 [290][7,0]<4>(32,0,1600021,1600021,1600068,1600069,0)()
@@ -513,9 +513,9 @@ WoditorEvCOMMAND_END
 ■Load DB(Var):  CSelf17[最小フォントサイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":7:0 ] (18:システム最小フォントサイズ:数値) 
 ■Load DB(Var):  CSelf18[ミニフォントサイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":6:0 ] (18:システムミニフォントサイズ:数値) 
 ■Load DB(Var):  CSelf19[基本フォントサイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":5:0 ] (18:システム基本フォントサイズ:数値) 
-■Load DB(User):  CSelf8[ウィンドウ画像ファイル] = UserDB[ "画像/音声設定":0:"ウィンドウ画像ファイル" ] (16:画像/音声基本設定:0) 
-■Load DB(User):  CSelf9[カーソル画像ファイル] = UserDB[ "画像/音声設定":0:"カーソル画像ファイル" ] (16:画像/音声基本設定:1) 
-■Load DB(User):  CSelf27[装備欄 縦項目数] = UserDB[ "システム設定":0:"装備可能欄数" ] (17:システム基本設定:22) 
+■Load DB(User):  CSelf8[ウィンドウ画像ファイル] = UserDB[ "Images/Sounds":0:"Window Image File" ] (16:Basic Images/Sounds:0) 
+■Load DB(User):  CSelf9[カーソル画像ファイル] = UserDB[ "Images/Sounds":0:"Cursor Image File" ] (16:Basic Images/Sounds:1) 
+■Load DB(User):  CSelf27[装備欄 縦項目数] = UserDB[ "System Settings":0:"Equippable Slots" ] (17:Basic System Settings:22) 
 ▼ Ver2.20　座標倍率を縦横別に修正
 ■Load DB(Var):  CSelf95[座標倍率X[x10]] = VarDB[ "基本ｼｽﾃﾑ用変数":97:0 ] (18:座標倍率Ｘ[x10]:数値) 
 ■Load DB(Var):  CSelf96[座標倍率Y[x10]] = VarDB[ "基本ｼｽﾃﾑ用変数":98:0 ] (18:座標倍率Ｙ[x10]:数値) 
@@ -637,7 +637,7 @@ WoditorEvCOMMAND_END
  | | | |■Set String: CSelf7[表示項目名] += "\n"
  | | | |■Load DB(Var):  CSelf7[表示項目名] += VarDB[ "主人公ステータス":CSelf1[[1]主人公ID]:"肩書き" ] (0:-:1) 
  | | | |■Set String: CSelf7[表示項目名] += "　"
- | | | |■Load DB(User):  CSelf7[表示項目名] += UserDB[ "用語設定":0:"[ｽﾃｰﾀｽ]レベル" ] (15:用語基本設定:5) 
+ | | | |■Load DB(User):  CSelf7[表示項目名] += UserDB[ "Terms":0:"[Stats] Level" ] (15:Basic Terms:5) 
  | | | |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "主人公ステータス":CSelf1[[1]主人公ID]:"レベル" ] (0:-:4) 
  | | | |■Set String: CSelf7[表示項目名] += " \cself[10]"
  | | | |▼ 表示位置は左上基点
@@ -671,7 +671,7 @@ WoditorEvCOMMAND_END
  | | | |▼ HPの数値　（表示位置は左下基点）
  | | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 14 
  | | | |▼ ax,ayで横幅補正表示
- | | | |■Load DB(User):  CSelf7[表示項目名] = UserDB[ "用語設定":0:"[ｽﾃｰﾀｽ]HP名称" ] (15:用語基本設定:7) 
+ | | | |■Load DB(User):  CSelf7[表示項目名] = UserDB[ "Terms":0:"[Stats] HP Name" ] (15:Basic Terms:7) 
  | | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
  | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Bottom-Left] String[\f[\cself[18]]\c] X:0 Y:0 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf66[HP位置X] / Shift Y CSelf67[HP位置Y]  [0]Frames
@@ -728,7 +728,7 @@ WoditorEvCOMMAND_END
  | | | |▼ SPの数値　（表示位置は左下基点）
  | | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 18 
  | | | |▼ ax,ayで横幅補正表示
- | | | |■Load DB(User):  CSelf7[表示項目名] = UserDB[ "用語設定":0:"[ｽﾃｰﾀｽ]SP名称" ] (15:用語基本設定:8) 
+ | | | |■Load DB(User):  CSelf7[表示項目名] = UserDB[ "Terms":0:"[Stats] SP Name" ] (15:Basic Terms:8) 
  | | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
  | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Bottom-Left] String[\f[\cself[18]]\c] X:0 Y:0 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf68[SP位置X] / Shift Y CSelf69[SP位置Y]  [0]Frames
