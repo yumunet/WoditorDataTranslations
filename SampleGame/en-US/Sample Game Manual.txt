@@ -72,8 +72,8 @@ Resource Contributors
 
 - Enemy Image Resources
   ＧＤ (GD) (From WOLF RPG Editor Wiki)
-  * When using these resources, you must include the creator's name.
-    When "using them as is" or "modifying them to distribute as resources,"
+  * When distributing these resources, you must include the creator's name.
+    When "redistributing them as resources" or "modifying and distributing them as resources,"
     please be sure to include the creator's name.
 
 - MIDI Resources (Filenames have been changed for convenience.)
