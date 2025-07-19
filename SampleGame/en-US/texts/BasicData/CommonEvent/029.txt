@@ -188,7 +188,7 @@ COMMAND_NUM=34
 --
 WoditorEvCOMMAND_START
 [121][4,0]<0>(1600010,1600000,10,0)()
-[250][5,4]<0>(18,68,0,200704,1600018)("","基本ｼｽﾃﾑ用変数","[戦闘]戦闘中フラグ","")
+[250][5,4]<0>(18,68,0,200704,1600018)("","Base System Variables","[Battle] In Battle?","")
 [111][4,0]<0>(1,1600018,1,2)()
 [401][1,0]<0>(1)()
 [111][4,0]<1>(1,1600002,0,2)()
@@ -225,7 +225,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ■Set Variable: CSelf10[実対象スロット] = CSelf0[出現位置] + 10 
-■Load DB(Var):  CSelf18[戦闘中フラグ] = VarDB[ "基本ｼｽﾃﾑ用変数":"[戦闘]戦闘中フラグ":0 ] (18:68:数値) 
+■Load DB(Var):  CSelf18[戦闘中フラグ] = VarDB[ "Base System Variables":"[Battle] In Battle?":0 ] (18:68:Number) 
 ■Condition (Number):   [1] CSelf18[戦闘中フラグ] ==  1  
 -◇Condition:  [1]  [ CSelf18[戦闘中フラグ] == 1   ] Case↓
  |■Condition (Number):   [1] CSelf2[上書きオプション] ==  0  

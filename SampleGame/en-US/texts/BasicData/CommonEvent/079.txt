@@ -177,21 +177,21 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600022,0,0,0)()
 [121][4,0]<0>(1600021,-1,0,0)()
 [121][4,0]<0>(1600023,0,0,0)()
-[250][5,4]<0>(18,51,0,69632,1600016)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,68,0,200704,1600018)("","基本ｼｽﾃﾑ用変数","[戦闘]戦闘中フラグ","")
+[250][5,4]<0>(18,51,0,69632,1600016)("","Base System Variables","","")
+[250][5,4]<0>(18,68,0,200704,1600018)("","Base System Variables","[Battle] In Battle?","")
 [179][1,0]<0>(1600016)()
 [121][4,0]<1>(1600021,1,0,256)()
 [103][0,1]<1>()("パーティー情報DBからキャラIDを取得する")
 [121][4,0]<1>(1600010,1600021,1,0)()
-[250][5,4]<1>(3,0,1600010,69632,1600020)("","パーティー情報","","")
+[250][5,4]<1>(3,0,1600010,69632,1600020)("","Party","","")
 [111][4,0]<1>(17,1600020,0,1)()
 [401][1,0]<1>(1)()
 [121][4,0]<2>(1600022,1,0,256)()
 [111][4,0]<2>(1,1600023,1,1)()
 [401][1,0]<2>(1)()
 [103][0,1]<3>()("最後の空欄位置が前にあったら、そこへ飛ばす")
-[250][5,4]<3>(3,0,1600023,65536,1600020)("","パーティー情報","","")
-[250][5,4]<3>(3,0,1600010,65536,-1)("","パーティー情報","","")
+[250][5,4]<3>(3,0,1600023,65536,1600020)("","Party","","")
+[250][5,4]<3>(3,0,1600010,65536,-1)("","Party","","")
 [111][4,0]<3>(1,1600018,1,2)()
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("戦闘中なので戦闘中データも移動させる")
@@ -245,7 +245,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [498][0,0]<0>()()
 [103][0,1]<0>()("パーティー数を格納")
-[250][5,4]<0>(18,4,0,65536,1600022)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,4,0,65536,1600022)("","Base System Variables","","")
 [121][4,0]<0>(1600021,1600022,0,0)()
 [170][0,0]<0>()()
 [111][4,0]<1>(1,1600021,1600016,1)()
@@ -253,10 +253,10 @@ WoditorEvCOMMAND_START
 [171][0,0]<2>()()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
-[250][5,4]<1>(10,1600021,-2,65536,0)("","×┏ 戦闘一時ステータス[基]","","")
-[250][5,4]<1>(11,1600021,-2,65536,0)("","×┣ 属性耐性計算結果","","")
-[250][5,4]<1>(12,1600021,-2,65536,0)("","×┣ 状態耐性計算結果","","")
-[250][5,4]<1>(13,1600021,-2,65536,0)("","×┣ 状態リスト","","")
+[250][5,4]<1>(10,1600021,-2,65536,0)("","×┏Battle Temp Status","","")
+[250][5,4]<1>(11,1600021,-2,65536,0)("","×┣Element Resist Calc","","")
+[250][5,4]<1>(12,1600021,-2,65536,0)("","×┣State Resist Calc","","")
+[250][5,4]<1>(13,1600021,-2,65536,0)("","×┣State List","","")
 [121][4,0]<1>(1600021,1,0,256)()
 [0][0,0]<1>()()
 [498][0,0]<0>()()
@@ -278,21 +278,21 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf22[パーティーメンバー数] = 0 + 0 
 ■Set Variable: CSelf21[処理対象] = -1 + 0 
 ■Set Variable: CSelf23[最終の空欄位置] = 0 + 0 
-■Load DB(Var):  CSelf16[最大パーティ人数] = VarDB[ "基本ｼｽﾃﾑ用変数":51:0 ] (18:システム上最大パーティー人数:数値) 
-■Load DB(Var):  CSelf18[戦闘中フラグ] = VarDB[ "基本ｼｽﾃﾑ用変数":"[戦闘]戦闘中フラグ":0 ] (18:68:数値) 
+■Load DB(Var):  CSelf16[最大パーティ人数] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
+■Load DB(Var):  CSelf18[戦闘中フラグ] = VarDB[ "Base System Variables":"[Battle] In Battle?":0 ] (18:68:Number) 
 ■Repeat Loop [ CSelf16[最大パーティ人数] ] Times
  |■Set Variable: CSelf21[処理対象] += 1 + 0 
  |▼ パーティー情報DBからキャラIDを取得する
  |■Set Variable: CSelf10[一時変数A] = CSelf21[処理対象] + 1 
- |■Load DB(Var):  CSelf20[処理主人公ID] = VarDB[ "パーティー情報":0:CSelf10[一時変数A] ] (6:メイン設定:-) 
+ |■Load DB(Var):  CSelf20[処理主人公ID] = VarDB[ "Party":0:CSelf10[一時変数A] ] (6:Main Settings:-) 
  |■Condition (Number):   [1] CSelf20[処理主人公ID] >=  0  
  |-◇Condition:  [1]  [ CSelf20[処理主人公ID] >= 0   ] Case↓
  | |■Set Variable: CSelf22[パーティーメンバー数] += 1 + 0 
  | |■Condition (Number):   [1] CSelf23[最終の空欄位置] >=  1  
  | |-◇Condition:  [1]  [ CSelf23[最終の空欄位置] >= 1   ] Case↓
  | | |▼ 最後の空欄位置が前にあったら、そこへ飛ばす
- | | |■Write to DB(Var): VarDB[ "パーティー情報":0:CSelf23[最終の空欄位置] ] (6:メイン設定:-) =  CSelf20[処理主人公ID]
- | | |■Write to DB(Var): VarDB[ "パーティー情報":0:CSelf10[一時変数A] ] (6:メイン設定:-) =  -1
+ | | |■Write to DB(Var): VarDB[ "Party":0:CSelf23[最終の空欄位置] ] (6:Main Settings:-) =  CSelf20[処理主人公ID]
+ | | |■Write to DB(Var): VarDB[ "Party":0:CSelf10[一時変数A] ] (6:Main Settings:-) =  -1
  | | |■Condition (Number):   [1] CSelf18[戦闘中フラグ] ==  1  
  | | |-◇Condition:  [1]  [ CSelf18[戦闘中フラグ] == 1   ] Case↓
  | | | |▼ 戦闘中なので戦闘中データも移動させる
@@ -346,7 +346,7 @@ WoditorEvCOMMAND_END
  |■
 ◇Loop End Point◇◇
 ▼ パーティー数を格納
-■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":4:0 ] (18:現在パーティー人数:数値) =  CSelf22[パーティーメンバー数]
+■Write to DB(Var): VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) =  CSelf22[パーティーメンバー数]
 ■Set Variable: CSelf21[処理対象] = CSelf22[パーティーメンバー数] + 0 
 ■Loop Start
  |■Condition (Number):   [1] CSelf21[処理対象] >=  CSelf16[最大パーティ人数]  
@@ -354,10 +354,10 @@ WoditorEvCOMMAND_END
  | |■Break Loop
  | |■
  |◇End◇
- |■Write to DB(Var): [Reset Type "×┏ 戦闘一時ステータス[基]"(10) Data CSelf21[処理対象]]
- |■Write to DB(Var): [Reset Type "×┣ 属性耐性計算結果"(11) Data CSelf21[処理対象]]
- |■Write to DB(Var): [Reset Type "×┣ 状態耐性計算結果"(12) Data CSelf21[処理対象]]
- |■Write to DB(Var): [Reset Type "×┣ 状態リスト"(13) Data CSelf21[処理対象]]
+ |■Write to DB(Var): [Reset Type "×┏Battle Temp Status"(10) Data CSelf21[処理対象]]
+ |■Write to DB(Var): [Reset Type "×┣Element Resist Calc"(11) Data CSelf21[処理対象]]
+ |■Write to DB(Var): [Reset Type "×┣State Resist Calc"(12) Data CSelf21[処理対象]]
+ |■Write to DB(Var): [Reset Type "×┣State List"(13) Data CSelf21[処理対象]]
  |■Set Variable: CSelf21[処理対象] += 1 + 0 
  |■
 ◇Loop End Point◇◇

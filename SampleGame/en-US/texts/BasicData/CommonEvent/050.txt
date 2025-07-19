@@ -199,14 +199,14 @@ WoditorEvCOMMAND_START
 [250][5,4]<0>(17,0,0,332288,1600010)("","System Settings","","Maximum Item Quantity")
 [111][4,0]<0>(1,1600000,0,1)()
 [401][1,0]<0>(1)()
-[250][5,4]<1>(4,1600000,0,69632,1600099)("","┣所持アイテム個数","","")
+[250][5,4]<1>(4,1600000,0,69632,1600099)("","┣ Owned Item Count","","")
 [103][0,1]<1>()("個数を加算")
-[250][5,4]<1>(4,1600000,0,65552,1600001)("","┣所持アイテム個数","","")
+[250][5,4]<1>(4,1600000,0,65552,1600001)("","┣ Owned Item Count","","")
 [103][0,1]<1>()("0個以上、最大所持数以下になるように調整")
-[250][5,4]<1>(4,1600000,0,65632,0)("","┣所持アイテム個数","","")
-[250][5,4]<1>(4,1600000,0,65648,1600010)("","┣所持アイテム個数","","")
+[250][5,4]<1>(4,1600000,0,65632,0)("","┣ Owned Item Count","","")
+[250][5,4]<1>(4,1600000,0,65648,1600010)("","┣ Owned Item Count","","")
 [103][0,1]<1>()(" ")
-[250][5,4]<1>(4,1600000,0,69664,1600099)("","┣所持アイテム個数","","")
+[250][5,4]<1>(4,1600000,0,69664,1600099)("","┣ Owned Item Count","","")
 [121][4,0]<1>(1600099,-1,0,768)()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
@@ -242,14 +242,14 @@ WoditorEvCOMMAND_END
 ■Load DB(User):  CSelf10[最大所持数] = UserDB[ "System Settings":0:"Maximum Item Quantity" ] (17:Basic System Settings:0) 
 ■Condition (Number):   [1] CSelf0[アイテム番号] >=  0  
 -◇Condition:  [1]  [ CSelf0[アイテム番号] >= 0   ] Case↓
- |■Load DB(Var):  CSelf99[実像減数] = VarDB[ "┣所持アイテム個数":CSelf0[アイテム番号]:0 ] (7:-:所持個数) 
+ |■Load DB(Var):  CSelf99[実像減数] = VarDB[ "┣ Owned Item Count":CSelf0[アイテム番号]:0 ] (7:-:Quantity Owned) 
  |▼ 個数を加算
- |■Write to DB(Var): VarDB[ "┣所持アイテム個数":CSelf0[アイテム番号]:0 ] (7:-:所持個数) +=  CSelf1[増減数]
+ |■Write to DB(Var): VarDB[ "┣ Owned Item Count":CSelf0[アイテム番号]:0 ] (7:-:Quantity Owned) +=  CSelf1[増減数]
  |▼ 0個以上、最大所持数以下になるように調整
- |■Write to DB(Var): VarDB[ "┣所持アイテム個数":CSelf0[アイテム番号]:0 ] (7:-:所持個数) Lower Bound  0
- |■Write to DB(Var): VarDB[ "┣所持アイテム個数":CSelf0[アイテム番号]:0 ] (7:-:所持個数) Upper Bound  CSelf10[最大所持数]
+ |■Write to DB(Var): VarDB[ "┣ Owned Item Count":CSelf0[アイテム番号]:0 ] (7:-:Quantity Owned) Lower Bound  0
+ |■Write to DB(Var): VarDB[ "┣ Owned Item Count":CSelf0[アイテム番号]:0 ] (7:-:Quantity Owned) Upper Bound  CSelf10[最大所持数]
  |▼  
- |■Load DB(Var):  CSelf99[実像減数] -= VarDB[ "┣所持アイテム個数":CSelf0[アイテム番号]:0 ] (7:-:所持個数) 
+ |■Load DB(Var):  CSelf99[実像減数] -= VarDB[ "┣ Owned Item Count":CSelf0[アイテム番号]:0 ] (7:-:Quantity Owned) 
  |■Set Variable: CSelf99[実像減数] *= -1 + 0 
  |■
 ◇End◇

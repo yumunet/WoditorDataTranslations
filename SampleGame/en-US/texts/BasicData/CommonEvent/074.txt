@@ -185,20 +185,20 @@ WoditorEvCOMMAND_START
 [401][1,0]<0>(1)()
 [103][0,1]<1>()("リセット")
 [212][0,1]<1>()("変化値リセット")
-[250][5,4]<1>(21,78,0,65536,0)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(21,79,0,65536,-1)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(21,80,0,65536,0)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(21,81,0,65536,0)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(21,82,0,65536,0)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(21,83,0,65536,0)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(21,84,0,65536,0)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(21,85,0,65536,0)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(21,86,0,65536,0)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(21,87,0,65536,0)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(21,88,0,65536,0)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(21,89,0,65536,0)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(21,90,0,65536,0)("","基本ｼｽﾃﾑ用変数","","")
-[250][4,4]<1>(21,90,1,65538)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<1>(21,78,0,65536,0)("","Base System Variables","","")
+[250][5,4]<1>(21,79,0,65536,-1)("","Base System Variables","","")
+[250][5,4]<1>(21,80,0,65536,0)("","Base System Variables","","")
+[250][5,4]<1>(21,81,0,65536,0)("","Base System Variables","","")
+[250][5,4]<1>(21,82,0,65536,0)("","Base System Variables","","")
+[250][5,4]<1>(21,83,0,65536,0)("","Base System Variables","","")
+[250][5,4]<1>(21,84,0,65536,0)("","Base System Variables","","")
+[250][5,4]<1>(21,85,0,65536,0)("","Base System Variables","","")
+[250][5,4]<1>(21,86,0,65536,0)("","Base System Variables","","")
+[250][5,4]<1>(21,87,0,65536,0)("","Base System Variables","","")
+[250][5,4]<1>(21,88,0,65536,0)("","Base System Variables","","")
+[250][5,4]<1>(21,89,0,65536,0)("","Base System Variables","","")
+[250][5,4]<1>(21,90,0,65536,0)("","Base System Variables","","")
+[250][4,4]<1>(21,90,1,65538)("","Base System Variables","","")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [103][0,1]<0>()("レベル増減がなければ終了")
@@ -209,7 +209,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<0>()()
 [103][0,1]<0>()("読み込み")
 [250][5,4]<0>(19,0,23,332288,1600021)("","System Settings","","When Increasing Stats...")
-[250][5,4]<0>(21,79,0,69632,1600032)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(21,79,0,69632,1600032)("","Base System Variables","","")
 [103][0,1]<0>()("レベルアップかレベルダウンか")
 [121][4,0]<0>(1600020,1,0,0)()
 [111][4,0]<0>(1,1600001,-1,3)()
@@ -219,10 +219,10 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [103][0,1]<0>()("繰り返す")
-[250][5,4]<0>(0,1600000,5,331776,1600031)("","主人公ステータス","","限界レベル")
+[250][5,4]<0>(0,1600000,5,331776,1600031)("","Allies","","Max Level")
 [179][1,0]<0>(1600001)()
 [103][0,1]<1>()("すでに最大レベルなら成長なし")
-[250][5,4]<1>(0,1600000,4,331776,1600030)("","主人公ステータス","","レベル")
+[250][5,4]<1>(0,1600000,4,331776,1600030)("","Allies","","Level")
 [111][7,0]<1>(2,1600020,1,2,1600020,-1,2)()
 [401][1,0]<1>(1)()
 [103][0,1]<2>()("レベルアップで対象のレベルがすでに限界の場合は終了")
@@ -245,20 +245,20 @@ WoditorEvCOMMAND_START
 [103][0,1]<1>()("ここから成長処理")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<1>()("各種成長率取得")
-[250][5,4]<1>(0,1600000,17,331776,1600033)("","主人公ステータス","","[成長]最大HP増加 /1Lv")
-[250][5,4]<1>(0,1600000,18,331776,1600034)("","主人公ステータス","","[成長]最大SP増加 /1Lv")
-[250][5,4]<1>(0,1600000,19,331776,1600035)("","主人公ステータス","","[成長]攻撃力増加 /1Lv")
-[250][5,4]<1>(0,1600000,20,331776,1600036)("","主人公ステータス","","[成長]防御力増加 /1Lv")
-[250][5,4]<1>(0,1600000,21,331776,1600037)("","主人公ステータス","","[成長]精神攻撃増加 /1Lv")
-[250][5,4]<1>(0,1600000,22,331776,1600038)("","主人公ステータス","","[成長]精神防御増加 /1Lv")
-[250][5,4]<1>(0,1600000,23,331776,1600039)("","主人公ステータス","","[成長]敏捷性増加 /1Lv")
-[250][5,4]<1>(0,1600000,24,331776,1600040)("","主人公ステータス","","[成長]命中率増加 /1Lv")
-[250][5,4]<1>(0,1600000,25,331776,1600041)("","主人公ステータス","","[成長]回避率増加 /1Lv")
-[250][5,4]<1>(0,1600000,26,331776,1600042)("","主人公ステータス","","[成長]ｸﾘﾃｨｶﾙ増加 /1Lv")
+[250][5,4]<1>(0,1600000,17,331776,1600033)("","Allies","","[Growth] Max HP Add /1Lv")
+[250][5,4]<1>(0,1600000,18,331776,1600034)("","Allies","","[Growth] Max SP Add /1Lv")
+[250][5,4]<1>(0,1600000,19,331776,1600035)("","Allies","","[Growth] Attack Add /1Lv")
+[250][5,4]<1>(0,1600000,20,331776,1600036)("","Allies","","[Growth] Defense Add /1Lv")
+[250][5,4]<1>(0,1600000,21,331776,1600037)("","Allies","","[Growth] Magic Atk Add /1Lv")
+[250][5,4]<1>(0,1600000,22,331776,1600038)("","Allies","","[Growth] Magic Def Add /1Lv")
+[250][5,4]<1>(0,1600000,23,331776,1600039)("","Allies","","[Growth] Agility Add /1Lv")
+[250][5,4]<1>(0,1600000,24,331776,1600040)("","Allies","","[Growth] Accuracy Add /1Lv")
+[250][5,4]<1>(0,1600000,25,331776,1600041)("","Allies","","[Growth] Evasion Add /1Lv")
+[250][5,4]<1>(0,1600000,26,331776,1600042)("","Allies","","[Growth] Critical Rt Add /1Lv")
 [103][0,1]<1>()(" ")
-[250][5,4]<1>(0,1600000,58,331776,1600043)("","主人公ステータス","","現Lvの必要経験値")
-[250][5,4]<1>(0,1600000,59,331776,1600044)("","主人公ステータス","","必要経験値増加率[%]")
-[250][5,4]<1>(0,1600000,60,331776,1600045)("","主人公ステータス","","必要経験値増加[固定値]")
+[250][5,4]<1>(0,1600000,58,331776,1600043)("","Allies","","Current Level Required EXP")
+[250][5,4]<1>(0,1600000,59,331776,1600044)("","Allies","","Required EXP Incr Rate [%]")
+[250][5,4]<1>(0,1600000,60,331776,1600045)("","Allies","","Required EXP Incr[FixedValue]")
 [103][0,1]<1>()(" ")
 [103][0,1]<1>()("主人公IDをチェック（もし主人公IDが変わっていた場合はリセット）")
 [111][7,0]<1>(2,1600032,-1,5,1600032,-1,2)()
@@ -271,7 +271,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
 [103][0,1]<2>()("-1なら主人公IDを格納")
-[250][5,4]<2>(21,79,0,65536,1600000)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<2>(21,79,0,65536,1600000)("","Base System Variables","","")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [103][0,1]<1>()("－－－－－－－－－－－－－－－－－－－－－－－－")
@@ -301,23 +301,23 @@ WoditorEvCOMMAND_START
 [300][6,1]<1>(0,4,1600000,36,1600041,0)("X[移]パラメータ増減")
 [300][6,1]<1>(0,4,1600000,37,1600042,0)("X[移]パラメータ増減")
 [103][0,1]<1>()("能力値アップ履歴を保存")
-[250][5,4]<1>(21,78,0,65552,1600020)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<1>(21,78,0,65552,1600020)("","Base System Variables","","")
 [121][4,0]<1>(1600099,1600020,0,256)()
-[250][5,4]<1>(21,80,0,65552,1600033)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(21,81,0,65552,1600034)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(21,82,0,65552,1600035)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(21,83,0,65552,1600036)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(21,84,0,65552,1600037)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(21,85,0,65552,1600038)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(21,86,0,65552,1600039)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(21,87,0,65552,1600040)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(21,88,0,65552,1600041)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(21,89,0,65552,1600042)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<1>(21,80,0,65552,1600033)("","Base System Variables","","")
+[250][5,4]<1>(21,81,0,65552,1600034)("","Base System Variables","","")
+[250][5,4]<1>(21,82,0,65552,1600035)("","Base System Variables","","")
+[250][5,4]<1>(21,83,0,65552,1600036)("","Base System Variables","","")
+[250][5,4]<1>(21,84,0,65552,1600037)("","Base System Variables","","")
+[250][5,4]<1>(21,85,0,65552,1600038)("","Base System Variables","","")
+[250][5,4]<1>(21,86,0,65552,1600039)("","Base System Variables","","")
+[250][5,4]<1>(21,87,0,65552,1600040)("","Base System Variables","","")
+[250][5,4]<1>(21,88,0,65552,1600041)("","Base System Variables","","")
+[250][5,4]<1>(21,89,0,65552,1600042)("","Base System Variables","","")
 [103][0,1]<1>()("－－－－－－－－－－－－－－－－－－－－－－－－")
 [103][0,1]<1>()("レベルを＋１　＆　次経験値を算出")
 [103][0,1]<1>()("－－－－－－－－－－－－－－－－－－－－－－－－")
-[250][5,4]<1>(0,1600000,4,327696,1600020)("","主人公ステータス","","レベル")
-[250][5,4]<1>(0,1600000,4,331776,1600030)("","主人公ステータス","","レベル")
+[250][5,4]<1>(0,1600000,4,327696,1600020)("","Allies","","Level")
+[250][5,4]<1>(0,1600000,4,331776,1600030)("","Allies","","Level")
 [103][0,1]<1>()("－－－－－－－－－－－－－－－－－－－－－－－－")
 [111][7,0]<1>(2,1600020,1,1,1600020,-1,3)()
 [401][1,0]<1>(1)()
@@ -331,7 +331,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [121][4,0]<1>(1600043,1,0,1536)()
-[250][5,4]<1>(0,1600000,58,327680,1600043)("","主人公ステータス","","現Lvの必要経験値")
+[250][5,4]<1>(0,1600000,58,327680,1600043)("","Allies","","Current Level Required EXP")
 [103][0,1]<1>()("－－－－－－－－－－－－－－－－－－－－－－－－")
 [103][0,1]<1>()("習得技能がないかチェック")
 [103][0,1]<1>()("－－－－－－－－－－－－－－－－－－－－－－－－")
@@ -339,26 +339,26 @@ WoditorEvCOMMAND_START
 [179][1,0]<1>(50)()
 [121][4,0]<2>(1600010,1,0,256)()
 [121][4,0]<2>(1600011,1600010,2,8192)()
-[250][5,4]<2>(1,1600000,1600011,69632,1600047)("","┣ 技能習得Lv","","")
+[250][5,4]<2>(1,1600000,1600011,69632,1600047)("","┣ Skill Learning Lv","","")
 [111][4,0]<2>(1,1600047,1,1)()
 [401][1,0]<2>(1)()
 [111][4,0]<3>(1,1600047,1600030,3)()
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("習得レベルが現在以下のものは、念のため全て習得レベルを０にする（レベルが下がっても忘れなくなる）")
-[250][5,4]<4>(1,1600000,1600011,65536,0)("","┣ 技能習得Lv","","")
+[250][5,4]<4>(1,1600000,1600011,65536,0)("","┣ Skill Learning Lv","","")
 [121][4,0]<4>(1600011,1600010,2,8192)()
 [121][4,0]<4>(1600011,1,0,256)()
 [103][0,1]<4>()("新しいレベルと同じ習得レベルなら覚えたメッセージを追加")
 [111][4,0]<4>(1,1600047,1600030,2)()
 [401][1,0]<4>(1)()
 [103][0,1]<5>()("新たに覚えた技能を追加")
-[250][5,4]<5>(1,1600000,1600011,69632,1600048)("","┣ 技能習得Lv","","")
+[250][5,4]<5>(1,1600000,1600011,69632,1600048)("","┣ Skill Learning Lv","","")
 [111][4,0]<5>(1,1600048,0,1)()
 [401][1,0]<5>(1)()
-[250][5,4]<6>(21,90,0,65552,1)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<6>(21,90,0,65552,1)("","Base System Variables","","")
 [103][0,1]<6>()("ここで「～～を習得した！」　文字列を追加")
 [250][5,4]<6>(0,1600048,0,332288,1600009)("","Skills","","Skill Name")
-[250][4,4]<6>(21,90,1,65554)("\cself[9] を習得！<\n>","基本ｼｽﾃﾑ用変数","","")
+[250][4,4]<6>(21,90,1,65554)("\cself[9] を習得！<\n>","Base System Variables","","")
 [99][1,0]<6>(0)()
 [0][0,0]<6>()()
 [499][0,0]<5>()()
@@ -394,20 +394,20 @@ WoditorEvCOMMAND_END
 -◇Condition:  [1]  [ CSelf2[オプション] == 0   ] Case↓
  |▼ リセット
  |●Label Point [変化値リセット] <<<<<<<<<<<<<<<<<<<<<<<<★
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":78:0 ] (18:[Lvup]LvUPした数:数値) =  0
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":79:0 ] (18:[Lvup]LvUP主人公ID:数値) =  -1
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":80:0 ] (18:[Lvup]最大HP増加:数値) =  0
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":81:0 ] (18:[Lvup]最大SP増加:数値) =  0
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":82:0 ] (18:[Lvup]攻撃力増加:数値) =  0
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":83:0 ] (18:[Lvup]防御力増加:数値) =  0
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":84:0 ] (18:[Lvup]精神攻撃増加:数値) =  0
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":85:0 ] (18:[Lvup]精神防御増加:数値) =  0
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":86:0 ] (18:[Lvup]敏捷度増加:数値) =  0
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":87:0 ] (18:[Lvup]命中率増加:数値) =  0
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":88:0 ] (18:[Lvup]回避率増加:数値) =  0
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":89:0 ] (18:[Lvup]クリティカル増加:数値) =  0
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":90:0 ] (18:[Lvup]習得技能[文字列]:数値) =  0
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":90:1 ] (18:[Lvup]習得技能[文字列]:文字列) =  
+ |■Write to DB(Var): VarDB[ "Base System Variables":78:0 ] (18:[LvUp] Level-Up Count:Number) =  0
+ |■Write to DB(Var): VarDB[ "Base System Variables":79:0 ] (18:[LvUp] Level-Up Ally ID:Number) =  -1
+ |■Write to DB(Var): VarDB[ "Base System Variables":80:0 ] (18:[LvUp] Max HP Increase:Number) =  0
+ |■Write to DB(Var): VarDB[ "Base System Variables":81:0 ] (18:[LvUp] Max SP Increase:Number) =  0
+ |■Write to DB(Var): VarDB[ "Base System Variables":82:0 ] (18:[LvUp] Attack Increase:Number) =  0
+ |■Write to DB(Var): VarDB[ "Base System Variables":83:0 ] (18:[LvUp] Defense Increase:Number) =  0
+ |■Write to DB(Var): VarDB[ "Base System Variables":84:0 ] (18:[LvUp] Magic Atk Increase:Number) =  0
+ |■Write to DB(Var): VarDB[ "Base System Variables":85:0 ] (18:[LvUp] Magic Def Increase:Number) =  0
+ |■Write to DB(Var): VarDB[ "Base System Variables":86:0 ] (18:[LvUp] Agility Increase:Number) =  0
+ |■Write to DB(Var): VarDB[ "Base System Variables":87:0 ] (18:[LvUp] Accuracy Increase:Number) =  0
+ |■Write to DB(Var): VarDB[ "Base System Variables":88:0 ] (18:[LvUp] Evasion Increase:Number) =  0
+ |■Write to DB(Var): VarDB[ "Base System Variables":89:0 ] (18:[LvUp] Critical Rate Increase:Number) =  0
+ |■Write to DB(Var): VarDB[ "Base System Variables":90:0 ] (18:[LvUp] Learned Skill [String]:Number) =  0
+ |■Write to DB(Var): VarDB[ "Base System Variables":90:1 ] (18:[LvUp] Learned Skill [String]:String) =  
  |■
 ◇End◇
 ▼ レベル増減がなければ終了
@@ -418,7 +418,7 @@ WoditorEvCOMMAND_END
 ◇End◇
 ▼ 読み込み
 ■Load DB(User):  CSelf21[成長率は1/10？] = UserDB[ "System Settings":0:"When Increasing Stats..." ] (17:Basic System Settings:23) 
-■Load DB(Var):  CSelf32[主人公ID] = VarDB[ "基本ｼｽﾃﾑ用変数":79:0 ] (18:[Lvup]LvUP主人公ID:数値) 
+■Load DB(Var):  CSelf32[主人公ID] = VarDB[ "Base System Variables":79:0 ] (18:[LvUp] Level-Up Ally ID:Number) 
 ▼ レベルアップかレベルダウンか
 ■Set Variable: CSelf20[レベルアップ(1)ダウン(-1)] = 1 + 0 
 ■Condition (Number):   [1] CSelf1[レベル増減] <=  -1  
@@ -428,10 +428,10 @@ WoditorEvCOMMAND_END
  |■
 ◇End◇
 ▼ 繰り返す
-■Load DB(Var):  CSelf31[限界レベル] = VarDB[ "主人公ステータス":CSelf0[主人公データID]:"限界レベル" ] (0:-:5) 
+■Load DB(Var):  CSelf31[限界レベル] = VarDB[ "Allies":CSelf0[主人公データID]:"Max Level" ] (0:-:5) 
 ■Repeat Loop [ CSelf1[レベル増減] ] Times
  |▼ すでに最大レベルなら成長なし
- |■Load DB(Var):  CSelf30[対象のレベル] = VarDB[ "主人公ステータス":CSelf0[主人公データID]:"レベル" ] (0:-:4) 
+ |■Load DB(Var):  CSelf30[対象のレベル] = VarDB[ "Allies":CSelf0[主人公データID]:"Level" ] (0:-:4) 
  |■Condition (Number):   [1] CSelf20[レベルアップ(1)ダウン(-1)] ==  1  /  [2] CSelf20[レベルアップ(1)ダウン(-1)] ==  -1  
  |-◇Condition:  [1]  [ CSelf20[レベルアップ(1)ダウン(-1)] == 1   ] Case↓
  | |▼ レベルアップで対象のレベルがすでに限界の場合は終了
@@ -454,20 +454,20 @@ WoditorEvCOMMAND_END
  |▼ ここから成長処理
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■
  |▼ 各種成長率取得
- |■Load DB(Var):  CSelf33[MaxHP成長度] = VarDB[ "主人公ステータス":CSelf0[主人公データID]:"[成長]最大HP増加 /1Lv" ] (0:-:18) 
- |■Load DB(Var):  CSelf34[MaxSP成長度] = VarDB[ "主人公ステータス":CSelf0[主人公データID]:"[成長]最大SP増加 /1Lv" ] (0:-:19) 
- |■Load DB(Var):  CSelf35[攻撃力成長度] = VarDB[ "主人公ステータス":CSelf0[主人公データID]:"[成長]攻撃力増加 /1Lv" ] (0:-:20) 
- |■Load DB(Var):  CSelf36[防御力成長度] = VarDB[ "主人公ステータス":CSelf0[主人公データID]:"[成長]防御力増加 /1Lv" ] (0:-:21) 
- |■Load DB(Var):  CSelf37[精神攻撃成長度] = VarDB[ "主人公ステータス":CSelf0[主人公データID]:"[成長]精神攻撃増加 /1Lv" ] (0:-:22) 
- |■Load DB(Var):  CSelf38[精神防御成長度] = VarDB[ "主人公ステータス":CSelf0[主人公データID]:"[成長]精神防御増加 /1Lv" ] (0:-:23) 
- |■Load DB(Var):  CSelf39[敏捷度成長度] = VarDB[ "主人公ステータス":CSelf0[主人公データID]:"[成長]敏捷性増加 /1Lv" ] (0:-:24) 
- |■Load DB(Var):  CSelf40[命中率成長度] = VarDB[ "主人公ステータス":CSelf0[主人公データID]:"[成長]命中率増加 /1Lv" ] (0:-:25) 
- |■Load DB(Var):  CSelf41[回避率成長度] = VarDB[ "主人公ステータス":CSelf0[主人公データID]:"[成長]回避率増加 /1Lv" ] (0:-:26) 
- |■Load DB(Var):  CSelf42[ｸﾘﾃｨｶﾙ率成長度] = VarDB[ "主人公ステータス":CSelf0[主人公データID]:"[成長]ｸﾘﾃｨｶﾙ増加 /1Lv" ] (0:-:27) 
+ |■Load DB(Var):  CSelf33[MaxHP成長度] = VarDB[ "Allies":CSelf0[主人公データID]:"[Growth] Max HP Add /1Lv" ] (0:-:18) 
+ |■Load DB(Var):  CSelf34[MaxSP成長度] = VarDB[ "Allies":CSelf0[主人公データID]:"[Growth] Max SP Add /1Lv" ] (0:-:19) 
+ |■Load DB(Var):  CSelf35[攻撃力成長度] = VarDB[ "Allies":CSelf0[主人公データID]:"[Growth] Attack Add /1Lv" ] (0:-:20) 
+ |■Load DB(Var):  CSelf36[防御力成長度] = VarDB[ "Allies":CSelf0[主人公データID]:"[Growth] Defense Add /1Lv" ] (0:-:21) 
+ |■Load DB(Var):  CSelf37[精神攻撃成長度] = VarDB[ "Allies":CSelf0[主人公データID]:"[Growth] Magic Atk Add /1Lv" ] (0:-:22) 
+ |■Load DB(Var):  CSelf38[精神防御成長度] = VarDB[ "Allies":CSelf0[主人公データID]:"[Growth] Magic Def Add /1Lv" ] (0:-:23) 
+ |■Load DB(Var):  CSelf39[敏捷度成長度] = VarDB[ "Allies":CSelf0[主人公データID]:"[Growth] Agility Add /1Lv" ] (0:-:24) 
+ |■Load DB(Var):  CSelf40[命中率成長度] = VarDB[ "Allies":CSelf0[主人公データID]:"[Growth] Accuracy Add /1Lv" ] (0:-:25) 
+ |■Load DB(Var):  CSelf41[回避率成長度] = VarDB[ "Allies":CSelf0[主人公データID]:"[Growth] Evasion Add /1Lv" ] (0:-:26) 
+ |■Load DB(Var):  CSelf42[ｸﾘﾃｨｶﾙ率成長度] = VarDB[ "Allies":CSelf0[主人公データID]:"[Growth] Critical Rt Add /1Lv" ] (0:-:27) 
  |▼  
- |■Load DB(Var):  CSelf43[次必要経験値] = VarDB[ "主人公ステータス":CSelf0[主人公データID]:"現Lvの必要経験値" ] (0:-:55) 
- |■Load DB(Var):  CSelf44[必要経験値増加率[%]] = VarDB[ "主人公ステータス":CSelf0[主人公データID]:"必要経験値増加率[%]" ] (0:-:56) 
- |■Load DB(Var):  CSelf45[必要経験値増加率[固定値]] = VarDB[ "主人公ステータス":CSelf0[主人公データID]:"必要経験値増加[固定値]" ] (0:-:57) 
+ |■Load DB(Var):  CSelf43[次必要経験値] = VarDB[ "Allies":CSelf0[主人公データID]:"Current Level Required EXP" ] (0:-:55) 
+ |■Load DB(Var):  CSelf44[必要経験値増加率[%]] = VarDB[ "Allies":CSelf0[主人公データID]:"Required EXP Incr Rate [%]" ] (0:-:56) 
+ |■Load DB(Var):  CSelf45[必要経験値増加率[固定値]] = VarDB[ "Allies":CSelf0[主人公データID]:"Required EXP Incr[FixedValue]" ] (0:-:57) 
  |▼  
  |▼ 主人公IDをチェック（もし主人公IDが変わっていた場合はリセット）
  |■Condition (Number):   [1] CSelf32[主人公ID] !=  -1  /  [2] CSelf32[主人公ID] ==  -1  
@@ -480,7 +480,7 @@ WoditorEvCOMMAND_END
  | |■
  |-◇Condition:  [2]  [ CSelf32[主人公ID] == -1   ] Case↓
  | |▼ -1なら主人公IDを格納
- | |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":79:0 ] (18:[Lvup]LvUP主人公ID:数値) =  CSelf0[主人公データID]
+ | |■Write to DB(Var): VarDB[ "Base System Variables":79:0 ] (18:[LvUp] Level-Up Ally ID:Number) =  CSelf0[主人公データID]
  | |■
  |◇End◇
  |▼ －－－－－－－－－－－－－－－－－－－－－－－－
@@ -510,23 +510,23 @@ WoditorEvCOMMAND_END
  |■Call Event [Name]: ["X[移]パラメータ増減"] <CommonEv 70>  / CSelf0[主人公データID] / 36:回避率 / CSelf41[回避率成長度] / 0:なし
  |■Call Event [Name]: ["X[移]パラメータ増減"] <CommonEv 70>  / CSelf0[主人公データID] / 37:クリティカル率 / CSelf42[ｸﾘﾃｨｶﾙ率成長度] / 0:なし
  |▼ 能力値アップ履歴を保存
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":78:0 ] (18:[Lvup]LvUPした数:数値) +=  CSelf20[レベルアップ(1)ダウン(-1)]
+ |■Write to DB(Var): VarDB[ "Base System Variables":78:0 ] (18:[LvUp] Level-Up Count:Number) +=  CSelf20[レベルアップ(1)ダウン(-1)]
  |■Set Variable: CSelf99[実レベル変化] += CSelf20[レベルアップ(1)ダウン(-1)] + 0 
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":80:0 ] (18:[Lvup]最大HP増加:数値) +=  CSelf33[MaxHP成長度]
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":81:0 ] (18:[Lvup]最大SP増加:数値) +=  CSelf34[MaxSP成長度]
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":82:0 ] (18:[Lvup]攻撃力増加:数値) +=  CSelf35[攻撃力成長度]
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":83:0 ] (18:[Lvup]防御力増加:数値) +=  CSelf36[防御力成長度]
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":84:0 ] (18:[Lvup]精神攻撃増加:数値) +=  CSelf37[精神攻撃成長度]
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":85:0 ] (18:[Lvup]精神防御増加:数値) +=  CSelf38[精神防御成長度]
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":86:0 ] (18:[Lvup]敏捷度増加:数値) +=  CSelf39[敏捷度成長度]
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":87:0 ] (18:[Lvup]命中率増加:数値) +=  CSelf40[命中率成長度]
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":88:0 ] (18:[Lvup]回避率増加:数値) +=  CSelf41[回避率成長度]
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":89:0 ] (18:[Lvup]クリティカル増加:数値) +=  CSelf42[ｸﾘﾃｨｶﾙ率成長度]
+ |■Write to DB(Var): VarDB[ "Base System Variables":80:0 ] (18:[LvUp] Max HP Increase:Number) +=  CSelf33[MaxHP成長度]
+ |■Write to DB(Var): VarDB[ "Base System Variables":81:0 ] (18:[LvUp] Max SP Increase:Number) +=  CSelf34[MaxSP成長度]
+ |■Write to DB(Var): VarDB[ "Base System Variables":82:0 ] (18:[LvUp] Attack Increase:Number) +=  CSelf35[攻撃力成長度]
+ |■Write to DB(Var): VarDB[ "Base System Variables":83:0 ] (18:[LvUp] Defense Increase:Number) +=  CSelf36[防御力成長度]
+ |■Write to DB(Var): VarDB[ "Base System Variables":84:0 ] (18:[LvUp] Magic Atk Increase:Number) +=  CSelf37[精神攻撃成長度]
+ |■Write to DB(Var): VarDB[ "Base System Variables":85:0 ] (18:[LvUp] Magic Def Increase:Number) +=  CSelf38[精神防御成長度]
+ |■Write to DB(Var): VarDB[ "Base System Variables":86:0 ] (18:[LvUp] Agility Increase:Number) +=  CSelf39[敏捷度成長度]
+ |■Write to DB(Var): VarDB[ "Base System Variables":87:0 ] (18:[LvUp] Accuracy Increase:Number) +=  CSelf40[命中率成長度]
+ |■Write to DB(Var): VarDB[ "Base System Variables":88:0 ] (18:[LvUp] Evasion Increase:Number) +=  CSelf41[回避率成長度]
+ |■Write to DB(Var): VarDB[ "Base System Variables":89:0 ] (18:[LvUp] Critical Rate Increase:Number) +=  CSelf42[ｸﾘﾃｨｶﾙ率成長度]
  |▼ －－－－－－－－－－－－－－－－－－－－－－－－
  |▼ レベルを＋１　＆　次経験値を算出
  |▼ －－－－－－－－－－－－－－－－－－－－－－－－
- |■Write to DB(Var): VarDB[ "主人公ステータス":CSelf0[主人公データID]:"レベル" ] (0:-:4) +=  CSelf20[レベルアップ(1)ダウン(-1)]
- |■Load DB(Var):  CSelf30[対象のレベル] = VarDB[ "主人公ステータス":CSelf0[主人公データID]:"レベル" ] (0:-:4) 
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[主人公データID]:"Level" ] (0:-:4) +=  CSelf20[レベルアップ(1)ダウン(-1)]
+ |■Load DB(Var):  CSelf30[対象のレベル] = VarDB[ "Allies":CSelf0[主人公データID]:"Level" ] (0:-:4) 
  |▼ －－－－－－－－－－－－－－－－－－－－－－－－
  |■Condition (Number):   [1] CSelf20[レベルアップ(1)ダウン(-1)] >=  1  /  [2] CSelf20[レベルアップ(1)ダウン(-1)] <=  -1  
  |-◇Condition:  [1]  [ CSelf20[レベルアップ(1)ダウン(-1)] >= 1   ] Case↓
@@ -540,7 +540,7 @@ WoditorEvCOMMAND_END
  | |■
  |◇End◇
  |■Set Variable: CSelf43[次必要経験値] Lower Bound= 1 + 0 
- |■Write to DB(Var): VarDB[ "主人公ステータス":CSelf0[主人公データID]:"現Lvの必要経験値" ] (0:-:55) =  CSelf43[次必要経験値]
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[主人公データID]:"Current Level Required EXP" ] (0:-:55) =  CSelf43[次必要経験値]
  |▼ －－－－－－－－－－－－－－－－－－－－－－－－
  |▼ 習得技能がないかチェック
  |▼ －－－－－－－－－－－－－－－－－－－－－－－－
@@ -548,26 +548,26 @@ WoditorEvCOMMAND_END
  |■Repeat Loop [ 50 ] Times
  | |■Set Variable: CSelf10[一時変数A] += 1 + 0 
  | |■Set Variable: CSelf11[一時変数B] = CSelf10[一時変数A] * 2 
- | |■Load DB(Var):  CSelf47[技能習得レベル] = VarDB[ "┣ 技能習得Lv":CSelf0[主人公データID]:CSelf11[一時変数B] ] (1:-:-) 
+ | |■Load DB(Var):  CSelf47[技能習得レベル] = VarDB[ "┣ Skill Learning Lv":CSelf0[主人公データID]:CSelf11[一時変数B] ] (1:-:-) 
  | |■Condition (Number):   [1] CSelf47[技能習得レベル] >=  1  
  | |-◇Condition:  [1]  [ CSelf47[技能習得レベル] >= 1   ] Case↓
  | | |■Condition (Number):   [1] CSelf47[技能習得レベル] <=  CSelf30[対象のレベル]  
  | | |-◇Condition:  [1]  [ CSelf47[技能習得レベル] <= CSelf30[対象のレベル]   ] Case↓
  | | | |▼ 習得レベルが現在以下のものは、念のため全て習得レベルを０にする（レベルが下がっても忘れなくなる）
- | | | |■Write to DB(Var): VarDB[ "┣ 技能習得Lv":CSelf0[主人公データID]:CSelf11[一時変数B] ] (1:-:-) =  0
+ | | | |■Write to DB(Var): VarDB[ "┣ Skill Learning Lv":CSelf0[主人公データID]:CSelf11[一時変数B] ] (1:-:-) =  0
  | | | |■Set Variable: CSelf11[一時変数B] = CSelf10[一時変数A] * 2 
  | | | |■Set Variable: CSelf11[一時変数B] += 1 + 0 
  | | | |▼ 新しいレベルと同じ習得レベルなら覚えたメッセージを追加
  | | | |■Condition (Number):   [1] CSelf47[技能習得レベル] ==  CSelf30[対象のレベル]  
  | | | |-◇Condition:  [1]  [ CSelf47[技能習得レベル] == CSelf30[対象のレベル]   ] Case↓
  | | | | |▼ 新たに覚えた技能を追加
- | | | | |■Load DB(Var):  CSelf48[覚える技能] = VarDB[ "┣ 技能習得Lv":CSelf0[主人公データID]:CSelf11[一時変数B] ] (1:-:-) 
+ | | | | |■Load DB(Var):  CSelf48[覚える技能] = VarDB[ "┣ Skill Learning Lv":CSelf0[主人公データID]:CSelf11[一時変数B] ] (1:-:-) 
  | | | | |■Condition (Number):   [1] CSelf48[覚える技能] >=  0  
  | | | | |-◇Condition:  [1]  [ CSelf48[覚える技能] >= 0   ] Case↓
- | | | | | |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":90:0 ] (18:[Lvup]習得技能[文字列]:数値) +=  1
+ | | | | | |■Write to DB(Var): VarDB[ "Base System Variables":90:0 ] (18:[LvUp] Learned Skill [String]:Number) +=  1
  | | | | | |▼ ここで「～～を習得した！」　文字列を追加
  | | | | | |■Load DB(User):  CSelf9[表示メッセージ文] = UserDB[ "Skills":CSelf48[覚える技能]:"Skill Name" ] (0:-:0) 
- | | | | | |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":90:1 ] (18:[Lvup]習得技能[文字列]:文字列) +=  \cself[9] を習得！\n
+ | | | | | |■Write to DB(Var): VarDB[ "Base System Variables":90:1 ] (18:[LvUp] Learned Skill [String]:String) +=  \cself[9] を習得！\n
  | | | | | |■ Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
  | | | | | |■
  | | | | |◇End◇

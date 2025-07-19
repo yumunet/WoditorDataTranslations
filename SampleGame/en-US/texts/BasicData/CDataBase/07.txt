@@ -6,10 +6,10 @@ DATATYPE_0=1000
 NUMDATA_TYPE_NUM=1
 STRDATA_TYPE_NUM=0
 DATA_NUM=10
-TYPENAME=┣所持アイテム個数
+TYPENAME=┣ Owned Item Count
 ITEMNAME_NUM=1
-ITEMNAME0=所持個数
-MEMO=【△ 設定してもよい】<<\n>>ゲーム開始時の<<\n>>「所持アイテム」個数を<<\n>>設定するデータベースです。<<\n>><<\n>>必要に応じてデータ数を<<\n>>増減させてください。<<\n>><<\n>>※データ数が1個だけでも<<\n>> 　問題なく動作します。<<\n>>　 足りないデータ数は、<<\n>>　 ゲーム中で自動的に<<\n>>　 補われます。
+ITEMNAME0=Quantity Owned
+MEMO=[△ Okay to Edit]<<\n>>Number of items<<\n>>owned at game start.<<\n>><<\n>>Increase or decrease the<<\n>>Data count as necessary.<<\n>><<\n>>* Even if there's only one<<\n>>Data entry, it will still work<<\n>>fine.<<\n>>Any missing Data entries<<\n>>will be automatically added<<\n>>during the game.<<\n>>
 ITEMTYPE_NUM=100
 ITEM_LOADTYPE_0=0
 ITEM_LOADTYPE_1=0
@@ -120,7 +120,7 @@ CHOICE_VAL_0_NUM=0
 DEFAULT_VAL_NUM=1
 DEFAULT_VAL_0=0
 <<--CSV_START-->>
-"所持個数",
+"Quantity Owned",
 0,
 0,
 0,

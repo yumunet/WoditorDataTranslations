@@ -65,12 +65,12 @@ DATATYPE_59=1059
 NUMDATA_TYPE_NUM=60
 STRDATA_TYPE_NUM=0
 DATA_NUM=1
-TYPENAME=×┗ お宝リスト
+TYPENAME=×┗Reward List
 ITEMNAME_NUM=60
-ITEMNAME0=取得経験値
-ITEMNAME1=取得金額
-ITEMNAME2=経験取得補正[基本100]
-ITEMNAME3=金額取得補正[基本100]
+ITEMNAME0=EXP Gain
+ITEMNAME1=Money Gain
+ITEMNAME2=EXP Multiplier [Base 100]
+ITEMNAME3=Money Multiplier [Base 100]
 ITEMNAME4=
 ITEMNAME5=
 ITEMNAME6=
@@ -87,13 +87,13 @@ ITEMNAME16=
 ITEMNAME17=
 ITEMNAME18=
 ITEMNAME19=
-ITEMNAME20=[入手アイテム数]
-ITEMNAME21=入手アイテムコード
-ITEMNAME22=入手アイテムコード
-ITEMNAME23=入手アイテムコード
-ITEMNAME24=入手アイテムコード
-ITEMNAME25=入手アイテムコード
-ITEMNAME26=以下略
+ITEMNAME20=[Item Drop Count]
+ITEMNAME21=Item Drop ID
+ITEMNAME22=Item Drop ID
+ITEMNAME23=Item Drop ID
+ITEMNAME24=Item Drop ID
+ITEMNAME25=Item Drop ID
+ITEMNAME26=Rest Omitted
 ITEMNAME27=
 ITEMNAME28=
 ITEMNAME29=
@@ -127,7 +127,7 @@ ITEMNAME56=
 ITEMNAME57=
 ITEMNAME58=
 ITEMNAME59=
-MEMO=【× 設定不要】<<\n>>戦闘中の一時変数。<<\n>><<\n>>戦闘終了時に得られる<<\n>>金額や経験値、<<\n>>入手アイテムを、<<\n>>ここで一時保存します。<<\n>><<\n>>一時変数ですので、<<\n>>いじっても意味は<<\n>>ありません。
+MEMO=[× Not Necessary to Set]<<\n>>Temporary variables<<\n>>in battle.<<\n>><<\n>>Money, EXP, and item<<\n>>drops gained at the end<<\n>>of battle are temporarily<<\n>>stored here.<<\n>><<\n>>They're temporary<<\n>>variables, so no point in<<\n>>changing.<<\n>>
 ITEMTYPE_NUM=100
 ITEM_LOADTYPE_0=0
 ITEM_LOADTYPE_1=0
@@ -474,7 +474,7 @@ DEFAULT_VAL_57=0
 DEFAULT_VAL_58=0
 DEFAULT_VAL_59=0
 <<--CSV_START-->>
-"取得経験値","取得金額","経験取得補正[基本100]","金額取得補正[基本100]","","","","","","","","","","","","","","","","","[入手アイテム数]","入手アイテムコード","入手アイテムコード","入手アイテムコード","入手アイテムコード","入手アイテムコード","以下略","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",
-0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,<<!--DATANAME--!>>,
+"EXP Gain","Money Gain","EXP Multiplier [Base 100]","Money Multiplier [Base 100]","","","","","","","","","","","","","","","","","[Item Drop Count]","Item Drop ID","Item Drop ID","Item Drop ID","Item Drop ID","Item Drop ID","Rest Omitted","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",
+0,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,<<!--DATANAME--!>>,
 
 <<--CSV_END-->>

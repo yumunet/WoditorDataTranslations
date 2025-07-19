@@ -167,8 +167,8 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("【処理の内容】")
 [103][0,1]<0>()("　戦闘全体で使用される変数を初期化します。")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[250][5,4]<0>(20,70,0,65536,100)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(20,71,0,65536,100)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(20,70,0,65536,100)("","Base System Variables","","")
+[250][5,4]<0>(20,71,0,65536,100)("","Base System Variables","","")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
@@ -177,7 +177,7 @@ WoditorEvCOMMAND_END
 ▼ 【処理の内容】
 ▼ 　戦闘全体で使用される変数を初期化します。
 ▼ ―――――――――――――――――――――――――――――――――――
-■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":70:0 ] (18:[戦闘]取得経験値％[基本100]:数値) =  100
-■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":71:0 ] (18:[戦闘]取得金額％[基本100]:数値) =  100
+■Write to DB(Var): VarDB[ "Base System Variables":70:0 ] (18:[Battle] EXP Gain % [Base 100]:Number) =  100
+■Write to DB(Var): VarDB[ "Base System Variables":71:0 ] (18:[Battle] Money Gain % [Base 100]:Number) =  100
 ■
 [COMMAND_TEXT_END]

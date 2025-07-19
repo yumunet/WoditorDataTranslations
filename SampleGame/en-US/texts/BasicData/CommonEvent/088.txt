@@ -209,14 +209,14 @@ WoditorEvCOMMAND_START
 [300][2,1]<1>(0,0)("X┗[移]メニューコマンド算出")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
-[250][5,4]<0>(18,6,0,69632,1600018)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,5,0,69632,1600019)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,6,0,69632,1600018)("","Base System Variables","","")
+[250][5,4]<0>(18,5,0,69632,1600019)("","Base System Variables","","")
 [250][5,4]<0>(17,0,0,332288,1600008)("","Images/Sounds","","Window Image File")
 [250][5,4]<0>(17,0,0,332288,1600009)("","Images/Sounds","","Cursor Image File")
-[250][5,4]<0>(18,22,0,69632,1600027)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,22,0,69632,1600027)("","Base System Variables","","")
 [103][0,1]<0>()("Ver2.20　座標倍率を縦横別に修正")
-[250][5,4]<0>(18,97,0,69632,1600088)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,98,0,69632,1600089)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,97,0,69632,1600088)("","Base System Variables","","")
+[250][5,4]<0>(18,98,0,69632,1600089)("","Base System Variables","","")
 [103][0,1]<0>()("座標設定")
 [121][4,0]<0>(1600022,0,0,0)()
 [121][4,0]<0>(1600023,0,0,0)()
@@ -334,16 +334,16 @@ WoditorEvCOMMAND_START
 [121][4,0]<2>(1600042,1600039,2,12544)()
 [103][0,1]<2>()("メニューコマンドは基本システム用変数23番～30番に入っている")
 [121][4,0]<2>(1600010,23,1600043,0)()
-[250][5,4]<2>(18,1600010,1,69632,1600007)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<2>(18,1600010,1,69632,1600007)("","Base System Variables","","")
 [121][4,0]<2>(1600021,1600020,1600043,0)()
 [121][4,0]<2>(1600021,3,0,256)()
 [150][2,0]<2>(3,1600021)()
-[250][5,4]<2>(18,1600010,0,69632,1600014)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<2>(18,1600010,0,69632,1600014)("","Base System Variables","","")
 [179][1,0]<2>(1)()
 [103][0,1]<3>()("もしセーブコマンドなら、セーブ不能かどうかで分岐")
 [111][4,0]<3>(1,1600014,4,2)()
 [401][1,0]<3>(1)()
-[250][5,4]<4>(18,33,0,69632,1600011)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<4>(18,33,0,69632,1600011)("","Base System Variables","","")
 [111][4,0]<4>(1,1600011,0,2)()
 [401][1,0]<4>(1)()
 [121][4,0]<5>(1600014,-1,0,0)()
@@ -400,7 +400,7 @@ WoditorEvCOMMAND_START
 [150][12,0]<2>(64,1600021,0,1600062,1600063,1,255,1600060,1600061,100,0,1600008)()
 [179][1,0]<2>(1)()
 [103][0,1]<3>()("おまけ欄内の文字列を生成")
-[250][5,4]<3>(3,0,0,331776,1600011)("","パーティー情報","","所持金")
+[250][5,4]<3>(3,0,0,331776,1600011)("","Party","","Current Money")
 [103][0,1]<3>()("\axと\ay、<R>を駆使して横幅と位置を調整")
 [121][4,0]<3>(1600013,1600062,1600088,4096)()
 [103][0,1]<3>()("バージョンによって右寄せの幅計算処理を変更　Ver3.00修正")
@@ -532,14 +532,14 @@ WoditorEvCOMMAND_END
  |■Call Event [Name]: ["X┗[移]メニューコマンド算出"] <CommonEv 89> 
  |■
 ◇End◇
-■Load DB(Var):  CSelf18[ミニフォントサイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":6:0 ] (18:システムミニフォントサイズ:数値) 
-■Load DB(Var):  CSelf19[基本フォントサイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":5:0 ] (18:システム基本フォントサイズ:数値) 
+■Load DB(Var):  CSelf18[ミニフォントサイズ] = VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) 
+■Load DB(Var):  CSelf19[基本フォントサイズ] = VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) 
 ■Load DB(User):  CSelf8[ウィンドウ画像ファイル] = UserDB[ "Images/Sounds":0:"Window Image File" ] (16:Basic Images/Sounds:0) 
 ■Load DB(User):  CSelf9[カーソル画像ファイル] = UserDB[ "Images/Sounds":0:"Cursor Image File" ] (16:Basic Images/Sounds:1) 
-■Load DB(Var):  CSelf27[縦項目数] = VarDB[ "基本ｼｽﾃﾑ用変数":22:0 ] (18:メニュー項目数:数値) 
+■Load DB(Var):  CSelf27[縦項目数] = VarDB[ "Base System Variables":22:0 ] (18:Menu Command Count:Number) 
 ▼ Ver2.20　座標倍率を縦横別に修正
-■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "基本ｼｽﾃﾑ用変数":97:0 ] (18:座標倍率Ｘ[x10]:数値) 
-■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "基本ｼｽﾃﾑ用変数":98:0 ] (18:座標倍率Ｙ[x10]:数値) 
+■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
+■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
 ▼ 座標設定
 ■Set Variable: CSelf22[表示X] = 0 + 0 
 ■Set Variable: CSelf23[表示Y] = 0 + 0 
@@ -657,16 +657,16 @@ WoditorEvCOMMAND_END
  | |■Set Variable: CSelf42[一時項目表示Y] += CSelf39[[保持]カーソル移動縦幅] / 2 
  | |▼ メニューコマンドは基本システム用変数23番～30番に入っている
  | |■Set Variable: CSelf10[一時変数A] = 23 + CSelf43[処理中個数] 
- | |■Load DB(Var):  CSelf7[表示項目名] = VarDB[ "基本ｼｽﾃﾑ用変数":CSelf10[一時変数A]:1 ] (18:-:文字列) 
+ | |■Load DB(Var):  CSelf7[表示項目名] = VarDB[ "Base System Variables":CSelf10[一時変数A]:1 ] (18:-:String) 
  | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + CSelf43[処理中個数] 
  | |■Set Variable: CSelf21[一時ピクチャ番号] += 3 + 0 
  | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | |■Load DB(Var):  CSelf14[一時変数E] = VarDB[ "基本ｼｽﾃﾑ用変数":CSelf10[一時変数A]:0 ] (18:-:数値) 
+ | |■Load DB(Var):  CSelf14[一時変数E] = VarDB[ "Base System Variables":CSelf10[一時変数A]:0 ] (18:-:Number) 
  | |■Repeat Loop [ 1 ] Times
  | | |▼ もしセーブコマンドなら、セーブ不能かどうかで分岐
  | | |■Condition (Number):   [1] CSelf14[一時変数E] ==  4  
  | | |-◇Condition:  [1]  [ CSelf14[一時変数E] == 4   ] Case↓
- | | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "基本ｼｽﾃﾑ用変数":33:0 ] (18:[ｼｽﾃﾑ]セーブ可能？:数値) 
+ | | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "Base System Variables":33:0 ] (18:[System] Can Save?:Number) 
  | | | |■Condition (Number):   [1] CSelf11[一時変数B] ==  0  
  | | | |-◇Condition:  [1]  [ CSelf11[一時変数B] == 0   ] Case↓
  | | | | |■Set Variable: CSelf14[一時変数E] = -1 + 0 
@@ -723,7 +723,7 @@ WoditorEvCOMMAND_END
  | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] Window(CSelf8[ウィンドウ画像ファイル]) Size[CSelf62[おまけ欄横サイズ],CSelf63[おまけ欄縦サイズ]] X:CSelf60[おまけ欄X] Y:CSelf61[おまけ欄Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | |■Repeat Loop [ 1 ] Times
  | | |▼ おまけ欄内の文字列を生成
- | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "パーティー情報":0:"所持金" ] (6:メイン設定:0) 
+ | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "Party":0:"Current Money" ] (6:Main Settings:0) 
  | | |▼ \axと\ay、<R>を駆使して横幅と位置を調整
  | | |■Set Variable: CSelf13[一時変数D] = CSelf62[おまけ欄横サイズ] - CSelf88[座標倍率X[x10]] 
  | | |▼ バージョンによって右寄せの幅計算処理を変更　Ver3.00修正

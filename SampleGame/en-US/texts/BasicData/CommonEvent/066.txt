@@ -175,8 +175,8 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("固定値を設定")
 [121][4,0]<0>(1600020,15000,0,0)()
 [103][0,1]<0>()("基本パラメータを呼び出し")
-[250][5,4]<0>(18,6,0,69632,1600018)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,5,0,69632,1600019)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,6,0,69632,1600018)("","Base System Variables","","")
+[250][5,4]<0>(18,5,0,69632,1600019)("","Base System Variables","","")
 [250][5,4]<0>(17,0,0,332288,1600008)("","Images/Sounds","","Window Image File")
 [250][5,4]<0>(17,0,0,332288,1600009)("","Images/Sounds","","Cursor Image File")
 [103][0,1]<0>()(" ")
@@ -205,8 +205,8 @@ WoditorEvCOMMAND_END
 ▼ 固定値を設定
 ■Set Variable: CSelf20[基本ﾋﾟｸﾁｬ番号] = 15000 + 0 
 ▼ 基本パラメータを呼び出し
-■Load DB(Var):  CSelf18[ミニフォントサイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":6:0 ] (18:システムミニフォントサイズ:数値) 
-■Load DB(Var):  CSelf19[基本フォントサイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":5:0 ] (18:システム基本フォントサイズ:数値) 
+■Load DB(Var):  CSelf18[ミニフォントサイズ] = VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) 
+■Load DB(Var):  CSelf19[基本フォントサイズ] = VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) 
 ■Load DB(User):  CSelf8[ウィンドウ画像] = UserDB[ "Images/Sounds":0:"Window Image File" ] (16:Basic Images/Sounds:0) 
 ■Load DB(User):  CSelf9[カーソル画像] = UserDB[ "Images/Sounds":0:"Cursor Image File" ] (16:Basic Images/Sounds:1) 
 ▼  

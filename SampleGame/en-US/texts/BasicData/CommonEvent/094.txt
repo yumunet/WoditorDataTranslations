@@ -208,17 +208,17 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600080,6,0,0)()
 [121][4,0]<0>(1600081,1,0,0)()
 [103][0,1]<0>()("基本パラメータを呼び出し")
-[250][5,4]<0>(18,7,0,69632,1600017)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,6,0,69632,1600018)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,5,0,69632,1600019)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,7,0,69632,1600017)("","Base System Variables","","")
+[250][5,4]<0>(18,6,0,69632,1600018)("","Base System Variables","","")
+[250][5,4]<0>(18,5,0,69632,1600019)("","Base System Variables","","")
 [250][5,4]<0>(17,0,0,332288,1600008)("","Images/Sounds","","Window Image File")
 [250][5,4]<0>(17,0,0,332288,1600009)("","Images/Sounds","","Cursor Image File")
 [103][0,1]<0>()("Ver2.20　座標倍率を縦横別に修正")
-[250][5,4]<0>(18,97,0,69632,1600086)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,98,0,69632,1600087)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,97,0,69632,1600086)("","Base System Variables","","")
+[250][5,4]<0>(18,98,0,69632,1600087)("","Base System Variables","","")
 [103][0,1]<0>()(" ")
-[250][5,4]<0>(18,53,0,69632,1600026)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,52,0,69632,1600027)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,53,0,69632,1600026)("","Base System Variables","","")
+[250][5,4]<0>(18,52,0,69632,1600027)("","Base System Variables","","")
 [103][0,1]<0>()(" ")
 [121][4,0]<0>(1600055,20,0,0)()
 [111][7,0]<0>(2,9000084,0,2,9000084,1,1)()
@@ -506,7 +506,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<4>(1600010,-1,0,0)()
 [121][4,0]<4>(1600069,0,0,0)()
 [103][0,1]<4>()("ここでパーティメンバーを表示")
-[250][5,4]<4>(18,51,0,69632,1600016)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<4>(18,51,0,69632,1600016)("","Base System Variables","","")
 [179][1,0]<4>(1600016)()
 [121][4,0]<5>(1600010,1,0,256)()
 [103][0,1]<5>()("主人公IDを取得")
@@ -816,17 +816,17 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf80[パーティ情報タイプ番号] = 6 + 0 
 ■Set Variable: CSelf81[パーティ開始項目位置] = 1 + 0 
 ▼ 基本パラメータを呼び出し
-■Load DB(Var):  CSelf17[最小フォントサイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":7:0 ] (18:システム最小フォントサイズ:数値) 
-■Load DB(Var):  CSelf18[ミニフォントサイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":6:0 ] (18:システムミニフォントサイズ:数値) 
-■Load DB(Var):  CSelf19[基本フォントサイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":5:0 ] (18:システム基本フォントサイズ:数値) 
+■Load DB(Var):  CSelf17[最小フォントサイズ] = VarDB[ "Base System Variables":7:0 ] (18:System Min Font Size:Number) 
+■Load DB(Var):  CSelf18[ミニフォントサイズ] = VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) 
+■Load DB(Var):  CSelf19[基本フォントサイズ] = VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) 
 ■Load DB(User):  CSelf8[ｳｨﾝﾄﾞｳ画像名/ｾｰﾌﾞﾌｧｲﾙ名] = UserDB[ "Images/Sounds":0:"Window Image File" ] (16:Basic Images/Sounds:0) 
 ■Load DB(User):  CSelf9[カーソル画像ファイル] = UserDB[ "Images/Sounds":0:"Cursor Image File" ] (16:Basic Images/Sounds:1) 
 ▼ Ver2.20　座標倍率を縦横別に修正
-■Load DB(Var):  CSelf86[座標倍率X[x10]] = VarDB[ "基本ｼｽﾃﾑ用変数":97:0 ] (18:座標倍率Ｘ[x10]:数値) 
-■Load DB(Var):  CSelf87[座標倍率Y[x10]] = VarDB[ "基本ｼｽﾃﾑ用変数":98:0 ] (18:座標倍率Ｙ[x10]:数値) 
+■Load DB(Var):  CSelf86[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
+■Load DB(Var):  CSelf87[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
 ▼  
-■Load DB(Var):  CSelf26[最大ページ数] = VarDB[ "基本ｼｽﾃﾑ用変数":53:0 ] (18:セーブページ数:数値) 
-■Load DB(Var):  CSelf27[1ページセーブデータ数] = VarDB[ "基本ｼｽﾃﾑ用変数":52:0 ] (18:１ページセーブ数:数値) 
+■Load DB(Var):  CSelf26[最大ページ数] = VarDB[ "Base System Variables":53:0 ] (18:Save Page Count:Number) 
+■Load DB(Var):  CSelf27[1ページセーブデータ数] = VarDB[ "Base System Variables":52:0 ] (18:Save Slots per Page:Number) 
 ▼  
 ■Set Variable: CSelf55[セーブ1セットあたり使用枚数] = 20 + 0 
 ■Condition (Number):   [1] Sys84:Screen Resolution (For Old/0-2/-1:Other) ==  0  /  [2] Sys84:Screen Resolution (For Old/0-2/-1:Other) >=  1  
@@ -1114,7 +1114,7 @@ WoditorEvCOMMAND_END
  | | | |■Set Variable: CSelf10[一時変数A] = -1 + 0 
  | | | |■Set Variable: CSelf69[セーブデータのパーティ数] = 0 + 0 
  | | | |▼ ここでパーティメンバーを表示
- | | | |■Load DB(Var):  CSelf16[最大パーティ数] = VarDB[ "基本ｼｽﾃﾑ用変数":51:0 ] (18:システム上最大パーティー人数:数値) 
+ | | | |■Load DB(Var):  CSelf16[最大パーティ数] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
  | | | |■Repeat Loop [ CSelf16[最大パーティ数] ] Times
  | | | | |■Set Variable: CSelf10[一時変数A] += 1 + 0 
  | | | | |▼ 主人公IDを取得

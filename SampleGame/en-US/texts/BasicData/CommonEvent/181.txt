@@ -199,16 +199,16 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600016,0,0,0)()
 [121][4,0]<0>(1600017,3,0,0)()
 [121][4,0]<0>(1600018,50,0,0)()
-[250][5,4]<0>(18,5,0,69632,1600019)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,5,0,69632,1600019)("","Base System Variables","","")
 [121][4,0]<0>(1600019,4,0,768)()
 [121][4,0]<0>(1600019,3,0,1024)()
-[250][5,4]<0>(18,5,0,69632,1600038)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,5,0,69632,1600038)("","Base System Variables","","")
 [103][0,1]<0>()("Ver2.20　座標倍率を縦横別に修正")
-[250][5,4]<0>(18,97,0,69632,1600088)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,98,0,69632,1600089)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,97,0,69632,1600088)("","Base System Variables","","")
+[250][5,4]<0>(18,98,0,69632,1600089)("","Base System Variables","","")
 [103][0,1]<0>()(" ")
-[250][5,4]<0>(18,37,0,69632,1600022)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,38,0,69632,1600023)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,37,0,69632,1600022)("","Base System Variables","","")
+[250][5,4]<0>(18,38,0,69632,1600023)("","Base System Variables","","")
 [103][0,1]<0>()("表示カラーを設定")
 [111][10,0]<0>(19,1600003,0,2,1600003,1,2,1600003,2,2)()
 [401][1,0]<0>(1)()
@@ -407,16 +407,16 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf16[ディレイフレーム１] = 0 + 0 
 ■Set Variable: CSelf17[ディレイフレーム２] = 3 + 0 
 ■Set Variable: CSelf18[ディレイフレーム３（消去までの時間）] = 50 + 0 
-■Load DB(Var):  CSelf19[フォントサイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":5:0 ] (18:システム基本フォントサイズ:数値) 
+■Load DB(Var):  CSelf19[フォントサイズ] = VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) 
 ■Set Variable: CSelf19[フォントサイズ] *= 4 + 0 
 ■Set Variable: CSelf19[フォントサイズ] /= 3 + 0 
-■Load DB(Var):  CSelf38[フォントサイズ2] = VarDB[ "基本ｼｽﾃﾑ用変数":5:0 ] (18:システム基本フォントサイズ:数値) 
+■Load DB(Var):  CSelf38[フォントサイズ2] = VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) 
 ▼ Ver2.20　座標倍率を縦横別に修正
-■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "基本ｼｽﾃﾑ用変数":97:0 ] (18:座標倍率Ｘ[x10]:数値) 
-■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "基本ｼｽﾃﾑ用変数":98:0 ] (18:座標倍率Ｙ[x10]:数値) 
+■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
+■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
 ▼  
-■Load DB(Var):  CSelf22[表示X] = VarDB[ "基本ｼｽﾃﾑ用変数":37:0 ] (18:ステータス欄表示先　座標X:数値) 
-■Load DB(Var):  CSelf23[表示Y] = VarDB[ "基本ｼｽﾃﾑ用変数":38:0 ] (18:ステータス欄表示先　座標Y:数値) 
+■Load DB(Var):  CSelf22[表示X] = VarDB[ "Base System Variables":37:0 ] (18:Status Display End X:Number) 
+■Load DB(Var):  CSelf23[表示Y] = VarDB[ "Base System Variables":38:0 ] (18:Status Display End Y:Number) 
 ▼ 表示カラーを設定
 ■Condition (Number):   [1] CSelf3[表示タイプ] ==  0  /  [2] CSelf3[表示タイプ] ==  1  /  [3] CSelf3[表示タイプ] ==  2  
 -◇Condition:  [1]  [ CSelf3[表示タイプ] == 0   ] Case↓

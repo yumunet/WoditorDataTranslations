@@ -181,13 +181,13 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<0>()("固定値を設定")
 [103][0,1]<0>()("Ver2.20　座標倍率を縦横別に修正")
-[250][5,4]<0>(18,97,0,69632,1600088)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,98,0,69632,1600089)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,97,0,69632,1600088)("","Base System Variables","","")
+[250][5,4]<0>(18,98,0,69632,1600089)("","Base System Variables","","")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<0>()("表示位置に応じた座標を「基本システム用変数」に格納")
 [103][0,1]<0>()("（表示先＝移動後の座標・エフェクト表示位置　　表示元＝移動前）")
-[250][5,4]<0>(20,4,0,200704,1600015)("","基本ｼｽﾃﾑ用変数","現在パーティー人数","")
-[250][5,4]<0>(18,51,0,69632,1600016)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(20,4,0,200704,1600015)("","Base System Variables","Current Party Size","")
+[250][5,4]<0>(18,51,0,69632,1600016)("","Base System Variables","","")
 [111][4,0]<0>(1,1600000,0,4)()
 [401][1,0]<0>(1)()
 [101][0,1]<1>()("\>「X[移]味方欄_座標算出」：エラー<\n>　０番未満は指定できません")
@@ -279,10 +279,10 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600023,1600089,0,768)()
 [121][5,0]<0>(1600020,10,0,66560,3)()
 [103][0,1]<0>()("ここで格納")
-[250][5,4]<0>(18,35,0,65536,1600020)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,36,0,65536,1600021)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,37,0,65536,1600022)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,38,0,65536,1600023)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,35,0,65536,1600020)("","Base System Variables","","")
+[250][5,4]<0>(18,36,0,65536,1600021)("","Base System Variables","","")
+[250][5,4]<0>(18,37,0,65536,1600022)("","Base System Variables","","")
+[250][5,4]<0>(18,38,0,65536,1600023)("","Base System Variables","","")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
@@ -305,13 +305,13 @@ WoditorEvCOMMAND_END
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ 固定値を設定
 ▼ Ver2.20　座標倍率を縦横別に修正
-■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "基本ｼｽﾃﾑ用変数":97:0 ] (18:座標倍率Ｘ[x10]:数値) 
-■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "基本ｼｽﾃﾑ用変数":98:0 ] (18:座標倍率Ｙ[x10]:数値) 
+■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
+■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ 表示位置に応じた座標を「基本システム用変数」に格納
 ▼ （表示先＝移動後の座標・エフェクト表示位置　　表示元＝移動前）
-■Load DB(Var):  CSelf15[現在パーティ数] = VarDB[ "基本ｼｽﾃﾑ用変数":"現在パーティー人数":0 ] (18:4:数値) 
-■Load DB(Var):  CSelf16[最大パーティ数] = VarDB[ "基本ｼｽﾃﾑ用変数":51:0 ] (18:システム上最大パーティー人数:数値) 
+■Load DB(Var):  CSelf15[現在パーティ数] = VarDB[ "Base System Variables":"Current Party Size":0 ] (18:4:Number) 
+■Load DB(Var):  CSelf16[最大パーティ数] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
 ■Condition (Number):   [1] CSelf0[表示位置[0-..]] <  0  
 -◇Condition:  [1]  [ CSelf0[表示位置[0-..]] < 0   ] Case↓
  |■Show Message:\>「X[移]味方欄_座標算出」：エラー\n　０番未満は指定できません
@@ -403,9 +403,9 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf23[表示先Y] *= CSelf89[座標倍率Y[x10]] + 0 
 ■Set Variable: CSelf20[表示元X] to CSelf23[表示先Y] /= 10 + 0 
 ▼ ここで格納
-■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":35:0 ] (18:ステータス欄表示　元座標X:数値) =  CSelf20[表示元X]
-■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":36:0 ] (18:ステータス欄表示　元座標Y:数値) =  CSelf21[表示元Y]
-■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":37:0 ] (18:ステータス欄表示先　座標X:数値) =  CSelf22[表示先X]
-■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":38:0 ] (18:ステータス欄表示先　座標Y:数値) =  CSelf23[表示先Y]
+■Write to DB(Var): VarDB[ "Base System Variables":35:0 ] (18:Status Display Start X:Number) =  CSelf20[表示元X]
+■Write to DB(Var): VarDB[ "Base System Variables":36:0 ] (18:Status Display Start Y:Number) =  CSelf21[表示元Y]
+■Write to DB(Var): VarDB[ "Base System Variables":37:0 ] (18:Status Display End X:Number) =  CSelf22[表示先X]
+■Write to DB(Var): VarDB[ "Base System Variables":38:0 ] (18:Status Display End Y:Number) =  CSelf23[表示先Y]
 ■
 [COMMAND_TEXT_END]

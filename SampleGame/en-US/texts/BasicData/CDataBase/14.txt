@@ -9,13 +9,13 @@ DATATYPE_3=1003
 NUMDATA_TYPE_NUM=4
 STRDATA_TYPE_NUM=0
 DATA_NUM=100
-TYPENAME=×┣ コマンド処理ﾘｽﾄ
+TYPENAME=×┣Cmd Process List
 ITEMNAME_NUM=4
-ITEMNAME0=発動者番号
-ITEMNAME1=発動敏捷性
-ITEMNAME2=受け側番号
-ITEMNAME3=発動技能
-MEMO=【× 設定不要】<<\n>>ｺﾏﾝﾄﾞ順を計算する<<\n>>一時保存用リスト。<<\n>><<\n>>いじっても意味は<<\n>>ありません。
+ITEMNAME0=User ID
+ITEMNAME1=User Agility
+ITEMNAME2=Target ID
+ITEMNAME3=Skill to Use
+MEMO=[× Not Necessary to Set]<<\n>>A temporary list for<<\n>>storing the order of<<\n>>commands.<<\n>><<\n>>No point in changing.<<\n>>
 ITEMTYPE_NUM=100
 ITEM_LOADTYPE_0=0
 ITEM_LOADTYPE_1=0
@@ -138,7 +138,7 @@ DEFAULT_VAL_1=-999999
 DEFAULT_VAL_2=0
 DEFAULT_VAL_3=-1
 <<--CSV_START-->>
-"発動者番号","発動敏捷性","受け側番号","発動技能",
+"User ID","User Agility","Target ID","Skill to Use",
 -1,-999999,0,-1,<<!--DATANAME--!>>,
 -1,-999999,0,-1,<<!--DATANAME--!>>,
 -1,-999999,0,-1,<<!--DATANAME--!>>,

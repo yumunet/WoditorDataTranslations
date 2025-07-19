@@ -248,15 +248,15 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [103][0,1]<0>()("基本パラメータを呼び出し")
-[250][5,4]<0>(18,51,0,69632,1600016)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,7,0,69632,1600017)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,6,0,69632,1600018)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,5,0,69632,1600019)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,51,0,69632,1600016)("","Base System Variables","","")
+[250][5,4]<0>(18,7,0,69632,1600017)("","Base System Variables","","")
+[250][5,4]<0>(18,6,0,69632,1600018)("","Base System Variables","","")
+[250][5,4]<0>(18,5,0,69632,1600019)("","Base System Variables","","")
 [250][5,4]<0>(17,0,0,332288,1600008)("","Images/Sounds","","Window Image File")
 [250][5,4]<0>(17,0,0,332288,1600009)("","Images/Sounds","","Cursor Image File")
 [103][0,1]<0>()("Ver2.20　座標倍率を縦横別に修正")
-[250][5,4]<0>(18,97,0,69632,1600098)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,98,0,69632,1600099)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,97,0,69632,1600098)("","Base System Variables","","")
+[250][5,4]<0>(18,98,0,69632,1600099)("","Base System Variables","","")
 [250][5,4]<0>(18,0,17,332288,1600085)("","System Settings","","States Display")
 [179][1,0]<0>(1)()
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
@@ -326,8 +326,8 @@ WoditorEvCOMMAND_START
 [121][4,0]<1>(1600021,1600020,1600004,0)()
 [121][4,0]<1>(1600021,1,0,512)()
 [150][3,0]<1>(16777219,1600020,1600021)()
-[250][5,4]<1>(18,35,0,69632,1600030)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(18,36,0,69632,1600031)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<1>(18,35,0,69632,1600030)("","Base System Variables","","")
+[250][5,4]<1>(18,36,0,69632,1600031)("","Base System Variables","","")
 [121][4,0]<1>(1600030,24,1600098,8192)()
 [150][15,0]<1>(21044993,1600020,7,0,0,-1000000,-1000000,1600030,0,-1000000,-1000000,0,16777216,0,1600021)()
 [150][6,0]<1>(16777218,1600020,0,7,0,1600021)()
@@ -346,22 +346,22 @@ WoditorEvCOMMAND_START
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [103][0,1]<1>()("まず表示先座標を取得する　（なお、この座標は倍率補正済み）")
-[250][5,4]<1>(18,37,0,69632,1600022)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(18,38,0,69632,1600023)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(18,35,0,69632,1600030)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(18,36,0,69632,1600031)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<1>(18,37,0,69632,1600022)("","Base System Variables","","")
+[250][5,4]<1>(18,38,0,69632,1600023)("","Base System Variables","","")
+[250][5,4]<1>(18,35,0,69632,1600030)("","Base System Variables","","")
+[250][5,4]<1>(18,36,0,69632,1600031)("","Base System Variables","","")
 [103][0,1]<1>()("表示するパラメータ情報をここで取得")
-[250][5,4]<1>(10,1600002,16,331776,1600089)("","×┏ 戦闘一時ステータス[基]","","ｷｬﾗｸﾀ番号[1万以上は敵]")
+[250][5,4]<1>(10,1600002,16,331776,1600089)("","×┏Battle Temp Status","","Character ID [Enemy:10,000+]")
 [111][4,0]<1>(1,1600089,-1,3)()
 [401][1,0]<1>(1)()
 [172][0,0]<2>()()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
-[250][5,4]<1>(10,1600002,5,331776,1600090)("","×┏ 戦闘一時ステータス[基]","","HP")
-[250][5,4]<1>(10,1600002,0,331776,1600091)("","×┏ 戦闘一時ステータス[基]","","[一時]計算済みMaxHP")
-[250][5,4]<1>(10,1600002,7,331776,1600092)("","×┏ 戦闘一時ステータス[基]","","SP")
-[250][5,4]<1>(10,1600002,1,331776,1600093)("","×┏ 戦闘一時ステータス[基]","","[一時]計算済みMaxSP")
-[250][5,4]<1>(11,1600002,4,331776,1600094)("","×┏ 戦闘一時ステータス[基]","","表示色番号")
+[250][5,4]<1>(10,1600002,5,331776,1600090)("","×┏Battle Temp Status","","HP")
+[250][5,4]<1>(10,1600002,0,331776,1600091)("","×┏Battle Temp Status","","[Temp] Post-Calc Max HP")
+[250][5,4]<1>(10,1600002,7,331776,1600092)("","×┏Battle Temp Status","","SP")
+[250][5,4]<1>(10,1600002,1,331776,1600093)("","×┏Battle Temp Status","","[Temp] Post-Calc Max SP")
+[250][5,4]<1>(11,1600002,4,331776,1600094)("","×┏Battle Temp Status","","Display Color Number")
 [103][0,1]<1>()(" ")
 [103][0,1]<1>()(" ")
 [179][1,0]<1>(1)()
@@ -412,10 +412,10 @@ WoditorEvCOMMAND_START
 [179][1,0]<1>(1)()
 [103][0,1]<2>()("顔グラフィック")
 [103][0,1]<2>()("一時上書きグラフィックがあればそれを表示、なければ元の顔グラフィックを表示")
-[250][5,4]<2>(11,1600002,2,331776,1600007)("","×┏ 戦闘一時ステータス[基]","","一時上書き画像ファイル")
+[250][5,4]<2>(11,1600002,2,331776,1600007)("","×┏Battle Temp Status","","Temp Overwrite Image File")
 [112][2,4]<2>(1,1600007)("","","","")
 [401][1,0]<2>(1)()
-[250][5,4]<3>(11,1600002,1,331776,1600007)("","×┏ 戦闘一時ステータス[基]","","画像ファイル")
+[250][5,4]<3>(11,1600002,1,331776,1600007)("","×┏Battle Temp Status","","Image File")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [103][0,1]<2>()("顔の枠のサイズを計算")
@@ -463,7 +463,7 @@ WoditorEvCOMMAND_START
 [498][0,0]<1>()()
 [179][1,0]<1>(1)()
 [103][0,1]<2>()("キャラ名")
-[250][5,4]<2>(11,1600002,0,331776,1600007)("","×┏ 戦闘一時ステータス[基]","","キャラ名")
+[250][5,4]<2>(11,1600002,0,331776,1600007)("","×┏Battle Temp Status","","Character Name")
 [103][0,1]<2>()("表示位置は左上基点")
 [121][4,0]<2>(1600021,1600020,4,0)()
 [150][11,1]<2>(32,1600021,0,1,1,1,255,1600022,1600023,100,0)("\f[\cself[17]]\E\-[1]\cself[7]")
@@ -474,7 +474,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<2>()("状態異常表示")
 [122][2,1]<2>(1600007,0)("")
 [103][0,1]<2>()("状態異常名一覧を読み込んでくる")
-[250][5,4]<2>(11,1600002,14,331776,1600007)("","×┏ 戦闘一時ステータス[基]","","[一時]状態異常名一覧")
+[250][5,4]<2>(11,1600002,14,331776,1600007)("","×┏Battle Temp Status","","[Temp] State Names")
 [121][4,0]<2>(1600021,1600020,23,0)()
 [150][11,1]<2>(32,1600021,0,1,1,1,255,1600022,1600023,100,0)("\f[\cself[17]]\space[0]\A-\E\cself[7]")
 [290][7,0]<2>(32,0,1600021,1600021,1600083,1600084,0)()
@@ -726,10 +726,10 @@ WoditorEvCOMMAND_START
 [290][7,0]<3>(0,25,1600021,1600021,200,-100,-100)()
 [179][1,0]<3>(1)()
 [103][0,1]<4>()("ここでメニュー表示時エフェクト（「移動」コマンドで実現している）")
-[250][5,4]<4>(18,37,0,69632,1600022)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<4>(18,38,0,69632,1600023)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<4>(18,35,0,69632,1600030)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<4>(18,36,0,69632,1600031)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<4>(18,37,0,69632,1600022)("","Base System Variables","","")
+[250][5,4]<4>(18,38,0,69632,1600023)("","Base System Variables","","")
+[250][5,4]<4>(18,35,0,69632,1600030)("","Base System Variables","","")
+[250][5,4]<4>(18,36,0,69632,1600031)("","Base System Variables","","")
 [121][4,0]<4>(1600041,1600022,0,0)()
 [121][4,0]<4>(1600042,1600023,0,0)()
 [103][0,1]<4>()("レベルの分だけシフト量をアップ")
@@ -805,10 +805,10 @@ WoditorEvCOMMAND_START
 [121][4,0]<2>(1600021,1600020,1,0)()
 [179][1,0]<2>(1)()
 [103][0,1]<3>()("ここでメニュー表示時エフェクト（「移動」コマンドで実現している）")
-[250][5,4]<3>(18,37,0,69632,1600022)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<3>(18,38,0,69632,1600023)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<3>(18,35,0,69632,1600030)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<3>(18,36,0,69632,1600031)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<3>(18,37,0,69632,1600022)("","Base System Variables","","")
+[250][5,4]<3>(18,38,0,69632,1600023)("","Base System Variables","","")
+[250][5,4]<3>(18,35,0,69632,1600030)("","Base System Variables","","")
+[250][5,4]<3>(18,36,0,69632,1600031)("","Base System Variables","","")
 [121][4,0]<3>(1600041,1600022,0,0)()
 [121][4,0]<3>(1600042,1600023,0,0)()
 [103][0,1]<3>()("逃走時のシフト量を設定")
@@ -900,15 +900,15 @@ WoditorEvCOMMAND_END
  |■
 ◇End◇
 ▼ 基本パラメータを呼び出し
-■Load DB(Var):  CSelf16[最大パーティ数] = VarDB[ "基本ｼｽﾃﾑ用変数":51:0 ] (18:システム上最大パーティー人数:数値) 
-■Load DB(Var):  CSelf17[最小フォントサイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":7:0 ] (18:システム最小フォントサイズ:数値) 
-■Load DB(Var):  CSelf18[ミニフォントサイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":6:0 ] (18:システムミニフォントサイズ:数値) 
-■Load DB(Var):  CSelf19[基本フォントサイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":5:0 ] (18:システム基本フォントサイズ:数値) 
+■Load DB(Var):  CSelf16[最大パーティ数] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
+■Load DB(Var):  CSelf17[最小フォントサイズ] = VarDB[ "Base System Variables":7:0 ] (18:System Min Font Size:Number) 
+■Load DB(Var):  CSelf18[ミニフォントサイズ] = VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) 
+■Load DB(Var):  CSelf19[基本フォントサイズ] = VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) 
 ■Load DB(User):  CSelf8[ウィンドウ画像ファイル] = UserDB[ "Images/Sounds":0:"Window Image File" ] (16:Basic Images/Sounds:0) 
 ■Load DB(User):  CSelf9[カーソル画像ファイル] = UserDB[ "Images/Sounds":0:"Cursor Image File" ] (16:Basic Images/Sounds:1) 
 ▼ Ver2.20　座標倍率を縦横別に修正
-■Load DB(Var):  CSelf98[座標倍率X[x10]] = VarDB[ "基本ｼｽﾃﾑ用変数":97:0 ] (18:座標倍率Ｘ[x10]:数値) 
-■Load DB(Var):  CSelf99[座標倍率Y[x10]] = VarDB[ "基本ｼｽﾃﾑ用変数":98:0 ] (18:座標倍率Ｙ[x10]:数値) 
+■Load DB(Var):  CSelf98[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
+■Load DB(Var):  CSelf99[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
 ■Load DB(User):  CSelf85[状態異常表示方法フラグ] = UserDB[ "System Settings":0:"States Display" ] (17:Basic System Settings:19) 
 ■Repeat Loop [ 1 ] Times
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -978,8 +978,8 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + CSelf4[1キャラあたり使用ピクチャ数] 
  |■Set Variable: CSelf21[一時ピクチャ番号] -= 1 + 0 
  |■Picture [Reset Delay]: CSelf20[基本ピクチャ番号] to CSelf21[一時ピクチャ番号] 
- |■Load DB(Var):  CSelf30[移動元X] = VarDB[ "基本ｼｽﾃﾑ用変数":35:0 ] (18:ステータス欄表示　元座標X:数値) 
- |■Load DB(Var):  CSelf31[移動元Y] = VarDB[ "基本ｼｽﾃﾑ用変数":36:0 ] (18:ステータス欄表示　元座標Y:数値) 
+ |■Load DB(Var):  CSelf30[移動元X] = VarDB[ "Base System Variables":35:0 ] (18:Status Display Start X:Number) 
+ |■Load DB(Var):  CSelf31[移動元Y] = VarDB[ "Base System Variables":36:0 ] (18:Status Display Start Y:Number) 
  |■Set Variable: CSelf30[移動元X] = 24 * CSelf98[座標倍率X[x10]] 
  |■Picture Move: CSelf20[基本ピクチャ番号] to CSelf21[一時ピクチャ番号]  Relative X:CSelf30[移動元X] Y:0 / 7(0)Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
  |■Picture Erase: CSelf20[基本ピクチャ番号] to CSelf21[一時ピクチャ番号]  / 0(7)Frames
@@ -998,22 +998,22 @@ WoditorEvCOMMAND_END
  | |■
  |◇End◇
  |▼ まず表示先座標を取得する　（なお、この座標は倍率補正済み）
- |■Load DB(Var):  CSelf22[表示X] = VarDB[ "基本ｼｽﾃﾑ用変数":37:0 ] (18:ステータス欄表示先　座標X:数値) 
- |■Load DB(Var):  CSelf23[表示Y] = VarDB[ "基本ｼｽﾃﾑ用変数":38:0 ] (18:ステータス欄表示先　座標Y:数値) 
- |■Load DB(Var):  CSelf30[移動元X] = VarDB[ "基本ｼｽﾃﾑ用変数":35:0 ] (18:ステータス欄表示　元座標X:数値) 
- |■Load DB(Var):  CSelf31[移動元Y] = VarDB[ "基本ｼｽﾃﾑ用変数":36:0 ] (18:ステータス欄表示　元座標Y:数値) 
+ |■Load DB(Var):  CSelf22[表示X] = VarDB[ "Base System Variables":37:0 ] (18:Status Display End X:Number) 
+ |■Load DB(Var):  CSelf23[表示Y] = VarDB[ "Base System Variables":38:0 ] (18:Status Display End Y:Number) 
+ |■Load DB(Var):  CSelf30[移動元X] = VarDB[ "Base System Variables":35:0 ] (18:Status Display Start X:Number) 
+ |■Load DB(Var):  CSelf31[移動元Y] = VarDB[ "Base System Variables":36:0 ] (18:Status Display Start Y:Number) 
  |▼ 表示するパラメータ情報をここで取得
- |■Load DB(Var):  CSelf89[キャラクタ番号] = VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf2[戦闘スロット]:"ｷｬﾗｸﾀ番号[1万以上は敵]" ] (10:-:17) 
+ |■Load DB(Var):  CSelf89[キャラクタ番号] = VarDB[ "×┏Battle Temp Status":CSelf2[戦闘スロット]:"Character ID [Enemy:10,000+]" ] (10:-:17) 
  |■Condition (Number):   [1] CSelf89[キャラクタ番号] <=  -1  
  |-◇Condition:  [1]  [ CSelf89[キャラクタ番号] <= -1   ] Case↓
  | |■Exit Event
  | |■
  |◇End◇
- |■Load DB(Var):  CSelf90[HP] = VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf2[戦闘スロット]:"HP" ] (10:-:5) 
- |■Load DB(Var):  CSelf91[最大HP] = VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf2[戦闘スロット]:"[一時]計算済みMaxHP" ] (10:-:44) 
- |■Load DB(Var):  CSelf92[SP] = VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf2[戦闘スロット]:"SP" ] (10:-:7) 
- |■Load DB(Var):  CSelf93[最大SP] = VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf2[戦闘スロット]:"[一時]計算済みMaxSP" ] (10:-:46) 
- |■Load DB(Var):  CSelf94[色番号] = VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf2[戦闘スロット]:"表示色番号" ] (10:-:4) 
+ |■Load DB(Var):  CSelf90[HP] = VarDB[ "×┏Battle Temp Status":CSelf2[戦闘スロット]:"HP" ] (10:-:5) 
+ |■Load DB(Var):  CSelf91[最大HP] = VarDB[ "×┏Battle Temp Status":CSelf2[戦闘スロット]:"[Temp] Post-Calc Max HP" ] (10:-:44) 
+ |■Load DB(Var):  CSelf92[SP] = VarDB[ "×┏Battle Temp Status":CSelf2[戦闘スロット]:"SP" ] (10:-:7) 
+ |■Load DB(Var):  CSelf93[最大SP] = VarDB[ "×┏Battle Temp Status":CSelf2[戦闘スロット]:"[Temp] Post-Calc Max SP" ] (10:-:46) 
+ |■Load DB(Var):  CSelf94[色番号] = VarDB[ "×┏Battle Temp Status":CSelf2[戦闘スロット]:"Display Color Number" ] (10:-:4) 
  |▼  
  |▼  
  |■Repeat Loop [ 1 ] Times
@@ -1064,10 +1064,10 @@ WoditorEvCOMMAND_END
  |■Repeat Loop [ 1 ] Times
  | |▼ 顔グラフィック
  | |▼ 一時上書きグラフィックがあればそれを表示、なければ元の顔グラフィックを表示
- | |■Load DB(Var):  CSelf7[表示項目名] = VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf2[戦闘スロット]:"一時上書き画像ファイル" ] (10:-:2) 
+ | |■Load DB(Var):  CSelf7[表示項目名] = VarDB[ "×┏Battle Temp Status":CSelf2[戦闘スロット]:"Temp Overwrite Image File" ] (10:-:2) 
  | |■Condition (String):   [1] CSelf7[表示項目名] is equal to ""
  | |-◇Condition:  [1] [ CSelf7[表示項目名] is equal to "" ] Case↓
- | | |■Load DB(Var):  CSelf7[表示項目名] = VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf2[戦闘スロット]:"画像ファイル" ] (10:-:1) 
+ | | |■Load DB(Var):  CSelf7[表示項目名] = VarDB[ "×┏Battle Temp Status":CSelf2[戦闘スロット]:"Image File" ] (10:-:1) 
  | | |■
  | |◇End◇
  | |▼ 顔の枠のサイズを計算
@@ -1115,7 +1115,7 @@ WoditorEvCOMMAND_END
  |◇Loop End Point◇◇
  |■Repeat Loop [ 1 ] Times
  | |▼ キャラ名
- | |■Load DB(Var):  CSelf7[表示項目名] = VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf2[戦闘スロット]:"キャラ名" ] (10:-:0) 
+ | |■Load DB(Var):  CSelf7[表示項目名] = VarDB[ "×┏Battle Temp Status":CSelf2[戦闘スロット]:"Character Name" ] (10:-:0) 
  | |▼ 表示位置は左上基点
  | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 4 
  | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] String[\f[\cself[17]]\E] X:CSelf22[表示X] Y:CSelf23[表示Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
@@ -1126,7 +1126,7 @@ WoditorEvCOMMAND_END
  | |▼ 状態異常表示
  | |■Set String: CSelf7[表示項目名] = ""
  | |▼ 状態異常名一覧を読み込んでくる
- | |■Load DB(Var):  CSelf7[表示項目名] = VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf2[戦闘スロット]:"[一時]状態異常名一覧" ] (10:-:69) 
+ | |■Load DB(Var):  CSelf7[表示項目名] = VarDB[ "×┏Battle Temp Status":CSelf2[戦闘スロット]:"[Temp] State Names" ] (10:-:69) 
  | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 23 
  | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] String[\f[\cself[17]]\s] X:CSelf22[表示X] Y:CSelf23[表示Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf83[状態異常位置X] / Shift Y CSelf84[状態異常位置Y]  [0]Frames
@@ -1378,10 +1378,10 @@ WoditorEvCOMMAND_END
  | | |■Effect Picture: CSelf21[一時ピクチャ番号] [Flash] R200/G-100/B-100  [25]Frames
  | | |■Repeat Loop [ 1 ] Times
  | | | |▼ ここでメニュー表示時エフェクト（「移動」コマンドで実現している）
- | | | |■Load DB(Var):  CSelf22[表示X] = VarDB[ "基本ｼｽﾃﾑ用変数":37:0 ] (18:ステータス欄表示先　座標X:数値) 
- | | | |■Load DB(Var):  CSelf23[表示Y] = VarDB[ "基本ｼｽﾃﾑ用変数":38:0 ] (18:ステータス欄表示先　座標Y:数値) 
- | | | |■Load DB(Var):  CSelf30[移動元X] = VarDB[ "基本ｼｽﾃﾑ用変数":35:0 ] (18:ステータス欄表示　元座標X:数値) 
- | | | |■Load DB(Var):  CSelf31[移動元Y] = VarDB[ "基本ｼｽﾃﾑ用変数":36:0 ] (18:ステータス欄表示　元座標Y:数値) 
+ | | | |■Load DB(Var):  CSelf22[表示X] = VarDB[ "Base System Variables":37:0 ] (18:Status Display End X:Number) 
+ | | | |■Load DB(Var):  CSelf23[表示Y] = VarDB[ "Base System Variables":38:0 ] (18:Status Display End Y:Number) 
+ | | | |■Load DB(Var):  CSelf30[移動元X] = VarDB[ "Base System Variables":35:0 ] (18:Status Display Start X:Number) 
+ | | | |■Load DB(Var):  CSelf31[移動元Y] = VarDB[ "Base System Variables":36:0 ] (18:Status Display Start Y:Number) 
  | | | |■Set Variable: CSelf41[一時項目表示X] = CSelf22[表示X] + 0 
  | | | |■Set Variable: CSelf42[一時項目表示Y] = CSelf23[表示Y] + 0 
  | | | |▼ レベルの分だけシフト量をアップ
@@ -1457,10 +1457,10 @@ WoditorEvCOMMAND_END
  | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 1 
  | |■Repeat Loop [ 1 ] Times
  | | |▼ ここでメニュー表示時エフェクト（「移動」コマンドで実現している）
- | | |■Load DB(Var):  CSelf22[表示X] = VarDB[ "基本ｼｽﾃﾑ用変数":37:0 ] (18:ステータス欄表示先　座標X:数値) 
- | | |■Load DB(Var):  CSelf23[表示Y] = VarDB[ "基本ｼｽﾃﾑ用変数":38:0 ] (18:ステータス欄表示先　座標Y:数値) 
- | | |■Load DB(Var):  CSelf30[移動元X] = VarDB[ "基本ｼｽﾃﾑ用変数":35:0 ] (18:ステータス欄表示　元座標X:数値) 
- | | |■Load DB(Var):  CSelf31[移動元Y] = VarDB[ "基本ｼｽﾃﾑ用変数":36:0 ] (18:ステータス欄表示　元座標Y:数値) 
+ | | |■Load DB(Var):  CSelf22[表示X] = VarDB[ "Base System Variables":37:0 ] (18:Status Display End X:Number) 
+ | | |■Load DB(Var):  CSelf23[表示Y] = VarDB[ "Base System Variables":38:0 ] (18:Status Display End Y:Number) 
+ | | |■Load DB(Var):  CSelf30[移動元X] = VarDB[ "Base System Variables":35:0 ] (18:Status Display Start X:Number) 
+ | | |■Load DB(Var):  CSelf31[移動元Y] = VarDB[ "Base System Variables":36:0 ] (18:Status Display Start Y:Number) 
  | | |■Set Variable: CSelf41[一時項目表示X] = CSelf22[表示X] + 0 
  | | |■Set Variable: CSelf42[一時項目表示Y] = CSelf23[表示Y] + 0 
  | | |▼ 逃走時のシフト量を設定

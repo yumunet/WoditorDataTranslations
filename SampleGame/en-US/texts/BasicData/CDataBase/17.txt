@@ -26,30 +26,30 @@ DATATYPE_20=1019
 NUMDATA_TYPE_NUM=20
 STRDATA_TYPE_NUM=1
 DATA_NUM=8
-TYPENAME=×主人公一時DB
+TYPENAME=×Allies Temp Data
 ITEMNAME_NUM=21
-ITEMNAME0=[一時]計算済みMaxHP
-ITEMNAME1=[一時]計算済みMaxSP
-ITEMNAME2=[一時]計算済み攻撃力
-ITEMNAME3=[一時]計算済み防御力
-ITEMNAME4=[一時]計算済み精神攻撃
-ITEMNAME5=[一時]計算済み精神防御
-ITEMNAME6=[一時]計算済み敏捷性
-ITEMNAME7=[一時]計算済み命中率
-ITEMNAME8=[一時]計算済み回避率
-ITEMNAME9=[一時]計算済みｸﾘﾃｨｶﾙ
-ITEMNAME10=[一時]移動時ｽﾃの有無
-ITEMNAME11=[一時]HP自然増減値
-ITEMNAME12=[一時]SP自然増減値
-ITEMNAME13=[一時]次ｽﾃｰﾀｽ回復まで
-ITEMNAME14=[一時]次ｽﾃｰﾀｽ回復Max
-ITEMNAME15=[一時]状態異常名一覧
-ITEMNAME16=[一時]封印状態？
-ITEMNAME17=[記憶]移動時技能位置
-ITEMNAME18=[記憶]戦闘時技能位置
-ITEMNAME19=[記憶]戦闘時ｱｲﾃﾑ位置
-ITEMNAME20=[記憶]戦闘時ｺﾏﾝﾄﾞ位置
-MEMO=【×設定不要】<<\n>>主人公キャラの<<\n>>一時パラメータDBです。<<\n>><<\n>>変更しても<<\n>>何も意味はありません。<<\n>><<\n>>データ数は自動で<<\n>>拡張されるので、<<\n>>1個でも問題ありません。
+ITEMNAME0=[Temp] Post-Calc Max HP
+ITEMNAME1=[Temp] Post-Calc Max SP
+ITEMNAME2=[Temp] Post-Calc Attack
+ITEMNAME3=[Temp] Post-Calc Defense
+ITEMNAME4=[Temp] Post-Calc Magic Atk
+ITEMNAME5=[Temp] Post-Calc Magic Def
+ITEMNAME6=[Temp] Post-Calc Agility
+ITEMNAME7=[Temp] Post-Calc Accuracy
+ITEMNAME8=[Temp] Post-Calc Evasion
+ITEMNAME9=[Temp]Post-Calc Critical Rate
+ITEMNAME10=[Temp] Has States on Map
+ITEMNAME11=[Temp] HP Regeneration
+ITEMNAME12=[Temp] SP Regeneration
+ITEMNAME13=[Tmp] UntilNextStateRemove
+ITEMNAME14=[Tmp] NextStateRemoveMax
+ITEMNAME15=[Temp] State Names
+ITEMNAME16=[Temp] Sealed?
+ITEMNAME17=[Store] Menu Skill Position
+ITEMNAME18=[Store] Battle Skill Position
+ITEMNAME19=[Store] Battle Item Position
+ITEMNAME20=[Store] Battle Command Pos
+MEMO=[× Not Necessary to Set]<<\n>>Temporary parameters for<<\n>>characters.<<\n>><<\n>>No point in changing.<<\n>><<\n>>Data entries are<<\n>>automatically added,<<\n>>so it works even with<<\n>>just one entry.<<\n>>
 ITEMTYPE_NUM=100
 ITEM_LOADTYPE_0=0
 ITEM_LOADTYPE_1=0
@@ -242,7 +242,7 @@ DEFAULT_VAL_18=0
 DEFAULT_VAL_19=0
 DEFAULT_VAL_20=0
 <<--CSV_START-->>
-"[一時]計算済みMaxHP","[一時]計算済みMaxSP","[一時]計算済み攻撃力","[一時]計算済み防御力","[一時]計算済み精神攻撃","[一時]計算済み精神防御","[一時]計算済み敏捷性","[一時]計算済み命中率","[一時]計算済み回避率","[一時]計算済みｸﾘﾃｨｶﾙ","[一時]移動時ｽﾃの有無","[一時]HP自然増減値","[一時]SP自然増減値","[一時]次ｽﾃｰﾀｽ回復まで","[一時]次ｽﾃｰﾀｽ回復Max","[一時]状態異常名一覧","[一時]封印状態？","[記憶]移動時技能位置","[記憶]戦闘時技能位置","[記憶]戦闘時ｱｲﾃﾑ位置","[記憶]戦闘時ｺﾏﾝﾄﾞ位置",
+"[Temp] Post-Calc Max HP","[Temp] Post-Calc Max SP","[Temp] Post-Calc Attack","[Temp] Post-Calc Defense","[Temp] Post-Calc Magic Atk","[Temp] Post-Calc Magic Def","[Temp] Post-Calc Agility","[Temp] Post-Calc Accuracy","[Temp] Post-Calc Evasion","[Temp]Post-Calc Critical Rate","[Temp] Has States on Map","[Temp] HP Regeneration","[Temp] SP Regeneration","[Tmp] UntilNextStateRemove","[Tmp] NextStateRemoveMax","[Temp] State Names","[Temp] Sealed?","[Store] Menu Skill Position","[Store] Battle Skill Position","[Store] Battle Item Position","[Store] Battle Command Pos",
 9999,200,30,20,20,151,0,30,40,5,2,3,0,0,0,"",0,0,0,0,0,
 6,120,120,0,0,30,0,10,10,3,1,0,0,0,0,"",0,0,0,0,0,
 10,30,30,0,0,20,0,5,10,3,2,1,0,0,0,"",0,0,0,0,0,

@@ -176,8 +176,8 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [270][1,0]<0>(20)()
-[250][5,4]<0>(18,4,0,200704,1600022)("","基本ｼｽﾃﾑ用変数","現在パーティー人数","")
-[250][5,4]<0>(18,51,0,69632,1600023)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,4,0,200704,1600022)("","Base System Variables","Current Party Size","")
+[250][5,4]<0>(18,51,0,69632,1600023)("","Base System Variables","","")
 [121][4,0]<0>(1600021,-1,0,0)()
 [179][1,0]<0>(1600022)()
 [121][4,0]<1>(1600021,1,0,256)()
@@ -189,8 +189,8 @@ WoditorEvCOMMAND_START
 [499][0,0]<1>()()
 [103][0,1]<1>()("パーティー情報DBからキャラIDを取得する")
 [121][4,0]<1>(1600010,1600021,1,0)()
-[250][5,4]<1>(3,0,1600010,69632,1600020)("","パーティー情報","","")
-[250][5,4]<1>(0,1600020,2,331776,1600009)("","主人公ステータス","","歩行グラフィック画像")
+[250][5,4]<1>(3,0,1600010,69632,1600020)("","Party","","")
+[250][5,4]<1>(0,1600020,2,331776,1600009)("","Allies","","Character Image")
 [112][2,4]<1>(1,270035465)("","","","")
 [401][1,0]<1>(1)()
 [270][3,0]<2>(257,1600010,1600009)()
@@ -215,8 +215,8 @@ WoditorEvCOMMAND_END
 ▼ 【どのコモンイベントから主に呼び出されているか】
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Party Images: Erase All Characters
-■Load DB(Var):  CSelf22[パーティーメンバー数] = VarDB[ "基本ｼｽﾃﾑ用変数":"現在パーティー人数":0 ] (18:4:数値) 
-■Load DB(Var):  CSelf23[最大パーティ人数] = VarDB[ "基本ｼｽﾃﾑ用変数":51:0 ] (18:システム上最大パーティー人数:数値) 
+■Load DB(Var):  CSelf22[パーティーメンバー数] = VarDB[ "Base System Variables":"Current Party Size":0 ] (18:4:Number) 
+■Load DB(Var):  CSelf23[最大パーティ人数] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
 ■Set Variable: CSelf21[処理対象] = -1 + 0 
 ■Repeat Loop [ CSelf22[パーティーメンバー数] ] Times
  |■Set Variable: CSelf21[処理対象] += 1 + 0 
@@ -228,8 +228,8 @@ WoditorEvCOMMAND_END
  |◇End◇
  |▼ パーティー情報DBからキャラIDを取得する
  |■Set Variable: CSelf10[一時変数A] = CSelf21[処理対象] + 1 
- |■Load DB(Var):  CSelf20[処理主人公ID] = VarDB[ "パーティー情報":0:CSelf10[一時変数A] ] (6:メイン設定:-) 
- |■Load DB(Var):  CSelf9 = VarDB[ "主人公ステータス":CSelf20[処理主人公ID]:"歩行グラフィック画像" ] (0:-:2) 
+ |■Load DB(Var):  CSelf20[処理主人公ID] = VarDB[ "Party":0:CSelf10[一時変数A] ] (6:Main Settings:-) 
+ |■Load DB(Var):  CSelf9 = VarDB[ "Allies":CSelf20[処理主人公ID]:"Character Image" ] (0:-:2) 
  |■Condition (String):   [1] CSelf9 is not equal to ""
  |-◇Condition:  [1] [ CSelf9 is not equal to "" ] Case↓
  | |■Party Images:  Before [CSelf9] Member  Insert  CSelf10[一時変数A]

@@ -177,14 +177,14 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [300][3,1]<0>(0,1,0)("X[戦]バックグラウンド描画")
 [300][2,1]<0>(0,0)("X[移]パーティー情報計算")
-[250][5,4]<0>(21,75,0,65536,0)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(21,75,0,65536,0)("","Base System Variables","","")
 [300][2,1]<0>(0,0)("X[戦]戦闘変数初期化")
-[250][5,4]<0>(10,-2,5,65536,1600028)("","×┏ 戦闘一時ステータス[基]","","")
-[250][5,4]<0>(11,-2,5,65536,1600028)("","×┣ 属性耐性計算結果","","")
-[250][5,4]<0>(12,-2,5,65536,1600028)("","×┣ 状態耐性計算結果","","")
-[250][5,4]<0>(13,-2,5,65536,1600028)("","×┣ 状態リスト","","")
-[250][5,4]<0>(15,-2,5,65536,1600028)("","×┣ コマンド処理ﾘｽﾄ","","")
-[250][5,4]<0>(17,-2,5,65536,1600028)("","×┗ お宝リスト","","")
+[250][5,4]<0>(10,-2,5,65536,1600028)("","×┏Battle Temp Status","","")
+[250][5,4]<0>(11,-2,5,65536,1600028)("","×┣Element Resist Calc","","")
+[250][5,4]<0>(12,-2,5,65536,1600028)("","×┣State Resist Calc","","")
+[250][5,4]<0>(13,-2,5,65536,1600028)("","×┣State List","","")
+[250][5,4]<0>(15,-2,5,65536,1600028)("","×┣Cmd Process List","","")
+[250][5,4]<0>(17,-2,5,65536,1600028)("","×┗Reward List","","")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
@@ -203,13 +203,13 @@ WoditorEvCOMMAND_END
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Call Event [Name]: ["X[戦]バックグラウンド描画"] <CommonEv 180>  / 0:表示
 ■Call Event [Name]: ["X[移]パーティー情報計算"] <CommonEv 79> 
-■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":75:0 ] (18:[戦闘]現在ターン数:数値) =  0
+■Write to DB(Var): VarDB[ "Base System Variables":75:0 ] (18:[Battle] Current Turn Count:Number) =  0
 ■Call Event [Name]: ["X[戦]戦闘変数初期化"] <CommonEv 140> 
-■Write to DB(Var): [Reset Type "×┏ 戦闘一時ステータス[基]"(10)]
-■Write to DB(Var): [Reset Type "×┣ 属性耐性計算結果"(11)]
-■Write to DB(Var): [Reset Type "×┣ 状態耐性計算結果"(12)]
-■Write to DB(Var): [Reset Type "×┣ 状態リスト"(13)]
-■Write to DB(Var): [Reset Type "×┣ コマンド処理ﾘｽﾄ"(14)]
-■Write to DB(Var): [Reset Type "×┗ お宝リスト"(15)]
+■Write to DB(Var): [Reset Type "×┏Battle Temp Status"(10)]
+■Write to DB(Var): [Reset Type "×┣Element Resist Calc"(11)]
+■Write to DB(Var): [Reset Type "×┣State Resist Calc"(12)]
+■Write to DB(Var): [Reset Type "×┣State List"(13)]
+■Write to DB(Var): [Reset Type "×┣Cmd Process List"(14)]
+■Write to DB(Var): [Reset Type "×┗Reward List"(15)]
 ■
 [COMMAND_TEXT_END]

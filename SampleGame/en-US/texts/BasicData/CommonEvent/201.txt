@@ -178,14 +178,14 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("全スロットを消去")
 [103][0,1]<0>()("味方を消去")
 [121][4,0]<0>(1600010,-1,0,0)()
-[250][5,4]<0>(20,4,0,69632,1600020)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(20,4,0,69632,1600020)("","Base System Variables","","")
 [179][1,0]<0>(1600020)()
 [121][4,0]<1>(1600010,1,0,256)()
 [300][5,1]<1>(0,3,-1,1600010,1600010)("X[戦]味方欄_単体描画")
 [0][0,0]<1>()()
 [498][0,0]<0>()()
 [103][0,1]<0>()("敵を消去")
-[250][5,4]<0>(21,69,0,69632,1600021)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(21,69,0,69632,1600021)("","Base System Variables","","")
 [121][4,0]<0>(1600010,9,0,0)()
 [179][1,0]<0>(1600021)()
 [121][4,0]<1>(1600010,1,0,256)()
@@ -196,7 +196,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("戦闘後パラメータ更新")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [121][4,0]<0>(1600010,-1,0,0)()
-[250][5,4]<0>(20,4,0,69632,1600021)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(20,4,0,69632,1600021)("","Base System Variables","","")
 [179][1,0]<0>(1600021)()
 [121][4,0]<1>(1600010,1,0,256)()
 [300][4,1]<1>(0,16777217,1600010,1600020)("X[戦]ｽﾛｯﾄから主人公ID取得")
@@ -210,7 +210,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<2>(17,0,21,332288,1600018)("","System Settings","","Fainted Members After Battle")
 [111][4,0]<2>(1,1600018,1,2)()
 [401][1,0]<2>(1)()
-[250][5,4]<3>(4,1600020,0,65536,0)("","┗ 状態リスト","","")
+[250][5,4]<3>(4,1600020,0,65536,0)("","┗ State List","","")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [0][0,0]<2>()()
@@ -223,15 +223,15 @@ WoditorEvCOMMAND_START
 [111][4,0]<3>(1,1600019,1,6)()
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("HPが全快する場合")
-[250][5,4]<4>(17,1600020,0,331776,1600040)("","×主人公一時DB","","[一時]計算済みMaxHP")
-[250][5,4]<4>(0,1600020,6,327680,1600040)("","主人公ステータス","","HP")
+[250][5,4]<4>(17,1600020,0,331776,1600040)("","×Allies Temp Data","","[Temp] Post-Calc Max HP")
+[250][5,4]<4>(0,1600020,6,327680,1600040)("","Allies","","HP")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [111][4,0]<3>(1,1600019,2,6)()
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("SPが全快する場合")
-[250][5,4]<4>(17,1600020,1,331776,1600041)("","×主人公一時DB","","[一時]計算済みMaxSP")
-[250][5,4]<4>(0,1600020,8,327680,1600041)("","主人公ステータス","","SP")
+[250][5,4]<4>(17,1600020,1,331776,1600041)("","×Allies Temp Data","","[Temp] Post-Calc Max SP")
+[250][5,4]<4>(0,1600020,8,327680,1600041)("","Allies","","SP")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [0][0,0]<3>()()
@@ -269,14 +269,14 @@ WoditorEvCOMMAND_END
 ▼ 全スロットを消去
 ▼ 味方を消去
 ■Set Variable: CSelf10[一時変数] = -1 + 0 
-■Load DB(Var):  CSelf20[対象ID] = VarDB[ "基本ｼｽﾃﾑ用変数":4:0 ] (18:現在パーティー人数:数値) 
+■Load DB(Var):  CSelf20[対象ID] = VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) 
 ■Repeat Loop [ CSelf20[対象ID] ] Times
  |■Set Variable: CSelf10[一時変数] += 1 + 0 
  |■Call Event [Name]: ["X[戦]味方欄_単体描画"] <CommonEv 178>  / -1:消去 / CSelf10[一時変数] / CSelf10[一時変数]
  |■
 ◇Loop End Point◇◇
 ▼ 敵を消去
-■Load DB(Var):  CSelf21[パーティ人数] = VarDB[ "基本ｼｽﾃﾑ用変数":69:0 ] (18:[戦闘]敵の最大数(システム):数値) 
+■Load DB(Var):  CSelf21[パーティ人数] = VarDB[ "Base System Variables":69:0 ] (18:[Battle] Max Enemy Count (System):Number) 
 ■Set Variable: CSelf10[一時変数] = 9 + 0 
 ■Repeat Loop [ CSelf21[パーティ人数] ] Times
  |■Set Variable: CSelf10[一時変数] += 1 + 0 
@@ -287,7 +287,7 @@ WoditorEvCOMMAND_END
 ▼ 戦闘後パラメータ更新
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■Set Variable: CSelf10[一時変数] = -1 + 0 
-■Load DB(Var):  CSelf21[パーティ人数] = VarDB[ "基本ｼｽﾃﾑ用変数":4:0 ] (18:現在パーティー人数:数値) 
+■Load DB(Var):  CSelf21[パーティ人数] = VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) 
 ■Repeat Loop [ CSelf21[パーティ人数] ] Times
  |■Set Variable: CSelf10[一時変数] += 1 + 0 
  |■Call Event [Name]: CSelf20[対象ID] = ["X[戦]ｽﾛｯﾄから主人公ID取得"] <CommonEv 141>  / CSelf10[一時変数]
@@ -301,7 +301,7 @@ WoditorEvCOMMAND_END
  | |■Load DB(User):  CSelf18[戦闘不能の扱い] = UserDB[ "System Settings":0:"Fainted Members After Battle" ] (17:Basic System Settings:21) 
  | |■Condition (Number):   [1] CSelf18[戦闘不能の扱い] ==  1  
  | |-◇Condition:  [1]  [ CSelf18[戦闘不能の扱い] == 1   ] Case↓
- | | |■Write to DB(Var): VarDB[ "┗ 状態リスト":CSelf20[対象ID]:0 ] (5:-:\udb[8:0]の残り歩数) =  0
+ | | |■Write to DB(Var): VarDB[ "┗ State List":CSelf20[対象ID]:0 ] (5:-:\udb[8:0] Steps Left) =  0
  | | |■
  | |◇End◇
  | |■
@@ -314,15 +314,15 @@ WoditorEvCOMMAND_END
  | | |■Condition (Number):   [1] CSelf19[戦闘後HP・SPの扱い] &  1  
  | | |-◇Condition:  [1]  [ CSelf19[戦闘後HP・SPの扱い] & 1   ] Case↓
  | | | |▼ HPが全快する場合
- | | | |■Load DB(Var):  CSelf40[一時HP] = VarDB[ "×主人公一時DB":CSelf20[対象ID]:"[一時]計算済みMaxHP" ] (17:-:0) 
- | | | |■Write to DB(Var): VarDB[ "主人公ステータス":CSelf20[対象ID]:"HP" ] (0:-:6) =  CSelf40[一時HP]
+ | | | |■Load DB(Var):  CSelf40[一時HP] = VarDB[ "×Allies Temp Data":CSelf20[対象ID]:"[Temp] Post-Calc Max HP" ] (17:-:0) 
+ | | | |■Write to DB(Var): VarDB[ "Allies":CSelf20[対象ID]:"HP" ] (0:-:6) =  CSelf40[一時HP]
  | | | |■
  | | |◇End◇
  | | |■Condition (Number):   [1] CSelf19[戦闘後HP・SPの扱い] &  2  
  | | |-◇Condition:  [1]  [ CSelf19[戦闘後HP・SPの扱い] & 2   ] Case↓
  | | | |▼ SPが全快する場合
- | | | |■Load DB(Var):  CSelf41[一時SP] = VarDB[ "×主人公一時DB":CSelf20[対象ID]:"[一時]計算済みMaxSP" ] (17:-:1) 
- | | | |■Write to DB(Var): VarDB[ "主人公ステータス":CSelf20[対象ID]:"SP" ] (0:-:8) =  CSelf41[一時SP]
+ | | | |■Load DB(Var):  CSelf41[一時SP] = VarDB[ "×Allies Temp Data":CSelf20[対象ID]:"[Temp] Post-Calc Max SP" ] (17:-:1) 
+ | | | |■Write to DB(Var): VarDB[ "Allies":CSelf20[対象ID]:"SP" ] (0:-:8) =  CSelf41[一時SP]
  | | | |■
  | | |◇End◇
  | | |■

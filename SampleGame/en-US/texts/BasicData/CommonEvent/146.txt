@@ -174,40 +174,40 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [103][0,1]<0>()("初期化")
-[250][5,4]<0>(10,1600000,55,327680,100)("","×┏ 戦闘一時ステータス[基]","","【受ける攻撃力ダメージ率】")
-[250][5,4]<0>(10,1600000,56,327680,100)("","×┏ 戦闘一時ステータス[基]","","【受ける精神攻ダメージ率】")
-[250][5,4]<0>(10,1600000,57,327680,0)("","×┏ 戦闘一時ステータス[基]","","【狙われ度アップ】-1:不可")
-[250][5,4]<0>(10,1600000,58,327680,0)("","×┏ 戦闘一時ステータス[基]","","【行動制限】")
-[250][5,4]<0>(10,1600000,59,327680,0)("","×┏ 戦闘一時ステータス[基]","","【特殊技能制限】1=封印")
-[250][5,4]<0>(10,1600000,61,327680,-1)("","×┏ 戦闘一時ステータス[基]","","【ｶｳﾝﾀｰ系状態有り】")
-[250][5,4]<0>(10,1600000,62,327680,0)("","×┏ 戦闘一時ステータス[基]","","HPﾀｰﾝ増減[%]")
-[250][5,4]<0>(10,1600000,63,327680,0)("","×┏ 戦闘一時ステータス[基]","","HPﾀｰﾝ増減[固定値]")
-[250][5,4]<0>(10,1600000,64,327680,0)("","×┏ 戦闘一時ステータス[基]","","SPﾀｰﾝ増減[%]")
-[250][5,4]<0>(10,1600000,65,327680,0)("","×┏ 戦闘一時ステータス[基]","","SPﾀｰﾝ増減[固定値]")
+[250][5,4]<0>(10,1600000,55,327680,100)("","×┏Battle Temp Status","","[Physical Dmg Taken Rate]")
+[250][5,4]<0>(10,1600000,56,327680,100)("","×┏Battle Temp Status","","[Magic Damage Taken Rate]")
+[250][5,4]<0>(10,1600000,57,327680,0)("","×┏Battle Temp Status","","[Target Level] -1:NotTargeted")
+[250][5,4]<0>(10,1600000,58,327680,0)("","×┏Battle Temp Status","","[Action Restriction]")
+[250][5,4]<0>(10,1600000,59,327680,0)("","×┏Battle Temp Status","","[Skill Limitation] 1:Sealed")
+[250][5,4]<0>(10,1600000,61,327680,-1)("","×┏Battle Temp Status","","[Counterattack?]")
+[250][5,4]<0>(10,1600000,62,327680,0)("","×┏Battle Temp Status","","HP Change per Turn [%]")
+[250][5,4]<0>(10,1600000,63,327680,0)("","×┏Battle Temp Status","","HP Change per Turn [Fixed]")
+[250][5,4]<0>(10,1600000,64,327680,0)("","×┏Battle Temp Status","","SP Change per Turn [%]")
+[250][5,4]<0>(10,1600000,65,327680,0)("","×┏Battle Temp Status","","SP Change per Turn [Fixed]")
 [103][0,1]<0>()("基本値を読み込み")
-[250][5,4]<0>(10,1600000,5,331776,1600042)("","×┏ 戦闘一時ステータス[基]","","最大HP")
-[250][5,4]<0>(10,1600000,7,331776,1600043)("","×┏ 戦闘一時ステータス[基]","","最大SP")
-[250][5,4]<0>(10,1600000,8,331776,1600044)("","×┏ 戦闘一時ステータス[基]","","基本攻撃力")
-[250][5,4]<0>(10,1600000,9,331776,1600045)("","×┏ 戦闘一時ステータス[基]","","基本防御力")
-[250][5,4]<0>(10,1600000,10,331776,1600046)("","×┏ 戦闘一時ステータス[基]","","基本精神攻撃")
-[250][5,4]<0>(10,1600000,11,331776,1600047)("","×┏ 戦闘一時ステータス[基]","","基本精神防御")
-[250][5,4]<0>(10,1600000,12,331776,1600048)("","×┏ 戦闘一時ステータス[基]","","基本敏捷性")
-[250][5,4]<0>(10,1600000,13,331776,1600049)("","×┏ 戦闘一時ステータス[基]","","基本命中率[%]")
-[250][5,4]<0>(10,1600000,14,331776,1600050)("","×┏ 戦闘一時ステータス[基]","","基本回避率[%]")
-[250][5,4]<0>(10,1600000,15,331776,1600051)("","×┏ 戦闘一時ステータス[基]","","基本クリティカル率[%]")
+[250][5,4]<0>(10,1600000,5,331776,1600042)("","×┏Battle Temp Status","","Max HP")
+[250][5,4]<0>(10,1600000,7,331776,1600043)("","×┏Battle Temp Status","","Max SP")
+[250][5,4]<0>(10,1600000,8,331776,1600044)("","×┏Battle Temp Status","","Base Attack")
+[250][5,4]<0>(10,1600000,9,331776,1600045)("","×┏Battle Temp Status","","Base Defense")
+[250][5,4]<0>(10,1600000,10,331776,1600046)("","×┏Battle Temp Status","","Base Magic Attack")
+[250][5,4]<0>(10,1600000,11,331776,1600047)("","×┏Battle Temp Status","","Base Magic Defense")
+[250][5,4]<0>(10,1600000,12,331776,1600048)("","×┏Battle Temp Status","","Base Agility")
+[250][5,4]<0>(10,1600000,13,331776,1600049)("","×┏Battle Temp Status","","Base Accuracy [%]")
+[250][5,4]<0>(10,1600000,14,331776,1600050)("","×┏Battle Temp Status","","Base Evasion [%]")
+[250][5,4]<0>(10,1600000,15,331776,1600051)("","×┏Battle Temp Status","","Base Critical Rate [%]")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<0>()("一時値へコピー")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[250][5,4]<0>(10,1600000,45,327680,1600042)("","×┏ 戦闘一時ステータス[基]","","[一時]計算済みMaxHP")
-[250][5,4]<0>(10,1600000,46,327680,1600043)("","×┏ 戦闘一時ステータス[基]","","[一時]計算済みMaxSP")
-[250][5,4]<0>(10,1600000,47,327680,1600044)("","×┏ 戦闘一時ステータス[基]","","[一時]計算済み攻撃力")
-[250][5,4]<0>(10,1600000,48,327680,1600045)("","×┏ 戦闘一時ステータス[基]","","[一時]計算済み防御力")
-[250][5,4]<0>(10,1600000,49,327680,1600046)("","×┏ 戦闘一時ステータス[基]","","[一時]計算済み精神攻撃")
-[250][5,4]<0>(10,1600000,50,327680,1600047)("","×┏ 戦闘一時ステータス[基]","","[一時]計算済み精神防御")
-[250][5,4]<0>(10,1600000,51,327680,1600048)("","×┏ 戦闘一時ステータス[基]","","[一時]計算済み敏捷性")
-[250][5,4]<0>(10,1600000,52,327680,1600049)("","×┏ 戦闘一時ステータス[基]","","[一時]計算済み命中率")
-[250][5,4]<0>(10,1600000,53,327680,1600050)("","×┏ 戦闘一時ステータス[基]","","[一時]計算済み回避率")
-[250][5,4]<0>(10,1600000,54,327680,1600051)("","×┏ 戦闘一時ステータス[基]","","[一時]計算済みｸﾘﾃｨｶﾙ率")
+[250][5,4]<0>(10,1600000,45,327680,1600042)("","×┏Battle Temp Status","","[Temp] Post-Calc Max HP")
+[250][5,4]<0>(10,1600000,46,327680,1600043)("","×┏Battle Temp Status","","[Temp] Post-Calc Max SP")
+[250][5,4]<0>(10,1600000,47,327680,1600044)("","×┏Battle Temp Status","","[Temp] Post-Calc Attack")
+[250][5,4]<0>(10,1600000,48,327680,1600045)("","×┏Battle Temp Status","","[Temp] Post-Calc Defense")
+[250][5,4]<0>(10,1600000,49,327680,1600046)("","×┏Battle Temp Status","","[Temp] Post-Calc Magic Atk")
+[250][5,4]<0>(10,1600000,50,327680,1600047)("","×┏Battle Temp Status","","[Temp] Post-Calc Magic Def")
+[250][5,4]<0>(10,1600000,51,327680,1600048)("","×┏Battle Temp Status","","[Temp] Post-Calc Agility")
+[250][5,4]<0>(10,1600000,52,327680,1600049)("","×┏Battle Temp Status","","[Temp] Post-Calc Accuracy")
+[250][5,4]<0>(10,1600000,53,327680,1600050)("","×┏Battle Temp Status","","[Temp] Post-Calc Evasion")
+[250][5,4]<0>(10,1600000,54,327680,1600051)("","×┏Battle Temp Status","","[Temp]Post-Calc Critical Rate")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
@@ -223,39 +223,39 @@ WoditorEvCOMMAND_END
  |■
 ◇End◇
 ▼ 初期化
-■Write to DB(Var): VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"【受ける攻撃力ダメージ率】" ] (10:-:56) =  100
-■Write to DB(Var): VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"【受ける精神攻ダメージ率】" ] (10:-:57) =  100
-■Write to DB(Var): VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"【狙われ度アップ】-1:不可" ] (10:-:58) =  0
-■Write to DB(Var): VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"【行動制限】" ] (10:-:59) =  0
-■Write to DB(Var): VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"【特殊技能制限】1=封印" ] (10:-:60) =  0
-■Write to DB(Var): VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"【ｶｳﾝﾀｰ系状態有り】" ] (10:-:61) =  -1
-■Write to DB(Var): VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"HPﾀｰﾝ増減[%]" ] (10:-:62) =  0
-■Write to DB(Var): VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"HPﾀｰﾝ増減[固定値]" ] (10:-:63) =  0
-■Write to DB(Var): VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"SPﾀｰﾝ増減[%]" ] (10:-:64) =  0
-■Write to DB(Var): VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"SPﾀｰﾝ増減[固定値]" ] (10:-:65) =  0
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Physical Dmg Taken Rate]" ] (10:-:56) =  100
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Magic Damage Taken Rate]" ] (10:-:57) =  100
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Target Level] -1:NotTargeted" ] (10:-:58) =  0
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Action Restriction]" ] (10:-:59) =  0
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Skill Limitation] 1:Sealed" ] (10:-:60) =  0
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Counterattack?]" ] (10:-:61) =  -1
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"HP Change per Turn [%]" ] (10:-:62) =  0
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"HP Change per Turn [Fixed]" ] (10:-:63) =  0
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"SP Change per Turn [%]" ] (10:-:64) =  0
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"SP Change per Turn [Fixed]" ] (10:-:65) =  0
 ▼ 基本値を読み込み
-■Load DB(Var):  CSelf42[最大HP] = VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"最大HP" ] (10:-:6) 
-■Load DB(Var):  CSelf43[最大SP] = VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"最大SP" ] (10:-:8) 
-■Load DB(Var):  CSelf44[攻撃力] = VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"基本攻撃力" ] (10:-:9) 
-■Load DB(Var):  CSelf45[防御力] = VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"基本防御力" ] (10:-:10) 
-■Load DB(Var):  CSelf46[精神攻撃] = VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"基本精神攻撃" ] (10:-:11) 
-■Load DB(Var):  CSelf47[精神防御] = VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"基本精神防御" ] (10:-:12) 
-■Load DB(Var):  CSelf48[敏捷性] = VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"基本敏捷性" ] (10:-:13) 
-■Load DB(Var):  CSelf49[命中率] = VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"基本命中率[%]" ] (10:-:14) 
-■Load DB(Var):  CSelf50[回避率] = VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"基本回避率[%]" ] (10:-:15) 
-■Load DB(Var):  CSelf51[クリティカル] = VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"基本クリティカル率[%]" ] (10:-:16) 
+■Load DB(Var):  CSelf42[最大HP] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Max HP" ] (10:-:6) 
+■Load DB(Var):  CSelf43[最大SP] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Max SP" ] (10:-:8) 
+■Load DB(Var):  CSelf44[攻撃力] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Base Attack" ] (10:-:9) 
+■Load DB(Var):  CSelf45[防御力] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Base Defense" ] (10:-:10) 
+■Load DB(Var):  CSelf46[精神攻撃] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Base Magic Attack" ] (10:-:11) 
+■Load DB(Var):  CSelf47[精神防御] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Base Magic Defense" ] (10:-:12) 
+■Load DB(Var):  CSelf48[敏捷性] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Base Agility" ] (10:-:13) 
+■Load DB(Var):  CSelf49[命中率] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Base Accuracy [%]" ] (10:-:14) 
+■Load DB(Var):  CSelf50[回避率] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Base Evasion [%]" ] (10:-:15) 
+■Load DB(Var):  CSelf51[クリティカル] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Base Critical Rate [%]" ] (10:-:16) 
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ 一時値へコピー
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-■Write to DB(Var): VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"[一時]計算済みMaxHP" ] (10:-:44) =  CSelf42[最大HP]
-■Write to DB(Var): VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"[一時]計算済みMaxSP" ] (10:-:46) =  CSelf43[最大SP]
-■Write to DB(Var): VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"[一時]計算済み攻撃力" ] (10:-:48) =  CSelf44[攻撃力]
-■Write to DB(Var): VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"[一時]計算済み防御力" ] (10:-:49) =  CSelf45[防御力]
-■Write to DB(Var): VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"[一時]計算済み精神攻撃" ] (10:-:50) =  CSelf46[精神攻撃]
-■Write to DB(Var): VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"[一時]計算済み精神防御" ] (10:-:51) =  CSelf47[精神防御]
-■Write to DB(Var): VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"[一時]計算済み敏捷性" ] (10:-:52) =  CSelf48[敏捷性]
-■Write to DB(Var): VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"[一時]計算済み命中率" ] (10:-:53) =  CSelf49[命中率]
-■Write to DB(Var): VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"[一時]計算済み回避率" ] (10:-:54) =  CSelf50[回避率]
-■Write to DB(Var): VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"[一時]計算済みｸﾘﾃｨｶﾙ率" ] (10:-:55) =  CSelf51[クリティカル]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Max HP" ] (10:-:44) =  CSelf42[最大HP]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Max SP" ] (10:-:46) =  CSelf43[最大SP]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Attack" ] (10:-:48) =  CSelf44[攻撃力]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Defense" ] (10:-:49) =  CSelf45[防御力]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Magic Atk" ] (10:-:50) =  CSelf46[精神攻撃]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Magic Def" ] (10:-:51) =  CSelf47[精神防御]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Agility" ] (10:-:52) =  CSelf48[敏捷性]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Accuracy" ] (10:-:53) =  CSelf49[命中率]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Evasion" ] (10:-:54) =  CSelf50[回避率]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp]Post-Calc Critical Rate" ] (10:-:55) =  CSelf51[クリティカル]
 ■
 [COMMAND_TEXT_END]

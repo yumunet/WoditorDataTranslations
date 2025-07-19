@@ -189,7 +189,7 @@ WoditorEvCOMMAND_START
 [179][1,0]<0>(1600025)()
 [103][0,1]<1>()("状態ターンが残っていれば反映")
 [121][4,0]<1>(1600026,1,0,256)()
-[250][5,4]<1>(5,1600000,1600026,69632,1600023)("","┗ 状態リスト","","")
+[250][5,4]<1>(5,1600000,1600026,69632,1600023)("","┗ State List","","")
 [111][4,0]<1>(1,1600023,0,5)()
 [401][1,0]<1>(1)()
 [250][5,4]<2>(8,1600026,26,332336,1600050)("","States","","Max HP Change [%]")
@@ -205,21 +205,21 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600051,0,0,1536)()
 [103][0,1]<0>()("一時パラメータに加算する")
 [103][0,1]<0>()("HP・SPの上限設定")
-[250][5,4]<0>(21,1600000,0,327728,1600050)("","×主人公一時DB","","[一時]計算済みMaxHP")
-[250][5,4]<0>(21,1600000,0,327744,100)("","×主人公一時DB","","[一時]計算済みMaxHP")
-[250][5,4]<0>(21,1600000,0,327776,1)("","×主人公一時DB","","[一時]計算済みMaxHP")
+[250][5,4]<0>(21,1600000,0,327728,1600050)("","×Allies Temp Data","","[Temp] Post-Calc Max HP")
+[250][5,4]<0>(21,1600000,0,327744,100)("","×Allies Temp Data","","[Temp] Post-Calc Max HP")
+[250][5,4]<0>(21,1600000,0,327776,1)("","×Allies Temp Data","","[Temp] Post-Calc Max HP")
 [103][0,1]<0>()(" ")
-[250][5,4]<0>(21,1600000,1,327728,1600051)("","×主人公一時DB","","[一時]計算済みMaxSP")
-[250][5,4]<0>(21,1600000,1,327744,100)("","×主人公一時DB","","[一時]計算済みMaxSP")
-[250][5,4]<0>(21,1600000,1,327776,0)("","×主人公一時DB","","[一時]計算済みMaxSP")
+[250][5,4]<0>(21,1600000,1,327728,1600051)("","×Allies Temp Data","","[Temp] Post-Calc Max SP")
+[250][5,4]<0>(21,1600000,1,327744,100)("","×Allies Temp Data","","[Temp] Post-Calc Max SP")
+[250][5,4]<0>(21,1600000,1,327776,0)("","×Allies Temp Data","","[Temp] Post-Calc Max SP")
 [103][0,1]<0>()(" ")
-[250][5,4]<0>(21,1600000,0,331776,1600030)("","×主人公一時DB","","[一時]計算済みMaxHP")
-[250][5,4]<0>(21,1600000,1,331776,1600031)("","×主人公一時DB","","[一時]計算済みMaxSP")
+[250][5,4]<0>(21,1600000,0,331776,1600030)("","×Allies Temp Data","","[Temp] Post-Calc Max HP")
+[250][5,4]<0>(21,1600000,1,331776,1600031)("","×Allies Temp Data","","[Temp] Post-Calc Max SP")
 [103][0,1]<0>()(" ")
-[250][5,4]<0>(0,1600000,6,327792,1600030)("","主人公ステータス","","HP")
-[250][5,4]<0>(0,1600000,8,327792,1600031)("","主人公ステータス","","SP")
-[250][5,4]<0>(0,1600000,6,327776,0)("","主人公ステータス","","HP")
-[250][5,4]<0>(0,1600000,8,327776,0)("","主人公ステータス","","SP")
+[250][5,4]<0>(0,1600000,6,327792,1600030)("","Allies","","HP")
+[250][5,4]<0>(0,1600000,8,327792,1600031)("","Allies","","SP")
+[250][5,4]<0>(0,1600000,6,327776,0)("","Allies","","HP")
+[250][5,4]<0>(0,1600000,8,327776,0)("","Allies","","SP")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
@@ -244,7 +244,7 @@ WoditorEvCOMMAND_END
 ■Repeat Loop [ CSelf25[最大状態数] ] Times
  |▼ 状態ターンが残っていれば反映
  |■Set Variable: CSelf26[処理中状態] += 1 + 0 
- |■Load DB(Var):  CSelf23[残りターン] = VarDB[ "┗ 状態リスト":CSelf0[対象主人公ID]:CSelf26[処理中状態] ] (5:-:-) 
+ |■Load DB(Var):  CSelf23[残りターン] = VarDB[ "┗ State List":CSelf0[対象主人公ID]:CSelf26[処理中状態] ] (5:-:-) 
  |■Condition (Number):   [1] CSelf23[残りターン] !=  0  
  |-◇Condition:  [1]  [ CSelf23[残りターン] != 0   ] Case↓
  | |■Load DB(User):  CSelf50[MaxHP％変化値] *= UserDB[ "States":CSelf26[処理中状態]:"Max HP Change [%]" ] (8:-:26) 
@@ -260,20 +260,20 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf51[MaxSP％変化値] Lower Bound= 0 + 0 
 ▼ 一時パラメータに加算する
 ▼ HP・SPの上限設定
-■Write to DB(Var): VarDB[ "×主人公一時DB":CSelf0[対象主人公ID]:"[一時]計算済みMaxHP" ] (17:-:0) *=  CSelf50[MaxHP％変化値]
-■Write to DB(Var): VarDB[ "×主人公一時DB":CSelf0[対象主人公ID]:"[一時]計算済みMaxHP" ] (17:-:0) /=  100
-■Write to DB(Var): VarDB[ "×主人公一時DB":CSelf0[対象主人公ID]:"[一時]計算済みMaxHP" ] (17:-:0) Lower Bound  1
+■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[対象主人公ID]:"[Temp] Post-Calc Max HP" ] (17:-:0) *=  CSelf50[MaxHP％変化値]
+■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[対象主人公ID]:"[Temp] Post-Calc Max HP" ] (17:-:0) /=  100
+■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[対象主人公ID]:"[Temp] Post-Calc Max HP" ] (17:-:0) Lower Bound  1
 ▼  
-■Write to DB(Var): VarDB[ "×主人公一時DB":CSelf0[対象主人公ID]:"[一時]計算済みMaxSP" ] (17:-:1) *=  CSelf51[MaxSP％変化値]
-■Write to DB(Var): VarDB[ "×主人公一時DB":CSelf0[対象主人公ID]:"[一時]計算済みMaxSP" ] (17:-:1) /=  100
-■Write to DB(Var): VarDB[ "×主人公一時DB":CSelf0[対象主人公ID]:"[一時]計算済みMaxSP" ] (17:-:1) Lower Bound  0
+■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[対象主人公ID]:"[Temp] Post-Calc Max SP" ] (17:-:1) *=  CSelf51[MaxSP％変化値]
+■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[対象主人公ID]:"[Temp] Post-Calc Max SP" ] (17:-:1) /=  100
+■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[対象主人公ID]:"[Temp] Post-Calc Max SP" ] (17:-:1) Lower Bound  0
 ▼  
-■Load DB(Var):  CSelf30[最大HP] = VarDB[ "×主人公一時DB":CSelf0[対象主人公ID]:"[一時]計算済みMaxHP" ] (17:-:0) 
-■Load DB(Var):  CSelf31[最大SP] = VarDB[ "×主人公一時DB":CSelf0[対象主人公ID]:"[一時]計算済みMaxSP" ] (17:-:1) 
+■Load DB(Var):  CSelf30[最大HP] = VarDB[ "×Allies Temp Data":CSelf0[対象主人公ID]:"[Temp] Post-Calc Max HP" ] (17:-:0) 
+■Load DB(Var):  CSelf31[最大SP] = VarDB[ "×Allies Temp Data":CSelf0[対象主人公ID]:"[Temp] Post-Calc Max SP" ] (17:-:1) 
 ▼  
-■Write to DB(Var): VarDB[ "主人公ステータス":CSelf0[対象主人公ID]:"HP" ] (0:-:6) Upper Bound  CSelf30[最大HP]
-■Write to DB(Var): VarDB[ "主人公ステータス":CSelf0[対象主人公ID]:"SP" ] (0:-:8) Upper Bound  CSelf31[最大SP]
-■Write to DB(Var): VarDB[ "主人公ステータス":CSelf0[対象主人公ID]:"HP" ] (0:-:6) Lower Bound  0
-■Write to DB(Var): VarDB[ "主人公ステータス":CSelf0[対象主人公ID]:"SP" ] (0:-:8) Lower Bound  0
+■Write to DB(Var): VarDB[ "Allies":CSelf0[対象主人公ID]:"HP" ] (0:-:6) Upper Bound  CSelf30[最大HP]
+■Write to DB(Var): VarDB[ "Allies":CSelf0[対象主人公ID]:"SP" ] (0:-:8) Upper Bound  CSelf31[最大SP]
+■Write to DB(Var): VarDB[ "Allies":CSelf0[対象主人公ID]:"HP" ] (0:-:6) Lower Bound  0
+■Write to DB(Var): VarDB[ "Allies":CSelf0[対象主人公ID]:"SP" ] (0:-:8) Lower Bound  0
 ■
 [COMMAND_TEXT_END]

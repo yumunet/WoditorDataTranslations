@@ -176,35 +176,35 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [103][0,1]<0>()("パラメータをコピーする")
-[250][5,4]<0>(0,1600000,6,331776,1600010)("","主人公ステータス","","最大HP")
-[250][5,4]<0>(21,1600000,0,327680,1600010)("","×主人公一時DB","","[一時]計算済みMaxHP")
+[250][5,4]<0>(0,1600000,6,331776,1600010)("","Allies","","Max HP")
+[250][5,4]<0>(21,1600000,0,327680,1600010)("","×Allies Temp Data","","[Temp] Post-Calc Max HP")
 [103][0,1]<0>()(" ")
-[250][5,4]<0>(0,1600000,8,331776,1600010)("","主人公ステータス","","最大SP")
-[250][5,4]<0>(21,1600000,1,327680,1600010)("","×主人公一時DB","","[一時]計算済みMaxSP")
+[250][5,4]<0>(0,1600000,8,331776,1600010)("","Allies","","Max SP")
+[250][5,4]<0>(21,1600000,1,327680,1600010)("","×Allies Temp Data","","[Temp] Post-Calc Max SP")
 [103][0,1]<0>()(" ")
-[250][5,4]<0>(0,1600000,9,331776,1600010)("","主人公ステータス","","基本攻撃力")
-[250][5,4]<0>(21,1600000,2,327680,1600010)("","×主人公一時DB","","[一時]計算済み攻撃力")
+[250][5,4]<0>(0,1600000,9,331776,1600010)("","Allies","","Base Attack")
+[250][5,4]<0>(21,1600000,2,327680,1600010)("","×Allies Temp Data","","[Temp] Post-Calc Attack")
 [103][0,1]<0>()(" ")
-[250][5,4]<0>(0,1600000,10,331776,1600010)("","主人公ステータス","","基本防御力")
-[250][5,4]<0>(21,1600000,3,327680,1600010)("","×主人公一時DB","","[一時]計算済み防御力")
+[250][5,4]<0>(0,1600000,10,331776,1600010)("","Allies","","Base Defense")
+[250][5,4]<0>(21,1600000,3,327680,1600010)("","×Allies Temp Data","","[Temp] Post-Calc Defense")
 [103][0,1]<0>()(" ")
-[250][5,4]<0>(0,1600000,11,331776,1600010)("","主人公ステータス","","基本精神攻撃")
-[250][5,4]<0>(21,1600000,4,327680,1600010)("","×主人公一時DB","","[一時]計算済み精神攻撃")
+[250][5,4]<0>(0,1600000,11,331776,1600010)("","Allies","","Base Magic Attack")
+[250][5,4]<0>(21,1600000,4,327680,1600010)("","×Allies Temp Data","","[Temp] Post-Calc Magic Atk")
 [103][0,1]<0>()(" ")
-[250][5,4]<0>(0,1600000,12,331776,1600010)("","主人公ステータス","","基本精神防御")
-[250][5,4]<0>(21,1600000,5,327680,1600010)("","×主人公一時DB","","[一時]計算済み精神防御")
+[250][5,4]<0>(0,1600000,12,331776,1600010)("","Allies","","Base Magic Defense")
+[250][5,4]<0>(21,1600000,5,327680,1600010)("","×Allies Temp Data","","[Temp] Post-Calc Magic Def")
 [103][0,1]<0>()(" ")
-[250][5,4]<0>(0,1600000,13,331776,1600010)("","主人公ステータス","","基本敏捷性")
-[250][5,4]<0>(21,1600000,6,327680,1600010)("","×主人公一時DB","","[一時]計算済み敏捷性")
+[250][5,4]<0>(0,1600000,13,331776,1600010)("","Allies","","Base Agility")
+[250][5,4]<0>(21,1600000,6,327680,1600010)("","×Allies Temp Data","","[Temp] Post-Calc Agility")
 [103][0,1]<0>()(" ")
-[250][5,4]<0>(0,1600000,21,331776,1600010)("","主人公ステータス","","基本命中率[%]")
-[250][5,4]<0>(21,1600000,7,327680,1600010)("","×主人公一時DB","","[一時]計算済み命中率")
+[250][5,4]<0>(0,1600000,21,331776,1600010)("","Allies","","Base Accuracy [%]")
+[250][5,4]<0>(21,1600000,7,327680,1600010)("","×Allies Temp Data","","[Temp] Post-Calc Accuracy")
 [103][0,1]<0>()(" ")
-[250][5,4]<0>(0,1600000,22,331776,1600010)("","主人公ステータス","","基本回避率[%]")
-[250][5,4]<0>(21,1600000,8,327680,1600010)("","×主人公一時DB","","[一時]計算済み回避率")
+[250][5,4]<0>(0,1600000,22,331776,1600010)("","Allies","","Base Evasion [%]")
+[250][5,4]<0>(21,1600000,8,327680,1600010)("","×Allies Temp Data","","[Temp] Post-Calc Evasion")
 [103][0,1]<0>()(" ")
-[250][5,4]<0>(0,1600000,14,331776,1600010)("","主人公ステータス","","クリティカル率[%]")
-[250][5,4]<0>(21,1600000,9,327680,1600010)("","×主人公一時DB","","[一時]計算済みｸﾘﾃｨｶﾙ")
+[250][5,4]<0>(0,1600000,14,331776,1600010)("","Allies","","Base Critical Rate [%]")
+[250][5,4]<0>(21,1600000,9,327680,1600010)("","×Allies Temp Data","","[Temp]Post-Calc Critical Rate")
 [103][0,1]<0>()(" ")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
@@ -223,35 +223,35 @@ WoditorEvCOMMAND_END
  |■
 ◇End◇
 ▼ パラメータをコピーする
-■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "主人公ステータス":CSelf0[対象主人公ID]:"最大HP" ] (0:-:7) 
-■Write to DB(Var): VarDB[ "×主人公一時DB":CSelf0[対象主人公ID]:"[一時]計算済みMaxHP" ] (17:-:0) =  CSelf10[一時変数A]
+■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "Allies":CSelf0[対象主人公ID]:"Max HP" ] (0:-:7) 
+■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[対象主人公ID]:"[Temp] Post-Calc Max HP" ] (17:-:0) =  CSelf10[一時変数A]
 ▼  
-■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "主人公ステータス":CSelf0[対象主人公ID]:"最大SP" ] (0:-:9) 
-■Write to DB(Var): VarDB[ "×主人公一時DB":CSelf0[対象主人公ID]:"[一時]計算済みMaxSP" ] (17:-:1) =  CSelf10[一時変数A]
+■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "Allies":CSelf0[対象主人公ID]:"Max SP" ] (0:-:9) 
+■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[対象主人公ID]:"[Temp] Post-Calc Max SP" ] (17:-:1) =  CSelf10[一時変数A]
 ▼  
-■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "主人公ステータス":CSelf0[対象主人公ID]:"基本攻撃力" ] (0:-:10) 
-■Write to DB(Var): VarDB[ "×主人公一時DB":CSelf0[対象主人公ID]:"[一時]計算済み攻撃力" ] (17:-:2) =  CSelf10[一時変数A]
+■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "Allies":CSelf0[対象主人公ID]:"Base Attack" ] (0:-:10) 
+■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[対象主人公ID]:"[Temp] Post-Calc Attack" ] (17:-:2) =  CSelf10[一時変数A]
 ▼  
-■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "主人公ステータス":CSelf0[対象主人公ID]:"基本防御力" ] (0:-:11) 
-■Write to DB(Var): VarDB[ "×主人公一時DB":CSelf0[対象主人公ID]:"[一時]計算済み防御力" ] (17:-:3) =  CSelf10[一時変数A]
+■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "Allies":CSelf0[対象主人公ID]:"Base Defense" ] (0:-:11) 
+■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[対象主人公ID]:"[Temp] Post-Calc Defense" ] (17:-:3) =  CSelf10[一時変数A]
 ▼  
-■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "主人公ステータス":CSelf0[対象主人公ID]:"基本精神攻撃" ] (0:-:12) 
-■Write to DB(Var): VarDB[ "×主人公一時DB":CSelf0[対象主人公ID]:"[一時]計算済み精神攻撃" ] (17:-:4) =  CSelf10[一時変数A]
+■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "Allies":CSelf0[対象主人公ID]:"Base Magic Attack" ] (0:-:12) 
+■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[対象主人公ID]:"[Temp] Post-Calc Magic Atk" ] (17:-:4) =  CSelf10[一時変数A]
 ▼  
-■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "主人公ステータス":CSelf0[対象主人公ID]:"基本精神防御" ] (0:-:13) 
-■Write to DB(Var): VarDB[ "×主人公一時DB":CSelf0[対象主人公ID]:"[一時]計算済み精神防御" ] (17:-:5) =  CSelf10[一時変数A]
+■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "Allies":CSelf0[対象主人公ID]:"Base Magic Defense" ] (0:-:13) 
+■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[対象主人公ID]:"[Temp] Post-Calc Magic Def" ] (17:-:5) =  CSelf10[一時変数A]
 ▼  
-■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "主人公ステータス":CSelf0[対象主人公ID]:"基本敏捷性" ] (0:-:14) 
-■Write to DB(Var): VarDB[ "×主人公一時DB":CSelf0[対象主人公ID]:"[一時]計算済み敏捷性" ] (17:-:6) =  CSelf10[一時変数A]
+■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "Allies":CSelf0[対象主人公ID]:"Base Agility" ] (0:-:14) 
+■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[対象主人公ID]:"[Temp] Post-Calc Agility" ] (17:-:6) =  CSelf10[一時変数A]
 ▼  
-■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "主人公ステータス":CSelf0[対象主人公ID]:"基本命中率[%]" ] (0:-:15) 
-■Write to DB(Var): VarDB[ "×主人公一時DB":CSelf0[対象主人公ID]:"[一時]計算済み命中率" ] (17:-:7) =  CSelf10[一時変数A]
+■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "Allies":CSelf0[対象主人公ID]:"Base Accuracy [%]" ] (0:-:15) 
+■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[対象主人公ID]:"[Temp] Post-Calc Accuracy" ] (17:-:7) =  CSelf10[一時変数A]
 ▼  
-■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "主人公ステータス":CSelf0[対象主人公ID]:"基本回避率[%]" ] (0:-:16) 
-■Write to DB(Var): VarDB[ "×主人公一時DB":CSelf0[対象主人公ID]:"[一時]計算済み回避率" ] (17:-:8) =  CSelf10[一時変数A]
+■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "Allies":CSelf0[対象主人公ID]:"Base Evasion [%]" ] (0:-:16) 
+■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[対象主人公ID]:"[Temp] Post-Calc Evasion" ] (17:-:8) =  CSelf10[一時変数A]
 ▼  
-■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "主人公ステータス":CSelf0[対象主人公ID]:"クリティカル率[%]" ] (0:-:17) 
-■Write to DB(Var): VarDB[ "×主人公一時DB":CSelf0[対象主人公ID]:"[一時]計算済みｸﾘﾃｨｶﾙ" ] (17:-:9) =  CSelf10[一時変数A]
+■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "Allies":CSelf0[対象主人公ID]:"Base Critical Rate [%]" ] (0:-:17) 
+■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[対象主人公ID]:"[Temp]Post-Calc Critical Rate" ] (17:-:9) =  CSelf10[一時変数A]
 ▼  
 ■
 [COMMAND_TEXT_END]

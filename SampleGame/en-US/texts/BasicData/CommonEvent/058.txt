@@ -181,7 +181,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<1>(1600010,-1,0,0)()
 [103][0,1]<1>()("15：最初に見つかった空欄箇所を記憶する変数")
 [121][4,0]<1>(1600015,-1,0,0)()
-[250][5,4]<1>(1,1600000,-1,69632,1600011)("","┣ 技能習得Lv","","")
+[250][5,4]<1>(1,1600000,-1,69632,1600011)("","┣ Skill Learning Lv","","")
 [170][0,0]<1>()()
 [121][4,0]<2>(1600010,2,0,256)()
 [111][4,0]<2>(1,1600010,1600011,1)()
@@ -190,12 +190,12 @@ WoditorEvCOMMAND_START
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [103][0,1]<2>()("もし覚えようとしている技能が見つかったらその習得レベルを0にする")
-[250][5,4]<2>(1,1600000,1600010,69632,1600012)("","┣ 技能習得Lv","","")
+[250][5,4]<2>(1,1600000,1600010,69632,1600012)("","┣ Skill Learning Lv","","")
 [111][4,0]<2>(1,1600012,1600001,2)()
 [401][1,0]<2>(1)()
 [121][4,0]<3>(1600010,-1,0,256)()
 [103][0,1]<3>()("習得レベルを0にする（習得済みにする）　　そして終了")
-[250][5,4]<3>(1,1600000,1600010,65536,0)("","┣ 技能習得Lv","","")
+[250][5,4]<3>(1,1600000,1600010,65536,0)("","┣ Skill Learning Lv","","")
 [172][0,0]<3>()()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
@@ -223,7 +223,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<0>(2)()
 [103][0,1]<1>()("忘却の場合は、その技能があればどんどん消去していく")
 [121][4,0]<1>(1600010,-1,0,0)()
-[250][5,4]<1>(1,1600000,-1,69632,1600011)("","┣ 技能習得Lv","","")
+[250][5,4]<1>(1,1600000,-1,69632,1600011)("","┣ Skill Learning Lv","","")
 [170][0,0]<1>()()
 [121][4,0]<2>(1600010,2,0,256)()
 [111][4,0]<2>(1,1600010,1600011,1)()
@@ -232,14 +232,14 @@ WoditorEvCOMMAND_START
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [103][0,1]<2>()("もし忘れようとしている技能が見つかったら消去")
-[250][5,4]<2>(1,1600000,1600010,69632,1600012)("","┣ 技能習得Lv","","")
+[250][5,4]<2>(1,1600000,1600010,69632,1600012)("","┣ Skill Learning Lv","","")
 [111][4,0]<2>(1,1600012,1600001,2)()
 [401][1,0]<2>(1)()
 [103][0,1]<3>()("見つけた技能と習得レベルを-1にする")
 [121][4,0]<3>(1600010,-1,0,256)()
-[250][5,4]<3>(1,1600000,1600010,65536,-1)("","┣ 技能習得Lv","","")
+[250][5,4]<3>(1,1600000,1600010,65536,-1)("","┣ Skill Learning Lv","","")
 [121][4,0]<3>(1600010,1,0,256)()
-[250][5,4]<3>(1,1600000,1600010,65536,-1)("","┣ 技能習得Lv","","")
+[250][5,4]<3>(1,1600000,1600010,65536,-1)("","┣ Skill Learning Lv","","")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [0][0,0]<2>()()
@@ -260,7 +260,7 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf10[一時変数A] = -1 + 0 
  |▼ 15：最初に見つかった空欄箇所を記憶する変数
  |■Set Variable: CSelf15[空き欄] = -1 + 0 
- |■Load DB(Var):  CSelf11[一時変数B] = VarDB[Type "┣ 技能習得Lv"(1)'s Field Count]
+ |■Load DB(Var):  CSelf11[一時変数B] = VarDB[Type "┣ Skill Learning Lv"(1)'s Field Count]
  |■Loop Start
  | |■Set Variable: CSelf10[一時変数A] += 2 + 0 
  | |■Condition (Number):   [1] CSelf10[一時変数A] >=  CSelf11[一時変数B]  
@@ -269,12 +269,12 @@ WoditorEvCOMMAND_END
  | | |■
  | |◇End◇
  | |▼ もし覚えようとしている技能が見つかったらその習得レベルを0にする
- | |■Load DB(Var):  CSelf12[一時変数C] = VarDB[ "┣ 技能習得Lv":CSelf0[主人公ID]:CSelf10[一時変数A] ] (1:-:-) 
+ | |■Load DB(Var):  CSelf12[一時変数C] = VarDB[ "┣ Skill Learning Lv":CSelf0[主人公ID]:CSelf10[一時変数A] ] (1:-:-) 
  | |■Condition (Number):   [1] CSelf12[一時変数C] ==  CSelf1[技能番号]  
  | |-◇Condition:  [1]  [ CSelf12[一時変数C] == CSelf1[技能番号]   ] Case↓
  | | |■Set Variable: CSelf10[一時変数A] += -1 + 0 
  | | |▼ 習得レベルを0にする（習得済みにする）　　そして終了
- | | |■Write to DB(Var): VarDB[ "┣ 技能習得Lv":CSelf0[主人公ID]:CSelf10[一時変数A] ] (1:-:-) =  0
+ | | |■Write to DB(Var): VarDB[ "┣ Skill Learning Lv":CSelf0[主人公ID]:CSelf10[一時変数A] ] (1:-:-) =  0
  | | |■Exit Event
  | | |■
  | |◇End◇
@@ -293,16 +293,16 @@ WoditorEvCOMMAND_END
  |▼ 覚えようとしている技能が見つからなかったときは空欄に追加する
  |■Condition (Number):   [1] CSelf15[空き欄] >=  0  
  |-◇Condition:  [1]  [ CSelf15[空き欄] >= 0   ] Case↓
- | |■Write to DB(Var): VarDB[ 1:CSelf0[主人公ID]:CSelf15[空き欄] ] (┣ 技能習得Lv:-:-) =  CSelf1[技能番号]
+ | |■Write to DB(Var): VarDB[ 1:CSelf0[主人公ID]:CSelf15[空き欄] ] (┣ Skill Learning Lv:-:-) =  CSelf1[技能番号]
  | |■Set Variable: CSelf15[空き欄] += -1 + 0 
- | |■Write to DB(Var): VarDB[ 1:CSelf0[主人公ID]:CSelf15[空き欄] ] (┣ 技能習得Lv:-:-) =  0
+ | |■Write to DB(Var): VarDB[ 1:CSelf0[主人公ID]:CSelf15[空き欄] ] (┣ Skill Learning Lv:-:-) =  0
  | |■
  |◇End◇
  |■
 -◇Condition:  [2]  [ CSelf2[習得？消去？] == 1   ] Case↓
  |▼ 忘却の場合は、その技能があればどんどん消去していく
  |■Set Variable: CSelf10[一時変数A] = -1 + 0 
- |■Load DB(Var):  CSelf11[一時変数B] = VarDB[Type "┣ 技能習得Lv"(1)'s Field Count]
+ |■Load DB(Var):  CSelf11[一時変数B] = VarDB[Type "┣ Skill Learning Lv"(1)'s Field Count]
  |■Loop Start
  | |■Set Variable: CSelf10[一時変数A] += 2 + 0 
  | |■Condition (Number):   [1] CSelf10[一時変数A] >=  CSelf11[一時変数B]  
@@ -311,14 +311,14 @@ WoditorEvCOMMAND_END
  | | |■
  | |◇End◇
  | |▼ もし忘れようとしている技能が見つかったら消去
- | |■Load DB(Var):  CSelf12[一時変数C] = VarDB[ "┣ 技能習得Lv":CSelf0[主人公ID]:CSelf10[一時変数A] ] (1:-:-) 
+ | |■Load DB(Var):  CSelf12[一時変数C] = VarDB[ "┣ Skill Learning Lv":CSelf0[主人公ID]:CSelf10[一時変数A] ] (1:-:-) 
  | |■Condition (Number):   [1] CSelf12[一時変数C] ==  CSelf1[技能番号]  
  | |-◇Condition:  [1]  [ CSelf12[一時変数C] == CSelf1[技能番号]   ] Case↓
  | | |▼ 見つけた技能と習得レベルを-1にする
  | | |■Set Variable: CSelf10[一時変数A] += -1 + 0 
- | | |■Write to DB(Var): VarDB[ "┣ 技能習得Lv":CSelf0[主人公ID]:CSelf10[一時変数A] ] (1:-:-) =  -1
+ | | |■Write to DB(Var): VarDB[ "┣ Skill Learning Lv":CSelf0[主人公ID]:CSelf10[一時変数A] ] (1:-:-) =  -1
  | | |■Set Variable: CSelf10[一時変数A] += 1 + 0 
- | | |■Write to DB(Var): VarDB[ "┣ 技能習得Lv":CSelf0[主人公ID]:CSelf10[一時変数A] ] (1:-:-) =  -1
+ | | |■Write to DB(Var): VarDB[ "┣ Skill Learning Lv":CSelf0[主人公ID]:CSelf10[一時変数A] ] (1:-:-) =  -1
  | | |■
  | |◇End◇
  | |■

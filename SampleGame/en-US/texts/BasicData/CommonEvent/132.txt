@@ -177,9 +177,9 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600011,13,0,0)()
 [179][1,0]<0>(1)()
 [103][0,1]<1>()("変更前の各パラメータを保存する")
-[250][5,4]<1>(18,56,0,69632,1600060)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(18,57,0,69632,1600061)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(18,58,0,69632,1600062)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<1>(18,56,0,69632,1600060)("","Base System Variables","","")
+[250][5,4]<1>(18,57,0,69632,1600061)("","Base System Variables","","")
+[250][5,4]<1>(18,58,0,69632,1600062)("","Base System Variables","","")
 [121][4,0]<1>(1600063,9000100,0,0)()
 [121][4,0]<1>(1600064,9000102,0,0)()
 [121][4,0]<1>(1600065,9000052,0,0)()
@@ -415,8 +415,8 @@ WoditorEvCOMMAND_START
 [300][3,1]<4>(0,1,5)("X[共]システムSE再生")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
-[250][5,4]<3>(18,56,0,65552,1)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<3>(18,56,0,65616,2)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<3>(18,56,0,65552,1)("","Base System Variables","","")
+[250][5,4]<3>(18,56,0,65616,2)("","Base System Variables","","")
 [300][4,1]<3>(0,2,1,0)("X[移]システム画面描画")
 [300][4,1]<3>(0,2,2,1600010)("X[移]システム画面描画")
 [103][0,1]<3>()("Ver3.00修正")
@@ -438,16 +438,16 @@ WoditorEvCOMMAND_START
 [499][0,0]<2>()()
 [111][7,0]<2>(2,1600013,-1,2,1600013,1,1)()
 [401][1,0]<2>(1)()
-[250][5,4]<3>(18,57,0,65552,4)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<3>(18,57,0,65616,5)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<3>(18,57,0,65552,4)("","Base System Variables","","")
+[250][5,4]<3>(18,57,0,65616,5)("","Base System Variables","","")
 [300][4,1]<3>(0,2,1,0)("X[移]システム画面描画")
 [300][4,1]<3>(0,2,2,1600010)("X[移]システム画面描画")
 [103][0,1]<3>()("Ver3.00修正")
 [121][4,0]<3>(1600090,1,0,0)()
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
-[250][5,4]<3>(18,57,0,65552,1)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<3>(18,57,0,65616,5)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<3>(18,57,0,65552,1)("","Base System Variables","","")
+[250][5,4]<3>(18,57,0,65616,5)("","Base System Variables","","")
 [300][4,1]<3>(0,2,1,0)("X[移]システム画面描画")
 [300][4,1]<3>(0,2,2,1600010)("X[移]システム画面描画")
 [103][0,1]<3>()("Ver3.00修正")
@@ -455,7 +455,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [103][0,1]<2>()("リピート速度を再設定する")
-[250][5,4]<2>(18,57,0,69632,1600015)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<2>(18,57,0,69632,1600015)("","Base System Variables","","")
 [300][3,1]<2>(0,1,1600015)("X[移]キーリピート設定")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
@@ -472,8 +472,8 @@ WoditorEvCOMMAND_START
 [499][0,0]<2>()()
 [111][4,0]<2>(1,1600013,0,5)()
 [401][1,0]<2>(1)()
-[250][5,4]<3>(18,58,0,65552,1)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<3>(18,58,0,65616,2)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<3>(18,58,0,65552,1)("","Base System Variables","","")
+[250][5,4]<3>(18,58,0,65616,2)("","Base System Variables","","")
 [300][4,1]<3>(0,2,1,0)("X[移]システム画面描画")
 [300][4,1]<3>(0,2,2,1600010)("X[移]システム画面描画")
 [103][0,1]<3>()("Ver3.13修正")
@@ -742,10 +742,10 @@ WoditorEvCOMMAND_START
 [111][4,0]<2>(1,1600013,2,2)()
 [401][1,0]<2>(1)()
 [300][3,1]<3>(0,1,0)("X[共]システムSE再生")
-[250][5,4]<3>(18,56,0,65536,1)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<3>(18,57,0,65536,2)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<3>(18,56,0,65536,1)("","Base System Variables","","")
+[250][5,4]<3>(18,57,0,65536,2)("","Base System Variables","","")
 [103][0,1]<3>()("Ver3.00修正==>")
-[250][5,4]<3>(18,58,0,65536,0)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<3>(18,58,0,65536,0)("","Base System Variables","","")
 [121][4,0]<3>(9000100,50,0,0)()
 [121][4,0]<3>(9000101,50,0,0)()
 [121][4,0]<3>(9000102,50,0,0)()
@@ -803,10 +803,10 @@ WoditorEvCOMMAND_START
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [212][0,1]<1>()("変更前に戻す＆終了")
 [99][1,0]<1>(0)()
-[250][5,4]<1>(18,56,0,65536,1600060)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(18,57,0,65536,1600061)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<1>(18,56,0,65536,1600060)("","Base System Variables","","")
+[250][5,4]<1>(18,57,0,65536,1600061)("","Base System Variables","","")
 [300][3,1]<1>(0,1,1600061)("X[移]キーリピート設定")
-[250][5,4]<1>(18,58,0,65536,1600062)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<1>(18,58,0,65536,1600062)("","Base System Variables","","")
 [121][4,0]<1>(9000100,1600063,0,0)()
 [121][4,0]<1>(9000101,1600063,0,0)()
 [121][4,0]<1>(9000102,1600064,0,0)()
@@ -840,9 +840,9 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf11[選択可能最大値] = 13 + 0 
 ■Repeat Loop [ 1 ] Times
  |▼ 変更前の各パラメータを保存する
- |■Load DB(Var):  CSelf60[[保存]キー位置保存] = VarDB[ "基本ｼｽﾃﾑ用変数":56:0 ] (18:[ｼｽﾃﾑ]ｷｰ位置保存:数値) 
- |■Load DB(Var):  CSelf61[[保存]キーリピート] = VarDB[ "基本ｼｽﾃﾑ用変数":57:0 ] (18:[ｼｽﾃﾑ]ｷｰﾘﾋﾟｰﾄ:数値) 
- |■Load DB(Var):  CSelf62[[保存]戦闘時連打] = VarDB[ "基本ｼｽﾃﾑ用変数":58:0 ] (18:[ｼｽﾃﾑ]戦闘時ｷｰ連打:数値) 
+ |■Load DB(Var):  CSelf60[[保存]キー位置保存] = VarDB[ "Base System Variables":56:0 ] (18:[System] Cursor Memory:Number) 
+ |■Load DB(Var):  CSelf61[[保存]キーリピート] = VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat:Number) 
+ |■Load DB(Var):  CSelf62[[保存]戦闘時連打] = VarDB[ "Base System Variables":58:0 ] (18:[System] Battle Key Hold:Number) 
  |■Set Variable: CSelf63[[保存]ＢＧＭ音量] = Sys100:BGM Volume Multiplier [%] + 0 
  |■Set Variable: CSelf64[[保存]ＳＥ音量] = Sys102:SE Volume Multiplier [%] + 0 
  |■Set Variable: CSelf65[[保存]キーボ決定] = Sys52:Confirm Key (Keyboard) + 0 
@@ -1078,8 +1078,8 @@ WoditorEvCOMMAND_END
  | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 5:カーソル移動音
  | | | |■
  | | |◇End◇
- | | |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":56:0 ] (18:[ｼｽﾃﾑ]ｷｰ位置保存:数値) +=  1
- | | |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":56:0 ] (18:[ｼｽﾃﾑ]ｷｰ位置保存:数値) %=  2
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":56:0 ] (18:[System] Cursor Memory:Number) +=  1
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":56:0 ] (18:[System] Cursor Memory:Number) %=  2
  | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 1:表示内容更新 / 0
  | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
  | | |▼ Ver3.00修正
@@ -1101,16 +1101,16 @@ WoditorEvCOMMAND_END
  | |◇End◇
  | |■Condition (Number):   [1] CSelf13[戻る(-1) 次へ(1) 決定(2)] ==  -1  /  [2] CSelf13[戻る(-1) 次へ(1) 決定(2)] >=  1  
  | |-◇Condition:  [1]  [ CSelf13[戻る(-1) 次へ(1) 決定(2)] == -1   ] Case↓
- | | |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":57:0 ] (18:[ｼｽﾃﾑ]ｷｰﾘﾋﾟｰﾄ:数値) +=  4
- | | |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":57:0 ] (18:[ｼｽﾃﾑ]ｷｰﾘﾋﾟｰﾄ:数値) %=  5
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat:Number) +=  4
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat:Number) %=  5
  | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 1:表示内容更新 / 0
  | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
  | | |▼ Ver3.00修正
  | | |■Set Variable: CSelf90[内容に変更あり] = 1 + 0 
  | | |■
  | |-◇Condition:  [2]  [ CSelf13[戻る(-1) 次へ(1) 決定(2)] >= 1   ] Case↓
- | | |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":57:0 ] (18:[ｼｽﾃﾑ]ｷｰﾘﾋﾟｰﾄ:数値) +=  1
- | | |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":57:0 ] (18:[ｼｽﾃﾑ]ｷｰﾘﾋﾟｰﾄ:数値) %=  5
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat:Number) +=  1
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat:Number) %=  5
  | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 1:表示内容更新 / 0
  | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
  | | |▼ Ver3.00修正
@@ -1118,7 +1118,7 @@ WoditorEvCOMMAND_END
  | | |■
  | |◇End◇
  | |▼ リピート速度を再設定する
- | |■Load DB(Var):  CSelf15[一時変数] = VarDB[ "基本ｼｽﾃﾑ用変数":57:0 ] (18:[ｼｽﾃﾑ]ｷｰﾘﾋﾟｰﾄ:数値) 
+ | |■Load DB(Var):  CSelf15[一時変数] = VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat:Number) 
  | |■Call Event [Name]: ["X[移]キーリピート設定"] <CommonEv 115>  / CSelf15[一時変数]
  | |■
  |◇End◇
@@ -1135,8 +1135,8 @@ WoditorEvCOMMAND_END
  | |◇End◇
  | |■Condition (Number):   [1] CSelf13[戻る(-1) 次へ(1) 決定(2)] !=  0  
  | |-◇Condition:  [1]  [ CSelf13[戻る(-1) 次へ(1) 決定(2)] != 0   ] Case↓
- | | |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":58:0 ] (18:[ｼｽﾃﾑ]戦闘時ｷｰ連打:数値) +=  1
- | | |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":58:0 ] (18:[ｼｽﾃﾑ]戦闘時ｷｰ連打:数値) %=  2
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":58:0 ] (18:[System] Battle Key Hold:Number) +=  1
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":58:0 ] (18:[System] Battle Key Hold:Number) %=  2
  | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 1:表示内容更新 / 0
  | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
  | | |▼ Ver3.13修正
@@ -1405,10 +1405,10 @@ WoditorEvCOMMAND_END
  | |■Condition (Number):   [1] CSelf13[戻る(-1) 次へ(1) 決定(2)] ==  2  
  | |-◇Condition:  [1]  [ CSelf13[戻る(-1) 次へ(1) 決定(2)] == 2   ] Case↓
  | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 0:決定音
- | | |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":56:0 ] (18:[ｼｽﾃﾑ]ｷｰ位置保存:数値) =  1
- | | |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":57:0 ] (18:[ｼｽﾃﾑ]ｷｰﾘﾋﾟｰﾄ:数値) =  2
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":56:0 ] (18:[System] Cursor Memory:Number) =  1
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat:Number) =  2
  | | |▼ Ver3.00修正==>
- | | |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":58:0 ] (18:[ｼｽﾃﾑ]戦闘時ｷｰ連打:数値) =  0
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":58:0 ] (18:[System] Battle Key Hold:Number) =  0
  | | |■Set Variable: Sys100:BGM Volume Multiplier [%] = 50 + 0 
  | | |■Set Variable: Sys101:BGS Volume Multiplier [%] = 50 + 0 
  | | |■Set Variable: Sys102:SE Volume Multiplier [%] = 50 + 0 
@@ -1467,10 +1467,10 @@ WoditorEvCOMMAND_END
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |●Label Point [変更前に戻す＆終了] <<<<<<<<<<<<<<<<<<<<<<<<★
  |■ Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":56:0 ] (18:[ｼｽﾃﾑ]ｷｰ位置保存:数値) =  CSelf60[[保存]キー位置保存]
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":57:0 ] (18:[ｼｽﾃﾑ]ｷｰﾘﾋﾟｰﾄ:数値) =  CSelf61[[保存]キーリピート]
+ |■Write to DB(Var): VarDB[ "Base System Variables":56:0 ] (18:[System] Cursor Memory:Number) =  CSelf60[[保存]キー位置保存]
+ |■Write to DB(Var): VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat:Number) =  CSelf61[[保存]キーリピート]
  |■Call Event [Name]: ["X[移]キーリピート設定"] <CommonEv 115>  / CSelf61[[保存]キーリピート]
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":58:0 ] (18:[ｼｽﾃﾑ]戦闘時ｷｰ連打:数値) =  CSelf62[[保存]戦闘時連打]
+ |■Write to DB(Var): VarDB[ "Base System Variables":58:0 ] (18:[System] Battle Key Hold:Number) =  CSelf62[[保存]戦闘時連打]
  |■Set Variable: Sys100:BGM Volume Multiplier [%] = CSelf63[[保存]ＢＧＭ音量] + 0 
  |■Set Variable: Sys101:BGS Volume Multiplier [%] = CSelf63[[保存]ＢＧＭ音量] + 0 
  |■Set Variable: Sys102:SE Volume Multiplier [%] = CSelf64[[保存]ＳＥ音量] + 0 

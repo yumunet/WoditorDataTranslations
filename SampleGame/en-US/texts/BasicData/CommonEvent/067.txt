@@ -185,8 +185,8 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("固定値")
 [121][4,0]<0>(1600020,19999,0,0)()
 [103][0,1]<0>()("Ver2.20　座標倍率を縦横別に修正")
-[250][5,4]<0>(18,97,0,69632,1600088)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,98,0,69632,1600089)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,97,0,69632,1600088)("","Base System Variables","","")
+[250][5,4]<0>(18,98,0,69632,1600089)("","Base System Variables","","")
 [121][4,0]<0>(1600025,1600088,32,8192)()
 [121][4,0]<0>(1600026,1600089,24,8192)()
 [121][4,0]<0>(1600025,32,0,256)()
@@ -230,8 +230,8 @@ WoditorEvCOMMAND_END
 ▼ 固定値
 ■Set Variable: CSelf20[基本ピクチャ番号] = 19999 + 0 
 ▼ Ver2.20　座標倍率を縦横別に修正
-■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "基本ｼｽﾃﾑ用変数":97:0 ] (18:座標倍率Ｘ[x10]:数値) 
-■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "基本ｼｽﾃﾑ用変数":98:0 ] (18:座標倍率Ｙ[x10]:数値) 
+■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
+■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
 ■Set Variable: CSelf25[画面サイズX] = CSelf88[座標倍率X[x10]] * 32 
 ■Set Variable: CSelf26[画面サイズY] = CSelf89[座標倍率Y[x10]] * 24 
 ■Set Variable: CSelf25[画面サイズX] += 32 + 0 

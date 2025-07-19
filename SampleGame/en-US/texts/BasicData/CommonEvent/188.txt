@@ -185,7 +185,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("　戦闘時のループ処理です。")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("戦闘中フラグをオンに")
-[250][5,4]<0>(18,68,0,65536,1)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,68,0,65536,1)("","Base System Variables","","")
 [103][0,1]<0>()(" ")
 [121][4,0]<0>(1600095,0,0,0)()
 [121][4,0]<0>(1600020,0,0,0)()
@@ -216,7 +216,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<1>()()
 [0][0,0]<1>()()
 [498][0,0]<0>()()
-[250][5,4]<0>(20,72,0,65536,1600000)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(20,72,0,65536,1600000)("","Base System Variables","","")
 [121][4,0]<0>(9000059,1,0,0)()
 [121][4,0]<0>(9000060,1,0,0)()
 [300][3,1]<0>(0,1,53)("X[共]システムSE再生")
@@ -262,7 +262,7 @@ WoditorEvCOMMAND_START
 [179][1,0]<1>(1)()
 [103][0,1]<2>()("1ターン開始時処理を反映するためのパラメータ更新処理")
 [121][4,0]<2>(1600010,-1,0,0)()
-[250][5,4]<2>(21,4,0,69632,1600023)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<2>(21,4,0,69632,1600023)("","Base System Variables","","")
 [179][1,0]<2>(1600023)()
 [103][0,1]<3>()("全員更新")
 [121][4,0]<3>(1600010,1,0,256)()
@@ -279,7 +279,7 @@ WoditorEvCOMMAND_START
 [498][0,0]<2>()()
 [180][1,0]<2>(1)()
 [121][4,0]<2>(1600010,9,0,0)()
-[250][5,4]<2>(18,69,0,69632,1600023)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<2>(18,69,0,69632,1600023)("","Base System Variables","","")
 [179][1,0]<2>(1600023)()
 [103][0,1]<3>()("全員更新")
 [121][4,0]<3>(1600010,1,0,256)()
@@ -309,7 +309,7 @@ WoditorEvCOMMAND_START
 [179][1,0]<1>(1)()
 [103][0,1]<2>()("1ターン終了時処理を反映するためのパラメータ更新処理")
 [121][4,0]<2>(1600010,-1,0,0)()
-[250][5,4]<2>(21,4,0,69632,1600023)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<2>(21,4,0,69632,1600023)("","Base System Variables","","")
 [179][1,0]<2>(1600023)()
 [103][0,1]<3>()("全員更新")
 [121][4,0]<3>(1600010,1,0,256)()
@@ -326,7 +326,7 @@ WoditorEvCOMMAND_START
 [498][0,0]<2>()()
 [180][1,0]<2>(1)()
 [121][4,0]<2>(1600010,9,0,0)()
-[250][5,4]<2>(18,69,0,69632,1600023)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<2>(18,69,0,69632,1600023)("","Base System Variables","","")
 [179][1,0]<2>(1600023)()
 [103][0,1]<3>()("全員更新")
 [121][4,0]<3>(1600010,1,0,256)()
@@ -351,7 +351,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [103][0,1]<1>()("ターン初回フラグを1にする")
-[250][5,4]<1>(18,32,0,65536,1)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<1>(18,32,0,65536,1)("","Base System Variables","","")
 [0][0,0]<1>()()
 [498][0,0]<0>()()
 [212][0,1]<0>()("戦闘終了処理")
@@ -359,7 +359,7 @@ WoditorEvCOMMAND_START
 [300][3,1]<0>(0,1,1600020)("X┣◆戦利品獲得処理")
 [300][2,1]<0>(0,0)("X┗◆戦闘終了処理")
 [103][0,1]<0>()("戦闘中フラグをオフに")
-[250][5,4]<0>(18,68,0,196608,0)("","基本ｼｽﾃﾑ用変数","[戦闘]戦闘中フラグ","")
+[250][5,4]<0>(18,68,0,196608,0)("","Base System Variables","[Battle] In Battle?","")
 [103][0,1]<0>()("戦闘終了後処理")
 [300][2,1]<0>(0,0)("○[変更可]戦闘終了後処理")
 [103][0,1]<0>()("勝敗結果を格納して終了")
@@ -375,10 +375,10 @@ WoditorEvCOMMAND_START
 [111][4,0]<1>(17,1600022,1,1)()
 [401][1,0]<1>(1)()
 [103][0,1]<2>()("逃走に成功したら戦利品を全部失う")
-[250][5,4]<2>(18,-2,11,65536,1600022)("","×┗ お宝リスト","","")
+[250][5,4]<2>(18,-2,11,65536,1600022)("","×┗Reward List","","")
 [103][0,1]<2>()("逃走エフェクト")
 [121][4,0]<2>(1600010,-1,0,0)()
-[250][5,4]<2>(21,4,0,69632,1600023)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<2>(21,4,0,69632,1600023)("","Base System Variables","","")
 [179][1,0]<2>(1600023)()
 [103][0,1]<3>()("行動セット")
 [121][4,0]<3>(1600010,1,0,256)()
@@ -450,7 +450,7 @@ WoditorEvCOMMAND_END
 ▼ 　戦闘時のループ処理です。
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ 戦闘中フラグをオンに
-■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":68:0 ] (18:[戦闘]戦闘中フラグ:数値) =  1
+■Write to DB(Var): VarDB[ "Base System Variables":68:0 ] (18:[Battle] In Battle?:Number) =  1
 ▼  
 ■Set Variable: CSelf95[勝敗結果] = 0 + 0 
 ■Set Variable: CSelf20[終了判定] = 0 + 0 
@@ -481,7 +481,7 @@ WoditorEvCOMMAND_END
  |◇End◇
  |■
 ◇Loop End Point◇◇
-■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":72:0 ] (18:[戦闘]敵グループ番号:数値) =  CSelf0[敵グループ番号]
+■Write to DB(Var): VarDB[ "Base System Variables":72:0 ] (18:[Battle] Enemy Group ID:Number) =  CSelf0[敵グループ番号]
 ■Set Variable: Sys59:Repeat Confirm Key? (1=ON) = 1 + 0 
 ■Set Variable: Sys60:Repeat Cancel Key? (1=ON) = 1 + 0 
 ■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 53:戦闘開始
@@ -527,7 +527,7 @@ WoditorEvCOMMAND_END
  |■Repeat Loop [ 1 ] Times
  | |▼ 1ターン開始時処理を反映するためのパラメータ更新処理
  | |■Set Variable: CSelf10 = -1 + 0 
- | |■Load DB(Var):  CSelf23[繰り返し回数] = VarDB[ "基本ｼｽﾃﾑ用変数":4:0 ] (18:現在パーティー人数:数値) 
+ | |■Load DB(Var):  CSelf23[繰り返し回数] = VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) 
  | |■Repeat Loop [ CSelf23[繰り返し回数] ] Times
  | | |▼ 全員更新
  | | |■Set Variable: CSelf10 += 1 + 0 
@@ -544,7 +544,7 @@ WoditorEvCOMMAND_END
  | |◇Loop End Point◇◇
  | |■Wait: 1 Frames
  | |■Set Variable: CSelf10 = 9 + 0 
- | |■Load DB(Var):  CSelf23[繰り返し回数] = VarDB[ "基本ｼｽﾃﾑ用変数":69:0 ] (18:[戦闘]敵の最大数(システム):数値) 
+ | |■Load DB(Var):  CSelf23[繰り返し回数] = VarDB[ "Base System Variables":69:0 ] (18:[Battle] Max Enemy Count (System):Number) 
  | |■Repeat Loop [ CSelf23[繰り返し回数] ] Times
  | | |▼ 全員更新
  | | |■Set Variable: CSelf10 += 1 + 0 
@@ -574,7 +574,7 @@ WoditorEvCOMMAND_END
  |■Repeat Loop [ 1 ] Times
  | |▼ 1ターン終了時処理を反映するためのパラメータ更新処理
  | |■Set Variable: CSelf10 = -1 + 0 
- | |■Load DB(Var):  CSelf23[繰り返し回数] = VarDB[ "基本ｼｽﾃﾑ用変数":4:0 ] (18:現在パーティー人数:数値) 
+ | |■Load DB(Var):  CSelf23[繰り返し回数] = VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) 
  | |■Repeat Loop [ CSelf23[繰り返し回数] ] Times
  | | |▼ 全員更新
  | | |■Set Variable: CSelf10 += 1 + 0 
@@ -591,7 +591,7 @@ WoditorEvCOMMAND_END
  | |◇Loop End Point◇◇
  | |■Wait: 1 Frames
  | |■Set Variable: CSelf10 = 9 + 0 
- | |■Load DB(Var):  CSelf23[繰り返し回数] = VarDB[ "基本ｼｽﾃﾑ用変数":69:0 ] (18:[戦闘]敵の最大数(システム):数値) 
+ | |■Load DB(Var):  CSelf23[繰り返し回数] = VarDB[ "Base System Variables":69:0 ] (18:[Battle] Max Enemy Count (System):Number) 
  | |■Repeat Loop [ CSelf23[繰り返し回数] ] Times
  | | |▼ 全員更新
  | | |■Set Variable: CSelf10 += 1 + 0 
@@ -616,7 +616,7 @@ WoditorEvCOMMAND_END
  | |■
  |◇End◇
  |▼ ターン初回フラグを1にする
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":32:0 ] (18:[ｼｽﾃﾑ]ターン開始初回？:数値) =  1
+ |■Write to DB(Var): VarDB[ "Base System Variables":32:0 ] (18:[System] First Turn Start?:Number) =  1
  |■
 ◇Loop End Point◇◇
 ●Label Point [戦闘終了処理] <<<<<<<<<<<<<<<<<<<<<<<<★
@@ -624,7 +624,7 @@ WoditorEvCOMMAND_END
 ■Call Event [Name]: ["X┣◆戦利品獲得処理"] <CommonEv 200>  / CSelf20[終了判定]
 ■Call Event [Name]: ["X┗◆戦闘終了処理"] <CommonEv 201> 
 ▼ 戦闘中フラグをオフに
-■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":"[戦闘]戦闘中フラグ":0 ] (18:68:数値) =  0
+■Write to DB(Var): VarDB[ "Base System Variables":"[Battle] In Battle?":0 ] (18:68:Number) =  0
 ▼ 戦闘終了後処理
 ■Call Event [Name]: ["○[変更可]戦闘終了後処理"] <CommonEv 206> 
 ▼ 勝敗結果を格納して終了
@@ -640,10 +640,10 @@ WoditorEvCOMMAND_END
  |■Condition (Number):   [1] CSelf22[逃走可能確率] >=  1  
  |-◇Condition:  [1]  [ CSelf22[逃走可能確率] >= 1   ] Case↓
  | |▼ 逃走に成功したら戦利品を全部失う
- | |■Write to DB(Var): [Reset Type "×┗ お宝リスト"(15)]
+ | |■Write to DB(Var): [Reset Type "×┗Reward List"(15)]
  | |▼ 逃走エフェクト
  | |■Set Variable: CSelf10 = -1 + 0 
- | |■Load DB(Var):  CSelf23[繰り返し回数] = VarDB[ "基本ｼｽﾃﾑ用変数":4:0 ] (18:現在パーティー人数:数値) 
+ | |■Load DB(Var):  CSelf23[繰り返し回数] = VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) 
  | |■Repeat Loop [ CSelf23[繰り返し回数] ] Times
  | | |▼ 行動セット
  | | |■Set Variable: CSelf10 += 1 + 0 

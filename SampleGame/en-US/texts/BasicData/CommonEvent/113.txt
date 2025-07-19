@@ -199,12 +199,12 @@ WoditorEvCOMMAND_START
 [103][0,1]<2>()("武器の場合")
 [103][0,1]<2>()("もし外せない装備だったら1を返す")
 [121][4,0]<2>(1600021,1600020,20000,16384)()
-[250][5,4]<2>(5,1600021,0,327696,1)("","┣所持武器個数","","所持個数")
+[250][5,4]<2>(5,1600021,0,327696,1)("","┣ Owned Weapon Count","","Quantity Owned")
 [0][0,0]<2>()()
 [401][1,0]<1>(3)()
 [103][0,1]<2>()("防具の場合")
 [121][4,0]<2>(1600021,1600020,30000,16384)()
-[250][5,4]<2>(6,1600021,0,327696,1)("","┗所持防具個数","","所持個数")
+[250][5,4]<2>(6,1600021,0,327696,1)("","┗ Owned Armor Count","","Quantity Owned")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [0][0,0]<1>()()
@@ -224,26 +224,26 @@ WoditorEvCOMMAND_START
 [401][1,0]<1>(2)()
 [103][0,1]<2>()("武器の場合")
 [121][4,0]<2>(1600021,1600020,20000,16384)()
-[250][5,4]<2>(5,1600021,0,327712,1)("","┣所持武器個数","","所持個数")
-[250][5,4]<2>(8,1600021,0,331776,1600010)("","┣所持武器個数","","所持個数")
+[250][5,4]<2>(5,1600021,0,327712,1)("","┣ Owned Weapon Count","","Quantity Owned")
+[250][5,4]<2>(8,1600021,0,331776,1600010)("","┣ Owned Weapon Count","","Quantity Owned")
 [111][4,0]<2>(1,1600010,-1,3)()
 [401][1,0]<2>(1)()
 [121][4,0]<3>(1600099,1600010,-1,8192)()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
-[250][5,4]<2>(8,1600021,0,327776,0)("","┣所持武器個数","","所持個数")
+[250][5,4]<2>(8,1600021,0,327776,0)("","┣ Owned Weapon Count","","Quantity Owned")
 [0][0,0]<2>()()
 [401][1,0]<1>(3)()
 [103][0,1]<2>()("防具の場合")
 [121][4,0]<2>(1600021,1600020,30000,16384)()
-[250][5,4]<2>(6,1600021,0,327712,1)("","┗所持防具個数","","所持個数")
-[250][5,4]<2>(9,1600021,0,331776,1600010)("","┗所持防具個数","","所持個数")
+[250][5,4]<2>(6,1600021,0,327712,1)("","┗ Owned Armor Count","","Quantity Owned")
+[250][5,4]<2>(9,1600021,0,331776,1600010)("","┗ Owned Armor Count","","Quantity Owned")
 [111][4,0]<2>(1,1600010,-1,3)()
 [401][1,0]<2>(1)()
 [121][4,0]<3>(1600099,1600010,-1,8192)()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
-[250][5,4]<2>(9,1600021,0,327776,0)("","┗所持防具個数","","所持個数")
+[250][5,4]<2>(9,1600021,0,327776,0)("","┗ Owned Armor Count","","Quantity Owned")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [0][0,0]<1>()()
@@ -288,12 +288,12 @@ WoditorEvCOMMAND_END
  | |▼ 武器の場合
  | |▼ もし外せない装備だったら1を返す
  | |■Set Variable: CSelf21[装備番号] = CSelf20[一時装備コード] % 20000 
- | |■Write to DB(Var): VarDB[ "┣所持武器個数":CSelf21[装備番号]:"所持個数" ] (8:-:0) +=  1
+ | |■Write to DB(Var): VarDB[ "┣ Owned Weapon Count":CSelf21[装備番号]:"Quantity Owned" ] (8:-:0) +=  1
  | |■
  |-◇Condition:  [3]  [ CSelf20[一時装備コード] <= 39999   ] Case↓
  | |▼ 防具の場合
  | |■Set Variable: CSelf21[装備番号] = CSelf20[一時装備コード] % 30000 
- | |■Write to DB(Var): VarDB[ "┗所持防具個数":CSelf21[装備番号]:"所持個数" ] (9:-:0) +=  1
+ | |■Write to DB(Var): VarDB[ "┗ Owned Armor Count":CSelf21[装備番号]:"Quantity Owned" ] (9:-:0) +=  1
  | |■
  |◇End◇
  |■
@@ -313,26 +313,26 @@ WoditorEvCOMMAND_END
  |-◇Condition:  [2]  [ CSelf20[一時装備コード] <= 29999   ] Case↓
  | |▼ 武器の場合
  | |■Set Variable: CSelf21[装備番号] = CSelf20[一時装備コード] % 20000 
- | |■Write to DB(Var): VarDB[ "┣所持武器個数":CSelf21[装備番号]:"所持個数" ] (8:-:0) -=  1
- | |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "┣所持武器個数":CSelf21[装備番号]:"所持個数" ] (8:-:0) 
+ | |■Write to DB(Var): VarDB[ "┣ Owned Weapon Count":CSelf21[装備番号]:"Quantity Owned" ] (8:-:0) -=  1
+ | |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "┣ Owned Weapon Count":CSelf21[装備番号]:"Quantity Owned" ] (8:-:0) 
  | |■Condition (Number):   [1] CSelf10[一時変数A] <=  -1  
  | |-◇Condition:  [1]  [ CSelf10[一時変数A] <= -1   ] Case↓
  | | |■Set Variable: CSelf99[補充フラグ] = CSelf10[一時変数A] * -1 
  | | |■
  | |◇End◇
- | |■Write to DB(Var): VarDB[ "┣所持武器個数":CSelf21[装備番号]:"所持個数" ] (8:-:0) Lower Bound  0
+ | |■Write to DB(Var): VarDB[ "┣ Owned Weapon Count":CSelf21[装備番号]:"Quantity Owned" ] (8:-:0) Lower Bound  0
  | |■
  |-◇Condition:  [3]  [ CSelf20[一時装備コード] <= 39999   ] Case↓
  | |▼ 防具の場合
  | |■Set Variable: CSelf21[装備番号] = CSelf20[一時装備コード] % 30000 
- | |■Write to DB(Var): VarDB[ "┗所持防具個数":CSelf21[装備番号]:"所持個数" ] (9:-:0) -=  1
- | |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "┗所持防具個数":CSelf21[装備番号]:"所持個数" ] (9:-:0) 
+ | |■Write to DB(Var): VarDB[ "┗ Owned Armor Count":CSelf21[装備番号]:"Quantity Owned" ] (9:-:0) -=  1
+ | |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "┗ Owned Armor Count":CSelf21[装備番号]:"Quantity Owned" ] (9:-:0) 
  | |■Condition (Number):   [1] CSelf10[一時変数A] <=  -1  
  | |-◇Condition:  [1]  [ CSelf10[一時変数A] <= -1   ] Case↓
  | | |■Set Variable: CSelf99[補充フラグ] = CSelf10[一時変数A] * -1 
  | | |■
  | |◇End◇
- | |■Write to DB(Var): VarDB[ "┗所持防具個数":CSelf21[装備番号]:"所持個数" ] (9:-:0) Lower Bound  0
+ | |■Write to DB(Var): VarDB[ "┗ Owned Armor Count":CSelf21[装備番号]:"Quantity Owned" ] (9:-:0) Lower Bound  0
  | |■
  |◇End◇
  |■

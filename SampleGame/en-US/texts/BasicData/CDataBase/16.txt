@@ -19,23 +19,23 @@ DATATYPE_13=2002
 NUMDATA_TYPE_NUM=11
 STRDATA_TYPE_NUM=3
 DATA_NUM=15
-TYPENAME=× お店一時処理用
+TYPENAME=×Shop Process Data
 ITEMNAME_NUM=14
-ITEMNAME0=販売アイテム名
-ITEMNAME1=販売アイテムコード
-ITEMNAME2=価格
-ITEMNAME3=所持数
-ITEMNAME4=装備数
-ITEMNAME5=説明文
-ITEMNAME6=購入可能状態(0/1)
-ITEMNAME7=主人公1装備可能状態
-ITEMNAME8=主人公2装備可能状態
-ITEMNAME9=主人公3装備可能状態
-ITEMNAME10=主人公4装備可能状態
-ITEMNAME11=主人公5装備可能状態
-ITEMNAME12=主人公6装備可能状態
-ITEMNAME13=装備状態文字列
-MEMO=【× 設定不要】<<\n>>お店の処理を行うとき、<<\n>>一時的に使用されます。<<\n>><<\n>>いじっても意味はありません。
+ITEMNAME0=Sell Item Name
+ITEMNAME1=Sell Item ID
+ITEMNAME2=Price
+ITEMNAME3=Quantity
+ITEMNAME4=(Equipment Quantity)
+ITEMNAME5=Description
+ITEMNAME6=(Purchasable [0/1])
+ITEMNAME7=(Member 1 Equippable)
+ITEMNAME8=(Member 2 Equippable)
+ITEMNAME9=(Member 3 Equippable)
+ITEMNAME10=(Member 4 Equippable)
+ITEMNAME11=(Member 5 Equippable)
+ITEMNAME12=(Member 6 Equippable)
+ITEMNAME13=(Equipment Status String)
+MEMO=[× Not Necessary to Set]<<\n>>Used temporarily when<<\n>>processing the shop.<<\n>><<\n>>No point in changing.<<\n>>
 ITEMTYPE_NUM=100
 ITEM_LOADTYPE_0=0
 ITEM_LOADTYPE_1=0
@@ -198,7 +198,7 @@ DEFAULT_VAL_11=0
 DEFAULT_VAL_12=0
 DEFAULT_VAL_13=0
 <<--CSV_START-->>
-"販売アイテム名","販売アイテムコード","価格","所持数","装備数","説明文","購入可能状態(0/1)","主人公1装備可能状態","主人公2装備可能状態","主人公3装備可能状態","主人公4装備可能状態","主人公5装備可能状態","主人公6装備可能状態","装備状態文字列",
+"Sell Item Name","Sell Item ID","Price","Quantity","(Equipment Quantity)","Description","(Purchasable [0/1])","(Member 1 Equippable)","(Member 2 Equippable)","(Member 3 Equippable)","(Member 4 Equippable)","(Member 5 Equippable)","(Member 6 Equippable)","(Equipment Status String)",
 "",0,0,0,0,"",0,0,0,0,0,0,0,"",<<!--DATANAME--!>>,
 "",0,0,0,0,"",0,0,0,0,0,0,0,"",<<!--DATANAME--!>>,
 "",0,0,0,0,"",0,0,0,0,0,0,0,"",<<!--DATANAME--!>>,

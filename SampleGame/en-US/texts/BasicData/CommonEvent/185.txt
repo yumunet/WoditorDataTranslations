@@ -201,7 +201,7 @@ WoditorEvCOMMAND_START
 [172][0,0]<2>()()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
-[250][5,4]<1>(10,1600001,16,331776,1600095)("","×┏ 戦闘一時ステータス[基]","","ｷｬﾗｸﾀ番号[1万以上は敵]")
+[250][5,4]<1>(10,1600001,16,331776,1600095)("","×┏Battle Temp Status","","Character ID [Enemy:10,000+]")
 [111][4,0]<1>(1,1600095,-1,3)()
 [401][1,0]<1>(1)()
 [101][0,1]<2>()("\>「X[戦]上部ステータス描画」コモン　エラー<\n> 戦闘スロット\cself[1] の主人公IDが<\n>　-1以下です、このコモンを使用できません。")
@@ -213,15 +213,15 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("固定値を設定")
 [121][4,0]<0>(1600020,12000,0,0)()
 [103][0,1]<0>()("外部パラメータ読み込み")
-[250][5,4]<0>(18,7,0,69632,1600017)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,6,0,69632,1600018)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,5,0,69632,1600019)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,7,0,69632,1600017)("","Base System Variables","","")
+[250][5,4]<0>(18,6,0,69632,1600018)("","Base System Variables","","")
+[250][5,4]<0>(18,5,0,69632,1600019)("","Base System Variables","","")
 [250][5,4]<0>(17,0,0,332288,1600008)("","Images/Sounds","","Window Image File")
 [250][5,4]<0>(17,0,0,332288,1600009)("","Images/Sounds","","Cursor Image File")
 [250][5,4]<0>(18,0,22,332288,1600027)("","System Settings","","Equippable Slots")
 [103][0,1]<0>()("Ver2.20　座標倍率を縦横別に修正")
-[250][5,4]<0>(18,97,0,69632,1600088)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,98,0,69632,1600089)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,97,0,69632,1600088)("","Base System Variables","","")
+[250][5,4]<0>(18,98,0,69632,1600089)("","Base System Variables","","")
 [121][4,0]<0>(1600054,60,0,0)()
 [121][4,0]<0>(1600055,60,0,0)()
 [121][4,0]<0>(1600056,100,0,0)()
@@ -313,11 +313,11 @@ WoditorEvCOMMAND_START
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [103][0,1]<2>()("ステータス用パラメータの取得")
-[250][5,4]<2>(10,1600001,0,331776,1600090)("","×┏ 戦闘一時ステータス[基]","","HP")
-[250][5,4]<2>(10,1600001,0,331776,1600091)("","×┏ 戦闘一時ステータス[基]","","[一時]計算済みMaxHP")
-[250][5,4]<2>(10,1600001,0,331776,1600092)("","×┏ 戦闘一時ステータス[基]","","SP")
-[250][5,4]<2>(10,1600001,0,331776,1600093)("","×┏ 戦闘一時ステータス[基]","","[一時]計算済みMaxSP")
-[250][5,4]<2>(0,1600095,0,331776,1600094)("","主人公ステータス","","レベル")
+[250][5,4]<2>(10,1600001,0,331776,1600090)("","×┏Battle Temp Status","","HP")
+[250][5,4]<2>(10,1600001,0,331776,1600091)("","×┏Battle Temp Status","","[Temp] Post-Calc Max HP")
+[250][5,4]<2>(10,1600001,0,331776,1600092)("","×┏Battle Temp Status","","SP")
+[250][5,4]<2>(10,1600001,0,331776,1600093)("","×┏Battle Temp Status","","[Temp] Post-Calc Max SP")
+[250][5,4]<2>(0,1600095,0,331776,1600094)("","Allies","","Level")
 [179][1,0]<2>(1600057)()
 [103][0,1]<3>()("下地")
 [121][4,0]<3>(1600021,1600020,0,0)()
@@ -336,12 +336,12 @@ WoditorEvCOMMAND_START
 [150][12,0]<3>(64,1600021,0,1600052,1600053,1,255,1600050,1600051,100,0,1600008)()
 [179][1,0]<3>(1)()
 [103][0,1]<4>()("キャラ名")
-[250][5,4]<4>(10,1600001,0,331776,1600007)("","×┏ 戦闘一時ステータス[基]","","キャラ名")
+[250][5,4]<4>(10,1600001,0,331776,1600007)("","×┏Battle Temp Status","","Character Name")
 [122][2,1]<4>(1600007,256)("<\n>")
-[250][5,4]<4>(0,1600095,0,331792,1600007)("","主人公ステータス","","肩書き")
+[250][5,4]<4>(0,1600095,0,331792,1600007)("","Allies","","Title")
 [122][2,1]<4>(1600007,256)("　")
 [250][5,4]<4>(13,0,5,332304,1600007)("","Terms","","[Stats] Level")
-[250][5,4]<4>(0,1600095,0,331776,1600010)("","主人公ステータス","","レベル")
+[250][5,4]<4>(0,1600095,0,331776,1600010)("","Allies","","Level")
 [122][2,1]<4>(1600007,256)(" \cself[10]")
 [103][0,1]<4>()("表示位置は左上基点")
 [121][4,0]<4>(1600021,1600020,10,0)()
@@ -514,7 +514,7 @@ WoditorEvCOMMAND_END
  | |■Exit Event
  | |■
  |◇End◇
- |■Load DB(Var):  CSelf95[主人公ID] = VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf1[[1]戦闘ｽﾛｯﾄ]:"ｷｬﾗｸﾀ番号[1万以上は敵]" ] (10:-:17) 
+ |■Load DB(Var):  CSelf95[主人公ID] = VarDB[ "×┏Battle Temp Status":CSelf1[[1]戦闘ｽﾛｯﾄ]:"Character ID [Enemy:10,000+]" ] (10:-:17) 
  |■Condition (Number):   [1] CSelf95[主人公ID] <=  -1  
  |-◇Condition:  [1]  [ CSelf95[主人公ID] <= -1   ] Case↓
  | |■Show Message:\>「X[戦]上部ステータス描画」コモン　エラー\n 戦闘スロット\cself[1] の主人公IDが\n　-1以下です、このコモンを使用できません。
@@ -526,15 +526,15 @@ WoditorEvCOMMAND_END
 ▼ 固定値を設定
 ■Set Variable: CSelf20[基本ピクチャ番号] = 12000 + 0 
 ▼ 外部パラメータ読み込み
-■Load DB(Var):  CSelf17[最小フォントサイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":7:0 ] (18:システム最小フォントサイズ:数値) 
-■Load DB(Var):  CSelf18[ミニフォントサイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":6:0 ] (18:システムミニフォントサイズ:数値) 
-■Load DB(Var):  CSelf19[基本フォントサイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":5:0 ] (18:システム基本フォントサイズ:数値) 
+■Load DB(Var):  CSelf17[最小フォントサイズ] = VarDB[ "Base System Variables":7:0 ] (18:System Min Font Size:Number) 
+■Load DB(Var):  CSelf18[ミニフォントサイズ] = VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) 
+■Load DB(Var):  CSelf19[基本フォントサイズ] = VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) 
 ■Load DB(User):  CSelf8[ウィンドウ画像ファイル] = UserDB[ "Images/Sounds":0:"Window Image File" ] (16:Basic Images/Sounds:0) 
 ■Load DB(User):  CSelf9[カーソル画像ファイル] = UserDB[ "Images/Sounds":0:"Cursor Image File" ] (16:Basic Images/Sounds:1) 
 ■Load DB(User):  CSelf27[装備欄 縦項目数] = UserDB[ "System Settings":0:"Equippable Slots" ] (17:Basic System Settings:22) 
 ▼ Ver2.20　座標倍率を縦横別に修正
-■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "基本ｼｽﾃﾑ用変数":97:0 ] (18:座標倍率Ｘ[x10]:数値) 
-■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "基本ｼｽﾃﾑ用変数":98:0 ] (18:座標倍率Ｙ[x10]:数値) 
+■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
+■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
 ■Set Variable: CSelf54[色指定R] = 60 + 0 
 ■Set Variable: CSelf55[色指定G] = 60 + 0 
 ■Set Variable: CSelf56[色指定B] = 100 + 0 
@@ -626,11 +626,11 @@ WoditorEvCOMMAND_END
  | | |■
  | |◇End◇
  | |▼ ステータス用パラメータの取得
- | |■Load DB(Var):  CSelf90[HP] = VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf1[[1]戦闘ｽﾛｯﾄ]:"HP" ] (10:-:5) 
- | |■Load DB(Var):  CSelf91[最大HP] = VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf1[[1]戦闘ｽﾛｯﾄ]:"[一時]計算済みMaxHP" ] (10:-:44) 
- | |■Load DB(Var):  CSelf92[SP] = VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf1[[1]戦闘ｽﾛｯﾄ]:"SP" ] (10:-:7) 
- | |■Load DB(Var):  CSelf93[最大SP] = VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf1[[1]戦闘ｽﾛｯﾄ]:"[一時]計算済みMaxSP" ] (10:-:46) 
- | |■Load DB(Var):  CSelf94 = VarDB[ "主人公ステータス":CSelf95[主人公ID]:"レベル" ] (0:-:4) 
+ | |■Load DB(Var):  CSelf90[HP] = VarDB[ "×┏Battle Temp Status":CSelf1[[1]戦闘ｽﾛｯﾄ]:"HP" ] (10:-:5) 
+ | |■Load DB(Var):  CSelf91[最大HP] = VarDB[ "×┏Battle Temp Status":CSelf1[[1]戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Max HP" ] (10:-:44) 
+ | |■Load DB(Var):  CSelf92[SP] = VarDB[ "×┏Battle Temp Status":CSelf1[[1]戦闘ｽﾛｯﾄ]:"SP" ] (10:-:7) 
+ | |■Load DB(Var):  CSelf93[最大SP] = VarDB[ "×┏Battle Temp Status":CSelf1[[1]戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Max SP" ] (10:-:46) 
+ | |■Load DB(Var):  CSelf94 = VarDB[ "Allies":CSelf95[主人公ID]:"Level" ] (0:-:4) 
  | |■Repeat Loop [ CSelf57[初期表示？(1=YES)] ] Times
  | | |▼ 下地
  | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 0 
@@ -649,12 +649,12 @@ WoditorEvCOMMAND_END
  | | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] Window(CSelf8[ウィンドウ画像ファイル]) Size[CSelf52[ステータス欄横サイズ],CSelf53[ステータス欄縦サイズ]] X:CSelf50[ステータス欄X] Y:CSelf51[ステータス欄Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | |■Repeat Loop [ 1 ] Times
  | | | |▼ キャラ名
- | | | |■Load DB(Var):  CSelf7[表示項目名] = VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf1[[1]戦闘ｽﾛｯﾄ]:"キャラ名" ] (10:-:0) 
+ | | | |■Load DB(Var):  CSelf7[表示項目名] = VarDB[ "×┏Battle Temp Status":CSelf1[[1]戦闘ｽﾛｯﾄ]:"Character Name" ] (10:-:0) 
  | | | |■Set String: CSelf7[表示項目名] += "\n"
- | | | |■Load DB(Var):  CSelf7[表示項目名] += VarDB[ "主人公ステータス":CSelf95[主人公ID]:"肩書き" ] (0:-:1) 
+ | | | |■Load DB(Var):  CSelf7[表示項目名] += VarDB[ "Allies":CSelf95[主人公ID]:"Title" ] (0:-:1) 
  | | | |■Set String: CSelf7[表示項目名] += "　"
  | | | |■Load DB(User):  CSelf7[表示項目名] += UserDB[ "Terms":0:"[Stats] Level" ] (15:Basic Terms:5) 
- | | | |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "主人公ステータス":CSelf95[主人公ID]:"レベル" ] (0:-:4) 
+ | | | |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "Allies":CSelf95[主人公ID]:"Level" ] (0:-:4) 
  | | | |■Set String: CSelf7[表示項目名] += " \cself[10]"
  | | | |▼ 表示位置は左上基点
  | | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 10 

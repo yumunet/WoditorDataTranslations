@@ -174,7 +174,7 @@ WoditorEvCOMMAND_START
 [172][0,0]<1>()()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
-[250][5,4]<0>(10,1600000,16,331776,1600010)("","×┏ 戦闘一時ステータス[基]","","ｷｬﾗｸﾀ番号[1万以上は敵]")
+[250][5,4]<0>(10,1600000,16,331776,1600010)("","×┏Battle Temp Status","","Character ID [Enemy:10,000+]")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
@@ -190,6 +190,6 @@ WoditorEvCOMMAND_END
  |■Exit Event
  |■
 ◇End◇
-■Load DB(Var):  CSelf10[返す主人公ID] = VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"ｷｬﾗｸﾀ番号[1万以上は敵]" ] (10:-:17) 
+■Load DB(Var):  CSelf10[返す主人公ID] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Character ID [Enemy:10,000+]" ] (10:-:17) 
 ■
 [COMMAND_TEXT_END]

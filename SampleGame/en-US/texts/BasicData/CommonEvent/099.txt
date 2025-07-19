@@ -179,11 +179,11 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("固定値を設定")
 [121][4,0]<0>(1600020,11000,0,0)()
 [103][0,1]<0>()("Ver2.20　座標倍率を縦横別に修正")
-[250][5,4]<0>(18,97,0,69632,1600088)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,98,0,69632,1600089)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,7,0,69632,1600017)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,6,0,69632,1600018)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,5,0,69632,1600019)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,97,0,69632,1600088)("","Base System Variables","","")
+[250][5,4]<0>(18,98,0,69632,1600089)("","Base System Variables","","")
+[250][5,4]<0>(18,7,0,69632,1600017)("","Base System Variables","","")
+[250][5,4]<0>(18,6,0,69632,1600018)("","Base System Variables","","")
+[250][5,4]<0>(18,5,0,69632,1600019)("","Base System Variables","","")
 [250][5,4]<0>(17,0,0,332288,1600008)("","Images/Sounds","","Window Image File")
 [250][5,4]<0>(17,0,0,332288,1600009)("","Images/Sounds","","Cursor Image File")
 [103][0,1]<0>()("ウィンドウ座標")
@@ -248,17 +248,17 @@ WoditorEvCOMMAND_START
 [401][1,0]<4>(1)()
 [121][4,0]<5>(1600010,1600001,10000,16384)()
 [250][5,4]<5>(2,1600010,0,332288,1600007)("","Items","","Item Name")
-[250][5,4]<5>(4,1600010,0,331776,1600011)("","┣所持アイテム個数","","所持個数")
+[250][5,4]<5>(4,1600010,0,331776,1600011)("","┣ Owned Item Count","","Quantity Owned")
 [0][0,0]<5>()()
 [401][1,0]<4>(2)()
 [121][4,0]<5>(1600010,1600001,20000,16384)()
 [250][5,4]<5>(3,1600010,0,332288,1600007)("","Weapons","","Weapon Name")
-[250][5,4]<5>(5,1600010,0,331776,1600011)("","┣所持武器個数","","所持個数")
+[250][5,4]<5>(5,1600010,0,331776,1600011)("","┣ Owned Weapon Count","","Quantity Owned")
 [0][0,0]<5>()()
 [401][1,0]<4>(3)()
 [121][4,0]<5>(1600010,1600001,30000,16384)()
 [250][5,4]<5>(4,1600010,0,332288,1600007)("","Armors","","Armor Name")
-[250][5,4]<5>(6,1600010,0,331776,1600011)("","┗所持防具個数","","所持個数")
+[250][5,4]<5>(6,1600010,0,331776,1600011)("","┗ Owned Armor Count","","Quantity Owned")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
 [122][2,1]<4>(1600007,256)("<\n> 残り x \cself[11]")
@@ -313,11 +313,11 @@ WoditorEvCOMMAND_END
 ▼ 固定値を設定
 ■Set Variable: CSelf20[ピクチャ基本番号] = 11000 + 0 
 ▼ Ver2.20　座標倍率を縦横別に修正
-■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "基本ｼｽﾃﾑ用変数":97:0 ] (18:座標倍率Ｘ[x10]:数値) 
-■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "基本ｼｽﾃﾑ用変数":98:0 ] (18:座標倍率Ｙ[x10]:数値) 
-■Load DB(Var):  CSelf17[最小フォントサイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":7:0 ] (18:システム最小フォントサイズ:数値) 
-■Load DB(Var):  CSelf18[ミニフォントサイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":6:0 ] (18:システムミニフォントサイズ:数値) 
-■Load DB(Var):  CSelf19[基本フォントサイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":5:0 ] (18:システム基本フォントサイズ:数値) 
+■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
+■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
+■Load DB(Var):  CSelf17[最小フォントサイズ] = VarDB[ "Base System Variables":7:0 ] (18:System Min Font Size:Number) 
+■Load DB(Var):  CSelf18[ミニフォントサイズ] = VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) 
+■Load DB(Var):  CSelf19[基本フォントサイズ] = VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) 
 ■Load DB(User):  CSelf8[ウィンドウ画像] = UserDB[ "Images/Sounds":0:"Window Image File" ] (16:Basic Images/Sounds:0) 
 ■Load DB(User):  CSelf9[カーソル画像] = UserDB[ "Images/Sounds":0:"Cursor Image File" ] (16:Basic Images/Sounds:1) 
 ▼ ウィンドウ座標
@@ -382,17 +382,17 @@ WoditorEvCOMMAND_END
  | | | |-◇Condition:  [1]  [ CSelf1[アイテムコード] <= 19999   ] Case↓
  | | | | |■Set Variable: CSelf10[一時変数A] = CSelf1[アイテムコード] % 10000 
  | | | | |■Load DB(User):  CSelf7[一時文字列] = UserDB[ "Items":CSelf10[一時変数A]:"Item Name" ] (2:-:0) 
- | | | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "┣所持アイテム個数":CSelf10[一時変数A]:"所持個数" ] (7:-:0) 
+ | | | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "┣ Owned Item Count":CSelf10[一時変数A]:"Quantity Owned" ] (7:-:0) 
  | | | | |■
  | | | |-◇Condition:  [2]  [ CSelf1[アイテムコード] <= 29999   ] Case↓
  | | | | |■Set Variable: CSelf10[一時変数A] = CSelf1[アイテムコード] % 20000 
  | | | | |■Load DB(User):  CSelf7[一時文字列] = UserDB[ "Weapons":CSelf10[一時変数A]:"Weapon Name" ] (3:-:0) 
- | | | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "┣所持武器個数":CSelf10[一時変数A]:"所持個数" ] (8:-:0) 
+ | | | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "┣ Owned Weapon Count":CSelf10[一時変数A]:"Quantity Owned" ] (8:-:0) 
  | | | | |■
  | | | |-◇Condition:  [3]  [ CSelf1[アイテムコード] <= 39999   ] Case↓
  | | | | |■Set Variable: CSelf10[一時変数A] = CSelf1[アイテムコード] % 30000 
  | | | | |■Load DB(User):  CSelf7[一時文字列] = UserDB[ "Armors":CSelf10[一時変数A]:"Armor Name" ] (4:-:0) 
- | | | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "┗所持防具個数":CSelf10[一時変数A]:"所持個数" ] (9:-:0) 
+ | | | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "┗ Owned Armor Count":CSelf10[一時変数A]:"Quantity Owned" ] (9:-:0) 
  | | | | |■
  | | | |◇End◇
  | | | |■Set String: CSelf7[一時文字列] += "\n 残り x \cself[11]"

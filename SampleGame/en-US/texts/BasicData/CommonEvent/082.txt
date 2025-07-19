@@ -175,8 +175,8 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("【処理の内容】")
 [103][0,1]<0>()("　店の商品をカラにします。")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[250][5,4]<0>(16,-2,47,65536,1600020)("","× お店一時処理用","","")
-[250][5,4]<0>(18,93,0,65536,0)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(16,-2,47,65536,1600020)("","×Shop Process Data","","")
+[250][5,4]<0>(18,93,0,65536,0)("","Base System Variables","","")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
@@ -185,7 +185,7 @@ WoditorEvCOMMAND_END
 ▼ 【処理の内容】
 ▼ 　店の商品をカラにします。
 ▼ ―――――――――――――――――――――――――――――――――――
-■Write to DB(Var): [Reset Type "× お店一時処理用"(16)]
-■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":93:0 ] (18:[お店]ｱｲﾃﾑ登録個数:数値) =  0
+■Write to DB(Var): [Reset Type "×Shop Process Data"(16)]
+■Write to DB(Var): VarDB[ "Base System Variables":93:0 ] (18:[Shop] Registered Item Count:Number) =  0
 ■
 [COMMAND_TEXT_END]

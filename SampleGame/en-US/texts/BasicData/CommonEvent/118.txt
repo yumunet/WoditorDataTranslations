@@ -177,7 +177,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[250][5,4]<0>(18,51,0,69632,1600037)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,51,0,69632,1600037)("","Base System Variables","","")
 [121][4,0]<0>(1600099,0,0,0)()
 [111][4,0]<0>(1,1600000,9999,3)()
 [401][1,0]<0>(1)()
@@ -350,13 +350,13 @@ WoditorEvCOMMAND_START
 [300][3,1]<2>(0,1,1600014)("X[移]一時ｽﾃ計算<装備補正>")
 [300][3,1]<2>(0,1,1600014)("X[移]一時ｽﾃ計算<状態補正>")
 [103][0,1]<2>()("HP回復値の計算")
-[250][5,4]<2>(21,1600014,0,331776,1600033)("","×主人公一時DB","","[一時]計算済みMaxHP")
+[250][5,4]<2>(21,1600014,0,331776,1600033)("","×Allies Temp Data","","[Temp] Post-Calc Max HP")
 [250][5,4]<2>(2,1600030,10,332288,1600032)("","Items","","HP Recovery [X% of Max]")
 [121][4,0]<2>(1600033,1600032,0,768)()
 [121][4,0]<2>(1600033,100,0,1024)()
 [250][5,4]<2>(2,1600030,11,332304,1600033)("","Items","","┗ + HP Recovery [Points]")
 [103][0,1]<2>()("SP回復値の計算")
-[250][5,4]<2>(21,1600014,1,331776,1600035)("","×主人公一時DB","","[一時]計算済みMaxSP")
+[250][5,4]<2>(21,1600014,1,331776,1600035)("","×Allies Temp Data","","[Temp] Post-Calc Max SP")
 [250][5,4]<2>(2,1600030,12,332288,1600034)("","Items","","SP Recovery [X% of Max]")
 [121][4,0]<2>(1600035,1600034,0,768)()
 [121][4,0]<2>(1600035,100,0,1024)()
@@ -402,7 +402,7 @@ WoditorEvCOMMAND_START
 [212][0,1]<1>()("イベント起動処理")
 [300][3,1]<1>(0,1,1600000)("X[移]ｱｲﾃﾑ使用_消費処理")
 [250][5,4]<1>(2,1600030,6,332288,1600012)("","Items","","┗ [3]: Event to Call             ")
-[250][5,4]<1>(18,1,0,65536,1)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<1>(18,1,0,65536,1)("","Base System Variables","","")
 [211][2,0]<1>(1600012,0)()
 [172][0,0]<1>()()
 [0][0,0]<1>()()
@@ -418,7 +418,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<2>()("使用した場合はアイテム消費判定")
 [300][4,1]<2>(0,16777217,1600000,1600013)("X[移]ｱｲﾃﾑ使用_消費処理")
 [103][0,1]<2>()("メニュー消去判定")
-[250][5,4]<2>(18,1,0,69632,1600010)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<2>(18,1,0,69632,1600010)("","Base System Variables","","")
 [111][4,0]<2>(1,1600010,1,1)()
 [401][1,0]<2>(1)()
 [103][0,1]<3>()("メニュー消去フラグがオンの場合は即終了")
@@ -464,7 +464,7 @@ WoditorEvCOMMAND_END
 ▼  
 ▼ 【どのコモンイベントから主に呼び出されているか】
 ▼ ―――――――――――――――――――――――――――――――――――
-■Load DB(Var):  CSelf37[最大パーティ人数] = VarDB[ "基本ｼｽﾃﾑ用変数":51:0 ] (18:システム上最大パーティー人数:数値) 
+■Load DB(Var):  CSelf37[最大パーティ人数] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
 ■Set Variable: CSelf99[結果] = 0 + 0 
 ■Condition (Number):   [1] CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ] <=  9999  
 -◇Condition:  [1]  [ CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ] <= 9999   ] Case↓
@@ -637,13 +637,13 @@ WoditorEvCOMMAND_END
  | |■Call Event [Name]: ["X[移]一時ｽﾃ計算<装備補正>"] <CommonEv 123>  / CSelf14[一時キャラID]
  | |■Call Event [Name]: ["X[移]一時ｽﾃ計算<状態補正>"] <CommonEv 124>  / CSelf14[一時キャラID]
  | |▼ HP回復値の計算
- | |■Load DB(Var):  CSelf33[最終HP回復値] = VarDB[ "×主人公一時DB":CSelf14[一時キャラID]:"[一時]計算済みMaxHP" ] (17:-:0) 
+ | |■Load DB(Var):  CSelf33[最終HP回復値] = VarDB[ "×Allies Temp Data":CSelf14[一時キャラID]:"[Temp] Post-Calc Max HP" ] (17:-:0) 
  | |■Load DB(User):  CSelf32[HP回復％] = UserDB[ "Items":CSelf30[アイテム番号]:"HP Recovery [X% of Max]" ] (2:-:10) 
  | |■Set Variable: CSelf33[最終HP回復値] *= CSelf32[HP回復％] + 0 
  | |■Set Variable: CSelf33[最終HP回復値] /= 100 + 0 
  | |■Load DB(User):  CSelf33[最終HP回復値] += UserDB[ "Items":CSelf30[アイテム番号]:"┗ + HP Recovery [Points]" ] (2:-:11) 
  | |▼ SP回復値の計算
- | |■Load DB(Var):  CSelf35[最終SP回復値] = VarDB[ "×主人公一時DB":CSelf14[一時キャラID]:"[一時]計算済みMaxSP" ] (17:-:1) 
+ | |■Load DB(Var):  CSelf35[最終SP回復値] = VarDB[ "×Allies Temp Data":CSelf14[一時キャラID]:"[Temp] Post-Calc Max SP" ] (17:-:1) 
  | |■Load DB(User):  CSelf34[SP回復％] = UserDB[ "Items":CSelf30[アイテム番号]:"SP Recovery [X% of Max]" ] (2:-:12) 
  | |■Set Variable: CSelf35[最終SP回復値] *= CSelf34[SP回復％] + 0 
  | |■Set Variable: CSelf35[最終SP回復値] /= 100 + 0 
@@ -689,7 +689,7 @@ WoditorEvCOMMAND_END
  |●Label Point [イベント起動処理] <<<<<<<<<<<<<<<<<<<<<<<<★
  |■Call Event [Name]: ["X[移]ｱｲﾃﾑ使用_消費処理"] <CommonEv 120>  / CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ]
  |■Load DB(User):  CSelf12[一時変数C] = UserDB[ "Items":CSelf30[アイテム番号]:"┗ [3]: Event to Call             " ] (2:-:6) 
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":1:0 ] (18:メニュー消去フラグ:数値) =  1
+ |■Write to DB(Var): VarDB[ "Base System Variables":1:0 ] (18:Menu Close Flag:Number) =  1
  |■Reserve Next Event: Variable [CSelf12[一時変数C]]'s Ev
  |■Exit Event
  |■
@@ -705,7 +705,7 @@ WoditorEvCOMMAND_END
  | |▼ 使用した場合はアイテム消費判定
  | |■Call Event [Name]: CSelf13[一時変数D] = ["X[移]ｱｲﾃﾑ使用_消費処理"] <CommonEv 120>  / CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ]
  | |▼ メニュー消去判定
- | |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "基本ｼｽﾃﾑ用変数":1:0 ] (18:メニュー消去フラグ:数値) 
+ | |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "Base System Variables":1:0 ] (18:Menu Close Flag:Number) 
  | |■Condition (Number):   [1] CSelf10[一時変数A] >=  1  
  | |-◇Condition:  [1]  [ CSelf10[一時変数A] >= 1   ] Case↓
  | | |▼ メニュー消去フラグがオンの場合は即終了

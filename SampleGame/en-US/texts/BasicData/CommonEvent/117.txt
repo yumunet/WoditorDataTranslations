@@ -191,13 +191,13 @@ WoditorEvCOMMAND_START
 [111][4,0]<0>(1,1600000,-1,2)()
 [401][1,0]<0>(1)()
 [103][0,1]<1>()("移動時アイテム欄")
-[250][5,4]<1>(18,60,0,65536,1600002)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<1>(18,60,0,65536,1600002)("","Base System Variables","","")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [111][4,0]<0>(1,1600000,0,2)()
 [401][1,0]<0>(1)()
 [103][0,1]<1>()("移動時装備")
-[250][5,4]<1>(21,1600001,16,327680,1600002)("","×主人公一時DB","","[記憶]移動時技能位置")
+[250][5,4]<1>(21,1600001,16,327680,1600002)("","×Allies Temp Data","","[Store] Menu Skill Position")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [0][0,0]<0>()()
@@ -212,13 +212,13 @@ WoditorEvCOMMAND_END
 ■Condition (Number):   [1] CSelf0[取得モード] ==  -1  
 -◇Condition:  [1]  [ CSelf0[取得モード] == -1   ] Case↓
  |▼ 移動時アイテム欄
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":60:0 ] (18:[記憶]移動時アイテム欄カーソル位置:数値) =  CSelf2[ｶｰｿﾙ位置]
+ |■Write to DB(Var): VarDB[ "Base System Variables":60:0 ] (18:[Store] Menu Items Cursor Pos:Number) =  CSelf2[ｶｰｿﾙ位置]
  |■
 ◇End◇
 ■Condition (Number):   [1] CSelf0[取得モード] ==  0  
 -◇Condition:  [1]  [ CSelf0[取得モード] == 0   ] Case↓
  |▼ 移動時装備
- |■Write to DB(Var): VarDB[ "×主人公一時DB":CSelf1[主人公ID]:"[記憶]移動時技能位置" ] (17:-:17) =  CSelf2[ｶｰｿﾙ位置]
+ |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf1[主人公ID]:"[Store] Menu Skill Position" ] (17:-:17) =  CSelf2[ｶｰｿﾙ位置]
  |■
 ◇End◇
 ■

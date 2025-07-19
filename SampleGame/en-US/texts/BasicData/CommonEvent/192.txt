@@ -202,10 +202,10 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■　")
 [103][0,1]<0>()("もし【AI動作】のキャラクターなら、決定済みとしてスルー")
 [212][0,1]<0>()("最初")
-[250][5,4]<0>(11,1600000,17,331776,1600031)("","×┏ 戦闘一時ステータス[基]","","ｷｬﾗｸﾀ番号[1万以上は敵]")
+[250][5,4]<0>(11,1600000,17,331776,1600031)("","×┏Battle Temp Status","","Character ID [Enemy:10,000+]")
 [111][4,0]<0>(17,1600031,0,1)()
 [401][1,0]<0>(1)()
-[250][5,4]<1>(0,1600031,59,331776,1600010)("","主人公ステータス","","AIで自動行動する？")
+[250][5,4]<1>(0,1600031,59,331776,1600010)("","Allies","","Auto-Act with AI?")
 [103][0,1]<1>()("AIで自動行動するキャラはAI（２）を返す")
 [111][4,0]<1>(1,1600010,1,1)()
 [401][1,0]<1>(1)()
@@ -247,11 +247,11 @@ WoditorEvCOMMAND_START
 [300][5,1]<0>(0,16777218,12,1600000,1600014)("X[戦]記憶キー位置取得")
 [180][1,0]<0>(1)()
 [103][0,1]<0>()("Ver2.20　座標倍率を縦横別に修正")
-[250][5,4]<0>(18,97,0,69632,1600088)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,98,0,69632,1600089)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,97,0,69632,1600088)("","Base System Variables","","")
+[250][5,4]<0>(18,98,0,69632,1600089)("","Base System Variables","","")
 [300][3,1]<0>(0,1,1600000)("X[戦]戦闘ｺﾏﾝﾄﾞ一覧算出")
 [103][0,1]<0>()("コマンドが０個でも行動できない")
-[250][5,4]<0>(20,17,0,69632,1600030)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(20,17,0,69632,1600030)("","Base System Variables","","")
 [111][4,0]<0>(1,1600030,0,2)()
 [401][1,0]<0>(1)()
 [121][4,0]<1>(1600099,1,0,0)()
@@ -262,48 +262,48 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■　")
 [103][0,1]<0>()("２．コマンドを表示＋選択")
 [103][0,1]<0>()("万能ウィンドウのサイズ設定")
-[250][5,4]<0>(20,17,0,69632,1600030)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(20,17,0,69632,1600030)("","Base System Variables","","")
 [103][0,1]<0>()("サイズ設定")
 [99][1,0]<0>(1)()
 [103][0,1]<0>()("ここでは計算された最大横幅を指定")
 [121][4,0]<0>(1600035,7,1600088,8192)()
-[250][5,4]<0>(18,11,0,65536,1600035)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,11,0,65536,1600035)("","Base System Variables","","")
 [121][4,0]<0>(1600035,1600030,1600089,8192)()
 [121][4,0]<0>(1600035,4,0,768)()
 [121][4,0]<0>(1600035,3,0,1024)()
 [121][4,0]<0>(1600035,1,1600089,8448)()
-[250][5,4]<0>(18,12,0,65536,1600035)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,12,0,65536,1600035)("","Base System Variables","","")
 [103][0,1]<0>()("キャラクターの表示位置に合わせてコマンドを表示")
 [300][3,1]<0>(0,1,1600000)("X[戦]味方欄_座標算出")
-[250][5,4]<0>(21,37,0,69632,1600010)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(21,38,0,69632,1600011)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(21,37,0,69632,1600010)("","Base System Variables","","")
+[250][5,4]<0>(21,38,0,69632,1600011)("","Base System Variables","","")
 [121][4,0]<0>(1600035,40,1600088,8192)()
 [121][4,0]<0>(1600035,10,0,1024)()
 [121][4,0]<0>(1600035,1600010,1600035,4096)()
 [121][4,0]<0>(1600035,1600088,2,12544)()
-[250][5,4]<0>(20,9,0,65536,1600035)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(20,9,0,65536,1600035)("","Base System Variables","","")
 [121][4,0]<0>(1600035,27,1600089,8192)()
 [121][4,0]<0>(1600035,10,0,1024)()
 [121][4,0]<0>(1600035,1600011,1600035,4096)()
-[250][5,4]<0>(20,12,0,69664,1600035)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,10,0,65536,1600035)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(20,12,0,69664,1600035)("","Base System Variables","","")
+[250][5,4]<0>(18,10,0,65536,1600035)("","Base System Variables","","")
 [103][0,1]<0>()("項目数　他")
 [121][4,0]<0>(1600035,1,0,0)()
-[250][5,4]<0>(18,13,0,65536,1600035)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,13,0,65536,1600035)("","Base System Variables","","")
 [121][4,0]<0>(1600035,1600030,0,0)()
-[250][5,4]<0>(18,14,0,65536,1600035)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,14,0,65536,1600035)("","Base System Variables","","")
 [121][4,0]<0>(1600035,3,1600089,8192)()
 [121][4,0]<0>(1600035,2,0,1024)()
-[250][5,4]<0>(18,16,0,65536,1600035)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,16,0,65536,1600035)("","Base System Variables","","")
 [103][0,1]<0>()("万能ウィンドウ表示")
 [300][6,1]<0>(0,4,2,0,2,0)("X[共]万能ｳｨﾝﾄﾞｳ描画処理")
 [179][1,0]<0>(1)()
 [103][0,1]<1>()("ターン始めなら初回キー連打をキャンセルする")
-[250][5,4]<1>(18,58,0,69632,1600043)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(18,32,0,69632,1600045)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<1>(18,58,0,69632,1600043)("","Base System Variables","","")
+[250][5,4]<1>(18,32,0,69632,1600045)("","Base System Variables","","")
 [111][4,0]<1>(1,1600045,1,2)()
 [401][1,0]<1>(1)()
-[250][5,4]<2>(18,32,0,65536,0)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<2>(18,32,0,65536,0)("","Base System Variables","","")
 [111][4,0]<2>(1,1600043,1,2)()
 [401][1,0]<2>(1)()
 [170][0,0]<3>()()
@@ -325,9 +325,9 @@ WoditorEvCOMMAND_START
 [179][1,0]<0>(1)()
 [103][0,1]<1>()("万能ウィンドウ選択処理を実行")
 [300][4,1]<1>(0,16777217,1600000,1600031)("X[戦]ｽﾛｯﾄから主人公ID取得")
-[250][5,4]<1>(20,21,0,65536,1600014)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<1>(20,21,0,65536,1600014)("","Base System Variables","","")
 [300][5,1]<1>(0,16777218,2,4,1600020)("X[共]万能ｳｨﾝﾄﾞｳ選択実行")
-[250][5,4]<1>(20,61,0,69632,1600014)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<1>(20,61,0,69632,1600014)("","Base System Variables","","")
 [300][5,1]<1>(0,3,12,1600000,1600014)("X[戦]記憶キー位置設定")
 [0][0,0]<1>()()
 [498][0,0]<0>()()
@@ -346,38 +346,38 @@ WoditorEvCOMMAND_START
 [401][1,0]<0>(2)()
 [103][0,1]<1>()("シフト（待機）")
 [179][1,0]<1>(1)()
-[250][5,4]<2>(21,37,0,69632,1600010)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<2>(21,38,0,69632,1600011)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<2>(21,37,0,69632,1600010)("","Base System Variables","","")
+[250][5,4]<2>(21,38,0,69632,1600011)("","Base System Variables","","")
 [103][0,1]<2>()("サイズ")
 [121][4,0]<2>(1600035,7,1600088,8192)()
-[250][5,4]<2>(18,11,0,65536,1600035)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<2>(18,11,0,65536,1600035)("","Base System Variables","","")
 [121][4,0]<2>(1600035,4,1600089,8192)()
 [121][4,0]<2>(1600035,3,0,1024)()
 [121][4,0]<2>(1600035,1,1600089,8448)()
-[250][5,4]<2>(18,12,0,65536,1600035)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<2>(18,12,0,65536,1600035)("","Base System Variables","","")
 [121][4,0]<2>(1600035,3,1600089,8192)()
 [121][4,0]<2>(1600035,2,0,1024)()
-[250][5,4]<2>(18,16,0,65536,1600035)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<2>(18,16,0,65536,1600035)("","Base System Variables","","")
 [103][0,1]<2>()("座標")
 [121][4,0]<2>(1600035,40,1600088,8192)()
 [121][4,0]<2>(1600035,10,0,1024)()
 [121][4,0]<2>(1600035,1600010,1600035,4096)()
 [121][4,0]<2>(1600035,1600088,2,12544)()
-[250][5,4]<2>(20,9,0,65536,1600035)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<2>(20,9,0,65536,1600035)("","Base System Variables","","")
 [121][4,0]<2>(1600035,27,1600089,8192)()
 [121][4,0]<2>(1600035,10,0,1024)()
 [121][4,0]<2>(1600035,1600011,1600035,4096)()
-[250][5,4]<2>(20,12,0,69664,1600035)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<2>(18,10,0,65536,1600035)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<2>(20,12,0,69664,1600035)("","Base System Variables","","")
+[250][5,4]<2>(18,10,0,65536,1600035)("","Base System Variables","","")
 [103][0,1]<2>()("項目数　他")
-[250][5,4]<2>(18,13,0,65536,1)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<2>(18,14,0,65536,1)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<2>(18,17,0,65536,1)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<2>(18,13,0,65536,1)("","Base System Variables","","")
+[250][5,4]<2>(18,14,0,65536,1)("","Base System Variables","","")
+[250][5,4]<2>(18,17,0,65536,1)("","Base System Variables","","")
 [103][0,1]<2>()("「何もしない」コマンドを万能ウィンドウに登録")
-[250][5,4]<2>(19,0,1,327680,-3)("","万能ｳｨﾝﾄﾞｳ一時DB","","項目コード")
-[250][5,4]<2>(19,0,2,327680,1)("","万能ｳｨﾝﾄﾞｳ一時DB","","選択可能状態[1=可]")
-[250][4,4]<2>(19,0,6,327682)("何も行動せずターンを進めます","万能ｳｨﾝﾄﾞｳ一時DB","","説明文")
-[250][4,4]<2>(19,0,0,327682)("何もしない","万能ｳｨﾝﾄﾞｳ一時DB","","項目文")
+[250][5,4]<2>(19,0,1,327680,-3)("","Universal Window Items","","Item ID")
+[250][5,4]<2>(19,0,2,327680,1)("","Universal Window Items","","Selectable? [1=Yes]")
+[250][4,4]<2>(19,0,6,327682)("何も行動せずターンを進めます","Universal Window Items","","Description")
+[250][4,4]<2>(19,0,0,327682)("何もしない","Universal Window Items","","Item Text")
 [300][6,1]<2>(0,4,2,0,2,0)("X[共]万能ｳｨﾝﾄﾞｳ描画処理")
 [300][5,1]<2>(0,16777218,2,4,1600020)("X[共]万能ｳｨﾝﾄﾞｳ選択実行")
 [300][6,1]<2>(0,4,-1,0,4,1)("X[共]万能ｳｨﾝﾄﾞｳ描画処理")
@@ -481,10 +481,10 @@ WoditorEvCOMMAND_END
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■　
 ▼ もし【AI動作】のキャラクターなら、決定済みとしてスルー
 ●Label Point [最初] <<<<<<<<<<<<<<<<<<<<<<<<★
-■Load DB(Var):  CSelf31[主人公ID] = VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象戦闘ｽﾛｯﾄ]:"ｷｬﾗｸﾀ番号[1万以上は敵]" ] (10:-:17) 
+■Load DB(Var):  CSelf31[主人公ID] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Character ID [Enemy:10,000+]" ] (10:-:17) 
 ■Condition (Number):   [1] CSelf31[主人公ID] >=  0  
 -◇Condition:  [1]  [ CSelf31[主人公ID] >= 0   ] Case↓
- |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "主人公ステータス":CSelf31[主人公ID]:"AIで自動行動する？" ] (0:-:58) 
+ |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "Allies":CSelf31[主人公ID]:"Auto-Act with AI?" ] (0:-:58) 
  |▼ AIで自動行動するキャラはAI（２）を返す
  |■Condition (Number):   [1] CSelf10[一時変数A] >=  1  
  |-◇Condition:  [1]  [ CSelf10[一時変数A] >= 1   ] Case↓
@@ -526,11 +526,11 @@ WoditorEvCOMMAND_END
 ■Call Event [Name]: CSelf14[保存キー位置] = ["X[戦]記憶キー位置取得"] <CommonEv 155>  / 12:[戦闘]ｺﾏﾝﾄﾞ(要ｷｬﾗ指定) / CSelf0[対象戦闘ｽﾛｯﾄ]
 ■Wait: 1 Frames
 ▼ Ver2.20　座標倍率を縦横別に修正
-■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "基本ｼｽﾃﾑ用変数":97:0 ] (18:座標倍率Ｘ[x10]:数値) 
-■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "基本ｼｽﾃﾑ用変数":98:0 ] (18:座標倍率Ｙ[x10]:数値) 
+■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
+■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
 ■Call Event [Name]: ["X[戦]戦闘ｺﾏﾝﾄﾞ一覧算出"] <CommonEv 152>  / CSelf0[対象戦闘ｽﾛｯﾄ]
 ▼ コマンドが０個でも行動できない
-■Load DB(Var):  CSelf30[コマンド数] = VarDB[ "基本ｼｽﾃﾑ用変数":17:0 ] (18:万能ウィンドウ項目個数:数値) 
+■Load DB(Var):  CSelf30[コマンド数] = VarDB[ "Base System Variables":17:0 ] (18:Universal Window Item Count:Number) 
 ■Condition (Number):   [1] CSelf30[コマンド数] ==  0  
 -◇Condition:  [1]  [ CSelf30[コマンド数] == 0   ] Case↓
  |■Set Variable: CSelf99[結果　0＝OK　1=選択不能　-1＝ｷｬﾝｾﾙ -2=無進行ｺﾏﾝﾄﾞ] = 1 + 0 
@@ -541,48 +541,48 @@ WoditorEvCOMMAND_END
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■　
 ▼ ２．コマンドを表示＋選択
 ▼ 万能ウィンドウのサイズ設定
-■Load DB(Var):  CSelf30[コマンド数] = VarDB[ "基本ｼｽﾃﾑ用変数":17:0 ] (18:万能ウィンドウ項目個数:数値) 
+■Load DB(Var):  CSelf30[コマンド数] = VarDB[ "Base System Variables":17:0 ] (18:Universal Window Item Count:Number) 
 ▼ サイズ設定
 ■ [Special] Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ ここでは計算された最大横幅を指定
 ■Set Variable: CSelf35[一時サイズ] = 7 * CSelf88[座標倍率X[x10]] 
-■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":11:0 ] (18:万能ウィンドウ横サイズ:数値) =  CSelf35[一時サイズ]
+■Write to DB(Var): VarDB[ "Base System Variables":11:0 ] (18:Universal Window Width:Number) =  CSelf35[一時サイズ]
 ■Set Variable: CSelf35[一時サイズ] = CSelf30[コマンド数] * CSelf89[座標倍率Y[x10]] 
 ■Set Variable: CSelf35[一時サイズ] *= 4 + 0 
 ■Set Variable: CSelf35[一時サイズ] /= 3 + 0 
 ■Set Variable: CSelf35[一時サイズ] += 1 * CSelf89[座標倍率Y[x10]] 
-■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":12:0 ] (18:万能ウィンドウ縦サイズ:数値) =  CSelf35[一時サイズ]
+■Write to DB(Var): VarDB[ "Base System Variables":12:0 ] (18:Universal Window Height:Number) =  CSelf35[一時サイズ]
 ▼ キャラクターの表示位置に合わせてコマンドを表示
 ■Call Event [Name]: ["X[戦]味方欄_座標算出"] <CommonEv 174>  / CSelf0[対象戦闘ｽﾛｯﾄ]
-■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "基本ｼｽﾃﾑ用変数":37:0 ] (18:ステータス欄表示先　座標X:数値) 
-■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "基本ｼｽﾃﾑ用変数":38:0 ] (18:ステータス欄表示先　座標Y:数値) 
+■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "Base System Variables":37:0 ] (18:Status Display End X:Number) 
+■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "Base System Variables":38:0 ] (18:Status Display End Y:Number) 
 ■Set Variable: CSelf35[一時サイズ] = 40 * CSelf88[座標倍率X[x10]] 
 ■Set Variable: CSelf35[一時サイズ] /= 10 + 0 
 ■Set Variable: CSelf35[一時サイズ] = CSelf10[一時変数A] - CSelf35[一時サイズ] 
 ■Set Variable: CSelf35[一時サイズ] += CSelf88[座標倍率X[x10]] / 2 
-■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":9:0 ] (18:万能ウィンドウ表示X:数値) =  CSelf35[一時サイズ]
+■Write to DB(Var): VarDB[ "Base System Variables":9:0 ] (18:Universal Window Display X:Number) =  CSelf35[一時サイズ]
 ■Set Variable: CSelf35[一時サイズ] = 27 * CSelf89[座標倍率Y[x10]] 
 ■Set Variable: CSelf35[一時サイズ] /= 10 + 0 
 ■Set Variable: CSelf35[一時サイズ] = CSelf11[一時変数B] - CSelf35[一時サイズ] 
-■Load DB(Var):  CSelf35[一時サイズ] -= VarDB[ "基本ｼｽﾃﾑ用変数":12:0 ] (18:万能ウィンドウ縦サイズ:数値) 
-■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":10:0 ] (18:万能ウィンドウ表示Y:数値) =  CSelf35[一時サイズ]
+■Load DB(Var):  CSelf35[一時サイズ] -= VarDB[ "Base System Variables":12:0 ] (18:Universal Window Height:Number) 
+■Write to DB(Var): VarDB[ "Base System Variables":10:0 ] (18:Universal Window Display Y:Number) =  CSelf35[一時サイズ]
 ▼ 項目数　他
 ■Set Variable: CSelf35[一時サイズ] = 1 + 0 
-■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":13:0 ] (18:万能ウィンドウ横項目数:数値) =  CSelf35[一時サイズ]
+■Write to DB(Var): VarDB[ "Base System Variables":13:0 ] (18:Universal Window Columns:Number) =  CSelf35[一時サイズ]
 ■Set Variable: CSelf35[一時サイズ] = CSelf30[コマンド数] + 0 
-■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":14:0 ] (18:万能ウィンドウ縦項目数:数値) =  CSelf35[一時サイズ]
+■Write to DB(Var): VarDB[ "Base System Variables":14:0 ] (18:Universal Window Rows:Number) =  CSelf35[一時サイズ]
 ■Set Variable: CSelf35[一時サイズ] = 3 * CSelf89[座標倍率Y[x10]] 
 ■Set Variable: CSelf35[一時サイズ] /= 2 + 0 
-■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":16:0 ] (18:万能ウィンドウ説明欄縦サイズ:数値) =  CSelf35[一時サイズ]
+■Write to DB(Var): VarDB[ "Base System Variables":16:0 ] (18:Universal Window Description Height:Number) =  CSelf35[一時サイズ]
 ▼ 万能ウィンドウ表示
 ■Call Event [Name]: ["X[共]万能ｳｨﾝﾄﾞｳ描画処理"] <CommonEv 64>  / 2:表示[戦闘ｺﾏﾝﾄﾞ用] / 0 / 2:最下部に横幅最大表示 / 0:なし
 ■Repeat Loop [ 1 ] Times
  |▼ ターン始めなら初回キー連打をキャンセルする
- |■Load DB(Var):  CSelf43[キー連打] = VarDB[ "基本ｼｽﾃﾑ用変数":58:0 ] (18:[ｼｽﾃﾑ]戦闘時ｷｰ連打:数値) 
- |■Load DB(Var):  CSelf45[初回？] = VarDB[ "基本ｼｽﾃﾑ用変数":32:0 ] (18:[ｼｽﾃﾑ]ターン開始初回？:数値) 
+ |■Load DB(Var):  CSelf43[キー連打] = VarDB[ "Base System Variables":58:0 ] (18:[System] Battle Key Hold:Number) 
+ |■Load DB(Var):  CSelf45[初回？] = VarDB[ "Base System Variables":32:0 ] (18:[System] First Turn Start?:Number) 
  |■Condition (Number):   [1] CSelf45[初回？] ==  1  
  |-◇Condition:  [1]  [ CSelf45[初回？] == 1   ] Case↓
- | |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":32:0 ] (18:[ｼｽﾃﾑ]ターン開始初回？:数値) =  0
+ | |■Write to DB(Var): VarDB[ "Base System Variables":32:0 ] (18:[System] First Turn Start?:Number) =  0
  | |■Condition (Number):   [1] CSelf43[キー連打] ==  1  
  | |-◇Condition:  [1]  [ CSelf43[キー連打] == 1   ] Case↓
  | | |■Loop Start
@@ -604,9 +604,9 @@ WoditorEvCOMMAND_END
 ■Repeat Loop [ 1 ] Times
  |▼ 万能ウィンドウ選択処理を実行
  |■Call Event [Name]: CSelf31[主人公ID] = ["X[戦]ｽﾛｯﾄから主人公ID取得"] <CommonEv 141>  / CSelf0[対象戦闘ｽﾛｯﾄ]
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":21:0 ] (18:万能ウィンドウ 外からカーソル指定:数値) =  CSelf14[保存キー位置]
+ |■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window Cursor Pos Set:Number) =  CSelf14[保存キー位置]
  |■Call Event [Name]: CSelf20[選択コード] = ["X[共]万能ｳｨﾝﾄﾞｳ選択実行"] <CommonEv 65>  / 2:選択を終えるまでループ[ｶｰｿﾙ初期化しない] / 4:左右キーで終了
- |■Load DB(Var):  CSelf14[保存キー位置] = VarDB[ "基本ｼｽﾃﾑ用変数":61:0 ] (18:[一時]万能ｳｨﾝﾄﾞｳ最終ｶｰｿﾙ位置:数値) 
+ |■Load DB(Var):  CSelf14[保存キー位置] = VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) 
  |■Call Event [Name]: ["X[戦]記憶キー位置設定"] <CommonEv 156>  / 12:[戦闘]ｺﾏﾝﾄﾞ(要ｷｬﾗ指定) / CSelf0[対象戦闘ｽﾛｯﾄ] / CSelf14[保存キー位置]
  |■
 ◇Loop End Point◇◇
@@ -625,38 +625,38 @@ WoditorEvCOMMAND_END
 -◇Condition:  [2]  [ CSelf20[選択コード] == -300   ] Case↓
  |▼ シフト（待機）
  |■Repeat Loop [ 1 ] Times
- | |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "基本ｼｽﾃﾑ用変数":37:0 ] (18:ステータス欄表示先　座標X:数値) 
- | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "基本ｼｽﾃﾑ用変数":38:0 ] (18:ステータス欄表示先　座標Y:数値) 
+ | |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "Base System Variables":37:0 ] (18:Status Display End X:Number) 
+ | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "Base System Variables":38:0 ] (18:Status Display End Y:Number) 
  | |▼ サイズ
  | |■Set Variable: CSelf35[一時サイズ] = 7 * CSelf88[座標倍率X[x10]] 
- | |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":11:0 ] (18:万能ウィンドウ横サイズ:数値) =  CSelf35[一時サイズ]
+ | |■Write to DB(Var): VarDB[ "Base System Variables":11:0 ] (18:Universal Window Width:Number) =  CSelf35[一時サイズ]
  | |■Set Variable: CSelf35[一時サイズ] = 4 * CSelf89[座標倍率Y[x10]] 
  | |■Set Variable: CSelf35[一時サイズ] /= 3 + 0 
  | |■Set Variable: CSelf35[一時サイズ] += 1 * CSelf89[座標倍率Y[x10]] 
- | |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":12:0 ] (18:万能ウィンドウ縦サイズ:数値) =  CSelf35[一時サイズ]
+ | |■Write to DB(Var): VarDB[ "Base System Variables":12:0 ] (18:Universal Window Height:Number) =  CSelf35[一時サイズ]
  | |■Set Variable: CSelf35[一時サイズ] = 3 * CSelf89[座標倍率Y[x10]] 
  | |■Set Variable: CSelf35[一時サイズ] /= 2 + 0 
- | |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":16:0 ] (18:万能ウィンドウ説明欄縦サイズ:数値) =  CSelf35[一時サイズ]
+ | |■Write to DB(Var): VarDB[ "Base System Variables":16:0 ] (18:Universal Window Description Height:Number) =  CSelf35[一時サイズ]
  | |▼ 座標
  | |■Set Variable: CSelf35[一時サイズ] = 40 * CSelf88[座標倍率X[x10]] 
  | |■Set Variable: CSelf35[一時サイズ] /= 10 + 0 
  | |■Set Variable: CSelf35[一時サイズ] = CSelf10[一時変数A] - CSelf35[一時サイズ] 
  | |■Set Variable: CSelf35[一時サイズ] += CSelf88[座標倍率X[x10]] / 2 
- | |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":9:0 ] (18:万能ウィンドウ表示X:数値) =  CSelf35[一時サイズ]
+ | |■Write to DB(Var): VarDB[ "Base System Variables":9:0 ] (18:Universal Window Display X:Number) =  CSelf35[一時サイズ]
  | |■Set Variable: CSelf35[一時サイズ] = 27 * CSelf89[座標倍率Y[x10]] 
  | |■Set Variable: CSelf35[一時サイズ] /= 10 + 0 
  | |■Set Variable: CSelf35[一時サイズ] = CSelf11[一時変数B] - CSelf35[一時サイズ] 
- | |■Load DB(Var):  CSelf35[一時サイズ] -= VarDB[ "基本ｼｽﾃﾑ用変数":12:0 ] (18:万能ウィンドウ縦サイズ:数値) 
- | |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":10:0 ] (18:万能ウィンドウ表示Y:数値) =  CSelf35[一時サイズ]
+ | |■Load DB(Var):  CSelf35[一時サイズ] -= VarDB[ "Base System Variables":12:0 ] (18:Universal Window Height:Number) 
+ | |■Write to DB(Var): VarDB[ "Base System Variables":10:0 ] (18:Universal Window Display Y:Number) =  CSelf35[一時サイズ]
  | |▼ 項目数　他
- | |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":13:0 ] (18:万能ウィンドウ横項目数:数値) =  1
- | |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":14:0 ] (18:万能ウィンドウ縦項目数:数値) =  1
- | |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":17:0 ] (18:万能ウィンドウ項目個数:数値) =  1
+ | |■Write to DB(Var): VarDB[ "Base System Variables":13:0 ] (18:Universal Window Columns:Number) =  1
+ | |■Write to DB(Var): VarDB[ "Base System Variables":14:0 ] (18:Universal Window Rows:Number) =  1
+ | |■Write to DB(Var): VarDB[ "Base System Variables":17:0 ] (18:Universal Window Item Count:Number) =  1
  | |▼ 「何もしない」コマンドを万能ウィンドウに登録
- | |■Write to DB(Var): VarDB[ "万能ｳｨﾝﾄﾞｳ一時DB":0:"項目コード" ] (19::1) =  -3
- | |■Write to DB(Var): VarDB[ "万能ｳｨﾝﾄﾞｳ一時DB":0:"選択可能状態[1=可]" ] (19::2) =  1
- | |■Write to DB(Var): VarDB[ "万能ｳｨﾝﾄﾞｳ一時DB":0:"説明文" ] (19::6) =  何も行動せずターンを進めます
- | |■Write to DB(Var): VarDB[ "万能ｳｨﾝﾄﾞｳ一時DB":0:"項目文" ] (19::0) =  何もしない
+ | |■Write to DB(Var): VarDB[ "Universal Window Items":0:"Item ID" ] (19::1) =  -3
+ | |■Write to DB(Var): VarDB[ "Universal Window Items":0:"Selectable? [1=Yes]" ] (19::2) =  1
+ | |■Write to DB(Var): VarDB[ "Universal Window Items":0:"Description" ] (19::6) =  何も行動せずターンを進めます
+ | |■Write to DB(Var): VarDB[ "Universal Window Items":0:"Item Text" ] (19::0) =  何もしない
  | |■Call Event [Name]: ["X[共]万能ｳｨﾝﾄﾞｳ描画処理"] <CommonEv 64>  / 2:表示[戦闘ｺﾏﾝﾄﾞ用] / 0 / 2:最下部に横幅最大表示 / 0:なし
  | |■Call Event [Name]: CSelf20[選択コード] = ["X[共]万能ｳｨﾝﾄﾞｳ選択実行"] <CommonEv 65>  / 2:選択を終えるまでループ[ｶｰｿﾙ初期化しない] / 4:左右キーで終了
  | |■Call Event [Name]: ["X[共]万能ｳｨﾝﾄﾞｳ描画処理"] <CommonEv 64>  / -1:消去 / 0 / 4:ｳｨﾝﾄﾞｳの下に表示 / 1:左上から展開

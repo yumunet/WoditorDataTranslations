@@ -192,7 +192,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [103][0,1]<0>()("武器所持個数を取得")
-[250][5,4]<0>(5,1600000,0,69632,1600010)("","┣所持武器個数","","")
+[250][5,4]<0>(5,1600000,0,69632,1600010)("","┣ Owned Weapon Count","","")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
@@ -223,6 +223,6 @@ WoditorEvCOMMAND_END
  |■
 ◇End◇
 ▼ 武器所持個数を取得
-■Load DB(Var):  CSelf10[一時変数] = VarDB[ "┣所持武器個数":CSelf0[武器番号]:0 ] (8:-:所持個数) 
+■Load DB(Var):  CSelf10[一時変数] = VarDB[ "┣ Owned Weapon Count":CSelf0[武器番号]:0 ] (8:-:Quantity Owned) 
 ■
 [COMMAND_TEXT_END]

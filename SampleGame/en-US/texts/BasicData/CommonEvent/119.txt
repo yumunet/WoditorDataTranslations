@@ -174,7 +174,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[250][5,4]<0>(18,51,0,69632,1600037)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,51,0,69632,1600037)("","Base System Variables","","")
 [103][0,1]<0>()(" ")
 [212][0,1]<0>()("使用処理2")
 [121][4,0]<0>(1600099,0,0,0)()
@@ -214,7 +214,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<5>()("発動者がいる場合は固定")
 [121][4,0]<5>(1600016,1,0,0)()
 [103][0,1]<5>()("使用者の位置を算出")
-[250][5,4]<5>(18,51,0,69632,1600018)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<5>(18,51,0,69632,1600018)("","Base System Variables","","")
 [121][4,0]<5>(1600011,0,0,0)()
 [179][1,0]<5>(1600018)()
 [300][4,1]<6>(0,16777217,1600011,1600012)("X[移]選択位置主人公ID取得")
@@ -289,7 +289,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<4>(1)()
 [103][0,1]<5>()("決定なら使用")
 [103][0,1]<5>()("キャラ探索開始を0番に")
-[250][5,4]<5>(18,4,0,200704,1600011)("","基本ｼｽﾃﾑ用変数","現在パーティー人数","")
+[250][5,4]<5>(18,4,0,200704,1600011)("","Base System Variables","Current Party Size","")
 [121][4,0]<5>(1600011,1,0,512)()
 [121][4,0]<5>(1600011,0,1600011,24576)()
 [300][5,1]<5>(0,3,2,-1,0)("X[移]キャラクター欄描画")
@@ -355,17 +355,17 @@ WoditorEvCOMMAND_START
 [176][0,0]<5>()()
 [0][0,0]<5>()()
 [499][0,0]<4>()()
-[250][5,4]<4>(5,1600014,0,69632,1600010)("","┗ 状態リスト","","")
+[250][5,4]<4>(5,1600014,0,69632,1600010)("","┗ State List","","")
 [111][4,0]<4>(1,1600010,0,5)()
 [401][1,0]<4>(1)()
 [176][0,0]<5>()()
 [0][0,0]<5>()()
 [499][0,0]<4>()()
 [250][5,4]<4>(0,1600030,10,332288,1600033)("","Skills","","┣ Attack Influence [%]           ")
-[250][5,4]<4>(17,1600014,2,331824,1600033)("","×主人公一時DB","","[一時]計算済み攻撃力")
+[250][5,4]<4>(17,1600014,2,331824,1600033)("","×Allies Temp Data","","[Temp] Post-Calc Attack")
 [121][4,0]<4>(1600033,100,0,1024)()
 [250][5,4]<4>(0,1600030,11,332288,1600034)("","Skills","","┣ Magic Influence [%]           ")
-[250][5,4]<4>(21,1600014,4,331824,1600034)("","×主人公一時DB","","[一時]計算済み精神攻撃")
+[250][5,4]<4>(21,1600014,4,331824,1600034)("","×Allies Temp Data","","[Temp] Post-Calc Magic Atk")
 [121][4,0]<4>(1600034,100,0,1024)()
 [121][4,0]<4>(1600035,1600033,1600034,0)()
 [250][5,4]<4>(0,1600030,9,332304,1600035)("","Skills","","┣ Base Amount [Fixed Value]")
@@ -456,10 +456,10 @@ WoditorEvCOMMAND_START
 [401][1,0]<2>(1)()
 [121][4,0]<3>(1600015,1600001,0,0)()
 [250][5,4]<3>(0,1600030,10,332288,1600033)("","Skills","","┣ Attack Influence [%]           ")
-[250][5,4]<3>(21,1600015,2,331824,1600033)("","×主人公一時DB","","[一時]計算済み攻撃力")
+[250][5,4]<3>(21,1600015,2,331824,1600033)("","×Allies Temp Data","","[Temp] Post-Calc Attack")
 [121][4,0]<3>(1600033,100,0,1024)()
 [250][5,4]<3>(0,1600030,11,332288,1600034)("","Skills","","┣ Magic Influence [%]           ")
-[250][5,4]<3>(21,1600015,4,331824,1600034)("","×主人公一時DB","","[一時]計算済み精神攻撃")
+[250][5,4]<3>(21,1600015,4,331824,1600034)("","×Allies Temp Data","","[Temp] Post-Calc Magic Atk")
 [121][4,0]<3>(1600034,100,0,1024)()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
@@ -578,7 +578,7 @@ WoditorEvCOMMAND_START
 [300][4,1]<1>(0,2,1600001,1600000)("X[移]技能使用_消費処理")
 [300][6,1]<1>(0,49,-1,1600005,1600005,1600005)("X[移]ミニウィンドウ表示")
 [250][5,4]<1>(0,1600030,3,332288,1600012)("","Skills","","(If Used) ┗ Event Number")
-[250][5,4]<1>(18,1,0,65536,1)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<1>(18,1,0,65536,1)("","Base System Variables","","")
 [211][2,0]<1>(1600012,0)()
 [121][4,0]<1>(1600099,1,0,0)()
 [172][0,0]<1>()()
@@ -610,7 +610,7 @@ WoditorEvCOMMAND_END
 ▼  
 ▼ 【どのコモンイベントから主に呼び出されているか】
 ▼ ―――――――――――――――――――――――――――――――――――
-■Load DB(Var):  CSelf37[最大パーティ人数] = VarDB[ "基本ｼｽﾃﾑ用変数":51:0 ] (18:システム上最大パーティー人数:数値) 
+■Load DB(Var):  CSelf37[最大パーティ人数] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
 ▼  
 ●Label Point [使用処理2] <<<<<<<<<<<<<<<<<<<<<<<<★
 ■Set Variable: CSelf99[使用した？] = 0 + 0 
@@ -650,7 +650,7 @@ WoditorEvCOMMAND_END
  | | | | |▼ 発動者がいる場合は固定
  | | | | |■Set Variable: CSelf16[単体(1)or全体(2)] = 1 + 0 
  | | | | |▼ 使用者の位置を算出
- | | | | |■Load DB(Var):  CSelf18[繰り返し回数] = VarDB[ "基本ｼｽﾃﾑ用変数":51:0 ] (18:システム上最大パーティー人数:数値) 
+ | | | | |■Load DB(Var):  CSelf18[繰り返し回数] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
  | | | | |■Set Variable: CSelf11[ターゲット] = 0 + 0 
  | | | | |■Repeat Loop [ CSelf18[繰り返し回数] ] Times
  | | | | | |■Call Event [Name]: CSelf12[一時変数２] = ["X[移]選択位置主人公ID取得"] <CommonEv 105>  / CSelf11[ターゲット]
@@ -725,7 +725,7 @@ WoditorEvCOMMAND_END
  | | | |-◇Condition:  [1]  [ CSelf12[一時変数２] == 10   ] Case↓
  | | | | |▼ 決定なら使用
  | | | | |▼ キャラ探索開始を0番に
- | | | | |■Load DB(Var):  CSelf11[ターゲット] = VarDB[ "基本ｼｽﾃﾑ用変数":"現在パーティー人数":0 ] (18:4:数値) 
+ | | | | |■Load DB(Var):  CSelf11[ターゲット] = VarDB[ "Base System Variables":"Current Party Size":0 ] (18:4:Number) 
  | | | | |■Set Variable: CSelf11[ターゲット] -= 1 + 0 
  | | | | |■Set Variable: CSelf11[ターゲット] = 0  to  CSelf11[ターゲット] 
  | | | | |■Call Event [Name]: ["X[移]キャラクター欄描画"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0
@@ -791,17 +791,17 @@ WoditorEvCOMMAND_END
  | | | | |■Loop Start: Go to Loop Start
  | | | | |■
  | | | |◇End◇
- | | | |■Load DB(Var):  CSelf10[一時変数] = VarDB[ "┗ 状態リスト":CSelf14[対象ID]:0 ] (5:-:\udb[8:0]の残り歩数) 
+ | | | |■Load DB(Var):  CSelf10[一時変数] = VarDB[ "┗ State List":CSelf14[対象ID]:0 ] (5:-:\udb[8:0] Steps Left) 
  | | | |■Condition (Number):   [1] CSelf10[一時変数] !=  0  
  | | | |-◇Condition:  [1]  [ CSelf10[一時変数] != 0   ] Case↓
  | | | | |■Loop Start: Go to Loop Start
  | | | | |■
  | | | |◇End◇
  | | | |■Load DB(User):  CSelf33[技能TMP２] = UserDB[ "Skills":CSelf30[技能番号]:"┣ Attack Influence [%]           " ] (0:-:10) 
- | | | |■Load DB(Var):  CSelf33[技能TMP２] *= VarDB[ "×主人公一時DB":CSelf14[対象ID]:"[一時]計算済み攻撃力" ] (17:-:2) 
+ | | | |■Load DB(Var):  CSelf33[技能TMP２] *= VarDB[ "×Allies Temp Data":CSelf14[対象ID]:"[Temp] Post-Calc Attack" ] (17:-:2) 
  | | | |■Set Variable: CSelf33[技能TMP２] /= 100 + 0 
  | | | |■Load DB(User):  CSelf34[技能TMP３] = UserDB[ "Skills":CSelf30[技能番号]:"┣ Magic Influence [%]           " ] (0:-:11) 
- | | | |■Load DB(Var):  CSelf34[技能TMP３] *= VarDB[ "×主人公一時DB":CSelf14[対象ID]:"[一時]計算済み精神攻撃" ] (17:-:4) 
+ | | | |■Load DB(Var):  CSelf34[技能TMP３] *= VarDB[ "×Allies Temp Data":CSelf14[対象ID]:"[Temp] Post-Calc Magic Atk" ] (17:-:4) 
  | | | |■Set Variable: CSelf34[技能TMP３] /= 100 + 0 
  | | | |■Set Variable: CSelf35[結果値] = CSelf33[技能TMP２] + CSelf34[技能TMP３] 
  | | | |■Load DB(User):  CSelf35[結果値] += UserDB[ "Skills":CSelf30[技能番号]:"┣ Base Amount [Fixed Value]" ] (0:-:9) 
@@ -892,10 +892,10 @@ WoditorEvCOMMAND_END
  | |-◇Condition:  [1]  [ CSelf1[発動者ID] >= 0   ] Case↓
  | | |■Set Variable: CSelf15[発動者ID] = CSelf1[発動者ID] + 0 
  | | |■Load DB(User):  CSelf33[技能TMP２] = UserDB[ "Skills":CSelf30[技能番号]:"┣ Attack Influence [%]           " ] (0:-:10) 
- | | |■Load DB(Var):  CSelf33[技能TMP２] *= VarDB[ "×主人公一時DB":CSelf15[発動者ID]:"[一時]計算済み攻撃力" ] (17:-:2) 
+ | | |■Load DB(Var):  CSelf33[技能TMP２] *= VarDB[ "×Allies Temp Data":CSelf15[発動者ID]:"[Temp] Post-Calc Attack" ] (17:-:2) 
  | | |■Set Variable: CSelf33[技能TMP２] /= 100 + 0 
  | | |■Load DB(User):  CSelf34[技能TMP３] = UserDB[ "Skills":CSelf30[技能番号]:"┣ Magic Influence [%]           " ] (0:-:11) 
- | | |■Load DB(Var):  CSelf34[技能TMP３] *= VarDB[ "×主人公一時DB":CSelf15[発動者ID]:"[一時]計算済み精神攻撃" ] (17:-:4) 
+ | | |■Load DB(Var):  CSelf34[技能TMP３] *= VarDB[ "×Allies Temp Data":CSelf15[発動者ID]:"[Temp] Post-Calc Magic Atk" ] (17:-:4) 
  | | |■Set Variable: CSelf34[技能TMP３] /= 100 + 0 
  | | |■
  | |◇End◇
@@ -1014,7 +1014,7 @@ WoditorEvCOMMAND_END
  |■Call Event [Name]: ["X[移]技能使用_消費処理"] <CommonEv 121>  / CSelf1[発動者ID] / CSelf0[技能コード]
  |■Call Event [Name]: ["X[移]ミニウィンドウ表示"] <CommonEv 100>  / -1:削除 / CSelf5 / CSelf5 / CSelf5
  |■Load DB(User):  CSelf12[一時変数２] = UserDB[ "Skills":CSelf30[技能番号]:"(If Used) ┗ Event Number" ] (0:-:3) 
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":1:0 ] (18:メニュー消去フラグ:数値) =  1
+ |■Write to DB(Var): VarDB[ "Base System Variables":1:0 ] (18:Menu Close Flag:Number) =  1
  |■Reserve Next Event: Variable [CSelf12[一時変数２]]'s Ev
  |■Set Variable: CSelf99[使用した？] = 1 + 0 
  |■Exit Event

@@ -207,15 +207,15 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("固定値を設定")
 [121][4,0]<0>(1600020,12000,0,0)()
 [103][0,1]<0>()("外部パラメータ読み込み")
-[250][5,4]<0>(18,7,0,69632,1600017)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,6,0,69632,1600018)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,5,0,69632,1600019)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,7,0,69632,1600017)("","Base System Variables","","")
+[250][5,4]<0>(18,6,0,69632,1600018)("","Base System Variables","","")
+[250][5,4]<0>(18,5,0,69632,1600019)("","Base System Variables","","")
 [250][5,4]<0>(17,0,0,332288,1600008)("","Images/Sounds","","Window Image File")
 [250][5,4]<0>(17,0,0,332288,1600009)("","Images/Sounds","","Cursor Image File")
 [250][5,4]<0>(18,0,22,332288,1600027)("","System Settings","","Equippable Slots")
 [103][0,1]<0>()("Ver2.20　座標倍率を縦横別に修正")
-[250][5,4]<0>(18,97,0,69632,1600088)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,98,0,69632,1600089)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,97,0,69632,1600088)("","Base System Variables","","")
+[250][5,4]<0>(18,98,0,69632,1600089)("","Base System Variables","","")
 [121][4,0]<0>(1600054,60,0,0)()
 [121][4,0]<0>(1600055,60,0,0)()
 [121][4,0]<0>(1600056,100,0,0)()
@@ -238,7 +238,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600072,110,0,0)()
 [121][4,0]<0>(1600073,27,0,0)()
 [103][0,1]<0>()("装備状態欄座標設定")
-[250][5,4]<0>(18,4,0,200704,1600096)("","基本ｼｽﾃﾑ用変数","現在パーティー人数","")
+[250][5,4]<0>(18,4,0,200704,1600096)("","Base System Variables","Current Party Size","")
 [121][4,0]<0>(1600050,205,0,0)()
 [121][4,0]<0>(1600051,73,0,0)()
 [121][4,0]<0>(1600052,110,0,0)()
@@ -259,13 +259,13 @@ WoditorEvCOMMAND_START
 [121][4,0]<1>(1600079,1600089,0,768)()
 [121][5,0]<1>(1600075,10,0,66560,4)()
 [103][0,1]<1>()("ここでセットしておく")
-[250][5,4]<1>(18,9,0,65536,1600075)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(18,10,0,65536,1600076)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(18,11,0,65536,1600077)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(18,12,0,65536,1600078)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(18,13,0,65536,1)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(18,14,0,65536,13)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(18,16,0,65536,1600079)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<1>(18,9,0,65536,1600075)("","Base System Variables","","")
+[250][5,4]<1>(18,10,0,65536,1600076)("","Base System Variables","","")
+[250][5,4]<1>(18,11,0,65536,1600077)("","Base System Variables","","")
+[250][5,4]<1>(18,12,0,65536,1600078)("","Base System Variables","","")
+[250][5,4]<1>(18,13,0,65536,1)("","Base System Variables","","")
+[250][5,4]<1>(18,14,0,65536,13)("","Base System Variables","","")
+[250][5,4]<1>(18,16,0,65536,1600079)("","Base System Variables","","")
 [0][0,0]<1>()()
 [498][0,0]<0>()()
 [103][0,1]<0>()("座標倍率補正をかける")
@@ -354,7 +354,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [103][0,1]<2>()("表示パラメータの取得")
-[250][5,4]<2>(6,0,0,331776,1600095)("","パーティー情報","","所持金")
+[250][5,4]<2>(6,0,0,331776,1600095)("","Party","","Current Money")
 [103][0,1]<2>()(" ")
 [179][1,0]<2>(1600057)()
 [103][0,1]<3>()("下地")
@@ -532,11 +532,11 @@ WoditorEvCOMMAND_START
 [99][1,0]<3>(0)()
 [103][0,1]<3>()("所持数欄を表示")
 [103][0,1]<3>()("項目数が選択した場所より小さかった場合は調整")
-[250][5,4]<3>(18,17,0,331776,1600015)("","基本ｼｽﾃﾑ用変数","","数値")
+[250][5,4]<3>(18,17,0,331776,1600015)("","Base System Variables","","Number")
 [121][4,0]<3>(1600002,1600015,1,5888)()
 [111][4,0]<3>(17,1600002,0,1)()
 [401][1,0]<3>(1)()
-[250][5,4]<4>(19,1600002,7,331776,1600097)("","万能ｳｨﾝﾄﾞｳ一時DB","","[ｵﾌﾟｼｮﾝ]予備数値A")
+[250][5,4]<4>(19,1600002,7,331776,1600097)("","Universal Window Items","","[Option] Spare Number A")
 [0][0,0]<4>()()
 [420][1,0]<3>(0)()
 [121][4,0]<4>(1600097,0,0,0)()
@@ -616,7 +616,7 @@ WoditorEvCOMMAND_START
 [122][2,1]<3>(1600007,0)("")
 [111][4,0]<3>(1,1600002,0,1)()
 [401][1,0]<3>(1)()
-[250][5,4]<4>(19,1600002,9,331776,1600007)("","万能ｳｨﾝﾄﾞｳ一時DB","","[ｵﾌﾟｼｮﾝ]予備文字列A")
+[250][5,4]<4>(19,1600002,9,331776,1600007)("","Universal Window Items","","[Option] Spare String A")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [112][2,4]<3>(17,1600007)("","","","")
@@ -751,15 +751,15 @@ WoditorEvCOMMAND_END
 ▼ 固定値を設定
 ■Set Variable: CSelf20[基本ピクチャ番号] = 12000 + 0 
 ▼ 外部パラメータ読み込み
-■Load DB(Var):  CSelf17[最小フォントサイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":7:0 ] (18:システム最小フォントサイズ:数値) 
-■Load DB(Var):  CSelf18[ミニフォントサイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":6:0 ] (18:システムミニフォントサイズ:数値) 
-■Load DB(Var):  CSelf19[基本フォントサイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":5:0 ] (18:システム基本フォントサイズ:数値) 
+■Load DB(Var):  CSelf17[最小フォントサイズ] = VarDB[ "Base System Variables":7:0 ] (18:System Min Font Size:Number) 
+■Load DB(Var):  CSelf18[ミニフォントサイズ] = VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) 
+■Load DB(Var):  CSelf19[基本フォントサイズ] = VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) 
 ■Load DB(User):  CSelf8[ウィンドウ画像ファイル] = UserDB[ "Images/Sounds":0:"Window Image File" ] (16:Basic Images/Sounds:0) 
 ■Load DB(User):  CSelf9[カーソル画像ファイル] = UserDB[ "Images/Sounds":0:"Cursor Image File" ] (16:Basic Images/Sounds:1) 
 ■Load DB(User):  CSelf27[装備欄 縦項目数] = UserDB[ "System Settings":0:"Equippable Slots" ] (17:Basic System Settings:22) 
 ▼ Ver2.20　座標倍率を縦横別に修正
-■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "基本ｼｽﾃﾑ用変数":97:0 ] (18:座標倍率Ｘ[x10]:数値) 
-■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "基本ｼｽﾃﾑ用変数":98:0 ] (18:座標倍率Ｙ[x10]:数値) 
+■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
+■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
 ■Set Variable: CSelf54[色指定R] = 60 + 0 
 ■Set Variable: CSelf55[色指定G] = 60 + 0 
 ■Set Variable: CSelf56[色指定B] = 100 + 0 
@@ -782,7 +782,7 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf72[所持数欄サイズX] = 110 + 0 
 ■Set Variable: CSelf73[所持数欄サイズY] = 27 + 0 
 ▼ 装備状態欄座標設定
-■Load DB(Var):  CSelf96[パーティ人数] = VarDB[ "基本ｼｽﾃﾑ用変数":"現在パーティー人数":0 ] (18:4:数値) 
+■Load DB(Var):  CSelf96[パーティ人数] = VarDB[ "Base System Variables":"Current Party Size":0 ] (18:4:Number) 
 ■Set Variable: CSelf50[装備状態欄X] = 205 + 0 
 ■Set Variable: CSelf51[装備状態欄Y] = 73 + 0 
 ■Set Variable: CSelf52[装備状態欄横サイズ] = 110 + 0 
@@ -803,13 +803,13 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf79[万能ウィンドウ説明欄縦サイズ] *= CSelf89[座標倍率Y[x10]] + 0 
  |■Set Variable: CSelf75[万能ウィンドウ表示X] to CSelf79[万能ウィンドウ説明欄縦サイズ] /= 10 + 0 
  |▼ ここでセットしておく
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":9:0 ] (18:万能ウィンドウ表示X:数値) =  CSelf75[万能ウィンドウ表示X]
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":10:0 ] (18:万能ウィンドウ表示Y:数値) =  CSelf76[万能ウィンドウ表示Y]
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":11:0 ] (18:万能ウィンドウ横サイズ:数値) =  CSelf77[万能ウィンドウサイズX]
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":12:0 ] (18:万能ウィンドウ縦サイズ:数値) =  CSelf78[万能ウィンドウ表示Y]
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":13:0 ] (18:万能ウィンドウ横項目数:数値) =  1
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":14:0 ] (18:万能ウィンドウ縦項目数:数値) =  13
- |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":16:0 ] (18:万能ウィンドウ説明欄縦サイズ:数値) =  CSelf79[万能ウィンドウ説明欄縦サイズ]
+ |■Write to DB(Var): VarDB[ "Base System Variables":9:0 ] (18:Universal Window Display X:Number) =  CSelf75[万能ウィンドウ表示X]
+ |■Write to DB(Var): VarDB[ "Base System Variables":10:0 ] (18:Universal Window Display Y:Number) =  CSelf76[万能ウィンドウ表示Y]
+ |■Write to DB(Var): VarDB[ "Base System Variables":11:0 ] (18:Universal Window Width:Number) =  CSelf77[万能ウィンドウサイズX]
+ |■Write to DB(Var): VarDB[ "Base System Variables":12:0 ] (18:Universal Window Height:Number) =  CSelf78[万能ウィンドウ表示Y]
+ |■Write to DB(Var): VarDB[ "Base System Variables":13:0 ] (18:Universal Window Columns:Number) =  1
+ |■Write to DB(Var): VarDB[ "Base System Variables":14:0 ] (18:Universal Window Rows:Number) =  13
+ |■Write to DB(Var): VarDB[ "Base System Variables":16:0 ] (18:Universal Window Description Height:Number) =  CSelf79[万能ウィンドウ説明欄縦サイズ]
  |■
 ◇Loop End Point◇◇
 ▼ 座標倍率補正をかける
@@ -898,7 +898,7 @@ WoditorEvCOMMAND_END
  | | |■
  | |◇End◇
  | |▼ 表示パラメータの取得
- | |■Load DB(Var):  CSelf95[所持金] = VarDB[ "パーティー情報":0:"所持金" ] (6:メイン設定:0) 
+ | |■Load DB(Var):  CSelf95[所持金] = VarDB[ "Party":0:"Current Money" ] (6:Main Settings:0) 
  | |▼  
  | |■Repeat Loop [ CSelf57[初期表示？(1=YES)] ] Times
  | | |▼ 下地
@@ -1076,11 +1076,11 @@ WoditorEvCOMMAND_END
  | | |■ Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
  | | |▼ 所持数欄を表示
  | | |▼ 項目数が選択した場所より小さかった場合は調整
- | | |■Load DB(Var):  CSelf15[一時変数F] = VarDB[ "基本ｼｽﾃﾑ用変数":17:"数値" ] (18:万能ウィンドウ項目個数:0) 
+ | | |■Load DB(Var):  CSelf15[一時変数F] = VarDB[ "Base System Variables":17:"Number" ] (18:Universal Window Item Count:0) 
  | | |■Set Variable: CSelf2[商品選択位置] Upper Bound= CSelf15[一時変数F] - 1 
  | | |■Condition (Number):   [1] CSelf2[商品選択位置] >=  0  
  | | |-◇Condition:  [1]  [ CSelf2[商品選択位置] >= 0   ] Case↓
- | | | |■Load DB(Var):  CSelf97[所持数] = VarDB[ "万能ｳｨﾝﾄﾞｳ一時DB":CSelf2[商品選択位置]:"[ｵﾌﾟｼｮﾝ]予備数値A" ] (19:-:7) 
+ | | | |■Load DB(Var):  CSelf97[所持数] = VarDB[ "Universal Window Items":CSelf2[商品選択位置]:"[Option] Spare Number A" ] (19:-:7) 
  | | | |■
  | | |-◇Else
  | | | |■Set Variable: CSelf97[所持数] = 0 + 0 
@@ -1160,7 +1160,7 @@ WoditorEvCOMMAND_END
  | | |■Set String: CSelf7[一時文字列B] = ""
  | | |■Condition (Number):   [1] CSelf2[商品選択位置] >=  0  
  | | |-◇Condition:  [1]  [ CSelf2[商品選択位置] >= 0   ] Case↓
- | | | |■Load DB(Var):  CSelf7[一時文字列B] = VarDB[ "万能ｳｨﾝﾄﾞｳ一時DB":CSelf2[商品選択位置]:"[ｵﾌﾟｼｮﾝ]予備文字列A" ] (19:-:9) 
+ | | | |■Load DB(Var):  CSelf7[一時文字列B] = VarDB[ "Universal Window Items":CSelf2[商品選択位置]:"[Option] Spare String A" ] (19:-:9) 
  | | | |■
  | | |◇End◇
  | | |■Condition (String):   [1] CSelf7[一時文字列B] is equal to ""

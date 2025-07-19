@@ -205,7 +205,7 @@ CSELF_NAME_99=
 COMMAND_NUM=185
 --
 WoditorEvCOMMAND_START
-[250][5,4]<0>(18,68,0,69632,1600025)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,68,0,69632,1600025)("","Base System Variables","","")
 [111][4,0]<0>(1,1600025,1,2)()
 [401][1,0]<0>(1)()
 [121][4,0]<1>(1600029,1,0,0)()
@@ -224,7 +224,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
 [103][0,1]<2>()("味方全体")
-[250][5,4]<2>(18,51,0,69632,1600020)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<2>(18,51,0,69632,1600020)("","Base System Variables","","")
 [121][4,0]<2>(1600010,-1,0,0)()
 [170][0,0]<2>()()
 [121][4,0]<3>(1600010,1,0,256)()
@@ -252,7 +252,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<2>()()
 [401][1,0]<1>(3)()
 [103][0,1]<2>()("敵全体")
-[250][5,4]<2>(18,69,0,69632,1600020)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<2>(18,69,0,69632,1600020)("","Base System Variables","","")
 [121][4,0]<2>(1600020,10,0,256)()
 [121][4,0]<2>(1600010,9,0,0)()
 [170][0,0]<2>()()
@@ -298,8 +298,8 @@ WoditorEvCOMMAND_START
 [300][3,1]<3>(0,1,1600010)("X[戦]敵キャラ_座標算出")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
-[250][5,4]<2>(21,37,0,69632,1600018)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<2>(21,38,0,69632,1600019)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<2>(21,37,0,69632,1600018)("","Base System Variables","","")
+[250][5,4]<2>(21,38,0,69632,1600019)("","Base System Variables","","")
 [0][0,0]<2>()()
 [498][0,0]<1>()()
 [179][1,0]<1>(1)()
@@ -393,7 +393,7 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Load DB(Var):  CSelf25[戦闘中フラグ] = VarDB[ "基本ｼｽﾃﾑ用変数":68:0 ] (18:[戦闘]戦闘中フラグ:数値) 
+■Load DB(Var):  CSelf25[戦闘中フラグ] = VarDB[ "Base System Variables":68:0 ] (18:[Battle] In Battle?:Number) 
 ■Condition (Number):   [1] CSelf25[戦闘中フラグ] ==  1  
 -◇Condition:  [1]  [ CSelf25[戦闘中フラグ] == 1   ] Case↓
  |■Set Variable: CSelf29[戻り先] = 1 + 0 
@@ -412,7 +412,7 @@ WoditorEvCOMMAND_END
  | |■
  |-◇Condition:  [2]  [ CSelf0[対象] == -1   ] Case↓
  | |▼ 味方全体
- | |■Load DB(Var):  CSelf20[最大スロット数] = VarDB[ "基本ｼｽﾃﾑ用変数":51:0 ] (18:システム上最大パーティー人数:数値) 
+ | |■Load DB(Var):  CSelf20[最大スロット数] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
  | |■Set Variable: CSelf10[対象スロット] = -1 + 0 
  | |■Loop Start
  | | |■Set Variable: CSelf10[対象スロット] += 1 + 0 
@@ -440,7 +440,7 @@ WoditorEvCOMMAND_END
  | |■
  |-◇Condition:  [3]  [ CSelf0[対象] == -2   ] Case↓
  | |▼ 敵全体
- | |■Load DB(Var):  CSelf20[最大スロット数] = VarDB[ "基本ｼｽﾃﾑ用変数":69:0 ] (18:[戦闘]敵の最大数(システム):数値) 
+ | |■Load DB(Var):  CSelf20[最大スロット数] = VarDB[ "Base System Variables":69:0 ] (18:[Battle] Max Enemy Count (System):Number) 
  | |■Set Variable: CSelf20[最大スロット数] += 10 + 0 
  | |■Set Variable: CSelf10[対象スロット] = 9 + 0 
  | |■Loop Start
@@ -486,8 +486,8 @@ WoditorEvCOMMAND_END
  | | |■Call Event [Name]: ["X[戦]敵キャラ_座標算出"] <CommonEv 175>  / CSelf10[対象スロット]
  | | |■
  | |◇End◇
- | |■Load DB(Var):  CSelf18[座標X] = VarDB[ "基本ｼｽﾃﾑ用変数":37:0 ] (18:ステータス欄表示先　座標X:数値) 
- | |■Load DB(Var):  CSelf19[座標Y] = VarDB[ "基本ｼｽﾃﾑ用変数":38:0 ] (18:ステータス欄表示先　座標Y:数値) 
+ | |■Load DB(Var):  CSelf18[座標X] = VarDB[ "Base System Variables":37:0 ] (18:Status Display End X:Number) 
+ | |■Load DB(Var):  CSelf19[座標Y] = VarDB[ "Base System Variables":38:0 ] (18:Status Display End Y:Number) 
  | |■
  |◇Loop End Point◇◇
  |■Repeat Loop [ 1 ] Times

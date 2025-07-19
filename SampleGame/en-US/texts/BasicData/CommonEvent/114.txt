@@ -262,16 +262,16 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [498][0,0]<0>()()
 [103][0,1]<0>()("ここで変化値を格納する")
-[250][5,4]<0>(18,40,0,65536,1600050)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,41,0,65536,1600051)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,42,0,65536,1600052)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,43,0,65536,1600053)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,44,0,65536,1600054)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,45,0,65536,1600055)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,46,0,65536,1600056)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,47,0,65536,1600057)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,48,0,65536,1600058)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,49,0,65536,1600059)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,40,0,65536,1600050)("","Base System Variables","","")
+[250][5,4]<0>(18,41,0,65536,1600051)("","Base System Variables","","")
+[250][5,4]<0>(18,42,0,65536,1600052)("","Base System Variables","","")
+[250][5,4]<0>(18,43,0,65536,1600053)("","Base System Variables","","")
+[250][5,4]<0>(18,44,0,65536,1600054)("","Base System Variables","","")
+[250][5,4]<0>(18,45,0,65536,1600055)("","Base System Variables","","")
+[250][5,4]<0>(18,46,0,65536,1600056)("","Base System Variables","","")
+[250][5,4]<0>(18,47,0,65536,1600057)("","Base System Variables","","")
+[250][5,4]<0>(18,48,0,65536,1600058)("","Base System Variables","","")
+[250][5,4]<0>(18,49,0,65536,1600059)("","Base System Variables","","")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
@@ -371,15 +371,15 @@ WoditorEvCOMMAND_END
  |■
 ◇Loop End Point◇◇
 ▼ ここで変化値を格納する
-■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":40:0 ] (18:[装備欄]MaxHP変動値:数値) =  CSelf50[MaxHP変化値総計]
-■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":41:0 ] (18:[装備欄]MaxSP変動値:数値) =  CSelf51[MaxSP変化値総計]
-■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":42:0 ] (18:[装備欄]攻撃力変動値:数値) =  CSelf52[攻撃力変化値総計]
-■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":43:0 ] (18:[装備欄]防御力変動値:数値) =  CSelf53[防御力変化値総計]
-■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":44:0 ] (18:[装備欄]特殊攻撃変動値:数値) =  CSelf54[精神攻撃変化値総計]
-■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":45:0 ] (18:[装備欄]特殊防御変動値:数値) =  CSelf55[精神防御変化値総計]
-■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":46:0 ] (18:[装備欄]敏捷性変動値:数値) =  CSelf56[敏捷度変化値総計]
-■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":47:0 ] (18:[装備欄]命中変動値:数値) =  CSelf57[命中率変化値総計]
-■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":48:0 ] (18:[装備欄]回避変動値:数値) =  CSelf58[回避率変化値総計]
-■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":49:0 ] (18:[装備欄]ｸﾘﾃｨｶﾙ変動値:数値) =  CSelf59[ｸﾘﾃｨｶﾙ率変化値総計]
+■Write to DB(Var): VarDB[ "Base System Variables":40:0 ] (18:[Equip] Max HP Change:Number) =  CSelf50[MaxHP変化値総計]
+■Write to DB(Var): VarDB[ "Base System Variables":41:0 ] (18:[Equip] Max SP Change:Number) =  CSelf51[MaxSP変化値総計]
+■Write to DB(Var): VarDB[ "Base System Variables":42:0 ] (18:[Equip] Attack Change:Number) =  CSelf52[攻撃力変化値総計]
+■Write to DB(Var): VarDB[ "Base System Variables":43:0 ] (18:[Equip] Defense Change:Number) =  CSelf53[防御力変化値総計]
+■Write to DB(Var): VarDB[ "Base System Variables":44:0 ] (18:[Equip] Magic Atk Change:Number) =  CSelf54[精神攻撃変化値総計]
+■Write to DB(Var): VarDB[ "Base System Variables":45:0 ] (18:[Equip] Magic Def Change:Number) =  CSelf55[精神防御変化値総計]
+■Write to DB(Var): VarDB[ "Base System Variables":46:0 ] (18:[Equip] Agility Change:Number) =  CSelf56[敏捷度変化値総計]
+■Write to DB(Var): VarDB[ "Base System Variables":47:0 ] (18:[Equip] Accuracy Change:Number) =  CSelf57[命中率変化値総計]
+■Write to DB(Var): VarDB[ "Base System Variables":48:0 ] (18:[Equip] Evasion Change:Number) =  CSelf58[回避率変化値総計]
+■Write to DB(Var): VarDB[ "Base System Variables":49:0 ] (18:[Equip] Critical Rate Change:Number) =  CSelf59[ｸﾘﾃｨｶﾙ率変化値総計]
 ■
 [COMMAND_TEXT_END]

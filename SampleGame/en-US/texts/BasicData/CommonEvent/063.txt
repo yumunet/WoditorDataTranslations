@@ -186,8 +186,8 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()(" ")
 [121][4,0]<0>(1600020,19500,0,0)()
 [103][0,1]<0>()("Ver2.20　座標倍率を縦横別に修正")
-[250][5,4]<0>(18,97,0,69632,1600088)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,98,0,69632,1600089)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,97,0,69632,1600088)("","Base System Variables","","")
+[250][5,4]<0>(18,98,0,69632,1600089)("","Base System Variables","","")
 [250][5,4]<0>(18,0,24,332288,1600009)("","Images/Sounds","","Message Window Base Image")
 [121][4,0]<0>(1600035,0,0,0)()
 [103][0,1]<0>()("メッセージウィンドウの表示位置とサイズを設定")
@@ -421,8 +421,8 @@ WoditorEvCOMMAND_END
 ▼  
 ■Set Variable: CSelf20[基本ピクチャ番号] = 19500 + 0 
 ▼ Ver2.20　座標倍率を縦横別に修正
-■Load DB(Var):  CSelf88[座標倍率X(x10)] = VarDB[ "基本ｼｽﾃﾑ用変数":97:0 ] (18:座標倍率Ｘ[x10]:数値) 
-■Load DB(Var):  CSelf89[座標倍率Y(x10)] = VarDB[ "基本ｼｽﾃﾑ用変数":98:0 ] (18:座標倍率Ｙ[x10]:数値) 
+■Load DB(Var):  CSelf88[座標倍率X(x10)] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
+■Load DB(Var):  CSelf89[座標倍率Y(x10)] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
 ■Load DB(User):  CSelf9[ウィンドウ画像ファイル] = UserDB[ "Images/Sounds":0:"Message Window Base Image" ] (16:Basic Images/Sounds:2) 
 ■Set Variable: CSelf35[ウィンドウ表示中フラグ] = 0 + 0 
 ▼ メッセージウィンドウの表示位置とサイズを設定

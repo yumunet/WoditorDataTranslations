@@ -196,11 +196,11 @@ CSELF_NAME_99=
 COMMAND_NUM=2
 --
 WoditorEvCOMMAND_START
-[250][5,4]<0>(18,33,0,65536,1600000)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,33,0,65536,1600000)("","Base System Variables","","")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":33:0 ] (18:[ｼｽﾃﾑ]セーブ可能？:数値) =  CSelf0[モード]
+■Write to DB(Var): VarDB[ "Base System Variables":33:0 ] (18:[System] Can Save?:Number) =  CSelf0[モード]
 ■
 [COMMAND_TEXT_END]

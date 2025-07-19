@@ -235,13 +235,13 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("固定値を設定")
 [121][4,0]<0>(1600020,15000,0,0)()
 [103][0,1]<0>()("基本パラメータを呼び出し")
-[250][5,4]<0>(18,6,0,69632,1600018)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,5,0,69632,1600019)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,6,0,69632,1600018)("","Base System Variables","","")
+[250][5,4]<0>(18,5,0,69632,1600019)("","Base System Variables","","")
 [250][5,4]<0>(17,0,0,332288,1600008)("","Images/Sounds","","Window Image File")
 [250][5,4]<0>(17,0,0,332288,1600009)("","Images/Sounds","","Cursor Image File")
 [103][0,1]<0>()("Ver2.20　座標倍率を縦横別に修正")
-[250][5,4]<0>(18,97,0,69632,1600088)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<0>(18,98,0,69632,1600089)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<0>(18,97,0,69632,1600088)("","Base System Variables","","")
+[250][5,4]<0>(18,98,0,69632,1600089)("","Base System Variables","","")
 [121][4,0]<0>(1600029,0,0,0)()
 [121][4,0]<0>(1600063,255,0,0)()
 [103][0,1]<0>()("初期化")
@@ -315,15 +315,15 @@ WoditorEvCOMMAND_START
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [179][1,0]<1>(1)()
 [103][0,1]<2>()("基本システム用変数からウィンドウ表示サイズなどを取得")
-[250][5,4]<2>(18,9,0,69632,1600022)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<2>(18,10,0,69632,1600023)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<2>(18,11,0,69632,1600024)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<2>(18,12,0,69632,1600025)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<2>(18,13,0,69632,1600026)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<2>(18,14,0,69632,1600027)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<2>(18,9,0,69632,1600022)("","Base System Variables","","")
+[250][5,4]<2>(18,10,0,69632,1600023)("","Base System Variables","","")
+[250][5,4]<2>(18,11,0,69632,1600024)("","Base System Variables","","")
+[250][5,4]<2>(18,12,0,69632,1600025)("","Base System Variables","","")
+[250][5,4]<2>(18,13,0,69632,1600026)("","Base System Variables","","")
+[250][5,4]<2>(18,14,0,69632,1600027)("","Base System Variables","","")
 [103][0,1]<2>()(" ")
 [103][0,1]<2>()("説明ウィンドウの縦サイズだけは外部から指定可能")
-[250][5,4]<2>(18,16,0,69632,1600033)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<2>(18,16,0,69632,1600033)("","Base System Variables","","")
 [103][0,1]<2>()("数値が0ならデフォルトの値を代入")
 [111][4,0]<2>(1,1600024,0,2)()
 [401][1,0]<2>(1)()
@@ -569,7 +569,7 @@ WoditorEvCOMMAND_START
 [111][4,0]<1>(1,1600001,-1,2)()
 [401][1,0]<1>(1)()
 [106][0,1]<2>()("リセット")
-[250][5,4]<2>(18,15,0,65536,0)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<2>(18,15,0,65536,0)("","Base System Variables","","")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [121][4,0]<1>(1600000,1,0,0)()
@@ -584,7 +584,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [179][1,0]<1>(1)()
 [103][0,1]<2>()("まずカーソル位置が個数よりオーバーしてたら減らす")
-[250][5,4]<2>(18,17,0,69632,1600040)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<2>(18,17,0,69632,1600040)("","Base System Variables","","")
 [111][4,0]<2>(1,1600001,1,1)()
 [401][1,0]<2>(1)()
 [121][4,0]<3>(1600001,1600040,1,5888)()
@@ -595,7 +595,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<2>(1600045,0,0,0)()
 [179][1,0]<2>(1)()
 [121][4,0]<3>(1600010,1600001,1600026,12288)()
-[250][5,4]<3>(18,15,0,69632,1600011)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<3>(18,15,0,69632,1600011)("","Base System Variables","","")
 [121][4,0]<3>(1600012,1600010,1600011,4096)()
 [121][4,0]<3>(1600012,1,0,256)()
 [179][1,0]<3>(0)()
@@ -615,7 +615,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<5>(1)()
 [103][0,1]<6>()("スクロールを下に")
 [121][4,0]<6>(1600045,1600012,1600027,4096)()
-[250][5,4]<6>(18,15,0,65552,1600045)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<6>(18,15,0,65552,1600045)("","Base System Variables","","")
 [179][1,0]<6>(0)()
 [106][0,1]<7>()("＋変化\cself[45] ｽｸﾛｰﾙ\cdb[18:15:0]")
 [0][0,0]<7>()()
@@ -631,7 +631,7 @@ WoditorEvCOMMAND_START
 [111][4,0]<2>(1,1600045,0,2)()
 [401][1,0]<2>(1)()
 [179][1,0]<3>(1)()
-[250][5,4]<4>(18,15,0,69632,1600011)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<4>(18,15,0,69632,1600011)("","Base System Variables","","")
 [121][4,0]<4>(1600010,1600001,1600026,12288)()
 [121][4,0]<4>(1600012,1600010,1600011,4096)()
 [179][1,0]<4>(0)()
@@ -647,8 +647,8 @@ WoditorEvCOMMAND_START
 [111][4,0]<5>(1,1600011,1,1)()
 [401][1,0]<5>(1)()
 [121][4,0]<6>(1600045,1600012,0,0)()
-[250][5,4]<6>(18,15,0,65552,1600012)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<6>(18,15,0,65632,0)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<6>(18,15,0,65552,1600012)("","Base System Variables","","")
+[250][5,4]<6>(18,15,0,65632,0)("","Base System Variables","","")
 [179][1,0]<6>(0)()
 [106][0,1]<7>()("－変化\cself[45] ｽｸﾛｰﾙ\cdb[18:15:0]")
 [0][0,0]<7>()()
@@ -668,7 +668,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<1>()(" ")
 [179][1,0]<1>(1)()
 [103][0,1]<2>()("カーソル位置を算出")
-[250][5,4]<2>(18,15,0,69632,1600043)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<2>(18,15,0,69632,1600043)("","Base System Variables","","")
 [121][4,0]<2>(1600043,1600026,0,768)()
 [121][4,0]<2>(1600043,1600001,1600043,4096)()
 [103][0,1]<2>()("横位置を算出")
@@ -709,8 +709,8 @@ WoditorEvCOMMAND_START
 [103][0,1]<1>()(" ")
 [99][1,0]<1>(0)()
 [103][0,1]<1>()("項目を全再描画")
-[250][5,4]<1>(18,17,0,69632,1600040)("","基本ｼｽﾃﾑ用変数","","")
-[250][5,4]<1>(18,15,0,69632,1600044)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<1>(18,17,0,69632,1600040)("","Base System Variables","","")
+[250][5,4]<1>(18,15,0,69632,1600044)("","Base System Variables","","")
 [103][0,1]<1>()("繰り返し回数を計算")
 [121][4,0]<1>(1600040,1600044,1600026,8704)()
 [121][4,0]<1>(1600040,1600026,1600027,9984)()
@@ -819,15 +819,15 @@ WoditorEvCOMMAND_START
 [111][4,0]<2>(1,1600046,1,2)()
 [401][1,0]<2>(1)()
 [103][0,1]<3>()("表示する項目名を算出")
-[250][5,4]<3>(19,1600043,0,331776,1600007)("","万能ｳｨﾝﾄﾞｳ一時DB","","項目文")
-[250][5,4]<3>(19,1600043,3,331776,1600011)("","万能ｳｨﾝﾄﾞｳ一時DB","","残り個数/消費ポイント")
+[250][5,4]<3>(19,1600043,0,331776,1600007)("","Universal Window Items","","Item Text")
+[250][5,4]<3>(19,1600043,3,331776,1600011)("","Universal Window Items","","Quantity Left/Point Cost")
 [111][4,0]<3>(17,1600011,0,3)()
 [401][1,0]<3>(1)()
 [122][2,1]<4>(1600006,0)("")
-[250][5,4]<4>(19,1600043,5,331792,1600006)("","万能ｳｨﾝﾄﾞｳ一時DB","","付与文字列[後]")
+[250][5,4]<4>(19,1600043,5,331792,1600006)("","Universal Window Items","","Number Suffix")
 [0][0,0]<4>()()
 [420][1,0]<3>(0)()
-[250][5,4]<4>(19,1600043,4,331776,1600006)("","万能ｳｨﾝﾄﾞｳ一時DB","","付与文字列[前]")
+[250][5,4]<4>(19,1600043,4,331776,1600006)("","Universal Window Items","","Number Prefix")
 [111][4,0]<4>(17,1600011,10,4)()
 [401][1,0]<4>(1)()
 [122][2,1]<5>(1600006,256)(" \cself[11]")
@@ -836,7 +836,7 @@ WoditorEvCOMMAND_START
 [122][2,1]<5>(1600006,256)("\cself[11]")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
-[250][5,4]<4>(19,1600043,5,331792,1600006)("","万能ｳｨﾝﾄﾞｳ一時DB","","付与文字列[後]")
+[250][5,4]<4>(19,1600043,5,331792,1600006)("","Universal Window Items","","Number Suffix")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [103][0,1]<3>()("アイテム名だけピクチャ表示して、横幅を得る")
@@ -876,7 +876,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<4>()("この項目の表示色をここで設定")
 [103][0,1]<4>()("選択可能なら白に　選択不能なら紺にしている")
 [121][5,0]<4>(1600053,100,0,65536,2)()
-[250][5,4]<4>(19,1600043,0,331776,1600010)("","万能ｳｨﾝﾄﾞｳ一時DB","","選択可能状態[1=可]")
+[250][5,4]<4>(19,1600043,0,331776,1600010)("","Universal Window Items","","Selectable? [1=Yes]")
 [111][4,0]<4>(1,1600010,0,2)()
 [401][1,0]<4>(1)()
 [121][4,0]<5>(1600053,50,0,0)()
@@ -963,7 +963,7 @@ WoditorEvCOMMAND_START
 [124][4,0]<3>(1600010,16384,1600021,9)()
 [111][4,0]<3>(1,1600010,1,2)()
 [401][1,0]<3>(1)()
-[250][5,4]<4>(19,1600001,0,331776,1600005)("","万能ｳｨﾝﾄﾞｳ一時DB","","説明文")
+[250][5,4]<4>(19,1600001,0,331776,1600005)("","Universal Window Items","","Description")
 [150][2,0]<4>(67,1600021)()
 [150][13,1]<4>(4267808,1600021,0,1,1,-1000000,-1000000,0,0,-1000000,-1000000,0,16777216)("\f[\cself[18]]\space[0]<C>\cself[5]")
 [0][0,0]<4>()()
@@ -976,7 +976,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<2>()("上下の矢印を表示する")
 [179][1,0]<2>(1)()
 [103][0,1]<3>()("上に、見えていないデータがある場合は、上に矢印を表示する")
-[250][5,4]<3>(18,15,0,69632,1600044)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<3>(18,15,0,69632,1600044)("","Base System Variables","","")
 [121][4,0]<3>(1600021,1600020,4,0)()
 [150][2,0]<3>(67,1600021)()
 [111][4,0]<3>(17,1600044,1,1)()
@@ -994,7 +994,7 @@ WoditorEvCOMMAND_START
 [498][0,0]<2>()()
 [179][1,0]<2>(1)()
 [103][0,1]<3>()("全部表示しきれていない場合は、下に矢印を表示する")
-[250][5,4]<3>(18,17,0,69632,1600040)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<3>(18,17,0,69632,1600040)("","Base System Variables","","")
 [121][4,0]<3>(1600010,1600040,1600026,12288)()
 [121][4,0]<3>(1600010,1600027,0,512)()
 [121][4,0]<3>(1600021,1600020,5,0)()
@@ -1015,7 +1015,7 @@ WoditorEvCOMMAND_START
 [498][0,0]<2>()()
 [179][1,0]<2>(1)()
 [103][0,1]<3>()("スクロールバーもどきもつけておく")
-[250][5,4]<3>(18,17,0,69632,1600040)("","基本ｼｽﾃﾑ用変数","","")
+[250][5,4]<3>(18,17,0,69632,1600040)("","Base System Variables","","")
 [103][0,1]<3>()("セルフ10が全縦項目数")
 [121][4,0]<3>(1600010,1600040,1600026,12288)()
 [121][4,0]<3>(1600011,1600040,1600026,16384)()
@@ -1112,13 +1112,13 @@ WoditorEvCOMMAND_END
 ▼ 固定値を設定
 ■Set Variable: CSelf20[基本ピクチャ番号] = 15000 + 0 
 ▼ 基本パラメータを呼び出し
-■Load DB(Var):  CSelf18[ミニフォントサイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":6:0 ] (18:システムミニフォントサイズ:数値) 
-■Load DB(Var):  CSelf19[基本フォントサイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":5:0 ] (18:システム基本フォントサイズ:数値) 
+■Load DB(Var):  CSelf18[ミニフォントサイズ] = VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) 
+■Load DB(Var):  CSelf19[基本フォントサイズ] = VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) 
 ■Load DB(User):  CSelf8[ウィンドウ画像ファイル] = UserDB[ "Images/Sounds":0:"Window Image File" ] (16:Basic Images/Sounds:0) 
 ■Load DB(User):  CSelf9[カーソル画像ファイル] = UserDB[ "Images/Sounds":0:"Cursor Image File" ] (16:Basic Images/Sounds:1) 
 ▼ Ver2.20　座標倍率を縦横別に修正
-■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "基本ｼｽﾃﾑ用変数":97:0 ] (18:座標倍率Ｘ[x10]:数値) 
-■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "基本ｼｽﾃﾑ用変数":98:0 ] (18:座標倍率Ｙ[x10]:数値) 
+■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
+■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
 ■Set Variable: CSelf29[全更新フラグ] = 0 + 0 
 ■Set Variable: CSelf63[ウィンドウ不透明度] = 255 + 0 
 ▼ 初期化
@@ -1192,15 +1192,15 @@ WoditorEvCOMMAND_END
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |■Repeat Loop [ 1 ] Times
  | |▼ 基本システム用変数からウィンドウ表示サイズなどを取得
- | |■Load DB(Var):  CSelf22[表示X] = VarDB[ "基本ｼｽﾃﾑ用変数":9:0 ] (18:万能ウィンドウ表示X:数値) 
- | |■Load DB(Var):  CSelf23[表示Y] = VarDB[ "基本ｼｽﾃﾑ用変数":10:0 ] (18:万能ウィンドウ表示Y:数値) 
- | |■Load DB(Var):  CSelf24[横サイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":11:0 ] (18:万能ウィンドウ横サイズ:数値) 
- | |■Load DB(Var):  CSelf25[縦サイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":12:0 ] (18:万能ウィンドウ縦サイズ:数値) 
- | |■Load DB(Var):  CSelf26[横項目数] = VarDB[ "基本ｼｽﾃﾑ用変数":13:0 ] (18:万能ウィンドウ横項目数:数値) 
- | |■Load DB(Var):  CSelf27[縦項目数] = VarDB[ "基本ｼｽﾃﾑ用変数":14:0 ] (18:万能ウィンドウ縦項目数:数値) 
+ | |■Load DB(Var):  CSelf22[表示X] = VarDB[ "Base System Variables":9:0 ] (18:Universal Window Display X:Number) 
+ | |■Load DB(Var):  CSelf23[表示Y] = VarDB[ "Base System Variables":10:0 ] (18:Universal Window Display Y:Number) 
+ | |■Load DB(Var):  CSelf24[横サイズ] = VarDB[ "Base System Variables":11:0 ] (18:Universal Window Width:Number) 
+ | |■Load DB(Var):  CSelf25[縦サイズ] = VarDB[ "Base System Variables":12:0 ] (18:Universal Window Height:Number) 
+ | |■Load DB(Var):  CSelf26[横項目数] = VarDB[ "Base System Variables":13:0 ] (18:Universal Window Columns:Number) 
+ | |■Load DB(Var):  CSelf27[縦項目数] = VarDB[ "Base System Variables":14:0 ] (18:Universal Window Rows:Number) 
  | |▼  
  | |▼ 説明ウィンドウの縦サイズだけは外部から指定可能
- | |■Load DB(Var):  CSelf33[説明ウィンドウ縦サイズ] = VarDB[ "基本ｼｽﾃﾑ用変数":16:0 ] (18:万能ウィンドウ説明欄縦サイズ:数値) 
+ | |■Load DB(Var):  CSelf33[説明ウィンドウ縦サイズ] = VarDB[ "Base System Variables":16:0 ] (18:Universal Window Description Height:Number) 
  | |▼ 数値が0ならデフォルトの値を代入
  | |■Condition (Number):   [1] CSelf24[横サイズ] ==  0  
  | |-◇Condition:  [1]  [ CSelf24[横サイズ] == 0   ] Case↓
@@ -1446,7 +1446,7 @@ WoditorEvCOMMAND_END
  |■Condition (Number):   [1] CSelf1[カーソル位置] ==  -1  
  |-◇Condition:  [1]  [ CSelf1[カーソル位置] == -1   ] Case↓
  | |■Debug Text: リセット
- | |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":15:0 ] (18:万能ウィンドウ縦スクロール位置:数値) =  0
+ | |■Write to DB(Var): VarDB[ "Base System Variables":15:0 ] (18:Universal Window Vert. Scroll Pos:Number) =  0
  | |■
  |◇End◇
  |■Set Variable: CSelf0[処理モード] = 1 + 0 
@@ -1461,7 +1461,7 @@ WoditorEvCOMMAND_END
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |■Repeat Loop [ 1 ] Times
  | |▼ まずカーソル位置が個数よりオーバーしてたら減らす
- | |■Load DB(Var):  CSelf40[全項目数] = VarDB[ "基本ｼｽﾃﾑ用変数":17:0 ] (18:万能ウィンドウ項目個数:数値) 
+ | |■Load DB(Var):  CSelf40[全項目数] = VarDB[ "Base System Variables":17:0 ] (18:Universal Window Item Count:Number) 
  | |■Condition (Number):   [1] CSelf1[カーソル位置] >=  1  
  | |-◇Condition:  [1]  [ CSelf1[カーソル位置] >= 1   ] Case↓
  | | |■Set Variable: CSelf1[カーソル位置] Upper Bound= CSelf40[全項目数] - 1 
@@ -1472,7 +1472,7 @@ WoditorEvCOMMAND_END
  | |■Set Variable: CSelf45[スクロール変化量] = 0 + 0 
  | |■Repeat Loop [ 1 ] Times
  | | |■Set Variable: CSelf10[一時変数A] = CSelf1[カーソル位置] / CSelf26[横項目数] 
- | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "基本ｼｽﾃﾑ用変数":15:0 ] (18:万能ウィンドウ縦スクロール位置:数値) 
+ | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "Base System Variables":15:0 ] (18:Universal Window Vert. Scroll Pos:Number) 
  | | |■Set Variable: CSelf12[一時変数C] = CSelf10[一時変数A] - CSelf11[一時変数B] 
  | | |■Set Variable: CSelf12[一時変数C] += 1 + 0 
  | | |■Repeat Loop [ 0 ] Times
@@ -1492,7 +1492,7 @@ WoditorEvCOMMAND_END
  | | | | |-◇Condition:  [1]  [ CSelf13[一時変数D] > CSelf11[一時変数B]   ] Case↓
  | | | | | |▼ スクロールを下に
  | | | | | |■Set Variable: CSelf45[スクロール変化量] = CSelf12[一時変数C] - CSelf27[縦項目数] 
- | | | | | |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":15:0 ] (18:万能ウィンドウ縦スクロール位置:数値) +=  CSelf45[スクロール変化量]
+ | | | | | |■Write to DB(Var): VarDB[ "Base System Variables":15:0 ] (18:Universal Window Vert. Scroll Pos:Number) +=  CSelf45[スクロール変化量]
  | | | | | |■Repeat Loop [ 0 ] Times
  | | | | | | |■Debug Text: ＋変化\cself[45] ｽｸﾛｰﾙ\cdb[18:15:0]
  | | | | | | |■
@@ -1508,7 +1508,7 @@ WoditorEvCOMMAND_END
  | |■Condition (Number):   [1] CSelf45[スクロール変化量] ==  0  
  | |-◇Condition:  [1]  [ CSelf45[スクロール変化量] == 0   ] Case↓
  | | |■Repeat Loop [ 1 ] Times
- | | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "基本ｼｽﾃﾑ用変数":15:0 ] (18:万能ウィンドウ縦スクロール位置:数値) 
+ | | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "Base System Variables":15:0 ] (18:Universal Window Vert. Scroll Pos:Number) 
  | | | |■Set Variable: CSelf10[一時変数A] = CSelf1[カーソル位置] / CSelf26[横項目数] 
  | | | |■Set Variable: CSelf12[一時変数C] = CSelf10[一時変数A] - CSelf11[一時変数B] 
  | | | |■Repeat Loop [ 0 ] Times
@@ -1524,8 +1524,8 @@ WoditorEvCOMMAND_END
  | | | | |■Condition (Number):   [1] CSelf11[一時変数B] >=  1  
  | | | | |-◇Condition:  [1]  [ CSelf11[一時変数B] >= 1   ] Case↓
  | | | | | |■Set Variable: CSelf45[スクロール変化量] = CSelf12[一時変数C] + 0 
- | | | | | |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":15:0 ] (18:万能ウィンドウ縦スクロール位置:数値) +=  CSelf12[一時変数C]
- | | | | | |■Write to DB(Var): VarDB[ "基本ｼｽﾃﾑ用変数":15:0 ] (18:万能ウィンドウ縦スクロール位置:数値) Lower Bound  0
+ | | | | | |■Write to DB(Var): VarDB[ "Base System Variables":15:0 ] (18:Universal Window Vert. Scroll Pos:Number) +=  CSelf12[一時変数C]
+ | | | | | |■Write to DB(Var): VarDB[ "Base System Variables":15:0 ] (18:Universal Window Vert. Scroll Pos:Number) Lower Bound  0
  | | | | | |■Repeat Loop [ 0 ] Times
  | | | | | | |■Debug Text: －変化\cself[45] ｽｸﾛｰﾙ\cdb[18:15:0]
  | | | | | | |■
@@ -1545,7 +1545,7 @@ WoditorEvCOMMAND_END
  |▼  
  |■Repeat Loop [ 1 ] Times
  | |▼ カーソル位置を算出
- | |■Load DB(Var):  CSelf43[処理中個数] = VarDB[ "基本ｼｽﾃﾑ用変数":15:0 ] (18:万能ウィンドウ縦スクロール位置:数値) 
+ | |■Load DB(Var):  CSelf43[処理中個数] = VarDB[ "Base System Variables":15:0 ] (18:Universal Window Vert. Scroll Pos:Number) 
  | |■Set Variable: CSelf43[処理中個数] *= CSelf26[横項目数] + 0 
  | |■Set Variable: CSelf43[処理中個数] = CSelf1[カーソル位置] - CSelf43[処理中個数] 
  | |▼ 横位置を算出
@@ -1586,8 +1586,8 @@ WoditorEvCOMMAND_END
  |▼  
  |■ Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
  |▼ 項目を全再描画
- |■Load DB(Var):  CSelf40[全項目数] = VarDB[ "基本ｼｽﾃﾑ用変数":17:0 ] (18:万能ウィンドウ項目個数:数値) 
- |■Load DB(Var):  CSelf44[スクロール位置] = VarDB[ "基本ｼｽﾃﾑ用変数":15:0 ] (18:万能ウィンドウ縦スクロール位置:数値) 
+ |■Load DB(Var):  CSelf40[全項目数] = VarDB[ "Base System Variables":17:0 ] (18:Universal Window Item Count:Number) 
+ |■Load DB(Var):  CSelf44[スクロール位置] = VarDB[ "Base System Variables":15:0 ] (18:Universal Window Vert. Scroll Pos:Number) 
  |▼ 繰り返し回数を計算
  |■Set Variable: CSelf40[全項目数] -= CSelf44[スクロール位置] * CSelf26[横項目数] 
  |■Set Variable: CSelf40[全項目数] Upper Bound= CSelf26[横項目数] * CSelf27[縦項目数] 
@@ -1696,15 +1696,15 @@ WoditorEvCOMMAND_END
  | |■Condition (Number):   [1] CSelf46[単体項目表示フラグ] ==  1  
  | |-◇Condition:  [1]  [ CSelf46[単体項目表示フラグ] == 1   ] Case↓
  | | |▼ 表示する項目名を算出
- | | |■Load DB(Var):  CSelf7[表示項目名] = VarDB[ "万能ｳｨﾝﾄﾞｳ一時DB":CSelf43[処理中個数]:"項目文" ] (19:-:0) 
- | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "万能ｳｨﾝﾄﾞｳ一時DB":CSelf43[処理中個数]:"残り個数/消費ポイント" ] (19:-:3) 
+ | | |■Load DB(Var):  CSelf7[表示項目名] = VarDB[ "Universal Window Items":CSelf43[処理中個数]:"Item Text" ] (19:-:0) 
+ | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "Universal Window Items":CSelf43[処理中個数]:"Quantity Left/Point Cost" ] (19:-:3) 
  | | |■Condition (Number):   [1] CSelf11[一時変数B] <=  0  
  | | |-◇Condition:  [1]  [ CSelf11[一時変数B] <= 0   ] Case↓
  | | | |■Set String: CSelf6[付与文字列] = ""
- | | | |■Load DB(Var):  CSelf6[付与文字列] += VarDB[ "万能ｳｨﾝﾄﾞｳ一時DB":CSelf43[処理中個数]:"付与文字列[後]" ] (19:-:5) 
+ | | | |■Load DB(Var):  CSelf6[付与文字列] += VarDB[ "Universal Window Items":CSelf43[処理中個数]:"Number Suffix" ] (19:-:5) 
  | | | |■
  | | |-◇Else
- | | | |■Load DB(Var):  CSelf6[付与文字列] = VarDB[ "万能ｳｨﾝﾄﾞｳ一時DB":CSelf43[処理中個数]:"付与文字列[前]" ] (19:-:4) 
+ | | | |■Load DB(Var):  CSelf6[付与文字列] = VarDB[ "Universal Window Items":CSelf43[処理中個数]:"Number Prefix" ] (19:-:4) 
  | | | |■Condition (Number):   [1] CSelf11[一時変数B] <  10  
  | | | |-◇Condition:  [1]  [ CSelf11[一時変数B] < 10   ] Case↓
  | | | | |■Set String: CSelf6[付与文字列] += " \cself[11]"
@@ -1713,7 +1713,7 @@ WoditorEvCOMMAND_END
  | | | | |■Set String: CSelf6[付与文字列] += "\cself[11]"
  | | | | |■
  | | | |◇End◇
- | | | |■Load DB(Var):  CSelf6[付与文字列] += VarDB[ "万能ｳｨﾝﾄﾞｳ一時DB":CSelf43[処理中個数]:"付与文字列[後]" ] (19:-:5) 
+ | | | |■Load DB(Var):  CSelf6[付与文字列] += VarDB[ "Universal Window Items":CSelf43[処理中個数]:"Number Suffix" ] (19:-:5) 
  | | | |■
  | | |◇End◇
  | | |▼ アイテム名だけピクチャ表示して、横幅を得る
@@ -1753,7 +1753,7 @@ WoditorEvCOMMAND_END
  | | | |▼ この項目の表示色をここで設定
  | | | |▼ 選択可能なら白に　選択不能なら紺にしている
  | | | |■Set Variable: CSelf53[色指定R] to CSelf55[色指定B] = 100 + 0 
- | | | |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "万能ｳｨﾝﾄﾞｳ一時DB":CSelf43[処理中個数]:"選択可能状態[1=可]" ] (19:-:2) 
+ | | | |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "Universal Window Items":CSelf43[処理中個数]:"Selectable? [1=Yes]" ] (19:-:2) 
  | | | |■Condition (Number):   [1] CSelf10[一時変数A] ==  0  
  | | | |-◇Condition:  [1]  [ CSelf10[一時変数A] == 0   ] Case↓
  | | | | |■Set Variable: CSelf53[色指定R] = 50 + 0 
@@ -1840,7 +1840,7 @@ WoditorEvCOMMAND_END
  | | |■Set Variable+: CSelf10[一時変数A] = Picture:CSelf21[一時ピクチャ番号] 's Picture In Use? [1=YES]
  | | |■Condition (Number):   [1] CSelf10[一時変数A] ==  1  
  | | |-◇Condition:  [1]  [ CSelf10[一時変数A] == 1   ] Case↓
- | | | |■Load DB(Var):  CSelf5[説明文] = VarDB[ "万能ｳｨﾝﾄﾞｳ一時DB":CSelf1[カーソル位置]:"説明文" ] (19:-:6) 
+ | | | |■Load DB(Var):  CSelf5[説明文] = VarDB[ "Universal Window Items":CSelf1[カーソル位置]:"Description" ] (19:-:6) 
  | | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
  | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] String[\f[\cself[18]]\s] Relative X:0 Y:0 / 0(0)Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
  | | | |■
@@ -1853,7 +1853,7 @@ WoditorEvCOMMAND_END
  | |▼ 上下の矢印を表示する
  | |■Repeat Loop [ 1 ] Times
  | | |▼ 上に、見えていないデータがある場合は、上に矢印を表示する
- | | |■Load DB(Var):  CSelf44[スクロール位置] = VarDB[ "基本ｼｽﾃﾑ用変数":15:0 ] (18:万能ウィンドウ縦スクロール位置:数値) 
+ | | |■Load DB(Var):  CSelf44[スクロール位置] = VarDB[ "Base System Variables":15:0 ] (18:Universal Window Vert. Scroll Pos:Number) 
  | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 4 
  | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
  | | |■Condition (Number):   [1] CSelf44[スクロール位置] >=  1  
@@ -1871,7 +1871,7 @@ WoditorEvCOMMAND_END
  | |◇Loop End Point◇◇
  | |■Repeat Loop [ 1 ] Times
  | | |▼ 全部表示しきれていない場合は、下に矢印を表示する
- | | |■Load DB(Var):  CSelf40[全項目数] = VarDB[ "基本ｼｽﾃﾑ用変数":17:0 ] (18:万能ウィンドウ項目個数:数値) 
+ | | |■Load DB(Var):  CSelf40[全項目数] = VarDB[ "Base System Variables":17:0 ] (18:Universal Window Item Count:Number) 
  | | |■Set Variable: CSelf10[一時変数A] = CSelf40[全項目数] / CSelf26[横項目数] 
  | | |■Set Variable: CSelf10[一時変数A] -= CSelf27[縦項目数] + 0 
  | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 5 
@@ -1892,7 +1892,7 @@ WoditorEvCOMMAND_END
  | |◇Loop End Point◇◇
  | |■Repeat Loop [ 1 ] Times
  | | |▼ スクロールバーもどきもつけておく
- | | |■Load DB(Var):  CSelf40[全項目数] = VarDB[ "基本ｼｽﾃﾑ用変数":17:0 ] (18:万能ウィンドウ項目個数:数値) 
+ | | |■Load DB(Var):  CSelf40[全項目数] = VarDB[ "Base System Variables":17:0 ] (18:Universal Window Item Count:Number) 
  | | |▼ セルフ10が全縦項目数
  | | |■Set Variable: CSelf10[一時変数A] = CSelf40[全項目数] / CSelf26[横項目数] 
  | | |■Set Variable: CSelf11[一時変数B] = CSelf40[全項目数] % CSelf26[横項目数] 

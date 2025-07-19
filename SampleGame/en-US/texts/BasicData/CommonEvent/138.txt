@@ -186,7 +186,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<0>()()
 [112][2,4]<0>(1,270035465)("","","","")
 [401][1,0]<0>(1)()
-[250][5,4]<1>(11,1600000,0,331776,1600008)("","×┏ 戦闘一時ステータス[基]","","キャラ名")
+[250][5,4]<1>(11,1600000,0,331776,1600008)("","×┏Battle Temp Status","","Character Name")
 [122][2,1]<1>(1600009,0)("\cself[8]\cself[9]")
 [300][4,1]<1>(0,17,0,1600009)("X[戦]戦闘メッセージ表示")
 [0][0,0]<1>()()
@@ -214,7 +214,7 @@ WoditorEvCOMMAND_END
 ◇End◇
 ■Condition (String):   [1] CSelf9[状態変化文章] is not equal to ""
 -◇Condition:  [1] [ CSelf9[状態変化文章] is not equal to "" ] Case↓
- |■Load DB(Var):  CSelf8[キャラ名] = VarDB[ "×┏ 戦闘一時ステータス[基]":CSelf0[対象スロット]:"キャラ名" ] (10:-:0) 
+ |■Load DB(Var):  CSelf8[キャラ名] = VarDB[ "×┏Battle Temp Status":CSelf0[対象スロット]:"Character Name" ] (10:-:0) 
  |■Set String: CSelf9[状態変化文章] = "\cself[8]\cself[9]"
  |■Call Event [Name]: ["X[戦]戦闘メッセージ表示"] <CommonEv 182>  / 0:表示→自動削除 / CSelf9[状態変化文章]
  |■
