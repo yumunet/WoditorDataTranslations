@@ -99,7 +99,7 @@ WoditorEvCOMMAND_END
  |■Set Variable: This Ev Self0 = -255 + 0 
  |■Repeat Loop [ 18 ] Times
  | |■Set Variable: This Ev Self0 += 30 + 0 
- | |■Sound: SE0[[ｼｽﾃﾑ]決定音] (0 Channel) Play / Delay: 0 Frames / Panning: This Ev Self0
+ | |■Sound: SE0[[System] Confirm] (0 Channel) Play / Delay: 0 Frames / Panning: This Ev Self0
  | |■Set Variable: This Ev Self1 = This Ev Self0 + 255 
  | |■Set Variable: [Real] This Ev Self1 *= 6 / 10 
  | |■Picture Show: 12 [Center] String[<C>Sound's Posit] X:This Ev Self1 Y:110 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
@@ -108,7 +108,7 @@ WoditorEvCOMMAND_END
  |◇Loop End Point◇◇
  |■Repeat Loop [ 18 ] Times
  | |■Set Variable: This Ev Self0 -= 30 + 0 
- | |■Sound: SE0[[ｼｽﾃﾑ]決定音] (0 Channel) Play / Delay: 0 Frames / Panning: This Ev Self0
+ | |■Sound: SE0[[System] Confirm] (0 Channel) Play / Delay: 0 Frames / Panning: This Ev Self0
  | |■Set Variable: This Ev Self1 = This Ev Self0 + 255 
  | |■Set Variable: [Real] This Ev Self1 *= 6 / 10 
  | |■Picture Show: 12 [Center] String[<C>Sound's Posit] X:This Ev Self1 Y:110 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
@@ -117,7 +117,7 @@ WoditorEvCOMMAND_END
  |◇Loop End Point◇◇
  |■Repeat Loop [ 18 ] Times
  | |■Set Variable: This Ev Self0 += 30 + 0 
- | |■Sound: SE0[[ｼｽﾃﾑ]決定音] (0 Channel) Play / Delay: 0 Frames / Panning: This Ev Self0
+ | |■Sound: SE0[[System] Confirm] (0 Channel) Play / Delay: 0 Frames / Panning: This Ev Self0
  | |■Set Variable: This Ev Self1 = This Ev Self0 + 255 
  | |■Set Variable: [Real] This Ev Self1 *= 6 / 10 
  | |■Picture Show: 12 [Center] String[<C>Sound's Posit] X:This Ev Self1 Y:110 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
@@ -126,7 +126,7 @@ WoditorEvCOMMAND_END
  |◇Loop End Point◇◇
  |■Repeat Loop [ 18 ] Times
  | |■Set Variable: This Ev Self0 -= 30 + 0 
- | |■Sound: SE0[[ｼｽﾃﾑ]決定音] (0 Channel) Play / Delay: 0 Frames / Panning: This Ev Self0
+ | |■Sound: SE0[[System] Confirm] (0 Channel) Play / Delay: 0 Frames / Panning: This Ev Self0
  | |■Set Variable: This Ev Self1 = This Ev Self0 + 255 
  | |■Set Variable: [Real] This Ev Self1 *= 6 / 10 
  | |■Picture Show: 12 [Center] String[<C>Sound's Posit] X:This Ev Self1 Y:110 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]

@@ -428,7 +428,7 @@ WoditorEvCOMMAND_END
  |▼ 最新セーブデータ番号を毎回System.savから取得　（System.savの通常変数0番を最終セーブデータ番号として使用）
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |■Set String: CSelf5 = "Save/System.sav"
- |■Read Save Data:  CSelf20[一時保存コード] = Save Data [CSelf5]'s V0[[サンプルゲーム]コック出現]
+ |■Read Save Data:  CSelf20[一時保存コード] = Save Data [CSelf5]'s V0[[Sample Game] Cook Appears]
  |■Set Variable: Sys25:Current Save Data Number (0+) = CSelf20[一時保存コード] + 0 
  |■
 ◇Loop End Point◇◇
@@ -637,7 +637,7 @@ WoditorEvCOMMAND_END
  |▼ 最新セーブデータ番号をSystem.savから取得　（System.savの通常変数0番を最終セーブデータ番号として使用）
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |■Set String: CSelf5 = "Save/System.sav"
- |■Read Save Data:  CSelf20[一時保存コード] = Save Data [CSelf5]'s V0[[サンプルゲーム]コック出現]
+ |■Read Save Data:  CSelf20[一時保存コード] = Save Data [CSelf5]'s V0[[Sample Game] Cook Appears]
  |■Set Variable: Sys25:Current Save Data Number (0+) = CSelf20[一時保存コード] + 0 
  |■
 ◇Loop End Point◇◇

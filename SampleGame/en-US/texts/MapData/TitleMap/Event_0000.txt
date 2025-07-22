@@ -207,7 +207,7 @@ WoditorEvCOMMAND_END
  | |■Show Message:Wolfarl\n  Now, let's start our little adventure!
  | |■Effect Map: [Zoom] Center X 160 / Center Y 120 / 100%  [10]Frames
  | |■Wait: 10 Frames
- | |■Sound: SE0[[ｼｽﾃﾑ]決定音] (0 Channel) Play / Delay: 0 Frames
+ | |■Sound: SE0[[System] Confirm] (0 Channel) Play / Delay: 0 Frames
  | |■Wait: 10 Frames
  | |■Show Message:* Controls\n  \c[1]Z, Space, or Enter\c[0]: Confirm\n  \c[1]X, ESC\c[0]: Cancel
  | |▼ End of opening. You can delete up to here.

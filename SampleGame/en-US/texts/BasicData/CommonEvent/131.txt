@@ -459,7 +459,7 @@ WoditorEvCOMMAND_END
  | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 8:セーブ音
  | | |■Wait: 16 Frames
  | | |■Set String: CSelf5 = "Save/System.sav"
- | | |■Write to Save Data: Save Data [CSelf5]'s V0[[サンプルゲーム]コック出現] =  CSelf12[対象データ番号]
+ | | |■Write to Save Data: Save Data [CSelf5]'s V0[[Sample Game] Cook Appears] =  CSelf12[対象データ番号]
  | | |■Repeat Loop [ 1 ] Times
  | | | |▼ Ver3.30修正　文字列でセーブデータ名を指定するように
  | | | |▼ 文字列変数を指定してセーブするとそのファイル名で保存が可能です
@@ -528,7 +528,7 @@ WoditorEvCOMMAND_END
  | | | |■Repeat Loop [ 1 ] Times
  | | | | |▼ 起動時の読み込みセーブ番号をシステムデータに記憶させる（文字列のファイル名で保存すると読み込みセーブ番号が0になるため）
  | | | | |■Set String: CSelf6 = "Save/System.sav"
- | | | | |■Write to Save Data: Save Data [CSelf6]'s V0[[サンプルゲーム]コック出現] =  CSelf12[対象データ番号]
+ | | | | |■Write to Save Data: Save Data [CSelf6]'s V0[[Sample Game] Cook Appears] =  CSelf12[対象データ番号]
  | | | | |■
  | | | |◇Loop End Point◇◇
  | | | |▼ 文字列ファイル名でロード

@@ -9,13 +9,13 @@ DATATYPE_3=1002
 NUMDATA_TYPE_NUM=3
 STRDATA_TYPE_NUM=1
 DATA_NUM=6
-TYPENAME=BGSリスト
+TYPENAME=BGS List
 ITEMNAME_NUM=4
-ITEMNAME0=ファイル名
-ITEMNAME1=再生音量[%]
-ITEMNAME2=再生周波数[%]
-ITEMNAME3=ループ開始位置(ms)
-MEMO=音量や再生周波数に<<\n>>0を入れておくと、<<\n>>自動で100％になります
+ITEMNAME0=Filename
+ITEMNAME1=Playback Volume [%]
+ITEMNAME2=Playback Frequency [%]
+ITEMNAME3=Loop Start Point (ms)
+MEMO=If Volume or Frequency<<\n>>is 0, it will automatically<<\n>>become 100(%).<<\n>>
 ITEMTYPE_NUM=100
 ITEM_LOADTYPE_0=1
 ITEM_LOADTYPE_1=0
@@ -140,7 +140,7 @@ DEFAULT_VAL_1=0
 DEFAULT_VAL_2=0
 DEFAULT_VAL_3=0
 <<--CSV_START-->>
-"ファイル名","再生音量[%]","再生周波数[%]","ループ開始位置(ms)",
+"Filename","Playback Volume [%]","Playback Frequency [%]","Loop Start Point (ms)",
 "",0,0,0,<<!--DATANAME--!>>,
 "",0,0,0,<<!--DATANAME--!>>,
 "",0,0,0,<<!--DATANAME--!>>,

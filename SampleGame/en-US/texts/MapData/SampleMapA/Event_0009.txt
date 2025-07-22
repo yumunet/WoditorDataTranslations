@@ -96,12 +96,12 @@ WoditorEvCOMMAND_END
 -◇Condition:  [1]  [ This Ev Self1 == 0   ] Case↓
  |▼ If the player hasn't learned Attack All (if it's 0),
  |▼ display the “Eat here” choice.
- |■Set String: S0[[サンプル]一時文字列] = "Eat here (Lean a skill)"
+ |■Set String: S0[[Sample] Temporary String] = "Eat here (Lean a skill)"
  |■
 -◇Condition:  [2]  [ This Ev Self1 >= 1   ] Case↓
  |▼ If the player has learned it (1 or more), don't display the choice.
  |▼ (If the string is blank, it won't be displayed in the choices.)
- |■Set String: S0[[サンプル]一時文字列] = ""
+ |■Set String: S0[[Sample] Temporary String] = ""
  |■
 ◇End◇
 ▼ Display choices.

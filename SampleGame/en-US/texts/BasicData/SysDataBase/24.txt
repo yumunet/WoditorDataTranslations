@@ -6,9 +6,9 @@ DATATYPE_0=2000
 NUMDATA_TYPE_NUM=0
 STRDATA_TYPE_NUM=1
 DATA_NUM=12
-TYPENAME=顔グラフィック名
+TYPENAME=Face Images
 ITEMNAME_NUM=1
-ITEMNAME0=顔画像ファイル
+ITEMNAME0=Face Image Filename
 MEMO=
 ITEMTYPE_NUM=100
 ITEM_LOADTYPE_0=1
@@ -122,9 +122,9 @@ CHOICE_VAL_0_0=0
 DEFAULT_VAL_NUM=1
 DEFAULT_VAL_0=0
 <<--CSV_START-->>
-"顔画像ファイル",
-"",<<!--DATANAME--!>>ウィンドウ表示なし,
-"",<<!--DATANAME--!>>ウィンドウのみ,
+"Face Image Filename",
+"",<<!--DATANAME--!>>No Window,
+"",<<!--DATANAME--!>>Window Only,
 "Picture/FaceGraphic_Edy.png",<<!--DATANAME--!>>Edy,
 "Picture/FaceGraphic_Yuichi.png",<<!--DATANAME--!>>Yuichi,
 "Picture/FaceGraphic_Wolfarl.png",<<!--DATANAME--!>>Wolfarl,

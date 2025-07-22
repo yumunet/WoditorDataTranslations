@@ -5,7 +5,7 @@ ITEM_NUM=0
 NUMDATA_TYPE_NUM=0
 STRDATA_TYPE_NUM=0
 DATA_NUM=10
-TYPENAME=文字列変数名
+TYPENAME=String Variables
 ITEMNAME_NUM=0
 MEMO=
 ITEMTYPE_NUM=100
@@ -115,7 +115,7 @@ CHOICE_VAL_NUM=0
 DEFAULT_VAL_NUM=0
 <<--CSV_START-->>
 
-<<!--DATANAME--!>>[サンプル]一時文字列,
+<<!--DATANAME--!>>[Sample] Temporary String,
 <<!--DATANAME--!>>,
 <<!--DATANAME--!>>,
 <<!--DATANAME--!>>,

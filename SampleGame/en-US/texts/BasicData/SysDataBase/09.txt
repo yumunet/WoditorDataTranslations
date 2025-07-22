@@ -6,10 +6,10 @@ DATATYPE_0=2000
 NUMDATA_TYPE_NUM=0
 STRDATA_TYPE_NUM=1
 DATA_NUM=4
-TYPENAME=ｷｬﾗ影ｸﾞﾗﾌｨｯｸ名
+TYPENAME=Shadow Images
 ITEMNAME_NUM=1
-ITEMNAME0=読込ファイル名
-MEMO=マップイベントで設定できる、<<\n>>「影グラフィック」の指定<<\n>><<\n>>影番号は「255」番まで<<\n>>使用可能です。<<\n>>(それ以上設定しても<<\n>>　使用できません)
+ITEMNAME0=Filename
+MEMO=Shadow images can be<<\n>>set for Map Events.<<\n>><<\n>>Up to 255 Data can be used.<<\n>>(More than that can't be<<\n>> used.)<<\n>>
 ITEMTYPE_NUM=100
 ITEM_LOADTYPE_0=1
 ITEM_LOADTYPE_1=0
@@ -122,9 +122,9 @@ CHOICE_VAL_0_0=0
 DEFAULT_VAL_NUM=1
 DEFAULT_VAL_0=0
 <<--CSV_START-->>
-"読込ファイル名",
-"SystemFile/CharaShade_8dir.png",<<!--DATANAME--!>>人間・通常サイズ影,
-"",<<!--DATANAME--!>>影なし,
+"Filename",
+"SystemFile/CharaShade_8dir.png",<<!--DATANAME--!>>Human/Normal Shadow,
+"",<<!--DATANAME--!>>No Shadow,
 "",<<!--DATANAME--!>>,
 "",<<!--DATANAME--!>>,
 

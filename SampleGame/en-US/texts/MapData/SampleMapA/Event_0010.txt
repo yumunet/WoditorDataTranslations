@@ -55,11 +55,11 @@ WoditorEvCOMMAND_END
 [COMMAND_TEXT_START]
 ▼ When Eddy joins the party, V0 is set to 1.
 ▼ Then, the message of this sign changes.
-■Condition (Number):   [1] V0[[サンプルゲーム]コック出現] ==  0  /  [2] V0[[サンプルゲーム]コック出現] ==  1  
--◇Condition:  [1]  [ V0[[サンプルゲーム]コック出現] == 0   ] Case↓
+■Condition (Number):   [1] V0[[Sample Game] Cook Appears] ==  0  /  [2] V0[[Sample Game] Cook Appears] ==  1  
+-◇Condition:  [1]  [ V0[[Sample Game] Cook Appears] == 0   ] Case↓
  |■Show Message:"Chickens-Love-It-Too Bakery"\nStill setting up.
  |■
--◇Condition:  [2]  [ V0[[サンプルゲーム]コック出現] == 1   ] Case↓
+-◇Condition:  [2]  [ V0[[Sample Game] Cook Appears] == 1   ] Case↓
  |■Show Message:"Chickens-Love-It-Too Bakery"\nNow open!\nBuy as much as you like!
  |■
 ◇End◇

@@ -8,12 +8,12 @@ DATATYPE_2=1002
 NUMDATA_TYPE_NUM=3
 STRDATA_TYPE_NUM=0
 DATA_NUM=30
-TYPENAME=文字色
+TYPENAME=Text Colors
 ITEMNAME_NUM=3
-ITEMNAME0=赤(0-255)
-ITEMNAME1=緑(0-255)
-ITEMNAME2=青(0-255)
-MEMO=10番～13番は<<\n>>キーボード入力時の<<\n>>色指定となるので<<\n>>名前をいじらないように<<\n>><<\n>>14番以降は使用可
+ITEMNAME0=Red (0-255)
+ITEMNAME1=Green (0-255)
+ITEMNAME2=Blue (0-255)
+MEMO=10 to 13 are the colors for<<\n>>keyboard input, so don't<<\n>>change their names.<<\n>><<\n>>14 and higher can be used.<<\n>>
 ITEMTYPE_NUM=100
 ITEM_LOADTYPE_0=0
 ITEM_LOADTYPE_1=0
@@ -132,21 +132,21 @@ DEFAULT_VAL_0=0
 DEFAULT_VAL_1=0
 DEFAULT_VAL_2=0
 <<--CSV_START-->>
-"赤(0-255)","緑(0-255)","青(0-255)",
-255,255,255,<<!--DATANAME--!>>デフォルト色,
-130,130,210,<<!--DATANAME--!>>青色,
-210,130,130,<<!--DATANAME--!>>赤色,
-130,230,130,<<!--DATANAME--!>>緑色,
+"Red (0-255)","Green (0-255)","Blue (0-255)",
+255,255,255,<<!--DATANAME--!>>Default,
+130,130,210,<<!--DATANAME--!>>Blue,
+210,130,130,<<!--DATANAME--!>>Red,
+130,230,130,<<!--DATANAME--!>>Green,
 0,0,0,<<!--DATANAME--!>>,
 0,0,0,<<!--DATANAME--!>>,
 0,0,0,<<!--DATANAME--!>>,
 0,0,0,<<!--DATANAME--!>>,
 0,0,0,<<!--DATANAME--!>>,
 0,0,0,<<!--DATANAME--!>>,
-255,255,255,<<!--DATANAME--!>>[Sys]入力文字色,
-170,170,200,<<!--DATANAME--!>>[Sys]変換中背景,
-255,100,100,<<!--DATANAME--!>>[Sys]入力下線,
-255,255,255,<<!--DATANAME--!>>[Sys]ルビ用文字色,
+255,255,255,<<!--DATANAME--!>>[Sys] KB Input Text,
+170,170,200,<<!--DATANAME--!>>[Sys] KB Input IME Background,
+255,100,100,<<!--DATANAME--!>>[Sys] KB Input IME Underline,
+255,255,255,<<!--DATANAME--!>>[Sys] Ruby Text,
 0,0,0,<<!--DATANAME--!>>,
 0,0,0,<<!--DATANAME--!>>,
 0,0,0,<<!--DATANAME--!>>,

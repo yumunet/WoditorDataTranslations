@@ -154,9 +154,9 @@ WoditorEvCOMMAND_END
  |■
 -◇Case: Choice [4] Keyboard text input                      ↓
  |■Show Message:WOLF RPG Editor even lets you input text with the\nkeyboard! Press Enter when you are done!
- |■Set String: S0[[サンプル]一時文字列] = Keyboard Input 30Bytes [Cancellable] 
- |■Condition (String):   [1] S0[[サンプル]一時文字列] is equal to ""
- |-◇Condition:  [1] [ S0[[サンプル]一時文字列] is equal to "" ] Case↓
+ |■Set String: S0[[Sample] Temporary String] = Keyboard Input 30Bytes [Cancellable] 
+ |■Condition (String):   [1] S0[[Sample] Temporary String] is equal to ""
+ |-◇Condition:  [1] [ S0[[Sample] Temporary String] is equal to "" ] Case↓
  | |■Show Message:You cancelled it.
  | |■
  |-◇Else

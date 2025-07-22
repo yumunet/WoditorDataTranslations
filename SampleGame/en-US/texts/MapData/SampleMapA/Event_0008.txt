@@ -82,7 +82,7 @@ WoditorEvCOMMAND_END
  |■Sound: SE File[SE/System_Get2_wolf.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
  |■Show Message:@2\nP. G. Edy has joined the party!
  |▼ Set the Cook Appearance variable to 1.
- |■Set Variable: V0[[サンプルゲーム]コック出現] = 1 + 0 
+ |■Set Variable: V0[[Sample Game] Cook Appears] = 1 + 0 
  |■
 ◇End◇
 ■

@@ -89,7 +89,7 @@ WoditorEvCOMMAND_END
  |■Show Message:"Demonstrate with your strength that you are suited\nto use the WOLF RPG Editor!"
  |■Show Message:"See if you can defeat me within 10 turns!"
  |■Wait: 10 Frames
- |■Call Event: This Ev Self1 = Common 28: [ ◆バトルの発生 ] / 34:Boss [10 Turns] / 0:逃走可能 / 1:イベント続行 / 4:ボスBGM
+ |■Call Event: This Ev Self1 = Common 28: [ ◆バトルの発生 ] / 34:Boss [10 Turns] / 0:逃走可能 / 1:イベント続行 / 4:Boss BGM
  |■Condition (Number):   [1] This Ev Self1 ==  1  /  [2] This Ev Self1 <=  0  
  |-◇Condition:  [1]  [ This Ev Self1 == 1   ] Case↓
  | |▼ It's 1 if the player won the battle, so execute the commands below.

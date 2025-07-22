@@ -65,12 +65,12 @@ WoditorEvCOMMAND_END
 ■Show Message:I'm a witch.\nDo you want to listen to the synthetic voice added in\nversion 3.6?
 ■Show Choice:/ [1] Hear Japanese voice / [2] Hear English voice 
 -◇Case: Choice [1] Hear Japanese voice                      ↓
- |■Set String: S0[[サンプル]一時文字列] =<Execute Special Code>"<<MS_VOICE_PLAY/SPEED=1/VOL=100/VOICE=Microsoft Haruka Desktop - Japanese>>こんにちは！　日本語でしゃべりまーす"
+ |■Set String: S0[[Sample] Temporary String] =<Execute Special Code>"<<MS_VOICE_PLAY/SPEED=1/VOL=100/VOICE=Microsoft Haruka Desktop - Japanese>>こんにちは！　日本語でしゃべりまーす"
  |■Show Message:こんにちは！ (Hello!)\n日本語でしゃべりまーす。 (I'm speaking in Japanese!)
  |■Show Message:What do you think?\nIf the voice isn't installed on Windows, it doesn't\nmake any sound, so sorry if you didn't hear it.
  |■
 -◇Case: Choice [2] Hear English voice                       ↓
- |■Set String: S0[[サンプル]一時文字列] =<Execute Special Code>"<<MS_VOICE_PLAY/SPEED=1/VOL=100/VOICE=Microsoft Zira Desktop - English (United States)>>Hi there! I'..."
+ |■Set String: S0[[Sample] Temporary String] =<Execute Special Code>"<<MS_VOICE_PLAY/SPEED=1/VOL=100/VOICE=Microsoft Zira Desktop - English (United States)>>Hi there! I'..."
  |■Show Message:Hi there! \nI'm a witch who speaks English!
  |■Show Message:What do you think?\nIf the voice isn't installed on Windows, it doesn't\nmake any sound, so sorry if you didn't hear it.
  |■

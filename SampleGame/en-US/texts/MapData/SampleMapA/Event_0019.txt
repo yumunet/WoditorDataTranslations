@@ -268,11 +268,11 @@ WoditorEvCOMMAND_END
 ■Condition (Number):   [1] This Ev Self0 ==  0  /  [2] This Ev Self0 ==  1  
 -◇Condition:  [1]  [ This Ev Self0 == 0   ] Case↓
  |▼ If Self0 is 0, pixel movement is off, so set the on choice.
- |■Set String: S0[[サンプル]一時文字列] = "I want to try pixel movement!"
+ |■Set String: S0[[Sample] Temporary String] = "I want to try pixel movement!"
  |■
 -◇Condition:  [2]  [ This Ev Self0 == 1   ] Case↓
  |▼ If Self0 is 1, pixel movement is on, so set the off choice.
- |■Set String: S0[[サンプル]一時文字列] = "I want to stop pixel movement"
+ |■Set String: S0[[Sample] Temporary String] = "I want to stop pixel movement"
  |■
 ◇End◇
 ■Show Message:I'm your rival, Taiga the tiger girl!\nI'm gonna show you the new features in Version 3!
@@ -286,11 +286,11 @@ WoditorEvCOMMAND_END
  | |▼ Get the Common Event ID using a trick to get the ID by the Common Event name.
  | |▼ *You can use it by entering a special code in "Execute Special Code" of "Set String."
  | |▼  It's written on the "Set String" page of the manual!
- | |■Set String: S0[[サンプル]一時文字列] =<Execute Special Code>"<<GET_COMMONEVENT_ID_FROM_NAME>>■Toggle Pixel Movement"
+ | |■Set String: S0[[Sample] Temporary String] =<Execute Special Code>"<<GET_COMMONEVENT_ID_FROM_NAME>>■Toggle Pixel Movement"
  | |▼ A trick for Set Variable!
  | |▼ If you assign a string variable containing numbers such as "39" to a numeric variable,
  | |▼ you can convert it to a number!
- | |■Set Variable: This Ev Self1 = S0[[サンプル]一時文字列] + 0 
+ | |■Set Variable: This Ev Self1 = S0[[Sample] Temporary String] + 0 
  | |■Show Message:Well, let's turn on Common Event \self[1]\n"■Toggle Pixel Movement"...\n*Click* ON!
  | |■Sound: SE File[SystemFile/SE_Get.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
  | |■Show Message:Alright, you can now move in pixels!\nEnjoy the pixel movement mode — freedom from\ntile-based movement!
