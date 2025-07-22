@@ -91,7 +91,7 @@ ITEMNAME32=<Action 9> Condition ▼▼▼
 ITEMNAME33=┣9 Target of Use [If 1 Target]  
 ITEMNAME34=┣9 Action to Perform              
 ITEMNAME35=┗9 When Condition Isn't Met
-ITEMNAME36=<Action 10> Condition ▼▼▼ 
+ITEMNAME36=<Action 10> Condition ▼▼▼
 ITEMNAME37=┣10 Target of Use [If 1 Target] 
 ITEMNAME38=┣10 Action to Perform             
 ITEMNAME39=┗10 When Condition Isn't Met
@@ -103,7 +103,7 @@ ITEMNAME44=<Action 12> Condition ▼▼▼
 ITEMNAME45=┣12 Target of Use [If 1 Target] 
 ITEMNAME46=┣12 Action to Perform             
 ITEMNAME47=┗12 When Condition Isn't Met
-MEMO=Set the AI for each enemy.<<\n>><<\n>>Actions are processed in<<\n>>the following loop:<<\n>>1. Check condition.<<\n>>2. If the condition is met,<<\n>>do "Action to Perform"<<\n>>(if it's a skill, "Target of Use"<<\n>> is the target).<<\n>>3. If the condition isn't met,<<\n>>do "When Condition Isn't<<\n>>Met."<<\n>>...<<\n>>
+MEMO=AI settings for each enemy.<<\n>><<\n>>Actions are processed by<<\n>>the following loop:<<\n>>1. Check condition.<<\n>>2. If the condition is met,<<\n>>do "Action to Perform"<<\n>>(if it's a skill, "Target of Use"<<\n>> is the target).<<\n>>3. If the condition isn't met,<<\n>>do "When Condition Isn't<<\n>>Met."<<\n>>...<<\n>>
 ITEMTYPE_NUM=100
 ITEM_LOADTYPE_0=3
 ITEM_LOADTYPE_1=3
@@ -2250,7 +2250,7 @@ DEFAULT_VAL_45=0
 DEFAULT_VAL_46=0
 DEFAULT_VAL_47=0
 <<--CSV_START-->>
-"<Action 1> Condition ▼▼▼  ","┣1 Target of Use [If 1 Target]  ","┣1 Action to Perform              ","┗1 When Condition Isn't Met","<Action 2> Condition ▼▼▼  ","┣2 Target of Use [If 1 Target]  ","┣2 Action to Perform              ","┗2 When Condition Isn't Met","<Action 3> Condition ▼▼▼  ","┣3 Target of Use [If 1 Target]  ","┣3 Action to Perform              ","┗3 When Condition Isn't Met","<Action 4> Condition ▼▼▼  ","┣4 Target of Use [If 1 Target]  ","┣4 Action to Perform              ","┗4 When Condition Isn't Met","<Action 5> Condition ▼▼▼  ","┣5 Target of Use [If 1 Target]  ","┣5 Action to Perform              ","┗5 When Condition Isn't Met","<Action 6> Condition ▼▼▼  ","┣6 Target of Use [If 1 Target]  ","┣6 Action to Perform              ","┗6 When Condition Isn't Met","<Action 7> Condition ▼▼▼  ","┣7 Target of Use [If 1 Target]  ","┣7 Action to Perform              ","┗7 When Condition Isn't Met","<Action 8> Condition ▼▼▼  ","┣8 Target of Use [If 1 Target]  ","┣8 Action to Perform              ","┗8 When Condition Isn't Met","<Action 9> Condition ▼▼▼  ","┣9 Target of Use [If 1 Target]  ","┣9 Action to Perform              ","┗9 When Condition Isn't Met","<Action 10> Condition ▼▼▼ ","┣10 Target of Use [If 1 Target] ","┣10 Action to Perform             ","┗10 When Condition Isn't Met","<Action 11> Condition ▼▼▼","┣11 Target of Use [If 1 Target] ","┣11 Action to Perform             ","┗11 When Condition Isn't Met","<Action 12> Condition ▼▼▼","┣12 Target of Use [If 1 Target] ","┣12 Action to Perform             ","┗12 When Condition Isn't Met",
+"<Action 1> Condition ▼▼▼  ","┣1 Target of Use [If 1 Target]  ","┣1 Action to Perform              ","┗1 When Condition Isn't Met","<Action 2> Condition ▼▼▼  ","┣2 Target of Use [If 1 Target]  ","┣2 Action to Perform              ","┗2 When Condition Isn't Met","<Action 3> Condition ▼▼▼  ","┣3 Target of Use [If 1 Target]  ","┣3 Action to Perform              ","┗3 When Condition Isn't Met","<Action 4> Condition ▼▼▼  ","┣4 Target of Use [If 1 Target]  ","┣4 Action to Perform              ","┗4 When Condition Isn't Met","<Action 5> Condition ▼▼▼  ","┣5 Target of Use [If 1 Target]  ","┣5 Action to Perform              ","┗5 When Condition Isn't Met","<Action 6> Condition ▼▼▼  ","┣6 Target of Use [If 1 Target]  ","┣6 Action to Perform              ","┗6 When Condition Isn't Met","<Action 7> Condition ▼▼▼  ","┣7 Target of Use [If 1 Target]  ","┣7 Action to Perform              ","┗7 When Condition Isn't Met","<Action 8> Condition ▼▼▼  ","┣8 Target of Use [If 1 Target]  ","┣8 Action to Perform              ","┗8 When Condition Isn't Met","<Action 9> Condition ▼▼▼  ","┣9 Target of Use [If 1 Target]  ","┣9 Action to Perform              ","┗9 When Condition Isn't Met","<Action 10> Condition ▼▼▼","┣10 Target of Use [If 1 Target] ","┣10 Action to Perform             ","┗10 When Condition Isn't Met","<Action 11> Condition ▼▼▼","┣11 Target of Use [If 1 Target] ","┣11 Action to Perform             ","┗11 When Condition Isn't Met","<Action 12> Condition ▼▼▼","┣12 Target of Use [If 1 Target] ","┣12 Action to Perform             ","┗12 When Condition Isn't Met",
 100,0,0,0,100,0,0,0,100,0,0,0,100,0,0,0,100,0,0,0,100,0,0,0,100,0,0,0,100,0,0,0,100,0,0,0,100,0,0,0,100,0,0,0,100,0,0,0,
 100,0,0,0,100,0,0,0,100,0,0,0,100,0,0,0,100,0,0,0,100,0,0,0,100,0,0,0,100,0,0,0,100,0,0,0,100,0,0,0,100,0,0,0,100,0,0,0,
 100,0,0,0,100,0,0,0,100,0,0,0,100,0,0,0,100,0,0,0,100,0,0,0,100,0,0,0,100,0,0,0,100,0,0,0,100,0,0,0,100,0,0,0,100,0,0,0,
