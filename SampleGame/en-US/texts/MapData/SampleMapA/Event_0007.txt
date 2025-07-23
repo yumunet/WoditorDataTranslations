@@ -83,7 +83,7 @@ WoditorEvCOMMAND_START
 [101][0,1]<2>()("You cancelled it.")
 [0][0,0]<2>()()
 [420][1,0]<1>(0)()
-[101][0,1]<2>()("You just enterd<\n><dqrt>\s[0]<dqrt>!")
+[101][0,1]<2>()("You just entered<\n><dqrt>\s[0]<dqrt>!")
 [101][0,1]<2>()("I imagine this function will be quite handy when you<\n>want to have a name entry and the like!")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
@@ -160,7 +160,7 @@ WoditorEvCOMMAND_END
  | |■Show Message:You cancelled it.
  | |■
  |-◇Else
- | |■Show Message:You just enterd\n"\s[0]"!
+ | |■Show Message:You just entered\n"\s[0]"!
  | |■Show Message:I imagine this function will be quite handy when you\nwant to have a name entry and the like!
  | |■
  |◇End◇
