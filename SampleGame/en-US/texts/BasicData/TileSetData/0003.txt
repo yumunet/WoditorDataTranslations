@@ -1,4 +1,4 @@
-TILESET_NAME=ワールドマップ
+TILESET_NAME=World Map
 TILE_FILE_NUM=32
 TILE_FILE_0=MapChip/Base_WorldMap_pipo.png
 TILE_FILE_1=MapChip/Auto_World_Sea4_pipo.png
