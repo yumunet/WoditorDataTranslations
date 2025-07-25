@@ -876,7 +876,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<4>()("この項目の表示色をここで設定")
 [103][0,1]<4>()("選択可能なら白に　選択不能なら紺にしている")
 [121][5,0]<4>(1600053,100,0,65536,2)()
-[250][5,4]<4>(19,1600043,0,331776,1600010)("","Universal Window Items","","Selectable? [1=Yes]")
+[250][5,4]<4>(19,1600043,0,331776,1600010)("","Universal Window Items","","Selectable? [1:Yes]")
 [111][4,0]<4>(1,1600010,0,2)()
 [401][1,0]<4>(1)()
 [121][4,0]<5>(1600053,50,0,0)()
@@ -1753,7 +1753,7 @@ WoditorEvCOMMAND_END
  | | | |▼ この項目の表示色をここで設定
  | | | |▼ 選択可能なら白に　選択不能なら紺にしている
  | | | |■Set Variable: CSelf53[色指定R] to CSelf55[色指定B] = 100 + 0 
- | | | |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "Universal Window Items":CSelf43[処理中個数]:"Selectable? [1=Yes]" ] (19:-:2) 
+ | | | |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "Universal Window Items":CSelf43[処理中個数]:"Selectable? [1:Yes]" ] (19:-:2) 
  | | | |■Condition (Number):   [1] CSelf10[一時変数A] ==  0  
  | | | |-◇Condition:  [1]  [ CSelf10[一時変数A] == 0   ] Case↓
  | | | | |■Set Variable: CSelf53[色指定R] = 50 + 0 

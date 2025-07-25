@@ -237,10 +237,10 @@ WoditorEvCOMMAND_START
 [111][4,0]<2>(17,1600025,1600019,3)()
 [401][1,0]<2>(1)()
 [103][0,1]<3>()("値段が所持金より下なら購入可能")
-[250][5,4]<3>(19,1600022,2,327680,1)("","Universal Window Items","","Selectable? [1=Yes]")
+[250][5,4]<3>(19,1600022,2,327680,1)("","Universal Window Items","","Selectable? [1:Yes]")
 [0][0,0]<3>()()
 [420][1,0]<2>(0)()
-[250][5,4]<3>(19,1600022,2,327680,0)("","Universal Window Items","","Selectable? [1=Yes]")
+[250][5,4]<3>(19,1600022,2,327680,0)("","Universal Window Items","","Selectable? [1:Yes]")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [179][1,0]<2>(0)()
@@ -329,12 +329,12 @@ WoditorEvCOMMAND_START
 [111][4,0]<4>(17,1600025,0,3)()
 [401][1,0]<4>(1)()
 [103][0,1]<5>()("値段が0なら売却不能")
-[250][5,4]<5>(19,1600022,2,327680,0)("","Universal Window Items","","Selectable? [1=Yes]")
+[250][5,4]<5>(19,1600022,2,327680,0)("","Universal Window Items","","Selectable? [1:Yes]")
 [250][4,4]<5>(19,1600022,5,327682)("------","Universal Window Items","","Number Suffix")
 [0][0,0]<5>()()
 [420][1,0]<4>(0)()
 [103][0,1]<5>()("1以上なら売却可能")
-[250][5,4]<5>(19,1600022,2,327680,1)("","Universal Window Items","","Selectable? [1=Yes]")
+[250][5,4]<5>(19,1600022,2,327680,1)("","Universal Window Items","","Selectable? [1:Yes]")
 [103][0,1]<5>()(" ")
 [250][5,4]<5>(19,1600022,3,327744,2)("","Universal Window Items","","Quantity Left/Point Cost")
 [250][5,4]<5>(19,1600022,3,327776,1)("","Universal Window Items","","Quantity Left/Point Cost")
@@ -543,10 +543,10 @@ WoditorEvCOMMAND_END
  | |■Condition (Number):   [1] CSelf25[価格] <=  CSelf19[現在所持金]  
  | |-◇Condition:  [1]  [ CSelf25[価格] <= CSelf19[現在所持金]   ] Case↓
  | | |▼ 値段が所持金より下なら購入可能
- | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"Selectable? [1=Yes]" ] (19:-:2) =  1
+ | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"Selectable? [1:Yes]" ] (19:-:2) =  1
  | | |■
  | |-◇Else
- | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"Selectable? [1=Yes]" ] (19:-:2) =  0
+ | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"Selectable? [1:Yes]" ] (19:-:2) =  0
  | | |■
  | |◇End◇
  | |■Repeat Loop [ 0 ] Times
@@ -635,12 +635,12 @@ WoditorEvCOMMAND_END
  | | | |■Condition (Number):   [1] CSelf25[価格] <=  0  
  | | | |-◇Condition:  [1]  [ CSelf25[価格] <= 0   ] Case↓
  | | | | |▼ 値段が0なら売却不能
- | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"Selectable? [1=Yes]" ] (19:-:2) =  0
+ | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"Selectable? [1:Yes]" ] (19:-:2) =  0
  | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"Number Suffix" ] (19:-:5) =  ------
  | | | | |■
  | | | |-◇Else
  | | | | |▼ 1以上なら売却可能
- | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"Selectable? [1=Yes]" ] (19:-:2) =  1
+ | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"Selectable? [1:Yes]" ] (19:-:2) =  1
  | | | | |▼  
  | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"Quantity Left/Point Cost" ] (19:-:3) /=  2
  | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"Quantity Left/Point Cost" ] (19:-:3) Lower Bound  1

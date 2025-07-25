@@ -347,16 +347,16 @@ WoditorEvCOMMAND_START
 [103][0,1]<4>()("■装備可能判定を反転させる。")
 [111][4,0]<4>(17,1600033,0,2)()
 [401][1,0]<4>(1)()
-[250][5,4]<5>(19,1600032,2,327680,1)("","Universal Window Items","","Selectable? [1=Yes]")
+[250][5,4]<5>(19,1600032,2,327680,1)("","Universal Window Items","","Selectable? [1:Yes]")
 [0][0,0]<5>()()
 [420][1,0]<4>(0)()
-[250][5,4]<5>(19,1600032,2,327680,0)("","Universal Window Items","","Selectable? [1=Yes]")
+[250][5,4]<5>(19,1600032,2,327680,0)("","Universal Window Items","","Selectable? [1:Yes]")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
 [0][0,0]<4>()()
 [420][1,0]<3>(0)()
 [103][0,1]<4>()("特に対象主人公が設定されていなかったら全グレー")
-[250][5,4]<4>(19,1600032,0,327680,0)("","Universal Window Items","","Selectable? [1=Yes]")
+[250][5,4]<4>(19,1600032,0,327680,0)("","Universal Window Items","","Selectable? [1:Yes]")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [103][0,1]<3>()("名前・コード・数量を格納")
@@ -400,7 +400,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("最後に「装備を外す」を追加")
 [250][4,4]<0>(19,1600032,0,327682)("<装備を外す>","Universal Window Items","","Item Text")
 [250][4,4]<0>(19,1600032,0,327682)("装備を解除します。","Universal Window Items","","Description")
-[250][5,4]<0>(19,1600032,0,327680,1)("","Universal Window Items","","Selectable? [1=Yes]")
+[250][5,4]<0>(19,1600032,0,327680,1)("","Universal Window Items","","Selectable? [1:Yes]")
 [103][0,1]<0>()("装備解除はコード「-2」")
 [250][5,4]<0>(19,1600032,0,327680,-2)("","Universal Window Items","","Item ID")
 [121][4,0]<0>(1600032,1,0,256)()
@@ -564,16 +564,16 @@ WoditorEvCOMMAND_END
  | | | |▼ ■装備可能判定を反転させる。
  | | | |■Condition (Number):   [1] CSelf33[装備可能判定(0=OK)] ==  0  
  | | | |-◇Condition:  [1]  [ CSelf33[装備可能判定(0=OK)] == 0   ] Case↓
- | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Selectable? [1=Yes]" ] (19:-:2) =  1
+ | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Selectable? [1:Yes]" ] (19:-:2) =  1
  | | | | |■
  | | | |-◇Else
- | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Selectable? [1=Yes]" ] (19:-:2) =  0
+ | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Selectable? [1:Yes]" ] (19:-:2) =  0
  | | | | |■
  | | | |◇End◇
  | | | |■
  | | |-◇Else
  | | | |▼ 特に対象主人公が設定されていなかったら全グレー
- | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Selectable? [1=Yes]" ] (19:-:2) =  0
+ | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Selectable? [1:Yes]" ] (19:-:2) =  0
  | | | |■
  | | |◇End◇
  | | |▼ 名前・コード・数量を格納
@@ -617,7 +617,7 @@ WoditorEvCOMMAND_END
 ▼ 最後に「装備を外す」を追加
 ■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Item Text" ] (19:-:0) =  <装備を外す>
 ■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Description" ] (19:-:6) =  装備を解除します。
-■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Selectable? [1=Yes]" ] (19:-:2) =  1
+■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Selectable? [1:Yes]" ] (19:-:2) =  1
 ▼ 装備解除はコード「-2」
 ■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Item ID" ] (19:-:1) =  -2
 ■Set Variable: CSelf32[万能DB登録位置] += 1 + 0 

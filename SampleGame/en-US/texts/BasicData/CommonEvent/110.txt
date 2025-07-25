@@ -218,13 +218,13 @@ WoditorEvCOMMAND_START
 [111][7,0]<7>(2,1600012,100,2,1600012,0,1)()
 [401][1,0]<7>(1)()
 [103][0,1]<8>()("イベント起動")
-[250][5,4]<8>(19,1600032,2,327680,1)("","Universal Window Items","","Selectable? [1=Yes]")
+[250][5,4]<8>(19,1600032,2,327680,1)("","Universal Window Items","","Selectable? [1:Yes]")
 [0][0,0]<8>()()
 [401][1,0]<7>(2)()
 [111][4,0]<8>(1,1600012,9,3)()
 [401][1,0]<8>(1)()
 [103][0,1]<9>()("味方に対して使用可能")
-[250][5,4]<9>(19,1600032,2,327680,1)("","Universal Window Items","","Selectable? [1=Yes]")
+[250][5,4]<9>(19,1600032,2,327680,1)("","Universal Window Items","","Selectable? [1:Yes]")
 [0][0,0]<9>()()
 [499][0,0]<8>()()
 [0][0,0]<8>()()
@@ -236,7 +236,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<5>()()
 [420][1,0]<4>(0)()
 [103][0,1]<5>()("回復かイベント発生の場合")
-[250][5,4]<5>(19,1600032,2,327680,1)("","Universal Window Items","","Selectable? [1=Yes]")
+[250][5,4]<5>(19,1600032,2,327680,1)("","Universal Window Items","","Selectable? [1:Yes]")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
 [0][0,0]<4>()()
@@ -271,7 +271,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<2>(3,1600030,1,332288,1600009)("","Weapons","","Description [Up to 2 Lines]")
 [250][5,4]<2>(19,1600032,6,327680,1600009)("","Universal Window Items","","Description")
 [103][0,1]<2>()("選択可能かどうか判定")
-[250][5,4]<2>(19,1600032,0,327680,0)("","Universal Window Items","","Selectable? [1=Yes]")
+[250][5,4]<2>(19,1600032,0,327680,0)("","Universal Window Items","","Selectable? [1:Yes]")
 [250][5,4]<2>(3,1600030,3,332288,1600010)("","Weapons","","Skill When Used As Item?     ")
 [111][4,0]<2>(1,1600010,1,1)()
 [401][1,0]<2>(1)()
@@ -287,13 +287,13 @@ WoditorEvCOMMAND_START
 [111][7,0]<5>(2,1600012,100,2,1600012,0,1)()
 [401][1,0]<5>(1)()
 [103][0,1]<6>()("イベント起動")
-[250][5,4]<6>(19,1600032,2,327680,1)("","Universal Window Items","","Selectable? [1=Yes]")
+[250][5,4]<6>(19,1600032,2,327680,1)("","Universal Window Items","","Selectable? [1:Yes]")
 [0][0,0]<6>()()
 [401][1,0]<5>(2)()
 [111][4,0]<6>(1,1600012,9,3)()
 [401][1,0]<6>(1)()
 [103][0,1]<7>()("味方に対して使用可能")
-[250][5,4]<7>(19,1600032,2,327680,1)("","Universal Window Items","","Selectable? [1=Yes]")
+[250][5,4]<7>(19,1600032,2,327680,1)("","Universal Window Items","","Selectable? [1:Yes]")
 [0][0,0]<7>()()
 [499][0,0]<6>()()
 [0][0,0]<6>()()
@@ -331,7 +331,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<2>(4,1600030,1,332288,1600009)("","Armors","","Description [Up to 2 Lines]")
 [250][5,4]<2>(19,1600032,6,327680,1600009)("","Universal Window Items","","Description")
 [103][0,1]<2>()("選択可能かどうか判定")
-[250][5,4]<2>(19,1600032,0,327680,0)("","Universal Window Items","","Selectable? [1=Yes]")
+[250][5,4]<2>(19,1600032,0,327680,0)("","Universal Window Items","","Selectable? [1:Yes]")
 [250][5,4]<2>(4,1600030,22,332288,1600010)("","Armors","","Skill When Used As Item?     ")
 [111][4,0]<2>(1,1600010,1,1)()
 [401][1,0]<2>(1)()
@@ -347,13 +347,13 @@ WoditorEvCOMMAND_START
 [111][7,0]<5>(2,1600012,100,2,1600012,0,1)()
 [401][1,0]<5>(1)()
 [103][0,1]<6>()("イベント起動")
-[250][5,4]<6>(19,1600032,2,327680,1)("","Universal Window Items","","Selectable? [1=Yes]")
+[250][5,4]<6>(19,1600032,2,327680,1)("","Universal Window Items","","Selectable? [1:Yes]")
 [0][0,0]<6>()()
 [401][1,0]<5>(2)()
 [111][4,0]<6>(1,1600012,9,3)()
 [401][1,0]<6>(1)()
 [103][0,1]<7>()("味方に対して使用可能")
-[250][5,4]<7>(19,1600032,2,327680,1)("","Universal Window Items","","Selectable? [1=Yes]")
+[250][5,4]<7>(19,1600032,2,327680,1)("","Universal Window Items","","Selectable? [1:Yes]")
 [0][0,0]<7>()()
 [499][0,0]<6>()()
 [0][0,0]<6>()()
@@ -433,13 +433,13 @@ WoditorEvCOMMAND_END
  | | | | | | |■Condition (Number):   [1] CSelf12[一時変数B] ==  100  /  [2] CSelf12[一時変数B] >=  0  
  | | | | | | |-◇Condition:  [1]  [ CSelf12[一時変数B] == 100   ] Case↓
  | | | | | | | |▼ イベント起動
- | | | | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1=Yes]" ] (19:-:2) =  1
+ | | | | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1:Yes]" ] (19:-:2) =  1
  | | | | | | | |■
  | | | | | | |-◇Condition:  [2]  [ CSelf12[一時変数B] >= 0   ] Case↓
  | | | | | | | |■Condition (Number):   [1] CSelf12[一時変数B] <=  9  
  | | | | | | | |-◇Condition:  [1]  [ CSelf12[一時変数B] <= 9   ] Case↓
  | | | | | | | | |▼ 味方に対して使用可能
- | | | | | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1=Yes]" ] (19:-:2) =  1
+ | | | | | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1:Yes]" ] (19:-:2) =  1
  | | | | | | | | |■
  | | | | | | | |◇End◇
  | | | | | | | |■
@@ -451,7 +451,7 @@ WoditorEvCOMMAND_END
  | | | | |■
  | | | |-◇Else
  | | | | |▼ 回復かイベント発生の場合
- | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1=Yes]" ] (19:-:2) =  1
+ | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1:Yes]" ] (19:-:2) =  1
  | | | | |■
  | | | |◇End◇
  | | | |■
@@ -486,7 +486,7 @@ WoditorEvCOMMAND_END
  | |■Load DB(User):  CSelf9[一時項目名] = UserDB[ "Weapons":CSelf30[処理対象]:"Description [Up to 2 Lines]" ] (3:-:1) 
  | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Description" ] (19:-:6) =  CSelf9[一時項目名]
  | |▼ 選択可能かどうか判定
- | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1=Yes]" ] (19:-:2) =  0
+ | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1:Yes]" ] (19:-:2) =  0
  | |■Load DB(User):  CSelf10[一時変数A] = UserDB[ "Weapons":CSelf30[処理対象]:"Skill When Used As Item?     " ] (3:-:22) 
  | |■Condition (Number):   [1] CSelf10[一時変数A] >=  1  
  | |-◇Condition:  [1]  [ CSelf10[一時変数A] >= 1   ] Case↓
@@ -502,13 +502,13 @@ WoditorEvCOMMAND_END
  | | | | |■Condition (Number):   [1] CSelf12[一時変数B] ==  100  /  [2] CSelf12[一時変数B] >=  0  
  | | | | |-◇Condition:  [1]  [ CSelf12[一時変数B] == 100   ] Case↓
  | | | | | |▼ イベント起動
- | | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1=Yes]" ] (19:-:2) =  1
+ | | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1:Yes]" ] (19:-:2) =  1
  | | | | | |■
  | | | | |-◇Condition:  [2]  [ CSelf12[一時変数B] >= 0   ] Case↓
  | | | | | |■Condition (Number):   [1] CSelf12[一時変数B] <=  9  
  | | | | | |-◇Condition:  [1]  [ CSelf12[一時変数B] <= 9   ] Case↓
  | | | | | | |▼ 味方に対して使用可能
- | | | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1=Yes]" ] (19:-:2) =  1
+ | | | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1:Yes]" ] (19:-:2) =  1
  | | | | | | |■
  | | | | | |◇End◇
  | | | | | |■
@@ -546,7 +546,7 @@ WoditorEvCOMMAND_END
  | |■Load DB(User):  CSelf9[一時項目名] = UserDB[ "Armors":CSelf30[処理対象]:"Description [Up to 2 Lines]" ] (4:-:1) 
  | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Description" ] (19:-:6) =  CSelf9[一時項目名]
  | |▼ 選択可能かどうか判定
- | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1=Yes]" ] (19:-:2) =  0
+ | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1:Yes]" ] (19:-:2) =  0
  | |■Load DB(User):  CSelf10[一時変数A] = UserDB[ "Armors":CSelf30[処理対象]:"Skill When Used As Item?     " ] (4:-:20) 
  | |■Condition (Number):   [1] CSelf10[一時変数A] >=  1  
  | |-◇Condition:  [1]  [ CSelf10[一時変数A] >= 1   ] Case↓
@@ -562,13 +562,13 @@ WoditorEvCOMMAND_END
  | | | | |■Condition (Number):   [1] CSelf12[一時変数B] ==  100  /  [2] CSelf12[一時変数B] >=  0  
  | | | | |-◇Condition:  [1]  [ CSelf12[一時変数B] == 100   ] Case↓
  | | | | | |▼ イベント起動
- | | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1=Yes]" ] (19:-:2) =  1
+ | | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1:Yes]" ] (19:-:2) =  1
  | | | | | |■
  | | | | |-◇Condition:  [2]  [ CSelf12[一時変数B] >= 0   ] Case↓
  | | | | | |■Condition (Number):   [1] CSelf12[一時変数B] <=  9  
  | | | | | |-◇Condition:  [1]  [ CSelf12[一時変数B] <= 9   ] Case↓
  | | | | | | |▼ 味方に対して使用可能
- | | | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1=Yes]" ] (19:-:2) =  1
+ | | | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1:Yes]" ] (19:-:2) =  1
  | | | | | | |■
  | | | | | |◇End◇
  | | | | | |■

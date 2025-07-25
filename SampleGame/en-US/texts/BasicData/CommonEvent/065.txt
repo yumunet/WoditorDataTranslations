@@ -545,7 +545,7 @@ WoditorEvCOMMAND_END
  |■Condition (Number):   [1] CSelf20[受付キー] ==  10  /  [2] CSelf20[受付キー] ==  11  
  |-◇Condition:  [1]  [ CSelf20[受付キー] == 10   ] Case↓
  | |▼ 決定キー　選択可能なら、現在選択中のコードを代入して終了
- | |■Load DB(Var):  CSelf12[一時変数A] = VarDB[ "Universal Window Items":CSelf11[選択カーソル位置]:2 ] (19:-:Selectable? [1=Yes]) 
+ | |■Load DB(Var):  CSelf12[一時変数A] = VarDB[ "Universal Window Items":CSelf11[選択カーソル位置]:2 ] (19:-:Selectable? [1:Yes]) 
  | |■Condition (Number):   [1] CSelf12[一時変数A] ==  1  
  | |-◇Condition:  [1]  [ CSelf12[一時変数A] == 1   ] Case↓
  | | |▼ 選択可能な状態

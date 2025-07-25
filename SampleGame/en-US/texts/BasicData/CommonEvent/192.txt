@@ -375,7 +375,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<2>(18,17,0,65536,1)("","Base System Variables","","")
 [103][0,1]<2>()("「何もしない」コマンドを万能ウィンドウに登録")
 [250][5,4]<2>(19,0,1,327680,-3)("","Universal Window Items","","Item ID")
-[250][5,4]<2>(19,0,2,327680,1)("","Universal Window Items","","Selectable? [1=Yes]")
+[250][5,4]<2>(19,0,2,327680,1)("","Universal Window Items","","Selectable? [1:Yes]")
 [250][4,4]<2>(19,0,6,327682)("何も行動せずターンを進めます","Universal Window Items","","Description")
 [250][4,4]<2>(19,0,0,327682)("何もしない","Universal Window Items","","Item Text")
 [300][6,1]<2>(0,4,2,0,2,0)("X[共]万能ｳｨﾝﾄﾞｳ描画処理")
@@ -654,7 +654,7 @@ WoditorEvCOMMAND_END
  | |■Write to DB(Var): VarDB[ "Base System Variables":17:0 ] (18:Universal Window Item Count:Number) =  1
  | |▼ 「何もしない」コマンドを万能ウィンドウに登録
  | |■Write to DB(Var): VarDB[ "Universal Window Items":0:"Item ID" ] (19::1) =  -3
- | |■Write to DB(Var): VarDB[ "Universal Window Items":0:"Selectable? [1=Yes]" ] (19::2) =  1
+ | |■Write to DB(Var): VarDB[ "Universal Window Items":0:"Selectable? [1:Yes]" ] (19::2) =  1
  | |■Write to DB(Var): VarDB[ "Universal Window Items":0:"Description" ] (19::6) =  何も行動せずターンを進めます
  | |■Write to DB(Var): VarDB[ "Universal Window Items":0:"Item Text" ] (19::0) =  何もしない
  | |■Call Event [Name]: ["X[共]万能ｳｨﾝﾄﾞｳ描画処理"] <CommonEv 64>  / 2:表示[戦闘ｺﾏﾝﾄﾞ用] / 0 / 2:最下部に横幅最大表示 / 0:なし

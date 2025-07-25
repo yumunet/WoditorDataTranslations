@@ -261,13 +261,13 @@ WoditorEvCOMMAND_START
 [111][7,0]<7>(2,1600012,101,2,1600012,0,1)()
 [401][1,0]<7>(1)()
 [103][0,1]<8>()("イベント起動")
-[250][5,4]<8>(19,1600032,2,327680,1)("","Universal Window Items","","Selectable? [1=Yes]")
+[250][5,4]<8>(19,1600032,2,327680,1)("","Universal Window Items","","Selectable? [1:Yes]")
 [0][0,0]<8>()()
 [401][1,0]<7>(2)()
 [111][4,0]<8>(1,1600012,12,3)()
 [401][1,0]<8>(1)()
 [103][0,1]<9>()("味方に対して使用可能")
-[250][5,4]<9>(19,1600032,2,327680,1)("","Universal Window Items","","Selectable? [1=Yes]")
+[250][5,4]<9>(19,1600032,2,327680,1)("","Universal Window Items","","Selectable? [1:Yes]")
 [0][0,0]<9>()()
 [499][0,0]<8>()()
 [0][0,0]<8>()()
@@ -392,13 +392,13 @@ WoditorEvCOMMAND_END
  | | | | | | |■Condition (Number):   [1] CSelf12[一時変数B] ==  101  /  [2] CSelf12[一時変数B] >=  0  
  | | | | | | |-◇Condition:  [1]  [ CSelf12[一時変数B] == 101   ] Case↓
  | | | | | | | |▼ イベント起動
- | | | | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1=Yes]" ] (19:-:2) =  1
+ | | | | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1:Yes]" ] (19:-:2) =  1
  | | | | | | | |■
  | | | | | | |-◇Condition:  [2]  [ CSelf12[一時変数B] >= 0   ] Case↓
  | | | | | | | |■Condition (Number):   [1] CSelf12[一時変数B] <=  12  
  | | | | | | | |-◇Condition:  [1]  [ CSelf12[一時変数B] <= 12   ] Case↓
  | | | | | | | | |▼ 味方に対して使用可能
- | | | | | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1=Yes]" ] (19:-:2) =  1
+ | | | | | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1:Yes]" ] (19:-:2) =  1
  | | | | | | | | |■
  | | | | | | | |◇End◇
  | | | | | | | |■
