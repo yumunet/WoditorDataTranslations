@@ -169,19 +169,19 @@ WoditorEvCOMMAND_END
 ▼  
 ▼ If a save file is found (by Common 48: X[C]Base System Auto-Initialize),
 ▼ set the default value of the next choice to 1 (Continue).
-■Condition (Number):   [1] Sys25:Current Save Data Number (0+) >=  1  
--◇Condition:  [1]  [ Sys25:Current Save Data Number (0+) >= 1   ] Case↓
+■Condition (Number):   [1] Sys25:Current Save (0+) >=  1  
+-◇Condition:  [1]  [ Sys25:Current Save (0+) >= 1   ] Case↓
  |■Set Variable: Sys7:Initial Choice (0,1,2...) = 1 + 0 
  |■
 ◇End◇
 ▼  
 ▼ Move the display position of the choice box down a little.
-■Set Variable: Sys4:Choice Box Y = 150 + 0 
+■Set Variable: Sys4:Choice Window Y = 150 + 0 
 ▼ Display the usual game start choices here.
 ■Show Choice:/ [1] <C>Start / [2] <C>Continue / [3] <C>Quit 
 -◇Case: Choice [1] <C>Start                                 ↓
  |▼ Set the display position of the choice box back to default.
- |■Set Variable: Sys4:Choice Box Y = -1 + 0 
+ |■Set Variable: Sys4:Choice Window Y = -1 + 0 
  |▼ Erase the title screen picture.
  |■Picture Erase: 1  / 0(0)Frames
  |■Picture Erase: 2  / 0(0)Frames

@@ -214,7 +214,7 @@ WoditorEvCOMMAND_END
  |▼ 「説明」文を表示する　（表示するモードだった場合のみ）
  |▼ すでに説明文用のピクチャが表示されているかどうかで判定
  |■Set Variable: CSelf21[一時ﾋﾟｸﾁｬ番号] = CSelf20[基本ﾋﾟｸﾁｬ番号] + 2 
- |■Set Variable+: CSelf10[一時変数A] = Picture:CSelf21[一時ﾋﾟｸﾁｬ番号] 's Picture In Use? [1=YES]
+ |■Set Variable+: CSelf10[一時変数A] = Picture:CSelf21[一時ﾋﾟｸﾁｬ番号] 's Picture In Use? [1:Yes]
  |■Picture [Reset Delay]: CSelf21[一時ﾋﾟｸﾁｬ番号] 
  |■Picture Show: CSelf21[一時ﾋﾟｸﾁｬ番号] [Center] String[\f[\cself[18]]\s] Relative X:0 Y:0 / 0(0)Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
  |■

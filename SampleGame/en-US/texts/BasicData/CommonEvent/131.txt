@@ -400,7 +400,7 @@ WoditorEvCOMMAND_END
 ■Load DB(Var):  CSelf26[最大ページ数] = VarDB[ "Base System Variables":53:0 ] (18:Save Page Count:Number) 
 ■Load DB(Var):  CSelf27[1ページ最大表示数] = VarDB[ "Base System Variables":52:0 ] (18:Save Slots per Page:Number) 
 ▼  
-■Set Variable: CSelf29[初期選択位置] = Sys25:Current Save Data Number (0+) - 1 
+■Set Variable: CSelf29[初期選択位置] = Sys25:Current Save (0+) - 1 
 ■Set Variable: CSelf29[初期選択位置] Lower Bound= 0 + 0 
 ▼  
 ■Set Variable: CSelf10[ページ内選択箇所] = CSelf29[初期選択位置] % CSelf27[1ページ最大表示数] 
@@ -475,7 +475,7 @@ WoditorEvCOMMAND_END
  | | | |◇End◇
  | | | |■Save Data:  CSelf5
  | | | |▼ 文字列にすると最終セーブデータ番号が0になるのでここで手動指定
- | | | |■Set Variable: Sys25:Current Save Data Number (0+) = CSelf12[対象データ番号] + 0 
+ | | | |■Set Variable: Sys25:Current Save (0+) = CSelf12[対象データ番号] + 0 
  | | | |■
  | | |◇Loop End Point◇◇
  | | |■Condition (Number):   [1] CSelf1[モード] ==  0  
@@ -508,7 +508,7 @@ WoditorEvCOMMAND_END
  | | | | |■Set String: CSelf5 = "Save/SaveData\cself[12].sav"
  | | | | |■
  | | | |◇End◇
- | | | |■Read Save Data:  CSelf13[一時変数A] = Save Data [CSelf5]'s Sys24:[RO] Save Data Read? (1:Success)
+ | | | |■Read Save Data:  CSelf13[一時変数A] = Save Data [CSelf5]'s Sys24:[RO] Save Data Read Check (1:Success)
  | | | |■
  | | |◇Loop End Point◇◇
  | | |■Condition (Number):   [1] CSelf13[一時変数A] ==  0  /  [2] CSelf13[一時変数A] >=  1  

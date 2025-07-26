@@ -1632,7 +1632,7 @@ WoditorEvCOMMAND_END
  | |■
  |-◇Condition:  [2]  [ Sys115:[RO] Game.exe Version (x100) >= 300   ] Case↓
  | |▼ Ver3.00以降はSys119の基本画面倍率で調整　Ver3.00修正
- | |■Set Variable: CSelf47[数値表示シフト量] = CSelf36[[保持]カーソル横幅] * Sys119:[RO] Screen Resolution Multiplier [x1-3] 
+ | |■Set Variable: CSelf47[数値表示シフト量] = CSelf36[[保持]カーソル横幅] * Sys119:[RO] Screen Resolution Multiplier x[1-3] 
  | |■
  |◇End◇
  |▼ 項目を一つずつピクチャで表示する
@@ -1837,7 +1837,7 @@ WoditorEvCOMMAND_END
  | |-◇Condition:  [1]  [ CSelf1[カーソル位置] >= 0   ] Case↓
  | | |▼ すでに説明文用のピクチャが表示されているかどうかで判定
  | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 2 
- | | |■Set Variable+: CSelf10[一時変数A] = Picture:CSelf21[一時ピクチャ番号] 's Picture In Use? [1=YES]
+ | | |■Set Variable+: CSelf10[一時変数A] = Picture:CSelf21[一時ピクチャ番号] 's Picture In Use? [1:Yes]
  | | |■Condition (Number):   [1] CSelf10[一時変数A] ==  1  
  | | |-◇Condition:  [1]  [ CSelf10[一時変数A] == 1   ] Case↓
  | | | |■Load DB(Var):  CSelf5[説明文] = VarDB[ "Universal Window Items":CSelf1[カーソル位置]:"Description" ] (19:-:6) 

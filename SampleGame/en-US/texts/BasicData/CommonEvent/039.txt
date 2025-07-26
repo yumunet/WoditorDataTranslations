@@ -505,8 +505,8 @@ WoditorEvCOMMAND_END
  |■
 ◇Loop End Point◇◇
 ▼ ここからキー入力に応じたピクセル移動の挙動を処理します
-■Condition (Number):   [1] Sys13:Event Active? (1=YES) ==  0  
--◇Condition:  [1]  [ Sys13:Event Active? (1=YES) == 0   ] Case↓
+■Condition (Number):   [1] Sys13:Event Active? (1:Yes) ==  0  
+-◇Condition:  [1]  [ Sys13:Event Active? (1:Yes) == 0   ] Case↓
  |▼ キーによる通常移動を禁止し、コモンイベント内の「ピクセル移動」コマンドだけでキャラを動かします
  |■Enable/Disable Input:   Down-Key  Left-Key  Right-Key  Up-Key   [ Movement ×   Key Input ✓ ]
  |▼ 押し続けた方向に加速する

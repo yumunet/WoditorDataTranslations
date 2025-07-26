@@ -429,7 +429,7 @@ WoditorEvCOMMAND_END
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |■Set String: CSelf5 = "Save/System.sav"
  |■Read Save Data:  CSelf20[一時保存コード] = Save Data [CSelf5]'s V0[[Sample Game] Cook Appears]
- |■Set Variable: Sys25:Current Save Data Number (0+) = CSelf20[一時保存コード] + 0 
+ |■Set Variable: Sys25:Current Save (0+) = CSelf20[一時保存コード] + 0 
  |■
 ◇Loop End Point◇◇
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -538,10 +538,10 @@ WoditorEvCOMMAND_END
 ■Write to DB(Var): VarDB[ "Base System Variables":58:0 ] (18:[System] Battle Key Hold:Number) =  0
 ■Call Event [Name]: ["X[移]キーリピート設定"] <CommonEv 115>  / 2
 ▼ その他ゲームの基本設定
-■Set Variable: Sys17:Choice SE: Confirm (SysDB 3) = 0 + 0 
-■Set Variable: Sys18:Choice SE: Select (SysDB 3) = 1 + 0 
-■Set Variable: Sys19:Choice SE: Cancel (SysDB 3) = 2 + 0 
-■Set Variable: Sys21:Add Shadow to String? (0=OFF/1=ON) = 1 + 0 
+■Set Variable: Sys17:Choice Confirm SE (SysDB 3) = 0 + 0 
+■Set Variable: Sys18:Choice Cursor SE (SysDB 3) = 1 + 0 
+■Set Variable: Sys19:Choice Cancel SE (SysDB 3) = 2 + 0 
+■Set Variable: Sys21:Text Shadow? (0:OFF/1+:ON) = 1 + 0 
 ■Set Variable: Sys22:Choice Cursor Blend Mode(0:Normal/1:Add) = 1 + 0 
 ■Set Variable: Sys9:Message Speed (X char./s) = 500 + 0 
 ■Set Variable: Sys37:Distance Between Members (Steps) = 2 + 0 
@@ -638,7 +638,7 @@ WoditorEvCOMMAND_END
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |■Set String: CSelf5 = "Save/System.sav"
  |■Read Save Data:  CSelf20[一時保存コード] = Save Data [CSelf5]'s V0[[Sample Game] Cook Appears]
- |■Set Variable: Sys25:Current Save Data Number (0+) = CSelf20[一時保存コード] + 0 
+ |■Set Variable: Sys25:Current Save (0+) = CSelf20[一時保存コード] + 0 
  |■
 ◇Loop End Point◇◇
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■

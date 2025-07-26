@@ -442,15 +442,15 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf40[戻り先番号] = 1 + 0 
 ■Repeat Loop [ 1 ] Times
  |●Label Point [文章表示位置設定] <<<<<<<<<<<<<<<<<<<<<<<<★
- |■Set Variable: Sys1:Message Box X = 2 * CSelf88[座標倍率X(x10)] 
- |■Set Variable: Sys2:Message Box Y = 17 * CSelf89[座標倍率Y(x10)] 
+ |■Set Variable: Sys1:Message Window X = 2 * CSelf88[座標倍率X(x10)] 
+ |■Set Variable: Sys2:Message Window Y = 17 * CSelf89[座標倍率Y(x10)] 
  |▼ Ver3.00修正 メッセージウィンドウY座標を微調整
- |■Set Variable: Sys2:Message Box Y += CSelf89[座標倍率Y(x10)] / 5 
- |■Set Variable: Sys3:Choice Box X = 16 * CSelf88[座標倍率X(x10)] 
+ |■Set Variable: Sys2:Message Window Y += CSelf89[座標倍率Y(x10)] / 5 
+ |■Set Variable: Sys3:Choice Window X = 16 * CSelf88[座標倍率X(x10)] 
  |▼ Ver3.00修正 選択肢ウィンドウY座標を微調整
- |■Set Variable: Sys4:Choice Box Y = 7 * CSelf89[座標倍率Y(x10)] 
- |■Set Variable: Sys5:Message Cursor X (Add to Sys1) = 16 * CSelf88[座標倍率X(x10)] 
- |■Set Variable: Sys6:Message Cursor Y (Add to Sys2) = 6 * CSelf89[座標倍率Y(x10)] 
+ |■Set Variable: Sys4:Choice Window Y = 7 * CSelf89[座標倍率Y(x10)] 
+ |■Set Variable: Sys5:Message Continue Icon X (Add to Sys1) = 16 * CSelf88[座標倍率X(x10)] 
+ |■Set Variable: Sys6:Message Continue Icon Y (Add to Sys2) = 6 * CSelf89[座標倍率Y(x10)] 
  |●Label Jump [戻り先\cself[40]] >>>>>>>>>>>>>>>>>>>>>>>>>
  |■
 ◇Loop End Point◇◇
@@ -470,8 +470,8 @@ WoditorEvCOMMAND_END
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |▼ 　表示処理
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |■Condition (Number):   [1] Sys12:Show Message Active? (1=YES) ==  1  
- |-◇Condition:  [1]  [ Sys12:Show Message Active? (1=YES) == 1   ] Case↓
+ |■Condition (Number):   [1] Sys12:Showing Message? (1:Yes) ==  1  
+ |-◇Condition:  [1]  [ Sys12:Showing Message? (1:Yes) == 1   ] Case↓
  | |▼ メッセージウィンドウ表示
  | |●Label Point [ウィンドウ表示] <<<<<<<<<<<<<<<<<<<<<<<<★
  | |■Set Variable: CSelf49[顔グラフィック番号] = Sys0:Face Number + 0 
@@ -579,12 +579,12 @@ WoditorEvCOMMAND_END
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |■Condition (Number):   [1] CSelf35[ウィンドウ表示中フラグ] !=  0  
  |-◇Condition:  [1]  [ CSelf35[ウィンドウ表示中フラグ] != 0   ] Case↓
- | |■Condition (Number):   [1] Sys12:Show Message Active? (1=YES) ==  0  
- | |-◇Condition:  [1]  [ Sys12:Show Message Active? (1=YES) == 0   ] Case↓
+ | |■Condition (Number):   [1] Sys12:Showing Message? (1:Yes) ==  0  
+ | |-◇Condition:  [1]  [ Sys12:Showing Message? (1:Yes) == 0   ] Case↓
  | | |▼ もし開いてる状態なら、数フレーム待って、なければ閉じる。
  | | |■Repeat Loop [ 3 ] Times
- | | | |■Condition (Number):   [1] Sys12:Show Message Active? (1=YES) ==  1  
- | | | |-◇Condition:  [1]  [ Sys12:Show Message Active? (1=YES) == 1   ] Case↓
+ | | | |■Condition (Number):   [1] Sys12:Showing Message? (1:Yes) ==  1  
+ | | | |-◇Condition:  [1]  [ Sys12:Showing Message? (1:Yes) == 1   ] Case↓
  | | | | |●Label Jump [ウィンドウ表示] >>>>>>>>>>>>>>>>>>>>>>>>>
  | | | | |■
  | | | |◇End◇
@@ -594,8 +594,8 @@ WoditorEvCOMMAND_END
  | | |▼ 値を初期化
  | | |■Set Variable: Sys10:Message Wait (X frames) = 9 + 0 
  | | |■Set Variable: CSelf48[直前顔グラ番号] = -1 + 0 
- | | |■Condition (Number):   [1] Sys12:Show Message Active? (1=YES) ==  0  
- | | |-◇Condition:  [1]  [ Sys12:Show Message Active? (1=YES) == 0   ] Case↓
+ | | |■Condition (Number):   [1] Sys12:Showing Message? (1:Yes) ==  0  
+ | | |-◇Condition:  [1]  [ Sys12:Showing Message? (1:Yes) == 0   ] Case↓
  | | | |▼ 表示されてない場合だけ顔グラ番号初期化
  | | | |■Set Variable: Sys0:Face Number = 1 + 0 
  | | | |■
@@ -606,8 +606,8 @@ WoditorEvCOMMAND_END
  | | |■Picture Move: CSelf20[基本ピクチャ番号]  X:CSelf32[隠し表示位置X] Y:CSelf33[隠し表示位置Y] / 4(2)Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
  | | |▼ 完全に消えたら表示フラグをオフに
  | | |■Repeat Loop [ 6 ] Times
- | | | |■Condition (Number):   [1] Sys12:Show Message Active? (1=YES) ==  1  
- | | | |-◇Condition:  [1]  [ Sys12:Show Message Active? (1=YES) == 1   ] Case↓
+ | | | |■Condition (Number):   [1] Sys12:Showing Message? (1:Yes) ==  1  
+ | | | |-◇Condition:  [1]  [ Sys12:Showing Message? (1:Yes) == 1   ] Case↓
  | | | | |●Label Jump [ウィンドウ表示] >>>>>>>>>>>>>>>>>>>>>>>>>
  | | | | |■
  | | | |◇End◇

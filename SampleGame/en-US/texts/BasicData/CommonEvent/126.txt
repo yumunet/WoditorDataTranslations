@@ -313,8 +313,8 @@ WoditorEvCOMMAND_END
 ▼ 【どのコモンイベントから主に呼び出されているか】
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ イベント実行中はキーが押されても無視
-■Condition (Number):   [1] Sys13:Event Active? (1=YES) ==  0  
--◇Condition:  [1]  [ Sys13:Event Active? (1=YES) == 0   ] Case↓
+■Condition (Number):   [1] Sys13:Event Active? (1:Yes) ==  0  
+-◇Condition:  [1]  [ Sys13:Event Active? (1:Yes) == 0   ] Case↓
  |■Key Input: CSelf13[キー入力状態] [Normal Input]  Cancel(11)
  |▼ 新しくキーが押された場合（コモン3と4が異なる値のとき）のみ処理する
  |■Set Variable: CSelf16[直前イベント実行中？] -= 1 + 0 
@@ -323,10 +323,10 @@ WoditorEvCOMMAND_END
  | |■Condition (Number):   [1] CSelf13[キー入力状態] !=  CSelf14[直前キー入力状態]  
  | |-◇Condition:  [1]  [ CSelf13[キー入力状態] != CSelf14[直前キー入力状態]   ] Case↓
  | | |▼ ■キャンセルキーが押されたらメニュー起動フラグをオンにする
- | | |■Condition (Number):   [1] Sys35:Hero Moving? (1=YES) *Between Tiles? ==  0  
- | | |-◇Condition:  [1]  [ Sys35:Hero Moving? (1=YES) *Between Tiles? == 0   ] Case↓
- | | | |■Condition (Number):   [1] Sys13:Event Active? (1=YES) ==  0  
- | | | |-◇Condition:  [1]  [ Sys13:Event Active? (1=YES) == 0   ] Case↓
+ | | |■Condition (Number):   [1] Sys35:Hero Moving? (1:Yes) *Between Tiles? ==  0  
+ | | |-◇Condition:  [1]  [ Sys35:Hero Moving? (1:Yes) *Between Tiles? == 0   ] Case↓
+ | | | |■Condition (Number):   [1] Sys13:Event Active? (1:Yes) ==  0  
+ | | | |-◇Condition:  [1]  [ Sys13:Event Active? (1:Yes) == 0   ] Case↓
  | | | | |■Condition (Number):   [1] CSelf13[キー入力状態] ==  11  
  | | | | |-◇Condition:  [1]  [ CSelf13[キー入力状態] == 11   ] Case↓
  | | | | | |▼ 起動に成功する場合は、ここへ来る
@@ -360,10 +360,10 @@ WoditorEvCOMMAND_END
  | | | | | | |■
  | | | | | |◇End◇
  | | | | | |▼ イベントが起動しておらず、移動中でもない場合にメニューを起動
- | | | | | |■Condition (Number):   [1] Sys13:Event Active? (1=YES) ==  0  
- | | | | | |-◇Condition:  [1]  [ Sys13:Event Active? (1=YES) == 0   ] Case↓
- | | | | | | |■Condition (Number):   [1] Sys35:Hero Moving? (1=YES) *Between Tiles? ==  0  
- | | | | | | |-◇Condition:  [1]  [ Sys35:Hero Moving? (1=YES) *Between Tiles? == 0   ] Case↓
+ | | | | | |■Condition (Number):   [1] Sys13:Event Active? (1:Yes) ==  0  
+ | | | | | |-◇Condition:  [1]  [ Sys13:Event Active? (1:Yes) == 0   ] Case↓
+ | | | | | | |■Condition (Number):   [1] Sys35:Hero Moving? (1:Yes) *Between Tiles? ==  0  
+ | | | | | | |-◇Condition:  [1]  [ Sys35:Hero Moving? (1:Yes) *Between Tiles? == 0   ] Case↓
  | | | | | | | |▼ 起動に成功する場合は、ここへ来る
  | | | | | | | |▼  
  | | | | | | | |▼ 「直前キー入力状態」を更新
@@ -418,6 +418,6 @@ WoditorEvCOMMAND_END
  |■
 ◇End◇
 ▼ 直前のイベント実行中がオンなら10フレームはメニューを出さない
-■Set Variable: CSelf16[直前イベント実行中？] = Sys13:Event Active? (1=YES) * 10 
+■Set Variable: CSelf16[直前イベント実行中？] = Sys13:Event Active? (1:Yes) * 10 
 ■
 [COMMAND_TEXT_END]

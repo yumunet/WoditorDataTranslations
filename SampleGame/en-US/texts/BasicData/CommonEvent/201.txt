@@ -264,8 +264,8 @@ WoditorEvCOMMAND_END
 ▼  
 ▼ 【どのコモンイベントから主に呼び出されているか】
 ▼ ―――――――――――――――――――――――――――――――――――
-■Set Variable: Sys59:Repeat Confirm Key? (1=ON) = 0 + 0 
-■Set Variable: Sys60:Repeat Cancel Key? (1=ON) = 0 + 0 
+■Set Variable: Sys59:Repeat Confirm Key? (1:ON) = 0 + 0 
+■Set Variable: Sys60:Repeat Cancel Key? (1:ON) = 0 + 0 
 ▼ 全スロットを消去
 ▼ 味方を消去
 ■Set Variable: CSelf10[一時変数] = -1 + 0 

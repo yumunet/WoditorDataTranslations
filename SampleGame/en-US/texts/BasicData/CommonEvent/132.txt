@@ -845,12 +845,12 @@ WoditorEvCOMMAND_END
  |■Load DB(Var):  CSelf62[[保存]戦闘時連打] = VarDB[ "Base System Variables":58:0 ] (18:[System] Battle Key Hold:Number) 
  |■Set Variable: CSelf63[[保存]ＢＧＭ音量] = Sys100:BGM Volume Multiplier [%] + 0 
  |■Set Variable: CSelf64[[保存]ＳＥ音量] = Sys102:SE Volume Multiplier [%] + 0 
- |■Set Variable: CSelf65[[保存]キーボ決定] = Sys52:Confirm Key (Keyboard) + 0 
- |■Set Variable: CSelf66[[保存]キーボキャンセル] = Sys53:Cancel Key (Keyboard) + 0 
- |■Set Variable: CSelf67[[保存]キーボサブ] = Sys54:Sub Key (Keyboard) + 0 
- |■Set Variable: CSelf68[[保存]パッド決定] = Sys55:Confirm Key (Pad) + 0 
- |■Set Variable: CSelf69[[保存]パッドキャンセル] = Sys56:Cancel Key (Pad) + 0 
- |■Set Variable: CSelf70[[保存]パッドサブ] = Sys57:Sub Key (Pad) + 0 
+ |■Set Variable: CSelf65[[保存]キーボ決定] = Sys52:Confirm (Keyboard) + 0 
+ |■Set Variable: CSelf66[[保存]キーボキャンセル] = Sys53:Cancel (Keyboard) + 0 
+ |■Set Variable: CSelf67[[保存]キーボサブ] = Sys54:Sub (Keyboard) + 0 
+ |■Set Variable: CSelf68[[保存]パッド決定] = Sys55:Confirm (Pad) + 0 
+ |■Set Variable: CSelf69[[保存]パッドキャンセル] = Sys56:Cancel (Pad) + 0 
+ |■Set Variable: CSelf70[[保存]パッドサブ] = Sys57:Sub (Pad) + 0 
  |▼ Ver3.00修正　修正された場合に変更するか質問を表示
  |■Set Variable: CSelf90[内容に変更あり] = 0 + 0 
  |■ Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
@@ -1283,28 +1283,28 @@ WoditorEvCOMMAND_END
  | | | | |-◇Condition:  [1]  [ CSelf21[キー入力２] >= 100   ] Case↓
  | | | | | |■Condition (Number):   [1] CSelf10[選択箇所] ==  5  /  [2] CSelf10[選択箇所] ==  6  /  [3] CSelf10[選択箇所] ==  7  
  | | | | | |-◇Condition:  [1]  [ CSelf10[選択箇所] == 5   ] Case↓
- | | | | | | |■Condition (Number):   [1] Sys52:Confirm Key (Keyboard) !=  CSelf21[キー入力２]  
- | | | | | | |-◇Condition:  [1]  [ Sys52:Confirm Key (Keyboard) != CSelf21[キー入力２]   ] Case↓
+ | | | | | | |■Condition (Number):   [1] Sys52:Confirm (Keyboard) !=  CSelf21[キー入力２]  
+ | | | | | | |-◇Condition:  [1]  [ Sys52:Confirm (Keyboard) != CSelf21[キー入力２]   ] Case↓
  | | | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 0:決定音
  | | | | | | | |■
  | | | | | | |◇End◇
- | | | | | | |■Set Variable: Sys52:Confirm Key (Keyboard) = CSelf21[キー入力２] + 0 
+ | | | | | | |■Set Variable: Sys52:Confirm (Keyboard) = CSelf21[キー入力２] + 0 
  | | | | | | |■
  | | | | | |-◇Condition:  [2]  [ CSelf10[選択箇所] == 6   ] Case↓
- | | | | | | |■Condition (Number):   [1] Sys53:Cancel Key (Keyboard) !=  CSelf21[キー入力２]  
- | | | | | | |-◇Condition:  [1]  [ Sys53:Cancel Key (Keyboard) != CSelf21[キー入力２]   ] Case↓
+ | | | | | | |■Condition (Number):   [1] Sys53:Cancel (Keyboard) !=  CSelf21[キー入力２]  
+ | | | | | | |-◇Condition:  [1]  [ Sys53:Cancel (Keyboard) != CSelf21[キー入力２]   ] Case↓
  | | | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 0:決定音
  | | | | | | | |■
  | | | | | | |◇End◇
- | | | | | | |■Set Variable: Sys53:Cancel Key (Keyboard) = CSelf21[キー入力２] + 0 
+ | | | | | | |■Set Variable: Sys53:Cancel (Keyboard) = CSelf21[キー入力２] + 0 
  | | | | | | |■
  | | | | | |-◇Condition:  [3]  [ CSelf10[選択箇所] == 7   ] Case↓
- | | | | | | |■Condition (Number):   [1] Sys54:Sub Key (Keyboard) !=  CSelf21[キー入力２]  
- | | | | | | |-◇Condition:  [1]  [ Sys54:Sub Key (Keyboard) != CSelf21[キー入力２]   ] Case↓
+ | | | | | | |■Condition (Number):   [1] Sys54:Sub (Keyboard) !=  CSelf21[キー入力２]  
+ | | | | | | |-◇Condition:  [1]  [ Sys54:Sub (Keyboard) != CSelf21[キー入力２]   ] Case↓
  | | | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 0:決定音
  | | | | | | | |■
  | | | | | | |◇End◇
- | | | | | | |■Set Variable: Sys54:Sub Key (Keyboard) = CSelf21[キー入力２] + 0 
+ | | | | | | |■Set Variable: Sys54:Sub (Keyboard) = CSelf21[キー入力２] + 0 
  | | | | | | |■
  | | | | | |◇End◇
  | | | | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 1:表示内容更新 / 0
@@ -1359,28 +1359,28 @@ WoditorEvCOMMAND_END
  | | | | |-◇Condition:  [1]  [ CSelf21[キー入力２] >= 300   ] Case↓
  | | | | | |■Condition (Number):   [1] CSelf10[選択箇所] ==  8  /  [2] CSelf10[選択箇所] ==  9  /  [3] CSelf10[選択箇所] ==  10  
  | | | | | |-◇Condition:  [1]  [ CSelf10[選択箇所] == 8   ] Case↓
- | | | | | | |■Condition (Number):   [1] Sys55:Confirm Key (Pad) !=  CSelf21[キー入力２]  
- | | | | | | |-◇Condition:  [1]  [ Sys55:Confirm Key (Pad) != CSelf21[キー入力２]   ] Case↓
+ | | | | | | |■Condition (Number):   [1] Sys55:Confirm (Pad) !=  CSelf21[キー入力２]  
+ | | | | | | |-◇Condition:  [1]  [ Sys55:Confirm (Pad) != CSelf21[キー入力２]   ] Case↓
  | | | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 0:決定音
  | | | | | | | |■
  | | | | | | |◇End◇
- | | | | | | |■Set Variable: Sys55:Confirm Key (Pad) = CSelf21[キー入力２] + 0 
+ | | | | | | |■Set Variable: Sys55:Confirm (Pad) = CSelf21[キー入力２] + 0 
  | | | | | | |■
  | | | | | |-◇Condition:  [2]  [ CSelf10[選択箇所] == 9   ] Case↓
- | | | | | | |■Condition (Number):   [1] Sys56:Cancel Key (Pad) !=  CSelf21[キー入力２]  
- | | | | | | |-◇Condition:  [1]  [ Sys56:Cancel Key (Pad) != CSelf21[キー入力２]   ] Case↓
+ | | | | | | |■Condition (Number):   [1] Sys56:Cancel (Pad) !=  CSelf21[キー入力２]  
+ | | | | | | |-◇Condition:  [1]  [ Sys56:Cancel (Pad) != CSelf21[キー入力２]   ] Case↓
  | | | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 0:決定音
  | | | | | | | |■
  | | | | | | |◇End◇
- | | | | | | |■Set Variable: Sys56:Cancel Key (Pad) = CSelf21[キー入力２] + 0 
+ | | | | | | |■Set Variable: Sys56:Cancel (Pad) = CSelf21[キー入力２] + 0 
  | | | | | | |■
  | | | | | |-◇Condition:  [3]  [ CSelf10[選択箇所] == 10   ] Case↓
- | | | | | | |■Condition (Number):   [1] Sys57:Sub Key (Pad) !=  CSelf21[キー入力２]  
- | | | | | | |-◇Condition:  [1]  [ Sys57:Sub Key (Pad) != CSelf21[キー入力２]   ] Case↓
+ | | | | | | |■Condition (Number):   [1] Sys57:Sub (Pad) !=  CSelf21[キー入力２]  
+ | | | | | | |-◇Condition:  [1]  [ Sys57:Sub (Pad) != CSelf21[キー入力２]   ] Case↓
  | | | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 0:決定音
  | | | | | | | |■
  | | | | | | |◇End◇
- | | | | | | |■Set Variable: Sys57:Sub Key (Pad) = CSelf21[キー入力２] + 0 
+ | | | | | | |■Set Variable: Sys57:Sub (Pad) = CSelf21[キー入力２] + 0 
  | | | | | | |■
  | | | | | |◇End◇
  | | | | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 1:表示内容更新 / 0
@@ -1413,12 +1413,12 @@ WoditorEvCOMMAND_END
  | | |■Set Variable: Sys101:BGS Volume Multiplier [%] = 50 + 0 
  | | |■Set Variable: Sys102:SE Volume Multiplier [%] = 50 + 0 
  | | |▼ <==Ver3.00修正
- | | |■Set Variable: Sys52:Confirm Key (Keyboard) = 144 + 0 
- | | |■Set Variable: Sys53:Cancel Key (Keyboard) = 145 + 0 
- | | |■Set Variable: Sys54:Sub Key (Keyboard) = 146 + 0 
- | | |■Set Variable: Sys55:Confirm Key (Pad) = 301 + 0 
- | | |■Set Variable: Sys56:Cancel Key (Pad) = 302 + 0 
- | | |■Set Variable: Sys57:Sub Key (Pad) = 303 + 0 
+ | | |■Set Variable: Sys52:Confirm (Keyboard) = 144 + 0 
+ | | |■Set Variable: Sys53:Cancel (Keyboard) = 145 + 0 
+ | | |■Set Variable: Sys54:Sub (Keyboard) = 146 + 0 
+ | | |■Set Variable: Sys55:Confirm (Pad) = 301 + 0 
+ | | |■Set Variable: Sys56:Cancel (Pad) = 302 + 0 
+ | | |■Set Variable: Sys57:Sub (Pad) = 303 + 0 
  | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 1:表示内容更新 / 0
  | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
  | | |▼ 切り替えた決定キーがキャンセルになってたらおかしなことになるので、
@@ -1474,12 +1474,12 @@ WoditorEvCOMMAND_END
  |■Set Variable: Sys100:BGM Volume Multiplier [%] = CSelf63[[保存]ＢＧＭ音量] + 0 
  |■Set Variable: Sys101:BGS Volume Multiplier [%] = CSelf63[[保存]ＢＧＭ音量] + 0 
  |■Set Variable: Sys102:SE Volume Multiplier [%] = CSelf64[[保存]ＳＥ音量] + 0 
- |■Set Variable: Sys52:Confirm Key (Keyboard) = CSelf65[[保存]キーボ決定] + 0 
- |■Set Variable: Sys53:Cancel Key (Keyboard) = CSelf66[[保存]キーボキャンセル] + 0 
- |■Set Variable: Sys54:Sub Key (Keyboard) = CSelf67[[保存]キーボサブ] + 0 
- |■Set Variable: Sys55:Confirm Key (Pad) = CSelf68[[保存]パッド決定] + 0 
- |■Set Variable: Sys56:Cancel Key (Pad) = CSelf69[[保存]パッドキャンセル] + 0 
- |■Set Variable: Sys57:Sub Key (Pad) = CSelf70[[保存]パッドサブ] + 0 
+ |■Set Variable: Sys52:Confirm (Keyboard) = CSelf65[[保存]キーボ決定] + 0 
+ |■Set Variable: Sys53:Cancel (Keyboard) = CSelf66[[保存]キーボキャンセル] + 0 
+ |■Set Variable: Sys54:Sub (Keyboard) = CSelf67[[保存]キーボサブ] + 0 
+ |■Set Variable: Sys55:Confirm (Pad) = CSelf68[[保存]パッド決定] + 0 
+ |■Set Variable: Sys56:Cancel (Pad) = CSelf69[[保存]パッドキャンセル] + 0 
+ |■Set Variable: Sys57:Sub (Pad) = CSelf70[[保存]パッドサブ] + 0 
  |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 1:キャンセル音
  |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / -1:画面消去 / -1
  |■Call Event [Name]: ["X[移]メニュー時文章表示"] <CommonEv 101>  / -1:消去 / 

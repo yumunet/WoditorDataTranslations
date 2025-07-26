@@ -1040,7 +1040,7 @@ WoditorEvCOMMAND_END
  | | | |■
  | | |◇Loop End Point◇◇
  | | |▼ セーブデータの存在判定
- | | |■Read Save Data:  CSelf59[セーブ有無判定] = Save Data [CSelf8[ｳｨﾝﾄﾞｳ画像名/ｾｰﾌﾞﾌｧｲﾙ名]]'s Sys24:[RO] Save Data Read? (1:Success)
+ | | |■Read Save Data:  CSelf59[セーブ有無判定] = Save Data [CSelf8[ｳｨﾝﾄﾞｳ画像名/ｾｰﾌﾞﾌｧｲﾙ名]]'s Sys24:[RO] Save Data Read Check (1:Success)
  | | |■Condition (Number):   [1] CSelf59[セーブ有無判定] ==  0  /  [2] CSelf59[セーブ有無判定] ==  1  
  | | |-◇Condition:  [1]  [ CSelf59[セーブ有無判定] == 0   ] Case↓
  | | | |▼ セーブデータが存在しない場合は「データがありません」

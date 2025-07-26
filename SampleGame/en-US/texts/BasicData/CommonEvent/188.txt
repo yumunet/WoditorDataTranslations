@@ -482,8 +482,8 @@ WoditorEvCOMMAND_END
  |■
 ◇Loop End Point◇◇
 ■Write to DB(Var): VarDB[ "Base System Variables":72:0 ] (18:[Battle] Enemy Group ID:Number) =  CSelf0[敵グループ番号]
-■Set Variable: Sys59:Repeat Confirm Key? (1=ON) = 1 + 0 
-■Set Variable: Sys60:Repeat Cancel Key? (1=ON) = 1 + 0 
+■Set Variable: Sys59:Repeat Confirm Key? (1:ON) = 1 + 0 
+■Set Variable: Sys60:Repeat Cancel Key? (1:ON) = 1 + 0 
 ■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 53:戦闘開始
 ■Call Event [Name]: ["X[共]全体エフェクト実行"] <CommonEv 67>  / 10:白フラッシュ / 30
 ■Call Event [Name]: ["X┣◆戦闘初期化"] <CommonEv 189> 
