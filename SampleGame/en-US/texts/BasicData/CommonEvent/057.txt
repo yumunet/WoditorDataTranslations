@@ -1,5 +1,5 @@
 COMMON_ID=57
-COMMON_NAME=X[共]所持金取得
+COMMON_NAME=X[Com]Get Current Money
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -66,7 +66,7 @@ DEFAULT_VAL_1=0
 DEFAULT_VAL_2=0
 DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
-RETURN_VAL_NAME=所持金
+RETURN_VAL_NAME=Money
 RETURN_VAL_TARGET=10
 CSELF_NAME_0=
 CSELF_NAME_1=
@@ -78,7 +78,7 @@ CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=
-CSELF_NAME_10=一時変数A
+CSELF_NAME_10=Money
 CSELF_NAME_11=
 CSELF_NAME_12=
 CSELF_NAME_13=
@@ -172,9 +172,9 @@ COMMAND_NUM=7
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
-[103][0,1]<0>()("　基本システム内で主人公の所持金を取得するときは、必ずこのコモンイベントを使用します。")
-[103][0,1]<0>()("　移動中でも戦闘中でも有効です。")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("  This common event is always used to get the money in the base system.")
+[103][0,1]<0>()("  Works both on the map and in battle.")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [250][5,4]<0>(6,0,0,331776,1600010)("","Party","","Current Money")
 [0][0,0]<0>()()
@@ -182,10 +182,10 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
-▼ 　基本システム内で主人公の所持金を取得するときは、必ずこのコモンイベントを使用します。
-▼ 　移動中でも戦闘中でも有効です。
+▼ [Process Overview]
+▼   This common event is always used to get the money in the base system.
+▼   Works both on the map and in battle.
 ▼ ―――――――――――――――――――――――――――――――――――
-■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "Party":0:"Current Money" ] (6:Main Settings:0) 
+■Load DB(Var):  CSelf10[Money] = VarDB[ "Party":0:"Current Money" ] (6:Main Settings:0) 
 ■
 [COMMAND_TEXT_END]

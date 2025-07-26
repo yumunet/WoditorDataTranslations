@@ -61,14 +61,14 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ To determine whether the player has "Dungeon Key," assign the item count to Self Variable 0.
-■Call Event: This Ev Self0 = Common 17: [ ▲アイテム所持数取得 ] / 19:Dungeon Key
+■Call Event: This Ev Self0 = Common 17: [ ▲Get Item Quantity ] / 19:Dungeon Key
 ▼ If the player has 1 or more, transfer to Dungeon.
 ▼   (Even if an item can only be obtained once in the game,
 ▼   it's safer to use the condition “1 or more.”)
 ■Condition (Number):   [1] This Ev Self0 >=  1  /  [2] This Ev Self0 ==  0  
 -◇Condition:  [1]  [ This Ev Self0 >= 1   ] Case↓
  |▼ Disable saving inside the dungeon.
- |■Call Event: Common 15: [ ○セーブ許可・禁止設定 ] / 0:セーブを禁止する
+ |■Call Event: Common 15: [ ○ Change Save Availability ] / 0:Disable Saving
  |▼ Move player.
  |■Transfer: Hero ▲ Map ID 3 [Dungeon] X:7 Y:27  [Transition with Fade]
  |■

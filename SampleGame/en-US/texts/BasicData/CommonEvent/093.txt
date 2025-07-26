@@ -1,5 +1,5 @@
 COMMON_ID=93
-COMMON_NAME=X[移]装備画面描画
+COMMON_NAME=X[Map]Draw Equip Screen
 COMMAND_COLOR=5
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -172,16 +172,16 @@ COMMAND_NUM=781
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　- 装備画面の描画・消去処理")
 [103][0,1]<0>()("　- 選択状態に応じたカーソル描画処理")
 [103][0,1]<0>()("　- パラメータ変動表示処理")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("【ピクチャ】")
 [103][0,1]<0>()("　基本ピクチャ＋0　＝　下地")
@@ -333,7 +333,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<1>(1600010,10,0,1024)()
 [150][15,0]<1>(21040897,1600011,7,0,0,-1000000,-1000000,1600010,0,-1000000,-1000000,0,16777216,0,1600021)()
 [150][6,0]<1>(16777218,1600011,0,7,0,1600021)()
-[300][6,1]<1>(0,4,-1,-1,2,1)("X[共]万能ｳｨﾝﾄﾞｳ描画処理")
+[300][6,1]<1>(0,4,-1,-1,2,1)("X[Com]Draw Universal Window")
 [172][0,0]<1>()()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
@@ -353,11 +353,11 @@ WoditorEvCOMMAND_START
 [103][0,1]<3>()("各種変動値を0にリセット")
 [121][5,0]<3>(1600082,0,0,65536,7)()
 [103][0,1]<3>()("万能ウィンドウ表示")
-[300][6,1]<3>(0,4,0,-1,2,1)("X[共]万能ｳｨﾝﾄﾞｳ描画処理")
+[300][6,1]<3>(0,4,0,-1,2,1)("X[Com]Draw Universal Window")
 [103][0,1]<3>()("パラメータを計算")
-[300][3,1]<3>(0,1,1600001)("X[移]一時ｽﾃ計算<初期化>")
-[300][3,1]<3>(0,1,1600001)("X[移]一時ｽﾃ計算<装備補正>")
-[300][3,1]<3>(0,1,1600001)("X[移]一時ｽﾃ計算<状態補正>")
+[300][3,1]<3>(0,1,1600001)("X[Map]CalcTempStats <Initialize>")
+[300][3,1]<3>(0,1,1600001)("X[Map]CalcTempStats <Equipments>")
+[300][3,1]<3>(0,1,1600001)("X[Map]CalcTempStats <StatusEffects>")
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
 [103][0,1]<3>()("●更新モード")
@@ -687,7 +687,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<5>(1600042,1600035,0,0)()
 [121][4,0]<5>(1600042,1600039,1600043,8448)()
 [103][0,1]<5>()("装備名を取得する")
-[300][5,1]<5>(0,16777218,1600001,1600043,1600010)("X[移]選択箇所装備コード取得")
+[300][5,1]<5>(0,16777218,1600001,1600043,1600010)("X[Map]Get Equipment ID")
 [121][4,0]<5>(1600059,0,0,0)()
 [111][10,0]<5>(3,1600010,30000,1,1600010,20000,1,1600010,20000,4)()
 [401][1,0]<5>(1)()
@@ -956,16 +956,16 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　- 装備画面の描画・消去処理
 ▼ 　- 選択状態に応じたカーソル描画処理
 ▼ 　- パラメータ変動表示処理
 ▼ 
-▼ 【このコモンイベント内で操作しているデータベース】
+▼ [Databases Accessed by This Common Event]
 ▼  
-▼ 【ここから呼び出している別コモンイベント】
+▼ [Other Common Events Called from Here]
 ▼  
-▼ 【どのコモンイベントから主に呼び出されているか】
+▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ 【ピクチャ】
 ▼ 　基本ピクチャ＋0　＝　下地
@@ -1117,7 +1117,7 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf10[一時変数A] /= 10 + 0 
  |■Picture Move: CSelf11[一時変数B] to CSelf21[一時ピクチャ番号]  Relative X:CSelf10[一時変数A] Y:0 / 7(0)Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
  |■Picture Erase: CSelf11[一時変数B] to CSelf21[一時ピクチャ番号]  / 0(7)Frames
- |■Call Event [Name]: ["X[共]万能ｳｨﾝﾄﾞｳ描画処理"] <CommonEv 64>  / -1:消去 / -1 / 2:最下部に横幅最大表示 / 1:左上から展開
+ |■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / -1:Erase / -1 / 2:Display at Bottom, Full Width / 1:Expand from Top-Left
  |■Exit Event
  |■
 ◇End◇
@@ -1137,11 +1137,11 @@ WoditorEvCOMMAND_END
  | | |▼ 各種変動値を0にリセット
  | | |■Set Variable: CSelf82[攻撃力増減値] to CSelf89[クリティカル増減値] = 0 + 0 
  | | |▼ 万能ウィンドウ表示
- | | |■Call Event [Name]: ["X[共]万能ｳｨﾝﾄﾞｳ描画処理"] <CommonEv 64>  / 0:表示 / -1 / 2:最下部に横幅最大表示 / 1:左上から展開
+ | | |■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / 0:Display / -1 / 2:Display at Bottom, Full Width / 1:Expand from Top-Left
  | | |▼ パラメータを計算
- | | |■Call Event [Name]: ["X[移]一時ｽﾃ計算<初期化>"] <CommonEv 122>  / CSelf1[[1]主人公ID]
- | | |■Call Event [Name]: ["X[移]一時ｽﾃ計算<装備補正>"] <CommonEv 123>  / CSelf1[[1]主人公ID]
- | | |■Call Event [Name]: ["X[移]一時ｽﾃ計算<状態補正>"] <CommonEv 124>  / CSelf1[[1]主人公ID]
+ | | |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf1[[1]主人公ID]
+ | | |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf1[[1]主人公ID]
+ | | |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf1[[1]主人公ID]
  | | |■
  | |-◇Condition:  [2]  [ CSelf0[処理モード] == 1   ] Case↓
  | | |▼ ●更新モード
@@ -1471,7 +1471,7 @@ WoditorEvCOMMAND_END
  | | | | |■Set Variable: CSelf42[一時項目表示Y] = CSelf35[[保持]カーソル基本Y] + 0 
  | | | | |■Set Variable: CSelf42[一時項目表示Y] += CSelf39[[保持]カーソル移動縦幅] * CSelf43[処理中個数] 
  | | | | |▼ 装備名を取得する
- | | | | |■Call Event [Name]: CSelf10[一時変数A] = ["X[移]選択箇所装備コード取得"] <CommonEv 106>  / CSelf1[[1]主人公ID] / CSelf43[処理中個数]
+ | | | | |■Call Event [Name]: CSelf10[一時変数A] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf1[[1]主人公ID] / CSelf43[処理中個数]
  | | | | |■Set Variable: CSelf59[装備空欄フラグ] = 0 + 0 
  | | | | |■Condition (Number):   [1] CSelf10[一時変数A] >=  30000  /  [2] CSelf10[一時変数A] >=  20000  /  [3] CSelf10[一時変数A] <  20000  
  | | | | |-◇Condition:  [1]  [ CSelf10[一時変数A] >= 30000   ] Case↓

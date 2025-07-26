@@ -1,5 +1,5 @@
 COMMON_ID=75
-COMMON_NAME=X[移]状態付与/消去
+COMMON_NAME=X[Map]Add/Remove State
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -176,7 +176,7 @@ COMMAND_NUM=339
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　基本システムのマップ移動時に主人公の状態異常を付与・消去するときは、必ずこのコモンイベントを使用します。")
 [103][0,1]<0>()("　移動中のみ有効です。")
 [103][0,1]<0>()(" ")
@@ -186,11 +186,11 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("　「いま状態にかかっているか」「最短で残り何歩で回復するか」の情報を")
 [103][0,1]<0>()("　主人公一時DBに記憶しています。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [121][4,0]<0>(1600018,-1,0,0)()
 [111][4,0]<0>(1,1600002,2,2)()
@@ -518,7 +518,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　基本システムのマップ移動時に主人公の状態異常を付与・消去するときは、必ずこのコモンイベントを使用します。
 ▼ 　移動中のみ有効です。
 ▼  
@@ -528,11 +528,11 @@ WoditorEvCOMMAND_END
 ▼ 　「いま状態にかかっているか」「最短で残り何歩で回復するか」の情報を
 ▼ 　主人公一時DBに記憶しています。
 ▼ 
-▼ 【このコモンイベント内で操作しているデータベース】
+▼ [Databases Accessed by This Common Event]
 ▼  
-▼ 【ここから呼び出している別コモンイベント】
+▼ [Other Common Events Called from Here]
 ▼  
-▼ 【どのコモンイベントから主に呼び出されているか】
+▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Set Variable: CSelf18[全解除フラグ（残す状態番号を格納 -1でﾅｼ）] = -1 + 0 
 ■Condition (Number):   [1] CSelf2[付与？=1 消去？=0　更新？=2] ==  2  
@@ -612,12 +612,12 @@ WoditorEvCOMMAND_END
  | | | |▼ 変化元の状態を解除
  | | | |■Write to DB(Var): VarDB[ "┗ State List":CSelf0[主人公データID]:CSelf34[変化元状態] ] (5:-:-) =  0
  | | | |▼ 変化先の状態を付与
- | | | |■Call Event: [+0 From This Common]  Common 75: [ X[移]状態付与/消去 ] / CSelf0[主人公データID] / CSelf32[重複の変化先状態] / 1:付与
+ | | | |■Call Event: [+0 From This Common]  Common 75: [ X[Map]Add/Remove State ] / CSelf0[主人公データID] / CSelf32[重複の変化先状態] / 1:付与
  | | | |■Exit Event
  | | | |■
  | | |-◇Condition:  [3]  [ CSelf33[最終変化先状態] <= -1   ] Case↓
  | | | |▼ 治る場合
- | | | |■Call Event: [+0 From This Common]  Common 75: [ X[移]状態付与/消去 ] / CSelf0[主人公データID] / CSelf34[変化元状態] / 0:消去
+ | | | |■Call Event: [+0 From This Common]  Common 75: [ X[Map]Add/Remove State ] / CSelf0[主人公データID] / CSelf34[変化元状態] / 0:消去
  | | | |■Exit Event
  | | | |■
  | | |◇End◇

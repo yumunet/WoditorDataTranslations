@@ -1,5 +1,5 @@
 COMMON_ID=159
-COMMON_NAME=X[戦]技能選択実行
+COMMON_NAME=X[Bat]Select Skill
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -170,7 +170,7 @@ COMMAND_NUM=332
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　技能選択が実行されたときの、技能選択＋ターゲット選択処理を行います。")
 [103][0,1]<0>()("　また、コマンド選択時の直接技能発動処理や、アイテムからの技能起動処理も行います。")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
@@ -219,14 +219,14 @@ WoditorEvCOMMAND_START
 [401][1,0]<2>(1)()
 [103][0,1]<3>()("ここで主人公IDを取得する")
 [121][4,0]<3>(1600099,1600020,0,0)()
-[300][4,1]<3>(0,16777217,1600020,1600011)("X[移]選択位置主人公ID取得")
-[300][5,1]<3>(0,16777218,10,1600000,1600098)("X[戦]記憶キー位置取得")
+[300][4,1]<3>(0,16777217,1600020,1600011)("X[Map]Get Ally ID")
+[300][5,1]<3>(0,16777218,10,1600000,1600098)("X[Bat]Get Cursor Memory Pos")
 [212][0,1]<3>()("技能選択")
-[300][5,1]<3>(0,3,12,-1,-1)("X[戦]味方欄_単体描画")
+[300][5,1]<3>(0,3,12,-1,-1)("X[Bat]Ally Box: Draw One")
 [103][0,1]<3>()("万能ウィンドウ設定を初期化")
-[300][3,1]<3>(0,1,1600000)("X[戦]技能一覧算出")
+[300][3,1]<3>(0,1,1600000)("X[Bat]Create Skill List")
 [103][0,1]<3>()("万能ウィンドウ表示")
-[300][4,1]<3>(0,2,0,1600000)("X[戦]上部ステータス描画")
+[300][4,1]<3>(0,2,0,1600000)("X[Bat]Draw Upper Status")
 [103][0,1]<3>()("万能ウィンドウのサイズ設定")
 [121][4,0]<3>(1600035,1,1600088,8192)()
 [250][5,4]<3>(18,9,0,65536,1600035)("","Base System Variables","","")
@@ -242,29 +242,29 @@ WoditorEvCOMMAND_START
 [250][5,4]<3>(18,14,0,65536,1600035)("","Base System Variables","","")
 [121][4,0]<3>(1600035,3,1600089,8192)()
 [250][5,4]<3>(18,16,0,65536,1600035)("","Base System Variables","","")
-[300][6,1]<3>(0,4,0,-1,4,1)("X[共]万能ｳｨﾝﾄﾞｳ描画処理")
+[300][6,1]<3>(0,4,0,-1,4,1)("X[Com]Draw Universal Window")
 [103][0,1]<3>()("万能ウィンドウ選択処理を実行")
 [179][1,0]<3>(1)()
 [103][0,1]<4>()("万能ウィンドウ選択処理を実行")
 [250][5,4]<4>(18,21,0,65536,1600098)("","Base System Variables","","")
-[300][4,1]<4>(0,16777217,2,1600022)("X[共]万能ｳｨﾝﾄﾞｳ選択実行")
+[300][4,1]<4>(0,16777217,2,1600022)("X[Com]U-Window: Select")
 [250][5,4]<4>(18,61,0,69632,1600098)("","Base System Variables","","")
-[300][5,1]<4>(0,3,10,1600000,1600098)("X[戦]記憶キー位置設定")
+[300][5,1]<4>(0,3,10,1600000,1600098)("X[Bat]Set Cursor Memory Pos")
 [0][0,0]<4>()()
 [498][0,0]<3>()()
-[300][6,1]<3>(0,4,-1,0,4,1)("X[共]万能ｳｨﾝﾄﾞｳ描画処理")
+[300][6,1]<3>(0,4,-1,0,4,1)("X[Com]Draw Universal Window")
 [99][1,0]<3>(1)()
 [103][0,1]<3>()("技能使用時の処理")
 [111][7,0]<3>(2,1600022,-100,2,1600022,0,1)()
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("キャンセル時は終了")
-[300][4,1]<4>(0,2,-1,-1)("X[戦]上部ステータス描画")
+[300][4,1]<4>(0,2,-1,-1)("X[Bat]Draw Upper Status")
 [121][4,0]<4>(1600099,-1,0,0)()
 [172][0,0]<4>()()
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
 [103][0,1]<4>()("何か技能を選んでいた場合、ターゲット選択 or 実行")
-[300][4,1]<4>(0,2,-1,-1)("X[戦]上部ステータス描画")
+[300][4,1]<4>(0,2,-1,-1)("X[Bat]Draw Upper Status")
 [121][4,0]<4>(1600030,1600022,0,0)()
 [213][0,1]<4>()("使用処理2")
 [0][0,0]<4>()()
@@ -312,9 +312,9 @@ WoditorEvCOMMAND_START
 [401][1,0]<4>(1)()
 [103][0,1]<5>()("0＝味方一人")
 [103][0,1]<5>()("キャラ一覧を表示して選択させる")
-[300][5,1]<5>(0,16777218,1600000,0,1600011)("X[戦]味方対象選択実行")
+[300][5,1]<5>(0,16777218,1600000,0,1600011)("X[Bat]Select Ally Target")
 [103][0,1]<5>()("Ver2.28　戦闘中に点滅が止まらなくなるバグ修正")
-[300][5,1]<5>(0,3,12,-1,-1)("X[戦]味方欄_単体描画")
+[300][5,1]<5>(0,3,12,-1,-1)("X[Bat]Ally Box: Draw One")
 [111][4,0]<5>(1,1600011,-1,3)()
 [401][1,0]<5>(1)()
 [103][0,1]<6>()("キャンセルなら終了　カーソル点滅を消す")
@@ -332,21 +332,21 @@ WoditorEvCOMMAND_START
 [0][0,0]<5>()()
 [401][1,0]<4>(2)()
 [103][0,1]<5>()("2＝味方全体")
-[300][5,1]<5>(0,3,10,-1,-1)("X[戦]味方欄_単体描画")
+[300][5,1]<5>(0,3,10,-1,-1)("X[Bat]Ally Box: Draw One")
 [103][0,1]<5>()("決定かキャンセルか、だけ受付する")
 [123][2,0]<5>(1600012,176)()
 [103][0,1]<5>()("Ver2.28　戦闘中に点滅が止まらなくなるバグ修正")
-[300][5,1]<5>(0,3,12,-1,-1)("X[戦]味方欄_単体描画")
+[300][5,1]<5>(0,3,12,-1,-1)("X[Bat]Ally Box: Draw One")
 [111][7,0]<5>(2,1600012,10,2,1600012,11,2)()
 [401][1,0]<5>(1)()
 [103][0,1]<6>()("決定なら使用")
-[300][3,1]<6>(0,1,0)("X[共]システムSE再生")
+[300][3,1]<6>(0,1,0)("X[Com]Play System Sound")
 [121][4,0]<6>(1600099,-10,1600024,4096)()
 [172][0,0]<6>()()
 [0][0,0]<6>()()
 [401][1,0]<5>(2)()
 [103][0,1]<6>()("キャンセルなら終了")
-[300][3,1]<6>(0,1,1)("X[共]システムSE再生")
+[300][3,1]<6>(0,1,1)("X[Com]Play System Sound")
 [121][4,0]<6>(1600099,-1,0,0)()
 [111][4,0]<6>(1,1600002,0,2)()
 [401][1,0]<6>(1)()
@@ -361,22 +361,22 @@ WoditorEvCOMMAND_START
 [111][7,0]<4>(2,1600029,3,2,1600029,4,2)()
 [401][1,0]<4>(1)()
 [103][0,1]<5>()("味方ランダム一人")
-[300][5,1]<5>(0,3,11,-1,-1)("X[戦]味方欄_単体描画")
+[300][5,1]<5>(0,3,11,-1,-1)("X[Bat]Ally Box: Draw One")
 [103][0,1]<5>()("決定かキャンセルか、だけ受付する")
 [123][2,0]<5>(1600012,176)()
 [103][0,1]<5>()("Ver2.28　戦闘中に点滅が止まらなくなるバグ修正")
-[300][5,1]<5>(0,3,12,-1,-1)("X[戦]味方欄_単体描画")
+[300][5,1]<5>(0,3,12,-1,-1)("X[Bat]Ally Box: Draw One")
 [111][7,0]<5>(2,1600012,10,2,1600012,11,2)()
 [401][1,0]<5>(1)()
 [103][0,1]<6>()("決定なら使用")
-[300][3,1]<6>(0,1,0)("X[共]システムSE再生")
+[300][3,1]<6>(0,1,0)("X[Com]Play System Sound")
 [121][4,0]<6>(1600099,-11,1600024,4096)()
-[300][5,1]<6>(0,3,12,-1,0)("X[戦]味方欄_単体描画")
+[300][5,1]<6>(0,3,12,-1,0)("X[Bat]Ally Box: Draw One")
 [172][0,0]<6>()()
 [0][0,0]<6>()()
 [401][1,0]<5>(2)()
 [103][0,1]<6>()("キャンセルなら終了")
-[300][3,1]<6>(0,1,1)("X[共]システムSE再生")
+[300][3,1]<6>(0,1,1)("X[Com]Play System Sound")
 [121][4,0]<6>(1600099,-1,0,0)()
 [111][4,0]<6>(1,1600002,0,2)()
 [401][1,0]<6>(1)()
@@ -390,9 +390,9 @@ WoditorEvCOMMAND_START
 [401][1,0]<4>(2)()
 [103][0,1]<5>()("自分以外の味方一人")
 [212][0,1]<5>()("自分以外の味方一人")
-[300][5,1]<5>(0,16777218,1600000,1,1600011)("X[戦]味方対象選択実行")
+[300][5,1]<5>(0,16777218,1600000,1,1600011)("X[Bat]Select Ally Target")
 [103][0,1]<5>()("Ver2.28　戦闘中に点滅が止まらなくなるバグ修正")
-[300][5,1]<5>(0,3,12,-1,-1)("X[戦]味方欄_単体描画")
+[300][5,1]<5>(0,3,12,-1,-1)("X[Bat]Ally Box: Draw One")
 [111][7,0]<5>(18,1600011,-1,3,1600011,1600000,2)()
 [401][1,0]<5>(1)()
 [103][0,1]<6>()("キャンセルなら終了　カーソル点滅を消す")
@@ -406,11 +406,11 @@ WoditorEvCOMMAND_START
 [0][0,0]<6>()()
 [401][1,0]<5>(2)()
 [103][0,1]<6>()("発動者と同じ場合は警告")
-[300][3,1]<6>(0,1,2)("X[共]システムSE再生")
+[300][3,1]<6>(0,1,2)("X[Com]Play System Sound")
 [122][2,1]<6>(1600009,0)("自分自身には使用できません。")
-[300][4,1]<6>(0,17,0,1600009)("X[戦]警告文章表示")
+[300][4,1]<6>(0,17,0,1600009)("X[Bat]Display Warning Message")
 [123][2,0]<6>(1600012,176)()
-[300][4,1]<6>(0,17,-1,1600009)("X[戦]警告文章表示")
+[300][4,1]<6>(0,17,-1,1600009)("X[Bat]Display Warning Message")
 [213][0,1]<6>()("自分以外の味方一人")
 [0][0,0]<6>()()
 [420][1,0]<5>(0)()
@@ -424,7 +424,7 @@ WoditorEvCOMMAND_START
 [111][10,0]<4>(3,1600029,10,2,1600029,11,2,1600029,12,2)()
 [401][1,0]<4>(1)()
 [103][0,1]<5>()("敵単体")
-[300][4,1]<5>(0,16777217,0,1600011)("X[戦]敵対象選択実行")
+[300][4,1]<5>(0,16777217,0,1600011)("X[Bat]Select Enemy Target")
 [111][4,0]<5>(1,1600011,-1,3)()
 [401][1,0]<5>(1)()
 [103][0,1]<6>()("キャンセルなら終了　カーソル点滅を消す")
@@ -441,20 +441,20 @@ WoditorEvCOMMAND_START
 [172][0,0]<5>()()
 [0][0,0]<5>()()
 [401][1,0]<4>(2)()
-[300][4,1]<5>(0,2,10,-1)("X[戦]敵キャラ_単体描画")
+[300][4,1]<5>(0,2,10,-1)("X[Bat]Enemy: Draw One")
 [103][0,1]<5>()("決定かキャンセルか、だけ受付する")
 [123][2,0]<5>(1600012,176)()
-[300][4,1]<5>(0,2,12,-1)("X[戦]敵キャラ_単体描画")
+[300][4,1]<5>(0,2,12,-1)("X[Bat]Enemy: Draw One")
 [111][7,0]<5>(2,1600012,10,2,1600012,11,2)()
 [401][1,0]<5>(1)()
 [103][0,1]<6>()("決定なら使用（敵全体）")
-[300][3,1]<6>(0,1,0)("X[共]システムSE再生")
+[300][3,1]<6>(0,1,0)("X[Com]Play System Sound")
 [121][4,0]<6>(1600099,-20,1600024,4096)()
 [172][0,0]<6>()()
 [0][0,0]<6>()()
 [401][1,0]<5>(2)()
 [103][0,1]<6>()("キャンセルなら終了")
-[300][3,1]<6>(0,1,1)("X[共]システムSE再生")
+[300][3,1]<6>(0,1,1)("X[Com]Play System Sound")
 [121][4,0]<6>(1600099,-1,0,0)()
 [111][4,0]<6>(1,1600002,0,2)()
 [401][1,0]<6>(1)()
@@ -467,20 +467,20 @@ WoditorEvCOMMAND_START
 [0][0,0]<5>()()
 [401][1,0]<4>(3)()
 [103][0,1]<5>()("敵一体ランダム")
-[300][4,1]<5>(0,2,10,-1)("X[戦]敵キャラ_単体描画")
+[300][4,1]<5>(0,2,10,-1)("X[Bat]Enemy: Draw One")
 [103][0,1]<5>()("決定かキャンセルか、だけ受付する")
 [123][2,0]<5>(1600012,176)()
-[300][4,1]<5>(0,2,12,-1)("X[戦]敵キャラ_単体描画")
+[300][4,1]<5>(0,2,12,-1)("X[Bat]Enemy: Draw One")
 [111][7,0]<5>(2,1600012,10,2,1600012,11,2)()
 [401][1,0]<5>(1)()
 [103][0,1]<6>()("決定なら使用（敵ランダム）")
-[300][3,1]<6>(0,1,0)("X[共]システムSE再生")
+[300][3,1]<6>(0,1,0)("X[Com]Play System Sound")
 [121][4,0]<6>(1600099,-21,1600024,4096)()
 [172][0,0]<6>()()
 [0][0,0]<6>()()
 [401][1,0]<5>(2)()
 [103][0,1]<6>()("キャンセルなら終了")
-[300][3,1]<6>(0,1,1)("X[共]システムSE再生")
+[300][3,1]<6>(0,1,1)("X[Com]Play System Sound")
 [121][4,0]<6>(1600099,-1,0,0)()
 [111][4,0]<6>(1,1600002,0,2)()
 [401][1,0]<6>(1)()
@@ -505,7 +505,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　技能選択が実行されたときの、技能選択＋ターゲット選択処理を行います。
 ▼ 　また、コマンド選択時の直接技能発動処理や、アイテムからの技能起動処理も行います。
 ▼ ―――――――――――――――――――――――――――――――――――
@@ -554,14 +554,14 @@ WoditorEvCOMMAND_END
  | |-◇Condition:  [1]  [ CSelf20 >= 0   ] Case↓
  | | |▼ ここで主人公IDを取得する
  | | |■Set Variable: CSelf99[使用対象] = CSelf20 + 0 
- | | |■Call Event [Name]: CSelf11[ターゲット] = ["X[移]選択位置主人公ID取得"] <CommonEv 105>  / CSelf20
- | | |■Call Event [Name]: CSelf98 = ["X[戦]記憶キー位置取得"] <CommonEv 155>  / 10:[戦闘]技能(要ｷｬﾗ指定) / CSelf0[発動スロット]
+ | | |■Call Event [Name]: CSelf11[ターゲット] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf20
+ | | |■Call Event [Name]: CSelf98 = ["X[Bat]Get Cursor Memory Pos"] <CommonEv 155>  / 10:[戦闘]技能(要ｷｬﾗ指定) / CSelf0[発動スロット]
  | | |●Label Point [技能選択] <<<<<<<<<<<<<<<<<<<<<<<<★
- | | |■Call Event [Name]: ["X[戦]味方欄_単体描画"] <CommonEv 178>  / 12:カーソルOFF（対象位置　位置-1なら全部） / -1 / -1
+ | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 12:カーソルOFF（対象位置　位置-1なら全部） / -1 / -1
  | | |▼ 万能ウィンドウ設定を初期化
- | | |■Call Event [Name]: ["X[戦]技能一覧算出"] <CommonEv 154>  / CSelf0[発動スロット]
+ | | |■Call Event [Name]: ["X[Bat]Create Skill List"] <CommonEv 154>  / CSelf0[発動スロット]
  | | |▼ 万能ウィンドウ表示
- | | |■Call Event [Name]: ["X[戦]上部ステータス描画"] <CommonEv 185>  / 0:表示A（初期表示用　スライド表示＆全表示） / CSelf0[発動スロット]
+ | | |■Call Event [Name]: ["X[Bat]Draw Upper Status"] <CommonEv 185>  / 0:表示A（初期表示用　スライド表示＆全表示） / CSelf0[発動スロット]
  | | |▼ 万能ウィンドウのサイズ設定
  | | |■Set Variable: CSelf35[結果値] = 1 * CSelf88[座標倍率X[x10]] 
  | | |■Write to DB(Var): VarDB[ "Base System Variables":9:0 ] (18:Universal Window Display X:Number) =  CSelf35[結果値]
@@ -577,29 +577,29 @@ WoditorEvCOMMAND_END
  | | |■Write to DB(Var): VarDB[ "Base System Variables":14:0 ] (18:Universal Window Rows:Number) =  CSelf35[結果値]
  | | |■Set Variable: CSelf35[結果値] = 3 * CSelf89[座標倍率Y[x10]] 
  | | |■Write to DB(Var): VarDB[ "Base System Variables":16:0 ] (18:Universal Window Description Height:Number) =  CSelf35[結果値]
- | | |■Call Event [Name]: ["X[共]万能ｳｨﾝﾄﾞｳ描画処理"] <CommonEv 64>  / 0:表示 / -1 / 4:ｳｨﾝﾄﾞｳの下に表示 / 1:左上から展開
+ | | |■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / 0:Display / -1 / 4:Display Below Window / 1:Expand from Top-Left
  | | |▼ 万能ウィンドウ選択処理を実行
  | | |■Repeat Loop [ 1 ] Times
  | | | |▼ 万能ウィンドウ選択処理を実行
  | | | |■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) =  CSelf98
- | | | |■Call Event [Name]: CSelf22[一時技能ｺｰﾄﾞ] = ["X[共]万能ｳｨﾝﾄﾞｳ選択実行"] <CommonEv 65>  / 2:選択を終えるまでループ[ｶｰｿﾙ初期化しない]
+ | | | |■Call Event [Name]: CSelf22[一時技能ｺｰﾄﾞ] = ["X[Com]U-Window: Select"] <CommonEv 65>  / 2:Loop Until Selected (Don't Initialize Cursor)
  | | | |■Load DB(Var):  CSelf98 = VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) 
- | | | |■Call Event [Name]: ["X[戦]記憶キー位置設定"] <CommonEv 156>  / 10:[戦闘]技能(要ｷｬﾗ指定) / CSelf0[発動スロット] / CSelf98
+ | | | |■Call Event [Name]: ["X[Bat]Set Cursor Memory Pos"] <CommonEv 156>  / 10:[戦闘]技能(要ｷｬﾗ指定) / CSelf0[発動スロット] / CSelf98
  | | | |■
  | | |◇Loop End Point◇◇
- | | |■Call Event [Name]: ["X[共]万能ｳｨﾝﾄﾞｳ描画処理"] <CommonEv 64>  / -1:消去 / 0 / 4:ｳｨﾝﾄﾞｳの下に表示 / 1:左上から展開
+ | | |■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / -1:Erase / 0 / 4:Display Below Window / 1:Expand from Top-Left
  | | |■ [Special] Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
  | | |▼ 技能使用時の処理
  | | |■Condition (Number):   [1] CSelf22[一時技能ｺｰﾄﾞ] ==  -100  /  [2] CSelf22[一時技能ｺｰﾄﾞ] >=  0  
  | | |-◇Condition:  [1]  [ CSelf22[一時技能ｺｰﾄﾞ] == -100   ] Case↓
  | | | |▼ キャンセル時は終了
- | | | |■Call Event [Name]: ["X[戦]上部ステータス描画"] <CommonEv 185>  / -1:消去 / -1
+ | | | |■Call Event [Name]: ["X[Bat]Draw Upper Status"] <CommonEv 185>  / -1:消去 / -1
  | | | |■Set Variable: CSelf99[使用対象] = -1 + 0 
  | | | |■Exit Event
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf22[一時技能ｺｰﾄﾞ] >= 0   ] Case↓
  | | | |▼ 何か技能を選んでいた場合、ターゲット選択 or 実行
- | | | |■Call Event [Name]: ["X[戦]上部ステータス描画"] <CommonEv 185>  / -1:消去 / -1
+ | | | |■Call Event [Name]: ["X[Bat]Draw Upper Status"] <CommonEv 185>  / -1:消去 / -1
  | | | |■Set Variable: CSelf30[技能番号] = CSelf22[一時技能ｺｰﾄﾞ] + 0 
  | | | |●Label Jump [使用処理2] >>>>>>>>>>>>>>>>>>>>>>>>>
  | | | |■
@@ -647,9 +647,9 @@ WoditorEvCOMMAND_END
  | | | |-◇Condition:  [1]  [ CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] == 0   ] Case↓
  | | | | |▼ 0＝味方一人
  | | | | |▼ キャラ一覧を表示して選択させる
- | | | | |■Call Event [Name]: CSelf11[ターゲット] = ["X[戦]味方対象選択実行"] <CommonEv 161>  / CSelf0[発動スロット] / 0:全員選択可能
+ | | | | |■Call Event [Name]: CSelf11[ターゲット] = ["X[Bat]Select Ally Target"] <CommonEv 161>  / CSelf0[発動スロット] / 0:全員選択可能
  | | | | |▼ Ver2.28　戦闘中に点滅が止まらなくなるバグ修正
- | | | | |■Call Event [Name]: ["X[戦]味方欄_単体描画"] <CommonEv 178>  / 12:カーソルOFF（対象位置　位置-1なら全部） / -1 / -1
+ | | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 12:カーソルOFF（対象位置　位置-1なら全部） / -1 / -1
  | | | | |■Condition (Number):   [1] CSelf11[ターゲット] <=  -1  
  | | | | |-◇Condition:  [1]  [ CSelf11[ターゲット] <= -1   ] Case↓
  | | | | | |▼ キャンセルなら終了　カーソル点滅を消す
@@ -667,21 +667,21 @@ WoditorEvCOMMAND_END
  | | | | |■
  | | | |-◇Condition:  [2]  [ CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] == 2   ] Case↓
  | | | | |▼ 2＝味方全体
- | | | | |■Call Event [Name]: ["X[戦]味方欄_単体描画"] <CommonEv 178>  / 10:カーソルON（対象位置　位置-1なら全部） / -1 / -1
+ | | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 10:カーソルON（対象位置　位置-1なら全部） / -1 / -1
  | | | | |▼ 決定かキャンセルか、だけ受付する
  | | | | |■Key Input: CSelf12[一時変数２] [Wait For Input <!>]  Confirm(10) Cancel(11)
  | | | | |▼ Ver2.28　戦闘中に点滅が止まらなくなるバグ修正
- | | | | |■Call Event [Name]: ["X[戦]味方欄_単体描画"] <CommonEv 178>  / 12:カーソルOFF（対象位置　位置-1なら全部） / -1 / -1
+ | | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 12:カーソルOFF（対象位置　位置-1なら全部） / -1 / -1
  | | | | |■Condition (Number):   [1] CSelf12[一時変数２] ==  10  /  [2] CSelf12[一時変数２] ==  11  
  | | | | |-◇Condition:  [1]  [ CSelf12[一時変数２] == 10   ] Case↓
  | | | | | |▼ 決定なら使用
- | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 0:決定音
+ | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
  | | | | | |■Set Variable: CSelf99[使用対象] = -10 - CSelf24[即時発動] 
  | | | | | |■Exit Event
  | | | | | |■
  | | | | |-◇Condition:  [2]  [ CSelf12[一時変数２] == 11   ] Case↓
  | | | | | |▼ キャンセルなら終了
- | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 1:キャンセル音
+ | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 1:Cancel Sound
  | | | | | |■Set Variable: CSelf99[使用対象] = -1 + 0 
  | | | | | |■Condition (Number):   [1] CSelf2[モード] ==  0  
  | | | | | |-◇Condition:  [1]  [ CSelf2[モード] == 0   ] Case↓
@@ -696,22 +696,22 @@ WoditorEvCOMMAND_END
  | | | |■Condition (Number):   [1] CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] ==  3  /  [2] CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] ==  4  
  | | | |-◇Condition:  [1]  [ CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] == 3   ] Case↓
  | | | | |▼ 味方ランダム一人
- | | | | |■Call Event [Name]: ["X[戦]味方欄_単体描画"] <CommonEv 178>  / 11:カーソルランダムON / -1 / -1
+ | | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 11:カーソルランダムON / -1 / -1
  | | | | |▼ 決定かキャンセルか、だけ受付する
  | | | | |■Key Input: CSelf12[一時変数２] [Wait For Input <!>]  Confirm(10) Cancel(11)
  | | | | |▼ Ver2.28　戦闘中に点滅が止まらなくなるバグ修正
- | | | | |■Call Event [Name]: ["X[戦]味方欄_単体描画"] <CommonEv 178>  / 12:カーソルOFF（対象位置　位置-1なら全部） / -1 / -1
+ | | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 12:カーソルOFF（対象位置　位置-1なら全部） / -1 / -1
  | | | | |■Condition (Number):   [1] CSelf12[一時変数２] ==  10  /  [2] CSelf12[一時変数２] ==  11  
  | | | | |-◇Condition:  [1]  [ CSelf12[一時変数２] == 10   ] Case↓
  | | | | | |▼ 決定なら使用
- | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 0:決定音
+ | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
  | | | | | |■Set Variable: CSelf99[使用対象] = -11 - CSelf24[即時発動] 
- | | | | | |■Call Event [Name]: ["X[戦]味方欄_単体描画"] <CommonEv 178>  / 12:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0
+ | | | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 12:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0
  | | | | | |■Exit Event
  | | | | | |■
  | | | | |-◇Condition:  [2]  [ CSelf12[一時変数２] == 11   ] Case↓
  | | | | | |▼ キャンセルなら終了
- | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 1:キャンセル音
+ | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 1:Cancel Sound
  | | | | | |■Set Variable: CSelf99[使用対象] = -1 + 0 
  | | | | | |■Condition (Number):   [1] CSelf2[モード] ==  0  
  | | | | | |-◇Condition:  [1]  [ CSelf2[モード] == 0   ] Case↓
@@ -725,9 +725,9 @@ WoditorEvCOMMAND_END
  | | | |-◇Condition:  [2]  [ CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] == 4   ] Case↓
  | | | | |▼ 自分以外の味方一人
  | | | | |●Label Point [自分以外の味方一人] <<<<<<<<<<<<<<<<<<<<<<<<★
- | | | | |■Call Event [Name]: CSelf11[ターゲット] = ["X[戦]味方対象選択実行"] <CommonEv 161>  / CSelf0[発動スロット] / 1:自分以外
+ | | | | |■Call Event [Name]: CSelf11[ターゲット] = ["X[Bat]Select Ally Target"] <CommonEv 161>  / CSelf0[発動スロット] / 1:自分以外
  | | | | |▼ Ver2.28　戦闘中に点滅が止まらなくなるバグ修正
- | | | | |■Call Event [Name]: ["X[戦]味方欄_単体描画"] <CommonEv 178>  / 12:カーソルOFF（対象位置　位置-1なら全部） / -1 / -1
+ | | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 12:カーソルOFF（対象位置　位置-1なら全部） / -1 / -1
  | | | | |■Condition (Number):   [1] CSelf11[ターゲット] <=  -1  /  [2] CSelf11[ターゲット] ==  CSelf0[発動スロット]  
  | | | | |-◇Condition:  [1]  [ CSelf11[ターゲット] <= -1   ] Case↓
  | | | | | |▼ キャンセルなら終了　カーソル点滅を消す
@@ -741,11 +741,11 @@ WoditorEvCOMMAND_END
  | | | | | |■
  | | | | |-◇Condition:  [2]  [ CSelf11[ターゲット] == CSelf0[発動スロット]   ] Case↓
  | | | | | |▼ 発動者と同じ場合は警告
- | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 2:ブザー音
+ | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
  | | | | | |■Set String: CSelf9[表示文字列] = "自分自身には使用できません。"
- | | | | | |■Call Event [Name]: ["X[戦]警告文章表示"] <CommonEv 184>  / 0:初期表示 / CSelf9[表示文字列]
+ | | | | | |■Call Event [Name]: ["X[Bat]Display Warning Message"] <CommonEv 184>  / 0:初期表示 / CSelf9[表示文字列]
  | | | | | |■Key Input: CSelf12[一時変数２] [Wait For Input <!>]  Confirm(10) Cancel(11)
- | | | | | |■Call Event [Name]: ["X[戦]警告文章表示"] <CommonEv 184>  / -1:消去 / CSelf9[表示文字列]
+ | | | | | |■Call Event [Name]: ["X[Bat]Display Warning Message"] <CommonEv 184>  / -1:消去 / CSelf9[表示文字列]
  | | | | | |●Label Jump [自分以外の味方一人] >>>>>>>>>>>>>>>>>>>>>>>>>
  | | | | | |■
  | | | | |-◇Else
@@ -759,7 +759,7 @@ WoditorEvCOMMAND_END
  | | | |■Condition (Number):   [1] CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] ==  10  /  [2] CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] ==  11  /  [3] CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] ==  12  
  | | | |-◇Condition:  [1]  [ CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] == 10   ] Case↓
  | | | | |▼ 敵単体
- | | | | |■Call Event [Name]: CSelf11[ターゲット] = ["X[戦]敵対象選択実行"] <CommonEv 162>  / 0
+ | | | | |■Call Event [Name]: CSelf11[ターゲット] = ["X[Bat]Select Enemy Target"] <CommonEv 162>  / 0
  | | | | |■Condition (Number):   [1] CSelf11[ターゲット] <=  -1  
  | | | | |-◇Condition:  [1]  [ CSelf11[ターゲット] <= -1   ] Case↓
  | | | | | |▼ キャンセルなら終了　カーソル点滅を消す
@@ -776,20 +776,20 @@ WoditorEvCOMMAND_END
  | | | | |■Exit Event
  | | | | |■
  | | | |-◇Condition:  [2]  [ CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] == 11   ] Case↓
- | | | | |■Call Event [Name]: ["X[戦]敵キャラ_単体描画"] <CommonEv 179>  / 10:カーソルＯＮ / -1
+ | | | | |■Call Event [Name]: ["X[Bat]Enemy: Draw One"] <CommonEv 179>  / 10:カーソルＯＮ / -1
  | | | | |▼ 決定かキャンセルか、だけ受付する
  | | | | |■Key Input: CSelf12[一時変数２] [Wait For Input <!>]  Confirm(10) Cancel(11)
- | | | | |■Call Event [Name]: ["X[戦]敵キャラ_単体描画"] <CommonEv 179>  / 12:カーソルＯＦＦ / -1
+ | | | | |■Call Event [Name]: ["X[Bat]Enemy: Draw One"] <CommonEv 179>  / 12:カーソルＯＦＦ / -1
  | | | | |■Condition (Number):   [1] CSelf12[一時変数２] ==  10  /  [2] CSelf12[一時変数２] ==  11  
  | | | | |-◇Condition:  [1]  [ CSelf12[一時変数２] == 10   ] Case↓
  | | | | | |▼ 決定なら使用（敵全体）
- | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 0:決定音
+ | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
  | | | | | |■Set Variable: CSelf99[使用対象] = -20 - CSelf24[即時発動] 
  | | | | | |■Exit Event
  | | | | | |■
  | | | | |-◇Condition:  [2]  [ CSelf12[一時変数２] == 11   ] Case↓
  | | | | | |▼ キャンセルなら終了
- | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 1:キャンセル音
+ | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 1:Cancel Sound
  | | | | | |■Set Variable: CSelf99[使用対象] = -1 + 0 
  | | | | | |■Condition (Number):   [1] CSelf2[モード] ==  0  
  | | | | | |-◇Condition:  [1]  [ CSelf2[モード] == 0   ] Case↓
@@ -802,20 +802,20 @@ WoditorEvCOMMAND_END
  | | | | |■
  | | | |-◇Condition:  [3]  [ CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] == 12   ] Case↓
  | | | | |▼ 敵一体ランダム
- | | | | |■Call Event [Name]: ["X[戦]敵キャラ_単体描画"] <CommonEv 179>  / 10:カーソルＯＮ / -1
+ | | | | |■Call Event [Name]: ["X[Bat]Enemy: Draw One"] <CommonEv 179>  / 10:カーソルＯＮ / -1
  | | | | |▼ 決定かキャンセルか、だけ受付する
  | | | | |■Key Input: CSelf12[一時変数２] [Wait For Input <!>]  Confirm(10) Cancel(11)
- | | | | |■Call Event [Name]: ["X[戦]敵キャラ_単体描画"] <CommonEv 179>  / 12:カーソルＯＦＦ / -1
+ | | | | |■Call Event [Name]: ["X[Bat]Enemy: Draw One"] <CommonEv 179>  / 12:カーソルＯＦＦ / -1
  | | | | |■Condition (Number):   [1] CSelf12[一時変数２] ==  10  /  [2] CSelf12[一時変数２] ==  11  
  | | | | |-◇Condition:  [1]  [ CSelf12[一時変数２] == 10   ] Case↓
  | | | | | |▼ 決定なら使用（敵ランダム）
- | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 0:決定音
+ | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
  | | | | | |■Set Variable: CSelf99[使用対象] = -21 - CSelf24[即時発動] 
  | | | | | |■Exit Event
  | | | | | |■
  | | | | |-◇Condition:  [2]  [ CSelf12[一時変数２] == 11   ] Case↓
  | | | | | |▼ キャンセルなら終了
- | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 1:キャンセル音
+ | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 1:Cancel Sound
  | | | | | |■Set Variable: CSelf99[使用対象] = -1 + 0 
  | | | | | |■Condition (Number):   [1] CSelf2[モード] ==  0  
  | | | | | |-◇Condition:  [1]  [ CSelf2[モード] == 0   ] Case↓

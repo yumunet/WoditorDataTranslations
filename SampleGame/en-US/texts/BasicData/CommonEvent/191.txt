@@ -1,5 +1,5 @@
 COMMON_ID=191
-COMMON_NAME=X┣◆行動内容のセット
+COMMON_NAME=X┣◆Set Action
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -176,7 +176,7 @@ COMMAND_NUM=164
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　味方全員のコマンド指定と敵・味方AIのコマンド処理を呼び出します。")
 [103][0,1]<0>()("")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
@@ -194,7 +194,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600098,1600000,0,0)()
 [121][4,0]<0>(1600097,1600001,0,0)()
 [103][0,1]<0>()(" ")
-[300][6,1]<0>(0,4,0,0,-1,0)("X[戦]コマンド登録")
+[300][6,1]<0>(0,4,0,0,-1,0)("X[Bat]Register Command")
 [121][4,0]<0>(1600099,0,0,0)()
 [111][7,0]<0>(2,1600000,0,2,1600000,-1,2)()
 [401][1,0]<0>(1)()
@@ -247,11 +247,11 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600035,0,0,0)()
 [250][5,4]<0>(18,15,0,65536,1600035)("","Base System Variables","","")
 [103][0,1]<0>()("万能ウィンドウ表示")
-[300][6,1]<0>(0,4,2,0,0,0)("X[共]万能ｳｨﾝﾄﾞｳ描画処理")
+[300][6,1]<0>(0,4,2,0,0,0)("X[Com]Draw Universal Window")
 [170][0,0]<0>()()
 [103][0,1]<1>()("万能ウィンドウ選択処理を実行")
 [250][5,4]<1>(21,21,0,65536,0)("","Base System Variables","","")
-[300][5,1]<1>(0,16777218,2,0,1600015)("X[共]万能ｳｨﾝﾄﾞｳ選択実行")
+[300][5,1]<1>(0,16777218,2,0,1600015)("X[Com]U-Window: Select")
 [111][4,0]<1>(1,1600015,-100,5)()
 [401][1,0]<1>(1)()
 [171][0,0]<2>()()
@@ -260,7 +260,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [498][0,0]<0>()()
 [103][0,1]<0>()("万能ウィンドウを閉じる（自動）")
-[300][6,1]<0>(0,4,-1,0,4,1)("X[共]万能ｳｨﾝﾄﾞｳ描画処理")
+[300][6,1]<0>(0,4,-1,0,4,1)("X[Com]Draw Universal Window")
 [111][4,0]<0>(1,1600015,-1,2)()
 [401][1,0]<0>(1)()
 [121][4,0]<1>(1600099,1,0,0)()
@@ -271,7 +271,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("各味方キャラのコマンド選択")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [212][0,1]<0>()("コマンド選択開始")
-[300][6,1]<0>(0,4,0,0,-1,0)("X[戦]コマンド登録")
+[300][6,1]<0>(0,4,0,0,-1,0)("X[Bat]Register Command")
 [121][4,0]<0>(1600010,-1,0,0)()
 [121][4,0]<0>(1600012,1,0,0)()
 [170][0,0]<0>()()
@@ -282,13 +282,13 @@ WoditorEvCOMMAND_START
 [213][0,1]<2>()("第一コマンド")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
-[300][4,1]<1>(0,16777217,1600010,1600011)("X[戦]ｽﾛｯﾄから主人公ID取得")
+[300][4,1]<1>(0,16777217,1600010,1600011)("X[Bat]Get Ally ID From Slot")
 [111][4,0]<1>(1,1600011,-1,2)()
 [401][1,0]<1>(1)()
 [171][0,0]<2>()()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
-[300][4,1]<1>(0,16777217,1600010,1600011)("X┃┣◆味方コマンド選択")
+[300][4,1]<1>(0,16777217,1600010,1600011)("X┃┣◆Select Ally Command")
 [111][10,0]<1>(3,1600011,0,2,1600011,1,2,1600011,2,2)()
 [401][1,0]<1>(1)()
 [103][0,1]<2>()("何か選択した　次へ")
@@ -300,8 +300,8 @@ WoditorEvCOMMAND_START
 [111][4,0]<2>(1,1600012,-1,2)()
 [401][1,0]<2>(1)()
 [103][0,1]<3>()("戻る場合はコマンドを二個取り消す（戻る場合も行動不能分として一回分勝手に足されるため）")
-[300][6,1]<3>(0,4,-1,-1,-2,-1)("X[戦]コマンド登録")
-[300][6,1]<3>(0,4,-1,-1,-2,-1)("X[戦]コマンド登録")
+[300][6,1]<3>(0,4,-1,-1,-2,-1)("X[Bat]Register Command")
+[300][6,1]<3>(0,4,-1,-1,-2,-1)("X[Bat]Register Command")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [0][0,0]<2>()()
@@ -313,7 +313,7 @@ WoditorEvCOMMAND_START
 [111][7,0]<1>(2,1600011,-1,2,1600011,10,2)()
 [401][1,0]<1>(1)()
 [103][0,1]<2>()("キャンセルした場合　前に戻る")
-[300][6,1]<2>(0,4,-1,-1,-2,-1)("X[戦]コマンド登録")
+[300][6,1]<2>(0,4,-1,-1,-2,-1)("X[Bat]Register Command")
 [121][4,0]<2>(1600012,-1,0,0)()
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
@@ -331,11 +331,11 @@ WoditorEvCOMMAND_START
 [111][7,0]<0>(2,1600000,0,1,1600000,-1,3)()
 [401][1,0]<0>(1)()
 [103][0,1]<1>()("通常コマンド入力時")
-[300][3,1]<1>(0,1,0)("X┃┗◆敵・味方AI計算")
+[300][3,1]<1>(0,1,0)("X┃┗◆Process Enemy/Ally AI")
 [0][0,0]<1>()()
 [401][1,0]<0>(2)()
 [103][0,1]<1>()("逃走失敗時")
-[300][3,1]<1>(0,1,1)("X┃┗◆敵・味方AI計算")
+[300][3,1]<1>(0,1,1)("X┃┗◆Process Enemy/Ally AI")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [0][0,0]<0>()()
@@ -343,7 +343,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　味方全員のコマンド指定と敵・味方AIのコマンド処理を呼び出します。
 ▼ 
 ▼ ―――――――――――――――――――――――――――――――――――
@@ -361,7 +361,7 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf98[最終実行コマンドモード] = CSelf0[ｺﾏﾝﾄﾞﾓｰﾄﾞ] + 0 
 ■Set Variable: CSelf97[最終逃走可能フラグ] = CSelf1[逃走可能フラグ] + 0 
 ▼  
-■Call Event [Name]: ["X[戦]コマンド登録"] <CommonEv 157>  / 0 / 0 / -1:全初期化 / 0
+■Call Event [Name]: ["X[Bat]Register Command"] <CommonEv 157>  / 0 / 0 / -1:全初期化 / 0
 ■Set Variable: CSelf99[逃走した？ 終了した？(10)] = 0 + 0 
 ■Condition (Number):   [1] CSelf0[ｺﾏﾝﾄﾞﾓｰﾄﾞ] ==  0  /  [2] CSelf0[ｺﾏﾝﾄﾞﾓｰﾄﾞ] ==  -1  
 -◇Condition:  [1]  [ CSelf0[ｺﾏﾝﾄﾞﾓｰﾄﾞ] == 0   ] Case↓
@@ -414,11 +414,11 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf35[万能ウィンドウ用変数] = 0 + 0 
 ■Write to DB(Var): VarDB[ "Base System Variables":15:0 ] (18:Universal Window Vert. Scroll Pos:Number) =  CSelf35[万能ウィンドウ用変数]
 ▼ 万能ウィンドウ表示
-■Call Event [Name]: ["X[共]万能ｳｨﾝﾄﾞｳ描画処理"] <CommonEv 64>  / 2:表示[戦闘ｺﾏﾝﾄﾞ用] / 0 / 0:表示しない / 0:なし
+■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / 2:Display [For Battle Commands] / 0 / 0:Don't Display / 0:None
 ■Loop Start
  |▼ 万能ウィンドウ選択処理を実行
  |■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) =  0
- |■Call Event [Name]: CSelf15[戦闘逃走選択] = ["X[共]万能ｳｨﾝﾄﾞｳ選択実行"] <CommonEv 65>  / 2:選択を終えるまでループ[ｶｰｿﾙ初期化しない] / 0:決定音を鳴らす
+ |■Call Event [Name]: CSelf15[戦闘逃走選択] = ["X[Com]U-Window: Select"] <CommonEv 65>  / 2:Loop Until Selected (Don't Initialize Cursor) / 0:Play Confirm Sound
  |■Condition (Number):   [1] CSelf15[戦闘逃走選択] !=  -100  
  |-◇Condition:  [1]  [ CSelf15[戦闘逃走選択] != -100   ] Case↓
  | |■Break Loop
@@ -427,7 +427,7 @@ WoditorEvCOMMAND_END
  |■
 ◇Loop End Point◇◇
 ▼ 万能ウィンドウを閉じる（自動）
-■Call Event [Name]: ["X[共]万能ｳｨﾝﾄﾞｳ描画処理"] <CommonEv 64>  / -1:消去 / 0 / 4:ｳｨﾝﾄﾞｳの下に表示 / 1:左上から展開
+■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / -1:Erase / 0 / 4:Display Below Window / 1:Expand from Top-Left
 ■Condition (Number):   [1] CSelf15[戦闘逃走選択] ==  -1  
 -◇Condition:  [1]  [ CSelf15[戦闘逃走選択] == -1   ] Case↓
  |■Set Variable: CSelf99[逃走した？ 終了した？(10)] = 1 + 0 
@@ -438,7 +438,7 @@ WoditorEvCOMMAND_END
 ▼ 各味方キャラのコマンド選択
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ●Label Point [コマンド選択開始] <<<<<<<<<<<<<<<<<<<<<<<<★
-■Call Event [Name]: ["X[戦]コマンド登録"] <CommonEv 157>  / 0 / 0 / -1:全初期化 / 0
+■Call Event [Name]: ["X[Bat]Register Command"] <CommonEv 157>  / 0 / 0 / -1:全初期化 / 0
 ■Set Variable: CSelf10[処理中スロット] = -1 + 0 
 ■Set Variable: CSelf12[処理方向(-1/1)] = 1 + 0 
 ■Loop Start
@@ -449,13 +449,13 @@ WoditorEvCOMMAND_END
  | |●Label Jump [第一コマンド] >>>>>>>>>>>>>>>>>>>>>>>>>
  | |■
  |◇End◇
- |■Call Event [Name]: CSelf11[処理結果] = ["X[戦]ｽﾛｯﾄから主人公ID取得"] <CommonEv 141>  / CSelf10[処理中スロット]
+ |■Call Event [Name]: CSelf11[処理結果] = ["X[Bat]Get Ally ID From Slot"] <CommonEv 141>  / CSelf10[処理中スロット]
  |■Condition (Number):   [1] CSelf11[処理結果] ==  -1  
  |-◇Condition:  [1]  [ CSelf11[処理結果] == -1   ] Case↓
  | |■Break Loop
  | |■
  |◇End◇
- |■Call Event [Name]: CSelf11[処理結果] = ["X┃┣◆味方コマンド選択"] <CommonEv 192>  / CSelf10[処理中スロット]
+ |■Call Event [Name]: CSelf11[処理結果] = ["X┃┣◆Select Ally Command"] <CommonEv 192>  / CSelf10[処理中スロット]
  |■Condition (Number):   [1] CSelf11[処理結果] ==  0  /  [2] CSelf11[処理結果] ==  1  /  [3] CSelf11[処理結果] ==  2  
  |-◇Condition:  [1]  [ CSelf11[処理結果] == 0   ] Case↓
  | |▼ 何か選択した　次へ
@@ -467,8 +467,8 @@ WoditorEvCOMMAND_END
  | |■Condition (Number):   [1] CSelf12[処理方向(-1/1)] ==  -1  
  | |-◇Condition:  [1]  [ CSelf12[処理方向(-1/1)] == -1   ] Case↓
  | | |▼ 戻る場合はコマンドを二個取り消す（戻る場合も行動不能分として一回分勝手に足されるため）
- | | |■Call Event [Name]: ["X[戦]コマンド登録"] <CommonEv 157>  / -1 / -1 / -2:一個戻す / -1
- | | |■Call Event [Name]: ["X[戦]コマンド登録"] <CommonEv 157>  / -1 / -1 / -2:一個戻す / -1
+ | | |■Call Event [Name]: ["X[Bat]Register Command"] <CommonEv 157>  / -1 / -1 / -2:一個戻す / -1
+ | | |■Call Event [Name]: ["X[Bat]Register Command"] <CommonEv 157>  / -1 / -1 / -2:一個戻す / -1
  | | |■
  | |◇End◇
  | |■
@@ -480,7 +480,7 @@ WoditorEvCOMMAND_END
  |■Condition (Number):   [1] CSelf11[処理結果] ==  -1  /  [2] CSelf11[処理結果] ==  10  
  |-◇Condition:  [1]  [ CSelf11[処理結果] == -1   ] Case↓
  | |▼ キャンセルした場合　前に戻る
- | |■Call Event [Name]: ["X[戦]コマンド登録"] <CommonEv 157>  / -1 / -1 / -2:一個戻す / -1
+ | |■Call Event [Name]: ["X[Bat]Register Command"] <CommonEv 157>  / -1 / -1 / -2:一個戻す / -1
  | |■Set Variable: CSelf12[処理方向(-1/1)] = -1 + 0 
  | |■
  |-◇Condition:  [2]  [ CSelf11[処理結果] == 10   ] Case↓
@@ -498,11 +498,11 @@ WoditorEvCOMMAND_END
 ■Condition (Number):   [1] CSelf0[ｺﾏﾝﾄﾞﾓｰﾄﾞ] >=  0  /  [2] CSelf0[ｺﾏﾝﾄﾞﾓｰﾄﾞ] <=  -1  
 -◇Condition:  [1]  [ CSelf0[ｺﾏﾝﾄﾞﾓｰﾄﾞ] >= 0   ] Case↓
  |▼ 通常コマンド入力時
- |■Call Event [Name]: ["X┃┗◆敵・味方AI計算"] <CommonEv 193>  / 0:敵と味方のAI計算
+ |■Call Event [Name]: ["X┃┗◆Process Enemy/Ally AI"] <CommonEv 193>  / 0:敵と味方のAI計算
  |■
 -◇Condition:  [2]  [ CSelf0[ｺﾏﾝﾄﾞﾓｰﾄﾞ] <= -1   ] Case↓
  |▼ 逃走失敗時
- |■Call Event [Name]: ["X┃┗◆敵・味方AI計算"] <CommonEv 193>  / 1:敵のAIのみ計算
+ |■Call Event [Name]: ["X┃┗◆Process Enemy/Ally AI"] <CommonEv 193>  / 1:敵のAIのみ計算
  |■
 ◇End◇
 ■

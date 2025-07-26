@@ -1,5 +1,5 @@
 COMMON_ID=48
-COMMON_NAME=X[共]基本ｼｽﾃﾑ自動初期化
+COMMON_NAME=X[Com]Base System Auto-init
 COMMAND_COLOR=4
 TRIGGER=35
 TRIGGER_TARGET=2000000
@@ -70,25 +70,25 @@ CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=
-CSELF_NAME_10=最大処理数
-CSELF_NAME_11=処理中位置
-CSELF_NAME_12=注目装備位置（DB側）
-CSELF_NAME_13=装備種類Max数
-CSELF_NAME_14=注目装備
+CSELF_NAME_10=Repeat Count
+CSELF_NAME_11=Processing Position
+CSELF_NAME_12=Equipment Position (in DB)
+CSELF_NAME_13=Max Equipment Slots
+CSELF_NAME_14=Equipment Slot
 CSELF_NAME_15=
-CSELF_NAME_16=仲間探索回数
-CSELF_NAME_17=現在注目仲間位置
-CSELF_NAME_18=残り調査回数
-CSELF_NAME_19=一時主人公ID
-CSELF_NAME_20=一時保存コード
+CSELF_NAME_16=Member Check Count
+CSELF_NAME_17=Member Position
+CSELF_NAME_18=Remaining Check Count
+CSELF_NAME_19=Temp Ally ID
+CSELF_NAME_20=Temp Storage ID
 CSELF_NAME_21=
-CSELF_NAME_22=二次注目位置
-CSELF_NAME_23=二次主人公ID
+CSELF_NAME_22=Second Position
+CSELF_NAME_23=Second Ally ID
 CSELF_NAME_24=
-CSELF_NAME_25=一時変数Ａ
-CSELF_NAME_26=一時変数Ｂ
+CSELF_NAME_25=Temp Variable A
+CSELF_NAME_26=Temp Variable B
 CSELF_NAME_27=
-CSELF_NAME_28=フォントサイズ
+CSELF_NAME_28=
 CSELF_NAME_29=
 CSELF_NAME_30=
 CSELF_NAME_31=
@@ -150,7 +150,7 @@ CSELF_NAME_86=
 CSELF_NAME_87=
 CSELF_NAME_88=
 CSELF_NAME_89=
-CSELF_NAME_90=装備チェック開始位置
+CSELF_NAME_90=Equipments Check Start Position
 CSELF_NAME_91=
 CSELF_NAME_92=
 CSELF_NAME_93=
@@ -159,27 +159,27 @@ CSELF_NAME_95=
 CSELF_NAME_96=
 CSELF_NAME_97=
 CSELF_NAME_98=
-CSELF_NAME_99=終了フラグ
+CSELF_NAME_99=Finish Flag
 COMMAND_NUM=243
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("※「主人公ステータス」の「装備中の武器」が始まる項目番号をここで指定します。")
+[103][0,1]<0>()("* Specify the field index where Equipped Weapon in Allies begins here.")
 [121][4,0]<0>(1600090,28,0,0)()
 [179][1,0]<0>(1)()
-[103][0,1]<1>()("Ver3.30で現在セーブデータ番号の読み込みを「起動時」や「ロード直後」に毎回やるように修正")
+[103][0,1]<1>()("Ver.3.30  The current save slot is now read every time at startup or immediately after loading.")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<1>()("最新セーブデータ番号を毎回System.savから取得　（System.savの通常変数0番を最終セーブデータ番号として使用）")
+[103][0,1]<1>()("Get the last-used save slot from System.sav every time. (System.sav's Normal Variable #0 is used for the last-used save slot).")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [122][2,1]<1>(1600005,0)("Save/System.sav")
 [221][4,0]<1>(1600020,1600005,2000000,0)()
@@ -187,11 +187,11 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [498][0,0]<0>()()
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("すでに初期化が終わってたらここで停める")
+[103][0,1]<0>()("If initialization is already done, stop here.")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [111][4,0]<0>(1,1600099,1,1)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("終了フラグが立ってたら実質上処理しない（長いウェイト）")
+[103][0,1]<1>()("If the finish flag is set, essentially do nothing (long wait).")
 [179][1,0]<1>(999999)()
 [180][1,0]<2>(999999)()
 [0][0,0]<2>()()
@@ -200,21 +200,21 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("画面サイズ補正値と基本フォントサイズを格納")
-[103][0,1]<0>()("（ちなみに、メニュー実行時と戦闘開始時にも一応格納し直しています）")
+[103][0,1]<0>()("Set screen size scale and base font size.")
+[103][0,1]<0>()("(By the way, these are also set on menu opening and battle start.)")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [111][7,0]<0>(2,9000115,220,1,9000115,220,4)()
 [401][1,0]<0>(1)()
 [179][1,0]<1>(1)()
-[103][0,1]<2>()("新処理　解像度の縦横から引き延ばし倍率を算出")
+[103][0,1]<2>()("New Process: Calculate the stretch ratio from the vertical and horizontal resolutions.")
 [121][4,0]<2>(1600025,9000116,32,12288)()
 [121][4,0]<2>(1600026,9000117,24,12288)()
 [250][5,4]<2>(18,97,0,65536,1600025)("","Base System Variables","","")
 [250][5,4]<2>(18,98,0,65536,1600026)("","Base System Variables","","")
-[103][0,1]<2>()("使わないが、旧バージョン対応の配布コモンイベント用にいちおう旧座標倍率にも縦サイズで入れておく")
+[103][0,1]<2>()("Although not used, store the old coordinate scale for common events distributed for older versions, based on the vertical size.")
 [250][5,4]<2>(18,3,0,65536,1600026)("","Base System Variables","","")
-[103][0,1]<2>()("フォントサイズを計算＆代入")
-[103][0,1]<2>()("フォントサイズはウィンドウの縦・横の小さい方を計算に使うよう修正　Ver3.00修正")
+[103][0,1]<2>()("Calculate and store font size.")
+[103][0,1]<2>()("Ver.3.00  Font size calculation now uses the smaller of the vertical and horizontal screen scales. ")
 [121][4,0]<2>(1600026,1600025,0,1792)()
 [103][0,1]<2>()(" ")
 [250][5,4]<2>(18,5,0,65536,1600026)("","Base System Variables","","")
@@ -235,7 +235,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [401][1,0]<0>(2)()
 [179][1,0]<1>(0)()
-[103][0,1]<2>()("旧処理　昔はタイルサイズと解像度が比例していたのでSys84で判定していました")
+[103][0,1]<2>()("Old Process: In the past, tile size and resolution were proportional, so we determined it using Sys 84.")
 [111][10,0]<2>(3,9000084,0,2,9000084,1,2,9000084,2,2)()
 [401][1,0]<2>(1)()
 [250][5,4]<3>(18,97,0,65536,10)("","Base System Variables","","")
@@ -245,7 +245,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<3>(18,7,0,65536,6)("","Base System Variables","","")
 [121][4,0]<3>(9000008,12,0,0)()
 [121][4,0]<3>(9000023,9000008,2,12288)()
-[103][0,1]<3>()("使わないが旧バージョン対応の配布コモンイベントで使うかもしれないので旧座標倍率にも格納")
+[103][0,1]<3>()("Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale.")
 [250][5,4]<3>(18,3,0,65536,10)("","Base System Variables","","")
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
@@ -256,7 +256,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<3>(18,7,0,65536,12)("","Base System Variables","","")
 [121][4,0]<3>(9000008,24,0,0)()
 [121][4,0]<3>(9000023,9000008,2,12288)()
-[103][0,1]<3>()("使わないが旧バージョン対応の配布コモンイベントで使うかもしれないので旧座標倍率にも格納")
+[103][0,1]<3>()("Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale.")
 [250][5,4]<3>(18,3,0,65536,20)("","Base System Variables","","")
 [0][0,0]<3>()()
 [401][1,0]<2>(3)()
@@ -267,7 +267,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<3>(18,7,0,65536,15)("","Base System Variables","","")
 [121][4,0]<3>(9000008,30,0,0)()
 [121][4,0]<3>(9000023,9000008,2,12288)()
-[103][0,1]<3>()("使わないが旧バージョン対応の配布コモンイベントで使うかもしれないので旧座標倍率にも格納")
+[103][0,1]<3>()("Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale.")
 [250][5,4]<3>(18,3,0,65536,25)("","Base System Variables","","")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
@@ -278,20 +278,20 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600099,1,0,0)()
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("その他のパラメータ初期化")
+[103][0,1]<0>()("Initialize other parameters.")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("敵・味方の最大数")
+[103][0,1]<0>()("Enemy/Ally Maximum")
 [250][5,4]<0>(18,51,0,65536,6)("","Base System Variables","","")
 [250][5,4]<0>(20,69,0,65536,7)("","Base System Variables","","")
-[103][0,1]<0>()("セーブ可能数")
+[103][0,1]<0>()("Save Slots")
 [250][5,4]<0>(18,52,0,65536,4)("","Base System Variables","","")
 [250][5,4]<0>(18,53,0,65536,5)("","Base System Variables","","")
 [250][5,4]<0>(18,33,0,65536,1)("","Base System Variables","","")
-[103][0,1]<0>()("コンフィグ設定")
+[103][0,1]<0>()("System Settings")
 [250][5,4]<0>(18,56,0,65536,1)("","Base System Variables","","")
 [250][5,4]<0>(18,58,0,65536,0)("","Base System Variables","","")
-[300][3,1]<0>(0,1,2)("X[移]キーリピート設定")
-[103][0,1]<0>()("その他ゲームの基本設定")
+[300][3,1]<0>(0,1,2)("X[Map]Set Key Repeat")
+[103][0,1]<0>()("Other Basic Game Settings")
 [121][4,0]<0>(9000017,0,0,0)()
 [121][4,0]<0>(9000018,1,0,0)()
 [121][4,0]<0>(9000019,2,0,0)()
@@ -299,23 +299,23 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(9000022,1,0,0)()
 [121][4,0]<0>(9000009,500,0,0)()
 [121][4,0]<0>(9000037,2,0,0)()
-[300][2,1]<0>(0,0)("X[移]パーティー情報計算")
+[300][2,1]<0>(0,0)("X[Map]Update Party Info")
 [179][1,0]<0>(1)()
-[103][0,1]<1>()("仲間が重複してた場合は外す処理")
+[103][0,1]<1>()("If there are duplicate members, remove them.")
 [250][5,4]<1>(18,51,0,69632,1600016)("","Base System Variables","","")
 [121][4,0]<1>(1600017,-1,0,0)()
 [179][1,0]<1>(1600016)()
 [121][4,0]<2>(1600017,1,0,256)()
-[300][4,1]<2>(0,16777217,1600017,1600019)("X[移]選択位置主人公ID取得")
+[300][4,1]<2>(0,16777217,1600017,1600019)("X[Map]Get Ally ID")
 [121][4,0]<2>(1600018,1600016,1600017,4096)()
 [121][4,0]<2>(1600018,1,0,512)()
 [121][4,0]<2>(1600022,1600017,0,0)()
 [179][1,0]<2>(1600018)()
 [121][4,0]<3>(1600022,1,0,256)()
-[300][4,1]<3>(0,16777217,1600022,1600023)("X[移]選択位置主人公ID取得")
+[300][4,1]<3>(0,16777217,1600022,1600023)("X[Map]Get Ally ID")
 [111][4,0]<3>(1,1600023,1600019,2)()
 [401][1,0]<3>(1)()
-[300][4,1]<4>(0,2,1600022,-1)("X[移]選択位置主人公ID設定")
+[300][4,1]<4>(0,2,1600022,-1)("X[Map]Set Ally ID")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [0][0,0]<3>()()
@@ -327,29 +327,29 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()(" ")
 [160][2,0]<0>(-1,65546)()
 [201][1,0]<0>(-2)()(2,[29,3])
-[300][2,1]<0>(0,0)("X[移]パーティー情報計算")
-[300][2,1]<0>(0,0)("X[移]パーティー画像再設定")
+[300][2,1]<0>(0,0)("X[Map]Update Party Info")
+[300][2,1]<0>(0,0)("X[Map]Reset Party Images")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("キャラクターの装備を、武器（コード20000～）　と　防具（コード30000～）　に変換する")
+[103][0,1]<0>()("Convert character equipments to Weapons (ID 20000+) or Armor (ID 30000+).")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [250][5,4]<0>(0,-1,33,69632,1600010)("","Allies","","")
-[103][0,1]<0>()("全キャラ分のループ")
+[103][0,1]<0>()("Loop for all characters.")
 [121][4,0]<0>(1600011,-1,0,0)()
 [179][1,0]<0>(1600010)()
 [121][4,0]<1>(1600011,1,0,256)()
 [250][5,4]<1>(18,0,22,332288,1600013)("","System Settings","","Equippable Slots")
-[103][0,1]<1>()("ここから装備ごとにチェックするループ")
+[103][0,1]<1>()("Loop to check each piece of equipment from here.")
 [121][4,0]<1>(1600014,-1,0,0)()
 [121][4,0]<1>(1600012,1600090,1,4096)()
 [179][1,0]<1>(1600013)()
-[103][0,1]<2>()("元のコード番号（0～9999）を読む")
+[103][0,1]<2>()("Read the original ID (0-9999).")
 [121][4,0]<2>(1600012,1,0,256)()
 [121][4,0]<2>(1600014,1,0,256)()
 [250][5,4]<2>(0,1600011,1600012,69632,1600020)("","Allies","","")
 [111][7,0]<2>(2,1600014,0,2,1600014,1,1)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("コードが0以上なら、武器コード（20000～）に変換")
+[103][0,1]<3>()("If the ID is 0 or higher, convert it to Weapon ID (20000+).")
 [111][4,0]<3>(1,1600020,0,1)()
 [401][1,0]<3>(1)()
 [121][4,0]<4>(1600020,1600020,10000,16384)()
@@ -358,7 +358,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<3>()()
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
-[103][0,1]<3>()("コードが0以上なら、防具コード（30000～）に変換")
+[103][0,1]<3>()("If the ID is 0 or higher, convert it to Armor ID (30000+).")
 [111][4,0]<3>(1,1600020,0,1)()
 [401][1,0]<3>(1)()
 [121][4,0]<4>(1600020,1600020,10000,16384)()
@@ -367,28 +367,28 @@ WoditorEvCOMMAND_START
 [499][0,0]<3>()()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
-[103][0,1]<2>()("格納し直す")
+[103][0,1]<2>()("Store again.")
 [250][5,4]<2>(0,1600011,1600012,65536,1600020)("","Allies","","")
 [0][0,0]<2>()()
 [498][0,0]<1>()()
 [103][0,1]<1>()(" ")
-[103][0,1]<1>()("自然回復値を0に戻す")
+[103][0,1]<1>()("Reset regeneration values to 0.")
 [250][5,4]<1>(21,1600011,11,327680,0)("","×Allies Temp Data","","[Temp] HP Regeneration")
 [250][5,4]<1>(21,1600011,12,327680,0)("","×Allies Temp Data","","[Temp] SP Regeneration")
-[103][0,1]<1>()("一時パラメータを計算")
-[300][3,1]<1>(0,1,1600011)("X[移]一時ｽﾃ計算<初期化>")
-[300][3,1]<1>(0,1,1600011)("X[移]一時ｽﾃ計算<装備補正>")
-[300][3,1]<1>(0,1,1600011)("X[移]一時ｽﾃ計算<状態補正>")
-[103][0,1]<1>()("HP・SPを満タンに")
-[300][6,1]<1>(0,4,1600011,22,999999,0)("X[移]パラメータ増減")
-[300][6,1]<1>(0,4,1600011,23,999999,0)("X[移]パラメータ増減")
+[103][0,1]<1>()("Calculate temporary stats.")
+[300][3,1]<1>(0,1,1600011)("X[Map]CalcTempStats <Initialize>")
+[300][3,1]<1>(0,1,1600011)("X[Map]CalcTempStats <Equipments>")
+[300][3,1]<1>(0,1,1600011)("X[Map]CalcTempStats <StatusEffects>")
+[103][0,1]<1>()("Fill up HP and SP.")
+[300][6,1]<1>(0,4,1600011,22,999999,0)("X[Map]Change Parameter")
+[300][6,1]<1>(0,4,1600011,23,999999,0)("X[Map]Change Parameter")
 [0][0,0]<1>()()
 [498][0,0]<0>()()
 [103][0,1]<0>()(" ")
 [179][1,0]<0>(0)()
-[103][0,1]<1>()("上に移動したのでループ0回でコメントアウト")
+[103][0,1]<1>()("Moved up, so commented out with 0 loops.")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<1>()("最新セーブデータ番号をSystem.savから取得　（System.savの通常変数0番を最終セーブデータ番号として使用）")
+[103][0,1]<1>()("Get the last-used save slot from System.sav. (System.sav's Normal Variable #0 is used for the last-used save slot).")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [122][2,1]<1>(1600005,0)("Save/System.sav")
 [221][4,0]<1>(1600020,1600005,2000000,0)()
@@ -396,7 +396,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [498][0,0]<0>()()
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("初期音量を60に変更　フォント太さも修正  ver3.16修正")
+[103][0,1]<0>()("Ver.3.16  Changed the initial volume to 60 and corrected the font weight.")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [121][4,0]<0>(9000100,60,0,0)()
 [121][4,0]<0>(9000101,60,0,0)()
@@ -410,34 +410,34 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【このコモンイベント内で操作しているデータベース】
+▼ [Databases Accessed by This Common Event]
 ▼  
-▼ 【ここから呼び出している別コモンイベント】
+▼ [Other Common Events Called from Here]
 ▼  
-▼ 【どのコモンイベントから主に呼び出されているか】
+▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼ ※「主人公ステータス」の「装備中の武器」が始まる項目番号をここで指定します。
-■Set Variable: CSelf90[装備チェック開始位置] = 28 + 0 
+▼ * Specify the field index where Equipped Weapon in Allies begins here.
+■Set Variable: CSelf90[Equipments Check Start Position] = 28 + 0 
 ■Repeat Loop [ 1 ] Times
- |▼ Ver3.30で現在セーブデータ番号の読み込みを「起動時」や「ロード直後」に毎回やるように修正
+ |▼ Ver.3.30  The current save slot is now read every time at startup or immediately after loading.
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |▼ 最新セーブデータ番号を毎回System.savから取得　（System.savの通常変数0番を最終セーブデータ番号として使用）
+ |▼ Get the last-used save slot from System.sav every time. (System.sav's Normal Variable #0 is used for the last-used save slot).
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |■Set String: CSelf5 = "Save/System.sav"
- |■Read Save Data:  CSelf20[一時保存コード] = Save Data [CSelf5]'s V0[[Sample Game] Cook Appears]
- |■Set Variable: Sys25:Current Save (0+) = CSelf20[一時保存コード] + 0 
+ |■Read Save Data:  CSelf20[Temp Storage ID] = Save Data [CSelf5]'s V0[[Sample Game] Cook Appears]
+ |■Set Variable: Sys25:Current Save (0+) = CSelf20[Temp Storage ID] + 0 
  |■
 ◇Loop End Point◇◇
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼ すでに初期化が終わってたらここで停める
+▼ If initialization is already done, stop here.
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-■Condition (Number):   [1] CSelf99[終了フラグ] >=  1  
--◇Condition:  [1]  [ CSelf99[終了フラグ] >= 1   ] Case↓
- |▼ 終了フラグが立ってたら実質上処理しない（長いウェイト）
+■Condition (Number):   [1] CSelf99[Finish Flag] >=  1  
+-◇Condition:  [1]  [ CSelf99[Finish Flag] >= 1   ] Case↓
+ |▼ If the finish flag is set, essentially do nothing (long wait).
  |■Repeat Loop [ 999999 ] Times
  | |■Wait: 999999 Frames
  | |■
@@ -446,42 +446,42 @@ WoditorEvCOMMAND_END
  |■
 ◇End◇
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼ 画面サイズ補正値と基本フォントサイズを格納
-▼ （ちなみに、メニュー実行時と戦闘開始時にも一応格納し直しています）
+▼ Set screen size scale and base font size.
+▼ (By the way, these are also set on menu opening and battle start.)
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■Condition (Number):   [1] Sys115:[RO] Game.exe Version (x100) >=  220  /  [2] Sys115:[RO] Game.exe Version (x100) <  220  
 -◇Condition:  [1]  [ Sys115:[RO] Game.exe Version (x100) >= 220   ] Case↓
  |■Repeat Loop [ 1 ] Times
- | |▼ 新処理　解像度の縦横から引き延ばし倍率を算出
- | |■Set Variable: CSelf25[一時変数Ａ] = Sys116:[RO] Screen Width / 32 
- | |■Set Variable: CSelf26[一時変数Ｂ] = Sys117:[RO] Screen Height / 24 
- | |■Write to DB(Var): VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) =  CSelf25[一時変数Ａ]
- | |■Write to DB(Var): VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) =  CSelf26[一時変数Ｂ]
- | |▼ 使わないが、旧バージョン対応の配布コモンイベント用にいちおう旧座標倍率にも縦サイズで入れておく
- | |■Write to DB(Var): VarDB[ "Base System Variables":3:0 ] (18:[×Unused] Coord Scale [x10]:Number) =  CSelf26[一時変数Ｂ]
- | |▼ フォントサイズを計算＆代入
- | |▼ フォントサイズはウィンドウの縦・横の小さい方を計算に使うよう修正　Ver3.00修正
- | |■Set Variable: CSelf26[一時変数Ｂ] Upper Bound= CSelf25[一時変数Ａ] + 0 
+ | |▼ New Process: Calculate the stretch ratio from the vertical and horizontal resolutions.
+ | |■Set Variable: CSelf25[Temp Variable A] = Sys116:[RO] Screen Width / 32 
+ | |■Set Variable: CSelf26[Temp Variable B] = Sys117:[RO] Screen Height / 24 
+ | |■Write to DB(Var): VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) =  CSelf25[Temp Variable A]
+ | |■Write to DB(Var): VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) =  CSelf26[Temp Variable B]
+ | |▼ Although not used, store the old coordinate scale for common events distributed for older versions, based on the vertical size.
+ | |■Write to DB(Var): VarDB[ "Base System Variables":3:0 ] (18:[×Unused] Coord Scale [x10]:Number) =  CSelf26[Temp Variable B]
+ | |▼ Calculate and store font size.
+ | |▼ Ver.3.00  Font size calculation now uses the smaller of the vertical and horizontal screen scales. 
+ | |■Set Variable: CSelf26[Temp Variable B] Upper Bound= CSelf25[Temp Variable A] + 0 
  | |▼  
- | |■Write to DB(Var): VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) =  CSelf26[一時変数Ｂ]
- | |■Set Variable: CSelf25[一時変数Ａ] = CSelf26[一時変数Ｂ] * 8 
- | |■Set Variable: CSelf25[一時変数Ａ] /= 10 + 0 
- | |■Write to DB(Var): VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) =  CSelf25[一時変数Ａ]
- | |■Set Variable: CSelf25[一時変数Ａ] = CSelf26[一時変数Ｂ] * 6 
- | |■Set Variable: CSelf25[一時変数Ａ] /= 10 + 0 
- | |■Write to DB(Var): VarDB[ "Base System Variables":7:0 ] (18:System Min Font Size:Number) =  CSelf25[一時変数Ａ]
- | |■Set Variable: CSelf25[一時変数Ａ] = CSelf26[一時変数Ｂ] * 12 
- | |■Set Variable: CSelf25[一時変数Ａ] /= 10 + 0 
- | |■Set Variable: Sys8:Base Font Size = CSelf25[一時変数Ａ] + 0 
- | |■Set Variable: CSelf25[一時変数Ａ] = CSelf26[一時変数Ｂ] * 5 
- | |■Set Variable: CSelf25[一時変数Ａ] /= 10 + 0 
- | |■Set Variable: Sys23:Ruby Font Size = CSelf25[一時変数Ａ] + 0 
+ | |■Write to DB(Var): VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) =  CSelf26[Temp Variable B]
+ | |■Set Variable: CSelf25[Temp Variable A] = CSelf26[Temp Variable B] * 8 
+ | |■Set Variable: CSelf25[Temp Variable A] /= 10 + 0 
+ | |■Write to DB(Var): VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) =  CSelf25[Temp Variable A]
+ | |■Set Variable: CSelf25[Temp Variable A] = CSelf26[Temp Variable B] * 6 
+ | |■Set Variable: CSelf25[Temp Variable A] /= 10 + 0 
+ | |■Write to DB(Var): VarDB[ "Base System Variables":7:0 ] (18:System Min Font Size:Number) =  CSelf25[Temp Variable A]
+ | |■Set Variable: CSelf25[Temp Variable A] = CSelf26[Temp Variable B] * 12 
+ | |■Set Variable: CSelf25[Temp Variable A] /= 10 + 0 
+ | |■Set Variable: Sys8:Base Font Size = CSelf25[Temp Variable A] + 0 
+ | |■Set Variable: CSelf25[Temp Variable A] = CSelf26[Temp Variable B] * 5 
+ | |■Set Variable: CSelf25[Temp Variable A] /= 10 + 0 
+ | |■Set Variable: Sys23:Ruby Font Size = CSelf25[Temp Variable A] + 0 
  | |■
  |◇Loop End Point◇◇
  |■
 -◇Condition:  [2]  [ Sys115:[RO] Game.exe Version (x100) < 220   ] Case↓
  |■Repeat Loop [ 0 ] Times
- | |▼ 旧処理　昔はタイルサイズと解像度が比例していたのでSys84で判定していました
+ | |▼ Old Process: In the past, tile size and resolution were proportional, so we determined it using Sys 84.
  | |■Condition (Number):   [1] Sys84:Screen Resolution (For Old/0-2/-1:Other) ==  0  /  [2] Sys84:Screen Resolution (For Old/0-2/-1:Other) ==  1  /  [3] Sys84:Screen Resolution (For Old/0-2/-1:Other) ==  2  
  | |-◇Condition:  [1]  [ Sys84:Screen Resolution (For Old/0-2/-1:Other) == 0   ] Case↓
  | | |■Write to DB(Var): VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) =  10
@@ -491,7 +491,7 @@ WoditorEvCOMMAND_END
  | | |■Write to DB(Var): VarDB[ "Base System Variables":7:0 ] (18:System Min Font Size:Number) =  6
  | | |■Set Variable: Sys8:Base Font Size = 12 + 0 
  | | |■Set Variable: Sys23:Ruby Font Size = Sys8:Base Font Size / 2 
- | | |▼ 使わないが旧バージョン対応の配布コモンイベントで使うかもしれないので旧座標倍率にも格納
+ | | |▼ Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale.
  | | |■Write to DB(Var): VarDB[ "Base System Variables":3:0 ] (18:[×Unused] Coord Scale [x10]:Number) =  10
  | | |■
  | |-◇Condition:  [2]  [ Sys84:Screen Resolution (For Old/0-2/-1:Other) == 1   ] Case↓
@@ -502,7 +502,7 @@ WoditorEvCOMMAND_END
  | | |■Write to DB(Var): VarDB[ "Base System Variables":7:0 ] (18:System Min Font Size:Number) =  12
  | | |■Set Variable: Sys8:Base Font Size = 24 + 0 
  | | |■Set Variable: Sys23:Ruby Font Size = Sys8:Base Font Size / 2 
- | | |▼ 使わないが旧バージョン対応の配布コモンイベントで使うかもしれないので旧座標倍率にも格納
+ | | |▼ Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale.
  | | |■Write to DB(Var): VarDB[ "Base System Variables":3:0 ] (18:[×Unused] Coord Scale [x10]:Number) =  20
  | | |■
  | |-◇Condition:  [3]  [ Sys84:Screen Resolution (For Old/0-2/-1:Other) == 2   ] Case↓
@@ -513,7 +513,7 @@ WoditorEvCOMMAND_END
  | | |■Write to DB(Var): VarDB[ "Base System Variables":7:0 ] (18:System Min Font Size:Number) =  15
  | | |■Set Variable: Sys8:Base Font Size = 30 + 0 
  | | |■Set Variable: Sys23:Ruby Font Size = Sys8:Base Font Size / 2 
- | | |▼ 使わないが旧バージョン対応の配布コモンイベントで使うかもしれないので旧座標倍率にも格納
+ | | |▼ Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale.
  | | |■Write to DB(Var): VarDB[ "Base System Variables":3:0 ] (18:[×Unused] Coord Scale [x10]:Number) =  25
  | | |■
  | |◇End◇
@@ -521,23 +521,23 @@ WoditorEvCOMMAND_END
  |◇Loop End Point◇◇
  |■
 ◇End◇
-■Set Variable: CSelf99[終了フラグ] = 1 + 0 
+■Set Variable: CSelf99[Finish Flag] = 1 + 0 
 ▼  
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼ その他のパラメータ初期化
+▼ Initialize other parameters.
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼ 敵・味方の最大数
+▼ Enemy/Ally Maximum
 ■Write to DB(Var): VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) =  6
 ■Write to DB(Var): VarDB[ "Base System Variables":69:0 ] (18:[Battle] Max Enemy Count (System):Number) =  7
-▼ セーブ可能数
+▼ Save Slots
 ■Write to DB(Var): VarDB[ "Base System Variables":52:0 ] (18:Save Slots per Page:Number) =  4
 ■Write to DB(Var): VarDB[ "Base System Variables":53:0 ] (18:Save Page Count:Number) =  5
 ■Write to DB(Var): VarDB[ "Base System Variables":33:0 ] (18:[System] Can Save?:Number) =  1
-▼ コンフィグ設定
+▼ System Settings
 ■Write to DB(Var): VarDB[ "Base System Variables":56:0 ] (18:[System] Cursor Memory:Number) =  1
 ■Write to DB(Var): VarDB[ "Base System Variables":58:0 ] (18:[System] Battle Key Hold:Number) =  0
-■Call Event [Name]: ["X[移]キーリピート設定"] <CommonEv 115>  / 2
-▼ その他ゲームの基本設定
+■Call Event [Name]: ["X[Map]Set Key Repeat"] <CommonEv 115>  / 2
+▼ Other Basic Game Settings
 ■Set Variable: Sys17:Choice Confirm SE (SysDB 3) = 0 + 0 
 ■Set Variable: Sys18:Choice Cursor SE (SysDB 3) = 1 + 0 
 ■Set Variable: Sys19:Choice Cancel SE (SysDB 3) = 2 + 0 
@@ -545,23 +545,23 @@ WoditorEvCOMMAND_END
 ■Set Variable: Sys22:Choice Cursor Blend Mode(0:Normal/1:Add) = 1 + 0 
 ■Set Variable: Sys9:Message Speed (X char./s) = 500 + 0 
 ■Set Variable: Sys37:Distance Between Members (Steps) = 2 + 0 
-■Call Event [Name]: ["X[移]パーティー情報計算"] <CommonEv 79> 
+■Call Event [Name]: ["X[Map]Update Party Info"] <CommonEv 79> 
 ■Repeat Loop [ 1 ] Times
- |▼ 仲間が重複してた場合は外す処理
- |■Load DB(Var):  CSelf16[仲間探索回数] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
- |■Set Variable: CSelf17[現在注目仲間位置] = -1 + 0 
- |■Repeat Loop [ CSelf16[仲間探索回数] ] Times
- | |■Set Variable: CSelf17[現在注目仲間位置] += 1 + 0 
- | |■Call Event [Name]: CSelf19[一時主人公ID] = ["X[移]選択位置主人公ID取得"] <CommonEv 105>  / CSelf17[現在注目仲間位置]
- | |■Set Variable: CSelf18[残り調査回数] = CSelf16[仲間探索回数] - CSelf17[現在注目仲間位置] 
- | |■Set Variable: CSelf18[残り調査回数] -= 1 + 0 
- | |■Set Variable: CSelf22[二次注目位置] = CSelf17[現在注目仲間位置] + 0 
- | |■Repeat Loop [ CSelf18[残り調査回数] ] Times
- | | |■Set Variable: CSelf22[二次注目位置] += 1 + 0 
- | | |■Call Event [Name]: CSelf23[二次主人公ID] = ["X[移]選択位置主人公ID取得"] <CommonEv 105>  / CSelf22[二次注目位置]
- | | |■Condition (Number):   [1] CSelf23[二次主人公ID] ==  CSelf19[一時主人公ID]  
- | | |-◇Condition:  [1]  [ CSelf23[二次主人公ID] == CSelf19[一時主人公ID]   ] Case↓
- | | | |■Call Event [Name]: ["X[移]選択位置主人公ID設定"] <CommonEv 104>  / CSelf22[二次注目位置] / -1
+ |▼ If there are duplicate members, remove them.
+ |■Load DB(Var):  CSelf16[Member Check Count] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
+ |■Set Variable: CSelf17[Member Position] = -1 + 0 
+ |■Repeat Loop [ CSelf16[Member Check Count] ] Times
+ | |■Set Variable: CSelf17[Member Position] += 1 + 0 
+ | |■Call Event [Name]: CSelf19[Temp Ally ID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf17[Member Position]
+ | |■Set Variable: CSelf18[Remaining Check Count] = CSelf16[Member Check Count] - CSelf17[Member Position] 
+ | |■Set Variable: CSelf18[Remaining Check Count] -= 1 + 0 
+ | |■Set Variable: CSelf22[Second Position] = CSelf17[Member Position] + 0 
+ | |■Repeat Loop [ CSelf18[Remaining Check Count] ] Times
+ | | |■Set Variable: CSelf22[Second Position] += 1 + 0 
+ | | |■Call Event [Name]: CSelf23[Second Ally ID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf22[Second Position]
+ | | |■Condition (Number):   [1] CSelf23[Second Ally ID] ==  CSelf19[Temp Ally ID]  
+ | | |-◇Condition:  [1]  [ CSelf23[Second Ally ID] == CSelf19[Temp Ally ID]   ] Case↓
+ | | | |■Call Event [Name]: ["X[Map]Set Ally ID"] <CommonEv 104>  / CSelf22[Second Position] / -1
  | | | |■
  | | |◇End◇
  | | |■
@@ -573,76 +573,76 @@ WoditorEvCOMMAND_END
 ▼  
 ■Set Transition:  [Simple Switch] 10 Frames (Wait)
 ■Move Route: [Skip]  Hero / Set Move Speed -> 3
-■Call Event [Name]: ["X[移]パーティー情報計算"] <CommonEv 79> 
-■Call Event [Name]: ["X[移]パーティー画像再設定"] <CommonEv 80> 
+■Call Event [Name]: ["X[Map]Update Party Info"] <CommonEv 79> 
+■Call Event [Name]: ["X[Map]Reset Party Images"] <CommonEv 80> 
 ▼  
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼ キャラクターの装備を、武器（コード20000～）　と　防具（コード30000～）　に変換する
+▼ Convert character equipments to Weapons (ID 20000+) or Armor (ID 30000+).
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-■Load DB(Var):  CSelf10[最大処理数] = VarDB[Type "Allies"(0)'s Data Count]
-▼ 全キャラ分のループ
-■Set Variable: CSelf11[処理中位置] = -1 + 0 
-■Repeat Loop [ CSelf10[最大処理数] ] Times
- |■Set Variable: CSelf11[処理中位置] += 1 + 0 
- |■Load DB(User):  CSelf13[装備種類Max数] = UserDB[ "System Settings":0:"Equippable Slots" ] (17:Basic System Settings:22) 
- |▼ ここから装備ごとにチェックするループ
- |■Set Variable: CSelf14[注目装備] = -1 + 0 
- |■Set Variable: CSelf12[注目装備位置（DB側）] = CSelf90[装備チェック開始位置] - 1 
- |■Repeat Loop [ CSelf13[装備種類Max数] ] Times
- | |▼ 元のコード番号（0～9999）を読む
- | |■Set Variable: CSelf12[注目装備位置（DB側）] += 1 + 0 
- | |■Set Variable: CSelf14[注目装備] += 1 + 0 
- | |■Load DB(Var):  CSelf20[一時保存コード] = VarDB[ "Allies":CSelf11[処理中位置]:CSelf12[注目装備位置（DB側）] ] (0:-:-) 
- | |■Condition (Number):   [1] CSelf14[注目装備] ==  0  /  [2] CSelf14[注目装備] >=  1  
- | |-◇Condition:  [1]  [ CSelf14[注目装備] == 0   ] Case↓
- | | |▼ コードが0以上なら、武器コード（20000～）に変換
- | | |■Condition (Number):   [1] CSelf20[一時保存コード] >=  0  
- | | |-◇Condition:  [1]  [ CSelf20[一時保存コード] >= 0   ] Case↓
- | | | |■Set Variable: CSelf20[一時保存コード] = CSelf20[一時保存コード] % 10000 
- | | | |■Set Variable: CSelf20[一時保存コード] += 20000 + 0 
+■Load DB(Var):  CSelf10[Repeat Count] = VarDB[Type "Allies"(0)'s Data Count]
+▼ Loop for all characters.
+■Set Variable: CSelf11[Processing Position] = -1 + 0 
+■Repeat Loop [ CSelf10[Repeat Count] ] Times
+ |■Set Variable: CSelf11[Processing Position] += 1 + 0 
+ |■Load DB(User):  CSelf13[Max Equipment Slots] = UserDB[ "System Settings":0:"Equippable Slots" ] (17:Basic System Settings:22) 
+ |▼ Loop to check each piece of equipment from here.
+ |■Set Variable: CSelf14[Equipment Slot] = -1 + 0 
+ |■Set Variable: CSelf12[Equipment Position (in DB)] = CSelf90[Equipments Check Start Position] - 1 
+ |■Repeat Loop [ CSelf13[Max Equipment Slots] ] Times
+ | |▼ Read the original ID (0-9999).
+ | |■Set Variable: CSelf12[Equipment Position (in DB)] += 1 + 0 
+ | |■Set Variable: CSelf14[Equipment Slot] += 1 + 0 
+ | |■Load DB(Var):  CSelf20[Temp Storage ID] = VarDB[ "Allies":CSelf11[Processing Position]:CSelf12[Equipment Position (in DB)] ] (0:-:-) 
+ | |■Condition (Number):   [1] CSelf14[Equipment Slot] ==  0  /  [2] CSelf14[Equipment Slot] >=  1  
+ | |-◇Condition:  [1]  [ CSelf14[Equipment Slot] == 0   ] Case↓
+ | | |▼ If the ID is 0 or higher, convert it to Weapon ID (20000+).
+ | | |■Condition (Number):   [1] CSelf20[Temp Storage ID] >=  0  
+ | | |-◇Condition:  [1]  [ CSelf20[Temp Storage ID] >= 0   ] Case↓
+ | | | |■Set Variable: CSelf20[Temp Storage ID] = CSelf20[Temp Storage ID] % 10000 
+ | | | |■Set Variable: CSelf20[Temp Storage ID] += 20000 + 0 
  | | | |■
  | | |◇End◇
  | | |■
- | |-◇Condition:  [2]  [ CSelf14[注目装備] >= 1   ] Case↓
- | | |▼ コードが0以上なら、防具コード（30000～）に変換
- | | |■Condition (Number):   [1] CSelf20[一時保存コード] >=  0  
- | | |-◇Condition:  [1]  [ CSelf20[一時保存コード] >= 0   ] Case↓
- | | | |■Set Variable: CSelf20[一時保存コード] = CSelf20[一時保存コード] % 10000 
- | | | |■Set Variable: CSelf20[一時保存コード] += 30000 + 0 
+ | |-◇Condition:  [2]  [ CSelf14[Equipment Slot] >= 1   ] Case↓
+ | | |▼ If the ID is 0 or higher, convert it to Armor ID (30000+).
+ | | |■Condition (Number):   [1] CSelf20[Temp Storage ID] >=  0  
+ | | |-◇Condition:  [1]  [ CSelf20[Temp Storage ID] >= 0   ] Case↓
+ | | | |■Set Variable: CSelf20[Temp Storage ID] = CSelf20[Temp Storage ID] % 10000 
+ | | | |■Set Variable: CSelf20[Temp Storage ID] += 30000 + 0 
  | | | |■
  | | |◇End◇
  | | |■
  | |◇End◇
- | |▼ 格納し直す
- | |■Write to DB(Var): VarDB[ "Allies":CSelf11[処理中位置]:CSelf12[注目装備位置（DB側）] ] (0:-:-) =  CSelf20[一時保存コード]
+ | |▼ Store again.
+ | |■Write to DB(Var): VarDB[ "Allies":CSelf11[Processing Position]:CSelf12[Equipment Position (in DB)] ] (0:-:-) =  CSelf20[Temp Storage ID]
  | |■
  |◇Loop End Point◇◇
  |▼  
- |▼ 自然回復値を0に戻す
- |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf11[処理中位置]:"[Temp] HP Regeneration" ] (17:-:11) =  0
- |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf11[処理中位置]:"[Temp] SP Regeneration" ] (17:-:12) =  0
- |▼ 一時パラメータを計算
- |■Call Event [Name]: ["X[移]一時ｽﾃ計算<初期化>"] <CommonEv 122>  / CSelf11[処理中位置]
- |■Call Event [Name]: ["X[移]一時ｽﾃ計算<装備補正>"] <CommonEv 123>  / CSelf11[処理中位置]
- |■Call Event [Name]: ["X[移]一時ｽﾃ計算<状態補正>"] <CommonEv 124>  / CSelf11[処理中位置]
- |▼ HP・SPを満タンに
- |■Call Event [Name]: ["X[移]パラメータ増減"] <CommonEv 70>  / CSelf11[処理中位置] / 22:HP / 999999 / 0:なし
- |■Call Event [Name]: ["X[移]パラメータ増減"] <CommonEv 70>  / CSelf11[処理中位置] / 23:SP / 999999 / 0:なし
+ |▼ Reset regeneration values to 0.
+ |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf11[Processing Position]:"[Temp] HP Regeneration" ] (17:-:11) =  0
+ |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf11[Processing Position]:"[Temp] SP Regeneration" ] (17:-:12) =  0
+ |▼ Calculate temporary stats.
+ |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf11[Processing Position]
+ |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf11[Processing Position]
+ |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf11[Processing Position]
+ |▼ Fill up HP and SP.
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf11[Processing Position] / 22:HP / 999999 / 0:なし
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf11[Processing Position] / 23:SP / 999999 / 0:なし
  |■
 ◇Loop End Point◇◇
 ▼  
 ■Repeat Loop [ 0 ] Times
- |▼ 上に移動したのでループ0回でコメントアウト
+ |▼ Moved up, so commented out with 0 loops.
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |▼ 最新セーブデータ番号をSystem.savから取得　（System.savの通常変数0番を最終セーブデータ番号として使用）
+ |▼ Get the last-used save slot from System.sav. (System.sav's Normal Variable #0 is used for the last-used save slot).
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |■Set String: CSelf5 = "Save/System.sav"
- |■Read Save Data:  CSelf20[一時保存コード] = Save Data [CSelf5]'s V0[[Sample Game] Cook Appears]
- |■Set Variable: Sys25:Current Save (0+) = CSelf20[一時保存コード] + 0 
+ |■Read Save Data:  CSelf20[Temp Storage ID] = Save Data [CSelf5]'s V0[[Sample Game] Cook Appears]
+ |■Set Variable: Sys25:Current Save (0+) = CSelf20[Temp Storage ID] + 0 
  |■
 ◇Loop End Point◇◇
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼ 初期音量を60に変更　フォント太さも修正  ver3.16修正
+▼ Ver.3.16  Changed the initial volume to 60 and corrected the font weight.
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■Set Variable: Sys100:BGM Volume Multiplier [%] = 60 + 0 
 ■Set Variable: Sys101:BGS Volume Multiplier [%] = 60 + 0 

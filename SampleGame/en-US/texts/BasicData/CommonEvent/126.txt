@@ -1,5 +1,5 @@
 COMMON_ID=126
-COMMON_NAME=X[移]歩行時_並列キー処理
+COMMON_NAME=X[Map]ParallelProcessWhenWalking
 COMMAND_COLOR=4
 TRIGGER=35
 TRIGGER_TARGET=2000000
@@ -164,7 +164,7 @@ COMMAND_NUM=127
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　これは並列イベントで、ゲーム中、常に実行されています。主に、")
 [103][0,1]<0>()("　　・メニュー表示用のキャンセルキー受付")
 [103][0,1]<0>()("　　・一歩あるいたときの処理を実行")
@@ -176,11 +176,11 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("　「メニューを開いたときは次の一歩を歩き出さないようにする」")
 [103][0,1]<0>()("　など、安全性と便利さを向上させるための工夫がなされています。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("イベント実行中はキーが押されても無視")
 [111][4,0]<0>(17,9000013,0,2)()
@@ -270,12 +270,12 @@ WoditorEvCOMMAND_START
 [124][4,0]<1>(1600021,4096,-2,3)()
 [111][4,0]<1>(17,1600020,1600022,5)()
 [401][1,0]<1>(1)()
-[300][2,1]<2>(0,0)("X[移]状態更新")
+[300][2,1]<2>(0,0)("X[Map]Update States")
 [0][0,0]<2>()()
 [420][1,0]<1>(0)()
 [111][4,0]<2>(1,1600021,1600023,5)()
 [401][1,0]<2>(1)()
-[300][2,1]<3>(0,0)("X[移]状態更新")
+[300][2,1]<3>(0,0)("X[Map]Update States")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [0][0,0]<2>()()
@@ -294,7 +294,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　これは並列イベントで、ゲーム中、常に実行されています。主に、
 ▼ 　　・メニュー表示用のキャンセルキー受付
 ▼ 　　・一歩あるいたときの処理を実行
@@ -306,11 +306,11 @@ WoditorEvCOMMAND_END
 ▼ 　「メニューを開いたときは次の一歩を歩き出さないようにする」
 ▼ 　など、安全性と便利さを向上させるための工夫がなされています。
 ▼ 
-▼ 【このコモンイベント内で操作しているデータベース】
+▼ [Databases Accessed by This Common Event]
 ▼  
-▼ 【ここから呼び出している別コモンイベント】
+▼ [Other Common Events Called from Here]
 ▼  
-▼ 【どのコモンイベントから主に呼び出されているか】
+▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ イベント実行中はキーが押されても無視
 ■Condition (Number):   [1] Sys13:Event Active? (1:Yes) ==  0  
@@ -336,7 +336,7 @@ WoditorEvCOMMAND_END
  | | | | | |▼ 主人公の動きを1フレームだけ止める（止めないと、このままさらに一歩歩いてしまうことがある）
  | | | | | |■Enable/Disable Input:   Down-Key  Left-Key  Right-Key  Up-Key   [ Movement ×   Key Input ✓ ]
  | | | | | |▼ 予約で起動すると、「一度だけ起動する自動イベント」として実行できる
- | | | | | |■Reserve Next Event: [+1 From This Common]  Common 127: [ X[移]メニュー起動 ]
+ | | | | | |■Reserve Next Event: [+1 From This Common]  Common 127: [ X[Map]Start Menu ]
  | | | | | |■Wait: 1 Frames
  | | | | | |■Enable/Disable Input:   Down-Key  Left-Key  Right-Key  Up-Key   [ Movement ✓   Key Input ✓ ]
  | | | | | |■
@@ -371,7 +371,7 @@ WoditorEvCOMMAND_END
  | | | | | | | |▼ 主人公の動きを1フレームだけ止める（止めないと、このフレーム中に、さらに一歩歩いてしまうことがある）
  | | | | | | | |■Enable/Disable Input:   Down-Key  Left-Key  Right-Key  Up-Key   [ Movement ×   Key Input ✓ ]
  | | | | | | | |▼ 予約で起動すると、「一度だけ起動する自動イベント」として実行できる
- | | | | | | | |■Reserve Next Event: [+1 From This Common]  Common 127: [ X[移]メニュー起動 ]
+ | | | | | | | |■Reserve Next Event: [+1 From This Common]  Common 127: [ X[Map]Start Menu ]
  | | | | | | | |■Wait: 1 Frames
  | | | | | | | |■Enable/Disable Input:   Down-Key  Left-Key  Right-Key  Up-Key   [ Movement ✓   Key Input ✓ ]
  | | | | | | | |■Break Loop
@@ -400,12 +400,12 @@ WoditorEvCOMMAND_END
  |■Set Variable+: CSelf21[現在主人公座標Y] = Hero 's Y Pos (Precise) *Top of Character
  |■Condition (Number):   [1] CSelf20[現在主人公座標X] !=  CSelf22[前回主人公座標X]  
  |-◇Condition:  [1]  [ CSelf20[現在主人公座標X] != CSelf22[前回主人公座標X]   ] Case↓
- | |■Call Event [Name]: ["X[移]状態更新"] <CommonEv 76> 
+ | |■Call Event [Name]: ["X[Map]Update States"] <CommonEv 76> 
  | |■
  |-◇Else
  | |■Condition (Number):   [1] CSelf21[現在主人公座標Y] !=  CSelf23[前回主人公座標Y]  
  | |-◇Condition:  [1]  [ CSelf21[現在主人公座標Y] != CSelf23[前回主人公座標Y]   ] Case↓
- | | |■Call Event [Name]: ["X[移]状態更新"] <CommonEv 76> 
+ | | |■Call Event [Name]: ["X[Map]Update States"] <CommonEv 76> 
  | | |■
  | |◇End◇
  | |■

@@ -1,16 +1,16 @@
 COMMON_ID=2
-COMMON_NAME=○防具増減
+COMMON_NAME=○ Change Armors
 COMMAND_COLOR=0
 TRIGGER=32
 TRIGGER_TARGET=2000000
 TRIGGER_VAL=0
-MEMO=防具を増減させます。減らしたいときはマイナスの値を入れて下さい。
+MEMO=Adds or removes armors. To remove, use a negative amount.
 VALINPUT_NUM=3
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=防具番号
-VALINPUT_NAME_1=増減数[-で減]
-VALINPUT_NAME_2=入手メッセージ
+VALINPUT_NAME_0=Armor ID
+VALINPUT_NAME_1=Amount [±]
+VALINPUT_NAME_2=Show Message?
 VALINPUT_NAME_3=
 VALINPUT_NAME_4=
 VALINPUT_NAME_5=
@@ -34,12 +34,12 @@ CHOICE_STR_NUM=10
 CHOICE_STR_0_NUM=0
 CHOICE_STR_1_NUM=0
 CHOICE_STR_2_NUM=6
-CHOICE_STR_2_0=なし
-CHOICE_STR_2_1=あり[単位：～個]
-CHOICE_STR_2_2=あり[単位：～枚]
-CHOICE_STR_2_3=あり[単位：～本]
-CHOICE_STR_2_4=あり[単位：～人]
-CHOICE_STR_2_5=あり[個数無し]
+CHOICE_STR_2_0=No
+CHOICE_STR_2_1=Yes [Unit: ko]
+CHOICE_STR_2_2=Yes [Unit: mai]
+CHOICE_STR_2_3=Yes [Unit: hon]
+CHOICE_STR_2_4=Yes [Unit: nin]
+CHOICE_STR_2_5=Yes [No Number]
 CHOICE_STR_3_NUM=0
 CHOICE_STR_4_NUM=0
 CHOICE_STR_5_NUM=0
@@ -75,16 +75,16 @@ DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
 RETURN_VAL_NAME=
 RETURN_VAL_TARGET=-1
-CSELF_NAME_0=防具番号
-CSELF_NAME_1=増減数[-で減]
-CSELF_NAME_2=入手メッセージ
+CSELF_NAME_0=Armor ID
+CSELF_NAME_1=Amount [±]
+CSELF_NAME_2=Show Message?
 CSELF_NAME_3=
 CSELF_NAME_4=
 CSELF_NAME_5=
 CSELF_NAME_6=
 CSELF_NAME_7=
-CSELF_NAME_8=防具名
-CSELF_NAME_9=単位
+CSELF_NAME_8=Armor Name
+CSELF_NAME_9=Unit
 CSELF_NAME_10=
 CSELF_NAME_11=
 CSELF_NAME_12=
@@ -178,54 +178,54 @@ CSELF_NAME_99=
 COMMAND_NUM=55
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("防具増加処理")
-[300][4,1]<0>(0,2,1600000,1600001)("X[共]防具増減")
-[103][0,1]<0>()("ここから下はメッセージ表示処理（セルフ2が1以上のときのみ）")
+[103][0,1]<0>()("Gain/Lose Armors Processing")
+[300][4,1]<0>(0,2,1600000,1600001)("X[Com]Change Armors")
+[103][0,1]<0>()("The following is message display processing (only when CSelf2 is 1 or higher).")
 [111][4,0]<0>(1,1600002,1,1)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("入手メッセージがある場合、まず単位の名前を得る")
+[103][0,1]<1>()("If there's a message, first get the item unit. [This Japanese counter word isn't used.]")
 [111][10,0]<1>(3,1600002,1,2,1600002,2,2,1600002,3,2)()
 [401][1,0]<1>(1)()
-[122][2,1]<2>(1600009,0)("個")
+[122][3,1]<2>(1600009,0,0)("ko")
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[122][2,1]<2>(1600009,0)("枚")
+[122][3,1]<2>(1600009,0,0)("mai")
 [0][0,0]<2>()()
 [401][1,0]<1>(3)()
-[122][2,1]<2>(1600009,0)("本")
+[122][3,1]<2>(1600009,0,0)("hon")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [111][4,0]<1>(1,1600002,4,2)()
 [401][1,0]<1>(1)()
-[122][2,1]<2>(1600009,0)("人")
+[122][3,1]<2>(1600009,0,0)("nin")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
-[103][0,1]<1>()("防具名を得る")
+[103][0,1]<1>()("Get armor name.")
 [250][5,4]<1>(4,1600000,0,332288,1600008)("","Armors","","Armor Name")
 [111][7,0]<1>(2,1600002,100,1,1600002,1,1)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("アイテムを入手した場合、個数なしで　　「薬草」を手に入れた。　　とだけ出る")
+[103][0,1]<2>()("Message with no quantity.")
 [111][7,0]<2>(2,1600001,1,1,1600001,-1,3)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("アイテムを入手した場合")
-[101][0,1]<3>()("@1<\n>「\cself[8]」を手に入れた。")
+[103][0,1]<3>()("If items are gained, <dqrt>Obtained Herb.<dqrt> appears.")
+[101][0,1]<3>()("@1<\n>Obtained \cself[8].")
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
-[103][0,1]<3>()("アイテムが減った場合")
-[101][0,1]<3>()("@1<\n>「\cself[8]」を失った。")
+[103][0,1]<3>()("If items are lost, <dqrt>Lost Herb.<dqrt> appears.")
+[101][0,1]<3>()("@1<\n>Lost \cself[8].")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
 [111][7,0]<2>(2,1600001,1,1,1600001,-1,3)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("アイテムを入手した場合、　「薬草」を4個手に入れた。　と出る")
-[101][0,1]<3>()("@1<\n>「\cself[8]」を\cself[1]\cself[9]手に入れた。")
+[103][0,1]<3>()("If items are gained, <dqrt>Obtained Herb x4.<dqrt> appears.")
+[101][0,1]<3>()("@1<\n>Obtained \cself[8]」 x\cself[1].")
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
-[103][0,1]<3>()("アイテムが減った場合、　「薬草」を2個失った。　と出る")
+[103][0,1]<3>()("If items are lost, <dqrt>Lost Herb x2.<dqrt> appears.")
 [121][4,0]<3>(1600001,1600001,0,2048)()
-[101][0,1]<3>()("@1<\n>「\cself[8]」を\cself[1]\cself[9]失った。")
+[101][0,1]<3>()("@1<\n>Lost \cself[8] x\cself[1].")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [0][0,0]<2>()()
@@ -236,54 +236,54 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ 防具増加処理
-■Call Event [Name]: ["X[共]防具増減"] <CommonEv 52>  / CSelf0[防具番号] / CSelf1[増減数[-で減]]
-▼ ここから下はメッセージ表示処理（セルフ2が1以上のときのみ）
-■Condition (Number):   [1] CSelf2[入手メッセージ] >=  1  
--◇Condition:  [1]  [ CSelf2[入手メッセージ] >= 1   ] Case↓
- |▼ 入手メッセージがある場合、まず単位の名前を得る
- |■Condition (Number):   [1] CSelf2[入手メッセージ] ==  1  /  [2] CSelf2[入手メッセージ] ==  2  /  [3] CSelf2[入手メッセージ] ==  3  
- |-◇Condition:  [1]  [ CSelf2[入手メッセージ] == 1   ] Case↓
- | |■Set String: CSelf9[単位] = "個"
+▼ Gain/Lose Armors Processing
+■Call Event [Name]: ["X[Com]Change Armors"] <CommonEv 52>  / CSelf0[Armor ID] / CSelf1[Amount [±]]
+▼ The following is message display processing (only when CSelf2 is 1 or higher).
+■Condition (Number):   [1] CSelf2[Show Message?] >=  1  
+-◇Condition:  [1]  [ CSelf2[Show Message?] >= 1   ] Case↓
+ |▼ If there's a message, first get the item unit. [This Japanese counter word isn't used.]
+ |■Condition (Number):   [1] CSelf2[Show Message?] ==  1  /  [2] CSelf2[Show Message?] ==  2  /  [3] CSelf2[Show Message?] ==  3  
+ |-◇Condition:  [1]  [ CSelf2[Show Message?] == 1   ] Case↓
+ | |■Set String: CSelf9[Unit] = "ko"
  | |■
- |-◇Condition:  [2]  [ CSelf2[入手メッセージ] == 2   ] Case↓
- | |■Set String: CSelf9[単位] = "枚"
+ |-◇Condition:  [2]  [ CSelf2[Show Message?] == 2   ] Case↓
+ | |■Set String: CSelf9[Unit] = "mai"
  | |■
- |-◇Condition:  [3]  [ CSelf2[入手メッセージ] == 3   ] Case↓
- | |■Set String: CSelf9[単位] = "本"
- | |■
- |◇End◇
- |■Condition (Number):   [1] CSelf2[入手メッセージ] ==  4  
- |-◇Condition:  [1]  [ CSelf2[入手メッセージ] == 4   ] Case↓
- | |■Set String: CSelf9[単位] = "人"
+ |-◇Condition:  [3]  [ CSelf2[Show Message?] == 3   ] Case↓
+ | |■Set String: CSelf9[Unit] = "hon"
  | |■
  |◇End◇
- |▼ 防具名を得る
- |■Load DB(User):  CSelf8[防具名] = UserDB[ "Armors":CSelf0[防具番号]:"Armor Name" ] (4:-:0) 
- |■Condition (Number):   [1] CSelf2[入手メッセージ] >=  100  /  [2] CSelf2[入手メッセージ] >=  1  
- |-◇Condition:  [1]  [ CSelf2[入手メッセージ] >= 100   ] Case↓
- | |▼ アイテムを入手した場合、個数なしで　　「薬草」を手に入れた。　　とだけ出る
- | |■Condition (Number):   [1] CSelf1[増減数[-で減]] >=  1  /  [2] CSelf1[増減数[-で減]] <=  -1  
- | |-◇Condition:  [1]  [ CSelf1[増減数[-で減]] >= 1   ] Case↓
- | | |▼ アイテムを入手した場合
- | | |■Show Message:@1\n「\cself[8]」を手に入れた。
+ |■Condition (Number):   [1] CSelf2[Show Message?] ==  4  
+ |-◇Condition:  [1]  [ CSelf2[Show Message?] == 4   ] Case↓
+ | |■Set String: CSelf9[Unit] = "nin"
+ | |■
+ |◇End◇
+ |▼ Get armor name.
+ |■Load DB(User):  CSelf8[Armor Name] = UserDB[ "Armors":CSelf0[Armor ID]:"Armor Name" ] (4:-:0) 
+ |■Condition (Number):   [1] CSelf2[Show Message?] >=  100  /  [2] CSelf2[Show Message?] >=  1  
+ |-◇Condition:  [1]  [ CSelf2[Show Message?] >= 100   ] Case↓
+ | |▼ Message with no quantity.
+ | |■Condition (Number):   [1] CSelf1[Amount [±]] >=  1  /  [2] CSelf1[Amount [±]] <=  -1  
+ | |-◇Condition:  [1]  [ CSelf1[Amount [±]] >= 1   ] Case↓
+ | | |▼ If items are gained, "Obtained Herb." appears.
+ | | |■Show Message:@1\nObtained \cself[8].
  | | |■
- | |-◇Condition:  [2]  [ CSelf1[増減数[-で減]] <= -1   ] Case↓
- | | |▼ アイテムが減った場合
- | | |■Show Message:@1\n「\cself[8]」を失った。
+ | |-◇Condition:  [2]  [ CSelf1[Amount [±]] <= -1   ] Case↓
+ | | |▼ If items are lost, "Lost Herb." appears.
+ | | |■Show Message:@1\nLost \cself[8].
  | | |■
  | |◇End◇
  | |■
- |-◇Condition:  [2]  [ CSelf2[入手メッセージ] >= 1   ] Case↓
- | |■Condition (Number):   [1] CSelf1[増減数[-で減]] >=  1  /  [2] CSelf1[増減数[-で減]] <=  -1  
- | |-◇Condition:  [1]  [ CSelf1[増減数[-で減]] >= 1   ] Case↓
- | | |▼ アイテムを入手した場合、　「薬草」を4個手に入れた。　と出る
- | | |■Show Message:@1\n「\cself[8]」を\cself[1]\cself[9]手に入れた。
+ |-◇Condition:  [2]  [ CSelf2[Show Message?] >= 1   ] Case↓
+ | |■Condition (Number):   [1] CSelf1[Amount [±]] >=  1  /  [2] CSelf1[Amount [±]] <=  -1  
+ | |-◇Condition:  [1]  [ CSelf1[Amount [±]] >= 1   ] Case↓
+ | | |▼ If items are gained, "Obtained Herb x4." appears.
+ | | |■Show Message:@1\nObtained \cself[8]」 x\cself[1].
  | | |■
- | |-◇Condition:  [2]  [ CSelf1[増減数[-で減]] <= -1   ] Case↓
- | | |▼ アイテムが減った場合、　「薬草」を2個失った。　と出る
- | | |■Set Variable: CSelf1[増減数[-で減]] Absolute= CSelf1[増減数[-で減]] + 0 
- | | |■Show Message:@1\n「\cself[8]」を\cself[1]\cself[9]失った。
+ | |-◇Condition:  [2]  [ CSelf1[Amount [±]] <= -1   ] Case↓
+ | | |▼ If items are lost, "Lost Herb x2." appears.
+ | | |■Set Variable: CSelf1[Amount [±]] Absolute= CSelf1[Amount [±]] + 0 
+ | | |■Show Message:@1\nLost \cself[8] x\cself[1].
  | | |■
  | |◇End◇
  | |■

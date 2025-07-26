@@ -1,16 +1,16 @@
 COMMON_ID=21
-COMMON_NAME=▲装備取得
+COMMON_NAME=▲Get Equipment
 COMMAND_COLOR=0
 TRIGGER=32
 TRIGGER_TARGET=2000000
 TRIGGER_VAL=0
-MEMO=装備番号[0～]を返します、なければ [-1]。取得したい装備種[武器/防具]と違う種類である場合も-1を返します。
+MEMO=Returns equipment ID [0+]. If none, [-1]. -1 is also returned if specified equipment type (weapon/armor) differs.
 VALINPUT_NUM=3
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=対象主人公
-VALINPUT_NAME_1=取得する欄
-VALINPUT_NAME_2=取得装備種
+VALINPUT_NAME_0=Target Ally
+VALINPUT_NAME_1=Which Slot?
+VALINPUT_NAME_2=Equipment Type
 VALINPUT_NAME_3=
 VALINPUT_NAME_4=
 VALINPUT_NAME_5=
@@ -33,20 +33,18 @@ LOADTYPE9=0
 CHOICE_STR_NUM=10
 CHOICE_STR_0_NUM=0
 CHOICE_STR_1_NUM=8
-CHOICE_STR_1_0=武器欄
-CHOICE_STR_1_1=防具欄1
-CHOICE_STR_1_2=防具欄2
-CHOICE_STR_1_3=防具欄3
-CHOICE_STR_1_4=防具欄4
-CHOICE_STR_1_5=防具欄5
-CHOICE_STR_1_6=防具欄6
-CHOICE_STR_1_7=防具欄7
+CHOICE_STR_1_0=Weapon Slot
+CHOICE_STR_1_1=Armor Slot 1
+CHOICE_STR_1_2=Armor Slot 2
+CHOICE_STR_1_3=Armor Slot 3
+CHOICE_STR_1_4=Armor Slot 4
+CHOICE_STR_1_5=Armor Slot 5
+CHOICE_STR_1_6=Armor Slot 6
+CHOICE_STR_1_7=Armor Slot 7
 CHOICE_STR_2_NUM=2
-CHOICE_STR_2_0=武器
-CHOICE_STR_2_1=防具
-CHOICE_STR_3_NUM=2
-CHOICE_STR_3_0=ﾀﾞﾒｰｼﾞ表示ﾅｼ
-CHOICE_STR_3_1=ﾀﾞﾒｰｼﾞ表示有り
+CHOICE_STR_2_0=Weapon
+CHOICE_STR_2_1=Armor
+CHOICE_STR_3_NUM=0
 CHOICE_STR_4_NUM=0
 CHOICE_STR_5_NUM=0
 CHOICE_STR_6_NUM=0
@@ -70,9 +68,7 @@ CHOICE_VAL_1_7=8
 CHOICE_VAL_2_NUM=2
 CHOICE_VAL_2_0=0
 CHOICE_VAL_2_1=1
-CHOICE_VAL_3_NUM=2
-CHOICE_VAL_3_0=0
-CHOICE_VAL_3_1=1
+CHOICE_VAL_3_NUM=0
 CHOICE_VAL_4_NUM=0
 CHOICE_VAL_5_NUM=0
 CHOICE_VAL_6_NUM=0
@@ -85,11 +81,11 @@ DEFAULT_VAL_1=1
 DEFAULT_VAL_2=0
 DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
-RETURN_VAL_NAME=装備番号
+RETURN_VAL_NAME=Equipment ID
 RETURN_VAL_TARGET=10
-CSELF_NAME_0=対象主人公
-CSELF_NAME_1=取得する欄
-CSELF_NAME_2=取得装備種
+CSELF_NAME_0=Target Ally
+CSELF_NAME_1=Slot to Get
+CSELF_NAME_2=Equipment Type
 CSELF_NAME_3=
 CSELF_NAME_4=
 CSELF_NAME_5=
@@ -97,7 +93,7 @@ CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=
-CSELF_NAME_10=装備番号
+CSELF_NAME_10=Equipment ID
 CSELF_NAME_11=
 CSELF_NAME_12=
 CSELF_NAME_13=
@@ -192,19 +188,19 @@ COMMAND_NUM=35
 WoditorEvCOMMAND_START
 [121][4,0]<0>(1600001,1,0,512)()
 [121][4,0]<0>(1600010,-1,0,0)()
-[103][0,1]<0>()("装備コードを取得する（武器なら20000～、防具なら30000～）")
-[300][5,1]<0>(0,16777218,1600000,1600001,1600010)("X[移]選択箇所装備コード取得")
+[103][0,1]<0>()("Get equipment ID (Weapons are 20000+, Armor is 30000+).")
+[300][5,1]<0>(0,16777218,1600000,1600001,1600010)("X[Map]Get Equipment ID")
 [111][4,0]<0>(1,1600010,20000,1)()
 [401][1,0]<0>(1)()
 [111][7,0]<1>(2,1600010,29999,3,1600010,39999,3)()
 [401][1,0]<1>(1)()
 [111][7,0]<2>(2,1600002,0,2,1600002,1,2)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("武器を取得する場合")
+[103][0,1]<3>()("Case for getting weapon.")
 [121][4,0]<3>(1600010,20000,0,1280)()
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
-[103][0,1]<3>()("防具を取得する場合")
+[103][0,1]<3>()("Case for getting armor.")
 [121][4,0]<3>(1600010,-1,0,0)()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
@@ -212,11 +208,11 @@ WoditorEvCOMMAND_START
 [401][1,0]<1>(2)()
 [111][7,0]<2>(2,1600002,0,2,1600002,1,2)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("武器を取得する場合")
+[103][0,1]<3>()("Case for getting weapon.")
 [121][4,0]<3>(1600010,-1,0,0)()
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
-[103][0,1]<3>()("防具を取得する場合")
+[103][0,1]<3>()("Case for getting armor.")
 [121][4,0]<3>(1600010,30000,0,1280)()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
@@ -228,34 +224,34 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Set Variable: CSelf1[取得する欄] -= 1 + 0 
-■Set Variable: CSelf10[装備番号] = -1 + 0 
-▼ 装備コードを取得する（武器なら20000～、防具なら30000～）
-■Call Event [Name]: CSelf10[装備番号] = ["X[移]選択箇所装備コード取得"] <CommonEv 106>  / CSelf0[対象主人公] / CSelf1[取得する欄]
-■Condition (Number):   [1] CSelf10[装備番号] >=  20000  
--◇Condition:  [1]  [ CSelf10[装備番号] >= 20000   ] Case↓
- |■Condition (Number):   [1] CSelf10[装備番号] <=  29999  /  [2] CSelf10[装備番号] <=  39999  
- |-◇Condition:  [1]  [ CSelf10[装備番号] <= 29999   ] Case↓
- | |■Condition (Number):   [1] CSelf2[取得装備種] ==  0  /  [2] CSelf2[取得装備種] ==  1  
- | |-◇Condition:  [1]  [ CSelf2[取得装備種] == 0   ] Case↓
- | | |▼ 武器を取得する場合
- | | |■Set Variable: CSelf10[装備番号] %= 20000 + 0 
+■Set Variable: CSelf1[Slot to Get] -= 1 + 0 
+■Set Variable: CSelf10[Equipment ID] = -1 + 0 
+▼ Get equipment ID (Weapons are 20000+, Armor is 30000+).
+■Call Event [Name]: CSelf10[Equipment ID] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf0[Target Ally] / CSelf1[Slot to Get]
+■Condition (Number):   [1] CSelf10[Equipment ID] >=  20000  
+-◇Condition:  [1]  [ CSelf10[Equipment ID] >= 20000   ] Case↓
+ |■Condition (Number):   [1] CSelf10[Equipment ID] <=  29999  /  [2] CSelf10[Equipment ID] <=  39999  
+ |-◇Condition:  [1]  [ CSelf10[Equipment ID] <= 29999   ] Case↓
+ | |■Condition (Number):   [1] CSelf2[Equipment Type] ==  0  /  [2] CSelf2[Equipment Type] ==  1  
+ | |-◇Condition:  [1]  [ CSelf2[Equipment Type] == 0   ] Case↓
+ | | |▼ Case for getting weapon.
+ | | |■Set Variable: CSelf10[Equipment ID] %= 20000 + 0 
  | | |■
- | |-◇Condition:  [2]  [ CSelf2[取得装備種] == 1   ] Case↓
- | | |▼ 防具を取得する場合
- | | |■Set Variable: CSelf10[装備番号] = -1 + 0 
+ | |-◇Condition:  [2]  [ CSelf2[Equipment Type] == 1   ] Case↓
+ | | |▼ Case for getting armor.
+ | | |■Set Variable: CSelf10[Equipment ID] = -1 + 0 
  | | |■
  | |◇End◇
  | |■
- |-◇Condition:  [2]  [ CSelf10[装備番号] <= 39999   ] Case↓
- | |■Condition (Number):   [1] CSelf2[取得装備種] ==  0  /  [2] CSelf2[取得装備種] ==  1  
- | |-◇Condition:  [1]  [ CSelf2[取得装備種] == 0   ] Case↓
- | | |▼ 武器を取得する場合
- | | |■Set Variable: CSelf10[装備番号] = -1 + 0 
+ |-◇Condition:  [2]  [ CSelf10[Equipment ID] <= 39999   ] Case↓
+ | |■Condition (Number):   [1] CSelf2[Equipment Type] ==  0  /  [2] CSelf2[Equipment Type] ==  1  
+ | |-◇Condition:  [1]  [ CSelf2[Equipment Type] == 0   ] Case↓
+ | | |▼ Case for getting weapon.
+ | | |■Set Variable: CSelf10[Equipment ID] = -1 + 0 
  | | |■
- | |-◇Condition:  [2]  [ CSelf2[取得装備種] == 1   ] Case↓
- | | |▼ 防具を取得する場合
- | | |■Set Variable: CSelf10[装備番号] %= 30000 + 0 
+ | |-◇Condition:  [2]  [ CSelf2[Equipment Type] == 1   ] Case↓
+ | | |▼ Case for getting armor.
+ | | |■Set Variable: CSelf10[Equipment ID] %= 30000 + 0 
  | | |■
  | |◇End◇
  | |■

@@ -1,5 +1,5 @@
 COMMON_ID=74
-COMMON_NAME=X[移]レベルアップ処理
+COMMON_NAME=X[Map]Change Level
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -174,7 +174,7 @@ COMMAND_NUM=206
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　基本システム内で主人公のレベルアップを処理する際は、このコモンが呼び出されます。")
 [103][0,1]<0>()("　このコモンイベントは移動中（ないし戦闘終了後の処理）のみ有効です。")
 [103][0,1]<0>()(" ")
@@ -290,16 +290,16 @@ WoditorEvCOMMAND_START
 [499][0,0]<1>()()
 [103][0,1]<1>()("レベルダウンなら-1倍")
 [121][5,0]<1>(1600033,1600020,0,66304,9)()
-[300][6,1]<1>(0,4,1600000,20,1600033,0)("X[移]パラメータ増減")
-[300][6,1]<1>(0,4,1600000,21,1600034,0)("X[移]パラメータ増減")
-[300][6,1]<1>(0,4,1600000,30,1600035,0)("X[移]パラメータ増減")
-[300][6,1]<1>(0,4,1600000,31,1600036,0)("X[移]パラメータ増減")
-[300][6,1]<1>(0,4,1600000,32,1600037,0)("X[移]パラメータ増減")
-[300][6,1]<1>(0,4,1600000,33,1600038,0)("X[移]パラメータ増減")
-[300][6,1]<1>(0,4,1600000,34,1600039,0)("X[移]パラメータ増減")
-[300][6,1]<1>(0,4,1600000,35,1600040,0)("X[移]パラメータ増減")
-[300][6,1]<1>(0,4,1600000,36,1600041,0)("X[移]パラメータ増減")
-[300][6,1]<1>(0,4,1600000,37,1600042,0)("X[移]パラメータ増減")
+[300][6,1]<1>(0,4,1600000,20,1600033,0)("X[Map]Change Parameter")
+[300][6,1]<1>(0,4,1600000,21,1600034,0)("X[Map]Change Parameter")
+[300][6,1]<1>(0,4,1600000,30,1600035,0)("X[Map]Change Parameter")
+[300][6,1]<1>(0,4,1600000,31,1600036,0)("X[Map]Change Parameter")
+[300][6,1]<1>(0,4,1600000,32,1600037,0)("X[Map]Change Parameter")
+[300][6,1]<1>(0,4,1600000,33,1600038,0)("X[Map]Change Parameter")
+[300][6,1]<1>(0,4,1600000,34,1600039,0)("X[Map]Change Parameter")
+[300][6,1]<1>(0,4,1600000,35,1600040,0)("X[Map]Change Parameter")
+[300][6,1]<1>(0,4,1600000,36,1600041,0)("X[Map]Change Parameter")
+[300][6,1]<1>(0,4,1600000,37,1600042,0)("X[Map]Change Parameter")
 [103][0,1]<1>()("能力値アップ履歴を保存")
 [250][5,4]<1>(21,78,0,65552,1600020)("","Base System Variables","","")
 [121][4,0]<1>(1600099,1600020,0,256)()
@@ -383,7 +383,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　基本システム内で主人公のレベルアップを処理する際は、このコモンが呼び出されます。
 ▼ 　このコモンイベントは移動中（ないし戦闘終了後の処理）のみ有効です。
 ▼  
@@ -499,16 +499,16 @@ WoditorEvCOMMAND_END
  |◇End◇
  |▼ レベルダウンなら-1倍
  |■Set Variable: CSelf33[MaxHP成長度] to CSelf42[ｸﾘﾃｨｶﾙ率成長度] *= CSelf20[レベルアップ(1)ダウン(-1)] + 0 
- |■Call Event [Name]: ["X[移]パラメータ増減"] <CommonEv 70>  / CSelf0[主人公データID] / 20:最大HP / CSelf33[MaxHP成長度] / 0:なし
- |■Call Event [Name]: ["X[移]パラメータ増減"] <CommonEv 70>  / CSelf0[主人公データID] / 21:最大SP / CSelf34[MaxSP成長度] / 0:なし
- |■Call Event [Name]: ["X[移]パラメータ増減"] <CommonEv 70>  / CSelf0[主人公データID] / 30:攻撃力 / CSelf35[攻撃力成長度] / 0:なし
- |■Call Event [Name]: ["X[移]パラメータ増減"] <CommonEv 70>  / CSelf0[主人公データID] / 31:防御力 / CSelf36[防御力成長度] / 0:なし
- |■Call Event [Name]: ["X[移]パラメータ増減"] <CommonEv 70>  / CSelf0[主人公データID] / 32:精神攻撃 / CSelf37[精神攻撃成長度] / 0:なし
- |■Call Event [Name]: ["X[移]パラメータ増減"] <CommonEv 70>  / CSelf0[主人公データID] / 33:精神防御 / CSelf38[精神防御成長度] / 0:なし
- |■Call Event [Name]: ["X[移]パラメータ増減"] <CommonEv 70>  / CSelf0[主人公データID] / 34:敏捷性 / CSelf39[敏捷度成長度] / 0:なし
- |■Call Event [Name]: ["X[移]パラメータ増減"] <CommonEv 70>  / CSelf0[主人公データID] / 35:命中率 / CSelf40[命中率成長度] / 0:なし
- |■Call Event [Name]: ["X[移]パラメータ増減"] <CommonEv 70>  / CSelf0[主人公データID] / 36:回避率 / CSelf41[回避率成長度] / 0:なし
- |■Call Event [Name]: ["X[移]パラメータ増減"] <CommonEv 70>  / CSelf0[主人公データID] / 37:クリティカル率 / CSelf42[ｸﾘﾃｨｶﾙ率成長度] / 0:なし
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[主人公データID] / 20:最大HP / CSelf33[MaxHP成長度] / 0:なし
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[主人公データID] / 21:最大SP / CSelf34[MaxSP成長度] / 0:なし
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[主人公データID] / 30:攻撃力 / CSelf35[攻撃力成長度] / 0:なし
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[主人公データID] / 31:防御力 / CSelf36[防御力成長度] / 0:なし
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[主人公データID] / 32:精神攻撃 / CSelf37[精神攻撃成長度] / 0:なし
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[主人公データID] / 33:精神防御 / CSelf38[精神防御成長度] / 0:なし
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[主人公データID] / 34:敏捷性 / CSelf39[敏捷度成長度] / 0:なし
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[主人公データID] / 35:命中率 / CSelf40[命中率成長度] / 0:なし
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[主人公データID] / 36:回避率 / CSelf41[回避率成長度] / 0:なし
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[主人公データID] / 37:クリティカル率 / CSelf42[ｸﾘﾃｨｶﾙ率成長度] / 0:なし
  |▼ 能力値アップ履歴を保存
  |■Write to DB(Var): VarDB[ "Base System Variables":78:0 ] (18:[LvUp] Level-Up Count:Number) +=  CSelf20[レベルアップ(1)ダウン(-1)]
  |■Set Variable: CSelf99[実レベル変化] += CSelf20[レベルアップ(1)ダウン(-1)] + 0 

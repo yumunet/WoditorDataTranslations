@@ -1,5 +1,5 @@
 COMMON_ID=157
-COMMON_NAME=X[戦]コマンド登録
+COMMON_NAME=X[Bat]Register Command
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -172,7 +172,7 @@ COMMAND_NUM=175
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　指定キャラの戦闘コマンドが入力されたときの、コマンド登録処理を行います。")
 [103][0,1]<0>()("　もし選択後に即発動するコマンドならここで処理してしまいます。")
 [103][0,1]<0>()("")
@@ -215,12 +215,12 @@ WoditorEvCOMMAND_START
 [111][10,0]<1>(3,1600001,-2,2,1600001,-1,2,1600001,0,1)()
 [401][1,0]<1>(1)()
 [103][0,1]<2>()("アイテム")
-[300][4,1]<2>(0,16777217,1600000,1600019)("X[戦]ｱｲﾃﾑ選択実行")
+[300][4,1]<2>(0,16777217,1600000,1600019)("X[Bat]Select Item")
 [250][5,4]<2>(20,18,0,69632,1600022)("","Base System Variables","","")
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
 [103][0,1]<2>()("特殊技能一覧")
-[300][6,1]<2>(0,16777219,1600000,-1,0,1600019)("X[戦]技能選択実行")
+[300][6,1]<2>(0,16777219,1600000,-1,0,1600019)("X[Bat]Select Skill")
 [250][5,4]<2>(20,18,0,69632,1600022)("","Base System Variables","","")
 [111][4,0]<2>(1,1600022,0,1)()
 [401][1,0]<2>(1)()
@@ -234,7 +234,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<2>(0,1600001,16,332288,1600020)("","Skills","","Priority Option")
 [121][4,0]<2>(1600020,100000,0,768)()
 [121][4,0]<2>(1600022,1600001,0,0)()
-[300][6,1]<2>(0,16777219,1600000,1600001,1,1600019)("X[戦]技能選択実行")
+[300][6,1]<2>(0,16777219,1600000,1600001,1,1600019)("X[Bat]Select Skill")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [111][4,0]<1>(1,1600001,-3,2)()
@@ -252,7 +252,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [103][0,1]<1>()("敏捷を計算")
-[300][5,1]<1>(0,16777218,1600000,34,1600018)("X[戦]パラメータ取得")
+[300][5,1]<1>(0,16777218,1600000,34,1600018)("X[Bat]Get Parameter")
 [121][4,0]<1>(1600018,1600020,0,256)()
 [103][0,1]<1>()("一個追加")
 [250][5,4]<1>(20,73,0,69632,1600017)("","Base System Variables","","")
@@ -322,7 +322,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [103][0,1]<1>()("敏捷を計算")
-[300][5,1]<1>(0,16777218,1600000,34,1600018)("X[戦]パラメータ取得")
+[300][5,1]<1>(0,16777218,1600000,34,1600018)("X[Bat]Get Parameter")
 [121][4,0]<1>(1600018,1600020,0,256)()
 [103][0,1]<1>()("一個追加")
 [250][5,4]<1>(20,73,0,69632,1600017)("","Base System Variables","","")
@@ -350,7 +350,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　指定キャラの戦闘コマンドが入力されたときの、コマンド登録処理を行います。
 ▼ 　もし選択後に即発動するコマンドならここで処理してしまいます。
 ▼ 
@@ -393,12 +393,12 @@ WoditorEvCOMMAND_END
  |■Condition (Number):   [1] CSelf1[発動技能] ==  -2  /  [2] CSelf1[発動技能] ==  -1  /  [3] CSelf1[発動技能] >=  0  
  |-◇Condition:  [1]  [ CSelf1[発動技能] == -2   ] Case↓
  | |▼ アイテム
- | |■Call Event [Name]: CSelf19[対象者] = ["X[戦]ｱｲﾃﾑ選択実行"] <CommonEv 158>  / CSelf0[発動戦闘ｽﾛｯﾄ]
+ | |■Call Event [Name]: CSelf19[対象者] = ["X[Bat]Select Item"] <CommonEv 158>  / CSelf0[発動戦闘ｽﾛｯﾄ]
  | |■Load DB(Var):  CSelf22[実行コード] = VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) 
  | |■
  |-◇Condition:  [2]  [ CSelf1[発動技能] == -1   ] Case↓
  | |▼ 特殊技能一覧
- | |■Call Event [Name]: CSelf19[対象者] = ["X[戦]技能選択実行"] <CommonEv 159>  / CSelf0[発動戦闘ｽﾛｯﾄ] / -1 / 0:技能選択画面から[A欄不要]
+ | |■Call Event [Name]: CSelf19[対象者] = ["X[Bat]Select Skill"] <CommonEv 159>  / CSelf0[発動戦闘ｽﾛｯﾄ] / -1 / 0:技能選択画面から[A欄不要]
  | |■Load DB(Var):  CSelf22[実行コード] = VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) 
  | |■Condition (Number):   [1] CSelf22[実行コード] >=  0  
  | |-◇Condition:  [1]  [ CSelf22[実行コード] >= 0   ] Case↓
@@ -412,7 +412,7 @@ WoditorEvCOMMAND_END
  | |■Load DB(User):  CSelf20[先制フラグ] = UserDB[ "Skills":CSelf1[発動技能]:"Priority Option" ] (0:-:16) 
  | |■Set Variable: CSelf20[先制フラグ] *= 100000 + 0 
  | |■Set Variable: CSelf22[実行コード] = CSelf1[発動技能] + 0 
- | |■Call Event [Name]: CSelf19[対象者] = ["X[戦]技能選択実行"] <CommonEv 159>  / CSelf0[発動戦闘ｽﾛｯﾄ] / CSelf1[発動技能] / 1:技能[A]指定済み実行
+ | |■Call Event [Name]: CSelf19[対象者] = ["X[Bat]Select Skill"] <CommonEv 159>  / CSelf0[発動戦闘ｽﾛｯﾄ] / CSelf1[発動技能] / 1:技能[A]指定済み実行
  | |■
  |◇End◇
  |■Condition (Number):   [1] CSelf1[発動技能] ==  -3  
@@ -430,7 +430,7 @@ WoditorEvCOMMAND_END
  | |■
  |◇End◇
  |▼ 敏捷を計算
- |■Call Event [Name]: CSelf18[敏捷性] = ["X[戦]パラメータ取得"] <CommonEv 136>  / CSelf0[発動戦闘ｽﾛｯﾄ] / 34:敏捷性
+ |■Call Event [Name]: CSelf18[敏捷性] = ["X[Bat]Get Parameter"] <CommonEv 136>  / CSelf0[発動戦闘ｽﾛｯﾄ] / 34:敏捷性
  |■Set Variable: CSelf18[敏捷性] += CSelf20[先制フラグ] + 0 
  |▼ 一個追加
  |■Load DB(Var):  CSelf17[注目アクション位置] = VarDB[ "Base System Variables":73:0 ] (18:[Battle] Command Input Pos:Number) 
@@ -500,7 +500,7 @@ WoditorEvCOMMAND_END
  | |■
  |◇End◇
  |▼ 敏捷を計算
- |■Call Event [Name]: CSelf18[敏捷性] = ["X[戦]パラメータ取得"] <CommonEv 136>  / CSelf0[発動戦闘ｽﾛｯﾄ] / 34:敏捷性
+ |■Call Event [Name]: CSelf18[敏捷性] = ["X[Bat]Get Parameter"] <CommonEv 136>  / CSelf0[発動戦闘ｽﾛｯﾄ] / 34:敏捷性
  |■Set Variable: CSelf18[敏捷性] += CSelf20[先制フラグ] + 0 
  |▼ 一個追加
  |■Load DB(Var):  CSelf17[注目アクション位置] = VarDB[ "Base System Variables":73:0 ] (18:[Battle] Command Input Pos:Number) 

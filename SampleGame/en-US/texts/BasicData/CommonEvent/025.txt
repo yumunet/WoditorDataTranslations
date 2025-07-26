@@ -1,15 +1,15 @@
 COMMON_ID=25
-COMMON_NAME=▲特殊技能の有無取得
+COMMON_NAME=▲Check for Skill
 COMMAND_COLOR=0
 TRIGGER=32
 TRIGGER_TARGET=2000000
 TRIGGER_VAL=0
-MEMO=主人公の特殊技能習得の有無を取得します。覚えてたら1を、なければ0を返します。
+MEMO=Check whether an ally has learned a skill. If they have, 1 is returned, otherwise 0.
 VALINPUT_NUM=2
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=対象主人公
-VALINPUT_NAME_1=判定特殊技能
+VALINPUT_NAME_0=Target Ally
+VALINPUT_NAME_1=Skill
 VALINPUT_NAME_2=
 VALINPUT_NAME_3=
 VALINPUT_NAME_4=
@@ -32,18 +32,9 @@ LOADTYPE8=0
 LOADTYPE9=0
 CHOICE_STR_NUM=10
 CHOICE_STR_0_NUM=0
-CHOICE_STR_1_NUM=3
-CHOICE_STR_1_0=[指定なし]
-CHOICE_STR_1_1=[指定なし]
-CHOICE_STR_1_2=[指定なし]
-CHOICE_STR_2_NUM=3
-CHOICE_STR_2_0=[指定なし]
-CHOICE_STR_2_1=[指定なし]
-CHOICE_STR_2_2=[指定なし]
-CHOICE_STR_3_NUM=3
-CHOICE_STR_3_0=[指定なし]
-CHOICE_STR_3_1=[指定なし]
-CHOICE_STR_3_2=[指定なし]
+CHOICE_STR_1_NUM=0
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=0
 CHOICE_STR_4_NUM=0
 CHOICE_STR_5_NUM=0
 CHOICE_STR_6_NUM=0
@@ -59,14 +50,8 @@ CHOICE_VAL_1_NUM=3
 CHOICE_VAL_1_0=1
 CHOICE_VAL_1_1=0
 CHOICE_VAL_1_2=0
-CHOICE_VAL_2_NUM=3
-CHOICE_VAL_2_0=1
-CHOICE_VAL_2_1=3
-CHOICE_VAL_2_2=1
-CHOICE_VAL_3_NUM=3
-CHOICE_VAL_3_0=1
-CHOICE_VAL_3_1=4
-CHOICE_VAL_3_2=1
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=0
 CHOICE_VAL_4_NUM=0
 CHOICE_VAL_5_NUM=0
 CHOICE_VAL_6_NUM=0
@@ -79,10 +64,10 @@ DEFAULT_VAL_1=0
 DEFAULT_VAL_2=0
 DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
-RETURN_VAL_NAME=習得済み=1
+RETURN_VAL_NAME=Learned? (Yes: 1)
 RETURN_VAL_TARGET=30
-CSELF_NAME_0=対象主人公
-CSELF_NAME_1=判定特殊技能
+CSELF_NAME_0=Target Ally
+CSELF_NAME_1=Skill
 CSELF_NAME_2=
 CSELF_NAME_3=
 CSELF_NAME_4=
@@ -91,7 +76,7 @@ CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=
-CSELF_NAME_10=現在のレベル
+CSELF_NAME_10=Current Level
 CSELF_NAME_11=
 CSELF_NAME_12=
 CSELF_NAME_13=
@@ -101,8 +86,8 @@ CSELF_NAME_16=
 CSELF_NAME_17=
 CSELF_NAME_18=
 CSELF_NAME_19=
-CSELF_NAME_20=チェック位置
-CSELF_NAME_21=習得レベル
+CSELF_NAME_20=Check Position
+CSELF_NAME_21=Learning Level
 CSELF_NAME_22=
 CSELF_NAME_23=
 CSELF_NAME_24=
@@ -111,7 +96,7 @@ CSELF_NAME_26=
 CSELF_NAME_27=
 CSELF_NAME_28=
 CSELF_NAME_29=
-CSELF_NAME_30=技能習得なら１
+CSELF_NAME_30=If Learned, 1
 CSELF_NAME_31=
 CSELF_NAME_32=
 CSELF_NAME_33=
@@ -184,9 +169,9 @@ CSELF_NAME_99=
 COMMAND_NUM=35
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("技能DBをチェックする")
+[103][0,1]<0>()("Check skills database.")
 [121][4,0]<0>(1600030,0,0,0)()
-[300][5,1]<0>(0,16777218,1600000,10,1600010)("X[移]パラメータ取得")
+[300][5,1]<0>(0,16777218,1600000,10,1600010)("X[Map]Get Parameter")
 [121][4,0]<0>(1600020,-1,0,0)()
 [170][0,0]<0>()()
 [121][4,0]<1>(1600020,2,0,256)()
@@ -198,7 +183,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<1>(1,1600000,1600020,69632,1600021)("","┣ Skill Learning Lv","","")
 [111][4,0]<1>(1,1600021,1600001,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("技能番号が見つかった場合の処理")
+[103][0,1]<2>()("If the skill ID is found.")
 [121][4,0]<2>(1600020,-1,0,256)()
 [250][5,4]<2>(1,1600000,1600020,69632,1600021)("","┣ Skill Learning Lv","","")
 [121][4,0]<2>(1600020,1,0,256)()
@@ -207,7 +192,7 @@ WoditorEvCOMMAND_START
 [176][0,0]<3>()()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
-[103][0,1]<2>()("習得レベルが現在レベルより下ならその技能が存在する")
+[103][0,1]<2>()("If the learning level is lower than the current level, the skill exists.")
 [111][4,0]<2>(1,1600021,1600010,3)()
 [401][1,0]<2>(1)()
 [121][4,0]<3>(1600030,1,0,0)()
@@ -222,33 +207,33 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ 技能DBをチェックする
-■Set Variable: CSelf30[技能習得なら１] = 0 + 0 
-■Call Event [Name]: CSelf10[現在のレベル] = ["X[移]パラメータ取得"] <CommonEv 71>  / CSelf0[対象主人公] / 10:レベル
-■Set Variable: CSelf20[チェック位置] = -1 + 0 
+▼ Check skills database.
+■Set Variable: CSelf30[If Learned, 1] = 0 + 0 
+■Call Event [Name]: CSelf10[Current Level] = ["X[Map]Get Parameter"] <CommonEv 71>  / CSelf0[Target Ally] / 10:レベル
+■Set Variable: CSelf20[Check Position] = -1 + 0 
 ■Loop Start
- |■Set Variable: CSelf20[チェック位置] += 2 + 0 
- |■Condition (Number):   [1] CSelf20[チェック位置] >  99  
- |-◇Condition:  [1]  [ CSelf20[チェック位置] > 99   ] Case↓
+ |■Set Variable: CSelf20[Check Position] += 2 + 0 
+ |■Condition (Number):   [1] CSelf20[Check Position] >  99  
+ |-◇Condition:  [1]  [ CSelf20[Check Position] > 99   ] Case↓
  | |■Break Loop
  | |■
  |◇End◇
- |■Load DB(Var):  CSelf21[習得レベル] = VarDB[ "┣ Skill Learning Lv":CSelf0[対象主人公]:CSelf20[チェック位置] ] (1:-:-) 
- |■Condition (Number):   [1] CSelf21[習得レベル] ==  CSelf1[判定特殊技能]  
- |-◇Condition:  [1]  [ CSelf21[習得レベル] == CSelf1[判定特殊技能]   ] Case↓
- | |▼ 技能番号が見つかった場合の処理
- | |■Set Variable: CSelf20[チェック位置] += -1 + 0 
- | |■Load DB(Var):  CSelf21[習得レベル] = VarDB[ "┣ Skill Learning Lv":CSelf0[対象主人公]:CSelf20[チェック位置] ] (1:-:-) 
- | |■Set Variable: CSelf20[チェック位置] += 1 + 0 
- | |■Condition (Number):   [1] CSelf21[習得レベル] <=  -1  
- | |-◇Condition:  [1]  [ CSelf21[習得レベル] <= -1   ] Case↓
+ |■Load DB(Var):  CSelf21[Learning Level] = VarDB[ "┣ Skill Learning Lv":CSelf0[Target Ally]:CSelf20[Check Position] ] (1:-:-) 
+ |■Condition (Number):   [1] CSelf21[Learning Level] ==  CSelf1[Skill]  
+ |-◇Condition:  [1]  [ CSelf21[Learning Level] == CSelf1[Skill]   ] Case↓
+ | |▼ If the skill ID is found.
+ | |■Set Variable: CSelf20[Check Position] += -1 + 0 
+ | |■Load DB(Var):  CSelf21[Learning Level] = VarDB[ "┣ Skill Learning Lv":CSelf0[Target Ally]:CSelf20[Check Position] ] (1:-:-) 
+ | |■Set Variable: CSelf20[Check Position] += 1 + 0 
+ | |■Condition (Number):   [1] CSelf21[Learning Level] <=  -1  
+ | |-◇Condition:  [1]  [ CSelf21[Learning Level] <= -1   ] Case↓
  | | |■Loop Start: Go to Loop Start
  | | |■
  | |◇End◇
- | |▼ 習得レベルが現在レベルより下ならその技能が存在する
- | |■Condition (Number):   [1] CSelf21[習得レベル] <=  CSelf10[現在のレベル]  
- | |-◇Condition:  [1]  [ CSelf21[習得レベル] <= CSelf10[現在のレベル]   ] Case↓
- | | |■Set Variable: CSelf30[技能習得なら１] = 1 + 0 
+ | |▼ If the learning level is lower than the current level, the skill exists.
+ | |■Condition (Number):   [1] CSelf21[Learning Level] <=  CSelf10[Current Level]  
+ | |-◇Condition:  [1]  [ CSelf21[Learning Level] <= CSelf10[Current Level]   ] Case↓
+ | | |■Set Variable: CSelf30[If Learned, 1] = 1 + 0 
  | | |■Exit Event
  | | |■
  | |◇End◇

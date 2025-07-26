@@ -294,11 +294,11 @@ WoditorEvCOMMAND_END
  | |■Show Message:Well, let's turn on Common Event \self[1]\n"■Toggle Pixel Movement"...\n*Click* ON!
  | |■Sound: SE File[SystemFile/SE_Get.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
  | |■Show Message:Alright, you can now move in pixels!\nEnjoy the pixel movement mode — freedom from\ntile-based movement!
- | |■Call Event [Name]: ["■Toggle Pixel Movement"] <CommonEv 39>  / 1:ピクセル移動ON
+ | |■Call Event [Name]: ["■Toggle Pixel Movement"] <CommonEv 39>  / 1:Turn On
  | |■
  |-◇Condition:  [2]  [ This Ev Self0 == 1   ] Case↓
  | |■Sound: SE File[SystemFile/SE_LevelUp.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
- | |■Call Event [Name]: ["■Toggle Pixel Movement"] <CommonEv 39>  / -1:ピクセル移動OFF
+ | |■Call Event [Name]: ["■Toggle Pixel Movement"] <CommonEv 39>  / -1:Turn Off
  | |■Show Message:Pixel movement, off!\nIt was kinda fun, wasn't it?
  | |■Show Message:But when pixel movement is on, it's tricky to pass\nthrough gaps of one tile. So, when you're making\na game, try not to make the paths too narrow!
  | |■

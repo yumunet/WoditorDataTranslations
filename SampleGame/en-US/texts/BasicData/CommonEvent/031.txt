@@ -1,15 +1,15 @@
 COMMON_ID=31
-COMMON_NAME=◆[戦闘用]ダメージ処理
+COMMON_NAME=◆[Battle] Apply Damage
 COMMAND_COLOR=0
 TRIGGER=32
 TRIGGER_TARGET=2000000
 TRIGGER_VAL=0
-MEMO=ダメージをポップアップし、HPを減らします。戦闘中のみ有効。
+MEMO=Only in battle, shows a damage popup and reduces HP.
 VALINPUT_NUM=2
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=対象
-VALINPUT_NAME_1=何ﾎﾟｲﾝﾄ？
+VALINPUT_NAME_0=Target
+VALINPUT_NAME_1=Amount
 VALINPUT_NAME_2=
 VALINPUT_NAME_3=
 VALINPUT_NAME_4=
@@ -23,7 +23,7 @@ LOADTYPE_NUM=10
 LOADTYPE0=2
 LOADTYPE1=0
 LOADTYPE2=0
-LOADTYPE3=2
+LOADTYPE3=0
 LOADTYPE4=0
 LOADTYPE5=0
 LOADTYPE6=0
@@ -32,30 +32,24 @@ LOADTYPE8=0
 LOADTYPE9=0
 CHOICE_STR_NUM=10
 CHOICE_STR_0_NUM=15
-CHOICE_STR_0_0=パーティ全員
-CHOICE_STR_0_1=1人目
-CHOICE_STR_0_2=2人目
-CHOICE_STR_0_3=3人目
-CHOICE_STR_0_4=4人目
-CHOICE_STR_0_5=5人目
-CHOICE_STR_0_6=6人目
-CHOICE_STR_0_7=敵全員
-CHOICE_STR_0_8=敵1
-CHOICE_STR_0_9=敵2
-CHOICE_STR_0_10=敵3
-CHOICE_STR_0_11=敵4
-CHOICE_STR_0_12=敵5
-CHOICE_STR_0_13=敵6
-CHOICE_STR_0_14=敵7
-CHOICE_STR_1_NUM=2
-CHOICE_STR_1_0=レベル増減
-CHOICE_STR_1_1=経験値の増減
-CHOICE_STR_2_NUM=2
-CHOICE_STR_2_0=HP0で戦闘不能に
-CHOICE_STR_2_1=HP1で止める
-CHOICE_STR_3_NUM=2
-CHOICE_STR_3_0=ﾀﾞﾒｰｼﾞ表示ﾅｼ
-CHOICE_STR_3_1=ﾀﾞﾒｰｼﾞ表示有り
+CHOICE_STR_0_0=Whole Party
+CHOICE_STR_0_1=Member 1
+CHOICE_STR_0_2=Member 2
+CHOICE_STR_0_3=Member 3
+CHOICE_STR_0_4=Member 4
+CHOICE_STR_0_5=Member 5
+CHOICE_STR_0_6=Member 6
+CHOICE_STR_0_7=All Enemies
+CHOICE_STR_0_8=Enemy 1
+CHOICE_STR_0_9=Enemy 2
+CHOICE_STR_0_10=Enemy 3
+CHOICE_STR_0_11=Enemy 4
+CHOICE_STR_0_12=Enemy 5
+CHOICE_STR_0_13=Enemy 6
+CHOICE_STR_0_14=Enemy 7
+CHOICE_STR_1_NUM=0
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=0
 CHOICE_STR_4_NUM=0
 CHOICE_STR_5_NUM=0
 CHOICE_STR_6_NUM=0
@@ -79,15 +73,9 @@ CHOICE_VAL_0_11=13
 CHOICE_VAL_0_12=14
 CHOICE_VAL_0_13=15
 CHOICE_VAL_0_14=16
-CHOICE_VAL_1_NUM=2
-CHOICE_VAL_1_0=0
-CHOICE_VAL_1_1=1
-CHOICE_VAL_2_NUM=2
-CHOICE_VAL_2_0=0
-CHOICE_VAL_2_1=1
-CHOICE_VAL_3_NUM=2
-CHOICE_VAL_3_0=0
-CHOICE_VAL_3_1=1
+CHOICE_VAL_1_NUM=0
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=0
 CHOICE_VAL_4_NUM=0
 CHOICE_VAL_5_NUM=0
 CHOICE_VAL_6_NUM=0
@@ -102,9 +90,9 @@ DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
 RETURN_VAL_NAME=
 RETURN_VAL_TARGET=-1
-CSELF_NAME_0=対象
-CSELF_NAME_1=何ﾎﾟｲﾝﾄ？
-CSELF_NAME_2=移動中ｵﾌﾟｼｮﾝ
+CSELF_NAME_0=Target
+CSELF_NAME_1=Amount
+CSELF_NAME_2=
 CSELF_NAME_3=
 CSELF_NAME_4=
 CSELF_NAME_5=
@@ -112,26 +100,26 @@ CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=
-CSELF_NAME_10=対象スロット
-CSELF_NAME_11=対象キャラID
-CSELF_NAME_12=一時変数
+CSELF_NAME_10=Target Slot
+CSELF_NAME_11=Target Character ID
+CSELF_NAME_12=Temp Var
 CSELF_NAME_13=
 CSELF_NAME_14=
 CSELF_NAME_15=
 CSELF_NAME_16=
 CSELF_NAME_17=
-CSELF_NAME_18=座標X
-CSELF_NAME_19=座標Y
-CSELF_NAME_20=最大スロット数
+CSELF_NAME_18=X Position
+CSELF_NAME_19=Y Position
+CSELF_NAME_20=Max Slots
 CSELF_NAME_21=
 CSELF_NAME_22=
 CSELF_NAME_23=
 CSELF_NAME_24=
-CSELF_NAME_25=戦闘中フラグ
+CSELF_NAME_25=In-Battle Flag
 CSELF_NAME_26=
 CSELF_NAME_27=
 CSELF_NAME_28=
-CSELF_NAME_29=戻り先
+CSELF_NAME_29=Return Point
 CSELF_NAME_30=
 CSELF_NAME_31=
 CSELF_NAME_32=
@@ -143,7 +131,7 @@ CSELF_NAME_37=
 CSELF_NAME_38=
 CSELF_NAME_39=
 CSELF_NAME_40=
-CSELF_NAME_41=ダメージ一時
+CSELF_NAME_41=Temp Damage
 CSELF_NAME_42=
 CSELF_NAME_43=
 CSELF_NAME_44=
@@ -160,8 +148,8 @@ CSELF_NAME_54=
 CSELF_NAME_55=
 CSELF_NAME_56=
 CSELF_NAME_57=
-CSELF_NAME_58=直前戦闘不能フラグ
-CSELF_NAME_59=戦闘不能フラグ
+CSELF_NAME_58=Just Before Fainting Flag
+CSELF_NAME_59=Fainted Flag
 CSELF_NAME_60=
 CSELF_NAME_61=
 CSELF_NAME_62=
@@ -211,19 +199,19 @@ WoditorEvCOMMAND_START
 [121][4,0]<1>(1600029,1,0,0)()
 [111][10,0]<1>(3,1600000,0,1,1600000,-1,2,1600000,-2,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("単体の場合は処理して終了")
+[103][0,1]<2>()("For single-target case, process and exit.")
 [121][4,0]<2>(1600029,1,0,0)()
 [121][4,0]<2>(1600010,1600000,0,0)()
-[300][5,1]<2>(0,16777218,1600010,22,1600012)("X[戦]パラメータ取得")
+[300][5,1]<2>(0,16777218,1600010,22,1600012)("X[Bat]Get Parameter")
 [111][4,0]<2>(1,1600012,1,1)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("HPが残ってる場合だけダメージ処理")
-[213][0,1]<3>()("単体ダメージ処理")
+[103][0,1]<3>()("Process damage only if HP remains.")
+[213][0,1]<3>()("Process Damage to One")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[103][0,1]<2>()("味方全体")
+[103][0,1]<2>()("All Allies")
 [250][5,4]<2>(18,51,0,69632,1600020)("","Base System Variables","","")
 [121][4,0]<2>(1600010,-1,0,0)()
 [170][0,0]<2>()()
@@ -233,16 +221,16 @@ WoditorEvCOMMAND_START
 [172][0,0]<4>()()
 [0][0,0]<4>()()
 [499][0,0]<3>()()
-[300][4,1]<3>(0,16777217,1600010,1600011)("X[戦]ｽﾛｯﾄから主人公ID取得")
+[300][4,1]<3>(0,16777217,1600010,1600011)("X[Bat]Get Ally ID From Slot")
 [111][4,0]<3>(1,1600011,0,1)()
 [401][1,0]<3>(1)()
-[300][5,1]<4>(0,16777218,1600010,22,1600012)("X[戦]パラメータ取得")
+[300][5,1]<4>(0,16777218,1600010,22,1600012)("X[Bat]Get Parameter")
 [111][4,0]<4>(1,1600012,1,1)()
 [401][1,0]<4>(1)()
-[103][0,1]<5>()("HPが残ってる場合だけダメージ処理")
+[103][0,1]<5>()("Process damage only if HP remains.")
 [121][4,0]<5>(1600029,2,0,0)()
-[213][0,1]<5>()("単体ダメージ処理")
-[212][0,1]<5>()("単体ダメージ処理終了2")
+[213][0,1]<5>()("Process Damage to One")
+[212][0,1]<5>()("Process Damage to One, Exit 2")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
 [0][0,0]<4>()()
@@ -251,7 +239,7 @@ WoditorEvCOMMAND_START
 [498][0,0]<2>()()
 [0][0,0]<2>()()
 [401][1,0]<1>(3)()
-[103][0,1]<2>()("敵全体")
+[103][0,1]<2>()("All Enemies")
 [250][5,4]<2>(18,69,0,69632,1600020)("","Base System Variables","","")
 [121][4,0]<2>(1600020,10,0,256)()
 [121][4,0]<2>(1600010,9,0,0)()
@@ -262,16 +250,16 @@ WoditorEvCOMMAND_START
 [172][0,0]<4>()()
 [0][0,0]<4>()()
 [499][0,0]<3>()()
-[300][4,1]<3>(0,16777217,1600010,1600011)("X[戦]ｽﾛｯﾄから主人公ID取得")
+[300][4,1]<3>(0,16777217,1600010,1600011)("X[Bat]Get Ally ID From Slot")
 [111][4,0]<3>(1,1600011,0,1)()
 [401][1,0]<3>(1)()
-[300][5,1]<4>(0,16777218,1600010,22,1600012)("X[戦]パラメータ取得")
+[300][5,1]<4>(0,16777218,1600010,22,1600012)("X[Bat]Get Parameter")
 [111][4,0]<4>(1,1600012,1,1)()
 [401][1,0]<4>(1)()
-[103][0,1]<5>()("HPが残ってる場合だけダメージ処理")
+[103][0,1]<5>()("Process damage only if HP remains.")
 [121][4,0]<5>(1600029,3,0,0)()
-[213][0,1]<5>()("単体ダメージ処理")
-[212][0,1]<5>()("単体ダメージ処理終了3")
+[213][0,1]<5>()("Process Damage to One")
+[212][0,1]<5>()("Process Damage to One, Exit 3")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
 [0][0,0]<4>()()
@@ -283,19 +271,19 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("　単体ダメージ処理（終わったら指定ラベルにジャンプ）")
+[103][0,1]<0>()("  Process damage to one. (When done, jump to the specified label.)")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [179][1,0]<0>(0)()
-[212][0,1]<1>()("単体ダメージ処理")
-[103][0,1]<1>()("まず対象キャラが死んでいないかチェック")
-[300][5,1]<1>(0,16777218,1600010,0,1600058)("X[戦]基本状態取得")
+[212][0,1]<1>()("Process Damage to One")
+[103][0,1]<1>()("First, check if the target character is not dead.")
+[300][5,1]<1>(0,16777218,1600010,0,1600058)("X[Bat]Get Basic State")
 [179][1,0]<1>(1)()
 [111][7,0]<2>(2,1600010,10,4,1600010,10,1)()
 [401][1,0]<2>(1)()
-[300][3,1]<3>(0,1,1600010)("X[戦]味方欄_座標算出")
+[300][3,1]<3>(0,1,1600010)("X[Bat]Ally Box: Calc Position")
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
-[300][3,1]<3>(0,1,1600010)("X[戦]敵キャラ_座標算出")
+[300][3,1]<3>(0,1,1600010)("X[Bat]Enemy: Calc Position")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [250][5,4]<2>(21,37,0,69632,1600018)("","Base System Variables","","")
@@ -303,43 +291,43 @@ WoditorEvCOMMAND_START
 [0][0,0]<2>()()
 [498][0,0]<1>()()
 [179][1,0]<1>(1)()
-[103][0,1]<2>()("ダメージ処理")
+[103][0,1]<2>()("Process damage.")
 [121][4,0]<2>(1600041,1600001,0,0)()
-[103][0,1]<2>()("Ver2.22　回復時の分岐を追加")
+[103][0,1]<2>()("Ver.2.22  Added a branch for recovery.")
 [111][7,0]<2>(2,1600001,-1,3,1600001,0,1)()
 [401][1,0]<2>(1)()
 [121][4,0]<3>(1600041,-1,0,768)()
-[300][6,1]<3>(0,4,1600018,1600019,1600041,1)("X[戦]ﾀﾞﾒｰｼﾞ・回復ﾎﾟｯﾌﾟｱｯﾌﾟ")
+[300][6,1]<3>(0,4,1600018,1600019,1600041,1)("X[Bat]Display Dmg/Recovery Popup")
 [121][4,0]<3>(1600041,-1,0,768)()
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
-[300][6,1]<3>(0,4,1600018,1600019,1600041,0)("X[戦]ﾀﾞﾒｰｼﾞ・回復ﾎﾟｯﾌﾟｱｯﾌﾟ")
+[300][6,1]<3>(0,4,1600018,1600019,1600041,0)("X[Bat]Display Dmg/Recovery Popup")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [121][4,0]<2>(1600041,-1,0,768)()
-[300][5,1]<2>(0,3,1600010,22,1600041)("X[戦]パラメータ増減")
-[300][3,1]<2>(0,1,51)("X[共]システムSE再生")
+[300][5,1]<2>(0,3,1600010,22,1600041)("X[Bat]Change Parameter")
+[300][3,1]<2>(0,1,51)("X[Com]Play System Sound")
 [111][7,0]<2>(2,1600010,9,3,1600010,10,1)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("ﾀﾞﾒｰｼﾞエフェクト")
-[103][0,1]<3>()("Ver2.22　回復時の分岐を追加")
+[103][0,1]<3>()("Damage animation effect.")
+[103][0,1]<3>()("Ver.2.22  Added a branch for recovery.")
 [111][7,0]<3>(2,1600001,-1,3,1600001,0,1)()
 [401][1,0]<3>(1)()
-[300][5,1]<4>(0,3,30,1600010,1600010)("X[戦]味方欄_単体描画")
+[300][5,1]<4>(0,3,30,1600010,1600010)("X[Bat]Ally Box: Draw One")
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
-[300][5,1]<4>(0,3,21,1600010,1600010)("X[戦]味方欄_単体描画")
+[300][5,1]<4>(0,3,21,1600010,1600010)("X[Bat]Ally Box: Draw One")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
-[103][0,1]<3>()("Ver2.22　回復時の分岐を追加")
+[103][0,1]<3>()("Ver.2.22  Added a branch for recovery.")
 [111][7,0]<3>(2,1600001,-1,3,1600001,0,1)()
 [401][1,0]<3>(1)()
-[300][4,1]<4>(0,2,30,1600010)("X[戦]敵キャラ_単体描画")
+[300][4,1]<4>(0,2,30,1600010)("X[Bat]Enemy: Draw One")
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
-[300][4,1]<4>(0,2,21,1600010)("X[戦]敵キャラ_単体描画")
+[300][4,1]<4>(0,2,21,1600010)("X[Bat]Enemy: Draw One")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [0][0,0]<3>()()
@@ -348,89 +336,89 @@ WoditorEvCOMMAND_START
 [498][0,0]<1>()()
 [111][7,0]<1>(2,1600010,9,3,1600010,10,1)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("撃破演出")
+[103][0,1]<2>()("Defeat animation.")
 [103][0,1]<2>()(" ")
-[103][0,1]<2>()("味方パラメータ再計算")
-[300][4,1]<2>(0,2,1600010,1)("X[戦]一時ｽﾃ計算<状態補正>")
-[300][5,1]<2>(0,3,5,1600010,1600010)("X[戦]味方欄_単体描画")
-[103][0,1]<2>()("新たに戦闘不能になってたら撃破処理")
-[300][5,1]<2>(0,16777218,1600010,0,1600059)("X[戦]基本状態取得")
+[103][0,1]<2>()("Recalculate ally stats.")
+[300][4,1]<2>(0,2,1600010,1)("X[Bat]CalcTempStats <StatusEffects>")
+[300][5,1]<2>(0,3,5,1600010,1600010)("X[Bat]Ally Box: Draw One")
+[103][0,1]<2>()("If newly-fainted, process defeat.")
+[300][5,1]<2>(0,16777218,1600010,0,1600059)("X[Bat]Get Basic State")
 [111][4,0]<2>(1,1600058,0,2)()
 [401][1,0]<2>(1)()
 [111][4,0]<3>(1,1600059,1,1)()
 [401][1,0]<3>(1)()
-[103][0,1]<4>()("効果音")
-[300][3,1]<4>(0,1,52)("X[共]システムSE再生")
+[103][0,1]<4>()("Sound effect.")
+[300][3,1]<4>(0,1,52)("X[Com]Play System Sound")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[103][0,1]<2>()("必要なら撃破演出")
-[300][3,1]<2>(0,1,1600010)("X[戦]一時ｽﾃ計算<初期化>")
-[300][4,1]<2>(0,2,1600010,0)("X[戦]一時ｽﾃ計算<装備補正>")
-[300][4,1]<2>(0,2,1600010,0)("X[戦]一時ｽﾃ計算<状態補正>")
-[300][4,1]<2>(0,2,2,1600010)("X[戦]敵キャラ_単体描画")
-[300][5,1]<2>(0,16777218,1600010,0,1600059)("X[戦]基本状態取得")
+[103][0,1]<2>()("If necessary, defeat animation.")
+[300][3,1]<2>(0,1,1600010)("X[Bat]CalcTempStats <Initialize>")
+[300][4,1]<2>(0,2,1600010,0)("X[Bat]CalcTempStats <Equipments>")
+[300][4,1]<2>(0,2,1600010,0)("X[Bat]CalcTempStats <StatusEffects>")
+[300][4,1]<2>(0,2,2,1600010)("X[Bat]Enemy: Draw One")
+[300][5,1]<2>(0,16777218,1600010,0,1600059)("X[Bat]Get Basic State")
 [111][4,0]<2>(1,1600059,1,1)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("敵なら敵撃破処理")
-[300][4,1]<3>(0,2,1600010,0)("X[戦]敵撃破処理")
-[300][3,1]<3>(0,1,52)("X[共]システムSE再生")
-[300][3,1]<3>(0,1,20)("X[共]ウェイト2(キー押しで加速)")
+[103][0,1]<3>()("If enemy, process enemy defeat.")
+[300][4,1]<3>(0,2,1600010,0)("X[Bat]Defeat Enemy")
+[300][3,1]<3>(0,1,52)("X[Com]Play System Sound")
+[300][3,1]<3>(0,1,20)("X[Com]Wait 2(PressKeyToSpdUp)")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
-[213][0,1]<1>()("単体ダメージ処理終了\cself[29]")
+[213][0,1]<1>()("Process Damage to One, Exit \cself[29]")
 [0][0,0]<1>()()
 [498][0,0]<0>()()
 [103][0,1]<0>()(" ")
-[212][0,1]<0>()("単体ダメージ処理終了1")
+[212][0,1]<0>()("Process Damage to One, Exit 1")
 [103][0,1]<0>()(" ")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Load DB(Var):  CSelf25[戦闘中フラグ] = VarDB[ "Base System Variables":68:0 ] (18:[Battle] In Battle?:Number) 
-■Condition (Number):   [1] CSelf25[戦闘中フラグ] ==  1  
--◇Condition:  [1]  [ CSelf25[戦闘中フラグ] == 1   ] Case↓
- |■Set Variable: CSelf29[戻り先] = 1 + 0 
- |■Condition (Number):   [1] CSelf0[対象] >=  0  /  [2] CSelf0[対象] ==  -1  /  [3] CSelf0[対象] ==  -2  
- |-◇Condition:  [1]  [ CSelf0[対象] >= 0   ] Case↓
- | |▼ 単体の場合は処理して終了
- | |■Set Variable: CSelf29[戻り先] = 1 + 0 
- | |■Set Variable: CSelf10[対象スロット] = CSelf0[対象] + 0 
- | |■Call Event [Name]: CSelf12[一時変数] = ["X[戦]パラメータ取得"] <CommonEv 136>  / CSelf10[対象スロット] / 22:HP
- | |■Condition (Number):   [1] CSelf12[一時変数] >=  1  
- | |-◇Condition:  [1]  [ CSelf12[一時変数] >= 1   ] Case↓
- | | |▼ HPが残ってる場合だけダメージ処理
- | | |●Label Jump [単体ダメージ処理] >>>>>>>>>>>>>>>>>>>>>>>>>
+■Load DB(Var):  CSelf25[In-Battle Flag] = VarDB[ "Base System Variables":68:0 ] (18:[Battle] In Battle?:Number) 
+■Condition (Number):   [1] CSelf25[In-Battle Flag] ==  1  
+-◇Condition:  [1]  [ CSelf25[In-Battle Flag] == 1   ] Case↓
+ |■Set Variable: CSelf29[Return Point] = 1 + 0 
+ |■Condition (Number):   [1] CSelf0[Target] >=  0  /  [2] CSelf0[Target] ==  -1  /  [3] CSelf0[Target] ==  -2  
+ |-◇Condition:  [1]  [ CSelf0[Target] >= 0   ] Case↓
+ | |▼ For single-target case, process and exit.
+ | |■Set Variable: CSelf29[Return Point] = 1 + 0 
+ | |■Set Variable: CSelf10[Target Slot] = CSelf0[Target] + 0 
+ | |■Call Event [Name]: CSelf12[Temp Var] = ["X[Bat]Get Parameter"] <CommonEv 136>  / CSelf10[Target Slot] / 22:HP
+ | |■Condition (Number):   [1] CSelf12[Temp Var] >=  1  
+ | |-◇Condition:  [1]  [ CSelf12[Temp Var] >= 1   ] Case↓
+ | | |▼ Process damage only if HP remains.
+ | | |●Label Jump [Process Damage to One] >>>>>>>>>>>>>>>>>>>>>>>>>
  | | |■
  | |◇End◇
  | |■
- |-◇Condition:  [2]  [ CSelf0[対象] == -1   ] Case↓
- | |▼ 味方全体
- | |■Load DB(Var):  CSelf20[最大スロット数] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
- | |■Set Variable: CSelf10[対象スロット] = -1 + 0 
+ |-◇Condition:  [2]  [ CSelf0[Target] == -1   ] Case↓
+ | |▼ All Allies
+ | |■Load DB(Var):  CSelf20[Max Slots] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
+ | |■Set Variable: CSelf10[Target Slot] = -1 + 0 
  | |■Loop Start
- | | |■Set Variable: CSelf10[対象スロット] += 1 + 0 
- | | |■Condition (Number):   [1] CSelf10[対象スロット] >=  CSelf20[最大スロット数]  
- | | |-◇Condition:  [1]  [ CSelf10[対象スロット] >= CSelf20[最大スロット数]   ] Case↓
+ | | |■Set Variable: CSelf10[Target Slot] += 1 + 0 
+ | | |■Condition (Number):   [1] CSelf10[Target Slot] >=  CSelf20[Max Slots]  
+ | | |-◇Condition:  [1]  [ CSelf10[Target Slot] >= CSelf20[Max Slots]   ] Case↓
  | | | |■Exit Event
  | | | |■
  | | |◇End◇
- | | |■Call Event [Name]: CSelf11[対象キャラID] = ["X[戦]ｽﾛｯﾄから主人公ID取得"] <CommonEv 141>  / CSelf10[対象スロット]
- | | |■Condition (Number):   [1] CSelf11[対象キャラID] >=  0  
- | | |-◇Condition:  [1]  [ CSelf11[対象キャラID] >= 0   ] Case↓
- | | | |■Call Event [Name]: CSelf12[一時変数] = ["X[戦]パラメータ取得"] <CommonEv 136>  / CSelf10[対象スロット] / 22:HP
- | | | |■Condition (Number):   [1] CSelf12[一時変数] >=  1  
- | | | |-◇Condition:  [1]  [ CSelf12[一時変数] >= 1   ] Case↓
- | | | | |▼ HPが残ってる場合だけダメージ処理
- | | | | |■Set Variable: CSelf29[戻り先] = 2 + 0 
- | | | | |●Label Jump [単体ダメージ処理] >>>>>>>>>>>>>>>>>>>>>>>>>
- | | | | |●Label Point [単体ダメージ処理終了2] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | | |■Call Event [Name]: CSelf11[Target Character ID] = ["X[Bat]Get Ally ID From Slot"] <CommonEv 141>  / CSelf10[Target Slot]
+ | | |■Condition (Number):   [1] CSelf11[Target Character ID] >=  0  
+ | | |-◇Condition:  [1]  [ CSelf11[Target Character ID] >= 0   ] Case↓
+ | | | |■Call Event [Name]: CSelf12[Temp Var] = ["X[Bat]Get Parameter"] <CommonEv 136>  / CSelf10[Target Slot] / 22:HP
+ | | | |■Condition (Number):   [1] CSelf12[Temp Var] >=  1  
+ | | | |-◇Condition:  [1]  [ CSelf12[Temp Var] >= 1   ] Case↓
+ | | | | |▼ Process damage only if HP remains.
+ | | | | |■Set Variable: CSelf29[Return Point] = 2 + 0 
+ | | | | |●Label Jump [Process Damage to One] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | | |●Label Point [Process Damage to One, Exit 2] <<<<<<<<<<<<<<<<<<<<<<<<★
  | | | | |■
  | | | |◇End◇
  | | | |■
@@ -438,28 +426,28 @@ WoditorEvCOMMAND_END
  | | |■
  | |◇Loop End Point◇◇
  | |■
- |-◇Condition:  [3]  [ CSelf0[対象] == -2   ] Case↓
- | |▼ 敵全体
- | |■Load DB(Var):  CSelf20[最大スロット数] = VarDB[ "Base System Variables":69:0 ] (18:[Battle] Max Enemy Count (System):Number) 
- | |■Set Variable: CSelf20[最大スロット数] += 10 + 0 
- | |■Set Variable: CSelf10[対象スロット] = 9 + 0 
+ |-◇Condition:  [3]  [ CSelf0[Target] == -2   ] Case↓
+ | |▼ All Enemies
+ | |■Load DB(Var):  CSelf20[Max Slots] = VarDB[ "Base System Variables":69:0 ] (18:[Battle] Max Enemy Count (System):Number) 
+ | |■Set Variable: CSelf20[Max Slots] += 10 + 0 
+ | |■Set Variable: CSelf10[Target Slot] = 9 + 0 
  | |■Loop Start
- | | |■Set Variable: CSelf10[対象スロット] += 1 + 0 
- | | |■Condition (Number):   [1] CSelf10[対象スロット] >=  CSelf20[最大スロット数]  
- | | |-◇Condition:  [1]  [ CSelf10[対象スロット] >= CSelf20[最大スロット数]   ] Case↓
+ | | |■Set Variable: CSelf10[Target Slot] += 1 + 0 
+ | | |■Condition (Number):   [1] CSelf10[Target Slot] >=  CSelf20[Max Slots]  
+ | | |-◇Condition:  [1]  [ CSelf10[Target Slot] >= CSelf20[Max Slots]   ] Case↓
  | | | |■Exit Event
  | | | |■
  | | |◇End◇
- | | |■Call Event [Name]: CSelf11[対象キャラID] = ["X[戦]ｽﾛｯﾄから主人公ID取得"] <CommonEv 141>  / CSelf10[対象スロット]
- | | |■Condition (Number):   [1] CSelf11[対象キャラID] >=  0  
- | | |-◇Condition:  [1]  [ CSelf11[対象キャラID] >= 0   ] Case↓
- | | | |■Call Event [Name]: CSelf12[一時変数] = ["X[戦]パラメータ取得"] <CommonEv 136>  / CSelf10[対象スロット] / 22:HP
- | | | |■Condition (Number):   [1] CSelf12[一時変数] >=  1  
- | | | |-◇Condition:  [1]  [ CSelf12[一時変数] >= 1   ] Case↓
- | | | | |▼ HPが残ってる場合だけダメージ処理
- | | | | |■Set Variable: CSelf29[戻り先] = 3 + 0 
- | | | | |●Label Jump [単体ダメージ処理] >>>>>>>>>>>>>>>>>>>>>>>>>
- | | | | |●Label Point [単体ダメージ処理終了3] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | | |■Call Event [Name]: CSelf11[Target Character ID] = ["X[Bat]Get Ally ID From Slot"] <CommonEv 141>  / CSelf10[Target Slot]
+ | | |■Condition (Number):   [1] CSelf11[Target Character ID] >=  0  
+ | | |-◇Condition:  [1]  [ CSelf11[Target Character ID] >= 0   ] Case↓
+ | | | |■Call Event [Name]: CSelf12[Temp Var] = ["X[Bat]Get Parameter"] <CommonEv 136>  / CSelf10[Target Slot] / 22:HP
+ | | | |■Condition (Number):   [1] CSelf12[Temp Var] >=  1  
+ | | | |-◇Condition:  [1]  [ CSelf12[Temp Var] >= 1   ] Case↓
+ | | | | |▼ Process damage only if HP remains.
+ | | | | |■Set Variable: CSelf29[Return Point] = 3 + 0 
+ | | | | |●Label Jump [Process Damage to One] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | | |●Label Point [Process Damage to One, Exit 3] <<<<<<<<<<<<<<<<<<<<<<<<★
  | | | | |■
  | | | |◇End◇
  | | | |■
@@ -471,111 +459,111 @@ WoditorEvCOMMAND_END
  |■
 ◇End◇
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼ 　単体ダメージ処理（終わったら指定ラベルにジャンプ）
+▼   Process damage to one. (When done, jump to the specified label.)
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■Repeat Loop [ 0 ] Times
- |●Label Point [単体ダメージ処理] <<<<<<<<<<<<<<<<<<<<<<<<★
- |▼ まず対象キャラが死んでいないかチェック
- |■Call Event [Name]: CSelf58[直前戦闘不能フラグ] = ["X[戦]基本状態取得"] <CommonEv 176>  / CSelf10[対象スロット] / 0:戦闘不能状態
+ |●Label Point [Process Damage to One] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |▼ First, check if the target character is not dead.
+ |■Call Event [Name]: CSelf58[Just Before Fainting Flag] = ["X[Bat]Get Basic State"] <CommonEv 176>  / CSelf10[Target Slot] / 0:戦闘不能状態
  |■Repeat Loop [ 1 ] Times
- | |■Condition (Number):   [1] CSelf10[対象スロット] <  10  /  [2] CSelf10[対象スロット] >=  10  
- | |-◇Condition:  [1]  [ CSelf10[対象スロット] < 10   ] Case↓
- | | |■Call Event [Name]: ["X[戦]味方欄_座標算出"] <CommonEv 174>  / CSelf10[対象スロット]
+ | |■Condition (Number):   [1] CSelf10[Target Slot] <  10  /  [2] CSelf10[Target Slot] >=  10  
+ | |-◇Condition:  [1]  [ CSelf10[Target Slot] < 10   ] Case↓
+ | | |■Call Event [Name]: ["X[Bat]Ally Box: Calc Position"] <CommonEv 174>  / CSelf10[Target Slot]
  | | |■
- | |-◇Condition:  [2]  [ CSelf10[対象スロット] >= 10   ] Case↓
- | | |■Call Event [Name]: ["X[戦]敵キャラ_座標算出"] <CommonEv 175>  / CSelf10[対象スロット]
+ | |-◇Condition:  [2]  [ CSelf10[Target Slot] >= 10   ] Case↓
+ | | |■Call Event [Name]: ["X[Bat]Enemy: Calc Position"] <CommonEv 175>  / CSelf10[Target Slot]
  | | |■
  | |◇End◇
- | |■Load DB(Var):  CSelf18[座標X] = VarDB[ "Base System Variables":37:0 ] (18:Status Display End X:Number) 
- | |■Load DB(Var):  CSelf19[座標Y] = VarDB[ "Base System Variables":38:0 ] (18:Status Display End Y:Number) 
+ | |■Load DB(Var):  CSelf18[X Position] = VarDB[ "Base System Variables":37:0 ] (18:Status Display End X:Number) 
+ | |■Load DB(Var):  CSelf19[Y Position] = VarDB[ "Base System Variables":38:0 ] (18:Status Display End Y:Number) 
  | |■
  |◇Loop End Point◇◇
  |■Repeat Loop [ 1 ] Times
- | |▼ ダメージ処理
- | |■Set Variable: CSelf41[ダメージ一時] = CSelf1[何ﾎﾟｲﾝﾄ？] + 0 
- | |▼ Ver2.22　回復時の分岐を追加
- | |■Condition (Number):   [1] CSelf1[何ﾎﾟｲﾝﾄ？] <=  -1  /  [2] CSelf1[何ﾎﾟｲﾝﾄ？] >=  0  
- | |-◇Condition:  [1]  [ CSelf1[何ﾎﾟｲﾝﾄ？] <= -1   ] Case↓
- | | |■Set Variable: CSelf41[ダメージ一時] *= -1 + 0 
- | | |■Call Event [Name]: ["X[戦]ﾀﾞﾒｰｼﾞ・回復ﾎﾟｯﾌﾟｱｯﾌﾟ"] <CommonEv 181>  / CSelf18[座標X] / CSelf19[座標Y] / CSelf41[ダメージ一時] / 1:HP回復
- | | |■Set Variable: CSelf41[ダメージ一時] *= -1 + 0 
+ | |▼ Process damage.
+ | |■Set Variable: CSelf41[Temp Damage] = CSelf1[Amount] + 0 
+ | |▼ Ver.2.22  Added a branch for recovery.
+ | |■Condition (Number):   [1] CSelf1[Amount] <=  -1  /  [2] CSelf1[Amount] >=  0  
+ | |-◇Condition:  [1]  [ CSelf1[Amount] <= -1   ] Case↓
+ | | |■Set Variable: CSelf41[Temp Damage] *= -1 + 0 
+ | | |■Call Event [Name]: ["X[Bat]Display Dmg/Recovery Popup"] <CommonEv 181>  / CSelf18[X Position] / CSelf19[Y Position] / CSelf41[Temp Damage] / 1:HP回復
+ | | |■Set Variable: CSelf41[Temp Damage] *= -1 + 0 
  | | |■
- | |-◇Condition:  [2]  [ CSelf1[何ﾎﾟｲﾝﾄ？] >= 0   ] Case↓
- | | |■Call Event [Name]: ["X[戦]ﾀﾞﾒｰｼﾞ・回復ﾎﾟｯﾌﾟｱｯﾌﾟ"] <CommonEv 181>  / CSelf18[座標X] / CSelf19[座標Y] / CSelf41[ダメージ一時] / 0:HPダメージ
+ | |-◇Condition:  [2]  [ CSelf1[Amount] >= 0   ] Case↓
+ | | |■Call Event [Name]: ["X[Bat]Display Dmg/Recovery Popup"] <CommonEv 181>  / CSelf18[X Position] / CSelf19[Y Position] / CSelf41[Temp Damage] / 0:HPダメージ
  | | |■
  | |◇End◇
- | |■Set Variable: CSelf41[ダメージ一時] *= -1 + 0 
- | |■Call Event [Name]: ["X[戦]パラメータ増減"] <CommonEv 135>  / CSelf10[対象スロット] / 22:HP / CSelf41[ダメージ一時]
- | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 51:ダメージ音
- | |■Condition (Number):   [1] CSelf10[対象スロット] <=  9  /  [2] CSelf10[対象スロット] >=  10  
- | |-◇Condition:  [1]  [ CSelf10[対象スロット] <= 9   ] Case↓
- | | |▼ ﾀﾞﾒｰｼﾞエフェクト
- | | |▼ Ver2.22　回復時の分岐を追加
- | | |■Condition (Number):   [1] CSelf1[何ﾎﾟｲﾝﾄ？] <=  -1  /  [2] CSelf1[何ﾎﾟｲﾝﾄ？] >=  0  
- | | |-◇Condition:  [1]  [ CSelf1[何ﾎﾟｲﾝﾄ？] <= -1   ] Case↓
- | | | |■Call Event [Name]: ["X[戦]味方欄_単体描画"] <CommonEv 178>  / 30:回復エフェクト / CSelf10[対象スロット] / CSelf10[対象スロット]
+ | |■Set Variable: CSelf41[Temp Damage] *= -1 + 0 
+ | |■Call Event [Name]: ["X[Bat]Change Parameter"] <CommonEv 135>  / CSelf10[Target Slot] / 22:HP / CSelf41[Temp Damage]
+ | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 51:Damage Sound
+ | |■Condition (Number):   [1] CSelf10[Target Slot] <=  9  /  [2] CSelf10[Target Slot] >=  10  
+ | |-◇Condition:  [1]  [ CSelf10[Target Slot] <= 9   ] Case↓
+ | | |▼ Damage animation effect.
+ | | |▼ Ver.2.22  Added a branch for recovery.
+ | | |■Condition (Number):   [1] CSelf1[Amount] <=  -1  /  [2] CSelf1[Amount] >=  0  
+ | | |-◇Condition:  [1]  [ CSelf1[Amount] <= -1   ] Case↓
+ | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 30:回復エフェクト / CSelf10[Target Slot] / CSelf10[Target Slot]
  | | | |■
- | | |-◇Condition:  [2]  [ CSelf1[何ﾎﾟｲﾝﾄ？] >= 0   ] Case↓
- | | | |■Call Event [Name]: ["X[戦]味方欄_単体描画"] <CommonEv 178>  / 21:ダメージエフェクトLv1 / CSelf10[対象スロット] / CSelf10[対象スロット]
+ | | |-◇Condition:  [2]  [ CSelf1[Amount] >= 0   ] Case↓
+ | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 21:ダメージエフェクトLv1 / CSelf10[Target Slot] / CSelf10[Target Slot]
  | | | |■
  | | |◇End◇
  | | |■
- | |-◇Condition:  [2]  [ CSelf10[対象スロット] >= 10   ] Case↓
- | | |▼ Ver2.22　回復時の分岐を追加
- | | |■Condition (Number):   [1] CSelf1[何ﾎﾟｲﾝﾄ？] <=  -1  /  [2] CSelf1[何ﾎﾟｲﾝﾄ？] >=  0  
- | | |-◇Condition:  [1]  [ CSelf1[何ﾎﾟｲﾝﾄ？] <= -1   ] Case↓
- | | | |■Call Event [Name]: ["X[戦]敵キャラ_単体描画"] <CommonEv 179>  / 30:回復 / CSelf10[対象スロット]
+ | |-◇Condition:  [2]  [ CSelf10[Target Slot] >= 10   ] Case↓
+ | | |▼ Ver.2.22  Added a branch for recovery.
+ | | |■Condition (Number):   [1] CSelf1[Amount] <=  -1  /  [2] CSelf1[Amount] >=  0  
+ | | |-◇Condition:  [1]  [ CSelf1[Amount] <= -1   ] Case↓
+ | | | |■Call Event [Name]: ["X[Bat]Enemy: Draw One"] <CommonEv 179>  / 30:回復 / CSelf10[Target Slot]
  | | | |■
- | | |-◇Condition:  [2]  [ CSelf1[何ﾎﾟｲﾝﾄ？] >= 0   ] Case↓
- | | | |■Call Event [Name]: ["X[戦]敵キャラ_単体描画"] <CommonEv 179>  / 21:ダメージレベル1 / CSelf10[対象スロット]
+ | | |-◇Condition:  [2]  [ CSelf1[Amount] >= 0   ] Case↓
+ | | | |■Call Event [Name]: ["X[Bat]Enemy: Draw One"] <CommonEv 179>  / 21:ダメージレベル1 / CSelf10[Target Slot]
  | | | |■
  | | |◇End◇
  | | |■
  | |◇End◇
  | |■
  |◇Loop End Point◇◇
- |■Condition (Number):   [1] CSelf10[対象スロット] <=  9  /  [2] CSelf10[対象スロット] >=  10  
- |-◇Condition:  [1]  [ CSelf10[対象スロット] <= 9   ] Case↓
- | |▼ 撃破演出
+ |■Condition (Number):   [1] CSelf10[Target Slot] <=  9  /  [2] CSelf10[Target Slot] >=  10  
+ |-◇Condition:  [1]  [ CSelf10[Target Slot] <= 9   ] Case↓
+ | |▼ Defeat animation.
  | |▼  
- | |▼ 味方パラメータ再計算
- | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<状態補正>"] <CommonEv 148>  / CSelf10[対象スロット] / 1:状態名のみ計算
- | |■Call Event [Name]: ["X[戦]味方欄_単体描画"] <CommonEv 178>  / 5:表示[更新＋ゲージアニメ] / CSelf10[対象スロット] / CSelf10[対象スロット]
- | |▼ 新たに戦闘不能になってたら撃破処理
- | |■Call Event [Name]: CSelf59[戦闘不能フラグ] = ["X[戦]基本状態取得"] <CommonEv 176>  / CSelf10[対象スロット] / 0:戦闘不能状態
- | |■Condition (Number):   [1] CSelf58[直前戦闘不能フラグ] ==  0  
- | |-◇Condition:  [1]  [ CSelf58[直前戦闘不能フラグ] == 0   ] Case↓
- | | |■Condition (Number):   [1] CSelf59[戦闘不能フラグ] >=  1  
- | | |-◇Condition:  [1]  [ CSelf59[戦闘不能フラグ] >= 1   ] Case↓
- | | | |▼ 効果音
- | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 52:撃破音
+ | |▼ Recalculate ally stats.
+ | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf10[Target Slot] / 1:状態名のみ計算
+ | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 5:表示[更新＋ゲージアニメ] / CSelf10[Target Slot] / CSelf10[Target Slot]
+ | |▼ If newly-fainted, process defeat.
+ | |■Call Event [Name]: CSelf59[Fainted Flag] = ["X[Bat]Get Basic State"] <CommonEv 176>  / CSelf10[Target Slot] / 0:戦闘不能状態
+ | |■Condition (Number):   [1] CSelf58[Just Before Fainting Flag] ==  0  
+ | |-◇Condition:  [1]  [ CSelf58[Just Before Fainting Flag] == 0   ] Case↓
+ | | |■Condition (Number):   [1] CSelf59[Fainted Flag] >=  1  
+ | | |-◇Condition:  [1]  [ CSelf59[Fainted Flag] >= 1   ] Case↓
+ | | | |▼ Sound effect.
+ | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 52:Enemy Defeat Sound
  | | | |■
  | | |◇End◇
  | | |■
  | |◇End◇
  | |■
- |-◇Condition:  [2]  [ CSelf10[対象スロット] >= 10   ] Case↓
- | |▼ 必要なら撃破演出
- | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<初期化>"] <CommonEv 146>  / CSelf10[対象スロット]
- | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<装備補正>"] <CommonEv 147>  / CSelf10[対象スロット] / 0:武器欄の武器を使用
- | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<状態補正>"] <CommonEv 148>  / CSelf10[対象スロット] / 0:パラメータ補正＋状態名計算
- | |■Call Event [Name]: ["X[戦]敵キャラ_単体描画"] <CommonEv 179>  / 2:更新[ゲージのみ] / CSelf10[対象スロット]
- | |■Call Event [Name]: CSelf59[戦闘不能フラグ] = ["X[戦]基本状態取得"] <CommonEv 176>  / CSelf10[対象スロット] / 0:戦闘不能状態
- | |■Condition (Number):   [1] CSelf59[戦闘不能フラグ] >=  1  
- | |-◇Condition:  [1]  [ CSelf59[戦闘不能フラグ] >= 1   ] Case↓
- | | |▼ 敵なら敵撃破処理
- | | |■Call Event [Name]: ["X[戦]敵撃破処理"] <CommonEv 171>  / CSelf10[対象スロット] / 0:通常撃破[EXPその他入手]
- | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 52:撃破音
- | | |■Call Event [Name]: ["X[共]ウェイト2(キー押しで加速)"] <CommonEv 60>  / 20
+ |-◇Condition:  [2]  [ CSelf10[Target Slot] >= 10   ] Case↓
+ | |▼ If necessary, defeat animation.
+ | |■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf10[Target Slot]
+ | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf10[Target Slot] / 0:武器欄の武器を使用
+ | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf10[Target Slot] / 0:パラメータ補正＋状態名計算
+ | |■Call Event [Name]: ["X[Bat]Enemy: Draw One"] <CommonEv 179>  / 2:更新[ゲージのみ] / CSelf10[Target Slot]
+ | |■Call Event [Name]: CSelf59[Fainted Flag] = ["X[Bat]Get Basic State"] <CommonEv 176>  / CSelf10[Target Slot] / 0:戦闘不能状態
+ | |■Condition (Number):   [1] CSelf59[Fainted Flag] >=  1  
+ | |-◇Condition:  [1]  [ CSelf59[Fainted Flag] >= 1   ] Case↓
+ | | |▼ If enemy, process enemy defeat.
+ | | |■Call Event [Name]: ["X[Bat]Defeat Enemy"] <CommonEv 171>  / CSelf10[Target Slot] / 0:通常撃破[EXPその他入手]
+ | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 52:Enemy Defeat Sound
+ | | |■Call Event [Name]: ["X[Com]Wait 2(PressKeyToSpdUp)"] <CommonEv 60>  / 20
  | | |■
  | |◇End◇
  | |■
  |◇End◇
- |●Label Jump [単体ダメージ処理終了\cself[29]] >>>>>>>>>>>>>>>>>>>>>>>>>
+ |●Label Jump [Process Damage to One, Exit \cself[29]] >>>>>>>>>>>>>>>>>>>>>>>>>
  |■
 ◇Loop End Point◇◇
 ▼  
-●Label Point [単体ダメージ処理終了1] <<<<<<<<<<<<<<<<<<<<<<<<★
+●Label Point [Process Damage to One, Exit 1] <<<<<<<<<<<<<<<<<<<<<<<<★
 ▼  
 ■
 [COMMAND_TEXT_END]

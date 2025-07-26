@@ -1,5 +1,5 @@
 COMMON_ID=67
-COMMON_NAME=X[共]全体エフェクト実行
+COMMON_NAME=X[Com]Execute Full Effect
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -8,8 +8,8 @@ MEMO=
 VALINPUT_NUM=2
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=処理モード
-VALINPUT_NAME_1=フレーム数
+VALINPUT_NAME_0=Mode
+VALINPUT_NAME_1=Frames
 VALINPUT_NAME_2=
 VALINPUT_NAME_3=
 VALINPUT_NAME_4=
@@ -32,9 +32,9 @@ LOADTYPE8=0
 LOADTYPE9=0
 CHOICE_STR_NUM=10
 CHOICE_STR_0_NUM=3
-CHOICE_STR_0_0=解除
-CHOICE_STR_0_1=暗転
-CHOICE_STR_0_2=白フラッシュ
+CHOICE_STR_0_0=Clear
+CHOICE_STR_0_1=Fade to Black
+CHOICE_STR_0_2=White Flash
 CHOICE_STR_1_NUM=0
 CHOICE_STR_2_NUM=0
 CHOICE_STR_3_NUM=0
@@ -66,8 +66,8 @@ DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
 RETURN_VAL_NAME=
 RETURN_VAL_TARGET=-1
-CSELF_NAME_0=処理モード
-CSELF_NAME_1=フレーム数
+CSELF_NAME_0=Mode
+CSELF_NAME_1=Frames
 CSELF_NAME_2=
 CSELF_NAME_3=
 CSELF_NAME_4=
@@ -86,15 +86,15 @@ CSELF_NAME_16=
 CSELF_NAME_17=
 CSELF_NAME_18=
 CSELF_NAME_19=
-CSELF_NAME_20=基本ピクチャ番号
+CSELF_NAME_20=Base Picture ID
 CSELF_NAME_21=
 CSELF_NAME_22=
 CSELF_NAME_23=
 CSELF_NAME_24=
-CSELF_NAME_25=画面サイズX
-CSELF_NAME_26=画面サイズY
+CSELF_NAME_25=Screen Width
+CSELF_NAME_26=Screen Height
 CSELF_NAME_27=
-CSELF_NAME_28=座標倍率（x10）
+CSELF_NAME_28=
 CSELF_NAME_29=
 CSELF_NAME_30=
 CSELF_NAME_31=
@@ -154,8 +154,8 @@ CSELF_NAME_84=
 CSELF_NAME_85=
 CSELF_NAME_86=
 CSELF_NAME_87=
-CSELF_NAME_88=座標倍率X[x10]
-CSELF_NAME_89=座標倍率Y[x10]
+CSELF_NAME_88=Coordinate Scale X [x10]
+CSELF_NAME_89=Coordinate Scale Y [x10]
 CSELF_NAME_90=
 CSELF_NAME_91=
 CSELF_NAME_92=
@@ -165,26 +165,26 @@ CSELF_NAME_95=
 CSELF_NAME_96=
 CSELF_NAME_97=
 CSELF_NAME_98=
-CSELF_NAME_99=終了フラグ
+CSELF_NAME_99=
 COMMAND_NUM=42
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
-[103][0,1]<0>()("　画面全体へのエフェクトを処理するコモンイベントです。")
-[103][0,1]<0>()("　基本システム内の主な画面全体エフェクトは、このコモンを通じて行われます。")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("  Processes full-screen effects.")
+[103][0,1]<0>()("  The main screen effects in the base system are performed through this common event.")
 [103][0,1]<0>()("")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
-[103][0,1]<0>()("　ロード処理前の暗転")
+[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("  Fade to black before loading (X┣[Map]Execute Save Screen)")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("固定値")
+[103][0,1]<0>()("Set fixed value.")
 [121][4,0]<0>(1600020,19999,0,0)()
-[103][0,1]<0>()("Ver2.20　座標倍率を縦横別に修正")
+[103][0,1]<0>()("Ver.2.20  Separated the coordinate scale into vertical and horizontal scales.")
 [250][5,4]<0>(18,97,0,69632,1600088)("","Base System Variables","","")
 [250][5,4]<0>(18,98,0,69632,1600089)("","Base System Variables","","")
 [121][4,0]<0>(1600025,1600088,32,8192)()
@@ -195,17 +195,17 @@ WoditorEvCOMMAND_START
 [150][2,0]<0>(51,1600020)()
 [111][7,0]<0>(2,1600000,0,2,1600000,1,2)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("解除")
+[103][0,1]<1>()("Clear")
 [150][3,0]<1>(2,1600020,1600001)()
 [0][0,0]<1>()()
 [401][1,0]<0>(2)()
-[103][0,1]<1>()("暗転")
+[103][0,1]<1>()("Fade to Black")
 [150][18,1]<1>(48,1600020,1600001,1600025,1600026,1,255,0,0,100,0,0,33554432,0,0,0,0,0)("<SQUARE>")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [111][4,0]<0>(1,1600000,10,2)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("白フラッシュ")
+[103][0,1]<1>()("White Flash")
 [150][18,1]<1>(48,1600020,0,1600025,1600026,1,255,0,0,100,0,0,33554432,0,0,80,80,80)("<SQUARE>")
 [150][3,0]<1>(50,1600020,1600001)()
 [0][0,0]<1>()()
@@ -215,44 +215,44 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
-▼ 　画面全体へのエフェクトを処理するコモンイベントです。
-▼ 　基本システム内の主な画面全体エフェクトは、このコモンを通じて行われます。
+▼ [Process Overview]
+▼   Processes full-screen effects.
+▼   The main screen effects in the base system are performed through this common event.
 ▼ 
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【このコモンイベント内で操作しているデータベース】
+▼ [Databases Accessed by This Common Event]
 ▼  
-▼ 【ここから呼び出している別コモンイベント】
+▼ [Other Common Events Called from Here]
 ▼  
-▼ 【どのコモンイベントから主に呼び出されているか】
-▼ 　ロード処理前の暗転
+▼ [Main Common Events Calling This]
+▼   Fade to black before loading (X┣[Map]Execute Save Screen)
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 固定値
-■Set Variable: CSelf20[基本ピクチャ番号] = 19999 + 0 
-▼ Ver2.20　座標倍率を縦横別に修正
-■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
-■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
-■Set Variable: CSelf25[画面サイズX] = CSelf88[座標倍率X[x10]] * 32 
-■Set Variable: CSelf26[画面サイズY] = CSelf89[座標倍率Y[x10]] * 24 
-■Set Variable: CSelf25[画面サイズX] += 32 + 0 
-■Set Variable: CSelf26[画面サイズY] += 24 + 0 
+▼ Set fixed value.
+■Set Variable: CSelf20[Base Picture ID] = 19999 + 0 
+▼ Ver.2.20  Separated the coordinate scale into vertical and horizontal scales.
+■Load DB(Var):  CSelf88[Coordinate Scale X [x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
+■Load DB(Var):  CSelf89[Coordinate Scale Y [x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
+■Set Variable: CSelf25[Screen Width] = CSelf88[Coordinate Scale X [x10]] * 32 
+■Set Variable: CSelf26[Screen Height] = CSelf89[Coordinate Scale Y [x10]] * 24 
+■Set Variable: CSelf25[Screen Width] += 32 + 0 
+■Set Variable: CSelf26[Screen Height] += 24 + 0 
 ▼  
-■Picture [Reset Delay]: CSelf20[基本ピクチャ番号] 
-■Condition (Number):   [1] CSelf0[処理モード] ==  0  /  [2] CSelf0[処理モード] ==  1  
--◇Condition:  [1]  [ CSelf0[処理モード] == 0   ] Case↓
- |▼ 解除
- |■Picture Erase: CSelf20[基本ピクチャ番号]  / CSelf1[フレーム数](0)Frames
+■Picture [Reset Delay]: CSelf20[Base Picture ID] 
+■Condition (Number):   [1] CSelf0[Mode] ==  0  /  [2] CSelf0[Mode] ==  1  
+-◇Condition:  [1]  [ CSelf0[Mode] == 0   ] Case↓
+ |▼ Clear
+ |■Picture Erase: CSelf20[Base Picture ID]  / CSelf1[Frames](0)Frames
  |■
--◇Condition:  [2]  [ CSelf0[処理モード] == 1   ] Case↓
- |▼ 暗転
- |■Picture Show: CSelf20[基本ピクチャ番号] [Top-Left] Window[<SQUARE>] Size[CSelf25[画面サイズX],CSelf26[画面サイズY]] X:0 Y:0 / CSelf1[フレーム数](0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[0] G[0] B[0]
+-◇Condition:  [2]  [ CSelf0[Mode] == 1   ] Case↓
+ |▼ Fade to Black
+ |■Picture Show: CSelf20[Base Picture ID] [Top-Left] Window[<SQUARE>] Size[CSelf25[Screen Width],CSelf26[Screen Height]] X:0 Y:0 / CSelf1[Frames](0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[0] G[0] B[0]
  |■
 ◇End◇
-■Condition (Number):   [1] CSelf0[処理モード] ==  10  
--◇Condition:  [1]  [ CSelf0[処理モード] == 10   ] Case↓
- |▼ 白フラッシュ
- |■Picture Show: CSelf20[基本ピクチャ番号] [Top-Left] Window[<SQUARE>] Size[CSelf25[画面サイズX],CSelf26[画面サイズY]] X:0 Y:0 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[80] G[80] B[80]
- |■Picture Erase: CSelf20[基本ピクチャ番号]  / CSelf1[フレーム数](0)Frames
+■Condition (Number):   [1] CSelf0[Mode] ==  10  
+-◇Condition:  [1]  [ CSelf0[Mode] == 10   ] Case↓
+ |▼ White Flash
+ |■Picture Show: CSelf20[Base Picture ID] [Top-Left] Window[<SQUARE>] Size[CSelf25[Screen Width],CSelf26[Screen Height]] X:0 Y:0 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[80] G[80] B[80]
+ |■Picture Erase: CSelf20[Base Picture ID]  / CSelf1[Frames](0)Frames
  |■
 ◇End◇
 ■

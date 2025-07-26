@@ -1,14 +1,14 @@
 COMMON_ID=14
-COMMON_NAME=○各種メニュー呼出
+COMMON_NAME=○ Open Menus
 COMMAND_COLOR=0
 TRIGGER=32
 TRIGGER_TARGET=2000000
 TRIGGER_VAL=0
-MEMO=セーブ欄やメニュー、アイテム欄などを呼び出します。移動時のみ有効
+MEMO=Opens the save menu, items menu, etc. Only works on map.
 VALINPUT_NUM=1
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=呼び出すﾒﾆｭｰ
+VALINPUT_NAME_0=Which Menu?
 VALINPUT_NAME_1=
 VALINPUT_NAME_2=
 VALINPUT_NAME_3=
@@ -32,28 +32,15 @@ LOADTYPE8=0
 LOADTYPE9=0
 CHOICE_STR_NUM=10
 CHOICE_STR_0_NUM=6
-CHOICE_STR_0_0=セーブ画面
-CHOICE_STR_0_1=ロード画面
-CHOICE_STR_0_2=アイテム画面
-CHOICE_STR_0_3=技能画面
-CHOICE_STR_0_4=装備画面
-CHOICE_STR_0_5=システム画面
-CHOICE_STR_1_NUM=10
-CHOICE_STR_1_0=武器欄に装備
-CHOICE_STR_1_1=防具欄1に装備
-CHOICE_STR_1_2=防具欄2に装備
-CHOICE_STR_1_3=防具欄3に装備
-CHOICE_STR_1_4=防具欄4に装備
-CHOICE_STR_1_5=武器欄を解除
-CHOICE_STR_1_6=防具欄1を解除
-CHOICE_STR_1_7=防具欄2を解除
-CHOICE_STR_1_8=防具欄3を解除
-CHOICE_STR_1_9=防具欄4を解除
+CHOICE_STR_0_0=Save Menu
+CHOICE_STR_0_1=Load Menu
+CHOICE_STR_0_2=Items Menu
+CHOICE_STR_0_3=Skills Menu
+CHOICE_STR_0_4=Equip Menu
+CHOICE_STR_0_5=System Menu
+CHOICE_STR_1_NUM=0
 CHOICE_STR_2_NUM=0
-CHOICE_STR_3_NUM=3
-CHOICE_STR_3_0=<なし>
-CHOICE_STR_3_1=<なし>
-CHOICE_STR_3_2=<なし>
+CHOICE_STR_3_NUM=0
 CHOICE_STR_4_NUM=0
 CHOICE_STR_5_NUM=0
 CHOICE_STR_6_NUM=0
@@ -68,25 +55,9 @@ CHOICE_VAL_0_2=1
 CHOICE_VAL_0_3=2
 CHOICE_VAL_0_4=3
 CHOICE_VAL_0_5=4
-CHOICE_VAL_1_NUM=10
-CHOICE_VAL_1_0=1
-CHOICE_VAL_1_1=2
-CHOICE_VAL_1_2=3
-CHOICE_VAL_1_3=4
-CHOICE_VAL_1_4=5
-CHOICE_VAL_1_5=-1
-CHOICE_VAL_1_6=-2
-CHOICE_VAL_1_7=-3
-CHOICE_VAL_1_8=-4
-CHOICE_VAL_1_9=-5
-CHOICE_VAL_2_NUM=3
-CHOICE_VAL_2_0=1
-CHOICE_VAL_2_1=3
-CHOICE_VAL_2_2=0
-CHOICE_VAL_3_NUM=3
-CHOICE_VAL_3_0=1
-CHOICE_VAL_3_1=4
-CHOICE_VAL_3_2=1
+CHOICE_VAL_1_NUM=0
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=0
 CHOICE_VAL_4_NUM=0
 CHOICE_VAL_5_NUM=0
 CHOICE_VAL_6_NUM=0
@@ -101,7 +72,7 @@ DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
 RETURN_VAL_NAME=
 RETURN_VAL_TARGET=-1
-CSELF_NAME_0=呼び出すﾒﾆｭｰ
+CSELF_NAME_0=Which Menu?
 CSELF_NAME_1=
 CSELF_NAME_2=
 CSELF_NAME_3=
@@ -119,7 +90,7 @@ CSELF_NAME_14=
 CSELF_NAME_15=
 CSELF_NAME_16=
 CSELF_NAME_17=
-CSELF_NAME_18=戦闘中フラグ
+CSELF_NAME_18=In-Battle Flag
 CSELF_NAME_19=
 CSELF_NAME_20=
 CSELF_NAME_21=
@@ -204,38 +175,38 @@ CSELF_NAME_99=
 COMMAND_NUM=37
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("移動時の場合だけ、メニューを呼び出す")
+[103][0,1]<0>()("Call the menu only when out of battle.")
 [250][5,4]<0>(18,68,0,200704,1600018)("","Base System Variables","[Battle] In Battle?","")
 [111][4,0]<0>(1,1600018,0,2)()
 [401][1,0]<0>(1)()
 [111][4,0]<1>(1,1600000,-1,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("ロード画面")
-[300][4,1]<2>(0,2,1,1)("X┣[移]セーブ欄実行")
+[103][0,1]<2>()("Load Screen")
+[300][4,1]<2>(0,2,1,1)("X┣[Map]Execute Save Menu")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [111][10,0]<1>(3,1600000,0,2,1600000,1,2,1600000,2,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("セーブ画面")
-[300][4,1]<2>(0,2,0,1)("X┣[移]セーブ欄実行")
+[103][0,1]<2>()("Save Screen")
+[300][4,1]<2>(0,2,0,1)("X┣[Map]Execute Save Menu")
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[103][0,1]<2>()("アイテム")
-[300][3,1]<2>(0,1,1)("X┣[移]アイテム欄実行")
+[103][0,1]<2>()("Items")
+[300][3,1]<2>(0,1,1)("X┣[Map]Execute Items Menu")
 [0][0,0]<2>()()
 [401][1,0]<1>(3)()
-[103][0,1]<2>()("技能")
-[300][3,1]<2>(0,1,1)("X┣[移]技能欄実行")
+[103][0,1]<2>()("Skills")
+[300][3,1]<2>(0,1,1)("X┣[Map]Execute Skills Menu")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [111][7,0]<1>(2,1600000,3,2,1600000,4,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("装備")
-[300][3,1]<2>(0,1,1)("X┣[移]装備欄実行")
+[103][0,1]<2>()("Equip")
+[300][3,1]<2>(0,1,1)("X┣[Map]Execute Equip Menu")
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[103][0,1]<2>()("システム")
-[300][2,1]<2>(0,0)("X┗[移]システム欄実行")
+[103][0,1]<2>()("System")
+[300][2,1]<2>(0,0)("X┗[Map]Execute System Menu")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [0][0,0]<1>()()
@@ -244,38 +215,38 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ 移動時の場合だけ、メニューを呼び出す
-■Load DB(Var):  CSelf18[戦闘中フラグ] = VarDB[ "Base System Variables":"[Battle] In Battle?":0 ] (18:68:Number) 
-■Condition (Number):   [1] CSelf18[戦闘中フラグ] ==  0  
--◇Condition:  [1]  [ CSelf18[戦闘中フラグ] == 0   ] Case↓
- |■Condition (Number):   [1] CSelf0[呼び出すﾒﾆｭｰ] ==  -1  
- |-◇Condition:  [1]  [ CSelf0[呼び出すﾒﾆｭｰ] == -1   ] Case↓
- | |▼ ロード画面
- | |■Call Event [Name]: ["X┣[移]セーブ欄実行"] <CommonEv 131>  / 1:ロード画面 / 1:単体処理（セーブ後、メニュー出さない）
+▼ Call the menu only when out of battle.
+■Load DB(Var):  CSelf18[In-Battle Flag] = VarDB[ "Base System Variables":"[Battle] In Battle?":0 ] (18:68:Number) 
+■Condition (Number):   [1] CSelf18[In-Battle Flag] ==  0  
+-◇Condition:  [1]  [ CSelf18[In-Battle Flag] == 0   ] Case↓
+ |■Condition (Number):   [1] CSelf0[Which Menu?] ==  -1  
+ |-◇Condition:  [1]  [ CSelf0[Which Menu?] == -1   ] Case↓
+ | |▼ Load Screen
+ | |■Call Event [Name]: ["X┣[Map]Execute Save Menu"] <CommonEv 131>  / 1:ロード画面 / 1:単体処理（セーブ後、メニュー出さない）
  | |■
  |◇End◇
- |■Condition (Number):   [1] CSelf0[呼び出すﾒﾆｭｰ] ==  0  /  [2] CSelf0[呼び出すﾒﾆｭｰ] ==  1  /  [3] CSelf0[呼び出すﾒﾆｭｰ] ==  2  
- |-◇Condition:  [1]  [ CSelf0[呼び出すﾒﾆｭｰ] == 0   ] Case↓
- | |▼ セーブ画面
- | |■Call Event [Name]: ["X┣[移]セーブ欄実行"] <CommonEv 131>  / 0:セーブ画面 / 1:単体処理（セーブ後、メニュー出さない）
+ |■Condition (Number):   [1] CSelf0[Which Menu?] ==  0  /  [2] CSelf0[Which Menu?] ==  1  /  [3] CSelf0[Which Menu?] ==  2  
+ |-◇Condition:  [1]  [ CSelf0[Which Menu?] == 0   ] Case↓
+ | |▼ Save Screen
+ | |■Call Event [Name]: ["X┣[Map]Execute Save Menu"] <CommonEv 131>  / 0:セーブ画面 / 1:単体処理（セーブ後、メニュー出さない）
  | |■
- |-◇Condition:  [2]  [ CSelf0[呼び出すﾒﾆｭｰ] == 1   ] Case↓
- | |▼ アイテム
- | |■Call Event [Name]: ["X┣[移]アイテム欄実行"] <CommonEv 128>  / 1:アイテム処理のみ
+ |-◇Condition:  [2]  [ CSelf0[Which Menu?] == 1   ] Case↓
+ | |▼ Items
+ | |■Call Event [Name]: ["X┣[Map]Execute Items Menu"] <CommonEv 128>  / 1:アイテム処理のみ
  | |■
- |-◇Condition:  [3]  [ CSelf0[呼び出すﾒﾆｭｰ] == 2   ] Case↓
- | |▼ 技能
- | |■Call Event [Name]: ["X┣[移]技能欄実行"] <CommonEv 129>  / 1:技能処理のみ（キャラ選択→技能使用）
+ |-◇Condition:  [3]  [ CSelf0[Which Menu?] == 2   ] Case↓
+ | |▼ Skills
+ | |■Call Event [Name]: ["X┣[Map]Execute Skills Menu"] <CommonEv 129>  / 1:技能処理のみ（キャラ選択→技能使用）
  | |■
  |◇End◇
- |■Condition (Number):   [1] CSelf0[呼び出すﾒﾆｭｰ] ==  3  /  [2] CSelf0[呼び出すﾒﾆｭｰ] ==  4  
- |-◇Condition:  [1]  [ CSelf0[呼び出すﾒﾆｭｰ] == 3   ] Case↓
- | |▼ 装備
- | |■Call Event [Name]: ["X┣[移]装備欄実行"] <CommonEv 130>  / 1:装備処理のみ（キャラ選択→技能使用）
+ |■Condition (Number):   [1] CSelf0[Which Menu?] ==  3  /  [2] CSelf0[Which Menu?] ==  4  
+ |-◇Condition:  [1]  [ CSelf0[Which Menu?] == 3   ] Case↓
+ | |▼ Equip
+ | |■Call Event [Name]: ["X┣[Map]Execute Equip Menu"] <CommonEv 130>  / 1:装備処理のみ（キャラ選択→技能使用）
  | |■
- |-◇Condition:  [2]  [ CSelf0[呼び出すﾒﾆｭｰ] == 4   ] Case↓
- | |▼ システム
- | |■Call Event [Name]: ["X┗[移]システム欄実行"] <CommonEv 132> 
+ |-◇Condition:  [2]  [ CSelf0[Which Menu?] == 4   ] Case↓
+ | |▼ System
+ | |■Call Event [Name]: ["X┗[Map]Execute System Menu"] <CommonEv 132> 
  | |■
  |◇End◇
  |■

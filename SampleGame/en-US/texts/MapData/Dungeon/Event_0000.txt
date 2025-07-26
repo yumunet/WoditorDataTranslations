@@ -48,7 +48,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ Enable saving.
-■Call Event: Common 15: [ ○セーブ許可・禁止設定 ] / 100
+■Call Event: Common 15: [ ○ Change Save Availability ] / 100
 ▼ Move player.
 ■Transfer: Hero ▲ Map ID 1 [Sample Map A] X:34 Y:12  [Transition with Fade]
 ■

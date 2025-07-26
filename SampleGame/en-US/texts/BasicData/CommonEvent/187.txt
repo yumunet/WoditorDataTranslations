@@ -1,5 +1,5 @@
 COMMON_ID=187
-COMMON_NAME=■■【戦闘用・実行処理】■■
+COMMON_NAME=■■[Battle: Execution Processing]■■
 COMMAND_COLOR=0
 TRIGGER=32
 TRIGGER_TARGET=2000000

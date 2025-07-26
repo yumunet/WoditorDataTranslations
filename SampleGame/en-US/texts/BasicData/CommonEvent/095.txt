@@ -1,5 +1,5 @@
 COMMON_ID=95
-COMMON_NAME=X[移]システム画面描画
+COMMON_NAME=X[Map]Draw System Screen
 COMMAND_COLOR=5
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -178,15 +178,15 @@ COMMAND_NUM=812
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　システム画面の描画・消去処理と、")
 [103][0,1]<0>()("　選択状態に応じたカーソル描画処理を行います。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("【ピクチャ】")
 [103][0,1]<0>()("　基本ピクチャ＋0　＝　下地")
@@ -963,7 +963,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<1>(1600079,0,0,0)()
 [250][5,4]<1>(18,15,0,65536,1600079)("","Base System Variables","","")
 [103][0,1]<1>()("万能ウィンドウ表示")
-[300][6,1]<1>(0,4,0,1600001,0,5)("X[共]万能ｳｨﾝﾄﾞｳ描画処理")
+[300][6,1]<1>(0,4,0,1600001,0,5)("X[Com]Draw Universal Window")
 [172][0,0]<1>()()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
@@ -973,7 +973,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<1>()("「キャンセル時の質問」消去モード    　Ver3.00追加")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<1>()("万能ウィンドウ消去")
-[300][6,1]<1>(0,4,-1,1600001,0,0)("X[共]万能ｳｨﾝﾄﾞｳ描画処理")
+[300][6,1]<1>(0,4,-1,1600001,0,0)("X[Com]Draw Universal Window")
 [250][5,4]<1>(22,-2,0,65536,2)("","Universal Window Items","","")
 [172][0,0]<1>()()
 [0][0,0]<1>()()
@@ -984,7 +984,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<1>()("「キャンセル時の質問」カーソル切り替えモード  　Ver3.00追加")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<1>()("万能ウィンドウカーソル切り替え")
-[300][6,1]<1>(0,4,1,1600001,0,0)("X[共]万能ｳｨﾝﾄﾞｳ描画処理")
+[300][6,1]<1>(0,4,1,1600001,0,0)("X[Com]Draw Universal Window")
 [172][0,0]<1>()()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
@@ -993,15 +993,15 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　システム画面の描画・消去処理と、
 ▼ 　選択状態に応じたカーソル描画処理を行います。
 ▼ 
-▼ 【このコモンイベント内で操作しているデータベース】
+▼ [Databases Accessed by This Common Event]
 ▼  
-▼ 【ここから呼び出している別コモンイベント】
+▼ [Other Common Events Called from Here]
 ▼  
-▼ 【どのコモンイベントから主に呼び出されているか】
+▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ 【ピクチャ】
 ▼ 　基本ピクチャ＋0　＝　下地
@@ -1298,7 +1298,7 @@ WoditorEvCOMMAND_END
  | | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 50 
  | | | |■Set Variable: CSelf21[一時ピクチャ番号] += CSelf16[加算ピクチャ番号] + 0 
  | | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | | |■Load DB(Var):  CSelf12[一時変数C] = VarDB[ "Base System Variables":57:"Number" ] (18:[System] Key Repeat:0) 
+ | | | |■Load DB(Var):  CSelf12[一時変数C] = VarDB[ "Base System Variables":57:"Number" ] (18:[System] Key Repeat Speed:0) 
  | | | |■Condition (Number):   [1] CSelf12[一時変数C] <=  0  /  [2] CSelf12[一時変数C] ==  1  /  [3] CSelf12[一時変数C] ==  2  
  | | | |-◇Condition:  [1]  [ CSelf12[一時変数C] <= 0   ] Case↓
  | | | | |■Set String: CSelf6[付与文字列] = "１:最も遅い"
@@ -1778,7 +1778,7 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf79[万能ウィンドウ用変数] = 0 + 0 
  |■Write to DB(Var): VarDB[ "Base System Variables":15:0 ] (18:Universal Window Vert. Scroll Pos:Number) =  CSelf79[万能ウィンドウ用変数]
  |▼ 万能ウィンドウ表示
- |■Call Event [Name]: ["X[共]万能ｳｨﾝﾄﾞｳ描画処理"] <CommonEv 64>  / 0:表示 / CSelf1[カーソル位置] / 0:表示しない / 5:中央上から展開
+ |■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / 0:Display / CSelf1[カーソル位置] / 0:Don't Display / 5:Expand from Top-Center
  |■Exit Event
  |■
 ◇End◇
@@ -1788,7 +1788,7 @@ WoditorEvCOMMAND_END
  |▼ 「キャンセル時の質問」消去モード    　Ver3.00追加
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |▼ 万能ウィンドウ消去
- |■Call Event [Name]: ["X[共]万能ｳｨﾝﾄﾞｳ描画処理"] <CommonEv 64>  / -1:消去 / CSelf1[カーソル位置] / 0:表示しない / 0:なし
+ |■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / -1:Erase / CSelf1[カーソル位置] / 0:Don't Display / 0:None
  |■Write to DB(Var): [Reset Type "Universal Window Items"(19)]
  |■Exit Event
  |■
@@ -1799,7 +1799,7 @@ WoditorEvCOMMAND_END
  |▼ 「キャンセル時の質問」カーソル切り替えモード  　Ver3.00追加
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |▼ 万能ウィンドウカーソル切り替え
- |■Call Event [Name]: ["X[共]万能ｳｨﾝﾄﾞｳ描画処理"] <CommonEv 64>  / 1:更新(ｽｸﾛｰﾙ+ｶｰｿﾙ描画) / CSelf1[カーソル位置] / 0:表示しない / 0:なし
+ |■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / 1:Update (Scroll & Cursor Draw) / CSelf1[カーソル位置] / 0:Don't Display / 0:None
  |■Exit Event
  |■
 ◇End◇

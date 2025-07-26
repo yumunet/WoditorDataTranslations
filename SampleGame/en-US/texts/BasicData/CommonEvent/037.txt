@@ -1,17 +1,17 @@
 COMMON_ID=37
-COMMON_NAME=◇ランダムエンカウント処理 
+COMMON_NAME=◇Random Encounter
 COMMAND_COLOR=0
 TRIGGER=32
 TRIGGER_TARGET=2000000
 TRIGGER_VAL=0
-MEMO=1回呼ぶごとにｶｳﾝﾀを加算し、一定値以上になると3種の敵ｸﾞﾙｰﾌﾟのうちどれかをランダムで出現させます。
+MEMO=Increments the counter when called. When it reaches a set value, one of three enemy groups appears at random.
 VALINPUT_NUM=4
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=出現歩数
-VALINPUT_NAME_1=敵グループ 1
-VALINPUT_NAME_2=敵グループ 2
-VALINPUT_NAME_3=敵グループ 3
+VALINPUT_NAME_0=Steps to Appear
+VALINPUT_NAME_1=Enemy Group 1
+VALINPUT_NAME_2=Enemy Group 2
+VALINPUT_NAME_3=Enemy Group 3
 VALINPUT_NAME_4=
 VALINPUT_NAME_5=
 VALINPUT_NAME_6=
@@ -33,21 +33,18 @@ LOADTYPE9=0
 CHOICE_STR_NUM=10
 CHOICE_STR_0_NUM=0
 CHOICE_STR_1_NUM=3
-CHOICE_STR_1_0=<なし>
-CHOICE_STR_1_1=<なし>
-CHOICE_STR_1_2=<なし>
+CHOICE_STR_1_0=<None>
+CHOICE_STR_1_1=<None>
+CHOICE_STR_1_2=<None>
 CHOICE_STR_2_NUM=3
-CHOICE_STR_2_0=<なし>
-CHOICE_STR_2_1=<なし>
-CHOICE_STR_2_2=<なし>
+CHOICE_STR_2_0=<None>
+CHOICE_STR_2_1=<None>
+CHOICE_STR_2_2=<None>
 CHOICE_STR_3_NUM=3
-CHOICE_STR_3_0=<なし>
-CHOICE_STR_3_1=<なし>
-CHOICE_STR_3_2=<なし>
-CHOICE_STR_4_NUM=3
-CHOICE_STR_4_0=<なし>
-CHOICE_STR_4_1=<なし>
-CHOICE_STR_4_2=<なし>
+CHOICE_STR_3_0=<None>
+CHOICE_STR_3_1=<None>
+CHOICE_STR_3_2=<None>
+CHOICE_STR_4_NUM=0
 CHOICE_STR_5_NUM=0
 CHOICE_STR_6_NUM=0
 CHOICE_STR_7_NUM=0
@@ -79,21 +76,21 @@ DEFAULT_VAL_1=0
 DEFAULT_VAL_2=0
 DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
-RETURN_VAL_NAME=敵出現した？
+RETURN_VAL_NAME=Enemy Appeared?
 RETURN_VAL_TARGET=90
-CSELF_NAME_0=出現歩数
-CSELF_NAME_1=敵グループ 1
-CSELF_NAME_2=敵グループ 2
-CSELF_NAME_3=敵グループ 3
+CSELF_NAME_0=Steps to Appear
+CSELF_NAME_1=Enemy Group 1
+CSELF_NAME_2=Enemy Group 2
+CSELF_NAME_3=Enemy Group 3
 CSELF_NAME_4=
 CSELF_NAME_5=
 CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=
-CSELF_NAME_10=一時変数A
-CSELF_NAME_11=一時変数B
-CSELF_NAME_12=一時変数C
+CSELF_NAME_10=Temp Variable A
+CSELF_NAME_11=Temp Variable B
+CSELF_NAME_12=Temp Variable C
 CSELF_NAME_13=
 CSELF_NAME_14=
 CSELF_NAME_15=
@@ -101,10 +98,10 @@ CSELF_NAME_16=
 CSELF_NAME_17=
 CSELF_NAME_18=
 CSELF_NAME_19=
-CSELF_NAME_20=現在座標X
-CSELF_NAME_21=現在座標Y
+CSELF_NAME_20=Current X Position
+CSELF_NAME_21=Current Y Position
 CSELF_NAME_22=
-CSELF_NAME_23=一時ｴﾝｶｳﾝﾄ値
+CSELF_NAME_23=Temp Encounter Value
 CSELF_NAME_24=
 CSELF_NAME_25=
 CSELF_NAME_26=
@@ -131,8 +128,8 @@ CSELF_NAME_46=
 CSELF_NAME_47=
 CSELF_NAME_48=
 CSELF_NAME_49=
-CSELF_NAME_50=旧座標X
-CSELF_NAME_51=旧座標Y
+CSELF_NAME_50=Old X Position
+CSELF_NAME_51=Old Y Position
 CSELF_NAME_52=
 CSELF_NAME_53=
 CSELF_NAME_54=
@@ -171,7 +168,7 @@ CSELF_NAME_86=
 CSELF_NAME_87=
 CSELF_NAME_88=
 CSELF_NAME_89=
-CSELF_NAME_90=敵出現した？
+CSELF_NAME_90=Enemy Appeared?
 CSELF_NAME_91=
 CSELF_NAME_92=
 CSELF_NAME_93=
@@ -184,10 +181,10 @@ CSELF_NAME_99=
 COMMAND_NUM=61
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("入力0：エンカウント歩数　入力1～３：出現エネミーグループ（-1ならナシ）")
-[103][0,1]<0>()("Ver2.24　敵出現フラグを初期化していなかったバグを修正")
+[103][0,1]<0>()("Argument 0: Encounter Steps  Arguments 1-3: Enemy Group That Appears (-1 = None)")
+[103][0,1]<0>()("Ver.2.24  Fixed a bug where the enemy appearance flag was not initialized.")
 [121][4,0]<0>(1600090,0,0,0)()
-[103][0,1]<0>()("直前の主人公座標と異なる場合だけエンカウント値を加算　座標が同じなら即終了")
+[103][0,1]<0>()("Add encounter value only when the hero's position differs from the previous one. If it's the same, exit instantly.")
 [124][4,0]<0>(1600020,4096,-2,2)()
 [124][4,0]<0>(1600021,4096,-2,3)()
 [111][4,0]<0>(1,1600020,1600050,2)()
@@ -199,18 +196,18 @@ WoditorEvCOMMAND_START
 [499][0,0]<1>()()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
-[103][0,1]<0>()("セルフ50、51に直前の座標を格納しておく")
+[103][0,1]<0>()("Store the previous position in CSelf 50 and 51.")
 [121][4,0]<0>(1600050,1600020,0,0)()
 [121][4,0]<0>(1600051,1600021,0,0)()
-[103][0,1]<0>()("ここからエンカウント計算")
-[103][0,1]<0>()("内部的には「エンカウント値」が10万を超えると出現。少しだけランダム要素有り")
+[103][0,1]<0>()("Encounter calculation starts here.")
+[103][0,1]<0>()("Internally, it appears when the <dqrt>encounter value<dqrt> exceeds 100,000. There's a bit of randomness.")
 [121][4,0]<0>(1600010,100000,1600000,12288)()
 [121][4,0]<0>(1600010,1,0,1536)()
 [250][5,4]<0>(18,65,0,65552,1600010)("","Base System Variables","","")
 [250][5,4]<0>(18,65,0,69632,1600023)("","Base System Variables","","")
 [111][4,0]<0>(1,1600023,100000,1)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("エンカウントすると、次の初期値を±2万の範囲で格納する")
+[103][0,1]<1>()("When encountered, store the next initial value within a ±20,000 range.")
 [121][4,0]<1>(1600023,-20000,20000,24576)()
 [250][5,4]<1>(18,65,0,65536,1600023)("","Base System Variables","","")
 [111][4,0]<1>(1,1600001,-1,3)()
@@ -219,7 +216,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<2>(1)()
 [111][4,0]<3>(1,1600003,-1,3)()
 [401][1,0]<3>(1)()
-[103][0,1]<4>()("敵グループが設定されていなければ終了する")
+[103][0,1]<4>()("If no enemy groups are set, exit.")
 [172][0,0]<4>()()
 [0][0,0]<4>()()
 [499][0,0]<3>()()
@@ -227,7 +224,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<2>()()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
-[103][0,1]<1>()("ランダムで敵グループ選択")
+[103][0,1]<1>()("Select an enemy group at random.")
 [170][0,0]<1>()()
 [121][4,0]<2>(1600011,1,3,24576)()
 [121][4,0]<2>(1600011,1600000,0,260)()
@@ -239,8 +236,8 @@ WoditorEvCOMMAND_START
 [499][0,0]<2>()()
 [0][0,0]<2>()()
 [498][0,0]<1>()()
-[300][6,1]<1>(0,4,1600012,0,0,-2)("X◆戦闘処理")
-[103][0,1]<1>()("Ver2.22　出現時に返り値を返していなかったバグを修正")
+[300][6,1]<1>(0,4,1600012,0,0,-2)("X◆Battle Process")
+[103][0,1]<1>()("Ver.2.22  Fixed a bug where the return value was not returned when it appeared.")
 [121][4,0]<1>(1600090,1,0,0)()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
@@ -248,42 +245,42 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ 入力0：エンカウント歩数　入力1～３：出現エネミーグループ（-1ならナシ）
-▼ Ver2.24　敵出現フラグを初期化していなかったバグを修正
-■Set Variable: CSelf90[敵出現した？] = 0 + 0 
-▼ 直前の主人公座標と異なる場合だけエンカウント値を加算　座標が同じなら即終了
-■Set Variable+: CSelf20[現在座標X] = Hero 's X Pos (Precise) *Left of Character
-■Set Variable+: CSelf21[現在座標Y] = Hero 's Y Pos (Precise) *Top of Character
-■Condition (Number):   [1] CSelf20[現在座標X] ==  CSelf50[旧座標X]  
--◇Condition:  [1]  [ CSelf20[現在座標X] == CSelf50[旧座標X]   ] Case↓
- |■Condition (Number):   [1] CSelf21[現在座標Y] ==  CSelf51[旧座標Y]  
- |-◇Condition:  [1]  [ CSelf21[現在座標Y] == CSelf51[旧座標Y]   ] Case↓
+▼ Argument 0: Encounter Steps  Arguments 1-3: Enemy Group That Appears (-1 = None)
+▼ Ver.2.24  Fixed a bug where the enemy appearance flag was not initialized.
+■Set Variable: CSelf90[Enemy Appeared?] = 0 + 0 
+▼ Add encounter value only when the hero's position differs from the previous one. If it's the same, exit instantly.
+■Set Variable+: CSelf20[Current X Position] = Hero 's X Pos (Precise) *Left of Character
+■Set Variable+: CSelf21[Current Y Position] = Hero 's Y Pos (Precise) *Top of Character
+■Condition (Number):   [1] CSelf20[Current X Position] ==  CSelf50[Old X Position]  
+-◇Condition:  [1]  [ CSelf20[Current X Position] == CSelf50[Old X Position]   ] Case↓
+ |■Condition (Number):   [1] CSelf21[Current Y Position] ==  CSelf51[Old Y Position]  
+ |-◇Condition:  [1]  [ CSelf21[Current Y Position] == CSelf51[Old Y Position]   ] Case↓
  | |■Exit Event
  | |■
  |◇End◇
  |■
 ◇End◇
-▼ セルフ50、51に直前の座標を格納しておく
-■Set Variable: CSelf50[旧座標X] = CSelf20[現在座標X] + 0 
-■Set Variable: CSelf51[旧座標Y] = CSelf21[現在座標Y] + 0 
-▼ ここからエンカウント計算
-▼ 内部的には「エンカウント値」が10万を超えると出現。少しだけランダム要素有り
-■Set Variable: CSelf10[一時変数A] = 100000 / CSelf0[出現歩数] 
-■Set Variable: CSelf10[一時変数A] Lower Bound= 1 + 0 
-■Write to DB(Var): VarDB[ "Base System Variables":65:0 ] (18:[Encounter] Encounter Points:Number) +=  CSelf10[一時変数A]
-■Load DB(Var):  CSelf23[一時ｴﾝｶｳﾝﾄ値] = VarDB[ "Base System Variables":65:0 ] (18:[Encounter] Encounter Points:Number) 
-■Condition (Number):   [1] CSelf23[一時ｴﾝｶｳﾝﾄ値] >=  100000  
--◇Condition:  [1]  [ CSelf23[一時ｴﾝｶｳﾝﾄ値] >= 100000   ] Case↓
- |▼ エンカウントすると、次の初期値を±2万の範囲で格納する
- |■Set Variable: CSelf23[一時ｴﾝｶｳﾝﾄ値] = -20000  to  20000 
- |■Write to DB(Var): VarDB[ "Base System Variables":65:0 ] (18:[Encounter] Encounter Points:Number) =  CSelf23[一時ｴﾝｶｳﾝﾄ値]
- |■Condition (Number):   [1] CSelf1[敵グループ 1] <=  -1  
- |-◇Condition:  [1]  [ CSelf1[敵グループ 1] <= -1   ] Case↓
- | |■Condition (Number):   [1] CSelf2[敵グループ 2] <=  -1  
- | |-◇Condition:  [1]  [ CSelf2[敵グループ 2] <= -1   ] Case↓
- | | |■Condition (Number):   [1] CSelf3[敵グループ 3] <=  -1  
- | | |-◇Condition:  [1]  [ CSelf3[敵グループ 3] <= -1   ] Case↓
- | | | |▼ 敵グループが設定されていなければ終了する
+▼ Store the previous position in CSelf 50 and 51.
+■Set Variable: CSelf50[Old X Position] = CSelf20[Current X Position] + 0 
+■Set Variable: CSelf51[Old Y Position] = CSelf21[Current Y Position] + 0 
+▼ Encounter calculation starts here.
+▼ Internally, it appears when the "encounter value" exceeds 100,000. There's a bit of randomness.
+■Set Variable: CSelf10[Temp Variable A] = 100000 / CSelf0[Steps to Appear] 
+■Set Variable: CSelf10[Temp Variable A] Lower Bound= 1 + 0 
+■Write to DB(Var): VarDB[ "Base System Variables":65:0 ] (18:[Encounter] Encounter Value:Number) +=  CSelf10[Temp Variable A]
+■Load DB(Var):  CSelf23[Temp Encounter Value] = VarDB[ "Base System Variables":65:0 ] (18:[Encounter] Encounter Value:Number) 
+■Condition (Number):   [1] CSelf23[Temp Encounter Value] >=  100000  
+-◇Condition:  [1]  [ CSelf23[Temp Encounter Value] >= 100000   ] Case↓
+ |▼ When encountered, store the next initial value within a ±20,000 range.
+ |■Set Variable: CSelf23[Temp Encounter Value] = -20000  to  20000 
+ |■Write to DB(Var): VarDB[ "Base System Variables":65:0 ] (18:[Encounter] Encounter Value:Number) =  CSelf23[Temp Encounter Value]
+ |■Condition (Number):   [1] CSelf1[Enemy Group 1] <=  -1  
+ |-◇Condition:  [1]  [ CSelf1[Enemy Group 1] <= -1   ] Case↓
+ | |■Condition (Number):   [1] CSelf2[Enemy Group 2] <=  -1  
+ | |-◇Condition:  [1]  [ CSelf2[Enemy Group 2] <= -1   ] Case↓
+ | | |■Condition (Number):   [1] CSelf3[Enemy Group 3] <=  -1  
+ | | |-◇Condition:  [1]  [ CSelf3[Enemy Group 3] <= -1   ] Case↓
+ | | | |▼ If no enemy groups are set, exit.
  | | | |■Exit Event
  | | | |■
  | | |◇End◇
@@ -291,21 +288,21 @@ WoditorEvCOMMAND_END
  | |◇End◇
  | |■
  |◇End◇
- |▼ ランダムで敵グループ選択
+ |▼ Select an enemy group at random.
  |■Loop Start
- | |■Set Variable: CSelf11[一時変数B] = 1  to  3 
- | |■Set Variable: CSelf11[一時変数B] += 1600000 + 0 
- | |■Set Variable: CSelf12[一時変数C] = V[CSelf11[一時変数B]] + 0 
- | |■Condition (Number):   [1] CSelf12[一時変数C] >=  0  
- | |-◇Condition:  [1]  [ CSelf12[一時変数C] >= 0   ] Case↓
+ | |■Set Variable: CSelf11[Temp Variable B] = 1  to  3 
+ | |■Set Variable: CSelf11[Temp Variable B] += 1600000 + 0 
+ | |■Set Variable: CSelf12[Temp Variable C] = V[CSelf11[Temp Variable B]] + 0 
+ | |■Condition (Number):   [1] CSelf12[Temp Variable C] >=  0  
+ | |-◇Condition:  [1]  [ CSelf12[Temp Variable C] >= 0   ] Case↓
  | | |■Break Loop
  | | |■
  | |◇End◇
  | |■
  |◇Loop End Point◇◇
- |■Call Event [Name]: ["X◆戦闘処理"] <CommonEv 188>  / CSelf12[一時変数C] / 0:逃走可能 / 0:ゲームオーバー / -2:<ﾃﾞﾌｫﾙﾄBGM>
- |▼ Ver2.22　出現時に返り値を返していなかったバグを修正
- |■Set Variable: CSelf90[敵出現した？] = 1 + 0 
+ |■Call Event [Name]: ["X◆Battle Process"] <CommonEv 188>  / CSelf12[Temp Variable C] / 0:逃走可能 / 0:ゲームオーバー / -2:<ﾃﾞﾌｫﾙﾄBGM>
+ |▼ Ver.2.22  Fixed a bug where the return value was not returned when it appeared.
+ |■Set Variable: CSelf90[Enemy Appeared?] = 1 + 0 
  |■
 ◇End◇
 ■

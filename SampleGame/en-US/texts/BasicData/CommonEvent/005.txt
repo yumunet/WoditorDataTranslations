@@ -1,15 +1,15 @@
 COMMON_ID=5
-COMMON_NAME=○メンバーの増減
+COMMON_NAME=○ Change Members
 COMMAND_COLOR=0
 TRIGGER=32
 TRIGGER_TARGET=2000000
 TRIGGER_VAL=0
-MEMO=仲間を加えたり外したりします、空きがないときは無効。戦闘中でも有効。
+MEMO=Adds or removes a member. No effect when there isn't any room in the party. Also works in battle.
 VALINPUT_NUM=2
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=処理
-VALINPUT_NAME_1=誰を？
+VALINPUT_NAME_0=Type
+VALINPUT_NAME_1=Who?
 VALINPUT_NAME_2=
 VALINPUT_NAME_3=
 VALINPUT_NAME_4=
@@ -32,9 +32,9 @@ LOADTYPE8=0
 LOADTYPE9=0
 CHOICE_STR_NUM=10
 CHOICE_STR_0_NUM=3
-CHOICE_STR_0_0=仲間に加える
-CHOICE_STR_0_1=仲間から外す
-CHOICE_STR_0_2=歩行画像の更新だけ
+CHOICE_STR_0_0=Add Member
+CHOICE_STR_0_1=Remove Member
+CHOICE_STR_0_2=Update Char. Images
 CHOICE_STR_1_NUM=0
 CHOICE_STR_2_NUM=0
 CHOICE_STR_3_NUM=0
@@ -69,8 +69,8 @@ DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
 RETURN_VAL_NAME=
 RETURN_VAL_TARGET=-1
-CSELF_NAME_0=処理
-CSELF_NAME_1=誰を？
+CSELF_NAME_0=Type
+CSELF_NAME_1=Who?
 CSELF_NAME_2=
 CSELF_NAME_3=
 CSELF_NAME_4=
@@ -79,18 +79,18 @@ CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=
-CSELF_NAME_10=一時変数A
-CSELF_NAME_11=主人公ID
-CSELF_NAME_12=主人公IDその２
-CSELF_NAME_13=一時変数B
+CSELF_NAME_10=Temp Variable A
+CSELF_NAME_11=Ally ID
+CSELF_NAME_12=Ally ID #2
+CSELF_NAME_13=Temp Variable B
 CSELF_NAME_14=
-CSELF_NAME_15=最初にあった空き位置
+CSELF_NAME_15=
 CSELF_NAME_16=
 CSELF_NAME_17=
-CSELF_NAME_18=戦闘中フラグ
+CSELF_NAME_18=In-Battle Flag
 CSELF_NAME_19=
-CSELF_NAME_20=最大パーティ数
-CSELF_NAME_21=外した位置
+CSELF_NAME_20=Max Party Size
+CSELF_NAME_21=Removed Slot
 CSELF_NAME_22=
 CSELF_NAME_23=
 CSELF_NAME_24=
@@ -99,7 +99,7 @@ CSELF_NAME_26=
 CSELF_NAME_27=
 CSELF_NAME_28=
 CSELF_NAME_29=
-CSELF_NAME_30=登録コマンド数
+CSELF_NAME_30=Registered Command Count
 CSELF_NAME_31=
 CSELF_NAME_32=
 CSELF_NAME_33=
@@ -172,38 +172,38 @@ CSELF_NAME_99=
 COMMAND_NUM=132
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("まずパーティーを前に詰める（再計算）")
-[300][2,1]<0>(0,0)("X[移]パーティー情報計算")
-[103][0,1]<0>()("パーティの全キャラをチェック")
+[103][0,1]<0>()("First, push party to front (recalculate).")
+[300][2,1]<0>(0,0)("X[Map]Update Party Info")
+[103][0,1]<0>()("Check all characters in the party.")
 [250][5,4]<0>(18,51,0,69632,1600020)("","Base System Variables","","")
 [121][4,0]<0>(1600010,-1,0,0)()
 [121][4,0]<0>(1600021,-1,0,0)()
 [179][1,0]<0>(1600020)()
 [121][4,0]<1>(1600010,1,0,256)()
-[300][4,1]<1>(0,16777217,1600010,1600011)("X[移]選択位置主人公ID取得")
+[300][4,1]<1>(0,16777217,1600010,1600011)("X[Map]Get Ally ID")
 [111][7,0]<1>(2,1600000,0,2,1600000,1,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("仲間に加える場合")
+[103][0,1]<2>()("Case for adding a member.")
 [111][4,0]<2>(1,1600011,1600001,2)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("もう同じキャラがいた場合は終了")
+[103][0,1]<3>()("If the same character is already present, end.")
 [172][0,0]<3>()()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [111][4,0]<2>(1,1600011,-1,3)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("空き欄があればそこにキャラを設定")
-[300][4,1]<3>(0,2,1600010,1600001)("X[移]選択位置主人公ID設定")
+[103][0,1]<3>()("If there's an empty slot, set the character there.")
+[300][4,1]<3>(0,2,1600010,1600001)("X[Map]Set Ally ID")
 [171][0,0]<3>()()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[103][0,1]<2>()("仲間から外す")
+[103][0,1]<2>()("Case for removing a member.")
 [111][4,0]<2>(1,1600011,1600001,2)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("該当するキャラがいれば外す（-1を代入）")
-[300][4,1]<3>(0,2,1600010,-1)("X[移]選択位置主人公ID設定")
+[103][0,1]<3>()("If the corresponding member is present, remove (set -1).")
+[300][4,1]<3>(0,2,1600010,-1)("X[Map]Set Ally ID")
 [121][4,0]<3>(1600021,1600010,0,0)()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
@@ -215,62 +215,62 @@ WoditorEvCOMMAND_START
 [401][1,0]<0>(1)()
 [111][4,0]<1>(1,1600021,-1,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("誰も外さなかったので帰る")
+[103][0,1]<2>()("No one was removed, so return.")
 [172][0,0]<2>()()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
-[103][0,1]<0>()("パーティーを前に詰める")
-[300][2,1]<0>(0,0)("X[移]パーティー情報計算")
-[103][0,1]<0>()("画像を再設定")
-[300][2,1]<0>(0,0)("X[移]パーティー画像再設定")
+[103][0,1]<0>()("Push party to front.")
+[300][2,1]<0>(0,0)("X[Map]Update Party Info")
+[103][0,1]<0>()("Reset images.")
+[300][2,1]<0>(0,0)("X[Map]Reset Party Images")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("戦闘中ならそちらにも反映")
+[103][0,1]<0>()("If in battle, reflect changes there as well.")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [250][5,4]<0>(18,68,0,200704,1600018)("","Base System Variables","[Battle] In Battle?","")
 [111][4,0]<0>(1,1600018,1,2)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("戦闘中ならキャラ番号が変わっているところだけキャラ入れ替え")
-[103][0,1]<1>()("★まず コモン[×戦闘終了後整理 / 1]　を実行")
+[103][0,1]<1>()("If in battle, switch characters only where Character ID has changed.")
+[103][0,1]<1>()(" ")
 [121][4,0]<1>(1600013,-1,0,0)()
 [179][1,0]<1>(1600020)()
 [121][4,0]<2>(1600013,1,0,256)()
-[300][4,1]<2>(0,16777217,1600013,1600012)("X[移]選択位置主人公ID取得")
+[300][4,1]<2>(0,16777217,1600013,1600012)("X[Map]Get Ally ID")
 [111][4,0]<2>(17,1600012,1600001,2)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("追加したキャラなので初期化")
-[300][5,1]<3>(0,3,1600013,1600012,0)("X[戦]主人公DB→戦闘DBコピー")
-[300][3,1]<3>(0,1,1600013)("X[戦]一時ｽﾃ計算<初期化>")
-[300][4,1]<3>(0,2,1600013,-1)("X[戦]一時ｽﾃ計算<装備補正>")
-[300][4,1]<3>(0,2,1600013,0)("X[戦]一時ｽﾃ計算<状態補正>")
-[300][3,1]<3>(0,1,1600013)("X[戦]味方欄_座標算出")
-[300][5,1]<3>(0,3,-1,1600013,1600013)("X[戦]味方欄_単体描画")
-[300][5,1]<3>(0,3,0,1600013,1600013)("X[戦]味方欄_単体描画")
+[103][0,1]<3>()("Added character, so initialize.")
+[300][5,1]<3>(0,3,1600013,1600012,0)("X[Bat]Copy Allies DB to Battle DB")
+[300][3,1]<3>(0,1,1600013)("X[Bat]CalcTempStats <Initialize>")
+[300][4,1]<3>(0,2,1600013,-1)("X[Bat]CalcTempStats <Equipments>")
+[300][4,1]<3>(0,2,1600013,0)("X[Bat]CalcTempStats <StatusEffects>")
+[300][3,1]<3>(0,1,1600013)("X[Bat]Ally Box: Calc Position")
+[300][5,1]<3>(0,3,-1,1600013,1600013)("X[Bat]Ally Box: Draw One")
+[300][5,1]<3>(0,3,0,1600013,1600013)("X[Bat]Ally Box: Draw One")
 [0][0,0]<3>()()
 [420][1,0]<2>(0)()
-[300][3,1]<3>(0,1,1600013)("X[戦]味方欄_座標算出")
-[300][5,1]<3>(0,3,-1,1600013,1600013)("X[戦]味方欄_単体描画")
-[300][5,1]<3>(0,3,0,1600013,1600013)("X[戦]味方欄_単体描画")
+[300][3,1]<3>(0,1,1600013)("X[Bat]Ally Box: Calc Position")
+[300][5,1]<3>(0,3,-1,1600013,1600013)("X[Bat]Ally Box: Draw One")
+[300][5,1]<3>(0,3,0,1600013,1600013)("X[Bat]Ally Box: Draw One")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [0][0,0]<2>()()
 [498][0,0]<1>()()
 [111][4,0]<1>(1,1600000,1,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("Ver2.22　主人公をはずしたとき、「無限使用」コマンド選択直後にいなくなった場合の補正処理")
-[300][5,1]<2>(0,16777218,0,2,1600010)("X┃┣◆味方コマンド選択")
-[103][0,1]<2>()("Ver2.23　テスト用に入れていた文章が残っていたのを削除")
+[103][0,1]<2>()("Ver.2.22  Correction processing when an ally is removed immediately after the <dqrt>Infinite Use<dqrt> command is selected.")
+[300][5,1]<2>(0,16777218,0,2,1600010)("X┃┣◆Select Ally Command")
+[103][0,1]<2>()("Ver.2.23  A message left for testing was deleted.")
 [111][7,0]<2>(2,1600010,0,2,1600021,1600010,4)()
 [401][1,0]<2>(1)()
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
-[300][4,1]<3>(0,2,10,-1)("X┣◆行動内容のセット")
-[300][4,1]<3>(0,2,1600021,1)("X┃┣◆味方コマンド選択")
+[300][4,1]<3>(0,2,10,-1)("X┣◆Set Action")
+[300][4,1]<3>(0,2,1600021,1)("X┃┣◆Select Ally Command")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
-[103][0,1]<2>()("Ver2.22　メンバー変更で選択済みのコマンドの使用者がずれてしまうバグ修正")
-[103][0,1]<2>()("外した場合行動コマンド処理リストから外す")
+[103][0,1]<2>()("Ver.2.22  Bug fixed where changing a member would change the user of a selected command.")
+[103][0,1]<2>()("If removed, remove from action command processing list.")
 [121][4,0]<2>(1600013,-1,0,0)()
 [250][5,4]<2>(20,73,0,200704,1600030)("","Base System Variables","[Battle] Command Input Pos","")
 [179][1,0]<2>(1600030)()
@@ -307,129 +307,129 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ まずパーティーを前に詰める（再計算）
-■Call Event [Name]: ["X[移]パーティー情報計算"] <CommonEv 79> 
-▼ パーティの全キャラをチェック
-■Load DB(Var):  CSelf20[最大パーティ数] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
-■Set Variable: CSelf10[一時変数A] = -1 + 0 
-■Set Variable: CSelf21[外した位置] = -1 + 0 
-■Repeat Loop [ CSelf20[最大パーティ数] ] Times
- |■Set Variable: CSelf10[一時変数A] += 1 + 0 
- |■Call Event [Name]: CSelf11[主人公ID] = ["X[移]選択位置主人公ID取得"] <CommonEv 105>  / CSelf10[一時変数A]
- |■Condition (Number):   [1] CSelf0[処理] ==  0  /  [2] CSelf0[処理] ==  1  
- |-◇Condition:  [1]  [ CSelf0[処理] == 0   ] Case↓
- | |▼ 仲間に加える場合
- | |■Condition (Number):   [1] CSelf11[主人公ID] ==  CSelf1[誰を？]  
- | |-◇Condition:  [1]  [ CSelf11[主人公ID] == CSelf1[誰を？]   ] Case↓
- | | |▼ もう同じキャラがいた場合は終了
+▼ First, push party to front (recalculate).
+■Call Event [Name]: ["X[Map]Update Party Info"] <CommonEv 79> 
+▼ Check all characters in the party.
+■Load DB(Var):  CSelf20[Max Party Size] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
+■Set Variable: CSelf10[Temp Variable A] = -1 + 0 
+■Set Variable: CSelf21[Removed Slot] = -1 + 0 
+■Repeat Loop [ CSelf20[Max Party Size] ] Times
+ |■Set Variable: CSelf10[Temp Variable A] += 1 + 0 
+ |■Call Event [Name]: CSelf11[Ally ID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf10[Temp Variable A]
+ |■Condition (Number):   [1] CSelf0[Type] ==  0  /  [2] CSelf0[Type] ==  1  
+ |-◇Condition:  [1]  [ CSelf0[Type] == 0   ] Case↓
+ | |▼ Case for adding a member.
+ | |■Condition (Number):   [1] CSelf11[Ally ID] ==  CSelf1[Who?]  
+ | |-◇Condition:  [1]  [ CSelf11[Ally ID] == CSelf1[Who?]   ] Case↓
+ | | |▼ If the same character is already present, end.
  | | |■Exit Event
  | | |■
  | |◇End◇
- | |■Condition (Number):   [1] CSelf11[主人公ID] <=  -1  
- | |-◇Condition:  [1]  [ CSelf11[主人公ID] <= -1   ] Case↓
- | | |▼ 空き欄があればそこにキャラを設定
- | | |■Call Event [Name]: ["X[移]選択位置主人公ID設定"] <CommonEv 104>  / CSelf10[一時変数A] / CSelf1[誰を？]
+ | |■Condition (Number):   [1] CSelf11[Ally ID] <=  -1  
+ | |-◇Condition:  [1]  [ CSelf11[Ally ID] <= -1   ] Case↓
+ | | |▼ If there's an empty slot, set the character there.
+ | | |■Call Event [Name]: ["X[Map]Set Ally ID"] <CommonEv 104>  / CSelf10[Temp Variable A] / CSelf1[Who?]
  | | |■Break Loop
  | | |■
  | |◇End◇
  | |■
- |-◇Condition:  [2]  [ CSelf0[処理] == 1   ] Case↓
- | |▼ 仲間から外す
- | |■Condition (Number):   [1] CSelf11[主人公ID] ==  CSelf1[誰を？]  
- | |-◇Condition:  [1]  [ CSelf11[主人公ID] == CSelf1[誰を？]   ] Case↓
- | | |▼ 該当するキャラがいれば外す（-1を代入）
- | | |■Call Event [Name]: ["X[移]選択位置主人公ID設定"] <CommonEv 104>  / CSelf10[一時変数A] / -1
- | | |■Set Variable: CSelf21[外した位置] = CSelf10[一時変数A] + 0 
+ |-◇Condition:  [2]  [ CSelf0[Type] == 1   ] Case↓
+ | |▼ Case for removing a member.
+ | |■Condition (Number):   [1] CSelf11[Ally ID] ==  CSelf1[Who?]  
+ | |-◇Condition:  [1]  [ CSelf11[Ally ID] == CSelf1[Who?]   ] Case↓
+ | | |▼ If the corresponding member is present, remove (set -1).
+ | | |■Call Event [Name]: ["X[Map]Set Ally ID"] <CommonEv 104>  / CSelf10[Temp Variable A] / -1
+ | | |■Set Variable: CSelf21[Removed Slot] = CSelf10[Temp Variable A] + 0 
  | | |■
  | |◇End◇
  | |■
  |◇End◇
  |■
 ◇Loop End Point◇◇
-■Condition (Number):   [1] CSelf0[処理] ==  1  
--◇Condition:  [1]  [ CSelf0[処理] == 1   ] Case↓
- |■Condition (Number):   [1] CSelf21[外した位置] ==  -1  
- |-◇Condition:  [1]  [ CSelf21[外した位置] == -1   ] Case↓
- | |▼ 誰も外さなかったので帰る
+■Condition (Number):   [1] CSelf0[Type] ==  1  
+-◇Condition:  [1]  [ CSelf0[Type] == 1   ] Case↓
+ |■Condition (Number):   [1] CSelf21[Removed Slot] ==  -1  
+ |-◇Condition:  [1]  [ CSelf21[Removed Slot] == -1   ] Case↓
+ | |▼ No one was removed, so return.
  | |■Exit Event
  | |■
  |◇End◇
  |■
 ◇End◇
-▼ パーティーを前に詰める
-■Call Event [Name]: ["X[移]パーティー情報計算"] <CommonEv 79> 
-▼ 画像を再設定
-■Call Event [Name]: ["X[移]パーティー画像再設定"] <CommonEv 80> 
+▼ Push party to front.
+■Call Event [Name]: ["X[Map]Update Party Info"] <CommonEv 79> 
+▼ Reset images.
+■Call Event [Name]: ["X[Map]Reset Party Images"] <CommonEv 80> 
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼ 戦闘中ならそちらにも反映
+▼ If in battle, reflect changes there as well.
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-■Load DB(Var):  CSelf18[戦闘中フラグ] = VarDB[ "Base System Variables":"[Battle] In Battle?":0 ] (18:68:Number) 
-■Condition (Number):   [1] CSelf18[戦闘中フラグ] ==  1  
--◇Condition:  [1]  [ CSelf18[戦闘中フラグ] == 1   ] Case↓
- |▼ 戦闘中ならキャラ番号が変わっているところだけキャラ入れ替え
- |▼ ★まず コモン[×戦闘終了後整理 / 1]　を実行
- |■Set Variable: CSelf13[一時変数B] = -1 + 0 
- |■Repeat Loop [ CSelf20[最大パーティ数] ] Times
- | |■Set Variable: CSelf13[一時変数B] += 1 + 0 
- | |■Call Event [Name]: CSelf12[主人公IDその２] = ["X[移]選択位置主人公ID取得"] <CommonEv 105>  / CSelf13[一時変数B]
- | |■Condition (Number):   [1] CSelf12[主人公IDその２] ==  CSelf1[誰を？]  
- | |-◇Condition:  [1]  [ CSelf12[主人公IDその２] == CSelf1[誰を？]   ] Case↓
- | | |▼ 追加したキャラなので初期化
- | | |■Call Event [Name]: ["X[戦]主人公DB→戦闘DBコピー"] <CommonEv 143>  / CSelf13[一時変数B] / CSelf12[主人公IDその２] / 0:全て移動DBからコピー
- | | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<初期化>"] <CommonEv 146>  / CSelf13[一時変数B]
- | | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<装備補正>"] <CommonEv 147>  / CSelf13[一時変数B] / -1:全武器を総計
- | | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<状態補正>"] <CommonEv 148>  / CSelf13[一時変数B] / 0:パラメータ補正＋状態名計算
- | | |■Call Event [Name]: ["X[戦]味方欄_座標算出"] <CommonEv 174>  / CSelf13[一時変数B]
- | | |■Call Event [Name]: ["X[戦]味方欄_単体描画"] <CommonEv 178>  / -1:消去 / CSelf13[一時変数B] / CSelf13[一時変数B]
- | | |■Call Event [Name]: ["X[戦]味方欄_単体描画"] <CommonEv 178>  / 0:表示 / CSelf13[一時変数B] / CSelf13[一時変数B]
+■Load DB(Var):  CSelf18[In-Battle Flag] = VarDB[ "Base System Variables":"[Battle] In Battle?":0 ] (18:68:Number) 
+■Condition (Number):   [1] CSelf18[In-Battle Flag] ==  1  
+-◇Condition:  [1]  [ CSelf18[In-Battle Flag] == 1   ] Case↓
+ |▼ If in battle, switch characters only where Character ID has changed.
+ |▼  
+ |■Set Variable: CSelf13[Temp Variable B] = -1 + 0 
+ |■Repeat Loop [ CSelf20[Max Party Size] ] Times
+ | |■Set Variable: CSelf13[Temp Variable B] += 1 + 0 
+ | |■Call Event [Name]: CSelf12[Ally ID #2] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf13[Temp Variable B]
+ | |■Condition (Number):   [1] CSelf12[Ally ID #2] ==  CSelf1[Who?]  
+ | |-◇Condition:  [1]  [ CSelf12[Ally ID #2] == CSelf1[Who?]   ] Case↓
+ | | |▼ Added character, so initialize.
+ | | |■Call Event [Name]: ["X[Bat]Copy Allies DB to Battle DB"] <CommonEv 143>  / CSelf13[Temp Variable B] / CSelf12[Ally ID #2] / 0:全て移動DBからコピー
+ | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf13[Temp Variable B]
+ | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf13[Temp Variable B] / -1:全武器を総計
+ | | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf13[Temp Variable B] / 0:パラメータ補正＋状態名計算
+ | | |■Call Event [Name]: ["X[Bat]Ally Box: Calc Position"] <CommonEv 174>  / CSelf13[Temp Variable B]
+ | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / -1:消去 / CSelf13[Temp Variable B] / CSelf13[Temp Variable B]
+ | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 0:表示 / CSelf13[Temp Variable B] / CSelf13[Temp Variable B]
  | | |■
  | |-◇Else
- | | |■Call Event [Name]: ["X[戦]味方欄_座標算出"] <CommonEv 174>  / CSelf13[一時変数B]
- | | |■Call Event [Name]: ["X[戦]味方欄_単体描画"] <CommonEv 178>  / -1:消去 / CSelf13[一時変数B] / CSelf13[一時変数B]
- | | |■Call Event [Name]: ["X[戦]味方欄_単体描画"] <CommonEv 178>  / 0:表示 / CSelf13[一時変数B] / CSelf13[一時変数B]
+ | | |■Call Event [Name]: ["X[Bat]Ally Box: Calc Position"] <CommonEv 174>  / CSelf13[Temp Variable B]
+ | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / -1:消去 / CSelf13[Temp Variable B] / CSelf13[Temp Variable B]
+ | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 0:表示 / CSelf13[Temp Variable B] / CSelf13[Temp Variable B]
  | | |■
  | |◇End◇
  | |■
  |◇Loop End Point◇◇
- |■Condition (Number):   [1] CSelf0[処理] ==  1  
- |-◇Condition:  [1]  [ CSelf0[処理] == 1   ] Case↓
- | |▼ Ver2.22　主人公をはずしたとき、「無限使用」コマンド選択直後にいなくなった場合の補正処理
- | |■Call Event [Name]: CSelf10[一時変数A] = ["X┃┣◆味方コマンド選択"] <CommonEv 192>  / 0 / 2:処理中スロット番号を返す
- | |▼ Ver2.23　テスト用に入れていた文章が残っていたのを削除
- | |■Condition (Number):   [1] CSelf10[一時変数A] ==  0  /  [2] CSelf21[外した位置] <  CSelf10[一時変数A]  
- | |-◇Condition:  [1]  [ CSelf10[一時変数A] == 0   ] Case↓
+ |■Condition (Number):   [1] CSelf0[Type] ==  1  
+ |-◇Condition:  [1]  [ CSelf0[Type] == 1   ] Case↓
+ | |▼ Ver.2.22  Correction processing when an ally is removed immediately after the "Infinite Use" command is selected.
+ | |■Call Event [Name]: CSelf10[Temp Variable A] = ["X┃┣◆Select Ally Command"] <CommonEv 192>  / 0 / 2:処理中スロット番号を返す
+ | |▼ Ver.2.23  A message left for testing was deleted.
+ | |■Condition (Number):   [1] CSelf10[Temp Variable A] ==  0  /  [2] CSelf21[Removed Slot] <  CSelf10[Temp Variable A]  
+ | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] == 0   ] Case↓
  | | |■
- | |-◇Condition:  [2]  [ CSelf21[外した位置] < CSelf10[一時変数A]   ] Case↓
- | | |■Call Event [Name]: ["X┣◆行動内容のセット"] <CommonEv 191>  / 10:主人公はずしたときの補正処理 / -1
- | | |■Call Event [Name]: ["X┃┣◆味方コマンド選択"] <CommonEv 192>  / CSelf21[外した位置] / 1:主人公外したとき補正[対象ｽﾛｯﾄ＝はずした位置]
+ | |-◇Condition:  [2]  [ CSelf21[Removed Slot] < CSelf10[Temp Variable A]   ] Case↓
+ | | |■Call Event [Name]: ["X┣◆Set Action"] <CommonEv 191>  / 10:主人公はずしたときの補正処理 / -1
+ | | |■Call Event [Name]: ["X┃┣◆Select Ally Command"] <CommonEv 192>  / CSelf21[Removed Slot] / 1:主人公外したとき補正[対象ｽﾛｯﾄ＝はずした位置]
  | | |■
  | |◇End◇
- | |▼ Ver2.22　メンバー変更で選択済みのコマンドの使用者がずれてしまうバグ修正
- | |▼ 外した場合行動コマンド処理リストから外す
- | |■Set Variable: CSelf13[一時変数B] = -1 + 0 
- | |■Load DB(Var):  CSelf30[登録コマンド数] = VarDB[ "Base System Variables":"[Battle] Command Input Pos":0 ] (18:73:Number) 
- | |■Repeat Loop [ CSelf30[登録コマンド数] ] Times
- | | |■Set Variable: CSelf13[一時変数B] += 1 + 0 
- | | |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "×┣Cmd Process List":CSelf13[一時変数B]:"User ID" ] (14:-:0) 
- | | |■Condition (Number):   [1] CSelf10[一時変数A] >=  10  /  [2] CSelf10[一時変数A] ==  CSelf21[外した位置]  /  [3] CSelf10[一時変数A] >=  CSelf21[外した位置]  
- | | |-◇Condition:  [1]  [ CSelf10[一時変数A] >= 10   ] Case↓
+ | |▼ Ver.2.22  Bug fixed where changing a member would change the user of a selected command.
+ | |▼ If removed, remove from action command processing list.
+ | |■Set Variable: CSelf13[Temp Variable B] = -1 + 0 
+ | |■Load DB(Var):  CSelf30[Registered Command Count] = VarDB[ "Base System Variables":"[Battle] Command Input Pos":0 ] (18:73:Number) 
+ | |■Repeat Loop [ CSelf30[Registered Command Count] ] Times
+ | | |■Set Variable: CSelf13[Temp Variable B] += 1 + 0 
+ | | |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "×┣Cmd Process List":CSelf13[Temp Variable B]:"User ID" ] (14:-:0) 
+ | | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  10  /  [2] CSelf10[Temp Variable A] ==  CSelf21[Removed Slot]  /  [3] CSelf10[Temp Variable A] >=  CSelf21[Removed Slot]  
+ | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= 10   ] Case↓
  | | | |■
- | | |-◇Condition:  [2]  [ CSelf10[一時変数A] == CSelf21[外した位置]   ] Case↓
- | | | |■Write to DB(Var): VarDB[ "×┣Cmd Process List":CSelf13[一時変数B]:"User ID" ] (14:-:0) =  -1
+ | | |-◇Condition:  [2]  [ CSelf10[Temp Variable A] == CSelf21[Removed Slot]   ] Case↓
+ | | | |■Write to DB(Var): VarDB[ "×┣Cmd Process List":CSelf13[Temp Variable B]:"User ID" ] (14:-:0) =  -1
  | | | |■
- | | |-◇Condition:  [3]  [ CSelf10[一時変数A] >= CSelf21[外した位置]   ] Case↓
- | | | |■Write to DB(Var): VarDB[ "×┣Cmd Process List":CSelf13[一時変数B]:"User ID" ] (14:-:0) -=  1
+ | | |-◇Condition:  [3]  [ CSelf10[Temp Variable A] >= CSelf21[Removed Slot]   ] Case↓
+ | | | |■Write to DB(Var): VarDB[ "×┣Cmd Process List":CSelf13[Temp Variable B]:"User ID" ] (14:-:0) -=  1
  | | | |■
  | | |◇End◇
- | | |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "×┣Cmd Process List":CSelf13[一時変数B]:"Target ID" ] (14:-:2) 
- | | |■Condition (Number):   [1] CSelf10[一時変数A] >=  10  /  [2] CSelf10[一時変数A] ==  CSelf21[外した位置]  /  [3] CSelf10[一時変数A] >=  CSelf21[外した位置]  
- | | |-◇Condition:  [1]  [ CSelf10[一時変数A] >= 10   ] Case↓
+ | | |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "×┣Cmd Process List":CSelf13[Temp Variable B]:"Target ID" ] (14:-:2) 
+ | | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  10  /  [2] CSelf10[Temp Variable A] ==  CSelf21[Removed Slot]  /  [3] CSelf10[Temp Variable A] >=  CSelf21[Removed Slot]  
+ | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= 10   ] Case↓
  | | | |■
- | | |-◇Condition:  [2]  [ CSelf10[一時変数A] == CSelf21[外した位置]   ] Case↓
- | | | |■Write to DB(Var): VarDB[ "×┣Cmd Process List":CSelf13[一時変数B]:"Target ID" ] (14:-:2) =  -11
+ | | |-◇Condition:  [2]  [ CSelf10[Temp Variable A] == CSelf21[Removed Slot]   ] Case↓
+ | | | |■Write to DB(Var): VarDB[ "×┣Cmd Process List":CSelf13[Temp Variable B]:"Target ID" ] (14:-:2) =  -11
  | | | |■
- | | |-◇Condition:  [3]  [ CSelf10[一時変数A] >= CSelf21[外した位置]   ] Case↓
- | | | |■Write to DB(Var): VarDB[ "×┣Cmd Process List":CSelf13[一時変数B]:"Target ID" ] (14:-:2) -=  1
+ | | |-◇Condition:  [3]  [ CSelf10[Temp Variable A] >= CSelf21[Removed Slot]   ] Case↓
+ | | | |■Write to DB(Var): VarDB[ "×┣Cmd Process List":CSelf13[Temp Variable B]:"Target ID" ] (14:-:2) -=  1
  | | | |■
  | | |◇End◇
  | | |■

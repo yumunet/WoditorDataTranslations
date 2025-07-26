@@ -1,16 +1,16 @@
 COMMON_ID=4
-COMMON_NAME=○回復・ダメージ処理
+COMMON_NAME=○ Recover or Damage
 COMMAND_COLOR=0
 TRIGGER=32
 TRIGGER_TARGET=2000000
 TRIGGER_VAL=0
-MEMO=HP・SP・ステータス状態を回復・減少させます。「完全回復」を選ぶと有無を言わさず全快。移動・戦闘時の使用が可能。
+MEMO=Recovers or reduces HP/SP, or clears states. Full Recovery recovers all. Can be used on map or in battle.
 VALINPUT_NUM=3
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=処理内容
-VALINPUT_NAME_1=誰に？
-VALINPUT_NAME_2=何ポイント？
+VALINPUT_NAME_0=Type
+VALINPUT_NAME_1=Who?
+VALINPUT_NAME_2=Amount
 VALINPUT_NAME_3=
 VALINPUT_NAME_4=
 VALINPUT_NAME_5=
@@ -32,15 +32,15 @@ LOADTYPE8=0
 LOADTYPE9=0
 CHOICE_STR_NUM=10
 CHOICE_STR_0_NUM=5
-CHOICE_STR_0_0=HPの回復・減少
-CHOICE_STR_0_1=SPの回復・減少
-CHOICE_STR_0_2=HP・SPの回復・減少
-CHOICE_STR_0_3=ｽﾃｰﾀｽ状態消去
-CHOICE_STR_0_4=完全回復
+CHOICE_STR_0_0=HP
+CHOICE_STR_0_1=SP
+CHOICE_STR_0_2=HP & SP
+CHOICE_STR_0_3=Clear States
+CHOICE_STR_0_4=Full Recovery
 CHOICE_STR_1_NUM=3
-CHOICE_STR_1_0=パーティ全員
-CHOICE_STR_1_1=パーティ全員
-CHOICE_STR_1_2=パーティ全員
+CHOICE_STR_1_0=Whole Party
+CHOICE_STR_1_1=Whole Party
+CHOICE_STR_1_2=Whole Party
 CHOICE_STR_2_NUM=0
 CHOICE_STR_3_NUM=0
 CHOICE_STR_4_NUM=0
@@ -76,9 +76,9 @@ DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
 RETURN_VAL_NAME=
 RETURN_VAL_TARGET=-1
-CSELF_NAME_0=処理内容
-CSELF_NAME_1=誰に？
-CSELF_NAME_2=何ポイント？
+CSELF_NAME_0=Type
+CSELF_NAME_1=Who?
+CSELF_NAME_2=Amount
 CSELF_NAME_3=
 CSELF_NAME_4=
 CSELF_NAME_5=
@@ -86,16 +86,16 @@ CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=
-CSELF_NAME_10=一時変数A
-CSELF_NAME_11=対象キャラID
+CSELF_NAME_10=Temp Variable A
+CSELF_NAME_11=Target Character ID
 CSELF_NAME_12=
 CSELF_NAME_13=
 CSELF_NAME_14=
 CSELF_NAME_15=
 CSELF_NAME_16=
 CSELF_NAME_17=
-CSELF_NAME_18=戦闘中？
-CSELF_NAME_19=現在パーティ数
+CSELF_NAME_18=In Battle?
+CSELF_NAME_19=Party Size
 CSELF_NAME_20=
 CSELF_NAME_21=
 CSELF_NAME_22=
@@ -179,10 +179,10 @@ CSELF_NAME_99=
 COMMAND_NUM=158
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("入力0：モード(1:HP 2:SP 4:ｽﾃ 7:完全)　　入力1：誰に？　入力2：何ﾎﾟｲﾝﾄ？")
+[103][0,1]<0>()("Argument 0: Type (1:HP, 2:SP, 4:State, 7:Full)  Argument 1: Who?  Argument 2: Amount")
 [111][4,0]<0>(1,1600000,7,2)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("完全回復なら回復ポイントを999999にする")
+[103][0,1]<1>()("For full recovery, make recovery amount 999999.")
 [121][4,0]<1>(1600002,999999,0,4)()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
@@ -190,53 +190,53 @@ WoditorEvCOMMAND_START
 [111][7,0]<0>(2,1600018,0,2,1600018,1,2)()
 [401][1,0]<0>(1)()
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<1>()("　　移動中の処理")
+[103][0,1]<1>()("    On-Map Processing")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [111][4,0]<1>(17,1600001,-1,3)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("全員を回復させる場合")
+[103][0,1]<2>()("All members case.")
 [250][5,4]<2>(18,4,0,69632,1600019)("","Base System Variables","","")
 [121][4,0]<2>(1600010,-1,0,0)()
 [179][1,0]<2>(1600019)()
 [121][4,0]<3>(1600010,1,0,256)()
-[103][0,1]<3>()("セルフ11にキャラ番号を入れて下の方の処理に飛ぶ")
-[300][4,1]<3>(0,16777217,1600010,1600011)("X[移]選択位置主人公ID取得")
-[103][0,1]<3>()("一体しか回復させない場合もこのラベルに飛んでくる")
-[212][0,1]<3>()("移動時回復")
+[103][0,1]<3>()("Put Character ID in CSelf11 and jump further down.")
+[300][4,1]<3>(0,16777217,1600010,1600011)("X[Map]Get Ally ID")
+[103][0,1]<3>()("This label is also jumped to when only one ally is processed.")
+[212][0,1]<3>()("On-Map Process")
 [111][4,0]<3>(1,1600011,0,1)()
 [401][1,0]<3>(1)()
 [111][4,0]<4>(1,1600000,4,6)()
 [401][1,0]<4>(1)()
-[103][0,1]<5>()("状態回復")
-[300][5,1]<5>(0,3,1600011,-1,0)("X[移]状態付与/消去")
-[300][3,1]<5>(0,1,1600011)("X[移]一時ｽﾃ計算<初期化>")
-[300][3,1]<5>(0,1,1600011)("X[移]一時ｽﾃ計算<装備補正>")
-[300][3,1]<5>(0,1,1600011)("X[移]一時ｽﾃ計算<状態補正>")
+[103][0,1]<5>()("Clear states.")
+[300][5,1]<5>(0,3,1600011,-1,0)("X[Map]Add/Remove State")
+[300][3,1]<5>(0,1,1600011)("X[Map]CalcTempStats <Initialize>")
+[300][3,1]<5>(0,1,1600011)("X[Map]CalcTempStats <Equipments>")
+[300][3,1]<5>(0,1,1600011)("X[Map]CalcTempStats <StatusEffects>")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
 [111][4,0]<4>(1,1600000,1,6)()
 [401][1,0]<4>(1)()
-[103][0,1]<5>()("HP回復")
-[300][6,1]<5>(0,4,1600011,22,1600002,0)("X[移]パラメータ増減")
+[103][0,1]<5>()("HP recovery/damage.")
+[300][6,1]<5>(0,4,1600011,22,1600002,0)("X[Map]Change Parameter")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
 [111][4,0]<4>(1,1600000,2,6)()
 [401][1,0]<4>(1)()
-[103][0,1]<5>()("SP回復")
-[300][6,1]<5>(0,4,1600011,23,1600002,0)("X[移]パラメータ増減")
+[103][0,1]<5>()("SP recovery/reduction.")
+[300][6,1]<5>(0,4,1600011,23,1600002,0)("X[Map]Change Parameter")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
-[103][0,1]<4>()("パラメータ再計算")
-[300][3,1]<4>(0,1,1600011)("X[移]一時ｽﾃ計算<初期化>")
-[300][3,1]<4>(0,1,1600011)("X[移]一時ｽﾃ計算<装備補正>")
-[300][3,1]<4>(0,1,1600011)("X[移]一時ｽﾃ計算<状態補正>")
-[300][5,1]<4>(0,3,1600011,-1,2)("X[移]状態付与/消去")
+[103][0,1]<4>()("Recalculate stats.")
+[300][3,1]<4>(0,1,1600011)("X[Map]CalcTempStats <Initialize>")
+[300][3,1]<4>(0,1,1600011)("X[Map]CalcTempStats <Equipments>")
+[300][3,1]<4>(0,1,1600011)("X[Map]CalcTempStats <StatusEffects>")
+[300][5,1]<4>(0,3,1600011,-1,2)("X[Map]Add/Remove State")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [103][0,1]<3>()(" ")
 [111][4,0]<3>(1,1600001,0,1)()
 [401][1,0]<3>(1)()
-[103][0,1]<4>()("「全員」でなければ、一人処理した時点で終了")
+[103][0,1]<4>()("If not <dqrt>all,<dqrt> end after one ally is processed.")
 [172][0,0]<4>()()
 [0][0,0]<4>()()
 [499][0,0]<3>()()
@@ -244,72 +244,72 @@ WoditorEvCOMMAND_START
 [498][0,0]<2>()()
 [0][0,0]<2>()()
 [420][1,0]<1>(0)()
-[103][0,1]<2>()("単体を回復させる場合")
+[103][0,1]<2>()("One ally case.")
 [121][4,0]<2>(1600011,1600001,0,0)()
-[213][0,1]<2>()("移動時回復")
+[213][0,1]<2>()("On-Map Process")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [0][0,0]<1>()()
 [401][1,0]<0>(2)()
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<1>()("　　戦闘中の処理")
+[103][0,1]<1>()("    In-Battle Processing")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [111][4,0]<1>(17,1600001,-1,3)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("全員を回復させる場合")
+[103][0,1]<2>()("All members case.")
 [250][5,4]<2>(18,4,0,69632,1600019)("","Base System Variables","","")
 [121][4,0]<2>(1600010,-1,0,0)()
 [179][1,0]<2>(1600019)()
 [121][4,0]<3>(1600010,1,0,256)()
-[103][0,1]<3>()("セルフ11にキャラ番号を入れて下の方の処理に飛ぶ")
-[300][4,1]<3>(0,16777217,1600010,1600011)("X[戦]ｽﾛｯﾄから主人公ID取得")
-[103][0,1]<3>()("一体しか回復させない場合もこのラベルに飛んでくる")
-[212][0,1]<3>()("戦闘時回復")
-[103][0,1]<3>()("キャラがいれば回復")
+[103][0,1]<3>()("Put Character ID in CSelf11 and jump further down.")
+[300][4,1]<3>(0,16777217,1600010,1600011)("X[Bat]Get Ally ID From Slot")
+[103][0,1]<3>()("This label is also jumped to when only one ally is processed.")
+[212][0,1]<3>()("In-Battle Process")
+[103][0,1]<3>()("Process the character, if present.")
 [111][4,0]<3>(1,1600011,0,1)()
 [401][1,0]<3>(1)()
 [111][4,0]<4>(1,1600000,4,6)()
 [401][1,0]<4>(1)()
-[103][0,1]<5>()("状態回復")
-[300][6,1]<5>(0,4,1600010,-1,0,1)("X[戦]状態付与/消去")
-[300][3,1]<5>(0,1,1600010)("X[戦]一時ｽﾃ計算<初期化>")
-[300][4,1]<5>(0,2,1600010,-1)("X[戦]一時ｽﾃ計算<装備補正>")
-[300][4,1]<5>(0,2,1600010,0)("X[戦]一時ｽﾃ計算<状態補正>")
+[103][0,1]<5>()("Clear states.")
+[300][6,1]<5>(0,4,1600010,-1,0,1)("X[Bat]Add/Remove State")
+[300][3,1]<5>(0,1,1600010)("X[Bat]CalcTempStats <Initialize>")
+[300][4,1]<5>(0,2,1600010,-1)("X[Bat]CalcTempStats <Equipments>")
+[300][4,1]<5>(0,2,1600010,0)("X[Bat]CalcTempStats <StatusEffects>")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
 [111][4,0]<4>(1,1600000,1,6)()
 [401][1,0]<4>(1)()
-[103][0,1]<5>()("HP回復")
-[300][5,1]<5>(0,3,1600010,22,1600002)("X[戦]パラメータ増減")
+[103][0,1]<5>()("HP recovery/damage.")
+[300][5,1]<5>(0,3,1600010,22,1600002)("X[Bat]Change Parameter")
 [111][7,0]<5>(2,1600002,1,1,1600002,-1,3)()
 [401][1,0]<5>(1)()
-[300][5,1]<6>(0,3,30,1600010,1600010)("X[戦]味方欄_単体描画")
+[300][5,1]<6>(0,3,30,1600010,1600010)("X[Bat]Ally Box: Draw One")
 [0][0,0]<6>()()
 [401][1,0]<5>(2)()
-[300][5,1]<6>(0,3,21,1600010,1600010)("X[戦]味方欄_単体描画")
+[300][5,1]<6>(0,3,21,1600010,1600010)("X[Bat]Ally Box: Draw One")
 [0][0,0]<6>()()
 [499][0,0]<5>()()
-[300][6,1]<5>(0,4,1600010,-1,2,0)("X[戦]状態付与/消去")
+[300][6,1]<5>(0,4,1600010,-1,2,0)("X[Bat]Add/Remove State")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
 [111][4,0]<4>(1,1600000,2,6)()
 [401][1,0]<4>(1)()
-[103][0,1]<5>()("SP回復")
-[300][5,1]<5>(0,3,1600010,23,1600002)("X[戦]パラメータ増減")
+[103][0,1]<5>()("SP recovery/reduction.")
+[300][5,1]<5>(0,3,1600010,23,1600002)("X[Bat]Change Parameter")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
-[103][0,1]<4>()("パラメータ再計算")
-[300][3,1]<4>(0,1,1600010)("X[戦]一時ｽﾃ計算<初期化>")
-[300][4,1]<4>(0,2,1600010,-1)("X[戦]一時ｽﾃ計算<装備補正>")
-[300][4,1]<4>(0,2,1600010,0)("X[戦]一時ｽﾃ計算<状態補正>")
-[300][3,1]<4>(0,1,1600010)("X[戦]味方欄_座標算出")
-[300][5,1]<4>(0,3,5,1600010,1600010)("X[戦]味方欄_単体描画")
+[103][0,1]<4>()("Recalculate stats.")
+[300][3,1]<4>(0,1,1600010)("X[Bat]CalcTempStats <Initialize>")
+[300][4,1]<4>(0,2,1600010,-1)("X[Bat]CalcTempStats <Equipments>")
+[300][4,1]<4>(0,2,1600010,0)("X[Bat]CalcTempStats <StatusEffects>")
+[300][3,1]<4>(0,1,1600010)("X[Bat]Ally Box: Calc Position")
+[300][5,1]<4>(0,3,5,1600010,1600010)("X[Bat]Ally Box: Draw One")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [103][0,1]<3>()(" ")
 [111][4,0]<3>(1,1600001,0,1)()
 [401][1,0]<3>(1)()
-[103][0,1]<4>()("「全員」でなければ、一人処理した時点で終了")
+[103][0,1]<4>()("If not <dqrt>all,<dqrt> end after one ally is processed.")
 [172][0,0]<4>()()
 [0][0,0]<4>()()
 [499][0,0]<3>()()
@@ -317,17 +317,17 @@ WoditorEvCOMMAND_START
 [498][0,0]<2>()()
 [0][0,0]<2>()()
 [420][1,0]<1>(0)()
-[103][0,1]<2>()("単体を回復させる場合")
+[103][0,1]<2>()("One ally case.")
 [250][5,4]<2>(18,4,0,69632,1600019)("","Base System Variables","","")
 [121][4,0]<2>(1600010,-1,0,0)()
 [179][1,0]<2>(1600019)()
 [121][4,0]<3>(1600010,1,0,256)()
-[103][0,1]<3>()("セルフ11にキャラ番号を入れて下の方の処理に飛ぶ")
-[300][4,1]<3>(0,16777217,1600010,1600011)("X[戦]ｽﾛｯﾄから主人公ID取得")
+[103][0,1]<3>()("Put Character ID in CSelf11.")
+[300][4,1]<3>(0,16777217,1600010,1600011)("X[Bat]Get Ally ID From Slot")
 [111][4,0]<3>(1,1600001,1600011,2)()
 [401][1,0]<3>(1)()
-[103][0,1]<4>()("該当するキャラが戦闘パーティ内にいれば回復")
-[213][0,1]<4>()("戦闘時回復")
+[103][0,1]<4>()("If the corresponding character is in the battle party, process it.")
+[213][0,1]<4>()("In-Battle Process")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [0][0,0]<3>()()
@@ -340,64 +340,64 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ 入力0：モード(1:HP 2:SP 4:ｽﾃ 7:完全)　　入力1：誰に？　入力2：何ﾎﾟｲﾝﾄ？
-■Condition (Number):   [1] CSelf0[処理内容] ==  7  
--◇Condition:  [1]  [ CSelf0[処理内容] == 7   ] Case↓
- |▼ 完全回復なら回復ポイントを999999にする
- |■Set Variable: CSelf2[何ポイント？] = 999999 + 0 
+▼ Argument 0: Type (1:HP, 2:SP, 4:State, 7:Full)  Argument 1: Who?  Argument 2: Amount
+■Condition (Number):   [1] CSelf0[Type] ==  7  
+-◇Condition:  [1]  [ CSelf0[Type] == 7   ] Case↓
+ |▼ For full recovery, make recovery amount 999999.
+ |■Set Variable: CSelf2[Amount] = 999999 + 0 
  |■
 ◇End◇
-■Load DB(Var):  CSelf18[戦闘中？] = VarDB[ "Base System Variables":"[Battle] In Battle?":0 ] (18:68:Number) 
-■Condition (Number):   [1] CSelf18[戦闘中？] ==  0  /  [2] CSelf18[戦闘中？] ==  1  
--◇Condition:  [1]  [ CSelf18[戦闘中？] == 0   ] Case↓
+■Load DB(Var):  CSelf18[In Battle?] = VarDB[ "Base System Variables":"[Battle] In Battle?":0 ] (18:68:Number) 
+■Condition (Number):   [1] CSelf18[In Battle?] ==  0  /  [2] CSelf18[In Battle?] ==  1  
+-◇Condition:  [1]  [ CSelf18[In Battle?] == 0   ] Case↓
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |▼ 　　移動中の処理
+ |▼     On-Map Processing
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |■Condition (Number):   [1] CSelf1[誰に？] <=  -1  
- |-◇Condition:  [1]  [ CSelf1[誰に？] <= -1   ] Case↓
- | |▼ 全員を回復させる場合
- | |■Load DB(Var):  CSelf19[現在パーティ数] = VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) 
- | |■Set Variable: CSelf10[一時変数A] = -1 + 0 
- | |■Repeat Loop [ CSelf19[現在パーティ数] ] Times
- | | |■Set Variable: CSelf10[一時変数A] += 1 + 0 
- | | |▼ セルフ11にキャラ番号を入れて下の方の処理に飛ぶ
- | | |■Call Event [Name]: CSelf11[対象キャラID] = ["X[移]選択位置主人公ID取得"] <CommonEv 105>  / CSelf10[一時変数A]
- | | |▼ 一体しか回復させない場合もこのラベルに飛んでくる
- | | |●Label Point [移動時回復] <<<<<<<<<<<<<<<<<<<<<<<<★
- | | |■Condition (Number):   [1] CSelf11[対象キャラID] >=  0  
- | | |-◇Condition:  [1]  [ CSelf11[対象キャラID] >= 0   ] Case↓
- | | | |■Condition (Number):   [1] CSelf0[処理内容] &  4  
- | | | |-◇Condition:  [1]  [ CSelf0[処理内容] & 4   ] Case↓
- | | | | |▼ 状態回復
- | | | | |■Call Event [Name]: ["X[移]状態付与/消去"] <CommonEv 75>  / CSelf11[対象キャラID] / -1:全て消去（強制） / 0:消去
- | | | | |■Call Event [Name]: ["X[移]一時ｽﾃ計算<初期化>"] <CommonEv 122>  / CSelf11[対象キャラID]
- | | | | |■Call Event [Name]: ["X[移]一時ｽﾃ計算<装備補正>"] <CommonEv 123>  / CSelf11[対象キャラID]
- | | | | |■Call Event [Name]: ["X[移]一時ｽﾃ計算<状態補正>"] <CommonEv 124>  / CSelf11[対象キャラID]
+ |■Condition (Number):   [1] CSelf1[Who?] <=  -1  
+ |-◇Condition:  [1]  [ CSelf1[Who?] <= -1   ] Case↓
+ | |▼ All members case.
+ | |■Load DB(Var):  CSelf19[Party Size] = VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) 
+ | |■Set Variable: CSelf10[Temp Variable A] = -1 + 0 
+ | |■Repeat Loop [ CSelf19[Party Size] ] Times
+ | | |■Set Variable: CSelf10[Temp Variable A] += 1 + 0 
+ | | |▼ Put Character ID in CSelf11 and jump further down.
+ | | |■Call Event [Name]: CSelf11[Target Character ID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf10[Temp Variable A]
+ | | |▼ This label is also jumped to when only one ally is processed.
+ | | |●Label Point [On-Map Process] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | | |■Condition (Number):   [1] CSelf11[Target Character ID] >=  0  
+ | | |-◇Condition:  [1]  [ CSelf11[Target Character ID] >= 0   ] Case↓
+ | | | |■Condition (Number):   [1] CSelf0[Type] &  4  
+ | | | |-◇Condition:  [1]  [ CSelf0[Type] & 4   ] Case↓
+ | | | | |▼ Clear states.
+ | | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf11[Target Character ID] / -1:全て消去（強制） / 0:消去
+ | | | | |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf11[Target Character ID]
+ | | | | |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf11[Target Character ID]
+ | | | | |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf11[Target Character ID]
  | | | | |■
  | | | |◇End◇
- | | | |■Condition (Number):   [1] CSelf0[処理内容] &  1  
- | | | |-◇Condition:  [1]  [ CSelf0[処理内容] & 1   ] Case↓
- | | | | |▼ HP回復
- | | | | |■Call Event [Name]: ["X[移]パラメータ増減"] <CommonEv 70>  / CSelf11[対象キャラID] / 22:HP / CSelf2[何ポイント？] / 0:なし
+ | | | |■Condition (Number):   [1] CSelf0[Type] &  1  
+ | | | |-◇Condition:  [1]  [ CSelf0[Type] & 1   ] Case↓
+ | | | | |▼ HP recovery/damage.
+ | | | | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf11[Target Character ID] / 22:HP / CSelf2[Amount] / 0:なし
  | | | | |■
  | | | |◇End◇
- | | | |■Condition (Number):   [1] CSelf0[処理内容] &  2  
- | | | |-◇Condition:  [1]  [ CSelf0[処理内容] & 2   ] Case↓
- | | | | |▼ SP回復
- | | | | |■Call Event [Name]: ["X[移]パラメータ増減"] <CommonEv 70>  / CSelf11[対象キャラID] / 23:SP / CSelf2[何ポイント？] / 0:なし
+ | | | |■Condition (Number):   [1] CSelf0[Type] &  2  
+ | | | |-◇Condition:  [1]  [ CSelf0[Type] & 2   ] Case↓
+ | | | | |▼ SP recovery/reduction.
+ | | | | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf11[Target Character ID] / 23:SP / CSelf2[Amount] / 0:なし
  | | | | |■
  | | | |◇End◇
- | | | |▼ パラメータ再計算
- | | | |■Call Event [Name]: ["X[移]一時ｽﾃ計算<初期化>"] <CommonEv 122>  / CSelf11[対象キャラID]
- | | | |■Call Event [Name]: ["X[移]一時ｽﾃ計算<装備補正>"] <CommonEv 123>  / CSelf11[対象キャラID]
- | | | |■Call Event [Name]: ["X[移]一時ｽﾃ計算<状態補正>"] <CommonEv 124>  / CSelf11[対象キャラID]
- | | | |■Call Event [Name]: ["X[移]状態付与/消去"] <CommonEv 75>  / CSelf11[対象キャラID] / -1:全て消去（強制） / 2:更新
+ | | | |▼ Recalculate stats.
+ | | | |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf11[Target Character ID]
+ | | | |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf11[Target Character ID]
+ | | | |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf11[Target Character ID]
+ | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf11[Target Character ID] / -1:全て消去（強制） / 2:更新
  | | | |■
  | | |◇End◇
  | | |▼  
- | | |■Condition (Number):   [1] CSelf1[誰に？] >=  0  
- | | |-◇Condition:  [1]  [ CSelf1[誰に？] >= 0   ] Case↓
- | | | |▼ 「全員」でなければ、一人処理した時点で終了
+ | | |■Condition (Number):   [1] CSelf1[Who?] >=  0  
+ | | |-◇Condition:  [1]  [ CSelf1[Who?] >= 0   ] Case↓
+ | | | |▼ If not "all," end after one ally is processed.
  | | | |■Exit Event
  | | | |■
  | | |◇End◇
@@ -405,72 +405,72 @@ WoditorEvCOMMAND_END
  | |◇Loop End Point◇◇
  | |■
  |-◇Else
- | |▼ 単体を回復させる場合
- | |■Set Variable: CSelf11[対象キャラID] = CSelf1[誰に？] + 0 
- | |●Label Jump [移動時回復] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | |▼ One ally case.
+ | |■Set Variable: CSelf11[Target Character ID] = CSelf1[Who?] + 0 
+ | |●Label Jump [On-Map Process] >>>>>>>>>>>>>>>>>>>>>>>>>
  | |■
  |◇End◇
  |■
--◇Condition:  [2]  [ CSelf18[戦闘中？] == 1   ] Case↓
+-◇Condition:  [2]  [ CSelf18[In Battle?] == 1   ] Case↓
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |▼ 　　戦闘中の処理
+ |▼     In-Battle Processing
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |■Condition (Number):   [1] CSelf1[誰に？] <=  -1  
- |-◇Condition:  [1]  [ CSelf1[誰に？] <= -1   ] Case↓
- | |▼ 全員を回復させる場合
- | |■Load DB(Var):  CSelf19[現在パーティ数] = VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) 
- | |■Set Variable: CSelf10[一時変数A] = -1 + 0 
- | |■Repeat Loop [ CSelf19[現在パーティ数] ] Times
- | | |■Set Variable: CSelf10[一時変数A] += 1 + 0 
- | | |▼ セルフ11にキャラ番号を入れて下の方の処理に飛ぶ
- | | |■Call Event [Name]: CSelf11[対象キャラID] = ["X[戦]ｽﾛｯﾄから主人公ID取得"] <CommonEv 141>  / CSelf10[一時変数A]
- | | |▼ 一体しか回復させない場合もこのラベルに飛んでくる
- | | |●Label Point [戦闘時回復] <<<<<<<<<<<<<<<<<<<<<<<<★
- | | |▼ キャラがいれば回復
- | | |■Condition (Number):   [1] CSelf11[対象キャラID] >=  0  
- | | |-◇Condition:  [1]  [ CSelf11[対象キャラID] >= 0   ] Case↓
- | | | |■Condition (Number):   [1] CSelf0[処理内容] &  4  
- | | | |-◇Condition:  [1]  [ CSelf0[処理内容] & 4   ] Case↓
- | | | | |▼ 状態回復
- | | | | |■Call Event [Name]: ["X[戦]状態付与/消去"] <CommonEv 137>  / CSelf10[一時変数A] / -1:全て消去（強制） / 0:消去 / 1:メッセージ有り
- | | | | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<初期化>"] <CommonEv 146>  / CSelf10[一時変数A]
- | | | | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<装備補正>"] <CommonEv 147>  / CSelf10[一時変数A] / -1:全武器を総計
- | | | | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<状態補正>"] <CommonEv 148>  / CSelf10[一時変数A] / 0:パラメータ補正＋状態名計算
+ |■Condition (Number):   [1] CSelf1[Who?] <=  -1  
+ |-◇Condition:  [1]  [ CSelf1[Who?] <= -1   ] Case↓
+ | |▼ All members case.
+ | |■Load DB(Var):  CSelf19[Party Size] = VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) 
+ | |■Set Variable: CSelf10[Temp Variable A] = -1 + 0 
+ | |■Repeat Loop [ CSelf19[Party Size] ] Times
+ | | |■Set Variable: CSelf10[Temp Variable A] += 1 + 0 
+ | | |▼ Put Character ID in CSelf11 and jump further down.
+ | | |■Call Event [Name]: CSelf11[Target Character ID] = ["X[Bat]Get Ally ID From Slot"] <CommonEv 141>  / CSelf10[Temp Variable A]
+ | | |▼ This label is also jumped to when only one ally is processed.
+ | | |●Label Point [In-Battle Process] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | | |▼ Process the character, if present.
+ | | |■Condition (Number):   [1] CSelf11[Target Character ID] >=  0  
+ | | |-◇Condition:  [1]  [ CSelf11[Target Character ID] >= 0   ] Case↓
+ | | | |■Condition (Number):   [1] CSelf0[Type] &  4  
+ | | | |-◇Condition:  [1]  [ CSelf0[Type] & 4   ] Case↓
+ | | | | |▼ Clear states.
+ | | | | |■Call Event [Name]: ["X[Bat]Add/Remove State"] <CommonEv 137>  / CSelf10[Temp Variable A] / -1:全て消去（強制） / 0:消去 / 1:メッセージ有り
+ | | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf10[Temp Variable A]
+ | | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf10[Temp Variable A] / -1:全武器を総計
+ | | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf10[Temp Variable A] / 0:パラメータ補正＋状態名計算
  | | | | |■
  | | | |◇End◇
- | | | |■Condition (Number):   [1] CSelf0[処理内容] &  1  
- | | | |-◇Condition:  [1]  [ CSelf0[処理内容] & 1   ] Case↓
- | | | | |▼ HP回復
- | | | | |■Call Event [Name]: ["X[戦]パラメータ増減"] <CommonEv 135>  / CSelf10[一時変数A] / 22:HP / CSelf2[何ポイント？]
- | | | | |■Condition (Number):   [1] CSelf2[何ポイント？] >=  1  /  [2] CSelf2[何ポイント？] <=  -1  
- | | | | |-◇Condition:  [1]  [ CSelf2[何ポイント？] >= 1   ] Case↓
- | | | | | |■Call Event [Name]: ["X[戦]味方欄_単体描画"] <CommonEv 178>  / 30:回復エフェクト / CSelf10[一時変数A] / CSelf10[一時変数A]
+ | | | |■Condition (Number):   [1] CSelf0[Type] &  1  
+ | | | |-◇Condition:  [1]  [ CSelf0[Type] & 1   ] Case↓
+ | | | | |▼ HP recovery/damage.
+ | | | | |■Call Event [Name]: ["X[Bat]Change Parameter"] <CommonEv 135>  / CSelf10[Temp Variable A] / 22:HP / CSelf2[Amount]
+ | | | | |■Condition (Number):   [1] CSelf2[Amount] >=  1  /  [2] CSelf2[Amount] <=  -1  
+ | | | | |-◇Condition:  [1]  [ CSelf2[Amount] >= 1   ] Case↓
+ | | | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 30:回復エフェクト / CSelf10[Temp Variable A] / CSelf10[Temp Variable A]
  | | | | | |■
- | | | | |-◇Condition:  [2]  [ CSelf2[何ポイント？] <= -1   ] Case↓
- | | | | | |■Call Event [Name]: ["X[戦]味方欄_単体描画"] <CommonEv 178>  / 21:ダメージエフェクトLv1 / CSelf10[一時変数A] / CSelf10[一時変数A]
+ | | | | |-◇Condition:  [2]  [ CSelf2[Amount] <= -1   ] Case↓
+ | | | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 21:ダメージエフェクトLv1 / CSelf10[Temp Variable A] / CSelf10[Temp Variable A]
  | | | | | |■
  | | | | |◇End◇
- | | | | |■Call Event [Name]: ["X[戦]状態付与/消去"] <CommonEv 137>  / CSelf10[一時変数A] / -1:全て消去（強制） / 2:更新 / 0:メッセージなし
+ | | | | |■Call Event [Name]: ["X[Bat]Add/Remove State"] <CommonEv 137>  / CSelf10[Temp Variable A] / -1:全て消去（強制） / 2:更新 / 0:メッセージなし
  | | | | |■
  | | | |◇End◇
- | | | |■Condition (Number):   [1] CSelf0[処理内容] &  2  
- | | | |-◇Condition:  [1]  [ CSelf0[処理内容] & 2   ] Case↓
- | | | | |▼ SP回復
- | | | | |■Call Event [Name]: ["X[戦]パラメータ増減"] <CommonEv 135>  / CSelf10[一時変数A] / 23:SP / CSelf2[何ポイント？]
+ | | | |■Condition (Number):   [1] CSelf0[Type] &  2  
+ | | | |-◇Condition:  [1]  [ CSelf0[Type] & 2   ] Case↓
+ | | | | |▼ SP recovery/reduction.
+ | | | | |■Call Event [Name]: ["X[Bat]Change Parameter"] <CommonEv 135>  / CSelf10[Temp Variable A] / 23:SP / CSelf2[Amount]
  | | | | |■
  | | | |◇End◇
- | | | |▼ パラメータ再計算
- | | | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<初期化>"] <CommonEv 146>  / CSelf10[一時変数A]
- | | | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<装備補正>"] <CommonEv 147>  / CSelf10[一時変数A] / -1:全武器を総計
- | | | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<状態補正>"] <CommonEv 148>  / CSelf10[一時変数A] / 0:パラメータ補正＋状態名計算
- | | | |■Call Event [Name]: ["X[戦]味方欄_座標算出"] <CommonEv 174>  / CSelf10[一時変数A]
- | | | |■Call Event [Name]: ["X[戦]味方欄_単体描画"] <CommonEv 178>  / 5:表示[更新＋ゲージアニメ] / CSelf10[一時変数A] / CSelf10[一時変数A]
+ | | | |▼ Recalculate stats.
+ | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf10[Temp Variable A]
+ | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf10[Temp Variable A] / -1:全武器を総計
+ | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf10[Temp Variable A] / 0:パラメータ補正＋状態名計算
+ | | | |■Call Event [Name]: ["X[Bat]Ally Box: Calc Position"] <CommonEv 174>  / CSelf10[Temp Variable A]
+ | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 5:表示[更新＋ゲージアニメ] / CSelf10[Temp Variable A] / CSelf10[Temp Variable A]
  | | | |■
  | | |◇End◇
  | | |▼  
- | | |■Condition (Number):   [1] CSelf1[誰に？] >=  0  
- | | |-◇Condition:  [1]  [ CSelf1[誰に？] >= 0   ] Case↓
- | | | |▼ 「全員」でなければ、一人処理した時点で終了
+ | | |■Condition (Number):   [1] CSelf1[Who?] >=  0  
+ | | |-◇Condition:  [1]  [ CSelf1[Who?] >= 0   ] Case↓
+ | | | |▼ If not "all," end after one ally is processed.
  | | | |■Exit Event
  | | | |■
  | | |◇End◇
@@ -478,17 +478,17 @@ WoditorEvCOMMAND_END
  | |◇Loop End Point◇◇
  | |■
  |-◇Else
- | |▼ 単体を回復させる場合
- | |■Load DB(Var):  CSelf19[現在パーティ数] = VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) 
- | |■Set Variable: CSelf10[一時変数A] = -1 + 0 
- | |■Repeat Loop [ CSelf19[現在パーティ数] ] Times
- | | |■Set Variable: CSelf10[一時変数A] += 1 + 0 
- | | |▼ セルフ11にキャラ番号を入れて下の方の処理に飛ぶ
- | | |■Call Event [Name]: CSelf11[対象キャラID] = ["X[戦]ｽﾛｯﾄから主人公ID取得"] <CommonEv 141>  / CSelf10[一時変数A]
- | | |■Condition (Number):   [1] CSelf1[誰に？] ==  CSelf11[対象キャラID]  
- | | |-◇Condition:  [1]  [ CSelf1[誰に？] == CSelf11[対象キャラID]   ] Case↓
- | | | |▼ 該当するキャラが戦闘パーティ内にいれば回復
- | | | |●Label Jump [戦闘時回復] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | |▼ One ally case.
+ | |■Load DB(Var):  CSelf19[Party Size] = VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) 
+ | |■Set Variable: CSelf10[Temp Variable A] = -1 + 0 
+ | |■Repeat Loop [ CSelf19[Party Size] ] Times
+ | | |■Set Variable: CSelf10[Temp Variable A] += 1 + 0 
+ | | |▼ Put Character ID in CSelf11.
+ | | |■Call Event [Name]: CSelf11[Target Character ID] = ["X[Bat]Get Ally ID From Slot"] <CommonEv 141>  / CSelf10[Temp Variable A]
+ | | |■Condition (Number):   [1] CSelf1[Who?] ==  CSelf11[Target Character ID]  
+ | | |-◇Condition:  [1]  [ CSelf1[Who?] == CSelf11[Target Character ID]   ] Case↓
+ | | | |▼ If the corresponding character is in the battle party, process it.
+ | | | |●Label Jump [In-Battle Process] >>>>>>>>>>>>>>>>>>>>>>>>>
  | | | |■
  | | |◇End◇
  | | |■

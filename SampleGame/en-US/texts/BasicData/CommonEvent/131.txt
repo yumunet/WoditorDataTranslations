@@ -1,5 +1,5 @@
 COMMON_ID=131
-COMMON_NAME=X┣[移]セーブ欄実行
+COMMON_NAME=X┣[Map]Execute Save Menu
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -172,14 +172,14 @@ COMMAND_NUM=212
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　セーブ（ロード）欄を開いてから終了するまでの処理を実行します。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("選択可能最大数にはセーブの1ページ表示分を入力")
 [250][5,4]<0>(18,53,0,69632,1600026)("","Base System Variables","","")
@@ -206,9 +206,9 @@ WoditorEvCOMMAND_START
 [111][4,0]<2>(1,1600004,1,1)()
 [401][1,0]<2>(1)()
 [121][4,0]<3>(1600000,1,0,0)()
-[300][4,2]<3>(0,4113,0,0)("X[移]メニュー時文章表示","ロード画面を開きます（Ctrlキー + セーブ画面）")
+[300][4,2]<3>(0,4113,0,0)("X[Map]Display Menu Message","ロード画面を開きます（Ctrlキー + セーブ画面）")
 [180][1,0]<3>(20)()
-[300][4,2]<3>(0,4113,-1,1600009)("X[移]メニュー時文章表示","")
+[300][4,2]<3>(0,4113,-1,1600009)("X[Map]Display Menu Message","")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [0][0,0]<2>()()
@@ -219,16 +219,16 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600099,-1,0,0)()
 [111][7,0]<0>(2,1600000,0,2,1600000,1,2)()
 [401][1,0]<0>(1)()
-[300][5,1]<1>(0,3,0,1600010,1600011)("X[移]セーブ・ロード画面描画")
+[300][5,1]<1>(0,3,0,1600010,1600011)("X[Map]Draw Save/Load Screen")
 [0][0,0]<1>()()
 [401][1,0]<0>(2)()
-[300][5,1]<1>(0,3,1,1600010,1600011)("X[移]セーブ・ロード画面描画")
+[300][5,1]<1>(0,3,1,1600010,1600011)("X[Map]Draw Save/Load Screen")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [180][1,0]<0>(9)()
 [170][0,0]<0>()()
 [180][1,0]<1>(1)()
-[300][5,1]<1>(0,3,3,1600010,1600011)("X[移]セーブ・ロード画面描画")
+[300][5,1]<1>(0,3,3,1600010,1600011)("X[Map]Draw Save/Load Screen")
 [123][2,0]<1>(1600020,177)()
 [111][10,0]<1>(19,1600020,10,2,1600020,11,2,1600020,2,2)()
 [401][1,0]<1>(1)()
@@ -238,10 +238,10 @@ WoditorEvCOMMAND_START
 [121][4,0]<2>(1600012,1,0,256)()
 [111][7,0]<2>(2,1600000,0,2,1600000,1,2)()
 [401][1,0]<2>(1)()
-[300][5,1]<3>(0,3,-1,1600010,1600011)("X[移]セーブ・ロード画面描画")
-[300][4,1]<3>(0,2,-1,0)("X[移]メニュー描画")
-[300][3,1]<3>(0,1,-1)("X[移]キャラ欄_全員描画")
-[300][3,1]<3>(0,1,8)("X[共]システムSE再生")
+[300][5,1]<3>(0,3,-1,1600010,1600011)("X[Map]Draw Save/Load Screen")
+[300][4,1]<3>(0,2,-1,0)("X[Map]Draw Menu")
+[300][3,1]<3>(0,1,-1)("X[Map]Character Box: Draw All")
+[300][3,1]<3>(0,1,8)("X[Com]Play System Sound")
 [180][1,0]<3>(16)()
 [122][2,1]<3>(1600005,0)("Save/System.sav")
 [222][4,0]<3>(1600012,1600005,2000000,0)()
@@ -265,17 +265,17 @@ WoditorEvCOMMAND_START
 [498][0,0]<3>()()
 [111][4,0]<3>(1,1600001,0,2)()
 [401][1,0]<3>(1)()
-[300][4,1]<4>(0,2,0,0)("X[移]メニュー描画")
-[300][3,1]<4>(0,1,0)("X[移]キャラ欄_全員描画")
+[300][4,1]<4>(0,2,0,0)("X[Map]Draw Menu")
+[300][3,1]<4>(0,1,0)("X[Map]Character Box: Draw All")
 [250][5,4]<4>(18,54,0,69632,1600013)("","Base System Variables","","")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
-[300][5,1]<3>(0,3,0,1600010,1600011)("X[移]セーブ・ロード画面描画")
+[300][5,1]<3>(0,3,0,1600010,1600011)("X[Map]Draw Save/Load Screen")
 [180][1,0]<3>(9)()
 [111][4,0]<3>(1,1600001,0,2)()
 [401][1,0]<3>(1)()
-[300][4,1]<4>(0,2,1,1600013)("X[移]メニュー描画")
-[300][4,1]<4>(0,2,1,-2)("X[移]メニュー描画")
+[300][4,1]<4>(0,2,1,1600013)("X[Map]Draw Menu")
+[300][4,1]<4>(0,2,1,-2)("X[Map]Draw Menu")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [0][0,0]<3>()()
@@ -299,16 +299,16 @@ WoditorEvCOMMAND_START
 [111][7,0]<3>(2,1600013,0,2,1600013,1,1)()
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("なければブザー")
-[300][3,1]<4>(0,1,2)("X[共]システムSE再生")
+[300][3,1]<4>(0,1,2)("X[Com]Play System Sound")
 [180][1,0]<4>(7)()
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
 [103][0,1]<4>()("セーブデータが存在しているときだけ処理")
-[300][5,1]<4>(0,3,-1,1600010,1600011)("X[移]セーブ・ロード画面描画")
-[300][4,1]<4>(0,2,-1,0)("X[移]メニュー描画")
-[300][3,1]<4>(0,1,-1)("X[移]キャラ欄_全員描画")
-[300][3,1]<4>(0,1,9)("X[共]システムSE再生")
-[300][4,1]<4>(0,2,1,9)("X[共]全体エフェクト実行")
+[300][5,1]<4>(0,3,-1,1600010,1600011)("X[Map]Draw Save/Load Screen")
+[300][4,1]<4>(0,2,-1,0)("X[Map]Draw Menu")
+[300][3,1]<4>(0,1,-1)("X[Map]Character Box: Draw All")
+[300][3,1]<4>(0,1,9)("X[Com]Play System Sound")
+[300][4,1]<4>(0,2,1,9)("X[Com]Execute Full Effect")
 [180][1,0]<4>(9)()
 [179][1,0]<4>(1)()
 [103][0,1]<5>()("起動時の読み込みセーブ番号をシステムデータに記憶させる（文字列のファイル名で保存すると読み込みセーブ番号が0になるため）")
@@ -318,8 +318,8 @@ WoditorEvCOMMAND_START
 [498][0,0]<4>()()
 [103][0,1]<4>()("文字列ファイル名でロード")
 [220][2,0]<4>(1,1600005)()
-[300][4,1]<4>(0,2,0,9)("X[共]全体エフェクト実行")
-[300][5,1]<4>(0,3,1,1600010,1600011)("X[移]セーブ・ロード画面描画")
+[300][4,1]<4>(0,2,0,9)("X[Com]Execute Full Effect")
+[300][5,1]<4>(0,3,1,1600010,1600011)("X[Map]Draw Save/Load Screen")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [0][0,0]<3>()()
@@ -333,8 +333,8 @@ WoditorEvCOMMAND_START
 [103][0,1]<2>()("下キー")
 [121][4,0]<2>(1600010,1,0,256)()
 [121][4,0]<2>(1600010,1600027,0,1280)()
-[300][3,1]<2>(0,1,5)("X[共]システムSE再生")
-[300][5,1]<2>(0,3,3,1600010,1600011)("X[移]セーブ・ロード画面描画")
+[300][3,1]<2>(0,1,5)("X[Com]Play System Sound")
+[300][5,1]<2>(0,3,3,1600010,1600011)("X[Map]Draw Save/Load Screen")
 [0][0,0]<2>()()
 [420][1,0]<1>(0)()
 [111][10,0]<2>(3,1600020,8,2,1600020,4,2,1600020,6,2)()
@@ -342,8 +342,8 @@ WoditorEvCOMMAND_START
 [103][0,1]<3>()("上キー")
 [121][4,0]<3>(1600010,1600027,1,4352)()
 [121][4,0]<3>(1600010,1600027,0,1280)()
-[300][3,1]<3>(0,1,5)("X[共]システムSE再生")
-[300][5,1]<3>(0,3,3,1600010,1600011)("X[移]セーブ・ロード画面描画")
+[300][3,1]<3>(0,1,5)("X[Com]Play System Sound")
+[300][5,1]<3>(0,3,3,1600010,1600011)("X[Map]Draw Save/Load Screen")
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
 [103][0,1]<3>()("左キー")
@@ -351,11 +351,11 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(1)()
 [121][4,0]<4>(1600011,1,0,512)()
 [121][4,0]<4>(1600011,0,0,1536)()
-[300][3,1]<4>(0,1,5)("X[共]システムSE再生")
-[300][5,1]<4>(0,3,3,-1,-1)("X[移]セーブ・ロード画面描画")
-[300][5,1]<4>(0,3,2,1600010,1600011)("X[移]セーブ・ロード画面描画")
+[300][3,1]<4>(0,1,5)("X[Com]Play System Sound")
+[300][5,1]<4>(0,3,3,-1,-1)("X[Map]Draw Save/Load Screen")
+[300][5,1]<4>(0,3,2,1600010,1600011)("X[Map]Draw Save/Load Screen")
 [180][1,0]<4>(9)()
-[300][5,1]<4>(0,3,3,1600010,1600011)("X[移]セーブ・ロード画面描画")
+[300][5,1]<4>(0,3,3,1600010,1600011)("X[Map]Draw Save/Load Screen")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [0][0,0]<3>()()
@@ -366,11 +366,11 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(1)()
 [121][4,0]<4>(1600011,1,0,256)()
 [121][4,0]<4>(1600011,1600013,0,1792)()
-[300][3,1]<4>(0,1,5)("X[共]システムSE再生")
-[300][5,1]<4>(0,3,3,-1,-1)("X[移]セーブ・ロード画面描画")
-[300][5,1]<4>(0,3,2,1600010,1600011)("X[移]セーブ・ロード画面描画")
+[300][3,1]<4>(0,1,5)("X[Com]Play System Sound")
+[300][5,1]<4>(0,3,3,-1,-1)("X[Map]Draw Save/Load Screen")
+[300][5,1]<4>(0,3,2,1600010,1600011)("X[Map]Draw Save/Load Screen")
 [180][1,0]<4>(9)()
-[300][5,1]<4>(0,3,3,1600010,1600011)("X[移]セーブ・ロード画面描画")
+[300][5,1]<4>(0,3,3,1600010,1600011)("X[Map]Draw Save/Load Screen")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [0][0,0]<3>()()
@@ -379,22 +379,22 @@ WoditorEvCOMMAND_START
 [499][0,0]<1>()()
 [0][0,0]<1>()()
 [498][0,0]<0>()()
-[300][3,1]<0>(0,1,1)("X[共]システムSE再生")
-[300][5,1]<0>(0,3,-1,0,0)("X[移]セーブ・ロード画面描画")
+[300][3,1]<0>(0,1,1)("X[Com]Play System Sound")
+[300][5,1]<0>(0,3,-1,0,0)("X[Map]Draw Save/Load Screen")
 [180][1,0]<0>(6)()
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　セーブ（ロード）欄を開いてから終了するまでの処理を実行します。
 ▼ 
-▼ 【このコモンイベント内で操作しているデータベース】
+▼ [Databases Accessed by This Common Event]
 ▼  
-▼ 【ここから呼び出している別コモンイベント】
+▼ [Other Common Events Called from Here]
 ▼  
-▼ 【どのコモンイベントから主に呼び出されているか】
+▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ 選択可能最大数にはセーブの1ページ表示分を入力
 ■Load DB(Var):  CSelf26[最大ページ数] = VarDB[ "Base System Variables":53:0 ] (18:Save Page Count:Number) 
@@ -421,9 +421,9 @@ WoditorEvCOMMAND_END
  | |■Condition (Number):   [1] CSelf4[強制ロード画面フラグ] >=  1  
  | |-◇Condition:  [1]  [ CSelf4[強制ロード画面フラグ] >= 1   ] Case↓
  | | |■Set Variable: CSelf0[セーブ? ロード?] = 1 + 0 
- | | |■Call Event [Name]: ["X[移]メニュー時文章表示"] <CommonEv 101>  / 0:初期表示 / ロード画面を開きます（Ctrlキー + セーブ画面）
+ | | |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / 0:初期表示 / ロード画面を開きます（Ctrlキー + セーブ画面）
  | | |■Wait: 20 Frames
- | | |■Call Event [Name]: ["X[移]メニュー時文章表示"] <CommonEv 101>  / -1:消去 / 
+ | | |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / -1:消去 / 
  | | |■
  | |◇End◇
  | |■
@@ -434,16 +434,16 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf99[セーブ箇所（なければ-1）] = -1 + 0 
 ■Condition (Number):   [1] CSelf0[セーブ? ロード?] ==  0  /  [2] CSelf0[セーブ? ロード?] ==  1  
 -◇Condition:  [1]  [ CSelf0[セーブ? ロード?] == 0   ] Case↓
- |■Call Event [Name]: ["X[移]セーブ・ロード画面描画"] <CommonEv 94>  / 0:表示（セーブ）/ページ変更 / CSelf10[ページ内選択箇所] / CSelf11[選択ページ]
+ |■Call Event [Name]: ["X[Map]Draw Save/Load Screen"] <CommonEv 94>  / 0:表示（セーブ）/ページ変更 / CSelf10[ページ内選択箇所] / CSelf11[選択ページ]
  |■
 -◇Condition:  [2]  [ CSelf0[セーブ? ロード?] == 1   ] Case↓
- |■Call Event [Name]: ["X[移]セーブ・ロード画面描画"] <CommonEv 94>  / 1:表示（ロード）/ページ変更 / CSelf10[ページ内選択箇所] / CSelf11[選択ページ]
+ |■Call Event [Name]: ["X[Map]Draw Save/Load Screen"] <CommonEv 94>  / 1:表示（ロード）/ページ変更 / CSelf10[ページ内選択箇所] / CSelf11[選択ページ]
  |■
 ◇End◇
 ■Wait: 9 Frames
 ■Loop Start
  |■Wait: 1 Frames
- |■Call Event [Name]: ["X[移]セーブ・ロード画面描画"] <CommonEv 94>  / 3:カーソル変更のみ / CSelf10[ページ内選択箇所] / CSelf11[選択ページ]
+ |■Call Event [Name]: ["X[Map]Draw Save/Load Screen"] <CommonEv 94>  / 3:カーソル変更のみ / CSelf10[ページ内選択箇所] / CSelf11[選択ページ]
  |■Key Input: CSelf20[キー入力１] [Wait For Input <!>]  4-Dir. Confirm(10) Cancel(11)
  |■Condition (Number):   [1] CSelf20[キー入力１] ==  10  /  [2] CSelf20[キー入力１] ==  11  /  [3] CSelf20[キー入力１] ==  2  
  |-◇Condition:  [1]  [ CSelf20[キー入力１] == 10   ] Case↓
@@ -453,10 +453,10 @@ WoditorEvCOMMAND_END
  | |■Set Variable: CSelf12[対象データ番号] += 1 + 0 
  | |■Condition (Number):   [1] CSelf0[セーブ? ロード?] ==  0  /  [2] CSelf0[セーブ? ロード?] ==  1  
  | |-◇Condition:  [1]  [ CSelf0[セーブ? ロード?] == 0   ] Case↓
- | | |■Call Event [Name]: ["X[移]セーブ・ロード画面描画"] <CommonEv 94>  / -1:消去 / CSelf10[ページ内選択箇所] / CSelf11[選択ページ]
- | | |■Call Event [Name]: ["X[移]メニュー描画"] <CommonEv 88>  / -1:消去 / 0:0以上…カーソル位置設定
- | | |■Call Event [Name]: ["X[移]キャラ欄_全員描画"] <CommonEv 92>  / -1:全員消去
- | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 8:セーブ音
+ | | |■Call Event [Name]: ["X[Map]Draw Save/Load Screen"] <CommonEv 94>  / -1:消去 / CSelf10[ページ内選択箇所] / CSelf11[選択ページ]
+ | | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / -1:消去 / 0:0以上…カーソル位置設定
+ | | |■Call Event [Name]: ["X[Map]Character Box: Draw All"] <CommonEv 92>  / -1:全員消去
+ | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 8:Save Sound
  | | |■Wait: 16 Frames
  | | |■Set String: CSelf5 = "Save/System.sav"
  | | |■Write to Save Data: Save Data [CSelf5]'s V0[[Sample Game] Cook Appears] =  CSelf12[対象データ番号]
@@ -480,17 +480,17 @@ WoditorEvCOMMAND_END
  | | |◇Loop End Point◇◇
  | | |■Condition (Number):   [1] CSelf1[モード] ==  0  
  | | |-◇Condition:  [1]  [ CSelf1[モード] == 0   ] Case↓
- | | | |■Call Event [Name]: ["X[移]メニュー描画"] <CommonEv 88>  / 0:表示 / 0:0以上…カーソル位置設定
- | | | |■Call Event [Name]: ["X[移]キャラ欄_全員描画"] <CommonEv 92>  / 0:新規に全員描画
+ | | | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 0:表示 / 0:0以上…カーソル位置設定
+ | | | |■Call Event [Name]: ["X[Map]Character Box: Draw All"] <CommonEv 92>  / 0:新規に全員描画
  | | | |■Load DB(Var):  CSelf13[一時変数A] = VarDB[ "Base System Variables":54:0 ] (18:Menu Cursor Position:Number) 
  | | | |■
  | | |◇End◇
- | | |■Call Event [Name]: ["X[移]セーブ・ロード画面描画"] <CommonEv 94>  / 0:表示（セーブ）/ページ変更 / CSelf10[ページ内選択箇所] / CSelf11[選択ページ]
+ | | |■Call Event [Name]: ["X[Map]Draw Save/Load Screen"] <CommonEv 94>  / 0:表示（セーブ）/ページ変更 / CSelf10[ページ内選択箇所] / CSelf11[選択ページ]
  | | |■Wait: 9 Frames
  | | |■Condition (Number):   [1] CSelf1[モード] ==  0  
  | | |-◇Condition:  [1]  [ CSelf1[モード] == 0   ] Case↓
- | | | |■Call Event [Name]: ["X[移]メニュー描画"] <CommonEv 88>  / 1:更新 / CSelf13[一時変数A]
- | | | |■Call Event [Name]: ["X[移]メニュー描画"] <CommonEv 88>  / 1:更新 / -2:フラッシュ停止
+ | | | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 1:更新 / CSelf13[一時変数A]
+ | | | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 1:更新 / -2:フラッシュ停止
  | | | |■
  | | |◇End◇
  | | |■
@@ -514,16 +514,16 @@ WoditorEvCOMMAND_END
  | | |■Condition (Number):   [1] CSelf13[一時変数A] ==  0  /  [2] CSelf13[一時変数A] >=  1  
  | | |-◇Condition:  [1]  [ CSelf13[一時変数A] == 0   ] Case↓
  | | | |▼ なければブザー
- | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 2:ブザー音
+ | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
  | | | |■Wait: 7 Frames
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf13[一時変数A] >= 1   ] Case↓
  | | | |▼ セーブデータが存在しているときだけ処理
- | | | |■Call Event [Name]: ["X[移]セーブ・ロード画面描画"] <CommonEv 94>  / -1:消去 / CSelf10[ページ内選択箇所] / CSelf11[選択ページ]
- | | | |■Call Event [Name]: ["X[移]メニュー描画"] <CommonEv 88>  / -1:消去 / 0:0以上…カーソル位置設定
- | | | |■Call Event [Name]: ["X[移]キャラ欄_全員描画"] <CommonEv 92>  / -1:全員消去
- | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 9:ロード音
- | | | |■Call Event [Name]: ["X[共]全体エフェクト実行"] <CommonEv 67>  / 1:暗転 / 9
+ | | | |■Call Event [Name]: ["X[Map]Draw Save/Load Screen"] <CommonEv 94>  / -1:消去 / CSelf10[ページ内選択箇所] / CSelf11[選択ページ]
+ | | | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / -1:消去 / 0:0以上…カーソル位置設定
+ | | | |■Call Event [Name]: ["X[Map]Character Box: Draw All"] <CommonEv 92>  / -1:全員消去
+ | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 9:Load Sound
+ | | | |■Call Event [Name]: ["X[Com]Execute Full Effect"] <CommonEv 67>  / 1:Fade to Black / 9
  | | | |■Wait: 9 Frames
  | | | |■Repeat Loop [ 1 ] Times
  | | | | |▼ 起動時の読み込みセーブ番号をシステムデータに記憶させる（文字列のファイル名で保存すると読み込みセーブ番号が0になるため）
@@ -533,8 +533,8 @@ WoditorEvCOMMAND_END
  | | | |◇Loop End Point◇◇
  | | | |▼ 文字列ファイル名でロード
  | | | |■Load Data:  CSelf5
- | | | |■Call Event [Name]: ["X[共]全体エフェクト実行"] <CommonEv 67>  / 0:解除 / 9
- | | | |■Call Event [Name]: ["X[移]セーブ・ロード画面描画"] <CommonEv 94>  / 1:表示（ロード）/ページ変更 / CSelf10[ページ内選択箇所] / CSelf11[選択ページ]
+ | | | |■Call Event [Name]: ["X[Com]Execute Full Effect"] <CommonEv 67>  / 0:Clear / 9
+ | | | |■Call Event [Name]: ["X[Map]Draw Save/Load Screen"] <CommonEv 94>  / 1:表示（ロード）/ページ変更 / CSelf10[ページ内選択箇所] / CSelf11[選択ページ]
  | | | |■
  | | |◇End◇
  | | |■
@@ -548,8 +548,8 @@ WoditorEvCOMMAND_END
  | |▼ 下キー
  | |■Set Variable: CSelf10[ページ内選択箇所] += 1 + 0 
  | |■Set Variable: CSelf10[ページ内選択箇所] %= CSelf27[1ページ最大表示数] + 0 
- | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 5:カーソル移動音
- | |■Call Event [Name]: ["X[移]セーブ・ロード画面描画"] <CommonEv 94>  / 3:カーソル変更のみ / CSelf10[ページ内選択箇所] / CSelf11[選択ページ]
+ | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
+ | |■Call Event [Name]: ["X[Map]Draw Save/Load Screen"] <CommonEv 94>  / 3:カーソル変更のみ / CSelf10[ページ内選択箇所] / CSelf11[選択ページ]
  | |■
  |-◇Else
  | |■Condition (Number):   [1] CSelf20[キー入力１] ==  8  /  [2] CSelf20[キー入力１] ==  4  /  [3] CSelf20[キー入力１] ==  6  
@@ -557,8 +557,8 @@ WoditorEvCOMMAND_END
  | | |▼ 上キー
  | | |■Set Variable: CSelf10[ページ内選択箇所] += CSelf27[1ページ最大表示数] - 1 
  | | |■Set Variable: CSelf10[ページ内選択箇所] %= CSelf27[1ページ最大表示数] + 0 
- | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 5:カーソル移動音
- | | |■Call Event [Name]: ["X[移]セーブ・ロード画面描画"] <CommonEv 94>  / 3:カーソル変更のみ / CSelf10[ページ内選択箇所] / CSelf11[選択ページ]
+ | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
+ | | |■Call Event [Name]: ["X[Map]Draw Save/Load Screen"] <CommonEv 94>  / 3:カーソル変更のみ / CSelf10[ページ内選択箇所] / CSelf11[選択ページ]
  | | |■
  | |-◇Condition:  [2]  [ CSelf20[キー入力１] == 4   ] Case↓
  | | |▼ 左キー
@@ -566,11 +566,11 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [1]  [ CSelf11[選択ページ] >= 1   ] Case↓
  | | | |■Set Variable: CSelf11[選択ページ] -= 1 + 0 
  | | | |■Set Variable: CSelf11[選択ページ] Lower Bound= 0 + 0 
- | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 5:カーソル移動音
- | | | |■Call Event [Name]: ["X[移]セーブ・ロード画面描画"] <CommonEv 94>  / 3:カーソル変更のみ / -1 / -1
- | | | |■Call Event [Name]: ["X[移]セーブ・ロード画面描画"] <CommonEv 94>  / 2:ページ変更 / CSelf10[ページ内選択箇所] / CSelf11[選択ページ]
+ | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
+ | | | |■Call Event [Name]: ["X[Map]Draw Save/Load Screen"] <CommonEv 94>  / 3:カーソル変更のみ / -1 / -1
+ | | | |■Call Event [Name]: ["X[Map]Draw Save/Load Screen"] <CommonEv 94>  / 2:ページ変更 / CSelf10[ページ内選択箇所] / CSelf11[選択ページ]
  | | | |■Wait: 9 Frames
- | | | |■Call Event [Name]: ["X[移]セーブ・ロード画面描画"] <CommonEv 94>  / 3:カーソル変更のみ / CSelf10[ページ内選択箇所] / CSelf11[選択ページ]
+ | | | |■Call Event [Name]: ["X[Map]Draw Save/Load Screen"] <CommonEv 94>  / 3:カーソル変更のみ / CSelf10[ページ内選択箇所] / CSelf11[選択ページ]
  | | | |■
  | | |◇End◇
  | | |■
@@ -581,11 +581,11 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [1]  [ CSelf11[選択ページ] < CSelf13[一時変数A]   ] Case↓
  | | | |■Set Variable: CSelf11[選択ページ] += 1 + 0 
  | | | |■Set Variable: CSelf11[選択ページ] Upper Bound= CSelf13[一時変数A] + 0 
- | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 5:カーソル移動音
- | | | |■Call Event [Name]: ["X[移]セーブ・ロード画面描画"] <CommonEv 94>  / 3:カーソル変更のみ / -1 / -1
- | | | |■Call Event [Name]: ["X[移]セーブ・ロード画面描画"] <CommonEv 94>  / 2:ページ変更 / CSelf10[ページ内選択箇所] / CSelf11[選択ページ]
+ | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
+ | | | |■Call Event [Name]: ["X[Map]Draw Save/Load Screen"] <CommonEv 94>  / 3:カーソル変更のみ / -1 / -1
+ | | | |■Call Event [Name]: ["X[Map]Draw Save/Load Screen"] <CommonEv 94>  / 2:ページ変更 / CSelf10[ページ内選択箇所] / CSelf11[選択ページ]
  | | | |■Wait: 9 Frames
- | | | |■Call Event [Name]: ["X[移]セーブ・ロード画面描画"] <CommonEv 94>  / 3:カーソル変更のみ / CSelf10[ページ内選択箇所] / CSelf11[選択ページ]
+ | | | |■Call Event [Name]: ["X[Map]Draw Save/Load Screen"] <CommonEv 94>  / 3:カーソル変更のみ / CSelf10[ページ内選択箇所] / CSelf11[選択ページ]
  | | | |■
  | | |◇End◇
  | | |■
@@ -594,8 +594,8 @@ WoditorEvCOMMAND_END
  |◇End◇
  |■
 ◇Loop End Point◇◇
-■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 1:キャンセル音
-■Call Event [Name]: ["X[移]セーブ・ロード画面描画"] <CommonEv 94>  / -1:消去 / 0 / 0
+■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 1:Cancel Sound
+■Call Event [Name]: ["X[Map]Draw Save/Load Screen"] <CommonEv 94>  / -1:消去 / 0 / 0
 ■Wait: 6 Frames
 ■
 [COMMAND_TEXT_END]

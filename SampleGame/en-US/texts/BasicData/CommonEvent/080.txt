@@ -1,5 +1,5 @@
 COMMON_ID=80
-COMMON_NAME=X[移]パーティー画像再設定
+COMMON_NAME=X[Map]Reset Party Images
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -164,16 +164,16 @@ COMMAND_NUM=36
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　パーティー全員分の隊列画像を再設定します。")
 [103][0,1]<0>()("　仲間が増えたとき、減ったときなどに呼び出されます。")
 [103][0,1]<0>()("　基本システムでは、この処理以外でパーティー画像を変更することはありません。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [270][1,0]<0>(20)()
 [250][5,4]<0>(18,4,0,200704,1600022)("","Base System Variables","Current Party Size","")
@@ -203,16 +203,16 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　パーティー全員分の隊列画像を再設定します。
 ▼ 　仲間が増えたとき、減ったときなどに呼び出されます。
 ▼ 　基本システムでは、この処理以外でパーティー画像を変更することはありません。
 ▼ 
-▼ 【このコモンイベント内で操作しているデータベース】
+▼ [Databases Accessed by This Common Event]
 ▼  
-▼ 【ここから呼び出している別コモンイベント】
+▼ [Other Common Events Called from Here]
 ▼  
-▼ 【どのコモンイベントから主に呼び出されているか】
+▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Party Images: Erase All Characters
 ■Load DB(Var):  CSelf22[パーティーメンバー数] = VarDB[ "Base System Variables":"Current Party Size":0 ] (18:4:Number) 

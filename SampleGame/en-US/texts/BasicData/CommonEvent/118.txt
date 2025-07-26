@@ -1,5 +1,5 @@
 COMMON_ID=118
-COMMON_NAME=X[移]ｱｲﾃﾑ使用効果処理
+COMMON_NAME=X[Map]Use Item
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -167,15 +167,15 @@ COMMAND_NUM=284
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　「X[共]万能ウィンドウ選択実行」で、アイテムを選んだ後の挙動をここで処理します。")
 [103][0,1]<0>()("　※アイテムを使用した結果、何も変化がなければ、使用をキャンセルします（使えなかったことにする）。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [250][5,4]<0>(18,51,0,69632,1600037)("","Base System Variables","","")
 [121][4,0]<0>(1600099,0,0,0)()
@@ -186,7 +186,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[300][4,1]<0>(0,2,0,1600000)("X[移]残りアイテム数表示")
+[300][4,1]<0>(0,2,0,1600000)("X[Map]Display Remaining Item Count")
 [212][0,1]<0>()("アイテム使用処理開始")
 [111][10,0]<0>(3,1600000,19999,3,1600000,29999,3,1600000,39999,3)()
 [401][1,0]<0>(1)()
@@ -248,7 +248,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<1>()("「回復アイテム」処理の場合はここへジャンプ")
 [212][0,1]<1>()("回復アイテム処理")
 [121][4,0]<1>(1600016,0,0,0)()
-[300][3,1]<1>(0,1,1)("X[移]キャラ欄_全員描画")
+[300][3,1]<1>(0,1,1)("X[Map]Character Box: Draw All")
 [212][0,1]<1>()("回復アイテム処理2")
 [103][0,1]<1>()("残り個数を表示")
 [103][0,1]<1>()("使用対象を選択")
@@ -258,12 +258,12 @@ WoditorEvCOMMAND_START
 [103][0,1]<2>()("0＝味方一人、1＝自分自身")
 [103][0,1]<2>()("キャラ一覧を表示して選択させる")
 [121][4,0]<2>(1600016,1,0,0)()
-[300][5,1]<2>(0,16777218,1600011,1,1600011)("X[移]ｷｬﾗｸﾀｰ欄_選択実行")
+[300][5,1]<2>(0,16777218,1600011,1,1600011)("X[Map]Select Character Box")
 [111][7,0]<2>(2,1600011,-1,3,1600011,0,1)()
 [401][1,0]<2>(1)()
 [103][0,1]<3>()("キャンセルなら終了")
 [103][0,1]<3>()("カーソル点滅を消す")
-[300][5,1]<3>(0,3,2,-1,0)("X[移]キャラクター欄描画")
+[300][5,1]<3>(0,3,2,-1,0)("X[Map]Draw Character Box")
 [172][0,0]<3>()()
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
@@ -274,7 +274,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<1>(2)()
 [103][0,1]<2>()("2＝味方全体")
 [121][4,0]<2>(1600016,2,0,0)()
-[300][5,1]<2>(0,3,1,-1,0)("X[移]キャラクター欄描画")
+[300][5,1]<2>(0,3,1,-1,0)("X[Map]Draw Character Box")
 [103][0,1]<2>()("決定かキャンセルか、だけ受付する")
 [123][2,0]<2>(1600012,176)()
 [111][7,0]<2>(2,1600012,10,2,1600012,11,2)()
@@ -285,7 +285,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
 [103][0,1]<3>()("キャンセルなら終了")
-[300][5,1]<3>(0,3,2,-1,0)("X[移]キャラクター欄描画")
+[300][5,1]<3>(0,3,2,-1,0)("X[Map]Draw Character Box")
 [172][0,0]<3>()()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
@@ -298,7 +298,7 @@ WoditorEvCOMMAND_START
 [140][6,1]<2>(33554464,0,0,0,100,100)("\cself[9]")
 [0][0,0]<2>()()
 [420][1,0]<1>(0)()
-[300][3,1]<2>(0,1,0)("X[共]システムSE再生")
+[300][3,1]<2>(0,1,0)("X[Com]Play System Sound")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [103][0,1]<1>()("ここで各キャラ処理（一人なら1人分だけで終了）")
@@ -309,7 +309,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<3>(1600011,1,0,256)()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
-[300][4,1]<2>(0,16777217,1600011,1600014)("X[移]選択位置主人公ID取得")
+[300][4,1]<2>(0,16777217,1600011,1600014)("X[Map]Get Ally ID")
 [111][4,0]<2>(1,1600014,-1,3)()
 [401][1,0]<2>(1)()
 [176][0,0]<3>()()
@@ -333,22 +333,22 @@ WoditorEvCOMMAND_START
 [111][10,0]<3>(3,1600013,-3,2,1600013,-2,2,1600013,0,1)()
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("全回復（死亡込み）")
-[300][5,1]<4>(0,3,1600014,-2,0)("X[移]状態付与/消去")
+[300][5,1]<4>(0,3,1600014,-2,0)("X[Map]Add/Remove State")
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
 [103][0,1]<4>()("全回復（死亡抜き）")
-[300][5,1]<4>(0,3,1600014,-3,0)("X[移]状態付与/消去")
+[300][5,1]<4>(0,3,1600014,-3,0)("X[Map]Add/Remove State")
 [0][0,0]<4>()()
 [401][1,0]<3>(3)()
 [103][0,1]<4>()("単体回復")
-[300][5,1]<4>(0,3,1600014,1600013,0)("X[移]状態付与/消去")
+[300][5,1]<4>(0,3,1600014,1600013,0)("X[Map]Add/Remove State")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [0][0,0]<3>()()
 [498][0,0]<2>()()
-[300][3,1]<2>(0,1,1600014)("X[移]一時ｽﾃ計算<初期化>")
-[300][3,1]<2>(0,1,1600014)("X[移]一時ｽﾃ計算<装備補正>")
-[300][3,1]<2>(0,1,1600014)("X[移]一時ｽﾃ計算<状態補正>")
+[300][3,1]<2>(0,1,1600014)("X[Map]CalcTempStats <Initialize>")
+[300][3,1]<2>(0,1,1600014)("X[Map]CalcTempStats <Equipments>")
+[300][3,1]<2>(0,1,1600014)("X[Map]CalcTempStats <StatusEffects>")
 [103][0,1]<2>()("HP回復値の計算")
 [250][5,4]<2>(21,1600014,0,331776,1600033)("","×Allies Temp Data","","[Temp] Post-Calc Max HP")
 [250][5,4]<2>(2,1600030,10,332288,1600032)("","Items","","HP Recovery [X% of Max]")
@@ -361,11 +361,11 @@ WoditorEvCOMMAND_START
 [121][4,0]<2>(1600035,1600034,0,768)()
 [121][4,0]<2>(1600035,100,0,1024)()
 [250][5,4]<2>(2,1600030,13,332304,1600035)("","Items","","┗ + SP Recovery [Points]")
-[300][6,1]<2>(0,4,1600014,22,1600033,0)("X[移]パラメータ増減")
-[300][6,1]<2>(0,4,1600014,23,1600035,0)("X[移]パラメータ増減")
+[300][6,1]<2>(0,4,1600014,22,1600033,0)("X[Map]Change Parameter")
+[300][6,1]<2>(0,4,1600014,23,1600035,0)("X[Map]Change Parameter")
 [103][0,1]<2>()("回復エフェクト＋表示更新")
-[300][5,1]<2>(0,3,1600011,1600033,1600035)("X[移]指定ｷｬﾗHP/SP回復表示")
-[300][5,1]<2>(0,3,2,-1,0)("X[移]キャラクター欄描画")
+[300][5,1]<2>(0,3,1600011,1600033,1600035)("X[Map]Display Char HP/SP Recovery")
+[300][5,1]<2>(0,3,2,-1,0)("X[Map]Draw Character Box")
 [103][0,1]<2>()(" ")
 [111][4,0]<2>(1,1600016,1,2)()
 [401][1,0]<2>(1)()
@@ -376,17 +376,17 @@ WoditorEvCOMMAND_START
 [0][0,0]<2>()()
 [498][0,0]<1>()()
 [103][0,1]<1>()("アイテム消費判定")
-[300][4,1]<1>(0,16777217,1600000,1600013)("X[移]ｱｲﾃﾑ使用_消費処理")
+[300][4,1]<1>(0,16777217,1600000,1600013)("X[Map]Item Use: Consume")
 [111][7,0]<1>(2,1600013,1,1,1600013,0,3)()
 [401][1,0]<1>(1)()
 [103][0,1]<2>()("まだ使える場合は続けて使用")
 [180][1,0]<2>(5)()
-[300][4,1]<2>(0,2,1,1600000)("X[移]残りアイテム数表示")
+[300][4,1]<2>(0,2,1,1600000)("X[Map]Display Remaining Item Count")
 [213][0,1]<2>()("回復アイテム処理2")
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
 [103][0,1]<2>()("使えない場合は残り０個を表示して戻す")
-[300][4,1]<2>(0,2,1,1600000)("X[移]残りアイテム数表示")
+[300][4,1]<2>(0,2,1,1600000)("X[Map]Display Remaining Item Count")
 [103][0,1]<2>()("キー入力待ち")
 [123][2,0]<2>(1600010,176)()
 [0][0,0]<2>()()
@@ -400,7 +400,7 @@ WoditorEvCOMMAND_START
 [179][1,0]<0>(0)()
 [103][0,1]<1>()("「イベント起動」処理の場合はここへジャンプ")
 [212][0,1]<1>()("イベント起動処理")
-[300][3,1]<1>(0,1,1600000)("X[移]ｱｲﾃﾑ使用_消費処理")
+[300][3,1]<1>(0,1,1600000)("X[Map]Item Use: Consume")
 [250][5,4]<1>(2,1600030,6,332288,1600012)("","Items","","┗ [3]: Event to Call             ")
 [250][5,4]<1>(18,1,0,65536,1)("","Base System Variables","","")
 [211][2,0]<1>(1600012,0)()
@@ -412,11 +412,11 @@ WoditorEvCOMMAND_START
 [179][1,0]<0>(0)()
 [103][0,1]<1>()("「技能発動」処理の場合はここへジャンプ")
 [212][0,1]<1>()("技能発動処理")
-[300][6,1]<1>(0,16777219,1600017,-1,1600000,1600011)("X[移]技能使用効果処理")
+[300][6,1]<1>(0,16777219,1600017,-1,1600000,1600011)("X[Map]Use Skill")
 [111][4,0]<1>(17,1600011,1,2)()
 [401][1,0]<1>(1)()
 [103][0,1]<2>()("使用した場合はアイテム消費判定")
-[300][4,1]<2>(0,16777217,1600000,1600013)("X[移]ｱｲﾃﾑ使用_消費処理")
+[300][4,1]<2>(0,16777217,1600000,1600013)("X[Map]Item Use: Consume")
 [103][0,1]<2>()("メニュー消去判定")
 [250][5,4]<2>(18,1,0,69632,1600010)("","Base System Variables","","")
 [111][4,0]<2>(1,1600010,1,1)()
@@ -430,12 +430,12 @@ WoditorEvCOMMAND_START
 [401][1,0]<2>(1)()
 [103][0,1]<3>()("まだ使える場合は続けて使用")
 [180][1,0]<3>(5)()
-[300][4,1]<3>(0,2,1,1600000)("X[移]残りアイテム数表示")
+[300][4,1]<3>(0,2,1,1600000)("X[Map]Display Remaining Item Count")
 [213][0,1]<3>()("アイテム使用処理開始")
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
 [103][0,1]<3>()("使えない場合は残り０個を表示して戻す")
-[300][4,1]<3>(0,2,1,1600000)("X[移]残りアイテム数表示")
+[300][4,1]<3>(0,2,1,1600000)("X[Map]Display Remaining Item Count")
 [103][0,1]<3>()("キー入力待ち")
 [123][2,0]<3>(1600010,176)()
 [172][0,0]<3>()()
@@ -454,15 +454,15 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　「X[共]万能ウィンドウ選択実行」で、アイテムを選んだ後の挙動をここで処理します。
 ▼ 　※アイテムを使用した結果、何も変化がなければ、使用をキャンセルします（使えなかったことにする）。
 ▼ 
-▼ 【このコモンイベント内で操作しているデータベース】
+▼ [Databases Accessed by This Common Event]
 ▼  
-▼ 【ここから呼び出している別コモンイベント】
+▼ [Other Common Events Called from Here]
 ▼  
-▼ 【どのコモンイベントから主に呼び出されているか】
+▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Load DB(Var):  CSelf37[最大パーティ人数] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
 ■Set Variable: CSelf99[結果] = 0 + 0 
@@ -473,7 +473,7 @@ WoditorEvCOMMAND_END
  |■
 ◇End◇
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-■Call Event [Name]: ["X[移]残りアイテム数表示"] <CommonEv 99>  / 0:表示 / CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ]
+■Call Event [Name]: ["X[Map]Display Remaining Item Count"] <CommonEv 99>  / 0:表示 / CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ]
 ●Label Point [アイテム使用処理開始] <<<<<<<<<<<<<<<<<<<<<<<<★
 ■Condition (Number):   [1] CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ] <=  19999  /  [2] CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ] <=  29999  /  [3] CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ] <=  39999  
 -◇Condition:  [1]  [ CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ] <= 19999   ] Case↓
@@ -535,7 +535,7 @@ WoditorEvCOMMAND_END
  |▼ 「回復アイテム」処理の場合はここへジャンプ
  |●Label Point [回復アイテム処理] <<<<<<<<<<<<<<<<<<<<<<<<★
  |■Set Variable: CSelf16[使用対象フラグ] = 0 + 0 
- |■Call Event [Name]: ["X[移]キャラ欄_全員描画"] <CommonEv 92>  / 1:全員描画[瞬間表示]
+ |■Call Event [Name]: ["X[Map]Character Box: Draw All"] <CommonEv 92>  / 1:全員描画[瞬間表示]
  |●Label Point [回復アイテム処理2] <<<<<<<<<<<<<<<<<<<<<<<<★
  |▼ 残り個数を表示
  |▼ 使用対象を選択
@@ -545,12 +545,12 @@ WoditorEvCOMMAND_END
  | |▼ 0＝味方一人、1＝自分自身
  | |▼ キャラ一覧を表示して選択させる
  | |■Set Variable: CSelf16[使用対象フラグ] = 1 + 0 
- | |■Call Event [Name]: CSelf11[一時変数B] = ["X[移]ｷｬﾗｸﾀｰ欄_選択実行"] <CommonEv 108>  / CSelf11[一時変数B] / 1:決定効果音を鳴らさない
+ | |■Call Event [Name]: CSelf11[一時変数B] = ["X[Map]Select Character Box"] <CommonEv 108>  / CSelf11[一時変数B] / 1:決定効果音を鳴らさない
  | |■Condition (Number):   [1] CSelf11[一時変数B] <=  -1  /  [2] CSelf11[一時変数B] >=  0  
  | |-◇Condition:  [1]  [ CSelf11[一時変数B] <= -1   ] Case↓
  | | |▼ キャンセルなら終了
  | | |▼ カーソル点滅を消す
- | | |■Call Event [Name]: ["X[移]キャラクター欄描画"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0
+ | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0
  | | |■Exit Event
  | | |■
  | |-◇Condition:  [2]  [ CSelf11[一時変数B] >= 0   ] Case↓
@@ -561,7 +561,7 @@ WoditorEvCOMMAND_END
  |-◇Condition:  [2]  [ CSelf10[一時変数A] == 2   ] Case↓
  | |▼ 2＝味方全体
  | |■Set Variable: CSelf16[使用対象フラグ] = 2 + 0 
- | |■Call Event [Name]: ["X[移]キャラクター欄描画"] <CommonEv 90>  / 1:カーソルON（対象位置　位置-1なら全部） / -1 / 0
+ | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 1:カーソルON（対象位置　位置-1なら全部） / -1 / 0
  | |▼ 決定かキャンセルか、だけ受付する
  | |■Key Input: CSelf12[一時変数C] [Wait For Input <!>]  Confirm(10) Cancel(11)
  | |■Condition (Number):   [1] CSelf12[一時変数C] ==  10  /  [2] CSelf12[一時変数C] ==  11  
@@ -572,7 +572,7 @@ WoditorEvCOMMAND_END
  | | |■
  | |-◇Condition:  [2]  [ CSelf12[一時変数C] == 11   ] Case↓
  | | |▼ キャンセルなら終了
- | | |■Call Event [Name]: ["X[移]キャラクター欄描画"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0
+ | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0
  | | |■Exit Event
  | | |■
  | |◇End◇
@@ -585,7 +585,7 @@ WoditorEvCOMMAND_END
  | |■Sound: SE File[\cself[9]] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
  | |■
  |-◇Else
- | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 0:決定音
+ | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
  | |■
  |◇End◇
  |▼ ここで各キャラ処理（一人なら1人分だけで終了）
@@ -596,7 +596,7 @@ WoditorEvCOMMAND_END
  | | |■Set Variable: CSelf11[一時変数B] += 1 + 0 
  | | |■
  | |◇End◇
- | |■Call Event [Name]: CSelf14[一時キャラID] = ["X[移]選択位置主人公ID取得"] <CommonEv 105>  / CSelf11[一時変数B]
+ | |■Call Event [Name]: CSelf14[一時キャラID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf11[一時変数B]
  | |■Condition (Number):   [1] CSelf14[一時キャラID] <=  -1  
  | |-◇Condition:  [1]  [ CSelf14[一時キャラID] <= -1   ] Case↓
  | | |■Loop Start: Go to Loop Start
@@ -620,22 +620,22 @@ WoditorEvCOMMAND_END
  | | |■Condition (Number):   [1] CSelf13[一時変数D] ==  -3  /  [2] CSelf13[一時変数D] ==  -2  /  [3] CSelf13[一時変数D] >=  0  
  | | |-◇Condition:  [1]  [ CSelf13[一時変数D] == -3   ] Case↓
  | | | |▼ 全回復（死亡込み）
- | | | |■Call Event [Name]: ["X[移]状態付与/消去"] <CommonEv 75>  / CSelf14[一時キャラID] / -2:全て消去(全回復時対象のみ) / 0:消去
+ | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf14[一時キャラID] / -2:全て消去(全回復時対象のみ) / 0:消去
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf13[一時変数D] == -2   ] Case↓
  | | | |▼ 全回復（死亡抜き）
- | | | |■Call Event [Name]: ["X[移]状態付与/消去"] <CommonEv 75>  / CSelf14[一時キャラID] / -3:全て消去(死亡除く全回復時対象) / 0:消去
+ | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf14[一時キャラID] / -3:全て消去(死亡除く全回復時対象) / 0:消去
  | | | |■
  | | |-◇Condition:  [3]  [ CSelf13[一時変数D] >= 0   ] Case↓
  | | | |▼ 単体回復
- | | | |■Call Event [Name]: ["X[移]状態付与/消去"] <CommonEv 75>  / CSelf14[一時キャラID] / CSelf13[一時変数D] / 0:消去
+ | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf14[一時キャラID] / CSelf13[一時変数D] / 0:消去
  | | | |■
  | | |◇End◇
  | | |■
  | |◇Loop End Point◇◇
- | |■Call Event [Name]: ["X[移]一時ｽﾃ計算<初期化>"] <CommonEv 122>  / CSelf14[一時キャラID]
- | |■Call Event [Name]: ["X[移]一時ｽﾃ計算<装備補正>"] <CommonEv 123>  / CSelf14[一時キャラID]
- | |■Call Event [Name]: ["X[移]一時ｽﾃ計算<状態補正>"] <CommonEv 124>  / CSelf14[一時キャラID]
+ | |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf14[一時キャラID]
+ | |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf14[一時キャラID]
+ | |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf14[一時キャラID]
  | |▼ HP回復値の計算
  | |■Load DB(Var):  CSelf33[最終HP回復値] = VarDB[ "×Allies Temp Data":CSelf14[一時キャラID]:"[Temp] Post-Calc Max HP" ] (17:-:0) 
  | |■Load DB(User):  CSelf32[HP回復％] = UserDB[ "Items":CSelf30[アイテム番号]:"HP Recovery [X% of Max]" ] (2:-:10) 
@@ -648,11 +648,11 @@ WoditorEvCOMMAND_END
  | |■Set Variable: CSelf35[最終SP回復値] *= CSelf34[SP回復％] + 0 
  | |■Set Variable: CSelf35[最終SP回復値] /= 100 + 0 
  | |■Load DB(User):  CSelf35[最終SP回復値] += UserDB[ "Items":CSelf30[アイテム番号]:"┗ + SP Recovery [Points]" ] (2:-:13) 
- | |■Call Event [Name]: ["X[移]パラメータ増減"] <CommonEv 70>  / CSelf14[一時キャラID] / 22:HP / CSelf33[最終HP回復値] / 0:なし
- | |■Call Event [Name]: ["X[移]パラメータ増減"] <CommonEv 70>  / CSelf14[一時キャラID] / 23:SP / CSelf35[最終SP回復値] / 0:なし
+ | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf14[一時キャラID] / 22:HP / CSelf33[最終HP回復値] / 0:なし
+ | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf14[一時キャラID] / 23:SP / CSelf35[最終SP回復値] / 0:なし
  | |▼ 回復エフェクト＋表示更新
- | |■Call Event [Name]: ["X[移]指定ｷｬﾗHP/SP回復表示"] <CommonEv 97>  / CSelf11[一時変数B] / CSelf33[最終HP回復値] / CSelf35[最終SP回復値]
- | |■Call Event [Name]: ["X[移]キャラクター欄描画"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0
+ | |■Call Event [Name]: ["X[Map]Display Char HP/SP Recovery"] <CommonEv 97>  / CSelf11[一時変数B] / CSelf33[最終HP回復値] / CSelf35[最終SP回復値]
+ | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0
  | |▼  
  | |■Condition (Number):   [1] CSelf16[使用対象フラグ] ==  1  
  | |-◇Condition:  [1]  [ CSelf16[使用対象フラグ] == 1   ] Case↓
@@ -663,17 +663,17 @@ WoditorEvCOMMAND_END
  | |■
  |◇Loop End Point◇◇
  |▼ アイテム消費判定
- |■Call Event [Name]: CSelf13[一時変数D] = ["X[移]ｱｲﾃﾑ使用_消費処理"] <CommonEv 120>  / CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ]
+ |■Call Event [Name]: CSelf13[一時変数D] = ["X[Map]Item Use: Consume"] <CommonEv 120>  / CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ]
  |■Condition (Number):   [1] CSelf13[一時変数D] >=  1  /  [2] CSelf13[一時変数D] <=  0  
  |-◇Condition:  [1]  [ CSelf13[一時変数D] >= 1   ] Case↓
  | |▼ まだ使える場合は続けて使用
  | |■Wait: 5 Frames
- | |■Call Event [Name]: ["X[移]残りアイテム数表示"] <CommonEv 99>  / 1:更新[瞬間表示] / CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ]
+ | |■Call Event [Name]: ["X[Map]Display Remaining Item Count"] <CommonEv 99>  / 1:更新[瞬間表示] / CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ]
  | |●Label Jump [回復アイテム処理2] >>>>>>>>>>>>>>>>>>>>>>>>>
  | |■
  |-◇Condition:  [2]  [ CSelf13[一時変数D] <= 0   ] Case↓
  | |▼ 使えない場合は残り０個を表示して戻す
- | |■Call Event [Name]: ["X[移]残りアイテム数表示"] <CommonEv 99>  / 1:更新[瞬間表示] / CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ]
+ | |■Call Event [Name]: ["X[Map]Display Remaining Item Count"] <CommonEv 99>  / 1:更新[瞬間表示] / CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ]
  | |▼ キー入力待ち
  | |■Key Input: CSelf10[一時変数A] [Wait For Input <!>]  Confirm(10) Cancel(11)
  | |■
@@ -687,7 +687,7 @@ WoditorEvCOMMAND_END
 ■Repeat Loop [ 0 ] Times
  |▼ 「イベント起動」処理の場合はここへジャンプ
  |●Label Point [イベント起動処理] <<<<<<<<<<<<<<<<<<<<<<<<★
- |■Call Event [Name]: ["X[移]ｱｲﾃﾑ使用_消費処理"] <CommonEv 120>  / CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ]
+ |■Call Event [Name]: ["X[Map]Item Use: Consume"] <CommonEv 120>  / CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ]
  |■Load DB(User):  CSelf12[一時変数C] = UserDB[ "Items":CSelf30[アイテム番号]:"┗ [3]: Event to Call             " ] (2:-:6) 
  |■Write to DB(Var): VarDB[ "Base System Variables":1:0 ] (18:Menu Close Flag:Number) =  1
  |■Reserve Next Event: Variable [CSelf12[一時変数C]]'s Ev
@@ -699,11 +699,11 @@ WoditorEvCOMMAND_END
 ■Repeat Loop [ 0 ] Times
  |▼ 「技能発動」処理の場合はここへジャンプ
  |●Label Point [技能発動処理] <<<<<<<<<<<<<<<<<<<<<<<<★
- |■Call Event [Name]: CSelf11[一時変数B] = ["X[移]技能使用効果処理"] <CommonEv 119>  / CSelf17[発動技能番号] / -1 / CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ]
+ |■Call Event [Name]: CSelf11[一時変数B] = ["X[Map]Use Skill"] <CommonEv 119>  / CSelf17[発動技能番号] / -1 / CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ]
  |■Condition (Number):   [1] CSelf11[一時変数B] ==  1  
  |-◇Condition:  [1]  [ CSelf11[一時変数B] == 1   ] Case↓
  | |▼ 使用した場合はアイテム消費判定
- | |■Call Event [Name]: CSelf13[一時変数D] = ["X[移]ｱｲﾃﾑ使用_消費処理"] <CommonEv 120>  / CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ]
+ | |■Call Event [Name]: CSelf13[一時変数D] = ["X[Map]Item Use: Consume"] <CommonEv 120>  / CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ]
  | |▼ メニュー消去判定
  | |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "Base System Variables":1:0 ] (18:Menu Close Flag:Number) 
  | |■Condition (Number):   [1] CSelf10[一時変数A] >=  1  
@@ -717,12 +717,12 @@ WoditorEvCOMMAND_END
  | |-◇Condition:  [1]  [ CSelf13[一時変数D] >= 1   ] Case↓
  | | |▼ まだ使える場合は続けて使用
  | | |■Wait: 5 Frames
- | | |■Call Event [Name]: ["X[移]残りアイテム数表示"] <CommonEv 99>  / 1:更新[瞬間表示] / CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ]
+ | | |■Call Event [Name]: ["X[Map]Display Remaining Item Count"] <CommonEv 99>  / 1:更新[瞬間表示] / CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ]
  | | |●Label Jump [アイテム使用処理開始] >>>>>>>>>>>>>>>>>>>>>>>>>
  | | |■
  | |-◇Condition:  [2]  [ CSelf13[一時変数D] <= 0   ] Case↓
  | | |▼ 使えない場合は残り０個を表示して戻す
- | | |■Call Event [Name]: ["X[移]残りアイテム数表示"] <CommonEv 99>  / 1:更新[瞬間表示] / CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ]
+ | | |■Call Event [Name]: ["X[Map]Display Remaining Item Count"] <CommonEv 99>  / 1:更新[瞬間表示] / CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ]
  | | |▼ キー入力待ち
  | | |■Key Input: CSelf10[一時変数A] [Wait For Input <!>]  Confirm(10) Cancel(11)
  | | |■Exit Event

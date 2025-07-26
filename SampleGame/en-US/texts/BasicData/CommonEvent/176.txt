@@ -1,5 +1,5 @@
 COMMON_ID=176
-COMMON_NAME=X[戦]基本状態取得
+COMMON_NAME=X[Bat]Get Basic State
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -176,7 +176,7 @@ COMMAND_NUM=50
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　指定した戦闘スロットの状態をチェックします。")
 [103][0,1]<0>()("　戦闘不能/行動不能")
 [103][0,1]<0>()("")
@@ -229,7 +229,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　指定した戦闘スロットの状態をチェックします。
 ▼ 　戦闘不能/行動不能
 ▼ 

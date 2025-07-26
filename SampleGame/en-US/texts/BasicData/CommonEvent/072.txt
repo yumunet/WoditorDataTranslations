@@ -1,5 +1,5 @@
 COMMON_ID=72
-COMMON_NAME=X[移]パラメータ変更(文字列)
+COMMON_NAME=X[Map]Change Parameter (String)
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -176,7 +176,7 @@ COMMAND_NUM=30
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　基本システム内で主人公の文字列パラメータを変更するときは、必ずこのコモンイベントを使用します。")
 [103][0,1]<0>()("　移動中のみ有効ですが、戦闘後に呼び出される場合もあり、その際は戦闘メッセージで結果を表示します。")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
@@ -195,7 +195,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<0>(3)()
 [103][0,1]<1>()("歩行グラフィック")
 [250][5,4]<1>(0,1600000,2,327680,1600005)("","Allies","","Character Image")
-[300][2,1]<1>(0,0)("X[移]パーティー画像再設定")
+[300][2,1]<1>(0,0)("X[Map]Reset Party Images")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [111][4,0]<0>(1,1600001,3,2)()
@@ -209,7 +209,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　基本システム内で主人公の文字列パラメータを変更するときは、必ずこのコモンイベントを使用します。
 ▼ 　移動中のみ有効ですが、戦闘後に呼び出される場合もあり、その際は戦闘メッセージで結果を表示します。
 ▼ ―――――――――――――――――――――――――――――――――――
@@ -228,7 +228,7 @@ WoditorEvCOMMAND_END
 -◇Condition:  [3]  [ CSelf1[対象パラメータ] == 2   ] Case↓
  |▼ 歩行グラフィック
  |■Write to DB(Var): VarDB[ "Allies":CSelf0[主人公ID]:"Character Image" ] (0:-:2) =  CSelf5[入力文字列]
- |■Call Event [Name]: ["X[移]パーティー画像再設定"] <CommonEv 80> 
+ |■Call Event [Name]: ["X[Map]Reset Party Images"] <CommonEv 80> 
  |■
 ◇End◇
 ■Condition (Number):   [1] CSelf1[対象パラメータ] ==  3  

@@ -1,5 +1,5 @@
 COMMON_ID=162
-COMMON_NAME=X[戦]敵対象選択実行
+COMMON_NAME=X[Bat]Select Enemy Target
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -164,17 +164,17 @@ COMMAND_NUM=104
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　敵を選択する処理を実行します。なお、戦闘不能の敵は選択できません。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("記憶した敵ターゲットを取得")
-[300][5,1]<0>(0,16777218,20,-1,1600000)("X[戦]記憶キー位置取得")
+[300][5,1]<0>(0,16777218,20,-1,1600000)("X[Bat]Get Cursor Memory Pos")
 [250][5,4]<0>(20,69,0,69632,1600011)("","Base System Variables","","")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("左端から順番に敵番号をセット")
@@ -196,7 +196,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<2>(1600013,1600040,0,4)()
 [121][4,0]<2>(1600013,1600010,0,256)()
 [121][4,0]<2>(1600012,1600013,10,32)()
-[300][5,1]<2>(0,16777218,1600012,0,1600014)("X[戦]基本状態取得")
+[300][5,1]<2>(0,16777218,1600012,0,1600014)("X[Bat]Get Basic State")
 [111][4,0]<2>(1,1600014,0,3)()
 [401][1,0]<2>(1)()
 [103][0,1]<3>()("戦闘不能でなければそのキャラを対象とする")
@@ -211,28 +211,28 @@ WoditorEvCOMMAND_START
 [121][4,0]<1>(1600013,1600040,0,4)()
 [121][4,0]<1>(1600013,1600010,0,256)()
 [121][4,0]<1>(1600012,1600013,10,32)()
-[300][4,1]<1>(0,2,12,-1)("X[戦]敵キャラ_単体描画")
-[300][4,1]<1>(0,2,10,1600012)("X[戦]敵キャラ_単体描画")
+[300][4,1]<1>(0,2,12,-1)("X[Bat]Enemy: Draw One")
+[300][4,1]<1>(0,2,10,1600012)("X[Bat]Enemy: Draw One")
 [123][2,0]<1>(1600020,177)()
 [111][10,0]<1>(19,1600020,10,2,1600020,11,2,1600020,2,2)()
 [401][1,0]<1>(1)()
 [103][0,1]<2>()("決定キー")
-[300][3,1]<2>(0,1,0)("X[共]システムSE再生")
+[300][3,1]<2>(0,1,0)("X[Com]Play System Sound")
 [103][0,1]<2>()("位置を記憶")
-[300][5,1]<2>(0,3,20,-1,1600010)("X[戦]記憶キー位置設定")
+[300][5,1]<2>(0,3,20,-1,1600010)("X[Bat]Set Cursor Memory Pos")
 [121][4,0]<2>(1600010,1600012,0,0)()
 [171][0,0]<2>()()
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
 [103][0,1]<2>()("キャンセルキー")
-[300][3,1]<2>(0,1,1)("X[共]システムSE再生")
-[300][4,1]<2>(0,2,12,-1)("X[戦]敵キャラ_単体描画")
+[300][3,1]<2>(0,1,1)("X[Com]Play System Sound")
+[300][4,1]<2>(0,2,12,-1)("X[Bat]Enemy: Draw One")
 [121][4,0]<2>(1600010,-1,0,0)()
 [171][0,0]<2>()()
 [0][0,0]<2>()()
 [401][1,0]<1>(3)()
 [103][0,1]<2>()("下キー")
-[300][3,1]<2>(0,1,5)("X[共]システムSE再生")
+[300][3,1]<2>(0,1,5)("X[Com]Play System Sound")
 [121][4,0]<2>(1600010,1,0,256)()
 [121][4,0]<2>(1600010,1600011,0,1280)()
 [121][4,0]<2>(1600030,1,0,0)()
@@ -241,21 +241,21 @@ WoditorEvCOMMAND_START
 [111][10,0]<2>(3,1600020,8,2,1600020,4,2,1600020,6,2)()
 [401][1,0]<2>(1)()
 [103][0,1]<3>()("上キー")
-[300][3,1]<3>(0,1,5)("X[共]システムSE再生")
+[300][3,1]<3>(0,1,5)("X[Com]Play System Sound")
 [121][4,0]<3>(1600010,-1,1600011,256)()
 [121][4,0]<3>(1600010,1600011,0,1280)()
 [121][4,0]<3>(1600030,-1,0,0)()
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
 [103][0,1]<3>()("左キー")
-[300][3,1]<3>(0,1,5)("X[共]システムSE再生")
+[300][3,1]<3>(0,1,5)("X[Com]Play System Sound")
 [121][4,0]<3>(1600010,-1,1600011,256)()
 [121][4,0]<3>(1600010,1600011,0,1280)()
 [121][4,0]<3>(1600030,-1,0,0)()
 [0][0,0]<3>()()
 [401][1,0]<2>(3)()
 [103][0,1]<3>()("右キー")
-[300][3,1]<3>(0,1,5)("X[共]システムSE再生")
+[300][3,1]<3>(0,1,5)("X[Com]Play System Sound")
 [121][4,0]<3>(1600010,1,0,256)()
 [121][4,0]<3>(1600010,1600011,0,1280)()
 [121][4,0]<3>(1600030,1,0,0)()
@@ -271,17 +271,17 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　敵を選択する処理を実行します。なお、戦闘不能の敵は選択できません。
 ▼ 
-▼ 【このコモンイベント内で操作しているデータベース】
+▼ [Databases Accessed by This Common Event]
 ▼  
-▼ 【ここから呼び出している別コモンイベント】
+▼ [Other Common Events Called from Here]
 ▼  
-▼ 【どのコモンイベントから主に呼び出されているか】
+▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ 記憶した敵ターゲットを取得
-■Call Event [Name]: CSelf0[初期選択位置] = ["X[戦]記憶キー位置取得"] <CommonEv 155>  / 20:[戦闘]敵ターゲット[対象不要] / -1
+■Call Event [Name]: CSelf0[初期選択位置] = ["X[Bat]Get Cursor Memory Pos"] <CommonEv 155>  / 20:[戦闘]敵ターゲット[対象不要] / -1
 ■Load DB(Var):  CSelf11[選択可能最大値] = VarDB[ "Base System Variables":69:0 ] (18:[Battle] Max Enemy Count (System):Number) 
 ▼  
 ▼ 左端から順番に敵番号をセット
@@ -303,7 +303,7 @@ WoditorEvCOMMAND_END
  | |■Set Variable: CSelf13[チェック対象] = 1600040 + 0 
  | |■Set Variable: CSelf13[チェック対象] += CSelf10[選択箇所] + 0 
  | |■Set Variable: CSelf12[一時変数A] = V[CSelf13[チェック対象]] + 10 
- | |■Call Event [Name]: CSelf14[戦闘不能チェック] = ["X[戦]基本状態取得"] <CommonEv 176>  / CSelf12[一時変数A] / 0:戦闘不能状態
+ | |■Call Event [Name]: CSelf14[戦闘不能チェック] = ["X[Bat]Get Basic State"] <CommonEv 176>  / CSelf12[一時変数A] / 0:戦闘不能状態
  | |■Condition (Number):   [1] CSelf14[戦闘不能チェック] <=  0  
  | |-◇Condition:  [1]  [ CSelf14[戦闘不能チェック] <= 0   ] Case↓
  | | |▼ 戦闘不能でなければそのキャラを対象とする
@@ -318,28 +318,28 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf13[チェック対象] = 1600040 + 0 
  |■Set Variable: CSelf13[チェック対象] += CSelf10[選択箇所] + 0 
  |■Set Variable: CSelf12[一時変数A] = V[CSelf13[チェック対象]] + 10 
- |■Call Event [Name]: ["X[戦]敵キャラ_単体描画"] <CommonEv 179>  / 12:カーソルＯＦＦ / -1
- |■Call Event [Name]: ["X[戦]敵キャラ_単体描画"] <CommonEv 179>  / 10:カーソルＯＮ / CSelf12[一時変数A]
+ |■Call Event [Name]: ["X[Bat]Enemy: Draw One"] <CommonEv 179>  / 12:カーソルＯＦＦ / -1
+ |■Call Event [Name]: ["X[Bat]Enemy: Draw One"] <CommonEv 179>  / 10:カーソルＯＮ / CSelf12[一時変数A]
  |■Key Input: CSelf20[キー入力１] [Wait For Input <!>]  4-Dir. Confirm(10) Cancel(11)
  |■Condition (Number):   [1] CSelf20[キー入力１] ==  10  /  [2] CSelf20[キー入力１] ==  11  /  [3] CSelf20[キー入力１] ==  2  
  |-◇Condition:  [1]  [ CSelf20[キー入力１] == 10   ] Case↓
  | |▼ 決定キー
- | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 0:決定音
+ | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
  | |▼ 位置を記憶
- | |■Call Event [Name]: ["X[戦]記憶キー位置設定"] <CommonEv 156>  / 20:[戦闘]敵ターゲット[対象不要] / -1 / CSelf10[選択箇所]
+ | |■Call Event [Name]: ["X[Bat]Set Cursor Memory Pos"] <CommonEv 156>  / 20:[戦闘]敵ターゲット[対象不要] / -1 / CSelf10[選択箇所]
  | |■Set Variable: CSelf10[選択箇所] = CSelf12[一時変数A] + 0 
  | |■Break Loop
  | |■
  |-◇Condition:  [2]  [ CSelf20[キー入力１] == 11   ] Case↓
  | |▼ キャンセルキー
- | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 1:キャンセル音
- | |■Call Event [Name]: ["X[戦]敵キャラ_単体描画"] <CommonEv 179>  / 12:カーソルＯＦＦ / -1
+ | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 1:Cancel Sound
+ | |■Call Event [Name]: ["X[Bat]Enemy: Draw One"] <CommonEv 179>  / 12:カーソルＯＦＦ / -1
  | |■Set Variable: CSelf10[選択箇所] = -1 + 0 
  | |■Break Loop
  | |■
  |-◇Condition:  [3]  [ CSelf20[キー入力１] == 2   ] Case↓
  | |▼ 下キー
- | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 5:カーソル移動音
+ | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
  | |■Set Variable: CSelf10[選択箇所] += 1 + 0 
  | |■Set Variable: CSelf10[選択箇所] %= CSelf11[選択可能最大値] + 0 
  | |■Set Variable: CSelf30[チェック方向(1/-1)] = 1 + 0 
@@ -348,21 +348,21 @@ WoditorEvCOMMAND_END
  | |■Condition (Number):   [1] CSelf20[キー入力１] ==  8  /  [2] CSelf20[キー入力１] ==  4  /  [3] CSelf20[キー入力１] ==  6  
  | |-◇Condition:  [1]  [ CSelf20[キー入力１] == 8   ] Case↓
  | | |▼ 上キー
- | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 5:カーソル移動音
+ | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
  | | |■Set Variable: CSelf10[選択箇所] += -1 + CSelf11[選択可能最大値] 
  | | |■Set Variable: CSelf10[選択箇所] %= CSelf11[選択可能最大値] + 0 
  | | |■Set Variable: CSelf30[チェック方向(1/-1)] = -1 + 0 
  | | |■
  | |-◇Condition:  [2]  [ CSelf20[キー入力１] == 4   ] Case↓
  | | |▼ 左キー
- | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 5:カーソル移動音
+ | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
  | | |■Set Variable: CSelf10[選択箇所] += -1 + CSelf11[選択可能最大値] 
  | | |■Set Variable: CSelf10[選択箇所] %= CSelf11[選択可能最大値] + 0 
  | | |■Set Variable: CSelf30[チェック方向(1/-1)] = -1 + 0 
  | | |■
  | |-◇Condition:  [3]  [ CSelf20[キー入力１] == 6   ] Case↓
  | | |▼ 右キー
- | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 5:カーソル移動音
+ | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
  | | |■Set Variable: CSelf10[選択箇所] += 1 + 0 
  | | |■Set Variable: CSelf10[選択箇所] %= CSelf11[選択可能最大値] + 0 
  | | |■Set Variable: CSelf30[チェック方向(1/-1)] = 1 + 0 

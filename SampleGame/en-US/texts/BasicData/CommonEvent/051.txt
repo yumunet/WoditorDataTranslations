@@ -1,5 +1,5 @@
 COMMON_ID=51
-COMMON_NAME=X[共]武器増減
+COMMON_NAME=X[Com]Change Weapons
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -8,8 +8,8 @@ MEMO=
 VALINPUT_NUM=2
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=武器番号
-VALINPUT_NAME_1=増減数
+VALINPUT_NAME_0=Weapon ID
+VALINPUT_NAME_1=Amount
 VALINPUT_NAME_2=
 VALINPUT_NAME_3=
 VALINPUT_NAME_4=
@@ -62,10 +62,10 @@ DEFAULT_VAL_1=0
 DEFAULT_VAL_2=0
 DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
-RETURN_VAL_NAME=実増減数
+RETURN_VAL_NAME=Actual Change
 RETURN_VAL_TARGET=99
-CSELF_NAME_0=武器番号
-CSELF_NAME_1=増減数
+CSELF_NAME_0=Weapon ID
+CSELF_NAME_1=Amount
 CSELF_NAME_2=
 CSELF_NAME_3=
 CSELF_NAME_4=
@@ -74,7 +74,7 @@ CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=
-CSELF_NAME_10=最大所持数
+CSELF_NAME_10=Max Quantity
 CSELF_NAME_11=
 CSELF_NAME_12=
 CSELF_NAME_13=
@@ -163,32 +163,32 @@ CSELF_NAME_95=
 CSELF_NAME_96=
 CSELF_NAME_97=
 CSELF_NAME_98=
-CSELF_NAME_99=実増減数
+CSELF_NAME_99=Actual Change
 COMMAND_NUM=40
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
-[103][0,1]<0>()("　基本システム内で主人公の所持武器を増減させるときは、必ずこのコモンイベントを使用します。")
-[103][0,1]<0>()("　移動中でも戦闘中でも有効です。")
-[103][0,1]<0>()("　自動的に持てる限界数を調整します。")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("  This common event is always used to increase or decrease the weapon quantity in the base system.")
+[103][0,1]<0>()("  Works both on the map and in battle.")
+[103][0,1]<0>()("  Automatically adjusts for the quantity limit.")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
-[103][0,1]<0>()("　可変DB「┣所持武器個数」")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()("  Variable DB <dqrt>┣ Owned Weapon Count<dqrt>")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
-[103][0,1]<0>()("　なし")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()("  None")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [111][4,0]<0>(1,1600000,0,4)()
 [401][1,0]<0>(1)()
-[106][0,1]<1>()("【基本システムエラー】<\n> 異常な武器IDが指定されています！<\n>　→　\cself[0]")
+[106][0,1]<1>()("[Base System Error]<\n> An abnormal Weapon ID is specified!<\n>  →  \cself[0]")
 [172][0,0]<1>()()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [111][4,0]<0>(1,1600000,9999,0)()
 [401][1,0]<0>(1)()
-[106][0,1]<1>()("【基本システムエラー】<\n> 異常な武器IDが指定されています！<\n>　→　\cself[0]")
+[106][0,1]<1>()("[Base System Error]<\n> An abnormal Weapon ID is specified!<\n>  →  \cself[0]")
 [172][0,0]<1>()()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
@@ -196,9 +196,9 @@ WoditorEvCOMMAND_START
 [111][4,0]<0>(1,1600000,0,1)()
 [401][1,0]<0>(1)()
 [250][5,4]<1>(5,1600000,0,69632,1600099)("","┣ Owned Weapon Count","","")
-[103][0,1]<1>()("個数を加算")
+[103][0,1]<1>()("Add to quantity.")
 [250][5,4]<1>(5,1600000,0,65552,1600001)("","┣ Owned Weapon Count","","")
-[103][0,1]<1>()("0個以上、最大所持数以下になるように調整")
+[103][0,1]<1>()("Adjust to be between 0 and the maximum quantity (inclusive).")
 [250][5,4]<1>(5,1600000,0,65632,0)("","┣ Owned Weapon Count","","")
 [250][5,4]<1>(5,1600000,0,65648,1600010)("","┣ Owned Weapon Count","","")
 [103][0,1]<1>()(" ")
@@ -211,42 +211,42 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
-▼ 　基本システム内で主人公の所持武器を増減させるときは、必ずこのコモンイベントを使用します。
-▼ 　移動中でも戦闘中でも有効です。
-▼ 　自動的に持てる限界数を調整します。
+▼ [Process Overview]
+▼   This common event is always used to increase or decrease the weapon quantity in the base system.
+▼   Works both on the map and in battle.
+▼   Automatically adjusts for the quantity limit.
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【このコモンイベント内で操作しているデータベース】
-▼ 　可変DB「┣所持武器個数」
+▼ [Databases Accessed by This Common Event]
+▼   Variable DB "┣ Owned Weapon Count"
 ▼  
-▼ 【ここから呼び出している別コモンイベント】
-▼ 　なし
+▼ [Other Common Events Called from Here]
+▼   None
 ▼  
 ▼ ―――――――――――――――――――――――――――――――――――
-■Condition (Number):   [1] CSelf0[武器番号] <  0  
--◇Condition:  [1]  [ CSelf0[武器番号] < 0   ] Case↓
- |■Debug Text: 【基本システムエラー】\n 異常な武器IDが指定されています！\n　→　\cself[0]
+■Condition (Number):   [1] CSelf0[Weapon ID] <  0  
+-◇Condition:  [1]  [ CSelf0[Weapon ID] < 0   ] Case↓
+ |■Debug Text: [Base System Error]\n An abnormal Weapon ID is specified!\n  →  \cself[0]
  |■Exit Event
  |■
 ◇End◇
-■Condition (Number):   [1] CSelf0[武器番号] >  9999  
--◇Condition:  [1]  [ CSelf0[武器番号] > 9999   ] Case↓
- |■Debug Text: 【基本システムエラー】\n 異常な武器IDが指定されています！\n　→　\cself[0]
+■Condition (Number):   [1] CSelf0[Weapon ID] >  9999  
+-◇Condition:  [1]  [ CSelf0[Weapon ID] > 9999   ] Case↓
+ |■Debug Text: [Base System Error]\n An abnormal Weapon ID is specified!\n  →  \cself[0]
  |■Exit Event
  |■
 ◇End◇
-■Load DB(User):  CSelf10[最大所持数] = UserDB[ "System Settings":0:"Maximum Item Quantity" ] (17:Basic System Settings:0) 
-■Condition (Number):   [1] CSelf0[武器番号] >=  0  
--◇Condition:  [1]  [ CSelf0[武器番号] >= 0   ] Case↓
- |■Load DB(Var):  CSelf99[実増減数] = VarDB[ "┣ Owned Weapon Count":CSelf0[武器番号]:0 ] (8:-:Quantity Owned) 
- |▼ 個数を加算
- |■Write to DB(Var): VarDB[ "┣ Owned Weapon Count":CSelf0[武器番号]:0 ] (8:-:Quantity Owned) +=  CSelf1[増減数]
- |▼ 0個以上、最大所持数以下になるように調整
- |■Write to DB(Var): VarDB[ "┣ Owned Weapon Count":CSelf0[武器番号]:0 ] (8:-:Quantity Owned) Lower Bound  0
- |■Write to DB(Var): VarDB[ "┣ Owned Weapon Count":CSelf0[武器番号]:0 ] (8:-:Quantity Owned) Upper Bound  CSelf10[最大所持数]
+■Load DB(User):  CSelf10[Max Quantity] = UserDB[ "System Settings":0:"Maximum Item Quantity" ] (17:Basic System Settings:0) 
+■Condition (Number):   [1] CSelf0[Weapon ID] >=  0  
+-◇Condition:  [1]  [ CSelf0[Weapon ID] >= 0   ] Case↓
+ |■Load DB(Var):  CSelf99[Actual Change] = VarDB[ "┣ Owned Weapon Count":CSelf0[Weapon ID]:0 ] (8:-:Quantity Owned) 
+ |▼ Add to quantity.
+ |■Write to DB(Var): VarDB[ "┣ Owned Weapon Count":CSelf0[Weapon ID]:0 ] (8:-:Quantity Owned) +=  CSelf1[Amount]
+ |▼ Adjust to be between 0 and the maximum quantity (inclusive).
+ |■Write to DB(Var): VarDB[ "┣ Owned Weapon Count":CSelf0[Weapon ID]:0 ] (8:-:Quantity Owned) Lower Bound  0
+ |■Write to DB(Var): VarDB[ "┣ Owned Weapon Count":CSelf0[Weapon ID]:0 ] (8:-:Quantity Owned) Upper Bound  CSelf10[Max Quantity]
  |▼  
- |■Load DB(Var):  CSelf99[実増減数] -= VarDB[ "┣ Owned Weapon Count":CSelf0[武器番号]:0 ] (8:-:Quantity Owned) 
- |■Set Variable: CSelf99[実増減数] *= -1 + 0 
+ |■Load DB(Var):  CSelf99[Actual Change] -= VarDB[ "┣ Owned Weapon Count":CSelf0[Weapon ID]:0 ] (8:-:Quantity Owned) 
+ |■Set Variable: CSelf99[Actual Change] *= -1 + 0 
  |■
 ◇End◇
 ■

@@ -1,5 +1,5 @@
 COMMON_ID=138
-COMMON_NAME=X[戦]┗状態変化ﾒｯｾｰｼﾞ
+COMMON_NAME=X[Bat]┗ Display State Message
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -168,7 +168,7 @@ COMMAND_NUM=25
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　状態異常の付与・回復によるメッセージを表示します。")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("数値取得")
@@ -188,7 +188,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<0>(1)()
 [250][5,4]<1>(11,1600000,0,331776,1600008)("","×┏Battle Temp Status","","Character Name")
 [122][2,1]<1>(1600009,0)("\cself[8]\cself[9]")
-[300][4,1]<1>(0,17,0,1600009)("X[戦]戦闘メッセージ表示")
+[300][4,1]<1>(0,17,0,1600009)("X[Bat]Display Battle Message")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [0][0,0]<0>()()
@@ -196,7 +196,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　状態異常の付与・回復によるメッセージを表示します。
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ 数値取得
@@ -216,7 +216,7 @@ WoditorEvCOMMAND_END
 -◇Condition:  [1] [ CSelf9[状態変化文章] is not equal to "" ] Case↓
  |■Load DB(Var):  CSelf8[キャラ名] = VarDB[ "×┏Battle Temp Status":CSelf0[対象スロット]:"Character Name" ] (10:-:0) 
  |■Set String: CSelf9[状態変化文章] = "\cself[8]\cself[9]"
- |■Call Event [Name]: ["X[戦]戦闘メッセージ表示"] <CommonEv 182>  / 0:表示→自動削除 / CSelf9[状態変化文章]
+ |■Call Event [Name]: ["X[Bat]Display Battle Message"] <CommonEv 182>  / 0:表示→自動削除 / CSelf9[状態変化文章]
  |■
 ◇End◇
 ■

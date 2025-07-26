@@ -1,5 +1,5 @@
 COMMON_ID=86
-COMMON_NAME=X[移]┗ お店内部情報更新
+COMMON_NAME=X[Map]┗ Update Shop Internal Data
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -176,13 +176,13 @@ COMMAND_NUM=303
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　基本システム内で主人公の所持金を取得するときは、必ずこのコモンイベントを使用します。")
 [103][0,1]<0>()("　移動中でも戦闘中でも有効です。")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [121][4,0]<0>(1600040,0,0,0)()
 [250][5,4]<0>(14,0,18,332288,1600007)("","Terms","","[Stats] Currency")
-[300][3,1]<0>(0,16777216,1600019)("X[共]所持金取得")
+[300][3,1]<0>(0,16777216,1600019)("X[Com]Get Current Money")
 [103][0,1]<0>()("万能ウィンドウ一覧に買う・売るアイテムを格納")
 [250][5,4]<0>(19,-2,18,65536,1600020)("","Universal Window Items","","")
 [250][5,4]<0>(18,17,0,65536,0)("","Base System Variables","","")
@@ -374,7 +374,7 @@ WoditorEvCOMMAND_START
 [179][1,0]<2>(1600023)()
 [121][4,0]<3>(1600010,1,0,256)()
 [121][4,0]<3>(1600033,1,0,0)()
-[300][4,1]<3>(0,16777217,1600010,1600014)("X[移]選択位置主人公ID取得")
+[300][4,1]<3>(0,16777217,1600010,1600014)("X[Map]Get Ally ID")
 [111][4,0]<3>(1,1600014,0,1)()
 [401][1,0]<3>(1)()
 [111][10,0]<4>(3,1600035,-1,2,1600035,-2,3,1600035,0,1)()
@@ -425,21 +425,21 @@ WoditorEvCOMMAND_START
 [179][1,0]<4>(1)()
 [103][0,1]<5>()("そのキャラが装備中かどうかチェック")
 [121][4,0]<5>(1600037,1,0,0)()
-[300][5,1]<5>(0,16777218,1600014,0,1600036)("X[移]選択箇所装備コード取得")
+[300][5,1]<5>(0,16777218,1600014,0,1600036)("X[Map]Get Equipment ID")
 [121][4,0]<5>(1600037,1600027,1600036,4865)()
-[300][5,1]<5>(0,16777218,1600014,1,1600036)("X[移]選択箇所装備コード取得")
+[300][5,1]<5>(0,16777218,1600014,1,1600036)("X[Map]Get Equipment ID")
 [121][4,0]<5>(1600037,1600027,1600036,4865)()
-[300][5,1]<5>(0,16777218,1600014,2,1600036)("X[移]選択箇所装備コード取得")
+[300][5,1]<5>(0,16777218,1600014,2,1600036)("X[Map]Get Equipment ID")
 [121][4,0]<5>(1600037,1600027,1600036,4865)()
-[300][5,1]<5>(0,16777218,1600014,3,1600036)("X[移]選択箇所装備コード取得")
+[300][5,1]<5>(0,16777218,1600014,3,1600036)("X[Map]Get Equipment ID")
 [121][4,0]<5>(1600037,1600027,1600036,4865)()
-[300][5,1]<5>(0,16777218,1600014,4,1600036)("X[移]選択箇所装備コード取得")
+[300][5,1]<5>(0,16777218,1600014,4,1600036)("X[Map]Get Equipment ID")
 [121][4,0]<5>(1600037,1600027,1600036,4865)()
-[300][5,1]<5>(0,16777218,1600014,5,1600036)("X[移]選択箇所装備コード取得")
+[300][5,1]<5>(0,16777218,1600014,5,1600036)("X[Map]Get Equipment ID")
 [121][4,0]<5>(1600037,1600027,1600036,4865)()
-[300][5,1]<5>(0,16777218,1600014,6,1600036)("X[移]選択箇所装備コード取得")
+[300][5,1]<5>(0,16777218,1600014,6,1600036)("X[Map]Get Equipment ID")
 [121][4,0]<5>(1600037,1600027,1600036,4865)()
-[300][5,1]<5>(0,16777218,1600014,7,1600036)("X[移]選択箇所装備コード取得")
+[300][5,1]<5>(0,16777218,1600014,7,1600036)("X[Map]Get Equipment ID")
 [121][4,0]<5>(1600037,1600027,1600036,4865)()
 [103][0,1]<5>()("もし一個でも対象の装備をしていれば、ここでフラグが0になっている")
 [111][4,0]<5>(1,1600037,0,2)()
@@ -451,8 +451,8 @@ WoditorEvCOMMAND_START
 [0][0,0]<5>()()
 [498][0,0]<4>()()
 [103][0,1]<4>()("装備可能状態を格納する")
-[300][4,1]<4>(0,16777217,1600010,1600014)("X[移]選択位置主人公ID取得")
-[300][5,1]<4>(0,16777218,1600014,0,1600006)("X[移]パラメータ取得(文字列)")
+[300][4,1]<4>(0,16777217,1600010,1600014)("X[Map]Get Ally ID")
+[300][5,1]<4>(0,16777218,1600014,0,1600006)("X[Map]Get Parameter (String)")
 [122][2,1]<4>(1600006,256)("　")
 [111][10,0]<4>(3,1600033,0,2,1600033,1,2,1600033,2,2)()
 [401][1,0]<4>(1)()
@@ -482,13 +482,13 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　基本システム内で主人公の所持金を取得するときは、必ずこのコモンイベントを使用します。
 ▼ 　移動中でも戦闘中でも有効です。
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Set Variable: CSelf40[エラー回避カウンター] = 0 + 0 
 ■Load DB(User):  CSelf7[金額単位] = UserDB[ "Terms":0:"[Stats] Currency" ] (15:Basic Terms:18) 
-■Call Event [Name]: CSelf19[現在所持金] = ["X[共]所持金取得"] <CommonEv 57> 
+■Call Event [Name]: CSelf19[現在所持金] = ["X[Com]Get Current Money"] <CommonEv 57> 
 ▼ 万能ウィンドウ一覧に買う・売るアイテムを格納
 ■Write to DB(Var): [Reset Type "Universal Window Items"(19)]
 ■Write to DB(Var): VarDB[ "Base System Variables":17:0 ] (18:Universal Window Item Count:Number) =  0
@@ -680,7 +680,7 @@ WoditorEvCOMMAND_END
  | |■Repeat Loop [ CSelf23[パーティ人数] ] Times
  | | |■Set Variable: CSelf10[一時変数A] += 1 + 0 
  | | |■Set Variable: CSelf33[装備可能フラグ] = 1 + 0 
- | | |■Call Event [Name]: CSelf14[キャラID] = ["X[移]選択位置主人公ID取得"] <CommonEv 105>  / CSelf10[一時変数A]
+ | | |■Call Event [Name]: CSelf14[キャラID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf10[一時変数A]
  | | |■Condition (Number):   [1] CSelf14[キャラID] >=  0  
  | | |-◇Condition:  [1]  [ CSelf14[キャラID] >= 0   ] Case↓
  | | | |■Condition (Number):   [1] CSelf35[対象の装備タイプ] ==  -1  /  [2] CSelf35[対象の装備タイプ] <=  -2  /  [3] CSelf35[対象の装備タイプ] >=  0  
@@ -731,21 +731,21 @@ WoditorEvCOMMAND_END
  | | | |■Repeat Loop [ 1 ] Times
  | | | | |▼ そのキャラが装備中かどうかチェック
  | | | | |■Set Variable: CSelf37[装備中フラグ] = 1 + 0 
- | | | | |■Call Event [Name]: CSelf36[一時装備タイプ] = ["X[移]選択箇所装備コード取得"] <CommonEv 106>  / CSelf14[キャラID] / 0
+ | | | | |■Call Event [Name]: CSelf36[一時装備タイプ] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf14[キャラID] / 0
  | | | | |■Set Variable: [Limit] CSelf37[装備中フラグ] *= CSelf27[コード] - CSelf36[一時装備タイプ] 
- | | | | |■Call Event [Name]: CSelf36[一時装備タイプ] = ["X[移]選択箇所装備コード取得"] <CommonEv 106>  / CSelf14[キャラID] / 1
+ | | | | |■Call Event [Name]: CSelf36[一時装備タイプ] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf14[キャラID] / 1
  | | | | |■Set Variable: [Limit] CSelf37[装備中フラグ] *= CSelf27[コード] - CSelf36[一時装備タイプ] 
- | | | | |■Call Event [Name]: CSelf36[一時装備タイプ] = ["X[移]選択箇所装備コード取得"] <CommonEv 106>  / CSelf14[キャラID] / 2
+ | | | | |■Call Event [Name]: CSelf36[一時装備タイプ] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf14[キャラID] / 2
  | | | | |■Set Variable: [Limit] CSelf37[装備中フラグ] *= CSelf27[コード] - CSelf36[一時装備タイプ] 
- | | | | |■Call Event [Name]: CSelf36[一時装備タイプ] = ["X[移]選択箇所装備コード取得"] <CommonEv 106>  / CSelf14[キャラID] / 3
+ | | | | |■Call Event [Name]: CSelf36[一時装備タイプ] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf14[キャラID] / 3
  | | | | |■Set Variable: [Limit] CSelf37[装備中フラグ] *= CSelf27[コード] - CSelf36[一時装備タイプ] 
- | | | | |■Call Event [Name]: CSelf36[一時装備タイプ] = ["X[移]選択箇所装備コード取得"] <CommonEv 106>  / CSelf14[キャラID] / 4
+ | | | | |■Call Event [Name]: CSelf36[一時装備タイプ] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf14[キャラID] / 4
  | | | | |■Set Variable: [Limit] CSelf37[装備中フラグ] *= CSelf27[コード] - CSelf36[一時装備タイプ] 
- | | | | |■Call Event [Name]: CSelf36[一時装備タイプ] = ["X[移]選択箇所装備コード取得"] <CommonEv 106>  / CSelf14[キャラID] / 5
+ | | | | |■Call Event [Name]: CSelf36[一時装備タイプ] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf14[キャラID] / 5
  | | | | |■Set Variable: [Limit] CSelf37[装備中フラグ] *= CSelf27[コード] - CSelf36[一時装備タイプ] 
- | | | | |■Call Event [Name]: CSelf36[一時装備タイプ] = ["X[移]選択箇所装備コード取得"] <CommonEv 106>  / CSelf14[キャラID] / 6
+ | | | | |■Call Event [Name]: CSelf36[一時装備タイプ] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf14[キャラID] / 6
  | | | | |■Set Variable: [Limit] CSelf37[装備中フラグ] *= CSelf27[コード] - CSelf36[一時装備タイプ] 
- | | | | |■Call Event [Name]: CSelf36[一時装備タイプ] = ["X[移]選択箇所装備コード取得"] <CommonEv 106>  / CSelf14[キャラID] / 7
+ | | | | |■Call Event [Name]: CSelf36[一時装備タイプ] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf14[キャラID] / 7
  | | | | |■Set Variable: [Limit] CSelf37[装備中フラグ] *= CSelf27[コード] - CSelf36[一時装備タイプ] 
  | | | | |▼ もし一個でも対象の装備をしていれば、ここでフラグが0になっている
  | | | | |■Condition (Number):   [1] CSelf37[装備中フラグ] ==  0  
@@ -757,8 +757,8 @@ WoditorEvCOMMAND_END
  | | | | |■
  | | | |◇Loop End Point◇◇
  | | | |▼ 装備可能状態を格納する
- | | | |■Call Event [Name]: CSelf14[キャラID] = ["X[移]選択位置主人公ID取得"] <CommonEv 105>  / CSelf10[一時変数A]
- | | | |■Call Event [Name]: CSelf6[一時変数A] = ["X[移]パラメータ取得(文字列)"] <CommonEv 73>  / CSelf14[キャラID] / 0:名前
+ | | | |■Call Event [Name]: CSelf14[キャラID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf10[一時変数A]
+ | | | |■Call Event [Name]: CSelf6[一時変数A] = ["X[Map]Get Parameter (String)"] <CommonEv 73>  / CSelf14[キャラID] / 0:名前
  | | | |■Set String: CSelf6[一時変数A] += "　"
  | | | |■Condition (Number):   [1] CSelf33[装備可能フラグ] ==  0  /  [2] CSelf33[装備可能フラグ] ==  1  /  [3] CSelf33[装備可能フラグ] ==  2  
  | | | |-◇Condition:  [1]  [ CSelf33[装備可能フラグ] == 0   ] Case↓

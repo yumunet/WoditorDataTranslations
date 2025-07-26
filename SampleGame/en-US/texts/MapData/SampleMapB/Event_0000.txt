@@ -44,6 +44,6 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Call Event: Common 37: [ ◇ランダムエンカウント処理  ] / 20 / 31:Goblin x1 / -1:<なし> / -1:<なし>
+■Call Event: Common 37: [ ◇Random Encounter ] / 20 / 31:Goblin x1 / -1:<None> / -1:<None>
 ■
 [COMMAND_TEXT_END]

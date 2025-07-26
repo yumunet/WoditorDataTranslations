@@ -1,5 +1,5 @@
 COMMON_ID=129
-COMMON_NAME=X┣[移]技能欄実行
+COMMON_NAME=X┣[Map]Execute Skills Menu
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -168,14 +168,14 @@ COMMAND_NUM=109
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　技能欄を開き、使用し、終了するまでの処理を実行します。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("座標倍率を取得")
 [103][0,1]<0>()("Ver2.20　座標倍率を縦横別に修正")
@@ -186,22 +186,22 @@ WoditorEvCOMMAND_START
 [179][1,0]<0>(1600000)()
 [212][0,1]<1>()("パーティ表示")
 [121][4,0]<1>(1600010,0,0,0)()
-[300][3,1]<1>(0,1,0)("X[移]キャラ欄_全員描画")
+[300][3,1]<1>(0,1,0)("X[Map]Character Box: Draw All")
 [0][0,0]<1>()()
 [498][0,0]<0>()()
 [250][5,4]<0>(13,0,1,332288,1600009)("","Terms","","[Menu] Skills")
-[300][6,4]<0>(0,28721,0,1600005,1600005,1600005)("X[移]ミニウィンドウ表示","誰が\cself[9]を","使用しますか？","")
-[300][3,1]<0>(0,1,1600099)("X[移]ｷｬﾗｸﾀｰ欄_選択実行")
-[300][6,4]<0>(0,28721,-1,1600005,1600005,1600005)("X[移]ミニウィンドウ表示","","","")
+[300][6,4]<0>(0,28721,0,1600005,1600005,1600005)("X[Map]Display Mini Window","誰が\cself[9]を","使用しますか？","")
+[300][3,1]<0>(0,1,1600099)("X[Map]Select Character Box")
+[300][6,4]<0>(0,28721,-1,1600005,1600005,1600005)("X[Map]Display Mini Window","","","")
 [250][5,4]<0>(18,2,0,462848,1600020)("","Base System Variables","Selected ID","Number")
 [121][4,0]<0>(1600029,0,0,0)()
 [111][4,0]<0>(1,1600020,-1,2)()
 [401][1,0]<0>(1)()
 [103][0,1]<1>()("キャンセル時はそのまま終了")
-[300][5,1]<1>(0,3,2,-1,-1)("X[移]キャラクター欄描画")
+[300][5,1]<1>(0,3,2,-1,-1)("X[Map]Draw Character Box")
 [111][4,0]<1>(1,1600000,1,2)()
 [401][1,0]<1>(1)()
-[300][3,1]<2>(0,1,-1)("X[移]キャラ欄_全員描画")
+[300][3,1]<2>(0,1,-1)("X[Map]Character Box: Draw All")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [172][0,0]<1>()()
@@ -211,14 +211,14 @@ WoditorEvCOMMAND_START
 [401][1,0]<0>(1)()
 [103][0,1]<1>()("ここで主人公IDを取得する")
 [121][4,0]<1>(1600099,1600020,0,0)()
-[300][4,1]<1>(0,16777217,1600020,1600011)("X[移]選択位置主人公ID取得")
-[300][5,1]<1>(0,16777218,0,1600011,1600098)("X[移]記憶キー位置取得")
+[300][4,1]<1>(0,16777217,1600020,1600011)("X[Map]Get Ally ID")
+[300][5,1]<1>(0,16777218,0,1600011,1600098)("X[Map]Get Cursor Memory Pos")
 [212][0,1]<1>()("技能選択")
-[300][3,1]<1>(0,1,-1)("X[移]キャラ欄_全員描画")
+[300][3,1]<1>(0,1,-1)("X[Map]Character Box: Draw All")
 [103][0,1]<1>()("万能ウィンドウ設定を初期化")
-[300][3,1]<1>(0,1,1600011)("X[移]技能一覧算出")
+[300][3,1]<1>(0,1,1600011)("X[Map]Create Skill List")
 [103][0,1]<1>()("万能ウィンドウ表示")
-[300][4,1]<1>(0,2,0,1600011)("X[移]上部ステータス描画")
+[300][4,1]<1>(0,2,0,1600011)("X[Map]Draw Upper Status")
 [103][0,1]<1>()("万能ウィンドウのサイズ設定")
 [121][4,0]<1>(1600035,1,1600088,8192)()
 [250][5,4]<1>(18,9,0,65536,1600035)("","Base System Variables","","")
@@ -234,26 +234,26 @@ WoditorEvCOMMAND_START
 [250][5,4]<1>(18,14,0,65536,1600035)("","Base System Variables","","")
 [121][4,0]<1>(1600035,3,1600089,8192)()
 [250][5,4]<1>(18,16,0,65536,1600035)("","Base System Variables","","")
-[300][6,1]<1>(0,4,0,-1,4,1)("X[共]万能ｳｨﾝﾄﾞｳ描画処理")
+[300][6,1]<1>(0,4,0,-1,4,1)("X[Com]Draw Universal Window")
 [103][0,1]<1>()("万能ウィンドウ選択処理を実行")
 [179][1,0]<1>(1)()
 [103][0,1]<2>()("万能ウィンドウ選択処理を実行")
 [250][5,4]<2>(18,21,0,65536,1600098)("","Base System Variables","","")
-[300][4,1]<2>(0,16777217,2,1600022)("X[共]万能ｳｨﾝﾄﾞｳ選択実行")
+[300][4,1]<2>(0,16777217,2,1600022)("X[Com]U-Window: Select")
 [250][5,4]<2>(18,61,0,69632,1600098)("","Base System Variables","","")
-[300][5,1]<2>(0,3,0,1600011,1600098)("X[移]記憶キー位置設定")
+[300][5,1]<2>(0,3,0,1600011,1600098)("X[Map]Set Cursor Memory Pos")
 [0][0,0]<2>()()
 [498][0,0]<1>()()
-[300][6,1]<1>(0,4,-1,0,4,1)("X[共]万能ｳｨﾝﾄﾞｳ描画処理")
+[300][6,1]<1>(0,4,-1,0,4,1)("X[Com]Draw Universal Window")
 [99][1,0]<1>(1)()
 [103][0,1]<1>()("技能使用時の処理")
 [111][7,0]<1>(2,1600022,-100,2,1600022,0,1)()
 [401][1,0]<1>(1)()
 [103][0,1]<2>()("キャンセル時は終了")
-[300][5,1]<2>(0,3,-1,0,0)("X[移]上部ステータス描画")
+[300][5,1]<2>(0,3,-1,0,0)("X[Map]Draw Upper Status")
 [111][4,0]<2>(1,1600000,0,2)()
 [401][1,0]<2>(1)()
-[300][3,1]<3>(0,1,0)("X[移]キャラ欄_全員描画")
+[300][3,1]<3>(0,1,0)("X[Map]Character Box: Draw All")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [213][0,1]<2>()("パーティ表示")
@@ -261,9 +261,9 @@ WoditorEvCOMMAND_START
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
 [103][0,1]<2>()("何か技能を選んでいた場合、ターゲット選択 or 実行")
-[300][5,1]<2>(0,3,-1,0,0)("X[移]上部ステータス描画")
-[300][3,1]<2>(0,1,0)("X[移]キャラ欄_全員描画")
-[300][5,1]<2>(0,3,1600022,1600011,-1)("X[移]技能使用効果処理")
+[300][5,1]<2>(0,3,-1,0,0)("X[Map]Draw Upper Status")
+[300][3,1]<2>(0,1,0)("X[Map]Character Box: Draw All")
+[300][5,1]<2>(0,3,1600022,1600011,-1)("X[Map]Use Skill")
 [250][5,4]<2>(18,1,0,462848,1600010)("","Base System Variables","Menu Close Flag","Number")
 [111][4,0]<2>(1,1600010,1,2)()
 [401][1,0]<2>(1)()
@@ -280,14 +280,14 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　技能欄を開き、使用し、終了するまでの処理を実行します。
 ▼ 
-▼ 【このコモンイベント内で操作しているデータベース】
+▼ [Databases Accessed by This Common Event]
 ▼  
-▼ 【ここから呼び出している別コモンイベント】
+▼ [Other Common Events Called from Here]
 ▼  
-▼ 【どのコモンイベントから主に呼び出されているか】
+▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ 座標倍率を取得
 ▼ Ver2.20　座標倍率を縦横別に修正
@@ -298,22 +298,22 @@ WoditorEvCOMMAND_END
 ■Repeat Loop [ CSelf0[処理モード] ] Times
  |●Label Point [パーティ表示] <<<<<<<<<<<<<<<<<<<<<<<<★
  |■Set Variable: CSelf10[一時TMP１] = 0 + 0 
- |■Call Event [Name]: ["X[移]キャラ欄_全員描画"] <CommonEv 92>  / 0:新規に全員描画
+ |■Call Event [Name]: ["X[Map]Character Box: Draw All"] <CommonEv 92>  / 0:新規に全員描画
  |■
 ◇Loop End Point◇◇
 ■Load DB(User):  CSelf9 = UserDB[ "Terms":0:"[Menu] Skills" ] (15:Basic Terms:1) 
-■Call Event [Name]: ["X[移]ミニウィンドウ表示"] <CommonEv 100>  / 0:表示 / 誰が\cself[9]を / 使用しますか？ / 
-■Call Event [Name]: ["X[移]ｷｬﾗｸﾀｰ欄_選択実行"] <CommonEv 108>  / CSelf99[キャラ初期選択位置]
-■Call Event [Name]: ["X[移]ミニウィンドウ表示"] <CommonEv 100>  / -1:削除 /  /  / 
+■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / 0:表示 / 誰が\cself[9]を / 使用しますか？ / 
+■Call Event [Name]: ["X[Map]Select Character Box"] <CommonEv 108>  / CSelf99[キャラ初期選択位置]
+■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / -1:削除 /  /  / 
 ■Load DB(Var):  CSelf20[選択キャラ位置（0～5）] = VarDB[ "Base System Variables":"Selected ID":"Number" ] (18:2:0) 
 ■Set Variable: CSelf29[キャラ再表示する？] = 0 + 0 
 ■Condition (Number):   [1] CSelf20[選択キャラ位置（0～5）] ==  -1  
 -◇Condition:  [1]  [ CSelf20[選択キャラ位置（0～5）] == -1   ] Case↓
  |▼ キャンセル時はそのまま終了
- |■Call Event [Name]: ["X[移]キャラクター欄描画"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / -1
+ |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / -1
  |■Condition (Number):   [1] CSelf0[処理モード] ==  1  
  |-◇Condition:  [1]  [ CSelf0[処理モード] == 1   ] Case↓
- | |■Call Event [Name]: ["X[移]キャラ欄_全員描画"] <CommonEv 92>  / -1:全員消去
+ | |■Call Event [Name]: ["X[Map]Character Box: Draw All"] <CommonEv 92>  / -1:全員消去
  | |■
  |◇End◇
  |■Exit Event
@@ -323,14 +323,14 @@ WoditorEvCOMMAND_END
 -◇Condition:  [1]  [ CSelf20[選択キャラ位置（0～5）] >= 0   ] Case↓
  |▼ ここで主人公IDを取得する
  |■Set Variable: CSelf99[キャラ初期選択位置] = CSelf20[選択キャラ位置（0～5）] + 0 
- |■Call Event [Name]: CSelf11[主人公ID] = ["X[移]選択位置主人公ID取得"] <CommonEv 105>  / CSelf20[選択キャラ位置（0～5）]
- |■Call Event [Name]: CSelf98[記憶キー位置] = ["X[移]記憶キー位置取得"] <CommonEv 116>  / 0:[移動]技能(要ｷｬﾗ指定) / CSelf11[主人公ID]
+ |■Call Event [Name]: CSelf11[主人公ID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf20[選択キャラ位置（0～5）]
+ |■Call Event [Name]: CSelf98[記憶キー位置] = ["X[Map]Get Cursor Memory Pos"] <CommonEv 116>  / 0:[移動]技能(要ｷｬﾗ指定) / CSelf11[主人公ID]
  |●Label Point [技能選択] <<<<<<<<<<<<<<<<<<<<<<<<★
- |■Call Event [Name]: ["X[移]キャラ欄_全員描画"] <CommonEv 92>  / -1:全員消去
+ |■Call Event [Name]: ["X[Map]Character Box: Draw All"] <CommonEv 92>  / -1:全員消去
  |▼ 万能ウィンドウ設定を初期化
- |■Call Event [Name]: ["X[移]技能一覧算出"] <CommonEv 111>  / CSelf11[主人公ID]
+ |■Call Event [Name]: ["X[Map]Create Skill List"] <CommonEv 111>  / CSelf11[主人公ID]
  |▼ 万能ウィンドウ表示
- |■Call Event [Name]: ["X[移]上部ステータス描画"] <CommonEv 102>  / 0:表示A（初期表示用　スライド表示＆全表示） / CSelf11[主人公ID]
+ |■Call Event [Name]: ["X[Map]Draw Upper Status"] <CommonEv 102>  / 0:表示A（初期表示用　スライド表示＆全表示） / CSelf11[主人公ID]
  |▼ 万能ウィンドウのサイズ設定
  |■Set Variable: CSelf35[サイズ計算TMP] = 1 * CSelf88[座標倍率X[x10]] 
  |■Write to DB(Var): VarDB[ "Base System Variables":9:0 ] (18:Universal Window Display X:Number) =  CSelf35[サイズ計算TMP]
@@ -346,26 +346,26 @@ WoditorEvCOMMAND_END
  |■Write to DB(Var): VarDB[ "Base System Variables":14:0 ] (18:Universal Window Rows:Number) =  CSelf35[サイズ計算TMP]
  |■Set Variable: CSelf35[サイズ計算TMP] = 3 * CSelf89[座標倍率Y[x10]] 
  |■Write to DB(Var): VarDB[ "Base System Variables":16:0 ] (18:Universal Window Description Height:Number) =  CSelf35[サイズ計算TMP]
- |■Call Event [Name]: ["X[共]万能ｳｨﾝﾄﾞｳ描画処理"] <CommonEv 64>  / 0:表示 / -1 / 4:ｳｨﾝﾄﾞｳの下に表示 / 1:左上から展開
+ |■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / 0:Display / -1 / 4:Display Below Window / 1:Expand from Top-Left
  |▼ 万能ウィンドウ選択処理を実行
  |■Repeat Loop [ 1 ] Times
  | |▼ 万能ウィンドウ選択処理を実行
  | |■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) =  CSelf98[記憶キー位置]
- | |■Call Event [Name]: CSelf22 = ["X[共]万能ｳｨﾝﾄﾞｳ選択実行"] <CommonEv 65>  / 2:選択を終えるまでループ[ｶｰｿﾙ初期化しない]
+ | |■Call Event [Name]: CSelf22 = ["X[Com]U-Window: Select"] <CommonEv 65>  / 2:Loop Until Selected (Don't Initialize Cursor)
  | |■Load DB(Var):  CSelf98[記憶キー位置] = VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) 
- | |■Call Event [Name]: ["X[移]記憶キー位置設定"] <CommonEv 117>  / 0:[移動]技能(要ｷｬﾗ指定) / CSelf11[主人公ID] / CSelf98[記憶キー位置]
+ | |■Call Event [Name]: ["X[Map]Set Cursor Memory Pos"] <CommonEv 117>  / 0:[移動]技能(要ｷｬﾗ指定) / CSelf11[主人公ID] / CSelf98[記憶キー位置]
  | |■
  |◇Loop End Point◇◇
- |■Call Event [Name]: ["X[共]万能ｳｨﾝﾄﾞｳ描画処理"] <CommonEv 64>  / -1:消去 / 0 / 4:ｳｨﾝﾄﾞｳの下に表示 / 1:左上から展開
+ |■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / -1:Erase / 0 / 4:Display Below Window / 1:Expand from Top-Left
  |■ [Special] Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
  |▼ 技能使用時の処理
  |■Condition (Number):   [1] CSelf22 ==  -100  /  [2] CSelf22 >=  0  
  |-◇Condition:  [1]  [ CSelf22 == -100   ] Case↓
  | |▼ キャンセル時は終了
- | |■Call Event [Name]: ["X[移]上部ステータス描画"] <CommonEv 102>  / -1:消去 / 0 / 0
+ | |■Call Event [Name]: ["X[Map]Draw Upper Status"] <CommonEv 102>  / -1:消去 / 0 / 0
  | |■Condition (Number):   [1] CSelf0[処理モード] ==  0  
  | |-◇Condition:  [1]  [ CSelf0[処理モード] == 0   ] Case↓
- | | |■Call Event [Name]: ["X[移]キャラ欄_全員描画"] <CommonEv 92>  / 0:新規に全員描画
+ | | |■Call Event [Name]: ["X[Map]Character Box: Draw All"] <CommonEv 92>  / 0:新規に全員描画
  | | |■
  | |◇End◇
  | |●Label Jump [パーティ表示] >>>>>>>>>>>>>>>>>>>>>>>>>
@@ -373,9 +373,9 @@ WoditorEvCOMMAND_END
  | |■
  |-◇Condition:  [2]  [ CSelf22 >= 0   ] Case↓
  | |▼ 何か技能を選んでいた場合、ターゲット選択 or 実行
- | |■Call Event [Name]: ["X[移]上部ステータス描画"] <CommonEv 102>  / -1:消去 / 0 / 0
- | |■Call Event [Name]: ["X[移]キャラ欄_全員描画"] <CommonEv 92>  / 0:新規に全員描画
- | |■Call Event [Name]: ["X[移]技能使用効果処理"] <CommonEv 119>  / CSelf22 / CSelf11[主人公ID] / -1
+ | |■Call Event [Name]: ["X[Map]Draw Upper Status"] <CommonEv 102>  / -1:消去 / 0 / 0
+ | |■Call Event [Name]: ["X[Map]Character Box: Draw All"] <CommonEv 92>  / 0:新規に全員描画
+ | |■Call Event [Name]: ["X[Map]Use Skill"] <CommonEv 119>  / CSelf22 / CSelf11[主人公ID] / -1
  | |■Load DB(Var):  CSelf10[一時TMP１] = VarDB[ "Base System Variables":"Menu Close Flag":"Number" ] (18:1:0) 
  | |■Condition (Number):   [1] CSelf10[一時TMP１] ==  1  
  | |-◇Condition:  [1]  [ CSelf10[一時TMP１] == 1   ] Case↓

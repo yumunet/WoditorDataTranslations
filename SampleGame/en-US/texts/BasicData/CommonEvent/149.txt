@@ -1,5 +1,5 @@
 COMMON_ID=149
-COMMON_NAME=X[戦]戦闘DB→主人公DBへ戻す
+COMMON_NAME=X[Bat]Return Battle DB to Allies DB
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -164,15 +164,15 @@ COMMAND_NUM=46
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　戦闘時に使用される可変DBの「戦闘DB」から、移動時に使用する「主人公DB」へ")
 [103][0,1]<0>()("　パラメータをコピーします。戦闘によるHP・SP・状態の変化を移動時のパラメータ反映するためです。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<0>()("　　　　データ読み込み")
@@ -204,24 +204,24 @@ WoditorEvCOMMAND_START
 [250][5,4]<0>(0,1600001,5,327680,1600040)("","Allies","","HP")
 [250][5,4]<0>(0,1600001,7,327680,1600041)("","Allies","","SP")
 [103][0,1]<0>()("対象主人公DBの状態周りを更新")
-[300][3,1]<0>(0,1,1600001)("X[移]一時ｽﾃ計算<初期化>")
-[300][3,1]<0>(0,1,1600001)("X[移]一時ｽﾃ計算<装備補正>")
-[300][3,1]<0>(0,1,1600001)("X[移]一時ｽﾃ計算<状態補正>")
-[300][5,1]<0>(0,3,1600001,-1,2)("X[移]状態付与/消去")
+[300][3,1]<0>(0,1,1600001)("X[Map]CalcTempStats <Initialize>")
+[300][3,1]<0>(0,1,1600001)("X[Map]CalcTempStats <Equipments>")
+[300][3,1]<0>(0,1,1600001)("X[Map]CalcTempStats <StatusEffects>")
+[300][5,1]<0>(0,3,1600001,-1,2)("X[Map]Add/Remove State")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　戦闘時に使用される可変DBの「戦闘DB」から、移動時に使用する「主人公DB」へ
 ▼ 　パラメータをコピーします。戦闘によるHP・SP・状態の変化を移動時のパラメータ反映するためです。
 ▼ 
-▼ 【このコモンイベント内で操作しているデータベース】
+▼ [Databases Accessed by This Common Event]
 ▼  
-▼ 【ここから呼び出している別コモンイベント】
+▼ [Other Common Events Called from Here]
 ▼  
-▼ 【どのコモンイベントから主に呼び出されているか】
+▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ 　　　　データ読み込み
@@ -253,9 +253,9 @@ WoditorEvCOMMAND_END
 ■Write to DB(Var): VarDB[ "Allies":CSelf1[格納主人公ID]:"HP" ] (0:-:6) =  CSelf40[HP]
 ■Write to DB(Var): VarDB[ "Allies":CSelf1[格納主人公ID]:"SP" ] (0:-:8) =  CSelf41[SP]
 ▼ 対象主人公DBの状態周りを更新
-■Call Event [Name]: ["X[移]一時ｽﾃ計算<初期化>"] <CommonEv 122>  / CSelf1[格納主人公ID]
-■Call Event [Name]: ["X[移]一時ｽﾃ計算<装備補正>"] <CommonEv 123>  / CSelf1[格納主人公ID]
-■Call Event [Name]: ["X[移]一時ｽﾃ計算<状態補正>"] <CommonEv 124>  / CSelf1[格納主人公ID]
-■Call Event [Name]: ["X[移]状態付与/消去"] <CommonEv 75>  / CSelf1[格納主人公ID] / -1:全て消去（強制） / 2:更新
+■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf1[格納主人公ID]
+■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf1[格納主人公ID]
+■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf1[格納主人公ID]
+■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf1[格納主人公ID] / -1:全て消去（強制） / 2:更新
 ■
 [COMMAND_TEXT_END]

@@ -4,11 +4,11 @@ COMMAND_COLOR=0
 TRIGGER=34
 TRIGGER_TARGET=1600099
 TRIGGER_VAL=1
-MEMO=ON・OFFして使用(★数pxのイベント開始位置ズレにより【イベント中に移動不能】になる可能性に注意してください★)
+MEMO=Use by turning on and off. CAUTION: A few pixels of misalignment at the start of an event can prevent movement during it.
 VALINPUT_NUM=1
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=モード
+VALINPUT_NAME_0=Mode
 VALINPUT_NAME_1=
 VALINPUT_NAME_2=
 VALINPUT_NAME_3=
@@ -32,8 +32,8 @@ LOADTYPE8=0
 LOADTYPE9=0
 CHOICE_STR_NUM=10
 CHOICE_STR_0_NUM=2
-CHOICE_STR_0_0=ピクセル移動ON
-CHOICE_STR_0_1=ピクセル移動OFF
+CHOICE_STR_0_0=Turn On
+CHOICE_STR_0_1=Turn Off
 CHOICE_STR_1_NUM=0
 CHOICE_STR_2_NUM=0
 CHOICE_STR_3_NUM=0
@@ -64,7 +64,7 @@ DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
 RETURN_VAL_NAME=
 RETURN_VAL_TARGET=-1
-CSELF_NAME_0=モード
+CSELF_NAME_0=Mode
 CSELF_NAME_1=
 CSELF_NAME_2=
 CSELF_NAME_3=
@@ -74,18 +74,18 @@ CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=
-CSELF_NAME_10=格納先ポインタ
-CSELF_NAME_11=X速度[1/10]
-CSELF_NAME_12=Y速度[1/10]
-CSELF_NAME_13=X最大速度[1/10]
-CSELF_NAME_14=Y最大速度[1/10]
-CSELF_NAME_15=内部余り値X[1/10]
-CSELF_NAME_16=内部余り値Y[1/10]
-CSELF_NAME_17=移動量X
-CSELF_NAME_18=移動量Y
-CSELF_NAME_19=絶対値
-CSELF_NAME_20=上下方向キー
-CSELF_NAME_21=左右方向キー
+CSELF_NAME_10=Destination Variable
+CSELF_NAME_11=X Speed [1/10]
+CSELF_NAME_12=Y Speed [1/10]
+CSELF_NAME_13=Max X Speed [1/10]
+CSELF_NAME_14=Max Y Speed [1/10]
+CSELF_NAME_15=X Internal Remainder [1/10]
+CSELF_NAME_16=Y Internal Remainder [1/10]
+CSELF_NAME_17=X Displacement
+CSELF_NAME_18=Y Displacement
+CSELF_NAME_19=Absolute Value
+CSELF_NAME_20=Up/Down Arrow Keys
+CSELF_NAME_21=Left/Right Arrow Keys
 CSELF_NAME_22=
 CSELF_NAME_23=
 CSELF_NAME_24=
@@ -159,127 +159,127 @@ CSELF_NAME_91=
 CSELF_NAME_92=
 CSELF_NAME_93=
 CSELF_NAME_94=
-CSELF_NAME_95=最高速度(20-30推奨)
-CSELF_NAME_96=加速量(2-3推奨)
-CSELF_NAME_97=減速度合い（大きいほど止まるのが遅い、1-10程度）
-CSELF_NAME_98=向き固定中
-CSELF_NAME_99=起動フラグ
+CSELF_NAME_95=Max Speed (20-30 Preferred)
+CSELF_NAME_96=Acceleration (2-3 Preferred)
+CSELF_NAME_97=Deceleration (Higher Is Slower; 1-10 Preferred)
+CSELF_NAME_98=Direction Fixed?
+CSELF_NAME_99=Activation Flag
 COMMAND_NUM=285
 --
 WoditorEvCOMMAND_START
 [179][1,0]<0>(1)()
-[103][0,1]<1>()("★ユーザのパラメータ設定箇所。自由に設定して構いません！")
-[103][0,1]<1>()("※最高速度を10で割り切れる値にしないと移動時に「仲間」が震えます。主人公一人なら好きな値でOK！")
+[103][0,1]<1>()("★User parameter settings. Feel free to set them as you like!")
+[103][0,1]<1>()("* If the maximum speed isn't divisible by 10, the followers will shake when moving. If there's only a leader, any value is OK!")
 [121][4,0]<1>(1600095,30,0,0)()
 [121][4,0]<1>(1600096,3,0,0)()
 [121][4,0]<1>(1600097,7,0,0)()
-[103][0,1]<1>()("★パラメータ設定ここまで。ここから下をいじるのは内容を理解した上でお願いします！")
+[103][0,1]<1>()("★That's all for the parameter settings. Only make changes to the content below after understanding it.")
 [0][0,0]<1>()()
 [498][0,0]<0>()()
 [179][1,0]<0>(1)()
-[103][0,1]<1>()("これは「呼び出し」されたときの処理で起動条件のオンオフを行う。並列時は通らない")
+[103][0,1]<1>()("Turn the run condition on or off when called. Do nothing when executed in parallel.")
 [111][7,0]<1>(2,1600000,1,2,1600000,-1,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("ピクセル移動ONにする")
+[103][0,1]<2>()("Turn on the pixel movement.")
 [121][4,0]<2>(1600000,0,0,0)()
-[103][0,1]<2>()("仲間を主人公の場所へ移動")
+[103][0,1]<2>()("Move followers to the leader's position.")
 [270][1,0]<2>(36)()
-[103][0,1]<2>()("並列実行開始")
+[103][0,1]<2>()("Start parallel execution.")
 [121][4,0]<2>(1600099,1,0,0)()
 [172][0,0]<2>()()
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[103][0,1]<2>()("OFFにする　主人公のピクセル移動XYを0リセット")
+[103][0,1]<2>()("Turn off. Reset the leader's X and Y pixel offsets to 0.")
 [121][4,0]<2>(1600000,0,0,0)()
-[103][0,1]<2>()("通常移動を可能にし、主人公の状態を元に戻す")
+[103][0,1]<2>()("Enable normal movement and restore the leader's condition.")
 [126][1,0]<2>(240)()
 [290][7,0]<2>(193,0,-2,0,0,0,0)()
-[103][0,1]<2>()("Ver3.10でエフェクトに変更↓")
+[103][0,1]<2>()("Ver.3.10  Changed the following to Effects.")
 [290][7,0]<2>(129,0,-2,0,0,0,0)()
 [290][7,0]<2>(129,0,-3,0,0,0,0)()
 [290][7,0]<2>(129,0,-4,0,0,0,0)()
 [290][7,0]<2>(129,0,-5,0,0,0,0)()
 [290][7,0]<2>(129,0,-6,0,0,0,0)()
 [290][7,0]<2>(129,0,-7,0,0,0,0)()
-[103][0,1]<2>()("仲間を主人公の場所へ移動")
+[103][0,1]<2>()("Move followers to the leader's position.")
 [270][1,0]<2>(36)()
-[103][0,1]<2>()("ピクセル補正値を0に戻す")
-[103][0,1]<2>()("　戻さないと予想外のところで引っかかったり1マス幅のところが通り抜けられなくなったりします")
+[103][0,1]<2>()("Reset pixel offsets to 0.")
+[103][0,1]<2>()("  If not reset, it may get stuck in unexpected places or prevent passage through spaces one square wide.")
 [121][4,0]<2>(1600010,9180007,0,4)()
 [121][4,0]<2>(1600010,0,0,16)()
 [121][4,0]<2>(1600010,9180008,0,4)()
 [121][4,0]<2>(1600010,0,0,16)()
-[103][0,1]<2>()("並列実行を終了")
+[103][0,1]<2>()("End parallel execution.")
 [121][4,0]<2>(1600099,0,0,0)()
 [172][0,0]<2>()()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [0][0,0]<1>()()
 [498][0,0]<0>()()
-[103][0,1]<0>()("ここからキー入力に応じたピクセル移動の挙動を処理します")
+[103][0,1]<0>()("From here, process the pixel movement behavior corresponding to the key input.")
 [111][4,0]<0>(17,9000013,0,2)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("キーによる通常移動を禁止し、コモンイベント内の「ピクセル移動」コマンドだけでキャラを動かします")
+[103][0,1]<1>()("Disable normal movement using keys, and move characters only with the Pixel Movement command in this common event.")
 [126][1,0]<1>(496)()
-[103][0,1]<1>()("押し続けた方向に加速する")
-[103][0,1]<1>()("上下キー判定")
+[103][0,1]<1>()("Accelerate in the direction of the held key.")
+[103][0,1]<1>()("Check the up and down keys.")
 [123][2,0]<1>(1600020,7)()
 [121][4,0]<1>(1600013,1600095,0,0)()
 [121][4,0]<1>(1600014,1600095,0,0)()
 [111][7,0]<1>(18,1600020,8,2,1600020,2,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("上")
+[103][0,1]<2>()("Up")
 [121][4,0]<2>(1600012,1600096,0,512)()
 [121][4,0]<2>(1600012,1600014,-1,9728)()
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[103][0,1]<2>()("下")
+[103][0,1]<2>()("Down")
 [121][4,0]<2>(1600012,1600096,0,256)()
 [121][4,0]<2>(1600012,1600014,0,1792)()
 [0][0,0]<2>()()
 [420][1,0]<1>(0)()
-[103][0,1]<2>()("速度中和")
+[103][0,1]<2>()("Reduce speed.")
 [121][4,0]<2>(1600012,1600012,1600097,12800)()
 [121][4,0]<2>(1600019,1600012,0,2048)()
 [121][4,0]<2>(1600012,1600012,1600019,12800)()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
-[103][0,1]<1>()("左右キー判定")
+[103][0,1]<1>()("Check the left and right keys.")
 [123][2,0]<1>(1600021,8)()
 [111][7,0]<1>(18,1600021,4,2,1600021,6,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("左")
+[103][0,1]<2>()("Left")
 [121][4,0]<2>(1600011,1600096,0,512)()
 [121][4,0]<2>(1600011,1600013,-1,9728)()
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[103][0,1]<2>()("右")
+[103][0,1]<2>()("Right")
 [121][4,0]<2>(1600011,1600096,0,256)()
 [121][4,0]<2>(1600011,1600013,0,1792)()
 [0][0,0]<2>()()
 [420][1,0]<1>(0)()
-[103][0,1]<2>()("速度中和")
+[103][0,1]<2>()("Reduce speed.")
 [121][4,0]<2>(1600011,1600011,1600097,12800)()
 [121][4,0]<2>(1600019,1600011,0,2048)()
 [121][4,0]<2>(1600011,1600011,1600019,12800)()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
-[103][0,1]<1>()("「余り値」に速度を加算")
+[103][0,1]<1>()("Add speed to <dqrt>internal values.<dqrt>")
 [121][4,0]<1>(1600015,1600011,0,256)()
 [121][4,0]<1>(1600016,1600012,0,256)()
-[103][0,1]<1>()("余り値が10以上になってたら移動")
+[103][0,1]<1>()("Move if the internal value is 10 or higher.")
 [121][4,0]<1>(1600010,9180007,0,4)()
 [121][4,0]<1>(1600017,0,0,0)()
 [121][4,0]<1>(1600018,0,0,0)()
 [111][7,0]<1>(2,1600015,10,1,1600015,-10,3)()
 [401][1,0]<1>(1)()
 [121][4,0]<2>(1600017,1600015,10,12288)()
-[103][0,1]<2>()("移動した分、余り値から引く")
+[103][0,1]<2>()("Subtract amount moved from the internal value")
 [121][4,0]<2>(1600015,1600017,10,8704)()
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
 [121][4,0]<2>(1600017,1600015,10,12288)()
-[103][0,1]<2>()("移動した分、余り値から引く")
+[103][0,1]<2>()("Subtract amount moved from the internal value")
 [121][4,0]<2>(1600015,1600017,10,8704)()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
@@ -287,35 +287,35 @@ WoditorEvCOMMAND_START
 [111][7,0]<1>(2,1600016,10,1,1600016,-10,3)()
 [401][1,0]<1>(1)()
 [121][4,0]<2>(1600018,1600016,10,12288)()
-[103][0,1]<2>()("移動した分、余り値から引く")
+[103][0,1]<2>()("Subtract amount moved from the internal value")
 [121][4,0]<2>(1600016,1600018,10,8704)()
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
 [121][4,0]<2>(1600018,1600016,10,12288)()
-[103][0,1]<2>()("移動した分、余り値から引く")
+[103][0,1]<2>()("Subtract amount moved from the internal value")
 [121][4,0]<2>(1600016,1600018,10,8704)()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
-[103][0,1]<1>()("移動")
+[103][0,1]<1>()("Move")
 [290][7,0]<1>(113,0,-2,0,1600017,1600018,0)()
 [179][1,0]<1>(0)()
-[103][0,1]<2>()("速度チェック用デバッグ処理")
-[150][11,1]<2>(32,999888,0,1,1,1,255,0,0,100,0)("\E\f[12]速度 X \cself[11] Y \cself[12]")
+[103][0,1]<2>()("Debug command for speed check.")
+[150][11,1]<2>(32,999888,0,1,1,1,255,0,0,100,0)("\E\f[12]Speed X \cself[11] Y \cself[12]")
 [0][0,0]<2>()()
 [498][0,0]<1>()()
 [179][1,0]<1>(1)()
-[103][0,1]<2>()("プレイヤーの向きを指定。何もないと「システム側の移動方向を向く」が、")
-[103][0,1]<2>()("ここの処理で「押したキー方向」を反映するようにしている")
+[103][0,1]<2>()("Specify the members' facing direction. If not specified, the system determines the direction,")
+[103][0,1]<2>()("but this process overrides it to use the direction of the pressed key.")
 [121][4,0]<2>(1600098,1,0,0)()
 [290][7,0]<2>(193,0,-2,0,1,0,0)()
-[103][0,1]<2>()("方向")
+[103][0,1]<2>()("Direction")
 [121][4,0]<2>(1600010,9180006,0,4)()
 [111][10,0]<2>(3,1600020,0,2,1600020,8,2,1600020,2,2)()
 [401][1,0]<2>(1)()
 [111][10,0]<3>(3,1600021,0,2,1600021,4,2,1600021,6,2)()
 [401][1,0]<3>(1)()
-[103][0,1]<4>()("停止")
-[103][0,1]<4>()("Ver3.10でエフェクトに変更↓")
+[103][0,1]<4>()("Stop")
+[103][0,1]<4>()("Ver.3.10  Changed the following to Effects.")
 [290][7,0]<4>(129,0,-2,0,0,0,0)()
 [290][7,0]<4>(129,0,-3,0,0,0,0)()
 [290][7,0]<4>(129,0,-4,0,0,0,0)()
@@ -324,9 +324,9 @@ WoditorEvCOMMAND_START
 [290][7,0]<4>(129,0,-7,0,0,0,0)()
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
-[103][0,1]<4>()("左")
+[103][0,1]<4>()("Left")
 [121][4,0]<4>(1600010,4,0,16)()
-[103][0,1]<4>()("Ver3.10でエフェクトに変更↓")
+[103][0,1]<4>()("Ver.3.10  Changed the following to Effects.")
 [290][7,0]<4>(129,0,-2,0,1,0,0)()
 [290][7,0]<4>(129,0,-3,0,1,0,0)()
 [290][7,0]<4>(129,0,-4,0,1,0,0)()
@@ -335,9 +335,9 @@ WoditorEvCOMMAND_START
 [290][7,0]<4>(129,0,-7,0,1,0,0)()
 [0][0,0]<4>()()
 [401][1,0]<3>(3)()
-[103][0,1]<4>()("右")
+[103][0,1]<4>()("Right")
 [121][4,0]<4>(1600010,6,0,16)()
-[103][0,1]<4>()("Ver3.10でエフェクトに変更↓")
+[103][0,1]<4>()("Ver.3.10  Changed the following to Effects.")
 [290][7,0]<4>(129,0,-2,0,1,0,0)()
 [290][7,0]<4>(129,0,-3,0,1,0,0)()
 [290][7,0]<4>(129,0,-4,0,1,0,0)()
@@ -350,9 +350,9 @@ WoditorEvCOMMAND_START
 [401][1,0]<2>(2)()
 [111][10,0]<3>(3,1600021,0,2,1600021,4,2,1600021,6,2)()
 [401][1,0]<3>(1)()
-[103][0,1]<4>()("上")
+[103][0,1]<4>()("Up")
 [121][4,0]<4>(1600010,8,0,16)()
-[103][0,1]<4>()("Ver3.10でエフェクトに変更↓")
+[103][0,1]<4>()("Ver.3.10  Changed the following to Effects.")
 [290][7,0]<4>(129,0,-2,0,1,0,0)()
 [290][7,0]<4>(129,0,-3,0,1,0,0)()
 [290][7,0]<4>(129,0,-4,0,1,0,0)()
@@ -361,9 +361,9 @@ WoditorEvCOMMAND_START
 [290][7,0]<4>(129,0,-7,0,1,0,0)()
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
-[103][0,1]<4>()("左上")
+[103][0,1]<4>()("Upper Left")
 [121][4,0]<4>(1600010,7,0,16)()
-[103][0,1]<4>()("Ver3.10でエフェクトに変更↓")
+[103][0,1]<4>()("Ver.3.10  Changed the following to Effects.")
 [290][7,0]<4>(129,0,-2,0,1,0,0)()
 [290][7,0]<4>(129,0,-3,0,1,0,0)()
 [290][7,0]<4>(129,0,-4,0,1,0,0)()
@@ -372,9 +372,9 @@ WoditorEvCOMMAND_START
 [290][7,0]<4>(129,0,-7,0,1,0,0)()
 [0][0,0]<4>()()
 [401][1,0]<3>(3)()
-[103][0,1]<4>()("右上")
+[103][0,1]<4>()("Upper Right")
 [121][4,0]<4>(1600010,9,0,16)()
-[103][0,1]<4>()("Ver3.10でエフェクトに変更↓")
+[103][0,1]<4>()("Ver.3.10  Changed the following to Effects.")
 [290][7,0]<4>(129,0,-2,0,1,0,0)()
 [290][7,0]<4>(129,0,-3,0,1,0,0)()
 [290][7,0]<4>(129,0,-4,0,1,0,0)()
@@ -387,9 +387,9 @@ WoditorEvCOMMAND_START
 [401][1,0]<2>(3)()
 [111][10,0]<3>(3,1600021,0,2,1600021,4,2,1600021,6,2)()
 [401][1,0]<3>(1)()
-[103][0,1]<4>()("下")
+[103][0,1]<4>()("Down")
 [121][4,0]<4>(1600010,2,0,16)()
-[103][0,1]<4>()("Ver3.10でエフェクトに変更↓")
+[103][0,1]<4>()("Ver.3.10  Changed the following to Effects.")
 [290][7,0]<4>(129,0,-2,0,1,0,0)()
 [290][7,0]<4>(129,0,-3,0,1,0,0)()
 [290][7,0]<4>(129,0,-4,0,1,0,0)()
@@ -398,9 +398,9 @@ WoditorEvCOMMAND_START
 [290][7,0]<4>(129,0,-7,0,1,0,0)()
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
-[103][0,1]<4>()("左下")
+[103][0,1]<4>()("Lower Left")
 [121][4,0]<4>(1600010,1,0,16)()
-[103][0,1]<4>()("Ver3.10でエフェクトに変更↓")
+[103][0,1]<4>()("Ver.3.10  Changed the following to Effects.")
 [290][7,0]<4>(129,0,-2,0,1,0,0)()
 [290][7,0]<4>(129,0,-3,0,1,0,0)()
 [290][7,0]<4>(129,0,-4,0,1,0,0)()
@@ -409,9 +409,9 @@ WoditorEvCOMMAND_START
 [290][7,0]<4>(129,0,-7,0,1,0,0)()
 [0][0,0]<4>()()
 [401][1,0]<3>(3)()
-[103][0,1]<4>()("右下")
+[103][0,1]<4>()("Lower Right")
 [121][4,0]<4>(1600010,3,0,16)()
-[103][0,1]<4>()("Ver3.10でエフェクトに変更↓")
+[103][0,1]<4>()("Ver.3.10  Changed the following to Effects.")
 [290][7,0]<4>(129,0,-2,0,1,0,0)()
 [290][7,0]<4>(129,0,-3,0,1,0,0)()
 [290][7,0]<4>(129,0,-4,0,1,0,0)()
@@ -426,12 +426,12 @@ WoditorEvCOMMAND_START
 [498][0,0]<1>()()
 [0][0,0]<1>()()
 [420][1,0]<0>(0)()
-[103][0,1]<1>()("こちらは「イベント中」。時間経過で速度を中和していく。")
-[103][0,1]<1>()("（一瞬で終わるイベントなら減速させないため）")
+[103][0,1]<1>()("This is for during an event. Decelerate over time.")
+[103][0,1]<1>()("(In order to avoid decelerating for an event that ends instantly.)")
 [111][4,0]<1>(1,1600098,1,2)()
 [401][1,0]<1>(1)()
 [290][7,0]<2>(193,0,-2,0,0,0,0)()
-[103][0,1]<2>()("Ver3.10でエフェクトに変更↓")
+[103][0,1]<2>()("Ver.3.10  Changed the following to Effects.")
 [290][7,0]<2>(129,0,-2,0,0,0,0)()
 [290][7,0]<2>(129,0,-3,0,0,0,0)()
 [290][7,0]<2>(129,0,-4,0,0,0,0)()
@@ -441,11 +441,11 @@ WoditorEvCOMMAND_START
 [121][4,0]<2>(1600098,0,0,0)()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
-[103][0,1]<1>()("X速度中和")
+[103][0,1]<1>()("Reduce X speed.")
 [121][4,0]<1>(1600011,1600011,10,12800)()
 [121][4,0]<1>(1600019,1600011,0,2048)()
 [121][4,0]<1>(1600011,1600011,1600019,12800)()
-[103][0,1]<1>()("Y速度中和")
+[103][0,1]<1>()("Reduce Y speed.")
 [121][4,0]<1>(1600012,1600012,10,12800)()
 [121][4,0]<1>(1600019,1600012,0,2048)()
 [121][4,0]<1>(1600012,1600012,1600019,12800)()
@@ -456,154 +456,154 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ■Repeat Loop [ 1 ] Times
- |▼ ★ユーザのパラメータ設定箇所。自由に設定して構いません！
- |▼ ※最高速度を10で割り切れる値にしないと移動時に「仲間」が震えます。主人公一人なら好きな値でOK！
- |■Set Variable: CSelf95[最高速度(20-30推奨)] = 30 + 0 
- |■Set Variable: CSelf96[加速量(2-3推奨)] = 3 + 0 
- |■Set Variable: CSelf97[減速度合い（大きいほど止まるのが遅い、1-10程度）] = 7 + 0 
- |▼ ★パラメータ設定ここまで。ここから下をいじるのは内容を理解した上でお願いします！
+ |▼ ★User parameter settings. Feel free to set them as you like!
+ |▼ * If the maximum speed isn't divisible by 10, the followers will shake when moving. If there's only a leader, any value is OK!
+ |■Set Variable: CSelf95[Max Speed (20-30 Preferred)] = 30 + 0 
+ |■Set Variable: CSelf96[Acceleration (2-3 Preferred)] = 3 + 0 
+ |■Set Variable: CSelf97[Deceleration (Higher Is Slower; 1-10 Pre..] = 7 + 0 
+ |▼ ★That's all for the parameter settings. Only make changes to the content below after understanding it.
  |■
 ◇Loop End Point◇◇
 ■Repeat Loop [ 1 ] Times
- |▼ これは「呼び出し」されたときの処理で起動条件のオンオフを行う。並列時は通らない
- |■Condition (Number):   [1] CSelf0[モード] ==  1  /  [2] CSelf0[モード] ==  -1  
- |-◇Condition:  [1]  [ CSelf0[モード] == 1   ] Case↓
- | |▼ ピクセル移動ONにする
- | |■Set Variable: CSelf0[モード] = 0 + 0 
- | |▼ 仲間を主人公の場所へ移動
+ |▼ Turn the run condition on or off when called. Do nothing when executed in parallel.
+ |■Condition (Number):   [1] CSelf0[Mode] ==  1  /  [2] CSelf0[Mode] ==  -1  
+ |-◇Condition:  [1]  [ CSelf0[Mode] == 1   ] Case↓
+ | |▼ Turn on the pixel movement.
+ | |■Set Variable: CSelf0[Mode] = 0 + 0 
+ | |▼ Move followers to the leader's position.
  | |■Party Images: Warp All Allies to Hero
- | |▼ 並列実行開始
- | |■Set Variable: CSelf99[起動フラグ] = 1 + 0 
+ | |▼ Start parallel execution.
+ | |■Set Variable: CSelf99[Activation Flag] = 1 + 0 
  | |■Exit Event
  | |■
- |-◇Condition:  [2]  [ CSelf0[モード] == -1   ] Case↓
- | |▼ OFFにする　主人公のピクセル移動XYを0リセット
- | |■Set Variable: CSelf0[モード] = 0 + 0 
- | |▼ 通常移動を可能にし、主人公の状態を元に戻す
+ |-◇Condition:  [2]  [ CSelf0[Mode] == -1   ] Case↓
+ | |▼ Turn off. Reset the leader's X and Y pixel offsets to 0.
+ | |■Set Variable: CSelf0[Mode] = 0 + 0 
+ | |▼ Enable normal movement and restore the leader's condition.
  | |■Enable/Disable Input:   Down-Key  Left-Key  Right-Key  Up-Key   [ Movement ✓   Key Input ✓ ]
  | |■Effect Character: Hero[Fixed Direction ON/OFF] => OFF 
- | |▼ Ver3.10でエフェクトに変更↓
+ | |▼ Ver.3.10  Changed the following to Effects.
  | |■Effect Character: Hero[Force Moving Animation] => OFF 
  | |■Effect Character: Ally 1[Force Moving Animation] => OFF 
  | |■Effect Character: Ally 2[Force Moving Animation] => OFF 
  | |■Effect Character: Ally 3[Force Moving Animation] => OFF 
  | |■Effect Character: Ally 4[Force Moving Animation] => OFF 
  | |■Effect Character: Ally 5[Force Moving Animation] => OFF 
- | |▼ 仲間を主人公の場所へ移動
+ | |▼ Move followers to the leader's position.
  | |■Party Images: Warp All Allies to Hero
- | |▼ ピクセル補正値を0に戻す
- | |▼ 　戻さないと予想外のところで引っかかったり1マス幅のところが通り抜けられなくなったりします
- | |■Set Variable: CSelf10[格納先ポインタ] = 9180007 + 0 
- | |■Set Variable: V[CSelf10[格納先ポインタ]] = 0 + 0 
- | |■Set Variable: CSelf10[格納先ポインタ] = 9180008 + 0 
- | |■Set Variable: V[CSelf10[格納先ポインタ]] = 0 + 0 
- | |▼ 並列実行を終了
- | |■Set Variable: CSelf99[起動フラグ] = 0 + 0 
+ | |▼ Reset pixel offsets to 0.
+ | |▼   If not reset, it may get stuck in unexpected places or prevent passage through spaces one square wide.
+ | |■Set Variable: CSelf10[Destination Variable] = 9180007 + 0 
+ | |■Set Variable: V[CSelf10[Destination Variable]] = 0 + 0 
+ | |■Set Variable: CSelf10[Destination Variable] = 9180008 + 0 
+ | |■Set Variable: V[CSelf10[Destination Variable]] = 0 + 0 
+ | |▼ End parallel execution.
+ | |■Set Variable: CSelf99[Activation Flag] = 0 + 0 
  | |■Exit Event
  | |■
  |◇End◇
  |■
 ◇Loop End Point◇◇
-▼ ここからキー入力に応じたピクセル移動の挙動を処理します
+▼ From here, process the pixel movement behavior corresponding to the key input.
 ■Condition (Number):   [1] Sys13:Event Active? (1:Yes) ==  0  
 -◇Condition:  [1]  [ Sys13:Event Active? (1:Yes) == 0   ] Case↓
- |▼ キーによる通常移動を禁止し、コモンイベント内の「ピクセル移動」コマンドだけでキャラを動かします
+ |▼ Disable normal movement using keys, and move characters only with the Pixel Movement command in this common event.
  |■Enable/Disable Input:   Down-Key  Left-Key  Right-Key  Up-Key   [ Movement ×   Key Input ✓ ]
- |▼ 押し続けた方向に加速する
- |▼ 上下キー判定
- |■Key Input: CSelf20[上下方向キー] [Normal Input]  Up-Down(8,2)
- |■Set Variable: CSelf13[X最大速度[1/10]] = CSelf95[最高速度(20-30推奨)] + 0 
- |■Set Variable: CSelf14[Y最大速度[1/10]] = CSelf95[最高速度(20-30推奨)] + 0 
- |■Condition (Number):   [1] CSelf20[上下方向キー] ==  8  /  [2] CSelf20[上下方向キー] ==  2  
- |-◇Condition:  [1]  [ CSelf20[上下方向キー] == 8   ] Case↓
- | |▼ 上
- | |■Set Variable: CSelf12[Y速度[1/10]] -= CSelf96[加速量(2-3推奨)] + 0 
- | |■Set Variable: CSelf12[Y速度[1/10]] Lower Bound= CSelf14[Y最大速度[1/10]] * -1 
+ |▼ Accelerate in the direction of the held key.
+ |▼ Check the up and down keys.
+ |■Key Input: CSelf20[Up/Down Arrow Keys] [Normal Input]  Up-Down(8,2)
+ |■Set Variable: CSelf13[Max X Speed [1/10]] = CSelf95[Max Speed (20-30 Preferred)] + 0 
+ |■Set Variable: CSelf14[Max Y Speed [1/10]] = CSelf95[Max Speed (20-30 Preferred)] + 0 
+ |■Condition (Number):   [1] CSelf20[Up/Down Arrow Keys] ==  8  /  [2] CSelf20[Up/Down Arrow Keys] ==  2  
+ |-◇Condition:  [1]  [ CSelf20[Up/Down Arrow Keys] == 8   ] Case↓
+ | |▼ Up
+ | |■Set Variable: CSelf12[Y Speed [1/10]] -= CSelf96[Acceleration (2-3 Preferred)] + 0 
+ | |■Set Variable: CSelf12[Y Speed [1/10]] Lower Bound= CSelf14[Max Y Speed [1/10]] * -1 
  | |■
- |-◇Condition:  [2]  [ CSelf20[上下方向キー] == 2   ] Case↓
- | |▼ 下
- | |■Set Variable: CSelf12[Y速度[1/10]] += CSelf96[加速量(2-3推奨)] + 0 
- | |■Set Variable: CSelf12[Y速度[1/10]] Upper Bound= CSelf14[Y最大速度[1/10]] + 0 
- | |■
- |-◇Else
- | |▼ 速度中和
- | |■Set Variable: CSelf12[Y速度[1/10]] -= CSelf12[Y速度[1/10]] / CSelf97[減速度合い（大きいほど止まるのが遅い、1-10程度）] 
- | |■Set Variable: CSelf19[絶対値] Absolute= CSelf12[Y速度[1/10]] + 0 
- | |■Set Variable: CSelf12[Y速度[1/10]] -= CSelf12[Y速度[1/10]] / CSelf19[絶対値] 
- | |■
- |◇End◇
- |▼ 左右キー判定
- |■Key Input: CSelf21[左右方向キー] [Normal Input]  Left-Right(4,6)
- |■Condition (Number):   [1] CSelf21[左右方向キー] ==  4  /  [2] CSelf21[左右方向キー] ==  6  
- |-◇Condition:  [1]  [ CSelf21[左右方向キー] == 4   ] Case↓
- | |▼ 左
- | |■Set Variable: CSelf11[X速度[1/10]] -= CSelf96[加速量(2-3推奨)] + 0 
- | |■Set Variable: CSelf11[X速度[1/10]] Lower Bound= CSelf13[X最大速度[1/10]] * -1 
- | |■
- |-◇Condition:  [2]  [ CSelf21[左右方向キー] == 6   ] Case↓
- | |▼ 右
- | |■Set Variable: CSelf11[X速度[1/10]] += CSelf96[加速量(2-3推奨)] + 0 
- | |■Set Variable: CSelf11[X速度[1/10]] Upper Bound= CSelf13[X最大速度[1/10]] + 0 
+ |-◇Condition:  [2]  [ CSelf20[Up/Down Arrow Keys] == 2   ] Case↓
+ | |▼ Down
+ | |■Set Variable: CSelf12[Y Speed [1/10]] += CSelf96[Acceleration (2-3 Preferred)] + 0 
+ | |■Set Variable: CSelf12[Y Speed [1/10]] Upper Bound= CSelf14[Max Y Speed [1/10]] + 0 
  | |■
  |-◇Else
- | |▼ 速度中和
- | |■Set Variable: CSelf11[X速度[1/10]] -= CSelf11[X速度[1/10]] / CSelf97[減速度合い（大きいほど止まるのが遅い、1-10程度）] 
- | |■Set Variable: CSelf19[絶対値] Absolute= CSelf11[X速度[1/10]] + 0 
- | |■Set Variable: CSelf11[X速度[1/10]] -= CSelf11[X速度[1/10]] / CSelf19[絶対値] 
+ | |▼ Reduce speed.
+ | |■Set Variable: CSelf12[Y Speed [1/10]] -= CSelf12[Y Speed [1/10]] / CSelf97[Deceleration (Higher Is Slower; 1-10 Pre..] 
+ | |■Set Variable: CSelf19[Absolute Value] Absolute= CSelf12[Y Speed [1/10]] + 0 
+ | |■Set Variable: CSelf12[Y Speed [1/10]] -= CSelf12[Y Speed [1/10]] / CSelf19[Absolute Value] 
  | |■
  |◇End◇
- |▼ 「余り値」に速度を加算
- |■Set Variable: CSelf15[内部余り値X[1/10]] += CSelf11[X速度[1/10]] + 0 
- |■Set Variable: CSelf16[内部余り値Y[1/10]] += CSelf12[Y速度[1/10]] + 0 
- |▼ 余り値が10以上になってたら移動
- |■Set Variable: CSelf10[格納先ポインタ] = 9180007 + 0 
- |■Set Variable: CSelf17[移動量X] = 0 + 0 
- |■Set Variable: CSelf18[移動量Y] = 0 + 0 
- |■Condition (Number):   [1] CSelf15[内部余り値X[1/10]] >=  10  /  [2] CSelf15[内部余り値X[1/10]] <=  -10  
- |-◇Condition:  [1]  [ CSelf15[内部余り値X[1/10]] >= 10   ] Case↓
- | |■Set Variable: CSelf17[移動量X] = CSelf15[内部余り値X[1/10]] / 10 
- | |▼ 移動した分、余り値から引く
- | |■Set Variable: CSelf15[内部余り値X[1/10]] -= CSelf17[移動量X] * 10 
+ |▼ Check the left and right keys.
+ |■Key Input: CSelf21[Left/Right Arrow Keys] [Normal Input]  Left-Right(4,6)
+ |■Condition (Number):   [1] CSelf21[Left/Right Arrow Keys] ==  4  /  [2] CSelf21[Left/Right Arrow Keys] ==  6  
+ |-◇Condition:  [1]  [ CSelf21[Left/Right Arrow Keys] == 4   ] Case↓
+ | |▼ Left
+ | |■Set Variable: CSelf11[X Speed [1/10]] -= CSelf96[Acceleration (2-3 Preferred)] + 0 
+ | |■Set Variable: CSelf11[X Speed [1/10]] Lower Bound= CSelf13[Max X Speed [1/10]] * -1 
  | |■
- |-◇Condition:  [2]  [ CSelf15[内部余り値X[1/10]] <= -10   ] Case↓
- | |■Set Variable: CSelf17[移動量X] = CSelf15[内部余り値X[1/10]] / 10 
- | |▼ 移動した分、余り値から引く
- | |■Set Variable: CSelf15[内部余り値X[1/10]] -= CSelf17[移動量X] * 10 
+ |-◇Condition:  [2]  [ CSelf21[Left/Right Arrow Keys] == 6   ] Case↓
+ | |▼ Right
+ | |■Set Variable: CSelf11[X Speed [1/10]] += CSelf96[Acceleration (2-3 Preferred)] + 0 
+ | |■Set Variable: CSelf11[X Speed [1/10]] Upper Bound= CSelf13[Max X Speed [1/10]] + 0 
  | |■
- |◇End◇
- |■Set Variable: CSelf10[格納先ポインタ] = 9180008 + 0 
- |■Condition (Number):   [1] CSelf16[内部余り値Y[1/10]] >=  10  /  [2] CSelf16[内部余り値Y[1/10]] <=  -10  
- |-◇Condition:  [1]  [ CSelf16[内部余り値Y[1/10]] >= 10   ] Case↓
- | |■Set Variable: CSelf18[移動量Y] = CSelf16[内部余り値Y[1/10]] / 10 
- | |▼ 移動した分、余り値から引く
- | |■Set Variable: CSelf16[内部余り値Y[1/10]] -= CSelf18[移動量Y] * 10 
- | |■
- |-◇Condition:  [2]  [ CSelf16[内部余り値Y[1/10]] <= -10   ] Case↓
- | |■Set Variable: CSelf18[移動量Y] = CSelf16[内部余り値Y[1/10]] / 10 
- | |▼ 移動した分、余り値から引く
- | |■Set Variable: CSelf16[内部余り値Y[1/10]] -= CSelf18[移動量Y] * 10 
+ |-◇Else
+ | |▼ Reduce speed.
+ | |■Set Variable: CSelf11[X Speed [1/10]] -= CSelf11[X Speed [1/10]] / CSelf97[Deceleration (Higher Is Slower; 1-10 Pre..] 
+ | |■Set Variable: CSelf19[Absolute Value] Absolute= CSelf11[X Speed [1/10]] + 0 
+ | |■Set Variable: CSelf11[X Speed [1/10]] -= CSelf11[X Speed [1/10]] / CSelf19[Absolute Value] 
  | |■
  |◇End◇
- |▼ 移動
- |■Effect Character: Hero[Pixel Movement (Beta)] =>  X CSelf17[移動量X]  Y CSelf18[移動量Y]
+ |▼ Add speed to "internal values."
+ |■Set Variable: CSelf15[X Internal Remainder [1/10]] += CSelf11[X Speed [1/10]] + 0 
+ |■Set Variable: CSelf16[Y Internal Remainder [1/10]] += CSelf12[Y Speed [1/10]] + 0 
+ |▼ Move if the internal value is 10 or higher.
+ |■Set Variable: CSelf10[Destination Variable] = 9180007 + 0 
+ |■Set Variable: CSelf17[X Displacement] = 0 + 0 
+ |■Set Variable: CSelf18[Y Displacement] = 0 + 0 
+ |■Condition (Number):   [1] CSelf15[X Internal Remainder [1/10]] >=  10  /  [2] CSelf15[X Internal Remainder [1/10]] <=  -10  
+ |-◇Condition:  [1]  [ CSelf15[X Internal Remainder [1/10]] >= 10   ] Case↓
+ | |■Set Variable: CSelf17[X Displacement] = CSelf15[X Internal Remainder [1/10]] / 10 
+ | |▼ Subtract amount moved from the internal value
+ | |■Set Variable: CSelf15[X Internal Remainder [1/10]] -= CSelf17[X Displacement] * 10 
+ | |■
+ |-◇Condition:  [2]  [ CSelf15[X Internal Remainder [1/10]] <= -10   ] Case↓
+ | |■Set Variable: CSelf17[X Displacement] = CSelf15[X Internal Remainder [1/10]] / 10 
+ | |▼ Subtract amount moved from the internal value
+ | |■Set Variable: CSelf15[X Internal Remainder [1/10]] -= CSelf17[X Displacement] * 10 
+ | |■
+ |◇End◇
+ |■Set Variable: CSelf10[Destination Variable] = 9180008 + 0 
+ |■Condition (Number):   [1] CSelf16[Y Internal Remainder [1/10]] >=  10  /  [2] CSelf16[Y Internal Remainder [1/10]] <=  -10  
+ |-◇Condition:  [1]  [ CSelf16[Y Internal Remainder [1/10]] >= 10   ] Case↓
+ | |■Set Variable: CSelf18[Y Displacement] = CSelf16[Y Internal Remainder [1/10]] / 10 
+ | |▼ Subtract amount moved from the internal value
+ | |■Set Variable: CSelf16[Y Internal Remainder [1/10]] -= CSelf18[Y Displacement] * 10 
+ | |■
+ |-◇Condition:  [2]  [ CSelf16[Y Internal Remainder [1/10]] <= -10   ] Case↓
+ | |■Set Variable: CSelf18[Y Displacement] = CSelf16[Y Internal Remainder [1/10]] / 10 
+ | |▼ Subtract amount moved from the internal value
+ | |■Set Variable: CSelf16[Y Internal Remainder [1/10]] -= CSelf18[Y Displacement] * 10 
+ | |■
+ |◇End◇
+ |▼ Move
+ |■Effect Character: Hero[Pixel Movement (Beta)] =>  X CSelf17[X Displacement]  Y CSelf18[Y Displacement]
  |■Repeat Loop [ 0 ] Times
- | |▼ 速度チェック用デバッグ処理
- | |■Picture Show: 999888 [Top-Left] String[\E\f[12]速度 X \cs] X:0 Y:0 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | |▼ Debug command for speed check.
+ | |■Picture Show: 999888 [Top-Left] String[\E\f[12]Speed X ] X:0 Y:0 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | |■
  |◇Loop End Point◇◇
  |■Repeat Loop [ 1 ] Times
- | |▼ プレイヤーの向きを指定。何もないと「システム側の移動方向を向く」が、
- | |▼ ここの処理で「押したキー方向」を反映するようにしている
- | |■Set Variable: CSelf98[向き固定中] = 1 + 0 
+ | |▼ Specify the members' facing direction. If not specified, the system determines the direction,
+ | |▼ but this process overrides it to use the direction of the pressed key.
+ | |■Set Variable: CSelf98[Direction Fixed?] = 1 + 0 
  | |■Effect Character: Hero[Fixed Direction ON/OFF] => ON 
- | |▼ 方向
- | |■Set Variable: CSelf10[格納先ポインタ] = 9180006 + 0 
- | |■Condition (Number):   [1] CSelf20[上下方向キー] ==  0  /  [2] CSelf20[上下方向キー] ==  8  /  [3] CSelf20[上下方向キー] ==  2  
- | |-◇Condition:  [1]  [ CSelf20[上下方向キー] == 0   ] Case↓
- | | |■Condition (Number):   [1] CSelf21[左右方向キー] ==  0  /  [2] CSelf21[左右方向キー] ==  4  /  [3] CSelf21[左右方向キー] ==  6  
- | | |-◇Condition:  [1]  [ CSelf21[左右方向キー] == 0   ] Case↓
- | | | |▼ 停止
- | | | |▼ Ver3.10でエフェクトに変更↓
+ | |▼ Direction
+ | |■Set Variable: CSelf10[Destination Variable] = 9180006 + 0 
+ | |■Condition (Number):   [1] CSelf20[Up/Down Arrow Keys] ==  0  /  [2] CSelf20[Up/Down Arrow Keys] ==  8  /  [3] CSelf20[Up/Down Arrow Keys] ==  2  
+ | |-◇Condition:  [1]  [ CSelf20[Up/Down Arrow Keys] == 0   ] Case↓
+ | | |■Condition (Number):   [1] CSelf21[Left/Right Arrow Keys] ==  0  /  [2] CSelf21[Left/Right Arrow Keys] ==  4  /  [3] CSelf21[Left/Right Arrow Keys] ==  6  
+ | | |-◇Condition:  [1]  [ CSelf21[Left/Right Arrow Keys] == 0   ] Case↓
+ | | | |▼ Stop
+ | | | |▼ Ver.3.10  Changed the following to Effects.
  | | | |■Effect Character: Hero[Force Moving Animation] => OFF 
  | | | |■Effect Character: Ally 1[Force Moving Animation] => OFF 
  | | | |■Effect Character: Ally 2[Force Moving Animation] => OFF 
@@ -611,10 +611,10 @@ WoditorEvCOMMAND_END
  | | | |■Effect Character: Ally 4[Force Moving Animation] => OFF 
  | | | |■Effect Character: Ally 5[Force Moving Animation] => OFF 
  | | | |■
- | | |-◇Condition:  [2]  [ CSelf21[左右方向キー] == 4   ] Case↓
- | | | |▼ 左
- | | | |■Set Variable: V[CSelf10[格納先ポインタ]] = 4 + 0 
- | | | |▼ Ver3.10でエフェクトに変更↓
+ | | |-◇Condition:  [2]  [ CSelf21[Left/Right Arrow Keys] == 4   ] Case↓
+ | | | |▼ Left
+ | | | |■Set Variable: V[CSelf10[Destination Variable]] = 4 + 0 
+ | | | |▼ Ver.3.10  Changed the following to Effects.
  | | | |■Effect Character: Hero[Force Moving Animation] => ON 
  | | | |■Effect Character: Ally 1[Force Moving Animation] => ON 
  | | | |■Effect Character: Ally 2[Force Moving Animation] => ON 
@@ -622,47 +622,10 @@ WoditorEvCOMMAND_END
  | | | |■Effect Character: Ally 4[Force Moving Animation] => ON 
  | | | |■Effect Character: Ally 5[Force Moving Animation] => ON 
  | | | |■
- | | |-◇Condition:  [3]  [ CSelf21[左右方向キー] == 6   ] Case↓
- | | | |▼ 右
- | | | |■Set Variable: V[CSelf10[格納先ポインタ]] = 6 + 0 
- | | | |▼ Ver3.10でエフェクトに変更↓
- | | | |■Effect Character: Hero[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 1[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 2[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 3[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 4[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 5[Force Moving Animation] => ON 
- | | | |■
- | | |◇End◇
- | | |■
- | |-◇Condition:  [2]  [ CSelf20[上下方向キー] == 8   ] Case↓
- | | |■Condition (Number):   [1] CSelf21[左右方向キー] ==  0  /  [2] CSelf21[左右方向キー] ==  4  /  [3] CSelf21[左右方向キー] ==  6  
- | | |-◇Condition:  [1]  [ CSelf21[左右方向キー] == 0   ] Case↓
- | | | |▼ 上
- | | | |■Set Variable: V[CSelf10[格納先ポインタ]] = 8 + 0 
- | | | |▼ Ver3.10でエフェクトに変更↓
- | | | |■Effect Character: Hero[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 1[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 2[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 3[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 4[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 5[Force Moving Animation] => ON 
- | | | |■
- | | |-◇Condition:  [2]  [ CSelf21[左右方向キー] == 4   ] Case↓
- | | | |▼ 左上
- | | | |■Set Variable: V[CSelf10[格納先ポインタ]] = 7 + 0 
- | | | |▼ Ver3.10でエフェクトに変更↓
- | | | |■Effect Character: Hero[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 1[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 2[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 3[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 4[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 5[Force Moving Animation] => ON 
- | | | |■
- | | |-◇Condition:  [3]  [ CSelf21[左右方向キー] == 6   ] Case↓
- | | | |▼ 右上
- | | | |■Set Variable: V[CSelf10[格納先ポインタ]] = 9 + 0 
- | | | |▼ Ver3.10でエフェクトに変更↓
+ | | |-◇Condition:  [3]  [ CSelf21[Left/Right Arrow Keys] == 6   ] Case↓
+ | | | |▼ Right
+ | | | |■Set Variable: V[CSelf10[Destination Variable]] = 6 + 0 
+ | | | |▼ Ver.3.10  Changed the following to Effects.
  | | | |■Effect Character: Hero[Force Moving Animation] => ON 
  | | | |■Effect Character: Ally 1[Force Moving Animation] => ON 
  | | | |■Effect Character: Ally 2[Force Moving Animation] => ON 
@@ -672,12 +635,12 @@ WoditorEvCOMMAND_END
  | | | |■
  | | |◇End◇
  | | |■
- | |-◇Condition:  [3]  [ CSelf20[上下方向キー] == 2   ] Case↓
- | | |■Condition (Number):   [1] CSelf21[左右方向キー] ==  0  /  [2] CSelf21[左右方向キー] ==  4  /  [3] CSelf21[左右方向キー] ==  6  
- | | |-◇Condition:  [1]  [ CSelf21[左右方向キー] == 0   ] Case↓
- | | | |▼ 下
- | | | |■Set Variable: V[CSelf10[格納先ポインタ]] = 2 + 0 
- | | | |▼ Ver3.10でエフェクトに変更↓
+ | |-◇Condition:  [2]  [ CSelf20[Up/Down Arrow Keys] == 8   ] Case↓
+ | | |■Condition (Number):   [1] CSelf21[Left/Right Arrow Keys] ==  0  /  [2] CSelf21[Left/Right Arrow Keys] ==  4  /  [3] CSelf21[Left/Right Arrow Keys] ==  6  
+ | | |-◇Condition:  [1]  [ CSelf21[Left/Right Arrow Keys] == 0   ] Case↓
+ | | | |▼ Up
+ | | | |■Set Variable: V[CSelf10[Destination Variable]] = 8 + 0 
+ | | | |▼ Ver.3.10  Changed the following to Effects.
  | | | |■Effect Character: Hero[Force Moving Animation] => ON 
  | | | |■Effect Character: Ally 1[Force Moving Animation] => ON 
  | | | |■Effect Character: Ally 2[Force Moving Animation] => ON 
@@ -685,10 +648,10 @@ WoditorEvCOMMAND_END
  | | | |■Effect Character: Ally 4[Force Moving Animation] => ON 
  | | | |■Effect Character: Ally 5[Force Moving Animation] => ON 
  | | | |■
- | | |-◇Condition:  [2]  [ CSelf21[左右方向キー] == 4   ] Case↓
- | | | |▼ 左下
- | | | |■Set Variable: V[CSelf10[格納先ポインタ]] = 1 + 0 
- | | | |▼ Ver3.10でエフェクトに変更↓
+ | | |-◇Condition:  [2]  [ CSelf21[Left/Right Arrow Keys] == 4   ] Case↓
+ | | | |▼ Upper Left
+ | | | |■Set Variable: V[CSelf10[Destination Variable]] = 7 + 0 
+ | | | |▼ Ver.3.10  Changed the following to Effects.
  | | | |■Effect Character: Hero[Force Moving Animation] => ON 
  | | | |■Effect Character: Ally 1[Force Moving Animation] => ON 
  | | | |■Effect Character: Ally 2[Force Moving Animation] => ON 
@@ -696,10 +659,47 @@ WoditorEvCOMMAND_END
  | | | |■Effect Character: Ally 4[Force Moving Animation] => ON 
  | | | |■Effect Character: Ally 5[Force Moving Animation] => ON 
  | | | |■
- | | |-◇Condition:  [3]  [ CSelf21[左右方向キー] == 6   ] Case↓
- | | | |▼ 右下
- | | | |■Set Variable: V[CSelf10[格納先ポインタ]] = 3 + 0 
- | | | |▼ Ver3.10でエフェクトに変更↓
+ | | |-◇Condition:  [3]  [ CSelf21[Left/Right Arrow Keys] == 6   ] Case↓
+ | | | |▼ Upper Right
+ | | | |■Set Variable: V[CSelf10[Destination Variable]] = 9 + 0 
+ | | | |▼ Ver.3.10  Changed the following to Effects.
+ | | | |■Effect Character: Hero[Force Moving Animation] => ON 
+ | | | |■Effect Character: Ally 1[Force Moving Animation] => ON 
+ | | | |■Effect Character: Ally 2[Force Moving Animation] => ON 
+ | | | |■Effect Character: Ally 3[Force Moving Animation] => ON 
+ | | | |■Effect Character: Ally 4[Force Moving Animation] => ON 
+ | | | |■Effect Character: Ally 5[Force Moving Animation] => ON 
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |-◇Condition:  [3]  [ CSelf20[Up/Down Arrow Keys] == 2   ] Case↓
+ | | |■Condition (Number):   [1] CSelf21[Left/Right Arrow Keys] ==  0  /  [2] CSelf21[Left/Right Arrow Keys] ==  4  /  [3] CSelf21[Left/Right Arrow Keys] ==  6  
+ | | |-◇Condition:  [1]  [ CSelf21[Left/Right Arrow Keys] == 0   ] Case↓
+ | | | |▼ Down
+ | | | |■Set Variable: V[CSelf10[Destination Variable]] = 2 + 0 
+ | | | |▼ Ver.3.10  Changed the following to Effects.
+ | | | |■Effect Character: Hero[Force Moving Animation] => ON 
+ | | | |■Effect Character: Ally 1[Force Moving Animation] => ON 
+ | | | |■Effect Character: Ally 2[Force Moving Animation] => ON 
+ | | | |■Effect Character: Ally 3[Force Moving Animation] => ON 
+ | | | |■Effect Character: Ally 4[Force Moving Animation] => ON 
+ | | | |■Effect Character: Ally 5[Force Moving Animation] => ON 
+ | | | |■
+ | | |-◇Condition:  [2]  [ CSelf21[Left/Right Arrow Keys] == 4   ] Case↓
+ | | | |▼ Lower Left
+ | | | |■Set Variable: V[CSelf10[Destination Variable]] = 1 + 0 
+ | | | |▼ Ver.3.10  Changed the following to Effects.
+ | | | |■Effect Character: Hero[Force Moving Animation] => ON 
+ | | | |■Effect Character: Ally 1[Force Moving Animation] => ON 
+ | | | |■Effect Character: Ally 2[Force Moving Animation] => ON 
+ | | | |■Effect Character: Ally 3[Force Moving Animation] => ON 
+ | | | |■Effect Character: Ally 4[Force Moving Animation] => ON 
+ | | | |■Effect Character: Ally 5[Force Moving Animation] => ON 
+ | | | |■
+ | | |-◇Condition:  [3]  [ CSelf21[Left/Right Arrow Keys] == 6   ] Case↓
+ | | | |▼ Lower Right
+ | | | |■Set Variable: V[CSelf10[Destination Variable]] = 3 + 0 
+ | | | |▼ Ver.3.10  Changed the following to Effects.
  | | | |■Effect Character: Hero[Force Moving Animation] => ON 
  | | | |■Effect Character: Ally 1[Force Moving Animation] => ON 
  | | | |■Effect Character: Ally 2[Force Moving Animation] => ON 
@@ -714,29 +714,29 @@ WoditorEvCOMMAND_END
  |◇Loop End Point◇◇
  |■
 -◇Else
- |▼ こちらは「イベント中」。時間経過で速度を中和していく。
- |▼ （一瞬で終わるイベントなら減速させないため）
- |■Condition (Number):   [1] CSelf98[向き固定中] ==  1  
- |-◇Condition:  [1]  [ CSelf98[向き固定中] == 1   ] Case↓
+ |▼ This is for during an event. Decelerate over time.
+ |▼ (In order to avoid decelerating for an event that ends instantly.)
+ |■Condition (Number):   [1] CSelf98[Direction Fixed?] ==  1  
+ |-◇Condition:  [1]  [ CSelf98[Direction Fixed?] == 1   ] Case↓
  | |■Effect Character: Hero[Fixed Direction ON/OFF] => OFF 
- | |▼ Ver3.10でエフェクトに変更↓
+ | |▼ Ver.3.10  Changed the following to Effects.
  | |■Effect Character: Hero[Force Moving Animation] => OFF 
  | |■Effect Character: Ally 1[Force Moving Animation] => OFF 
  | |■Effect Character: Ally 2[Force Moving Animation] => OFF 
  | |■Effect Character: Ally 3[Force Moving Animation] => OFF 
  | |■Effect Character: Ally 4[Force Moving Animation] => OFF 
  | |■Effect Character: Ally 5[Force Moving Animation] => OFF 
- | |■Set Variable: CSelf98[向き固定中] = 0 + 0 
+ | |■Set Variable: CSelf98[Direction Fixed?] = 0 + 0 
  | |■
  |◇End◇
- |▼ X速度中和
- |■Set Variable: CSelf11[X速度[1/10]] -= CSelf11[X速度[1/10]] / 10 
- |■Set Variable: CSelf19[絶対値] Absolute= CSelf11[X速度[1/10]] + 0 
- |■Set Variable: CSelf11[X速度[1/10]] -= CSelf11[X速度[1/10]] / CSelf19[絶対値] 
- |▼ Y速度中和
- |■Set Variable: CSelf12[Y速度[1/10]] -= CSelf12[Y速度[1/10]] / 10 
- |■Set Variable: CSelf19[絶対値] Absolute= CSelf12[Y速度[1/10]] + 0 
- |■Set Variable: CSelf12[Y速度[1/10]] -= CSelf12[Y速度[1/10]] / CSelf19[絶対値] 
+ |▼ Reduce X speed.
+ |■Set Variable: CSelf11[X Speed [1/10]] -= CSelf11[X Speed [1/10]] / 10 
+ |■Set Variable: CSelf19[Absolute Value] Absolute= CSelf11[X Speed [1/10]] + 0 
+ |■Set Variable: CSelf11[X Speed [1/10]] -= CSelf11[X Speed [1/10]] / CSelf19[Absolute Value] 
+ |▼ Reduce Y speed.
+ |■Set Variable: CSelf12[Y Speed [1/10]] -= CSelf12[Y Speed [1/10]] / 10 
+ |■Set Variable: CSelf19[Absolute Value] Absolute= CSelf12[Y Speed [1/10]] + 0 
+ |■Set Variable: CSelf12[Y Speed [1/10]] -= CSelf12[Y Speed [1/10]] / CSelf19[Absolute Value] 
  |■
 ◇End◇
 ■

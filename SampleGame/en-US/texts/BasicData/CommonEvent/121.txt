@@ -1,5 +1,5 @@
 COMMON_ID=121
-COMMON_NAME=X[移]技能使用_消費処理
+COMMON_NAME=X[Map]Skill Use: Consume
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -164,7 +164,7 @@ COMMAND_NUM=70
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　技能を使用した際、SPや要発動アイテムを減らしたり、")
 [103][0,1]<0>()("　メッセージが表示されたりする処理をここで行います")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
@@ -182,9 +182,9 @@ WoditorEvCOMMAND_START
 [401][1,0]<1>(1)()
 [103][0,1]<2>()("SPを消費する場合")
 [121][4,0]<2>(1600012,-1,0,768)()
-[300][6,1]<2>(0,4,1600000,23,1600012,0)("X[移]パラメータ増減")
+[300][6,1]<2>(0,4,1600000,23,1600012,0)("X[Map]Change Parameter")
 [103][0,1]<2>()("必要ポイントが足りなくなっていたら次使用不能にする")
-[300][5,1]<2>(0,16777218,1600000,23,1600015)("X[移]パラメータ取得")
+[300][5,1]<2>(0,16777218,1600000,23,1600015)("X[Map]Get Parameter")
 [121][4,0]<2>(1600012,-1,0,768)()
 [111][4,0]<2>(1,1600015,1600012,4)()
 [401][1,0]<2>(1)()
@@ -195,9 +195,9 @@ WoditorEvCOMMAND_START
 [401][1,0]<1>(2)()
 [103][0,1]<2>()("HPを消費する場合")
 [121][4,0]<2>(1600012,-1,0,768)()
-[300][6,1]<2>(0,4,1600000,22,1600012,0)("X[移]パラメータ増減")
+[300][6,1]<2>(0,4,1600000,22,1600012,0)("X[Map]Change Parameter")
 [103][0,1]<2>()("必要ポイントが足りなくなっていたら次使用不能にする")
-[300][5,1]<2>(0,16777218,1600000,22,1600015)("X[移]パラメータ取得")
+[300][5,1]<2>(0,16777218,1600000,22,1600015)("X[Map]Get Parameter")
 [121][4,0]<2>(1600012,-1,0,768)()
 [121][4,0]<2>(1600012,1,0,256)()
 [111][4,0]<2>(1,1600015,1600012,4)()
@@ -212,9 +212,9 @@ WoditorEvCOMMAND_START
 [111][4,0]<0>(1,1600013,0,1)()
 [401][1,0]<0>(1)()
 [103][0,1]<1>()("発動アイテムを消費する場合")
-[300][4,1]<1>(0,2,1600013,-1)("X[共]アイテム増減")
+[300][4,1]<1>(0,2,1600013,-1)("X[Com]Change Items")
 [103][0,1]<1>()("残り個数が0以下なら次は使用不能")
-[300][4,1]<1>(0,16777217,1600013,1600013)("X[共]ｱｲﾃﾑ所持数取得")
+[300][4,1]<1>(0,16777217,1600013,1600013)("X[Com]Get Item Quantity")
 [111][4,0]<1>(1,1600013,0,3)()
 [401][1,0]<1>(1)()
 [121][4,0]<2>(1600099,0,0,0)()
@@ -227,9 +227,9 @@ WoditorEvCOMMAND_START
 [401][1,0]<0>(1)()
 [250][5,4]<1>(0,1600000,0,331776,1600008)("","Allies","","Character Name")
 [122][2,1]<1>(1600009,0)("\cself[8]\cself[9]")
-[300][4,1]<1>(0,17,0,1600009)("X[移]メニュー時文章表示")
+[300][4,1]<1>(0,17,0,1600009)("X[Map]Display Menu Message")
 [123][2,0]<1>(1600000,176)()
-[300][4,1]<1>(0,17,-1,1600009)("X[移]メニュー時文章表示")
+[300][4,1]<1>(0,17,-1,1600009)("X[Map]Display Menu Message")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [0][0,0]<0>()()
@@ -237,7 +237,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　技能を使用した際、SPや要発動アイテムを減らしたり、
 ▼ 　メッセージが表示されたりする処理をここで行います
 ▼ ―――――――――――――――――――――――――――――――――――
@@ -255,9 +255,9 @@ WoditorEvCOMMAND_END
  |-◇Condition:  [1]  [ CSelf11[消費するもの] == 0   ] Case↓
  | |▼ SPを消費する場合
  | |■Set Variable: CSelf12[消費ポイント] *= -1 + 0 
- | |■Call Event [Name]: ["X[移]パラメータ増減"] <CommonEv 70>  / CSelf0[発動主人公ID] / 23:SP / CSelf12[消費ポイント] / 0:なし
+ | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[発動主人公ID] / 23:SP / CSelf12[消費ポイント] / 0:なし
  | |▼ 必要ポイントが足りなくなっていたら次使用不能にする
- | |■Call Event [Name]: CSelf15[一時変数A] = ["X[移]パラメータ取得"] <CommonEv 71>  / CSelf0[発動主人公ID] / 23:SP
+ | |■Call Event [Name]: CSelf15[一時変数A] = ["X[Map]Get Parameter"] <CommonEv 71>  / CSelf0[発動主人公ID] / 23:SP
  | |■Set Variable: CSelf12[消費ポイント] *= -1 + 0 
  | |■Condition (Number):   [1] CSelf15[一時変数A] <  CSelf12[消費ポイント]  
  | |-◇Condition:  [1]  [ CSelf15[一時変数A] < CSelf12[消費ポイント]   ] Case↓
@@ -268,9 +268,9 @@ WoditorEvCOMMAND_END
  |-◇Condition:  [2]  [ CSelf11[消費するもの] == 1   ] Case↓
  | |▼ HPを消費する場合
  | |■Set Variable: CSelf12[消費ポイント] *= -1 + 0 
- | |■Call Event [Name]: ["X[移]パラメータ増減"] <CommonEv 70>  / CSelf0[発動主人公ID] / 22:HP / CSelf12[消費ポイント] / 0:なし
+ | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[発動主人公ID] / 22:HP / CSelf12[消費ポイント] / 0:なし
  | |▼ 必要ポイントが足りなくなっていたら次使用不能にする
- | |■Call Event [Name]: CSelf15[一時変数A] = ["X[移]パラメータ取得"] <CommonEv 71>  / CSelf0[発動主人公ID] / 22:HP
+ | |■Call Event [Name]: CSelf15[一時変数A] = ["X[Map]Get Parameter"] <CommonEv 71>  / CSelf0[発動主人公ID] / 22:HP
  | |■Set Variable: CSelf12[消費ポイント] *= -1 + 0 
  | |■Set Variable: CSelf12[消費ポイント] += 1 + 0 
  | |■Condition (Number):   [1] CSelf15[一時変数A] <  CSelf12[消費ポイント]  
@@ -285,9 +285,9 @@ WoditorEvCOMMAND_END
 ■Condition (Number):   [1] CSelf13[要発動アイテム] >=  0  
 -◇Condition:  [1]  [ CSelf13[要発動アイテム] >= 0   ] Case↓
  |▼ 発動アイテムを消費する場合
- |■Call Event [Name]: ["X[共]アイテム増減"] <CommonEv 50>  / CSelf13[要発動アイテム] / -1
+ |■Call Event [Name]: ["X[Com]Change Items"] <CommonEv 50>  / CSelf13[要発動アイテム] / -1
  |▼ 残り個数が0以下なら次は使用不能
- |■Call Event [Name]: CSelf13[要発動アイテム] = ["X[共]ｱｲﾃﾑ所持数取得"] <CommonEv 54>  / CSelf13[要発動アイテム]
+ |■Call Event [Name]: CSelf13[要発動アイテム] = ["X[Com]Get Item Quantity"] <CommonEv 54>  / CSelf13[要発動アイテム]
  |■Condition (Number):   [1] CSelf13[要発動アイテム] <=  0  
  |-◇Condition:  [1]  [ CSelf13[要発動アイテム] <= 0   ] Case↓
  | |■Set Variable: CSelf99[次使用可能？] = 0 + 0 
@@ -300,9 +300,9 @@ WoditorEvCOMMAND_END
 -◇Condition:  [1] [ CSelf9[一時文字列] is not equal to "" ] Case↓
  |■Load DB(Var):  CSelf8 = VarDB[ "Allies":CSelf0[発動主人公ID]:"Character Name" ] (0:-:0) 
  |■Set String: CSelf9[一時文字列] = "\cself[8]\cself[9]"
- |■Call Event [Name]: ["X[移]メニュー時文章表示"] <CommonEv 101>  / 0:初期表示 / CSelf9[一時文字列]
+ |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / 0:初期表示 / CSelf9[一時文字列]
  |■Key Input: CSelf0[発動主人公ID] [Wait For Input <!>]  Confirm(10) Cancel(11)
- |■Call Event [Name]: ["X[移]メニュー時文章表示"] <CommonEv 101>  / -1:消去 / CSelf9[一時文字列]
+ |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / -1:消去 / CSelf9[一時文字列]
  |■
 ◇End◇
 ■

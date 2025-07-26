@@ -68,14 +68,14 @@ WoditorEvCOMMAND_END
 ■Show Message:P. G. Edy\n  I love strong people!
 ■Show Message:P. G. Edy\n  If you get to Level 10 or higher,\n  I'll join your party!
 ▼ Get Wolfarl's level and assign it to Self Variable 1.
-■Call Event: This Ev Self1 = Common 22: [ ▲メンバー情報取得[数値] ] / 12:Wolfarl / 10:レベル
+■Call Event: This Ev Self1 = Common 22: [ ▲Get Ally Data [Number] ] / 12:Wolfarl / 10:Level
 ▼ If it's 10 or more, join the party.
 ■Condition (Number):   [1] This Ev Self1 >=  10  
 -◇Condition:  [1]  [ This Ev Self1 >= 10   ] Case↓
  |■Show Message:@4\nWolfarl informed him she was already at\nLevel \self[1].
  |■Show Message:@2\nP. G. Edy\n  Well, great! I'll come with you, miss!
  |▼ Add Eddie to the party.
- |■Call Event: Common 5: [ ○メンバーの増減 ] / 0:仲間に加える / 13:P. G. Edy
+ |■Call Event: Common 5: [ ○ Change Members ] / 0:Add Member / 13:P. G. Edy
  |▼ Set Self Variable 0 to 1.
  |▼ (This page's condition is no longer met, and the event is no longer displayed.)
  |■Set Variable: This Ev Self0 = 1 + 0 

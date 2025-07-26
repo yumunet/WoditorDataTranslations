@@ -1,5 +1,5 @@
 COMMON_ID=142
-COMMON_NAME=X[戦]指定主人公更新処理
+COMMON_NAME=X[Bat]Update Ally
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -172,7 +172,7 @@ COMMAND_NUM=37
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　指定した主人公IDのｷｬﾗが参戦している場合だけ、そのキャラのパラメータ更新＋描画更新を行います。")
 [103][0,1]<0>()("　もっぱら、パラメータ変更処理や武器・防具変更の処理を戦闘スロットに反映させるために呼び出されます。")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
@@ -185,19 +185,19 @@ WoditorEvCOMMAND_START
 [121][4,0]<1>(1600010,-1,0,0)()
 [179][1,0]<1>(1600020)()
 [121][4,0]<2>(1600010,1,0,256)()
-[300][4,1]<2>(0,16777217,1600010,1600011)("X[戦]ｽﾛｯﾄから主人公ID取得")
+[300][4,1]<2>(0,16777217,1600010,1600011)("X[Bat]Get Ally ID From Slot")
 [111][4,0]<2>(1,1600011,1600000,2)()
 [401][1,0]<2>(1)()
 [103][0,1]<3>()("該当キャラがいた場合。今の主人公DBからコピーし直す")
-[300][5,1]<3>(0,3,1600010,1600011,1)("X[戦]主人公DB→戦闘DBコピー")
+[300][5,1]<3>(0,3,1600010,1600011,1)("X[Bat]Copy Allies DB to Battle DB")
 [103][0,1]<3>()("パラメータ再計算")
-[300][3,1]<3>(0,1,1600010)("X[戦]一時ｽﾃ計算<初期化>")
-[300][4,1]<3>(0,2,1600010,-1)("X[戦]一時ｽﾃ計算<装備補正>")
-[300][4,1]<3>(0,2,1600010,0)("X[戦]一時ｽﾃ計算<状態補正>")
-[300][6,1]<3>(0,4,1600010,-1,2,0)("X[戦]状態付与/消去")
+[300][3,1]<3>(0,1,1600010)("X[Bat]CalcTempStats <Initialize>")
+[300][4,1]<3>(0,2,1600010,-1)("X[Bat]CalcTempStats <Equipments>")
+[300][4,1]<3>(0,2,1600010,0)("X[Bat]CalcTempStats <StatusEffects>")
+[300][6,1]<3>(0,4,1600010,-1,2,0)("X[Bat]Add/Remove State")
 [103][0,1]<3>()("描画しなおし")
-[300][3,1]<3>(0,1,1600010)("X[戦]味方欄_座標算出")
-[300][5,1]<3>(0,3,3,1600010,1600010)("X[戦]味方欄_単体描画")
+[300][3,1]<3>(0,1,1600010)("X[Bat]Ally Box: Calc Position")
+[300][5,1]<3>(0,3,3,1600010,1600010)("X[Bat]Ally Box: Draw One")
 [103][0,1]<3>()("処理されたフラグをオンに")
 [121][4,0]<3>(1600099,1,0,0)()
 [172][0,0]<3>()()
@@ -212,7 +212,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　指定した主人公IDのｷｬﾗが参戦している場合だけ、そのキャラのパラメータ更新＋描画更新を行います。
 ▼ 　もっぱら、パラメータ変更処理や武器・防具変更の処理を戦闘スロットに反映させるために呼び出されます。
 ▼ ―――――――――――――――――――――――――――――――――――
@@ -225,19 +225,19 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf10[一時変数A] = -1 + 0 
  |■Repeat Loop [ CSelf20[最大パーティ数] ] Times
  | |■Set Variable: CSelf10[一時変数A] += 1 + 0 
- | |■Call Event [Name]: CSelf11[一時変数B] = ["X[戦]ｽﾛｯﾄから主人公ID取得"] <CommonEv 141>  / CSelf10[一時変数A]
+ | |■Call Event [Name]: CSelf11[一時変数B] = ["X[Bat]Get Ally ID From Slot"] <CommonEv 141>  / CSelf10[一時変数A]
  | |■Condition (Number):   [1] CSelf11[一時変数B] ==  CSelf0[対象主人公]  
  | |-◇Condition:  [1]  [ CSelf11[一時変数B] == CSelf0[対象主人公]   ] Case↓
  | | |▼ 該当キャラがいた場合。今の主人公DBからコピーし直す
- | | |■Call Event [Name]: ["X[戦]主人公DB→戦闘DBコピー"] <CommonEv 143>  / CSelf10[一時変数A] / CSelf11[一時変数B] / 1:HP・SP・状態を維持してコピー
+ | | |■Call Event [Name]: ["X[Bat]Copy Allies DB to Battle DB"] <CommonEv 143>  / CSelf10[一時変数A] / CSelf11[一時変数B] / 1:HP・SP・状態を維持してコピー
  | | |▼ パラメータ再計算
- | | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<初期化>"] <CommonEv 146>  / CSelf10[一時変数A]
- | | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<装備補正>"] <CommonEv 147>  / CSelf10[一時変数A] / -1:全武器を総計
- | | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<状態補正>"] <CommonEv 148>  / CSelf10[一時変数A] / 0:パラメータ補正＋状態名計算
- | | |■Call Event [Name]: ["X[戦]状態付与/消去"] <CommonEv 137>  / CSelf10[一時変数A] / -1:全て消去（強制） / 2:更新 / 0:メッセージなし
+ | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf10[一時変数A]
+ | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf10[一時変数A] / -1:全武器を総計
+ | | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf10[一時変数A] / 0:パラメータ補正＋状態名計算
+ | | |■Call Event [Name]: ["X[Bat]Add/Remove State"] <CommonEv 137>  / CSelf10[一時変数A] / -1:全て消去（強制） / 2:更新 / 0:メッセージなし
  | | |▼ 描画しなおし
- | | |■Call Event [Name]: ["X[戦]味方欄_座標算出"] <CommonEv 174>  / CSelf10[一時変数A]
- | | |■Call Event [Name]: ["X[戦]味方欄_単体描画"] <CommonEv 178>  / 3:表示[瞬間表示] / CSelf10[一時変数A] / CSelf10[一時変数A]
+ | | |■Call Event [Name]: ["X[Bat]Ally Box: Calc Position"] <CommonEv 174>  / CSelf10[一時変数A]
+ | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 3:表示[瞬間表示] / CSelf10[一時変数A] / CSelf10[一時変数A]
  | | |▼ 処理されたフラグをオンに
  | | |■Set Variable: CSelf99[処理された？] = 1 + 0 
  | | |■Exit Event

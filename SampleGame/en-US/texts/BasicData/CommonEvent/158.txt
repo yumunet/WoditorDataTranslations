@@ -1,5 +1,5 @@
 COMMON_ID=158
-COMMON_NAME=X[戦]ｱｲﾃﾑ選択実行
+COMMON_NAME=X[Bat]Select Item
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -164,7 +164,7 @@ COMMAND_NUM=142
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　アイテム選択が実行されたときの、アイテム選択＋ターゲット選択処理を行います。")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [121][4,0]<0>(1600099,-1,0,0)()
@@ -172,10 +172,10 @@ WoditorEvCOMMAND_START
 [103][0,1]<1>()("Ver2.20　座標倍率を縦横別に修正")
 [250][5,4]<1>(18,97,0,69632,1600088)("","Base System Variables","","")
 [250][5,4]<1>(18,98,0,69632,1600089)("","Base System Variables","","")
-[300][5,1]<1>(0,16777218,11,1600000,1600011)("X[戦]記憶キー位置取得")
+[300][5,1]<1>(0,16777218,11,1600000,1600011)("X[Bat]Get Cursor Memory Pos")
 [212][0,1]<1>()("アイテム開始")
 [103][0,1]<1>()("万能ウィンドウ設定を初期化")
-[300][2,1]<1>(0,0)("X[戦]ｱｲﾃﾑ一覧算出")
+[300][2,1]<1>(0,0)("X[Bat]Create Item List")
 [103][0,1]<1>()("万能ウィンドウのサイズ設定")
 [121][4,0]<1>(1600035,2,1600088,8192)()
 [250][5,4]<1>(18,9,0,65536,1600035)("","Base System Variables","","")
@@ -192,17 +192,17 @@ WoditorEvCOMMAND_START
 [121][4,0]<1>(1600035,3,1600089,8192)()
 [250][5,4]<1>(18,16,0,65536,1600035)("","Base System Variables","","")
 [103][0,1]<1>()("万能ウィンドウ表示")
-[300][6,1]<1>(0,4,0,-1,4,1)("X[共]万能ｳｨﾝﾄﾞｳ描画処理")
+[300][6,1]<1>(0,4,0,-1,4,1)("X[Com]Draw Universal Window")
 [179][1,0]<1>(1)()
 [103][0,1]<2>()("万能ウィンドウ選択処理を実行")
 [250][5,4]<2>(18,21,0,65536,1600011)("","Base System Variables","","")
-[300][3,1]<2>(0,1,2)("X[共]万能ｳｨﾝﾄﾞｳ選択実行")
+[300][3,1]<2>(0,1,2)("X[Com]U-Window: Select")
 [250][5,4]<2>(18,61,0,69632,1600011)("","Base System Variables","","")
-[300][5,1]<2>(0,3,11,1600000,1600011)("X[戦]記憶キー位置設定")
+[300][5,1]<2>(0,3,11,1600000,1600011)("X[Bat]Set Cursor Memory Pos")
 [0][0,0]<2>()()
 [498][0,0]<1>()()
 [103][0,1]<1>()("万能ウィンドウを閉じる（自動）")
-[300][6,1]<1>(0,4,-1,0,4,1)("X[共]万能ｳｨﾝﾄﾞｳ描画処理")
+[300][6,1]<1>(0,4,-1,0,4,1)("X[Com]Draw Universal Window")
 [0][0,0]<1>()()
 [498][0,0]<0>()()
 [179][1,0]<0>(1)()
@@ -230,9 +230,9 @@ WoditorEvCOMMAND_START
 [111][10,0]<5>(3,1600041,0,2,1600041,1,2,1600041,2,2)()
 [401][1,0]<5>(1)()
 [103][0,1]<6>()("味方一人")
-[300][5,1]<6>(0,16777218,1600000,0,1600039)("X[戦]味方対象選択実行")
+[300][5,1]<6>(0,16777218,1600000,0,1600039)("X[Bat]Select Ally Target")
 [103][0,1]<6>()("Ver3.15 キャンセル時のカーソルOFF処理を追加")
-[300][5,1]<6>(0,3,12,-1,-1)("X[戦]味方欄_単体描画")
+[300][5,1]<6>(0,3,12,-1,-1)("X[Bat]Ally Box: Draw One")
 [0][0,0]<6>()()
 [401][1,0]<5>(2)()
 [103][0,1]<6>()("自分")
@@ -240,19 +240,19 @@ WoditorEvCOMMAND_START
 [0][0,0]<6>()()
 [401][1,0]<5>(3)()
 [103][0,1]<6>()("味方全員")
-[300][5,1]<6>(0,3,10,-1,-1)("X[戦]味方欄_単体描画")
+[300][5,1]<6>(0,3,10,-1,-1)("X[Bat]Ally Box: Draw One")
 [103][0,1]<6>()("決定かキャンセルか、だけ受付する")
 [123][2,0]<6>(1600012,176)()
-[300][5,1]<6>(0,3,12,-1,-1)("X[戦]味方欄_単体描画")
+[300][5,1]<6>(0,3,12,-1,-1)("X[Bat]Ally Box: Draw One")
 [111][7,0]<6>(2,1600012,10,2,1600012,11,2)()
 [401][1,0]<6>(1)()
 [103][0,1]<7>()("決定なら使用")
-[300][3,1]<7>(0,1,0)("X[共]システムSE再生")
+[300][3,1]<7>(0,1,0)("X[Com]Play System Sound")
 [121][4,0]<7>(1600039,-10,0,0)()
 [0][0,0]<7>()()
 [401][1,0]<6>(2)()
 [103][0,1]<7>()("キャンセル")
-[300][3,1]<7>(0,1,1)("X[共]システムSE再生")
+[300][3,1]<7>(0,1,1)("X[Com]Play System Sound")
 [121][4,0]<7>(1600039,-1,0,0)()
 [0][0,0]<7>()()
 [499][0,0]<6>()()
@@ -261,7 +261,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<5>()()
 [401][1,0]<4>(2)()
 [103][0,1]<5>()("技能発動（技能発動処理を読み込み）")
-[300][6,1]<5>(0,16777219,1600000,1600022,2,1600039)("X[戦]技能選択実行")
+[300][6,1]<5>(0,16777219,1600000,1600022,2,1600039)("X[Bat]Select Skill")
 [0][0,0]<5>()()
 [401][1,0]<4>(3)()
 [103][0,1]<5>()("イベント")
@@ -276,7 +276,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<4>(3,1600023,22,332288,1600042)("","Weapons","","Skill When Used As Item?     ")
 [111][4,0]<4>(1,1600042,0,1)()
 [401][1,0]<4>(1)()
-[300][6,1]<5>(0,16777219,1600000,1600022,2,1600039)("X[戦]技能選択実行")
+[300][6,1]<5>(0,16777219,1600000,1600022,2,1600039)("X[Bat]Select Skill")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
 [0][0,0]<4>()()
@@ -286,7 +286,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<4>(4,1600023,22,332288,1600042)("","Armors","","Skill When Used As Item?     ")
 [111][4,0]<4>(1,1600042,0,1)()
 [401][1,0]<4>(1)()
-[300][6,1]<5>(0,16777219,1600000,1600022,2,1600039)("X[戦]技能選択実行")
+[300][6,1]<5>(0,16777219,1600000,1600022,2,1600039)("X[Bat]Select Skill")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
 [0][0,0]<4>()()
@@ -309,7 +309,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　アイテム選択が実行されたときの、アイテム選択＋ターゲット選択処理を行います。
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Set Variable: CSelf99[使用対象] = -1 + 0 
@@ -317,10 +317,10 @@ WoditorEvCOMMAND_END
  |▼ Ver2.20　座標倍率を縦横別に修正
  |■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
  |■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
- |■Call Event [Name]: CSelf11[一時変数B] = ["X[戦]記憶キー位置取得"] <CommonEv 155>  / 11:[戦闘]ｱｲﾃﾑ(要ｷｬﾗ指定) / CSelf0[発動者スロット]
+ |■Call Event [Name]: CSelf11[一時変数B] = ["X[Bat]Get Cursor Memory Pos"] <CommonEv 155>  / 11:[戦闘]ｱｲﾃﾑ(要ｷｬﾗ指定) / CSelf0[発動者スロット]
  |●Label Point [アイテム開始] <<<<<<<<<<<<<<<<<<<<<<<<★
  |▼ 万能ウィンドウ設定を初期化
- |■Call Event [Name]: ["X[戦]ｱｲﾃﾑ一覧算出"] <CommonEv 153> 
+ |■Call Event [Name]: ["X[Bat]Create Item List"] <CommonEv 153> 
  |▼ 万能ウィンドウのサイズ設定
  |■Set Variable: CSelf35[一時万能ｳｨﾝﾄﾞｳTMP] = 2 * CSelf88[座標倍率X[x10]] 
  |■Write to DB(Var): VarDB[ "Base System Variables":9:0 ] (18:Universal Window Display X:Number) =  CSelf35[一時万能ｳｨﾝﾄﾞｳTMP]
@@ -337,17 +337,17 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf35[一時万能ｳｨﾝﾄﾞｳTMP] = 3 * CSelf89[座標倍率Y[x10]] 
  |■Write to DB(Var): VarDB[ "Base System Variables":16:0 ] (18:Universal Window Description Height:Number) =  CSelf35[一時万能ｳｨﾝﾄﾞｳTMP]
  |▼ 万能ウィンドウ表示
- |■Call Event [Name]: ["X[共]万能ｳｨﾝﾄﾞｳ描画処理"] <CommonEv 64>  / 0:表示 / -1 / 4:ｳｨﾝﾄﾞｳの下に表示 / 1:左上から展開
+ |■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / 0:Display / -1 / 4:Display Below Window / 1:Expand from Top-Left
  |■Repeat Loop [ 1 ] Times
  | |▼ 万能ウィンドウ選択処理を実行
  | |■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) =  CSelf11[一時変数B]
- | |■Call Event [Name]: ["X[共]万能ｳｨﾝﾄﾞｳ選択実行"] <CommonEv 65>  / 2:選択を終えるまでループ[ｶｰｿﾙ初期化しない]
+ | |■Call Event [Name]: ["X[Com]U-Window: Select"] <CommonEv 65>  / 2:Loop Until Selected (Don't Initialize Cursor)
  | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) 
- | |■Call Event [Name]: ["X[戦]記憶キー位置設定"] <CommonEv 156>  / 11:[戦闘]ｱｲﾃﾑ(要ｷｬﾗ指定) / CSelf0[発動者スロット] / CSelf11[一時変数B]
+ | |■Call Event [Name]: ["X[Bat]Set Cursor Memory Pos"] <CommonEv 156>  / 11:[戦闘]ｱｲﾃﾑ(要ｷｬﾗ指定) / CSelf0[発動者スロット] / CSelf11[一時変数B]
  | |■
  |◇Loop End Point◇◇
  |▼ 万能ウィンドウを閉じる（自動）
- |■Call Event [Name]: ["X[共]万能ｳｨﾝﾄﾞｳ描画処理"] <CommonEv 64>  / -1:消去 / 0 / 4:ｳｨﾝﾄﾞｳの下に表示 / 1:左上から展開
+ |■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / -1:Erase / 0 / 4:Display Below Window / 1:Expand from Top-Left
  |■
 ◇Loop End Point◇◇
 ■Repeat Loop [ 1 ] Times
@@ -375,9 +375,9 @@ WoditorEvCOMMAND_END
  | | | | |■Condition (Number):   [1] CSelf41[アイテム 効果対象] ==  0  /  [2] CSelf41[アイテム 効果対象] ==  1  /  [3] CSelf41[アイテム 効果対象] ==  2  
  | | | | |-◇Condition:  [1]  [ CSelf41[アイテム 効果対象] == 0   ] Case↓
  | | | | | |▼ 味方一人
- | | | | | |■Call Event [Name]: CSelf39[使用対象] = ["X[戦]味方対象選択実行"] <CommonEv 161>  / CSelf0[発動者スロット] / 0:全員選択可能
+ | | | | | |■Call Event [Name]: CSelf39[使用対象] = ["X[Bat]Select Ally Target"] <CommonEv 161>  / CSelf0[発動者スロット] / 0:全員選択可能
  | | | | | |▼ Ver3.15 キャンセル時のカーソルOFF処理を追加
- | | | | | |■Call Event [Name]: ["X[戦]味方欄_単体描画"] <CommonEv 178>  / 12:カーソルOFF（対象位置　位置-1なら全部） / -1 / -1
+ | | | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 12:カーソルOFF（対象位置　位置-1なら全部） / -1 / -1
  | | | | | |■
  | | | | |-◇Condition:  [2]  [ CSelf41[アイテム 効果対象] == 1   ] Case↓
  | | | | | |▼ 自分
@@ -385,19 +385,19 @@ WoditorEvCOMMAND_END
  | | | | | |■
  | | | | |-◇Condition:  [3]  [ CSelf41[アイテム 効果対象] == 2   ] Case↓
  | | | | | |▼ 味方全員
- | | | | | |■Call Event [Name]: ["X[戦]味方欄_単体描画"] <CommonEv 178>  / 10:カーソルON（対象位置　位置-1なら全部） / -1 / -1
+ | | | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 10:カーソルON（対象位置　位置-1なら全部） / -1 / -1
  | | | | | |▼ 決定かキャンセルか、だけ受付する
  | | | | | |■Key Input: CSelf12[一時変数C] [Wait For Input <!>]  Confirm(10) Cancel(11)
- | | | | | |■Call Event [Name]: ["X[戦]味方欄_単体描画"] <CommonEv 178>  / 12:カーソルOFF（対象位置　位置-1なら全部） / -1 / -1
+ | | | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 12:カーソルOFF（対象位置　位置-1なら全部） / -1 / -1
  | | | | | |■Condition (Number):   [1] CSelf12[一時変数C] ==  10  /  [2] CSelf12[一時変数C] ==  11  
  | | | | | |-◇Condition:  [1]  [ CSelf12[一時変数C] == 10   ] Case↓
  | | | | | | |▼ 決定なら使用
- | | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 0:決定音
+ | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
  | | | | | | |■Set Variable: CSelf39[使用対象] = -10 + 0 
  | | | | | | |■
  | | | | | |-◇Condition:  [2]  [ CSelf12[一時変数C] == 11   ] Case↓
  | | | | | | |▼ キャンセル
- | | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 1:キャンセル音
+ | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 1:Cancel Sound
  | | | | | | |■Set Variable: CSelf39[使用対象] = -1 + 0 
  | | | | | | |■
  | | | | | |◇End◇
@@ -406,7 +406,7 @@ WoditorEvCOMMAND_END
  | | | | |■
  | | | |-◇Condition:  [2]  [ CSelf40[アイテム 効果タイプ] == 2   ] Case↓
  | | | | |▼ 技能発動（技能発動処理を読み込み）
- | | | | |■Call Event [Name]: CSelf39[使用対象] = ["X[戦]技能選択実行"] <CommonEv 159>  / CSelf0[発動者スロット] / CSelf22[実行コード] / 2:技能[A]アイテム経由実行
+ | | | | |■Call Event [Name]: CSelf39[使用対象] = ["X[Bat]Select Skill"] <CommonEv 159>  / CSelf0[発動者スロット] / CSelf22[実行コード] / 2:技能[A]アイテム経由実行
  | | | | |■
  | | | |-◇Condition:  [3]  [ CSelf40[アイテム 効果タイプ] == 3   ] Case↓
  | | | | |▼ イベント
@@ -421,7 +421,7 @@ WoditorEvCOMMAND_END
  | | | |■Load DB(User):  CSelf42[アイテム 発動技能] = UserDB[ "Weapons":CSelf23[番号]:"Skill When Used As Item?     " ] (3:-:22) 
  | | | |■Condition (Number):   [1] CSelf42[アイテム 発動技能] >=  0  
  | | | |-◇Condition:  [1]  [ CSelf42[アイテム 発動技能] >= 0   ] Case↓
- | | | | |■Call Event [Name]: CSelf39[使用対象] = ["X[戦]技能選択実行"] <CommonEv 159>  / CSelf0[発動者スロット] / CSelf22[実行コード] / 2:技能[A]アイテム経由実行
+ | | | | |■Call Event [Name]: CSelf39[使用対象] = ["X[Bat]Select Skill"] <CommonEv 159>  / CSelf0[発動者スロット] / CSelf22[実行コード] / 2:技能[A]アイテム経由実行
  | | | | |■
  | | | |◇End◇
  | | | |■
@@ -431,7 +431,7 @@ WoditorEvCOMMAND_END
  | | | |■Load DB(User):  CSelf42[アイテム 発動技能] = UserDB[ "Armors":CSelf23[番号]:"Skill When Used As Item?     " ] (4:-:20) 
  | | | |■Condition (Number):   [1] CSelf42[アイテム 発動技能] >=  0  
  | | | |-◇Condition:  [1]  [ CSelf42[アイテム 発動技能] >= 0   ] Case↓
- | | | | |■Call Event [Name]: CSelf39[使用対象] = ["X[戦]技能選択実行"] <CommonEv 159>  / CSelf0[発動者スロット] / CSelf22[実行コード] / 2:技能[A]アイテム経由実行
+ | | | | |■Call Event [Name]: CSelf39[使用対象] = ["X[Bat]Select Skill"] <CommonEv 159>  / CSelf0[発動者スロット] / CSelf22[実行コード] / 2:技能[A]アイテム経由実行
  | | | | |■
  | | | |◇End◇
  | | | |■

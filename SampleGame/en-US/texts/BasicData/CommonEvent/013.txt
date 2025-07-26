@@ -1,16 +1,16 @@
 COMMON_ID=13
-COMMON_NAME=○戦闘コマンドの変更
+COMMON_NAME=○ Change Battle Commands
 COMMAND_COLOR=0
 TRIGGER=32
 TRIGGER_TARGET=2000000
 TRIGGER_VAL=0
-MEMO=戦闘コマンドを変更します。戦闘中可。
+MEMO=Changes battle commands. Also works in battle.
 VALINPUT_NUM=3
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=対象主人公
-VALINPUT_NAME_1=どのコマンドを
-VALINPUT_NAME_2=これにする
+VALINPUT_NAME_0=Target Ally
+VALINPUT_NAME_1=Which Cmd?
+VALINPUT_NAME_2=Change To
 VALINPUT_NAME_3=
 VALINPUT_NAME_4=
 VALINPUT_NAME_5=
@@ -33,20 +33,20 @@ LOADTYPE9=0
 CHOICE_STR_NUM=10
 CHOICE_STR_0_NUM=0
 CHOICE_STR_1_NUM=10
-CHOICE_STR_1_0=コマンド1
-CHOICE_STR_1_1=コマンド2
-CHOICE_STR_1_2=コマンド3
-CHOICE_STR_1_3=コマンド4
-CHOICE_STR_1_4=コマンド5
-CHOICE_STR_1_5=コマンド6
-CHOICE_STR_1_6=コマンド7
-CHOICE_STR_1_7=コマンド8
-CHOICE_STR_1_8=空き欄（前方から）
-CHOICE_STR_1_9=空き欄（後方から）
+CHOICE_STR_1_0=Command 1
+CHOICE_STR_1_1=Command 2
+CHOICE_STR_1_2=Command 3
+CHOICE_STR_1_3=Command 4
+CHOICE_STR_1_4=Command 5
+CHOICE_STR_1_5=Command 6
+CHOICE_STR_1_6=Command 7
+CHOICE_STR_1_7=Command 8
+CHOICE_STR_1_8=Empty Slot (Front)
+CHOICE_STR_1_9=Empty Slot (Back)
 CHOICE_STR_2_NUM=3
-CHOICE_STR_2_0=<消去する>
-CHOICE_STR_2_1=<消去する>
-CHOICE_STR_2_2=<消去する>
+CHOICE_STR_2_0=<Remove>
+CHOICE_STR_2_1=<Remove>
+CHOICE_STR_2_2=<Remove>
 CHOICE_STR_3_NUM=0
 CHOICE_STR_4_NUM=0
 CHOICE_STR_5_NUM=0
@@ -87,11 +87,11 @@ DEFAULT_VAL_1=0
 DEFAULT_VAL_2=0
 DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
-RETURN_VAL_NAME=変更成功？
+RETURN_VAL_NAME=Successful?
 RETURN_VAL_TARGET=90
-CSELF_NAME_0=対象主人公
-CSELF_NAME_1=どのコマンドを
-CSELF_NAME_2=これにする
+CSELF_NAME_0=Target Ally
+CSELF_NAME_1=Which Cmd?
+CSELF_NAME_2=Change To
 CSELF_NAME_3=
 CSELF_NAME_4=
 CSELF_NAME_5=
@@ -179,7 +179,7 @@ CSELF_NAME_86=
 CSELF_NAME_87=
 CSELF_NAME_88=
 CSELF_NAME_89=
-CSELF_NAME_90=変更成功？
+CSELF_NAME_90=Change Successful?
 CSELF_NAME_91=
 CSELF_NAME_92=
 CSELF_NAME_93=
@@ -192,21 +192,21 @@ CSELF_NAME_99=
 COMMAND_NUM=7
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("入力０：対象主人公　１：どのコマンドを（1～６）　２：何に置き換える？（コマンド番号）")
-[300][6,1]<0>(0,16777219,1600000,1600001,1600002,1600090)("X[移]戦闘コマンド変更")
+[103][0,1]<0>()("Arguments 0: Target Ally  1: Which Command? (1-6)  2: Change To (Command ID)")
+[300][6,1]<0>(0,16777219,1600000,1600001,1600002,1600090)("X[Map]Change Battle Commands")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("戦闘中で、該当キャラが参戦してた場合はそちらにも格納")
+[103][0,1]<0>()("If the corresponding character is in battle, store there as well.")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[300][3,1]<0>(0,1,1600000)("X[戦]指定主人公更新処理")
+[300][3,1]<0>(0,1,1600000)("X[Bat]Update Ally")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ 入力０：対象主人公　１：どのコマンドを（1～６）　２：何に置き換える？（コマンド番号）
-■Call Event [Name]: CSelf90[変更成功？] = ["X[移]戦闘コマンド変更"] <CommonEv 77>  / CSelf0[対象主人公] / CSelf1[どのコマンドを] / CSelf2[これにする]
+▼ Arguments 0: Target Ally  1: Which Command? (1-6)  2: Change To (Command ID)
+■Call Event [Name]: CSelf90[Change Successful?] = ["X[Map]Change Battle Commands"] <CommonEv 77>  / CSelf0[Target Ally] / CSelf1[Which Cmd?] / CSelf2[Change To]
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼ 戦闘中で、該当キャラが参戦してた場合はそちらにも格納
+▼ If the corresponding character is in battle, store there as well.
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-■Call Event [Name]: ["X[戦]指定主人公更新処理"] <CommonEv 142>  / CSelf0[対象主人公]
+■Call Event [Name]: ["X[Bat]Update Ally"] <CommonEv 142>  / CSelf0[Target Ally]
 ■
 [COMMAND_TEXT_END]

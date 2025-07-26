@@ -1,5 +1,5 @@
 COMMON_ID=144
-COMMON_NAME=X[戦]敵DB→戦闘DBコピー
+COMMON_NAME=X[Bat]Copy Enemies DB to Battle DB
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -168,14 +168,14 @@ COMMAND_NUM=117
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　ユーザDB「敵キャラ個体データ」から、戦闘時に使用する「戦闘DB」へパラメータをコピーします。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("初期化")
 [250][5,4]<0>(10,1600000,-2,65536,1600005)("","×┏Battle Temp Status","","")
@@ -280,22 +280,22 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [498][0,0]<0>()()
 [103][0,1]<0>()("補正計算")
-[300][3,1]<0>(0,1,1600000)("X[戦]一時ｽﾃ計算<初期化>")
-[300][4,1]<0>(0,2,1600000,0)("X[戦]一時ｽﾃ計算<装備補正>")
-[300][4,1]<0>(0,2,1600000,0)("X[戦]一時ｽﾃ計算<状態補正>")
+[300][3,1]<0>(0,1,1600000)("X[Bat]CalcTempStats <Initialize>")
+[300][4,1]<0>(0,2,1600000,0)("X[Bat]CalcTempStats <Equipments>")
+[300][4,1]<0>(0,2,1600000,0)("X[Bat]CalcTempStats <StatusEffects>")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　ユーザDB「敵キャラ個体データ」から、戦闘時に使用する「戦闘DB」へパラメータをコピーします。
 ▼ 
-▼ 【このコモンイベント内で操作しているデータベース】
+▼ [Databases Accessed by This Common Event]
 ▼  
-▼ 【ここから呼び出している別コモンイベント】
+▼ [Other Common Events Called from Here]
 ▼  
-▼ 【どのコモンイベントから主に呼び出されているか】
+▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ 初期化
 ■Write to DB(Var): [Reset Type "×┏Battle Temp Status"(10) Data CSelf0[入力先戦闘DB]]
@@ -400,8 +400,8 @@ WoditorEvCOMMAND_END
  |■
 ◇Loop End Point◇◇
 ▼ 補正計算
-■Call Event [Name]: ["X[戦]一時ｽﾃ計算<初期化>"] <CommonEv 146>  / CSelf0[入力先戦闘DB]
-■Call Event [Name]: ["X[戦]一時ｽﾃ計算<装備補正>"] <CommonEv 147>  / CSelf0[入力先戦闘DB] / 0:武器欄の武器を使用
-■Call Event [Name]: ["X[戦]一時ｽﾃ計算<状態補正>"] <CommonEv 148>  / CSelf0[入力先戦闘DB] / 0:パラメータ補正＋状態名計算
+■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf0[入力先戦闘DB]
+■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf0[入力先戦闘DB] / 0:武器欄の武器を使用
+■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf0[入力先戦闘DB] / 0:パラメータ補正＋状態名計算
 ■
 [COMMAND_TEXT_END]

@@ -1,5 +1,5 @@
 COMMON_ID=84
-COMMON_NAME=X[移]お店実行
+COMMON_NAME=X[Map]Open Shop
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -178,7 +178,7 @@ COMMAND_NUM=257
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　商品追加後に、お店を実行する処理です。ここから描画処理などを呼び出します。")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
@@ -186,16 +186,16 @@ WoditorEvCOMMAND_START
 [250][5,4]<0>(18,21,0,65536,0)("","Base System Variables","","")
 [111][10,0]<0>(3,1600000,1,2,1600000,2,2,1600000,3,2)()
 [401][1,0]<0>(1)()
-[300][3,1]<1>(0,1,1)("X[移]┗ お店内部情報更新")
-[300][5,1]<1>(0,3,0,-11,-1)("X[移]┣ お店　描画")
+[300][3,1]<1>(0,1,1)("X[Map]┗ Update Shop Internal Data")
+[300][5,1]<1>(0,3,0,-11,-1)("X[Map]┣ Draw Shop")
 [0][0,0]<1>()()
 [401][1,0]<0>(2)()
-[300][3,1]<1>(0,1,0)("X[移]┗ お店内部情報更新")
-[300][5,1]<1>(0,3,0,-10,-1)("X[移]┣ お店　描画")
+[300][3,1]<1>(0,1,0)("X[Map]┗ Update Shop Internal Data")
+[300][5,1]<1>(0,3,0,-10,-1)("X[Map]┣ Draw Shop")
 [0][0,0]<1>()()
 [401][1,0]<0>(3)()
-[300][3,1]<1>(0,1,0)("X[移]┗ お店内部情報更新")
-[300][5,1]<1>(0,3,0,-1,-1)("X[移]┣ お店　描画")
+[300][3,1]<1>(0,1,0)("X[Map]┗ Update Shop Internal Data")
+[300][5,1]<1>(0,3,0,-1,-1)("X[Map]┣ Draw Shop")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [121][4,0]<0>(1600019,0,0,0)()
@@ -206,52 +206,52 @@ WoditorEvCOMMAND_START
 [401][1,0]<0>(1)()
 [103][0,1]<1>()("売る")
 [121][4,0]<1>(1600019,1,0,0)()
-[300][3,1]<1>(0,1,1)("X[移]┗ お店内部情報更新")
-[300][4,1]<1>(0,2,2,1)("X[移]┣ お店　描画")
-[300][4,1]<1>(0,2,2,-2)("X[移]┣ お店　描画")
-[300][5,1]<1>(0,3,3,1,0)("X[移]┣ お店　描画")
+[300][3,1]<1>(0,1,1)("X[Map]┗ Update Shop Internal Data")
+[300][4,1]<1>(0,2,2,1)("X[Map]┣ Draw Shop")
+[300][4,1]<1>(0,2,2,-2)("X[Map]┣ Draw Shop")
+[300][5,1]<1>(0,3,3,1,0)("X[Map]┣ Draw Shop")
 [0][0,0]<1>()()
 [401][1,0]<0>(2)()
 [103][0,1]<1>()("買う")
 [121][4,0]<1>(1600019,0,0,0)()
-[300][3,1]<1>(0,1,0)("X[移]┗ お店内部情報更新")
-[300][4,1]<1>(0,2,2,0)("X[移]┣ お店　描画")
-[300][4,1]<1>(0,2,2,-2)("X[移]┣ お店　描画")
-[300][5,1]<1>(0,3,3,0,0)("X[移]┣ お店　描画")
+[300][3,1]<1>(0,1,0)("X[Map]┗ Update Shop Internal Data")
+[300][4,1]<1>(0,2,2,0)("X[Map]┣ Draw Shop")
+[300][4,1]<1>(0,2,2,-2)("X[Map]┣ Draw Shop")
+[300][5,1]<1>(0,3,3,0,0)("X[Map]┣ Draw Shop")
 [0][0,0]<1>()()
 [401][1,0]<0>(3)()
 [103][0,1]<1>()("買う・売る　から選択できる")
-[300][3,1]<1>(0,1,1600019)("X[移]┗ お店内部情報更新")
-[300][5,1]<1>(0,3,2,1600019,0)("X[移]┣ お店　描画")
+[300][3,1]<1>(0,1,1600019)("X[Map]┗ Update Shop Internal Data")
+[300][5,1]<1>(0,3,2,1600019,0)("X[Map]┣ Draw Shop")
 [170][0,0]<1>()()
 [123][2,0]<2>(1600010,184)()
 [111][7,0]<2>(2,1600010,4,2,1600010,6,2)()
 [401][1,0]<2>(1)()
 [103][0,1]<3>()("左キー")
-[300][3,1]<3>(0,1,5)("X[共]システムSE再生")
+[300][3,1]<3>(0,1,5)("X[Com]Play System Sound")
 [121][4,0]<3>(1600019,1,0,256)()
 [121][4,0]<3>(1600019,2,0,1280)()
-[300][3,1]<3>(0,1,1600019)("X[移]┗ お店内部情報更新")
-[300][5,1]<3>(0,3,3,1600019,-1)("X[移]┣ お店　描画")
-[300][4,1]<3>(0,2,2,1600019)("X[移]┣ お店　描画")
+[300][3,1]<3>(0,1,1600019)("X[Map]┗ Update Shop Internal Data")
+[300][5,1]<3>(0,3,3,1600019,-1)("X[Map]┣ Draw Shop")
+[300][4,1]<3>(0,2,2,1600019)("X[Map]┣ Draw Shop")
 [121][4,0]<3>(1600016,0,0,0)()
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
 [103][0,1]<3>()("右キー")
-[300][3,1]<3>(0,1,5)("X[共]システムSE再生")
+[300][3,1]<3>(0,1,5)("X[Com]Play System Sound")
 [121][4,0]<3>(1600019,1,0,256)()
 [121][4,0]<3>(1600019,2,0,1280)()
-[300][3,1]<3>(0,1,1600019)("X[移]┗ お店内部情報更新")
-[300][5,1]<3>(0,3,3,1600019,-1)("X[移]┣ お店　描画")
-[300][4,1]<3>(0,2,2,1600019)("X[移]┣ お店　描画")
+[300][3,1]<3>(0,1,1600019)("X[Map]┗ Update Shop Internal Data")
+[300][5,1]<3>(0,3,3,1600019,-1)("X[Map]┣ Draw Shop")
+[300][4,1]<3>(0,2,2,1600019)("X[Map]┣ Draw Shop")
 [121][4,0]<3>(1600016,0,0,0)()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [111][7,0]<2>(2,1600010,10,2,1600010,11,2)()
 [401][1,0]<2>(1)()
 [103][0,1]<3>()("決定")
-[300][3,1]<3>(0,1,0)("X[共]システムSE再生")
-[300][4,1]<3>(0,2,2,-2)("X[移]┣ お店　描画")
+[300][3,1]<3>(0,1,0)("X[Com]Play System Sound")
+[300][4,1]<3>(0,2,2,-2)("X[Map]┣ Draw Shop")
 [250][5,4]<3>(18,21,0,196608,1600016)("","Base System Variables","Universal Window External Cursor Set","")
 [171][0,0]<3>()()
 [0][0,0]<3>()()
@@ -264,16 +264,16 @@ WoditorEvCOMMAND_START
 [498][0,0]<1>()()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
-[300][5,1]<0>(0,3,3,1600019,1600016)("X[移]┣ お店　描画")
+[300][5,1]<0>(0,3,3,1600019,1600016)("X[Map]┣ Draw Shop")
 [170][0,0]<0>()()
-[300][5,1]<1>(0,16777218,1,1,1600013)("X[共]万能ｳｨﾝﾄﾞｳ選択実行")
+[300][5,1]<1>(0,16777218,1,1,1600013)("X[Com]U-Window: Select")
 [111][4,0]<1>(17,1600013,-200,2)()
 [401][1,0]<1>(1)()
 [103][0,1]<2>()("移動だけの場合は選択カーソル位置の内容を得る")
 [250][5,4]<2>(18,18,0,69632,1600015)("","Base System Variables","","")
 [250][5,4]<2>(18,61,0,69632,1600016)("","Base System Variables","","")
 [103][0,1]<2>()("格納されている内容に応じて描画内容を更新")
-[300][5,1]<2>(0,3,1,1600019,1600016)("X[移]┣ お店　描画")
+[300][5,1]<2>(0,3,1,1600019,1600016)("X[Map]┣ Draw Shop")
 [0][0,0]<2>()()
 [420][1,0]<1>(0)()
 [111][10,0]<2>(3,1600013,-100,2,1600013,-2,2,1600013,0,1)()
@@ -283,7 +283,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("売り買い両用のお店の場合だけｷｬﾝｾﾙして戻る")
 [250][5,4]<4>(18,61,0,69632,1600016)("","Base System Variables","","")
-[300][5,1]<4>(0,3,3,1600019,-1)("X[移]┣ お店　描画")
+[300][5,1]<4>(0,3,3,1600019,-1)("X[Map]┣ Draw Shop")
 [213][0,1]<4>()("お店開始")
 [180][1,0]<4>(1)()
 [0][0,0]<4>()()
@@ -309,44 +309,44 @@ WoditorEvCOMMAND_START
 [121][4,0]<5>(1600021,1600020,10000,16384)()
 [111][10,0]<5>(3,1600020,19999,3,1600020,29999,3,1600020,39999,3)()
 [401][1,0]<5>(1)()
-[300][5,1]<6>(0,16777218,1600021,1,1600024)("X[共]アイテム増減")
+[300][5,1]<6>(0,16777218,1600021,1,1600024)("X[Com]Change Items")
 [111][4,0]<6>(17,1600024,0,5)()
 [401][1,0]<6>(1)()
-[300][3,1]<7>(0,1,1600022)("X[共]所持金増減")
+[300][3,1]<7>(0,1,1600022)("X[Com]Change Money")
 [103][0,1]<7>()("SE再生")
-[300][3,1]<7>(0,1,20)("X[共]システムSE再生")
+[300][3,1]<7>(0,1,20)("X[Com]Play System Sound")
 [0][0,0]<7>()()
 [420][1,0]<6>(0)()
 [103][0,1]<7>()("SE再生")
-[300][3,1]<7>(0,1,2)("X[共]システムSE再生")
+[300][3,1]<7>(0,1,2)("X[Com]Play System Sound")
 [0][0,0]<7>()()
 [499][0,0]<6>()()
 [0][0,0]<6>()()
 [401][1,0]<5>(2)()
-[300][5,1]<6>(0,16777218,1600021,1,1600024)("X[共]武器増減")
+[300][5,1]<6>(0,16777218,1600021,1,1600024)("X[Com]Change Weapons")
 [111][4,0]<6>(17,1600024,0,5)()
 [401][1,0]<6>(1)()
-[300][3,1]<7>(0,1,1600022)("X[共]所持金増減")
+[300][3,1]<7>(0,1,1600022)("X[Com]Change Money")
 [103][0,1]<7>()("SE再生")
-[300][3,1]<7>(0,1,20)("X[共]システムSE再生")
+[300][3,1]<7>(0,1,20)("X[Com]Play System Sound")
 [0][0,0]<7>()()
 [420][1,0]<6>(0)()
 [103][0,1]<7>()("SE再生")
-[300][3,1]<7>(0,1,2)("X[共]システムSE再生")
+[300][3,1]<7>(0,1,2)("X[Com]Play System Sound")
 [0][0,0]<7>()()
 [499][0,0]<6>()()
 [0][0,0]<6>()()
 [401][1,0]<5>(3)()
-[300][5,1]<6>(0,16777218,1600021,1,1600024)("X[共]防具増減")
+[300][5,1]<6>(0,16777218,1600021,1,1600024)("X[Com]Change Armors")
 [111][4,0]<6>(17,1600024,0,5)()
 [401][1,0]<6>(1)()
-[300][3,1]<7>(0,1,1600022)("X[共]所持金増減")
+[300][3,1]<7>(0,1,1600022)("X[Com]Change Money")
 [103][0,1]<7>()("SE再生")
-[300][3,1]<7>(0,1,20)("X[共]システムSE再生")
+[300][3,1]<7>(0,1,20)("X[Com]Play System Sound")
 [0][0,0]<7>()()
 [420][1,0]<6>(0)()
 [103][0,1]<7>()("SE再生")
-[300][3,1]<7>(0,1,2)("X[共]システムSE再生")
+[300][3,1]<7>(0,1,2)("X[Com]Play System Sound")
 [0][0,0]<7>()()
 [499][0,0]<6>()()
 [0][0,0]<6>()()
@@ -363,44 +363,44 @@ WoditorEvCOMMAND_START
 [121][4,0]<5>(1600021,1600020,10000,16384)()
 [111][10,0]<5>(3,1600020,19999,3,1600020,29999,3,1600020,39999,3)()
 [401][1,0]<5>(1)()
-[300][5,1]<6>(0,16777218,1600021,-1,1600024)("X[共]アイテム増減")
+[300][5,1]<6>(0,16777218,1600021,-1,1600024)("X[Com]Change Items")
 [111][4,0]<6>(17,1600024,0,5)()
 [401][1,0]<6>(1)()
-[300][3,1]<7>(0,1,1600022)("X[共]所持金増減")
+[300][3,1]<7>(0,1,1600022)("X[Com]Change Money")
 [103][0,1]<7>()("SE再生")
-[300][3,1]<7>(0,1,21)("X[共]システムSE再生")
+[300][3,1]<7>(0,1,21)("X[Com]Play System Sound")
 [0][0,0]<7>()()
 [420][1,0]<6>(0)()
 [103][0,1]<7>()("SE再生")
-[300][3,1]<7>(0,1,2)("X[共]システムSE再生")
+[300][3,1]<7>(0,1,2)("X[Com]Play System Sound")
 [0][0,0]<7>()()
 [499][0,0]<6>()()
 [0][0,0]<6>()()
 [401][1,0]<5>(2)()
-[300][5,1]<6>(0,16777218,1600021,-1,1600024)("X[共]武器増減")
+[300][5,1]<6>(0,16777218,1600021,-1,1600024)("X[Com]Change Weapons")
 [111][4,0]<6>(17,1600024,0,5)()
 [401][1,0]<6>(1)()
-[300][3,1]<7>(0,1,1600022)("X[共]所持金増減")
+[300][3,1]<7>(0,1,1600022)("X[Com]Change Money")
 [103][0,1]<7>()("SE再生")
-[300][3,1]<7>(0,1,21)("X[共]システムSE再生")
+[300][3,1]<7>(0,1,21)("X[Com]Play System Sound")
 [0][0,0]<7>()()
 [420][1,0]<6>(0)()
 [103][0,1]<7>()("SE再生")
-[300][3,1]<7>(0,1,2)("X[共]システムSE再生")
+[300][3,1]<7>(0,1,2)("X[Com]Play System Sound")
 [0][0,0]<7>()()
 [499][0,0]<6>()()
 [0][0,0]<6>()()
 [401][1,0]<5>(3)()
-[300][5,1]<6>(0,16777218,1600021,-1,1600024)("X[共]防具増減")
+[300][5,1]<6>(0,16777218,1600021,-1,1600024)("X[Com]Change Armors")
 [111][4,0]<6>(17,1600024,0,5)()
 [401][1,0]<6>(1)()
-[300][3,1]<7>(0,1,1600022)("X[共]所持金増減")
+[300][3,1]<7>(0,1,1600022)("X[Com]Change Money")
 [103][0,1]<7>()("SE再生")
-[300][3,1]<7>(0,1,21)("X[共]システムSE再生")
+[300][3,1]<7>(0,1,21)("X[Com]Play System Sound")
 [0][0,0]<7>()()
 [420][1,0]<6>(0)()
 [103][0,1]<7>()("SE再生")
-[300][3,1]<7>(0,1,2)("X[共]システムSE再生")
+[300][3,1]<7>(0,1,2)("X[Com]Play System Sound")
 [0][0,0]<7>()()
 [499][0,0]<6>()()
 [0][0,0]<6>()()
@@ -409,14 +409,14 @@ WoditorEvCOMMAND_START
 [499][0,0]<4>()()
 [0][0,0]<4>()()
 [499][0,0]<3>()()
-[300][3,1]<3>(0,1,1600019)("X[移]┗ お店内部情報更新")
+[300][3,1]<3>(0,1,1600019)("X[Map]┗ Update Shop Internal Data")
 [103][0,1]<3>()("格納されている内容に応じて描画内容を更新")
 [103][0,1]<3>()("カーソル位置を再設定")
 [250][5,4]<3>(18,61,0,69632,1600016)("","Base System Variables","","")
 [250][5,4]<3>(18,21,0,65536,1600016)("","Base System Variables","","")
-[300][5,1]<3>(0,3,3,1600016,1600016)("X[移]┣ お店　描画")
-[300][5,1]<3>(0,3,1,1600016,1600016)("X[移]┣ お店　描画")
-[300][5,1]<3>(0,3,2,-2,0)("X[移]┣ お店　描画")
+[300][5,1]<3>(0,3,3,1600016,1600016)("X[Map]┣ Draw Shop")
+[300][5,1]<3>(0,3,1,1600016,1600016)("X[Map]┣ Draw Shop")
+[300][5,1]<3>(0,3,2,-2,0)("X[Map]┣ Draw Shop")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [0][0,0]<2>()()
@@ -428,7 +428,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<1>()("　ここから終了処理")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [212][0,1]<1>()("お店終了")
-[300][4,1]<1>(0,2,-1,0)("X[移]┣ お店　描画")
+[300][4,1]<1>(0,2,-1,0)("X[Map]┣ Draw Shop")
 [180][1,0]<1>(10)()
 [172][0,0]<1>()()
 [0][0,0]<1>()()
@@ -438,7 +438,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　商品追加後に、お店を実行する処理です。ここから描画処理などを呼び出します。
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ ―――――――――――――――――――――――――――――――――――
@@ -446,16 +446,16 @@ WoditorEvCOMMAND_END
 ■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) =  0
 ■Condition (Number):   [1] CSelf0[お店タイプ] ==  1  /  [2] CSelf0[お店タイプ] ==  2  /  [3] CSelf0[お店タイプ] ==  3  
 -◇Condition:  [1]  [ CSelf0[お店タイプ] == 1   ] Case↓
- |■Call Event [Name]: ["X[移]┗ お店内部情報更新"] <CommonEv 86>  / 1:売る
- |■Call Event [Name]: ["X[移]┣ お店　描画"] <CommonEv 85>  / 0:表示A（初期表示用　スライド表示＆全表示） / -11:「売る」だけ表示 / -1
+ |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / 1:売る
+ |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 0:表示A（初期表示用　スライド表示＆全表示） / -11:「売る」だけ表示 / -1
  |■
 -◇Condition:  [2]  [ CSelf0[お店タイプ] == 2   ] Case↓
- |■Call Event [Name]: ["X[移]┗ お店内部情報更新"] <CommonEv 86>  / 0:買う
- |■Call Event [Name]: ["X[移]┣ お店　描画"] <CommonEv 85>  / 0:表示A（初期表示用　スライド表示＆全表示） / -10:「買う」だけ表示 / -1
+ |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / 0:買う
+ |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 0:表示A（初期表示用　スライド表示＆全表示） / -10:「買う」だけ表示 / -1
  |■
 -◇Condition:  [3]  [ CSelf0[お店タイプ] == 3   ] Case↓
- |■Call Event [Name]: ["X[移]┗ お店内部情報更新"] <CommonEv 86>  / 0:買う
- |■Call Event [Name]: ["X[移]┣ お店　描画"] <CommonEv 85>  / 0:表示A（初期表示用　スライド表示＆全表示） / -1 / -1
+ |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / 0:買う
+ |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 0:表示A（初期表示用　スライド表示＆全表示） / -1 / -1
  |■
 ◇End◇
 ■Set Variable: CSelf19[買う(0)/売る(1)モード] = 0 + 0 
@@ -466,52 +466,52 @@ WoditorEvCOMMAND_END
 -◇Condition:  [1]  [ CSelf0[お店タイプ] == 1   ] Case↓
  |▼ 売る
  |■Set Variable: CSelf19[買う(0)/売る(1)モード] = 1 + 0 
- |■Call Event [Name]: ["X[移]┗ お店内部情報更新"] <CommonEv 86>  / 1:売る
- |■Call Event [Name]: ["X[移]┣ お店　描画"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / 1:売る
- |■Call Event [Name]: ["X[移]┣ お店　描画"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / -2:凍結
- |■Call Event [Name]: ["X[移]┣ お店　描画"] <CommonEv 85>  / 3:表示C（項目更新のみ） / 1:売る / 0
+ |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / 1:売る
+ |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / 1:売る
+ |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / -2:凍結
+ |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:表示C（項目更新のみ） / 1:売る / 0
  |■
 -◇Condition:  [2]  [ CSelf0[お店タイプ] == 2   ] Case↓
  |▼ 買う
  |■Set Variable: CSelf19[買う(0)/売る(1)モード] = 0 + 0 
- |■Call Event [Name]: ["X[移]┗ お店内部情報更新"] <CommonEv 86>  / 0:買う
- |■Call Event [Name]: ["X[移]┣ お店　描画"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / 0:買う
- |■Call Event [Name]: ["X[移]┣ お店　描画"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / -2:凍結
- |■Call Event [Name]: ["X[移]┣ お店　描画"] <CommonEv 85>  / 3:表示C（項目更新のみ） / 0:買う / 0
+ |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / 0:買う
+ |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / 0:買う
+ |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / -2:凍結
+ |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:表示C（項目更新のみ） / 0:買う / 0
  |■
 -◇Condition:  [3]  [ CSelf0[お店タイプ] == 3   ] Case↓
  |▼ 買う・売る　から選択できる
- |■Call Event [Name]: ["X[移]┗ お店内部情報更新"] <CommonEv 86>  / CSelf19[買う(0)/売る(1)モード]
- |■Call Event [Name]: ["X[移]┣ お店　描画"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / CSelf19[買う(0)/売る(1)モード] / 0
+ |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / CSelf19[買う(0)/売る(1)モード]
+ |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / CSelf19[買う(0)/売る(1)モード] / 0
  |■Loop Start
  | |■Key Input: CSelf10[一時変数A] [Wait For Input <!>]  Left-Right(4,6) Confirm(10) Cancel(11)
  | |■Condition (Number):   [1] CSelf10[一時変数A] ==  4  /  [2] CSelf10[一時変数A] ==  6  
  | |-◇Condition:  [1]  [ CSelf10[一時変数A] == 4   ] Case↓
  | | |▼ 左キー
- | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 5:カーソル移動音
+ | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
  | | |■Set Variable: CSelf19[買う(0)/売る(1)モード] += 1 + 0 
  | | |■Set Variable: CSelf19[買う(0)/売る(1)モード] %= 2 + 0 
- | | |■Call Event [Name]: ["X[移]┗ お店内部情報更新"] <CommonEv 86>  / CSelf19[買う(0)/売る(1)モード]
- | | |■Call Event [Name]: ["X[移]┣ お店　描画"] <CommonEv 85>  / 3:表示C（項目更新のみ） / CSelf19[買う(0)/売る(1)モード] / -1
- | | |■Call Event [Name]: ["X[移]┣ お店　描画"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / CSelf19[買う(0)/売る(1)モード]
+ | | |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / CSelf19[買う(0)/売る(1)モード]
+ | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:表示C（項目更新のみ） / CSelf19[買う(0)/売る(1)モード] / -1
+ | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / CSelf19[買う(0)/売る(1)モード]
  | | |■Set Variable: CSelf16[最終選択位置] = 0 + 0 
  | | |■
  | |-◇Condition:  [2]  [ CSelf10[一時変数A] == 6   ] Case↓
  | | |▼ 右キー
- | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 5:カーソル移動音
+ | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
  | | |■Set Variable: CSelf19[買う(0)/売る(1)モード] += 1 + 0 
  | | |■Set Variable: CSelf19[買う(0)/売る(1)モード] %= 2 + 0 
- | | |■Call Event [Name]: ["X[移]┗ お店内部情報更新"] <CommonEv 86>  / CSelf19[買う(0)/売る(1)モード]
- | | |■Call Event [Name]: ["X[移]┣ お店　描画"] <CommonEv 85>  / 3:表示C（項目更新のみ） / CSelf19[買う(0)/売る(1)モード] / -1
- | | |■Call Event [Name]: ["X[移]┣ お店　描画"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / CSelf19[買う(0)/売る(1)モード]
+ | | |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / CSelf19[買う(0)/売る(1)モード]
+ | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:表示C（項目更新のみ） / CSelf19[買う(0)/売る(1)モード] / -1
+ | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / CSelf19[買う(0)/売る(1)モード]
  | | |■Set Variable: CSelf16[最終選択位置] = 0 + 0 
  | | |■
  | |◇End◇
  | |■Condition (Number):   [1] CSelf10[一時変数A] ==  10  /  [2] CSelf10[一時変数A] ==  11  
  | |-◇Condition:  [1]  [ CSelf10[一時変数A] == 10   ] Case↓
  | | |▼ 決定
- | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 0:決定音
- | | |■Call Event [Name]: ["X[移]┣ お店　描画"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / -2:凍結
+ | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
+ | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / -2:凍結
  | | |■Write to DB(Var): VarDB[ "Base System Variables":"Universal Window External Cursor Set":0 ] (18:21:Number) =  CSelf16[最終選択位置]
  | | |■Break Loop
  | | |■
@@ -524,16 +524,16 @@ WoditorEvCOMMAND_END
  |◇Loop End Point◇◇
  |■
 ◇End◇
-■Call Event [Name]: ["X[移]┣ お店　描画"] <CommonEv 85>  / 3:表示C（項目更新のみ） / CSelf19[買う(0)/売る(1)モード] / CSelf16[最終選択位置]
+■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:表示C（項目更新のみ） / CSelf19[買う(0)/売る(1)モード] / CSelf16[最終選択位置]
 ■Loop Start
- |■Call Event [Name]: CSelf13 = ["X[共]万能ｳｨﾝﾄﾞｳ選択実行"] <CommonEv 65>  / 1:キー１回分だけ処理 / 1:決定音を鳴らさない
+ |■Call Event [Name]: CSelf13 = ["X[Com]U-Window: Select"] <CommonEv 65>  / 1:End with One Key Press / 1:Don't Play Confirm Sound
  |■Condition (Number):   [1] CSelf13 ==  -200  
  |-◇Condition:  [1]  [ CSelf13 == -200   ] Case↓
  | |▼ 移動だけの場合は選択カーソル位置の内容を得る
  | |■Load DB(Var):  CSelf15[カーソル位置コード] = VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) 
  | |■Load DB(Var):  CSelf16[最終選択位置] = VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) 
  | |▼ 格納されている内容に応じて描画内容を更新
- | |■Call Event [Name]: ["X[移]┣ お店　描画"] <CommonEv 85>  / 1:表示B（瞬間表示＆一部更新） / CSelf19[買う(0)/売る(1)モード] / CSelf16[最終選択位置]
+ | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 1:表示B（瞬間表示＆一部更新） / CSelf19[買う(0)/売る(1)モード] / CSelf16[最終選択位置]
  | |■
  |-◇Else
  | |■Condition (Number):   [1] CSelf13 ==  -100  /  [2] CSelf13 ==  -2  /  [3] CSelf13 >=  0  
@@ -543,7 +543,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [1]  [ CSelf0[お店タイプ] == 3   ] Case↓
  | | | |▼ 売り買い両用のお店の場合だけｷｬﾝｾﾙして戻る
  | | | |■Load DB(Var):  CSelf16[最終選択位置] = VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) 
- | | | |■Call Event [Name]: ["X[移]┣ お店　描画"] <CommonEv 85>  / 3:表示C（項目更新のみ） / CSelf19[買う(0)/売る(1)モード] / -1
+ | | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:表示C（項目更新のみ） / CSelf19[買う(0)/売る(1)モード] / -1
  | | | |●Label Jump [お店開始] >>>>>>>>>>>>>>>>>>>>>>>>>
  | | | |■Wait: 1 Frames
  | | | |■
@@ -569,44 +569,44 @@ WoditorEvCOMMAND_END
  | | | | |■Set Variable: CSelf21[番号] = CSelf20[処理アイテム] % 10000 
  | | | | |■Condition (Number):   [1] CSelf20[処理アイテム] <=  19999  /  [2] CSelf20[処理アイテム] <=  29999  /  [3] CSelf20[処理アイテム] <=  39999  
  | | | | |-◇Condition:  [1]  [ CSelf20[処理アイテム] <= 19999   ] Case↓
- | | | | | |■Call Event [Name]: CSelf24[実増減数] = ["X[共]アイテム増減"] <CommonEv 50>  / CSelf21[番号] / 1
+ | | | | | |■Call Event [Name]: CSelf24[実増減数] = ["X[Com]Change Items"] <CommonEv 50>  / CSelf21[番号] / 1
  | | | | | |■Condition (Number):   [1] CSelf24[実増減数] !=  0  
  | | | | | |-◇Condition:  [1]  [ CSelf24[実増減数] != 0   ] Case↓
- | | | | | | |■Call Event [Name]: ["X[共]所持金増減"] <CommonEv 53>  / CSelf22[処理金額]
+ | | | | | | |■Call Event [Name]: ["X[Com]Change Money"] <CommonEv 53>  / CSelf22[処理金額]
  | | | | | | |▼ SE再生
- | | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 20:購入音
+ | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 20:Buy Sound
  | | | | | | |■
  | | | | | |-◇Else
  | | | | | | |▼ SE再生
- | | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 2:ブザー音
+ | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
  | | | | | | |■
  | | | | | |◇End◇
  | | | | | |■
  | | | | |-◇Condition:  [2]  [ CSelf20[処理アイテム] <= 29999   ] Case↓
- | | | | | |■Call Event [Name]: CSelf24[実増減数] = ["X[共]武器増減"] <CommonEv 51>  / CSelf21[番号] / 1
+ | | | | | |■Call Event [Name]: CSelf24[実増減数] = ["X[Com]Change Weapons"] <CommonEv 51>  / CSelf21[番号] / 1
  | | | | | |■Condition (Number):   [1] CSelf24[実増減数] !=  0  
  | | | | | |-◇Condition:  [1]  [ CSelf24[実増減数] != 0   ] Case↓
- | | | | | | |■Call Event [Name]: ["X[共]所持金増減"] <CommonEv 53>  / CSelf22[処理金額]
+ | | | | | | |■Call Event [Name]: ["X[Com]Change Money"] <CommonEv 53>  / CSelf22[処理金額]
  | | | | | | |▼ SE再生
- | | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 20:購入音
+ | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 20:Buy Sound
  | | | | | | |■
  | | | | | |-◇Else
  | | | | | | |▼ SE再生
- | | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 2:ブザー音
+ | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
  | | | | | | |■
  | | | | | |◇End◇
  | | | | | |■
  | | | | |-◇Condition:  [3]  [ CSelf20[処理アイテム] <= 39999   ] Case↓
- | | | | | |■Call Event [Name]: CSelf24[実増減数] = ["X[共]防具増減"] <CommonEv 52>  / CSelf21[番号] / 1
+ | | | | | |■Call Event [Name]: CSelf24[実増減数] = ["X[Com]Change Armors"] <CommonEv 52>  / CSelf21[番号] / 1
  | | | | | |■Condition (Number):   [1] CSelf24[実増減数] !=  0  
  | | | | | |-◇Condition:  [1]  [ CSelf24[実増減数] != 0   ] Case↓
- | | | | | | |■Call Event [Name]: ["X[共]所持金増減"] <CommonEv 53>  / CSelf22[処理金額]
+ | | | | | | |■Call Event [Name]: ["X[Com]Change Money"] <CommonEv 53>  / CSelf22[処理金額]
  | | | | | | |▼ SE再生
- | | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 20:購入音
+ | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 20:Buy Sound
  | | | | | | |■
  | | | | | |-◇Else
  | | | | | | |▼ SE再生
- | | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 2:ブザー音
+ | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
  | | | | | | |■
  | | | | | |◇End◇
  | | | | | |■
@@ -623,44 +623,44 @@ WoditorEvCOMMAND_END
  | | | | |■Set Variable: CSelf21[番号] = CSelf20[処理アイテム] % 10000 
  | | | | |■Condition (Number):   [1] CSelf20[処理アイテム] <=  19999  /  [2] CSelf20[処理アイテム] <=  29999  /  [3] CSelf20[処理アイテム] <=  39999  
  | | | | |-◇Condition:  [1]  [ CSelf20[処理アイテム] <= 19999   ] Case↓
- | | | | | |■Call Event [Name]: CSelf24[実増減数] = ["X[共]アイテム増減"] <CommonEv 50>  / CSelf21[番号] / -1
+ | | | | | |■Call Event [Name]: CSelf24[実増減数] = ["X[Com]Change Items"] <CommonEv 50>  / CSelf21[番号] / -1
  | | | | | |■Condition (Number):   [1] CSelf24[実増減数] !=  0  
  | | | | | |-◇Condition:  [1]  [ CSelf24[実増減数] != 0   ] Case↓
- | | | | | | |■Call Event [Name]: ["X[共]所持金増減"] <CommonEv 53>  / CSelf22[処理金額]
+ | | | | | | |■Call Event [Name]: ["X[Com]Change Money"] <CommonEv 53>  / CSelf22[処理金額]
  | | | | | | |▼ SE再生
- | | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 21:売却音
+ | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 21:Sell Sound
  | | | | | | |■
  | | | | | |-◇Else
  | | | | | | |▼ SE再生
- | | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 2:ブザー音
+ | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
  | | | | | | |■
  | | | | | |◇End◇
  | | | | | |■
  | | | | |-◇Condition:  [2]  [ CSelf20[処理アイテム] <= 29999   ] Case↓
- | | | | | |■Call Event [Name]: CSelf24[実増減数] = ["X[共]武器増減"] <CommonEv 51>  / CSelf21[番号] / -1
+ | | | | | |■Call Event [Name]: CSelf24[実増減数] = ["X[Com]Change Weapons"] <CommonEv 51>  / CSelf21[番号] / -1
  | | | | | |■Condition (Number):   [1] CSelf24[実増減数] !=  0  
  | | | | | |-◇Condition:  [1]  [ CSelf24[実増減数] != 0   ] Case↓
- | | | | | | |■Call Event [Name]: ["X[共]所持金増減"] <CommonEv 53>  / CSelf22[処理金額]
+ | | | | | | |■Call Event [Name]: ["X[Com]Change Money"] <CommonEv 53>  / CSelf22[処理金額]
  | | | | | | |▼ SE再生
- | | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 21:売却音
+ | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 21:Sell Sound
  | | | | | | |■
  | | | | | |-◇Else
  | | | | | | |▼ SE再生
- | | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 2:ブザー音
+ | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
  | | | | | | |■
  | | | | | |◇End◇
  | | | | | |■
  | | | | |-◇Condition:  [3]  [ CSelf20[処理アイテム] <= 39999   ] Case↓
- | | | | | |■Call Event [Name]: CSelf24[実増減数] = ["X[共]防具増減"] <CommonEv 52>  / CSelf21[番号] / -1
+ | | | | | |■Call Event [Name]: CSelf24[実増減数] = ["X[Com]Change Armors"] <CommonEv 52>  / CSelf21[番号] / -1
  | | | | | |■Condition (Number):   [1] CSelf24[実増減数] !=  0  
  | | | | | |-◇Condition:  [1]  [ CSelf24[実増減数] != 0   ] Case↓
- | | | | | | |■Call Event [Name]: ["X[共]所持金増減"] <CommonEv 53>  / CSelf22[処理金額]
+ | | | | | | |■Call Event [Name]: ["X[Com]Change Money"] <CommonEv 53>  / CSelf22[処理金額]
  | | | | | | |▼ SE再生
- | | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 21:売却音
+ | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 21:Sell Sound
  | | | | | | |■
  | | | | | |-◇Else
  | | | | | | |▼ SE再生
- | | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 2:ブザー音
+ | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
  | | | | | | |■
  | | | | | |◇End◇
  | | | | | |■
@@ -669,14 +669,14 @@ WoditorEvCOMMAND_END
  | | | |◇End◇
  | | | |■
  | | |◇End◇
- | | |■Call Event [Name]: ["X[移]┗ お店内部情報更新"] <CommonEv 86>  / CSelf19[買う(0)/売る(1)モード]
+ | | |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / CSelf19[買う(0)/売る(1)モード]
  | | |▼ 格納されている内容に応じて描画内容を更新
  | | |▼ カーソル位置を再設定
  | | |■Load DB(Var):  CSelf16[最終選択位置] = VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) 
  | | |■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) =  CSelf16[最終選択位置]
- | | |■Call Event [Name]: ["X[移]┣ お店　描画"] <CommonEv 85>  / 3:表示C（項目更新のみ） / CSelf16[最終選択位置] / CSelf16[最終選択位置]
- | | |■Call Event [Name]: ["X[移]┣ お店　描画"] <CommonEv 85>  / 1:表示B（瞬間表示＆一部更新） / CSelf16[最終選択位置] / CSelf16[最終選択位置]
- | | |■Call Event [Name]: ["X[移]┣ お店　描画"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / -2:凍結 / 0
+ | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:表示C（項目更新のみ） / CSelf16[最終選択位置] / CSelf16[最終選択位置]
+ | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 1:表示B（瞬間表示＆一部更新） / CSelf16[最終選択位置] / CSelf16[最終選択位置]
+ | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / -2:凍結 / 0
  | | |■
  | |◇End◇
  | |■
@@ -688,7 +688,7 @@ WoditorEvCOMMAND_END
  |▼ 　ここから終了処理
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |●Label Point [お店終了] <<<<<<<<<<<<<<<<<<<<<<<<★
- |■Call Event [Name]: ["X[移]┣ お店　描画"] <CommonEv 85>  / -1:消去 / 0:買う
+ |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / -1:消去 / 0:買う
  |■Wait: 10 Frames
  |■Exit Event
  |■

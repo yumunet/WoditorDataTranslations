@@ -1,5 +1,5 @@
 COMMON_ID=141
-COMMON_NAME=X[戦]ｽﾛｯﾄから主人公ID取得
+COMMON_NAME=X[Bat]Get Ally ID From Slot
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -164,7 +164,7 @@ COMMAND_NUM=13
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　戦闘スロットを指定して、そこから主人公ID/敵IDを取得します。")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [121][4,0]<0>(1600010,-1,0,0)()
@@ -180,7 +180,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　戦闘スロットを指定して、そこから主人公ID/敵IDを取得します。
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Set Variable: CSelf10[返す主人公ID] = -1 + 0 

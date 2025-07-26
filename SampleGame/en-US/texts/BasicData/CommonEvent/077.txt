@@ -1,5 +1,5 @@
 COMMON_ID=77
-COMMON_NAME=X[移]戦闘コマンド変更
+COMMON_NAME=X[Map]Change Battle Commands
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -190,7 +190,7 @@ COMMAND_NUM=160
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　主人公の戦闘コマンドを追加・消去・変更します。")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [121][4,0]<0>(1600099,0,0,0)()
@@ -353,7 +353,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　主人公の戦闘コマンドを追加・消去・変更します。
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Set Variable: CSelf99[変更できた？] = 0 + 0 

@@ -1,14 +1,14 @@
 COMMON_ID=18
-COMMON_NAME=▲武器所持数取得
+COMMON_NAME=▲Get Weapon Quantity
 COMMAND_COLOR=0
 TRIGGER=32
 TRIGGER_TARGET=2000000
 TRIGGER_VAL=0
-MEMO=指定した武器の所持数を返します。
+MEMO=Returns the quantity of the specified weapon.
 VALINPUT_NUM=1
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=武器
+VALINPUT_NAME_0=Weapon
 VALINPUT_NAME_1=
 VALINPUT_NAME_2=
 VALINPUT_NAME_3=
@@ -61,9 +61,9 @@ DEFAULT_VAL_1=0
 DEFAULT_VAL_2=0
 DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
-RETURN_VAL_NAME=武器個数
+RETURN_VAL_NAME=Weapon Quantity
 RETURN_VAL_TARGET=10
-CSELF_NAME_0=武器
+CSELF_NAME_0=Weapon
 CSELF_NAME_1=
 CSELF_NAME_2=
 CSELF_NAME_3=
@@ -73,7 +73,7 @@ CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=
-CSELF_NAME_10=所持数
+CSELF_NAME_10=Quantity
 CSELF_NAME_11=
 CSELF_NAME_12=
 CSELF_NAME_13=
@@ -166,13 +166,13 @@ CSELF_NAME_99=
 COMMAND_NUM=3
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("所持数を得る（コモンセルフ10番に入れた値を返す）")
-[300][4,1]<0>(0,16777217,1600000,1600010)("X[共]武器所持数取得")
+[103][0,1]<0>()("Get quantity owned (returns the value in CSelf10).")
+[300][4,1]<0>(0,16777217,1600000,1600010)("X[Com]Get Weapon Quantity")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ 所持数を得る（コモンセルフ10番に入れた値を返す）
-■Call Event [Name]: CSelf10[所持数] = ["X[共]武器所持数取得"] <CommonEv 55>  / CSelf0[武器]
+▼ Get quantity owned (returns the value in CSelf10).
+■Call Event [Name]: CSelf10[Quantity] = ["X[Com]Get Weapon Quantity"] <CommonEv 55>  / CSelf0[Weapon]
 ■
 [COMMAND_TEXT_END]

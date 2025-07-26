@@ -1,5 +1,5 @@
 COMMON_ID=204
-COMMON_NAME=○[変更可]1ﾀｰﾝ開始時処理
+COMMON_NAME=○[Editable] At Turn Start
 COMMAND_COLOR=1
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -164,18 +164,18 @@ COMMAND_NUM=6
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 
-▼ 【どのコモンイベントから主に呼び出されているか】
+▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
 ■
 [COMMAND_TEXT_END]

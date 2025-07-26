@@ -1,5 +1,5 @@
 COMMON_ID=63
-COMMON_NAME=X[共]メッセージウィンドウ
+COMMON_NAME=X[Com]Message Window
 COMMAND_COLOR=4
 TRIGGER=35
 TRIGGER_TARGET=2000000
@@ -68,10 +68,10 @@ CSELF_NAME_4=
 CSELF_NAME_5=
 CSELF_NAME_6=
 CSELF_NAME_7=
-CSELF_NAME_8=顔画像ファイル
-CSELF_NAME_9=ウィンドウ画像ファイル
-CSELF_NAME_10=一時変数A
-CSELF_NAME_11=一時変数B
+CSELF_NAME_8=Face Image File
+CSELF_NAME_9=Window Image File
+CSELF_NAME_10=Temp Variable A
+CSELF_NAME_11=Temp Variable B
 CSELF_NAME_12=
 CSELF_NAME_13=
 CSELF_NAME_14=
@@ -80,36 +80,36 @@ CSELF_NAME_16=
 CSELF_NAME_17=
 CSELF_NAME_18=
 CSELF_NAME_19=
-CSELF_NAME_20=基本ピクチャ番号
-CSELF_NAME_21=一時ピクチャ番号A
-CSELF_NAME_22=一時ピクチャ番号B
-CSELF_NAME_23=拡大率（横）
-CSELF_NAME_24=拡大率（縦）
+CSELF_NAME_20=Base Picture ID
+CSELF_NAME_21=Temp Picture ID A
+CSELF_NAME_22=Temp Picture ID B
+CSELF_NAME_23=Zoom (Width)
+CSELF_NAME_24=Zoom (Height)
 CSELF_NAME_25=
-CSELF_NAME_26=直前顔番号
+CSELF_NAME_26=
 CSELF_NAME_27=
-CSELF_NAME_28=×座標倍率
+CSELF_NAME_28=
 CSELF_NAME_29=
-CSELF_NAME_30=基本表示位置X
-CSELF_NAME_31=基本表示位置Y
-CSELF_NAME_32=隠し表示位置X
-CSELF_NAME_33=隠し表示位置Y
+CSELF_NAME_30=Base Display Position X
+CSELF_NAME_31=Base Display Position Y
+CSELF_NAME_32=Hidden Display Position X
+CSELF_NAME_33=Hidden Display Position Y
 CSELF_NAME_34=
-CSELF_NAME_35=ウィンドウ表示中フラグ
+CSELF_NAME_35=Window Display Flag
 CSELF_NAME_36=
 CSELF_NAME_37=
-CSELF_NAME_38=サイズX
-CSELF_NAME_39=サイズY
-CSELF_NAME_40=戻り先番号
+CSELF_NAME_38=Width
+CSELF_NAME_39=Height
+CSELF_NAME_40=Return Point
 CSELF_NAME_41=
-CSELF_NAME_42=画面サイズX
-CSELF_NAME_43=画面サイズY
-CSELF_NAME_44=一時座標X
-CSELF_NAME_45=一時座標Y
+CSELF_NAME_42=Screen Width
+CSELF_NAME_43=Screen Height
+CSELF_NAME_44=Temp X Position
+CSELF_NAME_45=Temp Y Position
 CSELF_NAME_46=
 CSELF_NAME_47=
-CSELF_NAME_48=直前顔グラ番号
-CSELF_NAME_49=顔グラフィック番号
+CSELF_NAME_48=Previous Face Number
+CSELF_NAME_49=Face Number
 CSELF_NAME_50=
 CSELF_NAME_51=
 CSELF_NAME_52=
@@ -117,8 +117,8 @@ CSELF_NAME_53=
 CSELF_NAME_54=
 CSELF_NAME_55=
 CSELF_NAME_56=
-CSELF_NAME_57=顔横サイズ
-CSELF_NAME_58=顔縦サイズ
+CSELF_NAME_57=Face Width
+CSELF_NAME_58=Face Height
 CSELF_NAME_59=
 CSELF_NAME_60=
 CSELF_NAME_61=
@@ -148,10 +148,10 @@ CSELF_NAME_84=
 CSELF_NAME_85=
 CSELF_NAME_86=
 CSELF_NAME_87=
-CSELF_NAME_88=座標倍率X(x10)
-CSELF_NAME_89=座標倍率Y(x10)
-CSELF_NAME_90=顔表示用ピクチャカウンタ
-CSELF_NAME_91=ピクチャカウンタ最大値
+CSELF_NAME_88=Coordinate Scale X (x10)
+CSELF_NAME_89=Coordinate Scale Y (x10)
+CSELF_NAME_90=Face Picture Count
+CSELF_NAME_91=Maximum Picture Count
 CSELF_NAME_92=
 CSELF_NAME_93=
 CSELF_NAME_94=
@@ -164,33 +164,33 @@ COMMAND_NUM=232
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("メッセージウィンドウ処理")
+[103][0,1]<0>()("Message Window Processing")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
-[103][0,1]<0>()("　メッセージ枠と顔グラフィックを表示します。")
-[103][0,1]<0>()("　このコモンイベントは常時作動しており、システム変数0番（顔グラフィック番号）が")
-[103][0,1]<0>()("　変化すると、メッセージウィンドウを表示したり消去したり顔グラフィックを表示させたりします。")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("  Displays the message window and face image.")
+[103][0,1]<0>()("  This common event is always active, and when System Variable 0 (Face Number)")
+[103][0,1]<0>()("  changes, it displays or erases the message window and displays a new face image.")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("　「システム変数0：顔グラフィック番号」を読み込んで、")
-[103][0,1]<0>()("　その番号に応じた顔グラフィックを表示します。")
-[103][0,1]<0>()("　Sys0 = 0 の時は、メッセージウィンドウは表示されません。")
-[103][0,1]<0>()("　Sys0 = 1 の時は、メッセージウィンドウのみ表示されます。")
-[103][0,1]<0>()("　Sys0が2以上の時は、設定された顔グラフィックを画面右下に表示します。")
+[103][0,1]<0>()("  Reads <dqrt>System Variable 0 (Face Number)<dqrt>,")
+[103][0,1]<0>()("  and displays the corresponding face image.")
+[103][0,1]<0>()("  When Sys0 is 0, the message window is not displayed.")
+[103][0,1]<0>()("  When Sys0 is 1, only the message window is displayed.")
+[103][0,1]<0>()("  When Sys0 is 2+, the specified face image is displayed in the lower right.")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【設定】")
-[103][0,1]<0>()("　顔グラフィックのファイルは、システムデータベース24番「顔グラフィック名」で設定してください。")
+[103][0,1]<0>()("[Settings]")
+[103][0,1]<0>()("  Set face images in System Database 24 <dqrt>Face Images<dqrt>.")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("　メッセージウィンドウ画像は、ユーザデータベース「画像/音声設定」で設定してください。")
-[103][0,1]<0>()("　画像が何も設定されていなければ、黒い背景が表示されます。")
+[103][0,1]<0>()("  Set the message window image in User Database 16 <dqrt>Images/Sounds<dqrt>.")
+[103][0,1]<0>()("  If no image is set, a black background is displayed.")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()(" ")
 [121][4,0]<0>(1600020,19500,0,0)()
-[103][0,1]<0>()("Ver2.20　座標倍率を縦横別に修正")
+[103][0,1]<0>()("Ver.2.20  Separated the coordinate scale into vertical and horizontal scales.")
 [250][5,4]<0>(18,97,0,69632,1600088)("","Base System Variables","","")
 [250][5,4]<0>(18,98,0,69632,1600089)("","Base System Variables","","")
 [250][5,4]<0>(18,0,24,332288,1600009)("","Images/Sounds","","Message Window Base Image")
 [121][4,0]<0>(1600035,0,0,0)()
-[103][0,1]<0>()("メッセージウィンドウの表示位置とサイズを設定")
+[103][0,1]<0>()("Set the message window display position and size.")
 [121][4,0]<0>(1600038,30,1600088,8192)()
 [121][4,0]<0>(1600039,7,1600089,8192)()
 [121][4,0]<0>(1600030,16,1600088,8192)()
@@ -206,25 +206,25 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()(" ")
 [121][4,0]<0>(1600040,1,0,0)()
 [179][1,0]<0>(1)()
-[212][0,1]<1>()("文章表示位置設定")
+[212][0,1]<1>()("Set Message Display Position")
 [121][4,0]<1>(9000001,2,1600088,8192)()
 [121][4,0]<1>(9000002,17,1600089,8192)()
-[103][0,1]<1>()("Ver3.00修正 メッセージウィンドウY座標を微調整")
+[103][0,1]<1>()("Ver.3.00  Adjusted the message window Y position.")
 [121][4,0]<1>(9000002,1600089,5,12544)()
 [121][4,0]<1>(9000003,16,1600088,8192)()
-[103][0,1]<1>()("Ver3.00修正 選択肢ウィンドウY座標を微調整")
+[103][0,1]<1>()("Ver.3.00  Adjusted the choice window Y position.")
 [121][4,0]<1>(9000004,7,1600089,8192)()
 [121][4,0]<1>(9000005,16,1600088,8192)()
 [121][4,0]<1>(9000006,6,1600089,8192)()
-[213][0,1]<1>()("戻り先\cself[40]")
+[213][0,1]<1>()("Return Point \cself[40]")
 [0][0,0]<1>()()
 [498][0,0]<0>()()
-[212][0,1]<0>()("戻り先1")
+[212][0,1]<0>()("Return Point 1")
 [103][0,1]<0>()(" ")
 [121][4,0]<0>(9000000,1,0,0)()
 [170][0,0]<0>()()
-[103][0,1]<1>()("顔グラフィック番号が-1以下になったら処理待ち状態")
-[103][0,1]<1>()("基本的に、処理が終わったら-1になる")
+[103][0,1]<1>()("If Face Number is -1 or lower, stand by for processing.")
+[103][0,1]<1>()("Basically, it's set to -1 once processing is complete.")
 [111][4,0]<1>(1,9000000,-1,3)()
 [401][1,0]<1>(1)()
 [180][1,0]<2>(1)()
@@ -233,28 +233,28 @@ WoditorEvCOMMAND_START
 [499][0,0]<1>()()
 [180][1,0]<1>(1)()
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<1>()("　表示処理")
+[103][0,1]<1>()("  Display Processing")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [111][4,0]<1>(1,9000012,1,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("メッセージウィンドウ表示")
-[212][0,1]<2>()("ウィンドウ表示")
+[103][0,1]<2>()("Display message window.")
+[212][0,1]<2>()("Display Window")
 [121][4,0]<2>(1600049,9000000,0,0)()
 [111][4,0]<2>(1,1600048,1600049,5)()
 [401][1,0]<2>(1)()
 [121][4,0]<3>(1600048,1600049,0,0)()
 [111][4,0]<3>(17,1600049,1,1)()
 [401][1,0]<3>(1)()
-[103][0,1]<4>()("顔番号が1以上ならメッセージウィンドウ表示")
+[103][0,1]<4>()("If Face Number is 1 or higher, display a message window.")
 [150][2,0]<4>(3,1600020)()
 [111][4,0]<4>(1,1600035,0,2)()
 [401][1,0]<4>(1)()
-[103][0,1]<5>()("メッセージウィンドウを新規表示する処理")
-[103][0,1]<5>()("　メッセージウィンドウの表示位置を再設定")
+[103][0,1]<5>()("Process for newly displaying a message window.")
+[103][0,1]<5>()("  Reset the message window display position.")
 [121][4,0]<5>(1600040,2,0,0)()
-[213][0,1]<5>()("文章表示位置設定")
-[212][0,1]<5>()("戻り先2")
-[103][0,1]<5>()("　表示されていなければ新規に表示する")
+[213][0,1]<5>()("Set Message Display Position")
+[212][0,1]<5>()("Return Point 2")
+[103][0,1]<5>()("  If not displayed, display it newly.")
 [150][12,0]<5>(4160,1600020,5,1600038,1600039,1,255,1600032,1600033,100,0,1600009)()
 [0][0,0]<5>()()
 [499][0,0]<4>()()
@@ -264,8 +264,8 @@ WoditorEvCOMMAND_START
 [121][4,0]<4>(9000010,1,0,0)()
 [0][0,0]<4>()()
 [420][1,0]<3>(0)()
-[103][0,1]<4>()("表示なし（０）の場合")
-[103][0,1]<4>()("隠す座標へ移動")
+[103][0,1]<4>()("If no display (0).")
+[103][0,1]<4>()("Move to hidden position.")
 [150][2,0]<4>(3843,1600020)()
 [150][13,0]<4>(4198145,1600020,4,0,0,-1000000,255,1600032,1600033,-1000000,-1000000,0,16777216)()
 [150][14,0]<4>(4198145,1600020,4,0,0,-1000000,255,1600032,1600033,-1000000,-1000000,0,16777216,2)()
@@ -274,40 +274,40 @@ WoditorEvCOMMAND_START
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [103][0,1]<3>()("――――――――――――――――――――――――――――――――")
-[103][0,1]<3>()("顔グラフィックの消去＋表示処理")
+[103][0,1]<3>()("Face Image Erase/Display Processing")
 [103][0,1]<3>()("――――――――――――――――――――――――――――――――")
-[103][0,1]<3>()("まず今表示されてる顔グラフィックを消去")
+[103][0,1]<3>()("First, erase the face image currently displayed.")
 [121][4,0]<3>(1600021,1600020,1,0)()
 [121][4,0]<3>(1600022,1600020,1600091,0)()
 [150][3,0]<3>(16777219,1600021,1600022)()
 [150][6,0]<3>(16777218,1600021,5,0,0,1600022)()
 [111][4,0]<3>(1,1600049,2,1)()
 [401][1,0]<3>(1)()
-[103][0,1]<4>()("顔番号が2以上なら顔グラフィック表示")
+[103][0,1]<4>()("If Face Number is 2 or higher, display face image.")
 [250][5,4]<4>(24,1600049,0,332032,1600008)("","Face Images","","Face Image Filename")
 [112][2,4]<4>(1,270035464)("","","","")
 [401][1,0]<4>(1)()
 [103][0,1]<5>()(" ")
-[103][0,1]<5>()("新しいピクチャのサイズから初期表示座標を算出")
-[103][0,1]<5>()("新しいピクチャを表示する")
+[103][0,1]<5>()("Calculate the initial display position from the new picture size.")
+[103][0,1]<5>()("Display new picture.")
 [121][4,0]<5>(1600021,1600020,1,0)()
 [121][4,0]<5>(1600021,1600090,0,256)()
-[103][0,1]<5>()("システム設定の　メッセージ顔グラフィック　拡大率を反映")
+[103][0,1]<5>()("Apply <dqrt>Message Face Image Scale<dqrt> in System Settings.")
 [250][5,4]<5>(19,0,26,332288,1600023)("","System Settings","","Message Face Image Scale")
 [250][5,4]<5>(19,0,26,332288,1600024)("","System Settings","","Message Face Image Scale")
 [150][2,0]<5>(20243,1600021)()
 [150][19,0]<5>(3165968,1600021,0,1,1,-1000000,255,1600044,1600045,1600023,-1000000,1600008,16777216,0,0,0,0,0,1600024)()
 [111][4,0]<5>(1,1600023,0,2)()
 [401][1,0]<5>(1)()
-[103][0,1]<6>()("拡大率0＝標準サイズに合わせる")
+[103][0,1]<6>()("If the scale is 0, fit to standard size.")
 [124][4,0]<6>(1600010,16384,1600021,3)()
 [124][4,0]<6>(1600011,16384,1600021,2)()
-[103][0,1]<6>()("顔の枠のサイズを計算")
+[103][0,1]<6>()("Calculate the face box size.")
 [121][4,0]<6>(1600057,96,1600088,8192)()
 [121][4,0]<6>(1600058,96,1600089,8192)()
 [121][4,0]<6>(1600057,10,0,1024)()
 [121][4,0]<6>(1600058,10,0,1024)()
-[103][0,1]<6>()("顔の表示を、枠に合わせる場合")
+[103][0,1]<6>()("Adjust the face scale to fit the box.")
 [121][4,0]<6>(1600010,1600057,100,8192)()
 [121][4,0]<6>(1600011,1600058,100,8192)()
 [124][4,0]<6>(1600010,17408,1600021,2)()
@@ -316,7 +316,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<6>(1600024,1600011,0,0)()
 [0][0,0]<6>()()
 [499][0,0]<5>()()
-[103][0,1]<5>()("表示元の座標を計算")
+[103][0,1]<5>()("Calculate the display start position.")
 [121][4,0]<5>(1600044,1600042,0,0)()
 [121][4,0]<5>(1600045,1600043,0,0)()
 [124][4,0]<5>(1600010,16384,1600021,3)()
@@ -324,11 +324,11 @@ WoditorEvCOMMAND_START
 [121][4,0]<5>(1600010,100,0,1024)()
 [121][4,0]<5>(1600044,1600010,0,256)()
 [150][19,0]<5>(3149569,1600021,0,0,0,-1000000,255,1600044,1600045,1600023,-1000000,0,16777216,0,0,0,0,0,1600024)()
-[103][0,1]<5>()("表示先へと移動")
+[103][0,1]<5>()("Move to the final position.")
 [150][13,0]<5>(4214545,1600021,5,0,0,-1000000,255,1600042,1600043,-1000000,-1000000,0,16777216)()
 [150][14,0]<5>(4198145,1600021,5,0,0,-1000000,255,1600042,1600043,-1000000,-1000000,0,16777216,3)()
 [150][14,0]<5>(4198145,1600021,5,0,0,-1000000,255,1600042,1600043,-1000000,-1000000,0,16777216,5)()
-[103][0,1]<5>()("ピクチャカウンタ+1")
+[103][0,1]<5>()("Increase the picture count by 1.")
 [121][4,0]<5>(1600090,1,0,256)()
 [121][4,0]<5>(1600090,1600091,0,1280)()
 [0][0,0]<5>()()
@@ -340,53 +340,53 @@ WoditorEvCOMMAND_START
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<1>()("　消去処理")
+[103][0,1]<1>()("  Erase Processing")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [111][4,0]<1>(1,1600035,0,5)()
 [401][1,0]<1>(1)()
 [111][4,0]<2>(1,9000012,0,2)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("もし開いてる状態なら、数フレーム待って、なければ閉じる。")
+[103][0,1]<3>()("If the message is hidden, wait a few frames, and if it's still hidden, close the window.")
 [179][1,0]<3>(3)()
 [111][4,0]<4>(1,9000012,1,2)()
 [401][1,0]<4>(1)()
-[213][0,1]<5>()("ウィンドウ表示")
+[213][0,1]<5>()("Display Window")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
 [180][1,0]<4>(1)()
 [0][0,0]<4>()()
 [498][0,0]<3>()()
-[103][0,1]<3>()("値を初期化")
+[103][0,1]<3>()("Initialize values.")
 [121][4,0]<3>(9000010,9,0,0)()
 [121][4,0]<3>(1600048,-1,0,0)()
 [111][4,0]<3>(1,9000012,0,2)()
 [401][1,0]<3>(1)()
-[103][0,1]<4>()("表示されてない場合だけ顔グラ番号初期化")
+[103][0,1]<4>()("Initialize Face Number only if the message is not displayed.")
 [121][4,0]<4>(9000000,1,0,0)()
 [0][0,0]<4>()()
 [499][0,0]<3>()()
-[103][0,1]<3>()("隠す座標へ移動")
+[103][0,1]<3>()("Move to hidden position.")
 [150][2,0]<3>(3843,1600020)()
 [150][13,0]<3>(4198145,1600020,4,0,0,-1000000,255,1600032,1600033,-1000000,-1000000,0,16777216)()
 [150][14,0]<3>(4198145,1600020,4,0,0,-1000000,255,1600032,1600033,-1000000,-1000000,0,16777216,2)()
-[103][0,1]<3>()("完全に消えたら表示フラグをオフに")
+[103][0,1]<3>()("Wait until it's hidden.")
 [179][1,0]<3>(6)()
 [111][4,0]<4>(1,9000012,1,2)()
 [401][1,0]<4>(1)()
-[213][0,1]<5>()("ウィンドウ表示")
+[213][0,1]<5>()("Display Window")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
 [180][1,0]<4>(1)()
 [0][0,0]<4>()()
 [498][0,0]<3>()()
-[103][0,1]<3>()("消去する")
+[103][0,1]<3>()("Erase.")
 [150][4,0]<3>(2,1600020,0,6)()
-[103][0,1]<3>()("顔グラフィックも消去する")
+[103][0,1]<3>()("Erase the face image as well.")
 [121][4,0]<3>(1600021,1600020,1,0)()
 [121][4,0]<3>(1600022,1600020,1600091,0)()
 [150][3,0]<3>(16777219,1600021,1600022)()
 [150][6,0]<3>(16777218,1600021,5,0,0,1600022)()
-[103][0,1]<3>()("ウィンドウが消えたので、次メッセージの待ち時間を元に戻す")
+[103][0,1]<3>()("The window disappeared, so reset the flag.")
 [121][4,0]<3>(1600035,0,0,0)()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
@@ -399,67 +399,67 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ メッセージウィンドウ処理
+▼ Message Window Processing
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
-▼ 　メッセージ枠と顔グラフィックを表示します。
-▼ 　このコモンイベントは常時作動しており、システム変数0番（顔グラフィック番号）が
-▼ 　変化すると、メッセージウィンドウを表示したり消去したり顔グラフィックを表示させたりします。
+▼ [Process Overview]
+▼   Displays the message window and face image.
+▼   This common event is always active, and when System Variable 0 (Face Number)
+▼   changes, it displays or erases the message window and displays a new face image.
 ▼  
-▼ 　「システム変数0：顔グラフィック番号」を読み込んで、
-▼ 　その番号に応じた顔グラフィックを表示します。
-▼ 　Sys0 = 0 の時は、メッセージウィンドウは表示されません。
-▼ 　Sys0 = 1 の時は、メッセージウィンドウのみ表示されます。
-▼ 　Sys0が2以上の時は、設定された顔グラフィックを画面右下に表示します。
+▼   Reads "System Variable 0 (Face Number)",
+▼   and displays the corresponding face image.
+▼   When Sys0 is 0, the message window is not displayed.
+▼   When Sys0 is 1, only the message window is displayed.
+▼   When Sys0 is 2+, the specified face image is displayed in the lower right.
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【設定】
-▼ 　顔グラフィックのファイルは、システムデータベース24番「顔グラフィック名」で設定してください。
+▼ [Settings]
+▼   Set face images in System Database 24 "Face Images".
 ▼  
-▼ 　メッセージウィンドウ画像は、ユーザデータベース「画像/音声設定」で設定してください。
-▼ 　画像が何も設定されていなければ、黒い背景が表示されます。
+▼   Set the message window image in User Database 16 "Images/Sounds".
+▼   If no image is set, a black background is displayed.
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼  
-■Set Variable: CSelf20[基本ピクチャ番号] = 19500 + 0 
-▼ Ver2.20　座標倍率を縦横別に修正
-■Load DB(Var):  CSelf88[座標倍率X(x10)] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
-■Load DB(Var):  CSelf89[座標倍率Y(x10)] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
-■Load DB(User):  CSelf9[ウィンドウ画像ファイル] = UserDB[ "Images/Sounds":0:"Message Window Base Image" ] (16:Basic Images/Sounds:2) 
-■Set Variable: CSelf35[ウィンドウ表示中フラグ] = 0 + 0 
-▼ メッセージウィンドウの表示位置とサイズを設定
-■Set Variable: CSelf38[サイズX] = 30 * CSelf88[座標倍率X(x10)] 
-■Set Variable: CSelf39[サイズY] = 7 * CSelf89[座標倍率Y(x10)] 
-■Set Variable: CSelf30[基本表示位置X] = 16 * CSelf88[座標倍率X(x10)] 
-■Set Variable: CSelf31[基本表示位置Y] = 20 * CSelf89[座標倍率Y(x10)] 
-■Set Variable: CSelf32[隠し表示位置X] = 16 * CSelf88[座標倍率X(x10)] 
-■Set Variable: CSelf33[隠し表示位置Y] = 28 * CSelf89[座標倍率Y(x10)] 
+■Set Variable: CSelf20[Base Picture ID] = 19500 + 0 
+▼ Ver.2.20  Separated the coordinate scale into vertical and horizontal scales.
+■Load DB(Var):  CSelf88[Coordinate Scale X (x10)] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
+■Load DB(Var):  CSelf89[Coordinate Scale Y (x10)] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
+■Load DB(User):  CSelf9[Window Image File] = UserDB[ "Images/Sounds":0:"Message Window Base Image" ] (16:Basic Images/Sounds:2) 
+■Set Variable: CSelf35[Window Display Flag] = 0 + 0 
+▼ Set the message window display position and size.
+■Set Variable: CSelf38[Width] = 30 * CSelf88[Coordinate Scale X (x10)] 
+■Set Variable: CSelf39[Height] = 7 * CSelf89[Coordinate Scale Y (x10)] 
+■Set Variable: CSelf30[Base Display Position X] = 16 * CSelf88[Coordinate Scale X (x10)] 
+■Set Variable: CSelf31[Base Display Position Y] = 20 * CSelf89[Coordinate Scale Y (x10)] 
+■Set Variable: CSelf32[Hidden Display Position X] = 16 * CSelf88[Coordinate Scale X (x10)] 
+■Set Variable: CSelf33[Hidden Display Position Y] = 28 * CSelf89[Coordinate Scale Y (x10)] 
 ▼  
-■Set Variable: CSelf91[ピクチャカウンタ最大値] = 3 + 0 
+■Set Variable: CSelf91[Maximum Picture Count] = 3 + 0 
 ■Set Variable: Sys10:Message Wait (X frames) = 9 + 0 
 ▼  
-■Set Variable: CSelf42[画面サイズX] = CSelf88[座標倍率X(x10)] * 32 
-■Set Variable: CSelf43[画面サイズY] = CSelf89[座標倍率Y(x10)] * 24 
+■Set Variable: CSelf42[Screen Width] = CSelf88[Coordinate Scale X (x10)] * 32 
+■Set Variable: CSelf43[Screen Height] = CSelf89[Coordinate Scale Y (x10)] * 24 
 ▼  
-■Set Variable: CSelf40[戻り先番号] = 1 + 0 
+■Set Variable: CSelf40[Return Point] = 1 + 0 
 ■Repeat Loop [ 1 ] Times
- |●Label Point [文章表示位置設定] <<<<<<<<<<<<<<<<<<<<<<<<★
- |■Set Variable: Sys1:Message Window X = 2 * CSelf88[座標倍率X(x10)] 
- |■Set Variable: Sys2:Message Window Y = 17 * CSelf89[座標倍率Y(x10)] 
- |▼ Ver3.00修正 メッセージウィンドウY座標を微調整
- |■Set Variable: Sys2:Message Window Y += CSelf89[座標倍率Y(x10)] / 5 
- |■Set Variable: Sys3:Choice Window X = 16 * CSelf88[座標倍率X(x10)] 
- |▼ Ver3.00修正 選択肢ウィンドウY座標を微調整
- |■Set Variable: Sys4:Choice Window Y = 7 * CSelf89[座標倍率Y(x10)] 
- |■Set Variable: Sys5:Message Continue Icon X (Add to Sys1) = 16 * CSelf88[座標倍率X(x10)] 
- |■Set Variable: Sys6:Message Continue Icon Y (Add to Sys2) = 6 * CSelf89[座標倍率Y(x10)] 
- |●Label Jump [戻り先\cself[40]] >>>>>>>>>>>>>>>>>>>>>>>>>
+ |●Label Point [Set Message Display Position] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |■Set Variable: Sys1:Message Window X = 2 * CSelf88[Coordinate Scale X (x10)] 
+ |■Set Variable: Sys2:Message Window Y = 17 * CSelf89[Coordinate Scale Y (x10)] 
+ |▼ Ver.3.00  Adjusted the message window Y position.
+ |■Set Variable: Sys2:Message Window Y += CSelf89[Coordinate Scale Y (x10)] / 5 
+ |■Set Variable: Sys3:Choice Window X = 16 * CSelf88[Coordinate Scale X (x10)] 
+ |▼ Ver.3.00  Adjusted the choice window Y position.
+ |■Set Variable: Sys4:Choice Window Y = 7 * CSelf89[Coordinate Scale Y (x10)] 
+ |■Set Variable: Sys5:Message Continue Icon X (Add to Sys1) = 16 * CSelf88[Coordinate Scale X (x10)] 
+ |■Set Variable: Sys6:Message Continue Icon Y (Add to Sys2) = 6 * CSelf89[Coordinate Scale Y (x10)] 
+ |●Label Jump [Return Point \cself[40]] >>>>>>>>>>>>>>>>>>>>>>>>>
  |■
 ◇Loop End Point◇◇
-●Label Point [戻り先1] <<<<<<<<<<<<<<<<<<<<<<<<★
+●Label Point [Return Point 1] <<<<<<<<<<<<<<<<<<<<<<<<★
 ▼  
 ■Set Variable: Sys0:Face Number = 1 + 0 
 ■Loop Start
- |▼ 顔グラフィック番号が-1以下になったら処理待ち状態
- |▼ 基本的に、処理が終わったら-1になる
+ |▼ If Face Number is -1 or lower, stand by for processing.
+ |▼ Basically, it's set to -1 once processing is complete.
  |■Condition (Number):   [1] Sys0:Face Number <=  -1  
  |-◇Condition:  [1]  [ Sys0:Face Number <= -1   ] Case↓
  | |■Wait: 1 Frames
@@ -468,104 +468,104 @@ WoditorEvCOMMAND_END
  |◇End◇
  |■Wait: 1 Frames
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |▼ 　表示処理
+ |▼   Display Processing
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |■Condition (Number):   [1] Sys12:Showing Message? (1:Yes) ==  1  
  |-◇Condition:  [1]  [ Sys12:Showing Message? (1:Yes) == 1   ] Case↓
- | |▼ メッセージウィンドウ表示
- | |●Label Point [ウィンドウ表示] <<<<<<<<<<<<<<<<<<<<<<<<★
- | |■Set Variable: CSelf49[顔グラフィック番号] = Sys0:Face Number + 0 
- | |■Condition (Number):   [1] CSelf48[直前顔グラ番号] !=  CSelf49[顔グラフィック番号]  
- | |-◇Condition:  [1]  [ CSelf48[直前顔グラ番号] != CSelf49[顔グラフィック番号]   ] Case↓
- | | |■Set Variable: CSelf48[直前顔グラ番号] = CSelf49[顔グラフィック番号] + 0 
- | | |■Condition (Number):   [1] CSelf49[顔グラフィック番号] >=  1  
- | | |-◇Condition:  [1]  [ CSelf49[顔グラフィック番号] >= 1   ] Case↓
- | | | |▼ 顔番号が1以上ならメッセージウィンドウ表示
- | | | |■Picture [Reset Delay]: CSelf20[基本ピクチャ番号] 
- | | | |■Condition (Number):   [1] CSelf35[ウィンドウ表示中フラグ] ==  0  
- | | | |-◇Condition:  [1]  [ CSelf35[ウィンドウ表示中フラグ] == 0   ] Case↓
- | | | | |▼ メッセージウィンドウを新規表示する処理
- | | | | |▼ 　メッセージウィンドウの表示位置を再設定
- | | | | |■Set Variable: CSelf40[戻り先番号] = 2 + 0 
- | | | | |●Label Jump [文章表示位置設定] >>>>>>>>>>>>>>>>>>>>>>>>>
- | | | | |●Label Point [戻り先2] <<<<<<<<<<<<<<<<<<<<<<<<★
- | | | | |▼ 　表示されていなければ新規に表示する
- | | | | |■Picture Show: CSelf20[基本ピクチャ番号] [Center] Window(CSelf9[ウィンドウ画像ファイル]) Size[CSelf38[サイズX],CSelf39[サイズY]] X:CSelf32[隠し表示位置X] Y:CSelf33[隠し表示位置Y] / 5(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | |▼ Display message window.
+ | |●Label Point [Display Window] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | |■Set Variable: CSelf49[Face Number] = Sys0:Face Number + 0 
+ | |■Condition (Number):   [1] CSelf48[Previous Face Number] !=  CSelf49[Face Number]  
+ | |-◇Condition:  [1]  [ CSelf48[Previous Face Number] != CSelf49[Face Number]   ] Case↓
+ | | |■Set Variable: CSelf48[Previous Face Number] = CSelf49[Face Number] + 0 
+ | | |■Condition (Number):   [1] CSelf49[Face Number] >=  1  
+ | | |-◇Condition:  [1]  [ CSelf49[Face Number] >= 1   ] Case↓
+ | | | |▼ If Face Number is 1 or higher, display a message window.
+ | | | |■Picture [Reset Delay]: CSelf20[Base Picture ID] 
+ | | | |■Condition (Number):   [1] CSelf35[Window Display Flag] ==  0  
+ | | | |-◇Condition:  [1]  [ CSelf35[Window Display Flag] == 0   ] Case↓
+ | | | | |▼ Process for newly displaying a message window.
+ | | | | |▼   Reset the message window display position.
+ | | | | |■Set Variable: CSelf40[Return Point] = 2 + 0 
+ | | | | |●Label Jump [Set Message Display Position] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | | |●Label Point [Return Point 2] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | | | | |▼   If not displayed, display it newly.
+ | | | | |■Picture Show: CSelf20[Base Picture ID] [Center] Window(CSelf9[Window Image File]) Size[CSelf38[Width],CSelf39[Height]] X:CSelf32[Hidden Display Position X] Y:CSelf33[Hidden Display Position Y] / 5(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | | | |■
  | | | |◇End◇
- | | | |■Picture Move: CSelf20[基本ピクチャ番号]  X:CSelf30[基本表示位置X] Y:CSelf31[基本表示位置Y] / 5(0)Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | |■Picture Move: CSelf20[基本ピクチャ番号]  X:CSelf30[基本表示位置X] Y:CSelf31[基本表示位置Y] / 5(3)Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | |■Set Variable: CSelf35[ウィンドウ表示中フラグ] = 1 + 0 
+ | | | |■Picture Move: CSelf20[Base Picture ID]  X:CSelf30[Base Display Position X] Y:CSelf31[Base Display Position Y] / 5(0)Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | |■Picture Move: CSelf20[Base Picture ID]  X:CSelf30[Base Display Position X] Y:CSelf31[Base Display Position Y] / 5(3)Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | |■Set Variable: CSelf35[Window Display Flag] = 1 + 0 
  | | | |■Set Variable: Sys10:Message Wait (X frames) = 1 + 0 
  | | | |■
  | | |-◇Else
- | | | |▼ 表示なし（０）の場合
- | | | |▼ 隠す座標へ移動
- | | | |■Picture [Reset Delay]: CSelf20[基本ピクチャ番号] 
- | | | |■Picture Move: CSelf20[基本ピクチャ番号]  X:CSelf32[隠し表示位置X] Y:CSelf33[隠し表示位置Y] / 4(0)Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | |■Picture Move: CSelf20[基本ピクチャ番号]  X:CSelf32[隠し表示位置X] Y:CSelf33[隠し表示位置Y] / 4(2)Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | |■Set Variable: CSelf35[ウィンドウ表示中フラグ] = 0 + 0 
+ | | | |▼ If no display (0).
+ | | | |▼ Move to hidden position.
+ | | | |■Picture [Reset Delay]: CSelf20[Base Picture ID] 
+ | | | |■Picture Move: CSelf20[Base Picture ID]  X:CSelf32[Hidden Display Position X] Y:CSelf33[Hidden Display Position Y] / 4(0)Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | |■Picture Move: CSelf20[Base Picture ID]  X:CSelf32[Hidden Display Position X] Y:CSelf33[Hidden Display Position Y] / 4(2)Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | |■Set Variable: CSelf35[Window Display Flag] = 0 + 0 
  | | | |■Set Variable: Sys10:Message Wait (X frames) = 1 + 0 
  | | | |■
  | | |◇End◇
  | | |▼ ――――――――――――――――――――――――――――――――
- | | |▼ 顔グラフィックの消去＋表示処理
+ | | |▼ Face Image Erase/Display Processing
  | | |▼ ――――――――――――――――――――――――――――――――
- | | |▼ まず今表示されてる顔グラフィックを消去
- | | |■Set Variable: CSelf21[一時ピクチャ番号A] = CSelf20[基本ピクチャ番号] + 1 
- | | |■Set Variable: CSelf22[一時ピクチャ番号B] = CSelf20[基本ピクチャ番号] + CSelf91[ピクチャカウンタ最大値] 
- | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号A] to CSelf22[一時ピクチャ番号B] 
- | | |■Picture Erase: CSelf21[一時ピクチャ番号A] to CSelf22[一時ピクチャ番号B]  / 5(0)Frames
- | | |■Condition (Number):   [1] CSelf49[顔グラフィック番号] >=  2  
- | | |-◇Condition:  [1]  [ CSelf49[顔グラフィック番号] >= 2   ] Case↓
- | | | |▼ 顔番号が2以上なら顔グラフィック表示
- | | | |■Load DB(Sys):  CSelf8[顔画像ファイル] = SysDB[ "Face Images":CSelf49[顔グラフィック番号]:"Face Image Filename" ] (24:-:0) 
- | | | |■Condition (String):   [1] CSelf8[顔画像ファイル] is not equal to ""
- | | | |-◇Condition:  [1] [ CSelf8[顔画像ファイル] is not equal to "" ] Case↓
+ | | |▼ First, erase the face image currently displayed.
+ | | |■Set Variable: CSelf21[Temp Picture ID A] = CSelf20[Base Picture ID] + 1 
+ | | |■Set Variable: CSelf22[Temp Picture ID B] = CSelf20[Base Picture ID] + CSelf91[Maximum Picture Count] 
+ | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID A] to CSelf22[Temp Picture ID B] 
+ | | |■Picture Erase: CSelf21[Temp Picture ID A] to CSelf22[Temp Picture ID B]  / 5(0)Frames
+ | | |■Condition (Number):   [1] CSelf49[Face Number] >=  2  
+ | | |-◇Condition:  [1]  [ CSelf49[Face Number] >= 2   ] Case↓
+ | | | |▼ If Face Number is 2 or higher, display face image.
+ | | | |■Load DB(Sys):  CSelf8[Face Image File] = SysDB[ "Face Images":CSelf49[Face Number]:"Face Image Filename" ] (24:-:0) 
+ | | | |■Condition (String):   [1] CSelf8[Face Image File] is not equal to ""
+ | | | |-◇Condition:  [1] [ CSelf8[Face Image File] is not equal to "" ] Case↓
  | | | | |▼  
- | | | | |▼ 新しいピクチャのサイズから初期表示座標を算出
- | | | | |▼ 新しいピクチャを表示する
- | | | | |■Set Variable: CSelf21[一時ピクチャ番号A] = CSelf20[基本ピクチャ番号] + 1 
- | | | | |■Set Variable: CSelf21[一時ピクチャ番号A] += CSelf90[顔表示用ピクチャカウンタ] + 0 
- | | | | |▼ システム設定の　メッセージ顔グラフィック　拡大率を反映
- | | | | |■Load DB(User):  CSelf23[拡大率（横）] = UserDB[ "System Settings":0:"Message Face Image Scale" ] (17:Basic System Settings:25) 
- | | | | |■Load DB(User):  CSelf24[拡大率（縦）] = UserDB[ "System Settings":0:"Message Face Image Scale" ] (17:Basic System Settings:25) 
- | | | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号A] 
- | | | | |■Picture Show: CSelf21[一時ピクチャ番号A] [Bottom-Right] File(CSelf8[顔画像ファイル]) X:CSelf44[一時座標X] Y:CSelf45[一時座標Y] / 0(0)Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom CSelf23[拡大率（横）]xCSelf24[拡大率（縦）]% / Color Same
- | | | | |■Condition (Number):   [1] CSelf23[拡大率（横）] ==  0  
- | | | | |-◇Condition:  [1]  [ CSelf23[拡大率（横）] == 0   ] Case↓
- | | | | | |▼ 拡大率0＝標準サイズに合わせる
- | | | | | |■Set Variable+: CSelf10[一時変数A] = Picture:CSelf21[一時ピクチャ番号A] 's Image Size (Height)
- | | | | | |■Set Variable+: CSelf11[一時変数B] = Picture:CSelf21[一時ピクチャ番号A] 's Image Size (Width)
- | | | | | |▼ 顔の枠のサイズを計算
- | | | | | |■Set Variable: CSelf57[顔横サイズ] = 96 * CSelf88[座標倍率X(x10)] 
- | | | | | |■Set Variable: CSelf58[顔縦サイズ] = 96 * CSelf89[座標倍率Y(x10)] 
- | | | | | |■Set Variable: CSelf57[顔横サイズ] /= 10 + 0 
- | | | | | |■Set Variable: CSelf58[顔縦サイズ] /= 10 + 0 
- | | | | | |▼ 顔の表示を、枠に合わせる場合
- | | | | | |■Set Variable: CSelf10[一時変数A] = CSelf57[顔横サイズ] * 100 
- | | | | | |■Set Variable: CSelf11[一時変数B] = CSelf58[顔縦サイズ] * 100 
- | | | | | |■Set Variable+: CSelf10[一時変数A] /= Picture:CSelf21[一時ピクチャ番号A] 's Image Size (Width)
- | | | | | |■Set Variable+: CSelf11[一時変数B] /= Picture:CSelf21[一時ピクチャ番号A] 's Image Size (Height)
- | | | | | |■Set Variable: CSelf23[拡大率（横）] = CSelf10[一時変数A] + 0 
- | | | | | |■Set Variable: CSelf24[拡大率（縦）] = CSelf11[一時変数B] + 0 
+ | | | | |▼ Calculate the initial display position from the new picture size.
+ | | | | |▼ Display new picture.
+ | | | | |■Set Variable: CSelf21[Temp Picture ID A] = CSelf20[Base Picture ID] + 1 
+ | | | | |■Set Variable: CSelf21[Temp Picture ID A] += CSelf90[Face Picture Count] + 0 
+ | | | | |▼ Apply "Message Face Image Scale" in System Settings.
+ | | | | |■Load DB(User):  CSelf23[Zoom (Width)] = UserDB[ "System Settings":0:"Message Face Image Scale" ] (17:Basic System Settings:25) 
+ | | | | |■Load DB(User):  CSelf24[Zoom (Height)] = UserDB[ "System Settings":0:"Message Face Image Scale" ] (17:Basic System Settings:25) 
+ | | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID A] 
+ | | | | |■Picture Show: CSelf21[Temp Picture ID A] [Bottom-Right] File(CSelf8[Face Image File]) X:CSelf44[Temp X Position] Y:CSelf45[Temp Y Position] / 0(0)Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom CSelf23[Zoom (Width)]xCSelf24[Zoom (Height)]% / Color Same
+ | | | | |■Condition (Number):   [1] CSelf23[Zoom (Width)] ==  0  
+ | | | | |-◇Condition:  [1]  [ CSelf23[Zoom (Width)] == 0   ] Case↓
+ | | | | | |▼ If the scale is 0, fit to standard size.
+ | | | | | |■Set Variable+: CSelf10[Temp Variable A] = Picture:CSelf21[Temp Picture ID A] 's Image Size (Height)
+ | | | | | |■Set Variable+: CSelf11[Temp Variable B] = Picture:CSelf21[Temp Picture ID A] 's Image Size (Width)
+ | | | | | |▼ Calculate the face box size.
+ | | | | | |■Set Variable: CSelf57[Face Width] = 96 * CSelf88[Coordinate Scale X (x10)] 
+ | | | | | |■Set Variable: CSelf58[Face Height] = 96 * CSelf89[Coordinate Scale Y (x10)] 
+ | | | | | |■Set Variable: CSelf57[Face Width] /= 10 + 0 
+ | | | | | |■Set Variable: CSelf58[Face Height] /= 10 + 0 
+ | | | | | |▼ Adjust the face scale to fit the box.
+ | | | | | |■Set Variable: CSelf10[Temp Variable A] = CSelf57[Face Width] * 100 
+ | | | | | |■Set Variable: CSelf11[Temp Variable B] = CSelf58[Face Height] * 100 
+ | | | | | |■Set Variable+: CSelf10[Temp Variable A] /= Picture:CSelf21[Temp Picture ID A] 's Image Size (Width)
+ | | | | | |■Set Variable+: CSelf11[Temp Variable B] /= Picture:CSelf21[Temp Picture ID A] 's Image Size (Height)
+ | | | | | |■Set Variable: CSelf23[Zoom (Width)] = CSelf10[Temp Variable A] + 0 
+ | | | | | |■Set Variable: CSelf24[Zoom (Height)] = CSelf11[Temp Variable B] + 0 
  | | | | | |■
  | | | | |◇End◇
- | | | | |▼ 表示元の座標を計算
- | | | | |■Set Variable: CSelf44[一時座標X] = CSelf42[画面サイズX] + 0 
- | | | | |■Set Variable: CSelf45[一時座標Y] = CSelf43[画面サイズY] + 0 
- | | | | |■Set Variable+: CSelf10[一時変数A] = Picture:CSelf21[一時ピクチャ番号A] 's Image Size (Height)
- | | | | |■Set Variable: CSelf10[一時変数A] *= CSelf23[拡大率（横）] + 0 
- | | | | |■Set Variable: CSelf10[一時変数A] /= 100 + 0 
- | | | | |■Set Variable: CSelf44[一時座標X] += CSelf10[一時変数A] + 0 
- | | | | |■Picture Move: CSelf21[一時ピクチャ番号A]  X:CSelf44[一時座標X] Y:CSelf45[一時座標Y] / 0(0)Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom CSelf23[拡大率（横）]xCSelf24[拡大率（縦）]% / Color Same
- | | | | |▼ 表示先へと移動
- | | | | |■Picture Move: CSelf21[一時ピクチャ番号A]  X:CSelf42[画面サイズX] Y:CSelf43[画面サイズY] / 5(0)Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | | |■Picture Move: CSelf21[一時ピクチャ番号A]  X:CSelf42[画面サイズX] Y:CSelf43[画面サイズY] / 5(3)Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | | |■Picture Move: CSelf21[一時ピクチャ番号A]  X:CSelf42[画面サイズX] Y:CSelf43[画面サイズY] / 5(5)Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | | |▼ ピクチャカウンタ+1
- | | | | |■Set Variable: CSelf90[顔表示用ピクチャカウンタ] += 1 + 0 
- | | | | |■Set Variable: CSelf90[顔表示用ピクチャカウンタ] %= CSelf91[ピクチャカウンタ最大値] + 0 
+ | | | | |▼ Calculate the display start position.
+ | | | | |■Set Variable: CSelf44[Temp X Position] = CSelf42[Screen Width] + 0 
+ | | | | |■Set Variable: CSelf45[Temp Y Position] = CSelf43[Screen Height] + 0 
+ | | | | |■Set Variable+: CSelf10[Temp Variable A] = Picture:CSelf21[Temp Picture ID A] 's Image Size (Height)
+ | | | | |■Set Variable: CSelf10[Temp Variable A] *= CSelf23[Zoom (Width)] + 0 
+ | | | | |■Set Variable: CSelf10[Temp Variable A] /= 100 + 0 
+ | | | | |■Set Variable: CSelf44[Temp X Position] += CSelf10[Temp Variable A] + 0 
+ | | | | |■Picture Move: CSelf21[Temp Picture ID A]  X:CSelf44[Temp X Position] Y:CSelf45[Temp Y Position] / 0(0)Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom CSelf23[Zoom (Width)]xCSelf24[Zoom (Height)]% / Color Same
+ | | | | |▼ Move to the final position.
+ | | | | |■Picture Move: CSelf21[Temp Picture ID A]  X:CSelf42[Screen Width] Y:CSelf43[Screen Height] / 5(0)Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | | |■Picture Move: CSelf21[Temp Picture ID A]  X:CSelf42[Screen Width] Y:CSelf43[Screen Height] / 5(3)Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | | |■Picture Move: CSelf21[Temp Picture ID A]  X:CSelf42[Screen Width] Y:CSelf43[Screen Height] / 5(5)Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | | |▼ Increase the picture count by 1.
+ | | | | |■Set Variable: CSelf90[Face Picture Count] += 1 + 0 
+ | | | | |■Set Variable: CSelf90[Face Picture Count] %= CSelf91[Maximum Picture Count] + 0 
  | | | | |■
  | | | |◇End◇
  | | | |■
@@ -575,54 +575,54 @@ WoditorEvCOMMAND_END
  | |■
  |◇End◇
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |▼ 　消去処理
+ |▼   Erase Processing
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |■Condition (Number):   [1] CSelf35[ウィンドウ表示中フラグ] !=  0  
- |-◇Condition:  [1]  [ CSelf35[ウィンドウ表示中フラグ] != 0   ] Case↓
+ |■Condition (Number):   [1] CSelf35[Window Display Flag] !=  0  
+ |-◇Condition:  [1]  [ CSelf35[Window Display Flag] != 0   ] Case↓
  | |■Condition (Number):   [1] Sys12:Showing Message? (1:Yes) ==  0  
  | |-◇Condition:  [1]  [ Sys12:Showing Message? (1:Yes) == 0   ] Case↓
- | | |▼ もし開いてる状態なら、数フレーム待って、なければ閉じる。
+ | | |▼ If the message is hidden, wait a few frames, and if it's still hidden, close the window.
  | | |■Repeat Loop [ 3 ] Times
  | | | |■Condition (Number):   [1] Sys12:Showing Message? (1:Yes) ==  1  
  | | | |-◇Condition:  [1]  [ Sys12:Showing Message? (1:Yes) == 1   ] Case↓
- | | | | |●Label Jump [ウィンドウ表示] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | | |●Label Jump [Display Window] >>>>>>>>>>>>>>>>>>>>>>>>>
  | | | | |■
  | | | |◇End◇
  | | | |■Wait: 1 Frames
  | | | |■
  | | |◇Loop End Point◇◇
- | | |▼ 値を初期化
+ | | |▼ Initialize values.
  | | |■Set Variable: Sys10:Message Wait (X frames) = 9 + 0 
- | | |■Set Variable: CSelf48[直前顔グラ番号] = -1 + 0 
+ | | |■Set Variable: CSelf48[Previous Face Number] = -1 + 0 
  | | |■Condition (Number):   [1] Sys12:Showing Message? (1:Yes) ==  0  
  | | |-◇Condition:  [1]  [ Sys12:Showing Message? (1:Yes) == 0   ] Case↓
- | | | |▼ 表示されてない場合だけ顔グラ番号初期化
+ | | | |▼ Initialize Face Number only if the message is not displayed.
  | | | |■Set Variable: Sys0:Face Number = 1 + 0 
  | | | |■
  | | |◇End◇
- | | |▼ 隠す座標へ移動
- | | |■Picture [Reset Delay]: CSelf20[基本ピクチャ番号] 
- | | |■Picture Move: CSelf20[基本ピクチャ番号]  X:CSelf32[隠し表示位置X] Y:CSelf33[隠し表示位置Y] / 4(0)Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | |■Picture Move: CSelf20[基本ピクチャ番号]  X:CSelf32[隠し表示位置X] Y:CSelf33[隠し表示位置Y] / 4(2)Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | |▼ 完全に消えたら表示フラグをオフに
+ | | |▼ Move to hidden position.
+ | | |■Picture [Reset Delay]: CSelf20[Base Picture ID] 
+ | | |■Picture Move: CSelf20[Base Picture ID]  X:CSelf32[Hidden Display Position X] Y:CSelf33[Hidden Display Position Y] / 4(0)Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | |■Picture Move: CSelf20[Base Picture ID]  X:CSelf32[Hidden Display Position X] Y:CSelf33[Hidden Display Position Y] / 4(2)Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | |▼ Wait until it's hidden.
  | | |■Repeat Loop [ 6 ] Times
  | | | |■Condition (Number):   [1] Sys12:Showing Message? (1:Yes) ==  1  
  | | | |-◇Condition:  [1]  [ Sys12:Showing Message? (1:Yes) == 1   ] Case↓
- | | | | |●Label Jump [ウィンドウ表示] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | | |●Label Jump [Display Window] >>>>>>>>>>>>>>>>>>>>>>>>>
  | | | | |■
  | | | |◇End◇
  | | | |■Wait: 1 Frames
  | | | |■
  | | |◇Loop End Point◇◇
- | | |▼ 消去する
- | | |■Picture Erase: CSelf20[基本ピクチャ番号]  / 0(6)Frames
- | | |▼ 顔グラフィックも消去する
- | | |■Set Variable: CSelf21[一時ピクチャ番号A] = CSelf20[基本ピクチャ番号] + 1 
- | | |■Set Variable: CSelf22[一時ピクチャ番号B] = CSelf20[基本ピクチャ番号] + CSelf91[ピクチャカウンタ最大値] 
- | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号A] to CSelf22[一時ピクチャ番号B] 
- | | |■Picture Erase: CSelf21[一時ピクチャ番号A] to CSelf22[一時ピクチャ番号B]  / 5(0)Frames
- | | |▼ ウィンドウが消えたので、次メッセージの待ち時間を元に戻す
- | | |■Set Variable: CSelf35[ウィンドウ表示中フラグ] = 0 + 0 
+ | | |▼ Erase.
+ | | |■Picture Erase: CSelf20[Base Picture ID]  / 0(6)Frames
+ | | |▼ Erase the face image as well.
+ | | |■Set Variable: CSelf21[Temp Picture ID A] = CSelf20[Base Picture ID] + 1 
+ | | |■Set Variable: CSelf22[Temp Picture ID B] = CSelf20[Base Picture ID] + CSelf91[Maximum Picture Count] 
+ | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID A] to CSelf22[Temp Picture ID B] 
+ | | |■Picture Erase: CSelf21[Temp Picture ID A] to CSelf22[Temp Picture ID B]  / 5(0)Frames
+ | | |▼ The window disappeared, so reset the flag.
+ | | |■Set Variable: CSelf35[Window Display Flag] = 0 + 0 
  | | |■
  | |◇End◇
  | |■

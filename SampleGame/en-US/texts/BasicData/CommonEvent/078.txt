@@ -1,5 +1,5 @@
 COMMON_ID=78
-COMMON_NAME=X[移]戦闘コマンド取得
+COMMON_NAME=X[Map]Get Battle Command
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -190,7 +190,7 @@ COMMAND_NUM=36
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　主人公の戦闘コマンドを取得します。")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [121][4,0]<0>(1600099,-1,0,0)()
@@ -229,7 +229,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　主人公の戦闘コマンドを取得します。
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Set Variable: CSelf99[戦闘コマンド番号] = -1 + 0 

@@ -1,15 +1,15 @@
 COMMON_ID=22
-COMMON_NAME=▲メンバー情報取得[数値]
+COMMON_NAME=▲Get Ally Data [Number]
 COMMAND_COLOR=0
 TRIGGER=32
 TRIGGER_TARGET=2000000
 TRIGGER_VAL=0
-MEMO=主人公の数値情報を返します。
+MEMO=Returns the ally's numerical data.
 VALINPUT_NUM=2
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=対象主人公
-VALINPUT_NAME_1=取得内容
+VALINPUT_NAME_0=Target Ally
+VALINPUT_NAME_1=Data
 VALINPUT_NAME_2=
 VALINPUT_NAME_3=
 VALINPUT_NAME_4=
@@ -33,18 +33,18 @@ LOADTYPE9=0
 CHOICE_STR_NUM=10
 CHOICE_STR_0_NUM=0
 CHOICE_STR_1_NUM=12
-CHOICE_STR_1_0=いる(1)/いない(0)
-CHOICE_STR_1_1=レベル
-CHOICE_STR_1_2=経験値
-CHOICE_STR_1_3=最大HP
-CHOICE_STR_1_4=最大SP
+CHOICE_STR_1_0=Present(1)/Absent(0)
+CHOICE_STR_1_1=Level
+CHOICE_STR_1_2=EXP
+CHOICE_STR_1_3=Max HP
+CHOICE_STR_1_4=Max SP
 CHOICE_STR_1_5=HP
 CHOICE_STR_1_6=SP
-CHOICE_STR_1_7=攻撃力
-CHOICE_STR_1_8=防御力
-CHOICE_STR_1_9=精神攻撃
-CHOICE_STR_1_10=精神防御
-CHOICE_STR_1_11=敏捷性
+CHOICE_STR_1_7=Attack
+CHOICE_STR_1_8=Defense
+CHOICE_STR_1_9=Magic Attack
+CHOICE_STR_1_10=Magic Defense
+CHOICE_STR_1_11=Agility
 CHOICE_STR_2_NUM=0
 CHOICE_STR_3_NUM=0
 CHOICE_STR_4_NUM=0
@@ -85,10 +85,10 @@ DEFAULT_VAL_1=10
 DEFAULT_VAL_2=0
 DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
-RETURN_VAL_NAME=取得した値
+RETURN_VAL_NAME=Data Value
 RETURN_VAL_TARGET=30
-CSELF_NAME_0=対象主人公
-CSELF_NAME_1=取得内容
+CSELF_NAME_0=Target Ally
+CSELF_NAME_1=Data
 CSELF_NAME_2=
 CSELF_NAME_3=
 CSELF_NAME_4=
@@ -97,8 +97,8 @@ CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=
-CSELF_NAME_10=一時変数A
-CSELF_NAME_11=一時主人公ID
+CSELF_NAME_10=Temp Variable A
+CSELF_NAME_11=Temp Ally ID
 CSELF_NAME_12=
 CSELF_NAME_13=
 CSELF_NAME_14=
@@ -107,7 +107,7 @@ CSELF_NAME_16=
 CSELF_NAME_17=
 CSELF_NAME_18=
 CSELF_NAME_19=
-CSELF_NAME_20=最大パーティ数
+CSELF_NAME_20=Max Party Size
 CSELF_NAME_21=
 CSELF_NAME_22=
 CSELF_NAME_23=
@@ -117,7 +117,7 @@ CSELF_NAME_26=
 CSELF_NAME_27=
 CSELF_NAME_28=
 CSELF_NAME_29=
-CSELF_NAME_30=取得した値
+CSELF_NAME_30=Data Value
 CSELF_NAME_31=
 CSELF_NAME_32=
 CSELF_NAME_33=
@@ -193,15 +193,15 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600030,0,0,0)()
 [111][7,0]<0>(2,1600001,-1,2,1600001,0,1)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("パーティ内に該当キャラがいるかどうか")
+[103][0,1]<1>()("Is the character in the party or not?")
 [250][5,4]<1>(18,51,0,69632,1600020)("","Base System Variables","","")
 [121][4,0]<1>(1600010,-1,0,0)()
 [179][1,0]<1>(1600020)()
 [121][4,0]<2>(1600010,1,0,256)()
-[300][4,1]<2>(0,16777217,1600010,1600011)("X[移]選択位置主人公ID取得")
+[300][4,1]<2>(0,16777217,1600010,1600011)("X[Map]Get Ally ID")
 [111][4,0]<2>(1,1600011,1600000,2)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("処理されたフラグをオンに")
+[103][0,1]<3>()("Turn on the flag that the character is present.")
 [121][4,0]<3>(1600030,1,0,0)()
 [172][0,0]<3>()()
 [0][0,0]<3>()()
@@ -210,36 +210,36 @@ WoditorEvCOMMAND_START
 [498][0,0]<1>()()
 [0][0,0]<1>()()
 [401][1,0]<0>(2)()
-[103][0,1]<1>()("パラメータ取得")
-[300][5,1]<1>(0,16777218,1600000,1600001,1600030)("X[移]パラメータ取得")
+[103][0,1]<1>()("Get stats.")
+[300][5,1]<1>(0,16777218,1600000,1600001,1600030)("X[Map]Get Parameter")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Set Variable: CSelf30[取得した値] = 0 + 0 
-■Condition (Number):   [1] CSelf1[取得内容] ==  -1  /  [2] CSelf1[取得内容] >=  0  
--◇Condition:  [1]  [ CSelf1[取得内容] == -1   ] Case↓
- |▼ パーティ内に該当キャラがいるかどうか
- |■Load DB(Var):  CSelf20[最大パーティ数] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
- |■Set Variable: CSelf10[一時変数A] = -1 + 0 
- |■Repeat Loop [ CSelf20[最大パーティ数] ] Times
- | |■Set Variable: CSelf10[一時変数A] += 1 + 0 
- | |■Call Event [Name]: CSelf11[一時主人公ID] = ["X[移]選択位置主人公ID取得"] <CommonEv 105>  / CSelf10[一時変数A]
- | |■Condition (Number):   [1] CSelf11[一時主人公ID] ==  CSelf0[対象主人公]  
- | |-◇Condition:  [1]  [ CSelf11[一時主人公ID] == CSelf0[対象主人公]   ] Case↓
- | | |▼ 処理されたフラグをオンに
- | | |■Set Variable: CSelf30[取得した値] = 1 + 0 
+■Set Variable: CSelf30[Data Value] = 0 + 0 
+■Condition (Number):   [1] CSelf1[Data] ==  -1  /  [2] CSelf1[Data] >=  0  
+-◇Condition:  [1]  [ CSelf1[Data] == -1   ] Case↓
+ |▼ Is the character in the party or not?
+ |■Load DB(Var):  CSelf20[Max Party Size] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
+ |■Set Variable: CSelf10[Temp Variable A] = -1 + 0 
+ |■Repeat Loop [ CSelf20[Max Party Size] ] Times
+ | |■Set Variable: CSelf10[Temp Variable A] += 1 + 0 
+ | |■Call Event [Name]: CSelf11[Temp Ally ID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf10[Temp Variable A]
+ | |■Condition (Number):   [1] CSelf11[Temp Ally ID] ==  CSelf0[Target Ally]  
+ | |-◇Condition:  [1]  [ CSelf11[Temp Ally ID] == CSelf0[Target Ally]   ] Case↓
+ | | |▼ Turn on the flag that the character is present.
+ | | |■Set Variable: CSelf30[Data Value] = 1 + 0 
  | | |■Exit Event
  | | |■
  | |◇End◇
  | |■
  |◇Loop End Point◇◇
  |■
--◇Condition:  [2]  [ CSelf1[取得内容] >= 0   ] Case↓
- |▼ パラメータ取得
- |■Call Event [Name]: CSelf30[取得した値] = ["X[移]パラメータ取得"] <CommonEv 71>  / CSelf0[対象主人公] / CSelf1[取得内容]
+-◇Condition:  [2]  [ CSelf1[Data] >= 0   ] Case↓
+ |▼ Get stats.
+ |■Call Event [Name]: CSelf30[Data Value] = ["X[Map]Get Parameter"] <CommonEv 71>  / CSelf0[Target Ally] / CSelf1[Data]
  |■
 ◇End◇
 ■

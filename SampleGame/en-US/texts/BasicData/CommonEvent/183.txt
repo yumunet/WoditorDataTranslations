@@ -1,5 +1,5 @@
 COMMON_ID=183
-COMMON_NAME=X[戦]技能エフェクト描画
+COMMON_NAME=X[Bat]Draw Skill Effect
 COMMAND_COLOR=5
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -164,15 +164,15 @@ COMMAND_NUM=128
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　指定位置に戦闘アニメーションを表示します。")
 [103][0,1]<0>()("　戦闘時に限らず使用可能です。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [250][5,4]<0>(1,1600000,14,332288,1600037)("","┗ Animations","","Process by [Ignore Settings]")
 [111][4,0]<0>(1,1600037,0,1)()
@@ -295,15 +295,15 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　指定位置に戦闘アニメーションを表示します。
 ▼ 　戦闘時に限らず使用可能です。
 ▼ 
-▼ 【このコモンイベント内で操作しているデータベース】
+▼ [Databases Accessed by This Common Event]
 ▼  
-▼ 【ここから呼び出している別コモンイベント】
+▼ [Other Common Events Called from Here]
 ▼  
-▼ 【どのコモンイベントから主に呼び出されているか】
+▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Load DB(User):  CSelf37[アニメコモン呼び出し？] = UserDB[ "┗ Animations":CSelf0[アニメ番号]:"Process by [Ignore Settings]" ] (1:-:14) 
 ■Condition (Number):   [1] CSelf37[アニメコモン呼び出し？] >=  0  

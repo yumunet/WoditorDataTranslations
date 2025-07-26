@@ -1,5 +1,5 @@
 COMMON_ID=151
-COMMON_NAME=X[戦]戦闘コマンド設定
+COMMON_NAME=X[Bat]Set Battle Command
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -172,7 +172,7 @@ COMMAND_NUM=109
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　「戦闘DB」の指定キャラ・指定位置に戦闘コマンドを指定します。")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [121][4,0]<0>(1600010,-1,0,0)()
@@ -200,7 +200,7 @@ WoditorEvCOMMAND_START
 [111][4,0]<0>(1,1600003,0,2)()
 [401][1,0]<0>(1)()
 [103][0,1]<1>()("すでにコマンドが存在する場合は上書きしない")
-[300][5,1]<1>(0,16777218,1600000,1600001,1600011)("X[戦]戦闘コマンド取得")
+[300][5,1]<1>(0,16777218,1600000,1600001,1600011)("X[Bat]Get Battle Command")
 [111][4,0]<1>(1,1600011,0,1)()
 [401][1,0]<1>(1)()
 [172][0,0]<2>()()
@@ -214,7 +214,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<1>(1600012,-1,0,0)()
 [179][1,0]<1>(8)()
 [121][4,0]<2>(1600012,1,0,256)()
-[300][5,1]<2>(0,16777218,1600000,1600012,1600001)("X[戦]戦闘コマンド取得")
+[300][5,1]<2>(0,16777218,1600000,1600012,1600001)("X[Bat]Get Battle Command")
 [111][4,0]<2>(1,1600001,-1,3)()
 [401][1,0]<2>(1)()
 [121][4,0]<3>(1600001,1600012,0,0)()
@@ -229,7 +229,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<1>(1600012,8,0,0)()
 [179][1,0]<1>(8)()
 [121][4,0]<2>(1600012,1,0,512)()
-[300][5,1]<2>(0,16777218,1600000,1600012,1600001)("X[戦]戦闘コマンド取得")
+[300][5,1]<2>(0,16777218,1600000,1600012,1600001)("X[Bat]Get Battle Command")
 [111][4,0]<2>(1,1600001,-1,3)()
 [401][1,0]<2>(1)()
 [121][4,0]<3>(1600001,1600012,0,0)()
@@ -284,7 +284,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　「戦闘DB」の指定キャラ・指定位置に戦闘コマンドを指定します。
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Set Variable: CSelf10[コマンド番号] = -1 + 0 
@@ -312,7 +312,7 @@ WoditorEvCOMMAND_END
 ■Condition (Number):   [1] CSelf3[オプション] ==  0  
 -◇Condition:  [1]  [ CSelf3[オプション] == 0   ] Case↓
  |▼ すでにコマンドが存在する場合は上書きしない
- |■Call Event [Name]: CSelf11[一時変数A] = ["X[戦]戦闘コマンド取得"] <CommonEv 150>  / CSelf0[対象戦闘ｽﾛｯﾄ] / CSelf1[コマンド位置]
+ |■Call Event [Name]: CSelf11[一時変数A] = ["X[Bat]Get Battle Command"] <CommonEv 150>  / CSelf0[対象戦闘ｽﾛｯﾄ] / CSelf1[コマンド位置]
  |■Condition (Number):   [1] CSelf11[一時変数A] >=  0  
  |-◇Condition:  [1]  [ CSelf11[一時変数A] >= 0   ] Case↓
  | |■Exit Event
@@ -326,7 +326,7 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf12[一時変数B] = -1 + 0 
  |■Repeat Loop [ 8 ] Times
  | |■Set Variable: CSelf12[一時変数B] += 1 + 0 
- | |■Call Event [Name]: CSelf1[コマンド位置] = ["X[戦]戦闘コマンド取得"] <CommonEv 150>  / CSelf0[対象戦闘ｽﾛｯﾄ] / CSelf12[一時変数B]
+ | |■Call Event [Name]: CSelf1[コマンド位置] = ["X[Bat]Get Battle Command"] <CommonEv 150>  / CSelf0[対象戦闘ｽﾛｯﾄ] / CSelf12[一時変数B]
  | |■Condition (Number):   [1] CSelf1[コマンド位置] <=  -1  
  | |-◇Condition:  [1]  [ CSelf1[コマンド位置] <= -1   ] Case↓
  | | |■Set Variable: CSelf1[コマンド位置] = CSelf12[一時変数B] + 0 
@@ -341,7 +341,7 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf12[一時変数B] = 8 + 0 
  |■Repeat Loop [ 8 ] Times
  | |■Set Variable: CSelf12[一時変数B] -= 1 + 0 
- | |■Call Event [Name]: CSelf1[コマンド位置] = ["X[戦]戦闘コマンド取得"] <CommonEv 150>  / CSelf0[対象戦闘ｽﾛｯﾄ] / CSelf12[一時変数B]
+ | |■Call Event [Name]: CSelf1[コマンド位置] = ["X[Bat]Get Battle Command"] <CommonEv 150>  / CSelf0[対象戦闘ｽﾛｯﾄ] / CSelf12[一時変数B]
  | |■Condition (Number):   [1] CSelf1[コマンド位置] <=  -1  
  | |-◇Condition:  [1]  [ CSelf1[コマンド位置] <= -1   ] Case↓
  | | |■Set Variable: CSelf1[コマンド位置] = CSelf12[一時変数B] + 0 

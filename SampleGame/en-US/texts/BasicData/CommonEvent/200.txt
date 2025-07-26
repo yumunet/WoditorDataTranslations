@@ -1,5 +1,5 @@
 COMMON_ID=200
-COMMON_NAME=X┣◆戦利品獲得処理
+COMMON_NAME=X┣◆Rewards Getting Process
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -164,15 +164,15 @@ COMMAND_NUM=127
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　勝利した際は、ここで経験値や戦利品を得ます。")
 [103][0,1]<0>()("　主人公ＤＢに経験値を増やし、必要ならレベルアップさせます。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<0>()("初期値")
@@ -183,11 +183,11 @@ WoditorEvCOMMAND_START
 [111][4,0]<0>(1,1600000,1,2)()
 [401][1,0]<0>(1)()
 [103][0,1]<1>()("勝利した場合だけ処理")
-[300][3,1]<1>(0,1,54)("X[共]システムSE再生")
+[300][3,1]<1>(0,1,54)("X[Com]Play System Sound")
 [103][0,1]<1>()(" ")
-[300][3,1]<1>(0,1,0)("X[戦]戦利品獲得画面")
+[300][3,1]<1>(0,1,0)("X[Bat]Draw Rewards Screen")
 [180][1,0]<1>(10)()
-[300][3,1]<1>(0,1,1)("X[戦]戦利品獲得画面")
+[300][3,1]<1>(0,1,1)("X[Bat]Draw Rewards Screen")
 [180][1,0]<1>(10)()
 [123][2,0]<1>(1600010,176)()
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
@@ -203,17 +203,17 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("アイテムの場合")
 [121][4,0]<4>(1600012,1600011,10000,16384)()
-[300][4,1]<4>(0,2,1600012,1)("X[共]アイテム増減")
+[300][4,1]<4>(0,2,1600012,1)("X[Com]Change Items")
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
 [103][0,1]<4>()("武器の場合")
 [121][4,0]<4>(1600012,1600011,20000,16384)()
-[300][4,1]<4>(0,2,1600012,1)("X[共]武器増減")
+[300][4,1]<4>(0,2,1600012,1)("X[Com]Change Weapons")
 [0][0,0]<4>()()
 [401][1,0]<3>(3)()
 [103][0,1]<4>()("防具の場合")
 [121][4,0]<4>(1600012,1600011,30000,16384)()
-[300][4,1]<4>(0,2,1600012,1)("X[共]防具増減")
+[300][4,1]<4>(0,2,1600012,1)("X[Com]Change Armors")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [121][4,0]<3>(1600015,1,0,256)()
@@ -234,7 +234,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<1>(1600010,-1,0,0)()
 [179][1,0]<1>(1600020)()
 [121][4,0]<2>(1600010,1,0,256)()
-[300][4,1]<2>(0,16777217,1600010,1600011)("X[移]選択位置主人公ID取得")
+[300][4,1]<2>(0,16777217,1600010,1600011)("X[Map]Get Ally ID")
 [103][0,1]<2>()("")
 [111][4,0]<2>(1,1600011,0,1)()
 [401][1,0]<2>(1)()
@@ -242,9 +242,9 @@ WoditorEvCOMMAND_START
 [250][5,4]<3>(21,78,0,196608,0)("","Base System Variables","[LvUp] Level-Up Count","")
 [250][5,4]<3>(21,79,0,196608,0)("","Base System Variables","[LvUp] Level-Up Ally ID","")
 [103][0,1]<3>()("経験値アップ")
-[300][6,1]<3>(0,4,1600011,11,1600022,0)("X[移]パラメータ増減")
+[300][6,1]<3>(0,4,1600011,11,1600022,0)("X[Map]Change Parameter")
 [103][0,1]<3>()("パラメータ更新")
-[300][6,1]<3>(0,4,1600011,100,0,0)("X[移]パラメータ増減")
+[300][6,1]<3>(0,4,1600011,100,0,0)("X[Map]Change Parameter")
 [103][0,1]<3>()(" ")
 [103][0,1]<3>()("もしレベルアップしてたら表示")
 [250][5,4]<3>(18,78,0,69632,1600025)("","Base System Variables","","")
@@ -253,17 +253,17 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(1)()
 [111][4,0]<4>(1,1600025,1,1)()
 [401][1,0]<4>(1)()
-[300][3,1]<5>(0,1,55)("X[共]システムSE再生")
-[300][3,1]<5>(0,1,2)("X[戦]戦利品獲得画面")
+[300][3,1]<5>(0,1,55)("X[Com]Play System Sound")
+[300][3,1]<5>(0,1,2)("X[Bat]Draw Rewards Screen")
 [212][0,1]<5>()("習得技能表示")
-[300][4,1]<5>(0,16777217,3,1600013)("X[戦]戦利品獲得画面")
+[300][4,1]<5>(0,16777217,3,1600013)("X[Bat]Draw Rewards Screen")
 [103][0,1]<5>()("キー待ち")
 [123][2,0]<5>(1600012,241)()
 [180][1,0]<5>(1)()
 [111][4,0]<5>(1,1600013,1,2)()
 [401][1,0]<5>(1)()
 [103][0,1]<6>()("まだ習得技能の表示が残ってたらジャンプ")
-[300][3,1]<6>(0,1,55)("X[共]システムSE再生")
+[300][3,1]<6>(0,1,55)("X[Com]Play System Sound")
 [213][0,1]<6>()("習得技能表示")
 [0][0,0]<6>()()
 [499][0,0]<5>()()
@@ -282,11 +282,11 @@ WoditorEvCOMMAND_START
 [250][5,4]<1>(18,0,1,331776,1600023)("","×┗Reward List","","Money Gain")
 [250][5,4]<1>(21,71,0,69680,1600023)("","Base System Variables","","")
 [121][4,0]<1>(1600023,100,0,1024)()
-[300][3,1]<1>(0,1,1600023)("X[共]所持金増減")
+[300][3,1]<1>(0,1,1600023)("X[Com]Change Money")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<1>()("消去処理")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[300][3,1]<1>(0,1,-1)("X[戦]戦利品獲得画面")
+[300][3,1]<1>(0,1,-1)("X[Bat]Draw Rewards Screen")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [0][0,0]<0>()()
@@ -294,15 +294,15 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　勝利した際は、ここで経験値や戦利品を得ます。
 ▼ 　主人公ＤＢに経験値を増やし、必要ならレベルアップさせます。
 ▼ 
-▼ 【このコモンイベント内で操作しているデータベース】
+▼ [Databases Accessed by This Common Event]
 ▼  
-▼ 【ここから呼び出している別コモンイベント】
+▼ [Other Common Events Called from Here]
 ▼  
-▼ 【どのコモンイベントから主に呼び出されているか】
+▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ 初期値
@@ -313,11 +313,11 @@ WoditorEvCOMMAND_END
 ■Condition (Number):   [1] CSelf0[勝敗フラグ] ==  1  
 -◇Condition:  [1]  [ CSelf0[勝敗フラグ] == 1   ] Case↓
  |▼ 勝利した場合だけ処理
- |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 54:各種入手音
+ |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 54:Battle Result Sound
  |▼  
- |■Call Event [Name]: ["X[戦]戦利品獲得画面"] <CommonEv 186>  / 0:表示（EXP/お金）
+ |■Call Event [Name]: ["X[Bat]Draw Rewards Screen"] <CommonEv 186>  / 0:表示（EXP/お金）
  |■Wait: 10 Frames
- |■Call Event [Name]: ["X[戦]戦利品獲得画面"] <CommonEv 186>  / 1:表示（アイテム一覧）
+ |■Call Event [Name]: ["X[Bat]Draw Rewards Screen"] <CommonEv 186>  / 1:表示（アイテム一覧）
  |■Wait: 10 Frames
  |■Key Input: CSelf10[一時変数Ａ] [Wait For Input <!>]  Confirm(10) Cancel(11)
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -333,17 +333,17 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [1]  [ CSelf11[一時変数Ｂ] <= 19999   ] Case↓
  | | | |▼ アイテムの場合
  | | | |■Set Variable: CSelf12[一時変数Ｃ] = CSelf11[一時変数Ｂ] % 10000 
- | | | |■Call Event [Name]: ["X[共]アイテム増減"] <CommonEv 50>  / CSelf12[一時変数Ｃ] / 1
+ | | | |■Call Event [Name]: ["X[Com]Change Items"] <CommonEv 50>  / CSelf12[一時変数Ｃ] / 1
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf11[一時変数Ｂ] <= 29999   ] Case↓
  | | | |▼ 武器の場合
  | | | |■Set Variable: CSelf12[一時変数Ｃ] = CSelf11[一時変数Ｂ] % 20000 
- | | | |■Call Event [Name]: ["X[共]武器増減"] <CommonEv 51>  / CSelf12[一時変数Ｃ] / 1
+ | | | |■Call Event [Name]: ["X[Com]Change Weapons"] <CommonEv 51>  / CSelf12[一時変数Ｃ] / 1
  | | | |■
  | | |-◇Condition:  [3]  [ CSelf11[一時変数Ｂ] <= 39999   ] Case↓
  | | | |▼ 防具の場合
  | | | |■Set Variable: CSelf12[一時変数Ｃ] = CSelf11[一時変数Ｂ] % 30000 
- | | | |■Call Event [Name]: ["X[共]防具増減"] <CommonEv 52>  / CSelf12[一時変数Ｃ] / 1
+ | | | |■Call Event [Name]: ["X[Com]Change Armors"] <CommonEv 52>  / CSelf12[一時変数Ｃ] / 1
  | | | |■
  | | |◇End◇
  | | |■Set Variable: CSelf15[アイテム入手個数] += 1 + 0 
@@ -364,7 +364,7 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf10[一時変数Ａ] = -1 + 0 
  |■Repeat Loop [ CSelf20[繰り返し回数] ] Times
  | |■Set Variable: CSelf10[一時変数Ａ] += 1 + 0 
- | |■Call Event [Name]: CSelf11[一時変数Ｂ] = ["X[移]選択位置主人公ID取得"] <CommonEv 105>  / CSelf10[一時変数Ａ]
+ | |■Call Event [Name]: CSelf11[一時変数Ｂ] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf10[一時変数Ａ]
  | |▼ 
  | |■Condition (Number):   [1] CSelf11[一時変数Ｂ] >=  0  
  | |-◇Condition:  [1]  [ CSelf11[一時変数Ｂ] >= 0   ] Case↓
@@ -372,9 +372,9 @@ WoditorEvCOMMAND_END
  | | |■Write to DB(Var): VarDB[ "Base System Variables":"[LvUp] Level-Up Count":0 ] (18:78:Number) =  0
  | | |■Write to DB(Var): VarDB[ "Base System Variables":"[LvUp] Level-Up Ally ID":0 ] (18:79:Number) =  0
  | | |▼ 経験値アップ
- | | |■Call Event [Name]: ["X[移]パラメータ増減"] <CommonEv 70>  / CSelf11[一時変数Ｂ] / 11:経験値 / CSelf22[入手経験値] / 0:なし
+ | | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf11[一時変数Ｂ] / 11:経験値 / CSelf22[入手経験値] / 0:なし
  | | |▼ パラメータ更新
- | | |■Call Event [Name]: ["X[移]パラメータ増減"] <CommonEv 70>  / CSelf11[一時変数Ｂ] / 100:一時値再計算 / 0 / 0:なし
+ | | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf11[一時変数Ｂ] / 100:一時値再計算 / 0 / 0:なし
  | | |▼  
  | | |▼ もしレベルアップしてたら表示
  | | |■Load DB(Var):  CSelf25[レベルアップ数] = VarDB[ "Base System Variables":78:0 ] (18:[LvUp] Level-Up Count:Number) 
@@ -383,17 +383,17 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [1]  [ CSelf26[LvUP者] >= 0   ] Case↓
  | | | |■Condition (Number):   [1] CSelf25[レベルアップ数] >=  1  
  | | | |-◇Condition:  [1]  [ CSelf25[レベルアップ数] >= 1   ] Case↓
- | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 55:レベルアップ
- | | | | |■Call Event [Name]: ["X[戦]戦利品獲得画面"] <CommonEv 186>  / 2:表示（レベルアップ）
+ | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 55:Level Up Sound
+ | | | | |■Call Event [Name]: ["X[Bat]Draw Rewards Screen"] <CommonEv 186>  / 2:表示（レベルアップ）
  | | | | |●Label Point [習得技能表示] <<<<<<<<<<<<<<<<<<<<<<<<★
- | | | | |■Call Event [Name]: CSelf13[続行フラグ] = ["X[戦]戦利品獲得画面"] <CommonEv 186>  / 3:表示（習得技能）
+ | | | | |■Call Event [Name]: CSelf13[続行フラグ] = ["X[Bat]Draw Rewards Screen"] <CommonEv 186>  / 3:表示（習得技能）
  | | | | |▼ キー待ち
  | | | | |■Key Input: CSelf12[一時変数Ｃ] [Wait For Input <!>]  4-Dir. Confirm(10) Cancel(11) SubKey(12)
  | | | | |■Wait: 1 Frames
  | | | | |■Condition (Number):   [1] CSelf13[続行フラグ] ==  1  
  | | | | |-◇Condition:  [1]  [ CSelf13[続行フラグ] == 1   ] Case↓
  | | | | | |▼ まだ習得技能の表示が残ってたらジャンプ
- | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 55:レベルアップ
+ | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 55:Level Up Sound
  | | | | | |●Label Jump [習得技能表示] >>>>>>>>>>>>>>>>>>>>>>>>>
  | | | | | |■
  | | | | |◇End◇
@@ -412,11 +412,11 @@ WoditorEvCOMMAND_END
  |■Load DB(Var):  CSelf23[入手金額] = VarDB[ "×┗Reward List":0:"Money Gain" ] (15::1) 
  |■Load DB(Var):  CSelf23[入手金額] *= VarDB[ "Base System Variables":71:0 ] (18:[Battle] Money Gain % [Base 100]:Number) 
  |■Set Variable: CSelf23[入手金額] /= 100 + 0 
- |■Call Event [Name]: ["X[共]所持金増減"] <CommonEv 53>  / CSelf23[入手金額]
+ |■Call Event [Name]: ["X[Com]Change Money"] <CommonEv 53>  / CSelf23[入手金額]
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |▼ 消去処理
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |■Call Event [Name]: ["X[戦]戦利品獲得画面"] <CommonEv 186>  / -1:消去
+ |■Call Event [Name]: ["X[Bat]Draw Rewards Screen"] <CommonEv 186>  / -1:消去
  |■
 ◇End◇
 ■

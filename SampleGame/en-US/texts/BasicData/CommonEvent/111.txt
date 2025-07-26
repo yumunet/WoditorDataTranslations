@@ -1,5 +1,5 @@
 COMMON_ID=111
-COMMON_NAME=X[移]技能一覧算出
+COMMON_NAME=X[Map]Create Skill List
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -164,15 +164,15 @@ COMMAND_NUM=131
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　指定キャラクターの技能一覧を計算し、その技能一覧と選択可能状態を")
 [103][0,1]<0>()("　可変DB「万能ウィンドウ一時DB」に格納します。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [250][5,4]<0>(19,-2,0,65536,1600030)("","Universal Window Items","","")
 [121][4,0]<0>(1600032,-1,0,0)()
@@ -249,7 +249,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<6>(0,1600034,20,332288,1600013)("","Skills","","Item Required? [Consume]")
 [111][4,0]<6>(1,1600013,0,1)()
 [401][1,0]<6>(1)()
-[300][4,1]<7>(0,16777217,1600013,1600013)("X[共]ｱｲﾃﾑ所持数取得")
+[300][4,1]<7>(0,16777217,1600013,1600013)("X[Com]Get Item Quantity")
 [103][0,1]<7>()("アイテムがなかったら発動アイテムチェックを0にする")
 [111][4,0]<7>(1,1600013,0,3)()
 [401][1,0]<7>(1)()
@@ -298,15 +298,15 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　指定キャラクターの技能一覧を計算し、その技能一覧と選択可能状態を
 ▼ 　可変DB「万能ウィンドウ一時DB」に格納します。
 ▼ 
-▼ 【このコモンイベント内で操作しているデータベース】
+▼ [Databases Accessed by This Common Event]
 ▼  
-▼ 【ここから呼び出している別コモンイベント】
+▼ [Other Common Events Called from Here]
 ▼  
-▼ 【どのコモンイベントから主に呼び出されているか】
+▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Write to DB(Var): [Reset Type "Universal Window Items"(19)]
 ■Set Variable: CSelf32[万能ウィンドウ登録位置] = -1 + 0 
@@ -383,7 +383,7 @@ WoditorEvCOMMAND_END
  | | | | | |■Load DB(User):  CSelf13[一時変数C] = UserDB[ "Skills":CSelf34[技能コード]:"Item Required? [Consume]" ] (0:-:20) 
  | | | | | |■Condition (Number):   [1] CSelf13[一時変数C] >=  0  
  | | | | | |-◇Condition:  [1]  [ CSelf13[一時変数C] >= 0   ] Case↓
- | | | | | | |■Call Event [Name]: CSelf13[一時変数C] = ["X[共]ｱｲﾃﾑ所持数取得"] <CommonEv 54>  / CSelf13[一時変数C]
+ | | | | | | |■Call Event [Name]: CSelf13[一時変数C] = ["X[Com]Get Item Quantity"] <CommonEv 54>  / CSelf13[一時変数C]
  | | | | | | |▼ アイテムがなかったら発動アイテムチェックを0にする
  | | | | | | |■Condition (Number):   [1] CSelf13[一時変数C] <=  0  
  | | | | | | |-◇Condition:  [1]  [ CSelf13[一時変数C] <= 0   ] Case↓

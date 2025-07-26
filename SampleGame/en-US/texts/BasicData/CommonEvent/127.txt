@@ -1,5 +1,5 @@
 COMMON_ID=127
-COMMON_NAME=X[移]メニュー起動
+COMMON_NAME=X[Map]Start Menu
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -164,17 +164,17 @@ COMMAND_NUM=206
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　メニュー実行中の主なループ処理をここで実行します。")
 [103][0,1]<0>()("　このコモンイベントが終了するときは、メニューが閉じられるときです。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("　「X[移]歩行時_並列キー処理」イベントから「予約」処理で呼び出されています。")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [250][5,4]<0>(18,1,0,458752,0)("","Base System Variables","Menu Close Flag","Number")
-[300][3,1]<0>(0,1,6)("X[共]システムSE再生")
+[300][3,1]<0>(0,1,6)("X[Com]Play System Sound")
 [103][0,1]<0>()("情報の再初期化")
-[300][2,1]<0>(0,0)("X[移]パーティー情報計算")
+[300][2,1]<0>(0,0)("X[Map]Update Party Info")
 [179][1,0]<0>(0)()
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<1>()("全員のパラメータ更新")
@@ -183,10 +183,10 @@ WoditorEvCOMMAND_START
 [121][4,0]<1>(1600010,-1,0,0)()
 [179][1,0]<1>(1600019)()
 [121][4,0]<2>(1600010,1,0,256)()
-[300][4,1]<2>(0,16777217,1600010,1600011)("X[移]選択位置主人公ID取得")
-[300][3,1]<2>(0,1,1600011)("X[移]一時ｽﾃ計算<初期化>")
-[300][3,1]<2>(0,1,1600011)("X[移]一時ｽﾃ計算<装備補正>")
-[300][3,1]<2>(0,1,1600011)("X[移]一時ｽﾃ計算<状態補正>")
+[300][4,1]<2>(0,16777217,1600010,1600011)("X[Map]Get Ally ID")
+[300][3,1]<2>(0,1,1600011)("X[Map]CalcTempStats <Initialize>")
+[300][3,1]<2>(0,1,1600011)("X[Map]CalcTempStats <Equipments>")
+[300][3,1]<2>(0,1,1600011)("X[Map]CalcTempStats <StatusEffects>")
 [0][0,0]<2>()()
 [498][0,0]<1>()()
 [180][1,0]<1>(1)()
@@ -196,15 +196,15 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("初期表示")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<0>()("メニュー欄を表示")
-[300][4,1]<0>(0,2,0,0)("X[移]メニュー描画")
+[300][4,1]<0>(0,2,0,0)("X[Map]Draw Menu")
 [103][0,1]<0>()("パーティー情報から一人ずつ主人公ID取得して、キャラクター一覧を表示")
-[300][3,1]<0>(0,1,0)("X[移]キャラ欄_全員描画")
+[300][3,1]<0>(0,1,0)("X[Map]Character Box: Draw All")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<0>()("ここからメニューのコマンド選択処理")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [180][1,0]<0>(4)()
 [121][4,0]<0>(1600021,0,0,0)()
-[300][4,1]<0>(0,2,1,1600021)("X[移]メニュー描画")
+[300][4,1]<0>(0,2,1,1600021)("X[Map]Draw Menu")
 [250][5,4]<0>(18,22,0,69632,1600020)("","Base System Variables","","")
 [103][0,1]<0>()("もし上下キーが入ってたら、カーソルが動くまでの少しだけウェイト")
 [123][2,0]<0>(1600015,48)()
@@ -241,16 +241,16 @@ WoditorEvCOMMAND_START
 [103][0,1]<2>()("下キーを押した場合の処理")
 [121][4,0]<2>(1600021,1,0,256)()
 [121][4,0]<2>(1600021,1600020,0,1280)()
-[300][3,1]<2>(0,1,5)("X[共]システムSE再生")
-[300][4,1]<2>(0,2,1,1600021)("X[移]メニュー描画")
+[300][3,1]<2>(0,1,5)("X[Com]Play System Sound")
+[300][4,1]<2>(0,2,1,1600021)("X[Map]Draw Menu")
 [176][0,0]<2>()()
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
 [103][0,1]<2>()("上キーを押した場合の処理")
 [121][4,0]<2>(1600021,1600020,1,4352)()
 [121][4,0]<2>(1600021,1600020,0,1280)()
-[300][3,1]<2>(0,1,5)("X[共]システムSE再生")
-[300][4,1]<2>(0,2,1,1600021)("X[移]メニュー描画")
+[300][3,1]<2>(0,1,5)("X[Com]Play System Sound")
+[300][4,1]<2>(0,2,1,1600021)("X[Map]Draw Menu")
 [176][0,0]<2>()()
 [0][0,0]<2>()()
 [420][1,0]<1>(0)()
@@ -258,40 +258,40 @@ WoditorEvCOMMAND_START
 [401][1,0]<2>(1)()
 [212][0,1]<3>()("メニュー決定")
 [103][0,1]<3>()("決定キーを押した場合の処理")
-[300][4,1]<3>(0,2,1,-2)("X[移]メニュー描画")
+[300][4,1]<3>(0,2,1,-2)("X[Map]Draw Menu")
 [121][4,0]<3>(1600022,1600021,23,0)()
 [250][5,4]<3>(18,1600022,0,69632,1600023)("","Base System Variables","","")
 [111][4,0]<3>(1,1600023,-1,3)()
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("コマンド選択不能")
-[300][3,1]<4>(0,1,2)("X[共]システムSE再生")
-[300][4,1]<4>(0,2,1,1600021)("X[移]メニュー描画")
+[300][3,1]<4>(0,1,2)("X[Com]Play System Sound")
+[300][4,1]<4>(0,2,1,1600021)("X[Map]Draw Menu")
 [176][0,0]<4>()()
 [0][0,0]<4>()()
 [499][0,0]<3>()()
-[300][3,1]<3>(0,1,0)("X[共]システムSE再生")
+[300][3,1]<3>(0,1,0)("X[Com]Play System Sound")
 [111][10,0]<3>(3,1600023,1,2,1600023,2,2,1600023,3,2)()
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("アイテム")
-[300][3,1]<4>(0,1,0)("X┣[移]アイテム欄実行")
+[300][3,1]<4>(0,1,0)("X┣[Map]Execute Items Menu")
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
 [103][0,1]<4>()("技能")
-[300][4,1]<4>(0,2,0,0)("X┣[移]技能欄実行")
+[300][4,1]<4>(0,2,0,0)("X┣[Map]Execute Skills Menu")
 [0][0,0]<4>()()
 [401][1,0]<3>(3)()
 [103][0,1]<4>()("装備")
-[300][3,1]<4>(0,1,0)("X┣[移]装備欄実行")
+[300][3,1]<4>(0,1,0)("X┣[Map]Execute Equip Menu")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [111][10,0]<3>(3,1600023,4,2,1600023,5,2,1600023,10,2)()
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("セーブ")
-[300][4,1]<4>(0,2,0,0)("X┣[移]セーブ欄実行")
+[300][4,1]<4>(0,2,0,0)("X┣[Map]Execute Save Menu")
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
 [103][0,1]<4>()("システム")
-[300][2,1]<4>(0,0)("X┗[移]システム欄実行")
+[300][2,1]<4>(0,0)("X┗[Map]Execute System Menu")
 [0][0,0]<4>()()
 [401][1,0]<3>(3)()
 [103][0,1]<4>()("特殊メニューA")
@@ -343,7 +343,7 @@ WoditorEvCOMMAND_START
 [172][0,0]<4>()()
 [0][0,0]<4>()()
 [499][0,0]<3>()()
-[300][4,1]<3>(0,2,1,1600021)("X[移]メニュー描画")
+[300][4,1]<3>(0,2,1,1600021)("X[Map]Draw Menu")
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
 [103][0,1]<3>()("キャンセルキーを押した場合の処理")
@@ -362,28 +362,28 @@ WoditorEvCOMMAND_START
 [250][5,4]<0>(18,1,0,462848,1600012)("","Base System Variables","Menu Close Flag","Number")
 [111][4,0]<0>(1,1600012,0,2)()
 [401][1,0]<0>(1)()
-[300][3,1]<1>(0,1,7)("X[共]システムSE再生")
+[300][3,1]<1>(0,1,7)("X[Com]Play System Sound")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [103][0,1]<0>()("メニュー・キャラクター消去")
-[300][4,1]<0>(0,2,-1,0)("X[移]メニュー描画")
-[300][3,1]<0>(0,1,-1)("X[移]キャラ欄_全員描画")
+[300][4,1]<0>(0,2,-1,0)("X[Map]Draw Menu")
+[300][3,1]<0>(0,1,-1)("X[Map]Character Box: Draw All")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　メニュー実行中の主なループ処理をここで実行します。
 ▼ 　このコモンイベントが終了するときは、メニューが閉じられるときです。
 ▼ 
-▼ 【どのコモンイベントから主に呼び出されているか】
+▼ [Main Common Events Calling This]
 ▼ 　「X[移]歩行時_並列キー処理」イベントから「予約」処理で呼び出されています。
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Write to DB(Var): VarDB[ "Base System Variables":"Menu Close Flag":"Number" ] (18:1:0) =  0
-■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 6:メニュー開く
+■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 6:Menu Open Sound
 ▼ 情報の再初期化
-■Call Event [Name]: ["X[移]パーティー情報計算"] <CommonEv 79> 
+■Call Event [Name]: ["X[Map]Update Party Info"] <CommonEv 79> 
 ■Repeat Loop [ 0 ] Times
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |▼ 全員のパラメータ更新
@@ -392,10 +392,10 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf10[パーティーメンバー位置] = -1 + 0 
  |■Repeat Loop [ CSelf19[全員数] ] Times
  | |■Set Variable: CSelf10[パーティーメンバー位置] += 1 + 0 
- | |■Call Event [Name]: CSelf11[表示主人公ID] = ["X[移]選択位置主人公ID取得"] <CommonEv 105>  / CSelf10[パーティーメンバー位置]
- | |■Call Event [Name]: ["X[移]一時ｽﾃ計算<初期化>"] <CommonEv 122>  / CSelf11[表示主人公ID]
- | |■Call Event [Name]: ["X[移]一時ｽﾃ計算<装備補正>"] <CommonEv 123>  / CSelf11[表示主人公ID]
- | |■Call Event [Name]: ["X[移]一時ｽﾃ計算<状態補正>"] <CommonEv 124>  / CSelf11[表示主人公ID]
+ | |■Call Event [Name]: CSelf11[表示主人公ID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf10[パーティーメンバー位置]
+ | |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf11[表示主人公ID]
+ | |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf11[表示主人公ID]
+ | |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf11[表示主人公ID]
  | |■
  |◇Loop End Point◇◇
  |■Wait: 1 Frames
@@ -405,15 +405,15 @@ WoditorEvCOMMAND_END
 ▼ 初期表示
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ メニュー欄を表示
-■Call Event [Name]: ["X[移]メニュー描画"] <CommonEv 88>  / 0:表示 / 0:0以上…カーソル位置設定
+■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 0:表示 / 0:0以上…カーソル位置設定
 ▼ パーティー情報から一人ずつ主人公ID取得して、キャラクター一覧を表示
-■Call Event [Name]: ["X[移]キャラ欄_全員描画"] <CommonEv 92>  / 0:新規に全員描画
+■Call Event [Name]: ["X[Map]Character Box: Draw All"] <CommonEv 92>  / 0:新規に全員描画
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ ここからメニューのコマンド選択処理
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■Wait: 4 Frames
 ■Set Variable: CSelf21[現カーソル位置] = 0 + 0 
-■Call Event [Name]: ["X[移]メニュー描画"] <CommonEv 88>  / 1:更新 / CSelf21[現カーソル位置]
+■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 1:更新 / CSelf21[現カーソル位置]
 ■Load DB(Var):  CSelf20[コマンド最大数] = VarDB[ "Base System Variables":22:0 ] (18:Menu Command Count:Number) 
 ▼ もし上下キーが入ってたら、カーソルが動くまでの少しだけウェイト
 ■Key Input: CSelf15[直前キー状態] [Normal Input]  Confirm(10) Cancel(11)
@@ -450,16 +450,16 @@ WoditorEvCOMMAND_END
  | |▼ 下キーを押した場合の処理
  | |■Set Variable: CSelf21[現カーソル位置] += 1 + 0 
  | |■Set Variable: CSelf21[現カーソル位置] %= CSelf20[コマンド最大数] + 0 
- | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 5:カーソル移動音
- | |■Call Event [Name]: ["X[移]メニュー描画"] <CommonEv 88>  / 1:更新 / CSelf21[現カーソル位置]
+ | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
+ | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 1:更新 / CSelf21[現カーソル位置]
  | |■Loop Start: Go to Loop Start
  | |■
  |-◇Condition:  [2]  [ CSelf13[キー入力状態] == 8   ] Case↓
  | |▼ 上キーを押した場合の処理
  | |■Set Variable: CSelf21[現カーソル位置] += CSelf20[コマンド最大数] - 1 
  | |■Set Variable: CSelf21[現カーソル位置] %= CSelf20[コマンド最大数] + 0 
- | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 5:カーソル移動音
- | |■Call Event [Name]: ["X[移]メニュー描画"] <CommonEv 88>  / 1:更新 / CSelf21[現カーソル位置]
+ | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
+ | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 1:更新 / CSelf21[現カーソル位置]
  | |■Loop Start: Go to Loop Start
  | |■
  |-◇Else
@@ -467,40 +467,40 @@ WoditorEvCOMMAND_END
  | |-◇Condition:  [1]  [ CSelf13[キー入力状態] == 10   ] Case↓
  | | |●Label Point [メニュー決定] <<<<<<<<<<<<<<<<<<<<<<<<★
  | | |▼ 決定キーを押した場合の処理
- | | |■Call Event [Name]: ["X[移]メニュー描画"] <CommonEv 88>  / 1:更新 / -2:フラッシュ停止
+ | | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 1:更新 / -2:フラッシュ停止
  | | |■Set Variable: CSelf22[選択コード位置] = CSelf21[現カーソル位置] + 23 
  | | |■Load DB(Var):  CSelf23[選択コード番号] = VarDB[ "Base System Variables":CSelf22[選択コード位置]:0 ] (18:-:Number) 
  | | |■Condition (Number):   [1] CSelf23[選択コード番号] <=  -1  
  | | |-◇Condition:  [1]  [ CSelf23[選択コード番号] <= -1   ] Case↓
  | | | |▼ コマンド選択不能
- | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 2:ブザー音
- | | | |■Call Event [Name]: ["X[移]メニュー描画"] <CommonEv 88>  / 1:更新 / CSelf21[現カーソル位置]
+ | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
+ | | | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 1:更新 / CSelf21[現カーソル位置]
  | | | |■Loop Start: Go to Loop Start
  | | | |■
  | | |◇End◇
- | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 0:決定音
+ | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
  | | |■Condition (Number):   [1] CSelf23[選択コード番号] ==  1  /  [2] CSelf23[選択コード番号] ==  2  /  [3] CSelf23[選択コード番号] ==  3  
  | | |-◇Condition:  [1]  [ CSelf23[選択コード番号] == 1   ] Case↓
  | | | |▼ アイテム
- | | | |■Call Event [Name]: ["X┣[移]アイテム欄実行"] <CommonEv 128>  / 0:メニューから(新たにキャラ一覧出さない)
+ | | | |■Call Event [Name]: ["X┣[Map]Execute Items Menu"] <CommonEv 128>  / 0:メニューから(新たにキャラ一覧出さない)
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf23[選択コード番号] == 2   ] Case↓
  | | | |▼ 技能
- | | | |■Call Event [Name]: ["X┣[移]技能欄実行"] <CommonEv 129>  / 0:メニューから(新たにキャラ一覧出さない) / 0
+ | | | |■Call Event [Name]: ["X┣[Map]Execute Skills Menu"] <CommonEv 129>  / 0:メニューから(新たにキャラ一覧出さない) / 0
  | | | |■
  | | |-◇Condition:  [3]  [ CSelf23[選択コード番号] == 3   ] Case↓
  | | | |▼ 装備
- | | | |■Call Event [Name]: ["X┣[移]装備欄実行"] <CommonEv 130>  / 0:メニューから(新たにキャラ一覧出さない)
+ | | | |■Call Event [Name]: ["X┣[Map]Execute Equip Menu"] <CommonEv 130>  / 0:メニューから(新たにキャラ一覧出さない)
  | | | |■
  | | |◇End◇
  | | |■Condition (Number):   [1] CSelf23[選択コード番号] ==  4  /  [2] CSelf23[選択コード番号] ==  5  /  [3] CSelf23[選択コード番号] ==  10  
  | | |-◇Condition:  [1]  [ CSelf23[選択コード番号] == 4   ] Case↓
  | | | |▼ セーブ
- | | | |■Call Event [Name]: ["X┣[移]セーブ欄実行"] <CommonEv 131>  / 0:セーブ画面 / 0:メニューから(セーブ後、キャラ一覧を表示)
+ | | | |■Call Event [Name]: ["X┣[Map]Execute Save Menu"] <CommonEv 131>  / 0:セーブ画面 / 0:メニューから(セーブ後、キャラ一覧を表示)
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf23[選択コード番号] == 5   ] Case↓
  | | | |▼ システム
- | | | |■Call Event [Name]: ["X┗[移]システム欄実行"] <CommonEv 132> 
+ | | | |■Call Event [Name]: ["X┗[Map]Execute System Menu"] <CommonEv 132> 
  | | | |■
  | | |-◇Condition:  [3]  [ CSelf23[選択コード番号] == 10   ] Case↓
  | | | |▼ 特殊メニューA
@@ -552,7 +552,7 @@ WoditorEvCOMMAND_END
  | | | |■Exit Event
  | | | |■
  | | |◇End◇
- | | |■Call Event [Name]: ["X[移]メニュー描画"] <CommonEv 88>  / 1:更新 / CSelf21[現カーソル位置]
+ | | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 1:更新 / CSelf21[現カーソル位置]
  | | |■
  | |-◇Condition:  [2]  [ CSelf13[キー入力状態] == 11   ] Case↓
  | | |▼ キャンセルキーを押した場合の処理
@@ -571,11 +571,11 @@ WoditorEvCOMMAND_END
 ■Load DB(Var):  CSelf12[一時変数] = VarDB[ "Base System Variables":"Menu Close Flag":"Number" ] (18:1:0) 
 ■Condition (Number):   [1] CSelf12[一時変数] ==  0  
 -◇Condition:  [1]  [ CSelf12[一時変数] == 0   ] Case↓
- |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 7:メニュー閉じる
+ |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 7:Menu Close Sound
  |■
 ◇End◇
 ▼ メニュー・キャラクター消去
-■Call Event [Name]: ["X[移]メニュー描画"] <CommonEv 88>  / -1:消去 / 0:0以上…カーソル位置設定
-■Call Event [Name]: ["X[移]キャラ欄_全員描画"] <CommonEv 92>  / -1:全員消去
+■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / -1:消去 / 0:0以上…カーソル位置設定
+■Call Event [Name]: ["X[Map]Character Box: Draw All"] <CommonEv 92>  / -1:全員消去
 ■
 [COMMAND_TEXT_END]

@@ -1,5 +1,5 @@
 COMMON_ID=70
-COMMON_NAME=X[移]パラメータ増減
+COMMON_NAME=X[Map]Change Parameter
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -198,7 +198,7 @@ COMMAND_NUM=699
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　基本システム内で主人公のパラメータを増減させるときは、必ずこのコモンイベントを使用します。")
 [103][0,1]<0>()("　移動中のみ有効ですが、戦闘後に呼び出される場合もあり、その際は戦闘メッセージで結果を表示します。")
 [103][0,1]<0>()("")
@@ -278,7 +278,7 @@ WoditorEvCOMMAND_START
 [179][1,0]<3>(1600019)()
 [121][4,0]<4>(1600010,1,0,256)()
 [103][0,1]<4>()("セルフ11にキャラ番号を格納")
-[300][4,1]<4>(0,16777217,1600010,1600011)("X[移]選択位置主人公ID取得")
+[300][4,1]<4>(0,16777217,1600010,1600011)("X[Map]Get Ally ID")
 [111][4,0]<4>(1,1600011,0,1)()
 [401][1,0]<4>(1)()
 [103][0,1]<5>()("戦闘不能かチェック")
@@ -342,9 +342,9 @@ WoditorEvCOMMAND_START
 [121][4,0]<1>(1600031,1600001,0,0)()
 [121][4,0]<1>(1600032,1600002,0,0)()
 [121][4,0]<1>(1600033,1600003,0,0)()
-[300][5,1]<1>(0,3,1600000,0,0)("X[移]レベルアップ処理")
+[300][5,1]<1>(0,3,1600000,0,0)("X[Map]Change Level")
 [179][1,0]<1>(1)()
-[300][6,1]<2>(0,16777219,1600000,1600002,1,1600020)("X[移]レベルアップ処理")
+[300][6,1]<2>(0,16777219,1600000,1600002,1,1600020)("X[Map]Change Level")
 [0][0,0]<2>()()
 [498][0,0]<1>()()
 [103][0,1]<1>()("一時退避した変数を戻す")
@@ -547,7 +547,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [103][0,1]<3>()("ﾘｾｯﾄする")
-[300][5,1]<3>(0,3,1600000,0,0)("X[移]レベルアップ処理")
+[300][5,1]<3>(0,3,1600000,0,0)("X[Map]Change Level")
 [103][0,1]<3>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<3>()("レベルアップの文章表示終了")
 [103][0,1]<3>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
@@ -572,14 +572,14 @@ WoditorEvCOMMAND_START
 [121][4,0]<2>(1600031,1600001,0,0)()
 [121][4,0]<2>(1600032,1600002,0,0)()
 [121][4,0]<2>(1600033,1600003,0,0)()
-[300][5,1]<2>(0,3,1600000,0,0)("X[移]レベルアップ処理")
+[300][5,1]<2>(0,3,1600000,0,0)("X[Map]Change Level")
 [121][4,0]<2>(1600020,0,0,0)()
 [170][0,0]<2>()()
 [111][4,0]<3>(17,1600010,1600011,1)()
 [401][1,0]<3>(1)()
 [121][4,0]<4>(1600010,1600011,0,512)()
 [250][5,4]<4>(0,1600000,57,327680,1600010)("","Allies","","Current Level EXP")
-[300][6,1]<4>(0,16777219,1600000,1,1,1600012)("X[移]レベルアップ処理")
+[300][6,1]<4>(0,16777219,1600000,1,1,1600012)("X[Map]Change Level")
 [250][5,4]<4>(0,1600000,58,331776,1600011)("","Allies","","Current Level Required EXP")
 [121][4,0]<4>(1600020,1600012,0,256)()
 [111][4,0]<4>(1,1600012,0,2)()
@@ -878,9 +878,9 @@ WoditorEvCOMMAND_START
 [111][4,0]<0>(1,1600001,100,2)()
 [401][1,0]<0>(1)()
 [103][0,1]<1>()("一時値再計算")
-[300][3,1]<1>(0,1,1600000)("X[移]一時ｽﾃ計算<初期化>")
-[300][3,1]<1>(0,1,1600000)("X[移]一時ｽﾃ計算<装備補正>")
-[300][3,1]<1>(0,1,1600000)("X[移]一時ｽﾃ計算<状態補正>")
+[300][3,1]<1>(0,1,1600000)("X[Map]CalcTempStats <Initialize>")
+[300][3,1]<1>(0,1,1600000)("X[Map]CalcTempStats <Equipments>")
+[300][3,1]<1>(0,1,1600000)("X[Map]CalcTempStats <StatusEffects>")
 [172][0,0]<1>()()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
@@ -900,7 +900,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　基本システム内で主人公のパラメータを増減させるときは、必ずこのコモンイベントを使用します。
 ▼ 　移動中のみ有効ですが、戦闘後に呼び出される場合もあり、その際は戦闘メッセージで結果を表示します。
 ▼ 
@@ -980,7 +980,7 @@ WoditorEvCOMMAND_END
  | | |■Repeat Loop [ CSelf19[PT人数] ] Times
  | | | |■Set Variable: CSelf10[一時変数A] += 1 + 0 
  | | | |▼ セルフ11にキャラ番号を格納
- | | | |■Call Event [Name]: CSelf11[一時変数B] = ["X[移]選択位置主人公ID取得"] <CommonEv 105>  / CSelf10[一時変数A]
+ | | | |■Call Event [Name]: CSelf11[一時変数B] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf10[一時変数A]
  | | | |■Condition (Number):   [1] CSelf11[一時変数B] >=  0  
  | | | |-◇Condition:  [1]  [ CSelf11[一時変数B] >= 0   ] Case↓
  | | | | |▼ 戦闘不能かチェック
@@ -1044,9 +1044,9 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf31[入力一時退避2] = CSelf1[対象パラメータ] + 0 
  |■Set Variable: CSelf32[入力一時退避3] = CSelf2[増減値] + 0 
  |■Set Variable: CSelf33[入力一時退避4] = CSelf3[メッセージ有り？] + 0 
- |■Call Event [Name]: ["X[移]レベルアップ処理"] <CommonEv 74>  / CSelf0[主人公ID] / 0 / 0:LvUP+パラメータ変化分初期化
+ |■Call Event [Name]: ["X[Map]Change Level"] <CommonEv 74>  / CSelf0[主人公ID] / 0 / 0:LvUP+パラメータ変化分初期化
  |■Repeat Loop [ 1 ] Times
- | |■Call Event [Name]: CSelf20[変化したレベル] = ["X[移]レベルアップ処理"] <CommonEv 74>  / CSelf0[主人公ID] / CSelf2[増減値] / 1:LvUP+パラメータ変化分保持
+ | |■Call Event [Name]: CSelf20[変化したレベル] = ["X[Map]Change Level"] <CommonEv 74>  / CSelf0[主人公ID] / CSelf2[増減値] / 1:LvUP+パラメータ変化分保持
  | |■
  |◇Loop End Point◇◇
  |▼ 一時退避した変数を戻す
@@ -1249,7 +1249,7 @@ WoditorEvCOMMAND_END
  | | | |■
  | | |◇End◇
  | | |▼ ﾘｾｯﾄする
- | | |■Call Event [Name]: ["X[移]レベルアップ処理"] <CommonEv 74>  / CSelf0[主人公ID] / 0 / 0:LvUP+パラメータ変化分初期化
+ | | |■Call Event [Name]: ["X[Map]Change Level"] <CommonEv 74>  / CSelf0[主人公ID] / 0 / 0:LvUP+パラメータ変化分初期化
  | | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  | | |▼ レベルアップの文章表示終了
  | | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -1274,14 +1274,14 @@ WoditorEvCOMMAND_END
  | |■Set Variable: CSelf31[入力一時退避2] = CSelf1[対象パラメータ] + 0 
  | |■Set Variable: CSelf32[入力一時退避3] = CSelf2[増減値] + 0 
  | |■Set Variable: CSelf33[入力一時退避4] = CSelf3[メッセージ有り？] + 0 
- | |■Call Event [Name]: ["X[移]レベルアップ処理"] <CommonEv 74>  / CSelf0[主人公ID] / 0 / 0:LvUP+パラメータ変化分初期化
+ | |■Call Event [Name]: ["X[Map]Change Level"] <CommonEv 74>  / CSelf0[主人公ID] / 0 / 0:LvUP+パラメータ変化分初期化
  | |■Set Variable: CSelf20[変化したレベル] = 0 + 0 
  | |■Loop Start
  | | |■Condition (Number):   [1] CSelf10[一時変数A] >=  CSelf11[一時変数B]  
  | | |-◇Condition:  [1]  [ CSelf10[一時変数A] >= CSelf11[一時変数B]   ] Case↓
  | | | |■Set Variable: CSelf10[一時変数A] -= CSelf11[一時変数B] + 0 
  | | | |■Write to DB(Var): VarDB[ "Allies":CSelf0[主人公ID]:"Current Level EXP" ] (0:-:54) =  CSelf10[一時変数A]
- | | | |■Call Event [Name]: CSelf12[一時変数C] = ["X[移]レベルアップ処理"] <CommonEv 74>  / CSelf0[主人公ID] / 1 / 1:LvUP+パラメータ変化分保持
+ | | | |■Call Event [Name]: CSelf12[一時変数C] = ["X[Map]Change Level"] <CommonEv 74>  / CSelf0[主人公ID] / 1 / 1:LvUP+パラメータ変化分保持
  | | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "Allies":CSelf0[主人公ID]:"Current Level Required EXP" ] (0:-:55) 
  | | | |■Set Variable: CSelf20[変化したレベル] += CSelf12[一時変数C] + 0 
  | | | |■Condition (Number):   [1] CSelf12[一時変数C] ==  0  
@@ -1580,9 +1580,9 @@ WoditorEvCOMMAND_END
 ■Condition (Number):   [1] CSelf1[対象パラメータ] ==  100  
 -◇Condition:  [1]  [ CSelf1[対象パラメータ] == 100   ] Case↓
  |▼ 一時値再計算
- |■Call Event [Name]: ["X[移]一時ｽﾃ計算<初期化>"] <CommonEv 122>  / CSelf0[主人公ID]
- |■Call Event [Name]: ["X[移]一時ｽﾃ計算<装備補正>"] <CommonEv 123>  / CSelf0[主人公ID]
- |■Call Event [Name]: ["X[移]一時ｽﾃ計算<状態補正>"] <CommonEv 124>  / CSelf0[主人公ID]
+ |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf0[主人公ID]
+ |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf0[主人公ID]
+ |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf0[主人公ID]
  |■Exit Event
  |■
 ◇End◇

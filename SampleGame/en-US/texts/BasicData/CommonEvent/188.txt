@@ -1,5 +1,5 @@
 COMMON_ID=188
-COMMON_NAME=X◆戦闘処理
+COMMON_NAME=X◆Battle Process
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -181,7 +181,7 @@ COMMAND_NUM=262
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　戦闘時のループ処理です。")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("戦闘中フラグをオンに")
@@ -219,13 +219,13 @@ WoditorEvCOMMAND_START
 [250][5,4]<0>(20,72,0,65536,1600000)("","Base System Variables","","")
 [121][4,0]<0>(9000059,1,0,0)()
 [121][4,0]<0>(9000060,1,0,0)()
-[300][3,1]<0>(0,1,53)("X[共]システムSE再生")
-[300][4,1]<0>(0,2,10,30)("X[共]全体エフェクト実行")
-[300][2,1]<0>(0,0)("X┣◆戦闘初期化")
-[300][3,1]<0>(0,1,1)("X┣◆戦闘キャラ配置")
-[300][2,1]<0>(0,0)("○[変更可]戦闘開始時処理")
+[300][3,1]<0>(0,1,53)("X[Com]Play System Sound")
+[300][4,1]<0>(0,2,10,30)("X[Com]Execute Full Effect")
+[300][2,1]<0>(0,0)("X┣◆Initialize Battle")
+[300][3,1]<0>(0,1,1)("X┣◆Place Battle Character")
+[300][2,1]<0>(0,0)("○[Editable] At Battle Start")
 [103][0,1]<0>()(" ")
-[300][4,1]<0>(0,16777217,1,1600020)("X[戦]敵/味方・勝敗判定")
+[300][4,1]<0>(0,16777217,1,1600020)("X[Bat]Check Win/Lose")
 [111][4,0]<0>(1,1600020,0,5)()
 [401][1,0]<0>(1)()
 [213][0,1]<1>()("戦闘終了処理")
@@ -234,26 +234,26 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600018,1,0,0)()
 [170][0,0]<0>()()
 [103][0,1]<1>()("逃走不能（セルフ1＝1）なら、「戦闘・逃走コマンド」を出さない。")
-[300][5,1]<1>(0,16777218,1600018,1600001,1600019)("X┣◆行動内容のセット")
+[300][5,1]<1>(0,16777218,1600018,1600001,1600019)("X┣◆Set Action")
 [121][4,0]<1>(1600018,0,0,0)()
 [111][7,0]<1>(2,1600019,1,2,1600019,10,2)()
 [401][1,0]<1>(1)()
 [103][0,1]<2>()("逃走処理の場合")
 [213][0,1]<2>()("逃走処理")
 [212][0,1]<2>()("逃走戻り")
-[300][3,1]<2>(0,1,-1)("X┣◆行動内容のセット")
+[300][3,1]<2>(0,1,-1)("X┣◆Set Action")
 [121][4,0]<2>(1600018,1,0,0)()
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
 [103][0,1]<2>()("戦闘終了の場合")
-[300][4,1]<2>(0,16777217,1,1600020)("X[戦]敵/味方・勝敗判定")
+[300][4,1]<2>(0,16777217,1,1600020)("X[Bat]Check Win/Lose")
 [171][0,0]<2>()()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
-[300][2,1]<1>(0,0)("X┣◆行動順の計算")
-[300][2,1]<1>(0,0)("○[変更可]1ﾀｰﾝ開始時処理")
+[300][2,1]<1>(0,0)("X┣◆Calculate Action Order")
+[300][2,1]<1>(0,0)("○[Editable] At Turn Start")
 [103][0,1]<1>()(" ")
-[300][4,1]<1>(0,16777217,0,1600020)("X[戦]敵/味方・勝敗判定")
+[300][4,1]<1>(0,16777217,0,1600020)("X[Bat]Check Win/Lose")
 [111][4,0]<1>(1,1600020,0,5)()
 [401][1,0]<1>(1)()
 [213][0,1]<2>()("戦闘終了処理")
@@ -266,13 +266,13 @@ WoditorEvCOMMAND_START
 [179][1,0]<2>(1600023)()
 [103][0,1]<3>()("全員更新")
 [121][4,0]<3>(1600010,1,0,256)()
-[300][4,1]<3>(0,16777217,1600010,1600011)("X[戦]ｽﾛｯﾄから主人公ID取得")
+[300][4,1]<3>(0,16777217,1600010,1600011)("X[Bat]Get Ally ID From Slot")
 [111][4,0]<3>(1,1600011,0,1)()
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("キャラがいる場合だけ処理")
-[300][3,1]<4>(0,1,1600010)("X[戦]一時ｽﾃ計算<初期化>")
-[300][4,1]<4>(0,2,1600010,-1)("X[戦]一時ｽﾃ計算<装備補正>")
-[300][4,1]<4>(0,2,1600010,0)("X[戦]一時ｽﾃ計算<状態補正>")
+[300][3,1]<4>(0,1,1600010)("X[Bat]CalcTempStats <Initialize>")
+[300][4,1]<4>(0,2,1600010,-1)("X[Bat]CalcTempStats <Equipments>")
+[300][4,1]<4>(0,2,1600010,0)("X[Bat]CalcTempStats <StatusEffects>")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [0][0,0]<3>()()
@@ -283,24 +283,24 @@ WoditorEvCOMMAND_START
 [179][1,0]<2>(1600023)()
 [103][0,1]<3>()("全員更新")
 [121][4,0]<3>(1600010,1,0,256)()
-[300][4,1]<3>(0,16777217,1600010,1600011)("X[戦]ｽﾛｯﾄから主人公ID取得")
+[300][4,1]<3>(0,16777217,1600010,1600011)("X[Bat]Get Ally ID From Slot")
 [111][4,0]<3>(1,1600011,0,1)()
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("キャラがいる場合だけ処理")
-[300][3,1]<4>(0,1,1600010)("X[戦]一時ｽﾃ計算<初期化>")
-[300][4,1]<4>(0,2,1600010,-1)("X[戦]一時ｽﾃ計算<装備補正>")
-[300][4,1]<4>(0,2,1600010,0)("X[戦]一時ｽﾃ計算<状態補正>")
+[300][3,1]<4>(0,1,1600010)("X[Bat]CalcTempStats <Initialize>")
+[300][4,1]<4>(0,2,1600010,-1)("X[Bat]CalcTempStats <Equipments>")
+[300][4,1]<4>(0,2,1600010,0)("X[Bat]CalcTempStats <StatusEffects>")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [0][0,0]<3>()()
 [498][0,0]<2>()()
 [0][0,0]<2>()()
 [498][0,0]<1>()()
-[300][2,1]<1>(0,0)("X┣◆１ターンの処理を実行")
-[300][2,1]<1>(0,0)("X┣◆ターン終了処理")
-[300][2,1]<1>(0,0)("○[変更可]1ﾀｰﾝ終了時処理")
+[300][2,1]<1>(0,0)("X┣◆Execute 1-Turn Process")
+[300][2,1]<1>(0,0)("X┣◆Turn End Process")
+[300][2,1]<1>(0,0)("○[Editable] At Turn End")
 [103][0,1]<1>()(" ")
-[300][4,1]<1>(0,16777217,0,1600020)("X[戦]敵/味方・勝敗判定")
+[300][4,1]<1>(0,16777217,0,1600020)("X[Bat]Check Win/Lose")
 [111][4,0]<1>(1,1600020,0,5)()
 [401][1,0]<1>(1)()
 [171][0,0]<2>()()
@@ -313,13 +313,13 @@ WoditorEvCOMMAND_START
 [179][1,0]<2>(1600023)()
 [103][0,1]<3>()("全員更新")
 [121][4,0]<3>(1600010,1,0,256)()
-[300][4,1]<3>(0,16777217,1600010,1600011)("X[戦]ｽﾛｯﾄから主人公ID取得")
+[300][4,1]<3>(0,16777217,1600010,1600011)("X[Bat]Get Ally ID From Slot")
 [111][4,0]<3>(1,1600011,0,1)()
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("キャラがいる場合だけ処理")
-[300][3,1]<4>(0,1,1600010)("X[戦]一時ｽﾃ計算<初期化>")
-[300][4,1]<4>(0,2,1600010,-1)("X[戦]一時ｽﾃ計算<装備補正>")
-[300][4,1]<4>(0,2,1600010,0)("X[戦]一時ｽﾃ計算<状態補正>")
+[300][3,1]<4>(0,1,1600010)("X[Bat]CalcTempStats <Initialize>")
+[300][4,1]<4>(0,2,1600010,-1)("X[Bat]CalcTempStats <Equipments>")
+[300][4,1]<4>(0,2,1600010,0)("X[Bat]CalcTempStats <StatusEffects>")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [0][0,0]<3>()()
@@ -330,13 +330,13 @@ WoditorEvCOMMAND_START
 [179][1,0]<2>(1600023)()
 [103][0,1]<3>()("全員更新")
 [121][4,0]<3>(1600010,1,0,256)()
-[300][4,1]<3>(0,16777217,1600010,1600011)("X[戦]ｽﾛｯﾄから主人公ID取得")
+[300][4,1]<3>(0,16777217,1600010,1600011)("X[Bat]Get Ally ID From Slot")
 [111][4,0]<3>(1,1600011,0,1)()
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("キャラがいる場合だけ処理")
-[300][3,1]<4>(0,1,1600010)("X[戦]一時ｽﾃ計算<初期化>")
-[300][4,1]<4>(0,2,1600010,-1)("X[戦]一時ｽﾃ計算<装備補正>")
-[300][4,1]<4>(0,2,1600010,0)("X[戦]一時ｽﾃ計算<状態補正>")
+[300][3,1]<4>(0,1,1600010)("X[Bat]CalcTempStats <Initialize>")
+[300][4,1]<4>(0,2,1600010,-1)("X[Bat]CalcTempStats <Equipments>")
+[300][4,1]<4>(0,2,1600010,0)("X[Bat]CalcTempStats <StatusEffects>")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [0][0,0]<3>()()
@@ -344,7 +344,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<2>()()
 [498][0,0]<1>()()
 [103][0,1]<1>()("戦闘終了判定")
-[300][4,1]<1>(0,16777217,1,1600020)("X[戦]敵/味方・勝敗判定")
+[300][4,1]<1>(0,16777217,1,1600020)("X[Bat]Check Win/Lose")
 [111][4,0]<1>(1,1600020,0,5)()
 [401][1,0]<1>(1)()
 [171][0,0]<2>()()
@@ -355,13 +355,13 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [498][0,0]<0>()()
 [212][0,1]<0>()("戦闘終了処理")
-[300][2,1]<0>(0,0)("X┣◆主人公ＤＢ復元")
-[300][3,1]<0>(0,1,1600020)("X┣◆戦利品獲得処理")
-[300][2,1]<0>(0,0)("X┗◆戦闘終了処理")
+[300][2,1]<0>(0,0)("X┣◆Update Allies DB")
+[300][3,1]<0>(0,1,1600020)("X┣◆Rewards Getting Process")
+[300][2,1]<0>(0,0)("X┗◆Battle End Process")
 [103][0,1]<0>()("戦闘中フラグをオフに")
 [250][5,4]<0>(18,68,0,196608,0)("","Base System Variables","[Battle] In Battle?","")
 [103][0,1]<0>()("戦闘終了後処理")
-[300][2,1]<0>(0,0)("○[変更可]戦闘終了後処理")
+[300][2,1]<0>(0,0)("○[Editable] At Battle End")
 [103][0,1]<0>()("勝敗結果を格納して終了")
 [121][4,0]<0>(1600095,1600020,0,0)()
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
@@ -382,15 +382,15 @@ WoditorEvCOMMAND_START
 [179][1,0]<2>(1600023)()
 [103][0,1]<3>()("行動セット")
 [121][4,0]<3>(1600010,1,0,256)()
-[300][4,1]<3>(0,16777217,1600010,1600011)("X[戦]ｽﾛｯﾄから主人公ID取得")
+[300][4,1]<3>(0,16777217,1600010,1600011)("X[Bat]Get Ally ID From Slot")
 [111][4,0]<3>(1,1600011,-1,2)()
 [401][1,0]<3>(1)()
 [176][0,0]<4>()()
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [103][0,1]<3>()("キャラがいる場合は逃走エフェクト")
-[300][3,1]<3>(0,1,1600010)("X[戦]味方欄_座標算出")
-[300][5,1]<3>(0,3,50,1600010,1600011)("X[戦]味方欄_単体描画")
+[300][3,1]<3>(0,1,1600010)("X[Bat]Ally Box: Calc Position")
+[300][5,1]<3>(0,3,50,1600010,1600011)("X[Bat]Ally Box: Draw One")
 [180][1,0]<3>(3)()
 [0][0,0]<3>()()
 [498][0,0]<2>()()
@@ -403,7 +403,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<2>()("逃走失敗時")
 [250][5,4]<2>(14,0,30,332288,1600007)("","Terms","","[Battle] Flee Command")
 [122][2,1]<2>(1600007,256)("に失敗した！")
-[300][4,1]<2>(0,17,0,1600007)("X[戦]戦闘メッセージ表示")
+[300][4,1]<2>(0,17,0,1600007)("X[Bat]Display Battle Message")
 [213][0,1]<2>()("逃走戻り")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
@@ -446,7 +446,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　戦闘時のループ処理です。
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ 戦闘中フラグをオンに
@@ -484,13 +484,13 @@ WoditorEvCOMMAND_END
 ■Write to DB(Var): VarDB[ "Base System Variables":72:0 ] (18:[Battle] Enemy Group ID:Number) =  CSelf0[敵グループ番号]
 ■Set Variable: Sys59:Repeat Confirm Key? (1:ON) = 1 + 0 
 ■Set Variable: Sys60:Repeat Cancel Key? (1:ON) = 1 + 0 
-■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 53:戦闘開始
-■Call Event [Name]: ["X[共]全体エフェクト実行"] <CommonEv 67>  / 10:白フラッシュ / 30
-■Call Event [Name]: ["X┣◆戦闘初期化"] <CommonEv 189> 
-■Call Event [Name]: ["X┣◆戦闘キャラ配置"] <CommonEv 190>  / 1:有り（エフェクト付き表示）
-■Call Event [Name]: ["○[変更可]戦闘開始時処理"] <CommonEv 203> 
+■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 53:Battle Start Sound
+■Call Event [Name]: ["X[Com]Execute Full Effect"] <CommonEv 67>  / 10:White Flash / 30
+■Call Event [Name]: ["X┣◆Initialize Battle"] <CommonEv 189> 
+■Call Event [Name]: ["X┣◆Place Battle Character"] <CommonEv 190>  / 1:有り（エフェクト付き表示）
+■Call Event [Name]: ["○[Editable] At Battle Start"] <CommonEv 203> 
 ▼  
-■Call Event [Name]: CSelf20[終了判定] = ["X[戦]敵/味方・勝敗判定"] <CommonEv 172>  / 1:ターン経過の勝敗も判定
+■Call Event [Name]: CSelf20[終了判定] = ["X[Bat]Check Win/Lose"] <CommonEv 172>  / 1:ターン経過の勝敗も判定
 ■Condition (Number):   [1] CSelf20[終了判定] !=  0  
 -◇Condition:  [1]  [ CSelf20[終了判定] != 0   ] Case↓
  |●Label Jump [戦闘終了処理] >>>>>>>>>>>>>>>>>>>>>>>>>
@@ -499,26 +499,26 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf18[戦闘・逃走コマンド表示？] = 1 + 0 
 ■Loop Start
  |▼ 逃走不能（セルフ1＝1）なら、「戦闘・逃走コマンド」を出さない。
- |■Call Event [Name]: CSelf19[逃走？終了？] = ["X┣◆行動内容のセット"] <CommonEv 191>  / CSelf18[戦闘・逃走コマンド表示？] / CSelf1[逃走可能？]
+ |■Call Event [Name]: CSelf19[逃走？終了？] = ["X┣◆Set Action"] <CommonEv 191>  / CSelf18[戦闘・逃走コマンド表示？] / CSelf1[逃走可能？]
  |■Set Variable: CSelf18[戦闘・逃走コマンド表示？] = 0 + 0 
  |■Condition (Number):   [1] CSelf19[逃走？終了？] ==  1  /  [2] CSelf19[逃走？終了？] ==  10  
  |-◇Condition:  [1]  [ CSelf19[逃走？終了？] == 1   ] Case↓
  | |▼ 逃走処理の場合
  | |●Label Jump [逃走処理] >>>>>>>>>>>>>>>>>>>>>>>>>
  | |●Label Point [逃走戻り] <<<<<<<<<<<<<<<<<<<<<<<<★
- | |■Call Event [Name]: ["X┣◆行動内容のセット"] <CommonEv 191>  / -1:逃走失敗時
+ | |■Call Event [Name]: ["X┣◆Set Action"] <CommonEv 191>  / -1:逃走失敗時
  | |■Set Variable: CSelf18[戦闘・逃走コマンド表示？] = 1 + 0 
  | |■
  |-◇Condition:  [2]  [ CSelf19[逃走？終了？] == 10   ] Case↓
  | |▼ 戦闘終了の場合
- | |■Call Event [Name]: CSelf20[終了判定] = ["X[戦]敵/味方・勝敗判定"] <CommonEv 172>  / 1:ターン経過の勝敗も判定
+ | |■Call Event [Name]: CSelf20[終了判定] = ["X[Bat]Check Win/Lose"] <CommonEv 172>  / 1:ターン経過の勝敗も判定
  | |■Break Loop
  | |■
  |◇End◇
- |■Call Event [Name]: ["X┣◆行動順の計算"] <CommonEv 194> 
- |■Call Event [Name]: ["○[変更可]1ﾀｰﾝ開始時処理"] <CommonEv 204> 
+ |■Call Event [Name]: ["X┣◆Calculate Action Order"] <CommonEv 194> 
+ |■Call Event [Name]: ["○[Editable] At Turn Start"] <CommonEv 204> 
  |▼  
- |■Call Event [Name]: CSelf20[終了判定] = ["X[戦]敵/味方・勝敗判定"] <CommonEv 172>  / 0:勝敗判定
+ |■Call Event [Name]: CSelf20[終了判定] = ["X[Bat]Check Win/Lose"] <CommonEv 172>  / 0:勝敗判定
  |■Condition (Number):   [1] CSelf20[終了判定] !=  0  
  |-◇Condition:  [1]  [ CSelf20[終了判定] != 0   ] Case↓
  | |●Label Jump [戦闘終了処理] >>>>>>>>>>>>>>>>>>>>>>>>>
@@ -531,13 +531,13 @@ WoditorEvCOMMAND_END
  | |■Repeat Loop [ CSelf23[繰り返し回数] ] Times
  | | |▼ 全員更新
  | | |■Set Variable: CSelf10 += 1 + 0 
- | | |■Call Event [Name]: CSelf11 = ["X[戦]ｽﾛｯﾄから主人公ID取得"] <CommonEv 141>  / CSelf10
+ | | |■Call Event [Name]: CSelf11 = ["X[Bat]Get Ally ID From Slot"] <CommonEv 141>  / CSelf10
  | | |■Condition (Number):   [1] CSelf11 >=  0  
  | | |-◇Condition:  [1]  [ CSelf11 >= 0   ] Case↓
  | | | |▼ キャラがいる場合だけ処理
- | | | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<初期化>"] <CommonEv 146>  / CSelf10
- | | | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<装備補正>"] <CommonEv 147>  / CSelf10 / -1:全武器を総計
- | | | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<状態補正>"] <CommonEv 148>  / CSelf10 / 0:パラメータ補正＋状態名計算
+ | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf10
+ | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf10 / -1:全武器を総計
+ | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf10 / 0:パラメータ補正＋状態名計算
  | | | |■
  | | |◇End◇
  | | |■
@@ -548,24 +548,24 @@ WoditorEvCOMMAND_END
  | |■Repeat Loop [ CSelf23[繰り返し回数] ] Times
  | | |▼ 全員更新
  | | |■Set Variable: CSelf10 += 1 + 0 
- | | |■Call Event [Name]: CSelf11 = ["X[戦]ｽﾛｯﾄから主人公ID取得"] <CommonEv 141>  / CSelf10
+ | | |■Call Event [Name]: CSelf11 = ["X[Bat]Get Ally ID From Slot"] <CommonEv 141>  / CSelf10
  | | |■Condition (Number):   [1] CSelf11 >=  0  
  | | |-◇Condition:  [1]  [ CSelf11 >= 0   ] Case↓
  | | | |▼ キャラがいる場合だけ処理
- | | | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<初期化>"] <CommonEv 146>  / CSelf10
- | | | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<装備補正>"] <CommonEv 147>  / CSelf10 / -1:全武器を総計
- | | | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<状態補正>"] <CommonEv 148>  / CSelf10 / 0:パラメータ補正＋状態名計算
+ | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf10
+ | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf10 / -1:全武器を総計
+ | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf10 / 0:パラメータ補正＋状態名計算
  | | | |■
  | | |◇End◇
  | | |■
  | |◇Loop End Point◇◇
  | |■
  |◇Loop End Point◇◇
- |■Call Event [Name]: ["X┣◆１ターンの処理を実行"] <CommonEv 195> 
- |■Call Event [Name]: ["X┣◆ターン終了処理"] <CommonEv 198> 
- |■Call Event [Name]: ["○[変更可]1ﾀｰﾝ終了時処理"] <CommonEv 205> 
+ |■Call Event [Name]: ["X┣◆Execute 1-Turn Process"] <CommonEv 195> 
+ |■Call Event [Name]: ["X┣◆Turn End Process"] <CommonEv 198> 
+ |■Call Event [Name]: ["○[Editable] At Turn End"] <CommonEv 205> 
  |▼  
- |■Call Event [Name]: CSelf20[終了判定] = ["X[戦]敵/味方・勝敗判定"] <CommonEv 172>  / 0:勝敗判定
+ |■Call Event [Name]: CSelf20[終了判定] = ["X[Bat]Check Win/Lose"] <CommonEv 172>  / 0:勝敗判定
  |■Condition (Number):   [1] CSelf20[終了判定] !=  0  
  |-◇Condition:  [1]  [ CSelf20[終了判定] != 0   ] Case↓
  | |■Break Loop
@@ -578,13 +578,13 @@ WoditorEvCOMMAND_END
  | |■Repeat Loop [ CSelf23[繰り返し回数] ] Times
  | | |▼ 全員更新
  | | |■Set Variable: CSelf10 += 1 + 0 
- | | |■Call Event [Name]: CSelf11 = ["X[戦]ｽﾛｯﾄから主人公ID取得"] <CommonEv 141>  / CSelf10
+ | | |■Call Event [Name]: CSelf11 = ["X[Bat]Get Ally ID From Slot"] <CommonEv 141>  / CSelf10
  | | |■Condition (Number):   [1] CSelf11 >=  0  
  | | |-◇Condition:  [1]  [ CSelf11 >= 0   ] Case↓
  | | | |▼ キャラがいる場合だけ処理
- | | | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<初期化>"] <CommonEv 146>  / CSelf10
- | | | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<装備補正>"] <CommonEv 147>  / CSelf10 / -1:全武器を総計
- | | | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<状態補正>"] <CommonEv 148>  / CSelf10 / 0:パラメータ補正＋状態名計算
+ | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf10
+ | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf10 / -1:全武器を総計
+ | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf10 / 0:パラメータ補正＋状態名計算
  | | | |■
  | | |◇End◇
  | | |■
@@ -595,13 +595,13 @@ WoditorEvCOMMAND_END
  | |■Repeat Loop [ CSelf23[繰り返し回数] ] Times
  | | |▼ 全員更新
  | | |■Set Variable: CSelf10 += 1 + 0 
- | | |■Call Event [Name]: CSelf11 = ["X[戦]ｽﾛｯﾄから主人公ID取得"] <CommonEv 141>  / CSelf10
+ | | |■Call Event [Name]: CSelf11 = ["X[Bat]Get Ally ID From Slot"] <CommonEv 141>  / CSelf10
  | | |■Condition (Number):   [1] CSelf11 >=  0  
  | | |-◇Condition:  [1]  [ CSelf11 >= 0   ] Case↓
  | | | |▼ キャラがいる場合だけ処理
- | | | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<初期化>"] <CommonEv 146>  / CSelf10
- | | | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<装備補正>"] <CommonEv 147>  / CSelf10 / -1:全武器を総計
- | | | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<状態補正>"] <CommonEv 148>  / CSelf10 / 0:パラメータ補正＋状態名計算
+ | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf10
+ | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf10 / -1:全武器を総計
+ | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf10 / 0:パラメータ補正＋状態名計算
  | | | |■
  | | |◇End◇
  | | |■
@@ -609,7 +609,7 @@ WoditorEvCOMMAND_END
  | |■
  |◇Loop End Point◇◇
  |▼ 戦闘終了判定
- |■Call Event [Name]: CSelf20[終了判定] = ["X[戦]敵/味方・勝敗判定"] <CommonEv 172>  / 1:ターン経過の勝敗も判定
+ |■Call Event [Name]: CSelf20[終了判定] = ["X[Bat]Check Win/Lose"] <CommonEv 172>  / 1:ターン経過の勝敗も判定
  |■Condition (Number):   [1] CSelf20[終了判定] !=  0  
  |-◇Condition:  [1]  [ CSelf20[終了判定] != 0   ] Case↓
  | |■Break Loop
@@ -620,13 +620,13 @@ WoditorEvCOMMAND_END
  |■
 ◇Loop End Point◇◇
 ●Label Point [戦闘終了処理] <<<<<<<<<<<<<<<<<<<<<<<<★
-■Call Event [Name]: ["X┣◆主人公ＤＢ復元"] <CommonEv 199> 
-■Call Event [Name]: ["X┣◆戦利品獲得処理"] <CommonEv 200>  / CSelf20[終了判定]
-■Call Event [Name]: ["X┗◆戦闘終了処理"] <CommonEv 201> 
+■Call Event [Name]: ["X┣◆Update Allies DB"] <CommonEv 199> 
+■Call Event [Name]: ["X┣◆Rewards Getting Process"] <CommonEv 200>  / CSelf20[終了判定]
+■Call Event [Name]: ["X┗◆Battle End Process"] <CommonEv 201> 
 ▼ 戦闘中フラグをオフに
 ■Write to DB(Var): VarDB[ "Base System Variables":"[Battle] In Battle?":0 ] (18:68:Number) =  0
 ▼ 戦闘終了後処理
-■Call Event [Name]: ["○[変更可]戦闘終了後処理"] <CommonEv 206> 
+■Call Event [Name]: ["○[Editable] At Battle End"] <CommonEv 206> 
 ▼ 勝敗結果を格納して終了
 ■Set Variable: CSelf95[勝敗結果] = CSelf20[終了判定] + 0 
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -647,15 +647,15 @@ WoditorEvCOMMAND_END
  | |■Repeat Loop [ CSelf23[繰り返し回数] ] Times
  | | |▼ 行動セット
  | | |■Set Variable: CSelf10 += 1 + 0 
- | | |■Call Event [Name]: CSelf11 = ["X[戦]ｽﾛｯﾄから主人公ID取得"] <CommonEv 141>  / CSelf10
+ | | |■Call Event [Name]: CSelf11 = ["X[Bat]Get Ally ID From Slot"] <CommonEv 141>  / CSelf10
  | | |■Condition (Number):   [1] CSelf11 ==  -1  
  | | |-◇Condition:  [1]  [ CSelf11 == -1   ] Case↓
  | | | |■Loop Start: Go to Loop Start
  | | | |■
  | | |◇End◇
  | | |▼ キャラがいる場合は逃走エフェクト
- | | |■Call Event [Name]: ["X[戦]味方欄_座標算出"] <CommonEv 174>  / CSelf10
- | | |■Call Event [Name]: ["X[戦]味方欄_単体描画"] <CommonEv 178>  / 50:逃走エフェクト / CSelf10 / CSelf11
+ | | |■Call Event [Name]: ["X[Bat]Ally Box: Calc Position"] <CommonEv 174>  / CSelf10
+ | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 50:逃走エフェクト / CSelf10 / CSelf11
  | | |■Wait: 3 Frames
  | | |■
  | |◇Loop End Point◇◇
@@ -668,7 +668,7 @@ WoditorEvCOMMAND_END
  | |▼ 逃走失敗時
  | |■Load DB(User):  CSelf7[逃走メッセージ] = UserDB[ "Terms":0:"[Battle] Flee Command" ] (15:Basic Terms:31) 
  | |■Set String: CSelf7[逃走メッセージ] += "に失敗した！"
- | |■Call Event [Name]: ["X[戦]戦闘メッセージ表示"] <CommonEv 182>  / 0:表示→自動削除 / CSelf7[逃走メッセージ]
+ | |■Call Event [Name]: ["X[Bat]Display Battle Message"] <CommonEv 182>  / 0:表示→自動削除 / CSelf7[逃走メッセージ]
  | |●Label Jump [逃走戻り] >>>>>>>>>>>>>>>>>>>>>>>>>
  | |■
  |◇End◇

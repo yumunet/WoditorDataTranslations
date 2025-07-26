@@ -1,10 +1,10 @@
 COMMON_ID=214
-COMMON_NAME=WOLF RPGエディター使用Ev
+COMMON_NAME=WOLF RPG Editor Event
 COMMAND_COLOR=0
 TRIGGER=32
 TRIGGER_TARGET=2000000
 TRIGGER_VAL=0
-MEMO=アイテムとしてWOLF ＲＰＧエディターを使ったときに呼び出されるイベント
+MEMO=The event called when the WOLF RPG Editor item is used.
 VALINPUT_NUM=0
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
@@ -31,10 +31,7 @@ LOADTYPE7=0
 LOADTYPE8=0
 LOADTYPE9=0
 CHOICE_STR_NUM=10
-CHOICE_STR_0_NUM=3
-CHOICE_STR_0_0=初期位置に戻して表示
-CHOICE_STR_0_1=位置は前回のまま表示
-CHOICE_STR_0_2=アイテム欄消去
+CHOICE_STR_0_NUM=0
 CHOICE_STR_1_NUM=0
 CHOICE_STR_2_NUM=0
 CHOICE_STR_3_NUM=0
@@ -45,10 +42,7 @@ CHOICE_STR_7_NUM=0
 CHOICE_STR_8_NUM=0
 CHOICE_STR_9_NUM=0
 CHOICE_VAL_NUM=10
-CHOICE_VAL_0_NUM=3
-CHOICE_VAL_0_0=0
-CHOICE_VAL_0_1=1
-CHOICE_VAL_0_2=-1
+CHOICE_VAL_0_NUM=0
 CHOICE_VAL_1_NUM=0
 CHOICE_VAL_2_NUM=0
 CHOICE_VAL_3_NUM=0
@@ -169,17 +163,17 @@ CSELF_NAME_99=
 COMMAND_NUM=5
 --
 WoditorEvCOMMAND_START
-[101][0,1]<0>()("3人は「WOLF RPGエディター」を見た！")
-[101][0,1]<0>()("ウルファールは\r[甘,あま]\r[酸,ず]っぱい思い出を<\n>はんすうしている！")
-[101][0,1]<0>()("P･G･エディは、なぜかいやらしい顔をしている！")
-[101][0,1]<0>()("そして夕一は今日の<\n>晩ゴハンのことしか考えていなかった！")
+[101][0,1]<0>()("The three saw WOLF RPG Editor!")
+[101][0,1]<0>()("@4<\n>Wolfarl is reminiscing about bittersweet<\n>memories!")
+[101][0,1]<0>()("@2<\n>P. G. Edy is making a dirty grin for<\n>some reason!")
+[101][0,1]<0>()("@3<\n>And Yuichi was thinking about nothing...<\n>...except tonight's dinner!")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:3人は「WOLF RPGエディター」を見た！
-■Show Message:ウルファールは\r[甘,あま]\r[酸,ず]っぱい思い出を\nはんすうしている！
-■Show Message:P･G･エディは、なぜかいやらしい顔をしている！
-■Show Message:そして夕一は今日の\n晩ゴハンのことしか考えていなかった！
+■Show Message:The three saw WOLF RPG Editor!
+■Show Message:@4\nWolfarl is reminiscing about bittersweet\nmemories!
+■Show Message:@2\nP. G. Edy is making a dirty grin for\nsome reason!
+■Show Message:@3\nAnd Yuichi was thinking about nothing...\n...except tonight's dinner!
 ■
 [COMMAND_TEXT_END]

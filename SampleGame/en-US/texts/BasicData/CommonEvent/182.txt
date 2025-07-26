@@ -1,5 +1,5 @@
 COMMON_ID=182
-COMMON_NAME=X[戦]戦闘メッセージ表示
+COMMON_NAME=X[Bat]Display Battle Message
 COMMAND_COLOR=5
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -170,14 +170,14 @@ COMMAND_NUM=113
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　戦闘時用の文章表示処理です。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [121][4,0]<0>(1600020,17000,0,0)()
 [121][4,0]<0>(1600020,1,1600099,8448)()
@@ -267,7 +267,7 @@ WoditorEvCOMMAND_START
 [150][14,0]<4>(4198145,1600021,5,0,0,-1000000,255,1600035,1600036,-1000000,-1000000,0,16777216,1600016)()
 [0][0,0]<4>()()
 [499][0,0]<3>()()
-[300][3,1]<3>(0,1,40)("X[共]ウェイト2(キー押しで加速)")
+[300][3,1]<3>(0,1,40)("X[Com]Wait 2(PressKeyToSpdUp)")
 [103][0,1]<3>()("消えていく処理")
 [121][4,0]<3>(1600036,1600024,0,256)()
 [150][14,0]<3>(4198145,1600021,4,0,0,-1000000,0,1600035,1600036,-1000000,-1000000,0,16777216,1600017)()
@@ -286,14 +286,14 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　戦闘時用の文章表示処理です。
 ▼ 
-▼ 【このコモンイベント内で操作しているデータベース】
+▼ [Databases Accessed by This Common Event]
 ▼  
-▼ 【ここから呼び出している別コモンイベント】
+▼ [Other Common Events Called from Here]
 ▼  
-▼ 【どのコモンイベントから主に呼び出されているか】
+▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Set Variable: CSelf20[基本ピクチャ番号] = 17000 + 0 
 ■Set Variable: CSelf20[基本ピクチャ番号] += 1 * CSelf99[表示回数（20回ループ）] 
@@ -383,7 +383,7 @@ WoditorEvCOMMAND_END
  | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf35[ジャンプ先X] Y:CSelf36[ジャンプ先Y] / 5(CSelf16[ディレイフレーム１])Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
  | | | |■
  | | |◇End◇
- | | |■Call Event [Name]: ["X[共]ウェイト2(キー押しで加速)"] <CommonEv 60>  / 40
+ | | |■Call Event [Name]: ["X[Com]Wait 2(PressKeyToSpdUp)"] <CommonEv 60>  / 40
  | | |▼ 消えていく処理
  | | |■Set Variable: CSelf36[ジャンプ先Y] += CSelf24[表示シフト量] + 0 
  | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf35[ジャンプ先X] Y:CSelf36[ジャンプ先Y] / 4(CSelf17[ディレイフレーム２])Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same

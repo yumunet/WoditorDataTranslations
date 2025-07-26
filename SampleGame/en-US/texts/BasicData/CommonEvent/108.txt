@@ -1,5 +1,5 @@
 COMMON_ID=108
-COMMON_NAME=X[移]ｷｬﾗｸﾀｰ欄_選択実行
+COMMON_NAME=X[Map]Select Character Box
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -168,17 +168,17 @@ COMMAND_NUM=118
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　キャラクターがすでに表示されている前提で、選択処理を行います。")
 [103][0,1]<0>()("　キャラクター欄を選択する際のキー入力処理を実行します。")
 [103][0,1]<0>()("")
 [103][0,1]<0>()("　入力「全員選択可能」「次の状態異常者だけ選択できない」")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [250][5,4]<0>(18,4,0,69632,1600011)("","Base System Variables","","")
 [250][5,4]<0>(18,4,0,69632,1600013)("","Base System Variables","","")
@@ -190,8 +190,8 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600010,0,0,1536)()
 [121][4,0]<0>(1600010,1600011,1,5888)()
 [170][0,0]<0>()()
-[300][5,1]<1>(0,3,2,-1,0)("X[移]キャラクター欄描画")
-[300][5,1]<1>(0,3,1,1600010,0)("X[移]キャラクター欄描画")
+[300][5,1]<1>(0,3,2,-1,0)("X[Map]Draw Character Box")
+[300][5,1]<1>(0,3,1,1600010,0)("X[Map]Draw Character Box")
 [180][1,0]<1>(1)()
 [123][2,0]<1>(1600020,177)()
 [111][10,0]<1>(19,1600020,10,2,1600020,11,2,1600020,2,2)()
@@ -199,7 +199,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<2>()("決定キー")
 [111][4,0]<2>(1,1600001,0,2)()
 [401][1,0]<2>(1)()
-[300][3,1]<3>(0,1,0)("X[共]システムSE再生")
+[300][3,1]<3>(0,1,0)("X[Com]Play System Sound")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [250][5,4]<2>(18,2,0,65536,1600010)("","Base System Variables","","")
@@ -207,14 +207,14 @@ WoditorEvCOMMAND_START
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
 [103][0,1]<2>()("キャンセルキー")
-[300][3,1]<2>(0,1,1)("X[共]システムSE再生")
+[300][3,1]<2>(0,1,1)("X[Com]Play System Sound")
 [121][4,0]<2>(1600010,-1,0,0)()
 [250][5,4]<2>(18,2,0,65536,1600010)("","Base System Variables","","")
 [171][0,0]<2>()()
 [0][0,0]<2>()()
 [401][1,0]<1>(3)()
 [103][0,1]<2>()("下キー")
-[300][3,1]<2>(0,1,5)("X[共]システムSE再生")
+[300][3,1]<2>(0,1,5)("X[Com]Play System Sound")
 [121][4,0]<2>(1600010,2,1600013,256)()
 [121][4,0]<2>(1600010,1600013,0,1280)()
 [111][4,0]<2>(1,1600010,1600011,1)()
@@ -227,7 +227,7 @@ WoditorEvCOMMAND_START
 [111][10,0]<2>(3,1600020,8,2,1600020,4,2,1600020,6,2)()
 [401][1,0]<2>(1)()
 [103][0,1]<3>()("上キー")
-[300][3,1]<3>(0,1,5)("X[共]システムSE再生")
+[300][3,1]<3>(0,1,5)("X[Com]Play System Sound")
 [121][4,0]<3>(1600010,-2,1600013,256)()
 [121][4,0]<3>(1600010,1600013,0,1280)()
 [111][4,0]<3>(1,1600010,1600011,1)()
@@ -238,7 +238,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
 [103][0,1]<3>()("左キー")
-[300][3,1]<3>(0,1,5)("X[共]システムSE再生")
+[300][3,1]<3>(0,1,5)("X[Com]Play System Sound")
 [121][4,0]<3>(1600012,1600010,2,16384)()
 [111][7,0]<3>(2,1600012,1,2,1600012,0,2)()
 [401][1,0]<3>(1)()
@@ -259,7 +259,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<3>()()
 [401][1,0]<2>(3)()
 [103][0,1]<3>()("右キー")
-[300][3,1]<3>(0,1,5)("X[共]システムSE再生")
+[300][3,1]<3>(0,1,5)("X[Com]Play System Sound")
 [121][4,0]<3>(1600012,1600010,2,16384)()
 [111][7,0]<3>(2,1600012,1,2,1600012,0,2)()
 [401][1,0]<3>(1)()
@@ -289,17 +289,17 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　キャラクターがすでに表示されている前提で、選択処理を行います。
 ▼ 　キャラクター欄を選択する際のキー入力処理を実行します。
 ▼ 
 ▼ 　入力「全員選択可能」「次の状態異常者だけ選択できない」
 ▼ 
-▼ 【このコモンイベント内で操作しているデータベース】
+▼ [Databases Accessed by This Common Event]
 ▼  
-▼ 【ここから呼び出している別コモンイベント】
+▼ [Other Common Events Called from Here]
 ▼  
-▼ 【どのコモンイベントから主に呼び出されているか】
+▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Load DB(Var):  CSelf11[選択可能最大値] = VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) 
 ■Load DB(Var):  CSelf13[選択可能選択数（2ごと）] = VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) 
@@ -311,8 +311,8 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf10[選択箇所] Lower Bound= 0 + 0 
 ■Set Variable: CSelf10[選択箇所] Upper Bound= CSelf11[選択可能最大値] - 1 
 ■Loop Start
- |■Call Event [Name]: ["X[移]キャラクター欄描画"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0
- |■Call Event [Name]: ["X[移]キャラクター欄描画"] <CommonEv 90>  / 1:カーソルON（対象位置　位置-1なら全部） / CSelf10[選択箇所] / 0
+ |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0
+ |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 1:カーソルON（対象位置　位置-1なら全部） / CSelf10[選択箇所] / 0
  |■Wait: 1 Frames
  |■Key Input: CSelf20[キー入力１] [Wait For Input <!>]  4-Dir. Confirm(10) Cancel(11)
  |■Condition (Number):   [1] CSelf20[キー入力１] ==  10  /  [2] CSelf20[キー入力１] ==  11  /  [3] CSelf20[キー入力１] ==  2  
@@ -320,7 +320,7 @@ WoditorEvCOMMAND_END
  | |▼ 決定キー
  | |■Condition (Number):   [1] CSelf1[オプション] ==  0  
  | |-◇Condition:  [1]  [ CSelf1[オプション] == 0   ] Case↓
- | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 0:決定音
+ | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
  | | |■
  | |◇End◇
  | |■Write to DB(Var): VarDB[ "Base System Variables":2:0 ] (18:Selected ID:Number) =  CSelf10[選択箇所]
@@ -328,14 +328,14 @@ WoditorEvCOMMAND_END
  | |■
  |-◇Condition:  [2]  [ CSelf20[キー入力１] == 11   ] Case↓
  | |▼ キャンセルキー
- | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 1:キャンセル音
+ | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 1:Cancel Sound
  | |■Set Variable: CSelf10[選択箇所] = -1 + 0 
  | |■Write to DB(Var): VarDB[ "Base System Variables":2:0 ] (18:Selected ID:Number) =  CSelf10[選択箇所]
  | |■Break Loop
  | |■
  |-◇Condition:  [3]  [ CSelf20[キー入力１] == 2   ] Case↓
  | |▼ 下キー
- | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 5:カーソル移動音
+ | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
  | |■Set Variable: CSelf10[選択箇所] += 2 + CSelf13[選択可能選択数（2ごと）] 
  | |■Set Variable: CSelf10[選択箇所] %= CSelf13[選択可能選択数（2ごと）] + 0 
  | |■Condition (Number):   [1] CSelf10[選択箇所] >=  CSelf11[選択可能最大値]  
@@ -348,7 +348,7 @@ WoditorEvCOMMAND_END
  | |■Condition (Number):   [1] CSelf20[キー入力１] ==  8  /  [2] CSelf20[キー入力１] ==  4  /  [3] CSelf20[キー入力１] ==  6  
  | |-◇Condition:  [1]  [ CSelf20[キー入力１] == 8   ] Case↓
  | | |▼ 上キー
- | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 5:カーソル移動音
+ | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
  | | |■Set Variable: CSelf10[選択箇所] += -2 + CSelf13[選択可能選択数（2ごと）] 
  | | |■Set Variable: CSelf10[選択箇所] %= CSelf13[選択可能選択数（2ごと）] + 0 
  | | |■Condition (Number):   [1] CSelf10[選択箇所] >=  CSelf11[選択可能最大値]  
@@ -359,7 +359,7 @@ WoditorEvCOMMAND_END
  | | |■
  | |-◇Condition:  [2]  [ CSelf20[キー入力１] == 4   ] Case↓
  | | |▼ 左キー
- | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 5:カーソル移動音
+ | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
  | | |■Set Variable: CSelf12[一時変数A] = CSelf10[選択箇所] % 2 
  | | |■Condition (Number):   [1] CSelf12[一時変数A] ==  1  /  [2] CSelf12[一時変数A] ==  0  
  | | |-◇Condition:  [1]  [ CSelf12[一時変数A] == 1   ] Case↓
@@ -380,7 +380,7 @@ WoditorEvCOMMAND_END
  | | |■
  | |-◇Condition:  [3]  [ CSelf20[キー入力１] == 6   ] Case↓
  | | |▼ 右キー
- | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 5:カーソル移動音
+ | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
  | | |■Set Variable: CSelf12[一時変数A] = CSelf10[選択箇所] % 2 
  | | |■Condition (Number):   [1] CSelf12[一時変数A] ==  1  /  [2] CSelf12[一時変数A] ==  0  
  | | |-◇Condition:  [1]  [ CSelf12[一時変数A] == 1   ] Case↓

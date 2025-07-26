@@ -216,7 +216,7 @@ WoditorEvCOMMAND_END
  |■
 -◇Case: Choice [2] <C>Continue                              ↓
  |▼ You can load by calling Common 14.
- |■Call Event: Common 14: [ ○各種メニュー呼出 ] / -1:ロード画面
+ |■Call Event: Common 14: [ ○ Open Menus ] / -1:Load Menu
  |■
 -◇Case: Choice [3] <C>Quit                                  ↓
  |▼ End the game.

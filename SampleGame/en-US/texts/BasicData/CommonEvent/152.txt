@@ -1,5 +1,5 @@
 COMMON_ID=152
-COMMON_NAME=X[戦]戦闘ｺﾏﾝﾄﾞ一覧算出
+COMMON_NAME=X[Bat]Create Battle Cmd List
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -164,7 +164,7 @@ COMMAND_NUM=110
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　使用できる戦闘コマンドを計算し、名前一覧と選択可能状態を")
 [103][0,1]<0>()("　可変DB「万能ウィンドウ一時DB」に格納します。")
 [103][0,1]<0>()("")
@@ -176,7 +176,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600030,-1,0,0)()
 [179][1,0]<0>(8)()
 [121][4,0]<1>(1600030,1,0,256)()
-[300][5,1]<1>(0,16777218,1600000,1600030,1600019)("X[戦]戦闘コマンド取得")
+[300][5,1]<1>(0,16777218,1600000,1600030,1600019)("X[Bat]Get Battle Command")
 [111][4,0]<1>(1,1600019,0,1)()
 [401][1,0]<1>(1)()
 [103][0,1]<2>()("コマンドがあれば万能ウィンドウに登録")
@@ -277,7 +277,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　使用できる戦闘コマンドを計算し、名前一覧と選択可能状態を
 ▼ 　可変DB「万能ウィンドウ一時DB」に格納します。
 ▼ 
@@ -289,7 +289,7 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf30[処理対象] = -1 + 0 
 ■Repeat Loop [ 8 ] Times
  |■Set Variable: CSelf30[処理対象] += 1 + 0 
- |■Call Event [Name]: CSelf19[コマンド番号] = ["X[戦]戦闘コマンド取得"] <CommonEv 150>  / CSelf0[対象戦闘ｽﾛｯﾄ] / CSelf30[処理対象]
+ |■Call Event [Name]: CSelf19[コマンド番号] = ["X[Bat]Get Battle Command"] <CommonEv 150>  / CSelf0[対象戦闘ｽﾛｯﾄ] / CSelf30[処理対象]
  |■Condition (Number):   [1] CSelf19[コマンド番号] >=  0  
  |-◇Condition:  [1]  [ CSelf19[コマンド番号] >= 0   ] Case↓
  | |▼ コマンドがあれば万能ウィンドウに登録

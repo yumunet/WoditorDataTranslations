@@ -1,5 +1,5 @@
 COMMON_ID=190
-COMMON_NAME=X┣◆戦闘キャラ配置
+COMMON_NAME=X┣◆Place Battle Character
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -168,33 +168,33 @@ COMMAND_NUM=83
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　敵・味方のキャラクターを戦闘シーンに配置します。")
 [103][0,1]<0>()("　戦闘中に仲間が増えて、画面を再表示したい場合にも使用できます。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("味方のデータを戦闘DBにコピー")
 [250][5,4]<0>(20,4,0,69632,1600020)("","Base System Variables","","")
 [121][4,0]<0>(1600010,-1,0,0)()
 [179][1,0]<0>(1600020)()
 [121][4,0]<1>(1600010,1,0,256)()
-[300][4,1]<1>(0,16777217,1600010,1600011)("X[移]選択位置主人公ID取得")
-[300][5,1]<1>(0,3,1600010,1600011,0)("X[戦]主人公DB→戦闘DBコピー")
-[300][3,1]<1>(0,1,1600010)("X[戦]一時ｽﾃ計算<初期化>")
-[300][4,1]<1>(0,2,1600010,-1)("X[戦]一時ｽﾃ計算<装備補正>")
-[300][3,1]<1>(0,1,1600010)("X[戦]一時ｽﾃ計算<状態補正>")
-[300][3,1]<1>(0,1,1600010)("X[戦]味方欄_座標算出")
+[300][4,1]<1>(0,16777217,1600010,1600011)("X[Map]Get Ally ID")
+[300][5,1]<1>(0,3,1600010,1600011,0)("X[Bat]Copy Allies DB to Battle DB")
+[300][3,1]<1>(0,1,1600010)("X[Bat]CalcTempStats <Initialize>")
+[300][4,1]<1>(0,2,1600010,-1)("X[Bat]CalcTempStats <Equipments>")
+[300][3,1]<1>(0,1,1600010)("X[Bat]CalcTempStats <StatusEffects>")
+[300][3,1]<1>(0,1,1600010)("X[Bat]Ally Box: Calc Position")
 [111][7,0]<1>(2,1600000,0,2,1600000,1,2)()
 [401][1,0]<1>(1)()
-[300][5,1]<2>(0,3,3,1600010,1600010)("X[戦]味方欄_単体描画")
+[300][5,1]<2>(0,3,3,1600010,1600010)("X[Bat]Ally Box: Draw One")
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[300][5,1]<2>(0,3,0,1600010,1600010)("X[戦]味方欄_単体描画")
+[300][5,1]<2>(0,3,0,1600010,1600010)("X[Bat]Ally Box: Draw One")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [180][1,0]<1>(2)()
@@ -235,15 +235,15 @@ WoditorEvCOMMAND_START
 [250][5,4]<2>(13,1600021,6,332288,1600022)("","Enemy Groups","","Enemy 7 (◇◇◇◇◇◇◆)")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
-[300][5,1]<1>(0,3,1600011,1600022,0)("X[戦]敵DB→戦闘DBコピー")
-[300][3,1]<1>(0,1,1600011)("X[戦]一時ｽﾃ計算<初期化>")
-[300][3,1]<1>(0,1,1600011)("X[戦]敵キャラ_座標算出")
+[300][5,1]<1>(0,3,1600011,1600022,0)("X[Bat]Copy Enemies DB to Battle DB")
+[300][3,1]<1>(0,1,1600011)("X[Bat]CalcTempStats <Initialize>")
+[300][3,1]<1>(0,1,1600011)("X[Bat]Enemy: Calc Position")
 [111][7,0]<1>(2,1600000,0,2,1600000,1,2)()
 [401][1,0]<1>(1)()
-[300][4,1]<2>(0,2,1,1600011)("X[戦]敵キャラ_単体描画")
+[300][4,1]<2>(0,2,1,1600011)("X[Bat]Enemy: Draw One")
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[300][4,1]<2>(0,2,0,1600011)("X[戦]敵キャラ_単体描画")
+[300][4,1]<2>(0,2,0,1600011)("X[Bat]Enemy: Draw One")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [180][1,0]<1>(2)()
@@ -254,33 +254,33 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　敵・味方のキャラクターを戦闘シーンに配置します。
 ▼ 　戦闘中に仲間が増えて、画面を再表示したい場合にも使用できます。
 ▼ 
-▼ 【このコモンイベント内で操作しているデータベース】
+▼ [Databases Accessed by This Common Event]
 ▼  
-▼ 【ここから呼び出している別コモンイベント】
+▼ [Other Common Events Called from Here]
 ▼  
-▼ 【どのコモンイベントから主に呼び出されているか】
+▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ 味方のデータを戦闘DBにコピー
 ■Load DB(Var):  CSelf20[繰り返し回数] = VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) 
 ■Set Variable: CSelf10[一時変数A] = -1 + 0 
 ■Repeat Loop [ CSelf20[繰り返し回数] ] Times
  |■Set Variable: CSelf10[一時変数A] += 1 + 0 
- |■Call Event [Name]: CSelf11[一時変数B] = ["X[移]選択位置主人公ID取得"] <CommonEv 105>  / CSelf10[一時変数A]
- |■Call Event [Name]: ["X[戦]主人公DB→戦闘DBコピー"] <CommonEv 143>  / CSelf10[一時変数A] / CSelf11[一時変数B] / 0:全て移動DBからコピー
- |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<初期化>"] <CommonEv 146>  / CSelf10[一時変数A]
- |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<装備補正>"] <CommonEv 147>  / CSelf10[一時変数A] / -1:全武器を総計
- |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<状態補正>"] <CommonEv 148>  / CSelf10[一時変数A]
- |■Call Event [Name]: ["X[戦]味方欄_座標算出"] <CommonEv 174>  / CSelf10[一時変数A]
+ |■Call Event [Name]: CSelf11[一時変数B] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf10[一時変数A]
+ |■Call Event [Name]: ["X[Bat]Copy Allies DB to Battle DB"] <CommonEv 143>  / CSelf10[一時変数A] / CSelf11[一時変数B] / 0:全て移動DBからコピー
+ |■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf10[一時変数A]
+ |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf10[一時変数A] / -1:全武器を総計
+ |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf10[一時変数A]
+ |■Call Event [Name]: ["X[Bat]Ally Box: Calc Position"] <CommonEv 174>  / CSelf10[一時変数A]
  |■Condition (Number):   [1] CSelf0[エフェクト有り？] ==  0  /  [2] CSelf0[エフェクト有り？] ==  1  
  |-◇Condition:  [1]  [ CSelf0[エフェクト有り？] == 0   ] Case↓
- | |■Call Event [Name]: ["X[戦]味方欄_単体描画"] <CommonEv 178>  / 3:表示[瞬間表示] / CSelf10[一時変数A] / CSelf10[一時変数A]
+ | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 3:表示[瞬間表示] / CSelf10[一時変数A] / CSelf10[一時変数A]
  | |■
  |-◇Condition:  [2]  [ CSelf0[エフェクト有り？] == 1   ] Case↓
- | |■Call Event [Name]: ["X[戦]味方欄_単体描画"] <CommonEv 178>  / 0:表示 / CSelf10[一時変数A] / CSelf10[一時変数A]
+ | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 0:表示 / CSelf10[一時変数A] / CSelf10[一時変数A]
  | |■
  |◇End◇
  |■Wait: 2 Frames
@@ -321,15 +321,15 @@ WoditorEvCOMMAND_END
  | |■Load DB(User):  CSelf22[敵ID] = UserDB[ "Enemy Groups":CSelf21[敵グループ番号]:"Enemy 7 (◇◇◇◇◇◇◆)" ] (13:-:6) 
  | |■
  |◇End◇
- |■Call Event [Name]: ["X[戦]敵DB→戦闘DBコピー"] <CommonEv 144>  / CSelf11[一時変数B] / CSelf22[敵ID] / 0:全てのデータコピー+状態初期化
- |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<初期化>"] <CommonEv 146>  / CSelf11[一時変数B]
- |■Call Event [Name]: ["X[戦]敵キャラ_座標算出"] <CommonEv 175>  / CSelf11[一時変数B]
+ |■Call Event [Name]: ["X[Bat]Copy Enemies DB to Battle DB"] <CommonEv 144>  / CSelf11[一時変数B] / CSelf22[敵ID] / 0:全てのデータコピー+状態初期化
+ |■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf11[一時変数B]
+ |■Call Event [Name]: ["X[Bat]Enemy: Calc Position"] <CommonEv 175>  / CSelf11[一時変数B]
  |■Condition (Number):   [1] CSelf0[エフェクト有り？] ==  0  /  [2] CSelf0[エフェクト有り？] ==  1  
  |-◇Condition:  [1]  [ CSelf0[エフェクト有り？] == 0   ] Case↓
- | |■Call Event [Name]: ["X[戦]敵キャラ_単体描画"] <CommonEv 179>  / 1:更新[瞬間表示] / CSelf11[一時変数B]
+ | |■Call Event [Name]: ["X[Bat]Enemy: Draw One"] <CommonEv 179>  / 1:更新[瞬間表示] / CSelf11[一時変数B]
  | |■
  |-◇Condition:  [2]  [ CSelf0[エフェクト有り？] == 1   ] Case↓
- | |■Call Event [Name]: ["X[戦]敵キャラ_単体描画"] <CommonEv 179>  / 0:表示[アニメスライド] / CSelf11[一時変数B]
+ | |■Call Event [Name]: ["X[Bat]Enemy: Draw One"] <CommonEv 179>  / 0:表示[アニメスライド] / CSelf11[一時変数B]
  | |■
  |◇End◇
  |■Wait: 2 Frames

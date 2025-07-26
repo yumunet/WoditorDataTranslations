@@ -1,10 +1,10 @@
 COMMON_ID=20
-COMMON_NAME=▲所持金取得
+COMMON_NAME=▲Get Current Money
 COMMAND_COLOR=0
 TRIGGER=32
 TRIGGER_TARGET=2000000
 TRIGGER_VAL=0
-MEMO=所持金を返します。
+MEMO=Returns the current amount of money.
 VALINPUT_NUM=0
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
@@ -61,9 +61,9 @@ DEFAULT_VAL_1=0
 DEFAULT_VAL_2=0
 DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
-RETURN_VAL_NAME=所持金
+RETURN_VAL_NAME=Money
 RETURN_VAL_TARGET=10
-CSELF_NAME_0=防具
+CSELF_NAME_0=
 CSELF_NAME_1=
 CSELF_NAME_2=
 CSELF_NAME_3=
@@ -73,7 +73,7 @@ CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=
-CSELF_NAME_10=所持金
+CSELF_NAME_10=Money
 CSELF_NAME_11=
 CSELF_NAME_12=
 CSELF_NAME_13=
@@ -166,13 +166,13 @@ CSELF_NAME_99=
 COMMAND_NUM=3
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("所持金を得る（コモンセルフ10番に入れた値を返す）")
-[300][3,1]<0>(0,16777216,1600010)("X[共]所持金取得")
+[103][0,1]<0>()("Get current money (returns the value entered in Common Self 10).")
+[300][3,1]<0>(0,16777216,1600010)("X[Com]Get Current Money")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ 所持金を得る（コモンセルフ10番に入れた値を返す）
-■Call Event [Name]: CSelf10[所持金] = ["X[共]所持金取得"] <CommonEv 57> 
+▼ Get current money (returns the value entered in Common Self 10).
+■Call Event [Name]: CSelf10[Money] = ["X[Com]Get Current Money"] <CommonEv 57> 
 ■
 [COMMAND_TEXT_END]

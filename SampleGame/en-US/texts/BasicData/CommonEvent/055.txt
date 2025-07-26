@@ -1,5 +1,5 @@
 COMMON_ID=55
-COMMON_NAME=X[共]武器所持数取得
+COMMON_NAME=X[Com]Get Weapon Quantity
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -8,7 +8,7 @@ MEMO=
 VALINPUT_NUM=1
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=武器番号
+VALINPUT_NAME_0=Weapon ID
 VALINPUT_NAME_1=
 VALINPUT_NAME_2=
 VALINPUT_NAME_3=
@@ -61,9 +61,9 @@ DEFAULT_VAL_1=0
 DEFAULT_VAL_2=0
 DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
-RETURN_VAL_NAME=個数
+RETURN_VAL_NAME=Quantity
 RETURN_VAL_TARGET=10
-CSELF_NAME_0=武器番号
+CSELF_NAME_0=Weapon ID
 CSELF_NAME_1=
 CSELF_NAME_2=
 CSELF_NAME_3=
@@ -73,7 +73,7 @@ CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=
-CSELF_NAME_10=一時変数
+CSELF_NAME_10=Quantity
 CSELF_NAME_11=
 CSELF_NAME_12=
 CSELF_NAME_13=
@@ -167,62 +167,62 @@ COMMAND_NUM=28
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
-[103][0,1]<0>()("　指定した武器の所持数を可変DB「基本システム用変数」のデータ0番（処理結果）に格納します。")
-[103][0,1]<0>()("　基本システム内でアイテムの個数を取得する際は、必ずこのコモンイベントが呼び出されます。")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("  Returns the specified weapon quantity.")
+[103][0,1]<0>()("  This common event is always used to get the weapon quantity in the base system.")
 [103][0,1]<0>()("")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
-[103][0,1]<0>()("　可変DB「┣所持武器個数」")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()("  Variable DB <dqrt>┣ Owned Weapon Count<dqrt>")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
-[103][0,1]<0>()("　なし")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()("  None")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [111][4,0]<0>(1,1600000,0,4)()
 [401][1,0]<0>(1)()
-[106][0,1]<1>()("【基本システムエラー】<\n> 異常な武器IDが指定されています！<\n>　→　\cself[0]")
+[106][0,1]<1>()("[Base System Error]<\n> An abnormal Weapon ID is specified!<\n>  →  \cself[0]")
 [172][0,0]<1>()()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [111][4,0]<0>(1,1600000,9999,0)()
 [401][1,0]<0>(1)()
-[106][0,1]<1>()("【基本システムエラー】<\n> 異常な武器IDが指定されています！<\n>　→　\cself[0]")
+[106][0,1]<1>()("[Base System Error]<\n> An abnormal Weapon ID is specified!<\n>  →  \cself[0]")
 [172][0,0]<1>()()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
-[103][0,1]<0>()("武器所持個数を取得")
+[103][0,1]<0>()("Get the weapon quantity.")
 [250][5,4]<0>(5,1600000,0,69632,1600010)("","┣ Owned Weapon Count","","")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
-▼ 　指定した武器の所持数を可変DB「基本システム用変数」のデータ0番（処理結果）に格納します。
-▼ 　基本システム内でアイテムの個数を取得する際は、必ずこのコモンイベントが呼び出されます。
+▼ [Process Overview]
+▼   Returns the specified weapon quantity.
+▼   This common event is always used to get the weapon quantity in the base system.
 ▼ 
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【このコモンイベント内で操作しているデータベース】
-▼ 　可変DB「┣所持武器個数」
+▼ [Databases Accessed by This Common Event]
+▼   Variable DB "┣ Owned Weapon Count"
 ▼  
-▼ 【ここから呼び出している別コモンイベント】
-▼ 　なし
+▼ [Other Common Events Called from Here]
+▼   None
 ▼  
 ▼ ―――――――――――――――――――――――――――――――――――
-■Condition (Number):   [1] CSelf0[武器番号] <  0  
--◇Condition:  [1]  [ CSelf0[武器番号] < 0   ] Case↓
- |■Debug Text: 【基本システムエラー】\n 異常な武器IDが指定されています！\n　→　\cself[0]
+■Condition (Number):   [1] CSelf0[Weapon ID] <  0  
+-◇Condition:  [1]  [ CSelf0[Weapon ID] < 0   ] Case↓
+ |■Debug Text: [Base System Error]\n An abnormal Weapon ID is specified!\n  →  \cself[0]
  |■Exit Event
  |■
 ◇End◇
-■Condition (Number):   [1] CSelf0[武器番号] >  9999  
--◇Condition:  [1]  [ CSelf0[武器番号] > 9999   ] Case↓
- |■Debug Text: 【基本システムエラー】\n 異常な武器IDが指定されています！\n　→　\cself[0]
+■Condition (Number):   [1] CSelf0[Weapon ID] >  9999  
+-◇Condition:  [1]  [ CSelf0[Weapon ID] > 9999   ] Case↓
+ |■Debug Text: [Base System Error]\n An abnormal Weapon ID is specified!\n  →  \cself[0]
  |■Exit Event
  |■
 ◇End◇
-▼ 武器所持個数を取得
-■Load DB(Var):  CSelf10[一時変数] = VarDB[ "┣ Owned Weapon Count":CSelf0[武器番号]:0 ] (8:-:Quantity Owned) 
+▼ Get the weapon quantity.
+■Load DB(Var):  CSelf10[Quantity] = VarDB[ "┣ Owned Weapon Count":CSelf0[Weapon ID]:0 ] (8:-:Quantity Owned) 
 ■
 [COMMAND_TEXT_END]

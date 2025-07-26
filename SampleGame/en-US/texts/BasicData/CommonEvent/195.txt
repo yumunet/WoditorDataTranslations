@@ -1,5 +1,5 @@
 COMMON_ID=195
-COMMON_NAME=X┣◆１ターンの処理を実行
+COMMON_NAME=X┣◆Execute 1-Turn Process
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -164,15 +164,15 @@ COMMAND_NUM=53
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　１ターンの処理ループを行います。")
 [103][0,1]<0>()("　全員の、全ての行動内容が終わったら１ターン終了です。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [250][5,4]<0>(21,73,0,69632,1600019)("","Base System Variables","","")
 [121][4,0]<0>(1600019,1,0,512)()
@@ -189,28 +189,28 @@ WoditorEvCOMMAND_START
 [176][0,0]<2>()()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
-[300][5,1]<1>(0,3,1600016,0,0)("X[戦]状態更新")
+[300][5,1]<1>(0,3,1600016,0,0)("X[Bat]Update States")
 [103][0,1]<1>()("行動可能判定")
-[300][4,1]<1>(0,16777217,1600010,1600011)("X┃┣◆行動可能判定")
+[300][4,1]<1>(0,16777217,1600010,1600011)("X┃┣◆Check If Can Act")
 [111][4,0]<1>(1,1600011,1,1)()
 [401][1,0]<1>(1)()
-[300][5,1]<2>(0,16777218,1600010,0,1600012)("X┃┗◆１行動ループ")
+[300][5,1]<2>(0,16777218,1600010,0,1600012)("X┃┗◆1-Action Loop")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [111][4,0]<1>(1,1600012,0,5)()
 [401][1,0]<1>(1)()
 [103][0,1]<2>()("ウェイト")
-[300][3,1]<2>(0,1,20)("X[共]ウェイト2(キー押しで加速)")
+[300][3,1]<2>(0,1,20)("X[Com]Wait 2(PressKeyToSpdUp)")
 [103][0,1]<2>()("戦闘終了していたらここで終わる")
 [171][0,0]<2>()()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [103][0,1]<1>()("状態の更新を行う（「自分の番の直後」）")
-[300][5,1]<1>(0,3,1600016,1,0)("X[戦]状態更新")
+[300][5,1]<1>(0,3,1600016,1,0)("X[Bat]Update States")
 [103][0,1]<1>()("変身判定も行う")
-[300][4,1]<1>(0,2,1600016,1)("X[戦]変身判定")
+[300][4,1]<1>(0,2,1600016,1)("X[Bat]Attempt Transform")
 [103][0,1]<1>()("ウェイト")
-[300][3,1]<1>(0,1,20)("X[共]ウェイト2(キー押しで加速)")
+[300][3,1]<1>(0,1,20)("X[Com]Wait 2(PressKeyToSpdUp)")
 [0][0,0]<1>()()
 [498][0,0]<0>()()
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
@@ -220,15 +220,15 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　１ターンの処理ループを行います。
 ▼ 　全員の、全ての行動内容が終わったら１ターン終了です。
 ▼ 
-▼ 【このコモンイベント内で操作しているデータベース】
+▼ [Databases Accessed by This Common Event]
 ▼  
-▼ 【ここから呼び出している別コモンイベント】
+▼ [Other Common Events Called from Here]
 ▼  
-▼ 【どのコモンイベントから主に呼び出されているか】
+▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Load DB(Var):  CSelf19[全アクション数] = VarDB[ "Base System Variables":73:0 ] (18:[Battle] Command Input Pos:Number) 
 ■Set Variable: CSelf19[全アクション数] -= 1 + 0 
@@ -245,28 +245,28 @@ WoditorEvCOMMAND_END
  | |■Loop Start: Go to Loop Start
  | |■
  |◇End◇
- |■Call Event [Name]: ["X[戦]状態更新"] <CommonEv 139>  / CSelf16[発動者スロット] / 0:自分の番の直前 / 0:攻撃力も精神攻撃力もない
+ |■Call Event [Name]: ["X[Bat]Update States"] <CommonEv 139>  / CSelf16[発動者スロット] / 0:自分の番の直前 / 0:攻撃力も精神攻撃力もない
  |▼ 行動可能判定
- |■Call Event [Name]: CSelf11[実行可能？] = ["X┃┣◆行動可能判定"] <CommonEv 196>  / CSelf10[注目位置]
+ |■Call Event [Name]: CSelf11[実行可能？] = ["X┃┣◆Check If Can Act"] <CommonEv 196>  / CSelf10[注目位置]
  |■Condition (Number):   [1] CSelf11[実行可能？] >=  1  
  |-◇Condition:  [1]  [ CSelf11[実行可能？] >= 1   ] Case↓
- | |■Call Event [Name]: CSelf12[戦闘終了フラグ] = ["X┃┗◆１行動ループ"] <CommonEv 197>  / CSelf10[注目位置] / 0:通常
+ | |■Call Event [Name]: CSelf12[戦闘終了フラグ] = ["X┃┗◆1-Action Loop"] <CommonEv 197>  / CSelf10[注目位置] / 0:通常
  | |■
  |◇End◇
  |■Condition (Number):   [1] CSelf12[戦闘終了フラグ] !=  0  
  |-◇Condition:  [1]  [ CSelf12[戦闘終了フラグ] != 0   ] Case↓
  | |▼ ウェイト
- | |■Call Event [Name]: ["X[共]ウェイト2(キー押しで加速)"] <CommonEv 60>  / 20
+ | |■Call Event [Name]: ["X[Com]Wait 2(PressKeyToSpdUp)"] <CommonEv 60>  / 20
  | |▼ 戦闘終了していたらここで終わる
  | |■Break Loop
  | |■
  |◇End◇
  |▼ 状態の更新を行う（「自分の番の直後」）
- |■Call Event [Name]: ["X[戦]状態更新"] <CommonEv 139>  / CSelf16[発動者スロット] / 1:自分の番が終わったとき / 0:攻撃力も精神攻撃力もない
+ |■Call Event [Name]: ["X[Bat]Update States"] <CommonEv 139>  / CSelf16[発動者スロット] / 1:自分の番が終わったとき / 0:攻撃力も精神攻撃力もない
  |▼ 変身判定も行う
- |■Call Event [Name]: ["X[戦]変身判定"] <CommonEv 168>  / CSelf16[発動者スロット] / 1:ターン開始時
+ |■Call Event [Name]: ["X[Bat]Attempt Transform"] <CommonEv 168>  / CSelf16[発動者スロット] / 1:ターン開始時
  |▼ ウェイト
- |■Call Event [Name]: ["X[共]ウェイト2(キー押しで加速)"] <CommonEv 60>  / 20
+ |■Call Event [Name]: ["X[Com]Wait 2(PressKeyToSpdUp)"] <CommonEv 60>  / 20
  |■
 ◇Loop End Point◇◇
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■

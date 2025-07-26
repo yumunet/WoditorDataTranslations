@@ -1,5 +1,5 @@
 COMMON_ID=60
-COMMON_NAME=X[共]ウェイト2(キー押しで加速)
+COMMON_NAME=X[Com]Wait 2(PressKeyToSpdUp)
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -8,7 +8,7 @@ MEMO=
 VALINPUT_NUM=1
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=ｳｪｲﾄするﾌﾚｰﾑ
+VALINPUT_NAME_0=Wait Frames
 VALINPUT_NAME_1=最低ウェイト
 VALINPUT_NAME_2=
 VALINPUT_NAME_3=
@@ -60,8 +60,8 @@ DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
 RETURN_VAL_NAME=
 RETURN_VAL_TARGET=-1
-CSELF_NAME_0=ｳｪｲﾄするﾌﾚｰﾑ
-CSELF_NAME_1=最低ウェイト
+CSELF_NAME_0=Wait Frames
+CSELF_NAME_1=
 CSELF_NAME_2=
 CSELF_NAME_3=
 CSELF_NAME_4=
@@ -70,12 +70,12 @@ CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=
-CSELF_NAME_10=一時キー
-CSELF_NAME_11=直前キー[キャンセル]
-CSELF_NAME_12=直前キー[サブ]
-CSELF_NAME_13=現在キー[決定]
-CSELF_NAME_14=現在キー[キャンセル]
-CSELF_NAME_15=現在キー[サブ]
+CSELF_NAME_10=Key
+CSELF_NAME_11=
+CSELF_NAME_12=
+CSELF_NAME_13=
+CSELF_NAME_14=
+CSELF_NAME_15=
 CSELF_NAME_16=
 CSELF_NAME_17=
 CSELF_NAME_18=
@@ -100,7 +100,7 @@ CSELF_NAME_36=
 CSELF_NAME_37=
 CSELF_NAME_38=
 CSELF_NAME_39=
-CSELF_NAME_40=ウェイト数
+CSELF_NAME_40=Actual Wait Frames
 CSELF_NAME_41=
 CSELF_NAME_42=
 CSELF_NAME_43=
@@ -164,8 +164,8 @@ COMMAND_NUM=28
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
-[103][0,1]<0>()("　キー連打で中断できるウェイト機能です。")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("  A wait function that can be shortened by pressing a key.")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [121][4,0]<0>(1600040,1600000,0,0)()
 [170][0,0]<0>()()
@@ -195,29 +195,29 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
-▼ 　キー連打で中断できるウェイト機能です。
+▼ [Process Overview]
+▼   A wait function that can be shortened by pressing a key.
 ▼ ―――――――――――――――――――――――――――――――――――
-■Set Variable: CSelf40[ウェイト数] = CSelf0[ｳｪｲﾄするﾌﾚｰﾑ] + 0 
+■Set Variable: CSelf40[Actual Wait Frames] = CSelf0[Wait Frames] + 0 
 ■Loop Start
- |■Key Input: CSelf10[一時キー] [Normal Input]  Confirm(10)
- |■Condition (Number):   [1] CSelf10[一時キー] !=  0  
- |-◇Condition:  [1]  [ CSelf10[一時キー] != 0   ] Case↓
- | |■Set Variable: CSelf40[ウェイト数] -= 1 + 0 
+ |■Key Input: CSelf10[Key] [Normal Input]  Confirm(10)
+ |■Condition (Number):   [1] CSelf10[Key] !=  0  
+ |-◇Condition:  [1]  [ CSelf10[Key] != 0   ] Case↓
+ | |■Set Variable: CSelf40[Actual Wait Frames] -= 1 + 0 
  | |■
  |◇End◇
- |■Key Input: CSelf10[一時キー] [Normal Input]  SubKey(12)
- |■Condition (Number):   [1] CSelf10[一時キー] !=  0  
- |-◇Condition:  [1]  [ CSelf10[一時キー] != 0   ] Case↓
- | |■Set Variable: CSelf40[ウェイト数] -= 2 + 0 
+ |■Key Input: CSelf10[Key] [Normal Input]  SubKey(12)
+ |■Condition (Number):   [1] CSelf10[Key] !=  0  
+ |-◇Condition:  [1]  [ CSelf10[Key] != 0   ] Case↓
+ | |■Set Variable: CSelf40[Actual Wait Frames] -= 2 + 0 
  | |■
  |◇End◇
- |■Condition (Number):   [1] CSelf40[ウェイト数] <=  0  
- |-◇Condition:  [1]  [ CSelf40[ウェイト数] <= 0   ] Case↓
+ |■Condition (Number):   [1] CSelf40[Actual Wait Frames] <=  0  
+ |-◇Condition:  [1]  [ CSelf40[Actual Wait Frames] <= 0   ] Case↓
  | |■Break Loop
  | |■
  |◇End◇
- |■Set Variable: CSelf40[ウェイト数] -= 1 + 0 
+ |■Set Variable: CSelf40[Actual Wait Frames] -= 1 + 0 
  |■Wait: 1 Frames
  |■
 ◇Loop End Point◇◇

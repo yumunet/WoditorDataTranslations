@@ -1,5 +1,5 @@
 COMMON_ID=61
-COMMON_NAME=X[共]キー押し加速ｳｪｲﾄ計算
+COMMON_NAME=X[Com]Calc Spd-Up Wait Frames
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -8,7 +8,7 @@ MEMO=
 VALINPUT_NUM=1
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=ｳｪｲﾄするﾌﾚｰﾑ
+VALINPUT_NAME_0=Wait Frames
 VALINPUT_NAME_1=
 VALINPUT_NAME_2=
 VALINPUT_NAME_3=
@@ -58,10 +58,10 @@ DEFAULT_VAL_1=0
 DEFAULT_VAL_2=0
 DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
-RETURN_VAL_NAME=実ｳｪｲﾄ
+RETURN_VAL_NAME=Actual Wait
 RETURN_VAL_TARGET=0
-CSELF_NAME_0=ｳｪｲﾄするﾌﾚｰﾑ
-CSELF_NAME_1=最低ウェイト
+CSELF_NAME_0=Wait Frames
+CSELF_NAME_1=
 CSELF_NAME_2=
 CSELF_NAME_3=
 CSELF_NAME_4=
@@ -70,12 +70,12 @@ CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=
-CSELF_NAME_10=一時キー
-CSELF_NAME_11=直前キー[キャンセル]
-CSELF_NAME_12=直前キー[サブ]
-CSELF_NAME_13=現在キー[決定]
-CSELF_NAME_14=現在キー[キャンセル]
-CSELF_NAME_15=現在キー[サブ]
+CSELF_NAME_10=Key
+CSELF_NAME_11=
+CSELF_NAME_12=
+CSELF_NAME_13=
+CSELF_NAME_14=
+CSELF_NAME_15=
 CSELF_NAME_16=
 CSELF_NAME_17=
 CSELF_NAME_18=
@@ -90,7 +90,7 @@ CSELF_NAME_26=
 CSELF_NAME_27=
 CSELF_NAME_28=
 CSELF_NAME_29=
-CSELF_NAME_30=割る数
+CSELF_NAME_30=Divisor
 CSELF_NAME_31=
 CSELF_NAME_32=
 CSELF_NAME_33=
@@ -100,7 +100,7 @@ CSELF_NAME_36=
 CSELF_NAME_37=
 CSELF_NAME_38=
 CSELF_NAME_39=
-CSELF_NAME_40=ウェイト数
+CSELF_NAME_40=
 CSELF_NAME_41=
 CSELF_NAME_42=
 CSELF_NAME_43=
@@ -164,8 +164,8 @@ COMMAND_NUM=20
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
-[103][0,1]<0>()("　キー連打で中断できるウェイト機能です。")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("  A wait function that can be shortened by pressing a key.")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [121][4,0]<0>(1600030,1,0,0)()
 [123][2,0]<0>(1600010,16)()
@@ -187,23 +187,23 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
-▼ 　キー連打で中断できるウェイト機能です。
+▼ [Process Overview]
+▼   A wait function that can be shortened by pressing a key.
 ▼ ―――――――――――――――――――――――――――――――――――
-■Set Variable: CSelf30[割る数] = 1 + 0 
-■Key Input: CSelf10[一時キー] [Normal Input]  Confirm(10)
-■Condition (Number):   [1] CSelf10[一時キー] !=  0  
--◇Condition:  [1]  [ CSelf10[一時キー] != 0   ] Case↓
- |■Set Variable: CSelf30[割る数] += 1 + 0 
+■Set Variable: CSelf30[Divisor] = 1 + 0 
+■Key Input: CSelf10[Key] [Normal Input]  Confirm(10)
+■Condition (Number):   [1] CSelf10[Key] !=  0  
+-◇Condition:  [1]  [ CSelf10[Key] != 0   ] Case↓
+ |■Set Variable: CSelf30[Divisor] += 1 + 0 
  |■
 ◇End◇
-■Key Input: CSelf10[一時キー] [Normal Input]  SubKey(12)
-■Condition (Number):   [1] CSelf10[一時キー] !=  0  
--◇Condition:  [1]  [ CSelf10[一時キー] != 0   ] Case↓
- |■Set Variable: CSelf30[割る数] += 2 + 0 
+■Key Input: CSelf10[Key] [Normal Input]  SubKey(12)
+■Condition (Number):   [1] CSelf10[Key] !=  0  
+-◇Condition:  [1]  [ CSelf10[Key] != 0   ] Case↓
+ |■Set Variable: CSelf30[Divisor] += 2 + 0 
  |■
 ◇End◇
-■Set Variable: CSelf0[ｳｪｲﾄするﾌﾚｰﾑ] /= CSelf30[割る数] + 0 
-■Set Variable: CSelf0[ｳｪｲﾄするﾌﾚｰﾑ] Lower Bound= 1 + 0 
+■Set Variable: CSelf0[Wait Frames] /= CSelf30[Divisor] + 0 
+■Set Variable: CSelf0[Wait Frames] Lower Bound= 1 + 0 
 ■
 [COMMAND_TEXT_END]

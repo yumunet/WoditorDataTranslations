@@ -1,5 +1,5 @@
 COMMON_ID=172
-COMMON_NAME=X[戦]敵/味方・勝敗判定
+COMMON_NAME=X[Bat]Check Win/Lose
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -168,7 +168,7 @@ COMMAND_NUM=123
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　味方、または敵が全滅したか、または勝敗条件を満たしたかどうかを判定します。")
 [103][0,1]<0>()("　ターン数による勝敗条件チェックや、特定の敵だけ倒せばよいという条件判定もここで行います。")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
@@ -193,7 +193,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600023,0,0,0)()
 [179][1,0]<0>(1600020)()
 [121][4,0]<1>(1600021,1,0,256)()
-[300][5,1]<1>(0,16777218,1600021,0,1600022)("X[戦]基本状態取得")
+[300][5,1]<1>(0,16777218,1600021,0,1600022)("X[Bat]Get Basic State")
 [121][4,0]<1>(1600022,0,0,1536)()
 [121][4,0]<1>(1600022,1,0,1792)()
 [121][4,0]<1>(1600023,1600022,0,256)()
@@ -214,7 +214,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600023,0,0,0)()
 [179][1,0]<0>(1600020)()
 [121][4,0]<1>(1600021,1,0,256)()
-[300][5,1]<1>(0,16777218,1600021,0,1600022)("X[戦]基本状態取得")
+[300][5,1]<1>(0,16777218,1600021,0,1600022)("X[Bat]Get Basic State")
 [121][4,0]<1>(1600022,0,0,1536)()
 [121][4,0]<1>(1600022,1,0,1792)()
 [121][4,0]<1>(1600023,1600022,0,256)()
@@ -237,7 +237,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<1>(1)()
 [103][0,1]<2>()("敵Xの撃破")
 [121][4,0]<2>(1600021,9,1600033,0)()
-[300][5,1]<2>(0,16777218,1600021,0,1600022)("X[戦]基本状態取得")
+[300][5,1]<2>(0,16777218,1600021,0,1600022)("X[Bat]Get Basic State")
 [111][4,0]<2>(1,1600022,1,1)()
 [401][1,0]<2>(1)()
 [103][0,1]<3>()("味方が勝利")
@@ -267,7 +267,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<2>()()
 [103][0,1]<2>()("残りターン数を表示")
 [121][4,0]<2>(1600010,1600035,1600024,4096)()
-[300][3,1]<2>(0,1,1600010)("X[戦]┗ 残りターン数表示")
+[300][3,1]<2>(0,1,1600010)("X[Bat]┗ Display Remaining Turns")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [111][4,0]<1>(1,1600034,100,2)()
@@ -282,7 +282,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<2>()()
 [103][0,1]<2>()("残りターン数を表示")
 [121][4,0]<2>(1600010,1600036,1600024,4096)()
-[300][3,1]<2>(0,1,1600010)("X[戦]┗ 残りターン数表示")
+[300][3,1]<2>(0,1,1600010)("X[Bat]┗ Display Remaining Turns")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [0][0,0]<1>()()
@@ -294,7 +294,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　味方、または敵が全滅したか、または勝敗条件を満たしたかどうかを判定します。
 ▼ 　ターン数による勝敗条件チェックや、特定の敵だけ倒せばよいという条件判定もここで行います。
 ▼ ―――――――――――――――――――――――――――――――――――
@@ -319,7 +319,7 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf23[戦闘不能者数] = 0 + 0 
 ■Repeat Loop [ CSelf20[繰り返し回数] ] Times
  |■Set Variable: CSelf21[対象スロット] += 1 + 0 
- |■Call Event [Name]: CSelf22[戦闘不能フラグ] = ["X[戦]基本状態取得"] <CommonEv 176>  / CSelf21[対象スロット] / 0:戦闘不能状態
+ |■Call Event [Name]: CSelf22[戦闘不能フラグ] = ["X[Bat]Get Basic State"] <CommonEv 176>  / CSelf21[対象スロット] / 0:戦闘不能状態
  |■Set Variable: CSelf22[戦闘不能フラグ] Lower Bound= 0 + 0 
  |■Set Variable: CSelf22[戦闘不能フラグ] Upper Bound= 1 + 0 
  |■Set Variable: CSelf23[戦闘不能者数] += CSelf22[戦闘不能フラグ] + 0 
@@ -340,7 +340,7 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf23[戦闘不能者数] = 0 + 0 
 ■Repeat Loop [ CSelf20[繰り返し回数] ] Times
  |■Set Variable: CSelf21[対象スロット] += 1 + 0 
- |■Call Event [Name]: CSelf22[戦闘不能フラグ] = ["X[戦]基本状態取得"] <CommonEv 176>  / CSelf21[対象スロット] / 0:戦闘不能状態
+ |■Call Event [Name]: CSelf22[戦闘不能フラグ] = ["X[Bat]Get Basic State"] <CommonEv 176>  / CSelf21[対象スロット] / 0:戦闘不能状態
  |■Set Variable: CSelf22[戦闘不能フラグ] Lower Bound= 0 + 0 
  |■Set Variable: CSelf22[戦闘不能フラグ] Upper Bound= 1 + 0 
  |■Set Variable: CSelf23[戦闘不能者数] += CSelf22[戦闘不能フラグ] + 0 
@@ -363,7 +363,7 @@ WoditorEvCOMMAND_END
  |-◇Condition:  [1]  [ CSelf33[勝利条件] <= 9   ] Case↓
  | |▼ 敵Xの撃破
  | |■Set Variable: CSelf21[対象スロット] = 9 + CSelf33[勝利条件] 
- | |■Call Event [Name]: CSelf22[戦闘不能フラグ] = ["X[戦]基本状態取得"] <CommonEv 176>  / CSelf21[対象スロット] / 0:戦闘不能状態
+ | |■Call Event [Name]: CSelf22[戦闘不能フラグ] = ["X[Bat]Get Basic State"] <CommonEv 176>  / CSelf21[対象スロット] / 0:戦闘不能状態
  | |■Condition (Number):   [1] CSelf22[戦闘不能フラグ] >=  1  
  | |-◇Condition:  [1]  [ CSelf22[戦闘不能フラグ] >= 1   ] Case↓
  | | |▼ 味方が勝利
@@ -393,7 +393,7 @@ WoditorEvCOMMAND_END
  | |◇End◇
  | |▼ 残りターン数を表示
  | |■Set Variable: CSelf10[一時変数A] = CSelf35[勝利ターン] - CSelf24[現在ターン] 
- | |■Call Event [Name]: ["X[戦]┗ 残りターン数表示"] <CommonEv 173>  / CSelf10[一時変数A]
+ | |■Call Event [Name]: ["X[Bat]┗ Display Remaining Turns"] <CommonEv 173>  / CSelf10[一時変数A]
  | |■
  |◇End◇
  |■Condition (Number):   [1] CSelf34[敗北条件] ==  100  
@@ -408,7 +408,7 @@ WoditorEvCOMMAND_END
  | |◇End◇
  | |▼ 残りターン数を表示
  | |■Set Variable: CSelf10[一時変数A] = CSelf36[敗北ターン] - CSelf24[現在ターン] 
- | |■Call Event [Name]: ["X[戦]┗ 残りターン数表示"] <CommonEv 173>  / CSelf10[一時変数A]
+ | |■Call Event [Name]: ["X[Bat]┗ Display Remaining Turns"] <CommonEv 173>  / CSelf10[一時変数A]
  | |■
  |◇End◇
  |■

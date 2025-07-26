@@ -1,5 +1,5 @@
 COMMON_ID=198
-COMMON_NAME=X┣◆ターン終了処理
+COMMON_NAME=X┣◆Turn End Process
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -164,7 +164,7 @@ COMMAND_NUM=25
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　ターンが終わったときの処理を行います。")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
@@ -178,11 +178,11 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600010,-1,0,0)()
 [179][1,0]<0>(20)()
 [121][4,0]<1>(1600010,1,0,256)()
-[300][4,1]<1>(0,16777217,1600010,1600011)("X[戦]ｽﾛｯﾄから主人公ID取得")
+[300][4,1]<1>(0,16777217,1600010,1600011)("X[Bat]Get Ally ID From Slot")
 [111][4,0]<1>(1,1600011,0,1)()
 [401][1,0]<1>(1)()
-[300][5,1]<2>(0,3,1600010,2,0)("X[戦]状態更新")
-[300][4,1]<2>(0,2,1600010,2)("X[戦]変身判定")
+[300][5,1]<2>(0,3,1600010,2,0)("X[Bat]Update States")
+[300][4,1]<2>(0,2,1600010,2)("X[Bat]Attempt Transform")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [0][0,0]<1>()()
@@ -192,7 +192,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　ターンが終わったときの処理を行います。
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -206,11 +206,11 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf10[一時変数A] = -1 + 0 
 ■Repeat Loop [ 20 ] Times
  |■Set Variable: CSelf10[一時変数A] += 1 + 0 
- |■Call Event [Name]: CSelf11[一時変数B] = ["X[戦]ｽﾛｯﾄから主人公ID取得"] <CommonEv 141>  / CSelf10[一時変数A]
+ |■Call Event [Name]: CSelf11[一時変数B] = ["X[Bat]Get Ally ID From Slot"] <CommonEv 141>  / CSelf10[一時変数A]
  |■Condition (Number):   [1] CSelf11[一時変数B] >=  0  
  |-◇Condition:  [1]  [ CSelf11[一時変数B] >= 0   ] Case↓
- | |■Call Event [Name]: ["X[戦]状態更新"] <CommonEv 139>  / CSelf10[一時変数A] / 2:ターン終了時 / 0:攻撃力も精神攻撃力もない
- | |■Call Event [Name]: ["X[戦]変身判定"] <CommonEv 168>  / CSelf10[一時変数A] / 2:ターン終了時
+ | |■Call Event [Name]: ["X[Bat]Update States"] <CommonEv 139>  / CSelf10[一時変数A] / 2:ターン終了時 / 0:攻撃力も精神攻撃力もない
+ | |■Call Event [Name]: ["X[Bat]Attempt Transform"] <CommonEv 168>  / CSelf10[一時変数A] / 2:ターン終了時
  | |■
  |◇End◇
  |■

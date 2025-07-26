@@ -1,17 +1,17 @@
 COMMON_ID=10
-COMMON_NAME=○経験値・Lv増減
+COMMON_NAME=○ Change EXP/Level
 COMMAND_COLOR=0
 TRIGGER=32
 TRIGGER_TARGET=2000000
 TRIGGER_VAL=0
-MEMO=経験値やレベルを増減させます。※経験値を下げてもレベルは下がりません。戦闘中可
+MEMO=Increases or decreases EXP or level. Decreasing EXP doesn't lower level. Also works in battle.
 VALINPUT_NUM=4
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=対象主人公
-VALINPUT_NAME_1=行う処理
-VALINPUT_NAME_2=増減値
-VALINPUT_NAME_3=メッセージ表示
+VALINPUT_NAME_0=Target Ally
+VALINPUT_NAME_1=Action
+VALINPUT_NAME_2=Amount
+VALINPUT_NAME_3=Show Message?
 VALINPUT_NAME_4=
 VALINPUT_NAME_5=
 VALINPUT_NAME_6=
@@ -33,12 +33,12 @@ LOADTYPE9=0
 CHOICE_STR_NUM=10
 CHOICE_STR_0_NUM=0
 CHOICE_STR_1_NUM=2
-CHOICE_STR_1_0=レベル増減
-CHOICE_STR_1_1=経験値の増減
+CHOICE_STR_1_0=Adjust Level
+CHOICE_STR_1_1=Adjust EXP
 CHOICE_STR_2_NUM=0
 CHOICE_STR_3_NUM=2
-CHOICE_STR_3_0=なし
-CHOICE_STR_3_1=有り
+CHOICE_STR_3_0=No
+CHOICE_STR_3_1=Yes
 CHOICE_STR_4_NUM=0
 CHOICE_STR_5_NUM=0
 CHOICE_STR_6_NUM=0
@@ -71,18 +71,18 @@ DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
 RETURN_VAL_NAME=
 RETURN_VAL_TARGET=-1
-CSELF_NAME_0=対象主人公
-CSELF_NAME_1=行う処理
-CSELF_NAME_2=増減値
-CSELF_NAME_3=メッセージ表示
+CSELF_NAME_0=Target Ally
+CSELF_NAME_1=Action
+CSELF_NAME_2=Amount
+CSELF_NAME_3=Show Message?
 CSELF_NAME_4=
 CSELF_NAME_5=
 CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=
-CSELF_NAME_10=一時変数A
-CSELF_NAME_11=一時変数B
+CSELF_NAME_10=
+CSELF_NAME_11=
 CSELF_NAME_12=
 CSELF_NAME_13=
 CSELF_NAME_14=
@@ -91,7 +91,7 @@ CSELF_NAME_16=
 CSELF_NAME_17=
 CSELF_NAME_18=
 CSELF_NAME_19=
-CSELF_NAME_20=最大人数
+CSELF_NAME_20=
 CSELF_NAME_21=
 CSELF_NAME_22=
 CSELF_NAME_23=
@@ -174,33 +174,33 @@ CSELF_NAME_99=
 COMMAND_NUM=13
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("レベルアップ処理")
+[103][0,1]<0>()("Level up processing.")
 [111][7,0]<0>(2,1600001,0,2,1600001,1,2)()
 [401][1,0]<0>(1)()
-[300][6,1]<1>(0,4,1600000,10,1600002,1600003)("X[移]パラメータ増減")
+[300][6,1]<1>(0,4,1600000,10,1600002,1600003)("X[Map]Change Parameter")
 [0][0,0]<1>()()
 [401][1,0]<0>(2)()
-[300][6,1]<1>(0,4,1600000,11,1600002,1600003)("X[移]パラメータ増減")
+[300][6,1]<1>(0,4,1600000,11,1600002,1600003)("X[Map]Change Parameter")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
-[300][6,1]<0>(0,4,1600000,100,0,0)("X[移]パラメータ増減")
-[103][0,1]<0>()("もし戦闘に参加していれば、ここで戦闘関連パラメータを再代入する")
-[300][3,1]<0>(0,1,1600000)("X[戦]指定主人公更新処理")
+[300][6,1]<0>(0,4,1600000,100,0,0)("X[Map]Change Parameter")
+[103][0,1]<0>()("If taking part in battle, update battle-related stats here.")
+[300][3,1]<0>(0,1,1600000)("X[Bat]Update Ally")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ レベルアップ処理
-■Condition (Number):   [1] CSelf1[行う処理] ==  0  /  [2] CSelf1[行う処理] ==  1  
--◇Condition:  [1]  [ CSelf1[行う処理] == 0   ] Case↓
- |■Call Event [Name]: ["X[移]パラメータ増減"] <CommonEv 70>  / CSelf0[対象主人公] / 10:レベル / CSelf2[増減値] / CSelf3[メッセージ表示]
+▼ Level up processing.
+■Condition (Number):   [1] CSelf1[Action] ==  0  /  [2] CSelf1[Action] ==  1  
+-◇Condition:  [1]  [ CSelf1[Action] == 0   ] Case↓
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Target Ally] / 10:レベル / CSelf2[Amount] / CSelf3[Show Message?]
  |■
--◇Condition:  [2]  [ CSelf1[行う処理] == 1   ] Case↓
- |■Call Event [Name]: ["X[移]パラメータ増減"] <CommonEv 70>  / CSelf0[対象主人公] / 11:経験値 / CSelf2[増減値] / CSelf3[メッセージ表示]
+-◇Condition:  [2]  [ CSelf1[Action] == 1   ] Case↓
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Target Ally] / 11:経験値 / CSelf2[Amount] / CSelf3[Show Message?]
  |■
 ◇End◇
-■Call Event [Name]: ["X[移]パラメータ増減"] <CommonEv 70>  / CSelf0[対象主人公] / 100:一時値再計算 / 0 / 0:なし
-▼ もし戦闘に参加していれば、ここで戦闘関連パラメータを再代入する
-■Call Event [Name]: ["X[戦]指定主人公更新処理"] <CommonEv 142>  / CSelf0[対象主人公]
+■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Target Ally] / 100:一時値再計算 / 0 / 0:なし
+▼ If taking part in battle, update battle-related stats here.
+■Call Event [Name]: ["X[Bat]Update Ally"] <CommonEv 142>  / CSelf0[Target Ally]
 ■
 [COMMAND_TEXT_END]

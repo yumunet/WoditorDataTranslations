@@ -1,5 +1,5 @@
 COMMON_ID=179
-COMMON_NAME=X[戦]敵キャラ_単体描画
+COMMON_NAME=X[Bat]Enemy: Draw One
 COMMAND_COLOR=5
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -186,7 +186,7 @@ COMMAND_NUM=420
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　指定した敵キャラ一個分の初期描画・カーソル描画・消去処理を行います。")
 [103][0,1]<0>()("　キャラクターへのエフェクトなどもこのコモン内で処理されます。")
 [103][0,1]<0>()("")
@@ -542,7 +542,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<4>(1600010,1600000,20,16384)()
 [121][4,0]<4>(1600042,1600010,1600099,8704)()
 [121][4,0]<4>(1600057,5,0,0)()
-[300][4,1]<4>(0,16777217,1600057,1600057)("X[共]キー押し加速ｳｪｲﾄ計算")
+[300][4,1]<4>(0,16777217,1600057,1600057)("X[Com]Calc Spd-Up Wait Frames")
 [103][0,1]<4>()("ディレイを設定")
 [121][4,0]<4>(1600032,0,0,0)()
 [103][0,1]<4>()("初期位置をシフト")
@@ -553,10 +553,10 @@ WoditorEvCOMMAND_START
 [150][13,0]<4>(4198145,1600021,0,0,0,1,-1000000,1600041,1600042,-1000000,0,0,16777216)()
 [103][0,1]<4>()("目標位置まで慣性移動")
 [150][14,0]<4>(4198145,1600021,1600057,0,0,1,-1000000,1600022,1600023,-1000000,0,0,16777216,1600032)()
-[300][4,1]<4>(0,16777217,3,1600011)("X[共]キー押し加速ｳｪｲﾄ計算")
+[300][4,1]<4>(0,16777217,3,1600011)("X[Com]Calc Spd-Up Wait Frames")
 [121][4,0]<4>(1600032,1600011,0,256)()
 [150][14,0]<4>(4198145,1600021,1600057,0,0,1,-1000000,1600022,1600023,-1000000,0,0,16777216,1600032)()
-[300][4,1]<4>(0,16777217,3,1600011)("X[共]キー押し加速ｳｪｲﾄ計算")
+[300][4,1]<4>(0,16777217,3,1600011)("X[Com]Calc Spd-Up Wait Frames")
 [121][4,0]<4>(1600032,1600011,0,256)()
 [150][14,0]<4>(4198145,1600021,1600057,0,0,1,-1000000,1600022,1600023,-1000000,0,0,16777216,1600032)()
 [179][1,0]<4>(0)()
@@ -609,7 +609,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　指定した敵キャラ一個分の初期描画・カーソル描画・消去処理を行います。
 ▼ 　キャラクターへのエフェクトなどもこのコモン内で処理されます。
 ▼ 
@@ -965,7 +965,7 @@ WoditorEvCOMMAND_END
  | | | |■Set Variable: CSelf10[一時変数A] = CSelf0[モード] % 20 
  | | | |■Set Variable: CSelf42[一時項目表示Y] -= CSelf10[一時変数A] * CSelf99[座標倍率Y[x10]] 
  | | | |■Set Variable: CSelf57[ウェイト数] = 5 + 0 
- | | | |■Call Event [Name]: CSelf57[ウェイト数] = ["X[共]キー押し加速ｳｪｲﾄ計算"] <CommonEv 61>  / CSelf57[ウェイト数]
+ | | | |■Call Event [Name]: CSelf57[ウェイト数] = ["X[Com]Calc Spd-Up Wait Frames"] <CommonEv 61>  / CSelf57[ウェイト数]
  | | | |▼ ディレイを設定
  | | | |■Set Variable: CSelf32[表示ディレイ] = 0 + 0 
  | | | |▼ 初期位置をシフト
@@ -976,10 +976,10 @@ WoditorEvCOMMAND_END
  | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0)Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle 0 / Zoom Same / Color Same
  | | | |▼ 目標位置まで慣性移動
  | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf22[表示X] Y:CSelf23[表示Y] / CSelf57[ウェイト数](CSelf32[表示ディレイ])Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle 0 / Zoom Same / Color Same
- | | | |■Call Event [Name]: CSelf11[一時変数B] = ["X[共]キー押し加速ｳｪｲﾄ計算"] <CommonEv 61>  / 3
+ | | | |■Call Event [Name]: CSelf11[一時変数B] = ["X[Com]Calc Spd-Up Wait Frames"] <CommonEv 61>  / 3
  | | | |■Set Variable: CSelf32[表示ディレイ] += CSelf11[一時変数B] + 0 
  | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf22[表示X] Y:CSelf23[表示Y] / CSelf57[ウェイト数](CSelf32[表示ディレイ])Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle 0 / Zoom Same / Color Same
- | | | |■Call Event [Name]: CSelf11[一時変数B] = ["X[共]キー押し加速ｳｪｲﾄ計算"] <CommonEv 61>  / 3
+ | | | |■Call Event [Name]: CSelf11[一時変数B] = ["X[Com]Calc Spd-Up Wait Frames"] <CommonEv 61>  / 3
  | | | |■Set Variable: CSelf32[表示ディレイ] += CSelf11[一時変数B] + 0 
  | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf22[表示X] Y:CSelf23[表示Y] / CSelf57[ウェイト数](CSelf32[表示ディレイ])Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle 0 / Zoom Same / Color Same
  | | | |■Repeat Loop [ 0 ] Times

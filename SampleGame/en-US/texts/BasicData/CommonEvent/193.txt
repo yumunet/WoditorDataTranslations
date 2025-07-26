@@ -1,5 +1,5 @@
 COMMON_ID=193
-COMMON_NAME=X┃┗◆敵・味方AI計算
+COMMON_NAME=X┃┗◆Process Enemy/Ally AI
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -168,15 +168,15 @@ COMMAND_NUM=48
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　AI行動の敵・味方の、コマンド選択を自動的に行います。")
 [103][0,1]<0>()("　これはコマンド選択前に行われます。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("敵のAIを実行")
 [250][5,4]<0>(20,69,0,69632,1600020)("","Base System Variables","","")
@@ -186,7 +186,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<1>(11,1600010,17,331776,1600012)("","×┏Battle Temp Status","","Character ID [Enemy:10,000+]")
 [111][4,0]<1>(1,1600012,10000,1)()
 [401][1,0]<1>(1)()
-[300][3,1]<2>(0,1,1600010)("X[戦]AI実行")
+[300][3,1]<2>(0,1,1600010)("X[Bat]Process AI Actions")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [0][0,0]<1>()()
@@ -205,7 +205,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<3>(0,1600012,59,331776,1600011)("","Allies","","Auto-Act with AI?")
 [111][4,0]<3>(1,1600011,1,1)()
 [401][1,0]<3>(1)()
-[300][3,1]<4>(0,1,1600010)("X[戦]AI実行")
+[300][3,1]<4>(0,1,1600010)("X[Bat]Process AI Actions")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [0][0,0]<3>()()
@@ -219,15 +219,15 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　AI行動の敵・味方の、コマンド選択を自動的に行います。
 ▼ 　これはコマンド選択前に行われます。
 ▼ 
-▼ 【このコモンイベント内で操作しているデータベース】
+▼ [Databases Accessed by This Common Event]
 ▼  
-▼ 【ここから呼び出している別コモンイベント】
+▼ [Other Common Events Called from Here]
 ▼  
-▼ 【どのコモンイベントから主に呼び出されているか】
+▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ 敵のAIを実行
 ■Load DB(Var):  CSelf20[繰り返し回数] = VarDB[ "Base System Variables":69:0 ] (18:[Battle] Max Enemy Count (System):Number) 
@@ -237,7 +237,7 @@ WoditorEvCOMMAND_END
  |■Load DB(Var):  CSelf12[キャラID] = VarDB[ "×┏Battle Temp Status":CSelf10[一時変数A]:"Character ID [Enemy:10,000+]" ] (10:-:17) 
  |■Condition (Number):   [1] CSelf12[キャラID] >=  10000  
  |-◇Condition:  [1]  [ CSelf12[キャラID] >= 10000   ] Case↓
- | |■Call Event [Name]: ["X[戦]AI実行"] <CommonEv 160>  / CSelf10[一時変数A]
+ | |■Call Event [Name]: ["X[Bat]Process AI Actions"] <CommonEv 160>  / CSelf10[一時変数A]
  | |■
  |◇End◇
  |■
@@ -256,7 +256,7 @@ WoditorEvCOMMAND_END
  | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "Allies":CSelf12[キャラID]:"Auto-Act with AI?" ] (0:-:58) 
  | | |■Condition (Number):   [1] CSelf11[一時変数B] >=  1  
  | | |-◇Condition:  [1]  [ CSelf11[一時変数B] >= 1   ] Case↓
- | | | |■Call Event [Name]: ["X[戦]AI実行"] <CommonEv 160>  / CSelf10[一時変数A]
+ | | | |■Call Event [Name]: ["X[Bat]Process AI Actions"] <CommonEv 160>  / CSelf10[一時変数A]
  | | | |■
  | | |◇End◇
  | | |■

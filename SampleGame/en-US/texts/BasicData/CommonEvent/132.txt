@@ -1,5 +1,5 @@
 COMMON_ID=132
-COMMON_NAME=X┗[移]システム欄実行
+COMMON_NAME=X┗[Map]Execute System Menu
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -164,14 +164,14 @@ COMMAND_NUM=660
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　システム欄を開き、使用し、終了するまでの処理を実行します。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [121][4,0]<0>(1600010,0,0,0)()
 [121][4,0]<0>(1600011,13,0,0)()
@@ -193,8 +193,8 @@ WoditorEvCOMMAND_START
 [99][1,0]<1>(0)()
 [0][0,0]<1>()()
 [498][0,0]<0>()()
-[300][4,1]<0>(0,2,0,-1)("X[移]システム画面描画")
-[300][4,1]<0>(0,2,2,1600010)("X[移]システム画面描画")
+[300][4,1]<0>(0,2,0,-1)("X[Map]Draw System Screen")
+[300][4,1]<0>(0,2,2,1600010)("X[Map]Draw System Screen")
 [170][0,0]<0>()()
 [212][0,1]<1>()("キー処理開始")
 [180][1,0]<1>(1)()
@@ -215,8 +215,8 @@ WoditorEvCOMMAND_START
 [401][1,0]<2>(1)()
 [179][1,0]<3>(1)()
 [103][0,1]<4>()("Ver3.00修正　修正された場合に変更するか質問を表示==>")
-[300][3,1]<4>(0,1,2)("X[共]システムSE再生")
-[300][4,1]<4>(0,2,5,0)("X[移]システム画面描画")
+[300][3,1]<4>(0,1,2)("X[Com]Play System Sound")
+[300][4,1]<4>(0,2,5,0)("X[Map]Draw System Screen")
 [121][4,0]<4>(1600091,0,0,0)()
 [170][0,0]<4>()()
 [180][1,0]<5>(1)()
@@ -224,14 +224,14 @@ WoditorEvCOMMAND_START
 [111][13,0]<5>(4,1600021,11,2,1600021,10,2,1600021,8,2,1600021,2,2)()
 [401][1,0]<5>(1)()
 [103][0,1]<6>()("キャンセルならそのまま保存せず終了")
-[300][3,1]<6>(0,1,1)("X[共]システムSE再生")
+[300][3,1]<6>(0,1,1)("X[Com]Play System Sound")
 [171][0,0]<6>()()
 [0][0,0]<6>()()
 [401][1,0]<5>(2)()
 [103][0,1]<6>()("もし保存して決定ならラベルへジャンプ")
 [111][7,0]<6>(2,1600091,0,2,1600091,1,2)()
 [401][1,0]<6>(1)()
-[300][4,1]<7>(0,2,6,0)("X[移]システム画面描画")
+[300][4,1]<7>(0,2,6,0)("X[Map]Draw System Screen")
 [213][0,1]<7>()("設定完了")
 [0][0,0]<7>()()
 [401][1,0]<6>(2)()
@@ -241,22 +241,22 @@ WoditorEvCOMMAND_START
 [0][0,0]<6>()()
 [401][1,0]<5>(3)()
 [103][0,1]<6>()("カーソル移動")
-[300][3,1]<6>(0,1,5)("X[共]システムSE再生")
+[300][3,1]<6>(0,1,5)("X[Com]Play System Sound")
 [121][4,0]<6>(1600091,1,0,256)()
 [121][4,0]<6>(1600091,2,0,1280)()
-[300][4,1]<6>(0,2,7,1600091)("X[移]システム画面描画")
+[300][4,1]<6>(0,2,7,1600091)("X[Map]Draw System Screen")
 [0][0,0]<6>()()
 [401][1,0]<5>(4)()
 [103][0,1]<6>()("カーソル移動")
-[300][3,1]<6>(0,1,5)("X[共]システムSE再生")
+[300][3,1]<6>(0,1,5)("X[Com]Play System Sound")
 [121][4,0]<6>(1600091,1,0,256)()
 [121][4,0]<6>(1600091,2,0,1280)()
-[300][4,1]<6>(0,2,7,1600091)("X[移]システム画面描画")
+[300][4,1]<6>(0,2,7,1600091)("X[Map]Draw System Screen")
 [0][0,0]<6>()()
 [499][0,0]<5>()()
 [0][0,0]<5>()()
 [498][0,0]<4>()()
-[300][4,1]<4>(0,2,6,0)("X[移]システム画面描画")
+[300][4,1]<4>(0,2,6,0)("X[Map]Draw System Screen")
 [103][0,1]<4>()("<==Ver3.00修正　修正された場合に変更するか質問を表示")
 [0][0,0]<4>()()
 [498][0,0]<3>()()
@@ -266,7 +266,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<2>()()
 [401][1,0]<1>(3)()
 [103][0,1]<2>()("下キー")
-[300][3,1]<2>(0,1,5)("X[共]システムSE再生")
+[300][3,1]<2>(0,1,5)("X[Com]Play System Sound")
 [111][4,0]<2>(1,1600010,11,2)()
 [401][1,0]<2>(1)()
 [103][0,1]<3>()("「リセット」のときは一番上へ")
@@ -287,13 +287,13 @@ WoditorEvCOMMAND_START
 [499][0,0]<2>()()
 [121][4,0]<2>(1600010,1,0,256)()
 [121][4,0]<2>(1600010,1600011,0,1280)()
-[300][4,1]<2>(0,2,2,1600010)("X[移]システム画面描画")
+[300][4,1]<2>(0,2,2,1600010)("X[Map]Draw System Screen")
 [0][0,0]<2>()()
 [420][1,0]<1>(0)()
 [111][10,0]<2>(3,1600020,8,2,1600020,4,2,1600020,6,2)()
 [401][1,0]<2>(1)()
 [103][0,1]<3>()("上キー")
-[300][3,1]<3>(0,1,5)("X[共]システムSE再生")
+[300][3,1]<3>(0,1,5)("X[Com]Play System Sound")
 [111][4,0]<3>(1,1600010,8,2)()
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("「キー設定」　パッド　決定　のときはそのまま上へ")
@@ -314,11 +314,11 @@ WoditorEvCOMMAND_START
 [499][0,0]<3>()()
 [121][4,0]<3>(1600010,1600011,1,4352)()
 [121][4,0]<3>(1600010,1600011,0,1280)()
-[300][4,1]<3>(0,2,2,1600010)("X[移]システム画面描画")
+[300][4,1]<3>(0,2,2,1600010)("X[Map]Draw System Screen")
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
 [103][0,1]<3>()("左キー")
-[300][3,1]<3>(0,1,5)("X[共]システムSE再生")
+[300][3,1]<3>(0,1,5)("X[Com]Play System Sound")
 [111][4,0]<3>(17,1600010,8,1)()
 [401][1,0]<3>(1)()
 [111][4,0]<4>(1,1600010,10,3)()
@@ -352,11 +352,11 @@ WoditorEvCOMMAND_START
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [121][4,0]<3>(1600013,-1,0,0)()
-[300][4,1]<3>(0,2,2,1600010)("X[移]システム画面描画")
+[300][4,1]<3>(0,2,2,1600010)("X[Map]Draw System Screen")
 [0][0,0]<3>()()
 [401][1,0]<2>(3)()
 [103][0,1]<3>()("右キー")
-[300][3,1]<3>(0,1,5)("X[共]システムSE再生")
+[300][3,1]<3>(0,1,5)("X[Com]Play System Sound")
 [111][4,0]<3>(17,1600010,8,1)()
 [401][1,0]<3>(1)()
 [111][4,0]<4>(1,1600010,10,3)()
@@ -390,7 +390,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [121][4,0]<3>(1600013,1,0,0)()
-[300][4,1]<3>(0,2,2,1600010)("X[移]システム画面描画")
+[300][4,1]<3>(0,2,2,1600010)("X[Map]Draw System Screen")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [0][0,0]<2>()()
@@ -412,13 +412,13 @@ WoditorEvCOMMAND_START
 [401][1,0]<2>(1)()
 [111][4,0]<3>(1,1600013,2,2)()
 [401][1,0]<3>(1)()
-[300][3,1]<4>(0,1,5)("X[共]システムSE再生")
+[300][3,1]<4>(0,1,5)("X[Com]Play System Sound")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [250][5,4]<3>(18,56,0,65552,1)("","Base System Variables","","")
 [250][5,4]<3>(18,56,0,65616,2)("","Base System Variables","","")
-[300][4,1]<3>(0,2,1,0)("X[移]システム画面描画")
-[300][4,1]<3>(0,2,2,1600010)("X[移]システム画面描画")
+[300][4,1]<3>(0,2,1,0)("X[Map]Draw System Screen")
+[300][4,1]<3>(0,2,2,1600010)("X[Map]Draw System Screen")
 [103][0,1]<3>()("Ver3.00修正")
 [121][4,0]<3>(1600090,1,0,0)()
 [0][0,0]<3>()()
@@ -431,7 +431,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<2>()("キーリピート速度")
 [111][4,0]<2>(1,1600013,2,2)()
 [401][1,0]<2>(1)()
-[300][3,1]<3>(0,1,5)("X[共]システムSE再生")
+[300][3,1]<3>(0,1,5)("X[Com]Play System Sound")
 [103][0,1]<3>()("Ver3.00修正")
 [121][4,0]<3>(1600090,1,0,0)()
 [0][0,0]<3>()()
@@ -440,23 +440,23 @@ WoditorEvCOMMAND_START
 [401][1,0]<2>(1)()
 [250][5,4]<3>(18,57,0,65552,4)("","Base System Variables","","")
 [250][5,4]<3>(18,57,0,65616,5)("","Base System Variables","","")
-[300][4,1]<3>(0,2,1,0)("X[移]システム画面描画")
-[300][4,1]<3>(0,2,2,1600010)("X[移]システム画面描画")
+[300][4,1]<3>(0,2,1,0)("X[Map]Draw System Screen")
+[300][4,1]<3>(0,2,2,1600010)("X[Map]Draw System Screen")
 [103][0,1]<3>()("Ver3.00修正")
 [121][4,0]<3>(1600090,1,0,0)()
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
 [250][5,4]<3>(18,57,0,65552,1)("","Base System Variables","","")
 [250][5,4]<3>(18,57,0,65616,5)("","Base System Variables","","")
-[300][4,1]<3>(0,2,1,0)("X[移]システム画面描画")
-[300][4,1]<3>(0,2,2,1600010)("X[移]システム画面描画")
+[300][4,1]<3>(0,2,1,0)("X[Map]Draw System Screen")
+[300][4,1]<3>(0,2,2,1600010)("X[Map]Draw System Screen")
 [103][0,1]<3>()("Ver3.00修正")
 [121][4,0]<3>(1600090,1,0,0)()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [103][0,1]<2>()("リピート速度を再設定する")
 [250][5,4]<2>(18,57,0,69632,1600015)("","Base System Variables","","")
-[300][3,1]<2>(0,1,1600015)("X[移]キーリピート設定")
+[300][3,1]<2>(0,1,1600015)("X[Map]Set Key Repeat")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
@@ -465,7 +465,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<2>()("戦闘時　自動連打")
 [111][4,0]<2>(1,1600013,2,2)()
 [401][1,0]<2>(1)()
-[300][3,1]<3>(0,1,5)("X[共]システムSE再生")
+[300][3,1]<3>(0,1,5)("X[Com]Play System Sound")
 [103][0,1]<3>()("Ver3.00修正")
 [121][4,0]<3>(1600090,1,0,0)()
 [0][0,0]<3>()()
@@ -474,8 +474,8 @@ WoditorEvCOMMAND_START
 [401][1,0]<2>(1)()
 [250][5,4]<3>(18,58,0,65552,1)("","Base System Variables","","")
 [250][5,4]<3>(18,58,0,65616,2)("","Base System Variables","","")
-[300][4,1]<3>(0,2,1,0)("X[移]システム画面描画")
-[300][4,1]<3>(0,2,2,1600010)("X[移]システム画面描画")
+[300][4,1]<3>(0,2,1,0)("X[Map]Draw System Screen")
+[300][4,1]<3>(0,2,2,1600010)("X[Map]Draw System Screen")
 [103][0,1]<3>()("Ver3.13修正")
 [121][4,0]<3>(1600090,1,0,0)()
 [0][0,0]<3>()()
@@ -529,8 +529,8 @@ WoditorEvCOMMAND_START
 [121][4,0]<3>(1600090,1,0,0)()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
-[300][4,1]<2>(0,2,1,0)("X[移]システム画面描画")
-[300][4,1]<2>(0,2,2,1600010)("X[移]システム画面描画")
+[300][4,1]<2>(0,2,1,0)("X[Map]Draw System Screen")
+[300][4,1]<2>(0,2,2,1600010)("X[Map]Draw System Screen")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
@@ -575,8 +575,8 @@ WoditorEvCOMMAND_START
 [121][4,0]<3>(9000102,1600014,0,256)()
 [121][4,0]<3>(9000102,0,0,1536)()
 [121][4,0]<3>(9000102,120,0,1792)()
-[300][4,1]<3>(0,2,1,0)("X[移]システム画面描画")
-[300][4,1]<3>(0,2,2,1600010)("X[移]システム画面描画")
+[300][4,1]<3>(0,2,1,0)("X[Map]Draw System Screen")
+[300][4,1]<3>(0,2,2,1600010)("X[Map]Draw System Screen")
 [103][0,1]<3>()("Ver3.00修正")
 [121][4,0]<3>(1600090,1,0,0)()
 [0][0,0]<3>()()
@@ -622,7 +622,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<6>(1)()
 [111][4,0]<7>(1,9000052,1600021,5)()
 [401][1,0]<7>(1)()
-[300][3,1]<8>(0,1,0)("X[共]システムSE再生")
+[300][3,1]<8>(0,1,0)("X[Com]Play System Sound")
 [0][0,0]<8>()()
 [499][0,0]<7>()()
 [121][4,0]<7>(9000052,1600021,0,0)()
@@ -630,7 +630,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<6>(2)()
 [111][4,0]<7>(1,9000053,1600021,5)()
 [401][1,0]<7>(1)()
-[300][3,1]<8>(0,1,0)("X[共]システムSE再生")
+[300][3,1]<8>(0,1,0)("X[Com]Play System Sound")
 [0][0,0]<8>()()
 [499][0,0]<7>()()
 [121][4,0]<7>(9000053,1600021,0,0)()
@@ -638,14 +638,14 @@ WoditorEvCOMMAND_START
 [401][1,0]<6>(3)()
 [111][4,0]<7>(1,9000054,1600021,5)()
 [401][1,0]<7>(1)()
-[300][3,1]<8>(0,1,0)("X[共]システムSE再生")
+[300][3,1]<8>(0,1,0)("X[Com]Play System Sound")
 [0][0,0]<8>()()
 [499][0,0]<7>()()
 [121][4,0]<7>(9000054,1600021,0,0)()
 [0][0,0]<7>()()
 [499][0,0]<6>()()
-[300][4,1]<6>(0,2,1,0)("X[移]システム画面描画")
-[300][4,1]<6>(0,2,2,1600010)("X[移]システム画面描画")
+[300][4,1]<6>(0,2,1,0)("X[Map]Draw System Screen")
+[300][4,1]<6>(0,2,2,1600010)("X[Map]Draw System Screen")
 [103][0,1]<6>()("Ver3.00修正")
 [121][4,0]<6>(1600090,1,0,0)()
 [0][0,0]<6>()()
@@ -698,7 +698,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<6>(1)()
 [111][4,0]<7>(1,9000055,1600021,5)()
 [401][1,0]<7>(1)()
-[300][3,1]<8>(0,1,0)("X[共]システムSE再生")
+[300][3,1]<8>(0,1,0)("X[Com]Play System Sound")
 [0][0,0]<8>()()
 [499][0,0]<7>()()
 [121][4,0]<7>(9000055,1600021,0,0)()
@@ -706,7 +706,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<6>(2)()
 [111][4,0]<7>(1,9000056,1600021,5)()
 [401][1,0]<7>(1)()
-[300][3,1]<8>(0,1,0)("X[共]システムSE再生")
+[300][3,1]<8>(0,1,0)("X[Com]Play System Sound")
 [0][0,0]<8>()()
 [499][0,0]<7>()()
 [121][4,0]<7>(9000056,1600021,0,0)()
@@ -714,14 +714,14 @@ WoditorEvCOMMAND_START
 [401][1,0]<6>(3)()
 [111][4,0]<7>(1,9000057,1600021,5)()
 [401][1,0]<7>(1)()
-[300][3,1]<8>(0,1,0)("X[共]システムSE再生")
+[300][3,1]<8>(0,1,0)("X[Com]Play System Sound")
 [0][0,0]<8>()()
 [499][0,0]<7>()()
 [121][4,0]<7>(9000057,1600021,0,0)()
 [0][0,0]<7>()()
 [499][0,0]<6>()()
-[300][4,1]<6>(0,2,1,0)("X[移]システム画面描画")
-[300][4,1]<6>(0,2,2,1600010)("X[移]システム画面描画")
+[300][4,1]<6>(0,2,1,0)("X[Map]Draw System Screen")
+[300][4,1]<6>(0,2,2,1600010)("X[Map]Draw System Screen")
 [103][0,1]<6>()("Ver3.00修正")
 [121][4,0]<6>(1600090,1,0,0)()
 [0][0,0]<6>()()
@@ -741,7 +741,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<2>()("リセット")
 [111][4,0]<2>(1,1600013,2,2)()
 [401][1,0]<2>(1)()
-[300][3,1]<3>(0,1,0)("X[共]システムSE再生")
+[300][3,1]<3>(0,1,0)("X[Com]Play System Sound")
 [250][5,4]<3>(18,56,0,65536,1)("","Base System Variables","","")
 [250][5,4]<3>(18,57,0,65536,2)("","Base System Variables","","")
 [103][0,1]<3>()("Ver3.00修正==>")
@@ -756,8 +756,8 @@ WoditorEvCOMMAND_START
 [121][4,0]<3>(9000055,301,0,0)()
 [121][4,0]<3>(9000056,302,0,0)()
 [121][4,0]<3>(9000057,303,0,0)()
-[300][4,1]<3>(0,2,1,0)("X[移]システム画面描画")
-[300][4,1]<3>(0,2,2,1600010)("X[移]システム画面描画")
+[300][4,1]<3>(0,2,1,0)("X[Map]Draw System Screen")
+[300][4,1]<3>(0,2,2,1600010)("X[Map]Draw System Screen")
 [103][0,1]<3>()("切り替えた決定キーがキャンセルになってたらおかしなことになるので、")
 [103][0,1]<3>()("キャンセルを離すまで停止")
 [170][0,0]<3>()()
@@ -782,11 +782,11 @@ WoditorEvCOMMAND_START
 [401][1,0]<2>(1)()
 [103][0,1]<3>()("Ver3.00修正　修正された場合に変更するか質問を表示")
 [212][0,1]<3>()("設定完了")
-[300][3,1]<3>(0,1,0)("X[共]システムSE再生")
-[300][4,1]<3>(0,2,-1,-1)("X[移]システム画面描画")
-[300][4,2]<3>(0,4113,0,1600005)("X[移]メニュー時文章表示","設定を反映しました。")
+[300][3,1]<3>(0,1,0)("X[Com]Play System Sound")
+[300][4,1]<3>(0,2,-1,-1)("X[Map]Draw System Screen")
+[300][4,2]<3>(0,4113,0,1600005)("X[Map]Display Menu Message","設定を反映しました。")
 [180][1,0]<3>(25)()
-[300][4,2]<3>(0,4113,-1,1600005)("X[移]メニュー時文章表示","<\n>")
+[300][4,2]<3>(0,4113,-1,1600005)("X[Map]Display Menu Message","<\n>")
 [180][1,0]<3>(15)()
 [172][0,0]<3>()()
 [0][0,0]<3>()()
@@ -805,7 +805,7 @@ WoditorEvCOMMAND_START
 [99][1,0]<1>(0)()
 [250][5,4]<1>(18,56,0,65536,1600060)("","Base System Variables","","")
 [250][5,4]<1>(18,57,0,65536,1600061)("","Base System Variables","","")
-[300][3,1]<1>(0,1,1600061)("X[移]キーリピート設定")
+[300][3,1]<1>(0,1,1600061)("X[Map]Set Key Repeat")
 [250][5,4]<1>(18,58,0,65536,1600062)("","Base System Variables","","")
 [121][4,0]<1>(9000100,1600063,0,0)()
 [121][4,0]<1>(9000101,1600063,0,0)()
@@ -816,9 +816,9 @@ WoditorEvCOMMAND_START
 [121][4,0]<1>(9000055,1600068,0,0)()
 [121][4,0]<1>(9000056,1600069,0,0)()
 [121][4,0]<1>(9000057,1600070,0,0)()
-[300][3,1]<1>(0,1,1)("X[共]システムSE再生")
-[300][4,1]<1>(0,2,-1,-1)("X[移]システム画面描画")
-[300][4,2]<1>(0,4113,-1,1600005)("X[移]メニュー時文章表示","<\n>")
+[300][3,1]<1>(0,1,1)("X[Com]Play System Sound")
+[300][4,1]<1>(0,2,-1,-1)("X[Map]Draw System Screen")
+[300][4,2]<1>(0,4113,-1,1600005)("X[Map]Display Menu Message","<\n>")
 [180][1,0]<1>(15)()
 [0][0,0]<1>()()
 [498][0,0]<0>()()
@@ -827,21 +827,21 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　システム欄を開き、使用し、終了するまでの処理を実行します。
 ▼ 
-▼ 【このコモンイベント内で操作しているデータベース】
+▼ [Databases Accessed by This Common Event]
 ▼  
-▼ 【ここから呼び出している別コモンイベント】
+▼ [Other Common Events Called from Here]
 ▼  
-▼ 【どのコモンイベントから主に呼び出されているか】
+▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Set Variable: CSelf10[選択箇所] = 0 + 0 
 ■Set Variable: CSelf11[選択可能最大値] = 13 + 0 
 ■Repeat Loop [ 1 ] Times
  |▼ 変更前の各パラメータを保存する
  |■Load DB(Var):  CSelf60[[保存]キー位置保存] = VarDB[ "Base System Variables":56:0 ] (18:[System] Cursor Memory:Number) 
- |■Load DB(Var):  CSelf61[[保存]キーリピート] = VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat:Number) 
+ |■Load DB(Var):  CSelf61[[保存]キーリピート] = VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat Speed:Number) 
  |■Load DB(Var):  CSelf62[[保存]戦闘時連打] = VarDB[ "Base System Variables":58:0 ] (18:[System] Battle Key Hold:Number) 
  |■Set Variable: CSelf63[[保存]ＢＧＭ音量] = Sys100:BGM Volume Multiplier [%] + 0 
  |■Set Variable: CSelf64[[保存]ＳＥ音量] = Sys102:SE Volume Multiplier [%] + 0 
@@ -856,8 +856,8 @@ WoditorEvCOMMAND_END
  |■ Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
  |■
 ◇Loop End Point◇◇
-■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 0:初期表示 / -1
-■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
+■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 0:初期表示 / -1
+■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
 ■Loop Start
  |●Label Point [キー処理開始] <<<<<<<<<<<<<<<<<<<<<<<<★
  |■Wait: 1 Frames
@@ -878,8 +878,8 @@ WoditorEvCOMMAND_END
  | |-◇Condition:  [1]  [ CSelf90[内容に変更あり] >= 1   ] Case↓
  | | |■Repeat Loop [ 1 ] Times
  | | | |▼ Ver3.00修正　修正された場合に変更するか質問を表示==>
- | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 2:ブザー音
- | | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 5:キャンセル時質問表示 / 0
+ | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
+ | | | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 5:キャンセル時質問表示 / 0
  | | | |■Set Variable: CSelf91[キャンセル時選択位置] = 0 + 0 
  | | | |■Loop Start
  | | | | |■Wait: 1 Frames
@@ -887,14 +887,14 @@ WoditorEvCOMMAND_END
  | | | | |■Condition (Number):   [1] CSelf21[キー入力２] ==  11  /  [2] CSelf21[キー入力２] ==  10  /  [3] CSelf21[キー入力２] ==  8  /  [4] CSelf21[キー入力２] ==  2  
  | | | | |-◇Condition:  [1]  [ CSelf21[キー入力２] == 11   ] Case↓
  | | | | | |▼ キャンセルならそのまま保存せず終了
- | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 1:キャンセル音
+ | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 1:Cancel Sound
  | | | | | |■Break Loop
  | | | | | |■
  | | | | |-◇Condition:  [2]  [ CSelf21[キー入力２] == 10   ] Case↓
  | | | | | |▼ もし保存して決定ならラベルへジャンプ
  | | | | | |■Condition (Number):   [1] CSelf91[キャンセル時選択位置] ==  0  /  [2] CSelf91[キャンセル時選択位置] ==  1  
  | | | | | |-◇Condition:  [1]  [ CSelf91[キャンセル時選択位置] == 0   ] Case↓
- | | | | | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 6:キャンセル時質問消去 / 0
+ | | | | | | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 6:キャンセル時質問消去 / 0
  | | | | | | |●Label Jump [設定完了] >>>>>>>>>>>>>>>>>>>>>>>>>
  | | | | | | |■
  | | | | | |-◇Condition:  [2]  [ CSelf91[キャンセル時選択位置] == 1   ] Case↓
@@ -904,22 +904,22 @@ WoditorEvCOMMAND_END
  | | | | | |■
  | | | | |-◇Condition:  [3]  [ CSelf21[キー入力２] == 8   ] Case↓
  | | | | | |▼ カーソル移動
- | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 5:カーソル移動音
+ | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
  | | | | | |■Set Variable: CSelf91[キャンセル時選択位置] += 1 + 0 
  | | | | | |■Set Variable: CSelf91[キャンセル時選択位置] %= 2 + 0 
- | | | | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 7:キャンセル時質問カーソル切り替え / CSelf91[キャンセル時選択位置]
+ | | | | | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 7:キャンセル時質問カーソル切り替え / CSelf91[キャンセル時選択位置]
  | | | | | |■
  | | | | |-◇Condition:  [4]  [ CSelf21[キー入力２] == 2   ] Case↓
  | | | | | |▼ カーソル移動
- | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 5:カーソル移動音
+ | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
  | | | | | |■Set Variable: CSelf91[キャンセル時選択位置] += 1 + 0 
  | | | | | |■Set Variable: CSelf91[キャンセル時選択位置] %= 2 + 0 
- | | | | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 7:キャンセル時質問カーソル切り替え / CSelf91[キャンセル時選択位置]
+ | | | | | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 7:キャンセル時質問カーソル切り替え / CSelf91[キャンセル時選択位置]
  | | | | | |■
  | | | | |◇End◇
  | | | | |■
  | | | |◇Loop End Point◇◇
- | | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 6:キャンセル時質問消去 / 0
+ | | | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 6:キャンセル時質問消去 / 0
  | | | |▼ <==Ver3.00修正　修正された場合に変更するか質問を表示
  | | | |■
  | | |◇Loop End Point◇◇
@@ -929,7 +929,7 @@ WoditorEvCOMMAND_END
  | |■
  |-◇Condition:  [3]  [ CSelf20[キー入力１] == 2   ] Case↓
  | |▼ 下キー
- | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 5:カーソル移動音
+ | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
  | |■Condition (Number):   [1] CSelf10[選択箇所] ==  11  
  | |-◇Condition:  [1]  [ CSelf10[選択箇所] == 11   ] Case↓
  | | |▼ 「リセット」のときは一番上へ
@@ -950,13 +950,13 @@ WoditorEvCOMMAND_END
  | |◇End◇
  | |■Set Variable: CSelf10[選択箇所] += 1 + 0 
  | |■Set Variable: CSelf10[選択箇所] %= CSelf11[選択可能最大値] + 0 
- | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
+ | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
  | |■
  |-◇Else
  | |■Condition (Number):   [1] CSelf20[キー入力１] ==  8  /  [2] CSelf20[キー入力１] ==  4  /  [3] CSelf20[キー入力１] ==  6  
  | |-◇Condition:  [1]  [ CSelf20[キー入力１] == 8   ] Case↓
  | | |▼ 上キー
- | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 5:カーソル移動音
+ | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
  | | |■Condition (Number):   [1] CSelf10[選択箇所] ==  8  
  | | |-◇Condition:  [1]  [ CSelf10[選択箇所] == 8   ] Case↓
  | | | |▼ 「キー設定」　パッド　決定　のときはそのまま上へ
@@ -977,11 +977,11 @@ WoditorEvCOMMAND_END
  | | |◇End◇
  | | |■Set Variable: CSelf10[選択箇所] += CSelf11[選択可能最大値] - 1 
  | | |■Set Variable: CSelf10[選択箇所] %= CSelf11[選択可能最大値] + 0 
- | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
+ | | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
  | | |■
  | |-◇Condition:  [2]  [ CSelf20[キー入力１] == 4   ] Case↓
  | | |▼ 左キー
- | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 5:カーソル移動音
+ | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
  | | |■Condition (Number):   [1] CSelf10[選択箇所] >=  8  
  | | |-◇Condition:  [1]  [ CSelf10[選択箇所] >= 8   ] Case↓
  | | | |■Condition (Number):   [1] CSelf10[選択箇所] <=  10  
@@ -1015,11 +1015,11 @@ WoditorEvCOMMAND_END
  | | | |■
  | | |◇End◇
  | | |■Set Variable: CSelf13[戻る(-1) 次へ(1) 決定(2)] = -1 + 0 
- | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
+ | | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
  | | |■
  | |-◇Condition:  [3]  [ CSelf20[キー入力１] == 6   ] Case↓
  | | |▼ 右キー
- | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 5:カーソル移動音
+ | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
  | | |■Condition (Number):   [1] CSelf10[選択箇所] >=  8  
  | | |-◇Condition:  [1]  [ CSelf10[選択箇所] >= 8   ] Case↓
  | | | |■Condition (Number):   [1] CSelf10[選択箇所] <=  10  
@@ -1053,7 +1053,7 @@ WoditorEvCOMMAND_END
  | | | |■
  | | |◇End◇
  | | |■Set Variable: CSelf13[戻る(-1) 次へ(1) 決定(2)] = 1 + 0 
- | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
+ | | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
  | | |■
  | |◇End◇
  | |■
@@ -1075,13 +1075,13 @@ WoditorEvCOMMAND_END
  | |-◇Condition:  [1]  [ CSelf13[戻る(-1) 次へ(1) 決定(2)] != 0   ] Case↓
  | | |■Condition (Number):   [1] CSelf13[戻る(-1) 次へ(1) 決定(2)] ==  2  
  | | |-◇Condition:  [1]  [ CSelf13[戻る(-1) 次へ(1) 決定(2)] == 2   ] Case↓
- | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 5:カーソル移動音
+ | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
  | | | |■
  | | |◇End◇
  | | |■Write to DB(Var): VarDB[ "Base System Variables":56:0 ] (18:[System] Cursor Memory:Number) +=  1
  | | |■Write to DB(Var): VarDB[ "Base System Variables":56:0 ] (18:[System] Cursor Memory:Number) %=  2
- | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 1:表示内容更新 / 0
- | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
+ | | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 1:表示内容更新 / 0
+ | | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
  | | |▼ Ver3.00修正
  | | |■Set Variable: CSelf90[内容に変更あり] = 1 + 0 
  | | |■
@@ -1094,32 +1094,32 @@ WoditorEvCOMMAND_END
  | |▼ キーリピート速度
  | |■Condition (Number):   [1] CSelf13[戻る(-1) 次へ(1) 決定(2)] ==  2  
  | |-◇Condition:  [1]  [ CSelf13[戻る(-1) 次へ(1) 決定(2)] == 2   ] Case↓
- | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 5:カーソル移動音
+ | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
  | | |▼ Ver3.00修正
  | | |■Set Variable: CSelf90[内容に変更あり] = 1 + 0 
  | | |■
  | |◇End◇
  | |■Condition (Number):   [1] CSelf13[戻る(-1) 次へ(1) 決定(2)] ==  -1  /  [2] CSelf13[戻る(-1) 次へ(1) 決定(2)] >=  1  
  | |-◇Condition:  [1]  [ CSelf13[戻る(-1) 次へ(1) 決定(2)] == -1   ] Case↓
- | | |■Write to DB(Var): VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat:Number) +=  4
- | | |■Write to DB(Var): VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat:Number) %=  5
- | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 1:表示内容更新 / 0
- | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat Speed:Number) +=  4
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat Speed:Number) %=  5
+ | | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 1:表示内容更新 / 0
+ | | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
  | | |▼ Ver3.00修正
  | | |■Set Variable: CSelf90[内容に変更あり] = 1 + 0 
  | | |■
  | |-◇Condition:  [2]  [ CSelf13[戻る(-1) 次へ(1) 決定(2)] >= 1   ] Case↓
- | | |■Write to DB(Var): VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat:Number) +=  1
- | | |■Write to DB(Var): VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat:Number) %=  5
- | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 1:表示内容更新 / 0
- | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat Speed:Number) +=  1
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat Speed:Number) %=  5
+ | | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 1:表示内容更新 / 0
+ | | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
  | | |▼ Ver3.00修正
  | | |■Set Variable: CSelf90[内容に変更あり] = 1 + 0 
  | | |■
  | |◇End◇
  | |▼ リピート速度を再設定する
- | |■Load DB(Var):  CSelf15[一時変数] = VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat:Number) 
- | |■Call Event [Name]: ["X[移]キーリピート設定"] <CommonEv 115>  / CSelf15[一時変数]
+ | |■Load DB(Var):  CSelf15[一時変数] = VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat Speed:Number) 
+ | |■Call Event [Name]: ["X[Map]Set Key Repeat"] <CommonEv 115>  / CSelf15[一時変数]
  | |■
  |◇End◇
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -1128,7 +1128,7 @@ WoditorEvCOMMAND_END
  | |▼ 戦闘時　自動連打
  | |■Condition (Number):   [1] CSelf13[戻る(-1) 次へ(1) 決定(2)] ==  2  
  | |-◇Condition:  [1]  [ CSelf13[戻る(-1) 次へ(1) 決定(2)] == 2   ] Case↓
- | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 5:カーソル移動音
+ | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
  | | |▼ Ver3.00修正
  | | |■Set Variable: CSelf90[内容に変更あり] = 1 + 0 
  | | |■
@@ -1137,8 +1137,8 @@ WoditorEvCOMMAND_END
  | |-◇Condition:  [1]  [ CSelf13[戻る(-1) 次へ(1) 決定(2)] != 0   ] Case↓
  | | |■Write to DB(Var): VarDB[ "Base System Variables":58:0 ] (18:[System] Battle Key Hold:Number) +=  1
  | | |■Write to DB(Var): VarDB[ "Base System Variables":58:0 ] (18:[System] Battle Key Hold:Number) %=  2
- | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 1:表示内容更新 / 0
- | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
+ | | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 1:表示内容更新 / 0
+ | | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
  | | |▼ Ver3.13修正
  | | |■Set Variable: CSelf90[内容に変更あり] = 1 + 0 
  | | |■
@@ -1192,8 +1192,8 @@ WoditorEvCOMMAND_END
  | | |■Set Variable: CSelf90[内容に変更あり] = 1 + 0 
  | | |■
  | |◇End◇
- | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 1:表示内容更新 / 0
- | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
+ | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 1:表示内容更新 / 0
+ | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
  | |■
  |◇End◇
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -1238,8 +1238,8 @@ WoditorEvCOMMAND_END
  | | |■Set Variable: Sys102:SE Volume Multiplier [%] += CSelf14[変動単位] + 0 
  | | |■Set Variable: Sys102:SE Volume Multiplier [%] Lower Bound= 0 + 0 
  | | |■Set Variable: Sys102:SE Volume Multiplier [%] Upper Bound= 120 + 0 
- | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 1:表示内容更新 / 0
- | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
+ | | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 1:表示内容更新 / 0
+ | | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
  | | |▼ Ver3.00修正
  | | |■Set Variable: CSelf90[内容に変更あり] = 1 + 0 
  | | |■
@@ -1285,7 +1285,7 @@ WoditorEvCOMMAND_END
  | | | | | |-◇Condition:  [1]  [ CSelf10[選択箇所] == 5   ] Case↓
  | | | | | | |■Condition (Number):   [1] Sys52:Confirm (Keyboard) !=  CSelf21[キー入力２]  
  | | | | | | |-◇Condition:  [1]  [ Sys52:Confirm (Keyboard) != CSelf21[キー入力２]   ] Case↓
- | | | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 0:決定音
+ | | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
  | | | | | | | |■
  | | | | | | |◇End◇
  | | | | | | |■Set Variable: Sys52:Confirm (Keyboard) = CSelf21[キー入力２] + 0 
@@ -1293,7 +1293,7 @@ WoditorEvCOMMAND_END
  | | | | | |-◇Condition:  [2]  [ CSelf10[選択箇所] == 6   ] Case↓
  | | | | | | |■Condition (Number):   [1] Sys53:Cancel (Keyboard) !=  CSelf21[キー入力２]  
  | | | | | | |-◇Condition:  [1]  [ Sys53:Cancel (Keyboard) != CSelf21[キー入力２]   ] Case↓
- | | | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 0:決定音
+ | | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
  | | | | | | | |■
  | | | | | | |◇End◇
  | | | | | | |■Set Variable: Sys53:Cancel (Keyboard) = CSelf21[キー入力２] + 0 
@@ -1301,14 +1301,14 @@ WoditorEvCOMMAND_END
  | | | | | |-◇Condition:  [3]  [ CSelf10[選択箇所] == 7   ] Case↓
  | | | | | | |■Condition (Number):   [1] Sys54:Sub (Keyboard) !=  CSelf21[キー入力２]  
  | | | | | | |-◇Condition:  [1]  [ Sys54:Sub (Keyboard) != CSelf21[キー入力２]   ] Case↓
- | | | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 0:決定音
+ | | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
  | | | | | | | |■
  | | | | | | |◇End◇
  | | | | | | |■Set Variable: Sys54:Sub (Keyboard) = CSelf21[キー入力２] + 0 
  | | | | | | |■
  | | | | | |◇End◇
- | | | | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 1:表示内容更新 / 0
- | | | | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
+ | | | | | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 1:表示内容更新 / 0
+ | | | | | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
  | | | | | |▼ Ver3.00修正
  | | | | | |■Set Variable: CSelf90[内容に変更あり] = 1 + 0 
  | | | | | |■
@@ -1361,7 +1361,7 @@ WoditorEvCOMMAND_END
  | | | | | |-◇Condition:  [1]  [ CSelf10[選択箇所] == 8   ] Case↓
  | | | | | | |■Condition (Number):   [1] Sys55:Confirm (Pad) !=  CSelf21[キー入力２]  
  | | | | | | |-◇Condition:  [1]  [ Sys55:Confirm (Pad) != CSelf21[キー入力２]   ] Case↓
- | | | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 0:決定音
+ | | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
  | | | | | | | |■
  | | | | | | |◇End◇
  | | | | | | |■Set Variable: Sys55:Confirm (Pad) = CSelf21[キー入力２] + 0 
@@ -1369,7 +1369,7 @@ WoditorEvCOMMAND_END
  | | | | | |-◇Condition:  [2]  [ CSelf10[選択箇所] == 9   ] Case↓
  | | | | | | |■Condition (Number):   [1] Sys56:Cancel (Pad) !=  CSelf21[キー入力２]  
  | | | | | | |-◇Condition:  [1]  [ Sys56:Cancel (Pad) != CSelf21[キー入力２]   ] Case↓
- | | | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 0:決定音
+ | | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
  | | | | | | | |■
  | | | | | | |◇End◇
  | | | | | | |■Set Variable: Sys56:Cancel (Pad) = CSelf21[キー入力２] + 0 
@@ -1377,14 +1377,14 @@ WoditorEvCOMMAND_END
  | | | | | |-◇Condition:  [3]  [ CSelf10[選択箇所] == 10   ] Case↓
  | | | | | | |■Condition (Number):   [1] Sys57:Sub (Pad) !=  CSelf21[キー入力２]  
  | | | | | | |-◇Condition:  [1]  [ Sys57:Sub (Pad) != CSelf21[キー入力２]   ] Case↓
- | | | | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 0:決定音
+ | | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
  | | | | | | | |■
  | | | | | | |◇End◇
  | | | | | | |■Set Variable: Sys57:Sub (Pad) = CSelf21[キー入力２] + 0 
  | | | | | | |■
  | | | | | |◇End◇
- | | | | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 1:表示内容更新 / 0
- | | | | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
+ | | | | | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 1:表示内容更新 / 0
+ | | | | | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
  | | | | | |▼ Ver3.00修正
  | | | | | |■Set Variable: CSelf90[内容に変更あり] = 1 + 0 
  | | | | | |■
@@ -1404,9 +1404,9 @@ WoditorEvCOMMAND_END
  | |▼ リセット
  | |■Condition (Number):   [1] CSelf13[戻る(-1) 次へ(1) 決定(2)] ==  2  
  | |-◇Condition:  [1]  [ CSelf13[戻る(-1) 次へ(1) 決定(2)] == 2   ] Case↓
- | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 0:決定音
+ | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
  | | |■Write to DB(Var): VarDB[ "Base System Variables":56:0 ] (18:[System] Cursor Memory:Number) =  1
- | | |■Write to DB(Var): VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat:Number) =  2
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat Speed:Number) =  2
  | | |▼ Ver3.00修正==>
  | | |■Write to DB(Var): VarDB[ "Base System Variables":58:0 ] (18:[System] Battle Key Hold:Number) =  0
  | | |■Set Variable: Sys100:BGM Volume Multiplier [%] = 50 + 0 
@@ -1419,8 +1419,8 @@ WoditorEvCOMMAND_END
  | | |■Set Variable: Sys55:Confirm (Pad) = 301 + 0 
  | | |■Set Variable: Sys56:Cancel (Pad) = 302 + 0 
  | | |■Set Variable: Sys57:Sub (Pad) = 303 + 0 
- | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 1:表示内容更新 / 0
- | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
+ | | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 1:表示内容更新 / 0
+ | | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
  | | |▼ 切り替えた決定キーがキャンセルになってたらおかしなことになるので、
  | | |▼ キャンセルを離すまで停止
  | | |■Loop Start
@@ -1445,11 +1445,11 @@ WoditorEvCOMMAND_END
  | |-◇Condition:  [1]  [ CSelf13[戻る(-1) 次へ(1) 決定(2)] == 2   ] Case↓
  | | |▼ Ver3.00修正　修正された場合に変更するか質問を表示
  | | |●Label Point [設定完了] <<<<<<<<<<<<<<<<<<<<<<<<★
- | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 0:決定音
- | | |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / -1:画面消去 / -1
- | | |■Call Event [Name]: ["X[移]メニュー時文章表示"] <CommonEv 101>  / 0:初期表示 / 設定を反映しました。
+ | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
+ | | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / -1:画面消去 / -1
+ | | |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / 0:初期表示 / 設定を反映しました。
  | | |■Wait: 25 Frames
- | | |■Call Event [Name]: ["X[移]メニュー時文章表示"] <CommonEv 101>  / -1:消去 / 
+ | | |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / -1:消去 / 
 
  | | |■Wait: 15 Frames
  | | |■Exit Event
@@ -1468,8 +1468,8 @@ WoditorEvCOMMAND_END
  |●Label Point [変更前に戻す＆終了] <<<<<<<<<<<<<<<<<<<<<<<<★
  |■ Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
  |■Write to DB(Var): VarDB[ "Base System Variables":56:0 ] (18:[System] Cursor Memory:Number) =  CSelf60[[保存]キー位置保存]
- |■Write to DB(Var): VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat:Number) =  CSelf61[[保存]キーリピート]
- |■Call Event [Name]: ["X[移]キーリピート設定"] <CommonEv 115>  / CSelf61[[保存]キーリピート]
+ |■Write to DB(Var): VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat Speed:Number) =  CSelf61[[保存]キーリピート]
+ |■Call Event [Name]: ["X[Map]Set Key Repeat"] <CommonEv 115>  / CSelf61[[保存]キーリピート]
  |■Write to DB(Var): VarDB[ "Base System Variables":58:0 ] (18:[System] Battle Key Hold:Number) =  CSelf62[[保存]戦闘時連打]
  |■Set Variable: Sys100:BGM Volume Multiplier [%] = CSelf63[[保存]ＢＧＭ音量] + 0 
  |■Set Variable: Sys101:BGS Volume Multiplier [%] = CSelf63[[保存]ＢＧＭ音量] + 0 
@@ -1480,9 +1480,9 @@ WoditorEvCOMMAND_END
  |■Set Variable: Sys55:Confirm (Pad) = CSelf68[[保存]パッド決定] + 0 
  |■Set Variable: Sys56:Cancel (Pad) = CSelf69[[保存]パッドキャンセル] + 0 
  |■Set Variable: Sys57:Sub (Pad) = CSelf70[[保存]パッドサブ] + 0 
- |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 1:キャンセル音
- |■Call Event [Name]: ["X[移]システム画面描画"] <CommonEv 95>  / -1:画面消去 / -1
- |■Call Event [Name]: ["X[移]メニュー時文章表示"] <CommonEv 101>  / -1:消去 / 
+ |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 1:Cancel Sound
+ |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / -1:画面消去 / -1
+ |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / -1:消去 / 
 
  |■Wait: 15 Frames
  |■

@@ -184,7 +184,7 @@ DEFAULT_VAL_1=0
 0,"",<<!--DATANAME--!>>Menu Cursor Position,
 0,"",<<!--DATANAME--!>>---------------------------,
 0,"",<<!--DATANAME--!>>[System] Cursor Memory,
-0,"",<<!--DATANAME--!>>[System] Key Repeat,
+0,"",<<!--DATANAME--!>>[System] Key Repeat Speed,
 0,"",<<!--DATANAME--!>>[System] Battle Key Hold,
 0,"",<<!--DATANAME--!>>---------------------------,
 0,"",<<!--DATANAME--!>>[Store] Menu Items Cursor Pos,

@@ -1,19 +1,19 @@
 COMMON_ID=30
-COMMON_NAME=◆[戦闘用]メッセージ表示
+COMMON_NAME=◆[Battle] Show Message
 COMMAND_COLOR=0
 TRIGGER=32
 TRIGGER_TARGET=2000000
 TRIGGER_VAL=0
-MEMO=戦闘中のみ有効、画面中央に入力メッセージを表示します。戦闘中のみ有効。
+MEMO=Only in battle, shows a message in the middle of the screen.
 VALINPUT_NUM=1
 STRINPUT_NUM=1
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=モード
+VALINPUT_NAME_0=Mode
 VALINPUT_NAME_1=
 VALINPUT_NAME_2=
 VALINPUT_NAME_3=
 VALINPUT_NAME_4=
-VALINPUT_NAME_5=
+VALINPUT_NAME_5=Message
 VALINPUT_NAME_6=
 VALINPUT_NAME_7=
 VALINPUT_NAME_8=
@@ -32,21 +32,11 @@ LOADTYPE8=0
 LOADTYPE9=0
 CHOICE_STR_NUM=10
 CHOICE_STR_0_NUM=2
-CHOICE_STR_0_0=流れるメッセージで表示
-CHOICE_STR_0_1=一時停止メッセージで表示
-CHOICE_STR_1_NUM=7
-CHOICE_STR_1_0=どこかに
-CHOICE_STR_1_1=コマンド1
-CHOICE_STR_1_2=コマンド2
-CHOICE_STR_1_3=コマンド3
-CHOICE_STR_1_4=コマンド4
-CHOICE_STR_1_5=コマンド5
-CHOICE_STR_1_6=コマンド6
+CHOICE_STR_0_0=Active Message
+CHOICE_STR_0_1=Pausing Message
+CHOICE_STR_1_NUM=0
 CHOICE_STR_2_NUM=0
-CHOICE_STR_3_NUM=3
-CHOICE_STR_3_0=<なし>
-CHOICE_STR_3_1=<デフォルト>
-CHOICE_STR_3_2=<デフォルト>
+CHOICE_STR_3_NUM=0
 CHOICE_STR_4_NUM=0
 CHOICE_STR_5_NUM=0
 CHOICE_STR_6_NUM=0
@@ -57,22 +47,9 @@ CHOICE_VAL_NUM=10
 CHOICE_VAL_0_NUM=2
 CHOICE_VAL_0_0=0
 CHOICE_VAL_0_1=1
-CHOICE_VAL_1_NUM=7
-CHOICE_VAL_1_0=-1
-CHOICE_VAL_1_1=1
-CHOICE_VAL_1_2=2
-CHOICE_VAL_1_3=3
-CHOICE_VAL_1_4=4
-CHOICE_VAL_1_5=5
-CHOICE_VAL_1_6=6
-CHOICE_VAL_2_NUM=3
-CHOICE_VAL_2_0=1
-CHOICE_VAL_2_1=6
-CHOICE_VAL_2_2=0
-CHOICE_VAL_3_NUM=3
-CHOICE_VAL_3_0=0
-CHOICE_VAL_3_1=1
-CHOICE_VAL_3_2=1
+CHOICE_VAL_1_NUM=0
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=0
 CHOICE_VAL_4_NUM=0
 CHOICE_VAL_5_NUM=0
 CHOICE_VAL_6_NUM=0
@@ -87,12 +64,12 @@ DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
 RETURN_VAL_NAME=
 RETURN_VAL_TARGET=-1
-CSELF_NAME_0=モード
+CSELF_NAME_0=Mode
 CSELF_NAME_1=
 CSELF_NAME_2=
 CSELF_NAME_3=
 CSELF_NAME_4=
-CSELF_NAME_5=
+CSELF_NAME_5=Message
 CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
@@ -192,14 +169,14 @@ COMMAND_NUM=14
 WoditorEvCOMMAND_START
 [111][7,0]<0>(2,1600000,0,2,1600000,1,2)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("流れるメッセージ")
-[300][4,1]<1>(0,17,0,1600005)("X[戦]戦闘メッセージ表示")
+[103][0,1]<1>()("Active Message")
+[300][4,1]<1>(0,17,0,1600005)("X[Bat]Display Battle Message")
 [0][0,0]<1>()()
 [401][1,0]<0>(2)()
-[103][0,1]<1>()("一時停止メッセージ")
-[300][4,1]<1>(0,17,0,1600005)("X[戦]警告文章表示")
+[103][0,1]<1>()("Pausing Message")
+[300][4,1]<1>(0,17,0,1600005)("X[Bat]Display Warning Message")
 [123][2,0]<1>(1600010,176)()
-[300][4,1]<1>(0,17,-1,1600005)("X[戦]警告文章表示")
+[300][4,1]<1>(0,17,-1,1600005)("X[Bat]Display Warning Message")
 [180][1,0]<1>(10)()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
@@ -207,16 +184,16 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Condition (Number):   [1] CSelf0[モード] ==  0  /  [2] CSelf0[モード] ==  1  
--◇Condition:  [1]  [ CSelf0[モード] == 0   ] Case↓
- |▼ 流れるメッセージ
- |■Call Event [Name]: ["X[戦]戦闘メッセージ表示"] <CommonEv 182>  / 0:表示→自動削除 / CSelf5
+■Condition (Number):   [1] CSelf0[Mode] ==  0  /  [2] CSelf0[Mode] ==  1  
+-◇Condition:  [1]  [ CSelf0[Mode] == 0   ] Case↓
+ |▼ Active Message
+ |■Call Event [Name]: ["X[Bat]Display Battle Message"] <CommonEv 182>  / 0:表示→自動削除 / CSelf5[Message]
  |■
--◇Condition:  [2]  [ CSelf0[モード] == 1   ] Case↓
- |▼ 一時停止メッセージ
- |■Call Event [Name]: ["X[戦]警告文章表示"] <CommonEv 184>  / 0:初期表示 / CSelf5
+-◇Condition:  [2]  [ CSelf0[Mode] == 1   ] Case↓
+ |▼ Pausing Message
+ |■Call Event [Name]: ["X[Bat]Display Warning Message"] <CommonEv 184>  / 0:初期表示 / CSelf5[Message]
  |■Key Input: CSelf10 [Wait For Input <!>]  Confirm(10) Cancel(11)
- |■Call Event [Name]: ["X[戦]警告文章表示"] <CommonEv 184>  / -1:消去 / CSelf5
+ |■Call Event [Name]: ["X[Bat]Display Warning Message"] <CommonEv 184>  / -1:消去 / CSelf5[Message]
  |■Wait: 10 Frames
  |■
 ◇End◇

@@ -52,12 +52,12 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ■Show Message:Welcome! You can do shopping like this using the\nincluded base system.
-■Call Event: Common 33: [ 【1】 お店 初期化 ]
-■Call Event: Common 34: [ 【2】 お店 商品の追加 ] / 1:ｱｲﾃﾑ[A] / 14:Medicine Bottle / -1:<なし> / -1:<なし>
-■Call Event: Common 34: [ 【2】 お店 商品の追加 ] / 2:武器[B] / -3:<なし> / 1:Mini Blade / -1:<なし>
-■Call Event: Common 34: [ 【2】 お店 商品の追加 ] / 3:防具[C] / -3:<なし> / -1:<なし> / 29:Machine Gun
-■Call Event: Common 34: [ 【2】 お店 商品の追加 ] / 3:防具[C] / -3:<なし> / -1:<なし> / 30:Item Bag
-■Call Event: Common 34: [ 【2】 お店 商品の追加 ] / 1:ｱｲﾃﾑ[A] / 18:Machine Gun Bullets / -1:<なし> / -1:<なし>
-■Call Event: Common 35: [ 【3】 お店処理 実行 ] / 3:売り・買い 両方
+■Call Event: Common 33: [ [1] Shop: Initialize ]
+■Call Event: Common 34: [ [2] Shop: Add Merchandise ] / 1:Item [A] / 14:Medicine Bottle / -1:<None> / -1:<None>
+■Call Event: Common 34: [ [2] Shop: Add Merchandise ] / 2:Weapon [B] / -3:<None> / 1:Mini Blade / -1:<None>
+■Call Event: Common 34: [ [2] Shop: Add Merchandise ] / 3:Armor [C] / -3:<None> / -1:<None> / 29:Machine Gun
+■Call Event: Common 34: [ [2] Shop: Add Merchandise ] / 3:Armor [C] / -3:<None> / -1:<None> / 30:Item Bag
+■Call Event: Common 34: [ [2] Shop: Add Merchandise ] / 1:Item [A] / 18:Machine Gun Bullets / -1:<None> / -1:<None>
+■Call Event: Common 35: [ [3] Shop: Open ] / 3:Sell and Buy
 ■
 [COMMAND_TEXT_END]

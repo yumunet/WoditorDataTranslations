@@ -1,5 +1,5 @@
 COMMON_ID=49
-COMMON_NAME=X[共]システムSE再生
+COMMON_NAME=X[Com]Play System Sound
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -8,7 +8,7 @@ MEMO=
 VALINPUT_NUM=1
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=再生音
+VALINPUT_NAME_0=Sound to Play
 VALINPUT_NAME_1=
 VALINPUT_NAME_2=
 VALINPUT_NAME_3=
@@ -32,24 +32,24 @@ LOADTYPE8=0
 LOADTYPE9=0
 CHOICE_STR_NUM=10
 CHOICE_STR_0_NUM=18
-CHOICE_STR_0_0=決定音
-CHOICE_STR_0_1=キャンセル音
-CHOICE_STR_0_2=ブザー音
-CHOICE_STR_0_3=装備音
-CHOICE_STR_0_4=装備解除音
-CHOICE_STR_0_5=カーソル移動音
-CHOICE_STR_0_6=メニュー開く
-CHOICE_STR_0_7=メニュー閉じる
-CHOICE_STR_0_8=セーブ音
-CHOICE_STR_0_9=ロード音
-CHOICE_STR_0_10=購入音
-CHOICE_STR_0_11=売却音
-CHOICE_STR_0_12=行動前
-CHOICE_STR_0_13=ダメージ音
-CHOICE_STR_0_14=撃破音
-CHOICE_STR_0_15=戦闘開始
-CHOICE_STR_0_16=各種入手音
-CHOICE_STR_0_17=レベルアップ
+CHOICE_STR_0_0=Confirm Sound
+CHOICE_STR_0_1=Cancel Sound
+CHOICE_STR_0_2=Buzzer Sound
+CHOICE_STR_0_3=Equip Sound
+CHOICE_STR_0_4=Unequip Sound
+CHOICE_STR_0_5=Cursor Move Sound
+CHOICE_STR_0_6=Menu Open Sound
+CHOICE_STR_0_7=Menu Close Sound
+CHOICE_STR_0_8=Save Sound
+CHOICE_STR_0_9=Load Sound
+CHOICE_STR_0_10=Buy Sound
+CHOICE_STR_0_11=Sell Sound
+CHOICE_STR_0_12=Before Action
+CHOICE_STR_0_13=Damage Sound
+CHOICE_STR_0_14=Enemy Defeat Sound
+CHOICE_STR_0_15=Battle Start Sound
+CHOICE_STR_0_16=Battle Result Sound
+CHOICE_STR_0_17=Level Up Sound
 CHOICE_STR_1_NUM=0
 CHOICE_STR_2_NUM=0
 CHOICE_STR_3_NUM=0
@@ -96,7 +96,7 @@ DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
 RETURN_VAL_NAME=
 RETURN_VAL_TARGET=-1
-CSELF_NAME_0=再生効果音タイプ
+CSELF_NAME_0=Sound Type
 CSELF_NAME_1=
 CSELF_NAME_2=
 CSELF_NAME_3=
@@ -105,8 +105,8 @@ CSELF_NAME_5=
 CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
-CSELF_NAME_9=効果音
-CSELF_NAME_10=再生SE番号
+CSELF_NAME_9=Sound File
+CSELF_NAME_10=
 CSELF_NAME_11=
 CSELF_NAME_12=
 CSELF_NAME_13=
@@ -195,106 +195,106 @@ CSELF_NAME_95=
 CSELF_NAME_96=
 CSELF_NAME_97=
 CSELF_NAME_98=
-CSELF_NAME_99=終了フラグ
+CSELF_NAME_99=
 COMMAND_NUM=119
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
-[103][0,1]<0>()("　効果音を再生するコモンイベントです。")
-[103][0,1]<0>()("　基本システム内の主な効果音は、このコモンを通じて再生されています。")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("  A common event to play sound effects.")
+[103][0,1]<0>()("  The main sound effects in the base system are played through this common event.")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("　基本システム中の特定の効果音を変更したい場合は、ここから手動で設定してください。")
-[103][0,1]<0>()("　（ただし「選択肢」時のカーソル移動音や決定音には反映されませんので、")
-[103][0,1]<0>()("　　それはシステム変数17～19に設定して下さい）")
+[103][0,1]<0>()("  To change specific sound effects in the base system, edit them manually here.")
+[103][0,1]<0>()("  (However, this will not affect cursor and selection sounds for Choice.")
+[103][0,1]<0>()("   For those, please set System Variables 17 to 19.)")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("　ここで使われているSEは、全て「SystemFile」フォルダ内に入っています。")
+[103][0,1]<0>()("  All of the sounds used here are in the <dqrt>SystemFile<dqrt> folder.")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [122][2,1]<0>(1600009,0)("")
 [103][0,1]<0>()(" ")
 [111][10,0]<0>(19,1600000,0,2,1600000,1,2,1600000,5,2)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("決定音")
+[103][0,1]<1>()("Confirm Sound")
 [250][5,4]<1>(16,0,6,332288,1600009)("","Images/Sounds","","Confirm Sound File")
 [0][0,0]<1>()()
 [401][1,0]<0>(2)()
-[103][0,1]<1>()("キャンセル音")
+[103][0,1]<1>()("Cancel Sound")
 [250][5,4]<1>(16,0,7,332288,1600009)("","Images/Sounds","","Cancel Sound File")
 [0][0,0]<1>()()
 [401][1,0]<0>(3)()
-[103][0,1]<1>()("カーソル移動音")
+[103][0,1]<1>()("Cursor Move Sound")
 [250][5,4]<1>(16,0,8,332288,1600009)("","Images/Sounds","","Cursor Sound File")
 [0][0,0]<1>()()
 [420][1,0]<0>(0)()
 [111][10,0]<1>(19,1600000,2,2,1600000,3,2,1600000,4,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("ブザー音")
+[103][0,1]<2>()("Buzzer Sound")
 [250][5,4]<2>(16,0,9,332288,1600009)("","Images/Sounds","","Buzzer Sound File")
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[103][0,1]<2>()("装備音")
+[103][0,1]<2>()("Equip Sound")
 [250][5,4]<2>(16,0,10,332288,1600009)("","Images/Sounds","","Equip Sound File")
 [0][0,0]<2>()()
 [401][1,0]<1>(3)()
-[103][0,1]<2>()("装備解除音")
+[103][0,1]<2>()("Unequip Sound")
 [250][5,4]<2>(16,0,11,332288,1600009)("","Images/Sounds","","Unequip Sound File")
 [0][0,0]<2>()()
 [420][1,0]<1>(0)()
 [111][10,0]<2>(19,1600000,6,2,1600000,7,2,1600000,8,2)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("メニュー開く")
+[103][0,1]<3>()("Menu Open Sound")
 [250][5,4]<3>(16,0,12,332288,1600009)("","Images/Sounds","","Menu Open Sound File")
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
-[103][0,1]<3>()("メニュー閉じる")
+[103][0,1]<3>()("Menu Close Sound")
 [250][5,4]<3>(16,0,13,332288,1600009)("","Images/Sounds","","Menu Close Sound File")
 [0][0,0]<3>()()
 [401][1,0]<2>(3)()
-[103][0,1]<3>()("セーブ音")
+[103][0,1]<3>()("Save Sound")
 [250][5,4]<3>(16,0,14,332288,1600009)("","Images/Sounds","","Save Sound File")
 [0][0,0]<3>()()
 [420][1,0]<2>(0)()
 [111][4,0]<3>(17,1600000,9,2)()
 [401][1,0]<3>(1)()
-[103][0,1]<4>()("ロード音")
+[103][0,1]<4>()("Load Sound")
 [250][5,4]<4>(16,0,15,332288,1600009)("","Images/Sounds","","Load Sound File")
 [0][0,0]<4>()()
 [420][1,0]<3>(0)()
 [111][7,0]<4>(18,1600000,20,2,1600000,21,2)()
 [401][1,0]<4>(1)()
-[103][0,1]<5>()("購入音")
+[103][0,1]<5>()("Buy Sound")
 [250][5,4]<5>(16,0,16,332288,1600009)("","Images/Sounds","","Buy Sound File")
 [0][0,0]<5>()()
 [401][1,0]<4>(2)()
-[103][0,1]<5>()("売却音")
+[103][0,1]<5>()("Sell Sound")
 [250][5,4]<5>(16,0,17,332288,1600009)("","Images/Sounds","","Sell Sound File")
 [0][0,0]<5>()()
 [420][1,0]<4>(0)()
 [111][10,0]<5>(19,1600000,50,2,1600000,51,2,1600000,52,2)()
 [401][1,0]<5>(1)()
-[103][0,1]<6>()("戦闘　行動前")
+[103][0,1]<6>()("Battle: Before Action")
 [250][5,4]<6>(16,0,18,332288,1600009)("","Images/Sounds","","Battle Action Sound File")
 [0][0,0]<6>()()
 [401][1,0]<5>(2)()
-[103][0,1]<6>()("戦闘　ダメージ音")
+[103][0,1]<6>()("Battle: Damage Sound")
 [250][5,4]<6>(16,0,19,332288,1600009)("","Images/Sounds","","Damage Sound File")
 [0][0,0]<6>()()
 [401][1,0]<5>(3)()
-[103][0,1]<6>()("戦闘　撃破音")
+[103][0,1]<6>()("Battle: Enemy Defeat Sound")
 [250][5,4]<6>(16,0,20,332288,1600009)("","Images/Sounds","","Defeat Sound File")
 [0][0,0]<6>()()
 [420][1,0]<5>(0)()
 [111][10,0]<6>(3,1600000,53,2,1600000,54,2,1600000,55,2)()
 [401][1,0]<6>(1)()
-[103][0,1]<7>()("戦闘開始音")
+[103][0,1]<7>()("Battle Start Sound")
 [250][5,4]<7>(16,0,21,332288,1600009)("","Images/Sounds","","Battle Start Sound File")
 [0][0,0]<7>()()
 [401][1,0]<6>(2)()
-[103][0,1]<7>()("戦闘各種入手音")
+[103][0,1]<7>()("Battle Result Sound (EXP/Money/Item Obtained)")
 [250][5,4]<7>(16,0,22,332288,1600009)("","Images/Sounds","","Battle Result Sound File")
 [0][0,0]<7>()()
 [401][1,0]<6>(3)()
-[103][0,1]<7>()("レベルアップ")
+[103][0,1]<7>()("Level Up Sound")
 [250][5,4]<7>(16,0,23,332288,1600009)("","Images/Sounds","","Level Up Sound File")
 [0][0,0]<7>()()
 [499][0,0]<6>()()
@@ -310,10 +310,10 @@ WoditorEvCOMMAND_START
 [499][0,0]<1>()()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
-[103][0,1]<0>()("何かファイルがあれば再生する")
+[103][0,1]<0>()("If there's a file, play it.")
 [112][2,4]<0>(1,270035465)("","","","")
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("音量、周波数が０％になっているが、自動で100になるので問題なし")
+[103][0,1]<1>()("Volume and frequency are 0%, but they automatically become 100, so not a problem.")
 [140][6,1]<1>(33554464,0,0,0,0,0)("\cself[9]")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
@@ -322,102 +322,102 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
-▼ 　効果音を再生するコモンイベントです。
-▼ 　基本システム内の主な効果音は、このコモンを通じて再生されています。
+▼ [Process Overview]
+▼   A common event to play sound effects.
+▼   The main sound effects in the base system are played through this common event.
 ▼  
-▼ 　基本システム中の特定の効果音を変更したい場合は、ここから手動で設定してください。
-▼ 　（ただし「選択肢」時のカーソル移動音や決定音には反映されませんので、
-▼ 　　それはシステム変数17～19に設定して下さい）
+▼   To change specific sound effects in the base system, edit them manually here.
+▼   (However, this will not affect cursor and selection sounds for Choice.
+▼    For those, please set System Variables 17 to 19.)
 ▼  
-▼ 　ここで使われているSEは、全て「SystemFile」フォルダ内に入っています。
+▼   All of the sounds used here are in the "SystemFile" folder.
 ▼ ―――――――――――――――――――――――――――――――――――
-■Set String: CSelf9[効果音] = ""
+■Set String: CSelf9[Sound File] = ""
 ▼  
-■Condition (Number):   [1] CSelf0[再生効果音タイプ] ==  0  /  [2] CSelf0[再生効果音タイプ] ==  1  /  [3] CSelf0[再生効果音タイプ] ==  5  
--◇Condition:  [1]  [ CSelf0[再生効果音タイプ] == 0   ] Case↓
- |▼ 決定音
- |■Load DB(User):  CSelf9[効果音] = UserDB[ "Images/Sounds":0:"Confirm Sound File" ] (16:Basic Images/Sounds:3) 
+■Condition (Number):   [1] CSelf0[Sound Type] ==  0  /  [2] CSelf0[Sound Type] ==  1  /  [3] CSelf0[Sound Type] ==  5  
+-◇Condition:  [1]  [ CSelf0[Sound Type] == 0   ] Case↓
+ |▼ Confirm Sound
+ |■Load DB(User):  CSelf9[Sound File] = UserDB[ "Images/Sounds":0:"Confirm Sound File" ] (16:Basic Images/Sounds:3) 
  |■
--◇Condition:  [2]  [ CSelf0[再生効果音タイプ] == 1   ] Case↓
- |▼ キャンセル音
- |■Load DB(User):  CSelf9[効果音] = UserDB[ "Images/Sounds":0:"Cancel Sound File" ] (16:Basic Images/Sounds:4) 
+-◇Condition:  [2]  [ CSelf0[Sound Type] == 1   ] Case↓
+ |▼ Cancel Sound
+ |■Load DB(User):  CSelf9[Sound File] = UserDB[ "Images/Sounds":0:"Cancel Sound File" ] (16:Basic Images/Sounds:4) 
  |■
--◇Condition:  [3]  [ CSelf0[再生効果音タイプ] == 5   ] Case↓
- |▼ カーソル移動音
- |■Load DB(User):  CSelf9[効果音] = UserDB[ "Images/Sounds":0:"Cursor Sound File" ] (16:Basic Images/Sounds:5) 
+-◇Condition:  [3]  [ CSelf0[Sound Type] == 5   ] Case↓
+ |▼ Cursor Move Sound
+ |■Load DB(User):  CSelf9[Sound File] = UserDB[ "Images/Sounds":0:"Cursor Sound File" ] (16:Basic Images/Sounds:5) 
  |■
 -◇Else
- |■Condition (Number):   [1] CSelf0[再生効果音タイプ] ==  2  /  [2] CSelf0[再生効果音タイプ] ==  3  /  [3] CSelf0[再生効果音タイプ] ==  4  
- |-◇Condition:  [1]  [ CSelf0[再生効果音タイプ] == 2   ] Case↓
- | |▼ ブザー音
- | |■Load DB(User):  CSelf9[効果音] = UserDB[ "Images/Sounds":0:"Buzzer Sound File" ] (16:Basic Images/Sounds:6) 
+ |■Condition (Number):   [1] CSelf0[Sound Type] ==  2  /  [2] CSelf0[Sound Type] ==  3  /  [3] CSelf0[Sound Type] ==  4  
+ |-◇Condition:  [1]  [ CSelf0[Sound Type] == 2   ] Case↓
+ | |▼ Buzzer Sound
+ | |■Load DB(User):  CSelf9[Sound File] = UserDB[ "Images/Sounds":0:"Buzzer Sound File" ] (16:Basic Images/Sounds:6) 
  | |■
- |-◇Condition:  [2]  [ CSelf0[再生効果音タイプ] == 3   ] Case↓
- | |▼ 装備音
- | |■Load DB(User):  CSelf9[効果音] = UserDB[ "Images/Sounds":0:"Equip Sound File" ] (16:Basic Images/Sounds:7) 
+ |-◇Condition:  [2]  [ CSelf0[Sound Type] == 3   ] Case↓
+ | |▼ Equip Sound
+ | |■Load DB(User):  CSelf9[Sound File] = UserDB[ "Images/Sounds":0:"Equip Sound File" ] (16:Basic Images/Sounds:7) 
  | |■
- |-◇Condition:  [3]  [ CSelf0[再生効果音タイプ] == 4   ] Case↓
- | |▼ 装備解除音
- | |■Load DB(User):  CSelf9[効果音] = UserDB[ "Images/Sounds":0:"Unequip Sound File" ] (16:Basic Images/Sounds:8) 
+ |-◇Condition:  [3]  [ CSelf0[Sound Type] == 4   ] Case↓
+ | |▼ Unequip Sound
+ | |■Load DB(User):  CSelf9[Sound File] = UserDB[ "Images/Sounds":0:"Unequip Sound File" ] (16:Basic Images/Sounds:8) 
  | |■
  |-◇Else
- | |■Condition (Number):   [1] CSelf0[再生効果音タイプ] ==  6  /  [2] CSelf0[再生効果音タイプ] ==  7  /  [3] CSelf0[再生効果音タイプ] ==  8  
- | |-◇Condition:  [1]  [ CSelf0[再生効果音タイプ] == 6   ] Case↓
- | | |▼ メニュー開く
- | | |■Load DB(User):  CSelf9[効果音] = UserDB[ "Images/Sounds":0:"Menu Open Sound File" ] (16:Basic Images/Sounds:9) 
+ | |■Condition (Number):   [1] CSelf0[Sound Type] ==  6  /  [2] CSelf0[Sound Type] ==  7  /  [3] CSelf0[Sound Type] ==  8  
+ | |-◇Condition:  [1]  [ CSelf0[Sound Type] == 6   ] Case↓
+ | | |▼ Menu Open Sound
+ | | |■Load DB(User):  CSelf9[Sound File] = UserDB[ "Images/Sounds":0:"Menu Open Sound File" ] (16:Basic Images/Sounds:9) 
  | | |■
- | |-◇Condition:  [2]  [ CSelf0[再生効果音タイプ] == 7   ] Case↓
- | | |▼ メニュー閉じる
- | | |■Load DB(User):  CSelf9[効果音] = UserDB[ "Images/Sounds":0:"Menu Close Sound File" ] (16:Basic Images/Sounds:10) 
+ | |-◇Condition:  [2]  [ CSelf0[Sound Type] == 7   ] Case↓
+ | | |▼ Menu Close Sound
+ | | |■Load DB(User):  CSelf9[Sound File] = UserDB[ "Images/Sounds":0:"Menu Close Sound File" ] (16:Basic Images/Sounds:10) 
  | | |■
- | |-◇Condition:  [3]  [ CSelf0[再生効果音タイプ] == 8   ] Case↓
- | | |▼ セーブ音
- | | |■Load DB(User):  CSelf9[効果音] = UserDB[ "Images/Sounds":0:"Save Sound File" ] (16:Basic Images/Sounds:11) 
+ | |-◇Condition:  [3]  [ CSelf0[Sound Type] == 8   ] Case↓
+ | | |▼ Save Sound
+ | | |■Load DB(User):  CSelf9[Sound File] = UserDB[ "Images/Sounds":0:"Save Sound File" ] (16:Basic Images/Sounds:11) 
  | | |■
  | |-◇Else
- | | |■Condition (Number):   [1] CSelf0[再生効果音タイプ] ==  9  
- | | |-◇Condition:  [1]  [ CSelf0[再生効果音タイプ] == 9   ] Case↓
- | | | |▼ ロード音
- | | | |■Load DB(User):  CSelf9[効果音] = UserDB[ "Images/Sounds":0:"Load Sound File" ] (16:Basic Images/Sounds:12) 
+ | | |■Condition (Number):   [1] CSelf0[Sound Type] ==  9  
+ | | |-◇Condition:  [1]  [ CSelf0[Sound Type] == 9   ] Case↓
+ | | | |▼ Load Sound
+ | | | |■Load DB(User):  CSelf9[Sound File] = UserDB[ "Images/Sounds":0:"Load Sound File" ] (16:Basic Images/Sounds:12) 
  | | | |■
  | | |-◇Else
- | | | |■Condition (Number):   [1] CSelf0[再生効果音タイプ] ==  20  /  [2] CSelf0[再生効果音タイプ] ==  21  
- | | | |-◇Condition:  [1]  [ CSelf0[再生効果音タイプ] == 20   ] Case↓
- | | | | |▼ 購入音
- | | | | |■Load DB(User):  CSelf9[効果音] = UserDB[ "Images/Sounds":0:"Buy Sound File" ] (16:Basic Images/Sounds:13) 
+ | | | |■Condition (Number):   [1] CSelf0[Sound Type] ==  20  /  [2] CSelf0[Sound Type] ==  21  
+ | | | |-◇Condition:  [1]  [ CSelf0[Sound Type] == 20   ] Case↓
+ | | | | |▼ Buy Sound
+ | | | | |■Load DB(User):  CSelf9[Sound File] = UserDB[ "Images/Sounds":0:"Buy Sound File" ] (16:Basic Images/Sounds:13) 
  | | | | |■
- | | | |-◇Condition:  [2]  [ CSelf0[再生効果音タイプ] == 21   ] Case↓
- | | | | |▼ 売却音
- | | | | |■Load DB(User):  CSelf9[効果音] = UserDB[ "Images/Sounds":0:"Sell Sound File" ] (16:Basic Images/Sounds:14) 
+ | | | |-◇Condition:  [2]  [ CSelf0[Sound Type] == 21   ] Case↓
+ | | | | |▼ Sell Sound
+ | | | | |■Load DB(User):  CSelf9[Sound File] = UserDB[ "Images/Sounds":0:"Sell Sound File" ] (16:Basic Images/Sounds:14) 
  | | | | |■
  | | | |-◇Else
- | | | | |■Condition (Number):   [1] CSelf0[再生効果音タイプ] ==  50  /  [2] CSelf0[再生効果音タイプ] ==  51  /  [3] CSelf0[再生効果音タイプ] ==  52  
- | | | | |-◇Condition:  [1]  [ CSelf0[再生効果音タイプ] == 50   ] Case↓
- | | | | | |▼ 戦闘　行動前
- | | | | | |■Load DB(User):  CSelf9[効果音] = UserDB[ "Images/Sounds":0:"Battle Action Sound File" ] (16:Basic Images/Sounds:15) 
+ | | | | |■Condition (Number):   [1] CSelf0[Sound Type] ==  50  /  [2] CSelf0[Sound Type] ==  51  /  [3] CSelf0[Sound Type] ==  52  
+ | | | | |-◇Condition:  [1]  [ CSelf0[Sound Type] == 50   ] Case↓
+ | | | | | |▼ Battle: Before Action
+ | | | | | |■Load DB(User):  CSelf9[Sound File] = UserDB[ "Images/Sounds":0:"Battle Action Sound File" ] (16:Basic Images/Sounds:15) 
  | | | | | |■
- | | | | |-◇Condition:  [2]  [ CSelf0[再生効果音タイプ] == 51   ] Case↓
- | | | | | |▼ 戦闘　ダメージ音
- | | | | | |■Load DB(User):  CSelf9[効果音] = UserDB[ "Images/Sounds":0:"Damage Sound File" ] (16:Basic Images/Sounds:16) 
+ | | | | |-◇Condition:  [2]  [ CSelf0[Sound Type] == 51   ] Case↓
+ | | | | | |▼ Battle: Damage Sound
+ | | | | | |■Load DB(User):  CSelf9[Sound File] = UserDB[ "Images/Sounds":0:"Damage Sound File" ] (16:Basic Images/Sounds:16) 
  | | | | | |■
- | | | | |-◇Condition:  [3]  [ CSelf0[再生効果音タイプ] == 52   ] Case↓
- | | | | | |▼ 戦闘　撃破音
- | | | | | |■Load DB(User):  CSelf9[効果音] = UserDB[ "Images/Sounds":0:"Defeat Sound File" ] (16:Basic Images/Sounds:17) 
+ | | | | |-◇Condition:  [3]  [ CSelf0[Sound Type] == 52   ] Case↓
+ | | | | | |▼ Battle: Enemy Defeat Sound
+ | | | | | |■Load DB(User):  CSelf9[Sound File] = UserDB[ "Images/Sounds":0:"Defeat Sound File" ] (16:Basic Images/Sounds:17) 
  | | | | | |■
  | | | | |-◇Else
- | | | | | |■Condition (Number):   [1] CSelf0[再生効果音タイプ] ==  53  /  [2] CSelf0[再生効果音タイプ] ==  54  /  [3] CSelf0[再生効果音タイプ] ==  55  
- | | | | | |-◇Condition:  [1]  [ CSelf0[再生効果音タイプ] == 53   ] Case↓
- | | | | | | |▼ 戦闘開始音
- | | | | | | |■Load DB(User):  CSelf9[効果音] = UserDB[ "Images/Sounds":0:"Battle Start Sound File" ] (16:Basic Images/Sounds:18) 
+ | | | | | |■Condition (Number):   [1] CSelf0[Sound Type] ==  53  /  [2] CSelf0[Sound Type] ==  54  /  [3] CSelf0[Sound Type] ==  55  
+ | | | | | |-◇Condition:  [1]  [ CSelf0[Sound Type] == 53   ] Case↓
+ | | | | | | |▼ Battle Start Sound
+ | | | | | | |■Load DB(User):  CSelf9[Sound File] = UserDB[ "Images/Sounds":0:"Battle Start Sound File" ] (16:Basic Images/Sounds:18) 
  | | | | | | |■
- | | | | | |-◇Condition:  [2]  [ CSelf0[再生効果音タイプ] == 54   ] Case↓
- | | | | | | |▼ 戦闘各種入手音
- | | | | | | |■Load DB(User):  CSelf9[効果音] = UserDB[ "Images/Sounds":0:"Battle Result Sound File" ] (16:Basic Images/Sounds:19) 
+ | | | | | |-◇Condition:  [2]  [ CSelf0[Sound Type] == 54   ] Case↓
+ | | | | | | |▼ Battle Result Sound (EXP/Money/Item Obtained)
+ | | | | | | |■Load DB(User):  CSelf9[Sound File] = UserDB[ "Images/Sounds":0:"Battle Result Sound File" ] (16:Basic Images/Sounds:19) 
  | | | | | | |■
- | | | | | |-◇Condition:  [3]  [ CSelf0[再生効果音タイプ] == 55   ] Case↓
- | | | | | | |▼ レベルアップ
- | | | | | | |■Load DB(User):  CSelf9[効果音] = UserDB[ "Images/Sounds":0:"Level Up Sound File" ] (16:Basic Images/Sounds:20) 
+ | | | | | |-◇Condition:  [3]  [ CSelf0[Sound Type] == 55   ] Case↓
+ | | | | | | |▼ Level Up Sound
+ | | | | | | |■Load DB(User):  CSelf9[Sound File] = UserDB[ "Images/Sounds":0:"Level Up Sound File" ] (16:Basic Images/Sounds:20) 
  | | | | | | |■
  | | | | | |◇End◇
  | | | | | |■
@@ -432,10 +432,10 @@ WoditorEvCOMMAND_END
  |◇End◇
  |■
 ◇End◇
-▼ 何かファイルがあれば再生する
-■Condition (String):   [1] CSelf9[効果音] is not equal to ""
--◇Condition:  [1] [ CSelf9[効果音] is not equal to "" ] Case↓
- |▼ 音量、周波数が０％になっているが、自動で100になるので問題なし
+▼ If there's a file, play it.
+■Condition (String):   [1] CSelf9[Sound File] is not equal to ""
+-◇Condition:  [1] [ CSelf9[Sound File] is not equal to "" ] Case↓
+ |▼ Volume and frequency are 0%, but they automatically become 100, so not a problem.
  |■Sound: SE File[\cself[9]] Vol 0% Freq 0% (0 Channel) Play / Delay: 0 Frames
  |■
 ◇End◇

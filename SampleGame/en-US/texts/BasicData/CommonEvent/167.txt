@@ -1,5 +1,5 @@
 COMMON_ID=167
-COMMON_NAME=X[戦]ｶｳﾝﾀｰ実行結果算出
+COMMON_NAME=X[Bat]Execute Counter
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -186,7 +186,7 @@ COMMAND_NUM=169
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　カウンターした効果を算出し、対象への処理を行います。")
 [103][0,1]<0>()("　アニメの表示も、ここから呼び出します。")
 [103][0,1]<0>()("")
@@ -195,7 +195,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("　　　同じコモンを使った場合、全体攻撃の処理中に変数が変わってしまうため。")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　技能やアイテムを使用したときの効果を算出し、対象への処理を行います。")
 [103][0,1]<0>()("　アニメの表示も、ここから呼び出します。")
 [103][0,1]<0>()("")
@@ -252,7 +252,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600025,1,0,0)()
 [170][0,0]<0>()()
 [103][0,1]<1>()("対象とする相手がいる限り処理を続ける")
-[300][5,1]<1>(0,16777218,1600000,1600023,1600023)("X[戦]敵･味方行動対象算出")
+[300][5,1]<1>(0,16777218,1600000,1600023,1600023)("X[Bat]Get Enemy/Ally Target")
 [106][0,1]<1>()("　＞行動対象 \cself[23]")
 [111][4,0]<1>(1,1600023,-1,2)()
 [401][1,0]<1>(1)()
@@ -261,29 +261,29 @@ WoditorEvCOMMAND_START
 [499][0,0]<1>()()
 [179][1,0]<1>(1)()
 [103][0,1]<2>()("対象のパラメータ再計算")
-[300][3,1]<2>(0,1,1600023)("X[戦]一時ｽﾃ計算<初期化>")
-[300][4,1]<2>(0,2,1600023,-1)("X[戦]一時ｽﾃ計算<装備補正>")
-[300][3,1]<2>(0,1,1600023)("X[戦]一時ｽﾃ計算<状態補正>")
+[300][3,1]<2>(0,1,1600023)("X[Bat]CalcTempStats <Initialize>")
+[300][4,1]<2>(0,2,1600023,-1)("X[Bat]CalcTempStats <Equipments>")
+[300][3,1]<2>(0,1,1600023)("X[Bat]CalcTempStats <StatusEffects>")
 [0][0,0]<2>()()
 [498][0,0]<1>()()
 [179][1,0]<1>(1)()
 [103][0,1]<2>()("発動者のパラメータ再計算")
-[300][3,1]<2>(0,1,1600016)("X[戦]一時ｽﾃ計算<初期化>")
+[300][3,1]<2>(0,1,1600016)("X[Bat]CalcTempStats <Initialize>")
 [111][10,0]<2>(3,1600001,-1,2,1600001,0,2,1600001,1,1)()
 [401][1,0]<2>(1)()
 [103][0,1]<3>()("全武器を装備した状態のパラメータを使用")
-[300][4,1]<3>(0,2,1600016,-1)("X[戦]一時ｽﾃ計算<装備補正>")
-[300][3,1]<3>(0,1,1600016)("X[戦]一時ｽﾃ計算<状態補正>")
+[300][4,1]<3>(0,2,1600016,-1)("X[Bat]CalcTempStats <Equipments>")
+[300][3,1]<3>(0,1,1600016)("X[Bat]CalcTempStats <StatusEffects>")
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
 [103][0,1]<3>()("武器欄の武器のみ")
-[300][4,1]<3>(0,2,1600016,0)("X[戦]一時ｽﾃ計算<装備補正>")
-[300][3,1]<3>(0,1,1600016)("X[戦]一時ｽﾃ計算<状態補正>")
+[300][4,1]<3>(0,2,1600016,0)("X[Bat]CalcTempStats <Equipments>")
+[300][3,1]<3>(0,1,1600016)("X[Bat]CalcTempStats <StatusEffects>")
 [0][0,0]<3>()()
 [401][1,0]<2>(3)()
 [103][0,1]<3>()("防具欄1～7の武器のみ　（なければ処理しない）")
-[300][5,1]<3>(0,16777218,1600016,1600001,1600019)("X[戦]一時ｽﾃ計算<装備補正>")
-[300][3,1]<3>(0,1,1600016)("X[戦]一時ｽﾃ計算<状態補正>")
+[300][5,1]<3>(0,16777218,1600016,1600001,1600019)("X[Bat]CalcTempStats <Equipments>")
+[300][3,1]<3>(0,1,1600016)("X[Bat]CalcTempStats <StatusEffects>")
 [111][4,0]<3>(1,1600019,0,3)()
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("もし該当の装備がなければ即終了")
@@ -301,10 +301,10 @@ WoditorEvCOMMAND_START
 [103][0,1]<3>()("技能アニメーションを表示")
 [111][7,0]<3>(2,1600023,9,3,1600023,10,1)()
 [401][1,0]<3>(1)()
-[300][3,1]<4>(0,1,1600023)("X[戦]味方欄_座標算出")
+[300][3,1]<4>(0,1,1600023)("X[Bat]Ally Box: Calc Position")
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
-[300][3,1]<4>(0,1,1600023)("X[戦]敵キャラ_座標算出")
+[300][3,1]<4>(0,1,1600023)("X[Bat]Enemy: Calc Position")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [103][0,1]<3>()("ここでアニメ表示")
@@ -324,7 +324,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(1)()
 [250][5,4]<4>(21,37,0,200704,1600028)("","Base System Variables","Status Display End X","")
 [250][5,4]<4>(21,38,0,200704,1600029)("","Base System Variables","Status Display End Y","")
-[300][7,1]<4>(0,16777220,1600027,1600028,1600029,1600023,1600026)("X[戦]技能エフェクト描画")
+[300][7,1]<4>(0,16777220,1600027,1600028,1600029,1600023,1600026)("X[Bat]Draw Skill Effect")
 [111][4,0]<4>(1,1600026,1,2)()
 [401][1,0]<4>(1)()
 [103][0,1]<5>()("全体攻撃なら一回のエフェクトで終了する")
@@ -338,7 +338,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [103][0,1]<1>()("単体処理")
-[300][6,1]<1>(0,4,1600016,1600017,1600023,1)("X[戦]┗単体処理")
+[300][6,1]<1>(0,4,1600016,1600017,1600023,1)("X[Bat]┗ Execute Skill on One")
 [103][0,1]<1>()("対象がもともと単体攻撃の場合はここで終了")
 [111][4,0]<1>(1,1600018,0,1)()
 [401][1,0]<1>(1)()
@@ -358,7 +358,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　カウンターした効果を算出し、対象への処理を行います。
 ▼ 　アニメの表示も、ここから呼び出します。
 ▼ 
@@ -367,7 +367,7 @@ WoditorEvCOMMAND_END
 ▼ 　　　同じコモンを使った場合、全体攻撃の処理中に変数が変わってしまうため。
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　技能やアイテムを使用したときの効果を算出し、対象への処理を行います。
 ▼ 　アニメの表示も、ここから呼び出します。
 ▼ 
@@ -424,7 +424,7 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf25[アニメ表示フラグ] = 1 + 0 
 ■Loop Start
  |▼ 対象とする相手がいる限り処理を続ける
- |■Call Event [Name]: CSelf23[次対象] = ["X[戦]敵･味方行動対象算出"] <CommonEv 163>  / CSelf0[処理番号] / CSelf23[次対象]
+ |■Call Event [Name]: CSelf23[次対象] = ["X[Bat]Get Enemy/Ally Target"] <CommonEv 163>  / CSelf0[処理番号] / CSelf23[次対象]
  |■Debug Text: 　＞行動対象 \cself[23]
  |■Condition (Number):   [1] CSelf23[次対象] ==  -1  
  |-◇Condition:  [1]  [ CSelf23[次対象] == -1   ] Case↓
@@ -433,29 +433,29 @@ WoditorEvCOMMAND_END
  |◇End◇
  |■Repeat Loop [ 1 ] Times
  | |▼ 対象のパラメータ再計算
- | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<初期化>"] <CommonEv 146>  / CSelf23[次対象]
- | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<装備補正>"] <CommonEv 147>  / CSelf23[次対象] / -1:全武器を総計
- | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<状態補正>"] <CommonEv 148>  / CSelf23[次対象]
+ | |■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf23[次対象]
+ | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf23[次対象] / -1:全武器を総計
+ | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf23[次対象]
  | |■
  |◇Loop End Point◇◇
  |■Repeat Loop [ 1 ] Times
  | |▼ 発動者のパラメータ再計算
- | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<初期化>"] <CommonEv 146>  / CSelf16[発動スロット]
+ | |■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf16[発動スロット]
  | |■Condition (Number):   [1] CSelf1[武器の指定] ==  -1  /  [2] CSelf1[武器の指定] ==  0  /  [3] CSelf1[武器の指定] >=  1  
  | |-◇Condition:  [1]  [ CSelf1[武器の指定] == -1   ] Case↓
  | | |▼ 全武器を装備した状態のパラメータを使用
- | | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<装備補正>"] <CommonEv 147>  / CSelf16[発動スロット] / -1:全武器を総計
- | | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<状態補正>"] <CommonEv 148>  / CSelf16[発動スロット]
+ | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf16[発動スロット] / -1:全武器を総計
+ | | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf16[発動スロット]
  | | |■
  | |-◇Condition:  [2]  [ CSelf1[武器の指定] == 0   ] Case↓
  | | |▼ 武器欄の武器のみ
- | | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<装備補正>"] <CommonEv 147>  / CSelf16[発動スロット] / 0:武器欄の武器を使用
- | | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<状態補正>"] <CommonEv 148>  / CSelf16[発動スロット]
+ | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf16[発動スロット] / 0:武器欄の武器を使用
+ | | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf16[発動スロット]
  | | |■
  | |-◇Condition:  [3]  [ CSelf1[武器の指定] >= 1   ] Case↓
  | | |▼ 防具欄1～7の武器のみ　（なければ処理しない）
- | | |■Call Event [Name]: CSelf19[装備の有無] = ["X[戦]一時ｽﾃ計算<装備補正>"] <CommonEv 147>  / CSelf16[発動スロット] / CSelf1[武器の指定]
- | | |■Call Event [Name]: ["X[戦]一時ｽﾃ計算<状態補正>"] <CommonEv 148>  / CSelf16[発動スロット]
+ | | |■Call Event [Name]: CSelf19[装備の有無] = ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf16[発動スロット] / CSelf1[武器の指定]
+ | | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf16[発動スロット]
  | | |■Condition (Number):   [1] CSelf19[装備の有無] <=  0  
  | | |-◇Condition:  [1]  [ CSelf19[装備の有無] <= 0   ] Case↓
  | | | |▼ もし該当の装備がなければ即終了
@@ -473,10 +473,10 @@ WoditorEvCOMMAND_END
  | | |▼ 技能アニメーションを表示
  | | |■Condition (Number):   [1] CSelf23[次対象] <=  9  /  [2] CSelf23[次対象] >=  10  
  | | |-◇Condition:  [1]  [ CSelf23[次対象] <= 9   ] Case↓
- | | | |■Call Event [Name]: ["X[戦]味方欄_座標算出"] <CommonEv 174>  / CSelf23[次対象]
+ | | | |■Call Event [Name]: ["X[Bat]Ally Box: Calc Position"] <CommonEv 174>  / CSelf23[次対象]
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf23[次対象] >= 10   ] Case↓
- | | | |■Call Event [Name]: ["X[戦]敵キャラ_座標算出"] <CommonEv 175>  / CSelf23[次対象]
+ | | | |■Call Event [Name]: ["X[Bat]Enemy: Calc Position"] <CommonEv 175>  / CSelf23[次対象]
  | | | |■
  | | |◇End◇
  | | |▼ ここでアニメ表示
@@ -496,7 +496,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [1]  [ CSelf27[アニメ番号] >= 0   ] Case↓
  | | | |■Load DB(Var):  CSelf28[対象X] = VarDB[ "Base System Variables":"Status Display End X":0 ] (18:37:Number) 
  | | | |■Load DB(Var):  CSelf29[対象Y] = VarDB[ "Base System Variables":"Status Display End Y":0 ] (18:38:Number) 
- | | | |■Call Event [Name]: CSelf26[全体攻撃？] = ["X[戦]技能エフェクト描画"] <CommonEv 183>  / CSelf27[アニメ番号] / CSelf28[対象X] / CSelf29[対象Y] / CSelf23[次対象]
+ | | | |■Call Event [Name]: CSelf26[全体攻撃？] = ["X[Bat]Draw Skill Effect"] <CommonEv 183>  / CSelf27[アニメ番号] / CSelf28[対象X] / CSelf29[対象Y] / CSelf23[次対象]
  | | | |■Condition (Number):   [1] CSelf26[全体攻撃？] ==  1  
  | | | |-◇Condition:  [1]  [ CSelf26[全体攻撃？] == 1   ] Case↓
  | | | | |▼ 全体攻撃なら一回のエフェクトで終了する
@@ -510,7 +510,7 @@ WoditorEvCOMMAND_END
  | |■
  |◇End◇
  |▼ 単体処理
- |■Call Event [Name]: ["X[戦]┗単体処理"] <CommonEv 165>  / CSelf16[発動スロット] / CSelf17[技能コード] / CSelf23[次対象] / 1:カウンター抑制
+ |■Call Event [Name]: ["X[Bat]┗ Execute Skill on One"] <CommonEv 165>  / CSelf16[発動スロット] / CSelf17[技能コード] / CSelf23[次対象] / 1:カウンター抑制
  |▼ 対象がもともと単体攻撃の場合はここで終了
  |■Condition (Number):   [1] CSelf18[対象者] >=  0  
  |-◇Condition:  [1]  [ CSelf18[対象者] >= 0   ] Case↓

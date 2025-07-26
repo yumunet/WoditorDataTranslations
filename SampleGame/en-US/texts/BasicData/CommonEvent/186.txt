@@ -1,5 +1,5 @@
 COMMON_ID=186
-COMMON_NAME=X[戦]戦利品獲得画面
+COMMON_NAME=X[Bat]Draw Rewards Screen
 COMMAND_COLOR=5
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -174,7 +174,7 @@ COMMAND_NUM=430
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　戦利品獲得画面の描画を行います。")
 [103][0,1]<0>()("　「EXP・お金の習得」画面モードと、「アイテム入手」画面モードがあります。")
 [103][0,1]<0>()("")
@@ -607,7 +607,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　戦利品獲得画面の描画を行います。
 ▼ 　「EXP・お金の習得」画面モードと、「アイテム入手」画面モードがあります。
 ▼ 

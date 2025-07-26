@@ -1,5 +1,5 @@
 COMMON_ID=119
-COMMON_NAME=X[移]技能使用効果処理
+COMMON_NAME=X[Map]Use Skill
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -164,15 +164,15 @@ COMMAND_NUM=433
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　「X[共]万能ウィンドウ選択実行」で、技能を選んだ後の挙動をここで処理します。")
 [103][0,1]<0>()("　※このコモン内で技能を使用しなければ0を、使用していれば1を返します。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [250][5,4]<0>(18,51,0,69632,1600037)("","Base System Variables","","")
 [103][0,1]<0>()(" ")
@@ -185,7 +185,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<0>(1)()
 [250][5,4]<1>(0,1600030,0,332288,1600006)("","Skills","","Skill Name")
 [122][2,1]<1>(1600006,0)("『\cself[6]』")
-[300][6,4]<1>(0,24625,0,1600006,1600005,1600005)("X[移]ミニウィンドウ表示","","使用対象を","選択して下さい")
+[300][6,4]<1>(0,24625,0,1600006,1600005,1600005)("X[Map]Display Mini Window","","使用対象を","選択して下さい")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [111][4,0]<0>(1,1600012,0,1)()
@@ -217,7 +217,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<5>(18,51,0,69632,1600018)("","Base System Variables","","")
 [121][4,0]<5>(1600011,0,0,0)()
 [179][1,0]<5>(1600018)()
-[300][4,1]<6>(0,16777217,1600011,1600012)("X[移]選択位置主人公ID取得")
+[300][4,1]<6>(0,16777217,1600011,1600012)("X[Map]Get Ally ID")
 [111][4,0]<6>(1,1600012,1600001,2)()
 [401][1,0]<6>(1)()
 [171][0,0]<7>()()
@@ -226,7 +226,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<6>(1600011,1,0,256)()
 [0][0,0]<6>()()
 [498][0,0]<5>()()
-[300][5,1]<5>(0,3,1,1600011,-1)("X[移]キャラクター欄描画")
+[300][5,1]<5>(0,3,1,1600011,-1)("X[Map]Draw Character Box")
 [103][0,1]<5>()("決定かキャンセルだけ受け付け")
 [123][2,0]<5>(1600010,176)()
 [111][4,0]<5>(1,1600010,11,2)()
@@ -244,7 +244,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<4>()("0＝味方一人")
 [103][0,1]<4>()("キャラ一覧を表示して選択させる")
 [121][4,0]<4>(1600016,1,0,0)()
-[300][5,1]<4>(0,16777218,1600011,1,1600011)("X[移]ｷｬﾗｸﾀｰ欄_選択実行")
+[300][5,1]<4>(0,16777218,1600011,1,1600011)("X[Map]Select Character Box")
 [111][4,0]<4>(1,1600011,-1,3)()
 [401][1,0]<4>(1)()
 [103][0,1]<5>()("キャンセルなら終了　カーソル点滅を消す")
@@ -256,7 +256,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(2)()
 [103][0,1]<4>()("2＝味方全体")
 [121][4,0]<4>(1600016,2,0,0)()
-[300][5,1]<4>(0,3,1,-1,0)("X[移]キャラクター欄描画")
+[300][5,1]<4>(0,3,1,-1,0)("X[Map]Draw Character Box")
 [103][0,1]<4>()("決定かキャンセルか、だけ受付する")
 [123][2,0]<4>(1600012,176)()
 [111][7,0]<4>(2,1600012,10,2,1600012,11,2)()
@@ -279,10 +279,10 @@ WoditorEvCOMMAND_START
 [121][4,0]<4>(1600016,1,0,0)()
 [111][4,0]<4>(1,1600001,0,1)()
 [401][1,0]<4>(1)()
-[300][6,4]<5>(0,28721,0,1600005,1600005,1600005)("X[移]ミニウィンドウ表示","ランダムで","使用されます","")
+[300][6,4]<5>(0,28721,0,1600005,1600005,1600005)("X[Map]Display Mini Window","ランダムで","使用されます","")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
-[300][5,1]<4>(0,3,4,-1,0)("X[移]キャラクター欄描画")
+[300][5,1]<4>(0,3,4,-1,0)("X[Map]Draw Character Box")
 [103][0,1]<4>()("決定かキャンセルか、だけ受付する")
 [123][2,0]<4>(1600012,176)()
 [111][7,0]<4>(2,1600012,10,2,1600012,11,2)()
@@ -292,8 +292,8 @@ WoditorEvCOMMAND_START
 [250][5,4]<5>(18,4,0,200704,1600011)("","Base System Variables","Current Party Size","")
 [121][4,0]<5>(1600011,1,0,512)()
 [121][4,0]<5>(1600011,0,1600011,24576)()
-[300][5,1]<5>(0,3,2,-1,0)("X[移]キャラクター欄描画")
-[300][5,1]<5>(0,3,1,1600011,0)("X[移]キャラクター欄描画")
+[300][5,1]<5>(0,3,2,-1,0)("X[Map]Draw Character Box")
+[300][5,1]<5>(0,3,1,1600011,0)("X[Map]Draw Character Box")
 [213][0,1]<5>()("使用処理実行")
 [0][0,0]<5>()()
 [401][1,0]<4>(2)()
@@ -306,11 +306,11 @@ WoditorEvCOMMAND_START
 [103][0,1]<4>()("自分以外の味方一人")
 [212][0,1]<4>()("自分以外の味方一人")
 [121][4,0]<4>(1600016,1,0,0)()
-[300][5,1]<4>(0,16777218,1600011,1,1600011)("X[移]ｷｬﾗｸﾀｰ欄_選択実行")
+[300][5,1]<4>(0,16777218,1600011,1,1600011)("X[Map]Select Character Box")
 [121][4,0]<4>(1600027,-1,0,0)()
 [111][4,0]<4>(1,1600011,0,1)()
 [401][1,0]<4>(1)()
-[300][4,1]<5>(0,16777217,1600011,1600027)("X[移]選択位置主人公ID取得")
+[300][4,1]<5>(0,16777217,1600011,1600027)("X[Map]Get Ally ID")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
 [111][7,0]<4>(2,1600027,-1,3,1600027,1600001,2)()
@@ -320,11 +320,11 @@ WoditorEvCOMMAND_START
 [0][0,0]<5>()()
 [401][1,0]<4>(2)()
 [103][0,1]<5>()("発動者と同じ場合は警告")
-[300][3,1]<5>(0,1,2)("X[共]システムSE再生")
+[300][3,1]<5>(0,1,2)("X[Com]Play System Sound")
 [122][2,1]<5>(1600009,0)("自分自身には使用できません。")
-[300][4,1]<5>(0,17,0,1600009)("X[移]メニュー時文章表示")
+[300][4,1]<5>(0,17,0,1600009)("X[Map]Display Menu Message")
 [123][2,0]<5>(1600010,176)()
-[300][4,1]<5>(0,17,-1,1600009)("X[移]メニュー時文章表示")
+[300][4,1]<5>(0,17,-1,1600009)("X[Map]Display Menu Message")
 [213][0,1]<5>()("自分以外の味方一人")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
@@ -349,7 +349,7 @@ WoditorEvCOMMAND_START
 [121][5,0]<3>(1600020,-1,0,65536,1)()
 [179][1,0]<3>(1600037)()
 [121][4,0]<4>(1600020,1,0,256)()
-[300][4,1]<4>(0,16777217,1600020,1600014)("X[移]選択位置主人公ID取得")
+[300][4,1]<4>(0,16777217,1600020,1600014)("X[Map]Get Ally ID")
 [111][4,0]<4>(1,1600014,-1,3)()
 [401][1,0]<4>(1)()
 [176][0,0]<5>()()
@@ -382,7 +382,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<2>()()
 [498][0,0]<1>()()
 [121][4,0]<1>(1600099,1,0,0)()
-[300][3,1]<1>(0,1,1)("X[移]キャラ欄_全員描画")
+[300][3,1]<1>(0,1,1)("X[Map]Character Box: Draw All")
 [103][0,1]<1>()("ここで技能エフェクトSEを鳴らす")
 [122][2,1]<1>(1600009,0)("")
 [250][5,4]<1>(0,1600030,18,332288,1600010)("","Skills","","Animation")
@@ -401,7 +401,7 @@ WoditorEvCOMMAND_START
 [140][6,1]<2>(33554464,0,0,0,100,100)("\cself[9]")
 [0][0,0]<2>()()
 [420][1,0]<1>(0)()
-[300][3,1]<2>(0,1,0)("X[共]システムSE再生")
+[300][3,1]<2>(0,1,0)("X[Com]Play System Sound")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [103][0,1]<1>()("ここで各キャラ処理（一人なら1人分だけで終了）")
@@ -412,7 +412,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<3>(1600011,1,0,256)()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
-[300][4,1]<2>(0,16777217,1600011,1600014)("X[移]選択位置主人公ID取得")
+[300][4,1]<2>(0,16777217,1600011,1600014)("X[Map]Get Ally ID")
 [111][4,0]<2>(1,1600014,-1,3)()
 [401][1,0]<2>(1)()
 [176][0,0]<3>()()
@@ -436,15 +436,15 @@ WoditorEvCOMMAND_START
 [111][10,0]<3>(3,1600013,-3,2,1600013,-2,2,1600013,0,1)()
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("全回復（死亡抜き）")
-[300][5,1]<4>(0,3,1600014,-3,0)("X[移]状態付与/消去")
+[300][5,1]<4>(0,3,1600014,-3,0)("X[Map]Add/Remove State")
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
 [103][0,1]<4>()("全回復（死亡込み）")
-[300][5,1]<4>(0,3,1600014,-2,0)("X[移]状態付与/消去")
+[300][5,1]<4>(0,3,1600014,-2,0)("X[Map]Add/Remove State")
 [0][0,0]<4>()()
 [401][1,0]<3>(3)()
 [103][0,1]<4>()("単体回復")
-[300][5,1]<4>(0,3,1600014,1600013,0)("X[移]状態付与/消去")
+[300][5,1]<4>(0,3,1600014,1600013,0)("X[Map]Add/Remove State")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [0][0,0]<3>()()
@@ -479,15 +479,15 @@ WoditorEvCOMMAND_START
 [111][7,0]<2>(2,1600032,0,2,1600032,1,2)()
 [401][1,0]<2>(1)()
 [103][0,1]<3>()("HP回復")
-[300][6,1]<3>(0,4,1600014,22,1600035,0)("X[移]パラメータ増減")
+[300][6,1]<3>(0,4,1600014,22,1600035,0)("X[Map]Change Parameter")
 [103][0,1]<3>()("回復エフェクト")
-[300][5,1]<3>(0,3,1600011,1600035,0)("X[移]指定ｷｬﾗHP/SP回復表示")
+[300][5,1]<3>(0,3,1600011,1600035,0)("X[Map]Display Char HP/SP Recovery")
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
 [103][0,1]<3>()("SP回復")
-[300][6,1]<3>(0,4,1600014,23,1600035,0)("X[移]パラメータ増減")
+[300][6,1]<3>(0,4,1600014,23,1600035,0)("X[Map]Change Parameter")
 [103][0,1]<3>()("回復エフェクト")
-[300][5,1]<3>(0,3,1600011,0,1600035)("X[移]指定ｷｬﾗHP/SP回復表示")
+[300][5,1]<3>(0,3,1600011,0,1600035)("X[Map]Display Char HP/SP Recovery")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [103][0,1]<2>()("ステータス付与エフェクト")
@@ -509,10 +509,10 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("単体付与")
 [250][5,4]<4>(8,1600013,7,332288,1600017)("","States","","Category (Battle/Map)")
-[300][5,1]<4>(0,3,1600014,1600013,1)("X[移]状態付与/消去")
+[300][5,1]<4>(0,3,1600014,1600013,1)("X[Map]Add/Remove State")
 [111][4,0]<4>(1,1600017,1,2)()
 [401][1,0]<4>(1)()
-[300][4,1]<5>(0,2,1600011,1600013)("X[移]指定ｷｬﾗ状態付与表示")
+[300][4,1]<5>(0,2,1600011,1600013)("X[Map]Display Character State")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
 [99][1,0]<4>(1)()
@@ -520,11 +520,11 @@ WoditorEvCOMMAND_START
 [499][0,0]<3>()()
 [0][0,0]<3>()()
 [498][0,0]<2>()()
-[300][3,1]<2>(0,1,1600014)("X[移]一時ｽﾃ計算<初期化>")
-[300][3,1]<2>(0,1,1600014)("X[移]一時ｽﾃ計算<装備補正>")
-[300][3,1]<2>(0,1,1600014)("X[移]一時ｽﾃ計算<状態補正>")
-[300][5,1]<2>(0,3,2,-1,0)("X[移]キャラクター欄描画")
-[300][5,1]<2>(0,3,3,1600011,1600014)("X[移]キャラクター欄描画")
+[300][3,1]<2>(0,1,1600014)("X[Map]CalcTempStats <Initialize>")
+[300][3,1]<2>(0,1,1600014)("X[Map]CalcTempStats <Equipments>")
+[300][3,1]<2>(0,1,1600014)("X[Map]CalcTempStats <StatusEffects>")
+[300][5,1]<2>(0,3,2,-1,0)("X[Map]Draw Character Box")
+[300][5,1]<2>(0,3,3,1600011,1600014)("X[Map]Draw Character Box")
 [103][0,1]<2>()(" ")
 [111][4,0]<2>(1,1600016,1,2)()
 [401][1,0]<2>(1)()
@@ -545,8 +545,8 @@ WoditorEvCOMMAND_START
 [103][0,1]<1>()("アイテム経由で呼ばれていない場合は、発動者の消費処理")
 [111][4,0]<1>(1,1600002,-1,3)()
 [401][1,0]<1>(1)()
-[300][5,1]<2>(0,16777218,1600001,1600000,1600013)("X[移]技能使用_消費処理")
-[300][3,1]<2>(0,1,1)("X[移]キャラ欄_全員描画")
+[300][5,1]<2>(0,16777218,1600001,1600000,1600013)("X[Map]Skill Use: Consume")
+[300][3,1]<2>(0,1,1)("X[Map]Character Box: Draw All")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [111][7,0]<1>(2,1600013,1,1,1600013,0,3)()
@@ -558,11 +558,11 @@ WoditorEvCOMMAND_START
 [401][1,0]<1>(2)()
 [103][0,1]<2>()("使えない場合は残り０個を表示して戻す")
 [103][0,1]<2>()("キー入力待ち")
-[300][6,4]<2>(0,28721,-1,1600005,1600005,1600005)("X[移]ミニウィンドウ表示","","","")
-[300][3,1]<2>(0,1,2)("X[共]システムSE再生")
-[300][6,4]<2>(0,28721,0,1600005,1600005,1600005)("X[移]ミニウィンドウ表示","これ以上","使用できません","")
+[300][6,4]<2>(0,28721,-1,1600005,1600005,1600005)("X[Map]Display Mini Window","","","")
+[300][3,1]<2>(0,1,2)("X[Com]Play System Sound")
+[300][6,4]<2>(0,28721,0,1600005,1600005,1600005)("X[Map]Display Mini Window","これ以上","使用できません","")
 [123][2,0]<2>(1600010,176)()
-[300][6,4]<2>(0,28721,-1,1600005,1600005,1600005)("X[移]ミニウィンドウ表示","これ以上","使用できません","")
+[300][6,4]<2>(0,28721,-1,1600005,1600005,1600005)("X[Map]Display Mini Window","これ以上","使用できません","")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [103][0,1]<1>()(" ")
@@ -575,8 +575,8 @@ WoditorEvCOMMAND_START
 [179][1,0]<0>(0)()
 [103][0,1]<1>()("「イベント起動」処理の場合はここへジャンプ")
 [212][0,1]<1>()("イベント起動処理")
-[300][4,1]<1>(0,2,1600001,1600000)("X[移]技能使用_消費処理")
-[300][6,1]<1>(0,49,-1,1600005,1600005,1600005)("X[移]ミニウィンドウ表示")
+[300][4,1]<1>(0,2,1600001,1600000)("X[Map]Skill Use: Consume")
+[300][6,1]<1>(0,49,-1,1600005,1600005,1600005)("X[Map]Display Mini Window")
 [250][5,4]<1>(0,1600030,3,332288,1600012)("","Skills","","(If Used) ┗ Event Number")
 [250][5,4]<1>(18,1,0,65536,1)("","Base System Variables","","")
 [211][2,0]<1>(1600012,0)()
@@ -589,9 +589,9 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [179][1,0]<0>(0)()
 [212][0,1]<1>()("終了処理")
-[300][3,1]<1>(0,1,1)("X[共]システムSE再生")
-[300][5,1]<1>(0,3,2,-1,0)("X[移]キャラクター欄描画")
-[300][6,4]<1>(0,28721,-1,1600005,1600005,1600005)("X[移]ミニウィンドウ表示","","","")
+[300][3,1]<1>(0,1,1)("X[Com]Play System Sound")
+[300][5,1]<1>(0,3,2,-1,0)("X[Map]Draw Character Box")
+[300][6,4]<1>(0,28721,-1,1600005,1600005,1600005)("X[Map]Display Mini Window","","","")
 [172][0,0]<1>()()
 [0][0,0]<1>()()
 [498][0,0]<0>()()
@@ -600,15 +600,15 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　「X[共]万能ウィンドウ選択実行」で、技能を選んだ後の挙動をここで処理します。
 ▼ 　※このコモン内で技能を使用しなければ0を、使用していれば1を返します。
 ▼ 
-▼ 【このコモンイベント内で操作しているデータベース】
+▼ [Databases Accessed by This Common Event]
 ▼  
-▼ 【ここから呼び出している別コモンイベント】
+▼ [Other Common Events Called from Here]
 ▼  
-▼ 【どのコモンイベントから主に呼び出されているか】
+▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Load DB(Var):  CSelf37[最大パーティ人数] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
 ▼  
@@ -621,7 +621,7 @@ WoditorEvCOMMAND_END
 -◇Condition:  [1]  [ CSelf1[発動者ID] >= 0   ] Case↓
  |■Load DB(User):  CSelf6[技能名] = UserDB[ "Skills":CSelf30[技能番号]:"Skill Name" ] (0:-:0) 
  |■Set String: CSelf6[技能名] = "『\cself[6]』"
- |■Call Event [Name]: ["X[移]ミニウィンドウ表示"] <CommonEv 100>  / 0:表示 / CSelf6[技能名] / 使用対象を / 選択して下さい
+ |■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / 0:表示 / CSelf6[技能名] / 使用対象を / 選択して下さい
  |■
 ◇End◇
 ■Condition (Number):   [1] CSelf12[一時変数２] >=  0  
@@ -653,7 +653,7 @@ WoditorEvCOMMAND_END
  | | | | |■Load DB(Var):  CSelf18[繰り返し回数] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
  | | | | |■Set Variable: CSelf11[ターゲット] = 0 + 0 
  | | | | |■Repeat Loop [ CSelf18[繰り返し回数] ] Times
- | | | | | |■Call Event [Name]: CSelf12[一時変数２] = ["X[移]選択位置主人公ID取得"] <CommonEv 105>  / CSelf11[ターゲット]
+ | | | | | |■Call Event [Name]: CSelf12[一時変数２] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf11[ターゲット]
  | | | | | |■Condition (Number):   [1] CSelf12[一時変数２] ==  CSelf1[発動者ID]  
  | | | | | |-◇Condition:  [1]  [ CSelf12[一時変数２] == CSelf1[発動者ID]   ] Case↓
  | | | | | | |■Break Loop
@@ -662,7 +662,7 @@ WoditorEvCOMMAND_END
  | | | | | |■Set Variable: CSelf11[ターゲット] += 1 + 0 
  | | | | | |■
  | | | | |◇Loop End Point◇◇
- | | | | |■Call Event [Name]: ["X[移]キャラクター欄描画"] <CommonEv 90>  / 1:カーソルON（対象位置　位置-1なら全部） / CSelf11[ターゲット] / -1
+ | | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 1:カーソルON（対象位置　位置-1なら全部） / CSelf11[ターゲット] / -1
  | | | | |▼ 決定かキャンセルだけ受け付け
  | | | | |■Key Input: CSelf10[一時変数] [Wait For Input <!>]  Confirm(10) Cancel(11)
  | | | | |■Condition (Number):   [1] CSelf10[一時変数] ==  11  
@@ -680,7 +680,7 @@ WoditorEvCOMMAND_END
  | | | |▼ 0＝味方一人
  | | | |▼ キャラ一覧を表示して選択させる
  | | | |■Set Variable: CSelf16[単体(1)or全体(2)] = 1 + 0 
- | | | |■Call Event [Name]: CSelf11[ターゲット] = ["X[移]ｷｬﾗｸﾀｰ欄_選択実行"] <CommonEv 108>  / CSelf11[ターゲット] / 1:決定効果音を鳴らさない
+ | | | |■Call Event [Name]: CSelf11[ターゲット] = ["X[Map]Select Character Box"] <CommonEv 108>  / CSelf11[ターゲット] / 1:決定効果音を鳴らさない
  | | | |■Condition (Number):   [1] CSelf11[ターゲット] <=  -1  
  | | | |-◇Condition:  [1]  [ CSelf11[ターゲット] <= -1   ] Case↓
  | | | | |▼ キャンセルなら終了　カーソル点滅を消す
@@ -692,7 +692,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [2]  [ CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] == 2   ] Case↓
  | | | |▼ 2＝味方全体
  | | | |■Set Variable: CSelf16[単体(1)or全体(2)] = 2 + 0 
- | | | |■Call Event [Name]: ["X[移]キャラクター欄描画"] <CommonEv 90>  / 1:カーソルON（対象位置　位置-1なら全部） / -1 / 0
+ | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 1:カーソルON（対象位置　位置-1なら全部） / -1 / 0
  | | | |▼ 決定かキャンセルか、だけ受付する
  | | | |■Key Input: CSelf12[一時変数２] [Wait For Input <!>]  Confirm(10) Cancel(11)
  | | | |■Condition (Number):   [1] CSelf12[一時変数２] ==  10  /  [2] CSelf12[一時変数２] ==  11  
@@ -715,10 +715,10 @@ WoditorEvCOMMAND_END
  | | | |■Set Variable: CSelf16[単体(1)or全体(2)] = 1 + 0 
  | | | |■Condition (Number):   [1] CSelf1[発動者ID] >=  0  
  | | | |-◇Condition:  [1]  [ CSelf1[発動者ID] >= 0   ] Case↓
- | | | | |■Call Event [Name]: ["X[移]ミニウィンドウ表示"] <CommonEv 100>  / 0:表示 / ランダムで / 使用されます / 
+ | | | | |■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / 0:表示 / ランダムで / 使用されます / 
  | | | | |■
  | | | |◇End◇
- | | | |■Call Event [Name]: ["X[移]キャラクター欄描画"] <CommonEv 90>  / 4:カーソルランダムON / -1 / 0
+ | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 4:カーソルランダムON / -1 / 0
  | | | |▼ 決定かキャンセルか、だけ受付する
  | | | |■Key Input: CSelf12[一時変数２] [Wait For Input <!>]  Confirm(10) Cancel(11)
  | | | |■Condition (Number):   [1] CSelf12[一時変数２] ==  10  /  [2] CSelf12[一時変数２] ==  11  
@@ -728,8 +728,8 @@ WoditorEvCOMMAND_END
  | | | | |■Load DB(Var):  CSelf11[ターゲット] = VarDB[ "Base System Variables":"Current Party Size":0 ] (18:4:Number) 
  | | | | |■Set Variable: CSelf11[ターゲット] -= 1 + 0 
  | | | | |■Set Variable: CSelf11[ターゲット] = 0  to  CSelf11[ターゲット] 
- | | | | |■Call Event [Name]: ["X[移]キャラクター欄描画"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0
- | | | | |■Call Event [Name]: ["X[移]キャラクター欄描画"] <CommonEv 90>  / 1:カーソルON（対象位置　位置-1なら全部） / CSelf11[ターゲット] / 0
+ | | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0
+ | | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 1:カーソルON（対象位置　位置-1なら全部） / CSelf11[ターゲット] / 0
  | | | | |●Label Jump [使用処理実行] >>>>>>>>>>>>>>>>>>>>>>>>>
  | | | | |■
  | | | |-◇Condition:  [2]  [ CSelf12[一時変数２] == 11   ] Case↓
@@ -742,11 +742,11 @@ WoditorEvCOMMAND_END
  | | | |▼ 自分以外の味方一人
  | | | |●Label Point [自分以外の味方一人] <<<<<<<<<<<<<<<<<<<<<<<<★
  | | | |■Set Variable: CSelf16[単体(1)or全体(2)] = 1 + 0 
- | | | |■Call Event [Name]: CSelf11[ターゲット] = ["X[移]ｷｬﾗｸﾀｰ欄_選択実行"] <CommonEv 108>  / CSelf11[ターゲット] / 1:決定効果音を鳴らさない
+ | | | |■Call Event [Name]: CSelf11[ターゲット] = ["X[Map]Select Character Box"] <CommonEv 108>  / CSelf11[ターゲット] / 1:決定効果音を鳴らさない
  | | | |■Set Variable: CSelf27[対象ID] = -1 + 0 
  | | | |■Condition (Number):   [1] CSelf11[ターゲット] >=  0  
  | | | |-◇Condition:  [1]  [ CSelf11[ターゲット] >= 0   ] Case↓
- | | | | |■Call Event [Name]: CSelf27[対象ID] = ["X[移]選択位置主人公ID取得"] <CommonEv 105>  / CSelf11[ターゲット]
+ | | | | |■Call Event [Name]: CSelf27[対象ID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf11[ターゲット]
  | | | | |■
  | | | |◇End◇
  | | | |■Condition (Number):   [1] CSelf27[対象ID] <=  -1  /  [2] CSelf27[対象ID] ==  CSelf1[発動者ID]  
@@ -756,11 +756,11 @@ WoditorEvCOMMAND_END
  | | | | |■
  | | | |-◇Condition:  [2]  [ CSelf27[対象ID] == CSelf1[発動者ID]   ] Case↓
  | | | | |▼ 発動者と同じ場合は警告
- | | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 2:ブザー音
+ | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
  | | | | |■Set String: CSelf9[表示文字列] = "自分自身には使用できません。"
- | | | | |■Call Event [Name]: ["X[移]メニュー時文章表示"] <CommonEv 101>  / 0:初期表示 / CSelf9[表示文字列]
+ | | | | |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / 0:初期表示 / CSelf9[表示文字列]
  | | | | |■Key Input: CSelf10[一時変数] [Wait For Input <!>]  Confirm(10) Cancel(11)
- | | | | |■Call Event [Name]: ["X[移]メニュー時文章表示"] <CommonEv 101>  / -1:消去 / CSelf9[表示文字列]
+ | | | | |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / -1:消去 / CSelf9[表示文字列]
  | | | | |●Label Jump [自分以外の味方一人] >>>>>>>>>>>>>>>>>>>>>>>>>
  | | | | |■
  | | | |◇End◇
@@ -785,7 +785,7 @@ WoditorEvCOMMAND_END
  | | |■Set Variable: CSelf20[対象キャラ位置[Ver2.28]] to CSelf21[最大効果量[Ver2.28]] = -1 + 0 
  | | |■Repeat Loop [ CSelf37[最大パーティ人数] ] Times
  | | | |■Set Variable: CSelf20[対象キャラ位置[Ver2.28]] += 1 + 0 
- | | | |■Call Event [Name]: CSelf14[対象ID] = ["X[移]選択位置主人公ID取得"] <CommonEv 105>  / CSelf20[対象キャラ位置[Ver2.28]]
+ | | | |■Call Event [Name]: CSelf14[対象ID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf20[対象キャラ位置[Ver2.28]]
  | | | |■Condition (Number):   [1] CSelf14[対象ID] <=  -1  
  | | | |-◇Condition:  [1]  [ CSelf14[対象ID] <= -1   ] Case↓
  | | | | |■Loop Start: Go to Loop Start
@@ -818,7 +818,7 @@ WoditorEvCOMMAND_END
  | |■
  |◇Loop End Point◇◇
  |■Set Variable: CSelf99[使用した？] = 1 + 0 
- |■Call Event [Name]: ["X[移]キャラ欄_全員描画"] <CommonEv 92>  / 1:全員描画[瞬間表示]
+ |■Call Event [Name]: ["X[Map]Character Box: Draw All"] <CommonEv 92>  / 1:全員描画[瞬間表示]
  |▼ ここで技能エフェクトSEを鳴らす
  |■Set String: CSelf9[表示文字列] = ""
  |■Load DB(User):  CSelf10[一時変数] = UserDB[ "Skills":CSelf30[技能番号]:"Animation" ] (0:-:19) 
@@ -837,7 +837,7 @@ WoditorEvCOMMAND_END
  | |■Sound: SE File[\cself[9]] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
  | |■
  |-◇Else
- | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 0:決定音
+ | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
  | |■
  |◇End◇
  |▼ ここで各キャラ処理（一人なら1人分だけで終了）
@@ -848,7 +848,7 @@ WoditorEvCOMMAND_END
  | | |■Set Variable: CSelf11[ターゲット] += 1 + 0 
  | | |■
  | |◇End◇
- | |■Call Event [Name]: CSelf14[対象ID] = ["X[移]選択位置主人公ID取得"] <CommonEv 105>  / CSelf11[ターゲット]
+ | |■Call Event [Name]: CSelf14[対象ID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf11[ターゲット]
  | |■Condition (Number):   [1] CSelf14[対象ID] <=  -1  
  | |-◇Condition:  [1]  [ CSelf14[対象ID] <= -1   ] Case↓
  | | |■Loop Start: Go to Loop Start
@@ -872,15 +872,15 @@ WoditorEvCOMMAND_END
  | | |■Condition (Number):   [1] CSelf13[次回使用可能フラグ] ==  -3  /  [2] CSelf13[次回使用可能フラグ] ==  -2  /  [3] CSelf13[次回使用可能フラグ] >=  0  
  | | |-◇Condition:  [1]  [ CSelf13[次回使用可能フラグ] == -3   ] Case↓
  | | | |▼ 全回復（死亡抜き）
- | | | |■Call Event [Name]: ["X[移]状態付与/消去"] <CommonEv 75>  / CSelf14[対象ID] / -3:全て消去(死亡除く全回復時対象) / 0:消去
+ | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf14[対象ID] / -3:全て消去(死亡除く全回復時対象) / 0:消去
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf13[次回使用可能フラグ] == -2   ] Case↓
  | | | |▼ 全回復（死亡込み）
- | | | |■Call Event [Name]: ["X[移]状態付与/消去"] <CommonEv 75>  / CSelf14[対象ID] / -2:全て消去(全回復時対象のみ) / 0:消去
+ | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf14[対象ID] / -2:全て消去(全回復時対象のみ) / 0:消去
  | | | |■
  | | |-◇Condition:  [3]  [ CSelf13[次回使用可能フラグ] >= 0   ] Case↓
  | | | |▼ 単体回復
- | | | |■Call Event [Name]: ["X[移]状態付与/消去"] <CommonEv 75>  / CSelf14[対象ID] / CSelf13[次回使用可能フラグ] / 0:消去
+ | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf14[対象ID] / CSelf13[次回使用可能フラグ] / 0:消去
  | | | |■
  | | |◇End◇
  | | |■
@@ -915,15 +915,15 @@ WoditorEvCOMMAND_END
  | |■Condition (Number):   [1] CSelf32[技能TMP１] ==  0  /  [2] CSelf32[技能TMP１] ==  1  
  | |-◇Condition:  [1]  [ CSelf32[技能TMP１] == 0   ] Case↓
  | | |▼ HP回復
- | | |■Call Event [Name]: ["X[移]パラメータ増減"] <CommonEv 70>  / CSelf14[対象ID] / 22:HP / CSelf35[結果値] / 0:なし
+ | | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf14[対象ID] / 22:HP / CSelf35[結果値] / 0:なし
  | | |▼ 回復エフェクト
- | | |■Call Event [Name]: ["X[移]指定ｷｬﾗHP/SP回復表示"] <CommonEv 97>  / CSelf11[ターゲット] / CSelf35[結果値] / 0
+ | | |■Call Event [Name]: ["X[Map]Display Char HP/SP Recovery"] <CommonEv 97>  / CSelf11[ターゲット] / CSelf35[結果値] / 0
  | | |■
  | |-◇Condition:  [2]  [ CSelf32[技能TMP１] == 1   ] Case↓
  | | |▼ SP回復
- | | |■Call Event [Name]: ["X[移]パラメータ増減"] <CommonEv 70>  / CSelf14[対象ID] / 23:SP / CSelf35[結果値] / 0:なし
+ | | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf14[対象ID] / 23:SP / CSelf35[結果値] / 0:なし
  | | |▼ 回復エフェクト
- | | |■Call Event [Name]: ["X[移]指定ｷｬﾗHP/SP回復表示"] <CommonEv 97>  / CSelf11[ターゲット] / 0 / CSelf35[結果値]
+ | | |■Call Event [Name]: ["X[Map]Display Char HP/SP Recovery"] <CommonEv 97>  / CSelf11[ターゲット] / 0 / CSelf35[結果値]
  | | |■
  | |◇End◇
  | |▼ ステータス付与エフェクト
@@ -945,10 +945,10 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [1]  [ CSelf13[次回使用可能フラグ] >= 0   ] Case↓
  | | | |▼ 単体付与
  | | | |■Load DB(User):  CSelf17[移動中OK？] = UserDB[ "States":CSelf13[次回使用可能フラグ]:"Category (Battle/Map)" ] (8:-:7) 
- | | | |■Call Event [Name]: ["X[移]状態付与/消去"] <CommonEv 75>  / CSelf14[対象ID] / CSelf13[次回使用可能フラグ] / 1:付与
+ | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf14[対象ID] / CSelf13[次回使用可能フラグ] / 1:付与
  | | | |■Condition (Number):   [1] CSelf17[移動中OK？] ==  1  
  | | | |-◇Condition:  [1]  [ CSelf17[移動中OK？] == 1   ] Case↓
- | | | | |■Call Event [Name]: ["X[移]指定ｷｬﾗ状態付与表示"] <CommonEv 98>  / CSelf11[ターゲット] / CSelf13[次回使用可能フラグ]
+ | | | | |■Call Event [Name]: ["X[Map]Display Character State"] <CommonEv 98>  / CSelf11[ターゲット] / CSelf13[次回使用可能フラグ]
  | | | | |■
  | | | |◇End◇
  | | | |■ [Special] Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
@@ -956,11 +956,11 @@ WoditorEvCOMMAND_END
  | | |◇End◇
  | | |■
  | |◇Loop End Point◇◇
- | |■Call Event [Name]: ["X[移]一時ｽﾃ計算<初期化>"] <CommonEv 122>  / CSelf14[対象ID]
- | |■Call Event [Name]: ["X[移]一時ｽﾃ計算<装備補正>"] <CommonEv 123>  / CSelf14[対象ID]
- | |■Call Event [Name]: ["X[移]一時ｽﾃ計算<状態補正>"] <CommonEv 124>  / CSelf14[対象ID]
- | |■Call Event [Name]: ["X[移]キャラクター欄描画"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0
- | |■Call Event [Name]: ["X[移]キャラクター欄描画"] <CommonEv 90>  / 3:表示[瞬間表示] / CSelf11[ターゲット] / CSelf14[対象ID]
+ | |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf14[対象ID]
+ | |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf14[対象ID]
+ | |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf14[対象ID]
+ | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0
+ | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 3:表示[瞬間表示] / CSelf11[ターゲット] / CSelf14[対象ID]
  | |▼  
  | |■Condition (Number):   [1] CSelf16[単体(1)or全体(2)] ==  1  
  | |-◇Condition:  [1]  [ CSelf16[単体(1)or全体(2)] == 1   ] Case↓
@@ -981,8 +981,8 @@ WoditorEvCOMMAND_END
  |▼ アイテム経由で呼ばれていない場合は、発動者の消費処理
  |■Condition (Number):   [1] CSelf2[アイテム経由？（アイテムコード）] <=  -1  
  |-◇Condition:  [1]  [ CSelf2[アイテム経由？（アイテムコード）] <= -1   ] Case↓
- | |■Call Event [Name]: CSelf13[次回使用可能フラグ] = ["X[移]技能使用_消費処理"] <CommonEv 121>  / CSelf1[発動者ID] / CSelf0[技能コード]
- | |■Call Event [Name]: ["X[移]キャラ欄_全員描画"] <CommonEv 92>  / 1:全員描画[瞬間表示]
+ | |■Call Event [Name]: CSelf13[次回使用可能フラグ] = ["X[Map]Skill Use: Consume"] <CommonEv 121>  / CSelf1[発動者ID] / CSelf0[技能コード]
+ | |■Call Event [Name]: ["X[Map]Character Box: Draw All"] <CommonEv 92>  / 1:全員描画[瞬間表示]
  | |■
  |◇End◇
  |■Condition (Number):   [1] CSelf13[次回使用可能フラグ] >=  1  /  [2] CSelf13[次回使用可能フラグ] <=  0  
@@ -994,11 +994,11 @@ WoditorEvCOMMAND_END
  |-◇Condition:  [2]  [ CSelf13[次回使用可能フラグ] <= 0   ] Case↓
  | |▼ 使えない場合は残り０個を表示して戻す
  | |▼ キー入力待ち
- | |■Call Event [Name]: ["X[移]ミニウィンドウ表示"] <CommonEv 100>  / -1:削除 /  /  / 
- | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 2:ブザー音
- | |■Call Event [Name]: ["X[移]ミニウィンドウ表示"] <CommonEv 100>  / 0:表示 / これ以上 / 使用できません / 
+ | |■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / -1:削除 /  /  / 
+ | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
+ | |■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / 0:表示 / これ以上 / 使用できません / 
  | |■Key Input: CSelf10[一時変数] [Wait For Input <!>]  Confirm(10) Cancel(11)
- | |■Call Event [Name]: ["X[移]ミニウィンドウ表示"] <CommonEv 100>  / -1:削除 / これ以上 / 使用できません / 
+ | |■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / -1:削除 / これ以上 / 使用できません / 
  | |■
  |◇End◇
  |▼  
@@ -1011,8 +1011,8 @@ WoditorEvCOMMAND_END
 ■Repeat Loop [ 0 ] Times
  |▼ 「イベント起動」処理の場合はここへジャンプ
  |●Label Point [イベント起動処理] <<<<<<<<<<<<<<<<<<<<<<<<★
- |■Call Event [Name]: ["X[移]技能使用_消費処理"] <CommonEv 121>  / CSelf1[発動者ID] / CSelf0[技能コード]
- |■Call Event [Name]: ["X[移]ミニウィンドウ表示"] <CommonEv 100>  / -1:削除 / CSelf5 / CSelf5 / CSelf5
+ |■Call Event [Name]: ["X[Map]Skill Use: Consume"] <CommonEv 121>  / CSelf1[発動者ID] / CSelf0[技能コード]
+ |■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / -1:削除 / CSelf5 / CSelf5 / CSelf5
  |■Load DB(User):  CSelf12[一時変数２] = UserDB[ "Skills":CSelf30[技能番号]:"(If Used) ┗ Event Number" ] (0:-:3) 
  |■Write to DB(Var): VarDB[ "Base System Variables":1:0 ] (18:Menu Close Flag:Number) =  1
  |■Reserve Next Event: Variable [CSelf12[一時変数２]]'s Ev
@@ -1025,9 +1025,9 @@ WoditorEvCOMMAND_END
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■Repeat Loop [ 0 ] Times
  |●Label Point [終了処理] <<<<<<<<<<<<<<<<<<<<<<<<★
- |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 1:キャンセル音
- |■Call Event [Name]: ["X[移]キャラクター欄描画"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0
- |■Call Event [Name]: ["X[移]ミニウィンドウ表示"] <CommonEv 100>  / -1:削除 /  /  / 
+ |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 1:Cancel Sound
+ |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0
+ |■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / -1:削除 /  /  / 
  |■Exit Event
  |■
 ◇Loop End Point◇◇

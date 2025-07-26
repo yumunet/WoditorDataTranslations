@@ -1,5 +1,5 @@
 COMMON_ID=137
-COMMON_NAME=X[戦]状態付与/消去
+COMMON_NAME=X[Bat]Add/Remove State
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -182,7 +182,7 @@ COMMAND_NUM=327
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　基本システムの戦闘中に主人公の状態異常を付与・消去するときは、必ずこのコモンイベントを使用します。")
 [103][0,1]<0>()("　戦闘中のみ有効です。")
 [103][0,1]<0>()(" ")
@@ -206,10 +206,10 @@ WoditorEvCOMMAND_START
 [103][0,1]<1>()("座標を取得")
 [111][7,0]<1>(2,1600000,10,4,1600000,10,1)()
 [401][1,0]<1>(1)()
-[300][3,1]<2>(0,1,1600000)("X[戦]味方欄_座標算出")
+[300][3,1]<2>(0,1,1600000)("X[Bat]Ally Box: Calc Position")
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[300][3,1]<2>(0,1,1600000)("X[戦]敵キャラ_座標算出")
+[300][3,1]<2>(0,1,1600000)("X[Bat]Enemy: Calc Position")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [250][5,4]<1>(21,37,0,69632,1600038)("","Base System Variables","","")
@@ -344,7 +344,7 @@ WoditorEvCOMMAND_START
 [111][4,0]<5>(1,1600003,1,2)()
 [401][1,0]<5>(1)()
 [103][0,1]<6>()("メッセージ表示")
-[300][5,1]<6>(0,3,1600000,1600011,1)("X[戦]┗状態変化ﾒｯｾｰｼﾞ")
+[300][5,1]<6>(0,3,1600000,1600011,1)("X[Bat]┗ Display State Message")
 [0][0,0]<6>()()
 [499][0,0]<5>()()
 [103][0,1]<5>()("変化させる状態異常を「戦闘不能」に")
@@ -379,13 +379,13 @@ WoditorEvCOMMAND_START
 [250][5,4]<3>(8,1600011,1,332288,1600020)("","States","","Display Type")
 [111][4,0]<3>(1,1600020,2,6)()
 [401][1,0]<3>(1)()
-[300][6,1]<4>(0,4,1600038,1600039,1600011,4)("X[戦]ﾀﾞﾒｰｼﾞ・回復ﾎﾟｯﾌﾟｱｯﾌﾟ")
+[300][6,1]<4>(0,4,1600038,1600039,1600011,4)("X[Bat]Display Dmg/Recovery Popup")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [111][4,0]<3>(1,1600003,1,2)()
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("メッセージ表示")
-[300][5,1]<4>(0,3,1600000,1600011,1)("X[戦]┗状態変化ﾒｯｾｰｼﾞ")
+[300][5,1]<4>(0,3,1600000,1600011,1)("X[Bat]┗ Display State Message")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [0][0,0]<3>()()
@@ -398,7 +398,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<2>(1)()
 [111][4,0]<3>(1,1600003,1,2)()
 [401][1,0]<3>(1)()
-[300][5,1]<4>(0,3,1600000,1600011,0)("X[戦]┗状態変化ﾒｯｾｰｼﾞ")
+[300][5,1]<4>(0,3,1600000,1600011,0)("X[Bat]┗ Display State Message")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [0][0,0]<3>()()
@@ -451,7 +451,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(1)()
 [111][4,0]<4>(1,1600003,1,2)()
 [401][1,0]<4>(1)()
-[300][5,1]<5>(0,3,1600000,1600011,0)("X[戦]┗状態変化ﾒｯｾｰｼﾞ")
+[300][5,1]<5>(0,3,1600000,1600011,0)("X[Bat]┗ Display State Message")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
 [0][0,0]<4>()()
@@ -512,7 +512,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　基本システムの戦闘中に主人公の状態異常を付与・消去するときは、必ずこのコモンイベントを使用します。
 ▼ 　戦闘中のみ有効です。
 ▼  
@@ -536,10 +536,10 @@ WoditorEvCOMMAND_END
  |▼ 座標を取得
  |■Condition (Number):   [1] CSelf0[戦闘スロット] <  10  /  [2] CSelf0[戦闘スロット] >=  10  
  |-◇Condition:  [1]  [ CSelf0[戦闘スロット] < 10   ] Case↓
- | |■Call Event [Name]: ["X[戦]味方欄_座標算出"] <CommonEv 174>  / CSelf0[戦闘スロット]
+ | |■Call Event [Name]: ["X[Bat]Ally Box: Calc Position"] <CommonEv 174>  / CSelf0[戦闘スロット]
  | |■
  |-◇Condition:  [2]  [ CSelf0[戦闘スロット] >= 10   ] Case↓
- | |■Call Event [Name]: ["X[戦]敵キャラ_座標算出"] <CommonEv 175>  / CSelf0[戦闘スロット]
+ | |■Call Event [Name]: ["X[Bat]Enemy: Calc Position"] <CommonEv 175>  / CSelf0[戦闘スロット]
  | |■
  |◇End◇
  |■Load DB(Var):  CSelf38[表示X] = VarDB[ "Base System Variables":37:0 ] (18:Status Display End X:Number) 
@@ -628,14 +628,14 @@ WoditorEvCOMMAND_END
  | | | | |▼ 変化元の状態を解除
  | | | | |■Write to DB(Var): VarDB[ "×┣State List":CSelf0[戦闘スロット]:CSelf34[変化元状態] ] (13:-:-) =  0
  | | | | |▼ 付与
- | | | | |■Call Event: [+0 From This Common]  Common 137: [ X[戦]状態付与/消去 ] / CSelf0[戦闘スロット] / CSelf32[重複の変化先状態] / 1:付与 / CSelf3[メッセージ有無]
+ | | | | |■Call Event: [+0 From This Common]  Common 137: [ X[Bat]Add/Remove State ] / CSelf0[戦闘スロット] / CSelf32[重複の変化先状態] / 1:付与 / CSelf3[メッセージ有無]
  | | | | |■Exit Event
  | | | | |■
  | | | |◇Loop End Point◇◇
  | | | |■
  | | |-◇Condition:  [3]  [ CSelf33[最終変化先状態] <= -1   ] Case↓
  | | | |▼ 治る場合
- | | | |■Call Event: [+0 From This Common]  Common 137: [ X[戦]状態付与/消去 ] / CSelf0[戦闘スロット] / CSelf34[変化元状態] / 0:消去 / CSelf3[メッセージ有無]
+ | | | |■Call Event: [+0 From This Common]  Common 137: [ X[Bat]Add/Remove State ] / CSelf0[戦闘スロット] / CSelf34[変化元状態] / 0:消去 / CSelf3[メッセージ有無]
  | | | |■Exit Event
  | | | |■
  | | |◇End◇
@@ -674,7 +674,7 @@ WoditorEvCOMMAND_END
  | | | | |■Condition (Number):   [1] CSelf3[メッセージ有無] ==  1  
  | | | | |-◇Condition:  [1]  [ CSelf3[メッセージ有無] == 1   ] Case↓
  | | | | | |▼ メッセージ表示
- | | | | | |■Call Event [Name]: ["X[戦]┗状態変化ﾒｯｾｰｼﾞ"] <CommonEv 138>  / CSelf0[戦闘スロット] / CSelf11[処理中状態ID] / 1:付与
+ | | | | | |■Call Event [Name]: ["X[Bat]┗ Display State Message"] <CommonEv 138>  / CSelf0[戦闘スロット] / CSelf11[処理中状態ID] / 1:付与
  | | | | | |■
  | | | | |◇End◇
  | | | | |▼ 変化させる状態異常を「戦闘不能」に
@@ -709,13 +709,13 @@ WoditorEvCOMMAND_END
  | | |■Load DB(User):  CSelf20[一時変数A] = UserDB[ "States":CSelf11[処理中状態ID]:"Display Type" ] (8:-:1) 
  | | |■Condition (Number):   [1] CSelf20[一時変数A] &  2  
  | | |-◇Condition:  [1]  [ CSelf20[一時変数A] & 2   ] Case↓
- | | | |■Call Event [Name]: ["X[戦]ﾀﾞﾒｰｼﾞ・回復ﾎﾟｯﾌﾟｱｯﾌﾟ"] <CommonEv 181>  / CSelf38[表示X] / CSelf39[表示Y] / CSelf11[処理中状態ID] / 4:状態付与
+ | | | |■Call Event [Name]: ["X[Bat]Display Dmg/Recovery Popup"] <CommonEv 181>  / CSelf38[表示X] / CSelf39[表示Y] / CSelf11[処理中状態ID] / 4:状態付与
  | | | |■
  | | |◇End◇
  | | |■Condition (Number):   [1] CSelf3[メッセージ有無] ==  1  
  | | |-◇Condition:  [1]  [ CSelf3[メッセージ有無] == 1   ] Case↓
  | | | |▼ メッセージ表示
- | | | |■Call Event [Name]: ["X[戦]┗状態変化ﾒｯｾｰｼﾞ"] <CommonEv 138>  / CSelf0[戦闘スロット] / CSelf11[処理中状態ID] / 1:付与
+ | | | |■Call Event [Name]: ["X[Bat]┗ Display State Message"] <CommonEv 138>  / CSelf0[戦闘スロット] / CSelf11[処理中状態ID] / 1:付与
  | | | |■
  | | |◇End◇
  | | |■
@@ -728,7 +728,7 @@ WoditorEvCOMMAND_END
  | |-◇Condition:  [1]  [ CSelf17[残りターン] != 0   ] Case↓
  | | |■Condition (Number):   [1] CSelf3[メッセージ有無] ==  1  
  | | |-◇Condition:  [1]  [ CSelf3[メッセージ有無] == 1   ] Case↓
- | | | |■Call Event [Name]: ["X[戦]┗状態変化ﾒｯｾｰｼﾞ"] <CommonEv 138>  / CSelf0[戦闘スロット] / CSelf11[処理中状態ID] / 0:消去
+ | | | |■Call Event [Name]: ["X[Bat]┗ Display State Message"] <CommonEv 138>  / CSelf0[戦闘スロット] / CSelf11[処理中状態ID] / 0:消去
  | | | |■
  | | |◇End◇
  | | |■
@@ -781,7 +781,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [1]  [ CSelf17[残りターン] != 0   ] Case↓
  | | | |■Condition (Number):   [1] CSelf3[メッセージ有無] ==  1  
  | | | |-◇Condition:  [1]  [ CSelf3[メッセージ有無] == 1   ] Case↓
- | | | | |■Call Event [Name]: ["X[戦]┗状態変化ﾒｯｾｰｼﾞ"] <CommonEv 138>  / CSelf0[戦闘スロット] / CSelf11[処理中状態ID] / 0:消去
+ | | | | |■Call Event [Name]: ["X[Bat]┗ Display State Message"] <CommonEv 138>  / CSelf0[戦闘スロット] / CSelf11[処理中状態ID] / 0:消去
  | | | | |■
  | | | |◇End◇
  | | | |■

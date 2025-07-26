@@ -1,5 +1,5 @@
 COMMON_ID=130
-COMMON_NAME=X┣[移]装備欄実行
+COMMON_NAME=X┣[Map]Execute Equip Menu
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -168,23 +168,23 @@ COMMAND_NUM=71
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　装備欄を開き、使用し、終了するまでの処理を実行します。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [121][4,0]<0>(1600021,0,0,0)()
 [103][0,1]<0>()("パーティー情報から一人ずつ主人公ID取得して、キャラクター一覧を表示")
 [179][1,0]<0>(1600000)()
 [212][0,1]<1>()("パーティ表示")
-[300][3,1]<1>(0,1,0)("X[移]キャラ欄_全員描画")
+[300][3,1]<1>(0,1,0)("X[Map]Character Box: Draw All")
 [0][0,0]<1>()()
 [498][0,0]<0>()()
-[300][4,1]<0>(0,2,1600021,0)("X[移]ｷｬﾗｸﾀｰ欄_選択実行")
+[300][4,1]<0>(0,2,1600021,0)("X[Map]Select Character Box")
 [250][5,4]<0>(18,2,0,462848,1600020)("","Base System Variables","Selected ID","Number")
 [121][4,0]<0>(1600021,1600020,0,0)()
 [121][4,0]<0>(1600029,0,0,0)()
@@ -192,10 +192,10 @@ WoditorEvCOMMAND_START
 [401][1,0]<0>(1)()
 [103][0,1]<1>()("キャンセル時はそのまま終了")
 [103][0,1]<1>()("Ver2.22　不要なキャンセル音を消去")
-[300][5,1]<1>(0,3,2,-1,-1)("X[移]キャラクター欄描画")
+[300][5,1]<1>(0,3,2,-1,-1)("X[Map]Draw Character Box")
 [111][4,0]<1>(1,1600000,1,2)()
 [401][1,0]<1>(1)()
-[300][3,1]<2>(0,1,-1)("X[移]キャラ欄_全員描画")
+[300][3,1]<2>(0,1,-1)("X[Map]Character Box: Draw All")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [172][0,0]<1>()()
@@ -203,18 +203,18 @@ WoditorEvCOMMAND_START
 [499][0,0]<0>()()
 [111][4,0]<0>(1,1600020,0,1)()
 [401][1,0]<0>(1)()
-[300][3,1]<1>(0,1,-1)("X[移]キャラ欄_全員描画")
+[300][3,1]<1>(0,1,-1)("X[Map]Character Box: Draw All")
 [103][0,1]<1>()("ここで主人公IDを取得する")
-[300][4,1]<1>(0,16777217,1600020,1600011)("X[移]選択位置主人公ID取得")
+[300][4,1]<1>(0,16777217,1600020,1600011)("X[Map]Get Ally ID")
 [103][0,1]<1>()("万能ウィンドウ設定を初期化")
-[300][4,1]<1>(0,2,1600011,0)("X[移]装備一覧算出")
+[300][4,1]<1>(0,2,1600011,0)("X[Map]Create Equipment List")
 [103][0,1]<1>()("万能ウィンドウ表示")
-[300][5,1]<1>(0,3,0,1600011,0)("X[移]装備画面描画")
+[300][5,1]<1>(0,3,0,1600011,0)("X[Map]Draw Equip Screen")
 [250][5,4]<1>(18,2,0,462848,1600010)("","Base System Variables","Selected ID","Number")
 [103][0,1]<1>()("キャンセル時はキャラ選択に戻る")
 [111][4,0]<1>(1,1600010,-1,2)()
 [401][1,0]<1>(1)()
-[300][3,1]<2>(0,1,1)("X[共]システムSE再生")
+[300][3,1]<2>(0,1,1)("X[Com]Play System Sound")
 [213][0,1]<2>()("パーティ表示")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
@@ -226,14 +226,14 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<0>()("　　　ここから装備欄実行処理")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■")
-[300][4,1]<0>(0,2,-1,-1)("X[移]装備ﾊﾟﾗﾒｰﾀ差分算出")
-[300][5,1]<0>(0,16777218,1600020,1,1600021)("X[移]装備欄_選択実行")
+[300][4,1]<0>(0,2,-1,-1)("X[Map]Calc Equip Stat Changes")
+[300][5,1]<0>(0,16777218,1600020,1,1600021)("X[Map]Select Equipment Box")
 [250][5,4]<0>(18,2,0,69632,1600010)("","Base System Variables","","")
 [111][4,0]<0>(1,1600010,-1,2)()
 [401][1,0]<0>(1)()
 [103][0,1]<1>()("キャンセルされた場合はキャラ選択に戻る")
-[300][3,1]<1>(0,1,1)("X[共]システムSE再生")
-[300][5,1]<1>(0,3,-1,1600011,0)("X[移]装備画面描画")
+[300][3,1]<1>(0,1,1)("X[Com]Play System Sound")
+[300][5,1]<1>(0,3,-1,1600011,0)("X[Map]Draw Equip Screen")
 [213][0,1]<1>()("パーティ表示")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
@@ -242,23 +242,23 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　装備欄を開き、使用し、終了するまでの処理を実行します。
 ▼ 
-▼ 【このコモンイベント内で操作しているデータベース】
+▼ [Databases Accessed by This Common Event]
 ▼  
-▼ 【ここから呼び出している別コモンイベント】
+▼ [Other Common Events Called from Here]
 ▼  
-▼ 【どのコモンイベントから主に呼び出されているか】
+▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Set Variable: CSelf21[キャラ欄選択位置] = 0 + 0 
 ▼ パーティー情報から一人ずつ主人公ID取得して、キャラクター一覧を表示
 ■Repeat Loop [ CSelf0[処理モード] ] Times
  |●Label Point [パーティ表示] <<<<<<<<<<<<<<<<<<<<<<<<★
- |■Call Event [Name]: ["X[移]キャラ欄_全員描画"] <CommonEv 92>  / 0:新規に全員描画
+ |■Call Event [Name]: ["X[Map]Character Box: Draw All"] <CommonEv 92>  / 0:新規に全員描画
  |■
 ◇Loop End Point◇◇
-■Call Event [Name]: ["X[移]ｷｬﾗｸﾀｰ欄_選択実行"] <CommonEv 108>  / CSelf21[キャラ欄選択位置] / 0:決定効果音を再生
+■Call Event [Name]: ["X[Map]Select Character Box"] <CommonEv 108>  / CSelf21[キャラ欄選択位置] / 0:決定効果音を再生
 ■Load DB(Var):  CSelf20[選択キャラ位置（0～5）] = VarDB[ "Base System Variables":"Selected ID":"Number" ] (18:2:0) 
 ■Set Variable: CSelf21[キャラ欄選択位置] = CSelf20[選択キャラ位置（0～5）] + 0 
 ■Set Variable: CSelf29[キャラ再表示する？] = 0 + 0 
@@ -266,10 +266,10 @@ WoditorEvCOMMAND_END
 -◇Condition:  [1]  [ CSelf20[選択キャラ位置（0～5）] == -1   ] Case↓
  |▼ キャンセル時はそのまま終了
  |▼ Ver2.22　不要なキャンセル音を消去
- |■Call Event [Name]: ["X[移]キャラクター欄描画"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / -1
+ |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / -1
  |■Condition (Number):   [1] CSelf0[処理モード] ==  1  
  |-◇Condition:  [1]  [ CSelf0[処理モード] == 1   ] Case↓
- | |■Call Event [Name]: ["X[移]キャラ欄_全員描画"] <CommonEv 92>  / -1:全員消去
+ | |■Call Event [Name]: ["X[Map]Character Box: Draw All"] <CommonEv 92>  / -1:全員消去
  | |■
  |◇End◇
  |■Exit Event
@@ -277,18 +277,18 @@ WoditorEvCOMMAND_END
 ◇End◇
 ■Condition (Number):   [1] CSelf20[選択キャラ位置（0～5）] >=  0  
 -◇Condition:  [1]  [ CSelf20[選択キャラ位置（0～5）] >= 0   ] Case↓
- |■Call Event [Name]: ["X[移]キャラ欄_全員描画"] <CommonEv 92>  / -1:全員消去
+ |■Call Event [Name]: ["X[Map]Character Box: Draw All"] <CommonEv 92>  / -1:全員消去
  |▼ ここで主人公IDを取得する
- |■Call Event [Name]: CSelf11[一時TMP２] = ["X[移]選択位置主人公ID取得"] <CommonEv 105>  / CSelf20[選択キャラ位置（0～5）]
+ |■Call Event [Name]: CSelf11[一時TMP２] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf20[選択キャラ位置（0～5）]
  |▼ 万能ウィンドウ設定を初期化
- |■Call Event [Name]: ["X[移]装備一覧算出"] <CommonEv 112>  / CSelf11[一時TMP２] / 0:装備欄1
+ |■Call Event [Name]: ["X[Map]Create Equipment List"] <CommonEv 112>  / CSelf11[一時TMP２] / 0:装備欄1
  |▼ 万能ウィンドウ表示
- |■Call Event [Name]: ["X[移]装備画面描画"] <CommonEv 93>  / 0:表示A（初期表示用　スライド表示＆全表示） / CSelf11[一時TMP２] / 0
+ |■Call Event [Name]: ["X[Map]Draw Equip Screen"] <CommonEv 93>  / 0:表示A（初期表示用　スライド表示＆全表示） / CSelf11[一時TMP２] / 0
  |■Load DB(Var):  CSelf10[一時TMP１] = VarDB[ "Base System Variables":"Selected ID":"Number" ] (18:2:0) 
  |▼ キャンセル時はキャラ選択に戻る
  |■Condition (Number):   [1] CSelf10[一時TMP１] ==  -1  
  |-◇Condition:  [1]  [ CSelf10[一時TMP１] == -1   ] Case↓
- | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 1:キャンセル音
+ | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 1:Cancel Sound
  | |●Label Jump [パーティ表示] >>>>>>>>>>>>>>>>>>>>>>>>>
  | |■
  |◇End◇
@@ -300,14 +300,14 @@ WoditorEvCOMMAND_END
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ 　　　ここから装備欄実行処理
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■
-■Call Event [Name]: ["X[移]装備ﾊﾟﾗﾒｰﾀ差分算出"] <CommonEv 114>  / -1 / -1
-■Call Event [Name]: CSelf21[キャラ欄選択位置] = ["X[移]装備欄_選択実行"] <CommonEv 109>  / CSelf20[選択キャラ位置（0～5）] / 1:キャラ切り替え可能
+■Call Event [Name]: ["X[Map]Calc Equip Stat Changes"] <CommonEv 114>  / -1 / -1
+■Call Event [Name]: CSelf21[キャラ欄選択位置] = ["X[Map]Select Equipment Box"] <CommonEv 109>  / CSelf20[選択キャラ位置（0～5）] / 1:キャラ切り替え可能
 ■Load DB(Var):  CSelf10[一時TMP１] = VarDB[ "Base System Variables":2:0 ] (18:Selected ID:Number) 
 ■Condition (Number):   [1] CSelf10[一時TMP１] ==  -1  
 -◇Condition:  [1]  [ CSelf10[一時TMP１] == -1   ] Case↓
  |▼ キャンセルされた場合はキャラ選択に戻る
- |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 1:キャンセル音
- |■Call Event [Name]: ["X[移]装備画面描画"] <CommonEv 93>  / -1:消去 / CSelf11[一時TMP２] / 0
+ |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 1:Cancel Sound
+ |■Call Event [Name]: ["X[Map]Draw Equip Screen"] <CommonEv 93>  / -1:消去 / CSelf11[一時TMP２] / 0
  |●Label Jump [パーティ表示] >>>>>>>>>>>>>>>>>>>>>>>>>
  |■
 ◇End◇

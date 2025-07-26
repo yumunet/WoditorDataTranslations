@@ -1,5 +1,5 @@
 COMMON_ID=59
-COMMON_NAME=X[共]ウェイト(キー押しで中断)
+COMMON_NAME=X[Com]Wait(PressKeyToEnd)
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -8,8 +8,8 @@ MEMO=
 VALINPUT_NUM=2
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=ｳｪｲﾄするﾌﾚｰﾑ
-VALINPUT_NAME_1=最低ウェイト
+VALINPUT_NAME_0=Wait Frames
+VALINPUT_NAME_1=Minimum Wait
 VALINPUT_NAME_2=
 VALINPUT_NAME_3=
 VALINPUT_NAME_4=
@@ -60,8 +60,8 @@ DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
 RETURN_VAL_NAME=
 RETURN_VAL_TARGET=-1
-CSELF_NAME_0=ｳｪｲﾄするﾌﾚｰﾑ
-CSELF_NAME_1=最低ウェイト
+CSELF_NAME_0=Wait Frames
+CSELF_NAME_1=Minimum Wait
 CSELF_NAME_2=
 CSELF_NAME_3=
 CSELF_NAME_4=
@@ -70,12 +70,12 @@ CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=
-CSELF_NAME_10=直前キー[決定]
-CSELF_NAME_11=直前キー[キャンセル]
-CSELF_NAME_12=直前キー[サブ]
-CSELF_NAME_13=現在キー[決定]
-CSELF_NAME_14=現在キー[キャンセル]
-CSELF_NAME_15=現在キー[サブ]
+CSELF_NAME_10=Previous Key [Confirm]
+CSELF_NAME_11=Previous Key [Cancel]
+CSELF_NAME_12=Previous Key [Sub]
+CSELF_NAME_13=Current Key [Confirm]
+CSELF_NAME_14=Current Key [Cancel]
+CSELF_NAME_15=Current Key [Sub]
 CSELF_NAME_16=
 CSELF_NAME_17=
 CSELF_NAME_18=
@@ -164,8 +164,8 @@ COMMAND_NUM=48
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
-[103][0,1]<0>()("　キー連打で中断できるウェイト機能です。")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("  A wait function that can be skipped by pressing a key.")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [123][2,0]<0>(1600010,16)()
 [123][2,0]<0>(1600011,32)()
@@ -215,48 +215,48 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
-▼ 　キー連打で中断できるウェイト機能です。
+▼ [Process Overview]
+▼   A wait function that can be skipped by pressing a key.
 ▼ ―――――――――――――――――――――――――――――――――――
-■Key Input: CSelf10[直前キー[決定]] [Normal Input]  Confirm(10)
-■Key Input: CSelf11[直前キー[キャンセル]] [Normal Input]  Cancel(11)
-■Key Input: CSelf12[直前キー[サブ]] [Normal Input]  SubKey(12)
-■Wait: CSelf1[最低ウェイト] Frames
-■Set Variable: CSelf0[ｳｪｲﾄするﾌﾚｰﾑ] -= CSelf1[最低ウェイト] + 1 
-■Repeat Loop [ CSelf0[ｳｪｲﾄするﾌﾚｰﾑ] ] Times
- |■Key Input: CSelf13[現在キー[決定]] [Normal Input]  Confirm(10)
- |■Key Input: CSelf14[現在キー[キャンセル]] [Normal Input]  Cancel(11)
- |■Key Input: CSelf15[現在キー[サブ]] [Normal Input]  SubKey(12)
- |■Condition (Number):   [1] CSelf10[直前キー[決定]] ==  0  
- |-◇Condition:  [1]  [ CSelf10[直前キー[決定]] == 0   ] Case↓
- | |■Condition (Number):   [1] CSelf13[現在キー[決定]] !=  0  
- | |-◇Condition:  [1]  [ CSelf13[現在キー[決定]] != 0   ] Case↓
+■Key Input: CSelf10[Previous Key [Confirm]] [Normal Input]  Confirm(10)
+■Key Input: CSelf11[Previous Key [Cancel]] [Normal Input]  Cancel(11)
+■Key Input: CSelf12[Previous Key [Sub]] [Normal Input]  SubKey(12)
+■Wait: CSelf1[Minimum Wait] Frames
+■Set Variable: CSelf0[Wait Frames] -= CSelf1[Minimum Wait] + 1 
+■Repeat Loop [ CSelf0[Wait Frames] ] Times
+ |■Key Input: CSelf13[Current Key [Confirm]] [Normal Input]  Confirm(10)
+ |■Key Input: CSelf14[Current Key [Cancel]] [Normal Input]  Cancel(11)
+ |■Key Input: CSelf15[Current Key [Sub]] [Normal Input]  SubKey(12)
+ |■Condition (Number):   [1] CSelf10[Previous Key [Confirm]] ==  0  
+ |-◇Condition:  [1]  [ CSelf10[Previous Key [Confirm]] == 0   ] Case↓
+ | |■Condition (Number):   [1] CSelf13[Current Key [Confirm]] !=  0  
+ | |-◇Condition:  [1]  [ CSelf13[Current Key [Confirm]] != 0   ] Case↓
  | | |■Break Loop
  | | |■
  | |◇End◇
  | |■
  |◇End◇
- |■Condition (Number):   [1] CSelf11[直前キー[キャンセル]] ==  0  
- |-◇Condition:  [1]  [ CSelf11[直前キー[キャンセル]] == 0   ] Case↓
- | |■Condition (Number):   [1] CSelf14[現在キー[キャンセル]] !=  0  
- | |-◇Condition:  [1]  [ CSelf14[現在キー[キャンセル]] != 0   ] Case↓
+ |■Condition (Number):   [1] CSelf11[Previous Key [Cancel]] ==  0  
+ |-◇Condition:  [1]  [ CSelf11[Previous Key [Cancel]] == 0   ] Case↓
+ | |■Condition (Number):   [1] CSelf14[Current Key [Cancel]] !=  0  
+ | |-◇Condition:  [1]  [ CSelf14[Current Key [Cancel]] != 0   ] Case↓
  | | |■Break Loop
  | | |■
  | |◇End◇
  | |■
  |◇End◇
- |■Condition (Number):   [1] CSelf12[直前キー[サブ]] ==  0  
- |-◇Condition:  [1]  [ CSelf12[直前キー[サブ]] == 0   ] Case↓
- | |■Condition (Number):   [1] CSelf15[現在キー[サブ]] !=  0  
- | |-◇Condition:  [1]  [ CSelf15[現在キー[サブ]] != 0   ] Case↓
+ |■Condition (Number):   [1] CSelf12[Previous Key [Sub]] ==  0  
+ |-◇Condition:  [1]  [ CSelf12[Previous Key [Sub]] == 0   ] Case↓
+ | |■Condition (Number):   [1] CSelf15[Current Key [Sub]] !=  0  
+ | |-◇Condition:  [1]  [ CSelf15[Current Key [Sub]] != 0   ] Case↓
  | | |■Break Loop
  | | |■
  | |◇End◇
  | |■
  |◇End◇
- |■Set Variable: CSelf10[直前キー[決定]] = CSelf13[現在キー[決定]] + 0 
- |■Set Variable: CSelf11[直前キー[キャンセル]] = CSelf14[現在キー[キャンセル]] + 0 
- |■Set Variable: CSelf12[直前キー[サブ]] = CSelf15[現在キー[サブ]] + 0 
+ |■Set Variable: CSelf10[Previous Key [Confirm]] = CSelf13[Current Key [Confirm]] + 0 
+ |■Set Variable: CSelf11[Previous Key [Cancel]] = CSelf14[Current Key [Cancel]] + 0 
+ |■Set Variable: CSelf12[Previous Key [Sub]] = CSelf15[Current Key [Sub]] + 0 
  |■Wait: 1 Frames
  |■
 ◇Loop End Point◇◇

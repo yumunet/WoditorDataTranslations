@@ -1,5 +1,5 @@
 COMMON_ID=199
-COMMON_NAME=X┣◆主人公ＤＢ復元
+COMMON_NAME=X┣◆Update Allies DB
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -164,22 +164,22 @@ COMMAND_NUM=20
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　戦闘ＤＢから主人公ＤＢにデータをコピーします。")
 [103][0,1]<0>()("　これ以後は、戦闘ＤＢは使用しません。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [250][5,4]<0>(20,4,0,69632,1600020)("","Base System Variables","","")
 [121][4,0]<0>(1600010,-1,0,0)()
 [179][1,0]<0>(1600020)()
 [121][4,0]<1>(1600010,1,0,256)()
-[300][4,1]<1>(0,16777217,1600010,1600011)("X[移]選択位置主人公ID取得")
-[300][4,1]<1>(0,2,1600010,1600011)("X[戦]戦闘DB→主人公DBへ戻す")
+[300][4,1]<1>(0,16777217,1600010,1600011)("X[Map]Get Ally ID")
+[300][4,1]<1>(0,2,1600010,1600011)("X[Bat]Return Battle DB to Allies DB")
 [0][0,0]<1>()()
 [498][0,0]<0>()()
 [0][0,0]<0>()()
@@ -187,22 +187,22 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　戦闘ＤＢから主人公ＤＢにデータをコピーします。
 ▼ 　これ以後は、戦闘ＤＢは使用しません。
 ▼ 
-▼ 【このコモンイベント内で操作しているデータベース】
+▼ [Databases Accessed by This Common Event]
 ▼  
-▼ 【ここから呼び出している別コモンイベント】
+▼ [Other Common Events Called from Here]
 ▼  
-▼ 【どのコモンイベントから主に呼び出されているか】
+▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Load DB(Var):  CSelf20 = VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) 
 ■Set Variable: CSelf10 = -1 + 0 
 ■Repeat Loop [ CSelf20 ] Times
  |■Set Variable: CSelf10 += 1 + 0 
- |■Call Event [Name]: CSelf11 = ["X[移]選択位置主人公ID取得"] <CommonEv 105>  / CSelf10
- |■Call Event [Name]: ["X[戦]戦闘DB→主人公DBへ戻す"] <CommonEv 149>  / CSelf10 / CSelf11
+ |■Call Event [Name]: CSelf11 = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf10
+ |■Call Event [Name]: ["X[Bat]Return Battle DB to Allies DB"] <CommonEv 149>  / CSelf10 / CSelf11
  |■
 ◇Loop End Point◇◇
 ■

@@ -1,5 +1,5 @@
 COMMON_ID=76
-COMMON_NAME=X[移]状態更新
+COMMON_NAME=X[Map]Update States
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -164,7 +164,7 @@ COMMAND_NUM=104
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　一歩あるいたときの状態更新処理です。")
 [103][0,1]<0>()("　移動中の、すべての状態異常の残りターン数（歩数）を1減らします。")
 [103][0,1]<0>()("　残りターン（歩数）が0になっていたら、回復させます。")
@@ -174,7 +174,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("　当該キャラの更新が実行されます。このフラグは、ステータス付与などによって1になり、")
 [103][0,1]<0>()("　全ステータスが消去された時点で0になります。")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("　X[移]歩行時_並列キー処理")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("全員分ループさせる")
@@ -207,10 +207,10 @@ WoditorEvCOMMAND_START
 [111][4,0]<4>(1,1600018,0,3)()
 [401][1,0]<4>(1)()
 [103][0,1]<5>()("戦闘不能付与（システム的に戦闘不能にならなければ、次にHP1にする）")
-[300][5,1]<5>(0,3,1600020,0,1)("X[移]状態付与/消去")
-[300][3,1]<5>(0,1,1600020)("X[移]一時ｽﾃ計算<初期化>")
-[300][3,1]<5>(0,1,1600020)("X[移]一時ｽﾃ計算<装備補正>")
-[300][3,1]<5>(0,1,1600020)("X[移]一時ｽﾃ計算<状態補正>")
+[300][5,1]<5>(0,3,1600020,0,1)("X[Map]Add/Remove State")
+[300][3,1]<5>(0,1,1600020)("X[Map]CalcTempStats <Initialize>")
+[300][3,1]<5>(0,1,1600020)("X[Map]CalcTempStats <Equipments>")
+[300][3,1]<5>(0,1,1600020)("X[Map]CalcTempStats <StatusEffects>")
 [250][5,4]<5>(5,1600020,0,69632,1600035)("","┗ State List","","")
 [111][4,0]<5>(1,1600035,0,2)()
 [401][1,0]<5>(1)()
@@ -247,10 +247,10 @@ WoditorEvCOMMAND_START
 [0][0,0]<5>()()
 [498][0,0]<4>()()
 [103][0,1]<4>()("ここで、ステータス状態から導き出される一時値を再更新")
-[300][5,1]<4>(0,3,1600020,-3,2)("X[移]状態付与/消去")
-[300][3,1]<4>(0,1,1600020)("X[移]一時ｽﾃ計算<初期化>")
-[300][3,1]<4>(0,1,1600020)("X[移]一時ｽﾃ計算<装備補正>")
-[300][3,1]<4>(0,1,1600020)("X[移]一時ｽﾃ計算<状態補正>")
+[300][5,1]<4>(0,3,1600020,-3,2)("X[Map]Add/Remove State")
+[300][3,1]<4>(0,1,1600020)("X[Map]CalcTempStats <Initialize>")
+[300][3,1]<4>(0,1,1600020)("X[Map]CalcTempStats <Equipments>")
+[300][3,1]<4>(0,1,1600020)("X[Map]CalcTempStats <StatusEffects>")
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
 [103][0,1]<4>()("0のときは何も処理しないようにするための分岐")
@@ -271,7 +271,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　一歩あるいたときの状態更新処理です。
 ▼ 　移動中の、すべての状態異常の残りターン数（歩数）を1減らします。
 ▼ 　残りターン（歩数）が0になっていたら、回復させます。
@@ -281,7 +281,7 @@ WoditorEvCOMMAND_END
 ▼ 　当該キャラの更新が実行されます。このフラグは、ステータス付与などによって1になり、
 ▼ 　全ステータスが消去された時点で0になります。
 ▼  
-▼ 【どのコモンイベントから主に呼び出されているか】
+▼ [Main Common Events Calling This]
 ▼ 　X[移]歩行時_並列キー処理
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ 全員分ループさせる
@@ -314,10 +314,10 @@ WoditorEvCOMMAND_END
  | | | |■Condition (Number):   [1] CSelf18[残りHP] <=  0  
  | | | |-◇Condition:  [1]  [ CSelf18[残りHP] <= 0   ] Case↓
  | | | | |▼ 戦闘不能付与（システム的に戦闘不能にならなければ、次にHP1にする）
- | | | | |■Call Event [Name]: ["X[移]状態付与/消去"] <CommonEv 75>  / CSelf20[処理中キャラID] / 0:Fainted / 1:付与
- | | | | |■Call Event [Name]: ["X[移]一時ｽﾃ計算<初期化>"] <CommonEv 122>  / CSelf20[処理中キャラID]
- | | | | |■Call Event [Name]: ["X[移]一時ｽﾃ計算<装備補正>"] <CommonEv 123>  / CSelf20[処理中キャラID]
- | | | | |■Call Event [Name]: ["X[移]一時ｽﾃ計算<状態補正>"] <CommonEv 124>  / CSelf20[処理中キャラID]
+ | | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf20[処理中キャラID] / 0:Fainted / 1:付与
+ | | | | |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf20[処理中キャラID]
+ | | | | |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf20[処理中キャラID]
+ | | | | |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf20[処理中キャラID]
  | | | | |■Load DB(Var):  CSelf35[戦闘不能？] = VarDB[ "┗ State List":CSelf20[処理中キャラID]:0 ] (5:-:\udb[8:0] Steps Left) 
  | | | | |■Condition (Number):   [1] CSelf35[戦闘不能？] ==  0  
  | | | | |-◇Condition:  [1]  [ CSelf35[戦闘不能？] == 0   ] Case↓
@@ -354,10 +354,10 @@ WoditorEvCOMMAND_END
  | | | | |■
  | | | |◇Loop End Point◇◇
  | | | |▼ ここで、ステータス状態から導き出される一時値を再更新
- | | | |■Call Event [Name]: ["X[移]状態付与/消去"] <CommonEv 75>  / CSelf20[処理中キャラID] / -3:全て消去(死亡除く全回復時対象) / 2:更新
- | | | |■Call Event [Name]: ["X[移]一時ｽﾃ計算<初期化>"] <CommonEv 122>  / CSelf20[処理中キャラID]
- | | | |■Call Event [Name]: ["X[移]一時ｽﾃ計算<装備補正>"] <CommonEv 123>  / CSelf20[処理中キャラID]
- | | | |■Call Event [Name]: ["X[移]一時ｽﾃ計算<状態補正>"] <CommonEv 124>  / CSelf20[処理中キャラID]
+ | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf20[処理中キャラID] / -3:全て消去(死亡除く全回復時対象) / 2:更新
+ | | | |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf20[処理中キャラID]
+ | | | |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf20[処理中キャラID]
+ | | | |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf20[処理中キャラID]
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf23[次にステ消去するまでの歩数] == 0   ] Case↓
  | | | |▼ 0のときは何も処理しないようにするための分岐

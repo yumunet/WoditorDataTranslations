@@ -1,5 +1,5 @@
 COMMON_ID=135
-COMMON_NAME=X[戦]パラメータ増減
+COMMON_NAME=X[Bat]Change Parameter
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -188,14 +188,14 @@ COMMAND_NUM=79
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　戦闘システム内で主人公のパラメータを増減させるときは、必ずこのコモンイベントを使用します。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [121][4,0]<0>(1600099,0,0,0)()
 [111][7,0]<0>(2,1600001,22,2,1600001,23,2)()
@@ -209,7 +209,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<1>(11,1600000,5,331776,1600010)("","×┏Battle Temp Status","","HP")
 [111][4,0]<1>(1,1600010,0,3)()
 [401][1,0]<1>(1)()
-[300][6,1]<2>(0,4,1600000,0,10,1)("X[戦]状態付与/消去")
+[300][6,1]<2>(0,4,1600000,0,10,1)("X[Bat]Add/Remove State")
 [121][4,0]<2>(1600099,1,0,0)()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
@@ -270,14 +270,14 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　戦闘システム内で主人公のパラメータを増減させるときは、必ずこのコモンイベントを使用します。
 ▼ 
-▼ 【このコモンイベント内で操作しているデータベース】
+▼ [Databases Accessed by This Common Event]
 ▼  
-▼ 【ここから呼び出している別コモンイベント】
+▼ [Other Common Events Called from Here]
 ▼  
-▼ 【どのコモンイベントから主に呼び出されているか】
+▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Set Variable: CSelf99[戦闘不能？] = 0 + 0 
 ■Condition (Number):   [1] CSelf1[対象パラメータ] ==  22  /  [2] CSelf1[対象パラメータ] ==  23  
@@ -291,7 +291,7 @@ WoditorEvCOMMAND_END
  |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"HP" ] (10:-:5) 
  |■Condition (Number):   [1] CSelf10[一時変数A] <=  0  
  |-◇Condition:  [1]  [ CSelf10[一時変数A] <= 0   ] Case↓
- | |■Call Event [Name]: ["X[戦]状態付与/消去"] <CommonEv 137>  / CSelf0[対象戦闘ｽﾛｯﾄ] / 0:Fainted / 10:強制付与 / 1:メッセージ有り
+ | |■Call Event [Name]: ["X[Bat]Add/Remove State"] <CommonEv 137>  / CSelf0[対象戦闘ｽﾛｯﾄ] / 0:Fainted / 10:強制付与 / 1:メッセージ有り
  | |■Set Variable: CSelf99[戦闘不能？] = 1 + 0 
  | |■
  |◇End◇

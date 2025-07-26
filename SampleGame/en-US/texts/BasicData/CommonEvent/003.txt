@@ -1,15 +1,15 @@
 COMMON_ID=3
-COMMON_NAME=○お金の増減
+COMMON_NAME=○ Change Money
 COMMAND_COLOR=0
 TRIGGER=32
 TRIGGER_TARGET=2000000
 TRIGGER_VAL=0
-MEMO=所持金を増減させます。減らしたいときはマイナスの値を入れて下さい。
+MEMO=Increases or decreases the current amount of money. To decrease, use a negative amount.
 VALINPUT_NUM=2
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=お金の増減値
-VALINPUT_NAME_1=入手メッセージ
+VALINPUT_NAME_0=Money Amount
+VALINPUT_NAME_1=Show Message?
 VALINPUT_NAME_2=
 VALINPUT_NAME_3=
 VALINPUT_NAME_4=
@@ -33,8 +33,8 @@ LOADTYPE9=0
 CHOICE_STR_NUM=10
 CHOICE_STR_0_NUM=0
 CHOICE_STR_1_NUM=2
-CHOICE_STR_1_0=あり
-CHOICE_STR_1_1=なし
+CHOICE_STR_1_0=Yes
+CHOICE_STR_1_1=No
 CHOICE_STR_2_NUM=0
 CHOICE_STR_3_NUM=0
 CHOICE_STR_4_NUM=0
@@ -64,8 +64,8 @@ DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
 RETURN_VAL_NAME=
 RETURN_VAL_TARGET=-1
-CSELF_NAME_0=お金の増減値
-CSELF_NAME_1=入手メッセージ
+CSELF_NAME_0=Money Amount
+CSELF_NAME_1=Show Message?
 CSELF_NAME_2=
 CSELF_NAME_3=
 CSELF_NAME_4=
@@ -73,7 +73,7 @@ CSELF_NAME_5=
 CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
-CSELF_NAME_9=単位
+CSELF_NAME_9=Unit
 CSELF_NAME_10=
 CSELF_NAME_11=
 CSELF_NAME_12=
@@ -167,19 +167,19 @@ CSELF_NAME_99=
 COMMAND_NUM=18
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("所持金を増減")
-[300][3,1]<0>(0,1,1600000)("X[共]所持金増減")
+[103][0,1]<0>()("Gain/Lose Money")
+[300][3,1]<0>(0,1,1600000)("X[Com]Change Money")
 [250][5,4]<0>(14,0,18,332288,1600009)("","Terms","","[Stats] Currency")
 [111][4,0]<0>(1,1600001,1,2)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("入手メッセージがある場合は文章を表示する")
+[103][0,1]<1>()("If there's a message, display message.")
 [111][7,0]<1>(2,1600000,1,1,1600000,-1,3)()
 [401][1,0]<1>(1)()
-[101][0,1]<2>()("@1<\n>\cself[0]\cself[9]を手に入れた。")
+[101][0,1]<2>()("@1<\n>Obtained \cself[0] \cself[9].")
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
 [121][4,0]<2>(1600000,1600000,0,2048)()
-[101][0,1]<2>()("@1<\n>\cself[0]\cself[9]を失った。")
+[101][0,1]<2>()("@1<\n>Lost \cself[0] \cself[9].")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [0][0,0]<1>()()
@@ -188,19 +188,19 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ 所持金を増減
-■Call Event [Name]: ["X[共]所持金増減"] <CommonEv 53>  / CSelf0[お金の増減値]
-■Load DB(User):  CSelf9[単位] = UserDB[ "Terms":0:"[Stats] Currency" ] (15:Basic Terms:18) 
-■Condition (Number):   [1] CSelf1[入手メッセージ] ==  1  
--◇Condition:  [1]  [ CSelf1[入手メッセージ] == 1   ] Case↓
- |▼ 入手メッセージがある場合は文章を表示する
- |■Condition (Number):   [1] CSelf0[お金の増減値] >=  1  /  [2] CSelf0[お金の増減値] <=  -1  
- |-◇Condition:  [1]  [ CSelf0[お金の増減値] >= 1   ] Case↓
- | |■Show Message:@1\n\cself[0]\cself[9]を手に入れた。
+▼ Gain/Lose Money
+■Call Event [Name]: ["X[Com]Change Money"] <CommonEv 53>  / CSelf0[Money Amount]
+■Load DB(User):  CSelf9[Unit] = UserDB[ "Terms":0:"[Stats] Currency" ] (15:Basic Terms:18) 
+■Condition (Number):   [1] CSelf1[Show Message?] ==  1  
+-◇Condition:  [1]  [ CSelf1[Show Message?] == 1   ] Case↓
+ |▼ If there's a message, display message.
+ |■Condition (Number):   [1] CSelf0[Money Amount] >=  1  /  [2] CSelf0[Money Amount] <=  -1  
+ |-◇Condition:  [1]  [ CSelf0[Money Amount] >= 1   ] Case↓
+ | |■Show Message:@1\nObtained \cself[0] \cself[9].
  | |■
- |-◇Condition:  [2]  [ CSelf0[お金の増減値] <= -1   ] Case↓
- | |■Set Variable: CSelf0[お金の増減値] Absolute= CSelf0[お金の増減値] + 0 
- | |■Show Message:@1\n\cself[0]\cself[9]を失った。
+ |-◇Condition:  [2]  [ CSelf0[Money Amount] <= -1   ] Case↓
+ | |■Set Variable: CSelf0[Money Amount] Absolute= CSelf0[Money Amount] + 0 
+ | |■Show Message:@1\nLost \cself[0] \cself[9].
  | |■
  |◇End◇
  |■

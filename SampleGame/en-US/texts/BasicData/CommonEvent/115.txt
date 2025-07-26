@@ -1,5 +1,5 @@
 COMMON_ID=115
-COMMON_NAME=X[移]キーリピート設定
+COMMON_NAME=X[Map]Set Key Repeat
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -164,7 +164,7 @@ COMMAND_NUM=30
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　キーリピートの設定レベルを指定し、実際のキーリピート値を設定します。")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [250][5,4]<0>(18,57,0,65536,1600000)("","Base System Variables","","")
@@ -197,10 +197,10 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　キーリピートの設定レベルを指定し、実際のキーリピート値を設定します。
 ▼ ―――――――――――――――――――――――――――――――――――
-■Write to DB(Var): VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat:Number) =  CSelf0[設定値[0-4]]
+■Write to DB(Var): VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat Speed:Number) =  CSelf0[設定値[0-4]]
 ■Condition (Number):   [1] CSelf0[設定値[0-4]] <=  0  /  [2] CSelf0[設定値[0-4]] ==  1  /  [3] CSelf0[設定値[0-4]] ==  2  
 -◇Condition:  [1]  [ CSelf0[設定値[0-4]] <= 0   ] Case↓
  |■Set Variable: Sys15:Direction Key Repeat First Wait (Frames) = 25 + 0 

@@ -1,5 +1,5 @@
 COMMON_ID=189
-COMMON_NAME=X┣◆戦闘初期化
+COMMON_NAME=X┣◆Initialize Battle
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -164,21 +164,21 @@ COMMAND_NUM=23
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
+[103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("　戦闘前のBGMを記憶したり、画面処理を行います（暗くするなど）。")
 [103][0,1]<0>()("　また、主人公ＤＢ＋状態ＤＢと敵キャラＤＢから、戦闘ＤＢへ能力値をコピーします。")
 [103][0,1]<0>()("　以降はすべて戦闘DBで処理が行われます。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[300][3,1]<0>(0,1,0)("X[戦]バックグラウンド描画")
-[300][2,1]<0>(0,0)("X[移]パーティー情報計算")
+[300][3,1]<0>(0,1,0)("X[Bat]Draw Background")
+[300][2,1]<0>(0,0)("X[Map]Update Party Info")
 [250][5,4]<0>(21,75,0,65536,0)("","Base System Variables","","")
-[300][2,1]<0>(0,0)("X[戦]戦闘変数初期化")
+[300][2,1]<0>(0,0)("X[Bat]Initialize Battle Variables")
 [250][5,4]<0>(10,-2,5,65536,1600028)("","×┏Battle Temp Status","","")
 [250][5,4]<0>(11,-2,5,65536,1600028)("","×┣Element Resist Calc","","")
 [250][5,4]<0>(12,-2,5,65536,1600028)("","×┣State Resist Calc","","")
@@ -190,21 +190,21 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
+▼ [Process Overview]
 ▼ 　戦闘前のBGMを記憶したり、画面処理を行います（暗くするなど）。
 ▼ 　また、主人公ＤＢ＋状態ＤＢと敵キャラＤＢから、戦闘ＤＢへ能力値をコピーします。
 ▼ 　以降はすべて戦闘DBで処理が行われます。
 ▼ 
-▼ 【このコモンイベント内で操作しているデータベース】
+▼ [Databases Accessed by This Common Event]
 ▼  
-▼ 【ここから呼び出している別コモンイベント】
+▼ [Other Common Events Called from Here]
 ▼  
-▼ 【どのコモンイベントから主に呼び出されているか】
+▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
-■Call Event [Name]: ["X[戦]バックグラウンド描画"] <CommonEv 180>  / 0:表示
-■Call Event [Name]: ["X[移]パーティー情報計算"] <CommonEv 79> 
+■Call Event [Name]: ["X[Bat]Draw Background"] <CommonEv 180>  / 0:表示
+■Call Event [Name]: ["X[Map]Update Party Info"] <CommonEv 79> 
 ■Write to DB(Var): VarDB[ "Base System Variables":75:0 ] (18:[Battle] Current Turn Count:Number) =  0
-■Call Event [Name]: ["X[戦]戦闘変数初期化"] <CommonEv 140> 
+■Call Event [Name]: ["X[Bat]Initialize Battle Variables"] <CommonEv 140> 
 ■Write to DB(Var): [Reset Type "×┏Battle Temp Status"(10)]
 ■Write to DB(Var): [Reset Type "×┣Element Resist Calc"(11)]
 ■Write to DB(Var): [Reset Type "×┣State Resist Calc"(12)]

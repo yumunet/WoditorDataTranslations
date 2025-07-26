@@ -1,5 +1,5 @@
 COMMON_ID=58
-COMMON_NAME=X[共]技能の習得・消去
+COMMON_NAME=X[Com]Add/Remove Skill
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -8,9 +8,9 @@ MEMO=
 VALINPUT_NUM=3
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=主人公ID
-VALINPUT_NAME_1=技能番号
-VALINPUT_NAME_2=習得？消去？
+VALINPUT_NAME_0=Ally ID
+VALINPUT_NAME_1=Skill ID
+VALINPUT_NAME_2=Learn? Forget?
 VALINPUT_NAME_3=
 VALINPUT_NAME_4=
 VALINPUT_NAME_5=
@@ -68,9 +68,9 @@ DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
 RETURN_VAL_NAME=
 RETURN_VAL_TARGET=-1
-CSELF_NAME_0=主人公ID
-CSELF_NAME_1=技能番号
-CSELF_NAME_2=習得？消去？
+CSELF_NAME_0=Ally ID
+CSELF_NAME_1=Skill ID
+CSELF_NAME_2=Learn? Forget?
 CSELF_NAME_3=
 CSELF_NAME_4=
 CSELF_NAME_5=
@@ -78,12 +78,12 @@ CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=
-CSELF_NAME_10=一時変数A
-CSELF_NAME_11=一時変数B
-CSELF_NAME_12=一時変数C
+CSELF_NAME_10=Temp Variable A
+CSELF_NAME_11=Temp Variable B
+CSELF_NAME_12=Temp Variable C
 CSELF_NAME_13=
 CSELF_NAME_14=
-CSELF_NAME_15=空き欄
+CSELF_NAME_15=Empty Slot
 CSELF_NAME_16=
 CSELF_NAME_17=
 CSELF_NAME_18=
@@ -172,14 +172,14 @@ COMMAND_NUM=76
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
-[103][0,1]<0>()("　主人公の技能をイベント的に増減させるときに、コモンイベントを使用します。")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("  This common event is used to make the ally learn or forget skills through an event.")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [111][7,0]<0>(2,1600002,0,2,1600002,1,2)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("習得の場合は、すでに覚えているかどうか（または将来覚える枠があるかどうか）を調査")
+[103][0,1]<1>()("For learning, check if the skill is already learned (or if it can be learned in the future).")
 [121][4,0]<1>(1600010,-1,0,0)()
-[103][0,1]<1>()("15：最初に見つかった空欄箇所を記憶する変数")
+[103][0,1]<1>()("CSelf15: Variable for storing the first empty slot found")
 [121][4,0]<1>(1600015,-1,0,0)()
 [250][5,4]<1>(1,1600000,-1,69632,1600011)("","┣ Skill Learning Lv","","")
 [170][0,0]<1>()()
@@ -189,17 +189,17 @@ WoditorEvCOMMAND_START
 [171][0,0]<3>()()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
-[103][0,1]<2>()("もし覚えようとしている技能が見つかったらその習得レベルを0にする")
+[103][0,1]<2>()("If the skill to learn is found, set its learning level to 0.")
 [250][5,4]<2>(1,1600000,1600010,69632,1600012)("","┣ Skill Learning Lv","","")
 [111][4,0]<2>(1,1600012,1600001,2)()
 [401][1,0]<2>(1)()
 [121][4,0]<3>(1600010,-1,0,256)()
-[103][0,1]<3>()("習得レベルを0にする（習得済みにする）　　そして終了")
+[103][0,1]<3>()("Set the learning level to 0 (learned), then end.")
 [250][5,4]<3>(1,1600000,1600010,65536,0)("","┣ Skill Learning Lv","","")
 [172][0,0]<3>()()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
-[103][0,1]<2>()("最初の覚える技能「なし」の欄が見つかったら記憶しておく")
+[103][0,1]<2>()("When the first field where <dqrt>Skill to Learn<dqrt> is <dqrt>None<dqrt> is found, store it.")
 [111][4,0]<2>(1,1600012,-1,3)()
 [401][1,0]<2>(1)()
 [111][4,0]<3>(1,1600015,-1,2)()
@@ -211,7 +211,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<2>()()
 [0][0,0]<2>()()
 [498][0,0]<1>()()
-[103][0,1]<1>()("覚えようとしている技能が見つからなかったときは空欄に追加する")
+[103][0,1]<1>()("If the skill to learn is not found, add it to the empty slot.")
 [111][4,0]<1>(1,1600015,0,1)()
 [401][1,0]<1>(1)()
 [250][5,0]<2>(1,1600000,1600015,0,1600001)()
@@ -221,7 +221,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<1>()()
 [0][0,0]<1>()()
 [401][1,0]<0>(2)()
-[103][0,1]<1>()("忘却の場合は、その技能があればどんどん消去していく")
+[103][0,1]<1>()("For forgetting, erase the skill wherever it's found.")
 [121][4,0]<1>(1600010,-1,0,0)()
 [250][5,4]<1>(1,1600000,-1,69632,1600011)("","┣ Skill Learning Lv","","")
 [170][0,0]<1>()()
@@ -231,11 +231,11 @@ WoditorEvCOMMAND_START
 [171][0,0]<3>()()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
-[103][0,1]<2>()("もし忘れようとしている技能が見つかったら消去")
+[103][0,1]<2>()("If the skill to forget is found, erase it.")
 [250][5,4]<2>(1,1600000,1600010,69632,1600012)("","┣ Skill Learning Lv","","")
 [111][4,0]<2>(1,1600012,1600001,2)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("見つけた技能と習得レベルを-1にする")
+[103][0,1]<3>()("Set the skill found and its learning level to -1.")
 [121][4,0]<3>(1600010,-1,0,256)()
 [250][5,4]<3>(1,1600000,1600010,65536,-1)("","┣ Skill Learning Lv","","")
 [121][4,0]<3>(1600010,1,0,256)()
@@ -251,74 +251,74 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
-▼ 　主人公の技能をイベント的に増減させるときに、コモンイベントを使用します。
+▼ [Process Overview]
+▼   This common event is used to make the ally learn or forget skills through an event.
 ▼ ―――――――――――――――――――――――――――――――――――
-■Condition (Number):   [1] CSelf2[習得？消去？] ==  0  /  [2] CSelf2[習得？消去？] ==  1  
--◇Condition:  [1]  [ CSelf2[習得？消去？] == 0   ] Case↓
- |▼ 習得の場合は、すでに覚えているかどうか（または将来覚える枠があるかどうか）を調査
- |■Set Variable: CSelf10[一時変数A] = -1 + 0 
- |▼ 15：最初に見つかった空欄箇所を記憶する変数
- |■Set Variable: CSelf15[空き欄] = -1 + 0 
- |■Load DB(Var):  CSelf11[一時変数B] = VarDB[Type "┣ Skill Learning Lv"(1)'s Field Count]
+■Condition (Number):   [1] CSelf2[Learn? Forget?] ==  0  /  [2] CSelf2[Learn? Forget?] ==  1  
+-◇Condition:  [1]  [ CSelf2[Learn? Forget?] == 0   ] Case↓
+ |▼ For learning, check if the skill is already learned (or if it can be learned in the future).
+ |■Set Variable: CSelf10[Temp Variable A] = -1 + 0 
+ |▼ CSelf15: Variable for storing the first empty slot found
+ |■Set Variable: CSelf15[Empty Slot] = -1 + 0 
+ |■Load DB(Var):  CSelf11[Temp Variable B] = VarDB[Type "┣ Skill Learning Lv"(1)'s Field Count]
  |■Loop Start
- | |■Set Variable: CSelf10[一時変数A] += 2 + 0 
- | |■Condition (Number):   [1] CSelf10[一時変数A] >=  CSelf11[一時変数B]  
- | |-◇Condition:  [1]  [ CSelf10[一時変数A] >= CSelf11[一時変数B]   ] Case↓
+ | |■Set Variable: CSelf10[Temp Variable A] += 2 + 0 
+ | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  CSelf11[Temp Variable B]  
+ | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= CSelf11[Temp Variable B]   ] Case↓
  | | |■Break Loop
  | | |■
  | |◇End◇
- | |▼ もし覚えようとしている技能が見つかったらその習得レベルを0にする
- | |■Load DB(Var):  CSelf12[一時変数C] = VarDB[ "┣ Skill Learning Lv":CSelf0[主人公ID]:CSelf10[一時変数A] ] (1:-:-) 
- | |■Condition (Number):   [1] CSelf12[一時変数C] ==  CSelf1[技能番号]  
- | |-◇Condition:  [1]  [ CSelf12[一時変数C] == CSelf1[技能番号]   ] Case↓
- | | |■Set Variable: CSelf10[一時変数A] += -1 + 0 
- | | |▼ 習得レベルを0にする（習得済みにする）　　そして終了
- | | |■Write to DB(Var): VarDB[ "┣ Skill Learning Lv":CSelf0[主人公ID]:CSelf10[一時変数A] ] (1:-:-) =  0
+ | |▼ If the skill to learn is found, set its learning level to 0.
+ | |■Load DB(Var):  CSelf12[Temp Variable C] = VarDB[ "┣ Skill Learning Lv":CSelf0[Ally ID]:CSelf10[Temp Variable A] ] (1:-:-) 
+ | |■Condition (Number):   [1] CSelf12[Temp Variable C] ==  CSelf1[Skill ID]  
+ | |-◇Condition:  [1]  [ CSelf12[Temp Variable C] == CSelf1[Skill ID]   ] Case↓
+ | | |■Set Variable: CSelf10[Temp Variable A] += -1 + 0 
+ | | |▼ Set the learning level to 0 (learned), then end.
+ | | |■Write to DB(Var): VarDB[ "┣ Skill Learning Lv":CSelf0[Ally ID]:CSelf10[Temp Variable A] ] (1:-:-) =  0
  | | |■Exit Event
  | | |■
  | |◇End◇
- | |▼ 最初の覚える技能「なし」の欄が見つかったら記憶しておく
- | |■Condition (Number):   [1] CSelf12[一時変数C] <=  -1  
- | |-◇Condition:  [1]  [ CSelf12[一時変数C] <= -1   ] Case↓
- | | |■Condition (Number):   [1] CSelf15[空き欄] ==  -1  
- | | |-◇Condition:  [1]  [ CSelf15[空き欄] == -1   ] Case↓
- | | | |■Set Variable: CSelf15[空き欄] = CSelf10[一時変数A] + 0 
+ | |▼ When the first field where "Skill to Learn" is "None" is found, store it.
+ | |■Condition (Number):   [1] CSelf12[Temp Variable C] <=  -1  
+ | |-◇Condition:  [1]  [ CSelf12[Temp Variable C] <= -1   ] Case↓
+ | | |■Condition (Number):   [1] CSelf15[Empty Slot] ==  -1  
+ | | |-◇Condition:  [1]  [ CSelf15[Empty Slot] == -1   ] Case↓
+ | | | |■Set Variable: CSelf15[Empty Slot] = CSelf10[Temp Variable A] + 0 
  | | | |■
  | | |◇End◇
  | | |■
  | |◇End◇
  | |■
  |◇Loop End Point◇◇
- |▼ 覚えようとしている技能が見つからなかったときは空欄に追加する
- |■Condition (Number):   [1] CSelf15[空き欄] >=  0  
- |-◇Condition:  [1]  [ CSelf15[空き欄] >= 0   ] Case↓
- | |■Write to DB(Var): VarDB[ 1:CSelf0[主人公ID]:CSelf15[空き欄] ] (┣ Skill Learning Lv:-:-) =  CSelf1[技能番号]
- | |■Set Variable: CSelf15[空き欄] += -1 + 0 
- | |■Write to DB(Var): VarDB[ 1:CSelf0[主人公ID]:CSelf15[空き欄] ] (┣ Skill Learning Lv:-:-) =  0
+ |▼ If the skill to learn is not found, add it to the empty slot.
+ |■Condition (Number):   [1] CSelf15[Empty Slot] >=  0  
+ |-◇Condition:  [1]  [ CSelf15[Empty Slot] >= 0   ] Case↓
+ | |■Write to DB(Var): VarDB[ 1:CSelf0[Ally ID]:CSelf15[Empty Slot] ] (┣ Skill Learning Lv:-:-) =  CSelf1[Skill ID]
+ | |■Set Variable: CSelf15[Empty Slot] += -1 + 0 
+ | |■Write to DB(Var): VarDB[ 1:CSelf0[Ally ID]:CSelf15[Empty Slot] ] (┣ Skill Learning Lv:-:-) =  0
  | |■
  |◇End◇
  |■
--◇Condition:  [2]  [ CSelf2[習得？消去？] == 1   ] Case↓
- |▼ 忘却の場合は、その技能があればどんどん消去していく
- |■Set Variable: CSelf10[一時変数A] = -1 + 0 
- |■Load DB(Var):  CSelf11[一時変数B] = VarDB[Type "┣ Skill Learning Lv"(1)'s Field Count]
+-◇Condition:  [2]  [ CSelf2[Learn? Forget?] == 1   ] Case↓
+ |▼ For forgetting, erase the skill wherever it's found.
+ |■Set Variable: CSelf10[Temp Variable A] = -1 + 0 
+ |■Load DB(Var):  CSelf11[Temp Variable B] = VarDB[Type "┣ Skill Learning Lv"(1)'s Field Count]
  |■Loop Start
- | |■Set Variable: CSelf10[一時変数A] += 2 + 0 
- | |■Condition (Number):   [1] CSelf10[一時変数A] >=  CSelf11[一時変数B]  
- | |-◇Condition:  [1]  [ CSelf10[一時変数A] >= CSelf11[一時変数B]   ] Case↓
+ | |■Set Variable: CSelf10[Temp Variable A] += 2 + 0 
+ | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  CSelf11[Temp Variable B]  
+ | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= CSelf11[Temp Variable B]   ] Case↓
  | | |■Break Loop
  | | |■
  | |◇End◇
- | |▼ もし忘れようとしている技能が見つかったら消去
- | |■Load DB(Var):  CSelf12[一時変数C] = VarDB[ "┣ Skill Learning Lv":CSelf0[主人公ID]:CSelf10[一時変数A] ] (1:-:-) 
- | |■Condition (Number):   [1] CSelf12[一時変数C] ==  CSelf1[技能番号]  
- | |-◇Condition:  [1]  [ CSelf12[一時変数C] == CSelf1[技能番号]   ] Case↓
- | | |▼ 見つけた技能と習得レベルを-1にする
- | | |■Set Variable: CSelf10[一時変数A] += -1 + 0 
- | | |■Write to DB(Var): VarDB[ "┣ Skill Learning Lv":CSelf0[主人公ID]:CSelf10[一時変数A] ] (1:-:-) =  -1
- | | |■Set Variable: CSelf10[一時変数A] += 1 + 0 
- | | |■Write to DB(Var): VarDB[ "┣ Skill Learning Lv":CSelf0[主人公ID]:CSelf10[一時変数A] ] (1:-:-) =  -1
+ | |▼ If the skill to forget is found, erase it.
+ | |■Load DB(Var):  CSelf12[Temp Variable C] = VarDB[ "┣ Skill Learning Lv":CSelf0[Ally ID]:CSelf10[Temp Variable A] ] (1:-:-) 
+ | |■Condition (Number):   [1] CSelf12[Temp Variable C] ==  CSelf1[Skill ID]  
+ | |-◇Condition:  [1]  [ CSelf12[Temp Variable C] == CSelf1[Skill ID]   ] Case↓
+ | | |▼ Set the skill found and its learning level to -1.
+ | | |■Set Variable: CSelf10[Temp Variable A] += -1 + 0 
+ | | |■Write to DB(Var): VarDB[ "┣ Skill Learning Lv":CSelf0[Ally ID]:CSelf10[Temp Variable A] ] (1:-:-) =  -1
+ | | |■Set Variable: CSelf10[Temp Variable A] += 1 + 0 
+ | | |■Write to DB(Var): VarDB[ "┣ Skill Learning Lv":CSelf0[Ally ID]:CSelf10[Temp Variable A] ] (1:-:-) =  -1
  | | |■
  | |◇End◇
  | |■

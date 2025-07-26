@@ -1,19 +1,19 @@
 COMMON_ID=6
-COMMON_NAME=○主人公情報の変更
+COMMON_NAME=○ Change Ally Data
 COMMAND_COLOR=0
 TRIGGER=32
 TRIGGER_TARGET=2000000
 TRIGGER_VAL=0
-MEMO=主人公の名前・肩書き・顔グラフィック・歩行グラフィックを変更します。戦闘中でも有効。
+MEMO=Changes the ally's name, title, face image, or character image. Also works in battle.
 VALINPUT_NUM=2
 STRINPUT_NUM=1
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=対象主人公
-VALINPUT_NAME_1=設定するのは？
+VALINPUT_NAME_0=Target Ally
+VALINPUT_NAME_1=Which Data?
 VALINPUT_NAME_2=
 VALINPUT_NAME_3=
-VALINPUT_NAME_4=新しい文字列
-VALINPUT_NAME_5=新しい文字列
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=New String
 VALINPUT_NAME_6=
 VALINPUT_NAME_7=
 VALINPUT_NAME_8=
@@ -33,10 +33,10 @@ LOADTYPE9=0
 CHOICE_STR_NUM=10
 CHOICE_STR_0_NUM=0
 CHOICE_STR_1_NUM=4
-CHOICE_STR_1_0=キャラ名
-CHOICE_STR_1_1=肩書き
-CHOICE_STR_1_2=歩行グラフィック画像
-CHOICE_STR_1_3=顔グラフィック画像
+CHOICE_STR_1_0=Name
+CHOICE_STR_1_1=Title
+CHOICE_STR_1_2=Character Image
+CHOICE_STR_1_3=Face Image
 CHOICE_STR_2_NUM=0
 CHOICE_STR_3_NUM=0
 CHOICE_STR_4_NUM=0
@@ -71,18 +71,18 @@ DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
 RETURN_VAL_NAME=
 RETURN_VAL_TARGET=-1
-CSELF_NAME_0=対象主人公
-CSELF_NAME_1=設定するのは？
+CSELF_NAME_0=Target Ally
+CSELF_NAME_1=What to Change?
 CSELF_NAME_2=
 CSELF_NAME_3=
 CSELF_NAME_4=
-CSELF_NAME_5=新しい文字列
+CSELF_NAME_5=New String
 CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=
-CSELF_NAME_10=一時変数A
-CSELF_NAME_11=一時変数B
+CSELF_NAME_10=
+CSELF_NAME_11=
 CSELF_NAME_12=
 CSELF_NAME_13=
 CSELF_NAME_14=
@@ -91,7 +91,7 @@ CSELF_NAME_16=
 CSELF_NAME_17=
 CSELF_NAME_18=
 CSELF_NAME_19=
-CSELF_NAME_20=最大パーティ数
+CSELF_NAME_20=
 CSELF_NAME_21=
 CSELF_NAME_22=
 CSELF_NAME_23=
@@ -174,17 +174,17 @@ CSELF_NAME_99=
 COMMAND_NUM=5
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("単純に可変DBのキャラ情報を更新するだけ")
-[300][5,1]<0>(0,18,1600000,1600001,1600005)("X[移]パラメータ変更(文字列)")
-[103][0,1]<0>()("戦闘中で、該当キャラが参戦してた場合はそちらにも格納")
-[300][3,1]<0>(0,1,1600000)("X[戦]指定主人公更新処理")
+[103][0,1]<0>()("Update the character 's data in the Variable DB.")
+[300][5,1]<0>(0,18,1600000,1600001,1600005)("X[Map]Change Parameter (String)")
+[103][0,1]<0>()("If the corresponding character is in battle, store there as well.")
+[300][3,1]<0>(0,1,1600000)("X[Bat]Update Ally")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ 単純に可変DBのキャラ情報を更新するだけ
-■Call Event [Name]: ["X[移]パラメータ変更(文字列)"] <CommonEv 72>  / CSelf0[対象主人公] / CSelf1[設定するのは？] / CSelf5[新しい文字列]
-▼ 戦闘中で、該当キャラが参戦してた場合はそちらにも格納
-■Call Event [Name]: ["X[戦]指定主人公更新処理"] <CommonEv 142>  / CSelf0[対象主人公]
+▼ Update the character 's data in the Variable DB.
+■Call Event [Name]: ["X[Map]Change Parameter (String)"] <CommonEv 72>  / CSelf0[Target Ally] / CSelf1[What to Change?] / CSelf5[New String]
+▼ If the corresponding character is in battle, store there as well.
+■Call Event [Name]: ["X[Bat]Update Ally"] <CommonEv 142>  / CSelf0[Target Ally]
 ■
 [COMMAND_TEXT_END]

@@ -1,15 +1,15 @@
 COMMON_ID=65
-COMMON_NAME=X[共]万能ｳｨﾝﾄﾞｳ選択実行
+COMMON_NAME=X[Com]U-Window: Select
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
 TRIGGER_VAL=0
-MEMO=・決定時：　・キャンセル時：-100を返す　・サブキー・左右キーOK時：-300を返す　・1回キー時：選択中なら-200を返す
+MEMO=*Canceled: Returns -100 *Ended with Sub/Left/Right Key: Returns -300 *One Key Press Mode: If selecting, returns -200
 VALINPUT_NUM=2
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=モード
-VALINPUT_NAME_1=オプション
+VALINPUT_NAME_0=Mode
+VALINPUT_NAME_1=Option
 VALINPUT_NAME_2=
 VALINPUT_NAME_3=
 VALINPUT_NAME_4=
@@ -32,15 +32,15 @@ LOADTYPE8=0
 LOADTYPE9=0
 CHOICE_STR_NUM=10
 CHOICE_STR_0_NUM=3
-CHOICE_STR_0_0=選択を終えるまでループ
-CHOICE_STR_0_1=選択を終えるまでループ[ｶｰｿﾙ初期化しない]
-CHOICE_STR_0_2=キー１回分だけ処理
+CHOICE_STR_0_0=Loop Until Selected
+CHOICE_STR_0_1=Loop Until Selected (Don't Initialize Cursor)
+CHOICE_STR_0_2=End with One Key Press
 CHOICE_STR_1_NUM=5
-CHOICE_STR_1_0=決定音を鳴らす
-CHOICE_STR_1_1=決定音を鳴らさない
-CHOICE_STR_1_2=サブキーで終了
-CHOICE_STR_1_3=決定無音＋サブキーで終了
-CHOICE_STR_1_4=左右キーで終了
+CHOICE_STR_1_0=Play Confirm Sound
+CHOICE_STR_1_1=Don't Play Confirm Sound
+CHOICE_STR_1_2=End with Sub Key
+CHOICE_STR_1_3=No Confirm Sound, End with Sub Key
+CHOICE_STR_1_4=End with Left/Right Key
 CHOICE_STR_2_NUM=0
 CHOICE_STR_3_NUM=0
 CHOICE_STR_4_NUM=0
@@ -74,10 +74,10 @@ DEFAULT_VAL_1=0
 DEFAULT_VAL_2=0
 DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
-RETURN_VAL_NAME=選択コード
+RETURN_VAL_NAME=Selected ID
 RETURN_VAL_TARGET=10
-CSELF_NAME_0=モード
-CSELF_NAME_1=オプション
+CSELF_NAME_0=Mode
+CSELF_NAME_1=Option
 CSELF_NAME_2=
 CSELF_NAME_3=
 CSELF_NAME_4=
@@ -86,22 +86,22 @@ CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=
-CSELF_NAME_10=選択コード
-CSELF_NAME_11=選択カーソル位置
-CSELF_NAME_12=一時変数A
-CSELF_NAME_13=一時変数B
+CSELF_NAME_10=Selected ID
+CSELF_NAME_11=Cursor Position
+CSELF_NAME_12=Temp Variable A
+CSELF_NAME_13=Temp Variable B
 CSELF_NAME_14=
 CSELF_NAME_15=
 CSELF_NAME_16=
 CSELF_NAME_17=
 CSELF_NAME_18=
 CSELF_NAME_19=
-CSELF_NAME_20=受付キー
+CSELF_NAME_20=Pressed Key
 CSELF_NAME_21=
 CSELF_NAME_22=
 CSELF_NAME_23=
-CSELF_NAME_24=横項目数
-CSELF_NAME_25=最大項目数
+CSELF_NAME_24=Columns
+CSELF_NAME_25=Total Items
 CSELF_NAME_26=
 CSELF_NAME_27=
 CSELF_NAME_28=
@@ -180,26 +180,26 @@ COMMAND_NUM=243
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【処理の内容】")
-[103][0,1]<0>()("　「X[共]万能ｳｨﾝﾄﾞｳ描画処理」でウィンドウを表示した後、キー操作を受け付けて")
-[103][0,1]<0>()("　カーソルの位置を計算し、「X[移]万能ｳｨﾝﾄﾞｳ描画処理」で描画更新するコモンイベントです。")
-[103][0,1]<0>()("　ただし、終了しても万能ウィンドウ画像は残ります。消すのは手動で。")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("  After the window is displayed by <dqrt>X[Com]Draw Universal Window<dqrt>, this common event takes key inputs,")
+[103][0,1]<0>()("  calculates the cursor position, and updates the window display using <dqrt>X[Com]Draw Universal Window<dqrt>.")
+[103][0,1]<0>()("  Note that the Universal Window pictures will remain even after this event ends. You must manually erase them.")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("【このコモンイベント内で操作しているデータベース】")
-[103][0,1]<0>()("　可変DB「万能ｳｨﾝﾄﾞｳ一時DB」")
-[103][0,1]<0>()("　可変DB「基本ｼｽﾃﾑ用変数」")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()("  Variable DB <dqrt>Universal Window Items<dqrt>")
+[103][0,1]<0>()("  Variable DB <dqrt>Base System Variables<dqrt>")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ここから呼び出している別コモンイベント】")
-[103][0,1]<0>()("　X[共]万能ｳｨﾝﾄﾞｳ描画処理　→　カーソル描画更新用")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()("  X[Com]Draw Universal Window (Used to update cursor display)")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【どのコモンイベントから主に呼び出されているか】")
+[103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【使用例】")
-[103][0,1]<0>()("　コモンイベント「■■【共通・画面処理】■■」　内に使用サンプルがあります。")
+[103][0,1]<0>()("[Usage Example]")
+[103][0,1]<0>()("  There are examples in the common event <dqrt>■■[Common: Screen Processing]■■<dqrt>.")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("パラメータ初期化")
+[103][0,1]<0>()("Initialize Parameters")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [250][5,4]<0>(18,13,0,69632,1600024)("","Base System Variables","","")
 [250][5,4]<0>(18,17,0,69632,1600025)("","Base System Variables","","")
@@ -210,7 +210,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<0>()()
 [111][7,0]<0>(2,1600000,0,2,1600000,1,2)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("選択完了までの場合　カーソル位置を初期化")
+[103][0,1]<1>()("For <dqrt>Loop Until Selected,<dqrt> initialize the cursor position.")
 [121][4,0]<1>(1600011,0,0,0)()
 [250][5,4]<1>(20,21,0,69632,1600012)("","Base System Variables","","")
 [111][4,0]<1>(1,1600012,-1,5)()
@@ -222,7 +222,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<1>()()
 [0][0,0]<1>()()
 [401][1,0]<0>(2)()
-[103][0,1]<1>()("キー一回分だけ処理する場合はカーソル位置を初期化しない（ただ外からカーソル指定がセットされてたら入れる）")
+[103][0,1]<1>()("For <dqrt>End with One Key Press,<dqrt> don't initialize the cursor position. (But if a cursor is set externally, use it.)")
 [250][5,4]<1>(20,21,0,69632,1600012)("","Base System Variables","","")
 [111][4,0]<1>(1,1600012,-1,5)()
 [401][1,0]<1>(1)()
@@ -235,7 +235,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<0>()()
 [111][4,0]<0>(1,1600000,2,2)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("カーソル位置を初期化しないで通常ループする場合は、「外からカーソル指定」の値を読む")
+[103][0,1]<1>()("For <dqrt>Loop Until Selected (Don't Initialize Cursor),<dqrt> use the external cursor value.")
 [121][4,0]<1>(1600000,0,0,0)()
 [250][5,4]<1>(18,21,0,69632,1600011)("","Base System Variables","","")
 [121][4,0]<1>(1600011,1600025,1,5888)()
@@ -244,24 +244,24 @@ WoditorEvCOMMAND_START
 [499][0,0]<0>()()
 [250][5,4]<0>(20,21,0,65536,-1)("","Base System Variables","","")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("　万能ウィンドウ初期化")
+[103][0,1]<0>()("  Initialize Universal Window")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("選択状態は-200で初期化する（キャンセルなら-100、選択していればそのコードが格納される）")
+[103][0,1]<0>()("Initialize the selection result to -200. (If canceled, -100; if selected, its ID is stored.)")
 [121][4,0]<0>(1600010,-200,0,0)()
 [250][5,4]<0>(18,8,0,65536,-200)("","Base System Variables","","")
 [170][0,0]<0>()()
-[103][0,1]<1>()("カーソル表示を更新")
+[103][0,1]<1>()("Update cursor display.")
 [250][5,4]<1>(19,1600011,1,69632,1600013)("","Universal Window Items","","")
-[103][0,1]<1>()("カーソル位置の項目コードを内部的に保存")
+[103][0,1]<1>()("Store the item ID at the cursor position internally.")
 [250][5,4]<1>(18,18,0,65536,1600013)("","Base System Variables","","")
 [250][5,4]<1>(18,61,0,65536,1600011)("","Base System Variables","","")
-[300][5,1]<1>(0,3,1,1600011,-1)("X[共]万能ｳｨﾝﾄﾞｳ描画処理")
-[103][0,1]<1>()("キー受付ループ　決定キーか、キャンセルキーが押された段階で終了します。")
-[103][0,1]<1>()("ただし、終了しても万能ウィンドウ画像は残ります。消すのは手動で。")
+[300][5,1]<1>(0,3,1,1600011,-1)("X[Com]Draw Universal Window")
+[103][0,1]<1>()("Key input processing loop. End when Confirm or Cancel is pressed.")
+[103][0,1]<1>()("However, the Universal Window pictures will remain. They must be erased manually.")
 [111][4,0]<1>(17,1600001,4,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("左右キーを押したら終了する場合")
+[103][0,1]<2>()("Case: End with Left/Right Key")
 [123][2,0]<2>(1600020,177)()
 [111][7,0]<2>(2,1600020,4,2,1600020,6,2)()
 [401][1,0]<2>(1)()
@@ -279,11 +279,11 @@ WoditorEvCOMMAND_START
 [420][1,0]<1>(0)()
 [111][4,0]<2>(17,1600001,2,6)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("サブキーを押したら終了する場合")
+[103][0,1]<3>()("Case: End with Sub Key")
 [123][2,0]<3>(1600020,241)()
 [0][0,0]<3>()()
 [420][1,0]<2>(0)()
-[103][0,1]<3>()("通常の場合")
+[103][0,1]<3>()("Default case")
 [123][2,0]<3>(1600020,177)()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
@@ -298,36 +298,36 @@ WoditorEvCOMMAND_START
 [499][0,0]<1>()()
 [111][7,0]<1>(2,1600020,10,2,1600020,11,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("決定キー　選択可能なら、現在選択中のコードを代入して終了")
+[103][0,1]<2>()("Confirm key: If selectable, assign the currently selected item ID and end.")
 [250][5,4]<2>(19,1600011,2,69632,1600012)("","Universal Window Items","","")
 [111][4,0]<2>(17,1600012,1,2)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("選択可能な状態")
+[103][0,1]<3>()("If selectable")
 [250][5,4]<3>(19,1600011,1,69632,1600010)("","Universal Window Items","","")
 [250][5,4]<3>(18,8,0,65536,1600010)("","Base System Variables","","")
 [111][4,0]<3>(17,1600001,1,6)()
 [401][1,0]<3>(1)()
-[103][0,1]<4>()("決定音を鳴らさない場合（外部で他の効果音で代用する）")
+[103][0,1]<4>()("Case: Don't Play Confirm Sound (Replaced by another sound externally.)")
 [0][0,0]<4>()()
 [420][1,0]<3>(0)()
-[300][3,1]<4>(0,1,0)("X[共]システムSE再生")
+[300][3,1]<4>(0,1,0)("X[Com]Play System Sound")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [121][4,0]<3>(1600011,0,0,0)()
 [171][0,0]<3>()()
 [0][0,0]<3>()()
 [420][1,0]<2>(0)()
-[103][0,1]<3>()("選択不能な状態")
-[300][3,1]<3>(0,1,2)("X[共]システムSE再生")
+[103][0,1]<3>()("If not selectable")
+[300][3,1]<3>(0,1,2)("X[Com]Play System Sound")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[103][0,1]<2>()("キャンセルキー　-100を返して終了")
-[300][3,1]<2>(0,1,1)("X[共]システムSE再生")
+[103][0,1]<2>()("Cancel key: Return -100 and end.")
+[300][3,1]<2>(0,1,1)("X[Com]Play System Sound")
 [121][4,0]<2>(1600010,-100,0,0)()
 [250][5,4]<2>(18,8,0,65536,-100)("","Base System Variables","","")
-[300][6,1]<2>(0,4,1,-1,-1,0)("X[共]万能ｳｨﾝﾄﾞｳ描画処理")
+[300][6,1]<2>(0,4,1,-1,-1,0)("X[Com]Draw Universal Window")
 [180][1,0]<2>(1)()
 [121][4,0]<2>(1600011,0,0,0)()
 [171][0,0]<2>()()
@@ -335,10 +335,10 @@ WoditorEvCOMMAND_START
 [499][0,0]<1>()()
 [111][7,0]<1>(2,1600020,8,2,1600020,2,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("上キー")
+[103][0,1]<2>()("Up key")
 [121][4,0]<2>(1600011,1600024,0,512)()
 [179][1,0]<2>(0)()
-[103][0,1]<3>()("　最上段でなければ")
+[103][0,1]<3>()("  If not on the top row")
 [111][4,0]<3>(1,1600011,1600024,1)()
 [401][1,0]<3>(1)()
 [121][4,0]<4>(1600011,1600024,0,512)()
@@ -346,24 +346,24 @@ WoditorEvCOMMAND_START
 [499][0,0]<3>()()
 [0][0,0]<3>()()
 [498][0,0]<2>()()
-[300][3,1]<2>(0,1,5)("X[共]システムSE再生")
-[103][0,1]<2>()("補正")
+[300][3,1]<2>(0,1,5)("X[Com]Play System Sound")
+[103][0,1]<2>()("Adjust.")
 [121][4,0]<2>(1600011,1600025,0,256)()
 [121][4,0]<2>(1600011,1600025,0,1280)()
-[103][0,1]<2>()("カーソル位置の項目コードを内部的に保存")
+[103][0,1]<2>()("Store the item ID at the cursor position internally.")
 [250][5,4]<2>(19,1600011,1,69632,1600013)("","Universal Window Items","","")
 [250][5,4]<2>(18,18,0,65536,1600013)("","Base System Variables","","")
 [250][5,4]<2>(18,61,0,65536,1600011)("","Base System Variables","","")
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[103][0,1]<2>()("下キー　最下段でなければ実行")
+[103][0,1]<2>()("Down key")
 [121][4,0]<2>(1600012,1600011,1600024,0)()
 [121][4,0]<2>(1600011,1600024,0,256)()
-[300][3,1]<2>(0,1,5)("X[共]システムSE再生")
-[103][0,1]<2>()("補正")
+[300][3,1]<2>(0,1,5)("X[Com]Play System Sound")
+[103][0,1]<2>()("Adjust.")
 [121][4,0]<2>(1600011,1600025,0,256)()
 [121][4,0]<2>(1600011,1600025,0,1280)()
-[103][0,1]<2>()("カーソル位置の項目コードを内部的に保存")
+[103][0,1]<2>()("Store the item ID at the cursor position internally.")
 [250][5,4]<2>(19,1600011,1,69632,1600013)("","Universal Window Items","","")
 [250][5,4]<2>(18,18,0,65536,1600013)("","Base System Variables","","")
 [250][5,4]<2>(18,61,0,65536,1600011)("","Base System Variables","","")
@@ -371,14 +371,14 @@ WoditorEvCOMMAND_START
 [499][0,0]<1>()()
 [111][7,0]<1>(2,1600020,4,2,1600020,6,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("左キー　（横方向に一周する計算）")
+[103][0,1]<2>()("Left key (Loop horizontally.)")
 [121][4,0]<2>(1600013,1600011,1600024,12288)()
 [121][4,0]<2>(1600013,1600024,0,768)()
 [121][4,0]<2>(1600012,1600011,1600024,16384)()
 [121][4,0]<2>(1600012,1600024,1,4352)()
 [121][4,0]<2>(1600012,1600024,0,1280)()
 [121][4,0]<2>(1600011,1600012,1600013,0)()
-[103][0,1]<2>()("補正")
+[103][0,1]<2>()("Adjust.")
 [121][4,0]<2>(1600011,1600025,0,256)()
 [121][4,0]<2>(1600011,1600025,0,1280)()
 [103][0,1]<2>()(" ")
@@ -386,17 +386,17 @@ WoditorEvCOMMAND_START
 [250][5,4]<2>(18,18,0,65536,1600013)("","Base System Variables","","")
 [250][5,4]<2>(18,61,0,65536,1600011)("","Base System Variables","","")
 [103][0,1]<2>()(" ")
-[300][3,1]<2>(0,1,5)("X[共]システムSE再生")
+[300][3,1]<2>(0,1,5)("X[Com]Play System Sound")
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[103][0,1]<2>()("右キー　（横方向に一周する計算）")
+[103][0,1]<2>()("Right key (Loop horizontally.)")
 [121][4,0]<2>(1600013,1600011,1600024,12288)()
 [121][4,0]<2>(1600013,1600024,0,768)()
 [121][4,0]<2>(1600012,1600011,1600024,16384)()
 [121][4,0]<2>(1600012,1,0,256)()
 [121][4,0]<2>(1600012,1600024,0,1280)()
 [121][4,0]<2>(1600011,1600012,1600013,0)()
-[103][0,1]<2>()("補正")
+[103][0,1]<2>()("Adjust.")
 [121][4,0]<2>(1600011,1600025,0,256)()
 [121][4,0]<2>(1600011,1600025,0,1280)()
 [103][0,1]<2>()(" ")
@@ -404,7 +404,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<2>(18,18,0,65536,1600013)("","Base System Variables","","")
 [250][5,4]<2>(18,61,0,65536,1600011)("","Base System Variables","","")
 [103][0,1]<2>()(" ")
-[300][3,1]<2>(0,1,5)("X[共]システムSE再生")
+[300][3,1]<2>(0,1,5)("X[Com]Play System Sound")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [179][1,0]<1>(0)()
@@ -414,7 +414,7 @@ WoditorEvCOMMAND_START
 [498][0,0]<1>()()
 [111][4,0]<1>(1,1600000,1,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("一回で終了なら、ここで抜ける")
+[103][0,1]<2>()("If ending with a one key press, end here.")
 [171][0,0]<2>()()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
@@ -426,246 +426,246 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【処理の内容】
-▼ 　「X[共]万能ｳｨﾝﾄﾞｳ描画処理」でウィンドウを表示した後、キー操作を受け付けて
-▼ 　カーソルの位置を計算し、「X[移]万能ｳｨﾝﾄﾞｳ描画処理」で描画更新するコモンイベントです。
-▼ 　ただし、終了しても万能ウィンドウ画像は残ります。消すのは手動で。
+▼ [Process Overview]
+▼   After the window is displayed by "X[Com]Draw Universal Window", this common event takes key inputs,
+▼   calculates the cursor position, and updates the window display using "X[Com]Draw Universal Window".
+▼   Note that the Universal Window pictures will remain even after this event ends. You must manually erase them.
 ▼  
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ 【このコモンイベント内で操作しているデータベース】
-▼ 　可変DB「万能ｳｨﾝﾄﾞｳ一時DB」
-▼ 　可変DB「基本ｼｽﾃﾑ用変数」
+▼ [Databases Accessed by This Common Event]
+▼   Variable DB "Universal Window Items"
+▼   Variable DB "Base System Variables"
 ▼  
-▼ 【ここから呼び出している別コモンイベント】
-▼ 　X[共]万能ｳｨﾝﾄﾞｳ描画処理　→　カーソル描画更新用
+▼ [Other Common Events Called from Here]
+▼   X[Com]Draw Universal Window (Used to update cursor display)
 ▼  
-▼ 【どのコモンイベントから主に呼び出されているか】
+▼ [Main Common Events Calling This]
 ▼  
-▼ 【使用例】
-▼ 　コモンイベント「■■【共通・画面処理】■■」　内に使用サンプルがあります。
+▼ [Usage Example]
+▼   There are examples in the common event "■■[Common: Screen Processing]■■".
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼ パラメータ初期化
+▼ Initialize Parameters
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-■Load DB(Var):  CSelf24[横項目数] = VarDB[ "Base System Variables":13:0 ] (18:Universal Window Columns:Number) 
-■Load DB(Var):  CSelf25[最大項目数] = VarDB[ "Base System Variables":17:0 ] (18:Universal Window Item Count:Number) 
-■Condition (Number):   [1] CSelf24[横項目数] ==  0  
--◇Condition:  [1]  [ CSelf24[横項目数] == 0   ] Case↓
- |■Set Variable: CSelf24[横項目数] = 2 + 0 
+■Load DB(Var):  CSelf24[Columns] = VarDB[ "Base System Variables":13:0 ] (18:Universal Window Columns:Number) 
+■Load DB(Var):  CSelf25[Total Items] = VarDB[ "Base System Variables":17:0 ] (18:Universal Window Item Count:Number) 
+■Condition (Number):   [1] CSelf24[Columns] ==  0  
+-◇Condition:  [1]  [ CSelf24[Columns] == 0   ] Case↓
+ |■Set Variable: CSelf24[Columns] = 2 + 0 
  |■
 ◇End◇
-■Condition (Number):   [1] CSelf0[モード] ==  0  /  [2] CSelf0[モード] ==  1  
--◇Condition:  [1]  [ CSelf0[モード] == 0   ] Case↓
- |▼ 選択完了までの場合　カーソル位置を初期化
- |■Set Variable: CSelf11[選択カーソル位置] = 0 + 0 
- |■Load DB(Var):  CSelf12[一時変数A] = VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) 
- |■Condition (Number):   [1] CSelf12[一時変数A] !=  -1  
- |-◇Condition:  [1]  [ CSelf12[一時変数A] != -1   ] Case↓
- | |■Load DB(Var):  CSelf11[選択カーソル位置] = VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) 
- | |■Set Variable: CSelf11[選択カーソル位置] Upper Bound= CSelf25[最大項目数] - 1 
- | |■Set Variable: CSelf11[選択カーソル位置] Lower Bound= 0 + 0 
+■Condition (Number):   [1] CSelf0[Mode] ==  0  /  [2] CSelf0[Mode] ==  1  
+-◇Condition:  [1]  [ CSelf0[Mode] == 0   ] Case↓
+ |▼ For "Loop Until Selected," initialize the cursor position.
+ |■Set Variable: CSelf11[Cursor Position] = 0 + 0 
+ |■Load DB(Var):  CSelf12[Temp Variable A] = VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) 
+ |■Condition (Number):   [1] CSelf12[Temp Variable A] !=  -1  
+ |-◇Condition:  [1]  [ CSelf12[Temp Variable A] != -1   ] Case↓
+ | |■Load DB(Var):  CSelf11[Cursor Position] = VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) 
+ | |■Set Variable: CSelf11[Cursor Position] Upper Bound= CSelf25[Total Items] - 1 
+ | |■Set Variable: CSelf11[Cursor Position] Lower Bound= 0 + 0 
  | |■
  |◇End◇
  |■
--◇Condition:  [2]  [ CSelf0[モード] == 1   ] Case↓
- |▼ キー一回分だけ処理する場合はカーソル位置を初期化しない（ただ外からカーソル指定がセットされてたら入れる）
- |■Load DB(Var):  CSelf12[一時変数A] = VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) 
- |■Condition (Number):   [1] CSelf12[一時変数A] !=  -1  
- |-◇Condition:  [1]  [ CSelf12[一時変数A] != -1   ] Case↓
- | |■Load DB(Var):  CSelf11[選択カーソル位置] = VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) 
- | |■Set Variable: CSelf11[選択カーソル位置] Upper Bound= CSelf25[最大項目数] - 1 
- | |■Set Variable: CSelf11[選択カーソル位置] Lower Bound= 0 + 0 
+-◇Condition:  [2]  [ CSelf0[Mode] == 1   ] Case↓
+ |▼ For "End with One Key Press," don't initialize the cursor position. (But if a cursor is set externally, use it.)
+ |■Load DB(Var):  CSelf12[Temp Variable A] = VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) 
+ |■Condition (Number):   [1] CSelf12[Temp Variable A] !=  -1  
+ |-◇Condition:  [1]  [ CSelf12[Temp Variable A] != -1   ] Case↓
+ | |■Load DB(Var):  CSelf11[Cursor Position] = VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) 
+ | |■Set Variable: CSelf11[Cursor Position] Upper Bound= CSelf25[Total Items] - 1 
+ | |■Set Variable: CSelf11[Cursor Position] Lower Bound= 0 + 0 
  | |■
  |◇End◇
  |■
 ◇End◇
-■Condition (Number):   [1] CSelf0[モード] ==  2  
--◇Condition:  [1]  [ CSelf0[モード] == 2   ] Case↓
- |▼ カーソル位置を初期化しないで通常ループする場合は、「外からカーソル指定」の値を読む
- |■Set Variable: CSelf0[モード] = 0 + 0 
- |■Load DB(Var):  CSelf11[選択カーソル位置] = VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) 
- |■Set Variable: CSelf11[選択カーソル位置] Upper Bound= CSelf25[最大項目数] - 1 
- |■Set Variable: CSelf11[選択カーソル位置] Lower Bound= 0 + 0 
+■Condition (Number):   [1] CSelf0[Mode] ==  2  
+-◇Condition:  [1]  [ CSelf0[Mode] == 2   ] Case↓
+ |▼ For "Loop Until Selected (Don't Initialize Cursor)," use the external cursor value.
+ |■Set Variable: CSelf0[Mode] = 0 + 0 
+ |■Load DB(Var):  CSelf11[Cursor Position] = VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) 
+ |■Set Variable: CSelf11[Cursor Position] Upper Bound= CSelf25[Total Items] - 1 
+ |■Set Variable: CSelf11[Cursor Position] Lower Bound= 0 + 0 
  |■
 ◇End◇
 ■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) =  -1
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼ 　万能ウィンドウ初期化
+▼   Initialize Universal Window
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼ 選択状態は-200で初期化する（キャンセルなら-100、選択していればそのコードが格納される）
-■Set Variable: CSelf10[選択コード] = -200 + 0 
+▼ Initialize the selection result to -200. (If canceled, -100; if selected, its ID is stored.)
+■Set Variable: CSelf10[Selected ID] = -200 + 0 
 ■Write to DB(Var): VarDB[ "Base System Variables":8:0 ] (18:Universal Window Return ID:Number) =  -200
 ■Loop Start
- |▼ カーソル表示を更新
- |■Load DB(Var):  CSelf13[一時変数B] = VarDB[ "Universal Window Items":CSelf11[選択カーソル位置]:1 ] (19:-:Item ID) 
- |▼ カーソル位置の項目コードを内部的に保存
- |■Write to DB(Var): VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) =  CSelf13[一時変数B]
- |■Write to DB(Var): VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) =  CSelf11[選択カーソル位置]
- |■Call Event [Name]: ["X[共]万能ｳｨﾝﾄﾞｳ描画処理"] <CommonEv 64>  / 1:更新(ｽｸﾛｰﾙ+ｶｰｿﾙ描画) / CSelf11[選択カーソル位置] / -1
- |▼ キー受付ループ　決定キーか、キャンセルキーが押された段階で終了します。
- |▼ ただし、終了しても万能ウィンドウ画像は残ります。消すのは手動で。
- |■Condition (Number):   [1] CSelf1[オプション] ==  4  
- |-◇Condition:  [1]  [ CSelf1[オプション] == 4   ] Case↓
- | |▼ 左右キーを押したら終了する場合
- | |■Key Input: CSelf20[受付キー] [Wait For Input <!>]  4-Dir. Confirm(10) Cancel(11)
- | |■Condition (Number):   [1] CSelf20[受付キー] ==  4  /  [2] CSelf20[受付キー] ==  6  
- | |-◇Condition:  [1]  [ CSelf20[受付キー] == 4   ] Case↓
- | | |■Set Variable: CSelf10[選択コード] = -300 + 0 
- | | |■Set Variable: CSelf11[選択カーソル位置] = 0 + 0 
+ |▼ Update cursor display.
+ |■Load DB(Var):  CSelf13[Temp Variable B] = VarDB[ "Universal Window Items":CSelf11[Cursor Position]:1 ] (19:-:Item ID) 
+ |▼ Store the item ID at the cursor position internally.
+ |■Write to DB(Var): VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) =  CSelf13[Temp Variable B]
+ |■Write to DB(Var): VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) =  CSelf11[Cursor Position]
+ |■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / 1:Update (Scroll & Cursor Draw) / CSelf11[Cursor Position] / -1
+ |▼ Key input processing loop. End when Confirm or Cancel is pressed.
+ |▼ However, the Universal Window pictures will remain. They must be erased manually.
+ |■Condition (Number):   [1] CSelf1[Option] ==  4  
+ |-◇Condition:  [1]  [ CSelf1[Option] == 4   ] Case↓
+ | |▼ Case: End with Left/Right Key
+ | |■Key Input: CSelf20[Pressed Key] [Wait For Input <!>]  4-Dir. Confirm(10) Cancel(11)
+ | |■Condition (Number):   [1] CSelf20[Pressed Key] ==  4  /  [2] CSelf20[Pressed Key] ==  6  
+ | |-◇Condition:  [1]  [ CSelf20[Pressed Key] == 4   ] Case↓
+ | | |■Set Variable: CSelf10[Selected ID] = -300 + 0 
+ | | |■Set Variable: CSelf11[Cursor Position] = 0 + 0 
  | | |■Break Loop
  | | |■
- | |-◇Condition:  [2]  [ CSelf20[受付キー] == 6   ] Case↓
- | | |■Set Variable: CSelf10[選択コード] = -300 + 0 
- | | |■Set Variable: CSelf11[選択カーソル位置] = 0 + 0 
+ | |-◇Condition:  [2]  [ CSelf20[Pressed Key] == 6   ] Case↓
+ | | |■Set Variable: CSelf10[Selected ID] = -300 + 0 
+ | | |■Set Variable: CSelf11[Cursor Position] = 0 + 0 
  | | |■Break Loop
  | | |■
  | |◇End◇
  | |■
  |-◇Else
- | |■Condition (Number):   [1] CSelf1[オプション] &  2  
- | |-◇Condition:  [1]  [ CSelf1[オプション] & 2   ] Case↓
- | | |▼ サブキーを押したら終了する場合
- | | |■Key Input: CSelf20[受付キー] [Wait For Input <!>]  4-Dir. Confirm(10) Cancel(11) SubKey(12)
+ | |■Condition (Number):   [1] CSelf1[Option] &  2  
+ | |-◇Condition:  [1]  [ CSelf1[Option] & 2   ] Case↓
+ | | |▼ Case: End with Sub Key
+ | | |■Key Input: CSelf20[Pressed Key] [Wait For Input <!>]  4-Dir. Confirm(10) Cancel(11) SubKey(12)
  | | |■
  | |-◇Else
- | | |▼ 通常の場合
- | | |■Key Input: CSelf20[受付キー] [Wait For Input <!>]  4-Dir. Confirm(10) Cancel(11)
+ | | |▼ Default case
+ | | |■Key Input: CSelf20[Pressed Key] [Wait For Input <!>]  4-Dir. Confirm(10) Cancel(11)
  | | |■
  | |◇End◇
  | |■
  |◇End◇
- |■Condition (Number):   [1] CSelf20[受付キー] ==  12  
- |-◇Condition:  [1]  [ CSelf20[受付キー] == 12   ] Case↓
- | |■Set Variable: CSelf10[選択コード] = -300 + 0 
- | |■Set Variable: CSelf11[選択カーソル位置] = 0 + 0 
+ |■Condition (Number):   [1] CSelf20[Pressed Key] ==  12  
+ |-◇Condition:  [1]  [ CSelf20[Pressed Key] == 12   ] Case↓
+ | |■Set Variable: CSelf10[Selected ID] = -300 + 0 
+ | |■Set Variable: CSelf11[Cursor Position] = 0 + 0 
  | |■Break Loop
  | |■
  |◇End◇
- |■Condition (Number):   [1] CSelf20[受付キー] ==  10  /  [2] CSelf20[受付キー] ==  11  
- |-◇Condition:  [1]  [ CSelf20[受付キー] == 10   ] Case↓
- | |▼ 決定キー　選択可能なら、現在選択中のコードを代入して終了
- | |■Load DB(Var):  CSelf12[一時変数A] = VarDB[ "Universal Window Items":CSelf11[選択カーソル位置]:2 ] (19:-:Selectable? [1:Yes]) 
- | |■Condition (Number):   [1] CSelf12[一時変数A] ==  1  
- | |-◇Condition:  [1]  [ CSelf12[一時変数A] == 1   ] Case↓
- | | |▼ 選択可能な状態
- | | |■Load DB(Var):  CSelf10[選択コード] = VarDB[ "Universal Window Items":CSelf11[選択カーソル位置]:1 ] (19:-:Item ID) 
- | | |■Write to DB(Var): VarDB[ "Base System Variables":8:0 ] (18:Universal Window Return ID:Number) =  CSelf10[選択コード]
- | | |■Condition (Number):   [1] CSelf1[オプション] &  1  
- | | |-◇Condition:  [1]  [ CSelf1[オプション] & 1   ] Case↓
- | | | |▼ 決定音を鳴らさない場合（外部で他の効果音で代用する）
+ |■Condition (Number):   [1] CSelf20[Pressed Key] ==  10  /  [2] CSelf20[Pressed Key] ==  11  
+ |-◇Condition:  [1]  [ CSelf20[Pressed Key] == 10   ] Case↓
+ | |▼ Confirm key: If selectable, assign the currently selected item ID and end.
+ | |■Load DB(Var):  CSelf12[Temp Variable A] = VarDB[ "Universal Window Items":CSelf11[Cursor Position]:2 ] (19:-:Selectable? [1:Yes]) 
+ | |■Condition (Number):   [1] CSelf12[Temp Variable A] ==  1  
+ | |-◇Condition:  [1]  [ CSelf12[Temp Variable A] == 1   ] Case↓
+ | | |▼ If selectable
+ | | |■Load DB(Var):  CSelf10[Selected ID] = VarDB[ "Universal Window Items":CSelf11[Cursor Position]:1 ] (19:-:Item ID) 
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":8:0 ] (18:Universal Window Return ID:Number) =  CSelf10[Selected ID]
+ | | |■Condition (Number):   [1] CSelf1[Option] &  1  
+ | | |-◇Condition:  [1]  [ CSelf1[Option] & 1   ] Case↓
+ | | | |▼ Case: Don't Play Confirm Sound (Replaced by another sound externally.)
  | | | |■
  | | |-◇Else
- | | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 0:決定音
+ | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
  | | | |■
  | | |◇End◇
- | | |■Set Variable: CSelf11[選択カーソル位置] = 0 + 0 
+ | | |■Set Variable: CSelf11[Cursor Position] = 0 + 0 
  | | |■Break Loop
  | | |■
  | |-◇Else
- | | |▼ 選択不能な状態
- | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 2:ブザー音
+ | | |▼ If not selectable
+ | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
  | | |■
  | |◇End◇
  | |■
- |-◇Condition:  [2]  [ CSelf20[受付キー] == 11   ] Case↓
- | |▼ キャンセルキー　-100を返して終了
- | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 1:キャンセル音
- | |■Set Variable: CSelf10[選択コード] = -100 + 0 
+ |-◇Condition:  [2]  [ CSelf20[Pressed Key] == 11   ] Case↓
+ | |▼ Cancel key: Return -100 and end.
+ | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 1:Cancel Sound
+ | |■Set Variable: CSelf10[Selected ID] = -100 + 0 
  | |■Write to DB(Var): VarDB[ "Base System Variables":8:0 ] (18:Universal Window Return ID:Number) =  -100
- | |■Call Event [Name]: ["X[共]万能ｳｨﾝﾄﾞｳ描画処理"] <CommonEv 64>  / 1:更新(ｽｸﾛｰﾙ+ｶｰｿﾙ描画) / -1 / -1 / 0:なし
+ | |■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / 1:Update (Scroll & Cursor Draw) / -1 / -1 / 0:None
  | |■Wait: 1 Frames
- | |■Set Variable: CSelf11[選択カーソル位置] = 0 + 0 
+ | |■Set Variable: CSelf11[Cursor Position] = 0 + 0 
  | |■Break Loop
  | |■
  |◇End◇
- |■Condition (Number):   [1] CSelf20[受付キー] ==  8  /  [2] CSelf20[受付キー] ==  2  
- |-◇Condition:  [1]  [ CSelf20[受付キー] == 8   ] Case↓
- | |▼ 上キー
- | |■Set Variable: CSelf11[選択カーソル位置] -= CSelf24[横項目数] + 0 
+ |■Condition (Number):   [1] CSelf20[Pressed Key] ==  8  /  [2] CSelf20[Pressed Key] ==  2  
+ |-◇Condition:  [1]  [ CSelf20[Pressed Key] == 8   ] Case↓
+ | |▼ Up key
+ | |■Set Variable: CSelf11[Cursor Position] -= CSelf24[Columns] + 0 
  | |■Repeat Loop [ 0 ] Times
- | | |▼ 　最上段でなければ
- | | |■Condition (Number):   [1] CSelf11[選択カーソル位置] >=  CSelf24[横項目数]  
- | | |-◇Condition:  [1]  [ CSelf11[選択カーソル位置] >= CSelf24[横項目数]   ] Case↓
- | | | |■Set Variable: CSelf11[選択カーソル位置] -= CSelf24[横項目数] + 0 
+ | | |▼   If not on the top row
+ | | |■Condition (Number):   [1] CSelf11[Cursor Position] >=  CSelf24[Columns]  
+ | | |-◇Condition:  [1]  [ CSelf11[Cursor Position] >= CSelf24[Columns]   ] Case↓
+ | | | |■Set Variable: CSelf11[Cursor Position] -= CSelf24[Columns] + 0 
  | | | |■
  | | |◇End◇
  | | |■
  | |◇Loop End Point◇◇
- | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 5:カーソル移動音
- | |▼ 補正
- | |■Set Variable: CSelf11[選択カーソル位置] += CSelf25[最大項目数] + 0 
- | |■Set Variable: CSelf11[選択カーソル位置] %= CSelf25[最大項目数] + 0 
- | |▼ カーソル位置の項目コードを内部的に保存
- | |■Load DB(Var):  CSelf13[一時変数B] = VarDB[ "Universal Window Items":CSelf11[選択カーソル位置]:1 ] (19:-:Item ID) 
- | |■Write to DB(Var): VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) =  CSelf13[一時変数B]
- | |■Write to DB(Var): VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) =  CSelf11[選択カーソル位置]
+ | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
+ | |▼ Adjust.
+ | |■Set Variable: CSelf11[Cursor Position] += CSelf25[Total Items] + 0 
+ | |■Set Variable: CSelf11[Cursor Position] %= CSelf25[Total Items] + 0 
+ | |▼ Store the item ID at the cursor position internally.
+ | |■Load DB(Var):  CSelf13[Temp Variable B] = VarDB[ "Universal Window Items":CSelf11[Cursor Position]:1 ] (19:-:Item ID) 
+ | |■Write to DB(Var): VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) =  CSelf13[Temp Variable B]
+ | |■Write to DB(Var): VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) =  CSelf11[Cursor Position]
  | |■
- |-◇Condition:  [2]  [ CSelf20[受付キー] == 2   ] Case↓
- | |▼ 下キー　最下段でなければ実行
- | |■Set Variable: CSelf12[一時変数A] = CSelf11[選択カーソル位置] + CSelf24[横項目数] 
- | |■Set Variable: CSelf11[選択カーソル位置] += CSelf24[横項目数] + 0 
- | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 5:カーソル移動音
- | |▼ 補正
- | |■Set Variable: CSelf11[選択カーソル位置] += CSelf25[最大項目数] + 0 
- | |■Set Variable: CSelf11[選択カーソル位置] %= CSelf25[最大項目数] + 0 
- | |▼ カーソル位置の項目コードを内部的に保存
- | |■Load DB(Var):  CSelf13[一時変数B] = VarDB[ "Universal Window Items":CSelf11[選択カーソル位置]:1 ] (19:-:Item ID) 
- | |■Write to DB(Var): VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) =  CSelf13[一時変数B]
- | |■Write to DB(Var): VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) =  CSelf11[選択カーソル位置]
+ |-◇Condition:  [2]  [ CSelf20[Pressed Key] == 2   ] Case↓
+ | |▼ Down key
+ | |■Set Variable: CSelf12[Temp Variable A] = CSelf11[Cursor Position] + CSelf24[Columns] 
+ | |■Set Variable: CSelf11[Cursor Position] += CSelf24[Columns] + 0 
+ | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
+ | |▼ Adjust.
+ | |■Set Variable: CSelf11[Cursor Position] += CSelf25[Total Items] + 0 
+ | |■Set Variable: CSelf11[Cursor Position] %= CSelf25[Total Items] + 0 
+ | |▼ Store the item ID at the cursor position internally.
+ | |■Load DB(Var):  CSelf13[Temp Variable B] = VarDB[ "Universal Window Items":CSelf11[Cursor Position]:1 ] (19:-:Item ID) 
+ | |■Write to DB(Var): VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) =  CSelf13[Temp Variable B]
+ | |■Write to DB(Var): VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) =  CSelf11[Cursor Position]
  | |■
  |◇End◇
- |■Condition (Number):   [1] CSelf20[受付キー] ==  4  /  [2] CSelf20[受付キー] ==  6  
- |-◇Condition:  [1]  [ CSelf20[受付キー] == 4   ] Case↓
- | |▼ 左キー　（横方向に一周する計算）
- | |■Set Variable: CSelf13[一時変数B] = CSelf11[選択カーソル位置] / CSelf24[横項目数] 
- | |■Set Variable: CSelf13[一時変数B] *= CSelf24[横項目数] + 0 
- | |■Set Variable: CSelf12[一時変数A] = CSelf11[選択カーソル位置] % CSelf24[横項目数] 
- | |■Set Variable: CSelf12[一時変数A] += CSelf24[横項目数] - 1 
- | |■Set Variable: CSelf12[一時変数A] %= CSelf24[横項目数] + 0 
- | |■Set Variable: CSelf11[選択カーソル位置] = CSelf12[一時変数A] + CSelf13[一時変数B] 
- | |▼ 補正
- | |■Set Variable: CSelf11[選択カーソル位置] += CSelf25[最大項目数] + 0 
- | |■Set Variable: CSelf11[選択カーソル位置] %= CSelf25[最大項目数] + 0 
+ |■Condition (Number):   [1] CSelf20[Pressed Key] ==  4  /  [2] CSelf20[Pressed Key] ==  6  
+ |-◇Condition:  [1]  [ CSelf20[Pressed Key] == 4   ] Case↓
+ | |▼ Left key (Loop horizontally.)
+ | |■Set Variable: CSelf13[Temp Variable B] = CSelf11[Cursor Position] / CSelf24[Columns] 
+ | |■Set Variable: CSelf13[Temp Variable B] *= CSelf24[Columns] + 0 
+ | |■Set Variable: CSelf12[Temp Variable A] = CSelf11[Cursor Position] % CSelf24[Columns] 
+ | |■Set Variable: CSelf12[Temp Variable A] += CSelf24[Columns] - 1 
+ | |■Set Variable: CSelf12[Temp Variable A] %= CSelf24[Columns] + 0 
+ | |■Set Variable: CSelf11[Cursor Position] = CSelf12[Temp Variable A] + CSelf13[Temp Variable B] 
+ | |▼ Adjust.
+ | |■Set Variable: CSelf11[Cursor Position] += CSelf25[Total Items] + 0 
+ | |■Set Variable: CSelf11[Cursor Position] %= CSelf25[Total Items] + 0 
  | |▼  
- | |■Load DB(Var):  CSelf13[一時変数B] = VarDB[ "Universal Window Items":CSelf11[選択カーソル位置]:1 ] (19:-:Item ID) 
- | |■Write to DB(Var): VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) =  CSelf13[一時変数B]
- | |■Write to DB(Var): VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) =  CSelf11[選択カーソル位置]
+ | |■Load DB(Var):  CSelf13[Temp Variable B] = VarDB[ "Universal Window Items":CSelf11[Cursor Position]:1 ] (19:-:Item ID) 
+ | |■Write to DB(Var): VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) =  CSelf13[Temp Variable B]
+ | |■Write to DB(Var): VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) =  CSelf11[Cursor Position]
  | |▼  
- | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 5:カーソル移動音
+ | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
  | |■
- |-◇Condition:  [2]  [ CSelf20[受付キー] == 6   ] Case↓
- | |▼ 右キー　（横方向に一周する計算）
- | |■Set Variable: CSelf13[一時変数B] = CSelf11[選択カーソル位置] / CSelf24[横項目数] 
- | |■Set Variable: CSelf13[一時変数B] *= CSelf24[横項目数] + 0 
- | |■Set Variable: CSelf12[一時変数A] = CSelf11[選択カーソル位置] % CSelf24[横項目数] 
- | |■Set Variable: CSelf12[一時変数A] += 1 + 0 
- | |■Set Variable: CSelf12[一時変数A] %= CSelf24[横項目数] + 0 
- | |■Set Variable: CSelf11[選択カーソル位置] = CSelf12[一時変数A] + CSelf13[一時変数B] 
- | |▼ 補正
- | |■Set Variable: CSelf11[選択カーソル位置] += CSelf25[最大項目数] + 0 
- | |■Set Variable: CSelf11[選択カーソル位置] %= CSelf25[最大項目数] + 0 
+ |-◇Condition:  [2]  [ CSelf20[Pressed Key] == 6   ] Case↓
+ | |▼ Right key (Loop horizontally.)
+ | |■Set Variable: CSelf13[Temp Variable B] = CSelf11[Cursor Position] / CSelf24[Columns] 
+ | |■Set Variable: CSelf13[Temp Variable B] *= CSelf24[Columns] + 0 
+ | |■Set Variable: CSelf12[Temp Variable A] = CSelf11[Cursor Position] % CSelf24[Columns] 
+ | |■Set Variable: CSelf12[Temp Variable A] += 1 + 0 
+ | |■Set Variable: CSelf12[Temp Variable A] %= CSelf24[Columns] + 0 
+ | |■Set Variable: CSelf11[Cursor Position] = CSelf12[Temp Variable A] + CSelf13[Temp Variable B] 
+ | |▼ Adjust.
+ | |■Set Variable: CSelf11[Cursor Position] += CSelf25[Total Items] + 0 
+ | |■Set Variable: CSelf11[Cursor Position] %= CSelf25[Total Items] + 0 
  | |▼  
- | |■Load DB(Var):  CSelf13[一時変数B] = VarDB[ "Universal Window Items":CSelf11[選択カーソル位置]:1 ] (19:-:Item ID) 
- | |■Write to DB(Var): VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) =  CSelf13[一時変数B]
- | |■Write to DB(Var): VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) =  CSelf11[選択カーソル位置]
+ | |■Load DB(Var):  CSelf13[Temp Variable B] = VarDB[ "Universal Window Items":CSelf11[Cursor Position]:1 ] (19:-:Item ID) 
+ | |■Write to DB(Var): VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) =  CSelf13[Temp Variable B]
+ | |■Write to DB(Var): VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) =  CSelf11[Cursor Position]
  | |▼  
- | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 5:カーソル移動音
+ | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
  | |■
  |◇End◇
  |■Repeat Loop [ 0 ] Times
- | |■Set Variable: CSelf11[選択カーソル位置] Upper Bound= CSelf25[最大項目数] - 1 
- | |■Set Variable: CSelf11[選択カーソル位置] Lower Bound= 0 + 0 
+ | |■Set Variable: CSelf11[Cursor Position] Upper Bound= CSelf25[Total Items] - 1 
+ | |■Set Variable: CSelf11[Cursor Position] Lower Bound= 0 + 0 
  | |■
  |◇Loop End Point◇◇
- |■Condition (Number):   [1] CSelf0[モード] ==  1  
- |-◇Condition:  [1]  [ CSelf0[モード] == 1   ] Case↓
- | |▼ 一回で終了なら、ここで抜ける
+ |■Condition (Number):   [1] CSelf0[Mode] ==  1  
+ |-◇Condition:  [1]  [ CSelf0[Mode] == 1   ] Case↓
+ | |▼ If ending with a one key press, end here.
  | |■Break Loop
  | |■
  |◇End◇
  |■
 ◇Loop End Point◇◇
-■Set Variable: CSelf1[オプション] = 0 + 0 
+■Set Variable: CSelf1[Option] = 0 + 0 
 ■
 [COMMAND_TEXT_END]

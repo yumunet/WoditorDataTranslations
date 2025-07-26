@@ -1,10 +1,10 @@
 COMMON_ID=212
-COMMON_NAME=相談コマンド
+COMMON_NAME=Talk Command
 COMMAND_COLOR=0
 TRIGGER=32
 TRIGGER_TARGET=2000000
 TRIGGER_VAL=0
-MEMO=これは単に一つの例として追加しているので、消してOKです
+MEMO=This is just here as an example, so you're free to delete it.
 VALINPUT_NUM=0
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
@@ -31,17 +31,8 @@ LOADTYPE7=0
 LOADTYPE8=0
 LOADTYPE9=0
 CHOICE_STR_NUM=10
-CHOICE_STR_0_NUM=7
-CHOICE_STR_0_0=味方一人
-CHOICE_STR_0_1=自分自身
-CHOICE_STR_0_2=味方全員
-CHOICE_STR_0_3=味方ﾗﾝﾀﾞﾑ1人
-CHOICE_STR_0_4=自分以外の味方
-CHOICE_STR_0_5=敵一人
-CHOICE_STR_0_6=敵全員
-CHOICE_STR_1_NUM=2
-CHOICE_STR_1_0=初期化
-CHOICE_STR_1_1=前回位置を保持
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=0
 CHOICE_STR_2_NUM=0
 CHOICE_STR_3_NUM=0
 CHOICE_STR_4_NUM=0
@@ -51,17 +42,8 @@ CHOICE_STR_7_NUM=0
 CHOICE_STR_8_NUM=0
 CHOICE_STR_9_NUM=0
 CHOICE_VAL_NUM=10
-CHOICE_VAL_0_NUM=7
-CHOICE_VAL_0_0=0
-CHOICE_VAL_0_1=1
-CHOICE_VAL_0_2=2
-CHOICE_VAL_0_3=3
-CHOICE_VAL_0_4=4
-CHOICE_VAL_0_5=10
-CHOICE_VAL_0_6=11
-CHOICE_VAL_1_NUM=2
-CHOICE_VAL_1_0=0
-CHOICE_VAL_1_1=1
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=0
 CHOICE_VAL_2_NUM=0
 CHOICE_VAL_3_NUM=0
 CHOICE_VAL_4_NUM=0
@@ -181,13 +163,13 @@ CSELF_NAME_99=
 COMMAND_NUM=3
 --
 WoditorEvCOMMAND_START
-[101][0,1]<0>()("ウルファール<\n>「この相談コマンドは、コモンイベントから<\n>　呼び出されているんです。")
-[101][0,1]<0>()("ウルファール<\n>「こんな風にメニューからコモンイベントを<\n>　呼び出すこともできるので、<\n>　自作のコマンドもラクラク追加できますね！")
+[101][0,1]<0>()("Wolfarl<\n>  This Talk command is being called from the<\n>  Common Events.")
+[101][0,1]<0>()("Wolfarl<\n>  You can call a Common Event from the menu like<\n>  this, so you can also easily add your own command!")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:ウルファール\n「この相談コマンドは、コモンイベントから\n　呼び出されているんです。
-■Show Message:ウルファール\n「こんな風にメニューからコモンイベントを\n　呼び出すこともできるので、\n　自作のコマンドもラクラク追加できますね！
+■Show Message:Wolfarl\n  This Talk command is being called from the\n  Common Events.
+■Show Message:Wolfarl\n  You can call a Common Event from the menu like\n  this, so you can also easily add your own command!
 ■
 [COMMAND_TEXT_END]
