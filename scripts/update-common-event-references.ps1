@@ -22,6 +22,10 @@ function Update-EventCode([string]$FilePath, [string[]]$NewNames, [string[]]$Old
         $otherStringArgs = $match.Groups[3].Value
 
         $index = $OldNames.IndexOf($commonEventName)
+        if ($index -eq -1) {
+            Write-Error "Failed to find Common Event: ""$commonEventName"""
+            # Exited by error
+        }
         $commonEventName = $NewNames[$index]
 
         # Replace
