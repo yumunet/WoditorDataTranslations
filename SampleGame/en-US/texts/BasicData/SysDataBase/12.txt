@@ -145,7 +145,7 @@ DEFAULT_VAL_2=0
 0,0,0,<<!--DATANAME--!>>,
 255,255,255,<<!--DATANAME--!>>[Sys] KB Input Text,
 170,170,200,<<!--DATANAME--!>>[Sys] KB Input IME Background,
-255,100,100,<<!--DATANAME--!>>[Sys] KB Input IME Underline,
+255,100,100,<<!--DATANAME--!>> (×Invalid) [Sys] KB Input IME Underline,
 255,255,255,<<!--DATANAME--!>>[Sys] Ruby Text,
 0,0,0,<<!--DATANAME--!>>,
 0,0,0,<<!--DATANAME--!>>,
