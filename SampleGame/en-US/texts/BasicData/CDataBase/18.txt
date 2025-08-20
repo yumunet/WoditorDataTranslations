@@ -192,7 +192,7 @@ DEFAULT_VAL_1=0
 0,"",<<!--DATANAME--!>>---------------------------,
 0,"",<<!--DATANAME--!>>[×Unused] (System) Can Save?,
 0,"",<<!--DATANAME--!>>---------------------------,
-0,"",<<!--DATANAME--!>>[Encounter] Encounter Points,
+0,"",<<!--DATANAME--!>>[Encounter] Encounter Value,
 0,"",<<!--DATANAME--!>>,
 0,"",<<!--DATANAME--!>>---------------------------,
 0,"",<<!--DATANAME--!>>[Battle] In Battle?,

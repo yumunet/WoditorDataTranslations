@@ -42,7 +42,7 @@ WoditorEvCOMMAND_START
 [101][0,1]<0>()("If you walk on this checkerboard pattern, you will<\n>encounter an enemy about once every 10 tiles!")
 [101][0,1]<0>()("The technique makes clever use of the Event Editor's<\n><dqrt>Range Extension.<dqrt>")
 [101][0,1]<0>()("Every time you take a step on this checkerboard,<\n>it runs an event that checks for an encounter.")
-[101][0,1]<0>()("An encounter points variable increases for each step<\n>you take, and once it has reached the max level,<\n>a battle will begin.")
+[101][0,1]<0>()("An encounter value increases for each step<\n>you take, and once it has reached the max level,<\n>a battle will begin.")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
@@ -50,6 +50,6 @@ WoditorEvCOMMAND_END
 ■Show Message:If you walk on this checkerboard pattern, you will\nencounter an enemy about once every 10 tiles!
 ■Show Message:The technique makes clever use of the Event Editor's\n"Range Extension."
 ■Show Message:Every time you take a step on this checkerboard,\nit runs an event that checks for an encounter.
-■Show Message:An encounter points variable increases for each step\nyou take, and once it has reached the max level,\na battle will begin.
+■Show Message:An encounter value increases for each step\nyou take, and once it has reached the max level,\na battle will begin.
 ■
 [COMMAND_TEXT_END]
