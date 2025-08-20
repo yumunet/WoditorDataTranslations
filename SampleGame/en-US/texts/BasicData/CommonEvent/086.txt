@@ -202,11 +202,11 @@ WoditorEvCOMMAND_START
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [103][0,1]<2>()("売り物を上から順番にチェックして万能ウィンドウに格納")
-[250][5,4]<2>(16,1600021,0,331776,1600009)("","×Shop Process Data","","Sell Item Name")
-[250][5,4]<2>(16,1600021,1,331776,1600027)("","×Shop Process Data","","Sell Item ID")
-[250][5,4]<2>(16,1600021,5,331776,1600008)("","×Shop Process Data","","Description")
-[250][5,4]<2>(16,1600021,2,331776,1600025)("","×Shop Process Data","","Price")
-[250][5,4]<2>(16,1600021,6,331776,1600026)("","×Shop Process Data","","(Purchasable [0/1])")
+[250][5,4]<2>(16,1600021,0,331776,1600009)("","×Shop Temp Data","","Sell Item Name")
+[250][5,4]<2>(16,1600021,1,331776,1600027)("","×Shop Temp Data","","Sell Item ID")
+[250][5,4]<2>(16,1600021,5,331776,1600008)("","×Shop Temp Data","","Description")
+[250][5,4]<2>(16,1600021,2,331776,1600025)("","×Shop Temp Data","","Price")
+[250][5,4]<2>(16,1600021,6,331776,1600026)("","×Shop Temp Data","","(Purchasable [0/1])")
 [103][0,1]<2>()("価格0だと数値が表示されないので、とりあえず価格1にする")
 [121][4,0]<2>(1600025,1,0,1536)()
 [103][0,1]<2>()(" ")
@@ -508,11 +508,11 @@ WoditorEvCOMMAND_END
  | | |■
  | |◇End◇
  | |▼ 売り物を上から順番にチェックして万能ウィンドウに格納
- | |■Load DB(Var):  CSelf9[アイテム名] = VarDB[ "×Shop Process Data":CSelf21[格納元番号]:"Sell Item Name" ] (16:-:0) 
- | |■Load DB(Var):  CSelf27[コード] = VarDB[ "×Shop Process Data":CSelf21[格納元番号]:"Sell Item ID" ] (16:-:1) 
- | |■Load DB(Var):  CSelf8[説明文] = VarDB[ "×Shop Process Data":CSelf21[格納元番号]:"Description" ] (16:-:5) 
- | |■Load DB(Var):  CSelf25[価格] = VarDB[ "×Shop Process Data":CSelf21[格納元番号]:"Price" ] (16:-:2) 
- | |■Load DB(Var):  CSelf26[購入可能？] = VarDB[ "×Shop Process Data":CSelf21[格納元番号]:"(Purchasable [0/1])" ] (16:-:6) 
+ | |■Load DB(Var):  CSelf9[アイテム名] = VarDB[ "×Shop Temp Data":CSelf21[格納元番号]:"Sell Item Name" ] (16:-:0) 
+ | |■Load DB(Var):  CSelf27[コード] = VarDB[ "×Shop Temp Data":CSelf21[格納元番号]:"Sell Item ID" ] (16:-:1) 
+ | |■Load DB(Var):  CSelf8[説明文] = VarDB[ "×Shop Temp Data":CSelf21[格納元番号]:"Description" ] (16:-:5) 
+ | |■Load DB(Var):  CSelf25[価格] = VarDB[ "×Shop Temp Data":CSelf21[格納元番号]:"Price" ] (16:-:2) 
+ | |■Load DB(Var):  CSelf26[購入可能？] = VarDB[ "×Shop Temp Data":CSelf21[格納元番号]:"(Purchasable [0/1])" ] (16:-:6) 
  | |▼ 価格0だと数値が表示されないので、とりあえず価格1にする
  | |■Set Variable: CSelf25[価格] Lower Bound= 1 + 0 
  | |▼  

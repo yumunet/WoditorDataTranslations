@@ -604,7 +604,7 @@ WoditorEvCOMMAND_END
 ■Repeat Loop [ 1 ] Times
  |▼ 万能ウィンドウ選択処理を実行
  |■Call Event [Name]: CSelf31[主人公ID] = ["X[戦]ｽﾛｯﾄから主人公ID取得"] <CommonEv 141>  / CSelf0[対象戦闘ｽﾛｯﾄ]
- |■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window Cursor Pos Set:Number) =  CSelf14[保存キー位置]
+ |■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) =  CSelf14[保存キー位置]
  |■Call Event [Name]: CSelf20[選択コード] = ["X[共]万能ｳｨﾝﾄﾞｳ選択実行"] <CommonEv 65>  / 2:選択を終えるまでループ[ｶｰｿﾙ初期化しない] / 4:左右キーで終了
  |■Load DB(Var):  CSelf14[保存キー位置] = VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) 
  |■Call Event [Name]: ["X[戦]記憶キー位置設定"] <CommonEv 156>  / 12:[戦闘]ｺﾏﾝﾄﾞ(要ｷｬﾗ指定) / CSelf0[対象戦闘ｽﾛｯﾄ] / CSelf14[保存キー位置]

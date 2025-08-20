@@ -73,7 +73,7 @@ ITEMNAME24=┗ Item Changes After Use
 ITEMNAME25=Element Resist/Weak A     
 ITEMNAME26=┗ Element A Def Rate ±%
 ITEMNAME27=Element Resist/Weak B     
-ITEMNAME28=┗ Element b Def Rate ±%
+ITEMNAME28=┗ Element B Def Rate ±%
 ITEMNAME29=Element Resist/Weak C     
 ITEMNAME30=┗ Element C Def Rate ±%
 ITEMNAME31=Exclusive Slots on Equip
@@ -503,7 +503,7 @@ DEFAULT_VAL_35=0
 DEFAULT_VAL_36=-1
 DEFAULT_VAL_37=0
 <<--CSV_START-->>
-"Armor Name","Description [Up to 2 Lines]","Equipment Type","Equippable Slots 1-4","Equippable Slots 5-8","Max HP Change","Max SP Change","Attack Change","Defense Change","Magic Attack Change","Magic Defense Change","Agility Change","Accuracy [%] Change","Evasion [%] Change","Critical Rate [%] Change","Equipped, Can't Remove?","┏ Change Battle Command","┗ Command to Change      ","Sell Price [0=Can't Sell]","-------------------------------","Skill When Used As Item?     ","┣ Skill to Use                          ","┣ Message [Map]                  ","┣ Message [Battle] (Name...","┗ Item Changes After Use   ","Element Resist/Weak A     ","┗ Element A Def Rate ±%","Element Resist/Weak B     ","┗ Element b Def Rate ±%","Element Resist/Weak C     ","┗ Element C Def Rate ±%","Exclusive Slots on Equip","State Resist A                ","┗ State A Def Rate ±%","State Resist B                ","┗ State B Def Rate ±%","State Resist C                ","┗ State C Def Rate ±%",
+"Armor Name","Description [Up to 2 Lines]","Equipment Type","Equippable Slots 1-4","Equippable Slots 5-8","Max HP Change","Max SP Change","Attack Change","Defense Change","Magic Attack Change","Magic Defense Change","Agility Change","Accuracy [%] Change","Evasion [%] Change","Critical Rate [%] Change","Equipped, Can't Remove?","┏ Change Battle Command","┗ Command to Change      ","Sell Price [0=Can't Sell]","-------------------------------","Skill When Used As Item?     ","┣ Skill to Use                          ","┣ Message [Map]                  ","┣ Message [Battle] (Name...","┗ Item Changes After Use   ","Element Resist/Weak A     ","┗ Element A Def Rate ±%","Element Resist/Weak B     ","┗ Element B Def Rate ±%","Element Resist/Weak C     ","┗ Element C Def Rate ±%","Exclusive Slots on Equip","State Resist A                ","┗ State A Def Rate ±%","State Resist B                ","┗ State B Def Rate ±%","State Resist C                ","┗ State C Def Rate ±%",
 "Leather Shield","A shield made of leather.
 Increases Defense by 4, and Evasion by 10%.",13,1,0,0,0,0,4,0,0,0,0,10,0,0,0,0,80,"",0,0,"","",-3,-1,0,-1,0,-1,0,0,-1,0,-1,0,-1,0,
 "Leather Gauntlet","A gauntlet made of leather. Increases Defense by 3.",13,1,0,0,0,0,3,0,0,0,0,0,0,0,0,0,60,"",0,0,"","",-3,-1,0,-1,0,-1,0,0,-1,0,-1,0,-1,0,

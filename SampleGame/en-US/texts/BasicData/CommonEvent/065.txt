@@ -458,10 +458,10 @@ WoditorEvCOMMAND_END
 -◇Condition:  [1]  [ CSelf0[モード] == 0   ] Case↓
  |▼ 選択完了までの場合　カーソル位置を初期化
  |■Set Variable: CSelf11[選択カーソル位置] = 0 + 0 
- |■Load DB(Var):  CSelf12[一時変数A] = VarDB[ "Base System Variables":21:0 ] (18:Universal Window Cursor Pos Set:Number) 
+ |■Load DB(Var):  CSelf12[一時変数A] = VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) 
  |■Condition (Number):   [1] CSelf12[一時変数A] !=  -1  
  |-◇Condition:  [1]  [ CSelf12[一時変数A] != -1   ] Case↓
- | |■Load DB(Var):  CSelf11[選択カーソル位置] = VarDB[ "Base System Variables":21:0 ] (18:Universal Window Cursor Pos Set:Number) 
+ | |■Load DB(Var):  CSelf11[選択カーソル位置] = VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) 
  | |■Set Variable: CSelf11[選択カーソル位置] Upper Bound= CSelf25[最大項目数] - 1 
  | |■Set Variable: CSelf11[選択カーソル位置] Lower Bound= 0 + 0 
  | |■
@@ -469,10 +469,10 @@ WoditorEvCOMMAND_END
  |■
 -◇Condition:  [2]  [ CSelf0[モード] == 1   ] Case↓
  |▼ キー一回分だけ処理する場合はカーソル位置を初期化しない（ただ外からカーソル指定がセットされてたら入れる）
- |■Load DB(Var):  CSelf12[一時変数A] = VarDB[ "Base System Variables":21:0 ] (18:Universal Window Cursor Pos Set:Number) 
+ |■Load DB(Var):  CSelf12[一時変数A] = VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) 
  |■Condition (Number):   [1] CSelf12[一時変数A] !=  -1  
  |-◇Condition:  [1]  [ CSelf12[一時変数A] != -1   ] Case↓
- | |■Load DB(Var):  CSelf11[選択カーソル位置] = VarDB[ "Base System Variables":21:0 ] (18:Universal Window Cursor Pos Set:Number) 
+ | |■Load DB(Var):  CSelf11[選択カーソル位置] = VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) 
  | |■Set Variable: CSelf11[選択カーソル位置] Upper Bound= CSelf25[最大項目数] - 1 
  | |■Set Variable: CSelf11[選択カーソル位置] Lower Bound= 0 + 0 
  | |■
@@ -483,12 +483,12 @@ WoditorEvCOMMAND_END
 -◇Condition:  [1]  [ CSelf0[モード] == 2   ] Case↓
  |▼ カーソル位置を初期化しないで通常ループする場合は、「外からカーソル指定」の値を読む
  |■Set Variable: CSelf0[モード] = 0 + 0 
- |■Load DB(Var):  CSelf11[選択カーソル位置] = VarDB[ "Base System Variables":21:0 ] (18:Universal Window Cursor Pos Set:Number) 
+ |■Load DB(Var):  CSelf11[選択カーソル位置] = VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) 
  |■Set Variable: CSelf11[選択カーソル位置] Upper Bound= CSelf25[最大項目数] - 1 
  |■Set Variable: CSelf11[選択カーソル位置] Lower Bound= 0 + 0 
  |■
 ◇End◇
-■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window Cursor Pos Set:Number) =  -1
+■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) =  -1
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ 　万能ウィンドウ初期化
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■

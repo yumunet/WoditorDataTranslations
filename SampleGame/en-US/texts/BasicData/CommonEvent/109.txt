@@ -756,7 +756,7 @@ WoditorEvCOMMAND_END
  | | |■Repeat Loop [ 0 ] Times
  | | | |●Label Point [装備不可能時戻り場所] <<<<<<<<<<<<<<<<<<<<<<<<★
  | | | |■Load DB(Var):  CSelf12[一時変数A] = VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) 
- | | | |■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window Cursor Pos Set:Number) =  CSelf12[一時変数A]
+ | | | |■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) =  CSelf12[一時変数A]
  | | | |■Call Event [Name]: CSelf13[選択された装備] = ["X[共]万能ｳｨﾝﾄﾞｳ選択実行"] <CommonEv 65>  / 1:キー１回分だけ処理 / 1:決定音を鳴らさない
  | | | |■
  | | |◇Loop End Point◇◇

@@ -252,7 +252,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<3>()("決定")
 [300][3,1]<3>(0,1,0)("X[共]システムSE再生")
 [300][4,1]<3>(0,2,2,-2)("X[移]┣ お店　描画")
-[250][5,4]<3>(18,21,0,196608,1600016)("","Base System Variables","Universal Window Cursor Pos Set","")
+[250][5,4]<3>(18,21,0,196608,1600016)("","Base System Variables","Universal Window External Cursor Set","")
 [171][0,0]<3>()()
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
@@ -443,7 +443,7 @@ WoditorEvCOMMAND_END
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ お店初期表示
-■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window Cursor Pos Set:Number) =  0
+■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) =  0
 ■Condition (Number):   [1] CSelf0[お店タイプ] ==  1  /  [2] CSelf0[お店タイプ] ==  2  /  [3] CSelf0[お店タイプ] ==  3  
 -◇Condition:  [1]  [ CSelf0[お店タイプ] == 1   ] Case↓
  |■Call Event [Name]: ["X[移]┗ お店内部情報更新"] <CommonEv 86>  / 1:売る
@@ -512,7 +512,7 @@ WoditorEvCOMMAND_END
  | | |▼ 決定
  | | |■Call Event [Name]: ["X[共]システムSE再生"] <CommonEv 49>  / 0:決定音
  | | |■Call Event [Name]: ["X[移]┣ お店　描画"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / -2:凍結
- | | |■Write to DB(Var): VarDB[ "Base System Variables":"Universal Window Cursor Pos Set":0 ] (18:21:Number) =  CSelf16[最終選択位置]
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":"Universal Window External Cursor Set":0 ] (18:21:Number) =  CSelf16[最終選択位置]
  | | |■Break Loop
  | | |■
  | |-◇Condition:  [2]  [ CSelf10[一時変数A] == 11   ] Case↓
@@ -673,7 +673,7 @@ WoditorEvCOMMAND_END
  | | |▼ 格納されている内容に応じて描画内容を更新
  | | |▼ カーソル位置を再設定
  | | |■Load DB(Var):  CSelf16[最終選択位置] = VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) 
- | | |■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window Cursor Pos Set:Number) =  CSelf16[最終選択位置]
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) =  CSelf16[最終選択位置]
  | | |■Call Event [Name]: ["X[移]┣ お店　描画"] <CommonEv 85>  / 3:表示C（項目更新のみ） / CSelf16[最終選択位置] / CSelf16[最終選択位置]
  | | |■Call Event [Name]: ["X[移]┣ お店　描画"] <CommonEv 85>  / 1:表示B（瞬間表示＆一部更新） / CSelf16[最終選択位置] / CSelf16[最終選択位置]
  | | |■Call Event [Name]: ["X[移]┣ お店　描画"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / -2:凍結 / 0

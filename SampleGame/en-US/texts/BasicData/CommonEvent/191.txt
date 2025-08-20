@@ -417,7 +417,7 @@ WoditorEvCOMMAND_END
 ■Call Event [Name]: ["X[共]万能ｳｨﾝﾄﾞｳ描画処理"] <CommonEv 64>  / 2:表示[戦闘ｺﾏﾝﾄﾞ用] / 0 / 0:表示しない / 0:なし
 ■Loop Start
  |▼ 万能ウィンドウ選択処理を実行
- |■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window Cursor Pos Set:Number) =  0
+ |■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) =  0
  |■Call Event [Name]: CSelf15[戦闘逃走選択] = ["X[共]万能ｳｨﾝﾄﾞｳ選択実行"] <CommonEv 65>  / 2:選択を終えるまでループ[ｶｰｿﾙ初期化しない] / 0:決定音を鳴らす
  |■Condition (Number):   [1] CSelf15[戦闘逃走選択] !=  -100  
  |-◇Condition:  [1]  [ CSelf15[戦闘逃走選択] != -100   ] Case↓

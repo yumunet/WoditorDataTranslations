@@ -350,7 +350,7 @@ WoditorEvCOMMAND_END
  |▼ 万能ウィンドウ選択処理を実行
  |■Repeat Loop [ 1 ] Times
  | |▼ 万能ウィンドウ選択処理を実行
- | |■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window Cursor Pos Set:Number) =  CSelf98[記憶キー位置]
+ | |■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) =  CSelf98[記憶キー位置]
  | |■Call Event [Name]: CSelf22 = ["X[共]万能ｳｨﾝﾄﾞｳ選択実行"] <CommonEv 65>  / 2:選択を終えるまでループ[ｶｰｿﾙ初期化しない]
  | |■Load DB(Var):  CSelf98[記憶キー位置] = VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) 
  | |■Call Event [Name]: ["X[移]記憶キー位置設定"] <CommonEv 117>  / 0:[移動]技能(要ｷｬﾗ指定) / CSelf11[主人公ID] / CSelf98[記憶キー位置]

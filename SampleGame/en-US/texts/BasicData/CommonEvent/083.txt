@@ -189,11 +189,11 @@ WoditorEvCOMMAND_START
 [250][5,4]<2>(2,1600015,0,332288,1600009)("","Items","","Item Name")
 [250][5,4]<2>(2,1600015,1,332288,1600008)("","Items","","Description [Up to 2 Lines]")
 [103][0,1]<2>()(" ")
-[250][5,4]<2>(16,1600016,1,327680,1600000)("","×Shop Process Data","","Sell Item ID")
-[250][5,4]<2>(16,1600016,0,327680,1600009)("","×Shop Process Data","","Sell Item Name")
-[250][5,4]<2>(16,1600016,5,327680,1600008)("","×Shop Process Data","","Description")
-[250][5,4]<2>(16,1600016,3,327680,1600019)("","×Shop Process Data","","Quantity")
-[250][5,4]<2>(16,1600016,2,327680,1600018)("","×Shop Process Data","","Price")
+[250][5,4]<2>(16,1600016,1,327680,1600000)("","×Shop Temp Data","","Sell Item ID")
+[250][5,4]<2>(16,1600016,0,327680,1600009)("","×Shop Temp Data","","Sell Item Name")
+[250][5,4]<2>(16,1600016,5,327680,1600008)("","×Shop Temp Data","","Description")
+[250][5,4]<2>(16,1600016,3,327680,1600019)("","×Shop Temp Data","","Quantity")
+[250][5,4]<2>(16,1600016,2,327680,1600018)("","×Shop Temp Data","","Price")
 [103][0,1]<2>()(" ")
 [250][5,4]<2>(18,93,0,65552,1)("","Base System Variables","","")
 [0][0,0]<2>()()
@@ -206,11 +206,11 @@ WoditorEvCOMMAND_START
 [250][5,4]<2>(3,1600015,0,332288,1600009)("","Weapons","","Weapon Name")
 [250][5,4]<2>(3,1600015,1,332288,1600008)("","Weapons","","Description [Up to 2 Lines]")
 [103][0,1]<2>()(" ")
-[250][5,4]<2>(16,1600016,1,327680,1600000)("","×Shop Process Data","","Sell Item ID")
-[250][5,4]<2>(16,1600016,0,327680,1600009)("","×Shop Process Data","","Sell Item Name")
-[250][5,4]<2>(16,1600016,5,327680,1600008)("","×Shop Process Data","","Description")
-[250][5,4]<2>(16,1600016,3,327680,1600019)("","×Shop Process Data","","Quantity")
-[250][5,4]<2>(16,1600016,2,327680,1600018)("","×Shop Process Data","","Price")
+[250][5,4]<2>(16,1600016,1,327680,1600000)("","×Shop Temp Data","","Sell Item ID")
+[250][5,4]<2>(16,1600016,0,327680,1600009)("","×Shop Temp Data","","Sell Item Name")
+[250][5,4]<2>(16,1600016,5,327680,1600008)("","×Shop Temp Data","","Description")
+[250][5,4]<2>(16,1600016,3,327680,1600019)("","×Shop Temp Data","","Quantity")
+[250][5,4]<2>(16,1600016,2,327680,1600018)("","×Shop Temp Data","","Price")
 [103][0,1]<2>()(" ")
 [250][5,4]<2>(18,93,0,65552,1)("","Base System Variables","","")
 [0][0,0]<2>()()
@@ -223,11 +223,11 @@ WoditorEvCOMMAND_START
 [250][5,4]<2>(4,1600015,0,332288,1600009)("","Armors","","Armor Name")
 [250][5,4]<2>(4,1600015,1,332288,1600008)("","Armors","","Description [Up to 2 Lines]")
 [103][0,1]<2>()(" ")
-[250][5,4]<2>(16,1600016,1,327680,1600000)("","×Shop Process Data","","Sell Item ID")
-[250][5,4]<2>(16,1600016,0,327680,1600009)("","×Shop Process Data","","Sell Item Name")
-[250][5,4]<2>(16,1600016,5,327680,1600008)("","×Shop Process Data","","Description")
-[250][5,4]<2>(16,1600016,3,327680,1600019)("","×Shop Process Data","","Quantity")
-[250][5,4]<2>(16,1600016,2,327680,1600018)("","×Shop Process Data","","Price")
+[250][5,4]<2>(16,1600016,1,327680,1600000)("","×Shop Temp Data","","Sell Item ID")
+[250][5,4]<2>(16,1600016,0,327680,1600009)("","×Shop Temp Data","","Sell Item Name")
+[250][5,4]<2>(16,1600016,5,327680,1600008)("","×Shop Temp Data","","Description")
+[250][5,4]<2>(16,1600016,3,327680,1600019)("","×Shop Temp Data","","Quantity")
+[250][5,4]<2>(16,1600016,2,327680,1600018)("","×Shop Temp Data","","Price")
 [103][0,1]<2>()(" ")
 [250][5,4]<2>(18,93,0,65552,1)("","Base System Variables","","")
 [0][0,0]<2>()()
@@ -256,11 +256,11 @@ WoditorEvCOMMAND_END
  | |■Load DB(User):  CSelf9[商品名] = UserDB[ "Items":CSelf15[商品コード[番号]]:"Item Name" ] (2:-:0) 
  | |■Load DB(User):  CSelf8[商品説明] = UserDB[ "Items":CSelf15[商品コード[番号]]:"Description [Up to 2 Lines]" ] (2:-:1) 
  | |▼  
- | |■Write to DB(Var): VarDB[ "×Shop Process Data":CSelf16[次格納先]:"Sell Item ID" ] (16:-:1) =  CSelf0[商品コード]
- | |■Write to DB(Var): VarDB[ "×Shop Process Data":CSelf16[次格納先]:"Sell Item Name" ] (16:-:0) =  CSelf9[商品名]
- | |■Write to DB(Var): VarDB[ "×Shop Process Data":CSelf16[次格納先]:"Description" ] (16:-:5) =  CSelf8[商品説明]
- | |■Write to DB(Var): VarDB[ "×Shop Process Data":CSelf16[次格納先]:"Quantity" ] (16:-:3) =  CSelf19[所持数]
- | |■Write to DB(Var): VarDB[ "×Shop Process Data":CSelf16[次格納先]:"Price" ] (16:-:2) =  CSelf18[価格]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[次格納先]:"Sell Item ID" ] (16:-:1) =  CSelf0[商品コード]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[次格納先]:"Sell Item Name" ] (16:-:0) =  CSelf9[商品名]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[次格納先]:"Description" ] (16:-:5) =  CSelf8[商品説明]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[次格納先]:"Quantity" ] (16:-:3) =  CSelf19[所持数]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[次格納先]:"Price" ] (16:-:2) =  CSelf18[価格]
  | |▼  
  | |■Write to DB(Var): VarDB[ "Base System Variables":93:0 ] (18:[Shop] Registered Item Count:Number) +=  1
  | |■
@@ -273,11 +273,11 @@ WoditorEvCOMMAND_END
  | |■Load DB(User):  CSelf9[商品名] = UserDB[ "Weapons":CSelf15[商品コード[番号]]:"Weapon Name" ] (3:-:0) 
  | |■Load DB(User):  CSelf8[商品説明] = UserDB[ "Weapons":CSelf15[商品コード[番号]]:"Description [Up to 2 Lines]" ] (3:-:1) 
  | |▼  
- | |■Write to DB(Var): VarDB[ "×Shop Process Data":CSelf16[次格納先]:"Sell Item ID" ] (16:-:1) =  CSelf0[商品コード]
- | |■Write to DB(Var): VarDB[ "×Shop Process Data":CSelf16[次格納先]:"Sell Item Name" ] (16:-:0) =  CSelf9[商品名]
- | |■Write to DB(Var): VarDB[ "×Shop Process Data":CSelf16[次格納先]:"Description" ] (16:-:5) =  CSelf8[商品説明]
- | |■Write to DB(Var): VarDB[ "×Shop Process Data":CSelf16[次格納先]:"Quantity" ] (16:-:3) =  CSelf19[所持数]
- | |■Write to DB(Var): VarDB[ "×Shop Process Data":CSelf16[次格納先]:"Price" ] (16:-:2) =  CSelf18[価格]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[次格納先]:"Sell Item ID" ] (16:-:1) =  CSelf0[商品コード]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[次格納先]:"Sell Item Name" ] (16:-:0) =  CSelf9[商品名]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[次格納先]:"Description" ] (16:-:5) =  CSelf8[商品説明]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[次格納先]:"Quantity" ] (16:-:3) =  CSelf19[所持数]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[次格納先]:"Price" ] (16:-:2) =  CSelf18[価格]
  | |▼  
  | |■Write to DB(Var): VarDB[ "Base System Variables":93:0 ] (18:[Shop] Registered Item Count:Number) +=  1
  | |■
@@ -290,11 +290,11 @@ WoditorEvCOMMAND_END
  | |■Load DB(User):  CSelf9[商品名] = UserDB[ "Armors":CSelf15[商品コード[番号]]:"Armor Name" ] (4:-:0) 
  | |■Load DB(User):  CSelf8[商品説明] = UserDB[ "Armors":CSelf15[商品コード[番号]]:"Description [Up to 2 Lines]" ] (4:-:1) 
  | |▼  
- | |■Write to DB(Var): VarDB[ "×Shop Process Data":CSelf16[次格納先]:"Sell Item ID" ] (16:-:1) =  CSelf0[商品コード]
- | |■Write to DB(Var): VarDB[ "×Shop Process Data":CSelf16[次格納先]:"Sell Item Name" ] (16:-:0) =  CSelf9[商品名]
- | |■Write to DB(Var): VarDB[ "×Shop Process Data":CSelf16[次格納先]:"Description" ] (16:-:5) =  CSelf8[商品説明]
- | |■Write to DB(Var): VarDB[ "×Shop Process Data":CSelf16[次格納先]:"Quantity" ] (16:-:3) =  CSelf19[所持数]
- | |■Write to DB(Var): VarDB[ "×Shop Process Data":CSelf16[次格納先]:"Price" ] (16:-:2) =  CSelf18[価格]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[次格納先]:"Sell Item ID" ] (16:-:1) =  CSelf0[商品コード]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[次格納先]:"Sell Item Name" ] (16:-:0) =  CSelf9[商品名]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[次格納先]:"Description" ] (16:-:5) =  CSelf8[商品説明]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[次格納先]:"Quantity" ] (16:-:3) =  CSelf19[所持数]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[次格納先]:"Price" ] (16:-:2) =  CSelf18[価格]
  | |▼  
  | |■Write to DB(Var): VarDB[ "Base System Variables":93:0 ] (18:[Shop] Registered Item Count:Number) +=  1
  | |■

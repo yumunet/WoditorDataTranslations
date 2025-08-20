@@ -333,7 +333,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<4>(4,1600021,25,332288,1600080)("","Armors","","Element Resist/Weak A     ")
 [250][5,4]<4>(4,1600021,26,332288,1600081)("","Armors","","┗ Element A Def Rate ±%")
 [250][5,4]<4>(4,1600021,27,332288,1600082)("","Armors","","Element Resist/Weak B     ")
-[250][5,4]<4>(4,1600021,28,332288,1600083)("","Armors","","┗ Element b Def Rate ±%")
+[250][5,4]<4>(4,1600021,28,332288,1600083)("","Armors","","┗ Element B Def Rate ±%")
 [250][5,4]<4>(4,1600021,29,332288,1600084)("","Armors","","Element Resist/Weak C     ")
 [250][5,4]<4>(4,1600021,30,332288,1600085)("","Armors","","┗ Element C Def Rate ±%")
 [103][0,1]<4>()(" ")
@@ -592,7 +592,7 @@ WoditorEvCOMMAND_END
  | | | |■Load DB(User):  CSelf80[属性１] = UserDB[ "Armors":CSelf21[装備番号]:"Element Resist/Weak A     " ] (4:-:25) 
  | | | |■Load DB(User):  CSelf81[属性１％] = UserDB[ "Armors":CSelf21[装備番号]:"┗ Element A Def Rate ±%" ] (4:-:26) 
  | | | |■Load DB(User):  CSelf82[属性２] = UserDB[ "Armors":CSelf21[装備番号]:"Element Resist/Weak B     " ] (4:-:27) 
- | | | |■Load DB(User):  CSelf83[属性２％] = UserDB[ "Armors":CSelf21[装備番号]:"┗ Element b Def Rate ±%" ] (4:-:28) 
+ | | | |■Load DB(User):  CSelf83[属性２％] = UserDB[ "Armors":CSelf21[装備番号]:"┗ Element B Def Rate ±%" ] (4:-:28) 
  | | | |■Load DB(User):  CSelf84[属性３] = UserDB[ "Armors":CSelf21[装備番号]:"Element Resist/Weak C     " ] (4:-:29) 
  | | | |■Load DB(User):  CSelf85[属性３％] = UserDB[ "Armors":CSelf21[装備番号]:"┗ Element C Def Rate ±%" ] (4:-:30) 
  | | | |▼  
