@@ -164,12 +164,12 @@ COMMAND_NUM=3
 --
 WoditorEvCOMMAND_START
 [101][0,1]<0>()("It's Game Over!")
-[101][0,1]<0>()("But it's possible to continue as it is because this is a<\n>Sample Game!<\n>Have fun!")
+[101][0,1]<0>()("But you can keep playing as it is, because this is a<\n>Sample Game!<\n>Have fun!")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ■Show Message:It's Game Over!
-■Show Message:But it's possible to continue as it is because this is a\nSample Game!\nHave fun!
+■Show Message:But you can keep playing as it is, because this is a\nSample Game!\nHave fun!
 ■
 [COMMAND_TEXT_END]

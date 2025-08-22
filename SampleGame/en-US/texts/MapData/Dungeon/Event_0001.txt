@@ -39,7 +39,7 @@ OPTION_VAL_2=0
 COMMAND_NUM=12
 --
 WoditorEvCOMMAND_START
-[101][0,1]<0>()("This place uses Common Event 15  to disable saving,<\n>so you can't save.<\n>Say, do you wanna heal?")
+[101][0,1]<0>()("This place uses Common Event 15 to disable saving,<\n>so you can't save.<\n>Say, do you wanna heal?")
 [102][1,2]<0>(50)("Full recovery","Do nothing")
 [401][1,0]<0>(2)()
 [101][0,1]<1>()("Full recovery, got it!<\n>Beedle-deedle-dee!")
@@ -54,7 +54,7 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:This place uses Common Event 15  to disable saving,\nso you can't save.\nSay, do you wanna heal?
+■Show Message:This place uses Common Event 15 to disable saving,\nso you can't save.\nSay, do you wanna heal?
 ■Show Choice:/ [1] Full recovery / [2] Do nothing 
 -◇Case: Choice [1] Full recovery                            ↓
  |■Show Message:Full recovery, got it!\nBeedle-deedle-dee!
