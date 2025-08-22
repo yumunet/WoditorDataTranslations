@@ -184,8 +184,8 @@ WoditorEvCOMMAND_START
 [111][4,0]<0>(1,1600001,0,1)()
 [401][1,0]<0>(1)()
 [250][5,4]<1>(0,1600030,0,332288,1600006)("","Skills","","Skill Name")
-[122][2,1]<1>(1600006,0)("『\cself[6]』")
-[300][6,4]<1>(0,24625,0,1600006,1600005,1600005)("X[Map]Display Mini Window","","使用対象を","選択して下さい")
+[122][3,1]<1>(1600006,0,0)("[\cself[6]]")
+[300][6,4]<1>(0,24625,0,1600006,0,0)("X[Map]Display Mini Window","","Select a target.","")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [111][4,0]<0>(1,1600012,0,1)()
@@ -279,7 +279,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<4>(1600016,1,0,0)()
 [111][4,0]<4>(1,1600001,0,1)()
 [401][1,0]<4>(1)()
-[300][6,4]<5>(0,28721,0,1600005,1600005,1600005)("X[Map]Display Mini Window","ランダムで","使用されます","")
+[300][6,4]<5>(0,28721,0,0,0,0)("X[Map]Display Mini Window","Used","at random.","")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
 [300][5,1]<4>(0,3,4,-1,0)("X[Map]Draw Character Box")
@@ -321,7 +321,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<4>(2)()
 [103][0,1]<5>()("発動者と同じ場合は警告")
 [300][3,1]<5>(0,1,2)("X[Com]Play System Sound")
-[122][2,1]<5>(1600009,0)("自分自身には使用できません。")
+[122][3,1]<5>(1600009,0,0)("Can't target the user.")
 [300][4,1]<5>(0,17,0,1600009)("X[Map]Display Menu Message")
 [123][2,0]<5>(1600010,176)()
 [300][4,1]<5>(0,17,-1,1600009)("X[Map]Display Menu Message")
@@ -560,9 +560,9 @@ WoditorEvCOMMAND_START
 [103][0,1]<2>()("キー入力待ち")
 [300][6,4]<2>(0,28721,-1,1600005,1600005,1600005)("X[Map]Display Mini Window","","","")
 [300][3,1]<2>(0,1,2)("X[Com]Play System Sound")
-[300][6,4]<2>(0,28721,0,1600005,1600005,1600005)("X[Map]Display Mini Window","これ以上","使用できません","")
+[300][6,4]<2>(0,28721,0,0,0,0)("X[Map]Display Mini Window","Can't use","any more.","")
 [123][2,0]<2>(1600010,176)()
-[300][6,4]<2>(0,28721,-1,1600005,1600005,1600005)("X[Map]Display Mini Window","これ以上","使用できません","")
+[300][6,4]<2>(0,28721,-1,0,0,0)("X[Map]Display Mini Window","","","")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [103][0,1]<1>()(" ")
@@ -620,8 +620,8 @@ WoditorEvCOMMAND_END
 ■Condition (Number):   [1] CSelf1[発動者ID] >=  0  
 -◇Condition:  [1]  [ CSelf1[発動者ID] >= 0   ] Case↓
  |■Load DB(User):  CSelf6[技能名] = UserDB[ "Skills":CSelf30[技能番号]:"Skill Name" ] (0:-:0) 
- |■Set String: CSelf6[技能名] = "『\cself[6]』"
- |■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / 0:表示 / CSelf6[技能名] / 使用対象を / 選択して下さい
+ |■Set String: CSelf6[技能名] = "[\cself[6]]"
+ |■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / 0:表示 / CSelf6[技能名] / Select a target. / 
  |■
 ◇End◇
 ■Condition (Number):   [1] CSelf12[一時変数２] >=  0  
@@ -715,7 +715,7 @@ WoditorEvCOMMAND_END
  | | | |■Set Variable: CSelf16[単体(1)or全体(2)] = 1 + 0 
  | | | |■Condition (Number):   [1] CSelf1[発動者ID] >=  0  
  | | | |-◇Condition:  [1]  [ CSelf1[発動者ID] >= 0   ] Case↓
- | | | | |■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / 0:表示 / ランダムで / 使用されます / 
+ | | | | |■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / 0:表示 / Used / at random. / 
  | | | | |■
  | | | |◇End◇
  | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 4:カーソルランダムON / -1 / 0
@@ -757,7 +757,7 @@ WoditorEvCOMMAND_END
  | | | |-◇Condition:  [2]  [ CSelf27[対象ID] == CSelf1[発動者ID]   ] Case↓
  | | | | |▼ 発動者と同じ場合は警告
  | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
- | | | | |■Set String: CSelf9[表示文字列] = "自分自身には使用できません。"
+ | | | | |■Set String: CSelf9[表示文字列] = "Can't target the user."
  | | | | |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / 0:初期表示 / CSelf9[表示文字列]
  | | | | |■Key Input: CSelf10[一時変数] [Wait For Input <!>]  Confirm(10) Cancel(11)
  | | | | |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / -1:消去 / CSelf9[表示文字列]
@@ -996,9 +996,9 @@ WoditorEvCOMMAND_END
  | |▼ キー入力待ち
  | |■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / -1:削除 /  /  / 
  | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
- | |■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / 0:表示 / これ以上 / 使用できません / 
+ | |■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / 0:表示 / Can't use / any more. / 
  | |■Key Input: CSelf10[一時変数] [Wait For Input <!>]  Confirm(10) Cancel(11)
- | |■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / -1:削除 / これ以上 / 使用できません / 
+ | |■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / -1:削除 /  /  / 
  | |■
  |◇End◇
  |▼  

@@ -261,7 +261,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<5>(6,1600010,0,331776,1600011)("","┗ Owned Armor Count","","Quantity Owned")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
-[122][2,1]<4>(1600007,256)("<\n> 残り x \cself[11]")
+[122][3,1]<4>(1600007,256,0)("<\n> Left: x \cself[11]")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [103][0,1]<3>()("表示位置は左上基点")
@@ -395,7 +395,7 @@ WoditorEvCOMMAND_END
  | | | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "┗ Owned Armor Count":CSelf10[一時変数A]:"Quantity Owned" ] (9:-:0) 
  | | | | |■
  | | | |◇End◇
- | | | |■Set String: CSelf7[一時文字列] += "\n 残り x \cself[11]"
+ | | | |■Set String: CSelf7[一時文字列] += "\n Left: x \cself[11]"
  | | | |■
  | | |◇End◇
  | | |▼ 表示位置は左上基点

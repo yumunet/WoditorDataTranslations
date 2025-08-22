@@ -358,7 +358,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<6>(21,90,0,65552,1)("","Base System Variables","","")
 [103][0,1]<6>()("ここで「～～を習得した！」　文字列を追加")
 [250][5,4]<6>(0,1600048,0,332288,1600009)("","Skills","","Skill Name")
-[250][4,4]<6>(21,90,1,65554)("\cself[9] を習得！<\n>","Base System Variables","","")
+[250][4,4]<6>(18,90,1,65554)("Learned \cself[9]!<\n>","Base System Variables","","")
 [99][1,0]<6>(0)()
 [0][0,0]<6>()()
 [499][0,0]<5>()()
@@ -567,7 +567,7 @@ WoditorEvCOMMAND_END
  | | | | | |■Write to DB(Var): VarDB[ "Base System Variables":90:0 ] (18:[LvUp] Learned Skill [String]:Number) +=  1
  | | | | | |▼ ここで「～～を習得した！」　文字列を追加
  | | | | | |■Load DB(User):  CSelf9[表示メッセージ文] = UserDB[ "Skills":CSelf48[覚える技能]:"Skill Name" ] (0:-:0) 
- | | | | | |■Write to DB(Var): VarDB[ "Base System Variables":90:1 ] (18:[LvUp] Learned Skill [String]:String) +=  \cself[9] を習得！\n
+ | | | | | |■Write to DB(Var): VarDB[ "Base System Variables":90:1 ] (18:[LvUp] Learned Skill [String]:String) +=  Learned \cself[9]!\n
  | | | | | |■ Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
  | | | | | |■
  | | | | |◇End◇

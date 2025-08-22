@@ -279,13 +279,13 @@ WoditorEvCOMMAND_START
 [103][0,1]<3>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [250][5,4]<3>(14,0,17,332288,1600005)("","Terms","","[Stats] Experience")
 [250][5,4]<3>(18,0,0,331776,1600010)("","×┗Reward List","","EXP Gain")
-[122][2,1]<3>(1600005,256)("　\cself[10]　入手！")
+[122][3,1]<3>(1600005,0,0)("Gained \cself[10] \cself[5]!")
 [122][2,1]<3>(1600005,256)("<\n>")
 [103][0,1]<3>()(" ")
 [250][5,4]<3>(18,0,1,331776,1600010)("","×┗Reward List","","Money Gain")
-[122][2,1]<3>(1600005,256)(" \cself[10]　")
+[122][3,1]<3>(1600005,256,0)("Gained \cself[10] ")
 [250][5,4]<3>(14,0,18,332304,1600005)("","Terms","","[Stats] Currency")
-[122][2,1]<3>(1600005,256)("入手！")
+[122][3,1]<3>(1600005,256,0)("!")
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
 [103][0,1]<3>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
@@ -295,7 +295,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<3>()("入手したアイテム名を取得する")
 [121][4,0]<3>(1600010,1600098,0,0)()
 [121][4,0]<3>(1600045,0,0,0)()
-[122][2,1]<3>(1600005,0)("\space[0]<C>\f[\cself[18]]【入手アイテム】<\n><\n>\f[\cself[19]]")
+[122][3,1]<3>(1600005,0,0)("\space[0]<C>\f[\cself[18]][Items Obtained]<\n><\n>\f[\cself[19]]")
 [179][1,0]<3>(1600097)()
 [250][5,4]<4>(18,0,1600010,69632,1600011)("","×┗Reward List","","")
 [111][4,0]<4>(1,1600011,10000,1)()
@@ -358,16 +358,16 @@ WoditorEvCOMMAND_START
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [250][5,4]<3>(0,1600051,0,331776,1600007)("","Allies","","Character Name")
-[122][2,1]<3>(1600005,256)("\cself[7]の")
+[122][3,1]<3>(1600005,256,0)("\cself[7]'s ")
 [250][5,4]<3>(14,0,5,332288,1600007)("","Terms","","[Stats] Level")
-[122][2,1]<3>(1600005,256)("\cself[7]が")
+[122][3,1]<3>(1600005,256,0)("\cself[7] ")
 [121][4,0]<3>(1600011,1600020,0,2048)()
 [111][7,0]<3>(2,1600050,1,1,1600050,-1,3)()
 [401][1,0]<3>(1)()
-[122][2,1]<4>(1600005,256)("\cself[50]上がった！")
+[122][3,1]<4>(1600005,256,0)("increased by \cself[50]!")
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
-[122][2,1]<4>(1600005,256)("\cself[50]下がった！")
+[122][3,1]<4>(1600005,256,0)("decreased by \cself[50]!")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [122][2,1]<3>(1600005,256)("<\n>　")
@@ -382,7 +382,7 @@ WoditorEvCOMMAND_START
 [122][2,1]<5>(1600007,0)("+")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
-[122][2,1]<4>(1600005,256)("最大\cself[6] \cself[7]\cself[10]　")
+[122][3,1]<4>(1600005,256,0)("Max \cself[6] \cself[7]\cself[10]　")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [250][5,4]<3>(14,0,8,332288,1600006)("","Terms","","[Stats] SP Name")
@@ -395,7 +395,7 @@ WoditorEvCOMMAND_START
 [122][2,1]<5>(1600007,0)("+")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
-[122][2,1]<4>(1600005,256)("最大\cself[6] \cself[7]\cself[10]　")
+[122][3,1]<4>(1600005,256,0)("Max \cself[6] \cself[7]\cself[10]　")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [103][0,1]<3>()(" ")
@@ -712,13 +712,13 @@ WoditorEvCOMMAND_END
  | | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  | | |■Load DB(User):  CSelf5[表示文] = UserDB[ "Terms":0:"[Stats] Experience" ] (15:Basic Terms:17) 
  | | |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "×┗Reward List":0:"EXP Gain" ] (15::0) 
- | | |■Set String: CSelf5[表示文] += "　\cself[10]　入手！"
+ | | |■Set String: CSelf5[表示文] = "Gained \cself[10] \cself[5]!"
  | | |■Set String: CSelf5[表示文] += "\n"
  | | |▼  
  | | |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "×┗Reward List":0:"Money Gain" ] (15::1) 
- | | |■Set String: CSelf5[表示文] += " \cself[10]　"
+ | | |■Set String: CSelf5[表示文] += "Gained \cself[10] "
  | | |■Load DB(User):  CSelf5[表示文] += UserDB[ "Terms":0:"[Stats] Currency" ] (15:Basic Terms:18) 
- | | |■Set String: CSelf5[表示文] += "入手！"
+ | | |■Set String: CSelf5[表示文] += "!"
  | | |■
  | |-◇Condition:  [2]  [ CSelf0[処理モード] == 1   ] Case↓
  | | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -728,7 +728,7 @@ WoditorEvCOMMAND_END
  | | |▼ 入手したアイテム名を取得する
  | | |■Set Variable: CSelf10[一時変数A] = CSelf98[アイテム初期位置] + 0 
  | | |■Set Variable: CSelf45[アイテム個数] = 0 + 0 
- | | |■Set String: CSelf5[表示文] = "\space[0]<C>\f[\cself[18]]【入手アイテム】\n\n\f[\cself[19]]"
+ | | |■Set String: CSelf5[表示文] = "\space[0]<C>\f[\cself[18]][Items Obtained]\n\n\f[\cself[19]]"
  | | |■Repeat Loop [ CSelf97[入手ｱｲﾃﾑｼｽﾃﾑ限界数] ] Times
  | | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "×┗Reward List":0:CSelf10[一時変数A] ] (15::-) 
  | | | |■Condition (Number):   [1] CSelf11[一時変数B] >=  10000  
@@ -791,16 +791,16 @@ WoditorEvCOMMAND_END
  | | | |■
  | | |◇End◇
  | | |■Load DB(Var):  CSelf7[一時文字列B] = VarDB[ "Allies":CSelf51[LvUP一時変数B]:"Character Name" ] (0:-:0) 
- | | |■Set String: CSelf5[表示文] += "\cself[7]の"
+ | | |■Set String: CSelf5[表示文] += "\cself[7]'s "
  | | |■Load DB(User):  CSelf7[一時文字列B] = UserDB[ "Terms":0:"[Stats] Level" ] (15:Basic Terms:5) 
- | | |■Set String: CSelf5[表示文] += "\cself[7]が"
+ | | |■Set String: CSelf5[表示文] += "\cself[7] "
  | | |■Set Variable: CSelf11[一時変数B] Absolute= CSelf20[基本ピクチャ番号] + 0 
  | | |■Condition (Number):   [1] CSelf50[LvUP一時変数A] >=  1  /  [2] CSelf50[LvUP一時変数A] <=  -1  
  | | |-◇Condition:  [1]  [ CSelf50[LvUP一時変数A] >= 1   ] Case↓
- | | | |■Set String: CSelf5[表示文] += "\cself[50]上がった！"
+ | | | |■Set String: CSelf5[表示文] += "increased by \cself[50]!"
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf50[LvUP一時変数A] <= -1   ] Case↓
- | | | |■Set String: CSelf5[表示文] += "\cself[50]下がった！"
+ | | | |■Set String: CSelf5[表示文] += "decreased by \cself[50]!"
  | | | |■
  | | |◇End◇
  | | |■Set String: CSelf5[表示文] += "\n　"
@@ -815,7 +815,7 @@ WoditorEvCOMMAND_END
  | | | | |■Set String: CSelf7[一時文字列B] = "+"
  | | | | |■
  | | | |◇End◇
- | | | |■Set String: CSelf5[表示文] += "最大\cself[6] \cself[7]\cself[10]　"
+ | | | |■Set String: CSelf5[表示文] += "Max \cself[6] \cself[7]\cself[10]　"
  | | | |■
  | | |◇End◇
  | | |■Load DB(User):  CSelf6[一時文字列A] = UserDB[ "Terms":0:"[Stats] SP Name" ] (15:Basic Terms:8) 
@@ -828,7 +828,7 @@ WoditorEvCOMMAND_END
  | | | | |■Set String: CSelf7[一時文字列B] = "+"
  | | | | |■
  | | | |◇End◇
- | | | |■Set String: CSelf5[表示文] += "最大\cself[6] \cself[7]\cself[10]　"
+ | | | |■Set String: CSelf5[表示文] += "Max \cself[6] \cself[7]\cself[10]　"
  | | | |■
  | | |◇End◇
  | | |▼  

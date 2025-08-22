@@ -206,7 +206,7 @@ WoditorEvCOMMAND_START
 [111][4,0]<2>(1,1600004,1,1)()
 [401][1,0]<2>(1)()
 [121][4,0]<3>(1600000,1,0,0)()
-[300][4,2]<3>(0,4113,0,0)("X[Map]Display Menu Message","ロード画面を開きます（Ctrlキー + セーブ画面）")
+[300][4,2]<3>(0,4113,0,0)("X[Map]Display Menu Message","Opens the Load screen (Ctrl + Save screen)")
 [180][1,0]<3>(20)()
 [300][4,2]<3>(0,4113,-1,1600009)("X[Map]Display Menu Message","")
 [0][0,0]<3>()()
@@ -421,7 +421,7 @@ WoditorEvCOMMAND_END
  | |■Condition (Number):   [1] CSelf4[強制ロード画面フラグ] >=  1  
  | |-◇Condition:  [1]  [ CSelf4[強制ロード画面フラグ] >= 1   ] Case↓
  | | |■Set Variable: CSelf0[セーブ? ロード?] = 1 + 0 
- | | |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / 0:初期表示 / ロード画面を開きます（Ctrlキー + セーブ画面）
+ | | |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / 0:初期表示 / Opens the Load screen (Ctrl + Save screen)
  | | |■Wait: 20 Frames
  | | |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / -1:消去 / 
  | | |■

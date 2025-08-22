@@ -398,8 +398,8 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [498][0,0]<0>()()
 [103][0,1]<0>()("最後に「装備を外す」を追加")
-[250][4,4]<0>(19,1600032,0,327682)("<装備を外す>","Universal Window Items","","Item Text")
-[250][4,4]<0>(19,1600032,0,327682)("装備を解除します。","Universal Window Items","","Description")
+[250][4,4]<0>(19,1600032,0,327682)("<Unequip>","Universal Window Items","","Item Text")
+[250][4,4]<0>(19,1600032,0,327682)("Remove equipment.","Universal Window Items","","Description")
 [250][5,4]<0>(19,1600032,0,327680,1)("","Universal Window Items","","Selectable? [1:Yes]")
 [103][0,1]<0>()("装備解除はコード「-2」")
 [250][5,4]<0>(19,1600032,0,327680,-2)("","Universal Window Items","","Item ID")
@@ -615,8 +615,8 @@ WoditorEvCOMMAND_END
  |■
 ◇Loop End Point◇◇
 ▼ 最後に「装備を外す」を追加
-■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Item Text" ] (19:-:0) =  <装備を外す>
-■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Description" ] (19:-:6) =  装備を解除します。
+■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Item Text" ] (19:-:0) =  <Unequip>
+■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Description" ] (19:-:6) =  Remove equipment.
 ■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Selectable? [1:Yes]" ] (19:-:2) =  1
 ▼ 装備解除はコード「-2」
 ■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Item ID" ] (19:-:1) =  -2

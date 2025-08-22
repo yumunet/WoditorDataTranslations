@@ -230,7 +230,7 @@ WoditorEvCOMMAND_START
 [111][4,0]<3>(1,1600030,1,1)()
 [401][1,0]<3>(1)()
 [300][3,1]<4>(0,1,2)("X[Com]Play System Sound")
-[300][4,2]<4>(0,4113,0,1600005)("X[Map]Display Menu Message","外すことができません")
+[300][4,2]<4>(0,4113,0,0)("X[Map]Display Menu Message","Can't remove it.")
 [180][1,0]<4>(30)()
 [300][4,2]<4>(0,4113,-1,1600005)("X[Map]Display Menu Message","")
 [176][0,0]<4>()()
@@ -380,7 +380,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<4>(1)()
 [103][0,1]<5>()("もし該当する装備が「外せない装備」欄も専有する場合は、装備できないと表示")
 [300][3,1]<5>(0,1,2)("X[Com]Play System Sound")
-[300][4,2]<5>(0,4113,0,1600005)("X[Map]Display Menu Message","外すことができない装備があるため、\nこの装備を付けることができませんでした。")
+[300][4,2]<5>(0,4113,0,0)("X[Map]Display Menu Message","Couldn't equip this equipment\nbecause some equipment can't be removed.")
 [300][4,1]<5>(0,2,60,0)("X[Com]Wait(PressKeyToEnd)")
 [300][4,2]<5>(0,4113,-1,1600005)("X[Map]Display Menu Message","")
 [213][0,1]<5>()("装備不可能時戻り場所")
@@ -555,7 +555,7 @@ WoditorEvCOMMAND_START
 [111][4,0]<5>(1,1600030,1,1)()
 [401][1,0]<5>(1)()
 [300][3,1]<6>(0,1,2)("X[Com]Play System Sound")
-[300][4,2]<6>(0,4113,0,1600005)("X[Map]Display Menu Message","外すことができません")
+[300][4,2]<6>(0,4113,0,0)("X[Map]Display Menu Message","Can't remove it.")
 [180][1,0]<6>(30)()
 [300][4,2]<6>(0,4113,-1,1600005)("X[Map]Display Menu Message","")
 [176][0,0]<6>()()
@@ -640,7 +640,7 @@ WoditorEvCOMMAND_END
  | | |■Condition (Number):   [1] CSelf30[外せないフラグ] >=  1  
  | | |-◇Condition:  [1]  [ CSelf30[外せないフラグ] >= 1   ] Case↓
  | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
- | | | |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / 0:初期表示 / 外すことができません
+ | | | |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / 0:初期表示 / Can't remove it.
  | | | |■Wait: 30 Frames
  | | | |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / -1:消去 / 
  | | | |■Loop Start: Go to Loop Start
@@ -790,7 +790,7 @@ WoditorEvCOMMAND_END
  | | | |-◇Condition:  [1]  [ CSelf30[外せないフラグ] >= 1   ] Case↓
  | | | | |▼ もし該当する装備が「外せない装備」欄も専有する場合は、装備できないと表示
  | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
- | | | | |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / 0:初期表示 / 外すことができない装備があるため、\nこの装備を付けることができませんでした。
+ | | | | |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / 0:初期表示 / Couldn't equip this equipment\nbecause some equipment can't be removed.
  | | | | |■Call Event [Name]: ["X[Com]Wait(PressKeyToEnd)"] <CommonEv 59>  / 60 / 0
  | | | | |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / -1:消去 / 
  | | | | |●Label Jump [装備不可能時戻り場所] >>>>>>>>>>>>>>>>>>>>>>>>>
@@ -965,7 +965,7 @@ WoditorEvCOMMAND_END
  | | | | |■Condition (Number):   [1] CSelf30[外せないフラグ] >=  1  
  | | | | |-◇Condition:  [1]  [ CSelf30[外せないフラグ] >= 1   ] Case↓
  | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
- | | | | | |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / 0:初期表示 / 外すことができません
+ | | | | | |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / 0:初期表示 / Can't remove it.
  | | | | | |■Wait: 30 Frames
  | | | | | |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / -1:消去 / 
  | | | | | |■Loop Start: Go to Loop Start

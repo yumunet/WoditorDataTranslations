@@ -190,7 +190,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [498][0,0]<0>()()
 [250][5,4]<0>(13,0,1,332288,1600009)("","Terms","","[Menu] Skills")
-[300][6,4]<0>(0,28721,0,1600005,1600005,1600005)("X[Map]Display Mini Window","誰が\cself[9]を","使用しますか？","")
+[300][6,4]<0>(0,28721,0,0,0,0)("X[Map]Display Mini Window","Who will use","\cself[9]?","")
 [300][3,1]<0>(0,1,1600099)("X[Map]Select Character Box")
 [300][6,4]<0>(0,28721,-1,1600005,1600005,1600005)("X[Map]Display Mini Window","","","")
 [250][5,4]<0>(18,2,0,462848,1600020)("","Base System Variables","Selected ID","Number")
@@ -302,7 +302,7 @@ WoditorEvCOMMAND_END
  |■
 ◇Loop End Point◇◇
 ■Load DB(User):  CSelf9 = UserDB[ "Terms":0:"[Menu] Skills" ] (15:Basic Terms:1) 
-■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / 0:表示 / 誰が\cself[9]を / 使用しますか？ / 
+■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / 0:表示 / Who will use / \cself[9]? / 
 ■Call Event [Name]: ["X[Map]Select Character Box"] <CommonEv 108>  / CSelf99[キャラ初期選択位置]
 ■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / -1:削除 /  /  / 
 ■Load DB(Var):  CSelf20[選択キャラ位置（0～5）] = VarDB[ "Base System Variables":"Selected ID":"Number" ] (18:2:0) 
