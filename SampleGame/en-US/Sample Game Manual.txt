@@ -52,7 +52,7 @@ Changelog
 07/27/2009  Minor fixes, and included Isooki's enemy images.
 02/20/2009  Greatly enhanced map tile resources.
 11/30/2008  Changed rights of MIDI resources to "can reuse only."
-09/02/2008  Changed all characters to 8-directional, and added character creation tool to "Other Data Collection" folder.
+09/02/2008  Changed all characters to 8-directional, and added character creation tool to "Extras" folder.
 03/15/2008  Completely remade, and added default system.
 11/05/2007  Added feature introduction.
 04/12/2007  Released.
@@ -60,50 +60,50 @@ Changelog
 ―――――――――――――――――――――――――――――――――――――――――
 Resource Contributors
 
-- Character Image Resources
-  すう (Suu)
-  pochi (Helped make 8-direction versions and parts. Animal and monster character images.)
-  mel ("Ship" character image included with sample)
-  ウロボロス (Uroboros) (Resources included with sample: camp images, waterfall tile images, monster character images)
-  たぴす (Tapisu) (Character images), まきば (Makiba) (Character images)
+- Character Sprite Resources
+  すう(Suu)
+  pochi (Helped make 8-direction versions and parts. Animal and monster character sprites.)
+  mel (Ship character sprite included with sample)
+  ウロボロス(Uroboros) (Resources included with sample: camp sprite, waterfall tile, monster character sprites)
+  たぴす(Tapisu) (Character sprites), まきば(Makiba) (Character sprites)
 
 - Map Tile Resources
-  ぴぽ (Pipo) (https://pipoya.net/blog/)
+  ぴぽ(Pipo) (https://pipoya.net/blog/)
 
 - Enemy Image Resources
-  ＧＤ (GD) (From WOLF RPG Editor Wiki)
+  ＧＤ(GD) (From WOLF RPG Editor Wiki)
   * When distributing these resources, you must include the creator's name.
     When "redistributing them as resources" or "modifying and distributing them as resources,"
     please be sure to include the creator's name.
 
 - MIDI Resources (Filenames have been changed for convenience.)
-  タクミ (Takumi)
-  ユノ (Yuno)
-  鏡読み (Kagamiyomi) (From WOLF RPG Editor Wiki)
+  タクミ(Takumi)
+  ユノ(Yuno)
+  鏡読み(Kagamiyomi) (From WOLF RPG Editor Wiki)
   Koya
   yaeko (From WOLF RPG Editor Wiki)
-  黒うさぎ (Kuro Usagi) (From WOLF RPG Editor Wiki)
-  土鳩 (Dobato) (From WOLF RPG Editor Wiki)
+  黒うさぎ(Kuro Usagi) (From WOLF RPG Editor Wiki)
+  土鳩(Dobato) (From WOLF RPG Editor Wiki)
   momi (From WOLF RPG Editor Wiki)
 
 - Sound Effect Resources (Filenames have been changed for convenience.)
   panop
-  小森平 (Taira Komori) (https://taira-komori.jpn.org/)
+  小森平(Taira Komori) (https://taira-komori.jpn.org/)
   Koya
-  いそおき (Isooki) (From WOLF RPG Editor Wiki)
-  くくり (Kukuri) (From WOLF RPG Editor Wiki)
+  いそおき(Isooki) (From WOLF RPG Editor Wiki)
+  くくり(Kukuri) (From WOLF RPG Editor Wiki)
 
 - Icon Resources
-  枯れ草 (Karekusa) (From WOLF RPG Editor Resource Thread)
+  枯れ草(Karekusa) (From WOLF RPG Editor Resource Thread)
 
 - Battle Animation Effects
   panop
   Akira (From WOLF RPG Editor Resource Thread)
 
-- Face Graphic Synthesizer Data and Base Images
-  いさあきえーと (Isaaki eight) (http://isaaki.web.fc2.com/)
+- Portrait Graphic Maker Data and Base Images
+  いさあきえーと(Isaaki eight) (http://isaaki.web.fc2.com/)
 
-- Face Graphic Part Contributors (From Face Graphic Synthesizer Project Page)
+- Portrait Graphic Parts Contributors (From Portrait Graphic Maker Project Page)
   korcs, うみの(Umino), haji, kk, たては(Tateha), タケゾウ(Takezou), van,
   ぜふぃ(Zefi), あきら(Akira), アマニア(Amania), 雪雹(Yukihyo), 蛍(Hotaru),
   ミンミン(Minmin), 計架(Keika), まーりん(Maarin), もりもる(Morimoru),
@@ -113,12 +113,12 @@ Resource Contributors
   K-Shin07
 
 ―――――――――――――――――――――――――――――――――――――――――
-[Other Data Collection: Version 1 Resources]
+[Extras: Version 1 Resources]
  Monster Images
-  いそおき (Isooki)
-  すう (Suu)
+  いそおき(Isooki)
+  すう(Suu)
  Map Tiles
-  のり (Nori) (http://nega.client.jp/)
+  のり(Nori) (http://nega.client.jp/)
   * Parts by the following creators used from WOLF RPG Editor Wiki and Resource Request Thread.
     遊等(Yuuto), RETAW, すう(Suu), 枯れ草(Karekusa), 澄夏(Sumika), ウロっち(Urotchi), りくがめ(Rikugame)
 ―――――――――――――――――――――――――――――――――――――――――
