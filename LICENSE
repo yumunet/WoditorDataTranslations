@@ -1,0 +1,30 @@
+Files in the directory named "scripts" and in the root directory are licensed under CC BY-NC 4.0.
+  WoditorDataTranslation © 2025 by yumu (Scripts and Root Directory Files)
+To view a copy of this license, visit https://creativecommons.org/licenses/by-nc/4.0/
+
+
+Files in directories named "assets" are distributed under the following rules.
+(Original text: SampleGame/ja-JP/サンプルゲーム説明書.txt)
+
+  - Image Resources: Can reuse, modify, and use outside of WOLF RPG Editor.
+  - MIDI Resources: Can reuse only.
+  - WAV/OGG Resources: Can reuse, modify, and use outside of WOLF RPG Editor.
+
+- Games using these resources can be sold.
+  However, sale of the resources themselves and
+  commercial use on the premise that they will be used as resources is prohibited.
+
+- "Can use outside of WOLF RPG Editor" means that they can also be used for
+  "works" developed with other game engines. [Added on 01/28/2025]
+
+- It is prohibited to distribute sample game resources included in self-made software. [Added on 01/28/2025]
+  However, users may download the sample game resources and use them
+  in works developed with that software (can use outside of WOLF RPG Editor).
+
+  * Reuse refers to including the files in a game for use.
+  * Modification refers to making changes to the files for use in your own game.
+
+* When distributing enemy image resources created by GD, you must include the creator's name.
+
+
+Other files may be modified and redistributed.
