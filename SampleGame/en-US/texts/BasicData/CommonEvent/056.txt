@@ -174,7 +174,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("[Databases Accessed by This Common Event]")
-[103][0,1]<0>()("  Variable DB <dqrt>┣ Owned Armor Count<dqrt>")
+[103][0,1]<0>()("  Variable DB <dqrt>┗ Owned Armors<dqrt>")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("[Other Common Events Called from Here]")
 [103][0,1]<0>()("  None")
@@ -193,7 +193,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [103][0,1]<0>()("Get the armor quantity.")
-[250][5,4]<0>(9,1600000,0,69632,1600010)("","┗ Owned Armor Count","","")
+[250][5,4]<0>(9,1600000,0,69632,1600010)("","┗ Owned Armors","","")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
@@ -205,7 +205,7 @@ WoditorEvCOMMAND_END
 ▼ 
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ [Databases Accessed by This Common Event]
-▼   Variable DB "┣ Owned Armor Count"
+▼   Variable DB "┗ Owned Armors"
 ▼  
 ▼ [Other Common Events Called from Here]
 ▼   None
@@ -224,6 +224,6 @@ WoditorEvCOMMAND_END
  |■
 ◇End◇
 ▼ Get the armor quantity.
-■Load DB(Var):  CSelf10[Quantity] = VarDB[ "┗ Owned Armor Count":CSelf0[Armor ID]:0 ] (9:-:Quantity Owned) 
+■Load DB(Var):  CSelf10[Quantity] = VarDB[ "┗ Owned Armors":CSelf0[Armor ID]:0 ] (9:-:Owned Quantity) 
 ■
 [COMMAND_TEXT_END]

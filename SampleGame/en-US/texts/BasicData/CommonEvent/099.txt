@@ -248,17 +248,17 @@ WoditorEvCOMMAND_START
 [401][1,0]<4>(1)()
 [121][4,0]<5>(1600010,1600001,10000,16384)()
 [250][5,4]<5>(2,1600010,0,332288,1600007)("","Items","","Item Name")
-[250][5,4]<5>(4,1600010,0,331776,1600011)("","┣ Owned Item Count","","Quantity Owned")
+[250][5,4]<5>(4,1600010,0,331776,1600011)("","┣ Owned Items","","Owned Quantity")
 [0][0,0]<5>()()
 [401][1,0]<4>(2)()
 [121][4,0]<5>(1600010,1600001,20000,16384)()
 [250][5,4]<5>(3,1600010,0,332288,1600007)("","Weapons","","Weapon Name")
-[250][5,4]<5>(5,1600010,0,331776,1600011)("","┣ Owned Weapon Count","","Quantity Owned")
+[250][5,4]<5>(5,1600010,0,331776,1600011)("","┣ Owned Weapons","","Owned Quantity")
 [0][0,0]<5>()()
 [401][1,0]<4>(3)()
 [121][4,0]<5>(1600010,1600001,30000,16384)()
 [250][5,4]<5>(4,1600010,0,332288,1600007)("","Armors","","Armor Name")
-[250][5,4]<5>(6,1600010,0,331776,1600011)("","┗ Owned Armor Count","","Quantity Owned")
+[250][5,4]<5>(6,1600010,0,331776,1600011)("","┗ Owned Armors","","Owned Quantity")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
 [122][3,1]<4>(1600007,256,0)("<\n> Left: x \cself[11]")
@@ -382,17 +382,17 @@ WoditorEvCOMMAND_END
  | | | |-◇Condition:  [1]  [ CSelf1[アイテムコード] <= 19999   ] Case↓
  | | | | |■Set Variable: CSelf10[一時変数A] = CSelf1[アイテムコード] % 10000 
  | | | | |■Load DB(User):  CSelf7[一時文字列] = UserDB[ "Items":CSelf10[一時変数A]:"Item Name" ] (2:-:0) 
- | | | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "┣ Owned Item Count":CSelf10[一時変数A]:"Quantity Owned" ] (7:-:0) 
+ | | | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "┣ Owned Items":CSelf10[一時変数A]:"Owned Quantity" ] (7:-:0) 
  | | | | |■
  | | | |-◇Condition:  [2]  [ CSelf1[アイテムコード] <= 29999   ] Case↓
  | | | | |■Set Variable: CSelf10[一時変数A] = CSelf1[アイテムコード] % 20000 
  | | | | |■Load DB(User):  CSelf7[一時文字列] = UserDB[ "Weapons":CSelf10[一時変数A]:"Weapon Name" ] (3:-:0) 
- | | | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "┣ Owned Weapon Count":CSelf10[一時変数A]:"Quantity Owned" ] (8:-:0) 
+ | | | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "┣ Owned Weapons":CSelf10[一時変数A]:"Owned Quantity" ] (8:-:0) 
  | | | | |■
  | | | |-◇Condition:  [3]  [ CSelf1[アイテムコード] <= 39999   ] Case↓
  | | | | |■Set Variable: CSelf10[一時変数A] = CSelf1[アイテムコード] % 30000 
  | | | | |■Load DB(User):  CSelf7[一時文字列] = UserDB[ "Armors":CSelf10[一時変数A]:"Armor Name" ] (4:-:0) 
- | | | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "┗ Owned Armor Count":CSelf10[一時変数A]:"Quantity Owned" ] (9:-:0) 
+ | | | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "┗ Owned Armors":CSelf10[一時変数A]:"Owned Quantity" ] (9:-:0) 
  | | | | |■
  | | | |◇End◇
  | | | |■Set String: CSelf7[一時文字列] += "\n Left: x \cself[11]"

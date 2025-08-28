@@ -6,9 +6,9 @@ DATATYPE_0=1000
 NUMDATA_TYPE_NUM=1
 STRDATA_TYPE_NUM=0
 DATA_NUM=1
-TYPENAME=┗ Owned Armor Count
+TYPENAME=┗ Owned Armors
 ITEMNAME_NUM=1
-ITEMNAME0=Quantity Owned
+ITEMNAME0=Owned Quantity
 MEMO=[△ Okay to Edit]<<\n>>Number of armors<<\n>>owned at game start.<<\n>><<\n>>Increase or decrease the<<\n>>Data count as necessary.<<\n>><<\n>>* Even if there's only one<<\n>>Data entry, it will still work<<\n>>fine.<<\n>>Any missing Data entries<<\n>>will be automatically added<<\n>>during the game.<<\n>>
 ITEMTYPE_NUM=100
 ITEM_LOADTYPE_0=0
@@ -120,7 +120,7 @@ CHOICE_VAL_0_NUM=0
 DEFAULT_VAL_NUM=1
 DEFAULT_VAL_0=0
 <<--CSV_START-->>
-"Quantity Owned",
+"Owned Quantity",
 0,
 
 <<--CSV_END-->>

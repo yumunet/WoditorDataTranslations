@@ -181,7 +181,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600030,-1,0,0)()
 [179][1,0]<0>(1600031)()
 [121][4,0]<1>(1600030,1,0,256)()
-[250][5,4]<1>(4,1600030,0,331776,1600010)("","┣ Owned Item Count","","Quantity Owned")
+[250][5,4]<1>(4,1600030,0,331776,1600010)("","┣ Owned Items","","Owned Quantity")
 [111][4,0]<1>(1,1600010,1,1)()
 [401][1,0]<1>(1)()
 [103][0,1]<2>()("1個以上あれば万能ウィンドウに登録")
@@ -256,7 +256,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600030,-1,0,0)()
 [179][1,0]<0>(1600031)()
 [121][4,0]<1>(1600030,1,0,256)()
-[250][5,4]<1>(5,1600030,0,331776,1600010)("","┣ Owned Weapon Count","","Quantity Owned")
+[250][5,4]<1>(5,1600030,0,331776,1600010)("","┣ Owned Weapons","","Owned Quantity")
 [111][4,0]<1>(1,1600010,1,1)()
 [401][1,0]<1>(1)()
 [103][0,1]<2>()("1個以上あれば万能ウィンドウに登録")
@@ -317,7 +317,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600030,-1,0,0)()
 [179][1,0]<0>(1600031)()
 [121][4,0]<1>(1600030,1,0,256)()
-[250][5,4]<1>(6,1600030,0,331776,1600010)("","┗ Owned Armor Count","","Quantity Owned")
+[250][5,4]<1>(6,1600030,0,331776,1600010)("","┗ Owned Armors","","Owned Quantity")
 [111][4,0]<1>(1,1600010,1,1)()
 [401][1,0]<1>(1)()
 [103][0,1]<2>()("1個以上あれば万能ウィンドウに登録")
@@ -398,7 +398,7 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf30[処理対象] = -1 + 0 
 ■Repeat Loop [ CSelf31[最大処理数] ] Times
  |■Set Variable: CSelf30[処理対象] += 1 + 0 
- |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "┣ Owned Item Count":CSelf30[処理対象]:"Quantity Owned" ] (7:-:0) 
+ |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "┣ Owned Items":CSelf30[処理対象]:"Owned Quantity" ] (7:-:0) 
  |■Condition (Number):   [1] CSelf10[一時変数A] >=  1  
  |-◇Condition:  [1]  [ CSelf10[一時変数A] >= 1   ] Case↓
  | |▼ 1個以上あれば万能ウィンドウに登録
@@ -473,7 +473,7 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf30[処理対象] = -1 + 0 
 ■Repeat Loop [ CSelf31[最大処理数] ] Times
  |■Set Variable: CSelf30[処理対象] += 1 + 0 
- |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "┣ Owned Weapon Count":CSelf30[処理対象]:"Quantity Owned" ] (8:-:0) 
+ |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "┣ Owned Weapons":CSelf30[処理対象]:"Owned Quantity" ] (8:-:0) 
  |■Condition (Number):   [1] CSelf10[一時変数A] >=  1  
  |-◇Condition:  [1]  [ CSelf10[一時変数A] >= 1   ] Case↓
  | |▼ 1個以上あれば万能ウィンドウに登録
@@ -534,7 +534,7 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf30[処理対象] = -1 + 0 
 ■Repeat Loop [ CSelf31[最大処理数] ] Times
  |■Set Variable: CSelf30[処理対象] += 1 + 0 
- |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "┗ Owned Armor Count":CSelf30[処理対象]:"Quantity Owned" ] (9:-:0) 
+ |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "┗ Owned Armors":CSelf30[処理対象]:"Owned Quantity" ] (9:-:0) 
  |■Condition (Number):   [1] CSelf10[一時変数A] >=  1  
  |-◇Condition:  [1]  [ CSelf10[一時変数A] >= 1   ] Case↓
  | |▼ 1個以上あれば万能ウィンドウに登録

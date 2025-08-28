@@ -220,15 +220,15 @@ WoditorEvCOMMAND_START
 [111][10,0]<3>(3,1600027,19999,3,1600027,29999,3,1600027,39999,3)()
 [401][1,0]<3>(1)()
 [121][4,0]<4>(1600015,1600027,10000,16384)()
-[250][5,4]<4>(7,1600015,0,331776,1600039)("","┣ Owned Item Count","","Quantity Owned")
+[250][5,4]<4>(7,1600015,0,331776,1600039)("","┣ Owned Items","","Owned Quantity")
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
 [121][4,0]<4>(1600015,1600027,20000,16384)()
-[250][5,4]<4>(8,1600015,0,331776,1600039)("","┣ Owned Weapon Count","","Quantity Owned")
+[250][5,4]<4>(8,1600015,0,331776,1600039)("","┣ Owned Weapons","","Owned Quantity")
 [0][0,0]<4>()()
 [401][1,0]<3>(3)()
 [121][4,0]<4>(1600015,1600027,30000,16384)()
-[250][5,4]<4>(9,1600015,0,331776,1600039)("","┗ Owned Armor Count","","Quantity Owned")
+[250][5,4]<4>(9,1600015,0,331776,1600039)("","┗ Owned Armors","","Owned Quantity")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [250][5,4]<3>(19,1600022,7,327680,1600039)("","Universal Window Items","","[Option] Spare Number A")
@@ -299,21 +299,21 @@ WoditorEvCOMMAND_START
 [121][4,0]<4>(1600027,10000,1600021,0)()
 [250][5,4]<4>(2,1600021,0,332288,1600009)("","Items","","Item Name")
 [250][5,4]<4>(2,1600021,19,332288,1600025)("","Items","","Sell Price [0=Can't Sell]")
-[250][5,4]<4>(7,1600021,0,331776,1600039)("","┣ Owned Item Count","","Quantity Owned")
+[250][5,4]<4>(7,1600021,0,331776,1600039)("","┣ Owned Items","","Owned Quantity")
 [250][5,4]<4>(2,1600021,1,332288,1600008)("","Items","","Description [Up to 2 Lines]")
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
 [121][4,0]<4>(1600027,20000,1600021,0)()
 [250][5,4]<4>(3,1600021,0,332288,1600009)("","Weapons","","Weapon Name")
 [250][5,4]<4>(3,1600021,19,332288,1600025)("","Weapons","","Sell Price [0=Can't Sell]")
-[250][5,4]<4>(8,1600021,0,331776,1600039)("","┣ Owned Weapon Count","","Quantity Owned")
+[250][5,4]<4>(8,1600021,0,331776,1600039)("","┣ Owned Weapons","","Owned Quantity")
 [250][5,4]<4>(3,1600021,1,332288,1600008)("","Weapons","","Description [Up to 2 Lines]")
 [0][0,0]<4>()()
 [401][1,0]<3>(3)()
 [121][4,0]<4>(1600027,30000,1600021,0)()
 [250][5,4]<4>(4,1600021,0,332288,1600009)("","Armors","","Armor Name")
 [250][5,4]<4>(4,1600021,19,332288,1600025)("","Armors","","Sell Price [0=Can't Sell]")
-[250][5,4]<4>(9,1600021,0,331776,1600039)("","┗ Owned Armor Count","","Quantity Owned")
+[250][5,4]<4>(9,1600021,0,331776,1600039)("","┗ Owned Armors","","Owned Quantity")
 [250][5,4]<4>(4,1600021,1,332288,1600008)("","Armors","","Description [Up to 2 Lines]")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
@@ -526,15 +526,15 @@ WoditorEvCOMMAND_END
  | | |■Condition (Number):   [1] CSelf27[コード] <=  19999  /  [2] CSelf27[コード] <=  29999  /  [3] CSelf27[コード] <=  39999  
  | | |-◇Condition:  [1]  [ CSelf27[コード] <= 19999   ] Case↓
  | | | |■Set Variable: CSelf15[処理番号] = CSelf27[コード] % 10000 
- | | | |■Load DB(Var):  CSelf39[一時個数] = VarDB[ "┣ Owned Item Count":CSelf15[処理番号]:"Quantity Owned" ] (7:-:0) 
+ | | | |■Load DB(Var):  CSelf39[一時個数] = VarDB[ "┣ Owned Items":CSelf15[処理番号]:"Owned Quantity" ] (7:-:0) 
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf27[コード] <= 29999   ] Case↓
  | | | |■Set Variable: CSelf15[処理番号] = CSelf27[コード] % 20000 
- | | | |■Load DB(Var):  CSelf39[一時個数] = VarDB[ "┣ Owned Weapon Count":CSelf15[処理番号]:"Quantity Owned" ] (8:-:0) 
+ | | | |■Load DB(Var):  CSelf39[一時個数] = VarDB[ "┣ Owned Weapons":CSelf15[処理番号]:"Owned Quantity" ] (8:-:0) 
  | | | |■
  | | |-◇Condition:  [3]  [ CSelf27[コード] <= 39999   ] Case↓
  | | | |■Set Variable: CSelf15[処理番号] = CSelf27[コード] % 30000 
- | | | |■Load DB(Var):  CSelf39[一時個数] = VarDB[ "┗ Owned Armor Count":CSelf15[処理番号]:"Quantity Owned" ] (9:-:0) 
+ | | | |■Load DB(Var):  CSelf39[一時個数] = VarDB[ "┗ Owned Armors":CSelf15[処理番号]:"Owned Quantity" ] (9:-:0) 
  | | | |■
  | | |◇End◇
  | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"[Option] Spare Number A" ] (19:-:7) =  CSelf39[一時個数]
@@ -605,21 +605,21 @@ WoditorEvCOMMAND_END
  | | | |■Set Variable: CSelf27[コード] = 10000 + CSelf21[格納元番号] 
  | | | |■Load DB(User):  CSelf9[アイテム名] = UserDB[ "Items":CSelf21[格納元番号]:"Item Name" ] (2:-:0) 
  | | | |■Load DB(User):  CSelf25[価格] = UserDB[ "Items":CSelf21[格納元番号]:"Sell Price [0=Can't Sell]" ] (2:-:19) 
- | | | |■Load DB(Var):  CSelf39[一時個数] = VarDB[ "┣ Owned Item Count":CSelf21[格納元番号]:"Quantity Owned" ] (7:-:0) 
+ | | | |■Load DB(Var):  CSelf39[一時個数] = VarDB[ "┣ Owned Items":CSelf21[格納元番号]:"Owned Quantity" ] (7:-:0) 
  | | | |■Load DB(User):  CSelf8[説明文] = UserDB[ "Items":CSelf21[格納元番号]:"Description [Up to 2 Lines]" ] (2:-:1) 
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf30[ｱｲﾃﾑ(0)武器(1)防具(2)] == 1   ] Case↓
  | | | |■Set Variable: CSelf27[コード] = 20000 + CSelf21[格納元番号] 
  | | | |■Load DB(User):  CSelf9[アイテム名] = UserDB[ "Weapons":CSelf21[格納元番号]:"Weapon Name" ] (3:-:0) 
  | | | |■Load DB(User):  CSelf25[価格] = UserDB[ "Weapons":CSelf21[格納元番号]:"Sell Price [0=Can't Sell]" ] (3:-:17) 
- | | | |■Load DB(Var):  CSelf39[一時個数] = VarDB[ "┣ Owned Weapon Count":CSelf21[格納元番号]:"Quantity Owned" ] (8:-:0) 
+ | | | |■Load DB(Var):  CSelf39[一時個数] = VarDB[ "┣ Owned Weapons":CSelf21[格納元番号]:"Owned Quantity" ] (8:-:0) 
  | | | |■Load DB(User):  CSelf8[説明文] = UserDB[ "Weapons":CSelf21[格納元番号]:"Description [Up to 2 Lines]" ] (3:-:1) 
  | | | |■
  | | |-◇Condition:  [3]  [ CSelf30[ｱｲﾃﾑ(0)武器(1)防具(2)] == 2   ] Case↓
  | | | |■Set Variable: CSelf27[コード] = 30000 + CSelf21[格納元番号] 
  | | | |■Load DB(User):  CSelf9[アイテム名] = UserDB[ "Armors":CSelf21[格納元番号]:"Armor Name" ] (4:-:0) 
  | | | |■Load DB(User):  CSelf25[価格] = UserDB[ "Armors":CSelf21[格納元番号]:"Sell Price [0=Can't Sell]" ] (4:-:18) 
- | | | |■Load DB(Var):  CSelf39[一時個数] = VarDB[ "┗ Owned Armor Count":CSelf21[格納元番号]:"Quantity Owned" ] (9:-:0) 
+ | | | |■Load DB(Var):  CSelf39[一時個数] = VarDB[ "┗ Owned Armors":CSelf21[格納元番号]:"Owned Quantity" ] (9:-:0) 
  | | | |■Load DB(User):  CSelf8[説明文] = UserDB[ "Armors":CSelf21[格納元番号]:"Description [Up to 2 Lines]" ] (4:-:1) 
  | | | |■
  | | |◇End◇

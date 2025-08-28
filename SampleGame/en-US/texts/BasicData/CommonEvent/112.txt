@@ -214,10 +214,10 @@ WoditorEvCOMMAND_START
 [121][4,0]<1>(1600038,1,0,256)()
 [111][7,0]<1>(2,1600038,0,2,1600038,1,2)()
 [401][1,0]<1>(1)()
-[250][5,4]<2>(5,-1,0,69632,1600029)("","┣ Owned Weapon Count","","")
+[250][5,4]<2>(5,-1,0,69632,1600029)("","┣ Owned Weapons","","")
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[250][5,4]<2>(6,-1,0,69632,1600029)("","┗ Owned Armor Count","","")
+[250][5,4]<2>(6,-1,0,69632,1600029)("","┗ Owned Armors","","")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [121][4,0]<1>(1600030,-1,0,0)()
@@ -225,10 +225,10 @@ WoditorEvCOMMAND_START
 [121][4,0]<2>(1600030,1,0,256)()
 [111][7,0]<2>(2,1600038,0,2,1600038,1,2)()
 [401][1,0]<2>(1)()
-[250][5,4]<3>(5,1600030,0,331776,1600034)("","┣ Owned Weapon Count","","Quantity Owned")
+[250][5,4]<3>(5,1600030,0,331776,1600034)("","┣ Owned Weapons","","Owned Quantity")
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
-[250][5,4]<3>(6,1600030,0,331776,1600034)("","┗ Owned Armor Count","","Quantity Owned")
+[250][5,4]<3>(6,1600030,0,331776,1600034)("","┗ Owned Armors","","Owned Quantity")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [103][0,1]<2>()("所持個数が1以上なら判定")
@@ -431,10 +431,10 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf38[武器＝０　防具＝１] += 1 + 0 
  |■Condition (Number):   [1] CSelf38[武器＝０　防具＝１] ==  0  /  [2] CSelf38[武器＝０　防具＝１] ==  1  
  |-◇Condition:  [1]  [ CSelf38[武器＝０　防具＝１] == 0   ] Case↓
- | |■Load DB(Var):  CSelf29[ループ実行回数] = VarDB[Type "┣ Owned Weapon Count"(8)'s Data Count]
+ | |■Load DB(Var):  CSelf29[ループ実行回数] = VarDB[Type "┣ Owned Weapons"(8)'s Data Count]
  | |■
  |-◇Condition:  [2]  [ CSelf38[武器＝０　防具＝１] == 1   ] Case↓
- | |■Load DB(Var):  CSelf29[ループ実行回数] = VarDB[Type "┗ Owned Armor Count"(9)'s Data Count]
+ | |■Load DB(Var):  CSelf29[ループ実行回数] = VarDB[Type "┗ Owned Armors"(9)'s Data Count]
  | |■
  |◇End◇
  |■Set Variable: CSelf30[DB読み取り位置] = -1 + 0 
@@ -442,10 +442,10 @@ WoditorEvCOMMAND_END
  | |■Set Variable: CSelf30[DB読み取り位置] += 1 + 0 
  | |■Condition (Number):   [1] CSelf38[武器＝０　防具＝１] ==  0  /  [2] CSelf38[武器＝０　防具＝１] ==  1  
  | |-◇Condition:  [1]  [ CSelf38[武器＝０　防具＝１] == 0   ] Case↓
- | | |■Load DB(Var):  CSelf34[所持個数] = VarDB[ "┣ Owned Weapon Count":CSelf30[DB読み取り位置]:"Quantity Owned" ] (8:-:0) 
+ | | |■Load DB(Var):  CSelf34[所持個数] = VarDB[ "┣ Owned Weapons":CSelf30[DB読み取り位置]:"Owned Quantity" ] (8:-:0) 
  | | |■
  | |-◇Condition:  [2]  [ CSelf38[武器＝０　防具＝１] == 1   ] Case↓
- | | |■Load DB(Var):  CSelf34[所持個数] = VarDB[ "┗ Owned Armor Count":CSelf30[DB読み取り位置]:"Quantity Owned" ] (9:-:0) 
+ | | |■Load DB(Var):  CSelf34[所持個数] = VarDB[ "┗ Owned Armors":CSelf30[DB読み取り位置]:"Owned Quantity" ] (9:-:0) 
  | | |■
  | |◇End◇
  | |▼ 所持個数が1以上なら判定

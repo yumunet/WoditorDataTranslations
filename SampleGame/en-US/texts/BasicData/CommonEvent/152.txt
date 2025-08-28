@@ -254,7 +254,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<3>()("発動アイテムがなければ使用不能")
 [111][4,0]<3>(1,1600014,0,1)()
 [401][1,0]<3>(1)()
-[250][5,4]<4>(6,1600014,0,69632,1600012)("","┣ Owned Item Count","","")
+[250][5,4]<4>(6,1600014,0,69632,1600012)("","┣ Owned Items","","")
 [103][0,1]<4>()("アイテムが0個以下の場合は使えない")
 [111][4,0]<4>(1,1600012,0,3)()
 [401][1,0]<4>(1)()
@@ -367,7 +367,7 @@ WoditorEvCOMMAND_END
  | | |▼ 発動アイテムがなければ使用不能
  | | |■Condition (Number):   [1] CSelf14[発動アイテム番号] >=  0  
  | | |-◇Condition:  [1]  [ CSelf14[発動アイテム番号] >= 0   ] Case↓
- | | | |■Load DB(Var):  CSelf12[一時変数C] = VarDB[ "┣ Owned Item Count":CSelf14[発動アイテム番号]:0 ] (7:-:Quantity Owned) 
+ | | | |■Load DB(Var):  CSelf12[一時変数C] = VarDB[ "┣ Owned Items":CSelf14[発動アイテム番号]:0 ] (7:-:Owned Quantity) 
  | | | |▼ アイテムが0個以下の場合は使えない
  | | | |■Condition (Number):   [1] CSelf12[一時変数C] <=  0  
  | | | |-◇Condition:  [1]  [ CSelf12[一時変数C] <= 0   ] Case↓
