@@ -43,7 +43,7 @@ WoditorEvCOMMAND_START
 [210][4,0]<0>(500017,16777217,19,1100000)()
 [103][0,1]<0>()("If the player has 1 or more, transfer to Dungeon.")
 [103][0,1]<0>()("  (Even if an item can only be obtained once in the game,")
-[103][0,1]<0>()("  it's safer to use the condition “1 or more.”)")
+[103][0,1]<0>()("  it's safer to use the condition <dqrt>1 or more.<dqrt>)")
 [111][7,0]<0>(2,1100000,1,1,1100000,0,2)()
 [401][1,0]<0>(1)()
 [103][0,1]<1>()("Disable saving inside the dungeon.")
@@ -64,7 +64,7 @@ WoditorEvCOMMAND_END
 ■Call Event: This Ev Self0 = Common 17: [ ▲Get Item Quantity ] / 19:Dungeon Key
 ▼ If the player has 1 or more, transfer to Dungeon.
 ▼   (Even if an item can only be obtained once in the game,
-▼   it's safer to use the condition “1 or more.”)
+▼   it's safer to use the condition "1 or more.")
 ■Condition (Number):   [1] This Ev Self0 >=  1  /  [2] This Ev Self0 ==  0  
 -◇Condition:  [1]  [ This Ev Self0 >= 1   ] Case↓
  |▼ Disable saving inside the dungeon.
