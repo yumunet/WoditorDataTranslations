@@ -355,7 +355,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<0>(10,1600000,65,327680,1600056)("","×┏Battle Temp Status","","SP Change per Turn [Fixed]")
 [250][5,4]<0>(11,1600000,56,327680,1600057)("","×┏Battle Temp Status","","[Physical Dmg Taken Rate]")
 [250][5,4]<0>(11,1600000,57,327680,1600058)("","×┏Battle Temp Status","","[Magic Damage Taken Rate]")
-[250][5,4]<0>(11,1600000,4,327680,1600032)("","×┏Battle Temp Status","","Display Color Number")
+[250][5,4]<0>(11,1600000,4,327680,1600032)("","×┏Battle Temp Status","","Display Color ID")
 [250][5,4]<0>(11,1600000,58,327680,1600033)("","×┏Battle Temp Status","","[Target Level] -1:NotTargeted")
 [250][5,4]<0>(11,1600000,59,327680,1600030)("","×┏Battle Temp Status","","[Action Restriction]")
 [103][0,1]<0>()("もし戦闘不能なら、基本ｽﾃｰﾀｽ側も純粋に1にする")
@@ -572,7 +572,7 @@ WoditorEvCOMMAND_END
 ■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"SP Change per Turn [Fixed]" ] (10:-:65) =  CSelf56[SP自動回復固定値]
 ■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Physical Dmg Taken Rate]" ] (10:-:56) =  CSelf57[受ける攻撃力ダメージ率]
 ■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Magic Damage Taken Rate]" ] (10:-:57) =  CSelf58[受ける精神攻撃ダメージ率]
-■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Display Color Number" ] (10:-:4) =  CSelf32[色変更]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Display Color ID" ] (10:-:4) =  CSelf32[色変更]
 ■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Target Level] -1:NotTargeted" ] (10:-:58) =  CSelf33[狙われ度]
 ■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Action Restriction]" ] (10:-:59) =  CSelf30[行動制限番号]
 ▼ もし戦闘不能なら、基本ｽﾃｰﾀｽ側も純粋に1にする

@@ -361,7 +361,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<1>(10,1600002,0,331776,1600091)("","×┏Battle Temp Status","","[Temp] Post-Calc Max HP")
 [250][5,4]<1>(10,1600002,7,331776,1600092)("","×┏Battle Temp Status","","SP")
 [250][5,4]<1>(10,1600002,1,331776,1600093)("","×┏Battle Temp Status","","[Temp] Post-Calc Max SP")
-[250][5,4]<1>(11,1600002,4,331776,1600094)("","×┏Battle Temp Status","","Display Color Number")
+[250][5,4]<1>(11,1600002,4,331776,1600094)("","×┏Battle Temp Status","","Display Color ID")
 [103][0,1]<1>()(" ")
 [103][0,1]<1>()(" ")
 [179][1,0]<1>(1)()
@@ -1013,7 +1013,7 @@ WoditorEvCOMMAND_END
  |■Load DB(Var):  CSelf91[最大HP] = VarDB[ "×┏Battle Temp Status":CSelf2[戦闘スロット]:"[Temp] Post-Calc Max HP" ] (10:-:44) 
  |■Load DB(Var):  CSelf92[SP] = VarDB[ "×┏Battle Temp Status":CSelf2[戦闘スロット]:"SP" ] (10:-:7) 
  |■Load DB(Var):  CSelf93[最大SP] = VarDB[ "×┏Battle Temp Status":CSelf2[戦闘スロット]:"[Temp] Post-Calc Max SP" ] (10:-:46) 
- |■Load DB(Var):  CSelf94[色番号] = VarDB[ "×┏Battle Temp Status":CSelf2[戦闘スロット]:"Display Color Number" ] (10:-:4) 
+ |■Load DB(Var):  CSelf94[色番号] = VarDB[ "×┏Battle Temp Status":CSelf2[戦闘スロット]:"Display Color ID" ] (10:-:4) 
  |▼  
  |▼  
  |■Repeat Loop [ 1 ] Times

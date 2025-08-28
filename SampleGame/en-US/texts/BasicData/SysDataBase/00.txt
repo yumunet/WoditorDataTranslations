@@ -16,10 +16,10 @@ DATA_NUM=4
 TYPENAME=Map Settings
 ITEMNAME_NUM=8
 ITEMNAME0=Map Filename
-ITEMNAME1=BGM Number (From List)
-ITEMNAME2=BGS Number (From List)
+ITEMNAME1=BGM ID (From List)
+ITEMNAME2=BGS ID (From List)
 ITEMNAME3=Loop: 1 Horz/2 Vert/3 Both
-ITEMNAME4=Background Number
+ITEMNAME4=Background ID
 ITEMNAME5=BGM Filename [Number=-3]
 ITEMNAME6=BGS Filename [Number=-3]
 ITEMNAME7=BG Filename [Number=-3]
@@ -196,7 +196,7 @@ DEFAULT_VAL_5=0
 DEFAULT_VAL_6=0
 DEFAULT_VAL_7=0
 <<--CSV_START-->>
-"Map Filename","BGM Number (From List)","BGS Number (From List)","Loop: 1 Horz/2 Vert/3 Both","Background Number","BGM Filename [Number=-3]","BGS Filename [Number=-3]","BG Filename [Number=-3]",
+"Map Filename","BGM ID (From List)","BGS ID (From List)","Loop: 1 Horz/2 Vert/3 Both","Background ID","BGM Filename [Number=-3]","BGS Filename [Number=-3]","BG Filename [Number=-3]",
 "MapData/TitleMap.mps",-3,-1,0,-2,"BGM/Field01_Juno.mid
 100
 100
