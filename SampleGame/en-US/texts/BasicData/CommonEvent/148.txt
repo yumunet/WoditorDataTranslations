@@ -255,7 +255,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [103][0,1]<2>()(" ")
-[250][5,4]<2>(8,1600016,45,332288,1600008)("","States","","Face Image for State")
+[250][5,4]<2>(8,1600016,45,332288,1600008)("","States","","Portrait for State")
 [112][2,4]<2>(1,1600007)("","","","")
 [401][1,0]<2>(1)()
 [122][3,0]<3>(1600007,1,1600008)()
@@ -472,7 +472,7 @@ WoditorEvCOMMAND_END
  | | |■
  | |◇End◇
  | |▼  
- | |■Load DB(User):  CSelf8[一時文字列] = UserDB[ "States":CSelf16[注目状態位置]:"Face Image for State" ] (8:-:45) 
+ | |■Load DB(User):  CSelf8[一時文字列] = UserDB[ "States":CSelf16[注目状態位置]:"Portrait for State" ] (8:-:45) 
  | |■Condition (String):   [1] CSelf7[上書き顔グラ] is equal to ""
  | |-◇Condition:  [1] [ CSelf7[上書き顔グラ] is equal to "" ] Case↓
  | | |■Set String: CSelf7[上書き顔グラ] = CSelf8[一時文字列]

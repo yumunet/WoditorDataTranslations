@@ -69,7 +69,7 @@ ITEMNAME_NUM=59
 ITEMNAME0=Character Name
 ITEMNAME1=Title
 ITEMNAME2=Character Image
-ITEMNAME3=Face Image [Battle/Status]
+ITEMNAME3=Portrait [Battle/Status]
 ITEMNAME4=Level
 ITEMNAME5=Max Level
 ITEMNAME6=HP
@@ -294,8 +294,7 @@ CHOICE_NAME_2_NUM=1
 CHOICE_NAME_2_0=CharaChip
 CHOICE_NAME_3_NUM=1
 CHOICE_NAME_3_0=Picture
-CHOICE_NAME_4_NUM=1
-CHOICE_NAME_4_0=Face
+CHOICE_NAME_4_NUM=0
 CHOICE_NAME_5_NUM=0
 CHOICE_NAME_6_NUM=0
 CHOICE_NAME_7_NUM=0
@@ -451,8 +450,7 @@ CHOICE_VAL_2_NUM=1
 CHOICE_VAL_2_0=0
 CHOICE_VAL_3_NUM=1
 CHOICE_VAL_3_0=0
-CHOICE_VAL_4_NUM=1
-CHOICE_VAL_4_0=0
+CHOICE_VAL_4_NUM=0
 CHOICE_VAL_5_NUM=0
 CHOICE_VAL_6_NUM=0
 CHOICE_VAL_7_NUM=0
@@ -662,7 +660,7 @@ DEFAULT_VAL_56=110
 DEFAULT_VAL_57=10
 DEFAULT_VAL_58=0
 <<--CSV_START-->>
-"Character Name","Title","Character Image","Face Image [Battle/Status]","Level","Max Level","HP","Max HP","SP","Max SP","Base Attack","Base Defense","Base Magic Attack","Base Magic Defense","Base Agility","Base Accuracy [%]","Base Evasion [%]","Base Critical Rate [%]","[Growth] Max HP Add /1Lv","[Growth] Max SP Add /1Lv","[Growth] Attack Add /1Lv","[Growth] Defense Add /1Lv","[Growth] Magic Atk Add /1Lv","[Growth] Magic Def Add /1Lv","[Growth] Agility Add /1Lv","[Growth] Accuracy Add /1Lv","[Growth] Evasion Add /1Lv","[Growth] Critical Rt Add /1Lv","Equipped Weapon","Equipped Armor 1","Equipped Armor 2","Equipped Armor 3","Equipped Armor 4","Equipped Armor 5","Equipped Armor 6","Equipped Armor 7","Equippable Type 1","Equippable Type 2","Equippable Type 3","Equippable Type 4","Equippable Type 5","Equippable Type 6","Equippable Type 7","Equippable Type 8","Equippable Type 9","Equippable Type 10","[Command 1]","[Command 2]","[Command 3]","[Command 4]","[Command 5]","[Command 6]","[Command 7]","[Command 8]","Current Level EXP","Current Level Required EXP","Required EXP Incr Rate [%]","Required EXP Incr[FixedValue]","Auto-Act with AI?",
+"Character Name","Title","Character Image","Portrait [Battle/Status]","Level","Max Level","HP","Max HP","SP","Max SP","Base Attack","Base Defense","Base Magic Attack","Base Magic Defense","Base Agility","Base Accuracy [%]","Base Evasion [%]","Base Critical Rate [%]","[Growth] Max HP Add /1Lv","[Growth] Max SP Add /1Lv","[Growth] Attack Add /1Lv","[Growth] Defense Add /1Lv","[Growth] Magic Atk Add /1Lv","[Growth] Magic Def Add /1Lv","[Growth] Agility Add /1Lv","[Growth] Accuracy Add /1Lv","[Growth] Evasion Add /1Lv","[Growth] Critical Rt Add /1Lv","Equipped Weapon","Equipped Armor 1","Equipped Armor 2","Equipped Armor 3","Equipped Armor 4","Equipped Armor 5","Equipped Armor 6","Equipped Armor 7","Equippable Type 1","Equippable Type 2","Equippable Type 3","Equippable Type 4","Equippable Type 5","Equippable Type 6","Equippable Type 7","Equippable Type 8","Equippable Type 9","Equippable Type 10","[Command 1]","[Command 2]","[Command 3]","[Command 4]","[Command 5]","[Command 6]","[Command 7]","[Command 8]","Current Level EXP","Current Level Required EXP","Required EXP Incr Rate [%]","Required EXP Incr[FixedValue]","Auto-Act with AI?",
 "The Hero","Hero","CharaChip/Chara_Hero3_USM.png","",1,99,50,50,20,20,2,1,1,1,2,100,0,5,4,2,2,1,1,1,2,0,0,0,2,1,3,-1,-1,-1,-1,-1,0,1,10,11,13,14,-1,-1,-1,-1,0,2,-1,-1,-1,-1,-1,1,0,50,110,10,0,
 "The Fighter","Warrior","CharaChip/Chara_Fighter2_USM.png","",1,99,70,70,10,10,22,7,5,5,6,100,0,3,5,1,4,1,0,0,1,0,0,0,3,0,3,-1,-1,-1,-1,-1,0,1,2,3,10,11,13,14,-1,-1,0,2,3,-1,-1,-1,-1,1,0,50,110,10,0,
 "The Witch","Magician","CharaChip/Chara_Witch1_USM.png","",1,99,40,40,50,50,6,3,25,26,8,100,0,3,2,4,1,0,4,4,1,0,0,0,5,-1,4,-1,-1,-1,-1,-1,0,6,10,12,-1,-1,-1,-1,-1,-1,0,2,-1,-1,-1,-1,-1,1,0,50,110,10,0,

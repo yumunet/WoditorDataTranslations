@@ -197,7 +197,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [250][5,4]<0>(0,1600001,0,331776,1600005)("","Allies","","Character Name")
-[250][5,4]<0>(0,1600001,3,331776,1600006)("","Allies","","Face Image [Battle/Status]")
+[250][5,4]<0>(0,1600001,3,331776,1600006)("","Allies","","Portrait [Battle/Status]")
 [250][5,4]<0>(0,1600001,5,331776,1600040)("","Allies","","HP")
 [250][5,4]<0>(0,1600001,7,331776,1600041)("","Allies","","SP")
 [250][5,4]<0>(0,1600001,6,331776,1600042)("","Allies","","Max HP")
@@ -456,7 +456,7 @@ WoditorEvCOMMAND_END
  |■
 ◇End◇
 ■Load DB(Var):  CSelf5[キャラ名] = VarDB[ "Allies":CSelf1[読込主人公ID]:"Character Name" ] (0:-:0) 
-■Load DB(Var):  CSelf6[グラフィック名] = VarDB[ "Allies":CSelf1[読込主人公ID]:"Face Image [Battle/Status]" ] (0:-:3) 
+■Load DB(Var):  CSelf6[グラフィック名] = VarDB[ "Allies":CSelf1[読込主人公ID]:"Portrait [Battle/Status]" ] (0:-:3) 
 ■Load DB(Var):  CSelf40[HP] = VarDB[ "Allies":CSelf1[読込主人公ID]:"HP" ] (0:-:6) 
 ■Load DB(Var):  CSelf41[SP] = VarDB[ "Allies":CSelf1[読込主人公ID]:"SP" ] (0:-:8) 
 ■Load DB(Var):  CSelf42[最大HP] = VarDB[ "Allies":CSelf1[読込主人公ID]:"Max HP" ] (0:-:7) 

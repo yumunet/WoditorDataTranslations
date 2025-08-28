@@ -66,8 +66,8 @@ ITEMNAME20=HP/SP After Battle
 ITEMNAME21=Fainted Members After Battle
 ITEMNAME22=Equippable Slots
 ITEMNAME23=When Increasing Stats...
-ITEMNAME24=Status Face Image Scale
-ITEMNAME25=Message Face Image Scale
+ITEMNAME24=Status Portrait Scale
+ITEMNAME25=Message Portrait Scale
 ITEMNAME26=[Battle] Basic Battle BGM
 ITEMNAME27=[Battle] Display Enemy Gauge
 ITEMNAME28=[Battle] Display Enemy HP
@@ -624,7 +624,7 @@ DEFAULT_VAL_32=100
 DEFAULT_VAL_33=125
 DEFAULT_VAL_34=50
 <<--CSV_START-->>
-"Maximum Item Quantity","Max HP/SP Cap","Stats Cap","Menu Command 1","Menu Command 2","Menu Command 3","Menu Command 4","Menu Command 5","Menu Command 6","Menu Command 7","Menu Command 8","■Special Menu A Name   ","┗ A: Call Common Event","■Special Menu B Name   ","┗ B: Call Common Event","■Special Menu C Name   ","┗ C: Call Common Event","■Special Menu D Name   ","┗ D: Call Common Event","States Display","HP/SP After Battle","Fainted Members After Battle","Equippable Slots","When Increasing Stats...","Status Face Image Scale","Message Face Image Scale","[Battle] Basic Battle BGM","[Battle] Display Enemy Gauge","[Battle] Display Enemy HP","[Btl]Enemy Flee Msg(Target...","[Battle] Event on Game Over","[Battle] Attack Multiplier","[Battle] Defense Multiplier","[Battle] Critical Hit Damage","[Battle] Critical Hit Resistance",
+"Maximum Item Quantity","Max HP/SP Cap","Stats Cap","Menu Command 1","Menu Command 2","Menu Command 3","Menu Command 4","Menu Command 5","Menu Command 6","Menu Command 7","Menu Command 8","■Special Menu A Name   ","┗ A: Call Common Event","■Special Menu B Name   ","┗ B: Call Common Event","■Special Menu C Name   ","┗ C: Call Common Event","■Special Menu D Name   ","┗ D: Call Common Event","States Display","HP/SP After Battle","Fainted Members After Battle","Equippable Slots","When Increasing Stats...","Status Portrait Scale","Message Portrait Scale","[Battle] Basic Battle BGM","[Battle] Display Enemy Gauge","[Battle] Display Enemy HP","[Btl]Enemy Flee Msg(Target...","[Battle] Event on Game Over","[Battle] Attack Multiplier","[Battle] Defense Multiplier","[Battle] Critical Hit Damage","[Battle] Critical Hit Resistance",
 99,999,999,10,1,2,3,5,4,0,0,"Talk",212,"",-1,"",-1,"",-1,1,0,1,5,0,0,0,"BGM/Battle01_Juno.mid",1,1," ran away!",213,100,50,200,100,<<!--DATANAME--!>>Basic System Settings,
 
 <<--CSV_END-->>

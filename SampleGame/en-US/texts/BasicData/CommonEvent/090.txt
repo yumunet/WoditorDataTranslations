@@ -374,7 +374,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<1>()("ここから各内部項目を表示（それぞれ座標シフトで移動させる）")
 [179][1,0]<1>(1)()
 [103][0,1]<2>()("顔グラフィック")
-[250][5,4]<2>(0,1600002,3,331776,1600007)("","Allies","","Face Image [Battle/Status]")
+[250][5,4]<2>(0,1600002,3,331776,1600007)("","Allies","","Portrait [Battle/Status]")
 [121][4,0]<2>(1600021,1600020,2,0)()
 [103][0,1]<2>()("顔の枠のサイズを計算")
 [121][4,0]<2>(1600057,48,1600089,8192)()
@@ -389,7 +389,7 @@ WoditorEvCOMMAND_START
 [112][2,4]<2>(17,270035463)("","","","")
 [401][1,0]<2>(1)()
 [103][0,1]<3>()("顔グラフィックファイルが指定されている場合だけ表示する")
-[250][5,4]<3>(19,0,25,332288,1600056)("","System Settings","","Status Face Image Scale")
+[250][5,4]<3>(19,0,25,332288,1600056)("","System Settings","","Status Portrait Scale")
 [111][7,0]<3>(2,1600056,0,2,1600056,1,1)()
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("顔の表示を、枠に合わせる場合")
@@ -952,7 +952,7 @@ WoditorEvCOMMAND_END
  |▼ ここから各内部項目を表示（それぞれ座標シフトで移動させる）
  |■Repeat Loop [ 1 ] Times
  | |▼ 顔グラフィック
- | |■Load DB(Var):  CSelf7[表示項目名] = VarDB[ "Allies":CSelf2[表示主人公ID]:"Face Image [Battle/Status]" ] (0:-:3) 
+ | |■Load DB(Var):  CSelf7[表示項目名] = VarDB[ "Allies":CSelf2[表示主人公ID]:"Portrait [Battle/Status]" ] (0:-:3) 
  | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 2 
  | |▼ 顔の枠のサイズを計算
  | |■Set Variable: CSelf57[顔サイズX] = 48 * CSelf89[座標倍率Y[x10]] 
@@ -967,7 +967,7 @@ WoditorEvCOMMAND_END
  | |■Condition (String):   [1] CSelf7[表示項目名] is not equal to ""
  | |-◇Condition:  [1] [ CSelf7[表示項目名] is not equal to "" ] Case↓
  | | |▼ 顔グラフィックファイルが指定されている場合だけ表示する
- | | |■Load DB(User):  CSelf56[顔表示倍率] = UserDB[ "System Settings":0:"Status Face Image Scale" ] (17:Basic System Settings:24) 
+ | | |■Load DB(User):  CSelf56[顔表示倍率] = UserDB[ "System Settings":0:"Status Portrait Scale" ] (17:Basic System Settings:24) 
  | | |■Condition (Number):   [1] CSelf56[顔表示倍率] ==  0  /  [2] CSelf56[顔表示倍率] >=  1  
  | | |-◇Condition:  [1]  [ CSelf56[顔表示倍率] == 0   ] Case↓
  | | | |▼ 顔の表示を、枠に合わせる場合

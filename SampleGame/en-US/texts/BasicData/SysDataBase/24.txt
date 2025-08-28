@@ -6,9 +6,9 @@ DATATYPE_0=2000
 NUMDATA_TYPE_NUM=0
 STRDATA_TYPE_NUM=1
 DATA_NUM=12
-TYPENAME=Face Images
+TYPENAME=Portraits
 ITEMNAME_NUM=1
-ITEMNAME0=Face Image Filename
+ITEMNAME0=Portrait Filename
 MEMO=
 ITEMTYPE_NUM=100
 ITEM_LOADTYPE_0=1
@@ -122,7 +122,7 @@ CHOICE_VAL_0_0=0
 DEFAULT_VAL_NUM=1
 DEFAULT_VAL_0=0
 <<--CSV_START-->>
-"Face Image Filename",
+"Portrait Filename",
 "",<<!--DATANAME--!>>No Window,
 "",<<!--DATANAME--!>>Window Only,
 "Picture/FaceGraphic_Edy.png",<<!--DATANAME--!>>Edy,

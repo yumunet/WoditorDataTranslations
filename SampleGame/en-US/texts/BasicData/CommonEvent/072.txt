@@ -201,7 +201,7 @@ WoditorEvCOMMAND_START
 [111][4,0]<0>(1,1600001,3,2)()
 [401][1,0]<0>(1)()
 [103][0,1]<1>()("顔グラフィック")
-[250][5,4]<1>(0,1600000,3,327680,1600005)("","Allies","","Face Image [Battle/Status]")
+[250][5,4]<1>(0,1600000,3,327680,1600005)("","Allies","","Portrait [Battle/Status]")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [0][0,0]<0>()()
@@ -234,7 +234,7 @@ WoditorEvCOMMAND_END
 ■Condition (Number):   [1] CSelf1[対象パラメータ] ==  3  
 -◇Condition:  [1]  [ CSelf1[対象パラメータ] == 3   ] Case↓
  |▼ 顔グラフィック
- |■Write to DB(Var): VarDB[ "Allies":CSelf0[主人公ID]:"Face Image [Battle/Status]" ] (0:-:3) =  CSelf5[入力文字列]
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[主人公ID]:"Portrait [Battle/Status]" ] (0:-:3) =  CSelf5[入力文字列]
  |■
 ◇End◇
 ■
