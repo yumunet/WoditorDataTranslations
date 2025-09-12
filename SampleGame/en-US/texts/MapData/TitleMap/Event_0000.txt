@@ -102,7 +102,7 @@ WoditorEvCOMMAND_START
 [179][1,0]<1>(1)()
 [103][0,1]<2>()("Below is the opening scene of the game. You can delete the below.")
 [290][7,0]<2>(2,10,0,0,160,120,200)()
-[103][0,1]<2>()("Turn the hero.")
+[103][0,1]<2>()("Turn the leader.")
 [201][1,0]<2>(-2)()(2,[22],[47,2],[22],[47,2],[22],[47,2],[22],[47,2],[22],[47,2],[22],[47,2],[22],[47,2],[22],[21,0,0])
 [202][0,0]<2>()()
 [180][1,0]<2>(7)()
@@ -196,7 +196,7 @@ WoditorEvCOMMAND_END
  |■Repeat Loop [ 1 ] Times
  | |▼ Below is the opening scene of the game. You can delete the below.
  | |■Effect Map: [Zoom] Center X 160 / Center Y 120 / 200%  [10] Frames
- | |▼ Turn the hero.
+ | |▼ Turn the leader.
  | |■Move Route: [Skip]  Leader / Turn Right / Wait 2 Frames / Turn Right / Wait 2 Frames / Turn Right / Wait 2 Frames / Turn Right / Wait 2 Frames / Turn Right / Wait 2 Frames / Turn Right / Wait 2 Frame...
  | |■Wait for Move Route
  | |■Wait: 7 Frames

@@ -43,7 +43,7 @@ OPTION_VAL_2=0
 COMMAND_NUM=218
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("Determine whether the hero is in pixel movement by checking the Self0 variable, and switch the choice string.")
+[103][0,1]<0>()("Determine whether the player is in pixel movement by checking the Self0 variable, and switch the choice string.")
 [111][7,0]<0>(2,1100000,0,2,1100000,1,2)()
 [401][1,0]<0>(1)()
 [103][0,1]<1>()("If Self0 is 0, pixel movement is off, so set the on choice.")
@@ -90,7 +90,7 @@ WoditorEvCOMMAND_START
 [101][0,1]<1>()("Do you want to hear about pixel movement?<\n>It's a long story! Get ready!")
 [180][1,0]<1>(4)()
 [101][0,1]<1>()("Pixel movement processing stops normal tile-based<\n>movement and moves you using only the<\n><dqrt>Pixel Movement<dqrt> effect!")
-[101][0,1]<1>()("If you use the <dqrt>Pixel Movement<dqrt> effect in a parallel<\n>process event, your hero can still bump into the map<\n>and characters, and it can even trigger touch events!")
+[101][0,1]<1>()("If you use the <dqrt>Pixel Movement<dqrt> effect in a parallel<\n>process event, your character can still bump into the<\n>map and characters, and it can even trigger touch<\n>events!")
 [101][0,1]<1>()("So, even if you switch from tile movement to pixel<\n>movement without a second thought, you can still<\n>progress the game with hardly any issues!")
 [101][0,1]<1>()("And even this sample game,<\n>you can clear it in the pixel movement mode!")
 [180][1,0]<1>(4)()
@@ -264,7 +264,7 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ Determine whether the hero is in pixel movement by checking the Self0 variable, and switch the choice string.
+▼ Determine whether the player is in pixel movement by checking the Self0 variable, and switch the choice string.
 ■Condition (Number):   [1] This Ev Self0 ==  0  /  [2] This Ev Self0 ==  1  
 -◇Condition:  [1]  [ This Ev Self0 == 0   ] Case↓
  |▼ If Self0 is 0, pixel movement is off, so set the on choice.
@@ -311,7 +311,7 @@ WoditorEvCOMMAND_END
  |■Show Message: Do you want to hear about pixel movement?\nIt's a long story! Get ready!
  |■Wait: 4 Frames
  |■Show Message: Pixel movement processing stops normal tile-based\nmovement and moves you using only the\n"Pixel Movement" effect!
- |■Show Message: If you use the "Pixel Movement" effect in a parallel\nprocess event, your hero can still bump into the map\nand characters, and it can even trigger touch events!
+ |■Show Message: If you use the "Pixel Movement" effect in a parallel\nprocess event, your character can still bump into the\nmap and characters, and it can even trigger touch\nevents!
  |■Show Message: So, even if you switch from tile movement to pixel\nmovement without a second thought, you can still\nprogress the game with hardly any issues!
  |■Show Message: And even this sample game,\nyou can clear it in the pixel movement mode!
  |■Wait: 4 Frames

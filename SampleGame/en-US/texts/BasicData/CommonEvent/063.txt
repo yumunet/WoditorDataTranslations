@@ -168,10 +168,10 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("  Displays the message window and portrait.")
-[103][0,1]<0>()("  This common event is always active, and when System Variable 0 (Portrait ID)")
+[103][0,1]<0>()("  This common event is always active, and when System Variable 0 (Portrait Number)")
 [103][0,1]<0>()("  changes, it displays or erases the message window and displays a new portrait.")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("  Reads <dqrt>System Variable 0 (Portrait ID)<dqrt>,")
+[103][0,1]<0>()("  Reads <dqrt>System Variable 0 (Portrait Number)<dqrt>,")
 [103][0,1]<0>()("  and displays the corresponding portrait.")
 [103][0,1]<0>()("  When Sys0 is 0, the message window is not displayed.")
 [103][0,1]<0>()("  When Sys0 is 1, only the message window is displayed.")
@@ -223,7 +223,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()(" ")
 [121][4,0]<0>(9000000,1,0,0)()
 [170][0,0]<0>()()
-[103][0,1]<1>()("If Portrait ID is -1 or lower, stand by for processing.")
+[103][0,1]<1>()("If Portrait Number is -1 or lower, stand by for processing.")
 [103][0,1]<1>()("Basically, it's set to -1 once processing is complete.")
 [111][4,0]<1>(1,9000000,-1,3)()
 [401][1,0]<1>(1)()
@@ -245,7 +245,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<3>(1600048,1600049,0,0)()
 [111][4,0]<3>(17,1600049,1,1)()
 [401][1,0]<3>(1)()
-[103][0,1]<4>()("If Portrait ID is 1 or higher, display a message window.")
+[103][0,1]<4>()("If Portrait Number is 1 or higher, display a message window.")
 [150][2,0]<4>(3,1600020)()
 [111][4,0]<4>(1,1600035,0,2)()
 [401][1,0]<4>(1)()
@@ -283,7 +283,7 @@ WoditorEvCOMMAND_START
 [150][6,0]<3>(16777218,1600021,5,0,0,1600022)()
 [111][4,0]<3>(1,1600049,2,1)()
 [401][1,0]<3>(1)()
-[103][0,1]<4>()("If Portrait ID is 2 or higher, display portrait.")
+[103][0,1]<4>()("If Portrait Number is 2 or higher, display portrait.")
 [250][5,4]<4>(24,1600049,0,332032,1600008)("","Portraits","","Portrait Filename")
 [112][2,4]<4>(1,270035464)("","","","")
 [401][1,0]<4>(1)()
@@ -361,7 +361,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<3>(1600048,-1,0,0)()
 [111][4,0]<3>(1,9000012,0,2)()
 [401][1,0]<3>(1)()
-[103][0,1]<4>()("Initialize Portrait ID only if the message is not displayed.")
+[103][0,1]<4>()("Initialize Portrait Number only if the message is not displayed.")
 [121][4,0]<4>(9000000,1,0,0)()
 [0][0,0]<4>()()
 [499][0,0]<3>()()
@@ -403,10 +403,10 @@ WoditorEvCOMMAND_END
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ [Process Overview]
 ▼   Displays the message window and portrait.
-▼   This common event is always active, and when System Variable 0 (Portrait ID)
+▼   This common event is always active, and when System Variable 0 (Portrait Number)
 ▼   changes, it displays or erases the message window and displays a new portrait.
 ▼  
-▼   Reads "System Variable 0 (Portrait ID)",
+▼   Reads "System Variable 0 (Portrait Number)",
 ▼   and displays the corresponding portrait.
 ▼   When Sys0 is 0, the message window is not displayed.
 ▼   When Sys0 is 1, only the message window is displayed.
@@ -458,7 +458,7 @@ WoditorEvCOMMAND_END
 ▼  
 ■Set Variable: Sys0:Portrait Number = 1 + 0 
 ■Loop Start
- |▼ If Portrait ID is -1 or lower, stand by for processing.
+ |▼ If Portrait Number is -1 or lower, stand by for processing.
  |▼ Basically, it's set to -1 once processing is complete.
  |■Condition (Number):   [1] Sys0:Portrait Number <=  -1  
  |-◇Condition:  [1]  [ Sys0:Portrait Number <= -1   ] Case↓
@@ -480,7 +480,7 @@ WoditorEvCOMMAND_END
  | | |■Set Variable: CSelf48[Previous Portrait ID] = CSelf49[Portrait ID] + 0 
  | | |■Condition (Number):   [1] CSelf49[Portrait ID] >=  1  
  | | |-◇Condition:  [1]  [ CSelf49[Portrait ID] >= 1   ] Case↓
- | | | |▼ If Portrait ID is 1 or higher, display a message window.
+ | | | |▼ If Portrait Number is 1 or higher, display a message window.
  | | | |■Picture [Reset Delay]: CSelf20[Base Picture ID] 
  | | | |■Condition (Number):   [1] CSelf35[Window Display Flag] ==  0  
  | | | |-◇Condition:  [1]  [ CSelf35[Window Display Flag] == 0   ] Case↓
@@ -518,7 +518,7 @@ WoditorEvCOMMAND_END
  | | |■Picture Erase: CSelf21[Temp Picture ID A] to CSelf22[Temp Picture ID B]  / 5(0) Frames
  | | |■Condition (Number):   [1] CSelf49[Portrait ID] >=  2  
  | | |-◇Condition:  [1]  [ CSelf49[Portrait ID] >= 2   ] Case↓
- | | | |▼ If Portrait ID is 2 or higher, display portrait.
+ | | | |▼ If Portrait Number is 2 or higher, display portrait.
  | | | |■Load DB(Sys):  CSelf8[Portrait File] = SysDB[ "Portraits":CSelf49[Portrait ID]:"Portrait Filename" ] (24:-:0) 
  | | | |■Condition (String):   [1] CSelf8[Portrait File] Is Not Equal to ""
  | | | |-◇Condition:  [1] [ CSelf8[Portrait File] Is Not Equal to "" ] Case↓
@@ -596,7 +596,7 @@ WoditorEvCOMMAND_END
  | | |■Set Variable: CSelf48[Previous Portrait ID] = -1 + 0 
  | | |■Condition (Number):   [1] Sys12:Showing Message? (1:Yes) ==  0  
  | | |-◇Condition:  [1]  [ Sys12:Showing Message? (1:Yes) == 0   ] Case↓
- | | | |▼ Initialize Portrait ID only if the message is not displayed.
+ | | | |▼ Initialize Portrait Number only if the message is not displayed.
  | | | |■Set Variable: Sys0:Portrait Number = 1 + 0 
  | | | |■
  | | |◇End◇
