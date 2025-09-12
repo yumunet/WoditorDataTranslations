@@ -87,7 +87,7 @@ WoditorEvCOMMAND_END
  |-◇Case: Choice [1] Give Tasty Bread                         ↓
  | |■Show Message: @3\nYuichi\n  Yaaay! Thanks!\n  *Munch, munch...*
  | |▼ Remove Tasty Bread.
- | |■Call Event: Common 0: [ ○ Change Items ] / 17:Tasty Bread / -1 / 1:Yes [Unit: ko]
+ | |■Call Event: Common 0: [ ○ Change Items ] / 17:Tasty Bread / -1 / 1:Yes
  | |▼ Add Yuichi to the party.
  | |■Call Event: Common 5: [ ○ Change Members ] / 0:Add Member / 14:Yuichi
  | |▼ By setting Self Variable 0 to 1 here, the condition is no longer met,
