@@ -293,7 +293,7 @@ WoditorEvCOMMAND_END
  |■Call Event [Name]: CSelf20[対象ID] = ["X[Bat]Get Ally ID From Slot"] <CommonEv 141>  / CSelf10[一時変数]
  |■Condition (Number):   [1] CSelf20[対象ID] <=  -1  
  |-◇Condition:  [1]  [ CSelf20[対象ID] <= -1   ] Case↓
- | |■Loop Start: Go to Loop Start
+ | |■Go to Loop Start
  | |■
  |◇End◇
  |■Repeat Loop [ 1 ] Times

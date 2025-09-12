@@ -46,8 +46,8 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:If you press Cancel, the menu will appear!\nTake a look at it!\n\n\f[10]* The Cancel button is Esc, Backspace, or X.
-■Show Message:Also, your goal here is to level up, gain more party\nmembers, and acquire the WOLF RPG Editor!
-■Show Message:The WOLF RPG Editor seems to be in the Dungeon.\nGood luck!
+■Show Message: If you press Cancel, the menu will appear!\nTake a look at it!\n\n\f[10]* The Cancel button is Esc, Backspace, or X.
+■Show Message: Also, your goal here is to level up, gain more party\nmembers, and acquire the WOLF RPG Editor!
+■Show Message: The WOLF RPG Editor seems to be in the Dungeon.\nGood luck!
 ■
 [COMMAND_TEXT_END]

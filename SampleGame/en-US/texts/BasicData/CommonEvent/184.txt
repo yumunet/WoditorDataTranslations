@@ -311,7 +311,7 @@ WoditorEvCOMMAND_END
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 2 
  |■Picture [Reset Delay]: CSelf20[基本ピクチャ番号] to CSelf21[一時ピクチャ番号] 
- |■Picture Erase: CSelf20[基本ピクチャ番号] to CSelf21[一時ピクチャ番号]  / 10(0)Frames
+ |■Picture Erase: CSelf20[基本ピクチャ番号] to CSelf21[一時ピクチャ番号]  / 10(0) Frames
  |■Exit Event
  |■
 ◇End◇
@@ -324,35 +324,35 @@ WoditorEvCOMMAND_END
  | |▼ メインウィンドウ部分表示
  | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 0 
  | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] Window(CSelf8[ウィンドウ画像ファイル]) Size[CSelf24[横サイズ],CSelf25[縦サイズ]] X:CSelf22[表示X] Y:CSelf23[表示Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 0% / Color R[100] G[100] B[100]
+ | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] Window (CSelf8[ウィンドウ画像ファイル]) Size [CSelf24[横サイズ],CSelf25[縦サイズ]] X:CSelf22[表示X] Y:CSelf23[表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 0% / Color R[100] G[100] B[100]
  | |■Repeat Loop [ 1 ] Times
  | | |▼ ここで表示時エフェクト（「移動」コマンドで実現している）
  | | |■Set Variable: CSelf41[一時項目表示X] = CSelf22[表示X] + 0 
  | | |■Set Variable: CSelf42[一時項目表示Y] = CSelf23[表示Y] + 0 
  | | |▼ 初期位置をシフト
  | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 0% / Color R[100] G[100] B[100]
+ | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 0% / Color R[100] G[100] B[100]
  | | |▼ 慣性移動
- | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf22[表示X] Y:CSelf23[表示Y] / 5(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf22[表示X] Y:CSelf23[表示Y] / 5(3)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf22[表示X] Y:CSelf23[表示Y] / 5(5)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf22[表示X] Y:CSelf23[表示Y] / 5(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf22[表示X] Y:CSelf23[表示Y] / 5(3) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf22[表示X] Y:CSelf23[表示Y] / 5(5) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | |■
  | |◇Loop End Point◇◇
  | |▼ 表示する文字列
  | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 1 
  | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] String[\f[\cself[19]]\c] X:CSelf22[表示X] Y:CSelf23[表示Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 0% / Color R[100] G[100] B[100]
+ | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] String [\f[\cself[19]]\c] X:CSelf22[表示X] Y:CSelf23[表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 0% / Color R[100] G[100] B[100]
  | |■Repeat Loop [ 1 ] Times
  | | |▼ ここで表示時エフェクト（「移動」コマンドで実現している）
  | | |■Set Variable: CSelf41[一時項目表示X] = CSelf22[表示X] + 0 
  | | |■Set Variable: CSelf42[一時項目表示Y] = CSelf23[表示Y] + 0 
  | | |▼ 初期位置をシフト
  | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 0% / Color R[100] G[100] B[100]
+ | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 0% / Color R[100] G[100] B[100]
  | | |▼ 慣性移動
- | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf22[表示X] Y:CSelf23[表示Y] / 5(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf22[表示X] Y:CSelf23[表示Y] / 5(3)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf22[表示X] Y:CSelf23[表示Y] / 5(5)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf22[表示X] Y:CSelf23[表示Y] / 5(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf22[表示X] Y:CSelf23[表示Y] / 5(3) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf22[表示X] Y:CSelf23[表示Y] / 5(5) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | |■
  | |◇Loop End Point◇◇
  | |■

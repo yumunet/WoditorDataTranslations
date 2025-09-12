@@ -384,21 +384,21 @@ WoditorEvCOMMAND_END
 ■Load DB(User):  CSelf19[カラー補正B] = UserDB[ "┗ Animations":CSelf0[アニメ番号]:"[Color] B Adjust (±100)" ] (1:-:13) 
 ■Set Variable: CSelf17[カラー補正R] to CSelf19[カラー補正B] += 100 + 0 
 ▼ 効果音も鳴らしておく
-■Condition (String):   [1] CSelf8[効果音] is not equal to ""
--◇Condition:  [1] [ CSelf8[効果音] is not equal to "" ] Case↓
+■Condition (String):   [1] CSelf8[効果音] Is Not Equal to ""
+-◇Condition:  [1] [ CSelf8[効果音] Is Not Equal to "" ] Case↓
  |■Set Variable: CSelf15[効果音ディレイ] Lower Bound= 0 + 0 
- |■Sound: SE File[\cself[8]] Vol 100% Freq 100% (0 Channel) Play / Delay: CSelf15[効果音ディレイ] Frames
+ |■Sound: SE File [\cself[8]] Vol 100% Freq 100% (0 Channel) Play / Delay: CSelf15[効果音ディレイ] Frames
  |■
 ◇End◇
 ■Picture [Reset Delay]: CSelf25[一時ピクチャ番号] 
 ■Condition (Number):   [1] CSelf13[描画モード（通常・加算）] ==  0  /  [2] CSelf13[描画モード（通常・加算）] ==  1  
 -◇Condition:  [1]  [ CSelf13[描画モード（通常・加算）] == 0   ] Case↓
  |▼ 通常描画の場合
- |■Picture Show: CSelf25[一時ピクチャ番号] [Center] File(CSelf9[アニメ画像ファイル]) X:CSelf20[表示元X] Y:CSelf21[表示元Y] / 0(0)Frames  / Pattern 1 / Opacity 0 / Normal  / Angle 0 / Zoom CSelf14[拡大率]% / Color R[CSelf17[カラー補正R]] G[CSelf18[カラー補正G]] B[CSelf19[カラー補正B]]
+ |■Picture Show: CSelf25[一時ピクチャ番号] [Center] File (CSelf9[アニメ画像ファイル]) X:CSelf20[表示元X] Y:CSelf21[表示元Y] / 0(0) Frames  / Pattern 1 / Opacity 0 / Normal  / Angle 0 / Zoom CSelf14[拡大率]% / Color R[CSelf17[カラー補正R]] G[CSelf18[カラー補正G]] B[CSelf19[カラー補正B]]
  |■
 -◇Condition:  [2]  [ CSelf13[描画モード（通常・加算）] == 1   ] Case↓
  |▼ 加算描画の場合
- |■Picture Show: CSelf25[一時ピクチャ番号] [Center] File(CSelf9[アニメ画像ファイル]) X:CSelf20[表示元X] Y:CSelf21[表示元Y] / 0(0)Frames  / Pattern 1 / Opacity 0 / Add  / Angle 0 / Zoom CSelf14[拡大率]% / Color R[CSelf17[カラー補正R]] G[CSelf18[カラー補正G]] B[CSelf19[カラー補正B]]
+ |■Picture Show: CSelf25[一時ピクチャ番号] [Center] File (CSelf9[アニメ画像ファイル]) X:CSelf20[表示元X] Y:CSelf21[表示元Y] / 0(0) Frames  / Pattern 1 / Opacity 0 / Add  / Angle 0 / Zoom CSelf14[拡大率]% / Color R[CSelf17[カラー補正R]] G[CSelf18[カラー補正G]] B[CSelf19[カラー補正B]]
  |■
 ◇End◇
 ▼  
@@ -411,12 +411,12 @@ WoditorEvCOMMAND_END
  | |■Break Loop
  | |■
  |◇End◇
- |■Picture Move: CSelf25[一時ピクチャ番号]  X:CSelf20[表示元X] Y:CSelf21[表示元Y] / 0(CSelf31[ディレイフレーム])Frames  / Pattern CSelf30[現在アニメパターン] / Opacity 255 / Blend Mode: Same   / Angle 0 / Zoom Same / Color Same
+ |■Picture Move: CSelf25[一時ピクチャ番号]  X:CSelf20[表示元X] Y:CSelf21[表示元Y] / 0(CSelf31[ディレイフレーム]) Frames  / Pattern CSelf30[現在アニメパターン] / Opacity 255 / Blend Mode: Same   / Angle 0 / Zoom Same / Color Same
  |■Load DB(User):  CSelf31[ディレイフレーム] += UserDB[ "┗ Animations":CSelf0[アニメ番号]:"1 Pattern Wait [Frames]" ] (1:-:4) 
  |■
 ◇Loop End Point◇◇
 ■Load DB(User):  CSelf31[ディレイフレーム] += UserDB[ "┗ Animations":CSelf0[アニメ番号]:"1 Pattern Wait [Frames]" ] (1:-:4) 
-■Picture Erase: CSelf25[一時ピクチャ番号]  / 1(CSelf31[ディレイフレーム])Frames
+■Picture Erase: CSelf25[一時ピクチャ番号]  / 1(CSelf31[ディレイフレーム]) Frames
 ■Load DB(User):  CSelf15[効果音ディレイ] = UserDB[ "┗ Animations":CSelf0[アニメ番号]:"Damage Display Wait [Frames" ] (1:-:8) 
 ■Set Variable: CSelf15[効果音ディレイ] Lower Bound= 1 + 0 
 ■Set Variable: CSelf15[効果音ディレイ] += 2 + 0 

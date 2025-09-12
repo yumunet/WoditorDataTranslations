@@ -103,37 +103,37 @@ WoditorEvCOMMAND_END
 ▼  
 ■Condition (Number):   [1] This Ev Self1 ==  0  /  [2] This Ev Self1 >=  1  
 -◇Condition:  [1]  [ This Ev Self1 == 0   ] Case↓
- |■Show Message:@4\nWolfarl\n  It's a little too soon to leave.
+ |■Show Message: @4\nWolfarl\n  It's a little too soon to leave.
  |■
 -◇Condition:  [2]  [ This Ev Self1 >= 1   ] Case↓
- |■Show Message:@3\nYuichi\n  Hey, when we get home, let's make\n  something with that WOLF RPG Editor!
- |■Show Message:@2\nP. G. Edy\n  Yeah! Let's get going soon!
- |■Show Choice:/ [1] Leave (Ending) / [2] Don't leave yet 
+ |■Show Message: @3\nYuichi\n  Hey, when we get home, let's make\n  something with that WOLF RPG Editor!
+ |■Show Message: @2\nP. G. Edy\n  Yeah! Let's get going soon!
+ |■Show Choice: / [1] Leave (Ending) / [2] Don't leave yet 
  |-◇Case: Choice [1] Leave (Ending)                           ↓
- | |■Show Message:@4\nWolfarl\n  And thank you in front of the screen\n  for playing, too!
- | |■Show Message:Wolfarl\n  I'll be glad if playing this made you want\n  to tinker with WOLF RPG Editor a little!
- | |■Show Message:Wolfarl\n  Well, I hope we meet again!\n  Have a fun time making games!
+ | |■Show Message: @4\nWolfarl\n  And thank you in front of the screen\n  for playing, too!
+ | |■Show Message: Wolfarl\n  I'll be glad if playing this made you want\n  to tinker with WOLF RPG Editor a little!
+ | |■Show Message: Wolfarl\n  Well, I hope we meet again!\n  Have a fun time making games!
  | |■Sound: BGM Stop  / Fade Time: 10 Frames
  | |■Adjust Color:  R30 G30 B50 / 40 Frames
  | |■Wait: 30 Frames
  | |▼ Start end credits here.
- | |■Sound: BGM1[End Credits] Play / Fade Time: 10 Frames
- | |■Picture Show: 1 [Top-Center] String[<C>Sample Game -] X:160 Y:295 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | |■Sound: BGM 1[End Credits] Play / Fade Time: 10 Frames
+ | |■Picture Show: 1 [Top-Center] String [<C>Sample Game -] X:160 Y:295 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | |■Set Variable: This Ev Self0 = 0 + 0 
  | |■Loop Start
  | | |■Wait: 4 Frames
  | | |▼ Move the picture 1 pixel every four frames.
- | | |■Key Input: This Event's Self1 /  [Normal Input]  Confirm(10) Cancel(11)
+ | | |■Key Input: This Event's Self1 /  [Normal Input]  Confirm (10) Cancel (11)
  | | |■Condition (Number):   [1] This Ev Self1 ==  0  /  [2] This Ev Self1 >=  10  
  | | |-◇Condition:  [1]  [ This Ev Self1 == 0   ] Case↓
  | | | |▼ When Confirm and Cancel are not pressed (key input is 0).
  | | | |■Set Variable: This Ev Self0 += 1 + 0 
- | | | |■Picture Move: 1  Relative X:0 Y:-1 / 4(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | | |■Picture Move: 1  Relative X:0 Y:-1 / 4(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | | |■
  | | |-◇Condition:  [2]  [ This Ev Self1 >= 10   ] Case↓
  | | | |▼ When Confirm (10) or Cancel (11) is pressed, move the picture quickly.
  | | | |■Set Variable: This Ev Self0 += 16 + 0 
- | | | |■Picture Move: 1  Relative X:0 Y:-16 / 4(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | | |■Picture Move: 1  Relative X:0 Y:-16 / 4(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | | |■
  | | |◇End◇
  | | |▼ After moving 1749 pixels (the length of the end credits), end.

@@ -315,7 +315,7 @@ WoditorEvCOMMAND_END
 ▼ イベント実行中はキーが押されても無視
 ■Condition (Number):   [1] Sys13:Event Active? (1:Yes) ==  0  
 -◇Condition:  [1]  [ Sys13:Event Active? (1:Yes) == 0   ] Case↓
- |■Key Input: CSelf13[キー入力状態] [Normal Input]  Cancel(11)
+ |■Key Input: CSelf13[キー入力状態] [Normal Input]  Cancel (11)
  |▼ 新しくキーが押された場合（コモン3と4が異なる値のとき）のみ処理する
  |■Set Variable: CSelf16[直前イベント実行中？] -= 1 + 0 
  |■Condition (Number):   [1] CSelf16[直前イベント実行中？] <=  0  
@@ -323,8 +323,8 @@ WoditorEvCOMMAND_END
  | |■Condition (Number):   [1] CSelf13[キー入力状態] !=  CSelf14[直前キー入力状態]  
  | |-◇Condition:  [1]  [ CSelf13[キー入力状態] != CSelf14[直前キー入力状態]   ] Case↓
  | | |▼ ■キャンセルキーが押されたらメニュー起動フラグをオンにする
- | | |■Condition (Number):   [1] Sys35:Hero Moving? (1:Yes) *Between Tiles? ==  0  
- | | |-◇Condition:  [1]  [ Sys35:Hero Moving? (1:Yes) *Between Tiles? == 0   ] Case↓
+ | | |■Condition (Number):   [1] Sys35:Leader Moving? (1:Yes) *Between Tiles? ==  0  
+ | | |-◇Condition:  [1]  [ Sys35:Leader Moving? (1:Yes) *Between Tiles? == 0   ] Case↓
  | | | |■Condition (Number):   [1] Sys13:Event Active? (1:Yes) ==  0  
  | | | |-◇Condition:  [1]  [ Sys13:Event Active? (1:Yes) == 0   ] Case↓
  | | | | |■Condition (Number):   [1] CSelf13[キー入力状態] ==  11  
@@ -334,11 +334,11 @@ WoditorEvCOMMAND_END
  | | | | | |▼ 「直前キー入力状態」を更新
  | | | | | |■Set Variable: CSelf14[直前キー入力状態] = CSelf13[キー入力状態] + 0 
  | | | | | |▼ 主人公の動きを1フレームだけ止める（止めないと、このままさらに一歩歩いてしまうことがある）
- | | | | | |■Enable/Disable Input:   Down-Key  Left-Key  Right-Key  Up-Key   [ Movement ×   Key Input ✓ ]
+ | | | | | |■Enable/Disable Input:   Down  Left  Right  Up   [ Movement ×   Key Input ✓ ]
  | | | | | |▼ 予約で起動すると、「一度だけ起動する自動イベント」として実行できる
  | | | | | |■Reserve Next Event: [+1 From This Common]  Common 127: [ X[Map]Start Menu ]
  | | | | | |■Wait: 1 Frames
- | | | | | |■Enable/Disable Input:   Down-Key  Left-Key  Right-Key  Up-Key   [ Movement ✓   Key Input ✓ ]
+ | | | | | |■Enable/Disable Input:   Down  Left  Right  Up   [ Movement ✓   Key Input ✓ ]
  | | | | | |■
  | | | | |◇End◇
  | | | | |■
@@ -362,18 +362,18 @@ WoditorEvCOMMAND_END
  | | | | | |▼ イベントが起動しておらず、移動中でもない場合にメニューを起動
  | | | | | |■Condition (Number):   [1] Sys13:Event Active? (1:Yes) ==  0  
  | | | | | |-◇Condition:  [1]  [ Sys13:Event Active? (1:Yes) == 0   ] Case↓
- | | | | | | |■Condition (Number):   [1] Sys35:Hero Moving? (1:Yes) *Between Tiles? ==  0  
- | | | | | | |-◇Condition:  [1]  [ Sys35:Hero Moving? (1:Yes) *Between Tiles? == 0   ] Case↓
+ | | | | | | |■Condition (Number):   [1] Sys35:Leader Moving? (1:Yes) *Between Tiles? ==  0  
+ | | | | | | |-◇Condition:  [1]  [ Sys35:Leader Moving? (1:Yes) *Between Tiles? == 0   ] Case↓
  | | | | | | | |▼ 起動に成功する場合は、ここへ来る
  | | | | | | | |▼  
  | | | | | | | |▼ 「直前キー入力状態」を更新
  | | | | | | | |■Set Variable: CSelf14[直前キー入力状態] = CSelf13[キー入力状態] + 0 
  | | | | | | | |▼ 主人公の動きを1フレームだけ止める（止めないと、このフレーム中に、さらに一歩歩いてしまうことがある）
- | | | | | | | |■Enable/Disable Input:   Down-Key  Left-Key  Right-Key  Up-Key   [ Movement ×   Key Input ✓ ]
+ | | | | | | | |■Enable/Disable Input:   Down  Left  Right  Up   [ Movement ×   Key Input ✓ ]
  | | | | | | | |▼ 予約で起動すると、「一度だけ起動する自動イベント」として実行できる
  | | | | | | | |■Reserve Next Event: [+1 From This Common]  Common 127: [ X[Map]Start Menu ]
  | | | | | | | |■Wait: 1 Frames
- | | | | | | | |■Enable/Disable Input:   Down-Key  Left-Key  Right-Key  Up-Key   [ Movement ✓   Key Input ✓ ]
+ | | | | | | | |■Enable/Disable Input:   Down  Left  Right  Up   [ Movement ✓   Key Input ✓ ]
  | | | | | | | |■Break Loop
  | | | | | | | |■
  | | | | | | |◇End◇
@@ -396,8 +396,8 @@ WoditorEvCOMMAND_END
  |▼ 「直前キー入力状態」を更新
  |■Set Variable: CSelf14[直前キー入力状態] = CSelf13[キー入力状態] + 0 
  |▼ 一歩でも動いていたら歩行定期処理を呼び出す
- |■Set Variable+: CSelf20[現在主人公座標X] = Hero 's X Pos (Precise) *Left of Character
- |■Set Variable+: CSelf21[現在主人公座標Y] = Hero 's Y Pos (Precise) *Top of Character
+ |■Set Variable+: CSelf20[現在主人公座標X] = Leader's X Position (Precise) *Left of Character
+ |■Set Variable+: CSelf21[現在主人公座標Y] = Leader's Y Position (Precise) *Top of Character
  |■Condition (Number):   [1] CSelf20[現在主人公座標X] !=  CSelf22[前回主人公座標X]  
  |-◇Condition:  [1]  [ CSelf20[現在主人公座標X] != CSelf22[前回主人公座標X]   ] Case↓
  | |■Call Event [Name]: ["X[Map]Update States"] <CommonEv 76> 
@@ -414,7 +414,7 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf23[前回主人公座標Y] = CSelf21[現在主人公座標Y] + 0 
  |■
 -◇Else
- |■Key Input: CSelf3 [Normal Input]  4-Dir. Cancel(11)
+ |■Key Input: CSelf3 [Normal Input]  4-Dir. Cancel (11)
  |■
 ◇End◇
 ▼ 直前のイベント実行中がオンなら10フレームはメニューを出さない

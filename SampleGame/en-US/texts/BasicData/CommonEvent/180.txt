@@ -240,7 +240,7 @@ WoditorEvCOMMAND_END
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 0 
  |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- |■Picture Erase: CSelf21[一時ピクチャ番号]  / 10(0)Frames
+ |■Picture Erase: CSelf21[一時ピクチャ番号]  / 10(0) Frames
  |■
 ◇End◇
 ■Condition (Number):   [1] CSelf0[モード] ==  0  
@@ -254,7 +254,7 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf11 = 24 * CSelf89[座標倍率Y[x10]] 
  |■Set Variable: CSelf10 += 32 + 0 
  |■Set Variable: CSelf11 += 24 + 0 
- |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] Window[<GRADY-779-000>] Size[CSelf10,CSelf11] X:0 Y:0 / 10(0)Frames  / Pattern 1 / Opacity 255 / Multiply  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] Window [<GRADY-779-000>] Size [CSelf10,CSelf11] X:0 Y:0 / 10(0) Frames  / Pattern 1 / Opacity 255 / Multiply  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  |■
 ◇End◇
 ■

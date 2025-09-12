@@ -817,7 +817,7 @@ WoditorEvCOMMAND_END
  |■Call Event [Name]: CSelf10[一時変数A] = ["X[Bat]Get Basic State"] <CommonEv 176>  / CSelf14[一時対象番号] / 3:狙われ度
  |■Condition (Number):   [1] CSelf10[一時変数A] <=  -1  
  |-◇Condition:  [1]  [ CSelf10[一時変数A] <= -1   ] Case↓
- | |■Loop Start: Go to Loop Start
+ | |■Go to Loop Start
  | |■
  |◇End◇
  |▼ HP・最大HPを取得
@@ -889,14 +889,14 @@ WoditorEvCOMMAND_END
  |■Call Event [Name]: CSelf10[一時変数A] = ["X[Bat]Get Basic State"] <CommonEv 176>  / CSelf14[一時対象番号] / 3:狙われ度
  |■Condition (Number):   [1] CSelf10[一時変数A] <=  -1  
  |-◇Condition:  [1]  [ CSelf10[一時変数A] <= -1   ] Case↓
- | |■Loop Start: Go to Loop Start
+ | |■Go to Loop Start
  | |■
  |◇End◇
  |▼ 相手が死んでる場合は無視
  |■Call Event [Name]: CSelf10[一時変数A] = ["X[Bat]Get Basic State"] <CommonEv 176>  / CSelf14[一時対象番号] / 0:戦闘不能状態
  |■Condition (Number):   [1] CSelf10[一時変数A] >=  1  
  |-◇Condition:  [1]  [ CSelf10[一時変数A] >= 1   ] Case↓
- | |■Loop Start: Go to Loop Start
+ | |■Go to Loop Start
  | |■
  |◇End◇
  |▼ HP・最大HPを取得
@@ -959,10 +959,10 @@ WoditorEvCOMMAND_END
  | |-◇Condition:  [1]  [ CSelf34[[AI]注目アクション番号] >= CSelf97[最大アクション設定可能数]   ] Case↓
  | | |■Condition (Number):   [1] CSelf27[味方(0)or敵(1)] ==  0  /  [2] CSelf27[味方(0)or敵(1)] ==  1  
  | | |-◇Condition:  [1]  [ CSelf27[味方(0)or敵(1)] == 0   ] Case↓
- | | | |■Show Message:\>【X[戦]AI実行】エラー\n　実行アクション番号が\cself[97]個を\n　超えてしまいました＞主人公ＩＤ \cself[28]\n　処理を中断します。
+ | | | |■Show Message: \>【X[戦]AI実行】エラー\n　実行アクション番号が\cself[97]個を\n　超えてしまいました＞主人公ＩＤ \cself[28]\n　処理を中断します。
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf27[味方(0)or敵(1)] == 1   ] Case↓
- | | | |■Show Message:\>【X[戦]AI実行】エラー\n　実行アクション番号が\cself[97]個を\n　超えてしまいました＞敵個体ﾃﾞｰﾀ \cself[28]\n　処理を中断します。
+ | | | |■Show Message: \>【X[戦]AI実行】エラー\n　実行アクション番号が\cself[97]個を\n　超えてしまいました＞敵個体ﾃﾞｰﾀ \cself[28]\n　処理を中断します。
  | | | |■
  | | |◇End◇
  | | |■Exit Event
@@ -1124,7 +1124,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [1]  [ CSelf37[[AI]行動内容] == -3   ] Case↓
  | | | |▼ 次の条件も判定
  | | | |■Set Variable: CSelf34[[AI]注目アクション番号] += 1 + 0 
- | | | |■Loop Start: Go to Loop Start
+ | | | |■Go to Loop Start
  | | | |■
  | | |◇End◇
  | | |■Condition (Number):   [1] CSelf37[[AI]行動内容] >=  0  /  [2] CSelf37[[AI]行動内容] ==  -1  /  [3] CSelf37[[AI]行動内容] ==  -2  
@@ -1293,12 +1293,12 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [1]  [ CSelf38[[AI]条件に該当しない場合] == 0   ] Case↓
  | | | |▼ 次アクションを判定
  | | | |■Set Variable: CSelf34[[AI]注目アクション番号] += 1 + 0 
- | | | |■Loop Start: Go to Loop Start
+ | | | |■Go to Loop Start
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf38[[AI]条件に該当しない場合] >= 1   ] Case↓
  | | | |▼ アクションX番にジャンプ
  | | | |■Set Variable: CSelf34[[AI]注目アクション番号] = CSelf38[[AI]条件に該当しない場合] - 1 
- | | | |■Loop Start: Go to Loop Start
+ | | | |■Go to Loop Start
  | | | |■
  | | |◇End◇
  | | |■

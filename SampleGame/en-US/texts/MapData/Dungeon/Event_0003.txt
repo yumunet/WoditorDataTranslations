@@ -80,14 +80,14 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:It reads...\n  "WOLF RPG Editor\n  Those who touch this will undergo a trial."
-■Show Choice:/ [1] Open the chest / [2] Don't open it yet 
+■Show Message: It reads...\n  "WOLF RPG Editor\n  Those who touch this will undergo a trial."
+■Show Choice: / [1] Open the chest / [2] Don't open it yet 
 -◇Case: Choice [1] Open the chest                           ↓
  |■Wait: 10 Frames
  |■Adjust Color:  R30 G30 B40 / 15 Frames
  |■Wait: 20 Frames
- |■Show Message:"Demonstrate with your strength that you are suited\nto use the WOLF RPG Editor!"
- |■Show Message:"See if you can defeat me within 10 turns!"
+ |■Show Message: "Demonstrate with your strength that you are suited\nto use the WOLF RPG Editor!"
+ |■Show Message: "See if you can defeat me within 10 turns!"
  |■Wait: 10 Frames
  |■Call Event: This Ev Self1 = Common 28: [ ◆Start Battle ] / 34:Boss [10 Turns] / 0:Can Flee / 1:Continue / 4:Boss BGM
  |■Condition (Number):   [1] This Ev Self1 ==  1  /  [2] This Ev Self1 <=  0  
@@ -95,21 +95,21 @@ WoditorEvCOMMAND_END
  | |▼ It's 1 if the player won the battle, so execute the commands below.
  | |■Adjust Color:  R30 G30 B40 / 15 Frames
  | |■Wait: 20 Frames
- | |■Show Message:"Congratulations. It is your victory."
- | |■Show Message:"Use this to make the world as you wish..."
+ | |■Show Message: "Congratulations. It is your victory."
+ | |■Show Message: "Use this to make the world as you wish..."
  | |■Adjust Color:  R100 G100 B100 / 15 Frames
  | |■Wait: 20 Frames
  | |■Set Variable: This Ev Self0 = 1 + 0 
- | |■Sound: SE File[SE/System_Get3_wolf.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
+ | |■Sound: SE File [SE/System_Get3_wolf.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
  | |■Call Event: Common 0: [ ○ Change Items ] / 20:WOLF RPG Editor / 1 / 0:No
- | |■Show Message:Wolfarl's party obtained WOLF RPG Editor!
- | |■Show Message:You can use this on the map! Give it a try!
+ | |■Show Message: Wolfarl's party obtained WOLF RPG Editor!
+ | |■Show Message: You can use this on the map! Give it a try!
  | |■
  |-◇Condition:  [2]  [ This Ev Self1 <= 0   ] Case↓
  | |▼ If the player lost or ran away.
  | |■Adjust Color:  R30 G30 B40 / 15 Frames
  | |■Wait: 20 Frames
- | |■Show Message:"Come take the challenge again..."
+ | |■Show Message: "Come take the challenge again..."
  | |■
  |◇End◇
  |■Adjust Color:  R100 G100 B100 / 15 Frames

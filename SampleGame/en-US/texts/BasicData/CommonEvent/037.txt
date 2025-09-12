@@ -249,8 +249,8 @@ WoditorEvCOMMAND_END
 ▼ Ver.2.24  Fixed a bug where the enemy appearance flag was not initialized.
 ■Set Variable: CSelf90[Enemy Appeared?] = 0 + 0 
 ▼ Add encounter value only when the hero's position differs from the previous one. If it's the same, exit instantly.
-■Set Variable+: CSelf20[Current X Position] = Hero 's X Pos (Precise) *Left of Character
-■Set Variable+: CSelf21[Current Y Position] = Hero 's Y Pos (Precise) *Top of Character
+■Set Variable+: CSelf20[Current X Position] = Leader's X Position (Precise) *Left of Character
+■Set Variable+: CSelf21[Current Y Position] = Leader's Y Position (Precise) *Top of Character
 ■Condition (Number):   [1] CSelf20[Current X Position] ==  CSelf50[Old X Position]  
 -◇Condition:  [1]  [ CSelf20[Current X Position] == CSelf50[Old X Position]   ] Case↓
  |■Condition (Number):   [1] CSelf21[Current Y Position] ==  CSelf51[Old Y Position]  

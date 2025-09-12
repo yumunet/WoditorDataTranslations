@@ -290,7 +290,7 @@ WoditorEvCOMMAND_END
  | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
  | |■Set String: CSelf9 = "自分以外の対象が存在しませんでした。"
  | |■Call Event [Name]: ["X[Bat]Display Warning Message"] <CommonEv 184>  / 0:初期表示 / CSelf9
- | |■Key Input: CSelf12[一時変数A] [Wait For Input <!>]  Confirm(10) Cancel(11)
+ | |■Key Input: CSelf12[一時変数A] [Wait for Input <!>]  Confirm (10) Cancel (11)
  | |■Call Event [Name]: ["X[Bat]Display Warning Message"] <CommonEv 184>  / -1:消去 / CSelf9
  | |■Set Variable: CSelf10[選択箇所] = -1 + 0 
  | |■Exit Event
@@ -314,7 +314,7 @@ WoditorEvCOMMAND_END
  |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 12:カーソルOFF（対象位置　位置-1なら全部） / -1 / -1
  |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 10:カーソルON（対象位置　位置-1なら全部） / CSelf10[選択箇所] / CSelf10[選択箇所]
  |■Wait: 1 Frames
- |■Key Input: CSelf20[キー入力１] [Wait For Input <!>]  4-Dir. Confirm(10) Cancel(11)
+ |■Key Input: CSelf20[キー入力１] [Wait for Input <!>]  4-Dir. Confirm (10) Cancel (11)
  |■Condition (Number):   [1] CSelf20[キー入力１] ==  10  /  [2] CSelf20[キー入力１] ==  11  /  [3] CSelf20[キー入力１] ==  2  
  |-◇Condition:  [1]  [ CSelf20[キー入力１] == 10   ] Case↓
  | |▼ 決定キー

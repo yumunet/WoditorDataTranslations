@@ -366,7 +366,7 @@ WoditorEvCOMMAND_END
  | | | | | |■Load DB(User):  CSelf13[一時変数C] = UserDB[ "Skills":CSelf34[技能コード]:"┗ Points Consumed  " ] (0:-:5) 
  | | | | | |■Condition (Number):   [1] CSelf12[一時変数B] <  CSelf13[一時変数C]  
  | | | | | |-◇Condition:  [1]  [ CSelf12[一時変数B] < CSelf13[一時変数C]   ] Case↓
- | | | | | | |■Loop Start: Go to Loop Start
+ | | | | | | |■Go to Loop Start
  | | | | | | |■
  | | | | | |◇End◇
  | | | | | |▼  

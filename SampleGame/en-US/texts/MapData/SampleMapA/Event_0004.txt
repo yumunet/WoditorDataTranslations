@@ -47,9 +47,9 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Move Route: [Skip]  This Event / Face Toward Hero / Wait 1 Frames / Jump - Right:[0] Down:[0]
+■Move Route: [Skip]  This Event / Face Toward Leader / Wait 1 Frames / Jump - Right:[0] Down:[0]
 ■Wait: 10 Frames
-■Show Message:Hey! This is my field, so don't you walk into it!
-■Show Message:By the way, I'm usin' "Range Extension" to make \nmy event trigger range bigger.\nWherever you come in, I will notice right away!
+■Show Message: Hey! This is my field, so don't you walk into it!
+■Show Message: By the way, I'm usin' "Range Extension" to make \nmy event trigger range bigger.\nWherever you come in, I will notice right away!
 ■
 [COMMAND_TEXT_END]

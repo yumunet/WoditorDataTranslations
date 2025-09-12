@@ -463,8 +463,8 @@ WoditorEvCOMMAND_END
  |-◇Condition:  [1]  [ CSelf17[技能コード] == -2   ] Case↓
  | |▼ 逃走
  | |■Load DB(User):  CSelf9[一時項目名] = UserDB[ "System Settings":0:"[Btl]Enemy Flee Msg(Target..." ] (17:Basic System Settings:29) 
- | |■Condition (String):   [1] CSelf9[一時項目名] is not equal to ""
- | |-◇Condition:  [1] [ CSelf9[一時項目名] is not equal to "" ] Case↓
+ | |■Condition (String):   [1] CSelf9[一時項目名] Is Not Equal to ""
+ | |-◇Condition:  [1] [ CSelf9[一時項目名] Is Not Equal to "" ] Case↓
  | | |▼ あれば逃走メッセージを表示
  | | |■Load DB(Var):  CSelf8[キャラ名] = VarDB[ "×┏Battle Temp Status":CSelf16[発動スロット]:"Character Name" ] (10:-:0) 
  | | |■Set String: CSelf9[一時項目名] = "\cself[8]\cself[9]"

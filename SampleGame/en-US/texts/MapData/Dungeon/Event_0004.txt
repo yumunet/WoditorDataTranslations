@@ -63,8 +63,8 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:Welcome!\nWhat're ya buyin'? Or will you s-a-v-e? Heehee ♪
-■Show Choice:/ [1] Shop / [2] Save 
+■Show Message: Welcome!\nWhat're ya buyin'? Or will you s-a-v-e? Heehee ♪
+■Show Choice: / [1] Shop / [2] Save 
 -◇Case: Choice [1] Shop                                     ↓
  |■Call Event: Common 33: [ [1] Shop: Initialize ]
  |■Call Event: Common 34: [ [2] Shop: Add Merchandise ] / 1:Item [A] / 14:Medicine Bottle / -1:<None> / -1:<None>

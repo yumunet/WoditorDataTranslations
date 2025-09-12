@@ -75,17 +75,17 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:@3\nYuichi\n  Hey there, I am Yuichi!
-■Show Message:Yuichi\n  I am real hungry!\n  If you bring me something to eat,\n  I wll join your party!
+■Show Message: @3\nYuichi\n  Hey there, I am Yuichi!
+■Show Message: Yuichi\n  I am real hungry!\n  If you bring me something to eat,\n  I wll join your party!
 ▼ Get the number of items "Tasty Bread."
 ■Call Event: This Ev Self1 = Common 17: [ ▲Get Item Quantity ] / 17:Tasty Bread
 ▼ If there's 1 or more, display the choices.
 ■Condition (Number):   [1] This Ev Self1 >=  1  
 -◇Condition:  [1]  [ This Ev Self1 >= 1   ] Case↓
  |▼ Display choices for whether to give bread.
- |■Show Choice:/ [1] Give Tasty Bread / [2] Some other time 
+ |■Show Choice: / [1] Give Tasty Bread / [2] Some other time 
  |-◇Case: Choice [1] Give Tasty Bread                         ↓
- | |■Show Message:@3\nYuichi\n  Yaaay! Thanks!\n  *Munch, munch...*
+ | |■Show Message: @3\nYuichi\n  Yaaay! Thanks!\n  *Munch, munch...*
  | |▼ Remove Tasty Bread.
  | |■Call Event: Common 0: [ ○ Change Items ] / 17:Tasty Bread / -1 / 1:Yes [Unit: ko]
  | |▼ Add Yuichi to the party.
@@ -94,11 +94,11 @@ WoditorEvCOMMAND_END
  | |▼ causing this event to disappear (become invisible).
  | |■Set Variable: This Ev Self0 = 1 + 0 
  | |▼ After it disappears, display the join message.
- | |■Sound: SE File[SE/System_Get2_wolf.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
- | |■Show Message:@3\nYuichi the chicken has joined the party!
+ | |■Sound: SE File [SE/System_Get2_wolf.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
+ | |■Show Message: @3\nYuichi the chicken has joined the party!
  | |■Wait: 10 Frames
- | |■Show Message:@3\nYuichi\n  Oh, when I am in battle,\n  I can act on my own!
- | |■Show Message:@4\nWolfarl\n  Mhm. AI-controlled, you mean.
+ | |■Show Message: @3\nYuichi\n  Oh, when I am in battle,\n  I can act on my own!
+ | |■Show Message: @4\nWolfarl\n  Mhm. AI-controlled, you mean.
  | |■
  |-◇Case: Choice [2] Some other time                          ↓
  | |■

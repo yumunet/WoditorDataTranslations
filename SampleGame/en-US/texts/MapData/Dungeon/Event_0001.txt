@@ -54,13 +54,13 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:This place uses Common Event 15 to disable saving,\nso you can't save.\nSay, do you wanna heal?
-■Show Choice:/ [1] Full recovery / [2] Do nothing 
+■Show Message: This place uses Common Event 15 to disable saving,\nso you can't save.\nSay, do you wanna heal?
+■Show Choice: / [1] Full recovery / [2] Do nothing 
 -◇Case: Choice [1] Full recovery                            ↓
- |■Show Message:Full recovery, got it!\nBeedle-deedle-dee!
+ |■Show Message: Full recovery, got it!\nBeedle-deedle-dee!
  |■Adjust Color: (Flash) R150 G200 B150 / 20 Frames
  |■Call Event: Common 4: [ ○ Recover or Damage ] / 7:Full Recovery / -1:Whole Party / 15
- |■Sound: SE File[SE/Effect_Healing1_panop.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
+ |■Sound: SE File [SE/Effect_Healing1_panop.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
  |■
 -◇Case: Choice [2] Do nothing                               ↓
  |■

@@ -618,7 +618,7 @@ WoditorEvCOMMAND_END
  | |■
  |◇Loop End Point◇◇
  |■Wait: 1 Frames
- |■Key Input: CSelf20[キー入力１] [Wait For Input <!>]  4-Dir. Confirm(10) Cancel(11) SubKey(12)
+ |■Key Input: CSelf20[キー入力１] [Wait for Input <!>]  4-Dir. Confirm (10) Cancel (11) Sub-Key (12)
  |■Condition (Number):   [1] CSelf20[キー入力１] ==  10  /  [2] CSelf20[キー入力１] ==  11  /  [3] CSelf20[キー入力１] ==  2  
  |-◇Condition:  [1]  [ CSelf20[キー入力１] == 10   ] Case↓
  | |▼ 決定キー　ここから右欄から装備を選ぶ処理
@@ -643,7 +643,7 @@ WoditorEvCOMMAND_END
  | | | |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / 0:初期表示 / Can't remove it.
  | | | |■Wait: 30 Frames
  | | | |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / -1:消去 / 
- | | | |■Loop Start: Go to Loop Start
+ | | | |■Go to Loop Start
  | | | |■
  | | |◇End◇
  | | |■
@@ -713,7 +713,7 @@ WoditorEvCOMMAND_END
  | | | | |■Condition (Number):   [1] CSelf23[専有箇所ビット] &  CSelf40[ビット判定[Ver2.28]]  
  | | | | |-◇Condition:  [1]  [ CSelf23[専有箇所ビット] & CSelf40[ビット判定[Ver2.28]]   ] Case↓
  | | | | | |▼ もしすでに外したとみなした場所と重複してたらスルー
- | | | | | |■Loop Start: Go to Loop Start
+ | | | | | |■Go to Loop Start
  | | | | | |■
  | | | | |◇End◇
  | | | | |■Call Event [Name]: CSelf26[専有箇所装備] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf35[キャラID] / CSelf25[一時変数E]
@@ -794,7 +794,7 @@ WoditorEvCOMMAND_END
  | | | | |■Call Event [Name]: ["X[Com]Wait(PressKeyToEnd)"] <CommonEv 59>  / 60 / 0
  | | | | |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / -1:消去 / 
  | | | | |●Label Jump [装備不可能時戻り場所] >>>>>>>>>>>>>>>>>>>>>>>>>
- | | | | |■Loop Start: Go to Loop Start
+ | | | | |■Go to Loop Start
  | | | | |■
  | | | |◇End◇
  | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 3:Equip Sound
@@ -884,7 +884,7 @@ WoditorEvCOMMAND_END
  | |■Call Event [Name]: ["X[Map]Create Equipment List"] <CommonEv 112>  / CSelf35[キャラID] / CSelf10[選択カーソル位置]
  | |■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / 0:Display / -1 / 2:Display at Bottom, Full Width / 0:None
  | |■Wait: 1 Frames
- | |■Loop Start: Go to Loop Start
+ | |■Go to Loop Start
  | |■
  |-◇Condition:  [2]  [ CSelf20[キー入力１] == 11   ] Case↓
  | |▼ キャンセルキー
@@ -968,7 +968,7 @@ WoditorEvCOMMAND_END
  | | | | | |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / 0:初期表示 / Can't remove it.
  | | | | | |■Wait: 30 Frames
  | | | | | |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / -1:消去 / 
- | | | | | |■Loop Start: Go to Loop Start
+ | | | | | |■Go to Loop Start
  | | | | | |■
  | | | | |◇End◇
  | | | | |■

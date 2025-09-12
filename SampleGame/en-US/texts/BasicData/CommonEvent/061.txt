@@ -191,13 +191,13 @@ WoditorEvCOMMAND_END
 ▼   A wait function that can be shortened by pressing a key.
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Set Variable: CSelf30[Divisor] = 1 + 0 
-■Key Input: CSelf10[Key] [Normal Input]  Confirm(10)
+■Key Input: CSelf10[Key] [Normal Input]  Confirm (10)
 ■Condition (Number):   [1] CSelf10[Key] !=  0  
 -◇Condition:  [1]  [ CSelf10[Key] != 0   ] Case↓
  |■Set Variable: CSelf30[Divisor] += 1 + 0 
  |■
 ◇End◇
-■Key Input: CSelf10[Key] [Normal Input]  SubKey(12)
+■Key Input: CSelf10[Key] [Normal Input]  Sub-Key (12)
 ■Condition (Number):   [1] CSelf10[Key] !=  0  
 -◇Condition:  [1]  [ CSelf10[Key] != 0   ] Case↓
  |■Set Variable: CSelf30[Divisor] += 2 + 0 

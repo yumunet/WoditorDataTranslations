@@ -586,7 +586,7 @@ WoditorEvCOMMAND_END
  | |■Condition (Number):   [1] CSelf43[キー連打] ==  1  
  | |-◇Condition:  [1]  [ CSelf43[キー連打] == 1   ] Case↓
  | | |■Loop Start
- | | | |■Key Input: CSelf44[入力キー] [Normal Input]  Confirm(10)
+ | | | |■Key Input: CSelf44[入力キー] [Normal Input]  Confirm (10)
  | | | |■Condition (Number):   [1] CSelf44[入力キー] ==  0  
  | | | |-◇Condition:  [1]  [ CSelf44[入力キー] == 0   ] Case↓
  | | | | |■Break Loop

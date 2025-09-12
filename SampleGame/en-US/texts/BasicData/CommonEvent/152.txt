@@ -311,7 +311,7 @@ WoditorEvCOMMAND_END
  | |-◇Condition:  [1]  [ CSelf10[一時変数A] == -3   ] Case↓
  | | |▼ 使用不能コマンドなので次へ
  | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1:Yes]" ] (19:-:2) =  0
- | | |■Loop Start: Go to Loop Start
+ | | |■Go to Loop Start
  | | |■
  | |-◇Condition:  [2]  [ CSelf10[一時変数A] <= -1   ] Case↓
  | | |■Load DB(User):  CSelf11[一時変数B] = UserDB[ "Battle Commands":CSelf19[コマンド番号]:"Condition to Disable" ] (6:-:3) 
@@ -322,7 +322,7 @@ WoditorEvCOMMAND_END
  | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1:Yes]" ] (19:-:2) =  0
  | | | |■
  | | |◇End◇
- | | |■Loop Start: Go to Loop Start
+ | | |■Go to Loop Start
  | | |■
  | |-◇Condition:  [3]  [ CSelf10[一時変数A] >= 0   ] Case↓
  | | |▼ 特殊効果発動の場合
@@ -334,7 +334,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [1]  [ CSelf11[一時変数B] == 1   ] Case↓
  | | | |▼ もし　封印フラグ×封印で選択不能　＝　１　なら使用できない
  | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1:Yes]" ] (19:-:2) =  0
- | | | |■Loop Start: Go to Loop Start
+ | | | |■Go to Loop Start
  | | | |■
  | | |◇End◇
  | | |■Load DB(User):  CSelf16[消費するものは？] = UserDB[ "Skills":CSelf10[一時変数A]:"┏ What to Consume?" ] (0:-:4) 
@@ -345,7 +345,7 @@ WoditorEvCOMMAND_END
  | | |■Condition (Number):   [1] CSelf13[使用可能シーン] ==  0  
  | | |-◇Condition:  [1]  [ CSelf13[使用可能シーン] == 0   ] Case↓
  | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1:Yes]" ] (19:-:2) =  0
- | | | |■Loop Start: Go to Loop Start
+ | | | |■Go to Loop Start
  | | | |■
  | | |◇End◇
  | | |▼ ポイントが足りなければ使用不能
@@ -361,7 +361,7 @@ WoditorEvCOMMAND_END
  | | |■Condition (Number):   [1] CSelf17[消費ポイント] >  CSelf15[残りポイント]  
  | | |-◇Condition:  [1]  [ CSelf17[消費ポイント] > CSelf15[残りポイント]   ] Case↓
  | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1:Yes]" ] (19:-:2) =  0
- | | | |■Loop Start: Go to Loop Start
+ | | | |■Go to Loop Start
  | | | |■
  | | |◇End◇
  | | |▼ 発動アイテムがなければ使用不能
@@ -372,7 +372,7 @@ WoditorEvCOMMAND_END
  | | | |■Condition (Number):   [1] CSelf12[一時変数C] <=  0  
  | | | |-◇Condition:  [1]  [ CSelf12[一時変数C] <= 0   ] Case↓
  | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1:Yes]" ] (19:-:2) =  0
- | | | | |■Loop Start: Go to Loop Start
+ | | | | |■Go to Loop Start
  | | | | |■
  | | | |◇End◇
  | | | |■

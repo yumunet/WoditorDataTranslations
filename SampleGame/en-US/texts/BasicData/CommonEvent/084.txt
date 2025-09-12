@@ -484,7 +484,7 @@ WoditorEvCOMMAND_END
  |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / CSelf19[買う(0)/売る(1)モード]
  |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / CSelf19[買う(0)/売る(1)モード] / 0
  |■Loop Start
- | |■Key Input: CSelf10[一時変数A] [Wait For Input <!>]  Left-Right(4,6) Confirm(10) Cancel(11)
+ | |■Key Input: CSelf10[一時変数A] [Wait for Input <!>]  Left/Right (4, 6) Confirm (10) Cancel (11)
  | |■Condition (Number):   [1] CSelf10[一時変数A] ==  4  /  [2] CSelf10[一時変数A] ==  6  
  | |-◇Condition:  [1]  [ CSelf10[一時変数A] == 4   ] Case↓
  | | |▼ 左キー

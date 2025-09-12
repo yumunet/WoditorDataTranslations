@@ -636,9 +636,9 @@ WoditorEvCOMMAND_END
  | | |▼ アイテム使用の場合　アイテム使用SEがあれば鳴らす
  | | |■Set Variable: CSelf10[一時変数A] = CSelf34[アニメ用技能番号] % 10000 
  | | |■Load DB(User):  CSelf9[一時文字列] = UserDB[ "Items":CSelf10[一時変数A]:"Sound Effect on Use" ] (2:-:20) 
- | | |■Condition (String):   [1] CSelf9[一時文字列] is not equal to ""
- | | |-◇Condition:  [1] [ CSelf9[一時文字列] is not equal to "" ] Case↓
- | | | |■Sound: SE File[\cself[9]] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
+ | | |■Condition (String):   [1] CSelf9[一時文字列] Is Not Equal to ""
+ | | |-◇Condition:  [1] [ CSelf9[一時文字列] Is Not Equal to "" ] Case↓
+ | | | |■Sound: SE File [\cself[9]] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
  | | | |■
  | | |◇End◇
  | | |■

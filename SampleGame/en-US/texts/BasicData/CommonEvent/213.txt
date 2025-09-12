@@ -169,7 +169,7 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:It's Game Over!
-■Show Message:But you can keep playing as it is, because this is a\nSample Game!\nHave fun!
+■Show Message: It's Game Over!
+■Show Message: But you can keep playing as it is, because this is a\nSample Game!\nHave fun!
 ■
 [COMMAND_TEXT_END]

@@ -251,7 +251,7 @@ WoditorEvCOMMAND_END
  | | |■Write to DB(Var): VarDB[ "Allies":CSelf0[主人公ID]:"Equipped Armor 7" ] (0:-:35) =  CSelf20[装備コード]
  | | |■
  | |-◇Else
- | | |■Show Message:\>「X[移]選択箇所装備コード設定」エラー：\n　装備箇所が8以下です。 　=>　\cself[1]\n　（※0～7で指定して下さい）
+ | | |■Show Message: \>「X[移]選択箇所装備コード設定」エラー：\n　装備箇所が8以下です。 　=>　\cself[1]\n　（※0～7で指定して下さい）
  | | |■Exit Event
  | | |■
  | |◇End◇

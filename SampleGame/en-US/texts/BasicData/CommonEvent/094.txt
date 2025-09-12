@@ -899,15 +899,15 @@ WoditorEvCOMMAND_END
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |▼ 下地だけは単体で消去
  |■Picture [Reset Delay]: CSelf20[基本ピクチャ番号] 
- |■Picture Erase: CSelf20[基本ピクチャ番号]  / 10(0)Frames
+ |■Picture Erase: CSelf20[基本ピクチャ番号]  / 10(0) Frames
  |▼ それ以外は右にスライド消去
  |■Set Variable: CSelf11[一時変数B] = CSelf20[基本ピクチャ番号] + 1 
  |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 50 
  |■Set Variable: CSelf21[一時ピクチャ番号] += CSelf55[セーブ1セットあたり使用枚数] * CSelf27[1ページセーブデータ数] 
  |■Picture [Reset Delay]: CSelf11[一時変数B] to CSelf21[一時ピクチャ番号] 
  |■Set Variable: CSelf10[一時変数A] = CSelf86[座標倍率X[x10]] * 32 
- |■Picture Move: CSelf11[一時変数B] to CSelf21[一時ピクチャ番号]  Relative X:CSelf10[一時変数A] Y:0 / 7(0)Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- |■Picture Erase: CSelf11[一時変数B] to CSelf21[一時ピクチャ番号]  / 0(7)Frames
+ |■Picture Move: CSelf11[一時変数B] to CSelf21[一時ピクチャ番号]  Relative X:CSelf10[一時変数A] Y:0 / 7(0) Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ |■Picture Erase: CSelf11[一時変数B] to CSelf21[一時ピクチャ番号]  / 0(7) Frames
  |■Exit Event
  |■
 ◇End◇
@@ -933,7 +933,7 @@ WoditorEvCOMMAND_END
  | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
  | | |■Set Variable: CSelf10[一時変数A] = CSelf86[座標倍率X[x10]] * 32 
  | | |■Set Variable: CSelf11[一時変数B] = CSelf87[座標倍率Y[x10]] * 24 
- | | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] Window[<GRADY-779-111>] Size[CSelf10[一時変数A],CSelf11[一時変数B]] X:0 Y:0 / 10(0)Frames  / Pattern 1 / Opacity 255 / Multiply  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] Window [<GRADY-779-111>] Size [CSelf10[一時変数A],CSelf11[一時変数B]] X:0 Y:0 / 10(0) Frames  / Pattern 1 / Opacity 255 / Multiply  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | |■
  | |◇Loop End Point◇◇
  | |■Repeat Loop [ CSelf49[初期表示フラグ] ] Times
@@ -941,7 +941,7 @@ WoditorEvCOMMAND_END
  | | |▼ ウィンドウを表示
  | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 1 
  | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] Window(CSelf8[ｳｨﾝﾄﾞｳ画像名/ｾｰﾌﾞﾌｧｲﾙ名]) Size[CSelf32[説明ウィンドウ横サイズ],CSelf33[説明ウィンドウ縦サイズ]] X:CSelf30[説明ウィンドウX] Y:CSelf31[説明ウィンドウY] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] Window (CSelf8[ｳｨﾝﾄﾞｳ画像名/ｾｰﾌﾞﾌｧｲﾙ名]) Size [CSelf32[説明ウィンドウ横サイズ],CSelf33[説明ウィンドウ縦サイズ]] X:CSelf30[説明ウィンドウX] Y:CSelf31[説明ウィンドウY] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | |▼ 文章を表示
  | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 2 
  | | |■Condition (Number):   [1] CSelf0[処理モード] ==  0  /  [2] CSelf0[処理モード] ==  1  
@@ -953,10 +953,10 @@ WoditorEvCOMMAND_END
  | | | |■
  | | |◇End◇
  | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] String[\f[\cself[19]]\c] X:CSelf30[説明ウィンドウX] Y:CSelf31[説明ウィンドウY] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] String [\f[\cself[19]]\c] X:CSelf30[説明ウィンドウX] Y:CSelf31[説明ウィンドウY] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | |■Set Variable: CSelf51[一時項目表示X2] = CSelf32[説明ウィンドウ横サイズ] / 2 
  | | |■Set Variable: CSelf52[一時項目表示Y2] = CSelf33[説明ウィンドウ縦サイズ] / 2 
- | | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf51[一時項目表示X2] / Shift Y CSelf52[一時項目表示Y2]  [0]Frames
+ | | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf51[一時項目表示X2] / Shift Y CSelf52[一時項目表示Y2]  [0] Frames
  | | |■
  | |◇Loop End Point◇◇
  | |■Set Variable: CSelf43[処理中個数] = -1 + 0 
@@ -988,22 +988,22 @@ WoditorEvCOMMAND_END
  | | |■Set Variable: CSelf21[一時ピクチャ番号] += CSelf55[セーブ1セットあたり使用枚数] * CSelf43[処理中個数] 
  | | |■Load DB(User):  CSelf8[ｳｨﾝﾄﾞｳ画像名/ｾｰﾌﾞﾌｧｲﾙ名] = UserDB[ "Images/Sounds":0:"Window Image File" ] (16:Basic Images/Sounds:0) 
  | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] Window(CSelf8[ｳｨﾝﾄﾞｳ画像名/ｾｰﾌﾞﾌｧｲﾙ名]) Size[CSelf24[横サイズ],CSelf25[縦サイズ]] X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] Window (CSelf8[ｳｨﾝﾄﾞｳ画像名/ｾｰﾌﾞﾌｧｲﾙ名]) Size [CSelf24[横サイズ],CSelf25[縦サイズ]] X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | |■Repeat Loop [ 1 ] Times
  | | | |▼ 表示エフェクト
  | | | |■Set Variable: CSelf51[一時項目表示X2] = CSelf41[一時項目表示X] + CSelf48[エフェクトシフト量X] 
  | | | |■Set Variable: CSelf52[一時項目表示Y2] = CSelf42[一時項目表示Y] + 0 
- | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf51[一時項目表示X2] Y:CSelf52[一時項目表示Y2] / 0(0)Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(CSelf96[ディレイフレーム１])Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(CSelf97[ディレイフレーム２])Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(CSelf98[ディレイフレーム３])Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf51[一時項目表示X2] Y:CSelf52[一時項目表示Y2] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(CSelf96[ディレイフレーム１]) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(CSelf97[ディレイフレーム２]) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(CSelf98[ディレイフレーム３]) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
  | | | |■
  | | |◇Loop End Point◇◇
  | | |▼ カーソル用ウィンドウ画像を表示
  | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 51 
  | | |■Set Variable: CSelf21[一時ピクチャ番号] += CSelf55[セーブ1セットあたり使用枚数] * CSelf43[処理中個数] 
  | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] Window(CSelf9[カーソル画像ファイル]) Size[CSelf24[横サイズ],CSelf25[縦サイズ]] X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Add  / Angle 0 / Zoom 100% / Color R[0] G[0] B[0]
+ | | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] Window (CSelf9[カーソル画像ファイル]) Size [CSelf24[横サイズ],CSelf25[縦サイズ]] X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Add  / Angle 0 / Zoom 100% / Color R[0] G[0] B[0]
  | | |▼  
  | | |■Set Variable: CSelf50[注目セーブ番号] = CSelf2[ページ位置] * CSelf27[1ページセーブデータ数] 
  | | |■Set Variable: CSelf50[注目セーブ番号] += CSelf43[処理中個数] + 1 
@@ -1012,16 +1012,16 @@ WoditorEvCOMMAND_END
  | | |■Set String: CSelf6[付与文字列] += "\cself[50]"
  | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 52 
  | | |■Set Variable: CSelf21[一時ピクチャ番号] += CSelf55[セーブ1セットあたり使用枚数] * CSelf43[処理中個数] 
- | | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] String[\f[\cself[18]]\c] X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- | | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf76[データ名位置X] / Shift Y CSelf77[データ名位置Y]  [0]Frames
+ | | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] String [\f[\cself[18]]\c] X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf76[データ名位置X] / Shift Y CSelf77[データ名位置Y]  [0] Frames
  | | |■Repeat Loop [ 1 ] Times
  | | | |▼ 表示エフェクト
  | | | |■Set Variable: CSelf51[一時項目表示X2] = CSelf41[一時項目表示X] + CSelf48[エフェクトシフト量X] 
  | | | |■Set Variable: CSelf52[一時項目表示Y2] = CSelf42[一時項目表示Y] + 0 
- | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf51[一時項目表示X2] Y:CSelf52[一時項目表示Y2] / 0(0)Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(CSelf96[ディレイフレーム１])Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(CSelf97[ディレイフレーム２])Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(CSelf98[ディレイフレーム３])Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf51[一時項目表示X2] Y:CSelf52[一時項目表示Y2] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(CSelf96[ディレイフレーム１]) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(CSelf97[ディレイフレーム２]) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(CSelf98[ディレイフレーム３]) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
  | | | |■
  | | |◇Loop End Point◇◇
  | | |■Repeat Loop [ 1 ] Times
@@ -1048,18 +1048,18 @@ WoditorEvCOMMAND_END
  | | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 53 
  | | | |■Set Variable: CSelf21[一時ピクチャ番号] += CSelf55[セーブ1セットあたり使用枚数] * CSelf43[処理中個数] 
  | | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] String[\f[\cself[18]]\c] X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] String [\f[\cself[18]]\c] X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | | |■Set Variable: CSelf51[一時項目表示X2] = CSelf24[横サイズ] / 2 
  | | | |■Set Variable: CSelf52[一時項目表示Y2] = CSelf25[縦サイズ] / 2 
- | | | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf51[一時項目表示X2] / Shift Y CSelf52[一時項目表示Y2]  [0]Frames
+ | | | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf51[一時項目表示X2] / Shift Y CSelf52[一時項目表示Y2]  [0] Frames
  | | | |■Repeat Loop [ 1 ] Times
  | | | | |▼ 表示エフェクト
  | | | | |■Set Variable: CSelf51[一時項目表示X2] = CSelf41[一時項目表示X] + CSelf48[エフェクトシフト量X] 
  | | | | |■Set Variable: CSelf52[一時項目表示Y2] = CSelf42[一時項目表示Y] + 0 
- | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf51[一時項目表示X2] Y:CSelf52[一時項目表示Y2] / 0(0)Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(CSelf96[ディレイフレーム１])Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(CSelf97[ディレイフレーム２])Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(CSelf98[ディレイフレーム３])Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf51[一時項目表示X2] Y:CSelf52[一時項目表示Y2] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(CSelf96[ディレイフレーム１]) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(CSelf97[ディレイフレーム２]) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(CSelf98[ディレイフレーム３]) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
  | | | | |■
  | | | |◇Loop End Point◇◇
  | | | |▼ キャラクターがいないのでそのピクチャを消去する
@@ -1068,7 +1068,7 @@ WoditorEvCOMMAND_END
  | | | |■Set Variable: CSelf10[一時変数A] = CSelf21[一時ピクチャ番号] + -1 
  | | | |■Set Variable: CSelf10[一時変数A] += 2 * 6 
  | | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] to CSelf10[一時変数A] 
- | | | |■Picture Erase: CSelf21[一時ピクチャ番号] to CSelf10[一時変数A]  / 0(0)Frames
+ | | | |■Picture Erase: CSelf21[一時ピクチャ番号] to CSelf10[一時変数A]  / 0(0) Frames
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf59[セーブ有無判定] == 1   ] Case↓
  | | | |▼ セーブデータが存在する場合は、その内容を表示する
@@ -1097,16 +1097,16 @@ WoditorEvCOMMAND_END
  | | | | |◇End◇
  | | | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 53 
  | | | | |■Set Variable: CSelf21[一時ピクチャ番号] += CSelf55[セーブ1セットあたり使用枚数] * CSelf43[処理中個数] 
- | | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] String[\f[\cself[18]]\c] X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- | | | | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf78[プレイタイム位置X] / Shift Y CSelf79[プレイタイム位置Y]  [0]Frames
+ | | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] String [\f[\cself[18]]\c] X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | | | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf78[プレイタイム位置X] / Shift Y CSelf79[プレイタイム位置Y]  [0] Frames
  | | | | |■Repeat Loop [ 1 ] Times
  | | | | | |▼ 表示エフェクト
  | | | | | |■Set Variable: CSelf51[一時項目表示X2] = CSelf41[一時項目表示X] + CSelf48[エフェクトシフト量X] 
  | | | | | |■Set Variable: CSelf52[一時項目表示Y2] = CSelf42[一時項目表示Y] + 0 
- | | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf51[一時項目表示X2] Y:CSelf52[一時項目表示Y2] / 0(0)Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(CSelf96[ディレイフレーム１])Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(CSelf97[ディレイフレーム２])Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(CSelf98[ディレイフレーム３])Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf51[一時項目表示X2] Y:CSelf52[一時項目表示Y2] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(CSelf96[ディレイフレーム１]) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(CSelf97[ディレイフレーム２]) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(CSelf98[ディレイフレーム３]) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
  | | | | | |■
  | | | | |◇Loop End Point◇◇
  | | | | |■
@@ -1151,8 +1151,8 @@ WoditorEvCOMMAND_END
  | | | | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
  | | | | | |▼  
  | | | | | |■ [Special] Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
- | | | | | |■Condition (String):   [1] CSelf7[顔グラフィック] is not equal to ""/  [2] CSelf7[顔グラフィック] is equal to ""
- | | | | | |-◇Condition:  [1] [ CSelf7[顔グラフィック] is not equal to "" ] Case↓
+ | | | | | |■Condition (String):   [1] CSelf7[顔グラフィック] Is Not Equal to ""/  [2] CSelf7[顔グラフィック] Is Equal to ""
+ | | | | | |-◇Condition:  [1] [ CSelf7[顔グラフィック] Is Not Equal to "" ] Case↓
  | | | | | | |■Load DB(User):  CSelf90[顔拡大率] = UserDB[ "System Settings":0:"Status Portrait Scale" ] (17:Basic System Settings:24) 
  | | | | | | |■Condition (Number):   [1] CSelf90[顔拡大率] ==  0  /  [2] CSelf90[顔拡大率] >=  1  
  | | | | | | |-◇Condition:  [1]  [ CSelf90[顔拡大率] == 0   ] Case↓
@@ -1161,32 +1161,32 @@ WoditorEvCOMMAND_END
  | | | | | | | |■Set Variable: CSelf92[顔ベースY] = 48 * CSelf87[座標倍率Y[x10]] 
  | | | | | | | |■Set Variable: CSelf91[顔ベースX] /= 10 + 0 
  | | | | | | | |■Set Variable: CSelf92[顔ベースY] /= 10 + 0 
- | | | | | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] File(CSelf7[顔グラフィック]) X:CSelf51[一時項目表示X2] Y:CSelf52[一時項目表示Y2] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 0% / Color R[100] G[100] B[100]
+ | | | | | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] File (CSelf7[顔グラフィック]) X:CSelf51[一時項目表示X2] Y:CSelf52[一時項目表示Y2] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 0% / Color R[100] G[100] B[100]
  | | | | | | | |■Set Variable: CSelf91[顔ベースX] = CSelf91[顔ベースX] * 100 
  | | | | | | | |■Set Variable: CSelf92[顔ベースY] = CSelf92[顔ベースY] * 100 
- | | | | | | | |■Set Variable+: CSelf91[顔ベースX] /= Picture:CSelf21[一時ピクチャ番号] 's Image Size (Width)
- | | | | | | | |■Set Variable+: CSelf92[顔ベースY] /= Picture:CSelf21[一時ピクチャ番号] 's Image Size (Height)
- | | | | | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] File(CSelf7[顔グラフィック]) X:CSelf51[一時項目表示X2] Y:CSelf52[一時項目表示Y2] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom CSelf91[顔ベースX]xCSelf92[顔ベースY]% / Color R[100] G[100] B[100]
+ | | | | | | | |■Set Variable+: CSelf91[顔ベースX] /= Picture: CSelf21[一時ピクチャ番号]'s Image Size (Width)
+ | | | | | | | |■Set Variable+: CSelf92[顔ベースY] /= Picture: CSelf21[一時ピクチャ番号]'s Image Size (Height)
+ | | | | | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] File (CSelf7[顔グラフィック]) X:CSelf51[一時項目表示X2] Y:CSelf52[一時項目表示Y2] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom CSelf91[顔ベースX]xCSelf92[顔ベースY]% / Color R[100] G[100] B[100]
  | | | | | | | |■
  | | | | | | |-◇Condition:  [2]  [ CSelf90[顔拡大率] >= 1   ] Case↓
  | | | | | | | |▼ 顔の表示倍率が設定されてる場合
- | | | | | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] File(CSelf7[顔グラフィック]) X:CSelf51[一時項目表示X2] Y:CSelf52[一時項目表示Y2] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom CSelf90[顔拡大率]% / Color R[100] G[100] B[100]
+ | | | | | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] File (CSelf7[顔グラフィック]) X:CSelf51[一時項目表示X2] Y:CSelf52[一時項目表示Y2] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom CSelf90[顔拡大率]% / Color R[100] G[100] B[100]
  | | | | | | | |■
  | | | | | | |◇End◇
  | | | | | | |■
- | | | | | |-◇Condition:  [2] [ CSelf7[顔グラフィック] is equal to "" ] Case↓
+ | | | | | |-◇Condition:  [2] [ CSelf7[顔グラフィック] Is Equal to "" ] Case↓
  | | | | | | |▼ 顔画像がなければ消去
- | | | | | | |■Picture Erase: CSelf21[一時ピクチャ番号]  / 0(0)Frames
+ | | | | | | |■Picture Erase: CSelf21[一時ピクチャ番号]  / 0(0) Frames
  | | | | | | |■
  | | | | | |◇End◇
  | | | | | |■Repeat Loop [ 1 ] Times
  | | | | | | |▼ 表示エフェクト
  | | | | | | |■Set Variable: CSelf88[一時項目表示X3] = CSelf51[一時項目表示X2] + CSelf48[エフェクトシフト量X] 
  | | | | | | |■Set Variable: CSelf89[一時項目表示Y3] = CSelf52[一時項目表示Y2] + 0 
- | | | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf88[一時項目表示X3] Y:CSelf89[一時項目表示Y3] / 0(0)Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf51[一時項目表示X2] Y:CSelf52[一時項目表示Y2] / 5(CSelf96[ディレイフレーム１])Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf51[一時項目表示X2] Y:CSelf52[一時項目表示Y2] / 5(CSelf97[ディレイフレーム２])Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf51[一時項目表示X2] Y:CSelf52[一時項目表示Y2] / 5(CSelf98[ディレイフレーム３])Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf88[一時項目表示X3] Y:CSelf89[一時項目表示Y3] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf51[一時項目表示X2] Y:CSelf52[一時項目表示Y2] / 5(CSelf96[ディレイフレーム１]) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf51[一時項目表示X2] Y:CSelf52[一時項目表示Y2] / 5(CSelf97[ディレイフレーム２]) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf51[一時項目表示X2] Y:CSelf52[一時項目表示Y2] / 5(CSelf98[ディレイフレーム３]) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
  | | | | | | |■
  | | | | | |◇Loop End Point◇◇
  | | | | | |▼ 名前とレベルを表示
@@ -1200,15 +1200,15 @@ WoditorEvCOMMAND_END
  | | | | | |■Set Variable: CSelf52[一時項目表示Y2] += CSelf75[名前位置Y] + 0 
  | | | | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
  | | | | | |▼ 文字の\A-を解除　Ver3.00修正
- | | | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Right] String[<R>\space[0]\f[\] X:CSelf51[一時項目表示X2] Y:CSelf52[一時項目表示Y2] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Right] String [<R>\space[0]\f[\] X:CSelf51[一時項目表示X2] Y:CSelf52[一時項目表示Y2] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | | | | |■Repeat Loop [ 1 ] Times
  | | | | | | |▼ 表示エフェクト
  | | | | | | |■Set Variable: CSelf88[一時項目表示X3] = CSelf51[一時項目表示X2] + CSelf48[エフェクトシフト量X] 
  | | | | | | |■Set Variable: CSelf89[一時項目表示Y3] = CSelf52[一時項目表示Y2] + 0 
- | | | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf88[一時項目表示X3] Y:CSelf89[一時項目表示Y3] / 0(0)Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf51[一時項目表示X2] Y:CSelf52[一時項目表示Y2] / 5(CSelf96[ディレイフレーム１])Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf51[一時項目表示X2] Y:CSelf52[一時項目表示Y2] / 5(CSelf97[ディレイフレーム２])Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf51[一時項目表示X2] Y:CSelf52[一時項目表示Y2] / 5(CSelf98[ディレイフレーム３])Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf88[一時項目表示X3] Y:CSelf89[一時項目表示Y3] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf51[一時項目表示X2] Y:CSelf52[一時項目表示Y2] / 5(CSelf96[ディレイフレーム１]) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf51[一時項目表示X2] Y:CSelf52[一時項目表示Y2] / 5(CSelf97[ディレイフレーム２]) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf51[一時項目表示X2] Y:CSelf52[一時項目表示Y2] / 5(CSelf98[ディレイフレーム３]) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
  | | | | | | |■
  | | | | | |◇Loop End Point◇◇
  | | | | | |■Repeat Loop [ CSelf49[初期表示フラグ] ] Times
@@ -1235,7 +1235,7 @@ WoditorEvCOMMAND_END
  | | | | | |■Set Variable: CSelf21[一時ピクチャ番号] += 2 * CSelf10[一時変数A] 
  | | | | | |■Set Variable: CSelf13[一時変数D] = CSelf21[一時ピクチャ番号] + 1 
  | | | | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] to CSelf13[一時変数D] 
- | | | | | |■Picture Erase: CSelf21[一時ピクチャ番号] to CSelf13[一時変数D]  / 0(0)Frames
+ | | | | | |■Picture Erase: CSelf21[一時ピクチャ番号] to CSelf13[一時変数D]  / 0(0) Frames
  | | | | | |■
  | | | | |◇End◇
  | | | | |▼ 次のキャラを読み込む
@@ -1304,7 +1304,7 @@ WoditorEvCOMMAND_END
  | | | | | |▼  
  | | | | | |■Set Variable: CSelf11[一時変数B] = CSelf53[キャラ表示初期シフト量] + 0 
  | | | | | |■Set Variable: CSelf11[一時変数B] += CSelf54[キャラ表示１キャラシフト量] * CSelf12[一時変数C] 
- | | | | | |■Effect Picture: CSelf21[一時ピクチャ番号] to CSelf13[一時変数D] [Shift Position (Final Value)] Shift X CSelf11[一時変数B] / Shift Y 0  [0]Frames
+ | | | | | |■Effect Picture: CSelf21[一時ピクチャ番号] to CSelf13[一時変数D] [Shift Position (Final Value)] Shift X CSelf11[一時変数B] / Shift Y 0  [0] Frames
  | | | | | |▼ 次のキャラへ
  | | | | | |■Set Variable: CSelf12[一時変数C] += 1 + 0 
  | | | | | |■
@@ -1326,11 +1326,11 @@ WoditorEvCOMMAND_END
  | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
  | | |■Condition (Number):   [1] CSelf2[ページ位置] >=  1  
  | | |-◇Condition:  [1]  [ CSelf2[ページ位置] >= 1   ] Case↓
- | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] Window[<TRI-LEFT>] Size[CSelf11[一時変数B],CSelf12[一時変数C]] X:CSelf56[カーソル左X] Y:CSelf58[カーソルY] / 0(0)Frames  / Pattern 1 / Opacity 255 / Add  / Angle 0 / Zoom 100% / Color R[50] G[50] B[100]
+ | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] Window [<TRI-LEFT>] Size [CSelf11[一時変数B],CSelf12[一時変数C]] X:CSelf56[カーソル左X] Y:CSelf58[カーソルY] / 0(0) Frames  / Pattern 1 / Opacity 255 / Add  / Angle 0 / Zoom 100% / Color R[50] G[50] B[100]
  | | | |■Effect Picture: CSelf21[一時ピクチャ番号] [Blink A (Flicker)] R30/G30/B30  Interval [40] Frames
  | | | |■
  | | |-◇Else
- | | | |■Picture Erase: CSelf21[一時ピクチャ番号]  / 0(0)Frames
+ | | | |■Picture Erase: CSelf21[一時ピクチャ番号]  / 0(0) Frames
  | | | |■
  | | |◇End◇
  | | |▼ もし現在ページが（最大ページ-1）よりも小さいなら、右▲を表示
@@ -1339,11 +1339,11 @@ WoditorEvCOMMAND_END
  | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
  | | |■Condition (Number):   [1] CSelf10[一時変数A] <  CSelf26[最大ページ数]  
  | | |-◇Condition:  [1]  [ CSelf10[一時変数A] < CSelf26[最大ページ数]   ] Case↓
- | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] Window[<TRI-RIGHT>] Size[CSelf11[一時変数B],CSelf12[一時変数C]] X:CSelf57[カーソル右X] Y:CSelf58[カーソルY] / 0(0)Frames  / Pattern 1 / Opacity 255 / Add  / Angle 0 / Zoom 100% / Color R[50] G[50] B[100]
+ | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] Window [<TRI-RIGHT>] Size [CSelf11[一時変数B],CSelf12[一時変数C]] X:CSelf57[カーソル右X] Y:CSelf58[カーソルY] / 0(0) Frames  / Pattern 1 / Opacity 255 / Add  / Angle 0 / Zoom 100% / Color R[50] G[50] B[100]
  | | | |■Effect Picture: CSelf21[一時ピクチャ番号] [Blink A (Flicker)] R30/G30/B30  Interval [40] Frames
  | | | |■
  | | |-◇Else
- | | | |■Picture Erase: CSelf21[一時ピクチャ番号]  / 0(0)Frames
+ | | | |■Picture Erase: CSelf21[一時ピクチャ番号]  / 0(0) Frames
  | | | |■
  | | |◇End◇
  | | |■

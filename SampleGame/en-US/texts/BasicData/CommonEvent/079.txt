@@ -310,8 +310,8 @@ WoditorEvCOMMAND_END
  | | | | | |■Set Variable: CSelf44[現在参照番号] = CSelf49[ＤＢ参照番号] + CSelf46[項目番号] 
  | | | | | |■Set Variable: CSelf44[現在参照番号] += CSelf41[移動元] * 100 
  | | | | | |■Set String: CSelf5[一時文字列] = String at Position [CSelf44[現在参照番号]]
- | | | | | |■Condition (String):   [1] CSelf5[一時文字列] is equal to "<<ERROR>>"
- | | | | | |-◇Condition:  [1] [ CSelf5[一時文字列] is equal to "<<ERROR>>" ] Case↓
+ | | | | | |■Condition (String):   [1] CSelf5[一時文字列] Is Equal to "<<ERROR>>"
+ | | | | | |-◇Condition:  [1] [ CSelf5[一時文字列] Is Equal to "<<ERROR>>" ] Case↓
  | | | | | | |▼ データは数値
  | | | | | | |■Load DB(Var):  CSelf47[移動元数値] = VarDB[ CSelf40[ＤＢ番号]:CSelf41[移動元]:CSelf46[項目番号] ] (-:-:-) 
  | | | | | | |■Write to DB(Var): VarDB[ CSelf40[ＤＢ番号]:CSelf42[移動先]:CSelf46[項目番号] ] (-:-:-) =  CSelf47[移動元数値]

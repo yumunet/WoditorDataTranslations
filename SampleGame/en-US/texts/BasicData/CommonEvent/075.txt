@@ -707,7 +707,7 @@ WoditorEvCOMMAND_END
  | | | |■Condition (Number):   [1] CSelf15[全回復対象フラグ？] ==  0  
  | | | |-◇Condition:  [1]  [ CSelf15[全回復対象フラグ？] == 0   ] Case↓
  | | | | |▼ 全回復対象でなかったら次へ
- | | | | |■Loop Start: Go to Loop Start
+ | | | | |■Go to Loop Start
  | | | | |■
  | | | |◇End◇
  | | | |■

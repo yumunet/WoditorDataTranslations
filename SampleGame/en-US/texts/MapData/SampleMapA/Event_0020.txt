@@ -74,33 +74,33 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:Hi!\nI'm a horse here to talk about the Z-order of pictures!
-■Show Choice:/ [1] I want to see an example of Z-order 
+■Show Message: Hi!\nI'm a horse here to talk about the Z-order of pictures!
+■Show Choice: / [1] I want to see an example of Z-order 
 -◇Case: Choice [1] I want to see an example of Z-order      ↓
- |■Show Message:Okay, I'll show you an example!\nFirst, I'll show three pictures with picture IDs 10, 15,\nand 20!
- |■Picture Show: 20 [Bottom-Center] String[<C>10\n↓] X:140 Y:85 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- |■Picture Show: 5 [Center] File[Picture/FaceGraphic_Edy.png] X:140 Y:115 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 400% / Color R[100] G[100] B[100]
- |■Effect Picture: 0 to 26 [Shift Position (Final Value)] Shift X 0 / Shift Y -20  [0]Frames
+ |■Show Message: Okay, I'll show you an example!\nFirst, I'll show three pictures with picture IDs 10, 15,\nand 20!
+ |■Picture Show: 20 [Bottom-Center] String [<C>10\n↓] X:140 Y:85 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ |■Picture Show: 5 [Center] File [Picture/FaceGraphic_Edy.png] X:140 Y:115 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 400% / Color R[100] G[100] B[100]
+ |■Effect Picture: 0 to 26 [Shift Position (Final Value)] Shift X 0 / Shift Y -20  [0] Frames
  |■Wait: 15 Frames
- |■Picture Show: 21 [Bottom-Center] String[<C>15\n↓] X:160 Y:90 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- |■Picture Show: 10 [Center] File[Picture/FaceGraphic_Wolfarl.png] X:160 Y:120 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 400% / Color R[100] G[100] B[100]
- |■Effect Picture: 0 to 26 [Shift Position (Final Value)] Shift X 0 / Shift Y -20  [0]Frames
+ |■Picture Show: 21 [Bottom-Center] String [<C>15\n↓] X:160 Y:90 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ |■Picture Show: 10 [Center] File [Picture/FaceGraphic_Wolfarl.png] X:160 Y:120 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 400% / Color R[100] G[100] B[100]
+ |■Effect Picture: 0 to 26 [Shift Position (Final Value)] Shift X 0 / Shift Y -20  [0] Frames
  |■Wait: 15 Frames
- |■Picture Show: 22 [Bottom-Center] String[<C>20\n↓] X:180 Y:97 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- |■Picture Show: 15 [Center] File[Picture/FaceGraphic_Yuichi.png] X:180 Y:120 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 400% / Color R[100] G[100] B[100]
- |■Effect Picture: 0 to 26 [Shift Position (Final Value)] Shift X 0 / Shift Y -20  [0]Frames
+ |■Picture Show: 22 [Bottom-Center] String [<C>20\n↓] X:180 Y:97 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ |■Picture Show: 15 [Center] File [Picture/FaceGraphic_Yuichi.png] X:180 Y:120 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 400% / Color R[100] G[100] B[100]
+ |■Effect Picture: 0 to 26 [Shift Position (Final Value)] Shift X 0 / Shift Y -20  [0] Frames
  |■Wait: 15 Frames
- |■Show Message:Now, three pictures are shown on top of each other!\nThe Z-order of the newly shown pictures is "0"!
- |■Show Message:Then, using the Picture Effect command, let's change\nthe Z-order of only Wolfarl in the middle to "1"!
+ |■Show Message: Now, three pictures are shown on top of each other!\nThe Z-order of the newly shown pictures is "0"!
+ |■Show Message: Then, using the Picture Effect command, let's change\nthe Z-order of only Wolfarl in the middle to "1"!
  |■Wait: 5 Frames
  |■Effect Picture: 10 [Z-Order]  Change to [1]
  |■Effect Picture: 21 [Z-Order]  Change to [1]
  |■Wait: 25 Frames
- |■Show Message:See? Even though Wolfarl's picture ID is still 15,\nit's shown above Yuuichi's, which has picture ID 20.
- |■Show Message:Like you just saw, Z-order lets you change the display\npriority ignoring the picture ID!
- |■Picture Erase: 5 to 25  / 120(0)Frames
- |■Show Message:\f[10]Just a heads-up! No matter how big the Z-order is, it can't\ngo beyond the picture ID boundaries like these:\n  -1 or lower (under fog, above ★Tiles) and\n  0 or higher (above fog)...
- |■Show Message:The picture ID boundaries that can't go beyond\nby Z-order are -400,000, -300,000, -200,000, -100,000,\n0, and 100,000.\nSo be careful when picking picture IDs!
+ |■Show Message: See? Even though Wolfarl's picture ID is still 15,\nit's shown above Yuuichi's, which has picture ID 20.
+ |■Show Message: Like you just saw, Z-order lets you change the display\npriority ignoring the picture ID!
+ |■Picture Erase: 5 to 25  / 120(0) Frames
+ |■Show Message: \f[10]Just a heads-up! No matter how big the Z-order is, it can't\ngo beyond the picture ID boundaries like these:\n  -1 or lower (under fog, above ★Tiles) and\n  0 or higher (above fog)...
+ |■Show Message: The picture ID boundaries that can't go beyond\nby Z-order are -400,000, -300,000, -200,000, -100,000,\n0, and 100,000.\nSo be careful when picking picture IDs!
  |■
 -◇Case: Cancel
  |■

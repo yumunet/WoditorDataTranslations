@@ -718,16 +718,16 @@ WoditorEvCOMMAND_END
 ■Condition (Number):   [1] CSelf10[一時変数A] ==  1  /  [2] CSelf10[一時変数A] <=  -10  
 -◇Condition:  [1]  [ CSelf10[一時変数A] == 1   ] Case↓
  |▼ 行動不能
- |■Condition (String):   [1] CSelf9[一時項目名] is not equal to ""
- |-◇Condition:  [1] [ CSelf9[一時項目名] is not equal to "" ] Case↓
+ |■Condition (String):   [1] CSelf9[一時項目名] Is Not Equal to ""
+ |-◇Condition:  [1] [ CSelf9[一時項目名] Is Not Equal to "" ] Case↓
  | |■Call Event [Name]: ["X[Bat]Display Battle Message"] <CommonEv 182>  / 0:表示→自動削除 / CSelf7[一時項目名2]
  | |■
  |◇End◇
  |■Exit Event
  |■
 -◇Condition:  [2]  [ CSelf10[一時変数A] <= -10   ] Case↓
- |■Condition (String):   [1] CSelf9[一時項目名] is not equal to ""
- |-◇Condition:  [1] [ CSelf9[一時項目名] is not equal to "" ] Case↓
+ |■Condition (String):   [1] CSelf9[一時項目名] Is Not Equal to ""
+ |-◇Condition:  [1] [ CSelf9[一時項目名] Is Not Equal to "" ] Case↓
  | |■Call Event [Name]: ["X[Bat]Display Battle Message"] <CommonEv 182>  / 0:表示→自動削除 / CSelf7[一時項目名2]
  | |■
  |◇End◇
@@ -865,8 +865,8 @@ WoditorEvCOMMAND_END
  |■Condition (Number):   [1] CSelf17[アイテム側メッセージ使用？] ==  0  /  [2] CSelf17[アイテム側メッセージ使用？] ==  1  
  |-◇Condition:  [1]  [ CSelf17[アイテム側メッセージ使用？] == 0   ] Case↓
  | |■Load DB(User):  CSelf9[一時項目名] = UserDB[ "Skills":CSelf34[技能コード]:"Use Message [Battle] (Name..." ] (0:-:14) 
- | |■Condition (String):   [1] CSelf9[一時項目名] is not equal to ""
- | |-◇Condition:  [1] [ CSelf9[一時項目名] is not equal to "" ] Case↓
+ | |■Condition (String):   [1] CSelf9[一時項目名] Is Not Equal to ""
+ | |-◇Condition:  [1] [ CSelf9[一時項目名] Is Not Equal to "" ] Case↓
  | | |■Load DB(Var):  CSelf8[キャラ名] = VarDB[ "×┏Battle Temp Status":CSelf16[発動スロット]:"Character Name" ] (10:-:0) 
  | | |■Set String: CSelf9[一時項目名] = "\cself[8]\cself[9]"
  | | |■Call Event [Name]: ["X[Bat]Display Battle Message"] <CommonEv 182>  / 0:表示→自動削除 / CSelf9[一時項目名]
@@ -874,8 +874,8 @@ WoditorEvCOMMAND_END
  | |◇End◇
  | |■
  |-◇Condition:  [2]  [ CSelf17[アイテム側メッセージ使用？] == 1   ] Case↓
- | |■Condition (String):   [1] CSelf6[アイテム時メッセージ] is not equal to ""
- | |-◇Condition:  [1] [ CSelf6[アイテム時メッセージ] is not equal to "" ] Case↓
+ | |■Condition (String):   [1] CSelf6[アイテム時メッセージ] Is Not Equal to ""
+ | |-◇Condition:  [1] [ CSelf6[アイテム時メッセージ] Is Not Equal to "" ] Case↓
  | | |■Load DB(Var):  CSelf8[キャラ名] = VarDB[ "×┏Battle Temp Status":CSelf16[発動スロット]:"Character Name" ] (10:-:0) 
  | | |■Set String: CSelf9[一時項目名] = "\cself[8]\cself[6]"
  | | |■Call Event [Name]: ["X[Bat]Display Battle Message"] <CommonEv 182>  / 0:表示→自動削除 / CSelf9[一時項目名]
@@ -889,7 +889,7 @@ WoditorEvCOMMAND_END
  |■Condition (Number):   [1] CSelf12[一時変数C] ==  0  
  |-◇Condition:  [1]  [ CSelf12[一時変数C] == 0   ] Case↓
  | |▼ ■■■条件設定、ここまで
- | |■Show Message:\>マップ専用の技能は使用できません。\n＞戦闘スロット \cself[18]　技能 \cself[34]
+ | |■Show Message: \>マップ専用の技能は使用できません。\n＞戦闘スロット \cself[18]　技能 \cself[34]
  | |■Exit Event
  | |■
  |◇End◇
@@ -990,8 +990,8 @@ WoditorEvCOMMAND_END
  | |◇End◇
  | |▼ 使用時メッセージがあれば表示
  | |■Load DB(User):  CSelf9[一時項目名] = UserDB[ "Items":CSelf35[アイテムコード]:"Use Message [Battle] (Name..." ] (2:-:18) 
- | |■Condition (String):   [1] CSelf9[一時項目名] is not equal to ""
- | |-◇Condition:  [1] [ CSelf9[一時項目名] is not equal to "" ] Case↓
+ | |■Condition (String):   [1] CSelf9[一時項目名] Is Not Equal to ""
+ | |-◇Condition:  [1] [ CSelf9[一時項目名] Is Not Equal to "" ] Case↓
  | | |■Load DB(Var):  CSelf8[キャラ名] = VarDB[ "×┏Battle Temp Status":CSelf16[発動スロット]:"Character Name" ] (10:-:0) 
  | | |■Set String: CSelf9[一時項目名] = "\cself[8]\cself[9]"
  | | |■Call Event [Name]: ["X[Bat]Display Battle Message"] <CommonEv 182>  / 0:表示→自動削除 / CSelf9[一時項目名]

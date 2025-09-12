@@ -433,10 +433,10 @@ WoditorEvCOMMAND_END
  |■
 ◇End◇
 ▼ If there's a file, play it.
-■Condition (String):   [1] CSelf9[Sound File] is not equal to ""
--◇Condition:  [1] [ CSelf9[Sound File] is not equal to "" ] Case↓
+■Condition (String):   [1] CSelf9[Sound File] Is Not Equal to ""
+-◇Condition:  [1] [ CSelf9[Sound File] Is Not Equal to "" ] Case↓
  |▼ Volume and frequency are 0%, but they automatically become 100, so not a problem.
- |■Sound: SE File[\cself[9]] Vol 0% Freq 0% (0 Channel) Play / Delay: 0 Frames
+ |■Sound: SE File [\cself[9]] Vol 0% Freq 0% (0 Channel) Play / Delay: 0 Frames
  |■
 ◇End◇
 ■

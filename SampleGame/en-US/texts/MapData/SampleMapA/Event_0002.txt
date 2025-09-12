@@ -70,11 +70,11 @@ WoditorEvCOMMAND_END
  |▼ Disable saving inside the dungeon.
  |■Call Event: Common 15: [ ○ Change Save Availability ] / 0:Disable Saving
  |▼ Move player.
- |■Transfer: Hero ▲ Map ID 3 [Dungeon] X:7 Y:27  [Transition with Fade]
+ |■Transfer: Leader ▲ Map ID 3 [Dungeon] X:7 Y:27  [Transition with Fade]
  |■
 -◇Condition:  [2]  [ This Ev Self0 == 0   ] Case↓
  |▼ If the player don't have the key, just a message.
- |■Show Message:It appears to be locked...\nYou must find a key somewhere.
+ |■Show Message: It appears to be locked...\nYou must find a key somewhere.
  |■
 ◇End◇
 ■

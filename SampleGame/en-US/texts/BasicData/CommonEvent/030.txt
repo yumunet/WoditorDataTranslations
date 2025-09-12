@@ -192,7 +192,7 @@ WoditorEvCOMMAND_END
 -◇Condition:  [2]  [ CSelf0[Mode] == 1   ] Case↓
  |▼ Pausing Message
  |■Call Event [Name]: ["X[Bat]Display Warning Message"] <CommonEv 184>  / 0:初期表示 / CSelf5[Message]
- |■Key Input: CSelf10 [Wait For Input <!>]  Confirm(10) Cancel(11)
+ |■Key Input: CSelf10 [Wait for Input <!>]  Confirm (10) Cancel (11)
  |■Call Event [Name]: ["X[Bat]Display Warning Message"] <CommonEv 184>  / -1:消去 / CSelf5[Message]
  |■Wait: 10 Frames
  |■

@@ -250,7 +250,7 @@ WoditorEvCOMMAND_END
  | | |■Load DB(Var):  CSelf20 = VarDB[ "Allies":CSelf0[主人公ID]:"Equipped Armor 7" ] (0:-:35) 
  | | |■
  | |-◇Else
- | | |■Show Message:\>「X[移]選択箇所装備コード取得」エラー：\n　装備箇所が8以下です。 　=>　\cself[1]\n　（※0～7で指定して下さい）
+ | | |■Show Message: \>「X[移]選択箇所装備コード取得」エラー：\n　装備箇所が8以下です。 　=>　\cself[1]\n　（※0～7で指定して下さい）
  | | |■Exit Event
  | | |■
  | |◇End◇

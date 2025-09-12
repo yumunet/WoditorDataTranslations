@@ -642,8 +642,8 @@ WoditorEvCOMMAND_END
  | | | |-◇Else
  | | | | |■Repeat Loop [ 0 ] Times
  | | | | | |▼ 警告を付けたものの面倒でタイプ更新分を入れたくない人もいそうなのでナシに
- | | | | | |■Show Message:\E【基本システムエラー】　基本システムがVer2.02になりましたが\n　ユーザデータベースDBのタイプ「防具」が更新されていません。
- | | | | | |■Show Message:\E　以下URLの「基本システム2の更新分」をダウンロードし、\n　DBファイルをユーザデータベース　タイプ4にドラッグしてください。\n \n  http://www.silversecond.com/WolfRPGEditor/Download.html\n 
+ | | | | | |■Show Message: \E【基本システムエラー】　基本システムがVer2.02になりましたが\n　ユーザデータベースDBのタイプ「防具」が更新されていません。
+ | | | | | |■Show Message: \E　以下URLの「基本システム2の更新分」をダウンロードし、\n　DBファイルをユーザデータベース　タイプ4にドラッグしてください。\n \n  http://www.silversecond.com/WolfRPGEditor/Download.html\n 
  | | | | | |■
  | | | | |◇Loop End Point◇◇
  | | | | |■

@@ -572,7 +572,7 @@ WoditorEvCOMMAND_END
 ◇Loop End Point◇◇
 ▼  
 ■Set Transition:  [Simple Switch] 10 Frames (Wait)
-■Move Route: [Skip]  Hero / Set Move Speed -> 3
+■Move Route: [Skip]  Leader / Set Move Speed -> 3
 ■Call Event [Name]: ["X[Map]Update Party Info"] <CommonEv 79> 
 ■Call Event [Name]: ["X[Map]Reset Party Images"] <CommonEv 80> 
 ▼  

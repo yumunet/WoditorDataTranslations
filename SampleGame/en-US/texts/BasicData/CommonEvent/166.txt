@@ -363,10 +363,10 @@ WoditorEvCOMMAND_END
  | |■Load DB(User):  CSelf29[カウンター有り？] = UserDB[ "States":CSelf23[注目位置]:"Counterattack? (with Skill)     " ] (8:-:40) 
  | |■Condition (Number):   [1] CSelf29[カウンター有り？] ==  -1  /  [2] CSelf29[カウンター有り？] ==  -2  
  | |-◇Condition:  [1]  [ CSelf29[カウンター有り？] == -1   ] Case↓
- | | |■Loop Start: Go to Loop Start
+ | | |■Go to Loop Start
  | | |■
  | |-◇Condition:  [2]  [ CSelf29[カウンター有り？] == -2   ] Case↓
- | | |■Loop Start: Go to Loop Start
+ | | |■Go to Loop Start
  | | |■
  | |◇End◇
  | |▼ 【２】属性が一致するかチェック
@@ -381,7 +381,7 @@ WoditorEvCOMMAND_END
  | | |■Condition (Number):   [1] CSelf30[攻撃力の影響有り？] <=  0  
  | | |-◇Condition:  [1]  [ CSelf30[攻撃力の影響有り？] <= 0   ] Case↓
  | | | |▼ 影響度が0なら次へ
- | | | |■Loop Start: Go to Loop Start
+ | | | |■Go to Loop Start
  | | | |■
  | | |◇End◇
  | | |■
@@ -390,7 +390,7 @@ WoditorEvCOMMAND_END
  | | |■Condition (Number):   [1] CSelf31[精神攻撃の影響有り？] <=  0  
  | | |-◇Condition:  [1]  [ CSelf31[精神攻撃の影響有り？] <= 0   ] Case↓
  | | | |▼ 影響度が0なら次へ
- | | | |■Loop Start: Go to Loop Start
+ | | | |■Go to Loop Start
  | | | |■
  | | |◇End◇
  | | |■
@@ -410,7 +410,7 @@ WoditorEvCOMMAND_END
  | | | | |■
  | | | |-◇Else
  | | | | |▼ チェック属性のどれでもなければ次へ
- | | | | |■Loop Start: Go to Loop Start
+ | | | | |■Go to Loop Start
  | | | | |■
  | | | |◇End◇
  | | | |■

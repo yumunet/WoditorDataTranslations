@@ -296,12 +296,12 @@ WoditorEvCOMMAND_END
  |■
 ◇End◇
 ▼ もし表示メッセージが存在する場合はメッセージ表示
-■Condition (String):   [1] CSelf9[一時文字列] is not equal to ""
--◇Condition:  [1] [ CSelf9[一時文字列] is not equal to "" ] Case↓
+■Condition (String):   [1] CSelf9[一時文字列] Is Not Equal to ""
+-◇Condition:  [1] [ CSelf9[一時文字列] Is Not Equal to "" ] Case↓
  |■Load DB(Var):  CSelf8 = VarDB[ "Allies":CSelf0[発動主人公ID]:"Character Name" ] (0:-:0) 
  |■Set String: CSelf9[一時文字列] = "\cself[8]\cself[9]"
  |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / 0:初期表示 / CSelf9[一時文字列]
- |■Key Input: CSelf0[発動主人公ID] [Wait For Input <!>]  Confirm(10) Cancel(11)
+ |■Key Input: CSelf0[発動主人公ID] [Wait for Input <!>]  Confirm (10) Cancel (11)
  |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / -1:消去 / CSelf9[一時文字列]
  |■
 ◇End◇

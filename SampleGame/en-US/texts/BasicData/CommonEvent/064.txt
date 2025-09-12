@@ -1152,7 +1152,7 @@ WoditorEvCOMMAND_END
  |▼ Erase cursor.
  |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 3 
  |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
- |■Picture Erase: CSelf21[Temp Picture ID]  / 0(0)Frames
+ |■Picture Erase: CSelf21[Temp Picture ID]  / 0(0) Frames
  |▼ Erase everything else.
  |■Set Variable: CSelf10[Temp Variable A] = CSelf20[Base Picture ID] + 999 
  |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 0 
@@ -1160,26 +1160,26 @@ WoditorEvCOMMAND_END
  |■Condition (Number):   [1] CSelf3[[Disp] Animation] >=  1  
  |-◇Condition:  [1]  [ CSelf3[[Disp] Animation] >= 1   ] Case↓
  | |▼ If animation is specified, erase the main window accordingly.
- | |■Picture Erase: CSelf20[Base Picture ID] to CSelf10[Temp Variable A]  / 3(1)Frames
+ | |■Picture Erase: CSelf20[Base Picture ID] to CSelf10[Temp Variable A]  / 3(1) Frames
  | |■Condition (Number):   [1] CSelf3[[Disp] Animation] <=  4  /  [2] CSelf3[[Disp] Animation] >=  5  
  | |-◇Condition:  [1]  [ CSelf3[[Disp] Animation] <= 4   ] Case↓
  | | |▼ Set the zoom level to 0%, then erase.
- | | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(0)Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom 0% / Color Same
- | | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 4(2)Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom 0% / Color Same
- | | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 4(4)Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom 0% / Color Same
+ | | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(0) Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom 0% / Color Same
+ | | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 4(2) Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom 0% / Color Same
+ | | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 4(4) Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom 0% / Color Same
  | | |■
  | |-◇Condition:  [2]  [ CSelf3[[Disp] Animation] >= 5   ] Case↓
  | | |▼ Shrink up or down, then end.
- | | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(0)Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom 100x0% / Color Same
- | | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 4(2)Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom 100x0% / Color Same
- | | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 4(4)Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom 100x0% / Color Same
+ | | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(0) Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom 100x0% / Color Same
+ | | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 4(2) Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom 100x0% / Color Same
+ | | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 4(4) Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom 100x0% / Color Same
  | | |■
  | |◇End◇
- | |■Picture Erase: CSelf21[Temp Picture ID]  / 0(8)Frames
+ | |■Picture Erase: CSelf21[Temp Picture ID]  / 0(8) Frames
  | |■Wait: 7 Frames
  | |■
  |-◇Else
- | |■Picture Erase: CSelf20[Base Picture ID] to CSelf10[Temp Variable A]  / 0(0)Frames
+ | |■Picture Erase: CSelf20[Base Picture ID] to CSelf10[Temp Variable A]  / 0(0) Frames
  | |■
  |◇End◇
  |■Exit Event
@@ -1236,9 +1236,9 @@ WoditorEvCOMMAND_END
  | |-◇Condition:  [1]  [ CSelf2[[Disp] Description] == 0   ] Case↓
  | | |▼ Don't display (erase) description.
  | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 1 
- | | |■Picture Erase: CSelf21[Temp Picture ID]  / 0(0)Frames
+ | | |■Picture Erase: CSelf21[Temp Picture ID]  / 0(0) Frames
  | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 2 
- | | |■Picture Erase: CSelf21[Temp Picture ID]  / 0(0)Frames
+ | | |■Picture Erase: CSelf21[Temp Picture ID]  / 0(0) Frames
  | | |■
  | |-◇Condition:  [2]  [ CSelf2[[Disp] Description] == 1   ] Case↓
  | | |▼ Display description at top with full width.
@@ -1249,7 +1249,7 @@ WoditorEvCOMMAND_END
  | | |▼ Display description window.
  | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 1 
  | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
- | | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] Window(CSelf8[Window Image File]) Size[CSelf32[Description Window Width],CSelf33[Description Window Height]] X:CSelf30[Description Window X] Y:CSelf31[Description Window Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] Window (CSelf8[Window Image File]) Size [CSelf32[Description Window Width],CSelf33[Description Window Height]] X:CSelf30[Description Window X] Y:CSelf31[Description Window Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | |▼ Display empty description text.
  | | |■Set Variable: CSelf10[Temp Variable A] = CSelf30[Description Window X] + 0 
  | | |■Set Variable: CSelf10[Temp Variable A] += CSelf32[Description Window Width] / 2 
@@ -1257,7 +1257,7 @@ WoditorEvCOMMAND_END
  | | |■Set Variable: CSelf11[Temp Variable B] += CSelf33[Description Window Height] / 2 
  | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 2 
  | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
- | | |■Picture Show: CSelf21[Temp Picture ID] [Center] String[\f[\cself[18]]\s] X:CSelf10[Temp Variable A] Y:CSelf11[Temp Variable B] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | |■Picture Show: CSelf21[Temp Picture ID] [Center] String [\f[\cself[18]]\s] X:CSelf10[Temp Variable A] Y:CSelf11[Temp Variable B] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | |▼ If it affects the main window, adjust size.
  | | |■Set Variable: CSelf10[Temp Variable A] = CSelf31[Description Window Y] + CSelf33[Description Window Height] 
  | | |■Set Variable: CSelf10[Temp Variable A] -= CSelf23[Display Y] + 0 
@@ -1274,7 +1274,7 @@ WoditorEvCOMMAND_END
  | | |▼ Display description window.
  | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 1 
  | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
- | | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] Window(CSelf8[Window Image File]) Size[CSelf32[Description Window Width],CSelf33[Description Window Height]] X:CSelf30[Description Window X] Y:CSelf31[Description Window Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] Window (CSelf8[Window Image File]) Size [CSelf32[Description Window Width],CSelf33[Description Window Height]] X:CSelf30[Description Window X] Y:CSelf31[Description Window Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | |▼ Display empty description text.
  | | |■Set Variable: CSelf10[Temp Variable A] = CSelf30[Description Window X] + 0 
  | | |■Set Variable: CSelf10[Temp Variable A] += CSelf32[Description Window Width] / 2 
@@ -1282,7 +1282,7 @@ WoditorEvCOMMAND_END
  | | |■Set Variable: CSelf11[Temp Variable B] += CSelf33[Description Window Height] / 2 
  | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 2 
  | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
- | | |■Picture Show: CSelf21[Temp Picture ID] [Center] String[\f[\cself[18]]\s] X:CSelf10[Temp Variable A] Y:CSelf11[Temp Variable B] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | |■Picture Show: CSelf21[Temp Picture ID] [Center] String [\f[\cself[18]]\s] X:CSelf10[Temp Variable A] Y:CSelf11[Temp Variable B] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | |▼ If it affects the main window, adjust size.
  | | |■Set Variable: CSelf10[Temp Variable A] = CSelf23[Display Y] + CSelf25[Height] 
  | | |■Set Variable: CSelf10[Temp Variable A] -= CSelf31[Description Window Y] + 0 
@@ -1301,7 +1301,7 @@ WoditorEvCOMMAND_END
  | | | |▼ Display description window.
  | | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 1 
  | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
- | | | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] Window(CSelf8[Window Image File]) Size[CSelf32[Description Window Width],CSelf33[Description Window Height]] X:CSelf30[Description Window X] Y:CSelf31[Description Window Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] Window (CSelf8[Window Image File]) Size [CSelf32[Description Window Width],CSelf33[Description Window Height]] X:CSelf30[Description Window X] Y:CSelf31[Description Window Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | | |▼ Display empty description text.
  | | | |■Set Variable: CSelf10[Temp Variable A] = CSelf30[Description Window X] + 0 
  | | | |■Set Variable: CSelf10[Temp Variable A] += CSelf32[Description Window Width] / 2 
@@ -1309,7 +1309,7 @@ WoditorEvCOMMAND_END
  | | | |■Set Variable: CSelf11[Temp Variable B] += CSelf33[Description Window Height] / 2 
  | | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 2 
  | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
- | | | |■Picture Show: CSelf21[Temp Picture ID] [Center] String[\f[\cself[18]]\s] X:CSelf10[Temp Variable A] Y:CSelf11[Temp Variable B] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | | |■Picture Show: CSelf21[Temp Picture ID] [Center] String [\f[\cself[18]]\s] X:CSelf10[Temp Variable A] Y:CSelf11[Temp Variable B] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf2[[Disp] Description] == 4   ] Case↓
  | | | |▼ Display description below window.
@@ -1320,7 +1320,7 @@ WoditorEvCOMMAND_END
  | | | |▼ Display description window.
  | | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 1 
  | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
- | | | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] Window(CSelf8[Window Image File]) Size[CSelf32[Description Window Width],CSelf33[Description Window Height]] X:CSelf30[Description Window X] Y:CSelf31[Description Window Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] Window (CSelf8[Window Image File]) Size [CSelf32[Description Window Width],CSelf33[Description Window Height]] X:CSelf30[Description Window X] Y:CSelf31[Description Window Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | | |▼ Display empty description text.
  | | | |■Set Variable: CSelf10[Temp Variable A] = CSelf30[Description Window X] + 0 
  | | | |■Set Variable: CSelf10[Temp Variable A] += CSelf32[Description Window Width] / 2 
@@ -1328,7 +1328,7 @@ WoditorEvCOMMAND_END
  | | | |■Set Variable: CSelf11[Temp Variable B] += CSelf33[Description Window Height] / 2 
  | | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 2 
  | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
- | | | |■Picture Show: CSelf21[Temp Picture ID] [Center] String[\f[\cself[18]]\s] X:CSelf10[Temp Variable A] Y:CSelf11[Temp Variable B] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | | |■Picture Show: CSelf21[Temp Picture ID] [Center] String [\f[\cself[18]]\s] X:CSelf10[Temp Variable A] Y:CSelf11[Temp Variable B] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | | |■
  | | |◇End◇
  | | |■
@@ -1338,37 +1338,37 @@ WoditorEvCOMMAND_END
  |▼ 1. Display main window.
  |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 0 
  |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
- |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] Window(CSelf8[Window Image File]) Size[CSelf24[Width],CSelf25[Height]] X:CSelf22[Display X] Y:CSelf23[Display Y] / 0(0)Frames  / Pattern 1 / Opacity CSelf63[Window Opacity] / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] Window (CSelf8[Window Image File]) Size [CSelf24[Width],CSelf25[Height]] X:CSelf22[Display X] Y:CSelf23[Display Y] / 0(0) Frames  / Pattern 1 / Opacity CSelf63[Window Opacity] / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  |■Condition (Number):   [1] CSelf3[[Disp] Animation] ==  1  /  [2] CSelf3[[Disp] Animation] ==  2  /  [3] CSelf3[[Disp] Animation] ==  3  
  |-◇Condition:  [1]  [ CSelf3[[Disp] Animation] == 1   ] Case↓
  | |▼ Slide in from the top-left.
  | |■Set Variable: CSelf41[Temp Item Display X] = CSelf22[Display X] + 0 
  | |■Set Variable: CSelf42[Temp Item Display Y] = CSelf23[Display Y] + 0 
- | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] Window(CSelf8[Window Image File]) Size[CSelf24[Width],CSelf25[Height]] X:CSelf41[Temp Item Display X] Y:CSelf42[Temp Item Display Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 0(0)Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom 0% / Color Same
- | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(0)Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100% / Color Same
- | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(3)Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100% / Color Same
- | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(5)Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100% / Color Same
+ | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] Window (CSelf8[Window Image File]) Size [CSelf24[Width],CSelf25[Height]] X:CSelf41[Temp Item Display X] Y:CSelf42[Temp Item Display Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 0(0) Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom 0% / Color Same
+ | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(0) Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100% / Color Same
+ | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(3) Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100% / Color Same
+ | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(5) Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100% / Color Same
  | |■
  |-◇Condition:  [2]  [ CSelf3[[Disp] Animation] == 2   ] Case↓
  | |▼ Slide in from the bottom-left.
  | |■Set Variable: CSelf41[Temp Item Display X] = CSelf22[Display X] + 0 
  | |■Set Variable: CSelf42[Temp Item Display Y] = CSelf23[Display Y] + CSelf25[Height] 
- | |■Picture Show: CSelf21[Temp Picture ID] [Bottom-Left] Window(CSelf8[Window Image File]) Size[CSelf24[Width],CSelf25[Height]] X:CSelf41[Temp Item Display X] Y:CSelf42[Temp Item Display Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 0(0)Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom 0% / Color Same
- | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(0)Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100% / Color Same
- | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(3)Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100% / Color Same
- | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(5)Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100% / Color Same
+ | |■Picture Show: CSelf21[Temp Picture ID] [Bottom-Left] Window (CSelf8[Window Image File]) Size [CSelf24[Width],CSelf25[Height]] X:CSelf41[Temp Item Display X] Y:CSelf42[Temp Item Display Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 0(0) Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom 0% / Color Same
+ | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(0) Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100% / Color Same
+ | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(3) Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100% / Color Same
+ | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(5) Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100% / Color Same
  | |■
  |-◇Condition:  [3]  [ CSelf3[[Disp] Animation] == 3   ] Case↓
  | |▼ Slide in from the top-right.
  | |■Set Variable: CSelf41[Temp Item Display X] = CSelf22[Display X] + CSelf24[Width] 
  | |■Set Variable: CSelf42[Temp Item Display Y] = CSelf23[Display Y] + 0 
- | |■Picture Show: CSelf21[Temp Picture ID] [Top-Right] Window(CSelf8[Window Image File]) Size[CSelf24[Width],CSelf25[Height]] X:CSelf41[Temp Item Display X] Y:CSelf42[Temp Item Display Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 0(0)Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom 0% / Color Same
- | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(0)Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100% / Color Same
- | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(3)Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100% / Color Same
- | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(5)Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100% / Color Same
+ | |■Picture Show: CSelf21[Temp Picture ID] [Top-Right] Window (CSelf8[Window Image File]) Size [CSelf24[Width],CSelf25[Height]] X:CSelf41[Temp Item Display X] Y:CSelf42[Temp Item Display Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 0(0) Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom 0% / Color Same
+ | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(0) Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100% / Color Same
+ | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(3) Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100% / Color Same
+ | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(5) Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100% / Color Same
  | |■
  |◇End◇
  |■Condition (Number):   [1] CSelf3[[Disp] Animation] ==  4  /  [2] CSelf3[[Disp] Animation] ==  5  /  [3] CSelf3[[Disp] Animation] ==  6  
@@ -1376,31 +1376,31 @@ WoditorEvCOMMAND_END
  | |▼ Slide in from the bottom-right.
  | |■Set Variable: CSelf41[Temp Item Display X] = CSelf22[Display X] + CSelf24[Width] 
  | |■Set Variable: CSelf42[Temp Item Display Y] = CSelf23[Display Y] + CSelf25[Height] 
- | |■Picture Show: CSelf21[Temp Picture ID] [Bottom-Right] Window(CSelf8[Window Image File]) Size[CSelf24[Width],CSelf25[Height]] X:CSelf41[Temp Item Display X] Y:CSelf42[Temp Item Display Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 0(0)Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom 0% / Color Same
- | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(0)Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100% / Color Same
- | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(3)Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100% / Color Same
- | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(5)Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100% / Color Same
+ | |■Picture Show: CSelf21[Temp Picture ID] [Bottom-Right] Window (CSelf8[Window Image File]) Size [CSelf24[Width],CSelf25[Height]] X:CSelf41[Temp Item Display X] Y:CSelf42[Temp Item Display Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 0(0) Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom 0% / Color Same
+ | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(0) Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100% / Color Same
+ | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(3) Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100% / Color Same
+ | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(5) Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100% / Color Same
  | |■
  |-◇Condition:  [2]  [ CSelf3[[Disp] Animation] == 5   ] Case↓
  | |▼ Slide in from the top-center.
  | |■Set Variable: CSelf41[Temp Item Display X] = CSelf22[Display X] + 0 
  | |■Set Variable: CSelf42[Temp Item Display Y] = CSelf23[Display Y] + 0 
- | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] Window(CSelf8[Window Image File]) Size[CSelf24[Width],CSelf25[Height]] X:CSelf41[Temp Item Display X] Y:CSelf42[Temp Item Display Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 0(0)Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom 100x0% / Color Same
- | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(0)Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100x100% / Color Same
- | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(3)Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100x100% / Color Same
- | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(5)Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100x100% / Color Same
+ | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] Window (CSelf8[Window Image File]) Size [CSelf24[Width],CSelf25[Height]] X:CSelf41[Temp Item Display X] Y:CSelf42[Temp Item Display Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 0(0) Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom 100x0% / Color Same
+ | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(0) Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100x100% / Color Same
+ | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(3) Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100x100% / Color Same
+ | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(5) Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100x100% / Color Same
  | |■
  |-◇Condition:  [3]  [ CSelf3[[Disp] Animation] == 6   ] Case↓
  | |▼ Slide in from the bottom-center.
  | |■Set Variable: CSelf41[Temp Item Display X] = CSelf22[Display X] + 0 
  | |■Set Variable: CSelf42[Temp Item Display Y] = CSelf23[Display Y] + CSelf25[Height] 
- | |■Picture Show: CSelf21[Temp Picture ID] [Bottom-Left] Window(CSelf8[Window Image File]) Size[CSelf24[Width],CSelf25[Height]] X:CSelf41[Temp Item Display X] Y:CSelf42[Temp Item Display Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 0(0)Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom 100x0% / Color Same
- | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(0)Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100x100% / Color Same
- | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(3)Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100x100% / Color Same
- | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(5)Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100x100% / Color Same
+ | |■Picture Show: CSelf21[Temp Picture ID] [Bottom-Left] Window (CSelf8[Window Image File]) Size [CSelf24[Width],CSelf25[Height]] X:CSelf41[Temp Item Display X] Y:CSelf42[Temp Item Display Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 0(0) Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom 100x0% / Color Same
+ | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(0) Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100x100% / Color Same
+ | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(3) Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100x100% / Color Same
+ | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 5(5) Frames  / Pattern Same / Opacity CSelf63[Window Opacity] / Blend Mode: Same   / Angle Same / Zoom 100x100% / Color Same
  | |■
  |◇End◇
  |▼ If there's animation, wait until it's displayed.
@@ -1440,7 +1440,7 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 9 
  |■Set Variable: CSelf10[Temp Variable A] = CSelf20[Base Picture ID] + 999 
  |■Picture [Reset Delay]: CSelf21[Temp Picture ID] to CSelf10[Temp Variable A] 
- |■Picture Erase: CSelf21[Temp Picture ID] to CSelf10[Temp Variable A]  / 0(0)Frames
+ |■Picture Erase: CSelf21[Temp Picture ID] to CSelf10[Temp Variable A]  / 0(0) Frames
  |▼  
  |▼ Continue by executing Mode 1 (Update) to display the items.
  |■Condition (Number):   [1] CSelf1[Cursor Position] ==  -1  
@@ -1569,14 +1569,14 @@ WoditorEvCOMMAND_END
  | | |▼ Increase the size slightly, using the center as the origin.
  | | |■Set Variable: CSelf36[[Stored] Cursor Width] += CSelf88[Coordinate Scale X [x10]] / 2 
  | | |■Set Variable: CSelf37[[Stored] Cursor Height] += CSelf89[Coordinate Scale Y [x10]] / 4 
- | | |■Picture Show: CSelf21[Temp Picture ID] [Center] Window(CSelf9[Cursor Image File]) Size[CSelf36[[Stored] Cursor Width],CSelf37[[Stored] Cursor Height]] X:CSelf10[Temp Variable A] Y:CSelf11[Temp Variable B] / 0(0)Frames  / Pattern 1 / Opacity 255 / Add  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | |■Picture Show: CSelf21[Temp Picture ID] [Center] Window (CSelf9[Cursor Image File]) Size [CSelf36[[Stored] Cursor Width],CSelf37[[Stored] Cursor Height]] X:CSelf10[Temp Variable A] Y:CSelf11[Temp Variable B] / 0(0) Frames  / Pattern 1 / Opacity 255 / Add  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | |■Effect Picture: CSelf21[Temp Picture ID] [Blink A (Flicker)] R100/G100/B100  Interval [20] Frames
  | | |■Set Variable: CSelf36[[Stored] Cursor Width] -= CSelf88[Coordinate Scale X [x10]] / 2 
  | | |■Set Variable: CSelf37[[Stored] Cursor Height] -= CSelf89[Coordinate Scale Y [x10]] / 4 
  | | |■
  | |-◇Else
  | | |▼ If the cursor position is -1 or less, erase.
- | | |■Picture Erase: CSelf21[Temp Picture ID]  / 0(0)Frames
+ | | |■Picture Erase: CSelf21[Temp Picture ID]  / 0(0) Frames
  | | |■
  | |◇End◇
  | |■
@@ -1600,7 +1600,7 @@ WoditorEvCOMMAND_END
  | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 9 
  | |■Set Variable: CSelf10[Temp Variable A] = CSelf20[Base Picture ID] + 999 
  | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] to CSelf10[Temp Variable A] 
- | |■Picture Erase: CSelf21[Temp Picture ID] to CSelf10[Temp Variable A]  / 0(0)Frames
+ | |■Picture Erase: CSelf21[Temp Picture ID] to CSelf10[Temp Variable A]  / 0(0) Frames
  | |■
  |◇End◇
  |▼ Calculate the item position at which to start processing.
@@ -1719,12 +1719,12 @@ WoditorEvCOMMAND_END
  | | |▼ Display only the item name as a picture, and get the picture's width.
  | | |■Set Variable: CSelf49[Item Horizontal Zoom Level] = 100 + 0 
  | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
- | | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] String[\f[\cself[19]]\c] X:CSelf41[Temp Item Display X] Y:CSelf48[Item Display Start Y] / 0(0)Frames  / Pattern 1 / Opacity 0 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] String [\f[\cself[19]]\c] X:CSelf41[Temp Item Display X] Y:CSelf48[Item Display Start Y] / 0(0) Frames  / Pattern 1 / Opacity 0 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | |■Repeat Loop [ 1 ] Times
  | | | |▼ If the text exceeds a certain percentage of the cursor width, shrink its width.
- | | | |■Set Variable+: CSelf11[Temp Variable B] = Picture:CSelf21[Temp Picture ID] 's Image Size (Width)
- | | | |■Condition (String):   [1] CSelf6[Additional String] is equal to ""
- | | | |-◇Condition:  [1] [ CSelf6[Additional String] is equal to "" ] Case↓
+ | | | |■Set Variable+: CSelf11[Temp Variable B] = Picture: CSelf21[Temp Picture ID]'s Image Size (Width)
+ | | | |■Condition (String):   [1] CSelf6[Additional String] Is Equal to ""
+ | | | |-◇Condition:  [1] [ CSelf6[Additional String] Is Equal to "" ] Case↓
  | | | | |▼ If there's no numeric part, check whether the text exceeds the cursor width.
  | | | | |■Set Variable: CSelf12[Temp Variable C] = CSelf36[[Stored] Cursor Width] + 0 
  | | | | |■
@@ -1776,7 +1776,7 @@ WoditorEvCOMMAND_END
  | | | | |■Set String: CSelf7[Item Name] = "<C>\cself[7]"
  | | | | |■
  | | | |◇End◇
- | | | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] String[\f[\cself[19]]\c] X:CSelf41[Temp Item Display X] Y:CSelf48[Item Display Start Y] / 0(0)Frames  / Pattern 1 / Opacity CSelf57[Temp Opacity] / Normal  / Angle 0 / Zoom CSelf49[Item Horizontal Zoom Level]x100% / Color R[CSelf53[Color R]] G[CSelf54[Color G]] B[CSelf55[Color B]]
+ | | | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] String [\f[\cself[19]]\c] X:CSelf41[Temp Item Display X] Y:CSelf48[Item Display Start Y] / 0(0) Frames  / Pattern 1 / Opacity CSelf57[Temp Opacity] / Normal  / Angle 0 / Zoom CSelf49[Item Horizontal Zoom Level]x100% / Color R[CSelf53[Color R]] G[CSelf54[Color G]] B[CSelf55[Color B]]
  | | | |■
  | | |◇Loop End Point◇◇
  | | |■
@@ -1785,7 +1785,7 @@ WoditorEvCOMMAND_END
  | |■Condition (Number):   [1] CSelf29[Update-All Flag] ==  1  
  | |-◇Condition:  [1]  [ CSelf29[Update-All Flag] == 1   ] Case↓
  | | |▼ Animation when updating all items is executed here.
- | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item Display X] Y:CSelf42[Temp Item Display Y] / 5(3)Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item Display X] Y:CSelf42[Temp Item Display Y] / 5(3) Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
  | | |■
  | |-◇Else
  | | |▼ If there's scroll movement, move or erase the picture.
@@ -1797,14 +1797,14 @@ WoditorEvCOMMAND_END
  | | | |■Condition (Number):   [1] CSelf43[Item Position Being Processed] >=  CSelf10[Temp Variable A]  
  | | | |-◇Condition:  [1]  [ CSelf43[Item Position Being Processed] >= CSelf10[Temp Variable A]   ] Case↓
  | | | | |▼ Erase while moving.
- | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item Display X] Y:CSelf42[Temp Item Display Y] / 5(0)Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item Display X] Y:CSelf42[Temp Item Display Y] / 5(3)Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | | |■Picture Erase: CSelf21[Temp Picture ID]  / 0(8)Frames
+ | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item Display X] Y:CSelf42[Temp Item Display Y] / 5(0) Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item Display X] Y:CSelf42[Temp Item Display Y] / 5(3) Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | | |■Picture Erase: CSelf21[Temp Picture ID]  / 0(8) Frames
  | | | | |■
  | | | |-◇Else
  | | | | |▼ If not scrolled out, only move.
- | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item Display X] Y:CSelf42[Temp Item Display Y] / 5(0)Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item Display X] Y:CSelf42[Temp Item Display Y] / 5(3)Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item Display X] Y:CSelf42[Temp Item Display Y] / 5(0) Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item Display X] Y:CSelf42[Temp Item Display Y] / 5(3) Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
  | | | | |■
  | | | |◇End◇
  | | | |■
@@ -1814,14 +1814,14 @@ WoditorEvCOMMAND_END
  | | | |■Condition (Number):   [1] CSelf43[Item Position Being Processed] <  CSelf10[Temp Variable A]  
  | | | |-◇Condition:  [1]  [ CSelf43[Item Position Being Processed] < CSelf10[Temp Variable A]   ] Case↓
  | | | | |▼ Erase while moving.
- | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item Display X] Y:CSelf42[Temp Item Display Y] / 5(0)Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item Display X] Y:CSelf42[Temp Item Display Y] / 5(3)Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | | |■Picture Erase: CSelf21[Temp Picture ID]  / 0(8)Frames
+ | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item Display X] Y:CSelf42[Temp Item Display Y] / 5(0) Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item Display X] Y:CSelf42[Temp Item Display Y] / 5(3) Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | | |■Picture Erase: CSelf21[Temp Picture ID]  / 0(8) Frames
  | | | | |■
  | | | |-◇Else
  | | | | |▼ If not scrolled out, only move.
- | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item Display X] Y:CSelf42[Temp Item Display Y] / 5(0)Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item Display X] Y:CSelf42[Temp Item Display Y] / 5(3)Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item Display X] Y:CSelf42[Temp Item Display Y] / 5(0) Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item Display X] Y:CSelf42[Temp Item Display Y] / 5(3) Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
  | | | | |■
  | | | |◇End◇
  | | | |■
@@ -1837,12 +1837,12 @@ WoditorEvCOMMAND_END
  | |-◇Condition:  [1]  [ CSelf1[Cursor Position] >= 0   ] Case↓
  | | |▼ Check whether the picture for the description text is already displayed.
  | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 2 
- | | |■Set Variable+: CSelf10[Temp Variable A] = Picture:CSelf21[Temp Picture ID] 's Picture In Use? [1:Yes]
+ | | |■Set Variable+: CSelf10[Temp Variable A] = Picture: CSelf21[Temp Picture ID]'s Picture in Use? [1:Yes]
  | | |■Condition (Number):   [1] CSelf10[Temp Variable A] ==  1  
  | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] == 1   ] Case↓
  | | | |■Load DB(Var):  CSelf5[Description Text] = VarDB[ "Universal Window Items":CSelf1[Cursor Position]:"Description" ] (19:-:6) 
  | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
- | | | |■Picture Show: CSelf21[Temp Picture ID] [Center] String[\f[\cself[18]]\s] Relative X:0 Y:0 / 0(0)Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | |■Picture Show: CSelf21[Temp Picture ID] [Center] String [\f[\cself[18]]\s] Relative X:0 Y:0 / 0(0) Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
  | | | |■
  | | |◇End◇
  | | |■
@@ -1861,10 +1861,10 @@ WoditorEvCOMMAND_END
  | | | |■Set Variable: CSelf50[Up/Down Arrow X] = CSelf22[Display X] + 0 
  | | | |■Set Variable: CSelf50[Up/Down Arrow X] += CSelf24[Width] / 2 
  | | | |■Set Variable: CSelf51[Up/Down Arrow Y] = CSelf23[Display Y] + 0 
- | | | |■Picture Show: CSelf21[Temp Picture ID] [Center] String[\f[\cself[18]]\E] X:CSelf50[Up/Down Arrow X] Y:CSelf51[Up/Down Arrow Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | | |■Picture Show: CSelf21[Temp Picture ID] [Center] String [\f[\cself[18]]\E] X:CSelf50[Up/Down Arrow X] Y:CSelf51[Up/Down Arrow Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | | |■
  | | |-◇Else
- | | | |■Picture Erase: CSelf21[Temp Picture ID]  / 0(0)Frames
+ | | | |■Picture Erase: CSelf21[Temp Picture ID]  / 0(0) Frames
  | | | |■
  | | |◇End◇
  | | |■
@@ -1882,10 +1882,10 @@ WoditorEvCOMMAND_END
  | | | |■Set Variable: CSelf50[Up/Down Arrow X] += CSelf24[Width] / 2 
  | | | |■Set Variable: CSelf51[Up/Down Arrow Y] = CSelf23[Display Y] + 0 
  | | | |■Set Variable: CSelf51[Up/Down Arrow Y] += CSelf25[Height] + 0 
- | | | |■Picture Show: CSelf21[Temp Picture ID] [Center] String[\f[\cself[18]]\E] X:CSelf50[Up/Down Arrow X] Y:CSelf51[Up/Down Arrow Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | | |■Picture Show: CSelf21[Temp Picture ID] [Center] String [\f[\cself[18]]\E] X:CSelf50[Up/Down Arrow X] Y:CSelf51[Up/Down Arrow Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | | |■
  | | |-◇Else
- | | | |■Picture Erase: CSelf21[Temp Picture ID]  / 0(0)Frames
+ | | | |■Picture Erase: CSelf21[Temp Picture ID]  / 0(0) Frames
  | | | |■
  | | |◇End◇
  | | |■
@@ -1908,7 +1908,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [1]  [ CSelf61[Scroll Bar Display Flag] == 1   ] Case↓
  | | | |■Condition (Number):   [1] CSelf10[Temp Variable A] <=  CSelf27[Rows]  
  | | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] <= CSelf27[Rows]   ] Case↓
- | | | | |■Picture Erase: CSelf21[Temp Picture ID]  / 0(0)Frames
+ | | | | |■Picture Erase: CSelf21[Temp Picture ID]  / 0(0) Frames
  | | | | |■
  | | | |-◇Else
  | | | | |▼ Calculate the percentage of the total height that is currently visible, and calculate the scroll bar length.
@@ -1928,13 +1928,13 @@ WoditorEvCOMMAND_END
  | | | | |▼ Calculate X position.
  | | | | |■Set Variable: CSelf13[Temp Variable D] = CSelf22[Display X] + CSelf24[Width] 
  | | | | |■Set Variable: CSelf13[Temp Variable D] -= 6 + 0 
- | | | | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] Window(CSelf9[Cursor Image File]) Size[5,CSelf11[Temp Variable B]] X:CSelf13[Temp Variable D] Y:CSelf12[Temp Variable C] / 0(0)Frames  / Pattern 1 / Opacity 255 / Add  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | | | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] Window (CSelf9[Cursor Image File]) Size [5,CSelf11[Temp Variable B]] X:CSelf13[Temp Variable D] Y:CSelf12[Temp Variable C] / 0(0) Frames  / Pattern 1 / Opacity 255 / Add  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | | | |■
  | | | |◇End◇
  | | | |■
  | | |-◇Else
  | | | |▼ If no scroll bar, erase it here.
- | | | |■Picture Erase: CSelf21[Temp Picture ID]  / 0(0)Frames
+ | | | |■Picture Erase: CSelf21[Temp Picture ID]  / 0(0) Frames
  | | | |■
  | | |◇End◇
  | | |■

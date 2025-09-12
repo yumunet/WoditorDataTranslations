@@ -468,7 +468,7 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf99[結果] = 0 + 0 
 ■Condition (Number):   [1] CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ] <=  9999  
 -◇Condition:  [1]  [ CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ] <= 9999   ] Case↓
- |■Show Message:\>「X[移]ｱｲﾃﾑ使用効果処理」エラー\n「-1」番以下のアイテムコードが指定されました。
+ |■Show Message: \>「X[移]ｱｲﾃﾑ使用効果処理」エラー\n「-1」番以下のアイテムコードが指定されました。
  |■Exit Event
  |■
 ◇End◇
@@ -563,7 +563,7 @@ WoditorEvCOMMAND_END
  | |■Set Variable: CSelf16[使用対象フラグ] = 2 + 0 
  | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 1:カーソルON（対象位置　位置-1なら全部） / -1 / 0
  | |▼ 決定かキャンセルか、だけ受付する
- | |■Key Input: CSelf12[一時変数C] [Wait For Input <!>]  Confirm(10) Cancel(11)
+ | |■Key Input: CSelf12[一時変数C] [Wait for Input <!>]  Confirm (10) Cancel (11)
  | |■Condition (Number):   [1] CSelf12[一時変数C] ==  10  /  [2] CSelf12[一時変数C] ==  11  
  | |-◇Condition:  [1]  [ CSelf12[一時変数C] == 10   ] Case↓
  | | |▼ 決定なら使用
@@ -580,9 +580,9 @@ WoditorEvCOMMAND_END
  |◇End◇
  |▼ ここでアイテム使用時SEを鳴らす
  |■Load DB(User):  CSelf9[効果音ファイル] = UserDB[ "Items":CSelf30[アイテム番号]:"Sound Effect on Use" ] (2:-:20) 
- |■Condition (String):   [1] CSelf9[効果音ファイル] is not equal to ""
- |-◇Condition:  [1] [ CSelf9[効果音ファイル] is not equal to "" ] Case↓
- | |■Sound: SE File[\cself[9]] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
+ |■Condition (String):   [1] CSelf9[効果音ファイル] Is Not Equal to ""
+ |-◇Condition:  [1] [ CSelf9[効果音ファイル] Is Not Equal to "" ] Case↓
+ | |■Sound: SE File [\cself[9]] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
  | |■
  |-◇Else
  | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
@@ -599,7 +599,7 @@ WoditorEvCOMMAND_END
  | |■Call Event [Name]: CSelf14[一時キャラID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf11[一時変数B]
  | |■Condition (Number):   [1] CSelf14[一時キャラID] <=  -1  
  | |-◇Condition:  [1]  [ CSelf14[一時キャラID] <= -1   ] Case↓
- | | |■Loop Start: Go to Loop Start
+ | | |■Go to Loop Start
  | | |■
  | |◇End◇
  | |▼ ステータス回復エフェクト
@@ -675,7 +675,7 @@ WoditorEvCOMMAND_END
  | |▼ 使えない場合は残り０個を表示して戻す
  | |■Call Event [Name]: ["X[Map]Display Remaining Item Count"] <CommonEv 99>  / 1:更新[瞬間表示] / CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ]
  | |▼ キー入力待ち
- | |■Key Input: CSelf10[一時変数A] [Wait For Input <!>]  Confirm(10) Cancel(11)
+ | |■Key Input: CSelf10[一時変数A] [Wait for Input <!>]  Confirm (10) Cancel (11)
  | |■
  |◇End◇
  |▼  
@@ -724,7 +724,7 @@ WoditorEvCOMMAND_END
  | | |▼ 使えない場合は残り０個を表示して戻す
  | | |■Call Event [Name]: ["X[Map]Display Remaining Item Count"] <CommonEv 99>  / 1:更新[瞬間表示] / CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ]
  | | |▼ キー入力待ち
- | | |■Key Input: CSelf10[一時変数A] [Wait For Input <!>]  Confirm(10) Cancel(11)
+ | | |■Key Input: CSelf10[一時変数A] [Wait for Input <!>]  Confirm (10) Cancel (11)
  | | |■Exit Event
  | | |■
  | |◇End◇

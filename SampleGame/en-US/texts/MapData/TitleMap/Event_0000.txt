@@ -159,8 +159,8 @@ WoditorEvCOMMAND_END
 ▼  
 ▼ Display title image. [The image used here will be the title image]
 ▼ By default, "TitleGraphic.png" in the "SystemFile" folder is the title screen.
-■Picture Show: 1 [Top-Left] File[SystemFile/TitleGraphic.png] X:0 Y:0 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
-■Picture Show: 2 [Top-Center] String[\cS[1]\f[10]WOLF] X:160 Y:220 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+■Picture Show: 1 [Top-Left] File [SystemFile/TitleGraphic.png] X:0 Y:0 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+■Picture Show: 2 [Top-Center] String [\cS[1]\f[10]WOLF] X:160 Y:220 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
 ▼  
 ▼ When starting the game, insert a 1-frame wait to
 ▼ allow for the initialization of the base system!
@@ -178,38 +178,38 @@ WoditorEvCOMMAND_END
 ▼ Move the display position of the choice box down a little.
 ■Set Variable: Sys4:Choice Window Y = 150 + 0 
 ▼ Display the usual game start choices here.
-■Show Choice:/ [1] <C>Start / [2] <C>Continue / [3] <C>Quit 
+■Show Choice: / [1] <C>Start / [2] <C>Continue / [3] <C>Quit 
 -◇Case: Choice [1] <C>Start                                 ↓
  |▼ Set the display position of the choice box back to default.
  |■Set Variable: Sys4:Choice Window Y = -1 + 0 
  |▼ Erase the title screen picture.
- |■Picture Erase: 1  / 0(0)Frames
- |■Picture Erase: 2  / 0(0)Frames
+ |■Picture Erase: 1  / 0(0) Frames
+ |■Picture Erase: 2  / 0(0) Frames
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |▼ Transfer to Sample Map A.
  |▼ (Change the destination as necessary.)
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |■Transfer: Hero ▲ Map ID 1 [Sample Map A] X:15 Y:21  [Transition with Fade]
+ |■Transfer: Leader ▲ Map ID 1 [Sample Map A] X:15 Y:21  [Transition with Fade]
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |▼ The process up to here when selecting "Start" is necessary! Don't delete it!
  |▼  
  |■Repeat Loop [ 1 ] Times
  | |▼ Below is the opening scene of the game. You can delete the below.
- | |■Effect Map: [Zoom] Center X 160 / Center Y 120 / 200%  [10]Frames
+ | |■Effect Map: [Zoom] Center X 160 / Center Y 120 / 200%  [10] Frames
  | |▼ Turn the hero.
- | |■Move Route: [Skip]  Hero / Turn Right / Wait 2 Frames / Turn Right / Wait 2 Frames / Turn Right / Wait 2 Frames / Turn Right / Wait 2 Frames / Turn Right / Wait 2 Frames / Turn Right / Wait 2 Frames ...
- | |■Wait For Move Route
+ | |■Move Route: [Skip]  Leader / Turn Right / Wait 2 Frames / Turn Right / Wait 2 Frames / Turn Right / Wait 2 Frames / Turn Right / Wait 2 Frames / Turn Right / Wait 2 Frames / Turn Right / Wait 2 Frame...
+ | |■Wait for Move Route
  | |■Wait: 7 Frames
  | |▼ Display messages.
- | |■Show Message:Wolfarl\n  Welcome to the world of WOLF RPG Editor!\n  My name is Wolfarl, and I will be your guide.
- | |■Show Message:Wolfarl\n  This sample game shows you an example of\n  what kind of RPG you can create with\n  WOLF RPG Editor!
- | |■Show Message:Wolfarl\n  You can also try out the included base system,\n  so feel free to try anything you like!
- | |■Show Message:Wolfarl\n  Now, let's start our little adventure!
- | |■Effect Map: [Zoom] Center X 160 / Center Y 120 / 100%  [10]Frames
+ | |■Show Message: Wolfarl\n  Welcome to the world of WOLF RPG Editor!\n  My name is Wolfarl, and I will be your guide.
+ | |■Show Message: Wolfarl\n  This sample game shows you an example of\n  what kind of RPG you can create with\n  WOLF RPG Editor!
+ | |■Show Message: Wolfarl\n  You can also try out the included base system,\n  so feel free to try anything you like!
+ | |■Show Message: Wolfarl\n  Now, let's start our little adventure!
+ | |■Effect Map: [Zoom] Center X 160 / Center Y 120 / 100%  [10] Frames
  | |■Wait: 10 Frames
- | |■Sound: SE0[[System] Confirm] (0 Channel) Play / Delay: 0 Frames
+ | |■Sound: SE 0[[System] Confirm] (0 Channel) Play / Delay: 0 Frames
  | |■Wait: 10 Frames
- | |■Show Message:* Controls\n  \c[1]Z, Space, or Enter\c[0]: Confirm\n  \c[1]X or ESC\c[0]: Cancel
+ | |■Show Message: * Controls\n  \c[1]Z, Space, or Enter\c[0]: Confirm\n  \c[1]X or ESC\c[0]: Cancel
  | |▼ End of opening. You can delete up to here.
  | |■
  |◇Loop End Point◇◇

@@ -227,7 +227,7 @@ WoditorEvCOMMAND_END
  | |■Set Variable: CSelf20[Check Position] += 1 + 0 
  | |■Condition (Number):   [1] CSelf21[Learning Level] <=  -1  
  | |-◇Condition:  [1]  [ CSelf21[Learning Level] <= -1   ] Case↓
- | | |■Loop Start: Go to Loop Start
+ | | |■Go to Loop Start
  | | |■
  | |◇End◇
  | |▼ If the learning level is lower than the current level, the skill exists.

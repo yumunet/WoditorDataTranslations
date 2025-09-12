@@ -322,7 +322,7 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf20[基本ピクチャ番号] -= 1 * CSelf99[表示回数（20回ループ）] 
  |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + CSelf98[最大ループ数] 
  |■Picture [Reset Delay]: CSelf20[基本ピクチャ番号] to CSelf21[一時ピクチャ番号] 
- |■Picture Erase: CSelf20[基本ピクチャ番号] to CSelf21[一時ピクチャ番号]  / 0(0)Frames
+ |■Picture Erase: CSelf20[基本ピクチャ番号] to CSelf21[一時ピクチャ番号]  / 0(0) Frames
  |■Exit Event
  |■
 ◇End◇
@@ -355,8 +355,8 @@ WoditorEvCOMMAND_END
  | | |■Set Variable: CSelf99[表示回数（20回ループ）] %= CSelf98[最大ループ数] + 0 
  | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + CSelf99[表示回数（20回ループ）] 
  | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf35[ジャンプ先X] Y:CSelf36[ジャンプ先Y] / 4(0)Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | |■Picture Erase: CSelf21[一時ピクチャ番号]  / 15(4)Frames
+ | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf35[ジャンプ先X] Y:CSelf36[ジャンプ先Y] / 4(0) Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | |■Picture Erase: CSelf21[一時ピクチャ番号]  / 15(4) Frames
  | | |▼ 戻す
  | | |■Set Variable: CSelf99[表示回数（20回ループ）] += 1 + 0 
  | | |■Set Variable: CSelf99[表示回数（20回ループ）] %= CSelf98[最大ループ数] + 0 
@@ -371,23 +371,23 @@ WoditorEvCOMMAND_END
  | | |■Condition (Number):   [1] CSelf0[表示タイプ] ==  0  
  | | |-◇Condition:  [1]  [ CSelf0[表示タイプ] == 0   ] Case↓
  | | | |▼ 新しく表示するときの挙動
- | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] String[\f[\cself[38]]\E] X:CSelf35[ジャンプ先X] Y:CSelf36[ジャンプ先Y] / 0(0)Frames  / Pattern Same / Opacity 0 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] String [\f[\cself[38]]\E] X:CSelf35[ジャンプ先X] Y:CSelf36[ジャンプ先Y] / 0(0) Frames  / Pattern Same / Opacity 0 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | | |■
  | | |◇End◇
  | | |■Set Variable: CSelf36[ジャンプ先Y] += CSelf24[表示シフト量] + 0 
  | | |■Condition (Number):   [1] CSelf0[表示タイプ] ==  0  
  | | |-◇Condition:  [1]  [ CSelf0[表示タイプ] == 0   ] Case↓
  | | | |▼ 新しく表示するときの挙動
- | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf35[ジャンプ先X] Y:CSelf36[ジャンプ先Y] / 5(CSelf16[ディレイフレーム１])Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf35[ジャンプ先X] Y:CSelf36[ジャンプ先Y] / 5(CSelf16[ディレイフレーム１]) Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
  | | | |■Set Variable: CSelf16[ディレイフレーム１] += 2 + 0 
- | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf35[ジャンプ先X] Y:CSelf36[ジャンプ先Y] / 5(CSelf16[ディレイフレーム１])Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf35[ジャンプ先X] Y:CSelf36[ジャンプ先Y] / 5(CSelf16[ディレイフレーム１]) Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
  | | | |■
  | | |◇End◇
  | | |■Call Event [Name]: ["X[Com]Wait 2(PressKeyToSpdUp)"] <CommonEv 60>  / 40
  | | |▼ 消えていく処理
  | | |■Set Variable: CSelf36[ジャンプ先Y] += CSelf24[表示シフト量] + 0 
- | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf35[ジャンプ先X] Y:CSelf36[ジャンプ先Y] / 4(CSelf17[ディレイフレーム２])Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | |■Picture Erase: CSelf21[一時ピクチャ番号]  / 15(CSelf18[ディレイフレーム３（消去までの時間）])Frames
+ | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf35[ジャンプ先X] Y:CSelf36[ジャンプ先Y] / 4(CSelf17[ディレイフレーム２]) Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | |■Picture Erase: CSelf21[一時ピクチャ番号]  / 15(CSelf18[ディレイフレーム３（消去までの時間）]) Frames
  | | |■
  | |◇Loop End Point◇◇
  | |▼ 表示カウントを＋１

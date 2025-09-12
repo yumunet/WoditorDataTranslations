@@ -522,7 +522,7 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf14[アイテムコード] = CSelf1[発動技能] + 0 
  |■Condition (Number):   [1] CSelf14[アイテムコード] <=  9999  /  [2] CSelf14[アイテムコード] <=  19999  /  [3] CSelf14[アイテムコード] <=  29999  
  |-◇Condition:  [1]  [ CSelf14[アイテムコード] <= 9999   ] Case↓
- | |■Show Message:\>コモン159「X[戦]技能選択実行」：エラー\n　アイテムコードが1万未満です。
+ | |■Show Message: \>コモン159「X[戦]技能選択実行」：エラー\n　アイテムコードが1万未満です。
  | |■Exit Event
  | |■
  |-◇Condition:  [2]  [ CSelf14[アイテムコード] <= 19999   ] Case↓
@@ -669,7 +669,7 @@ WoditorEvCOMMAND_END
  | | | | |▼ 2＝味方全体
  | | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 10:カーソルON（対象位置　位置-1なら全部） / -1 / -1
  | | | | |▼ 決定かキャンセルか、だけ受付する
- | | | | |■Key Input: CSelf12[一時変数２] [Wait For Input <!>]  Confirm(10) Cancel(11)
+ | | | | |■Key Input: CSelf12[一時変数２] [Wait for Input <!>]  Confirm (10) Cancel (11)
  | | | | |▼ Ver2.28　戦闘中に点滅が止まらなくなるバグ修正
  | | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 12:カーソルOFF（対象位置　位置-1なら全部） / -1 / -1
  | | | | |■Condition (Number):   [1] CSelf12[一時変数２] ==  10  /  [2] CSelf12[一時変数２] ==  11  
@@ -698,7 +698,7 @@ WoditorEvCOMMAND_END
  | | | | |▼ 味方ランダム一人
  | | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 11:カーソルランダムON / -1 / -1
  | | | | |▼ 決定かキャンセルか、だけ受付する
- | | | | |■Key Input: CSelf12[一時変数２] [Wait For Input <!>]  Confirm(10) Cancel(11)
+ | | | | |■Key Input: CSelf12[一時変数２] [Wait for Input <!>]  Confirm (10) Cancel (11)
  | | | | |▼ Ver2.28　戦闘中に点滅が止まらなくなるバグ修正
  | | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 12:カーソルOFF（対象位置　位置-1なら全部） / -1 / -1
  | | | | |■Condition (Number):   [1] CSelf12[一時変数２] ==  10  /  [2] CSelf12[一時変数２] ==  11  
@@ -744,7 +744,7 @@ WoditorEvCOMMAND_END
  | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
  | | | | | |■Set String: CSelf9[表示文字列] = "自分自身には使用できません。"
  | | | | | |■Call Event [Name]: ["X[Bat]Display Warning Message"] <CommonEv 184>  / 0:初期表示 / CSelf9[表示文字列]
- | | | | | |■Key Input: CSelf12[一時変数２] [Wait For Input <!>]  Confirm(10) Cancel(11)
+ | | | | | |■Key Input: CSelf12[一時変数２] [Wait for Input <!>]  Confirm (10) Cancel (11)
  | | | | | |■Call Event [Name]: ["X[Bat]Display Warning Message"] <CommonEv 184>  / -1:消去 / CSelf9[表示文字列]
  | | | | | |●Label Jump [自分以外の味方一人] >>>>>>>>>>>>>>>>>>>>>>>>>
  | | | | | |■
@@ -778,7 +778,7 @@ WoditorEvCOMMAND_END
  | | | |-◇Condition:  [2]  [ CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] == 11   ] Case↓
  | | | | |■Call Event [Name]: ["X[Bat]Enemy: Draw One"] <CommonEv 179>  / 10:カーソルＯＮ / -1
  | | | | |▼ 決定かキャンセルか、だけ受付する
- | | | | |■Key Input: CSelf12[一時変数２] [Wait For Input <!>]  Confirm(10) Cancel(11)
+ | | | | |■Key Input: CSelf12[一時変数２] [Wait for Input <!>]  Confirm (10) Cancel (11)
  | | | | |■Call Event [Name]: ["X[Bat]Enemy: Draw One"] <CommonEv 179>  / 12:カーソルＯＦＦ / -1
  | | | | |■Condition (Number):   [1] CSelf12[一時変数２] ==  10  /  [2] CSelf12[一時変数２] ==  11  
  | | | | |-◇Condition:  [1]  [ CSelf12[一時変数２] == 10   ] Case↓
@@ -804,7 +804,7 @@ WoditorEvCOMMAND_END
  | | | | |▼ 敵一体ランダム
  | | | | |■Call Event [Name]: ["X[Bat]Enemy: Draw One"] <CommonEv 179>  / 10:カーソルＯＮ / -1
  | | | | |▼ 決定かキャンセルか、だけ受付する
- | | | | |■Key Input: CSelf12[一時変数２] [Wait For Input <!>]  Confirm(10) Cancel(11)
+ | | | | |■Key Input: CSelf12[一時変数２] [Wait for Input <!>]  Confirm (10) Cancel (11)
  | | | | |■Call Event [Name]: ["X[Bat]Enemy: Draw One"] <CommonEv 179>  / 12:カーソルＯＦＦ / -1
  | | | | |■Condition (Number):   [1] CSelf12[一時変数２] ==  10  /  [2] CSelf12[一時変数２] ==  11  
  | | | | |-◇Condition:  [1]  [ CSelf12[一時変数２] == 10   ] Case↓

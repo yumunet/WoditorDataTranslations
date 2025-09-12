@@ -64,23 +64,23 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:@2\nP. G. Edy\n  My name's P. G. Edy!\n  I'm an old dude who came from Brazil!
-■Show Message:P. G. Edy\n  I love strong people!
-■Show Message:P. G. Edy\n  If you get to Level 10 or higher,\n  I'll join your party!
+■Show Message: @2\nP. G. Edy\n  My name's P. G. Edy!\n  I'm an old dude who came from Brazil!
+■Show Message: P. G. Edy\n  I love strong people!
+■Show Message: P. G. Edy\n  If you get to Level 10 or higher,\n  I'll join your party!
 ▼ Get Wolfarl's level and assign it to Self Variable 1.
 ■Call Event: This Ev Self1 = Common 22: [ ▲Get Ally Data [Number] ] / 12:Wolfarl / 10:Level
 ▼ If it's 10 or more, join the party.
 ■Condition (Number):   [1] This Ev Self1 >=  10  
 -◇Condition:  [1]  [ This Ev Self1 >= 10   ] Case↓
- |■Show Message:@4\nWolfarl informed him she was already at\nLevel \self[1].
- |■Show Message:@2\nP. G. Edy\n  Well, great! I'll come with you, miss!
+ |■Show Message: @4\nWolfarl informed him she was already at\nLevel \self[1].
+ |■Show Message: @2\nP. G. Edy\n  Well, great! I'll come with you, miss!
  |▼ Add Eddie to the party.
  |■Call Event: Common 5: [ ○ Change Members ] / 0:Add Member / 13:P. G. Edy
  |▼ Set Self Variable 0 to 1.
  |▼ (This page's condition is no longer met, and the event is no longer displayed.)
  |■Set Variable: This Ev Self0 = 1 + 0 
- |■Sound: SE File[SE/System_Get2_wolf.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
- |■Show Message:@2\nP. G. Edy has joined the party!
+ |■Sound: SE File [SE/System_Get2_wolf.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
+ |■Show Message: @2\nP. G. Edy has joined the party!
  |▼ Set the Cook Appearance variable to 1.
  |■Set Variable: V0[[Sample Game] Cook Appears] = 1 + 0 
  |■

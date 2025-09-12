@@ -390,8 +390,8 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf24[表示桁数] Upper Bound= 9 + 0 
 ▼ 表示サイズを取得（中央寄せするため）
 ■Set Variable: CSelf21[表示ピクチャ番号] = CSelf20[基本ピクチャ番号] + 0 
-■Picture Show: CSelf21[表示ピクチャ番号] [Top-Left] String[\font[1]\f[\csel] X:0 Y:0 / 0(0)Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
-■Set Variable+: CSelf13[総シフト量 横] = Picture:CSelf21[表示ピクチャ番号] 's Image Size (Width)
+■Picture Show: CSelf21[表示ピクチャ番号] [Top-Left] String [\font[1]\f[\csel] X:0 Y:0 / 0(0) Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+■Set Variable+: CSelf13[総シフト量 横] = Picture: CSelf21[表示ピクチャ番号]'s Image Size (Width)
 ■Set Variable: CSelf13[総シフト量 横] *= CSelf24[表示桁数] + 0 
 ■Set Variable: CSelf13[総シフト量 横] /= 2 + 0 
 ■Set Variable: CSelf13[総シフト量 横] -= 1 + 0 
@@ -455,17 +455,17 @@ WoditorEvCOMMAND_END
  | |■Picture [Reset Delay]: CSelf21[表示ピクチャ番号] 
  | |■Repeat Loop [ 1 ] Times
  | | |■Debug Text: >>\cself[21] \cself[0] \cself[1] (\cself[35] \cself[36])　\cself[16] \cself[17] \cself[18]
- | | |■Picture Show: CSelf21[表示ピクチャ番号] [Center] String[\E\font[1]\f[\cs] X:CSelf0[表示位置X] Y:CSelf1[表示位置Y] / 0(CSelf16[ディレイフレーム１])Frames  / Pattern Same / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[CSelf30[文字カラーR]] G[CSelf31[文字カラーG]] B[CSelf32[文字カラーB]]
- | | |■Picture Move: CSelf21[表示ピクチャ番号]  X:CSelf35[ジャンプ先X] Y:CSelf36[ジャンプ先Y] / 3(CSelf16[ディレイフレーム１])Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | |■Picture Move: CSelf21[表示ピクチャ番号]  X:CSelf0[表示位置X] Y:CSelf1[表示位置Y] / 3(CSelf17[ディレイフレーム２])Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | | |■Picture Erase: CSelf21[表示ピクチャ番号]  / 15(CSelf18[ディレイフレーム３（消去までの時間）])Frames
+ | | |■Picture Show: CSelf21[表示ピクチャ番号] [Center] String [\E\font[1]\f[\cs] X:CSelf0[表示位置X] Y:CSelf1[表示位置Y] / 0(CSelf16[ディレイフレーム１]) Frames  / Pattern Same / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[CSelf30[文字カラーR]] G[CSelf31[文字カラーG]] B[CSelf32[文字カラーB]]
+ | | |■Picture Move: CSelf21[表示ピクチャ番号]  X:CSelf35[ジャンプ先X] Y:CSelf36[ジャンプ先Y] / 3(CSelf16[ディレイフレーム１]) Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | |■Picture Move: CSelf21[表示ピクチャ番号]  X:CSelf0[表示位置X] Y:CSelf1[表示位置Y] / 3(CSelf17[ディレイフレーム２]) Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | |■Picture Erase: CSelf21[表示ピクチャ番号]  / 15(CSelf18[ディレイフレーム３（消去までの時間）]) Frames
  | | |■
  | |◇Loop End Point◇◇
  | |■Set Variable: CSelf16[ディレイフレーム１] to CSelf18[ディレイフレーム３（消去までの時間）] += 2 + 0 
  | |▼ 数値のサイズ分だけ横にずらす
  | |■Condition (Number):   [1] CSelf39[文字横幅] ==  -1  
  | |-◇Condition:  [1]  [ CSelf39[文字横幅] == -1   ] Case↓
- | | |■Set Variable+: CSelf39[文字横幅] = Picture:CSelf21[表示ピクチャ番号] 's Image Size (Width)
+ | | |■Set Variable+: CSelf39[文字横幅] = Picture: CSelf21[表示ピクチャ番号]'s Image Size (Width)
  | | |■
  | |◇End◇
  | |■Set Variable: CSelf0[表示位置X] += CSelf39[文字横幅] + 0 
@@ -490,10 +490,10 @@ WoditorEvCOMMAND_END
  |■Picture [Reset Delay]: CSelf21[表示ピクチャ番号] 
  |■Repeat Loop [ 1 ] Times
  | |■Debug Text: >>\cself[21] \cself[0] \cself[1] (\cself[35] \cself[36])　\cself[16] \cself[17] \cself[18]
- | |■Picture Show: CSelf21[表示ピクチャ番号] [Center] String[\f[\cself[38]]\E] X:CSelf0[表示位置X] Y:CSelf1[表示位置Y] / 0(CSelf16[ディレイフレーム１])Frames  / Pattern Same / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[CSelf30[文字カラーR]] G[CSelf31[文字カラーG]] B[CSelf32[文字カラーB]]
- | |■Picture Move: CSelf21[表示ピクチャ番号]  X:CSelf35[ジャンプ先X] Y:CSelf36[ジャンプ先Y] / 3(CSelf16[ディレイフレーム１])Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | |■Picture Move: CSelf21[表示ピクチャ番号]  X:CSelf0[表示位置X] Y:CSelf1[表示位置Y] / 3(CSelf17[ディレイフレーム２])Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | |■Picture Erase: CSelf21[表示ピクチャ番号]  / 15(CSelf18[ディレイフレーム３（消去までの時間）])Frames
+ | |■Picture Show: CSelf21[表示ピクチャ番号] [Center] String [\f[\cself[38]]\E] X:CSelf0[表示位置X] Y:CSelf1[表示位置Y] / 0(CSelf16[ディレイフレーム１]) Frames  / Pattern Same / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[CSelf30[文字カラーR]] G[CSelf31[文字カラーG]] B[CSelf32[文字カラーB]]
+ | |■Picture Move: CSelf21[表示ピクチャ番号]  X:CSelf35[ジャンプ先X] Y:CSelf36[ジャンプ先Y] / 3(CSelf16[ディレイフレーム１]) Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | |■Picture Move: CSelf21[表示ピクチャ番号]  X:CSelf0[表示位置X] Y:CSelf1[表示位置Y] / 3(CSelf17[ディレイフレーム２]) Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | |■Picture Erase: CSelf21[表示ピクチャ番号]  / 15(CSelf18[ディレイフレーム３（消去までの時間）]) Frames
  | |■
  |◇Loop End Point◇◇
  |■

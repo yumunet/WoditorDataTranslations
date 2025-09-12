@@ -348,8 +348,8 @@ WoditorEvCOMMAND_END
  |■Picture [Reset Delay]: CSelf11[一時変数B] to CSelf21[一時ピクチャ番号] 
  |■Set Variable: CSelf10[一時変数A] = -80 * CSelf88[座標倍率X[x10]] 
  |■Set Variable: CSelf10[一時変数A] /= 10 + 0 
- |■Picture Move: CSelf11[一時変数B] to CSelf21[一時ピクチャ番号]  Relative X:CSelf10[一時変数A] Y:0 / 7(0)Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- |■Picture Erase: CSelf11[一時変数B] to CSelf21[一時ピクチャ番号]  / 0(7)Frames
+ |■Picture Move: CSelf11[一時変数B] to CSelf21[一時ピクチャ番号]  Relative X:CSelf10[一時変数A] Y:0 / 7(0) Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ |■Picture Erase: CSelf11[一時変数B] to CSelf21[一時ピクチャ番号]  / 0(7) Frames
  |■Exit Event
  |■
 ◇End◇
@@ -371,8 +371,8 @@ WoditorEvCOMMAND_END
  | |▼ まずウィンドウ表示
  | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[ピクチャ基本番号] + 0 
  | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] Window(CSelf8[ウィンドウ画像]) Size[CSelf52[サイズX],CSelf53[サイズY]] X:0 Y:0 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf50[表示X] / Shift Y CSelf51[表示Y]  [0]Frames
+ | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] Window (CSelf8[ウィンドウ画像]) Size [CSelf52[サイズX],CSelf53[サイズY]] X:0 Y:0 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf50[表示X] / Shift Y CSelf51[表示Y]  [0] Frames
  | |■Repeat Loop [ 1 ] Times
  | | |▼ アイテムコードから名前と所持数を得る
  | | |■Set String: CSelf7[一時文字列] = ""
@@ -402,16 +402,16 @@ WoditorEvCOMMAND_END
  | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[ピクチャ基本番号] + 1 
  | | |■Set Variable: CSelf12[一時座標X] = CSelf50[表示X] + CSelf54[項目表示X] 
  | | |■Set Variable: CSelf13[一時座標Y] = CSelf51[表示Y] + CSelf55[項目表示Y] 
- | | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] String[\f[\cself[19]]\c] X:0 Y:0 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- | | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf12[一時座標X] / Shift Y CSelf13[一時座標Y]  [0]Frames
+ | | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] String [\f[\cself[19]]\c] X:0 Y:0 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf12[一時座標X] / Shift Y CSelf13[一時座標Y]  [0] Frames
  | | |▼ サイズ調整する
  | | |■Set Variable: CSelf10[一時変数A] = CSelf52[サイズX] + 0 
  | | |■Set Variable: CSelf10[一時変数A] -= CSelf54[項目表示X] * 2 
- | | |■Set Variable+: CSelf11[一時変数B] = Picture:CSelf21[一時ピクチャ番号] 's Image Size (Width)
+ | | |■Set Variable+: CSelf11[一時変数B] = Picture: CSelf21[一時ピクチャ番号]'s Image Size (Width)
  | | |■Set Variable: CSelf10[一時変数A] *= 100 + 0 
  | | |■Set Variable: CSelf10[一時変数A] /= CSelf11[一時変数B] + 0 
  | | |■Set Variable: CSelf10[一時変数A] Upper Bound= 100 + 0 
- | | |■Picture Move: CSelf21[一時ピクチャ番号]  Relative X:0 Y:0 / 0(0)Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom CSelf10[一時変数A]% / Color Same
+ | | |■Picture Move: CSelf21[一時ピクチャ番号]  Relative X:0 Y:0 / 0(0) Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom CSelf10[一時変数A]% / Color Same
  | | |■
  | |◇Loop End Point◇◇
  | |■
@@ -426,9 +426,9 @@ WoditorEvCOMMAND_END
  | |■Set Variable: CSelf12[一時座標X] = -5 * CSelf88[座標倍率X[x10]] 
  | |■Set Variable: CSelf13[一時座標Y] = 0 + 0 
  | |■Picture [Reset Delay]: CSelf11[一時変数B] to CSelf21[一時ピクチャ番号] 
- | |■Picture Move: CSelf11[一時変数B] to CSelf21[一時ピクチャ番号]  X:CSelf12[一時座標X] Y:CSelf13[一時座標Y] / 0(0)Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | |■Picture Move: CSelf11[一時変数B] to CSelf21[一時ピクチャ番号]  X:0 Y:0 / 7(0)Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- | |■Picture Move: CSelf11[一時変数B] to CSelf21[一時ピクチャ番号]  X:0 Y:0 / 7(4)Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | |■Picture Move: CSelf11[一時変数B] to CSelf21[一時ピクチャ番号]  X:CSelf12[一時座標X] Y:CSelf13[一時座標Y] / 0(0) Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | |■Picture Move: CSelf11[一時変数B] to CSelf21[一時ピクチャ番号]  X:0 Y:0 / 7(0) Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | |■Picture Move: CSelf11[一時変数B] to CSelf21[一時ピクチャ番号]  X:0 Y:0 / 7(4) Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
  | |■
  |◇Loop End Point◇◇
  |■

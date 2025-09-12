@@ -299,7 +299,7 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf99[武器ある？] = 0 + 0 
 ■Condition (Number):   [1] CSelf0[対象戦闘ｽﾛｯﾄ] <=  -1  
 -◇Condition:  [1]  [ CSelf0[対象戦闘ｽﾛｯﾄ] <= -1   ] Case↓
- |■Show Message:\>「X[戦]一時ｽﾃ計算<装備補正>」エラー：\n　戦闘スロットが「-1」以下になっています。＞ \cself[0]
+ |■Show Message: \>「X[戦]一時ｽﾃ計算<装備補正>」エラー：\n　戦闘スロットが「-1」以下になっています。＞ \cself[0]
  |■Exit Event
  |■
 ◇End◇
@@ -333,7 +333,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [2]  [ CSelf1[使用する武器] != CSelf26[処理中装備欄]   ] Case↓
  | | | |▼ 武器スロットが指定と違うので、次の装備へ
  | | | |▼ ※主に攻撃時、使用する武器箇所が指定されている場合はその武器だけしかパラメータに加算しない
- | | | |■Loop Start: Go to Loop Start
+ | | | |■Go to Loop Start
  | | | |■
  | | |◇End◇
  | | |■Load DB(User):  CSelf52[攻撃力変化値総計] += UserDB[ "Weapons":CSelf21[一時装備番号]:"Attack Change" ] (3:-:8) 

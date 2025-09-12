@@ -44,6 +44,6 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:@4\nWolfarl\n  Barrel.
+■Show Message: @4\nWolfarl\n  Barrel.
 ■
 [COMMAND_TEXT_END]

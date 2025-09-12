@@ -200,13 +200,13 @@ WoditorEvCOMMAND_END
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Set Variable: CSelf40[Actual Wait Frames] = CSelf0[Wait Frames] + 0 
 ■Loop Start
- |■Key Input: CSelf10[Key] [Normal Input]  Confirm(10)
+ |■Key Input: CSelf10[Key] [Normal Input]  Confirm (10)
  |■Condition (Number):   [1] CSelf10[Key] !=  0  
  |-◇Condition:  [1]  [ CSelf10[Key] != 0   ] Case↓
  | |■Set Variable: CSelf40[Actual Wait Frames] -= 1 + 0 
  | |■
  |◇End◇
- |■Key Input: CSelf10[Key] [Normal Input]  SubKey(12)
+ |■Key Input: CSelf10[Key] [Normal Input]  Sub-Key (12)
  |■Condition (Number):   [1] CSelf10[Key] !=  0  
  |-◇Condition:  [1]  [ CSelf10[Key] != 0   ] Case↓
  | |■Set Variable: CSelf40[Actual Wait Frames] -= 2 + 0 

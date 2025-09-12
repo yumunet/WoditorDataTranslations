@@ -471,7 +471,7 @@ WoditorEvCOMMAND_END
  | |▼ Turn on the pixel movement.
  | |■Set Variable: CSelf0[Mode] = 0 + 0 
  | |▼ Move followers to the leader's position.
- | |■Party Images: Warp All Allies to Hero
+ | |■Party Images: Warp All Followers to Leader
  | |▼ Start parallel execution.
  | |■Set Variable: CSelf99[Activation Flag] = 1 + 0 
  | |■Exit Event
@@ -480,17 +480,17 @@ WoditorEvCOMMAND_END
  | |▼ Turn off. Reset the leader's X and Y pixel offsets to 0.
  | |■Set Variable: CSelf0[Mode] = 0 + 0 
  | |▼ Enable normal movement and restore the leader's condition.
- | |■Enable/Disable Input:   Down-Key  Left-Key  Right-Key  Up-Key   [ Movement ✓   Key Input ✓ ]
- | |■Effect Character: Hero[Fixed Direction ON/OFF] => OFF 
+ | |■Enable/Disable Input:   Down  Left  Right  Up   [ Movement ✓   Key Input ✓ ]
+ | |■Effect Character: Leader[Fixed Direction ON/OFF] => OFF 
  | |▼ Ver.3.10  Changed the following to Effects.
- | |■Effect Character: Hero[Force Moving Animation] => OFF 
- | |■Effect Character: Ally 1[Force Moving Animation] => OFF 
- | |■Effect Character: Ally 2[Force Moving Animation] => OFF 
- | |■Effect Character: Ally 3[Force Moving Animation] => OFF 
- | |■Effect Character: Ally 4[Force Moving Animation] => OFF 
- | |■Effect Character: Ally 5[Force Moving Animation] => OFF 
+ | |■Effect Character: Leader[Force Walk Animation] => OFF 
+ | |■Effect Character: Follower 1[Force Walk Animation] => OFF 
+ | |■Effect Character: Follower 2[Force Walk Animation] => OFF 
+ | |■Effect Character: Follower 3[Force Walk Animation] => OFF 
+ | |■Effect Character: Follower 4[Force Walk Animation] => OFF 
+ | |■Effect Character: Follower 5[Force Walk Animation] => OFF 
  | |▼ Move followers to the leader's position.
- | |■Party Images: Warp All Allies to Hero
+ | |■Party Images: Warp All Followers to Leader
  | |▼ Reset pixel offsets to 0.
  | |▼   If not reset, it may get stuck in unexpected places or prevent passage through spaces one square wide.
  | |■Set Variable: CSelf10[Destination Variable] = 9180007 + 0 
@@ -508,10 +508,10 @@ WoditorEvCOMMAND_END
 ■Condition (Number):   [1] Sys13:Event Active? (1:Yes) ==  0  
 -◇Condition:  [1]  [ Sys13:Event Active? (1:Yes) == 0   ] Case↓
  |▼ Disable normal movement using keys, and move characters only with the Pixel Movement command in this common event.
- |■Enable/Disable Input:   Down-Key  Left-Key  Right-Key  Up-Key   [ Movement ×   Key Input ✓ ]
+ |■Enable/Disable Input:   Down  Left  Right  Up   [ Movement ×   Key Input ✓ ]
  |▼ Accelerate in the direction of the held key.
  |▼ Check the up and down keys.
- |■Key Input: CSelf20[Up/Down Arrow Keys] [Normal Input]  Up-Down(8,2)
+ |■Key Input: CSelf20[Up/Down Arrow Keys] [Normal Input]  Up/Down (8, 2)
  |■Set Variable: CSelf13[Max X Speed [1/10]] = CSelf95[Max Speed (20-30 Preferred)] + 0 
  |■Set Variable: CSelf14[Max Y Speed [1/10]] = CSelf95[Max Speed (20-30 Preferred)] + 0 
  |■Condition (Number):   [1] CSelf20[Up/Down Arrow Keys] ==  8  /  [2] CSelf20[Up/Down Arrow Keys] ==  2  
@@ -533,7 +533,7 @@ WoditorEvCOMMAND_END
  | |■
  |◇End◇
  |▼ Check the left and right keys.
- |■Key Input: CSelf21[Left/Right Arrow Keys] [Normal Input]  Left-Right(4,6)
+ |■Key Input: CSelf21[Left/Right Arrow Keys] [Normal Input]  Left/Right (4, 6)
  |■Condition (Number):   [1] CSelf21[Left/Right Arrow Keys] ==  4  /  [2] CSelf21[Left/Right Arrow Keys] ==  6  
  |-◇Condition:  [1]  [ CSelf21[Left/Right Arrow Keys] == 4   ] Case↓
  | |▼ Left
@@ -585,17 +585,17 @@ WoditorEvCOMMAND_END
  | |■
  |◇End◇
  |▼ Move
- |■Effect Character: Hero[Pixel Movement (Beta)] =>  X CSelf17[X Displacement]  Y CSelf18[Y Displacement]
+ |■Effect Character: Leader[Pixel Movement (Beta)] =>  X CSelf17[X Displacement]  Y CSelf18[Y Displacement]
  |■Repeat Loop [ 0 ] Times
  | |▼ Debug command for speed check.
- | |■Picture Show: 999888 [Top-Left] String[\E\f[12]Speed X ] X:0 Y:0 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | |■Picture Show: 999888 [Top-Left] String [\E\f[12]Speed X ] X:0 Y:0 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | |■
  |◇Loop End Point◇◇
  |■Repeat Loop [ 1 ] Times
  | |▼ Specify the members' facing direction. If not specified, the system determines the direction,
  | |▼ but this process overrides it to use the direction of the pressed key.
  | |■Set Variable: CSelf98[Direction Fixed?] = 1 + 0 
- | |■Effect Character: Hero[Fixed Direction ON/OFF] => ON 
+ | |■Effect Character: Leader[Fixed Direction ON/OFF] => ON 
  | |▼ Direction
  | |■Set Variable: CSelf10[Destination Variable] = 9180006 + 0 
  | |■Condition (Number):   [1] CSelf20[Up/Down Arrow Keys] ==  0  /  [2] CSelf20[Up/Down Arrow Keys] ==  8  /  [3] CSelf20[Up/Down Arrow Keys] ==  2  
@@ -604,34 +604,34 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [1]  [ CSelf21[Left/Right Arrow Keys] == 0   ] Case↓
  | | | |▼ Stop
  | | | |▼ Ver.3.10  Changed the following to Effects.
- | | | |■Effect Character: Hero[Force Moving Animation] => OFF 
- | | | |■Effect Character: Ally 1[Force Moving Animation] => OFF 
- | | | |■Effect Character: Ally 2[Force Moving Animation] => OFF 
- | | | |■Effect Character: Ally 3[Force Moving Animation] => OFF 
- | | | |■Effect Character: Ally 4[Force Moving Animation] => OFF 
- | | | |■Effect Character: Ally 5[Force Moving Animation] => OFF 
+ | | | |■Effect Character: Leader[Force Walk Animation] => OFF 
+ | | | |■Effect Character: Follower 1[Force Walk Animation] => OFF 
+ | | | |■Effect Character: Follower 2[Force Walk Animation] => OFF 
+ | | | |■Effect Character: Follower 3[Force Walk Animation] => OFF 
+ | | | |■Effect Character: Follower 4[Force Walk Animation] => OFF 
+ | | | |■Effect Character: Follower 5[Force Walk Animation] => OFF 
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf21[Left/Right Arrow Keys] == 4   ] Case↓
  | | | |▼ Left
  | | | |■Set Variable: V[CSelf10[Destination Variable]] = 4 + 0 
  | | | |▼ Ver.3.10  Changed the following to Effects.
- | | | |■Effect Character: Hero[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 1[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 2[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 3[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 4[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 5[Force Moving Animation] => ON 
+ | | | |■Effect Character: Leader[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 1[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 2[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 3[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 4[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 5[Force Walk Animation] => ON 
  | | | |■
  | | |-◇Condition:  [3]  [ CSelf21[Left/Right Arrow Keys] == 6   ] Case↓
  | | | |▼ Right
  | | | |■Set Variable: V[CSelf10[Destination Variable]] = 6 + 0 
  | | | |▼ Ver.3.10  Changed the following to Effects.
- | | | |■Effect Character: Hero[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 1[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 2[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 3[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 4[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 5[Force Moving Animation] => ON 
+ | | | |■Effect Character: Leader[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 1[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 2[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 3[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 4[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 5[Force Walk Animation] => ON 
  | | | |■
  | | |◇End◇
  | | |■
@@ -641,34 +641,34 @@ WoditorEvCOMMAND_END
  | | | |▼ Up
  | | | |■Set Variable: V[CSelf10[Destination Variable]] = 8 + 0 
  | | | |▼ Ver.3.10  Changed the following to Effects.
- | | | |■Effect Character: Hero[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 1[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 2[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 3[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 4[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 5[Force Moving Animation] => ON 
+ | | | |■Effect Character: Leader[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 1[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 2[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 3[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 4[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 5[Force Walk Animation] => ON 
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf21[Left/Right Arrow Keys] == 4   ] Case↓
  | | | |▼ Upper Left
  | | | |■Set Variable: V[CSelf10[Destination Variable]] = 7 + 0 
  | | | |▼ Ver.3.10  Changed the following to Effects.
- | | | |■Effect Character: Hero[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 1[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 2[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 3[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 4[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 5[Force Moving Animation] => ON 
+ | | | |■Effect Character: Leader[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 1[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 2[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 3[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 4[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 5[Force Walk Animation] => ON 
  | | | |■
  | | |-◇Condition:  [3]  [ CSelf21[Left/Right Arrow Keys] == 6   ] Case↓
  | | | |▼ Upper Right
  | | | |■Set Variable: V[CSelf10[Destination Variable]] = 9 + 0 
  | | | |▼ Ver.3.10  Changed the following to Effects.
- | | | |■Effect Character: Hero[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 1[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 2[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 3[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 4[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 5[Force Moving Animation] => ON 
+ | | | |■Effect Character: Leader[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 1[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 2[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 3[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 4[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 5[Force Walk Animation] => ON 
  | | | |■
  | | |◇End◇
  | | |■
@@ -678,34 +678,34 @@ WoditorEvCOMMAND_END
  | | | |▼ Down
  | | | |■Set Variable: V[CSelf10[Destination Variable]] = 2 + 0 
  | | | |▼ Ver.3.10  Changed the following to Effects.
- | | | |■Effect Character: Hero[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 1[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 2[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 3[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 4[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 5[Force Moving Animation] => ON 
+ | | | |■Effect Character: Leader[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 1[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 2[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 3[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 4[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 5[Force Walk Animation] => ON 
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf21[Left/Right Arrow Keys] == 4   ] Case↓
  | | | |▼ Lower Left
  | | | |■Set Variable: V[CSelf10[Destination Variable]] = 1 + 0 
  | | | |▼ Ver.3.10  Changed the following to Effects.
- | | | |■Effect Character: Hero[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 1[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 2[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 3[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 4[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 5[Force Moving Animation] => ON 
+ | | | |■Effect Character: Leader[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 1[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 2[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 3[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 4[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 5[Force Walk Animation] => ON 
  | | | |■
  | | |-◇Condition:  [3]  [ CSelf21[Left/Right Arrow Keys] == 6   ] Case↓
  | | | |▼ Lower Right
  | | | |■Set Variable: V[CSelf10[Destination Variable]] = 3 + 0 
  | | | |▼ Ver.3.10  Changed the following to Effects.
- | | | |■Effect Character: Hero[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 1[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 2[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 3[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 4[Force Moving Animation] => ON 
- | | | |■Effect Character: Ally 5[Force Moving Animation] => ON 
+ | | | |■Effect Character: Leader[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 1[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 2[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 3[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 4[Force Walk Animation] => ON 
+ | | | |■Effect Character: Follower 5[Force Walk Animation] => ON 
  | | | |■
  | | |◇End◇
  | | |■
@@ -718,14 +718,14 @@ WoditorEvCOMMAND_END
  |▼ (In order to avoid decelerating for an event that ends instantly.)
  |■Condition (Number):   [1] CSelf98[Direction Fixed?] ==  1  
  |-◇Condition:  [1]  [ CSelf98[Direction Fixed?] == 1   ] Case↓
- | |■Effect Character: Hero[Fixed Direction ON/OFF] => OFF 
+ | |■Effect Character: Leader[Fixed Direction ON/OFF] => OFF 
  | |▼ Ver.3.10  Changed the following to Effects.
- | |■Effect Character: Hero[Force Moving Animation] => OFF 
- | |■Effect Character: Ally 1[Force Moving Animation] => OFF 
- | |■Effect Character: Ally 2[Force Moving Animation] => OFF 
- | |■Effect Character: Ally 3[Force Moving Animation] => OFF 
- | |■Effect Character: Ally 4[Force Moving Animation] => OFF 
- | |■Effect Character: Ally 5[Force Moving Animation] => OFF 
+ | |■Effect Character: Leader[Force Walk Animation] => OFF 
+ | |■Effect Character: Follower 1[Force Walk Animation] => OFF 
+ | |■Effect Character: Follower 2[Force Walk Animation] => OFF 
+ | |■Effect Character: Follower 3[Force Walk Animation] => OFF 
+ | |■Effect Character: Follower 4[Force Walk Animation] => OFF 
+ | |■Effect Character: Follower 5[Force Walk Animation] => OFF 
  | |■Set Variable: CSelf98[Direction Fixed?] = 0 + 0 
  | |■
  |◇End◇

@@ -746,7 +746,7 @@ WoditorEvCOMMAND_END
  | |■Set Variable: CSelf12[一時変数C] = V[CSelf13[一時変数D]] + 0 
  | |■Condition (Number):   [1] CSelf12[一時変数C] <=  -1  
  | |-◇Condition:  [1]  [ CSelf12[一時変数C] <= -1   ] Case↓
- | | |■Loop Start: Go to Loop Start
+ | | |■Go to Loop Start
  | | |■
  | |◇End◇
  | |■Call Event [Name]: CSelf14[一時変数E] = ["X[Bat]Get Basic State"] <CommonEv 176>  / CSelf12[一時変数C] / 3:狙われ度
@@ -794,7 +794,7 @@ WoditorEvCOMMAND_END
  |■Condition (Number):   [1] CSelf12[一時変数C] <=  -1  
  |-◇Condition:  [1]  [ CSelf12[一時変数C] <= -1   ] Case↓
  | |▼ 誰かが狙われ度1以上などの理由で、対象スロットが空なら次へ
- | |■Loop Start: Go to Loop Start
+ | |■Go to Loop Start
  | |■
  |◇End◇
  |■Condition (Number):   [1] CSelf1[どこまで処理済] ==  CSelf12[一時変数C]  
@@ -809,7 +809,7 @@ WoditorEvCOMMAND_END
  | |■Condition (Number):   [1] CSelf14[一時変数E] >=  1  
  | |-◇Condition:  [1]  [ CSelf14[一時変数E] >= 1   ] Case↓
  | | |▼ 敵の場合、戦闘不能なら無視
- | | |■Loop Start: Go to Loop Start
+ | | |■Go to Loop Start
  | | |■
  | |◇End◇
  | |■
@@ -826,7 +826,7 @@ WoditorEvCOMMAND_END
  | | | |■Condition (Number):   [1] CSelf14[一時変数E] <=  -1  
  | | | |-◇Condition:  [1]  [ CSelf14[一時変数E] <= -1   ] Case↓
  | | | | |▼ 「狙われない」ならターゲットにしない
- | | | | |■Loop Start: Go to Loop Start
+ | | | | |■Go to Loop Start
  | | | | |■
  | | | |◇End◇
  | | | |■
@@ -841,7 +841,7 @@ WoditorEvCOMMAND_END
  | | | |■Condition (Number):   [1] CSelf14[一時変数E] <=  -1  
  | | | |-◇Condition:  [1]  [ CSelf14[一時変数E] <= -1   ] Case↓
  | | | | |▼ 「狙われない」ならターゲットにしない
- | | | | |■Loop Start: Go to Loop Start
+ | | | | |■Go to Loop Start
  | | | | |■
  | | | |◇End◇
  | | | |■
@@ -858,7 +858,7 @@ WoditorEvCOMMAND_END
  | | | | |■Condition (Number):   [1] CSelf14[一時変数E] <=  -1  
  | | | | |-◇Condition:  [1]  [ CSelf14[一時変数E] <= -1   ] Case↓
  | | | | | |▼ 「狙われない」ならターゲットにしない
- | | | | | |■Loop Start: Go to Loop Start
+ | | | | | |■Go to Loop Start
  | | | | | |■
  | | | | |◇End◇
  | | | | |■
@@ -886,7 +886,7 @@ WoditorEvCOMMAND_END
  | | | |■Condition (Number):   [1] CSelf14[一時変数E] <=  -2  
  | | | |-◇Condition:  [1]  [ CSelf14[一時変数E] <= -2   ] Case↓
  | | | | |▼ 狙われない＆全無効ならターゲットにしない
- | | | | |■Loop Start: Go to Loop Start
+ | | | | |■Go to Loop Start
  | | | | |■
  | | | |◇End◇
  | | | |■
@@ -901,7 +901,7 @@ WoditorEvCOMMAND_END
  | | | |■Condition (Number):   [1] CSelf14[一時変数E] <=  -2  
  | | | |-◇Condition:  [1]  [ CSelf14[一時変数E] <= -2   ] Case↓
  | | | | |▼ 狙われない＆全無効ならターゲットにしない
- | | | | |■Loop Start: Go to Loop Start
+ | | | | |■Go to Loop Start
  | | | | |■
  | | | |◇End◇
  | | | |■
@@ -954,7 +954,7 @@ WoditorEvCOMMAND_END
  | | |■
  | |-◇Else
  | | |▼ -1以下になることは通常ありえない。
- | | |■Show Message:\>X[戦]敵･味方行動対象算出：エラー\n　単体を対象とした技能の対象判定がおかしいです。\n　論理的なミスがあるか、改造によって\n　正常な処理が行われていない可能性があります。
+ | | |■Show Message: \>X[戦]敵･味方行動対象算出：エラー\n　単体を対象とした技能の対象判定がおかしいです。\n　論理的なミスがあるか、改造によって\n　正常な処理が行われていない可能性があります。
  | | |■Set Variable: CSelf99[次の対象] = -1 + 0 
  | | |■Exit Event
  | | |■
@@ -986,7 +986,7 @@ WoditorEvCOMMAND_END
  | |■
  |-◇Else
  | |▼ -1以下になることは通常ありえない。
- | |■Show Message:\>X[戦]敵･味方行動対象算出：エラー\n　全体を対象とした技能の対象判定がおかしいです。\n　論理的なミスがあるか、改造によって\n　正常な処理が行われていない可能性があります。
+ | |■Show Message: \>X[戦]敵･味方行動対象算出：エラー\n　全体を対象とした技能の対象判定がおかしいです。\n　論理的なミスがあるか、改造によって\n　正常な処理が行われていない可能性があります。
  | |■Set Variable: CSelf99[次の対象] = -1 + 0 
  | |■Exit Event
  | |■

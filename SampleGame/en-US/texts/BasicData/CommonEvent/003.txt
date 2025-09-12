@@ -196,11 +196,11 @@ WoditorEvCOMMAND_END
  |▼ If there's a message, display message.
  |■Condition (Number):   [1] CSelf0[Money Amount] >=  1  /  [2] CSelf0[Money Amount] <=  -1  
  |-◇Condition:  [1]  [ CSelf0[Money Amount] >= 1   ] Case↓
- | |■Show Message:@1\nObtained \cself[0] \cself[9].
+ | |■Show Message: @1\nObtained \cself[0] \cself[9].
  | |■
  |-◇Condition:  [2]  [ CSelf0[Money Amount] <= -1   ] Case↓
  | |■Set Variable: CSelf0[Money Amount] Absolute= CSelf0[Money Amount] + 0 
- | |■Show Message:@1\nLost \cself[0] \cself[9].
+ | |■Show Message: @1\nLost \cself[0] \cself[9].
  | |■
  |◇End◇
  |■

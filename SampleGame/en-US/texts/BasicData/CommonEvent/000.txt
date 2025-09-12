@@ -266,11 +266,11 @@ WoditorEvCOMMAND_END
  | |■Condition (Number):   [1] CSelf1[Amount [±]] >=  1  /  [2] CSelf1[Amount [±]] <=  -1  
  | |-◇Condition:  [1]  [ CSelf1[Amount [±]] >= 1   ] Case↓
  | | |▼ If items are gained, "Obtained Herb." appears.
- | | |■Show Message:@1\nObtained \cself[8].
+ | | |■Show Message: @1\nObtained \cself[8].
  | | |■
  | |-◇Condition:  [2]  [ CSelf1[Amount [±]] <= -1   ] Case↓
  | | |▼ If items are lost, "Lost Herb." appears.
- | | |■Show Message:@1\nLost \cself[8].
+ | | |■Show Message: @1\nLost \cself[8].
  | | |■
  | |◇End◇
  | |■
@@ -278,12 +278,12 @@ WoditorEvCOMMAND_END
  | |■Condition (Number):   [1] CSelf1[Amount [±]] >=  1  /  [2] CSelf1[Amount [±]] <=  -1  
  | |-◇Condition:  [1]  [ CSelf1[Amount [±]] >= 1   ] Case↓
  | | |▼ If items are gained, "Obtained Herb x4." appears.
- | | |■Show Message:@1\nObtained \cself[8]」 x\cself[1].
+ | | |■Show Message: @1\nObtained \cself[8]」 x\cself[1].
  | | |■
  | |-◇Condition:  [2]  [ CSelf1[Amount [±]] <= -1   ] Case↓
  | | |▼ If items are lost, "Lost Herb x2." appears.
  | | |■Set Variable: CSelf1[Amount [±]] Absolute= CSelf1[Amount [±]] + 0 
- | | |■Show Message:@1\nLost \cself[8] x\cself[1].
+ | | |■Show Message: @1\nLost \cself[8] x\cself[1].
  | | |■
  | |◇End◇
  | |■

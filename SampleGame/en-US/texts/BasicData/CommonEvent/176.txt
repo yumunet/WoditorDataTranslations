@@ -237,7 +237,7 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf10[結果] = 0 + 0 
 ■Condition (Number):   [1] CSelf0[対象戦闘ｽﾛｯﾄ] <=  -1  
 -◇Condition:  [1]  [ CSelf0[対象戦闘ｽﾛｯﾄ] <= -1   ] Case↓
- |■Show Message:\>「X[戦]基本状態取得」エラー：\n　戦闘スロットが「-1」以下になっています。＞ \cself[0]
+ |■Show Message: \>「X[戦]基本状態取得」エラー：\n　戦闘スロットが「-1」以下になっています。＞ \cself[0]
  |■Exit Event
  |■
 ◇End◇

@@ -51,7 +51,7 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:Welcome! You can do shopping like this using the\nincluded base system.
+■Show Message: Welcome! You can do shopping like this using the\nincluded base system.
 ■Call Event: Common 33: [ [1] Shop: Initialize ]
 ■Call Event: Common 34: [ [2] Shop: Add Merchandise ] / 1:Item [A] / 14:Medicine Bottle / -1:<None> / -1:<None>
 ■Call Event: Common 34: [ [2] Shop: Add Merchandise ] / 2:Weapon [B] / -3:<None> / 1:Mini Blade / -1:<None>

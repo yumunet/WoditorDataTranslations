@@ -387,7 +387,7 @@ WoditorEvCOMMAND_END
  | | | | | |▼ 味方全員
  | | | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 10:カーソルON（対象位置　位置-1なら全部） / -1 / -1
  | | | | | |▼ 決定かキャンセルか、だけ受付する
- | | | | | |■Key Input: CSelf12[一時変数C] [Wait For Input <!>]  Confirm(10) Cancel(11)
+ | | | | | |■Key Input: CSelf12[一時変数C] [Wait for Input <!>]  Confirm (10) Cancel (11)
  | | | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 12:カーソルOFF（対象位置　位置-1なら全部） / -1 / -1
  | | | | | |■Condition (Number):   [1] CSelf12[一時変数C] ==  10  /  [2] CSelf12[一時変数C] ==  11  
  | | | | | |-◇Condition:  [1]  [ CSelf12[一時変数C] == 10   ] Case↓

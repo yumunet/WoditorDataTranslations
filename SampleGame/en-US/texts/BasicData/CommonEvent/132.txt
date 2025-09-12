@@ -862,7 +862,7 @@ WoditorEvCOMMAND_END
  |●Label Point [キー処理開始] <<<<<<<<<<<<<<<<<<<<<<<<★
  |■Wait: 1 Frames
  |■Debug Text: \cself[10]
- |■Key Input: CSelf20[キー入力１] [Wait For Input <!>]  4-Dir. Confirm(10) Cancel(11)
+ |■Key Input: CSelf20[キー入力１] [Wait for Input <!>]  4-Dir. Confirm (10) Cancel (11)
  |●Label Point [基本キー処理] <<<<<<<<<<<<<<<<<<<<<<<<★
  |■Set Variable: CSelf13[戻る(-1) 次へ(1) 決定(2)] = 0 + 0 
  |■Condition (Number):   [1] CSelf20[キー入力１] ==  10  /  [2] CSelf20[キー入力１] ==  11  /  [3] CSelf20[キー入力１] ==  2  
@@ -883,7 +883,7 @@ WoditorEvCOMMAND_END
  | | | |■Set Variable: CSelf91[キャンセル時選択位置] = 0 + 0 
  | | | |■Loop Start
  | | | | |■Wait: 1 Frames
- | | | | |■Key Input: CSelf21[キー入力２] [Wait For Input <!>]  Up-Down(8,2) Confirm(10) Cancel(11)
+ | | | | |■Key Input: CSelf21[キー入力２] [Wait for Input <!>]  Up/Down (8, 2) Confirm (10) Cancel (11)
  | | | | |■Condition (Number):   [1] CSelf21[キー入力２] ==  11  /  [2] CSelf21[キー入力２] ==  10  /  [3] CSelf21[キー入力２] ==  8  /  [4] CSelf21[キー入力２] ==  2  
  | | | | |-◇Condition:  [1]  [ CSelf21[キー入力２] == 11   ] Case↓
  | | | | | |▼ キャンセルならそのまま保存せず終了
@@ -1425,7 +1425,7 @@ WoditorEvCOMMAND_END
  | | |▼ キャンセルを離すまで停止
  | | |■Loop Start
  | | | |■Wait: 1 Frames
- | | | |■Key Input: CSelf21[キー入力２] [Normal Input]  Cancel(11)
+ | | | |■Key Input: CSelf21[キー入力２] [Normal Input]  Cancel (11)
  | | | |■Condition (Number):   [1] CSelf21[キー入力２] ==  0  
  | | | |-◇Condition:  [1]  [ CSelf21[キー入力２] == 0   ] Case↓
  | | | | |■Break Loop

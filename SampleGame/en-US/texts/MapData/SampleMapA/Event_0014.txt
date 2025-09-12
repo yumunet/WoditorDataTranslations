@@ -64,23 +64,23 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:Good day! \nWhat do you want to try?
-■Show Choice:/ [1] Flash / [2] Shake / [3] Zoom in / [4] Unzoom / [5] Shake the screen 
+■Show Message: Good day! \nWhat do you want to try?
+■Show Choice: / [1] Flash / [2] Shake / [3] Zoom in / [4] Unzoom / [5] Shake the screen 
 -◇Case: Choice [1] Flash                                    ↓
  |■Wait: 5 Frames
- |■Effect Character: This Event[Flash] R100/G100/B100  [40]Frames
+ |■Effect Character: This Event[Flash] R100/G100/B100  [40] Frames
  |■
 -◇Case: Choice [2] Shake                                    ↓
- |■Effect Character: This Event[Shake] Shake X 2 / Shake Y 0 / 100 Times  [1]Frames
+ |■Effect Character: This Event[Shake] Shake X 2 / Shake Y 0 / 100 Times  [1] Frames
  |■
 -◇Case: Choice [3] Zoom in                                  ↓
- |■Effect Map: [Zoom] Center X 160 / Center Y 120 / 200%  [10]Frames
+ |■Effect Map: [Zoom] Center X 160 / Center Y 120 / 200%  [10] Frames
  |■
 -◇Case: Choice [4] Unzoom                                   ↓
- |■Effect Map: [Zoom] Center X 160 / Center Y 120 / 100%  [10]Frames
+ |■Effect Map: [Zoom] Center X 160 / Center Y 120 / 100%  [10] Frames
  |■
 -◇Case: Choice [5] Shake the screen                         ↓
- |■Effect Map: [Shake] Power 5 / Speed 5 / Vertical Shake  [30]Frames
+ |■Effect Map: [Shake] Power 5 / Speed 5 / Vertical Shake  [30] Frames
  |■
 -◇Case: Cancel
  |■

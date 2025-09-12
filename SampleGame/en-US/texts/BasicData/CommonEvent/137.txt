@@ -528,7 +528,7 @@ WoditorEvCOMMAND_END
 ◇End◇
 ■Condition (Number):   [1] CSelf0[戦闘スロット] <  0  
 -◇Condition:  [1]  [ CSelf0[戦闘スロット] < 0   ] Case↓
- |■Show Message:\>X[戦]状態付与/消去：エラー\n　戦闘スロット 0 未満は\n　指定できません。>\cself[0]
+ |■Show Message: \>X[戦]状態付与/消去：エラー\n　戦闘スロット 0 未満は\n　指定できません。>\cself[0]
  |■Exit Event
  |■
 ◇End◇
@@ -770,7 +770,7 @@ WoditorEvCOMMAND_END
  | | | |■Condition (Number):   [1] CSelf15[全回復対象フラグ？] ==  0  
  | | | |-◇Condition:  [1]  [ CSelf15[全回復対象フラグ？] == 0   ] Case↓
  | | | | |▼ 全回復対象でなかったら次へ
- | | | | |■Loop Start: Go to Loop Start
+ | | | | |■Go to Loop Start
  | | | | |■
  | | | |◇End◇
  | | | |■

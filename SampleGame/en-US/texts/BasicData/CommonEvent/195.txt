@@ -242,7 +242,7 @@ WoditorEvCOMMAND_END
  |■Condition (Number):   [1] CSelf16[発動者スロット] <=  -1  
  |-◇Condition:  [1]  [ CSelf16[発動者スロット] <= -1   ] Case↓
  | |▼ 誰もいなかったら次へ
- | |■Loop Start: Go to Loop Start
+ | |■Go to Loop Start
  | |■
  |◇End◇
  |■Call Event [Name]: ["X[Bat]Update States"] <CommonEv 139>  / CSelf16[発動者スロット] / 0:自分の番の直前 / 0:攻撃力も精神攻撃力もない

@@ -218,15 +218,15 @@ WoditorEvCOMMAND_END
 ▼ [Process Overview]
 ▼   A wait function that can be skipped by pressing a key.
 ▼ ―――――――――――――――――――――――――――――――――――
-■Key Input: CSelf10[Previous Key [Confirm]] [Normal Input]  Confirm(10)
-■Key Input: CSelf11[Previous Key [Cancel]] [Normal Input]  Cancel(11)
-■Key Input: CSelf12[Previous Key [Sub]] [Normal Input]  SubKey(12)
+■Key Input: CSelf10[Previous Key [Confirm]] [Normal Input]  Confirm (10)
+■Key Input: CSelf11[Previous Key [Cancel]] [Normal Input]  Cancel (11)
+■Key Input: CSelf12[Previous Key [Sub]] [Normal Input]  Sub-Key (12)
 ■Wait: CSelf1[Minimum Wait] Frames
 ■Set Variable: CSelf0[Wait Frames] -= CSelf1[Minimum Wait] + 1 
 ■Repeat Loop [ CSelf0[Wait Frames] ] Times
- |■Key Input: CSelf13[Current Key [Confirm]] [Normal Input]  Confirm(10)
- |■Key Input: CSelf14[Current Key [Cancel]] [Normal Input]  Cancel(11)
- |■Key Input: CSelf15[Current Key [Sub]] [Normal Input]  SubKey(12)
+ |■Key Input: CSelf13[Current Key [Confirm]] [Normal Input]  Confirm (10)
+ |■Key Input: CSelf14[Current Key [Cancel]] [Normal Input]  Cancel (11)
+ |■Key Input: CSelf15[Current Key [Sub]] [Normal Input]  Sub-Key (12)
  |■Condition (Number):   [1] CSelf10[Previous Key [Confirm]] ==  0  
  |-◇Condition:  [1]  [ CSelf10[Previous Key [Confirm]] == 0   ] Case↓
  | |■Condition (Number):   [1] CSelf13[Current Key [Confirm]] !=  0  

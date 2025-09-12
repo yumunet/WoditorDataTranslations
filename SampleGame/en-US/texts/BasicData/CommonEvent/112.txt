@@ -421,7 +421,7 @@ WoditorEvCOMMAND_END
 ▼  
 ▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
-■Debug Text Clear
+■Debug Text [Clear]
 ■Write to DB(Var): [Reset Type "Universal Window Items"(19)]
 ■Set Variable: CSelf32[万能DB登録位置] = 0 + 0 
 ■Set Variable: CSelf38[武器＝０　防具＝１] = -1 + 0 
@@ -464,7 +464,7 @@ WoditorEvCOMMAND_END
  | | | | |▼ 逆に装備欄0なら、武器はそのままスルー
  | | | | |■Condition (Number):   [1] CSelf38[武器＝０　防具＝１] ==  1  
  | | | | |-◇Condition:  [1]  [ CSelf38[武器＝０　防具＝１] == 1   ] Case↓
- | | | | | |■Loop Start: Go to Loop Start
+ | | | | | |■Go to Loop Start
  | | | | | |■
  | | | | |◇End◇
  | | | | |■
@@ -507,7 +507,7 @@ WoditorEvCOMMAND_END
  | | | | | |■
  | | | | |-◇Else
  | | | | | |▼ ビットを満たさないのは表示なし（該当する装備欄の装備ではない）
- | | | | | |■Loop Start: Go to Loop Start
+ | | | | | |■Go to Loop Start
  | | | | | |■
  | | | | |◇End◇
  | | | | |■

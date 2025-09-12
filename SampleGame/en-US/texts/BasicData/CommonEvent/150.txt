@@ -225,17 +225,17 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf10[コマンド番号] = -1 + 0 
 ■Condition (Number):   [1] CSelf0[対象戦闘ｽﾛｯﾄ] <=  -1  
 -◇Condition:  [1]  [ CSelf0[対象戦闘ｽﾛｯﾄ] <= -1   ] Case↓
- |■Show Message:\>「X[戦]戦闘コマンド取得」エラー\n　「-1」番以下の戦闘スロット番号が指定されました。＞\cself[0]
+ |■Show Message: \>「X[戦]戦闘コマンド取得」エラー\n　「-1」番以下の戦闘スロット番号が指定されました。＞\cself[0]
  |■Exit Event
  |■
 ◇End◇
 ■Condition (Number):   [1] CSelf1[コマンド位置] <=  -1  /  [2] CSelf1[コマンド位置] >=  8  
 -◇Condition:  [1]  [ CSelf1[コマンド位置] <= -1   ] Case↓
- |■Show Message:\>「X[戦]戦闘コマンド取得」エラー\n　「-1」番以下のコマンド番号が指定されました。＞\cself[1]
+ |■Show Message: \>「X[戦]戦闘コマンド取得」エラー\n　「-1」番以下のコマンド番号が指定されました。＞\cself[1]
  |■Exit Event
  |■
 -◇Condition:  [2]  [ CSelf1[コマンド位置] >= 8   ] Case↓
- |■Show Message:\>「X[戦]戦闘コマンド取得」エラー\n　「8」番以上のコマンド番号が指定されました。＞\cself[1]
+ |■Show Message: \>「X[戦]戦闘コマンド取得」エラー\n　「8」番以上のコマンド番号が指定されました。＞\cself[1]
  |■Exit Event
  |■
 ◇End◇

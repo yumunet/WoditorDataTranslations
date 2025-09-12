@@ -232,7 +232,7 @@ WoditorEvCOMMAND_END
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Condition (Number):   [1] CSelf0[対象主人公ID] <=  -1  
 -◇Condition:  [1]  [ CSelf0[対象主人公ID] <= -1   ] Case↓
- |■Show Message:\>「X[移]一時ｽﾃ計算<状態補正>」エラー：\n　主人公IDが「-1」以下になっています。＞ \cself[0]
+ |■Show Message: \>「X[移]一時ｽﾃ計算<状態補正>」エラー：\n　主人公IDが「-1」以下になっています。＞ \cself[0]
  |■Exit Event
  |■
 ◇End◇

@@ -466,13 +466,13 @@ WoditorEvCOMMAND_END
  |-◇Condition:  [1]  [ CSelf3[戦闘BGM] == -1   ] Case↓
  | |▼ BGM停止
  | |■Set String: CSelf8[再生戦闘曲] = ""
- | |■Sound: BGM File[\cself[8]] Vol 100% Freq 100% Loop 0 ms Play / Fade Time: 10 Frames
+ | |■Sound: BGM File [\cself[8]] Vol 100% Freq 100% Loop 0 ms Play / Fade Time: 10 Frames
  | |■
  |-◇Condition:  [2]  [ CSelf3[戦闘BGM] <= -2   ] Case↓
  | |▼ デフォルト曲の場合
  | |■Load DB(User):  CSelf8[再生戦闘曲] = UserDB[ "System Settings":0:"[Battle] Basic Battle BGM" ] (17:Basic System Settings:26) 
  | |▼ 戦闘BGMを再生
- | |■Sound: BGM File[\cself[8]] Vol 100% Freq 100% Loop 0 ms Play / Fade Time: 10 Frames
+ | |■Sound: BGM File [\cself[8]] Vol 100% Freq 100% Loop 0 ms Play / Fade Time: 10 Frames
  | |■
  |-◇Else
  | |▼ 指定BGMを再生
@@ -650,7 +650,7 @@ WoditorEvCOMMAND_END
  | | |■Call Event [Name]: CSelf11 = ["X[Bat]Get Ally ID From Slot"] <CommonEv 141>  / CSelf10
  | | |■Condition (Number):   [1] CSelf11 ==  -1  
  | | |-◇Condition:  [1]  [ CSelf11 == -1   ] Case↓
- | | | |■Loop Start: Go to Loop Start
+ | | | |■Go to Loop Start
  | | | |■
  | | |◇End◇
  | | |▼ キャラがいる場合は逃走エフェクト
@@ -683,7 +683,7 @@ WoditorEvCOMMAND_END
  |▼ 名前入力で音声読んでる場合はこちら
  |■Set String: CSelf9[記憶曲] =<Remove All> "Data\"
  |■Set String: CSelf9[記憶曲] =<Remove All> "Data/"
- |■Sound: BGM File[\cself[9]] Vol CSelf99[音量記憶]% Freq CSelf98[周波数記憶]% Loop 0 ms Play / Fade Time: 0 Frames
+ |■Sound: BGM File [\cself[9]] Vol CSelf99[音量記憶]% Freq CSelf98[周波数記憶]% Loop 0 ms Play / Fade Time: 0 Frames
  |■
 -◇Else
  |▼ システムDBから音声読んでる場合はこちらで

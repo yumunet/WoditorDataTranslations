@@ -171,9 +171,9 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:The three saw WOLF RPG Editor!
-■Show Message:@4\nWolfarl is reminiscing about bittersweet\nmemories!
-■Show Message:@2\nP. G. Edy is making a dirty grin for\nsome reason!
-■Show Message:@3\nAnd Yuichi was thinking about nothing...\n...except tonight's dinner!
+■Show Message: The three saw WOLF RPG Editor!
+■Show Message: @4\nWolfarl is reminiscing about bittersweet\nmemories!
+■Show Message: @2\nP. G. Edy is making a dirty grin for\nsome reason!
+■Show Message: @3\nAnd Yuichi was thinking about nothing...\n...except tonight's dinner!
 ■
 [COMMAND_TEXT_END]

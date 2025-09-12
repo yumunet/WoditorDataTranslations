@@ -271,7 +271,7 @@ WoditorEvCOMMAND_END
 ■Load DB(Var):  CSelf16[最大パーティ数] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
 ■Condition (Number):   [1] CSelf0[表示位置[0-..]] <  10  
 -◇Condition:  [1]  [ CSelf0[表示位置[0-..]] < 10   ] Case↓
- |■Show Message:\>「X[移]敵キャラ_座標算出」：エラー\n10番未満は指定できません
+ |■Show Message: \>「X[移]敵キャラ_座標算出」：エラー\n10番未満は指定できません
  |■Exit Event
  |■
 ◇End◇

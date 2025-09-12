@@ -664,7 +664,7 @@ WoditorEvCOMMAND_END
  | | | | |◇Loop End Point◇◇
  | | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 1:カーソルON（対象位置　位置-1なら全部） / CSelf11[ターゲット] / -1
  | | | | |▼ 決定かキャンセルだけ受け付け
- | | | | |■Key Input: CSelf10[一時変数] [Wait For Input <!>]  Confirm(10) Cancel(11)
+ | | | | |■Key Input: CSelf10[一時変数] [Wait for Input <!>]  Confirm (10) Cancel (11)
  | | | | |■Condition (Number):   [1] CSelf10[一時変数] ==  11  
  | | | | |-◇Condition:  [1]  [ CSelf10[一時変数] == 11   ] Case↓
  | | | | | |●Label Jump [終了処理] >>>>>>>>>>>>>>>>>>>>>>>>>
@@ -694,7 +694,7 @@ WoditorEvCOMMAND_END
  | | | |■Set Variable: CSelf16[単体(1)or全体(2)] = 2 + 0 
  | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 1:カーソルON（対象位置　位置-1なら全部） / -1 / 0
  | | | |▼ 決定かキャンセルか、だけ受付する
- | | | |■Key Input: CSelf12[一時変数２] [Wait For Input <!>]  Confirm(10) Cancel(11)
+ | | | |■Key Input: CSelf12[一時変数２] [Wait for Input <!>]  Confirm (10) Cancel (11)
  | | | |■Condition (Number):   [1] CSelf12[一時変数２] ==  10  /  [2] CSelf12[一時変数２] ==  11  
  | | | |-◇Condition:  [1]  [ CSelf12[一時変数２] == 10   ] Case↓
  | | | | |▼ 決定なら使用
@@ -720,7 +720,7 @@ WoditorEvCOMMAND_END
  | | | |◇End◇
  | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 4:カーソルランダムON / -1 / 0
  | | | |▼ 決定かキャンセルか、だけ受付する
- | | | |■Key Input: CSelf12[一時変数２] [Wait For Input <!>]  Confirm(10) Cancel(11)
+ | | | |■Key Input: CSelf12[一時変数２] [Wait for Input <!>]  Confirm (10) Cancel (11)
  | | | |■Condition (Number):   [1] CSelf12[一時変数２] ==  10  /  [2] CSelf12[一時変数２] ==  11  
  | | | |-◇Condition:  [1]  [ CSelf12[一時変数２] == 10   ] Case↓
  | | | | |▼ 決定なら使用
@@ -759,7 +759,7 @@ WoditorEvCOMMAND_END
  | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
  | | | | |■Set String: CSelf9[表示文字列] = "Can't target the user."
  | | | | |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / 0:初期表示 / CSelf9[表示文字列]
- | | | | |■Key Input: CSelf10[一時変数] [Wait For Input <!>]  Confirm(10) Cancel(11)
+ | | | | |■Key Input: CSelf10[一時変数] [Wait for Input <!>]  Confirm (10) Cancel (11)
  | | | | |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / -1:消去 / CSelf9[表示文字列]
  | | | | |●Label Jump [自分以外の味方一人] >>>>>>>>>>>>>>>>>>>>>>>>>
  | | | | |■
@@ -788,13 +788,13 @@ WoditorEvCOMMAND_END
  | | | |■Call Event [Name]: CSelf14[対象ID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf20[対象キャラ位置[Ver2.28]]
  | | | |■Condition (Number):   [1] CSelf14[対象ID] <=  -1  
  | | | |-◇Condition:  [1]  [ CSelf14[対象ID] <= -1   ] Case↓
- | | | | |■Loop Start: Go to Loop Start
+ | | | | |■Go to Loop Start
  | | | | |■
  | | | |◇End◇
  | | | |■Load DB(Var):  CSelf10[一時変数] = VarDB[ "┗ State List":CSelf14[対象ID]:0 ] (5:-:\udb[8:0] Steps Left) 
  | | | |■Condition (Number):   [1] CSelf10[一時変数] !=  0  
  | | | |-◇Condition:  [1]  [ CSelf10[一時変数] != 0   ] Case↓
- | | | | |■Loop Start: Go to Loop Start
+ | | | | |■Go to Loop Start
  | | | | |■
  | | | |◇End◇
  | | | |■Load DB(User):  CSelf33[技能TMP２] = UserDB[ "Skills":CSelf30[技能番号]:"┣ Attack Influence [%]           " ] (0:-:10) 
@@ -832,9 +832,9 @@ WoditorEvCOMMAND_END
  | |◇End◇
  | |■
  |◇End◇
- |■Condition (String):   [1] CSelf9[表示文字列] is not equal to ""
- |-◇Condition:  [1] [ CSelf9[表示文字列] is not equal to "" ] Case↓
- | |■Sound: SE File[\cself[9]] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
+ |■Condition (String):   [1] CSelf9[表示文字列] Is Not Equal to ""
+ |-◇Condition:  [1] [ CSelf9[表示文字列] Is Not Equal to "" ] Case↓
+ | |■Sound: SE File [\cself[9]] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
  | |■
  |-◇Else
  | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
@@ -851,7 +851,7 @@ WoditorEvCOMMAND_END
  | |■Call Event [Name]: CSelf14[対象ID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf11[ターゲット]
  | |■Condition (Number):   [1] CSelf14[対象ID] <=  -1  
  | |-◇Condition:  [1]  [ CSelf14[対象ID] <= -1   ] Case↓
- | | |■Loop Start: Go to Loop Start
+ | | |■Go to Loop Start
  | | |■
  | |◇End◇
  | |▼ ステータス回復エフェクト
@@ -997,7 +997,7 @@ WoditorEvCOMMAND_END
  | |■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / -1:削除 /  /  / 
  | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
  | |■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / 0:表示 / Can't use / any more. / 
- | |■Key Input: CSelf10[一時変数] [Wait For Input <!>]  Confirm(10) Cancel(11)
+ | |■Key Input: CSelf10[一時変数] [Wait for Input <!>]  Confirm (10) Cancel (11)
  | |■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / -1:削除 /  /  / 
  | |■
  |◇End◇

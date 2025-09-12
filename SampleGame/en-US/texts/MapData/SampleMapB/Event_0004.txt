@@ -46,8 +46,8 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:Do you know about Common Events?\nThey're events you can call in any map.
-■Show Message:Battles, shops, and other menus are all created\nby commands in the Common Events.
-■Show Message:Also, there are Common Events to handle adding\nitems, recovery, and such, so call them to use those\nfunctions.
+■Show Message: Do you know about Common Events?\nThey're events you can call in any map.
+■Show Message: Battles, shops, and other menus are all created\nby commands in the Common Events.
+■Show Message: Also, there are Common Events to handle adding\nitems, recovery, and such, so call them to use those\nfunctions.
 ■
 [COMMAND_TEXT_END]

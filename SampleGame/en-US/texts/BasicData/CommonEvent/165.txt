@@ -1647,8 +1647,8 @@ WoditorEvCOMMAND_END
  | | | |■Call Event [Name]: ["X[Bat]Display Dmg/Recovery Popup"] <CommonEv 181>  / CSelf18[対象の座標X] / CSelf19[対象の座標Y] / -1 / 5:クリティカル(1)/ミス(-1)
  | | | |▼ もし失敗メッセージがあれば表示
  | | | |■Load DB(User):  CSelf9[一時文字列] = UserDB[ "Skills":CSelf1[発動技能]:"Failure Message (Target..." ] (0:-:15) 
- | | | |■Condition (String):   [1] CSelf9[一時文字列] is not equal to ""
- | | | |-◇Condition:  [1] [ CSelf9[一時文字列] is not equal to "" ] Case↓
+ | | | |■Condition (String):   [1] CSelf9[一時文字列] Is Not Equal to ""
+ | | | |-◇Condition:  [1] [ CSelf9[一時文字列] Is Not Equal to "" ] Case↓
  | | | | |■Load DB(Var):  CSelf8[キャラ名] = VarDB[ "×┏Battle Temp Status":CSelf2[対象ｽﾛｯﾄ(単)]:"Character Name" ] (10:-:0) 
  | | | | |■Set String: CSelf9[一時文字列] = "\cself[8]\cself[9]"
  | | | | |■Call Event [Name]: ["X[Bat]Display Battle Message"] <CommonEv 182>  / 0:表示→自動削除 / CSelf9[一時文字列]
@@ -2406,8 +2406,8 @@ WoditorEvCOMMAND_END
  | | | | | |■
  | | | | |◇End◇
  | | | | |▼ カウンター時の文章があれば表示
- | | | | |■Condition (String):   [1] CSelf9[一時文字列] is not equal to ""
- | | | | |-◇Condition:  [1] [ CSelf9[一時文字列] is not equal to "" ] Case↓
+ | | | | |■Condition (String):   [1] CSelf9[一時文字列] Is Not Equal to ""
+ | | | | |-◇Condition:  [1] [ CSelf9[一時文字列] Is Not Equal to "" ] Case↓
  | | | | | |■Load DB(Var):  CSelf8[キャラ名] = VarDB[ "×┏Battle Temp Status":CSelf2[対象ｽﾛｯﾄ(単)]:"Character Name" ] (10:-:0) 
  | | | | | |■Set String: CSelf9[一時文字列] = "\cself[8]\cself[9]"
  | | | | | |■Call Event [Name]: ["X[Bat]Display Battle Message"] <CommonEv 182>  / 0:表示→自動削除 / CSelf9[一時文字列]

@@ -416,9 +416,9 @@ WoditorEvCOMMAND_END
 ■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 1:更新 / CSelf21[現カーソル位置]
 ■Load DB(Var):  CSelf20[コマンド最大数] = VarDB[ "Base System Variables":22:0 ] (18:Menu Command Count:Number) 
 ▼ もし上下キーが入ってたら、カーソルが動くまでの少しだけウェイト
-■Key Input: CSelf15[直前キー状態] [Normal Input]  Confirm(10) Cancel(11)
+■Key Input: CSelf15[直前キー状態] [Normal Input]  Confirm (10) Cancel (11)
 ■Repeat Loop [ 20 ] Times
- |■Key Input: CSelf14[キー入力状態2] [Normal Input]  Up-Down(8,2)
+ |■Key Input: CSelf14[キー入力状態2] [Normal Input]  Up/Down (8, 2)
  |■Condition (Number):   [1] CSelf14[キー入力状態2] ==  0  
  |-◇Condition:  [1]  [ CSelf14[キー入力状態2] == 0   ] Case↓
  | |■Break Loop
@@ -427,7 +427,7 @@ WoditorEvCOMMAND_END
  |▼ ただしキャンセルが押され直した場合は通り抜ける
  |■Condition (Number):   [1] CSelf15[直前キー状態] ==  0  
  |-◇Condition:  [1]  [ CSelf15[直前キー状態] == 0   ] Case↓
- | |■Key Input: CSelf13[キー入力状態] [Normal Input]  Cancel(11)
+ | |■Key Input: CSelf13[キー入力状態] [Normal Input]  Cancel (11)
  | |■Condition (Number):   [1] CSelf13[キー入力状態] ==  11  
  | |-◇Condition:  [1]  [ CSelf13[キー入力状態] == 11   ] Case↓
  | | |▼ 終了までジャンプ
@@ -436,7 +436,7 @@ WoditorEvCOMMAND_END
  | |◇End◇
  | |■
  |◇End◇
- |■Key Input: CSelf15[直前キー状態] [Normal Input]  Confirm(10) Cancel(11)
+ |■Key Input: CSelf15[直前キー状態] [Normal Input]  Confirm (10) Cancel (11)
  |■Wait: 1 Frames
  |■
 ◇Loop End Point◇◇
@@ -444,7 +444,7 @@ WoditorEvCOMMAND_END
 ■Loop Start
  |■Write to DB(Var): VarDB[ "Base System Variables":54:0 ] (18:Menu Cursor Position:Number) =  CSelf21[現カーソル位置]
  |■Wait: 1 Frames
- |■Key Input: CSelf13[キー入力状態] [Wait For Input <!>]  Up-Down(8,2) Confirm(10) Cancel(11)
+ |■Key Input: CSelf13[キー入力状態] [Wait for Input <!>]  Up/Down (8, 2) Confirm (10) Cancel (11)
  |■Condition (Number):   [1] CSelf13[キー入力状態] ==  2  /  [2] CSelf13[キー入力状態] ==  8  
  |-◇Condition:  [1]  [ CSelf13[キー入力状態] == 2   ] Case↓
  | |▼ 下キーを押した場合の処理
@@ -452,7 +452,7 @@ WoditorEvCOMMAND_END
  | |■Set Variable: CSelf21[現カーソル位置] %= CSelf20[コマンド最大数] + 0 
  | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
  | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 1:更新 / CSelf21[現カーソル位置]
- | |■Loop Start: Go to Loop Start
+ | |■Go to Loop Start
  | |■
  |-◇Condition:  [2]  [ CSelf13[キー入力状態] == 8   ] Case↓
  | |▼ 上キーを押した場合の処理
@@ -460,7 +460,7 @@ WoditorEvCOMMAND_END
  | |■Set Variable: CSelf21[現カーソル位置] %= CSelf20[コマンド最大数] + 0 
  | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
  | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 1:更新 / CSelf21[現カーソル位置]
- | |■Loop Start: Go to Loop Start
+ | |■Go to Loop Start
  | |■
  |-◇Else
  | |■Condition (Number):   [1] CSelf13[キー入力状態] ==  10  /  [2] CSelf13[キー入力状態] ==  11  
@@ -475,7 +475,7 @@ WoditorEvCOMMAND_END
  | | | |▼ コマンド選択不能
  | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
  | | | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 1:更新 / CSelf21[現カーソル位置]
- | | | |■Loop Start: Go to Loop Start
+ | | | |■Go to Loop Start
  | | | |■
  | | |◇End◇
  | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound

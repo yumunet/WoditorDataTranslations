@@ -367,7 +367,7 @@ WoditorEvCOMMAND_END
  | | | | | |■Condition (Number):   [1] CSelf12[一時変数B] <  CSelf13[一時変数C]  
  | | | | | |-◇Condition:  [1]  [ CSelf12[一時変数B] < CSelf13[一時変数C]   ] Case↓
  | | | | | | |▼ 必要ﾎﾟｲﾝﾄが足りなかったらチェック終了
- | | | | | | |■Loop Start: Go to Loop Start
+ | | | | | | |■Go to Loop Start
  | | | | | | |■
  | | | | | |◇End◇
  | | | | | |▼ 封印チェック
@@ -375,7 +375,7 @@ WoditorEvCOMMAND_END
  | | | | | |■Load DB(User):  CSelf12[一時変数B] *= UserDB[ "Skills":CSelf34[技能コード]:"When Skills Are Limited..." ] (0:-:21) 
  | | | | | |■Condition (Number):   [1] CSelf12[一時変数B] !=  0  
  | | | | | |-◇Condition:  [1]  [ CSelf12[一時変数B] != 0   ] Case↓
- | | | | | | |■Loop Start: Go to Loop Start
+ | | | | | | |■Go to Loop Start
  | | | | | | |■
  | | | | | |◇End◇
  | | | | | |▼ 発動アイテムチェック

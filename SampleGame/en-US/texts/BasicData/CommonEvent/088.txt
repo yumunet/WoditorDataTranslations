@@ -585,7 +585,7 @@ WoditorEvCOMMAND_END
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |▼ 下地だけは単体で消去
  |■Picture [Reset Delay]: CSelf20[基本ピクチャ番号] 
- |■Picture Erase: CSelf20[基本ピクチャ番号]  / 10(0)Frames
+ |■Picture Erase: CSelf20[基本ピクチャ番号]  / 10(0) Frames
  |▼ それ以外はスライド消去
  |■Set Variable: CSelf11[一時変数B] = CSelf20[基本ピクチャ番号] + 1 
  |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 12 
@@ -594,8 +594,8 @@ WoditorEvCOMMAND_END
  |▼ とりあえず左にスライドさせている
  |■Set Variable: CSelf10[一時変数A] = -120 * CSelf88[座標倍率X[x10]] 
  |■Set Variable: CSelf10[一時変数A] /= 10 + 0 
- |■Picture Move: CSelf11[一時変数B] to CSelf21[一時ピクチャ番号]  Relative X:CSelf10[一時変数A] Y:0 / 7(0)Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
- |■Picture Erase: CSelf11[一時変数B] to CSelf21[一時ピクチャ番号]  / 0(7)Frames
+ |■Picture Move: CSelf11[一時変数B] to CSelf21[一時ピクチャ番号]  Relative X:CSelf10[一時変数A] Y:0 / 7(0) Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ |■Picture Erase: CSelf11[一時変数B] to CSelf21[一時ピクチャ番号]  / 0(7) Frames
  |■Exit Event
  |■
 ◇End◇
@@ -622,24 +622,24 @@ WoditorEvCOMMAND_END
  |▼ 縦32、横24で割り切れない画面サイズのときに一部抜けるバグ修正　Ver3.20修正
  |■Set Variable: CSelf10[一時変数A] += 32 + 0 
  |■Set Variable: CSelf11[一時変数B] += 24 + 0 
- |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] Window[<GRADY-779-000>] Size[CSelf10[一時変数A],CSelf11[一時変数B]] X:0 Y:0 / 10(0)Frames  / Pattern 1 / Opacity 255 / Multiply  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] Window [<GRADY-779-000>] Size [CSelf10[一時変数A],CSelf11[一時変数B]] X:0 Y:0 / 10(0) Frames  / Pattern 1 / Opacity 255 / Multiply  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |▼ メニューを表示
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 1 
  |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] Window(CSelf8[ウィンドウ画像ファイル]) Size[CSelf24[横サイズ],CSelf25[縦サイズ]] X:CSelf22[表示X] Y:CSelf23[表示Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] Window (CSelf8[ウィンドウ画像ファイル]) Size [CSelf24[横サイズ],CSelf25[縦サイズ]] X:CSelf22[表示X] Y:CSelf23[表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  |■Repeat Loop [ 1 ] Times
  | |▼ ここでメニュー表示時エフェクト（「移動」コマンドで実現している）
  | |■Set Variable: CSelf41[一時項目表示X] = CSelf58[表示元X] + 0 
  | |■Set Variable: CSelf42[一時項目表示Y] = CSelf59[表示元Y] + 0 
  | |▼ 初期位置をシフト
  | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | |▼ 慣性移動
- | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf22[表示X] Y:CSelf23[表示Y] / 5(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf22[表示X] Y:CSelf23[表示Y] / 5(3)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf22[表示X] Y:CSelf23[表示Y] / 5(5)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf22[表示X] Y:CSelf23[表示Y] / 5(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf22[表示X] Y:CSelf23[表示Y] / 5(3) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf22[表示X] Y:CSelf23[表示Y] / 5(5) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | |■
  |◇Loop End Point◇◇
  |▼  
@@ -679,21 +679,21 @@ WoditorEvCOMMAND_END
  | |■Condition (Number):   [1] CSelf14[一時変数E] >=  0  /  [2] CSelf14[一時変数E] <=  -1  
  | |-◇Condition:  [1]  [ CSelf14[一時変数E] >= 0   ] Case↓
  | | |▼ コードが1以上なら普通の文字色で表示
- | | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] String[\f[\cself[19]]\c] X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] String [\f[\cself[19]]\c] X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | |■
  | |-◇Condition:  [2]  [ CSelf14[一時変数E] <= -1   ] Case↓
  | | |▼ コードが-1以下の場合は半透明に
- | | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] String[\f[\cself[19]]\c] X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0)Frames  / Pattern 1 / Opacity 128 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] String [\f[\cself[19]]\c] X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0) Frames  / Pattern 1 / Opacity 128 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | |■
  | |◇End◇
  | |▼ メニュー内容の横幅が溢れてたら横拡大率を減少させる
- | |■Set Variable+: CSelf11[一時変数B] = Picture:CSelf21[一時ピクチャ番号] 's Image Size (Width)
+ | |■Set Variable+: CSelf11[一時変数B] = Picture: CSelf21[一時ピクチャ番号]'s Image Size (Width)
  | |■Set Variable: CSelf13[一時変数D] = CSelf24[横サイズ] - CSelf88[座標倍率X[x10]] 
  | |■Condition (Number):   [1] CSelf11[一時変数B] >  CSelf13[一時変数D]  
  | |-◇Condition:  [1]  [ CSelf11[一時変数B] > CSelf13[一時変数D]   ] Case↓
  | | |■Set Variable: CSelf13[一時変数D] *= 100 + 0 
  | | |■Set Variable: CSelf13[一時変数D] /= CSelf11[一時変数B] + 0 
- | | |■Picture Move: CSelf21[一時ピクチャ番号]  Relative X:0 Y:0 / 0(0)Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom CSelf13[一時変数D]x100% / Color Same
+ | | |■Picture Move: CSelf21[一時ピクチャ番号]  Relative X:0 Y:0 / 0(0) Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom CSelf13[一時変数D]x100% / Color Same
  | | |■
  | |◇End◇
  | |▼  
@@ -705,11 +705,11 @@ WoditorEvCOMMAND_END
  | | |■Set Variable: CSelf44[一時項目表示X2] = CSelf58[表示元X] + 0 
  | | |■Set Variable: CSelf45[一時項目表示X2] = CSelf42[一時項目表示Y] + 0 
  | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf44[一時項目表示X2] Y:CSelf45[一時項目表示X2] / 0(0)Frames  / Pattern 1 / Opacity Same / Normal  / Angle 0 / Zoom Same / Color R[100] G[100] B[100]
+ | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf44[一時項目表示X2] Y:CSelf45[一時項目表示X2] / 0(0) Frames  / Pattern 1 / Opacity Same / Normal  / Angle 0 / Zoom Same / Color R[100] G[100] B[100]
  | | |▼ 慣性移動
- | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(0)Frames  / Pattern 1 / Opacity Same / Normal  / Angle 0 / Zoom Same / Color R[100] G[100] B[100]
- | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(3)Frames  / Pattern 1 / Opacity Same / Normal  / Angle 0 / Zoom Same / Color R[100] G[100] B[100]
- | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(5)Frames  / Pattern 1 / Opacity Same / Normal  / Angle 0 / Zoom Same / Color R[100] G[100] B[100]
+ | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(0) Frames  / Pattern 1 / Opacity Same / Normal  / Angle 0 / Zoom Same / Color R[100] G[100] B[100]
+ | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(3) Frames  / Pattern 1 / Opacity Same / Normal  / Angle 0 / Zoom Same / Color R[100] G[100] B[100]
+ | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(5) Frames  / Pattern 1 / Opacity Same / Normal  / Angle 0 / Zoom Same / Color R[100] G[100] B[100]
  | | |■
  | |◇Loop End Point◇◇
  | |■
@@ -720,7 +720,7 @@ WoditorEvCOMMAND_END
  | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 11 
  | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] Window(CSelf8[ウィンドウ画像ファイル]) Size[CSelf62[おまけ欄横サイズ],CSelf63[おまけ欄縦サイズ]] X:CSelf60[おまけ欄X] Y:CSelf61[おまけ欄Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] Window (CSelf8[ウィンドウ画像ファイル]) Size [CSelf62[おまけ欄横サイズ],CSelf63[おまけ欄縦サイズ]] X:CSelf60[おまけ欄X] Y:CSelf61[おまけ欄Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | |■Repeat Loop [ 1 ] Times
  | | |▼ おまけ欄内の文字列を生成
  | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "Party":0:"Current Money" ] (6:Main Settings:0) 
@@ -745,22 +745,22 @@ WoditorEvCOMMAND_END
  | | |■Load DB(User):  CSelf6[オプション枠用] += UserDB[ "Terms":0:"[Stats] Currency" ] (15:Basic Terms:18) 
  | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 12 
  | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] String[\cself[6]] X:CSelf60[おまけ欄X] Y:CSelf61[おまけ欄Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] String [\cself[6]] X:CSelf60[おまけ欄X] Y:CSelf61[おまけ欄Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  | | |■Set Variable: CSelf12[一時変数C] = CSelf88[座標倍率X[x10]] / 2 
  | | |■Set Variable: CSelf13[一時変数D] = CSelf89[座標倍率Y[x10]] / 2 
  | | |■Set Variable: CSelf13[一時変数D] += CSelf89[座標倍率Y[x10]] / 6 
- | | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf12[一時変数C] / Shift Y CSelf13[一時変数D]  [0]Frames
+ | | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf12[一時変数C] / Shift Y CSelf13[一時変数D]  [0] Frames
  | | |■
  | |◇Loop End Point◇◇
  | |■Repeat Loop [ 1 ] Times
  | | |▼ もし文字がはみ出てたら横幅を制限（横拡大率を下げる）
- | | |■Set Variable+: CSelf11[一時変数B] = Picture:CSelf21[一時ピクチャ番号] 's Image Size (Width)
+ | | |■Set Variable+: CSelf11[一時変数B] = Picture: CSelf21[一時ピクチャ番号]'s Image Size (Width)
  | | |■Set Variable: CSelf13[一時変数D] = CSelf62[おまけ欄横サイズ] - CSelf88[座標倍率X[x10]] 
  | | |■Condition (Number):   [1] CSelf11[一時変数B] >  CSelf13[一時変数D]  
  | | |-◇Condition:  [1]  [ CSelf11[一時変数B] > CSelf13[一時変数D]   ] Case↓
  | | | |■Set Variable: CSelf13[一時変数D] *= 100 + 0 
  | | | |■Set Variable: CSelf13[一時変数D] /= CSelf11[一時変数B] + 0 
- | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf60[おまけ欄X] Y:CSelf61[おまけ欄Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom CSelf13[一時変数D]x100% / Color R[100] G[100] B[100]
+ | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf60[おまけ欄X] Y:CSelf61[おまけ欄Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom CSelf13[一時変数D]x100% / Color R[100] G[100] B[100]
  | | | |■
  | | |◇End◇
  | | |■
@@ -773,11 +773,11 @@ WoditorEvCOMMAND_END
  | | |■Set Variable: CSelf42[一時項目表示Y] = CSelf65[おまけ欄表示元Y] + 0 
  | | |▼ 初期位置をシフト
  | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] to CSelf10[一時変数A] 
- | | |■Picture Move: CSelf21[一時ピクチャ番号] to CSelf10[一時変数A]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom Same / Color R[100] G[100] B[100]
+ | | |■Picture Move: CSelf21[一時ピクチャ番号] to CSelf10[一時変数A]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom Same / Color R[100] G[100] B[100]
  | | |▼ 慣性移動
- | | |■Picture Move: CSelf21[一時ピクチャ番号] to CSelf10[一時変数A]  X:CSelf60[おまけ欄X] Y:CSelf61[おまけ欄Y] / 8(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom Same / Color R[100] G[100] B[100]
- | | |■Picture Move: CSelf21[一時ピクチャ番号] to CSelf10[一時変数A]  X:CSelf60[おまけ欄X] Y:CSelf61[おまけ欄Y] / 8(4)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom Same / Color R[100] G[100] B[100]
- | | |■Picture Move: CSelf21[一時ピクチャ番号] to CSelf10[一時変数A]  X:CSelf60[おまけ欄X] Y:CSelf61[おまけ欄Y] / 8(8)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom Same / Color R[100] G[100] B[100]
+ | | |■Picture Move: CSelf21[一時ピクチャ番号] to CSelf10[一時変数A]  X:CSelf60[おまけ欄X] Y:CSelf61[おまけ欄Y] / 8(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom Same / Color R[100] G[100] B[100]
+ | | |■Picture Move: CSelf21[一時ピクチャ番号] to CSelf10[一時変数A]  X:CSelf60[おまけ欄X] Y:CSelf61[おまけ欄Y] / 8(4) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom Same / Color R[100] G[100] B[100]
+ | | |■Picture Move: CSelf21[一時ピクチャ番号] to CSelf10[一時変数A]  X:CSelf60[おまけ欄X] Y:CSelf61[おまけ欄Y] / 8(8) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom Same / Color R[100] G[100] B[100]
  | | |■
  | |◇Loop End Point◇◇
  | |▼ おまけ欄表示処理ここまで
@@ -795,13 +795,13 @@ WoditorEvCOMMAND_END
  |■Condition (Number):   [1] CSelf1[カーソル位置] ==  -1  /  [2] CSelf1[カーソル位置] ==  -2  
  |-◇Condition:  [1]  [ CSelf1[カーソル位置] == -1   ] Case↓
  | |▼ カーソル消去
- | |■Picture Erase: CSelf21[一時ピクチャ番号]  / 0(0)Frames
+ | |■Picture Erase: CSelf21[一時ピクチャ番号]  / 0(0) Frames
  | |■Exit Event
  | |■
  |-◇Condition:  [2]  [ CSelf1[カーソル位置] == -2   ] Case↓
  | |▼ フラッシュ停止（暗くする）
  | |■Effect Picture: CSelf21[一時ピクチャ番号] [Blink A (Flicker)] R0/G0/B0  Interval [0] Frames
- | |■Picture Move: CSelf21[一時ピクチャ番号]  Relative X:0 Y:0 / 0(0)Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color R[80] G[80] B[80]
+ | |■Picture Move: CSelf21[一時ピクチャ番号]  Relative X:0 Y:0 / 0(0) Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color R[80] G[80] B[80]
  | |■Exit Event
  | |■
  |◇End◇
@@ -812,7 +812,7 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf42[一時項目表示Y] += CSelf39[[保持]カーソル移動縦幅] * CSelf1[カーソル位置] 
  |■Set Variable: CSelf42[一時項目表示Y] += CSelf39[[保持]カーソル移動縦幅] / 2 
  |▼  
- |■Picture Show: CSelf21[一時ピクチャ番号] [Center] Window(CSelf9[カーソル画像ファイル]) Size[CSelf36[[保持]カーソル横幅],CSelf37[[保持]カーソル縦幅]] X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0)Frames  / Pattern 1 / Opacity 255 / Add  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ |■Picture Show: CSelf21[一時ピクチャ番号] [Center] Window (CSelf9[カーソル画像ファイル]) Size [CSelf36[[保持]カーソル横幅],CSelf37[[保持]カーソル縦幅]] X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Add  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  |■Effect Picture: CSelf21[一時ピクチャ番号] [Blink A (Flicker)] R100/G100/B100  Interval [15] Frames
  |■Exit Event
  |■

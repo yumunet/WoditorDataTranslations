@@ -214,9 +214,9 @@ WoditorEvCOMMAND_END
  |▼ Display description text. (Only if it was in display mode.)
  |▼ Check whether the picture for the description text is already displayed.
  |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 2 
- |■Set Variable+: CSelf10[Temp Variable A] = Picture:CSelf21[Temp Picture ID] 's Picture In Use? [1:Yes]
+ |■Set Variable+: CSelf10[Temp Variable A] = Picture: CSelf21[Temp Picture ID]'s Picture in Use? [1:Yes]
  |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
- |■Picture Show: CSelf21[Temp Picture ID] [Center] String[\f[\cself[18]]\s] Relative X:0 Y:0 / 0(0)Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ |■Picture Show: CSelf21[Temp Picture ID] [Center] String [\f[\cself[18]]\s] Relative X:0 Y:0 / 0(0) Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
  |■
 ◇Loop End Point◇◇
 ■

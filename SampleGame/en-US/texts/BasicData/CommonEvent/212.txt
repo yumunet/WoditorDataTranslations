@@ -169,7 +169,7 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:Wolfarl\n  This Talk command is being called from the\n  Common Events.
-■Show Message:Wolfarl\n  You can call a Common Event from the menu like\n  this, so you can also easily add your own command!
+■Show Message: Wolfarl\n  This Talk command is being called from the\n  Common Events.
+■Show Message: Wolfarl\n  You can call a Common Event from the menu like\n  this, so you can also easily add your own command!
 ■
 [COMMAND_TEXT_END]

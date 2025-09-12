@@ -212,8 +212,8 @@ WoditorEvCOMMAND_END
  |■Load DB(User):  CSelf9[状態変化文章] = UserDB[ "States":CSelf1[状態番号]:"Enter Message (Name..." ] (8:-:12) 
  |■
 ◇End◇
-■Condition (String):   [1] CSelf9[状態変化文章] is not equal to ""
--◇Condition:  [1] [ CSelf9[状態変化文章] is not equal to "" ] Case↓
+■Condition (String):   [1] CSelf9[状態変化文章] Is Not Equal to ""
+-◇Condition:  [1] [ CSelf9[状態変化文章] Is Not Equal to "" ] Case↓
  |■Load DB(Var):  CSelf8[キャラ名] = VarDB[ "×┏Battle Temp Status":CSelf0[対象スロット]:"Character Name" ] (10:-:0) 
  |■Set String: CSelf9[状態変化文章] = "\cself[8]\cself[9]"
  |■Call Event [Name]: ["X[Bat]Display Battle Message"] <CommonEv 182>  / 0:表示→自動削除 / CSelf9[状態変化文章]

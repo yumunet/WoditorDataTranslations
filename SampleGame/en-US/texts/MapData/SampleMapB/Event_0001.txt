@@ -47,9 +47,9 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:If you walk on this checkerboard pattern, you will\nencounter an enemy about once every 10 tiles!
-■Show Message:The technique makes clever use of the Event Editor's\n"Range Extension."
-■Show Message:Every time you take a step on this checkerboard,\nit runs an event that checks for an encounter.
-■Show Message:An encounter value increases for each step\nyou take, and once it has reached the max level,\na battle will begin.
+■Show Message: If you walk on this checkerboard pattern, you will\nencounter an enemy about once every 10 tiles!
+■Show Message: The technique makes clever use of the Event Editor's\n"Range Extension."
+■Show Message: Every time you take a step on this checkerboard,\nit runs an event that checks for an encounter.
+■Show Message: An encounter value increases for each step\nyou take, and once it has reached the max level,\na battle will begin.
 ■
 [COMMAND_TEXT_END]

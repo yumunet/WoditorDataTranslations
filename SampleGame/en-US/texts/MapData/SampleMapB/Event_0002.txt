@@ -44,6 +44,6 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Transfer: Hero ▲ Map ID 1 [Sample Map A] X:15 Y:1  [Transition - No Fade]
+■Transfer: Leader ▲ Map ID 1 [Sample Map A] X:15 Y:1  [Transition - No Fade]
 ■
 [COMMAND_TEXT_END]

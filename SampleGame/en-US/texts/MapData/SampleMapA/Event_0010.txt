@@ -57,10 +57,10 @@ WoditorEvCOMMAND_END
 ▼ Then, the message of this sign changes.
 ■Condition (Number):   [1] V0[[Sample Game] Cook Appears] ==  0  /  [2] V0[[Sample Game] Cook Appears] ==  1  
 -◇Condition:  [1]  [ V0[[Sample Game] Cook Appears] == 0   ] Case↓
- |■Show Message:"Chickens-Love-It-Too Bakery"\nStill setting up.
+ |■Show Message: "Chickens-Love-It-Too Bakery"\nStill setting up.
  |■
 -◇Condition:  [2]  [ V0[[Sample Game] Cook Appears] == 1   ] Case↓
- |■Show Message:"Chickens-Love-It-Too Bakery"\nNow open!\nBuy as much as you like!
+ |■Show Message: "Chickens-Love-It-Too Bakery"\nNow open!\nBuy as much as you like!
  |■
 ◇End◇
 ■

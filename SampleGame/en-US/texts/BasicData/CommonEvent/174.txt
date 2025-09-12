@@ -314,13 +314,13 @@ WoditorEvCOMMAND_END
 ■Load DB(Var):  CSelf16[最大パーティ数] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
 ■Condition (Number):   [1] CSelf0[表示位置[0-..]] <  0  
 -◇Condition:  [1]  [ CSelf0[表示位置[0-..]] < 0   ] Case↓
- |■Show Message:\>「X[移]味方欄_座標算出」：エラー\n　０番未満は指定できません
+ |■Show Message: \>「X[移]味方欄_座標算出」：エラー\n　０番未満は指定できません
  |■Exit Event
  |■
 ◇End◇
 ■Condition (Number):   [1] CSelf0[表示位置[0-..]] >=  CSelf16[最大パーティ数]  
 -◇Condition:  [1]  [ CSelf0[表示位置[0-..]] >= CSelf16[最大パーティ数]   ] Case↓
- |■Show Message:\>「X[移]味方欄_座標算出」：エラー\n　\cself[16]番以降は指定できません
+ |■Show Message: \>「X[移]味方欄_座標算出」：エラー\n　\cself[16]番以降は指定できません
  |■Exit Event
  |■
 ◇End◇
@@ -385,7 +385,7 @@ WoditorEvCOMMAND_END
  |-◇Else
  | |■Condition (Number):   [1] CSelf15[現在パーティ数] !=  0  
  | |-◇Condition:  [1]  [ CSelf15[現在パーティ数] != 0   ] Case↓
- | | |■Show Message:\>「X[移]味方欄_座標算出」エラー：\n　現在パーティ数が6人より大きい値になっています。\n　＞ \cself[15]人
+ | | |■Show Message: \>「X[移]味方欄_座標算出」エラー：\n　現在パーティ数が6人より大きい値になっています。\n　＞ \cself[15]人
  | | |■
  | |◇End◇
  | |■Exit Event

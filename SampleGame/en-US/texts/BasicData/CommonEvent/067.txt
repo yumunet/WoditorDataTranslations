@@ -241,18 +241,18 @@ WoditorEvCOMMAND_END
 ■Condition (Number):   [1] CSelf0[Mode] ==  0  /  [2] CSelf0[Mode] ==  1  
 -◇Condition:  [1]  [ CSelf0[Mode] == 0   ] Case↓
  |▼ Clear
- |■Picture Erase: CSelf20[Base Picture ID]  / CSelf1[Frames](0)Frames
+ |■Picture Erase: CSelf20[Base Picture ID]  / CSelf1[Frames](0) Frames
  |■
 -◇Condition:  [2]  [ CSelf0[Mode] == 1   ] Case↓
  |▼ Fade to Black
- |■Picture Show: CSelf20[Base Picture ID] [Top-Left] Window[<SQUARE>] Size[CSelf25[Screen Width],CSelf26[Screen Height]] X:0 Y:0 / CSelf1[Frames](0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[0] G[0] B[0]
+ |■Picture Show: CSelf20[Base Picture ID] [Top-Left] Window [<SQUARE>] Size [CSelf25[Screen Width],CSelf26[Screen Height]] X:0 Y:0 / CSelf1[Frames](0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[0] G[0] B[0]
  |■
 ◇End◇
 ■Condition (Number):   [1] CSelf0[Mode] ==  10  
 -◇Condition:  [1]  [ CSelf0[Mode] == 10   ] Case↓
  |▼ White Flash
- |■Picture Show: CSelf20[Base Picture ID] [Top-Left] Window[<SQUARE>] Size[CSelf25[Screen Width],CSelf26[Screen Height]] X:0 Y:0 / 0(0)Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[80] G[80] B[80]
- |■Picture Erase: CSelf20[Base Picture ID]  / CSelf1[Frames](0)Frames
+ |■Picture Show: CSelf20[Base Picture ID] [Top-Left] Window [<SQUARE>] Size [CSelf25[Screen Width],CSelf26[Screen Height]] X:0 Y:0 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[80] G[80] B[80]
+ |■Picture Erase: CSelf20[Base Picture ID]  / CSelf1[Frames](0) Frames
  |■
 ◇End◇
 ■

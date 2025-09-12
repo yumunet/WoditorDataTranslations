@@ -962,7 +962,7 @@ WoditorEvCOMMAND_END
  | | |■Set String: CSelf9[表示メッセージ文] += "の\cself[8]が\cself[2]ポイント減少した。"
  | | |■
  | |◇End◇
- | |■Show Message:@1\n\>\cself[9]
+ | |■Show Message: @1\n\>\cself[9]
  | |■
  |◇End◇
  |▼ 全滅判定
@@ -1158,7 +1158,7 @@ WoditorEvCOMMAND_END
  | | | |■Set String: CSelf9[表示メッセージ文] += "\cself[8] \cself[7]\cself[10]　"
  | | | |■
  | | |◇End◇
- | | |■Show Message:@1\n\>\cself[9]
+ | | |■Show Message: @1\n\>\cself[9]
  | | |■Set String: CSelf9[表示メッセージ文] = "　"
  | | |■Load DB(User):  CSelf8[パラメータ名] = UserDB[ "Terms":0:"[Stats] Agility" ] (15:Basic Terms:13) 
  | | |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "Base System Variables":86:0 ] (18:[LvUp] Agility Increase:Number) 
@@ -1214,9 +1214,9 @@ WoditorEvCOMMAND_END
  | | | |■
  | | |◇End◇
  | | |■ Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
- | | |■Condition (String):   [1] CSelf9[表示メッセージ文] is not equal to "　\n　"
- | | |-◇Condition:  [1] [ CSelf9[表示メッセージ文] is not equal to "　\n　" ] Case↓
- | | | |■Show Message:@1\n\>\cself[9]
+ | | |■Condition (String):   [1] CSelf9[表示メッセージ文] Is Not Equal to "　\n　"
+ | | |-◇Condition:  [1] [ CSelf9[表示メッセージ文] Is Not Equal to "　\n　" ] Case↓
+ | | | |■Show Message: @1\n\>\cself[9]
  | | | |■
  | | |◇End◇
  | | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -1227,8 +1227,8 @@ WoditorEvCOMMAND_END
  | | |■Set String: CSelf9[表示メッセージ文] = ""
  | | |■Set Variable: CSelf12[一時変数C] = 0 + 0 
  | | |■Repeat Loop [ CSelf11[一時変数B] ] Times
- | | | |■Condition (String):   [1] CSelf7[一時文字列] is equal to ""
- | | | |-◇Condition:  [1] [ CSelf7[一時文字列] is equal to "" ] Case↓
+ | | | |■Condition (String):   [1] CSelf7[一時文字列] Is Equal to ""
+ | | | |-◇Condition:  [1] [ CSelf7[一時文字列] Is Equal to "" ] Case↓
  | | | | |■Break Loop
  | | | | |■
  | | | |◇End◇
@@ -1238,14 +1238,14 @@ WoditorEvCOMMAND_END
  | | | |■Set Variable: CSelf12[一時変数C] %= 4 + 0 
  | | | |■Condition (Number):   [1] CSelf12[一時変数C] ==  0  
  | | | |-◇Condition:  [1]  [ CSelf12[一時変数C] == 0   ] Case↓
- | | | | |■Show Message:@1\n\>\cself[9]
+ | | | | |■Show Message: @1\n\>\cself[9]
  | | | | |■
  | | | |◇End◇
  | | | |■
  | | |◇Loop End Point◇◇
  | | |■Condition (Number):   [1] CSelf12[一時変数C] !=  0  
  | | |-◇Condition:  [1]  [ CSelf12[一時変数C] != 0   ] Case↓
- | | | |■Show Message:@1\n\>\cself[9]
+ | | | |■Show Message: @1\n\>\cself[9]
  | | | |■
  | | |◇End◇
  | | |▼ ﾘｾｯﾄする
@@ -1327,7 +1327,7 @@ WoditorEvCOMMAND_END
  | | |■
  | |◇End◇
  | |■ Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
- | |■Show Message:@1\n\>\cself[9]
+ | |■Show Message: @1\n\>\cself[9]
  | |■Condition (Number):   [1] CSelf20[変化したレベル] !=  0  
  | |-◇Condition:  [1]  [ CSelf20[変化したレベル] != 0   ] Case↓
  | | |●Label Jump [LvUPメッセージ] >>>>>>>>>>>>>>>>>>>>>>>>>
@@ -1593,7 +1593,7 @@ WoditorEvCOMMAND_END
  |●Label Point [メッセージ表示] <<<<<<<<<<<<<<<<<<<<<<<<★
  |▼ ここでメッセージ表示を行う。
  |▼ （ただし経験値だけはその場で一度経験値入手メッセージを表示している）
- |■Show Message:@1\n\>\cself[9]
+ |■Show Message: @1\n\>\cself[9]
  |■Exit Event
  |■
 ◇Loop End Point◇◇

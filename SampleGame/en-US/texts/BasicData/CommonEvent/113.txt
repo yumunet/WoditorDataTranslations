@@ -261,11 +261,11 @@ WoditorEvCOMMAND_END
 ▼ 入力チェック
 ■Condition (Number):   [1] CSelf0[対象主人公ID] <=  -1  /  [2] CSelf1[装備箇所] <=  -1  
 -◇Condition:  [1]  [ CSelf0[対象主人公ID] <= -1   ] Case↓
- |■Show Message:\>「X[移]装備装着・解除」エラー：\n　装備対象者が-1以下です。 　=>　\cself[0]
+ |■Show Message: \>「X[移]装備装着・解除」エラー：\n　装備対象者が-1以下です。 　=>　\cself[0]
  |■Exit Event
  |■
 -◇Condition:  [2]  [ CSelf1[装備箇所] <= -1   ] Case↓
- |■Show Message:\>「X[移]装備装着・解除」エラー：\n　装備箇所が-1以下です。 　=>　\cself[1]
+ |■Show Message: \>「X[移]装備装着・解除」エラー：\n　装備箇所が-1以下です。 　=>　\cself[1]
  |■Exit Event
  |■
 ◇End◇
@@ -281,7 +281,7 @@ WoditorEvCOMMAND_END
 -◇Condition:  [1]  [ CSelf20[一時装備コード] >= 0   ] Case↓
  |■Condition (Number):   [1] CSelf20[一時装備コード] <=  19999  /  [2] CSelf20[一時装備コード] <=  29999  /  [3] CSelf20[一時装備コード] <=  39999  
  |-◇Condition:  [1]  [ CSelf20[一時装備コード] <= 19999   ] Case↓
- | |■Show Message:\>「X[移]装備装着・解除」エラー：\n　装備しているアイテムが\n　武器でも防具でもありません。 　=>　\cself[20]
+ | |■Show Message: \>「X[移]装備装着・解除」エラー：\n　装備しているアイテムが\n　武器でも防具でもありません。 　=>　\cself[20]
  | |■Exit Event
  | |■
  |-◇Condition:  [2]  [ CSelf20[一時装備コード] <= 29999   ] Case↓
@@ -307,7 +307,7 @@ WoditorEvCOMMAND_END
 -◇Condition:  [1]  [ CSelf20[一時装備コード] >= 0   ] Case↓
  |■Condition (Number):   [1] CSelf20[一時装備コード] <=  19999  /  [2] CSelf20[一時装備コード] <=  29999  /  [3] CSelf20[一時装備コード] <=  39999  
  |-◇Condition:  [1]  [ CSelf20[一時装備コード] <= 19999   ] Case↓
- | |■Show Message:\>「X[移]装備装着・解除」エラー：\n　装備しようとしているアイテムが\n　武器でも防具でもありません。 　=>　\cself[20]
+ | |■Show Message: \>「X[移]装備装着・解除」エラー：\n　装備しようとしているアイテムが\n　武器でも防具でもありません。 　=>　\cself[20]
  | |■Exit Event
  | |■
  |-◇Condition:  [2]  [ CSelf20[一時装備コード] <= 29999   ] Case↓

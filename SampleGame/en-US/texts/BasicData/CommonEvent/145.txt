@@ -250,7 +250,7 @@ WoditorEvCOMMAND_END
  | | |■Load DB(Var):  CSelf20 = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Equipped Armor 7" ] (10:-:25) 
  | | |■
  | |-◇Else
- | | |■Show Message:\>「X[戦]選択箇所装備コード取得」エラー：\n　装備箇所が8以下です。 　=>　\cself[1]\n　（※0～7で指定して下さい）
+ | | |■Show Message: \>「X[戦]選択箇所装備コード取得」エラー：\n　装備箇所が8以下です。 　=>　\cself[1]\n　（※0～7で指定して下さい）
  | | |■Exit Event
  | | |■
  | |◇End◇

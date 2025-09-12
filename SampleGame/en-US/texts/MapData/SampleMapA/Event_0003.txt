@@ -44,6 +44,6 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:The sign reads...\n  "This is the Dungeon Entrance."
+■Show Message: The sign reads...\n  "This is the Dungeon Entrance."
 ■
 [COMMAND_TEXT_END]

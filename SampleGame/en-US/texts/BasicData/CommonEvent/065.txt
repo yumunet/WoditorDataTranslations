@@ -508,7 +508,7 @@ WoditorEvCOMMAND_END
  |■Condition (Number):   [1] CSelf1[Option] ==  4  
  |-◇Condition:  [1]  [ CSelf1[Option] == 4   ] Case↓
  | |▼ Case: End with Left/Right Key
- | |■Key Input: CSelf20[Pressed Key] [Wait For Input <!>]  4-Dir. Confirm(10) Cancel(11)
+ | |■Key Input: CSelf20[Pressed Key] [Wait for Input <!>]  4-Dir. Confirm (10) Cancel (11)
  | |■Condition (Number):   [1] CSelf20[Pressed Key] ==  4  /  [2] CSelf20[Pressed Key] ==  6  
  | |-◇Condition:  [1]  [ CSelf20[Pressed Key] == 4   ] Case↓
  | | |■Set Variable: CSelf10[Selected ID] = -300 + 0 
@@ -526,11 +526,11 @@ WoditorEvCOMMAND_END
  | |■Condition (Number):   [1] CSelf1[Option] &  2  
  | |-◇Condition:  [1]  [ CSelf1[Option] & 2   ] Case↓
  | | |▼ Case: End with Sub Key
- | | |■Key Input: CSelf20[Pressed Key] [Wait For Input <!>]  4-Dir. Confirm(10) Cancel(11) SubKey(12)
+ | | |■Key Input: CSelf20[Pressed Key] [Wait for Input <!>]  4-Dir. Confirm (10) Cancel (11) Sub-Key (12)
  | | |■
  | |-◇Else
  | | |▼ Default case
- | | |■Key Input: CSelf20[Pressed Key] [Wait For Input <!>]  4-Dir. Confirm(10) Cancel(11)
+ | | |■Key Input: CSelf20[Pressed Key] [Wait for Input <!>]  4-Dir. Confirm (10) Cancel (11)
  | | |■
  | |◇End◇
  | |■

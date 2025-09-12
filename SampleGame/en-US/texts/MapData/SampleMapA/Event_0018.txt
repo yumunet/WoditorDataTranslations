@@ -49,7 +49,7 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message:Do you know the Graphic Maker?\nIt's a tool you can use to make character images by\ncombining parts!
-■Show Message:It should be in the Extras folder,\nso take a look!
+■Show Message: Do you know the Graphic Maker?\nIt's a tool you can use to make character images by\ncombining parts!
+■Show Message: It should be in the Extras folder,\nso take a look!
 ■
 [COMMAND_TEXT_END]
