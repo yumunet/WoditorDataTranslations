@@ -190,7 +190,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("もしキー位置保存がオフなら常にカーソル位置「0」を返す")
 [111][4,0]<0>(1,1600000,19,3)()
 [401][1,0]<0>(1)()
-[300][4,1]<1>(0,16777217,1600001,1600011)("X[Bat]Get Ally ID From Slot")
+[300][4,1]<1>(0,16777217,1600001,1600011)("X[Bat]Get Ally ID in Slot")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [111][4,0]<0>(1,1600011,0,1)()
@@ -236,7 +236,7 @@ WoditorEvCOMMAND_END
 ▼ もしキー位置保存がオフなら常にカーソル位置「0」を返す
 ■Condition (Number):   [1] CSelf0[取得モード] <=  19  
 -◇Condition:  [1]  [ CSelf0[取得モード] <= 19   ] Case↓
- |■Call Event [Name]: CSelf11[主人公ID] = ["X[Bat]Get Ally ID From Slot"] <CommonEv 141>  / CSelf1[対象戦闘ｽﾛｯﾄ]
+ |■Call Event [Name]: CSelf11[主人公ID] = ["X[Bat]Get Ally ID in Slot"] <CommonEv 141>  / CSelf1[対象戦闘ｽﾛｯﾄ]
  |■
 ◇End◇
 ■Condition (Number):   [1] CSelf11[主人公ID] >=  0  

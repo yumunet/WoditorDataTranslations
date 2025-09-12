@@ -262,7 +262,7 @@ WoditorEvCOMMAND_START
 [179][1,0]<2>(1600019)()
 [121][4,0]<3>(1600010,1,0,256)()
 [103][0,1]<3>()("Put Character ID in CSelf11 and jump further down.")
-[300][4,1]<3>(0,16777217,1600010,1600011)("X[Bat]Get Ally ID From Slot")
+[300][4,1]<3>(0,16777217,1600010,1600011)("X[Bat]Get Ally ID in Slot")
 [103][0,1]<3>()("This label is also jumped to when only one ally is processed.")
 [212][0,1]<3>()("In-Battle Process")
 [103][0,1]<3>()("Process the character, if present.")
@@ -323,7 +323,7 @@ WoditorEvCOMMAND_START
 [179][1,0]<2>(1600019)()
 [121][4,0]<3>(1600010,1,0,256)()
 [103][0,1]<3>()("Put Character ID in CSelf11.")
-[300][4,1]<3>(0,16777217,1600010,1600011)("X[Bat]Get Ally ID From Slot")
+[300][4,1]<3>(0,16777217,1600010,1600011)("X[Bat]Get Ally ID in Slot")
 [111][4,0]<3>(1,1600001,1600011,2)()
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("If the corresponding character is in the battle party, process it.")
@@ -423,7 +423,7 @@ WoditorEvCOMMAND_END
  | |■Repeat Loop [ CSelf19[Party Size] ] Times
  | | |■Set Variable: CSelf10[Temp Variable A] += 1 + 0 
  | | |▼ Put Character ID in CSelf11 and jump further down.
- | | |■Call Event [Name]: CSelf11[Target Character ID] = ["X[Bat]Get Ally ID From Slot"] <CommonEv 141>  / CSelf10[Temp Variable A]
+ | | |■Call Event [Name]: CSelf11[Target Character ID] = ["X[Bat]Get Ally ID in Slot"] <CommonEv 141>  / CSelf10[Temp Variable A]
  | | |▼ This label is also jumped to when only one ally is processed.
  | | |●Label Point [In-Battle Process] <<<<<<<<<<<<<<<<<<<<<<<<★
  | | |▼ Process the character, if present.
@@ -484,7 +484,7 @@ WoditorEvCOMMAND_END
  | |■Repeat Loop [ CSelf19[Party Size] ] Times
  | | |■Set Variable: CSelf10[Temp Variable A] += 1 + 0 
  | | |▼ Put Character ID in CSelf11.
- | | |■Call Event [Name]: CSelf11[Target Character ID] = ["X[Bat]Get Ally ID From Slot"] <CommonEv 141>  / CSelf10[Temp Variable A]
+ | | |■Call Event [Name]: CSelf11[Target Character ID] = ["X[Bat]Get Ally ID in Slot"] <CommonEv 141>  / CSelf10[Temp Variable A]
  | | |■Condition (Number):   [1] CSelf1[Who?] ==  CSelf11[Target Character ID]  
  | | |-◇Condition:  [1]  [ CSelf1[Who?] == CSelf11[Target Character ID]   ] Case↓
  | | | |▼ If the corresponding character is in the battle party, process it.

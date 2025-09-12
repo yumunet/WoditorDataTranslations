@@ -181,7 +181,7 @@ WoditorEvCOMMAND_START
 [179][1,0]<0>(50)()
 [121][4,0]<1>(1600030,1,0,256)()
 [121][4,0]<1>(1600031,1600030,2,8192)()
-[300][4,1]<1>(0,16777217,1600000,1600015)("X[Bat]Get Ally ID From Slot")
+[300][4,1]<1>(0,16777217,1600000,1600015)("X[Bat]Get Ally ID in Slot")
 [250][5,4]<1>(1,1600015,1600031,69632,1600035)("","┣ Skill Learning Lv","","")
 [121][4,0]<1>(1600031,1,0,256)()
 [250][5,4]<1>(1,1600015,1600031,69632,1600034)("","┣ Skill Learning Lv","","")
@@ -312,7 +312,7 @@ WoditorEvCOMMAND_END
 ■Repeat Loop [ 50 ] Times
  |■Set Variable: CSelf30[処理対象個数] += 1 + 0 
  |■Set Variable: CSelf31[注目位置] = CSelf30[処理対象個数] * 2 
- |■Call Event [Name]: CSelf15[主人公ID] = ["X[Bat]Get Ally ID From Slot"] <CommonEv 141>  / CSelf0[対象スロット]
+ |■Call Event [Name]: CSelf15[主人公ID] = ["X[Bat]Get Ally ID in Slot"] <CommonEv 141>  / CSelf0[対象スロット]
  |■Load DB(Var):  CSelf35[習得レベル] = VarDB[ "┣ Skill Learning Lv":CSelf15[主人公ID]:CSelf31[注目位置] ] (1:-:-) 
  |■Set Variable: CSelf31[注目位置] += 1 + 0 
  |■Load DB(Var):  CSelf34[技能コード] = VarDB[ "┣ Skill Learning Lv":CSelf15[主人公ID]:CSelf31[注目位置] ] (1:-:-) 

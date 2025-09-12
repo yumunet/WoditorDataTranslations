@@ -260,7 +260,7 @@ WoditorEvCOMMAND_START
 [179][1,0]<2>(1600020)()
 [121][4,0]<3>(1600010,1,0,256)()
 [103][0,1]<3>()("Put Character ID in CSelf15, If present, add/remove the state.")
-[300][4,1]<3>(0,16777217,1600010,1600015)("X[Bat]Get Ally ID From Slot")
+[300][4,1]<3>(0,16777217,1600010,1600015)("X[Bat]Get Ally ID in Slot")
 [111][4,0]<3>(1,1600015,0,1)()
 [401][1,0]<3>(1)()
 [111][4,0]<4>(17,1600001,0,4)()
@@ -299,7 +299,7 @@ WoditorEvCOMMAND_START
 [179][1,0]<2>(1600020)()
 [121][4,0]<3>(1600010,1,0,256)()
 [103][0,1]<3>()("Put Character ID in CSelf15, If present, add/remove the state.")
-[300][4,1]<3>(0,16777217,1600010,1600015)("X[Bat]Get Ally ID From Slot")
+[300][4,1]<3>(0,16777217,1600010,1600015)("X[Bat]Get Ally ID in Slot")
 [111][4,0]<3>(1,1600015,1600000,2)()
 [401][1,0]<3>(1)()
 [111][4,0]<4>(17,1600001,0,4)()
@@ -420,7 +420,7 @@ WoditorEvCOMMAND_END
  | |■Repeat Loop [ CSelf20[Max Party Size] ] Times
  | | |■Set Variable: CSelf10[Temp Variable A] += 1 + 0 
  | | |▼ Put Character ID in CSelf15, If present, add/remove the state.
- | | |■Call Event [Name]: CSelf15[Character ID] = ["X[Bat]Get Ally ID From Slot"] <CommonEv 141>  / CSelf10[Temp Variable A]
+ | | |■Call Event [Name]: CSelf15[Character ID] = ["X[Bat]Get Ally ID in Slot"] <CommonEv 141>  / CSelf10[Temp Variable A]
  | | |■Condition (Number):   [1] CSelf15[Character ID] >=  0  
  | | |-◇Condition:  [1]  [ CSelf15[Character ID] >= 0   ] Case↓
  | | | |■Condition (Number):   [1] CSelf1[State] <  0  
@@ -459,7 +459,7 @@ WoditorEvCOMMAND_END
  | |■Repeat Loop [ CSelf20[Max Party Size] ] Times
  | | |■Set Variable: CSelf10[Temp Variable A] += 1 + 0 
  | | |▼ Put Character ID in CSelf15, If present, add/remove the state.
- | | |■Call Event [Name]: CSelf15[Character ID] = ["X[Bat]Get Ally ID From Slot"] <CommonEv 141>  / CSelf10[Temp Variable A]
+ | | |■Call Event [Name]: CSelf15[Character ID] = ["X[Bat]Get Ally ID in Slot"] <CommonEv 141>  / CSelf10[Temp Variable A]
  | | |■Condition (Number):   [1] CSelf15[Character ID] ==  CSelf0[Target Ally]  
  | | |-◇Condition:  [1]  [ CSelf15[Character ID] == CSelf0[Target Ally]   ] Case↓
  | | | |■Condition (Number):   [1] CSelf1[State] <  0  

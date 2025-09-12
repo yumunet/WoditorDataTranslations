@@ -185,7 +185,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<1>(1600010,-1,0,0)()
 [179][1,0]<1>(1600020)()
 [121][4,0]<2>(1600010,1,0,256)()
-[300][4,1]<2>(0,16777217,1600010,1600011)("X[Bat]Get Ally ID From Slot")
+[300][4,1]<2>(0,16777217,1600010,1600011)("X[Bat]Get Ally ID in Slot")
 [111][4,0]<2>(1,1600011,1600000,2)()
 [401][1,0]<2>(1)()
 [103][0,1]<3>()("該当キャラがいた場合。今の主人公DBからコピーし直す")
@@ -225,7 +225,7 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf10[一時変数A] = -1 + 0 
  |■Repeat Loop [ CSelf20[最大パーティ数] ] Times
  | |■Set Variable: CSelf10[一時変数A] += 1 + 0 
- | |■Call Event [Name]: CSelf11[一時変数B] = ["X[Bat]Get Ally ID From Slot"] <CommonEv 141>  / CSelf10[一時変数A]
+ | |■Call Event [Name]: CSelf11[一時変数B] = ["X[Bat]Get Ally ID in Slot"] <CommonEv 141>  / CSelf10[一時変数A]
  | |■Condition (Number):   [1] CSelf11[一時変数B] ==  CSelf0[対象主人公]  
  | |-◇Condition:  [1]  [ CSelf11[一時変数B] == CSelf0[対象主人公]   ] Case↓
  | | |▼ 該当キャラがいた場合。今の主人公DBからコピーし直す
