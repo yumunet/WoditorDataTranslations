@@ -30,15 +30,15 @@ Basic Controls
   [PrintScreen][ScrollLock][Pause] ... Take Screenshot
 
 ―――――――――――――――――――――――――――――――――――――――――
-On Saving and Quitting the Game
+Saving and Quitting the Game
 
-  You can save by selecting the "Save" command from the menu.
+  You can save the game by selecting the "Save" command from the menu.
   To quit the game, press ALT+F4.
 
   * As a trick, select "Save" while pressing the left Ctrl key on the menu to open a load screen.
 
 ―――――――――――――――――――――――――――――――――――――――――
-Changelog
+Update History
 
 06/29/2024  Replaced Kagamiyomi's MIDI files with loop versions.
 11/12/2023  Fixed URL links in this manual.
@@ -73,7 +73,7 @@ Resource Contributors
 - Enemy Image Resources
   ＧＤ(GD) (From WOLF RPG Editor Wiki)
   * When distributing these resources, you must include the creator's name.
-    When "redistributing them as resources" or "modifying and distributing them as resources,"
+    When redistributing them as resources or modifying and distributing them as resources,
     please be sure to include the creator's name.
 
 - MIDI Resources (Filenames have been changed for convenience.)
@@ -133,15 +133,15 @@ Resource Contributors
   commercial use on the premise that they will be used as resources is prohibited.
 
 - "Can use outside of WOLF RPG Editor" means that they can also be used for
-  "works" developed with other game engines. [Added on 01/28/2025]
+  works developed with other game engines. [Added on 01/28/2025]
 
 - It is prohibited to distribute sample game resources included in self-made software. [Added on 01/28/2025]
   However, users may download the sample game resources and use them
   in works developed with that software (can use outside of WOLF RPG Editor).
 
 
-  * Reuse refers to including the files in a game for use.
-  * Modification refers to making changes to the files for use in your own game.
+  * "Reuse" refers to including the files in a game for use.
+  * "Modification" refers to making changes to the files for use in your own game.
 
 
 * Redistribution of modified versions of the Base System is also allowed.
@@ -153,7 +153,7 @@ Resource Contributors
   and story of the Sample Game is officially allowed.
 
 - If it is part of doujin activities, there is no problem with
-  "selling or distributing" sample game derivative works, and no permission is required.
+  selling or distributing sample game derivative works, and no permission is required.
   However, if you plan to sell on a commercial scale, please contact via the email form below.
   https://www.silversecond.net/contents/mail_forms/mail_works/
 ―――――――――――――――――――――――――――――――――――――――――
@@ -242,7 +242,7 @@ Copyright Notice for Libraries Used (Updated on 2/7/2021)
 ――――――――――――――――――――――-----
 ●WOLF RPG Editor Official Website:
 https://silversecond.com/WolfRPGEditor/
-●Developer Site: SilverSecond
+●Developer Website: SilverSecond
 https://silversecond.net/
 ――――――――――――――――――――――-----
 
