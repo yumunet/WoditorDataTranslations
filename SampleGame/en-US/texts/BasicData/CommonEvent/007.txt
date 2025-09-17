@@ -211,7 +211,7 @@ WoditorEvCOMMAND_END
 ▼ Arguments 0: Target Ally  1: Which Stat?  2: Amount  3: Show Message?
 ▼ Update stat.
 ■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Target Ally] / CSelf1[Which Stat?] / CSelf2[Amount] / CSelf3[Show Message?]
-■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Target Ally] / 100:一時値再計算 / 0 / 0:なし
+■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Target Ally] / 100:Recalculate Temp Values / 0 / 0:No
 ▼ If the corresponding character is in battle, store there as well.
 ■Call Event [Name]: ["X[Bat]Update Ally"] <CommonEv 142>  / CSelf0[Target Ally]
 ■

@@ -378,13 +378,13 @@ WoditorEvCOMMAND_END
  | | | |■Condition (Number):   [1] CSelf0[Type] &  1  
  | | | |-◇Condition:  [1]  [ CSelf0[Type] & 1   ] Case↓
  | | | | |▼ HP recovery/damage.
- | | | | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf11[Target Character ID] / 22:HP / CSelf2[Amount] / 0:なし
+ | | | | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf11[Target Character ID] / 22:HP / CSelf2[Amount] / 0:No
  | | | | |■
  | | | |◇End◇
  | | | |■Condition (Number):   [1] CSelf0[Type] &  2  
  | | | |-◇Condition:  [1]  [ CSelf0[Type] & 2   ] Case↓
  | | | | |▼ SP recovery/reduction.
- | | | | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf11[Target Character ID] / 23:SP / CSelf2[Amount] / 0:なし
+ | | | | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf11[Target Character ID] / 23:SP / CSelf2[Amount] / 0:No
  | | | | |■
  | | | |◇End◇
  | | | |▼ Recalculate stats.

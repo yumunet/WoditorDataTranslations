@@ -915,13 +915,13 @@ WoditorEvCOMMAND_END
  | |■Condition (Number):   [1] CSelf32[技能TMP１] ==  0  /  [2] CSelf32[技能TMP１] ==  1  
  | |-◇Condition:  [1]  [ CSelf32[技能TMP１] == 0   ] Case↓
  | | |▼ HP回復
- | | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf14[対象ID] / 22:HP / CSelf35[結果値] / 0:なし
+ | | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf14[対象ID] / 22:HP / CSelf35[結果値] / 0:No
  | | |▼ 回復エフェクト
  | | |■Call Event [Name]: ["X[Map]Display Char HP/SP Recovery"] <CommonEv 97>  / CSelf11[ターゲット] / CSelf35[結果値] / 0
  | | |■
  | |-◇Condition:  [2]  [ CSelf32[技能TMP１] == 1   ] Case↓
  | | |▼ SP回復
- | | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf14[対象ID] / 23:SP / CSelf35[結果値] / 0:なし
+ | | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf14[対象ID] / 23:SP / CSelf35[結果値] / 0:No
  | | |▼ 回復エフェクト
  | | |■Call Event [Name]: ["X[Map]Display Char HP/SP Recovery"] <CommonEv 97>  / CSelf11[ターゲット] / 0 / CSelf35[結果値]
  | | |■

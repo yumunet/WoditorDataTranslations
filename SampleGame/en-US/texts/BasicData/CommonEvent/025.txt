@@ -209,7 +209,7 @@ WoditorEvCOMMAND_END
 [COMMAND_TEXT_START]
 ▼ Check skills database.
 ■Set Variable: CSelf30[If Learned, 1] = 0 + 0 
-■Call Event [Name]: CSelf10[Current Level] = ["X[Map]Get Parameter"] <CommonEv 71>  / CSelf0[Target Ally] / 10:レベル
+■Call Event [Name]: CSelf10[Current Level] = ["X[Map]Get Parameter"] <CommonEv 71>  / CSelf0[Target Ally] / 10:Level
 ■Set Variable: CSelf20[Check Position] = -1 + 0 
 ■Loop Start
  |■Set Variable: CSelf20[Check Position] += 2 + 0 

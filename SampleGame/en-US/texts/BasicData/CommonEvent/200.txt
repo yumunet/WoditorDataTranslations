@@ -372,9 +372,9 @@ WoditorEvCOMMAND_END
  | | |■Write to DB(Var): VarDB[ "Base System Variables":"[LvUp] Level-Up Count":0 ] (18:78:Number) =  0
  | | |■Write to DB(Var): VarDB[ "Base System Variables":"[LvUp] Level-Up Ally ID":0 ] (18:79:Number) =  0
  | | |▼ 経験値アップ
- | | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf11[一時変数Ｂ] / 11:経験値 / CSelf22[入手経験値] / 0:なし
+ | | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf11[一時変数Ｂ] / 11:EXP / CSelf22[入手経験値] / 0:No
  | | |▼ パラメータ更新
- | | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf11[一時変数Ｂ] / 100:一時値再計算 / 0 / 0:なし
+ | | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf11[一時変数Ｂ] / 100:Recalculate Temp Values / 0 / 0:No
  | | |▼  
  | | |▼ もしレベルアップしてたら表示
  | | |■Load DB(Var):  CSelf25[レベルアップ数] = VarDB[ "Base System Variables":78:0 ] (18:[LvUp] Level-Up Count:Number) 

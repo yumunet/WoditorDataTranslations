@@ -758,7 +758,7 @@ WoditorEvCOMMAND_END
  | | | |◇Loop End Point◇◇
  | | | |▼ 装備可能状態を格納する
  | | | |■Call Event [Name]: CSelf14[キャラID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf10[一時変数A]
- | | | |■Call Event [Name]: CSelf6[一時変数A] = ["X[Map]Get Parameter (String)"] <CommonEv 73>  / CSelf14[キャラID] / 0:名前
+ | | | |■Call Event [Name]: CSelf6[一時変数A] = ["X[Map]Get Parameter (String)"] <CommonEv 73>  / CSelf14[キャラID] / 0:Name
  | | | |■Set String: CSelf6[一時変数A] += "　"
  | | | |■Condition (Number):   [1] CSelf33[装備可能フラグ] ==  0  /  [2] CSelf33[装備可能フラグ] ==  1  /  [3] CSelf33[装備可能フラグ] ==  2  
  | | | |-◇Condition:  [1]  [ CSelf33[装備可能フラグ] == 0   ] Case↓

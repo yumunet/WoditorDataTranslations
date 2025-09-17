@@ -193,13 +193,13 @@ WoditorEvCOMMAND_END
 ▼ Level up processing.
 ■Condition (Number):   [1] CSelf1[Action] ==  0  /  [2] CSelf1[Action] ==  1  
 -◇Condition:  [1]  [ CSelf1[Action] == 0   ] Case↓
- |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Target Ally] / 10:レベル / CSelf2[Amount] / CSelf3[Show Message?]
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Target Ally] / 10:Level / CSelf2[Amount] / CSelf3[Show Message?]
  |■
 -◇Condition:  [2]  [ CSelf1[Action] == 1   ] Case↓
- |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Target Ally] / 11:経験値 / CSelf2[Amount] / CSelf3[Show Message?]
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Target Ally] / 11:EXP / CSelf2[Amount] / CSelf3[Show Message?]
  |■
 ◇End◇
-■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Target Ally] / 100:一時値再計算 / 0 / 0:なし
+■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Target Ally] / 100:Recalculate Temp Values / 0 / 0:No
 ▼ If taking part in battle, update battle-related stats here.
 ■Call Event [Name]: ["X[Bat]Update Ally"] <CommonEv 142>  / CSelf0[Target Ally]
 ■

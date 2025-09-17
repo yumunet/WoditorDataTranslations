@@ -217,7 +217,7 @@ DEFAULT_VAL_1=0
 0,"",<<!--DATANAME--!>>[LvUp] Accuracy Increase,
 0,"",<<!--DATANAME--!>>[LvUp] Evasion Increase,
 0,"",<<!--DATANAME--!>>[LvUp] Critical Rate Increase,
-0,"",<<!--DATANAME--!>>[LvUp] Learned Skill [String],
+0,"",<<!--DATANAME--!>>[LvUp] Learned Skills [String],
 0,"",<<!--DATANAME--!>>---------------------------,
 0,"",<<!--DATANAME--!>>---------------------------,
 0,"",<<!--DATANAME--!>>[Shop] Registered Item Count,

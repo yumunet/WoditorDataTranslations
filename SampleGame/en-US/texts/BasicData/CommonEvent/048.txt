@@ -626,8 +626,8 @@ WoditorEvCOMMAND_END
  |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf11[Processing Position]
  |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf11[Processing Position]
  |▼ Fill up HP and SP.
- |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf11[Processing Position] / 22:HP / 999999 / 0:なし
- |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf11[Processing Position] / 23:SP / 999999 / 0:なし
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf11[Processing Position] / 22:HP / 999999 / 0:No
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf11[Processing Position] / 23:SP / 999999 / 0:No
  |■
 ◇Loop End Point◇◇
 ▼  

@@ -949,8 +949,8 @@ WoditorEvCOMMAND_END
  | | | |▼ 習得技能表示モード
  | | | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  | | | |■Set String: CSelf5[表示文] = "\space[0]"
- | | | |■Load DB(Var):  CSelf7[一時文字列B] = VarDB[ "Base System Variables":90:1 ] (18:[LvUp] Learned Skill [String]:String) 
- | | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "Base System Variables":90:0 ] (18:[LvUp] Learned Skill [String]:Number) 
+ | | | |■Load DB(Var):  CSelf7[一時文字列B] = VarDB[ "Base System Variables":90:1 ] (18:[LvUp] Learned Skills [String]:String) 
+ | | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "Base System Variables":90:0 ] (18:[LvUp] Learned Skills [String]:Number) 
  | | | |■Condition (Number):   [1] CSelf11[一時変数B] ==  0  
  | | | |-◇Condition:  [1]  [ CSelf11[一時変数B] == 0   ] Case↓
  | | | | |▼ 習得技能がなければ表示しない
@@ -986,7 +986,7 @@ WoditorEvCOMMAND_END
  | | | |▼ まだ全部なくなってなかったら「続き有り」フラグを返す
  | | | |■Condition (String):   [1] CSelf7[一時文字列B] Is Not Equal to ""
  | | | |-◇Condition:  [1] [ CSelf7[一時文字列B] Is Not Equal to "" ] Case↓
- | | | | |■Write to DB(Var): VarDB[ "Base System Variables":90:1 ] (18:[LvUp] Learned Skill [String]:String) =  CSelf7[一時文字列B]
+ | | | | |■Write to DB(Var): VarDB[ "Base System Variables":90:1 ] (18:[LvUp] Learned Skills [String]:String) =  CSelf7[一時文字列B]
  | | | | |■Set Variable: CSelf99[続き有り？] = 1 + 0 
  | | | | |■
  | | | |◇End◇

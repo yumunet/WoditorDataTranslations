@@ -244,7 +244,7 @@ WoditorEvCOMMAND_END
 ▼ Execute equipment processing.
 ■Call Event [Name]: CSelf90[Supplement Flag] = ["X[Map]Change Equipment"] <CommonEv 113>  / CSelf0[Target Ally] / CSelf21[Temp Equip Slot] / CSelf2[Weapon ID]
 ▼ Ver.2.22  Moved parameter increase/decrease processing to after equipment equip/remove.
-■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Target Ally] / 100:一時値再計算 / 0 / 0:なし
+■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Target Ally] / 100:Recalculate Temp Values / 0 / 0:No
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ If the corresponding character is in battle, store there as well.
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■

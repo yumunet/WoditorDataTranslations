@@ -255,7 +255,7 @@ WoditorEvCOMMAND_END
  |-◇Condition:  [1]  [ CSelf11[消費するもの] == 0   ] Case↓
  | |▼ SPを消費する場合
  | |■Set Variable: CSelf12[消費ポイント] *= -1 + 0 
- | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[発動主人公ID] / 23:SP / CSelf12[消費ポイント] / 0:なし
+ | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[発動主人公ID] / 23:SP / CSelf12[消費ポイント] / 0:No
  | |▼ 必要ポイントが足りなくなっていたら次使用不能にする
  | |■Call Event [Name]: CSelf15[一時変数A] = ["X[Map]Get Parameter"] <CommonEv 71>  / CSelf0[発動主人公ID] / 23:SP
  | |■Set Variable: CSelf12[消費ポイント] *= -1 + 0 
@@ -268,7 +268,7 @@ WoditorEvCOMMAND_END
  |-◇Condition:  [2]  [ CSelf11[消費するもの] == 1   ] Case↓
  | |▼ HPを消費する場合
  | |■Set Variable: CSelf12[消費ポイント] *= -1 + 0 
- | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[発動主人公ID] / 22:HP / CSelf12[消費ポイント] / 0:なし
+ | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[発動主人公ID] / 22:HP / CSelf12[消費ポイント] / 0:No
  | |▼ 必要ポイントが足りなくなっていたら次使用不能にする
  | |■Call Event [Name]: CSelf15[一時変数A] = ["X[Map]Get Parameter"] <CommonEv 71>  / CSelf0[発動主人公ID] / 22:HP
  | |■Set Variable: CSelf12[消費ポイント] *= -1 + 0 

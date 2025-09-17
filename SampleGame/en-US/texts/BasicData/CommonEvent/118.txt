@@ -648,8 +648,8 @@ WoditorEvCOMMAND_END
  | |■Set Variable: CSelf35[最終SP回復値] *= CSelf34[SP回復％] + 0 
  | |■Set Variable: CSelf35[最終SP回復値] /= 100 + 0 
  | |■Load DB(User):  CSelf35[最終SP回復値] += UserDB[ "Items":CSelf30[アイテム番号]:"┗ + SP Recovery [Points]" ] (2:-:13) 
- | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf14[一時キャラID] / 22:HP / CSelf33[最終HP回復値] / 0:なし
- | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf14[一時キャラID] / 23:SP / CSelf35[最終SP回復値] / 0:なし
+ | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf14[一時キャラID] / 22:HP / CSelf33[最終HP回復値] / 0:No
+ | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf14[一時キャラID] / 23:SP / CSelf35[最終SP回復値] / 0:No
  | |▼ 回復エフェクト＋表示更新
  | |■Call Event [Name]: ["X[Map]Display Char HP/SP Recovery"] <CommonEv 97>  / CSelf11[一時変数B] / CSelf33[最終HP回復値] / CSelf35[最終SP回復値]
  | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0

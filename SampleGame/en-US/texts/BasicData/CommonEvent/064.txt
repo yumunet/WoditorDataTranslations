@@ -197,7 +197,7 @@ COMMAND_NUM=874
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("[Process Overview]")
-[103][0,1]<0>()("  This common event is called after executing the <dqrt>Create <Type> List<dqrt> event,")
+[103][0,1]<0>()("  This common event is called after executing the <dqrt>Create [type] List<dqrt> event,")
 [103][0,1]<0>()("  and it displays a screen listing items, equipment, etc. stored in the Variable DB.")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("  In Variable DB <dqrt>Base System Variables,<dqrt> you can set the window position, size, rows, and columns.")
@@ -224,8 +224,8 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("  Base Picture ID + 4 = Up Arrow")
 [103][0,1]<0>()("  Base Picture ID + 5 = Down Arrow")
 [103][0,1]<0>()("  Base Picture ID + 6 = Scroll Bar")
+[103][0,1]<0>()(" ")
 [103][0,1]<0>()("  Base Picture ID + 9-209 = Items (1 picture each item)")
-[103][0,1]<0>()("　")
 [103][0,1]<0>()("[Usage Example]")
 [103][0,1]<0>()("  There are examples in the common event <dqrt>■■[Common: Screen Processing]■■<dqrt>.")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
@@ -1074,7 +1074,7 @@ WoditorEvCOMMAND_END
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ [Process Overview]
-▼   This common event is called after executing the "Create <Type> List" event,
+▼   This common event is called after executing the "Create [type] List" event,
 ▼   and it displays a screen listing items, equipment, etc. stored in the Variable DB.
 ▼  
 ▼   In Variable DB "Base System Variables," you can set the window position, size, rows, and columns.
@@ -1101,8 +1101,8 @@ WoditorEvCOMMAND_END
 ▼   Base Picture ID + 4 = Up Arrow
 ▼   Base Picture ID + 5 = Down Arrow
 ▼   Base Picture ID + 6 = Scroll Bar
+▼  
 ▼   Base Picture ID + 9-209 = Items (1 picture each item)
-▼ 　
 ▼ [Usage Example]
 ▼   There are examples in the common event "■■[Common: Screen Processing]■■".
 ▼ ―――――――――――――――――――――――――――――――――――

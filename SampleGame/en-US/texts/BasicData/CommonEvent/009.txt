@@ -377,7 +377,7 @@ WoditorEvCOMMAND_END
  | | | | |◇End◇
  | | | | |■
  | | | |◇End◇
- | | | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf15[Character ID] / 100:一時値再計算 / 0 / 0:なし
+ | | | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf15[Character ID] / 100:Recalculate Temp Values / 0 / 0:No
  | | | |■
  | | |◇End◇
  | | |■
@@ -403,7 +403,7 @@ WoditorEvCOMMAND_END
  | | |◇End◇
  | | |■
  | |◇End◇
- | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Target Ally] / 100:一時値再計算 / 0 / 0:なし
+ | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Target Ally] / 100:Recalculate Temp Values / 0 / 0:No
  | |■
  |◇End◇
  |■
