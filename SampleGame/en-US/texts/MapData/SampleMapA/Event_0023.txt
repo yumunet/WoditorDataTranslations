@@ -42,7 +42,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("Since this is the English version, change the initial choice.")
 [121][4,0]<0>(9000007,1,0,0)()
 [101][0,1]<0>()("I'm a witch.<\n>Do you want to listen to the synthetic voice added in<\n>version 3.6?")
-[102][1,2]<0>(2)("Hear Japanese voice","Hear English voice")
+[102][1,2]<0>(2)("Listen to the Japanese voice","Listen to the English voice")
 [401][1,0]<0>(2)()
 [122][3,1]<1>(3000000,262656,0)("<<MS_VOICE_PLAY/SPEED=1/VOL=100/VOICE=Microsoft Haruka Desktop - Japanese>>こんにちは！　日本語でしゃべりまーす")
 [101][0,1]<1>()("こんにちは！ (Hello!)<\n>日本語でしゃべりまーす。 (I'm speaking in Japanese!)")
@@ -63,13 +63,13 @@ WoditorEvCOMMAND_END
 ▼ Since this is the English version, change the initial choice.
 ■Set Variable: Sys7:Initial Choice (0,1,2...) = 1 + 0 
 ■Show Message: I'm a witch.\nDo you want to listen to the synthetic voice added in\nversion 3.6?
-■Show Choice: / [1] Hear Japanese voice / [2] Hear English voice 
--◇Case: Choice [1] Hear Japanese voice                      ↓
+■Show Choice: / [1] Listen to the Japanese voice / [2] Listen to the English voice 
+-◇Case: Choice [1] Listen to the Japanese voice             ↓
  |■Set String: S0[[Sample] Temporary String] =<Execute Special Code> "<<MS_VOICE_PLAY/SPEED=1/VOL=100/VOICE=Microsoft Haruka Desktop - Japanese>>こんにちは！　日本語でしゃべりまーす"
  |■Show Message: こんにちは！ (Hello!)\n日本語でしゃべりまーす。 (I'm speaking in Japanese!)
  |■Show Message: What do you think?\nIf the voice isn't installed on Windows, it doesn't\nmake any sound, so sorry if you didn't hear it.
  |■
--◇Case: Choice [2] Hear English voice                       ↓
+-◇Case: Choice [2] Listen to the English voice              ↓
  |■Set String: S0[[Sample] Temporary String] =<Execute Special Code> "<<MS_VOICE_PLAY/SPEED=1/VOL=100/VOICE=Microsoft Zira Desktop - English (United States)>>Hi there! I'..."
  |■Show Message: Hi there! \nI'm a witch who speaks English!
  |■Show Message: What do you think?\nIf the voice isn't installed on Windows, it doesn't\nmake any sound, so sorry if you didn't hear it.
