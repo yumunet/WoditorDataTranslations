@@ -115,7 +115,7 @@ WoditorEvCOMMAND_START
 [180][1,0]<2>(10)()
 [140][4,0]<2>(32,0,0,0)()
 [180][1,0]<2>(10)()
-[101][0,1]<2>()("* Controls<\n>  \c[1]Z, Space, or Enter\c[0]: Confirm<\n>  \c[1]X or ESC\c[0]: Cancel")
+[101][0,1]<2>()("* Controls<\n>  \c[1]Z, Space, or Enter\c[0]: Confirm<\n>  \c[1]X or ESC\c[0]: Cancel/Menu")
 [103][0,1]<2>()("End of opening. You can delete up to here.")
 [0][0,0]<2>()()
 [498][0,0]<1>()()
@@ -209,7 +209,7 @@ WoditorEvCOMMAND_END
  | |■Wait: 10 Frames
  | |■Sound: SE 0[[System] Confirm] (0 Channel) Play / Delay: 0 Frames
  | |■Wait: 10 Frames
- | |■Show Message: * Controls\n  \c[1]Z, Space, or Enter\c[0]: Confirm\n  \c[1]X or ESC\c[0]: Cancel
+ | |■Show Message: * Controls\n  \c[1]Z, Space, or Enter\c[0]: Confirm\n  \c[1]X or ESC\c[0]: Cancel/Menu
  | |▼ End of opening. You can delete up to here.
  | |■
  |◇Loop End Point◇◇
