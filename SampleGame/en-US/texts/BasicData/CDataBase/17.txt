@@ -38,9 +38,9 @@ ITEMNAME6=[Temp] Post-Calc Agility
 ITEMNAME7=[Temp] Post-Calc Accuracy
 ITEMNAME8=[Temp] Post-Calc Evasion
 ITEMNAME9=[Temp]Post-Calc Critical Rate
-ITEMNAME10=[Temp] Has States on Map
-ITEMNAME11=[Temp] HP Regeneration
-ITEMNAME12=[Temp] SP Regeneration
+ITEMNAME10=[Temp] Has States on Map?
+ITEMNAME11=[Temp] HP Auto Change
+ITEMNAME12=[Temp] SP Auto Change
 ITEMNAME13=[Tmp] UntilNextStateRemove
 ITEMNAME14=[Tmp] NextStateRemoveMax
 ITEMNAME15=[Temp] State Names
@@ -240,7 +240,7 @@ DEFAULT_VAL_18=0
 DEFAULT_VAL_19=0
 DEFAULT_VAL_20=0
 <<--CSV_START-->>
-"[Temp] Post-Calc Max HP","[Temp] Post-Calc Max SP","[Temp] Post-Calc Attack","[Temp] Post-Calc Defense","[Temp] Post-Calc Magic Atk","[Temp] Post-Calc Magic Def","[Temp] Post-Calc Agility","[Temp] Post-Calc Accuracy","[Temp] Post-Calc Evasion","[Temp]Post-Calc Critical Rate","[Temp] Has States on Map","[Temp] HP Regeneration","[Temp] SP Regeneration","[Tmp] UntilNextStateRemove","[Tmp] NextStateRemoveMax","[Temp] State Names","[Temp] Sealed?","[Store] Menu Skill Position","[Store] Battle Skill Position","[Store] Battle Item Position","[Store] Battle Command Pos",
+"[Temp] Post-Calc Max HP","[Temp] Post-Calc Max SP","[Temp] Post-Calc Attack","[Temp] Post-Calc Defense","[Temp] Post-Calc Magic Atk","[Temp] Post-Calc Magic Def","[Temp] Post-Calc Agility","[Temp] Post-Calc Accuracy","[Temp] Post-Calc Evasion","[Temp]Post-Calc Critical Rate","[Temp] Has States on Map?","[Temp] HP Auto Change","[Temp] SP Auto Change","[Tmp] UntilNextStateRemove","[Tmp] NextStateRemoveMax","[Temp] State Names","[Temp] Sealed?","[Store] Menu Skill Position","[Store] Battle Skill Position","[Store] Battle Item Position","[Store] Battle Command Pos",
 9999,200,30,20,20,151,0,30,40,5,2,3,0,0,0,"",0,0,0,0,0,
 6,120,120,0,0,30,0,10,10,3,1,0,0,0,0,"",0,0,0,0,0,
 10,30,30,0,0,20,0,5,10,3,2,1,0,0,0,"",0,0,0,0,0,

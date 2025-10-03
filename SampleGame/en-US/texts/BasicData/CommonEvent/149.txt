@@ -256,6 +256,6 @@ WoditorEvCOMMAND_END
 ■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf1[格納主人公ID]
 ■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf1[格納主人公ID]
 ■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf1[格納主人公ID]
-■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf1[格納主人公ID] / -1:全て消去（強制） / 2:更新
+■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf1[格納主人公ID] / -1:Remove All (Force) / 2:Update
 ■
 [COMMAND_TEXT_END]

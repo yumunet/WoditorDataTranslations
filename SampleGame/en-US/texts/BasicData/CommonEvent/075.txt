@@ -8,9 +8,9 @@ MEMO=
 VALINPUT_NUM=3
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=主人公データID
-VALINPUT_NAME_1=付与する状態
-VALINPUT_NAME_2=付与？消去？
+VALINPUT_NAME_0=Ally ID
+VALINPUT_NAME_1=State
+VALINPUT_NAME_2=Action
 VALINPUT_NAME_3=
 VALINPUT_NAME_4=
 VALINPUT_NAME_5=
@@ -33,13 +33,13 @@ LOADTYPE9=0
 CHOICE_STR_NUM=10
 CHOICE_STR_0_NUM=0
 CHOICE_STR_1_NUM=3
-CHOICE_STR_1_0=全て消去（強制）
-CHOICE_STR_1_1=全て消去(全回復時対象のみ)
-CHOICE_STR_1_2=全て消去(死亡除く全回復時対象)
+CHOICE_STR_1_0=Remove All (Force)
+CHOICE_STR_1_1=Remove All (Only Full Recovery Targets)
+CHOICE_STR_1_2=Remove All (Full Recovery Targets Excluding Fainting)
 CHOICE_STR_2_NUM=3
-CHOICE_STR_2_0=消去
-CHOICE_STR_2_1=付与
-CHOICE_STR_2_2=更新
+CHOICE_STR_2_0=Remove
+CHOICE_STR_2_1=Add
+CHOICE_STR_2_2=Update
 CHOICE_STR_3_NUM=0
 CHOICE_STR_4_NUM=0
 CHOICE_STR_5_NUM=0
@@ -72,41 +72,41 @@ DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
 RETURN_VAL_NAME=
 RETURN_VAL_TARGET=-1
-CSELF_NAME_0=主人公データID
-CSELF_NAME_1=付与する状態
-CSELF_NAME_2=付与？=1 消去？=0　更新？=2
+CSELF_NAME_0=Ally ID
+CSELF_NAME_1=State
+CSELF_NAME_2=Remove=0, Add=1, Update=2
 CSELF_NAME_3=
 CSELF_NAME_4=
 CSELF_NAME_5=
 CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
-CSELF_NAME_9=状態異常表示文字列
-CSELF_NAME_10=状態全個数
-CSELF_NAME_11=処理中状態ID
-CSELF_NAME_12=基本ターン
-CSELF_NAME_13=増減ターン
-CSELF_NAME_14=合計ターン
-CSELF_NAME_15=全回復対象フラグ？
-CSELF_NAME_16=種別（1＝移動中有効）
-CSELF_NAME_17=残りターン
-CSELF_NAME_18=全解除フラグ（残す状態番号を格納 -1でﾅｼ）
+CSELF_NAME_9=State Display Text
+CSELF_NAME_10=Total State Count
+CSELF_NAME_11=Processing State ID
+CSELF_NAME_12=Base Turns
+CSELF_NAME_13=Change Turns
+CSELF_NAME_14=Total Turns
+CSELF_NAME_15=Full Recovery Target?
+CSELF_NAME_16=Category (1=Work on Map)
+CSELF_NAME_17=Turns Left
+CSELF_NAME_18=Remove All Flag (State ID to Keep, -1 for None)
 CSELF_NAME_19=
-CSELF_NAME_20=一時変数A
-CSELF_NAME_21=戦闘不能ターン数
-CSELF_NAME_22=状態異常表示有り？
-CSELF_NAME_23=表示状態異常個数（4個で改行）
-CSELF_NAME_24=表示状態に/入れる？
-CSELF_NAME_25=戦闘不能の扱いフラグ
+CSELF_NAME_20=Temp Variable A
+CSELF_NAME_21=Fainted Turn Count
+CSELF_NAME_22=Display States?
+CSELF_NAME_23=State Display Count (New Line Every 4)
+CSELF_NAME_24=Put Slash (/) in State Display?
+CSELF_NAME_25=Faint Handling
 CSELF_NAME_26=
 CSELF_NAME_27=
 CSELF_NAME_28=
-CSELF_NAME_29=強制付与する？
-CSELF_NAME_30=重複状態チェック用
-CSELF_NAME_31=重複状態
-CSELF_NAME_32=重複の変化先状態
-CSELF_NAME_33=最終変化先状態
-CSELF_NAME_34=変化元状態
+CSELF_NAME_29=
+CSELF_NAME_30=Stacking State Check
+CSELF_NAME_31=Stacking State
+CSELF_NAME_32=Post-Change State
+CSELF_NAME_33=Final Resulting State
+CSELF_NAME_34=Pre-Change State
 CSELF_NAME_35=
 CSELF_NAME_36=
 CSELF_NAME_37=
@@ -177,14 +177,14 @@ COMMAND_NUM=339
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("[Process Overview]")
-[103][0,1]<0>()("　基本システムのマップ移動時に主人公の状態異常を付与・消去するときは、必ずこのコモンイベントを使用します。")
-[103][0,1]<0>()("　移動中のみ有効です。")
+[103][0,1]<0>()("  This common event is always used to add or remove states on the ally in the base system.")
+[103][0,1]<0>()("  Works only on the map.")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("　戦闘不能でなくなった場合のHPの変動（0以下か、1以上になるか）も処理しています")
+[103][0,1]<0>()("  Also, handles HP changes related to the fainted state.")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("　処理後、負荷軽減のために使用する")
-[103][0,1]<0>()("　「いま状態にかかっているか」「最短で残り何歩で回復するか」の情報を")
-[103][0,1]<0>()("　主人公一時DBに記憶しています。")
+[103][0,1]<0>()("  After processing, to reduce load,")
+[103][0,1]<0>()("  information on whether currently affected by a state and the minimum number of steps remaining until removal")
+[103][0,1]<0>()("  is stored in the allies' temporary database.")
 [103][0,1]<0>()("")
 [103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
@@ -195,24 +195,24 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600018,-1,0,0)()
 [111][4,0]<0>(1,1600002,2,2)()
 [401][1,0]<0>(1)()
-[213][0,1]<1>()("更新処理")
+[213][0,1]<1>()("Update")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [111][4,0]<0>(1,1600000,0,4)()
 [401][1,0]<0>(1)()
-[106][0,1]<1>()("【エラー】<\n>主人公ID0未満は<\n>指定できません。")
+[106][0,1]<1>()("[Error]<\n> Ally ID cannot be<\n> less than 0.")
 [172][0,0]<1>()()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [111][7,0]<0>(18,1600001,0,1,1600001,-1,3)()
 [401][1,0]<0>(1)()
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<1>()("特定の1状態だけ付与・消去する")
+[103][0,1]<1>()("Add or remove only the specified state.")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [250][5,4]<1>(8,1600001,7,332288,1600016)("","States","","Category (Battle/Map)")
 [111][4,0]<1>(1,1600016,0,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("戦闘中のみだったら終了")
+[103][0,1]<2>()("If it's battle-only, end.")
 [172][0,0]<2>()()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
@@ -220,21 +220,21 @@ WoditorEvCOMMAND_START
 [250][5,4]<1>(8,-1,7,70144,1600010)("","States","","")
 [111][4,0]<1>(1,1600011,1600010,1)()
 [401][1,0]<1>(1)()
-[106][0,1]<2>()("【エラー】<\n>状態IDが大きすぎます＞\cself[1]")
+[106][0,1]<2>()("[Error]<\n> State ID is too large > \cself[1]")
 [172][0,0]<2>()()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [111][7,0]<1>(2,1600002,1,2,1600002,0,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("状態ＩＤがマイナスなら何もしない")
+[103][0,1]<2>()("If State ID is negative, do nothing.")
 [111][4,0]<2>(1,1600011,-1,3)()
 [401][1,0]<2>(1)()
 [172][0,0]<3>()()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [179][1,0]<2>(1)()
-[103][0,1]<3>()("まず、重複で変化する状態異常を探す。もしあればこの処理をここで終了して次の状態付与へ")
-[103][0,1]<3>()("（ただし、重複先がまた同じ状態異常ならそのままスルー）")
+[103][0,1]<3>()("First, check for a state that changes when stacked. If found, end this process and proceed to apply the post-change state.")
+[103][0,1]<3>()("(However, if the post-change state is the same, ignore it.)")
 [121][4,0]<3>(1600030,-1,0,0)()
 [121][4,0]<3>(1600033,-10,0,0)()
 [179][1,0]<3>(1600010)()
@@ -242,12 +242,12 @@ WoditorEvCOMMAND_START
 [250][5,4]<4>(2,1600000,1600030,69632,1600017)("","┗ State List","","")
 [111][4,0]<4>(1,1600017,0,5)()
 [401][1,0]<4>(1)()
-[103][0,1]<5>()("重なると変化するステ状態に該当した場合")
+[103][0,1]<5>()("Check if the state changes when stacked.")
 [250][5,4]<5>(8,1600030,10,332288,1600031)("","States","","When This State Is Stacked...")
 [111][4,0]<5>(1,1600031,1600011,2)()
 [401][1,0]<5>(1)()
 [250][5,4]<6>(8,1600030,11,332288,1600032)("","States","","┗ Make It Into This State")
-[103][0,1]<6>()("変化先の状態と、新しく付与される状態が異なる場合だけ処理")
+[103][0,1]<6>()("Process only if the new state to be added and the post-change state are different.")
 [111][4,0]<6>(1,1600031,1600032,5)()
 [401][1,0]<6>(1)()
 [121][4,0]<7>(1600033,1600032,0,0)()
@@ -262,19 +262,19 @@ WoditorEvCOMMAND_START
 [498][0,0]<3>()()
 [111][10,0]<3>(3,1600033,-10,2,1600033,0,1,1600033,-1,3)()
 [401][1,0]<3>(1)()
-[103][0,1]<4>()("-10のままなら変化する状態がないので、ここまま進む（処理は空）")
+[103][0,1]<4>()("If it's still -10, there's no changeable state, so proceed (processing is empty).")
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
-[103][0,1]<4>()("変化する状態があった場合")
+[103][0,1]<4>()("If there's a changeable state")
 [103][0,1]<4>()(" ")
-[103][0,1]<4>()("変化元の状態を解除")
+[103][0,1]<4>()("Remove pre-change state.")
 [250][5,4]<4>(2,1600000,1600034,65536,0)("","┗ State List","","")
-[103][0,1]<4>()("変化先の状態を付与")
+[103][0,1]<4>()("Add post-change state.")
 [210][5,0]<4>(600100,3,1600000,1600032,1)()
 [172][0,0]<4>()()
 [0][0,0]<4>()()
 [401][1,0]<3>(3)()
-[103][0,1]<4>()("治る場合")
+[103][0,1]<4>()("If removed")
 [210][5,0]<4>(600100,3,1600000,1600034,0)()
 [172][0,0]<4>()()
 [0][0,0]<4>()()
@@ -282,19 +282,19 @@ WoditorEvCOMMAND_START
 [0][0,0]<3>()()
 [498][0,0]<2>()()
 [179][1,0]<2>(1)()
-[103][0,1]<3>()("まず、戦闘不能になる状態かどうかチェック")
+[103][0,1]<3>()("First, check if it's a state that causes fainting.")
 [250][5,4]<3>(8,1600011,15,332288,1600020)("","States","","Count as Fainted?")
 [111][4,0]<3>(1,1600020,2,2)()
 [401][1,0]<3>(1)()
-[103][0,1]<4>()("「なったら即ＨＰ0」なら即死させる")
-[103][0,1]<4>()("変化させる状態異常を「戦闘不能」に")
+[103][0,1]<4>()("If it's set to <dqrt>On Apply: HP 0 (State 0),<dqrt> cause instant death.")
+[103][0,1]<4>()("Set the processing state to <dqrt>fainted.<dqrt>")
 [121][4,0]<4>(1600001,0,0,0)()
 [121][4,0]<4>(1600011,0,0,0)()
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [0][0,0]<3>()()
 [498][0,0]<2>()()
-[103][0,1]<2>()("残りターン数を計算（基本ターン＝-1なら永久）")
+[103][0,1]<2>()("Calculate remaining turns. (If base turn is -1, infinite)")
 [250][5,4]<2>(8,1600011,4,332288,1600012)("","States","","Duration in Turns [-1:Infinite]")
 [111][4,0]<2>(17,1600012,0,1)()
 [401][1,0]<2>(1)()
@@ -303,16 +303,16 @@ WoditorEvCOMMAND_START
 [121][4,0]<3>(1600013,2,0,768)()
 [121][4,0]<3>(1600014,0,1600013,24832)()
 [121][4,0]<3>(1600014,1,0,1536)()
-[103][0,1]<3>()("一時DBの次ステータス回復までの歩数を引き上げ")
+[103][0,1]<3>()("If necessary, raise the steps until the next state removal in the Temp DB.")
 [250][5,4]<3>(21,1600000,12,327776,1600014)("","×Allies Temp Data","","[Tmp] UntilNextStateRemove")
 [0][0,0]<3>()()
 [420][1,0]<2>(0)()
-[103][0,1]<3>()("無限に続く状態の場合は-1を格納")
+[103][0,1]<3>()("If the state lasts indefinitely, store -1.")
 [121][4,0]<3>(1600014,-1,0,0)()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [250][5,4]<2>(2,1600000,1600011,65536,1600014)("","┗ State List","","")
-[103][0,1]<2>()("これ以外解除するかをチェック")
+[103][0,1]<2>()("Check whether to remove all other states.")
 [250][5,4]<2>(8,1600011,19,332288,1600020)("","States","","All Other States...")
 [111][4,0]<2>(1,1600020,1,2)()
 [401][1,0]<2>(1)()
@@ -321,7 +321,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<2>()()
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[103][0,1]<2>()("残りターン数を0にする")
+[103][0,1]<2>()("Set remaining turns to 0.")
 [250][5,4]<2>(2,1600000,1600011,65536,0)("","┗ State List","","")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
@@ -329,28 +329,28 @@ WoditorEvCOMMAND_START
 [401][1,0]<0>(2)()
 [111][4,0]<1>(1,1600002,1,2)()
 [401][1,0]<1>(1)()
-[106][0,1]<2>()("【エラー】<\n>全状態の「付与」はできません。")
+[106][0,1]<2>()("[Error]<\n> Cannot <dqrt>add<dqrt> all states.")
 [172][0,0]<2>()()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [111][4,0]<1>(1,1600002,0,2)()
 [401][1,0]<1>(1)()
 [103][0,1]<2>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<2>()("■状態を全消去する場合")
-[103][0,1]<2>()("-1なら強制的に全状態を消去　　-2なら全回復時に治療する状態のみ消去")
+[103][0,1]<2>()("■ When removing all states")
+[103][0,1]<2>()("-1: Forcibly remove all states / -2: Remove only states that are removed on full recovery")
 [103][0,1]<2>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [250][5,4]<2>(8,-1,7,70144,1600010)("","States","","")
 [121][4,0]<2>(1600011,-1,0,0)()
 [111][4,0]<2>(1,1600001,-1,2)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("強制全回復")
+[103][0,1]<3>()("Force remove all.")
 [250][5,4]<3>(5,1600000,-2,65536,0)("","┗ State List","","")
 [250][5,4]<3>(0,1600000,0,327776,1)("","Allies","","HP")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [111][4,0]<2>(1,1600001,-3,3)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("死亡以外全部回復")
+[103][0,1]<3>()("Remove all except fainting.")
 [121][4,0]<3>(1600010,1,0,512)()
 [121][4,0]<3>(1600011,0,0,0)()
 [121][4,0]<3>(1600001,-2,0,0)()
@@ -358,13 +358,13 @@ WoditorEvCOMMAND_START
 [499][0,0]<2>()()
 [179][1,0]<2>(1600010)()
 [121][4,0]<3>(1600011,1,0,256)()
-[103][0,1]<3>()("もし状態 -2なら全回復時に治療する状態のみ付与・消去")
+[103][0,1]<3>()("If the state is -2, remove only states that are removed on full recovery.")
 [111][4,0]<3>(1,1600001,-2,2)()
 [401][1,0]<3>(1)()
 [250][5,4]<4>(8,1600011,0,332288,1600015)("","States","","Removed by Full Recovery?")
 [111][4,0]<4>(1,1600015,0,2)()
 [401][1,0]<4>(1)()
-[103][0,1]<5>()("全回復対象でなかったら次へ")
+[103][0,1]<5>()("If not subject to full recovery, skip.")
 [176][0,0]<5>()()
 [0][0,0]<5>()()
 [499][0,0]<4>()()
@@ -377,38 +377,38 @@ WoditorEvCOMMAND_START
 [499][0,0]<1>()()
 [0][0,0]<1>()()
 [420][1,0]<0>(0)()
-[106][0,1]<1>()("【エラー】<\n>状態付与/消去に<\n>状態-3以下は設定できません。")
+[106][0,1]<1>()("[Error]<\n> State -3 or lower cannot be specified<\n> for state addition/removal.")
 [172][0,0]<1>()()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
-[212][0,1]<0>()("更新処理")
+[212][0,1]<0>()("Update")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("戦闘不能状態の有無からHPを修正する")
+[103][0,1]<0>()("Adjust HP depending on whether fainted or not.")
 [250][5,4]<0>(2,1600000,0,69632,1600021)("","┗ State List","","")
 [250][5,4]<0>(18,0,19,332288,1600025)("","System Settings","","Fainted Members After Battle")
 [111][7,0]<0>(2,1600025,0,2,1600025,1,2)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("「戦闘不能のまま」システムになっていた場合")
+[103][0,1]<1>()("If system is set to <dqrt>Stay Fainted<dqrt>")
 [111][7,0]<1>(2,1600021,0,2,1600021,0,5)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("戦闘不能でなかったら、とにかくHPを1以上にする")
+[103][0,1]<2>()("If not fainted, ensure HP is at least 1.")
 [250][5,4]<2>(0,1600000,0,327776,1)("","Allies","","HP")
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[103][0,1]<2>()("戦闘不能状態になってたら、とにかくHPを0にする")
+[103][0,1]<2>()("If fainted, ensure HP is 0.")
 [250][5,4]<2>(0,1600000,0,327680,0)("","Allies","","HP")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [0][0,0]<1>()()
 [401][1,0]<0>(2)()
-[103][0,1]<1>()("「HP1で回復」システムになっていた場合")
+[103][0,1]<1>()("If system is set to <dqrt>Revive with 1 HP<dqrt>")
 [250][5,4]<1>(2,1600000,0,65536,0)("","┗ State List","","")
 [250][5,4]<1>(0,1600000,0,327776,1)("","Allies","","HP")
-[103][0,1]<1>()("戦闘不能は解除する")
+[103][0,1]<1>()("Remove fainted state.")
 [121][4,0]<1>(1600021,0,0,0)()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
-[103][0,1]<0>()("もし「戦闘不能」に全ステ解除属性付いてた場合は、全解除状態として戦闘不能（0番）を記憶")
+[103][0,1]<0>()("If <dqrt>Fainted<dqrt> is set to remove all other states, store fainted (ID 0) as the state excluded when removing all states.")
 [111][4,0]<0>(1,1600021,0,5)()
 [401][1,0]<0>(1)()
 [250][5,4]<1>(8,0,0,332288,1600020)("","States","","All Other States...")
@@ -420,32 +420,32 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("もし「これ以外の状態を全て解除」する状態が付与されていたら、「その状態」と「戦闘不能」以外を全部0にする")
+[103][0,1]<0>()("If the state is set to remove all other states, set all states to 0 except that state and fainted.")
 [111][4,0]<0>(1,1600018,0,1)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("残す状態のターン数だけ取得して、初期化する")
+[103][0,1]<1>()("Get the remaining steps of the state to be kept, then reset.")
 [250][5,4]<1>(2,1600000,1600018,69632,1600020)("","┗ State List","","")
 [250][5,4]<1>(2,1600000,-2,65536,1600020)("","┗ State List","","")
-[103][0,1]<1>()("全部0になったので、残りターン数（歩数）を再入力")
+[103][0,1]<1>()("Since all are set to 0, set the remaining turns (steps).")
 [250][5,4]<1>(2,1600000,0,65536,1600021)("","┗ State List","","")
 [250][5,4]<1>(2,1600000,1600018,65536,1600020)("","┗ State List","","")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [103][0,1]<0>()(" ")
 [179][1,0]<0>(1)()
-[103][0,1]<1>()("最後に、状態異常を受けているかどうか、受けていれば")
-[103][0,1]<1>()("あと何ターンで回復するかを主人公一時DBに代入します")
-[103][0,1]<1>()("また、移動時の一歩あたりのHP・SP変動値の計算も行います")
+[103][0,1]<1>()("Finally, store whether an ally has each state and, if so,")
+[103][0,1]<1>()("how many turns remain until it's removed, in the allies temporary database.")
+[103][0,1]<1>()("Also, calculate HP/SP change per step on the map.")
 [121][4,0]<1>(1600023,0,0,0)()
 [122][2,1]<1>(1600009,0)("")
 [250][5,4]<1>(18,0,17,332288,1600024)("","System Settings","","States Display")
-[103][0,1]<1>()("初期化")
-[250][5,4]<1>(21,1600000,9,327680,0)("","×Allies Temp Data","","[Temp] Has States on Map")
+[103][0,1]<1>()("Initialize.")
+[250][5,4]<1>(21,1600000,9,327680,0)("","×Allies Temp Data","","[Temp] Has States on Map?")
 [250][5,4]<1>(21,1600000,0,327680,999999)("","×Allies Temp Data","","[Tmp] UntilNextStateRemove")
-[250][5,4]<1>(17,1600000,11,327680,0)("","×Allies Temp Data","","[Temp] HP Regeneration")
-[250][5,4]<1>(17,1600000,12,327680,0)("","×Allies Temp Data","","[Temp] SP Regeneration")
+[250][5,4]<1>(17,1600000,11,327680,0)("","×Allies Temp Data","","[Temp] HP Auto Change")
+[250][5,4]<1>(17,1600000,12,327680,0)("","×Allies Temp Data","","[Temp] SP Auto Change")
 [250][5,4]<1>(17,1600000,16,327680,0)("","×Allies Temp Data","","[Temp] Sealed?")
-[103][0,1]<1>()("全状態分を判定")
+[103][0,1]<1>()("Check all states.")
 [250][5,4]<1>(8,-1,7,70144,1600010)("","States","","")
 [121][4,0]<1>(1600011,-1,0,0)()
 [179][1,0]<1>(1600010)()
@@ -455,23 +455,23 @@ WoditorEvCOMMAND_START
 [401][1,0]<2>(1)()
 [111][7,0]<3>(2,1600017,1,1,1600017,-1,2)()
 [401][1,0]<3>(1)()
-[103][0,1]<4>()("一時DBの、次にステータスが回復するまでの歩数を算出")
+[103][0,1]<4>()("Store the steps until the next state is removed in the temporary database.")
 [250][5,4]<4>(21,1600000,0,327792,1600017)("","×Allies Temp Data","","[Tmp] UntilNextStateRemove")
-[250][5,4]<4>(21,1600000,0,327680,1)("","×Allies Temp Data","","[Temp] Has States on Map")
+[250][5,4]<4>(21,1600000,0,327680,1)("","×Allies Temp Data","","[Temp] Has States on Map?")
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
-[250][5,4]<4>(21,1600000,0,327680,1)("","×Allies Temp Data","","[Temp] Has States on Map")
+[250][5,4]<4>(21,1600000,0,327680,1)("","×Allies Temp Data","","[Temp] Has States on Map?")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
-[103][0,1]<3>()("HP・SPの自然変動値を加算")
+[103][0,1]<3>()("Add HP/SP auto-change amount.")
 [250][5,4]<3>(8,1600011,34,332288,1600020)("","States","","HP Change ±(1 Step on Map)")
-[250][5,4]<3>(24,1600000,10,327696,1600020)("","×Allies Temp Data","","[Temp] HP Regeneration")
+[250][5,4]<3>(24,1600000,10,327696,1600020)("","×Allies Temp Data","","[Temp] HP Auto Change")
 [250][5,4]<3>(8,1600011,35,332288,1600020)("","States","","SP Change ± (1 Step on Map)")
-[250][5,4]<3>(24,1600000,11,327696,1600020)("","×Allies Temp Data","","[Temp] SP Regeneration")
-[103][0,1]<3>()("封印状態チェック")
+[250][5,4]<3>(24,1600000,11,327696,1600020)("","×Allies Temp Data","","[Temp] SP Auto Change")
+[103][0,1]<3>()("Check for sealed state.")
 [250][5,4]<3>(8,1600011,17,332288,1600020)("","States","","Skill Limitation")
 [250][5,4]<3>(17,1600000,16,327776,1600020)("","×Allies Temp Data","","[Temp] Sealed?")
-[103][0,1]<3>()("もしステータスに表示される状態異常なら、状態名一覧に追加")
+[103][0,1]<3>()("If the state is displayed in the status, add it to the state name list.")
 [250][5,4]<3>(8,1600011,0,332288,1600022)("","States","","Display Type")
 [111][4,0]<3>(1,1600022,1,6)()
 [401][1,0]<3>(1)()
@@ -502,15 +502,15 @@ WoditorEvCOMMAND_START
 [499][0,0]<2>()()
 [0][0,0]<2>()()
 [498][0,0]<1>()()
-[103][0,1]<1>()("回復ターンMaxにコピーする。　こっちの値は、回復時にまとめて全ステータスの残り歩数を減らすときに使う")
+[103][0,1]<1>()("Copy to maximum removal turns. This value is used when reducing the remaining steps of all states at once during state removal.")
 [250][5,4]<1>(21,1600000,0,331776,1600017)("","×Allies Temp Data","","[Tmp] UntilNextStateRemove")
 [250][5,4]<1>(21,1600000,0,327680,1600017)("","×Allies Temp Data","","[Tmp] NextStateRemoveMax")
-[103][0,1]<1>()("表示状態文字列に格納")
+[103][0,1]<1>()("Store state display string.")
 [250][5,4]<1>(21,1600000,14,327680,1600009)("","×Allies Temp Data","","[Temp] State Names")
 [103][0,1]<1>()(" ")
-[103][0,1]<1>()("ターンで回復する状態が一つもない状態なら、この段階で")
-[103][0,1]<1>()("次ステータス回復までの残り歩数が999999になるが、それで問題なし。")
-[103][0,1]<1>()("（このカウントが0になったら回復判定を行うため、その処理をさせないために999999のままにする）")
+[103][0,1]<1>()("If no states are removed by turn progression,")
+[103][0,1]<1>()("the remaining steps until the next state removal will be 999999 at this point, but it's not a problem.")
+[103][0,1]<1>()("(This counter triggers state removal when it reaches 0, so keep it at 999999 to prevent that process from occurring.)")
 [0][0,0]<1>()()
 [498][0,0]<0>()()
 [0][0,0]<0>()()
@@ -519,14 +519,14 @@ WoditorEvCOMMAND_END
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ [Process Overview]
-▼ 　基本システムのマップ移動時に主人公の状態異常を付与・消去するときは、必ずこのコモンイベントを使用します。
-▼ 　移動中のみ有効です。
+▼   This common event is always used to add or remove states on the ally in the base system.
+▼   Works only on the map.
 ▼  
-▼ 　戦闘不能でなくなった場合のHPの変動（0以下か、1以上になるか）も処理しています
+▼   Also, handles HP changes related to the fainted state.
 ▼  
-▼ 　処理後、負荷軽減のために使用する
-▼ 　「いま状態にかかっているか」「最短で残り何歩で回復するか」の情報を
-▼ 　主人公一時DBに記憶しています。
+▼   After processing, to reduce load,
+▼   information on whether currently affected by a state and the minimum number of steps remaining until removal
+▼   is stored in the allies' temporary database.
 ▼ 
 ▼ [Databases Accessed by This Common Event]
 ▼  
@@ -534,66 +534,66 @@ WoditorEvCOMMAND_END
 ▼  
 ▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
-■Set Variable: CSelf18[全解除フラグ（残す状態番号を格納 -1でﾅｼ）] = -1 + 0 
-■Condition (Number):   [1] CSelf2[付与？=1 消去？=0　更新？=2] ==  2  
--◇Condition:  [1]  [ CSelf2[付与？=1 消去？=0　更新？=2] == 2   ] Case↓
- |●Label Jump [更新処理] >>>>>>>>>>>>>>>>>>>>>>>>>
+■Set Variable: CSelf18[Remove All Flag (State ID to Keep, -1 fo..] = -1 + 0 
+■Condition (Number):   [1] CSelf2[Remove=0, Add=1, Update=2] ==  2  
+-◇Condition:  [1]  [ CSelf2[Remove=0, Add=1, Update=2] == 2   ] Case↓
+ |●Label Jump [Update] >>>>>>>>>>>>>>>>>>>>>>>>>
  |■
 ◇End◇
-■Condition (Number):   [1] CSelf0[主人公データID] <  0  
--◇Condition:  [1]  [ CSelf0[主人公データID] < 0   ] Case↓
- |■Debug Text: 【エラー】\n主人公ID0未満は\n指定できません。
+■Condition (Number):   [1] CSelf0[Ally ID] <  0  
+-◇Condition:  [1]  [ CSelf0[Ally ID] < 0   ] Case↓
+ |■Debug Text: [Error]\n Ally ID cannot be\n less than 0.
  |■Exit Event
  |■
 ◇End◇
-■Condition (Number):   [1] CSelf1[付与する状態] >=  0  /  [2] CSelf1[付与する状態] <=  -1  
--◇Condition:  [1]  [ CSelf1[付与する状態] >= 0   ] Case↓
+■Condition (Number):   [1] CSelf1[State] >=  0  /  [2] CSelf1[State] <=  -1  
+-◇Condition:  [1]  [ CSelf1[State] >= 0   ] Case↓
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |▼ 特定の1状態だけ付与・消去する
+ |▼ Add or remove only the specified state.
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |■Load DB(User):  CSelf16[種別（1＝移動中有効）] = UserDB[ "States":CSelf1[付与する状態]:"Category (Battle/Map)" ] (8:-:7) 
- |■Condition (Number):   [1] CSelf16[種別（1＝移動中有効）] ==  0  
- |-◇Condition:  [1]  [ CSelf16[種別（1＝移動中有効）] == 0   ] Case↓
- | |▼ 戦闘中のみだったら終了
+ |■Load DB(User):  CSelf16[Category (1=Work on Map)] = UserDB[ "States":CSelf1[State]:"Category (Battle/Map)" ] (8:-:7) 
+ |■Condition (Number):   [1] CSelf16[Category (1=Work on Map)] ==  0  
+ |-◇Condition:  [1]  [ CSelf16[Category (1=Work on Map)] == 0   ] Case↓
+ | |▼ If it's battle-only, end.
  | |■Exit Event
  | |■
  |◇End◇
- |■Set Variable: CSelf11[処理中状態ID] = CSelf1[付与する状態] + 0 
- |■Load DB(User):  CSelf10[状態全個数] = UserDB[Type "States"(8)'s Data Count]
- |■Condition (Number):   [1] CSelf11[処理中状態ID] >=  CSelf10[状態全個数]  
- |-◇Condition:  [1]  [ CSelf11[処理中状態ID] >= CSelf10[状態全個数]   ] Case↓
- | |■Debug Text: 【エラー】\n状態IDが大きすぎます＞\cself[1]
+ |■Set Variable: CSelf11[Processing State ID] = CSelf1[State] + 0 
+ |■Load DB(User):  CSelf10[Total State Count] = UserDB[Type "States"(8)'s Data Count]
+ |■Condition (Number):   [1] CSelf11[Processing State ID] >=  CSelf10[Total State Count]  
+ |-◇Condition:  [1]  [ CSelf11[Processing State ID] >= CSelf10[Total State Count]   ] Case↓
+ | |■Debug Text: [Error]\n State ID is too large > \cself[1]
  | |■Exit Event
  | |■
  |◇End◇
- |■Condition (Number):   [1] CSelf2[付与？=1 消去？=0　更新？=2] ==  1  /  [2] CSelf2[付与？=1 消去？=0　更新？=2] ==  0  
- |-◇Condition:  [1]  [ CSelf2[付与？=1 消去？=0　更新？=2] == 1   ] Case↓
- | |▼ 状態ＩＤがマイナスなら何もしない
- | |■Condition (Number):   [1] CSelf11[処理中状態ID] <=  -1  
- | |-◇Condition:  [1]  [ CSelf11[処理中状態ID] <= -1   ] Case↓
+ |■Condition (Number):   [1] CSelf2[Remove=0, Add=1, Update=2] ==  1  /  [2] CSelf2[Remove=0, Add=1, Update=2] ==  0  
+ |-◇Condition:  [1]  [ CSelf2[Remove=0, Add=1, Update=2] == 1   ] Case↓
+ | |▼ If State ID is negative, do nothing.
+ | |■Condition (Number):   [1] CSelf11[Processing State ID] <=  -1  
+ | |-◇Condition:  [1]  [ CSelf11[Processing State ID] <= -1   ] Case↓
  | | |■Exit Event
  | | |■
  | |◇End◇
  | |■Repeat Loop [ 1 ] Times
- | | |▼ まず、重複で変化する状態異常を探す。もしあればこの処理をここで終了して次の状態付与へ
- | | |▼ （ただし、重複先がまた同じ状態異常ならそのままスルー）
- | | |■Set Variable: CSelf30[重複状態チェック用] = -1 + 0 
- | | |■Set Variable: CSelf33[最終変化先状態] = -10 + 0 
- | | |■Repeat Loop [ CSelf10[状態全個数] ] Times
- | | | |■Set Variable: CSelf30[重複状態チェック用] += 1 + 0 
- | | | |■Load DB(Var):  CSelf17[残りターン] = VarDB[ "┗ State List":CSelf0[主人公データID]:CSelf30[重複状態チェック用] ] (5:-:-) 
- | | | |■Condition (Number):   [1] CSelf17[残りターン] !=  0  
- | | | |-◇Condition:  [1]  [ CSelf17[残りターン] != 0   ] Case↓
- | | | | |▼ 重なると変化するステ状態に該当した場合
- | | | | |■Load DB(User):  CSelf31[重複状態] = UserDB[ "States":CSelf30[重複状態チェック用]:"When This State Is Stacked..." ] (8:-:10) 
- | | | | |■Condition (Number):   [1] CSelf31[重複状態] ==  CSelf11[処理中状態ID]  
- | | | | |-◇Condition:  [1]  [ CSelf31[重複状態] == CSelf11[処理中状態ID]   ] Case↓
- | | | | | |■Load DB(User):  CSelf32[重複の変化先状態] = UserDB[ "States":CSelf30[重複状態チェック用]:"┗ Make It Into This State" ] (8:-:11) 
- | | | | | |▼ 変化先の状態と、新しく付与される状態が異なる場合だけ処理
- | | | | | |■Condition (Number):   [1] CSelf31[重複状態] !=  CSelf32[重複の変化先状態]  
- | | | | | |-◇Condition:  [1]  [ CSelf31[重複状態] != CSelf32[重複の変化先状態]   ] Case↓
- | | | | | | |■Set Variable: CSelf33[最終変化先状態] = CSelf32[重複の変化先状態] + 0 
- | | | | | | |■Set Variable: CSelf34[変化元状態] = CSelf30[重複状態チェック用] + 0 
+ | | |▼ First, check for a state that changes when stacked. If found, end this process and proceed to apply the post-change state.
+ | | |▼ (However, if the post-change state is the same, ignore it.)
+ | | |■Set Variable: CSelf30[Stacking State Check] = -1 + 0 
+ | | |■Set Variable: CSelf33[Final Resulting State] = -10 + 0 
+ | | |■Repeat Loop [ CSelf10[Total State Count] ] Times
+ | | | |■Set Variable: CSelf30[Stacking State Check] += 1 + 0 
+ | | | |■Load DB(Var):  CSelf17[Turns Left] = VarDB[ "┗ State List":CSelf0[Ally ID]:CSelf30[Stacking State Check] ] (5:-:-) 
+ | | | |■Condition (Number):   [1] CSelf17[Turns Left] !=  0  
+ | | | |-◇Condition:  [1]  [ CSelf17[Turns Left] != 0   ] Case↓
+ | | | | |▼ Check if the state changes when stacked.
+ | | | | |■Load DB(User):  CSelf31[Stacking State] = UserDB[ "States":CSelf30[Stacking State Check]:"When This State Is Stacked..." ] (8:-:10) 
+ | | | | |■Condition (Number):   [1] CSelf31[Stacking State] ==  CSelf11[Processing State ID]  
+ | | | | |-◇Condition:  [1]  [ CSelf31[Stacking State] == CSelf11[Processing State ID]   ] Case↓
+ | | | | | |■Load DB(User):  CSelf32[Post-Change State] = UserDB[ "States":CSelf30[Stacking State Check]:"┗ Make It Into This State" ] (8:-:11) 
+ | | | | | |▼ Process only if the new state to be added and the post-change state are different.
+ | | | | | |■Condition (Number):   [1] CSelf31[Stacking State] !=  CSelf32[Post-Change State]  
+ | | | | | |-◇Condition:  [1]  [ CSelf31[Stacking State] != CSelf32[Post-Change State]   ] Case↓
+ | | | | | | |■Set Variable: CSelf33[Final Resulting State] = CSelf32[Post-Change State] + 0 
+ | | | | | | |■Set Variable: CSelf34[Pre-Change State] = CSelf30[Stacking State Check] + 0 
  | | | | | | |■
  | | | | | |◇End◇
  | | | | | |■
@@ -602,257 +602,257 @@ WoditorEvCOMMAND_END
  | | | |◇End◇
  | | | |■
  | | |◇Loop End Point◇◇
- | | |■Condition (Number):   [1] CSelf33[最終変化先状態] ==  -10  /  [2] CSelf33[最終変化先状態] >=  0  /  [3] CSelf33[最終変化先状態] <=  -1  
- | | |-◇Condition:  [1]  [ CSelf33[最終変化先状態] == -10   ] Case↓
- | | | |▼ -10のままなら変化する状態がないので、ここまま進む（処理は空）
+ | | |■Condition (Number):   [1] CSelf33[Final Resulting State] ==  -10  /  [2] CSelf33[Final Resulting State] >=  0  /  [3] CSelf33[Final Resulting State] <=  -1  
+ | | |-◇Condition:  [1]  [ CSelf33[Final Resulting State] == -10   ] Case↓
+ | | | |▼ If it's still -10, there's no changeable state, so proceed (processing is empty).
  | | | |■
- | | |-◇Condition:  [2]  [ CSelf33[最終変化先状態] >= 0   ] Case↓
- | | | |▼ 変化する状態があった場合
+ | | |-◇Condition:  [2]  [ CSelf33[Final Resulting State] >= 0   ] Case↓
+ | | | |▼ If there's a changeable state
  | | | |▼  
- | | | |▼ 変化元の状態を解除
- | | | |■Write to DB(Var): VarDB[ "┗ State List":CSelf0[主人公データID]:CSelf34[変化元状態] ] (5:-:-) =  0
- | | | |▼ 変化先の状態を付与
- | | | |■Call Event: [+0 From This Common]  Common 75: [ X[Map]Add/Remove State ] / CSelf0[主人公データID] / CSelf32[重複の変化先状態] / 1:付与
+ | | | |▼ Remove pre-change state.
+ | | | |■Write to DB(Var): VarDB[ "┗ State List":CSelf0[Ally ID]:CSelf34[Pre-Change State] ] (5:-:-) =  0
+ | | | |▼ Add post-change state.
+ | | | |■Call Event: [+0 From This Common]  Common 75: [ X[Map]Add/Remove State ] / CSelf0[Ally ID] / CSelf32[Post-Change State] / 1:Add
  | | | |■Exit Event
  | | | |■
- | | |-◇Condition:  [3]  [ CSelf33[最終変化先状態] <= -1   ] Case↓
- | | | |▼ 治る場合
- | | | |■Call Event: [+0 From This Common]  Common 75: [ X[Map]Add/Remove State ] / CSelf0[主人公データID] / CSelf34[変化元状態] / 0:消去
+ | | |-◇Condition:  [3]  [ CSelf33[Final Resulting State] <= -1   ] Case↓
+ | | | |▼ If removed
+ | | | |■Call Event: [+0 From This Common]  Common 75: [ X[Map]Add/Remove State ] / CSelf0[Ally ID] / CSelf34[Pre-Change State] / 0:Remove
  | | | |■Exit Event
  | | | |■
  | | |◇End◇
  | | |■
  | |◇Loop End Point◇◇
  | |■Repeat Loop [ 1 ] Times
- | | |▼ まず、戦闘不能になる状態かどうかチェック
- | | |■Load DB(User):  CSelf20[一時変数A] = UserDB[ "States":CSelf11[処理中状態ID]:"Count as Fainted?" ] (8:-:15) 
- | | |■Condition (Number):   [1] CSelf20[一時変数A] ==  2  
- | | |-◇Condition:  [1]  [ CSelf20[一時変数A] == 2   ] Case↓
- | | | |▼ 「なったら即ＨＰ0」なら即死させる
- | | | |▼ 変化させる状態異常を「戦闘不能」に
- | | | |■Set Variable: CSelf1[付与する状態] = 0 + 0 
- | | | |■Set Variable: CSelf11[処理中状態ID] = 0 + 0 
+ | | |▼ First, check if it's a state that causes fainting.
+ | | |■Load DB(User):  CSelf20[Temp Variable A] = UserDB[ "States":CSelf11[Processing State ID]:"Count as Fainted?" ] (8:-:15) 
+ | | |■Condition (Number):   [1] CSelf20[Temp Variable A] ==  2  
+ | | |-◇Condition:  [1]  [ CSelf20[Temp Variable A] == 2   ] Case↓
+ | | | |▼ If it's set to "On Apply: HP 0 (State 0)," cause instant death.
+ | | | |▼ Set the processing state to "fainted."
+ | | | |■Set Variable: CSelf1[State] = 0 + 0 
+ | | | |■Set Variable: CSelf11[Processing State ID] = 0 + 0 
  | | | |■
  | | |◇End◇
  | | |■
  | |◇Loop End Point◇◇
- | |▼ 残りターン数を計算（基本ターン＝-1なら永久）
- | |■Load DB(User):  CSelf12[基本ターン] = UserDB[ "States":CSelf11[処理中状態ID]:"Duration in Turns [-1:Infinite]" ] (8:-:4) 
- | |■Condition (Number):   [1] CSelf12[基本ターン] >=  0  
- | |-◇Condition:  [1]  [ CSelf12[基本ターン] >= 0   ] Case↓
- | | |■Load DB(User):  CSelf13[増減ターン] = UserDB[ "States":CSelf11[処理中状態ID]:"┗ Duration Variance [±]" ] (8:-:5) 
- | | |■Set Variable: CSelf14[合計ターン] = CSelf12[基本ターン] - CSelf13[増減ターン] 
- | | |■Set Variable: CSelf13[増減ターン] *= 2 + 0 
- | | |■Set Variable: CSelf14[合計ターン] += 0  to  CSelf13[増減ターン] 
- | | |■Set Variable: CSelf14[合計ターン] Lower Bound= 1 + 0 
- | | |▼ 一時DBの次ステータス回復までの歩数を引き上げ
- | | |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[主人公データID]:"[Tmp] UntilNextStateRemove" ] (17:-:13) Lower Bound  CSelf14[合計ターン]
+ | |▼ Calculate remaining turns. (If base turn is -1, infinite)
+ | |■Load DB(User):  CSelf12[Base Turns] = UserDB[ "States":CSelf11[Processing State ID]:"Duration in Turns [-1:Infinite]" ] (8:-:4) 
+ | |■Condition (Number):   [1] CSelf12[Base Turns] >=  0  
+ | |-◇Condition:  [1]  [ CSelf12[Base Turns] >= 0   ] Case↓
+ | | |■Load DB(User):  CSelf13[Change Turns] = UserDB[ "States":CSelf11[Processing State ID]:"┗ Duration Variance [±]" ] (8:-:5) 
+ | | |■Set Variable: CSelf14[Total Turns] = CSelf12[Base Turns] - CSelf13[Change Turns] 
+ | | |■Set Variable: CSelf13[Change Turns] *= 2 + 0 
+ | | |■Set Variable: CSelf14[Total Turns] += 0  to  CSelf13[Change Turns] 
+ | | |■Set Variable: CSelf14[Total Turns] Lower Bound= 1 + 0 
+ | | |▼ If necessary, raise the steps until the next state removal in the Temp DB.
+ | | |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Tmp] UntilNextStateRemove" ] (17:-:13) Lower Bound  CSelf14[Total Turns]
  | | |■
  | |-◇Else
- | | |▼ 無限に続く状態の場合は-1を格納
- | | |■Set Variable: CSelf14[合計ターン] = -1 + 0 
+ | | |▼ If the state lasts indefinitely, store -1.
+ | | |■Set Variable: CSelf14[Total Turns] = -1 + 0 
  | | |■
  | |◇End◇
- | |■Write to DB(Var): VarDB[ "┗ State List":CSelf0[主人公データID]:CSelf11[処理中状態ID] ] (5:-:-) =  CSelf14[合計ターン]
- | |▼ これ以外解除するかをチェック
- | |■Load DB(User):  CSelf20[一時変数A] = UserDB[ "States":CSelf11[処理中状態ID]:"All Other States..." ] (8:-:18) 
- | |■Condition (Number):   [1] CSelf20[一時変数A] ==  1  
- | |-◇Condition:  [1]  [ CSelf20[一時変数A] == 1   ] Case↓
- | | |■Set Variable: CSelf18[全解除フラグ（残す状態番号を格納 -1でﾅｼ）] = CSelf11[処理中状態ID] + 0 
+ | |■Write to DB(Var): VarDB[ "┗ State List":CSelf0[Ally ID]:CSelf11[Processing State ID] ] (5:-:-) =  CSelf14[Total Turns]
+ | |▼ Check whether to remove all other states.
+ | |■Load DB(User):  CSelf20[Temp Variable A] = UserDB[ "States":CSelf11[Processing State ID]:"All Other States..." ] (8:-:18) 
+ | |■Condition (Number):   [1] CSelf20[Temp Variable A] ==  1  
+ | |-◇Condition:  [1]  [ CSelf20[Temp Variable A] == 1   ] Case↓
+ | | |■Set Variable: CSelf18[Remove All Flag (State ID to Keep, -1 fo..] = CSelf11[Processing State ID] + 0 
  | | |■
  | |◇End◇
  | |■
- |-◇Condition:  [2]  [ CSelf2[付与？=1 消去？=0　更新？=2] == 0   ] Case↓
- | |▼ 残りターン数を0にする
- | |■Write to DB(Var): VarDB[ "┗ State List":CSelf0[主人公データID]:CSelf11[処理中状態ID] ] (5:-:-) =  0
+ |-◇Condition:  [2]  [ CSelf2[Remove=0, Add=1, Update=2] == 0   ] Case↓
+ | |▼ Set remaining turns to 0.
+ | |■Write to DB(Var): VarDB[ "┗ State List":CSelf0[Ally ID]:CSelf11[Processing State ID] ] (5:-:-) =  0
  | |■
  |◇End◇
  |■
--◇Condition:  [2]  [ CSelf1[付与する状態] <= -1   ] Case↓
- |■Condition (Number):   [1] CSelf2[付与？=1 消去？=0　更新？=2] ==  1  
- |-◇Condition:  [1]  [ CSelf2[付与？=1 消去？=0　更新？=2] == 1   ] Case↓
- | |■Debug Text: 【エラー】\n全状態の「付与」はできません。
+-◇Condition:  [2]  [ CSelf1[State] <= -1   ] Case↓
+ |■Condition (Number):   [1] CSelf2[Remove=0, Add=1, Update=2] ==  1  
+ |-◇Condition:  [1]  [ CSelf2[Remove=0, Add=1, Update=2] == 1   ] Case↓
+ | |■Debug Text: [Error]\n Cannot "add" all states.
  | |■Exit Event
  | |■
  |◇End◇
- |■Condition (Number):   [1] CSelf2[付与？=1 消去？=0　更新？=2] ==  0  
- |-◇Condition:  [1]  [ CSelf2[付与？=1 消去？=0　更新？=2] == 0   ] Case↓
+ |■Condition (Number):   [1] CSelf2[Remove=0, Add=1, Update=2] ==  0  
+ |-◇Condition:  [1]  [ CSelf2[Remove=0, Add=1, Update=2] == 0   ] Case↓
  | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- | |▼ ■状態を全消去する場合
- | |▼ -1なら強制的に全状態を消去　　-2なら全回復時に治療する状態のみ消去
+ | |▼ ■ When removing all states
+ | |▼ -1: Forcibly remove all states / -2: Remove only states that are removed on full recovery
  | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- | |■Load DB(User):  CSelf10[状態全個数] = UserDB[Type "States"(8)'s Data Count]
- | |■Set Variable: CSelf11[処理中状態ID] = -1 + 0 
- | |■Condition (Number):   [1] CSelf1[付与する状態] ==  -1  
- | |-◇Condition:  [1]  [ CSelf1[付与する状態] == -1   ] Case↓
- | | |▼ 強制全回復
- | | |■Write to DB(Var): [Reset Type "┗ State List"(5) Data CSelf0[主人公データID]]
- | | |■Write to DB(Var): VarDB[ "Allies":CSelf0[主人公データID]:"HP" ] (0:-:6) Lower Bound  1
+ | |■Load DB(User):  CSelf10[Total State Count] = UserDB[Type "States"(8)'s Data Count]
+ | |■Set Variable: CSelf11[Processing State ID] = -1 + 0 
+ | |■Condition (Number):   [1] CSelf1[State] ==  -1  
+ | |-◇Condition:  [1]  [ CSelf1[State] == -1   ] Case↓
+ | | |▼ Force remove all.
+ | | |■Write to DB(Var): [Reset Type "┗ State List"(5) Data CSelf0[Ally ID]]
+ | | |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"HP" ] (0:-:6) Lower Bound  1
  | | |■
  | |◇End◇
- | |■Condition (Number):   [1] CSelf1[付与する状態] <=  -3  
- | |-◇Condition:  [1]  [ CSelf1[付与する状態] <= -3   ] Case↓
- | | |▼ 死亡以外全部回復
- | | |■Set Variable: CSelf10[状態全個数] -= 1 + 0 
- | | |■Set Variable: CSelf11[処理中状態ID] = 0 + 0 
- | | |■Set Variable: CSelf1[付与する状態] = -2 + 0 
+ | |■Condition (Number):   [1] CSelf1[State] <=  -3  
+ | |-◇Condition:  [1]  [ CSelf1[State] <= -3   ] Case↓
+ | | |▼ Remove all except fainting.
+ | | |■Set Variable: CSelf10[Total State Count] -= 1 + 0 
+ | | |■Set Variable: CSelf11[Processing State ID] = 0 + 0 
+ | | |■Set Variable: CSelf1[State] = -2 + 0 
  | | |■
  | |◇End◇
- | |■Repeat Loop [ CSelf10[状態全個数] ] Times
- | | |■Set Variable: CSelf11[処理中状態ID] += 1 + 0 
- | | |▼ もし状態 -2なら全回復時に治療する状態のみ付与・消去
- | | |■Condition (Number):   [1] CSelf1[付与する状態] ==  -2  
- | | |-◇Condition:  [1]  [ CSelf1[付与する状態] == -2   ] Case↓
- | | | |■Load DB(User):  CSelf15[全回復対象フラグ？] = UserDB[ "States":CSelf11[処理中状態ID]:"Removed by Full Recovery?" ] (8:-:19) 
- | | | |■Condition (Number):   [1] CSelf15[全回復対象フラグ？] ==  0  
- | | | |-◇Condition:  [1]  [ CSelf15[全回復対象フラグ？] == 0   ] Case↓
- | | | | |▼ 全回復対象でなかったら次へ
+ | |■Repeat Loop [ CSelf10[Total State Count] ] Times
+ | | |■Set Variable: CSelf11[Processing State ID] += 1 + 0 
+ | | |▼ If the state is -2, remove only states that are removed on full recovery.
+ | | |■Condition (Number):   [1] CSelf1[State] ==  -2  
+ | | |-◇Condition:  [1]  [ CSelf1[State] == -2   ] Case↓
+ | | | |■Load DB(User):  CSelf15[Full Recovery Target?] = UserDB[ "States":CSelf11[Processing State ID]:"Removed by Full Recovery?" ] (8:-:19) 
+ | | | |■Condition (Number):   [1] CSelf15[Full Recovery Target?] ==  0  
+ | | | |-◇Condition:  [1]  [ CSelf15[Full Recovery Target?] == 0   ] Case↓
+ | | | | |▼ If not subject to full recovery, skip.
  | | | | |■Go to Loop Start
  | | | | |■
  | | | |◇End◇
  | | | |■
  | | |◇End◇
- | | |■Write to DB(Var): VarDB[ "┗ State List":CSelf0[主人公データID]:CSelf11[処理中状態ID] ] (5:-:-) =  0
+ | | |■Write to DB(Var): VarDB[ "┗ State List":CSelf0[Ally ID]:CSelf11[Processing State ID] ] (5:-:-) =  0
  | | |■
  | |◇Loop End Point◇◇
  | |■
  |◇End◇
  |■
 -◇Else
- |■Debug Text: 【エラー】\n状態付与/消去に\n状態-3以下は設定できません。
+ |■Debug Text: [Error]\n State -3 or lower cannot be specified\n for state addition/removal.
  |■Exit Event
  |■
 ◇End◇
-●Label Point [更新処理] <<<<<<<<<<<<<<<<<<<<<<<<★
+●Label Point [Update] <<<<<<<<<<<<<<<<<<<<<<<<★
 ▼  
-▼ 戦闘不能状態の有無からHPを修正する
-■Load DB(Var):  CSelf21[戦闘不能ターン数] = VarDB[ "┗ State List":CSelf0[主人公データID]:0 ] (5:-:\udb[8:0] Steps Left) 
-■Load DB(User):  CSelf25[戦闘不能の扱いフラグ] = UserDB[ "System Settings":0:"Fainted Members After Battle" ] (17:Basic System Settings:21) 
-■Condition (Number):   [1] CSelf25[戦闘不能の扱いフラグ] ==  0  /  [2] CSelf25[戦闘不能の扱いフラグ] ==  1  
--◇Condition:  [1]  [ CSelf25[戦闘不能の扱いフラグ] == 0   ] Case↓
- |▼ 「戦闘不能のまま」システムになっていた場合
- |■Condition (Number):   [1] CSelf21[戦闘不能ターン数] ==  0  /  [2] CSelf21[戦闘不能ターン数] !=  0  
- |-◇Condition:  [1]  [ CSelf21[戦闘不能ターン数] == 0   ] Case↓
- | |▼ 戦闘不能でなかったら、とにかくHPを1以上にする
- | |■Write to DB(Var): VarDB[ "Allies":CSelf0[主人公データID]:"HP" ] (0:-:6) Lower Bound  1
+▼ Adjust HP depending on whether fainted or not.
+■Load DB(Var):  CSelf21[Fainted Turn Count] = VarDB[ "┗ State List":CSelf0[Ally ID]:0 ] (5:-:\udb[8:0] Steps Left) 
+■Load DB(User):  CSelf25[Faint Handling] = UserDB[ "System Settings":0:"Fainted Members After Battle" ] (17:Basic System Settings:21) 
+■Condition (Number):   [1] CSelf25[Faint Handling] ==  0  /  [2] CSelf25[Faint Handling] ==  1  
+-◇Condition:  [1]  [ CSelf25[Faint Handling] == 0   ] Case↓
+ |▼ If system is set to "Stay Fainted"
+ |■Condition (Number):   [1] CSelf21[Fainted Turn Count] ==  0  /  [2] CSelf21[Fainted Turn Count] !=  0  
+ |-◇Condition:  [1]  [ CSelf21[Fainted Turn Count] == 0   ] Case↓
+ | |▼ If not fainted, ensure HP is at least 1.
+ | |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"HP" ] (0:-:6) Lower Bound  1
  | |■
- |-◇Condition:  [2]  [ CSelf21[戦闘不能ターン数] != 0   ] Case↓
- | |▼ 戦闘不能状態になってたら、とにかくHPを0にする
- | |■Write to DB(Var): VarDB[ "Allies":CSelf0[主人公データID]:"HP" ] (0:-:6) =  0
+ |-◇Condition:  [2]  [ CSelf21[Fainted Turn Count] != 0   ] Case↓
+ | |▼ If fainted, ensure HP is 0.
+ | |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"HP" ] (0:-:6) =  0
  | |■
  |◇End◇
  |■
--◇Condition:  [2]  [ CSelf25[戦闘不能の扱いフラグ] == 1   ] Case↓
- |▼ 「HP1で回復」システムになっていた場合
- |■Write to DB(Var): VarDB[ "┗ State List":CSelf0[主人公データID]:0 ] (5:-:\udb[8:0] Steps Left) =  0
- |■Write to DB(Var): VarDB[ "Allies":CSelf0[主人公データID]:"HP" ] (0:-:6) Lower Bound  1
- |▼ 戦闘不能は解除する
- |■Set Variable: CSelf21[戦闘不能ターン数] = 0 + 0 
+-◇Condition:  [2]  [ CSelf25[Faint Handling] == 1   ] Case↓
+ |▼ If system is set to "Revive with 1 HP"
+ |■Write to DB(Var): VarDB[ "┗ State List":CSelf0[Ally ID]:0 ] (5:-:\udb[8:0] Steps Left) =  0
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"HP" ] (0:-:6) Lower Bound  1
+ |▼ Remove fainted state.
+ |■Set Variable: CSelf21[Fainted Turn Count] = 0 + 0 
  |■
 ◇End◇
-▼ もし「戦闘不能」に全ステ解除属性付いてた場合は、全解除状態として戦闘不能（0番）を記憶
-■Condition (Number):   [1] CSelf21[戦闘不能ターン数] !=  0  
--◇Condition:  [1]  [ CSelf21[戦闘不能ターン数] != 0   ] Case↓
- |■Load DB(User):  CSelf20[一時変数A] = UserDB[ "States":0:"All Other States..." ] (8:Fainted:18) 
- |■Condition (Number):   [1] CSelf20[一時変数A] ==  1  
- |-◇Condition:  [1]  [ CSelf20[一時変数A] == 1   ] Case↓
- | |■Set Variable: CSelf18[全解除フラグ（残す状態番号を格納 -1でﾅｼ）] = 0 + 0 
+▼ If "Fainted" is set to remove all other states, store fainted (ID 0) as the state excluded when removing all states.
+■Condition (Number):   [1] CSelf21[Fainted Turn Count] !=  0  
+-◇Condition:  [1]  [ CSelf21[Fainted Turn Count] != 0   ] Case↓
+ |■Load DB(User):  CSelf20[Temp Variable A] = UserDB[ "States":0:"All Other States..." ] (8:Fainted:18) 
+ |■Condition (Number):   [1] CSelf20[Temp Variable A] ==  1  
+ |-◇Condition:  [1]  [ CSelf20[Temp Variable A] == 1   ] Case↓
+ | |■Set Variable: CSelf18[Remove All Flag (State ID to Keep, -1 fo..] = 0 + 0 
  | |■
  |◇End◇
  |■
 ◇End◇
 ▼  
-▼ もし「これ以外の状態を全て解除」する状態が付与されていたら、「その状態」と「戦闘不能」以外を全部0にする
-■Condition (Number):   [1] CSelf18[全解除フラグ（残す状態番号を格納 -1でﾅｼ）] >=  0  
--◇Condition:  [1]  [ CSelf18[全解除フラグ（残す状態番号を格納 -1でﾅｼ）] >= 0   ] Case↓
- |▼ 残す状態のターン数だけ取得して、初期化する
- |■Load DB(Var):  CSelf20[一時変数A] = VarDB[ "┗ State List":CSelf0[主人公データID]:CSelf18[全解除フラグ（残す状態番号を格納 -1でﾅｼ）] ] (5:-:-) 
- |■Write to DB(Var): [Reset Type "┗ State List"(5) Data CSelf0[主人公データID]]
- |▼ 全部0になったので、残りターン数（歩数）を再入力
- |■Write to DB(Var): VarDB[ "┗ State List":CSelf0[主人公データID]:0 ] (5:-:\udb[8:0] Steps Left) =  CSelf21[戦闘不能ターン数]
- |■Write to DB(Var): VarDB[ "┗ State List":CSelf0[主人公データID]:CSelf18[全解除フラグ（残す状態番号を格納 -1でﾅｼ）] ] (5:-:-) =  CSelf20[一時変数A]
+▼ If the state is set to remove all other states, set all states to 0 except that state and fainted.
+■Condition (Number):   [1] CSelf18[Remove All Flag (State ID to Keep, -1 fo..] >=  0  
+-◇Condition:  [1]  [ CSelf18[Remove All Flag (State ID to Keep, -1 fo..] >= 0   ] Case↓
+ |▼ Get the remaining steps of the state to be kept, then reset.
+ |■Load DB(Var):  CSelf20[Temp Variable A] = VarDB[ "┗ State List":CSelf0[Ally ID]:CSelf18[Remove All Flag (State ID to Keep, -1 fo..] ] (5:-:-) 
+ |■Write to DB(Var): [Reset Type "┗ State List"(5) Data CSelf0[Ally ID]]
+ |▼ Since all are set to 0, set the remaining turns (steps).
+ |■Write to DB(Var): VarDB[ "┗ State List":CSelf0[Ally ID]:0 ] (5:-:\udb[8:0] Steps Left) =  CSelf21[Fainted Turn Count]
+ |■Write to DB(Var): VarDB[ "┗ State List":CSelf0[Ally ID]:CSelf18[Remove All Flag (State ID to Keep, -1 fo..] ] (5:-:-) =  CSelf20[Temp Variable A]
  |■
 ◇End◇
 ▼  
 ■Repeat Loop [ 1 ] Times
- |▼ 最後に、状態異常を受けているかどうか、受けていれば
- |▼ あと何ターンで回復するかを主人公一時DBに代入します
- |▼ また、移動時の一歩あたりのHP・SP変動値の計算も行います
- |■Set Variable: CSelf23[表示状態異常個数（4個で改行）] = 0 + 0 
- |■Set String: CSelf9[状態異常表示文字列] = ""
- |■Load DB(User):  CSelf24[表示状態に/入れる？] = UserDB[ "System Settings":0:"States Display" ] (17:Basic System Settings:19) 
- |▼ 初期化
- |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[主人公データID]:"[Temp] Has States on Map" ] (17:-:10) =  0
- |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[主人公データID]:"[Tmp] UntilNextStateRemove" ] (17:-:13) =  999999
- |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[主人公データID]:"[Temp] HP Regeneration" ] (17:-:11) =  0
- |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[主人公データID]:"[Temp] SP Regeneration" ] (17:-:12) =  0
- |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[主人公データID]:"[Temp] Sealed?" ] (17:-:16) =  0
- |▼ 全状態分を判定
- |■Load DB(User):  CSelf10[状態全個数] = UserDB[Type "States"(8)'s Data Count]
- |■Set Variable: CSelf11[処理中状態ID] = -1 + 0 
- |■Repeat Loop [ CSelf10[状態全個数] ] Times
- | |■Set Variable: CSelf11[処理中状態ID] += 1 + 0 
- | |■Load DB(Var):  CSelf17[残りターン] = VarDB[ "┗ State List":CSelf0[主人公データID]:CSelf11[処理中状態ID] ] (5:-:-) 
- | |■Condition (Number):   [1] CSelf17[残りターン] !=  0  
- | |-◇Condition:  [1]  [ CSelf17[残りターン] != 0   ] Case↓
- | | |■Condition (Number):   [1] CSelf17[残りターン] >=  1  /  [2] CSelf17[残りターン] ==  -1  
- | | |-◇Condition:  [1]  [ CSelf17[残りターン] >= 1   ] Case↓
- | | | |▼ 一時DBの、次にステータスが回復するまでの歩数を算出
- | | | |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[主人公データID]:"[Tmp] UntilNextStateRemove" ] (17:-:13) Upper Bound  CSelf17[残りターン]
- | | | |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[主人公データID]:"[Temp] Has States on Map" ] (17:-:10) =  1
+ |▼ Finally, store whether an ally has each state and, if so,
+ |▼ how many turns remain until it's removed, in the allies temporary database.
+ |▼ Also, calculate HP/SP change per step on the map.
+ |■Set Variable: CSelf23[State Display Count (New Line Every 4)] = 0 + 0 
+ |■Set String: CSelf9[State Display Text] = ""
+ |■Load DB(User):  CSelf24[Put Slash (/) in State Display?] = UserDB[ "System Settings":0:"States Display" ] (17:Basic System Settings:19) 
+ |▼ Initialize.
+ |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Temp] Has States on Map?" ] (17:-:10) =  0
+ |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Tmp] UntilNextStateRemove" ] (17:-:13) =  999999
+ |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Temp] HP Auto Change" ] (17:-:11) =  0
+ |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Temp] SP Auto Change" ] (17:-:12) =  0
+ |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Temp] Sealed?" ] (17:-:16) =  0
+ |▼ Check all states.
+ |■Load DB(User):  CSelf10[Total State Count] = UserDB[Type "States"(8)'s Data Count]
+ |■Set Variable: CSelf11[Processing State ID] = -1 + 0 
+ |■Repeat Loop [ CSelf10[Total State Count] ] Times
+ | |■Set Variable: CSelf11[Processing State ID] += 1 + 0 
+ | |■Load DB(Var):  CSelf17[Turns Left] = VarDB[ "┗ State List":CSelf0[Ally ID]:CSelf11[Processing State ID] ] (5:-:-) 
+ | |■Condition (Number):   [1] CSelf17[Turns Left] !=  0  
+ | |-◇Condition:  [1]  [ CSelf17[Turns Left] != 0   ] Case↓
+ | | |■Condition (Number):   [1] CSelf17[Turns Left] >=  1  /  [2] CSelf17[Turns Left] ==  -1  
+ | | |-◇Condition:  [1]  [ CSelf17[Turns Left] >= 1   ] Case↓
+ | | | |▼ Store the steps until the next state is removed in the temporary database.
+ | | | |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Tmp] UntilNextStateRemove" ] (17:-:13) Upper Bound  CSelf17[Turns Left]
+ | | | |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Temp] Has States on Map?" ] (17:-:10) =  1
  | | | |■
- | | |-◇Condition:  [2]  [ CSelf17[残りターン] == -1   ] Case↓
- | | | |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[主人公データID]:"[Temp] Has States on Map" ] (17:-:10) =  1
+ | | |-◇Condition:  [2]  [ CSelf17[Turns Left] == -1   ] Case↓
+ | | | |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Temp] Has States on Map?" ] (17:-:10) =  1
  | | | |■
  | | |◇End◇
- | | |▼ HP・SPの自然変動値を加算
- | | |■Load DB(User):  CSelf20[一時変数A] = UserDB[ "States":CSelf11[処理中状態ID]:"HP Change ±(1 Step on Map)" ] (8:-:36) 
- | | |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[主人公データID]:"[Temp] HP Regeneration" ] (17:-:11) +=  CSelf20[一時変数A]
- | | |■Load DB(User):  CSelf20[一時変数A] = UserDB[ "States":CSelf11[処理中状態ID]:"SP Change ± (1 Step on Map)" ] (8:-:37) 
- | | |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[主人公データID]:"[Temp] SP Regeneration" ] (17:-:12) +=  CSelf20[一時変数A]
- | | |▼ 封印状態チェック
- | | |■Load DB(User):  CSelf20[一時変数A] = UserDB[ "States":CSelf11[処理中状態ID]:"Skill Limitation" ] (8:-:17) 
- | | |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[主人公データID]:"[Temp] Sealed?" ] (17:-:16) Lower Bound  CSelf20[一時変数A]
- | | |▼ もしステータスに表示される状態異常なら、状態名一覧に追加
- | | |■Load DB(User):  CSelf22[状態異常表示有り？] = UserDB[ "States":CSelf11[処理中状態ID]:"Display Type" ] (8:-:1) 
- | | |■Condition (Number):   [1] CSelf22[状態異常表示有り？] &  1  
- | | |-◇Condition:  [1]  [ CSelf22[状態異常表示有り？] & 1   ] Case↓
- | | | |■Condition (Number):   [1] CSelf23[表示状態異常個数（4個で改行）] >=  4  
- | | | |-◇Condition:  [1]  [ CSelf23[表示状態異常個数（4個で改行）] >= 4   ] Case↓
- | | | | |■Set Variable: CSelf23[表示状態異常個数（4個で改行）] %= 4 + 0 
- | | | | |■Condition (Number):   [1] CSelf23[表示状態異常個数（4個で改行）] ==  0  
- | | | | |-◇Condition:  [1]  [ CSelf23[表示状態異常個数（4個で改行）] == 0   ] Case↓
- | | | | | |■Set String: CSelf9[状態異常表示文字列] += "\n"
+ | | |▼ Add HP/SP auto-change amount.
+ | | |■Load DB(User):  CSelf20[Temp Variable A] = UserDB[ "States":CSelf11[Processing State ID]:"HP Change ±(1 Step on Map)" ] (8:-:36) 
+ | | |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Temp] HP Auto Change" ] (17:-:11) +=  CSelf20[Temp Variable A]
+ | | |■Load DB(User):  CSelf20[Temp Variable A] = UserDB[ "States":CSelf11[Processing State ID]:"SP Change ± (1 Step on Map)" ] (8:-:37) 
+ | | |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Temp] SP Auto Change" ] (17:-:12) +=  CSelf20[Temp Variable A]
+ | | |▼ Check for sealed state.
+ | | |■Load DB(User):  CSelf20[Temp Variable A] = UserDB[ "States":CSelf11[Processing State ID]:"Skill Limitation" ] (8:-:17) 
+ | | |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Temp] Sealed?" ] (17:-:16) Lower Bound  CSelf20[Temp Variable A]
+ | | |▼ If the state is displayed in the status, add it to the state name list.
+ | | |■Load DB(User):  CSelf22[Display States?] = UserDB[ "States":CSelf11[Processing State ID]:"Display Type" ] (8:-:1) 
+ | | |■Condition (Number):   [1] CSelf22[Display States?] &  1  
+ | | |-◇Condition:  [1]  [ CSelf22[Display States?] & 1   ] Case↓
+ | | | |■Condition (Number):   [1] CSelf23[State Display Count (New Line Every 4)] >=  4  
+ | | | |-◇Condition:  [1]  [ CSelf23[State Display Count (New Line Every 4)] >= 4   ] Case↓
+ | | | | |■Set Variable: CSelf23[State Display Count (New Line Every 4)] %= 4 + 0 
+ | | | | |■Condition (Number):   [1] CSelf23[State Display Count (New Line Every 4)] ==  0  
+ | | | | |-◇Condition:  [1]  [ CSelf23[State Display Count (New Line Every 4)] == 0   ] Case↓
+ | | | | | |■Set String: CSelf9[State Display Text] += "\n"
  | | | | | |■
  | | | | |◇End◇
  | | | | |■
  | | | |◇End◇
- | | | |■Condition (Number):   [1] CSelf24[表示状態に/入れる？] ==  1  
- | | | |-◇Condition:  [1]  [ CSelf24[表示状態に/入れる？] == 1   ] Case↓
- | | | | |■Condition (Number):   [1] CSelf23[表示状態異常個数（4個で改行）] !=  0  
- | | | | |-◇Condition:  [1]  [ CSelf23[表示状態異常個数（4個で改行）] != 0   ] Case↓
- | | | | | |■Set String: CSelf9[状態異常表示文字列] += "/"
+ | | | |■Condition (Number):   [1] CSelf24[Put Slash (/) in State Display?] ==  1  
+ | | | |-◇Condition:  [1]  [ CSelf24[Put Slash (/) in State Display?] == 1   ] Case↓
+ | | | | |■Condition (Number):   [1] CSelf23[State Display Count (New Line Every 4)] !=  0  
+ | | | | |-◇Condition:  [1]  [ CSelf23[State Display Count (New Line Every 4)] != 0   ] Case↓
+ | | | | | |■Set String: CSelf9[State Display Text] += "/"
  | | | | | |■
  | | | | |◇End◇
  | | | | |■
  | | | |◇End◇
- | | | |■Load DB(User):  CSelf9[状態異常表示文字列] += UserDB[ "States":CSelf11[処理中状態ID]:"Display Name" ] (8:-:2) 
- | | | |■Set Variable: CSelf23[表示状態異常個数（4個で改行）] += 1 + 0 
+ | | | |■Load DB(User):  CSelf9[State Display Text] += UserDB[ "States":CSelf11[Processing State ID]:"Display Name" ] (8:-:2) 
+ | | | |■Set Variable: CSelf23[State Display Count (New Line Every 4)] += 1 + 0 
  | | | |■
  | | |◇End◇
  | | |■
  | |◇End◇
  | |■
  |◇Loop End Point◇◇
- |▼ 回復ターンMaxにコピーする。　こっちの値は、回復時にまとめて全ステータスの残り歩数を減らすときに使う
- |■Load DB(Var):  CSelf17[残りターン] = VarDB[ "×Allies Temp Data":CSelf0[主人公データID]:"[Tmp] UntilNextStateRemove" ] (17:-:13) 
- |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[主人公データID]:"[Tmp] NextStateRemoveMax" ] (17:-:14) =  CSelf17[残りターン]
- |▼ 表示状態文字列に格納
- |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[主人公データID]:"[Temp] State Names" ] (17:-:15) =  CSelf9[状態異常表示文字列]
+ |▼ Copy to maximum removal turns. This value is used when reducing the remaining steps of all states at once during state removal.
+ |■Load DB(Var):  CSelf17[Turns Left] = VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Tmp] UntilNextStateRemove" ] (17:-:13) 
+ |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Tmp] NextStateRemoveMax" ] (17:-:14) =  CSelf17[Turns Left]
+ |▼ Store state display string.
+ |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Temp] State Names" ] (17:-:15) =  CSelf9[State Display Text]
  |▼  
- |▼ ターンで回復する状態が一つもない状態なら、この段階で
- |▼ 次ステータス回復までの残り歩数が999999になるが、それで問題なし。
- |▼ （このカウントが0になったら回復判定を行うため、その処理をさせないために999999のままにする）
+ |▼ If no states are removed by turn progression,
+ |▼ the remaining steps until the next state removal will be 999999 at this point, but it's not a problem.
+ |▼ (This counter triggers state removal when it reaches 0, so keep it at 999999 to prevent that process from occurring.)
  |■
 ◇Loop End Point◇◇
 ■

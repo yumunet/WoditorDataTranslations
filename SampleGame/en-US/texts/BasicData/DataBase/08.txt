@@ -65,7 +65,7 @@ ITEMNAME8=┏ Removed by Physical Dmg
 ITEMNAME9=┗ Removed by Magic Dmg   
 ITEMNAME10=When This State Is Stacked...
 ITEMNAME11=┗ Make It Into This State
-ITEMNAME12=Enter Message (Name...
+ITEMNAME12=Apply Message (Name...
 ITEMNAME13=Restriction Msg (Blank:None)
 ITEMNAME14=Remove Message (Name...
 ITEMNAME15=Count as Fainted?
@@ -253,7 +253,7 @@ CHOICE_NAME_0_NUM=0
 CHOICE_NAME_1_NUM=4
 CHOICE_NAME_1_0=Don't Display
 CHOICE_NAME_1_1=Show Display Name as Status
-CHOICE_NAME_1_2=Pop-Up Only When Entered
+CHOICE_NAME_1_2=Pop-Up Only When Applied
 CHOICE_NAME_1_3=Show Display Name & Pop-Up
 CHOICE_NAME_2_NUM=0
 CHOICE_NAME_3_NUM=6
@@ -310,7 +310,7 @@ CHOICE_NAME_14_NUM=0
 CHOICE_NAME_15_NUM=3
 CHOICE_NAME_15_0=Don't Count
 CHOICE_NAME_15_1=Do Count
-CHOICE_NAME_15_2=When Entered, HP 0 (State 0)
+CHOICE_NAME_15_2=On Apply: HP 0 (State 0)
 CHOICE_NAME_16_NUM=18
 CHOICE_NAME_16_0=No Restriction
 CHOICE_NAME_16_1=Can't Act
@@ -580,7 +580,7 @@ DEFAULT_VAL_43=0
 DEFAULT_VAL_44=0
 DEFAULT_VAL_45=0
 <<--CSV_START-->>
-"State Name","Display Type","Display Name","Color Change: Allies Only","Duration in Turns [-1:Infinite]","┗ Duration Variance [±]","Removal Timing","Category (Battle/Map)","┏ Removed by Physical Dmg","┗ Removed by Magic Dmg   ","When This State Is Stacked...","┗ Make It Into This State","Enter Message (Name...","Restriction Msg (Blank:None)","Remove Message (Name...","Count as Fainted?","Action Restriction","Skill Limitation","All Other States...","Removed by Full Recovery?","Physical Damage Taken Rate","Magic Damage Taken Rate","HP Change[±%](at Turn End)","HP Change [±] (at Turn End)","SP Change[±%](at Turn End)","SP Change [±] (at Turn End)","Max HP Change [%]","Max SP Change [%]","Attack Change [%]","Defense Change [%]","Magic Attack Change [%]","Magic Defense Change [%]","Agility Change [%]","Accuracy (%) Change [±]","Evasion (%) Change [±]","Critical Rate (%) Change [±]","HP Change ±(1 Step on Map)","SP Change ± (1 Step on Map)","Enemy Targeting Level","-------------","Counterattack? (with Skill)     ","┣ Trigger on Element Hit        ","┣ Counter Trigger Rate [%]    ","┣ Counter Message (Target...","┗ Stats to Use for Skill            ","Portrait for State",
+"State Name","Display Type","Display Name","Color Change: Allies Only","Duration in Turns [-1:Infinite]","┗ Duration Variance [±]","Removal Timing","Category (Battle/Map)","┏ Removed by Physical Dmg","┗ Removed by Magic Dmg   ","When This State Is Stacked...","┗ Make It Into This State","Apply Message (Name...","Restriction Msg (Blank:None)","Remove Message (Name...","Count as Fainted?","Action Restriction","Skill Limitation","All Other States...","Removed by Full Recovery?","Physical Damage Taken Rate","Magic Damage Taken Rate","HP Change[±%](at Turn End)","HP Change [±] (at Turn End)","SP Change[±%](at Turn End)","SP Change [±] (at Turn End)","Max HP Change [%]","Max SP Change [%]","Attack Change [%]","Defense Change [%]","Magic Attack Change [%]","Magic Defense Change [%]","Agility Change [%]","Accuracy (%) Change [±]","Evasion (%) Change [±]","Critical Rate (%) Change [±]","HP Change ±(1 Step on Map)","SP Change ± (1 Step on Map)","Enemy Targeting Level","-------------","Counterattack? (with Skill)     ","┣ Trigger on Element Hit        ","┣ Counter Trigger Rate [%]    ","┣ Counter Message (Target...","┗ Stats to Use for Skill            ","Portrait for State",
 "Fainted",1,"FAINT",-1,-1,0,0,1,0,0,-1,-3,"",""," got back up!",1,1,1,1,1,0,100,0,0,0,0,100,100,100,100,100,100,100,0,0,0,0,0,-2,0,-1,-1,0,"",0,"",
 "Sleep",3,"SLEEP",2,4,0,0,0,70,0,-1,-1," fell asleep!"," is asleep."," woke up!",0,1,1,0,1,100,100,0,0,0,0,100,100,100,100,100,100,100,0,0,0,0,0,0,0,-2,-1,0,"",0,"",
 "Poison",3,"PSN",3,50,0,1,1,0,0,-1,-1," was poisoned!","","'s poison went away!",0,0,0,0,1,100,100,-5,0,0,0,100,100,100,100,100,100,100,0,0,0,-1,0,0,0,-1,0,100,"",0,"",

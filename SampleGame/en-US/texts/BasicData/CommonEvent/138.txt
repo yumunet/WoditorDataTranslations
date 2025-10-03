@@ -181,7 +181,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [401][1,0]<0>(2)()
 [103][0,1]<1>()("付与メッセージ")
-[250][5,4]<1>(8,1600001,12,332288,1600009)("","States","","Enter Message (Name...")
+[250][5,4]<1>(8,1600001,12,332288,1600009)("","States","","Apply Message (Name...")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [112][2,4]<0>(1,270035465)("","","","")
@@ -209,7 +209,7 @@ WoditorEvCOMMAND_END
  |■
 -◇Condition:  [2]  [ CSelf2[付与？消去？] == 1   ] Case↓
  |▼ 付与メッセージ
- |■Load DB(User):  CSelf9[状態変化文章] = UserDB[ "States":CSelf1[状態番号]:"Enter Message (Name..." ] (8:-:12) 
+ |■Load DB(User):  CSelf9[状態変化文章] = UserDB[ "States":CSelf1[状態番号]:"Apply Message (Name..." ] (8:-:12) 
  |■
 ◇End◇
 ■Condition (String):   [1] CSelf9[状態変化文章] Is Not Equal to ""

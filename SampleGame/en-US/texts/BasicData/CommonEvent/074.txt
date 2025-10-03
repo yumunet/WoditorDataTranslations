@@ -104,7 +104,7 @@ CSELF_NAME_36=Defense Growth
 CSELF_NAME_37=Magic Atk Growth
 CSELF_NAME_38=Magic Def Growth
 CSELF_NAME_39=Agility Growth
-CSELF_NAME_40=Accuray Growth
+CSELF_NAME_40=Accuracy Growth
 CSELF_NAME_41=Evasion Growth
 CSELF_NAME_42=Critical Rate Growth
 CSELF_NAME_43=Required EXP
@@ -170,9 +170,9 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("  This common event is called to level up/down the ally in the base system.")
-[103][0,1]<0>()("  It only works on the map (or during post-battle processing).")
+[103][0,1]<0>()("  Works only on the map (or during post-battle processing).")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("  Also, it stores parameter changes and newly learned skills into base system variables.")
+[103][0,1]<0>()("  Also, stores parameter changes and newly learned skills into base system variables.")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [121][4,0]<0>(1600099,0,0,0)()
 [111][4,0]<0>(1,1600002,0,2)()
@@ -379,9 +379,9 @@ WoditorEvCOMMAND_END
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ [Process Overview]
 ▼   This common event is called to level up/down the ally in the base system.
-▼   It only works on the map (or during post-battle processing).
+▼   Works only on the map (or during post-battle processing).
 ▼  
-▼   Also, it stores parameter changes and newly learned skills into base system variables.
+▼   Also, stores parameter changes and newly learned skills into base system variables.
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Set Variable: CSelf99[Actual Level Change] = 0 + 0 
 ■Condition (Number):   [1] CSelf2[Option] ==  0  
@@ -455,7 +455,7 @@ WoditorEvCOMMAND_END
  |■Load DB(Var):  CSelf37[Magic Atk Growth] = VarDB[ "Allies":CSelf0[Ally ID]:"[Growth] Magic Atk Add /1Lv" ] (0:-:22) 
  |■Load DB(Var):  CSelf38[Magic Def Growth] = VarDB[ "Allies":CSelf0[Ally ID]:"[Growth] Magic Def Add /1Lv" ] (0:-:23) 
  |■Load DB(Var):  CSelf39[Agility Growth] = VarDB[ "Allies":CSelf0[Ally ID]:"[Growth] Agility Add /1Lv" ] (0:-:24) 
- |■Load DB(Var):  CSelf40[Accuray Growth] = VarDB[ "Allies":CSelf0[Ally ID]:"[Growth] Accuracy Add /1Lv" ] (0:-:25) 
+ |■Load DB(Var):  CSelf40[Accuracy Growth] = VarDB[ "Allies":CSelf0[Ally ID]:"[Growth] Accuracy Add /1Lv" ] (0:-:25) 
  |■Load DB(Var):  CSelf41[Evasion Growth] = VarDB[ "Allies":CSelf0[Ally ID]:"[Growth] Evasion Add /1Lv" ] (0:-:26) 
  |■Load DB(Var):  CSelf42[Critical Rate Growth] = VarDB[ "Allies":CSelf0[Ally ID]:"[Growth] Critical Rt Add /1Lv" ] (0:-:27) 
  |▼  
@@ -500,7 +500,7 @@ WoditorEvCOMMAND_END
  |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Ally ID] / 32:Magic Attack / CSelf37[Magic Atk Growth] / 0:No
  |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Ally ID] / 33:Magic Defense / CSelf38[Magic Def Growth] / 0:No
  |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Ally ID] / 34:Agility / CSelf39[Agility Growth] / 0:No
- |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Ally ID] / 35:Accuracy / CSelf40[Accuray Growth] / 0:No
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Ally ID] / 35:Accuracy / CSelf40[Accuracy Growth] / 0:No
  |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Ally ID] / 36:Evasion / CSelf41[Evasion Growth] / 0:No
  |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Ally ID] / 37:Critical Rate / CSelf42[Critical Rate Growth] / 0:No
  |▼ Store stat increase history.
@@ -513,7 +513,7 @@ WoditorEvCOMMAND_END
  |■Write to DB(Var): VarDB[ "Base System Variables":84:0 ] (18:[LvUp] Magic Atk Increase:Number) +=  CSelf37[Magic Atk Growth]
  |■Write to DB(Var): VarDB[ "Base System Variables":85:0 ] (18:[LvUp] Magic Def Increase:Number) +=  CSelf38[Magic Def Growth]
  |■Write to DB(Var): VarDB[ "Base System Variables":86:0 ] (18:[LvUp] Agility Increase:Number) +=  CSelf39[Agility Growth]
- |■Write to DB(Var): VarDB[ "Base System Variables":87:0 ] (18:[LvUp] Accuracy Increase:Number) +=  CSelf40[Accuray Growth]
+ |■Write to DB(Var): VarDB[ "Base System Variables":87:0 ] (18:[LvUp] Accuracy Increase:Number) +=  CSelf40[Accuracy Growth]
  |■Write to DB(Var): VarDB[ "Base System Variables":88:0 ] (18:[LvUp] Evasion Increase:Number) +=  CSelf41[Evasion Growth]
  |■Write to DB(Var): VarDB[ "Base System Variables":89:0 ] (18:[LvUp] Critical Rate Increase:Number) +=  CSelf42[Critical Rate Growth]
  |▼ --------------------------------------------------------------

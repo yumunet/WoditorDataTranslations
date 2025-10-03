@@ -369,7 +369,7 @@ WoditorEvCOMMAND_END
  | | | |■Condition (Number):   [1] CSelf0[Type] &  4  
  | | | |-◇Condition:  [1]  [ CSelf0[Type] & 4   ] Case↓
  | | | | |▼ Clear states.
- | | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf11[Target Character ID] / -1:全て消去（強制） / 0:消去
+ | | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf11[Target Character ID] / -1:Remove All (Force) / 0:Remove
  | | | | |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf11[Target Character ID]
  | | | | |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf11[Target Character ID]
  | | | | |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf11[Target Character ID]
@@ -391,7 +391,7 @@ WoditorEvCOMMAND_END
  | | | |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf11[Target Character ID]
  | | | |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf11[Target Character ID]
  | | | |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf11[Target Character ID]
- | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf11[Target Character ID] / -1:全て消去（強制） / 2:更新
+ | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf11[Target Character ID] / -1:Remove All (Force) / 2:Update
  | | | |■
  | | |◇End◇
  | | |▼  

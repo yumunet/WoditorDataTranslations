@@ -372,9 +372,9 @@ WoditorEvCOMMAND_START
 [0][0,0]<2>()()
 [498][0,0]<1>()()
 [103][0,1]<1>()(" ")
-[103][0,1]<1>()("Reset regeneration values to 0.")
-[250][5,4]<1>(21,1600011,11,327680,0)("","×Allies Temp Data","","[Temp] HP Regeneration")
-[250][5,4]<1>(21,1600011,12,327680,0)("","×Allies Temp Data","","[Temp] SP Regeneration")
+[103][0,1]<1>()("Reset auto-change amount to 0.")
+[250][5,4]<1>(21,1600011,11,327680,0)("","×Allies Temp Data","","[Temp] HP Auto Change")
+[250][5,4]<1>(21,1600011,12,327680,0)("","×Allies Temp Data","","[Temp] SP Auto Change")
 [103][0,1]<1>()("Calculate temporary stats.")
 [300][3,1]<1>(0,1,1600011)("X[Map]CalcTempStats <Initialize>")
 [300][3,1]<1>(0,1,1600011)("X[Map]CalcTempStats <Equipments>")
@@ -618,9 +618,9 @@ WoditorEvCOMMAND_END
  | |■
  |◇Loop End Point◇◇
  |▼  
- |▼ Reset regeneration values to 0.
- |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf11[Processing Position]:"[Temp] HP Regeneration" ] (17:-:11) =  0
- |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf11[Processing Position]:"[Temp] SP Regeneration" ] (17:-:12) =  0
+ |▼ Reset auto-change amount to 0.
+ |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf11[Processing Position]:"[Temp] HP Auto Change" ] (17:-:11) =  0
+ |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf11[Processing Position]:"[Temp] SP Auto Change" ] (17:-:12) =  0
  |▼ Calculate temporary stats.
  |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf11[Processing Position]
  |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf11[Processing Position]

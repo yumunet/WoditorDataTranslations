@@ -187,12 +187,12 @@ WoditorEvCOMMAND_START
 [250][5,4]<1>(3,0,1600010,69632,1600020)("","Party","","")
 [111][4,0]<1>(1,1600020,0,1)()
 [401][1,0]<1>(1)()
-[250][5,4]<2>(21,1600020,9,331776,1600026)("","×Allies Temp Data","","[Temp] Has States on Map")
+[250][5,4]<2>(21,1600020,9,331776,1600026)("","×Allies Temp Data","","[Temp] Has States on Map?")
 [111][4,0]<2>(1,1600026,1,1)()
 [401][1,0]<2>(1)()
 [103][0,1]<3>()("まずHP・SP自然変動を処理")
-[250][5,4]<3>(21,1600020,10,331776,1600024)("","×Allies Temp Data","","[Temp] HP Regeneration")
-[250][5,4]<3>(21,1600020,11,331776,1600025)("","×Allies Temp Data","","[Temp] SP Regeneration")
+[250][5,4]<3>(21,1600020,10,331776,1600024)("","×Allies Temp Data","","[Temp] HP Auto Change")
+[250][5,4]<3>(21,1600020,11,331776,1600025)("","×Allies Temp Data","","[Temp] SP Auto Change")
 [250][5,4]<3>(21,1600020,0,331776,1600032)("","×Allies Temp Data","","[Temp] Post-Calc Max HP")
 [250][5,4]<3>(21,1600020,1,331776,1600033)("","×Allies Temp Data","","[Temp] Post-Calc Max SP")
 [250][5,4]<3>(5,1600020,0,69632,1600035)("","┗ State List","","")
@@ -294,12 +294,12 @@ WoditorEvCOMMAND_END
  |■Load DB(Var):  CSelf20[処理中キャラID] = VarDB[ "Party":0:CSelf10[一時変数A] ] (6:Main Settings:-) 
  |■Condition (Number):   [1] CSelf20[処理中キャラID] >=  0  
  |-◇Condition:  [1]  [ CSelf20[処理中キャラID] >= 0   ] Case↓
- | |■Load DB(Var):  CSelf26[状態有り？] = VarDB[ "×Allies Temp Data":CSelf20[処理中キャラID]:"[Temp] Has States on Map" ] (17:-:10) 
+ | |■Load DB(Var):  CSelf26[状態有り？] = VarDB[ "×Allies Temp Data":CSelf20[処理中キャラID]:"[Temp] Has States on Map?" ] (17:-:10) 
  | |■Condition (Number):   [1] CSelf26[状態有り？] >=  1  
  | |-◇Condition:  [1]  [ CSelf26[状態有り？] >= 1   ] Case↓
  | | |▼ まずHP・SP自然変動を処理
- | | |■Load DB(Var):  CSelf24[一歩のHP自然変動値] = VarDB[ "×Allies Temp Data":CSelf20[処理中キャラID]:"[Temp] HP Regeneration" ] (17:-:11) 
- | | |■Load DB(Var):  CSelf25[一歩のSP自然変動値] = VarDB[ "×Allies Temp Data":CSelf20[処理中キャラID]:"[Temp] SP Regeneration" ] (17:-:12) 
+ | | |■Load DB(Var):  CSelf24[一歩のHP自然変動値] = VarDB[ "×Allies Temp Data":CSelf20[処理中キャラID]:"[Temp] HP Auto Change" ] (17:-:11) 
+ | | |■Load DB(Var):  CSelf25[一歩のSP自然変動値] = VarDB[ "×Allies Temp Data":CSelf20[処理中キャラID]:"[Temp] SP Auto Change" ] (17:-:12) 
  | | |■Load DB(Var):  CSelf32[最大HP] = VarDB[ "×Allies Temp Data":CSelf20[処理中キャラID]:"[Temp] Post-Calc Max HP" ] (17:-:0) 
  | | |■Load DB(Var):  CSelf33[最大SP] = VarDB[ "×Allies Temp Data":CSelf20[処理中キャラID]:"[Temp] Post-Calc Max SP" ] (17:-:1) 
  | | |■Load DB(Var):  CSelf35[戦闘不能？] = VarDB[ "┗ State List":CSelf20[処理中キャラID]:0 ] (5:-:\udb[8:0] Steps Left) 
@@ -314,7 +314,7 @@ WoditorEvCOMMAND_END
  | | | |■Condition (Number):   [1] CSelf18[残りHP] <=  0  
  | | | |-◇Condition:  [1]  [ CSelf18[残りHP] <= 0   ] Case↓
  | | | | |▼ 戦闘不能付与（システム的に戦闘不能にならなければ、次にHP1にする）
- | | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf20[処理中キャラID] / 0:Fainted / 1:付与
+ | | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf20[処理中キャラID] / 0:Fainted / 1:Add
  | | | | |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf20[処理中キャラID]
  | | | | |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf20[処理中キャラID]
  | | | | |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf20[処理中キャラID]
@@ -354,7 +354,7 @@ WoditorEvCOMMAND_END
  | | | | |■
  | | | |◇Loop End Point◇◇
  | | | |▼ ここで、ステータス状態から導き出される一時値を再更新
- | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf20[処理中キャラID] / -3:全て消去(死亡除く全回復時対象) / 2:更新
+ | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf20[処理中キャラID] / -3:Remove All (Full Recovery Targets Excluding Fainting) / 2:Update
  | | | |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf20[処理中キャラID]
  | | | |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf20[処理中キャラID]
  | | | |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf20[処理中キャラID]

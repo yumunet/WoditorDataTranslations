@@ -362,17 +362,17 @@ WoditorEvCOMMAND_END
  | | | |■Condition (Number):   [1] CSelf1[State] <  0  
  | | | |-◇Condition:  [1]  [ CSelf1[State] < 0   ] Case↓
  | | | | |▼ Case for removing all states.
- | | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf15[Character ID] / -1:全て消去（強制） / 0:消去
+ | | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf15[Character ID] / -1:Remove All (Force) / 0:Remove
  | | | | |■
  | | | |-◇Else
  | | | | |■Condition (Number):   [1] CSelf2[Action] ==  0  /  [2] CSelf2[Action] ==  1  
  | | | | |-◇Condition:  [1]  [ CSelf2[Action] == 0   ] Case↓
  | | | | | |▼ Case for removing the specified state.
- | | | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf15[Character ID] / CSelf1[State] / 0:消去
+ | | | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf15[Character ID] / CSelf1[State] / 0:Remove
  | | | | | |■
  | | | | |-◇Condition:  [2]  [ CSelf2[Action] == 1   ] Case↓
  | | | | | |▼ Add state.
- | | | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf15[Character ID] / CSelf1[State] / 1:付与
+ | | | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf15[Character ID] / CSelf1[State] / 1:Add
  | | | | | |■
  | | | | |◇End◇
  | | | | |■
@@ -388,17 +388,17 @@ WoditorEvCOMMAND_END
  | |■Condition (Number):   [1] CSelf1[State] <  0  
  | |-◇Condition:  [1]  [ CSelf1[State] < 0   ] Case↓
  | | |▼ Case for removing all states.
- | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf0[Target Ally] / -1:全て消去（強制） / 0:消去
+ | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf0[Target Ally] / -1:Remove All (Force) / 0:Remove
  | | |■
  | |-◇Else
  | | |■Condition (Number):   [1] CSelf2[Action] ==  0  /  [2] CSelf2[Action] ==  1  
  | | |-◇Condition:  [1]  [ CSelf2[Action] == 0   ] Case↓
  | | | |▼ Case for removing the specified state.
- | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf0[Target Ally] / CSelf1[State] / 0:消去
+ | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf0[Target Ally] / CSelf1[State] / 0:Remove
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf2[Action] == 1   ] Case↓
  | | | |▼ Add state.
- | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf0[Target Ally] / CSelf1[State] / 1:付与
+ | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf0[Target Ally] / CSelf1[State] / 1:Add
  | | | |■
  | | |◇End◇
  | | |■

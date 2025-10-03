@@ -620,15 +620,15 @@ WoditorEvCOMMAND_END
  | | |■Condition (Number):   [1] CSelf13[一時変数D] ==  -3  /  [2] CSelf13[一時変数D] ==  -2  /  [3] CSelf13[一時変数D] >=  0  
  | | |-◇Condition:  [1]  [ CSelf13[一時変数D] == -3   ] Case↓
  | | | |▼ 全回復（死亡込み）
- | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf14[一時キャラID] / -2:全て消去(全回復時対象のみ) / 0:消去
+ | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf14[一時キャラID] / -2:Remove All (Only Full Recovery Targets) / 0:Remove
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf13[一時変数D] == -2   ] Case↓
  | | | |▼ 全回復（死亡抜き）
- | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf14[一時キャラID] / -3:全て消去(死亡除く全回復時対象) / 0:消去
+ | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf14[一時キャラID] / -3:Remove All (Full Recovery Targets Excluding Fainting) / 0:Remove
  | | | |■
  | | |-◇Condition:  [3]  [ CSelf13[一時変数D] >= 0   ] Case↓
  | | | |▼ 単体回復
- | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf14[一時キャラID] / CSelf13[一時変数D] / 0:消去
+ | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf14[一時キャラID] / CSelf13[一時変数D] / 0:Remove
  | | | |■
  | | |◇End◇
  | | |■
