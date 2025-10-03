@@ -342,9 +342,9 @@ WoditorEvCOMMAND_START
 [121][4,0]<1>(1600031,1600001,0,0)()
 [121][4,0]<1>(1600032,1600002,0,0)()
 [121][4,0]<1>(1600033,1600003,0,0)()
-[300][5,1]<1>(0,3,1600000,0,0)("X[Map]Change Level")
+[300][5,1]<1>(0,3,1600000,0,0)("X[Map]Level Up/Down")
 [179][1,0]<1>(1)()
-[300][6,1]<2>(0,16777219,1600000,1600002,1,1600020)("X[Map]Change Level")
+[300][6,1]<2>(0,16777219,1600000,1600002,1,1600020)("X[Map]Level Up/Down")
 [0][0,0]<2>()()
 [498][0,0]<1>()()
 [103][0,1]<1>()("Restore backed-up variables.")
@@ -547,7 +547,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [103][0,1]<3>()("Reset.")
-[300][5,1]<3>(0,3,1600000,0,0)("X[Map]Change Level")
+[300][5,1]<3>(0,3,1600000,0,0)("X[Map]Level Up/Down")
 [103][0,1]<3>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<3>()("End of level-up message display.")
 [103][0,1]<3>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
@@ -572,14 +572,14 @@ WoditorEvCOMMAND_START
 [121][4,0]<2>(1600031,1600001,0,0)()
 [121][4,0]<2>(1600032,1600002,0,0)()
 [121][4,0]<2>(1600033,1600003,0,0)()
-[300][5,1]<2>(0,3,1600000,0,0)("X[Map]Change Level")
+[300][5,1]<2>(0,3,1600000,0,0)("X[Map]Level Up/Down")
 [121][4,0]<2>(1600020,0,0,0)()
 [170][0,0]<2>()()
 [111][4,0]<3>(17,1600010,1600011,1)()
 [401][1,0]<3>(1)()
 [121][4,0]<4>(1600010,1600011,0,512)()
 [250][5,4]<4>(0,1600000,57,327680,1600010)("","Allies","","Current Level EXP")
-[300][6,1]<4>(0,16777219,1600000,1,1,1600012)("X[Map]Change Level")
+[300][6,1]<4>(0,16777219,1600000,1,1,1600012)("X[Map]Level Up/Down")
 [250][5,4]<4>(0,1600000,58,331776,1600011)("","Allies","","Current Level Required EXP")
 [121][4,0]<4>(1600020,1600012,0,256)()
 [111][4,0]<4>(1,1600012,0,2)()
@@ -1044,9 +1044,9 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf31[Argument Temp Backup 2] = CSelf1[Target Parameter] + 0 
  |■Set Variable: CSelf32[Argument Temp Backup 3] = CSelf2[Amount] + 0 
  |■Set Variable: CSelf33[Argument Temp Backup 4] = CSelf3[Show Message?] + 0 
- |■Call Event [Name]: ["X[Map]Change Level"] <CommonEv 74>  / CSelf0[Ally ID] / 0 / 0:LvUp+Reset Changes
+ |■Call Event [Name]: ["X[Map]Level Up/Down"] <CommonEv 74>  / CSelf0[Ally ID] / 0 / 0:LvUp+Reset Changes
  |■Repeat Loop [ 1 ] Times
- | |■Call Event [Name]: CSelf20[Level Change] = ["X[Map]Change Level"] <CommonEv 74>  / CSelf0[Ally ID] / CSelf2[Amount] / 1:LvUp+Keep Changes
+ | |■Call Event [Name]: CSelf20[Level Change] = ["X[Map]Level Up/Down"] <CommonEv 74>  / CSelf0[Ally ID] / CSelf2[Amount] / 1:LvUp+Keep Changes
  | |■
  |◇Loop End Point◇◇
  |▼ Restore backed-up variables.
@@ -1249,7 +1249,7 @@ WoditorEvCOMMAND_END
  | | | |■
  | | |◇End◇
  | | |▼ Reset.
- | | |■Call Event [Name]: ["X[Map]Change Level"] <CommonEv 74>  / CSelf0[Ally ID] / 0 / 0:LvUp+Reset Changes
+ | | |■Call Event [Name]: ["X[Map]Level Up/Down"] <CommonEv 74>  / CSelf0[Ally ID] / 0 / 0:LvUp+Reset Changes
  | | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  | | |▼ End of level-up message display.
  | | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -1274,14 +1274,14 @@ WoditorEvCOMMAND_END
  | |■Set Variable: CSelf31[Argument Temp Backup 2] = CSelf1[Target Parameter] + 0 
  | |■Set Variable: CSelf32[Argument Temp Backup 3] = CSelf2[Amount] + 0 
  | |■Set Variable: CSelf33[Argument Temp Backup 4] = CSelf3[Show Message?] + 0 
- | |■Call Event [Name]: ["X[Map]Change Level"] <CommonEv 74>  / CSelf0[Ally ID] / 0 / 0:LvUp+Reset Changes
+ | |■Call Event [Name]: ["X[Map]Level Up/Down"] <CommonEv 74>  / CSelf0[Ally ID] / 0 / 0:LvUp+Reset Changes
  | |■Set Variable: CSelf20[Level Change] = 0 + 0 
  | |■Loop Start
  | | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  CSelf11[Temp Variable B]  
  | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= CSelf11[Temp Variable B]   ] Case↓
  | | | |■Set Variable: CSelf10[Temp Variable A] -= CSelf11[Temp Variable B] + 0 
  | | | |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Current Level EXP" ] (0:-:54) =  CSelf10[Temp Variable A]
- | | | |■Call Event [Name]: CSelf12[Temp Variable C] = ["X[Map]Change Level"] <CommonEv 74>  / CSelf0[Ally ID] / 1 / 1:LvUp+Keep Changes
+ | | | |■Call Event [Name]: CSelf12[Temp Variable C] = ["X[Map]Level Up/Down"] <CommonEv 74>  / CSelf0[Ally ID] / 1 / 1:LvUp+Keep Changes
  | | | |■Load DB(Var):  CSelf11[Temp Variable B] = VarDB[ "Allies":CSelf0[Ally ID]:"Current Level Required EXP" ] (0:-:55) 
  | | | |■Set Variable: CSelf20[Level Change] += CSelf12[Temp Variable C] + 0 
  | | | |■Condition (Number):   [1] CSelf12[Temp Variable C] ==  0  
