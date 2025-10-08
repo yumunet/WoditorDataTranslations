@@ -224,7 +224,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<1>(0,1600000,5,327696,1600002)("","Allies","","HP")
 [250][5,4]<1>(0,1600000,5,327792,1600010)("","Allies","","HP")
 [250][5,4]<1>(0,1600000,5,327776,0)("","Allies","","HP")
-[103][0,1]<1>()("Ver.2.02  Damage taken on the map can now cause a fainted state.")
+[103][0,1]<1>()("Ver.2.02  Damage taken on the map can now cause the Fainted state.")
 [250][5,4]<1>(17,0,21,332288,1600043)("","System Settings","","Fainted Members After Battle")
 [250][5,4]<1>(0,1600000,5,331776,1600011)("","Allies","","HP")
 [111][4,0]<1>(1,1600011,0,3)()
@@ -926,7 +926,7 @@ WoditorEvCOMMAND_END
  |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"HP" ] (0:-:6) +=  CSelf2[Amount]
  |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"HP" ] (0:-:6) Upper Bound  CSelf10[Temp Variable A]
  |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"HP" ] (0:-:6) Lower Bound  0
- |▼ Ver.2.02  Damage taken on the map can now cause a fainted state.
+ |▼ Ver.2.02  Damage taken on the map can now cause the Fainted state.
  |■Load DB(User):  CSelf43[Behavior When Fainted] = UserDB[ "System Settings":0:"Fainted Members After Battle" ] (17:Basic System Settings:21) 
  |■Load DB(Var):  CSelf11[Temp Variable B] = VarDB[ "Allies":CSelf0[Ally ID]:"HP" ] (0:-:6) 
  |■Condition (Number):   [1] CSelf11[Temp Variable B] <=  0  

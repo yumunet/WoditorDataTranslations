@@ -336,12 +336,12 @@ WoditorEvCOMMAND_START
 [498][0,0]<1>()()
 [111][7,0]<1>(2,1600010,9,3,1600010,10,1)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("Defeat animation.")
+[103][0,1]<2>()("Defeat effect")
 [103][0,1]<2>()(" ")
 [103][0,1]<2>()("Recalculate ally stats.")
 [300][4,1]<2>(0,2,1600010,1)("X[Bat]CalcTempStats <StatusEffects>")
 [300][5,1]<2>(0,3,5,1600010,1600010)("X[Bat]Ally Box: Draw One")
-[103][0,1]<2>()("If newly-fainted, process defeat.")
+[103][0,1]<2>()("If an ally has just fainted, process the defeat.")
 [300][5,1]<2>(0,16777218,1600010,0,1600059)("X[Bat]Get Basic State")
 [111][4,0]<2>(1,1600058,0,2)()
 [401][1,0]<2>(1)()
@@ -355,7 +355,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<2>()()
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[103][0,1]<2>()("If necessary, defeat animation.")
+[103][0,1]<2>()("If necessary, perform the defeat effect.")
 [300][3,1]<2>(0,1,1600010)("X[Bat]CalcTempStats <Initialize>")
 [300][4,1]<2>(0,2,1600010,0)("X[Bat]CalcTempStats <Equipments>")
 [300][4,1]<2>(0,2,1600010,0)("X[Bat]CalcTempStats <StatusEffects>")
@@ -363,7 +363,7 @@ WoditorEvCOMMAND_START
 [300][5,1]<2>(0,16777218,1600010,0,1600059)("X[Bat]Get Basic State")
 [111][4,0]<2>(1,1600059,1,1)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("If enemy, process enemy defeat.")
+[103][0,1]<3>()("Since it's an enemy, process the enemy's defeat.")
 [300][4,1]<3>(0,2,1600010,0)("X[Bat]Defeat Enemy")
 [300][3,1]<3>(0,1,52)("X[Com]Play System Sound")
 [300][3,1]<3>(0,1,20)("X[Com]Wait 2(PressKeyToSpdUp)")
@@ -524,12 +524,12 @@ WoditorEvCOMMAND_END
  |◇Loop End Point◇◇
  |■Condition (Number):   [1] CSelf10[Target Slot] <=  9  /  [2] CSelf10[Target Slot] >=  10  
  |-◇Condition:  [1]  [ CSelf10[Target Slot] <= 9   ] Case↓
- | |▼ Defeat animation.
+ | |▼ Defeat effect
  | |▼  
  | |▼ Recalculate ally stats.
  | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf10[Target Slot] / 1:状態名のみ計算
  | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 5:表示[更新＋ゲージアニメ] / CSelf10[Target Slot] / CSelf10[Target Slot]
- | |▼ If newly-fainted, process defeat.
+ | |▼ If an ally has just fainted, process the defeat.
  | |■Call Event [Name]: CSelf59[Fainted Flag] = ["X[Bat]Get Basic State"] <CommonEv 176>  / CSelf10[Target Slot] / 0:戦闘不能状態
  | |■Condition (Number):   [1] CSelf58[Just Before Fainting Flag] ==  0  
  | |-◇Condition:  [1]  [ CSelf58[Just Before Fainting Flag] == 0   ] Case↓
@@ -543,7 +543,7 @@ WoditorEvCOMMAND_END
  | |◇End◇
  | |■
  |-◇Condition:  [2]  [ CSelf10[Target Slot] >= 10   ] Case↓
- | |▼ If necessary, defeat animation.
+ | |▼ If necessary, perform the defeat effect.
  | |■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf10[Target Slot]
  | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf10[Target Slot] / 0:武器欄の武器を使用
  | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf10[Target Slot] / 0:パラメータ補正＋状態名計算
@@ -551,7 +551,7 @@ WoditorEvCOMMAND_END
  | |■Call Event [Name]: CSelf59[Fainted Flag] = ["X[Bat]Get Basic State"] <CommonEv 176>  / CSelf10[Target Slot] / 0:戦闘不能状態
  | |■Condition (Number):   [1] CSelf59[Fainted Flag] >=  1  
  | |-◇Condition:  [1]  [ CSelf59[Fainted Flag] >= 1   ] Case↓
- | | |▼ If enemy, process enemy defeat.
+ | | |▼ Since it's an enemy, process the enemy's defeat.
  | | |■Call Event [Name]: ["X[Bat]Defeat Enemy"] <CommonEv 171>  / CSelf10[Target Slot] / 0:通常撃破[EXPその他入手]
  | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 52:Enemy Defeat Sound
  | | |■Call Event [Name]: ["X[Com]Wait 2(PressKeyToSpdUp)"] <CommonEv 60>  / 20

@@ -180,7 +180,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("  This common event is always used to add or remove states on the ally in the base system.")
 [103][0,1]<0>()("  Works only on the map.")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("  Also, handles HP changes related to the fainted state.")
+[103][0,1]<0>()("  Also, handles HP changes related to the Fainted state.")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("  After processing, to reduce load,")
 [103][0,1]<0>()("  information on whether currently affected by a state and the minimum number of steps remaining until removal")
@@ -404,11 +404,11 @@ WoditorEvCOMMAND_START
 [103][0,1]<1>()("If system is set to <dqrt>Revive with 1 HP<dqrt>")
 [250][5,4]<1>(2,1600000,0,65536,0)("","┗ State List","","")
 [250][5,4]<1>(0,1600000,0,327776,1)("","Allies","","HP")
-[103][0,1]<1>()("Remove fainted state.")
+[103][0,1]<1>()("Remove the Fainted state.")
 [121][4,0]<1>(1600021,0,0,0)()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
-[103][0,1]<0>()("If <dqrt>Fainted<dqrt> is set to remove all other states, store fainted (ID 0) as the state excluded when removing all states.")
+[103][0,1]<0>()("If <dqrt>Fainted<dqrt> is set to remove all other states, store Fainted (ID 0) as the state excluded when removing all states.")
 [111][4,0]<0>(1,1600021,0,5)()
 [401][1,0]<0>(1)()
 [250][5,4]<1>(8,0,0,332288,1600020)("","States","","All Other States...")
@@ -420,7 +420,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("If the state is set to remove all other states, set all states to 0 except that state and fainted.")
+[103][0,1]<0>()("If the state is set to remove all other states, set all states to 0 except that state and Fainted.")
 [111][4,0]<0>(1,1600018,0,1)()
 [401][1,0]<0>(1)()
 [103][0,1]<1>()("Get the remaining steps of the state to be kept, then reset.")
@@ -522,7 +522,7 @@ WoditorEvCOMMAND_END
 ▼   This common event is always used to add or remove states on the ally in the base system.
 ▼   Works only on the map.
 ▼  
-▼   Also, handles HP changes related to the fainted state.
+▼   Also, handles HP changes related to the Fainted state.
 ▼  
 ▼   After processing, to reduce load,
 ▼   information on whether currently affected by a state and the minimum number of steps remaining until removal
@@ -746,11 +746,11 @@ WoditorEvCOMMAND_END
  |▼ If system is set to "Revive with 1 HP"
  |■Write to DB(Var): VarDB[ "┗ State List":CSelf0[Ally ID]:0 ] (5:-:\udb[8:0] Steps Left) =  0
  |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"HP" ] (0:-:6) Lower Bound  1
- |▼ Remove fainted state.
+ |▼ Remove the Fainted state.
  |■Set Variable: CSelf21[Fainted Turn Count] = 0 + 0 
  |■
 ◇End◇
-▼ If "Fainted" is set to remove all other states, store fainted (ID 0) as the state excluded when removing all states.
+▼ If "Fainted" is set to remove all other states, store Fainted (ID 0) as the state excluded when removing all states.
 ■Condition (Number):   [1] CSelf21[Fainted Turn Count] !=  0  
 -◇Condition:  [1]  [ CSelf21[Fainted Turn Count] != 0   ] Case↓
  |■Load DB(User):  CSelf20[Temp Variable A] = UserDB[ "States":0:"All Other States..." ] (8:Fainted:18) 
@@ -762,7 +762,7 @@ WoditorEvCOMMAND_END
  |■
 ◇End◇
 ▼  
-▼ If the state is set to remove all other states, set all states to 0 except that state and fainted.
+▼ If the state is set to remove all other states, set all states to 0 except that state and Fainted.
 ■Condition (Number):   [1] CSelf18[Remove All Flag (State ID to Keep, -1 fo..] >=  0  
 -◇Condition:  [1]  [ CSelf18[Remove All Flag (State ID to Keep, -1 fo..] >= 0   ] Case↓
  |▼ Get the remaining steps of the state to be kept, then reset.
