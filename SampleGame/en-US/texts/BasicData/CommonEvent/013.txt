@@ -87,7 +87,7 @@ DEFAULT_VAL_1=0
 DEFAULT_VAL_2=0
 DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
-RETURN_VAL_NAME=Successful?
+RETURN_VAL_NAME=Change Made?
 RETURN_VAL_TARGET=90
 CSELF_NAME_0=Target Ally
 CSELF_NAME_1=Which Cmd?
@@ -179,7 +179,7 @@ CSELF_NAME_86=
 CSELF_NAME_87=
 CSELF_NAME_88=
 CSELF_NAME_89=
-CSELF_NAME_90=Change Successful?
+CSELF_NAME_90=Change Made?
 CSELF_NAME_91=
 CSELF_NAME_92=
 CSELF_NAME_93=
@@ -203,7 +203,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ Arguments 0: Target Ally  1: Which Command? (1-6)  2: Change To (Command ID)
-■Call Event [Name]: CSelf90[Change Successful?] = ["X[Map]Change Battle Commands"] <CommonEv 77>  / CSelf0[Target Ally] / CSelf1[Which Cmd?] / CSelf2[Change To]
+■Call Event [Name]: CSelf90[Change Made?] = ["X[Map]Change Battle Commands"] <CommonEv 77>  / CSelf0[Target Ally] / CSelf1[Which Cmd?] / CSelf2[Change To]
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ If the corresponding character is in battle, store there as well.
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■

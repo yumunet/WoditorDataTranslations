@@ -65,32 +65,32 @@ CSELF_NAME_1=
 CSELF_NAME_2=
 CSELF_NAME_3=
 CSELF_NAME_4=
-CSELF_NAME_5=一時文字列
+CSELF_NAME_5=Temp String
 CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=
-CSELF_NAME_10=一時変数A
+CSELF_NAME_10=Temp Variable A
 CSELF_NAME_11=
 CSELF_NAME_12=
 CSELF_NAME_13=
 CSELF_NAME_14=
 CSELF_NAME_15=
-CSELF_NAME_16=最大パーティ人数
+CSELF_NAME_16=Max Party Size
 CSELF_NAME_17=
-CSELF_NAME_18=戦闘中フラグ
+CSELF_NAME_18=In-Battle Flag
 CSELF_NAME_19=
-CSELF_NAME_20=処理主人公ID
-CSELF_NAME_21=処理対象
-CSELF_NAME_22=パーティーメンバー数
-CSELF_NAME_23=最終の空欄位置
+CSELF_NAME_20=Processing Ally ID
+CSELF_NAME_21=Processing Target
+CSELF_NAME_22=Party Member Count
+CSELF_NAME_23=Last Empty Slot Position
 CSELF_NAME_24=
 CSELF_NAME_25=
 CSELF_NAME_26=
 CSELF_NAME_27=
 CSELF_NAME_28=
 CSELF_NAME_29=
-CSELF_NAME_30=戦闘移動先
+CSELF_NAME_30=Battle Destination
 CSELF_NAME_31=
 CSELF_NAME_32=
 CSELF_NAME_33=
@@ -100,16 +100,16 @@ CSELF_NAME_36=
 CSELF_NAME_37=
 CSELF_NAME_38=
 CSELF_NAME_39=
-CSELF_NAME_40=ＤＢ番号
-CSELF_NAME_41=移動元
-CSELF_NAME_42=移動先
+CSELF_NAME_40=DB Number
+CSELF_NAME_41=Source
+CSELF_NAME_42=Destination
 CSELF_NAME_43=
-CSELF_NAME_44=現在参照番号
-CSELF_NAME_45=項目数
-CSELF_NAME_46=項目番号
-CSELF_NAME_47=移動元数値
+CSELF_NAME_44=Reference Value
+CSELF_NAME_45=Field Count
+CSELF_NAME_46=Field Number
+CSELF_NAME_47=Source Value
 CSELF_NAME_48=
-CSELF_NAME_49=ＤＢ参照番号
+CSELF_NAME_49=DB Reference Value
 CSELF_NAME_50=
 CSELF_NAME_51=
 CSELF_NAME_52=
@@ -165,8 +165,8 @@ COMMAND_NUM=98
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("[Process Overview]")
-[103][0,1]<0>()("　パーティーのメンバー数を計算しなおします。")
-[103][0,1]<0>()("　パーティー欄に隙間があったら埋めます。")
+[103][0,1]<0>()("  Recalculates the number of members in the party.")
+[103][0,1]<0>()("  If there are gaps in the party slots, they are closed.")
 [103][0,1]<0>()("")
 [103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
@@ -181,7 +181,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<0>(18,68,0,200704,1600018)("","Base System Variables","[Battle] In Battle?","")
 [179][1,0]<0>(1600016)()
 [121][4,0]<1>(1600021,1,0,256)()
-[103][0,1]<1>()("パーティー情報DBからキャラIDを取得する")
+[103][0,1]<1>()("Get character ID from Party database.")
 [121][4,0]<1>(1600010,1600021,1,0)()
 [250][5,4]<1>(3,0,1600010,69632,1600020)("","Party","","")
 [111][4,0]<1>(17,1600020,0,1)()
@@ -189,14 +189,14 @@ WoditorEvCOMMAND_START
 [121][4,0]<2>(1600022,1,0,256)()
 [111][4,0]<2>(1,1600023,1,1)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("最後の空欄位置が前にあったら、そこへ飛ばす")
+[103][0,1]<3>()("If the empty slot is at a previous position, move the data there.")
 [250][5,4]<3>(3,0,1600023,65536,1600020)("","Party","","")
 [250][5,4]<3>(3,0,1600010,65536,-1)("","Party","","")
 [111][4,0]<3>(1,1600018,1,2)()
 [401][1,0]<3>(1)()
-[103][0,1]<4>()("戦闘中なので戦闘中データも移動させる")
+[103][0,1]<4>()("Since in battle, also move the battle data.")
 [121][4,0]<4>(1600030,1600023,1,4096)()
-[103][0,1]<4>()("ＤＢ10～13までの内容を移動する")
+[103][0,1]<4>()("Move data from databases 10 through 13.")
 [121][4,0]<4>(1600040,10,0,0)()
 [121][4,0]<4>(1600041,1600021,0,0)()
 [121][4,0]<4>(1600042,1600030,0,0)()
@@ -211,12 +211,12 @@ WoditorEvCOMMAND_START
 [122][3,0]<6>(1600005,2,1600044)()
 [112][2,4]<6>(17,1600005)("<<ERROR>>","","","")
 [401][1,0]<6>(1)()
-[103][0,1]<7>()("データは数値")
+[103][0,1]<7>()("Data is a number.")
 [250][5,4]<7>(1600040,1600041,1600046,4096,1600047)("","","","")
 [250][5,4]<7>(1600040,1600042,1600046,0,1600047)("","","","")
 [0][0,0]<7>()()
 [420][1,0]<6>(0)()
-[103][0,1]<7>()("データは文字列")
+[103][0,1]<7>()("Data is a string.")
 [250][5,4]<7>(1600040,1600042,1600046,0,1600005)("","","","")
 [0][0,0]<7>()()
 [499][0,0]<6>()()
@@ -228,7 +228,7 @@ WoditorEvCOMMAND_START
 [498][0,0]<4>()()
 [0][0,0]<4>()()
 [499][0,0]<3>()()
-[103][0,1]<3>()("空欄位置を一つずらす")
+[103][0,1]<3>()("Shift the empty slot position by one.")
 [121][4,0]<3>(1600023,1,0,256)()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
@@ -236,7 +236,7 @@ WoditorEvCOMMAND_START
 [420][1,0]<1>(0)()
 [111][4,0]<2>(1,1600023,0,2)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("最後の空欄位置をここで覚えておく")
+[103][0,1]<3>()("Store the last empty slot position here.")
 [121][4,0]<3>(1600023,1600010,0,0)()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
@@ -244,7 +244,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<1>()()
 [0][0,0]<1>()()
 [498][0,0]<0>()()
-[103][0,1]<0>()("パーティー数を格納")
+[103][0,1]<0>()("Store party member count.")
 [250][5,4]<0>(18,4,0,65536,1600022)("","Base System Variables","","")
 [121][4,0]<0>(1600021,1600022,0,0)()
 [170][0,0]<0>()()
@@ -266,8 +266,8 @@ WoditorEvCOMMAND_END
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ [Process Overview]
-▼ 　パーティーのメンバー数を計算しなおします。
-▼ 　パーティー欄に隙間があったら埋めます。
+▼   Recalculates the number of members in the party.
+▼   If there are gaps in the party slots, they are closed.
 ▼ 
 ▼ [Databases Accessed by This Common Event]
 ▼  
@@ -275,90 +275,90 @@ WoditorEvCOMMAND_END
 ▼  
 ▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
-■Set Variable: CSelf22[パーティーメンバー数] = 0 + 0 
-■Set Variable: CSelf21[処理対象] = -1 + 0 
-■Set Variable: CSelf23[最終の空欄位置] = 0 + 0 
-■Load DB(Var):  CSelf16[最大パーティ人数] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
-■Load DB(Var):  CSelf18[戦闘中フラグ] = VarDB[ "Base System Variables":"[Battle] In Battle?":0 ] (18:68:Number) 
-■Repeat Loop [ CSelf16[最大パーティ人数] ] Times
- |■Set Variable: CSelf21[処理対象] += 1 + 0 
- |▼ パーティー情報DBからキャラIDを取得する
- |■Set Variable: CSelf10[一時変数A] = CSelf21[処理対象] + 1 
- |■Load DB(Var):  CSelf20[処理主人公ID] = VarDB[ "Party":0:CSelf10[一時変数A] ] (6:Main Settings:-) 
- |■Condition (Number):   [1] CSelf20[処理主人公ID] >=  0  
- |-◇Condition:  [1]  [ CSelf20[処理主人公ID] >= 0   ] Case↓
- | |■Set Variable: CSelf22[パーティーメンバー数] += 1 + 0 
- | |■Condition (Number):   [1] CSelf23[最終の空欄位置] >=  1  
- | |-◇Condition:  [1]  [ CSelf23[最終の空欄位置] >= 1   ] Case↓
- | | |▼ 最後の空欄位置が前にあったら、そこへ飛ばす
- | | |■Write to DB(Var): VarDB[ "Party":0:CSelf23[最終の空欄位置] ] (6:Main Settings:-) =  CSelf20[処理主人公ID]
- | | |■Write to DB(Var): VarDB[ "Party":0:CSelf10[一時変数A] ] (6:Main Settings:-) =  -1
- | | |■Condition (Number):   [1] CSelf18[戦闘中フラグ] ==  1  
- | | |-◇Condition:  [1]  [ CSelf18[戦闘中フラグ] == 1   ] Case↓
- | | | |▼ 戦闘中なので戦闘中データも移動させる
- | | | |■Set Variable: CSelf30[戦闘移動先] = CSelf23[最終の空欄位置] - 1 
- | | | |▼ ＤＢ10～13までの内容を移動する
- | | | |■Set Variable: CSelf40[ＤＢ番号] = 10 + 0 
- | | | |■Set Variable: CSelf41[移動元] = CSelf21[処理対象] + 0 
- | | | |■Set Variable: CSelf42[移動先] = CSelf30[戦闘移動先] + 0 
+■Set Variable: CSelf22[Party Member Count] = 0 + 0 
+■Set Variable: CSelf21[Processing Target] = -1 + 0 
+■Set Variable: CSelf23[Last Empty Slot Position] = 0 + 0 
+■Load DB(Var):  CSelf16[Max Party Size] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
+■Load DB(Var):  CSelf18[In-Battle Flag] = VarDB[ "Base System Variables":"[Battle] In Battle?":0 ] (18:68:Number) 
+■Repeat Loop [ CSelf16[Max Party Size] ] Times
+ |■Set Variable: CSelf21[Processing Target] += 1 + 0 
+ |▼ Get character ID from Party database.
+ |■Set Variable: CSelf10[Temp Variable A] = CSelf21[Processing Target] + 1 
+ |■Load DB(Var):  CSelf20[Processing Ally ID] = VarDB[ "Party":0:CSelf10[Temp Variable A] ] (6:Main Settings:-) 
+ |■Condition (Number):   [1] CSelf20[Processing Ally ID] >=  0  
+ |-◇Condition:  [1]  [ CSelf20[Processing Ally ID] >= 0   ] Case↓
+ | |■Set Variable: CSelf22[Party Member Count] += 1 + 0 
+ | |■Condition (Number):   [1] CSelf23[Last Empty Slot Position] >=  1  
+ | |-◇Condition:  [1]  [ CSelf23[Last Empty Slot Position] >= 1   ] Case↓
+ | | |▼ If the empty slot is at a previous position, move the data there.
+ | | |■Write to DB(Var): VarDB[ "Party":0:CSelf23[Last Empty Slot Position] ] (6:Main Settings:-) =  CSelf20[Processing Ally ID]
+ | | |■Write to DB(Var): VarDB[ "Party":0:CSelf10[Temp Variable A] ] (6:Main Settings:-) =  -1
+ | | |■Condition (Number):   [1] CSelf18[In-Battle Flag] ==  1  
+ | | |-◇Condition:  [1]  [ CSelf18[In-Battle Flag] == 1   ] Case↓
+ | | | |▼ Since in battle, also move the battle data.
+ | | | |■Set Variable: CSelf30[Battle Destination] = CSelf23[Last Empty Slot Position] - 1 
+ | | | |▼ Move data from databases 10 through 13.
+ | | | |■Set Variable: CSelf40[DB Number] = 10 + 0 
+ | | | |■Set Variable: CSelf41[Source] = CSelf21[Processing Target] + 0 
+ | | | |■Set Variable: CSelf42[Destination] = CSelf30[Battle Destination] + 0 
  | | | |■Repeat Loop [ 4 ] Times
- | | | | |■Load DB(Var):  CSelf45[項目数] = VarDB[Type CSelf40[ＤＢ番号](-)'s Field Count]
- | | | | |■Set Variable: CSelf46[項目番号] = 0 + 0 
- | | | | |■Set Variable: CSelf49[ＤＢ参照番号] = 1100000000 + 0 
- | | | | |■Set Variable: CSelf49[ＤＢ参照番号] += CSelf40[ＤＢ番号] * 1000000 
- | | | | |■Repeat Loop [ CSelf45[項目数] ] Times
- | | | | | |■Set Variable: CSelf44[現在参照番号] = CSelf49[ＤＢ参照番号] + CSelf46[項目番号] 
- | | | | | |■Set Variable: CSelf44[現在参照番号] += CSelf41[移動元] * 100 
- | | | | | |■Set String: CSelf5[一時文字列] = String at Position [CSelf44[現在参照番号]]
- | | | | | |■Condition (String):   [1] CSelf5[一時文字列] Is Equal to "<<ERROR>>"
- | | | | | |-◇Condition:  [1] [ CSelf5[一時文字列] Is Equal to "<<ERROR>>" ] Case↓
- | | | | | | |▼ データは数値
- | | | | | | |■Load DB(Var):  CSelf47[移動元数値] = VarDB[ CSelf40[ＤＢ番号]:CSelf41[移動元]:CSelf46[項目番号] ] (-:-:-) 
- | | | | | | |■Write to DB(Var): VarDB[ CSelf40[ＤＢ番号]:CSelf42[移動先]:CSelf46[項目番号] ] (-:-:-) =  CSelf47[移動元数値]
+ | | | | |■Load DB(Var):  CSelf45[Field Count] = VarDB[Type CSelf40[DB Number](-)'s Field Count]
+ | | | | |■Set Variable: CSelf46[Field Number] = 0 + 0 
+ | | | | |■Set Variable: CSelf49[DB Reference Value] = 1100000000 + 0 
+ | | | | |■Set Variable: CSelf49[DB Reference Value] += CSelf40[DB Number] * 1000000 
+ | | | | |■Repeat Loop [ CSelf45[Field Count] ] Times
+ | | | | | |■Set Variable: CSelf44[Reference Value] = CSelf49[DB Reference Value] + CSelf46[Field Number] 
+ | | | | | |■Set Variable: CSelf44[Reference Value] += CSelf41[Source] * 100 
+ | | | | | |■Set String: CSelf5[Temp String] = String at Position [CSelf44[Reference Value]]
+ | | | | | |■Condition (String):   [1] CSelf5[Temp String] Is Equal to "<<ERROR>>"
+ | | | | | |-◇Condition:  [1] [ CSelf5[Temp String] Is Equal to "<<ERROR>>" ] Case↓
+ | | | | | | |▼ Data is a number.
+ | | | | | | |■Load DB(Var):  CSelf47[Source Value] = VarDB[ CSelf40[DB Number]:CSelf41[Source]:CSelf46[Field Number] ] (-:-:-) 
+ | | | | | | |■Write to DB(Var): VarDB[ CSelf40[DB Number]:CSelf42[Destination]:CSelf46[Field Number] ] (-:-:-) =  CSelf47[Source Value]
  | | | | | | |■
  | | | | | |-◇Else
- | | | | | | |▼ データは文字列
- | | | | | | |■Write to DB(Var): VarDB[ CSelf40[ＤＢ番号]:CSelf42[移動先]:CSelf46[項目番号] ] (-:-:-) =  CSelf5[一時文字列]
+ | | | | | | |▼ Data is a string.
+ | | | | | | |■Write to DB(Var): VarDB[ CSelf40[DB Number]:CSelf42[Destination]:CSelf46[Field Number] ] (-:-:-) =  CSelf5[Temp String]
  | | | | | | |■
  | | | | | |◇End◇
- | | | | | |■Set Variable: CSelf46[項目番号] += 1 + 0 
+ | | | | | |■Set Variable: CSelf46[Field Number] += 1 + 0 
  | | | | | |■
  | | | | |◇Loop End Point◇◇
- | | | | |■Set Variable: CSelf40[ＤＢ番号] += 1 + 0 
+ | | | | |■Set Variable: CSelf40[DB Number] += 1 + 0 
  | | | | |■
  | | | |◇Loop End Point◇◇
  | | | |■
  | | |◇End◇
- | | |▼ 空欄位置を一つずらす
- | | |■Set Variable: CSelf23[最終の空欄位置] += 1 + 0 
+ | | |▼ Shift the empty slot position by one.
+ | | |■Set Variable: CSelf23[Last Empty Slot Position] += 1 + 0 
  | | |■
  | |◇End◇
  | |■
  |-◇Else
- | |■Condition (Number):   [1] CSelf23[最終の空欄位置] ==  0  
- | |-◇Condition:  [1]  [ CSelf23[最終の空欄位置] == 0   ] Case↓
- | | |▼ 最後の空欄位置をここで覚えておく
- | | |■Set Variable: CSelf23[最終の空欄位置] = CSelf10[一時変数A] + 0 
+ | |■Condition (Number):   [1] CSelf23[Last Empty Slot Position] ==  0  
+ | |-◇Condition:  [1]  [ CSelf23[Last Empty Slot Position] == 0   ] Case↓
+ | | |▼ Store the last empty slot position here.
+ | | |■Set Variable: CSelf23[Last Empty Slot Position] = CSelf10[Temp Variable A] + 0 
  | | |■
  | |◇End◇
  | |■
  |◇End◇
  |■
 ◇Loop End Point◇◇
-▼ パーティー数を格納
-■Write to DB(Var): VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) =  CSelf22[パーティーメンバー数]
-■Set Variable: CSelf21[処理対象] = CSelf22[パーティーメンバー数] + 0 
+▼ Store party member count.
+■Write to DB(Var): VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) =  CSelf22[Party Member Count]
+■Set Variable: CSelf21[Processing Target] = CSelf22[Party Member Count] + 0 
 ■Loop Start
- |■Condition (Number):   [1] CSelf21[処理対象] >=  CSelf16[最大パーティ人数]  
- |-◇Condition:  [1]  [ CSelf21[処理対象] >= CSelf16[最大パーティ人数]   ] Case↓
+ |■Condition (Number):   [1] CSelf21[Processing Target] >=  CSelf16[Max Party Size]  
+ |-◇Condition:  [1]  [ CSelf21[Processing Target] >= CSelf16[Max Party Size]   ] Case↓
  | |■Break Loop
  | |■
  |◇End◇
- |■Write to DB(Var): [Reset Type "×┏Battle Temp Status"(10) Data CSelf21[処理対象]]
- |■Write to DB(Var): [Reset Type "×┣Element Resist Calc"(11) Data CSelf21[処理対象]]
- |■Write to DB(Var): [Reset Type "×┣State Resist Calc"(12) Data CSelf21[処理対象]]
- |■Write to DB(Var): [Reset Type "×┣State List"(13) Data CSelf21[処理対象]]
- |■Set Variable: CSelf21[処理対象] += 1 + 0 
+ |■Write to DB(Var): [Reset Type "×┏Battle Temp Status"(10) Data CSelf21[Processing Target]]
+ |■Write to DB(Var): [Reset Type "×┣Element Resist Calc"(11) Data CSelf21[Processing Target]]
+ |■Write to DB(Var): [Reset Type "×┣State Resist Calc"(12) Data CSelf21[Processing Target]]
+ |■Write to DB(Var): [Reset Type "×┣State List"(13) Data CSelf21[Processing Target]]
+ |■Set Variable: CSelf21[Processing Target] += 1 + 0 
  |■
 ◇Loop End Point◇◇
 ■

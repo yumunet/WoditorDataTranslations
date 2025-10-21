@@ -8,9 +8,9 @@ MEMO=
 VALINPUT_NUM=2
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=主人公ID
-VALINPUT_NAME_1=コマンド位置
-VALINPUT_NAME_2=コマンド番号
+VALINPUT_NAME_0=Ally ID
+VALINPUT_NAME_1=Command Slot
+VALINPUT_NAME_2=
 VALINPUT_NAME_3=
 VALINPUT_NAME_4=
 VALINPUT_NAME_5=
@@ -22,7 +22,7 @@ VALINPUT_NAME_10=
 LOADTYPE_NUM=10
 LOADTYPE0=0
 LOADTYPE1=2
-LOADTYPE2=1
+LOADTYPE2=0
 LOADTYPE3=0
 LOADTYPE4=0
 LOADTYPE5=0
@@ -33,20 +33,17 @@ LOADTYPE9=0
 CHOICE_STR_NUM=10
 CHOICE_STR_0_NUM=0
 CHOICE_STR_1_NUM=10
-CHOICE_STR_1_0=コマンド1
-CHOICE_STR_1_1=コマンド2
-CHOICE_STR_1_2=コマンド3
-CHOICE_STR_1_3=コマンド4
-CHOICE_STR_1_4=コマンド5
-CHOICE_STR_1_5=コマンド6
-CHOICE_STR_1_6=コマンド7
-CHOICE_STR_1_7=コマンド8
-CHOICE_STR_1_8=前方の空きコマンド
-CHOICE_STR_1_9=後方の空きコマンド
-CHOICE_STR_2_NUM=3
-CHOICE_STR_2_0=<消去する>
-CHOICE_STR_2_1=<消去する>
-CHOICE_STR_2_2=<消去する>
+CHOICE_STR_1_0=Command 1
+CHOICE_STR_1_1=Command 2
+CHOICE_STR_1_2=Command 3
+CHOICE_STR_1_3=Command 4
+CHOICE_STR_1_4=Command 5
+CHOICE_STR_1_5=Command 6
+CHOICE_STR_1_6=Command 7
+CHOICE_STR_1_7=Command 8
+CHOICE_STR_1_8=Empty Slot (Front)
+CHOICE_STR_1_9=Empty Slot (Back)
+CHOICE_STR_2_NUM=0
 CHOICE_STR_3_NUM=0
 CHOICE_STR_4_NUM=0
 CHOICE_STR_5_NUM=0
@@ -67,10 +64,7 @@ CHOICE_VAL_1_6=6
 CHOICE_VAL_1_7=7
 CHOICE_VAL_1_8=-10
 CHOICE_VAL_1_9=-11
-CHOICE_VAL_2_NUM=3
-CHOICE_VAL_2_0=1
-CHOICE_VAL_2_1=6
-CHOICE_VAL_2_2=1
+CHOICE_VAL_2_NUM=0
 CHOICE_VAL_3_NUM=0
 CHOICE_VAL_4_NUM=0
 CHOICE_VAL_5_NUM=0
@@ -81,14 +75,14 @@ CHOICE_VAL_9_NUM=0
 DEFAULT_VAL_NUM=5
 DEFAULT_VAL_0=0
 DEFAULT_VAL_1=0
-DEFAULT_VAL_2=-1
+DEFAULT_VAL_2=0
 DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
-RETURN_VAL_NAME=変更できた？
+RETURN_VAL_NAME=Command ID
 RETURN_VAL_TARGET=99
-CSELF_NAME_0=主人公ID
-CSELF_NAME_1=コマンド位置
-CSELF_NAME_2=コマンド番号
+CSELF_NAME_0=Ally ID
+CSELF_NAME_1=Command Slot
+CSELF_NAME_2=
 CSELF_NAME_3=
 CSELF_NAME_4=
 CSELF_NAME_5=
@@ -96,7 +90,7 @@ CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=
-CSELF_NAME_10=一時変数A
+CSELF_NAME_10=
 CSELF_NAME_11=
 CSELF_NAME_12=
 CSELF_NAME_13=
@@ -106,10 +100,10 @@ CSELF_NAME_16=
 CSELF_NAME_17=
 CSELF_NAME_18=
 CSELF_NAME_19=
-CSELF_NAME_20=処理主人公ID
-CSELF_NAME_21=処理対象
-CSELF_NAME_22=パーティーメンバー数
-CSELF_NAME_23=最大パーティ人数
+CSELF_NAME_20=
+CSELF_NAME_21=
+CSELF_NAME_22=
+CSELF_NAME_23=
 CSELF_NAME_24=
 CSELF_NAME_25=
 CSELF_NAME_26=
@@ -185,13 +179,13 @@ CSELF_NAME_95=
 CSELF_NAME_96=
 CSELF_NAME_97=
 CSELF_NAME_98=
-CSELF_NAME_99=戦闘コマンド番号
+CSELF_NAME_99=Command ID
 COMMAND_NUM=36
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("[Process Overview]")
-[103][0,1]<0>()("　主人公の戦闘コマンドを取得します。")
+[103][0,1]<0>()("  Gets an ally's battle command.")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [121][4,0]<0>(1600099,-1,0,0)()
 [111][10,0]<0>(3,1600001,0,2,1600001,1,2,1600001,2,2)()
@@ -230,37 +224,37 @@ WoditorEvCOMMAND_END
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ [Process Overview]
-▼ 　主人公の戦闘コマンドを取得します。
+▼   Gets an ally's battle command.
 ▼ ―――――――――――――――――――――――――――――――――――
-■Set Variable: CSelf99[戦闘コマンド番号] = -1 + 0 
-■Condition (Number):   [1] CSelf1[コマンド位置] ==  0  /  [2] CSelf1[コマンド位置] ==  1  /  [3] CSelf1[コマンド位置] ==  2  
--◇Condition:  [1]  [ CSelf1[コマンド位置] == 0   ] Case↓
- |■Load DB(Var):  CSelf99[戦闘コマンド番号] = VarDB[ "Allies":CSelf0[主人公ID]:"[Command 1]" ] (0:-:46) 
+■Set Variable: CSelf99[Command ID] = -1 + 0 
+■Condition (Number):   [1] CSelf1[Command Slot] ==  0  /  [2] CSelf1[Command Slot] ==  1  /  [3] CSelf1[Command Slot] ==  2  
+-◇Condition:  [1]  [ CSelf1[Command Slot] == 0   ] Case↓
+ |■Load DB(Var):  CSelf99[Command ID] = VarDB[ "Allies":CSelf0[Ally ID]:"[Command 1]" ] (0:-:46) 
  |■
--◇Condition:  [2]  [ CSelf1[コマンド位置] == 1   ] Case↓
- |■Load DB(Var):  CSelf99[戦闘コマンド番号] = VarDB[ "Allies":CSelf0[主人公ID]:"[Command 2]" ] (0:-:47) 
+-◇Condition:  [2]  [ CSelf1[Command Slot] == 1   ] Case↓
+ |■Load DB(Var):  CSelf99[Command ID] = VarDB[ "Allies":CSelf0[Ally ID]:"[Command 2]" ] (0:-:47) 
  |■
--◇Condition:  [3]  [ CSelf1[コマンド位置] == 2   ] Case↓
- |■Load DB(Var):  CSelf99[戦闘コマンド番号] = VarDB[ "Allies":CSelf0[主人公ID]:"[Command 3]" ] (0:-:48) 
- |■
-◇End◇
-■Condition (Number):   [1] CSelf1[コマンド位置] ==  3  /  [2] CSelf1[コマンド位置] ==  4  /  [3] CSelf1[コマンド位置] ==  5  
--◇Condition:  [1]  [ CSelf1[コマンド位置] == 3   ] Case↓
- |■Load DB(Var):  CSelf99[戦闘コマンド番号] = VarDB[ "Allies":CSelf0[主人公ID]:"[Command 4]" ] (0:-:49) 
- |■
--◇Condition:  [2]  [ CSelf1[コマンド位置] == 4   ] Case↓
- |■Load DB(Var):  CSelf99[戦闘コマンド番号] = VarDB[ "Allies":CSelf0[主人公ID]:"[Command 5]" ] (0:-:50) 
- |■
--◇Condition:  [3]  [ CSelf1[コマンド位置] == 5   ] Case↓
- |■Load DB(Var):  CSelf99[戦闘コマンド番号] = VarDB[ "Allies":CSelf0[主人公ID]:"[Command 6]" ] (0:-:51) 
+-◇Condition:  [3]  [ CSelf1[Command Slot] == 2   ] Case↓
+ |■Load DB(Var):  CSelf99[Command ID] = VarDB[ "Allies":CSelf0[Ally ID]:"[Command 3]" ] (0:-:48) 
  |■
 ◇End◇
-■Condition (Number):   [1] CSelf1[コマンド位置] ==  6  /  [2] CSelf1[コマンド位置] ==  7  
--◇Condition:  [1]  [ CSelf1[コマンド位置] == 6   ] Case↓
- |■Load DB(Var):  CSelf99[戦闘コマンド番号] = VarDB[ "Allies":CSelf0[主人公ID]:"[Command 7]" ] (0:-:52) 
+■Condition (Number):   [1] CSelf1[Command Slot] ==  3  /  [2] CSelf1[Command Slot] ==  4  /  [3] CSelf1[Command Slot] ==  5  
+-◇Condition:  [1]  [ CSelf1[Command Slot] == 3   ] Case↓
+ |■Load DB(Var):  CSelf99[Command ID] = VarDB[ "Allies":CSelf0[Ally ID]:"[Command 4]" ] (0:-:49) 
  |■
--◇Condition:  [2]  [ CSelf1[コマンド位置] == 7   ] Case↓
- |■Load DB(Var):  CSelf99[戦闘コマンド番号] = VarDB[ "Allies":CSelf0[主人公ID]:"[Command 8]" ] (0:-:53) 
+-◇Condition:  [2]  [ CSelf1[Command Slot] == 4   ] Case↓
+ |■Load DB(Var):  CSelf99[Command ID] = VarDB[ "Allies":CSelf0[Ally ID]:"[Command 5]" ] (0:-:50) 
+ |■
+-◇Condition:  [3]  [ CSelf1[Command Slot] == 5   ] Case↓
+ |■Load DB(Var):  CSelf99[Command ID] = VarDB[ "Allies":CSelf0[Ally ID]:"[Command 6]" ] (0:-:51) 
+ |■
+◇End◇
+■Condition (Number):   [1] CSelf1[Command Slot] ==  6  /  [2] CSelf1[Command Slot] ==  7  
+-◇Condition:  [1]  [ CSelf1[Command Slot] == 6   ] Case↓
+ |■Load DB(Var):  CSelf99[Command ID] = VarDB[ "Allies":CSelf0[Ally ID]:"[Command 7]" ] (0:-:52) 
+ |■
+-◇Condition:  [2]  [ CSelf1[Command Slot] == 7   ] Case↓
+ |■Load DB(Var):  CSelf99[Command ID] = VarDB[ "Allies":CSelf0[Ally ID]:"[Command 8]" ] (0:-:53) 
  |■
 ◇End◇
 ■

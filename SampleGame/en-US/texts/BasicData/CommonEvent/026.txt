@@ -268,56 +268,56 @@ WoditorEvCOMMAND_END
 ■Condition (Number):   [1] CSelf1[Which Position?] <=  -1  /  [2] CSelf1[Which Position?] >=  1  
 -◇Condition:  [1]  [ CSelf1[Which Position?] <= -1   ] Case↓
  |▼ Case for checking if the specified command is anywhere.
- |■Call Event [Name]: CSelf20[Command ID] = ["X[Map]Get Battle Command"] <CommonEv 78>  / CSelf0[Target Ally] / 0:コマンド1
+ |■Call Event [Name]: CSelf20[Command ID] = ["X[Map]Get Battle Command"] <CommonEv 78>  / CSelf0[Target Ally] / 0:Command 1
  |■Condition (Number):   [1] CSelf20[Command ID] ==  CSelf2[Command]  
  |-◇Condition:  [1]  [ CSelf20[Command ID] == CSelf2[Command]   ] Case↓
  | |■Set Variable: CSelf30[Command Position] = 1 + 0 
  | |■Exit Event
  | |■
  |◇End◇
- |■Call Event [Name]: CSelf20[Command ID] = ["X[Map]Get Battle Command"] <CommonEv 78>  / CSelf0[Target Ally] / 1:コマンド2
+ |■Call Event [Name]: CSelf20[Command ID] = ["X[Map]Get Battle Command"] <CommonEv 78>  / CSelf0[Target Ally] / 1:Command 2
  |■Condition (Number):   [1] CSelf20[Command ID] ==  CSelf2[Command]  
  |-◇Condition:  [1]  [ CSelf20[Command ID] == CSelf2[Command]   ] Case↓
  | |■Set Variable: CSelf30[Command Position] = 2 + 0 
  | |■Exit Event
  | |■
  |◇End◇
- |■Call Event [Name]: CSelf20[Command ID] = ["X[Map]Get Battle Command"] <CommonEv 78>  / CSelf0[Target Ally] / 2:コマンド3
+ |■Call Event [Name]: CSelf20[Command ID] = ["X[Map]Get Battle Command"] <CommonEv 78>  / CSelf0[Target Ally] / 2:Command 3
  |■Condition (Number):   [1] CSelf20[Command ID] ==  CSelf2[Command]  
  |-◇Condition:  [1]  [ CSelf20[Command ID] == CSelf2[Command]   ] Case↓
  | |■Set Variable: CSelf30[Command Position] = 3 + 0 
  | |■Exit Event
  | |■
  |◇End◇
- |■Call Event [Name]: CSelf20[Command ID] = ["X[Map]Get Battle Command"] <CommonEv 78>  / CSelf0[Target Ally] / 3:コマンド4
+ |■Call Event [Name]: CSelf20[Command ID] = ["X[Map]Get Battle Command"] <CommonEv 78>  / CSelf0[Target Ally] / 3:Command 4
  |■Condition (Number):   [1] CSelf20[Command ID] ==  CSelf2[Command]  
  |-◇Condition:  [1]  [ CSelf20[Command ID] == CSelf2[Command]   ] Case↓
  | |■Set Variable: CSelf30[Command Position] = 4 + 0 
  | |■Exit Event
  | |■
  |◇End◇
- |■Call Event [Name]: CSelf20[Command ID] = ["X[Map]Get Battle Command"] <CommonEv 78>  / CSelf0[Target Ally] / 4:コマンド5
+ |■Call Event [Name]: CSelf20[Command ID] = ["X[Map]Get Battle Command"] <CommonEv 78>  / CSelf0[Target Ally] / 4:Command 5
  |■Condition (Number):   [1] CSelf20[Command ID] ==  CSelf2[Command]  
  |-◇Condition:  [1]  [ CSelf20[Command ID] == CSelf2[Command]   ] Case↓
  | |■Set Variable: CSelf30[Command Position] = 5 + 0 
  | |■Exit Event
  | |■
  |◇End◇
- |■Call Event [Name]: CSelf20[Command ID] = ["X[Map]Get Battle Command"] <CommonEv 78>  / CSelf0[Target Ally] / 5:コマンド6
+ |■Call Event [Name]: CSelf20[Command ID] = ["X[Map]Get Battle Command"] <CommonEv 78>  / CSelf0[Target Ally] / 5:Command 6
  |■Condition (Number):   [1] CSelf20[Command ID] ==  CSelf2[Command]  
  |-◇Condition:  [1]  [ CSelf20[Command ID] == CSelf2[Command]   ] Case↓
  | |■Set Variable: CSelf30[Command Position] = 6 + 0 
  | |■Exit Event
  | |■
  |◇End◇
- |■Call Event [Name]: CSelf20[Command ID] = ["X[Map]Get Battle Command"] <CommonEv 78>  / CSelf0[Target Ally] / 6:コマンド7
+ |■Call Event [Name]: CSelf20[Command ID] = ["X[Map]Get Battle Command"] <CommonEv 78>  / CSelf0[Target Ally] / 6:Command 7
  |■Condition (Number):   [1] CSelf20[Command ID] ==  CSelf2[Command]  
  |-◇Condition:  [1]  [ CSelf20[Command ID] == CSelf2[Command]   ] Case↓
  | |■Set Variable: CSelf30[Command Position] = 7 + 0 
  | |■Exit Event
  | |■
  |◇End◇
- |■Call Event [Name]: CSelf20[Command ID] = ["X[Map]Get Battle Command"] <CommonEv 78>  / CSelf0[Target Ally] / 7:コマンド8
+ |■Call Event [Name]: CSelf20[Command ID] = ["X[Map]Get Battle Command"] <CommonEv 78>  / CSelf0[Target Ally] / 7:Command 8
  |■Condition (Number):   [1] CSelf20[Command ID] ==  CSelf2[Command]  
  |-◇Condition:  [1]  [ CSelf20[Command ID] == CSelf2[Command]   ] Case↓
  | |■Set Variable: CSelf30[Command Position] = 8 + 0 
