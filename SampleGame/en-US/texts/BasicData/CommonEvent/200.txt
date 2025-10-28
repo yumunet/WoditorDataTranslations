@@ -388,7 +388,7 @@ WoditorEvCOMMAND_END
  | | | | |●Label Point [習得技能表示] <<<<<<<<<<<<<<<<<<<<<<<<★
  | | | | |■Call Event [Name]: CSelf13[続行フラグ] = ["X[Bat]Draw Rewards Screen"] <CommonEv 186>  / 3:表示（習得技能）
  | | | | |▼ キー待ち
- | | | | |■Key Input: CSelf12[一時変数Ｃ] [Wait for Input <!>]  4-Dir. Confirm (10) Cancel (11) Sub-Key (12)
+ | | | | |■Key Input: CSelf12[一時変数Ｃ] [Wait for Input <!>]  4-Dir Confirm (10) Cancel (11) Sub-Key (12)
  | | | | |■Wait: 1 Frames
  | | | | |■Condition (Number):   [1] CSelf13[続行フラグ] ==  1  
  | | | | |-◇Condition:  [1]  [ CSelf13[続行フラグ] == 1   ] Case↓

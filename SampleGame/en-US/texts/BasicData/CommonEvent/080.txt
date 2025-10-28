@@ -214,7 +214,7 @@ WoditorEvCOMMAND_END
 ▼  
 ▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
-■Party Images: Erase All Members
+■Party Sprites: Erase All Members
 ■Load DB(Var):  CSelf22[パーティーメンバー数] = VarDB[ "Base System Variables":"Current Party Size":0 ] (18:4:Number) 
 ■Load DB(Var):  CSelf23[最大パーティ人数] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
 ■Set Variable: CSelf21[処理対象] = -1 + 0 
@@ -232,7 +232,7 @@ WoditorEvCOMMAND_END
  |■Load DB(Var):  CSelf9 = VarDB[ "Allies":CSelf20[処理主人公ID]:"Character Image" ] (0:-:2) 
  |■Condition (String):   [1] CSelf9 Is Not Equal to ""
  |-◇Condition:  [1] [ CSelf9 Is Not Equal to "" ] Case↓
- | |■Party Images: Insert [CSelf9] Before Member CSelf10[一時変数A]
+ | |■Party Sprites: Insert [CSelf9] Before Member CSelf10[一時変数A]
  | |■
  |◇End◇
  |■

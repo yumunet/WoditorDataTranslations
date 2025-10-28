@@ -618,7 +618,7 @@ WoditorEvCOMMAND_END
  | |■
  |◇Loop End Point◇◇
  |■Wait: 1 Frames
- |■Key Input: CSelf20[キー入力１] [Wait for Input <!>]  4-Dir. Confirm (10) Cancel (11) Sub-Key (12)
+ |■Key Input: CSelf20[キー入力１] [Wait for Input <!>]  4-Dir Confirm (10) Cancel (11) Sub-Key (12)
  |■Condition (Number):   [1] CSelf20[キー入力１] ==  10  /  [2] CSelf20[キー入力１] ==  11  /  [3] CSelf20[キー入力１] ==  2  
  |-◇Condition:  [1]  [ CSelf20[キー入力１] == 10   ] Case↓
  | |▼ 決定キー　ここから右欄から装備を選ぶ処理

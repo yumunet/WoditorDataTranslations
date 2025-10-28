@@ -582,7 +582,7 @@ WoditorEvCOMMAND_END
  |■Load DB(User):  CSelf9[効果音ファイル] = UserDB[ "Items":CSelf30[アイテム番号]:"Sound Effect on Use" ] (2:-:20) 
  |■Condition (String):   [1] CSelf9[効果音ファイル] Is Not Equal to ""
  |-◇Condition:  [1] [ CSelf9[効果音ファイル] Is Not Equal to "" ] Case↓
- | |■Sound: SE File [\cself[9]] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
+ | |■Sound: SE File [\cself[9]] Vol 100% Pitch 100% (0 Channel) Play / Delay: 0 Frames
  | |■
  |-◇Else
  | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound

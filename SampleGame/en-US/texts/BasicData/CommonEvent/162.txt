@@ -320,7 +320,7 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf12[一時変数A] = V[CSelf13[チェック対象]] + 10 
  |■Call Event [Name]: ["X[Bat]Enemy: Draw One"] <CommonEv 179>  / 12:カーソルＯＦＦ / -1
  |■Call Event [Name]: ["X[Bat]Enemy: Draw One"] <CommonEv 179>  / 10:カーソルＯＮ / CSelf12[一時変数A]
- |■Key Input: CSelf20[キー入力１] [Wait for Input <!>]  4-Dir. Confirm (10) Cancel (11)
+ |■Key Input: CSelf20[キー入力１] [Wait for Input <!>]  4-Dir Confirm (10) Cancel (11)
  |■Condition (Number):   [1] CSelf20[キー入力１] ==  10  /  [2] CSelf20[キー入力１] ==  11  /  [3] CSelf20[キー入力１] ==  2  
  |-◇Condition:  [1]  [ CSelf20[キー入力１] == 10   ] Case↓
  | |▼ 決定キー

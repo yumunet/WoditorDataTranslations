@@ -387,7 +387,7 @@ WoditorEvCOMMAND_END
 ■Condition (String):   [1] CSelf8[効果音] Is Not Equal to ""
 -◇Condition:  [1] [ CSelf8[効果音] Is Not Equal to "" ] Case↓
  |■Set Variable: CSelf15[効果音ディレイ] Lower Bound= 0 + 0 
- |■Sound: SE File [\cself[8]] Vol 100% Freq 100% (0 Channel) Play / Delay: CSelf15[効果音ディレイ] Frames
+ |■Sound: SE File [\cself[8]] Vol 100% Pitch 100% (0 Channel) Play / Delay: CSelf15[効果音ディレイ] Frames
  |■
 ◇End◇
 ■Picture [Reset Delay]: CSelf25[一時ピクチャ番号] 

@@ -414,7 +414,7 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf23[前回主人公座標Y] = CSelf21[現在主人公座標Y] + 0 
  |■
 -◇Else
- |■Key Input: CSelf3 [Normal Input]  4-Dir. Cancel (11)
+ |■Key Input: CSelf3 [Normal Input]  4-Dir Cancel (11)
  |■
 ◇End◇
 ▼ 直前のイベント実行中がオンなら10フレームはメニューを出さない

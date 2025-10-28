@@ -314,7 +314,7 @@ WoditorEvCOMMAND_END
  |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0
  |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 1:カーソルON（対象位置　位置-1なら全部） / CSelf10[選択箇所] / 0
  |■Wait: 1 Frames
- |■Key Input: CSelf20[キー入力１] [Wait for Input <!>]  4-Dir. Confirm (10) Cancel (11)
+ |■Key Input: CSelf20[キー入力１] [Wait for Input <!>]  4-Dir Confirm (10) Cancel (11)
  |■Condition (Number):   [1] CSelf20[キー入力１] ==  10  /  [2] CSelf20[キー入力１] ==  11  /  [3] CSelf20[キー入力１] ==  2  
  |-◇Condition:  [1]  [ CSelf20[キー入力１] == 10   ] Case↓
  | |▼ 決定キー

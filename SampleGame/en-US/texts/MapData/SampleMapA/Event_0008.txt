@@ -79,7 +79,7 @@ WoditorEvCOMMAND_END
  |▼ Set Self Variable 0 to 1.
  |▼ (This page's condition is no longer met, and the event is no longer displayed.)
  |■Set Variable: This Ev Self0 = 1 + 0 
- |■Sound: SE File [SE/System_Get2_wolf.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
+ |■Sound: SE File [SE/System_Get2_wolf.ogg] Vol 100% Pitch 100% (0 Channel) Play / Delay: 0 Frames
  |■Show Message: @2\nP. G. Edy has joined the party!
  |▼ Set the Cook Appearance variable to 1.
  |■Set Variable: V0[[Sample Game] Cook Appears] = 1 + 0 

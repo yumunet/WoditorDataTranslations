@@ -100,7 +100,7 @@ WoditorEvCOMMAND_END
  | |■Adjust Color:  R100 G100 B100 / 15 Frames
  | |■Wait: 20 Frames
  | |■Set Variable: This Ev Self0 = 1 + 0 
- | |■Sound: SE File [SE/System_Get3_wolf.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
+ | |■Sound: SE File [SE/System_Get3_wolf.ogg] Vol 100% Pitch 100% (0 Channel) Play / Delay: 0 Frames
  | |■Call Event: Common 0: [ ○ Change Items ] / 20:WOLF RPG Editor / 1 / 0:No
  | |■Show Message: Wolfarl's party obtained WOLF RPG Editor!
  | |■Show Message: You can use this on the map! Give it a try!

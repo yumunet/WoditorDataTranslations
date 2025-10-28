@@ -862,7 +862,7 @@ WoditorEvCOMMAND_END
  |●Label Point [キー処理開始] <<<<<<<<<<<<<<<<<<<<<<<<★
  |■Wait: 1 Frames
  |■Debug Text: \cself[10]
- |■Key Input: CSelf20[キー入力１] [Wait for Input <!>]  4-Dir. Confirm (10) Cancel (11)
+ |■Key Input: CSelf20[キー入力１] [Wait for Input <!>]  4-Dir Confirm (10) Cancel (11)
  |●Label Point [基本キー処理] <<<<<<<<<<<<<<<<<<<<<<<<★
  |■Set Variable: CSelf13[戻る(-1) 次へ(1) 決定(2)] = 0 + 0 
  |■Condition (Number):   [1] CSelf20[キー入力１] ==  10  /  [2] CSelf20[キー入力１] ==  11  /  [3] CSelf20[キー入力１] ==  2  
@@ -1257,7 +1257,7 @@ WoditorEvCOMMAND_END
  | | |■Set Variable: CSelf24[最大リピートカウント] = Sys16:Direction Key Repeat Next Wait (Frames) + 0 
  | | |■Loop Start
  | | | |■Wait: 1 Frames
- | | | |■Key Input: CSelf20[キー入力１] [Normal Input]  4-Dir.
+ | | | |■Key Input: CSelf20[キー入力１] [Normal Input]  4-Dir
  | | | |■Key Input: CSelf21[キー入力２] [Normal Input] Keyboard (100+)
  | | | |■Condition (Number):   [1] CSelf20[キー入力１] !=  0  
  | | | |-◇Condition:  [1]  [ CSelf20[キー入力１] != 0   ] Case↓
@@ -1333,7 +1333,7 @@ WoditorEvCOMMAND_END
  | | |■Set Variable: CSelf24[最大リピートカウント] = Sys16:Direction Key Repeat Next Wait (Frames) + 0 
  | | |■Loop Start
  | | | |■Wait: 1 Frames
- | | | |■Key Input: CSelf20[キー入力１] [Normal Input]  4-Dir.
+ | | | |■Key Input: CSelf20[キー入力１] [Normal Input]  4-Dir
  | | | |■Key Input: CSelf21[キー入力２] [Normal Input] Pad (300+)
  | | | |■Condition (Number):   [1] CSelf20[キー入力１] !=  0  
  | | | |-◇Condition:  [1]  [ CSelf20[キー入力１] != 0   ] Case↓

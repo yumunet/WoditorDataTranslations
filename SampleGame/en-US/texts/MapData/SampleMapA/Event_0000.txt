@@ -94,7 +94,7 @@ WoditorEvCOMMAND_END
  | |▼ causing this event to disappear (become invisible).
  | |■Set Variable: This Ev Self0 = 1 + 0 
  | |▼ After it disappears, display the join message.
- | |■Sound: SE File [SE/System_Get2_wolf.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
+ | |■Sound: SE File [SE/System_Get2_wolf.ogg] Vol 100% Pitch 100% (0 Channel) Play / Delay: 0 Frames
  | |■Show Message: @3\nYuichi the chicken has joined the party!
  | |■Wait: 10 Frames
  | |■Show Message: @3\nYuichi\n  Oh, when I am in battle,\n  I can act on my own!

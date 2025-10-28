@@ -60,7 +60,7 @@ WoditorEvCOMMAND_END
  |■Show Message: It's a full recovery.\nBeedle-deedle-dee...
  |■Adjust Color: (Flash) R150 G200 B150 / 20 Frames
  |■Call Event: Common 4: [ ○ Recover or Damage ] / 7:Full Recovery / -1:Whole Party / 15
- |■Sound: SE File [SE/Effect_Healing1_panop.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
+ |■Sound: SE File [SE/Effect_Healing1_panop.ogg] Vol 100% Pitch 100% (0 Channel) Play / Delay: 0 Frames
  |■
 -◇Case: Choice [2] Do nothing                               ↓
  |■

@@ -471,7 +471,7 @@ WoditorEvCOMMAND_END
  | |▼ Turn on the pixel movement.
  | |■Set Variable: CSelf0[Mode] = 0 + 0 
  | |▼ Move followers to the leader's position.
- | |■Party Images: Warp All Followers to Leader
+ | |■Party Sprites: Warp All Followers to Leader
  | |▼ Start parallel execution.
  | |■Set Variable: CSelf99[Activation Flag] = 1 + 0 
  | |■Exit Event
@@ -490,7 +490,7 @@ WoditorEvCOMMAND_END
  | |■Effect Character: Follower 4[Force Walk Animation] => OFF 
  | |■Effect Character: Follower 5[Force Walk Animation] => OFF 
  | |▼ Move followers to the leader's position.
- | |■Party Images: Warp All Followers to Leader
+ | |■Party Sprites: Warp All Followers to Leader
  | |▼ Reset pixel offsets to 0.
  | |▼   If not reset, it may get stuck in unexpected places or prevent passage through spaces one square wide.
  | |■Set Variable: CSelf10[Destination Variable] = 9180007 + 0 

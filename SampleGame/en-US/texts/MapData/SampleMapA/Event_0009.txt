@@ -111,7 +111,7 @@ WoditorEvCOMMAND_END
  |■Show Message: Okay, just gimme a sec!
  |■Show Message: *shff, shff, shff-shff*
  |■Show Message: Here's your order!\nEat this, and you can use a new command!
- |■Sound: SE File [SE/System_Get2_wolf.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
+ |■Sound: SE File [SE/System_Get2_wolf.ogg] Vol 100% Pitch 100% (0 Channel) Play / Delay: 0 Frames
  |■Show Message: * Wolfarl learned Attack All!\n  This command uses 5 HP to attack all enemies!
  |▼ Learn battle command.
  |■Call Event: Common 13: [ ○ Change Battle Commands ] / 12:Wolfarl / -10:Empty Slot (Front) / 12:Attack All

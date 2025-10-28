@@ -292,12 +292,12 @@ WoditorEvCOMMAND_END
  | |▼ you can convert it to a number!
  | |■Set Variable: This Ev Self1 = S0[[Sample] Temporary String] + 0 
  | |■Show Message: Well, let's turn on Common Event \self[1]\n"■Toggle Pixel Movement"...\n*Click* ON!
- | |■Sound: SE File [SystemFile/SE_Get.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
+ | |■Sound: SE File [SystemFile/SE_Get.ogg] Vol 100% Pitch 100% (0 Channel) Play / Delay: 0 Frames
  | |■Show Message: Alright, you can now move in pixels!\nEnjoy the pixel movement mode — freedom from\ntile-based movement!
  | |■Call Event [Name]: ["■Toggle Pixel Movement"] <CommonEv 39>  / 1:Turn On
  | |■
  |-◇Condition:  [2]  [ This Ev Self0 == 1   ] Case↓
- | |■Sound: SE File [SystemFile/SE_LevelUp.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
+ | |■Sound: SE File [SystemFile/SE_LevelUp.ogg] Vol 100% Pitch 100% (0 Channel) Play / Delay: 0 Frames
  | |■Call Event [Name]: ["■Toggle Pixel Movement"] <CommonEv 39>  / -1:Turn Off
  | |■Show Message: Pixel movement, off!\nIt was kinda fun, wasn't it?
  | |■Show Message: But when pixel movement is on, it's tricky to pass\nthrough gaps of one tile. So, when you're making\na game, try not to make the paths too narrow!
@@ -359,7 +359,7 @@ WoditorEvCOMMAND_END
  |■Show Message: Yeah! It has a feature that lets you capture the\ncurrent screen as a picture!
  |■Show Message: It's easy to use!\nIf you put <SCREENSHOT> in the picture file name,\nyou can use the current screen as a picture just like\na normal image!
  |■Show Message: I'll try it, so watch!\nHere goes!
- |■Sound: SE File [SystemFile/SE_Get.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
+ |■Sound: SE File [SystemFile/SE_Get.ogg] Vol 100% Pitch 100% (0 Channel) Play / Delay: 0 Frames
  |■Effect Picture: 1 [Flash] R40/G40/B40  [10] Frames
  |■Picture Show: 1 [Top-Left] File [<SCREENSHOT>] X:0 Y:0 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 50% / Color R[100] G[100] B[100]
  |■Picture Move: 1  X:20 Y:20 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 20% / Color R[100] G[100] B[100]
@@ -370,7 +370,7 @@ WoditorEvCOMMAND_END
  |■Picture Erase: 1  / 10(0) Frames
  |■Show Message: For example, you can use it like this...
  |■Wait: 12 Frames
- |■Sound: SE File [SystemFile/SE_Encount.ogg] Vol 100% Freq 100% (0 Channel) Play / Delay: 0 Frames
+ |■Sound: SE File [SystemFile/SE_Encount.ogg] Vol 100% Pitch 100% (0 Channel) Play / Delay: 0 Frames
  |■Picture Show: 1 [Center] File [<SCREENSHOT>] X:160 Y:120 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 50% / Color R[100] G[100] B[100]
  |■Picture Move: 1  X:160 Y:120 / 30(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 7200 / Zoom 300% / Color R[100] G[100] B[100]
  |■Picture Show: 2 [Top-Left] Window [<SQUARE>] Size [320,240] X:0 Y:0 / 30(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
@@ -391,7 +391,7 @@ WoditorEvCOMMAND_END
  |■Effect Picture: 2 [Shake] Shake X 4 / Shake Y 0 / 100000 Times  [1] Frames
  |■Mask: [Enable Picture Mask] => ID 1 to 2 
  |▼ Explosion sound
- |■Sound: SE File [SE/Effect_Bomb1_panop.ogg] Vol 60% Freq 70% (0 Channel) Play / Delay: 0 Frames
+ |■Sound: SE File [SE/Effect_Bomb1_panop.ogg] Vol 60% Pitch 70% (0 Channel) Play / Delay: 0 Frames
  |▼ Gradually expand the visible range of the mask from the center.
  |■Set Variable: This Ev Self4 = 0 + 0 
  |■Repeat Loop [ 30 ] Times
