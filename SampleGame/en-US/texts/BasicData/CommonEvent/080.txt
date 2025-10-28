@@ -1,5 +1,5 @@
 COMMON_ID=80
-COMMON_NAME=X[Map]Reset Party Images
+COMMON_NAME=X[Map]Update Party Sprites
 COMMAND_COLOR=6
 TRIGGER=32
 TRIGGER_TARGET=2000000
@@ -190,7 +190,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<1>()("パーティー情報DBからキャラIDを取得する")
 [121][4,0]<1>(1600010,1600021,1,0)()
 [250][5,4]<1>(3,0,1600010,69632,1600020)("","Party","","")
-[250][5,4]<1>(0,1600020,2,331776,1600009)("","Allies","","Character Image")
+[250][5,4]<1>(0,1600020,2,331776,1600009)("","Allies","","Character Sprite")
 [112][2,4]<1>(1,270035465)("","","","")
 [401][1,0]<1>(1)()
 [270][3,0]<2>(257,1600010,1600009)()
@@ -229,7 +229,7 @@ WoditorEvCOMMAND_END
  |▼ パーティー情報DBからキャラIDを取得する
  |■Set Variable: CSelf10[一時変数A] = CSelf21[処理対象] + 1 
  |■Load DB(Var):  CSelf20[処理主人公ID] = VarDB[ "Party":0:CSelf10[一時変数A] ] (6:Main Settings:-) 
- |■Load DB(Var):  CSelf9 = VarDB[ "Allies":CSelf20[処理主人公ID]:"Character Image" ] (0:-:2) 
+ |■Load DB(Var):  CSelf9 = VarDB[ "Allies":CSelf20[処理主人公ID]:"Character Sprite" ] (0:-:2) 
  |■Condition (String):   [1] CSelf9 Is Not Equal to ""
  |-◇Condition:  [1] [ CSelf9 Is Not Equal to "" ] Case↓
  | |■Party Sprites: Insert [CSelf9] Before Member CSelf10[一時変数A]

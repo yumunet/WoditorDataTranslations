@@ -328,7 +328,7 @@ WoditorEvCOMMAND_START
 [160][2,0]<0>(-1,65546)()
 [201][1,0]<0>(-2)()(2,[29,3])
 [300][2,1]<0>(0,0)("X[Map]Update Party Info")
-[300][2,1]<0>(0,0)("X[Map]Reset Party Images")
+[300][2,1]<0>(0,0)("X[Map]Update Party Sprites")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<0>()("Convert character equipments to Weapons (ID 20000+) or Armor (ID 30000+).")
@@ -574,7 +574,7 @@ WoditorEvCOMMAND_END
 ■Set Transition:  [Instant] 10 Frames (Wait)
 ■Move Route: [Skip]  Leader / Set Move Speed -> 3
 ■Call Event [Name]: ["X[Map]Update Party Info"] <CommonEv 79> 
-■Call Event [Name]: ["X[Map]Reset Party Images"] <CommonEv 80> 
+■Call Event [Name]: ["X[Map]Update Party Sprites"] <CommonEv 80> 
 ▼  
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ Convert character equipments to Weapons (ID 20000+) or Armor (ID 30000+).

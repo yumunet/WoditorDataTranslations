@@ -34,7 +34,7 @@ CHOICE_STR_NUM=10
 CHOICE_STR_0_NUM=3
 CHOICE_STR_0_0=Add Member
 CHOICE_STR_0_1=Remove Member
-CHOICE_STR_0_2=Update Char. Images
+CHOICE_STR_0_2=Update Character Sprites
 CHOICE_STR_1_NUM=0
 CHOICE_STR_2_NUM=0
 CHOICE_STR_3_NUM=0
@@ -223,8 +223,8 @@ WoditorEvCOMMAND_START
 [499][0,0]<0>()()
 [103][0,1]<0>()("Push party to front.")
 [300][2,1]<0>(0,0)("X[Map]Update Party Info")
-[103][0,1]<0>()("Reset images.")
-[300][2,1]<0>(0,0)("X[Map]Reset Party Images")
+[103][0,1]<0>()("Update sprites.")
+[300][2,1]<0>(0,0)("X[Map]Update Party Sprites")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<0>()("If in battle, reflect changes there as well.")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
@@ -358,8 +358,8 @@ WoditorEvCOMMAND_END
 ◇End◇
 ▼ Push party to front.
 ■Call Event [Name]: ["X[Map]Update Party Info"] <CommonEv 79> 
-▼ Reset images.
-■Call Event [Name]: ["X[Map]Reset Party Images"] <CommonEv 80> 
+▼ Update sprites.
+■Call Event [Name]: ["X[Map]Update Party Sprites"] <CommonEv 80> 
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ If in battle, reflect changes there as well.
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■

@@ -39,7 +39,7 @@ OPTION_VAL_2=0
 COMMAND_NUM=7
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("When Self Variable 0 is set to 1, Page 2 runs and the image changes.")
+[103][0,1]<0>()("When Self Variable 0 is set to 1, Page 2 runs and the sprite changes.")
 [121][4,0]<0>(1100000,1,0,0)()
 [103][0,1]<0>()("When the chest is opened, execute the item obtain process and display a message.")
 [140][6,1]<0>(33554464,0,0,0,100,100)("SE/System_Get2_wolf.ogg")
@@ -49,7 +49,7 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ When Self Variable 0 is set to 1, Page 2 runs and the image changes.
+▼ When Self Variable 0 is set to 1, Page 2 runs and the sprite changes.
 ■Set Variable: This Ev Self0 = 1 + 0 
 ▼ When the chest is opened, execute the item obtain process and display a message.
 ■Sound: SE File [SE/System_Get2_wolf.ogg] Vol 100% Pitch 100% (0 Channel) Play / Delay: 0 Frames
