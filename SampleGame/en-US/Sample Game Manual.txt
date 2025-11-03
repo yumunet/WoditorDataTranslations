@@ -71,7 +71,7 @@ Resource Contributors
   ぴぽ(Pipo) (https://pipoya.net/blog/)
 
 - Enemy Image Resources
-  ＧＤ(GD) (From WOLF RPG Editor Wiki)
+  GD (From WOLF RPG Editor Wiki)
   * When distributing these resources, you must include the creator's name.
     When redistributing them as resources or modifying and distributing them as resources,
     please be sure to include the creator's name.
@@ -109,7 +109,7 @@ Resource Contributors
   ミンミン(Minmin), 計架(Keika), まーりん(Maarin), もりもる(Morimoru),
   沙木恵(Saboku Megumi), まる太(Maruta)
 
-- Mask Images, Examples of Mask Image Usage
+- Mask Images, Mask Image Usage Examples
   K-Shin07
 
 ―――――――――――――――――――――――――――――――――――――――――
@@ -240,9 +240,9 @@ Copyright Notice for Libraries Used (Updated on 2/7/2021)
 ◎If you encounter bugs or other issues in this game, please contact via the link below.
   Please visit the bug report thread on the forum.
 ――――――――――――――――――――――-----
-●WOLF RPG Editor Official Website:
+●WOLF RPG Editor Official Website (Japanese):
 https://silversecond.com/WolfRPGEditor/
-●Developer Website: SilverSecond
+●Developer Website: SilverSecond (Japanese)
 https://silversecond.net/
 ――――――――――――――――――――――-----
 
