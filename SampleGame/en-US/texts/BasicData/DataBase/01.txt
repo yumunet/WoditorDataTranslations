@@ -23,8 +23,8 @@ DATA_NUM=34
 TYPENAME=┗ Animations
 ITEMNAME_NUM=15
 ITEMNAME0=Image File
-ITEMNAME1=Image [Horizontal] Divisions
-ITEMNAME2=Image [Vertical] Divisions
+ITEMNAME1=Image Horizontal Divisions
+ITEMNAME2=Image Vertical Divisions
 ITEMNAME3=Total Animation Patterns
 ITEMNAME4=1 Pattern Wait [Frames]
 ITEMNAME5=Blend Mode
@@ -222,7 +222,7 @@ DEFAULT_VAL_12=0
 DEFAULT_VAL_13=0
 DEFAULT_VAL_14=-1
 <<--CSV_START-->>
-"Image File","Image [Horizontal] Divisions","Image [Vertical] Divisions","Total Animation Patterns","1 Pattern Wait [Frames]","Blend Mode","Zoom","Display Option","Damage Display Wait [Frames","Sound Effect","Sound Effect Delay [Frames]","[Color] R Adjust (±100)","[Color] G Adjust (±100)","[Color] B Adjust (±100)","Process by [Ignore Settings]",
+"Image File","Image Horizontal Divisions","Image Vertical Divisions","Total Animation Patterns","1 Pattern Wait [Frames]","Blend Mode","Zoom","Display Option","Damage Display Wait [Frames","Sound Effect","Sound Effect Delay [Frames]","[Color] R Adjust (±100)","[Color] G Adjust (±100)","[Color] B Adjust (±100)","Process by [Ignore Settings]",
 "BattleEffect/Attack_Slash01_panop.png",5,1,5,2,1,100,0,1,"",-1,0,0,0,-1,<<!--DATANAME--!>>Slice,
 "BattleEffect/Attack_Slash02_panop.png",8,2,14,1,1,100,0,0,"",0,0,0,0,-1,<<!--DATANAME--!>>Slice 2,
 "BattleEffect/Attack_Slash03_panop.png",4,1,4,3,1,100,0,0,"",0,0,0,0,-1,<<!--DATANAME--!>>Slice 3,

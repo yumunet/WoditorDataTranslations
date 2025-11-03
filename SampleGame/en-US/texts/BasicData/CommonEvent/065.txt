@@ -298,7 +298,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<1>()()
 [111][7,0]<1>(2,1600020,10,2,1600020,11,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("Confirm key: If selectable, assign the currently selected item ID and end.")
+[103][0,1]<2>()("Confirm key: If selectable, store the currently selected item ID and end.")
 [250][5,4]<2>(19,1600011,2,69632,1600012)("","Universal Window Items","","")
 [111][4,0]<2>(17,1600012,1,2)()
 [401][1,0]<2>(1)()
@@ -544,7 +544,7 @@ WoditorEvCOMMAND_END
  |◇End◇
  |■Condition (Number):   [1] CSelf20[Pressed Key] ==  10  /  [2] CSelf20[Pressed Key] ==  11  
  |-◇Condition:  [1]  [ CSelf20[Pressed Key] == 10   ] Case↓
- | |▼ Confirm key: If selectable, assign the currently selected item ID and end.
+ | |▼ Confirm key: If selectable, store the currently selected item ID and end.
  | |■Load DB(Var):  CSelf12[Temp Variable A] = VarDB[ "Universal Window Items":CSelf11[Cursor Position]:2 ] (19:-:Selectable? [1:Yes]) 
  | |■Condition (Number):   [1] CSelf12[Temp Variable A] ==  1  
  | |-◇Condition:  [1]  [ CSelf12[Temp Variable A] == 1   ] Case↓

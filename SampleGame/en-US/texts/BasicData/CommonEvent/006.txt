@@ -174,7 +174,7 @@ CSELF_NAME_99=
 COMMAND_NUM=5
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("Update the character 's data in the Variable DB.")
+[103][0,1]<0>()("Update the character's data in the Variable DB.")
 [300][5,1]<0>(0,18,1600000,1600001,1600005)("X[Map]Change Parameter (String)")
 [103][0,1]<0>()("If the corresponding character is in battle, store there as well.")
 [300][3,1]<0>(0,1,1600000)("X[Bat]Update Ally")
@@ -182,7 +182,7 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ Update the character 's data in the Variable DB.
+▼ Update the character's data in the Variable DB.
 ■Call Event [Name]: ["X[Map]Change Parameter (String)"] <CommonEv 72>  / CSelf0[Target Ally] / CSelf1[What to Change?] / CSelf5[New String]
 ▼ If the corresponding character is in battle, store there as well.
 ■Call Event [Name]: ["X[Bat]Update Ally"] <CommonEv 142>  / CSelf0[Target Ally]
