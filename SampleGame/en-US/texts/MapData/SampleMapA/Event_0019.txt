@@ -54,14 +54,14 @@ WoditorEvCOMMAND_START
 [122][3,1]<1>(3000000,0,0)("I want to stop pixel movement")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
-[101][0,1]<0>()("I'm your rival, Taiga the tiger girl!<\n>I'm gonna show you the new features in Version 3!")
+[101][0,1]<0>()("Here comes your rival, Taiga the tiger girl!<\n>I'm gonna show you the new Version 3 features!")
 [180][1,0]<0>(1)()
-[102][1,7]<0>(7)("\s[0]","How is pixel movement processing created?","I heard it supports Unicode?","You can change colors with filter effects?","You can capture the screen as a picture?","I want to see a cut-in with mask processing!","Please explain the cut-in using the mask")
+[102][1,7]<0>(7)("\s[0]","How is pixel movement made?","I heard it supports Unicode?","You can change colors with filter effects?!","You can capture the screen as a picture?!","I want to see a cut-in using a mask!","Please explain the cut-in using a mask")
 [401][1,0]<0>(2)()
 [111][7,0]<1>(2,1100000,0,2,1100000,1,2)()
 [401][1,0]<1>(1)()
 [103][0,1]<2>()("If Self0 is 0, start pixel movement.")
-[101][0,1]<2>()("Okay! I'll turn on the mode that lets you move in<\n>pixels instead of tiles!")
+[101][0,1]<2>()("Okay! I'll turn on pixel movement mode,<\n>so you'll move by pixels instead of tiles!")
 [103][0,1]<2>()("Get the Common Event ID using a trick to get the ID by the Common Event name.")
 [103][0,1]<2>()("*You can use it by entering a special code in <dqrt>Execute Special Code<dqrt> of <dqrt>Set String.<dqrt>")
 [103][0,1]<2>()(" It's written on the <dqrt>Set String<dqrt> page of the manual!")
@@ -70,16 +70,16 @@ WoditorEvCOMMAND_START
 [103][0,1]<2>()("If you assign a string variable containing numbers such as <dqrt>39<dqrt> to a numeric variable,")
 [103][0,1]<2>()("you can convert it to a number!")
 [121][4,0]<2>(1100001,3000000,0,0)()
-[101][0,1]<2>()("Well, let's turn on Common Event \self[1]<\n><dqrt>■Toggle Pixel Movement<dqrt>...<\n>*Click* ON!")
+[101][0,1]<2>()("Uh... Common Event \self[1]<\n><dqrt>■Toggle Pixel Movement<dqrt>...<\n><\n>*Click* ON!")
 [140][7,1]<2>(33554464,0,0,0,100,100,0)("SystemFile/SE_Get.ogg")
-[101][0,1]<2>()("Alright, you can now move in pixels!<\n>Enjoy the pixel movement mode — freedom from<\n>tile-based movement!")
+[101][0,1]<2>()("Alright, you can now move by pixels!<\n>Enjoy the pixel movement mode—no more<\n>tile-by-tile movement!")
 [300][3,1]<2>(0,1,1)("■Toggle Pixel Movement")
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
 [140][7,1]<2>(33554464,0,0,0,100,100,0)("SystemFile/SE_LevelUp.ogg")
 [300][3,1]<2>(0,1,-1)("■Toggle Pixel Movement")
-[101][0,1]<2>()("Pixel movement, off!<\n>It was kinda fun, wasn't it?")
-[101][0,1]<2>()("But when pixel movement is on, it's tricky to pass<\n>through gaps of one tile. So, when you're making<\n>a game, try not to make the paths too narrow!")
+[101][0,1]<2>()("Pixel movement's off!<\n>That was kinda fun, huh?")
+[101][0,1]<2>()("But with pixel movement on, slipping through<\n>a one-tile gap gets tough.<\n>So when you're making your game, try not to<\n>make the paths too narrow, okay?!")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [103][0,1]<1>()("Technique: Add 1 and divide by 2 to get the remainder (%), and it will switch between 0 and 1! (0→1→0→1)")
@@ -87,67 +87,67 @@ WoditorEvCOMMAND_START
 [121][4,0]<1>(1100000,2,0,1280)()
 [0][0,0]<1>()()
 [401][1,0]<0>(3)()
-[101][0,1]<1>()("Do you want to hear about pixel movement?<\n>It's a long story! Get ready!")
+[101][0,1]<1>()("You wanna hear about pixel movement?<\n>Get ready, it's a long one!")
 [180][1,0]<1>(4)()
-[101][0,1]<1>()("Pixel movement processing stops normal tile-based<\n>movement and moves you using only the<\n><dqrt>Pixel Movement<dqrt> effect!")
-[101][0,1]<1>()("If you use the <dqrt>Pixel Movement<dqrt> effect in a parallel<\n>process event, your character can still bump into the<\n>map and characters, and it can even trigger touch<\n>events!")
-[101][0,1]<1>()("So, even if you switch from tile movement to pixel<\n>movement without a second thought, you can still<\n>progress the game with hardly any issues!")
-[101][0,1]<1>()("And even this sample game,<\n>you can clear it in the pixel movement mode!")
+[101][0,1]<1>()("Pixel Movement turns off the usual tile-by-tile<\n>movement and moves your character using just<\n>the Pixel Movement effect!")
+[101][0,1]<1>()("When you use the <dqrt>Pixel Movement<dqrt> effect in<\n>a parallel process, your character can still bump<\n>into the map and characters, and even trigger<\n>touch events!")
+[101][0,1]<1>()("So, even if you just switch from tile movement to<\n>pixel movement without thinking about it, you can<\n>still play just fine!")
+[101][0,1]<1>()("You can even finish this sample game<\n>while staying in pixel movement mode!")
 [180][1,0]<1>(4)()
 [101][0,1]<1>()("But...")
-[101][0,1]<1>()("When you're in the pixel movement mode and enter<\n>an event scene where your character moves, there<\n>are times when it gets stuck in strange places and<\n>stops moving, so just be careful about that!")
+[101][0,1]<1>()("When you're in pixel movement mode and an event<\n>makes your character walk, sometimes they get stuck<\n>in weird spots. So just be careful!")
 [0][0,0]<1>()()
 [401][1,0]<0>(4)()
-[101][0,1]<1>()("Starting with version 3, the character codes used in<\n>the game have been changed to Unicode!<\n>It's called <dqrt>UTF-8<dqrt>!")
-[101][0,1]<1>()("That means you can now use slightly unusual<\n>characters!<\n>For example...")
-[101][0,1]<1>()("✨†Divine Angelic Tiger Girl Taiga†✨<\n>  Hehe, I'm Taiga! ♥\!<\n><\n>  You can even write like that!")
-[101][0,1]<1>()("But if the font doesn't have characters like ♥ or ✨,<\n>you can't use them, so keep that in mind!")
+[101][0,1]<1>()("Starting with version 3,<\n>the game's text now uses Unicode!<\n>They call it <dqrt>UTF-8<dqrt>!")
+[101][0,1]<1>()("That means you can even use quirky characters!<\n>Like...")
+[101][0,1]<1>()("✨ ⸸ Divine Angelic Tiger Girl Taiga ⸸ ✨<\n>  Hehe, I'm Taiga! ♥\!<\n><\n>  You can even write like that!")
+[101][0,1]<1>()("But if the font doesn't include ♥ or ✨,<\n>you can't use them, so be careful!")
 [180][1,0]<1>(4)()
-[101][0,1]<1>()("Oh, and in the past, people outside Japan got garbled<\n>text, and files with Japanese names wouldn't load.<\n>But that's pretty much fixed now!")
-[101][0,1]<1>()("By the way, it's now set to use the Segoe UI font,<\n>which is included in Windows in all languages, but<\n>it doesn't cover every character.")
-[101][0,1]<1>()("So it's safer to bundle a font that's allowed for<\n>redistribution!")
+[101][0,1]<1>()("And, in the past, players outside Japan would see<\n>garbled text, and files with Japanese names wouldn't<\n>load. But that's pretty much gone now!")
+[103][0,1]<1>()("[The original text contains two lines about fonts,")
+[103][0,1]<1>()(" but these are irrelevant for English speakers and have been omitted.]")
 [0][0,0]<1>()()
 [401][1,0]<0>(5)()
-[101][0,1]<1>()("Okay!<\n>You can use the filter effects to change the color of<\n>the picture and more!")
+[101][0,1]<1>()("Yeah!<\n>You can use the filter effects to change picture colors<\n>and more!")
 [150][11,1]<1>(0,1,0,1,1,1,255,20,20,100,0)("EnemyGraphic/GD_Basilisk(Red).png")
-[101][0,1]<1>()("For example, I'll try changing the hue, saturation, and<\n>lightness of this monster!<\n>Here we go!")
+[101][0,1]<1>()("Just for example, let's try tweaking this monster's<\n>colors! Here goes!")
 [290][7,0]<1>(336,0,1,1,150,0,0)()
-[101][0,1]<1>()("Look! Just by changing the hue with the effect, you<\n>can make enemy characters with different colors<\n>like this. Also...")
+[101][0,1]<1>()("Okay! Just change the hue with the Effect, and<\n>it makes color variations of enemies like this.<\n>And...")
 [290][7,0]<1>(336,0,1,1,0,-255,0)()
-[101][0,1]<1>()("If you set the saturation to 0, you can easily make<\n>black-and-white characters like this!")
+[101][0,1]<1>()("Set the saturation to 0, and it easily makes<\n>black-and-white ones like this!")
 [150][3,0]<1>(2,1,0)()
 [150][11,1]<1>(0,1,0,6,4,10,255,20,20,300,0)("CharaChip/Special_Tiga.png")
-[101][0,1]<1>()("Next up is the blur function!<\n>Let's try it on my image...")
+[101][0,1]<1>()("Now for the blur function!<\n>Let's try it on my image...")
 [290][7,0]<1>(368,0,1,1,3,-255,0)()
-[101][0,1]<1>()("Oh my♥\!<\n>Hey, you're not thinking anything dirty, are you!?")
+[101][0,1]<1>()("Oh my♥\!<\n>Hey, you're not thinking anything naughty, are you?!")
 [150][3,0]<1>(2,1,0)()
-[101][0,1]<1>()("Next, levels!")
+[101][0,1]<1>()("Next up, levels!")
 [150][11,1]<1>(0,1,0,6,4,10,255,20,20,300,0)("CharaChip/Special_Tiga.png")
-[101][0,1]<1>()("It's a bit technical, but it's similar to contrast<\n>adjustment!")
+[101][0,1]<1>()("It's a bit advanced, but it's pretty much like adjusting<\n>the contrast!")
 [290][7,0]<1>(416,255,1,1,100,155,0)()
-[101][0,1]<1>()("Yay! Shining!")
+[101][0,1]<1>()("Yay! So shiny!")
 [150][3,0]<1>(2,1,0)()
 [150][11,1]<1>(0,1,0,6,4,10,255,40,40,300,0)("CharaChip/Special_Wolfarl.png")
-[101][0,1]<1>()("Lastly, inversion!<\n>Let's try inverting your colors!")
+[101][0,1]<1>()("And last, invert!<\n>I'll try inverting your colors!")
 [290][7,0]<1>(384,0,1,1,100,155,0)()
-[101][0,1]<1>()("Yeah!<\n>I don't know what to use it for, but why don't you<\n>invert the color while saying something like<\n><dqrt>Oh no!<dqrt>?")
+[101][0,1]<1>()("Yeah!<\n>Not sure what it's for, but maybe just invert the colors<\n>and go <dqrt>Oh no!<dqrt> or something?!")
 [150][3,0]<1>(2,1,0)()
-[101][0,1]<1>()("These effects can be found in the <dqrt>Picture<dqrt> effect of<\n>the Effects command, so look for them if you're<\n>interested!")
+[101][0,1]<1>()("These effects are in the <dqrt>Picture<dqrt> category in the<\n>Effects command, so check them out if you're curious!")
 [0][0,0]<1>()()
 [401][1,0]<0>(6)()
-[101][0,1]<1>()("Yeah! It has a feature that lets you capture the<\n>current screen as a picture!")
-[101][0,1]<1>()("It's easy to use!<\n>If you put <SCREENSHOT> in the picture file name,<\n>you can use the current screen as a picture just like<\n>a normal image!")
-[101][0,1]<1>()("I'll try it, so watch!<\n>Here goes!")
+[101][0,1]<1>()("Yeah! It's got a feature that lets you capture the<\n>current screen as a picture!")
+[101][0,1]<1>()("It's easy!<\n>If you put <dqrt><SCREENSHOT><dqrt> in the picture file name,<\n>you can use the current screen just like any other<\n>picture!")
+[101][0,1]<1>()("I'll give it a try, so watch closely!<\n>Here goes!")
 [140][7,1]<1>(33554464,0,0,0,100,100,0)("SystemFile/SE_Get.ogg")
 [290][7,0]<1>(0,10,1,1,40,40,40)()
 [150][11,1]<1>(0,1,0,1,1,1,255,0,0,50,0)("<SCREENSHOT>")
 [150][11,0]<1>(1,1,0,0,0,1,255,20,20,20,0)()
 [290][7,0]<1>(16,10,1,1,20,20,20)()
 [180][1,0]<1>(20)()
-[101][0,1]<1>()("What do you think!?")
-[101][0,1]<1>()("It captures text and pictures too, so you've got to be<\n>careful how you use it, but with a little creativity, you<\n>can use it in a bunch of ways!")
+[101][0,1]<1>()("Ta-da! How's that?!")
+[101][0,1]<1>()("It even captures text and pictures, so be careful how<\n>you use it—but with a little creativity, you can do all<\n>sorts of things with it!")
 [150][3,0]<1>(2,1,10)()
-[101][0,1]<1>()("For example, you can use it like this...")
+[101][0,1]<1>()("Here's one way you can use it!")
 [180][1,0]<1>(12)()
 [140][7,1]<1>(33554464,0,0,0,100,100,0)("SystemFile/SE_Encount.ogg")
 [150][11,1]<1>(4096,1,0,1,1,1,255,160,120,50,0)("<SCREENSHOT>")
@@ -157,12 +157,12 @@ WoditorEvCOMMAND_START
 [150][3,0]<1>(4098,1,20)()
 [150][3,0]<1>(50,2,20)()
 [180][1,0]<1>(12)()
-[101][0,1]<1>()("You can also use it for temporary screen effects that<\n>are likely to occur at the start of a battle!")
-[101][0,1]<1>()("Why not come up with a dynamic effect using<\n>the screen!?<\n>And let's see if you can beat mine!")
+[101][0,1]<1>()("You can even use it for a temporary screen effect<\n>you might see when a battle starts!")
+[101][0,1]<1>()("How about coming up with a dynamic effect using<\n>the screen?!<\n>Then let's see if you can beat mine!")
 [0][0,0]<1>()()
 [401][1,0]<0>(7)()
-[101][0,1]<1>()("Okay!<\n>Oh, the mask is a function that partially limits<\n>the area where pictures and such are visible!")
-[101][0,1]<1>()("Well, let's go!")
+[101][0,1]<1>()("Okay!<\n>Oh, just think of a mask as a feature for hiding part<\n>of the area where pictures and such show up!")
+[101][0,1]<1>()("All right, let's go!")
 [103][0,1]<1>()("Display the character and background for now.")
 [290][7,1]<1>(67,2,0,0,0,0,0)("")
 [150][11,1]<1>(4096,1,0,1,1,1,255,160,120,100,0)("Fog_BackGround/Background_space2_pipo.jpg")
@@ -192,7 +192,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<2>()()
 [498][0,0]<1>()()
 [180][1,0]<1>(15)()
-[101][0,1]<1>()("This is my secret technique, TIGER AURA!!")
+[101][0,1]<1>()("This is my ultimate move—TIGER AURA!!")
 [180][1,0]<1>(15)()
 [179][1,0]<1>(30)()
 [103][0,1]<2>()("Next, reduce the width of the visible area.")
@@ -213,34 +213,34 @@ WoditorEvCOMMAND_START
 [498][0,0]<1>()()
 [290][7,1]<1>(67,2,0,0,0,0,0)("")
 [180][1,0]<1>(8)()
-[101][0,1]<1>()("Did you like it?<\n>Imagine making only the middle part visible and<\n>making the rest invisible!")
+[101][0,1]<1>()("Hehe, did you like it?<\n>Try imagining it like this, the middle part is visible,<\n>and the rest is hidden!")
 [150][6,0]<1>(16781314,1,0,0,0,2)()
 [290][7,1]<1>(3,2,0,0,0,0,0)("")
 [0][0,0]<1>()()
 [401][1,0]<0>(8)()
-[101][0,1]<1>()("Alright! Time to explain the cut-in with the mask!<\n>Don't even think about falling asleep!")
-[101][0,1]<1>()("First, I might've mentioned this already, but the mask<\n>is a function that partially limits the visible area.")
+[101][0,1]<1>()("Alright, time to start the mask cut-in explanation!<\n>Don't you dare nod off!")
+[101][0,1]<1>()("First off, I might've said this already, but a mask is<\n>a feature just for hiding part of the display area...")
 [150][11,1]<1>(4096,1,0,1,1,1,255,160,120,100,0)("Fog_BackGround/Background_space2_pipo.jpg")
 [150][11,1]<1>(4096,2,0,6,4,3,255,160,100,1000,0)("CharaChip/Special_Tiga.png")
 [290][7,0]<1>(48,1,2,2,4,0,100000)()
-[101][0,1]<1>()("Actually, during my cut-in, these pictures are filling<\n>the screen in the background!")
+[101][0,1]<1>()("Actually, behind the scenes in my cut-in,<\n>the screen's covered with these pictures!")
 [290][7,1]<1>(19,2,1,2,0,0,0)("")
-[101][0,1]<1>()("But once I fill the mask to hide everything and turn<\n>the mask ON for this background and my picture...")
+[101][0,1]<1>()("But once I fill the mask to hide everything and turn<\n>the mask on for this background and my picture...")
 [290][7,1]<1>(67,2,0,0,0,0,0)("")
 [180][1,0]<1>(10)()
-[101][0,1]<1>()("They're gone!")
-[101][0,1]<1>()("Actually, they're still there. But I used the mask to<\n>make the whole area <dqrt>invisible,<dqrt> so no wonder it<\n>looks like they're gone, right?")
+[101][0,1]<1>()("There! All gone!")
+[101][0,1]<1>()("Actually, they're still there. The mask is hiding it all,<\n>so of course it looks like they're gone, right?")
 [150][11,1]<1>(4096,3,0,1,1,1,255,60,80,20,0)("SystemFile/Mask_Draw+_Slash200x480.png")
-[101][0,1]<1>()("Then I add <dqrt>the visible area<dqrt> on the mask using an<\n>image with a black line like this...")
+[101][0,1]<1>()("And now I draw the visible area on the mask,<\n>using an image like this with a black line...")
 [290][7,1]<1>(83,2,0,0,160,120,1)("SystemFile/Mask_Draw+_Slash200x480.png")
-[101][0,1]<1>()("Look, you can see a little of the middle now!<\n>See how that black line on the left is part of<\n><dqrt>the visible area<dqrt>!?")
+[101][0,1]<1>()("Look! You can see a bit of the middle now!<\n>See how that black line on the left is the visible area?!")
 [290][7,1]<1>(83,2,0,0,155,120,1)("SystemFile/Mask_Draw+_Slash200x480.png")
 [180][1,0]<1>(12)()
 [290][7,1]<1>(83,2,0,0,150,120,1)("SystemFile/Mask_Draw+_Slash200x480.png")
 [180][1,0]<1>(12)()
 [290][7,1]<1>(83,2,0,0,145,120,1)("SystemFile/Mask_Draw+_Slash200x480.png")
 [180][1,0]<1>(12)()
-[101][0,1]<1>()("Then I just keep adding more visible areas while<\n>shifting the position like this...")
+[101][0,1]<1>()("And then I just keep adding more to the mask,<\n>shifting it along like this...")
 [180][1,0]<1>(15)()
 [121][4,0]<1>(1100005,100,0,0)()
 [179][1,0]<1>(27)()
@@ -250,12 +250,12 @@ WoditorEvCOMMAND_START
 [0][0,0]<2>()()
 [498][0,0]<1>()()
 [180][1,0]<1>(15)()
-[101][0,1]<1>()("Look!<\n>It's like the cut-in from earlier!")
-[101][0,1]<1>()("Basically, I repeated <dqrt>hide everything → draw more<\n>black lines than before<dqrt> on the mask every frame...<\n>That's how I made an animation that expanded<\n>the visible area!")
+[101][0,1]<1>()("Look! Just like that cut-in from earlier!")
+[101][0,1]<1>()("So basically, I just kept hiding everything and<\n>drawing black lines in different widths on the mask<\n>each frame... and that's how I made the animation<\n>with the visible area growing!")
 [150][6,0]<1>(16777218,1,0,0,0,3)()
 [290][7,1]<1>(3,2,0,0,0,0,0)("")
 [180][1,0]<1>(10)()
-[101][0,1]<1>()("Got it!?<\n>The mask is tricky, but I'll be waiting for the day you<\n>master it! Hmph!")
+[101][0,1]<1>()("Got it?!<\n>The mask is tricky, but I'll be waiting for you<\n>to master it! Hmph!")
 [0][0,0]<1>()()
 [421][1,0]<0>(0)()
 [0][0,0]<1>()()
@@ -275,14 +275,14 @@ WoditorEvCOMMAND_END
  |■Set String: S0[[Sample] Temporary String] = "I want to stop pixel movement"
  |■
 ◇End◇
-■Show Message: I'm your rival, Taiga the tiger girl!\nI'm gonna show you the new features in Version 3!
+■Show Message: Here comes your rival, Taiga the tiger girl!\nI'm gonna show you the new Version 3 features!
 ■Wait: 1 Frames
-■Show Choice: / [1] \s[0] / [2] How is pixel movement processing created? / [3] I heard it supports Unicode? / [4] You can change colors with filter effects? / [5] You can capture the screen as a picture? / [6] I want to see a cut-in with mask processing! / [7] Please explain the cut-in using the mask 
+■Show Choice: / [1] \s[0] / [2] How is pixel movement made? / [3] I heard it supports Unicode? / [4] You can change colors with filter effects?! / [5] You can capture the screen as a picture?! / [6] I want to see a cut-in using a mask! / [7] Please explain the cut-in using a mask 
 -◇Case: Choice [1] \s[0]                                    ↓
  |■Condition (Number):   [1] This Ev Self0 ==  0  /  [2] This Ev Self0 ==  1  
  |-◇Condition:  [1]  [ This Ev Self0 == 0   ] Case↓
  | |▼ If Self0 is 0, start pixel movement.
- | |■Show Message: Okay! I'll turn on the mode that lets you move in\npixels instead of tiles!
+ | |■Show Message: Okay! I'll turn on pixel movement mode,\nso you'll move by pixels instead of tiles!
  | |▼ Get the Common Event ID using a trick to get the ID by the Common Event name.
  | |▼ *You can use it by entering a special code in "Execute Special Code" of "Set String."
  | |▼  It's written on the "Set String" page of the manual!
@@ -291,84 +291,84 @@ WoditorEvCOMMAND_END
  | |▼ If you assign a string variable containing numbers such as "39" to a numeric variable,
  | |▼ you can convert it to a number!
  | |■Set Variable: This Ev Self1 = S0[[Sample] Temporary String] + 0 
- | |■Show Message: Well, let's turn on Common Event \self[1]\n"■Toggle Pixel Movement"...\n*Click* ON!
+ | |■Show Message: Uh... Common Event \self[1]\n"■Toggle Pixel Movement"...\n\n*Click* ON!
  | |■Sound: SE File [SystemFile/SE_Get.ogg] Vol 100% Pitch 100% (0 Channel) Play / Delay: 0 Frames
- | |■Show Message: Alright, you can now move in pixels!\nEnjoy the pixel movement mode — freedom from\ntile-based movement!
+ | |■Show Message: Alright, you can now move by pixels!\nEnjoy the pixel movement mode—no more\ntile-by-tile movement!
  | |■Call Event [Name]: ["■Toggle Pixel Movement"] <CommonEv 39>  / 1:Turn On
  | |■
  |-◇Condition:  [2]  [ This Ev Self0 == 1   ] Case↓
  | |■Sound: SE File [SystemFile/SE_LevelUp.ogg] Vol 100% Pitch 100% (0 Channel) Play / Delay: 0 Frames
  | |■Call Event [Name]: ["■Toggle Pixel Movement"] <CommonEv 39>  / -1:Turn Off
- | |■Show Message: Pixel movement, off!\nIt was kinda fun, wasn't it?
- | |■Show Message: But when pixel movement is on, it's tricky to pass\nthrough gaps of one tile. So, when you're making\na game, try not to make the paths too narrow!
+ | |■Show Message: Pixel movement's off!\nThat was kinda fun, huh?
+ | |■Show Message: But with pixel movement on, slipping through\na one-tile gap gets tough.\nSo when you're making your game, try not to\nmake the paths too narrow, okay?!
  | |■
  |◇End◇
  |▼ Technique: Add 1 and divide by 2 to get the remainder (%), and it will switch between 0 and 1! (0→1→0→1)
  |■Set Variable: This Ev Self0 += 1 + 0 
  |■Set Variable: This Ev Self0 %= 2 + 0 
  |■
--◇Case: Choice [2] How is pixel movement processing created? ↓
- |■Show Message: Do you want to hear about pixel movement?\nIt's a long story! Get ready!
+-◇Case: Choice [2] How is pixel movement made?              ↓
+ |■Show Message: You wanna hear about pixel movement?\nGet ready, it's a long one!
  |■Wait: 4 Frames
- |■Show Message: Pixel movement processing stops normal tile-based\nmovement and moves you using only the\n"Pixel Movement" effect!
- |■Show Message: If you use the "Pixel Movement" effect in a parallel\nprocess event, your character can still bump into the\nmap and characters, and it can even trigger touch\nevents!
- |■Show Message: So, even if you switch from tile movement to pixel\nmovement without a second thought, you can still\nprogress the game with hardly any issues!
- |■Show Message: And even this sample game,\nyou can clear it in the pixel movement mode!
+ |■Show Message: Pixel Movement turns off the usual tile-by-tile\nmovement and moves your character using just\nthe Pixel Movement effect!
+ |■Show Message: When you use the "Pixel Movement" effect in\na parallel process, your character can still bump\ninto the map and characters, and even trigger\ntouch events!
+ |■Show Message: So, even if you just switch from tile movement to\npixel movement without thinking about it, you can\nstill play just fine!
+ |■Show Message: You can even finish this sample game\nwhile staying in pixel movement mode!
  |■Wait: 4 Frames
  |■Show Message: But...
- |■Show Message: When you're in the pixel movement mode and enter\nan event scene where your character moves, there\nare times when it gets stuck in strange places and\nstops moving, so just be careful about that!
+ |■Show Message: When you're in pixel movement mode and an event\nmakes your character walk, sometimes they get stuck\nin weird spots. So just be careful!
  |■
 -◇Case: Choice [3] I heard it supports Unicode?             ↓
- |■Show Message: Starting with version 3, the character codes used in\nthe game have been changed to Unicode!\nIt's called "UTF-8"!
- |■Show Message: That means you can now use slightly unusual\ncharacters!\nFor example...
- |■Show Message: ✨†Divine Angelic Tiger Girl Taiga†✨\n  Hehe, I'm Taiga! ♥\!\n\n  You can even write like that!
- |■Show Message: But if the font doesn't have characters like ♥ or ✨,\nyou can't use them, so keep that in mind!
+ |■Show Message: Starting with version 3,\nthe game's text now uses Unicode!\nThey call it "UTF-8"!
+ |■Show Message: That means you can even use quirky characters!\nLike...
+ |■Show Message: ✨ ⸸ Divine Angelic Tiger Girl Taiga ⸸ ✨\n  Hehe, I'm Taiga! ♥\!\n\n  You can even write like that!
+ |■Show Message: But if the font doesn't include ♥ or ✨,\nyou can't use them, so be careful!
  |■Wait: 4 Frames
- |■Show Message: Oh, and in the past, people outside Japan got garbled\ntext, and files with Japanese names wouldn't load.\nBut that's pretty much fixed now!
- |■Show Message: By the way, it's now set to use the Segoe UI font,\nwhich is included in Windows in all languages, but\nit doesn't cover every character.
- |■Show Message: So it's safer to bundle a font that's allowed for\nredistribution!
+ |■Show Message: And, in the past, players outside Japan would see\ngarbled text, and files with Japanese names wouldn't\nload. But that's pretty much gone now!
+ |▼ [The original text contains two lines about fonts,
+ |▼  but these are irrelevant for English speakers and have been omitted.]
  |■
--◇Case: Choice [4] You can change colors with filter effects? ↓
- |■Show Message: Okay!\nYou can use the filter effects to change the color of\nthe picture and more!
+-◇Case: Choice [4] You can change colors with filter effects?! ↓
+ |■Show Message: Yeah!\nYou can use the filter effects to change picture colors\nand more!
  |■Picture Show: 1 [Top-Left] File [EnemyGraphic/GD_Basilisk(Red).png] X:20 Y:20 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- |■Show Message: For example, I'll try changing the hue, saturation, and\nlightness of this monster!\nHere we go!
+ |■Show Message: Just for example, let's try tweaking this monster's\ncolors! Here goes!
  |■Effect Picture: 1 [Filter/Hue Saturation Lightness] H150/S0/L0
- |■Show Message: Look! Just by changing the hue with the effect, you\ncan make enemy characters with different colors\nlike this. Also...
+ |■Show Message: Okay! Just change the hue with the Effect, and\nit makes color variations of enemies like this.\nAnd...
  |■Effect Picture: 1 [Filter/Hue Saturation Lightness] H0/S-255/L0
- |■Show Message: If you set the saturation to 0, you can easily make\nblack-and-white characters like this!
+ |■Show Message: Set the saturation to 0, and it easily makes\nblack-and-white ones like this!
  |■Picture Erase: 1  / 0(0) Frames
  |■Picture Show: 1 [Top-Left] File [CharaChip/Special_Tiga.png] X:20 Y:20 / 0(0) Frames  / Pattern 10 / Opacity 255 / Normal  / Angle 0 / Zoom 300% / Color R[100] G[100] B[100]
- |■Show Message: Next up is the blur function!\nLet's try it on my image...
+ |■Show Message: Now for the blur function!\nLet's try it on my image...
  |■Effect Picture: 1 [Filter/Blur] Amount 3
- |■Show Message: Oh my♥\!\nHey, you're not thinking anything dirty, are you!?
+ |■Show Message: Oh my♥\!\nHey, you're not thinking anything naughty, are you?!
  |■Picture Erase: 1  / 0(0) Frames
- |■Show Message: Next, levels!
+ |■Show Message: Next up, levels!
  |■Picture Show: 1 [Top-Left] File [CharaChip/Special_Tiga.png] X:20 Y:20 / 0(0) Frames  / Pattern 10 / Opacity 255 / Normal  / Angle 0 / Zoom 300% / Color R[100] G[100] B[100]
- |■Show Message: It's a bit technical, but it's similar to contrast\nadjustment!
+ |■Show Message: It's a bit advanced, but it's pretty much like adjusting\nthe contrast!
  |■Effect Picture: 1 [Filter/Levels] Old (100 to 155) => New (0 to 255)
- |■Show Message: Yay! Shining!
+ |■Show Message: Yay! So shiny!
  |■Picture Erase: 1  / 0(0) Frames
  |■Picture Show: 1 [Top-Left] File [CharaChip/Special_Wolfarl.png] X:40 Y:40 / 0(0) Frames  / Pattern 10 / Opacity 255 / Normal  / Angle 0 / Zoom 300% / Color R[100] G[100] B[100]
- |■Show Message: Lastly, inversion!\nLet's try inverting your colors!
+ |■Show Message: And last, invert!\nI'll try inverting your colors!
  |■Effect Picture: 1 [Filter/Invert] 
- |■Show Message: Yeah!\nI don't know what to use it for, but why don't you\ninvert the color while saying something like\n"Oh no!"?
+ |■Show Message: Yeah!\nNot sure what it's for, but maybe just invert the colors\nand go "Oh no!" or something?!
  |■Picture Erase: 1  / 0(0) Frames
- |■Show Message: These effects can be found in the "Picture" effect of\nthe Effects command, so look for them if you're\ninterested!
+ |■Show Message: These effects are in the "Picture" category in the\nEffects command, so check them out if you're curious!
  |■
--◇Case: Choice [5] You can capture the screen as a picture? ↓
- |■Show Message: Yeah! It has a feature that lets you capture the\ncurrent screen as a picture!
- |■Show Message: It's easy to use!\nIf you put <SCREENSHOT> in the picture file name,\nyou can use the current screen as a picture just like\na normal image!
- |■Show Message: I'll try it, so watch!\nHere goes!
+-◇Case: Choice [5] You can capture the screen as a picture?! ↓
+ |■Show Message: Yeah! It's got a feature that lets you capture the\ncurrent screen as a picture!
+ |■Show Message: It's easy!\nIf you put "<SCREENSHOT>" in the picture file name,\nyou can use the current screen just like any other\npicture!
+ |■Show Message: I'll give it a try, so watch closely!\nHere goes!
  |■Sound: SE File [SystemFile/SE_Get.ogg] Vol 100% Pitch 100% (0 Channel) Play / Delay: 0 Frames
  |■Effect Picture: 1 [Flash] R40/G40/B40  [10] Frames
  |■Picture Show: 1 [Top-Left] File [<SCREENSHOT>] X:0 Y:0 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 50% / Color R[100] G[100] B[100]
  |■Picture Move: 1  X:20 Y:20 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 20% / Color R[100] G[100] B[100]
  |■Effect Picture: 1 [Adjust Color] R20/G20/B20  [10] Frames
  |■Wait: 20 Frames
- |■Show Message: What do you think!?
- |■Show Message: It captures text and pictures too, so you've got to be\ncareful how you use it, but with a little creativity, you\ncan use it in a bunch of ways!
+ |■Show Message: Ta-da! How's that?!
+ |■Show Message: It even captures text and pictures, so be careful how\nyou use it—but with a little creativity, you can do all\nsorts of things with it!
  |■Picture Erase: 1  / 10(0) Frames
- |■Show Message: For example, you can use it like this...
+ |■Show Message: Here's one way you can use it!
  |■Wait: 12 Frames
  |■Sound: SE File [SystemFile/SE_Encount.ogg] Vol 100% Pitch 100% (0 Channel) Play / Delay: 0 Frames
  |■Picture Show: 1 [Center] File [<SCREENSHOT>] X:160 Y:120 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 50% / Color R[100] G[100] B[100]
@@ -378,12 +378,12 @@ WoditorEvCOMMAND_END
  |■Picture Erase: 1  / 20(0) Frames
  |■Picture Erase: 2  / 20(0) Frames
  |■Wait: 12 Frames
- |■Show Message: You can also use it for temporary screen effects that\nare likely to occur at the start of a battle!
- |■Show Message: Why not come up with a dynamic effect using\nthe screen!?\nAnd let's see if you can beat mine!
+ |■Show Message: You can even use it for a temporary screen effect\nyou might see when a battle starts!
+ |■Show Message: How about coming up with a dynamic effect using\nthe screen?!\nThen let's see if you can beat mine!
  |■
--◇Case: Choice [6] I want to see a cut-in with mask processing! ↓
- |■Show Message: Okay!\nOh, the mask is a function that partially limits\nthe area where pictures and such are visible!
- |■Show Message: Well, let's go!
+-◇Case: Choice [6] I want to see a cut-in using a mask!     ↓
+ |■Show Message: Okay!\nOh, just think of a mask as a feature for hiding part\nof the area where pictures and such show up!
+ |■Show Message: All right, let's go!
  |▼ Display the character and background for now.
  |■Mask: [Fill Mask to [Hide] Entire]
  |■Picture Show: 1 [Center] File [Fog_BackGround/Background_space2_pipo.jpg] X:160 Y:120 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
@@ -413,7 +413,7 @@ WoditorEvCOMMAND_END
  | |■
  |◇Loop End Point◇◇
  |■Wait: 15 Frames
- |■Show Message: This is my secret technique, TIGER AURA!!
+ |■Show Message: This is my ultimate move—TIGER AURA!!
  |■Wait: 15 Frames
  |■Repeat Loop [ 30 ] Times
  | |▼ Next, reduce the width of the visible area.
@@ -434,34 +434,34 @@ WoditorEvCOMMAND_END
  |◇Loop End Point◇◇
  |■Mask: [Fill Mask to [Hide] Entire]
  |■Wait: 8 Frames
- |■Show Message: Did you like it?\nImagine making only the middle part visible and\nmaking the rest invisible!
+ |■Show Message: Hehe, did you like it?\nTry imagining it like this, the middle part is visible,\nand the rest is hidden!
  |■Picture Erase: 1 to 2  / 0(0) Frames
  |■Mask: [Reset All Masks (Stop)]
  |■
--◇Case: Choice [7] Please explain the cut-in using the mask ↓
- |■Show Message: Alright! Time to explain the cut-in with the mask!\nDon't even think about falling asleep!
- |■Show Message: First, I might've mentioned this already, but the mask\nis a function that partially limits the visible area.
+-◇Case: Choice [7] Please explain the cut-in using a mask   ↓
+ |■Show Message: Alright, time to start the mask cut-in explanation!\nDon't you dare nod off!
+ |■Show Message: First off, I might've said this already, but a mask is\na feature just for hiding part of the display area...
  |■Picture Show: 1 [Center] File [Fog_BackGround/Background_space2_pipo.jpg] X:160 Y:120 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  |■Picture Show: 2 [Center] File [CharaChip/Special_Tiga.png] X:160 Y:100 / 0(0) Frames  / Pattern 3 / Opacity 255 / Normal  / Angle 0 / Zoom 1000% / Color R[100] G[100] B[100]
  |■Effect Picture: 2 [Shake] Shake X 4 / Shake Y 0 / 100000 Times  [1] Frames
- |■Show Message: Actually, during my cut-in, these pictures are filling\nthe screen in the background!
+ |■Show Message: Actually, behind the scenes in my cut-in,\nthe screen's covered with these pictures!
  |■Mask: [Enable Picture Mask] => ID 1 to 2 
- |■Show Message: But once I fill the mask to hide everything and turn\nthe mask ON for this background and my picture...
+ |■Show Message: But once I fill the mask to hide everything and turn\nthe mask on for this background and my picture...
  |■Mask: [Fill Mask to [Hide] Entire]
  |■Wait: 10 Frames
- |■Show Message: They're gone!
- |■Show Message: Actually, they're still there. But I used the mask to\nmake the whole area "invisible," so no wonder it\nlooks like they're gone, right?
+ |■Show Message: There! All gone!
+ |■Show Message: Actually, they're still there. The mask is hiding it all,\nso of course it looks like they're gone, right?
  |■Picture Show: 3 [Center] File [SystemFile/Mask_Draw+_Slash200x480.png] X:60 Y:80 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 20% / Color R[100] G[100] B[100]
- |■Show Message: Then I add "the visible area" on the mask using an\nimage with a black line like this...
+ |■Show Message: And now I draw the visible area on the mask,\nusing an image like this with a black line...
  |■Mask: [Add Visible Area (Black) to Mask] =>[SystemFile/Mask_Draw+_Slash200x480.png] X:160 Y:120 (Center)
- |■Show Message: Look, you can see a little of the middle now!\nSee how that black line on the left is part of\n"the visible area"!?
+ |■Show Message: Look! You can see a bit of the middle now!\nSee how that black line on the left is the visible area?!
  |■Mask: [Add Visible Area (Black) to Mask] =>[SystemFile/Mask_Draw+_Slash200x480.png] X:155 Y:120 (Center)
  |■Wait: 12 Frames
  |■Mask: [Add Visible Area (Black) to Mask] =>[SystemFile/Mask_Draw+_Slash200x480.png] X:150 Y:120 (Center)
  |■Wait: 12 Frames
  |■Mask: [Add Visible Area (Black) to Mask] =>[SystemFile/Mask_Draw+_Slash200x480.png] X:145 Y:120 (Center)
  |■Wait: 12 Frames
- |■Show Message: Then I just keep adding more visible areas while\nshifting the position like this...
+ |■Show Message: And then I just keep adding more to the mask,\nshifting it along like this...
  |■Wait: 15 Frames
  |■Set Variable: This Ev Self5 = 100 + 0 
  |■Repeat Loop [ 27 ] Times
@@ -471,12 +471,12 @@ WoditorEvCOMMAND_END
  | |■
  |◇Loop End Point◇◇
  |■Wait: 15 Frames
- |■Show Message: Look!\nIt's like the cut-in from earlier!
- |■Show Message: Basically, I repeated "hide everything → draw more\nblack lines than before" on the mask every frame...\nThat's how I made an animation that expanded\nthe visible area!
+ |■Show Message: Look! Just like that cut-in from earlier!
+ |■Show Message: So basically, I just kept hiding everything and\ndrawing black lines in different widths on the mask\neach frame... and that's how I made the animation\nwith the visible area growing!
  |■Picture Erase: 1 to 3  / 0(0) Frames
  |■Mask: [Reset All Masks (Stop)]
  |■Wait: 10 Frames
- |■Show Message: Got it!?\nThe mask is tricky, but I'll be waiting for the day you\nmaster it! Hmph!
+ |■Show Message: Got it?!\nThe mask is tricky, but I'll be waiting for you\nto master it! Hmph!
  |■
 -◇Case: Cancel
  |■

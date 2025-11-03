@@ -42,7 +42,7 @@ WoditorEvCOMMAND_START
 [101][0,1]<0>()("Good day... Will you recover?")
 [102][1,2]<0>(50)("Full recovery","Do nothing")
 [401][1,0]<0>(2)()
-[101][0,1]<1>()("It's a full recovery.<\n>Beedle-deedle-dee...")
+[101][0,1]<1>()("It's a full recovery...<\n>Beedle-deedle-dee...")
 [151][2,0]<1>(26658966,20)()
 [210][5,0]<1>(500004,3,7,-1,15)()
 [140][6,1]<1>(33554464,0,0,0,100,100)("SE/Effect_Healing1_panop.ogg")
@@ -57,7 +57,7 @@ WoditorEvCOMMAND_END
 ■Show Message: Good day... Will you recover?
 ■Show Choice: / [1] Full recovery / [2] Do nothing 
 -◇Case: Choice [1] Full recovery                            ↓
- |■Show Message: It's a full recovery.\nBeedle-deedle-dee...
+ |■Show Message: It's a full recovery...\nBeedle-deedle-dee...
  |■Adjust Color: (Flash) R150 G200 B150 / 20 Frames
  |■Call Event: Common 4: [ ○ Recover or Damage ] / 7:Full Recovery / -1:Whole Party / 15
  |■Sound: SE File [SE/Effect_Healing1_panop.ogg] Vol 100% Pitch 100% (0 Channel) Play / Delay: 0 Frames

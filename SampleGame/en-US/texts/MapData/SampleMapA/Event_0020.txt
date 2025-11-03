@@ -39,10 +39,10 @@ OPTION_VAL_2=0
 COMMAND_NUM=32
 --
 WoditorEvCOMMAND_START
-[101][0,1]<0>()("Hi!<\n>I'm a horse here to talk about the Z-order of pictures!")
+[101][0,1]<0>()("Hi!<\n>I'm a horse here to talk about Z-order of pictures!")
 [102][1,1]<0>(1)("I want to see an example of Z-order")
 [401][1,0]<0>(2)()
-[101][0,1]<1>()("Okay, I'll show you an example!<\n>First, I'll show three pictures with picture IDs 10, 15,<\n>and 20!")
+[101][0,1]<1>()("Okay, let me show you an example!<\n>First, I'll show three pictures with picture IDs 10, 15,<\n>and 20!")
 [150][11,1]<1>(24608,20,0,1,1,1,255,140,85,100,0)("<C>10<\n>↓")
 [150][11,1]<1>(4096,5,0,1,1,1,255,140,115,400,0)("Picture/FaceGraphic_Edy.png")
 [290][7,0]<1>(32,0,0,26,0,-20,0)()
@@ -55,17 +55,17 @@ WoditorEvCOMMAND_START
 [150][11,1]<1>(4096,15,0,1,1,1,255,180,120,400,0)("Picture/FaceGraphic_Yuichi.png")
 [290][7,0]<1>(32,0,0,26,0,-20,0)()
 [180][1,0]<1>(15)()
-[101][0,1]<1>()("Now, three pictures are shown on top of each other!<\n>The Z-order of the newly shown pictures is <dqrt>0<dqrt>!")
-[101][0,1]<1>()("Then, using the Picture Effect command, let's change<\n>the Z-order of only Wolfarl in the middle to <dqrt>1<dqrt>!")
+[101][0,1]<1>()("Now, three pictures are overlapping!<\n>The Z-order of the newly shown pictures is <dqrt>0<dqrt>!")
+[101][0,1]<1>()("So, let's use the Picture Effect command to change<\n>the Z-order of only Wolfarl in the middle to <dqrt>1<dqrt>!")
 [180][1,0]<1>(5)()
 [290][7,0]<1>(448,0,10,10,1,0,0)()
 [290][7,0]<1>(448,0,21,21,1,0,0)()
 [180][1,0]<1>(25)()
-[101][0,1]<1>()("See? Even though Wolfarl's picture ID is still 15,<\n>it's shown above Yuuichi's, which has picture ID 20.")
-[101][0,1]<1>()("Like you just saw, Z-order lets you change the display<\n>priority ignoring the picture ID!")
+[101][0,1]<1>()("See, even though Wolfarl's picture ID is still 15,<\n>it shows up above Yuichi's picture—the one with<\n>ID 20, right?")
+[101][0,1]<1>()("Like you just saw, Z-order lets you change the<\n>display priority, ignoring picture IDs!")
 [150][6,0]<1>(16777218,5,120,0,0,25)()
-[101][0,1]<1>()("\f[10]Just a heads-up! No matter how big the Z-order is, it can't<\n>go beyond the picture ID boundaries like these:<\n>  -1 or lower (under fog, above ★Tiles) and<\n>  0 or higher (above fog)...")
-[101][0,1]<1>()("The picture ID boundaries that can't go beyond<\n>by Z-order are -400,000, -300,000, -200,000, -100,000,<\n>0, and 100,000.<\n>So be careful when picking picture IDs!")
+[101][0,1]<1>()("\f[10]Just a heads-up! No matter how high Z-order is,<\n>it can't go beyond the picture ID limits, like these:<\n>  -1 or lower (under fog, above ★ tiles),<\n>  0 or higher (above fog).")
+[101][0,1]<1>()("The picture ID limits Z-order can't go beyond are<\n>-400000, -300000, -200000, -100000, 0, and 100000.<\n>So be careful when picking picture IDs!")
 [0][0,0]<1>()()
 [421][1,0]<0>(0)()
 [0][0,0]<1>()()
@@ -74,10 +74,10 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message: Hi!\nI'm a horse here to talk about the Z-order of pictures!
+■Show Message: Hi!\nI'm a horse here to talk about Z-order of pictures!
 ■Show Choice: / [1] I want to see an example of Z-order 
 -◇Case: Choice [1] I want to see an example of Z-order      ↓
- |■Show Message: Okay, I'll show you an example!\nFirst, I'll show three pictures with picture IDs 10, 15,\nand 20!
+ |■Show Message: Okay, let me show you an example!\nFirst, I'll show three pictures with picture IDs 10, 15,\nand 20!
  |■Picture Show: 20 [Bottom-Center] String [<C>10\n↓] X:140 Y:85 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  |■Picture Show: 5 [Center] File [Picture/FaceGraphic_Edy.png] X:140 Y:115 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 400% / Color R[100] G[100] B[100]
  |■Effect Picture: 0 to 26 [Shift Position (Final Value)] Shift X 0 / Shift Y -20  [0] Frames
@@ -90,17 +90,17 @@ WoditorEvCOMMAND_END
  |■Picture Show: 15 [Center] File [Picture/FaceGraphic_Yuichi.png] X:180 Y:120 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 400% / Color R[100] G[100] B[100]
  |■Effect Picture: 0 to 26 [Shift Position (Final Value)] Shift X 0 / Shift Y -20  [0] Frames
  |■Wait: 15 Frames
- |■Show Message: Now, three pictures are shown on top of each other!\nThe Z-order of the newly shown pictures is "0"!
- |■Show Message: Then, using the Picture Effect command, let's change\nthe Z-order of only Wolfarl in the middle to "1"!
+ |■Show Message: Now, three pictures are overlapping!\nThe Z-order of the newly shown pictures is "0"!
+ |■Show Message: So, let's use the Picture Effect command to change\nthe Z-order of only Wolfarl in the middle to "1"!
  |■Wait: 5 Frames
  |■Effect Picture: 10 [Z-Order]  Change to [1]
  |■Effect Picture: 21 [Z-Order]  Change to [1]
  |■Wait: 25 Frames
- |■Show Message: See? Even though Wolfarl's picture ID is still 15,\nit's shown above Yuuichi's, which has picture ID 20.
- |■Show Message: Like you just saw, Z-order lets you change the display\npriority ignoring the picture ID!
+ |■Show Message: See, even though Wolfarl's picture ID is still 15,\nit shows up above Yuichi's picture—the one with\nID 20, right?
+ |■Show Message: Like you just saw, Z-order lets you change the\ndisplay priority, ignoring picture IDs!
  |■Picture Erase: 5 to 25  / 120(0) Frames
- |■Show Message: \f[10]Just a heads-up! No matter how big the Z-order is, it can't\ngo beyond the picture ID boundaries like these:\n  -1 or lower (under fog, above ★Tiles) and\n  0 or higher (above fog)...
- |■Show Message: The picture ID boundaries that can't go beyond\nby Z-order are -400,000, -300,000, -200,000, -100,000,\n0, and 100,000.\nSo be careful when picking picture IDs!
+ |■Show Message: \f[10]Just a heads-up! No matter how high Z-order is,\nit can't go beyond the picture ID limits, like these:\n  -1 or lower (under fog, above ★ tiles),\n  0 or higher (above fog).
+ |■Show Message: The picture ID limits Z-order can't go beyond are\n-400000, -300000, -200000, -100000, 0, and 100000.\nSo be careful when picking picture IDs!
  |■
 -◇Case: Cancel
  |■

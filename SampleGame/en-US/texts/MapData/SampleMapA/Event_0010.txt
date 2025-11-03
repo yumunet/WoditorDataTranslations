@@ -39,7 +39,7 @@ OPTION_VAL_2=0
 COMMAND_NUM=11
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("When Eddy joins the party, V0 is set to 1.")
+[103][0,1]<0>()("When Edy joins the party, V0 is set to 1.")
 [103][0,1]<0>()("Then, the message of this sign changes.")
 [111][7,0]<0>(2,2000000,0,2,2000000,1,2)()
 [401][1,0]<0>(1)()
@@ -53,7 +53,7 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ When Eddy joins the party, V0 is set to 1.
+▼ When Edy joins the party, V0 is set to 1.
 ▼ Then, the message of this sign changes.
 ■Condition (Number):   [1] V0[[Sample Game] Cook Appears] ==  0  /  [2] V0[[Sample Game] Cook Appears] ==  1  
 -◇Condition:  [1]  [ V0[[Sample Game] Cook Appears] == 0   ] Case↓

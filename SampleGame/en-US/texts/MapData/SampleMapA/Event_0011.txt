@@ -43,15 +43,15 @@ OPTION_VAL_2=0
 COMMAND_NUM=4
 --
 WoditorEvCOMMAND_START
-[101][0,1]<0>()("With the base system used in this sample, you can<\n>specify what menu options you want to have!")
-[101][0,1]<0>()("You can get rid of Equip or Skills, or even add 5 Save <\n>options! (That'd be pointless.)")
+[101][0,1]<0>()("With the base system this sample game uses, you<\n>can specify what menu options you want to have!")
+[101][0,1]<0>()("You can get rid of Equip or Skills,<\n>or even add 5 Save options!<\n>(That'd be pointless.)")
 [101][0,1]<0>()("For details, take a look in Type 17 in the<\n>User Database.")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message: With the base system used in this sample, you can\nspecify what menu options you want to have!
-■Show Message: You can get rid of Equip or Skills, or even add 5 Save \noptions! (That'd be pointless.)
+■Show Message: With the base system this sample game uses, you\ncan specify what menu options you want to have!
+■Show Message: You can get rid of Equip or Skills,\nor even add 5 Save options!\n(That'd be pointless.)
 ■Show Message: For details, take a look in Type 17 in the\nUser Database.
 ■
 [COMMAND_TEXT_END]

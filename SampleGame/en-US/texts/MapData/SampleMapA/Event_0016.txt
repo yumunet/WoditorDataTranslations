@@ -39,11 +39,11 @@ OPTION_VAL_2=0
 COMMAND_NUM=2
 --
 WoditorEvCOMMAND_START
-[101][0,1]<0>()("@4<\n>Wolfarl<\n>  (The bed is still a little warm!<\n>  What do I do?!)")
+[101][0,1]<0>()("@4<\n>Wolfarl<\n>  (The bed's still a little warm!<\n>  What do I do?!)")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message: @4\nWolfarl\n  (The bed is still a little warm!\n  What do I do?!)
+■Show Message: @4\nWolfarl\n  (The bed's still a little warm!\n  What do I do?!)
 ■
 [COMMAND_TEXT_END]

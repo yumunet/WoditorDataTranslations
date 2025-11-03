@@ -39,7 +39,7 @@ OPTION_VAL_2=0
 COMMAND_NUM=18
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("To determine whether the player has <dqrt>Dungeon Key,<dqrt> assign the item count to Self Variable 0.")
+[103][0,1]<0>()("Determine whether the player has <dqrt>Dungeon Key<dqrt> by storing its count in Self Variable 0.")
 [210][4,0]<0>(500017,16777217,19,1100000)()
 [103][0,1]<0>()("If the player has 1 or more, transfer to Dungeon.")
 [103][0,1]<0>()("  (Even if an item can only be obtained once in the game,")
@@ -52,7 +52,7 @@ WoditorEvCOMMAND_START
 [130][5,0]<1>(-1,7,27,3,32)()
 [0][0,0]<1>()()
 [401][1,0]<0>(2)()
-[103][0,1]<1>()("If the player don't have the key, just a message.")
+[103][0,1]<1>()("If the player doesn't have the key, just a message.")
 [101][0,1]<1>()("It appears to be locked...<\n>You must find a key somewhere.")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
@@ -60,7 +60,7 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ To determine whether the player has "Dungeon Key," assign the item count to Self Variable 0.
+▼ Determine whether the player has "Dungeon Key" by storing its count in Self Variable 0.
 ■Call Event: This Ev Self0 = Common 17: [ ▲Get Item Quantity ] / 19:Dungeon Key
 ▼ If the player has 1 or more, transfer to Dungeon.
 ▼   (Even if an item can only be obtained once in the game,
@@ -73,7 +73,7 @@ WoditorEvCOMMAND_END
  |■Transfer: Leader ▲ Map ID 3 [Dungeon] X:7 Y:27  [Transition with Fade]
  |■
 -◇Condition:  [2]  [ This Ev Self0 == 0   ] Case↓
- |▼ If the player don't have the key, just a message.
+ |▼ If the player doesn't have the key, just a message.
  |■Show Message: It appears to be locked...\nYou must find a key somewhere.
  |■
 ◇End◇

@@ -40,10 +40,10 @@ COMMAND_NUM=33
 --
 WoditorEvCOMMAND_START
 [101][0,1]<0>()("@3<\n>Yuichi<\n>  Hey there, I am Yuichi!")
-[101][0,1]<0>()("Yuichi<\n>  I am real hungry!<\n>  If you bring me something to eat,<\n>  I wll join your party!")
+[101][0,1]<0>()("Yuichi<\n>  I am real hungry!<\n>  If you bring me something to eat,<\n>  I will join your party!")
 [103][0,1]<0>()("Get the number of items <dqrt>Tasty Bread.<dqrt>")
 [210][4,0]<0>(500017,16777217,17,1100001)()
-[103][0,1]<0>()("If there's 1 or more, display the choices.")
+[103][0,1]<0>()("If there's 1 or more, display choices.")
 [111][4,0]<0>(1,1100001,1,1)()
 [401][1,0]<0>(1)()
 [103][0,1]<1>()("Display choices for whether to give bread.")
@@ -57,7 +57,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<2>()("By setting Self Variable 0 to 1 here, the condition is no longer met,")
 [103][0,1]<2>()("causing this event to disappear (become invisible).")
 [121][4,0]<2>(1100000,1,0,0)()
-[103][0,1]<2>()("After it disappears, display the join message.")
+[103][0,1]<2>()("After it disappears, display join message.")
 [140][6,1]<2>(33554464,0,0,0,100,100)("SE/System_Get2_wolf.ogg")
 [101][0,1]<2>()("@3<\n>Yuichi the chicken has joined the party!")
 [180][1,0]<2>(10)()
@@ -76,10 +76,10 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ■Show Message: @3\nYuichi\n  Hey there, I am Yuichi!
-■Show Message: Yuichi\n  I am real hungry!\n  If you bring me something to eat,\n  I wll join your party!
+■Show Message: Yuichi\n  I am real hungry!\n  If you bring me something to eat,\n  I will join your party!
 ▼ Get the number of items "Tasty Bread."
 ■Call Event: This Ev Self1 = Common 17: [ ▲Get Item Quantity ] / 17:Tasty Bread
-▼ If there's 1 or more, display the choices.
+▼ If there's 1 or more, display choices.
 ■Condition (Number):   [1] This Ev Self1 >=  1  
 -◇Condition:  [1]  [ This Ev Self1 >= 1   ] Case↓
  |▼ Display choices for whether to give bread.
@@ -93,7 +93,7 @@ WoditorEvCOMMAND_END
  | |▼ By setting Self Variable 0 to 1 here, the condition is no longer met,
  | |▼ causing this event to disappear (become invisible).
  | |■Set Variable: This Ev Self0 = 1 + 0 
- | |▼ After it disappears, display the join message.
+ | |▼ After it disappears, display join message.
  | |■Sound: SE File [SE/System_Get2_wolf.ogg] Vol 100% Pitch 100% (0 Channel) Play / Delay: 0 Frames
  | |■Show Message: @3\nYuichi the chicken has joined the party!
  | |■Wait: 10 Frames

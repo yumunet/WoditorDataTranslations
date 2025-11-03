@@ -39,7 +39,7 @@ OPTION_VAL_2=0
 COMMAND_NUM=38
 --
 WoditorEvCOMMAND_START
-[101][0,1]<0>()("It reads...<\n>  <dqrt>WOLF RPG Editor<\n>  Those who touch this will undergo a trial.<dqrt>")
+[101][0,1]<0>()("It reads...<\n>  <dqrt>WOLF RPG Editor<\n>   Those who touch this will undergo a trial.<dqrt>")
 [102][1,2]<0>(50)("Open the chest","Don't open it yet")
 [401][1,0]<0>(2)()
 [180][1,0]<1>(10)()
@@ -80,7 +80,7 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message: It reads...\n  "WOLF RPG Editor\n  Those who touch this will undergo a trial."
+■Show Message: It reads...\n  "WOLF RPG Editor\n   Those who touch this will undergo a trial."
 ■Show Choice: / [1] Open the chest / [2] Don't open it yet 
 -◇Case: Choice [1] Open the chest                           ↓
  |■Wait: 10 Frames

@@ -42,7 +42,7 @@ WoditorEvCOMMAND_START
 [101][0,1]<0>()("Hello!<\n>Do you wanna try the sound panning feature?")
 [102][1,1]<0>(1)("Try the sound panning feature")
 [401][1,0]<0>(2)()
-[101][0,1]<1>()("Alright, here we go!<\n>You'll hear the sound moving from left to right, so<\n>listen carefully!")
+[101][0,1]<1>()("Alright, here we go!<\n>You'll hear the sound moving from left to right,<\n>so listen carefully!")
 [121][4,0]<1>(1100000,-255,0,0)()
 [179][1,0]<1>(18)()
 [121][4,0]<2>(1100000,30,0,256)()
@@ -82,7 +82,7 @@ WoditorEvCOMMAND_START
 [498][0,0]<1>()()
 [180][1,0]<1>(25)()
 [150][3,0]<1>(4130,12,0)()
-[101][0,1]<1>()("This is the sound panning feature!<\n>It lets you change how loud the sound is on the left<\n>and right. Got it?")
+[101][0,1]<1>()("This is the sound panning feature!<\n>It lets you move the sound left and right.<\n>Got it?")
 [0][0,0]<1>()()
 [421][1,0]<0>(0)()
 [172][0,0]<1>()()
@@ -95,7 +95,7 @@ WoditorEvCOMMAND_END
 ■Show Message: Hello!\nDo you wanna try the sound panning feature?
 ■Show Choice: / [1] Try the sound panning feature 
 -◇Case: Choice [1] Try the sound panning feature            ↓
- |■Show Message: Alright, here we go!\nYou'll hear the sound moving from left to right, so\nlisten carefully!
+ |■Show Message: Alright, here we go!\nYou'll hear the sound moving from left to right,\nso listen carefully!
  |■Set Variable: This Ev Self0 = -255 + 0 
  |■Repeat Loop [ 18 ] Times
  | |■Set Variable: This Ev Self0 += 30 + 0 
@@ -135,7 +135,7 @@ WoditorEvCOMMAND_END
  |◇Loop End Point◇◇
  |■Wait: 25 Frames
  |■Picture Erase: 12  / 0(0) Frames
- |■Show Message: This is the sound panning feature!\nIt lets you change how loud the sound is on the left\nand right. Got it?
+ |■Show Message: This is the sound panning feature!\nIt lets you move the sound left and right.\nGot it?
  |■
 -◇Case: Cancel
  |■Exit Event

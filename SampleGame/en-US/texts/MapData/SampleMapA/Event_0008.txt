@@ -42,21 +42,21 @@ WoditorEvCOMMAND_START
 [101][0,1]<0>()("@2<\n>P. G. Edy<\n>  My name's P. G. Edy!<\n>  I'm an old dude who came from Brazil!")
 [101][0,1]<0>()("P. G. Edy<\n>  I love strong people!")
 [101][0,1]<0>()("P. G. Edy<\n>  If you get to Level 10 or higher,<\n>  I'll join your party!")
-[103][0,1]<0>()("Get Wolfarl's level and assign it to Self Variable 1.")
+[103][0,1]<0>()("Store Wolfarl's level in Self Variable 1.")
 [210][5,0]<0>(500022,16777218,12,10,1100001)()
-[103][0,1]<0>()("If it's 10 or more, join the party.")
+[103][0,1]<0>()("If it's 10 or greater, join the party.")
 [111][4,0]<0>(1,1100001,10,1)()
 [401][1,0]<0>(1)()
 [101][0,1]<1>()("@4<\n>Wolfarl informed him she was already at<\n>Level \self[1].")
 [101][0,1]<1>()("@2<\n>P. G. Edy<\n>  Well, great! I'll come with you, miss!")
-[103][0,1]<1>()("Add Eddie to the party.")
+[103][0,1]<1>()("Make Edy join.")
 [210][4,0]<1>(500005,2,0,13)()
 [103][0,1]<1>()("Set Self Variable 0 to 1.")
 [103][0,1]<1>()("(This page's condition is no longer met, and the event is no longer displayed.)")
 [121][4,0]<1>(1100000,1,0,0)()
 [140][6,1]<1>(33554464,0,0,0,100,100)("SE/System_Get2_wolf.ogg")
 [101][0,1]<1>()("@2<\n>P. G. Edy has joined the party!")
-[103][0,1]<1>()("Set the Cook Appearance variable to 1.")
+[103][0,1]<1>()("Set the Cook Appears variable to 1.")
 [121][4,0]<1>(2000000,1,0,0)()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
@@ -67,21 +67,21 @@ WoditorEvCOMMAND_END
 ■Show Message: @2\nP. G. Edy\n  My name's P. G. Edy!\n  I'm an old dude who came from Brazil!
 ■Show Message: P. G. Edy\n  I love strong people!
 ■Show Message: P. G. Edy\n  If you get to Level 10 or higher,\n  I'll join your party!
-▼ Get Wolfarl's level and assign it to Self Variable 1.
+▼ Store Wolfarl's level in Self Variable 1.
 ■Call Event: This Ev Self1 = Common 22: [ ▲Get Ally Data [Number] ] / 12:Wolfarl / 10:Level
-▼ If it's 10 or more, join the party.
+▼ If it's 10 or greater, join the party.
 ■Condition (Number):   [1] This Ev Self1 >=  10  
 -◇Condition:  [1]  [ This Ev Self1 >= 10   ] Case↓
  |■Show Message: @4\nWolfarl informed him she was already at\nLevel \self[1].
  |■Show Message: @2\nP. G. Edy\n  Well, great! I'll come with you, miss!
- |▼ Add Eddie to the party.
+ |▼ Make Edy join.
  |■Call Event: Common 5: [ ○ Change Members ] / 0:Add Member / 13:P. G. Edy
  |▼ Set Self Variable 0 to 1.
  |▼ (This page's condition is no longer met, and the event is no longer displayed.)
  |■Set Variable: This Ev Self0 = 1 + 0 
  |■Sound: SE File [SE/System_Get2_wolf.ogg] Vol 100% Pitch 100% (0 Channel) Play / Delay: 0 Frames
  |■Show Message: @2\nP. G. Edy has joined the party!
- |▼ Set the Cook Appearance variable to 1.
+ |▼ Set the Cook Appears variable to 1.
  |■Set Variable: V0[[Sample Game] Cook Appears] = 1 + 0 
  |■
 ◇End◇

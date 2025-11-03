@@ -43,13 +43,13 @@ OPTION_VAL_2=0
 COMMAND_NUM=3
 --
 WoditorEvCOMMAND_START
-[101][0,1]<0>()("Do you know the Graphic Maker?<\n>It's a tool you can use to make character images by<\n>combining parts!")
+[101][0,1]<0>()("Do you know the Graphic Maker?<\n>It's a tool you can use to make character images<\n>by combining parts!")
 [101][0,1]<0>()("It should be in the Extras folder,<\n>so take a look!")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message: Do you know the Graphic Maker?\nIt's a tool you can use to make character images by\ncombining parts!
+■Show Message: Do you know the Graphic Maker?\nIt's a tool you can use to make character images\nby combining parts!
 ■Show Message: It should be in the Extras folder,\nso take a look!
 ■
 [COMMAND_TEXT_END]

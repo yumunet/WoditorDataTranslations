@@ -320,7 +320,7 @@ Can also bring back fainted allies.",1,1,0,0,0,0,-1,0,50,0,0,0,0,-1,-1,""," used
 "Tasty Bread","Tasty bread that chickens love. Recovers 50 HP.
 But it can't be eaten in battle.",0,1,0,0,0,0,-1,0,0,50,0,0,-1,-1,-1,"","",1,"",
 "Machine Gun Bullets","Bullets required to attack with Machine Gun.
-They're sold at stores.",0,0,0,0,0,0,-1,0,0,0,0,0,-1,-1,-1,"","",0,"",
+They're sold at shops.",0,0,0,0,0,0,-1,0,0,0,0,0,-1,-1,-1,"","",0,"",
 "Dungeon Key","The key to enter the dungeon.",0,0,0,0,0,0,-1,0,0,0,0,0,-1,-1,-1,"","",0,"",
 "WOLF RPG Editor","A tool for creating worlds. 
 Bring this to the town entrance to trigger the ending.",0,3,0,0,500214,1,-1,0,0,0,0,0,-1,-1,-1,"","",0,"",

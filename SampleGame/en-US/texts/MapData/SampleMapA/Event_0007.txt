@@ -42,7 +42,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("-----------------------------------------------------")
 [103][0,1]<0>()("[Useful Information to Anyone Viewing This Event!]")
 [103][0,1]<0>()("You can easily scroll the map by clicking the middle mouse button")
-[103][0,1]<0>()("(or pressing Space) and moving the mouse (dragging).")
+[103][0,1]<0>()("(or holding Space) and moving the mouse around.")
 [103][0,1]<0>()("-----------------------------------------------------")
 [101][0,1]<0>()("Hello there, I'm the Professor!<\n>What have you come to ask today?")
 [180][1,0]<0>(1)()
@@ -50,7 +50,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<0>(2)()
 [101][0,1]<1>()("I can introduce you to the basic functions of the<\n>WOLF RPG Editor!")
 [101][0,1]<1>()("If you want to make your own system,<\n>or you want to master using WOLF RPG Editor,<\n>you should really stop and listen!")
-[101][0,1]<1>()("Ah, but if you don't care to learn and find the basic <\n>system is enough, then you don't really need to<\n>listen!")
+[101][0,1]<1>()("Ah, but if you don't care to learn and find the basic <\n>system's enough, then you don't really need to listen!")
 [0][0,0]<1>()()
 [401][1,0]<0>(3)()
 [101][0,1]<1>()("In WOLF RPG Editor, the Picture command isn't<\n>limited to showing images—it can also show text!")
@@ -80,7 +80,7 @@ WoditorEvCOMMAND_START
 [122][3,0]<1>(3000000,4099,30)()
 [112][2,4]<1>(17,3000000)("","","","")
 [401][1,0]<1>(1)()
-[101][0,1]<2>()("You cancelled it.")
+[101][0,1]<2>()("You cancelled it!")
 [0][0,0]<2>()()
 [420][1,0]<1>(0)()
 [101][0,1]<2>()("You just entered<\n><dqrt>\s[0]<dqrt>!")
@@ -119,7 +119,7 @@ WoditorEvCOMMAND_END
 ▼ -----------------------------------------------------
 ▼ [Useful Information to Anyone Viewing This Event!]
 ▼ You can easily scroll the map by clicking the middle mouse button
-▼ (or pressing Space) and moving the mouse (dragging).
+▼ (or holding Space) and moving the mouse around.
 ▼ -----------------------------------------------------
 ■Show Message: Hello there, I'm the Professor!\nWhat have you come to ask today?
 ■Wait: 1 Frames
@@ -127,7 +127,7 @@ WoditorEvCOMMAND_END
 -◇Case: Choice [1] What can you tell me?                    ↓
  |■Show Message: I can introduce you to the basic functions of the\nWOLF RPG Editor!
  |■Show Message: If you want to make your own system,\nor you want to master using WOLF RPG Editor,\nyou should really stop and listen!
- |■Show Message: Ah, but if you don't care to learn and find the basic \nsystem is enough, then you don't really need to\nlisten!
+ |■Show Message: Ah, but if you don't care to learn and find the basic \nsystem's enough, then you don't really need to listen!
  |■
 -◇Case: Choice [2] Tell me about string pictures            ↓
  |■Show Message: In WOLF RPG Editor, the Picture command isn't\nlimited to showing images—it can also show text!
@@ -157,7 +157,7 @@ WoditorEvCOMMAND_END
  |■Set String: S0[[Sample] Temporary String] = Keyboard Input 30 Bytes [Cancellable] 
  |■Condition (String):   [1] S0[[Sample] Temporary String] Is Equal to ""
  |-◇Condition:  [1] [ S0[[Sample] Temporary String] Is Equal to "" ] Case↓
- | |■Show Message: You cancelled it.
+ | |■Show Message: You cancelled it!
  | |■
  |-◇Else
  | |■Show Message: You just entered\n"\s[0]"!

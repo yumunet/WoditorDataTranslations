@@ -81,12 +81,12 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("Move the display position of the choice box down a little.")
+[103][0,1]<0>()("Move the position of the choice window down a little.")
 [121][4,0]<0>(9000004,150,0,0)()
-[103][0,1]<0>()("Display the usual game start choices here.")
+[103][0,1]<0>()("This displays the usual choices on game start.")
 [102][1,3]<0>(19)("<C>Start","<C>Continue","<C>Quit")
 [401][1,0]<0>(2)()
-[103][0,1]<1>()("Set the display position of the choice box back to default.")
+[103][0,1]<1>()("Set the position of the choice window back to default.")
 [121][4,0]<1>(9000004,-1,0,0)()
 [103][0,1]<1>()("Erase the title screen picture.")
 [150][3,0]<1>(2,1,0)()
@@ -107,7 +107,7 @@ WoditorEvCOMMAND_START
 [202][0,0]<2>()()
 [180][1,0]<2>(7)()
 [103][0,1]<2>()("Display messages.")
-[101][0,1]<2>()("Wolfarl<\n>  Welcome to the world of WOLF RPG Editor!<\n>  My name is Wolfarl, and I will be your guide.")
+[101][0,1]<2>()("Wolfarl<\n>  Welcome to the world of WOLF RPG Editor!<\n>  My name is Wolfarl and I will be your guide.")
 [101][0,1]<2>()("Wolfarl<\n>  This sample game shows you an example of<\n>  what kind of RPG you can create with<\n>  WOLF RPG Editor!")
 [101][0,1]<2>()("Wolfarl<\n>  You can also try out the included base system,<\n>  so feel free to try anything you like!")
 [101][0,1]<2>()("Wolfarl<\n>  Now, let's start our little adventure!")
@@ -175,12 +175,12 @@ WoditorEvCOMMAND_END
  |■
 ◇End◇
 ▼  
-▼ Move the display position of the choice box down a little.
+▼ Move the position of the choice window down a little.
 ■Set Variable: Sys4:Choice Window Y = 150 + 0 
-▼ Display the usual game start choices here.
+▼ This displays the usual choices on game start.
 ■Show Choice: / [1] <C>Start / [2] <C>Continue / [3] <C>Quit 
 -◇Case: Choice [1] <C>Start                                 ↓
- |▼ Set the display position of the choice box back to default.
+ |▼ Set the position of the choice window back to default.
  |■Set Variable: Sys4:Choice Window Y = -1 + 0 
  |▼ Erase the title screen picture.
  |■Picture Erase: 1  / 0(0) Frames
@@ -201,7 +201,7 @@ WoditorEvCOMMAND_END
  | |■Wait for Move Route
  | |■Wait: 7 Frames
  | |▼ Display messages.
- | |■Show Message: Wolfarl\n  Welcome to the world of WOLF RPG Editor!\n  My name is Wolfarl, and I will be your guide.
+ | |■Show Message: Wolfarl\n  Welcome to the world of WOLF RPG Editor!\n  My name is Wolfarl and I will be your guide.
  | |■Show Message: Wolfarl\n  This sample game shows you an example of\n  what kind of RPG you can create with\n  WOLF RPG Editor!
  | |■Show Message: Wolfarl\n  You can also try out the included base system,\n  so feel free to try anything you like!
  | |■Show Message: Wolfarl\n  Now, let's start our little adventure!

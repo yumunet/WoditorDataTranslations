@@ -51,7 +51,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<0>(1)()
 [103][0,1]<1>()("If the player hasn't learned Attack All (if it's 0),")
 [103][0,1]<1>()("display the <dqrt>Eat here<dqrt> choice.")
-[122][3,1]<1>(3000000,0,0)("Eat here (Lean a skill)")
+[122][3,1]<1>(3000000,0,0)("Eat here (Learn a skill)")
 [0][0,0]<1>()()
 [401][1,0]<0>(2)()
 [103][0,1]<1>()("If the player has learned it (1 or more), don't display the choice.")
@@ -96,7 +96,7 @@ WoditorEvCOMMAND_END
 -◇Condition:  [1]  [ This Ev Self1 == 0   ] Case↓
  |▼ If the player hasn't learned Attack All (if it's 0),
  |▼ display the "Eat here" choice.
- |■Set String: S0[[Sample] Temporary String] = "Eat here (Lean a skill)"
+ |■Set String: S0[[Sample] Temporary String] = "Eat here (Learn a skill)"
  |■
 -◇Condition:  [2]  [ This Ev Self1 >= 1   ] Case↓
  |▼ If the player has learned it (1 or more), don't display the choice.

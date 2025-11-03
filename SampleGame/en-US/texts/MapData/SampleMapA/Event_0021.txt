@@ -65,15 +65,15 @@ OPTION_VAL_2=0
 COMMAND_NUM=4
 --
 WoditorEvCOMMAND_START
-[101][0,1]<0>()("Gobu! I'm usin' \c[3]<dqrt>Auto-Move [Smart]<dqrt>\c[0] to \c[3]go back<\n>and forth between the apples and the barrel!\c[0]<\n>So even if ya get in my way, I can still dodge ya just<\n>fine, gobu!")
-[101][0,1]<0>()("But I can't move unless there's a full 1x1 tile open, so<\n>don't go standin' in \c[2]that halfway spot in front of<\n>the counter\c[0], gobu!")
-[101][0,1]<0>()("Auto-Move don't always work on narrow paths, so<\n>keep that in mind when usin' it, gobu!")
+[101][0,1]<0>()("Gobu! I'm usin' \c[3]<dqrt>Auto-Move [Smart]<dqrt>\c[0] to \c[3]go back<\n>and forth between the apples and the barrel!\c[0]<\n>So even if ya get in my way, I can still dodge ya<\n>just fine, gobu!")
+[101][0,1]<0>()("But I can't move if it ain't a full 1x1 tile, so don't go<\n>standin' in \c[2]that awkward spot in front of the counter\c[0],<\n>gobu!")
+[101][0,1]<0>()("Auto-Move don't always work on narrow paths,<\n>so when usin' it, just remember, gobu!")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-■Show Message: Gobu! I'm usin' \c[3]"Auto-Move [Smart]"\c[0] to \c[3]go back\nand forth between the apples and the barrel!\c[0]\nSo even if ya get in my way, I can still dodge ya just\nfine, gobu!
-■Show Message: But I can't move unless there's a full 1x1 tile open, so\ndon't go standin' in \c[2]that halfway spot in front of\nthe counter\c[0], gobu!
-■Show Message: Auto-Move don't always work on narrow paths, so\nkeep that in mind when usin' it, gobu!
+■Show Message: Gobu! I'm usin' \c[3]"Auto-Move [Smart]"\c[0] to \c[3]go back\nand forth between the apples and the barrel!\c[0]\nSo even if ya get in my way, I can still dodge ya\njust fine, gobu!
+■Show Message: But I can't move if it ain't a full 1x1 tile, so don't go\nstandin' in \c[2]that awkward spot in front of the counter\c[0],\ngobu!
+■Show Message: Auto-Move don't always work on narrow paths,\nso when usin' it, just remember, gobu!
 ■
 [COMMAND_TEXT_END]

@@ -51,7 +51,7 @@ WoditorEvCOMMAND_START
 [101][0,1]<1>()("@2<\n>P. G. Edy<\n>  Yeah! Let's get going soon!")
 [102][1,2]<1>(50)("Leave (Ending)","Don't leave yet")
 [401][1,0]<1>(2)()
-[101][0,1]<2>()("@4<\n>Wolfarl<\n>  And thank you in front of the screen<\n>  for playing, too!")
+[101][0,1]<2>()("@4<\n>Wolfarl<\n>  Thank you so much for playing,<\n>  you in front of the screen!")
 [101][0,1]<2>()("Wolfarl<\n>  I'll be glad if playing this made you want<\n>  to tinker with WOLF RPG Editor a little!")
 [101][0,1]<2>()("Wolfarl<\n>  Well, I hope we meet again!<\n>  Have a fun time making games!")
 [140][4,0]<2>(16776960,10,0,0)()
@@ -63,7 +63,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<2>(1100000,0,0,0)()
 [170][0,0]<2>()()
 [180][1,0]<3>(4)()
-[103][0,1]<3>()("Move the picture 1 pixel every four frames.")
+[103][0,1]<3>()("Move the picture 1 pixel every 4 frames.")
 [123][2,0]<3>(1100001,48)()
 [111][7,0]<3>(2,1100001,0,2,1100001,10,1)()
 [401][1,0]<3>(1)()
@@ -110,7 +110,7 @@ WoditorEvCOMMAND_END
  |■Show Message: @2\nP. G. Edy\n  Yeah! Let's get going soon!
  |■Show Choice: / [1] Leave (Ending) / [2] Don't leave yet 
  |-◇Case: Choice [1] Leave (Ending)                           ↓
- | |■Show Message: @4\nWolfarl\n  And thank you in front of the screen\n  for playing, too!
+ | |■Show Message: @4\nWolfarl\n  Thank you so much for playing,\n  you in front of the screen!
  | |■Show Message: Wolfarl\n  I'll be glad if playing this made you want\n  to tinker with WOLF RPG Editor a little!
  | |■Show Message: Wolfarl\n  Well, I hope we meet again!\n  Have a fun time making games!
  | |■Sound: BGM Stop  / Fade Time: 10 Frames
@@ -122,7 +122,7 @@ WoditorEvCOMMAND_END
  | |■Set Variable: This Ev Self0 = 0 + 0 
  | |■Loop Start
  | | |■Wait: 4 Frames
- | | |▼ Move the picture 1 pixel every four frames.
+ | | |▼ Move the picture 1 pixel every 4 frames.
  | | |■Key Input: This Event's Self1 /  [Normal Input]  Confirm (10) Cancel (11)
  | | |■Condition (Number):   [1] This Ev Self1 ==  0  /  [2] This Ev Self1 >=  10  
  | | |-◇Condition:  [1]  [ This Ev Self1 == 0   ] Case↓
