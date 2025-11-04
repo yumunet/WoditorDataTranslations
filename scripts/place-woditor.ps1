@@ -6,7 +6,11 @@ function Copy-Woditor([string]$ProjectName) {
     if (-not (Test-Path $dest)) {
         New-Item -Path $dest -ItemType Directory > $null
     }
-    Copy-Item -Path "$SourceWoditorDir\*" -Destination $dest -Include "*.exe", "*.dll", "Editor.ini", "Editor.Lang.SystemString.txt", "Editor.Lang.SystemValue.txt"
+    Copy-Item -Path "$SourceWoditorDir\*" -Destination $dest -Include "*.exe", "*.dll", "Editor.Lang.SystemString.txt", "Editor.Lang.SystemValue.txt"
+    # Do not overwrite Editor.ini.
+    if (-not (Test-Path "$dest\Editor.ini")) {
+        Copy-Item "$SourceWoditorDir\Editor.ini" $dest
+    }
 }
 
 Set-Location (Split-Path -Path $PSScriptRoot -Parent)
