@@ -60,14 +60,22 @@ function Split-Texts([string]$Src, [string]$Dest) {
                 [IO.File]::WriteAllText("$pathBase\$fileName", $sections[$i])
             }
 
-            # Remove files of deleted items.
-            $destFiles = Get-ChildItem -Path "$Dest\$group" | Where-Object { $_.Name -match "^$prefix\d+.txt$" } | Sort-Object
+            # Remove files for deleted items.
+            $destFiles = Get-ChildItem -Path "$pathBase" | Where-Object { $_.Name -match "^$prefix\d+.txt$" } | Sort-Object
             $items = $sections.Count - 1
             if ($destFiles.Count -gt $items) {
                 foreach ($destFile in $destFiles[$items..($destFiles.Count - 1)]) {
                     Remove-Item -Path $destFile
                 }
             }
+        }
+    }
+
+    # Remove files for deleted maps.
+    $destMapDirs = Get-ChildItem "$Dest\MapData" -Directory
+    foreach ($mapDir in $destMapDirs) {
+        if (-not (Test-Path "$Src\MapData\$($mapDir.Name).mps.Auto.txt")) {
+            Remove-item $mapDir -Recurse
         }
     }
 }
