@@ -13,9 +13,9 @@ You can do almost all tasks using scripts.
 First, install WOLF RPG Editor (Woditor) into the project folders.
 
 1. Download and extract Woditor. (en-US and pt-BR are available in [WoditorTranslationGallery](https://github.com/WoditorTrans2000/WoditorTranslationGallery))
-2. Run place-woditor.ps1. (The necessary files of the Woditor will be copied to all project folders.)
+2. Run install-woditor.ps1. (The necessary files of the Woditor will be copied to all project folders.)
     ```text
-    .\scripts\place-woditor.ps1 LOCALE_ID WODITOR_PATH
+    .\scripts\install-woditor.ps1 LOCALE_ID WODITOR_PATH
     ```
     Replace `LOCALE_ID` with the locale identifier [^1] and `WODITOR_PATH` with the Woditor folder path.
 
