@@ -192,7 +192,6 @@ function Update-EventCode([string]$FilePath, [hashtable]$NewDBs, [hashtable]$Old
             $index = Find-TypeName $OldDBs[$dbKey] $typeName
             if ($null -eq $index) {
                 Write-Error "Failed to find Type: $dbKey DB ""$typeName"""
-                continue
             }
             $typeName = $NewDBs[$dbKey][$index]["Name"]
             $typeIndex = $index
@@ -245,7 +244,7 @@ function Update-EventCode([string]$FilePath, [hashtable]$NewDBs, [hashtable]$Old
 $root = Split-Path -Path $PSScriptRoot -Parent
 $textsDir = "$root\$Project\$Locale\texts"
 $sourceDirName = "reference-update-source"
-$sourceDir = "$root\scripts\$sourceDirName"
+$sourceDir = "$PSScriptRoot\$sourceDirName"
 $sourceTextsDir = "$sourceDir\$Project\$Locale\texts"
 
 if (-not (Test-Path -Path $sourceDir)) {
@@ -258,22 +257,21 @@ Run the git command:
 
 Or copy all files to that directory in advance, before renaming databases.
 "@
-    exit 1
 }
 
 $oldDBs = Import-Databases $sourceTextsDir
 $newDBs = Import-Databases $textsDir
 
-$files = Get-ChildItem -Path "$textsDir\BasicData\CommonEvent" | Where-Object { $_.Name -match "^\d+.txt$" } | Sort-Object
+$files = Get-ChildItem -Path "$textsDir\BasicData\CommonEvent" | Where-Object { $_.Name -match "^\d+.txt$" }
 foreach ($file in $files) {
     Update-EventCode $file $newDBs $oldDBs
 }
-$files = Get-ChildItem -Path "$textsDir\MapData" -Recurse | Where-Object { $_.Name -match "^Event_\d+.txt$" } | Sort-Object
+$files = Get-ChildItem -Path "$textsDir\MapData" -Recurse | Where-Object { $_.Name -match "^Event_\d+.txt$" }
 foreach ($file in $files) {
     Update-EventCode $file $newDBs $oldDBs
 }
 
 Write-Output "Update complete. Please import."
-& "$root\scripts\import.ps1" $Project $Locale || $(exit)
-Write-output "Imported. Exporting..."
-& "$root\scripts\export.ps1" $Project $Locale
+& "$PSScriptRoot\import.ps1" $Project $Locale || $(exit)
+Write-Output "Imported. Exporting..."
+& "$PSScriptRoot\export.ps1" $Project $Locale

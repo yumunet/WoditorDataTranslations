@@ -24,7 +24,6 @@ function Update-EventCode([string]$FilePath, [string[]]$NewNames, [string[]]$Old
         $index = $OldNames.IndexOf($commonEventName)
         if ($index -eq -1) {
             Write-Error "Failed to find Common Event: ""$commonEventName"""
-            # Exited by error
         }
         $commonEventName = $NewNames[$index]
 
@@ -39,7 +38,7 @@ function Update-EventCode([string]$FilePath, [string[]]$NewNames, [string[]]$Old
 $root = Split-Path -Path $PSScriptRoot -Parent
 $textsDir = "$root\$Project\$Locale\texts"
 $sourceDirName = "reference-update-source"
-$sourceDir = "$root\scripts\$sourceDirName"
+$sourceDir = "$PSScriptRoot\$sourceDirName"
 $sourceTextsDir = "$sourceDir\$Project\$Locale\texts"
 
 if (-not (Test-Path -Path $sourceDir)) {
@@ -52,22 +51,21 @@ Run the git command:
 
 Or copy all files to that directory in advance, before renaming common events.
 "@
-    exit 1
 }
 
 $oldNames = Import-CommonEventNames $sourceTextsDir
 $newNames = Import-CommonEventNames $textsDir
 
-$files = Get-ChildItem -Path "$textsDir\BasicData\CommonEvent" | Where-Object { $_.Name -match "^\d+.txt$" } | Sort-Object
+$files = Get-ChildItem -Path "$textsDir\BasicData\CommonEvent" | Where-Object { $_.Name -match "^\d+.txt$" }
 foreach ($file in $files) {
     Update-EventCode $file $newNames $oldNames
 }
-$files = Get-ChildItem -Path "$textsDir\MapData" -Recurse | Where-Object { $_.Name -match "^Event_\d+.txt$" } | Sort-Object
+$files = Get-ChildItem -Path "$textsDir\MapData" -Recurse | Where-Object { $_.Name -match "^Event_\d+.txt$" }
 foreach ($file in $files) {
     Update-EventCode $file $newNames $oldNames
 }
 
 Write-Output "Update complete. Please import."
-& "$root\scripts\import.ps1" $Project $Locale || $(exit)
-Write-output "Imported. Exporting..."
-& "$root\scripts\export.ps1" $Project $Locale
+& "$PSScriptRoot\import.ps1" $Project $Locale || $(exit)
+Write-Output "Imported. Exporting..."
+& "$PSScriptRoot\export.ps1" $Project $Locale

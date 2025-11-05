@@ -5,14 +5,15 @@ function Split-Texts([string]$Src, [string]$Dest) {
     foreach ($group in @("BasicData", "MapData")) {
         $files = Get-ChildItem -Path "$Src\$group\*" -Include *.Auto.txt
         foreach ($file in $files) {
-            $pathBase = "$Dest\$group\" + ($file.Name -replace "\..+", "")
+            $basePath = "$Dest\$group\" + ($file.Name -replace "\..+", "")
 
             if (($group -eq "BasicData") -and ($file.Name -eq "Game.dat.Auto.txt")) {
-                Copy-Item -Path $file -Destination "$pathBase.txt"
+                Copy-Item -Path $file -Destination "$basePath.txt"
                 continue
             }
-            elseif (-not (Test-Path -Path $pathBase)) {
-                New-Item -Path $pathBase -ItemType Directory > $null
+
+            if (-not (Test-Path -Path $basePath)) {
+                New-Item -Path $basePath -ItemType Directory > $null
             }
 
             $content = [IO.File]::ReadAllText($file)
@@ -38,7 +39,7 @@ function Split-Texts([string]$Src, [string]$Dest) {
                 $parts = $content -split "(?m)^----------`r`n"
                 
                 # Map itself
-                [IO.File]::WriteAllText("$pathBase\Map.txt", $parts[0])
+                [IO.File]::WriteAllText("$basePath\Map.txt", $parts[0])
                 
                 # Map Events
                 $sectionsContent = $parts[1]
@@ -57,11 +58,11 @@ function Split-Texts([string]$Src, [string]$Dest) {
                     $index = "{0:D$Digits}" -f ($i - 1)
                     $fileName += "$index.txt"
                 }
-                [IO.File]::WriteAllText("$pathBase\$fileName", $sections[$i])
+                [IO.File]::WriteAllText("$basePath\$fileName", $sections[$i])
             }
 
             # Remove files for deleted items.
-            $destFiles = Get-ChildItem -Path "$pathBase" | Where-Object { $_.Name -match "^$prefix\d+.txt$" } | Sort-Object
+            $destFiles = Get-ChildItem -Path "$basePath" | Where-Object { $_.Name -match "^$prefix\d+.txt$" } | Sort-Object
             $items = $sections.Count - 1
             if ($destFiles.Count -gt $items) {
                 foreach ($destFile in $destFiles[$items..($destFiles.Count - 1)]) {
@@ -72,10 +73,10 @@ function Split-Texts([string]$Src, [string]$Dest) {
     }
 
     # Remove files for deleted maps.
-    $destMapDirs = Get-ChildItem "$Dest\MapData" -Directory
+    $destMapDirs = Get-ChildItem -Path "$Dest\MapData" -Directory
     foreach ($mapDir in $destMapDirs) {
-        if (-not (Test-Path "$Src\MapData\$($mapDir.Name).mps.Auto.txt")) {
-            Remove-item $mapDir -Recurse
+        if (-not (Test-Path -Path "$Src\MapData\$($mapDir.Name).mps.Auto.txt")) {
+            Remove-Item -Path $mapDir -Recurse
         }
     }
 }
@@ -89,16 +90,16 @@ $woditorTextDir = "$woditorDir\Data_AutoTXT"
 $textsDir = "$langDir\texts"
 $othersDir = "$langDir\others"
 
-# Remove all map text files because when the maps are deleted, the files remain.
+# Clear previously exported map text files, since files from deleted maps may remain.
 Remove-Item -Path "$woditorTextDir\MapData\*" -Recurse -ErrorAction SilentlyContinue
-Start-Process "$woditorDir\Editor.exe" "-txtoutput" -Wait
+Start-Process -FilePath "$woditorDir\Editor.exe" -ArgumentList "-txtoutput" -Wait
 
 Split-Texts $woditorTextDir $textsDir
 
-. "$root\scripts\.util.ps1"
+. "$PSScriptRoot\.util.ps1"
 Copy-Assets $woditorDataDir $assetsDir
 Copy-Others $woditorDataDir $othersDir
-# If there are no files in the Others directory, remove the directory.
+# If empty, remove the others directory.
 if ((Get-ChildItem -Path $othersDir -Recurse -File).Count -eq 0) {
-    Remove-Item -Path $othersDir -Recurse
+    Remove-Item -Path $othersDir
 }

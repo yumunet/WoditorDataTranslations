@@ -63,8 +63,8 @@ if (Test-Path -Path $woditorDataDir) {
 
 Join-Texts $textsDir $woditorTextDir
 
-Start-Process "$woditorDir\Editor.exe" "-txtinput" -Wait
+Start-Process -FilePath "$woditorDir\Editor.exe" -ArgumentList "-txtinput" -Wait
 
-. "$root\scripts\.util.ps1"
+. "$PSScriptRoot\.util.ps1"
 Copy-Assets $assetsDir $woditorDataDir
 Copy-Others $othersDir $woditorDataDir
