@@ -56,7 +56,7 @@ $files = Get-ChildItem -Path "$textsDir\BasicData\CommonEvent" | Where-Object { 
 foreach ($file in $files) {
     Update-EventCode $file $newNames $oldNames
 }
-$files = Get-ChildItem -Path "$textsDir\BasicData\MapData" -Recurse | Where-Object { $_.Name -match "^Event_\d+.txt$" } | Sort-Object
+$files = Get-ChildItem -Path "$textsDir\MapData" -Recurse | Where-Object { $_.Name -match "^Event_\d+.txt$" } | Sort-Object
 foreach ($file in $files) {
     Update-EventCode $file $newNames $oldNames
 }
