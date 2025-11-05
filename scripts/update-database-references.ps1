@@ -249,9 +249,15 @@ $sourceDir = "$root\scripts\$sourceDirName"
 $sourceTextsDir = "$sourceDir\$Project\$Locale\texts"
 
 if (-not (Test-Path -Path $sourceDir)) {
-    Write-Output "The project directory before updating databases is required: $sourceDir"
-    Write-Output "  Run the git command ""git worktree add $sourceDir -b $sourceDirName"""
-    Write-Output "  or copy all files to that directory."
+    Write-Error @"
+The project directory before renaming databases is required:
+  "$sourceDir"
+
+Run the git command:
+  git worktree add "$sourceDir" -b $sourceDirName
+
+Or copy all files to that directory in advance, before renaming databases.
+"@
     exit 1
 }
 
