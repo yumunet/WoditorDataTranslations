@@ -43,17 +43,17 @@ function Join-Texts([string]$Src, [string]$Dest) {
     }
 }
 
-Set-Location (Split-Path -Path $PSScriptRoot -Parent)
-$assetsDir = "$Project\assets"
-$langDir = "$Project\$Locale"
+$root = Split-Path -Path $PSScriptRoot -Parent
+$assetsDir = "$root\$Project\assets"
+$langDir = "$root\$Project\$Locale"
 $woditorDir = "$langDir\_woditor"
-$dataDir = "$woditorDir\Data"
-$txtDataDir = "$woditorDir\Data_AutoTXT"
+$woditorDataDir = "$woditorDir\Data"
+$woditorTextDir = "$woditorDir\Data_AutoTXT"
 $textsDir = "$langDir\texts"
 $othersDir = "$langDir\others"
 
 # Confirm
-if (Test-Path -Path $dataDir) {
+if (Test-Path -Path $woditorDataDir) {
     $typeName = "System.Management.Automation.Host.ChoiceDescription"
     $choice = $host.ui.PromptForChoice("Confirm", "Are you sure you want to import?", @((New-Object $typeName "&No", "No"), (New-Object $typeName "&Yes", "Yes")), 0)
     if ($choice -eq 0) {
@@ -61,10 +61,10 @@ if (Test-Path -Path $dataDir) {
     }
 }
 
-Join-Texts $textsDir $txtDataDir
+Join-Texts $textsDir $woditorTextDir
 
 Start-Process "$woditorDir\Editor.exe" "-txtinput" -Wait
 
-. scripts\.util.ps1
-Copy-Assets $assetsDir $dataDir
-Copy-Others $othersDir $dataDir
+. "$root\scripts\.util.ps1"
+Copy-Assets $assetsDir $woditorDataDir
+Copy-Others $othersDir $woditorDataDir

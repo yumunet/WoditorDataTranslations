@@ -80,24 +80,24 @@ function Split-Texts([string]$Src, [string]$Dest) {
     }
 }
 
-Set-Location (Split-Path -Path $PSScriptRoot -Parent)
-$assetsDir = "$Project\assets"
-$langDir = "$Project\$Locale"
+$root = Split-Path -Path $PSScriptRoot -Parent
+$assetsDir = "$root\$Project\assets"
+$langDir = "$root\$Project\$Locale"
 $woditorDir = "$langDir\_woditor"
-$dataDir = "$woditorDir\Data"
-$txtDataDir = "$woditorDir\Data_AutoTXT"
+$woditorDataDir = "$woditorDir\Data"
+$woditorTextDir = "$woditorDir\Data_AutoTXT"
 $textsDir = "$langDir\texts"
 $othersDir = "$langDir\others"
 
 # Remove all map text files because when the maps are deleted, the files remain.
-Remove-Item -Path "$txtDataDir\MapData\*" -Recurse -ErrorAction SilentlyContinue
+Remove-Item -Path "$woditorTextDir\MapData\*" -Recurse -ErrorAction SilentlyContinue
 Start-Process "$woditorDir\Editor.exe" "-txtoutput" -Wait
 
-Split-Texts $txtDataDir $textsDir
+Split-Texts $woditorTextDir $textsDir
 
-. scripts\.util.ps1
-Copy-Assets $dataDir $assetsDir
-Copy-Others $dataDir $othersDir
+. "$root\scripts\.util.ps1"
+Copy-Assets $woditorDataDir $assetsDir
+Copy-Others $woditorDataDir $othersDir
 # If there are no files in the Others directory, remove the directory.
 if ((Get-ChildItem -Path $othersDir -Recurse -File).Count -eq 0) {
     Remove-Item -Path $othersDir -Recurse

@@ -242,10 +242,11 @@ function Update-EventCode([string]$FilePath, [hashtable]$NewDBs, [hashtable]$Old
     [IO.File]::WriteAllText($FilePath, $content)
 }
 
-Set-Location (Split-Path -Path $PSScriptRoot -Parent)
-$textsDir = "$Project\$Locale\texts"
+$root = Split-Path -Path $PSScriptRoot -Parent
+$textsDir = "$root\$Project\$Locale\texts"
 $sourceDirName = "reference-update-source"
-$sourceDir = "scripts\$sourceDirName"
+$sourceDir = "$root\scripts\$sourceDirName"
+$sourceTextsDir = "$sourceDir\$Project\$Locale\texts"
 
 if (-not (Test-Path -Path $sourceDir)) {
     Write-Output "The project directory before updating databases is required: $sourceDir"
@@ -254,7 +255,7 @@ if (-not (Test-Path -Path $sourceDir)) {
     exit 1
 }
 
-$oldDBs = Import-Databases "$sourceDir\$textsDir"
+$oldDBs = Import-Databases $sourceTextsDir
 $newDBs = Import-Databases $textsDir
 
 $files = Get-ChildItem -Path "$textsDir\BasicData\CommonEvent" | Where-Object { $_.Name -match "^\d+.txt$" } | Sort-Object
@@ -267,6 +268,6 @@ foreach ($file in $files) {
 }
 
 Write-Output "Update complete. Please import."
-.\scripts\import.ps1 $Project $Locale || $(exit)
+& "$root\scripts\import.ps1" $Project $Locale || $(exit)
 Write-output "Imported. Exporting..."
-.\scripts\export.ps1 $Project $Locale
+& "$root\scripts\export.ps1" $Project $Locale
