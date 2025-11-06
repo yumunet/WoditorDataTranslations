@@ -112,9 +112,9 @@ WoditorEvCOMMAND_START
 [150][11,1]<1>(0,1,0,1,1,1,255,20,20,100,0)("EnemyGraphic/GD_Basilisk(Red).png")
 [101][0,1]<1>()("Just for example, let's try tweaking this monster's<\n>colors! Here goes!")
 [290][7,0]<1>(336,0,1,1,150,0,0)()
-[101][0,1]<1>()("Okay! Just change the hue with the Effect, and<\n>it makes color variations of enemies like this.<\n>And...")
+[101][0,1]<1>()("Okay! Just change the hue with the Effect,<\n>and you get color variations of enemies like this.<\n>And...")
 [290][7,0]<1>(336,0,1,1,0,-255,0)()
-[101][0,1]<1>()("Set the saturation to 0, and it easily makes<\n>black-and-white ones like this!")
+[101][0,1]<1>()("Set the saturation to 0, and you can easily get<\n>black-and-white ones like this!")
 [150][3,0]<1>(2,1,0)()
 [150][11,1]<1>(0,1,0,6,4,10,255,20,20,300,0)("CharaChip/Special_Tiga.png")
 [101][0,1]<1>()("Now for the blur function!<\n>Let's try it on my image...")
@@ -333,9 +333,9 @@ WoditorEvCOMMAND_END
  |■Picture Show: 1 [Top-Left] File [EnemyGraphic/GD_Basilisk(Red).png] X:20 Y:20 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
  |■Show Message: Just for example, let's try tweaking this monster's\ncolors! Here goes!
  |■Effect Picture: 1 [Filter/Hue Saturation Lightness] H150/S0/L0
- |■Show Message: Okay! Just change the hue with the Effect, and\nit makes color variations of enemies like this.\nAnd...
+ |■Show Message: Okay! Just change the hue with the Effect,\nand you get color variations of enemies like this.\nAnd...
  |■Effect Picture: 1 [Filter/Hue Saturation Lightness] H0/S-255/L0
- |■Show Message: Set the saturation to 0, and it easily makes\nblack-and-white ones like this!
+ |■Show Message: Set the saturation to 0, and you can easily get\nblack-and-white ones like this!
  |■Picture Erase: 1  / 0(0) Frames
  |■Picture Show: 1 [Top-Left] File [CharaChip/Special_Tiga.png] X:20 Y:20 / 0(0) Frames  / Pattern 10 / Opacity 255 / Normal  / Angle 0 / Zoom 300% / Color R[100] G[100] B[100]
  |■Show Message: Now for the blur function!\nLet's try it on my image...
