@@ -6,5 +6,5 @@ function Copy-Assets([string]$Src, [string]$Dest) {
 }
 
 function Copy-Others([string]$Src, [string]$Dest) {
-    robocopy $Src $Dest $OtherFiles /s /purge > $null
+    robocopy $Src $Dest $OtherFiles /s > $null
 }
