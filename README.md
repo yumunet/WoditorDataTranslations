@@ -2,13 +2,13 @@
 
 This repository contains translations of the following data for WOLF RPG Editor (Woditor).
 
-- Sample Game
-- Empty Data (TODO)
-  - Empty Data with Base System
-  - Completely Empty Data
-- Extras (TODO)
-  - Graphic Maker
-  - Version 1 Assets
+- Sample Game (🛠️**In progress**)
+- Empty Data
+  - Empty Data with Base System (🛠️**In progress**)
+  - Completely Empty Data (✅Done)
+- Extras
+  - Graphic Maker (📝TODO)
+  - Version 1 Assets (📝TODO)
 
 ## Workflow
 
