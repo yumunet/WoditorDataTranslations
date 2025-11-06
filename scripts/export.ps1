@@ -148,5 +148,5 @@ else {
 Copy-Others $woditorDataDir $othersDir
 # If empty, remove the others directory.
 if ((Get-ChildItem -Path $othersDir -Recurse -File).Count -eq 0) {
-    Remove-Item -Path $othersDir
+    Remove-Item -Path $othersDir -Recurse
 }
