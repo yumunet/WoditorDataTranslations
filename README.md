@@ -8,7 +8,7 @@ This repository contains translations of the following data for WOLF RPG Editor 
   - Completely Empty Data
 - Extras (TODO)
   - Graphic Maker
-  - Version 1 Resources
+  - Version 1 Assets
 
 ## Workflow
 
