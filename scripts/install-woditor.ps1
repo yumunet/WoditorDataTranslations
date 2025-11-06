@@ -7,7 +7,7 @@ function Copy-Woditor([string]$Dest) {
     }
     Copy-Item -Path "$SourceWoditorDir\*" -Destination $Dest -Include "*.exe", "*.dll", "Editor.Lang.SystemString.txt", "Editor.Lang.SystemValue.txt"
     # Do not overwrite Editor.ini.
-    if (-not (Test-Path -Path "$Dest\Editor.ini")) {
+    if (-not (Test-Path -Path "$Dest\Editor.ini") -and (Test-Path -Path "$SourceWoditorDir\Editor.ini")) {
         Copy-Item -Path "$SourceWoditorDir\Editor.ini" -Destination $Dest
     }
 }
