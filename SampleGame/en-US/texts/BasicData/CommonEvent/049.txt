@@ -313,7 +313,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("If there's a file, play it.")
 [112][2,4]<0>(1,270035465)("","","","")
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("Volume and frequency are 0%, but they automatically become 100, so not a problem.")
+[103][0,1]<1>()("Volume and pitch are 0%, but they automatically become 100, so not a problem.")
 [140][6,1]<1>(33554464,0,0,0,0,0)("\cself[9]")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
@@ -435,7 +435,7 @@ WoditorEvCOMMAND_END
 ▼ If there's a file, play it.
 ■Condition (String):   [1] CSelf9[Sound File] Is Not Equal to ""
 -◇Condition:  [1] [ CSelf9[Sound File] Is Not Equal to "" ] Case↓
- |▼ Volume and frequency are 0%, but they automatically become 100, so not a problem.
+ |▼ Volume and pitch are 0%, but they automatically become 100, so not a problem.
  |■Sound: SE File [\cself[9]] Vol 0% Pitch 0% (0 Channel) Play / Delay: 0 Frames
  |■
 ◇End◇

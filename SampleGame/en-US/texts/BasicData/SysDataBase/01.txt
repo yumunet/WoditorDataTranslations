@@ -13,9 +13,9 @@ TYPENAME=BGM List
 ITEMNAME_NUM=4
 ITEMNAME0=Filename
 ITEMNAME1=Playback Volume [%]
-ITEMNAME2=Playback Frequency [%]
+ITEMNAME2=Playback Pitch [%]
 ITEMNAME3=Loop Start Point (ms)/Key ±
-MEMO=If Volume or Frequency<<\n>>is 0, it will automatically<<\n>>become 100(%).<<\n>><<\n>><<\n>>Behavior of Loop Start<<\n>>Point (ms)/Key ±:<<\n>><<\n>>○For Ogg and MP3 files:<<\n>>  Loop start point (ms)<<\n>>○For MIDI files:<<\n>>  Key pitch<<\n>>  (-24 to +24)<<\n>> 
+MEMO=If Volume or Pitch is 0,<<\n>>it will automatically<<\n>>become 100(%).<<\n>><<\n>><<\n>>Behavior of Loop Start<<\n>>Point (ms)/Key ±:<<\n>><<\n>>○For Ogg and MP3 files:<<\n>>  Loop start point (ms)<<\n>>○For MIDI files:<<\n>>  Key pitch<<\n>>  (-24 to +24)<<\n>> 
 ITEMTYPE_NUM=100
 ITEM_LOADTYPE_0=1
 ITEM_LOADTYPE_1=0
@@ -140,7 +140,7 @@ DEFAULT_VAL_1=0
 DEFAULT_VAL_2=0
 DEFAULT_VAL_3=0
 <<--CSV_START-->>
-"Filename","Playback Volume [%]","Playback Frequency [%]","Loop Start Point (ms)/Key ±",
+"Filename","Playback Volume [%]","Playback Pitch [%]","Loop Start Point (ms)/Key ±",
 "BGM/Town01_Takumi.mid",80,100,0,<<!--DATANAME--!>>Town,
 "BGM/Piece01_Takumi.mid",100,100,0,<<!--DATANAME--!>>End Credits,
 "BGM/Legend01_Takumi.mid",80,100,0,<<!--DATANAME--!>>Title Track,
