@@ -1,0 +1,377 @@
+COMMON_ID=76
+COMMON_NAME=X[Map]Update States
+COMMAND_COLOR=6
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=0
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=
+VALINPUT_NAME_1=
+VALINPUT_NAME_2=
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=0
+LOADTYPE2=0
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=0
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=0
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=
+RETURN_VAL_TARGET=-1
+CSELF_NAME_0=
+CSELF_NAME_1=
+CSELF_NAME_2=
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=
+CSELF_NAME_9=
+CSELF_NAME_10=Temp Variable A
+CSELF_NAME_11=
+CSELF_NAME_12=
+CSELF_NAME_13=
+CSELF_NAME_14=
+CSELF_NAME_15=
+CSELF_NAME_16=
+CSELF_NAME_17=
+CSELF_NAME_18=Remaining HP
+CSELF_NAME_19=
+CSELF_NAME_20=Processing Character ID
+CSELF_NAME_21=Processing Order
+CSELF_NAME_22=Party Member Count
+CSELF_NAME_23=Steps Until Next State Removal
+CSELF_NAME_24=HP Change per Step
+CSELF_NAME_25=SP Change per Step
+CSELF_NAME_26=Has States?
+CSELF_NAME_27=Total State Count
+CSELF_NAME_28=State ID
+CSELF_NAME_29=Remaining Turns
+CSELF_NAME_30=Subtraction Turns
+CSELF_NAME_31=
+CSELF_NAME_32=Max HP
+CSELF_NAME_33=Max SP
+CSELF_NAME_34=
+CSELF_NAME_35=Fainted?
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=
+CSELF_NAME_41=
+CSELF_NAME_42=
+CSELF_NAME_43=
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=
+CSELF_NAME_89=
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=
+COMMAND_NUM=104
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("  Updates states after walking one step.")
+[103][0,1]<0>()("  On the map, the remaining turns (steps) of all states are decreased by 1.")
+[103][0,1]<0>()("  If the remaining turns (steps) reach 0, the state is removed.")
+[103][0,1]<0>()("  If there are any damage-over-time effects, such as poison, they're processed here.")
+[103][0,1]<0>()("")
+[103][0,1]<0>()("  To reduce load, this process only updates a character when the <dqrt>Has States on Map?<dqrt> flag")
+[103][0,1]<0>()("  in the allies' temporary database is 1 or higher. This flag is set to 1 when a state is added,")
+[103][0,1]<0>()("  and to 0 when all states are cleared.")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("  X[Map]ParallelProcessWhenWalking")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("Loop through all members.")
+[250][5,4]<0>(18,4,0,200704,1600022)("","Base System Variables","Current Party Size","")
+[121][4,0]<0>(1600021,-1,0,0)()
+[179][1,0]<0>(1600022)()
+[121][4,0]<1>(1600021,1,0,256)()
+[103][0,1]<1>()("Get character ID from Party database.")
+[121][4,0]<1>(1600010,1600021,1,0)()
+[250][5,4]<1>(3,0,1600010,69632,1600020)("","Party","","")
+[111][4,0]<1>(1,1600020,0,1)()
+[401][1,0]<1>(1)()
+[250][5,4]<2>(21,1600020,9,331776,1600026)("","×Allies Temp Data","","[Temp] Has States on Map?")
+[111][4,0]<2>(1,1600026,1,1)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("First, process HP/SP auto-change.")
+[250][5,4]<3>(21,1600020,10,331776,1600024)("","×Allies Temp Data","","[Temp] HP Auto Change")
+[250][5,4]<3>(21,1600020,11,331776,1600025)("","×Allies Temp Data","","[Temp] SP Auto Change")
+[250][5,4]<3>(21,1600020,0,331776,1600032)("","×Allies Temp Data","","[Temp] Post-Calc Max HP")
+[250][5,4]<3>(21,1600020,1,331776,1600033)("","×Allies Temp Data","","[Temp] Post-Calc Max SP")
+[250][5,4]<3>(5,1600020,0,69632,1600035)("","┗ State List","","")
+[111][4,0]<3>(1,1600035,0,2)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("If not fainted, change HP.")
+[250][5,4]<4>(0,1600020,5,327696,1600024)("","Allies","","HP")
+[250][5,4]<4>(0,1600020,5,327792,1600032)("","Allies","","HP")
+[250][5,4]<4>(0,1600020,5,327776,0)("","Allies","","HP")
+[103][0,1]<4>()("If a character has just fainted, add the Fainted state.")
+[250][5,4]<4>(0,1600020,5,331776,1600018)("","Allies","","HP")
+[111][4,0]<4>(1,1600018,0,3)()
+[401][1,0]<4>(1)()
+[103][0,1]<5>()("Add the Fainted state. (If fainting is prevented by system settings, set HP to 1.)")
+[300][5,1]<5>(0,3,1600020,0,1)("X[Map]Add/Remove State")
+[300][3,1]<5>(0,1,1600020)("X[Map]CalcTempStats <Initialize>")
+[300][3,1]<5>(0,1,1600020)("X[Map]CalcTempStats <Equipments>")
+[300][3,1]<5>(0,1,1600020)("X[Map]CalcTempStats <StatusEffects>")
+[250][5,4]<5>(5,1600020,0,69632,1600035)("","┗ State List","","")
+[111][4,0]<5>(1,1600035,0,2)()
+[401][1,0]<5>(1)()
+[103][0,1]<6>()("If not fainted, set HP to 1.")
+[250][5,4]<6>(0,1600020,5,327776,1)("","Allies","","HP")
+[0][0,0]<6>()()
+[499][0,0]<5>()()
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[250][5,4]<3>(0,1600020,7,327696,1600025)("","Allies","","SP")
+[250][5,4]<3>(0,1600020,7,327792,1600033)("","Allies","","SP")
+[250][5,4]<3>(0,1600020,7,327776,0)("","Allies","","SP")
+[103][0,1]<3>()("Natural expiration of states (executed only if a state expires on this step)")
+[250][5,4]<3>(21,1600020,12,331776,1600023)("","×Allies Temp Data","","[Tmp] UntilNextStateRemove")
+[111][10,0]<3>(3,1600023,1,2,1600023,0,2,1600023,2,1)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("If any state expires on the next turn, subtract the maximum step count from all states.")
+[250][5,4]<4>(21,1600020,0,331776,1600030)("","×Allies Temp Data","","[Tmp] NextStateRemoveMax")
+[250][5,4]<4>(8,-1,12,70144,1600027)("","States","","")
+[103][0,1]<4>()("Calculate the remaining turns for all states. If the remaining turns reach 0, that state is removed.")
+[121][4,0]<4>(1600028,-1,0,0)()
+[179][1,0]<4>(1600027)()
+[121][4,0]<5>(1600028,1,0,256)()
+[250][5,4]<5>(2,1600020,1600028,69632,1600029)("","┗ State List","","")
+[111][4,0]<5>(1,1600029,1,1)()
+[401][1,0]<5>(1)()
+[103][0,1]<6>()("If the state can be removed by turn count, decrease its turn count.")
+[250][5,4]<6>(2,1600020,1600028,65568,1600030)("","┗ State List","","")
+[250][5,4]<6>(2,1600020,1600028,65632,0)("","┗ State List","","")
+[0][0,0]<6>()()
+[499][0,0]<5>()()
+[0][0,0]<5>()()
+[498][0,0]<4>()()
+[103][0,1]<4>()("Here, update temporary values derived from states.")
+[300][5,1]<4>(0,3,1600020,-3,2)("X[Map]Add/Remove State")
+[300][3,1]<4>(0,1,1600020)("X[Map]CalcTempStats <Initialize>")
+[300][3,1]<4>(0,1,1600020)("X[Map]CalcTempStats <Equipments>")
+[300][3,1]<4>(0,1,1600020)("X[Map]CalcTempStats <StatusEffects>")
+[0][0,0]<4>()()
+[401][1,0]<3>(2)()
+[103][0,1]<4>()("Branch to do nothing when the value is 0.")
+[0][0,0]<4>()()
+[401][1,0]<3>(3)()
+[103][0,1]<4>()("If 2 or more turns remain, reduce the turn count by 1.")
+[250][5,4]<4>(21,1600020,0,327712,1)("","×Allies Temp Data","","[Tmp] UntilNextStateRemove")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Process Overview]
+▼   Updates states after walking one step.
+▼   On the map, the remaining turns (steps) of all states are decreased by 1.
+▼   If the remaining turns (steps) reach 0, the state is removed.
+▼   If there are any damage-over-time effects, such as poison, they're processed here.
+▼ 
+▼   To reduce load, this process only updates a character when the "Has States on Map?" flag
+▼   in the allies' temporary database is 1 or higher. This flag is set to 1 when a state is added,
+▼   and to 0 when all states are cleared.
+▼  
+▼ [Main Common Events Calling This]
+▼   X[Map]ParallelProcessWhenWalking
+▼ ―――――――――――――――――――――――――――――――――――
+▼ Loop through all members.
+■Load DB(Var):  CSelf22[Party Member Count] = VarDB[ "Base System Variables":"Current Party Size":0 ] (18:4:Number) 
+■Set Variable: CSelf21[Processing Order] = -1 + 0 
+■Repeat Loop [ CSelf22[Party Member Count] ] Times
+ |■Set Variable: CSelf21[Processing Order] += 1 + 0 
+ |▼ Get character ID from Party database.
+ |■Set Variable: CSelf10[Temp Variable A] = CSelf21[Processing Order] + 1 
+ |■Load DB(Var):  CSelf20[Processing Character ID] = VarDB[ "Party":0:CSelf10[Temp Variable A] ] (6:Main Settings:-) 
+ |■Condition (Number):   [1] CSelf20[Processing Character ID] >=  0  
+ |-◇Condition:  [1]  [ CSelf20[Processing Character ID] >= 0   ] Case↓
+ | |■Load DB(Var):  CSelf26[Has States?] = VarDB[ "×Allies Temp Data":CSelf20[Processing Character ID]:"[Temp] Has States on Map?" ] (17:-:10) 
+ | |■Condition (Number):   [1] CSelf26[Has States?] >=  1  
+ | |-◇Condition:  [1]  [ CSelf26[Has States?] >= 1   ] Case↓
+ | | |▼ First, process HP/SP auto-change.
+ | | |■Load DB(Var):  CSelf24[HP Change per Step] = VarDB[ "×Allies Temp Data":CSelf20[Processing Character ID]:"[Temp] HP Auto Change" ] (17:-:11) 
+ | | |■Load DB(Var):  CSelf25[SP Change per Step] = VarDB[ "×Allies Temp Data":CSelf20[Processing Character ID]:"[Temp] SP Auto Change" ] (17:-:12) 
+ | | |■Load DB(Var):  CSelf32[Max HP] = VarDB[ "×Allies Temp Data":CSelf20[Processing Character ID]:"[Temp] Post-Calc Max HP" ] (17:-:0) 
+ | | |■Load DB(Var):  CSelf33[Max SP] = VarDB[ "×Allies Temp Data":CSelf20[Processing Character ID]:"[Temp] Post-Calc Max SP" ] (17:-:1) 
+ | | |■Load DB(Var):  CSelf35[Fainted?] = VarDB[ "┗ State List":CSelf20[Processing Character ID]:0 ] (5:-:\udb[8:0] Steps Left) 
+ | | |■Condition (Number):   [1] CSelf35[Fainted?] ==  0  
+ | | |-◇Condition:  [1]  [ CSelf35[Fainted?] == 0   ] Case↓
+ | | | |▼ If not fainted, change HP.
+ | | | |■Write to DB(Var): VarDB[ "Allies":CSelf20[Processing Character ID]:"HP" ] (0:-:6) +=  CSelf24[HP Change per Step]
+ | | | |■Write to DB(Var): VarDB[ "Allies":CSelf20[Processing Character ID]:"HP" ] (0:-:6) Upper Bound  CSelf32[Max HP]
+ | | | |■Write to DB(Var): VarDB[ "Allies":CSelf20[Processing Character ID]:"HP" ] (0:-:6) Lower Bound  0
+ | | | |▼ If a character has just fainted, add the Fainted state.
+ | | | |■Load DB(Var):  CSelf18[Remaining HP] = VarDB[ "Allies":CSelf20[Processing Character ID]:"HP" ] (0:-:6) 
+ | | | |■Condition (Number):   [1] CSelf18[Remaining HP] <=  0  
+ | | | |-◇Condition:  [1]  [ CSelf18[Remaining HP] <= 0   ] Case↓
+ | | | | |▼ Add the Fainted state. (If fainting is prevented by system settings, set HP to 1.)
+ | | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf20[Processing Character ID] / 0:Fainted / 1:Add
+ | | | | |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf20[Processing Character ID]
+ | | | | |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf20[Processing Character ID]
+ | | | | |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf20[Processing Character ID]
+ | | | | |■Load DB(Var):  CSelf35[Fainted?] = VarDB[ "┗ State List":CSelf20[Processing Character ID]:0 ] (5:-:\udb[8:0] Steps Left) 
+ | | | | |■Condition (Number):   [1] CSelf35[Fainted?] ==  0  
+ | | | | |-◇Condition:  [1]  [ CSelf35[Fainted?] == 0   ] Case↓
+ | | | | | |▼ If not fainted, set HP to 1.
+ | | | | | |■Write to DB(Var): VarDB[ "Allies":CSelf20[Processing Character ID]:"HP" ] (0:-:6) Lower Bound  1
+ | | | | | |■
+ | | | | |◇End◇
+ | | | | |■
+ | | | |◇End◇
+ | | | |■
+ | | |◇End◇
+ | | |■Write to DB(Var): VarDB[ "Allies":CSelf20[Processing Character ID]:"SP" ] (0:-:8) +=  CSelf25[SP Change per Step]
+ | | |■Write to DB(Var): VarDB[ "Allies":CSelf20[Processing Character ID]:"SP" ] (0:-:8) Upper Bound  CSelf33[Max SP]
+ | | |■Write to DB(Var): VarDB[ "Allies":CSelf20[Processing Character ID]:"SP" ] (0:-:8) Lower Bound  0
+ | | |▼ Natural expiration of states (executed only if a state expires on this step)
+ | | |■Load DB(Var):  CSelf23[Steps Until Next State Removal] = VarDB[ "×Allies Temp Data":CSelf20[Processing Character ID]:"[Tmp] UntilNextStateRemove" ] (17:-:13) 
+ | | |■Condition (Number):   [1] CSelf23[Steps Until Next State Removal] ==  1  /  [2] CSelf23[Steps Until Next State Removal] ==  0  /  [3] CSelf23[Steps Until Next State Removal] >=  2  
+ | | |-◇Condition:  [1]  [ CSelf23[Steps Until Next State Removal] == 1   ] Case↓
+ | | | |▼ If any state expires on the next turn, subtract the maximum step count from all states.
+ | | | |■Load DB(Var):  CSelf30[Subtraction Turns] = VarDB[ "×Allies Temp Data":CSelf20[Processing Character ID]:"[Tmp] NextStateRemoveMax" ] (17:-:14) 
+ | | | |■Load DB(User):  CSelf27[Total State Count] = UserDB[Type "States"(8)'s Data Count]
+ | | | |▼ Calculate the remaining turns for all states. If the remaining turns reach 0, that state is removed.
+ | | | |■Set Variable: CSelf28[State ID] = -1 + 0 
+ | | | |■Repeat Loop [ CSelf27[Total State Count] ] Times
+ | | | | |■Set Variable: CSelf28[State ID] += 1 + 0 
+ | | | | |■Load DB(Var):  CSelf29[Remaining Turns] = VarDB[ "┗ State List":CSelf20[Processing Character ID]:CSelf28[State ID] ] (5:-:-) 
+ | | | | |■Condition (Number):   [1] CSelf29[Remaining Turns] >=  1  
+ | | | | |-◇Condition:  [1]  [ CSelf29[Remaining Turns] >= 1   ] Case↓
+ | | | | | |▼ If the state can be removed by turn count, decrease its turn count.
+ | | | | | |■Write to DB(Var): VarDB[ "┗ State List":CSelf20[Processing Character ID]:CSelf28[State ID] ] (5:-:-) -=  CSelf30[Subtraction Turns]
+ | | | | | |■Write to DB(Var): VarDB[ "┗ State List":CSelf20[Processing Character ID]:CSelf28[State ID] ] (5:-:-) Lower Bound  0
+ | | | | | |■
+ | | | | |◇End◇
+ | | | | |■
+ | | | |◇Loop End Point◇◇
+ | | | |▼ Here, update temporary values derived from states.
+ | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf20[Processing Character ID] / -3:Remove All (Full Recovery Targets Excluding Fainting) / 2:Update
+ | | | |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf20[Processing Character ID]
+ | | | |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf20[Processing Character ID]
+ | | | |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf20[Processing Character ID]
+ | | | |■
+ | | |-◇Condition:  [2]  [ CSelf23[Steps Until Next State Removal] == 0   ] Case↓
+ | | | |▼ Branch to do nothing when the value is 0.
+ | | | |■
+ | | |-◇Condition:  [3]  [ CSelf23[Steps Until Next State Removal] >= 2   ] Case↓
+ | | | |▼ If 2 or more turns remain, reduce the turn count by 1.
+ | | | |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf20[Processing Character ID]:"[Tmp] UntilNextStateRemove" ] (17:-:13) -=  1
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇End◇
+ | |■
+ |◇End◇
+ |■
+◇Loop End Point◇◇
+■
+[COMMAND_TEXT_END]

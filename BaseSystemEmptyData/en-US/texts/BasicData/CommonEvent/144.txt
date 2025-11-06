@@ -1,0 +1,407 @@
+COMMON_ID=144
+COMMON_NAME=X[Bat]Copy Enemies DB to Battle DB
+COMMAND_COLOR=6
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=3
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=入力先戦闘DB
+VALINPUT_NAME_1=読込敵ID
+VALINPUT_NAME_2=オプション
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=0
+LOADTYPE2=2
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=0
+CHOICE_STR_2_NUM=2
+CHOICE_STR_2_0=全てのデータコピー+状態初期化
+CHOICE_STR_2_1=HP・SP・状態を維持してコピー
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=0
+CHOICE_VAL_2_NUM=2
+CHOICE_VAL_2_0=0
+CHOICE_VAL_2_1=1
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=
+RETURN_VAL_TARGET=-1
+CSELF_NAME_0=入力先戦闘DB
+CSELF_NAME_1=読込敵個体ID
+CSELF_NAME_2=ｵﾌﾟｼｮﾝ
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=キャラ名
+CSELF_NAME_6=グラフィック名
+CSELF_NAME_7=
+CSELF_NAME_8=
+CSELF_NAME_9=
+CSELF_NAME_10=
+CSELF_NAME_11=
+CSELF_NAME_12=
+CSELF_NAME_13=
+CSELF_NAME_14=
+CSELF_NAME_15=
+CSELF_NAME_16=
+CSELF_NAME_17=
+CSELF_NAME_18=
+CSELF_NAME_19=
+CSELF_NAME_20=
+CSELF_NAME_21=
+CSELF_NAME_22=
+CSELF_NAME_23=
+CSELF_NAME_24=
+CSELF_NAME_25=
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=
+CSELF_NAME_29=
+CSELF_NAME_30=
+CSELF_NAME_31=
+CSELF_NAME_32=
+CSELF_NAME_33=
+CSELF_NAME_34=
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=HP
+CSELF_NAME_41=SP
+CSELF_NAME_42=最大HP
+CSELF_NAME_43=最大SP
+CSELF_NAME_44=攻撃力
+CSELF_NAME_45=防御力
+CSELF_NAME_46=精神攻撃
+CSELF_NAME_47=精神防御
+CSELF_NAME_48=敏捷性
+CSELF_NAME_49=命中率
+CSELF_NAME_50=回避率
+CSELF_NAME_51=クリティカル
+CSELF_NAME_52=
+CSELF_NAME_53=取得経験値
+CSELF_NAME_54=取得金額
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=装備武器
+CSELF_NAME_61=装備防具1
+CSELF_NAME_62=装備防具2
+CSELF_NAME_63=装備防具3
+CSELF_NAME_64=装備防具4
+CSELF_NAME_65=装備防具5
+CSELF_NAME_66=装備防具6
+CSELF_NAME_67=装備防具7
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=コマンド１
+CSELF_NAME_71=コマンド２
+CSELF_NAME_72=コマンド３
+CSELF_NAME_73=コマンド４
+CSELF_NAME_74=コマンド５
+CSELF_NAME_75=コマンド６
+CSELF_NAME_76=コマンド７
+CSELF_NAME_77=コマンド８
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=入手アイテム
+CSELF_NAME_81=アイテム入手率
+CSELF_NAME_82=入手武器
+CSELF_NAME_83=武器入手率
+CSELF_NAME_84=入手防具
+CSELF_NAME_85=防具入手率
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=
+CSELF_NAME_89=
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=
+COMMAND_NUM=117
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("　ユーザDB「敵キャラ個体データ」から、戦闘時に使用する「戦闘DB」へパラメータをコピーします。")
+[103][0,1]<0>()("")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("初期化")
+[250][5,4]<0>(10,1600000,-2,65536,1600005)("","×┏Battle Temp Status","","")
+[250][5,4]<0>(11,1600000,-2,65536,1600005)("","×┣Element Resist Calc","","")
+[250][5,4]<0>(12,1600000,-2,65536,1600005)("","×┣State Resist Calc","","")
+[111][4,0]<0>(1,1600002,0,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("全てコピーの場合だけ処理 （HP・SP・状態を維持する場合は処理しない）")
+[250][5,4]<1>(13,1600000,-2,65536,1600005)("","×┣State List","","")
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("　　　　読み込みデータ")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[111][4,0]<0>(1,1600001,-1,3)()
+[401][1,0]<0>(1)()
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[250][5,4]<0>(9,1600001,0,332288,1600005)("","Enemies","","Enemy Name")
+[250][5,4]<0>(9,1600001,1,332288,1600006)("","Enemies","","Image File")
+[111][4,0]<0>(1,1600002,0,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("全てコピーの場合だけ処理 （HP・SP・状態を維持する場合は処理しない）")
+[250][5,4]<1>(9,1600001,2,332288,1600040)("","Enemies","","Max HP")
+[250][5,4]<1>(9,1600001,3,332288,1600041)("","Enemies","","Max SP")
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[250][5,4]<0>(9,1600001,2,332288,1600042)("","Enemies","","Max HP")
+[250][5,4]<0>(9,1600001,3,332288,1600043)("","Enemies","","Max SP")
+[250][5,4]<0>(9,1600001,4,332288,1600044)("","Enemies","","Attack")
+[250][5,4]<0>(9,1600001,5,332288,1600045)("","Enemies","","Defense")
+[250][5,4]<0>(9,1600001,6,332288,1600046)("","Enemies","","Magic Attack")
+[250][5,4]<0>(9,1600001,7,332288,1600047)("","Enemies","","Magic Defense")
+[250][5,4]<0>(9,1600001,8,332288,1600048)("","Enemies","","Agility")
+[250][5,4]<0>(9,1600001,9,332288,1600049)("","Enemies","","Base Accuracy [%]")
+[250][5,4]<0>(9,1600001,10,332288,1600050)("","Enemies","","Base Evasion [%]")
+[250][5,4]<0>(9,1600001,11,332288,1600051)("","Enemies","","Critical Rate [%]")
+[250][5,4]<0>(9,1600001,13,332288,1600053)("","Enemies","","Experience")
+[250][5,4]<0>(9,1600001,14,332288,1600054)("","Enemies","","Money")
+[250][5,4]<0>(9,1600001,15,332288,1600080)("","Enemies","","Item Drop                       ")
+[250][5,4]<0>(9,1600001,16,332288,1600081)("","Enemies","","┗ Drop Rate [Item] [%]")
+[250][5,4]<0>(9,1600001,17,332288,1600082)("","Enemies","","Weapon Drop                        ")
+[250][5,4]<0>(9,1600001,18,332288,1600083)("","Enemies","","┗ Drop Rate [Weapon] [%]")
+[250][5,4]<0>(9,1600001,19,332288,1600084)("","Enemies","","Armor Drop                       ")
+[250][5,4]<0>(9,1600001,19,332288,1600085)("","Enemies","","┗ Drop Rate [Armor] [%]")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("　　　　書き込みデータ")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[250][5,4]<0>(10,1600000,0,327680,1600005)("","×┏Battle Temp Status","","Character Name")
+[250][5,4]<0>(10,1600000,1,327680,1600006)("","×┏Battle Temp Status","","Image File")
+[111][4,0]<0>(1,1600002,0,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("全てコピーの場合だけ処理 （HP・SP・状態を維持する場合は処理しない）")
+[250][5,4]<1>(10,1600000,4,327680,1600040)("","×┏Battle Temp Status","","HP")
+[250][5,4]<1>(10,1600000,6,327680,1600041)("","×┏Battle Temp Status","","SP")
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[250][5,4]<0>(10,1600000,5,327680,1600042)("","×┏Battle Temp Status","","Max HP")
+[250][5,4]<0>(10,1600000,7,327680,1600043)("","×┏Battle Temp Status","","Max SP")
+[250][5,4]<0>(10,1600000,8,327680,1600044)("","×┏Battle Temp Status","","Base Attack")
+[250][5,4]<0>(10,1600000,9,327680,1600045)("","×┏Battle Temp Status","","Base Defense")
+[250][5,4]<0>(10,1600000,10,327680,1600046)("","×┏Battle Temp Status","","Base Magic Attack")
+[250][5,4]<0>(10,1600000,11,327680,1600047)("","×┏Battle Temp Status","","Base Magic Defense")
+[250][5,4]<0>(10,1600000,12,327680,1600048)("","×┏Battle Temp Status","","Base Agility")
+[250][5,4]<0>(10,1600000,13,327680,1600049)("","×┏Battle Temp Status","","Base Accuracy [%]")
+[250][5,4]<0>(10,1600000,14,327680,1600050)("","×┏Battle Temp Status","","Base Evasion [%]")
+[250][5,4]<0>(10,1600000,15,327680,1600051)("","×┏Battle Temp Status","","Base Critical Rate [%]")
+[250][5,4]<0>(10,1600000,16,327680,1600001)("","×┏Battle Temp Status","","Character ID [Enemy:10,000+]")
+[250][5,4]<0>(11,1600000,16,327696,10000)("","×┏Battle Temp Status","","Character ID [Enemy:10,000+]")
+[250][5,4]<0>(10,1600000,43,327680,1600053)("","×┏Battle Temp Status","","[Enemy] EXP Reward")
+[250][5,4]<0>(10,1600000,44,327680,1600054)("","×┏Battle Temp Status","","[Enemy] Money Reward")
+[250][5,4]<0>(10,1600000,68,327680,1600080)("","×┏Battle Temp Status","","[Enemy] Item Drop")
+[250][5,4]<0>(10,1600000,69,327680,1600081)("","×┏Battle Temp Status","","[Enemy] Item Drop Rate")
+[250][5,4]<0>(10,1600000,70,327680,1600082)("","×┏Battle Temp Status","","[Enemy] Weapon Drop")
+[250][5,4]<0>(10,1600000,71,327680,1600083)("","×┏Battle Temp Status","","[Enemy] Weapon Drop Rate")
+[250][5,4]<0>(10,1600000,72,327680,1600084)("","×┏Battle Temp Status","","[Enemy] Armor Drop")
+[250][5,4]<0>(10,1600000,73,327680,1600085)("","×┏Battle Temp Status","","[Enemy] Armor Drop Rate")
+[250][5,4]<0>(10,1600000,3,327680,0)("","×┏Battle Temp Status","","[Fainted?]")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("　　　　属性耐性をコピー")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[250][5,4]<0>(7,-1,1600010,70144,1600017)("","Element Names","","")
+[121][4,0]<0>(1600017,100,0,1792)()
+[121][4,0]<0>(1600010,-1,0,0)()
+[179][1,0]<0>(1600017)()
+[121][4,0]<1>(1600010,1,0,256)()
+[250][5,4]<1>(11,1600001,1600010,70144,1600011)("","┣ Element Resistances","","")
+[250][5,4]<1>(11,1600000,1600010,65536,1600011)("","×┣Element Resist Calc","","")
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("　　　　状態耐性をコピー")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[250][5,4]<0>(8,-1,1600010,70144,1600016)("","States","","")
+[121][4,0]<0>(1600016,100,0,1792)()
+[121][4,0]<0>(1600010,-1,0,0)()
+[179][1,0]<0>(1600016)()
+[121][4,0]<1>(1600010,1,0,256)()
+[250][5,4]<1>(12,1600001,1600010,70144,1600011)("","┗ State Resistances","","")
+[250][5,4]<1>(12,1600000,1600010,65536,1600011)("","×┣State Resist Calc","","")
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[103][0,1]<0>()("補正計算")
+[300][3,1]<0>(0,1,1600000)("X[Bat]CalcTempStats <Initialize>")
+[300][4,1]<0>(0,2,1600000,0)("X[Bat]CalcTempStats <Equipments>")
+[300][4,1]<0>(0,2,1600000,0)("X[Bat]CalcTempStats <StatusEffects>")
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Process Overview]
+▼ 　ユーザDB「敵キャラ個体データ」から、戦闘時に使用する「戦闘DB」へパラメータをコピーします。
+▼ 
+▼ [Databases Accessed by This Common Event]
+▼  
+▼ [Other Common Events Called from Here]
+▼  
+▼ [Main Common Events Calling This]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ 初期化
+■Write to DB(Var): [Reset Type "×┏Battle Temp Status"(10) Data CSelf0[入力先戦闘DB]]
+■Write to DB(Var): [Reset Type "×┣Element Resist Calc"(11) Data CSelf0[入力先戦闘DB]]
+■Write to DB(Var): [Reset Type "×┣State Resist Calc"(12) Data CSelf0[入力先戦闘DB]]
+■Condition (Number):   [1] CSelf2[ｵﾌﾟｼｮﾝ] ==  0  
+-◇Condition:  [1]  [ CSelf2[ｵﾌﾟｼｮﾝ] == 0   ] Case↓
+ |▼ 全てコピーの場合だけ処理 （HP・SP・状態を維持する場合は処理しない）
+ |■Write to DB(Var): [Reset Type "×┣State List"(13) Data CSelf0[入力先戦闘DB]]
+ |■
+◇End◇
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ 　　　　読み込みデータ
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■Condition (Number):   [1] CSelf1[読込敵個体ID] <=  -1  
+-◇Condition:  [1]  [ CSelf1[読込敵個体ID] <= -1   ] Case↓
+ |■Exit Event
+ |■
+◇End◇
+■Load DB(User):  CSelf5[キャラ名] = UserDB[ "Enemies":CSelf1[読込敵個体ID]:"Enemy Name" ] (9:-:0) 
+■Load DB(User):  CSelf6[グラフィック名] = UserDB[ "Enemies":CSelf1[読込敵個体ID]:"Image File" ] (9:-:1) 
+■Condition (Number):   [1] CSelf2[ｵﾌﾟｼｮﾝ] ==  0  
+-◇Condition:  [1]  [ CSelf2[ｵﾌﾟｼｮﾝ] == 0   ] Case↓
+ |▼ 全てコピーの場合だけ処理 （HP・SP・状態を維持する場合は処理しない）
+ |■Load DB(User):  CSelf40[HP] = UserDB[ "Enemies":CSelf1[読込敵個体ID]:"Max HP" ] (9:-:2) 
+ |■Load DB(User):  CSelf41[SP] = UserDB[ "Enemies":CSelf1[読込敵個体ID]:"Max SP" ] (9:-:3) 
+ |■
+◇End◇
+■Load DB(User):  CSelf42[最大HP] = UserDB[ "Enemies":CSelf1[読込敵個体ID]:"Max HP" ] (9:-:2) 
+■Load DB(User):  CSelf43[最大SP] = UserDB[ "Enemies":CSelf1[読込敵個体ID]:"Max SP" ] (9:-:3) 
+■Load DB(User):  CSelf44[攻撃力] = UserDB[ "Enemies":CSelf1[読込敵個体ID]:"Attack" ] (9:-:4) 
+■Load DB(User):  CSelf45[防御力] = UserDB[ "Enemies":CSelf1[読込敵個体ID]:"Defense" ] (9:-:5) 
+■Load DB(User):  CSelf46[精神攻撃] = UserDB[ "Enemies":CSelf1[読込敵個体ID]:"Magic Attack" ] (9:-:6) 
+■Load DB(User):  CSelf47[精神防御] = UserDB[ "Enemies":CSelf1[読込敵個体ID]:"Magic Defense" ] (9:-:7) 
+■Load DB(User):  CSelf48[敏捷性] = UserDB[ "Enemies":CSelf1[読込敵個体ID]:"Agility" ] (9:-:8) 
+■Load DB(User):  CSelf49[命中率] = UserDB[ "Enemies":CSelf1[読込敵個体ID]:"Base Accuracy [%]" ] (9:-:9) 
+■Load DB(User):  CSelf50[回避率] = UserDB[ "Enemies":CSelf1[読込敵個体ID]:"Base Evasion [%]" ] (9:-:10) 
+■Load DB(User):  CSelf51[クリティカル] = UserDB[ "Enemies":CSelf1[読込敵個体ID]:"Critical Rate [%]" ] (9:-:11) 
+■Load DB(User):  CSelf53[取得経験値] = UserDB[ "Enemies":CSelf1[読込敵個体ID]:"Experience" ] (9:-:12) 
+■Load DB(User):  CSelf54[取得金額] = UserDB[ "Enemies":CSelf1[読込敵個体ID]:"Money" ] (9:-:13) 
+■Load DB(User):  CSelf80[入手アイテム] = UserDB[ "Enemies":CSelf1[読込敵個体ID]:"Item Drop                       " ] (9:-:14) 
+■Load DB(User):  CSelf81[アイテム入手率] = UserDB[ "Enemies":CSelf1[読込敵個体ID]:"┗ Drop Rate [Item] [%]" ] (9:-:15) 
+■Load DB(User):  CSelf82[入手武器] = UserDB[ "Enemies":CSelf1[読込敵個体ID]:"Weapon Drop                        " ] (9:-:16) 
+■Load DB(User):  CSelf83[武器入手率] = UserDB[ "Enemies":CSelf1[読込敵個体ID]:"┗ Drop Rate [Weapon] [%]" ] (9:-:17) 
+■Load DB(User):  CSelf84[入手防具] = UserDB[ "Enemies":CSelf1[読込敵個体ID]:"Armor Drop                       " ] (9:-:18) 
+■Load DB(User):  CSelf85[防具入手率] = UserDB[ "Enemies":CSelf1[読込敵個体ID]:"┗ Drop Rate [Armor] [%]" ] (9:-:19) 
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ 　　　　書き込みデータ
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"Character Name" ] (10:-:0) =  CSelf5[キャラ名]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"Image File" ] (10:-:1) =  CSelf6[グラフィック名]
+■Condition (Number):   [1] CSelf2[ｵﾌﾟｼｮﾝ] ==  0  
+-◇Condition:  [1]  [ CSelf2[ｵﾌﾟｼｮﾝ] == 0   ] Case↓
+ |▼ 全てコピーの場合だけ処理 （HP・SP・状態を維持する場合は処理しない）
+ |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"HP" ] (10:-:5) =  CSelf40[HP]
+ |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"SP" ] (10:-:7) =  CSelf41[SP]
+ |■
+◇End◇
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"Max HP" ] (10:-:6) =  CSelf42[最大HP]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"Max SP" ] (10:-:8) =  CSelf43[最大SP]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"Base Attack" ] (10:-:9) =  CSelf44[攻撃力]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"Base Defense" ] (10:-:10) =  CSelf45[防御力]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"Base Magic Attack" ] (10:-:11) =  CSelf46[精神攻撃]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"Base Magic Defense" ] (10:-:12) =  CSelf47[精神防御]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"Base Agility" ] (10:-:13) =  CSelf48[敏捷性]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"Base Accuracy [%]" ] (10:-:14) =  CSelf49[命中率]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"Base Evasion [%]" ] (10:-:15) =  CSelf50[回避率]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"Base Critical Rate [%]" ] (10:-:16) =  CSelf51[クリティカル]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"Character ID [Enemy:10,000+]" ] (10:-:17) =  CSelf1[読込敵個体ID]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"Character ID [Enemy:10,000+]" ] (10:-:17) +=  10000
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"[Enemy] EXP Reward" ] (10:-:42) =  CSelf53[取得経験値]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"[Enemy] Money Reward" ] (10:-:43) =  CSelf54[取得金額]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"[Enemy] Item Drop" ] (10:-:72) =  CSelf80[入手アイテム]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"[Enemy] Item Drop Rate" ] (10:-:73) =  CSelf81[アイテム入手率]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"[Enemy] Weapon Drop" ] (10:-:74) =  CSelf82[入手武器]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"[Enemy] Weapon Drop Rate" ] (10:-:75) =  CSelf83[武器入手率]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"[Enemy] Armor Drop" ] (10:-:76) =  CSelf84[入手防具]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"[Enemy] Armor Drop Rate" ] (10:-:77) =  CSelf85[防具入手率]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"[Fainted?]" ] (10:-:3) =  0
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ 　　　　属性耐性をコピー
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■Load DB(User):  CSelf17 = UserDB[Type "Element Names"(7)'s Data Count]
+■Set Variable: CSelf17 Upper Bound= 100 + 0 
+■Set Variable: CSelf10 = -1 + 0 
+■Repeat Loop [ CSelf17 ] Times
+ |■Set Variable: CSelf10 += 1 + 0 
+ |■Load DB(User):  CSelf11 = UserDB[ "┣ Element Resistances":CSelf1[読込敵個体ID]:CSelf10 ] (11:-:-) 
+ |■Write to DB(Var): VarDB[ "×┣Element Resist Calc":CSelf0[入力先戦闘DB]:CSelf10 ] (11:-:-) =  CSelf11
+ |■
+◇Loop End Point◇◇
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ 　　　　状態耐性をコピー
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■Load DB(User):  CSelf16 = UserDB[Type "States"(8)'s Data Count]
+■Set Variable: CSelf16 Upper Bound= 100 + 0 
+■Set Variable: CSelf10 = -1 + 0 
+■Repeat Loop [ CSelf16 ] Times
+ |■Set Variable: CSelf10 += 1 + 0 
+ |■Load DB(User):  CSelf11 = UserDB[ "┗ State Resistances":CSelf1[読込敵個体ID]:CSelf10 ] (12:-:-) 
+ |■Write to DB(Var): VarDB[ "×┣State Resist Calc":CSelf0[入力先戦闘DB]:CSelf10 ] (12:-:-) =  CSelf11
+ |■
+◇Loop End Point◇◇
+▼ 補正計算
+■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf0[入力先戦闘DB]
+■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf0[入力先戦闘DB] / 0:武器欄の武器を使用
+■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf0[入力先戦闘DB] / 0:パラメータ補正＋状態名計算
+■
+[COMMAND_TEXT_END]

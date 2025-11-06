@@ -1,0 +1,431 @@
+COMMON_ID=111
+COMMON_NAME=X[Map]Create Skill List
+COMMAND_COLOR=6
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=1
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=対象主人公ID
+VALINPUT_NAME_1=
+VALINPUT_NAME_2=
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=0
+LOADTYPE2=0
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=0
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=0
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=
+RETURN_VAL_TARGET=-1
+CSELF_NAME_0=対象主人公ID
+CSELF_NAME_1=
+CSELF_NAME_2=
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=付与HP名
+CSELF_NAME_9=一時項目名
+CSELF_NAME_10=一時変数A
+CSELF_NAME_11=一時コード番号
+CSELF_NAME_12=一時変数B
+CSELF_NAME_13=一時変数C
+CSELF_NAME_14=発動アイテムチェック
+CSELF_NAME_15=
+CSELF_NAME_16=
+CSELF_NAME_17=
+CSELF_NAME_18=
+CSELF_NAME_19=
+CSELF_NAME_20=
+CSELF_NAME_21=
+CSELF_NAME_22=
+CSELF_NAME_23=
+CSELF_NAME_24=
+CSELF_NAME_25=
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=
+CSELF_NAME_29=
+CSELF_NAME_30=処理対象個数
+CSELF_NAME_31=注目位置
+CSELF_NAME_32=万能ウィンドウ登録位置
+CSELF_NAME_33=
+CSELF_NAME_34=技能コード
+CSELF_NAME_35=習得レベル
+CSELF_NAME_36=現在レベル
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=
+CSELF_NAME_41=
+CSELF_NAME_42=
+CSELF_NAME_43=
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=
+CSELF_NAME_89=
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=
+COMMAND_NUM=131
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("　指定キャラクターの技能一覧を計算し、その技能一覧と選択可能状態を")
+[103][0,1]<0>()("　可変DB「万能ウィンドウ一時DB」に格納します。")
+[103][0,1]<0>()("")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[250][5,4]<0>(19,-2,0,65536,1600030)("","Universal Window Items","","")
+[121][4,0]<0>(1600032,-1,0,0)()
+[103][0,1]<0>()("技能追加処理")
+[121][4,0]<0>(1600030,-1,0,0)()
+[179][1,0]<0>(50)()
+[121][4,0]<1>(1600030,1,0,256)()
+[121][4,0]<1>(1600031,1600030,2,8192)()
+[250][5,4]<1>(1,1600000,1600031,69632,1600035)("","┣ Skill Learning Lv","","")
+[121][4,0]<1>(1600031,1,0,256)()
+[250][5,4]<1>(1,1600000,1600031,69632,1600034)("","┣ Skill Learning Lv","","")
+[111][4,0]<1>(1,1600035,0,1)()
+[401][1,0]<1>(1)()
+[111][4,0]<2>(1,1600034,0,1)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("レベルが既定以上になっていれば万能ウィンドウに登録")
+[250][5,4]<3>(0,1600000,4,331776,1600036)("","Allies","","Level")
+[111][4,0]<3>(1,1600035,1600036,3)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("万能ウィンドウの書き込み先位置を＋１")
+[121][4,0]<4>(1600032,1,0,256)()
+[103][0,1]<4>()("名前・コード・数量・付与文字列を格納")
+[250][5,4]<4>(0,1600034,0,332288,1600009)("","Skills","","Skill Name")
+[121][4,0]<4>(1600011,1600030,0,0)()
+[250][5,4]<4>(19,1600032,0,327680,1600009)("","Universal Window Items","","Item Text")
+[250][5,4]<4>(19,1600032,1,327680,1600034)("","Universal Window Items","","Item ID")
+[250][5,4]<4>(0,1600034,1,332288,1600009)("","Skills","","Description")
+[250][5,4]<4>(19,1600032,0,327680,1600009)("","Universal Window Items","","Description")
+[103][0,1]<4>()("消費ポイントを格納")
+[250][5,4]<4>(0,1600034,0,332288,1600010)("","Skills","","┗ Points Consumed  ")
+[250][5,4]<4>(19,1600032,3,327680,1600010)("","Universal Window Items","","Quantity Left/Point Cost")
+[103][0,1]<4>()("HP消費型なら「HP」に該当する文字列を付与")
+[250][5,4]<4>(0,1600034,4,332288,1600010)("","Skills","","┏ What to Consume?")
+[111][4,0]<4>(1,1600010,1,2)()
+[401][1,0]<4>(1)()
+[250][5,4]<5>(13,0,7,332288,1600008)("","Terms","","[Stats] HP Name")
+[250][5,4]<5>(19,1600032,0,327696,1600008)("","Universal Window Items","","Number Prefix")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[103][0,1]<4>()("選択可能かどうか判定")
+[250][5,4]<4>(0,1600034,0,332288,1600012)("","Skills","","Usable When?")
+[111][4,0]<4>(1,1600012,0,1)()
+[401][1,0]<4>(1)()
+[111][4,0]<5>(1,1600012,1,3)()
+[401][1,0]<5>(1)()
+[103][0,1]<6>()("残りHP・SP判定")
+[250][5,4]<6>(0,1600034,4,332288,1600010)("","Skills","","┏ What to Consume?")
+[111][7,0]<6>(2,1600010,0,2,1600010,1,2)()
+[401][1,0]<6>(1)()
+[250][5,4]<7>(0,1600000,7,331776,1600012)("","Allies","","SP")
+[0][0,0]<7>()()
+[401][1,0]<6>(2)()
+[250][5,4]<7>(0,1600000,5,331776,1600012)("","Allies","","HP")
+[121][4,0]<7>(1600012,1,0,512)()
+[0][0,0]<7>()()
+[499][0,0]<6>()()
+[250][5,4]<6>(0,1600034,0,332288,1600013)("","Skills","","┗ Points Consumed  ")
+[111][4,0]<6>(1,1600012,1600013,4)()
+[401][1,0]<6>(1)()
+[103][0,1]<7>()("必要ﾎﾟｲﾝﾄが足りなかったらチェック終了")
+[176][0,0]<7>()()
+[0][0,0]<7>()()
+[499][0,0]<6>()()
+[103][0,1]<6>()("封印チェック")
+[250][5,4]<6>(17,1600000,16,331776,1600012)("","×Allies Temp Data","","[Temp] Sealed?")
+[250][5,4]<6>(0,1600034,21,332336,1600012)("","Skills","","When Skills Are Limited...")
+[111][4,0]<6>(1,1600012,0,5)()
+[401][1,0]<6>(1)()
+[176][0,0]<7>()()
+[0][0,0]<7>()()
+[499][0,0]<6>()()
+[103][0,1]<6>()("発動アイテムチェック")
+[121][4,0]<6>(1600014,1,0,0)()
+[250][5,4]<6>(0,1600034,20,332288,1600013)("","Skills","","Item Required? [Consume]")
+[111][4,0]<6>(1,1600013,0,1)()
+[401][1,0]<6>(1)()
+[300][4,1]<7>(0,16777217,1600013,1600013)("X[Com]Get Item Quantity")
+[103][0,1]<7>()("アイテムがなかったら発動アイテムチェックを0にする")
+[111][4,0]<7>(1,1600013,0,3)()
+[401][1,0]<7>(1)()
+[121][4,0]<8>(1600014,0,0,0)()
+[0][0,0]<8>()()
+[499][0,0]<7>()()
+[0][0,0]<7>()()
+[499][0,0]<6>()()
+[111][4,0]<6>(1,1600014,1,1)()
+[401][1,0]<6>(1)()
+[250][5,4]<7>(0,1600034,0,332288,1600012)("","Skills","","┏ Effect Target   ")
+[103][0,1]<7>()("味方に対して使用可能　または　マップ時にイベント起動　の場合だけ使用可能")
+[111][7,0]<7>(2,1600012,100,2,1600012,0,1)()
+[401][1,0]<7>(1)()
+[103][0,1]<8>()("イベント起動")
+[250][5,4]<8>(19,1600032,2,327680,1)("","Universal Window Items","","Selectable? [1:Yes]")
+[0][0,0]<8>()()
+[401][1,0]<7>(2)()
+[111][4,0]<8>(1,1600012,9,3)()
+[401][1,0]<8>(1)()
+[103][0,1]<9>()("味方に対して使用可能")
+[250][5,4]<9>(19,1600032,2,327680,1)("","Universal Window Items","","Selectable? [1:Yes]")
+[0][0,0]<9>()()
+[499][0,0]<8>()()
+[0][0,0]<8>()()
+[499][0,0]<7>()()
+[0][0,0]<7>()()
+[499][0,0]<6>()()
+[0][0,0]<6>()()
+[499][0,0]<5>()()
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[103][0,1]<0>()("万能ウィンドウの項目個数を代入")
+[250][5,4]<0>(18,17,0,196608,1600032)("","Base System Variables","Universal Window Item Count","")
+[250][5,4]<0>(18,17,0,196624,1)("","Base System Variables","Universal Window Item Count","")
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Process Overview]
+▼ 　指定キャラクターの技能一覧を計算し、その技能一覧と選択可能状態を
+▼ 　可変DB「万能ウィンドウ一時DB」に格納します。
+▼ 
+▼ [Databases Accessed by This Common Event]
+▼  
+▼ [Other Common Events Called from Here]
+▼  
+▼ [Main Common Events Calling This]
+▼ ―――――――――――――――――――――――――――――――――――
+■Write to DB(Var): [Reset Type "Universal Window Items"(19)]
+■Set Variable: CSelf32[万能ウィンドウ登録位置] = -1 + 0 
+▼ 技能追加処理
+■Set Variable: CSelf30[処理対象個数] = -1 + 0 
+■Repeat Loop [ 50 ] Times
+ |■Set Variable: CSelf30[処理対象個数] += 1 + 0 
+ |■Set Variable: CSelf31[注目位置] = CSelf30[処理対象個数] * 2 
+ |■Load DB(Var):  CSelf35[習得レベル] = VarDB[ "┣ Skill Learning Lv":CSelf0[対象主人公ID]:CSelf31[注目位置] ] (1:-:-) 
+ |■Set Variable: CSelf31[注目位置] += 1 + 0 
+ |■Load DB(Var):  CSelf34[技能コード] = VarDB[ "┣ Skill Learning Lv":CSelf0[対象主人公ID]:CSelf31[注目位置] ] (1:-:-) 
+ |■Condition (Number):   [1] CSelf35[習得レベル] >=  0  
+ |-◇Condition:  [1]  [ CSelf35[習得レベル] >= 0   ] Case↓
+ | |■Condition (Number):   [1] CSelf34[技能コード] >=  0  
+ | |-◇Condition:  [1]  [ CSelf34[技能コード] >= 0   ] Case↓
+ | | |▼ レベルが既定以上になっていれば万能ウィンドウに登録
+ | | |■Load DB(Var):  CSelf36[現在レベル] = VarDB[ "Allies":CSelf0[対象主人公ID]:"Level" ] (0:-:4) 
+ | | |■Condition (Number):   [1] CSelf35[習得レベル] <=  CSelf36[現在レベル]  
+ | | |-◇Condition:  [1]  [ CSelf35[習得レベル] <= CSelf36[現在レベル]   ] Case↓
+ | | | |▼ 万能ウィンドウの書き込み先位置を＋１
+ | | | |■Set Variable: CSelf32[万能ウィンドウ登録位置] += 1 + 0 
+ | | | |▼ 名前・コード・数量・付与文字列を格納
+ | | | |■Load DB(User):  CSelf9[一時項目名] = UserDB[ "Skills":CSelf34[技能コード]:"Skill Name" ] (0:-:0) 
+ | | | |■Set Variable: CSelf11[一時コード番号] = CSelf30[処理対象個数] + 0 
+ | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Item Text" ] (19:-:0) =  CSelf9[一時項目名]
+ | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Item ID" ] (19:-:1) =  CSelf34[技能コード]
+ | | | |■Load DB(User):  CSelf9[一時項目名] = UserDB[ "Skills":CSelf34[技能コード]:"Description" ] (0:-:1) 
+ | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Description" ] (19:-:6) =  CSelf9[一時項目名]
+ | | | |▼ 消費ポイントを格納
+ | | | |■Load DB(User):  CSelf10[一時変数A] = UserDB[ "Skills":CSelf34[技能コード]:"┗ Points Consumed  " ] (0:-:5) 
+ | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Quantity Left/Point Cost" ] (19:-:3) =  CSelf10[一時変数A]
+ | | | |▼ HP消費型なら「HP」に該当する文字列を付与
+ | | | |■Load DB(User):  CSelf10[一時変数A] = UserDB[ "Skills":CSelf34[技能コード]:"┏ What to Consume?" ] (0:-:4) 
+ | | | |■Condition (Number):   [1] CSelf10[一時変数A] ==  1  
+ | | | |-◇Condition:  [1]  [ CSelf10[一時変数A] == 1   ] Case↓
+ | | | | |■Load DB(User):  CSelf8[付与HP名] = UserDB[ "Terms":0:"[Stats] HP Name" ] (15:Basic Terms:7) 
+ | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Number Prefix" ] (19:-:4) +=  CSelf8[付与HP名]
+ | | | | |■
+ | | | |◇End◇
+ | | | |▼ 選択可能かどうか判定
+ | | | |■Load DB(User):  CSelf12[一時変数B] = UserDB[ "Skills":CSelf34[技能コード]:"Usable When?" ] (0:-:6) 
+ | | | |■Condition (Number):   [1] CSelf12[一時変数B] >=  0  
+ | | | |-◇Condition:  [1]  [ CSelf12[一時変数B] >= 0   ] Case↓
+ | | | | |■Condition (Number):   [1] CSelf12[一時変数B] <=  1  
+ | | | | |-◇Condition:  [1]  [ CSelf12[一時変数B] <= 1   ] Case↓
+ | | | | | |▼ 残りHP・SP判定
+ | | | | | |■Load DB(User):  CSelf10[一時変数A] = UserDB[ "Skills":CSelf34[技能コード]:"┏ What to Consume?" ] (0:-:4) 
+ | | | | | |■Condition (Number):   [1] CSelf10[一時変数A] ==  0  /  [2] CSelf10[一時変数A] ==  1  
+ | | | | | |-◇Condition:  [1]  [ CSelf10[一時変数A] == 0   ] Case↓
+ | | | | | | |■Load DB(Var):  CSelf12[一時変数B] = VarDB[ "Allies":CSelf0[対象主人公ID]:"SP" ] (0:-:8) 
+ | | | | | | |■
+ | | | | | |-◇Condition:  [2]  [ CSelf10[一時変数A] == 1   ] Case↓
+ | | | | | | |■Load DB(Var):  CSelf12[一時変数B] = VarDB[ "Allies":CSelf0[対象主人公ID]:"HP" ] (0:-:6) 
+ | | | | | | |■Set Variable: CSelf12[一時変数B] -= 1 + 0 
+ | | | | | | |■
+ | | | | | |◇End◇
+ | | | | | |■Load DB(User):  CSelf13[一時変数C] = UserDB[ "Skills":CSelf34[技能コード]:"┗ Points Consumed  " ] (0:-:5) 
+ | | | | | |■Condition (Number):   [1] CSelf12[一時変数B] <  CSelf13[一時変数C]  
+ | | | | | |-◇Condition:  [1]  [ CSelf12[一時変数B] < CSelf13[一時変数C]   ] Case↓
+ | | | | | | |▼ 必要ﾎﾟｲﾝﾄが足りなかったらチェック終了
+ | | | | | | |■Go to Loop Start
+ | | | | | | |■
+ | | | | | |◇End◇
+ | | | | | |▼ 封印チェック
+ | | | | | |■Load DB(Var):  CSelf12[一時変数B] = VarDB[ "×Allies Temp Data":CSelf0[対象主人公ID]:"[Temp] Sealed?" ] (17:-:16) 
+ | | | | | |■Load DB(User):  CSelf12[一時変数B] *= UserDB[ "Skills":CSelf34[技能コード]:"When Skills Are Limited..." ] (0:-:21) 
+ | | | | | |■Condition (Number):   [1] CSelf12[一時変数B] !=  0  
+ | | | | | |-◇Condition:  [1]  [ CSelf12[一時変数B] != 0   ] Case↓
+ | | | | | | |■Go to Loop Start
+ | | | | | | |■
+ | | | | | |◇End◇
+ | | | | | |▼ 発動アイテムチェック
+ | | | | | |■Set Variable: CSelf14[発動アイテムチェック] = 1 + 0 
+ | | | | | |■Load DB(User):  CSelf13[一時変数C] = UserDB[ "Skills":CSelf34[技能コード]:"Item Required? [Consume]" ] (0:-:20) 
+ | | | | | |■Condition (Number):   [1] CSelf13[一時変数C] >=  0  
+ | | | | | |-◇Condition:  [1]  [ CSelf13[一時変数C] >= 0   ] Case↓
+ | | | | | | |■Call Event [Name]: CSelf13[一時変数C] = ["X[Com]Get Item Quantity"] <CommonEv 54>  / CSelf13[一時変数C]
+ | | | | | | |▼ アイテムがなかったら発動アイテムチェックを0にする
+ | | | | | | |■Condition (Number):   [1] CSelf13[一時変数C] <=  0  
+ | | | | | | |-◇Condition:  [1]  [ CSelf13[一時変数C] <= 0   ] Case↓
+ | | | | | | | |■Set Variable: CSelf14[発動アイテムチェック] = 0 + 0 
+ | | | | | | | |■
+ | | | | | | |◇End◇
+ | | | | | | |■
+ | | | | | |◇End◇
+ | | | | | |■Condition (Number):   [1] CSelf14[発動アイテムチェック] >=  1  
+ | | | | | |-◇Condition:  [1]  [ CSelf14[発動アイテムチェック] >= 1   ] Case↓
+ | | | | | | |■Load DB(User):  CSelf12[一時変数B] = UserDB[ "Skills":CSelf34[技能コード]:"┏ Effect Target   " ] (0:-:2) 
+ | | | | | | |▼ 味方に対して使用可能　または　マップ時にイベント起動　の場合だけ使用可能
+ | | | | | | |■Condition (Number):   [1] CSelf12[一時変数B] ==  100  /  [2] CSelf12[一時変数B] >=  0  
+ | | | | | | |-◇Condition:  [1]  [ CSelf12[一時変数B] == 100   ] Case↓
+ | | | | | | | |▼ イベント起動
+ | | | | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1:Yes]" ] (19:-:2) =  1
+ | | | | | | | |■
+ | | | | | | |-◇Condition:  [2]  [ CSelf12[一時変数B] >= 0   ] Case↓
+ | | | | | | | |■Condition (Number):   [1] CSelf12[一時変数B] <=  9  
+ | | | | | | | |-◇Condition:  [1]  [ CSelf12[一時変数B] <= 9   ] Case↓
+ | | | | | | | | |▼ 味方に対して使用可能
+ | | | | | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1:Yes]" ] (19:-:2) =  1
+ | | | | | | | | |■
+ | | | | | | | |◇End◇
+ | | | | | | | |■
+ | | | | | | |◇End◇
+ | | | | | | |■
+ | | | | | |◇End◇
+ | | | | | |■
+ | | | | |◇End◇
+ | | | | |■
+ | | | |◇End◇
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇End◇
+ | |■
+ |◇End◇
+ |■
+◇Loop End Point◇◇
+▼ 万能ウィンドウの項目個数を代入
+■Write to DB(Var): VarDB[ "Base System Variables":"Universal Window Item Count":0 ] (18:17:Number) =  CSelf32[万能ウィンドウ登録位置]
+■Write to DB(Var): VarDB[ "Base System Variables":"Universal Window Item Count":0 ] (18:17:Number) +=  1
+■
+[COMMAND_TEXT_END]

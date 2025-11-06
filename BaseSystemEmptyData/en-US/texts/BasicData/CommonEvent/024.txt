@@ -1,0 +1,251 @@
+COMMON_ID=24
+COMMON_NAME=▲Check for State
+COMMAND_COLOR=0
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=Check whether an ally has a state. If they do, "1" is returned.
+VALINPUT_NUM=2
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=Target Ally
+VALINPUT_NAME_1=State
+VALINPUT_NAME_2=
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=0
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=1
+LOADTYPE1=1
+LOADTYPE2=0
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=0
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=3
+CHOICE_VAL_0_0=2
+CHOICE_VAL_0_1=0
+CHOICE_VAL_0_2=0
+CHOICE_VAL_1_NUM=3
+CHOICE_VAL_1_0=1
+CHOICE_VAL_1_1=8
+CHOICE_VAL_1_2=0
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=Yes: 1/No: 0
+RETURN_VAL_TARGET=30
+CSELF_NAME_0=Target Ally
+CSELF_NAME_1=State
+CSELF_NAME_2=
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=
+CSELF_NAME_9=
+CSELF_NAME_10=Battle Slot
+CSELF_NAME_11=Ally ID
+CSELF_NAME_12=
+CSELF_NAME_13=
+CSELF_NAME_14=
+CSELF_NAME_15=
+CSELF_NAME_16=
+CSELF_NAME_17=
+CSELF_NAME_18=
+CSELF_NAME_19=
+CSELF_NAME_20=
+CSELF_NAME_21=
+CSELF_NAME_22=
+CSELF_NAME_23=
+CSELF_NAME_24=
+CSELF_NAME_25=In-Battle Flag
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=
+CSELF_NAME_29=
+CSELF_NAME_30=Result
+CSELF_NAME_31=
+CSELF_NAME_32=
+CSELF_NAME_33=
+CSELF_NAME_34=
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=
+CSELF_NAME_41=
+CSELF_NAME_42=
+CSELF_NAME_43=
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=
+CSELF_NAME_89=
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=
+COMMAND_NUM=38
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("Branch depending on whether on map or in battle.")
+[250][5,4]<0>(18,68,0,200704,1600025)("","Base System Variables","[Battle] In Battle?","")
+[111][7,0]<0>(2,1600025,0,2,1600025,1,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("On Map")
+[250][5,4]<1>(5,1600000,1600001,69632,1600030)("","┗ State List","","")
+[111][4,0]<1>(1,1600030,0,5)()
+[401][1,0]<1>(1)()
+[103][0,1]<2>()("If not 0, it has the state, so store 1.")
+[121][4,0]<2>(1600030,1,0,0)()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[103][0,1]<1>()("In Battle")
+[250][5,4]<1>(18,51,0,69632,1600020)("","Base System Variables","","")
+[121][4,0]<1>(1600010,-1,0,0)()
+[179][1,0]<1>(1600020)()
+[121][4,0]<2>(1600010,1,0,256)()
+[300][4,1]<2>(0,16777217,1600010,1600011)("X[Bat]Get Ally ID in Slot")
+[111][4,0]<2>(1,1600011,1600000,2)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("Get from battle state list.")
+[250][5,4]<3>(13,1600010,1600001,69632,1600030)("","×┣State List","","")
+[111][4,0]<3>(1,1600030,0,5)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("If not 0, it has the state, so store 1.")
+[121][4,0]<4>(1600030,1,0,0)()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[172][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ Branch depending on whether on map or in battle.
+■Load DB(Var):  CSelf25[In-Battle Flag] = VarDB[ "Base System Variables":"[Battle] In Battle?":0 ] (18:68:Number) 
+■Condition (Number):   [1] CSelf25[In-Battle Flag] ==  0  /  [2] CSelf25[In-Battle Flag] ==  1  
+-◇Condition:  [1]  [ CSelf25[In-Battle Flag] == 0   ] Case↓
+ |▼ On Map
+ |■Load DB(Var):  CSelf30[Result] = VarDB[ "┗ State List":CSelf0[Target Ally]:CSelf1[State] ] (5:-:-) 
+ |■Condition (Number):   [1] CSelf30[Result] !=  0  
+ |-◇Condition:  [1]  [ CSelf30[Result] != 0   ] Case↓
+ | |▼ If not 0, it has the state, so store 1.
+ | |■Set Variable: CSelf30[Result] = 1 + 0 
+ | |■
+ |◇End◇
+ |■
+-◇Condition:  [2]  [ CSelf25[In-Battle Flag] == 1   ] Case↓
+ |▼ In Battle
+ |■Load DB(Var):  CSelf20 = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
+ |■Set Variable: CSelf10[Battle Slot] = -1 + 0 
+ |■Repeat Loop [ CSelf20 ] Times
+ | |■Set Variable: CSelf10[Battle Slot] += 1 + 0 
+ | |■Call Event [Name]: CSelf11[Ally ID] = ["X[Bat]Get Ally ID in Slot"] <CommonEv 141>  / CSelf10[Battle Slot]
+ | |■Condition (Number):   [1] CSelf11[Ally ID] ==  CSelf0[Target Ally]  
+ | |-◇Condition:  [1]  [ CSelf11[Ally ID] == CSelf0[Target Ally]   ] Case↓
+ | | |▼ Get from battle state list.
+ | | |■Load DB(Var):  CSelf30[Result] = VarDB[ "×┣State List":CSelf10[Battle Slot]:CSelf1[State] ] (13:-:-) 
+ | | |■Condition (Number):   [1] CSelf30[Result] !=  0  
+ | | |-◇Condition:  [1]  [ CSelf30[Result] != 0   ] Case↓
+ | | | |▼ If not 0, it has the state, so store 1.
+ | | | |■Set Variable: CSelf30[Result] = 1 + 0 
+ | | | |■
+ | | |◇End◇
+ | | |■Exit Event
+ | | |■
+ | |◇End◇
+ | |■
+ |◇Loop End Point◇◇
+ |■
+◇End◇
+■
+[COMMAND_TEXT_END]

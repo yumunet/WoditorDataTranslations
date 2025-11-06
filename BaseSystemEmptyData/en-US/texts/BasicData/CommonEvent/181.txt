@@ -1,0 +1,591 @@
+COMMON_ID=181
+COMMON_NAME=X[Bat]Display Dmg/Recovery Popup
+COMMAND_COLOR=5
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=4
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=表示位置X
+VALINPUT_NAME_1=表示位置Y
+VALINPUT_NAME_2=数値/状態番号
+VALINPUT_NAME_3=表示タイプ
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=0
+LOADTYPE2=0
+LOADTYPE3=2
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=0
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=6
+CHOICE_STR_3_0=HPダメージ
+CHOICE_STR_3_1=HP回復
+CHOICE_STR_3_2=SPダメージ
+CHOICE_STR_3_3=SP回復
+CHOICE_STR_3_4=状態付与
+CHOICE_STR_3_5=クリティカル(1)/ミス(-1)
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=0
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=6
+CHOICE_VAL_3_0=0
+CHOICE_VAL_3_1=1
+CHOICE_VAL_3_2=2
+CHOICE_VAL_3_3=3
+CHOICE_VAL_3_4=4
+CHOICE_VAL_3_5=5
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=
+RETURN_VAL_TARGET=-1
+CSELF_NAME_0=表示位置X
+CSELF_NAME_1=表示位置Y
+CSELF_NAME_2=数値
+CSELF_NAME_3=表示タイプ
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=
+CSELF_NAME_9=一時文字列
+CSELF_NAME_10=一時変数
+CSELF_NAME_11=桁数
+CSELF_NAME_12=割数
+CSELF_NAME_13=総シフト量 横
+CSELF_NAME_14=総シフト量 縦
+CSELF_NAME_15=
+CSELF_NAME_16=ディレイフレーム１
+CSELF_NAME_17=ディレイフレーム２
+CSELF_NAME_18=ディレイフレーム３（消去までの時間）
+CSELF_NAME_19=フォントサイズ
+CSELF_NAME_20=基本ピクチャ番号
+CSELF_NAME_21=表示ピクチャ番号
+CSELF_NAME_22=表示X
+CSELF_NAME_23=表示Y
+CSELF_NAME_24=表示桁数
+CSELF_NAME_25=
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=×座標倍率
+CSELF_NAME_29=
+CSELF_NAME_30=文字カラーR
+CSELF_NAME_31=文字カラーG
+CSELF_NAME_32=文字カラーB
+CSELF_NAME_33=
+CSELF_NAME_34=
+CSELF_NAME_35=ジャンプ先X
+CSELF_NAME_36=ジャンプ先Y
+CSELF_NAME_37=
+CSELF_NAME_38=フォントサイズ2
+CSELF_NAME_39=文字横幅
+CSELF_NAME_40=
+CSELF_NAME_41=
+CSELF_NAME_42=
+CSELF_NAME_43=
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=座標倍率X[x10]
+CSELF_NAME_89=座標倍率Y[x10]
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=表示回数（20回ループ）
+COMMAND_NUM=205
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("　戦闘時の、ダメージ・回復の数字ポップアップ表示、")
+[103][0,1]<0>()("　および、状態付与/消去時のポップアップ表示を行います。")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("　複数の数値を表示できるようにするため、9桁の値を20セットまで")
+[103][0,1]<0>()("　同時表示できるようにしています")
+[103][0,1]<0>()("")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()(" 　パラメータ設定")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("固定値を設定")
+[121][4,0]<0>(1600020,19000,0,0)()
+[121][4,0]<0>(1600020,10,1600099,8448)()
+[103][0,1]<0>()(" ")
+[121][4,0]<0>(1600016,0,0,0)()
+[121][4,0]<0>(1600017,3,0,0)()
+[121][4,0]<0>(1600018,50,0,0)()
+[250][5,4]<0>(18,5,0,69632,1600019)("","Base System Variables","","")
+[121][4,0]<0>(1600019,4,0,768)()
+[121][4,0]<0>(1600019,3,0,1024)()
+[250][5,4]<0>(18,5,0,69632,1600038)("","Base System Variables","","")
+[103][0,1]<0>()("Ver2.20　座標倍率を縦横別に修正")
+[250][5,4]<0>(18,97,0,69632,1600088)("","Base System Variables","","")
+[250][5,4]<0>(18,98,0,69632,1600089)("","Base System Variables","","")
+[103][0,1]<0>()(" ")
+[250][5,4]<0>(18,37,0,69632,1600022)("","Base System Variables","","")
+[250][5,4]<0>(18,38,0,69632,1600023)("","Base System Variables","","")
+[103][0,1]<0>()("表示カラーを設定")
+[111][10,0]<0>(19,1600003,0,2,1600003,1,2,1600003,2,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("HPダメージ")
+[121][4,0]<1>(1600030,100,0,0)()
+[121][4,0]<1>(1600031,100,0,0)()
+[121][4,0]<1>(1600032,100,0,0)()
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[103][0,1]<1>()("HP回復")
+[121][4,0]<1>(1600030,50,0,0)()
+[121][4,0]<1>(1600031,100,0,0)()
+[121][4,0]<1>(1600032,70,0,0)()
+[0][0,0]<1>()()
+[401][1,0]<0>(3)()
+[103][0,1]<1>()("SPダメージ")
+[121][4,0]<1>(1600030,100,0,0)()
+[121][4,0]<1>(1600031,80,0,0)()
+[121][4,0]<1>(1600032,60,0,0)()
+[121][4,0]<1>(1600001,1600089,0,256)()
+[0][0,0]<1>()()
+[420][1,0]<0>(0)()
+[111][7,0]<1>(2,1600003,3,2,1600003,4,2)()
+[401][1,0]<1>(1)()
+[103][0,1]<2>()("SP回復")
+[121][4,0]<2>(1600030,50,0,0)()
+[121][4,0]<2>(1600031,80,0,0)()
+[121][4,0]<2>(1600032,100,0,0)()
+[121][4,0]<2>(1600001,1600089,0,256)()
+[0][0,0]<2>()()
+[401][1,0]<1>(2)()
+[103][0,1]<2>()("状態異常")
+[121][4,0]<2>(1600030,100,0,0)()
+[121][4,0]<2>(1600031,100,0,0)()
+[121][4,0]<2>(1600032,100,0,0)()
+[121][4,0]<2>(1600001,1600089,3,8704)()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("　　　数値を表示する場合")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[111][4,0]<0>(1,1600003,3,3)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("桁数を得る")
+[121][4,0]<1>(1600002,0,0,1536)()
+[121][4,0]<1>(1600010,1600002,0,0)()
+[121][4,0]<1>(1600024,1,0,0)()
+[170][0,0]<1>()()
+[111][4,0]<2>(1,1600010,9,3)()
+[401][1,0]<2>(1)()
+[171][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[121][4,0]<2>(1600024,1,0,256)()
+[121][4,0]<2>(1600010,10,0,1024)()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[121][4,0]<1>(1600024,9,0,1792)()
+[103][0,1]<1>()("表示サイズを取得（中央寄せするため）")
+[121][4,0]<1>(1600021,1600020,0,0)()
+[150][13,1]<1>(4198176,1600021,0,1,1,-1000000,0,0,0,-1000000,-1000000,0,16777216)("\font[1]\f[\cself[19]]0")
+[124][4,0]<1>(1600013,16384,1600021,2)()
+[121][4,0]<1>(1600013,1600024,0,768)()
+[121][4,0]<1>(1600013,2,0,1024)()
+[121][4,0]<1>(1600013,1,0,512)()
+[121][4,0]<1>(1600000,1600013,0,512)()
+[103][0,1]<1>()("一桁ずつ表示")
+[121][4,0]<1>(1600039,-1,0,0)()
+[121][4,0]<1>(1600011,1600024,1,4096)()
+[179][1,0]<1>(1600024)()
+[121][4,0]<2>(1600010,1600002,0,0)()
+[121][4,0]<2>(1600012,10,0,0)()
+[179][1,0]<2>(1600011)()
+[121][4,0]<3>(1600012,10,0,768)()
+[0][0,0]<3>()()
+[498][0,0]<2>()()
+[121][4,0]<2>(1600010,1600012,0,1280)()
+[121][4,0]<2>(1600012,10,0,1024)()
+[121][4,0]<2>(1600010,1600012,0,1024)()
+[103][0,1]<2>()("ジャンプ先の座標を計算")
+[121][4,0]<2>(1600035,1600000,0,0)()
+[121][4,0]<2>(1600036,1600001,0,0)()
+[121][4,0]<2>(1600036,1600089,2,8704)()
+[103][0,1]<2>()("表示する")
+[121][4,0]<2>(1600021,1600020,1600011,0)()
+[150][2,0]<2>(4131,1600021)()
+[179][1,0]<2>(1)()
+[150][18,1]<3>(4128,1600021,0,1,1,-1000000,255,1600000,1600001,100,0,0,33554432,1600016,0,1600030,1600031,1600032)("\E\font[1]\f[\cself[19]]\cself[10]")
+[150][14,0]<3>(4198145,1600021,3,0,0,-1000000,-1000000,1600035,1600036,-1000000,-1000000,0,16777216,1600016)()
+[150][14,0]<3>(4198145,1600021,3,0,0,-1000000,-1000000,1600000,1600001,-1000000,-1000000,0,16777216,1600017)()
+[150][4,0]<3>(2,1600021,15,1600018)()
+[0][0,0]<3>()()
+[498][0,0]<2>()()
+[121][5,0]<2>(1600016,2,0,65792,2)()
+[103][0,1]<2>()("数値のサイズ分だけ横にずらす")
+[111][4,0]<2>(1,1600039,-1,2)()
+[401][1,0]<2>(1)()
+[124][4,0]<3>(1600039,16384,1600021,2)()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[121][4,0]<2>(1600000,1600039,0,256)()
+[121][4,0]<2>(1600011,1,0,512)()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("　　　ステータス付与を表示する場合")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[111][4,0]<0>(1,1600003,4,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("状態名を取得")
+[250][5,4]<1>(8,1600002,0,332288,1600009)("","States","","State Name")
+[103][0,1]<1>()("基本座標を補正")
+[121][4,0]<1>(1600010,1600089,2,8192)()
+[121][4,0]<1>(1600001,1600089,1600010,24832)()
+[103][0,1]<1>()("ジャンプ先の座標を計算")
+[121][4,0]<1>(1600035,1600000,0,0)()
+[121][4,0]<1>(1600036,1600001,0,0)()
+[121][4,0]<1>(1600036,1600089,2,8704)()
+[103][0,1]<1>()("表示する")
+[121][4,0]<1>(1600021,1600020,1,0)()
+[150][2,0]<1>(4131,1600021)()
+[179][1,0]<1>(1)()
+[150][18,1]<2>(4128,1600021,0,1,1,-1000000,255,1600000,1600001,100,0,0,33554432,1600016,0,1600030,1600031,1600032)("\f[\cself[38]]\E\-[1]\cself[9]")
+[150][14,0]<2>(4198145,1600021,3,0,0,-1000000,-1000000,1600035,1600036,-1000000,-1000000,0,16777216,1600016)()
+[150][14,0]<2>(4198145,1600021,3,0,0,-1000000,-1000000,1600000,1600001,-1000000,-1000000,0,16777216,1600017)()
+[150][4,0]<2>(2,1600021,15,1600018)()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("　　　クリティカル　or　ミス")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[111][4,0]<0>(1,1600003,5,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("表示する内容を設定")
+[122][2,1]<1>(1600009,0)("")
+[111][7,0]<1>(2,1600002,-1,2,1600002,1,2)()
+[401][1,0]<1>(1)()
+[122][3,1]<2>(1600009,0,0)("Miss!")
+[0][0,0]<2>()()
+[401][1,0]<1>(2)()
+[122][3,1]<2>(1600009,0,0)("Critical!")
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[103][0,1]<1>()("基本座標を補正")
+[121][4,0]<1>(1600001,1600089,1,8704)()
+[103][0,1]<1>()("ジャンプ先の座標を計算")
+[121][4,0]<1>(1600035,1600000,0,0)()
+[121][4,0]<1>(1600036,1600001,0,0)()
+[121][4,0]<1>(1600036,1600089,2,8704)()
+[103][0,1]<1>()("表示する")
+[121][4,0]<1>(1600021,1600020,1,0)()
+[150][2,0]<1>(4131,1600021)()
+[179][1,0]<1>(1)()
+[150][11,1]<2>(4128,1600021,0,1,1,-1000000,255,1600000,1600001,100,0)("\f[\cself[38]]\E\-[1]\cself[9]")
+[150][14,0]<2>(4198145,1600021,20,0,0,-1000000,255,1600035,1600036,-1000000,-1000000,0,16777216,4)()
+[150][14,0]<2>(4198145,1600021,20,0,0,-1000000,0,1600035,1600036,-1000000,-1000000,0,16777216,14)()
+[150][4,0]<2>(2,1600021,15,1600018)()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[103][0,1]<0>()("表示カウントを＋１")
+[121][4,0]<0>(1600099,1,0,256)()
+[121][4,0]<0>(1600099,20,0,1280)()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Process Overview]
+▼ 　戦闘時の、ダメージ・回復の数字ポップアップ表示、
+▼ 　および、状態付与/消去時のポップアップ表示を行います。
+▼  
+▼ 　複数の数値を表示できるようにするため、9桁の値を20セットまで
+▼ 　同時表示できるようにしています
+▼ 
+▼ [Databases Accessed by This Common Event]
+▼  
+▼ [Other Common Events Called from Here]
+▼  
+▼ [Main Common Events Calling This]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼  　パラメータ設定
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ 固定値を設定
+■Set Variable: CSelf20[基本ピクチャ番号] = 19000 + 0 
+■Set Variable: CSelf20[基本ピクチャ番号] += 10 * CSelf99[表示回数（20回ループ）] 
+▼  
+■Set Variable: CSelf16[ディレイフレーム１] = 0 + 0 
+■Set Variable: CSelf17[ディレイフレーム２] = 3 + 0 
+■Set Variable: CSelf18[ディレイフレーム３（消去までの時間）] = 50 + 0 
+■Load DB(Var):  CSelf19[フォントサイズ] = VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) 
+■Set Variable: CSelf19[フォントサイズ] *= 4 + 0 
+■Set Variable: CSelf19[フォントサイズ] /= 3 + 0 
+■Load DB(Var):  CSelf38[フォントサイズ2] = VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) 
+▼ Ver2.20　座標倍率を縦横別に修正
+■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
+■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
+▼  
+■Load DB(Var):  CSelf22[表示X] = VarDB[ "Base System Variables":37:0 ] (18:Status Display End X:Number) 
+■Load DB(Var):  CSelf23[表示Y] = VarDB[ "Base System Variables":38:0 ] (18:Status Display End Y:Number) 
+▼ 表示カラーを設定
+■Condition (Number):   [1] CSelf3[表示タイプ] ==  0  /  [2] CSelf3[表示タイプ] ==  1  /  [3] CSelf3[表示タイプ] ==  2  
+-◇Condition:  [1]  [ CSelf3[表示タイプ] == 0   ] Case↓
+ |▼ HPダメージ
+ |■Set Variable: CSelf30[文字カラーR] = 100 + 0 
+ |■Set Variable: CSelf31[文字カラーG] = 100 + 0 
+ |■Set Variable: CSelf32[文字カラーB] = 100 + 0 
+ |■
+-◇Condition:  [2]  [ CSelf3[表示タイプ] == 1   ] Case↓
+ |▼ HP回復
+ |■Set Variable: CSelf30[文字カラーR] = 50 + 0 
+ |■Set Variable: CSelf31[文字カラーG] = 100 + 0 
+ |■Set Variable: CSelf32[文字カラーB] = 70 + 0 
+ |■
+-◇Condition:  [3]  [ CSelf3[表示タイプ] == 2   ] Case↓
+ |▼ SPダメージ
+ |■Set Variable: CSelf30[文字カラーR] = 100 + 0 
+ |■Set Variable: CSelf31[文字カラーG] = 80 + 0 
+ |■Set Variable: CSelf32[文字カラーB] = 60 + 0 
+ |■Set Variable: CSelf1[表示位置Y] += CSelf89[座標倍率Y[x10]] + 0 
+ |■
+-◇Else
+ |■Condition (Number):   [1] CSelf3[表示タイプ] ==  3  /  [2] CSelf3[表示タイプ] ==  4  
+ |-◇Condition:  [1]  [ CSelf3[表示タイプ] == 3   ] Case↓
+ | |▼ SP回復
+ | |■Set Variable: CSelf30[文字カラーR] = 50 + 0 
+ | |■Set Variable: CSelf31[文字カラーG] = 80 + 0 
+ | |■Set Variable: CSelf32[文字カラーB] = 100 + 0 
+ | |■Set Variable: CSelf1[表示位置Y] += CSelf89[座標倍率Y[x10]] + 0 
+ | |■
+ |-◇Condition:  [2]  [ CSelf3[表示タイプ] == 4   ] Case↓
+ | |▼ 状態異常
+ | |■Set Variable: CSelf30[文字カラーR] = 100 + 0 
+ | |■Set Variable: CSelf31[文字カラーG] = 100 + 0 
+ | |■Set Variable: CSelf32[文字カラーB] = 100 + 0 
+ | |■Set Variable: CSelf1[表示位置Y] -= CSelf89[座標倍率Y[x10]] * 3 
+ | |■
+ |◇End◇
+ |■
+◇End◇
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ 　　　数値を表示する場合
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■Condition (Number):   [1] CSelf3[表示タイプ] <=  3  
+-◇Condition:  [1]  [ CSelf3[表示タイプ] <= 3   ] Case↓
+ |▼ 桁数を得る
+ |■Set Variable: CSelf2[数値] Lower Bound= 0 + 0 
+ |■Set Variable: CSelf10[一時変数] = CSelf2[数値] + 0 
+ |■Set Variable: CSelf24[表示桁数] = 1 + 0 
+ |■Loop Start
+ | |■Condition (Number):   [1] CSelf10[一時変数] <=  9  
+ | |-◇Condition:  [1]  [ CSelf10[一時変数] <= 9   ] Case↓
+ | | |■Break Loop
+ | | |■
+ | |◇End◇
+ | |■Set Variable: CSelf24[表示桁数] += 1 + 0 
+ | |■Set Variable: CSelf10[一時変数] /= 10 + 0 
+ | |■
+ |◇Loop End Point◇◇
+ |■Set Variable: CSelf24[表示桁数] Upper Bound= 9 + 0 
+ |▼ 表示サイズを取得（中央寄せするため）
+ |■Set Variable: CSelf21[表示ピクチャ番号] = CSelf20[基本ピクチャ番号] + 0 
+ |■Picture Show: CSelf21[表示ピクチャ番号] [Top-Left] String [\font[1]\f[\csel] X:0 Y:0 / 0(0) Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ |■Set Variable+: CSelf13[総シフト量 横] = Picture: CSelf21[表示ピクチャ番号]'s Image Size (Width)
+ |■Set Variable: CSelf13[総シフト量 横] *= CSelf24[表示桁数] + 0 
+ |■Set Variable: CSelf13[総シフト量 横] /= 2 + 0 
+ |■Set Variable: CSelf13[総シフト量 横] -= 1 + 0 
+ |■Set Variable: CSelf0[表示位置X] -= CSelf13[総シフト量 横] + 0 
+ |▼ 一桁ずつ表示
+ |■Set Variable: CSelf39[文字横幅] = -1 + 0 
+ |■Set Variable: CSelf11[桁数] = CSelf24[表示桁数] - 1 
+ |■Repeat Loop [ CSelf24[表示桁数] ] Times
+ | |■Set Variable: CSelf10[一時変数] = CSelf2[数値] + 0 
+ | |■Set Variable: CSelf12[割数] = 10 + 0 
+ | |■Repeat Loop [ CSelf11[桁数] ] Times
+ | | |■Set Variable: CSelf12[割数] *= 10 + 0 
+ | | |■
+ | |◇Loop End Point◇◇
+ | |■Set Variable: CSelf10[一時変数] %= CSelf12[割数] + 0 
+ | |■Set Variable: CSelf12[割数] /= 10 + 0 
+ | |■Set Variable: CSelf10[一時変数] /= CSelf12[割数] + 0 
+ | |▼ ジャンプ先の座標を計算
+ | |■Set Variable: CSelf35[ジャンプ先X] = CSelf0[表示位置X] + 0 
+ | |■Set Variable: CSelf36[ジャンプ先Y] = CSelf1[表示位置Y] + 0 
+ | |■Set Variable: CSelf36[ジャンプ先Y] -= CSelf89[座標倍率Y[x10]] * 2 
+ | |▼ 表示する
+ | |■Set Variable: CSelf21[表示ピクチャ番号] = CSelf20[基本ピクチャ番号] + CSelf11[桁数] 
+ | |■Picture [Reset Delay]: CSelf21[表示ピクチャ番号] 
+ | |■Repeat Loop [ 1 ] Times
+ | | |■Picture Show: CSelf21[表示ピクチャ番号] [Center] String [\E\font[1]\f[\cs] X:CSelf0[表示位置X] Y:CSelf1[表示位置Y] / 0(CSelf16[ディレイフレーム１]) Frames  / Pattern Same / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[CSelf30[文字カラーR]] G[CSelf31[文字カラーG]] B[CSelf32[文字カラーB]]
+ | | |■Picture Move: CSelf21[表示ピクチャ番号]  X:CSelf35[ジャンプ先X] Y:CSelf36[ジャンプ先Y] / 3(CSelf16[ディレイフレーム１]) Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | |■Picture Move: CSelf21[表示ピクチャ番号]  X:CSelf0[表示位置X] Y:CSelf1[表示位置Y] / 3(CSelf17[ディレイフレーム２]) Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | |■Picture Erase: CSelf21[表示ピクチャ番号]  / 15(CSelf18[ディレイフレーム３（消去までの時間）]) Frames
+ | | |■
+ | |◇Loop End Point◇◇
+ | |■Set Variable: CSelf16[ディレイフレーム１] to CSelf18[ディレイフレーム３（消去までの時間）] += 2 + 0 
+ | |▼ 数値のサイズ分だけ横にずらす
+ | |■Condition (Number):   [1] CSelf39[文字横幅] ==  -1  
+ | |-◇Condition:  [1]  [ CSelf39[文字横幅] == -1   ] Case↓
+ | | |■Set Variable+: CSelf39[文字横幅] = Picture: CSelf21[表示ピクチャ番号]'s Image Size (Width)
+ | | |■
+ | |◇End◇
+ | |■Set Variable: CSelf0[表示位置X] += CSelf39[文字横幅] + 0 
+ | |■Set Variable: CSelf11[桁数] -= 1 + 0 
+ | |■
+ |◇Loop End Point◇◇
+ |■
+◇End◇
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ 　　　ステータス付与を表示する場合
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■Condition (Number):   [1] CSelf3[表示タイプ] ==  4  
+-◇Condition:  [1]  [ CSelf3[表示タイプ] == 4   ] Case↓
+ |▼ 状態名を取得
+ |■Load DB(User):  CSelf9[一時文字列] = UserDB[ "States":CSelf2[数値]:"State Name" ] (8:-:0) 
+ |▼ 基本座標を補正
+ |■Set Variable: CSelf10[一時変数] = CSelf89[座標倍率Y[x10]] * 2 
+ |■Set Variable: CSelf1[表示位置Y] += CSelf89[座標倍率Y[x10]]  to  CSelf10[一時変数] 
+ |▼ ジャンプ先の座標を計算
+ |■Set Variable: CSelf35[ジャンプ先X] = CSelf0[表示位置X] + 0 
+ |■Set Variable: CSelf36[ジャンプ先Y] = CSelf1[表示位置Y] + 0 
+ |■Set Variable: CSelf36[ジャンプ先Y] -= CSelf89[座標倍率Y[x10]] * 2 
+ |▼ 表示する
+ |■Set Variable: CSelf21[表示ピクチャ番号] = CSelf20[基本ピクチャ番号] + 1 
+ |■Picture [Reset Delay]: CSelf21[表示ピクチャ番号] 
+ |■Repeat Loop [ 1 ] Times
+ | |■Picture Show: CSelf21[表示ピクチャ番号] [Center] String [\f[\cself[38]]\E] X:CSelf0[表示位置X] Y:CSelf1[表示位置Y] / 0(CSelf16[ディレイフレーム１]) Frames  / Pattern Same / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[CSelf30[文字カラーR]] G[CSelf31[文字カラーG]] B[CSelf32[文字カラーB]]
+ | |■Picture Move: CSelf21[表示ピクチャ番号]  X:CSelf35[ジャンプ先X] Y:CSelf36[ジャンプ先Y] / 3(CSelf16[ディレイフレーム１]) Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | |■Picture Move: CSelf21[表示ピクチャ番号]  X:CSelf0[表示位置X] Y:CSelf1[表示位置Y] / 3(CSelf17[ディレイフレーム２]) Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | |■Picture Erase: CSelf21[表示ピクチャ番号]  / 15(CSelf18[ディレイフレーム３（消去までの時間）]) Frames
+ | |■
+ |◇Loop End Point◇◇
+ |■
+◇End◇
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ 　　　クリティカル　or　ミス
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■Condition (Number):   [1] CSelf3[表示タイプ] ==  5  
+-◇Condition:  [1]  [ CSelf3[表示タイプ] == 5   ] Case↓
+ |▼ 表示する内容を設定
+ |■Set String: CSelf9[一時文字列] = ""
+ |■Condition (Number):   [1] CSelf2[数値] ==  -1  /  [2] CSelf2[数値] ==  1  
+ |-◇Condition:  [1]  [ CSelf2[数値] == -1   ] Case↓
+ | |■Set String: CSelf9[一時文字列] = "Miss!"
+ | |■
+ |-◇Condition:  [2]  [ CSelf2[数値] == 1   ] Case↓
+ | |■Set String: CSelf9[一時文字列] = "Critical!"
+ | |■
+ |◇End◇
+ |▼ 基本座標を補正
+ |■Set Variable: CSelf1[表示位置Y] -= CSelf89[座標倍率Y[x10]] * 1 
+ |▼ ジャンプ先の座標を計算
+ |■Set Variable: CSelf35[ジャンプ先X] = CSelf0[表示位置X] + 0 
+ |■Set Variable: CSelf36[ジャンプ先Y] = CSelf1[表示位置Y] + 0 
+ |■Set Variable: CSelf36[ジャンプ先Y] -= CSelf89[座標倍率Y[x10]] * 2 
+ |▼ 表示する
+ |■Set Variable: CSelf21[表示ピクチャ番号] = CSelf20[基本ピクチャ番号] + 1 
+ |■Picture [Reset Delay]: CSelf21[表示ピクチャ番号] 
+ |■Repeat Loop [ 1 ] Times
+ | |■Picture Show: CSelf21[表示ピクチャ番号] [Center] String [\f[\cself[38]]\E] X:CSelf0[表示位置X] Y:CSelf1[表示位置Y] / 0(0) Frames  / Pattern Same / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | |■Picture Move: CSelf21[表示ピクチャ番号]  X:CSelf35[ジャンプ先X] Y:CSelf36[ジャンプ先Y] / 20(4) Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | |■Picture Move: CSelf21[表示ピクチャ番号]  X:CSelf35[ジャンプ先X] Y:CSelf36[ジャンプ先Y] / 20(14) Frames  / Pattern Same / Opacity 0 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | |■Picture Erase: CSelf21[表示ピクチャ番号]  / 15(CSelf18[ディレイフレーム３（消去までの時間）]) Frames
+ | |■
+ |◇Loop End Point◇◇
+ |■
+◇End◇
+▼ 表示カウントを＋１
+■Set Variable: CSelf99[表示回数（20回ループ）] += 1 + 0 
+■Set Variable: CSelf99[表示回数（20回ループ）] %= 20 + 0 
+■
+[COMMAND_TEXT_END]

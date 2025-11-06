@@ -1,0 +1,223 @@
+COMMON_ID=66
+COMMON_NAME=X[Com]U-Window: Update Desc
+COMMAND_COLOR=6
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=0
+STRINPUT_NUM=1
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=
+VALINPUT_NAME_1=
+VALINPUT_NAME_2=
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=Description Text
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=0
+LOADTYPE2=0
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=0
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=0
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=
+RETURN_VAL_TARGET=-1
+CSELF_NAME_0=
+CSELF_NAME_1=
+CSELF_NAME_2=
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=Description Text
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=Window Image
+CSELF_NAME_9=Cursor Image
+CSELF_NAME_10=Temp Variable A
+CSELF_NAME_11=
+CSELF_NAME_12=
+CSELF_NAME_13=
+CSELF_NAME_14=
+CSELF_NAME_15=
+CSELF_NAME_16=
+CSELF_NAME_17=
+CSELF_NAME_18=Small Font Size
+CSELF_NAME_19=Base Font Size
+CSELF_NAME_20=Base Picture ID
+CSELF_NAME_21=Temp Picture ID
+CSELF_NAME_22=
+CSELF_NAME_23=
+CSELF_NAME_24=
+CSELF_NAME_25=
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=
+CSELF_NAME_29=
+CSELF_NAME_30=
+CSELF_NAME_31=
+CSELF_NAME_32=
+CSELF_NAME_33=
+CSELF_NAME_34=
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=
+CSELF_NAME_41=
+CSELF_NAME_42=
+CSELF_NAME_43=
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=
+CSELF_NAME_89=
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=
+COMMAND_NUM=27
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("  After the window is displayed by <dqrt>X[Com]Draw Universal Window<dqrt>,")
+[103][0,1]<0>()("  this is used to update only the description .")
+[103][0,1]<0>()("  (If the description isn't displayed, nothing will be displayed.)")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("  Set Parameters")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("Set fixed value.")
+[121][4,0]<0>(1600020,15000,0,0)()
+[103][0,1]<0>()("Load base parameters.")
+[250][5,4]<0>(18,6,0,69632,1600018)("","Base System Variables","","")
+[250][5,4]<0>(18,5,0,69632,1600019)("","Base System Variables","","")
+[250][5,4]<0>(17,0,0,332288,1600008)("","Images/Sounds","","Window Image File")
+[250][5,4]<0>(17,0,0,332288,1600009)("","Images/Sounds","","Cursor Image File")
+[103][0,1]<0>()(" ")
+[179][1,0]<0>(1)()
+[103][0,1]<1>()("Display description text. (Only if it was in display mode.)")
+[103][0,1]<1>()("Check whether the picture for the description text is already displayed.")
+[121][4,0]<1>(1600021,1600020,2,0)()
+[124][4,0]<1>(1600010,16384,1600021,9)()
+[150][2,0]<1>(67,1600021)()
+[150][13,1]<1>(4267808,1600021,0,1,1,-1000000,-1000000,0,0,-1000000,-1000000,0,16777216)("\f[\cself[18]]\space[0]<C>\cself[5]")
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Process Overview]
+▼   After the window is displayed by "X[Com]Draw Universal Window",
+▼   this is used to update only the description .
+▼   (If the description isn't displayed, nothing will be displayed.)
+▼ ―――――――――――――――――――――――――――――――――――
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼   Set Parameters
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ Set fixed value.
+■Set Variable: CSelf20[Base Picture ID] = 15000 + 0 
+▼ Load base parameters.
+■Load DB(Var):  CSelf18[Small Font Size] = VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) 
+■Load DB(Var):  CSelf19[Base Font Size] = VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) 
+■Load DB(User):  CSelf8[Window Image] = UserDB[ "Images/Sounds":0:"Window Image File" ] (16:Basic Images/Sounds:0) 
+■Load DB(User):  CSelf9[Cursor Image] = UserDB[ "Images/Sounds":0:"Cursor Image File" ] (16:Basic Images/Sounds:1) 
+▼  
+■Repeat Loop [ 1 ] Times
+ |▼ Display description text. (Only if it was in display mode.)
+ |▼ Check whether the picture for the description text is already displayed.
+ |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 2 
+ |■Set Variable+: CSelf10[Temp Variable A] = Picture: CSelf21[Temp Picture ID]'s Picture in Use? [1:Yes]
+ |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
+ |■Picture Show: CSelf21[Temp Picture ID] [Center] String [\f[\cself[18]]\s] Relative X:0 Y:0 / 0(0) Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ |■
+◇Loop End Point◇◇
+■
+[COMMAND_TEXT_END]

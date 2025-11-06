@@ -1,0 +1,601 @@
+COMMON_ID=148
+COMMON_NAME=X[Bat]CalcTempStats <StatusEffects>
+COMMAND_COLOR=6
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=2
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=対象戦闘ｽﾛｯﾄ
+VALINPUT_NAME_1=オプション
+VALINPUT_NAME_2=
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=2
+LOADTYPE2=0
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=2
+CHOICE_STR_1_0=パラメータ補正＋状態名計算
+CHOICE_STR_1_1=状態名のみ計算
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=2
+CHOICE_VAL_1_0=0
+CHOICE_VAL_1_1=1
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=
+RETURN_VAL_TARGET=-1
+CSELF_NAME_0=対象戦闘ｽﾛｯﾄ
+CSELF_NAME_1=オプション
+CSELF_NAME_2=
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=上書き顔グラ
+CSELF_NAME_8=一時文字列
+CSELF_NAME_9=状態名一覧
+CSELF_NAME_10=一時変数A
+CSELF_NAME_11=一時変数B
+CSELF_NAME_12=
+CSELF_NAME_13=
+CSELF_NAME_14=
+CSELF_NAME_15=残りﾀｰﾝ
+CSELF_NAME_16=注目状態位置
+CSELF_NAME_17=状態最大数
+CSELF_NAME_18=
+CSELF_NAME_19=
+CSELF_NAME_20=
+CSELF_NAME_21=
+CSELF_NAME_22=表示するか否か
+CSELF_NAME_23=状態個数
+CSELF_NAME_24=ｽﾃ状態表示方法
+CSELF_NAME_25=
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=
+CSELF_NAME_29=
+CSELF_NAME_30=行動制限番号
+CSELF_NAME_31=特殊技能制限
+CSELF_NAME_32=色変更
+CSELF_NAME_33=狙われ度
+CSELF_NAME_34=
+CSELF_NAME_35=戦闘不能カウントする？
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=HP
+CSELF_NAME_41=SP
+CSELF_NAME_42=最大HP
+CSELF_NAME_43=最大SP
+CSELF_NAME_44=攻撃力
+CSELF_NAME_45=防御力
+CSELF_NAME_46=精神攻撃
+CSELF_NAME_47=精神防御
+CSELF_NAME_48=敏捷性
+CSELF_NAME_49=命中率
+CSELF_NAME_50=回避率
+CSELF_NAME_51=クリティカル
+CSELF_NAME_52=
+CSELF_NAME_53=HP自動回復率％
+CSELF_NAME_54=HP自動回復固定値
+CSELF_NAME_55=SP自動回復率％
+CSELF_NAME_56=SP自動回復固定値
+CSELF_NAME_57=受ける攻撃力ダメージ率
+CSELF_NAME_58=受ける精神攻撃ダメージ率
+CSELF_NAME_59=
+CSELF_NAME_60=装備武器
+CSELF_NAME_61=装備防具1
+CSELF_NAME_62=装備防具2
+CSELF_NAME_63=装備防具3
+CSELF_NAME_64=装備防具4
+CSELF_NAME_65=装備防具5
+CSELF_NAME_66=装備防具6
+CSELF_NAME_67=装備防具7
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=
+CSELF_NAME_89=
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=
+COMMAND_NUM=214
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("　戦闘DBにて計算中の一時パラメータに、状態の効果を加算します。")
+[103][0,1]<0>()("　必ず事前に「X[戦]一時ｽﾃ計算<初期化>」「X[戦]一時ｽﾃ計算<装備補正>」を行ってください。")
+[103][0,1]<0>()("　この処理を上記の処理なしで連続で行うと、状態効果が重複して計算されてしまいます。")
+[103][0,1]<0>()("")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[111][4,0]<0>(1,1600000,-1,3)()
+[401][1,0]<0>(1)()
+[101][0,1]<1>()("\>「X[戦]一時ｽﾃ計算<状態補正>」エラー：<\n>　戦闘スロットが「-1」以下になっています。＞ \cself[0]")
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[103][0,1]<0>()("元の値を読み込む")
+[250][5,4]<0>(10,1600000,45,331776,1600042)("","×┏Battle Temp Status","","[Temp] Equip Calc Max HP")
+[250][5,4]<0>(10,1600000,47,331776,1600043)("","×┏Battle Temp Status","","[Temp] Equip Calc Max SP")
+[250][5,4]<0>(10,1600000,48,331776,1600044)("","×┏Battle Temp Status","","[Temp] Post-Calc Attack")
+[250][5,4]<0>(10,1600000,49,331776,1600045)("","×┏Battle Temp Status","","[Temp] Post-Calc Defense")
+[250][5,4]<0>(10,1600000,50,331776,1600046)("","×┏Battle Temp Status","","[Temp] Post-Calc Magic Atk")
+[250][5,4]<0>(10,1600000,51,331776,1600047)("","×┏Battle Temp Status","","[Temp] Post-Calc Magic Def")
+[250][5,4]<0>(10,1600000,52,331776,1600048)("","×┏Battle Temp Status","","[Temp] Post-Calc Agility")
+[250][5,4]<0>(10,1600000,53,331776,1600049)("","×┏Battle Temp Status","","[Temp] Post-Calc Accuracy")
+[250][5,4]<0>(10,1600000,54,331776,1600050)("","×┏Battle Temp Status","","[Temp] Post-Calc Evasion")
+[250][5,4]<0>(10,1600000,55,331776,1600051)("","×┏Battle Temp Status","","[Temp]Post-Calc Critical Rate")
+[121][5,0]<0>(1600053,0,0,65536,3)()
+[121][4,0]<0>(1600057,100,0,0)()
+[121][4,0]<0>(1600058,100,0,0)()
+[121][4,0]<0>(1600035,0,0,0)()
+[103][0,1]<0>()(" ")
+[122][2,1]<0>(1600007,0)("")
+[122][2,1]<0>(1600009,0)("")
+[250][5,4]<0>(18,0,17,332288,1600024)("","System Settings","","States Display")
+[121][4,0]<0>(1600023,0,0,0)()
+[121][4,0]<0>(1600030,0,0,0)()
+[121][4,0]<0>(1600032,0,0,0)()
+[121][4,0]<0>(1600033,0,0,0)()
+[103][0,1]<0>()(" ")
+[121][4,0]<0>(1600016,-1,0,0)()
+[250][5,4]<0>(8,-1,27,70144,1600017)("","States","","")
+[179][1,0]<0>(1600017)()
+[121][4,0]<1>(1600016,1,0,256)()
+[250][5,4]<1>(13,1600000,1600016,69632,1600015)("","×┣State List","","")
+[111][4,0]<1>(1,1600015,0,5)()
+[401][1,0]<1>(1)()
+[111][4,0]<2>(1,1600001,0,2)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("パラメータ計算も行う場合だけ処理")
+[103][0,1]<3>()("パラメータ補正")
+[250][5,4]<3>(8,1600016,28,332336,1600044)("","States","","Attack Change [%]")
+[250][5,4]<3>(8,1600016,29,332336,1600045)("","States","","Defense Change [%]")
+[250][5,4]<3>(8,1600016,30,332336,1600046)("","States","","Magic Attack Change [%]")
+[250][5,4]<3>(8,1600016,31,332336,1600047)("","States","","Magic Defense Change [%]")
+[250][5,4]<3>(8,1600016,32,332336,1600048)("","States","","Agility Change [%]")
+[121][5,0]<3>(1600044,100,0,66560,4)()
+[250][5,4]<3>(8,1600016,33,332304,1600049)("","States","","Accuracy (%) Change [±]")
+[250][5,4]<3>(8,1600016,34,332304,1600050)("","States","","Evasion (%) Change [±]")
+[250][5,4]<3>(8,1600016,35,332304,1600051)("","States","","Critical Rate (%) Change [±]")
+[250][5,4]<3>(8,1600016,20,332336,1600057)("","States","","Physical Damage Taken Rate")
+[121][4,0]<3>(1600057,100,0,1024)()
+[250][5,4]<3>(8,1600016,21,332336,1600058)("","States","","Magic Damage Taken Rate")
+[121][4,0]<3>(1600058,100,0,1024)()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[103][0,1]<2>()("最大HP・SP補正")
+[250][5,4]<2>(8,1600016,26,332336,1600042)("","States","","Max HP Change [%]")
+[250][5,4]<2>(8,1600016,27,332336,1600043)("","States","","Max SP Change [%]")
+[121][5,0]<2>(1600042,100,0,66560,1)()
+[103][0,1]<2>()("自然回復量")
+[250][5,4]<2>(8,1600016,22,332304,1600053)("","States","","HP Change[±%](at Turn End)")
+[250][5,4]<2>(8,1600016,23,332304,1600054)("","States","","HP Change [±] (at Turn End)")
+[250][5,4]<2>(8,1600016,24,332304,1600055)("","States","","SP Change[±%](at Turn End)")
+[250][5,4]<2>(8,1600016,25,332304,1600056)("","States","","SP Change [±] (at Turn End)")
+[103][0,1]<2>()("行動制限")
+[250][5,4]<2>(8,1600016,16,332288,1600010)("","States","","Action Restriction")
+[111][4,0]<2>(1,1600010,0,5)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("「行動不能」以外なら上書き")
+[111][4,0]<3>(1,1600030,0,3)()
+[401][1,0]<3>(1)()
+[121][4,0]<4>(1600030,1600010,0,0)()
+[103][0,1]<4>()("行動制限時のメッセージ")
+[250][5,4]<4>(8,1600016,13,332288,1600008)("","States","","Restriction Msg (Blank:None)")
+[250][5,4]<4>(11,1600000,67,327680,1600008)("","×┏Battle Temp Status","","Action Restriction Message")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[103][0,1]<2>()(" ")
+[250][5,4]<2>(8,1600016,45,332288,1600008)("","States","","Portrait for State")
+[112][2,4]<2>(1,1600007)("","","","")
+[401][1,0]<2>(1)()
+[122][3,0]<3>(1600007,1,1600008)()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[103][0,1]<2>()("技能制限")
+[250][5,4]<2>(8,1600016,17,332288,1600010)("","States","","Skill Limitation")
+[250][5,4]<2>(10,1600000,59,327776,1600010)("","×┏Battle Temp Status","","[Skill Limitation] 1:Sealed")
+[111][4,0]<2>(1,1600010,1,1)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("技能制限ならメッセージを登録")
+[250][5,4]<3>(8,1600016,13,332288,1600008)("","States","","Restriction Msg (Blank:None)")
+[250][5,4]<3>(10,1600000,68,327680,1600008)("","×┏Battle Temp Status","","Skill Limitation Message")
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[103][0,1]<2>()(" ")
+[250][5,4]<2>(8,1600016,15,332384,1600035)("","States","","Count as Fainted?")
+[103][0,1]<2>()(" ")
+[250][5,4]<2>(8,1600016,39,332288,1600010)("","States","","Counterattack? (with Skill)     ")
+[250][5,4]<2>(10,1600000,61,327776,1600010)("","×┏Battle Temp Status","","[Counterattack?]")
+[103][0,1]<2>()(" ")
+[250][5,4]<2>(8,1600016,20,332288,1600010)("","States","","Physical Damage Taken Rate")
+[250][5,4]<2>(10,1600000,56,327728,1600010)("","×┏Battle Temp Status","","[Physical Dmg Taken Rate]")
+[250][5,4]<2>(10,1600000,56,327744,100)("","×┏Battle Temp Status","","[Physical Dmg Taken Rate]")
+[103][0,1]<2>()(" ")
+[250][5,4]<2>(8,1600016,21,332288,1600010)("","States","","Magic Damage Taken Rate")
+[250][5,4]<2>(10,1600000,57,327728,1600010)("","×┏Battle Temp Status","","[Magic Damage Taken Rate]")
+[250][5,4]<2>(10,1600000,57,327744,100)("","×┏Battle Temp Status","","[Magic Damage Taken Rate]")
+[103][0,1]<2>()(" ")
+[250][5,4]<2>(8,1600016,38,332288,1600010)("","States","","Enemy Targeting Level")
+[111][4,0]<2>(1,1600010,0,5)()
+[401][1,0]<2>(1)()
+[121][4,0]<3>(1600033,1600010,0,0)()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[103][0,1]<2>()("色変更を計算")
+[250][5,4]<2>(8,1600016,3,332288,1600010)("","States","","Color Change: Allies Only")
+[111][4,0]<2>(1,1600032,0,2)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("最初の一個目だけを反映")
+[121][4,0]<3>(1600032,1600010,0,0)()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[103][0,1]<2>()("表示されるステータス状態一覧を計算")
+[103][0,1]<2>()("もしステータスに表示される状態異常なら、状態名一覧に追加")
+[250][5,4]<2>(8,1600016,1,332288,1600022)("","States","","Display Type")
+[111][4,0]<2>(1,1600022,1,6)()
+[401][1,0]<2>(1)()
+[111][4,0]<3>(1,1600023,4,1)()
+[401][1,0]<3>(1)()
+[121][4,0]<4>(1600023,4,0,1280)()
+[111][4,0]<4>(1,1600023,0,2)()
+[401][1,0]<4>(1)()
+[122][2,1]<5>(1600009,256)("<\n>")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[111][4,0]<3>(1,1600024,1,2)()
+[401][1,0]<3>(1)()
+[111][4,0]<4>(1,1600023,0,5)()
+[401][1,0]<4>(1)()
+[122][2,1]<5>(1600009,256)("/")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[250][5,4]<3>(8,1600016,2,332304,1600009)("","States","","Display Name")
+[121][4,0]<3>(1600023,1,0,256)()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[103][0,1]<0>()(" ")
+[111][4,0]<0>(1,1600001,0,2)()
+[401][1,0]<0>(1)()
+[121][5,0]<1>(1600044,0,0,67072,7)()
+[250][5,4]<1>(10,1600000,48,327680,1600044)("","×┏Battle Temp Status","","[Temp] Post-Calc Attack")
+[250][5,4]<1>(10,1600000,49,327680,1600045)("","×┏Battle Temp Status","","[Temp] Post-Calc Defense")
+[250][5,4]<1>(10,1600000,50,327680,1600046)("","×┏Battle Temp Status","","[Temp] Post-Calc Magic Atk")
+[250][5,4]<1>(10,1600000,51,327680,1600047)("","×┏Battle Temp Status","","[Temp] Post-Calc Magic Def")
+[250][5,4]<1>(10,1600000,52,327680,1600048)("","×┏Battle Temp Status","","[Temp] Post-Calc Agility")
+[250][5,4]<1>(10,1600000,53,327680,1600049)("","×┏Battle Temp Status","","[Temp] Post-Calc Accuracy")
+[250][5,4]<1>(10,1600000,54,327680,1600050)("","×┏Battle Temp Status","","[Temp] Post-Calc Evasion")
+[250][5,4]<1>(10,1600000,55,327680,1600051)("","×┏Battle Temp Status","","[Temp]Post-Calc Critical Rate")
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[121][4,0]<0>(1600042,1,0,1536)()
+[121][4,0]<0>(1600043,0,0,1536)()
+[250][5,4]<0>(10,1600000,44,327680,1600042)("","×┏Battle Temp Status","","[Temp] Post-Calc Max HP")
+[250][5,4]<0>(10,1600000,46,327680,1600043)("","×┏Battle Temp Status","","[Temp] Post-Calc Max SP")
+[250][5,4]<0>(10,1600000,62,327680,1600053)("","×┏Battle Temp Status","","HP Change per Turn [%]")
+[250][5,4]<0>(10,1600000,63,327680,1600054)("","×┏Battle Temp Status","","HP Change per Turn [Fixed]")
+[250][5,4]<0>(10,1600000,64,327680,1600055)("","×┏Battle Temp Status","","SP Change per Turn [%]")
+[250][5,4]<0>(10,1600000,65,327680,1600056)("","×┏Battle Temp Status","","SP Change per Turn [Fixed]")
+[250][5,4]<0>(11,1600000,56,327680,1600057)("","×┏Battle Temp Status","","[Physical Dmg Taken Rate]")
+[250][5,4]<0>(11,1600000,57,327680,1600058)("","×┏Battle Temp Status","","[Magic Damage Taken Rate]")
+[250][5,4]<0>(11,1600000,4,327680,1600032)("","×┏Battle Temp Status","","Display Color ID")
+[250][5,4]<0>(11,1600000,58,327680,1600033)("","×┏Battle Temp Status","","[Target Level] -1:NotTargeted")
+[250][5,4]<0>(11,1600000,59,327680,1600030)("","×┏Battle Temp Status","","[Action Restriction]")
+[103][0,1]<0>()("もし戦闘不能なら、基本ｽﾃｰﾀｽ側も純粋に1にする")
+[250][5,4]<0>(14,1600000,0,69632,1600010)("","×┣State List","","")
+[111][4,0]<0>(17,1600010,0,5)()
+[401][1,0]<0>(1)()
+[250][5,4]<1>(11,1600000,3,327680,1)("","×┏Battle Temp Status","","[Fainted?]")
+[0][0,0]<1>()()
+[420][1,0]<0>(0)()
+[250][5,4]<1>(11,1600000,3,327680,0)("","×┏Battle Temp Status","","[Fainted?]")
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[250][5,4]<0>(11,1600000,3,327776,1600035)("","×┏Battle Temp Status","","[Fainted?]")
+[250][5,4]<0>(11,1600000,3,327792,1)("","×┏Battle Temp Status","","[Fainted?]")
+[250][5,4]<0>(11,1600000,3,327776,0)("","×┏Battle Temp Status","","[Fainted?]")
+[103][0,1]<0>()("上書き顔グラを格納")
+[250][5,4]<0>(11,1600000,2,327680,1600007)("","×┏Battle Temp Status","","Temp Overwrite Image File")
+[103][0,1]<0>()("表示状態文字列に格納")
+[250][5,4]<0>(11,1600000,69,327680,1600009)("","×┏Battle Temp Status","","[Temp] State Names")
+[103][0,1]<0>()("HP・SPの現在値を修正")
+[250][5,4]<0>(10,1600000,5,327792,1600042)("","×┏Battle Temp Status","","HP")
+[250][5,4]<0>(10,1600000,7,327792,1600043)("","×┏Battle Temp Status","","SP")
+[103][0,1]<0>()("オプションを0に戻しておく")
+[121][4,0]<0>(1600001,0,0,0)()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Process Overview]
+▼ 　戦闘DBにて計算中の一時パラメータに、状態の効果を加算します。
+▼ 　必ず事前に「X[戦]一時ｽﾃ計算<初期化>」「X[戦]一時ｽﾃ計算<装備補正>」を行ってください。
+▼ 　この処理を上記の処理なしで連続で行うと、状態効果が重複して計算されてしまいます。
+▼ 
+▼ ―――――――――――――――――――――――――――――――――――
+■Condition (Number):   [1] CSelf0[対象戦闘ｽﾛｯﾄ] <=  -1  
+-◇Condition:  [1]  [ CSelf0[対象戦闘ｽﾛｯﾄ] <= -1   ] Case↓
+ |■Show Message: \>「X[戦]一時ｽﾃ計算<状態補正>」エラー：\n　戦闘スロットが「-1」以下になっています。＞ \cself[0]
+ |■Exit Event
+ |■
+◇End◇
+▼ 元の値を読み込む
+■Load DB(Var):  CSelf42[最大HP] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Equip Calc Max HP" ] (10:-:45) 
+■Load DB(Var):  CSelf43[最大SP] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Equip Calc Max SP" ] (10:-:47) 
+■Load DB(Var):  CSelf44[攻撃力] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Attack" ] (10:-:48) 
+■Load DB(Var):  CSelf45[防御力] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Defense" ] (10:-:49) 
+■Load DB(Var):  CSelf46[精神攻撃] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Magic Atk" ] (10:-:50) 
+■Load DB(Var):  CSelf47[精神防御] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Magic Def" ] (10:-:51) 
+■Load DB(Var):  CSelf48[敏捷性] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Agility" ] (10:-:52) 
+■Load DB(Var):  CSelf49[命中率] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Accuracy" ] (10:-:53) 
+■Load DB(Var):  CSelf50[回避率] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Evasion" ] (10:-:54) 
+■Load DB(Var):  CSelf51[クリティカル] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp]Post-Calc Critical Rate" ] (10:-:55) 
+■Set Variable: CSelf53[HP自動回復率％] to CSelf56[SP自動回復固定値] = 0 + 0 
+■Set Variable: CSelf57[受ける攻撃力ダメージ率] = 100 + 0 
+■Set Variable: CSelf58[受ける精神攻撃ダメージ率] = 100 + 0 
+■Set Variable: CSelf35[戦闘不能カウントする？] = 0 + 0 
+▼  
+■Set String: CSelf7[上書き顔グラ] = ""
+■Set String: CSelf9[状態名一覧] = ""
+■Load DB(User):  CSelf24[ｽﾃ状態表示方法] = UserDB[ "System Settings":0:"States Display" ] (17:Basic System Settings:19) 
+■Set Variable: CSelf23[状態個数] = 0 + 0 
+■Set Variable: CSelf30[行動制限番号] = 0 + 0 
+■Set Variable: CSelf32[色変更] = 0 + 0 
+■Set Variable: CSelf33[狙われ度] = 0 + 0 
+▼  
+■Set Variable: CSelf16[注目状態位置] = -1 + 0 
+■Load DB(User):  CSelf17[状態最大数] = UserDB[Type "States"(8)'s Data Count]
+■Repeat Loop [ CSelf17[状態最大数] ] Times
+ |■Set Variable: CSelf16[注目状態位置] += 1 + 0 
+ |■Load DB(Var):  CSelf15[残りﾀｰﾝ] = VarDB[ "×┣State List":CSelf0[対象戦闘ｽﾛｯﾄ]:CSelf16[注目状態位置] ] (13:-:-) 
+ |■Condition (Number):   [1] CSelf15[残りﾀｰﾝ] !=  0  
+ |-◇Condition:  [1]  [ CSelf15[残りﾀｰﾝ] != 0   ] Case↓
+ | |■Condition (Number):   [1] CSelf1[オプション] ==  0  
+ | |-◇Condition:  [1]  [ CSelf1[オプション] == 0   ] Case↓
+ | | |▼ パラメータ計算も行う場合だけ処理
+ | | |▼ パラメータ補正
+ | | |■Load DB(User):  CSelf44[攻撃力] *= UserDB[ "States":CSelf16[注目状態位置]:"Attack Change [%]" ] (8:-:28) 
+ | | |■Load DB(User):  CSelf45[防御力] *= UserDB[ "States":CSelf16[注目状態位置]:"Defense Change [%]" ] (8:-:29) 
+ | | |■Load DB(User):  CSelf46[精神攻撃] *= UserDB[ "States":CSelf16[注目状態位置]:"Magic Attack Change [%]" ] (8:-:30) 
+ | | |■Load DB(User):  CSelf47[精神防御] *= UserDB[ "States":CSelf16[注目状態位置]:"Magic Defense Change [%]" ] (8:-:31) 
+ | | |■Load DB(User):  CSelf48[敏捷性] *= UserDB[ "States":CSelf16[注目状態位置]:"Agility Change [%]" ] (8:-:32) 
+ | | |■Set Variable: CSelf44[攻撃力] to CSelf48[敏捷性] /= 100 + 0 
+ | | |■Load DB(User):  CSelf49[命中率] += UserDB[ "States":CSelf16[注目状態位置]:"Accuracy (%) Change [±]" ] (8:-:33) 
+ | | |■Load DB(User):  CSelf50[回避率] += UserDB[ "States":CSelf16[注目状態位置]:"Evasion (%) Change [±]" ] (8:-:34) 
+ | | |■Load DB(User):  CSelf51[クリティカル] += UserDB[ "States":CSelf16[注目状態位置]:"Critical Rate (%) Change [±]" ] (8:-:35) 
+ | | |■Load DB(User):  CSelf57[受ける攻撃力ダメージ率] *= UserDB[ "States":CSelf16[注目状態位置]:"Physical Damage Taken Rate" ] (8:-:20) 
+ | | |■Set Variable: CSelf57[受ける攻撃力ダメージ率] /= 100 + 0 
+ | | |■Load DB(User):  CSelf58[受ける精神攻撃ダメージ率] *= UserDB[ "States":CSelf16[注目状態位置]:"Magic Damage Taken Rate" ] (8:-:21) 
+ | | |■Set Variable: CSelf58[受ける精神攻撃ダメージ率] /= 100 + 0 
+ | | |■
+ | |◇End◇
+ | |▼ 最大HP・SP補正
+ | |■Load DB(User):  CSelf42[最大HP] *= UserDB[ "States":CSelf16[注目状態位置]:"Max HP Change [%]" ] (8:-:26) 
+ | |■Load DB(User):  CSelf43[最大SP] *= UserDB[ "States":CSelf16[注目状態位置]:"Max SP Change [%]" ] (8:-:27) 
+ | |■Set Variable: CSelf42[最大HP] to CSelf43[最大SP] /= 100 + 0 
+ | |▼ 自然回復量
+ | |■Load DB(User):  CSelf53[HP自動回復率％] += UserDB[ "States":CSelf16[注目状態位置]:"HP Change[±%](at Turn End)" ] (8:-:22) 
+ | |■Load DB(User):  CSelf54[HP自動回復固定値] += UserDB[ "States":CSelf16[注目状態位置]:"HP Change [±] (at Turn End)" ] (8:-:23) 
+ | |■Load DB(User):  CSelf55[SP自動回復率％] += UserDB[ "States":CSelf16[注目状態位置]:"SP Change[±%](at Turn End)" ] (8:-:24) 
+ | |■Load DB(User):  CSelf56[SP自動回復固定値] += UserDB[ "States":CSelf16[注目状態位置]:"SP Change [±] (at Turn End)" ] (8:-:25) 
+ | |▼ 行動制限
+ | |■Load DB(User):  CSelf10[一時変数A] = UserDB[ "States":CSelf16[注目状態位置]:"Action Restriction" ] (8:-:16) 
+ | |■Condition (Number):   [1] CSelf10[一時変数A] !=  0  
+ | |-◇Condition:  [1]  [ CSelf10[一時変数A] != 0   ] Case↓
+ | | |▼ 「行動不能」以外なら上書き
+ | | |■Condition (Number):   [1] CSelf30[行動制限番号] <=  0  
+ | | |-◇Condition:  [1]  [ CSelf30[行動制限番号] <= 0   ] Case↓
+ | | | |■Set Variable: CSelf30[行動制限番号] = CSelf10[一時変数A] + 0 
+ | | | |▼ 行動制限時のメッセージ
+ | | | |■Load DB(User):  CSelf8[一時文字列] = UserDB[ "States":CSelf16[注目状態位置]:"Restriction Msg (Blank:None)" ] (8:-:13) 
+ | | | |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Action Restriction Message" ] (10:-:67) =  CSelf8[一時文字列]
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇End◇
+ | |▼  
+ | |■Load DB(User):  CSelf8[一時文字列] = UserDB[ "States":CSelf16[注目状態位置]:"Portrait for State" ] (8:-:45) 
+ | |■Condition (String):   [1] CSelf7[上書き顔グラ] Is Equal to ""
+ | |-◇Condition:  [1] [ CSelf7[上書き顔グラ] Is Equal to "" ] Case↓
+ | | |■Set String: CSelf7[上書き顔グラ] = CSelf8[一時文字列]
+ | | |■
+ | |◇End◇
+ | |▼ 技能制限
+ | |■Load DB(User):  CSelf10[一時変数A] = UserDB[ "States":CSelf16[注目状態位置]:"Skill Limitation" ] (8:-:17) 
+ | |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Skill Limitation] 1:Sealed" ] (10:-:60) Lower Bound  CSelf10[一時変数A]
+ | |■Condition (Number):   [1] CSelf10[一時変数A] >=  1  
+ | |-◇Condition:  [1]  [ CSelf10[一時変数A] >= 1   ] Case↓
+ | | |▼ 技能制限ならメッセージを登録
+ | | |■Load DB(User):  CSelf8[一時文字列] = UserDB[ "States":CSelf16[注目状態位置]:"Restriction Msg (Blank:None)" ] (8:-:13) 
+ | | |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Skill Limitation Message" ] (10:-:68) =  CSelf8[一時文字列]
+ | | |■
+ | |◇End◇
+ | |▼  
+ | |■Load DB(User):  CSelf35[戦闘不能カウントする？] Lower Bound UserDB[ "States":CSelf16[注目状態位置]:"Count as Fainted?" ] (8:-:15) 
+ | |▼  
+ | |■Load DB(User):  CSelf10[一時変数A] = UserDB[ "States":CSelf16[注目状態位置]:"Counterattack? (with Skill)     " ] (8:-:40) 
+ | |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Counterattack?]" ] (10:-:61) Lower Bound  CSelf10[一時変数A]
+ | |▼  
+ | |■Load DB(User):  CSelf10[一時変数A] = UserDB[ "States":CSelf16[注目状態位置]:"Physical Damage Taken Rate" ] (8:-:20) 
+ | |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Physical Dmg Taken Rate]" ] (10:-:56) *=  CSelf10[一時変数A]
+ | |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Physical Dmg Taken Rate]" ] (10:-:56) /=  100
+ | |▼  
+ | |■Load DB(User):  CSelf10[一時変数A] = UserDB[ "States":CSelf16[注目状態位置]:"Magic Damage Taken Rate" ] (8:-:21) 
+ | |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Magic Damage Taken Rate]" ] (10:-:57) *=  CSelf10[一時変数A]
+ | |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Magic Damage Taken Rate]" ] (10:-:57) /=  100
+ | |▼  
+ | |■Load DB(User):  CSelf10[一時変数A] = UserDB[ "States":CSelf16[注目状態位置]:"Enemy Targeting Level" ] (8:-:38) 
+ | |■Condition (Number):   [1] CSelf10[一時変数A] !=  0  
+ | |-◇Condition:  [1]  [ CSelf10[一時変数A] != 0   ] Case↓
+ | | |■Set Variable: CSelf33[狙われ度] = CSelf10[一時変数A] + 0 
+ | | |■
+ | |◇End◇
+ | |▼ 色変更を計算
+ | |■Load DB(User):  CSelf10[一時変数A] = UserDB[ "States":CSelf16[注目状態位置]:"Color Change: Allies Only" ] (8:-:3) 
+ | |■Condition (Number):   [1] CSelf32[色変更] ==  0  
+ | |-◇Condition:  [1]  [ CSelf32[色変更] == 0   ] Case↓
+ | | |▼ 最初の一個目だけを反映
+ | | |■Set Variable: CSelf32[色変更] = CSelf10[一時変数A] + 0 
+ | | |■
+ | |◇End◇
+ | |▼ 表示されるステータス状態一覧を計算
+ | |▼ もしステータスに表示される状態異常なら、状態名一覧に追加
+ | |■Load DB(User):  CSelf22[表示するか否か] = UserDB[ "States":CSelf16[注目状態位置]:"Display Type" ] (8:-:1) 
+ | |■Condition (Number):   [1] CSelf22[表示するか否か] &  1  
+ | |-◇Condition:  [1]  [ CSelf22[表示するか否か] & 1   ] Case↓
+ | | |■Condition (Number):   [1] CSelf23[状態個数] >=  4  
+ | | |-◇Condition:  [1]  [ CSelf23[状態個数] >= 4   ] Case↓
+ | | | |■Set Variable: CSelf23[状態個数] %= 4 + 0 
+ | | | |■Condition (Number):   [1] CSelf23[状態個数] ==  0  
+ | | | |-◇Condition:  [1]  [ CSelf23[状態個数] == 0   ] Case↓
+ | | | | |■Set String: CSelf9[状態名一覧] += "\n"
+ | | | | |■
+ | | | |◇End◇
+ | | | |■
+ | | |◇End◇
+ | | |■Condition (Number):   [1] CSelf24[ｽﾃ状態表示方法] ==  1  
+ | | |-◇Condition:  [1]  [ CSelf24[ｽﾃ状態表示方法] == 1   ] Case↓
+ | | | |■Condition (Number):   [1] CSelf23[状態個数] !=  0  
+ | | | |-◇Condition:  [1]  [ CSelf23[状態個数] != 0   ] Case↓
+ | | | | |■Set String: CSelf9[状態名一覧] += "/"
+ | | | | |■
+ | | | |◇End◇
+ | | | |■
+ | | |◇End◇
+ | | |■Load DB(User):  CSelf9[状態名一覧] += UserDB[ "States":CSelf16[注目状態位置]:"Display Name" ] (8:-:2) 
+ | | |■Set Variable: CSelf23[状態個数] += 1 + 0 
+ | | |■
+ | |◇End◇
+ | |■
+ |◇End◇
+ |■
+◇Loop End Point◇◇
+▼  
+■Condition (Number):   [1] CSelf1[オプション] ==  0  
+-◇Condition:  [1]  [ CSelf1[オプション] == 0   ] Case↓
+ |■Set Variable: CSelf44[攻撃力] to CSelf51[クリティカル] Lower Bound= 0 + 0 
+ |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Attack" ] (10:-:48) =  CSelf44[攻撃力]
+ |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Defense" ] (10:-:49) =  CSelf45[防御力]
+ |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Magic Atk" ] (10:-:50) =  CSelf46[精神攻撃]
+ |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Magic Def" ] (10:-:51) =  CSelf47[精神防御]
+ |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Agility" ] (10:-:52) =  CSelf48[敏捷性]
+ |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Accuracy" ] (10:-:53) =  CSelf49[命中率]
+ |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Evasion" ] (10:-:54) =  CSelf50[回避率]
+ |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp]Post-Calc Critical Rate" ] (10:-:55) =  CSelf51[クリティカル]
+ |■
+◇End◇
+■Set Variable: CSelf42[最大HP] Lower Bound= 1 + 0 
+■Set Variable: CSelf43[最大SP] Lower Bound= 0 + 0 
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Max HP" ] (10:-:44) =  CSelf42[最大HP]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Max SP" ] (10:-:46) =  CSelf43[最大SP]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"HP Change per Turn [%]" ] (10:-:62) =  CSelf53[HP自動回復率％]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"HP Change per Turn [Fixed]" ] (10:-:63) =  CSelf54[HP自動回復固定値]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"SP Change per Turn [%]" ] (10:-:64) =  CSelf55[SP自動回復率％]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"SP Change per Turn [Fixed]" ] (10:-:65) =  CSelf56[SP自動回復固定値]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Physical Dmg Taken Rate]" ] (10:-:56) =  CSelf57[受ける攻撃力ダメージ率]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Magic Damage Taken Rate]" ] (10:-:57) =  CSelf58[受ける精神攻撃ダメージ率]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Display Color ID" ] (10:-:4) =  CSelf32[色変更]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Target Level] -1:NotTargeted" ] (10:-:58) =  CSelf33[狙われ度]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Action Restriction]" ] (10:-:59) =  CSelf30[行動制限番号]
+▼ もし戦闘不能なら、基本ｽﾃｰﾀｽ側も純粋に1にする
+■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "×┣State List":CSelf0[対象戦闘ｽﾛｯﾄ]:0 ] (13:-:\udb[8:0] Turns Left) 
+■Condition (Number):   [1] CSelf10[一時変数A] !=  0  
+-◇Condition:  [1]  [ CSelf10[一時変数A] != 0   ] Case↓
+ |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Fainted?]" ] (10:-:3) =  1
+ |■
+-◇Else
+ |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Fainted?]" ] (10:-:3) =  0
+ |■
+◇End◇
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Fainted?]" ] (10:-:3) Lower Bound  CSelf35[戦闘不能カウントする？]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Fainted?]" ] (10:-:3) Upper Bound  1
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Fainted?]" ] (10:-:3) Lower Bound  0
+▼ 上書き顔グラを格納
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Temp Overwrite Image File" ] (10:-:2) =  CSelf7[上書き顔グラ]
+▼ 表示状態文字列に格納
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] State Names" ] (10:-:69) =  CSelf9[状態名一覧]
+▼ HP・SPの現在値を修正
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"HP" ] (10:-:5) Upper Bound  CSelf42[最大HP]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"SP" ] (10:-:7) Upper Bound  CSelf43[最大SP]
+▼ オプションを0に戻しておく
+■Set Variable: CSelf1[オプション] = 0 + 0 
+■
+[COMMAND_TEXT_END]

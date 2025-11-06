@@ -1,0 +1,423 @@
+COMMON_ID=126
+COMMON_NAME=X[Map]ParallelProcessWhenWalking
+COMMAND_COLOR=4
+TRIGGER=35
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=0
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=
+VALINPUT_NAME_1=
+VALINPUT_NAME_2=
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=0
+LOADTYPE2=0
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=0
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=0
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=
+RETURN_VAL_TARGET=-1
+CSELF_NAME_0=
+CSELF_NAME_1=
+CSELF_NAME_2=
+CSELF_NAME_3=
+CSELF_NAME_4=メニュー起動フラグ
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=
+CSELF_NAME_9=
+CSELF_NAME_10=判定打ち切りフレーム数
+CSELF_NAME_11=旧マップID
+CSELF_NAME_12=新マップID
+CSELF_NAME_13=キー入力状態
+CSELF_NAME_14=直前キー入力状態
+CSELF_NAME_15=
+CSELF_NAME_16=直前イベント実行中？
+CSELF_NAME_17=
+CSELF_NAME_18=
+CSELF_NAME_19=
+CSELF_NAME_20=現在主人公座標X
+CSELF_NAME_21=現在主人公座標Y
+CSELF_NAME_22=前回主人公座標X
+CSELF_NAME_23=前回主人公座標Y
+CSELF_NAME_24=
+CSELF_NAME_25=
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=
+CSELF_NAME_29=
+CSELF_NAME_30=
+CSELF_NAME_31=
+CSELF_NAME_32=
+CSELF_NAME_33=
+CSELF_NAME_34=
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=
+CSELF_NAME_41=
+CSELF_NAME_42=
+CSELF_NAME_43=
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=
+CSELF_NAME_89=
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=
+COMMAND_NUM=127
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("　これは並列イベントで、ゲーム中、常に実行されています。主に、")
+[103][0,1]<0>()("　　・メニュー表示用のキャンセルキー受付")
+[103][0,1]<0>()("　　・一歩あるいたときの処理を実行")
+[103][0,1]<0>()("　しています。")
+[103][0,1]<0>()("")
+[103][0,1]<0>()("　メニュー起動の際、")
+[103][0,1]<0>()("　「イベント中はメニューが起動しないようにする」")
+[103][0,1]<0>()("　「マスとマスの間を移動中は、メニューの表示を待つ（一定時間が過ぎたら入力キャンセル）」")
+[103][0,1]<0>()("　「メニューを開いたときは次の一歩を歩き出さないようにする」")
+[103][0,1]<0>()("　など、安全性と便利さを向上させるための工夫がなされています。")
+[103][0,1]<0>()("")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("イベント実行中はキーが押されても無視")
+[111][4,0]<0>(17,9000013,0,2)()
+[401][1,0]<0>(1)()
+[123][2,0]<1>(1600013,32)()
+[103][0,1]<1>()("新しくキーが押された場合（コモン3と4が異なる値のとき）のみ処理する")
+[121][4,0]<1>(1600016,1,0,512)()
+[111][4,0]<1>(1,1600016,0,3)()
+[401][1,0]<1>(1)()
+[111][4,0]<2>(1,1600013,1600014,5)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("■キャンセルキーが押されたらメニュー起動フラグをオンにする")
+[111][4,0]<3>(17,9000035,0,2)()
+[401][1,0]<3>(1)()
+[111][4,0]<4>(1,9000013,0,2)()
+[401][1,0]<4>(1)()
+[111][4,0]<5>(1,1600013,11,2)()
+[401][1,0]<5>(1)()
+[103][0,1]<6>()("起動に成功する場合は、ここへ来る")
+[103][0,1]<6>()(" ")
+[103][0,1]<6>()("「直前キー入力状態」を更新")
+[121][4,0]<6>(1600014,1600013,0,0)()
+[103][0,1]<6>()("主人公の動きを1フレームだけ止める（止めないと、このままさらに一歩歩いてしまうことがある）")
+[126][1,0]<6>(496)()
+[103][0,1]<6>()("予約で起動すると、「一度だけ起動する自動イベント」として実行できる")
+[211][2,0]<6>(600101,0)()
+[180][1,0]<6>(1)()
+[126][1,0]<6>(240)()
+[0][0,0]<6>()()
+[499][0,0]<5>()()
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[0][0,0]<4>()()
+[420][1,0]<3>(0)()
+[103][0,1]<4>()("移動中にキャンセルキーを押した場合、先行入力として扱う")
+[111][4,0]<4>(1,1600013,11,2)()
+[401][1,0]<4>(1)()
+[103][0,1]<5>()("もし移動中なら、移動が終わるまで待つ （5フレーム過ぎたら無視）")
+[124][3,0]<5>(1600011,12288,0)()
+[179][1,0]<5>(5)()
+[180][1,0]<6>(1)()
+[103][0,1]<6>()("マップが変わっていた場合も、メニュー起動待ち状態を解除する")
+[124][3,0]<6>(1600012,12288,0)()
+[111][4,0]<6>(1,1600011,1600012,5)()
+[401][1,0]<6>(1)()
+[171][0,0]<7>()()
+[0][0,0]<7>()()
+[499][0,0]<6>()()
+[103][0,1]<6>()("イベントが起動しておらず、移動中でもない場合にメニューを起動")
+[111][4,0]<6>(17,9000013,0,2)()
+[401][1,0]<6>(1)()
+[111][4,0]<7>(1,9000035,0,2)()
+[401][1,0]<7>(1)()
+[103][0,1]<8>()("起動に成功する場合は、ここへ来る")
+[103][0,1]<8>()(" ")
+[103][0,1]<8>()("「直前キー入力状態」を更新")
+[121][4,0]<8>(1600014,1600013,0,0)()
+[103][0,1]<8>()("主人公の動きを1フレームだけ止める（止めないと、このフレーム中に、さらに一歩歩いてしまうことがある）")
+[126][1,0]<8>(496)()
+[103][0,1]<8>()("予約で起動すると、「一度だけ起動する自動イベント」として実行できる")
+[211][2,0]<8>(600101,0)()
+[180][1,0]<8>(1)()
+[126][1,0]<8>(240)()
+[171][0,0]<8>()()
+[0][0,0]<8>()()
+[499][0,0]<7>()()
+[0][0,0]<7>()()
+[420][1,0]<6>(0)()
+[103][0,1]<7>()("もしイベントが一瞬でも行われたらメニュー起動待ちをキャンセル")
+[171][0,0]<7>()()
+[0][0,0]<7>()()
+[499][0,0]<6>()()
+[0][0,0]<6>()()
+[498][0,0]<5>()()
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[103][0,1]<1>()("「直前キー入力状態」を更新")
+[121][4,0]<1>(1600014,1600013,0,0)()
+[103][0,1]<1>()("一歩でも動いていたら歩行定期処理を呼び出す")
+[124][4,0]<1>(1600020,4096,-2,2)()
+[124][4,0]<1>(1600021,4096,-2,3)()
+[111][4,0]<1>(17,1600020,1600022,5)()
+[401][1,0]<1>(1)()
+[300][2,1]<2>(0,0)("X[Map]Update States")
+[0][0,0]<2>()()
+[420][1,0]<1>(0)()
+[111][4,0]<2>(1,1600021,1600023,5)()
+[401][1,0]<2>(1)()
+[300][2,1]<3>(0,0)("X[Map]Update States")
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[121][4,0]<1>(1600022,1600020,0,0)()
+[121][4,0]<1>(1600023,1600021,0,0)()
+[0][0,0]<1>()()
+[420][1,0]<0>(0)()
+[123][2,0]<1>(1600003,33)()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[103][0,1]<0>()("直前のイベント実行中がオンなら10フレームはメニューを出さない")
+[121][4,0]<0>(1600016,9000013,10,8192)()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Process Overview]
+▼ 　これは並列イベントで、ゲーム中、常に実行されています。主に、
+▼ 　　・メニュー表示用のキャンセルキー受付
+▼ 　　・一歩あるいたときの処理を実行
+▼ 　しています。
+▼ 
+▼ 　メニュー起動の際、
+▼ 　「イベント中はメニューが起動しないようにする」
+▼ 　「マスとマスの間を移動中は、メニューの表示を待つ（一定時間が過ぎたら入力キャンセル）」
+▼ 　「メニューを開いたときは次の一歩を歩き出さないようにする」
+▼ 　など、安全性と便利さを向上させるための工夫がなされています。
+▼ 
+▼ [Databases Accessed by This Common Event]
+▼  
+▼ [Other Common Events Called from Here]
+▼  
+▼ [Main Common Events Calling This]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ イベント実行中はキーが押されても無視
+■Condition (Number):   [1] Sys13:Event Active? (1:Yes) ==  0  
+-◇Condition:  [1]  [ Sys13:Event Active? (1:Yes) == 0   ] Case↓
+ |■Key Input: CSelf13[キー入力状態] [Normal Input]  Cancel (11)
+ |▼ 新しくキーが押された場合（コモン3と4が異なる値のとき）のみ処理する
+ |■Set Variable: CSelf16[直前イベント実行中？] -= 1 + 0 
+ |■Condition (Number):   [1] CSelf16[直前イベント実行中？] <=  0  
+ |-◇Condition:  [1]  [ CSelf16[直前イベント実行中？] <= 0   ] Case↓
+ | |■Condition (Number):   [1] CSelf13[キー入力状態] !=  CSelf14[直前キー入力状態]  
+ | |-◇Condition:  [1]  [ CSelf13[キー入力状態] != CSelf14[直前キー入力状態]   ] Case↓
+ | | |▼ ■キャンセルキーが押されたらメニュー起動フラグをオンにする
+ | | |■Condition (Number):   [1] Sys35:Leader Moving? (1:Yes) *Between Tiles? ==  0  
+ | | |-◇Condition:  [1]  [ Sys35:Leader Moving? (1:Yes) *Between Tiles? == 0   ] Case↓
+ | | | |■Condition (Number):   [1] Sys13:Event Active? (1:Yes) ==  0  
+ | | | |-◇Condition:  [1]  [ Sys13:Event Active? (1:Yes) == 0   ] Case↓
+ | | | | |■Condition (Number):   [1] CSelf13[キー入力状態] ==  11  
+ | | | | |-◇Condition:  [1]  [ CSelf13[キー入力状態] == 11   ] Case↓
+ | | | | | |▼ 起動に成功する場合は、ここへ来る
+ | | | | | |▼  
+ | | | | | |▼ 「直前キー入力状態」を更新
+ | | | | | |■Set Variable: CSelf14[直前キー入力状態] = CSelf13[キー入力状態] + 0 
+ | | | | | |▼ 主人公の動きを1フレームだけ止める（止めないと、このままさらに一歩歩いてしまうことがある）
+ | | | | | |■Enable/Disable Input:   Down  Left  Right  Up   [ Movement ×   Key Input ✓ ]
+ | | | | | |▼ 予約で起動すると、「一度だけ起動する自動イベント」として実行できる
+ | | | | | |■Reserve Next Event: [+1 From This Common]  Common 127: [ X[Map]Start Menu ]
+ | | | | | |■Wait: 1 Frames
+ | | | | | |■Enable/Disable Input:   Down  Left  Right  Up   [ Movement ✓   Key Input ✓ ]
+ | | | | | |■
+ | | | | |◇End◇
+ | | | | |■
+ | | | |◇End◇
+ | | | |■
+ | | |-◇Else
+ | | | |▼ 移動中にキャンセルキーを押した場合、先行入力として扱う
+ | | | |■Condition (Number):   [1] CSelf13[キー入力状態] ==  11  
+ | | | |-◇Condition:  [1]  [ CSelf13[キー入力状態] == 11   ] Case↓
+ | | | | |▼ もし移動中なら、移動が終わるまで待つ （5フレーム過ぎたら無視）
+ | | | | |■Set Variable+: CSelf11[旧マップID] = [Map] Current Map ID
+ | | | | |■Repeat Loop [ 5 ] Times
+ | | | | | |■Wait: 1 Frames
+ | | | | | |▼ マップが変わっていた場合も、メニュー起動待ち状態を解除する
+ | | | | | |■Set Variable+: CSelf12[新マップID] = [Map] Current Map ID
+ | | | | | |■Condition (Number):   [1] CSelf11[旧マップID] !=  CSelf12[新マップID]  
+ | | | | | |-◇Condition:  [1]  [ CSelf11[旧マップID] != CSelf12[新マップID]   ] Case↓
+ | | | | | | |■Break Loop
+ | | | | | | |■
+ | | | | | |◇End◇
+ | | | | | |▼ イベントが起動しておらず、移動中でもない場合にメニューを起動
+ | | | | | |■Condition (Number):   [1] Sys13:Event Active? (1:Yes) ==  0  
+ | | | | | |-◇Condition:  [1]  [ Sys13:Event Active? (1:Yes) == 0   ] Case↓
+ | | | | | | |■Condition (Number):   [1] Sys35:Leader Moving? (1:Yes) *Between Tiles? ==  0  
+ | | | | | | |-◇Condition:  [1]  [ Sys35:Leader Moving? (1:Yes) *Between Tiles? == 0   ] Case↓
+ | | | | | | | |▼ 起動に成功する場合は、ここへ来る
+ | | | | | | | |▼  
+ | | | | | | | |▼ 「直前キー入力状態」を更新
+ | | | | | | | |■Set Variable: CSelf14[直前キー入力状態] = CSelf13[キー入力状態] + 0 
+ | | | | | | | |▼ 主人公の動きを1フレームだけ止める（止めないと、このフレーム中に、さらに一歩歩いてしまうことがある）
+ | | | | | | | |■Enable/Disable Input:   Down  Left  Right  Up   [ Movement ×   Key Input ✓ ]
+ | | | | | | | |▼ 予約で起動すると、「一度だけ起動する自動イベント」として実行できる
+ | | | | | | | |■Reserve Next Event: [+1 From This Common]  Common 127: [ X[Map]Start Menu ]
+ | | | | | | | |■Wait: 1 Frames
+ | | | | | | | |■Enable/Disable Input:   Down  Left  Right  Up   [ Movement ✓   Key Input ✓ ]
+ | | | | | | | |■Break Loop
+ | | | | | | | |■
+ | | | | | | |◇End◇
+ | | | | | | |■
+ | | | | | |-◇Else
+ | | | | | | |▼ もしイベントが一瞬でも行われたらメニュー起動待ちをキャンセル
+ | | | | | | |■Break Loop
+ | | | | | | |■
+ | | | | | |◇End◇
+ | | | | | |■
+ | | | | |◇Loop End Point◇◇
+ | | | | |■
+ | | | |◇End◇
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇End◇
+ | |■
+ |◇End◇
+ |▼ 「直前キー入力状態」を更新
+ |■Set Variable: CSelf14[直前キー入力状態] = CSelf13[キー入力状態] + 0 
+ |▼ 一歩でも動いていたら歩行定期処理を呼び出す
+ |■Set Variable+: CSelf20[現在主人公座標X] = Leader's X Position (Precise) *Left of Character
+ |■Set Variable+: CSelf21[現在主人公座標Y] = Leader's Y Position (Precise) *Top of Character
+ |■Condition (Number):   [1] CSelf20[現在主人公座標X] !=  CSelf22[前回主人公座標X]  
+ |-◇Condition:  [1]  [ CSelf20[現在主人公座標X] != CSelf22[前回主人公座標X]   ] Case↓
+ | |■Call Event [Name]: ["X[Map]Update States"] <CommonEv 76> 
+ | |■
+ |-◇Else
+ | |■Condition (Number):   [1] CSelf21[現在主人公座標Y] !=  CSelf23[前回主人公座標Y]  
+ | |-◇Condition:  [1]  [ CSelf21[現在主人公座標Y] != CSelf23[前回主人公座標Y]   ] Case↓
+ | | |■Call Event [Name]: ["X[Map]Update States"] <CommonEv 76> 
+ | | |■
+ | |◇End◇
+ | |■
+ |◇End◇
+ |■Set Variable: CSelf22[前回主人公座標X] = CSelf20[現在主人公座標X] + 0 
+ |■Set Variable: CSelf23[前回主人公座標Y] = CSelf21[現在主人公座標Y] + 0 
+ |■
+-◇Else
+ |■Key Input: CSelf3 [Normal Input]  4-Dir Cancel (11)
+ |■
+◇End◇
+▼ 直前のイベント実行中がオンなら10フレームはメニューを出さない
+■Set Variable: CSelf16[直前イベント実行中？] = Sys13:Event Active? (1:Yes) * 10 
+■
+[COMMAND_TEXT_END]

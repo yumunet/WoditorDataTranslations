@@ -1,0 +1,643 @@
+COMMON_ID=197
+COMMON_NAME=X┃┗◆1-Action Loop
+COMMAND_COLOR=6
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=2
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=行動ﾘｽﾄ番号
+VALINPUT_NAME_1=カウンター処理?
+VALINPUT_NAME_2=
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=2
+LOADTYPE2=0
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=2
+CHOICE_STR_1_0=通常
+CHOICE_STR_1_1=カウンター処理
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=2
+CHOICE_VAL_1_0=0
+CHOICE_VAL_1_1=1
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=勝敗決定？
+RETURN_VAL_TARGET=99
+CSELF_NAME_0=行動ﾘｽﾄ番号
+CSELF_NAME_1=カウンター禁止?
+CSELF_NAME_2=
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=キャラ名
+CSELF_NAME_9=一時項目名
+CSELF_NAME_10=一時変数A
+CSELF_NAME_11=一時変数B
+CSELF_NAME_12=一時変数C
+CSELF_NAME_13=一時変数D
+CSELF_NAME_14=発動アイテムチェック
+CSELF_NAME_15=
+CSELF_NAME_16=発動スロット
+CSELF_NAME_17=技能コード
+CSELF_NAME_18=対象者
+CSELF_NAME_19=武器の有無
+CSELF_NAME_20=発動回数
+CSELF_NAME_21=武器回数依存フラグ
+CSELF_NAME_22=武器位置
+CSELF_NAME_23=処理済み対象
+CSELF_NAME_24=
+CSELF_NAME_25=勝敗判定
+CSELF_NAME_26=
+CSELF_NAME_27=効果対象
+CSELF_NAME_28=
+CSELF_NAME_29=最後の武器位置
+CSELF_NAME_30=
+CSELF_NAME_31=発動済み回数
+CSELF_NAME_32=
+CSELF_NAME_33=
+CSELF_NAME_34=一時コード
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=
+CSELF_NAME_41=
+CSELF_NAME_42=
+CSELF_NAME_43=
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=
+CSELF_NAME_89=
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=
+COMMAND_NUM=235
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("　もし１アクションが複数回攻撃だった場合などは、ここでループさせます。")
+[103][0,1]<0>()("　「アクション実行　→　勝敗判定」　のループを行います。")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[121][4,0]<0>(1600099,0,0,0)()
+[103][0,1]<0>()("発動者・発動技能を格納")
+[250][5,4]<0>(16,1600000,0,331776,1600016)("","×┣Cmd Process List","","User ID")
+[250][5,4]<0>(16,1600000,3,331776,1600017)("","×┣Cmd Process List","","Skill to Use")
+[250][5,4]<0>(16,1600000,2,331776,1600018)("","×┣Cmd Process List","","Target ID")
+[103][0,1]<0>()("発動回数を得る")
+[111][4,0]<0>(17,1600017,0,1)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("アイテムや武器・防具の使用による技能発動の場合は「技能」コードに変換")
+[111][4,0]<1>(1,1600017,10000,1)()
+[401][1,0]<1>(1)()
+[121][4,0]<2>(1600034,1600017,0,0)()
+[111][10,0]<2>(3,1600034,19999,3,1600034,29999,3,1600034,39999,3)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("アイテムの場合")
+[121][4,0]<3>(1600010,1600034,10000,16384)()
+[250][5,4]<3>(2,1600010,3,332288,1600011)("","Items","","■Effect Type                       ")
+[111][4,0]<3>(1,1600011,2,2)()
+[401][1,0]<3>(1)()
+[250][5,4]<4>(2,1600010,4,332288,1600017)("","Items","","┣ [2]: Skill to Use                ")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[401][1,0]<2>(2)()
+[103][0,1]<3>()("武器の場合")
+[121][4,0]<3>(1600010,1600034,20000,16384)()
+[250][5,4]<3>(3,1600010,22,332288,1600011)("","Weapons","","Skill When Used As Item?     ")
+[111][4,0]<3>(1,1600011,1,2)()
+[401][1,0]<3>(1)()
+[250][5,4]<4>(3,1600010,23,332288,1600017)("","Weapons","","┣ Skill to Use                          ")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[401][1,0]<2>(3)()
+[103][0,1]<3>()("防具の場合")
+[121][4,0]<3>(1600010,1600034,30000,16384)()
+[250][5,4]<3>(4,1600010,22,332288,1600011)("","Armors","","Skill When Used As Item?     ")
+[111][4,0]<3>(1,1600011,1,2)()
+[401][1,0]<3>(1)()
+[250][5,4]<4>(4,1600010,21,332288,1600017)("","Armors","","┣ Skill to Use                          ")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[250][5,4]<1>(0,1600017,18,332288,1600020)("","Skills","","Repeat Times/Weapon Effect")
+[0][0,0]<1>()()
+[420][1,0]<0>(0)()
+[111][4,0]<1>(1,1600017,-2,2)()
+[401][1,0]<1>(1)()
+[103][0,1]<2>()("逃走")
+[250][5,4]<2>(19,0,24,332288,1600009)("","System Settings","","[Btl]Enemy Flee Msg(Target...")
+[112][2,4]<2>(1,270035465)("","","","")
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("あれば逃走メッセージを表示")
+[250][5,4]<3>(11,1600016,0,331776,1600008)("","×┏Battle Temp Status","","Character Name")
+[122][2,1]<3>(1600009,0)("\cself[8]\cself[9]")
+[300][4,1]<3>(0,17,0,1600009)("X[Bat]Display Battle Message")
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[103][0,1]<2>()("逃走の場合は消滅する")
+[300][4,1]<2>(0,2,1600016,1)("X[Bat]Defeat Enemy")
+[103][0,1]<2>()("戦闘終了判定")
+[300][4,1]<2>(0,16777217,0,1600025)("X[Bat]Check Win/Lose")
+[111][4,0]<2>(1,1600025,0,5)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("もし戦闘が終わっていたら1を返す")
+[121][4,0]<3>(1600099,1,0,0)()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[172][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[103][0,1]<1>()("逃走でもなければ終了")
+[121][4,0]<1>(1600020,1,0,0)()
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("イベント発動なら実行して終了")
+[250][5,4]<0>(0,1600017,2,332288,1600027)("","Skills","","┏ Effect Target   ")
+[111][4,0]<0>(1,1600027,101,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<1>()("「イベント起動」処理の場合")
+[250][5,4]<1>(0,1600017,3,332288,1600012)("","Skills","","(If Used) ┗ Event Number")
+[210][2,0]<1>(1600012,0)()
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("　武器依存チェック")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[121][4,0]<0>(1600021,0,0,0)()
+[111][4,0]<0>(1,1600020,-1,3)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("武器依存の場合")
+[121][4,0]<1>(1600020,-1,0,768)()
+[121][4,0]<1>(1600021,1,0,0)()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("発動回数分だけ繰り返す")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[121][4,0]<0>(1600031,0,0,0)()
+[179][1,0]<0>(1600020)()
+[103][0,1]<1>()("発動済み回数は、カウンター用に「最後の一回分の行動」をチェックするために使う")
+[121][4,0]<1>(1600031,1,0,256)()
+[103][0,1]<1>()(" ")
+[121][4,0]<1>(1600023,-1,0,0)()
+[111][7,0]<1>(2,1600021,0,2,1600021,1,2)()
+[401][1,0]<1>(1)()
+[103][0,1]<2>()("武器依存でない場合は単純に一回発動")
+[103][0,1]<2>()("処理対象が残っている限り繰り返し")
+[111][7,0]<2>(2,1600001,0,2,1600001,1,2)()
+[401][1,0]<2>(1)()
+[111][4,0]<3>(17,1600020,1600031,2)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("最後ならカウンター有り")
+[300][5,1]<4>(0,3,1600000,-1,1600001)("X[Bat]Execute Command")
+[103][0,1]<4>()("Ver3.21追記")
+[213][0,1]<4>()("カウンター後_終了判定")
+[0][0,0]<4>()()
+[420][1,0]<3>(0)()
+[103][0,1]<4>()("最後でなければカウンターを抑制")
+[300][5,1]<4>(0,3,1600000,-1,1)("X[Bat]Execute Command")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[401][1,0]<2>(2)()
+[103][0,1]<3>()("こちらはカウンター処理中なので特別処理")
+[300][4,1]<3>(0,2,0,-1)("X[Bat]Execute Counter")
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[99][1,0]<2>(0)()
+[103][0,1]<2>()("戦闘終了判定")
+[300][4,1]<2>(0,16777217,0,1600025)("X[Bat]Check Win/Lose")
+[111][4,0]<2>(1,1600025,0,5)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("何らかの形で戦闘が終わっていたら処理を中断する")
+[121][4,0]<3>(1600099,1,0,0)()
+[171][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[401][1,0]<1>(2)()
+[103][0,1]<2>()("武器の場合")
+[99][1,0]<2>(0)()
+[179][1,0]<2>(1)()
+[103][0,1]<3>()("最後に使う武器番号をここで算出する")
+[121][4,0]<3>(1600029,0,0,0)()
+[121][4,0]<3>(1600022,0,0,0)()
+[179][1,0]<3>(8)()
+[300][5,1]<4>(0,16777218,1600016,1600022,1600019)("X[Bat]CalcTempStats <Equipments>")
+[111][4,0]<4>(1,1600019,1,1)()
+[401][1,0]<4>(1)()
+[103][0,1]<5>()("もし該当の装備があればそれを最後とする")
+[121][4,0]<5>(1600029,1600022,0,0)()
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[121][4,0]<4>(1600022,1,0,256)()
+[0][0,0]<4>()()
+[498][0,0]<3>()()
+[0][0,0]<3>()()
+[498][0,0]<2>()()
+[99][1,0]<2>(0)()
+[103][0,1]<2>()("武器全部を１つずつ処理していく")
+[121][4,0]<2>(1600022,0,0,0)()
+[179][1,0]<2>(8)()
+[121][4,0]<3>(1600023,-1,0,0)()
+[111][7,0]<3>(2,1600001,0,2,1600001,1,2)()
+[401][1,0]<3>(1)()
+[111][4,0]<4>(17,1600020,1600031,2)()
+[401][1,0]<4>(1)()
+[103][0,1]<5>()("発動回数の最後ならカウンター有り")
+[111][4,0]<5>(17,1600029,1600022,2)()
+[401][1,0]<5>(1)()
+[103][0,1]<6>()("武器の最後の一個ならカウンターチェック")
+[300][5,1]<6>(0,3,1600000,1600022,1600001)("X[Bat]Execute Command")
+[103][0,1]<6>()("Ver3.21追記")
+[213][0,1]<6>()("カウンター後_終了判定")
+[0][0,0]<6>()()
+[420][1,0]<5>(0)()
+[103][0,1]<6>()("武器の最後の一個でないなら全部カウンター抑制する")
+[300][5,1]<6>(0,3,1600000,1600022,1)("X[Bat]Execute Command")
+[0][0,0]<6>()()
+[499][0,0]<5>()()
+[0][0,0]<5>()()
+[420][1,0]<4>(0)()
+[103][0,1]<5>()("最後でなければカウンターを抑制")
+[300][5,1]<5>(0,3,1600000,1600022,1)("X[Bat]Execute Command")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[0][0,0]<4>()()
+[401][1,0]<3>(2)()
+[300][4,1]<4>(0,2,0,1600022)("X[Bat]Execute Counter")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[103][0,1]<3>()("一回ごとに戦闘終了判定")
+[300][4,1]<3>(0,16777217,0,1600025)("X[Bat]Check Win/Lose")
+[111][4,0]<3>(1,1600025,0,5)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("何らかの形で戦闘が終わっていたら処理を中断する")
+[121][4,0]<4>(1600099,1,0,0)()
+[171][0,0]<4>()()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[121][4,0]<3>(1600022,1,0,256)()
+[0][0,0]<3>()()
+[498][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[103][0,1]<0>()("Ver3.21追記")
+[179][1,0]<0>(1)()
+[212][0,1]<1>()("カウンター後_終了判定")
+[103][0,1]<1>()("戦闘終了判定")
+[300][4,1]<1>(0,16777217,0,1600025)("X[Bat]Check Win/Lose")
+[111][4,0]<1>(1,1600025,0,5)()
+[401][1,0]<1>(1)()
+[103][0,1]<2>()("何らかの形で戦闘が終わっていたら処理を中断する")
+[121][4,0]<2>(1600099,1,0,0)()
+[171][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Process Overview]
+▼ 　もし１アクションが複数回攻撃だった場合などは、ここでループさせます。
+▼ 　「アクション実行　→　勝敗判定」　のループを行います。
+▼ ―――――――――――――――――――――――――――――――――――
+■Set Variable: CSelf99 = 0 + 0 
+▼ 発動者・発動技能を格納
+■Load DB(Var):  CSelf16[発動スロット] = VarDB[ "×┣Cmd Process List":CSelf0[行動ﾘｽﾄ番号]:"User ID" ] (14:-:0) 
+■Load DB(Var):  CSelf17[技能コード] = VarDB[ "×┣Cmd Process List":CSelf0[行動ﾘｽﾄ番号]:"Skill to Use" ] (14:-:3) 
+■Load DB(Var):  CSelf18[対象者] = VarDB[ "×┣Cmd Process List":CSelf0[行動ﾘｽﾄ番号]:"Target ID" ] (14:-:2) 
+▼ 発動回数を得る
+■Condition (Number):   [1] CSelf17[技能コード] >=  0  
+-◇Condition:  [1]  [ CSelf17[技能コード] >= 0   ] Case↓
+ |▼ アイテムや武器・防具の使用による技能発動の場合は「技能」コードに変換
+ |■Condition (Number):   [1] CSelf17[技能コード] >=  10000  
+ |-◇Condition:  [1]  [ CSelf17[技能コード] >= 10000   ] Case↓
+ | |■Set Variable: CSelf34[一時コード] = CSelf17[技能コード] + 0 
+ | |■Condition (Number):   [1] CSelf34[一時コード] <=  19999  /  [2] CSelf34[一時コード] <=  29999  /  [3] CSelf34[一時コード] <=  39999  
+ | |-◇Condition:  [1]  [ CSelf34[一時コード] <= 19999   ] Case↓
+ | | |▼ アイテムの場合
+ | | |■Set Variable: CSelf10[一時変数A] = CSelf34[一時コード] % 10000 
+ | | |■Load DB(User):  CSelf11[一時変数B] = UserDB[ "Items":CSelf10[一時変数A]:"■Effect Type                       " ] (2:-:3) 
+ | | |■Condition (Number):   [1] CSelf11[一時変数B] ==  2  
+ | | |-◇Condition:  [1]  [ CSelf11[一時変数B] == 2   ] Case↓
+ | | | |■Load DB(User):  CSelf17[技能コード] = UserDB[ "Items":CSelf10[一時変数A]:"┣ [2]: Skill to Use                " ] (2:-:4) 
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |-◇Condition:  [2]  [ CSelf34[一時コード] <= 29999   ] Case↓
+ | | |▼ 武器の場合
+ | | |■Set Variable: CSelf10[一時変数A] = CSelf34[一時コード] % 20000 
+ | | |■Load DB(User):  CSelf11[一時変数B] = UserDB[ "Weapons":CSelf10[一時変数A]:"Skill When Used As Item?     " ] (3:-:22) 
+ | | |■Condition (Number):   [1] CSelf11[一時変数B] ==  1  
+ | | |-◇Condition:  [1]  [ CSelf11[一時変数B] == 1   ] Case↓
+ | | | |■Load DB(User):  CSelf17[技能コード] = UserDB[ "Weapons":CSelf10[一時変数A]:"┣ Skill to Use                          " ] (3:-:23) 
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |-◇Condition:  [3]  [ CSelf34[一時コード] <= 39999   ] Case↓
+ | | |▼ 防具の場合
+ | | |■Set Variable: CSelf10[一時変数A] = CSelf34[一時コード] % 30000 
+ | | |■Load DB(User):  CSelf11[一時変数B] = UserDB[ "Armors":CSelf10[一時変数A]:"Skill When Used As Item?     " ] (4:-:20) 
+ | | |■Condition (Number):   [1] CSelf11[一時変数B] ==  1  
+ | | |-◇Condition:  [1]  [ CSelf11[一時変数B] == 1   ] Case↓
+ | | | |■Load DB(User):  CSelf17[技能コード] = UserDB[ "Armors":CSelf10[一時変数A]:"┣ Skill to Use                          " ] (4:-:21) 
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇End◇
+ | |■
+ |◇End◇
+ |■Load DB(User):  CSelf20[発動回数] = UserDB[ "Skills":CSelf17[技能コード]:"Repeat Times/Weapon Effect" ] (0:-:18) 
+ |■
+-◇Else
+ |■Condition (Number):   [1] CSelf17[技能コード] ==  -2  
+ |-◇Condition:  [1]  [ CSelf17[技能コード] == -2   ] Case↓
+ | |▼ 逃走
+ | |■Load DB(User):  CSelf9[一時項目名] = UserDB[ "System Settings":0:"[Btl]Enemy Flee Msg(Target..." ] (17:Basic System Settings:29) 
+ | |■Condition (String):   [1] CSelf9[一時項目名] Is Not Equal to ""
+ | |-◇Condition:  [1] [ CSelf9[一時項目名] Is Not Equal to "" ] Case↓
+ | | |▼ あれば逃走メッセージを表示
+ | | |■Load DB(Var):  CSelf8[キャラ名] = VarDB[ "×┏Battle Temp Status":CSelf16[発動スロット]:"Character Name" ] (10:-:0) 
+ | | |■Set String: CSelf9[一時項目名] = "\cself[8]\cself[9]"
+ | | |■Call Event [Name]: ["X[Bat]Display Battle Message"] <CommonEv 182>  / 0:表示→自動削除 / CSelf9[一時項目名]
+ | | |■
+ | |◇End◇
+ | |▼ 逃走の場合は消滅する
+ | |■Call Event [Name]: ["X[Bat]Defeat Enemy"] <CommonEv 171>  / CSelf16[発動スロット] / 1:逃走処理[何も取得しない]
+ | |▼ 戦闘終了判定
+ | |■Call Event [Name]: CSelf25[勝敗判定] = ["X[Bat]Check Win/Lose"] <CommonEv 172>  / 0:勝敗判定
+ | |■Condition (Number):   [1] CSelf25[勝敗判定] !=  0  
+ | |-◇Condition:  [1]  [ CSelf25[勝敗判定] != 0   ] Case↓
+ | | |▼ もし戦闘が終わっていたら1を返す
+ | | |■Set Variable: CSelf99 = 1 + 0 
+ | | |■
+ | |◇End◇
+ | |■Exit Event
+ | |■
+ |◇End◇
+ |▼ 逃走でもなければ終了
+ |■Set Variable: CSelf20[発動回数] = 1 + 0 
+ |■Exit Event
+ |■
+◇End◇
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ イベント発動なら実行して終了
+■Load DB(User):  CSelf27[効果対象] = UserDB[ "Skills":CSelf17[技能コード]:"┏ Effect Target   " ] (0:-:2) 
+■Condition (Number):   [1] CSelf27[効果対象] ==  101  
+-◇Condition:  [1]  [ CSelf27[効果対象] == 101   ] Case↓
+ |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ |▼ 「イベント起動」処理の場合
+ |■Load DB(User):  CSelf12[一時変数C] = UserDB[ "Skills":CSelf17[技能コード]:"(If Used) ┗ Event Number" ] (0:-:3) 
+ |■Call Event: Variable [CSelf12[一時変数C]]'s Ev Page[1]
+ |■Exit Event
+ |■
+◇End◇
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ 　武器依存チェック
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■Set Variable: CSelf21[武器回数依存フラグ] = 0 + 0 
+■Condition (Number):   [1] CSelf20[発動回数] <=  -1  
+-◇Condition:  [1]  [ CSelf20[発動回数] <= -1   ] Case↓
+ |▼ 武器依存の場合
+ |■Set Variable: CSelf20[発動回数] *= -1 + 0 
+ |■Set Variable: CSelf21[武器回数依存フラグ] = 1 + 0 
+ |■
+◇End◇
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ 発動回数分だけ繰り返す
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■Set Variable: CSelf31[発動済み回数] = 0 + 0 
+■Repeat Loop [ CSelf20[発動回数] ] Times
+ |▼ 発動済み回数は、カウンター用に「最後の一回分の行動」をチェックするために使う
+ |■Set Variable: CSelf31[発動済み回数] += 1 + 0 
+ |▼  
+ |■Set Variable: CSelf23[処理済み対象] = -1 + 0 
+ |■Condition (Number):   [1] CSelf21[武器回数依存フラグ] ==  0  /  [2] CSelf21[武器回数依存フラグ] ==  1  
+ |-◇Condition:  [1]  [ CSelf21[武器回数依存フラグ] == 0   ] Case↓
+ | |▼ 武器依存でない場合は単純に一回発動
+ | |▼ 処理対象が残っている限り繰り返し
+ | |■Condition (Number):   [1] CSelf1[カウンター禁止?] ==  0  /  [2] CSelf1[カウンター禁止?] ==  1  
+ | |-◇Condition:  [1]  [ CSelf1[カウンター禁止?] == 0   ] Case↓
+ | | |■Condition (Number):   [1] CSelf20[発動回数] ==  CSelf31[発動済み回数]  
+ | | |-◇Condition:  [1]  [ CSelf20[発動回数] == CSelf31[発動済み回数]   ] Case↓
+ | | | |▼ 最後ならカウンター有り
+ | | | |■Call Event [Name]: ["X[Bat]Execute Command"] <CommonEv 164>  / CSelf0[行動ﾘｽﾄ番号] / -1:通常処理 / CSelf1[カウンター禁止?]
+ | | | |▼ Ver3.21追記
+ | | | |●Label Jump [カウンター後_終了判定] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | |■
+ | | |-◇Else
+ | | | |▼ 最後でなければカウンターを抑制
+ | | | |■Call Event [Name]: ["X[Bat]Execute Command"] <CommonEv 164>  / CSelf0[行動ﾘｽﾄ番号] / -1:通常処理 / 1:カウンター抑制
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |-◇Condition:  [2]  [ CSelf1[カウンター禁止?] == 1   ] Case↓
+ | | |▼ こちらはカウンター処理中なので特別処理
+ | | |■Call Event [Name]: ["X[Bat]Execute Counter"] <CommonEv 167>  / 0 / -1:通常処理
+ | | |■
+ | |◇End◇
+ | |■ Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
+ | |▼ 戦闘終了判定
+ | |■Call Event [Name]: CSelf25[勝敗判定] = ["X[Bat]Check Win/Lose"] <CommonEv 172>  / 0:勝敗判定
+ | |■Condition (Number):   [1] CSelf25[勝敗判定] !=  0  
+ | |-◇Condition:  [1]  [ CSelf25[勝敗判定] != 0   ] Case↓
+ | | |▼ 何らかの形で戦闘が終わっていたら処理を中断する
+ | | |■Set Variable: CSelf99 = 1 + 0 
+ | | |■Break Loop
+ | | |■
+ | |◇End◇
+ | |■
+ |-◇Condition:  [2]  [ CSelf21[武器回数依存フラグ] == 1   ] Case↓
+ | |▼ 武器の場合
+ | |■ Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
+ | |■Repeat Loop [ 1 ] Times
+ | | |▼ 最後に使う武器番号をここで算出する
+ | | |■Set Variable: CSelf29[最後の武器位置] = 0 + 0 
+ | | |■Set Variable: CSelf22[武器位置] = 0 + 0 
+ | | |■Repeat Loop [ 8 ] Times
+ | | | |■Call Event [Name]: CSelf19[武器の有無] = ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf16[発動スロット] / CSelf22[武器位置]
+ | | | |■Condition (Number):   [1] CSelf19[武器の有無] >=  1  
+ | | | |-◇Condition:  [1]  [ CSelf19[武器の有無] >= 1   ] Case↓
+ | | | | |▼ もし該当の装備があればそれを最後とする
+ | | | | |■Set Variable: CSelf29[最後の武器位置] = CSelf22[武器位置] + 0 
+ | | | | |■
+ | | | |◇End◇
+ | | | |■Set Variable: CSelf22[武器位置] += 1 + 0 
+ | | | |■
+ | | |◇Loop End Point◇◇
+ | | |■
+ | |◇Loop End Point◇◇
+ | |■ Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
+ | |▼ 武器全部を１つずつ処理していく
+ | |■Set Variable: CSelf22[武器位置] = 0 + 0 
+ | |■Repeat Loop [ 8 ] Times
+ | | |■Set Variable: CSelf23[処理済み対象] = -1 + 0 
+ | | |■Condition (Number):   [1] CSelf1[カウンター禁止?] ==  0  /  [2] CSelf1[カウンター禁止?] ==  1  
+ | | |-◇Condition:  [1]  [ CSelf1[カウンター禁止?] == 0   ] Case↓
+ | | | |■Condition (Number):   [1] CSelf20[発動回数] ==  CSelf31[発動済み回数]  
+ | | | |-◇Condition:  [1]  [ CSelf20[発動回数] == CSelf31[発動済み回数]   ] Case↓
+ | | | | |▼ 発動回数の最後ならカウンター有り
+ | | | | |■Condition (Number):   [1] CSelf29[最後の武器位置] ==  CSelf22[武器位置]  
+ | | | | |-◇Condition:  [1]  [ CSelf29[最後の武器位置] == CSelf22[武器位置]   ] Case↓
+ | | | | | |▼ 武器の最後の一個ならカウンターチェック
+ | | | | | |■Call Event [Name]: ["X[Bat]Execute Command"] <CommonEv 164>  / CSelf0[行動ﾘｽﾄ番号] / CSelf22[武器位置] / CSelf1[カウンター禁止?]
+ | | | | | |▼ Ver3.21追記
+ | | | | | |●Label Jump [カウンター後_終了判定] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | | | |■
+ | | | | |-◇Else
+ | | | | | |▼ 武器の最後の一個でないなら全部カウンター抑制する
+ | | | | | |■Call Event [Name]: ["X[Bat]Execute Command"] <CommonEv 164>  / CSelf0[行動ﾘｽﾄ番号] / CSelf22[武器位置] / 1:カウンター抑制
+ | | | | | |■
+ | | | | |◇End◇
+ | | | | |■
+ | | | |-◇Else
+ | | | | |▼ 最後でなければカウンターを抑制
+ | | | | |■Call Event [Name]: ["X[Bat]Execute Command"] <CommonEv 164>  / CSelf0[行動ﾘｽﾄ番号] / CSelf22[武器位置] / 1:カウンター抑制
+ | | | | |■
+ | | | |◇End◇
+ | | | |■
+ | | |-◇Condition:  [2]  [ CSelf1[カウンター禁止?] == 1   ] Case↓
+ | | | |■Call Event [Name]: ["X[Bat]Execute Counter"] <CommonEv 167>  / 0 / CSelf22[武器位置]
+ | | | |■
+ | | |◇End◇
+ | | |▼ 一回ごとに戦闘終了判定
+ | | |■Call Event [Name]: CSelf25[勝敗判定] = ["X[Bat]Check Win/Lose"] <CommonEv 172>  / 0:勝敗判定
+ | | |■Condition (Number):   [1] CSelf25[勝敗判定] !=  0  
+ | | |-◇Condition:  [1]  [ CSelf25[勝敗判定] != 0   ] Case↓
+ | | | |▼ 何らかの形で戦闘が終わっていたら処理を中断する
+ | | | |■Set Variable: CSelf99 = 1 + 0 
+ | | | |■Break Loop
+ | | | |■
+ | | |◇End◇
+ | | |■Set Variable: CSelf22[武器位置] += 1 + 0 
+ | | |■
+ | |◇Loop End Point◇◇
+ | |■
+ |◇End◇
+ |■
+◇Loop End Point◇◇
+▼ Ver3.21追記
+■Repeat Loop [ 1 ] Times
+ |●Label Point [カウンター後_終了判定] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |▼ 戦闘終了判定
+ |■Call Event [Name]: CSelf25[勝敗判定] = ["X[Bat]Check Win/Lose"] <CommonEv 172>  / 0:勝敗判定
+ |■Condition (Number):   [1] CSelf25[勝敗判定] !=  0  
+ |-◇Condition:  [1]  [ CSelf25[勝敗判定] != 0   ] Case↓
+ | |▼ 何らかの形で戦闘が終わっていたら処理を中断する
+ | |■Set Variable: CSelf99 = 1 + 0 
+ | |■Break Loop
+ | |■
+ |◇End◇
+ |■
+◇Loop End Point◇◇
+■
+[COMMAND_TEXT_END]

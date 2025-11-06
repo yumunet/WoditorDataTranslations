@@ -1,0 +1,215 @@
+COMMON_ID=189
+COMMON_NAME=X┣◆Initialize Battle
+COMMAND_COLOR=6
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=0
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=
+VALINPUT_NAME_1=
+VALINPUT_NAME_2=
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=0
+LOADTYPE2=0
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=0
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=0
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=
+RETURN_VAL_TARGET=-1
+CSELF_NAME_0=
+CSELF_NAME_1=
+CSELF_NAME_2=
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=
+CSELF_NAME_9=
+CSELF_NAME_10=一時変数A
+CSELF_NAME_11=一時変数B
+CSELF_NAME_12=
+CSELF_NAME_13=
+CSELF_NAME_14=
+CSELF_NAME_15=
+CSELF_NAME_16=
+CSELF_NAME_17=
+CSELF_NAME_18=
+CSELF_NAME_19=
+CSELF_NAME_20=パーティ人数
+CSELF_NAME_21=
+CSELF_NAME_22=
+CSELF_NAME_23=
+CSELF_NAME_24=
+CSELF_NAME_25=
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=
+CSELF_NAME_29=
+CSELF_NAME_30=
+CSELF_NAME_31=
+CSELF_NAME_32=
+CSELF_NAME_33=
+CSELF_NAME_34=
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=
+CSELF_NAME_41=
+CSELF_NAME_42=
+CSELF_NAME_43=
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=
+CSELF_NAME_89=
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=
+COMMAND_NUM=23
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("　戦闘前のBGMを記憶したり、画面処理を行います（暗くするなど）。")
+[103][0,1]<0>()("　また、主人公ＤＢ＋状態ＤＢと敵キャラＤＢから、戦闘ＤＢへ能力値をコピーします。")
+[103][0,1]<0>()("　以降はすべて戦闘DBで処理が行われます。")
+[103][0,1]<0>()("")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[300][3,1]<0>(0,1,0)("X[Bat]Draw Background")
+[300][2,1]<0>(0,0)("X[Map]Update Party Info")
+[250][5,4]<0>(21,75,0,65536,0)("","Base System Variables","","")
+[300][2,1]<0>(0,0)("X[Bat]Initialize Battle Variables")
+[250][5,4]<0>(10,-2,5,65536,1600028)("","×┏Battle Temp Status","","")
+[250][5,4]<0>(11,-2,5,65536,1600028)("","×┣Element Resist Calc","","")
+[250][5,4]<0>(12,-2,5,65536,1600028)("","×┣State Resist Calc","","")
+[250][5,4]<0>(13,-2,5,65536,1600028)("","×┣State List","","")
+[250][5,4]<0>(15,-2,5,65536,1600028)("","×┣Cmd Process List","","")
+[250][5,4]<0>(17,-2,5,65536,1600028)("","×┗Reward List","","")
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Process Overview]
+▼ 　戦闘前のBGMを記憶したり、画面処理を行います（暗くするなど）。
+▼ 　また、主人公ＤＢ＋状態ＤＢと敵キャラＤＢから、戦闘ＤＢへ能力値をコピーします。
+▼ 　以降はすべて戦闘DBで処理が行われます。
+▼ 
+▼ [Databases Accessed by This Common Event]
+▼  
+▼ [Other Common Events Called from Here]
+▼  
+▼ [Main Common Events Calling This]
+▼ ―――――――――――――――――――――――――――――――――――
+■Call Event [Name]: ["X[Bat]Draw Background"] <CommonEv 180>  / 0:表示
+■Call Event [Name]: ["X[Map]Update Party Info"] <CommonEv 79> 
+■Write to DB(Var): VarDB[ "Base System Variables":75:0 ] (18:[Battle] Current Turn Count:Number) =  0
+■Call Event [Name]: ["X[Bat]Initialize Battle Variables"] <CommonEv 140> 
+■Write to DB(Var): [Reset Type "×┏Battle Temp Status"(10)]
+■Write to DB(Var): [Reset Type "×┣Element Resist Calc"(11)]
+■Write to DB(Var): [Reset Type "×┣State Resist Calc"(12)]
+■Write to DB(Var): [Reset Type "×┣State List"(13)]
+■Write to DB(Var): [Reset Type "×┣Cmd Process List"(14)]
+■Write to DB(Var): [Reset Type "×┗Reward List"(15)]
+■
+[COMMAND_TEXT_END]

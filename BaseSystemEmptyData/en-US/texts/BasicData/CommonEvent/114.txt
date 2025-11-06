@@ -1,0 +1,385 @@
+COMMON_ID=114
+COMMON_NAME=X[Map]Calc Equip Stat Changes
+COMMAND_COLOR=6
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=3
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=外す装備ｺｰﾄﾞ
+VALINPUT_NAME_1=装着装備ｺｰﾄﾞ
+VALINPUT_NAME_2=結果を加算？
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=0
+LOADTYPE2=2
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=0
+CHOICE_STR_2_NUM=2
+CHOICE_STR_2_0=加算しない
+CHOICE_STR_2_1=加算する
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=0
+CHOICE_VAL_2_NUM=2
+CHOICE_VAL_2_0=0
+CHOICE_VAL_2_1=1
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=装備外せない
+RETURN_VAL_TARGET=99
+CSELF_NAME_0=外す装備ｺｰﾄﾞ
+CSELF_NAME_1=装着装備ｺｰﾄﾞ
+CSELF_NAME_2=結果を加算？
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=
+CSELF_NAME_9=
+CSELF_NAME_10=一時変数A
+CSELF_NAME_11=
+CSELF_NAME_12=
+CSELF_NAME_13=
+CSELF_NAME_14=
+CSELF_NAME_15=
+CSELF_NAME_16=
+CSELF_NAME_17=
+CSELF_NAME_18=
+CSELF_NAME_19=
+CSELF_NAME_20=装備コード
+CSELF_NAME_21=一時装備番号
+CSELF_NAME_22=
+CSELF_NAME_23=
+CSELF_NAME_24=
+CSELF_NAME_25=
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=
+CSELF_NAME_29=
+CSELF_NAME_30=
+CSELF_NAME_31=
+CSELF_NAME_32=
+CSELF_NAME_33=
+CSELF_NAME_34=
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=
+CSELF_NAME_41=
+CSELF_NAME_42=
+CSELF_NAME_43=
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=MaxHP変化値総計
+CSELF_NAME_51=MaxSP変化値総計
+CSELF_NAME_52=攻撃力変化値総計
+CSELF_NAME_53=防御力変化値総計
+CSELF_NAME_54=精神攻撃変化値総計
+CSELF_NAME_55=精神防御変化値総計
+CSELF_NAME_56=敏捷度変化値総計
+CSELF_NAME_57=命中率変化値総計
+CSELF_NAME_58=回避率変化値総計
+CSELF_NAME_59=ｸﾘﾃｨｶﾙ率変化値総計
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=
+CSELF_NAME_89=
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=装備外せない？
+COMMAND_NUM=106
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("　装備変更による、パラメータの差分を計算します。")
+[103][0,1]<0>()("　ここで計算した値は、「装備欄」で装備変更時の差分表示時に使用されます。")
+[103][0,1]<0>()("　")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[121][4,0]<0>(1600099,0,0,0)()
+[111][4,0]<0>(1,1600002,0,2)()
+[401][1,0]<0>(1)()
+[121][5,0]<1>(1600050,0,0,65536,9)()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[179][1,0]<0>(1)()
+[111][4,0]<1>(1,1600000,10000,1)()
+[401][1,0]<1>(1)()
+[111][7,0]<2>(2,1600000,29999,3,1600000,39999,3)()
+[401][1,0]<2>(1)()
+[121][4,0]<3>(1600021,1600000,20000,16384)()
+[250][5,4]<3>(3,1600021,16,332288,1600010)("","Weapons","","Equipped, Can't Remove?")
+[0][0,0]<3>()()
+[401][1,0]<2>(2)()
+[121][4,0]<3>(1600021,1600000,30000,16384)()
+[250][5,4]<3>(4,1600021,16,332288,1600010)("","Armors","","Equipped, Can't Remove?")
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[111][4,0]<2>(1,1600010,1,2)()
+[401][1,0]<2>(1)()
+[121][4,0]<3>(1600099,1,0,0)()
+[172][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[121][4,0]<0>(1600010,-1,0,0)()
+[179][1,0]<0>(2)()
+[121][4,0]<1>(1600010,1,0,256)()
+[111][7,0]<1>(2,1600010,0,2,1600010,1,2)()
+[401][1,0]<1>(1)()
+[121][4,0]<2>(1600020,1600000,0,0)()
+[0][0,0]<2>()()
+[401][1,0]<1>(2)()
+[121][4,0]<2>(1600020,1600001,0,0)()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[111][4,0]<1>(1,1600020,20000,1)()
+[401][1,0]<1>(1)()
+[111][4,0]<2>(1,1600010,0,2)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("マイナスの値にする （マイナス状態で加算してまたマイナスする＝引いてることになる）")
+[121][5,0]<3>(1600050,-1,0,66304,9)()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[111][7,0]<2>(2,1600020,29999,3,1600020,39999,3)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("武器のパラメータ処理")
+[121][4,0]<3>(1600021,1600020,20000,16384)()
+[250][5,4]<3>(3,1600021,6,332304,1600050)("","Weapons","","Max HP Change")
+[250][5,4]<3>(3,1600021,7,332304,1600051)("","Weapons","","Max SP Change")
+[250][5,4]<3>(3,1600021,8,332304,1600052)("","Weapons","","Attack Change")
+[250][5,4]<3>(3,1600021,9,332304,1600053)("","Weapons","","Defense Change")
+[250][5,4]<3>(3,1600021,10,332304,1600054)("","Weapons","","Magic Attack Change")
+[250][5,4]<3>(3,1600021,11,332304,1600055)("","Weapons","","Magic Defense Change")
+[250][5,4]<3>(3,1600021,12,332304,1600056)("","Weapons","","Agility Change")
+[250][5,4]<3>(3,1600021,13,332304,1600057)("","Weapons","","Accuracy [%] Change")
+[250][5,4]<3>(3,1600021,14,332304,1600058)("","Weapons","","Evasion [%] Change")
+[250][5,4]<3>(3,1600021,15,332304,1600059)("","Weapons","","Critical Rate [%] Change")
+[0][0,0]<3>()()
+[401][1,0]<2>(2)()
+[103][0,1]<3>()("防具のパラメータ処理")
+[121][4,0]<3>(1600021,1600020,30000,16384)()
+[250][5,4]<3>(4,1600021,6,332304,1600050)("","Armors","","Max HP Change")
+[250][5,4]<3>(4,1600021,7,332304,1600051)("","Armors","","Max SP Change")
+[250][5,4]<3>(4,1600021,8,332304,1600052)("","Armors","","Attack Change")
+[250][5,4]<3>(4,1600021,9,332304,1600053)("","Armors","","Defense Change")
+[250][5,4]<3>(4,1600021,10,332304,1600054)("","Armors","","Magic Attack Change")
+[250][5,4]<3>(4,1600021,11,332304,1600055)("","Armors","","Magic Defense Change")
+[250][5,4]<3>(4,1600021,12,332304,1600056)("","Armors","","Agility Change")
+[250][5,4]<3>(4,1600021,13,332304,1600057)("","Armors","","Accuracy [%] Change")
+[250][5,4]<3>(4,1600021,14,332304,1600058)("","Armors","","Evasion [%] Change")
+[250][5,4]<3>(4,1600021,15,332304,1600059)("","Armors","","Critical Rate [%] Change")
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[111][4,0]<2>(1,1600010,0,2)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("マイナスの値にする （マイナス状態で加算してまたマイナスする＝引いてることになる）")
+[121][5,0]<3>(1600050,-1,0,66304,9)()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[103][0,1]<0>()("ここで変化値を格納する")
+[250][5,4]<0>(18,40,0,65536,1600050)("","Base System Variables","","")
+[250][5,4]<0>(18,41,0,65536,1600051)("","Base System Variables","","")
+[250][5,4]<0>(18,42,0,65536,1600052)("","Base System Variables","","")
+[250][5,4]<0>(18,43,0,65536,1600053)("","Base System Variables","","")
+[250][5,4]<0>(18,44,0,65536,1600054)("","Base System Variables","","")
+[250][5,4]<0>(18,45,0,65536,1600055)("","Base System Variables","","")
+[250][5,4]<0>(18,46,0,65536,1600056)("","Base System Variables","","")
+[250][5,4]<0>(18,47,0,65536,1600057)("","Base System Variables","","")
+[250][5,4]<0>(18,48,0,65536,1600058)("","Base System Variables","","")
+[250][5,4]<0>(18,49,0,65536,1600059)("","Base System Variables","","")
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Process Overview]
+▼ 　装備変更による、パラメータの差分を計算します。
+▼ 　ここで計算した値は、「装備欄」で装備変更時の差分表示時に使用されます。
+▼ 　
+▼ ―――――――――――――――――――――――――――――――――――
+■Set Variable: CSelf99[装備外せない？] = 0 + 0 
+■Condition (Number):   [1] CSelf2[結果を加算？] ==  0  
+-◇Condition:  [1]  [ CSelf2[結果を加算？] == 0   ] Case↓
+ |■Set Variable: CSelf50[MaxHP変化値総計] to CSelf59[ｸﾘﾃｨｶﾙ率変化値総計] = 0 + 0 
+ |■
+◇End◇
+■Repeat Loop [ 1 ] Times
+ |■Condition (Number):   [1] CSelf0[外す装備ｺｰﾄﾞ] >=  10000  
+ |-◇Condition:  [1]  [ CSelf0[外す装備ｺｰﾄﾞ] >= 10000   ] Case↓
+ | |■Condition (Number):   [1] CSelf0[外す装備ｺｰﾄﾞ] <=  29999  /  [2] CSelf0[外す装備ｺｰﾄﾞ] <=  39999  
+ | |-◇Condition:  [1]  [ CSelf0[外す装備ｺｰﾄﾞ] <= 29999   ] Case↓
+ | | |■Set Variable: CSelf21[一時装備番号] = CSelf0[外す装備ｺｰﾄﾞ] % 20000 
+ | | |■Load DB(User):  CSelf10[一時変数A] = UserDB[ "Weapons":CSelf21[一時装備番号]:"Equipped, Can't Remove?" ] (3:-:16) 
+ | | |■
+ | |-◇Condition:  [2]  [ CSelf0[外す装備ｺｰﾄﾞ] <= 39999   ] Case↓
+ | | |■Set Variable: CSelf21[一時装備番号] = CSelf0[外す装備ｺｰﾄﾞ] % 30000 
+ | | |■Load DB(User):  CSelf10[一時変数A] = UserDB[ "Armors":CSelf21[一時装備番号]:"Equipped, Can't Remove?" ] (4:-:15) 
+ | | |■
+ | |◇End◇
+ | |■Condition (Number):   [1] CSelf10[一時変数A] ==  1  
+ | |-◇Condition:  [1]  [ CSelf10[一時変数A] == 1   ] Case↓
+ | | |■Set Variable: CSelf99[装備外せない？] = 1 + 0 
+ | | |■Exit Event
+ | | |■
+ | |◇End◇
+ | |■
+ |◇End◇
+ |■
+◇Loop End Point◇◇
+■Set Variable: CSelf10[一時変数A] = -1 + 0 
+■Repeat Loop [ 2 ] Times
+ |■Set Variable: CSelf10[一時変数A] += 1 + 0 
+ |■Condition (Number):   [1] CSelf10[一時変数A] ==  0  /  [2] CSelf10[一時変数A] ==  1  
+ |-◇Condition:  [1]  [ CSelf10[一時変数A] == 0   ] Case↓
+ | |■Set Variable: CSelf20[装備コード] = CSelf0[外す装備ｺｰﾄﾞ] + 0 
+ | |■
+ |-◇Condition:  [2]  [ CSelf10[一時変数A] == 1   ] Case↓
+ | |■Set Variable: CSelf20[装備コード] = CSelf1[装着装備ｺｰﾄﾞ] + 0 
+ | |■
+ |◇End◇
+ |■Condition (Number):   [1] CSelf20[装備コード] >=  20000  
+ |-◇Condition:  [1]  [ CSelf20[装備コード] >= 20000   ] Case↓
+ | |■Condition (Number):   [1] CSelf10[一時変数A] ==  0  
+ | |-◇Condition:  [1]  [ CSelf10[一時変数A] == 0   ] Case↓
+ | | |▼ マイナスの値にする （マイナス状態で加算してまたマイナスする＝引いてることになる）
+ | | |■Set Variable: CSelf50[MaxHP変化値総計] to CSelf59[ｸﾘﾃｨｶﾙ率変化値総計] *= -1 + 0 
+ | | |■
+ | |◇End◇
+ | |■Condition (Number):   [1] CSelf20[装備コード] <=  29999  /  [2] CSelf20[装備コード] <=  39999  
+ | |-◇Condition:  [1]  [ CSelf20[装備コード] <= 29999   ] Case↓
+ | | |▼ 武器のパラメータ処理
+ | | |■Set Variable: CSelf21[一時装備番号] = CSelf20[装備コード] % 20000 
+ | | |■Load DB(User):  CSelf50[MaxHP変化値総計] += UserDB[ "Weapons":CSelf21[一時装備番号]:"Max HP Change" ] (3:-:6) 
+ | | |■Load DB(User):  CSelf51[MaxSP変化値総計] += UserDB[ "Weapons":CSelf21[一時装備番号]:"Max SP Change" ] (3:-:7) 
+ | | |■Load DB(User):  CSelf52[攻撃力変化値総計] += UserDB[ "Weapons":CSelf21[一時装備番号]:"Attack Change" ] (3:-:8) 
+ | | |■Load DB(User):  CSelf53[防御力変化値総計] += UserDB[ "Weapons":CSelf21[一時装備番号]:"Defense Change" ] (3:-:9) 
+ | | |■Load DB(User):  CSelf54[精神攻撃変化値総計] += UserDB[ "Weapons":CSelf21[一時装備番号]:"Magic Attack Change" ] (3:-:10) 
+ | | |■Load DB(User):  CSelf55[精神防御変化値総計] += UserDB[ "Weapons":CSelf21[一時装備番号]:"Magic Defense Change" ] (3:-:11) 
+ | | |■Load DB(User):  CSelf56[敏捷度変化値総計] += UserDB[ "Weapons":CSelf21[一時装備番号]:"Agility Change" ] (3:-:12) 
+ | | |■Load DB(User):  CSelf57[命中率変化値総計] += UserDB[ "Weapons":CSelf21[一時装備番号]:"Accuracy [%] Change" ] (3:-:13) 
+ | | |■Load DB(User):  CSelf58[回避率変化値総計] += UserDB[ "Weapons":CSelf21[一時装備番号]:"Evasion [%] Change" ] (3:-:14) 
+ | | |■Load DB(User):  CSelf59[ｸﾘﾃｨｶﾙ率変化値総計] += UserDB[ "Weapons":CSelf21[一時装備番号]:"Critical Rate [%] Change" ] (3:-:15) 
+ | | |■
+ | |-◇Condition:  [2]  [ CSelf20[装備コード] <= 39999   ] Case↓
+ | | |▼ 防具のパラメータ処理
+ | | |■Set Variable: CSelf21[一時装備番号] = CSelf20[装備コード] % 30000 
+ | | |■Load DB(User):  CSelf50[MaxHP変化値総計] += UserDB[ "Armors":CSelf21[一時装備番号]:"Max HP Change" ] (4:-:5) 
+ | | |■Load DB(User):  CSelf51[MaxSP変化値総計] += UserDB[ "Armors":CSelf21[一時装備番号]:"Max SP Change" ] (4:-:6) 
+ | | |■Load DB(User):  CSelf52[攻撃力変化値総計] += UserDB[ "Armors":CSelf21[一時装備番号]:"Attack Change" ] (4:-:7) 
+ | | |■Load DB(User):  CSelf53[防御力変化値総計] += UserDB[ "Armors":CSelf21[一時装備番号]:"Defense Change" ] (4:-:8) 
+ | | |■Load DB(User):  CSelf54[精神攻撃変化値総計] += UserDB[ "Armors":CSelf21[一時装備番号]:"Magic Attack Change" ] (4:-:9) 
+ | | |■Load DB(User):  CSelf55[精神防御変化値総計] += UserDB[ "Armors":CSelf21[一時装備番号]:"Magic Defense Change" ] (4:-:10) 
+ | | |■Load DB(User):  CSelf56[敏捷度変化値総計] += UserDB[ "Armors":CSelf21[一時装備番号]:"Agility Change" ] (4:-:11) 
+ | | |■Load DB(User):  CSelf57[命中率変化値総計] += UserDB[ "Armors":CSelf21[一時装備番号]:"Accuracy [%] Change" ] (4:-:12) 
+ | | |■Load DB(User):  CSelf58[回避率変化値総計] += UserDB[ "Armors":CSelf21[一時装備番号]:"Evasion [%] Change" ] (4:-:13) 
+ | | |■Load DB(User):  CSelf59[ｸﾘﾃｨｶﾙ率変化値総計] += UserDB[ "Armors":CSelf21[一時装備番号]:"Critical Rate [%] Change" ] (4:-:14) 
+ | | |■
+ | |◇End◇
+ | |■Condition (Number):   [1] CSelf10[一時変数A] ==  0  
+ | |-◇Condition:  [1]  [ CSelf10[一時変数A] == 0   ] Case↓
+ | | |▼ マイナスの値にする （マイナス状態で加算してまたマイナスする＝引いてることになる）
+ | | |■Set Variable: CSelf50[MaxHP変化値総計] to CSelf59[ｸﾘﾃｨｶﾙ率変化値総計] *= -1 + 0 
+ | | |■
+ | |◇End◇
+ | |■
+ |◇End◇
+ |■
+◇Loop End Point◇◇
+▼ ここで変化値を格納する
+■Write to DB(Var): VarDB[ "Base System Variables":40:0 ] (18:[Equip] Max HP Change:Number) =  CSelf50[MaxHP変化値総計]
+■Write to DB(Var): VarDB[ "Base System Variables":41:0 ] (18:[Equip] Max SP Change:Number) =  CSelf51[MaxSP変化値総計]
+■Write to DB(Var): VarDB[ "Base System Variables":42:0 ] (18:[Equip] Attack Change:Number) =  CSelf52[攻撃力変化値総計]
+■Write to DB(Var): VarDB[ "Base System Variables":43:0 ] (18:[Equip] Defense Change:Number) =  CSelf53[防御力変化値総計]
+■Write to DB(Var): VarDB[ "Base System Variables":44:0 ] (18:[Equip] Magic Atk Change:Number) =  CSelf54[精神攻撃変化値総計]
+■Write to DB(Var): VarDB[ "Base System Variables":45:0 ] (18:[Equip] Magic Def Change:Number) =  CSelf55[精神防御変化値総計]
+■Write to DB(Var): VarDB[ "Base System Variables":46:0 ] (18:[Equip] Agility Change:Number) =  CSelf56[敏捷度変化値総計]
+■Write to DB(Var): VarDB[ "Base System Variables":47:0 ] (18:[Equip] Accuracy Change:Number) =  CSelf57[命中率変化値総計]
+■Write to DB(Var): VarDB[ "Base System Variables":48:0 ] (18:[Equip] Evasion Change:Number) =  CSelf58[回避率変化値総計]
+■Write to DB(Var): VarDB[ "Base System Variables":49:0 ] (18:[Equip] Critical Rate Change:Number) =  CSelf59[ｸﾘﾃｨｶﾙ率変化値総計]
+■
+[COMMAND_TEXT_END]

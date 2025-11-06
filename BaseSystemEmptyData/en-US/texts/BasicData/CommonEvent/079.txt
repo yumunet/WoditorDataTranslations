@@ -1,0 +1,365 @@
+COMMON_ID=79
+COMMON_NAME=X[Map]Update Party Info
+COMMAND_COLOR=6
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=0
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=
+VALINPUT_NAME_1=
+VALINPUT_NAME_2=
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=0
+LOADTYPE2=0
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=0
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=0
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=
+RETURN_VAL_TARGET=-1
+CSELF_NAME_0=
+CSELF_NAME_1=
+CSELF_NAME_2=
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=Temp String
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=
+CSELF_NAME_9=
+CSELF_NAME_10=Temp Variable A
+CSELF_NAME_11=
+CSELF_NAME_12=
+CSELF_NAME_13=
+CSELF_NAME_14=
+CSELF_NAME_15=
+CSELF_NAME_16=Max Party Size
+CSELF_NAME_17=
+CSELF_NAME_18=In-Battle Flag
+CSELF_NAME_19=
+CSELF_NAME_20=Processing Ally ID
+CSELF_NAME_21=Processing Target
+CSELF_NAME_22=Party Member Count
+CSELF_NAME_23=Last Empty Slot Position
+CSELF_NAME_24=
+CSELF_NAME_25=
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=
+CSELF_NAME_29=
+CSELF_NAME_30=Battle Destination
+CSELF_NAME_31=
+CSELF_NAME_32=
+CSELF_NAME_33=
+CSELF_NAME_34=
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=DB Number
+CSELF_NAME_41=Source
+CSELF_NAME_42=Destination
+CSELF_NAME_43=
+CSELF_NAME_44=Reference Value
+CSELF_NAME_45=Field Count
+CSELF_NAME_46=Field Number
+CSELF_NAME_47=Source Value
+CSELF_NAME_48=
+CSELF_NAME_49=DB Reference Value
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=
+CSELF_NAME_89=
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=
+COMMAND_NUM=98
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("  Recalculates the number of members in the party.")
+[103][0,1]<0>()("  If there are gaps in the party slots, they are closed.")
+[103][0,1]<0>()("")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[121][4,0]<0>(1600022,0,0,0)()
+[121][4,0]<0>(1600021,-1,0,0)()
+[121][4,0]<0>(1600023,0,0,0)()
+[250][5,4]<0>(18,51,0,69632,1600016)("","Base System Variables","","")
+[250][5,4]<0>(18,68,0,200704,1600018)("","Base System Variables","[Battle] In Battle?","")
+[179][1,0]<0>(1600016)()
+[121][4,0]<1>(1600021,1,0,256)()
+[103][0,1]<1>()("Get character ID from Party database.")
+[121][4,0]<1>(1600010,1600021,1,0)()
+[250][5,4]<1>(3,0,1600010,69632,1600020)("","Party","","")
+[111][4,0]<1>(17,1600020,0,1)()
+[401][1,0]<1>(1)()
+[121][4,0]<2>(1600022,1,0,256)()
+[111][4,0]<2>(1,1600023,1,1)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("If the empty slot is at a previous position, move the data there.")
+[250][5,4]<3>(3,0,1600023,65536,1600020)("","Party","","")
+[250][5,4]<3>(3,0,1600010,65536,-1)("","Party","","")
+[111][4,0]<3>(1,1600018,1,2)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("Since in battle, also move the battle data.")
+[121][4,0]<4>(1600030,1600023,1,4096)()
+[103][0,1]<4>()("Move data from databases 10 through 13.")
+[121][4,0]<4>(1600040,10,0,0)()
+[121][4,0]<4>(1600041,1600021,0,0)()
+[121][4,0]<4>(1600042,1600030,0,0)()
+[179][1,0]<4>(4)()
+[250][5,4]<5>(1600040,0,-1,4096,1600045)("","","","")
+[121][4,0]<5>(1600046,0,0,0)()
+[121][4,0]<5>(1600049,1100000000,0,4)()
+[121][4,0]<5>(1600049,1600040,1000000,8456)()
+[179][1,0]<5>(1600045)()
+[121][4,0]<6>(1600044,1600049,1600046,0)()
+[121][4,0]<6>(1600044,1600041,100,8448)()
+[122][3,0]<6>(1600005,2,1600044)()
+[112][2,4]<6>(17,1600005)("<<ERROR>>","","","")
+[401][1,0]<6>(1)()
+[103][0,1]<7>()("Data is a number.")
+[250][5,4]<7>(1600040,1600041,1600046,4096,1600047)("","","","")
+[250][5,4]<7>(1600040,1600042,1600046,0,1600047)("","","","")
+[0][0,0]<7>()()
+[420][1,0]<6>(0)()
+[103][0,1]<7>()("Data is a string.")
+[250][5,4]<7>(1600040,1600042,1600046,0,1600005)("","","","")
+[0][0,0]<7>()()
+[499][0,0]<6>()()
+[121][4,0]<6>(1600046,1,0,256)()
+[0][0,0]<6>()()
+[498][0,0]<5>()()
+[121][4,0]<5>(1600040,1,0,256)()
+[0][0,0]<5>()()
+[498][0,0]<4>()()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[103][0,1]<3>()("Shift the empty slot position by one.")
+[121][4,0]<3>(1600023,1,0,256)()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[420][1,0]<1>(0)()
+[111][4,0]<2>(1,1600023,0,2)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("Store the last empty slot position here.")
+[121][4,0]<3>(1600023,1600010,0,0)()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[103][0,1]<0>()("Store party member count.")
+[250][5,4]<0>(18,4,0,65536,1600022)("","Base System Variables","","")
+[121][4,0]<0>(1600021,1600022,0,0)()
+[170][0,0]<0>()()
+[111][4,0]<1>(1,1600021,1600016,1)()
+[401][1,0]<1>(1)()
+[171][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[250][5,4]<1>(10,1600021,-2,65536,0)("","×┏Battle Temp Status","","")
+[250][5,4]<1>(11,1600021,-2,65536,0)("","×┣Element Resist Calc","","")
+[250][5,4]<1>(12,1600021,-2,65536,0)("","×┣State Resist Calc","","")
+[250][5,4]<1>(13,1600021,-2,65536,0)("","×┣State List","","")
+[121][4,0]<1>(1600021,1,0,256)()
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Process Overview]
+▼   Recalculates the number of members in the party.
+▼   If there are gaps in the party slots, they are closed.
+▼ 
+▼ [Databases Accessed by This Common Event]
+▼  
+▼ [Other Common Events Called from Here]
+▼  
+▼ [Main Common Events Calling This]
+▼ ―――――――――――――――――――――――――――――――――――
+■Set Variable: CSelf22[Party Member Count] = 0 + 0 
+■Set Variable: CSelf21[Processing Target] = -1 + 0 
+■Set Variable: CSelf23[Last Empty Slot Position] = 0 + 0 
+■Load DB(Var):  CSelf16[Max Party Size] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
+■Load DB(Var):  CSelf18[In-Battle Flag] = VarDB[ "Base System Variables":"[Battle] In Battle?":0 ] (18:68:Number) 
+■Repeat Loop [ CSelf16[Max Party Size] ] Times
+ |■Set Variable: CSelf21[Processing Target] += 1 + 0 
+ |▼ Get character ID from Party database.
+ |■Set Variable: CSelf10[Temp Variable A] = CSelf21[Processing Target] + 1 
+ |■Load DB(Var):  CSelf20[Processing Ally ID] = VarDB[ "Party":0:CSelf10[Temp Variable A] ] (6:Main Settings:-) 
+ |■Condition (Number):   [1] CSelf20[Processing Ally ID] >=  0  
+ |-◇Condition:  [1]  [ CSelf20[Processing Ally ID] >= 0   ] Case↓
+ | |■Set Variable: CSelf22[Party Member Count] += 1 + 0 
+ | |■Condition (Number):   [1] CSelf23[Last Empty Slot Position] >=  1  
+ | |-◇Condition:  [1]  [ CSelf23[Last Empty Slot Position] >= 1   ] Case↓
+ | | |▼ If the empty slot is at a previous position, move the data there.
+ | | |■Write to DB(Var): VarDB[ "Party":0:CSelf23[Last Empty Slot Position] ] (6:Main Settings:-) =  CSelf20[Processing Ally ID]
+ | | |■Write to DB(Var): VarDB[ "Party":0:CSelf10[Temp Variable A] ] (6:Main Settings:-) =  -1
+ | | |■Condition (Number):   [1] CSelf18[In-Battle Flag] ==  1  
+ | | |-◇Condition:  [1]  [ CSelf18[In-Battle Flag] == 1   ] Case↓
+ | | | |▼ Since in battle, also move the battle data.
+ | | | |■Set Variable: CSelf30[Battle Destination] = CSelf23[Last Empty Slot Position] - 1 
+ | | | |▼ Move data from databases 10 through 13.
+ | | | |■Set Variable: CSelf40[DB Number] = 10 + 0 
+ | | | |■Set Variable: CSelf41[Source] = CSelf21[Processing Target] + 0 
+ | | | |■Set Variable: CSelf42[Destination] = CSelf30[Battle Destination] + 0 
+ | | | |■Repeat Loop [ 4 ] Times
+ | | | | |■Load DB(Var):  CSelf45[Field Count] = VarDB[Type CSelf40[DB Number](-)'s Field Count]
+ | | | | |■Set Variable: CSelf46[Field Number] = 0 + 0 
+ | | | | |■Set Variable: CSelf49[DB Reference Value] = 1100000000 + 0 
+ | | | | |■Set Variable: CSelf49[DB Reference Value] += CSelf40[DB Number] * 1000000 
+ | | | | |■Repeat Loop [ CSelf45[Field Count] ] Times
+ | | | | | |■Set Variable: CSelf44[Reference Value] = CSelf49[DB Reference Value] + CSelf46[Field Number] 
+ | | | | | |■Set Variable: CSelf44[Reference Value] += CSelf41[Source] * 100 
+ | | | | | |■Set String: CSelf5[Temp String] = String at Position [CSelf44[Reference Value]]
+ | | | | | |■Condition (String):   [1] CSelf5[Temp String] Is Equal to "<<ERROR>>"
+ | | | | | |-◇Condition:  [1] [ CSelf5[Temp String] Is Equal to "<<ERROR>>" ] Case↓
+ | | | | | | |▼ Data is a number.
+ | | | | | | |■Load DB(Var):  CSelf47[Source Value] = VarDB[ CSelf40[DB Number]:CSelf41[Source]:CSelf46[Field Number] ] (-:-:-) 
+ | | | | | | |■Write to DB(Var): VarDB[ CSelf40[DB Number]:CSelf42[Destination]:CSelf46[Field Number] ] (-:-:-) =  CSelf47[Source Value]
+ | | | | | | |■
+ | | | | | |-◇Else
+ | | | | | | |▼ Data is a string.
+ | | | | | | |■Write to DB(Var): VarDB[ CSelf40[DB Number]:CSelf42[Destination]:CSelf46[Field Number] ] (-:-:-) =  CSelf5[Temp String]
+ | | | | | | |■
+ | | | | | |◇End◇
+ | | | | | |■Set Variable: CSelf46[Field Number] += 1 + 0 
+ | | | | | |■
+ | | | | |◇Loop End Point◇◇
+ | | | | |■Set Variable: CSelf40[DB Number] += 1 + 0 
+ | | | | |■
+ | | | |◇Loop End Point◇◇
+ | | | |■
+ | | |◇End◇
+ | | |▼ Shift the empty slot position by one.
+ | | |■Set Variable: CSelf23[Last Empty Slot Position] += 1 + 0 
+ | | |■
+ | |◇End◇
+ | |■
+ |-◇Else
+ | |■Condition (Number):   [1] CSelf23[Last Empty Slot Position] ==  0  
+ | |-◇Condition:  [1]  [ CSelf23[Last Empty Slot Position] == 0   ] Case↓
+ | | |▼ Store the last empty slot position here.
+ | | |■Set Variable: CSelf23[Last Empty Slot Position] = CSelf10[Temp Variable A] + 0 
+ | | |■
+ | |◇End◇
+ | |■
+ |◇End◇
+ |■
+◇Loop End Point◇◇
+▼ Store party member count.
+■Write to DB(Var): VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) =  CSelf22[Party Member Count]
+■Set Variable: CSelf21[Processing Target] = CSelf22[Party Member Count] + 0 
+■Loop Start
+ |■Condition (Number):   [1] CSelf21[Processing Target] >=  CSelf16[Max Party Size]  
+ |-◇Condition:  [1]  [ CSelf21[Processing Target] >= CSelf16[Max Party Size]   ] Case↓
+ | |■Break Loop
+ | |■
+ |◇End◇
+ |■Write to DB(Var): [Reset Type "×┏Battle Temp Status"(10) Data CSelf21[Processing Target]]
+ |■Write to DB(Var): [Reset Type "×┣Element Resist Calc"(11) Data CSelf21[Processing Target]]
+ |■Write to DB(Var): [Reset Type "×┣State Resist Calc"(12) Data CSelf21[Processing Target]]
+ |■Write to DB(Var): [Reset Type "×┣State List"(13) Data CSelf21[Processing Target]]
+ |■Set Variable: CSelf21[Processing Target] += 1 + 0 
+ |■
+◇Loop End Point◇◇
+■
+[COMMAND_TEXT_END]

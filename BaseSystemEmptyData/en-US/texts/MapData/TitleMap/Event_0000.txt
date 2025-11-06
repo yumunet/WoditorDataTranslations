@@ -1,0 +1,145 @@
+EVENT_ID=0
+EVENT_NAME=Title Event
+EVENT_X=8
+EVENT_Y=6
+EVENT_PAGE=1
+OPTION_DATA_NUM=0
+EVENT_PAGE_NUM=1
+EVENT_PAGE=0
+EVENT_TILE_ID=-1
+GRAPHIC_FILENAME=
+EVENT_DIRECTION=2
+EVENT_PATTERN=1
+EVENT_OPACITY=255
+EVENT_BLENDTYPE=0
+EVENT_TRIGGER_TYPE=1
+EVENT_CONDITION_0_USE=32
+EVENT_CONDITION_TARGET_0=1000000
+EVENT_CONDITION_VALUE_0=0
+EVENT_CONDITION_1_USE=32
+EVENT_CONDITION_TARGET_1=1000000
+EVENT_CONDITION_VALUE_1=0
+EVENT_CONDITION_2_USE=32
+EVENT_CONDITION_TARGET_2=1000000
+EVENT_CONDITION_VALUE_2=0
+EVENT_CONDITION_3_USE=32
+EVENT_CONDITION_TARGET_3=1000000
+EVENT_CONDITION_VALUE_3=0
+ANIME_SPEED=3
+MOVE_SPEED=3
+MOVE_FREQUENCY=3
+MOVE_TYPE=0
+CHARA_OPTION_FLAG=3
+ROUTE_OPTION_FLAG=2
+ROUTE_COMMAND_NUM=0
+OPTION_VAL_NUM=3
+OPTION_VAL_0=0
+OPTION_VAL_1=0
+OPTION_VAL_2=0
+COMMAND_NUM=50
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("[Hint] In the base system, the initial party member is set in the Variable Database")
+[103][0,1]<0>()("      (Type 6: Party). By default, the party has one member: <dqrt>Hero.<dqrt>")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("Display title image. [The image used here will be the title image]")
+[103][0,1]<0>()("By default, <dqrt>TitleGraphic.png<dqrt> in the <dqrt>SystemFile<dqrt> folder is the title screen.")
+[150][11,1]<0>(0,1,0,1,1,1,255,0,0,100,0)("SystemFile/TitleGraphic.png")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("When starting the game, insert a 1-frame wait to")
+[103][0,1]<0>()("allow for the initialization of the base system!")
+[103][0,1]<0>()("If you don't, message display will be misaligned.")
+[180][1,0]<0>(1)()
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Title Event Starts Here]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("If a save file is found (by Common 48: X[C]Base System Auto-Initialize),")
+[103][0,1]<0>()("set the default value of the next choice to 1 (Continue).")
+[111][4,0]<0>(1,9000025,1,1)()
+[401][1,0]<0>(1)()
+[121][4,0]<1>(9000007,1,0,0)()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("Move the position of the choice window down a little.")
+[121][4,0]<0>(9000004,150,0,0)()
+[103][0,1]<0>()("This displays the usual choices on game start.")
+[102][1,3]<0>(19)("<C>Start","<C>Continue","<C>Quit")
+[401][1,0]<0>(2)()
+[103][0,1]<1>()("Set the position of the choice window back to default.")
+[121][4,0]<1>(9000004,-1,0,0)()
+[103][0,1]<1>()("Erase the title screen picture.")
+[150][3,0]<1>(2,1,0)()
+[103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<1>()("Transfer to Sample Map.")
+[103][0,1]<1>()("(Change the destination as necessary.)")
+[103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[130][5,0]<1>(-1,9,8,1,32)()
+[103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<1>()("The process up to here when selecting <dqrt>Start<dqrt> is necessary! Don't delete it!")
+[0][0,0]<1>()()
+[401][1,0]<0>(3)()
+[103][0,1]<1>()("You can load by calling Common 14.")
+[210][3,0]<1>(500014,1,-1)()
+[0][0,0]<1>()()
+[401][1,0]<0>(4)()
+[103][0,1]<1>()("End the game.")
+[175][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ [Hint] In the base system, the initial party member is set in the Variable Database
+▼       (Type 6: Party). By default, the party has one member: "Hero."
+▼  
+▼ Display title image. [The image used here will be the title image]
+▼ By default, "TitleGraphic.png" in the "SystemFile" folder is the title screen.
+■Picture Show: 1 [Top-Left] File [SystemFile/TitleGraphic.png] X:0 Y:0 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+▼  
+▼ When starting the game, insert a 1-frame wait to
+▼ allow for the initialization of the base system!
+▼ If you don't, message display will be misaligned.
+■Wait: 1 Frames
+▼  
+▼  
+▼ [Title Event Starts Here]
+▼  
+▼ If a save file is found (by Common 48: X[C]Base System Auto-Initialize),
+▼ set the default value of the next choice to 1 (Continue).
+■Condition (Number):   [1] Sys25:Current Save (0+) >=  1  
+-◇Condition:  [1]  [ Sys25:Current Save (0+) >= 1   ] Case↓
+ |■Set Variable: Sys7:Initial Choice (0,1,2...) = 1 + 0 
+ |■
+◇End◇
+▼  
+▼ Move the position of the choice window down a little.
+■Set Variable: Sys4:Choice Window Y = 150 + 0 
+▼ This displays the usual choices on game start.
+■Show Choice: / [1] <C>Start / [2] <C>Continue / [3] <C>Quit 
+-◇Case: Choice [1] <C>Start                                 ↓
+ |▼ Set the position of the choice window back to default.
+ |■Set Variable: Sys4:Choice Window Y = -1 + 0 
+ |▼ Erase the title screen picture.
+ |■Picture Erase: 1  / 0(0) Frames
+ |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ |▼ Transfer to Sample Map.
+ |▼ (Change the destination as necessary.)
+ |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ |■Transfer: Leader ▲ Map ID 1 [Post-Start Map] X:9 Y:8  [Transition with Fade]
+ |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ |▼ The process up to here when selecting "Start" is necessary! Don't delete it!
+ |■
+-◇Case: Choice [2] <C>Continue                              ↓
+ |▼ You can load by calling Common 14.
+ |■Call Event: Common 14: [ ○ Open Menus ] / -1:Load Menu
+ |■
+-◇Case: Choice [3] <C>Quit                                  ↓
+ |▼ End the game.
+ |■Game End
+ |■
+◇End◇
+■
+[COMMAND_TEXT_END]

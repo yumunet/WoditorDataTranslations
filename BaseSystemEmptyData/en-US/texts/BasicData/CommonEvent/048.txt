@@ -1,0 +1,655 @@
+COMMON_ID=48
+COMMON_NAME=X[Com]Base System Auto-init
+COMMAND_COLOR=4
+TRIGGER=35
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=0
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=
+VALINPUT_NAME_1=
+VALINPUT_NAME_2=
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=0
+LOADTYPE2=0
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=0
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=0
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=
+RETURN_VAL_TARGET=-1
+CSELF_NAME_0=
+CSELF_NAME_1=
+CSELF_NAME_2=
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=
+CSELF_NAME_9=
+CSELF_NAME_10=Repeat Count
+CSELF_NAME_11=Processing Position
+CSELF_NAME_12=Equipment Position (in DB)
+CSELF_NAME_13=Max Equipment Slots
+CSELF_NAME_14=Equipment Slot
+CSELF_NAME_15=
+CSELF_NAME_16=Member Check Count
+CSELF_NAME_17=Member Position
+CSELF_NAME_18=Remaining Check Count
+CSELF_NAME_19=Temp Ally ID
+CSELF_NAME_20=Temp Storage ID
+CSELF_NAME_21=
+CSELF_NAME_22=Second Position
+CSELF_NAME_23=Second Ally ID
+CSELF_NAME_24=
+CSELF_NAME_25=Temp Variable A
+CSELF_NAME_26=Temp Variable B
+CSELF_NAME_27=
+CSELF_NAME_28=
+CSELF_NAME_29=
+CSELF_NAME_30=
+CSELF_NAME_31=
+CSELF_NAME_32=
+CSELF_NAME_33=
+CSELF_NAME_34=
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=
+CSELF_NAME_41=
+CSELF_NAME_42=
+CSELF_NAME_43=
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=
+CSELF_NAME_89=
+CSELF_NAME_90=Equipments Check Start Position
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=Finish Flag
+COMMAND_NUM=243
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("* Specify the field index where Equipped Weapon in Allies begins here.")
+[121][4,0]<0>(1600090,28,0,0)()
+[179][1,0]<0>(1)()
+[103][0,1]<1>()("Ver.3.30  The current save slot is now read every time at startup or immediately after loading.")
+[103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<1>()("Get the last-used save slot from System.sav every time. (System.sav's Normal Variable #0 is used for the last-used save slot).")
+[103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[122][2,1]<1>(1600005,0)("Save/System.sav")
+[221][4,0]<1>(1600020,1600005,2000000,0)()
+[121][4,0]<1>(9000025,1600020,0,0)()
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("If initialization is already done, stop here.")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[111][4,0]<0>(1,1600099,1,1)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("If the finish flag is set, essentially do nothing (long wait).")
+[179][1,0]<1>(999999)()
+[180][1,0]<2>(999999)()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("Set screen size scale and base font size.")
+[103][0,1]<0>()("(By the way, these are also set on menu opening and battle start.)")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[111][7,0]<0>(2,9000115,220,1,9000115,220,4)()
+[401][1,0]<0>(1)()
+[179][1,0]<1>(1)()
+[103][0,1]<2>()("New Process: Calculate the stretch ratio from the vertical and horizontal resolutions.")
+[121][4,0]<2>(1600025,9000116,32,12288)()
+[121][4,0]<2>(1600026,9000117,24,12288)()
+[250][5,4]<2>(18,97,0,65536,1600025)("","Base System Variables","","")
+[250][5,4]<2>(18,98,0,65536,1600026)("","Base System Variables","","")
+[103][0,1]<2>()("Although not used, store the old coordinate scale for common events distributed for older versions, based on the vertical size.")
+[250][5,4]<2>(18,3,0,65536,1600026)("","Base System Variables","","")
+[103][0,1]<2>()("Calculate and store font size.")
+[103][0,1]<2>()("Ver.3.00  Font size calculation now uses the smaller of the vertical and horizontal screen scales. ")
+[121][4,0]<2>(1600026,1600025,0,1792)()
+[103][0,1]<2>()(" ")
+[250][5,4]<2>(18,5,0,65536,1600026)("","Base System Variables","","")
+[121][4,0]<2>(1600025,1600026,8,8192)()
+[121][4,0]<2>(1600025,10,0,1024)()
+[250][5,4]<2>(18,6,0,65536,1600025)("","Base System Variables","","")
+[121][4,0]<2>(1600025,1600026,6,8192)()
+[121][4,0]<2>(1600025,10,0,1024)()
+[250][5,4]<2>(18,7,0,65536,1600025)("","Base System Variables","","")
+[121][4,0]<2>(1600025,1600026,12,8192)()
+[121][4,0]<2>(1600025,10,0,1024)()
+[121][4,0]<2>(9000008,1600025,0,0)()
+[121][4,0]<2>(1600025,1600026,5,8192)()
+[121][4,0]<2>(1600025,10,0,1024)()
+[121][4,0]<2>(9000023,1600025,0,0)()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[179][1,0]<1>(0)()
+[103][0,1]<2>()("Old Process: In the past, tile size and resolution were proportional, so we determined it using Sys 84.")
+[111][10,0]<2>(3,9000084,0,2,9000084,1,2,9000084,2,2)()
+[401][1,0]<2>(1)()
+[250][5,4]<3>(18,97,0,65536,10)("","Base System Variables","","")
+[250][5,4]<3>(18,98,0,65536,10)("","Base System Variables","","")
+[250][5,4]<3>(18,5,0,65536,10)("","Base System Variables","","")
+[250][5,4]<3>(18,6,0,65536,8)("","Base System Variables","","")
+[250][5,4]<3>(18,7,0,65536,6)("","Base System Variables","","")
+[121][4,0]<3>(9000008,12,0,0)()
+[121][4,0]<3>(9000023,9000008,2,12288)()
+[103][0,1]<3>()("Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale.")
+[250][5,4]<3>(18,3,0,65536,10)("","Base System Variables","","")
+[0][0,0]<3>()()
+[401][1,0]<2>(2)()
+[250][5,4]<3>(18,97,0,65536,20)("","Base System Variables","","")
+[250][5,4]<3>(18,98,0,65536,20)("","Base System Variables","","")
+[250][5,4]<3>(18,5,0,65536,20)("","Base System Variables","","")
+[250][5,4]<3>(18,6,0,65536,16)("","Base System Variables","","")
+[250][5,4]<3>(18,7,0,65536,12)("","Base System Variables","","")
+[121][4,0]<3>(9000008,24,0,0)()
+[121][4,0]<3>(9000023,9000008,2,12288)()
+[103][0,1]<3>()("Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale.")
+[250][5,4]<3>(18,3,0,65536,20)("","Base System Variables","","")
+[0][0,0]<3>()()
+[401][1,0]<2>(3)()
+[250][5,4]<3>(18,97,0,65536,25)("","Base System Variables","","")
+[250][5,4]<3>(18,98,0,65536,25)("","Base System Variables","","")
+[250][5,4]<3>(18,5,0,65536,26)("","Base System Variables","","")
+[250][5,4]<3>(18,6,0,65536,20)("","Base System Variables","","")
+[250][5,4]<3>(18,7,0,65536,15)("","Base System Variables","","")
+[121][4,0]<3>(9000008,30,0,0)()
+[121][4,0]<3>(9000023,9000008,2,12288)()
+[103][0,1]<3>()("Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale.")
+[250][5,4]<3>(18,3,0,65536,25)("","Base System Variables","","")
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[121][4,0]<0>(1600099,1,0,0)()
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("Initialize other parameters.")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("Enemy/Ally Maximum")
+[250][5,4]<0>(18,51,0,65536,6)("","Base System Variables","","")
+[250][5,4]<0>(20,69,0,65536,7)("","Base System Variables","","")
+[103][0,1]<0>()("Save Slots")
+[250][5,4]<0>(18,52,0,65536,4)("","Base System Variables","","")
+[250][5,4]<0>(18,53,0,65536,5)("","Base System Variables","","")
+[250][5,4]<0>(18,33,0,65536,1)("","Base System Variables","","")
+[103][0,1]<0>()("System Settings")
+[250][5,4]<0>(18,56,0,65536,1)("","Base System Variables","","")
+[250][5,4]<0>(18,58,0,65536,0)("","Base System Variables","","")
+[300][3,1]<0>(0,1,2)("X[Map]Set Key Repeat")
+[103][0,1]<0>()("Other Basic Game Settings")
+[121][4,0]<0>(9000017,0,0,0)()
+[121][4,0]<0>(9000018,1,0,0)()
+[121][4,0]<0>(9000019,2,0,0)()
+[121][4,0]<0>(9000021,1,0,0)()
+[121][4,0]<0>(9000022,1,0,0)()
+[121][4,0]<0>(9000009,500,0,0)()
+[121][4,0]<0>(9000037,2,0,0)()
+[300][2,1]<0>(0,0)("X[Map]Update Party Info")
+[179][1,0]<0>(1)()
+[103][0,1]<1>()("If there are duplicate members, remove them.")
+[250][5,4]<1>(18,51,0,69632,1600016)("","Base System Variables","","")
+[121][4,0]<1>(1600017,-1,0,0)()
+[179][1,0]<1>(1600016)()
+[121][4,0]<2>(1600017,1,0,256)()
+[300][4,1]<2>(0,16777217,1600017,1600019)("X[Map]Get Ally ID")
+[121][4,0]<2>(1600018,1600016,1600017,4096)()
+[121][4,0]<2>(1600018,1,0,512)()
+[121][4,0]<2>(1600022,1600017,0,0)()
+[179][1,0]<2>(1600018)()
+[121][4,0]<3>(1600022,1,0,256)()
+[300][4,1]<3>(0,16777217,1600022,1600023)("X[Map]Get Ally ID")
+[111][4,0]<3>(1,1600023,1600019,2)()
+[401][1,0]<3>(1)()
+[300][4,1]<4>(0,2,1600022,-1)("X[Map]Set Ally ID")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[498][0,0]<2>()()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[103][0,1]<0>()(" ")
+[160][2,0]<0>(-1,65546)()
+[201][1,0]<0>(-2)()(2,[29,3])
+[300][2,1]<0>(0,0)("X[Map]Update Party Info")
+[300][2,1]<0>(0,0)("X[Map]Update Party Sprites")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("Convert character equipments to Weapons (ID 20000+) or Armor (ID 30000+).")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[250][5,4]<0>(0,-1,33,69632,1600010)("","Allies","","")
+[103][0,1]<0>()("Loop for all characters.")
+[121][4,0]<0>(1600011,-1,0,0)()
+[179][1,0]<0>(1600010)()
+[121][4,0]<1>(1600011,1,0,256)()
+[250][5,4]<1>(18,0,22,332288,1600013)("","System Settings","","Equippable Slots")
+[103][0,1]<1>()("Loop to check each piece of equipment from here.")
+[121][4,0]<1>(1600014,-1,0,0)()
+[121][4,0]<1>(1600012,1600090,1,4096)()
+[179][1,0]<1>(1600013)()
+[103][0,1]<2>()("Read the original ID (0-9999).")
+[121][4,0]<2>(1600012,1,0,256)()
+[121][4,0]<2>(1600014,1,0,256)()
+[250][5,4]<2>(0,1600011,1600012,69632,1600020)("","Allies","","")
+[111][7,0]<2>(2,1600014,0,2,1600014,1,1)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("If the ID is 0 or higher, convert it to Weapon ID (20000+).")
+[111][4,0]<3>(1,1600020,0,1)()
+[401][1,0]<3>(1)()
+[121][4,0]<4>(1600020,1600020,10000,16384)()
+[121][4,0]<4>(1600020,20000,0,256)()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[401][1,0]<2>(2)()
+[103][0,1]<3>()("If the ID is 0 or higher, convert it to Armor ID (30000+).")
+[111][4,0]<3>(1,1600020,0,1)()
+[401][1,0]<3>(1)()
+[121][4,0]<4>(1600020,1600020,10000,16384)()
+[121][4,0]<4>(1600020,30000,0,256)()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[103][0,1]<2>()("Store again.")
+[250][5,4]<2>(0,1600011,1600012,65536,1600020)("","Allies","","")
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[103][0,1]<1>()(" ")
+[103][0,1]<1>()("Reset auto-change amount to 0.")
+[250][5,4]<1>(21,1600011,11,327680,0)("","×Allies Temp Data","","[Temp] HP Auto Change")
+[250][5,4]<1>(21,1600011,12,327680,0)("","×Allies Temp Data","","[Temp] SP Auto Change")
+[103][0,1]<1>()("Calculate temporary stats.")
+[300][3,1]<1>(0,1,1600011)("X[Map]CalcTempStats <Initialize>")
+[300][3,1]<1>(0,1,1600011)("X[Map]CalcTempStats <Equipments>")
+[300][3,1]<1>(0,1,1600011)("X[Map]CalcTempStats <StatusEffects>")
+[103][0,1]<1>()("Fill up HP and SP.")
+[300][6,1]<1>(0,4,1600011,22,999999,0)("X[Map]Change Parameter")
+[300][6,1]<1>(0,4,1600011,23,999999,0)("X[Map]Change Parameter")
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[103][0,1]<0>()(" ")
+[179][1,0]<0>(0)()
+[103][0,1]<1>()("Moved up, so commented out with 0 loops.")
+[103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<1>()("Get the last-used save slot from System.sav. (System.sav's Normal Variable #0 is used for the last-used save slot).")
+[103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[122][2,1]<1>(1600005,0)("Save/System.sav")
+[221][4,0]<1>(1600020,1600005,2000000,0)()
+[121][4,0]<1>(9000025,1600020,0,0)()
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("Ver.3.16  Changed the initial volume to 60 and corrected the font weight.")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[121][4,0]<0>(9000100,60,0,0)()
+[121][4,0]<0>(9000101,60,0,0)()
+[121][4,0]<0>(9000102,60,0,0)()
+[121][4,0]<0>(9000125,6,0,0)()
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()(" ")
+[180][1,0]<0>(1)()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Process Overview]
+▼ 
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Databases Accessed by This Common Event]
+▼  
+▼ [Other Common Events Called from Here]
+▼  
+▼ [Main Common Events Calling This]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ * Specify the field index where Equipped Weapon in Allies begins here.
+■Set Variable: CSelf90[Equipments Check Start Position] = 28 + 0 
+■Repeat Loop [ 1 ] Times
+ |▼ Ver.3.30  The current save slot is now read every time at startup or immediately after loading.
+ |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ |▼ Get the last-used save slot from System.sav every time. (System.sav's Normal Variable #0 is used for the last-used save slot).
+ |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ |■Set String: CSelf5 = "Save/System.sav"
+ |■Read Save Data:  CSelf20[Temp Storage ID] = Save Data [CSelf5]'s V0[]
+ |■Set Variable: Sys25:Current Save (0+) = CSelf20[Temp Storage ID] + 0 
+ |■
+◇Loop End Point◇◇
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ If initialization is already done, stop here.
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■Condition (Number):   [1] CSelf99[Finish Flag] >=  1  
+-◇Condition:  [1]  [ CSelf99[Finish Flag] >= 1   ] Case↓
+ |▼ If the finish flag is set, essentially do nothing (long wait).
+ |■Repeat Loop [ 999999 ] Times
+ | |■Wait: 999999 Frames
+ | |■
+ |◇Loop End Point◇◇
+ |■Exit Event
+ |■
+◇End◇
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ Set screen size scale and base font size.
+▼ (By the way, these are also set on menu opening and battle start.)
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■Condition (Number):   [1] Sys115:[RO] Game.exe Version (x100) >=  220  /  [2] Sys115:[RO] Game.exe Version (x100) <  220  
+-◇Condition:  [1]  [ Sys115:[RO] Game.exe Version (x100) >= 220   ] Case↓
+ |■Repeat Loop [ 1 ] Times
+ | |▼ New Process: Calculate the stretch ratio from the vertical and horizontal resolutions.
+ | |■Set Variable: CSelf25[Temp Variable A] = Sys116:[RO] Screen Width / 32 
+ | |■Set Variable: CSelf26[Temp Variable B] = Sys117:[RO] Screen Height / 24 
+ | |■Write to DB(Var): VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) =  CSelf25[Temp Variable A]
+ | |■Write to DB(Var): VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) =  CSelf26[Temp Variable B]
+ | |▼ Although not used, store the old coordinate scale for common events distributed for older versions, based on the vertical size.
+ | |■Write to DB(Var): VarDB[ "Base System Variables":3:0 ] (18:[×Unused] Coord Scale [x10]:Number) =  CSelf26[Temp Variable B]
+ | |▼ Calculate and store font size.
+ | |▼ Ver.3.00  Font size calculation now uses the smaller of the vertical and horizontal screen scales. 
+ | |■Set Variable: CSelf26[Temp Variable B] Upper Bound= CSelf25[Temp Variable A] + 0 
+ | |▼  
+ | |■Write to DB(Var): VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) =  CSelf26[Temp Variable B]
+ | |■Set Variable: CSelf25[Temp Variable A] = CSelf26[Temp Variable B] * 8 
+ | |■Set Variable: CSelf25[Temp Variable A] /= 10 + 0 
+ | |■Write to DB(Var): VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) =  CSelf25[Temp Variable A]
+ | |■Set Variable: CSelf25[Temp Variable A] = CSelf26[Temp Variable B] * 6 
+ | |■Set Variable: CSelf25[Temp Variable A] /= 10 + 0 
+ | |■Write to DB(Var): VarDB[ "Base System Variables":7:0 ] (18:System Min Font Size:Number) =  CSelf25[Temp Variable A]
+ | |■Set Variable: CSelf25[Temp Variable A] = CSelf26[Temp Variable B] * 12 
+ | |■Set Variable: CSelf25[Temp Variable A] /= 10 + 0 
+ | |■Set Variable: Sys8:Base Font Size = CSelf25[Temp Variable A] + 0 
+ | |■Set Variable: CSelf25[Temp Variable A] = CSelf26[Temp Variable B] * 5 
+ | |■Set Variable: CSelf25[Temp Variable A] /= 10 + 0 
+ | |■Set Variable: Sys23:Ruby Font Size = CSelf25[Temp Variable A] + 0 
+ | |■
+ |◇Loop End Point◇◇
+ |■
+-◇Condition:  [2]  [ Sys115:[RO] Game.exe Version (x100) < 220   ] Case↓
+ |■Repeat Loop [ 0 ] Times
+ | |▼ Old Process: In the past, tile size and resolution were proportional, so we determined it using Sys 84.
+ | |■Condition (Number):   [1] Sys84:Screen Resolution (For Old/0-2/-1:Other) ==  0  /  [2] Sys84:Screen Resolution (For Old/0-2/-1:Other) ==  1  /  [3] Sys84:Screen Resolution (For Old/0-2/-1:Other) ==  2  
+ | |-◇Condition:  [1]  [ Sys84:Screen Resolution (For Old/0-2/-1:Other) == 0   ] Case↓
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) =  10
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) =  10
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) =  10
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) =  8
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":7:0 ] (18:System Min Font Size:Number) =  6
+ | | |■Set Variable: Sys8:Base Font Size = 12 + 0 
+ | | |■Set Variable: Sys23:Ruby Font Size = Sys8:Base Font Size / 2 
+ | | |▼ Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale.
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":3:0 ] (18:[×Unused] Coord Scale [x10]:Number) =  10
+ | | |■
+ | |-◇Condition:  [2]  [ Sys84:Screen Resolution (For Old/0-2/-1:Other) == 1   ] Case↓
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) =  20
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) =  20
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) =  20
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) =  16
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":7:0 ] (18:System Min Font Size:Number) =  12
+ | | |■Set Variable: Sys8:Base Font Size = 24 + 0 
+ | | |■Set Variable: Sys23:Ruby Font Size = Sys8:Base Font Size / 2 
+ | | |▼ Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale.
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":3:0 ] (18:[×Unused] Coord Scale [x10]:Number) =  20
+ | | |■
+ | |-◇Condition:  [3]  [ Sys84:Screen Resolution (For Old/0-2/-1:Other) == 2   ] Case↓
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) =  25
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) =  25
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) =  26
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) =  20
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":7:0 ] (18:System Min Font Size:Number) =  15
+ | | |■Set Variable: Sys8:Base Font Size = 30 + 0 
+ | | |■Set Variable: Sys23:Ruby Font Size = Sys8:Base Font Size / 2 
+ | | |▼ Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale.
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":3:0 ] (18:[×Unused] Coord Scale [x10]:Number) =  25
+ | | |■
+ | |◇End◇
+ | |■
+ |◇Loop End Point◇◇
+ |■
+◇End◇
+■Set Variable: CSelf99[Finish Flag] = 1 + 0 
+▼  
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ Initialize other parameters.
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ Enemy/Ally Maximum
+■Write to DB(Var): VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) =  6
+■Write to DB(Var): VarDB[ "Base System Variables":69:0 ] (18:[Battle] Max Enemy Count (System):Number) =  7
+▼ Save Slots
+■Write to DB(Var): VarDB[ "Base System Variables":52:0 ] (18:Save Slots per Page:Number) =  4
+■Write to DB(Var): VarDB[ "Base System Variables":53:0 ] (18:Save Page Count:Number) =  5
+■Write to DB(Var): VarDB[ "Base System Variables":33:0 ] (18:[System] Can Save?:Number) =  1
+▼ System Settings
+■Write to DB(Var): VarDB[ "Base System Variables":56:0 ] (18:[System] Cursor Memory:Number) =  1
+■Write to DB(Var): VarDB[ "Base System Variables":58:0 ] (18:[System] Battle Key Hold:Number) =  0
+■Call Event [Name]: ["X[Map]Set Key Repeat"] <CommonEv 115>  / 2
+▼ Other Basic Game Settings
+■Set Variable: Sys17:Choice Confirm SE (SysDB 3) = 0 + 0 
+■Set Variable: Sys18:Choice Cursor SE (SysDB 3) = 1 + 0 
+■Set Variable: Sys19:Choice Cancel SE (SysDB 3) = 2 + 0 
+■Set Variable: Sys21:Text Shadow? (0:OFF/1+:ON) = 1 + 0 
+■Set Variable: Sys22:Choice Cursor Blend Mode(0:Normal/1:Add) = 1 + 0 
+■Set Variable: Sys9:Message Speed (X char./s) = 500 + 0 
+■Set Variable: Sys37:Distance Between Members (Steps) = 2 + 0 
+■Call Event [Name]: ["X[Map]Update Party Info"] <CommonEv 79> 
+■Repeat Loop [ 1 ] Times
+ |▼ If there are duplicate members, remove them.
+ |■Load DB(Var):  CSelf16[Member Check Count] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
+ |■Set Variable: CSelf17[Member Position] = -1 + 0 
+ |■Repeat Loop [ CSelf16[Member Check Count] ] Times
+ | |■Set Variable: CSelf17[Member Position] += 1 + 0 
+ | |■Call Event [Name]: CSelf19[Temp Ally ID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf17[Member Position]
+ | |■Set Variable: CSelf18[Remaining Check Count] = CSelf16[Member Check Count] - CSelf17[Member Position] 
+ | |■Set Variable: CSelf18[Remaining Check Count] -= 1 + 0 
+ | |■Set Variable: CSelf22[Second Position] = CSelf17[Member Position] + 0 
+ | |■Repeat Loop [ CSelf18[Remaining Check Count] ] Times
+ | | |■Set Variable: CSelf22[Second Position] += 1 + 0 
+ | | |■Call Event [Name]: CSelf23[Second Ally ID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf22[Second Position]
+ | | |■Condition (Number):   [1] CSelf23[Second Ally ID] ==  CSelf19[Temp Ally ID]  
+ | | |-◇Condition:  [1]  [ CSelf23[Second Ally ID] == CSelf19[Temp Ally ID]   ] Case↓
+ | | | |■Call Event [Name]: ["X[Map]Set Ally ID"] <CommonEv 104>  / CSelf22[Second Position] / -1
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇Loop End Point◇◇
+ | |■
+ |◇Loop End Point◇◇
+ |■
+◇Loop End Point◇◇
+▼  
+■Set Transition:  [Instant] 10 Frames (Wait)
+■Move Route: [Skip]  Leader / Set Move Speed -> 3
+■Call Event [Name]: ["X[Map]Update Party Info"] <CommonEv 79> 
+■Call Event [Name]: ["X[Map]Update Party Sprites"] <CommonEv 80> 
+▼  
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ Convert character equipments to Weapons (ID 20000+) or Armor (ID 30000+).
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■Load DB(Var):  CSelf10[Repeat Count] = VarDB[Type "Allies"(0)'s Data Count]
+▼ Loop for all characters.
+■Set Variable: CSelf11[Processing Position] = -1 + 0 
+■Repeat Loop [ CSelf10[Repeat Count] ] Times
+ |■Set Variable: CSelf11[Processing Position] += 1 + 0 
+ |■Load DB(User):  CSelf13[Max Equipment Slots] = UserDB[ "System Settings":0:"Equippable Slots" ] (17:Basic System Settings:22) 
+ |▼ Loop to check each piece of equipment from here.
+ |■Set Variable: CSelf14[Equipment Slot] = -1 + 0 
+ |■Set Variable: CSelf12[Equipment Position (in DB)] = CSelf90[Equipments Check Start Position] - 1 
+ |■Repeat Loop [ CSelf13[Max Equipment Slots] ] Times
+ | |▼ Read the original ID (0-9999).
+ | |■Set Variable: CSelf12[Equipment Position (in DB)] += 1 + 0 
+ | |■Set Variable: CSelf14[Equipment Slot] += 1 + 0 
+ | |■Load DB(Var):  CSelf20[Temp Storage ID] = VarDB[ "Allies":CSelf11[Processing Position]:CSelf12[Equipment Position (in DB)] ] (0:-:-) 
+ | |■Condition (Number):   [1] CSelf14[Equipment Slot] ==  0  /  [2] CSelf14[Equipment Slot] >=  1  
+ | |-◇Condition:  [1]  [ CSelf14[Equipment Slot] == 0   ] Case↓
+ | | |▼ If the ID is 0 or higher, convert it to Weapon ID (20000+).
+ | | |■Condition (Number):   [1] CSelf20[Temp Storage ID] >=  0  
+ | | |-◇Condition:  [1]  [ CSelf20[Temp Storage ID] >= 0   ] Case↓
+ | | | |■Set Variable: CSelf20[Temp Storage ID] = CSelf20[Temp Storage ID] % 10000 
+ | | | |■Set Variable: CSelf20[Temp Storage ID] += 20000 + 0 
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |-◇Condition:  [2]  [ CSelf14[Equipment Slot] >= 1   ] Case↓
+ | | |▼ If the ID is 0 or higher, convert it to Armor ID (30000+).
+ | | |■Condition (Number):   [1] CSelf20[Temp Storage ID] >=  0  
+ | | |-◇Condition:  [1]  [ CSelf20[Temp Storage ID] >= 0   ] Case↓
+ | | | |■Set Variable: CSelf20[Temp Storage ID] = CSelf20[Temp Storage ID] % 10000 
+ | | | |■Set Variable: CSelf20[Temp Storage ID] += 30000 + 0 
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇End◇
+ | |▼ Store again.
+ | |■Write to DB(Var): VarDB[ "Allies":CSelf11[Processing Position]:CSelf12[Equipment Position (in DB)] ] (0:-:-) =  CSelf20[Temp Storage ID]
+ | |■
+ |◇Loop End Point◇◇
+ |▼  
+ |▼ Reset auto-change amount to 0.
+ |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf11[Processing Position]:"[Temp] HP Auto Change" ] (17:-:11) =  0
+ |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf11[Processing Position]:"[Temp] SP Auto Change" ] (17:-:12) =  0
+ |▼ Calculate temporary stats.
+ |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf11[Processing Position]
+ |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf11[Processing Position]
+ |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf11[Processing Position]
+ |▼ Fill up HP and SP.
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf11[Processing Position] / 22:HP / 999999 / 0:No
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf11[Processing Position] / 23:SP / 999999 / 0:No
+ |■
+◇Loop End Point◇◇
+▼  
+■Repeat Loop [ 0 ] Times
+ |▼ Moved up, so commented out with 0 loops.
+ |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ |▼ Get the last-used save slot from System.sav. (System.sav's Normal Variable #0 is used for the last-used save slot).
+ |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ |■Set String: CSelf5 = "Save/System.sav"
+ |■Read Save Data:  CSelf20[Temp Storage ID] = Save Data [CSelf5]'s V0[]
+ |■Set Variable: Sys25:Current Save (0+) = CSelf20[Temp Storage ID] + 0 
+ |■
+◇Loop End Point◇◇
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ Ver.3.16  Changed the initial volume to 60 and corrected the font weight.
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■Set Variable: Sys100:BGM Volume Multiplier [%] = 60 + 0 
+■Set Variable: Sys101:BGS Volume Multiplier [%] = 60 + 0 
+■Set Variable: Sys102:SE Volume Multiplier [%] = 60 + 0 
+■Set Variable: Sys125:Font Thickness (1-10) = 6 + 0 
+▼  
+▼  
+■Wait: 1 Frames
+■
+[COMMAND_TEXT_END]

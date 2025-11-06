@@ -1,0 +1,329 @@
+COMMON_ID=58
+COMMON_NAME=X[Com]Add/Remove Skill
+COMMAND_COLOR=6
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=3
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=Ally ID
+VALINPUT_NAME_1=Skill ID
+VALINPUT_NAME_2=Learn? Forget?
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=0
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=0
+LOADTYPE2=0
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=4
+CHOICE_STR_1_0=武器欄装備を表示
+CHOICE_STR_1_1=防具1欄装備を表示
+CHOICE_STR_1_2=防具2欄装備を表示
+CHOICE_STR_1_3=防具3欄装備を表示
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=4
+CHOICE_VAL_1_0=0
+CHOICE_VAL_1_1=1
+CHOICE_VAL_1_2=2
+CHOICE_VAL_1_3=4
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=
+RETURN_VAL_TARGET=-1
+CSELF_NAME_0=Ally ID
+CSELF_NAME_1=Skill ID
+CSELF_NAME_2=Learn? Forget?
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=
+CSELF_NAME_9=
+CSELF_NAME_10=Temp Variable A
+CSELF_NAME_11=Temp Variable B
+CSELF_NAME_12=Temp Variable C
+CSELF_NAME_13=
+CSELF_NAME_14=
+CSELF_NAME_15=Empty Slot
+CSELF_NAME_16=
+CSELF_NAME_17=
+CSELF_NAME_18=
+CSELF_NAME_19=
+CSELF_NAME_20=
+CSELF_NAME_21=
+CSELF_NAME_22=
+CSELF_NAME_23=
+CSELF_NAME_24=
+CSELF_NAME_25=
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=
+CSELF_NAME_29=
+CSELF_NAME_30=
+CSELF_NAME_31=
+CSELF_NAME_32=
+CSELF_NAME_33=
+CSELF_NAME_34=
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=
+CSELF_NAME_41=
+CSELF_NAME_42=
+CSELF_NAME_43=
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=
+CSELF_NAME_89=
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=
+COMMAND_NUM=76
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("  This common event is used to make the ally learn or forget skills through an event.")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[111][7,0]<0>(2,1600002,0,2,1600002,1,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("For learning, check if the skill is already learned (or if it can be learned in the future).")
+[121][4,0]<1>(1600010,-1,0,0)()
+[103][0,1]<1>()("CSelf15: Variable for storing the first empty slot found")
+[121][4,0]<1>(1600015,-1,0,0)()
+[250][5,4]<1>(1,1600000,-1,69632,1600011)("","┣ Skill Learning Lv","","")
+[170][0,0]<1>()()
+[121][4,0]<2>(1600010,2,0,256)()
+[111][4,0]<2>(1,1600010,1600011,1)()
+[401][1,0]<2>(1)()
+[171][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[103][0,1]<2>()("If the skill to learn is found, set its learning level to 0.")
+[250][5,4]<2>(1,1600000,1600010,69632,1600012)("","┣ Skill Learning Lv","","")
+[111][4,0]<2>(1,1600012,1600001,2)()
+[401][1,0]<2>(1)()
+[121][4,0]<3>(1600010,-1,0,256)()
+[103][0,1]<3>()("Set the learning level to 0 (learned), then end.")
+[250][5,4]<3>(1,1600000,1600010,65536,0)("","┣ Skill Learning Lv","","")
+[172][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[103][0,1]<2>()("When the first field where <dqrt>Skill to Learn<dqrt> is <dqrt>None<dqrt> is found, store it.")
+[111][4,0]<2>(1,1600012,-1,3)()
+[401][1,0]<2>(1)()
+[111][4,0]<3>(1,1600015,-1,2)()
+[401][1,0]<3>(1)()
+[121][4,0]<4>(1600015,1600010,0,0)()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[103][0,1]<1>()("If the skill to learn is not found, add it to the empty slot.")
+[111][4,0]<1>(1,1600015,0,1)()
+[401][1,0]<1>(1)()
+[250][5,0]<2>(1,1600000,1600015,0,1600001)()
+[121][4,0]<2>(1600015,-1,0,256)()
+[250][5,0]<2>(1,1600000,1600015,0,0)()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[103][0,1]<1>()("For forgetting, erase the skill wherever it's found.")
+[121][4,0]<1>(1600010,-1,0,0)()
+[250][5,4]<1>(1,1600000,-1,69632,1600011)("","┣ Skill Learning Lv","","")
+[170][0,0]<1>()()
+[121][4,0]<2>(1600010,2,0,256)()
+[111][4,0]<2>(1,1600010,1600011,1)()
+[401][1,0]<2>(1)()
+[171][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[103][0,1]<2>()("If the skill to forget is found, erase it.")
+[250][5,4]<2>(1,1600000,1600010,69632,1600012)("","┣ Skill Learning Lv","","")
+[111][4,0]<2>(1,1600012,1600001,2)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("Set the skill found and its learning level to -1.")
+[121][4,0]<3>(1600010,-1,0,256)()
+[250][5,4]<3>(1,1600000,1600010,65536,-1)("","┣ Skill Learning Lv","","")
+[121][4,0]<3>(1600010,1,0,256)()
+[250][5,4]<3>(1,1600000,1600010,65536,-1)("","┣ Skill Learning Lv","","")
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Process Overview]
+▼   This common event is used to make the ally learn or forget skills through an event.
+▼ ―――――――――――――――――――――――――――――――――――
+■Condition (Number):   [1] CSelf2[Learn? Forget?] ==  0  /  [2] CSelf2[Learn? Forget?] ==  1  
+-◇Condition:  [1]  [ CSelf2[Learn? Forget?] == 0   ] Case↓
+ |▼ For learning, check if the skill is already learned (or if it can be learned in the future).
+ |■Set Variable: CSelf10[Temp Variable A] = -1 + 0 
+ |▼ CSelf15: Variable for storing the first empty slot found
+ |■Set Variable: CSelf15[Empty Slot] = -1 + 0 
+ |■Load DB(Var):  CSelf11[Temp Variable B] = VarDB[Type "┣ Skill Learning Lv"(1)'s Field Count]
+ |■Loop Start
+ | |■Set Variable: CSelf10[Temp Variable A] += 2 + 0 
+ | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  CSelf11[Temp Variable B]  
+ | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= CSelf11[Temp Variable B]   ] Case↓
+ | | |■Break Loop
+ | | |■
+ | |◇End◇
+ | |▼ If the skill to learn is found, set its learning level to 0.
+ | |■Load DB(Var):  CSelf12[Temp Variable C] = VarDB[ "┣ Skill Learning Lv":CSelf0[Ally ID]:CSelf10[Temp Variable A] ] (1:-:-) 
+ | |■Condition (Number):   [1] CSelf12[Temp Variable C] ==  CSelf1[Skill ID]  
+ | |-◇Condition:  [1]  [ CSelf12[Temp Variable C] == CSelf1[Skill ID]   ] Case↓
+ | | |■Set Variable: CSelf10[Temp Variable A] += -1 + 0 
+ | | |▼ Set the learning level to 0 (learned), then end.
+ | | |■Write to DB(Var): VarDB[ "┣ Skill Learning Lv":CSelf0[Ally ID]:CSelf10[Temp Variable A] ] (1:-:-) =  0
+ | | |■Exit Event
+ | | |■
+ | |◇End◇
+ | |▼ When the first field where "Skill to Learn" is "None" is found, store it.
+ | |■Condition (Number):   [1] CSelf12[Temp Variable C] <=  -1  
+ | |-◇Condition:  [1]  [ CSelf12[Temp Variable C] <= -1   ] Case↓
+ | | |■Condition (Number):   [1] CSelf15[Empty Slot] ==  -1  
+ | | |-◇Condition:  [1]  [ CSelf15[Empty Slot] == -1   ] Case↓
+ | | | |■Set Variable: CSelf15[Empty Slot] = CSelf10[Temp Variable A] + 0 
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇End◇
+ | |■
+ |◇Loop End Point◇◇
+ |▼ If the skill to learn is not found, add it to the empty slot.
+ |■Condition (Number):   [1] CSelf15[Empty Slot] >=  0  
+ |-◇Condition:  [1]  [ CSelf15[Empty Slot] >= 0   ] Case↓
+ | |■Write to DB(Var): VarDB[ 1:CSelf0[Ally ID]:CSelf15[Empty Slot] ] (┣ Skill Learning Lv:-:-) =  CSelf1[Skill ID]
+ | |■Set Variable: CSelf15[Empty Slot] += -1 + 0 
+ | |■Write to DB(Var): VarDB[ 1:CSelf0[Ally ID]:CSelf15[Empty Slot] ] (┣ Skill Learning Lv:-:-) =  0
+ | |■
+ |◇End◇
+ |■
+-◇Condition:  [2]  [ CSelf2[Learn? Forget?] == 1   ] Case↓
+ |▼ For forgetting, erase the skill wherever it's found.
+ |■Set Variable: CSelf10[Temp Variable A] = -1 + 0 
+ |■Load DB(Var):  CSelf11[Temp Variable B] = VarDB[Type "┣ Skill Learning Lv"(1)'s Field Count]
+ |■Loop Start
+ | |■Set Variable: CSelf10[Temp Variable A] += 2 + 0 
+ | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  CSelf11[Temp Variable B]  
+ | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= CSelf11[Temp Variable B]   ] Case↓
+ | | |■Break Loop
+ | | |■
+ | |◇End◇
+ | |▼ If the skill to forget is found, erase it.
+ | |■Load DB(Var):  CSelf12[Temp Variable C] = VarDB[ "┣ Skill Learning Lv":CSelf0[Ally ID]:CSelf10[Temp Variable A] ] (1:-:-) 
+ | |■Condition (Number):   [1] CSelf12[Temp Variable C] ==  CSelf1[Skill ID]  
+ | |-◇Condition:  [1]  [ CSelf12[Temp Variable C] == CSelf1[Skill ID]   ] Case↓
+ | | |▼ Set the skill found and its learning level to -1.
+ | | |■Set Variable: CSelf10[Temp Variable A] += -1 + 0 
+ | | |■Write to DB(Var): VarDB[ "┣ Skill Learning Lv":CSelf0[Ally ID]:CSelf10[Temp Variable A] ] (1:-:-) =  -1
+ | | |■Set Variable: CSelf10[Temp Variable A] += 1 + 0 
+ | | |■Write to DB(Var): VarDB[ "┣ Skill Learning Lv":CSelf0[Ally ID]:CSelf10[Temp Variable A] ] (1:-:-) =  -1
+ | | |■
+ | |◇End◇
+ | |■
+ |◇Loop End Point◇◇
+ |■
+◇End◇
+■
+[COMMAND_TEXT_END]

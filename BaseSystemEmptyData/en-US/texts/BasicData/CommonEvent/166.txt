@@ -1,0 +1,435 @@
+COMMON_ID=166
+COMMON_NAME=X[Bat]    ┗ Check Counter
+COMMAND_COLOR=6
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=3
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=対象ｽﾛｯﾄ
+VALINPUT_NAME_1=技能番号
+VALINPUT_NAME_2=発動者スロット
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=0
+LOADTYPE2=0
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=0
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=0
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=ｶｳﾝﾀｰ[状態]
+RETURN_VAL_TARGET=99
+CSELF_NAME_0=対象ｽﾛｯﾄ
+CSELF_NAME_1=技能番号
+CSELF_NAME_2=発動者スロット
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=キャラ名
+CSELF_NAME_9=一時項目名
+CSELF_NAME_10=一時変数A
+CSELF_NAME_11=一時変数B
+CSELF_NAME_12=一時変数C
+CSELF_NAME_13=一時変数D
+CSELF_NAME_14=発動アイテムチェック
+CSELF_NAME_15=
+CSELF_NAME_16=発動スロット
+CSELF_NAME_17=技能コード
+CSELF_NAME_18=対象者
+CSELF_NAME_19=装備の有無
+CSELF_NAME_20=武器番号
+CSELF_NAME_21=
+CSELF_NAME_22=
+CSELF_NAME_23=注目位置
+CSELF_NAME_24=状態最大数
+CSELF_NAME_25=状態ターン
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=発動属性
+CSELF_NAME_29=カウンター有り？
+CSELF_NAME_30=攻撃力の影響有り？
+CSELF_NAME_31=精神攻撃の影響有り？
+CSELF_NAME_32=確率
+CSELF_NAME_33=
+CSELF_NAME_34=
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=チェック属性1
+CSELF_NAME_41=チェック属性2
+CSELF_NAME_42=チェック属性3
+CSELF_NAME_43=
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=
+CSELF_NAME_89=
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=カウンターする状態番号
+COMMAND_NUM=133
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("　対象スロットの「状態」を全部チェックして、一つずつカウンター率判定。")
+[103][0,1]<0>()("　一個でも発動したのがあればその番号を返す。")
+[103][0,1]<0>()("")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("対象スロット　技能番号　発動スロット（属性取得用）")
+[103][0,1]<0>()("攻撃者の属性を計算し、カウンターに反応するかチェック")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[121][4,0]<0>(1600099,-1,0,0)()
+[103][0,1]<0>()("まず攻撃された側が戦闘不能でないかチェック")
+[300][5,1]<0>(0,16777218,1600000,0,1600010)("X[Bat]Get Basic State")
+[111][4,0]<0>(1,1600010,1,1)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("戦闘不能なら終了")
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[103][0,1]<0>()("発動者が戦闘不能でないかチェック")
+[300][5,1]<0>(0,16777218,1600002,0,1600010)("X[Bat]Get Basic State")
+[111][4,0]<0>(1,1600010,1,1)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("戦闘不能なら終了")
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[103][0,1]<0>()("まずは攻撃者の属性を得る")
+[121][5,0]<0>(1600040,-1,0,65536,2)()
+[250][5,4]<0>(0,1600001,17,332288,1600040)("","Skills","","Element")
+[103][0,1]<0>()("武器があればその属性も付与")
+[250][5,4]<0>(11,1600002,64,331776,1600020)("","×┏Battle Temp Status","","[Temp] Weapon in Use")
+[111][4,0]<0>(1,1600020,0,1)()
+[401][1,0]<0>(1)()
+[250][5,4]<1>(3,1600020,28,332288,1600041)("","Weapons","","Element 1")
+[250][5,4]<1>(3,1600020,29,332288,1600042)("","Weapons","","Element 2")
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[103][0,1]<0>()("受けた技能に攻撃力と精神攻撃力が影響するか取得")
+[250][5,4]<0>(0,1600001,10,332288,1600030)("","Skills","","┣ Attack Influence [%]           ")
+[250][5,4]<0>(0,1600001,11,332288,1600031)("","Skills","","┣ Magic Influence [%]           ")
+[121][5,0]<0>(1600030,0,0,67072,1)()
+[121][5,0]<0>(1600030,1,0,67328,1)()
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("　そのキャラの状態を全部チェックし、該当属性で発動するカウンターがあるかチェック")
+[103][0,1]<0>()("　一つでも発動したらその時点で終了する")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[250][5,4]<0>(8,-1,64,70144,1600024)("","States","","")
+[121][4,0]<0>(1600023,-1,0,0)()
+[179][1,0]<0>(1600024)()
+[121][4,0]<1>(1600023,1,0,256)()
+[250][5,4]<1>(14,1600000,1600023,69632,1600025)("","×┣State List","","")
+[111][4,0]<1>(1,1600025,0,5)()
+[401][1,0]<1>(1)()
+[103][0,1]<2>()("【１】カウンター技能がなければ次へ")
+[250][5,4]<2>(8,1600023,40,332288,1600029)("","States","","Counterattack? (with Skill)     ")
+[111][7,0]<2>(2,1600029,-1,2,1600029,-2,2)()
+[401][1,0]<2>(1)()
+[176][0,0]<3>()()
+[0][0,0]<3>()()
+[401][1,0]<2>(2)()
+[176][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[103][0,1]<2>()("【２】属性が一致するかチェック")
+[250][5,4]<2>(8,1600023,40,332288,1600028)("","States","","┣ Trigger on Element Hit        ")
+[111][10,0]<2>(19,1600028,-1,2,1600028,-2,2,1600028,-3,2)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("何でも")
+[103][0,1]<3>()("　特に制限しないので確率判定へ")
+[0][0,0]<3>()()
+[401][1,0]<2>(2)()
+[103][0,1]<3>()("攻撃HPダメージ")
+[111][4,0]<3>(1,1600030,0,3)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("影響度が0なら次へ")
+[176][0,0]<4>()()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[401][1,0]<2>(3)()
+[103][0,1]<3>()("精神HPダメージ")
+[111][4,0]<3>(1,1600031,0,3)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("影響度が0なら次へ")
+[176][0,0]<4>()()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[420][1,0]<2>(0)()
+[111][4,0]<3>(1,1600028,0,1)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("属性が一致するかチェック")
+[111][10,0]<4>(19,1600028,1600040,2,1600028,1600041,2,1600028,1600042,2)()
+[401][1,0]<4>(1)()
+[103][0,1]<5>()("　一致するので確率判定へ")
+[0][0,0]<5>()()
+[401][1,0]<4>(2)()
+[103][0,1]<5>()("　一致するので確率判定へ")
+[0][0,0]<5>()()
+[401][1,0]<4>(3)()
+[103][0,1]<5>()("　一致するので確率判定へ")
+[0][0,0]<5>()()
+[420][1,0]<4>(0)()
+[103][0,1]<5>()("チェック属性のどれでもなければ次へ")
+[176][0,0]<5>()()
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[103][0,1]<2>()("【３】確率判定")
+[250][5,4]<2>(8,1600023,42,332288,1600032)("","States","","┣ Counter Trigger Rate [%]    ")
+[121][4,0]<2>(1600032,0,99,25088)()
+[111][4,0]<2>(1,1600032,1,1)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("カウンター発動に成功。この属性番号を返して処理を終了する。")
+[121][4,0]<3>(1600099,1600023,0,0)()
+[172][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Process Overview]
+▼ 　対象スロットの「状態」を全部チェックして、一つずつカウンター率判定。
+▼ 　一個でも発動したのがあればその番号を返す。
+▼ 
+▼ [Databases Accessed by This Common Event]
+▼  
+▼ [Other Common Events Called from Here]
+▼  
+▼ [Main Common Events Calling This]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ 対象スロット　技能番号　発動スロット（属性取得用）
+▼ 攻撃者の属性を計算し、カウンターに反応するかチェック
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■Set Variable: CSelf99[カウンターする状態番号] = -1 + 0 
+▼ まず攻撃された側が戦闘不能でないかチェック
+■Call Event [Name]: CSelf10[一時変数A] = ["X[Bat]Get Basic State"] <CommonEv 176>  / CSelf0[対象ｽﾛｯﾄ] / 0:戦闘不能状態
+■Condition (Number):   [1] CSelf10[一時変数A] >=  1  
+-◇Condition:  [1]  [ CSelf10[一時変数A] >= 1   ] Case↓
+ |▼ 戦闘不能なら終了
+ |■Exit Event
+ |■
+◇End◇
+▼ 発動者が戦闘不能でないかチェック
+■Call Event [Name]: CSelf10[一時変数A] = ["X[Bat]Get Basic State"] <CommonEv 176>  / CSelf2[発動者スロット] / 0:戦闘不能状態
+■Condition (Number):   [1] CSelf10[一時変数A] >=  1  
+-◇Condition:  [1]  [ CSelf10[一時変数A] >= 1   ] Case↓
+ |▼ 戦闘不能なら終了
+ |■Exit Event
+ |■
+◇End◇
+▼ まずは攻撃者の属性を得る
+■Set Variable: CSelf40[チェック属性1] to CSelf42[チェック属性3] = -1 + 0 
+■Load DB(User):  CSelf40[チェック属性1] = UserDB[ "Skills":CSelf1[技能番号]:"Element" ] (0:-:17) 
+▼ 武器があればその属性も付与
+■Load DB(Var):  CSelf20[武器番号] = VarDB[ "×┏Battle Temp Status":CSelf2[発動者スロット]:"[Temp] Weapon in Use" ] (10:-:66) 
+■Condition (Number):   [1] CSelf20[武器番号] >=  0  
+-◇Condition:  [1]  [ CSelf20[武器番号] >= 0   ] Case↓
+ |■Load DB(User):  CSelf41[チェック属性2] = UserDB[ "Weapons":CSelf20[武器番号]:"Element 1" ] (3:-:28) 
+ |■Load DB(User):  CSelf42[チェック属性3] = UserDB[ "Weapons":CSelf20[武器番号]:"Element 2" ] (3:-:29) 
+ |■
+◇End◇
+▼ 受けた技能に攻撃力と精神攻撃力が影響するか取得
+■Load DB(User):  CSelf30[攻撃力の影響有り？] = UserDB[ "Skills":CSelf1[技能番号]:"┣ Attack Influence [%]           " ] (0:-:10) 
+■Load DB(User):  CSelf31[精神攻撃の影響有り？] = UserDB[ "Skills":CSelf1[技能番号]:"┣ Magic Influence [%]           " ] (0:-:11) 
+■Set Variable: CSelf30[攻撃力の影響有り？] to CSelf31[精神攻撃の影響有り？] Lower Bound= 0 + 0 
+■Set Variable: CSelf30[攻撃力の影響有り？] to CSelf31[精神攻撃の影響有り？] Upper Bound= 1 + 0 
+▼  
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ 　そのキャラの状態を全部チェックし、該当属性で発動するカウンターがあるかチェック
+▼ 　一つでも発動したらその時点で終了する
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■Load DB(User):  CSelf24[状態最大数] = UserDB[Type "States"(8)'s Data Count]
+■Set Variable: CSelf23[注目位置] = -1 + 0 
+■Repeat Loop [ CSelf24[状態最大数] ] Times
+ |■Set Variable: CSelf23[注目位置] += 1 + 0 
+ |■Load DB(Var):  CSelf25[状態ターン] = VarDB[ "×┣State List":CSelf0[対象ｽﾛｯﾄ]:CSelf23[注目位置] ] (13:-:-) 
+ |■Condition (Number):   [1] CSelf25[状態ターン] !=  0  
+ |-◇Condition:  [1]  [ CSelf25[状態ターン] != 0   ] Case↓
+ | |▼ 【１】カウンター技能がなければ次へ
+ | |■Load DB(User):  CSelf29[カウンター有り？] = UserDB[ "States":CSelf23[注目位置]:"Counterattack? (with Skill)     " ] (8:-:40) 
+ | |■Condition (Number):   [1] CSelf29[カウンター有り？] ==  -1  /  [2] CSelf29[カウンター有り？] ==  -2  
+ | |-◇Condition:  [1]  [ CSelf29[カウンター有り？] == -1   ] Case↓
+ | | |■Go to Loop Start
+ | | |■
+ | |-◇Condition:  [2]  [ CSelf29[カウンター有り？] == -2   ] Case↓
+ | | |■Go to Loop Start
+ | | |■
+ | |◇End◇
+ | |▼ 【２】属性が一致するかチェック
+ | |■Load DB(User):  CSelf28[発動属性] = UserDB[ "States":CSelf23[注目位置]:"┣ Trigger on Element Hit        " ] (8:-:41) 
+ | |■Condition (Number):   [1] CSelf28[発動属性] ==  -1  /  [2] CSelf28[発動属性] ==  -2  /  [3] CSelf28[発動属性] ==  -3  
+ | |-◇Condition:  [1]  [ CSelf28[発動属性] == -1   ] Case↓
+ | | |▼ 何でも
+ | | |▼ 　特に制限しないので確率判定へ
+ | | |■
+ | |-◇Condition:  [2]  [ CSelf28[発動属性] == -2   ] Case↓
+ | | |▼ 攻撃HPダメージ
+ | | |■Condition (Number):   [1] CSelf30[攻撃力の影響有り？] <=  0  
+ | | |-◇Condition:  [1]  [ CSelf30[攻撃力の影響有り？] <= 0   ] Case↓
+ | | | |▼ 影響度が0なら次へ
+ | | | |■Go to Loop Start
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |-◇Condition:  [3]  [ CSelf28[発動属性] == -3   ] Case↓
+ | | |▼ 精神HPダメージ
+ | | |■Condition (Number):   [1] CSelf31[精神攻撃の影響有り？] <=  0  
+ | | |-◇Condition:  [1]  [ CSelf31[精神攻撃の影響有り？] <= 0   ] Case↓
+ | | | |▼ 影響度が0なら次へ
+ | | | |■Go to Loop Start
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |-◇Else
+ | | |■Condition (Number):   [1] CSelf28[発動属性] >=  0  
+ | | |-◇Condition:  [1]  [ CSelf28[発動属性] >= 0   ] Case↓
+ | | | |▼ 属性が一致するかチェック
+ | | | |■Condition (Number):   [1] CSelf28[発動属性] ==  CSelf40[チェック属性1]  /  [2] CSelf28[発動属性] ==  CSelf41[チェック属性2]  /  [3] CSelf28[発動属性] ==  CSelf42[チェック属性3]  
+ | | | |-◇Condition:  [1]  [ CSelf28[発動属性] == CSelf40[チェック属性1]   ] Case↓
+ | | | | |▼ 　一致するので確率判定へ
+ | | | | |■
+ | | | |-◇Condition:  [2]  [ CSelf28[発動属性] == CSelf41[チェック属性2]   ] Case↓
+ | | | | |▼ 　一致するので確率判定へ
+ | | | | |■
+ | | | |-◇Condition:  [3]  [ CSelf28[発動属性] == CSelf42[チェック属性3]   ] Case↓
+ | | | | |▼ 　一致するので確率判定へ
+ | | | | |■
+ | | | |-◇Else
+ | | | | |▼ チェック属性のどれでもなければ次へ
+ | | | | |■Go to Loop Start
+ | | | | |■
+ | | | |◇End◇
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇End◇
+ | |▼ 【３】確率判定
+ | |■Load DB(User):  CSelf32[確率] = UserDB[ "States":CSelf23[注目位置]:"┣ Counter Trigger Rate [%]    " ] (8:-:42) 
+ | |■Set Variable: CSelf32[確率] -= 0  to  99 
+ | |■Condition (Number):   [1] CSelf32[確率] >=  1  
+ | |-◇Condition:  [1]  [ CSelf32[確率] >= 1   ] Case↓
+ | | |▼ カウンター発動に成功。この属性番号を返して処理を終了する。
+ | | |■Set Variable: CSelf99[カウンターする状態番号] = CSelf23[注目位置] + 0 
+ | | |■Exit Event
+ | | |■
+ | |◇End◇
+ | |■
+ |◇End◇
+ |■
+◇Loop End Point◇◇
+■
+[COMMAND_TEXT_END]

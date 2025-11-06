@@ -1,0 +1,345 @@
+COMMON_ID=201
+COMMON_NAME=X┗◆Battle End Process
+COMMAND_COLOR=6
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=0
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=
+VALINPUT_NAME_1=
+VALINPUT_NAME_2=
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=0
+LOADTYPE2=0
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=0
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=0
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=
+RETURN_VAL_TARGET=-1
+CSELF_NAME_0=
+CSELF_NAME_1=
+CSELF_NAME_2=
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=
+CSELF_NAME_9=
+CSELF_NAME_10=一時変数
+CSELF_NAME_11=
+CSELF_NAME_12=
+CSELF_NAME_13=
+CSELF_NAME_14=
+CSELF_NAME_15=
+CSELF_NAME_16=
+CSELF_NAME_17=
+CSELF_NAME_18=戦闘不能の扱い
+CSELF_NAME_19=戦闘後HP・SPの扱い
+CSELF_NAME_20=対象ID
+CSELF_NAME_21=パーティ人数
+CSELF_NAME_22=
+CSELF_NAME_23=
+CSELF_NAME_24=
+CSELF_NAME_25=
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=
+CSELF_NAME_29=
+CSELF_NAME_30=
+CSELF_NAME_31=
+CSELF_NAME_32=
+CSELF_NAME_33=
+CSELF_NAME_34=
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=一時HP
+CSELF_NAME_41=一時SP
+CSELF_NAME_42=
+CSELF_NAME_43=
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=
+CSELF_NAME_89=
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=
+COMMAND_NUM=88
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("　戦闘の後処理です、BGMや画面を戻したりします。")
+[103][0,1]<0>()("")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[121][4,0]<0>(9000059,0,0,0)()
+[121][4,0]<0>(9000060,0,0,0)()
+[103][0,1]<0>()("全スロットを消去")
+[103][0,1]<0>()("味方を消去")
+[121][4,0]<0>(1600010,-1,0,0)()
+[250][5,4]<0>(20,4,0,69632,1600020)("","Base System Variables","","")
+[179][1,0]<0>(1600020)()
+[121][4,0]<1>(1600010,1,0,256)()
+[300][5,1]<1>(0,3,-1,1600010,1600010)("X[Bat]Ally Box: Draw One")
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[103][0,1]<0>()("敵を消去")
+[250][5,4]<0>(21,69,0,69632,1600021)("","Base System Variables","","")
+[121][4,0]<0>(1600010,9,0,0)()
+[179][1,0]<0>(1600021)()
+[121][4,0]<1>(1600010,1,0,256)()
+[300][4,1]<1>(0,2,-1,1600010)("X[Bat]Enemy: Draw One")
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("戦闘後パラメータ更新")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[121][4,0]<0>(1600010,-1,0,0)()
+[250][5,4]<0>(20,4,0,69632,1600021)("","Base System Variables","","")
+[179][1,0]<0>(1600021)()
+[121][4,0]<1>(1600010,1,0,256)()
+[300][4,1]<1>(0,16777217,1600010,1600020)("X[Bat]Get Ally ID in Slot")
+[111][4,0]<1>(1,1600020,-1,3)()
+[401][1,0]<1>(1)()
+[176][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[179][1,0]<1>(1)()
+[103][0,1]<2>()("もし戦闘不能を自動回復するシステムの場合は戦闘不能解除")
+[250][5,4]<2>(17,0,21,332288,1600018)("","System Settings","","Fainted Members After Battle")
+[111][4,0]<2>(1,1600018,1,2)()
+[401][1,0]<2>(1)()
+[250][5,4]<3>(4,1600020,0,65536,0)("","┗ State List","","")
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[179][1,0]<1>(1)()
+[103][0,1]<2>()("戦闘後HP・SP補正")
+[250][5,4]<2>(17,0,20,332288,1600019)("","System Settings","","HP/SP After Battle")
+[111][4,0]<2>(1,1600019,1,1)()
+[401][1,0]<2>(1)()
+[111][4,0]<3>(1,1600019,1,6)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("HPが全快する場合")
+[250][5,4]<4>(17,1600020,0,331776,1600040)("","×Allies Temp Data","","[Temp] Post-Calc Max HP")
+[250][5,4]<4>(0,1600020,6,327680,1600040)("","Allies","","HP")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[111][4,0]<3>(1,1600019,2,6)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("SPが全快する場合")
+[250][5,4]<4>(17,1600020,1,331776,1600041)("","×Allies Temp Data","","[Temp] Post-Calc Max SP")
+[250][5,4]<4>(0,1600020,8,327680,1600041)("","Allies","","SP")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[300][3,1]<1>(0,1,1600020)("X[Map]CalcTempStats <Initialize>")
+[300][3,1]<1>(0,1,1600020)("X[Map]CalcTempStats <Equipments>")
+[300][3,1]<1>(0,1,1600020)("X[Map]CalcTempStats <StatusEffects>")
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("全体エフェクトを解除")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[300][4,1]<0>(0,16777217,30,1600010)("X[Com]Calc Spd-Up Wait Frames")
+[103][0,1]<0>()(" ")
+[300][3,1]<0>(0,1,-1)("X[Bat]Draw Background")
+[180][1,0]<0>(1600010)()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Process Overview]
+▼ 　戦闘の後処理です、BGMや画面を戻したりします。
+▼ 
+▼ [Databases Accessed by This Common Event]
+▼  
+▼ [Other Common Events Called from Here]
+▼  
+▼ [Main Common Events Calling This]
+▼ ―――――――――――――――――――――――――――――――――――
+■Set Variable: Sys59:Repeat Confirm Key? (1:ON) = 0 + 0 
+■Set Variable: Sys60:Repeat Cancel Key? (1:ON) = 0 + 0 
+▼ 全スロットを消去
+▼ 味方を消去
+■Set Variable: CSelf10[一時変数] = -1 + 0 
+■Load DB(Var):  CSelf20[対象ID] = VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) 
+■Repeat Loop [ CSelf20[対象ID] ] Times
+ |■Set Variable: CSelf10[一時変数] += 1 + 0 
+ |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / -1:消去 / CSelf10[一時変数] / CSelf10[一時変数]
+ |■
+◇Loop End Point◇◇
+▼ 敵を消去
+■Load DB(Var):  CSelf21[パーティ人数] = VarDB[ "Base System Variables":69:0 ] (18:[Battle] Max Enemy Count (System):Number) 
+■Set Variable: CSelf10[一時変数] = 9 + 0 
+■Repeat Loop [ CSelf21[パーティ人数] ] Times
+ |■Set Variable: CSelf10[一時変数] += 1 + 0 
+ |■Call Event [Name]: ["X[Bat]Enemy: Draw One"] <CommonEv 179>  / -1:消去 / CSelf10[一時変数]
+ |■
+◇Loop End Point◇◇
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ 戦闘後パラメータ更新
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■Set Variable: CSelf10[一時変数] = -1 + 0 
+■Load DB(Var):  CSelf21[パーティ人数] = VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) 
+■Repeat Loop [ CSelf21[パーティ人数] ] Times
+ |■Set Variable: CSelf10[一時変数] += 1 + 0 
+ |■Call Event [Name]: CSelf20[対象ID] = ["X[Bat]Get Ally ID in Slot"] <CommonEv 141>  / CSelf10[一時変数]
+ |■Condition (Number):   [1] CSelf20[対象ID] <=  -1  
+ |-◇Condition:  [1]  [ CSelf20[対象ID] <= -1   ] Case↓
+ | |■Go to Loop Start
+ | |■
+ |◇End◇
+ |■Repeat Loop [ 1 ] Times
+ | |▼ もし戦闘不能を自動回復するシステムの場合は戦闘不能解除
+ | |■Load DB(User):  CSelf18[戦闘不能の扱い] = UserDB[ "System Settings":0:"Fainted Members After Battle" ] (17:Basic System Settings:21) 
+ | |■Condition (Number):   [1] CSelf18[戦闘不能の扱い] ==  1  
+ | |-◇Condition:  [1]  [ CSelf18[戦闘不能の扱い] == 1   ] Case↓
+ | | |■Write to DB(Var): VarDB[ "┗ State List":CSelf20[対象ID]:0 ] (5:-:\udb[8:0] Steps Left) =  0
+ | | |■
+ | |◇End◇
+ | |■
+ |◇Loop End Point◇◇
+ |■Repeat Loop [ 1 ] Times
+ | |▼ 戦闘後HP・SP補正
+ | |■Load DB(User):  CSelf19[戦闘後HP・SPの扱い] = UserDB[ "System Settings":0:"HP/SP After Battle" ] (17:Basic System Settings:20) 
+ | |■Condition (Number):   [1] CSelf19[戦闘後HP・SPの扱い] >=  1  
+ | |-◇Condition:  [1]  [ CSelf19[戦闘後HP・SPの扱い] >= 1   ] Case↓
+ | | |■Condition (Number):   [1] CSelf19[戦闘後HP・SPの扱い] &  1  
+ | | |-◇Condition:  [1]  [ CSelf19[戦闘後HP・SPの扱い] & 1   ] Case↓
+ | | | |▼ HPが全快する場合
+ | | | |■Load DB(Var):  CSelf40[一時HP] = VarDB[ "×Allies Temp Data":CSelf20[対象ID]:"[Temp] Post-Calc Max HP" ] (17:-:0) 
+ | | | |■Write to DB(Var): VarDB[ "Allies":CSelf20[対象ID]:"HP" ] (0:-:6) =  CSelf40[一時HP]
+ | | | |■
+ | | |◇End◇
+ | | |■Condition (Number):   [1] CSelf19[戦闘後HP・SPの扱い] &  2  
+ | | |-◇Condition:  [1]  [ CSelf19[戦闘後HP・SPの扱い] & 2   ] Case↓
+ | | | |▼ SPが全快する場合
+ | | | |■Load DB(Var):  CSelf41[一時SP] = VarDB[ "×Allies Temp Data":CSelf20[対象ID]:"[Temp] Post-Calc Max SP" ] (17:-:1) 
+ | | | |■Write to DB(Var): VarDB[ "Allies":CSelf20[対象ID]:"SP" ] (0:-:8) =  CSelf41[一時SP]
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇End◇
+ | |■
+ |◇Loop End Point◇◇
+ |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf20[対象ID]
+ |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf20[対象ID]
+ |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf20[対象ID]
+ |■
+◇Loop End Point◇◇
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ 全体エフェクトを解除
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■Call Event [Name]: CSelf10[一時変数] = ["X[Com]Calc Spd-Up Wait Frames"] <CommonEv 61>  / 30
+▼  
+■Call Event [Name]: ["X[Bat]Draw Background"] <CommonEv 180>  / -1:消去
+■Wait: CSelf10[一時変数] Frames
+■
+[COMMAND_TEXT_END]

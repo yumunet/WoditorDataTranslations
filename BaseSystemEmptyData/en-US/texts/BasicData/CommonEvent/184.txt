@@ -1,0 +1,363 @@
+COMMON_ID=184
+COMMON_NAME=X[Bat]Display Warning Message
+COMMAND_COLOR=5
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=1
+STRINPUT_NUM=1
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=処理モード
+VALINPUT_NAME_1=
+VALINPUT_NAME_2=
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=表示文
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=2
+LOADTYPE1=0
+LOADTYPE2=0
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=2
+CHOICE_STR_0_0=初期表示
+CHOICE_STR_0_1=消去
+CHOICE_STR_1_NUM=0
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=2
+CHOICE_VAL_0_0=0
+CHOICE_VAL_0_1=-1
+CHOICE_VAL_1_NUM=0
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=
+RETURN_VAL_TARGET=-1
+CSELF_NAME_0=処理モード
+CSELF_NAME_1=カーソル位置
+CSELF_NAME_2=
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=表示文
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=ウィンドウ画像ファイル
+CSELF_NAME_9=カーソル画像ファイル
+CSELF_NAME_10=一時変数A
+CSELF_NAME_11=一時変数B
+CSELF_NAME_12=一時変数C
+CSELF_NAME_13=一時変数D
+CSELF_NAME_14=一時変数E
+CSELF_NAME_15=
+CSELF_NAME_16=
+CSELF_NAME_17=
+CSELF_NAME_18=ミニフォントサイズ
+CSELF_NAME_19=基本フォントサイズ
+CSELF_NAME_20=基本ピクチャ番号
+CSELF_NAME_21=一時ピクチャ番号
+CSELF_NAME_22=表示X
+CSELF_NAME_23=表示Y
+CSELF_NAME_24=横サイズ
+CSELF_NAME_25=縦サイズ
+CSELF_NAME_26=-------
+CSELF_NAME_27=縦項目数
+CSELF_NAME_28=×座標倍率
+CSELF_NAME_29=全更新フラグ
+CSELF_NAME_30=説明ウィンドウX
+CSELF_NAME_31=説明ウィンドウY
+CSELF_NAME_32=説明ウィンドウ横サイズ
+CSELF_NAME_33=説明ウィンドウ縦サイズ
+CSELF_NAME_34=[保持]カーソル基本X
+CSELF_NAME_35=[保持]カーソル基本Y
+CSELF_NAME_36=[保持]カーソル横幅
+CSELF_NAME_37=[保持]カーソル縦幅
+CSELF_NAME_38=[保持]カーソル移動横幅
+CSELF_NAME_39=[保持]カーソル移動縦幅
+CSELF_NAME_40=全項目数
+CSELF_NAME_41=一時項目表示X
+CSELF_NAME_42=一時項目表示Y
+CSELF_NAME_43=処理中個数
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=数値表示シフト量
+CSELF_NAME_48=項目表示元Y
+CSELF_NAME_49=項目横拡大率
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=色指定R
+CSELF_NAME_54=色指定G
+CSELF_NAME_55=色指定B
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=座標倍率X[x10]
+CSELF_NAME_89=座標倍率Y[x10]
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=
+COMMAND_NUM=95
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("　メッセージ表示を行います。")
+[103][0,1]<0>()("")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()(" 　パラメータ設定")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("固定値を設定")
+[121][4,0]<0>(1600020,16000,0,0)()
+[103][0,1]<0>()("基本パラメータを呼び出し")
+[103][0,1]<0>()("Ver2.20　座標倍率を縦横別に修正")
+[250][5,4]<0>(18,97,0,69632,1600088)("","Base System Variables","","")
+[250][5,4]<0>(18,98,0,69632,1600089)("","Base System Variables","","")
+[250][5,4]<0>(18,6,0,69632,1600018)("","Base System Variables","","")
+[250][5,4]<0>(18,5,0,69632,1600019)("","Base System Variables","","")
+[250][5,4]<0>(17,0,0,332288,1600008)("","Images/Sounds","","Window Image File")
+[250][5,4]<0>(17,0,0,332288,1600009)("","Images/Sounds","","Cursor Image File")
+[103][0,1]<0>()("初期化")
+[121][4,0]<0>(1600029,0,0,0)()
+[121][4,0]<0>(1600022,160,0,0)()
+[121][4,0]<0>(1600023,120,0,0)()
+[121][4,0]<0>(1600024,240,0,0)()
+[121][4,0]<0>(1600025,50,0,0)()
+[121][4,0]<0>(1600022,1600088,0,768)()
+[121][4,0]<0>(1600023,1600089,0,768)()
+[121][4,0]<0>(1600024,1600088,0,768)()
+[121][4,0]<0>(1600025,1600089,0,768)()
+[121][5,0]<0>(1600022,10,0,66560,3)()
+[103][0,1]<0>()("\nを変換")
+[122][2,2]<0>(1600005,2304)("\n","<\n>")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()(" 　ここから実処理開始")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[111][4,0]<0>(1,1600000,-1,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<1>()("「消去」モード")
+[103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[121][4,0]<1>(1600021,1600020,2,0)()
+[150][3,0]<1>(16777219,1600020,1600021)()
+[150][6,0]<1>(16777218,1600020,10,0,0,1600021)()
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[111][4,0]<0>(1,1600000,0,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<1>()("「表示」モード")
+[103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[179][1,0]<1>(1)()
+[103][0,1]<2>()("メインウィンドウ部分表示")
+[121][4,0]<2>(1600021,1600020,0,0)()
+[150][2,0]<2>(4163,1600021)()
+[150][12,0]<2>(4160,1600021,0,1600024,1600025,1,255,1600022,1600023,0,0,1600008)()
+[179][1,0]<2>(1)()
+[103][0,1]<3>()("ここで表示時エフェクト（「移動」コマンドで実現している）")
+[121][4,0]<3>(1600041,1600022,0,0)()
+[121][4,0]<3>(1600042,1600023,0,0)()
+[103][0,1]<3>()("初期位置をシフト")
+[150][2,0]<3>(819,1600021)()
+[150][11,0]<3>(1,1600021,0,0,0,1,255,1600041,1600042,0,0)()
+[103][0,1]<3>()("慣性移動")
+[150][11,0]<3>(1,1600021,5,0,0,1,255,1600022,1600023,100,0)()
+[150][18,0]<3>(1,1600021,5,0,0,1,255,1600022,1600023,100,0,0,33554432,3,0,100,100,100)()
+[150][18,0]<3>(1,1600021,5,0,0,1,255,1600022,1600023,100,0,0,33554432,5,0,100,100,100)()
+[0][0,0]<3>()()
+[498][0,0]<2>()()
+[103][0,1]<2>()("表示する文字列")
+[121][4,0]<2>(1600021,1600020,1,0)()
+[150][2,0]<2>(4163,1600021)()
+[150][11,1]<2>(4128,1600021,0,1600024,1600025,1,255,1600022,1600023,0,0)("\f[\cself[19]]\cself[5]")
+[179][1,0]<2>(1)()
+[103][0,1]<3>()("ここで表示時エフェクト（「移動」コマンドで実現している）")
+[121][4,0]<3>(1600041,1600022,0,0)()
+[121][4,0]<3>(1600042,1600023,0,0)()
+[103][0,1]<3>()("初期位置をシフト")
+[150][2,0]<3>(819,1600021)()
+[150][11,0]<3>(1,1600021,0,0,0,1,255,1600041,1600042,0,0)()
+[103][0,1]<3>()("慣性移動")
+[150][11,0]<3>(1,1600021,5,0,0,1,255,1600022,1600023,100,0)()
+[150][18,0]<3>(1,1600021,5,0,0,1,255,1600022,1600023,100,0,0,33554432,3,0,100,100,100)()
+[150][18,0]<3>(1,1600021,5,0,0,1,255,1600022,1600023,100,0,0,33554432,5,0,100,100,100)()
+[0][0,0]<3>()()
+[498][0,0]<2>()()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Process Overview]
+▼ 　メッセージ表示を行います。
+▼ 
+▼ [Databases Accessed by This Common Event]
+▼  
+▼ [Other Common Events Called from Here]
+▼  
+▼ [Main Common Events Calling This]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼  　パラメータ設定
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ 固定値を設定
+■Set Variable: CSelf20[基本ピクチャ番号] = 16000 + 0 
+▼ 基本パラメータを呼び出し
+▼ Ver2.20　座標倍率を縦横別に修正
+■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
+■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
+■Load DB(Var):  CSelf18[ミニフォントサイズ] = VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) 
+■Load DB(Var):  CSelf19[基本フォントサイズ] = VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) 
+■Load DB(User):  CSelf8[ウィンドウ画像ファイル] = UserDB[ "Images/Sounds":0:"Window Image File" ] (16:Basic Images/Sounds:0) 
+■Load DB(User):  CSelf9[カーソル画像ファイル] = UserDB[ "Images/Sounds":0:"Cursor Image File" ] (16:Basic Images/Sounds:1) 
+▼ 初期化
+■Set Variable: CSelf29[全更新フラグ] = 0 + 0 
+■Set Variable: CSelf22[表示X] = 160 + 0 
+■Set Variable: CSelf23[表示Y] = 120 + 0 
+■Set Variable: CSelf24[横サイズ] = 240 + 0 
+■Set Variable: CSelf25[縦サイズ] = 50 + 0 
+■Set Variable: CSelf22[表示X] *= CSelf88[座標倍率X[x10]] + 0 
+■Set Variable: CSelf23[表示Y] *= CSelf89[座標倍率Y[x10]] + 0 
+■Set Variable: CSelf24[横サイズ] *= CSelf88[座標倍率X[x10]] + 0 
+■Set Variable: CSelf25[縦サイズ] *= CSelf89[座標倍率Y[x10]] + 0 
+■Set Variable: CSelf22[表示X] to CSelf25[縦サイズ] /= 10 + 0 
+▼ \nを変換
+■Set String: CSelf5[表示文] =<Replace> "\n" → "\n"
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼  　ここから実処理開始
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■Condition (Number):   [1] CSelf0[処理モード] ==  -1  
+-◇Condition:  [1]  [ CSelf0[処理モード] == -1   ] Case↓
+ |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ |▼ 「消去」モード
+ |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 2 
+ |■Picture [Reset Delay]: CSelf20[基本ピクチャ番号] to CSelf21[一時ピクチャ番号] 
+ |■Picture Erase: CSelf20[基本ピクチャ番号] to CSelf21[一時ピクチャ番号]  / 10(0) Frames
+ |■Exit Event
+ |■
+◇End◇
+■Condition (Number):   [1] CSelf0[処理モード] ==  0  
+-◇Condition:  [1]  [ CSelf0[処理モード] == 0   ] Case↓
+ |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ |▼ 「表示」モード
+ |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ |■Repeat Loop [ 1 ] Times
+ | |▼ メインウィンドウ部分表示
+ | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 0 
+ | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
+ | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] Window (CSelf8[ウィンドウ画像ファイル]) Size [CSelf24[横サイズ],CSelf25[縦サイズ]] X:CSelf22[表示X] Y:CSelf23[表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 0% / Color R[100] G[100] B[100]
+ | |■Repeat Loop [ 1 ] Times
+ | | |▼ ここで表示時エフェクト（「移動」コマンドで実現している）
+ | | |■Set Variable: CSelf41[一時項目表示X] = CSelf22[表示X] + 0 
+ | | |■Set Variable: CSelf42[一時項目表示Y] = CSelf23[表示Y] + 0 
+ | | |▼ 初期位置をシフト
+ | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
+ | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 0% / Color R[100] G[100] B[100]
+ | | |▼ 慣性移動
+ | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf22[表示X] Y:CSelf23[表示Y] / 5(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf22[表示X] Y:CSelf23[表示Y] / 5(3) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf22[表示X] Y:CSelf23[表示Y] / 5(5) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | |■
+ | |◇Loop End Point◇◇
+ | |▼ 表示する文字列
+ | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 1 
+ | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
+ | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] String [\f[\cself[19]]\c] X:CSelf22[表示X] Y:CSelf23[表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 0% / Color R[100] G[100] B[100]
+ | |■Repeat Loop [ 1 ] Times
+ | | |▼ ここで表示時エフェクト（「移動」コマンドで実現している）
+ | | |■Set Variable: CSelf41[一時項目表示X] = CSelf22[表示X] + 0 
+ | | |■Set Variable: CSelf42[一時項目表示Y] = CSelf23[表示Y] + 0 
+ | | |▼ 初期位置をシフト
+ | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
+ | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 0% / Color R[100] G[100] B[100]
+ | | |▼ 慣性移動
+ | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf22[表示X] Y:CSelf23[表示Y] / 5(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf22[表示X] Y:CSelf23[表示Y] / 5(3) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf22[表示X] Y:CSelf23[表示Y] / 5(5) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | |■
+ | |◇Loop End Point◇◇
+ | |■
+ |◇Loop End Point◇◇
+ |■
+◇End◇
+■
+[COMMAND_TEXT_END]

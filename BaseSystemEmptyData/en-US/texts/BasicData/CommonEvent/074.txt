@@ -1,0 +1,585 @@
+COMMON_ID=74
+COMMON_NAME=X[Map]Level Up/Down
+COMMAND_COLOR=6
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=3
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=Ally ID
+VALINPUT_NAME_1=Level Amount
+VALINPUT_NAME_2=Option
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=0
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=0
+LOADTYPE2=2
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=0
+CHOICE_STR_2_NUM=2
+CHOICE_STR_2_0=LvUp+Reset Changes
+CHOICE_STR_2_1=LvUp+Keep Changes
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=0
+CHOICE_VAL_2_NUM=2
+CHOICE_VAL_2_0=0
+CHOICE_VAL_2_1=1
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=1
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=Actual Change
+RETURN_VAL_TARGET=99
+CSELF_NAME_0=Ally ID
+CSELF_NAME_1=Level Amount
+CSELF_NAME_2=Option
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=
+CSELF_NAME_9=Message Text
+CSELF_NAME_10=Temp Variable A
+CSELF_NAME_11=Temp Variable B
+CSELF_NAME_12=
+CSELF_NAME_13=
+CSELF_NAME_14=
+CSELF_NAME_15=
+CSELF_NAME_16=
+CSELF_NAME_17=
+CSELF_NAME_18=
+CSELF_NAME_19=
+CSELF_NAME_20=Level Up (1) or Down (-1)
+CSELF_NAME_21=Growth Rate Is 1/10?
+CSELF_NAME_22=
+CSELF_NAME_23=
+CSELF_NAME_24=
+CSELF_NAME_25=
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=
+CSELF_NAME_29=
+CSELF_NAME_30=Target's Level
+CSELF_NAME_31=Max Level
+CSELF_NAME_32=Ally ID
+CSELF_NAME_33=Max HP Growth
+CSELF_NAME_34=Max SP Growth
+CSELF_NAME_35=Attack Growth
+CSELF_NAME_36=Defense Growth
+CSELF_NAME_37=Magic Atk Growth
+CSELF_NAME_38=Magic Def Growth
+CSELF_NAME_39=Agility Growth
+CSELF_NAME_40=Accuracy Growth
+CSELF_NAME_41=Evasion Growth
+CSELF_NAME_42=Critical Rate Growth
+CSELF_NAME_43=Required EXP
+CSELF_NAME_44=Required EXP Increase Rate [%]
+CSELF_NAME_45=Required EXP Increase [Fixed Value]
+CSELF_NAME_46=
+CSELF_NAME_47=Skill Learning Level
+CSELF_NAME_48=Skill to Learn
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=
+CSELF_NAME_89=
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=Actual Level Change
+COMMAND_NUM=206
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("  This common event is called to level up/down the ally in the base system.")
+[103][0,1]<0>()("  Works only on the map (or during post-battle processing).")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("  Also, stores parameter changes and newly learned skills into base system variables.")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[121][4,0]<0>(1600099,0,0,0)()
+[111][4,0]<0>(1,1600002,0,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("Reset.")
+[212][0,1]<1>()("Reset Change Values")
+[250][5,4]<1>(21,78,0,65536,0)("","Base System Variables","","")
+[250][5,4]<1>(21,79,0,65536,-1)("","Base System Variables","","")
+[250][5,4]<1>(21,80,0,65536,0)("","Base System Variables","","")
+[250][5,4]<1>(21,81,0,65536,0)("","Base System Variables","","")
+[250][5,4]<1>(21,82,0,65536,0)("","Base System Variables","","")
+[250][5,4]<1>(21,83,0,65536,0)("","Base System Variables","","")
+[250][5,4]<1>(21,84,0,65536,0)("","Base System Variables","","")
+[250][5,4]<1>(21,85,0,65536,0)("","Base System Variables","","")
+[250][5,4]<1>(21,86,0,65536,0)("","Base System Variables","","")
+[250][5,4]<1>(21,87,0,65536,0)("","Base System Variables","","")
+[250][5,4]<1>(21,88,0,65536,0)("","Base System Variables","","")
+[250][5,4]<1>(21,89,0,65536,0)("","Base System Variables","","")
+[250][5,4]<1>(21,90,0,65536,0)("","Base System Variables","","")
+[250][4,4]<1>(21,90,1,65538)("","Base System Variables","","")
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[103][0,1]<0>()("If there's no level change, end.")
+[111][4,0]<0>(1,1600001,0,2)()
+[401][1,0]<0>(1)()
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[103][0,1]<0>()("Load.")
+[250][5,4]<0>(19,0,23,332288,1600021)("","System Settings","","When Increasing Stats...")
+[250][5,4]<0>(21,79,0,69632,1600032)("","Base System Variables","","")
+[103][0,1]<0>()("Level up or level down?")
+[121][4,0]<0>(1600020,1,0,0)()
+[111][4,0]<0>(1,1600001,-1,3)()
+[401][1,0]<0>(1)()
+[121][4,0]<1>(1600020,-1,0,0)()
+[121][4,0]<1>(1600001,1600001,0,2048)()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[103][0,1]<0>()("Repeat.")
+[250][5,4]<0>(0,1600000,5,331776,1600031)("","Allies","","Max Level")
+[179][1,0]<0>(1600001)()
+[103][0,1]<1>()("If already at maximum level, no growth.")
+[250][5,4]<1>(0,1600000,4,331776,1600030)("","Allies","","Level")
+[111][7,0]<1>(2,1600020,1,2,1600020,-1,2)()
+[401][1,0]<1>(1)()
+[103][0,1]<2>()("On level up, if the target's level is already at its maximum, end.")
+[111][4,0]<2>(1,1600030,1600031,1)()
+[401][1,0]<2>(1)()
+[172][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[401][1,0]<1>(2)()
+[103][0,1]<2>()("On level down, if the target's level is already 1, end.")
+[111][4,0]<2>(1,1600030,1,3)()
+[401][1,0]<2>(1)()
+[172][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<1>()("Begin stat growth process.")
+[103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<1>()("Get growth value for each stat.")
+[250][5,4]<1>(0,1600000,17,331776,1600033)("","Allies","","[Growth] Max HP Add /1Lv")
+[250][5,4]<1>(0,1600000,18,331776,1600034)("","Allies","","[Growth] Max SP Add /1Lv")
+[250][5,4]<1>(0,1600000,19,331776,1600035)("","Allies","","[Growth] Attack Add /1Lv")
+[250][5,4]<1>(0,1600000,20,331776,1600036)("","Allies","","[Growth] Defense Add /1Lv")
+[250][5,4]<1>(0,1600000,21,331776,1600037)("","Allies","","[Growth] Magic Atk Add /1Lv")
+[250][5,4]<1>(0,1600000,22,331776,1600038)("","Allies","","[Growth] Magic Def Add /1Lv")
+[250][5,4]<1>(0,1600000,23,331776,1600039)("","Allies","","[Growth] Agility Add /1Lv")
+[250][5,4]<1>(0,1600000,24,331776,1600040)("","Allies","","[Growth] Accuracy Add /1Lv")
+[250][5,4]<1>(0,1600000,25,331776,1600041)("","Allies","","[Growth] Evasion Add /1Lv")
+[250][5,4]<1>(0,1600000,26,331776,1600042)("","Allies","","[Growth] Critical Rt Add /1Lv")
+[103][0,1]<1>()(" ")
+[250][5,4]<1>(0,1600000,58,331776,1600043)("","Allies","","Current Level Required EXP")
+[250][5,4]<1>(0,1600000,59,331776,1600044)("","Allies","","Required EXP Incr Rate [%]")
+[250][5,4]<1>(0,1600000,60,331776,1600045)("","Allies","","Required EXP Incr[FixedValue]")
+[103][0,1]<1>()(" ")
+[103][0,1]<1>()("Check Ally ID. (If Ally ID has changed, reset.)")
+[111][7,0]<1>(2,1600032,-1,5,1600032,-1,2)()
+[401][1,0]<1>(1)()
+[111][4,0]<2>(1,1600032,1600000,5)()
+[401][1,0]<2>(1)()
+[213][0,1]<3>()("Reset Change Values")
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[401][1,0]<1>(2)()
+[103][0,1]<2>()("If -1, store Ally ID.")
+[250][5,4]<2>(21,79,0,65536,1600000)("","Base System Variables","","")
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[103][0,1]<1>()("--------------------------------------------------------------")
+[103][0,1]<1>()("Add Change Amount & Execute Growth")
+[103][0,1]<1>()("--------------------------------------------------------------")
+[111][7,0]<1>(2,1600021,0,2,1600021,1,2)()
+[401][1,0]<1>(1)()
+[103][0,1]<2>()("If the growth rates are at 1/1...")
+[103][0,1]<2>()("...do nothing.")
+[0][0,0]<2>()()
+[401][1,0]<1>(2)()
+[103][0,1]<2>()("If the growth rates are at 1/10, add a random number between 0 and 9 and divide by 10.")
+[121][5,0]<2>(1600033,0,9,90368,9)()
+[121][5,0]<2>(1600033,10,0,66560,9)()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[103][0,1]<1>()("If level down, multiply by -1.")
+[121][5,0]<1>(1600033,1600020,0,66304,9)()
+[300][6,1]<1>(0,4,1600000,20,1600033,0)("X[Map]Change Parameter")
+[300][6,1]<1>(0,4,1600000,21,1600034,0)("X[Map]Change Parameter")
+[300][6,1]<1>(0,4,1600000,30,1600035,0)("X[Map]Change Parameter")
+[300][6,1]<1>(0,4,1600000,31,1600036,0)("X[Map]Change Parameter")
+[300][6,1]<1>(0,4,1600000,32,1600037,0)("X[Map]Change Parameter")
+[300][6,1]<1>(0,4,1600000,33,1600038,0)("X[Map]Change Parameter")
+[300][6,1]<1>(0,4,1600000,34,1600039,0)("X[Map]Change Parameter")
+[300][6,1]<1>(0,4,1600000,35,1600040,0)("X[Map]Change Parameter")
+[300][6,1]<1>(0,4,1600000,36,1600041,0)("X[Map]Change Parameter")
+[300][6,1]<1>(0,4,1600000,37,1600042,0)("X[Map]Change Parameter")
+[103][0,1]<1>()("Store stat increase history.")
+[250][5,4]<1>(21,78,0,65552,1600020)("","Base System Variables","","")
+[121][4,0]<1>(1600099,1600020,0,256)()
+[250][5,4]<1>(21,80,0,65552,1600033)("","Base System Variables","","")
+[250][5,4]<1>(21,81,0,65552,1600034)("","Base System Variables","","")
+[250][5,4]<1>(21,82,0,65552,1600035)("","Base System Variables","","")
+[250][5,4]<1>(21,83,0,65552,1600036)("","Base System Variables","","")
+[250][5,4]<1>(21,84,0,65552,1600037)("","Base System Variables","","")
+[250][5,4]<1>(21,85,0,65552,1600038)("","Base System Variables","","")
+[250][5,4]<1>(21,86,0,65552,1600039)("","Base System Variables","","")
+[250][5,4]<1>(21,87,0,65552,1600040)("","Base System Variables","","")
+[250][5,4]<1>(21,88,0,65552,1600041)("","Base System Variables","","")
+[250][5,4]<1>(21,89,0,65552,1600042)("","Base System Variables","","")
+[103][0,1]<1>()("--------------------------------------------------------------")
+[103][0,1]<1>()("Increase Level by ±1 & Calculate EXP Until Next Level")
+[103][0,1]<1>()("--------------------------------------------------------------")
+[250][5,4]<1>(0,1600000,4,327696,1600020)("","Allies","","Level")
+[250][5,4]<1>(0,1600000,4,331776,1600030)("","Allies","","Level")
+[103][0,1]<1>()("--------------------------------------------------------------")
+[111][7,0]<1>(2,1600020,1,1,1600020,-1,3)()
+[401][1,0]<1>(1)()
+[121][4,0]<2>(1600043,1600044,100,13058)()
+[121][4,0]<2>(1600043,1600045,0,258)()
+[0][0,0]<2>()()
+[401][1,0]<1>(2)()
+[121][4,0]<2>(1600043,1600045,0,512)()
+[121][4,0]<2>(1600043,100,0,768)()
+[121][4,0]<2>(1600043,1600044,0,1024)()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[121][4,0]<1>(1600043,1,0,1536)()
+[250][5,4]<1>(0,1600000,58,327680,1600043)("","Allies","","Current Level Required EXP")
+[103][0,1]<1>()("--------------------------------------------------------------")
+[103][0,1]<1>()("Check for Skills to Learn")
+[103][0,1]<1>()("--------------------------------------------------------------")
+[121][4,0]<1>(1600010,-1,0,0)()
+[179][1,0]<1>(50)()
+[121][4,0]<2>(1600010,1,0,256)()
+[121][4,0]<2>(1600011,1600010,2,8192)()
+[250][5,4]<2>(1,1600000,1600011,69632,1600047)("","┣ Skill Learning Lv","","")
+[111][4,0]<2>(1,1600047,1,1)()
+[401][1,0]<2>(1)()
+[111][4,0]<3>(1,1600047,1600030,3)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("If the learning level is less than or equal to the nwe level, set the learning level to 0 just in case (prevents forgetting when leveling down).")
+[250][5,4]<4>(1,1600000,1600011,65536,0)("","┣ Skill Learning Lv","","")
+[121][4,0]<4>(1600011,1600010,2,8192)()
+[121][4,0]<4>(1600011,1,0,256)()
+[103][0,1]<4>()("If the learning level is the same as the new level, add a learned message.")
+[111][4,0]<4>(1,1600047,1600030,2)()
+[401][1,0]<4>(1)()
+[103][0,1]<5>()("Add newly learned skill.")
+[250][5,4]<5>(1,1600000,1600011,69632,1600048)("","┣ Skill Learning Lv","","")
+[111][4,0]<5>(1,1600048,0,1)()
+[401][1,0]<5>(1)()
+[250][5,4]<6>(21,90,0,65552,1)("","Base System Variables","","")
+[103][0,1]<6>()("Add the string <dqrt>Learned [skill name]!<dqrt> here.")
+[250][5,4]<6>(0,1600048,0,332288,1600009)("","Skills","","Skill Name")
+[250][4,4]<6>(18,90,1,65554)("Learned \cself[9]!<\n>","Base System Variables","","")
+[99][1,0]<6>(0)()
+[0][0,0]<6>()()
+[499][0,0]<5>()()
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[103][0,1]<1>()("--------------------------------------------------------------")
+[179][1,0]<1>(0)()
+[103][0,1]<2>()("For test display.")
+[101][0,1]<2>()("\>\f[5]Level\cself[30]  / \cdb[21:78:0] \cdb[21:80:0] \cdb[21:81:0] \cdb[21:82:0] \cdb[21:83:0]<\n>\cdb[21:84:0] \cdb[21:85:0] \cdb[21:86:0] \cdb[21:87:0] \cdb[21:88:0]<\n>\cdb[21:89:0] <\cself[43]> \cself[42]? \cself[0]<\n>\cdb[21:90:1]")
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Process Overview]
+▼   This common event is called to level up/down the ally in the base system.
+▼   Works only on the map (or during post-battle processing).
+▼  
+▼   Also, stores parameter changes and newly learned skills into base system variables.
+▼ ―――――――――――――――――――――――――――――――――――
+■Set Variable: CSelf99[Actual Level Change] = 0 + 0 
+■Condition (Number):   [1] CSelf2[Option] ==  0  
+-◇Condition:  [1]  [ CSelf2[Option] == 0   ] Case↓
+ |▼ Reset.
+ |●Label Point [Reset Change Values] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |■Write to DB(Var): VarDB[ "Base System Variables":78:0 ] (18:[LvUp] Level-Up Count:Number) =  0
+ |■Write to DB(Var): VarDB[ "Base System Variables":79:0 ] (18:[LvUp] Level-Up Ally ID:Number) =  -1
+ |■Write to DB(Var): VarDB[ "Base System Variables":80:0 ] (18:[LvUp] Max HP Increase:Number) =  0
+ |■Write to DB(Var): VarDB[ "Base System Variables":81:0 ] (18:[LvUp] Max SP Increase:Number) =  0
+ |■Write to DB(Var): VarDB[ "Base System Variables":82:0 ] (18:[LvUp] Attack Increase:Number) =  0
+ |■Write to DB(Var): VarDB[ "Base System Variables":83:0 ] (18:[LvUp] Defense Increase:Number) =  0
+ |■Write to DB(Var): VarDB[ "Base System Variables":84:0 ] (18:[LvUp] Magic Atk Increase:Number) =  0
+ |■Write to DB(Var): VarDB[ "Base System Variables":85:0 ] (18:[LvUp] Magic Def Increase:Number) =  0
+ |■Write to DB(Var): VarDB[ "Base System Variables":86:0 ] (18:[LvUp] Agility Increase:Number) =  0
+ |■Write to DB(Var): VarDB[ "Base System Variables":87:0 ] (18:[LvUp] Accuracy Increase:Number) =  0
+ |■Write to DB(Var): VarDB[ "Base System Variables":88:0 ] (18:[LvUp] Evasion Increase:Number) =  0
+ |■Write to DB(Var): VarDB[ "Base System Variables":89:0 ] (18:[LvUp] Critical Rate Increase:Number) =  0
+ |■Write to DB(Var): VarDB[ "Base System Variables":90:0 ] (18:[LvUp] Learned Skills [String]:Number) =  0
+ |■Write to DB(Var): VarDB[ "Base System Variables":90:1 ] (18:[LvUp] Learned Skills [String]:String) =  
+ |■
+◇End◇
+▼ If there's no level change, end.
+■Condition (Number):   [1] CSelf1[Level Amount] ==  0  
+-◇Condition:  [1]  [ CSelf1[Level Amount] == 0   ] Case↓
+ |■Exit Event
+ |■
+◇End◇
+▼ Load.
+■Load DB(User):  CSelf21[Growth Rate Is 1/10?] = UserDB[ "System Settings":0:"When Increasing Stats..." ] (17:Basic System Settings:23) 
+■Load DB(Var):  CSelf32[Ally ID] = VarDB[ "Base System Variables":79:0 ] (18:[LvUp] Level-Up Ally ID:Number) 
+▼ Level up or level down?
+■Set Variable: CSelf20[Level Up (1) or Down (-1)] = 1 + 0 
+■Condition (Number):   [1] CSelf1[Level Amount] <=  -1  
+-◇Condition:  [1]  [ CSelf1[Level Amount] <= -1   ] Case↓
+ |■Set Variable: CSelf20[Level Up (1) or Down (-1)] = -1 + 0 
+ |■Set Variable: CSelf1[Level Amount] Absolute= CSelf1[Level Amount] + 0 
+ |■
+◇End◇
+▼ Repeat.
+■Load DB(Var):  CSelf31[Max Level] = VarDB[ "Allies":CSelf0[Ally ID]:"Max Level" ] (0:-:5) 
+■Repeat Loop [ CSelf1[Level Amount] ] Times
+ |▼ If already at maximum level, no growth.
+ |■Load DB(Var):  CSelf30[Target's Level] = VarDB[ "Allies":CSelf0[Ally ID]:"Level" ] (0:-:4) 
+ |■Condition (Number):   [1] CSelf20[Level Up (1) or Down (-1)] ==  1  /  [2] CSelf20[Level Up (1) or Down (-1)] ==  -1  
+ |-◇Condition:  [1]  [ CSelf20[Level Up (1) or Down (-1)] == 1   ] Case↓
+ | |▼ On level up, if the target's level is already at its maximum, end.
+ | |■Condition (Number):   [1] CSelf30[Target's Level] >=  CSelf31[Max Level]  
+ | |-◇Condition:  [1]  [ CSelf30[Target's Level] >= CSelf31[Max Level]   ] Case↓
+ | | |■Exit Event
+ | | |■
+ | |◇End◇
+ | |■
+ |-◇Condition:  [2]  [ CSelf20[Level Up (1) or Down (-1)] == -1   ] Case↓
+ | |▼ On level down, if the target's level is already 1, end.
+ | |■Condition (Number):   [1] CSelf30[Target's Level] <=  1  
+ | |-◇Condition:  [1]  [ CSelf30[Target's Level] <= 1   ] Case↓
+ | | |■Exit Event
+ | | |■
+ | |◇End◇
+ | |■
+ |◇End◇
+ |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■
+ |▼ Begin stat growth process.
+ |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■
+ |▼ Get growth value for each stat.
+ |■Load DB(Var):  CSelf33[Max HP Growth] = VarDB[ "Allies":CSelf0[Ally ID]:"[Growth] Max HP Add /1Lv" ] (0:-:18) 
+ |■Load DB(Var):  CSelf34[Max SP Growth] = VarDB[ "Allies":CSelf0[Ally ID]:"[Growth] Max SP Add /1Lv" ] (0:-:19) 
+ |■Load DB(Var):  CSelf35[Attack Growth] = VarDB[ "Allies":CSelf0[Ally ID]:"[Growth] Attack Add /1Lv" ] (0:-:20) 
+ |■Load DB(Var):  CSelf36[Defense Growth] = VarDB[ "Allies":CSelf0[Ally ID]:"[Growth] Defense Add /1Lv" ] (0:-:21) 
+ |■Load DB(Var):  CSelf37[Magic Atk Growth] = VarDB[ "Allies":CSelf0[Ally ID]:"[Growth] Magic Atk Add /1Lv" ] (0:-:22) 
+ |■Load DB(Var):  CSelf38[Magic Def Growth] = VarDB[ "Allies":CSelf0[Ally ID]:"[Growth] Magic Def Add /1Lv" ] (0:-:23) 
+ |■Load DB(Var):  CSelf39[Agility Growth] = VarDB[ "Allies":CSelf0[Ally ID]:"[Growth] Agility Add /1Lv" ] (0:-:24) 
+ |■Load DB(Var):  CSelf40[Accuracy Growth] = VarDB[ "Allies":CSelf0[Ally ID]:"[Growth] Accuracy Add /1Lv" ] (0:-:25) 
+ |■Load DB(Var):  CSelf41[Evasion Growth] = VarDB[ "Allies":CSelf0[Ally ID]:"[Growth] Evasion Add /1Lv" ] (0:-:26) 
+ |■Load DB(Var):  CSelf42[Critical Rate Growth] = VarDB[ "Allies":CSelf0[Ally ID]:"[Growth] Critical Rt Add /1Lv" ] (0:-:27) 
+ |▼  
+ |■Load DB(Var):  CSelf43[Required EXP] = VarDB[ "Allies":CSelf0[Ally ID]:"Current Level Required EXP" ] (0:-:55) 
+ |■Load DB(Var):  CSelf44[Required EXP Increase Rate [%]] = VarDB[ "Allies":CSelf0[Ally ID]:"Required EXP Incr Rate [%]" ] (0:-:56) 
+ |■Load DB(Var):  CSelf45[Required EXP Increase [Fixed Value]] = VarDB[ "Allies":CSelf0[Ally ID]:"Required EXP Incr[FixedValue]" ] (0:-:57) 
+ |▼  
+ |▼ Check Ally ID. (If Ally ID has changed, reset.)
+ |■Condition (Number):   [1] CSelf32[Ally ID] !=  -1  /  [2] CSelf32[Ally ID] ==  -1  
+ |-◇Condition:  [1]  [ CSelf32[Ally ID] != -1   ] Case↓
+ | |■Condition (Number):   [1] CSelf32[Ally ID] !=  CSelf0[Ally ID]  
+ | |-◇Condition:  [1]  [ CSelf32[Ally ID] != CSelf0[Ally ID]   ] Case↓
+ | | |●Label Jump [Reset Change Values] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | |■
+ | |◇End◇
+ | |■
+ |-◇Condition:  [2]  [ CSelf32[Ally ID] == -1   ] Case↓
+ | |▼ If -1, store Ally ID.
+ | |■Write to DB(Var): VarDB[ "Base System Variables":79:0 ] (18:[LvUp] Level-Up Ally ID:Number) =  CSelf0[Ally ID]
+ | |■
+ |◇End◇
+ |▼ --------------------------------------------------------------
+ |▼ Add Change Amount & Execute Growth
+ |▼ --------------------------------------------------------------
+ |■Condition (Number):   [1] CSelf21[Growth Rate Is 1/10?] ==  0  /  [2] CSelf21[Growth Rate Is 1/10?] ==  1  
+ |-◇Condition:  [1]  [ CSelf21[Growth Rate Is 1/10?] == 0   ] Case↓
+ | |▼ If the growth rates are at 1/1...
+ | |▼ ...do nothing.
+ | |■
+ |-◇Condition:  [2]  [ CSelf21[Growth Rate Is 1/10?] == 1   ] Case↓
+ | |▼ If the growth rates are at 1/10, add a random number between 0 and 9 and divide by 10.
+ | |■Set Variable: CSelf33[Max HP Growth] to CSelf42[Critical Rate Growth] += 0  to  9 
+ | |■Set Variable: CSelf33[Max HP Growth] to CSelf42[Critical Rate Growth] /= 10 + 0 
+ | |■
+ |◇End◇
+ |▼ If level down, multiply by -1.
+ |■Set Variable: CSelf33[Max HP Growth] to CSelf42[Critical Rate Growth] *= CSelf20[Level Up (1) or Down (-1)] + 0 
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Ally ID] / 20:Max HP / CSelf33[Max HP Growth] / 0:No
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Ally ID] / 21:Max SP / CSelf34[Max SP Growth] / 0:No
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Ally ID] / 30:Attack / CSelf35[Attack Growth] / 0:No
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Ally ID] / 31:Defense / CSelf36[Defense Growth] / 0:No
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Ally ID] / 32:Magic Attack / CSelf37[Magic Atk Growth] / 0:No
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Ally ID] / 33:Magic Defense / CSelf38[Magic Def Growth] / 0:No
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Ally ID] / 34:Agility / CSelf39[Agility Growth] / 0:No
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Ally ID] / 35:Accuracy / CSelf40[Accuracy Growth] / 0:No
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Ally ID] / 36:Evasion / CSelf41[Evasion Growth] / 0:No
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Ally ID] / 37:Critical Rate / CSelf42[Critical Rate Growth] / 0:No
+ |▼ Store stat increase history.
+ |■Write to DB(Var): VarDB[ "Base System Variables":78:0 ] (18:[LvUp] Level-Up Count:Number) +=  CSelf20[Level Up (1) or Down (-1)]
+ |■Set Variable: CSelf99[Actual Level Change] += CSelf20[Level Up (1) or Down (-1)] + 0 
+ |■Write to DB(Var): VarDB[ "Base System Variables":80:0 ] (18:[LvUp] Max HP Increase:Number) +=  CSelf33[Max HP Growth]
+ |■Write to DB(Var): VarDB[ "Base System Variables":81:0 ] (18:[LvUp] Max SP Increase:Number) +=  CSelf34[Max SP Growth]
+ |■Write to DB(Var): VarDB[ "Base System Variables":82:0 ] (18:[LvUp] Attack Increase:Number) +=  CSelf35[Attack Growth]
+ |■Write to DB(Var): VarDB[ "Base System Variables":83:0 ] (18:[LvUp] Defense Increase:Number) +=  CSelf36[Defense Growth]
+ |■Write to DB(Var): VarDB[ "Base System Variables":84:0 ] (18:[LvUp] Magic Atk Increase:Number) +=  CSelf37[Magic Atk Growth]
+ |■Write to DB(Var): VarDB[ "Base System Variables":85:0 ] (18:[LvUp] Magic Def Increase:Number) +=  CSelf38[Magic Def Growth]
+ |■Write to DB(Var): VarDB[ "Base System Variables":86:0 ] (18:[LvUp] Agility Increase:Number) +=  CSelf39[Agility Growth]
+ |■Write to DB(Var): VarDB[ "Base System Variables":87:0 ] (18:[LvUp] Accuracy Increase:Number) +=  CSelf40[Accuracy Growth]
+ |■Write to DB(Var): VarDB[ "Base System Variables":88:0 ] (18:[LvUp] Evasion Increase:Number) +=  CSelf41[Evasion Growth]
+ |■Write to DB(Var): VarDB[ "Base System Variables":89:0 ] (18:[LvUp] Critical Rate Increase:Number) +=  CSelf42[Critical Rate Growth]
+ |▼ --------------------------------------------------------------
+ |▼ Increase Level by ±1 & Calculate EXP Until Next Level
+ |▼ --------------------------------------------------------------
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Level" ] (0:-:4) +=  CSelf20[Level Up (1) or Down (-1)]
+ |■Load DB(Var):  CSelf30[Target's Level] = VarDB[ "Allies":CSelf0[Ally ID]:"Level" ] (0:-:4) 
+ |▼ --------------------------------------------------------------
+ |■Condition (Number):   [1] CSelf20[Level Up (1) or Down (-1)] >=  1  /  [2] CSelf20[Level Up (1) or Down (-1)] <=  -1  
+ |-◇Condition:  [1]  [ CSelf20[Level Up (1) or Down (-1)] >= 1   ] Case↓
+ | |■Set Variable: [Real] CSelf43[Required EXP] *= CSelf44[Required EXP Increase Rate [%]] / 100 
+ | |■Set Variable: [Real] CSelf43[Required EXP] += CSelf45[Required EXP Increase [Fixed Value]] + 0 
+ | |■
+ |-◇Condition:  [2]  [ CSelf20[Level Up (1) or Down (-1)] <= -1   ] Case↓
+ | |■Set Variable: CSelf43[Required EXP] -= CSelf45[Required EXP Increase [Fixed Value]] + 0 
+ | |■Set Variable: CSelf43[Required EXP] *= 100 + 0 
+ | |■Set Variable: CSelf43[Required EXP] /= CSelf44[Required EXP Increase Rate [%]] + 0 
+ | |■
+ |◇End◇
+ |■Set Variable: CSelf43[Required EXP] Lower Bound= 1 + 0 
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Current Level Required EXP" ] (0:-:55) =  CSelf43[Required EXP]
+ |▼ --------------------------------------------------------------
+ |▼ Check for Skills to Learn
+ |▼ --------------------------------------------------------------
+ |■Set Variable: CSelf10[Temp Variable A] = -1 + 0 
+ |■Repeat Loop [ 50 ] Times
+ | |■Set Variable: CSelf10[Temp Variable A] += 1 + 0 
+ | |■Set Variable: CSelf11[Temp Variable B] = CSelf10[Temp Variable A] * 2 
+ | |■Load DB(Var):  CSelf47[Skill Learning Level] = VarDB[ "┣ Skill Learning Lv":CSelf0[Ally ID]:CSelf11[Temp Variable B] ] (1:-:-) 
+ | |■Condition (Number):   [1] CSelf47[Skill Learning Level] >=  1  
+ | |-◇Condition:  [1]  [ CSelf47[Skill Learning Level] >= 1   ] Case↓
+ | | |■Condition (Number):   [1] CSelf47[Skill Learning Level] <=  CSelf30[Target's Level]  
+ | | |-◇Condition:  [1]  [ CSelf47[Skill Learning Level] <= CSelf30[Target's Level]   ] Case↓
+ | | | |▼ If the learning level is less than or equal to the nwe level, set the learning level to 0 just in case (prevents forgetting when leveling down).
+ | | | |■Write to DB(Var): VarDB[ "┣ Skill Learning Lv":CSelf0[Ally ID]:CSelf11[Temp Variable B] ] (1:-:-) =  0
+ | | | |■Set Variable: CSelf11[Temp Variable B] = CSelf10[Temp Variable A] * 2 
+ | | | |■Set Variable: CSelf11[Temp Variable B] += 1 + 0 
+ | | | |▼ If the learning level is the same as the new level, add a learned message.
+ | | | |■Condition (Number):   [1] CSelf47[Skill Learning Level] ==  CSelf30[Target's Level]  
+ | | | |-◇Condition:  [1]  [ CSelf47[Skill Learning Level] == CSelf30[Target's Level]   ] Case↓
+ | | | | |▼ Add newly learned skill.
+ | | | | |■Load DB(Var):  CSelf48[Skill to Learn] = VarDB[ "┣ Skill Learning Lv":CSelf0[Ally ID]:CSelf11[Temp Variable B] ] (1:-:-) 
+ | | | | |■Condition (Number):   [1] CSelf48[Skill to Learn] >=  0  
+ | | | | |-◇Condition:  [1]  [ CSelf48[Skill to Learn] >= 0   ] Case↓
+ | | | | | |■Write to DB(Var): VarDB[ "Base System Variables":90:0 ] (18:[LvUp] Learned Skills [String]:Number) +=  1
+ | | | | | |▼ Add the string "Learned [skill name]!" here.
+ | | | | | |■Load DB(User):  CSelf9[Message Text] = UserDB[ "Skills":CSelf48[Skill to Learn]:"Skill Name" ] (0:-:0) 
+ | | | | | |■Write to DB(Var): VarDB[ "Base System Variables":90:1 ] (18:[LvUp] Learned Skills [String]:String) +=  Learned \cself[9]!\n
+ | | | | | |■ Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
+ | | | | | |■
+ | | | | |◇End◇
+ | | | | |■
+ | | | |◇End◇
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇End◇
+ | |■
+ |◇Loop End Point◇◇
+ |▼ --------------------------------------------------------------
+ |■Repeat Loop [ 0 ] Times
+ | |▼ For test display.
+ | |■Show Message: \>\f[5]Level\cself[30]  / \cdb[21:78:0] \cdb[21:80:0] \cdb[21:81:0] \cdb[21:82:0] \cdb[21:83:0]\n\cdb[21:84:0] \cdb[21:85:0] \cdb[21:86:0] \cdb[21:87:0] \cdb[21:88:0]\n\cdb[21:89:0] <\cself[43]> \cself[42]? \cself[0]\n\cdb[21:90:1]
+ | |■
+ |◇Loop End Point◇◇
+ |■
+◇Loop End Point◇◇
+■
+[COMMAND_TEXT_END]

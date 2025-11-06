@@ -1,0 +1,501 @@
+COMMON_ID=4
+COMMON_NAME=○ Recover or Damage
+COMMAND_COLOR=0
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=Recovers or reduces HP/SP, or clears states. Full Recovery recovers all. Can be used on map or in battle.
+VALINPUT_NUM=3
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=Type
+VALINPUT_NAME_1=Who?
+VALINPUT_NAME_2=Amount
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=0
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=2
+LOADTYPE1=1
+LOADTYPE2=0
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=5
+CHOICE_STR_0_0=HP
+CHOICE_STR_0_1=SP
+CHOICE_STR_0_2=HP & SP
+CHOICE_STR_0_3=Clear States
+CHOICE_STR_0_4=Full Recovery
+CHOICE_STR_1_NUM=3
+CHOICE_STR_1_0=Whole Party
+CHOICE_STR_1_1=Whole Party
+CHOICE_STR_1_2=Whole Party
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=5
+CHOICE_VAL_0_0=1
+CHOICE_VAL_0_1=2
+CHOICE_VAL_0_2=3
+CHOICE_VAL_0_3=4
+CHOICE_VAL_0_4=7
+CHOICE_VAL_1_NUM=3
+CHOICE_VAL_1_0=2
+CHOICE_VAL_1_1=0
+CHOICE_VAL_1_2=1
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=1
+DEFAULT_VAL_1=-1
+DEFAULT_VAL_2=30
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=
+RETURN_VAL_TARGET=-1
+CSELF_NAME_0=Type
+CSELF_NAME_1=Who?
+CSELF_NAME_2=Amount
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=
+CSELF_NAME_9=
+CSELF_NAME_10=Temp Variable A
+CSELF_NAME_11=Target Character ID
+CSELF_NAME_12=
+CSELF_NAME_13=
+CSELF_NAME_14=
+CSELF_NAME_15=
+CSELF_NAME_16=
+CSELF_NAME_17=
+CSELF_NAME_18=In Battle?
+CSELF_NAME_19=Party Size
+CSELF_NAME_20=
+CSELF_NAME_21=
+CSELF_NAME_22=
+CSELF_NAME_23=
+CSELF_NAME_24=
+CSELF_NAME_25=
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=
+CSELF_NAME_29=
+CSELF_NAME_30=
+CSELF_NAME_31=
+CSELF_NAME_32=
+CSELF_NAME_33=
+CSELF_NAME_34=
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=
+CSELF_NAME_41=
+CSELF_NAME_42=
+CSELF_NAME_43=
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=
+CSELF_NAME_89=
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=
+COMMAND_NUM=158
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("Argument 0: Type (1:HP, 2:SP, 4:State, 7:Full)  Argument 1: Who?  Argument 2: Amount")
+[111][4,0]<0>(1,1600000,7,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("For full recovery, make recovery amount 999999.")
+[121][4,0]<1>(1600002,999999,0,4)()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[250][5,4]<0>(18,68,0,200704,1600018)("","Base System Variables","[Battle] In Battle?","")
+[111][7,0]<0>(2,1600018,0,2,1600018,1,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<1>()("    On-Map Processing")
+[103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[111][4,0]<1>(17,1600001,-1,3)()
+[401][1,0]<1>(1)()
+[103][0,1]<2>()("All members case.")
+[250][5,4]<2>(18,4,0,69632,1600019)("","Base System Variables","","")
+[121][4,0]<2>(1600010,-1,0,0)()
+[179][1,0]<2>(1600019)()
+[121][4,0]<3>(1600010,1,0,256)()
+[103][0,1]<3>()("Put Character ID in CSelf11 and jump further down.")
+[300][4,1]<3>(0,16777217,1600010,1600011)("X[Map]Get Ally ID")
+[103][0,1]<3>()("This label is also jumped to when only one ally is processed.")
+[212][0,1]<3>()("On-Map Process")
+[111][4,0]<3>(1,1600011,0,1)()
+[401][1,0]<3>(1)()
+[111][4,0]<4>(1,1600000,4,6)()
+[401][1,0]<4>(1)()
+[103][0,1]<5>()("Clear states.")
+[300][5,1]<5>(0,3,1600011,-1,0)("X[Map]Add/Remove State")
+[300][3,1]<5>(0,1,1600011)("X[Map]CalcTempStats <Initialize>")
+[300][3,1]<5>(0,1,1600011)("X[Map]CalcTempStats <Equipments>")
+[300][3,1]<5>(0,1,1600011)("X[Map]CalcTempStats <StatusEffects>")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[111][4,0]<4>(1,1600000,1,6)()
+[401][1,0]<4>(1)()
+[103][0,1]<5>()("HP recovery/damage.")
+[300][6,1]<5>(0,4,1600011,22,1600002,0)("X[Map]Change Parameter")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[111][4,0]<4>(1,1600000,2,6)()
+[401][1,0]<4>(1)()
+[103][0,1]<5>()("SP recovery/reduction.")
+[300][6,1]<5>(0,4,1600011,23,1600002,0)("X[Map]Change Parameter")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[103][0,1]<4>()("Recalculate stats.")
+[300][3,1]<4>(0,1,1600011)("X[Map]CalcTempStats <Initialize>")
+[300][3,1]<4>(0,1,1600011)("X[Map]CalcTempStats <Equipments>")
+[300][3,1]<4>(0,1,1600011)("X[Map]CalcTempStats <StatusEffects>")
+[300][5,1]<4>(0,3,1600011,-1,2)("X[Map]Add/Remove State")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[103][0,1]<3>()(" ")
+[111][4,0]<3>(1,1600001,0,1)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("If not <dqrt>all,<dqrt> end after one ally is processed.")
+[172][0,0]<4>()()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[498][0,0]<2>()()
+[0][0,0]<2>()()
+[420][1,0]<1>(0)()
+[103][0,1]<2>()("One ally case.")
+[121][4,0]<2>(1600011,1600001,0,0)()
+[213][0,1]<2>()("On-Map Process")
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<1>()("    In-Battle Processing")
+[103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[111][4,0]<1>(17,1600001,-1,3)()
+[401][1,0]<1>(1)()
+[103][0,1]<2>()("All members case.")
+[250][5,4]<2>(18,4,0,69632,1600019)("","Base System Variables","","")
+[121][4,0]<2>(1600010,-1,0,0)()
+[179][1,0]<2>(1600019)()
+[121][4,0]<3>(1600010,1,0,256)()
+[103][0,1]<3>()("Put Character ID in CSelf11 and jump further down.")
+[300][4,1]<3>(0,16777217,1600010,1600011)("X[Bat]Get Ally ID in Slot")
+[103][0,1]<3>()("This label is also jumped to when only one ally is processed.")
+[212][0,1]<3>()("In-Battle Process")
+[103][0,1]<3>()("Process the character, if present.")
+[111][4,0]<3>(1,1600011,0,1)()
+[401][1,0]<3>(1)()
+[111][4,0]<4>(1,1600000,4,6)()
+[401][1,0]<4>(1)()
+[103][0,1]<5>()("Clear states.")
+[300][6,1]<5>(0,4,1600010,-1,0,1)("X[Bat]Add/Remove State")
+[300][3,1]<5>(0,1,1600010)("X[Bat]CalcTempStats <Initialize>")
+[300][4,1]<5>(0,2,1600010,-1)("X[Bat]CalcTempStats <Equipments>")
+[300][4,1]<5>(0,2,1600010,0)("X[Bat]CalcTempStats <StatusEffects>")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[111][4,0]<4>(1,1600000,1,6)()
+[401][1,0]<4>(1)()
+[103][0,1]<5>()("HP recovery/damage.")
+[300][5,1]<5>(0,3,1600010,22,1600002)("X[Bat]Change Parameter")
+[111][7,0]<5>(2,1600002,1,1,1600002,-1,3)()
+[401][1,0]<5>(1)()
+[300][5,1]<6>(0,3,30,1600010,1600010)("X[Bat]Ally Box: Draw One")
+[0][0,0]<6>()()
+[401][1,0]<5>(2)()
+[300][5,1]<6>(0,3,21,1600010,1600010)("X[Bat]Ally Box: Draw One")
+[0][0,0]<6>()()
+[499][0,0]<5>()()
+[300][6,1]<5>(0,4,1600010,-1,2,0)("X[Bat]Add/Remove State")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[111][4,0]<4>(1,1600000,2,6)()
+[401][1,0]<4>(1)()
+[103][0,1]<5>()("SP recovery/reduction.")
+[300][5,1]<5>(0,3,1600010,23,1600002)("X[Bat]Change Parameter")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[103][0,1]<4>()("Recalculate stats.")
+[300][3,1]<4>(0,1,1600010)("X[Bat]CalcTempStats <Initialize>")
+[300][4,1]<4>(0,2,1600010,-1)("X[Bat]CalcTempStats <Equipments>")
+[300][4,1]<4>(0,2,1600010,0)("X[Bat]CalcTempStats <StatusEffects>")
+[300][3,1]<4>(0,1,1600010)("X[Bat]Ally Box: Calc Position")
+[300][5,1]<4>(0,3,5,1600010,1600010)("X[Bat]Ally Box: Draw One")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[103][0,1]<3>()(" ")
+[111][4,0]<3>(1,1600001,0,1)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("If not <dqrt>all,<dqrt> end after one ally is processed.")
+[172][0,0]<4>()()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[498][0,0]<2>()()
+[0][0,0]<2>()()
+[420][1,0]<1>(0)()
+[103][0,1]<2>()("One ally case.")
+[250][5,4]<2>(18,4,0,69632,1600019)("","Base System Variables","","")
+[121][4,0]<2>(1600010,-1,0,0)()
+[179][1,0]<2>(1600019)()
+[121][4,0]<3>(1600010,1,0,256)()
+[103][0,1]<3>()("Put Character ID in CSelf11.")
+[300][4,1]<3>(0,16777217,1600010,1600011)("X[Bat]Get Ally ID in Slot")
+[111][4,0]<3>(1,1600001,1600011,2)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("If the corresponding character is in the battle party, process it.")
+[213][0,1]<4>()("In-Battle Process")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[498][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ Argument 0: Type (1:HP, 2:SP, 4:State, 7:Full)  Argument 1: Who?  Argument 2: Amount
+■Condition (Number):   [1] CSelf0[Type] ==  7  
+-◇Condition:  [1]  [ CSelf0[Type] == 7   ] Case↓
+ |▼ For full recovery, make recovery amount 999999.
+ |■Set Variable: CSelf2[Amount] = 999999 + 0 
+ |■
+◇End◇
+■Load DB(Var):  CSelf18[In Battle?] = VarDB[ "Base System Variables":"[Battle] In Battle?":0 ] (18:68:Number) 
+■Condition (Number):   [1] CSelf18[In Battle?] ==  0  /  [2] CSelf18[In Battle?] ==  1  
+-◇Condition:  [1]  [ CSelf18[In Battle?] == 0   ] Case↓
+ |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ |▼     On-Map Processing
+ |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ |■Condition (Number):   [1] CSelf1[Who?] <=  -1  
+ |-◇Condition:  [1]  [ CSelf1[Who?] <= -1   ] Case↓
+ | |▼ All members case.
+ | |■Load DB(Var):  CSelf19[Party Size] = VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) 
+ | |■Set Variable: CSelf10[Temp Variable A] = -1 + 0 
+ | |■Repeat Loop [ CSelf19[Party Size] ] Times
+ | | |■Set Variable: CSelf10[Temp Variable A] += 1 + 0 
+ | | |▼ Put Character ID in CSelf11 and jump further down.
+ | | |■Call Event [Name]: CSelf11[Target Character ID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf10[Temp Variable A]
+ | | |▼ This label is also jumped to when only one ally is processed.
+ | | |●Label Point [On-Map Process] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | | |■Condition (Number):   [1] CSelf11[Target Character ID] >=  0  
+ | | |-◇Condition:  [1]  [ CSelf11[Target Character ID] >= 0   ] Case↓
+ | | | |■Condition (Number):   [1] CSelf0[Type] &  4  
+ | | | |-◇Condition:  [1]  [ CSelf0[Type] & 4   ] Case↓
+ | | | | |▼ Clear states.
+ | | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf11[Target Character ID] / -1:Remove All (Force) / 0:Remove
+ | | | | |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf11[Target Character ID]
+ | | | | |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf11[Target Character ID]
+ | | | | |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf11[Target Character ID]
+ | | | | |■
+ | | | |◇End◇
+ | | | |■Condition (Number):   [1] CSelf0[Type] &  1  
+ | | | |-◇Condition:  [1]  [ CSelf0[Type] & 1   ] Case↓
+ | | | | |▼ HP recovery/damage.
+ | | | | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf11[Target Character ID] / 22:HP / CSelf2[Amount] / 0:No
+ | | | | |■
+ | | | |◇End◇
+ | | | |■Condition (Number):   [1] CSelf0[Type] &  2  
+ | | | |-◇Condition:  [1]  [ CSelf0[Type] & 2   ] Case↓
+ | | | | |▼ SP recovery/reduction.
+ | | | | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf11[Target Character ID] / 23:SP / CSelf2[Amount] / 0:No
+ | | | | |■
+ | | | |◇End◇
+ | | | |▼ Recalculate stats.
+ | | | |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf11[Target Character ID]
+ | | | |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf11[Target Character ID]
+ | | | |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf11[Target Character ID]
+ | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf11[Target Character ID] / -1:Remove All (Force) / 2:Update
+ | | | |■
+ | | |◇End◇
+ | | |▼  
+ | | |■Condition (Number):   [1] CSelf1[Who?] >=  0  
+ | | |-◇Condition:  [1]  [ CSelf1[Who?] >= 0   ] Case↓
+ | | | |▼ If not "all," end after one ally is processed.
+ | | | |■Exit Event
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇Loop End Point◇◇
+ | |■
+ |-◇Else
+ | |▼ One ally case.
+ | |■Set Variable: CSelf11[Target Character ID] = CSelf1[Who?] + 0 
+ | |●Label Jump [On-Map Process] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | |■
+ |◇End◇
+ |■
+-◇Condition:  [2]  [ CSelf18[In Battle?] == 1   ] Case↓
+ |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ |▼     In-Battle Processing
+ |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ |■Condition (Number):   [1] CSelf1[Who?] <=  -1  
+ |-◇Condition:  [1]  [ CSelf1[Who?] <= -1   ] Case↓
+ | |▼ All members case.
+ | |■Load DB(Var):  CSelf19[Party Size] = VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) 
+ | |■Set Variable: CSelf10[Temp Variable A] = -1 + 0 
+ | |■Repeat Loop [ CSelf19[Party Size] ] Times
+ | | |■Set Variable: CSelf10[Temp Variable A] += 1 + 0 
+ | | |▼ Put Character ID in CSelf11 and jump further down.
+ | | |■Call Event [Name]: CSelf11[Target Character ID] = ["X[Bat]Get Ally ID in Slot"] <CommonEv 141>  / CSelf10[Temp Variable A]
+ | | |▼ This label is also jumped to when only one ally is processed.
+ | | |●Label Point [In-Battle Process] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | | |▼ Process the character, if present.
+ | | |■Condition (Number):   [1] CSelf11[Target Character ID] >=  0  
+ | | |-◇Condition:  [1]  [ CSelf11[Target Character ID] >= 0   ] Case↓
+ | | | |■Condition (Number):   [1] CSelf0[Type] &  4  
+ | | | |-◇Condition:  [1]  [ CSelf0[Type] & 4   ] Case↓
+ | | | | |▼ Clear states.
+ | | | | |■Call Event [Name]: ["X[Bat]Add/Remove State"] <CommonEv 137>  / CSelf10[Temp Variable A] / -1:全て消去（強制） / 0:消去 / 1:メッセージ有り
+ | | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf10[Temp Variable A]
+ | | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf10[Temp Variable A] / -1:全武器を総計
+ | | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf10[Temp Variable A] / 0:パラメータ補正＋状態名計算
+ | | | | |■
+ | | | |◇End◇
+ | | | |■Condition (Number):   [1] CSelf0[Type] &  1  
+ | | | |-◇Condition:  [1]  [ CSelf0[Type] & 1   ] Case↓
+ | | | | |▼ HP recovery/damage.
+ | | | | |■Call Event [Name]: ["X[Bat]Change Parameter"] <CommonEv 135>  / CSelf10[Temp Variable A] / 22:HP / CSelf2[Amount]
+ | | | | |■Condition (Number):   [1] CSelf2[Amount] >=  1  /  [2] CSelf2[Amount] <=  -1  
+ | | | | |-◇Condition:  [1]  [ CSelf2[Amount] >= 1   ] Case↓
+ | | | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 30:回復エフェクト / CSelf10[Temp Variable A] / CSelf10[Temp Variable A]
+ | | | | | |■
+ | | | | |-◇Condition:  [2]  [ CSelf2[Amount] <= -1   ] Case↓
+ | | | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 21:ダメージエフェクトLv1 / CSelf10[Temp Variable A] / CSelf10[Temp Variable A]
+ | | | | | |■
+ | | | | |◇End◇
+ | | | | |■Call Event [Name]: ["X[Bat]Add/Remove State"] <CommonEv 137>  / CSelf10[Temp Variable A] / -1:全て消去（強制） / 2:更新 / 0:メッセージなし
+ | | | | |■
+ | | | |◇End◇
+ | | | |■Condition (Number):   [1] CSelf0[Type] &  2  
+ | | | |-◇Condition:  [1]  [ CSelf0[Type] & 2   ] Case↓
+ | | | | |▼ SP recovery/reduction.
+ | | | | |■Call Event [Name]: ["X[Bat]Change Parameter"] <CommonEv 135>  / CSelf10[Temp Variable A] / 23:SP / CSelf2[Amount]
+ | | | | |■
+ | | | |◇End◇
+ | | | |▼ Recalculate stats.
+ | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf10[Temp Variable A]
+ | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf10[Temp Variable A] / -1:全武器を総計
+ | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf10[Temp Variable A] / 0:パラメータ補正＋状態名計算
+ | | | |■Call Event [Name]: ["X[Bat]Ally Box: Calc Position"] <CommonEv 174>  / CSelf10[Temp Variable A]
+ | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 5:表示[更新＋ゲージアニメ] / CSelf10[Temp Variable A] / CSelf10[Temp Variable A]
+ | | | |■
+ | | |◇End◇
+ | | |▼  
+ | | |■Condition (Number):   [1] CSelf1[Who?] >=  0  
+ | | |-◇Condition:  [1]  [ CSelf1[Who?] >= 0   ] Case↓
+ | | | |▼ If not "all," end after one ally is processed.
+ | | | |■Exit Event
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇Loop End Point◇◇
+ | |■
+ |-◇Else
+ | |▼ One ally case.
+ | |■Load DB(Var):  CSelf19[Party Size] = VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) 
+ | |■Set Variable: CSelf10[Temp Variable A] = -1 + 0 
+ | |■Repeat Loop [ CSelf19[Party Size] ] Times
+ | | |■Set Variable: CSelf10[Temp Variable A] += 1 + 0 
+ | | |▼ Put Character ID in CSelf11.
+ | | |■Call Event [Name]: CSelf11[Target Character ID] = ["X[Bat]Get Ally ID in Slot"] <CommonEv 141>  / CSelf10[Temp Variable A]
+ | | |■Condition (Number):   [1] CSelf1[Who?] ==  CSelf11[Target Character ID]  
+ | | |-◇Condition:  [1]  [ CSelf1[Who?] == CSelf11[Target Character ID]   ] Case↓
+ | | | |▼ If the corresponding character is in the battle party, process it.
+ | | | |●Label Jump [In-Battle Process] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇Loop End Point◇◇
+ | |■
+ |◇End◇
+ |■
+◇End◇
+■
+[COMMAND_TEXT_END]

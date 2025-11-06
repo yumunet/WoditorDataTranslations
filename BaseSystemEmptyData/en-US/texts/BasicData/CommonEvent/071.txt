@@ -1,0 +1,333 @@
+COMMON_ID=71
+COMMON_NAME=X[Map]Get Parameter
+COMMAND_COLOR=6
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=2
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=Ally ID
+VALINPUT_NAME_1=Target Parameter
+VALINPUT_NAME_2=
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=0
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=2
+LOADTYPE2=0
+LOADTYPE3=2
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=11
+CHOICE_STR_1_0=Level
+CHOICE_STR_1_1=EXP
+CHOICE_STR_1_2=Max HP
+CHOICE_STR_1_3=Max SP
+CHOICE_STR_1_4=HP
+CHOICE_STR_1_5=SP
+CHOICE_STR_1_6=Attack
+CHOICE_STR_1_7=Defense
+CHOICE_STR_1_8=Magic Attack
+CHOICE_STR_1_9=Magic Defense
+CHOICE_STR_1_10=Agility
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=11
+CHOICE_VAL_1_0=10
+CHOICE_VAL_1_1=11
+CHOICE_VAL_1_2=20
+CHOICE_VAL_1_3=21
+CHOICE_VAL_1_4=22
+CHOICE_VAL_1_5=23
+CHOICE_VAL_1_6=30
+CHOICE_VAL_1_7=31
+CHOICE_VAL_1_8=32
+CHOICE_VAL_1_9=33
+CHOICE_VAL_1_10=34
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=10
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=Parameter Value
+RETURN_VAL_TARGET=99
+CSELF_NAME_0=Ally ID
+CSELF_NAME_1=Target Parameter
+CSELF_NAME_2=
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=
+CSELF_NAME_9=
+CSELF_NAME_10=
+CSELF_NAME_11=
+CSELF_NAME_12=
+CSELF_NAME_13=
+CSELF_NAME_14=
+CSELF_NAME_15=
+CSELF_NAME_16=
+CSELF_NAME_17=
+CSELF_NAME_18=
+CSELF_NAME_19=
+CSELF_NAME_20=
+CSELF_NAME_21=
+CSELF_NAME_22=
+CSELF_NAME_23=
+CSELF_NAME_24=
+CSELF_NAME_25=
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=
+CSELF_NAME_29=
+CSELF_NAME_30=
+CSELF_NAME_31=
+CSELF_NAME_32=
+CSELF_NAME_33=
+CSELF_NAME_34=
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=
+CSELF_NAME_41=
+CSELF_NAME_42=
+CSELF_NAME_43=
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=
+CSELF_NAME_89=
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=Parameter Value
+COMMAND_NUM=71
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("  This common event is always used to get the ally's parameter values in the base system.")
+[103][0,1]<0>()("  Works only on the map.")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[111][7,0]<0>(2,1600001,22,2,1600001,23,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("HP")
+[250][5,4]<1>(0,1600000,5,331776,1600099)("","Allies","","HP")
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[103][0,1]<1>()("SP")
+[250][5,4]<1>(0,1600000,7,331776,1600099)("","Allies","","SP")
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[111][7,0]<0>(2,1600001,10,2,1600001,11,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("Level")
+[250][5,4]<1>(0,1600000,4,331776,1600099)("","Allies","","Level")
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[103][0,1]<1>()("EXP")
+[250][5,4]<1>(0,1600000,53,331776,1600099)("","Allies","","Current Level EXP")
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[111][7,0]<0>(2,1600001,20,2,1600001,21,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("Max HP")
+[250][5,4]<1>(21,1600000,0,331776,1600099)("","×Allies Temp Data","","[Temp] Post-Calc Max HP")
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[103][0,1]<1>()("Max SP")
+[250][5,4]<1>(21,1600000,1,331776,1600099)("","×Allies Temp Data","","[Temp] Post-Calc Max SP")
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[111][10,0]<0>(3,1600001,30,2,1600001,31,2,1600001,32,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("Attack")
+[250][5,4]<1>(21,1600000,2,331776,1600099)("","×Allies Temp Data","","[Temp] Post-Calc Attack")
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[103][0,1]<1>()("Defense")
+[250][5,4]<1>(21,1600000,3,331776,1600099)("","×Allies Temp Data","","[Temp] Post-Calc Defense")
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[401][1,0]<0>(3)()
+[103][0,1]<1>()("Magic Attack")
+[250][5,4]<1>(21,1600000,4,331776,1600099)("","×Allies Temp Data","","[Temp] Post-Calc Magic Atk")
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[111][7,0]<0>(2,1600001,33,2,1600001,34,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("Magic Defense")
+[250][5,4]<1>(21,1600000,5,331776,1600099)("","×Allies Temp Data","","[Temp] Post-Calc Magic Def")
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[103][0,1]<1>()("Agility")
+[250][5,4]<1>(21,1600000,6,331776,1600099)("","×Allies Temp Data","","[Temp] Post-Calc Agility")
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Process Overview]
+▼   This common event is always used to get the ally's parameter values in the base system.
+▼   Works only on the map.
+▼ ―――――――――――――――――――――――――――――――――――
+■Condition (Number):   [1] CSelf1[Target Parameter] ==  22  /  [2] CSelf1[Target Parameter] ==  23  
+-◇Condition:  [1]  [ CSelf1[Target Parameter] == 22   ] Case↓
+ |▼ HP
+ |■Load DB(Var):  CSelf99[Parameter Value] = VarDB[ "Allies":CSelf0[Ally ID]:"HP" ] (0:-:6) 
+ |■Exit Event
+ |■
+-◇Condition:  [2]  [ CSelf1[Target Parameter] == 23   ] Case↓
+ |▼ SP
+ |■Load DB(Var):  CSelf99[Parameter Value] = VarDB[ "Allies":CSelf0[Ally ID]:"SP" ] (0:-:8) 
+ |■Exit Event
+ |■
+◇End◇
+■Condition (Number):   [1] CSelf1[Target Parameter] ==  10  /  [2] CSelf1[Target Parameter] ==  11  
+-◇Condition:  [1]  [ CSelf1[Target Parameter] == 10   ] Case↓
+ |▼ Level
+ |■Load DB(Var):  CSelf99[Parameter Value] = VarDB[ "Allies":CSelf0[Ally ID]:"Level" ] (0:-:4) 
+ |■Exit Event
+ |■
+-◇Condition:  [2]  [ CSelf1[Target Parameter] == 11   ] Case↓
+ |▼ EXP
+ |■Load DB(Var):  CSelf99[Parameter Value] = VarDB[ "Allies":CSelf0[Ally ID]:"Current Level EXP" ] (0:-:54) 
+ |■Exit Event
+ |■
+◇End◇
+■Condition (Number):   [1] CSelf1[Target Parameter] ==  20  /  [2] CSelf1[Target Parameter] ==  21  
+-◇Condition:  [1]  [ CSelf1[Target Parameter] == 20   ] Case↓
+ |▼ Max HP
+ |■Load DB(Var):  CSelf99[Parameter Value] = VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Temp] Post-Calc Max HP" ] (17:-:0) 
+ |■Exit Event
+ |■
+-◇Condition:  [2]  [ CSelf1[Target Parameter] == 21   ] Case↓
+ |▼ Max SP
+ |■Load DB(Var):  CSelf99[Parameter Value] = VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Temp] Post-Calc Max SP" ] (17:-:1) 
+ |■Exit Event
+ |■
+◇End◇
+■Condition (Number):   [1] CSelf1[Target Parameter] ==  30  /  [2] CSelf1[Target Parameter] ==  31  /  [3] CSelf1[Target Parameter] ==  32  
+-◇Condition:  [1]  [ CSelf1[Target Parameter] == 30   ] Case↓
+ |▼ Attack
+ |■Load DB(Var):  CSelf99[Parameter Value] = VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Temp] Post-Calc Attack" ] (17:-:2) 
+ |■Exit Event
+ |■
+-◇Condition:  [2]  [ CSelf1[Target Parameter] == 31   ] Case↓
+ |▼ Defense
+ |■Load DB(Var):  CSelf99[Parameter Value] = VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Temp] Post-Calc Defense" ] (17:-:3) 
+ |■Exit Event
+ |■
+-◇Condition:  [3]  [ CSelf1[Target Parameter] == 32   ] Case↓
+ |▼ Magic Attack
+ |■Load DB(Var):  CSelf99[Parameter Value] = VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Temp] Post-Calc Magic Atk" ] (17:-:4) 
+ |■Exit Event
+ |■
+◇End◇
+■Condition (Number):   [1] CSelf1[Target Parameter] ==  33  /  [2] CSelf1[Target Parameter] ==  34  
+-◇Condition:  [1]  [ CSelf1[Target Parameter] == 33   ] Case↓
+ |▼ Magic Defense
+ |■Load DB(Var):  CSelf99[Parameter Value] = VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Temp] Post-Calc Magic Def" ] (17:-:5) 
+ |■Exit Event
+ |■
+-◇Condition:  [2]  [ CSelf1[Target Parameter] == 34   ] Case↓
+ |▼ Agility
+ |■Load DB(Var):  CSelf99[Parameter Value] = VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Temp] Post-Calc Agility" ] (17:-:6) 
+ |■Exit Event
+ |■
+◇End◇
+■
+[COMMAND_TEXT_END]

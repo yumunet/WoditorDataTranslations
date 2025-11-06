@@ -1,0 +1,261 @@
+COMMON_ID=149
+COMMON_NAME=X[Bat]Return Battle DB to Allies DB
+COMMAND_COLOR=6
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=2
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=入力元戦闘DB
+VALINPUT_NAME_1=格納主人公ID
+VALINPUT_NAME_2=
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=0
+LOADTYPE2=0
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=0
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=0
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=
+RETURN_VAL_TARGET=-1
+CSELF_NAME_0=入力元戦闘DB
+CSELF_NAME_1=格納主人公ID
+CSELF_NAME_2=
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=キャラ名
+CSELF_NAME_6=グラフィック名
+CSELF_NAME_7=
+CSELF_NAME_8=
+CSELF_NAME_9=
+CSELF_NAME_10=一時変数A
+CSELF_NAME_11=一時変数B
+CSELF_NAME_12=
+CSELF_NAME_13=
+CSELF_NAME_14=
+CSELF_NAME_15=状態残りターン
+CSELF_NAME_16=状態最大数
+CSELF_NAME_17=移動中も持続？
+CSELF_NAME_18=戦闘不能の扱い
+CSELF_NAME_19=
+CSELF_NAME_20=
+CSELF_NAME_21=
+CSELF_NAME_22=
+CSELF_NAME_23=
+CSELF_NAME_24=
+CSELF_NAME_25=
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=
+CSELF_NAME_29=
+CSELF_NAME_30=
+CSELF_NAME_31=
+CSELF_NAME_32=
+CSELF_NAME_33=
+CSELF_NAME_34=
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=HP
+CSELF_NAME_41=SP
+CSELF_NAME_42=最大HP
+CSELF_NAME_43=最大SP
+CSELF_NAME_44=攻撃力
+CSELF_NAME_45=防御力
+CSELF_NAME_46=精神攻撃
+CSELF_NAME_47=精神防御
+CSELF_NAME_48=敏捷性
+CSELF_NAME_49=命中率
+CSELF_NAME_50=回避率
+CSELF_NAME_51=クリティカル
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=装備武器
+CSELF_NAME_61=装備防具1
+CSELF_NAME_62=装備防具2
+CSELF_NAME_63=装備防具3
+CSELF_NAME_64=装備防具4
+CSELF_NAME_65=装備防具5
+CSELF_NAME_66=装備防具6
+CSELF_NAME_67=装備防具7
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=コマンド１
+CSELF_NAME_71=コマンド２
+CSELF_NAME_72=コマンド３
+CSELF_NAME_73=コマンド４
+CSELF_NAME_74=コマンド５
+CSELF_NAME_75=コマンド６
+CSELF_NAME_76=コマンド７
+CSELF_NAME_77=コマンド８
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=戦闘後のHP(1)SP(2)回復？
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=
+CSELF_NAME_89=
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=
+COMMAND_NUM=46
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("　戦闘時に使用される可変DBの「戦闘DB」から、移動時に使用する「主人公DB」へ")
+[103][0,1]<0>()("　パラメータをコピーします。戦闘によるHP・SP・状態の変化を移動時のパラメータ反映するためです。")
+[103][0,1]<0>()("")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("　　　　データ読み込み")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[250][5,4]<0>(10,1600000,4,331776,1600040)("","×┏Battle Temp Status","","HP")
+[250][5,4]<0>(10,1600000,6,331776,1600041)("","×┏Battle Temp Status","","SP")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("　　　　状態をコピー")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("移動時DBへ状態を全てコピーする")
+[121][4,0]<0>(1600010,-1,0,0)()
+[250][5,4]<0>(8,-1,0,70144,1600016)("","States","","")
+[179][1,0]<0>(1600016)()
+[121][4,0]<1>(1600010,1,0,256)()
+[103][0,1]<1>()("移動中も持続する場合だけコピー")
+[250][5,4]<1>(8,1600010,7,332288,1600017)("","States","","Category (Battle/Map)")
+[111][4,0]<1>(1,1600017,1,2)()
+[401][1,0]<1>(1)()
+[250][5,4]<2>(13,1600000,1600010,69632,1600015)("","×┣State List","","")
+[250][5,4]<2>(4,1600001,1600010,65536,1600015)("","┗ State List","","")
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("　　　　データを書き込み")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[250][5,4]<0>(0,1600001,5,327680,1600040)("","Allies","","HP")
+[250][5,4]<0>(0,1600001,7,327680,1600041)("","Allies","","SP")
+[103][0,1]<0>()("対象主人公DBの状態周りを更新")
+[300][3,1]<0>(0,1,1600001)("X[Map]CalcTempStats <Initialize>")
+[300][3,1]<0>(0,1,1600001)("X[Map]CalcTempStats <Equipments>")
+[300][3,1]<0>(0,1,1600001)("X[Map]CalcTempStats <StatusEffects>")
+[300][5,1]<0>(0,3,1600001,-1,2)("X[Map]Add/Remove State")
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Process Overview]
+▼ 　戦闘時に使用される可変DBの「戦闘DB」から、移動時に使用する「主人公DB」へ
+▼ 　パラメータをコピーします。戦闘によるHP・SP・状態の変化を移動時のパラメータ反映するためです。
+▼ 
+▼ [Databases Accessed by This Common Event]
+▼  
+▼ [Other Common Events Called from Here]
+▼  
+▼ [Main Common Events Calling This]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ 　　　　データ読み込み
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■Load DB(Var):  CSelf40[HP] = VarDB[ "×┏Battle Temp Status":CSelf0[入力元戦闘DB]:"HP" ] (10:-:5) 
+■Load DB(Var):  CSelf41[SP] = VarDB[ "×┏Battle Temp Status":CSelf0[入力元戦闘DB]:"SP" ] (10:-:7) 
+▼  
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ 　　　　状態をコピー
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ 移動時DBへ状態を全てコピーする
+■Set Variable: CSelf10[一時変数A] = -1 + 0 
+■Load DB(User):  CSelf16[状態最大数] = UserDB[Type "States"(8)'s Data Count]
+■Repeat Loop [ CSelf16[状態最大数] ] Times
+ |■Set Variable: CSelf10[一時変数A] += 1 + 0 
+ |▼ 移動中も持続する場合だけコピー
+ |■Load DB(User):  CSelf17[移動中も持続？] = UserDB[ "States":CSelf10[一時変数A]:"Category (Battle/Map)" ] (8:-:7) 
+ |■Condition (Number):   [1] CSelf17[移動中も持続？] ==  1  
+ |-◇Condition:  [1]  [ CSelf17[移動中も持続？] == 1   ] Case↓
+ | |■Load DB(Var):  CSelf15[状態残りターン] = VarDB[ "×┣State List":CSelf0[入力元戦闘DB]:CSelf10[一時変数A] ] (13:-:-) 
+ | |■Write to DB(Var): VarDB[ "┗ State List":CSelf1[格納主人公ID]:CSelf10[一時変数A] ] (5:-:-) =  CSelf15[状態残りターン]
+ | |■
+ |◇End◇
+ |■
+◇Loop End Point◇◇
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ 　　　　データを書き込み
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■Write to DB(Var): VarDB[ "Allies":CSelf1[格納主人公ID]:"HP" ] (0:-:6) =  CSelf40[HP]
+■Write to DB(Var): VarDB[ "Allies":CSelf1[格納主人公ID]:"SP" ] (0:-:8) =  CSelf41[SP]
+▼ 対象主人公DBの状態周りを更新
+■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf1[格納主人公ID]
+■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf1[格納主人公ID]
+■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf1[格納主人公ID]
+■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf1[格納主人公ID] / -1:Remove All (Force) / 2:Update
+■
+[COMMAND_TEXT_END]

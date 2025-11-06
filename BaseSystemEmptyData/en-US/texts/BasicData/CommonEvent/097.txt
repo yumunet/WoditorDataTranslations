@@ -1,0 +1,269 @@
+COMMON_ID=97
+COMMON_NAME=X[Map]Display Char HP/SP Recovery
+COMMAND_COLOR=5
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=3
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=キャラ位置[0-5]
+VALINPUT_NAME_1=HP回復量
+VALINPUT_NAME_2=SP回復量
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=0
+LOADTYPE2=0
+LOADTYPE3=2
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=0
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=4
+CHOICE_STR_3_0=HPダメージ
+CHOICE_STR_3_1=HP回復
+CHOICE_STR_3_2=SPダメージ
+CHOICE_STR_3_3=SP回復
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=0
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=4
+CHOICE_VAL_3_0=0
+CHOICE_VAL_3_1=1
+CHOICE_VAL_3_2=2
+CHOICE_VAL_3_3=3
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=
+RETURN_VAL_TARGET=-1
+CSELF_NAME_0=キャラ位置[0-5]
+CSELF_NAME_1=HP回復量
+CSELF_NAME_2=SP回復量
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=
+CSELF_NAME_9=
+CSELF_NAME_10=一時変数A
+CSELF_NAME_11=一時変数B
+CSELF_NAME_12=一時変数C
+CSELF_NAME_13=一時変数D
+CSELF_NAME_14=一時変数E
+CSELF_NAME_15=
+CSELF_NAME_16=
+CSELF_NAME_17=
+CSELF_NAME_18=
+CSELF_NAME_19=フォントサイズ
+CSELF_NAME_20=
+CSELF_NAME_21=
+CSELF_NAME_22=
+CSELF_NAME_23=
+CSELF_NAME_24=
+CSELF_NAME_25=
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=×座標倍率
+CSELF_NAME_29=
+CSELF_NAME_30=
+CSELF_NAME_31=
+CSELF_NAME_32=
+CSELF_NAME_33=
+CSELF_NAME_34=
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=
+CSELF_NAME_41=
+CSELF_NAME_42=
+CSELF_NAME_43=
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=座標倍率X[x10]
+CSELF_NAME_89=座標倍率Y[x10]
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=
+COMMAND_NUM=46
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("　指定したキャラに、指定値のHP・SP回復の数字ポップアップを表示します。")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()(" 　パラメータ設定")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("固定値を設定")
+[103][0,1]<0>()("Ver2.20　座標倍率を縦横別に修正")
+[250][5,4]<0>(18,97,0,69632,1600088)("","Base System Variables","","")
+[250][5,4]<0>(18,98,0,69632,1600089)("","Base System Variables","","")
+[103][0,1]<0>()("キャラ座標を取得")
+[300][3,1]<0>(0,1,1600000)("X[Map]Character Box: Calc Pos")
+[250][5,4]<0>(18,37,0,69632,1600012)("","Base System Variables","","")
+[250][5,4]<0>(18,38,0,69632,1600013)("","Base System Variables","","")
+[103][0,1]<0>()("HP回復エフェクト")
+[121][4,0]<0>(1600012,0,1600088,24832)()
+[121][4,0]<0>(1600013,0,1600089,24832)()
+[121][4,0]<0>(1600013,2,1600089,8704)()
+[111][4,0]<0>(1,1600001,1,1)()
+[401][1,0]<0>(1)()
+[300][6,1]<1>(0,4,1600012,1600013,1600001,1)("X[Map]Display Dmg/Recovery Popup")
+[300][5,1]<1>(0,3,30,1600000,1600014)("X[Map]Draw Character Box")
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[103][0,1]<0>()("SP回復エフェクト")
+[121][4,0]<0>(1600013,2,1600089,8448)()
+[111][4,0]<0>(1,1600002,1,1)()
+[401][1,0]<0>(1)()
+[300][6,1]<1>(0,4,1600012,1600013,1600002,3)("X[Map]Display Dmg/Recovery Popup")
+[111][4,0]<1>(1,1600001,0,2)()
+[401][1,0]<1>(1)()
+[103][0,1]<2>()("HPが光ってない場合だけ")
+[300][5,1]<2>(0,3,30,1600000,1600014)("X[Map]Draw Character Box")
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[121][4,0]<0>(1600013,1,1600089,8704)()
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("キャラIDを取得")
+[300][4,1]<0>(0,16777217,1600000,1600014)("X[Map]Get Ally ID")
+[103][0,1]<0>()("該当キャラのパラメータを更新")
+[300][5,1]<0>(0,3,3,1600000,1600014)("X[Map]Draw Character Box")
+[180][1,0]<0>(1)()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Process Overview]
+▼ 　指定したキャラに、指定値のHP・SP回復の数字ポップアップを表示します。
+▼ ―――――――――――――――――――――――――――――――――――
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼  　パラメータ設定
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ 固定値を設定
+▼ Ver2.20　座標倍率を縦横別に修正
+■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
+■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
+▼ キャラ座標を取得
+■Call Event [Name]: ["X[Map]Character Box: Calc Pos"] <CommonEv 91>  / CSelf0[キャラ位置[0-5]]
+■Load DB(Var):  CSelf12[一時変数C] = VarDB[ "Base System Variables":37:0 ] (18:Status Display End X:Number) 
+■Load DB(Var):  CSelf13[一時変数D] = VarDB[ "Base System Variables":38:0 ] (18:Status Display End Y:Number) 
+▼ HP回復エフェクト
+■Set Variable: CSelf12[一時変数C] += 0  to  CSelf88[座標倍率X[x10]] 
+■Set Variable: CSelf13[一時変数D] += 0  to  CSelf89[座標倍率Y[x10]] 
+■Set Variable: CSelf13[一時変数D] -= 2 * CSelf89[座標倍率Y[x10]] 
+■Condition (Number):   [1] CSelf1[HP回復量] >=  1  
+-◇Condition:  [1]  [ CSelf1[HP回復量] >= 1   ] Case↓
+ |■Call Event [Name]: ["X[Map]Display Dmg/Recovery Popup"] <CommonEv 96>  / CSelf12[一時変数C] / CSelf13[一時変数D] / CSelf1[HP回復量] / 1:HP回復
+ |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 30:回復 / CSelf0[キャラ位置[0-5]] / CSelf14[一時変数E]
+ |■
+◇End◇
+▼ SP回復エフェクト
+■Set Variable: CSelf13[一時変数D] += 2 * CSelf89[座標倍率Y[x10]] 
+■Condition (Number):   [1] CSelf2[SP回復量] >=  1  
+-◇Condition:  [1]  [ CSelf2[SP回復量] >= 1   ] Case↓
+ |■Call Event [Name]: ["X[Map]Display Dmg/Recovery Popup"] <CommonEv 96>  / CSelf12[一時変数C] / CSelf13[一時変数D] / CSelf2[SP回復量] / 3:SP回復
+ |■Condition (Number):   [1] CSelf1[HP回復量] ==  0  
+ |-◇Condition:  [1]  [ CSelf1[HP回復量] == 0   ] Case↓
+ | |▼ HPが光ってない場合だけ
+ | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 30:回復 / CSelf0[キャラ位置[0-5]] / CSelf14[一時変数E]
+ | |■
+ |◇End◇
+ |■
+◇End◇
+■Set Variable: CSelf13[一時変数D] -= 1 * CSelf89[座標倍率Y[x10]] 
+▼  
+▼ キャラIDを取得
+■Call Event [Name]: CSelf14[一時変数E] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf0[キャラ位置[0-5]]
+▼ 該当キャラのパラメータを更新
+■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 3:表示[瞬間表示] / CSelf0[キャラ位置[0-5]] / CSelf14[一時変数E]
+■Wait: 1 Frames
+■
+[COMMAND_TEXT_END]

@@ -1,0 +1,289 @@
+TYPE_ID=6
+DATANAME_LOAD_TYPE=0
+DATANAME_LOAD_NAME=
+ITEM_NUM=0
+NUMDATA_TYPE_NUM=0
+STRDATA_TYPE_NUM=0
+DATA_NUM=170
+TYPENAME=システム変数名
+ITEMNAME_NUM=0
+MEMO=システム変数として<<\n>>読み込める内容の<<\n>>ラベルを貼るための<<\n>>もの。<<\n>><<\n>>※作者以外は<<\n>>　いじる必要なし
+ITEMTYPE_NUM=100
+ITEM_LOADTYPE_0=0
+ITEM_LOADTYPE_1=0
+ITEM_LOADTYPE_2=0
+ITEM_LOADTYPE_3=0
+ITEM_LOADTYPE_4=0
+ITEM_LOADTYPE_5=0
+ITEM_LOADTYPE_6=0
+ITEM_LOADTYPE_7=0
+ITEM_LOADTYPE_8=0
+ITEM_LOADTYPE_9=0
+ITEM_LOADTYPE_10=0
+ITEM_LOADTYPE_11=0
+ITEM_LOADTYPE_12=0
+ITEM_LOADTYPE_13=0
+ITEM_LOADTYPE_14=0
+ITEM_LOADTYPE_15=0
+ITEM_LOADTYPE_16=0
+ITEM_LOADTYPE_17=0
+ITEM_LOADTYPE_18=0
+ITEM_LOADTYPE_19=0
+ITEM_LOADTYPE_20=0
+ITEM_LOADTYPE_21=0
+ITEM_LOADTYPE_22=0
+ITEM_LOADTYPE_23=0
+ITEM_LOADTYPE_24=0
+ITEM_LOADTYPE_25=0
+ITEM_LOADTYPE_26=0
+ITEM_LOADTYPE_27=0
+ITEM_LOADTYPE_28=0
+ITEM_LOADTYPE_29=0
+ITEM_LOADTYPE_30=0
+ITEM_LOADTYPE_31=0
+ITEM_LOADTYPE_32=0
+ITEM_LOADTYPE_33=0
+ITEM_LOADTYPE_34=0
+ITEM_LOADTYPE_35=0
+ITEM_LOADTYPE_36=0
+ITEM_LOADTYPE_37=0
+ITEM_LOADTYPE_38=0
+ITEM_LOADTYPE_39=0
+ITEM_LOADTYPE_40=0
+ITEM_LOADTYPE_41=0
+ITEM_LOADTYPE_42=0
+ITEM_LOADTYPE_43=0
+ITEM_LOADTYPE_44=0
+ITEM_LOADTYPE_45=0
+ITEM_LOADTYPE_46=0
+ITEM_LOADTYPE_47=0
+ITEM_LOADTYPE_48=0
+ITEM_LOADTYPE_49=0
+ITEM_LOADTYPE_50=0
+ITEM_LOADTYPE_51=0
+ITEM_LOADTYPE_52=0
+ITEM_LOADTYPE_53=0
+ITEM_LOADTYPE_54=0
+ITEM_LOADTYPE_55=0
+ITEM_LOADTYPE_56=0
+ITEM_LOADTYPE_57=0
+ITEM_LOADTYPE_58=0
+ITEM_LOADTYPE_59=0
+ITEM_LOADTYPE_60=0
+ITEM_LOADTYPE_61=0
+ITEM_LOADTYPE_62=0
+ITEM_LOADTYPE_63=0
+ITEM_LOADTYPE_64=0
+ITEM_LOADTYPE_65=0
+ITEM_LOADTYPE_66=0
+ITEM_LOADTYPE_67=0
+ITEM_LOADTYPE_68=0
+ITEM_LOADTYPE_69=0
+ITEM_LOADTYPE_70=0
+ITEM_LOADTYPE_71=0
+ITEM_LOADTYPE_72=0
+ITEM_LOADTYPE_73=0
+ITEM_LOADTYPE_74=0
+ITEM_LOADTYPE_75=0
+ITEM_LOADTYPE_76=0
+ITEM_LOADTYPE_77=0
+ITEM_LOADTYPE_78=0
+ITEM_LOADTYPE_79=0
+ITEM_LOADTYPE_80=0
+ITEM_LOADTYPE_81=0
+ITEM_LOADTYPE_82=0
+ITEM_LOADTYPE_83=0
+ITEM_LOADTYPE_84=0
+ITEM_LOADTYPE_85=0
+ITEM_LOADTYPE_86=0
+ITEM_LOADTYPE_87=0
+ITEM_LOADTYPE_88=0
+ITEM_LOADTYPE_89=0
+ITEM_LOADTYPE_90=0
+ITEM_LOADTYPE_91=0
+ITEM_LOADTYPE_92=0
+ITEM_LOADTYPE_93=0
+ITEM_LOADTYPE_94=0
+ITEM_LOADTYPE_95=0
+ITEM_LOADTYPE_96=0
+ITEM_LOADTYPE_97=0
+ITEM_LOADTYPE_98=0
+ITEM_LOADTYPE_99=0
+VMEMO_NUM=0
+CHOICE_NUM=0
+CHOICE_VAL_NUM=0
+DEFAULT_VAL_NUM=0
+<<--CSV_START-->>
+
+<<!--DATANAME--!>>顔ｸﾞﾗﾌｨｯｸ番号,
+<<!--DATANAME--!>>ﾒｯｾｰｼﾞｳｨﾝﾄﾞｳ X座標,
+<<!--DATANAME--!>>ﾒｯｾｰｼﾞｳｨﾝﾄﾞｳ Y座標,
+<<!--DATANAME--!>>選択肢ｳｨﾝﾄﾞｳ X座標,
+<<!--DATANAME--!>>選択肢ｳｨﾝﾄﾞｳ Y座標,
+<<!--DATANAME--!>>ﾎﾟｰｽﾞｶｰｿﾙX (Sys1に足した位置),
+<<!--DATANAME--!>>ﾎﾟｰｽﾞｶｰｿﾙY (Sys2に足した位置),
+<<!--DATANAME--!>>選択肢次回初期位置(0<<COMMA>>1<<COMMA>>2...),
+<<!--DATANAME--!>>基本フォントサイズ,
+<<!--DATANAME--!>>ﾒｯｾｰｼﾞ速度( X 文字/秒),
+<<!--DATANAME--!>>ﾒｯｾｰｼﾞ表示ｳｪｲﾄ(X ﾌﾚｰﾑ),
+<<!--DATANAME--!>>ﾋﾟｸﾁｬ文字速度( X 文字/秒),
+<<!--DATANAME--!>>文章の表示 実行中？(1=ON),
+<<!--DATANAME--!>>ｲﾍﾞﾝﾄ実行中？(1=ON),
+<<!--DATANAME--!>>選択肢ｳｨﾝﾄﾞｳ表示する?(1=ON),
+<<!--DATANAME--!>>方向ｷｰﾘﾋﾟｰﾄ初ｳｪｲﾄ(ﾌﾚｰﾑ数指定),
+<<!--DATANAME--!>>方向ｷｰﾘﾋﾟｰﾄ次ｳｪｲﾄ(ﾌﾚｰﾑ数指定),
+<<!--DATANAME--!>>選択肢SE番号：決定(Sys3),
+<<!--DATANAME--!>>選択肢SE番号：選択(Sys3),
+<<!--DATANAME--!>>選択肢SE番号：ｷｬﾝｾﾙ(Sys3),
+<<!--DATANAME--!>>選択肢ｶｰｿﾙ現位置(0<<COMMA>>1<<COMMA>>2..非選択時:-1),
+<<!--DATANAME--!>>文字影付ける?(0=OFF<<COMMA>>1以上=ON),
+<<!--DATANAME--!>>選択肢ｶｰｿﾙ表示ﾓｰﾄﾞ?(0=通常<<COMMA>>1=加算),
+<<!--DATANAME--!>>ルビのフォントサイズ,
+<<!--DATANAME--!>>[読]ｾｰﾌﾞﾃﾞｰﾀ読込判定(1=成功 0=失敗),
+<<!--DATANAME--!>>現在ｾｰﾌﾞﾃﾞｰﾀ番号(0～),
+<<!--DATANAME--!>>選択肢ｳｨﾝﾄﾞｳ X余白,
+<<!--DATANAME--!>>選択肢ｳｨﾝﾄﾞｳ Y余白,
+<<!--DATANAME--!>>経過ﾌﾚｰﾑ数[1000万で一周],
+<<!--DATANAME--!>>プレイ時間（1秒単位）,
+<<!--DATANAME--!>>[読]プレイ時間(ﾐﾘ秒単位),
+<<!--DATANAME--!>>[読]内部FPS(毎秒変化）,
+<<!--DATANAME--!>>[読]描画FPS(毎秒変化）,
+<<!--DATANAME--!>>ﾌﾚｰﾑｽｷｯﾌﾟﾚﾍﾞﾙ(0～2),
+<<!--DATANAME--!>>ｷｬﾗ表示Y補正[-(ﾀｲﾙ-1)～0]px,
+<<!--DATANAME--!>>主人公移動中？(1=YES) ﾏｽの間にいる?,
+<<!--DATANAME--!>>主人公の影番号(Sys9),
+<<!--DATANAME--!>>仲間の車間距離(1あたり1歩),
+<<!--DATANAME--!>>ｷｰﾎﾞ入力中受付可?[1:ﾏｳｽﾀｯﾁ+2ﾊﾟｯﾄﾞ] *[ｷｰ入力]のみ,
+<<!--DATANAME--!>>[読]ｷｰﾎﾞ入力状態 0=Enter -1=ｷｬﾝｾﾙ,
+<<!--DATANAME--!>>ｷｰﾎﾞ入力文字列 X座標,
+<<!--DATANAME--!>>ｷｰﾎﾞ入力文字列 Y座標,
+<<!--DATANAME--!>>ｷｰﾎﾞ入力文字ｱﾝﾁｴｲﾘｱｽ[0無/1有/+2ｴｯｼﾞ],
+<<!--DATANAME--!>>[読]ﾈｯﾄ/DL済ｻｲｽﾞ(byte),
+<<!--DATANAME--!>>[読]ﾈｯﾄ/DL予定ｻｲｽﾞ(byte)[不明なら-1],
+<<!--DATANAME--!>>[読]ﾈｯﾄ/接続速度,
+<<!--DATANAME--!>>[読]ﾈｯﾄ/接続時間(秒),
+<<!--DATANAME--!>>[読]ﾈｯﾄ/残り時間(秒),
+<<!--DATANAME--!>>[読]ﾈｯﾄ/状態 -1失敗 0通信中 1終了,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>◆ 以下 ｷｰｺﾝﾌｨｸﾞ ◆,
+<<!--DATANAME--!>>決定ｷｰ(ｷｰﾎﾞｰﾄﾞ),
+<<!--DATANAME--!>>ｷｬﾝｾﾙｷｰ(ｷｰﾎﾞｰﾄﾞ),
+<<!--DATANAME--!>>ｻﾌﾞｷｰ（ｷｰﾎﾞｰﾄﾞ）,
+<<!--DATANAME--!>>決定ｷｰ（ﾊﾟｯﾄﾞ）,
+<<!--DATANAME--!>>ｷｬﾝｾﾙｷｰ（ﾊﾟｯﾄﾞ）,
+<<!--DATANAME--!>>ｻﾌﾞｷｰ（ﾊﾟｯﾄﾞ）,
+<<!--DATANAME--!>>◆ここまでｷｰｺﾝﾌｨｸﾞ◆,
+<<!--DATANAME--!>>決定ｷｰﾘﾋﾟｰﾄする？(1=ON) *[キー待ち]用,
+<<!--DATANAME--!>>ｷｬﾝｾﾙｷｰﾘﾋﾟｰﾄする？(1=ON) *[キー待ち]用,
+<<!--DATANAME--!>>フォグ番号(Sys13),
+<<!--DATANAME--!>>フォグX速度,
+<<!--DATANAME--!>>フォグY速度,
+<<!--DATANAME--!>>ﾌｫｸﾞ描画ﾀｲﾌﾟ(0通常1加算2減算),
+<<!--DATANAME--!>>ﾌｫｸﾞ不透明度(0～255),
+<<!--DATANAME--!>>遠景番号(Sys13),
+<<!--DATANAME--!>>遠景X速度,
+<<!--DATANAME--!>>遠景Y速度,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>マウスＸ位置,
+<<!--DATANAME--!>>マウスＹ位置,
+<<!--DATANAME--!>>文･選択肢のﾏｳｽ入力(1なら受付),
+<<!--DATANAME--!>>ﾏｳｽﾎﾟｲﾝﾀ表示する?(1=ON),
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>現在の[年],
+<<!--DATANAME--!>>現在の[月],
+<<!--DATANAME--!>>現在の[日],
+<<!--DATANAME--!>>現在の[時],
+<<!--DATANAME--!>>現在の[分],
+<<!--DATANAME--!>>現在の[秒],
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>画面ｻｲｽﾞ(0=320x240<<COMMA>>1=640x480<<COMMA>>2=800x600 他-1),
+<<!--DATANAME--!>>描画ﾓｰﾄﾞ(0=3Dﾓｰﾄﾞ<<COMMA>>1=ｿﾌﾄｳｪｱ),
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>仲間1影番号(-1=主人公と同じ）,
+<<!--DATANAME--!>>仲間2影番号(-1=主人公と同じ）,
+<<!--DATANAME--!>>仲間3影番号(-1=主人公と同じ）,
+<<!--DATANAME--!>>仲間4影番号(-1=主人公と同じ）,
+<<!--DATANAME--!>>仲間5影番号(-1=主人公と同じ）,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>再生中BGMパン[-255～255],
+<<!--DATANAME--!>>再生中BGSパン(Ch=Sys99)[-255～255],
+<<!--DATANAME--!>>再生中BGM音量[%],
+<<!--DATANAME--!>>再生中BGMテンポ/周波数[%],
+<<!--DATANAME--!>>再生中BGS音量(Ch=Sys99)[%],
+<<!--DATANAME--!>>再生中BGS周波数(Ch=Sys99)[%],
+<<!--DATANAME--!>>対象とするBGSﾁｬﾝﾈﾙ[Ch],
+<<!--DATANAME--!>>BGM音量補正[%],
+<<!--DATANAME--!>>BGS音量補正[%],
+<<!--DATANAME--!>>SE音量補正[%],
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>Ｘスクロール値,
+<<!--DATANAME--!>>Ｙスクロール値,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>[読]現ﾌﾚｰﾑ開始からのｺﾏﾝﾄﾞ処理数,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>現在の乱数のシード(種),
+<<!--DATANAME--!>>[読]画面アクティブ状態(1=アクティブ),
+<<!--DATANAME--!>>[読]テストプレイ中？(1=YES),
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>[読]動作ﾊﾞｰｼﾞｮﾝ調整(x100),
+<<!--DATANAME--!>>[読]Game.exeバージョン(x100),
+<<!--DATANAME--!>>[読]画面サイズＸ,
+<<!--DATANAME--!>>[読]画面サイズＹ,
+<<!--DATANAME--!>>[読]タイルサイズ,
+<<!--DATANAME--!>>[読]基本画面倍率x[1-3],
+<<!--DATANAME--!>>ﾘｾｯﾄ履歴 0=ﾅｼ/1=F12/2=[ﾀｲﾄﾙ画面へ]ｺﾏﾝﾄﾞ,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>Map&Evｽﾞｰﾑ時なめらか=1[α版],
+<<!--DATANAME--!>>次表示ﾋﾟｸﾁｬ拡縮くっきり(1=YES),
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>フォント太さ(1～10),
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>Mapﾀｲﾙ非ｾｰﾌﾞﾌﾗｸﾞ(1=YES),
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>Ev斜め移動 X速度補正[%],
+<<!--DATANAME--!>>Ev斜め移動 Y速度補正[%],
+<<!--DATANAME--!>>主人公 中心X補正,
+<<!--DATANAME--!>>主人公 中心Y補正,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>POVｷｰで方向入力ｵﾝ？[1=ON],
+<<!--DATANAME--!>>左ｽﾃｨｯｸで方向入力ｵﾝ？[1=ON],
+<<!--DATANAME--!>>精密ｳｨﾝﾄﾞｳ拡大率[0.1%](-1=自動),
+<<!--DATANAME--!>>ｳｨﾝﾄﾞｳ拡大率[%](-1=自動),
+<<!--DATANAME--!>>画面ﾓｰﾄﾞ[ｳｨﾝﾄﾞｳ:0/仮想全:1/全:2],
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>ｳｨﾝﾄﾞｳ拡縮ﾓｰﾄﾞ[くっきり=0/なめらか=1],
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>[読]処理可能ｺﾏﾝﾄﾞ[通常0/プロ版1],
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>DirectInputならPS/Swiｺﾝ準拠?=1(1推奨),
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>特殊文字変換を無効化[1=ON],
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>[読]ｷｬﾗｸﾀｰ移動可能方向[4/8] ※ｹﾞｰﾑ基本設定,
+<<!--DATANAME--!>>[読]ｷｬﾗｸﾀｰ移動幅[0=0.5/1=1ﾏｽ] ※ｹﾞｰﾑ基本設定,
+<<!--DATANAME--!>>[読]横方向の字詰めピクセル[px] ※ｹﾞｰﾑ基本設定,
+<<!--DATANAME--!>>[読]改行の間隔[px] ※ｹﾞｰﾑ基本設定,
+<<!--DATANAME--!>>[読]選択肢の改行間隔 ※ｹﾞｰﾑ基本設定,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>> -----,
+
+<<--CSV_END-->>

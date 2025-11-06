@@ -1,0 +1,351 @@
+COMMON_ID=135
+COMMON_NAME=X[Bat]Change Parameter
+COMMAND_COLOR=6
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=3
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=対象戦闘ｽﾛｯﾄ
+VALINPUT_NAME_1=対象パラメータ
+VALINPUT_NAME_2=増減値
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=0
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=2
+LOADTYPE2=0
+LOADTYPE3=2
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=9
+CHOICE_STR_1_0=最大HP
+CHOICE_STR_1_1=最大SP
+CHOICE_STR_1_2=HP
+CHOICE_STR_1_3=SP
+CHOICE_STR_1_4=攻撃力
+CHOICE_STR_1_5=防御力
+CHOICE_STR_1_6=精神攻撃
+CHOICE_STR_1_7=精神防御
+CHOICE_STR_1_8=敏捷性
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=3
+CHOICE_STR_3_0=なし
+CHOICE_STR_3_1=有り
+CHOICE_STR_3_2=戦闘後処理用
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=9
+CHOICE_VAL_1_0=20
+CHOICE_VAL_1_1=21
+CHOICE_VAL_1_2=22
+CHOICE_VAL_1_3=23
+CHOICE_VAL_1_4=30
+CHOICE_VAL_1_5=31
+CHOICE_VAL_1_6=32
+CHOICE_VAL_1_7=33
+CHOICE_VAL_1_8=34
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=3
+CHOICE_VAL_3_0=0
+CHOICE_VAL_3_1=1
+CHOICE_VAL_3_2=2
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=20
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=戦闘不能？
+RETURN_VAL_TARGET=99
+CSELF_NAME_0=対象戦闘ｽﾛｯﾄ
+CSELF_NAME_1=対象パラメータ
+CSELF_NAME_2=増減値
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=パラメータ名
+CSELF_NAME_9=表示メッセージ文
+CSELF_NAME_10=一時変数A
+CSELF_NAME_11=一時変数B
+CSELF_NAME_12=
+CSELF_NAME_13=
+CSELF_NAME_14=
+CSELF_NAME_15=
+CSELF_NAME_16=
+CSELF_NAME_17=
+CSELF_NAME_18=
+CSELF_NAME_19=
+CSELF_NAME_20=
+CSELF_NAME_21=
+CSELF_NAME_22=
+CSELF_NAME_23=
+CSELF_NAME_24=
+CSELF_NAME_25=
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=
+CSELF_NAME_29=
+CSELF_NAME_30=
+CSELF_NAME_31=
+CSELF_NAME_32=
+CSELF_NAME_33=
+CSELF_NAME_34=
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=
+CSELF_NAME_41=
+CSELF_NAME_42=
+CSELF_NAME_43=
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=
+CSELF_NAME_89=
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=戦闘不能？
+COMMAND_NUM=79
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("　戦闘システム内で主人公のパラメータを増減させるときは、必ずこのコモンイベントを使用します。")
+[103][0,1]<0>()("")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[121][4,0]<0>(1600099,0,0,0)()
+[111][7,0]<0>(2,1600001,22,2,1600001,23,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("HP")
+[250][5,4]<1>(11,1600000,0,331776,1600010)("","×┏Battle Temp Status","","[Temp] Post-Calc Max HP")
+[250][5,4]<1>(11,1600000,5,327696,1600002)("","×┏Battle Temp Status","","HP")
+[250][5,4]<1>(11,1600000,5,327792,1600010)("","×┏Battle Temp Status","","HP")
+[250][5,4]<1>(11,1600000,5,327776,0)("","×┏Battle Temp Status","","HP")
+[103][0,1]<1>()("もしHPが0以下になったら戦闘不能を付与する")
+[250][5,4]<1>(11,1600000,5,331776,1600010)("","×┏Battle Temp Status","","HP")
+[111][4,0]<1>(1,1600010,0,3)()
+[401][1,0]<1>(1)()
+[300][6,1]<2>(0,4,1600000,0,10,1)("X[Bat]Add/Remove State")
+[121][4,0]<2>(1600099,1,0,0)()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[103][0,1]<1>()("もしHPが１以上になっても戦闘不能が付いてたら０に戻す")
+[250][5,4]<1>(14,1600000,0,69632,1600010)("","×┣State List","","")
+[111][4,0]<1>(1,1600010,0,5)()
+[401][1,0]<1>(1)()
+[250][5,4]<2>(11,1600000,5,327680,0)("","×┏Battle Temp Status","","HP")
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[103][0,1]<1>()("SP")
+[250][5,4]<1>(11,1600000,1,331776,1600010)("","×┏Battle Temp Status","","[Temp] Post-Calc Max SP")
+[250][5,4]<1>(10,1600000,7,327696,1600002)("","×┏Battle Temp Status","","SP")
+[250][5,4]<1>(10,1600000,7,327792,1600010)("","×┏Battle Temp Status","","SP")
+[250][5,4]<1>(10,1600000,7,327776,0)("","×┏Battle Temp Status","","SP")
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[111][7,0]<0>(2,1600001,20,2,1600001,21,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("最大HP")
+[250][5,4]<1>(11,1600000,6,327696,1600002)("","×┏Battle Temp Status","","Max HP")
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[103][0,1]<1>()("最大SP")
+[250][5,4]<1>(11,1600000,6,327696,1600002)("","×┏Battle Temp Status","","Max SP")
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[111][10,0]<0>(3,1600001,30,2,1600001,31,2,1600001,32,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("攻撃力")
+[250][5,4]<1>(11,1600000,9,327696,1600002)("","×┏Battle Temp Status","","Base Attack")
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[103][0,1]<1>()("防御力")
+[250][5,4]<1>(11,1600000,10,327696,1600002)("","×┏Battle Temp Status","","Base Defense")
+[0][0,0]<1>()()
+[401][1,0]<0>(3)()
+[103][0,1]<1>()("精神攻撃")
+[250][5,4]<1>(11,1600000,11,327696,1600002)("","×┏Battle Temp Status","","Base Magic Attack")
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[111][7,0]<0>(2,1600001,33,2,1600001,34,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("精神防御")
+[250][5,4]<1>(11,1600000,12,327696,1600002)("","×┏Battle Temp Status","","Base Magic Defense")
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[103][0,1]<1>()("敏捷性")
+[250][5,4]<1>(11,1600000,13,327696,1600002)("","×┏Battle Temp Status","","Base Agility")
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Process Overview]
+▼ 　戦闘システム内で主人公のパラメータを増減させるときは、必ずこのコモンイベントを使用します。
+▼ 
+▼ [Databases Accessed by This Common Event]
+▼  
+▼ [Other Common Events Called from Here]
+▼  
+▼ [Main Common Events Calling This]
+▼ ―――――――――――――――――――――――――――――――――――
+■Set Variable: CSelf99[戦闘不能？] = 0 + 0 
+■Condition (Number):   [1] CSelf1[対象パラメータ] ==  22  /  [2] CSelf1[対象パラメータ] ==  23  
+-◇Condition:  [1]  [ CSelf1[対象パラメータ] == 22   ] Case↓
+ |▼ HP
+ |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Max HP" ] (10:-:44) 
+ |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"HP" ] (10:-:5) +=  CSelf2[増減値]
+ |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"HP" ] (10:-:5) Upper Bound  CSelf10[一時変数A]
+ |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"HP" ] (10:-:5) Lower Bound  0
+ |▼ もしHPが0以下になったら戦闘不能を付与する
+ |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"HP" ] (10:-:5) 
+ |■Condition (Number):   [1] CSelf10[一時変数A] <=  0  
+ |-◇Condition:  [1]  [ CSelf10[一時変数A] <= 0   ] Case↓
+ | |■Call Event [Name]: ["X[Bat]Add/Remove State"] <CommonEv 137>  / CSelf0[対象戦闘ｽﾛｯﾄ] / 0:Fainted / 10:強制付与 / 1:メッセージ有り
+ | |■Set Variable: CSelf99[戦闘不能？] = 1 + 0 
+ | |■
+ |◇End◇
+ |▼ もしHPが１以上になっても戦闘不能が付いてたら０に戻す
+ |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "×┣State List":CSelf0[対象戦闘ｽﾛｯﾄ]:0 ] (13:-:\udb[8:0] Turns Left) 
+ |■Condition (Number):   [1] CSelf10[一時変数A] !=  0  
+ |-◇Condition:  [1]  [ CSelf10[一時変数A] != 0   ] Case↓
+ | |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"HP" ] (10:-:5) =  0
+ | |■
+ |◇End◇
+ |■Exit Event
+ |■
+-◇Condition:  [2]  [ CSelf1[対象パラメータ] == 23   ] Case↓
+ |▼ SP
+ |■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Max SP" ] (10:-:46) 
+ |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"SP" ] (10:-:7) +=  CSelf2[増減値]
+ |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"SP" ] (10:-:7) Upper Bound  CSelf10[一時変数A]
+ |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"SP" ] (10:-:7) Lower Bound  0
+ |■Exit Event
+ |■
+◇End◇
+■Condition (Number):   [1] CSelf1[対象パラメータ] ==  20  /  [2] CSelf1[対象パラメータ] ==  21  
+-◇Condition:  [1]  [ CSelf1[対象パラメータ] == 20   ] Case↓
+ |▼ 最大HP
+ |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Max HP" ] (10:-:6) +=  CSelf2[増減値]
+ |■
+-◇Condition:  [2]  [ CSelf1[対象パラメータ] == 21   ] Case↓
+ |▼ 最大SP
+ |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Max SP" ] (10:-:8) +=  CSelf2[増減値]
+ |■
+◇End◇
+■Condition (Number):   [1] CSelf1[対象パラメータ] ==  30  /  [2] CSelf1[対象パラメータ] ==  31  /  [3] CSelf1[対象パラメータ] ==  32  
+-◇Condition:  [1]  [ CSelf1[対象パラメータ] == 30   ] Case↓
+ |▼ 攻撃力
+ |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Base Attack" ] (10:-:9) +=  CSelf2[増減値]
+ |■
+-◇Condition:  [2]  [ CSelf1[対象パラメータ] == 31   ] Case↓
+ |▼ 防御力
+ |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Base Defense" ] (10:-:10) +=  CSelf2[増減値]
+ |■
+-◇Condition:  [3]  [ CSelf1[対象パラメータ] == 32   ] Case↓
+ |▼ 精神攻撃
+ |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Base Magic Attack" ] (10:-:11) +=  CSelf2[増減値]
+ |■
+◇End◇
+■Condition (Number):   [1] CSelf1[対象パラメータ] ==  33  /  [2] CSelf1[対象パラメータ] ==  34  
+-◇Condition:  [1]  [ CSelf1[対象パラメータ] == 33   ] Case↓
+ |▼ 精神防御
+ |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Base Magic Defense" ] (10:-:12) +=  CSelf2[増減値]
+ |■
+-◇Condition:  [2]  [ CSelf1[対象パラメータ] == 34   ] Case↓
+ |▼ 敏捷性
+ |■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Base Agility" ] (10:-:13) +=  CSelf2[増減値]
+ |■
+◇End◇
+■
+[COMMAND_TEXT_END]

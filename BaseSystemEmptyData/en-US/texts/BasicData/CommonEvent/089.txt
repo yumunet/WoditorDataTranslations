@@ -1,0 +1,437 @@
+COMMON_ID=89
+COMMON_NAME=X┗[Map]Update Menu Variables
+COMMAND_COLOR=6
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=0
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=
+VALINPUT_NAME_1=
+VALINPUT_NAME_2=
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=0
+LOADTYPE2=0
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=0
+CHOICE_STR_2_NUM=5
+CHOICE_STR_2_0=表示しない
+CHOICE_STR_2_1=最上部に横幅最大表示
+CHOICE_STR_2_2=最下部に横幅最大表示
+CHOICE_STR_2_3=ｳｨﾝﾄﾞｳの上に表示
+CHOICE_STR_2_4=ｳｨﾝﾄﾞｳの下に表示
+CHOICE_STR_3_NUM=7
+CHOICE_STR_3_0=なし
+CHOICE_STR_3_1=左上から展開
+CHOICE_STR_3_2=左下から展開
+CHOICE_STR_3_3=右上から展開
+CHOICE_STR_3_4=右下から展開
+CHOICE_STR_3_5=中央上から展開
+CHOICE_STR_3_6=中央下から展開
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=0
+CHOICE_VAL_2_NUM=5
+CHOICE_VAL_2_0=0
+CHOICE_VAL_2_1=1
+CHOICE_VAL_2_2=2
+CHOICE_VAL_2_3=3
+CHOICE_VAL_2_4=4
+CHOICE_VAL_3_NUM=7
+CHOICE_VAL_3_0=0
+CHOICE_VAL_3_1=1
+CHOICE_VAL_3_2=2
+CHOICE_VAL_3_3=3
+CHOICE_VAL_3_4=4
+CHOICE_VAL_3_5=5
+CHOICE_VAL_3_6=6
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=
+RETURN_VAL_TARGET=-1
+CSELF_NAME_0=
+CSELF_NAME_1=
+CSELF_NAME_2=
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=
+CSELF_NAME_9=項目文字列
+CSELF_NAME_10=注目位置
+CSELF_NAME_11=取得先変数番号
+CSELF_NAME_12=コマンドコード番号
+CSELF_NAME_13=格納先番号(可変DB)
+CSELF_NAME_14=コマンド数
+CSELF_NAME_15=セーブ可能？
+CSELF_NAME_16=
+CSELF_NAME_17=
+CSELF_NAME_18=
+CSELF_NAME_19=
+CSELF_NAME_20=コマンド1内容
+CSELF_NAME_21=コマンド2内容
+CSELF_NAME_22=コマンド3内容
+CSELF_NAME_23=コマンド4内容
+CSELF_NAME_24=コマンド5内容
+CSELF_NAME_25=コマンド6内容
+CSELF_NAME_26=コマンド7内容
+CSELF_NAME_27=コマンド8内容
+CSELF_NAME_28=
+CSELF_NAME_29=
+CSELF_NAME_30=
+CSELF_NAME_31=
+CSELF_NAME_32=
+CSELF_NAME_33=
+CSELF_NAME_34=
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=セーブ可能？
+CSELF_NAME_41=
+CSELF_NAME_42=
+CSELF_NAME_43=
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=
+CSELF_NAME_89=
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=
+COMMAND_NUM=122
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("　ユーザDBから、メニューの内容を算出し、")
+[103][0,1]<0>()("　可変DB「基本システム用変数」に、メニューのコマンドリストを格納します。")
+[103][0,1]<0>()("")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()(" 　パラメータ設定")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[250][5,4]<0>(18,0,1,332288,1600020)("","System Settings","","Menu Command 1")
+[250][5,4]<0>(18,0,2,332288,1600021)("","System Settings","","Menu Command 2")
+[250][5,4]<0>(18,0,3,332288,1600022)("","System Settings","","Menu Command 3")
+[250][5,4]<0>(18,0,4,332288,1600023)("","System Settings","","Menu Command 4")
+[250][5,4]<0>(18,0,5,332288,1600024)("","System Settings","","Menu Command 5")
+[250][5,4]<0>(18,0,6,332288,1600025)("","System Settings","","Menu Command 6")
+[250][5,4]<0>(18,0,7,332288,1600026)("","System Settings","","Menu Command 7")
+[250][5,4]<0>(18,0,8,332288,1600027)("","System Settings","","Menu Command 8")
+[250][5,4]<0>(18,33,0,331776,1600040)("","Base System Variables","","Number")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("コマンド一覧の初期化")
+[250][5,4]<0>(18,23,0,65536,0)("","Base System Variables","","")
+[250][5,4]<0>(18,24,0,65536,0)("","Base System Variables","","")
+[250][5,4]<0>(18,25,0,65536,0)("","Base System Variables","","")
+[250][5,4]<0>(18,26,0,65536,0)("","Base System Variables","","")
+[250][5,4]<0>(18,27,0,65536,0)("","Base System Variables","","")
+[250][5,4]<0>(18,28,0,65536,0)("","Base System Variables","","")
+[250][5,4]<0>(18,29,0,65536,0)("","Base System Variables","","")
+[250][5,4]<0>(18,30,0,65536,0)("","Base System Variables","","")
+[121][4,0]<0>(1600014,0,0,0)()
+[103][0,1]<0>()("ここからコマンド内容を1つずつ処理していく")
+[121][4,0]<0>(1600010,-1,0,0)()
+[121][4,0]<0>(1600013,23,0,0)()
+[179][1,0]<0>(8)()
+[103][0,1]<1>()("一つ進める")
+[121][4,0]<1>(1600010,1,0,256)()
+[103][0,1]<1>()("コマンド番号取得先を計算")
+[121][4,0]<1>(1600011,1600020,0,4)()
+[121][4,0]<1>(1600011,1600010,0,256)()
+[121][4,0]<1>(1600012,1600011,0,32)()
+[103][0,1]<1>()("コマンドコードに応じて処理")
+[111][4,0]<1>(1,1600012,1,1)()
+[401][1,0]<1>(1)()
+[103][0,1]<2>()("＜コマンドコード＞")
+[103][0,1]<2>()("1：アイテム　2：技能　3：装備　4：セーブ　5：システム")
+[103][0,1]<2>()("10：特殊メニューA　　11：特殊メニューB　　12：特殊メニューC　　13：特殊メニューD")
+[103][0,1]<2>()(" ")
+[103][0,1]<2>()("ここでコマンド名を取得する")
+[122][2,1]<2>(1600009,0)("？？？？")
+[111][7,0]<2>(2,1600012,9,3,1600012,10,1)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("一般コマンド名を取得")
+[111][10,0]<3>(3,1600012,1,2,1600012,2,2,1600012,3,2)()
+[401][1,0]<3>(1)()
+[250][5,4]<4>(13,0,0,332288,1600009)("","Terms","","[Menu] Items")
+[0][0,0]<4>()()
+[401][1,0]<3>(2)()
+[250][5,4]<4>(13,0,1,332288,1600009)("","Terms","","[Menu] Skills")
+[0][0,0]<4>()()
+[401][1,0]<3>(3)()
+[250][5,4]<4>(13,0,2,332288,1600009)("","Terms","","[Menu] Equip")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[111][7,0]<3>(2,1600012,4,2,1600012,5,2)()
+[401][1,0]<3>(1)()
+[250][5,4]<4>(13,0,3,332288,1600009)("","Terms","","[Menu] Save")
+[0][0,0]<4>()()
+[401][1,0]<3>(2)()
+[250][5,4]<4>(13,0,4,332288,1600009)("","Terms","","[Menu] System")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[401][1,0]<2>(2)()
+[103][0,1]<3>()("●こちらは特殊メニューA～Dの場合")
+[111][10,0]<3>(3,1600012,10,2,1600012,11,2,1600012,12,2)()
+[401][1,0]<3>(1)()
+[250][5,4]<4>(18,0,9,332288,1600009)("","System Settings","","■Special Menu A Name   ")
+[0][0,0]<4>()()
+[401][1,0]<3>(2)()
+[250][5,4]<4>(18,0,11,332288,1600009)("","System Settings","","■Special Menu B Name   ")
+[0][0,0]<4>()()
+[401][1,0]<3>(3)()
+[250][5,4]<4>(18,0,13,332288,1600009)("","System Settings","","■Special Menu C Name   ")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[111][4,0]<3>(1,1600012,13,2)()
+[401][1,0]<3>(1)()
+[250][5,4]<4>(18,0,15,332288,1600009)("","System Settings","","■Special Menu D Name   ")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[106][0,1]<2>()("コマンドコード\cself[12] \cself[9] \cself[14]")
+[103][0,1]<2>()("ここでコマンドコードとコマンド名を代入")
+[250][5,4]<2>(18,1600013,0,327680,1600012)("","Base System Variables","","Number")
+[250][5,4]<2>(18,1600013,0,327680,1600009)("","Base System Variables","","String")
+[111][4,0]<2>(1,1600012,4,2)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("もしセーブなら、セーブ可能かどうかで分岐（セーブ禁止なら灰色に）")
+[250][5,4]<3>(18,33,0,69632,1600015)("","Base System Variables","","")
+[111][4,0]<3>(1,1600015,0,2)()
+[401][1,0]<3>(1)()
+[250][5,4]<4>(18,1600013,0,327680,-1)("","Base System Variables","","Number")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[103][0,1]<2>()("格納先を次のコマンド内容位置にずらす")
+[121][4,0]<2>(1600013,1,0,256)()
+[103][0,1]<2>()("コマンド数を一個加算")
+[121][4,0]<2>(1600014,1,0,256)()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[103][0,1]<0>()("終わったらここでコマンド数を「基本システム用変数」に格納")
+[250][5,4]<0>(18,22,0,196608,1600014)("","Base System Variables","Menu Command Count","")
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Process Overview]
+▼ 　ユーザDBから、メニューの内容を算出し、
+▼ 　可変DB「基本システム用変数」に、メニューのコマンドリストを格納します。
+▼ 
+▼ [Databases Accessed by This Common Event]
+▼  
+▼ [Other Common Events Called from Here]
+▼  
+▼ [Main Common Events Calling This]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼  　パラメータ設定
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■Load DB(User):  CSelf20[コマンド1内容] = UserDB[ "System Settings":0:"Menu Command 1" ] (17:Basic System Settings:3) 
+■Load DB(User):  CSelf21[コマンド2内容] = UserDB[ "System Settings":0:"Menu Command 2" ] (17:Basic System Settings:4) 
+■Load DB(User):  CSelf22[コマンド3内容] = UserDB[ "System Settings":0:"Menu Command 3" ] (17:Basic System Settings:5) 
+■Load DB(User):  CSelf23[コマンド4内容] = UserDB[ "System Settings":0:"Menu Command 4" ] (17:Basic System Settings:6) 
+■Load DB(User):  CSelf24[コマンド5内容] = UserDB[ "System Settings":0:"Menu Command 5" ] (17:Basic System Settings:7) 
+■Load DB(User):  CSelf25[コマンド6内容] = UserDB[ "System Settings":0:"Menu Command 6" ] (17:Basic System Settings:8) 
+■Load DB(User):  CSelf26[コマンド7内容] = UserDB[ "System Settings":0:"Menu Command 7" ] (17:Basic System Settings:9) 
+■Load DB(User):  CSelf27[コマンド8内容] = UserDB[ "System Settings":0:"Menu Command 8" ] (17:Basic System Settings:10) 
+■Load DB(Var):  CSelf40[セーブ可能？] = VarDB[ "Base System Variables":33:"Number" ] (18:[System] Can Save?:0) 
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ コマンド一覧の初期化
+■Write to DB(Var): VarDB[ "Base System Variables":23:0 ] (18:Menu Cmd 1 ID & Name:Number) =  0
+■Write to DB(Var): VarDB[ "Base System Variables":24:0 ] (18:Menu Cmd 2 ID & Name:Number) =  0
+■Write to DB(Var): VarDB[ "Base System Variables":25:0 ] (18:Menu Cmd 3 ID & Name:Number) =  0
+■Write to DB(Var): VarDB[ "Base System Variables":26:0 ] (18:Menu Cmd 4 ID & Name:Number) =  0
+■Write to DB(Var): VarDB[ "Base System Variables":27:0 ] (18:Menu Cmd 5 ID & Name:Number) =  0
+■Write to DB(Var): VarDB[ "Base System Variables":28:0 ] (18:Menu Cmd 6 ID & Name:Number) =  0
+■Write to DB(Var): VarDB[ "Base System Variables":29:0 ] (18:Menu Cmd 7 ID & Name:Number) =  0
+■Write to DB(Var): VarDB[ "Base System Variables":30:0 ] (18:Menu Cmd 8 ID & Name:Number) =  0
+■Set Variable: CSelf14[コマンド数] = 0 + 0 
+▼ ここからコマンド内容を1つずつ処理していく
+■Set Variable: CSelf10[注目位置] = -1 + 0 
+■Set Variable: CSelf13[格納先番号(可変DB)] = 23 + 0 
+■Repeat Loop [ 8 ] Times
+ |▼ 一つ進める
+ |■Set Variable: CSelf10[注目位置] += 1 + 0 
+ |▼ コマンド番号取得先を計算
+ |■Set Variable: CSelf11[取得先変数番号] = 1600020 + 0 
+ |■Set Variable: CSelf11[取得先変数番号] += CSelf10[注目位置] + 0 
+ |■Set Variable: CSelf12[コマンドコード番号] = V[CSelf11[取得先変数番号]] + 0 
+ |▼ コマンドコードに応じて処理
+ |■Condition (Number):   [1] CSelf12[コマンドコード番号] >=  1  
+ |-◇Condition:  [1]  [ CSelf12[コマンドコード番号] >= 1   ] Case↓
+ | |▼ ＜コマンドコード＞
+ | |▼ 1：アイテム　2：技能　3：装備　4：セーブ　5：システム
+ | |▼ 10：特殊メニューA　　11：特殊メニューB　　12：特殊メニューC　　13：特殊メニューD
+ | |▼  
+ | |▼ ここでコマンド名を取得する
+ | |■Set String: CSelf9[項目文字列] = "？？？？"
+ | |■Condition (Number):   [1] CSelf12[コマンドコード番号] <=  9  /  [2] CSelf12[コマンドコード番号] >=  10  
+ | |-◇Condition:  [1]  [ CSelf12[コマンドコード番号] <= 9   ] Case↓
+ | | |▼ 一般コマンド名を取得
+ | | |■Condition (Number):   [1] CSelf12[コマンドコード番号] ==  1  /  [2] CSelf12[コマンドコード番号] ==  2  /  [3] CSelf12[コマンドコード番号] ==  3  
+ | | |-◇Condition:  [1]  [ CSelf12[コマンドコード番号] == 1   ] Case↓
+ | | | |■Load DB(User):  CSelf9[項目文字列] = UserDB[ "Terms":0:"[Menu] Items" ] (15:Basic Terms:0) 
+ | | | |■
+ | | |-◇Condition:  [2]  [ CSelf12[コマンドコード番号] == 2   ] Case↓
+ | | | |■Load DB(User):  CSelf9[項目文字列] = UserDB[ "Terms":0:"[Menu] Skills" ] (15:Basic Terms:1) 
+ | | | |■
+ | | |-◇Condition:  [3]  [ CSelf12[コマンドコード番号] == 3   ] Case↓
+ | | | |■Load DB(User):  CSelf9[項目文字列] = UserDB[ "Terms":0:"[Menu] Equip" ] (15:Basic Terms:2) 
+ | | | |■
+ | | |◇End◇
+ | | |■Condition (Number):   [1] CSelf12[コマンドコード番号] ==  4  /  [2] CSelf12[コマンドコード番号] ==  5  
+ | | |-◇Condition:  [1]  [ CSelf12[コマンドコード番号] == 4   ] Case↓
+ | | | |■Load DB(User):  CSelf9[項目文字列] = UserDB[ "Terms":0:"[Menu] Save" ] (15:Basic Terms:3) 
+ | | | |■
+ | | |-◇Condition:  [2]  [ CSelf12[コマンドコード番号] == 5   ] Case↓
+ | | | |■Load DB(User):  CSelf9[項目文字列] = UserDB[ "Terms":0:"[Menu] System" ] (15:Basic Terms:4) 
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |-◇Condition:  [2]  [ CSelf12[コマンドコード番号] >= 10   ] Case↓
+ | | |▼ ●こちらは特殊メニューA～Dの場合
+ | | |■Condition (Number):   [1] CSelf12[コマンドコード番号] ==  10  /  [2] CSelf12[コマンドコード番号] ==  11  /  [3] CSelf12[コマンドコード番号] ==  12  
+ | | |-◇Condition:  [1]  [ CSelf12[コマンドコード番号] == 10   ] Case↓
+ | | | |■Load DB(User):  CSelf9[項目文字列] = UserDB[ "System Settings":0:"■Special Menu A Name   " ] (17:Basic System Settings:11) 
+ | | | |■
+ | | |-◇Condition:  [2]  [ CSelf12[コマンドコード番号] == 11   ] Case↓
+ | | | |■Load DB(User):  CSelf9[項目文字列] = UserDB[ "System Settings":0:"■Special Menu B Name   " ] (17:Basic System Settings:13) 
+ | | | |■
+ | | |-◇Condition:  [3]  [ CSelf12[コマンドコード番号] == 12   ] Case↓
+ | | | |■Load DB(User):  CSelf9[項目文字列] = UserDB[ "System Settings":0:"■Special Menu C Name   " ] (17:Basic System Settings:15) 
+ | | | |■
+ | | |◇End◇
+ | | |■Condition (Number):   [1] CSelf12[コマンドコード番号] ==  13  
+ | | |-◇Condition:  [1]  [ CSelf12[コマンドコード番号] == 13   ] Case↓
+ | | | |■Load DB(User):  CSelf9[項目文字列] = UserDB[ "System Settings":0:"■Special Menu D Name   " ] (17:Basic System Settings:17) 
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇End◇
+ | |■Debug Text: コマンドコード\cself[12] \cself[9] \cself[14]
+ | |▼ ここでコマンドコードとコマンド名を代入
+ | |■Write to DB(Var): VarDB[ "Base System Variables":CSelf13[格納先番号(可変DB)]:"Number" ] (18:-:0) =  CSelf12[コマンドコード番号]
+ | |■Write to DB(Var): VarDB[ "Base System Variables":CSelf13[格納先番号(可変DB)]:"String" ] (18:-:1) =  CSelf9[項目文字列]
+ | |■Condition (Number):   [1] CSelf12[コマンドコード番号] ==  4  
+ | |-◇Condition:  [1]  [ CSelf12[コマンドコード番号] == 4   ] Case↓
+ | | |▼ もしセーブなら、セーブ可能かどうかで分岐（セーブ禁止なら灰色に）
+ | | |■Load DB(Var):  CSelf15[セーブ可能？] = VarDB[ "Base System Variables":33:0 ] (18:[System] Can Save?:Number) 
+ | | |■Condition (Number):   [1] CSelf15[セーブ可能？] ==  0  
+ | | |-◇Condition:  [1]  [ CSelf15[セーブ可能？] == 0   ] Case↓
+ | | | |■Write to DB(Var): VarDB[ "Base System Variables":CSelf13[格納先番号(可変DB)]:"Number" ] (18:-:0) =  -1
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇End◇
+ | |▼ 格納先を次のコマンド内容位置にずらす
+ | |■Set Variable: CSelf13[格納先番号(可変DB)] += 1 + 0 
+ | |▼ コマンド数を一個加算
+ | |■Set Variable: CSelf14[コマンド数] += 1 + 0 
+ | |■
+ |◇End◇
+ |■
+◇Loop End Point◇◇
+▼ 終わったらここでコマンド数を「基本システム用変数」に格納
+■Write to DB(Var): VarDB[ "Base System Variables":"Menu Command Count":0 ] (18:22:Number) =  CSelf14[コマンド数]
+■
+[COMMAND_TEXT_END]

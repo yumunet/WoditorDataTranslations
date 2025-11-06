@@ -1,0 +1,1035 @@
+COMMON_ID=119
+COMMON_NAME=X[Map]Use Skill
+COMMAND_COLOR=6
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=3
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=技能コード
+VALINPUT_NAME_1=発動者ID
+VALINPUT_NAME_2=アイテム経由?
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=0
+LOADTYPE2=0
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=0
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=0
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=使用した？
+RETURN_VAL_TARGET=99
+CSELF_NAME_0=技能コード
+CSELF_NAME_1=発動者ID
+CSELF_NAME_2=アイテム経由？（アイテムコード）
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=技能名
+CSELF_NAME_7=
+CSELF_NAME_8=
+CSELF_NAME_9=表示文字列
+CSELF_NAME_10=一時変数
+CSELF_NAME_11=ターゲット
+CSELF_NAME_12=一時変数２
+CSELF_NAME_13=次回使用可能フラグ
+CSELF_NAME_14=対象ID
+CSELF_NAME_15=発動者ID
+CSELF_NAME_16=単体(1)or全体(2)
+CSELF_NAME_17=移動中OK？
+CSELF_NAME_18=繰り返し回数
+CSELF_NAME_19=
+CSELF_NAME_20=対象キャラ位置[Ver2.28]
+CSELF_NAME_21=最大効果量[Ver2.28]
+CSELF_NAME_22=
+CSELF_NAME_23=
+CSELF_NAME_24=
+CSELF_NAME_25=
+CSELF_NAME_26=
+CSELF_NAME_27=対象ID
+CSELF_NAME_28=
+CSELF_NAME_29=ﾀｰｹﾞｯﾄﾀｲﾌﾟ
+CSELF_NAME_30=技能番号
+CSELF_NAME_31=
+CSELF_NAME_32=技能TMP１
+CSELF_NAME_33=技能TMP２
+CSELF_NAME_34=技能TMP３
+CSELF_NAME_35=結果値
+CSELF_NAME_36=
+CSELF_NAME_37=最大パーティ人数
+CSELF_NAME_38=ランダム上限％
+CSELF_NAME_39=ランダム下限％
+CSELF_NAME_40=
+CSELF_NAME_41=
+CSELF_NAME_42=
+CSELF_NAME_43=
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=
+CSELF_NAME_89=
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=使用した？
+COMMAND_NUM=433
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("　「X[共]万能ウィンドウ選択実行」で、技能を選んだ後の挙動をここで処理します。")
+[103][0,1]<0>()("　※このコモン内で技能を使用しなければ0を、使用していれば1を返します。")
+[103][0,1]<0>()("")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[250][5,4]<0>(18,51,0,69632,1600037)("","Base System Variables","","")
+[103][0,1]<0>()(" ")
+[212][0,1]<0>()("使用処理2")
+[121][4,0]<0>(1600099,0,0,0)()
+[121][4,0]<0>(1600016,0,0,0)()
+[121][4,0]<0>(1600030,1600000,0,0)()
+[250][5,4]<0>(0,1600030,6,332288,1600012)("","Skills","","Usable When?")
+[111][4,0]<0>(1,1600001,0,1)()
+[401][1,0]<0>(1)()
+[250][5,4]<1>(0,1600030,0,332288,1600006)("","Skills","","Skill Name")
+[122][3,1]<1>(1600006,0,0)("[\cself[6]]")
+[300][6,4]<1>(0,24625,0,1600006,0,0)("X[Map]Display Mini Window","","Select a target.","")
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[111][4,0]<0>(1,1600012,0,1)()
+[401][1,0]<0>(1)()
+[111][4,0]<1>(1,1600012,1,3)()
+[401][1,0]<1>(1)()
+[250][5,4]<2>(0,1600030,2,332288,1600029)("","Skills","","┏ Effect Target   ")
+[103][0,1]<2>()("味方に対して使用可能　または　マップ時にイベント起動　の場合だけ使用可能")
+[111][7,0]<2>(2,1600029,100,2,1600029,0,1)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("イベント起動")
+[213][0,1]<3>()("イベント起動処理")
+[0][0,0]<3>()()
+[401][1,0]<2>(2)()
+[103][0,1]<3>()("味方に対して使用可能")
+[103][0,1]<3>()("0＝味方一人　1＝自分自身のみ　2＝味方全員　3＝味方一人ランダム　4＝自分以外一人")
+[111][4,0]<3>(1,1600029,1,2)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("自分のみ")
+[111][7,0]<4>(2,1600001,-1,2,1600001,0,1)()
+[401][1,0]<4>(1)()
+[103][0,1]<5>()("発動者がいなければ誰でも可能に")
+[121][4,0]<5>(1600029,0,0,0)()
+[0][0,0]<5>()()
+[401][1,0]<4>(2)()
+[103][0,1]<5>()("発動者がいる場合は固定")
+[121][4,0]<5>(1600016,1,0,0)()
+[103][0,1]<5>()("使用者の位置を算出")
+[250][5,4]<5>(18,51,0,69632,1600018)("","Base System Variables","","")
+[121][4,0]<5>(1600011,0,0,0)()
+[179][1,0]<5>(1600018)()
+[300][4,1]<6>(0,16777217,1600011,1600012)("X[Map]Get Ally ID")
+[111][4,0]<6>(1,1600012,1600001,2)()
+[401][1,0]<6>(1)()
+[171][0,0]<7>()()
+[0][0,0]<7>()()
+[499][0,0]<6>()()
+[121][4,0]<6>(1600011,1,0,256)()
+[0][0,0]<6>()()
+[498][0,0]<5>()()
+[300][5,1]<5>(0,3,1,1600011,-1)("X[Map]Draw Character Box")
+[103][0,1]<5>()("決定かキャンセルだけ受け付け")
+[123][2,0]<5>(1600010,176)()
+[111][4,0]<5>(1,1600010,11,2)()
+[401][1,0]<5>(1)()
+[213][0,1]<6>()("終了処理")
+[0][0,0]<6>()()
+[499][0,0]<5>()()
+[213][0,1]<5>()("使用処理実行")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[111][7,0]<3>(2,1600029,0,2,1600029,2,2)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("0＝味方一人")
+[103][0,1]<4>()("キャラ一覧を表示して選択させる")
+[121][4,0]<4>(1600016,1,0,0)()
+[300][5,1]<4>(0,16777218,1600011,1,1600011)("X[Map]Select Character Box")
+[111][4,0]<4>(1,1600011,-1,3)()
+[401][1,0]<4>(1)()
+[103][0,1]<5>()("キャンセルなら終了　カーソル点滅を消す")
+[213][0,1]<5>()("終了処理")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[213][0,1]<4>()("使用処理実行")
+[0][0,0]<4>()()
+[401][1,0]<3>(2)()
+[103][0,1]<4>()("2＝味方全体")
+[121][4,0]<4>(1600016,2,0,0)()
+[300][5,1]<4>(0,3,1,-1,0)("X[Map]Draw Character Box")
+[103][0,1]<4>()("決定かキャンセルか、だけ受付する")
+[123][2,0]<4>(1600012,176)()
+[111][7,0]<4>(2,1600012,10,2,1600012,11,2)()
+[401][1,0]<4>(1)()
+[103][0,1]<5>()("決定なら使用")
+[103][0,1]<5>()("キャラ探索開始を0番に")
+[121][4,0]<5>(1600011,-1,0,0)()
+[213][0,1]<5>()("使用処理実行")
+[0][0,0]<5>()()
+[401][1,0]<4>(2)()
+[103][0,1]<5>()("キャンセルなら終了")
+[213][0,1]<5>()("終了処理")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[111][7,0]<3>(2,1600029,3,2,1600029,4,2)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("味方ランダム一人")
+[121][4,0]<4>(1600016,1,0,0)()
+[111][4,0]<4>(1,1600001,0,1)()
+[401][1,0]<4>(1)()
+[300][6,4]<5>(0,28721,0,0,0,0)("X[Map]Display Mini Window","Used","at random.","")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[300][5,1]<4>(0,3,4,-1,0)("X[Map]Draw Character Box")
+[103][0,1]<4>()("決定かキャンセルか、だけ受付する")
+[123][2,0]<4>(1600012,176)()
+[111][7,0]<4>(2,1600012,10,2,1600012,11,2)()
+[401][1,0]<4>(1)()
+[103][0,1]<5>()("決定なら使用")
+[103][0,1]<5>()("キャラ探索開始を0番に")
+[250][5,4]<5>(18,4,0,200704,1600011)("","Base System Variables","Current Party Size","")
+[121][4,0]<5>(1600011,1,0,512)()
+[121][4,0]<5>(1600011,0,1600011,24576)()
+[300][5,1]<5>(0,3,2,-1,0)("X[Map]Draw Character Box")
+[300][5,1]<5>(0,3,1,1600011,0)("X[Map]Draw Character Box")
+[213][0,1]<5>()("使用処理実行")
+[0][0,0]<5>()()
+[401][1,0]<4>(2)()
+[103][0,1]<5>()("キャンセルなら終了")
+[213][0,1]<5>()("終了処理")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[0][0,0]<4>()()
+[401][1,0]<3>(2)()
+[103][0,1]<4>()("自分以外の味方一人")
+[212][0,1]<4>()("自分以外の味方一人")
+[121][4,0]<4>(1600016,1,0,0)()
+[300][5,1]<4>(0,16777218,1600011,1,1600011)("X[Map]Select Character Box")
+[121][4,0]<4>(1600027,-1,0,0)()
+[111][4,0]<4>(1,1600011,0,1)()
+[401][1,0]<4>(1)()
+[300][4,1]<5>(0,16777217,1600011,1600027)("X[Map]Get Ally ID")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[111][7,0]<4>(2,1600027,-1,3,1600027,1600001,2)()
+[401][1,0]<4>(1)()
+[103][0,1]<5>()("キャンセルなら終了　カーソル点滅を消す")
+[213][0,1]<5>()("終了処理")
+[0][0,0]<5>()()
+[401][1,0]<4>(2)()
+[103][0,1]<5>()("発動者と同じ場合は警告")
+[300][3,1]<5>(0,1,2)("X[Com]Play System Sound")
+[122][3,1]<5>(1600009,0,0)("Can't target the user.")
+[300][4,1]<5>(0,17,0,1600009)("X[Map]Display Menu Message")
+[123][2,0]<5>(1600010,176)()
+[300][4,1]<5>(0,17,-1,1600009)("X[Map]Display Menu Message")
+[213][0,1]<5>()("自分以外の味方一人")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[213][0,1]<4>()("使用処理実行")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[179][1,0]<0>(0)()
+[103][0,1]<1>()("「技能」使用処理の場合はここへジャンプ")
+[212][0,1]<1>()("使用処理実行")
+[179][1,0]<1>(1)()
+[103][0,1]<2>()("Ver2.28 移動時にアイテム「ヒールの巻物」を使っても回復しない(発動者-1だとうまくいかない)バグを修正")
+[111][4,0]<2>(1,1600001,-1,2)()
+[401][1,0]<2>(1)()
+[121][5,0]<3>(1600020,-1,0,65536,1)()
+[179][1,0]<3>(1600037)()
+[121][4,0]<4>(1600020,1,0,256)()
+[300][4,1]<4>(0,16777217,1600020,1600014)("X[Map]Get Ally ID")
+[111][4,0]<4>(1,1600014,-1,3)()
+[401][1,0]<4>(1)()
+[176][0,0]<5>()()
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[250][5,4]<4>(5,1600014,0,69632,1600010)("","┗ State List","","")
+[111][4,0]<4>(1,1600010,0,5)()
+[401][1,0]<4>(1)()
+[176][0,0]<5>()()
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[250][5,4]<4>(0,1600030,10,332288,1600033)("","Skills","","┣ Attack Influence [%]           ")
+[250][5,4]<4>(17,1600014,2,331824,1600033)("","×Allies Temp Data","","[Temp] Post-Calc Attack")
+[121][4,0]<4>(1600033,100,0,1024)()
+[250][5,4]<4>(0,1600030,11,332288,1600034)("","Skills","","┣ Magic Influence [%]           ")
+[250][5,4]<4>(21,1600014,4,331824,1600034)("","×Allies Temp Data","","[Temp] Post-Calc Magic Atk")
+[121][4,0]<4>(1600034,100,0,1024)()
+[121][4,0]<4>(1600035,1600033,1600034,0)()
+[250][5,4]<4>(0,1600030,9,332304,1600035)("","Skills","","┣ Base Amount [Fixed Value]")
+[111][4,0]<4>(1,1600035,1600021,0)()
+[401][1,0]<4>(1)()
+[121][4,0]<5>(1600021,1600035,0,0)()
+[121][4,0]<5>(1600001,1600014,0,0)()
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[0][0,0]<4>()()
+[498][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[121][4,0]<1>(1600099,1,0,0)()
+[300][3,1]<1>(0,1,1)("X[Map]Character Box: Draw All")
+[103][0,1]<1>()("ここで技能エフェクトSEを鳴らす")
+[122][2,1]<1>(1600009,0)("")
+[250][5,4]<1>(0,1600030,18,332288,1600010)("","Skills","","Animation")
+[111][4,0]<1>(1,1600010,0,1)()
+[401][1,0]<1>(1)()
+[250][5,4]<2>(1,1600010,14,332288,1600012)("","┗ Animations","","Process by [Ignore Settings]")
+[111][4,0]<2>(1,1600012,-1,3)()
+[401][1,0]<2>(1)()
+[250][5,4]<3>(1,1600010,9,332288,1600009)("","┗ Animations","","Sound Effect")
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[112][2,4]<1>(17,270035465)("","","","")
+[401][1,0]<1>(1)()
+[140][6,1]<2>(33554464,0,0,0,100,100)("\cself[9]")
+[0][0,0]<2>()()
+[420][1,0]<1>(0)()
+[300][3,1]<2>(0,1,0)("X[Com]Play System Sound")
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[103][0,1]<1>()("ここで各キャラ処理（一人なら1人分だけで終了）")
+[179][1,0]<1>(1600037)()
+[111][4,0]<2>(1,1600016,2,2)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("全体処理なら、次のキャラへ")
+[121][4,0]<3>(1600011,1,0,256)()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[300][4,1]<2>(0,16777217,1600011,1600014)("X[Map]Get Ally ID")
+[111][4,0]<2>(1,1600014,-1,3)()
+[401][1,0]<2>(1)()
+[176][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[103][0,1]<2>()("ステータス回復エフェクト")
+[121][4,0]<2>(1600012,-1,0,0)()
+[179][1,0]<2>(3)()
+[121][4,0]<3>(1600012,1,0,256)()
+[111][10,0]<3>(3,1600012,0,2,1600012,1,2,1600012,2,2)()
+[401][1,0]<3>(1)()
+[250][5,4]<4>(0,1600030,24,332288,1600013)("","Skills","","Remove State 1")
+[0][0,0]<4>()()
+[401][1,0]<3>(2)()
+[250][5,4]<4>(0,1600030,25,332288,1600013)("","Skills","","Remove State 2")
+[0][0,0]<4>()()
+[401][1,0]<3>(3)()
+[250][5,4]<4>(0,1600030,26,332288,1600013)("","Skills","","Remove State 3")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[111][10,0]<3>(3,1600013,-3,2,1600013,-2,2,1600013,0,1)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("全回復（死亡抜き）")
+[300][5,1]<4>(0,3,1600014,-3,0)("X[Map]Add/Remove State")
+[0][0,0]<4>()()
+[401][1,0]<3>(2)()
+[103][0,1]<4>()("全回復（死亡込み）")
+[300][5,1]<4>(0,3,1600014,-2,0)("X[Map]Add/Remove State")
+[0][0,0]<4>()()
+[401][1,0]<3>(3)()
+[103][0,1]<4>()("単体回復")
+[300][5,1]<4>(0,3,1600014,1600013,0)("X[Map]Add/Remove State")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[498][0,0]<2>()()
+[103][0,1]<2>()("回復値の計算")
+[121][4,0]<2>(1600033,0,0,0)()
+[121][4,0]<2>(1600034,0,0,0)()
+[111][4,0]<2>(1,1600001,0,1)()
+[401][1,0]<2>(1)()
+[121][4,0]<3>(1600015,1600001,0,0)()
+[250][5,4]<3>(0,1600030,10,332288,1600033)("","Skills","","┣ Attack Influence [%]           ")
+[250][5,4]<3>(21,1600015,2,331824,1600033)("","×Allies Temp Data","","[Temp] Post-Calc Attack")
+[121][4,0]<3>(1600033,100,0,1024)()
+[250][5,4]<3>(0,1600030,11,332288,1600034)("","Skills","","┣ Magic Influence [%]           ")
+[250][5,4]<3>(21,1600015,4,331824,1600034)("","×Allies Temp Data","","[Temp] Post-Calc Magic Atk")
+[121][4,0]<3>(1600034,100,0,1024)()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[121][4,0]<2>(1600035,1600033,1600034,0)()
+[250][5,4]<2>(0,1600030,9,332304,1600035)("","Skills","","┣ Base Amount [Fixed Value]")
+[103][0,1]<2>()("分散を計算")
+[121][4,0]<2>(1600038,100,0,0)()
+[250][5,4]<2>(0,1600030,12,332304,1600038)("","Skills","","┗ Variance [±%]                     ")
+[121][4,0]<2>(1600039,100,0,0)()
+[250][5,4]<2>(0,1600030,12,332320,1600039)("","Skills","","┗ Variance [±%]                     ")
+[121][4,0]<2>(1600038,0,0,1536)()
+[121][4,0]<2>(1600039,0,0,1536)()
+[121][4,0]<2>(1600035,1600039,1600038,25344)()
+[121][4,0]<2>(1600035,100,0,1024)()
+[103][0,1]<2>()("ここでHPかSPに影響")
+[250][5,4]<2>(0,1600030,8,332288,1600032)("","Skills","","┏ What's Affected?                 ")
+[111][7,0]<2>(2,1600032,0,2,1600032,1,2)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("HP回復")
+[300][6,1]<3>(0,4,1600014,22,1600035,0)("X[Map]Change Parameter")
+[103][0,1]<3>()("回復エフェクト")
+[300][5,1]<3>(0,3,1600011,1600035,0)("X[Map]Display Char HP/SP Recovery")
+[0][0,0]<3>()()
+[401][1,0]<2>(2)()
+[103][0,1]<3>()("SP回復")
+[300][6,1]<3>(0,4,1600014,23,1600035,0)("X[Map]Change Parameter")
+[103][0,1]<3>()("回復エフェクト")
+[300][5,1]<3>(0,3,1600011,0,1600035)("X[Map]Display Char HP/SP Recovery")
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[103][0,1]<2>()("ステータス付与エフェクト")
+[121][4,0]<2>(1600012,-1,0,0)()
+[179][1,0]<2>(3)()
+[121][4,0]<3>(1600012,1,0,256)()
+[111][10,0]<3>(3,1600012,0,2,1600012,1,2,1600012,2,2)()
+[401][1,0]<3>(1)()
+[250][5,4]<4>(0,1600030,21,332288,1600013)("","Skills","","Add State 1             ")
+[0][0,0]<4>()()
+[401][1,0]<3>(2)()
+[250][5,4]<4>(0,1600030,22,332288,1600013)("","Skills","","Add State 2             ")
+[0][0,0]<4>()()
+[401][1,0]<3>(3)()
+[250][5,4]<4>(0,1600030,23,332288,1600013)("","Skills","","Add State 3             ")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[111][4,0]<3>(1,1600013,0,1)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("単体付与")
+[250][5,4]<4>(8,1600013,7,332288,1600017)("","States","","Category (Battle/Map)")
+[300][5,1]<4>(0,3,1600014,1600013,1)("X[Map]Add/Remove State")
+[111][4,0]<4>(1,1600017,1,2)()
+[401][1,0]<4>(1)()
+[300][4,1]<5>(0,2,1600011,1600013)("X[Map]Display Character State")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[99][1,0]<4>(1)()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[498][0,0]<2>()()
+[300][3,1]<2>(0,1,1600014)("X[Map]CalcTempStats <Initialize>")
+[300][3,1]<2>(0,1,1600014)("X[Map]CalcTempStats <Equipments>")
+[300][3,1]<2>(0,1,1600014)("X[Map]CalcTempStats <StatusEffects>")
+[300][5,1]<2>(0,3,2,-1,0)("X[Map]Draw Character Box")
+[300][5,1]<2>(0,3,3,1600011,1600014)("X[Map]Draw Character Box")
+[103][0,1]<2>()(" ")
+[111][4,0]<2>(1,1600016,1,2)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("単体使用なら一回で終了")
+[171][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[103][0,1]<1>()("アイテム消費判定")
+[111][4,0]<1>(1,1600002,0,1)()
+[401][1,0]<1>(1)()
+[103][0,1]<2>()("アイテム経由ならすぐ終了")
+[121][4,0]<2>(1600099,1,0,0)()
+[172][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[103][0,1]<1>()("アイテム経由で呼ばれていない場合は、発動者の消費処理")
+[111][4,0]<1>(1,1600002,-1,3)()
+[401][1,0]<1>(1)()
+[300][5,1]<2>(0,16777218,1600001,1600000,1600013)("X[Map]Skill Use: Consume")
+[300][3,1]<2>(0,1,1)("X[Map]Character Box: Draw All")
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[111][7,0]<1>(2,1600013,1,1,1600013,0,3)()
+[401][1,0]<1>(1)()
+[103][0,1]<2>()("まだ使える場合は続けて使用")
+[180][1,0]<2>(5)()
+[213][0,1]<2>()("使用処理2")
+[0][0,0]<2>()()
+[401][1,0]<1>(2)()
+[103][0,1]<2>()("使えない場合は残り０個を表示して戻す")
+[103][0,1]<2>()("キー入力待ち")
+[300][6,4]<2>(0,28721,-1,1600005,1600005,1600005)("X[Map]Display Mini Window","","","")
+[300][3,1]<2>(0,1,2)("X[Com]Play System Sound")
+[300][6,4]<2>(0,28721,0,0,0,0)("X[Map]Display Mini Window","Can't use","any more.","")
+[123][2,0]<2>(1600010,176)()
+[300][6,4]<2>(0,28721,-1,0,0,0)("X[Map]Display Mini Window","","","")
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[103][0,1]<1>()(" ")
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("　イベント起動処理")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[179][1,0]<0>(0)()
+[103][0,1]<1>()("「イベント起動」処理の場合はここへジャンプ")
+[212][0,1]<1>()("イベント起動処理")
+[300][4,1]<1>(0,2,1600001,1600000)("X[Map]Skill Use: Consume")
+[300][6,1]<1>(0,49,-1,1600005,1600005,1600005)("X[Map]Display Mini Window")
+[250][5,4]<1>(0,1600030,3,332288,1600012)("","Skills","","(If Used) ┗ Event Number")
+[250][5,4]<1>(18,1,0,65536,1)("","Base System Variables","","")
+[211][2,0]<1>(1600012,0)()
+[121][4,0]<1>(1600099,1,0,0)()
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("　　　終了時処理")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[179][1,0]<0>(0)()
+[212][0,1]<1>()("終了処理")
+[300][3,1]<1>(0,1,1)("X[Com]Play System Sound")
+[300][5,1]<1>(0,3,2,-1,0)("X[Map]Draw Character Box")
+[300][6,4]<1>(0,28721,-1,1600005,1600005,1600005)("X[Map]Display Mini Window","","","")
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Process Overview]
+▼ 　「X[共]万能ウィンドウ選択実行」で、技能を選んだ後の挙動をここで処理します。
+▼ 　※このコモン内で技能を使用しなければ0を、使用していれば1を返します。
+▼ 
+▼ [Databases Accessed by This Common Event]
+▼  
+▼ [Other Common Events Called from Here]
+▼  
+▼ [Main Common Events Calling This]
+▼ ―――――――――――――――――――――――――――――――――――
+■Load DB(Var):  CSelf37[最大パーティ人数] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
+▼  
+●Label Point [使用処理2] <<<<<<<<<<<<<<<<<<<<<<<<★
+■Set Variable: CSelf99[使用した？] = 0 + 0 
+■Set Variable: CSelf16[単体(1)or全体(2)] = 0 + 0 
+■Set Variable: CSelf30[技能番号] = CSelf0[技能コード] + 0 
+■Load DB(User):  CSelf12[一時変数２] = UserDB[ "Skills":CSelf30[技能番号]:"Usable When?" ] (0:-:6) 
+■Condition (Number):   [1] CSelf1[発動者ID] >=  0  
+-◇Condition:  [1]  [ CSelf1[発動者ID] >= 0   ] Case↓
+ |■Load DB(User):  CSelf6[技能名] = UserDB[ "Skills":CSelf30[技能番号]:"Skill Name" ] (0:-:0) 
+ |■Set String: CSelf6[技能名] = "[\cself[6]]"
+ |■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / 0:表示 / CSelf6[技能名] / Select a target. / 
+ |■
+◇End◇
+■Condition (Number):   [1] CSelf12[一時変数２] >=  0  
+-◇Condition:  [1]  [ CSelf12[一時変数２] >= 0   ] Case↓
+ |■Condition (Number):   [1] CSelf12[一時変数２] <=  1  
+ |-◇Condition:  [1]  [ CSelf12[一時変数２] <= 1   ] Case↓
+ | |■Load DB(User):  CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] = UserDB[ "Skills":CSelf30[技能番号]:"┏ Effect Target   " ] (0:-:2) 
+ | |▼ 味方に対して使用可能　または　マップ時にイベント起動　の場合だけ使用可能
+ | |■Condition (Number):   [1] CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] ==  100  /  [2] CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] >=  0  
+ | |-◇Condition:  [1]  [ CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] == 100   ] Case↓
+ | | |▼ イベント起動
+ | | |●Label Jump [イベント起動処理] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | |■
+ | |-◇Condition:  [2]  [ CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] >= 0   ] Case↓
+ | | |▼ 味方に対して使用可能
+ | | |▼ 0＝味方一人　1＝自分自身のみ　2＝味方全員　3＝味方一人ランダム　4＝自分以外一人
+ | | |■Condition (Number):   [1] CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] ==  1  
+ | | |-◇Condition:  [1]  [ CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] == 1   ] Case↓
+ | | | |▼ 自分のみ
+ | | | |■Condition (Number):   [1] CSelf1[発動者ID] ==  -1  /  [2] CSelf1[発動者ID] >=  0  
+ | | | |-◇Condition:  [1]  [ CSelf1[発動者ID] == -1   ] Case↓
+ | | | | |▼ 発動者がいなければ誰でも可能に
+ | | | | |■Set Variable: CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] = 0 + 0 
+ | | | | |■
+ | | | |-◇Condition:  [2]  [ CSelf1[発動者ID] >= 0   ] Case↓
+ | | | | |▼ 発動者がいる場合は固定
+ | | | | |■Set Variable: CSelf16[単体(1)or全体(2)] = 1 + 0 
+ | | | | |▼ 使用者の位置を算出
+ | | | | |■Load DB(Var):  CSelf18[繰り返し回数] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
+ | | | | |■Set Variable: CSelf11[ターゲット] = 0 + 0 
+ | | | | |■Repeat Loop [ CSelf18[繰り返し回数] ] Times
+ | | | | | |■Call Event [Name]: CSelf12[一時変数２] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf11[ターゲット]
+ | | | | | |■Condition (Number):   [1] CSelf12[一時変数２] ==  CSelf1[発動者ID]  
+ | | | | | |-◇Condition:  [1]  [ CSelf12[一時変数２] == CSelf1[発動者ID]   ] Case↓
+ | | | | | | |■Break Loop
+ | | | | | | |■
+ | | | | | |◇End◇
+ | | | | | |■Set Variable: CSelf11[ターゲット] += 1 + 0 
+ | | | | | |■
+ | | | | |◇Loop End Point◇◇
+ | | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 1:カーソルON（対象位置　位置-1なら全部） / CSelf11[ターゲット] / -1
+ | | | | |▼ 決定かキャンセルだけ受け付け
+ | | | | |■Key Input: CSelf10[一時変数] [Wait for Input <!>]  Confirm (10) Cancel (11)
+ | | | | |■Condition (Number):   [1] CSelf10[一時変数] ==  11  
+ | | | | |-◇Condition:  [1]  [ CSelf10[一時変数] == 11   ] Case↓
+ | | | | | |●Label Jump [終了処理] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | | | |■
+ | | | | |◇End◇
+ | | | | |●Label Jump [使用処理実行] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | | |■
+ | | | |◇End◇
+ | | | |■
+ | | |◇End◇
+ | | |■Condition (Number):   [1] CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] ==  0  /  [2] CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] ==  2  
+ | | |-◇Condition:  [1]  [ CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] == 0   ] Case↓
+ | | | |▼ 0＝味方一人
+ | | | |▼ キャラ一覧を表示して選択させる
+ | | | |■Set Variable: CSelf16[単体(1)or全体(2)] = 1 + 0 
+ | | | |■Call Event [Name]: CSelf11[ターゲット] = ["X[Map]Select Character Box"] <CommonEv 108>  / CSelf11[ターゲット] / 1:決定効果音を鳴らさない
+ | | | |■Condition (Number):   [1] CSelf11[ターゲット] <=  -1  
+ | | | |-◇Condition:  [1]  [ CSelf11[ターゲット] <= -1   ] Case↓
+ | | | | |▼ キャンセルなら終了　カーソル点滅を消す
+ | | | | |●Label Jump [終了処理] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | | |■
+ | | | |◇End◇
+ | | | |●Label Jump [使用処理実行] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | |■
+ | | |-◇Condition:  [2]  [ CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] == 2   ] Case↓
+ | | | |▼ 2＝味方全体
+ | | | |■Set Variable: CSelf16[単体(1)or全体(2)] = 2 + 0 
+ | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 1:カーソルON（対象位置　位置-1なら全部） / -1 / 0
+ | | | |▼ 決定かキャンセルか、だけ受付する
+ | | | |■Key Input: CSelf12[一時変数２] [Wait for Input <!>]  Confirm (10) Cancel (11)
+ | | | |■Condition (Number):   [1] CSelf12[一時変数２] ==  10  /  [2] CSelf12[一時変数２] ==  11  
+ | | | |-◇Condition:  [1]  [ CSelf12[一時変数２] == 10   ] Case↓
+ | | | | |▼ 決定なら使用
+ | | | | |▼ キャラ探索開始を0番に
+ | | | | |■Set Variable: CSelf11[ターゲット] = -1 + 0 
+ | | | | |●Label Jump [使用処理実行] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | | |■
+ | | | |-◇Condition:  [2]  [ CSelf12[一時変数２] == 11   ] Case↓
+ | | | | |▼ キャンセルなら終了
+ | | | | |●Label Jump [終了処理] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | | |■
+ | | | |◇End◇
+ | | | |■
+ | | |◇End◇
+ | | |■Condition (Number):   [1] CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] ==  3  /  [2] CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] ==  4  
+ | | |-◇Condition:  [1]  [ CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] == 3   ] Case↓
+ | | | |▼ 味方ランダム一人
+ | | | |■Set Variable: CSelf16[単体(1)or全体(2)] = 1 + 0 
+ | | | |■Condition (Number):   [1] CSelf1[発動者ID] >=  0  
+ | | | |-◇Condition:  [1]  [ CSelf1[発動者ID] >= 0   ] Case↓
+ | | | | |■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / 0:表示 / Used / at random. / 
+ | | | | |■
+ | | | |◇End◇
+ | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 4:カーソルランダムON / -1 / 0
+ | | | |▼ 決定かキャンセルか、だけ受付する
+ | | | |■Key Input: CSelf12[一時変数２] [Wait for Input <!>]  Confirm (10) Cancel (11)
+ | | | |■Condition (Number):   [1] CSelf12[一時変数２] ==  10  /  [2] CSelf12[一時変数２] ==  11  
+ | | | |-◇Condition:  [1]  [ CSelf12[一時変数２] == 10   ] Case↓
+ | | | | |▼ 決定なら使用
+ | | | | |▼ キャラ探索開始を0番に
+ | | | | |■Load DB(Var):  CSelf11[ターゲット] = VarDB[ "Base System Variables":"Current Party Size":0 ] (18:4:Number) 
+ | | | | |■Set Variable: CSelf11[ターゲット] -= 1 + 0 
+ | | | | |■Set Variable: CSelf11[ターゲット] = 0  to  CSelf11[ターゲット] 
+ | | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0
+ | | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 1:カーソルON（対象位置　位置-1なら全部） / CSelf11[ターゲット] / 0
+ | | | | |●Label Jump [使用処理実行] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | | |■
+ | | | |-◇Condition:  [2]  [ CSelf12[一時変数２] == 11   ] Case↓
+ | | | | |▼ キャンセルなら終了
+ | | | | |●Label Jump [終了処理] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | | |■
+ | | | |◇End◇
+ | | | |■
+ | | |-◇Condition:  [2]  [ CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] == 4   ] Case↓
+ | | | |▼ 自分以外の味方一人
+ | | | |●Label Point [自分以外の味方一人] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | | | |■Set Variable: CSelf16[単体(1)or全体(2)] = 1 + 0 
+ | | | |■Call Event [Name]: CSelf11[ターゲット] = ["X[Map]Select Character Box"] <CommonEv 108>  / CSelf11[ターゲット] / 1:決定効果音を鳴らさない
+ | | | |■Set Variable: CSelf27[対象ID] = -1 + 0 
+ | | | |■Condition (Number):   [1] CSelf11[ターゲット] >=  0  
+ | | | |-◇Condition:  [1]  [ CSelf11[ターゲット] >= 0   ] Case↓
+ | | | | |■Call Event [Name]: CSelf27[対象ID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf11[ターゲット]
+ | | | | |■
+ | | | |◇End◇
+ | | | |■Condition (Number):   [1] CSelf27[対象ID] <=  -1  /  [2] CSelf27[対象ID] ==  CSelf1[発動者ID]  
+ | | | |-◇Condition:  [1]  [ CSelf27[対象ID] <= -1   ] Case↓
+ | | | | |▼ キャンセルなら終了　カーソル点滅を消す
+ | | | | |●Label Jump [終了処理] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | | |■
+ | | | |-◇Condition:  [2]  [ CSelf27[対象ID] == CSelf1[発動者ID]   ] Case↓
+ | | | | |▼ 発動者と同じ場合は警告
+ | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
+ | | | | |■Set String: CSelf9[表示文字列] = "Can't target the user."
+ | | | | |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / 0:初期表示 / CSelf9[表示文字列]
+ | | | | |■Key Input: CSelf10[一時変数] [Wait for Input <!>]  Confirm (10) Cancel (11)
+ | | | | |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / -1:消去 / CSelf9[表示文字列]
+ | | | | |●Label Jump [自分以外の味方一人] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | | |■
+ | | | |◇End◇
+ | | | |●Label Jump [使用処理実行] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇End◇
+ | |■
+ |◇End◇
+ |■
+◇End◇
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■Repeat Loop [ 0 ] Times
+ |▼ 「技能」使用処理の場合はここへジャンプ
+ |●Label Point [使用処理実行] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |■Repeat Loop [ 1 ] Times
+ | |▼ Ver2.28 移動時にアイテム「ヒールの巻物」を使っても回復しない(発動者-1だとうまくいかない)バグを修正
+ | |■Condition (Number):   [1] CSelf1[発動者ID] ==  -1  
+ | |-◇Condition:  [1]  [ CSelf1[発動者ID] == -1   ] Case↓
+ | | |■Set Variable: CSelf20[対象キャラ位置[Ver2.28]] to CSelf21[最大効果量[Ver2.28]] = -1 + 0 
+ | | |■Repeat Loop [ CSelf37[最大パーティ人数] ] Times
+ | | | |■Set Variable: CSelf20[対象キャラ位置[Ver2.28]] += 1 + 0 
+ | | | |■Call Event [Name]: CSelf14[対象ID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf20[対象キャラ位置[Ver2.28]]
+ | | | |■Condition (Number):   [1] CSelf14[対象ID] <=  -1  
+ | | | |-◇Condition:  [1]  [ CSelf14[対象ID] <= -1   ] Case↓
+ | | | | |■Go to Loop Start
+ | | | | |■
+ | | | |◇End◇
+ | | | |■Load DB(Var):  CSelf10[一時変数] = VarDB[ "┗ State List":CSelf14[対象ID]:0 ] (5:-:\udb[8:0] Steps Left) 
+ | | | |■Condition (Number):   [1] CSelf10[一時変数] !=  0  
+ | | | |-◇Condition:  [1]  [ CSelf10[一時変数] != 0   ] Case↓
+ | | | | |■Go to Loop Start
+ | | | | |■
+ | | | |◇End◇
+ | | | |■Load DB(User):  CSelf33[技能TMP２] = UserDB[ "Skills":CSelf30[技能番号]:"┣ Attack Influence [%]           " ] (0:-:10) 
+ | | | |■Load DB(Var):  CSelf33[技能TMP２] *= VarDB[ "×Allies Temp Data":CSelf14[対象ID]:"[Temp] Post-Calc Attack" ] (17:-:2) 
+ | | | |■Set Variable: CSelf33[技能TMP２] /= 100 + 0 
+ | | | |■Load DB(User):  CSelf34[技能TMP３] = UserDB[ "Skills":CSelf30[技能番号]:"┣ Magic Influence [%]           " ] (0:-:11) 
+ | | | |■Load DB(Var):  CSelf34[技能TMP３] *= VarDB[ "×Allies Temp Data":CSelf14[対象ID]:"[Temp] Post-Calc Magic Atk" ] (17:-:4) 
+ | | | |■Set Variable: CSelf34[技能TMP３] /= 100 + 0 
+ | | | |■Set Variable: CSelf35[結果値] = CSelf33[技能TMP２] + CSelf34[技能TMP３] 
+ | | | |■Load DB(User):  CSelf35[結果値] += UserDB[ "Skills":CSelf30[技能番号]:"┣ Base Amount [Fixed Value]" ] (0:-:9) 
+ | | | |■Condition (Number):   [1] CSelf35[結果値] >  CSelf21[最大効果量[Ver2.28]]  
+ | | | |-◇Condition:  [1]  [ CSelf35[結果値] > CSelf21[最大効果量[Ver2.28]]   ] Case↓
+ | | | | |■Set Variable: CSelf21[最大効果量[Ver2.28]] = CSelf35[結果値] + 0 
+ | | | | |■Set Variable: CSelf1[発動者ID] = CSelf14[対象ID] + 0 
+ | | | | |■
+ | | | |◇End◇
+ | | | |■
+ | | |◇Loop End Point◇◇
+ | | |■
+ | |◇End◇
+ | |■
+ |◇Loop End Point◇◇
+ |■Set Variable: CSelf99[使用した？] = 1 + 0 
+ |■Call Event [Name]: ["X[Map]Character Box: Draw All"] <CommonEv 92>  / 1:全員描画[瞬間表示]
+ |▼ ここで技能エフェクトSEを鳴らす
+ |■Set String: CSelf9[表示文字列] = ""
+ |■Load DB(User):  CSelf10[一時変数] = UserDB[ "Skills":CSelf30[技能番号]:"Animation" ] (0:-:19) 
+ |■Condition (Number):   [1] CSelf10[一時変数] >=  0  
+ |-◇Condition:  [1]  [ CSelf10[一時変数] >= 0   ] Case↓
+ | |■Load DB(User):  CSelf12[一時変数２] = UserDB[ "┗ Animations":CSelf10[一時変数]:"Process by [Ignore Settings]" ] (1:-:14) 
+ | |■Condition (Number):   [1] CSelf12[一時変数２] <=  -1  
+ | |-◇Condition:  [1]  [ CSelf12[一時変数２] <= -1   ] Case↓
+ | | |■Load DB(User):  CSelf9[表示文字列] = UserDB[ "┗ Animations":CSelf10[一時変数]:"Sound Effect" ] (1:-:9) 
+ | | |■
+ | |◇End◇
+ | |■
+ |◇End◇
+ |■Condition (String):   [1] CSelf9[表示文字列] Is Not Equal to ""
+ |-◇Condition:  [1] [ CSelf9[表示文字列] Is Not Equal to "" ] Case↓
+ | |■Sound: SE File [\cself[9]] Vol 100% Pitch 100% (0 Channel) Play / Delay: 0 Frames
+ | |■
+ |-◇Else
+ | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
+ | |■
+ |◇End◇
+ |▼ ここで各キャラ処理（一人なら1人分だけで終了）
+ |■Repeat Loop [ CSelf37[最大パーティ人数] ] Times
+ | |■Condition (Number):   [1] CSelf16[単体(1)or全体(2)] ==  2  
+ | |-◇Condition:  [1]  [ CSelf16[単体(1)or全体(2)] == 2   ] Case↓
+ | | |▼ 全体処理なら、次のキャラへ
+ | | |■Set Variable: CSelf11[ターゲット] += 1 + 0 
+ | | |■
+ | |◇End◇
+ | |■Call Event [Name]: CSelf14[対象ID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf11[ターゲット]
+ | |■Condition (Number):   [1] CSelf14[対象ID] <=  -1  
+ | |-◇Condition:  [1]  [ CSelf14[対象ID] <= -1   ] Case↓
+ | | |■Go to Loop Start
+ | | |■
+ | |◇End◇
+ | |▼ ステータス回復エフェクト
+ | |■Set Variable: CSelf12[一時変数２] = -1 + 0 
+ | |■Repeat Loop [ 3 ] Times
+ | | |■Set Variable: CSelf12[一時変数２] += 1 + 0 
+ | | |■Condition (Number):   [1] CSelf12[一時変数２] ==  0  /  [2] CSelf12[一時変数２] ==  1  /  [3] CSelf12[一時変数２] ==  2  
+ | | |-◇Condition:  [1]  [ CSelf12[一時変数２] == 0   ] Case↓
+ | | | |■Load DB(User):  CSelf13[次回使用可能フラグ] = UserDB[ "Skills":CSelf30[技能番号]:"Remove State 1" ] (0:-:28) 
+ | | | |■
+ | | |-◇Condition:  [2]  [ CSelf12[一時変数２] == 1   ] Case↓
+ | | | |■Load DB(User):  CSelf13[次回使用可能フラグ] = UserDB[ "Skills":CSelf30[技能番号]:"Remove State 2" ] (0:-:29) 
+ | | | |■
+ | | |-◇Condition:  [3]  [ CSelf12[一時変数２] == 2   ] Case↓
+ | | | |■Load DB(User):  CSelf13[次回使用可能フラグ] = UserDB[ "Skills":CSelf30[技能番号]:"Remove State 3" ] (0:-:30) 
+ | | | |■
+ | | |◇End◇
+ | | |■Condition (Number):   [1] CSelf13[次回使用可能フラグ] ==  -3  /  [2] CSelf13[次回使用可能フラグ] ==  -2  /  [3] CSelf13[次回使用可能フラグ] >=  0  
+ | | |-◇Condition:  [1]  [ CSelf13[次回使用可能フラグ] == -3   ] Case↓
+ | | | |▼ 全回復（死亡抜き）
+ | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf14[対象ID] / -3:Remove All (Full Recovery Targets Excluding Fainting) / 0:Remove
+ | | | |■
+ | | |-◇Condition:  [2]  [ CSelf13[次回使用可能フラグ] == -2   ] Case↓
+ | | | |▼ 全回復（死亡込み）
+ | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf14[対象ID] / -2:Remove All (Only Full Recovery Targets) / 0:Remove
+ | | | |■
+ | | |-◇Condition:  [3]  [ CSelf13[次回使用可能フラグ] >= 0   ] Case↓
+ | | | |▼ 単体回復
+ | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf14[対象ID] / CSelf13[次回使用可能フラグ] / 0:Remove
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇Loop End Point◇◇
+ | |▼ 回復値の計算
+ | |■Set Variable: CSelf33[技能TMP２] = 0 + 0 
+ | |■Set Variable: CSelf34[技能TMP３] = 0 + 0 
+ | |■Condition (Number):   [1] CSelf1[発動者ID] >=  0  
+ | |-◇Condition:  [1]  [ CSelf1[発動者ID] >= 0   ] Case↓
+ | | |■Set Variable: CSelf15[発動者ID] = CSelf1[発動者ID] + 0 
+ | | |■Load DB(User):  CSelf33[技能TMP２] = UserDB[ "Skills":CSelf30[技能番号]:"┣ Attack Influence [%]           " ] (0:-:10) 
+ | | |■Load DB(Var):  CSelf33[技能TMP２] *= VarDB[ "×Allies Temp Data":CSelf15[発動者ID]:"[Temp] Post-Calc Attack" ] (17:-:2) 
+ | | |■Set Variable: CSelf33[技能TMP２] /= 100 + 0 
+ | | |■Load DB(User):  CSelf34[技能TMP３] = UserDB[ "Skills":CSelf30[技能番号]:"┣ Magic Influence [%]           " ] (0:-:11) 
+ | | |■Load DB(Var):  CSelf34[技能TMP３] *= VarDB[ "×Allies Temp Data":CSelf15[発動者ID]:"[Temp] Post-Calc Magic Atk" ] (17:-:4) 
+ | | |■Set Variable: CSelf34[技能TMP３] /= 100 + 0 
+ | | |■
+ | |◇End◇
+ | |■Set Variable: CSelf35[結果値] = CSelf33[技能TMP２] + CSelf34[技能TMP３] 
+ | |■Load DB(User):  CSelf35[結果値] += UserDB[ "Skills":CSelf30[技能番号]:"┣ Base Amount [Fixed Value]" ] (0:-:9) 
+ | |▼ 分散を計算
+ | |■Set Variable: CSelf38[ランダム上限％] = 100 + 0 
+ | |■Load DB(User):  CSelf38[ランダム上限％] += UserDB[ "Skills":CSelf30[技能番号]:"┗ Variance [±%]                     " ] (0:-:12) 
+ | |■Set Variable: CSelf39[ランダム下限％] = 100 + 0 
+ | |■Load DB(User):  CSelf39[ランダム下限％] -= UserDB[ "Skills":CSelf30[技能番号]:"┗ Variance [±%]                     " ] (0:-:12) 
+ | |■Set Variable: CSelf38[ランダム上限％] Lower Bound= 0 + 0 
+ | |■Set Variable: CSelf39[ランダム下限％] Lower Bound= 0 + 0 
+ | |■Set Variable: CSelf35[結果値] *= CSelf39[ランダム下限％]  to  CSelf38[ランダム上限％] 
+ | |■Set Variable: CSelf35[結果値] /= 100 + 0 
+ | |▼ ここでHPかSPに影響
+ | |■Load DB(User):  CSelf32[技能TMP１] = UserDB[ "Skills":CSelf30[技能番号]:"┏ What's Affected?                 " ] (0:-:8) 
+ | |■Condition (Number):   [1] CSelf32[技能TMP１] ==  0  /  [2] CSelf32[技能TMP１] ==  1  
+ | |-◇Condition:  [1]  [ CSelf32[技能TMP１] == 0   ] Case↓
+ | | |▼ HP回復
+ | | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf14[対象ID] / 22:HP / CSelf35[結果値] / 0:No
+ | | |▼ 回復エフェクト
+ | | |■Call Event [Name]: ["X[Map]Display Char HP/SP Recovery"] <CommonEv 97>  / CSelf11[ターゲット] / CSelf35[結果値] / 0
+ | | |■
+ | |-◇Condition:  [2]  [ CSelf32[技能TMP１] == 1   ] Case↓
+ | | |▼ SP回復
+ | | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf14[対象ID] / 23:SP / CSelf35[結果値] / 0:No
+ | | |▼ 回復エフェクト
+ | | |■Call Event [Name]: ["X[Map]Display Char HP/SP Recovery"] <CommonEv 97>  / CSelf11[ターゲット] / 0 / CSelf35[結果値]
+ | | |■
+ | |◇End◇
+ | |▼ ステータス付与エフェクト
+ | |■Set Variable: CSelf12[一時変数２] = -1 + 0 
+ | |■Repeat Loop [ 3 ] Times
+ | | |■Set Variable: CSelf12[一時変数２] += 1 + 0 
+ | | |■Condition (Number):   [1] CSelf12[一時変数２] ==  0  /  [2] CSelf12[一時変数２] ==  1  /  [3] CSelf12[一時変数２] ==  2  
+ | | |-◇Condition:  [1]  [ CSelf12[一時変数２] == 0   ] Case↓
+ | | | |■Load DB(User):  CSelf13[次回使用可能フラグ] = UserDB[ "Skills":CSelf30[技能番号]:"Add State 1             " ] (0:-:22) 
+ | | | |■
+ | | |-◇Condition:  [2]  [ CSelf12[一時変数２] == 1   ] Case↓
+ | | | |■Load DB(User):  CSelf13[次回使用可能フラグ] = UserDB[ "Skills":CSelf30[技能番号]:"Add State 2             " ] (0:-:24) 
+ | | | |■
+ | | |-◇Condition:  [3]  [ CSelf12[一時変数２] == 2   ] Case↓
+ | | | |■Load DB(User):  CSelf13[次回使用可能フラグ] = UserDB[ "Skills":CSelf30[技能番号]:"Add State 3             " ] (0:-:26) 
+ | | | |■
+ | | |◇End◇
+ | | |■Condition (Number):   [1] CSelf13[次回使用可能フラグ] >=  0  
+ | | |-◇Condition:  [1]  [ CSelf13[次回使用可能フラグ] >= 0   ] Case↓
+ | | | |▼ 単体付与
+ | | | |■Load DB(User):  CSelf17[移動中OK？] = UserDB[ "States":CSelf13[次回使用可能フラグ]:"Category (Battle/Map)" ] (8:-:7) 
+ | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf14[対象ID] / CSelf13[次回使用可能フラグ] / 1:Add
+ | | | |■Condition (Number):   [1] CSelf17[移動中OK？] ==  1  
+ | | | |-◇Condition:  [1]  [ CSelf17[移動中OK？] == 1   ] Case↓
+ | | | | |■Call Event [Name]: ["X[Map]Display Character State"] <CommonEv 98>  / CSelf11[ターゲット] / CSelf13[次回使用可能フラグ]
+ | | | | |■
+ | | | |◇End◇
+ | | | |■ [Special] Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇Loop End Point◇◇
+ | |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf14[対象ID]
+ | |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf14[対象ID]
+ | |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf14[対象ID]
+ | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0
+ | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 3:表示[瞬間表示] / CSelf11[ターゲット] / CSelf14[対象ID]
+ | |▼  
+ | |■Condition (Number):   [1] CSelf16[単体(1)or全体(2)] ==  1  
+ | |-◇Condition:  [1]  [ CSelf16[単体(1)or全体(2)] == 1   ] Case↓
+ | | |▼ 単体使用なら一回で終了
+ | | |■Break Loop
+ | | |■
+ | |◇End◇
+ | |■
+ |◇Loop End Point◇◇
+ |▼ アイテム消費判定
+ |■Condition (Number):   [1] CSelf2[アイテム経由？（アイテムコード）] >=  0  
+ |-◇Condition:  [1]  [ CSelf2[アイテム経由？（アイテムコード）] >= 0   ] Case↓
+ | |▼ アイテム経由ならすぐ終了
+ | |■Set Variable: CSelf99[使用した？] = 1 + 0 
+ | |■Exit Event
+ | |■
+ |◇End◇
+ |▼ アイテム経由で呼ばれていない場合は、発動者の消費処理
+ |■Condition (Number):   [1] CSelf2[アイテム経由？（アイテムコード）] <=  -1  
+ |-◇Condition:  [1]  [ CSelf2[アイテム経由？（アイテムコード）] <= -1   ] Case↓
+ | |■Call Event [Name]: CSelf13[次回使用可能フラグ] = ["X[Map]Skill Use: Consume"] <CommonEv 121>  / CSelf1[発動者ID] / CSelf0[技能コード]
+ | |■Call Event [Name]: ["X[Map]Character Box: Draw All"] <CommonEv 92>  / 1:全員描画[瞬間表示]
+ | |■
+ |◇End◇
+ |■Condition (Number):   [1] CSelf13[次回使用可能フラグ] >=  1  /  [2] CSelf13[次回使用可能フラグ] <=  0  
+ |-◇Condition:  [1]  [ CSelf13[次回使用可能フラグ] >= 1   ] Case↓
+ | |▼ まだ使える場合は続けて使用
+ | |■Wait: 5 Frames
+ | |●Label Jump [使用処理2] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | |■
+ |-◇Condition:  [2]  [ CSelf13[次回使用可能フラグ] <= 0   ] Case↓
+ | |▼ 使えない場合は残り０個を表示して戻す
+ | |▼ キー入力待ち
+ | |■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / -1:削除 /  /  / 
+ | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
+ | |■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / 0:表示 / Can't use / any more. / 
+ | |■Key Input: CSelf10[一時変数] [Wait for Input <!>]  Confirm (10) Cancel (11)
+ | |■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / -1:削除 /  /  / 
+ | |■
+ |◇End◇
+ |▼  
+ |■Exit Event
+ |■
+◇Loop End Point◇◇
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ 　イベント起動処理
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■Repeat Loop [ 0 ] Times
+ |▼ 「イベント起動」処理の場合はここへジャンプ
+ |●Label Point [イベント起動処理] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |■Call Event [Name]: ["X[Map]Skill Use: Consume"] <CommonEv 121>  / CSelf1[発動者ID] / CSelf0[技能コード]
+ |■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / -1:削除 / CSelf5 / CSelf5 / CSelf5
+ |■Load DB(User):  CSelf12[一時変数２] = UserDB[ "Skills":CSelf30[技能番号]:"(If Used) ┗ Event Number" ] (0:-:3) 
+ |■Write to DB(Var): VarDB[ "Base System Variables":1:0 ] (18:Menu Close Flag:Number) =  1
+ |■Reserve Next Event: Variable [CSelf12[一時変数２]]'s Ev
+ |■Set Variable: CSelf99[使用した？] = 1 + 0 
+ |■Exit Event
+ |■
+◇Loop End Point◇◇
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ 　　　終了時処理
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■Repeat Loop [ 0 ] Times
+ |●Label Point [終了処理] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 1:Cancel Sound
+ |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0
+ |■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / -1:削除 /  /  / 
+ |■Exit Event
+ |■
+◇Loop End Point◇◇
+■
+[COMMAND_TEXT_END]

@@ -1,0 +1,839 @@
+COMMON_ID=159
+COMMON_NAME=X[Bat]Select Skill
+COMMAND_COLOR=6
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=3
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=発動スロット
+VALINPUT_NAME_1=[A]発動技能
+VALINPUT_NAME_2=モード
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=0
+LOADTYPE2=2
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=0
+CHOICE_STR_2_NUM=3
+CHOICE_STR_2_0=技能選択画面から[A欄不要]
+CHOICE_STR_2_1=技能[A]指定済み実行
+CHOICE_STR_2_2=技能[A]アイテム経由実行
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=0
+CHOICE_VAL_2_NUM=3
+CHOICE_VAL_2_0=0
+CHOICE_VAL_2_1=1
+CHOICE_VAL_2_2=2
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=使用対象
+RETURN_VAL_TARGET=99
+CSELF_NAME_0=発動スロット
+CSELF_NAME_1=発動技能
+CSELF_NAME_2=モード
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=アイテム側使用メッセージ
+CSELF_NAME_9=表示文字列
+CSELF_NAME_10=一時変数
+CSELF_NAME_11=ターゲット
+CSELF_NAME_12=一時変数２
+CSELF_NAME_13=
+CSELF_NAME_14=アイテムコード
+CSELF_NAME_15=アイテム番号(%10000)
+CSELF_NAME_16=アイテム時、メッセージはアイテム側？
+CSELF_NAME_17=
+CSELF_NAME_18=
+CSELF_NAME_19=
+CSELF_NAME_20=
+CSELF_NAME_21=
+CSELF_NAME_22=一時技能ｺｰﾄﾞ
+CSELF_NAME_23=
+CSELF_NAME_24=即時発動
+CSELF_NAME_25=
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=×座標倍率
+CSELF_NAME_29=ﾀｰｹﾞｯﾄﾀｲﾌﾟ
+CSELF_NAME_30=技能番号
+CSELF_NAME_31=
+CSELF_NAME_32=技能TMP１
+CSELF_NAME_33=技能TMP２
+CSELF_NAME_34=技能TMP３
+CSELF_NAME_35=結果値
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=ランダム上限％
+CSELF_NAME_39=ランダム下限％
+CSELF_NAME_40=
+CSELF_NAME_41=
+CSELF_NAME_42=
+CSELF_NAME_43=
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=座標倍率X[x10]
+CSELF_NAME_89=座標倍率Y[x10]
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=使用対象
+COMMAND_NUM=332
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("　技能選択が実行されたときの、技能選択＋ターゲット選択処理を行います。")
+[103][0,1]<0>()("　また、コマンド選択時の直接技能発動処理や、アイテムからの技能起動処理も行います。")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[121][4,0]<0>(1600099,-1,0,0)()
+[103][0,1]<0>()("Ver2.20　座標倍率を縦横別に修正")
+[250][5,4]<0>(18,97,0,69632,1600088)("","Base System Variables","","")
+[250][5,4]<0>(18,98,0,69632,1600089)("","Base System Variables","","")
+[121][4,0]<0>(1600024,0,0,0)()
+[121][4,0]<0>(1600030,1600001,0,0)()
+[250][5,4]<0>(18,51,0,69632,1600037)("","Base System Variables","","")
+[111][4,0]<0>(1,1600002,2,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("アイテム・武器・防具使用時の場合は技能を読み込む")
+[121][4,0]<1>(1600014,1600001,0,0)()
+[111][10,0]<1>(19,1600014,9999,3,1600014,19999,3,1600014,29999,3)()
+[401][1,0]<1>(1)()
+[101][0,1]<2>()("\>コモン159「X[戦]技能選択実行」：エラー<\n>　アイテムコードが1万未満です。")
+[172][0,0]<2>()()
+[0][0,0]<2>()()
+[401][1,0]<1>(2)()
+[121][4,0]<2>(1600015,1600014,10000,16384)()
+[250][5,4]<2>(2,1600015,4,332288,1600001)("","Items","","┣ [2]: Skill to Use                ")
+[0][0,0]<2>()()
+[401][1,0]<1>(3)()
+[121][4,0]<2>(1600015,1600014,20000,16384)()
+[250][5,4]<2>(3,1600015,23,332288,1600001)("","Weapons","","┣ Skill to Use                          ")
+[0][0,0]<2>()()
+[420][1,0]<1>(0)()
+[111][4,0]<2>(1,1600014,39999,3)()
+[401][1,0]<2>(1)()
+[121][4,0]<3>(1600015,1600014,30000,16384)()
+[250][5,4]<3>(4,1600015,21,332288,1600001)("","Armors","","┣ Skill to Use                          ")
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[121][4,0]<1>(1600030,1600001,0,0)()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[179][1,0]<0>(1)()
+[99][1,0]<1>(1)()
+[111][4,0]<1>(1,1600002,0,2)()
+[401][1,0]<1>(1)()
+[103][0,1]<2>()("技能一覧から選ぶ場合はここから")
+[111][4,0]<2>(1,1600020,0,1)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("ここで主人公IDを取得する")
+[121][4,0]<3>(1600099,1600020,0,0)()
+[300][4,1]<3>(0,16777217,1600020,1600011)("X[Map]Get Ally ID")
+[300][5,1]<3>(0,16777218,10,1600000,1600098)("X[Bat]Get Cursor Memory Pos")
+[212][0,1]<3>()("技能選択")
+[300][5,1]<3>(0,3,12,-1,-1)("X[Bat]Ally Box: Draw One")
+[103][0,1]<3>()("万能ウィンドウ設定を初期化")
+[300][3,1]<3>(0,1,1600000)("X[Bat]Create Skill List")
+[103][0,1]<3>()("万能ウィンドウ表示")
+[300][4,1]<3>(0,2,0,1600000)("X[Bat]Draw Upper Status")
+[103][0,1]<3>()("万能ウィンドウのサイズ設定")
+[121][4,0]<3>(1600035,1,1600088,8192)()
+[250][5,4]<3>(18,9,0,65536,1600035)("","Base System Variables","","")
+[121][4,0]<3>(1600035,3,1600089,8192)()
+[250][5,4]<3>(18,10,0,65536,1600035)("","Base System Variables","","")
+[121][4,0]<3>(1600035,30,1600088,8192)()
+[250][5,4]<3>(18,11,0,65536,1600035)("","Base System Variables","","")
+[121][4,0]<3>(1600035,18,1600089,8192)()
+[250][5,4]<3>(18,12,0,65536,1600035)("","Base System Variables","","")
+[121][4,0]<3>(1600035,2,0,0)()
+[250][5,4]<3>(18,13,0,65536,1600035)("","Base System Variables","","")
+[121][4,0]<3>(1600035,13,0,0)()
+[250][5,4]<3>(18,14,0,65536,1600035)("","Base System Variables","","")
+[121][4,0]<3>(1600035,3,1600089,8192)()
+[250][5,4]<3>(18,16,0,65536,1600035)("","Base System Variables","","")
+[300][6,1]<3>(0,4,0,-1,4,1)("X[Com]Draw Universal Window")
+[103][0,1]<3>()("万能ウィンドウ選択処理を実行")
+[179][1,0]<3>(1)()
+[103][0,1]<4>()("万能ウィンドウ選択処理を実行")
+[250][5,4]<4>(18,21,0,65536,1600098)("","Base System Variables","","")
+[300][4,1]<4>(0,16777217,2,1600022)("X[Com]U-Window: Select")
+[250][5,4]<4>(18,61,0,69632,1600098)("","Base System Variables","","")
+[300][5,1]<4>(0,3,10,1600000,1600098)("X[Bat]Set Cursor Memory Pos")
+[0][0,0]<4>()()
+[498][0,0]<3>()()
+[300][6,1]<3>(0,4,-1,0,4,1)("X[Com]Draw Universal Window")
+[99][1,0]<3>(1)()
+[103][0,1]<3>()("技能使用時の処理")
+[111][7,0]<3>(2,1600022,-100,2,1600022,0,1)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("キャンセル時は終了")
+[300][4,1]<4>(0,2,-1,-1)("X[Bat]Draw Upper Status")
+[121][4,0]<4>(1600099,-1,0,0)()
+[172][0,0]<4>()()
+[0][0,0]<4>()()
+[401][1,0]<3>(2)()
+[103][0,1]<4>()("何か技能を選んでいた場合、ターゲット選択 or 実行")
+[300][4,1]<4>(0,2,-1,-1)("X[Bat]Draw Upper Status")
+[121][4,0]<4>(1600030,1600022,0,0)()
+[213][0,1]<4>()("使用処理2")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[179][1,0]<0>(1)()
+[103][0,1]<1>()(" ")
+[212][0,1]<1>()("使用処理2")
+[121][4,0]<1>(1600099,0,0,0)()
+[250][5,4]<1>(0,1600030,6,332288,1600012)("","Skills","","Usable When?")
+[111][4,0]<1>(1,1600012,1,1)()
+[401][1,0]<1>(1)()
+[111][4,0]<2>(1,1600012,2,3)()
+[401][1,0]<2>(1)()
+[250][5,4]<3>(0,1600030,2,332288,1600029)("","Skills","","┏ Effect Target   ")
+[179][1,0]<3>(1)()
+[250][5,4]<4>(0,1600030,35,332288,1600024)("","Skills","","Timing to Execute Skill")
+[121][4,0]<4>(1600024,100,0,768)()
+[0][0,0]<4>()()
+[498][0,0]<3>()()
+[103][0,1]<3>()("味方に対して使用可能　または　バトル時にイベント起動　の場合だけ使用可能")
+[111][7,0]<3>(2,1600029,101,2,1600029,0,1)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("イベント起動")
+[121][4,0]<4>(1600099,1600024,0,0)()
+[0][0,0]<4>()()
+[401][1,0]<3>(2)()
+[103][0,1]<4>()("味方に対して使用可能")
+[103][0,1]<4>()("0＝味方一人　1＝自分自身のみ　2＝味方全員　3＝味方一人ランダム　4＝自分以外一人")
+[250][5,4]<4>(0,1600030,2,332288,1600010)("","Skills","","┏ Effect Target   ")
+[111][4,0]<4>(1,1600029,1,2)()
+[401][1,0]<4>(1)()
+[103][0,1]<5>()("自分のみ")
+[103][0,1]<5>()("発動スロットにセット")
+[121][4,0]<5>(1600099,1600000,1600024,0)()
+[172][0,0]<5>()()
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[111][7,0]<4>(2,1600029,0,2,1600029,2,2)()
+[401][1,0]<4>(1)()
+[103][0,1]<5>()("0＝味方一人")
+[103][0,1]<5>()("キャラ一覧を表示して選択させる")
+[300][5,1]<5>(0,16777218,1600000,0,1600011)("X[Bat]Select Ally Target")
+[103][0,1]<5>()("Ver2.28　戦闘中に点滅が止まらなくなるバグ修正")
+[300][5,1]<5>(0,3,12,-1,-1)("X[Bat]Ally Box: Draw One")
+[111][4,0]<5>(1,1600011,-1,3)()
+[401][1,0]<5>(1)()
+[103][0,1]<6>()("キャンセルなら終了　カーソル点滅を消す")
+[121][4,0]<6>(1600099,-1,0,0)()
+[111][4,0]<6>(1,1600002,0,2)()
+[401][1,0]<6>(1)()
+[213][0,1]<7>()("技能選択")
+[0][0,0]<7>()()
+[499][0,0]<6>()()
+[172][0,0]<6>()()
+[0][0,0]<6>()()
+[499][0,0]<5>()()
+[121][4,0]<5>(1600099,1600011,1600024,0)()
+[172][0,0]<5>()()
+[0][0,0]<5>()()
+[401][1,0]<4>(2)()
+[103][0,1]<5>()("2＝味方全体")
+[300][5,1]<5>(0,3,10,-1,-1)("X[Bat]Ally Box: Draw One")
+[103][0,1]<5>()("決定かキャンセルか、だけ受付する")
+[123][2,0]<5>(1600012,176)()
+[103][0,1]<5>()("Ver2.28　戦闘中に点滅が止まらなくなるバグ修正")
+[300][5,1]<5>(0,3,12,-1,-1)("X[Bat]Ally Box: Draw One")
+[111][7,0]<5>(2,1600012,10,2,1600012,11,2)()
+[401][1,0]<5>(1)()
+[103][0,1]<6>()("決定なら使用")
+[300][3,1]<6>(0,1,0)("X[Com]Play System Sound")
+[121][4,0]<6>(1600099,-10,1600024,4096)()
+[172][0,0]<6>()()
+[0][0,0]<6>()()
+[401][1,0]<5>(2)()
+[103][0,1]<6>()("キャンセルなら終了")
+[300][3,1]<6>(0,1,1)("X[Com]Play System Sound")
+[121][4,0]<6>(1600099,-1,0,0)()
+[111][4,0]<6>(1,1600002,0,2)()
+[401][1,0]<6>(1)()
+[213][0,1]<7>()("技能選択")
+[0][0,0]<7>()()
+[499][0,0]<6>()()
+[172][0,0]<6>()()
+[0][0,0]<6>()()
+[499][0,0]<5>()()
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[111][7,0]<4>(2,1600029,3,2,1600029,4,2)()
+[401][1,0]<4>(1)()
+[103][0,1]<5>()("味方ランダム一人")
+[300][5,1]<5>(0,3,11,-1,-1)("X[Bat]Ally Box: Draw One")
+[103][0,1]<5>()("決定かキャンセルか、だけ受付する")
+[123][2,0]<5>(1600012,176)()
+[103][0,1]<5>()("Ver2.28　戦闘中に点滅が止まらなくなるバグ修正")
+[300][5,1]<5>(0,3,12,-1,-1)("X[Bat]Ally Box: Draw One")
+[111][7,0]<5>(2,1600012,10,2,1600012,11,2)()
+[401][1,0]<5>(1)()
+[103][0,1]<6>()("決定なら使用")
+[300][3,1]<6>(0,1,0)("X[Com]Play System Sound")
+[121][4,0]<6>(1600099,-11,1600024,4096)()
+[300][5,1]<6>(0,3,12,-1,0)("X[Bat]Ally Box: Draw One")
+[172][0,0]<6>()()
+[0][0,0]<6>()()
+[401][1,0]<5>(2)()
+[103][0,1]<6>()("キャンセルなら終了")
+[300][3,1]<6>(0,1,1)("X[Com]Play System Sound")
+[121][4,0]<6>(1600099,-1,0,0)()
+[111][4,0]<6>(1,1600002,0,2)()
+[401][1,0]<6>(1)()
+[213][0,1]<7>()("技能選択")
+[0][0,0]<7>()()
+[499][0,0]<6>()()
+[172][0,0]<6>()()
+[0][0,0]<6>()()
+[499][0,0]<5>()()
+[0][0,0]<5>()()
+[401][1,0]<4>(2)()
+[103][0,1]<5>()("自分以外の味方一人")
+[212][0,1]<5>()("自分以外の味方一人")
+[300][5,1]<5>(0,16777218,1600000,1,1600011)("X[Bat]Select Ally Target")
+[103][0,1]<5>()("Ver2.28　戦闘中に点滅が止まらなくなるバグ修正")
+[300][5,1]<5>(0,3,12,-1,-1)("X[Bat]Ally Box: Draw One")
+[111][7,0]<5>(18,1600011,-1,3,1600011,1600000,2)()
+[401][1,0]<5>(1)()
+[103][0,1]<6>()("キャンセルなら終了　カーソル点滅を消す")
+[121][4,0]<6>(1600099,-1,0,0)()
+[111][4,0]<6>(1,1600002,0,2)()
+[401][1,0]<6>(1)()
+[213][0,1]<7>()("技能選択")
+[0][0,0]<7>()()
+[499][0,0]<6>()()
+[172][0,0]<6>()()
+[0][0,0]<6>()()
+[401][1,0]<5>(2)()
+[103][0,1]<6>()("発動者と同じ場合は警告")
+[300][3,1]<6>(0,1,2)("X[Com]Play System Sound")
+[122][2,1]<6>(1600009,0)("自分自身には使用できません。")
+[300][4,1]<6>(0,17,0,1600009)("X[Bat]Display Warning Message")
+[123][2,0]<6>(1600012,176)()
+[300][4,1]<6>(0,17,-1,1600009)("X[Bat]Display Warning Message")
+[213][0,1]<6>()("自分以外の味方一人")
+[0][0,0]<6>()()
+[420][1,0]<5>(0)()
+[121][4,0]<6>(1600099,1600011,1600024,0)()
+[172][0,0]<6>()()
+[0][0,0]<6>()()
+[499][0,0]<5>()()
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[103][0,1]<4>()("ここは敵へのターゲット選択")
+[111][10,0]<4>(3,1600029,10,2,1600029,11,2,1600029,12,2)()
+[401][1,0]<4>(1)()
+[103][0,1]<5>()("敵単体")
+[300][4,1]<5>(0,16777217,0,1600011)("X[Bat]Select Enemy Target")
+[111][4,0]<5>(1,1600011,-1,3)()
+[401][1,0]<5>(1)()
+[103][0,1]<6>()("キャンセルなら終了　カーソル点滅を消す")
+[121][4,0]<6>(1600099,-1,0,0)()
+[111][4,0]<6>(1,1600002,0,2)()
+[401][1,0]<6>(1)()
+[213][0,1]<7>()("技能選択")
+[0][0,0]<7>()()
+[499][0,0]<6>()()
+[172][0,0]<6>()()
+[0][0,0]<6>()()
+[499][0,0]<5>()()
+[121][4,0]<5>(1600099,1600011,1600024,0)()
+[172][0,0]<5>()()
+[0][0,0]<5>()()
+[401][1,0]<4>(2)()
+[300][4,1]<5>(0,2,10,-1)("X[Bat]Enemy: Draw One")
+[103][0,1]<5>()("決定かキャンセルか、だけ受付する")
+[123][2,0]<5>(1600012,176)()
+[300][4,1]<5>(0,2,12,-1)("X[Bat]Enemy: Draw One")
+[111][7,0]<5>(2,1600012,10,2,1600012,11,2)()
+[401][1,0]<5>(1)()
+[103][0,1]<6>()("決定なら使用（敵全体）")
+[300][3,1]<6>(0,1,0)("X[Com]Play System Sound")
+[121][4,0]<6>(1600099,-20,1600024,4096)()
+[172][0,0]<6>()()
+[0][0,0]<6>()()
+[401][1,0]<5>(2)()
+[103][0,1]<6>()("キャンセルなら終了")
+[300][3,1]<6>(0,1,1)("X[Com]Play System Sound")
+[121][4,0]<6>(1600099,-1,0,0)()
+[111][4,0]<6>(1,1600002,0,2)()
+[401][1,0]<6>(1)()
+[213][0,1]<7>()("技能選択")
+[0][0,0]<7>()()
+[499][0,0]<6>()()
+[172][0,0]<6>()()
+[0][0,0]<6>()()
+[499][0,0]<5>()()
+[0][0,0]<5>()()
+[401][1,0]<4>(3)()
+[103][0,1]<5>()("敵一体ランダム")
+[300][4,1]<5>(0,2,10,-1)("X[Bat]Enemy: Draw One")
+[103][0,1]<5>()("決定かキャンセルか、だけ受付する")
+[123][2,0]<5>(1600012,176)()
+[300][4,1]<5>(0,2,12,-1)("X[Bat]Enemy: Draw One")
+[111][7,0]<5>(2,1600012,10,2,1600012,11,2)()
+[401][1,0]<5>(1)()
+[103][0,1]<6>()("決定なら使用（敵ランダム）")
+[300][3,1]<6>(0,1,0)("X[Com]Play System Sound")
+[121][4,0]<6>(1600099,-21,1600024,4096)()
+[172][0,0]<6>()()
+[0][0,0]<6>()()
+[401][1,0]<5>(2)()
+[103][0,1]<6>()("キャンセルなら終了")
+[300][3,1]<6>(0,1,1)("X[Com]Play System Sound")
+[121][4,0]<6>(1600099,-1,0,0)()
+[111][4,0]<6>(1,1600002,0,2)()
+[401][1,0]<6>(1)()
+[213][0,1]<7>()("技能選択")
+[0][0,0]<7>()()
+[499][0,0]<6>()()
+[172][0,0]<6>()()
+[0][0,0]<6>()()
+[499][0,0]<5>()()
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Process Overview]
+▼ 　技能選択が実行されたときの、技能選択＋ターゲット選択処理を行います。
+▼ 　また、コマンド選択時の直接技能発動処理や、アイテムからの技能起動処理も行います。
+▼ ―――――――――――――――――――――――――――――――――――
+■Set Variable: CSelf99[使用対象] = -1 + 0 
+▼ Ver2.20　座標倍率を縦横別に修正
+■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
+■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
+■Set Variable: CSelf24[即時発動] = 0 + 0 
+■Set Variable: CSelf30[技能番号] = CSelf1[発動技能] + 0 
+■Load DB(Var):  CSelf37 = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
+■Condition (Number):   [1] CSelf2[モード] ==  2  
+-◇Condition:  [1]  [ CSelf2[モード] == 2   ] Case↓
+ |▼ アイテム・武器・防具使用時の場合は技能を読み込む
+ |■Set Variable: CSelf14[アイテムコード] = CSelf1[発動技能] + 0 
+ |■Condition (Number):   [1] CSelf14[アイテムコード] <=  9999  /  [2] CSelf14[アイテムコード] <=  19999  /  [3] CSelf14[アイテムコード] <=  29999  
+ |-◇Condition:  [1]  [ CSelf14[アイテムコード] <= 9999   ] Case↓
+ | |■Show Message: \>コモン159「X[戦]技能選択実行」：エラー\n　アイテムコードが1万未満です。
+ | |■Exit Event
+ | |■
+ |-◇Condition:  [2]  [ CSelf14[アイテムコード] <= 19999   ] Case↓
+ | |■Set Variable: CSelf15[アイテム番号(%10000)] = CSelf14[アイテムコード] % 10000 
+ | |■Load DB(User):  CSelf1[発動技能] = UserDB[ "Items":CSelf15[アイテム番号(%10000)]:"┣ [2]: Skill to Use                " ] (2:-:4) 
+ | |■
+ |-◇Condition:  [3]  [ CSelf14[アイテムコード] <= 29999   ] Case↓
+ | |■Set Variable: CSelf15[アイテム番号(%10000)] = CSelf14[アイテムコード] % 20000 
+ | |■Load DB(User):  CSelf1[発動技能] = UserDB[ "Weapons":CSelf15[アイテム番号(%10000)]:"┣ Skill to Use                          " ] (3:-:23) 
+ | |■
+ |-◇Else
+ | |■Condition (Number):   [1] CSelf14[アイテムコード] <=  39999  
+ | |-◇Condition:  [1]  [ CSelf14[アイテムコード] <= 39999   ] Case↓
+ | | |■Set Variable: CSelf15[アイテム番号(%10000)] = CSelf14[アイテムコード] % 30000 
+ | | |■Load DB(User):  CSelf1[発動技能] = UserDB[ "Armors":CSelf15[アイテム番号(%10000)]:"┣ Skill to Use                          " ] (4:-:21) 
+ | | |■
+ | |◇End◇
+ | |■
+ |◇End◇
+ |■Set Variable: CSelf30[技能番号] = CSelf1[発動技能] + 0 
+ |■
+◇End◇
+■Repeat Loop [ 1 ] Times
+ |■ [Special] Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
+ |■Condition (Number):   [1] CSelf2[モード] ==  0  
+ |-◇Condition:  [1]  [ CSelf2[モード] == 0   ] Case↓
+ | |▼ 技能一覧から選ぶ場合はここから
+ | |■Condition (Number):   [1] CSelf20 >=  0  
+ | |-◇Condition:  [1]  [ CSelf20 >= 0   ] Case↓
+ | | |▼ ここで主人公IDを取得する
+ | | |■Set Variable: CSelf99[使用対象] = CSelf20 + 0 
+ | | |■Call Event [Name]: CSelf11[ターゲット] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf20
+ | | |■Call Event [Name]: CSelf98 = ["X[Bat]Get Cursor Memory Pos"] <CommonEv 155>  / 10:[戦闘]技能(要ｷｬﾗ指定) / CSelf0[発動スロット]
+ | | |●Label Point [技能選択] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 12:カーソルOFF（対象位置　位置-1なら全部） / -1 / -1
+ | | |▼ 万能ウィンドウ設定を初期化
+ | | |■Call Event [Name]: ["X[Bat]Create Skill List"] <CommonEv 154>  / CSelf0[発動スロット]
+ | | |▼ 万能ウィンドウ表示
+ | | |■Call Event [Name]: ["X[Bat]Draw Upper Status"] <CommonEv 185>  / 0:表示A（初期表示用　スライド表示＆全表示） / CSelf0[発動スロット]
+ | | |▼ 万能ウィンドウのサイズ設定
+ | | |■Set Variable: CSelf35[結果値] = 1 * CSelf88[座標倍率X[x10]] 
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":9:0 ] (18:Universal Window Display X:Number) =  CSelf35[結果値]
+ | | |■Set Variable: CSelf35[結果値] = 3 * CSelf89[座標倍率Y[x10]] 
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":10:0 ] (18:Universal Window Display Y:Number) =  CSelf35[結果値]
+ | | |■Set Variable: CSelf35[結果値] = 30 * CSelf88[座標倍率X[x10]] 
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":11:0 ] (18:Universal Window Width:Number) =  CSelf35[結果値]
+ | | |■Set Variable: CSelf35[結果値] = 18 * CSelf89[座標倍率Y[x10]] 
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":12:0 ] (18:Universal Window Height:Number) =  CSelf35[結果値]
+ | | |■Set Variable: CSelf35[結果値] = 2 + 0 
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":13:0 ] (18:Universal Window Columns:Number) =  CSelf35[結果値]
+ | | |■Set Variable: CSelf35[結果値] = 13 + 0 
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":14:0 ] (18:Universal Window Rows:Number) =  CSelf35[結果値]
+ | | |■Set Variable: CSelf35[結果値] = 3 * CSelf89[座標倍率Y[x10]] 
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":16:0 ] (18:Universal Window Description Height:Number) =  CSelf35[結果値]
+ | | |■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / 0:Display / -1 / 4:Display Below Window / 1:Expand from Top-Left
+ | | |▼ 万能ウィンドウ選択処理を実行
+ | | |■Repeat Loop [ 1 ] Times
+ | | | |▼ 万能ウィンドウ選択処理を実行
+ | | | |■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) =  CSelf98
+ | | | |■Call Event [Name]: CSelf22[一時技能ｺｰﾄﾞ] = ["X[Com]U-Window: Select"] <CommonEv 65>  / 2:Loop Until Selected (Don't Initialize Cursor)
+ | | | |■Load DB(Var):  CSelf98 = VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) 
+ | | | |■Call Event [Name]: ["X[Bat]Set Cursor Memory Pos"] <CommonEv 156>  / 10:[戦闘]技能(要ｷｬﾗ指定) / CSelf0[発動スロット] / CSelf98
+ | | | |■
+ | | |◇Loop End Point◇◇
+ | | |■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / -1:Erase / 0 / 4:Display Below Window / 1:Expand from Top-Left
+ | | |■ [Special] Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
+ | | |▼ 技能使用時の処理
+ | | |■Condition (Number):   [1] CSelf22[一時技能ｺｰﾄﾞ] ==  -100  /  [2] CSelf22[一時技能ｺｰﾄﾞ] >=  0  
+ | | |-◇Condition:  [1]  [ CSelf22[一時技能ｺｰﾄﾞ] == -100   ] Case↓
+ | | | |▼ キャンセル時は終了
+ | | | |■Call Event [Name]: ["X[Bat]Draw Upper Status"] <CommonEv 185>  / -1:消去 / -1
+ | | | |■Set Variable: CSelf99[使用対象] = -1 + 0 
+ | | | |■Exit Event
+ | | | |■
+ | | |-◇Condition:  [2]  [ CSelf22[一時技能ｺｰﾄﾞ] >= 0   ] Case↓
+ | | | |▼ 何か技能を選んでいた場合、ターゲット選択 or 実行
+ | | | |■Call Event [Name]: ["X[Bat]Draw Upper Status"] <CommonEv 185>  / -1:消去 / -1
+ | | | |■Set Variable: CSelf30[技能番号] = CSelf22[一時技能ｺｰﾄﾞ] + 0 
+ | | | |●Label Jump [使用処理2] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇End◇
+ | |■
+ |◇End◇
+ |■
+◇Loop End Point◇◇
+■Repeat Loop [ 1 ] Times
+ |▼  
+ |●Label Point [使用処理2] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |■Set Variable: CSelf99[使用対象] = 0 + 0 
+ |■Load DB(User):  CSelf12[一時変数２] = UserDB[ "Skills":CSelf30[技能番号]:"Usable When?" ] (0:-:6) 
+ |■Condition (Number):   [1] CSelf12[一時変数２] >=  1  
+ |-◇Condition:  [1]  [ CSelf12[一時変数２] >= 1   ] Case↓
+ | |■Condition (Number):   [1] CSelf12[一時変数２] <=  2  
+ | |-◇Condition:  [1]  [ CSelf12[一時変数２] <= 2   ] Case↓
+ | | |■Load DB(User):  CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] = UserDB[ "Skills":CSelf30[技能番号]:"┏ Effect Target   " ] (0:-:2) 
+ | | |■Repeat Loop [ 1 ] Times
+ | | | |■Load DB(User):  CSelf24[即時発動] = UserDB[ "Skills":CSelf30[技能番号]:"Timing to Execute Skill" ] (0:-:36) 
+ | | | |■Set Variable: CSelf24[即時発動] *= 100 + 0 
+ | | | |■
+ | | |◇Loop End Point◇◇
+ | | |▼ 味方に対して使用可能　または　バトル時にイベント起動　の場合だけ使用可能
+ | | |■Condition (Number):   [1] CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] ==  101  /  [2] CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] >=  0  
+ | | |-◇Condition:  [1]  [ CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] == 101   ] Case↓
+ | | | |▼ イベント起動
+ | | | |■Set Variable: CSelf99[使用対象] = CSelf24[即時発動] + 0 
+ | | | |■
+ | | |-◇Condition:  [2]  [ CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] >= 0   ] Case↓
+ | | | |▼ 味方に対して使用可能
+ | | | |▼ 0＝味方一人　1＝自分自身のみ　2＝味方全員　3＝味方一人ランダム　4＝自分以外一人
+ | | | |■Load DB(User):  CSelf10[一時変数] = UserDB[ "Skills":CSelf30[技能番号]:"┏ Effect Target   " ] (0:-:2) 
+ | | | |■Condition (Number):   [1] CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] ==  1  
+ | | | |-◇Condition:  [1]  [ CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] == 1   ] Case↓
+ | | | | |▼ 自分のみ
+ | | | | |▼ 発動スロットにセット
+ | | | | |■Set Variable: CSelf99[使用対象] = CSelf0[発動スロット] + CSelf24[即時発動] 
+ | | | | |■Exit Event
+ | | | | |■
+ | | | |◇End◇
+ | | | |■Condition (Number):   [1] CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] ==  0  /  [2] CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] ==  2  
+ | | | |-◇Condition:  [1]  [ CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] == 0   ] Case↓
+ | | | | |▼ 0＝味方一人
+ | | | | |▼ キャラ一覧を表示して選択させる
+ | | | | |■Call Event [Name]: CSelf11[ターゲット] = ["X[Bat]Select Ally Target"] <CommonEv 161>  / CSelf0[発動スロット] / 0:全員選択可能
+ | | | | |▼ Ver2.28　戦闘中に点滅が止まらなくなるバグ修正
+ | | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 12:カーソルOFF（対象位置　位置-1なら全部） / -1 / -1
+ | | | | |■Condition (Number):   [1] CSelf11[ターゲット] <=  -1  
+ | | | | |-◇Condition:  [1]  [ CSelf11[ターゲット] <= -1   ] Case↓
+ | | | | | |▼ キャンセルなら終了　カーソル点滅を消す
+ | | | | | |■Set Variable: CSelf99[使用対象] = -1 + 0 
+ | | | | | |■Condition (Number):   [1] CSelf2[モード] ==  0  
+ | | | | | |-◇Condition:  [1]  [ CSelf2[モード] == 0   ] Case↓
+ | | | | | | |●Label Jump [技能選択] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | | | | |■
+ | | | | | |◇End◇
+ | | | | | |■Exit Event
+ | | | | | |■
+ | | | | |◇End◇
+ | | | | |■Set Variable: CSelf99[使用対象] = CSelf11[ターゲット] + CSelf24[即時発動] 
+ | | | | |■Exit Event
+ | | | | |■
+ | | | |-◇Condition:  [2]  [ CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] == 2   ] Case↓
+ | | | | |▼ 2＝味方全体
+ | | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 10:カーソルON（対象位置　位置-1なら全部） / -1 / -1
+ | | | | |▼ 決定かキャンセルか、だけ受付する
+ | | | | |■Key Input: CSelf12[一時変数２] [Wait for Input <!>]  Confirm (10) Cancel (11)
+ | | | | |▼ Ver2.28　戦闘中に点滅が止まらなくなるバグ修正
+ | | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 12:カーソルOFF（対象位置　位置-1なら全部） / -1 / -1
+ | | | | |■Condition (Number):   [1] CSelf12[一時変数２] ==  10  /  [2] CSelf12[一時変数２] ==  11  
+ | | | | |-◇Condition:  [1]  [ CSelf12[一時変数２] == 10   ] Case↓
+ | | | | | |▼ 決定なら使用
+ | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
+ | | | | | |■Set Variable: CSelf99[使用対象] = -10 - CSelf24[即時発動] 
+ | | | | | |■Exit Event
+ | | | | | |■
+ | | | | |-◇Condition:  [2]  [ CSelf12[一時変数２] == 11   ] Case↓
+ | | | | | |▼ キャンセルなら終了
+ | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 1:Cancel Sound
+ | | | | | |■Set Variable: CSelf99[使用対象] = -1 + 0 
+ | | | | | |■Condition (Number):   [1] CSelf2[モード] ==  0  
+ | | | | | |-◇Condition:  [1]  [ CSelf2[モード] == 0   ] Case↓
+ | | | | | | |●Label Jump [技能選択] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | | | | |■
+ | | | | | |◇End◇
+ | | | | | |■Exit Event
+ | | | | | |■
+ | | | | |◇End◇
+ | | | | |■
+ | | | |◇End◇
+ | | | |■Condition (Number):   [1] CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] ==  3  /  [2] CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] ==  4  
+ | | | |-◇Condition:  [1]  [ CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] == 3   ] Case↓
+ | | | | |▼ 味方ランダム一人
+ | | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 11:カーソルランダムON / -1 / -1
+ | | | | |▼ 決定かキャンセルか、だけ受付する
+ | | | | |■Key Input: CSelf12[一時変数２] [Wait for Input <!>]  Confirm (10) Cancel (11)
+ | | | | |▼ Ver2.28　戦闘中に点滅が止まらなくなるバグ修正
+ | | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 12:カーソルOFF（対象位置　位置-1なら全部） / -1 / -1
+ | | | | |■Condition (Number):   [1] CSelf12[一時変数２] ==  10  /  [2] CSelf12[一時変数２] ==  11  
+ | | | | |-◇Condition:  [1]  [ CSelf12[一時変数２] == 10   ] Case↓
+ | | | | | |▼ 決定なら使用
+ | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
+ | | | | | |■Set Variable: CSelf99[使用対象] = -11 - CSelf24[即時発動] 
+ | | | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 12:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0
+ | | | | | |■Exit Event
+ | | | | | |■
+ | | | | |-◇Condition:  [2]  [ CSelf12[一時変数２] == 11   ] Case↓
+ | | | | | |▼ キャンセルなら終了
+ | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 1:Cancel Sound
+ | | | | | |■Set Variable: CSelf99[使用対象] = -1 + 0 
+ | | | | | |■Condition (Number):   [1] CSelf2[モード] ==  0  
+ | | | | | |-◇Condition:  [1]  [ CSelf2[モード] == 0   ] Case↓
+ | | | | | | |●Label Jump [技能選択] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | | | | |■
+ | | | | | |◇End◇
+ | | | | | |■Exit Event
+ | | | | | |■
+ | | | | |◇End◇
+ | | | | |■
+ | | | |-◇Condition:  [2]  [ CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] == 4   ] Case↓
+ | | | | |▼ 自分以外の味方一人
+ | | | | |●Label Point [自分以外の味方一人] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | | | | |■Call Event [Name]: CSelf11[ターゲット] = ["X[Bat]Select Ally Target"] <CommonEv 161>  / CSelf0[発動スロット] / 1:自分以外
+ | | | | |▼ Ver2.28　戦闘中に点滅が止まらなくなるバグ修正
+ | | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 12:カーソルOFF（対象位置　位置-1なら全部） / -1 / -1
+ | | | | |■Condition (Number):   [1] CSelf11[ターゲット] <=  -1  /  [2] CSelf11[ターゲット] ==  CSelf0[発動スロット]  
+ | | | | |-◇Condition:  [1]  [ CSelf11[ターゲット] <= -1   ] Case↓
+ | | | | | |▼ キャンセルなら終了　カーソル点滅を消す
+ | | | | | |■Set Variable: CSelf99[使用対象] = -1 + 0 
+ | | | | | |■Condition (Number):   [1] CSelf2[モード] ==  0  
+ | | | | | |-◇Condition:  [1]  [ CSelf2[モード] == 0   ] Case↓
+ | | | | | | |●Label Jump [技能選択] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | | | | |■
+ | | | | | |◇End◇
+ | | | | | |■Exit Event
+ | | | | | |■
+ | | | | |-◇Condition:  [2]  [ CSelf11[ターゲット] == CSelf0[発動スロット]   ] Case↓
+ | | | | | |▼ 発動者と同じ場合は警告
+ | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
+ | | | | | |■Set String: CSelf9[表示文字列] = "自分自身には使用できません。"
+ | | | | | |■Call Event [Name]: ["X[Bat]Display Warning Message"] <CommonEv 184>  / 0:初期表示 / CSelf9[表示文字列]
+ | | | | | |■Key Input: CSelf12[一時変数２] [Wait for Input <!>]  Confirm (10) Cancel (11)
+ | | | | | |■Call Event [Name]: ["X[Bat]Display Warning Message"] <CommonEv 184>  / -1:消去 / CSelf9[表示文字列]
+ | | | | | |●Label Jump [自分以外の味方一人] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | | | |■
+ | | | | |-◇Else
+ | | | | | |■Set Variable: CSelf99[使用対象] = CSelf11[ターゲット] + CSelf24[即時発動] 
+ | | | | | |■Exit Event
+ | | | | | |■
+ | | | | |◇End◇
+ | | | | |■
+ | | | |◇End◇
+ | | | |▼ ここは敵へのターゲット選択
+ | | | |■Condition (Number):   [1] CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] ==  10  /  [2] CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] ==  11  /  [3] CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] ==  12  
+ | | | |-◇Condition:  [1]  [ CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] == 10   ] Case↓
+ | | | | |▼ 敵単体
+ | | | | |■Call Event [Name]: CSelf11[ターゲット] = ["X[Bat]Select Enemy Target"] <CommonEv 162>  / 0
+ | | | | |■Condition (Number):   [1] CSelf11[ターゲット] <=  -1  
+ | | | | |-◇Condition:  [1]  [ CSelf11[ターゲット] <= -1   ] Case↓
+ | | | | | |▼ キャンセルなら終了　カーソル点滅を消す
+ | | | | | |■Set Variable: CSelf99[使用対象] = -1 + 0 
+ | | | | | |■Condition (Number):   [1] CSelf2[モード] ==  0  
+ | | | | | |-◇Condition:  [1]  [ CSelf2[モード] == 0   ] Case↓
+ | | | | | | |●Label Jump [技能選択] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | | | | |■
+ | | | | | |◇End◇
+ | | | | | |■Exit Event
+ | | | | | |■
+ | | | | |◇End◇
+ | | | | |■Set Variable: CSelf99[使用対象] = CSelf11[ターゲット] + CSelf24[即時発動] 
+ | | | | |■Exit Event
+ | | | | |■
+ | | | |-◇Condition:  [2]  [ CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] == 11   ] Case↓
+ | | | | |■Call Event [Name]: ["X[Bat]Enemy: Draw One"] <CommonEv 179>  / 10:カーソルＯＮ / -1
+ | | | | |▼ 決定かキャンセルか、だけ受付する
+ | | | | |■Key Input: CSelf12[一時変数２] [Wait for Input <!>]  Confirm (10) Cancel (11)
+ | | | | |■Call Event [Name]: ["X[Bat]Enemy: Draw One"] <CommonEv 179>  / 12:カーソルＯＦＦ / -1
+ | | | | |■Condition (Number):   [1] CSelf12[一時変数２] ==  10  /  [2] CSelf12[一時変数２] ==  11  
+ | | | | |-◇Condition:  [1]  [ CSelf12[一時変数２] == 10   ] Case↓
+ | | | | | |▼ 決定なら使用（敵全体）
+ | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
+ | | | | | |■Set Variable: CSelf99[使用対象] = -20 - CSelf24[即時発動] 
+ | | | | | |■Exit Event
+ | | | | | |■
+ | | | | |-◇Condition:  [2]  [ CSelf12[一時変数２] == 11   ] Case↓
+ | | | | | |▼ キャンセルなら終了
+ | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 1:Cancel Sound
+ | | | | | |■Set Variable: CSelf99[使用対象] = -1 + 0 
+ | | | | | |■Condition (Number):   [1] CSelf2[モード] ==  0  
+ | | | | | |-◇Condition:  [1]  [ CSelf2[モード] == 0   ] Case↓
+ | | | | | | |●Label Jump [技能選択] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | | | | |■
+ | | | | | |◇End◇
+ | | | | | |■Exit Event
+ | | | | | |■
+ | | | | |◇End◇
+ | | | | |■
+ | | | |-◇Condition:  [3]  [ CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] == 12   ] Case↓
+ | | | | |▼ 敵一体ランダム
+ | | | | |■Call Event [Name]: ["X[Bat]Enemy: Draw One"] <CommonEv 179>  / 10:カーソルＯＮ / -1
+ | | | | |▼ 決定かキャンセルか、だけ受付する
+ | | | | |■Key Input: CSelf12[一時変数２] [Wait for Input <!>]  Confirm (10) Cancel (11)
+ | | | | |■Call Event [Name]: ["X[Bat]Enemy: Draw One"] <CommonEv 179>  / 12:カーソルＯＦＦ / -1
+ | | | | |■Condition (Number):   [1] CSelf12[一時変数２] ==  10  /  [2] CSelf12[一時変数２] ==  11  
+ | | | | |-◇Condition:  [1]  [ CSelf12[一時変数２] == 10   ] Case↓
+ | | | | | |▼ 決定なら使用（敵ランダム）
+ | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
+ | | | | | |■Set Variable: CSelf99[使用対象] = -21 - CSelf24[即時発動] 
+ | | | | | |■Exit Event
+ | | | | | |■
+ | | | | |-◇Condition:  [2]  [ CSelf12[一時変数２] == 11   ] Case↓
+ | | | | | |▼ キャンセルなら終了
+ | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 1:Cancel Sound
+ | | | | | |■Set Variable: CSelf99[使用対象] = -1 + 0 
+ | | | | | |■Condition (Number):   [1] CSelf2[モード] ==  0  
+ | | | | | |-◇Condition:  [1]  [ CSelf2[モード] == 0   ] Case↓
+ | | | | | | |●Label Jump [技能選択] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | | | | |■
+ | | | | | |◇End◇
+ | | | | | |■Exit Event
+ | | | | | |■
+ | | | | |◇End◇
+ | | | | |■
+ | | | |◇End◇
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇End◇
+ | |■
+ |◇End◇
+ |■
+◇Loop End Point◇◇
+■
+[COMMAND_TEXT_END]

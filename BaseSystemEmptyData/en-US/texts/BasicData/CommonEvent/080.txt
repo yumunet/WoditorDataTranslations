@@ -1,0 +1,241 @@
+COMMON_ID=80
+COMMON_NAME=X[Map]Update Party Sprites
+COMMAND_COLOR=6
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=0
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=
+VALINPUT_NAME_1=
+VALINPUT_NAME_2=
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=0
+LOADTYPE2=0
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=0
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=0
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=
+RETURN_VAL_TARGET=-1
+CSELF_NAME_0=
+CSELF_NAME_1=
+CSELF_NAME_2=
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=
+CSELF_NAME_9=
+CSELF_NAME_10=一時変数A
+CSELF_NAME_11=
+CSELF_NAME_12=
+CSELF_NAME_13=
+CSELF_NAME_14=
+CSELF_NAME_15=
+CSELF_NAME_16=
+CSELF_NAME_17=
+CSELF_NAME_18=
+CSELF_NAME_19=
+CSELF_NAME_20=処理主人公ID
+CSELF_NAME_21=処理対象
+CSELF_NAME_22=パーティーメンバー数
+CSELF_NAME_23=最大パーティ人数
+CSELF_NAME_24=
+CSELF_NAME_25=
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=
+CSELF_NAME_29=
+CSELF_NAME_30=
+CSELF_NAME_31=
+CSELF_NAME_32=
+CSELF_NAME_33=
+CSELF_NAME_34=
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=
+CSELF_NAME_41=
+CSELF_NAME_42=
+CSELF_NAME_43=
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=
+CSELF_NAME_89=
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=
+COMMAND_NUM=36
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("　パーティー全員分の隊列画像を再設定します。")
+[103][0,1]<0>()("　仲間が増えたとき、減ったときなどに呼び出されます。")
+[103][0,1]<0>()("　基本システムでは、この処理以外でパーティー画像を変更することはありません。")
+[103][0,1]<0>()("")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[270][1,0]<0>(20)()
+[250][5,4]<0>(18,4,0,200704,1600022)("","Base System Variables","Current Party Size","")
+[250][5,4]<0>(18,51,0,69632,1600023)("","Base System Variables","","")
+[121][4,0]<0>(1600021,-1,0,0)()
+[179][1,0]<0>(1600022)()
+[121][4,0]<1>(1600021,1,0,256)()
+[111][4,0]<1>(1,1600021,1600023,1)()
+[401][1,0]<1>(1)()
+[106][0,1]<2>()("【エラー】<\n>隊列画像の設定は<\n>\cself[23]人までしか行えません")
+[172][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[103][0,1]<1>()("パーティー情報DBからキャラIDを取得する")
+[121][4,0]<1>(1600010,1600021,1,0)()
+[250][5,4]<1>(3,0,1600010,69632,1600020)("","Party","","")
+[250][5,4]<1>(0,1600020,2,331776,1600009)("","Allies","","Character Sprite")
+[112][2,4]<1>(1,270035465)("","","","")
+[401][1,0]<1>(1)()
+[270][3,0]<2>(257,1600010,1600009)()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Process Overview]
+▼ 　パーティー全員分の隊列画像を再設定します。
+▼ 　仲間が増えたとき、減ったときなどに呼び出されます。
+▼ 　基本システムでは、この処理以外でパーティー画像を変更することはありません。
+▼ 
+▼ [Databases Accessed by This Common Event]
+▼  
+▼ [Other Common Events Called from Here]
+▼  
+▼ [Main Common Events Calling This]
+▼ ―――――――――――――――――――――――――――――――――――
+■Party Sprites: Erase All Members
+■Load DB(Var):  CSelf22[パーティーメンバー数] = VarDB[ "Base System Variables":"Current Party Size":0 ] (18:4:Number) 
+■Load DB(Var):  CSelf23[最大パーティ人数] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
+■Set Variable: CSelf21[処理対象] = -1 + 0 
+■Repeat Loop [ CSelf22[パーティーメンバー数] ] Times
+ |■Set Variable: CSelf21[処理対象] += 1 + 0 
+ |■Condition (Number):   [1] CSelf21[処理対象] >=  CSelf23[最大パーティ人数]  
+ |-◇Condition:  [1]  [ CSelf21[処理対象] >= CSelf23[最大パーティ人数]   ] Case↓
+ | |■Debug Text: 【エラー】\n隊列画像の設定は\n\cself[23]人までしか行えません
+ | |■Exit Event
+ | |■
+ |◇End◇
+ |▼ パーティー情報DBからキャラIDを取得する
+ |■Set Variable: CSelf10[一時変数A] = CSelf21[処理対象] + 1 
+ |■Load DB(Var):  CSelf20[処理主人公ID] = VarDB[ "Party":0:CSelf10[一時変数A] ] (6:Main Settings:-) 
+ |■Load DB(Var):  CSelf9 = VarDB[ "Allies":CSelf20[処理主人公ID]:"Character Sprite" ] (0:-:2) 
+ |■Condition (String):   [1] CSelf9 Is Not Equal to ""
+ |-◇Condition:  [1] [ CSelf9 Is Not Equal to "" ] Case↓
+ | |■Party Sprites: Insert [CSelf9] Before Member CSelf10[一時変数A]
+ | |■
+ |◇End◇
+ |■
+◇Loop End Point◇◇
+■
+[COMMAND_TEXT_END]

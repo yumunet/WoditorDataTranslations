@@ -1,0 +1,425 @@
+COMMON_ID=183
+COMMON_NAME=X[Bat]Draw Skill Effect
+COMMAND_COLOR=5
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=4
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=アニメ番号
+VALINPUT_NAME_1=対象X座標
+VALINPUT_NAME_2=対象Y座標
+VALINPUT_NAME_3=対象スロット
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=0
+LOADTYPE2=0
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=0
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=0
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=全体用？
+RETURN_VAL_TARGET=99
+CSELF_NAME_0=アニメ番号
+CSELF_NAME_1=対象X座標
+CSELF_NAME_2=対象Y座標
+CSELF_NAME_3=対象スロット
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=効果音
+CSELF_NAME_9=アニメ画像ファイル
+CSELF_NAME_10=アニメパターン総数
+CSELF_NAME_11=アニメ横分割数
+CSELF_NAME_12=アニメ縦分割数
+CSELF_NAME_13=描画モード（通常・加算）
+CSELF_NAME_14=拡大率
+CSELF_NAME_15=効果音ディレイ
+CSELF_NAME_16=
+CSELF_NAME_17=カラー補正R
+CSELF_NAME_18=カラー補正G
+CSELF_NAME_19=カラー補正B
+CSELF_NAME_20=表示元X
+CSELF_NAME_21=表示元Y
+CSELF_NAME_22=基本ピクチャ番号
+CSELF_NAME_23=
+CSELF_NAME_24=
+CSELF_NAME_25=一時ピクチャ番号
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=
+CSELF_NAME_29=
+CSELF_NAME_30=現在アニメパターン
+CSELF_NAME_31=ディレイフレーム
+CSELF_NAME_32=
+CSELF_NAME_33=表示オプション
+CSELF_NAME_34=×座標倍率
+CSELF_NAME_35=一時補正Y
+CSELF_NAME_36=
+CSELF_NAME_37=アニメコモン呼び出し？
+CSELF_NAME_38=アニメコモン先
+CSELF_NAME_39=
+CSELF_NAME_40=
+CSELF_NAME_41=
+CSELF_NAME_42=
+CSELF_NAME_43=
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=座標倍率X[x10]
+CSELF_NAME_89=座標倍率Y[x10]
+CSELF_NAME_90=ピクチャカウンタ
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=全体用？
+COMMAND_NUM=128
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("　指定位置に戦闘アニメーションを表示します。")
+[103][0,1]<0>()("　戦闘時に限らず使用可能です。")
+[103][0,1]<0>()("")
+[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[250][5,4]<0>(1,1600000,14,332288,1600037)("","┗ Animations","","Process by [Ignore Settings]")
+[111][4,0]<0>(1,1600037,0,1)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("呼び出すコモンのコモンセルフ0、1、2に、アニメ番号・X座標・Y座標を入力")
+[121][4,0]<1>(1600038,15000000,0,4)()
+[121][4,0]<1>(1600038,1600037,100,8448)()
+[121][4,0]<1>(1600038,1600000,0,16)()
+[121][4,0]<1>(1600038,1,0,256)()
+[121][4,0]<1>(1600038,1600001,0,16)()
+[121][4,0]<1>(1600038,1,0,256)()
+[121][4,0]<1>(1600038,1600002,0,16)()
+[103][0,1]<1>()("コモン呼び出し")
+[121][4,0]<1>(1600037,500000,0,256)()
+[210][2,0]<1>(1600037,0)()
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[121][4,0]<0>(1600022,18000,0,0)()
+[121][4,0]<0>(1600099,0,0,0)()
+[103][0,1]<0>()("Ver2.20　座標倍率を縦横別に修正")
+[250][5,4]<0>(18,97,0,69632,1600088)("","Base System Variables","","")
+[250][5,4]<0>(18,98,0,69632,1600089)("","Base System Variables","","")
+[103][0,1]<0>()("単体の場合は基本座標を計算する")
+[111][4,0]<0>(1,1600000,-1,3)()
+[401][1,0]<0>(1)()
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[103][0,1]<0>()("一時ピクチャ番号算出")
+[121][4,0]<0>(1600090,1,0,256)()
+[121][4,0]<0>(1600090,99,0,1280)()
+[121][4,0]<0>(1600025,1,1600090,8192)()
+[121][4,0]<0>(1600025,1600022,0,256)()
+[103][0,1]<0>()("表示オプションによって補正")
+[250][5,4]<0>(1,1600000,7,70144,1600033)("","┗ Animations","","")
+[111][7,0]<0>(2,1600033,0,2,1600033,1,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("入力座標をそのまま使用")
+[121][4,0]<1>(1600020,1600001,0,0)()
+[121][4,0]<1>(1600021,1600002,0,0)()
+[111][4,0]<1>(1,1600003,10,1)()
+[401][1,0]<1>(1)()
+[103][0,1]<2>()("敵へのエフェクトは少し上めに補正")
+[121][4,0]<2>(1600021,1600089,4,8704)()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[103][0,1]<1>()("中央に表示（敵と味方の場合で高さが変わる）")
+[121][4,0]<1>(1600020,16,1600088,8192)()
+[111][7,0]<1>(2,1600003,9,3,1600003,10,1)()
+[401][1,0]<1>(1)()
+[103][0,1]<2>()("味方キャラ全体の場合")
+[121][4,0]<2>(1600021,17,1600089,8192)()
+[0][0,0]<2>()()
+[401][1,0]<1>(2)()
+[103][0,1]<2>()("敵キャラ全体の場合")
+[121][4,0]<2>(1600021,9,1600089,8192)()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[103][0,1]<1>()("全体用フラグをオン")
+[121][4,0]<1>(1600099,1,0,0)()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[103][0,1]<0>()("ここでポップアップ表記を行う（セルフ90番はダメージ数値のピクチャ番号補正用）")
+[103][0,1]<0>()("パターン数だけループ")
+[250][5,4]<0>(1,1600000,9,332288,1600008)("","┗ Animations","","Sound Effect")
+[250][5,4]<0>(1,1600000,0,332288,1600009)("","┗ Animations","","Image File")
+[250][5,4]<0>(1,1600000,3,332288,1600010)("","┗ Animations","","Total Animation Patterns")
+[250][5,4]<0>(1,1600000,1,332288,1600011)("","┗ Animations","","Image Horizontal Divisions")
+[250][5,4]<0>(1,1600000,2,332288,1600012)("","┗ Animations","","Image Vertical Divisions")
+[250][5,4]<0>(1,1600000,5,332288,1600013)("","┗ Animations","","Blend Mode")
+[250][5,4]<0>(1,1600000,6,332288,1600014)("","┗ Animations","","Zoom")
+[250][5,4]<0>(1,1600000,10,332288,1600015)("","┗ Animations","","Sound Effect Delay [Frames]")
+[250][5,4]<0>(1,1600000,11,332288,1600017)("","┗ Animations","","[Color] R Adjust (±100)")
+[250][5,4]<0>(1,1600000,12,332288,1600018)("","┗ Animations","","[Color] G Adjust (±100)")
+[250][5,4]<0>(1,1600000,13,332288,1600019)("","┗ Animations","","[Color] B Adjust (±100)")
+[121][5,0]<0>(1600017,100,0,65792,2)()
+[103][0,1]<0>()("効果音も鳴らしておく")
+[112][2,4]<0>(1,270035464)("","","","")
+[401][1,0]<0>(1)()
+[121][4,0]<1>(1600015,0,0,1536)()
+[140][6,1]<1>(33554464,1600015,0,0,100,100)("\cself[8]")
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[150][2,0]<0>(4115,1600025)()
+[111][7,0]<0>(2,1600013,0,2,1600013,1,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("通常描画の場合")
+[150][18,0]<1>(4112,1600025,0,1600011,1600012,1,0,1600020,1600021,1600014,0,1600009,33554432,0,0,1600017,1600018,1600019)()
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[103][0,1]<1>()("加算描画の場合")
+[150][18,0]<1>(4368,1600025,0,1600011,1600012,1,0,1600020,1600021,1600014,0,1600009,33554432,0,0,1600017,1600018,1600019)()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[103][0,1]<0>()(" ")
+[121][4,0]<0>(1600030,0,0,0)()
+[121][4,0]<0>(1600031,0,0,0)()
+[170][0,0]<0>()()
+[121][4,0]<1>(1600030,1,0,256)()
+[111][4,0]<1>(1,1600030,1600010,0)()
+[401][1,0]<1>(1)()
+[171][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[150][14,0]<1>(3841,1600025,0,0,0,1600030,255,1600020,1600021,-1000000,0,0,16777216,1600031)()
+[250][5,4]<1>(1,1600000,4,332304,1600031)("","┗ Animations","","1 Pattern Wait [Frames]")
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[250][5,4]<0>(1,1600000,4,332304,1600031)("","┗ Animations","","1 Pattern Wait [Frames]")
+[150][4,0]<0>(2,1600025,1,1600031)()
+[250][5,4]<0>(1,1600000,8,332288,1600015)("","┗ Animations","","Damage Display Wait [Frames")
+[121][4,0]<0>(1600015,1,0,1536)()
+[121][4,0]<0>(1600015,2,0,256)()
+[180][1,0]<0>(1600015)()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Process Overview]
+▼ 　指定位置に戦闘アニメーションを表示します。
+▼ 　戦闘時に限らず使用可能です。
+▼ 
+▼ [Databases Accessed by This Common Event]
+▼  
+▼ [Other Common Events Called from Here]
+▼  
+▼ [Main Common Events Calling This]
+▼ ―――――――――――――――――――――――――――――――――――
+■Load DB(User):  CSelf37[アニメコモン呼び出し？] = UserDB[ "┗ Animations":CSelf0[アニメ番号]:"Process by [Ignore Settings]" ] (1:-:14) 
+■Condition (Number):   [1] CSelf37[アニメコモン呼び出し？] >=  0  
+-◇Condition:  [1]  [ CSelf37[アニメコモン呼び出し？] >= 0   ] Case↓
+ |▼ 呼び出すコモンのコモンセルフ0、1、2に、アニメ番号・X座標・Y座標を入力
+ |■Set Variable: CSelf38[アニメコモン先] = 15000000 + 0 
+ |■Set Variable: CSelf38[アニメコモン先] += CSelf37[アニメコモン呼び出し？] * 100 
+ |■Set Variable: V[CSelf38[アニメコモン先]] = CSelf0[アニメ番号] + 0 
+ |■Set Variable: CSelf38[アニメコモン先] += 1 + 0 
+ |■Set Variable: V[CSelf38[アニメコモン先]] = CSelf1[対象X座標] + 0 
+ |■Set Variable: CSelf38[アニメコモン先] += 1 + 0 
+ |■Set Variable: V[CSelf38[アニメコモン先]] = CSelf2[対象Y座標] + 0 
+ |▼ コモン呼び出し
+ |■Set Variable: CSelf37[アニメコモン呼び出し？] += 500000 + 0 
+ |■Call Event: Variable [CSelf37[アニメコモン呼び出し？]]'s Ev Page[1]
+ |■Exit Event
+ |■
+◇End◇
+■Set Variable: CSelf22[基本ピクチャ番号] = 18000 + 0 
+■Set Variable: CSelf99[全体用？] = 0 + 0 
+▼ Ver2.20　座標倍率を縦横別に修正
+■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
+■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
+▼ 単体の場合は基本座標を計算する
+■Condition (Number):   [1] CSelf0[アニメ番号] <=  -1  
+-◇Condition:  [1]  [ CSelf0[アニメ番号] <= -1   ] Case↓
+ |■Exit Event
+ |■
+◇End◇
+▼ 一時ピクチャ番号算出
+■Set Variable: CSelf90[ピクチャカウンタ] += 1 + 0 
+■Set Variable: CSelf90[ピクチャカウンタ] %= 99 + 0 
+■Set Variable: CSelf25[一時ピクチャ番号] = 1 * CSelf90[ピクチャカウンタ] 
+■Set Variable: CSelf25[一時ピクチャ番号] += CSelf22[基本ピクチャ番号] + 0 
+▼ 表示オプションによって補正
+■Load DB(User):  CSelf33[表示オプション] = UserDB[ "┗ Animations":CSelf0[アニメ番号]:7 ] (1:-:Display Option) 
+■Condition (Number):   [1] CSelf33[表示オプション] ==  0  /  [2] CSelf33[表示オプション] ==  1  
+-◇Condition:  [1]  [ CSelf33[表示オプション] == 0   ] Case↓
+ |▼ 入力座標をそのまま使用
+ |■Set Variable: CSelf20[表示元X] = CSelf1[対象X座標] + 0 
+ |■Set Variable: CSelf21[表示元Y] = CSelf2[対象Y座標] + 0 
+ |■Condition (Number):   [1] CSelf3[対象スロット] >=  10  
+ |-◇Condition:  [1]  [ CSelf3[対象スロット] >= 10   ] Case↓
+ | |▼ 敵へのエフェクトは少し上めに補正
+ | |■Set Variable: CSelf21[表示元Y] -= CSelf89[座標倍率Y[x10]] * 4 
+ | |■
+ |◇End◇
+ |■
+-◇Condition:  [2]  [ CSelf33[表示オプション] == 1   ] Case↓
+ |▼ 中央に表示（敵と味方の場合で高さが変わる）
+ |■Set Variable: CSelf20[表示元X] = 16 * CSelf88[座標倍率X[x10]] 
+ |■Condition (Number):   [1] CSelf3[対象スロット] <=  9  /  [2] CSelf3[対象スロット] >=  10  
+ |-◇Condition:  [1]  [ CSelf3[対象スロット] <= 9   ] Case↓
+ | |▼ 味方キャラ全体の場合
+ | |■Set Variable: CSelf21[表示元Y] = 17 * CSelf89[座標倍率Y[x10]] 
+ | |■
+ |-◇Condition:  [2]  [ CSelf3[対象スロット] >= 10   ] Case↓
+ | |▼ 敵キャラ全体の場合
+ | |■Set Variable: CSelf21[表示元Y] = 9 * CSelf89[座標倍率Y[x10]] 
+ | |■
+ |◇End◇
+ |▼ 全体用フラグをオン
+ |■Set Variable: CSelf99[全体用？] = 1 + 0 
+ |■
+◇End◇
+▼ ここでポップアップ表記を行う（セルフ90番はダメージ数値のピクチャ番号補正用）
+▼ パターン数だけループ
+■Load DB(User):  CSelf8[効果音] = UserDB[ "┗ Animations":CSelf0[アニメ番号]:"Sound Effect" ] (1:-:9) 
+■Load DB(User):  CSelf9[アニメ画像ファイル] = UserDB[ "┗ Animations":CSelf0[アニメ番号]:"Image File" ] (1:-:0) 
+■Load DB(User):  CSelf10[アニメパターン総数] = UserDB[ "┗ Animations":CSelf0[アニメ番号]:"Total Animation Patterns" ] (1:-:3) 
+■Load DB(User):  CSelf11[アニメ横分割数] = UserDB[ "┗ Animations":CSelf0[アニメ番号]:"Image Horizontal Divisions" ] (1:-:1) 
+■Load DB(User):  CSelf12[アニメ縦分割数] = UserDB[ "┗ Animations":CSelf0[アニメ番号]:"Image Vertical Divisions" ] (1:-:2) 
+■Load DB(User):  CSelf13[描画モード（通常・加算）] = UserDB[ "┗ Animations":CSelf0[アニメ番号]:"Blend Mode" ] (1:-:5) 
+■Load DB(User):  CSelf14[拡大率] = UserDB[ "┗ Animations":CSelf0[アニメ番号]:"Zoom" ] (1:-:6) 
+■Load DB(User):  CSelf15[効果音ディレイ] = UserDB[ "┗ Animations":CSelf0[アニメ番号]:"Sound Effect Delay [Frames]" ] (1:-:10) 
+■Load DB(User):  CSelf17[カラー補正R] = UserDB[ "┗ Animations":CSelf0[アニメ番号]:"[Color] R Adjust (±100)" ] (1:-:11) 
+■Load DB(User):  CSelf18[カラー補正G] = UserDB[ "┗ Animations":CSelf0[アニメ番号]:"[Color] G Adjust (±100)" ] (1:-:12) 
+■Load DB(User):  CSelf19[カラー補正B] = UserDB[ "┗ Animations":CSelf0[アニメ番号]:"[Color] B Adjust (±100)" ] (1:-:13) 
+■Set Variable: CSelf17[カラー補正R] to CSelf19[カラー補正B] += 100 + 0 
+▼ 効果音も鳴らしておく
+■Condition (String):   [1] CSelf8[効果音] Is Not Equal to ""
+-◇Condition:  [1] [ CSelf8[効果音] Is Not Equal to "" ] Case↓
+ |■Set Variable: CSelf15[効果音ディレイ] Lower Bound= 0 + 0 
+ |■Sound: SE File [\cself[8]] Vol 100% Pitch 100% (0 Channel) Play / Delay: CSelf15[効果音ディレイ] Frames
+ |■
+◇End◇
+■Picture [Reset Delay]: CSelf25[一時ピクチャ番号] 
+■Condition (Number):   [1] CSelf13[描画モード（通常・加算）] ==  0  /  [2] CSelf13[描画モード（通常・加算）] ==  1  
+-◇Condition:  [1]  [ CSelf13[描画モード（通常・加算）] == 0   ] Case↓
+ |▼ 通常描画の場合
+ |■Picture Show: CSelf25[一時ピクチャ番号] [Center] File (CSelf9[アニメ画像ファイル]) X:CSelf20[表示元X] Y:CSelf21[表示元Y] / 0(0) Frames  / Pattern 1 / Opacity 0 / Normal  / Angle 0 / Zoom CSelf14[拡大率]% / Color R[CSelf17[カラー補正R]] G[CSelf18[カラー補正G]] B[CSelf19[カラー補正B]]
+ |■
+-◇Condition:  [2]  [ CSelf13[描画モード（通常・加算）] == 1   ] Case↓
+ |▼ 加算描画の場合
+ |■Picture Show: CSelf25[一時ピクチャ番号] [Center] File (CSelf9[アニメ画像ファイル]) X:CSelf20[表示元X] Y:CSelf21[表示元Y] / 0(0) Frames  / Pattern 1 / Opacity 0 / Add  / Angle 0 / Zoom CSelf14[拡大率]% / Color R[CSelf17[カラー補正R]] G[CSelf18[カラー補正G]] B[CSelf19[カラー補正B]]
+ |■
+◇End◇
+▼  
+■Set Variable: CSelf30[現在アニメパターン] = 0 + 0 
+■Set Variable: CSelf31[ディレイフレーム] = 0 + 0 
+■Loop Start
+ |■Set Variable: CSelf30[現在アニメパターン] += 1 + 0 
+ |■Condition (Number):   [1] CSelf30[現在アニメパターン] >  CSelf10[アニメパターン総数]  
+ |-◇Condition:  [1]  [ CSelf30[現在アニメパターン] > CSelf10[アニメパターン総数]   ] Case↓
+ | |■Break Loop
+ | |■
+ |◇End◇
+ |■Picture Move: CSelf25[一時ピクチャ番号]  X:CSelf20[表示元X] Y:CSelf21[表示元Y] / 0(CSelf31[ディレイフレーム]) Frames  / Pattern CSelf30[現在アニメパターン] / Opacity 255 / Blend Mode: Same   / Angle 0 / Zoom Same / Color Same
+ |■Load DB(User):  CSelf31[ディレイフレーム] += UserDB[ "┗ Animations":CSelf0[アニメ番号]:"1 Pattern Wait [Frames]" ] (1:-:4) 
+ |■
+◇Loop End Point◇◇
+■Load DB(User):  CSelf31[ディレイフレーム] += UserDB[ "┗ Animations":CSelf0[アニメ番号]:"1 Pattern Wait [Frames]" ] (1:-:4) 
+■Picture Erase: CSelf25[一時ピクチャ番号]  / 1(CSelf31[ディレイフレーム]) Frames
+■Load DB(User):  CSelf15[効果音ディレイ] = UserDB[ "┗ Animations":CSelf0[アニメ番号]:"Damage Display Wait [Frames" ] (1:-:8) 
+■Set Variable: CSelf15[効果音ディレイ] Lower Bound= 1 + 0 
+■Set Variable: CSelf15[効果音ディレイ] += 2 + 0 
+■Wait: CSelf15[効果音ディレイ] Frames
+■
+[COMMAND_TEXT_END]

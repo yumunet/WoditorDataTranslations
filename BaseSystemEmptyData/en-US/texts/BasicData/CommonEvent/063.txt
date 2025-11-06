@@ -1,0 +1,633 @@
+COMMON_ID=63
+COMMON_NAME=X[Com]Message Window
+COMMAND_COLOR=4
+TRIGGER=35
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=0
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=
+VALINPUT_NAME_1=
+VALINPUT_NAME_2=
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=0
+LOADTYPE2=0
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=0
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=0
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=
+RETURN_VAL_TARGET=-1
+CSELF_NAME_0=
+CSELF_NAME_1=
+CSELF_NAME_2=
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=Portrait File
+CSELF_NAME_9=Window Image File
+CSELF_NAME_10=Temp Variable A
+CSELF_NAME_11=Temp Variable B
+CSELF_NAME_12=
+CSELF_NAME_13=
+CSELF_NAME_14=
+CSELF_NAME_15=
+CSELF_NAME_16=
+CSELF_NAME_17=
+CSELF_NAME_18=
+CSELF_NAME_19=
+CSELF_NAME_20=Base Picture ID
+CSELF_NAME_21=Temp Picture ID A
+CSELF_NAME_22=Temp Picture ID B
+CSELF_NAME_23=Zoom (Width)
+CSELF_NAME_24=Zoom (Height)
+CSELF_NAME_25=
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=
+CSELF_NAME_29=
+CSELF_NAME_30=Base Display Position X
+CSELF_NAME_31=Base Display Position Y
+CSELF_NAME_32=Hidden Display Position X
+CSELF_NAME_33=Hidden Display Position Y
+CSELF_NAME_34=
+CSELF_NAME_35=Window Display Flag
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=Width
+CSELF_NAME_39=Height
+CSELF_NAME_40=Return Point
+CSELF_NAME_41=
+CSELF_NAME_42=Screen Width
+CSELF_NAME_43=Screen Height
+CSELF_NAME_44=Temp X Position
+CSELF_NAME_45=Temp Y Position
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=Previous Portrait ID
+CSELF_NAME_49=Portrait ID
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=Portrait Width
+CSELF_NAME_58=Portrait Height
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=Coordinate Scale X (x10)
+CSELF_NAME_89=Coordinate Scale Y (x10)
+CSELF_NAME_90=Portrait Picture Count
+CSELF_NAME_91=Maximum Picture Count
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=
+COMMAND_NUM=232
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("Message Window Processing")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("  Displays the message window and portrait.")
+[103][0,1]<0>()("  This common event is always active, and when System Variable 0 (Portrait Number)")
+[103][0,1]<0>()("  changes, it displays or erases the message window and displays a new portrait.")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("  Reads <dqrt>System Variable 0 (Portrait Number)<dqrt>,")
+[103][0,1]<0>()("  and displays the corresponding portrait.")
+[103][0,1]<0>()("  When Sys0 is 0, the message window is not displayed.")
+[103][0,1]<0>()("  When Sys0 is 1, only the message window is displayed.")
+[103][0,1]<0>()("  When Sys0 is 2+, the specified portrait is displayed in the lower right.")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Settings]")
+[103][0,1]<0>()("  Set portraits in System Database 24 <dqrt>Portraits<dqrt>.")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("  Set the message window image in User Database 16 <dqrt>Images/Sounds<dqrt>.")
+[103][0,1]<0>()("  If no image is set, a black background is displayed.")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()(" ")
+[121][4,0]<0>(1600020,19500,0,0)()
+[103][0,1]<0>()("Ver.2.20  Separated the coordinate scale into vertical and horizontal scales.")
+[250][5,4]<0>(18,97,0,69632,1600088)("","Base System Variables","","")
+[250][5,4]<0>(18,98,0,69632,1600089)("","Base System Variables","","")
+[250][5,4]<0>(18,0,24,332288,1600009)("","Images/Sounds","","Message Window Base Image")
+[121][4,0]<0>(1600035,0,0,0)()
+[103][0,1]<0>()("Set the message window display position and size.")
+[121][4,0]<0>(1600038,30,1600088,8192)()
+[121][4,0]<0>(1600039,7,1600089,8192)()
+[121][4,0]<0>(1600030,16,1600088,8192)()
+[121][4,0]<0>(1600031,20,1600089,8192)()
+[121][4,0]<0>(1600032,16,1600088,8192)()
+[121][4,0]<0>(1600033,28,1600089,8192)()
+[103][0,1]<0>()(" ")
+[121][4,0]<0>(1600091,3,0,0)()
+[121][4,0]<0>(9000010,9,0,0)()
+[103][0,1]<0>()(" ")
+[121][4,0]<0>(1600042,1600088,32,8192)()
+[121][4,0]<0>(1600043,1600089,24,8192)()
+[103][0,1]<0>()(" ")
+[121][4,0]<0>(1600040,1,0,0)()
+[179][1,0]<0>(1)()
+[212][0,1]<1>()("Set Message Display Position")
+[121][4,0]<1>(9000001,2,1600088,8192)()
+[121][4,0]<1>(9000002,17,1600089,8192)()
+[103][0,1]<1>()("Ver.3.00  Adjusted the message window Y position.")
+[121][4,0]<1>(9000002,1600089,5,12544)()
+[121][4,0]<1>(9000003,16,1600088,8192)()
+[103][0,1]<1>()("Ver.3.00  Adjusted the choice window Y position.")
+[121][4,0]<1>(9000004,7,1600089,8192)()
+[121][4,0]<1>(9000005,16,1600088,8192)()
+[121][4,0]<1>(9000006,6,1600089,8192)()
+[213][0,1]<1>()("Return Point \cself[40]")
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[212][0,1]<0>()("Return Point 1")
+[103][0,1]<0>()(" ")
+[121][4,0]<0>(9000000,1,0,0)()
+[170][0,0]<0>()()
+[103][0,1]<1>()("If Portrait Number is -1 or lower, stand by for processing.")
+[103][0,1]<1>()("Basically, it's set to -1 once processing is complete.")
+[111][4,0]<1>(1,9000000,-1,3)()
+[401][1,0]<1>(1)()
+[180][1,0]<2>(1)()
+[176][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[180][1,0]<1>(1)()
+[103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<1>()("  Display Processing")
+[103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[111][4,0]<1>(1,9000012,1,2)()
+[401][1,0]<1>(1)()
+[103][0,1]<2>()("Display message window.")
+[212][0,1]<2>()("Display Window")
+[121][4,0]<2>(1600049,9000000,0,0)()
+[111][4,0]<2>(1,1600048,1600049,5)()
+[401][1,0]<2>(1)()
+[121][4,0]<3>(1600048,1600049,0,0)()
+[111][4,0]<3>(17,1600049,1,1)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("If Portrait Number is 1 or higher, display a message window.")
+[150][2,0]<4>(3,1600020)()
+[111][4,0]<4>(1,1600035,0,2)()
+[401][1,0]<4>(1)()
+[103][0,1]<5>()("Process for newly displaying a message window.")
+[103][0,1]<5>()("  Reset the message window display position.")
+[121][4,0]<5>(1600040,2,0,0)()
+[213][0,1]<5>()("Set Message Display Position")
+[212][0,1]<5>()("Return Point 2")
+[103][0,1]<5>()("  If not displayed, display it newly.")
+[150][12,0]<5>(4160,1600020,5,1600038,1600039,1,255,1600032,1600033,100,0,1600009)()
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[150][13,0]<4>(4198145,1600020,5,0,0,-1000000,-1000000,1600030,1600031,-1000000,-1000000,0,16777216)()
+[150][14,0]<4>(4198145,1600020,5,0,0,-1000000,-1000000,1600030,1600031,-1000000,-1000000,0,16777216,3)()
+[121][4,0]<4>(1600035,1,0,0)()
+[121][4,0]<4>(9000010,1,0,0)()
+[0][0,0]<4>()()
+[420][1,0]<3>(0)()
+[103][0,1]<4>()("If no display (0).")
+[103][0,1]<4>()("Move to hidden position.")
+[150][2,0]<4>(3843,1600020)()
+[150][13,0]<4>(4198145,1600020,4,0,0,-1000000,255,1600032,1600033,-1000000,-1000000,0,16777216)()
+[150][14,0]<4>(4198145,1600020,4,0,0,-1000000,255,1600032,1600033,-1000000,-1000000,0,16777216,2)()
+[121][4,0]<4>(1600035,0,0,0)()
+[121][4,0]<4>(9000010,1,0,0)()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[103][0,1]<3>()("――――――――――――――――――――――――――――――――")
+[103][0,1]<3>()("Portrait Erase/Display Processing")
+[103][0,1]<3>()("――――――――――――――――――――――――――――――――")
+[103][0,1]<3>()("First, erase the portrait currently displayed.")
+[121][4,0]<3>(1600021,1600020,1,0)()
+[121][4,0]<3>(1600022,1600020,1600091,0)()
+[150][3,0]<3>(16777219,1600021,1600022)()
+[150][6,0]<3>(16777218,1600021,5,0,0,1600022)()
+[111][4,0]<3>(1,1600049,2,1)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("If Portrait Number is 2 or higher, display portrait.")
+[250][5,4]<4>(24,1600049,0,332032,1600008)("","Portraits","","Portrait Filename")
+[112][2,4]<4>(1,270035464)("","","","")
+[401][1,0]<4>(1)()
+[103][0,1]<5>()(" ")
+[103][0,1]<5>()("Calculate the initial display position from the new picture size.")
+[103][0,1]<5>()("Display new picture.")
+[121][4,0]<5>(1600021,1600020,1,0)()
+[121][4,0]<5>(1600021,1600090,0,256)()
+[103][0,1]<5>()("Apply <dqrt>Message Portrait Scale<dqrt> in System Settings.")
+[250][5,4]<5>(19,0,26,332288,1600023)("","System Settings","","Message Portrait Scale")
+[250][5,4]<5>(19,0,26,332288,1600024)("","System Settings","","Message Portrait Scale")
+[150][2,0]<5>(20243,1600021)()
+[150][19,0]<5>(3165968,1600021,0,1,1,-1000000,255,1600044,1600045,1600023,-1000000,1600008,16777216,0,0,0,0,0,1600024)()
+[111][4,0]<5>(1,1600023,0,2)()
+[401][1,0]<5>(1)()
+[103][0,1]<6>()("If the scale is 0, fit to standard size.")
+[124][4,0]<6>(1600010,16384,1600021,3)()
+[124][4,0]<6>(1600011,16384,1600021,2)()
+[103][0,1]<6>()("Calculate the portrait box size.")
+[121][4,0]<6>(1600057,96,1600088,8192)()
+[121][4,0]<6>(1600058,96,1600089,8192)()
+[121][4,0]<6>(1600057,10,0,1024)()
+[121][4,0]<6>(1600058,10,0,1024)()
+[103][0,1]<6>()("Adjust the portrait scale to fit the box.")
+[121][4,0]<6>(1600010,1600057,100,8192)()
+[121][4,0]<6>(1600011,1600058,100,8192)()
+[124][4,0]<6>(1600010,17408,1600021,2)()
+[124][4,0]<6>(1600011,17408,1600021,3)()
+[121][4,0]<6>(1600023,1600010,0,0)()
+[121][4,0]<6>(1600024,1600011,0,0)()
+[0][0,0]<6>()()
+[499][0,0]<5>()()
+[103][0,1]<5>()("Calculate the display start position.")
+[121][4,0]<5>(1600044,1600042,0,0)()
+[121][4,0]<5>(1600045,1600043,0,0)()
+[124][4,0]<5>(1600010,16384,1600021,3)()
+[121][4,0]<5>(1600010,1600023,0,768)()
+[121][4,0]<5>(1600010,100,0,1024)()
+[121][4,0]<5>(1600044,1600010,0,256)()
+[150][19,0]<5>(3149569,1600021,0,0,0,-1000000,255,1600044,1600045,1600023,-1000000,0,16777216,0,0,0,0,0,1600024)()
+[103][0,1]<5>()("Move to the final position.")
+[150][13,0]<5>(4214545,1600021,5,0,0,-1000000,255,1600042,1600043,-1000000,-1000000,0,16777216)()
+[150][14,0]<5>(4198145,1600021,5,0,0,-1000000,255,1600042,1600043,-1000000,-1000000,0,16777216,3)()
+[150][14,0]<5>(4198145,1600021,5,0,0,-1000000,255,1600042,1600043,-1000000,-1000000,0,16777216,5)()
+[103][0,1]<5>()("Increase the picture count by 1.")
+[121][4,0]<5>(1600090,1,0,256)()
+[121][4,0]<5>(1600090,1600091,0,1280)()
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<1>()("  Erase Processing")
+[103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[111][4,0]<1>(1,1600035,0,5)()
+[401][1,0]<1>(1)()
+[111][4,0]<2>(1,9000012,0,2)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("If the message is hidden, wait a few frames, and if it's still hidden, close the window.")
+[179][1,0]<3>(3)()
+[111][4,0]<4>(1,9000012,1,2)()
+[401][1,0]<4>(1)()
+[213][0,1]<5>()("Display Window")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[180][1,0]<4>(1)()
+[0][0,0]<4>()()
+[498][0,0]<3>()()
+[103][0,1]<3>()("Initialize values.")
+[121][4,0]<3>(9000010,9,0,0)()
+[121][4,0]<3>(1600048,-1,0,0)()
+[111][4,0]<3>(1,9000012,0,2)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("Initialize Portrait Number only if the message is not displayed.")
+[121][4,0]<4>(9000000,1,0,0)()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[103][0,1]<3>()("Move to hidden position.")
+[150][2,0]<3>(3843,1600020)()
+[150][13,0]<3>(4198145,1600020,4,0,0,-1000000,255,1600032,1600033,-1000000,-1000000,0,16777216)()
+[150][14,0]<3>(4198145,1600020,4,0,0,-1000000,255,1600032,1600033,-1000000,-1000000,0,16777216,2)()
+[103][0,1]<3>()("Wait until it's hidden.")
+[179][1,0]<3>(6)()
+[111][4,0]<4>(1,9000012,1,2)()
+[401][1,0]<4>(1)()
+[213][0,1]<5>()("Display Window")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[180][1,0]<4>(1)()
+[0][0,0]<4>()()
+[498][0,0]<3>()()
+[103][0,1]<3>()("Erase.")
+[150][4,0]<3>(2,1600020,0,6)()
+[103][0,1]<3>()("Erase the portrait as well.")
+[121][4,0]<3>(1600021,1600020,1,0)()
+[121][4,0]<3>(1600022,1600020,1600091,0)()
+[150][3,0]<3>(16777219,1600021,1600022)()
+[150][6,0]<3>(16777218,1600021,5,0,0,1600022)()
+[103][0,1]<3>()("The window disappeared, so reset the flag.")
+[121][4,0]<3>(1600035,0,0,0)()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ Message Window Processing
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Process Overview]
+▼   Displays the message window and portrait.
+▼   This common event is always active, and when System Variable 0 (Portrait Number)
+▼   changes, it displays or erases the message window and displays a new portrait.
+▼  
+▼   Reads "System Variable 0 (Portrait Number)",
+▼   and displays the corresponding portrait.
+▼   When Sys0 is 0, the message window is not displayed.
+▼   When Sys0 is 1, only the message window is displayed.
+▼   When Sys0 is 2+, the specified portrait is displayed in the lower right.
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Settings]
+▼   Set portraits in System Database 24 "Portraits".
+▼  
+▼   Set the message window image in User Database 16 "Images/Sounds".
+▼   If no image is set, a black background is displayed.
+▼ ―――――――――――――――――――――――――――――――――――
+▼  
+■Set Variable: CSelf20[Base Picture ID] = 19500 + 0 
+▼ Ver.2.20  Separated the coordinate scale into vertical and horizontal scales.
+■Load DB(Var):  CSelf88[Coordinate Scale X (x10)] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
+■Load DB(Var):  CSelf89[Coordinate Scale Y (x10)] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
+■Load DB(User):  CSelf9[Window Image File] = UserDB[ "Images/Sounds":0:"Message Window Base Image" ] (16:Basic Images/Sounds:2) 
+■Set Variable: CSelf35[Window Display Flag] = 0 + 0 
+▼ Set the message window display position and size.
+■Set Variable: CSelf38[Width] = 30 * CSelf88[Coordinate Scale X (x10)] 
+■Set Variable: CSelf39[Height] = 7 * CSelf89[Coordinate Scale Y (x10)] 
+■Set Variable: CSelf30[Base Display Position X] = 16 * CSelf88[Coordinate Scale X (x10)] 
+■Set Variable: CSelf31[Base Display Position Y] = 20 * CSelf89[Coordinate Scale Y (x10)] 
+■Set Variable: CSelf32[Hidden Display Position X] = 16 * CSelf88[Coordinate Scale X (x10)] 
+■Set Variable: CSelf33[Hidden Display Position Y] = 28 * CSelf89[Coordinate Scale Y (x10)] 
+▼  
+■Set Variable: CSelf91[Maximum Picture Count] = 3 + 0 
+■Set Variable: Sys10:Message Wait (X frames) = 9 + 0 
+▼  
+■Set Variable: CSelf42[Screen Width] = CSelf88[Coordinate Scale X (x10)] * 32 
+■Set Variable: CSelf43[Screen Height] = CSelf89[Coordinate Scale Y (x10)] * 24 
+▼  
+■Set Variable: CSelf40[Return Point] = 1 + 0 
+■Repeat Loop [ 1 ] Times
+ |●Label Point [Set Message Display Position] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |■Set Variable: Sys1:Message Window X = 2 * CSelf88[Coordinate Scale X (x10)] 
+ |■Set Variable: Sys2:Message Window Y = 17 * CSelf89[Coordinate Scale Y (x10)] 
+ |▼ Ver.3.00  Adjusted the message window Y position.
+ |■Set Variable: Sys2:Message Window Y += CSelf89[Coordinate Scale Y (x10)] / 5 
+ |■Set Variable: Sys3:Choice Window X = 16 * CSelf88[Coordinate Scale X (x10)] 
+ |▼ Ver.3.00  Adjusted the choice window Y position.
+ |■Set Variable: Sys4:Choice Window Y = 7 * CSelf89[Coordinate Scale Y (x10)] 
+ |■Set Variable: Sys5:Message Continue Icon X (Add to Sys1) = 16 * CSelf88[Coordinate Scale X (x10)] 
+ |■Set Variable: Sys6:Message Continue Icon Y (Add to Sys2) = 6 * CSelf89[Coordinate Scale Y (x10)] 
+ |●Label Jump [Return Point \cself[40]] >>>>>>>>>>>>>>>>>>>>>>>>>
+ |■
+◇Loop End Point◇◇
+●Label Point [Return Point 1] <<<<<<<<<<<<<<<<<<<<<<<<★
+▼  
+■Set Variable: Sys0:Portrait Number = 1 + 0 
+■Loop Start
+ |▼ If Portrait Number is -1 or lower, stand by for processing.
+ |▼ Basically, it's set to -1 once processing is complete.
+ |■Condition (Number):   [1] Sys0:Portrait Number <=  -1  
+ |-◇Condition:  [1]  [ Sys0:Portrait Number <= -1   ] Case↓
+ | |■Wait: 1 Frames
+ | |■Go to Loop Start
+ | |■
+ |◇End◇
+ |■Wait: 1 Frames
+ |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ |▼   Display Processing
+ |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ |■Condition (Number):   [1] Sys12:Showing Message? (1:Yes) ==  1  
+ |-◇Condition:  [1]  [ Sys12:Showing Message? (1:Yes) == 1   ] Case↓
+ | |▼ Display message window.
+ | |●Label Point [Display Window] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | |■Set Variable: CSelf49[Portrait ID] = Sys0:Portrait Number + 0 
+ | |■Condition (Number):   [1] CSelf48[Previous Portrait ID] !=  CSelf49[Portrait ID]  
+ | |-◇Condition:  [1]  [ CSelf48[Previous Portrait ID] != CSelf49[Portrait ID]   ] Case↓
+ | | |■Set Variable: CSelf48[Previous Portrait ID] = CSelf49[Portrait ID] + 0 
+ | | |■Condition (Number):   [1] CSelf49[Portrait ID] >=  1  
+ | | |-◇Condition:  [1]  [ CSelf49[Portrait ID] >= 1   ] Case↓
+ | | | |▼ If Portrait Number is 1 or higher, display a message window.
+ | | | |■Picture [Reset Delay]: CSelf20[Base Picture ID] 
+ | | | |■Condition (Number):   [1] CSelf35[Window Display Flag] ==  0  
+ | | | |-◇Condition:  [1]  [ CSelf35[Window Display Flag] == 0   ] Case↓
+ | | | | |▼ Process for newly displaying a message window.
+ | | | | |▼   Reset the message window display position.
+ | | | | |■Set Variable: CSelf40[Return Point] = 2 + 0 
+ | | | | |●Label Jump [Set Message Display Position] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | | |●Label Point [Return Point 2] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | | | | |▼   If not displayed, display it newly.
+ | | | | |■Picture Show: CSelf20[Base Picture ID] [Center] Window (CSelf9[Window Image File]) Size [CSelf38[Width],CSelf39[Height]] X:CSelf32[Hidden Display Position X] Y:CSelf33[Hidden Display Position Y] / 5(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | | | |■
+ | | | |◇End◇
+ | | | |■Picture Move: CSelf20[Base Picture ID]  X:CSelf30[Base Display Position X] Y:CSelf31[Base Display Position Y] / 5(0) Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | |■Picture Move: CSelf20[Base Picture ID]  X:CSelf30[Base Display Position X] Y:CSelf31[Base Display Position Y] / 5(3) Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | |■Set Variable: CSelf35[Window Display Flag] = 1 + 0 
+ | | | |■Set Variable: Sys10:Message Wait (X frames) = 1 + 0 
+ | | | |■
+ | | |-◇Else
+ | | | |▼ If no display (0).
+ | | | |▼ Move to hidden position.
+ | | | |■Picture [Reset Delay]: CSelf20[Base Picture ID] 
+ | | | |■Picture Move: CSelf20[Base Picture ID]  X:CSelf32[Hidden Display Position X] Y:CSelf33[Hidden Display Position Y] / 4(0) Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | |■Picture Move: CSelf20[Base Picture ID]  X:CSelf32[Hidden Display Position X] Y:CSelf33[Hidden Display Position Y] / 4(2) Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | |■Set Variable: CSelf35[Window Display Flag] = 0 + 0 
+ | | | |■Set Variable: Sys10:Message Wait (X frames) = 1 + 0 
+ | | | |■
+ | | |◇End◇
+ | | |▼ ――――――――――――――――――――――――――――――――
+ | | |▼ Portrait Erase/Display Processing
+ | | |▼ ――――――――――――――――――――――――――――――――
+ | | |▼ First, erase the portrait currently displayed.
+ | | |■Set Variable: CSelf21[Temp Picture ID A] = CSelf20[Base Picture ID] + 1 
+ | | |■Set Variable: CSelf22[Temp Picture ID B] = CSelf20[Base Picture ID] + CSelf91[Maximum Picture Count] 
+ | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID A] to CSelf22[Temp Picture ID B] 
+ | | |■Picture Erase: CSelf21[Temp Picture ID A] to CSelf22[Temp Picture ID B]  / 5(0) Frames
+ | | |■Condition (Number):   [1] CSelf49[Portrait ID] >=  2  
+ | | |-◇Condition:  [1]  [ CSelf49[Portrait ID] >= 2   ] Case↓
+ | | | |▼ If Portrait Number is 2 or higher, display portrait.
+ | | | |■Load DB(Sys):  CSelf8[Portrait File] = SysDB[ "Portraits":CSelf49[Portrait ID]:"Portrait Filename" ] (24:-:0) 
+ | | | |■Condition (String):   [1] CSelf8[Portrait File] Is Not Equal to ""
+ | | | |-◇Condition:  [1] [ CSelf8[Portrait File] Is Not Equal to "" ] Case↓
+ | | | | |▼  
+ | | | | |▼ Calculate the initial display position from the new picture size.
+ | | | | |▼ Display new picture.
+ | | | | |■Set Variable: CSelf21[Temp Picture ID A] = CSelf20[Base Picture ID] + 1 
+ | | | | |■Set Variable: CSelf21[Temp Picture ID A] += CSelf90[Portrait Picture Count] + 0 
+ | | | | |▼ Apply "Message Portrait Scale" in System Settings.
+ | | | | |■Load DB(User):  CSelf23[Zoom (Width)] = UserDB[ "System Settings":0:"Message Portrait Scale" ] (17:Basic System Settings:25) 
+ | | | | |■Load DB(User):  CSelf24[Zoom (Height)] = UserDB[ "System Settings":0:"Message Portrait Scale" ] (17:Basic System Settings:25) 
+ | | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID A] 
+ | | | | |■Picture Show: CSelf21[Temp Picture ID A] [Bottom-Right] File (CSelf8[Portrait File]) X:CSelf44[Temp X Position] Y:CSelf45[Temp Y Position] / 0(0) Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom CSelf23[Zoom (Width)]xCSelf24[Zoom (Height)]% / Color Same
+ | | | | |■Condition (Number):   [1] CSelf23[Zoom (Width)] ==  0  
+ | | | | |-◇Condition:  [1]  [ CSelf23[Zoom (Width)] == 0   ] Case↓
+ | | | | | |▼ If the scale is 0, fit to standard size.
+ | | | | | |■Set Variable+: CSelf10[Temp Variable A] = Picture: CSelf21[Temp Picture ID A]'s Image Size (Height)
+ | | | | | |■Set Variable+: CSelf11[Temp Variable B] = Picture: CSelf21[Temp Picture ID A]'s Image Size (Width)
+ | | | | | |▼ Calculate the portrait box size.
+ | | | | | |■Set Variable: CSelf57[Portrait Width] = 96 * CSelf88[Coordinate Scale X (x10)] 
+ | | | | | |■Set Variable: CSelf58[Portrait Height] = 96 * CSelf89[Coordinate Scale Y (x10)] 
+ | | | | | |■Set Variable: CSelf57[Portrait Width] /= 10 + 0 
+ | | | | | |■Set Variable: CSelf58[Portrait Height] /= 10 + 0 
+ | | | | | |▼ Adjust the portrait scale to fit the box.
+ | | | | | |■Set Variable: CSelf10[Temp Variable A] = CSelf57[Portrait Width] * 100 
+ | | | | | |■Set Variable: CSelf11[Temp Variable B] = CSelf58[Portrait Height] * 100 
+ | | | | | |■Set Variable+: CSelf10[Temp Variable A] /= Picture: CSelf21[Temp Picture ID A]'s Image Size (Width)
+ | | | | | |■Set Variable+: CSelf11[Temp Variable B] /= Picture: CSelf21[Temp Picture ID A]'s Image Size (Height)
+ | | | | | |■Set Variable: CSelf23[Zoom (Width)] = CSelf10[Temp Variable A] + 0 
+ | | | | | |■Set Variable: CSelf24[Zoom (Height)] = CSelf11[Temp Variable B] + 0 
+ | | | | | |■
+ | | | | |◇End◇
+ | | | | |▼ Calculate the display start position.
+ | | | | |■Set Variable: CSelf44[Temp X Position] = CSelf42[Screen Width] + 0 
+ | | | | |■Set Variable: CSelf45[Temp Y Position] = CSelf43[Screen Height] + 0 
+ | | | | |■Set Variable+: CSelf10[Temp Variable A] = Picture: CSelf21[Temp Picture ID A]'s Image Size (Height)
+ | | | | |■Set Variable: CSelf10[Temp Variable A] *= CSelf23[Zoom (Width)] + 0 
+ | | | | |■Set Variable: CSelf10[Temp Variable A] /= 100 + 0 
+ | | | | |■Set Variable: CSelf44[Temp X Position] += CSelf10[Temp Variable A] + 0 
+ | | | | |■Picture Move: CSelf21[Temp Picture ID A]  X:CSelf44[Temp X Position] Y:CSelf45[Temp Y Position] / 0(0) Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom CSelf23[Zoom (Width)]xCSelf24[Zoom (Height)]% / Color Same
+ | | | | |▼ Move to the final position.
+ | | | | |■Picture Move: CSelf21[Temp Picture ID A]  X:CSelf42[Screen Width] Y:CSelf43[Screen Height] / 5(0) Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | | |■Picture Move: CSelf21[Temp Picture ID A]  X:CSelf42[Screen Width] Y:CSelf43[Screen Height] / 5(3) Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | | |■Picture Move: CSelf21[Temp Picture ID A]  X:CSelf42[Screen Width] Y:CSelf43[Screen Height] / 5(5) Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | | | |▼ Increase the picture count by 1.
+ | | | | |■Set Variable: CSelf90[Portrait Picture Count] += 1 + 0 
+ | | | | |■Set Variable: CSelf90[Portrait Picture Count] %= CSelf91[Maximum Picture Count] + 0 
+ | | | | |■
+ | | | |◇End◇
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇End◇
+ | |■
+ |◇End◇
+ |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ |▼   Erase Processing
+ |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ |■Condition (Number):   [1] CSelf35[Window Display Flag] !=  0  
+ |-◇Condition:  [1]  [ CSelf35[Window Display Flag] != 0   ] Case↓
+ | |■Condition (Number):   [1] Sys12:Showing Message? (1:Yes) ==  0  
+ | |-◇Condition:  [1]  [ Sys12:Showing Message? (1:Yes) == 0   ] Case↓
+ | | |▼ If the message is hidden, wait a few frames, and if it's still hidden, close the window.
+ | | |■Repeat Loop [ 3 ] Times
+ | | | |■Condition (Number):   [1] Sys12:Showing Message? (1:Yes) ==  1  
+ | | | |-◇Condition:  [1]  [ Sys12:Showing Message? (1:Yes) == 1   ] Case↓
+ | | | | |●Label Jump [Display Window] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | | |■
+ | | | |◇End◇
+ | | | |■Wait: 1 Frames
+ | | | |■
+ | | |◇Loop End Point◇◇
+ | | |▼ Initialize values.
+ | | |■Set Variable: Sys10:Message Wait (X frames) = 9 + 0 
+ | | |■Set Variable: CSelf48[Previous Portrait ID] = -1 + 0 
+ | | |■Condition (Number):   [1] Sys12:Showing Message? (1:Yes) ==  0  
+ | | |-◇Condition:  [1]  [ Sys12:Showing Message? (1:Yes) == 0   ] Case↓
+ | | | |▼ Initialize Portrait Number only if the message is not displayed.
+ | | | |■Set Variable: Sys0:Portrait Number = 1 + 0 
+ | | | |■
+ | | |◇End◇
+ | | |▼ Move to hidden position.
+ | | |■Picture [Reset Delay]: CSelf20[Base Picture ID] 
+ | | |■Picture Move: CSelf20[Base Picture ID]  X:CSelf32[Hidden Display Position X] Y:CSelf33[Hidden Display Position Y] / 4(0) Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | |■Picture Move: CSelf20[Base Picture ID]  X:CSelf32[Hidden Display Position X] Y:CSelf33[Hidden Display Position Y] / 4(2) Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Zoom Same / Color Same
+ | | |▼ Wait until it's hidden.
+ | | |■Repeat Loop [ 6 ] Times
+ | | | |■Condition (Number):   [1] Sys12:Showing Message? (1:Yes) ==  1  
+ | | | |-◇Condition:  [1]  [ Sys12:Showing Message? (1:Yes) == 1   ] Case↓
+ | | | | |●Label Jump [Display Window] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | | |■
+ | | | |◇End◇
+ | | | |■Wait: 1 Frames
+ | | | |■
+ | | |◇Loop End Point◇◇
+ | | |▼ Erase.
+ | | |■Picture Erase: CSelf20[Base Picture ID]  / 0(6) Frames
+ | | |▼ Erase the portrait as well.
+ | | |■Set Variable: CSelf21[Temp Picture ID A] = CSelf20[Base Picture ID] + 1 
+ | | |■Set Variable: CSelf22[Temp Picture ID B] = CSelf20[Base Picture ID] + CSelf91[Maximum Picture Count] 
+ | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID A] to CSelf22[Temp Picture ID B] 
+ | | |■Picture Erase: CSelf21[Temp Picture ID A] to CSelf22[Temp Picture ID B]  / 5(0) Frames
+ | | |▼ The window disappeared, so reset the flag.
+ | | |■Set Variable: CSelf35[Window Display Flag] = 0 + 0 
+ | | |■
+ | |◇End◇
+ | |■
+ |◇End◇
+ |■
+◇Loop End Point◇◇
+■
+[COMMAND_TEXT_END]

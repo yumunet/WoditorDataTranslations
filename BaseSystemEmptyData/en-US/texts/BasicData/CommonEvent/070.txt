@@ -1,0 +1,1601 @@
+COMMON_ID=70
+COMMON_NAME=X[Map]Change Parameter
+COMMAND_COLOR=6
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=Increase or decrease a parameter value. After that, temporary values must be updated in "Recalculate Temp Values" mode.
+VALINPUT_NUM=4
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=Ally ID
+VALINPUT_NAME_1=Target Parameter
+VALINPUT_NAME_2=Amount
+VALINPUT_NAME_3=Show Message?
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=0
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=2
+LOADTYPE2=0
+LOADTYPE3=2
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=15
+CHOICE_STR_1_0=Level
+CHOICE_STR_1_1=EXP
+CHOICE_STR_1_2=Max HP
+CHOICE_STR_1_3=Max SP
+CHOICE_STR_1_4=HP
+CHOICE_STR_1_5=SP
+CHOICE_STR_1_6=Attack
+CHOICE_STR_1_7=Defense
+CHOICE_STR_1_8=Magic Attack
+CHOICE_STR_1_9=Magic Defense
+CHOICE_STR_1_10=Agility
+CHOICE_STR_1_11=Accuracy
+CHOICE_STR_1_12=Evasion
+CHOICE_STR_1_13=Critical Rate
+CHOICE_STR_1_14=Recalculate Temp Values
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=2
+CHOICE_STR_3_0=No
+CHOICE_STR_3_1=Yes
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=15
+CHOICE_VAL_1_0=10
+CHOICE_VAL_1_1=11
+CHOICE_VAL_1_2=20
+CHOICE_VAL_1_3=21
+CHOICE_VAL_1_4=22
+CHOICE_VAL_1_5=23
+CHOICE_VAL_1_6=30
+CHOICE_VAL_1_7=31
+CHOICE_VAL_1_8=32
+CHOICE_VAL_1_9=33
+CHOICE_VAL_1_10=34
+CHOICE_VAL_1_11=35
+CHOICE_VAL_1_12=36
+CHOICE_VAL_1_13=37
+CHOICE_VAL_1_14=100
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=2
+CHOICE_VAL_3_0=0
+CHOICE_VAL_3_1=1
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=10
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=
+RETURN_VAL_TARGET=-1
+CSELF_NAME_0=Ally ID
+CSELF_NAME_1=Target Parameter
+CSELF_NAME_2=Amount
+CSELF_NAME_3=Show Message?
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=Temp String
+CSELF_NAME_8=Parameter Name
+CSELF_NAME_9=Message Text
+CSELF_NAME_10=Temp Variable A
+CSELF_NAME_11=Temp Variable B
+CSELF_NAME_12=Temp Variable C
+CSELF_NAME_13=Temp Variable D
+CSELF_NAME_14=
+CSELF_NAME_15=
+CSELF_NAME_16=
+CSELF_NAME_17=
+CSELF_NAME_18=
+CSELF_NAME_19=Party Size
+CSELF_NAME_20=Level Change
+CSELF_NAME_21=
+CSELF_NAME_22=
+CSELF_NAME_23=
+CSELF_NAME_24=
+CSELF_NAME_25=
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=
+CSELF_NAME_29=
+CSELF_NAME_30=Argument Temp Backup 1
+CSELF_NAME_31=Argument Temp Backup 2
+CSELF_NAME_32=Argument Temp Backup 3
+CSELF_NAME_33=Argument Temp Backup 4
+CSELF_NAME_34=
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=Stat Cap
+CSELF_NAME_41=Max HP/SP Cap
+CSELF_NAME_42=
+CSELF_NAME_43=Behavior When Fainted
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=
+CSELF_NAME_89=
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=
+COMMAND_NUM=699
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("  This common event is always used to increase or decrease the ally's parameter values in the base system.")
+[103][0,1]<0>()("  It only works on the map, but may also be called after battle. In that case, the result is displayed as a battle message.")
+[103][0,1]<0>()("")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[111][4,0]<0>(1,1600001,100,5)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("If not <dqrt>Recalculate<dqrt>")
+[111][4,0]<1>(1,1600002,0,2)()
+[401][1,0]<1>(1)()
+[103][0,1]<2>()("If amount is 0, do nothing.")
+[172][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[250][5,4]<0>(19,0,1,332288,1600040)("","System Settings","","Stats Cap")
+[250][5,4]<0>(19,0,1,332288,1600041)("","System Settings","","Max HP/SP Cap")
+[103][0,1]<0>()(" ")
+[111][7,0]<0>(2,1600001,22,2,1600001,23,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("HP")
+[250][5,4]<1>(21,1600000,0,331776,1600010)("","×Allies Temp Data","","[Temp] Post-Calc Max HP")
+[250][5,4]<1>(0,1600000,5,327696,1600002)("","Allies","","HP")
+[250][5,4]<1>(0,1600000,5,327792,1600010)("","Allies","","HP")
+[250][5,4]<1>(0,1600000,5,327776,0)("","Allies","","HP")
+[103][0,1]<1>()("Ver.2.02  Damage taken on the map can now cause the Fainted state.")
+[250][5,4]<1>(17,0,21,332288,1600043)("","System Settings","","Fainted Members After Battle")
+[250][5,4]<1>(0,1600000,5,331776,1600011)("","Allies","","HP")
+[111][4,0]<1>(1,1600011,0,3)()
+[401][1,0]<1>(1)()
+[111][7,0]<2>(2,1600043,0,2,1600043,1,2)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("Set as fainted.")
+[250][5,4]<3>(5,1600000,0,65536,-1)("","┗ State List","","")
+[0][0,0]<3>()()
+[401][1,0]<2>(2)()
+[103][0,1]<3>()("Set HP to 1.")
+[250][5,4]<3>(0,1600000,5,327776,1)("","Allies","","HP")
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[103][0,1]<1>()("If fainted, unconditionally set HP to 0.")
+[250][5,4]<1>(5,1600000,0,69632,1600010)("","┗ State List","","")
+[111][4,0]<1>(1,1600010,0,5)()
+[401][1,0]<1>(1)()
+[250][5,4]<2>(0,1600000,5,327680,0)("","Allies","","HP")
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[111][4,0]<1>(1,1600003,1,2)()
+[401][1,0]<1>(1)()
+[250][5,4]<2>(13,0,7,332288,1600008)("","Terms","","[Stats] HP Name")
+[250][5,4]<2>(0,1600000,0,331776,1600009)("","Allies","","Character Name")
+[111][7,0]<2>(2,1600002,1,1,1600002,-1,3)()
+[401][1,0]<2>(1)()
+[122][3,1]<3>(1600009,256,0)(" recovered \cself[2] \cself[8].")
+[0][0,0]<3>()()
+[401][1,0]<2>(2)()
+[122][3,1]<3>(1600009,256,0)(" lost \cself[2] \cself[8].")
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[101][0,1]<2>()("@1<\n>\>\cself[9]")
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[103][0,1]<1>()("Check for party wipe.")
+[103][0,1]<1>()("Ver.3.22  The party wipe check is no longer executed for recovery (when CSelf2 is 0 or greater).")
+[111][4,0]<1>(1,1600002,0,1)()
+[401][1,0]<1>(1)()
+[172][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[179][1,0]<1>(1)()
+[250][5,4]<2>(18,4,0,69632,1600019)("","Base System Variables","","")
+[111][4,0]<2>(1,1600019,1,1)()
+[401][1,0]<2>(1)()
+[121][4,0]<3>(1600010,-1,0,0)()
+[179][1,0]<3>(1600019)()
+[121][4,0]<4>(1600010,1,0,256)()
+[103][0,1]<4>()("Store character ID in CSelf11.")
+[300][4,1]<4>(0,16777217,1600010,1600011)("X[Map]Get Ally ID")
+[111][4,0]<4>(1,1600011,0,1)()
+[401][1,0]<4>(1)()
+[103][0,1]<5>()("Check if fainted.")
+[250][5,4]<5>(5,1600011,0,69632,1600012)("","┗ State List","","")
+[111][4,0]<5>(1,1600012,0,2)()
+[401][1,0]<5>(1)()
+[103][0,1]<6>()("If anyone isn't fainted, it's not a party wipe, so quit processing.")
+[172][0,0]<6>()()
+[0][0,0]<6>()()
+[499][0,0]<5>()()
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[0][0,0]<4>()()
+[498][0,0]<3>()()
+[103][0,1]<3>()("At this point, everyone is fainted, so call game over.")
+[250][5,4]<3>(17,0,30,332288,1600010)("","System Settings","","[Battle] Event on Game Over")
+[111][4,0]<3>(1,1600010,0,1)()
+[401][1,0]<3>(1)()
+[121][4,0]<4>(1600010,500000,0,256)()
+[210][2,0]<4>(1600010,0)()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[103][0,1]<1>()("SP")
+[250][5,4]<1>(21,1600000,1,331776,1600010)("","×Allies Temp Data","","[Temp] Post-Calc Max SP")
+[250][5,4]<1>(0,1600000,7,327696,1600002)("","Allies","","SP")
+[250][5,4]<1>(0,1600000,7,327792,1600010)("","Allies","","SP")
+[250][5,4]<1>(0,1600000,8,327776,0)("","Allies","","SP")
+[111][4,0]<1>(1,1600003,1,2)()
+[401][1,0]<1>(1)()
+[250][5,4]<2>(13,0,8,332288,1600008)("","Terms","","[Stats] SP Name")
+[250][5,4]<2>(0,1600000,0,331776,1600009)("","Allies","","Character Name")
+[111][7,0]<2>(2,1600002,1,1,1600002,-1,3)()
+[401][1,0]<2>(1)()
+[122][3,1]<3>(1600009,256,0)(" recovered \cself[2] \cself[8].")
+[0][0,0]<3>()()
+[401][1,0]<2>(2)()
+[122][3,1]<3>(1600009,256,0)(" lost \cself[2] \cself[8].")
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[213][0,1]<2>()("Display Message")
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[111][7,0]<0>(2,1600001,10,2,1600001,11,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("Level")
+[103][0,1]<1>()("On level up, parameter values and required EXP increase.")
+[103][0,1]<1>()("If EXP remains, level up consecutively without exceeding the maximum level.")
+[103][0,1]<1>()(" ")
+[103][0,1]<1>()("Temporarily back up variables (because this common event is called via level-up process).")
+[121][4,0]<1>(1600030,1600000,0,0)()
+[121][4,0]<1>(1600031,1600001,0,0)()
+[121][4,0]<1>(1600032,1600002,0,0)()
+[121][4,0]<1>(1600033,1600003,0,0)()
+[300][5,1]<1>(0,3,1600000,0,0)("X[Map]Level Up/Down")
+[179][1,0]<1>(1)()
+[300][6,1]<2>(0,16777219,1600000,1600002,1,1600020)("X[Map]Level Up/Down")
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[103][0,1]<1>()("Restore backed-up variables.")
+[121][4,0]<1>(1600000,1600030,0,0)()
+[121][4,0]<1>(1600001,1600031,0,0)()
+[121][4,0]<1>(1600002,1600032,0,0)()
+[121][4,0]<1>(1600003,1600033,0,0)()
+[111][4,0]<1>(1,1600020,0,5)()
+[401][1,0]<1>(1)()
+[111][4,0]<2>(1,1600003,1,2)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("On-map message.")
+[212][0,1]<3>()("Level Up Message")
+[122][2,1]<3>(1600009,0)("")
+[250][5,4]<3>(0,1600000,0,331776,1600008)("","Allies","","Character Name")
+[122][3,1]<3>(1600009,256,0)("\cself[8]'s")
+[250][5,4]<3>(14,0,5,332288,1600008)("","Terms","","[Stats] Level")
+[122][3,1]<3>(1600009,256,0)(" \cself[8]")
+[121][4,0]<3>(1600011,1600020,0,2048)()
+[111][7,0]<3>(2,1600020,1,1,1600020,-1,3)()
+[401][1,0]<3>(1)()
+[122][3,1]<4>(1600009,256,0)(" went up by \cself[11]!")
+[0][0,0]<4>()()
+[401][1,0]<3>(2)()
+[122][3,1]<4>(1600009,256,0)(" went down by \cself[11]!")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[122][3,1]<3>(1600009,256,0)("<\n>  ")
+[103][0,1]<3>()(" ")
+[250][5,4]<3>(14,0,7,332288,1600008)("","Terms","","[Stats] HP Name")
+[250][5,4]<3>(21,80,0,69632,1600010)("","Base System Variables","","")
+[111][4,0]<3>(1,1600010,0,5)()
+[401][1,0]<3>(1)()
+[122][2,1]<4>(1600007,0)("")
+[111][4,0]<4>(1,1600010,1,1)()
+[401][1,0]<4>(1)()
+[122][2,1]<5>(1600007,0)("+")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[122][3,1]<4>(1600009,256,0)("Max \cself[8] \cself[7]\cself[10]  ")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[250][5,4]<3>(14,0,8,332288,1600008)("","Terms","","[Stats] SP Name")
+[250][5,4]<3>(21,81,0,69632,1600010)("","Base System Variables","","")
+[111][4,0]<3>(1,1600010,0,5)()
+[401][1,0]<3>(1)()
+[122][2,1]<4>(1600007,0)("")
+[111][4,0]<4>(1,1600010,1,1)()
+[401][1,0]<4>(1)()
+[122][2,1]<5>(1600007,0)("+")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[122][3,1]<4>(1600009,256,0)("Max \cself[8] \cself[7]\cself[10]    ")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[103][0,1]<3>()(" ")
+[122][3,1]<3>(1600009,256,0)("<\n>  ")
+[103][0,1]<3>()(" ")
+[250][5,4]<3>(14,0,9,332288,1600008)("","Terms","","[Stats] Attack")
+[250][5,4]<3>(21,82,0,69632,1600010)("","Base System Variables","","")
+[111][4,0]<3>(1,1600010,0,5)()
+[401][1,0]<3>(1)()
+[122][2,1]<4>(1600007,0)("")
+[111][4,0]<4>(1,1600010,1,1)()
+[401][1,0]<4>(1)()
+[122][2,1]<5>(1600007,0)("+")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[122][3,1]<4>(1600009,256,0)("\cself[8] \cself[7]\cself[10]  ")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[250][5,4]<3>(14,0,10,332288,1600008)("","Terms","","[Stats] Defense")
+[250][5,4]<3>(21,83,0,69632,1600010)("","Base System Variables","","")
+[111][4,0]<3>(1,1600010,0,5)()
+[401][1,0]<3>(1)()
+[122][2,1]<4>(1600007,0)("")
+[111][4,0]<4>(1,1600010,1,1)()
+[401][1,0]<4>(1)()
+[122][2,1]<5>(1600007,0)("+")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[122][3,1]<4>(1600009,256,0)("\cself[8] \cself[7]\cself[10]  ")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[122][3,1]<3>(1600009,256,0)("<\n>  ")
+[250][5,4]<3>(14,0,11,332288,1600008)("","Terms","","[Stats] Magic Attack")
+[250][5,4]<3>(21,84,0,69632,1600010)("","Base System Variables","","")
+[111][4,0]<3>(1,1600010,0,5)()
+[401][1,0]<3>(1)()
+[122][2,1]<4>(1600007,0)("")
+[111][4,0]<4>(1,1600010,1,1)()
+[401][1,0]<4>(1)()
+[122][2,1]<5>(1600007,0)("+")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[122][3,1]<4>(1600009,256,0)("\cself[8] \cself[7]\cself[10]  ")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[250][5,4]<3>(14,0,12,332288,1600008)("","Terms","","[Stats] Magic Defense")
+[250][5,4]<3>(21,85,0,69632,1600010)("","Base System Variables","","")
+[111][4,0]<3>(1,1600010,0,5)()
+[401][1,0]<3>(1)()
+[122][2,1]<4>(1600007,0)("")
+[111][4,0]<4>(1,1600010,1,1)()
+[401][1,0]<4>(1)()
+[122][2,1]<5>(1600007,0)("+")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[122][3,1]<4>(1600009,256,0)("\cself[8] \cself[7]\cself[10]  ")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[101][0,1]<3>()("@1<\n>\>\cself[9]")
+[122][3,1]<3>(1600009,0,0)("  ")
+[250][5,4]<3>(14,0,13,332288,1600008)("","Terms","","[Stats] Agility")
+[250][5,4]<3>(21,86,0,69632,1600010)("","Base System Variables","","")
+[111][4,0]<3>(1,1600010,0,5)()
+[401][1,0]<3>(1)()
+[122][2,1]<4>(1600007,0)("")
+[111][4,0]<4>(1,1600010,1,1)()
+[401][1,0]<4>(1)()
+[122][2,1]<5>(1600007,0)("+")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[122][3,1]<4>(1600009,256,0)("\cself[8] \cself[7]\cself[10]  ")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[250][5,4]<3>(14,0,14,332288,1600008)("","Terms","","[Stats] Accuracy")
+[250][5,4]<3>(21,87,0,69632,1600010)("","Base System Variables","","")
+[111][4,0]<3>(1,1600010,0,5)()
+[401][1,0]<3>(1)()
+[122][2,1]<4>(1600007,0)("")
+[111][4,0]<4>(1,1600010,1,1)()
+[401][1,0]<4>(1)()
+[122][2,1]<5>(1600007,0)("+")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[122][3,1]<4>(1600009,256,0)("\cself[8] \cself[7]\cself[10]  ")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[122][3,1]<3>(1600009,256,0)("<\n>  ")
+[250][5,4]<3>(14,0,15,332288,1600008)("","Terms","","[Stats] Evasion")
+[250][5,4]<3>(21,88,0,69632,1600010)("","Base System Variables","","")
+[111][4,0]<3>(1,1600010,0,5)()
+[401][1,0]<3>(1)()
+[122][2,1]<4>(1600007,0)("")
+[111][4,0]<4>(1,1600010,1,1)()
+[401][1,0]<4>(1)()
+[122][2,1]<5>(1600007,0)("+")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[122][3,1]<4>(1600009,256,0)("\cself[8] \cself[7]\cself[10]  ")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[250][5,4]<3>(14,0,16,332288,1600008)("","Terms","","[Stats] Critical Rate")
+[250][5,4]<3>(21,89,0,69632,1600010)("","Base System Variables","","")
+[111][4,0]<3>(1,1600010,0,5)()
+[401][1,0]<3>(1)()
+[122][2,1]<4>(1600007,0)("")
+[111][4,0]<4>(1,1600010,1,1)()
+[401][1,0]<4>(1)()
+[122][2,1]<5>(1600007,0)("+")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[122][3,1]<4>(1600009,256,0)("\cself[8] \cself[7]\cself[10]    ")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[99][1,0]<3>(0)()
+[112][2,4]<3>(1,270035465)("  <\n>  ","","","")
+[401][1,0]<3>(1)()
+[101][0,1]<4>()("@1<\n>\>\cself[9]")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[103][0,1]<3>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<3>()("Skill Learning Message")
+[103][0,1]<3>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[250][5,4]<3>(21,90,1,69632,1600007)("","Base System Variables","","")
+[250][5,4]<3>(21,90,0,69632,1600011)("","Base System Variables","","")
+[122][2,1]<3>(1600009,0)("")
+[121][4,0]<3>(1600012,0,0,0)()
+[179][1,0]<3>(1600011)()
+[112][2,4]<4>(1,1600007)("","","","")
+[401][1,0]<4>(1)()
+[171][0,0]<5>()()
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[122][3,0]<4>(1600008,769,1600007)()
+[122][2,1]<4>(1600009,256)("\cself[8]<\n>")
+[121][4,0]<4>(1600012,1,0,256)()
+[121][4,0]<4>(1600012,4,0,1280)()
+[111][4,0]<4>(1,1600012,0,2)()
+[401][1,0]<4>(1)()
+[101][0,1]<5>()("@1<\n>\>\cself[9]")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[0][0,0]<4>()()
+[498][0,0]<3>()()
+[111][4,0]<3>(1,1600012,0,5)()
+[401][1,0]<3>(1)()
+[101][0,1]<4>()("@1<\n>\>\cself[9]")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[103][0,1]<3>()("Reset.")
+[300][5,1]<3>(0,3,1600000,0,0)("X[Map]Level Up/Down")
+[103][0,1]<3>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<3>()("End of level-up message display.")
+[103][0,1]<3>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[103][0,1]<1>()("EXP")
+[103][0,1]<1>()("If necessary, call level-up process.")
+[179][1,0]<1>(1)()
+[250][5,4]<2>(0,1600000,57,327696,1600002)("","Allies","","Current Level EXP")
+[250][5,4]<2>(0,1600000,57,327776,0)("","Allies","","Current Level EXP")
+[250][5,4]<2>(0,1600000,57,331776,1600010)("","Allies","","Current Level EXP")
+[250][5,4]<2>(0,1600000,58,331776,1600011)("","Allies","","Current Level Required EXP")
+[103][0,1]<2>()("If the required EXP is 0, it will cause an infinite loop, so set it to at least 1.")
+[121][4,0]<2>(1600011,1,0,1536)()
+[103][0,1]<2>()(" ")
+[103][0,1]<2>()("Temporarily back up variables (because this common event is called via level-up process).")
+[121][4,0]<2>(1600030,1600000,0,0)()
+[121][4,0]<2>(1600031,1600001,0,0)()
+[121][4,0]<2>(1600032,1600002,0,0)()
+[121][4,0]<2>(1600033,1600003,0,0)()
+[300][5,1]<2>(0,3,1600000,0,0)("X[Map]Level Up/Down")
+[121][4,0]<2>(1600020,0,0,0)()
+[170][0,0]<2>()()
+[111][4,0]<3>(17,1600010,1600011,1)()
+[401][1,0]<3>(1)()
+[121][4,0]<4>(1600010,1600011,0,512)()
+[250][5,4]<4>(0,1600000,57,327680,1600010)("","Allies","","Current Level EXP")
+[300][6,1]<4>(0,16777219,1600000,1,1,1600012)("X[Map]Level Up/Down")
+[250][5,4]<4>(0,1600000,58,331776,1600011)("","Allies","","Current Level Required EXP")
+[121][4,0]<4>(1600020,1600012,0,256)()
+[111][4,0]<4>(1,1600012,0,2)()
+[401][1,0]<4>(1)()
+[103][0,1]<5>()("If the level didn't change, end.")
+[171][0,0]<5>()()
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[103][0,1]<4>()("Leveling up many times at once causes a 500,000-command error, so wait 1 frame every 100 levels.")
+[121][4,0]<4>(1600013,1,0,256)()
+[121][4,0]<4>(1600013,100,0,1280)()
+[111][4,0]<4>(1,1600013,0,2)()
+[401][1,0]<4>(1)()
+[180][1,0]<5>(1)()
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[0][0,0]<4>()()
+[420][1,0]<3>(0)()
+[171][0,0]<4>()()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[498][0,0]<2>()()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[103][0,1]<1>()("Restore backed-up variables.")
+[121][4,0]<1>(1600000,1600030,0,0)()
+[121][4,0]<1>(1600001,1600031,0,0)()
+[121][4,0]<1>(1600002,1600032,0,0)()
+[121][4,0]<1>(1600003,1600033,0,0)()
+[111][4,0]<1>(1,1600003,1,2)()
+[401][1,0]<1>(1)()
+[103][0,1]<2>()("On-map message.")
+[250][5,4]<2>(0,1600000,0,331776,1600008)("","Allies","","Character Name")
+[250][5,4]<2>(14,0,17,332288,1600007)("","Terms","","[Stats] Experience")
+[111][7,0]<2>(2,1600002,1,1,1600002,-1,3)()
+[401][1,0]<2>(1)()
+[122][3,1]<3>(1600009,0,0)("\cself[8] received \cself[2] \cself[7]!")
+[0][0,0]<3>()()
+[401][1,0]<2>(2)()
+[121][4,0]<3>(1600002,1600002,0,2048)()
+[122][3,1]<3>(1600009,0,0)("\cself[8] lost \cself[2] \cself[7]!")
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[99][1,0]<2>(0)()
+[101][0,1]<2>()("@1<\n>\>\cself[9]")
+[111][4,0]<2>(1,1600020,0,5)()
+[401][1,0]<2>(1)()
+[213][0,1]<3>()("Level Up Message")
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[103][0,1]<1>()("")
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[111][7,0]<0>(2,1600001,20,2,1600001,21,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("Max HP")
+[250][5,4]<1>(0,1600000,7,327696,1600002)("","Allies","","Max HP")
+[250][5,4]<1>(0,1600000,7,327792,1600041)("","Allies","","Max HP")
+[250][5,4]<1>(0,1600000,7,327776,0)("","Allies","","Max HP")
+[103][0,1]<1>()(" ")
+[179][1,0]<1>(1600003)()
+[250][5,4]<2>(14,0,7,332288,1600008)("","Terms","","[Stats] HP Name")
+[250][5,4]<2>(0,1600000,0,331776,1600007)("","Allies","","Character Name")
+[122][3,1]<2>(1600009,0,0)("\cself[7]'s max \cself[8]")
+[111][7,0]<2>(2,1600002,1,1,1600002,-1,3)()
+[401][1,0]<2>(1)()
+[122][3,1]<3>(1600009,256,0)(" went up by \cself[2]!")
+[213][0,1]<3>()("Display Message")
+[0][0,0]<3>()()
+[401][1,0]<2>(2)()
+[121][4,0]<3>(1600002,1600002,0,2048)()
+[122][3,1]<3>(1600009,256,0)(" went down by \cself[2]!")
+[213][0,1]<3>()("Display Message")
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[103][0,1]<1>()("Max SP")
+[250][5,4]<1>(0,1600000,9,327696,1600002)("","Allies","","Max SP")
+[250][5,4]<1>(0,1600000,9,327792,1600041)("","Allies","","Max SP")
+[250][5,4]<1>(0,1600000,9,327776,0)("","Allies","","Max SP")
+[179][1,0]<1>(1600003)()
+[250][5,4]<2>(14,0,8,332288,1600008)("","Terms","","[Stats] SP Name")
+[250][5,4]<2>(0,1600000,0,331776,1600007)("","Allies","","Character Name")
+[122][3,1]<2>(1600009,0,0)("\cself[7]'s max \cself[8]")
+[111][7,0]<2>(2,1600002,1,1,1600002,-1,3)()
+[401][1,0]<2>(1)()
+[122][3,1]<3>(1600009,256,0)(" went up by \cself[2]!")
+[213][0,1]<3>()("Display Message")
+[0][0,0]<3>()()
+[401][1,0]<2>(2)()
+[121][4,0]<3>(1600002,1600002,0,2048)()
+[122][3,1]<3>(1600009,256,0)(" went down by \cself[2]!")
+[213][0,1]<3>()("Display Message")
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[111][10,0]<0>(3,1600001,30,2,1600001,31,2,1600001,32,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("Attack")
+[250][5,4]<1>(0,1600000,10,327696,1600002)("","Allies","","Base Attack")
+[250][5,4]<1>(0,1600000,10,327792,1600040)("","Allies","","Base Attack")
+[250][5,4]<1>(0,1600000,10,327776,0)("","Allies","","Base Attack")
+[179][1,0]<1>(1600003)()
+[250][5,4]<2>(14,0,9,332288,1600008)("","Terms","","[Stats] Attack")
+[250][5,4]<2>(0,1600000,0,331776,1600007)("","Allies","","Character Name")
+[122][3,1]<2>(1600009,0,0)("\cself[7]'s \cself[8]")
+[111][7,0]<2>(2,1600002,1,1,1600002,-1,3)()
+[401][1,0]<2>(1)()
+[122][3,1]<3>(1600009,256,0)(" went up by \cself[2]!")
+[213][0,1]<3>()("Display Message")
+[0][0,0]<3>()()
+[401][1,0]<2>(2)()
+[121][4,0]<3>(1600002,1600002,0,2048)()
+[122][2,1]<3>(1600009,256)(" went down by \cself[2]!")
+[213][0,1]<3>()("Display Message")
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[103][0,1]<1>()("Defense")
+[250][5,4]<1>(0,1600000,11,327696,1600002)("","Allies","","Base Defense")
+[250][5,4]<1>(0,1600000,11,327792,1600040)("","Allies","","Base Defense")
+[250][5,4]<1>(0,1600000,11,327776,0)("","Allies","","Base Defense")
+[179][1,0]<1>(1600003)()
+[250][5,4]<2>(14,0,10,332288,1600008)("","Terms","","[Stats] Defense")
+[250][5,4]<2>(0,1600000,0,331776,1600007)("","Allies","","Character Name")
+[122][3,1]<2>(1600009,0,0)("\cself[7]'s \cself[8]")
+[111][7,0]<2>(2,1600002,1,1,1600002,-1,3)()
+[401][1,0]<2>(1)()
+[122][3,1]<3>(1600009,256,0)(" went up by \cself[2]!")
+[213][0,1]<3>()("Display Message")
+[0][0,0]<3>()()
+[401][1,0]<2>(2)()
+[121][4,0]<3>(1600002,1600002,0,2048)()
+[122][2,1]<3>(1600009,256)(" went down by \cself[2]!")
+[213][0,1]<3>()("Display Message")
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[0][0,0]<1>()()
+[401][1,0]<0>(3)()
+[103][0,1]<1>()("Magic Attack")
+[250][5,4]<1>(0,1600000,12,327696,1600002)("","Allies","","Base Magic Attack")
+[250][5,4]<1>(0,1600000,12,327792,1600040)("","Allies","","Base Magic Attack")
+[250][5,4]<1>(0,1600000,12,327776,0)("","Allies","","Base Magic Attack")
+[179][1,0]<1>(1600003)()
+[250][5,4]<2>(14,0,11,332288,1600008)("","Terms","","[Stats] Magic Attack")
+[250][5,4]<2>(0,1600000,0,331776,1600007)("","Allies","","Character Name")
+[122][3,1]<2>(1600009,0,0)("\cself[7]'s \cself[8]")
+[111][7,0]<2>(2,1600002,1,1,1600002,-1,3)()
+[401][1,0]<2>(1)()
+[122][3,1]<3>(1600009,256,0)(" went up by \cself[2]!")
+[213][0,1]<3>()("Display Message")
+[0][0,0]<3>()()
+[401][1,0]<2>(2)()
+[121][4,0]<3>(1600002,1600002,0,2048)()
+[122][2,1]<3>(1600009,256)(" went down by \cself[2]!")
+[213][0,1]<3>()("Display Message")
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[111][7,0]<0>(2,1600001,33,2,1600001,34,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("Magic Defense")
+[250][5,4]<1>(0,1600000,13,327696,1600002)("","Allies","","Base Magic Defense")
+[250][5,4]<1>(0,1600000,13,327792,1600040)("","Allies","","Base Magic Defense")
+[250][5,4]<1>(0,1600000,13,327776,0)("","Allies","","Base Magic Defense")
+[179][1,0]<1>(1600003)()
+[250][5,4]<2>(14,0,12,332288,1600008)("","Terms","","[Stats] Magic Defense")
+[250][5,4]<2>(0,1600000,0,331776,1600007)("","Allies","","Character Name")
+[122][3,1]<2>(1600009,0,0)("\cself[7]'s \cself[8]")
+[111][7,0]<2>(2,1600002,1,1,1600002,-1,3)()
+[401][1,0]<2>(1)()
+[122][3,1]<3>(1600009,256,0)(" went up by \cself[2]!")
+[213][0,1]<3>()("Display Message")
+[0][0,0]<3>()()
+[401][1,0]<2>(2)()
+[121][4,0]<3>(1600002,1600002,0,2048)()
+[122][2,1]<3>(1600009,256)(" went down by \cself[2]!")
+[213][0,1]<3>()("Display Message")
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[103][0,1]<1>()("Agility")
+[250][5,4]<1>(0,1600000,14,327696,1600002)("","Allies","","Base Agility")
+[250][5,4]<1>(0,1600000,14,327792,1600040)("","Allies","","Base Agility")
+[250][5,4]<1>(0,1600000,14,327776,0)("","Allies","","Base Agility")
+[179][1,0]<1>(1600003)()
+[250][5,4]<2>(14,0,13,332288,1600008)("","Terms","","[Stats] Agility")
+[250][5,4]<2>(0,1600000,0,331776,1600007)("","Allies","","Character Name")
+[122][3,1]<2>(1600009,0,0)("\cself[7]'s \cself[8]")
+[111][7,0]<2>(2,1600002,1,1,1600002,-1,3)()
+[401][1,0]<2>(1)()
+[122][3,1]<3>(1600009,256,0)(" went up by \cself[2]!")
+[213][0,1]<3>()("Display Message")
+[0][0,0]<3>()()
+[401][1,0]<2>(2)()
+[121][4,0]<3>(1600002,1600002,0,2048)()
+[122][2,1]<3>(1600009,256)(" went down by \cself[2]!")
+[213][0,1]<3>()("Display Message")
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[111][10,0]<0>(3,1600001,35,2,1600001,36,2,1600001,37,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("Accuracy")
+[250][5,4]<1>(0,1600000,15,327696,1600002)("","Allies","","Base Accuracy [%]")
+[250][5,4]<1>(0,1600000,15,327792,1600040)("","Allies","","Base Accuracy [%]")
+[250][5,4]<1>(0,1600000,15,327776,0)("","Allies","","Base Accuracy [%]")
+[179][1,0]<1>(1600003)()
+[250][5,4]<2>(14,0,14,332288,1600008)("","Terms","","[Stats] Accuracy")
+[250][5,4]<2>(0,1600000,0,331776,1600007)("","Allies","","Character Name")
+[122][3,1]<2>(1600009,0,0)("\cself[7]'s \cself[8]")
+[111][7,0]<2>(2,1600002,1,1,1600002,-1,3)()
+[401][1,0]<2>(1)()
+[122][3,1]<3>(1600009,256,0)(" went up by \cself[2]!")
+[213][0,1]<3>()("Display Message")
+[0][0,0]<3>()()
+[401][1,0]<2>(2)()
+[121][4,0]<3>(1600002,1600002,0,2048)()
+[122][2,1]<3>(1600009,256)(" went down by \cself[2]!")
+[213][0,1]<3>()("Display Message")
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[103][0,1]<1>()("Evasion")
+[250][5,4]<1>(0,1600000,16,327696,1600002)("","Allies","","Base Evasion [%]")
+[250][5,4]<1>(0,1600000,16,327792,1600040)("","Allies","","Base Evasion [%]")
+[250][5,4]<1>(0,1600000,16,327776,0)("","Allies","","Base Evasion [%]")
+[179][1,0]<1>(1600003)()
+[250][5,4]<2>(14,0,15,332288,1600008)("","Terms","","[Stats] Evasion")
+[250][5,4]<2>(0,1600000,0,331776,1600007)("","Allies","","Character Name")
+[122][3,1]<2>(1600009,0,0)("\cself[7]'s \cself[8]")
+[111][7,0]<2>(2,1600002,1,1,1600002,-1,3)()
+[401][1,0]<2>(1)()
+[122][3,1]<3>(1600009,256,0)(" went up by \cself[2]!")
+[213][0,1]<3>()("Display Message")
+[0][0,0]<3>()()
+[401][1,0]<2>(2)()
+[121][4,0]<3>(1600002,1600002,0,2048)()
+[122][2,1]<3>(1600009,256)(" went down by \cself[2]!")
+[213][0,1]<3>()("Display Message")
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[0][0,0]<1>()()
+[401][1,0]<0>(3)()
+[103][0,1]<1>()("Critical Rate")
+[250][5,4]<1>(0,1600000,17,327696,1600002)("","Allies","","Base Critical Rate [%]")
+[250][5,4]<1>(0,1600000,17,327792,1600040)("","Allies","","Base Critical Rate [%]")
+[250][5,4]<1>(0,1600000,17,327776,0)("","Allies","","Base Critical Rate [%]")
+[179][1,0]<1>(1600003)()
+[250][5,4]<2>(14,0,16,332288,1600008)("","Terms","","[Stats] Critical Rate")
+[250][5,4]<2>(0,1600000,0,331776,1600007)("","Allies","","Character Name")
+[122][3,1]<2>(1600009,0,0)("\cself[7]'s \cself[8]")
+[111][7,0]<2>(2,1600002,1,1,1600002,-1,3)()
+[401][1,0]<2>(1)()
+[122][3,1]<3>(1600009,256,0)(" went up by \cself[2]!")
+[213][0,1]<3>()("Display Message")
+[0][0,0]<3>()()
+[401][1,0]<2>(2)()
+[121][4,0]<3>(1600002,1600002,0,2048)()
+[122][2,1]<3>(1600009,256)(" went down by \cself[2]!")
+[213][0,1]<3>()("Display Message")
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[111][4,0]<0>(1,1600001,100,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("Recalculate Temp Values")
+[300][3,1]<1>(0,1,1600000)("X[Map]CalcTempStats <Initialize>")
+[300][3,1]<1>(0,1,1600000)("X[Map]CalcTempStats <Equipments>")
+[300][3,1]<1>(0,1,1600000)("X[Map]CalcTempStats <StatusEffects>")
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("  Display Message")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[179][1,0]<0>(0)()
+[212][0,1]<1>()("Display Message")
+[103][0,1]<1>()("Display a message here.")
+[103][0,1]<1>()("(However, level and EXP messages are displayed via separate processing.)")
+[101][0,1]<1>()("@1<\n>\>\cself[9]")
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Process Overview]
+▼   This common event is always used to increase or decrease the ally's parameter values in the base system.
+▼   It only works on the map, but may also be called after battle. In that case, the result is displayed as a battle message.
+▼ 
+▼ ―――――――――――――――――――――――――――――――――――
+■Condition (Number):   [1] CSelf1[Target Parameter] !=  100  
+-◇Condition:  [1]  [ CSelf1[Target Parameter] != 100   ] Case↓
+ |▼ If not "Recalculate"
+ |■Condition (Number):   [1] CSelf2[Amount] ==  0  
+ |-◇Condition:  [1]  [ CSelf2[Amount] == 0   ] Case↓
+ | |▼ If amount is 0, do nothing.
+ | |■Exit Event
+ | |■
+ |◇End◇
+ |■
+◇End◇
+■Load DB(User):  CSelf40[Stat Cap] = UserDB[ "System Settings":0:"Stats Cap" ] (17:Basic System Settings:2) 
+■Load DB(User):  CSelf41[Max HP/SP Cap] = UserDB[ "System Settings":0:"Max HP/SP Cap" ] (17:Basic System Settings:1) 
+▼  
+■Condition (Number):   [1] CSelf1[Target Parameter] ==  22  /  [2] CSelf1[Target Parameter] ==  23  
+-◇Condition:  [1]  [ CSelf1[Target Parameter] == 22   ] Case↓
+ |▼ HP
+ |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Temp] Post-Calc Max HP" ] (17:-:0) 
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"HP" ] (0:-:6) +=  CSelf2[Amount]
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"HP" ] (0:-:6) Upper Bound  CSelf10[Temp Variable A]
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"HP" ] (0:-:6) Lower Bound  0
+ |▼ Ver.2.02  Damage taken on the map can now cause the Fainted state.
+ |■Load DB(User):  CSelf43[Behavior When Fainted] = UserDB[ "System Settings":0:"Fainted Members After Battle" ] (17:Basic System Settings:21) 
+ |■Load DB(Var):  CSelf11[Temp Variable B] = VarDB[ "Allies":CSelf0[Ally ID]:"HP" ] (0:-:6) 
+ |■Condition (Number):   [1] CSelf11[Temp Variable B] <=  0  
+ |-◇Condition:  [1]  [ CSelf11[Temp Variable B] <= 0   ] Case↓
+ | |■Condition (Number):   [1] CSelf43[Behavior When Fainted] ==  0  /  [2] CSelf43[Behavior When Fainted] ==  1  
+ | |-◇Condition:  [1]  [ CSelf43[Behavior When Fainted] == 0   ] Case↓
+ | | |▼ Set as fainted.
+ | | |■Write to DB(Var): VarDB[ "┗ State List":CSelf0[Ally ID]:0 ] (5:-:\udb[8:0] Steps Left) =  -1
+ | | |■
+ | |-◇Condition:  [2]  [ CSelf43[Behavior When Fainted] == 1   ] Case↓
+ | | |▼ Set HP to 1.
+ | | |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"HP" ] (0:-:6) Lower Bound  1
+ | | |■
+ | |◇End◇
+ | |■
+ |◇End◇
+ |▼ If fainted, unconditionally set HP to 0.
+ |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "┗ State List":CSelf0[Ally ID]:0 ] (5:-:\udb[8:0] Steps Left) 
+ |■Condition (Number):   [1] CSelf10[Temp Variable A] !=  0  
+ |-◇Condition:  [1]  [ CSelf10[Temp Variable A] != 0   ] Case↓
+ | |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"HP" ] (0:-:6) =  0
+ | |■
+ |◇End◇
+ |■Condition (Number):   [1] CSelf3[Show Message?] ==  1  
+ |-◇Condition:  [1]  [ CSelf3[Show Message?] == 1   ] Case↓
+ | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] HP Name" ] (15:Basic Terms:7) 
+ | |■Load DB(Var):  CSelf9[Message Text] = VarDB[ "Allies":CSelf0[Ally ID]:"Character Name" ] (0:-:0) 
+ | |■Condition (Number):   [1] CSelf2[Amount] >=  1  /  [2] CSelf2[Amount] <=  -1  
+ | |-◇Condition:  [1]  [ CSelf2[Amount] >= 1   ] Case↓
+ | | |■Set String: CSelf9[Message Text] += " recovered \cself[2] \cself[8]."
+ | | |■
+ | |-◇Condition:  [2]  [ CSelf2[Amount] <= -1   ] Case↓
+ | | |■Set String: CSelf9[Message Text] += " lost \cself[2] \cself[8]."
+ | | |■
+ | |◇End◇
+ | |■Show Message: @1\n\>\cself[9]
+ | |■
+ |◇End◇
+ |▼ Check for party wipe.
+ |▼ Ver.3.22  The party wipe check is no longer executed for recovery (when CSelf2 is 0 or greater).
+ |■Condition (Number):   [1] CSelf2[Amount] >=  0  
+ |-◇Condition:  [1]  [ CSelf2[Amount] >= 0   ] Case↓
+ | |■Exit Event
+ | |■
+ |◇End◇
+ |■Repeat Loop [ 1 ] Times
+ | |■Load DB(Var):  CSelf19[Party Size] = VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) 
+ | |■Condition (Number):   [1] CSelf19[Party Size] >=  1  
+ | |-◇Condition:  [1]  [ CSelf19[Party Size] >= 1   ] Case↓
+ | | |■Set Variable: CSelf10[Temp Variable A] = -1 + 0 
+ | | |■Repeat Loop [ CSelf19[Party Size] ] Times
+ | | | |■Set Variable: CSelf10[Temp Variable A] += 1 + 0 
+ | | | |▼ Store character ID in CSelf11.
+ | | | |■Call Event [Name]: CSelf11[Temp Variable B] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf10[Temp Variable A]
+ | | | |■Condition (Number):   [1] CSelf11[Temp Variable B] >=  0  
+ | | | |-◇Condition:  [1]  [ CSelf11[Temp Variable B] >= 0   ] Case↓
+ | | | | |▼ Check if fainted.
+ | | | | |■Load DB(Var):  CSelf12[Temp Variable C] = VarDB[ "┗ State List":CSelf11[Temp Variable B]:0 ] (5:-:\udb[8:0] Steps Left) 
+ | | | | |■Condition (Number):   [1] CSelf12[Temp Variable C] ==  0  
+ | | | | |-◇Condition:  [1]  [ CSelf12[Temp Variable C] == 0   ] Case↓
+ | | | | | |▼ If anyone isn't fainted, it's not a party wipe, so quit processing.
+ | | | | | |■Exit Event
+ | | | | | |■
+ | | | | |◇End◇
+ | | | | |■
+ | | | |◇End◇
+ | | | |■
+ | | |◇Loop End Point◇◇
+ | | |▼ At this point, everyone is fainted, so call game over.
+ | | |■Load DB(User):  CSelf10[Temp Variable A] = UserDB[ "System Settings":0:"[Battle] Event on Game Over" ] (17:Basic System Settings:30) 
+ | | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  0  
+ | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= 0   ] Case↓
+ | | | |■Set Variable: CSelf10[Temp Variable A] += 500000 + 0 
+ | | | |■Call Event: Variable [CSelf10[Temp Variable A]]'s Ev Page[1]
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇End◇
+ | |■
+ |◇Loop End Point◇◇
+ |■Exit Event
+ |■
+-◇Condition:  [2]  [ CSelf1[Target Parameter] == 23   ] Case↓
+ |▼ SP
+ |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Temp] Post-Calc Max SP" ] (17:-:1) 
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"SP" ] (0:-:8) +=  CSelf2[Amount]
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"SP" ] (0:-:8) Upper Bound  CSelf10[Temp Variable A]
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"SP" ] (0:-:8) Lower Bound  0
+ |■Condition (Number):   [1] CSelf3[Show Message?] ==  1  
+ |-◇Condition:  [1]  [ CSelf3[Show Message?] == 1   ] Case↓
+ | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] SP Name" ] (15:Basic Terms:8) 
+ | |■Load DB(Var):  CSelf9[Message Text] = VarDB[ "Allies":CSelf0[Ally ID]:"Character Name" ] (0:-:0) 
+ | |■Condition (Number):   [1] CSelf2[Amount] >=  1  /  [2] CSelf2[Amount] <=  -1  
+ | |-◇Condition:  [1]  [ CSelf2[Amount] >= 1   ] Case↓
+ | | |■Set String: CSelf9[Message Text] += " recovered \cself[2] \cself[8]."
+ | | |■
+ | |-◇Condition:  [2]  [ CSelf2[Amount] <= -1   ] Case↓
+ | | |■Set String: CSelf9[Message Text] += " lost \cself[2] \cself[8]."
+ | | |■
+ | |◇End◇
+ | |●Label Jump [Display Message] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | |■
+ |◇End◇
+ |■Exit Event
+ |■
+◇End◇
+■Condition (Number):   [1] CSelf1[Target Parameter] ==  10  /  [2] CSelf1[Target Parameter] ==  11  
+-◇Condition:  [1]  [ CSelf1[Target Parameter] == 10   ] Case↓
+ |▼ Level
+ |▼ On level up, parameter values and required EXP increase.
+ |▼ If EXP remains, level up consecutively without exceeding the maximum level.
+ |▼  
+ |▼ Temporarily back up variables (because this common event is called via level-up process).
+ |■Set Variable: CSelf30[Argument Temp Backup 1] = CSelf0[Ally ID] + 0 
+ |■Set Variable: CSelf31[Argument Temp Backup 2] = CSelf1[Target Parameter] + 0 
+ |■Set Variable: CSelf32[Argument Temp Backup 3] = CSelf2[Amount] + 0 
+ |■Set Variable: CSelf33[Argument Temp Backup 4] = CSelf3[Show Message?] + 0 
+ |■Call Event [Name]: ["X[Map]Level Up/Down"] <CommonEv 74>  / CSelf0[Ally ID] / 0 / 0:LvUp+Reset Changes
+ |■Repeat Loop [ 1 ] Times
+ | |■Call Event [Name]: CSelf20[Level Change] = ["X[Map]Level Up/Down"] <CommonEv 74>  / CSelf0[Ally ID] / CSelf2[Amount] / 1:LvUp+Keep Changes
+ | |■
+ |◇Loop End Point◇◇
+ |▼ Restore backed-up variables.
+ |■Set Variable: CSelf0[Ally ID] = CSelf30[Argument Temp Backup 1] + 0 
+ |■Set Variable: CSelf1[Target Parameter] = CSelf31[Argument Temp Backup 2] + 0 
+ |■Set Variable: CSelf2[Amount] = CSelf32[Argument Temp Backup 3] + 0 
+ |■Set Variable: CSelf3[Show Message?] = CSelf33[Argument Temp Backup 4] + 0 
+ |■Condition (Number):   [1] CSelf20[Level Change] !=  0  
+ |-◇Condition:  [1]  [ CSelf20[Level Change] != 0   ] Case↓
+ | |■Condition (Number):   [1] CSelf3[Show Message?] ==  1  
+ | |-◇Condition:  [1]  [ CSelf3[Show Message?] == 1   ] Case↓
+ | | |▼ On-map message.
+ | | |●Label Point [Level Up Message] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | | |■Set String: CSelf9[Message Text] = ""
+ | | |■Load DB(Var):  CSelf8[Parameter Name] = VarDB[ "Allies":CSelf0[Ally ID]:"Character Name" ] (0:-:0) 
+ | | |■Set String: CSelf9[Message Text] += "\cself[8]'s"
+ | | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] Level" ] (15:Basic Terms:5) 
+ | | |■Set String: CSelf9[Message Text] += " \cself[8]"
+ | | |■Set Variable: CSelf11[Temp Variable B] Absolute= CSelf20[Level Change] + 0 
+ | | |■Condition (Number):   [1] CSelf20[Level Change] >=  1  /  [2] CSelf20[Level Change] <=  -1  
+ | | |-◇Condition:  [1]  [ CSelf20[Level Change] >= 1   ] Case↓
+ | | | |■Set String: CSelf9[Message Text] += " went up by \cself[11]!"
+ | | | |■
+ | | |-◇Condition:  [2]  [ CSelf20[Level Change] <= -1   ] Case↓
+ | | | |■Set String: CSelf9[Message Text] += " went down by \cself[11]!"
+ | | | |■
+ | | |◇End◇
+ | | |■Set String: CSelf9[Message Text] += "\n  "
+ | | |▼  
+ | | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] HP Name" ] (15:Basic Terms:7) 
+ | | |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "Base System Variables":80:0 ] (18:[LvUp] Max HP Increase:Number) 
+ | | |■Condition (Number):   [1] CSelf10[Temp Variable A] !=  0  
+ | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] != 0   ] Case↓
+ | | | |■Set String: CSelf7[Temp String] = ""
+ | | | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  1  
+ | | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= 1   ] Case↓
+ | | | | |■Set String: CSelf7[Temp String] = "+"
+ | | | | |■
+ | | | |◇End◇
+ | | | |■Set String: CSelf9[Message Text] += "Max \cself[8] \cself[7]\cself[10]  "
+ | | | |■
+ | | |◇End◇
+ | | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] SP Name" ] (15:Basic Terms:8) 
+ | | |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "Base System Variables":81:0 ] (18:[LvUp] Max SP Increase:Number) 
+ | | |■Condition (Number):   [1] CSelf10[Temp Variable A] !=  0  
+ | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] != 0   ] Case↓
+ | | | |■Set String: CSelf7[Temp String] = ""
+ | | | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  1  
+ | | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= 1   ] Case↓
+ | | | | |■Set String: CSelf7[Temp String] = "+"
+ | | | | |■
+ | | | |◇End◇
+ | | | |■Set String: CSelf9[Message Text] += "Max \cself[8] \cself[7]\cself[10]    "
+ | | | |■
+ | | |◇End◇
+ | | |▼  
+ | | |■Set String: CSelf9[Message Text] += "\n  "
+ | | |▼  
+ | | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] Attack" ] (15:Basic Terms:9) 
+ | | |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "Base System Variables":82:0 ] (18:[LvUp] Attack Increase:Number) 
+ | | |■Condition (Number):   [1] CSelf10[Temp Variable A] !=  0  
+ | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] != 0   ] Case↓
+ | | | |■Set String: CSelf7[Temp String] = ""
+ | | | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  1  
+ | | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= 1   ] Case↓
+ | | | | |■Set String: CSelf7[Temp String] = "+"
+ | | | | |■
+ | | | |◇End◇
+ | | | |■Set String: CSelf9[Message Text] += "\cself[8] \cself[7]\cself[10]  "
+ | | | |■
+ | | |◇End◇
+ | | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] Defense" ] (15:Basic Terms:10) 
+ | | |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "Base System Variables":83:0 ] (18:[LvUp] Defense Increase:Number) 
+ | | |■Condition (Number):   [1] CSelf10[Temp Variable A] !=  0  
+ | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] != 0   ] Case↓
+ | | | |■Set String: CSelf7[Temp String] = ""
+ | | | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  1  
+ | | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= 1   ] Case↓
+ | | | | |■Set String: CSelf7[Temp String] = "+"
+ | | | | |■
+ | | | |◇End◇
+ | | | |■Set String: CSelf9[Message Text] += "\cself[8] \cself[7]\cself[10]  "
+ | | | |■
+ | | |◇End◇
+ | | |■Set String: CSelf9[Message Text] += "\n  "
+ | | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] Magic Attack" ] (15:Basic Terms:11) 
+ | | |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "Base System Variables":84:0 ] (18:[LvUp] Magic Atk Increase:Number) 
+ | | |■Condition (Number):   [1] CSelf10[Temp Variable A] !=  0  
+ | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] != 0   ] Case↓
+ | | | |■Set String: CSelf7[Temp String] = ""
+ | | | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  1  
+ | | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= 1   ] Case↓
+ | | | | |■Set String: CSelf7[Temp String] = "+"
+ | | | | |■
+ | | | |◇End◇
+ | | | |■Set String: CSelf9[Message Text] += "\cself[8] \cself[7]\cself[10]  "
+ | | | |■
+ | | |◇End◇
+ | | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] Magic Defense" ] (15:Basic Terms:12) 
+ | | |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "Base System Variables":85:0 ] (18:[LvUp] Magic Def Increase:Number) 
+ | | |■Condition (Number):   [1] CSelf10[Temp Variable A] !=  0  
+ | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] != 0   ] Case↓
+ | | | |■Set String: CSelf7[Temp String] = ""
+ | | | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  1  
+ | | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= 1   ] Case↓
+ | | | | |■Set String: CSelf7[Temp String] = "+"
+ | | | | |■
+ | | | |◇End◇
+ | | | |■Set String: CSelf9[Message Text] += "\cself[8] \cself[7]\cself[10]  "
+ | | | |■
+ | | |◇End◇
+ | | |■Show Message: @1\n\>\cself[9]
+ | | |■Set String: CSelf9[Message Text] = "  "
+ | | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] Agility" ] (15:Basic Terms:13) 
+ | | |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "Base System Variables":86:0 ] (18:[LvUp] Agility Increase:Number) 
+ | | |■Condition (Number):   [1] CSelf10[Temp Variable A] !=  0  
+ | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] != 0   ] Case↓
+ | | | |■Set String: CSelf7[Temp String] = ""
+ | | | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  1  
+ | | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= 1   ] Case↓
+ | | | | |■Set String: CSelf7[Temp String] = "+"
+ | | | | |■
+ | | | |◇End◇
+ | | | |■Set String: CSelf9[Message Text] += "\cself[8] \cself[7]\cself[10]  "
+ | | | |■
+ | | |◇End◇
+ | | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] Accuracy" ] (15:Basic Terms:14) 
+ | | |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "Base System Variables":87:0 ] (18:[LvUp] Accuracy Increase:Number) 
+ | | |■Condition (Number):   [1] CSelf10[Temp Variable A] !=  0  
+ | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] != 0   ] Case↓
+ | | | |■Set String: CSelf7[Temp String] = ""
+ | | | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  1  
+ | | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= 1   ] Case↓
+ | | | | |■Set String: CSelf7[Temp String] = "+"
+ | | | | |■
+ | | | |◇End◇
+ | | | |■Set String: CSelf9[Message Text] += "\cself[8] \cself[7]\cself[10]  "
+ | | | |■
+ | | |◇End◇
+ | | |■Set String: CSelf9[Message Text] += "\n  "
+ | | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] Evasion" ] (15:Basic Terms:15) 
+ | | |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "Base System Variables":88:0 ] (18:[LvUp] Evasion Increase:Number) 
+ | | |■Condition (Number):   [1] CSelf10[Temp Variable A] !=  0  
+ | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] != 0   ] Case↓
+ | | | |■Set String: CSelf7[Temp String] = ""
+ | | | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  1  
+ | | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= 1   ] Case↓
+ | | | | |■Set String: CSelf7[Temp String] = "+"
+ | | | | |■
+ | | | |◇End◇
+ | | | |■Set String: CSelf9[Message Text] += "\cself[8] \cself[7]\cself[10]  "
+ | | | |■
+ | | |◇End◇
+ | | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] Critical Rate" ] (15:Basic Terms:16) 
+ | | |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "Base System Variables":89:0 ] (18:[LvUp] Critical Rate Increase:Number) 
+ | | |■Condition (Number):   [1] CSelf10[Temp Variable A] !=  0  
+ | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] != 0   ] Case↓
+ | | | |■Set String: CSelf7[Temp String] = ""
+ | | | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  1  
+ | | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= 1   ] Case↓
+ | | | | |■Set String: CSelf7[Temp String] = "+"
+ | | | | |■
+ | | | |◇End◇
+ | | | |■Set String: CSelf9[Message Text] += "\cself[8] \cself[7]\cself[10]    "
+ | | | |■
+ | | |◇End◇
+ | | |■ Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
+ | | |■Condition (String):   [1] CSelf9[Message Text] Is Not Equal to "  \n  "
+ | | |-◇Condition:  [1] [ CSelf9[Message Text] Is Not Equal to "  \n  " ] Case↓
+ | | | |■Show Message: @1\n\>\cself[9]
+ | | | |■
+ | | |◇End◇
+ | | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ | | |▼ Skill Learning Message
+ | | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ | | |■Load DB(Var):  CSelf7[Temp String] = VarDB[ "Base System Variables":90:1 ] (18:[LvUp] Learned Skills [String]:String) 
+ | | |■Load DB(Var):  CSelf11[Temp Variable B] = VarDB[ "Base System Variables":90:0 ] (18:[LvUp] Learned Skills [String]:Number) 
+ | | |■Set String: CSelf9[Message Text] = ""
+ | | |■Set Variable: CSelf12[Temp Variable C] = 0 + 0 
+ | | |■Repeat Loop [ CSelf11[Temp Variable B] ] Times
+ | | | |■Condition (String):   [1] CSelf7[Temp String] Is Equal to ""
+ | | | |-◇Condition:  [1] [ CSelf7[Temp String] Is Equal to "" ] Case↓
+ | | | | |■Break Loop
+ | | | | |■
+ | | | |◇End◇
+ | | | |■Set String: CSelf8[Parameter Name] =<Cut 1st Line> CSelf7[Temp String]
+ | | | |■Set String: CSelf9[Message Text] += "\cself[8]\n"
+ | | | |■Set Variable: CSelf12[Temp Variable C] += 1 + 0 
+ | | | |■Set Variable: CSelf12[Temp Variable C] %= 4 + 0 
+ | | | |■Condition (Number):   [1] CSelf12[Temp Variable C] ==  0  
+ | | | |-◇Condition:  [1]  [ CSelf12[Temp Variable C] == 0   ] Case↓
+ | | | | |■Show Message: @1\n\>\cself[9]
+ | | | | |■
+ | | | |◇End◇
+ | | | |■
+ | | |◇Loop End Point◇◇
+ | | |■Condition (Number):   [1] CSelf12[Temp Variable C] !=  0  
+ | | |-◇Condition:  [1]  [ CSelf12[Temp Variable C] != 0   ] Case↓
+ | | | |■Show Message: @1\n\>\cself[9]
+ | | | |■
+ | | |◇End◇
+ | | |▼ Reset.
+ | | |■Call Event [Name]: ["X[Map]Level Up/Down"] <CommonEv 74>  / CSelf0[Ally ID] / 0 / 0:LvUp+Reset Changes
+ | | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ | | |▼ End of level-up message display.
+ | | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ | | |■
+ | |◇End◇
+ | |■
+ |◇End◇
+ |■
+-◇Condition:  [2]  [ CSelf1[Target Parameter] == 11   ] Case↓
+ |▼ EXP
+ |▼ If necessary, call level-up process.
+ |■Repeat Loop [ 1 ] Times
+ | |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Current Level EXP" ] (0:-:54) +=  CSelf2[Amount]
+ | |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Current Level EXP" ] (0:-:54) Lower Bound  0
+ | |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "Allies":CSelf0[Ally ID]:"Current Level EXP" ] (0:-:54) 
+ | |■Load DB(Var):  CSelf11[Temp Variable B] = VarDB[ "Allies":CSelf0[Ally ID]:"Current Level Required EXP" ] (0:-:55) 
+ | |▼ If the required EXP is 0, it will cause an infinite loop, so set it to at least 1.
+ | |■Set Variable: CSelf11[Temp Variable B] Lower Bound= 1 + 0 
+ | |▼  
+ | |▼ Temporarily back up variables (because this common event is called via level-up process).
+ | |■Set Variable: CSelf30[Argument Temp Backup 1] = CSelf0[Ally ID] + 0 
+ | |■Set Variable: CSelf31[Argument Temp Backup 2] = CSelf1[Target Parameter] + 0 
+ | |■Set Variable: CSelf32[Argument Temp Backup 3] = CSelf2[Amount] + 0 
+ | |■Set Variable: CSelf33[Argument Temp Backup 4] = CSelf3[Show Message?] + 0 
+ | |■Call Event [Name]: ["X[Map]Level Up/Down"] <CommonEv 74>  / CSelf0[Ally ID] / 0 / 0:LvUp+Reset Changes
+ | |■Set Variable: CSelf20[Level Change] = 0 + 0 
+ | |■Loop Start
+ | | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  CSelf11[Temp Variable B]  
+ | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= CSelf11[Temp Variable B]   ] Case↓
+ | | | |■Set Variable: CSelf10[Temp Variable A] -= CSelf11[Temp Variable B] + 0 
+ | | | |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Current Level EXP" ] (0:-:54) =  CSelf10[Temp Variable A]
+ | | | |■Call Event [Name]: CSelf12[Temp Variable C] = ["X[Map]Level Up/Down"] <CommonEv 74>  / CSelf0[Ally ID] / 1 / 1:LvUp+Keep Changes
+ | | | |■Load DB(Var):  CSelf11[Temp Variable B] = VarDB[ "Allies":CSelf0[Ally ID]:"Current Level Required EXP" ] (0:-:55) 
+ | | | |■Set Variable: CSelf20[Level Change] += CSelf12[Temp Variable C] + 0 
+ | | | |■Condition (Number):   [1] CSelf12[Temp Variable C] ==  0  
+ | | | |-◇Condition:  [1]  [ CSelf12[Temp Variable C] == 0   ] Case↓
+ | | | | |▼ If the level didn't change, end.
+ | | | | |■Break Loop
+ | | | | |■
+ | | | |◇End◇
+ | | | |▼ Leveling up many times at once causes a 500,000-command error, so wait 1 frame every 100 levels.
+ | | | |■Set Variable: CSelf13[Temp Variable D] += 1 + 0 
+ | | | |■Set Variable: CSelf13[Temp Variable D] %= 100 + 0 
+ | | | |■Condition (Number):   [1] CSelf13[Temp Variable D] ==  0  
+ | | | |-◇Condition:  [1]  [ CSelf13[Temp Variable D] == 0   ] Case↓
+ | | | | |■Wait: 1 Frames
+ | | | | |■
+ | | | |◇End◇
+ | | | |■
+ | | |-◇Else
+ | | | |■Break Loop
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇Loop End Point◇◇
+ | |■
+ |◇Loop End Point◇◇
+ |▼ Restore backed-up variables.
+ |■Set Variable: CSelf0[Ally ID] = CSelf30[Argument Temp Backup 1] + 0 
+ |■Set Variable: CSelf1[Target Parameter] = CSelf31[Argument Temp Backup 2] + 0 
+ |■Set Variable: CSelf2[Amount] = CSelf32[Argument Temp Backup 3] + 0 
+ |■Set Variable: CSelf3[Show Message?] = CSelf33[Argument Temp Backup 4] + 0 
+ |■Condition (Number):   [1] CSelf3[Show Message?] ==  1  
+ |-◇Condition:  [1]  [ CSelf3[Show Message?] == 1   ] Case↓
+ | |▼ On-map message.
+ | |■Load DB(Var):  CSelf8[Parameter Name] = VarDB[ "Allies":CSelf0[Ally ID]:"Character Name" ] (0:-:0) 
+ | |■Load DB(User):  CSelf7[Temp String] = UserDB[ "Terms":0:"[Stats] Experience" ] (15:Basic Terms:17) 
+ | |■Condition (Number):   [1] CSelf2[Amount] >=  1  /  [2] CSelf2[Amount] <=  -1  
+ | |-◇Condition:  [1]  [ CSelf2[Amount] >= 1   ] Case↓
+ | | |■Set String: CSelf9[Message Text] = "\cself[8] received \cself[2] \cself[7]!"
+ | | |■
+ | |-◇Condition:  [2]  [ CSelf2[Amount] <= -1   ] Case↓
+ | | |■Set Variable: CSelf2[Amount] Absolute= CSelf2[Amount] + 0 
+ | | |■Set String: CSelf9[Message Text] = "\cself[8] lost \cself[2] \cself[7]!"
+ | | |■
+ | |◇End◇
+ | |■ Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
+ | |■Show Message: @1\n\>\cself[9]
+ | |■Condition (Number):   [1] CSelf20[Level Change] !=  0  
+ | |-◇Condition:  [1]  [ CSelf20[Level Change] != 0   ] Case↓
+ | | |●Label Jump [Level Up Message] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | |■
+ | |◇End◇
+ | |■
+ |◇End◇
+ |▼ 
+ |■
+◇End◇
+■Condition (Number):   [1] CSelf1[Target Parameter] ==  20  /  [2] CSelf1[Target Parameter] ==  21  
+-◇Condition:  [1]  [ CSelf1[Target Parameter] == 20   ] Case↓
+ |▼ Max HP
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Max HP" ] (0:-:7) +=  CSelf2[Amount]
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Max HP" ] (0:-:7) Upper Bound  CSelf41[Max HP/SP Cap]
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Max HP" ] (0:-:7) Lower Bound  0
+ |▼  
+ |■Repeat Loop [ CSelf3[Show Message?] ] Times
+ | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] HP Name" ] (15:Basic Terms:7) 
+ | |■Load DB(Var):  CSelf7[Temp String] = VarDB[ "Allies":CSelf0[Ally ID]:"Character Name" ] (0:-:0) 
+ | |■Set String: CSelf9[Message Text] = "\cself[7]'s max \cself[8]"
+ | |■Condition (Number):   [1] CSelf2[Amount] >=  1  /  [2] CSelf2[Amount] <=  -1  
+ | |-◇Condition:  [1]  [ CSelf2[Amount] >= 1   ] Case↓
+ | | |■Set String: CSelf9[Message Text] += " went up by \cself[2]!"
+ | | |●Label Jump [Display Message] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | |■
+ | |-◇Condition:  [2]  [ CSelf2[Amount] <= -1   ] Case↓
+ | | |■Set Variable: CSelf2[Amount] Absolute= CSelf2[Amount] + 0 
+ | | |■Set String: CSelf9[Message Text] += " went down by \cself[2]!"
+ | | |●Label Jump [Display Message] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | |■
+ | |◇End◇
+ | |■
+ |◇Loop End Point◇◇
+ |■
+-◇Condition:  [2]  [ CSelf1[Target Parameter] == 21   ] Case↓
+ |▼ Max SP
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Max SP" ] (0:-:9) +=  CSelf2[Amount]
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Max SP" ] (0:-:9) Upper Bound  CSelf41[Max HP/SP Cap]
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Max SP" ] (0:-:9) Lower Bound  0
+ |■Repeat Loop [ CSelf3[Show Message?] ] Times
+ | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] SP Name" ] (15:Basic Terms:8) 
+ | |■Load DB(Var):  CSelf7[Temp String] = VarDB[ "Allies":CSelf0[Ally ID]:"Character Name" ] (0:-:0) 
+ | |■Set String: CSelf9[Message Text] = "\cself[7]'s max \cself[8]"
+ | |■Condition (Number):   [1] CSelf2[Amount] >=  1  /  [2] CSelf2[Amount] <=  -1  
+ | |-◇Condition:  [1]  [ CSelf2[Amount] >= 1   ] Case↓
+ | | |■Set String: CSelf9[Message Text] += " went up by \cself[2]!"
+ | | |●Label Jump [Display Message] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | |■
+ | |-◇Condition:  [2]  [ CSelf2[Amount] <= -1   ] Case↓
+ | | |■Set Variable: CSelf2[Amount] Absolute= CSelf2[Amount] + 0 
+ | | |■Set String: CSelf9[Message Text] += " went down by \cself[2]!"
+ | | |●Label Jump [Display Message] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | |■
+ | |◇End◇
+ | |■
+ |◇Loop End Point◇◇
+ |■
+◇End◇
+■Condition (Number):   [1] CSelf1[Target Parameter] ==  30  /  [2] CSelf1[Target Parameter] ==  31  /  [3] CSelf1[Target Parameter] ==  32  
+-◇Condition:  [1]  [ CSelf1[Target Parameter] == 30   ] Case↓
+ |▼ Attack
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Base Attack" ] (0:-:10) +=  CSelf2[Amount]
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Base Attack" ] (0:-:10) Upper Bound  CSelf40[Stat Cap]
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Base Attack" ] (0:-:10) Lower Bound  0
+ |■Repeat Loop [ CSelf3[Show Message?] ] Times
+ | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] Attack" ] (15:Basic Terms:9) 
+ | |■Load DB(Var):  CSelf7[Temp String] = VarDB[ "Allies":CSelf0[Ally ID]:"Character Name" ] (0:-:0) 
+ | |■Set String: CSelf9[Message Text] = "\cself[7]'s \cself[8]"
+ | |■Condition (Number):   [1] CSelf2[Amount] >=  1  /  [2] CSelf2[Amount] <=  -1  
+ | |-◇Condition:  [1]  [ CSelf2[Amount] >= 1   ] Case↓
+ | | |■Set String: CSelf9[Message Text] += " went up by \cself[2]!"
+ | | |●Label Jump [Display Message] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | |■
+ | |-◇Condition:  [2]  [ CSelf2[Amount] <= -1   ] Case↓
+ | | |■Set Variable: CSelf2[Amount] Absolute= CSelf2[Amount] + 0 
+ | | |■Set String: CSelf9[Message Text] += " went down by \cself[2]!"
+ | | |●Label Jump [Display Message] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | |■
+ | |◇End◇
+ | |■
+ |◇Loop End Point◇◇
+ |■
+-◇Condition:  [2]  [ CSelf1[Target Parameter] == 31   ] Case↓
+ |▼ Defense
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Base Defense" ] (0:-:11) +=  CSelf2[Amount]
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Base Defense" ] (0:-:11) Upper Bound  CSelf40[Stat Cap]
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Base Defense" ] (0:-:11) Lower Bound  0
+ |■Repeat Loop [ CSelf3[Show Message?] ] Times
+ | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] Defense" ] (15:Basic Terms:10) 
+ | |■Load DB(Var):  CSelf7[Temp String] = VarDB[ "Allies":CSelf0[Ally ID]:"Character Name" ] (0:-:0) 
+ | |■Set String: CSelf9[Message Text] = "\cself[7]'s \cself[8]"
+ | |■Condition (Number):   [1] CSelf2[Amount] >=  1  /  [2] CSelf2[Amount] <=  -1  
+ | |-◇Condition:  [1]  [ CSelf2[Amount] >= 1   ] Case↓
+ | | |■Set String: CSelf9[Message Text] += " went up by \cself[2]!"
+ | | |●Label Jump [Display Message] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | |■
+ | |-◇Condition:  [2]  [ CSelf2[Amount] <= -1   ] Case↓
+ | | |■Set Variable: CSelf2[Amount] Absolute= CSelf2[Amount] + 0 
+ | | |■Set String: CSelf9[Message Text] += " went down by \cself[2]!"
+ | | |●Label Jump [Display Message] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | |■
+ | |◇End◇
+ | |■
+ |◇Loop End Point◇◇
+ |■
+-◇Condition:  [3]  [ CSelf1[Target Parameter] == 32   ] Case↓
+ |▼ Magic Attack
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Base Magic Attack" ] (0:-:12) +=  CSelf2[Amount]
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Base Magic Attack" ] (0:-:12) Upper Bound  CSelf40[Stat Cap]
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Base Magic Attack" ] (0:-:12) Lower Bound  0
+ |■Repeat Loop [ CSelf3[Show Message?] ] Times
+ | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] Magic Attack" ] (15:Basic Terms:11) 
+ | |■Load DB(Var):  CSelf7[Temp String] = VarDB[ "Allies":CSelf0[Ally ID]:"Character Name" ] (0:-:0) 
+ | |■Set String: CSelf9[Message Text] = "\cself[7]'s \cself[8]"
+ | |■Condition (Number):   [1] CSelf2[Amount] >=  1  /  [2] CSelf2[Amount] <=  -1  
+ | |-◇Condition:  [1]  [ CSelf2[Amount] >= 1   ] Case↓
+ | | |■Set String: CSelf9[Message Text] += " went up by \cself[2]!"
+ | | |●Label Jump [Display Message] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | |■
+ | |-◇Condition:  [2]  [ CSelf2[Amount] <= -1   ] Case↓
+ | | |■Set Variable: CSelf2[Amount] Absolute= CSelf2[Amount] + 0 
+ | | |■Set String: CSelf9[Message Text] += " went down by \cself[2]!"
+ | | |●Label Jump [Display Message] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | |■
+ | |◇End◇
+ | |■
+ |◇Loop End Point◇◇
+ |■
+◇End◇
+■Condition (Number):   [1] CSelf1[Target Parameter] ==  33  /  [2] CSelf1[Target Parameter] ==  34  
+-◇Condition:  [1]  [ CSelf1[Target Parameter] == 33   ] Case↓
+ |▼ Magic Defense
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Base Magic Defense" ] (0:-:13) +=  CSelf2[Amount]
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Base Magic Defense" ] (0:-:13) Upper Bound  CSelf40[Stat Cap]
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Base Magic Defense" ] (0:-:13) Lower Bound  0
+ |■Repeat Loop [ CSelf3[Show Message?] ] Times
+ | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] Magic Defense" ] (15:Basic Terms:12) 
+ | |■Load DB(Var):  CSelf7[Temp String] = VarDB[ "Allies":CSelf0[Ally ID]:"Character Name" ] (0:-:0) 
+ | |■Set String: CSelf9[Message Text] = "\cself[7]'s \cself[8]"
+ | |■Condition (Number):   [1] CSelf2[Amount] >=  1  /  [2] CSelf2[Amount] <=  -1  
+ | |-◇Condition:  [1]  [ CSelf2[Amount] >= 1   ] Case↓
+ | | |■Set String: CSelf9[Message Text] += " went up by \cself[2]!"
+ | | |●Label Jump [Display Message] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | |■
+ | |-◇Condition:  [2]  [ CSelf2[Amount] <= -1   ] Case↓
+ | | |■Set Variable: CSelf2[Amount] Absolute= CSelf2[Amount] + 0 
+ | | |■Set String: CSelf9[Message Text] += " went down by \cself[2]!"
+ | | |●Label Jump [Display Message] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | |■
+ | |◇End◇
+ | |■
+ |◇Loop End Point◇◇
+ |■
+-◇Condition:  [2]  [ CSelf1[Target Parameter] == 34   ] Case↓
+ |▼ Agility
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Base Agility" ] (0:-:14) +=  CSelf2[Amount]
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Base Agility" ] (0:-:14) Upper Bound  CSelf40[Stat Cap]
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Base Agility" ] (0:-:14) Lower Bound  0
+ |■Repeat Loop [ CSelf3[Show Message?] ] Times
+ | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] Agility" ] (15:Basic Terms:13) 
+ | |■Load DB(Var):  CSelf7[Temp String] = VarDB[ "Allies":CSelf0[Ally ID]:"Character Name" ] (0:-:0) 
+ | |■Set String: CSelf9[Message Text] = "\cself[7]'s \cself[8]"
+ | |■Condition (Number):   [1] CSelf2[Amount] >=  1  /  [2] CSelf2[Amount] <=  -1  
+ | |-◇Condition:  [1]  [ CSelf2[Amount] >= 1   ] Case↓
+ | | |■Set String: CSelf9[Message Text] += " went up by \cself[2]!"
+ | | |●Label Jump [Display Message] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | |■
+ | |-◇Condition:  [2]  [ CSelf2[Amount] <= -1   ] Case↓
+ | | |■Set Variable: CSelf2[Amount] Absolute= CSelf2[Amount] + 0 
+ | | |■Set String: CSelf9[Message Text] += " went down by \cself[2]!"
+ | | |●Label Jump [Display Message] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | |■
+ | |◇End◇
+ | |■
+ |◇Loop End Point◇◇
+ |■
+◇End◇
+■Condition (Number):   [1] CSelf1[Target Parameter] ==  35  /  [2] CSelf1[Target Parameter] ==  36  /  [3] CSelf1[Target Parameter] ==  37  
+-◇Condition:  [1]  [ CSelf1[Target Parameter] == 35   ] Case↓
+ |▼ Accuracy
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Base Accuracy [%]" ] (0:-:15) +=  CSelf2[Amount]
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Base Accuracy [%]" ] (0:-:15) Upper Bound  CSelf40[Stat Cap]
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Base Accuracy [%]" ] (0:-:15) Lower Bound  0
+ |■Repeat Loop [ CSelf3[Show Message?] ] Times
+ | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] Accuracy" ] (15:Basic Terms:14) 
+ | |■Load DB(Var):  CSelf7[Temp String] = VarDB[ "Allies":CSelf0[Ally ID]:"Character Name" ] (0:-:0) 
+ | |■Set String: CSelf9[Message Text] = "\cself[7]'s \cself[8]"
+ | |■Condition (Number):   [1] CSelf2[Amount] >=  1  /  [2] CSelf2[Amount] <=  -1  
+ | |-◇Condition:  [1]  [ CSelf2[Amount] >= 1   ] Case↓
+ | | |■Set String: CSelf9[Message Text] += " went up by \cself[2]!"
+ | | |●Label Jump [Display Message] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | |■
+ | |-◇Condition:  [2]  [ CSelf2[Amount] <= -1   ] Case↓
+ | | |■Set Variable: CSelf2[Amount] Absolute= CSelf2[Amount] + 0 
+ | | |■Set String: CSelf9[Message Text] += " went down by \cself[2]!"
+ | | |●Label Jump [Display Message] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | |■
+ | |◇End◇
+ | |■
+ |◇Loop End Point◇◇
+ |■
+-◇Condition:  [2]  [ CSelf1[Target Parameter] == 36   ] Case↓
+ |▼ Evasion
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Base Evasion [%]" ] (0:-:16) +=  CSelf2[Amount]
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Base Evasion [%]" ] (0:-:16) Upper Bound  CSelf40[Stat Cap]
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Base Evasion [%]" ] (0:-:16) Lower Bound  0
+ |■Repeat Loop [ CSelf3[Show Message?] ] Times
+ | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] Evasion" ] (15:Basic Terms:15) 
+ | |■Load DB(Var):  CSelf7[Temp String] = VarDB[ "Allies":CSelf0[Ally ID]:"Character Name" ] (0:-:0) 
+ | |■Set String: CSelf9[Message Text] = "\cself[7]'s \cself[8]"
+ | |■Condition (Number):   [1] CSelf2[Amount] >=  1  /  [2] CSelf2[Amount] <=  -1  
+ | |-◇Condition:  [1]  [ CSelf2[Amount] >= 1   ] Case↓
+ | | |■Set String: CSelf9[Message Text] += " went up by \cself[2]!"
+ | | |●Label Jump [Display Message] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | |■
+ | |-◇Condition:  [2]  [ CSelf2[Amount] <= -1   ] Case↓
+ | | |■Set Variable: CSelf2[Amount] Absolute= CSelf2[Amount] + 0 
+ | | |■Set String: CSelf9[Message Text] += " went down by \cself[2]!"
+ | | |●Label Jump [Display Message] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | |■
+ | |◇End◇
+ | |■
+ |◇Loop End Point◇◇
+ |■
+-◇Condition:  [3]  [ CSelf1[Target Parameter] == 37   ] Case↓
+ |▼ Critical Rate
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Base Critical Rate [%]" ] (0:-:17) +=  CSelf2[Amount]
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Base Critical Rate [%]" ] (0:-:17) Upper Bound  CSelf40[Stat Cap]
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Base Critical Rate [%]" ] (0:-:17) Lower Bound  0
+ |■Repeat Loop [ CSelf3[Show Message?] ] Times
+ | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] Critical Rate" ] (15:Basic Terms:16) 
+ | |■Load DB(Var):  CSelf7[Temp String] = VarDB[ "Allies":CSelf0[Ally ID]:"Character Name" ] (0:-:0) 
+ | |■Set String: CSelf9[Message Text] = "\cself[7]'s \cself[8]"
+ | |■Condition (Number):   [1] CSelf2[Amount] >=  1  /  [2] CSelf2[Amount] <=  -1  
+ | |-◇Condition:  [1]  [ CSelf2[Amount] >= 1   ] Case↓
+ | | |■Set String: CSelf9[Message Text] += " went up by \cself[2]!"
+ | | |●Label Jump [Display Message] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | |■
+ | |-◇Condition:  [2]  [ CSelf2[Amount] <= -1   ] Case↓
+ | | |■Set Variable: CSelf2[Amount] Absolute= CSelf2[Amount] + 0 
+ | | |■Set String: CSelf9[Message Text] += " went down by \cself[2]!"
+ | | |●Label Jump [Display Message] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | |■
+ | |◇End◇
+ | |■
+ |◇Loop End Point◇◇
+ |■
+◇End◇
+■Condition (Number):   [1] CSelf1[Target Parameter] ==  100  
+-◇Condition:  [1]  [ CSelf1[Target Parameter] == 100   ] Case↓
+ |▼ Recalculate Temp Values
+ |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf0[Ally ID]
+ |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf0[Ally ID]
+ |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf0[Ally ID]
+ |■Exit Event
+ |■
+◇End◇
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼   Display Message
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■Repeat Loop [ 0 ] Times
+ |●Label Point [Display Message] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |▼ Display a message here.
+ |▼ (However, level and EXP messages are displayed via separate processing.)
+ |■Show Message: @1\n\>\cself[9]
+ |■Exit Event
+ |■
+◇Loop End Point◇◇
+■
+[COMMAND_TEXT_END]

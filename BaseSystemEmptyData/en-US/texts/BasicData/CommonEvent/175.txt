@@ -1,0 +1,327 @@
+COMMON_ID=175
+COMMON_NAME=X[Bat]Enemy: Calc Position
+COMMAND_COLOR=6
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=1
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=表示位置[0-..]
+VALINPUT_NAME_1=
+VALINPUT_NAME_2=
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=0
+LOADTYPE2=0
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=0
+CHOICE_STR_2_NUM=0
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=0
+CHOICE_VAL_2_NUM=0
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=10
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=
+RETURN_VAL_TARGET=-1
+CSELF_NAME_0=表示位置[0-..]
+CSELF_NAME_1=
+CSELF_NAME_2=
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=
+CSELF_NAME_9=
+CSELF_NAME_10=横位置算出　一時変数
+CSELF_NAME_11=縦位置算出　一時変数
+CSELF_NAME_12=
+CSELF_NAME_13=
+CSELF_NAME_14=
+CSELF_NAME_15=
+CSELF_NAME_16=最大パーティ数
+CSELF_NAME_17=
+CSELF_NAME_18=
+CSELF_NAME_19=
+CSELF_NAME_20=表示元X
+CSELF_NAME_21=表示元Y
+CSELF_NAME_22=表示先X
+CSELF_NAME_23=表示先Y
+CSELF_NAME_24=
+CSELF_NAME_25=
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=×座標倍率(x10)
+CSELF_NAME_29=
+CSELF_NAME_30=
+CSELF_NAME_31=
+CSELF_NAME_32=
+CSELF_NAME_33=
+CSELF_NAME_34=
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=
+CSELF_NAME_41=
+CSELF_NAME_42=
+CSELF_NAME_43=
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=座標倍率X[x10]
+CSELF_NAME_89=座標倍率Y[x10]
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=
+COMMAND_NUM=79
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("　各敵キャラクター欄の基本位置を、可変DB「基本システム用変数」に代入します。")
+[103][0,1]<0>()("　取得できる座標は中央座標（ポップアップ表示位置）ですのでご注意ください。")
+[103][0,1]<0>()("")
+[103][0,1]<0>()("　 代入先は、可変DB「基本システム用変数」内の以下の4つです。")
+[103][0,1]<0>()("　 　35:ステータス欄表示　元座標X　")
+[103][0,1]<0>()("　 　36:ステータス欄表示　元座標Y")
+[103][0,1]<0>()("　 　37:ステータス欄表示先　座標X")
+[103][0,1]<0>()("　 　38:ステータス欄表示先　座標Y")
+[103][0,1]<0>()("　※上記の座標は、解像度別の倍率補正をかけた後の値です。")
+[103][0,1]<0>()("")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()(" 　パラメータ設定")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("固定値を設定")
+[103][0,1]<0>()("Ver2.20　座標倍率を縦横別に修正")
+[250][5,4]<0>(18,97,0,69632,1600088)("","Base System Variables","","")
+[250][5,4]<0>(18,98,0,69632,1600089)("","Base System Variables","","")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("表示位置に応じた座標を「基本システム用変数」に格納")
+[103][0,1]<0>()("（表示先＝移動後の座標・エフェクト表示位置　　表示元＝移動前）")
+[250][5,4]<0>(18,51,0,69632,1600016)("","Base System Variables","","")
+[111][4,0]<0>(1,1600000,10,4)()
+[401][1,0]<0>(1)()
+[101][0,1]<1>()("\>「X[移]敵キャラ_座標算出」：エラー<\n>10番未満は指定できません")
+[172][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[111][10,0]<0>(3,1600000,10,2,1600000,11,2,1600000,12,2)()
+[401][1,0]<0>(1)()
+[121][4,0]<1>(1600022,160,0,0)()
+[121][4,0]<1>(1600023,130,0,0)()
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[121][4,0]<1>(1600022,116,0,0)()
+[121][4,0]<1>(1600023,133,0,0)()
+[0][0,0]<1>()()
+[401][1,0]<0>(3)()
+[121][4,0]<1>(1600022,204,0,0)()
+[121][4,0]<1>(1600023,133,0,0)()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[111][10,0]<0>(3,1600000,13,2,1600000,14,2,1600000,15,2)()
+[401][1,0]<0>(1)()
+[121][4,0]<1>(1600022,72,0,0)()
+[121][4,0]<1>(1600023,136,0,0)()
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[121][4,0]<1>(1600022,248,0,0)()
+[121][4,0]<1>(1600023,136,0,0)()
+[0][0,0]<1>()()
+[401][1,0]<0>(3)()
+[121][4,0]<1>(1600022,28,0,0)()
+[121][4,0]<1>(1600023,140,0,0)()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[111][4,0]<0>(1,1600000,16,2)()
+[401][1,0]<0>(1)()
+[121][4,0]<1>(1600022,292,0,0)()
+[121][4,0]<1>(1600023,140,0,0)()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[103][0,1]<0>()("表示元座標の設定")
+[121][4,0]<0>(1600020,1600022,0,0)()
+[121][4,0]<0>(1600021,-120,0,0)()
+[103][0,1]<0>()("倍率変更補正")
+[121][4,0]<0>(1600020,1600088,0,768)()
+[121][4,0]<0>(1600021,1600089,0,768)()
+[121][4,0]<0>(1600022,1600088,0,768)()
+[121][4,0]<0>(1600023,1600089,0,768)()
+[121][5,0]<0>(1600020,10,0,66560,3)()
+[103][0,1]<0>()("ここで格納")
+[250][5,4]<0>(18,35,0,65536,1600020)("","Base System Variables","","")
+[250][5,4]<0>(18,36,0,65536,1600021)("","Base System Variables","","")
+[250][5,4]<0>(18,37,0,65536,1600022)("","Base System Variables","","")
+[250][5,4]<0>(18,38,0,65536,1600023)("","Base System Variables","","")
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Process Overview]
+▼ 　各敵キャラクター欄の基本位置を、可変DB「基本システム用変数」に代入します。
+▼ 　取得できる座標は中央座標（ポップアップ表示位置）ですのでご注意ください。
+▼ 
+▼ 　 代入先は、可変DB「基本システム用変数」内の以下の4つです。
+▼ 　 　35:ステータス欄表示　元座標X　
+▼ 　 　36:ステータス欄表示　元座標Y
+▼ 　 　37:ステータス欄表示先　座標X
+▼ 　 　38:ステータス欄表示先　座標Y
+▼ 　※上記の座標は、解像度別の倍率補正をかけた後の値です。
+▼ 
+▼ ―――――――――――――――――――――――――――――――――――
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼  　パラメータ設定
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ 固定値を設定
+▼ Ver2.20　座標倍率を縦横別に修正
+■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
+■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ 表示位置に応じた座標を「基本システム用変数」に格納
+▼ （表示先＝移動後の座標・エフェクト表示位置　　表示元＝移動前）
+■Load DB(Var):  CSelf16[最大パーティ数] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
+■Condition (Number):   [1] CSelf0[表示位置[0-..]] <  10  
+-◇Condition:  [1]  [ CSelf0[表示位置[0-..]] < 10   ] Case↓
+ |■Show Message: \>「X[移]敵キャラ_座標算出」：エラー\n10番未満は指定できません
+ |■Exit Event
+ |■
+◇End◇
+■Condition (Number):   [1] CSelf0[表示位置[0-..]] ==  10  /  [2] CSelf0[表示位置[0-..]] ==  11  /  [3] CSelf0[表示位置[0-..]] ==  12  
+-◇Condition:  [1]  [ CSelf0[表示位置[0-..]] == 10   ] Case↓
+ |■Set Variable: CSelf22[表示先X] = 160 + 0 
+ |■Set Variable: CSelf23[表示先Y] = 130 + 0 
+ |■
+-◇Condition:  [2]  [ CSelf0[表示位置[0-..]] == 11   ] Case↓
+ |■Set Variable: CSelf22[表示先X] = 116 + 0 
+ |■Set Variable: CSelf23[表示先Y] = 133 + 0 
+ |■
+-◇Condition:  [3]  [ CSelf0[表示位置[0-..]] == 12   ] Case↓
+ |■Set Variable: CSelf22[表示先X] = 204 + 0 
+ |■Set Variable: CSelf23[表示先Y] = 133 + 0 
+ |■
+◇End◇
+■Condition (Number):   [1] CSelf0[表示位置[0-..]] ==  13  /  [2] CSelf0[表示位置[0-..]] ==  14  /  [3] CSelf0[表示位置[0-..]] ==  15  
+-◇Condition:  [1]  [ CSelf0[表示位置[0-..]] == 13   ] Case↓
+ |■Set Variable: CSelf22[表示先X] = 72 + 0 
+ |■Set Variable: CSelf23[表示先Y] = 136 + 0 
+ |■
+-◇Condition:  [2]  [ CSelf0[表示位置[0-..]] == 14   ] Case↓
+ |■Set Variable: CSelf22[表示先X] = 248 + 0 
+ |■Set Variable: CSelf23[表示先Y] = 136 + 0 
+ |■
+-◇Condition:  [3]  [ CSelf0[表示位置[0-..]] == 15   ] Case↓
+ |■Set Variable: CSelf22[表示先X] = 28 + 0 
+ |■Set Variable: CSelf23[表示先Y] = 140 + 0 
+ |■
+◇End◇
+■Condition (Number):   [1] CSelf0[表示位置[0-..]] ==  16  
+-◇Condition:  [1]  [ CSelf0[表示位置[0-..]] == 16   ] Case↓
+ |■Set Variable: CSelf22[表示先X] = 292 + 0 
+ |■Set Variable: CSelf23[表示先Y] = 140 + 0 
+ |■
+◇End◇
+▼ 表示元座標の設定
+■Set Variable: CSelf20[表示元X] = CSelf22[表示先X] + 0 
+■Set Variable: CSelf21[表示元Y] = -120 + 0 
+▼ 倍率変更補正
+■Set Variable: CSelf20[表示元X] *= CSelf88[座標倍率X[x10]] + 0 
+■Set Variable: CSelf21[表示元Y] *= CSelf89[座標倍率Y[x10]] + 0 
+■Set Variable: CSelf22[表示先X] *= CSelf88[座標倍率X[x10]] + 0 
+■Set Variable: CSelf23[表示先Y] *= CSelf89[座標倍率Y[x10]] + 0 
+■Set Variable: CSelf20[表示元X] to CSelf23[表示先Y] /= 10 + 0 
+▼ ここで格納
+■Write to DB(Var): VarDB[ "Base System Variables":35:0 ] (18:Status Display Start X:Number) =  CSelf20[表示元X]
+■Write to DB(Var): VarDB[ "Base System Variables":36:0 ] (18:Status Display Start Y:Number) =  CSelf21[表示元Y]
+■Write to DB(Var): VarDB[ "Base System Variables":37:0 ] (18:Status Display End X:Number) =  CSelf22[表示先X]
+■Write to DB(Var): VarDB[ "Base System Variables":38:0 ] (18:Status Display End Y:Number) =  CSelf23[表示先Y]
+■
+[COMMAND_TEXT_END]

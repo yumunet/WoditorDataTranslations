@@ -1,0 +1,71 @@
+=========================================================
+  WOLF RPG Editor – Terms of Use for Empty Data Assets
+=========================================================
+
+――――――――――――――――――――――――――――――――――――――――――――
+Asset Contributors
+
+- Character Sprite Assets
+  すう(Suu)
+  pochi (Helped make 8-direction versions and parts, and also animal and monster character sprites)
+  mel (Ship sprite included with the sample game)
+  ウロボロス(Uroboros) (Camp sprite, waterfall tile, and monster character sprites included with the sample game)
+  たぴす(Tapisu) (Character sprites), まきば(Makiba) (Character sprites)
+
+- Map Tile Assets
+  ぴぽ(Pipo) (https://pipoya.net/blog/)
+
+- Enemy Image Assets
+  GD (From WOLF RPG Editor Wiki)
+  * When distributing these assets, you must include the creator's name.
+    When redistributing them as assets or modifying and distributing them as assets,
+    please be sure to include the creator's name.
+
+- MIDI Assets (Filenames have been changed for convenience.)
+  タクミ(Takumi)
+  ユノ(Yuno)
+  鏡読み(Kagamiyomi) (From WOLF RPG Editor Wiki)
+  Koya
+  黒うさぎ(Kuro Usagi) (From WOLF RPG Editor Wiki)
+  momi (From WOLF RPG Editor Wiki)
+
+- Sound Effect Assets (Filenames have been changed for convenience.)
+  panop
+
+- Icon Assets
+  枯れ草(Karekusa) (From WOLF RPG Editor Asset Thread)
+
+- Battle Animation Effects
+  panop
+  Akira (From WOLF RPG Editor Asset Thread)
+
+- Mask Images, Mask Image Usage Examples
+  K-Shin07
+
+――――――――――――――――――――――――――――――――――――――――――――
+
+* Rights to the assets included in this data are as follows:
+
+  - Image Assets: May be reused, modified, and used outside of WOLF RPG Editor.
+   → However, when redistributing the enemy character assets created by GD as assets,
+     or distributing modified versions as assets, you must include the creator's name
+  - MIDI Assets: May be reused only.
+  - WAV/OGG Assets: May be reused, modified, and used outside of WOLF RPG Editor.
+
+  * "Reuse" refers to including the files in a game.
+  * "Modify" refers to making changes to the files for use in your own game.
+
+
+- Games using these assets may be sold.
+  However, the sale of the assets themselves
+  and any commercial use intended to provide them as assets is prohibited.
+
+- "May be used outside of WOLF RPG Editor" means they may also be used for
+  works created with other game engines. [Added on 01/28/2025]
+
+- Bundling the sample game assets with self-made software for distribution is prohibited. [Added on 01/28/2025]
+  However, users may download the sample game assets and use them
+  in works created with such software (they may be used outside of WOLF RPG Editor).
+
+
+* Redistribution of modified versions of the Base System is also permitted.

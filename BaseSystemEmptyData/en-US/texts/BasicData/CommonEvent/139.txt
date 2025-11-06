@@ -1,0 +1,625 @@
+COMMON_ID=139
+COMMON_NAME=X[Bat]Update States
+COMMAND_COLOR=6
+TRIGGER=32
+TRIGGER_TARGET=2000000
+TRIGGER_VAL=0
+MEMO=
+VALINPUT_NUM=3
+STRINPUT_NUM=0
+VALINPUT_NAME_NUM=11
+VALINPUT_NAME_0=対象スロット
+VALINPUT_NAME_1=処理タイミング
+VALINPUT_NAME_2=┗[3]攻･精ON?
+VALINPUT_NAME_3=
+VALINPUT_NAME_4=
+VALINPUT_NAME_5=
+VALINPUT_NAME_6=
+VALINPUT_NAME_7=
+VALINPUT_NAME_8=
+VALINPUT_NAME_9=
+VALINPUT_NAME_10=
+LOADTYPE_NUM=10
+LOADTYPE0=0
+LOADTYPE1=2
+LOADTYPE2=2
+LOADTYPE3=0
+LOADTYPE4=0
+LOADTYPE5=0
+LOADTYPE6=0
+LOADTYPE7=0
+LOADTYPE8=0
+LOADTYPE9=0
+CHOICE_STR_NUM=10
+CHOICE_STR_0_NUM=0
+CHOICE_STR_1_NUM=4
+CHOICE_STR_1_0=自分の番の直前
+CHOICE_STR_1_1=自分の番が終わったとき
+CHOICE_STR_1_2=ターン終了時
+CHOICE_STR_1_3=攻撃を受けたとき
+CHOICE_STR_2_NUM=4
+CHOICE_STR_2_0=攻撃力も精神攻撃力もない
+CHOICE_STR_2_1=攻撃力のみ
+CHOICE_STR_2_2=精神攻撃のみ
+CHOICE_STR_2_3=攻撃＆精神ダブル
+CHOICE_STR_3_NUM=0
+CHOICE_STR_4_NUM=0
+CHOICE_STR_5_NUM=0
+CHOICE_STR_6_NUM=0
+CHOICE_STR_7_NUM=0
+CHOICE_STR_8_NUM=0
+CHOICE_STR_9_NUM=0
+CHOICE_VAL_NUM=10
+CHOICE_VAL_0_NUM=0
+CHOICE_VAL_1_NUM=4
+CHOICE_VAL_1_0=0
+CHOICE_VAL_1_1=1
+CHOICE_VAL_1_2=2
+CHOICE_VAL_1_3=3
+CHOICE_VAL_2_NUM=4
+CHOICE_VAL_2_0=0
+CHOICE_VAL_2_1=1
+CHOICE_VAL_2_2=2
+CHOICE_VAL_2_3=3
+CHOICE_VAL_3_NUM=0
+CHOICE_VAL_4_NUM=0
+CHOICE_VAL_5_NUM=0
+CHOICE_VAL_6_NUM=0
+CHOICE_VAL_7_NUM=0
+CHOICE_VAL_8_NUM=0
+CHOICE_VAL_9_NUM=0
+DEFAULT_VAL_NUM=5
+DEFAULT_VAL_0=0
+DEFAULT_VAL_1=0
+DEFAULT_VAL_2=0
+DEFAULT_VAL_3=0
+DEFAULT_VAL_4=0
+RETURN_VAL_NAME=
+RETURN_VAL_TARGET=-1
+CSELF_NAME_0=対象スロット
+CSELF_NAME_1=処理タイミング
+CSELF_NAME_2=┗[3]攻･精ON?
+CSELF_NAME_3=
+CSELF_NAME_4=
+CSELF_NAME_5=
+CSELF_NAME_6=
+CSELF_NAME_7=
+CSELF_NAME_8=
+CSELF_NAME_9=
+CSELF_NAME_10=一時変数A
+CSELF_NAME_11=一時変数B
+CSELF_NAME_12=一時変数C
+CSELF_NAME_13=
+CSELF_NAME_14=
+CSELF_NAME_15=
+CSELF_NAME_16=
+CSELF_NAME_17=回復orダメージ？
+CSELF_NAME_18=表示座標X
+CSELF_NAME_19=表示座標Y
+CSELF_NAME_20=処理中スロット
+CSELF_NAME_21=処理中順番
+CSELF_NAME_22=パーティーメンバー数
+CSELF_NAME_23=次にステ消去するまでの歩数
+CSELF_NAME_24=HP自然変動値
+CSELF_NAME_25=SP自然変動値
+CSELF_NAME_26=状態有り？
+CSELF_NAME_27=状態全個数
+CSELF_NAME_28=状態ID
+CSELF_NAME_29=残りターン数
+CSELF_NAME_30=減算ターン
+CSELF_NAME_31=
+CSELF_NAME_32=最大HP
+CSELF_NAME_33=最大SP
+CSELF_NAME_34=
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=物理攻撃で回復？
+CSELF_NAME_38=精神攻撃で回復？
+CSELF_NAME_39=回復タイミング
+CSELF_NAME_40=状態変化有り？
+CSELF_NAME_41=効果量
+CSELF_NAME_42=
+CSELF_NAME_43=
+CSELF_NAME_44=
+CSELF_NAME_45=
+CSELF_NAME_46=
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
+CSELF_NAME_50=
+CSELF_NAME_51=
+CSELF_NAME_52=
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
+CSELF_NAME_56=
+CSELF_NAME_57=
+CSELF_NAME_58=
+CSELF_NAME_59=戦闘不能判定
+CSELF_NAME_60=
+CSELF_NAME_61=
+CSELF_NAME_62=
+CSELF_NAME_63=
+CSELF_NAME_64=
+CSELF_NAME_65=
+CSELF_NAME_66=
+CSELF_NAME_67=
+CSELF_NAME_68=
+CSELF_NAME_69=
+CSELF_NAME_70=
+CSELF_NAME_71=
+CSELF_NAME_72=
+CSELF_NAME_73=
+CSELF_NAME_74=
+CSELF_NAME_75=
+CSELF_NAME_76=
+CSELF_NAME_77=
+CSELF_NAME_78=
+CSELF_NAME_79=
+CSELF_NAME_80=
+CSELF_NAME_81=
+CSELF_NAME_82=
+CSELF_NAME_83=
+CSELF_NAME_84=
+CSELF_NAME_85=
+CSELF_NAME_86=
+CSELF_NAME_87=
+CSELF_NAME_88=
+CSELF_NAME_89=
+CSELF_NAME_90=
+CSELF_NAME_91=
+CSELF_NAME_92=
+CSELF_NAME_93=
+CSELF_NAME_94=
+CSELF_NAME_95=
+CSELF_NAME_96=
+CSELF_NAME_97=
+CSELF_NAME_98=
+CSELF_NAME_99=
+COMMAND_NUM=220
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("　状態異常による効果を発動したり、ターン経過による自然治癒を処理します。")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("　「自分の番が来たとき」、「ターン終了時」、など、")
+[103][0,1]<0>()("　タイミングに応じて処理する状態は変わってきます。")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("　ターン終了時の更新では、戦闘中の、すべての状態異常の残りターン数を1減らします。")
+[103][0,1]<0>()("　残りターンが0になっていたら、回復させます。")
+[103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
+[103][0,1]<0>()("数値取得")
+[121][4,0]<0>(1600040,0,0,0)()
+[250][5,4]<0>(8,-1,12,70144,1600027)("","States","","")
+[179][1,0]<0>(1)()
+[111][7,0]<1>(2,1600000,10,4,1600000,10,1)()
+[401][1,0]<1>(1)()
+[300][3,1]<2>(0,1,1600000)("X[Bat]Ally Box: Calc Position")
+[0][0,0]<2>()()
+[401][1,0]<1>(2)()
+[300][3,1]<2>(0,1,1600000)("X[Bat]Enemy: Calc Position")
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[250][5,4]<1>(21,37,0,69632,1600018)("","Base System Variables","","")
+[250][5,4]<1>(21,38,0,69632,1600019)("","Base System Variables","","")
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[103][0,1]<0>()("全状態に対してループ処理")
+[121][4,0]<0>(1600020,1600000,0,0)()
+[111][4,0]<0>(1,1600020,0,1)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<1>()("「ターン終了」なら、HP・SPの自然回復を行う")
+[103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[111][4,0]<1>(1,1600001,2,2)()
+[401][1,0]<1>(1)()
+[300][5,1]<2>(0,16777218,1600000,10,1600024)("X[Bat]Get Basic State")
+[300][5,1]<2>(0,16777218,1600000,11,1600025)("X[Bat]Get Basic State")
+[121][4,0]<2>(1600017,0,0,0)()
+[111][7,0]<2>(2,1600024,1,1,1600024,-1,3)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("HP回復")
+[121][4,0]<3>(1600041,1600024,0,0)()
+[300][5,1]<3>(0,3,1600020,22,1600041)("X[Bat]Change Parameter")
+[300][6,1]<3>(0,4,1600018,1600019,1600041,1)("X[Bat]Display Dmg/Recovery Popup")
+[121][4,0]<3>(1600017,1,0,0)()
+[0][0,0]<3>()()
+[401][1,0]<2>(2)()
+[103][0,1]<3>()("HPダメージ")
+[121][4,0]<3>(1600041,1600024,0,0)()
+[300][5,1]<3>(0,3,1600020,22,1600041)("X[Bat]Change Parameter")
+[121][4,0]<3>(1600041,1600024,-1,8192)()
+[300][6,1]<3>(0,4,1600018,1600019,1600041,0)("X[Bat]Display Dmg/Recovery Popup")
+[121][4,0]<3>(1600017,-1,0,0)()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[111][7,0]<2>(2,1600025,1,1,1600025,-1,3)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("SP回復")
+[121][4,0]<3>(1600041,1600025,0,0)()
+[300][5,1]<3>(0,3,1600020,23,1600041)("X[Bat]Change Parameter")
+[300][6,1]<3>(0,4,1600018,1600019,1600041,3)("X[Bat]Display Dmg/Recovery Popup")
+[121][4,0]<3>(1600017,1,0,0)()
+[0][0,0]<3>()()
+[401][1,0]<2>(2)()
+[103][0,1]<3>()("SPダメージ")
+[121][4,0]<3>(1600041,1600025,0,0)()
+[300][5,1]<3>(0,3,1600020,23,1600041)("X[Bat]Change Parameter")
+[121][4,0]<3>(1600041,1600025,-1,8192)()
+[300][6,1]<3>(0,4,1600018,1600019,1600041,2)("X[Bat]Display Dmg/Recovery Popup")
+[121][4,0]<3>(1600017,-1,0,0)()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[111][7,0]<2>(2,1600017,1,1,1600017,-1,3)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("回復時のエフェクト")
+[111][7,0]<3>(2,1600020,9,3,1600020,10,1)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("味方の場合")
+[300][5,1]<4>(0,3,30,1600020,1600020)("X[Bat]Ally Box: Draw One")
+[0][0,0]<4>()()
+[401][1,0]<3>(2)()
+[103][0,1]<4>()("敵の場合")
+[300][4,1]<4>(0,2,30,1600020)("X[Bat]Enemy: Draw One")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[401][1,0]<2>(2)()
+[103][0,1]<3>()("ダメージのエフェクト")
+[111][7,0]<3>(2,1600020,9,3,1600020,10,1)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("味方の場合")
+[300][5,1]<4>(0,3,21,1600020,1600020)("X[Bat]Ally Box: Draw One")
+[0][0,0]<4>()()
+[401][1,0]<3>(2)()
+[103][0,1]<4>()("敵の場合")
+[300][4,1]<4>(0,2,21,1600020)("X[Bat]Enemy: Draw One")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[111][4,0]<2>(1,1600017,0,5)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("何らかの変化があったらゲージを更新")
+[111][7,0]<3>(2,1600020,9,3,1600020,10,1)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("味方の場合")
+[300][4,1]<4>(0,2,1600020,1)("X[Bat]CalcTempStats <StatusEffects>")
+[300][5,1]<4>(0,3,5,1600020,1600020)("X[Bat]Ally Box: Draw One")
+[103][0,1]<4>()("新たに戦闘不能になってたら撃破処理")
+[300][5,1]<4>(0,16777218,1600020,0,1600059)("X[Bat]Get Basic State")
+[111][4,0]<4>(1,1600059,1,1)()
+[401][1,0]<4>(1)()
+[103][0,1]<5>()("効果音")
+[300][3,1]<5>(0,1,52)("X[Com]Play System Sound")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[0][0,0]<4>()()
+[401][1,0]<3>(2)()
+[103][0,1]<4>()("敵の場合")
+[300][4,1]<4>(0,2,1600020,1)("X[Bat]CalcTempStats <StatusEffects>")
+[300][4,1]<4>(0,2,2,1600020)("X[Bat]Enemy: Draw One")
+[300][5,1]<4>(0,16777218,1600020,0,1600059)("X[Bat]Get Basic State")
+[111][4,0]<4>(17,1600059,1,1)()
+[401][1,0]<4>(1)()
+[103][0,1]<5>()("敵なら敵撃破処理")
+[300][4,1]<5>(0,2,1600020,0)("X[Bat]Defeat Enemy")
+[300][3,1]<5>(0,1,52)("X[Com]Play System Sound")
+[300][3,1]<5>(0,1,20)("X[Com]Wait 2(PressKeyToSpdUp)")
+[0][0,0]<5>()()
+[420][1,0]<4>(0)()
+[103][0,1]<5>()("まだ生きてた場合は変身判定")
+[180][1,0]<5>(11)()
+[300][4,1]<5>(0,2,1600020,0)("X[Bat]Attempt Transform")
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<1>()("状態自然回復処理（タイミングが一致した状態異常のターン減少）")
+[103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[121][4,0]<1>(1600028,-1,0,0)()
+[179][1,0]<1>(1600027)()
+[121][4,0]<2>(1600028,1,0,256)()
+[103][0,1]<2>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<2>()("回復タイミングが一致するかチェック")
+[103][0,1]<2>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[250][5,4]<2>(8,1600028,6,332288,1600039)("","States","","Removal Timing")
+[111][4,0]<2>(1,1600039,1600001,2)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("終了タイミングが一致したら、ターンを減らす")
+[250][5,4]<3>(13,1600020,1600028,69632,1600029)("","×┣State List","","")
+[111][7,0]<3>(2,1600029,1,2,1600029,2,1)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("残り1ターンなら回復させる")
+[103][0,1]<4>()("状態を消去")
+[300][6,1]<4>(0,4,1600020,1600028,0,1)("X[Bat]Add/Remove State")
+[121][4,0]<4>(1600040,1,0,1536)()
+[0][0,0]<4>()()
+[401][1,0]<3>(2)()
+[103][0,1]<4>()("ターン数を減らす")
+[250][5,4]<4>(13,1600020,1600028,65568,1)("","×┣State List","","")
+[250][5,4]<4>(13,1600020,1600028,65632,0)("","×┣State List","","")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[103][0,1]<2>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<2>()("攻撃を受けて回復する場合はチェック")
+[103][0,1]<2>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[111][4,0]<2>(1,1600001,3,2)()
+[401][1,0]<2>(1)()
+[121][4,0]<3>(1600037,0,0,0)()
+[121][4,0]<3>(1600038,0,0,0)()
+[111][4,0]<3>(1,1600002,1,6)()
+[401][1,0]<3>(1)()
+[250][5,4]<4>(8,1600028,8,332288,1600037)("","States","","┏ Removed by Physical Dmg")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[111][4,0]<3>(1,1600002,2,6)()
+[401][1,0]<3>(1)()
+[250][5,4]<4>(8,1600028,9,332288,1600038)("","States","","┗ Removed by Magic Dmg   ")
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[121][4,0]<3>(1600037,0,99,25088)()
+[121][4,0]<3>(1600038,0,99,25088)()
+[111][7,0]<3>(2,1600037,1,1,1600038,1,1)()
+[401][1,0]<3>(1)()
+[103][0,1]<4>()("状態を回復する")
+[300][6,1]<4>(0,4,1600020,1600028,0,1)("X[Bat]Add/Remove State")
+[121][4,0]<4>(1600040,1,0,1536)()
+[0][0,0]<4>()()
+[401][1,0]<3>(2)()
+[103][0,1]<4>()("状態を回復する")
+[300][6,1]<4>(0,4,1600020,1600028,0,1)("X[Bat]Add/Remove State")
+[121][4,0]<4>(1600040,1,0,1536)()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[498][0,0]<1>()()
+[103][0,1]<1>()(" ")
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[103][0,1]<0>()("一応、状態名を更新する")
+[300][4,1]<0>(0,2,1600000,1)("X[Bat]CalcTempStats <StatusEffects>")
+[111][4,0]<0>(1,1600040,1,2)()
+[401][1,0]<0>(1)()
+[111][4,0]<1>(1,1600000,10,4)()
+[401][1,0]<1>(1)()
+[300][5,1]<2>(0,3,5,1600000,1600000)("X[Bat]Ally Box: Draw One")
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ ―――――――――――――――――――――――――――――――――――
+▼ [Process Overview]
+▼ 　状態異常による効果を発動したり、ターン経過による自然治癒を処理します。
+▼  
+▼ 　「自分の番が来たとき」、「ターン終了時」、など、
+▼ 　タイミングに応じて処理する状態は変わってきます。
+▼  
+▼ 　ターン終了時の更新では、戦闘中の、すべての状態異常の残りターン数を1減らします。
+▼ 　残りターンが0になっていたら、回復させます。
+▼ ―――――――――――――――――――――――――――――――――――
+▼ 数値取得
+■Set Variable: CSelf40[状態変化有り？] = 0 + 0 
+■Load DB(User):  CSelf27[状態全個数] = UserDB[Type "States"(8)'s Data Count]
+■Repeat Loop [ 1 ] Times
+ |■Condition (Number):   [1] CSelf0[対象スロット] <  10  /  [2] CSelf0[対象スロット] >=  10  
+ |-◇Condition:  [1]  [ CSelf0[対象スロット] < 10   ] Case↓
+ | |■Call Event [Name]: ["X[Bat]Ally Box: Calc Position"] <CommonEv 174>  / CSelf0[対象スロット]
+ | |■
+ |-◇Condition:  [2]  [ CSelf0[対象スロット] >= 10   ] Case↓
+ | |■Call Event [Name]: ["X[Bat]Enemy: Calc Position"] <CommonEv 175>  / CSelf0[対象スロット]
+ | |■
+ |◇End◇
+ |■Load DB(Var):  CSelf18[表示座標X] = VarDB[ "Base System Variables":37:0 ] (18:Status Display End X:Number) 
+ |■Load DB(Var):  CSelf19[表示座標Y] = VarDB[ "Base System Variables":38:0 ] (18:Status Display End Y:Number) 
+ |■
+◇Loop End Point◇◇
+▼ 全状態に対してループ処理
+■Set Variable: CSelf20[処理中スロット] = CSelf0[対象スロット] + 0 
+■Condition (Number):   [1] CSelf20[処理中スロット] >=  0  
+-◇Condition:  [1]  [ CSelf20[処理中スロット] >= 0   ] Case↓
+ |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ |▼ 「ターン終了」なら、HP・SPの自然回復を行う
+ |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ |■Condition (Number):   [1] CSelf1[処理タイミング] ==  2  
+ |-◇Condition:  [1]  [ CSelf1[処理タイミング] == 2   ] Case↓
+ | |■Call Event [Name]: CSelf24[HP自然変動値] = ["X[Bat]Get Basic State"] <CommonEv 176>  / CSelf0[対象スロット] / 10:HP自然回復値
+ | |■Call Event [Name]: CSelf25[SP自然変動値] = ["X[Bat]Get Basic State"] <CommonEv 176>  / CSelf0[対象スロット] / 11:SP自然回復値
+ | |■Set Variable: CSelf17[回復orダメージ？] = 0 + 0 
+ | |■Condition (Number):   [1] CSelf24[HP自然変動値] >=  1  /  [2] CSelf24[HP自然変動値] <=  -1  
+ | |-◇Condition:  [1]  [ CSelf24[HP自然変動値] >= 1   ] Case↓
+ | | |▼ HP回復
+ | | |■Set Variable: CSelf41[効果量] = CSelf24[HP自然変動値] + 0 
+ | | |■Call Event [Name]: ["X[Bat]Change Parameter"] <CommonEv 135>  / CSelf20[処理中スロット] / 22:HP / CSelf41[効果量]
+ | | |■Call Event [Name]: ["X[Bat]Display Dmg/Recovery Popup"] <CommonEv 181>  / CSelf18[表示座標X] / CSelf19[表示座標Y] / CSelf41[効果量] / 1:HP回復
+ | | |■Set Variable: CSelf17[回復orダメージ？] = 1 + 0 
+ | | |■
+ | |-◇Condition:  [2]  [ CSelf24[HP自然変動値] <= -1   ] Case↓
+ | | |▼ HPダメージ
+ | | |■Set Variable: CSelf41[効果量] = CSelf24[HP自然変動値] + 0 
+ | | |■Call Event [Name]: ["X[Bat]Change Parameter"] <CommonEv 135>  / CSelf20[処理中スロット] / 22:HP / CSelf41[効果量]
+ | | |■Set Variable: CSelf41[効果量] = CSelf24[HP自然変動値] * -1 
+ | | |■Call Event [Name]: ["X[Bat]Display Dmg/Recovery Popup"] <CommonEv 181>  / CSelf18[表示座標X] / CSelf19[表示座標Y] / CSelf41[効果量] / 0:HPダメージ
+ | | |■Set Variable: CSelf17[回復orダメージ？] = -1 + 0 
+ | | |■
+ | |◇End◇
+ | |■Condition (Number):   [1] CSelf25[SP自然変動値] >=  1  /  [2] CSelf25[SP自然変動値] <=  -1  
+ | |-◇Condition:  [1]  [ CSelf25[SP自然変動値] >= 1   ] Case↓
+ | | |▼ SP回復
+ | | |■Set Variable: CSelf41[効果量] = CSelf25[SP自然変動値] + 0 
+ | | |■Call Event [Name]: ["X[Bat]Change Parameter"] <CommonEv 135>  / CSelf20[処理中スロット] / 23:SP / CSelf41[効果量]
+ | | |■Call Event [Name]: ["X[Bat]Display Dmg/Recovery Popup"] <CommonEv 181>  / CSelf18[表示座標X] / CSelf19[表示座標Y] / CSelf41[効果量] / 3:SP回復
+ | | |■Set Variable: CSelf17[回復orダメージ？] = 1 + 0 
+ | | |■
+ | |-◇Condition:  [2]  [ CSelf25[SP自然変動値] <= -1   ] Case↓
+ | | |▼ SPダメージ
+ | | |■Set Variable: CSelf41[効果量] = CSelf25[SP自然変動値] + 0 
+ | | |■Call Event [Name]: ["X[Bat]Change Parameter"] <CommonEv 135>  / CSelf20[処理中スロット] / 23:SP / CSelf41[効果量]
+ | | |■Set Variable: CSelf41[効果量] = CSelf25[SP自然変動値] * -1 
+ | | |■Call Event [Name]: ["X[Bat]Display Dmg/Recovery Popup"] <CommonEv 181>  / CSelf18[表示座標X] / CSelf19[表示座標Y] / CSelf41[効果量] / 2:SPダメージ
+ | | |■Set Variable: CSelf17[回復orダメージ？] = -1 + 0 
+ | | |■
+ | |◇End◇
+ | |■Condition (Number):   [1] CSelf17[回復orダメージ？] >=  1  /  [2] CSelf17[回復orダメージ？] <=  -1  
+ | |-◇Condition:  [1]  [ CSelf17[回復orダメージ？] >= 1   ] Case↓
+ | | |▼ 回復時のエフェクト
+ | | |■Condition (Number):   [1] CSelf20[処理中スロット] <=  9  /  [2] CSelf20[処理中スロット] >=  10  
+ | | |-◇Condition:  [1]  [ CSelf20[処理中スロット] <= 9   ] Case↓
+ | | | |▼ 味方の場合
+ | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 30:回復エフェクト / CSelf20[処理中スロット] / CSelf20[処理中スロット]
+ | | | |■
+ | | |-◇Condition:  [2]  [ CSelf20[処理中スロット] >= 10   ] Case↓
+ | | | |▼ 敵の場合
+ | | | |■Call Event [Name]: ["X[Bat]Enemy: Draw One"] <CommonEv 179>  / 30:回復 / CSelf20[処理中スロット]
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |-◇Condition:  [2]  [ CSelf17[回復orダメージ？] <= -1   ] Case↓
+ | | |▼ ダメージのエフェクト
+ | | |■Condition (Number):   [1] CSelf20[処理中スロット] <=  9  /  [2] CSelf20[処理中スロット] >=  10  
+ | | |-◇Condition:  [1]  [ CSelf20[処理中スロット] <= 9   ] Case↓
+ | | | |▼ 味方の場合
+ | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 21:ダメージエフェクトLv1 / CSelf20[処理中スロット] / CSelf20[処理中スロット]
+ | | | |■
+ | | |-◇Condition:  [2]  [ CSelf20[処理中スロット] >= 10   ] Case↓
+ | | | |▼ 敵の場合
+ | | | |■Call Event [Name]: ["X[Bat]Enemy: Draw One"] <CommonEv 179>  / 21:ダメージレベル1 / CSelf20[処理中スロット]
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇End◇
+ | |■Condition (Number):   [1] CSelf17[回復orダメージ？] !=  0  
+ | |-◇Condition:  [1]  [ CSelf17[回復orダメージ？] != 0   ] Case↓
+ | | |▼ 何らかの変化があったらゲージを更新
+ | | |■Condition (Number):   [1] CSelf20[処理中スロット] <=  9  /  [2] CSelf20[処理中スロット] >=  10  
+ | | |-◇Condition:  [1]  [ CSelf20[処理中スロット] <= 9   ] Case↓
+ | | | |▼ 味方の場合
+ | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf20[処理中スロット] / 1:状態名のみ計算
+ | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 5:表示[更新＋ゲージアニメ] / CSelf20[処理中スロット] / CSelf20[処理中スロット]
+ | | | |▼ 新たに戦闘不能になってたら撃破処理
+ | | | |■Call Event [Name]: CSelf59[戦闘不能判定] = ["X[Bat]Get Basic State"] <CommonEv 176>  / CSelf20[処理中スロット] / 0:戦闘不能状態
+ | | | |■Condition (Number):   [1] CSelf59[戦闘不能判定] >=  1  
+ | | | |-◇Condition:  [1]  [ CSelf59[戦闘不能判定] >= 1   ] Case↓
+ | | | | |▼ 効果音
+ | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 52:Enemy Defeat Sound
+ | | | | |■
+ | | | |◇End◇
+ | | | |■
+ | | |-◇Condition:  [2]  [ CSelf20[処理中スロット] >= 10   ] Case↓
+ | | | |▼ 敵の場合
+ | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf20[処理中スロット] / 1:状態名のみ計算
+ | | | |■Call Event [Name]: ["X[Bat]Enemy: Draw One"] <CommonEv 179>  / 2:更新[ゲージのみ] / CSelf20[処理中スロット]
+ | | | |■Call Event [Name]: CSelf59[戦闘不能判定] = ["X[Bat]Get Basic State"] <CommonEv 176>  / CSelf20[処理中スロット] / 0:戦闘不能状態
+ | | | |■Condition (Number):   [1] CSelf59[戦闘不能判定] >=  1  
+ | | | |-◇Condition:  [1]  [ CSelf59[戦闘不能判定] >= 1   ] Case↓
+ | | | | |▼ 敵なら敵撃破処理
+ | | | | |■Call Event [Name]: ["X[Bat]Defeat Enemy"] <CommonEv 171>  / CSelf20[処理中スロット] / 0:通常撃破[EXPその他入手]
+ | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 52:Enemy Defeat Sound
+ | | | | |■Call Event [Name]: ["X[Com]Wait 2(PressKeyToSpdUp)"] <CommonEv 60>  / 20
+ | | | | |■
+ | | | |-◇Else
+ | | | | |▼ まだ生きてた場合は変身判定
+ | | | | |■Wait: 11 Frames
+ | | | | |■Call Event [Name]: ["X[Bat]Attempt Transform"] <CommonEv 168>  / CSelf20[処理中スロット] / 0:ダメージ時
+ | | | | |■
+ | | | |◇End◇
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇End◇
+ | |■
+ |◇End◇
+ |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ |▼ 状態自然回復処理（タイミングが一致した状態異常のターン減少）
+ |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ |■Set Variable: CSelf28[状態ID] = -1 + 0 
+ |■Repeat Loop [ CSelf27[状態全個数] ] Times
+ | |■Set Variable: CSelf28[状態ID] += 1 + 0 
+ | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ | |▼ 回復タイミングが一致するかチェック
+ | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ | |■Load DB(User):  CSelf39[回復タイミング] = UserDB[ "States":CSelf28[状態ID]:"Removal Timing" ] (8:-:6) 
+ | |■Condition (Number):   [1] CSelf39[回復タイミング] ==  CSelf1[処理タイミング]  
+ | |-◇Condition:  [1]  [ CSelf39[回復タイミング] == CSelf1[処理タイミング]   ] Case↓
+ | | |▼ 終了タイミングが一致したら、ターンを減らす
+ | | |■Load DB(Var):  CSelf29[残りターン数] = VarDB[ "×┣State List":CSelf20[処理中スロット]:CSelf28[状態ID] ] (13:-:-) 
+ | | |■Condition (Number):   [1] CSelf29[残りターン数] ==  1  /  [2] CSelf29[残りターン数] >=  2  
+ | | |-◇Condition:  [1]  [ CSelf29[残りターン数] == 1   ] Case↓
+ | | | |▼ 残り1ターンなら回復させる
+ | | | |▼ 状態を消去
+ | | | |■Call Event [Name]: ["X[Bat]Add/Remove State"] <CommonEv 137>  / CSelf20[処理中スロット] / CSelf28[状態ID] / 0:消去 / 1:メッセージ有り
+ | | | |■Set Variable: CSelf40[状態変化有り？] Lower Bound= 1 + 0 
+ | | | |■
+ | | |-◇Condition:  [2]  [ CSelf29[残りターン数] >= 2   ] Case↓
+ | | | |▼ ターン数を減らす
+ | | | |■Write to DB(Var): VarDB[ "×┣State List":CSelf20[処理中スロット]:CSelf28[状態ID] ] (13:-:-) -=  1
+ | | | |■Write to DB(Var): VarDB[ "×┣State List":CSelf20[処理中スロット]:CSelf28[状態ID] ] (13:-:-) Lower Bound  0
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇End◇
+ | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ | |▼ 攻撃を受けて回復する場合はチェック
+ | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+ | |■Condition (Number):   [1] CSelf1[処理タイミング] ==  3  
+ | |-◇Condition:  [1]  [ CSelf1[処理タイミング] == 3   ] Case↓
+ | | |■Set Variable: CSelf37[物理攻撃で回復？] = 0 + 0 
+ | | |■Set Variable: CSelf38[精神攻撃で回復？] = 0 + 0 
+ | | |■Condition (Number):   [1] CSelf2[┗[3]攻･精ON?] &  1  
+ | | |-◇Condition:  [1]  [ CSelf2[┗[3]攻･精ON?] & 1   ] Case↓
+ | | | |■Load DB(User):  CSelf37[物理攻撃で回復？] = UserDB[ "States":CSelf28[状態ID]:"┏ Removed by Physical Dmg" ] (8:-:8) 
+ | | | |■
+ | | |◇End◇
+ | | |■Condition (Number):   [1] CSelf2[┗[3]攻･精ON?] &  2  
+ | | |-◇Condition:  [1]  [ CSelf2[┗[3]攻･精ON?] & 2   ] Case↓
+ | | | |■Load DB(User):  CSelf38[精神攻撃で回復？] = UserDB[ "States":CSelf28[状態ID]:"┗ Removed by Magic Dmg   " ] (8:-:9) 
+ | | | |■
+ | | |◇End◇
+ | | |■Set Variable: CSelf37[物理攻撃で回復？] -= 0  to  99 
+ | | |■Set Variable: CSelf38[精神攻撃で回復？] -= 0  to  99 
+ | | |■Condition (Number):   [1] CSelf37[物理攻撃で回復？] >=  1  /  [2] CSelf38[精神攻撃で回復？] >=  1  
+ | | |-◇Condition:  [1]  [ CSelf37[物理攻撃で回復？] >= 1   ] Case↓
+ | | | |▼ 状態を回復する
+ | | | |■Call Event [Name]: ["X[Bat]Add/Remove State"] <CommonEv 137>  / CSelf20[処理中スロット] / CSelf28[状態ID] / 0:消去 / 1:メッセージ有り
+ | | | |■Set Variable: CSelf40[状態変化有り？] Lower Bound= 1 + 0 
+ | | | |■
+ | | |-◇Condition:  [2]  [ CSelf38[精神攻撃で回復？] >= 1   ] Case↓
+ | | | |▼ 状態を回復する
+ | | | |■Call Event [Name]: ["X[Bat]Add/Remove State"] <CommonEv 137>  / CSelf20[処理中スロット] / CSelf28[状態ID] / 0:消去 / 1:メッセージ有り
+ | | | |■Set Variable: CSelf40[状態変化有り？] Lower Bound= 1 + 0 
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇End◇
+ | |■
+ |◇Loop End Point◇◇
+ |▼  
+ |■
+◇End◇
+▼ 一応、状態名を更新する
+■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf0[対象スロット] / 1:状態名のみ計算
+■Condition (Number):   [1] CSelf40[状態変化有り？] ==  1  
+-◇Condition:  [1]  [ CSelf40[状態変化有り？] == 1   ] Case↓
+ |■Condition (Number):   [1] CSelf0[対象スロット] <  10  
+ |-◇Condition:  [1]  [ CSelf0[対象スロット] < 10   ] Case↓
+ | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 5:表示[更新＋ゲージアニメ] / CSelf0[対象スロット] / CSelf0[対象スロット]
+ | |■
+ |◇End◇
+ |■
+◇End◇
+■
+[COMMAND_TEXT_END]
