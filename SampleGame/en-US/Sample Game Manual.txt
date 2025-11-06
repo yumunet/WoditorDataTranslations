@@ -22,7 +22,7 @@ Basic Controls
     The Confirm Button. Used to confirm choices or advance dialogue.
   [X] [BackSpace] [Insert] [Esc] [Numpad 0 (when NumLock is on)] ...
     The Cancel Button. Also used to open the menu.
-  [C] [Shift] ... The Sub Button. Hold during battle to speed up it (in the Base System).
+  [C] [Shift] ... The Sub Button. Hold during battles to speed them up (in the Base System).
   [Arrow Keys] ... Used to select menu commands and choices.
   [F4] ... Change Screen Size
   [F11] ... Toggle Full Screen
@@ -35,48 +35,48 @@ Saving and Quitting the Game
   You can save the game by selecting the "Save" command from the menu.
   To quit the game, press ALT+F4.
 
-  * As a trick, select "Save" while pressing the left Ctrl key on the menu to open a load screen.
+  * As a hidden command, hold the left Ctrl key and select "Save" in the menu to open the load screen.
 
 ―――――――――――――――――――――――――――――――――――――――――
 Update History
 
-06/29/2024  Replaced Kagamiyomi's MIDI files with loop versions.
+06/29/2024  Replaced Kagamiyomi's MIDI files with looped versions.
 11/12/2023  Fixed URL links in this manual.
 11/22/2022  Updated the base system to version 3. Sample Game adapted for WOLF RPG Editor 3.
-06/02/2018  Updated the base system as needed.
-06/01/2018  Fixed broken links and relocated links for resource sources.
-07/18/2011  Greatly changed resources with the update to version 2.00. Thank you very much to everyone who contributed.
+06/02/2018  Updated the base system continuously.
+06/01/2018  Fixed broken or relocated asset source links.
+07/18/2011  Replaced assets entirely in version 2.00. Many thanks to all contributors.
 10/10/2010  Replaced sample enemy images with GD's.
-11/18/2009  Added sample image resources.
+11/18/2009  Added sample image assets.
 09/25/2009  Renamed all files to English names.
 07/27/2009  Minor fixes, and included Isooki's enemy images.
-02/20/2009  Greatly enhanced map tile resources.
-11/30/2008  Changed rights of MIDI resources to "can reuse only."
+02/20/2009  Greatly enhanced map tile assets.
+11/30/2008  Changed MIDI asset rights to "may be reused only."
 09/02/2008  Changed all characters to 8-directional, and added character creation tool to "Extras" folder.
 03/15/2008  Completely remade, and added default system.
 11/05/2007  Added feature introduction.
 04/12/2007  Released.
 
 ―――――――――――――――――――――――――――――――――――――――――
-Resource Contributors
+Asset Contributors
 
-- Character Sprite Resources
+- Character Sprite Assets
   すう(Suu)
-  pochi (Helped make 8-direction versions and parts. Animal and monster character sprites.)
-  mel (Ship character sprite included with sample)
-  ウロボロス(Uroboros) (Resources included with sample: camp sprite, waterfall tile, monster character sprites)
+  pochi (Helped make 8-direction versions and parts, and also animal and monster character sprites)
+  mel (Ship sprite included with the sample game)
+  ウロボロス(Uroboros) (Camp sprite, waterfall tile, and monster character sprites included with the sample game)
   たぴす(Tapisu) (Character sprites), まきば(Makiba) (Character sprites)
 
-- Map Tile Resources
+- Map Tile Assets
   ぴぽ(Pipo) (https://pipoya.net/blog/)
 
-- Enemy Image Resources
+- Enemy Image Assets
   GD (From WOLF RPG Editor Wiki)
-  * When distributing these resources, you must include the creator's name.
-    When redistributing them as resources or modifying and distributing them as resources,
+  * When distributing these assets, you must include the creator's name.
+    When redistributing them as assets or modifying and distributing them as assets,
     please be sure to include the creator's name.
 
-- MIDI Resources (Filenames have been changed for convenience.)
+- MIDI Assets (Filenames have been changed for convenience.)
   タクミ(Takumi)
   ユノ(Yuno)
   鏡読み(Kagamiyomi) (From WOLF RPG Editor Wiki)
@@ -86,19 +86,19 @@ Resource Contributors
   土鳩(Dobato) (From WOLF RPG Editor Wiki)
   momi (From WOLF RPG Editor Wiki)
 
-- Sound Effect Resources (Filenames have been changed for convenience.)
+- Sound Effect Assets (Filenames have been changed for convenience.)
   panop
   小森平(Taira Komori) (https://taira-komori.jpn.org/)
   Koya
   いそおき(Isooki) (From WOLF RPG Editor Wiki)
   くくり(Kukuri) (From WOLF RPG Editor Wiki)
 
-- Icon Resources
-  枯れ草(Karekusa) (From WOLF RPG Editor Resource Thread)
+- Icon Assets
+  枯れ草(Karekusa) (From WOLF RPG Editor Asset Thread)
 
 - Battle Animation Effects
   panop
-  Akira (From WOLF RPG Editor Resource Thread)
+  Akira (From WOLF RPG Editor Asset Thread)
 
 - Portrait Graphic Maker Data and Base Images
   いさあきえーと(Isaaki eight) (http://isaaki.web.fc2.com/)
@@ -113,48 +113,49 @@ Resource Contributors
   K-Shin07
 
 ―――――――――――――――――――――――――――――――――――――――――
-[Extras: Version 1 Resources]
+[Extras: Version 1 Assets]
  Monster Images
   いそおき(Isooki)
   すう(Suu)
  Map Tiles
   のり(Nori) (http://nega.client.jp/)
-  * Parts by the following creators used from WOLF RPG Editor Wiki and Resource Request Thread.
+  * Parts by the following creators used from WOLF RPG Editor Wiki and Asset Request Thread.
     遊等(Yuuto), RETAW, すう(Suu), 枯れ草(Karekusa), 澄夏(Sumika), ウロっち(Urotchi), りくがめ(Rikugame)
 ―――――――――――――――――――――――――――――――――――――――――
-* Rights to the resources included in the Sample Game are as follows.
+* Rights to the assets included in the Sample Game are as follows:
 
-  - Image Resources: Can reuse, modify, and use outside of WOLF RPG Editor.
-  - MIDI Resources: Can reuse only.
-  - WAV/OGG Resources: Can reuse, modify, and use outside of WOLF RPG Editor.
+  - Image Assets: May be reused, modified, and used outside of WOLF RPG Editor.
+  - MIDI Assets: May be reused only.
+  - WAV/OGG Assets: May be reused, modified, and used outside of WOLF RPG Editor.
 
-- Games using these resources can be sold.
-  However, sale of the resources themselves and
-  commercial use on the premise that they will be used as resources is prohibited.
+- Games using these assets may be sold.
+  However, the sale of the assets themselves
+  and any commercial use intended to provide them as assets is prohibited.
 
-- "Can use outside of WOLF RPG Editor" means that they can also be used for
-  works developed with other game engines. [Added on 01/28/2025]
+- "May be used outside of WOLF RPG Editor" means they may also be used for
+  works created with other game engines. [Added on 01/28/2025]
 
-- It is prohibited to distribute sample game resources included in self-made software. [Added on 01/28/2025]
-  However, users may download the sample game resources and use them
-  in works developed with that software (can use outside of WOLF RPG Editor).
-
-
-  * "Reuse" refers to including the files in a game for use.
-  * "Modification" refers to making changes to the files for use in your own game.
+- Bundling the sample game assets with self-made software for distribution is prohibited. [Added on 01/28/2025]
+  However, users may download the sample game assets and use them
+  in works created with such software (they may be used outside of WOLF RPG Editor).
 
 
-* Redistribution of modified versions of the Base System is also allowed.
+  * "Reuse" refers to including the files in a game.
+  * "Modify" refers to making changes to the files for use in your own game.
+
+
+* Redistribution of modified versions of the Base System is also permitted.
 
 ―――――――――――――――――――――――――――――――――――――――――
 * Secondary Creation (Added on 09/05/2023)
 
 - Creating derivative works based on the characters
-  and story of the Sample Game is officially allowed.
+  and story of the Sample Game is officially permitted.
 
-- If it is part of doujin activities, there is no problem with
-  selling or distributing sample game derivative works, and no permission is required.
-  However, if you plan to sell on a commercial scale, please contact via the email form below.
+- As part of doujin activities, you may sell or distribute
+  derivative works of the Sample Game without permission.
+  However, if you plan to sell on a commercial scale,
+  please contact me through the email form below.
   https://www.silversecond.net/contents/mail_forms/mail_works/
 ―――――――――――――――――――――――――――――――――――――――――
 Copyright Notice for Libraries Used (Updated on 2/7/2021)
