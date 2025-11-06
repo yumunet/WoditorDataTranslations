@@ -6,74 +6,84 @@ This file explains how to do the translation.
 
 ## Sample Game & Empty Data
 
-You can do almost all tasks using scripts.
+Most tasks can be done using the scripts.
 
 ### Setup
 
 First, install WOLF RPG Editor (Woditor) into the project folders.
 
-1. Download and extract Woditor. (en-US and pt-BR are available in [WoditorTranslationGallery](https://github.com/WoditorTrans2000/WoditorTranslationGallery))
-2. Run install-woditor.ps1. (The necessary files of the Woditor will be copied to all project folders.)
+1. Download and extract WOLF RPG Editor. (en-US and pt-BR are available in [WoditorTranslationGallery](https://github.com/WoditorTrans2000/WoditorTranslationGallery))
+2. Run install-woditor.ps1 to copy necessary files to all project folders.
     ```text
     .\scripts\install-woditor.ps1 LOCALE_ID WODITOR_PATH
     ```
-    Replace `LOCALE_ID` with the locale identifier [^1] and `WODITOR_PATH` with the Woditor folder path.
+    Replace `LOCALE_ID` with the locale identifier [^1] and `WODITOR_PATH` with the WOLF RPG Editor folder path.
 
-3. Run import.ps1. (Text data and assets will be imported into the Data folder of the Woditor. This must be done for each project.)
+3. Run import.ps1 to import project data into WOLF RPG Editor. This must be done for each project.
     ```text
     .\scripts\import.ps1 PROJECT_NAME LOCALE_ID
     ```
     Replace `PROJECT_NAME` with the project folder name (such as SampleGame) and `LOCALE_ID` with the locale identifier [^1].
 
-If you want to add a new translation, create a folder in the project folder named with the locale identifier [^1] of the language you want to add, and copy the translation into that folder. (Basically, I recommend copying en-US.)
+To add a new translation, create a folder named with the locale identifier [^1] inside the project folder, and copy the translation files into it. It's recommended to copy from en-US as a base.
 
-### Basic usage
+The WOLF RPG Editor is located in the `<PROJECT_NAME>\<LOCALE_ID>\_woditor` folder (for example: `SampleGame\en-US\_woditor`).
+**You can start Editor.exe as usual to edit the game.**
 
-The Woditor is located in the `<PROJECT_NAME>\<LOCALE_ID>\_woditor` folder (for example: `SampleGame\en-US\_woditor`).
-Launch Editor.exe as usual to edit.
+### Exporting project data
 
-You can export project data as text using export.ps1.
+You can export project data using export.ps1.
 
 ```text
 .\scripts\export.ps1 PROJECT_NAME LOCALE_ID
 ```
 
-The data for each project is output in text format by Woditor, and then split by the script.
-Images and audio files are copied to the assets folder.
+This converts project data into text format using WOLF RPG Editor functionality, then splits the text and copies image and audio files to the "assets" folder.
 
-As mentioned earlier, you can import project data using import.ps1. **After importing, you must restart Woditor.**
+For locale IDs other than "ja-JP", any files that differ from the project's root "assets" folder are copied into the locale's "assets" folder. This is mainly used for localizing images.
 
-### Update name-based references
+### Importing project data
 
-If you rename common events or databases, you must update any commands that reference them by name.
-You can easily do this using the script.
+As mentioned earlier, you can import project data using import.ps1.
 
-First, you need to prepare the project data as it was before renaming. Run the following command (files from the latest commit will be copied to "scripts\reference-update-source").
+```text
+.\scripts\import.ps1 PROJECT_NAME LOCALE_ID
+```
+
+After execution, a confirmation appears. Type "y" and press the Enter key to confirm.
+**You must restart WOLF RPG Editor after importing.**
+
+### Updating name-based references
+
+If you rename Common Events or databases, you must update any commands that reference them by name.
+This can be done easily using the scripts.
+
+First, prepare the project data as it was before renaming by running:
 
 ```text
 git worktree add scripts\reference-update-source -b reference-update-source
 ```
 
-Once you've done that, do the following after renaming.
+After renaming, follow these steps:
 
 1. Run export.ps1.
-2. Stage changes in Git. (This is because if the script fails midway, updates may be partially applied up to the point of failure. For safety, please stage changes.)
-3. If you renamed common events, run "update-common-event-references.ps1".  
+2. Stage changes in Git. (This is important because if the script fails midway, updates may be partially applied. Staging changes ensures safety.)
+3. If you renamed Common Events, run "update-common-event-references.ps1".  
 If you renamed databases, run "update-database-references.ps1".
     ```text
     .\scripts\update-common-event-references.ps1 PROJECT_NAME LOCALE_ID
     .\scripts\update-database-references.ps1 PROJECT_NAME LOCALE_ID
     ```
-4. Since the references are updated, commit the changes.
+4. Commit the changes after updating references.
 5. Update the worktree for the next rename.
     ```text
     cd scripts\update-database-references
     git merge main
     ```
 
-### Release
+### Releasing
 
-Running pack.ps1 compresses the project data into a ZIP file in the releases folder.
+Run pack.ps1 to compress the project data into a ZIP file in the releases folder.
 
 ```text
 .\scripts\pack.ps1 PROJECT_NAME LOCALE_ID
