@@ -82,11 +82,12 @@ function Split-Texts([string]$Src, [string]$Dest) {
 }
 
 $root = Split-Path -Path $PSScriptRoot -Parent
-$assetsDir = "$root\$Project\assets"
+$baseAssetsDir = "$root\$Project\assets"
 $langDir = "$root\$Project\$Locale"
 $woditorDir = "$langDir\_woditor"
 $woditorDataDir = "$woditorDir\Data"
 $woditorTextDir = "$woditorDir\Data_AutoTXT"
+$overrideAssetsDir = "$langDir\assets"
 $textsDir = "$langDir\texts"
 $othersDir = "$langDir\others"
 
@@ -97,7 +98,49 @@ Start-Process -FilePath "$woditorDir\Editor.exe" -ArgumentList "-txtoutput" -Wai
 Split-Texts $woditorTextDir $textsDir
 
 . "$PSScriptRoot\.util.ps1"
-Copy-Assets $woditorDataDir $assetsDir
+if ($Locale -eq "ja-JP") {
+    # For the original, update the assets directly.
+    Copy-Assets $woditorDataDir $baseAssetsDir
+}
+else {
+    # For translations, copy asset files that differ from the original into project-specific assets.
+    $baseAssetFiles = Get-ChildItem -Path $baseAssetsDir -Recurse -File -Exclude MapTree.dat, MapTreeOpenStatus.dat
+    $currentAssetFiles = Get-ChildItem -Path $woditorDataDir -Recurse -File -Exclude (@("*.mps", "*.dat", "*.project") + $OtherFiles)
+    $diffFiles = Compare-Object -ReferenceObject $baseAssetFiles -DifferenceObject $currentAssetFiles -PassThru -Property Name, Length
+    foreach ($file in $diffFiles) {
+        if ($file.FullName.StartsWith($woditorDataDir)) {
+            $relativePath = $file.FullName.Substring($woditorDataDir.Length + 1)
+            $assetDestFile = "$overrideAssetsDir\$relativePath"
+            if (Test-Path -Path $assetDestFile) {
+                # If the same file is already copied, skip it.
+                if ((Get-ItemProperty -Path $assetDestFile).LastWriteTime -eq $file.LastWriteTime) {
+                    continue
+                }
+            }
+            $assetDestDir = Split-Path -Path $assetDestFile -Parent
+            if (-not (Test-Path -Path $assetDestDir)) {
+                New-Item -Path $assetDestDir -ItemType Directory > $null
+            }
+            Copy-Item -Path $file -Destination $assetDestFile
+        }
+        else {
+            # Warn about missing files.
+            $relativePath = $file.FullName.Substring($baseAssetsDir.Length + 1)
+            $assetFile = "$woditorDataDir\$relativePath"
+            if (-not (Test-Path -Path $assetFile)) {
+                Write-Warning "Found a missing asset file: ""$relativePath"""
+            }
+        }
+    }
+    # Remove override asset files that were deleted from the Data directory.
+    $overrideAssetFiles = Get-ChildItem -Path $overrideAssetsDir -Recurse -File
+    foreach ($file in $overrideAssetFiles) {
+        $relativePath = $file.FullName.Substring($overrideAssetsDir.Length + 1)
+        if (-not (Test-Path -Path "$woditorDataDir\$relativePath")) {
+            Remove-Item -Path $file
+        }
+    }
+}
 Copy-Others $woditorDataDir $othersDir
 # If empty, remove the others directory.
 if ((Get-ChildItem -Path $othersDir -Recurse -File).Count -eq 0) {

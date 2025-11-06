@@ -44,11 +44,12 @@ function Join-Texts([string]$Src, [string]$Dest) {
 }
 
 $root = Split-Path -Path $PSScriptRoot -Parent
-$assetsDir = "$root\$Project\assets"
+$baseAssetsDir = "$root\$Project\assets"
 $langDir = "$root\$Project\$Locale"
 $woditorDir = "$langDir\_woditor"
 $woditorDataDir = "$woditorDir\Data"
 $woditorTextDir = "$woditorDir\Data_AutoTXT"
+$overrideAssetsDir = "$langDir\assets"
 $textsDir = "$langDir\texts"
 $othersDir = "$langDir\others"
 
@@ -66,5 +67,13 @@ Join-Texts $textsDir $woditorTextDir
 Start-Process -FilePath "$woditorDir\Editor.exe" -ArgumentList "-txtinput" -Wait
 
 . "$PSScriptRoot\.util.ps1"
-Copy-Assets $assetsDir $woditorDataDir
+if ($Locale -eq "ja-JP") {
+    Copy-Assets $baseAssetsDir $woditorDataDir
+}
+else {
+    Copy-Assets $baseAssetsDir $woditorDataDir
+    if (Test-Path -Path $overrideAssetsDir) {
+        robocopy $overrideAssetsDir $woditorDataDir /s > $null
+    }
+}
 Copy-Others $othersDir $woditorDataDir
