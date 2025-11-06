@@ -104,8 +104,12 @@ if ($Locale -eq "ja-JP") {
 }
 else {
     # For translations, copy asset files that differ from the original into project-specific assets.
+    
     $baseAssetFiles = Get-ChildItem -Path $baseAssetsDir -Recurse -File -Exclude MapTree.dat, MapTreeOpenStatus.dat
     $currentAssetFiles = Get-ChildItem -Path $woditorDataDir -Recurse -File -Exclude (@("*.mps", "*.dat", "*.project") + $OtherFiles)
+    # To prevent an error, replace null with an empty array when there are no files.
+    $baseAssetFiles ??= @()
+    $currentAssetFiles ??= @()
     $diffFiles = Compare-Object -ReferenceObject $baseAssetFiles -DifferenceObject $currentAssetFiles -PassThru -Property Name, Length
     foreach ($file in $diffFiles) {
         if ($file.FullName.StartsWith($woditorDataDir)) {
