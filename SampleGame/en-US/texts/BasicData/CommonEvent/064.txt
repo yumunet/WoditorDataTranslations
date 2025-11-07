@@ -224,8 +224,8 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("  Base Picture ID + 4 = Up Arrow")
 [103][0,1]<0>()("  Base Picture ID + 5 = Down Arrow")
 [103][0,1]<0>()("  Base Picture ID + 6 = Scroll Bar")
-[103][0,1]<0>()(" ")
 [103][0,1]<0>()("  Base Picture ID + 9-209 = Items (1 picture each item)")
+[103][0,1]<0>()(" ")
 [103][0,1]<0>()("[Usage Example]")
 [103][0,1]<0>()("  There are examples in the common event <dqrt>■■[Common: Screen Processing]■■<dqrt>.")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
@@ -1101,8 +1101,8 @@ WoditorEvCOMMAND_END
 ▼   Base Picture ID + 4 = Up Arrow
 ▼   Base Picture ID + 5 = Down Arrow
 ▼   Base Picture ID + 6 = Scroll Bar
-▼  
 ▼   Base Picture ID + 9-209 = Items (1 picture each item)
+▼  
 ▼ [Usage Example]
 ▼   There are examples in the common event "■■[Common: Screen Processing]■■".
 ▼ ―――――――――――――――――――――――――――――――――――
