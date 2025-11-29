@@ -1,0 +1,43 @@
+[ If the Preview Image Does Not Appear in the Graphic Maker ]
+
+The most likely reason is that your Windows installation may be missing
+the "Gdiplus.dll" library.
+This DLL is included by default in standard installations of Windows 7
+and later, but it may be missing in lightweight environments, virtual
+machines, or some older operating systems.
+
+However, "Gdiplus.dll" is a library that is difficult to redistribute
+and is generally not easy to obtain intentionally.
+Below are some commonly known methods for obtaining it.
+
+
+[ Solution 1 ]
+Install the .NET Framework 1.1 Redistributable Package.
+
+* Version 1.1 reportedly included Gdiplus.dll in the past to address
+  the possibility that Windows XP did not include it.
+
+Official download page for the .NET Framework 1.1 Redistributable Package (Japanese):
+https://www.microsoft.com/ja-jp/download/details.aspx?id=26
+
+* As of 04/05/2025, this link may return a 404 error.
+  If that happens, try searching for keywords such as
+  ".NET Framework 1.1 redistributable download".
+
+
+
+[ Solution 2 ]
+Obtain Gdiplus.dll from another PC and place it in one of the following locations:
+
+- The same folder as GraphicMaker.exe
+- Or the Windows System32 or SysWOW64 folder (requires administrator privileges)
+
+* Be aware that some websites offering individual DLL downloads may be unsafe.
+  Use them strictly at your own risk.
+
+
+
+[ Solution 3 ]
+Reinstall Windows.
+Although this requires considerable effort,
+it is one way to restore the system to its default configuration.

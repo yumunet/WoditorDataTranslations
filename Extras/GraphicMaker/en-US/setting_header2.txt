@@ -1,0 +1,36 @@
+#-------------------------------------------------------
+# If you write "#" at the beginning of a line, it is treated as a comment.
+#-------------------------------------------------------
+# [Image Size]
+# Xsize:NNN and Ysize:NNN specify the size of the generated image.
+#
+#-------------------------------------------------------
+# [Layering Order]
+# The rest specifies how the image parts in each folder
+# are layered; that is, their display order.
+# Note that when "HeadA.png" is loaded, "HeadA$.png" is also loaded automatically and added in the back.
+#
+# Example:
+#  If you set Head=2, Upper Body=1, and Lower Body=0,
+#  they will be layered in this order by default: Head > Upper Body > Lower Body > Lower Body (with $) > Upper Body (with $) > Head (with $).
+#  Write the folder name before the "=" sign.
+#
+#-------------------------------------------------------
+# [Order of Files with $]
+# * Starting with the 6/18/2011 version, you can manually set the display order of files with a "$" suffix
+#   by writing lines like "Head=3,F,4" or "Head=3,,4" in Folder Settings.
+#
+# Example:
+#  If you set Head=2,4, Upper Body=3, and Lower Body=0,
+#  the order will be: Head (with $) > Upper Body > Head > Lower Body.
+#-------------------------------------------------------
+# [Limiting Hue Changes]
+# Starting with the 5/11/2010 version, you can apply hue changes only to front images (without $) or back images (with $)
+# by adding ",F" or ",B" after a number in Folder Settings such as "Head=3,F".
+# (* Saturation is applied to both front and back.)
+#-------------------------------------------------------
+# [Linked Parts]
+# If you write a line like "Linked:Upper Body,Lower Body",
+# it will link the hue and saturation of the Upper Body and Lower Body parts.
+# You can turn this feature off by checking "Color Linking Off" in the application window.
+#-------------------------------------------------------

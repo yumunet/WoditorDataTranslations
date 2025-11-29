@@ -1,3 +1,5 @@
 /releases/
+/scripts/reference-update-source/
+/scripts/temp.log
+_output/
 _woditor/
-scripts/reference-update-source/
