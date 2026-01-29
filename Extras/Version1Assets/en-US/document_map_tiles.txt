@@ -1,0 +1,7 @@
+1. Place all image files in the "MapChip" folder in the Data folder.
+2. Open the Editor and select an empty slot from the list on the left in Tileset Settings.
+3. Drag and drop the "Map Tile Settings.tile" file into the Tileset Settings window.
+4. When prompted "Overwrite?", select OK.
+5. To use it on a map, select "Version 1 Map Tiles" from Map Settings.
+
+That is all you need to do.

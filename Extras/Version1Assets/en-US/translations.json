@@ -1,0 +1,13 @@
+{
+    "folder_names": {
+        "Ver1用マップチップ[のりさん他]": "Map Tiles [Nori and others]",
+        "モンスター素材[いそおきさん・すうさん]": "Enemy Graphics [Isooki and Suu]"
+    },
+    "filenames": {
+        "Ver1マップチップの使い方.txt": "Map Tile Instructions.txt",
+        "Ver1版マップチップ設定.tile": "Map Tile Settings.tile"
+    },
+    "tile_binary_string": {
+        "Ver1版マップチップ": "Version 1 Map Tiles"
+    }
+}
