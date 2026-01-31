@@ -1,0 +1,38 @@
+--------------------------------
+  How to Create Empty Game Data
+--------------------------------
+
+* In version 2 and earlier, empty game data was included in this folder.
+  Starting with version 3, the data is built into Editor.exe.
+  You can create empty data using the following steps.
+
+
+1. Delete the Data folder or rename it to a different name,
+   then launch Editor.exe.
+   (In other words, make sure the Data folder does not exist.)
+
+
+2. When Editor.exe starts, it will prompt you to create a new Data folder.
+   Select "Yes".
+
+
+3. You can select either "Empty Data with Base RPG System"
+   or "Completely Empty Data".
+
+   Empty Data with Base RPG System includes:
+   - A basic set of assets
+   - A title-screen map and a starting map
+   - Preconfigured tileset settings
+   - Preconfigured system images and sounds
+   - Preconfigured party information
+     and more.
+
+   Completely Empty Data contains nothing except the starting map.
+
+
+4. After the Data folder is created, the Editor opens immediately.
+   Either type of data can be test-played right away.
+   (However, the completely empty data only shows a completely dark screen.)
+
+
+That's all. We wish you the best of luck with your new game development!
