@@ -1,8 +1,9 @@
-param([Parameter(Mandatory)][string]$Project, [Parameter(Mandatory)][string]$Locale)
+param([Parameter(Mandatory)][string]$Project, [Parameter(Mandatory)][string]$Locale, [string]$Tag = (Get-Date).ToString("yyyy-MM-dd"))
 $ErrorActionPreference = "Stop"
 
 $root = Split-Path -Path $PSScriptRoot -Parent
 $outputDir = "$root\releases"
+$outputFile = "$outputDir\${Project}_${Locale}_${Tag}.zip"
 
 if (-not (Test-Path -Path $outputDir)) {
     New-Item -Path $outputDir -ItemType Directory > $null
@@ -42,7 +43,7 @@ if ($Project -eq "Extras") {
     $tempZip2 = "$outputDir\Version1Assets.zip"
     Compress-ArchiveWithDirectory "$root\$Project\GraphicMaker\$Locale\_output" $tempZip1 "GraphicMaker"
     Compress-ArchiveWithDirectory "$root\$Project\Version1Assets\$Locale\_output" $tempZip2 "Version1Assets"
-    Compress-ArchiveWithDirectory ($tempZip1, $tempZip2, "$root\$Project\Others\$Locale") "$outputDir\${Project}_${Locale}.zip" "$Project"
+    Compress-ArchiveWithDirectory ($tempZip1, $tempZip2, "$root\$Project\Others\$Locale") $outputFile "$Project"
     Remove-Item -LiteralPath $tempZip1, $tempZip2
 }
 else {
@@ -52,5 +53,5 @@ else {
     & "$PSScriptRoot\import.ps1" $Project $Locale || $(exit 1)
     Remove-Item -Path "$woditorDataDir\BasicData\AutoBackup*" -Recurse -ErrorAction SilentlyContinue
     
-    Compress-Archive -Path $woditorDataDir, "$langDir\*.*" -DestinationPath "$outputDir\${Project}_${Locale}.zip" -Force
+    Compress-Archive -Path $woditorDataDir, "$langDir\*.*" -DestinationPath $outputFile -Force
 }
