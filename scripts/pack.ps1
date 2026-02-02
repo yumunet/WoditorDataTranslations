@@ -12,24 +12,24 @@ if (-not (Test-Path -Path $outputDir)) {
 if ($Project -eq "Extras") {
     Add-Type -AssemblyName System.IO.Compression.FileSystem
 
-    function Compress-ArchiveWithDirectory([string[]]$sources, [string]$dest, [string]$dirName) {
+    function Compress-ArchiveWithDirectory([string[]]$Sources, [string]$Dest, [string]$DirectoryName) {
         # Always -Force
-        if (Test-Path -LiteralPath $dest) {
-            Remove-Item -LiteralPath $dest
+        if (Test-Path -LiteralPath $Dest) {
+            Remove-Item -LiteralPath $Dest
         }
         try {
-            $zip = [System.IO.Compression.ZipFile]::Open($dest, 'Create')
-            foreach ($src in $sources) {
+            $zip = [System.IO.Compression.ZipFile]::Open($Dest, 'Create')
+            foreach ($src in $Sources) {
                 if (Test-Path -LiteralPath $src -PathType Container) {
                     Get-ChildItem -LiteralPath $src -Recurse -File | ForEach-Object {
                         $relative = $_.FullName.Substring($src.Length + 1)
-                        $entryPath = "$dirName\$relative"
+                        $entryPath = "$DirectoryName\$relative"
                         [System.IO.Compression.ZipFileExtensions]::CreateEntryFromFile($zip, $_.FullName, $entryPath) > $null
                     }
                 }
                 else {
                     $filename = Split-Path -Path $src -Leaf
-                    $entryPath = "$dirName\$filename"
+                    $entryPath = "$DirectoryName\$filename"
                     [System.IO.Compression.ZipFileExtensions]::CreateEntryFromFile($zip, $src, $entryPath) > $null
                 }
             }

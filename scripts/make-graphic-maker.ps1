@@ -1,9 +1,9 @@
 param([Parameter(Mandatory)][string]$Locale, [string]$Encoding)
 $ErrorActionPreference = "Stop"
 
-function Test-JsonEncoding([PSCustomObject]$json) {
+function Test-JsonEncoding([PSCustomObject]$Json) {
     $enc = [System.Text.Encoding]::GetEncoding($Encoding)
-    foreach ($prop in $json.PSObject.Properties) {
+    foreach ($prop in $Json.PSObject.Properties) {
         $value = $prop.Value
         if ($value -is [string]) {
             $encodedValue = $enc.GetString($enc.GetBytes($value))
@@ -95,9 +95,9 @@ public static class ByteSearch {
     [System.IO.File]::WriteAllBytes("$outputDir\$exeName", $exeBytes)
 }
 
-function ConvertTo-FlatMap([PSCustomObject]$node, [string]$currentPath = "", [string]$translatedPath = "") {
+function ConvertTo-FlatMap([PSCustomObject]$Node, [string]$CurrentPath = "", [string]$TranslatedPath = "") {
     $list = @()
-    foreach ($prop in $node.PSObject.Properties) {
+    foreach ($prop in $Node.PSObject.Properties) {
         $key = $prop.Name
         $value = $prop.Value
         if ($key -eq "@translation") { continue }
@@ -107,11 +107,11 @@ function ConvertTo-FlatMap([PSCustomObject]$node, [string]$currentPath = "", [st
             $translation = $value
             if ($translation -eq "") {
                 $translation = $key
-                Write-Warning "Translation is empty: $currentPath\$key"
+                Write-Warning "Translation is empty: $CurrentPath\$key"
             }
             $list += [PSCustomObject]@{
-                RelativePath = "$currentPath\$key"
-                Translation  = "$translatedPath\$translation"
+                RelativePath = "$CurrentPath\$key"
+                Translation  = "$TranslatedPath\$translation"
             }
         }
         elseif ($value -is [PSCustomObject]) {
@@ -124,15 +124,15 @@ function ConvertTo-FlatMap([PSCustomObject]$node, [string]$currentPath = "", [st
                 $translation = $value."@translation"
                 if ($null -eq $translation) {
                     $translation = $key
-                    Write-Warning "@translation key does not exist: $currentPath\$key" 
+                    Write-Warning "@translation key does not exist: $CurrentPath\$key" 
                 }
                 elseif ($translation -eq "") {
                     $translation = $key
-                    Write-Warning "Translation is empty: $currentPath\$key"
+                    Write-Warning "Translation is empty: $CurrentPath\$key"
                 }
             }
-            $newPath = "$currentPath\$key"
-            $newTranslatedPath = "$translatedPath\$translation"
+            $newPath = "$CurrentPath\$key"
+            $newTranslatedPath = "$TranslatedPath\$translation"
             $list += [PSCustomObject]@{
                 RelativePath = $newPath
                 Translation  = $newTranslatedPath
@@ -237,12 +237,12 @@ function Copy-ImageFiles() {
         "\Graphics\顔E[中年男192x192]（キタカライさんベース）\ベース装飾\目元傷左$.png"
     )
     foreach ($path in $filePathsNoFrontImage) {
-        $translatedPath = Get-TranslatedPath $path
-        if ($translatedPath -notmatch "\$\.png$") {
-            Write-Warning "Does not end with `$: $translatedPath"
+        $TranslatedPath = Get-TranslatedPath $path
+        if ($TranslatedPath -notmatch "\$\.png$") {
+            Write-Warning "Does not end with `$: $TranslatedPath"
             continue
         }
-        Copy-Item -LiteralPath $blankFrontImage -Destination ($translatedPath -replace "\$\.png$", ".png")
+        Copy-Item -LiteralPath $blankFrontImage -Destination ($TranslatedPath -replace "\$\.png$", ".png")
     }
 }
 
