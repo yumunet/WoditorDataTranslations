@@ -101,6 +101,14 @@ Split-Texts $woditorTextDir $textsDir
 if ($Locale -eq "ja-JP") {
     # For the original, update the assets directly.
     Copy-Assets $woditorDataDir $baseAssetsDir
+
+    # To track empty directories with Git, add a .gitkeep file inside them.
+    $assetDirs = Get-ChildItem -Path $baseAssetsDir -Recurse -Directory
+    foreach ($dir in $assetDirs) {
+        if ((Get-ChildItem -Path $dir -Recurse).Count -eq 0) {
+            New-Item -Path "$dir\.gitkeep" > $null
+        }
+    }
 }
 else {
     # For translations, copy asset files that differ from the original into project-specific assets.
