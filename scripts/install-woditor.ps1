@@ -2,23 +2,28 @@ param([Parameter(Mandatory)][string]$Locale, [Parameter(Mandatory)][string]$Sour
 $ErrorActionPreference = "Stop"
 
 function Copy-Woditor([string]$Dest) {
-    if (-not (Test-Path -Path $Dest)) {
+    if (-not (Test-Path -LiteralPath $Dest)) {
         New-Item -Path $Dest -ItemType Directory > $null
     }
-    Copy-Item -Path "$SourceWoditorDir\*" -Destination $Dest -Include "*.exe", "*.dll", "Editor.Lang.SystemString.txt", "Editor.Lang.SystemValue.txt"
+    Get-ChildItem -LiteralPath $SourceWoditorDir -File | Where-Object {
+        $_.Name -like "*.exe" -or
+        $_.Name -like "*.dll" -or
+        $_.Name -eq "Editor.Lang.SystemString.txt" -or
+        $_.Name -eq "Editor.Lang.SystemValue.txt"
+    } | Copy-Item -Destination $Dest
     # Do not overwrite Editor.ini.
-    if (-not (Test-Path -Path "$Dest\Editor.ini") -and (Test-Path -Path "$SourceWoditorDir\Editor.ini")) {
-        Copy-Item -Path "$SourceWoditorDir\Editor.ini" -Destination $Dest
+    if (-not (Test-Path -LiteralPath "$Dest\Editor.ini") -and (Test-Path -LiteralPath "$SourceWoditorDir\Editor.ini")) {
+        Copy-Item -LiteralPath "$SourceWoditorDir\Editor.ini" -Destination $Dest
     }
 }
 
 $root = Split-Path -Path $PSScriptRoot -Parent
 if ($Project -eq "") {
     # By default, update all Woditor.
-    $subDirs = Get-ChildItem -Path $root -Attributes Directory
+    $subDirs = Get-ChildItem -LiteralPath $root -Attributes Directory
     foreach ($subDir in $subDirs) {
         # Consider any directory containing an assets directory as a project.
-        if (Test-Path -Path "$subDir\assets") {
+        if (Test-Path -LiteralPath "$subDir\assets") {
             Copy-Woditor "$subDir\$Locale\_woditor"
         }
     }

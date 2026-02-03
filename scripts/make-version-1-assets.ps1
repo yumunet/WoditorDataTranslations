@@ -10,7 +10,7 @@ if ($Locale -eq "ja-JP" -or $Locale -eq "original") {
     Write-Error """$Locale"" cannot be specified"
 }
 
-if (Test-Path -Path $outputDir) {
+if (Test-Path -LiteralPath $outputDir) {
     Remove-Item -LiteralPath $outputDir -Recurse
     New-Item -Path $outputDir -ItemType Directory > $null
 }

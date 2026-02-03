@@ -70,7 +70,7 @@ function Convert-DataNameType([int]$Raw, [string]$LoadTypeName) {
 
 function Import-OneDatabase([string]$DBTextsDir) {
     $DB = @()
-    $files = Get-ChildItem -Path $DBTextsDir | Where-Object { $_.Name -match "^\d+.txt$" } | Sort-Object
+    $files = Get-ChildItem -LiteralPath $DBTextsDir | Where-Object { $_.Name -match "^\d+.txt$" } | Sort-Object
     $typeIndex = 0
     foreach ($file in $files) {
         $content = [IO.File]::ReadAllText($file)
@@ -247,7 +247,7 @@ $sourceDirName = "reference-update-source"
 $sourceDir = "$PSScriptRoot\$sourceDirName"
 $sourceTextsDir = "$sourceDir\$Project\$Locale\texts"
 
-if (-not (Test-Path -Path $sourceDir)) {
+if (-not (Test-Path -LiteralPath $sourceDir)) {
     Write-Error @"
 The project directory before renaming databases is required:
   "$sourceDir"
@@ -262,11 +262,11 @@ Or copy all files to that directory in advance, before renaming databases.
 $oldDBs = Import-Databases $sourceTextsDir
 $newDBs = Import-Databases $textsDir
 
-$files = Get-ChildItem -Path "$textsDir\BasicData\CommonEvent" | Where-Object { $_.Name -match "^\d+.txt$" }
+$files = Get-ChildItem -LiteralPath "$textsDir\BasicData\CommonEvent" | Where-Object { $_.Name -match "^\d+.txt$" }
 foreach ($file in $files) {
     Update-EventCode $file $newDBs $oldDBs
 }
-$files = Get-ChildItem -Path "$textsDir\MapData" -Recurse | Where-Object { $_.Name -match "^Event_\d+.txt$" }
+$files = Get-ChildItem -LiteralPath "$textsDir\MapData" -Recurse | Where-Object { $_.Name -match "^Event_\d+.txt$" }
 foreach ($file in $files) {
     Update-EventCode $file $newDBs $oldDBs
 }

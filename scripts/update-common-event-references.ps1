@@ -3,7 +3,7 @@ $ErrorActionPreference = "Stop"
 
 function Import-CommonEventNames([string]$TextsDir) {
     $names = @()
-    $files = Get-ChildItem -Path "$TextsDir\BasicData\CommonEvent" | Where-Object { $_.Name -match "^\d+.txt$" } | Sort-Object
+    $files = Get-ChildItem -LiteralPath "$TextsDir\BasicData\CommonEvent" | Where-Object { $_.Name -match "^\d+.txt$" } | Sort-Object
     foreach ($file in $files) {
         $content = [IO.File]::ReadAllText($file)
         $names += [Regex]::Match($content, "(?m)^COMMON_NAME=([^\r\n]+)").Groups[1].Value
@@ -41,7 +41,7 @@ $sourceDirName = "reference-update-source"
 $sourceDir = "$PSScriptRoot\$sourceDirName"
 $sourceTextsDir = "$sourceDir\$Project\$Locale\texts"
 
-if (-not (Test-Path -Path $sourceDir)) {
+if (-not (Test-Path -LiteralPath $sourceDir)) {
     Write-Error @"
 The project directory before renaming common events is required:
   "$sourceDir"
@@ -56,11 +56,11 @@ Or copy all files to that directory in advance, before renaming common events.
 $oldNames = Import-CommonEventNames $sourceTextsDir
 $newNames = Import-CommonEventNames $textsDir
 
-$files = Get-ChildItem -Path "$textsDir\BasicData\CommonEvent" | Where-Object { $_.Name -match "^\d+.txt$" }
+$files = Get-ChildItem -LiteralPath "$textsDir\BasicData\CommonEvent" | Where-Object { $_.Name -match "^\d+.txt$" }
 foreach ($file in $files) {
     Update-EventCode $file $newNames $oldNames
 }
-$files = Get-ChildItem -Path "$textsDir\MapData" -Recurse | Where-Object { $_.Name -match "^Event_\d+.txt$" }
+$files = Get-ChildItem -LiteralPath "$textsDir\MapData" -Recurse | Where-Object { $_.Name -match "^Event_\d+.txt$" }
 foreach ($file in $files) {
     Update-EventCode $file $newNames $oldNames
 }

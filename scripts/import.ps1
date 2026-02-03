@@ -2,10 +2,10 @@ param([Parameter(Mandatory)][string]$Project, [Parameter(Mandatory)][string]$Loc
 $ErrorActionPreference = "Stop"
 
 function Join-Texts([string]$Src, [string]$Dest) {
-    Remove-Item -Path "$Dest\MapData\*" -Recurse -ErrorAction SilentlyContinue
-    Copy-Item -Path "$Src\BasicData\Game.txt" -Destination "$Dest\BasicData\Game.dat.Auto.txt"
+    Get-ChildItem -LiteralPath "$Dest\MapData" -File | Remove-Item
+    Copy-Item -LiteralPath "$Src\BasicData\Game.txt" -Destination "$Dest\BasicData\Game.dat.Auto.txt"
     foreach ($group in @("BasicData", "MapData")) {
-        $directories = Get-ChildItem -Path "$Src\$group" -Attributes Directory
+        $directories = Get-ChildItem -LiteralPath "$Src\$group" -Attributes Directory
         foreach ($dir in $directories) {
             $content = ""
             $destFileName = $dir.Name
@@ -34,7 +34,7 @@ function Join-Texts([string]$Src, [string]$Dest) {
             }
 
             $content += [IO.File]::ReadAllText("$dir\${prefix}Header.txt")
-            $files = Get-ChildItem -Path $dir | Where-Object { $_.Name -match "^$prefix\d+.txt$" } | Sort-Object
+            $files = Get-ChildItem -LiteralPath $dir | Where-Object { $_.Name -match "^$prefix\d+.txt$" } | Sort-Object
             foreach ($file in $files) {
                 $content += $delimiter + "`r`n" + [IO.File]::ReadAllText($file)
             }
@@ -54,7 +54,7 @@ $textsDir = "$langDir\texts"
 $othersDir = "$langDir\others"
 
 # Confirm
-if (Test-Path -Path $woditorDataDir) {
+if (Test-Path -LiteralPath $woditorDataDir) {
     $typeName = "System.Management.Automation.Host.ChoiceDescription"
     $choice = $host.ui.PromptForChoice("Confirm", "Are you sure you want to import?", @((New-Object $typeName "&No", "No"), (New-Object $typeName "&Yes", "Yes")), 0)
     if ($choice -eq 0) {
@@ -72,7 +72,7 @@ if ($Locale -eq "ja-JP") {
 }
 else {
     Copy-Assets $baseAssetsDir $woditorDataDir
-    if (Test-Path -Path $overrideAssetsDir) {
+    if (Test-Path -LiteralPath $overrideAssetsDir) {
         robocopy $overrideAssetsDir $woditorDataDir /s > $null
     }
 }

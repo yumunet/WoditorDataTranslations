@@ -371,7 +371,7 @@ if ($Encoding -eq "") {
 }
 
 # Clear output directory
-if (Test-Path -Path $outputDir) {
+if (Test-Path -LiteralPath $outputDir) {
     Remove-Item -LiteralPath $outputDir -Recurse
     New-Item -Path $outputDir -ItemType Directory > $null
 }

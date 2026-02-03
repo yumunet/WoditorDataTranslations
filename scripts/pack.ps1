@@ -5,7 +5,7 @@ $root = Split-Path -Path $PSScriptRoot -Parent
 $outputDir = "$root\releases"
 $outputFile = "$outputDir\${Project}_${Locale}_${Tag}.zip"
 
-if (-not (Test-Path -Path $outputDir)) {
+if (-not (Test-Path -LiteralPath $outputDir)) {
     New-Item -Path $outputDir -ItemType Directory > $null
 }
 
@@ -51,7 +51,7 @@ else {
     $woditorDataDir = "$langDir\_woditor\Data"
     
     & "$PSScriptRoot\import.ps1" $Project $Locale || $(exit 1)
-    Remove-Item -Path "$woditorDataDir\BasicData\AutoBackup*" -Recurse -ErrorAction SilentlyContinue
+    Get-ChildItem -LiteralPath "$woditorDataDir\BasicData" -Directory -Filter "AutoBackup*" | Remove-Item -Recurse
     
-    Compress-Archive -Path $woditorDataDir, "$langDir\*.*" -DestinationPath $outputFile -Force
+    Compress-Archive -LiteralPath @($woditorDataDir; Get-ChildItem -LiteralPath $langDir -File) -DestinationPath $outputFile -Force
 }
