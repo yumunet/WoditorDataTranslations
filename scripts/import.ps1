@@ -5,7 +5,7 @@ function Join-Texts([string]$Src, [string]$Dest) {
     Get-ChildItem -LiteralPath "$Dest\MapData" -File | Remove-Item
     Copy-Item -LiteralPath "$Src\BasicData\Game.txt" -Destination "$Dest\BasicData\Game.dat.Auto.txt"
     foreach ($group in @("BasicData", "MapData")) {
-        $directories = Get-ChildItem -LiteralPath "$Src\$group" -Attributes Directory
+        $directories = Get-ChildItem -LiteralPath "$Src\$group" -Directory
         foreach ($dir in $directories) {
             $content = ""
             $destFileName = $dir.Name
