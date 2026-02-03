@@ -271,7 +271,7 @@ foreach ($file in $files) {
     Update-EventCode $file $newDBs $oldDBs
 }
 
-Write-Output "Update complete. Please import."
+Write-Host "Update complete. Please import."
 & "$PSScriptRoot\import.ps1" $Project $Locale || $(exit)
-Write-Output "Imported. Exporting..."
+Write-Host "Imported. Exporting..."
 & "$PSScriptRoot\export.ps1" $Project $Locale
