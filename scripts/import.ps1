@@ -56,7 +56,7 @@ $othersDir = "$langDir\others"
 # Confirm
 if (Test-Path -LiteralPath $woditorDataDir) {
     $typeName = "System.Management.Automation.Host.ChoiceDescription"
-    $choice = $host.ui.PromptForChoice("Confirm", "Are you sure you want to import?", @((New-Object $typeName "&No", "No"), (New-Object $typeName "&Yes", "Yes")), 0)
+    $choice = $host.ui.PromptForChoice("Confirm", "Your current WOLF RPG Editor data will be overwritten.`nAre you sure you want to import?", @((New-Object $typeName "&No", "No"), (New-Object $typeName "&Yes", "Yes")), 0)
     if ($choice -eq 0) {
         exit 1
     }
@@ -77,3 +77,5 @@ else {
     }
 }
 Copy-Others $othersDir $woditorDataDir
+
+Write-Host "If WOLF RPG Editor is running, please restart it." -ForegroundColor Yellow
