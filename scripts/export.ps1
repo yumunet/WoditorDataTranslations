@@ -112,9 +112,9 @@ if ($Locale -eq "ja-JP") {
     }
 }
 else {
-    # For translations, copy asset files that differ from the original into project-specific assets.
+    # For translations, copy asset files that differ from the original into locale-specific assets.
     
-    $baseAssetFiles = Get-ChildItem -LiteralPath $baseAssetsDir -Recurse -File -Exclude MapTree.dat, MapTreeOpenStatus.dat
+    $baseAssetFiles = Get-ChildItem -LiteralPath $baseAssetsDir -Recurse -File -Exclude "MapTree.dat", "MapTreeOpenStatus.dat", ".gitkeep"
     $currentAssetFiles = Get-ChildItem -LiteralPath $woditorDataDir -Recurse -File -Exclude (@("*.mps", "*.dat", "*.project") + $OtherFiles)
     # To prevent an error, replace null with an empty array when there are no files.
     $baseAssetFiles ??= @()
@@ -146,11 +146,13 @@ else {
         }
     }
     # Remove override asset files that were deleted from the Data directory.
-    $overrideAssetFiles = Get-ChildItem -LiteralPath $overrideAssetsDir -Recurse -File
-    foreach ($file in $overrideAssetFiles) {
-        $relativePath = $file.FullName.Substring($overrideAssetsDir.Length + 1)
-        if (-not (Test-Path -LiteralPath "$woditorDataDir\$relativePath")) {
-            Remove-Item -LiteralPath $file
+    if (Test-Path -LiteralPath $overrideAssetsDir) {
+        $overrideAssetFiles = Get-ChildItem -LiteralPath $overrideAssetsDir -Recurse -File
+        foreach ($file in $overrideAssetFiles) {
+            $relativePath = $file.FullName.Substring($overrideAssetsDir.Length + 1)
+            if (-not (Test-Path -LiteralPath "$woditorDataDir\$relativePath")) {
+                Remove-Item -LiteralPath $file
+            }
         }
     }
 }
