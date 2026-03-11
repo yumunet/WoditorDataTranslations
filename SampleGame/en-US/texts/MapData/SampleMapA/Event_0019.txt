@@ -330,25 +330,25 @@ WoditorEvCOMMAND_END
  |■
 -◇Case: Choice [4] You can change colors with filter effects?! ↓
  |■Show Message: Yeah!\nYou can use the filter effects to change picture colors\nand more!
- |■Picture Show: 1 [Top-Left] File [EnemyGraphic/GD_Basilisk(Red).png] X:20 Y:20 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ |■Picture Show: 1 [Top-Left] File [EnemyGraphic/GD_Basilisk(Red).png] X:20 Y:20 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  |■Show Message: Just for example, let's try tweaking this monster's\ncolors! Here goes!
  |■Effect Picture: 1 [Filter/Hue Saturation Lightness] H150/S0/L0
  |■Show Message: Okay! Just change the hue with the Effect,\nand you get color variations of enemies like this.\nAnd...
  |■Effect Picture: 1 [Filter/Hue Saturation Lightness] H0/S-255/L0
  |■Show Message: Set the saturation to 0, and you can easily get\nblack-and-white ones like this!
  |■Picture Erase: 1  / 0(0) Frames
- |■Picture Show: 1 [Top-Left] File [CharaChip/Special_Tiga.png] X:20 Y:20 / 0(0) Frames  / Pattern 10 / Opacity 255 / Normal  / Angle 0 / Zoom 300% / Color R[100] G[100] B[100]
+ |■Picture Show: 1 [Top-Left] File [CharaChip/Special_Tiga.png] X:20 Y:20 / 0(0) Frames  / Pattern 10 / Opacity 255 / Normal  / Angle 0 / Scale 300% / Color R[100] G[100] B[100]
  |■Show Message: Now for the blur function!\nLet's try it on my image...
  |■Effect Picture: 1 [Filter/Blur] Amount 3
  |■Show Message: Oh my♥\!\nHey, you're not thinking anything naughty, are you?!
  |■Picture Erase: 1  / 0(0) Frames
  |■Show Message: Next up, levels!
- |■Picture Show: 1 [Top-Left] File [CharaChip/Special_Tiga.png] X:20 Y:20 / 0(0) Frames  / Pattern 10 / Opacity 255 / Normal  / Angle 0 / Zoom 300% / Color R[100] G[100] B[100]
+ |■Picture Show: 1 [Top-Left] File [CharaChip/Special_Tiga.png] X:20 Y:20 / 0(0) Frames  / Pattern 10 / Opacity 255 / Normal  / Angle 0 / Scale 300% / Color R[100] G[100] B[100]
  |■Show Message: It's a bit advanced, but it's pretty much like adjusting\nthe contrast!
  |■Effect Picture: 1 [Filter/Levels] Old (100 to 155) => New (0 to 255)
  |■Show Message: Yay! So shiny!
  |■Picture Erase: 1  / 0(0) Frames
- |■Picture Show: 1 [Top-Left] File [CharaChip/Special_Wolfarl.png] X:40 Y:40 / 0(0) Frames  / Pattern 10 / Opacity 255 / Normal  / Angle 0 / Zoom 300% / Color R[100] G[100] B[100]
+ |■Picture Show: 1 [Top-Left] File [CharaChip/Special_Wolfarl.png] X:40 Y:40 / 0(0) Frames  / Pattern 10 / Opacity 255 / Normal  / Angle 0 / Scale 300% / Color R[100] G[100] B[100]
  |■Show Message: And last, invert!\nI'll try inverting your colors!
  |■Effect Picture: 1 [Filter/Invert] 
  |■Show Message: Yeah!\nNot sure what it's for, but maybe just invert the colors\nand go "Oh no!" or something?!
@@ -361,8 +361,8 @@ WoditorEvCOMMAND_END
  |■Show Message: I'll give it a try, so watch closely!\nHere goes!
  |■Sound: SE File [SystemFile/SE_Get.ogg] Vol 100% Pitch 100% (0 Channel) Play / Delay: 0 Frames
  |■Effect Picture: 1 [Flash] R40/G40/B40  [10] Frames
- |■Picture Show: 1 [Top-Left] File [<SCREENSHOT>] X:0 Y:0 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 50% / Color R[100] G[100] B[100]
- |■Picture Move: 1  X:20 Y:20 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 20% / Color R[100] G[100] B[100]
+ |■Picture Show: 1 [Top-Left] File [<SCREENSHOT>] X:0 Y:0 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 50% / Color R[100] G[100] B[100]
+ |■Picture Move: 1  X:20 Y:20 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 20% / Color R[100] G[100] B[100]
  |■Effect Picture: 1 [Adjust Color] R20/G20/B20  [10] Frames
  |■Wait: 20 Frames
  |■Show Message: Ta-da! How's that?!
@@ -371,9 +371,9 @@ WoditorEvCOMMAND_END
  |■Show Message: Here's one way you can use it!
  |■Wait: 12 Frames
  |■Sound: SE File [SystemFile/SE_Encount.ogg] Vol 100% Pitch 100% (0 Channel) Play / Delay: 0 Frames
- |■Picture Show: 1 [Center] File [<SCREENSHOT>] X:160 Y:120 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 50% / Color R[100] G[100] B[100]
- |■Picture Move: 1  X:160 Y:120 / 30(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 7200 / Zoom 300% / Color R[100] G[100] B[100]
- |■Picture Show: 2 [Top-Left] Window [<SQUARE>] Size [320,240] X:0 Y:0 / 30(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ |■Picture Show: 1 [Center] File [<SCREENSHOT>] X:160 Y:120 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 50% / Color R[100] G[100] B[100]
+ |■Picture Move: 1  X:160 Y:120 / 30(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 7200 / Scale 300% / Color R[100] G[100] B[100]
+ |■Picture Show: 2 [Top-Left] Window [<SQUARE>] Size [320,240] X:0 Y:0 / 30(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  |■Wait: 50 Frames
  |■Picture Erase: 1  / 20(0) Frames
  |■Picture Erase: 2  / 20(0) Frames
@@ -385,9 +385,9 @@ WoditorEvCOMMAND_END
  |■Show Message: Okay!\nOh, just think of a mask as a feature for hiding part\nof the area where pictures and such show up!
  |■Show Message: All right, let's go!
  |▼ Display the character and background for now.
- |■Mask: [Fill Mask to [Hide] Entire]
- |■Picture Show: 1 [Center] File [Fog_BackGround/Background_space2_pipo.jpg] X:160 Y:120 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- |■Picture Show: 2 [Center] File [CharaChip/Special_Tiga.png] X:160 Y:100 / 0(0) Frames  / Pattern 3 / Opacity 255 / Normal  / Angle 0 / Zoom 1000% / Color R[100] G[100] B[100]
+ |■Mask: [Fill Mask to Hide Entire]
+ |■Picture Show: 1 [Center] File [Fog_BackGround/Background_space2_pipo.jpg] X:160 Y:120 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
+ |■Picture Show: 2 [Center] File [CharaChip/Special_Tiga.png] X:160 Y:100 / 0(0) Frames  / Pattern 3 / Opacity 255 / Normal  / Angle 0 / Scale 1000% / Color R[100] G[100] B[100]
  |■Effect Picture: 2 [Shake] Shake X 4 / Shake Y 0 / 100000 Times  [1] Frames
  |■Mask: [Enable Picture Mask] => ID 1 to 2 
  |▼ Explosion sound
@@ -397,7 +397,7 @@ WoditorEvCOMMAND_END
  |■Repeat Loop [ 30 ] Times
  | |▼ Mask effect that gradually expands the visible range.
  | |▼ First, make the entire screen invisible with a mask every frame.
- | |■Mask: [Fill Mask to [Hide] Entire]
+ | |■Mask: [Fill Mask to Hide Entire]
  | |▼ Calculate the X position to draw (to the left as time passes).
  | |■Set Variable: This Ev Self5 = -2 * This Ev Self4 
  | |■Set Variable: This Ev Self5 += 160 + 0 
@@ -418,7 +418,7 @@ WoditorEvCOMMAND_END
  |■Repeat Loop [ 30 ] Times
  | |▼ Next, reduce the width of the visible area.
  | |▼ Reset every frame.
- | |■Mask: [Fill Mask to [Hide] Entire]
+ | |■Mask: [Fill Mask to Hide Entire]
  | |▼ Calculate the X position to draw (to the left as time passes).
  | |■Set Variable: This Ev Self5 = -2 * This Ev Self4 
  | |■Set Variable: This Ev Self5 += 160 + 0 
@@ -432,7 +432,7 @@ WoditorEvCOMMAND_END
  | |■Wait: 1 Frames
  | |■
  |◇Loop End Point◇◇
- |■Mask: [Fill Mask to [Hide] Entire]
+ |■Mask: [Fill Mask to Hide Entire]
  |■Wait: 8 Frames
  |■Show Message: Hehe, did you like it?\nTry imagining it like this, the middle part is visible,\nand the rest is hidden!
  |■Picture Erase: 1 to 2  / 0(0) Frames
@@ -441,17 +441,17 @@ WoditorEvCOMMAND_END
 -◇Case: Choice [7] Please explain the cut-in using a mask   ↓
  |■Show Message: Alright, time to start the mask cut-in explanation!\nDon't you dare nod off!
  |■Show Message: First off, I might've said this already, but a mask is\na feature just for hiding part of the display area...
- |■Picture Show: 1 [Center] File [Fog_BackGround/Background_space2_pipo.jpg] X:160 Y:120 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- |■Picture Show: 2 [Center] File [CharaChip/Special_Tiga.png] X:160 Y:100 / 0(0) Frames  / Pattern 3 / Opacity 255 / Normal  / Angle 0 / Zoom 1000% / Color R[100] G[100] B[100]
+ |■Picture Show: 1 [Center] File [Fog_BackGround/Background_space2_pipo.jpg] X:160 Y:120 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
+ |■Picture Show: 2 [Center] File [CharaChip/Special_Tiga.png] X:160 Y:100 / 0(0) Frames  / Pattern 3 / Opacity 255 / Normal  / Angle 0 / Scale 1000% / Color R[100] G[100] B[100]
  |■Effect Picture: 2 [Shake] Shake X 4 / Shake Y 0 / 100000 Times  [1] Frames
  |■Show Message: Actually, behind the scenes in my cut-in,\nthe screen's covered with these pictures!
  |■Mask: [Enable Picture Mask] => ID 1 to 2 
  |■Show Message: But once I fill the mask to hide everything and turn\nthe mask on for this background and my picture...
- |■Mask: [Fill Mask to [Hide] Entire]
+ |■Mask: [Fill Mask to Hide Entire]
  |■Wait: 10 Frames
  |■Show Message: There! All gone!
  |■Show Message: Actually, they're still there. The mask is hiding it all,\nso of course it looks like they're gone, right?
- |■Picture Show: 3 [Center] File [SystemFile/Mask_Draw+_Slash200x480.png] X:60 Y:80 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 20% / Color R[100] G[100] B[100]
+ |■Picture Show: 3 [Center] File [SystemFile/Mask_Draw+_Slash200x480.png] X:60 Y:80 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 20% / Color R[100] G[100] B[100]
  |■Show Message: And now I draw the visible area on the mask,\nusing an image like this with a black line...
  |■Mask: [Add Visible Area (Black) to Mask] =>[SystemFile/Mask_Draw+_Slash200x480.png] X:160 Y:120 (Center)
  |■Show Message: Look! You can see a bit of the middle now!\nSee how that black line on the left is the visible area?!

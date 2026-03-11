@@ -78,16 +78,16 @@ WoditorEvCOMMAND_END
 ■Show Choice: / [1] I want to see an example of Z-order 
 -◇Case: Choice [1] I want to see an example of Z-order      ↓
  |■Show Message: Okay, let me show you an example!\nFirst, I'll show three pictures with picture IDs 10, 15,\nand 20!
- |■Picture Show: 20 [Bottom-Center] String [<C>10\n↓] X:140 Y:85 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- |■Picture Show: 5 [Center] File [Picture/FaceGraphic_Edy.png] X:140 Y:115 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 400% / Color R[100] G[100] B[100]
+ |■Picture Show: 20 [Bottom-Center] String [<C>10\n↓] X:140 Y:85 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
+ |■Picture Show: 5 [Center] File [Picture/FaceGraphic_Edy.png] X:140 Y:115 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 400% / Color R[100] G[100] B[100]
  |■Effect Picture: 0 to 26 [Shift Position (Final Value)] Shift X 0 / Shift Y -20  [0] Frames
  |■Wait: 15 Frames
- |■Picture Show: 21 [Bottom-Center] String [<C>15\n↓] X:160 Y:90 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- |■Picture Show: 10 [Center] File [Picture/FaceGraphic_Wolfarl.png] X:160 Y:120 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 400% / Color R[100] G[100] B[100]
+ |■Picture Show: 21 [Bottom-Center] String [<C>15\n↓] X:160 Y:90 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
+ |■Picture Show: 10 [Center] File [Picture/FaceGraphic_Wolfarl.png] X:160 Y:120 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 400% / Color R[100] G[100] B[100]
  |■Effect Picture: 0 to 26 [Shift Position (Final Value)] Shift X 0 / Shift Y -20  [0] Frames
  |■Wait: 15 Frames
- |■Picture Show: 22 [Bottom-Center] String [<C>20\n↓] X:180 Y:97 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
- |■Picture Show: 15 [Center] File [Picture/FaceGraphic_Yuichi.png] X:180 Y:120 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 400% / Color R[100] G[100] B[100]
+ |■Picture Show: 22 [Bottom-Center] String [<C>20\n↓] X:180 Y:97 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
+ |■Picture Show: 15 [Center] File [Picture/FaceGraphic_Yuichi.png] X:180 Y:120 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 400% / Color R[100] G[100] B[100]
  |■Effect Picture: 0 to 26 [Shift Position (Final Value)] Shift X 0 / Shift Y -20  [0] Frames
  |■Wait: 15 Frames
  |■Show Message: Now, three pictures are overlapping!\nThe Z-order of the newly shown pictures is "0"!

@@ -482,8 +482,8 @@ WoditorEvCOMMAND_END
 -◇Condition:  [2]  [ Sys115:[RO] Game.exe Version (x100) < 220   ] Case↓
  |■Repeat Loop [ 0 ] Times
  | |▼ Old Process: In the past, tile size and resolution were proportional, so we determined it using Sys 84.
- | |■Condition (Number):   [1] Sys84:Screen Resolution (For Old/0-2/-1:Other) ==  0  /  [2] Sys84:Screen Resolution (For Old/0-2/-1:Other) ==  1  /  [3] Sys84:Screen Resolution (For Old/0-2/-1:Other) ==  2  
- | |-◇Condition:  [1]  [ Sys84:Screen Resolution (For Old/0-2/-1:Other) == 0   ] Case↓
+ | |■Condition (Number):   [1] Sys84:Screen Resolution (0-2, -1:Other) ==  0  /  [2] Sys84:Screen Resolution (0-2, -1:Other) ==  1  /  [3] Sys84:Screen Resolution (0-2, -1:Other) ==  2  
+ | |-◇Condition:  [1]  [ Sys84:Screen Resolution (0-2, -1:Other) == 0   ] Case↓
  | | |■Write to DB(Var): VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) =  10
  | | |■Write to DB(Var): VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) =  10
  | | |■Write to DB(Var): VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) =  10
@@ -494,7 +494,7 @@ WoditorEvCOMMAND_END
  | | |▼ Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale.
  | | |■Write to DB(Var): VarDB[ "Base System Variables":3:0 ] (18:[×Unused] Coord Scale [x10]:Number) =  10
  | | |■
- | |-◇Condition:  [2]  [ Sys84:Screen Resolution (For Old/0-2/-1:Other) == 1   ] Case↓
+ | |-◇Condition:  [2]  [ Sys84:Screen Resolution (0-2, -1:Other) == 1   ] Case↓
  | | |■Write to DB(Var): VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) =  20
  | | |■Write to DB(Var): VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) =  20
  | | |■Write to DB(Var): VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) =  20
@@ -505,7 +505,7 @@ WoditorEvCOMMAND_END
  | | |▼ Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale.
  | | |■Write to DB(Var): VarDB[ "Base System Variables":3:0 ] (18:[×Unused] Coord Scale [x10]:Number) =  20
  | | |■
- | |-◇Condition:  [3]  [ Sys84:Screen Resolution (For Old/0-2/-1:Other) == 2   ] Case↓
+ | |-◇Condition:  [3]  [ Sys84:Screen Resolution (0-2, -1:Other) == 2   ] Case↓
  | | |■Write to DB(Var): VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) =  25
  | | |■Write to DB(Var): VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) =  25
  | | |■Write to DB(Var): VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) =  26
@@ -543,7 +543,7 @@ WoditorEvCOMMAND_END
 ■Set Variable: Sys19:Choice Cancel SE (SysDB 3) = 2 + 0 
 ■Set Variable: Sys21:Text Shadow? (0:OFF/1+:ON) = 1 + 0 
 ■Set Variable: Sys22:Choice Cursor Blend Mode(0:Normal/1:Add) = 1 + 0 
-■Set Variable: Sys9:Message Speed (X char./s) = 500 + 0 
+■Set Variable: Sys9:Message Speed (X chars/s) = 500 + 0 
 ■Set Variable: Sys37:Distance Between Members (Steps) = 2 + 0 
 ■Call Event [Name]: ["X[Map]Update Party Info"] <CommonEv 79> 
 ■Repeat Loop [ 1 ] Times
@@ -644,9 +644,9 @@ WoditorEvCOMMAND_END
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ Ver.3.16  Changed the initial volume to 60 and corrected the font weight.
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-■Set Variable: Sys100:BGM Volume Multiplier [%] = 60 + 0 
-■Set Variable: Sys101:BGS Volume Multiplier [%] = 60 + 0 
-■Set Variable: Sys102:SE Volume Multiplier [%] = 60 + 0 
+■Set Variable: Sys100:BGM Volume Multiplier (%) = 60 + 0 
+■Set Variable: Sys101:BGS Volume Multiplier (%) = 60 + 0 
+■Set Variable: Sys102:SE Volume Multiplier (%) = 60 + 0 
 ■Set Variable: Sys125:Font Thickness (1-10) = 6 + 0 
 ▼  
 ▼  

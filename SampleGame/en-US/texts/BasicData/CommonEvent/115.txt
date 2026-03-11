@@ -203,26 +203,26 @@ WoditorEvCOMMAND_END
 ■Write to DB(Var): VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat Speed:Number) =  CSelf0[設定値[0-4]]
 ■Condition (Number):   [1] CSelf0[設定値[0-4]] <=  0  /  [2] CSelf0[設定値[0-4]] ==  1  /  [3] CSelf0[設定値[0-4]] ==  2  
 -◇Condition:  [1]  [ CSelf0[設定値[0-4]] <= 0   ] Case↓
- |■Set Variable: Sys15:Direction Key Repeat First Wait (Frames) = 25 + 0 
- |■Set Variable: Sys16:Direction Key Repeat Next Wait (Frames) = 15 + 0 
+ |■Set Variable: Sys15:Direction Key Repeat First Wait (frames) = 25 + 0 
+ |■Set Variable: Sys16:Direction Key Repeat Next Wait (frames) = 15 + 0 
  |■
 -◇Condition:  [2]  [ CSelf0[設定値[0-4]] == 1   ] Case↓
- |■Set Variable: Sys15:Direction Key Repeat First Wait (Frames) = 19 + 0 
- |■Set Variable: Sys16:Direction Key Repeat Next Wait (Frames) = 9 + 0 
+ |■Set Variable: Sys15:Direction Key Repeat First Wait (frames) = 19 + 0 
+ |■Set Variable: Sys16:Direction Key Repeat Next Wait (frames) = 9 + 0 
  |■
 -◇Condition:  [3]  [ CSelf0[設定値[0-4]] == 2   ] Case↓
- |■Set Variable: Sys15:Direction Key Repeat First Wait (Frames) = 14 + 0 
- |■Set Variable: Sys16:Direction Key Repeat Next Wait (Frames) = 8 + 0 
+ |■Set Variable: Sys15:Direction Key Repeat First Wait (frames) = 14 + 0 
+ |■Set Variable: Sys16:Direction Key Repeat Next Wait (frames) = 8 + 0 
  |■
 ◇End◇
 ■Condition (Number):   [1] CSelf0[設定値[0-4]] ==  3  /  [2] CSelf0[設定値[0-4]] >=  4  
 -◇Condition:  [1]  [ CSelf0[設定値[0-4]] == 3   ] Case↓
- |■Set Variable: Sys15:Direction Key Repeat First Wait (Frames) = 11 + 0 
- |■Set Variable: Sys16:Direction Key Repeat Next Wait (Frames) = 6 + 0 
+ |■Set Variable: Sys15:Direction Key Repeat First Wait (frames) = 11 + 0 
+ |■Set Variable: Sys16:Direction Key Repeat Next Wait (frames) = 6 + 0 
  |■
 -◇Condition:  [2]  [ CSelf0[設定値[0-4]] >= 4   ] Case↓
- |■Set Variable: Sys15:Direction Key Repeat First Wait (Frames) = 9 + 0 
- |■Set Variable: Sys16:Direction Key Repeat Next Wait (Frames) = 4 + 0 
+ |■Set Variable: Sys15:Direction Key Repeat First Wait (frames) = 9 + 0 
+ |■Set Variable: Sys16:Direction Key Repeat Next Wait (frames) = 4 + 0 
  |■
 ◇End◇
 ■

@@ -421,7 +421,7 @@ WoditorEvCOMMAND_END
 ▼  
 ▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
-■Debug Text [Clear]
+■Debug Text Clear All
 ■Write to DB(Var): [Reset Type "Universal Window Items"(19)]
 ■Set Variable: CSelf32[万能DB登録位置] = 0 + 0 
 ■Set Variable: CSelf38[武器＝０　防具＝１] = -1 + 0 

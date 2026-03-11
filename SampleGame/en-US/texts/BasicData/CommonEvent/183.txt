@@ -394,11 +394,11 @@ WoditorEvCOMMAND_END
 ■Condition (Number):   [1] CSelf13[描画モード（通常・加算）] ==  0  /  [2] CSelf13[描画モード（通常・加算）] ==  1  
 -◇Condition:  [1]  [ CSelf13[描画モード（通常・加算）] == 0   ] Case↓
  |▼ 通常描画の場合
- |■Picture Show: CSelf25[一時ピクチャ番号] [Center] File (CSelf9[アニメ画像ファイル]) X:CSelf20[表示元X] Y:CSelf21[表示元Y] / 0(0) Frames  / Pattern 1 / Opacity 0 / Normal  / Angle 0 / Zoom CSelf14[拡大率]% / Color R[CSelf17[カラー補正R]] G[CSelf18[カラー補正G]] B[CSelf19[カラー補正B]]
+ |■Picture Show: CSelf25[一時ピクチャ番号] [Center] File (CSelf9[アニメ画像ファイル]) X:CSelf20[表示元X] Y:CSelf21[表示元Y] / 0(0) Frames  / Pattern 1 / Opacity 0 / Normal  / Angle 0 / Scale CSelf14[拡大率]% / Color R[CSelf17[カラー補正R]] G[CSelf18[カラー補正G]] B[CSelf19[カラー補正B]]
  |■
 -◇Condition:  [2]  [ CSelf13[描画モード（通常・加算）] == 1   ] Case↓
  |▼ 加算描画の場合
- |■Picture Show: CSelf25[一時ピクチャ番号] [Center] File (CSelf9[アニメ画像ファイル]) X:CSelf20[表示元X] Y:CSelf21[表示元Y] / 0(0) Frames  / Pattern 1 / Opacity 0 / Add  / Angle 0 / Zoom CSelf14[拡大率]% / Color R[CSelf17[カラー補正R]] G[CSelf18[カラー補正G]] B[CSelf19[カラー補正B]]
+ |■Picture Show: CSelf25[一時ピクチャ番号] [Center] File (CSelf9[アニメ画像ファイル]) X:CSelf20[表示元X] Y:CSelf21[表示元Y] / 0(0) Frames  / Pattern 1 / Opacity 0 / Add  / Angle 0 / Scale CSelf14[拡大率]% / Color R[CSelf17[カラー補正R]] G[CSelf18[カラー補正G]] B[CSelf19[カラー補正B]]
  |■
 ◇End◇
 ▼  
@@ -411,7 +411,7 @@ WoditorEvCOMMAND_END
  | |■Break Loop
  | |■
  |◇End◇
- |■Picture Move: CSelf25[一時ピクチャ番号]  X:CSelf20[表示元X] Y:CSelf21[表示元Y] / 0(CSelf31[ディレイフレーム]) Frames  / Pattern CSelf30[現在アニメパターン] / Opacity 255 / Blend Mode: Same   / Angle 0 / Zoom Same / Color Same
+ |■Picture Move: CSelf25[一時ピクチャ番号]  X:CSelf20[表示元X] Y:CSelf21[表示元Y] / 0(CSelf31[ディレイフレーム]) Frames  / Pattern CSelf30[現在アニメパターン] / Opacity 255 / Blend Mode: Same   / Angle 0 / Scale Same / Color Same
  |■Load DB(User):  CSelf31[ディレイフレーム] += UserDB[ "┗ Animations":CSelf0[アニメ番号]:"1 Pattern Wait [Frames]" ] (1:-:4) 
  |■
 ◇Loop End Point◇◇

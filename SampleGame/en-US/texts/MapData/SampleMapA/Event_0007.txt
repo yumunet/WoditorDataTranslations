@@ -132,21 +132,21 @@ WoditorEvCOMMAND_END
 -◇Case: Choice [2] Tell me about string pictures            ↓
  |■Show Message: In WOLF RPG Editor, the Picture command isn't\nlimited to showing images—it can also show text!
  |■Show Message: For instance, let's show the text "Professor Rocks!"\nas a picture!
- |■Picture Show: 1000 [Center] String [\f[32]Professor ] X:160 Y:120 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ |■Picture Show: 1000 [Center] String [\f[32]Professor ] X:160 Y:120 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  |■Show Message: See? Just like that!
- |■Picture Move: 1000  Relative X:50 Y:0 / 10(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ |■Picture Move: 1000  Relative X:50 Y:0 / 10(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  |■Show Message: Since this is a picture,\nwe can move its display position...
- |■Picture Move: 1000  Relative X:0 Y:0 / 20(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 150% / Color R[100] G[100] B[100]
+ |■Picture Move: 1000  Relative X:0 Y:0 / 20(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 150% / Color R[100] G[100] B[100]
  |■Show Message: And have it enlarge and shrink! When you're making\nyour own menus, it's phenomenally useful!!
  |■Picture Erase: 1000  / 10(0) Frames
  |■
 -◇Case: Choice [3] Tell me about window pictures            ↓
  |■Show Message: This is a function which displays a freeform-size\nwindow image as a picture!
- |■Picture Show: 1000 [Center] File [SystemFile/WindowBase_amania.png] X:160 Y:120 / 10(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ |■Picture Show: 1000 [Center] File [SystemFile/WindowBase_amania.png] X:160 Y:120 / 10(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  |■Show Message: For example, if we just make a base image which can\nbe divided into 3x3 segments...
- |■Picture Show: 1000 [Center] Window [SystemFile/WindowBase_amania.png] Size [100,80] X:160 Y:120 / 10(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ |■Picture Show: 1000 [Center] Window [SystemFile/WindowBase_amania.png] Size [100,80] X:160 Y:120 / 10(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  |■Show Message: Then we can make windows like this...
- |■Picture Show: 1000 [Center] Window [SystemFile/WindowBase_amania.png] Size [150,60] X:160 Y:120 / 10(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ |■Picture Show: 1000 [Center] Window [SystemFile/WindowBase_amania.png] Size [150,60] X:160 Y:120 / 10(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  |■Show Message: Or windows like this! It's as simple as specifying what\nsize to make the window!
  |■Picture Erase: 1000  / 10(0) Frames
  |■Show Message: This means there's no need to make separate\nwindows in all different sizes! Handy, yes?!

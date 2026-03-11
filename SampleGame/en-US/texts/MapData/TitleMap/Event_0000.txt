@@ -157,7 +157,7 @@ WoditorEvCOMMAND_END
 ▼  
 ▼ Display title image. [The image used here will be the title image]
 ▼ By default, "TitleGraphic.png" in the "SystemFile" folder is the title screen.
-■Picture Show: 1 [Top-Left] File [SystemFile/TitleGraphic.png] X:0 Y:0 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+■Picture Show: 1 [Top-Left] File [SystemFile/TitleGraphic.png] X:0 Y:0 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
 ▼  
 ▼ When starting the game, insert a 1-frame wait to
 ▼ allow for the initialization of the base system!

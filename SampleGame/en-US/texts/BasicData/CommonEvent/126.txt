@@ -323,8 +323,8 @@ WoditorEvCOMMAND_END
  | |■Condition (Number):   [1] CSelf13[キー入力状態] !=  CSelf14[直前キー入力状態]  
  | |-◇Condition:  [1]  [ CSelf13[キー入力状態] != CSelf14[直前キー入力状態]   ] Case↓
  | | |▼ ■キャンセルキーが押されたらメニュー起動フラグをオンにする
- | | |■Condition (Number):   [1] Sys35:Leader Moving? (1:Yes) *Between Tiles? ==  0  
- | | |-◇Condition:  [1]  [ Sys35:Leader Moving? (1:Yes) *Between Tiles? == 0   ] Case↓
+ | | |■Condition (Number):   [1] Sys35:Leader Moving? (Between Tiles?) [1:Yes] ==  0  
+ | | |-◇Condition:  [1]  [ Sys35:Leader Moving? (Between Tiles?) [1:Yes] == 0   ] Case↓
  | | | |■Condition (Number):   [1] Sys13:Event Active? (1:Yes) ==  0  
  | | | |-◇Condition:  [1]  [ Sys13:Event Active? (1:Yes) == 0   ] Case↓
  | | | | |■Condition (Number):   [1] CSelf13[キー入力状態] ==  11  
@@ -362,8 +362,8 @@ WoditorEvCOMMAND_END
  | | | | | |▼ イベントが起動しておらず、移動中でもない場合にメニューを起動
  | | | | | |■Condition (Number):   [1] Sys13:Event Active? (1:Yes) ==  0  
  | | | | | |-◇Condition:  [1]  [ Sys13:Event Active? (1:Yes) == 0   ] Case↓
- | | | | | | |■Condition (Number):   [1] Sys35:Leader Moving? (1:Yes) *Between Tiles? ==  0  
- | | | | | | |-◇Condition:  [1]  [ Sys35:Leader Moving? (1:Yes) *Between Tiles? == 0   ] Case↓
+ | | | | | | |■Condition (Number):   [1] Sys35:Leader Moving? (Between Tiles?) [1:Yes] ==  0  
+ | | | | | | |-◇Condition:  [1]  [ Sys35:Leader Moving? (Between Tiles?) [1:Yes] == 0   ] Case↓
  | | | | | | | |▼ 起動に成功する場合は、ここへ来る
  | | | | | | | |▼  
  | | | | | | | |▼ 「直前キー入力状態」を更新
@@ -396,8 +396,8 @@ WoditorEvCOMMAND_END
  |▼ 「直前キー入力状態」を更新
  |■Set Variable: CSelf14[直前キー入力状態] = CSelf13[キー入力状態] + 0 
  |▼ 一歩でも動いていたら歩行定期処理を呼び出す
- |■Set Variable+: CSelf20[現在主人公座標X] = Leader's X Position (Precise) *Left of Character
- |■Set Variable+: CSelf21[現在主人公座標Y] = Leader's Y Position (Precise) *Top of Character
+ |■Set Variable+: CSelf20[現在主人公座標X] = Leader's X Position (Precise) [Left of Character]
+ |■Set Variable+: CSelf21[現在主人公座標Y] = Leader's Y Position (Precise) [Top of Character]
  |■Condition (Number):   [1] CSelf20[現在主人公座標X] !=  CSelf22[前回主人公座標X]  
  |-◇Condition:  [1]  [ CSelf20[現在主人公座標X] != CSelf22[前回主人公座標X]   ] Case↓
  | |■Call Event [Name]: ["X[Map]Update States"] <CommonEv 76> 

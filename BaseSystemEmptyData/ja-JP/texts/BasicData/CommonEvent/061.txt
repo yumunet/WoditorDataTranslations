@@ -204,6 +204,6 @@ WoditorEvCOMMAND_END
  |■
 ◇分岐終了◇
 ■変数操作: CSelf0[ｳｪｲﾄするﾌﾚｰﾑ] /= CSelf30[割る数] + 0 
-■変数操作: CSelf0[ｳｪｲﾄするﾌﾚｰﾑ] 下限= 1 + 0 
+■変数操作: CSelf0[ｳｪｲﾄするﾌﾚｰﾑ] 引上げ= 1 + 0 
 ■
 [COMMAND_TEXT_END]

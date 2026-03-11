@@ -20,9 +20,9 @@ ITEMNAME1=BGM Number (From List)
 ITEMNAME2=BGS Number (From List)
 ITEMNAME3=Loop: 1 Horz/2 Vert/3 Both
 ITEMNAME4=Background Number
-ITEMNAME5=BGM Filename [Number=-3]
-ITEMNAME6=BGS Filename [Number=-3]
-ITEMNAME7=BG Filename [Number=-3]
+ITEMNAME5=BGM Filename (Number=-3)
+ITEMNAME6=BGS Filename (Number=-3)
+ITEMNAME7=BG Filename (Number=-3)
 MEMO=Specify the map files<<\n>>you want to load,<<\n>>and their BGM/BGS.<<\n>><<\n>>Map settings set in<<\n>>the main window will<<\n>>be reflected here.<<\n>>
 ITEMTYPE_NUM=100
 ITEM_LOADTYPE_0=1
@@ -196,7 +196,7 @@ DEFAULT_VAL_5=0
 DEFAULT_VAL_6=0
 DEFAULT_VAL_7=0
 <<--CSV_START-->>
-"Map Filename","BGM Number (From List)","BGS Number (From List)","Loop: 1 Horz/2 Vert/3 Both","Background Number","BGM Filename [Number=-3]","BGS Filename [Number=-3]","BG Filename [Number=-3]",
+"Map Filename","BGM Number (From List)","BGS Number (From List)","Loop: 1 Horz/2 Vert/3 Both","Background Number","BGM Filename (Number=-3)","BGS Filename (Number=-3)","BG Filename (Number=-3)",
 "MapData/TitleMap.mps",-3,-1,0,-2,"BGM/Field01_Juno.mid
 100
 100

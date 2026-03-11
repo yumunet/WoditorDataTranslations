@@ -843,8 +843,8 @@ WoditorEvCOMMAND_END
  |■Load DB(Var):  CSelf60[[保存]キー位置保存] = VarDB[ "Base System Variables":56:0 ] (18:[System] Cursor Memory:Number) 
  |■Load DB(Var):  CSelf61[[保存]キーリピート] = VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat Speed:Number) 
  |■Load DB(Var):  CSelf62[[保存]戦闘時連打] = VarDB[ "Base System Variables":58:0 ] (18:[System] Battle Key Hold:Number) 
- |■Set Variable: CSelf63[[保存]ＢＧＭ音量] = Sys100:BGM Volume Multiplier [%] + 0 
- |■Set Variable: CSelf64[[保存]ＳＥ音量] = Sys102:SE Volume Multiplier [%] + 0 
+ |■Set Variable: CSelf63[[保存]ＢＧＭ音量] = Sys100:BGM Volume Multiplier (%) + 0 
+ |■Set Variable: CSelf64[[保存]ＳＥ音量] = Sys102:SE Volume Multiplier (%) + 0 
  |■Set Variable: CSelf65[[保存]キーボ決定] = Sys52:Confirm (Keyboard) + 0 
  |■Set Variable: CSelf66[[保存]キーボキャンセル] = Sys53:Cancel (Keyboard) + 0 
  |■Set Variable: CSelf67[[保存]キーボサブ] = Sys54:Sub (Keyboard) + 0 
@@ -1151,11 +1151,11 @@ WoditorEvCOMMAND_END
  | |▼ ＢＧＭ音量
  | |■Condition (Number):   [1] CSelf13[戻る(-1) 次へ(1) 決定(2)] ==  -1  /  [2] CSelf13[戻る(-1) 次へ(1) 決定(2)] ==  1  
  | |-◇Condition:  [1]  [ CSelf13[戻る(-1) 次へ(1) 決定(2)] == -1   ] Case↓
- | | |■Condition (Number):   [1] Sys100:BGM Volume Multiplier [%] <=  10  /  [2] Sys100:BGM Volume Multiplier [%] <=  20  
- | | |-◇Condition:  [1]  [ Sys100:BGM Volume Multiplier [%] <= 10   ] Case↓
+ | | |■Condition (Number):   [1] Sys100:BGM Volume Multiplier (%) <=  10  /  [2] Sys100:BGM Volume Multiplier (%) <=  20  
+ | | |-◇Condition:  [1]  [ Sys100:BGM Volume Multiplier (%) <= 10   ] Case↓
  | | | |■Set Variable: CSelf14[変動単位] = 1 + 0 
  | | | |■
- | | |-◇Condition:  [2]  [ Sys100:BGM Volume Multiplier [%] <= 20   ] Case↓
+ | | |-◇Condition:  [2]  [ Sys100:BGM Volume Multiplier (%) <= 20   ] Case↓
  | | | |■Set Variable: CSelf14[変動単位] = 2 + 0 
  | | | |■
  | | |-◇Else
@@ -1165,11 +1165,11 @@ WoditorEvCOMMAND_END
  | | |■Set Variable: CSelf14[変動単位] *= -1 + 0 
  | | |■
  | |-◇Condition:  [2]  [ CSelf13[戻る(-1) 次へ(1) 決定(2)] == 1   ] Case↓
- | | |■Condition (Number):   [1] Sys100:BGM Volume Multiplier [%] <  10  /  [2] Sys100:BGM Volume Multiplier [%] <  20  
- | | |-◇Condition:  [1]  [ Sys100:BGM Volume Multiplier [%] < 10   ] Case↓
+ | | |■Condition (Number):   [1] Sys100:BGM Volume Multiplier (%) <  10  /  [2] Sys100:BGM Volume Multiplier (%) <  20  
+ | | |-◇Condition:  [1]  [ Sys100:BGM Volume Multiplier (%) < 10   ] Case↓
  | | | |■Set Variable: CSelf14[変動単位] = 1 + 0 
  | | | |■
- | | |-◇Condition:  [2]  [ Sys100:BGM Volume Multiplier [%] < 20   ] Case↓
+ | | |-◇Condition:  [2]  [ Sys100:BGM Volume Multiplier (%) < 20   ] Case↓
  | | | |■Set Variable: CSelf14[変動単位] = 2 + 0 
  | | | |■
  | | |-◇Else
@@ -1184,10 +1184,10 @@ WoditorEvCOMMAND_END
  | |◇End◇
  | |■Condition (Number):   [1] CSelf14[変動単位] !=  0  
  | |-◇Condition:  [1]  [ CSelf14[変動単位] != 0   ] Case↓
- | | |■Set Variable: Sys100:BGM Volume Multiplier [%] += CSelf14[変動単位] + 0 
- | | |■Set Variable: Sys100:BGM Volume Multiplier [%] Lower Bound= 0 + 0 
- | | |■Set Variable: Sys100:BGM Volume Multiplier [%] Upper Bound= 120 + 0 
- | | |■Set Variable: Sys101:BGS Volume Multiplier [%] = Sys100:BGM Volume Multiplier [%] + 0 
+ | | |■Set Variable: Sys100:BGM Volume Multiplier (%) += CSelf14[変動単位] + 0 
+ | | |■Set Variable: Sys100:BGM Volume Multiplier (%) Lower Bound= 0 + 0 
+ | | |■Set Variable: Sys100:BGM Volume Multiplier (%) Upper Bound= 120 + 0 
+ | | |■Set Variable: Sys101:BGS Volume Multiplier (%) = Sys100:BGM Volume Multiplier (%) + 0 
  | | |▼ Ver3.00修正
  | | |■Set Variable: CSelf90[内容に変更あり] = 1 + 0 
  | | |■
@@ -1202,11 +1202,11 @@ WoditorEvCOMMAND_END
  | |▼ ＳＥ音量
  | |■Condition (Number):   [1] CSelf13[戻る(-1) 次へ(1) 決定(2)] ==  -1  /  [2] CSelf13[戻る(-1) 次へ(1) 決定(2)] ==  1  
  | |-◇Condition:  [1]  [ CSelf13[戻る(-1) 次へ(1) 決定(2)] == -1   ] Case↓
- | | |■Condition (Number):   [1] Sys102:SE Volume Multiplier [%] <=  10  /  [2] Sys102:SE Volume Multiplier [%] <=  20  
- | | |-◇Condition:  [1]  [ Sys102:SE Volume Multiplier [%] <= 10   ] Case↓
+ | | |■Condition (Number):   [1] Sys102:SE Volume Multiplier (%) <=  10  /  [2] Sys102:SE Volume Multiplier (%) <=  20  
+ | | |-◇Condition:  [1]  [ Sys102:SE Volume Multiplier (%) <= 10   ] Case↓
  | | | |■Set Variable: CSelf14[変動単位] = 1 + 0 
  | | | |■
- | | |-◇Condition:  [2]  [ Sys102:SE Volume Multiplier [%] <= 20   ] Case↓
+ | | |-◇Condition:  [2]  [ Sys102:SE Volume Multiplier (%) <= 20   ] Case↓
  | | | |■Set Variable: CSelf14[変動単位] = 2 + 0 
  | | | |■
  | | |-◇Else
@@ -1216,11 +1216,11 @@ WoditorEvCOMMAND_END
  | | |■Set Variable: CSelf14[変動単位] *= -1 + 0 
  | | |■
  | |-◇Condition:  [2]  [ CSelf13[戻る(-1) 次へ(1) 決定(2)] == 1   ] Case↓
- | | |■Condition (Number):   [1] Sys102:SE Volume Multiplier [%] <  10  /  [2] Sys102:SE Volume Multiplier [%] <  20  
- | | |-◇Condition:  [1]  [ Sys102:SE Volume Multiplier [%] < 10   ] Case↓
+ | | |■Condition (Number):   [1] Sys102:SE Volume Multiplier (%) <  10  /  [2] Sys102:SE Volume Multiplier (%) <  20  
+ | | |-◇Condition:  [1]  [ Sys102:SE Volume Multiplier (%) < 10   ] Case↓
  | | | |■Set Variable: CSelf14[変動単位] = 1 + 0 
  | | | |■
- | | |-◇Condition:  [2]  [ Sys102:SE Volume Multiplier [%] < 20   ] Case↓
+ | | |-◇Condition:  [2]  [ Sys102:SE Volume Multiplier (%) < 20   ] Case↓
  | | | |■Set Variable: CSelf14[変動単位] = 2 + 0 
  | | | |■
  | | |-◇Else
@@ -1235,9 +1235,9 @@ WoditorEvCOMMAND_END
  | |◇End◇
  | |■Condition (Number):   [1] CSelf14[変動単位] !=  0  
  | |-◇Condition:  [1]  [ CSelf14[変動単位] != 0   ] Case↓
- | | |■Set Variable: Sys102:SE Volume Multiplier [%] += CSelf14[変動単位] + 0 
- | | |■Set Variable: Sys102:SE Volume Multiplier [%] Lower Bound= 0 + 0 
- | | |■Set Variable: Sys102:SE Volume Multiplier [%] Upper Bound= 120 + 0 
+ | | |■Set Variable: Sys102:SE Volume Multiplier (%) += CSelf14[変動単位] + 0 
+ | | |■Set Variable: Sys102:SE Volume Multiplier (%) Lower Bound= 0 + 0 
+ | | |■Set Variable: Sys102:SE Volume Multiplier (%) Upper Bound= 120 + 0 
  | | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 1:表示内容更新 / 0
  | | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
  | | |▼ Ver3.00修正
@@ -1254,7 +1254,7 @@ WoditorEvCOMMAND_END
  | | |▼ キー設定（キーボード）
  | | |■Set Variable: CSelf22[直前キー] = CSelf20[キー入力１] + 0 
  | | |■Set Variable: CSelf23[リピートカウント] = 0 + 0 
- | | |■Set Variable: CSelf24[最大リピートカウント] = Sys16:Direction Key Repeat Next Wait (Frames) + 0 
+ | | |■Set Variable: CSelf24[最大リピートカウント] = Sys16:Direction Key Repeat Next Wait (frames) + 0 
  | | |■Loop Start
  | | | |■Wait: 1 Frames
  | | | |■Key Input: CSelf20[キー入力１] [Normal Input]  4-Dir
@@ -1330,7 +1330,7 @@ WoditorEvCOMMAND_END
  | | |▼ キー設定（パッド）
  | | |■Set Variable: CSelf22[直前キー] = CSelf20[キー入力１] + 0 
  | | |■Set Variable: CSelf23[リピートカウント] = 0 + 0 
- | | |■Set Variable: CSelf24[最大リピートカウント] = Sys16:Direction Key Repeat Next Wait (Frames) + 0 
+ | | |■Set Variable: CSelf24[最大リピートカウント] = Sys16:Direction Key Repeat Next Wait (frames) + 0 
  | | |■Loop Start
  | | | |■Wait: 1 Frames
  | | | |■Key Input: CSelf20[キー入力１] [Normal Input]  4-Dir
@@ -1409,9 +1409,9 @@ WoditorEvCOMMAND_END
  | | |■Write to DB(Var): VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat Speed:Number) =  2
  | | |▼ Ver3.00修正==>
  | | |■Write to DB(Var): VarDB[ "Base System Variables":58:0 ] (18:[System] Battle Key Hold:Number) =  0
- | | |■Set Variable: Sys100:BGM Volume Multiplier [%] = 50 + 0 
- | | |■Set Variable: Sys101:BGS Volume Multiplier [%] = 50 + 0 
- | | |■Set Variable: Sys102:SE Volume Multiplier [%] = 50 + 0 
+ | | |■Set Variable: Sys100:BGM Volume Multiplier (%) = 50 + 0 
+ | | |■Set Variable: Sys101:BGS Volume Multiplier (%) = 50 + 0 
+ | | |■Set Variable: Sys102:SE Volume Multiplier (%) = 50 + 0 
  | | |▼ <==Ver3.00修正
  | | |■Set Variable: Sys52:Confirm (Keyboard) = 144 + 0 
  | | |■Set Variable: Sys53:Cancel (Keyboard) = 145 + 0 
@@ -1471,9 +1471,9 @@ WoditorEvCOMMAND_END
  |■Write to DB(Var): VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat Speed:Number) =  CSelf61[[保存]キーリピート]
  |■Call Event [Name]: ["X[Map]Set Key Repeat"] <CommonEv 115>  / CSelf61[[保存]キーリピート]
  |■Write to DB(Var): VarDB[ "Base System Variables":58:0 ] (18:[System] Battle Key Hold:Number) =  CSelf62[[保存]戦闘時連打]
- |■Set Variable: Sys100:BGM Volume Multiplier [%] = CSelf63[[保存]ＢＧＭ音量] + 0 
- |■Set Variable: Sys101:BGS Volume Multiplier [%] = CSelf63[[保存]ＢＧＭ音量] + 0 
- |■Set Variable: Sys102:SE Volume Multiplier [%] = CSelf64[[保存]ＳＥ音量] + 0 
+ |■Set Variable: Sys100:BGM Volume Multiplier (%) = CSelf63[[保存]ＢＧＭ音量] + 0 
+ |■Set Variable: Sys101:BGS Volume Multiplier (%) = CSelf63[[保存]ＢＧＭ音量] + 0 
+ |■Set Variable: Sys102:SE Volume Multiplier (%) = CSelf64[[保存]ＳＥ音量] + 0 
  |■Set Variable: Sys52:Confirm (Keyboard) = CSelf65[[保存]キーボ決定] + 0 
  |■Set Variable: Sys53:Cancel (Keyboard) = CSelf66[[保存]キーボキャンセル] + 0 
  |■Set Variable: Sys54:Sub (Keyboard) = CSelf67[[保存]キーボサブ] + 0 

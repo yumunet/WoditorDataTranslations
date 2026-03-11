@@ -118,7 +118,7 @@ WoditorEvCOMMAND_END
  | |■Wait: 30 Frames
  | |▼ Start end credits here.
  | |■Sound: BGM 1[End Credits] Play / Fade Time: 10 Frames
- | |■Picture Show: 1 [Top-Center] String [<C>Sample Game -] X:160 Y:295 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | |■Picture Show: 1 [Top-Center] String [<C>Sample Game -] X:160 Y:295 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  | |■Set Variable: This Ev Self0 = 0 + 0 
  | |■Loop Start
  | | |■Wait: 4 Frames
@@ -128,12 +128,12 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [1]  [ This Ev Self1 == 0   ] Case↓
  | | | |▼ When Confirm and Cancel are not pressed (key input is 0).
  | | | |■Set Variable: This Ev Self0 += 1 + 0 
- | | | |■Picture Move: 1  Relative X:0 Y:-1 / 4(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | | |■Picture Move: 1  Relative X:0 Y:-1 / 4(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  | | | |■
  | | |-◇Condition:  [2]  [ This Ev Self1 >= 10   ] Case↓
  | | | |▼ When Confirm (10) or Cancel (11) is pressed, move the picture quickly.
  | | | |■Set Variable: This Ev Self0 += 16 + 0 
- | | | |■Picture Move: 1  Relative X:0 Y:-16 / 4(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Zoom 100% / Color R[100] G[100] B[100]
+ | | | |■Picture Move: 1  Relative X:0 Y:-16 / 4(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  | | | |■
  | | |◇End◇
  | | |▼ After moving 1749 pixels (the length of the end credits), end.

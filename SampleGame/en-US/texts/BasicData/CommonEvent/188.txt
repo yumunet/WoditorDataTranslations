@@ -457,8 +457,8 @@ WoditorEvCOMMAND_END
 ▼ 現在のBGMを保存する
 ■Set Variable+: CSelf25[記憶BGM番号] = [Sound] Playing BGM Number
 ■Set String: CSelf9[記憶曲] = SysS33[[RO] Playing BGM File]
-■Set Variable: CSelf99[音量記憶] = Sys95:Playing BGM Volume [%] + 0 
-■Set Variable: CSelf98[周波数記憶] = Sys96:Playing BGM Tempo/Pitch [%] + 0 
+■Set Variable: CSelf99[音量記憶] = Sys95:Playing BGM Volume (%) + 0 
+■Set Variable: CSelf98[周波数記憶] = Sys96:Playing BGM Tempo/Pitch (%) + 0 
 ■Repeat Loop [ 1 ] Times
  |▼ 戦闘曲を再生
  |■Set String: CSelf8[再生戦闘曲] = ""
