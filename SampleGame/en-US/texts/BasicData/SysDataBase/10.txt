@@ -10,8 +10,8 @@ DATA_NUM=3
 TYPENAME=Window Images
 ITEMNAME_NUM=2
 ITEMNAME0=Image Filename
-ITEMNAME1=Vertical Divisions (For Some)
-MEMO=○ means<<\n>>"Vertical Divisions" is used.<<\n>><<\n>>× means it does nothing.<<\n>><<\n>>* "1:×Choice Window" is<<\n>>divided into 3x3 sections<<\n>>for use.<<\n>>
+ITEMNAME1=Vertical Divisions (V-Div Only)
+MEMO=When running the<<\n>>"Show Message"<<\n>>command, Data 0 is<<\n>>used as the continue<<\n>>icon.<<\n>><<\n>>When running the<<\n>>"Show Choices"<<\n>>command, Data 1 and 2<<\n>>are used as the choice<<\n>>window sprite and the<<\n>>choice cursor sprite.<<\n>><<\n>>Note:<<\n>>Data 1 (Choice Window)<<\n>>is divided into 3x3<<\n>>sections and stretched<<\n>>when displayed.<<\n>>(Same as the Simple<<\n>>Window option in the<<\n>>Picture command.)
 ITEMTYPE_NUM=100
 ITEM_LOADTYPE_0=1
 ITEM_LOADTYPE_1=0
@@ -128,9 +128,9 @@ DEFAULT_VAL_NUM=2
 DEFAULT_VAL_0=0
 DEFAULT_VAL_1=0
 <<--CSV_START-->>
-"Image Filename","Vertical Divisions (For Some)",
-"SystemFile/Text_Pause.png",6,<<!--DATANAME--!>>○Message Continue Icon,
-"SystemFile/WindowBase.png",0,<<!--DATANAME--!>>×Choice Window,
-"SystemFile/CursorBase.png",1,<<!--DATANAME--!>>○Choice Cursor,
+"Image Filename","Vertical Divisions (V-Div Only)",
+"SystemFile/Text_Pause.png",6,<<!--DATANAME--!>>Message Continue Icon [V-Div],
+"SystemFile/WindowBase.png",0,<<!--DATANAME--!>>Choice Window [No V-Div],
+"SystemFile/CursorBase.png",1,<<!--DATANAME--!>>Choice Cursor [V-Div],
 
 <<--CSV_END-->>

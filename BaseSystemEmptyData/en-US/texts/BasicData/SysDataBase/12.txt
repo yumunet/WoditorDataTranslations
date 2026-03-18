@@ -13,7 +13,7 @@ ITEMNAME_NUM=3
 ITEMNAME0=Red (0-255)
 ITEMNAME1=Green (0-255)
 ITEMNAME2=Blue (0-255)
-MEMO=10 to 13 are the colors for<<\n>>keyboard input, so don't<<\n>>change their names.<<\n>><<\n>>14 and higher can be used.<<\n>>
+MEMO=Specify text colors for<<\n>>"\c[X]" in messages.<<\n>><<\n>>When using "Keyboard<<\n>>Input" in the Set String<<\n>>command, the following<<\n>>colors are used:<<\n>> 10: Keyboard Input Text<<\n>> 11: Keyboard Input IME<<\n>>Background<<\n>><<\n>>When using "\r[A,B]"<<\n>>(ruby text) in messages,<<\n>>the following color is<<\n>>used:<<\n>> 13: Ruby Text
 ITEMTYPE_NUM=100
 ITEM_LOADTYPE_0=0
 ITEM_LOADTYPE_1=0
@@ -143,8 +143,8 @@ DEFAULT_VAL_2=0
 0,0,0,<<!--DATANAME--!>>,
 0,0,0,<<!--DATANAME--!>>,
 0,0,0,<<!--DATANAME--!>>,
-255,255,255,<<!--DATANAME--!>>[Sys] KB Input Text,
-170,170,200,<<!--DATANAME--!>>[Sys] KB Input IME Background,
+255,255,255,<<!--DATANAME--!>>[Sys] Keyboard Input Text,
+170,170,200,<<!--DATANAME--!>>[Sys] Keyboard Input IME Background,
 255,100,100,<<!--DATANAME--!>> (×Invalid) [Sys] KB Input IME Underline,
 255,255,255,<<!--DATANAME--!>>[Sys] Ruby Text,
 0,0,0,<<!--DATANAME--!>>,

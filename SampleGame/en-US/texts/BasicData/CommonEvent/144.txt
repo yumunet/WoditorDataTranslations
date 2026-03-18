@@ -164,7 +164,7 @@ CSELF_NAME_96=
 CSELF_NAME_97=
 CSELF_NAME_98=
 CSELF_NAME_99=
-COMMAND_NUM=117
+COMMAND_NUM=120
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
@@ -206,6 +206,9 @@ WoditorEvCOMMAND_START
 [499][0,0]<0>()()
 [250][5,4]<0>(9,1600001,2,332288,1600042)("","Enemies","","Max HP")
 [250][5,4]<0>(9,1600001,3,332288,1600043)("","Enemies","","Max SP")
+[103][0,1]<0>()("HP・最大HPを最低1に引き上げる　Ver3.33")
+[121][4,0]<0>(1600040,1,0,1536)()
+[121][4,0]<0>(1600042,1,0,1536)()
 [250][5,4]<0>(9,1600001,4,332288,1600044)("","Enemies","","Attack")
 [250][5,4]<0>(9,1600001,5,332288,1600045)("","Enemies","","Defense")
 [250][5,4]<0>(9,1600001,6,332288,1600046)("","Enemies","","Magic Attack")
@@ -326,6 +329,9 @@ WoditorEvCOMMAND_END
 ◇End◇
 ■Load DB(User):  CSelf42[最大HP] = UserDB[ "Enemies":CSelf1[読込敵個体ID]:"Max HP" ] (9:-:2) 
 ■Load DB(User):  CSelf43[最大SP] = UserDB[ "Enemies":CSelf1[読込敵個体ID]:"Max SP" ] (9:-:3) 
+▼ HP・最大HPを最低1に引き上げる　Ver3.33
+■Set Variable: CSelf40[HP] Lower Bound= 1 + 0 
+■Set Variable: CSelf42[最大HP] Lower Bound= 1 + 0 
 ■Load DB(User):  CSelf44[攻撃力] = UserDB[ "Enemies":CSelf1[読込敵個体ID]:"Attack" ] (9:-:4) 
 ■Load DB(User):  CSelf45[防御力] = UserDB[ "Enemies":CSelf1[読込敵個体ID]:"Defense" ] (9:-:5) 
 ■Load DB(User):  CSelf46[精神攻撃] = UserDB[ "Enemies":CSelf1[読込敵個体ID]:"Magic Attack" ] (9:-:6) 

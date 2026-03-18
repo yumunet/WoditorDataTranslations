@@ -7,7 +7,7 @@ STRDATA_TYPE_NUM=0
 DATA_NUM=90
 TYPENAME=システム文字列
 ITEMNAME_NUM=0
-MEMO=
+MEMO=システム文字列名です。<<\n>>このデータは変更できません。<<\n>><<\n>>([文字列操作]コマンド時などに<<\n>> SysS??としてこれらのデータの<<\n>> 名前が表示されています)
 ITEMTYPE_NUM=100
 ITEM_LOADTYPE_0=0
 ITEM_LOADTYPE_1=0
@@ -194,8 +194,8 @@ DEFAULT_VAL_NUM=0
 <<!--DATANAME--!>>[読]OSの言語名,
 <<!--DATANAME--!>> -----,
 <<!--DATANAME--!>> -----,
-<<!--DATANAME--!>> -----,
-<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>[読]ゲーム名 メイン,
+<<!--DATANAME--!>>[読]ゲーム名 追記,
 <<!--DATANAME--!>> -----,
 <<!--DATANAME--!>> -----,
 <<!--DATANAME--!>> -----,

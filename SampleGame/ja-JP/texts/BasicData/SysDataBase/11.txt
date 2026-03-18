@@ -5,11 +5,11 @@ ITEM_NUM=1
 DATATYPE_0=2000
 NUMDATA_TYPE_NUM=0
 STRDATA_TYPE_NUM=1
-DATA_NUM=1
+DATA_NUM=10
 TYPENAME=ﾄﾗﾝｼﾞｼｮﾝﾀｲﾌﾟ
 ITEMNAME_NUM=1
 ITEMNAME0=ﾌｧｲﾙ名(ﾓﾉｸﾛ)
-MEMO=
+MEMO=[イベント制御]の<<\n>>[トランジションの指定]コマンドで<<\n>>選択できるトランジション画像を<<\n>>ここで指定します。<<\n>><<\n>>トランジションとは<<\n>>画面の切り替わり演出です。<<\n>>画像はグレースケールで<<\n>>作成する必要があります。
 ITEMTYPE_NUM=100
 ITEM_LOADTYPE_0=1
 ITEM_LOADTYPE_1=0
@@ -124,5 +124,14 @@ DEFAULT_VAL_0=0
 <<--CSV_START-->>
 "ﾌｧｲﾙ名(ﾓﾉｸﾛ)",
 "SystemFile/Transition_Fade.png",<<!--DATANAME--!>>横フェード,
+"",<<!--DATANAME--!>>,
+"",<<!--DATANAME--!>>,
+"",<<!--DATANAME--!>>,
+"",<<!--DATANAME--!>>,
+"",<<!--DATANAME--!>>,
+"",<<!--DATANAME--!>>,
+"",<<!--DATANAME--!>>,
+"",<<!--DATANAME--!>>,
+"",<<!--DATANAME--!>>,
 
 <<--CSV_END-->>

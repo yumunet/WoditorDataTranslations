@@ -53,11 +53,11 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("Well then, we wish you a pleasant game development life!")
 [103][0,1]<0>()("If you don't understand anything, check the Perfect Guide below! (Japanese)")
-[103][0,1]<0>()("https://www.silversecond.com/WolfRPGEditor/Guide/")
+[103][0,1]<0>()("https://silversecond.com/WolfRPGEditor/Guide/")
 [103][0,1]<0>()("――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("[About the Blue [S] Mark]")
 [103][0,1]<0>()("(By the way, what's the blue [S] mark? That's the starting position of the game.")
-[103][0,1]<0>()(" If you want to change it, go to the event layer, right-click on the map,")
+[103][0,1]<0>()(" If you want to change it, go to the event layer (the <dqrt>Ev<dqrt> icon), right-click on the map,")
 [103][0,1]<0>()(" and select <dqrt>Set Game Start Position.<dqrt>)")
 [103][0,1]<0>()("――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()(" ")
@@ -69,7 +69,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("When starting the game, insert a 1-frame wait to")
 [103][0,1]<0>()("allow for the initialization of the base system!")
-[103][0,1]<0>()("If you don't, message display will be misaligned.")
+[103][0,1]<0>()("If you don't, the message display will be misaligned or the font size will change.")
 [180][1,0]<0>(1)()
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("If a save file is found (by Common 48: X[C]Base System Auto-Initialize),")
@@ -145,11 +145,11 @@ WoditorEvCOMMAND_END
 ▼  
 ▼ Well then, we wish you a pleasant game development life!
 ▼ If you don't understand anything, check the Perfect Guide below! (Japanese)
-▼ https://www.silversecond.com/WolfRPGEditor/Guide/
+▼ https://silversecond.com/WolfRPGEditor/Guide/
 ▼ ――――――――――――――――――――――――――――――――――
 ▼ [About the Blue [S] Mark]
 ▼ (By the way, what's the blue [S] mark? That's the starting position of the game.
-▼  If you want to change it, go to the event layer, right-click on the map,
+▼  If you want to change it, go to the event layer (the "Ev" icon), right-click on the map,
 ▼  and select "Set Game Start Position.")
 ▼ ――――――――――――――――――――――――――――――――――
 ▼  
@@ -161,7 +161,7 @@ WoditorEvCOMMAND_END
 ▼  
 ▼ When starting the game, insert a 1-frame wait to
 ▼ allow for the initialization of the base system!
-▼ If you don't, message display will be misaligned.
+▼ If you don't, the message display will be misaligned or the font size will change.
 ■Wait: 1 Frames
 ▼  
 ▼ If a save file is found (by Common 48: X[C]Base System Auto-Initialize),
@@ -203,7 +203,7 @@ WoditorEvCOMMAND_END
  | |■Show Message: Wolfarl\n  Now, let's start our little adventure!
  | |■Effect Map: [Zoom] Center X 160 / Center Y 120 / 100%  [10] Frames
  | |■Wait: 10 Frames
- | |■Sound: SE 0[[System] Confirm] (0 Channel) Play / Delay: 0 Frames
+ | |■Sound: SE 0[[System/Choice] Confirm] (0 Channel) Play / Delay: 0 Frames
  | |■Wait: 10 Frames
  | |■Show Message: * Controls\n  \c[1]Z, Space, or Enter\c[0]: Confirm\n  \c[1]X or ESC\c[0]: Cancel/Menu
  | |▼ End of opening. You can delete up to here.

@@ -36,14 +36,18 @@ OPTION_VAL_NUM=3
 OPTION_VAL_0=0
 OPTION_VAL_1=8
 OPTION_VAL_2=6
-COMMAND_NUM=2
+COMMAND_NUM=4
 --
 WoditorEvCOMMAND_START
+[103][0,1]<0>()("Each time this process is called, a random-encounter check is performed (usually nothing happens).")
+[103][0,1]<0>()("A battle only occurs when the encounter points reach a certain threshold, after which the points are reset.")
 [210][6,0]<0>(500037,4,20,31,-1,-1)()
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
+▼ Each time this process is called, a random-encounter check is performed (usually nothing happens).
+▼ A battle only occurs when the encounter points reach a certain threshold, after which the points are reset.
 ■Call Event: Common 37: [ ◇Random Encounter ] / 20 / 31:Goblin x1 / -1:<None> / -1:<None>
 ■
 [COMMAND_TEXT_END]

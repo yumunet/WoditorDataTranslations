@@ -2,7 +2,7 @@
     WOLF RPG Editor Sample Game
                Manual
 
-            05/24/2025
+            01/24/2026
 ===================================
 
 ――――――――――――――――――――――――――――――――――
@@ -40,6 +40,7 @@ Saving and Quitting the Game
 ―――――――――――――――――――――――――――――――――――――――――
 Update History
 
+01/24/2026  Fixed outdated or incorrect in-game text and comments.
 06/29/2024  Replaced Kagamiyomi's MIDI files with looped versions.
 11/12/2023  Fixed URL links in this manual.
 11/22/2022  Updated the base system to version 3. Sample Game adapted for WOLF RPG Editor 3.
