@@ -87,7 +87,7 @@ public static class ByteSearch {
             Write-Error "Not found in the exe file: $($prop.Name)"
         }
         $newBytes.CopyTo($exeBytes, $pos)
-        # Zero‑fill the remaining region
+        # Zero-fill the remaining region
         for ($i = $newBytes.Length; $i -lt $oldBytes.Length; $i++) {
             $exeBytes[$pos + $i] = 0
         }
