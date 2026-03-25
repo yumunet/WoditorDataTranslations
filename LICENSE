@@ -1,14 +1,19 @@
 Files in the directory named "scripts" and in the root directory are licensed under CC BY-NC 4.0.
-  WoditorDataTranslation © 2025 by yumu (Scripts and Root Directory Files)
+  WoditorDataTranslations: Scripts & Root Directory Files © 2025 by yumu
 To view a copy of this license, visit https://creativecommons.org/licenses/by-nc/4.0/
 
 
-Files in directories named "assets" are distributed under the following rules.
-(Original text: SampleGame/ja-JP/サンプルゲーム説明書.txt)
+Files in directories named "assets" are provided under the following terms of use:
+(Original text: "BaseSystemEmptyData\ja-JP\others\素材規約.txt")
 
   - Image Assets: May be reused, modified, and used outside of WOLF RPG Editor.
+    - However, you must include the creator's name when redistributing
+      the enemy image assets created by GD as assets, whether unmodified or modified.
   - MIDI Assets: May be reused only.
   - WAV/OGG Assets: May be reused, modified, and used outside of WOLF RPG Editor.
+
+    - "Reuse" refers to including the files in a game.
+    - "Modify" refers to making changes to the files for use in your own game.
 
 - Games using these assets may be sold.
   However, the sale of the assets themselves
@@ -21,11 +26,17 @@ Files in directories named "assets" are distributed under the following rules.
   However, users may download the sample game assets and use them
   in works created with such software (they may be used outside of WOLF RPG Editor).
 
-  * "Reuse" refers to including the files in a game.
-  * "Modify" refers to making changes to the files for use in your own game.
 
-* When redistributing the enemy character assets created by GD as assets,
-  or distributing modified versions as assets, you must include the creator's name
+Files in the "Extras\GraphicMaker\original" directory are provided under the following terms of use:
+(Original text: "Extras\GraphicMaker\original\説明書・パーツ規格について.txt")
+
+- Generated images may be used in both commercial and non-commercial works.
+- Modification of generated images and part images is allowed.
+  (Redistribution of the modified images is also allowed.)
+- Redistribution of the part images is allowed.
+  (However, commercial sale of the part images themselves is prohibited.)
+- No name attribution is required in end credits or similar places.
+- Use in tools other than WOLF RPG Editor is also allowed.
 
 
 Other files may be modified and redistributed.
