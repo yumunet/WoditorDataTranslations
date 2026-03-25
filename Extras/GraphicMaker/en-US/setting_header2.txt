@@ -17,8 +17,8 @@
 #
 #-------------------------------------------------------
 # [Order of Files with $]
-# * Starting with the 6/18/2011 version, you can manually set the display order of files with a "$" suffix
-#   by writing lines like "Head=3,F,4" or "Head=3,,4" in Folder Settings.
+# Starting with the 6/18/2011 version, you can manually set the display order of files with a "$" suffix
+# by writing lines like "Head=3,F,4" or "Head=3,,4" in Folder Settings.
 #
 # Example:
 #  If you set Head=2,4, Upper Body=3, and Lower Body=0,
@@ -27,7 +27,7 @@
 # [Limiting Hue Changes]
 # Starting with the 5/11/2010 version, you can apply hue changes only to front images (without $) or back images (with $)
 # by adding ",F" or ",B" after a number in Folder Settings such as "Head=3,F".
-# (* Saturation is applied to both front and back.)
+# (Saturation is applied to both front and back.)
 #-------------------------------------------------------
 # [Linked Parts]
 # If you write a line like "Linked:Upper Body,Lower Body",

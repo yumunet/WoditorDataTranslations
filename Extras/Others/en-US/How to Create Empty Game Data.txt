@@ -2,9 +2,9 @@
   How to Create Empty Game Data
 --------------------------------
 
-* In version 2 and earlier, empty game data was included in this folder.
-  Starting with version 3, the data is built into Editor.exe.
-  You can create empty data using the following steps.
+In version 2 and earlier, empty game data was included in this folder.
+Starting with version 3, the data is built into Editor.exe.
+You can create empty data using the following steps.
 
 
 1. Delete the Data folder or rename it to a different name,

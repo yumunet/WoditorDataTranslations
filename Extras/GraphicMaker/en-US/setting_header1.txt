@@ -13,5 +13,5 @@
 
 # Starting with the 5/11/2010 version, you can apply hue changes only to front images (without $) or back images (with $)
 # by adding ",F" or ",B" after a number in Folder Settings such as "Head=3,F".
-# (* Saturation is applied to both front and back.)
+# (Saturation is applied to both front and back.)
 # 

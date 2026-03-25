@@ -13,7 +13,7 @@ can be used for any purpose, not just games.
 
 [ If This Tool Won't Start Due to Gdiplus.dll ]
 
-This error occurs because Gdiplus.dll is not installed on your computer.
+This issue occurs because Gdiplus.dll is not installed on your computer.
 Copy the "Gdiplus.dll" file from the WOLF RPG Editor folder into the Graphic Maker folder,
 or place Gdiplus.dll into your Windows System32 folder.
 (Currently, WOLF RPG Editor does not include the Gdiplus.dll file.)
@@ -23,14 +23,14 @@ or place Gdiplus.dll into your Windows System32 folder.
 
 You can set the size of the generated images and the order in which
 parts are layered by editing the Setting.txt file in each data folder.
-For an example setting, refer to the Setting.txt file in "Graphics\Character Sprite."
+For an example setting, refer to the Setting.txt file in "Graphics\Character Sprite".
 
 
 [ How to Create Parts ]
 
-Any image that matches the size specified in Setting.txt
-and is a PNG with a transparent color or an alpha channel can be used.
-Semi-transparent images can also be layered.
+Any PNG image that matches the size specified in Setting.txt
+and has a transparent color or an alpha channel can be used.
+Semi-transparent images can also be used.
 
 ――――――――――――――――――――――――――――――――――
 [ Terms of Use ]
@@ -45,12 +45,12 @@ Semi-transparent images can also be layered.
 [ Extras: Character Sprite Base ]
 The "CharacterSpriteBase" images (created by pochi) included in the "Extras"
 folder are base images for the Character Sprite.
-When creating new parts, drawing them on top of these images makes it easier
-to align positions and match sizes.
+When creating new parts, drawing them on top of these images helps you
+align positions and match sizes.
 ――――――――――――――――――――――――――――――――――
 [ Character Sprite Parts Contributors ] (From WOLF RPG Editor Asset Submission Thread)
- pochi - thank you for helping with 8‑direction conversions, size adjustments, refinements, and more
- すう (Suu) - thank you for creating the base 4‑direction sprites
+ pochi - thank you for creating the 8-direction versions, adjusting sizes, refining the images, and more
+ すう (Suu) - thank you for creating the base 4-direction sprites
  まーべ(Maabe), 枯れ草(Karekusa), mel, 藤田るいふ(Fujita Ruifu), MAT, さと(Sato),
  ヨシユキ(Yoshiyuki), ふぃく(Fiku), ウロっち(Urotchi), 和壺(Watsubo), CEO, はつや(Hatsuya),
  尾羽(Oha), にせな(Nisena), くくり姫(Kukurihime), ユノ(Yuno): basic parts
@@ -67,7 +67,7 @@ to align positions and match sizes.
 06/18/2010 - Increased the number of parts from 8 to 12
            - Added manual display order settings for $parts
            - Added color-linking feature
-           - Added "Size x0.5" save option
+           - Added "Scale x0.5" save option
 05/14/2010 - Fixed incorrect layering behavior for images with layer order 0
 05/11/2010 - Added full support for alpha-channel images (by rikka)
            - Added hue and saturation adjustment feature (by rikka)
