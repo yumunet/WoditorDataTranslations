@@ -123,7 +123,7 @@ DEFAULT_VAL_NUM=1
 DEFAULT_VAL_0=0
 <<--CSV_START-->>
 "Filename",
-"",<<!--DATANAME--!>>* Empty,
+"",<<!--DATANAME--!>>[Empty],
 "",<<!--DATANAME--!>>,
 "",<<!--DATANAME--!>>,
 "",<<!--DATANAME--!>>,

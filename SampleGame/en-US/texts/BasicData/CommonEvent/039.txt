@@ -1,5 +1,5 @@
 COMMON_ID=39
-COMMON_NAME=■Toggle Pixel Movement
+COMMON_NAME=■Switch Pixel Movement
 COMMAND_COLOR=0
 TRIGGER=34
 TRIGGER_TARGET=1600099
@@ -169,7 +169,7 @@ COMMAND_NUM=285
 WoditorEvCOMMAND_START
 [179][1,0]<0>(1)()
 [103][0,1]<1>()("★User parameter settings. Feel free to set them as you like!")
-[103][0,1]<1>()("* If the maximum speed isn't divisible by 10, the followers will shake when moving. If there's only a leader, any value is OK!")
+[103][0,1]<1>()("  (If the maximum speed isn't divisible by 10, the followers will shake when moving. If there's only the leader, any value is OK!)")
 [121][4,0]<1>(1600095,30,0,0)()
 [121][4,0]<1>(1600096,3,0,0)()
 [121][4,0]<1>(1600097,7,0,0)()
@@ -194,7 +194,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<2>()("Enable normal movement and restore the leader's condition.")
 [126][1,0]<2>(240)()
 [290][7,0]<2>(193,0,-2,0,0,0,0)()
-[103][0,1]<2>()("Ver.3.10  Changed the following to Effects.")
+[103][0,1]<2>()("Ver.3.10: Changed the following to the Effect command.")
 [290][7,0]<2>(129,0,-2,0,0,0,0)()
 [290][7,0]<2>(129,0,-3,0,0,0,0)()
 [290][7,0]<2>(129,0,-4,0,0,0,0)()
@@ -315,7 +315,7 @@ WoditorEvCOMMAND_START
 [111][10,0]<3>(3,1600021,0,2,1600021,4,2,1600021,6,2)()
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("Stop")
-[103][0,1]<4>()("Ver.3.10  Changed the following to Effects.")
+[103][0,1]<4>()("Ver.3.10: Changed the following to the Effect command.")
 [290][7,0]<4>(129,0,-2,0,0,0,0)()
 [290][7,0]<4>(129,0,-3,0,0,0,0)()
 [290][7,0]<4>(129,0,-4,0,0,0,0)()
@@ -326,7 +326,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(2)()
 [103][0,1]<4>()("Left")
 [121][4,0]<4>(1600010,4,0,16)()
-[103][0,1]<4>()("Ver.3.10  Changed the following to Effects.")
+[103][0,1]<4>()("Ver.3.10: Changed the following to the Effect command.")
 [290][7,0]<4>(129,0,-2,0,1,0,0)()
 [290][7,0]<4>(129,0,-3,0,1,0,0)()
 [290][7,0]<4>(129,0,-4,0,1,0,0)()
@@ -337,7 +337,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(3)()
 [103][0,1]<4>()("Right")
 [121][4,0]<4>(1600010,6,0,16)()
-[103][0,1]<4>()("Ver.3.10  Changed the following to Effects.")
+[103][0,1]<4>()("Ver.3.10: Changed the following to the Effect command.")
 [290][7,0]<4>(129,0,-2,0,1,0,0)()
 [290][7,0]<4>(129,0,-3,0,1,0,0)()
 [290][7,0]<4>(129,0,-4,0,1,0,0)()
@@ -352,7 +352,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("Up")
 [121][4,0]<4>(1600010,8,0,16)()
-[103][0,1]<4>()("Ver.3.10  Changed the following to Effects.")
+[103][0,1]<4>()("Ver.3.10: Changed the following to the Effect command.")
 [290][7,0]<4>(129,0,-2,0,1,0,0)()
 [290][7,0]<4>(129,0,-3,0,1,0,0)()
 [290][7,0]<4>(129,0,-4,0,1,0,0)()
@@ -363,7 +363,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(2)()
 [103][0,1]<4>()("Upper Left")
 [121][4,0]<4>(1600010,7,0,16)()
-[103][0,1]<4>()("Ver.3.10  Changed the following to Effects.")
+[103][0,1]<4>()("Ver.3.10: Changed the following to the Effect command.")
 [290][7,0]<4>(129,0,-2,0,1,0,0)()
 [290][7,0]<4>(129,0,-3,0,1,0,0)()
 [290][7,0]<4>(129,0,-4,0,1,0,0)()
@@ -374,7 +374,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(3)()
 [103][0,1]<4>()("Upper Right")
 [121][4,0]<4>(1600010,9,0,16)()
-[103][0,1]<4>()("Ver.3.10  Changed the following to Effects.")
+[103][0,1]<4>()("Ver.3.10: Changed the following to the Effect command.")
 [290][7,0]<4>(129,0,-2,0,1,0,0)()
 [290][7,0]<4>(129,0,-3,0,1,0,0)()
 [290][7,0]<4>(129,0,-4,0,1,0,0)()
@@ -389,7 +389,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("Down")
 [121][4,0]<4>(1600010,2,0,16)()
-[103][0,1]<4>()("Ver.3.10  Changed the following to Effects.")
+[103][0,1]<4>()("Ver.3.10: Changed the following to the Effect command.")
 [290][7,0]<4>(129,0,-2,0,1,0,0)()
 [290][7,0]<4>(129,0,-3,0,1,0,0)()
 [290][7,0]<4>(129,0,-4,0,1,0,0)()
@@ -400,7 +400,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(2)()
 [103][0,1]<4>()("Lower Left")
 [121][4,0]<4>(1600010,1,0,16)()
-[103][0,1]<4>()("Ver.3.10  Changed the following to Effects.")
+[103][0,1]<4>()("Ver.3.10: Changed the following to the Effect command.")
 [290][7,0]<4>(129,0,-2,0,1,0,0)()
 [290][7,0]<4>(129,0,-3,0,1,0,0)()
 [290][7,0]<4>(129,0,-4,0,1,0,0)()
@@ -411,7 +411,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(3)()
 [103][0,1]<4>()("Lower Right")
 [121][4,0]<4>(1600010,3,0,16)()
-[103][0,1]<4>()("Ver.3.10  Changed the following to Effects.")
+[103][0,1]<4>()("Ver.3.10: Changed the following to the Effect command.")
 [290][7,0]<4>(129,0,-2,0,1,0,0)()
 [290][7,0]<4>(129,0,-3,0,1,0,0)()
 [290][7,0]<4>(129,0,-4,0,1,0,0)()
@@ -431,7 +431,7 @@ WoditorEvCOMMAND_START
 [111][4,0]<1>(1,1600098,1,2)()
 [401][1,0]<1>(1)()
 [290][7,0]<2>(193,0,-2,0,0,0,0)()
-[103][0,1]<2>()("Ver.3.10  Changed the following to Effects.")
+[103][0,1]<2>()("Ver.3.10: Changed the following to the Effect command.")
 [290][7,0]<2>(129,0,-2,0,0,0,0)()
 [290][7,0]<2>(129,0,-3,0,0,0,0)()
 [290][7,0]<2>(129,0,-4,0,0,0,0)()
@@ -457,7 +457,7 @@ WoditorEvCOMMAND_END
 [COMMAND_TEXT_START]
 ■Repeat Loop [ 1 ] Times
  |▼ ★User parameter settings. Feel free to set them as you like!
- |▼ * If the maximum speed isn't divisible by 10, the followers will shake when moving. If there's only a leader, any value is OK!
+ |▼   (If the maximum speed isn't divisible by 10, the followers will shake when moving. If there's only the leader, any value is OK!)
  |■Set Variable: CSelf95[Max Speed (20-30 Preferred)] = 30 + 0 
  |■Set Variable: CSelf96[Acceleration (2-3 Preferred)] = 3 + 0 
  |■Set Variable: CSelf97[Deceleration (Higher Is Slower; 1-10 Pre..] = 7 + 0 
@@ -482,7 +482,7 @@ WoditorEvCOMMAND_END
  | |▼ Enable normal movement and restore the leader's condition.
  | |■Enable/Disable Input:   Down  Left  Right  Up   [ Movement ✓   Key Input ✓ ]
  | |■Effect Character: Leader[Switch Fixed Direction] => OFF 
- | |▼ Ver.3.10  Changed the following to Effects.
+ | |▼ Ver.3.10: Changed the following to the Effect command.
  | |■Effect Character: Leader[Force Walk Animation] => OFF 
  | |■Effect Character: Follower 1[Force Walk Animation] => OFF 
  | |■Effect Character: Follower 2[Force Walk Animation] => OFF 
@@ -603,7 +603,7 @@ WoditorEvCOMMAND_END
  | | |■Condition (Number):   [1] CSelf21[Left/Right Arrow Keys] ==  0  /  [2] CSelf21[Left/Right Arrow Keys] ==  4  /  [3] CSelf21[Left/Right Arrow Keys] ==  6  
  | | |-◇Condition:  [1]  [ CSelf21[Left/Right Arrow Keys] == 0   ] Case↓
  | | | |▼ Stop
- | | | |▼ Ver.3.10  Changed the following to Effects.
+ | | | |▼ Ver.3.10: Changed the following to the Effect command.
  | | | |■Effect Character: Leader[Force Walk Animation] => OFF 
  | | | |■Effect Character: Follower 1[Force Walk Animation] => OFF 
  | | | |■Effect Character: Follower 2[Force Walk Animation] => OFF 
@@ -614,7 +614,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [2]  [ CSelf21[Left/Right Arrow Keys] == 4   ] Case↓
  | | | |▼ Left
  | | | |■Set Variable: V[CSelf10[Destination Variable]] = 4 + 0 
- | | | |▼ Ver.3.10  Changed the following to Effects.
+ | | | |▼ Ver.3.10: Changed the following to the Effect command.
  | | | |■Effect Character: Leader[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 1[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 2[Force Walk Animation] => ON 
@@ -625,7 +625,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [3]  [ CSelf21[Left/Right Arrow Keys] == 6   ] Case↓
  | | | |▼ Right
  | | | |■Set Variable: V[CSelf10[Destination Variable]] = 6 + 0 
- | | | |▼ Ver.3.10  Changed the following to Effects.
+ | | | |▼ Ver.3.10: Changed the following to the Effect command.
  | | | |■Effect Character: Leader[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 1[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 2[Force Walk Animation] => ON 
@@ -640,7 +640,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [1]  [ CSelf21[Left/Right Arrow Keys] == 0   ] Case↓
  | | | |▼ Up
  | | | |■Set Variable: V[CSelf10[Destination Variable]] = 8 + 0 
- | | | |▼ Ver.3.10  Changed the following to Effects.
+ | | | |▼ Ver.3.10: Changed the following to the Effect command.
  | | | |■Effect Character: Leader[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 1[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 2[Force Walk Animation] => ON 
@@ -651,7 +651,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [2]  [ CSelf21[Left/Right Arrow Keys] == 4   ] Case↓
  | | | |▼ Upper Left
  | | | |■Set Variable: V[CSelf10[Destination Variable]] = 7 + 0 
- | | | |▼ Ver.3.10  Changed the following to Effects.
+ | | | |▼ Ver.3.10: Changed the following to the Effect command.
  | | | |■Effect Character: Leader[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 1[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 2[Force Walk Animation] => ON 
@@ -662,7 +662,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [3]  [ CSelf21[Left/Right Arrow Keys] == 6   ] Case↓
  | | | |▼ Upper Right
  | | | |■Set Variable: V[CSelf10[Destination Variable]] = 9 + 0 
- | | | |▼ Ver.3.10  Changed the following to Effects.
+ | | | |▼ Ver.3.10: Changed the following to the Effect command.
  | | | |■Effect Character: Leader[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 1[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 2[Force Walk Animation] => ON 
@@ -677,7 +677,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [1]  [ CSelf21[Left/Right Arrow Keys] == 0   ] Case↓
  | | | |▼ Down
  | | | |■Set Variable: V[CSelf10[Destination Variable]] = 2 + 0 
- | | | |▼ Ver.3.10  Changed the following to Effects.
+ | | | |▼ Ver.3.10: Changed the following to the Effect command.
  | | | |■Effect Character: Leader[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 1[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 2[Force Walk Animation] => ON 
@@ -688,7 +688,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [2]  [ CSelf21[Left/Right Arrow Keys] == 4   ] Case↓
  | | | |▼ Lower Left
  | | | |■Set Variable: V[CSelf10[Destination Variable]] = 1 + 0 
- | | | |▼ Ver.3.10  Changed the following to Effects.
+ | | | |▼ Ver.3.10: Changed the following to the Effect command.
  | | | |■Effect Character: Leader[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 1[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 2[Force Walk Animation] => ON 
@@ -699,7 +699,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [3]  [ CSelf21[Left/Right Arrow Keys] == 6   ] Case↓
  | | | |▼ Lower Right
  | | | |■Set Variable: V[CSelf10[Destination Variable]] = 3 + 0 
- | | | |▼ Ver.3.10  Changed the following to Effects.
+ | | | |▼ Ver.3.10: Changed the following to the Effect command.
  | | | |■Effect Character: Leader[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 1[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 2[Force Walk Animation] => ON 
@@ -719,7 +719,7 @@ WoditorEvCOMMAND_END
  |■Condition (Number):   [1] CSelf98[Direction Fixed?] ==  1  
  |-◇Condition:  [1]  [ CSelf98[Direction Fixed?] == 1   ] Case↓
  | |■Effect Character: Leader[Switch Fixed Direction] => OFF 
- | |▼ Ver.3.10  Changed the following to Effects.
+ | |▼ Ver.3.10: Changed the following to the Effect command.
  | |■Effect Character: Leader[Force Walk Animation] => OFF 
  | |■Effect Character: Follower 1[Force Walk Animation] => OFF 
  | |■Effect Character: Follower 2[Force Walk Animation] => OFF 

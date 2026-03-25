@@ -174,7 +174,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[250][5,4]<0>(1,1600000,14,332288,1600037)("","┗ Animations","","Process by [Ignore Settings]")
+[250][5,4]<0>(1,1600000,14,332288,1600037)("","┗ Animations","","Process By [Ignore Settings]")
 [111][4,0]<0>(1,1600037,0,1)()
 [401][1,0]<0>(1)()
 [103][0,1]<1>()("呼び出すコモンのコモンセルフ0、1、2に、アニメ番号・X座標・Y座標を入力")
@@ -305,7 +305,7 @@ WoditorEvCOMMAND_END
 ▼  
 ▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
-■Load DB(User):  CSelf37[アニメコモン呼び出し？] = UserDB[ "┗ Animations":CSelf0[アニメ番号]:"Process by [Ignore Settings]" ] (1:-:14) 
+■Load DB(User):  CSelf37[アニメコモン呼び出し？] = UserDB[ "┗ Animations":CSelf0[アニメ番号]:"Process By [Ignore Settings]" ] (1:-:14) 
 ■Condition (Number):   [1] CSelf37[アニメコモン呼び出し？] >=  0  
 -◇Condition:  [1]  [ CSelf37[アニメコモン呼び出し？] >= 0   ] Case↓
  |▼ 呼び出すコモンのコモンセルフ0、1、2に、アニメ番号・X座標・Y座標を入力

@@ -49,7 +49,7 @@ ITEMNAME17=Use Message [Map]
 ITEMNAME18=Use Message [Battle] (Name...
 ITEMNAME19=Sell Price [0=Can't Sell]
 ITEMNAME20=Sound Effect on Use
-MEMO=To specify<<\n>>"[3]: Event to Call":<<\n>>0+ (Map Event)<<\n>>500000+ (Common Event)<<\n>><<\n>>When you use an item that<<\n>>calls an event, the menu<<\n>>automatically closes.<<\n>>
+MEMO=To specify<<\n>>"[3]: Event to Call":<<\n>>0+ (Map Event)<<\n>>500000+ (Common Event)<<\n>><<\n>>When you use an item that<<\n>>calls an event, the menu<<\n>>automatically closes.
 ITEMTYPE_NUM=100
 ITEM_LOADTYPE_0=0
 ITEM_LOADTYPE_1=0

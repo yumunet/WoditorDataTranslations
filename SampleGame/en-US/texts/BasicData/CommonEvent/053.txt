@@ -173,7 +173,7 @@ COMMAND_NUM=10
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("[Process Overview]")
-[103][0,1]<0>()("  This common event is always used to increase or decrease the money in the base system.")
+[103][0,1]<0>()("  This common event is always used to increase or decrease the money in the Base System.")
 [103][0,1]<0>()("  Works both on the map and in battle.")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [250][5,4]<0>(6,0,0,327696,1600000)("","Party","","Current Money")
@@ -186,7 +186,7 @@ WoditorEvCOMMAND_END
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ [Process Overview]
-▼   This common event is always used to increase or decrease the money in the base system.
+▼   This common event is always used to increase or decrease the money in the Base System.
 ▼   Works both on the map and in battle.
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Write to DB(Var): VarDB[ "Party":0:"Current Money" ] (6:Main Settings:0) +=  CSelf0[Amount]

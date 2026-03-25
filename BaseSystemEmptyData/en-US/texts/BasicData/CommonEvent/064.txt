@@ -202,7 +202,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("  In Variable DB <dqrt>Base System Variables,<dqrt> you can set the window position, size, rows, and columns.")
 [103][0,1]<0>()("  If they are all 0, a full-screen window with 2 columns and 10 rows will be displayed.")
-[103][0,1]<0>()("  (* If the Rows setting is 2 or lower, the behavior will be abnormal.)")
+[103][0,1]<0>()("  (If the Rows setting is 2 or lower, the behavior will be abnormal.)")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("  When the Universal Window is erased, the aforementioned settings are reset to 0,")
 [103][0,1]<0>()("  so you must set them again every time you use it.")
@@ -1079,7 +1079,7 @@ WoditorEvCOMMAND_END
 ▼  
 ▼   In Variable DB "Base System Variables," you can set the window position, size, rows, and columns.
 ▼   If they are all 0, a full-screen window with 2 columns and 10 rows will be displayed.
-▼   (* If the Rows setting is 2 or lower, the behavior will be abnormal.)
+▼   (If the Rows setting is 2 or lower, the behavior will be abnormal.)
 ▼  
 ▼   When the Universal Window is erased, the aforementioned settings are reset to 0,
 ▼   so you must set them again every time you use it.

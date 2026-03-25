@@ -169,10 +169,10 @@ COMMAND_NUM=206
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("[Process Overview]")
-[103][0,1]<0>()("  This common event is called to level up/down the ally in the base system.")
+[103][0,1]<0>()("  This common event is called to level up/down the ally in the Base System.")
 [103][0,1]<0>()("  Works only on the map (or during post-battle processing).")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("  Also, stores parameter changes and newly learned skills into base system variables.")
+[103][0,1]<0>()("  Also, stores parameter changes and newly learned skills into Base System Variables.")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [121][4,0]<0>(1600099,0,0,0)()
 [111][4,0]<0>(1,1600002,0,2)()
@@ -378,10 +378,10 @@ WoditorEvCOMMAND_END
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ [Process Overview]
-▼   This common event is called to level up/down the ally in the base system.
+▼   This common event is called to level up/down the ally in the Base System.
 ▼   Works only on the map (or during post-battle processing).
 ▼  
-▼   Also, stores parameter changes and newly learned skills into base system variables.
+▼   Also, stores parameter changes and newly learned skills into Base System Variables.
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Set Variable: CSelf99[Actual Level Change] = 0 + 0 
 ■Condition (Number):   [1] CSelf2[Option] ==  0  

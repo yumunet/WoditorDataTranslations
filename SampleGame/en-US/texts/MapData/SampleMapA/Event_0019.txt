@@ -62,22 +62,22 @@ WoditorEvCOMMAND_START
 [401][1,0]<1>(1)()
 [103][0,1]<2>()("If Self0 is 0, start pixel movement.")
 [101][0,1]<2>()("Okay! I'll turn on pixel movement mode,<\n>so you'll move by pixels instead of tiles!")
-[103][0,1]<2>()("Get the Common Event ID using a trick to get the ID by the Common Event name.")
-[103][0,1]<2>()("*You can use it by entering a special code in <dqrt>Execute Special Code<dqrt> of <dqrt>Set String.<dqrt>")
-[103][0,1]<2>()(" It's written on the <dqrt>Set String<dqrt> page of the manual!")
-[122][3,1]<2>(3000000,262656,0)("<<GET_COMMONEVENT_ID_FROM_NAME>>■Toggle Pixel Movement")
+[103][0,1]<2>()("Get the Common Event ID using a trick that gets it from the Common Event name.")
+[103][0,1]<2>()("(Enter the special code in <dqrt>Execute Special Code<dqrt> under <dqrt>Set String<dqrt>.")
+[103][0,1]<2>()(" See the manual's <dqrt>Set String<dqrt> page for details!)")
+[122][3,1]<2>(3000000,262656,0)("<<GET_COMMONEVENT_ID_FROM_NAME>>■Switch Pixel Movement")
 [103][0,1]<2>()("A trick for Set Variable!")
 [103][0,1]<2>()("If you assign a string variable containing numbers such as <dqrt>39<dqrt> to a numeric variable,")
 [103][0,1]<2>()("you can convert it to a number!")
 [121][4,0]<2>(1100001,3000000,0,0)()
-[101][0,1]<2>()("Uh... Common Event \self[1]<\n><dqrt>■Toggle Pixel Movement<dqrt>...<\n><\n>*Click* ON!")
+[101][0,1]<2>()("Uh... Common Event \self[1]<\n><dqrt>■Switch Pixel Movement<dqrt>...<\n><\n>*Click* ON!")
 [140][7,1]<2>(33554464,0,0,0,100,100,0)("SystemFile/SE_Get.ogg")
 [101][0,1]<2>()("Alright, you can now move by pixels!<\n>Enjoy the pixel movement mode—no more<\n>tile-by-tile movement!")
-[300][3,1]<2>(0,1,1)("■Toggle Pixel Movement")
+[300][3,1]<2>(0,1,1)("■Switch Pixel Movement")
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
 [140][7,1]<2>(33554464,0,0,0,100,100,0)("SystemFile/SE_LevelUp.ogg")
-[300][3,1]<2>(0,1,-1)("■Toggle Pixel Movement")
+[300][3,1]<2>(0,1,-1)("■Switch Pixel Movement")
 [101][0,1]<2>()("Pixel movement's off!<\n>That was kinda fun, huh?")
 [101][0,1]<2>()("But with pixel movement on, slipping through<\n>a one-tile gap gets tough.<\n>So when you're making your game, try not to<\n>make the paths too narrow, okay?!")
 [0][0,0]<2>()()
@@ -132,7 +132,7 @@ WoditorEvCOMMAND_START
 [290][7,0]<1>(384,0,1,1,100,155,0)()
 [101][0,1]<1>()("Yeah!<\n>Not sure what it's for, but maybe just invert the colors<\n>and go <dqrt>Oh no!<dqrt> or something?!")
 [150][3,0]<1>(2,1,0)()
-[101][0,1]<1>()("These effects are in the <dqrt>Picture<dqrt> category in the<\n>Effects command, so check them out if you're curious!")
+[101][0,1]<1>()("These effects are in the <dqrt>Picture<dqrt> category of the<\n>Effect command, so check them out if you're curious!")
 [0][0,0]<1>()()
 [401][1,0]<0>(6)()
 [101][0,1]<1>()("Yeah! It's got a feature that lets you capture the<\n>current screen as a picture!")
@@ -283,22 +283,22 @@ WoditorEvCOMMAND_END
  |-◇Condition:  [1]  [ This Ev Self0 == 0   ] Case↓
  | |▼ If Self0 is 0, start pixel movement.
  | |■Show Message: Okay! I'll turn on pixel movement mode,\nso you'll move by pixels instead of tiles!
- | |▼ Get the Common Event ID using a trick to get the ID by the Common Event name.
- | |▼ *You can use it by entering a special code in "Execute Special Code" of "Set String."
- | |▼  It's written on the "Set String" page of the manual!
- | |■Set String: S0[[Sample] Temporary String] =<Execute Special Code> "<<GET_COMMONEVENT_ID_FROM_NAME>>■Toggle Pixel Movement"
+ | |▼ Get the Common Event ID using a trick that gets it from the Common Event name.
+ | |▼ (Enter the special code in "Execute Special Code" under "Set String".
+ | |▼  See the manual's "Set String" page for details!)
+ | |■Set String: S0[[Sample] Temporary String] =<Execute Special Code> "<<GET_COMMONEVENT_ID_FROM_NAME>>■Switch Pixel Movement"
  | |▼ A trick for Set Variable!
  | |▼ If you assign a string variable containing numbers such as "39" to a numeric variable,
  | |▼ you can convert it to a number!
  | |■Set Variable: This Ev Self1 = S0[[Sample] Temporary String] + 0 
- | |■Show Message: Uh... Common Event \self[1]\n"■Toggle Pixel Movement"...\n\n*Click* ON!
+ | |■Show Message: Uh... Common Event \self[1]\n"■Switch Pixel Movement"...\n\n*Click* ON!
  | |■Sound: SE File [SystemFile/SE_Get.ogg] Vol 100% Pitch 100% (0 Channel) Play / Delay: 0 Frames
  | |■Show Message: Alright, you can now move by pixels!\nEnjoy the pixel movement mode—no more\ntile-by-tile movement!
- | |■Call Event [Name]: ["■Toggle Pixel Movement"] <CommonEv 39>  / 1:Turn On
+ | |■Call Event [Name]: ["■Switch Pixel Movement"] <CommonEv 39>  / 1:Turn On
  | |■
  |-◇Condition:  [2]  [ This Ev Self0 == 1   ] Case↓
  | |■Sound: SE File [SystemFile/SE_LevelUp.ogg] Vol 100% Pitch 100% (0 Channel) Play / Delay: 0 Frames
- | |■Call Event [Name]: ["■Toggle Pixel Movement"] <CommonEv 39>  / -1:Turn Off
+ | |■Call Event [Name]: ["■Switch Pixel Movement"] <CommonEv 39>  / -1:Turn Off
  | |■Show Message: Pixel movement's off!\nThat was kinda fun, huh?
  | |■Show Message: But with pixel movement on, slipping through\na one-tile gap gets tough.\nSo when you're making your game, try not to\nmake the paths too narrow, okay?!
  | |■
@@ -353,7 +353,7 @@ WoditorEvCOMMAND_END
  |■Effect Picture: 1 [Filter/Invert] 
  |■Show Message: Yeah!\nNot sure what it's for, but maybe just invert the colors\nand go "Oh no!" or something?!
  |■Picture Erase: 1  / 0(0) Frames
- |■Show Message: These effects are in the "Picture" category in the\nEffects command, so check them out if you're curious!
+ |■Show Message: These effects are in the "Picture" category of the\nEffect command, so check them out if you're curious!
  |■
 -◇Case: Choice [5] You can capture the screen as a picture?! ↓
  |■Show Message: Yeah! It's got a feature that lets you capture the\ncurrent screen as a picture!

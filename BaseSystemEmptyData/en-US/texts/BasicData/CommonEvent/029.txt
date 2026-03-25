@@ -4,7 +4,7 @@ COMMAND_COLOR=0
 TRIGGER=32
 TRIGGER_TARGET=2000000
 TRIGGER_VAL=0
-MEMO=Only in battle, adds an enemy (or replaces one) in the specified spot [1-7].
+MEMO=Only in battle: adds an enemy (or replaces one) in the specified spot (1-7).
 VALINPUT_NUM=3
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
@@ -198,7 +198,7 @@ WoditorEvCOMMAND_START
 [111][4,0]<2>(1,1600020,0,1)()
 [401][1,0]<2>(1)()
 [103][0,1]<3>()("If a character is already in the specified slot (or alive), do nothing.")
-[103][0,1]<3>()("  * When an enemy dies, its battle slot is reset.")
+[103][0,1]<3>()("(When an enemy dies, its battle slot is reset.)")
 [172][0,0]<3>()()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
@@ -235,7 +235,7 @@ WoditorEvCOMMAND_END
  | |■Condition (Number):   [1] CSelf20 >=  0  
  | |-◇Condition:  [1]  [ CSelf20 >= 0   ] Case↓
  | | |▼ If a character is already in the specified slot (or alive), do nothing.
- | | |▼   * When an enemy dies, its battle slot is reset.
+ | | |▼ (When an enemy dies, its battle slot is reset.)
  | | |■Exit Event
  | | |■
  | |◇End◇

@@ -187,7 +187,7 @@ COMMAND_NUM=71
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("[Process Overview]")
-[103][0,1]<0>()("  This common event is always used to get the ally's parameter values in the base system.")
+[103][0,1]<0>()("  This common event is always used to get the ally's parameter values in the Base System.")
 [103][0,1]<0>()("  Works only on the map.")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [111][7,0]<0>(2,1600001,22,2,1600001,23,2)()
@@ -261,7 +261,7 @@ WoditorEvCOMMAND_END
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ [Process Overview]
-▼   This common event is always used to get the ally's parameter values in the base system.
+▼   This common event is always used to get the ally's parameter values in the Base System.
 ▼   Works only on the map.
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Condition (Number):   [1] CSelf1[Target Parameter] ==  22  /  [2] CSelf1[Target Parameter] ==  23  

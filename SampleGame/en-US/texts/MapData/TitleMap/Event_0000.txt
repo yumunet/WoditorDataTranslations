@@ -40,16 +40,16 @@ COMMAND_NUM=89
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[A Message for First-Time WOLF RPG Editor Users]")
+[103][0,1]<0>()("[For First-Time WOLF RPG Editor Users]")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("This event handles the presentation of the title screen.")
 [103][0,1]<0>()("We recommend that you first look at the Sample Map A events,")
 [103][0,1]<0>()("which are easier to understand. To do so, switch the current map.")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("To switch the current map, click the MAP icon, which is the fourth ")
-[103][0,1]<0>()("icon from the left at the top of the main window, and then click")
-[103][0,1]<0>()("<dqrt>1:Sample Map A<dqrt> in the selection window that appears.")
-[103][0,1]<0>()("(Note that this window will disappear when you click it.)")
+[103][0,1]<0>()("To switch the current map, click the MAP icon (the fourth icon from")
+[103][0,1]<0>()("the left at the top of the main window) to open the Map Selection window,")
+[103][0,1]<0>()("and then click <dqrt>1:Sample Map A<dqrt> in it.")
+[103][0,1]<0>()("(When you click that map, this event window closes.)")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("Well then, we wish you a pleasant game development life!")
 [103][0,1]<0>()("If you don't understand anything, check the Perfect Guide below! (Japanese)")
@@ -58,21 +58,21 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("[About the Blue [S] Mark]")
 [103][0,1]<0>()("(By the way, what's the blue [S] mark? That's the starting position of the game.")
 [103][0,1]<0>()(" If you want to change it, go to the event layer (the <dqrt>Ev<dqrt> icon), right-click on the map,")
-[103][0,1]<0>()(" and select <dqrt>Set Game Start Position.<dqrt>)")
+[103][0,1]<0>()(" and select <dqrt>Set Game Start Position<dqrt>.)")
 [103][0,1]<0>()("――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("[Title Event Starts Here]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("Display title image. [The image used here will be the title image]")
+[103][0,1]<0>()("Display title image. (The image used here will be the title image.)")
 [103][0,1]<0>()("By default, <dqrt>TitleGraphic.png<dqrt> in the <dqrt>SystemFile<dqrt> folder is the title screen.")
 [150][11,1]<0>(0,1,0,1,1,1,255,0,0,100,0)("SystemFile/TitleGraphic.png")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("When starting the game, insert a 1-frame wait to")
-[103][0,1]<0>()("allow for the initialization of the base system!")
+[103][0,1]<0>()("allow for the initialization of the Base System!")
 [103][0,1]<0>()("If you don't, the message display will be misaligned or the font size will change.")
 [180][1,0]<0>(1)()
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("If a save file is found (by Common 48: X[C]Base System Auto-Initialize),")
+[103][0,1]<0>()("If a save file is found (by Common 48: X[Com]Base System Auto-Init),")
 [103][0,1]<0>()("set the default value of the next choice to 1 (Continue).")
 [111][4,0]<0>(1,9000025,1,1)()
 [401][1,0]<0>(1)()
@@ -107,7 +107,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<2>()("Display messages.")
 [101][0,1]<2>()("Wolfarl<\n>  Welcome to the world of WOLF RPG Editor!<\n>  My name is Wolfarl and I will be your guide.")
 [101][0,1]<2>()("Wolfarl<\n>  This sample game shows you an example of<\n>  what kind of RPG you can create with<\n>  WOLF RPG Editor!")
-[101][0,1]<2>()("Wolfarl<\n>  You can also try out the included base system,<\n>  so feel free to try anything you like!")
+[101][0,1]<2>()("Wolfarl<\n>  You can also try out the included Base System,<\n>  so feel free to try anything you like!")
 [101][0,1]<2>()("Wolfarl<\n>  Now, let's start our little adventure!")
 [290][7,0]<2>(2,10,0,0,160,120,100)()
 [180][1,0]<2>(10)()
@@ -132,16 +132,16 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ――――――――――――――――――――――――――――――――――
-▼ [A Message for First-Time WOLF RPG Editor Users]
+▼ [For First-Time WOLF RPG Editor Users]
 ▼  
 ▼ This event handles the presentation of the title screen.
 ▼ We recommend that you first look at the Sample Map A events,
 ▼ which are easier to understand. To do so, switch the current map.
 ▼ 
-▼ To switch the current map, click the MAP icon, which is the fourth 
-▼ icon from the left at the top of the main window, and then click
-▼ "1:Sample Map A" in the selection window that appears.
-▼ (Note that this window will disappear when you click it.)
+▼ To switch the current map, click the MAP icon (the fourth icon from
+▼ the left at the top of the main window) to open the Map Selection window,
+▼ and then click "1:Sample Map A" in it.
+▼ (When you click that map, this event window closes.)
 ▼  
 ▼ Well then, we wish you a pleasant game development life!
 ▼ If you don't understand anything, check the Perfect Guide below! (Japanese)
@@ -150,21 +150,21 @@ WoditorEvCOMMAND_END
 ▼ [About the Blue [S] Mark]
 ▼ (By the way, what's the blue [S] mark? That's the starting position of the game.
 ▼  If you want to change it, go to the event layer (the "Ev" icon), right-click on the map,
-▼  and select "Set Game Start Position.")
+▼  and select "Set Game Start Position".)
 ▼ ――――――――――――――――――――――――――――――――――
 ▼  
 ▼ [Title Event Starts Here]
 ▼  
-▼ Display title image. [The image used here will be the title image]
+▼ Display title image. (The image used here will be the title image.)
 ▼ By default, "TitleGraphic.png" in the "SystemFile" folder is the title screen.
 ■Picture Show: 1 [Top-Left] File [SystemFile/TitleGraphic.png] X:0 Y:0 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
 ▼  
 ▼ When starting the game, insert a 1-frame wait to
-▼ allow for the initialization of the base system!
+▼ allow for the initialization of the Base System!
 ▼ If you don't, the message display will be misaligned or the font size will change.
 ■Wait: 1 Frames
 ▼  
-▼ If a save file is found (by Common 48: X[C]Base System Auto-Initialize),
+▼ If a save file is found (by Common 48: X[Com]Base System Auto-Init),
 ▼ set the default value of the next choice to 1 (Continue).
 ■Condition (Number):   [1] Sys25:Current Save (0+) >=  1  
 -◇Condition:  [1]  [ Sys25:Current Save (0+) >= 1   ] Case↓
@@ -199,7 +199,7 @@ WoditorEvCOMMAND_END
  | |▼ Display messages.
  | |■Show Message: Wolfarl\n  Welcome to the world of WOLF RPG Editor!\n  My name is Wolfarl and I will be your guide.
  | |■Show Message: Wolfarl\n  This sample game shows you an example of\n  what kind of RPG you can create with\n  WOLF RPG Editor!
- | |■Show Message: Wolfarl\n  You can also try out the included base system,\n  so feel free to try anything you like!
+ | |■Show Message: Wolfarl\n  You can also try out the included Base System,\n  so feel free to try anything you like!
  | |■Show Message: Wolfarl\n  Now, let's start our little adventure!
  | |■Effect Map: [Zoom] Center X 160 / Center Y 120 / 100%  [10] Frames
  | |■Wait: 10 Frames

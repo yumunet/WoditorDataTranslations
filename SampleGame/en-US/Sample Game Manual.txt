@@ -33,9 +33,9 @@ Basic Controls
 Saving and Quitting the Game
 
   You can save the game by selecting the "Save" command from the menu.
-  To quit the game, press ALT+F4.
+  To quit the game, press Alt + F4.
 
-  * As a hidden command, hold the left Ctrl key and select "Save" in the menu to open the load screen.
+  Hidden command: You can open the load screen by holding the left Ctrl key and selecting "Save" from the menu.
 
 ―――――――――――――――――――――――――――――――――――――――――
 Update History
@@ -43,18 +43,18 @@ Update History
 01/24/2026  Fixed outdated or incorrect in-game text and comments.
 06/29/2024  Replaced Kagamiyomi's MIDI files with looped versions.
 11/12/2023  Fixed URL links in this manual.
-11/22/2022  Updated the base system to version 3. Sample Game adapted for WOLF RPG Editor 3.
-06/02/2018  Updated the base system continuously.
+11/22/2022  Updated the Base System to version 3 and adapted the sample game for WOLF RPG Editor 3.
+06/02/2018  Updated the Base System continuously.
 06/01/2018  Fixed broken or relocated asset source links.
 07/18/2011  Replaced assets entirely in version 2.00. Many thanks to all contributors.
 10/10/2010  Replaced sample enemy images with GD's.
 11/18/2009  Added sample image assets.
 09/25/2009  Renamed all files to English names.
-07/27/2009  Minor fixes, and included Isooki's enemy images.
+07/27/2009  Made minor fixes and included Isooki's enemy images.
 02/20/2009  Greatly enhanced map tile assets.
 11/30/2008  Changed MIDI asset rights to "may be reused only."
-09/02/2008  Changed all characters to 8-directional, and added character creation tool to "Extras" folder.
-03/15/2008  Completely remade, and added default system.
+09/02/2008  Changed all characters to 8-directional and added the character creation tool to the "Extras" folder.
+03/15/2008  Completely remade the game and added the default system.
 11/05/2007  Added feature introduction.
 04/12/2007  Released.
 
@@ -73,11 +73,10 @@ Asset Contributors
 
 - Enemy Image Assets
   GD (From WOLF RPG Editor Wiki)
-  * When distributing these assets, you must include the creator's name.
-    When redistributing them as assets or modifying and distributing them as assets,
-    please be sure to include the creator's name.
+  - You must include the creator's name when redistributing these assets as assets,
+    whether unmodified or modified.
 
-- MIDI Assets (Filenames have been changed for convenience.)
+- MIDI Assets (File names have been changed for convenience.)
   タクミ(Takumi)
   ユノ(Yuno)
   鏡読み(Kagamiyomi) (From WOLF RPG Editor Wiki)
@@ -87,7 +86,7 @@ Asset Contributors
   土鳩(Dobato) (From WOLF RPG Editor Wiki)
   momi (From WOLF RPG Editor Wiki)
 
-- Sound Effect Assets (Filenames have been changed for convenience.)
+- Sound Effect Assets (File names have been changed for convenience.)
   panop
   小森平(Taira Komori) (https://taira-komori.jpn.org/)
   Koya
@@ -120,14 +119,17 @@ Asset Contributors
   すう(Suu)
  Map Tiles
   のり(Nori) (http://nega.client.jp/)
-  * Parts by the following creators used from WOLF RPG Editor Wiki and Asset Request Thread.
+  Parts used from the following creators on the WOLF RPG Editor Wiki and the Asset Request Thread:
     遊等(Yuuto), RETAW, すう(Suu), 枯れ草(Karekusa), 澄夏(Sumika), ウロっち(Urotchi), りくがめ(Rikugame)
 ―――――――――――――――――――――――――――――――――――――――――
-* Rights to the assets included in the Sample Game are as follows:
+Rights to the assets included in the sample game are as follows:
 
   - Image Assets: May be reused, modified, and used outside of WOLF RPG Editor.
   - MIDI Assets: May be reused only.
   - WAV/OGG Assets: May be reused, modified, and used outside of WOLF RPG Editor.
+
+    - "Reuse" refers to including the files in a game.
+    - "Modify" refers to making changes to the files for use in your own game.
 
 - Games using these assets may be sold.
   However, the sale of the assets themselves
@@ -140,23 +142,18 @@ Asset Contributors
   However, users may download the sample game assets and use them
   in works created with such software (they may be used outside of WOLF RPG Editor).
 
-
-  * "Reuse" refers to including the files in a game.
-  * "Modify" refers to making changes to the files for use in your own game.
-
-
-* Redistribution of modified versions of the Base System is also permitted.
+Redistribution of modified versions of the Base System is also permitted.
 
 ―――――――――――――――――――――――――――――――――――――――――
-* Secondary Creation (Added on 09/05/2023)
+Secondary Creation (Added on 09/05/2023)
 
 - Creating derivative works based on the characters
-  and story of the Sample Game is officially permitted.
+  and story of the sample game is officially permitted.
 
 - As part of doujin activities, you may sell or distribute
-  derivative works of the Sample Game without permission.
+  derivative works of the sample game without permission.
   However, if you plan to sell on a commercial scale,
-  please contact me through the email form below.
+  please contact me through the email form below:
   https://www.silversecond.net/contents/mail_forms/mail_works/
 ―――――――――――――――――――――――――――――――――――――――――
 Copyright Notice for Libraries Used (Updated on 2/7/2021)
@@ -239,8 +236,8 @@ Copyright Notice for Libraries Used (Updated on 2/7/2021)
   THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 
-◎If you encounter bugs or other issues in this game, please contact via the link below.
-  Please visit the bug report thread on the forum.
+◎If you encounter bugs or other issues in this game, please contact me through the link below.
+  You can find the bug report thread on the forum.
 ――――――――――――――――――――――-----
 ●WOLF RPG Editor Official Website (Japanese):
 https://silversecond.com/WolfRPGEditor/
@@ -248,4 +245,4 @@ https://silversecond.com/WolfRPGEditor/
 https://silversecond.net/
 ――――――――――――――――――――――-----
 
-* Unauthorized reproduction or commercial use of this game is prohibited.
+Unauthorized reproduction or commercial use of this game is prohibited.

@@ -264,8 +264,8 @@ WoditorEvCOMMAND_START
 [121][4,0]<4>(9000010,1,0,0)()
 [0][0,0]<4>()()
 [420][1,0]<3>(0)()
-[103][0,1]<4>()("If no display (0).")
-[103][0,1]<4>()("Move to hidden position.")
+[103][0,1]<4>()("If no display (0),")
+[103][0,1]<4>()("move to hidden position.")
 [150][2,0]<4>(3843,1600020)()
 [150][13,0]<4>(4198145,1600020,4,0,0,-1000000,255,1600032,1600033,-1000000,-1000000,0,16777216)()
 [150][14,0]<4>(4198145,1600020,4,0,0,-1000000,255,1600032,1600033,-1000000,-1000000,0,16777216,2)()
@@ -499,8 +499,8 @@ WoditorEvCOMMAND_END
  | | | |■Set Variable: Sys10:Message Wait (X frames) = 1 + 0 
  | | | |■
  | | |-◇Else
- | | | |▼ If no display (0).
- | | | |▼ Move to hidden position.
+ | | | |▼ If no display (0),
+ | | | |▼ move to hidden position.
  | | | |■Picture [Reset Delay]: CSelf20[Base Picture ID] 
  | | | |■Picture Move: CSelf20[Base Picture ID]  X:CSelf32[Hidden Display Position X] Y:CSelf33[Hidden Display Position Y] / 4(0) Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Scale Same / Color Same
  | | | |■Picture Move: CSelf20[Base Picture ID]  X:CSelf32[Hidden Display Position X] Y:CSelf33[Hidden Display Position Y] / 4(2) Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Scale Same / Color Same

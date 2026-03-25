@@ -17,9 +17,8 @@ Asset Contributors
 
 - Enemy Image Assets
   GD (From WOLF RPG Editor Wiki)
-  * When distributing these assets, you must include the creator's name.
-    When redistributing them as assets or modifying and distributing them as assets,
-    please be sure to include the creator's name.
+  - You must include the creator's name when redistributing these assets as assets,
+    whether unmodified or modified.
 
 - MIDI Assets (Filenames have been changed for convenience.)
   タクミ(Takumi)
@@ -44,16 +43,16 @@ Asset Contributors
 
 ――――――――――――――――――――――――――――――――――――――――――――
 
-* Rights to the assets included in this data are as follows:
+Rights to the assets included in this data are as follows:
 
   - Image Assets: May be reused, modified, and used outside of WOLF RPG Editor.
-   → However, when redistributing the enemy character assets created by GD as assets,
-     or distributing modified versions as assets, you must include the creator's name
+    - However, you must include the creator's name when redistributing
+      the enemy image assets created by GD as assets, whether unmodified or modified.
   - MIDI Assets: May be reused only.
   - WAV/OGG Assets: May be reused, modified, and used outside of WOLF RPG Editor.
 
-  * "Reuse" refers to including the files in a game.
-  * "Modify" refers to making changes to the files for use in your own game.
+    - "Reuse" refers to including the files in a game.
+    - "Modify" refers to making changes to the files for use in your own game.
 
 
 - Games using these assets may be sold.
@@ -68,4 +67,4 @@ Asset Contributors
   in works created with such software (they may be used outside of WOLF RPG Editor).
 
 
-* Redistribution of modified versions of the Base System is also permitted.
+Redistribution of modified versions of the Base System is also permitted.

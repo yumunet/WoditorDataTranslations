@@ -1,5 +1,5 @@
 COMMON_ID=48
-COMMON_NAME=X[Com]Base System Auto-init
+COMMON_NAME=X[Com]Base System Auto-Init
 COMMAND_COLOR=4
 TRIGGER=35
 TRIGGER_TARGET=2000000
@@ -174,7 +174,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("* Specify the field index where Equipped Weapon in Allies begins here.")
+[103][0,1]<0>()("Specify the field index where Equipped Weapon in Allies begins here.")
 [121][4,0]<0>(1600090,28,0,0)()
 [179][1,0]<0>(1)()
 [103][0,1]<1>()("Ver.3.30  The current save slot is now read every time at startup or immediately after loading.")
@@ -420,7 +420,7 @@ WoditorEvCOMMAND_END
 ▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼ * Specify the field index where Equipped Weapon in Allies begins here.
+▼ Specify the field index where Equipped Weapon in Allies begins here.
 ■Set Variable: CSelf90[Equipments Check Start Position] = 28 + 0 
 ■Repeat Loop [ 1 ] Times
  |▼ Ver.3.30  The current save slot is now read every time at startup or immediately after loading.

@@ -199,7 +199,7 @@ COMMAND_NUM=699
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("[Process Overview]")
-[103][0,1]<0>()("  This common event is always used to increase or decrease the ally's parameter values in the base system.")
+[103][0,1]<0>()("  This common event is always used to increase or decrease the ally's parameter values in the Base System.")
 [103][0,1]<0>()("  It only works on the map, but may also be called after battle. In that case, the result is displayed as a battle message.")
 [103][0,1]<0>()("")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
@@ -901,7 +901,7 @@ WoditorEvCOMMAND_END
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ [Process Overview]
-▼   This common event is always used to increase or decrease the ally's parameter values in the base system.
+▼   This common event is always used to increase or decrease the ally's parameter values in the Base System.
 ▼   It only works on the map, but may also be called after battle. In that case, the result is displayed as a battle message.
 ▼ 
 ▼ ―――――――――――――――――――――――――――――――――――

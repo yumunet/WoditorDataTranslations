@@ -39,22 +39,22 @@ OPTION_VAL_2=0
 COMMAND_NUM=50
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("[Hint] In the base system, the initial party member is set in the Variable Database")
-[103][0,1]<0>()("      (Type 6: Party). By default, the party has one member: <dqrt>Hero.<dqrt>")
+[103][0,1]<0>()("Hint: In the Base System, the initial party member is set in the Variable Database (Type 6: Party).")
+[103][0,1]<0>()("      By default, the party has one member: <dqrt>Hero.<dqrt>")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("Display title image. [The image used here will be the title image]")
+[103][0,1]<0>()("Display title image. (The image used here will be the title image)")
 [103][0,1]<0>()("By default, <dqrt>TitleGraphic.png<dqrt> in the <dqrt>SystemFile<dqrt> folder is the title screen.")
 [150][11,1]<0>(0,1,0,1,1,1,255,0,0,100,0)("SystemFile/TitleGraphic.png")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("When starting the game, insert a 1-frame wait to")
-[103][0,1]<0>()("allow for the initialization of the base system!")
+[103][0,1]<0>()("allow for the initialization of the Base System!")
 [103][0,1]<0>()("If you don't, message display will be misaligned.")
 [180][1,0]<0>(1)()
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("[Title Event Starts Here]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("If a save file is found (by Common 48: X[C]Base System Auto-Initialize),")
+[103][0,1]<0>()("If a save file is found (by Common 48: X[Com]Base System Auto-Init),")
 [103][0,1]<0>()("set the default value of the next choice to 1 (Continue).")
 [111][4,0]<0>(1,9000025,1,1)()
 [401][1,0]<0>(1)()
@@ -92,22 +92,22 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ [Hint] In the base system, the initial party member is set in the Variable Database
-▼       (Type 6: Party). By default, the party has one member: "Hero."
+▼ Hint: In the Base System, the initial party member is set in the Variable Database (Type 6: Party).
+▼       By default, the party has one member: "Hero."
 ▼  
-▼ Display title image. [The image used here will be the title image]
+▼ Display title image. (The image used here will be the title image)
 ▼ By default, "TitleGraphic.png" in the "SystemFile" folder is the title screen.
 ■Picture Show: 1 [Top-Left] File [SystemFile/TitleGraphic.png] X:0 Y:0 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
 ▼  
 ▼ When starting the game, insert a 1-frame wait to
-▼ allow for the initialization of the base system!
+▼ allow for the initialization of the Base System!
 ▼ If you don't, message display will be misaligned.
 ■Wait: 1 Frames
 ▼  
 ▼  
 ▼ [Title Event Starts Here]
 ▼  
-▼ If a save file is found (by Common 48: X[C]Base System Auto-Initialize),
+▼ If a save file is found (by Common 48: X[Com]Base System Auto-Init),
 ▼ set the default value of the next choice to 1 (Continue).
 ■Condition (Number):   [1] Sys25:Current Save (0+) >=  1  
 -◇Condition:  [1]  [ Sys25:Current Save (0+) >= 1   ] Case↓

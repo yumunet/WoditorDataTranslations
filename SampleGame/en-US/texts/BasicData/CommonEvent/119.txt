@@ -388,7 +388,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<1>(0,1600030,18,332288,1600010)("","Skills","","Animation")
 [111][4,0]<1>(1,1600010,0,1)()
 [401][1,0]<1>(1)()
-[250][5,4]<2>(1,1600010,14,332288,1600012)("","┗ Animations","","Process by [Ignore Settings]")
+[250][5,4]<2>(1,1600010,14,332288,1600012)("","┗ Animations","","Process By [Ignore Settings]")
 [111][4,0]<2>(1,1600012,-1,3)()
 [401][1,0]<2>(1)()
 [250][5,4]<3>(1,1600010,9,332288,1600009)("","┗ Animations","","Sound Effect")
@@ -824,7 +824,7 @@ WoditorEvCOMMAND_END
  |■Load DB(User):  CSelf10[一時変数] = UserDB[ "Skills":CSelf30[技能番号]:"Animation" ] (0:-:19) 
  |■Condition (Number):   [1] CSelf10[一時変数] >=  0  
  |-◇Condition:  [1]  [ CSelf10[一時変数] >= 0   ] Case↓
- | |■Load DB(User):  CSelf12[一時変数２] = UserDB[ "┗ Animations":CSelf10[一時変数]:"Process by [Ignore Settings]" ] (1:-:14) 
+ | |■Load DB(User):  CSelf12[一時変数２] = UserDB[ "┗ Animations":CSelf10[一時変数]:"Process By [Ignore Settings]" ] (1:-:14) 
  | |■Condition (Number):   [1] CSelf12[一時変数２] <=  -1  
  | |-◇Condition:  [1]  [ CSelf12[一時変数２] <= -1   ] Case↓
  | | |■Load DB(User):  CSelf9[表示文字列] = UserDB[ "┗ Animations":CSelf10[一時変数]:"Sound Effect" ] (1:-:9) 

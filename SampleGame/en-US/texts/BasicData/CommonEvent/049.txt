@@ -202,9 +202,9 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("  A common event to play sound effects.")
-[103][0,1]<0>()("  The main sound effects in the base system are played through this common event.")
+[103][0,1]<0>()("  The main sound effects in the Base System are played through this common event.")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("  To change specific sound effects in the base system, edit them manually here.")
+[103][0,1]<0>()("  To change specific sound effects in the Base System, edit them manually here.")
 [103][0,1]<0>()("  (However, this will not affect cursor and selection sounds for Choice.")
 [103][0,1]<0>()("   For those, please set System Variables 17 to 19.)")
 [103][0,1]<0>()(" ")
@@ -324,9 +324,9 @@ WoditorEvCOMMAND_END
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ [Process Overview]
 ▼   A common event to play sound effects.
-▼   The main sound effects in the base system are played through this common event.
+▼   The main sound effects in the Base System are played through this common event.
 ▼  
-▼   To change specific sound effects in the base system, edit them manually here.
+▼   To change specific sound effects in the Base System, edit them manually here.
 ▼   (However, this will not affect cursor and selection sounds for Choice.
 ▼    For those, please set System Variables 17 to 19.)
 ▼  

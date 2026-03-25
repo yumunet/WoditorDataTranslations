@@ -172,7 +172,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("  Processes full-screen effects.")
-[103][0,1]<0>()("  The main screen effects in the base system are performed through this common event.")
+[103][0,1]<0>()("  The main screen effects in the Base System are performed through this common event.")
 [103][0,1]<0>()("")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("[Databases Accessed by This Common Event]")
@@ -217,7 +217,7 @@ WoditorEvCOMMAND_END
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ [Process Overview]
 ▼   Processes full-screen effects.
-▼   The main screen effects in the base system are performed through this common event.
+▼   The main screen effects in the Base System are performed through this common event.
 ▼ 
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ [Databases Accessed by This Common Event]

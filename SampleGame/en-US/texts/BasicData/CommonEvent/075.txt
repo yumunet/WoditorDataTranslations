@@ -177,7 +177,7 @@ COMMAND_NUM=339
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("[Process Overview]")
-[103][0,1]<0>()("  This common event is always used to add or remove states on the ally in the base system.")
+[103][0,1]<0>()("  This common event is always used to add or remove states on the ally in the Base System.")
 [103][0,1]<0>()("  Works only on the map.")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("  Also, handles HP changes related to the Fainted state.")
@@ -519,7 +519,7 @@ WoditorEvCOMMAND_END
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ [Process Overview]
-▼   This common event is always used to add or remove states on the ally in the base system.
+▼   This common event is always used to add or remove states on the ally in the Base System.
 ▼   Works only on the map.
 ▼  
 ▼   Also, handles HP changes related to the Fainted state.

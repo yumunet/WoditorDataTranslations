@@ -169,7 +169,7 @@ COMMAND_NUM=40
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("[Process Overview]")
-[103][0,1]<0>()("  This common event is always used to increase or decrease the weapon quantity in the base system.")
+[103][0,1]<0>()("  This common event is always used to increase or decrease the weapon quantity in the Base System.")
 [103][0,1]<0>()("  Works both on the map and in battle.")
 [103][0,1]<0>()("  Automatically adjusts for the quantity limit.")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
@@ -212,7 +212,7 @@ WoditorEvCOMMAND_END
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ [Process Overview]
-▼   This common event is always used to increase or decrease the weapon quantity in the base system.
+▼   This common event is always used to increase or decrease the weapon quantity in the Base System.
 ▼   Works both on the map and in battle.
 ▼   Automatically adjusts for the quantity limit.
 ▼ ―――――――――――――――――――――――――――――――――――
