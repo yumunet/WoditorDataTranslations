@@ -10,6 +10,7 @@
 *.tile binary
 
 *.rc working-tree-encoding=UTF-16LE-BOM
+BaseSystemEmptyData/ja-JP/others/素材規約.txt working-tree-encoding=cp932
 Extras/GraphicMaker/original/Graphics/*/Setting.txt working-tree-encoding=cp932
 Extras/GraphicMaker/original/説明書・パーツ規格について.txt working-tree-encoding=cp932
 Extras/Version1Assets/original/Ver1用マップチップ\[のりさん他]/Ver1マップチップの使い方.txt working-tree-encoding=cp932
