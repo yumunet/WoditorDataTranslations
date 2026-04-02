@@ -781,7 +781,7 @@ WoditorEvCOMMAND_END
  |◇End◇
  |■
 ◇Loop End Point◇◇
-●Label Point [攻撃集中判定終了] <<<<<<<<<<<<<<<<<<<<<<<<★
+●Label Point [攻撃集中判定終了] <<<<<<<<<<<<<<<<★
 ▼  
 ■Set Variable: CSelf31[次に注目する対象は40～の何番目以降か] = -1 + 0 
 ■Set Variable: CSelf10[一時変数A] = 1600040 + 0 

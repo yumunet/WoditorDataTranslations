@@ -234,7 +234,7 @@ DEFAULT_VAL_NUM=0
 <<!--DATANAME--!>>[RO] Screen Width,
 <<!--DATANAME--!>>[RO] Screen Height,
 <<!--DATANAME--!>>[RO] Tile Size,
-<<!--DATANAME--!>>[RO] Screen Resolution Multiplier (1x-3x),
+<<!--DATANAME--!>>[RO] Screen Resolution Multiplier (1-3x),
 <<!--DATANAME--!>>Reset Log (0:None/1:F12/2:Command),
 <<!--DATANAME--!>> -----,
 <<!--DATANAME--!>>Smoothly Scale Zooming Map&Ev? (1:ON)[α],

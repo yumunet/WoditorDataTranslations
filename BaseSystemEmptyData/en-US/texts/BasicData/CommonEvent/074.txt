@@ -387,7 +387,7 @@ WoditorEvCOMMAND_END
 ■Condition (Number):   [1] CSelf2[Option] ==  0  
 -◇Condition:  [1]  [ CSelf2[Option] == 0   ] Case↓
  |▼ Reset.
- |●Label Point [Reset Change Values] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |●Label Point [Reset Change Values] <<<<<<<<<<<<<<<<★
  |■Write to DB(Var): VarDB[ "Base System Variables":78:0 ] (18:[LvUp] Level-Up Count:Number) =  0
  |■Write to DB(Var): VarDB[ "Base System Variables":79:0 ] (18:[LvUp] Level-Up Ally ID:Number) =  -1
  |■Write to DB(Var): VarDB[ "Base System Variables":80:0 ] (18:[LvUp] Max HP Increase:Number) =  0

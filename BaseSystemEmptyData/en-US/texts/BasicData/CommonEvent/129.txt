@@ -296,7 +296,7 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf99[キャラ初期選択位置] = 0 + 0 
 ▼ パーティー情報から一人ずつ主人公ID取得して、キャラクター一覧を表示
 ■Repeat Loop [ CSelf0[処理モード] ] Times
- |●Label Point [パーティ表示] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |●Label Point [パーティ表示] <<<<<<<<<<<<<<<<★
  |■Set Variable: CSelf10[一時TMP１] = 0 + 0 
  |■Call Event [Name]: ["X[Map]Character Box: Draw All"] <CommonEv 92>  / 0:新規に全員描画
  |■
@@ -325,7 +325,7 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf99[キャラ初期選択位置] = CSelf20[選択キャラ位置（0～5）] + 0 
  |■Call Event [Name]: CSelf11[主人公ID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf20[選択キャラ位置（0～5）]
  |■Call Event [Name]: CSelf98[記憶キー位置] = ["X[Map]Get Cursor Memory Pos"] <CommonEv 116>  / 0:[移動]技能(要ｷｬﾗ指定) / CSelf11[主人公ID]
- |●Label Point [技能選択] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |●Label Point [技能選択] <<<<<<<<<<<<<<<<★
  |■Call Event [Name]: ["X[Map]Character Box: Draw All"] <CommonEv 92>  / -1:全員消去
  |▼ 万能ウィンドウ設定を初期化
  |■Call Event [Name]: ["X[Map]Create Skill List"] <CommonEv 111>  / CSelf11[主人公ID]

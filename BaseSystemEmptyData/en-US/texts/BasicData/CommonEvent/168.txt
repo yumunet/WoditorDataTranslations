@@ -416,7 +416,7 @@ WoditorEvCOMMAND_END
  |■
 ◇End◇
 ■Repeat Loop [ 0 ] Times
- |●Label Point [変身実行] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |●Label Point [変身実行] <<<<<<<<<<<<<<<<★
  |■Condition (Number):   [1] CSelf48[変身時呼出Ev] >=  0  
  |-◇Condition:  [1]  [ CSelf48[変身時呼出Ev] >= 0   ] Case↓
  | |■Call Event: Variable [CSelf48[変身時呼出Ev]]'s Ev Page[1]

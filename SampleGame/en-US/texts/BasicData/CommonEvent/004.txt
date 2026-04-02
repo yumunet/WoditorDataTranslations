@@ -363,7 +363,7 @@ WoditorEvCOMMAND_END
  | | |▼ Put Character ID in CSelf11 and jump further down.
  | | |■Call Event [Name]: CSelf11[Target Character ID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf10[Temp Variable A]
  | | |▼ This label is also jumped to when only one ally is processed.
- | | |●Label Point [On-Map Process] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | | |●Label Point [On-Map Process] <<<<<<<<<<<<<<<<★
  | | |■Condition (Number):   [1] CSelf11[Target Character ID] >=  0  
  | | |-◇Condition:  [1]  [ CSelf11[Target Character ID] >= 0   ] Case↓
  | | | |■Condition (Number):   [1] CSelf0[Type] &  4  
@@ -425,7 +425,7 @@ WoditorEvCOMMAND_END
  | | |▼ Put Character ID in CSelf11 and jump further down.
  | | |■Call Event [Name]: CSelf11[Target Character ID] = ["X[Bat]Get Ally ID in Slot"] <CommonEv 141>  / CSelf10[Temp Variable A]
  | | |▼ This label is also jumped to when only one ally is processed.
- | | |●Label Point [In-Battle Process] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | | |●Label Point [In-Battle Process] <<<<<<<<<<<<<<<<★
  | | |▼ Process the character, if present.
  | | |■Condition (Number):   [1] CSelf11[Target Character ID] >=  0  
  | | |-◇Condition:  [1]  [ CSelf11[Target Character ID] >= 0   ] Case↓

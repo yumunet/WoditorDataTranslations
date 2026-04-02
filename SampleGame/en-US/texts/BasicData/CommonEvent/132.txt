@@ -859,11 +859,11 @@ WoditorEvCOMMAND_END
 ■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 0:初期表示 / -1
 ■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / 2:カーソル切替(-1で消去) / CSelf10[選択箇所]
 ■Loop Start
- |●Label Point [キー処理開始] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |●Label Point [キー処理開始] <<<<<<<<<<<<<<<<★
  |■Wait: 1 Frames
  |■Debug Text: \cself[10]
  |■Key Input: CSelf20[キー入力１] [Wait for Input <!>]  4-Dir Confirm (10) Cancel (11)
- |●Label Point [基本キー処理] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |●Label Point [基本キー処理] <<<<<<<<<<<<<<<<★
  |■Set Variable: CSelf13[戻る(-1) 次へ(1) 決定(2)] = 0 + 0 
  |■Condition (Number):   [1] CSelf20[キー入力１] ==  10  /  [2] CSelf20[キー入力１] ==  11  /  [3] CSelf20[キー入力１] ==  2  
  |-◇Condition:  [1]  [ CSelf20[キー入力１] == 10   ] Case↓
@@ -1066,7 +1066,7 @@ WoditorEvCOMMAND_END
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |▼ 　　　項目別の変更処理
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |●Label Point [項目別処理] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |●Label Point [項目別処理] <<<<<<<<<<<<<<<<★
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |■Condition (Number):   [1] CSelf10[選択箇所] ==  0  
  |-◇Condition:  [1]  [ CSelf10[選択箇所] == 0   ] Case↓
@@ -1444,7 +1444,7 @@ WoditorEvCOMMAND_END
  | |■Condition (Number):   [1] CSelf13[戻る(-1) 次へ(1) 決定(2)] ==  2  
  | |-◇Condition:  [1]  [ CSelf13[戻る(-1) 次へ(1) 決定(2)] == 2   ] Case↓
  | | |▼ Ver3.00修正　修正された場合に変更するか質問を表示
- | | |●Label Point [設定完了] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | | |●Label Point [設定完了] <<<<<<<<<<<<<<<<★
  | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
  | | |■Call Event [Name]: ["X[Map]Draw System Screen"] <CommonEv 95>  / -1:画面消去 / -1
  | | |■Call Event [Name]: ["X[Map]Display Menu Message"] <CommonEv 101>  / 0:初期表示 / Settings saved.
@@ -1465,7 +1465,7 @@ WoditorEvCOMMAND_END
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |▼ 　　　変更前に戻して終了する
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |●Label Point [変更前に戻す＆終了] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |●Label Point [変更前に戻す＆終了] <<<<<<<<<<<<<<<<★
  |■ Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
  |■Write to DB(Var): VarDB[ "Base System Variables":56:0 ] (18:[System] Cursor Memory:Number) =  CSelf60[[保存]キー位置保存]
  |■Write to DB(Var): VarDB[ "Base System Variables":57:0 ] (18:[System] Key Repeat Speed:Number) =  CSelf61[[保存]キーリピート]

@@ -238,7 +238,7 @@ WoditorEvCOMMAND_END
 ▼ バブルソートで敏捷の高い順に処理する
 ▼ ソートを行う。セルフ10-1個目が最終地点
 ■Load DB(Var):  CSelf30 = VarDB[ "Base System Variables":"[Battle] Command Input Pos":0 ] (18:73:Number) 
-●Label Point [処理開始] <<<<<<<<<<<<<<<<<<<<<<<<★
+●Label Point [処理開始] <<<<<<<<<<<<<<<<★
 ▼ セルフ20は「一度でも前後交換したかどうか」のフラグ　0で終わればソート完了
 ■Set Variable: CSelf20[一度でも交換した？] = 0 + 0 
 ▼ セルフ11が現在注目地点 ※1から始まる　（0番は一時使用）

@@ -554,7 +554,7 @@ WoditorEvCOMMAND_END
  | | |■
  | |◇Loop End Point◇◇
  | |●Label Jump [装備可能者計算] >>>>>>>>>>>>>>>>>>>>>>>>>
- | |●Label Point [計算戻り1] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | |●Label Point [計算戻り1] <<<<<<<<<<<<<<<<★
  | |■Write to DB(Var): VarDB[ "Base System Variables":17:0 ] (18:Universal Window Item Count:Number) +=  1
  | |■
  |◇Loop End Point◇◇
@@ -647,7 +647,7 @@ WoditorEvCOMMAND_END
  | | | | |■
  | | | |◇End◇
  | | | |●Label Jump [装備可能者計算] >>>>>>>>>>>>>>>>>>>>>>>>>
- | | | |●Label Point [計算戻り2] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | | | |●Label Point [計算戻り2] <<<<<<<<<<<<<<<<★
  | | | |▼ アイテムがあれば格納先に＋１
  | | | |■Set Variable: CSelf22[格納先番号] += 1 + 0 
  | | | |■Write to DB(Var): VarDB[ "Base System Variables":17:0 ] (18:Universal Window Item Count:Number) +=  1
@@ -660,7 +660,7 @@ WoditorEvCOMMAND_END
  |■
 ◇End◇
 ■Repeat Loop [ 0 ] Times
- |●Label Point [装備可能者計算] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |●Label Point [装備可能者計算] <<<<<<<<<<<<<<<<★
  |▼ 装備の場合は、装備可能者を計算
  |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"[Option] Spare String A" ] (19:-:9) =  
  |■Condition (Number):   [1] CSelf27[コード] >=  20000  

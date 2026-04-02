@@ -1059,7 +1059,7 @@ WoditorEvCOMMAND_END
  | |■Condition (Number):   [1] CSelf3[Show Message?] ==  1  
  | |-◇Condition:  [1]  [ CSelf3[Show Message?] == 1   ] Case↓
  | | |▼ On-map message.
- | | |●Label Point [Level Up Message] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | | |●Label Point [Level Up Message] <<<<<<<<<<<<<<<<★
  | | |■Set String: CSelf9[Message Text] = ""
  | | |■Load DB(Var):  CSelf8[Parameter Name] = VarDB[ "Allies":CSelf0[Ally ID]:"Character Name" ] (0:-:0) 
  | | |■Set String: CSelf9[Message Text] += "\cself[8]'s"
@@ -1590,7 +1590,7 @@ WoditorEvCOMMAND_END
 ▼   Display Message
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■Repeat Loop [ 0 ] Times
- |●Label Point [Display Message] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |●Label Point [Display Message] <<<<<<<<<<<<<<<<★
  |▼ Display a message here.
  |▼ (However, level and EXP messages are displayed via separate processing.)
  |■Show Message: @1\n\>\cself[9]

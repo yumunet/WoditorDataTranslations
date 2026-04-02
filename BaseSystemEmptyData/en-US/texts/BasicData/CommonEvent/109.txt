@@ -650,7 +650,7 @@ WoditorEvCOMMAND_END
  | |◇End◇
  | |■Load DB(Var):  CSelf13[選択された装備] = VarDB[ "Universal Window Items":0:"Item ID" ] (19::1) 
  | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
- | |●Label Point [差分計算開始] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | |●Label Point [差分計算開始] <<<<<<<<<<<<<<<<★
  | |■Call Event [Name]: CSelf12[一時変数A] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf35[キャラID] / CSelf10[選択カーソル位置]
  | |■Repeat Loop [ 1 ] Times
  | | |▼ －－－－－－－－－－－－－－－－－－－－－－－
@@ -754,7 +754,7 @@ WoditorEvCOMMAND_END
  | | |▼ ここの0回ループは、通常時に入ってこないようにするためのもので
  | | |▼ 消してはいけない、注意。
  | | |■Repeat Loop [ 0 ] Times
- | | | |●Label Point [装備不可能時戻り場所] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | | | |●Label Point [装備不可能時戻り場所] <<<<<<<<<<<<<<<<★
  | | | |■Load DB(Var):  CSelf12[一時変数A] = VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) 
  | | | |■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) =  CSelf12[一時変数A]
  | | | |■Call Event [Name]: CSelf13[選択された装備] = ["X[Com]U-Window: Select"] <CommonEv 65>  / 1:End with One Key Press / 1:Don't Play Confirm Sound
@@ -774,7 +774,7 @@ WoditorEvCOMMAND_END
  | | | |■Break Loop
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf13[選択された装備] == -2   ] Case↓
- | | | |●Label Point [装備解除時] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | | | |●Label Point [装備解除時] <<<<<<<<<<<<<<<<★
  | | | |▼ 装備を外した場合
  | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 4:Unequip Sound
  | | | |■Call Event [Name]: ["X[Map]Change Equipment"] <CommonEv 113>  / CSelf35[キャラID] / CSelf10[選択カーソル位置] / -1

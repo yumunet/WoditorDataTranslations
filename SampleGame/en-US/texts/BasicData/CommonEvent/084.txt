@@ -461,7 +461,7 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf19[買う(0)/売る(1)モード] = 0 + 0 
 ■Wait: 9 Frames
 ■Set Variable: CSelf16[最終選択位置] = 0 + 0 
-●Label Point [お店開始] <<<<<<<<<<<<<<<<<<<<<<<<★
+●Label Point [お店開始] <<<<<<<<<<<<<<<<★
 ■Condition (Number):   [1] CSelf0[お店タイプ] ==  1  /  [2] CSelf0[お店タイプ] ==  2  /  [3] CSelf0[お店タイプ] ==  3  
 -◇Condition:  [1]  [ CSelf0[お店タイプ] == 1   ] Case↓
  |▼ 売る
@@ -687,7 +687,7 @@ WoditorEvCOMMAND_END
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |▼ 　ここから終了処理
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |●Label Point [お店終了] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |●Label Point [お店終了] <<<<<<<<<<<<<<<<★
  |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / -1:消去 / 0:買う
  |■Wait: 10 Frames
  |■Exit Event

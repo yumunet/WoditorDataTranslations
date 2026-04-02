@@ -254,7 +254,7 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf21[キャラ欄選択位置] = 0 + 0 
 ▼ パーティー情報から一人ずつ主人公ID取得して、キャラクター一覧を表示
 ■Repeat Loop [ CSelf0[処理モード] ] Times
- |●Label Point [パーティ表示] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |●Label Point [パーティ表示] <<<<<<<<<<<<<<<<★
  |■Call Event [Name]: ["X[Map]Character Box: Draw All"] <CommonEv 92>  / 0:新規に全員描画
  |■
 ◇Loop End Point◇◇

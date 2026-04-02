@@ -441,7 +441,7 @@ WoditorEvCOMMAND_END
 ▼  
 ■Set Variable: CSelf40[Return Point] = 1 + 0 
 ■Repeat Loop [ 1 ] Times
- |●Label Point [Set Message Display Position] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |●Label Point [Set Message Display Position] <<<<<<<<<<<<<<<<★
  |■Set Variable: Sys1:Message Window X = 2 * CSelf88[Coordinate Scale X (x10)] 
  |■Set Variable: Sys2:Message Window Y = 17 * CSelf89[Coordinate Scale Y (x10)] 
  |▼ Ver.3.00  Adjusted the message window Y position.
@@ -454,7 +454,7 @@ WoditorEvCOMMAND_END
  |●Label Jump [Return Point \cself[40]] >>>>>>>>>>>>>>>>>>>>>>>>>
  |■
 ◇Loop End Point◇◇
-●Label Point [Return Point 1] <<<<<<<<<<<<<<<<<<<<<<<<★
+●Label Point [Return Point 1] <<<<<<<<<<<<<<<<★
 ▼  
 ■Set Variable: Sys0:Portrait Number = 1 + 0 
 ■Loop Start
@@ -473,7 +473,7 @@ WoditorEvCOMMAND_END
  |■Condition (Number):   [1] Sys12:Message Showing? (1:Yes) ==  1  
  |-◇Condition:  [1]  [ Sys12:Message Showing? (1:Yes) == 1   ] Case↓
  | |▼ Display message window.
- | |●Label Point [Display Window] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | |●Label Point [Display Window] <<<<<<<<<<<<<<<<★
  | |■Set Variable: CSelf49[Portrait ID] = Sys0:Portrait Number + 0 
  | |■Condition (Number):   [1] CSelf48[Previous Portrait ID] !=  CSelf49[Portrait ID]  
  | |-◇Condition:  [1]  [ CSelf48[Previous Portrait ID] != CSelf49[Portrait ID]   ] Case↓
@@ -488,7 +488,7 @@ WoditorEvCOMMAND_END
  | | | | |▼   Reset the message window display position.
  | | | | |■Set Variable: CSelf40[Return Point] = 2 + 0 
  | | | | |●Label Jump [Set Message Display Position] >>>>>>>>>>>>>>>>>>>>>>>>>
- | | | | |●Label Point [Return Point 2] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | | | | |●Label Point [Return Point 2] <<<<<<<<<<<<<<<<★
  | | | | |▼   If not displayed, display it newly.
  | | | | |■Picture Show: CSelf20[Base Picture ID] [Center] Window (CSelf9[Window Image File]) Size [CSelf38[Width],CSelf39[Height]] X:CSelf32[Hidden Display Position X] Y:CSelf33[Hidden Display Position Y] / 5(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  | | | | |■

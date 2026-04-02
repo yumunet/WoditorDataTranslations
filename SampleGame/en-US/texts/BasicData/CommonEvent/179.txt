@@ -781,7 +781,7 @@ WoditorEvCOMMAND_END
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |▼ 　ゲージの表示・更新
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |●Label Point [ゲージ更新] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |●Label Point [ゲージ更新] <<<<<<<<<<<<<<<<★
  |■Set Variable: CSelf10[一時変数A] = CSelf1[対象戦闘ｽﾛｯﾄ] - 10 
  |■Set Variable: CSelf29[一時ピクチャ番号2] = CSelf10[一時変数A] * CSelf4[1キャラあたり使用ピクチャ数] 
  |■Set Variable: CSelf29[一時ピクチャ番号2] += 100 + CSelf20[基本ピクチャ番号] 

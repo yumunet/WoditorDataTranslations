@@ -505,7 +505,7 @@ WoditorEvCOMMAND_END
  |-◇Condition:  [1]  [ CSelf19[逃走？終了？] == 1   ] Case↓
  | |▼ 逃走処理の場合
  | |●Label Jump [逃走処理] >>>>>>>>>>>>>>>>>>>>>>>>>
- | |●Label Point [逃走戻り] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | |●Label Point [逃走戻り] <<<<<<<<<<<<<<<<★
  | |■Call Event [Name]: ["X┣◆Set Action"] <CommonEv 191>  / -1:逃走失敗時
  | |■Set Variable: CSelf18[戦闘・逃走コマンド表示？] = 1 + 0 
  | |■
@@ -619,7 +619,7 @@ WoditorEvCOMMAND_END
  |■Write to DB(Var): VarDB[ "Base System Variables":32:0 ] (18:[System] First Turn Start?:Number) =  1
  |■
 ◇Loop End Point◇◇
-●Label Point [戦闘終了処理] <<<<<<<<<<<<<<<<<<<<<<<<★
+●Label Point [戦闘終了処理] <<<<<<<<<<<<<<<<★
 ■Call Event [Name]: ["X┣◆Update Allies DB"] <CommonEv 199> 
 ■Call Event [Name]: ["X┣◆Rewards Getting Process"] <CommonEv 200>  / CSelf20[終了判定]
 ■Call Event [Name]: ["X┗◆Battle End Process"] <CommonEv 201> 
@@ -633,7 +633,7 @@ WoditorEvCOMMAND_END
 ▼ 　逃走処理の判定
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■Repeat Loop [ 0 ] Times
- |●Label Point [逃走処理] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |●Label Point [逃走処理] <<<<<<<<<<<<<<<<★
  |▼ 確率判定
  |■Load DB(User):  CSelf22[逃走可能確率] = UserDB[ "Enemy Groups":CSelf0[敵グループ番号]:"Flee Success Rate [%]" ] (13:-:11) 
  |■Set Variable: CSelf22[逃走可能確率] -= 0  to  99 

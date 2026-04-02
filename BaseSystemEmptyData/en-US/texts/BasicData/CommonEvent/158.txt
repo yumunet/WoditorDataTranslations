@@ -318,7 +318,7 @@ WoditorEvCOMMAND_END
  |■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
  |■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
  |■Call Event [Name]: CSelf11[一時変数B] = ["X[Bat]Get Cursor Memory Pos"] <CommonEv 155>  / 11:[戦闘]ｱｲﾃﾑ(要ｷｬﾗ指定) / CSelf0[発動者スロット]
- |●Label Point [アイテム開始] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |●Label Point [アイテム開始] <<<<<<<<<<<<<<<<★
  |▼ 万能ウィンドウ設定を初期化
  |■Call Event [Name]: ["X[Bat]Create Item List"] <CommonEv 153> 
  |▼ 万能ウィンドウのサイズ設定

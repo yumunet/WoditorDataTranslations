@@ -474,7 +474,7 @@ WoditorEvCOMMAND_END
 ◇End◇
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■Call Event [Name]: ["X[Map]Display Remaining Item Count"] <CommonEv 99>  / 0:表示 / CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ]
-●Label Point [アイテム使用処理開始] <<<<<<<<<<<<<<<<<<<<<<<<★
+●Label Point [アイテム使用処理開始] <<<<<<<<<<<<<<<<★
 ■Condition (Number):   [1] CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ] <=  19999  /  [2] CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ] <=  29999  /  [3] CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ] <=  39999  
 -◇Condition:  [1]  [ CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ] <= 19999   ] Case↓
  |▼ ●アイテム使用時の場合
@@ -533,10 +533,10 @@ WoditorEvCOMMAND_END
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■Repeat Loop [ 0 ] Times
  |▼ 「回復アイテム」処理の場合はここへジャンプ
- |●Label Point [回復アイテム処理] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |●Label Point [回復アイテム処理] <<<<<<<<<<<<<<<<★
  |■Set Variable: CSelf16[使用対象フラグ] = 0 + 0 
  |■Call Event [Name]: ["X[Map]Character Box: Draw All"] <CommonEv 92>  / 1:全員描画[瞬間表示]
- |●Label Point [回復アイテム処理2] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |●Label Point [回復アイテム処理2] <<<<<<<<<<<<<<<<★
  |▼ 残り個数を表示
  |▼ 使用対象を選択
  |■Load DB(User):  CSelf10[一時変数A] = UserDB[ "Items":CSelf30[アイテム番号]:"Effect Target" ] (2:-:9) 
@@ -686,7 +686,7 @@ WoditorEvCOMMAND_END
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■Repeat Loop [ 0 ] Times
  |▼ 「イベント起動」処理の場合はここへジャンプ
- |●Label Point [イベント起動処理] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |●Label Point [イベント起動処理] <<<<<<<<<<<<<<<<★
  |■Call Event [Name]: ["X[Map]Item Use: Consume"] <CommonEv 120>  / CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ]
  |■Load DB(User):  CSelf12[一時変数C] = UserDB[ "Items":CSelf30[アイテム番号]:"┗ [3]: Event to Call             " ] (2:-:6) 
  |■Write to DB(Var): VarDB[ "Base System Variables":1:0 ] (18:Menu Close Flag:Number) =  1
@@ -698,7 +698,7 @@ WoditorEvCOMMAND_END
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■Repeat Loop [ 0 ] Times
  |▼ 「技能発動」処理の場合はここへジャンプ
- |●Label Point [技能発動処理] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |●Label Point [技能発動処理] <<<<<<<<<<<<<<<<★
  |■Call Event [Name]: CSelf11[一時変数B] = ["X[Map]Use Skill"] <CommonEv 119>  / CSelf17[発動技能番号] / -1 / CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ]
  |■Condition (Number):   [1] CSelf11[一時変数B] ==  1  
  |-◇Condition:  [1]  [ CSelf11[一時変数B] == 1   ] Case↓

@@ -465,7 +465,7 @@ WoditorEvCOMMAND_END
  |-◇Else
  | |■Condition (Number):   [1] CSelf13[キー入力状態] ==  10  /  [2] CSelf13[キー入力状態] ==  11  
  | |-◇Condition:  [1]  [ CSelf13[キー入力状態] == 10   ] Case↓
- | | |●Label Point [メニュー決定] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | | |●Label Point [メニュー決定] <<<<<<<<<<<<<<<<★
  | | |▼ 決定キーを押した場合の処理
  | | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 1:更新 / -2:フラッシュ停止
  | | |■Set Variable: CSelf22[選択コード位置] = CSelf21[現カーソル位置] + 23 
@@ -566,7 +566,7 @@ WoditorEvCOMMAND_END
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ メニュー終了処理
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-●Label Point [メニュー終了] <<<<<<<<<<<<<<<<<<<<<<<<★
+●Label Point [メニュー終了] <<<<<<<<<<<<<<<<★
 ▼ 強制終了した場合はSEを鳴らさない
 ■Load DB(Var):  CSelf12[一時変数] = VarDB[ "Base System Variables":"Menu Close Flag":"Number" ] (18:1:0) 
 ■Condition (Number):   [1] CSelf12[一時変数] ==  0  

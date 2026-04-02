@@ -418,7 +418,7 @@ WoditorEvCOMMAND_END
  | | | | |▼ Process damage only if HP remains.
  | | | | |■Set Variable: CSelf29[Return Point] = 2 + 0 
  | | | | |●Label Jump [Process Damage to One] >>>>>>>>>>>>>>>>>>>>>>>>>
- | | | | |●Label Point [Process Damage to One, Exit 2] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | | | | |●Label Point [Process Damage to One, Exit 2] <<<<<<<<<<<<<<<<★
  | | | | |■
  | | | |◇End◇
  | | | |■
@@ -447,7 +447,7 @@ WoditorEvCOMMAND_END
  | | | | |▼ Process damage only if HP remains.
  | | | | |■Set Variable: CSelf29[Return Point] = 3 + 0 
  | | | | |●Label Jump [Process Damage to One] >>>>>>>>>>>>>>>>>>>>>>>>>
- | | | | |●Label Point [Process Damage to One, Exit 3] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | | | | |●Label Point [Process Damage to One, Exit 3] <<<<<<<<<<<<<<<<★
  | | | | |■
  | | | |◇End◇
  | | | |■
@@ -462,7 +462,7 @@ WoditorEvCOMMAND_END
 ▼   Process damage to one. (When done, jump to the specified label.)
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■Repeat Loop [ 0 ] Times
- |●Label Point [Process Damage to One] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |●Label Point [Process Damage to One] <<<<<<<<<<<<<<<<★
  |▼ First, check if the target character is not dead.
  |■Call Event [Name]: CSelf58[Just Before Fainting Flag] = ["X[Bat]Get Basic State"] <CommonEv 176>  / CSelf10[Target Slot] / 0:戦闘不能状態
  |■Repeat Loop [ 1 ] Times
@@ -563,7 +563,7 @@ WoditorEvCOMMAND_END
  |■
 ◇Loop End Point◇◇
 ▼  
-●Label Point [Process Damage to One, Exit 1] <<<<<<<<<<<<<<<<<<<<<<<<★
+●Label Point [Process Damage to One, Exit 1] <<<<<<<<<<<<<<<<★
 ▼  
 ■
 [COMMAND_TEXT_END]

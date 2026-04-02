@@ -1964,7 +1964,7 @@ WoditorEvCOMMAND_END
  | | | | |■Set Variable: [Real] CSelf41[効力総計] *= CSelf38[属性効果（加算結果）] / 100 
  | | | | |■
  | | | |◇Loop End Point◇◇
- | | | |●Label Point [計算終了] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | | | |●Label Point [計算終了] <<<<<<<<<<<<<<<<★
  | | | |■Repeat Loop [ 1 ] Times
  | | | | |▼ 【２．１０】　ステータス状態　消去（戦闘不能などの回復をHP・SP回復前にチェックするため）
  | | | | |■ Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
@@ -1994,7 +1994,7 @@ WoditorEvCOMMAND_END
  | | | | |■
  | | | |◇Loop End Point◇◇
  | | | |■Repeat Loop [ CSelf42[HPかSPへの効果？] ] Times
- | | | | |●Label Point [HP＆SP処理] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | | | | |●Label Point [HP＆SP処理] <<<<<<<<<<<<<<<<★
  | | | | |▼ 【２．１１】　ダメージを処理する＆表示
  | | | | |▼ 効果対象と影響をチェック
  | | | | |■Load DB(User):  CSelf10[一時変数A] = UserDB[ "Skills":CSelf1[発動技能]:"┏ Effect Target   " ] (0:-:2) 

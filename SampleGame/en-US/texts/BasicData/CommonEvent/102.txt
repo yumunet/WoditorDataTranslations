@@ -665,7 +665,7 @@ WoditorEvCOMMAND_END
  | | | | |■
  | | | |-◇Condition:  [2]  [ Sys115:[RO] Game.exe Version (x100) >= 300   ] Case↓
  | | | | |▼ Ver3.00以降はSys119の基本画面倍率で調整　Ver3.00修正
- | | | | |■Set Variable: CSelf10[一時変数A] = CSelf81[HP・SPゲージ長] * Sys119:[RO] Screen Resolution Multiplier (1x-3x.. 
+ | | | | |■Set Variable: CSelf10[一時変数A] = CSelf81[HP・SPゲージ長] * Sys119:[RO] Screen Resolution Multiplier (1-3x) 
  | | | | |■
  | | | |◇End◇
  | | | |▼ HPの数値　（表示位置は左下基点）
@@ -722,7 +722,7 @@ WoditorEvCOMMAND_END
  | | | | |■
  | | | |-◇Condition:  [2]  [ Sys115:[RO] Game.exe Version (x100) >= 300   ] Case↓
  | | | | |▼ Ver3.00以降はSys119の基本画面倍率で調整　Ver3.00修正
- | | | | |■Set Variable: CSelf10[一時変数A] = CSelf81[HP・SPゲージ長] * Sys119:[RO] Screen Resolution Multiplier (1x-3x.. 
+ | | | | |■Set Variable: CSelf10[一時変数A] = CSelf81[HP・SPゲージ長] * Sys119:[RO] Screen Resolution Multiplier (1-3x) 
  | | | | |■
  | | | |◇End◇
  | | | |▼ SPの数値　（表示位置は左下基点）

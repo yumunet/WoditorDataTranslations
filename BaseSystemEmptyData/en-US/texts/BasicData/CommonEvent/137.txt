@@ -798,7 +798,7 @@ WoditorEvCOMMAND_END
  |■Exit Event
  |■
 ◇End◇
-●Label Point [更新処理] <<<<<<<<<<<<<<<<<<<<<<<<★
+●Label Point [更新処理] <<<<<<<<<<<<<<<<★
 ▼  
 ▼ 戦闘不能状態の有無からHPを修正する
 ■Load DB(Var):  CSelf21[戦闘不能ターン数] = VarDB[ "×┣State List":CSelf0[戦闘スロット]:0 ] (13:-:\udb[8:0] Turns Left) 

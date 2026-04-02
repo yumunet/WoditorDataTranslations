@@ -1632,7 +1632,7 @@ WoditorEvCOMMAND_END
  | |■
  |-◇Condition:  [2]  [ Sys115:[RO] Game.exe Version (x100) >= 300   ] Case↓
  | |▼ Since version 3.00, adjust using Sys119 "Screen Resolution Multiplier". Modified in Ver.3.00.
- | |■Set Variable: CSelf47[Number Display Shift Amount] = CSelf36[[Stored] Cursor Width] * Sys119:[RO] Screen Resolution Multiplier (1x-3x.. 
+ | |■Set Variable: CSelf47[Number Display Shift Amount] = CSelf36[[Stored] Cursor Width] * Sys119:[RO] Screen Resolution Multiplier (1-3x) 
  | |■
  |◇End◇
  |▼ Display items one by one as pictures.

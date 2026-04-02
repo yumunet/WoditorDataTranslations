@@ -723,7 +723,7 @@ WoditorEvCOMMAND_END
  |■Exit Event
  |■
 ◇End◇
-●Label Point [Update] <<<<<<<<<<<<<<<<<<<<<<<<★
+●Label Point [Update] <<<<<<<<<<<<<<<<★
 ▼  
 ▼ Adjust HP depending on whether fainted or not.
 ■Load DB(Var):  CSelf21[Fainted Turn Count] = VarDB[ "┗ State List":CSelf0[Ally ID]:0 ] (5:-:\udb[8:0] Steps Left) 

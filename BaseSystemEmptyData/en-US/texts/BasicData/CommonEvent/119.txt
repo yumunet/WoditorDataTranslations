@@ -612,7 +612,7 @@ WoditorEvCOMMAND_END
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Load DB(Var):  CSelf37[最大パーティ人数] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
 ▼  
-●Label Point [使用処理2] <<<<<<<<<<<<<<<<<<<<<<<<★
+●Label Point [使用処理2] <<<<<<<<<<<<<<<<★
 ■Set Variable: CSelf99[使用した？] = 0 + 0 
 ■Set Variable: CSelf16[単体(1)or全体(2)] = 0 + 0 
 ■Set Variable: CSelf30[技能番号] = CSelf0[技能コード] + 0 
@@ -740,7 +740,7 @@ WoditorEvCOMMAND_END
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] == 4   ] Case↓
  | | | |▼ 自分以外の味方一人
- | | | |●Label Point [自分以外の味方一人] <<<<<<<<<<<<<<<<<<<<<<<<★
+ | | | |●Label Point [自分以外の味方一人] <<<<<<<<<<<<<<<<★
  | | | |■Set Variable: CSelf16[単体(1)or全体(2)] = 1 + 0 
  | | | |■Call Event [Name]: CSelf11[ターゲット] = ["X[Map]Select Character Box"] <CommonEv 108>  / CSelf11[ターゲット] / 1:決定効果音を鳴らさない
  | | | |■Set Variable: CSelf27[対象ID] = -1 + 0 
@@ -777,7 +777,7 @@ WoditorEvCOMMAND_END
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■Repeat Loop [ 0 ] Times
  |▼ 「技能」使用処理の場合はここへジャンプ
- |●Label Point [使用処理実行] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |●Label Point [使用処理実行] <<<<<<<<<<<<<<<<★
  |■Repeat Loop [ 1 ] Times
  | |▼ Ver2.28 移動時にアイテム「ヒールの巻物」を使っても回復しない(発動者-1だとうまくいかない)バグを修正
  | |■Condition (Number):   [1] CSelf1[発動者ID] ==  -1  
@@ -1010,7 +1010,7 @@ WoditorEvCOMMAND_END
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■Repeat Loop [ 0 ] Times
  |▼ 「イベント起動」処理の場合はここへジャンプ
- |●Label Point [イベント起動処理] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |●Label Point [イベント起動処理] <<<<<<<<<<<<<<<<★
  |■Call Event [Name]: ["X[Map]Skill Use: Consume"] <CommonEv 121>  / CSelf1[発動者ID] / CSelf0[技能コード]
  |■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / -1:削除 / CSelf5 / CSelf5 / CSelf5
  |■Load DB(User):  CSelf12[一時変数２] = UserDB[ "Skills":CSelf30[技能番号]:"(If Used) ┗ Event Number" ] (0:-:3) 
@@ -1024,7 +1024,7 @@ WoditorEvCOMMAND_END
 ▼ 　　　終了時処理
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■Repeat Loop [ 0 ] Times
- |●Label Point [終了処理] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |●Label Point [終了処理] <<<<<<<<<<<<<<<<★
  |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 1:Cancel Sound
  |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0
  |■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / -1:削除 /  /  / 

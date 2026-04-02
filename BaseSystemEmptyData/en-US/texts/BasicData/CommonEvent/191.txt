@@ -373,7 +373,7 @@ WoditorEvCOMMAND_END
  |●Label Jump [AI処理開始] >>>>>>>>>>>>>>>>>>>>>>>>>
  |■
 ◇End◇
-●Label Point [第一コマンド] <<<<<<<<<<<<<<<<<<<<<<<<★
+●Label Point [第一コマンド] <<<<<<<<<<<<<<<<★
 ■Condition (Number):   [1] CSelf1[逃走可能フラグ] ==  1  
 -◇Condition:  [1]  [ CSelf1[逃走可能フラグ] == 1   ] Case↓
  |▼ 逃走出来ない場合は最初のコマンド出さない
@@ -437,7 +437,7 @@ WoditorEvCOMMAND_END
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ 各味方キャラのコマンド選択
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-●Label Point [コマンド選択開始] <<<<<<<<<<<<<<<<<<<<<<<<★
+●Label Point [コマンド選択開始] <<<<<<<<<<<<<<<<★
 ■Call Event [Name]: ["X[Bat]Register Command"] <CommonEv 157>  / 0 / 0 / -1:全初期化 / 0
 ■Set Variable: CSelf10[処理中スロット] = -1 + 0 
 ■Set Variable: CSelf12[処理方向(-1/1)] = 1 + 0 
@@ -494,7 +494,7 @@ WoditorEvCOMMAND_END
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ 味方・敵の全AI実行
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-●Label Point [AI処理開始] <<<<<<<<<<<<<<<<<<<<<<<<★
+●Label Point [AI処理開始] <<<<<<<<<<<<<<<<★
 ■Condition (Number):   [1] CSelf0[ｺﾏﾝﾄﾞﾓｰﾄﾞ] >=  0  /  [2] CSelf0[ｺﾏﾝﾄﾞﾓｰﾄﾞ] <=  -1  
 -◇Condition:  [1]  [ CSelf0[ｺﾏﾝﾄﾞﾓｰﾄﾞ] >= 0   ] Case↓
  |▼ 通常コマンド入力時

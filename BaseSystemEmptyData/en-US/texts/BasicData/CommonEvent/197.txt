@@ -627,7 +627,7 @@ WoditorEvCOMMAND_END
 ◇Loop End Point◇◇
 ▼ Ver3.21追記
 ■Repeat Loop [ 1 ] Times
- |●Label Point [カウンター後_終了判定] <<<<<<<<<<<<<<<<<<<<<<<<★
+ |●Label Point [カウンター後_終了判定] <<<<<<<<<<<<<<<<★
  |▼ 戦闘終了判定
  |■Call Event [Name]: CSelf25[勝敗判定] = ["X[Bat]Check Win/Lose"] <CommonEv 172>  / 0:勝敗判定
  |■Condition (Number):   [1] CSelf25[勝敗判定] !=  0  
