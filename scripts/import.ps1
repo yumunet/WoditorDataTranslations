@@ -78,4 +78,4 @@ else {
 }
 Copy-Others $othersDir $woditorDataDir
 
-Write-Host "If WOLF RPG Editor is running, please restart it." -ForegroundColor Yellow
+Write-Host "Imported successfully. Please restart WOLF RPG Editor if it is currently running."
