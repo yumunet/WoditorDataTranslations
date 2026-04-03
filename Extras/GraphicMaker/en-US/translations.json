@@ -8,8 +8,8 @@
     "裏": "B",
     "連動パーツ:": "Linked:",
     "[なし]": "[None]",
-    "通常保存": "Scale x1",
-    "保存ｻｲｽﾞx0.5": "Scale x0.5"
+    "通常保存": "Scale 1x",
+    "保存ｻｲｽﾞx0.5": "Scale 0.5x"
   },
   "setting_comments": {
     "# 画像の基本サイズの指定": "# Image Size Settings",
