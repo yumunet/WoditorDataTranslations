@@ -8,7 +8,7 @@ MEMO=
 VALINPUT_NUM=1
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=お店のタイプ
+VALINPUT_NAME_0=Shop Type
 VALINPUT_NAME_1=
 VALINPUT_NAME_2=
 VALINPUT_NAME_3=
@@ -32,9 +32,9 @@ LOADTYPE8=0
 LOADTYPE9=0
 CHOICE_STR_NUM=10
 CHOICE_STR_0_NUM=3
-CHOICE_STR_0_0=売り・買い 両方
-CHOICE_STR_0_1=買いのみ
-CHOICE_STR_0_2=売りのみ
+CHOICE_STR_0_0=Buy and Sell
+CHOICE_STR_0_1=Buy Only
+CHOICE_STR_0_2=Sell Only
 CHOICE_STR_1_NUM=4
 CHOICE_STR_1_0=武器欄装備を表示
 CHOICE_STR_1_1=防具1欄装備を表示
@@ -74,7 +74,7 @@ DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
 RETURN_VAL_NAME=
 RETURN_VAL_TARGET=-1
-CSELF_NAME_0=お店タイプ
+CSELF_NAME_0=Shop Type
 CSELF_NAME_1=
 CSELF_NAME_2=
 CSELF_NAME_3=
@@ -84,21 +84,21 @@ CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=
-CSELF_NAME_10=一時変数A
+CSELF_NAME_10=Temp Variable A
 CSELF_NAME_11=
 CSELF_NAME_12=
 CSELF_NAME_13=
 CSELF_NAME_14=
-CSELF_NAME_15=カーソル位置コード
-CSELF_NAME_16=最終選択位置
+CSELF_NAME_15=Cursor Position Item Code
+CSELF_NAME_16=Last Cursor Position
 CSELF_NAME_17=
 CSELF_NAME_18=
-CSELF_NAME_19=買う(0)/売る(1)モード
-CSELF_NAME_20=処理アイテム
-CSELF_NAME_21=番号
-CSELF_NAME_22=処理金額
+CSELF_NAME_19=Mode (Buy=0/Sell=1)
+CSELF_NAME_20=Target Item Code
+CSELF_NAME_21=ID
+CSELF_NAME_22=Amount
 CSELF_NAME_23=
-CSELF_NAME_24=実増減数
+CSELF_NAME_24=Actual Change
 CSELF_NAME_25=
 CSELF_NAME_26=
 CSELF_NAME_27=
@@ -179,10 +179,10 @@ COMMAND_NUM=257
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("[Process Overview]")
-[103][0,1]<0>()("　商品追加後に、お店を実行する処理です。ここから描画処理などを呼び出します。")
+[103][0,1]<0>()("  Runs the shop after items have been added. Rendering and related processes are called from here.")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("お店初期表示")
+[103][0,1]<0>()("Initial shop display")
 [250][5,4]<0>(18,21,0,65536,0)("","Base System Variables","","")
 [111][10,0]<0>(3,1600000,1,2,1600000,2,2,1600000,3,2)()
 [401][1,0]<0>(1)()
@@ -201,10 +201,10 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600019,0,0,0)()
 [180][1,0]<0>(9)()
 [121][4,0]<0>(1600016,0,0,0)()
-[212][0,1]<0>()("お店開始")
+[212][0,1]<0>()("Shop Start")
 [111][10,0]<0>(3,1600000,1,2,1600000,2,2,1600000,3,2)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("売る")
+[103][0,1]<1>()("Sell")
 [121][4,0]<1>(1600019,1,0,0)()
 [300][3,1]<1>(0,1,1)("X[Map]┗ Update Shop Internal Data")
 [300][4,1]<1>(0,2,2,1)("X[Map]┣ Draw Shop")
@@ -212,7 +212,7 @@ WoditorEvCOMMAND_START
 [300][5,1]<1>(0,3,3,1,0)("X[Map]┣ Draw Shop")
 [0][0,0]<1>()()
 [401][1,0]<0>(2)()
-[103][0,1]<1>()("買う")
+[103][0,1]<1>()("Buy")
 [121][4,0]<1>(1600019,0,0,0)()
 [300][3,1]<1>(0,1,0)("X[Map]┗ Update Shop Internal Data")
 [300][4,1]<1>(0,2,2,0)("X[Map]┣ Draw Shop")
@@ -220,14 +220,14 @@ WoditorEvCOMMAND_START
 [300][5,1]<1>(0,3,3,0,0)("X[Map]┣ Draw Shop")
 [0][0,0]<1>()()
 [401][1,0]<0>(3)()
-[103][0,1]<1>()("買う・売る　から選択できる")
+[103][0,1]<1>()("Buy and Sell available")
 [300][3,1]<1>(0,1,1600019)("X[Map]┗ Update Shop Internal Data")
 [300][5,1]<1>(0,3,2,1600019,0)("X[Map]┣ Draw Shop")
 [170][0,0]<1>()()
 [123][2,0]<2>(1600010,184)()
 [111][7,0]<2>(2,1600010,4,2,1600010,6,2)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("左キー")
+[103][0,1]<3>()("Left key")
 [300][3,1]<3>(0,1,5)("X[Com]Play System Sound")
 [121][4,0]<3>(1600019,1,0,256)()
 [121][4,0]<3>(1600019,2,0,1280)()
@@ -237,7 +237,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<3>(1600016,0,0,0)()
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
-[103][0,1]<3>()("右キー")
+[103][0,1]<3>()("Right key")
 [300][3,1]<3>(0,1,5)("X[Com]Play System Sound")
 [121][4,0]<3>(1600019,1,0,256)()
 [121][4,0]<3>(1600019,2,0,1280)()
@@ -249,15 +249,15 @@ WoditorEvCOMMAND_START
 [499][0,0]<2>()()
 [111][7,0]<2>(2,1600010,10,2,1600010,11,2)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("決定")
+[103][0,1]<3>()("Confirm")
 [300][3,1]<3>(0,1,0)("X[Com]Play System Sound")
 [300][4,1]<3>(0,2,2,-2)("X[Map]┣ Draw Shop")
 [250][5,4]<3>(18,21,0,196608,1600016)("","Base System Variables","Universal Window External Cursor Set","")
 [171][0,0]<3>()()
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
-[103][0,1]<3>()("キャンセル")
-[213][0,1]<3>()("お店終了")
+[103][0,1]<3>()("Cancel")
+[213][0,1]<3>()("Shop End")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [0][0,0]<2>()()
@@ -269,38 +269,38 @@ WoditorEvCOMMAND_START
 [300][5,1]<1>(0,16777218,1,1,1600013)("X[Com]U-Window: Select")
 [111][4,0]<1>(17,1600013,-200,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("移動だけの場合は選択カーソル位置の内容を得る")
+[103][0,1]<2>()("If only moving, get the content at the current cursor position")
 [250][5,4]<2>(18,18,0,69632,1600015)("","Base System Variables","","")
 [250][5,4]<2>(18,61,0,69632,1600016)("","Base System Variables","","")
-[103][0,1]<2>()("格納されている内容に応じて描画内容を更新")
+[103][0,1]<2>()("Update the display based on the stored content")
 [300][5,1]<2>(0,3,1,1600019,1600016)("X[Map]┣ Draw Shop")
 [0][0,0]<2>()()
 [420][1,0]<1>(0)()
 [111][10,0]<2>(3,1600013,-100,2,1600013,-2,2,1600013,0,1)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("キャンセルした場合")
+[103][0,1]<3>()("If canceled")
 [111][4,0]<3>(1,1600000,3,2)()
 [401][1,0]<3>(1)()
-[103][0,1]<4>()("売り買い両用のお店の場合だけｷｬﾝｾﾙして戻る")
+[103][0,1]<4>()("Return only if the shop supports both buying and selling")
 [250][5,4]<4>(18,61,0,69632,1600016)("","Base System Variables","","")
 [300][5,1]<4>(0,3,3,1600019,-1)("X[Map]┣ Draw Shop")
-[213][0,1]<4>()("お店開始")
+[213][0,1]<4>()("Shop Start")
 [180][1,0]<4>(1)()
 [0][0,0]<4>()()
 [499][0,0]<3>()()
-[213][0,1]<3>()("お店終了")
+[213][0,1]<3>()("Shop End")
 [171][0,0]<3>()()
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
-[103][0,1]<3>()("何もなし")
+[103][0,1]<3>()("None")
 [0][0,0]<3>()()
 [401][1,0]<2>(3)()
-[103][0,1]<3>()("アイテムを購入・売却したときの処理")
+[103][0,1]<3>()("Processing when an item is bought or sold")
 [250][5,4]<3>(18,18,0,69632,1600015)("","Base System Variables","","")
 [250][5,4]<3>(18,61,0,69632,1600016)("","Base System Variables","","")
 [111][7,0]<3>(2,1600019,0,2,1600019,1,2)()
 [401][1,0]<3>(1)()
-[103][0,1]<4>()("買う処理")
+[103][0,1]<4>()("Buy process")
 [250][5,4]<4>(19,1600016,1,331776,1600020)("","Universal Window Items","","Item ID")
 [250][5,4]<4>(19,1600016,3,331776,1600022)("","Universal Window Items","","Quantity Left/Point Cost")
 [121][4,0]<4>(1600022,-1,0,768)()
@@ -313,11 +313,11 @@ WoditorEvCOMMAND_START
 [111][4,0]<6>(17,1600024,0,5)()
 [401][1,0]<6>(1)()
 [300][3,1]<7>(0,1,1600022)("X[Com]Change Money")
-[103][0,1]<7>()("SE再生")
+[103][0,1]<7>()("Play SE")
 [300][3,1]<7>(0,1,20)("X[Com]Play System Sound")
 [0][0,0]<7>()()
 [420][1,0]<6>(0)()
-[103][0,1]<7>()("SE再生")
+[103][0,1]<7>()("Play SE")
 [300][3,1]<7>(0,1,2)("X[Com]Play System Sound")
 [0][0,0]<7>()()
 [499][0,0]<6>()()
@@ -327,11 +327,11 @@ WoditorEvCOMMAND_START
 [111][4,0]<6>(17,1600024,0,5)()
 [401][1,0]<6>(1)()
 [300][3,1]<7>(0,1,1600022)("X[Com]Change Money")
-[103][0,1]<7>()("SE再生")
+[103][0,1]<7>()("Play SE")
 [300][3,1]<7>(0,1,20)("X[Com]Play System Sound")
 [0][0,0]<7>()()
 [420][1,0]<6>(0)()
-[103][0,1]<7>()("SE再生")
+[103][0,1]<7>()("Play SE")
 [300][3,1]<7>(0,1,2)("X[Com]Play System Sound")
 [0][0,0]<7>()()
 [499][0,0]<6>()()
@@ -341,11 +341,11 @@ WoditorEvCOMMAND_START
 [111][4,0]<6>(17,1600024,0,5)()
 [401][1,0]<6>(1)()
 [300][3,1]<7>(0,1,1600022)("X[Com]Change Money")
-[103][0,1]<7>()("SE再生")
+[103][0,1]<7>()("Play SE")
 [300][3,1]<7>(0,1,20)("X[Com]Play System Sound")
 [0][0,0]<7>()()
 [420][1,0]<6>(0)()
-[103][0,1]<7>()("SE再生")
+[103][0,1]<7>()("Play SE")
 [300][3,1]<7>(0,1,2)("X[Com]Play System Sound")
 [0][0,0]<7>()()
 [499][0,0]<6>()()
@@ -355,7 +355,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<4>()()
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
-[103][0,1]<4>()("売る処理")
+[103][0,1]<4>()("Sell process")
 [250][5,4]<4>(19,1600016,1,331776,1600020)("","Universal Window Items","","Item ID")
 [250][5,4]<4>(19,1600016,3,331776,1600022)("","Universal Window Items","","Quantity Left/Point Cost")
 [111][4,0]<4>(1,1600020,10000,1)()
@@ -367,11 +367,11 @@ WoditorEvCOMMAND_START
 [111][4,0]<6>(17,1600024,0,5)()
 [401][1,0]<6>(1)()
 [300][3,1]<7>(0,1,1600022)("X[Com]Change Money")
-[103][0,1]<7>()("SE再生")
+[103][0,1]<7>()("Play SE")
 [300][3,1]<7>(0,1,21)("X[Com]Play System Sound")
 [0][0,0]<7>()()
 [420][1,0]<6>(0)()
-[103][0,1]<7>()("SE再生")
+[103][0,1]<7>()("Play SE")
 [300][3,1]<7>(0,1,2)("X[Com]Play System Sound")
 [0][0,0]<7>()()
 [499][0,0]<6>()()
@@ -381,11 +381,11 @@ WoditorEvCOMMAND_START
 [111][4,0]<6>(17,1600024,0,5)()
 [401][1,0]<6>(1)()
 [300][3,1]<7>(0,1,1600022)("X[Com]Change Money")
-[103][0,1]<7>()("SE再生")
+[103][0,1]<7>()("Play SE")
 [300][3,1]<7>(0,1,21)("X[Com]Play System Sound")
 [0][0,0]<7>()()
 [420][1,0]<6>(0)()
-[103][0,1]<7>()("SE再生")
+[103][0,1]<7>()("Play SE")
 [300][3,1]<7>(0,1,2)("X[Com]Play System Sound")
 [0][0,0]<7>()()
 [499][0,0]<6>()()
@@ -395,11 +395,11 @@ WoditorEvCOMMAND_START
 [111][4,0]<6>(17,1600024,0,5)()
 [401][1,0]<6>(1)()
 [300][3,1]<7>(0,1,1600022)("X[Com]Change Money")
-[103][0,1]<7>()("SE再生")
+[103][0,1]<7>()("Play SE")
 [300][3,1]<7>(0,1,21)("X[Com]Play System Sound")
 [0][0,0]<7>()()
 [420][1,0]<6>(0)()
-[103][0,1]<7>()("SE再生")
+[103][0,1]<7>()("Play SE")
 [300][3,1]<7>(0,1,2)("X[Com]Play System Sound")
 [0][0,0]<7>()()
 [499][0,0]<6>()()
@@ -410,8 +410,8 @@ WoditorEvCOMMAND_START
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [300][3,1]<3>(0,1,1600019)("X[Map]┗ Update Shop Internal Data")
-[103][0,1]<3>()("格納されている内容に応じて描画内容を更新")
-[103][0,1]<3>()("カーソル位置を再設定")
+[103][0,1]<3>()("Update the display based on the stored content")
+[103][0,1]<3>()("Set the cursor position")
 [250][5,4]<3>(18,61,0,69632,1600016)("","Base System Variables","","")
 [250][5,4]<3>(18,21,0,65536,1600016)("","Base System Variables","","")
 [300][5,1]<3>(0,3,3,1600016,1600016)("X[Map]┣ Draw Shop")
@@ -425,9 +425,9 @@ WoditorEvCOMMAND_START
 [498][0,0]<0>()()
 [179][1,0]<0>(0)()
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<1>()("　ここから終了処理")
+[103][0,1]<1>()("  End processing starts here")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[212][0,1]<1>()("お店終了")
+[212][0,1]<1>()("Shop End")
 [300][4,1]<1>(0,2,-1,0)("X[Map]┣ Draw Shop")
 [180][1,0]<1>(10)()
 [172][0,0]<1>()()
@@ -439,173 +439,173 @@ WoditorEvCOMMAND_END
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ [Process Overview]
-▼ 　商品追加後に、お店を実行する処理です。ここから描画処理などを呼び出します。
+▼   Runs the shop after items have been added. Rendering and related processes are called from here.
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ お店初期表示
+▼ Initial shop display
 ■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) =  0
-■Condition (Number):   [1] CSelf0[お店タイプ] ==  1  /  [2] CSelf0[お店タイプ] ==  2  /  [3] CSelf0[お店タイプ] ==  3  
--◇Condition:  [1]  [ CSelf0[お店タイプ] == 1   ] Case↓
+■Condition (Number):   [1] CSelf0[Shop Type] ==  1  /  [2] CSelf0[Shop Type] ==  2  /  [3] CSelf0[Shop Type] ==  3  
+-◇Condition:  [1]  [ CSelf0[Shop Type] == 1   ] Case↓
  |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / 1:売る
  |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 0:表示A（初期表示用　スライド表示＆全表示） / -11:「売る」だけ表示 / -1
  |■
--◇Condition:  [2]  [ CSelf0[お店タイプ] == 2   ] Case↓
+-◇Condition:  [2]  [ CSelf0[Shop Type] == 2   ] Case↓
  |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / 0:買う
  |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 0:表示A（初期表示用　スライド表示＆全表示） / -10:「買う」だけ表示 / -1
  |■
--◇Condition:  [3]  [ CSelf0[お店タイプ] == 3   ] Case↓
+-◇Condition:  [3]  [ CSelf0[Shop Type] == 3   ] Case↓
  |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / 0:買う
  |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 0:表示A（初期表示用　スライド表示＆全表示） / -1 / -1
  |■
 ◇End◇
-■Set Variable: CSelf19[買う(0)/売る(1)モード] = 0 + 0 
+■Set Variable: CSelf19[Mode (Buy=0/Sell=1)] = 0 + 0 
 ■Wait: 9 Frames
-■Set Variable: CSelf16[最終選択位置] = 0 + 0 
-●Label Point [お店開始] <<<<<<<<<<<<<<<<★
-■Condition (Number):   [1] CSelf0[お店タイプ] ==  1  /  [2] CSelf0[お店タイプ] ==  2  /  [3] CSelf0[お店タイプ] ==  3  
--◇Condition:  [1]  [ CSelf0[お店タイプ] == 1   ] Case↓
- |▼ 売る
- |■Set Variable: CSelf19[買う(0)/売る(1)モード] = 1 + 0 
+■Set Variable: CSelf16[Last Cursor Position] = 0 + 0 
+●Label Point [Shop Start] <<<<<<<<<<<<<<<<★
+■Condition (Number):   [1] CSelf0[Shop Type] ==  1  /  [2] CSelf0[Shop Type] ==  2  /  [3] CSelf0[Shop Type] ==  3  
+-◇Condition:  [1]  [ CSelf0[Shop Type] == 1   ] Case↓
+ |▼ Sell
+ |■Set Variable: CSelf19[Mode (Buy=0/Sell=1)] = 1 + 0 
  |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / 1:売る
  |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / 1:売る
  |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / -2:凍結
  |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:表示C（項目更新のみ） / 1:売る / 0
  |■
--◇Condition:  [2]  [ CSelf0[お店タイプ] == 2   ] Case↓
- |▼ 買う
- |■Set Variable: CSelf19[買う(0)/売る(1)モード] = 0 + 0 
+-◇Condition:  [2]  [ CSelf0[Shop Type] == 2   ] Case↓
+ |▼ Buy
+ |■Set Variable: CSelf19[Mode (Buy=0/Sell=1)] = 0 + 0 
  |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / 0:買う
  |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / 0:買う
  |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / -2:凍結
  |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:表示C（項目更新のみ） / 0:買う / 0
  |■
--◇Condition:  [3]  [ CSelf0[お店タイプ] == 3   ] Case↓
- |▼ 買う・売る　から選択できる
- |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / CSelf19[買う(0)/売る(1)モード]
- |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / CSelf19[買う(0)/売る(1)モード] / 0
+-◇Condition:  [3]  [ CSelf0[Shop Type] == 3   ] Case↓
+ |▼ Buy and Sell available
+ |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / CSelf19[Mode (Buy=0/Sell=1)]
+ |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / CSelf19[Mode (Buy=0/Sell=1)] / 0
  |■Loop Start
- | |■Key Input: CSelf10[一時変数A] [Wait for Input <!>]  Left/Right (4, 6) Confirm (10) Cancel (11)
- | |■Condition (Number):   [1] CSelf10[一時変数A] ==  4  /  [2] CSelf10[一時変数A] ==  6  
- | |-◇Condition:  [1]  [ CSelf10[一時変数A] == 4   ] Case↓
- | | |▼ 左キー
+ | |■Key Input: CSelf10[Temp Variable A] [Wait for Input <!>]  Left/Right (4, 6) Confirm (10) Cancel (11)
+ | |■Condition (Number):   [1] CSelf10[Temp Variable A] ==  4  /  [2] CSelf10[Temp Variable A] ==  6  
+ | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] == 4   ] Case↓
+ | | |▼ Left key
  | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
- | | |■Set Variable: CSelf19[買う(0)/売る(1)モード] += 1 + 0 
- | | |■Set Variable: CSelf19[買う(0)/売る(1)モード] %= 2 + 0 
- | | |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / CSelf19[買う(0)/売る(1)モード]
- | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:表示C（項目更新のみ） / CSelf19[買う(0)/売る(1)モード] / -1
- | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / CSelf19[買う(0)/売る(1)モード]
- | | |■Set Variable: CSelf16[最終選択位置] = 0 + 0 
+ | | |■Set Variable: CSelf19[Mode (Buy=0/Sell=1)] += 1 + 0 
+ | | |■Set Variable: CSelf19[Mode (Buy=0/Sell=1)] %= 2 + 0 
+ | | |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / CSelf19[Mode (Buy=0/Sell=1)]
+ | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:表示C（項目更新のみ） / CSelf19[Mode (Buy=0/Sell=1)] / -1
+ | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / CSelf19[Mode (Buy=0/Sell=1)]
+ | | |■Set Variable: CSelf16[Last Cursor Position] = 0 + 0 
  | | |■
- | |-◇Condition:  [2]  [ CSelf10[一時変数A] == 6   ] Case↓
- | | |▼ 右キー
+ | |-◇Condition:  [2]  [ CSelf10[Temp Variable A] == 6   ] Case↓
+ | | |▼ Right key
  | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
- | | |■Set Variable: CSelf19[買う(0)/売る(1)モード] += 1 + 0 
- | | |■Set Variable: CSelf19[買う(0)/売る(1)モード] %= 2 + 0 
- | | |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / CSelf19[買う(0)/売る(1)モード]
- | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:表示C（項目更新のみ） / CSelf19[買う(0)/売る(1)モード] / -1
- | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / CSelf19[買う(0)/売る(1)モード]
- | | |■Set Variable: CSelf16[最終選択位置] = 0 + 0 
+ | | |■Set Variable: CSelf19[Mode (Buy=0/Sell=1)] += 1 + 0 
+ | | |■Set Variable: CSelf19[Mode (Buy=0/Sell=1)] %= 2 + 0 
+ | | |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / CSelf19[Mode (Buy=0/Sell=1)]
+ | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:表示C（項目更新のみ） / CSelf19[Mode (Buy=0/Sell=1)] / -1
+ | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / CSelf19[Mode (Buy=0/Sell=1)]
+ | | |■Set Variable: CSelf16[Last Cursor Position] = 0 + 0 
  | | |■
  | |◇End◇
- | |■Condition (Number):   [1] CSelf10[一時変数A] ==  10  /  [2] CSelf10[一時変数A] ==  11  
- | |-◇Condition:  [1]  [ CSelf10[一時変数A] == 10   ] Case↓
- | | |▼ 決定
+ | |■Condition (Number):   [1] CSelf10[Temp Variable A] ==  10  /  [2] CSelf10[Temp Variable A] ==  11  
+ | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] == 10   ] Case↓
+ | | |▼ Confirm
  | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
  | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / -2:凍結
- | | |■Write to DB(Var): VarDB[ "Base System Variables":"Universal Window External Cursor Set":0 ] (18:21:Number) =  CSelf16[最終選択位置]
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":"Universal Window External Cursor Set":0 ] (18:21:Number) =  CSelf16[Last Cursor Position]
  | | |■Break Loop
  | | |■
- | |-◇Condition:  [2]  [ CSelf10[一時変数A] == 11   ] Case↓
- | | |▼ キャンセル
- | | |●Label Jump [お店終了] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | |-◇Condition:  [2]  [ CSelf10[Temp Variable A] == 11   ] Case↓
+ | | |▼ Cancel
+ | | |●Label Jump [Shop End] >>>>>>>>>>>>>>>>>>>>>>>>>
  | | |■
  | |◇End◇
  | |■
  |◇Loop End Point◇◇
  |■
 ◇End◇
-■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:表示C（項目更新のみ） / CSelf19[買う(0)/売る(1)モード] / CSelf16[最終選択位置]
+■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:表示C（項目更新のみ） / CSelf19[Mode (Buy=0/Sell=1)] / CSelf16[Last Cursor Position]
 ■Loop Start
  |■Call Event [Name]: CSelf13 = ["X[Com]U-Window: Select"] <CommonEv 65>  / 1:End with One Key Press / 1:Don't Play Confirm Sound
  |■Condition (Number):   [1] CSelf13 ==  -200  
  |-◇Condition:  [1]  [ CSelf13 == -200   ] Case↓
- | |▼ 移動だけの場合は選択カーソル位置の内容を得る
- | |■Load DB(Var):  CSelf15[カーソル位置コード] = VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) 
- | |■Load DB(Var):  CSelf16[最終選択位置] = VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) 
- | |▼ 格納されている内容に応じて描画内容を更新
- | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 1:表示B（瞬間表示＆一部更新） / CSelf19[買う(0)/売る(1)モード] / CSelf16[最終選択位置]
+ | |▼ If only moving, get the content at the current cursor position
+ | |■Load DB(Var):  CSelf15[Cursor Position Item Code] = VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) 
+ | |■Load DB(Var):  CSelf16[Last Cursor Position] = VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) 
+ | |▼ Update the display based on the stored content
+ | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 1:表示B（瞬間表示＆一部更新） / CSelf19[Mode (Buy=0/Sell=1)] / CSelf16[Last Cursor Position]
  | |■
  |-◇Else
  | |■Condition (Number):   [1] CSelf13 ==  -100  /  [2] CSelf13 ==  -2  /  [3] CSelf13 >=  0  
  | |-◇Condition:  [1]  [ CSelf13 == -100   ] Case↓
- | | |▼ キャンセルした場合
- | | |■Condition (Number):   [1] CSelf0[お店タイプ] ==  3  
- | | |-◇Condition:  [1]  [ CSelf0[お店タイプ] == 3   ] Case↓
- | | | |▼ 売り買い両用のお店の場合だけｷｬﾝｾﾙして戻る
- | | | |■Load DB(Var):  CSelf16[最終選択位置] = VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) 
- | | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:表示C（項目更新のみ） / CSelf19[買う(0)/売る(1)モード] / -1
- | | | |●Label Jump [お店開始] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | |▼ If canceled
+ | | |■Condition (Number):   [1] CSelf0[Shop Type] ==  3  
+ | | |-◇Condition:  [1]  [ CSelf0[Shop Type] == 3   ] Case↓
+ | | | |▼ Return only if the shop supports both buying and selling
+ | | | |■Load DB(Var):  CSelf16[Last Cursor Position] = VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) 
+ | | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:表示C（項目更新のみ） / CSelf19[Mode (Buy=0/Sell=1)] / -1
+ | | | |●Label Jump [Shop Start] >>>>>>>>>>>>>>>>>>>>>>>>>
  | | | |■Wait: 1 Frames
  | | | |■
  | | |◇End◇
- | | |●Label Jump [お店終了] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | |●Label Jump [Shop End] >>>>>>>>>>>>>>>>>>>>>>>>>
  | | |■Break Loop
  | | |■
  | |-◇Condition:  [2]  [ CSelf13 == -2   ] Case↓
- | | |▼ 何もなし
+ | | |▼ None
  | | |■
  | |-◇Condition:  [3]  [ CSelf13 >= 0   ] Case↓
- | | |▼ アイテムを購入・売却したときの処理
- | | |■Load DB(Var):  CSelf15[カーソル位置コード] = VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) 
- | | |■Load DB(Var):  CSelf16[最終選択位置] = VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) 
- | | |■Condition (Number):   [1] CSelf19[買う(0)/売る(1)モード] ==  0  /  [2] CSelf19[買う(0)/売る(1)モード] ==  1  
- | | |-◇Condition:  [1]  [ CSelf19[買う(0)/売る(1)モード] == 0   ] Case↓
- | | | |▼ 買う処理
- | | | |■Load DB(Var):  CSelf20[処理アイテム] = VarDB[ "Universal Window Items":CSelf16[最終選択位置]:"Item ID" ] (19:-:1) 
- | | | |■Load DB(Var):  CSelf22[処理金額] = VarDB[ "Universal Window Items":CSelf16[最終選択位置]:"Quantity Left/Point Cost" ] (19:-:3) 
- | | | |■Set Variable: CSelf22[処理金額] *= -1 + 0 
- | | | |■Condition (Number):   [1] CSelf20[処理アイテム] >=  10000  
- | | | |-◇Condition:  [1]  [ CSelf20[処理アイテム] >= 10000   ] Case↓
- | | | | |■Set Variable: CSelf21[番号] = CSelf20[処理アイテム] % 10000 
- | | | | |■Condition (Number):   [1] CSelf20[処理アイテム] <=  19999  /  [2] CSelf20[処理アイテム] <=  29999  /  [3] CSelf20[処理アイテム] <=  39999  
- | | | | |-◇Condition:  [1]  [ CSelf20[処理アイテム] <= 19999   ] Case↓
- | | | | | |■Call Event [Name]: CSelf24[実増減数] = ["X[Com]Change Items"] <CommonEv 50>  / CSelf21[番号] / 1
- | | | | | |■Condition (Number):   [1] CSelf24[実増減数] !=  0  
- | | | | | |-◇Condition:  [1]  [ CSelf24[実増減数] != 0   ] Case↓
- | | | | | | |■Call Event [Name]: ["X[Com]Change Money"] <CommonEv 53>  / CSelf22[処理金額]
- | | | | | | |▼ SE再生
+ | | |▼ Processing when an item is bought or sold
+ | | |■Load DB(Var):  CSelf15[Cursor Position Item Code] = VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) 
+ | | |■Load DB(Var):  CSelf16[Last Cursor Position] = VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) 
+ | | |■Condition (Number):   [1] CSelf19[Mode (Buy=0/Sell=1)] ==  0  /  [2] CSelf19[Mode (Buy=0/Sell=1)] ==  1  
+ | | |-◇Condition:  [1]  [ CSelf19[Mode (Buy=0/Sell=1)] == 0   ] Case↓
+ | | | |▼ Buy process
+ | | | |■Load DB(Var):  CSelf20[Target Item Code] = VarDB[ "Universal Window Items":CSelf16[Last Cursor Position]:"Item ID" ] (19:-:1) 
+ | | | |■Load DB(Var):  CSelf22[Amount] = VarDB[ "Universal Window Items":CSelf16[Last Cursor Position]:"Quantity Left/Point Cost" ] (19:-:3) 
+ | | | |■Set Variable: CSelf22[Amount] *= -1 + 0 
+ | | | |■Condition (Number):   [1] CSelf20[Target Item Code] >=  10000  
+ | | | |-◇Condition:  [1]  [ CSelf20[Target Item Code] >= 10000   ] Case↓
+ | | | | |■Set Variable: CSelf21[ID] = CSelf20[Target Item Code] % 10000 
+ | | | | |■Condition (Number):   [1] CSelf20[Target Item Code] <=  19999  /  [2] CSelf20[Target Item Code] <=  29999  /  [3] CSelf20[Target Item Code] <=  39999  
+ | | | | |-◇Condition:  [1]  [ CSelf20[Target Item Code] <= 19999   ] Case↓
+ | | | | | |■Call Event [Name]: CSelf24[Actual Change] = ["X[Com]Change Items"] <CommonEv 50>  / CSelf21[ID] / 1
+ | | | | | |■Condition (Number):   [1] CSelf24[Actual Change] !=  0  
+ | | | | | |-◇Condition:  [1]  [ CSelf24[Actual Change] != 0   ] Case↓
+ | | | | | | |■Call Event [Name]: ["X[Com]Change Money"] <CommonEv 53>  / CSelf22[Amount]
+ | | | | | | |▼ Play SE
  | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 20:Buy Sound
  | | | | | | |■
  | | | | | |-◇Else
- | | | | | | |▼ SE再生
+ | | | | | | |▼ Play SE
  | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
  | | | | | | |■
  | | | | | |◇End◇
  | | | | | |■
- | | | | |-◇Condition:  [2]  [ CSelf20[処理アイテム] <= 29999   ] Case↓
- | | | | | |■Call Event [Name]: CSelf24[実増減数] = ["X[Com]Change Weapons"] <CommonEv 51>  / CSelf21[番号] / 1
- | | | | | |■Condition (Number):   [1] CSelf24[実増減数] !=  0  
- | | | | | |-◇Condition:  [1]  [ CSelf24[実増減数] != 0   ] Case↓
- | | | | | | |■Call Event [Name]: ["X[Com]Change Money"] <CommonEv 53>  / CSelf22[処理金額]
- | | | | | | |▼ SE再生
+ | | | | |-◇Condition:  [2]  [ CSelf20[Target Item Code] <= 29999   ] Case↓
+ | | | | | |■Call Event [Name]: CSelf24[Actual Change] = ["X[Com]Change Weapons"] <CommonEv 51>  / CSelf21[ID] / 1
+ | | | | | |■Condition (Number):   [1] CSelf24[Actual Change] !=  0  
+ | | | | | |-◇Condition:  [1]  [ CSelf24[Actual Change] != 0   ] Case↓
+ | | | | | | |■Call Event [Name]: ["X[Com]Change Money"] <CommonEv 53>  / CSelf22[Amount]
+ | | | | | | |▼ Play SE
  | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 20:Buy Sound
  | | | | | | |■
  | | | | | |-◇Else
- | | | | | | |▼ SE再生
+ | | | | | | |▼ Play SE
  | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
  | | | | | | |■
  | | | | | |◇End◇
  | | | | | |■
- | | | | |-◇Condition:  [3]  [ CSelf20[処理アイテム] <= 39999   ] Case↓
- | | | | | |■Call Event [Name]: CSelf24[実増減数] = ["X[Com]Change Armors"] <CommonEv 52>  / CSelf21[番号] / 1
- | | | | | |■Condition (Number):   [1] CSelf24[実増減数] !=  0  
- | | | | | |-◇Condition:  [1]  [ CSelf24[実増減数] != 0   ] Case↓
- | | | | | | |■Call Event [Name]: ["X[Com]Change Money"] <CommonEv 53>  / CSelf22[処理金額]
- | | | | | | |▼ SE再生
+ | | | | |-◇Condition:  [3]  [ CSelf20[Target Item Code] <= 39999   ] Case↓
+ | | | | | |■Call Event [Name]: CSelf24[Actual Change] = ["X[Com]Change Armors"] <CommonEv 52>  / CSelf21[ID] / 1
+ | | | | | |■Condition (Number):   [1] CSelf24[Actual Change] !=  0  
+ | | | | | |-◇Condition:  [1]  [ CSelf24[Actual Change] != 0   ] Case↓
+ | | | | | | |■Call Event [Name]: ["X[Com]Change Money"] <CommonEv 53>  / CSelf22[Amount]
+ | | | | | | |▼ Play SE
  | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 20:Buy Sound
  | | | | | | |■
  | | | | | |-◇Else
- | | | | | | |▼ SE再生
+ | | | | | | |▼ Play SE
  | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
  | | | | | | |■
  | | | | | |◇End◇
@@ -614,52 +614,52 @@ WoditorEvCOMMAND_END
  | | | | |■
  | | | |◇End◇
  | | | |■
- | | |-◇Condition:  [2]  [ CSelf19[買う(0)/売る(1)モード] == 1   ] Case↓
- | | | |▼ 売る処理
- | | | |■Load DB(Var):  CSelf20[処理アイテム] = VarDB[ "Universal Window Items":CSelf16[最終選択位置]:"Item ID" ] (19:-:1) 
- | | | |■Load DB(Var):  CSelf22[処理金額] = VarDB[ "Universal Window Items":CSelf16[最終選択位置]:"Quantity Left/Point Cost" ] (19:-:3) 
- | | | |■Condition (Number):   [1] CSelf20[処理アイテム] >=  10000  
- | | | |-◇Condition:  [1]  [ CSelf20[処理アイテム] >= 10000   ] Case↓
- | | | | |■Set Variable: CSelf21[番号] = CSelf20[処理アイテム] % 10000 
- | | | | |■Condition (Number):   [1] CSelf20[処理アイテム] <=  19999  /  [2] CSelf20[処理アイテム] <=  29999  /  [3] CSelf20[処理アイテム] <=  39999  
- | | | | |-◇Condition:  [1]  [ CSelf20[処理アイテム] <= 19999   ] Case↓
- | | | | | |■Call Event [Name]: CSelf24[実増減数] = ["X[Com]Change Items"] <CommonEv 50>  / CSelf21[番号] / -1
- | | | | | |■Condition (Number):   [1] CSelf24[実増減数] !=  0  
- | | | | | |-◇Condition:  [1]  [ CSelf24[実増減数] != 0   ] Case↓
- | | | | | | |■Call Event [Name]: ["X[Com]Change Money"] <CommonEv 53>  / CSelf22[処理金額]
- | | | | | | |▼ SE再生
+ | | |-◇Condition:  [2]  [ CSelf19[Mode (Buy=0/Sell=1)] == 1   ] Case↓
+ | | | |▼ Sell process
+ | | | |■Load DB(Var):  CSelf20[Target Item Code] = VarDB[ "Universal Window Items":CSelf16[Last Cursor Position]:"Item ID" ] (19:-:1) 
+ | | | |■Load DB(Var):  CSelf22[Amount] = VarDB[ "Universal Window Items":CSelf16[Last Cursor Position]:"Quantity Left/Point Cost" ] (19:-:3) 
+ | | | |■Condition (Number):   [1] CSelf20[Target Item Code] >=  10000  
+ | | | |-◇Condition:  [1]  [ CSelf20[Target Item Code] >= 10000   ] Case↓
+ | | | | |■Set Variable: CSelf21[ID] = CSelf20[Target Item Code] % 10000 
+ | | | | |■Condition (Number):   [1] CSelf20[Target Item Code] <=  19999  /  [2] CSelf20[Target Item Code] <=  29999  /  [3] CSelf20[Target Item Code] <=  39999  
+ | | | | |-◇Condition:  [1]  [ CSelf20[Target Item Code] <= 19999   ] Case↓
+ | | | | | |■Call Event [Name]: CSelf24[Actual Change] = ["X[Com]Change Items"] <CommonEv 50>  / CSelf21[ID] / -1
+ | | | | | |■Condition (Number):   [1] CSelf24[Actual Change] !=  0  
+ | | | | | |-◇Condition:  [1]  [ CSelf24[Actual Change] != 0   ] Case↓
+ | | | | | | |■Call Event [Name]: ["X[Com]Change Money"] <CommonEv 53>  / CSelf22[Amount]
+ | | | | | | |▼ Play SE
  | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 21:Sell Sound
  | | | | | | |■
  | | | | | |-◇Else
- | | | | | | |▼ SE再生
+ | | | | | | |▼ Play SE
  | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
  | | | | | | |■
  | | | | | |◇End◇
  | | | | | |■
- | | | | |-◇Condition:  [2]  [ CSelf20[処理アイテム] <= 29999   ] Case↓
- | | | | | |■Call Event [Name]: CSelf24[実増減数] = ["X[Com]Change Weapons"] <CommonEv 51>  / CSelf21[番号] / -1
- | | | | | |■Condition (Number):   [1] CSelf24[実増減数] !=  0  
- | | | | | |-◇Condition:  [1]  [ CSelf24[実増減数] != 0   ] Case↓
- | | | | | | |■Call Event [Name]: ["X[Com]Change Money"] <CommonEv 53>  / CSelf22[処理金額]
- | | | | | | |▼ SE再生
+ | | | | |-◇Condition:  [2]  [ CSelf20[Target Item Code] <= 29999   ] Case↓
+ | | | | | |■Call Event [Name]: CSelf24[Actual Change] = ["X[Com]Change Weapons"] <CommonEv 51>  / CSelf21[ID] / -1
+ | | | | | |■Condition (Number):   [1] CSelf24[Actual Change] !=  0  
+ | | | | | |-◇Condition:  [1]  [ CSelf24[Actual Change] != 0   ] Case↓
+ | | | | | | |■Call Event [Name]: ["X[Com]Change Money"] <CommonEv 53>  / CSelf22[Amount]
+ | | | | | | |▼ Play SE
  | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 21:Sell Sound
  | | | | | | |■
  | | | | | |-◇Else
- | | | | | | |▼ SE再生
+ | | | | | | |▼ Play SE
  | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
  | | | | | | |■
  | | | | | |◇End◇
  | | | | | |■
- | | | | |-◇Condition:  [3]  [ CSelf20[処理アイテム] <= 39999   ] Case↓
- | | | | | |■Call Event [Name]: CSelf24[実増減数] = ["X[Com]Change Armors"] <CommonEv 52>  / CSelf21[番号] / -1
- | | | | | |■Condition (Number):   [1] CSelf24[実増減数] !=  0  
- | | | | | |-◇Condition:  [1]  [ CSelf24[実増減数] != 0   ] Case↓
- | | | | | | |■Call Event [Name]: ["X[Com]Change Money"] <CommonEv 53>  / CSelf22[処理金額]
- | | | | | | |▼ SE再生
+ | | | | |-◇Condition:  [3]  [ CSelf20[Target Item Code] <= 39999   ] Case↓
+ | | | | | |■Call Event [Name]: CSelf24[Actual Change] = ["X[Com]Change Armors"] <CommonEv 52>  / CSelf21[ID] / -1
+ | | | | | |■Condition (Number):   [1] CSelf24[Actual Change] !=  0  
+ | | | | | |-◇Condition:  [1]  [ CSelf24[Actual Change] != 0   ] Case↓
+ | | | | | | |■Call Event [Name]: ["X[Com]Change Money"] <CommonEv 53>  / CSelf22[Amount]
+ | | | | | | |▼ Play SE
  | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 21:Sell Sound
  | | | | | | |■
  | | | | | |-◇Else
- | | | | | | |▼ SE再生
+ | | | | | | |▼ Play SE
  | | | | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
  | | | | | | |■
  | | | | | |◇End◇
@@ -669,13 +669,13 @@ WoditorEvCOMMAND_END
  | | | |◇End◇
  | | | |■
  | | |◇End◇
- | | |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / CSelf19[買う(0)/売る(1)モード]
- | | |▼ 格納されている内容に応じて描画内容を更新
- | | |▼ カーソル位置を再設定
- | | |■Load DB(Var):  CSelf16[最終選択位置] = VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) 
- | | |■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) =  CSelf16[最終選択位置]
- | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:表示C（項目更新のみ） / CSelf16[最終選択位置] / CSelf16[最終選択位置]
- | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 1:表示B（瞬間表示＆一部更新） / CSelf16[最終選択位置] / CSelf16[最終選択位置]
+ | | |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / CSelf19[Mode (Buy=0/Sell=1)]
+ | | |▼ Update the display based on the stored content
+ | | |▼ Set the cursor position
+ | | |■Load DB(Var):  CSelf16[Last Cursor Position] = VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) 
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) =  CSelf16[Last Cursor Position]
+ | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:表示C（項目更新のみ） / CSelf16[Last Cursor Position] / CSelf16[Last Cursor Position]
+ | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 1:表示B（瞬間表示＆一部更新） / CSelf16[Last Cursor Position] / CSelf16[Last Cursor Position]
  | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / -2:凍結 / 0
  | | |■
  | |◇End◇
@@ -685,9 +685,9 @@ WoditorEvCOMMAND_END
 ◇Loop End Point◇◇
 ■Repeat Loop [ 0 ] Times
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |▼ 　ここから終了処理
+ |▼   End processing starts here
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |●Label Point [お店終了] <<<<<<<<<<<<<<<<★
+ |●Label Point [Shop End] <<<<<<<<<<<<<<<<★
  |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / -1:消去 / 0:買う
  |■Wait: 10 Frames
  |■Exit Event

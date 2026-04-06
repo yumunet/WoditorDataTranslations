@@ -58,6 +58,6 @@ WoditorEvCOMMAND_END
 ■Call Event: Common 34: [ [2] Shop: Add Merchandise ] / 3:Armor [C] / -3:<None> / -1:<None> / 29:Machine Gun
 ■Call Event: Common 34: [ [2] Shop: Add Merchandise ] / 3:Armor [C] / -3:<None> / -1:<None> / 30:Item Bag
 ■Call Event: Common 34: [ [2] Shop: Add Merchandise ] / 1:Item [A] / 18:Machine Gun Bullets / -1:<None> / -1:<None>
-■Call Event: Common 35: [ [3] Shop: Open ] / 3:Sell and Buy
+■Call Event: Common 35: [ [3] Shop: Open ] / 3:Buy and Sell
 ■
 [COMMAND_TEXT_END]

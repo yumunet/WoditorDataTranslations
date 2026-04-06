@@ -8,7 +8,7 @@ MEMO=
 VALINPUT_NUM=1
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=商品コード
+VALINPUT_NAME_0=Item Code
 VALINPUT_NAME_1=
 VALINPUT_NAME_2=
 VALINPUT_NAME_3=
@@ -68,7 +68,7 @@ DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
 RETURN_VAL_NAME=
 RETURN_VAL_TARGET=-1
-CSELF_NAME_0=商品コード
+CSELF_NAME_0=Item Code
 CSELF_NAME_1=
 CSELF_NAME_2=
 CSELF_NAME_3=
@@ -76,19 +76,19 @@ CSELF_NAME_4=
 CSELF_NAME_5=
 CSELF_NAME_6=
 CSELF_NAME_7=
-CSELF_NAME_8=商品説明
-CSELF_NAME_9=商品名
-CSELF_NAME_10=一時変数A
+CSELF_NAME_8=Item Description
+CSELF_NAME_9=Item Name
+CSELF_NAME_10=
 CSELF_NAME_11=
 CSELF_NAME_12=
 CSELF_NAME_13=
-CSELF_NAME_14=対象キャラID
-CSELF_NAME_15=商品コード[番号]
-CSELF_NAME_16=次格納先
+CSELF_NAME_14=
+CSELF_NAME_15=Item ID
+CSELF_NAME_16=Destination
 CSELF_NAME_17=
-CSELF_NAME_18=価格
-CSELF_NAME_19=所持数
-CSELF_NAME_20=パーティ人数
+CSELF_NAME_18=Price
+CSELF_NAME_19=Quantity
+CSELF_NAME_20=
 CSELF_NAME_21=
 CSELF_NAME_22=
 CSELF_NAME_23=
@@ -101,11 +101,11 @@ CSELF_NAME_29=
 CSELF_NAME_30=
 CSELF_NAME_31=
 CSELF_NAME_32=
-CSELF_NAME_33=装備可能状態
+CSELF_NAME_33=
 CSELF_NAME_34=
-CSELF_NAME_35=対象装備のタイプ
-CSELF_NAME_36=一時装備フラグ
-CSELF_NAME_37=装備中フラグ調査用
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=
 CSELF_NAME_38=
 CSELF_NAME_39=
 CSELF_NAME_40=
@@ -173,7 +173,7 @@ COMMAND_NUM=64
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("[Process Overview]")
-[103][0,1]<0>()("　お店の商品を追加します。武器・防具なら装備可能キャラも計算します。")
+[103][0,1]<0>()("  Adds an item to the shop.")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [121][4,0]<0>(1600015,1600000,0,0)()
 [250][5,4]<0>(18,93,0,200704,1600016)("","Base System Variables","[Shop] Registered Item Count","")
@@ -181,7 +181,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<0>(1)()
 [111][10,0]<1>(3,1600000,19999,3,1600000,29999,3,1600000,39999,3)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("アイテムの場合")
+[103][0,1]<2>()("If item")
 [121][4,0]<2>(1600015,10000,0,1280)()
 [103][0,1]<2>()(" ")
 [250][5,4]<2>(7,1600015,0,331776,1600019)("","┣ Owned Items","","Owned Quantity")
@@ -198,7 +198,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<2>(18,93,0,65552,1)("","Base System Variables","","")
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[103][0,1]<2>()("武器の場合")
+[103][0,1]<2>()("If weapon")
 [121][4,0]<2>(1600015,20000,0,1280)()
 [103][0,1]<2>()(" ")
 [250][5,4]<2>(8,1600015,0,331776,1600019)("","┣ Owned Weapons","","Owned Quantity")
@@ -215,7 +215,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<2>(18,93,0,65552,1)("","Base System Variables","","")
 [0][0,0]<2>()()
 [401][1,0]<1>(3)()
-[103][0,1]<2>()("防具の場合")
+[103][0,1]<2>()("If armor")
 [121][4,0]<2>(1600015,30000,0,1280)()
 [103][0,1]<2>()(" ")
 [250][5,4]<2>(9,1600015,0,331776,1600019)("","┗ Owned Armors","","Owned Quantity")
@@ -240,61 +240,61 @@ WoditorEvCOMMAND_END
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ [Process Overview]
-▼ 　お店の商品を追加します。武器・防具なら装備可能キャラも計算します。
+▼   Adds an item to the shop.
 ▼ ―――――――――――――――――――――――――――――――――――
-■Set Variable: CSelf15[商品コード[番号]] = CSelf0[商品コード] + 0 
-■Load DB(Var):  CSelf16[次格納先] = VarDB[ "Base System Variables":"[Shop] Registered Item Count":0 ] (18:93:Number) 
-■Condition (Number):   [1] CSelf0[商品コード] >=  10000  
--◇Condition:  [1]  [ CSelf0[商品コード] >= 10000   ] Case↓
- |■Condition (Number):   [1] CSelf0[商品コード] <=  19999  /  [2] CSelf0[商品コード] <=  29999  /  [3] CSelf0[商品コード] <=  39999  
- |-◇Condition:  [1]  [ CSelf0[商品コード] <= 19999   ] Case↓
- | |▼ アイテムの場合
- | |■Set Variable: CSelf15[商品コード[番号]] %= 10000 + 0 
+■Set Variable: CSelf15[Item ID] = CSelf0[Item Code] + 0 
+■Load DB(Var):  CSelf16[Destination] = VarDB[ "Base System Variables":"[Shop] Registered Item Count":0 ] (18:93:Number) 
+■Condition (Number):   [1] CSelf0[Item Code] >=  10000  
+-◇Condition:  [1]  [ CSelf0[Item Code] >= 10000   ] Case↓
+ |■Condition (Number):   [1] CSelf0[Item Code] <=  19999  /  [2] CSelf0[Item Code] <=  29999  /  [3] CSelf0[Item Code] <=  39999  
+ |-◇Condition:  [1]  [ CSelf0[Item Code] <= 19999   ] Case↓
+ | |▼ If item
+ | |■Set Variable: CSelf15[Item ID] %= 10000 + 0 
  | |▼  
- | |■Load DB(Var):  CSelf19[所持数] = VarDB[ "┣ Owned Items":CSelf15[商品コード[番号]]:"Owned Quantity" ] (7:-:0) 
- | |■Load DB(User):  CSelf18[価格] = UserDB[ "Items":CSelf15[商品コード[番号]]:"Sell Price [0=Can't Sell]" ] (2:-:19) 
- | |■Load DB(User):  CSelf9[商品名] = UserDB[ "Items":CSelf15[商品コード[番号]]:"Item Name" ] (2:-:0) 
- | |■Load DB(User):  CSelf8[商品説明] = UserDB[ "Items":CSelf15[商品コード[番号]]:"Description [Up to 2 Lines]" ] (2:-:1) 
+ | |■Load DB(Var):  CSelf19[Quantity] = VarDB[ "┣ Owned Items":CSelf15[Item ID]:"Owned Quantity" ] (7:-:0) 
+ | |■Load DB(User):  CSelf18[Price] = UserDB[ "Items":CSelf15[Item ID]:"Sell Price [0=Can't Sell]" ] (2:-:19) 
+ | |■Load DB(User):  CSelf9[Item Name] = UserDB[ "Items":CSelf15[Item ID]:"Item Name" ] (2:-:0) 
+ | |■Load DB(User):  CSelf8[Item Description] = UserDB[ "Items":CSelf15[Item ID]:"Description [Up to 2 Lines]" ] (2:-:1) 
  | |▼  
- | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[次格納先]:"Sell Item ID" ] (16:-:1) =  CSelf0[商品コード]
- | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[次格納先]:"Sell Item Name" ] (16:-:0) =  CSelf9[商品名]
- | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[次格納先]:"Description" ] (16:-:5) =  CSelf8[商品説明]
- | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[次格納先]:"Quantity" ] (16:-:3) =  CSelf19[所持数]
- | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[次格納先]:"Price" ] (16:-:2) =  CSelf18[価格]
- | |▼  
- | |■Write to DB(Var): VarDB[ "Base System Variables":93:0 ] (18:[Shop] Registered Item Count:Number) +=  1
- | |■
- |-◇Condition:  [2]  [ CSelf0[商品コード] <= 29999   ] Case↓
- | |▼ 武器の場合
- | |■Set Variable: CSelf15[商品コード[番号]] %= 20000 + 0 
- | |▼  
- | |■Load DB(Var):  CSelf19[所持数] = VarDB[ "┣ Owned Weapons":CSelf15[商品コード[番号]]:"Owned Quantity" ] (8:-:0) 
- | |■Load DB(User):  CSelf18[価格] = UserDB[ "Weapons":CSelf15[商品コード[番号]]:"Sell Price [0=Can't Sell]" ] (3:-:17) 
- | |■Load DB(User):  CSelf9[商品名] = UserDB[ "Weapons":CSelf15[商品コード[番号]]:"Weapon Name" ] (3:-:0) 
- | |■Load DB(User):  CSelf8[商品説明] = UserDB[ "Weapons":CSelf15[商品コード[番号]]:"Description [Up to 2 Lines]" ] (3:-:1) 
- | |▼  
- | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[次格納先]:"Sell Item ID" ] (16:-:1) =  CSelf0[商品コード]
- | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[次格納先]:"Sell Item Name" ] (16:-:0) =  CSelf9[商品名]
- | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[次格納先]:"Description" ] (16:-:5) =  CSelf8[商品説明]
- | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[次格納先]:"Quantity" ] (16:-:3) =  CSelf19[所持数]
- | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[次格納先]:"Price" ] (16:-:2) =  CSelf18[価格]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[Destination]:"Sell Item ID" ] (16:-:1) =  CSelf0[Item Code]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[Destination]:"Sell Item Name" ] (16:-:0) =  CSelf9[Item Name]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[Destination]:"Description" ] (16:-:5) =  CSelf8[Item Description]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[Destination]:"Quantity" ] (16:-:3) =  CSelf19[Quantity]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[Destination]:"Price" ] (16:-:2) =  CSelf18[Price]
  | |▼  
  | |■Write to DB(Var): VarDB[ "Base System Variables":93:0 ] (18:[Shop] Registered Item Count:Number) +=  1
  | |■
- |-◇Condition:  [3]  [ CSelf0[商品コード] <= 39999   ] Case↓
- | |▼ 防具の場合
- | |■Set Variable: CSelf15[商品コード[番号]] %= 30000 + 0 
+ |-◇Condition:  [2]  [ CSelf0[Item Code] <= 29999   ] Case↓
+ | |▼ If weapon
+ | |■Set Variable: CSelf15[Item ID] %= 20000 + 0 
  | |▼  
- | |■Load DB(Var):  CSelf19[所持数] = VarDB[ "┗ Owned Armors":CSelf15[商品コード[番号]]:"Owned Quantity" ] (9:-:0) 
- | |■Load DB(User):  CSelf18[価格] = UserDB[ "Armors":CSelf15[商品コード[番号]]:"Sell Price [0=Can't Sell]" ] (4:-:18) 
- | |■Load DB(User):  CSelf9[商品名] = UserDB[ "Armors":CSelf15[商品コード[番号]]:"Armor Name" ] (4:-:0) 
- | |■Load DB(User):  CSelf8[商品説明] = UserDB[ "Armors":CSelf15[商品コード[番号]]:"Description [Up to 2 Lines]" ] (4:-:1) 
+ | |■Load DB(Var):  CSelf19[Quantity] = VarDB[ "┣ Owned Weapons":CSelf15[Item ID]:"Owned Quantity" ] (8:-:0) 
+ | |■Load DB(User):  CSelf18[Price] = UserDB[ "Weapons":CSelf15[Item ID]:"Sell Price [0=Can't Sell]" ] (3:-:17) 
+ | |■Load DB(User):  CSelf9[Item Name] = UserDB[ "Weapons":CSelf15[Item ID]:"Weapon Name" ] (3:-:0) 
+ | |■Load DB(User):  CSelf8[Item Description] = UserDB[ "Weapons":CSelf15[Item ID]:"Description [Up to 2 Lines]" ] (3:-:1) 
  | |▼  
- | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[次格納先]:"Sell Item ID" ] (16:-:1) =  CSelf0[商品コード]
- | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[次格納先]:"Sell Item Name" ] (16:-:0) =  CSelf9[商品名]
- | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[次格納先]:"Description" ] (16:-:5) =  CSelf8[商品説明]
- | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[次格納先]:"Quantity" ] (16:-:3) =  CSelf19[所持数]
- | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[次格納先]:"Price" ] (16:-:2) =  CSelf18[価格]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[Destination]:"Sell Item ID" ] (16:-:1) =  CSelf0[Item Code]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[Destination]:"Sell Item Name" ] (16:-:0) =  CSelf9[Item Name]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[Destination]:"Description" ] (16:-:5) =  CSelf8[Item Description]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[Destination]:"Quantity" ] (16:-:3) =  CSelf19[Quantity]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[Destination]:"Price" ] (16:-:2) =  CSelf18[Price]
+ | |▼  
+ | |■Write to DB(Var): VarDB[ "Base System Variables":93:0 ] (18:[Shop] Registered Item Count:Number) +=  1
+ | |■
+ |-◇Condition:  [3]  [ CSelf0[Item Code] <= 39999   ] Case↓
+ | |▼ If armor
+ | |■Set Variable: CSelf15[Item ID] %= 30000 + 0 
+ | |▼  
+ | |■Load DB(Var):  CSelf19[Quantity] = VarDB[ "┗ Owned Armors":CSelf15[Item ID]:"Owned Quantity" ] (9:-:0) 
+ | |■Load DB(User):  CSelf18[Price] = UserDB[ "Armors":CSelf15[Item ID]:"Sell Price [0=Can't Sell]" ] (4:-:18) 
+ | |■Load DB(User):  CSelf9[Item Name] = UserDB[ "Armors":CSelf15[Item ID]:"Armor Name" ] (4:-:0) 
+ | |■Load DB(User):  CSelf8[Item Description] = UserDB[ "Armors":CSelf15[Item ID]:"Description [Up to 2 Lines]" ] (4:-:1) 
+ | |▼  
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[Destination]:"Sell Item ID" ] (16:-:1) =  CSelf0[Item Code]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[Destination]:"Sell Item Name" ] (16:-:0) =  CSelf9[Item Name]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[Destination]:"Description" ] (16:-:5) =  CSelf8[Item Description]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[Destination]:"Quantity" ] (16:-:3) =  CSelf19[Quantity]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[Destination]:"Price" ] (16:-:2) =  CSelf18[Price]
  | |▼  
  | |■Write to DB(Var): VarDB[ "Base System Variables":93:0 ] (18:[Shop] Registered Item Count:Number) +=  1
  | |■

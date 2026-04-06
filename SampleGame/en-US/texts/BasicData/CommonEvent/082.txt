@@ -78,7 +78,7 @@ CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=
-CSELF_NAME_10=一時変数A
+CSELF_NAME_10=
 CSELF_NAME_11=
 CSELF_NAME_12=
 CSELF_NAME_13=
@@ -173,9 +173,9 @@ COMMAND_NUM=7
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("[Process Overview]")
-[103][0,1]<0>()("　店の商品をカラにします。")
+[103][0,1]<0>()("  Clears all items from the shop.")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[250][5,4]<0>(16,-2,47,65536,1600020)("","×Shop Temp Data","","")
+[250][5,4]<0>(16,-2,0,65536,0)("","×Shop Temp Data","","")
 [250][5,4]<0>(18,93,0,65536,0)("","Base System Variables","","")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
@@ -183,7 +183,7 @@ WoditorEvCOMMAND_END
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ [Process Overview]
-▼ 　店の商品をカラにします。
+▼   Clears all items from the shop.
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Write to DB(Var): [Reset Type "×Shop Temp Data"(16)]
 ■Write to DB(Var): VarDB[ "Base System Variables":93:0 ] (18:[Shop] Registered Item Count:Number) =  0

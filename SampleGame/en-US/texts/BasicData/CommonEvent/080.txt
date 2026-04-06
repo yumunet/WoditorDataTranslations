@@ -69,8 +69,8 @@ CSELF_NAME_5=
 CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
-CSELF_NAME_9=
-CSELF_NAME_10=一時変数A
+CSELF_NAME_9=Sprite File
+CSELF_NAME_10=Temp Variable A
 CSELF_NAME_11=
 CSELF_NAME_12=
 CSELF_NAME_13=
@@ -80,10 +80,10 @@ CSELF_NAME_16=
 CSELF_NAME_17=
 CSELF_NAME_18=
 CSELF_NAME_19=
-CSELF_NAME_20=処理主人公ID
-CSELF_NAME_21=処理対象
-CSELF_NAME_22=パーティーメンバー数
-CSELF_NAME_23=最大パーティ人数
+CSELF_NAME_20=Target Ally ID
+CSELF_NAME_21=Current Target
+CSELF_NAME_22=Current Party Size
+CSELF_NAME_23=Max Party Size
 CSELF_NAME_24=
 CSELF_NAME_25=
 CSELF_NAME_26=
@@ -165,9 +165,9 @@ COMMAND_NUM=36
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("[Process Overview]")
-[103][0,1]<0>()("　パーティー全員分の隊列画像を再設定します。")
-[103][0,1]<0>()("　仲間が増えたとき、減ったときなどに呼び出されます。")
-[103][0,1]<0>()("　基本システムでは、この処理以外でパーティー画像を変更することはありません。")
+[103][0,1]<0>()("  Updates character sprites for all party members.")
+[103][0,1]<0>()("  Called when party members are added or removed.")
+[103][0,1]<0>()("  In the Base System, party sprites are not changed outside of this process.")
 [103][0,1]<0>()("")
 [103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
@@ -183,11 +183,11 @@ WoditorEvCOMMAND_START
 [121][4,0]<1>(1600021,1,0,256)()
 [111][4,0]<1>(1,1600021,1600023,1)()
 [401][1,0]<1>(1)()
-[106][0,1]<2>()("【エラー】<\n>隊列画像の設定は<\n>\cself[23]人までしか行えません")
+[106][0,1]<2>()("[Error]<\n>Party sprites can only be set for<\n>up to \cself[23] members.")
 [172][0,0]<2>()()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
-[103][0,1]<1>()("パーティー情報DBからキャラIDを取得する")
+[103][0,1]<1>()("Get the character ID from the Party database")
 [121][4,0]<1>(1600010,1600021,1,0)()
 [250][5,4]<1>(3,0,1600010,69632,1600020)("","Party","","")
 [250][5,4]<1>(0,1600020,2,331776,1600009)("","Allies","","Character Sprite")
@@ -204,9 +204,9 @@ WoditorEvCOMMAND_END
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ [Process Overview]
-▼ 　パーティー全員分の隊列画像を再設定します。
-▼ 　仲間が増えたとき、減ったときなどに呼び出されます。
-▼ 　基本システムでは、この処理以外でパーティー画像を変更することはありません。
+▼   Updates character sprites for all party members.
+▼   Called when party members are added or removed.
+▼   In the Base System, party sprites are not changed outside of this process.
 ▼ 
 ▼ [Databases Accessed by This Common Event]
 ▼  
@@ -215,24 +215,24 @@ WoditorEvCOMMAND_END
 ▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Party Sprites: Erase All Members
-■Load DB(Var):  CSelf22[パーティーメンバー数] = VarDB[ "Base System Variables":"Current Party Size":0 ] (18:4:Number) 
-■Load DB(Var):  CSelf23[最大パーティ人数] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
-■Set Variable: CSelf21[処理対象] = -1 + 0 
-■Repeat Loop [ CSelf22[パーティーメンバー数] ] Times
- |■Set Variable: CSelf21[処理対象] += 1 + 0 
- |■Condition (Number):   [1] CSelf21[処理対象] >=  CSelf23[最大パーティ人数]  
- |-◇Condition:  [1]  [ CSelf21[処理対象] >= CSelf23[最大パーティ人数]   ] Case↓
- | |■Debug Text: 【エラー】\n隊列画像の設定は\n\cself[23]人までしか行えません
+■Load DB(Var):  CSelf22[Current Party Size] = VarDB[ "Base System Variables":"Current Party Size":0 ] (18:4:Number) 
+■Load DB(Var):  CSelf23[Max Party Size] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
+■Set Variable: CSelf21[Current Target] = -1 + 0 
+■Repeat Loop [ CSelf22[Current Party Size] ] Times
+ |■Set Variable: CSelf21[Current Target] += 1 + 0 
+ |■Condition (Number):   [1] CSelf21[Current Target] >=  CSelf23[Max Party Size]  
+ |-◇Condition:  [1]  [ CSelf21[Current Target] >= CSelf23[Max Party Size]   ] Case↓
+ | |■Debug Text: [Error]\nParty sprites can only be set for\nup to \cself[23] members.
  | |■Exit Event
  | |■
  |◇End◇
- |▼ パーティー情報DBからキャラIDを取得する
- |■Set Variable: CSelf10[一時変数A] = CSelf21[処理対象] + 1 
- |■Load DB(Var):  CSelf20[処理主人公ID] = VarDB[ "Party":0:CSelf10[一時変数A] ] (6:Main Settings:-) 
- |■Load DB(Var):  CSelf9 = VarDB[ "Allies":CSelf20[処理主人公ID]:"Character Sprite" ] (0:-:2) 
- |■Condition (String):   [1] CSelf9 Is Not Equal to ""
- |-◇Condition:  [1] [ CSelf9 Is Not Equal to "" ] Case↓
- | |■Party Sprites: Insert [CSelf9] Before Member CSelf10[一時変数A]
+ |▼ Get the character ID from the Party database
+ |■Set Variable: CSelf10[Temp Variable A] = CSelf21[Current Target] + 1 
+ |■Load DB(Var):  CSelf20[Target Ally ID] = VarDB[ "Party":0:CSelf10[Temp Variable A] ] (6:Main Settings:-) 
+ |■Load DB(Var):  CSelf9[Sprite File] = VarDB[ "Allies":CSelf20[Target Ally ID]:"Character Sprite" ] (0:-:2) 
+ |■Condition (String):   [1] CSelf9[Sprite File] Is Not Equal to ""
+ |-◇Condition:  [1] [ CSelf9[Sprite File] Is Not Equal to "" ] Case↓
+ | |■Party Sprites: Insert [CSelf9[Sprite File]] Before Member CSelf10[Temp Variable A]
  | |■
  |◇End◇
  |■
