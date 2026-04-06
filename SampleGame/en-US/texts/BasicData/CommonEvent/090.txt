@@ -355,7 +355,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<1>(0,1600002,48,331776,1600095)("","Allies","","Current Level EXP")
 [250][5,4]<1>(0,1600002,49,331776,1600096)("","Allies","","Current Level Required EXP")
 [103][0,1]<1>()("レベル最大なら次までの必要EXPも現在EXPも0にする [Ver3.45追加]")
-[250][5,4]<1>(0,1600002,5,331776,1600099)("","主人公ステータス","","限界レベル")
+[250][5,4]<1>(0,1600002,5,331776,1600099)("","Allies","","Max Level")
 [111][4,0]<1>(1,1600094,1600099,1)()
 [401][1,0]<1>(1)()
 [121][4,0]<2>(1600096,0,0,0)()
@@ -940,7 +940,7 @@ WoditorEvCOMMAND_END
  |■Load DB(Var):  CSelf95[取得済EXP] = VarDB[ "Allies":CSelf2[表示主人公ID]:"Current Level EXP" ] (0:-:54) 
  |■Load DB(Var):  CSelf96[次までの必要EXP] = VarDB[ "Allies":CSelf2[表示主人公ID]:"Current Level Required EXP" ] (0:-:55) 
  |▼ レベル最大なら次までの必要EXPも現在EXPも0にする [Ver3.45追加]
- |■Load DB(Var):  CSelf99[限界レベル] = VarDB[ "主人公ステータス":CSelf2[表示主人公ID]:"限界レベル" ] ( ? :-: ? ) 
+ |■Load DB(Var):  CSelf99[限界レベル] = VarDB[ "Allies":CSelf2[表示主人公ID]:"Max Level" ] (0:-:5) 
  |■Condition (Number):   [1] CSelf94[レベル] >=  CSelf99[限界レベル]  
  |-◇Condition:  [1]  [ CSelf94[レベル] >= CSelf99[限界レベル]   ] Case↓
  | |■Set Variable: CSelf96[次までの必要EXP] = 0 + 0 
