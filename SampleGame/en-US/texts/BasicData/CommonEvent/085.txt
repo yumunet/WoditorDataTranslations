@@ -8,9 +8,9 @@ MEMO=
 VALINPUT_NUM=3
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=処理モード
-VALINPUT_NAME_1=[2]カーソル位置
-VALINPUT_NAME_2=商品選択位置
+VALINPUT_NAME_0=Mode
+VALINPUT_NAME_1=[2]Cursor Position
+VALINPUT_NAME_2=Shop Item Index
 VALINPUT_NAME_3=
 VALINPUT_NAME_4=
 VALINPUT_NAME_5=
@@ -32,17 +32,17 @@ LOADTYPE8=0
 LOADTYPE9=0
 CHOICE_STR_NUM=10
 CHOICE_STR_0_NUM=5
-CHOICE_STR_0_0=表示A（初期表示用　スライド表示＆全表示）
-CHOICE_STR_0_1=表示B（瞬間表示＆一部更新）
-CHOICE_STR_0_2=表示C（項目更新のみ）
-CHOICE_STR_0_3=カーソル表示([2]が-1なら消去　-2なら凍結)
-CHOICE_STR_0_4=消去
+CHOICE_STR_0_0=Display A (initial display: slide-in + full display)
+CHOICE_STR_0_1=Display B (instant display + partial update)
+CHOICE_STR_0_2=Display C (item-only update)
+CHOICE_STR_0_3=Cursor Display (erase if [2] = -1, make inactive if [2] = -2)
+CHOICE_STR_0_4=Erase
 CHOICE_STR_1_NUM=5
-CHOICE_STR_1_0=凍結
-CHOICE_STR_1_1=買う
-CHOICE_STR_1_2=売る
-CHOICE_STR_1_3=「買う」だけ表示
-CHOICE_STR_1_4=「売る」だけ表示
+CHOICE_STR_1_0=Inactive
+CHOICE_STR_1_1=Buy
+CHOICE_STR_1_2=Sell
+CHOICE_STR_1_3=Buy Only
+CHOICE_STR_1_4=Sell Only
 CHOICE_STR_2_NUM=0
 CHOICE_STR_3_NUM=0
 CHOICE_STR_4_NUM=0
@@ -80,104 +80,104 @@ DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
 RETURN_VAL_NAME=
 RETURN_VAL_TARGET=-1
-CSELF_NAME_0=処理モード
-CSELF_NAME_1=[2]カーソル位置
-CSELF_NAME_2=商品選択位置
+CSELF_NAME_0=Mode
+CSELF_NAME_1=[2]Cursor Position
+CSELF_NAME_2=Shop Item Index
 CSELF_NAME_3=
 CSELF_NAME_4=
-CSELF_NAME_5=一時文字列A
-CSELF_NAME_6=メイン表示用
-CSELF_NAME_7=一時文字列B
-CSELF_NAME_8=ウィンドウ画像ファイル
-CSELF_NAME_9=カーソル画像ファイル
-CSELF_NAME_10=一時変数A
-CSELF_NAME_11=一時変数B
-CSELF_NAME_12=一時変数C
-CSELF_NAME_13=一時変数D
-CSELF_NAME_14=一時変数E
-CSELF_NAME_15=一時変数F
+CSELF_NAME_5=
+CSELF_NAME_6=Main Display
+CSELF_NAME_7=Temp String
+CSELF_NAME_8=Window Image File
+CSELF_NAME_9=Cursor Image File
+CSELF_NAME_10=Temp Variable A
+CSELF_NAME_11=Temp Variable B
+CSELF_NAME_12=Temp Variable C
+CSELF_NAME_13=Temp Variable D
+CSELF_NAME_14=
+CSELF_NAME_15=Temp Variable F
 CSELF_NAME_16=
-CSELF_NAME_17=最小フォントサイズ
-CSELF_NAME_18=ミニフォントサイズ
-CSELF_NAME_19=基本フォントサイズ
-CSELF_NAME_20=基本ピクチャ番号
-CSELF_NAME_21=一時ピクチャ番号
-CSELF_NAME_22=上部欄表示X
-CSELF_NAME_23=上部欄表示Y
-CSELF_NAME_24=上部欄横サイズ
-CSELF_NAME_25=上部欄縦サイズ
-CSELF_NAME_26=一時ピクチャ2
-CSELF_NAME_27=装備欄 縦項目数
-CSELF_NAME_28=座標倍率
-CSELF_NAME_29=全更新フラグ
-CSELF_NAME_30=お金欄X
-CSELF_NAME_31=お金欄Y
-CSELF_NAME_32=お金欄横サイズ
-CSELF_NAME_33=お金欄縦サイズ
-CSELF_NAME_34=[保持]カーソル基本X
-CSELF_NAME_35=[保持]カーソル基本Y
-CSELF_NAME_36=[保持]カーソル横幅
-CSELF_NAME_37=[保持]カーソル縦幅
-CSELF_NAME_38=[保持]カーソル移動横幅
-CSELF_NAME_39=[保持]カーソル移動縦幅
-CSELF_NAME_40=全項目数
-CSELF_NAME_41=一時項目表示X
-CSELF_NAME_42=一時項目表示Y
-CSELF_NAME_43=処理中個数
-CSELF_NAME_44=一時項目表示X2
-CSELF_NAME_45=一時項目表示Y2
-CSELF_NAME_46=上部欄　[購入]シフト量
-CSELF_NAME_47=上部欄　[売却]シフト量
-CSELF_NAME_48=上部欄　カーソル横サイズ
+CSELF_NAME_17=Min Font Size
+CSELF_NAME_18=Small Font Size
+CSELF_NAME_19=Base Font Size
+CSELF_NAME_20=Base Picture ID
+CSELF_NAME_21=Temp Picture ID
+CSELF_NAME_22=Top Box X
+CSELF_NAME_23=Top Box Y
+CSELF_NAME_24=Top Box Width
+CSELF_NAME_25=Top Box Height
+CSELF_NAME_26=Temp Picture ID 2
+CSELF_NAME_27=Equip Status Row Count
+CSELF_NAME_28=
+CSELF_NAME_29=Full Update Flag
+CSELF_NAME_30=Money Box X
+CSELF_NAME_31=Money Box Y
+CSELF_NAME_32=Money Box Width
+CSELF_NAME_33=Money Box Height
+CSELF_NAME_34=
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=
+CSELF_NAME_41=Temp Item X
+CSELF_NAME_42=Temp Item Y
+CSELF_NAME_43=
+CSELF_NAME_44=Temp Item X 2
+CSELF_NAME_45=Temp Item Y 2
+CSELF_NAME_46=Top Box Buy Offset
+CSELF_NAME_47=Top Box Sell Offset
+CSELF_NAME_48=Top Box Cursor Width
 CSELF_NAME_49=
-CSELF_NAME_50=装備状態欄X
-CSELF_NAME_51=装備状態欄Y
-CSELF_NAME_52=装備状態欄横サイズ
-CSELF_NAME_53=装備状態欄縦サイズ
-CSELF_NAME_54=色指定R
-CSELF_NAME_55=色指定G
-CSELF_NAME_56=色指定B
-CSELF_NAME_57=初期表示？(1=YES)
+CSELF_NAME_50=Equip Status X
+CSELF_NAME_51=Equip Status Y
+CSELF_NAME_52=Equip Status Width
+CSELF_NAME_53=Equip Status Height
+CSELF_NAME_54=Color R
+CSELF_NAME_55=Color G
+CSELF_NAME_56=Color B
+CSELF_NAME_57=Initial Display? (1:Yes)
 CSELF_NAME_58=
-CSELF_NAME_59=装備空欄フラグ
+CSELF_NAME_59=
 CSELF_NAME_60=
 CSELF_NAME_61=
 CSELF_NAME_62=
-CSELF_NAME_63=キャラ名位置Y
-CSELF_NAME_64=肩書き位置X
-CSELF_NAME_65=肩書き位置Y
-CSELF_NAME_66=HP位置X
-CSELF_NAME_67=HP位置Y
-CSELF_NAME_68=SP位置X
-CSELF_NAME_69=SP位置Y
-CSELF_NAME_70=所持数欄表示X
-CSELF_NAME_71=所持数欄表示Y
-CSELF_NAME_72=所持数欄サイズX
-CSELF_NAME_73=所持数欄サイズY
+CSELF_NAME_63=Character Name Y
+CSELF_NAME_64=Character Title X
+CSELF_NAME_65=Character Title Y
+CSELF_NAME_66=HP X
+CSELF_NAME_67=HP Y
+CSELF_NAME_68=SP X
+CSELF_NAME_69=SP Y
+CSELF_NAME_70=Quantity Box X
+CSELF_NAME_71=Quantity Box Y
+CSELF_NAME_72=Quantity Box Width
+CSELF_NAME_73=Quantity Box Height
 CSELF_NAME_74=
-CSELF_NAME_75=万能ウィンドウ表示X
-CSELF_NAME_76=万能ウィンドウ表示Y
-CSELF_NAME_77=万能ウィンドウサイズX
-CSELF_NAME_78=万能ウィンドウ表示Y
-CSELF_NAME_79=万能ウィンドウ説明欄縦サイズ
-CSELF_NAME_80=全ゲージ太さ
-CSELF_NAME_81=HP・SPゲージ長
+CSELF_NAME_75=Universal Window X
+CSELF_NAME_76=Universal Window Y
+CSELF_NAME_77=Universal Window Width
+CSELF_NAME_78=Universal Window Height
+CSELF_NAME_79=Universal Window Description Height
+CSELF_NAME_80=All Gauge Thickness
+CSELF_NAME_81=HP/SP Gauge Length
 CSELF_NAME_82=
 CSELF_NAME_83=
 CSELF_NAME_84=
 CSELF_NAME_85=
 CSELF_NAME_86=
 CSELF_NAME_87=
-CSELF_NAME_88=座標倍率X[x10]
-CSELF_NAME_89=座標倍率Y[x10]
+CSELF_NAME_88=Coordinate Scale X (x10)
+CSELF_NAME_89=Coordinate Scale Y (x10)
 CSELF_NAME_90=
 CSELF_NAME_91=
 CSELF_NAME_92=
 CSELF_NAME_93=
 CSELF_NAME_94=
-CSELF_NAME_95=所持金
-CSELF_NAME_96=パーティ人数
-CSELF_NAME_97=所持数
+CSELF_NAME_95=Money
+CSELF_NAME_96=Party Size
+CSELF_NAME_97=Item Quantity
 CSELF_NAME_98=
 CSELF_NAME_99=
 COMMAND_NUM=541
@@ -185,8 +185,8 @@ COMMAND_NUM=541
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("[Process Overview]")
-[103][0,1]<0>()("　- お店の初期描画")
-[103][0,1]<0>()("　- カーソル位置の更新")
+[103][0,1]<0>()("  - Initial shop rendering")
+[103][0,1]<0>()("  - Cursor position update")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("[Pictures]")
 [103][0,1]<0>()("  Base Picture ID + 0 = Background")
@@ -199,7 +199,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("  Base Picture ID + 10-32 =")
 [103][0,1]<0>()("    10: Money Window, 11: Money Amount")
 [103][0,1]<0>()("    20: Owned Quantity Window, 21: Owned Quantity")
-[103][0,1]<0>()("    30: Equippable Status Window, 31: Equippable Status Text")
+[103][0,1]<0>()("    30: Equipment Status Window, 31: Equipment Status Text")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<0>()("  Set Parameters")
@@ -374,7 +374,7 @@ WoditorEvCOMMAND_START
 [150][2,0]<4>(819,1600021)()
 [150][12,0]<4>(64,1600021,0,1600024,1600025,1,255,1600022,1600023,100,0,1600008)()
 [179][1,0]<4>(1)()
-[103][0,1]<5>()("Animate the pictures (using the Move command)")
+[103][0,1]<5>()("Animate the pictures (using the Picture Move command)")
 [103][0,1]<5>()("Shift the initial position")
 [121][4,0]<5>(1600041,1600022,0,0)()
 [121][4,0]<5>(1600042,1600023,0,0)()
@@ -446,7 +446,7 @@ WoditorEvCOMMAND_START
 [498][0,0]<3>()()
 [103][0,1]<3>()(" ")
 [179][1,0]<3>(1600057)()
-[103][0,1]<4>()("Animate the pictures (using the Move command)")
+[103][0,1]<4>()("Animate the pictures (using the Picture Move command)")
 [121][4,0]<4>(1600021,1600020,1,0)()
 [121][4,0]<4>(1600026,1600021,5,0)()
 [103][0,1]<4>()("Shift the initial position")
@@ -476,7 +476,7 @@ WoditorEvCOMMAND_START
 [150][2,0]<4>(819,1600021)()
 [150][12,0]<4>(64,1600021,0,1600032,1600033,1,255,1600030,1600031,100,0,1600008)()
 [179][1,0]<4>(1)()
-[103][0,1]<5>()("Animate the pictures (using the Move command)")
+[103][0,1]<5>()("Animate the pictures (using the Picture Move command)")
 [103][0,1]<5>()("Shift the initial position")
 [150][2,0]<5>(3,1600021)()
 [150][13,0]<5>(4198145,1600021,0,0,0,1,-1000000,1600044,1600045,-1000000,-1000000,0,16777216)()
@@ -500,7 +500,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<4>()()
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
-[103][0,1]<4>()("From version 3.00 onward, adjust using Sys119 Screen Resolution Multiplier")
+[103][0,1]<4>()("From version 3.00 onward, adjust using Sys119 (Screen Resolution Multiplier)")
 [121][4,0]<4>(1600013,9000119,0,768)()
 [0][0,0]<4>()()
 [499][0,0]<3>()()
@@ -513,7 +513,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<3>(1600012,1600088,2,12288)()
 [290][7,0]<3>(32,0,1600021,1600021,1600012,1600012,0)()
 [179][1,0]<3>(1600057)()
-[103][0,1]<4>()("Animate the pictures (using the Move command)")
+[103][0,1]<4>()("Animate the pictures (using the Picture Move command)")
 [103][0,1]<4>()("Shift the initial position")
 [121][4,0]<4>(1600044,1600030,1600032,4096)()
 [121][4,0]<4>(1600045,1600042,0,0)()
@@ -551,7 +551,7 @@ WoditorEvCOMMAND_START
 [150][2,0]<4>(819,1600021)()
 [150][12,0]<4>(64,1600021,0,1600072,1600073,1,255,1600070,1600071,100,0,1600008)()
 [179][1,0]<4>(1)()
-[103][0,1]<5>()("Animate the pictures (using the Move command)")
+[103][0,1]<5>()("Animate the pictures (using the Picture Move command)")
 [103][0,1]<5>()("Shift the initial position")
 [150][2,0]<5>(3,1600021)()
 [150][13,0]<5>(4198145,1600021,0,0,0,1,-1000000,1600044,1600045,-1000000,-1000000,0,16777216)()
@@ -569,20 +569,20 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(1)()
 [111][4,0]<4>(1,9000084,0,2)()
 [401][1,0]<4>(1)()
-[103][0,1]<5>()("解像度が320x240の場合だけ二倍補正が必要（\ax[?]の使用上）")
+[103][0,1]<5>()("Double-scaling required only for 320x240 resolution (due to \ax[X])")
 [121][4,0]<5>(1600013,2,0,768)()
 [0][0,0]<5>()()
 [499][0,0]<4>()()
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
-[103][0,1]<4>()("Ver3.00以降はSys119の基本画面倍率で調整　Ver3.00修正")
+[103][0,1]<4>()("From version 3.00 onward, adjust using Sys119 (Screen Resolution Multiplier)")
 [121][4,0]<4>(1600013,9000119,0,768)()
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [103][0,1]<3>()(" ")
 [250][5,4]<3>(14,0,18,70144,1600007)("","Terms","","")
 [99][1,0]<3>(1)()
-[103][0,1]<3>()("対象の位置番号から所持数を得る処理追加")
+[103][0,1]<3>()("Added a process to get the owned quantity from the target position number (Note: This line has no effect)")
 [121][4,0]<3>(1600011,98765,0,0)()
 [99][1,0]<3>(1)()
 [122][3,1]<3>(1600006,0,0)("\f[\cself[19]]Owned\ax[\cself[13]]<\n>\ay[0]<R>\f[\cself[19]]\cself[97]")
@@ -594,7 +594,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<3>(1600013,1600089,3,12544)()
 [290][7,0]<3>(32,0,1600021,1600021,1600012,1600013,0)()
 [179][1,0]<3>(1600057)()
-[103][0,1]<4>()("Animate the pictures (using the Move command)")
+[103][0,1]<4>()("Animate the pictures (using the Picture Move command)")
 [103][0,1]<4>()("Shift the initial position")
 [121][4,0]<4>(1600044,1600070,1600072,4096)()
 [121][4,0]<4>(1600045,1600042,0,0)()
@@ -612,7 +612,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<2>()(" ")
 [179][1,0]<2>(1)()
 [99][1,0]<3>(0)()
-[103][0,1]<3>()("装備状況欄を表示")
+[103][0,1]<3>()("Display the equipment status window")
 [122][2,1]<3>(1600007,0)("")
 [111][4,0]<3>(1,1600002,0,1)()
 [401][1,0]<3>(1)()
@@ -621,7 +621,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<3>()()
 [112][2,4]<3>(17,1600007)("","","","")
 [401][1,0]<3>(1)()
-[103][0,1]<4>()("カラなら消去")
+[103][0,1]<4>()("Erase if empty")
 [121][4,0]<4>(1600021,1600020,30,0)()
 [150][2,0]<4>(819,1600021)()
 [150][3,0]<4>(2,1600021,0)()
@@ -630,7 +630,7 @@ WoditorEvCOMMAND_START
 [150][3,0]<4>(2,1600021,0)()
 [0][0,0]<4>()()
 [420][1,0]<3>(0)()
-[103][0,1]<4>()("表示する場合は瞬間表示")
+[103][0,1]<4>()("Display instantly if not empty")
 [121][4,0]<4>(1600041,1600050,0,0)()
 [121][4,0]<4>(1600042,1600051,0,0)()
 [121][4,0]<4>(1600044,1600050,1600052,4096)()
@@ -641,7 +641,7 @@ WoditorEvCOMMAND_START
 [150][12,0]<4>(64,1600021,0,1600052,1600053,1,255,1600050,1600051,100,0,1600008)()
 [179][1,0]<4>(1600057)()
 [179][1,0]<5>(0)()
-[103][0,1]<6>()("Animate the pictures (using the Move command)")
+[103][0,1]<6>()("Animate the pictures (using the Picture Move command)")
 [103][0,1]<6>()("Shift the initial position")
 [150][2,0]<6>(3,1600021)()
 [150][13,0]<6>(4198145,1600021,0,0,0,1,-1000000,1600044,1600045,-1000000,-1000000,0,16777216)()
@@ -661,7 +661,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<5>(1600013,2,0,768)()
 [0][0,0]<5>()()
 [499][0,0]<4>()()
-[103][0,1]<4>()("装備状況")
+[103][0,1]<4>()("Equipment status")
 [122][2,1]<4>(1600006,0)("\f[\cself[18]]\cself[7]")
 [121][4,0]<4>(1600021,1600020,31,0)()
 [150][2,0]<4>(819,1600021)()
@@ -671,7 +671,7 @@ WoditorEvCOMMAND_START
 [290][7,0]<4>(32,0,1600021,1600021,1600012,1600013,0)()
 [103][0,1]<4>()(" ")
 [179][1,0]<4>(1600057)()
-[103][0,1]<5>()("Animate the pictures (using the Move command)")
+[103][0,1]<5>()("Animate the pictures (using the Picture Move command)")
 [103][0,1]<5>()("Shift the initial position")
 [121][4,0]<5>(1600044,1600050,1600052,4096)()
 [121][4,0]<5>(1600045,1600042,0,0)()
@@ -696,25 +696,25 @@ WoditorEvCOMMAND_START
 [111][4,0]<0>(1,1600000,2,2)()
 [401][1,0]<0>(1)()
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<1>()("「カーソル表示」モード")
+[103][0,1]<1>()("<dqrt>Cursor Display<dqrt> Mode")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [121][4,0]<1>(1600021,1600020,2,0)()
 [121][4,0]<1>(1600026,1600020,3,0)()
 [111][4,0]<1>(1,1600001,-2,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("「カーソル凍結」モード")
-[103][0,1]<2>()("点滅停止　＋　少し暗くする")
+[103][0,1]<2>()("If the cursor is inactive")
+[103][0,1]<2>()("stop its blinking and darken it slightly")
 [290][7,0]<2>(80,0,1600021,1600026,0,0,0)()
 [150][15,0]<2>(21040961,1600021,0,0,0,-1000000,180,0,0,-1000000,-1000000,0,16777216,0,1600026)()
 [172][0,0]<2>()()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [103][0,1]<1>()(" ")
-[103][0,1]<1>()("全カーソルの色を消去")
+[103][0,1]<1>()("Force all cursor colors to black (making the cursors invisible)")
 [290][7,0]<1>(16,0,1600021,1600026,-100,-100,-100)()
 [290][7,0]<1>(80,0,1600021,1600026,0,0,0)()
 [103][0,1]<1>()(" ")
-[103][0,1]<1>()("指定カーソルの色だけ表示＋点滅")
+[103][0,1]<1>()("Display only the cursor for the selected item in its original color and blink it")
 [121][4,0]<1>(1600021,1600020,2,0)()
 [121][4,0]<1>(1600021,1600001,0,256)()
 [150][13,0]<1>(4263745,1600021,0,0,0,-1000000,255,0,0,-1000000,-1000000,0,16777216)()
@@ -729,8 +729,8 @@ WoditorEvCOMMAND_END
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ [Process Overview]
-▼ 　- お店の初期描画
-▼ 　- カーソル位置の更新
+▼   - Initial shop rendering
+▼   - Cursor position update
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ [Pictures]
 ▼   Base Picture ID + 0 = Background
@@ -743,154 +743,154 @@ WoditorEvCOMMAND_END
 ▼   Base Picture ID + 10-32 =
 ▼     10: Money Window, 11: Money Amount
 ▼     20: Owned Quantity Window, 21: Owned Quantity
-▼     30: Equippable Status Window, 31: Equippable Status Text
+▼     30: Equipment Status Window, 31: Equipment Status Text
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼   Set Parameters
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ Set a fixed value
-■Set Variable: CSelf20[基本ピクチャ番号] = 12000 + 0 
+■Set Variable: CSelf20[Base Picture ID] = 12000 + 0 
 ▼ Load external parameters
-■Load DB(Var):  CSelf17[最小フォントサイズ] = VarDB[ "Base System Variables":7:0 ] (18:System Min Font Size:Number) 
-■Load DB(Var):  CSelf18[ミニフォントサイズ] = VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) 
-■Load DB(Var):  CSelf19[基本フォントサイズ] = VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) 
-■Load DB(User):  CSelf8[ウィンドウ画像ファイル] = UserDB[ "Images/Sounds":0:"Window Image File" ] (16:Basic Images/Sounds:0) 
-■Load DB(User):  CSelf9[カーソル画像ファイル] = UserDB[ "Images/Sounds":0:"Cursor Image File" ] (16:Basic Images/Sounds:1) 
-■Load DB(User):  CSelf27[装備欄 縦項目数] = UserDB[ "System Settings":0:"Equippable Slots" ] (17:Basic System Settings:22) 
+■Load DB(Var):  CSelf17[Min Font Size] = VarDB[ "Base System Variables":7:0 ] (18:System Min Font Size:Number) 
+■Load DB(Var):  CSelf18[Small Font Size] = VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) 
+■Load DB(Var):  CSelf19[Base Font Size] = VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) 
+■Load DB(User):  CSelf8[Window Image File] = UserDB[ "Images/Sounds":0:"Window Image File" ] (16:Basic Images/Sounds:0) 
+■Load DB(User):  CSelf9[Cursor Image File] = UserDB[ "Images/Sounds":0:"Cursor Image File" ] (16:Basic Images/Sounds:1) 
+■Load DB(User):  CSelf27[Equip Status Row Count] = UserDB[ "System Settings":0:"Equippable Slots" ] (17:Basic System Settings:22) 
 ▼ Ver.2.20: Separated the coordinate scale into X and Y values
-■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
-■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
-■Set Variable: CSelf54[色指定R] = 60 + 0 
-■Set Variable: CSelf55[色指定G] = 60 + 0 
-■Set Variable: CSelf56[色指定B] = 100 + 0 
+■Load DB(Var):  CSelf88[Coordinate Scale X (x10)] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
+■Load DB(Var):  CSelf89[Coordinate Scale Y (x10)] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
+■Set Variable: CSelf54[Color R] = 60 + 0 
+■Set Variable: CSelf55[Color G] = 60 + 0 
+■Set Variable: CSelf56[Color B] = 100 + 0 
 ▼ Set coordinates (top-left)
-■Set Variable: CSelf22[上部欄表示X] = 0 + 0 
-■Set Variable: CSelf23[上部欄表示Y] = 0 + 0 
-■Set Variable: CSelf24[上部欄横サイズ] = 180 + 0 
-■Set Variable: CSelf25[上部欄縦サイズ] = 20 + 0 
-■Set Variable: CSelf46[上部欄　[購入]シフト量] = 60 + 0 
-■Set Variable: CSelf47[上部欄　[売却]シフト量] = 120 + 0 
-■Set Variable: CSelf48[上部欄　カーソル横サイズ] = 60 + 0 
+■Set Variable: CSelf22[Top Box X] = 0 + 0 
+■Set Variable: CSelf23[Top Box Y] = 0 + 0 
+■Set Variable: CSelf24[Top Box Width] = 180 + 0 
+■Set Variable: CSelf25[Top Box Height] = 20 + 0 
+■Set Variable: CSelf46[Top Box Buy Offset] = 60 + 0 
+■Set Variable: CSelf47[Top Box Sell Offset] = 120 + 0 
+■Set Variable: CSelf48[Top Box Cursor Width] = 60 + 0 
 ▼ Set money window coordinates
-■Set Variable: CSelf30[お金欄X] = 205 + 0 
-■Set Variable: CSelf31[お金欄Y] = 5 + 0 
-■Set Variable: CSelf32[お金欄横サイズ] = 110 + 0 
-■Set Variable: CSelf33[お金欄縦サイズ] = 35 + 0 
+■Set Variable: CSelf30[Money Box X] = 205 + 0 
+■Set Variable: CSelf31[Money Box Y] = 5 + 0 
+■Set Variable: CSelf32[Money Box Width] = 110 + 0 
+■Set Variable: CSelf33[Money Box Height] = 35 + 0 
 ▼ Set quantity window coordinates
-■Set Variable: CSelf70[所持数欄表示X] = 205 + 0 
-■Set Variable: CSelf71[所持数欄表示Y] = 40 + 0 
-■Set Variable: CSelf72[所持数欄サイズX] = 110 + 0 
-■Set Variable: CSelf73[所持数欄サイズY] = 27 + 0 
+■Set Variable: CSelf70[Quantity Box X] = 205 + 0 
+■Set Variable: CSelf71[Quantity Box Y] = 40 + 0 
+■Set Variable: CSelf72[Quantity Box Width] = 110 + 0 
+■Set Variable: CSelf73[Quantity Box Height] = 27 + 0 
 ▼ Set equippable status window coordinates
-■Load DB(Var):  CSelf96[パーティ人数] = VarDB[ "Base System Variables":"Current Party Size":0 ] (18:4:Number) 
-■Set Variable: CSelf50[装備状態欄X] = 205 + 0 
-■Set Variable: CSelf51[装備状態欄Y] = 73 + 0 
-■Set Variable: CSelf52[装備状態欄横サイズ] = 110 + 0 
-■Set Variable: CSelf53[装備状態欄縦サイズ] = 4 + 0 
-■Set Variable: CSelf53[装備状態欄縦サイズ] *= CSelf96[パーティ人数] + 0 
-■Set Variable: CSelf53[装備状態欄縦サイズ] += 15 + 0 
+■Load DB(Var):  CSelf96[Party Size] = VarDB[ "Base System Variables":"Current Party Size":0 ] (18:4:Number) 
+■Set Variable: CSelf50[Equip Status X] = 205 + 0 
+■Set Variable: CSelf51[Equip Status Y] = 73 + 0 
+■Set Variable: CSelf52[Equip Status Width] = 110 + 0 
+■Set Variable: CSelf53[Equip Status Height] = 4 + 0 
+■Set Variable: CSelf53[Equip Status Height] *= CSelf96[Party Size] + 0 
+■Set Variable: CSelf53[Equip Status Height] += 15 + 0 
 ■Repeat Loop [ 1 ] Times
  |▼ Universal Window coordinates
- |■Set Variable: CSelf75[万能ウィンドウ表示X] = 0 + 0 
- |■Set Variable: CSelf76[万能ウィンドウ表示Y] = 20 + 0 
- |■Set Variable: CSelf77[万能ウィンドウサイズX] = 200 + 0 
- |■Set Variable: CSelf78[万能ウィンドウ表示Y] = 190 + 0 
- |■Set Variable: CSelf79[万能ウィンドウ説明欄縦サイズ] = 28 + 0 
- |■Set Variable: CSelf75[万能ウィンドウ表示X] *= CSelf88[座標倍率X[x10]] + 0 
- |■Set Variable: CSelf76[万能ウィンドウ表示Y] *= CSelf89[座標倍率Y[x10]] + 0 
- |■Set Variable: CSelf77[万能ウィンドウサイズX] *= CSelf88[座標倍率X[x10]] + 0 
- |■Set Variable: CSelf78[万能ウィンドウ表示Y] *= CSelf89[座標倍率Y[x10]] + 0 
- |■Set Variable: CSelf79[万能ウィンドウ説明欄縦サイズ] *= CSelf89[座標倍率Y[x10]] + 0 
- |■Set Variable: CSelf75[万能ウィンドウ表示X] to CSelf79[万能ウィンドウ説明欄縦サイズ] /= 10 + 0 
+ |■Set Variable: CSelf75[Universal Window X] = 0 + 0 
+ |■Set Variable: CSelf76[Universal Window Y] = 20 + 0 
+ |■Set Variable: CSelf77[Universal Window Width] = 200 + 0 
+ |■Set Variable: CSelf78[Universal Window Height] = 190 + 0 
+ |■Set Variable: CSelf79[Universal Window Description Height] = 28 + 0 
+ |■Set Variable: CSelf75[Universal Window X] *= CSelf88[Coordinate Scale X (x10)] + 0 
+ |■Set Variable: CSelf76[Universal Window Y] *= CSelf89[Coordinate Scale Y (x10)] + 0 
+ |■Set Variable: CSelf77[Universal Window Width] *= CSelf88[Coordinate Scale X (x10)] + 0 
+ |■Set Variable: CSelf78[Universal Window Height] *= CSelf89[Coordinate Scale Y (x10)] + 0 
+ |■Set Variable: CSelf79[Universal Window Description Height] *= CSelf89[Coordinate Scale Y (x10)] + 0 
+ |■Set Variable: CSelf75[Universal Window X] to CSelf79[Universal Window Description Height] /= 10 + 0 
  |▼ Set them
- |■Write to DB(Var): VarDB[ "Base System Variables":9:0 ] (18:Universal Window Display X:Number) =  CSelf75[万能ウィンドウ表示X]
- |■Write to DB(Var): VarDB[ "Base System Variables":10:0 ] (18:Universal Window Display Y:Number) =  CSelf76[万能ウィンドウ表示Y]
- |■Write to DB(Var): VarDB[ "Base System Variables":11:0 ] (18:Universal Window Width:Number) =  CSelf77[万能ウィンドウサイズX]
- |■Write to DB(Var): VarDB[ "Base System Variables":12:0 ] (18:Universal Window Height:Number) =  CSelf78[万能ウィンドウ表示Y]
+ |■Write to DB(Var): VarDB[ "Base System Variables":9:0 ] (18:Universal Window Display X:Number) =  CSelf75[Universal Window X]
+ |■Write to DB(Var): VarDB[ "Base System Variables":10:0 ] (18:Universal Window Display Y:Number) =  CSelf76[Universal Window Y]
+ |■Write to DB(Var): VarDB[ "Base System Variables":11:0 ] (18:Universal Window Width:Number) =  CSelf77[Universal Window Width]
+ |■Write to DB(Var): VarDB[ "Base System Variables":12:0 ] (18:Universal Window Height:Number) =  CSelf78[Universal Window Height]
  |■Write to DB(Var): VarDB[ "Base System Variables":13:0 ] (18:Universal Window Columns:Number) =  1
  |■Write to DB(Var): VarDB[ "Base System Variables":14:0 ] (18:Universal Window Rows:Number) =  13
- |■Write to DB(Var): VarDB[ "Base System Variables":16:0 ] (18:Universal Window Description Height:Number) =  CSelf79[万能ウィンドウ説明欄縦サイズ]
+ |■Write to DB(Var): VarDB[ "Base System Variables":16:0 ] (18:Universal Window Description Height:Number) =  CSelf79[Universal Window Description Height]
  |■
 ◇Loop End Point◇◇
 ▼ Apply coordinate scaling
-■Set Variable: CSelf22[上部欄表示X] *= CSelf88[座標倍率X[x10]] + 0 
-■Set Variable: CSelf23[上部欄表示Y] *= CSelf89[座標倍率Y[x10]] + 0 
-■Set Variable: CSelf24[上部欄横サイズ] *= CSelf88[座標倍率X[x10]] + 0 
-■Set Variable: CSelf25[上部欄縦サイズ] *= CSelf89[座標倍率Y[x10]] + 0 
-■Set Variable: CSelf22[上部欄表示X] to CSelf25[上部欄縦サイズ] /= 10 + 0 
-■Set Variable: CSelf30[お金欄X] *= CSelf88[座標倍率X[x10]] + 0 
-■Set Variable: CSelf31[お金欄Y] *= CSelf89[座標倍率Y[x10]] + 0 
-■Set Variable: CSelf32[お金欄横サイズ] *= CSelf88[座標倍率X[x10]] + 0 
-■Set Variable: CSelf33[お金欄縦サイズ] *= CSelf89[座標倍率Y[x10]] + 0 
-■Set Variable: CSelf30[お金欄X] to CSelf33[お金欄縦サイズ] /= 10 + 0 
-■Set Variable: CSelf46[上部欄　[購入]シフト量] to CSelf48[上部欄　カーソル横サイズ] *= CSelf88[座標倍率X[x10]] + 0 
-■Set Variable: CSelf46[上部欄　[購入]シフト量] to CSelf48[上部欄　カーソル横サイズ] /= 10 + 0 
-■Set Variable: CSelf50[装備状態欄X] *= CSelf88[座標倍率X[x10]] + 0 
-■Set Variable: CSelf51[装備状態欄Y] *= CSelf89[座標倍率Y[x10]] + 0 
-■Set Variable: CSelf52[装備状態欄横サイズ] *= CSelf88[座標倍率X[x10]] + 0 
-■Set Variable: CSelf53[装備状態欄縦サイズ] *= CSelf89[座標倍率Y[x10]] + 0 
-■Set Variable: CSelf50[装備状態欄X] to CSelf53[装備状態欄縦サイズ] /= 10 + 0 
-■Set Variable: CSelf53[装備状態欄縦サイズ] += CSelf18[ミニフォントサイズ] * CSelf96[パーティ人数] 
-■Set Variable: CSelf63[キャラ名位置Y] *= CSelf89[座標倍率Y[x10]] + 0 
-■Set Variable: CSelf64[肩書き位置X] *= CSelf88[座標倍率X[x10]] + 0 
-■Set Variable: CSelf65[肩書き位置Y] *= CSelf89[座標倍率Y[x10]] + 0 
-■Set Variable: CSelf66[HP位置X] *= CSelf88[座標倍率X[x10]] + 0 
-■Set Variable: CSelf67[HP位置Y] *= CSelf89[座標倍率Y[x10]] + 0 
-■Set Variable: CSelf68[SP位置X] *= CSelf88[座標倍率X[x10]] + 0 
-■Set Variable: CSelf69[SP位置Y] *= CSelf89[座標倍率Y[x10]] + 0 
-■Set Variable: CSelf70[所持数欄表示X] *= CSelf88[座標倍率X[x10]] + 0 
-■Set Variable: CSelf71[所持数欄表示Y] *= CSelf89[座標倍率Y[x10]] + 0 
-■Set Variable: CSelf72[所持数欄サイズX] *= CSelf88[座標倍率X[x10]] + 0 
-■Set Variable: CSelf73[所持数欄サイズY] *= CSelf89[座標倍率Y[x10]] + 0 
-■Set Variable: CSelf63[キャラ名位置Y] to CSelf73[所持数欄サイズY] /= 10 + 0 
-■Set Variable: CSelf80[全ゲージ太さ] *= CSelf89[座標倍率Y[x10]] + 0 
-■Set Variable: CSelf81[HP・SPゲージ長] *= CSelf88[座標倍率X[x10]] + 0 
-■Set Variable: CSelf80[全ゲージ太さ] to CSelf81[HP・SPゲージ長] /= 10 + 0 
+■Set Variable: CSelf22[Top Box X] *= CSelf88[Coordinate Scale X (x10)] + 0 
+■Set Variable: CSelf23[Top Box Y] *= CSelf89[Coordinate Scale Y (x10)] + 0 
+■Set Variable: CSelf24[Top Box Width] *= CSelf88[Coordinate Scale X (x10)] + 0 
+■Set Variable: CSelf25[Top Box Height] *= CSelf89[Coordinate Scale Y (x10)] + 0 
+■Set Variable: CSelf22[Top Box X] to CSelf25[Top Box Height] /= 10 + 0 
+■Set Variable: CSelf30[Money Box X] *= CSelf88[Coordinate Scale X (x10)] + 0 
+■Set Variable: CSelf31[Money Box Y] *= CSelf89[Coordinate Scale Y (x10)] + 0 
+■Set Variable: CSelf32[Money Box Width] *= CSelf88[Coordinate Scale X (x10)] + 0 
+■Set Variable: CSelf33[Money Box Height] *= CSelf89[Coordinate Scale Y (x10)] + 0 
+■Set Variable: CSelf30[Money Box X] to CSelf33[Money Box Height] /= 10 + 0 
+■Set Variable: CSelf46[Top Box Buy Offset] to CSelf48[Top Box Cursor Width] *= CSelf88[Coordinate Scale X (x10)] + 0 
+■Set Variable: CSelf46[Top Box Buy Offset] to CSelf48[Top Box Cursor Width] /= 10 + 0 
+■Set Variable: CSelf50[Equip Status X] *= CSelf88[Coordinate Scale X (x10)] + 0 
+■Set Variable: CSelf51[Equip Status Y] *= CSelf89[Coordinate Scale Y (x10)] + 0 
+■Set Variable: CSelf52[Equip Status Width] *= CSelf88[Coordinate Scale X (x10)] + 0 
+■Set Variable: CSelf53[Equip Status Height] *= CSelf89[Coordinate Scale Y (x10)] + 0 
+■Set Variable: CSelf50[Equip Status X] to CSelf53[Equip Status Height] /= 10 + 0 
+■Set Variable: CSelf53[Equip Status Height] += CSelf18[Small Font Size] * CSelf96[Party Size] 
+■Set Variable: CSelf63[Character Name Y] *= CSelf89[Coordinate Scale Y (x10)] + 0 
+■Set Variable: CSelf64[Character Title X] *= CSelf88[Coordinate Scale X (x10)] + 0 
+■Set Variable: CSelf65[Character Title Y] *= CSelf89[Coordinate Scale Y (x10)] + 0 
+■Set Variable: CSelf66[HP X] *= CSelf88[Coordinate Scale X (x10)] + 0 
+■Set Variable: CSelf67[HP Y] *= CSelf89[Coordinate Scale Y (x10)] + 0 
+■Set Variable: CSelf68[SP X] *= CSelf88[Coordinate Scale X (x10)] + 0 
+■Set Variable: CSelf69[SP Y] *= CSelf89[Coordinate Scale Y (x10)] + 0 
+■Set Variable: CSelf70[Quantity Box X] *= CSelf88[Coordinate Scale X (x10)] + 0 
+■Set Variable: CSelf71[Quantity Box Y] *= CSelf89[Coordinate Scale Y (x10)] + 0 
+■Set Variable: CSelf72[Quantity Box Width] *= CSelf88[Coordinate Scale X (x10)] + 0 
+■Set Variable: CSelf73[Quantity Box Height] *= CSelf89[Coordinate Scale Y (x10)] + 0 
+■Set Variable: CSelf63[Character Name Y] to CSelf73[Quantity Box Height] /= 10 + 0 
+■Set Variable: CSelf80[All Gauge Thickness] *= CSelf89[Coordinate Scale Y (x10)] + 0 
+■Set Variable: CSelf81[HP/SP Gauge Length] *= CSelf88[Coordinate Scale X (x10)] + 0 
+■Set Variable: CSelf80[All Gauge Thickness] to CSelf81[HP/SP Gauge Length] /= 10 + 0 
 ▼ Initialize
-■Set Variable: CSelf29[全更新フラグ] = 0 + 0 
+■Set Variable: CSelf29[Full Update Flag] = 0 + 0 
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼   Start main processing here
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-■Condition (Number):   [1] CSelf0[処理モード] ==  3  
--◇Condition:  [1]  [ CSelf0[処理モード] == 3   ] Case↓
+■Condition (Number):   [1] CSelf0[Mode] ==  3  
+-◇Condition:  [1]  [ CSelf0[Mode] == 3   ] Case↓
  |■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / 0:Display / -1 / 2:Display at Bottom, Full Width / 0:None
- |■Set Variable: CSelf0[処理モード] = 1 + 0 
+ |■Set Variable: CSelf0[Mode] = 1 + 0 
  |■
 ◇End◇
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-■Condition (Number):   [1] CSelf0[処理モード] ==  -1  
--◇Condition:  [1]  [ CSelf0[処理モード] == -1   ] Case↓
+■Condition (Number):   [1] CSelf0[Mode] ==  -1  
+-◇Condition:  [1]  [ CSelf0[Mode] == -1   ] Case↓
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |▼ "Erase" Mode
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |▼ Erase only the background individually
- |■Picture [Reset Delay]: CSelf20[基本ピクチャ番号] 
- |■Picture Erase: CSelf20[基本ピクチャ番号]  / 10(0) Frames
+ |■Picture [Reset Delay]: CSelf20[Base Picture ID] 
+ |■Picture Erase: CSelf20[Base Picture ID]  / 10(0) Frames
  |▼ Erase other pictures by sliding them to the right
- |■Set Variable: CSelf11[一時変数B] = CSelf20[基本ピクチャ番号] + 1 
- |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 80 
- |■Picture [Reset Delay]: CSelf11[一時変数B] to CSelf21[一時ピクチャ番号] 
- |■Set Variable: CSelf10[一時変数A] = 120 * CSelf88[座標倍率X[x10]] 
- |■Set Variable: CSelf10[一時変数A] /= 10 + 0 
- |■Picture Move: CSelf11[一時変数B] to CSelf21[一時ピクチャ番号]  Relative X:CSelf10[一時変数A] Y:0 / 7(0) Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
- |■Picture Erase: CSelf11[一時変数B] to CSelf21[一時ピクチャ番号]  / 0(7) Frames
+ |■Set Variable: CSelf11[Temp Variable B] = CSelf20[Base Picture ID] + 1 
+ |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 80 
+ |■Picture [Reset Delay]: CSelf11[Temp Variable B] to CSelf21[Temp Picture ID] 
+ |■Set Variable: CSelf10[Temp Variable A] = 120 * CSelf88[Coordinate Scale X (x10)] 
+ |■Set Variable: CSelf10[Temp Variable A] /= 10 + 0 
+ |■Picture Move: CSelf11[Temp Variable B] to CSelf21[Temp Picture ID]  Relative X:CSelf10[Temp Variable A] Y:0 / 7(0) Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
+ |■Picture Erase: CSelf11[Temp Variable B] to CSelf21[Temp Picture ID]  / 0(7) Frames
  |■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / -1:Erase / -1 / 2:Display at Bottom, Full Width / 1:Expand from Top-Left
  |■Exit Event
  |■
 ◇End◇
-■Condition (Number):   [1] CSelf0[処理モード] >=  0  
--◇Condition:  [1]  [ CSelf0[処理モード] >= 0   ] Case↓
- |■Condition (Number):   [1] CSelf0[処理モード] <=  1  
- |-◇Condition:  [1]  [ CSelf0[処理モード] <= 1   ] Case↓
+■Condition (Number):   [1] CSelf0[Mode] >=  0  
+-◇Condition:  [1]  [ CSelf0[Mode] >= 0   ] Case↓
+ |■Condition (Number):   [1] CSelf0[Mode] <=  1  
+ |-◇Condition:  [1]  [ CSelf0[Mode] <= 1   ] Case↓
  | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  | |▼ "Display" Mode
  | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- | |■Set Variable: CSelf57[初期表示？(1=YES)] = 0 + 0 
- | |■Condition (Number):   [1] CSelf0[処理モード] ==  0  
- | |-◇Condition:  [1]  [ CSelf0[処理モード] == 0   ] Case↓
+ | |■Set Variable: CSelf57[Initial Display? (1:Yes)] = 0 + 0 
+ | |■Condition (Number):   [1] CSelf0[Mode] ==  0  
+ | |-◇Condition:  [1]  [ CSelf0[Mode] == 0   ] Case↓
  | | |▼ ●Initialization mode
  | | |▼ If initial display, store 1 (used as a flag for processing)
- | | |■Set Variable: CSelf57[初期表示？(1=YES)] = 1 + 0 
+ | | |■Set Variable: CSelf57[Initial Display? (1:Yes)] = 1 + 0 
  | | |▼ Display the Universal Window
  | | |■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / 0:Display / -1 / 2:Display at Bottom, Full Width / 1:Expand from Top-Left
  | | |■
@@ -898,110 +898,110 @@ WoditorEvCOMMAND_END
  | | |■
  | |◇End◇
  | |▼ Get a display parameter
- | |■Load DB(Var):  CSelf95[所持金] = VarDB[ "Party":0:"Current Money" ] (6:Main Settings:0) 
+ | |■Load DB(Var):  CSelf95[Money] = VarDB[ "Party":0:"Current Money" ] (6:Main Settings:0) 
  | |▼  
- | |■Repeat Loop [ CSelf57[初期表示？(1=YES)] ] Times
+ | |■Repeat Loop [ CSelf57[Initial Display? (1:Yes)] ] Times
  | | |▼ Background
- | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 0 
- | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | |■Set Variable: CSelf10[一時変数A] = CSelf88[座標倍率X[x10]] * 32 
- | | |■Set Variable: CSelf11[一時変数B] = CSelf89[座標倍率Y[x10]] * 24 
- | | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] Window [<GRADY-779-111>] Size [CSelf10[一時変数A],CSelf11[一時変数B]] X:0 Y:0 / 10(0) Frames  / Pattern 1 / Opacity 255 / Multiply  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
+ | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 0 
+ | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
+ | | |■Set Variable: CSelf10[Temp Variable A] = CSelf88[Coordinate Scale X (x10)] * 32 
+ | | |■Set Variable: CSelf11[Temp Variable B] = CSelf89[Coordinate Scale Y (x10)] * 24 
+ | | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] Window [<GRADY-779-111>] Size [CSelf10[Temp Variable A],CSelf11[Temp Variable B]] X:0 Y:0 / 10(0) Frames  / Pattern 1 / Opacity 255 / Multiply  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  | | |■
  | |◇Loop End Point◇◇
  | |▼  
  | |■Repeat Loop [ 1 ] Times
  | | |■ Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
  | | |▼ Display the Buy/Sell window
- | | |■Repeat Loop [ CSelf57[初期表示？(1=YES)] ] Times
- | | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 1 
- | | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] Window (CSelf8[ウィンドウ画像ファイル]) Size [CSelf24[上部欄横サイズ],CSelf25[上部欄縦サイズ]] X:CSelf22[上部欄表示X] Y:CSelf23[上部欄表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
+ | | |■Repeat Loop [ CSelf57[Initial Display? (1:Yes)] ] Times
+ | | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 1 
+ | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
+ | | | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] Window (CSelf8[Window Image File]) Size [CSelf24[Top Box Width],CSelf25[Top Box Height]] X:CSelf22[Top Box X] Y:CSelf23[Top Box Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  | | | |■Repeat Loop [ 1 ] Times
- | | | | |▼ Animate the pictures (using the Move command)
+ | | | | |▼ Animate the pictures (using the Picture Move command)
  | | | | |▼ Shift the initial position
- | | | | |■Set Variable: CSelf41[一時項目表示X] = CSelf22[上部欄表示X] + 0 
- | | | | |■Set Variable: CSelf42[一時項目表示Y] = CSelf23[上部欄表示Y] + 0 
- | | | | |■Set Variable: CSelf44[一時項目表示X2] = CSelf22[上部欄表示X] - CSelf24[上部欄横サイズ] 
- | | | | |■Set Variable: CSelf45[一時項目表示Y2] = CSelf42[一時項目表示Y] + 0 
- | | | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf44[一時項目表示X2] Y:CSelf45[一時項目表示Y2] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
+ | | | | |■Set Variable: CSelf41[Temp Item X] = CSelf22[Top Box X] + 0 
+ | | | | |■Set Variable: CSelf42[Temp Item Y] = CSelf23[Top Box Y] + 0 
+ | | | | |■Set Variable: CSelf44[Temp Item X 2] = CSelf22[Top Box X] - CSelf24[Top Box Width] 
+ | | | | |■Set Variable: CSelf45[Temp Item Y 2] = CSelf42[Temp Item Y] + 0 
+ | | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
+ | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf44[Temp Item X 2] Y:CSelf45[Temp Item Y 2] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
  | | | | |▼  Inertial movement
- | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
- | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(3) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
- | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(5) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
+ | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
+ | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(3) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
+ | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(5) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
  | | | | |■
  | | | |◇Loop End Point◇◇
  | | | |▼  
  | | | |▼  
  | | | |▼ Display the contents
- | | | |■Set Variable: CSelf13[一時変数D] = CSelf24[上部欄横サイズ] - CSelf88[座標倍率X[x10]] 
+ | | | |■Set Variable: CSelf13[Temp Variable D] = CSelf24[Top Box Width] - CSelf88[Coordinate Scale X (x10)] 
  | | | |■Condition (Number):   [1] Sys84:Screen Resolution (0-2, -1:Other) ==  0  
  | | | |-◇Condition:  [1]  [ Sys84:Screen Resolution (0-2, -1:Other) == 0   ] Case↓
- | | | | |■Set Variable: CSelf13[一時変数D] *= 2 + 0 
+ | | | | |■Set Variable: CSelf13[Temp Variable D] *= 2 + 0 
  | | | | |■
  | | | |◇End◇
  | | | |▼ "Buy" Label & Buy Cursor
- | | | |■Set String: CSelf6[メイン表示用] = "\f[\cself[19]]Buy"
- | | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 4 
- | | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] String [\cself[6]] X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
- | | | |■Condition (Number):   [1] CSelf0[処理モード] ==  0  
- | | | |-◇Condition:  [1]  [ CSelf0[処理モード] == 0   ] Case↓
- | | | | |■Condition (Number):   [1] CSelf1[[2]カーソル位置] ==  -11  
- | | | | |-◇Condition:  [1]  [ CSelf1[[2]カーソル位置] == -11   ] Case↓
- | | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0) Frames  / Pattern 1 / Opacity 128 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
+ | | | |■Set String: CSelf6[Main Display] = "\f[\cself[19]]Buy"
+ | | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 4 
+ | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
+ | | | |■Picture Show: CSelf21[Temp Picture ID] [Center] String [\cself[6]] X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
+ | | | |■Condition (Number):   [1] CSelf0[Mode] ==  0  
+ | | | |-◇Condition:  [1]  [ CSelf0[Mode] == 0   ] Case↓
+ | | | | |■Condition (Number):   [1] CSelf1[[2]Cursor Position] ==  -11  
+ | | | | |-◇Condition:  [1]  [ CSelf1[[2]Cursor Position] == -11   ] Case↓
+ | | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 0(0) Frames  / Pattern 1 / Opacity 128 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  | | | | | |■
  | | | | |◇End◇
  | | | | |■
  | | | |◇End◇
- | | | |■Set Variable: CSelf12[一時変数C] = CSelf19[基本フォントサイズ] / 2 
- | | | |■Set Variable: CSelf12[一時変数C] += CSelf89[座標倍率Y[x10]] / 2 
- | | | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf46[上部欄　[購入]シフト量] / Shift Y CSelf12[一時変数C]  [0] Frames
+ | | | |■Set Variable: CSelf12[Temp Variable C] = CSelf19[Base Font Size] / 2 
+ | | | |■Set Variable: CSelf12[Temp Variable C] += CSelf89[Coordinate Scale Y (x10)] / 2 
+ | | | |■Effect Picture: CSelf21[Temp Picture ID] [Shift Position (Final Value)] Shift X CSelf46[Top Box Buy Offset] / Shift Y CSelf12[Temp Variable C]  [0] Frames
  | | | |▼   Cursor
- | | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 2 
- | | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] Window (CSelf9[カーソル画像ファイル]) Size [CSelf48[上部欄　カーソル横サイズ],CSelf19[基本フォントサイズ]] X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0) Frames  / Pattern 1 / Opacity 0 / Add  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
- | | | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf46[上部欄　[購入]シフト量] / Shift Y CSelf12[一時変数C]  [0] Frames
+ | | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 2 
+ | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
+ | | | |■Picture Show: CSelf21[Temp Picture ID] [Center] Window (CSelf9[Cursor Image File]) Size [CSelf48[Top Box Cursor Width],CSelf19[Base Font Size]] X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 0(0) Frames  / Pattern 1 / Opacity 0 / Add  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
+ | | | |■Effect Picture: CSelf21[Temp Picture ID] [Shift Position (Final Value)] Shift X CSelf46[Top Box Buy Offset] / Shift Y CSelf12[Temp Variable C]  [0] Frames
  | | | |▼  
  | | | |▼ "Sell" Label & Sell Cursor
- | | | |■Set String: CSelf6[メイン表示用] = "\f[\cself[19]]Sell"
- | | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 5 
- | | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] String [\cself[6]] X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
- | | | |■Condition (Number):   [1] CSelf0[処理モード] ==  0  
- | | | |-◇Condition:  [1]  [ CSelf0[処理モード] == 0   ] Case↓
- | | | | |■Condition (Number):   [1] CSelf1[[2]カーソル位置] ==  -10  
- | | | | |-◇Condition:  [1]  [ CSelf1[[2]カーソル位置] == -10   ] Case↓
- | | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0) Frames  / Pattern 1 / Opacity 128 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
+ | | | |■Set String: CSelf6[Main Display] = "\f[\cself[19]]Sell"
+ | | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 5 
+ | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
+ | | | |■Picture Show: CSelf21[Temp Picture ID] [Center] String [\cself[6]] X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
+ | | | |■Condition (Number):   [1] CSelf0[Mode] ==  0  
+ | | | |-◇Condition:  [1]  [ CSelf0[Mode] == 0   ] Case↓
+ | | | | |■Condition (Number):   [1] CSelf1[[2]Cursor Position] ==  -10  
+ | | | | |-◇Condition:  [1]  [ CSelf1[[2]Cursor Position] == -10   ] Case↓
+ | | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 0(0) Frames  / Pattern 1 / Opacity 128 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  | | | | | |■
  | | | | |◇End◇
  | | | | |■
  | | | |◇End◇
- | | | |■Set Variable: CSelf12[一時変数C] = CSelf19[基本フォントサイズ] / 2 
- | | | |■Set Variable: CSelf12[一時変数C] += CSelf89[座標倍率Y[x10]] / 2 
- | | | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf47[上部欄　[売却]シフト量] / Shift Y CSelf12[一時変数C]  [0] Frames
+ | | | |■Set Variable: CSelf12[Temp Variable C] = CSelf19[Base Font Size] / 2 
+ | | | |■Set Variable: CSelf12[Temp Variable C] += CSelf89[Coordinate Scale Y (x10)] / 2 
+ | | | |■Effect Picture: CSelf21[Temp Picture ID] [Shift Position (Final Value)] Shift X CSelf47[Top Box Sell Offset] / Shift Y CSelf12[Temp Variable C]  [0] Frames
  | | | |▼   Cursor
- | | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 3 
- | | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] Window (CSelf9[カーソル画像ファイル]) Size [CSelf48[上部欄　カーソル横サイズ],CSelf19[基本フォントサイズ]] X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0) Frames  / Pattern 1 / Opacity 0 / Add  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
- | | | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf47[上部欄　[売却]シフト量] / Shift Y CSelf12[一時変数C]  [0] Frames
+ | | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 3 
+ | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
+ | | | |■Picture Show: CSelf21[Temp Picture ID] [Center] Window (CSelf9[Cursor Image File]) Size [CSelf48[Top Box Cursor Width],CSelf19[Base Font Size]] X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 0(0) Frames  / Pattern 1 / Opacity 0 / Add  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
+ | | | |■Effect Picture: CSelf21[Temp Picture ID] [Shift Position (Final Value)] Shift X CSelf47[Top Box Sell Offset] / Shift Y CSelf12[Temp Variable C]  [0] Frames
  | | | |■
  | | |◇Loop End Point◇◇
  | | |▼  
- | | |■Repeat Loop [ CSelf57[初期表示？(1=YES)] ] Times
- | | | |▼ Animate the pictures (using the Move command)
- | | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 1 
- | | | |■Set Variable: CSelf26[一時ピクチャ2] = CSelf21[一時ピクチャ番号] + 5 
+ | | |■Repeat Loop [ CSelf57[Initial Display? (1:Yes)] ] Times
+ | | | |▼ Animate the pictures (using the Picture Move command)
+ | | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 1 
+ | | | |■Set Variable: CSelf26[Temp Picture ID 2] = CSelf21[Temp Picture ID] + 5 
  | | | |▼ Shift the initial position
- | | | |■Set Variable: CSelf44[一時項目表示X2] = CSelf22[上部欄表示X] - CSelf24[上部欄横サイズ] 
- | | | |■Set Variable: CSelf45[一時項目表示Y2] = CSelf42[一時項目表示Y] + 0 
- | | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] to CSelf26[一時ピクチャ2] 
- | | | |■Picture Move: CSelf21[一時ピクチャ番号] to CSelf26[一時ピクチャ2]  X:CSelf44[一時項目表示X2] Y:CSelf45[一時項目表示Y2] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle 0 / Scale Same / Color R[100] G[100] B[100]
+ | | | |■Set Variable: CSelf44[Temp Item X 2] = CSelf22[Top Box X] - CSelf24[Top Box Width] 
+ | | | |■Set Variable: CSelf45[Temp Item Y 2] = CSelf42[Temp Item Y] + 0 
+ | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] to CSelf26[Temp Picture ID 2] 
+ | | | |■Picture Move: CSelf21[Temp Picture ID] to CSelf26[Temp Picture ID 2]  X:CSelf44[Temp Item X 2] Y:CSelf45[Temp Item Y 2] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | | |▼ Inertial movement
- | | | |■Picture Move: CSelf21[一時ピクチャ番号] to CSelf26[一時ピクチャ2]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle 0 / Scale Same / Color R[100] G[100] B[100]
- | | | |■Picture Move: CSelf21[一時ピクチャ番号] to CSelf26[一時ピクチャ2]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(3) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color R[100] G[100] B[100]
- | | | |■Picture Move: CSelf21[一時ピクチャ番号] to CSelf26[一時ピクチャ2]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(5) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color R[100] G[100] B[100]
+ | | | |■Picture Move: CSelf21[Temp Picture ID] to CSelf26[Temp Picture ID 2]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle 0 / Scale Same / Color R[100] G[100] B[100]
+ | | | |■Picture Move: CSelf21[Temp Picture ID] to CSelf26[Temp Picture ID 2]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(3) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color R[100] G[100] B[100]
+ | | | |■Picture Move: CSelf21[Temp Picture ID] to CSelf26[Temp Picture ID 2]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(5) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color R[100] G[100] B[100]
  | | | |■
  | | |◇Loop End Point◇◇
  | | |▼ Display processing ends here
@@ -1011,62 +1011,62 @@ WoditorEvCOMMAND_END
  | |■Repeat Loop [ 1 ] Times
  | | |■ Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
  | | |▼ Display the money window
- | | |■Set Variable: CSelf41[一時項目表示X] = CSelf30[お金欄X] + 0 
- | | |■Set Variable: CSelf42[一時項目表示Y] = CSelf31[お金欄Y] + 0 
- | | |■Set Variable: CSelf44[一時項目表示X2] = CSelf30[お金欄X] - CSelf32[お金欄横サイズ] 
- | | |■Set Variable: CSelf45[一時項目表示Y2] = CSelf42[一時項目表示Y] + 0 
- | | |■Repeat Loop [ CSelf57[初期表示？(1=YES)] ] Times
- | | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 10 
- | | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] Window (CSelf8[ウィンドウ画像ファイル]) Size [CSelf32[お金欄横サイズ],CSelf33[お金欄縦サイズ]] X:CSelf30[お金欄X] Y:CSelf31[お金欄Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
+ | | |■Set Variable: CSelf41[Temp Item X] = CSelf30[Money Box X] + 0 
+ | | |■Set Variable: CSelf42[Temp Item Y] = CSelf31[Money Box Y] + 0 
+ | | |■Set Variable: CSelf44[Temp Item X 2] = CSelf30[Money Box X] - CSelf32[Money Box Width] 
+ | | |■Set Variable: CSelf45[Temp Item Y 2] = CSelf42[Temp Item Y] + 0 
+ | | |■Repeat Loop [ CSelf57[Initial Display? (1:Yes)] ] Times
+ | | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 10 
+ | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
+ | | | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] Window (CSelf8[Window Image File]) Size [CSelf32[Money Box Width],CSelf33[Money Box Height]] X:CSelf30[Money Box X] Y:CSelf31[Money Box Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  | | | |■Repeat Loop [ 1 ] Times
- | | | | |▼ Animate the pictures (using the Move command)
+ | | | | |▼ Animate the pictures (using the Picture Move command)
  | | | | |▼ Shift the initial position
- | | | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf44[一時項目表示X2] Y:CSelf45[一時項目表示Y2] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
+ | | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
+ | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf44[Temp Item X 2] Y:CSelf45[Temp Item Y 2] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
  | | | | |▼ Inertial movement
- | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
- | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(3) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
- | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(5) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
+ | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
+ | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(3) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
+ | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(5) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
  | | | | |■
  | | | |◇Loop End Point◇◇
  | | | |■
  | | |◇Loop End Point◇◇
  | | |▼ Display the contents
- | | |■Set Variable: CSelf13[一時変数D] = CSelf32[お金欄横サイズ] - CSelf88[座標倍率X[x10]] 
+ | | |■Set Variable: CSelf13[Temp Variable D] = CSelf32[Money Box Width] - CSelf88[Coordinate Scale X (x10)] 
  | | |■Condition (Number):   [1] Sys115:[RO] Game.exe Version (x100) <  300  /  [2] Sys115:[RO] Game.exe Version (x100) >=  300  
  | | |-◇Condition:  [1]  [ Sys115:[RO] Game.exe Version (x100) < 300   ] Case↓
  | | | |■Condition (Number):   [1] Sys84:Screen Resolution (0-2, -1:Other) ==  0  
  | | | |-◇Condition:  [1]  [ Sys84:Screen Resolution (0-2, -1:Other) == 0   ] Case↓
  | | | | |▼ Double-scaling required only for 320x240 resolution (due to \ax[X])
- | | | | |■Set Variable: CSelf13[一時変数D] *= 2 + 0 
+ | | | | |■Set Variable: CSelf13[Temp Variable D] *= 2 + 0 
  | | | | |■
  | | | |◇End◇
  | | | |■
  | | |-◇Condition:  [2]  [ Sys115:[RO] Game.exe Version (x100) >= 300   ] Case↓
- | | | |▼ From version 3.00 onward, adjust using Sys119 Screen Resolution Multiplier
- | | | |■Set Variable: CSelf13[一時変数D] *= Sys119:[RO] Screen Resolution Multiplier (1-3x) + 0 
+ | | | |▼ From version 3.00 onward, adjust using Sys119 (Screen Resolution Multiplier)
+ | | | |■Set Variable: CSelf13[Temp Variable D] *= Sys119:[RO] Screen Resolution Multiplier (1-3x) + 0 
  | | | |■
  | | |◇End◇
  | | |▼  
- | | |■Load DB(User):  CSelf7[一時文字列B] = UserDB[ "Terms":0:18 ] (15:Basic Terms:[Stats] Currency) 
- | | |■Set String: CSelf6[メイン表示用] = "\f[\cself[18]]Money\ax[\cself[13]]\n<R>\f[\cself[19]]\cself[95]\f[\cself[18]] \cself[7]"
- | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 11 
- | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] String [\cself[6]] X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
- | | |■Set Variable: CSelf12[一時変数C] = CSelf88[座標倍率X[x10]] / 2 
- | | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf12[一時変数C] / Shift Y CSelf12[一時変数C]  [0] Frames
- | | |■Repeat Loop [ CSelf57[初期表示？(1=YES)] ] Times
- | | | |▼ Animate the pictures (using the Move command)
+ | | |■Load DB(User):  CSelf7[Temp String] = UserDB[ "Terms":0:18 ] (15:Basic Terms:[Stats] Currency) 
+ | | |■Set String: CSelf6[Main Display] = "\f[\cself[18]]Money\ax[\cself[13]]\n<R>\f[\cself[19]]\cself[95]\f[\cself[18]] \cself[7]"
+ | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 11 
+ | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
+ | | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] String [\cself[6]] X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
+ | | |■Set Variable: CSelf12[Temp Variable C] = CSelf88[Coordinate Scale X (x10)] / 2 
+ | | |■Effect Picture: CSelf21[Temp Picture ID] [Shift Position (Final Value)] Shift X CSelf12[Temp Variable C] / Shift Y CSelf12[Temp Variable C]  [0] Frames
+ | | |■Repeat Loop [ CSelf57[Initial Display? (1:Yes)] ] Times
+ | | | |▼ Animate the pictures (using the Picture Move command)
  | | | |▼ Shift the initial position
- | | | |■Set Variable: CSelf44[一時項目表示X2] = CSelf30[お金欄X] - CSelf32[お金欄横サイズ] 
- | | | |■Set Variable: CSelf45[一時項目表示Y2] = CSelf42[一時項目表示Y] + 0 
- | | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf44[一時項目表示X2] Y:CSelf45[一時項目表示Y2] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
+ | | | |■Set Variable: CSelf44[Temp Item X 2] = CSelf30[Money Box X] - CSelf32[Money Box Width] 
+ | | | |■Set Variable: CSelf45[Temp Item Y 2] = CSelf42[Temp Item Y] + 0 
+ | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
+ | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf44[Temp Item X 2] Y:CSelf45[Temp Item Y 2] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | | |▼ Inertial movement
- | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
- | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(3) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
- | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(5) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
+ | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
+ | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(3) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
+ | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(5) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | | |■
  | | |◇Loop End Point◇◇
  | | |▼ Display processing ends here
@@ -1076,78 +1076,78 @@ WoditorEvCOMMAND_END
  | | |■ Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
  | | |▼ Display the owned quantity window
  | | |▼ Correct the selected position if it exceeds the number of window items
- | | |■Load DB(Var):  CSelf15[一時変数F] = VarDB[ "Base System Variables":17:"Number" ] (18:Universal Window Item Count:0) 
- | | |■Set Variable: CSelf2[商品選択位置] Upper Bound= CSelf15[一時変数F] - 1 
- | | |■Condition (Number):   [1] CSelf2[商品選択位置] >=  0  
- | | |-◇Condition:  [1]  [ CSelf2[商品選択位置] >= 0   ] Case↓
- | | | |■Load DB(Var):  CSelf97[所持数] = VarDB[ "Universal Window Items":CSelf2[商品選択位置]:"[Option] Spare Number A" ] (19:-:7) 
+ | | |■Load DB(Var):  CSelf15[Temp Variable F] = VarDB[ "Base System Variables":17:"Number" ] (18:Universal Window Item Count:0) 
+ | | |■Set Variable: CSelf2[Shop Item Index] Upper Bound= CSelf15[Temp Variable F] - 1 
+ | | |■Condition (Number):   [1] CSelf2[Shop Item Index] >=  0  
+ | | |-◇Condition:  [1]  [ CSelf2[Shop Item Index] >= 0   ] Case↓
+ | | | |■Load DB(Var):  CSelf97[Item Quantity] = VarDB[ "Universal Window Items":CSelf2[Shop Item Index]:"[Option] Spare Number A" ] (19:-:7) 
  | | | |■
  | | |-◇Else
- | | | |■Set Variable: CSelf97[所持数] = 0 + 0 
+ | | | |■Set Variable: CSelf97[Item Quantity] = 0 + 0 
  | | | |■
  | | |◇End◇
- | | |■Set Variable: CSelf41[一時項目表示X] = CSelf70[所持数欄表示X] + 0 
- | | |■Set Variable: CSelf42[一時項目表示Y] = CSelf71[所持数欄表示Y] + 0 
- | | |■Set Variable: CSelf44[一時項目表示X2] = CSelf70[所持数欄表示X] - CSelf72[所持数欄サイズX] 
- | | |■Set Variable: CSelf45[一時項目表示Y2] = CSelf42[一時項目表示Y] + 0 
- | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 20 
- | | |■Repeat Loop [ CSelf57[初期表示？(1=YES)] ] Times
- | | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] Window (CSelf8[ウィンドウ画像ファイル]) Size [CSelf72[所持数欄サイズX],CSelf73[所持数欄サイズY]] X:CSelf70[所持数欄表示X] Y:CSelf71[所持数欄表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
+ | | |■Set Variable: CSelf41[Temp Item X] = CSelf70[Quantity Box X] + 0 
+ | | |■Set Variable: CSelf42[Temp Item Y] = CSelf71[Quantity Box Y] + 0 
+ | | |■Set Variable: CSelf44[Temp Item X 2] = CSelf70[Quantity Box X] - CSelf72[Quantity Box Width] 
+ | | |■Set Variable: CSelf45[Temp Item Y 2] = CSelf42[Temp Item Y] + 0 
+ | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 20 
+ | | |■Repeat Loop [ CSelf57[Initial Display? (1:Yes)] ] Times
+ | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
+ | | | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] Window (CSelf8[Window Image File]) Size [CSelf72[Quantity Box Width],CSelf73[Quantity Box Height]] X:CSelf70[Quantity Box X] Y:CSelf71[Quantity Box Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  | | | |■Repeat Loop [ 1 ] Times
- | | | | |▼ Animate the pictures (using the Move command)
+ | | | | |▼ Animate the pictures (using the Picture Move command)
  | | | | |▼ Shift the initial position
- | | | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf44[一時項目表示X2] Y:CSelf45[一時項目表示Y2] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
+ | | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
+ | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf44[Temp Item X 2] Y:CSelf45[Temp Item Y 2] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
  | | | | |▼ Inertial movement
- | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
- | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(3) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
- | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(5) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
+ | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
+ | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(3) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
+ | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(5) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
  | | | | |■
  | | | |◇Loop End Point◇◇
  | | | |■
  | | |◇Loop End Point◇◇
  | | |▼ Display the contents
- | | |■Set Variable: CSelf13[一時変数D] = CSelf32[お金欄横サイズ] - CSelf88[座標倍率X[x10]] 
+ | | |■Set Variable: CSelf13[Temp Variable D] = CSelf32[Money Box Width] - CSelf88[Coordinate Scale X (x10)] 
  | | |■Condition (Number):   [1] Sys115:[RO] Game.exe Version (x100) <  300  /  [2] Sys115:[RO] Game.exe Version (x100) >=  300  
  | | |-◇Condition:  [1]  [ Sys115:[RO] Game.exe Version (x100) < 300   ] Case↓
  | | | |■Condition (Number):   [1] Sys84:Screen Resolution (0-2, -1:Other) ==  0  
  | | | |-◇Condition:  [1]  [ Sys84:Screen Resolution (0-2, -1:Other) == 0   ] Case↓
- | | | | |▼ 解像度が320x240の場合だけ二倍補正が必要（\ax[?]の使用上）
- | | | | |■Set Variable: CSelf13[一時変数D] *= 2 + 0 
+ | | | | |▼ Double-scaling required only for 320x240 resolution (due to \ax[X])
+ | | | | |■Set Variable: CSelf13[Temp Variable D] *= 2 + 0 
  | | | | |■
  | | | |◇End◇
  | | | |■
  | | |-◇Condition:  [2]  [ Sys115:[RO] Game.exe Version (x100) >= 300   ] Case↓
- | | | |▼ Ver3.00以降はSys119の基本画面倍率で調整　Ver3.00修正
- | | | |■Set Variable: CSelf13[一時変数D] *= Sys119:[RO] Screen Resolution Multiplier (1-3x) + 0 
+ | | | |▼ From version 3.00 onward, adjust using Sys119 (Screen Resolution Multiplier)
+ | | | |■Set Variable: CSelf13[Temp Variable D] *= Sys119:[RO] Screen Resolution Multiplier (1-3x) + 0 
  | | | |■
  | | |◇End◇
  | | |▼  
- | | |■Load DB(User):  CSelf7[一時文字列B] = UserDB[ "Terms":0:18 ] (15:Basic Terms:[Stats] Currency) 
+ | | |■Load DB(User):  CSelf7[Temp String] = UserDB[ "Terms":0:18 ] (15:Basic Terms:[Stats] Currency) 
  | | |■ [Special] Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
- | | |▼ 対象の位置番号から所持数を得る処理追加
- | | |■Set Variable: CSelf11[一時変数B] = 98765 + 0 
+ | | |▼ Added a process to get the owned quantity from the target position number (Note: This line has no effect)
+ | | |■Set Variable: CSelf11[Temp Variable B] = 98765 + 0 
  | | |■ [Special] Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
- | | |■Set String: CSelf6[メイン表示用] = "\f[\cself[19]]Owned\ax[\cself[13]]\n\ay[0]<R>\f[\cself[19]]\cself[97]"
- | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 21 
- | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] String [\cself[6]] X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
- | | |■Set Variable: CSelf12[一時変数C] = CSelf88[座標倍率X[x10]] / 2 
- | | |■Set Variable: CSelf13[一時変数D] = CSelf89[座標倍率Y[x10]] / 2 
- | | |■Set Variable: CSelf13[一時変数D] += CSelf89[座標倍率Y[x10]] / 3 
- | | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf12[一時変数C] / Shift Y CSelf13[一時変数D]  [0] Frames
- | | |■Repeat Loop [ CSelf57[初期表示？(1=YES)] ] Times
- | | | |▼ Animate the pictures (using the Move command)
+ | | |■Set String: CSelf6[Main Display] = "\f[\cself[19]]Owned\ax[\cself[13]]\n\ay[0]<R>\f[\cself[19]]\cself[97]"
+ | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 21 
+ | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
+ | | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] String [\cself[6]] X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
+ | | |■Set Variable: CSelf12[Temp Variable C] = CSelf88[Coordinate Scale X (x10)] / 2 
+ | | |■Set Variable: CSelf13[Temp Variable D] = CSelf89[Coordinate Scale Y (x10)] / 2 
+ | | |■Set Variable: CSelf13[Temp Variable D] += CSelf89[Coordinate Scale Y (x10)] / 3 
+ | | |■Effect Picture: CSelf21[Temp Picture ID] [Shift Position (Final Value)] Shift X CSelf12[Temp Variable C] / Shift Y CSelf13[Temp Variable D]  [0] Frames
+ | | |■Repeat Loop [ CSelf57[Initial Display? (1:Yes)] ] Times
+ | | | |▼ Animate the pictures (using the Picture Move command)
  | | | |▼ Shift the initial position
- | | | |■Set Variable: CSelf44[一時項目表示X2] = CSelf70[所持数欄表示X] - CSelf72[所持数欄サイズX] 
- | | | |■Set Variable: CSelf45[一時項目表示Y2] = CSelf42[一時項目表示Y] + 0 
- | | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf44[一時項目表示X2] Y:CSelf45[一時項目表示Y2] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
+ | | | |■Set Variable: CSelf44[Temp Item X 2] = CSelf70[Quantity Box X] - CSelf72[Quantity Box Width] 
+ | | | |■Set Variable: CSelf45[Temp Item Y 2] = CSelf42[Temp Item Y] + 0 
+ | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
+ | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf44[Temp Item X 2] Y:CSelf45[Temp Item Y 2] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | | |▼ Inertial movement
- | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
- | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(3) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
- | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(5) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
+ | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
+ | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(3) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
+ | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(5) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | | |■
  | | |◇Loop End Point◇◇
  | | |▼ Display processing ends here
@@ -1156,75 +1156,75 @@ WoditorEvCOMMAND_END
  | |▼  
  | |■Repeat Loop [ 1 ] Times
  | | |■ Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
- | | |▼ 装備状況欄を表示
- | | |■Set String: CSelf7[一時文字列B] = ""
- | | |■Condition (Number):   [1] CSelf2[商品選択位置] >=  0  
- | | |-◇Condition:  [1]  [ CSelf2[商品選択位置] >= 0   ] Case↓
- | | | |■Load DB(Var):  CSelf7[一時文字列B] = VarDB[ "Universal Window Items":CSelf2[商品選択位置]:"[Option] Spare String A" ] (19:-:9) 
+ | | |▼ Display the equipment status window
+ | | |■Set String: CSelf7[Temp String] = ""
+ | | |■Condition (Number):   [1] CSelf2[Shop Item Index] >=  0  
+ | | |-◇Condition:  [1]  [ CSelf2[Shop Item Index] >= 0   ] Case↓
+ | | | |■Load DB(Var):  CSelf7[Temp String] = VarDB[ "Universal Window Items":CSelf2[Shop Item Index]:"[Option] Spare String A" ] (19:-:9) 
  | | | |■
  | | |◇End◇
- | | |■Condition (String):   [1] CSelf7[一時文字列B] Is Equal to ""
- | | |-◇Condition:  [1] [ CSelf7[一時文字列B] Is Equal to "" ] Case↓
- | | | |▼ カラなら消去
- | | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 30 
- | | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | | |■Picture Erase: CSelf21[一時ピクチャ番号]  / 0(0) Frames
- | | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 31 
- | | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | | |■Picture Erase: CSelf21[一時ピクチャ番号]  / 0(0) Frames
+ | | |■Condition (String):   [1] CSelf7[Temp String] Is Equal to ""
+ | | |-◇Condition:  [1] [ CSelf7[Temp String] Is Equal to "" ] Case↓
+ | | | |▼ Erase if empty
+ | | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 30 
+ | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
+ | | | |■Picture Erase: CSelf21[Temp Picture ID]  / 0(0) Frames
+ | | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 31 
+ | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
+ | | | |■Picture Erase: CSelf21[Temp Picture ID]  / 0(0) Frames
  | | | |■
  | | |-◇Else
- | | | |▼ 表示する場合は瞬間表示
- | | | |■Set Variable: CSelf41[一時項目表示X] = CSelf50[装備状態欄X] + 0 
- | | | |■Set Variable: CSelf42[一時項目表示Y] = CSelf51[装備状態欄Y] + 0 
- | | | |■Set Variable: CSelf44[一時項目表示X2] = CSelf50[装備状態欄X] - CSelf52[装備状態欄横サイズ] 
- | | | |■Set Variable: CSelf45[一時項目表示Y2] = CSelf42[一時項目表示Y] + 0 
+ | | | |▼ Display instantly if not empty
+ | | | |■Set Variable: CSelf41[Temp Item X] = CSelf50[Equip Status X] + 0 
+ | | | |■Set Variable: CSelf42[Temp Item Y] = CSelf51[Equip Status Y] + 0 
+ | | | |■Set Variable: CSelf44[Temp Item X 2] = CSelf50[Equip Status X] - CSelf52[Equip Status Width] 
+ | | | |■Set Variable: CSelf45[Temp Item Y 2] = CSelf42[Temp Item Y] + 0 
  | | | |▼  
- | | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 30 
- | | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] Window (CSelf8[ウィンドウ画像ファイル]) Size [CSelf52[装備状態欄横サイズ],CSelf53[装備状態欄縦サイズ]] X:CSelf50[装備状態欄X] Y:CSelf51[装備状態欄Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
- | | | |■Repeat Loop [ CSelf57[初期表示？(1=YES)] ] Times
+ | | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 30 
+ | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
+ | | | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] Window (CSelf8[Window Image File]) Size [CSelf52[Equip Status Width],CSelf53[Equip Status Height]] X:CSelf50[Equip Status X] Y:CSelf51[Equip Status Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
+ | | | |■Repeat Loop [ CSelf57[Initial Display? (1:Yes)] ] Times
  | | | | |■Repeat Loop [ 0 ] Times
- | | | | | |▼ Animate the pictures (using the Move command)
+ | | | | | |▼ Animate the pictures (using the Picture Move command)
  | | | | | |▼ Shift the initial position
- | | | | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf44[一時項目表示X2] Y:CSelf45[一時項目表示Y2] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
+ | | | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
+ | | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf44[Temp Item X 2] Y:CSelf45[Temp Item Y 2] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
  | | | | | |▼ Inertial movement
- | | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
- | | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(3) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
- | | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(5) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
+ | | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
+ | | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(3) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
+ | | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(5) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
  | | | | | |■
  | | | | |◇Loop End Point◇◇
  | | | | |■
  | | | |◇Loop End Point◇◇
  | | | |▼ Display the contents
- | | | |■Set Variable: CSelf13[一時変数D] = CSelf52[装備状態欄横サイズ] - CSelf88[座標倍率X[x10]] 
- | | | |■Set Variable: CSelf13[一時変数D] -= CSelf88[座標倍率X[x10]] + 0 
+ | | | |■Set Variable: CSelf13[Temp Variable D] = CSelf52[Equip Status Width] - CSelf88[Coordinate Scale X (x10)] 
+ | | | |■Set Variable: CSelf13[Temp Variable D] -= CSelf88[Coordinate Scale X (x10)] + 0 
  | | | |■Condition (Number):   [1] Sys84:Screen Resolution (0-2, -1:Other) ==  0  
  | | | |-◇Condition:  [1]  [ Sys84:Screen Resolution (0-2, -1:Other) == 0   ] Case↓
- | | | | |■Set Variable: CSelf13[一時変数D] *= 2 + 0 
+ | | | | |■Set Variable: CSelf13[Temp Variable D] *= 2 + 0 
  | | | | |■
  | | | |◇End◇
- | | | |▼ 装備状況
- | | | |■Set String: CSelf6[メイン表示用] = "\f[\cself[18]]\cself[7]"
- | | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 31 
- | | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] String [\cself[6]] X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
- | | | |■Set Variable: CSelf12[一時変数C] = CSelf88[座標倍率X[x10]] / 1 
- | | | |■Set Variable: CSelf13[一時変数D] = CSelf89[座標倍率Y[x10]] / 1 
- | | | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf12[一時変数C] / Shift Y CSelf13[一時変数D]  [0] Frames
+ | | | |▼ Equipment status
+ | | | |■Set String: CSelf6[Main Display] = "\f[\cself[18]]\cself[7]"
+ | | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 31 
+ | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
+ | | | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] String [\cself[6]] X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
+ | | | |■Set Variable: CSelf12[Temp Variable C] = CSelf88[Coordinate Scale X (x10)] / 1 
+ | | | |■Set Variable: CSelf13[Temp Variable D] = CSelf89[Coordinate Scale Y (x10)] / 1 
+ | | | |■Effect Picture: CSelf21[Temp Picture ID] [Shift Position (Final Value)] Shift X CSelf12[Temp Variable C] / Shift Y CSelf13[Temp Variable D]  [0] Frames
  | | | |▼  
- | | | |■Repeat Loop [ CSelf57[初期表示？(1=YES)] ] Times
- | | | | |▼ Animate the pictures (using the Move command)
+ | | | |■Repeat Loop [ CSelf57[Initial Display? (1:Yes)] ] Times
+ | | | | |▼ Animate the pictures (using the Picture Move command)
  | | | | |▼ Shift the initial position
- | | | | |■Set Variable: CSelf44[一時項目表示X2] = CSelf50[装備状態欄X] - CSelf52[装備状態欄横サイズ] 
- | | | | |■Set Variable: CSelf45[一時項目表示Y2] = CSelf42[一時項目表示Y] + 0 
- | | | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf44[一時項目表示X2] Y:CSelf45[一時項目表示Y2] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
+ | | | | |■Set Variable: CSelf44[Temp Item X 2] = CSelf50[Equip Status X] - CSelf52[Equip Status Width] 
+ | | | | |■Set Variable: CSelf45[Temp Item Y 2] = CSelf42[Temp Item Y] + 0 
+ | | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
+ | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf44[Temp Item X 2] Y:CSelf45[Temp Item Y 2] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | | | |▼ Inertial movement
- | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
- | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(3) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
- | | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(5) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
+ | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
+ | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(3) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
+ | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(5) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | | | |■
  | | | |◇Loop End Point◇◇
  | | | |■
@@ -1237,33 +1237,33 @@ WoditorEvCOMMAND_END
  |◇End◇
  |■
 ◇End◇
-■Condition (Number):   [1] CSelf0[処理モード] ==  2  
--◇Condition:  [1]  [ CSelf0[処理モード] == 2   ] Case↓
+■Condition (Number):   [1] CSelf0[Mode] ==  2  
+-◇Condition:  [1]  [ CSelf0[Mode] == 2   ] Case↓
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |▼ 「カーソル表示」モード
+ |▼ "Cursor Display" Mode
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 2 
- |■Set Variable: CSelf26[一時ピクチャ2] = CSelf20[基本ピクチャ番号] + 3 
- |■Condition (Number):   [1] CSelf1[[2]カーソル位置] ==  -2  
- |-◇Condition:  [1]  [ CSelf1[[2]カーソル位置] == -2   ] Case↓
- | |▼ 「カーソル凍結」モード
- | |▼ 点滅停止　＋　少し暗くする
- | |■Effect Picture: CSelf21[一時ピクチャ番号] to CSelf26[一時ピクチャ2] [Blink A (Flicker)] R0/G0/B0  Interval [0] Frames
- | |■Picture Move: CSelf21[一時ピクチャ番号] to CSelf26[一時ピクチャ2]  Relative X:0 Y:0 / 0(0) Frames  / Pattern Same / Opacity 180 / Blend Mode: Same   / Angle Same / Scale Same / Color Same
+ |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 2 
+ |■Set Variable: CSelf26[Temp Picture ID 2] = CSelf20[Base Picture ID] + 3 
+ |■Condition (Number):   [1] CSelf1[[2]Cursor Position] ==  -2  
+ |-◇Condition:  [1]  [ CSelf1[[2]Cursor Position] == -2   ] Case↓
+ | |▼ If the cursor is inactive
+ | |▼ stop its blinking and darken it slightly
+ | |■Effect Picture: CSelf21[Temp Picture ID] to CSelf26[Temp Picture ID 2] [Blink A (Flicker)] R0/G0/B0  Interval [0] Frames
+ | |■Picture Move: CSelf21[Temp Picture ID] to CSelf26[Temp Picture ID 2]  Relative X:0 Y:0 / 0(0) Frames  / Pattern Same / Opacity 180 / Blend Mode: Same   / Angle Same / Scale Same / Color Same
  | |■Exit Event
  | |■
  |◇End◇
  |▼  
- |▼ 全カーソルの色を消去
- |■Effect Picture: CSelf21[一時ピクチャ番号] to CSelf26[一時ピクチャ2] [Adjust Color] R-100/G-100/B-100  [0] Frames
- |■Effect Picture: CSelf21[一時ピクチャ番号] to CSelf26[一時ピクチャ2] [Blink A (Flicker)] R0/G0/B0  Interval [0] Frames
+ |▼ Force all cursor colors to black (making the cursors invisible)
+ |■Effect Picture: CSelf21[Temp Picture ID] to CSelf26[Temp Picture ID 2] [Adjust Color] R-100/G-100/B-100  [0] Frames
+ |■Effect Picture: CSelf21[Temp Picture ID] to CSelf26[Temp Picture ID 2] [Blink A (Flicker)] R0/G0/B0  Interval [0] Frames
  |▼  
- |▼ 指定カーソルの色だけ表示＋点滅
- |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 2 
- |■Set Variable: CSelf21[一時ピクチャ番号] += CSelf1[[2]カーソル位置] + 0 
- |■Picture Move: CSelf21[一時ピクチャ番号]  Relative X:0 Y:0 / 0(0) Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Scale Same / Color Same
- |■Effect Picture: CSelf21[一時ピクチャ番号] [Adjust Color] R0/G0/B0  [0] Frames
- |■Effect Picture: CSelf21[一時ピクチャ番号] [Blink A (Flicker)] R100/G100/B100  Interval [15] Frames
+ |▼ Display only the cursor for the selected item in its original color and blink it
+ |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 2 
+ |■Set Variable: CSelf21[Temp Picture ID] += CSelf1[[2]Cursor Position] + 0 
+ |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 0(0) Frames  / Pattern Same / Opacity 255 / Blend Mode: Same   / Angle Same / Scale Same / Color Same
+ |■Effect Picture: CSelf21[Temp Picture ID] [Adjust Color] R0/G0/B0  [0] Frames
+ |■Effect Picture: CSelf21[Temp Picture ID] [Blink A (Flicker)] R100/G100/B100  Interval [15] Frames
  |■Exit Event
  |■
 ◇End◇

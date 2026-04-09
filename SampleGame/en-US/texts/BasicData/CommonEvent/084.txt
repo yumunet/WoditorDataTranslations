@@ -447,15 +447,15 @@ WoditorEvCOMMAND_END
 ■Condition (Number):   [1] CSelf0[Shop Type] ==  1  /  [2] CSelf0[Shop Type] ==  2  /  [3] CSelf0[Shop Type] ==  3  
 -◇Condition:  [1]  [ CSelf0[Shop Type] == 1   ] Case↓
  |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / 1:売る
- |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 0:表示A（初期表示用　スライド表示＆全表示） / -11:「売る」だけ表示 / -1
+ |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 0:Display A (initial display: slide-in + full display) / -11:Sell Only / -1
  |■
 -◇Condition:  [2]  [ CSelf0[Shop Type] == 2   ] Case↓
  |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / 0:買う
- |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 0:表示A（初期表示用　スライド表示＆全表示） / -10:「買う」だけ表示 / -1
+ |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 0:Display A (initial display: slide-in + full display) / -10:Buy Only / -1
  |■
 -◇Condition:  [3]  [ CSelf0[Shop Type] == 3   ] Case↓
  |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / 0:買う
- |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 0:表示A（初期表示用　スライド表示＆全表示） / -1 / -1
+ |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 0:Display A (initial display: slide-in + full display) / -1 / -1
  |■
 ◇End◇
 ■Set Variable: CSelf19[Mode (Buy=0/Sell=1)] = 0 + 0 
@@ -467,22 +467,22 @@ WoditorEvCOMMAND_END
  |▼ Sell
  |■Set Variable: CSelf19[Mode (Buy=0/Sell=1)] = 1 + 0 
  |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / 1:売る
- |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / 1:売る
- |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / -2:凍結
- |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:表示C（項目更新のみ） / 1:売る / 0
+ |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:Cursor Display (erase if [2] = -1, make inactive if [2] = -2) / 1:Sell
+ |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:Cursor Display (erase if [2] = -1, make inactive if [2] = -2) / -2:Inactive
+ |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:Display C (item-only update) / 1:Sell / 0
  |■
 -◇Condition:  [2]  [ CSelf0[Shop Type] == 2   ] Case↓
  |▼ Buy
  |■Set Variable: CSelf19[Mode (Buy=0/Sell=1)] = 0 + 0 
  |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / 0:買う
- |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / 0:買う
- |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / -2:凍結
- |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:表示C（項目更新のみ） / 0:買う / 0
+ |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:Cursor Display (erase if [2] = -1, make inactive if [2] = -2) / 0:Buy
+ |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:Cursor Display (erase if [2] = -1, make inactive if [2] = -2) / -2:Inactive
+ |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:Display C (item-only update) / 0:Buy / 0
  |■
 -◇Condition:  [3]  [ CSelf0[Shop Type] == 3   ] Case↓
  |▼ Buy and Sell available
  |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / CSelf19[Mode (Buy=0/Sell=1)]
- |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / CSelf19[Mode (Buy=0/Sell=1)] / 0
+ |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:Cursor Display (erase if [2] = -1, make inactive if [2] = -2) / CSelf19[Mode (Buy=0/Sell=1)] / 0
  |■Loop Start
  | |■Key Input: CSelf10[Temp Variable A] [Wait for Input <!>]  Left/Right (4, 6) Confirm (10) Cancel (11)
  | |■Condition (Number):   [1] CSelf10[Temp Variable A] ==  4  /  [2] CSelf10[Temp Variable A] ==  6  
@@ -492,8 +492,8 @@ WoditorEvCOMMAND_END
  | | |■Set Variable: CSelf19[Mode (Buy=0/Sell=1)] += 1 + 0 
  | | |■Set Variable: CSelf19[Mode (Buy=0/Sell=1)] %= 2 + 0 
  | | |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / CSelf19[Mode (Buy=0/Sell=1)]
- | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:表示C（項目更新のみ） / CSelf19[Mode (Buy=0/Sell=1)] / -1
- | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / CSelf19[Mode (Buy=0/Sell=1)]
+ | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:Display C (item-only update) / CSelf19[Mode (Buy=0/Sell=1)] / -1
+ | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:Cursor Display (erase if [2] = -1, make inactive if [2] = -2) / CSelf19[Mode (Buy=0/Sell=1)]
  | | |■Set Variable: CSelf16[Last Cursor Position] = 0 + 0 
  | | |■
  | |-◇Condition:  [2]  [ CSelf10[Temp Variable A] == 6   ] Case↓
@@ -502,8 +502,8 @@ WoditorEvCOMMAND_END
  | | |■Set Variable: CSelf19[Mode (Buy=0/Sell=1)] += 1 + 0 
  | | |■Set Variable: CSelf19[Mode (Buy=0/Sell=1)] %= 2 + 0 
  | | |■Call Event [Name]: ["X[Map]┗ Update Shop Internal Data"] <CommonEv 86>  / CSelf19[Mode (Buy=0/Sell=1)]
- | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:表示C（項目更新のみ） / CSelf19[Mode (Buy=0/Sell=1)] / -1
- | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / CSelf19[Mode (Buy=0/Sell=1)]
+ | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:Display C (item-only update) / CSelf19[Mode (Buy=0/Sell=1)] / -1
+ | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:Cursor Display (erase if [2] = -1, make inactive if [2] = -2) / CSelf19[Mode (Buy=0/Sell=1)]
  | | |■Set Variable: CSelf16[Last Cursor Position] = 0 + 0 
  | | |■
  | |◇End◇
@@ -511,7 +511,7 @@ WoditorEvCOMMAND_END
  | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] == 10   ] Case↓
  | | |▼ Confirm
  | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
- | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / -2:凍結
+ | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:Cursor Display (erase if [2] = -1, make inactive if [2] = -2) / -2:Inactive
  | | |■Write to DB(Var): VarDB[ "Base System Variables":"Universal Window External Cursor Set":0 ] (18:21:Number) =  CSelf16[Last Cursor Position]
  | | |■Break Loop
  | | |■
@@ -524,7 +524,7 @@ WoditorEvCOMMAND_END
  |◇Loop End Point◇◇
  |■
 ◇End◇
-■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:表示C（項目更新のみ） / CSelf19[Mode (Buy=0/Sell=1)] / CSelf16[Last Cursor Position]
+■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:Display C (item-only update) / CSelf19[Mode (Buy=0/Sell=1)] / CSelf16[Last Cursor Position]
 ■Loop Start
  |■Call Event [Name]: CSelf13 = ["X[Com]U-Window: Select"] <CommonEv 65>  / 1:End with One Key Press / 1:Don't Play Confirm Sound
  |■Condition (Number):   [1] CSelf13 ==  -200  
@@ -533,7 +533,7 @@ WoditorEvCOMMAND_END
  | |■Load DB(Var):  CSelf15[Cursor Position Item Code] = VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) 
  | |■Load DB(Var):  CSelf16[Last Cursor Position] = VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) 
  | |▼ Update the display based on the stored content
- | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 1:表示B（瞬間表示＆一部更新） / CSelf19[Mode (Buy=0/Sell=1)] / CSelf16[Last Cursor Position]
+ | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 1:Display B (instant display + partial update) / CSelf19[Mode (Buy=0/Sell=1)] / CSelf16[Last Cursor Position]
  | |■
  |-◇Else
  | |■Condition (Number):   [1] CSelf13 ==  -100  /  [2] CSelf13 ==  -2  /  [3] CSelf13 >=  0  
@@ -543,7 +543,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [1]  [ CSelf0[Shop Type] == 3   ] Case↓
  | | | |▼ Return only if the shop supports both buying and selling
  | | | |■Load DB(Var):  CSelf16[Last Cursor Position] = VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) 
- | | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:表示C（項目更新のみ） / CSelf19[Mode (Buy=0/Sell=1)] / -1
+ | | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:Display C (item-only update) / CSelf19[Mode (Buy=0/Sell=1)] / -1
  | | | |●Label Jump [Shop Start] >>>>>>>>>>>>>>>>>>>>>>>>>
  | | | |■Wait: 1 Frames
  | | | |■
@@ -674,9 +674,9 @@ WoditorEvCOMMAND_END
  | | |▼ Set the cursor position
  | | |■Load DB(Var):  CSelf16[Last Cursor Position] = VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) 
  | | |■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) =  CSelf16[Last Cursor Position]
- | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:表示C（項目更新のみ） / CSelf16[Last Cursor Position] / CSelf16[Last Cursor Position]
- | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 1:表示B（瞬間表示＆一部更新） / CSelf16[Last Cursor Position] / CSelf16[Last Cursor Position]
- | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:カーソル表示([2]が-1なら消去　-2なら凍結) / -2:凍結 / 0
+ | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 3:Display C (item-only update) / CSelf16[Last Cursor Position] / CSelf16[Last Cursor Position]
+ | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 1:Display B (instant display + partial update) / CSelf16[Last Cursor Position] / CSelf16[Last Cursor Position]
+ | | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 2:Cursor Display (erase if [2] = -1, make inactive if [2] = -2) / -2:Inactive / 0
  | | |■
  | |◇End◇
  | |■
@@ -688,7 +688,7 @@ WoditorEvCOMMAND_END
  |▼   End processing starts here
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |●Label Point [Shop End] <<<<<<<<<<<<<<<<★
- |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / -1:消去 / 0:買う
+ |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / -1:Erase / 0:Buy
  |■Wait: 10 Frames
  |■Exit Event
  |■
