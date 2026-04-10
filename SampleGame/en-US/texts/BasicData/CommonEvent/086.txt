@@ -8,7 +8,7 @@ MEMO=
 VALINPUT_NUM=1
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=買う？売る？
+VALINPUT_NAME_0=Buy or Sell?
 VALINPUT_NAME_1=
 VALINPUT_NAME_2=
 VALINPUT_NAME_3=
@@ -32,8 +32,8 @@ LOADTYPE8=0
 LOADTYPE9=0
 CHOICE_STR_NUM=10
 CHOICE_STR_0_NUM=2
-CHOICE_STR_0_0=買う
-CHOICE_STR_0_1=売る
+CHOICE_STR_0_0=Buy
+CHOICE_STR_0_1=Sell
 CHOICE_STR_1_NUM=4
 CHOICE_STR_1_0=武器欄装備を表示
 CHOICE_STR_1_1=防具1欄装備を表示
@@ -72,47 +72,47 @@ DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
 RETURN_VAL_NAME=
 RETURN_VAL_TARGET=-1
-CSELF_NAME_0=買う？売る？
+CSELF_NAME_0=Buy or Sell?
 CSELF_NAME_1=
 CSELF_NAME_2=
 CSELF_NAME_3=
 CSELF_NAME_4=
 CSELF_NAME_5=
-CSELF_NAME_6=一時変数A
-CSELF_NAME_7=金額単位
-CSELF_NAME_8=説明文
-CSELF_NAME_9=アイテム名
-CSELF_NAME_10=一時変数A
+CSELF_NAME_6=Temp String
+CSELF_NAME_7=Currency Unit
+CSELF_NAME_8=Description
+CSELF_NAME_9=Item Name
+CSELF_NAME_10=Temp Variable A
 CSELF_NAME_11=
 CSELF_NAME_12=
 CSELF_NAME_13=
-CSELF_NAME_14=キャラID
-CSELF_NAME_15=処理番号
+CSELF_NAME_14=Character ID
+CSELF_NAME_15=Target ID
 CSELF_NAME_16=
 CSELF_NAME_17=
 CSELF_NAME_18=
-CSELF_NAME_19=現在所持金
-CSELF_NAME_20=繰り返し回数
-CSELF_NAME_21=格納元番号
-CSELF_NAME_22=格納先番号
-CSELF_NAME_23=パーティ人数
+CSELF_NAME_19=Current Money
+CSELF_NAME_20=Loop Count
+CSELF_NAME_21=Source Index
+CSELF_NAME_22=Destination Index
+CSELF_NAME_23=Party Size
 CSELF_NAME_24=
-CSELF_NAME_25=価格
-CSELF_NAME_26=購入可能？
-CSELF_NAME_27=コード
+CSELF_NAME_25=Price
+CSELF_NAME_26=Can Buy?
+CSELF_NAME_27=Code
 CSELF_NAME_28=
 CSELF_NAME_29=
-CSELF_NAME_30=ｱｲﾃﾑ(0)武器(1)防具(2)
+CSELF_NAME_30=Item=0/Weapon=1/Armor=2
 CSELF_NAME_31=
 CSELF_NAME_32=
-CSELF_NAME_33=装備可能フラグ
+CSELF_NAME_33=Equip-Possible Flag
 CSELF_NAME_34=
-CSELF_NAME_35=対象の装備タイプ
-CSELF_NAME_36=一時装備タイプ
-CSELF_NAME_37=装備中フラグ
+CSELF_NAME_35=Target Equipment Type
+CSELF_NAME_36=Temp Equipment Type
+CSELF_NAME_37=Equipped State
 CSELF_NAME_38=
-CSELF_NAME_39=一時個数
-CSELF_NAME_40=エラー回避カウンター
+CSELF_NAME_39=Temp Quantity
+CSELF_NAME_40=Error Avoid Counter
 CSELF_NAME_41=
 CSELF_NAME_42=
 CSELF_NAME_43=
@@ -162,7 +162,7 @@ CSELF_NAME_86=
 CSELF_NAME_87=
 CSELF_NAME_88=
 CSELF_NAME_89=
-CSELF_NAME_90=計算戻り先
+CSELF_NAME_90=Return Point
 CSELF_NAME_91=
 CSELF_NAME_92=
 CSELF_NAME_93=
@@ -247,8 +247,8 @@ WoditorEvCOMMAND_START
 [106][0,1]<3>()("\cself[27] - \cself[39] <\cdb[19:\cself[22]:2]>")
 [0][0,0]<3>()()
 [498][0,0]<2>()()
-[213][0,1]<2>()("装備可能者計算")
-[212][0,1]<2>()("計算戻り1")
+[213][0,1]<2>()("Determine Who Can Equip")
+[212][0,1]<2>()("Return Point 1")
 [250][5,4]<2>(18,17,0,65552,1)("","Base System Variables","","")
 [0][0,0]<2>()()
 [498][0,0]<1>()()
@@ -340,8 +340,8 @@ WoditorEvCOMMAND_START
 [250][5,4]<5>(19,1600022,3,327776,1)("","Universal Window Items","","Quantity Left/Point Cost")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
-[213][0,1]<4>()("装備可能者計算")
-[212][0,1]<4>()("計算戻り2")
+[213][0,1]<4>()("Determine Who Can Equip")
+[212][0,1]<4>()("Return Point 2")
 [103][0,1]<4>()("Add 1 to the destination if the item exists")
 [121][4,0]<4>(1600022,1,0,256)()
 [250][5,4]<4>(18,17,0,65552,1)("","Base System Variables","","")
@@ -354,7 +354,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [179][1,0]<0>(0)()
-[212][0,1]<1>()("装備可能者計算")
+[212][0,1]<1>()("Determine Who Can Equip")
 [103][0,1]<1>()("For equipment, determine who can equip it")
 [250][4,4]<1>(19,1600022,9,327682)("","Universal Window Items","","[Option] Spare String A")
 [111][4,0]<1>(1,1600027,20000,1)()
@@ -388,7 +388,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<5>()()
 [401][1,0]<4>(3)()
 [103][0,1]<5>()("If its type is set")
-[103][0,1]<5>()("ここから10個分の装備タイプを調査。同じ値のが１つでもあれば装備可能判定が「0」になる")
+[103][0,1]<5>()("Check the 10 equippable types; if any match, the equip‑possible flag becomes 0")
 [250][5,4]<5>(0,1600014,36,331776,1600036)("","Allies","","Equippable Type 1")
 [121][4,0]<5>(1600033,1600036,1600035,4865)()
 [250][5,4]<5>(0,1600014,38,331776,1600036)("","Allies","","Equippable Type 2")
@@ -409,21 +409,21 @@ WoditorEvCOMMAND_START
 [121][4,0]<5>(1600033,1600036,1600035,4865)()
 [250][5,4]<5>(0,1600014,46,331776,1600036)("","Allies","","Equippable Type 10")
 [121][4,0]<5>(1600033,1600036,1600035,4865)()
-[103][0,1]<5>()("0と1を反転")
+[103][0,1]<5>()("Invert the equip-possible flag (0 ↔ 1)")
 [111][4,0]<5>(17,1600033,0,2)()
 [401][1,0]<5>(1)()
-[103][0,1]<6>()("装備可能")
+[103][0,1]<6>()("Can equip")
 [121][4,0]<6>(1600033,1,0,0)()
 [0][0,0]<6>()()
 [420][1,0]<5>(0)()
-[103][0,1]<6>()("装備不能")
+[103][0,1]<6>()("Cannot equip")
 [121][4,0]<6>(1600033,0,0,0)()
 [0][0,0]<6>()()
 [499][0,0]<5>()()
 [0][0,0]<5>()()
 [499][0,0]<4>()()
 [179][1,0]<4>(1)()
-[103][0,1]<5>()("そのキャラが装備中かどうかチェック")
+[103][0,1]<5>()("Check whether the character has it equipped")
 [121][4,0]<5>(1600037,1,0,0)()
 [300][5,1]<5>(0,16777218,1600014,0,1600036)("X[Map]Get Equipment ID")
 [121][4,0]<5>(1600037,1600027,1600036,4865)()
@@ -441,16 +441,16 @@ WoditorEvCOMMAND_START
 [121][4,0]<5>(1600037,1600027,1600036,4865)()
 [300][5,1]<5>(0,16777218,1600014,7,1600036)("X[Map]Get Equipment ID")
 [121][4,0]<5>(1600037,1600027,1600036,4865)()
-[103][0,1]<5>()("もし一個でも対象の装備をしていれば、ここでフラグが0になっている")
+[103][0,1]<5>()("If at least one equipment matches, the state is 0")
 [111][4,0]<5>(1,1600037,0,2)()
 [401][1,0]<5>(1)()
-[103][0,1]<6>()("装備可能状態を2にする")
+[103][0,1]<6>()("Set the equip-possible flag to 2")
 [121][4,0]<6>(1600033,2,0,0)()
 [0][0,0]<6>()()
 [499][0,0]<5>()()
 [0][0,0]<5>()()
 [498][0,0]<4>()()
-[103][0,1]<4>()("装備可能状態を格納する")
+[103][0,1]<4>()("Store the equip-possible status")
 [300][4,1]<4>(0,16777217,1600010,1600014)("X[Map]Get Ally ID")
 [300][5,1]<4>(0,16777218,1600014,0,1600006)("X[Map]Get Parameter (String)")
 [122][2,1]<4>(1600006,256)("　")
@@ -466,7 +466,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<5>()()
 [499][0,0]<4>()()
 [122][2,1]<4>(1600006,256)("<\n>")
-[103][0,1]<4>()("万能ウィンドウのオプション値に追加")
+[103][0,1]<4>()("Add it to the Universal Window's option value")
 [250][5,4]<4>(19,1600022,9,327696,1600006)("","Universal Window Items","","[Option] Spare String A")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
@@ -474,7 +474,7 @@ WoditorEvCOMMAND_START
 [498][0,0]<2>()()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
-[213][0,1]<1>()("計算戻り\cself[90]")
+[213][0,1]<1>()("Return Point \cself[90]")
 [0][0,0]<1>()()
 [498][0,0]<0>()()
 [0][0,0]<0>()()
@@ -486,170 +486,170 @@ WoditorEvCOMMAND_END
 ▼   Stores shop items in the Universal Window list and determines which characters can equip weapons and armor.
 ▼   Works both on the map and in battle.
 ▼ ―――――――――――――――――――――――――――――――――――
-■Set Variable: CSelf40[エラー回避カウンター] = 0 + 0 
-■Load DB(User):  CSelf7[金額単位] = UserDB[ "Terms":0:"[Stats] Currency" ] (15:Basic Terms:18) 
-■Call Event [Name]: CSelf19[現在所持金] = ["X[Com]Get Current Money"] <CommonEv 57> 
+■Set Variable: CSelf40[Error Avoid Counter] = 0 + 0 
+■Load DB(User):  CSelf7[Currency Unit] = UserDB[ "Terms":0:"[Stats] Currency" ] (15:Basic Terms:18) 
+■Call Event [Name]: CSelf19[Current Money] = ["X[Com]Get Current Money"] <CommonEv 57> 
 ▼ Store buy/sell items in the Universal Window list
 ■Write to DB(Var): [Reset Type "Universal Window Items"(19)]
 ■Write to DB(Var): VarDB[ "Base System Variables":17:0 ] (18:Universal Window Item Count:Number) =  0
-■Condition (Number):   [1] CSelf0[買う？売る？] ==  0  /  [2] CSelf0[買う？売る？] ==  1  
--◇Condition:  [1]  [ CSelf0[買う？売る？] == 0   ] Case↓
+■Condition (Number):   [1] CSelf0[Buy or Sell?] ==  0  /  [2] CSelf0[Buy or Sell?] ==  1  
+-◇Condition:  [1]  [ CSelf0[Buy or Sell?] == 0   ] Case↓
  |▼ If buying
- |■Set Variable: CSelf90[計算戻り先] = 1 + 0 
- |■Set Variable: CSelf21[格納元番号] = -1 + 0 
- |■Set Variable: CSelf22[格納先番号] = -1 + 0 
- |■Load DB(Var):  CSelf20[繰り返し回数] = VarDB[ "Base System Variables":93:0 ] (18:[Shop] Registered Item Count:Number) 
+ |■Set Variable: CSelf90[Return Point] = 1 + 0 
+ |■Set Variable: CSelf21[Source Index] = -1 + 0 
+ |■Set Variable: CSelf22[Destination Index] = -1 + 0 
+ |■Load DB(Var):  CSelf20[Loop Count] = VarDB[ "Base System Variables":93:0 ] (18:[Shop] Registered Item Count:Number) 
  |■Loop Start
- | |■Set Variable: CSelf21[格納元番号] += 1 + 0 
- | |■Set Variable: CSelf22[格納先番号] += 1 + 0 
- | |■Condition (Number):   [1] CSelf21[格納元番号] >=  CSelf20[繰り返し回数]  
- | |-◇Condition:  [1]  [ CSelf21[格納元番号] >= CSelf20[繰り返し回数]   ] Case↓
+ | |■Set Variable: CSelf21[Source Index] += 1 + 0 
+ | |■Set Variable: CSelf22[Destination Index] += 1 + 0 
+ | |■Condition (Number):   [1] CSelf21[Source Index] >=  CSelf20[Loop Count]  
+ | |-◇Condition:  [1]  [ CSelf21[Source Index] >= CSelf20[Loop Count]   ] Case↓
  | | |■Break Loop
  | | |■
  | |◇End◇
  | |▼ Check shop items from top to bottom and store them in the Universal Window list
- | |■Load DB(Var):  CSelf9[アイテム名] = VarDB[ "×Shop Temp Data":CSelf21[格納元番号]:"Sell Item Name" ] (16:-:0) 
- | |■Load DB(Var):  CSelf27[コード] = VarDB[ "×Shop Temp Data":CSelf21[格納元番号]:"Sell Item ID" ] (16:-:1) 
- | |■Load DB(Var):  CSelf8[説明文] = VarDB[ "×Shop Temp Data":CSelf21[格納元番号]:"Description" ] (16:-:5) 
- | |■Load DB(Var):  CSelf25[価格] = VarDB[ "×Shop Temp Data":CSelf21[格納元番号]:"Price" ] (16:-:2) 
- | |■Load DB(Var):  CSelf26[購入可能？] = VarDB[ "×Shop Temp Data":CSelf21[格納元番号]:"(Purchasable [0/1])" ] (16:-:6) 
+ | |■Load DB(Var):  CSelf9[Item Name] = VarDB[ "×Shop Temp Data":CSelf21[Source Index]:"Sell Item Name" ] (16:-:0) 
+ | |■Load DB(Var):  CSelf27[Code] = VarDB[ "×Shop Temp Data":CSelf21[Source Index]:"Sell Item ID" ] (16:-:1) 
+ | |■Load DB(Var):  CSelf8[Description] = VarDB[ "×Shop Temp Data":CSelf21[Source Index]:"Description" ] (16:-:5) 
+ | |■Load DB(Var):  CSelf25[Price] = VarDB[ "×Shop Temp Data":CSelf21[Source Index]:"Price" ] (16:-:2) 
+ | |■Load DB(Var):  CSelf26[Can Buy?] = VarDB[ "×Shop Temp Data":CSelf21[Source Index]:"(Purchasable [0/1])" ] (16:-:6) 
  | |▼ Price 0 is not displayed, so set the price to 1 for now
- | |■Set Variable: CSelf25[価格] Lower Bound= 1 + 0 
+ | |■Set Variable: CSelf25[Price] Lower Bound= 1 + 0 
  | |▼  
- | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"Item Text" ] (19:-:0) =  CSelf9[アイテム名]
- | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"Item ID" ] (19:-:1) =  CSelf27[コード]
- | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"Description" ] (19:-:6) =  CSelf8[説明文]
- | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"Quantity Left/Point Cost" ] (19:-:3) =  CSelf25[価格]
- | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"Number Suffix" ] (19:-:5) =   \cself[7]
- | |■Condition (Number):   [1] CSelf27[コード] >=  10000  
- | |-◇Condition:  [1]  [ CSelf27[コード] >= 10000   ] Case↓
- | | |■Condition (Number):   [1] CSelf27[コード] <=  19999  /  [2] CSelf27[コード] <=  29999  /  [3] CSelf27[コード] <=  39999  
- | | |-◇Condition:  [1]  [ CSelf27[コード] <= 19999   ] Case↓
- | | | |■Set Variable: CSelf15[処理番号] = CSelf27[コード] % 10000 
- | | | |■Load DB(Var):  CSelf39[一時個数] = VarDB[ "┣ Owned Items":CSelf15[処理番号]:"Owned Quantity" ] (7:-:0) 
+ | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[Destination Index]:"Item Text" ] (19:-:0) =  CSelf9[Item Name]
+ | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[Destination Index]:"Item ID" ] (19:-:1) =  CSelf27[Code]
+ | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[Destination Index]:"Description" ] (19:-:6) =  CSelf8[Description]
+ | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[Destination Index]:"Quantity Left/Point Cost" ] (19:-:3) =  CSelf25[Price]
+ | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[Destination Index]:"Number Suffix" ] (19:-:5) =   \cself[7]
+ | |■Condition (Number):   [1] CSelf27[Code] >=  10000  
+ | |-◇Condition:  [1]  [ CSelf27[Code] >= 10000   ] Case↓
+ | | |■Condition (Number):   [1] CSelf27[Code] <=  19999  /  [2] CSelf27[Code] <=  29999  /  [3] CSelf27[Code] <=  39999  
+ | | |-◇Condition:  [1]  [ CSelf27[Code] <= 19999   ] Case↓
+ | | | |■Set Variable: CSelf15[Target ID] = CSelf27[Code] % 10000 
+ | | | |■Load DB(Var):  CSelf39[Temp Quantity] = VarDB[ "┣ Owned Items":CSelf15[Target ID]:"Owned Quantity" ] (7:-:0) 
  | | | |■
- | | |-◇Condition:  [2]  [ CSelf27[コード] <= 29999   ] Case↓
- | | | |■Set Variable: CSelf15[処理番号] = CSelf27[コード] % 20000 
- | | | |■Load DB(Var):  CSelf39[一時個数] = VarDB[ "┣ Owned Weapons":CSelf15[処理番号]:"Owned Quantity" ] (8:-:0) 
+ | | |-◇Condition:  [2]  [ CSelf27[Code] <= 29999   ] Case↓
+ | | | |■Set Variable: CSelf15[Target ID] = CSelf27[Code] % 20000 
+ | | | |■Load DB(Var):  CSelf39[Temp Quantity] = VarDB[ "┣ Owned Weapons":CSelf15[Target ID]:"Owned Quantity" ] (8:-:0) 
  | | | |■
- | | |-◇Condition:  [3]  [ CSelf27[コード] <= 39999   ] Case↓
- | | | |■Set Variable: CSelf15[処理番号] = CSelf27[コード] % 30000 
- | | | |■Load DB(Var):  CSelf39[一時個数] = VarDB[ "┗ Owned Armors":CSelf15[処理番号]:"Owned Quantity" ] (9:-:0) 
+ | | |-◇Condition:  [3]  [ CSelf27[Code] <= 39999   ] Case↓
+ | | | |■Set Variable: CSelf15[Target ID] = CSelf27[Code] % 30000 
+ | | | |■Load DB(Var):  CSelf39[Temp Quantity] = VarDB[ "┗ Owned Armors":CSelf15[Target ID]:"Owned Quantity" ] (9:-:0) 
  | | | |■
  | | |◇End◇
- | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"[Option] Spare Number A" ] (19:-:7) =  CSelf39[一時個数]
+ | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[Destination Index]:"[Option] Spare Number A" ] (19:-:7) =  CSelf39[Temp Quantity]
  | | |■
  | |◇End◇
- | |■Condition (Number):   [1] CSelf25[価格] <=  CSelf19[現在所持金]  
- | |-◇Condition:  [1]  [ CSelf25[価格] <= CSelf19[現在所持金]   ] Case↓
+ | |■Condition (Number):   [1] CSelf25[Price] <=  CSelf19[Current Money]  
+ | |-◇Condition:  [1]  [ CSelf25[Price] <= CSelf19[Current Money]   ] Case↓
  | | |▼ If the price is less than or equal to the current money, it can be bought
- | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"Selectable? [1:Yes]" ] (19:-:2) =  1
+ | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[Destination Index]:"Selectable? [1:Yes]" ] (19:-:2) =  1
  | | |■
  | |-◇Else
- | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"Selectable? [1:Yes]" ] (19:-:2) =  0
+ | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[Destination Index]:"Selectable? [1:Yes]" ] (19:-:2) =  0
  | | |■
  | |◇End◇
  | |■Repeat Loop [ 0 ] Times
  | | |■Debug Text: \cself[27] - \cself[39] <\cdb[19:\cself[22]:2]>
  | | |■
  | |◇Loop End Point◇◇
- | |●Label Jump [装備可能者計算] >>>>>>>>>>>>>>>>>>>>>>>>>
- | |●Label Point [計算戻り1] <<<<<<<<<<<<<<<<★
+ | |●Label Jump [Determine Who Can Equip] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | |●Label Point [Return Point 1] <<<<<<<<<<<<<<<<★
  | |■Write to DB(Var): VarDB[ "Base System Variables":17:0 ] (18:Universal Window Item Count:Number) +=  1
  | |■
  |◇Loop End Point◇◇
  |■
--◇Condition:  [2]  [ CSelf0[買う？売る？] == 1   ] Case↓
+-◇Condition:  [2]  [ CSelf0[Buy or Sell?] == 1   ] Case↓
  |▼ If selling
- |■Set Variable: CSelf90[計算戻り先] = 2 + 0 
- |■Set Variable: CSelf22[格納先番号] = 0 + 0 
- |■Set Variable: CSelf30[ｱｲﾃﾑ(0)武器(1)防具(2)] = -1 + 0 
+ |■Set Variable: CSelf90[Return Point] = 2 + 0 
+ |■Set Variable: CSelf22[Destination Index] = 0 + 0 
+ |■Set Variable: CSelf30[Item=0/Weapon=1/Armor=2] = -1 + 0 
  |■Loop Start
- | |■Set Variable: CSelf30[ｱｲﾃﾑ(0)武器(1)防具(2)] += 1 + 0 
- | |■Condition (Number):   [1] CSelf30[ｱｲﾃﾑ(0)武器(1)防具(2)] ==  0  /  [2] CSelf30[ｱｲﾃﾑ(0)武器(1)防具(2)] ==  1  /  [3] CSelf30[ｱｲﾃﾑ(0)武器(1)防具(2)] ==  2  
- | |-◇Condition:  [1]  [ CSelf30[ｱｲﾃﾑ(0)武器(1)防具(2)] == 0   ] Case↓
- | | |■Set Variable: CSelf21[格納元番号] = -1 + 0 
+ | |■Set Variable: CSelf30[Item=0/Weapon=1/Armor=2] += 1 + 0 
+ | |■Condition (Number):   [1] CSelf30[Item=0/Weapon=1/Armor=2] ==  0  /  [2] CSelf30[Item=0/Weapon=1/Armor=2] ==  1  /  [3] CSelf30[Item=0/Weapon=1/Armor=2] ==  2  
+ | |-◇Condition:  [1]  [ CSelf30[Item=0/Weapon=1/Armor=2] == 0   ] Case↓
+ | | |■Set Variable: CSelf21[Source Index] = -1 + 0 
  | | |▼ Loop for each item type
- | | |■Load DB(User):  CSelf20[繰り返し回数] = UserDB[Type "Items"(2)'s Data Count]
+ | | |■Load DB(User):  CSelf20[Loop Count] = UserDB[Type "Items"(2)'s Data Count]
  | | |■
- | |-◇Condition:  [2]  [ CSelf30[ｱｲﾃﾑ(0)武器(1)防具(2)] == 1   ] Case↓
- | | |■Set Variable: CSelf21[格納元番号] = -1 + 0 
+ | |-◇Condition:  [2]  [ CSelf30[Item=0/Weapon=1/Armor=2] == 1   ] Case↓
+ | | |■Set Variable: CSelf21[Source Index] = -1 + 0 
  | | |▼ Loop for each weapon type
- | | |■Load DB(User):  CSelf20[繰り返し回数] = UserDB[Type "Weapons"(3)'s Data Count]
+ | | |■Load DB(User):  CSelf20[Loop Count] = UserDB[Type "Weapons"(3)'s Data Count]
  | | |■
- | |-◇Condition:  [3]  [ CSelf30[ｱｲﾃﾑ(0)武器(1)防具(2)] == 2   ] Case↓
- | | |■Set Variable: CSelf21[格納元番号] = -1 + 0 
+ | |-◇Condition:  [3]  [ CSelf30[Item=0/Weapon=1/Armor=2] == 2   ] Case↓
+ | | |■Set Variable: CSelf21[Source Index] = -1 + 0 
  | | |▼ Loop for each armor type
- | | |■Load DB(User):  CSelf20[繰り返し回数] = UserDB[Type "Armors"(4)'s Data Count]
+ | | |■Load DB(User):  CSelf20[Loop Count] = UserDB[Type "Armors"(4)'s Data Count]
  | | |■
  | |-◇Else
  | | |■Break Loop
  | | |■
  | |◇End◇
  | |■Loop Start
- | | |■Set Variable: CSelf21[格納元番号] += 1 + 0 
- | | |■Set Variable: CSelf40[エラー回避カウンター] += 1 + 0 
- | | |■Condition (Number):   [1] CSelf40[エラー回避カウンター] >=  100  
- | | |-◇Condition:  [1]  [ CSelf40[エラー回避カウンター] >= 100   ] Case↓
- | | | |■Set Variable: CSelf40[エラー回避カウンター] = 0 + 0 
+ | | |■Set Variable: CSelf21[Source Index] += 1 + 0 
+ | | |■Set Variable: CSelf40[Error Avoid Counter] += 1 + 0 
+ | | |■Condition (Number):   [1] CSelf40[Error Avoid Counter] >=  100  
+ | | |-◇Condition:  [1]  [ CSelf40[Error Avoid Counter] >= 100   ] Case↓
+ | | | |■Set Variable: CSelf40[Error Avoid Counter] = 0 + 0 
  | | | |■Wait: 1 Frames
  | | | |■
  | | |◇End◇
- | | |■Condition (Number):   [1] CSelf21[格納元番号] >=  CSelf20[繰り返し回数]  
- | | |-◇Condition:  [1]  [ CSelf21[格納元番号] >= CSelf20[繰り返し回数]   ] Case↓
+ | | |■Condition (Number):   [1] CSelf21[Source Index] >=  CSelf20[Loop Count]  
+ | | |-◇Condition:  [1]  [ CSelf21[Source Index] >= CSelf20[Loop Count]   ] Case↓
  | | | |■Break Loop
  | | | |■
  | | |◇End◇
- | | |■Condition (Number):   [1] CSelf30[ｱｲﾃﾑ(0)武器(1)防具(2)] ==  0  /  [2] CSelf30[ｱｲﾃﾑ(0)武器(1)防具(2)] ==  1  /  [3] CSelf30[ｱｲﾃﾑ(0)武器(1)防具(2)] ==  2  
- | | |-◇Condition:  [1]  [ CSelf30[ｱｲﾃﾑ(0)武器(1)防具(2)] == 0   ] Case↓
- | | | |■Set Variable: CSelf27[コード] = 10000 + CSelf21[格納元番号] 
- | | | |■Load DB(User):  CSelf9[アイテム名] = UserDB[ "Items":CSelf21[格納元番号]:"Item Name" ] (2:-:0) 
- | | | |■Load DB(User):  CSelf25[価格] = UserDB[ "Items":CSelf21[格納元番号]:"Sell Price [0=Can't Sell]" ] (2:-:19) 
- | | | |■Load DB(Var):  CSelf39[一時個数] = VarDB[ "┣ Owned Items":CSelf21[格納元番号]:"Owned Quantity" ] (7:-:0) 
- | | | |■Load DB(User):  CSelf8[説明文] = UserDB[ "Items":CSelf21[格納元番号]:"Description [Up to 2 Lines]" ] (2:-:1) 
+ | | |■Condition (Number):   [1] CSelf30[Item=0/Weapon=1/Armor=2] ==  0  /  [2] CSelf30[Item=0/Weapon=1/Armor=2] ==  1  /  [3] CSelf30[Item=0/Weapon=1/Armor=2] ==  2  
+ | | |-◇Condition:  [1]  [ CSelf30[Item=0/Weapon=1/Armor=2] == 0   ] Case↓
+ | | | |■Set Variable: CSelf27[Code] = 10000 + CSelf21[Source Index] 
+ | | | |■Load DB(User):  CSelf9[Item Name] = UserDB[ "Items":CSelf21[Source Index]:"Item Name" ] (2:-:0) 
+ | | | |■Load DB(User):  CSelf25[Price] = UserDB[ "Items":CSelf21[Source Index]:"Sell Price [0=Can't Sell]" ] (2:-:19) 
+ | | | |■Load DB(Var):  CSelf39[Temp Quantity] = VarDB[ "┣ Owned Items":CSelf21[Source Index]:"Owned Quantity" ] (7:-:0) 
+ | | | |■Load DB(User):  CSelf8[Description] = UserDB[ "Items":CSelf21[Source Index]:"Description [Up to 2 Lines]" ] (2:-:1) 
  | | | |■
- | | |-◇Condition:  [2]  [ CSelf30[ｱｲﾃﾑ(0)武器(1)防具(2)] == 1   ] Case↓
- | | | |■Set Variable: CSelf27[コード] = 20000 + CSelf21[格納元番号] 
- | | | |■Load DB(User):  CSelf9[アイテム名] = UserDB[ "Weapons":CSelf21[格納元番号]:"Weapon Name" ] (3:-:0) 
- | | | |■Load DB(User):  CSelf25[価格] = UserDB[ "Weapons":CSelf21[格納元番号]:"Sell Price [0=Can't Sell]" ] (3:-:17) 
- | | | |■Load DB(Var):  CSelf39[一時個数] = VarDB[ "┣ Owned Weapons":CSelf21[格納元番号]:"Owned Quantity" ] (8:-:0) 
- | | | |■Load DB(User):  CSelf8[説明文] = UserDB[ "Weapons":CSelf21[格納元番号]:"Description [Up to 2 Lines]" ] (3:-:1) 
+ | | |-◇Condition:  [2]  [ CSelf30[Item=0/Weapon=1/Armor=2] == 1   ] Case↓
+ | | | |■Set Variable: CSelf27[Code] = 20000 + CSelf21[Source Index] 
+ | | | |■Load DB(User):  CSelf9[Item Name] = UserDB[ "Weapons":CSelf21[Source Index]:"Weapon Name" ] (3:-:0) 
+ | | | |■Load DB(User):  CSelf25[Price] = UserDB[ "Weapons":CSelf21[Source Index]:"Sell Price [0=Can't Sell]" ] (3:-:17) 
+ | | | |■Load DB(Var):  CSelf39[Temp Quantity] = VarDB[ "┣ Owned Weapons":CSelf21[Source Index]:"Owned Quantity" ] (8:-:0) 
+ | | | |■Load DB(User):  CSelf8[Description] = UserDB[ "Weapons":CSelf21[Source Index]:"Description [Up to 2 Lines]" ] (3:-:1) 
  | | | |■
- | | |-◇Condition:  [3]  [ CSelf30[ｱｲﾃﾑ(0)武器(1)防具(2)] == 2   ] Case↓
- | | | |■Set Variable: CSelf27[コード] = 30000 + CSelf21[格納元番号] 
- | | | |■Load DB(User):  CSelf9[アイテム名] = UserDB[ "Armors":CSelf21[格納元番号]:"Armor Name" ] (4:-:0) 
- | | | |■Load DB(User):  CSelf25[価格] = UserDB[ "Armors":CSelf21[格納元番号]:"Sell Price [0=Can't Sell]" ] (4:-:18) 
- | | | |■Load DB(Var):  CSelf39[一時個数] = VarDB[ "┗ Owned Armors":CSelf21[格納元番号]:"Owned Quantity" ] (9:-:0) 
- | | | |■Load DB(User):  CSelf8[説明文] = UserDB[ "Armors":CSelf21[格納元番号]:"Description [Up to 2 Lines]" ] (4:-:1) 
+ | | |-◇Condition:  [3]  [ CSelf30[Item=0/Weapon=1/Armor=2] == 2   ] Case↓
+ | | | |■Set Variable: CSelf27[Code] = 30000 + CSelf21[Source Index] 
+ | | | |■Load DB(User):  CSelf9[Item Name] = UserDB[ "Armors":CSelf21[Source Index]:"Armor Name" ] (4:-:0) 
+ | | | |■Load DB(User):  CSelf25[Price] = UserDB[ "Armors":CSelf21[Source Index]:"Sell Price [0=Can't Sell]" ] (4:-:18) 
+ | | | |■Load DB(Var):  CSelf39[Temp Quantity] = VarDB[ "┗ Owned Armors":CSelf21[Source Index]:"Owned Quantity" ] (9:-:0) 
+ | | | |■Load DB(User):  CSelf8[Description] = UserDB[ "Armors":CSelf21[Source Index]:"Description [Up to 2 Lines]" ] (4:-:1) 
  | | | |■
  | | |◇End◇
  | | |▼ If the target item exists, add it
- | | |■Condition (Number):   [1] CSelf39[一時個数] >=  1  
- | | |-◇Condition:  [1]  [ CSelf39[一時個数] >= 1   ] Case↓
- | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"Item Text" ] (19:-:0) =  CSelf9[アイテム名]
- | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"Item ID" ] (19:-:1) =  CSelf27[コード]
- | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"Quantity Left/Point Cost" ] (19:-:3) =  CSelf25[価格]
- | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"Number Suffix" ] (19:-:5) =   \cself[7]
- | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"Description" ] (19:-:6) =  CSelf8[説明文]
- | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"[Option] Spare Number A" ] (19:-:7) =  CSelf39[一時個数]
- | | | |■Condition (Number):   [1] CSelf25[価格] <=  0  
- | | | |-◇Condition:  [1]  [ CSelf25[価格] <= 0   ] Case↓
+ | | |■Condition (Number):   [1] CSelf39[Temp Quantity] >=  1  
+ | | |-◇Condition:  [1]  [ CSelf39[Temp Quantity] >= 1   ] Case↓
+ | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[Destination Index]:"Item Text" ] (19:-:0) =  CSelf9[Item Name]
+ | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[Destination Index]:"Item ID" ] (19:-:1) =  CSelf27[Code]
+ | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[Destination Index]:"Quantity Left/Point Cost" ] (19:-:3) =  CSelf25[Price]
+ | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[Destination Index]:"Number Suffix" ] (19:-:5) =   \cself[7]
+ | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[Destination Index]:"Description" ] (19:-:6) =  CSelf8[Description]
+ | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[Destination Index]:"[Option] Spare Number A" ] (19:-:7) =  CSelf39[Temp Quantity]
+ | | | |■Condition (Number):   [1] CSelf25[Price] <=  0  
+ | | | |-◇Condition:  [1]  [ CSelf25[Price] <= 0   ] Case↓
  | | | | |▼ If the price is 0, it cannot be sold
- | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"Selectable? [1:Yes]" ] (19:-:2) =  0
- | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"Number Suffix" ] (19:-:5) =  ------
+ | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[Destination Index]:"Selectable? [1:Yes]" ] (19:-:2) =  0
+ | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[Destination Index]:"Number Suffix" ] (19:-:5) =  ------
  | | | | |■
  | | | |-◇Else
  | | | | |▼ If the price is 1 or higher, it can be sold
- | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"Selectable? [1:Yes]" ] (19:-:2) =  1
+ | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[Destination Index]:"Selectable? [1:Yes]" ] (19:-:2) =  1
  | | | | |▼  
- | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"Quantity Left/Point Cost" ] (19:-:3) /=  2
- | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"Quantity Left/Point Cost" ] (19:-:3) Lower Bound  1
+ | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[Destination Index]:"Quantity Left/Point Cost" ] (19:-:3) /=  2
+ | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[Destination Index]:"Quantity Left/Point Cost" ] (19:-:3) Lower Bound  1
  | | | | |■
  | | | |◇End◇
- | | | |●Label Jump [装備可能者計算] >>>>>>>>>>>>>>>>>>>>>>>>>
- | | | |●Label Point [計算戻り2] <<<<<<<<<<<<<<<<★
+ | | | |●Label Jump [Determine Who Can Equip] >>>>>>>>>>>>>>>>>>>>>>>>>
+ | | | |●Label Point [Return Point 2] <<<<<<<<<<<<<<<<★
  | | | |▼ Add 1 to the destination if the item exists
- | | | |■Set Variable: CSelf22[格納先番号] += 1 + 0 
+ | | | |■Set Variable: CSelf22[Destination Index] += 1 + 0 
  | | | |■Write to DB(Var): VarDB[ "Base System Variables":17:0 ] (18:Universal Window Item Count:Number) +=  1
  | | | |■
  | | |◇End◇
@@ -660,127 +660,127 @@ WoditorEvCOMMAND_END
  |■
 ◇End◇
 ■Repeat Loop [ 0 ] Times
- |●Label Point [装備可能者計算] <<<<<<<<<<<<<<<<★
+ |●Label Point [Determine Who Can Equip] <<<<<<<<<<<<<<<<★
  |▼ For equipment, determine who can equip it
- |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"[Option] Spare String A" ] (19:-:9) =  
- |■Condition (Number):   [1] CSelf27[コード] >=  20000  
- |-◇Condition:  [1]  [ CSelf27[コード] >= 20000   ] Case↓
- | |■Condition (Number):   [1] CSelf27[コード] <=  29999  /  [2] CSelf27[コード] <=  39999  
- | |-◇Condition:  [1]  [ CSelf27[コード] <= 29999   ] Case↓
- | | |■Set Variable: CSelf15[処理番号] = CSelf27[コード] % 20000 
- | | |■Load DB(User):  CSelf35[対象の装備タイプ] = UserDB[ "Weapons":CSelf15[処理番号]:"Equipment Type" ] (3:-:2) 
+ |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[Destination Index]:"[Option] Spare String A" ] (19:-:9) =  
+ |■Condition (Number):   [1] CSelf27[Code] >=  20000  
+ |-◇Condition:  [1]  [ CSelf27[Code] >= 20000   ] Case↓
+ | |■Condition (Number):   [1] CSelf27[Code] <=  29999  /  [2] CSelf27[Code] <=  39999  
+ | |-◇Condition:  [1]  [ CSelf27[Code] <= 29999   ] Case↓
+ | | |■Set Variable: CSelf15[Target ID] = CSelf27[Code] % 20000 
+ | | |■Load DB(User):  CSelf35[Target Equipment Type] = UserDB[ "Weapons":CSelf15[Target ID]:"Equipment Type" ] (3:-:2) 
  | | |■
- | |-◇Condition:  [2]  [ CSelf27[コード] <= 39999   ] Case↓
- | | |■Set Variable: CSelf15[処理番号] = CSelf27[コード] % 30000 
- | | |■Load DB(User):  CSelf35[対象の装備タイプ] = UserDB[ "Armors":CSelf15[処理番号]:"Equipment Type" ] (4:-:2) 
+ | |-◇Condition:  [2]  [ CSelf27[Code] <= 39999   ] Case↓
+ | | |■Set Variable: CSelf15[Target ID] = CSelf27[Code] % 30000 
+ | | |■Load DB(User):  CSelf35[Target Equipment Type] = UserDB[ "Armors":CSelf15[Target ID]:"Equipment Type" ] (4:-:2) 
  | | |■
  | |◇End◇
- | |■Load DB(Var):  CSelf23[パーティ人数] = VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) 
- | |■Set Variable: CSelf10[一時変数A] = -1 + 0 
- | |■Repeat Loop [ CSelf23[パーティ人数] ] Times
- | | |■Set Variable: CSelf10[一時変数A] += 1 + 0 
- | | |■Set Variable: CSelf33[装備可能フラグ] = 1 + 0 
- | | |■Call Event [Name]: CSelf14[キャラID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf10[一時変数A]
- | | |■Condition (Number):   [1] CSelf14[キャラID] >=  0  
- | | |-◇Condition:  [1]  [ CSelf14[キャラID] >= 0   ] Case↓
- | | | |■Condition (Number):   [1] CSelf35[対象の装備タイプ] ==  -1  /  [2] CSelf35[対象の装備タイプ] <=  -2  /  [3] CSelf35[対象の装備タイプ] >=  0  
- | | | |-◇Condition:  [1]  [ CSelf35[対象の装備タイプ] == -1   ] Case↓
+ | |■Load DB(Var):  CSelf23[Party Size] = VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) 
+ | |■Set Variable: CSelf10[Temp Variable A] = -1 + 0 
+ | |■Repeat Loop [ CSelf23[Party Size] ] Times
+ | | |■Set Variable: CSelf10[Temp Variable A] += 1 + 0 
+ | | |■Set Variable: CSelf33[Equip-Possible Flag] = 1 + 0 
+ | | |■Call Event [Name]: CSelf14[Character ID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf10[Temp Variable A]
+ | | |■Condition (Number):   [1] CSelf14[Character ID] >=  0  
+ | | |-◇Condition:  [1]  [ CSelf14[Character ID] >= 0   ] Case↓
+ | | | |■Condition (Number):   [1] CSelf35[Target Equipment Type] ==  -1  /  [2] CSelf35[Target Equipment Type] <=  -2  /  [3] CSelf35[Target Equipment Type] >=  0  
+ | | | |-◇Condition:  [1]  [ CSelf35[Target Equipment Type] == -1   ] Case↓
  | | | | |▼ If no one can equip it
- | | | | |■Set Variable: CSelf33[装備可能フラグ] = 0 + 0 
+ | | | | |■Set Variable: CSelf33[Equip-Possible Flag] = 0 + 0 
  | | | | |■
- | | | |-◇Condition:  [2]  [ CSelf35[対象の装備タイプ] <= -2   ] Case↓
+ | | | |-◇Condition:  [2]  [ CSelf35[Target Equipment Type] <= -2   ] Case↓
  | | | | |▼ If anyone can equip it
- | | | | |■Set Variable: CSelf33[装備可能フラグ] = 1 + 0 
+ | | | | |■Set Variable: CSelf33[Equip-Possible Flag] = 1 + 0 
  | | | | |■
- | | | |-◇Condition:  [3]  [ CSelf35[対象の装備タイプ] >= 0   ] Case↓
+ | | | |-◇Condition:  [3]  [ CSelf35[Target Equipment Type] >= 0   ] Case↓
  | | | | |▼ If its type is set
- | | | | |▼ ここから10個分の装備タイプを調査。同じ値のが１つでもあれば装備可能判定が「0」になる
- | | | | |■Load DB(Var):  CSelf36[一時装備タイプ] = VarDB[ "Allies":CSelf14[キャラID]:"Equippable Type 1" ] (0:-:36) 
- | | | | |■Set Variable: [Limit] CSelf33[装備可能フラグ] *= CSelf36[一時装備タイプ] - CSelf35[対象の装備タイプ] 
- | | | | |■Load DB(Var):  CSelf36[一時装備タイプ] = VarDB[ "Allies":CSelf14[キャラID]:"Equippable Type 2" ] (0:-:37) 
- | | | | |■Set Variable: [Limit] CSelf33[装備可能フラグ] *= CSelf36[一時装備タイプ] - CSelf35[対象の装備タイプ] 
- | | | | |■Load DB(Var):  CSelf36[一時装備タイプ] = VarDB[ "Allies":CSelf14[キャラID]:"Equippable Type 3" ] (0:-:38) 
- | | | | |■Set Variable: [Limit] CSelf33[装備可能フラグ] *= CSelf36[一時装備タイプ] - CSelf35[対象の装備タイプ] 
- | | | | |■Load DB(Var):  CSelf36[一時装備タイプ] = VarDB[ "Allies":CSelf14[キャラID]:"Equippable Type 4" ] (0:-:39) 
- | | | | |■Set Variable: [Limit] CSelf33[装備可能フラグ] *= CSelf36[一時装備タイプ] - CSelf35[対象の装備タイプ] 
- | | | | |■Load DB(Var):  CSelf36[一時装備タイプ] = VarDB[ "Allies":CSelf14[キャラID]:"Equippable Type 5" ] (0:-:40) 
- | | | | |■Set Variable: [Limit] CSelf33[装備可能フラグ] *= CSelf36[一時装備タイプ] - CSelf35[対象の装備タイプ] 
- | | | | |■Load DB(Var):  CSelf36[一時装備タイプ] = VarDB[ "Allies":CSelf14[キャラID]:"Equippable Type 6" ] (0:-:41) 
- | | | | |■Set Variable: [Limit] CSelf33[装備可能フラグ] *= CSelf36[一時装備タイプ] - CSelf35[対象の装備タイプ] 
- | | | | |■Load DB(Var):  CSelf36[一時装備タイプ] = VarDB[ "Allies":CSelf14[キャラID]:"Equippable Type 7" ] (0:-:42) 
- | | | | |■Set Variable: [Limit] CSelf33[装備可能フラグ] *= CSelf36[一時装備タイプ] - CSelf35[対象の装備タイプ] 
- | | | | |■Load DB(Var):  CSelf36[一時装備タイプ] = VarDB[ "Allies":CSelf14[キャラID]:"Equippable Type 8" ] (0:-:43) 
- | | | | |■Set Variable: [Limit] CSelf33[装備可能フラグ] *= CSelf36[一時装備タイプ] - CSelf35[対象の装備タイプ] 
- | | | | |■Load DB(Var):  CSelf36[一時装備タイプ] = VarDB[ "Allies":CSelf14[キャラID]:"Equippable Type 9" ] (0:-:44) 
- | | | | |■Set Variable: [Limit] CSelf33[装備可能フラグ] *= CSelf36[一時装備タイプ] - CSelf35[対象の装備タイプ] 
- | | | | |■Load DB(Var):  CSelf36[一時装備タイプ] = VarDB[ "Allies":CSelf14[キャラID]:"Equippable Type 10" ] (0:-:45) 
- | | | | |■Set Variable: [Limit] CSelf33[装備可能フラグ] *= CSelf36[一時装備タイプ] - CSelf35[対象の装備タイプ] 
- | | | | |▼ 0と1を反転
- | | | | |■Condition (Number):   [1] CSelf33[装備可能フラグ] ==  0  
- | | | | |-◇Condition:  [1]  [ CSelf33[装備可能フラグ] == 0   ] Case↓
- | | | | | |▼ 装備可能
- | | | | | |■Set Variable: CSelf33[装備可能フラグ] = 1 + 0 
+ | | | | |▼ Check the 10 equippable types; if any match, the equip‑possible flag becomes 0
+ | | | | |■Load DB(Var):  CSelf36[Temp Equipment Type] = VarDB[ "Allies":CSelf14[Character ID]:"Equippable Type 1" ] (0:-:36) 
+ | | | | |■Set Variable: [Limit] CSelf33[Equip-Possible Flag] *= CSelf36[Temp Equipment Type] - CSelf35[Target Equipment Type] 
+ | | | | |■Load DB(Var):  CSelf36[Temp Equipment Type] = VarDB[ "Allies":CSelf14[Character ID]:"Equippable Type 2" ] (0:-:37) 
+ | | | | |■Set Variable: [Limit] CSelf33[Equip-Possible Flag] *= CSelf36[Temp Equipment Type] - CSelf35[Target Equipment Type] 
+ | | | | |■Load DB(Var):  CSelf36[Temp Equipment Type] = VarDB[ "Allies":CSelf14[Character ID]:"Equippable Type 3" ] (0:-:38) 
+ | | | | |■Set Variable: [Limit] CSelf33[Equip-Possible Flag] *= CSelf36[Temp Equipment Type] - CSelf35[Target Equipment Type] 
+ | | | | |■Load DB(Var):  CSelf36[Temp Equipment Type] = VarDB[ "Allies":CSelf14[Character ID]:"Equippable Type 4" ] (0:-:39) 
+ | | | | |■Set Variable: [Limit] CSelf33[Equip-Possible Flag] *= CSelf36[Temp Equipment Type] - CSelf35[Target Equipment Type] 
+ | | | | |■Load DB(Var):  CSelf36[Temp Equipment Type] = VarDB[ "Allies":CSelf14[Character ID]:"Equippable Type 5" ] (0:-:40) 
+ | | | | |■Set Variable: [Limit] CSelf33[Equip-Possible Flag] *= CSelf36[Temp Equipment Type] - CSelf35[Target Equipment Type] 
+ | | | | |■Load DB(Var):  CSelf36[Temp Equipment Type] = VarDB[ "Allies":CSelf14[Character ID]:"Equippable Type 6" ] (0:-:41) 
+ | | | | |■Set Variable: [Limit] CSelf33[Equip-Possible Flag] *= CSelf36[Temp Equipment Type] - CSelf35[Target Equipment Type] 
+ | | | | |■Load DB(Var):  CSelf36[Temp Equipment Type] = VarDB[ "Allies":CSelf14[Character ID]:"Equippable Type 7" ] (0:-:42) 
+ | | | | |■Set Variable: [Limit] CSelf33[Equip-Possible Flag] *= CSelf36[Temp Equipment Type] - CSelf35[Target Equipment Type] 
+ | | | | |■Load DB(Var):  CSelf36[Temp Equipment Type] = VarDB[ "Allies":CSelf14[Character ID]:"Equippable Type 8" ] (0:-:43) 
+ | | | | |■Set Variable: [Limit] CSelf33[Equip-Possible Flag] *= CSelf36[Temp Equipment Type] - CSelf35[Target Equipment Type] 
+ | | | | |■Load DB(Var):  CSelf36[Temp Equipment Type] = VarDB[ "Allies":CSelf14[Character ID]:"Equippable Type 9" ] (0:-:44) 
+ | | | | |■Set Variable: [Limit] CSelf33[Equip-Possible Flag] *= CSelf36[Temp Equipment Type] - CSelf35[Target Equipment Type] 
+ | | | | |■Load DB(Var):  CSelf36[Temp Equipment Type] = VarDB[ "Allies":CSelf14[Character ID]:"Equippable Type 10" ] (0:-:45) 
+ | | | | |■Set Variable: [Limit] CSelf33[Equip-Possible Flag] *= CSelf36[Temp Equipment Type] - CSelf35[Target Equipment Type] 
+ | | | | |▼ Invert the equip-possible flag (0 ↔ 1)
+ | | | | |■Condition (Number):   [1] CSelf33[Equip-Possible Flag] ==  0  
+ | | | | |-◇Condition:  [1]  [ CSelf33[Equip-Possible Flag] == 0   ] Case↓
+ | | | | | |▼ Can equip
+ | | | | | |■Set Variable: CSelf33[Equip-Possible Flag] = 1 + 0 
  | | | | | |■
  | | | | |-◇Else
- | | | | | |▼ 装備不能
- | | | | | |■Set Variable: CSelf33[装備可能フラグ] = 0 + 0 
+ | | | | | |▼ Cannot equip
+ | | | | | |■Set Variable: CSelf33[Equip-Possible Flag] = 0 + 0 
  | | | | | |■
  | | | | |◇End◇
  | | | | |■
  | | | |◇End◇
  | | | |■Repeat Loop [ 1 ] Times
- | | | | |▼ そのキャラが装備中かどうかチェック
- | | | | |■Set Variable: CSelf37[装備中フラグ] = 1 + 0 
- | | | | |■Call Event [Name]: CSelf36[一時装備タイプ] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf14[キャラID] / 0
- | | | | |■Set Variable: [Limit] CSelf37[装備中フラグ] *= CSelf27[コード] - CSelf36[一時装備タイプ] 
- | | | | |■Call Event [Name]: CSelf36[一時装備タイプ] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf14[キャラID] / 1
- | | | | |■Set Variable: [Limit] CSelf37[装備中フラグ] *= CSelf27[コード] - CSelf36[一時装備タイプ] 
- | | | | |■Call Event [Name]: CSelf36[一時装備タイプ] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf14[キャラID] / 2
- | | | | |■Set Variable: [Limit] CSelf37[装備中フラグ] *= CSelf27[コード] - CSelf36[一時装備タイプ] 
- | | | | |■Call Event [Name]: CSelf36[一時装備タイプ] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf14[キャラID] / 3
- | | | | |■Set Variable: [Limit] CSelf37[装備中フラグ] *= CSelf27[コード] - CSelf36[一時装備タイプ] 
- | | | | |■Call Event [Name]: CSelf36[一時装備タイプ] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf14[キャラID] / 4
- | | | | |■Set Variable: [Limit] CSelf37[装備中フラグ] *= CSelf27[コード] - CSelf36[一時装備タイプ] 
- | | | | |■Call Event [Name]: CSelf36[一時装備タイプ] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf14[キャラID] / 5
- | | | | |■Set Variable: [Limit] CSelf37[装備中フラグ] *= CSelf27[コード] - CSelf36[一時装備タイプ] 
- | | | | |■Call Event [Name]: CSelf36[一時装備タイプ] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf14[キャラID] / 6
- | | | | |■Set Variable: [Limit] CSelf37[装備中フラグ] *= CSelf27[コード] - CSelf36[一時装備タイプ] 
- | | | | |■Call Event [Name]: CSelf36[一時装備タイプ] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf14[キャラID] / 7
- | | | | |■Set Variable: [Limit] CSelf37[装備中フラグ] *= CSelf27[コード] - CSelf36[一時装備タイプ] 
- | | | | |▼ もし一個でも対象の装備をしていれば、ここでフラグが0になっている
- | | | | |■Condition (Number):   [1] CSelf37[装備中フラグ] ==  0  
- | | | | |-◇Condition:  [1]  [ CSelf37[装備中フラグ] == 0   ] Case↓
- | | | | | |▼ 装備可能状態を2にする
- | | | | | |■Set Variable: CSelf33[装備可能フラグ] = 2 + 0 
+ | | | | |▼ Check whether the character has it equipped
+ | | | | |■Set Variable: CSelf37[Equipped State] = 1 + 0 
+ | | | | |■Call Event [Name]: CSelf36[Temp Equipment Type] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf14[Character ID] / 0
+ | | | | |■Set Variable: [Limit] CSelf37[Equipped State] *= CSelf27[Code] - CSelf36[Temp Equipment Type] 
+ | | | | |■Call Event [Name]: CSelf36[Temp Equipment Type] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf14[Character ID] / 1
+ | | | | |■Set Variable: [Limit] CSelf37[Equipped State] *= CSelf27[Code] - CSelf36[Temp Equipment Type] 
+ | | | | |■Call Event [Name]: CSelf36[Temp Equipment Type] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf14[Character ID] / 2
+ | | | | |■Set Variable: [Limit] CSelf37[Equipped State] *= CSelf27[Code] - CSelf36[Temp Equipment Type] 
+ | | | | |■Call Event [Name]: CSelf36[Temp Equipment Type] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf14[Character ID] / 3
+ | | | | |■Set Variable: [Limit] CSelf37[Equipped State] *= CSelf27[Code] - CSelf36[Temp Equipment Type] 
+ | | | | |■Call Event [Name]: CSelf36[Temp Equipment Type] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf14[Character ID] / 4
+ | | | | |■Set Variable: [Limit] CSelf37[Equipped State] *= CSelf27[Code] - CSelf36[Temp Equipment Type] 
+ | | | | |■Call Event [Name]: CSelf36[Temp Equipment Type] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf14[Character ID] / 5
+ | | | | |■Set Variable: [Limit] CSelf37[Equipped State] *= CSelf27[Code] - CSelf36[Temp Equipment Type] 
+ | | | | |■Call Event [Name]: CSelf36[Temp Equipment Type] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf14[Character ID] / 6
+ | | | | |■Set Variable: [Limit] CSelf37[Equipped State] *= CSelf27[Code] - CSelf36[Temp Equipment Type] 
+ | | | | |■Call Event [Name]: CSelf36[Temp Equipment Type] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf14[Character ID] / 7
+ | | | | |■Set Variable: [Limit] CSelf37[Equipped State] *= CSelf27[Code] - CSelf36[Temp Equipment Type] 
+ | | | | |▼ If at least one equipment matches, the state is 0
+ | | | | |■Condition (Number):   [1] CSelf37[Equipped State] ==  0  
+ | | | | |-◇Condition:  [1]  [ CSelf37[Equipped State] == 0   ] Case↓
+ | | | | | |▼ Set the equip-possible flag to 2
+ | | | | | |■Set Variable: CSelf33[Equip-Possible Flag] = 2 + 0 
  | | | | | |■
  | | | | |◇End◇
  | | | | |■
  | | | |◇Loop End Point◇◇
- | | | |▼ 装備可能状態を格納する
- | | | |■Call Event [Name]: CSelf14[キャラID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf10[一時変数A]
- | | | |■Call Event [Name]: CSelf6[一時変数A] = ["X[Map]Get Parameter (String)"] <CommonEv 73>  / CSelf14[キャラID] / 0:Name
- | | | |■Set String: CSelf6[一時変数A] += "　"
- | | | |■Condition (Number):   [1] CSelf33[装備可能フラグ] ==  0  /  [2] CSelf33[装備可能フラグ] ==  1  /  [3] CSelf33[装備可能フラグ] ==  2  
- | | | |-◇Condition:  [1]  [ CSelf33[装備可能フラグ] == 0   ] Case↓
- | | | | |■Set String: CSelf6[一時変数A] += "× Cannot Equip"
+ | | | |▼ Store the equip-possible status
+ | | | |■Call Event [Name]: CSelf14[Character ID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf10[Temp Variable A]
+ | | | |■Call Event [Name]: CSelf6[Temp String] = ["X[Map]Get Parameter (String)"] <CommonEv 73>  / CSelf14[Character ID] / 0:Name
+ | | | |■Set String: CSelf6[Temp String] += "　"
+ | | | |■Condition (Number):   [1] CSelf33[Equip-Possible Flag] ==  0  /  [2] CSelf33[Equip-Possible Flag] ==  1  /  [3] CSelf33[Equip-Possible Flag] ==  2  
+ | | | |-◇Condition:  [1]  [ CSelf33[Equip-Possible Flag] == 0   ] Case↓
+ | | | | |■Set String: CSelf6[Temp String] += "× Cannot Equip"
  | | | | |■
- | | | |-◇Condition:  [2]  [ CSelf33[装備可能フラグ] == 1   ] Case↓
- | | | | |■Set String: CSelf6[一時変数A] += "✔ Can Equip"
+ | | | |-◇Condition:  [2]  [ CSelf33[Equip-Possible Flag] == 1   ] Case↓
+ | | | | |■Set String: CSelf6[Temp String] += "✔ Can Equip"
  | | | | |■
- | | | |-◇Condition:  [3]  [ CSelf33[装備可能フラグ] == 2   ] Case↓
- | | | | |■Set String: CSelf6[一時変数A] += "■ Equipped"
+ | | | |-◇Condition:  [3]  [ CSelf33[Equip-Possible Flag] == 2   ] Case↓
+ | | | | |■Set String: CSelf6[Temp String] += "■ Equipped"
  | | | | |■
  | | | |◇End◇
- | | | |■Set String: CSelf6[一時変数A] += "\n"
- | | | |▼ 万能ウィンドウのオプション値に追加
- | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[格納先番号]:"[Option] Spare String A" ] (19:-:9) +=  CSelf6[一時変数A]
+ | | | |■Set String: CSelf6[Temp String] += "\n"
+ | | | |▼ Add it to the Universal Window's option value
+ | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf22[Destination Index]:"[Option] Spare String A" ] (19:-:9) +=  CSelf6[Temp String]
  | | | |■
  | | |◇End◇
  | | |■
  | |◇Loop End Point◇◇
  | |■
  |◇End◇
- |●Label Jump [計算戻り\cself[90]] >>>>>>>>>>>>>>>>>>>>>>>>>
+ |●Label Jump [Return Point \cself[90]] >>>>>>>>>>>>>>>>>>>>>>>>>
  |■
 ◇Loop End Point◇◇
 ■
