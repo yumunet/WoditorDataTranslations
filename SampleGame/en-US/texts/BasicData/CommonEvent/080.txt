@@ -81,7 +81,7 @@ CSELF_NAME_17=
 CSELF_NAME_18=
 CSELF_NAME_19=
 CSELF_NAME_20=Target Ally ID
-CSELF_NAME_21=Current Target
+CSELF_NAME_21=Target Party Member
 CSELF_NAME_22=Current Party Size
 CSELF_NAME_23=Max Party Size
 CSELF_NAME_24=
@@ -217,17 +217,17 @@ WoditorEvCOMMAND_END
 ■Party Sprites: Erase All Members
 ■Load DB(Var):  CSelf22[Current Party Size] = VarDB[ "Base System Variables":"Current Party Size":0 ] (18:4:Number) 
 ■Load DB(Var):  CSelf23[Max Party Size] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
-■Set Variable: CSelf21[Current Target] = -1 + 0 
+■Set Variable: CSelf21[Target Party Member] = -1 + 0 
 ■Repeat Loop [ CSelf22[Current Party Size] ] Times
- |■Set Variable: CSelf21[Current Target] += 1 + 0 
- |■Condition (Number):   [1] CSelf21[Current Target] >=  CSelf23[Max Party Size]  
- |-◇Condition:  [1]  [ CSelf21[Current Target] >= CSelf23[Max Party Size]   ] Case↓
+ |■Set Variable: CSelf21[Target Party Member] += 1 + 0 
+ |■Condition (Number):   [1] CSelf21[Target Party Member] >=  CSelf23[Max Party Size]  
+ |-◇Condition:  [1]  [ CSelf21[Target Party Member] >= CSelf23[Max Party Size]   ] Case↓
  | |■Debug Text: [Error]\nParty sprites can only be set for\nup to \cself[23] members.
  | |■Exit Event
  | |■
  |◇End◇
  |▼ Get the character ID from the Party database
- |■Set Variable: CSelf10[Temp Variable A] = CSelf21[Current Target] + 1 
+ |■Set Variable: CSelf10[Temp Variable A] = CSelf21[Target Party Member] + 1 
  |■Load DB(Var):  CSelf20[Target Ally ID] = VarDB[ "Party":0:CSelf10[Temp Variable A] ] (6:Main Settings:-) 
  |■Load DB(Var):  CSelf9[Sprite File] = VarDB[ "Allies":CSelf20[Target Ally ID]:"Character Sprite" ] (0:-:2) 
  |■Condition (String):   [1] CSelf9[Sprite File] Is Not Equal to ""

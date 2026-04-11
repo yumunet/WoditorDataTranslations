@@ -71,7 +71,7 @@ CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=
 CSELF_NAME_10=Repeat Count
-CSELF_NAME_11=Processing Position
+CSELF_NAME_11=Target Position
 CSELF_NAME_12=Equipment Position (in DB)
 CSELF_NAME_13=Max Equipment Slots
 CSELF_NAME_14=Equipment Slot
@@ -581,9 +581,9 @@ WoditorEvCOMMAND_END
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■Load DB(Var):  CSelf10[Repeat Count] = VarDB[Type "Allies"(0)'s Data Count]
 ▼ Loop for all characters.
-■Set Variable: CSelf11[Processing Position] = -1 + 0 
+■Set Variable: CSelf11[Target Position] = -1 + 0 
 ■Repeat Loop [ CSelf10[Repeat Count] ] Times
- |■Set Variable: CSelf11[Processing Position] += 1 + 0 
+ |■Set Variable: CSelf11[Target Position] += 1 + 0 
  |■Load DB(User):  CSelf13[Max Equipment Slots] = UserDB[ "System Settings":0:"Equippable Slots" ] (17:Basic System Settings:22) 
  |▼ Loop to check each piece of equipment from here.
  |■Set Variable: CSelf14[Equipment Slot] = -1 + 0 
@@ -592,7 +592,7 @@ WoditorEvCOMMAND_END
  | |▼ Read the original ID (0-9999).
  | |■Set Variable: CSelf12[Equipment Position (in DB)] += 1 + 0 
  | |■Set Variable: CSelf14[Equipment Slot] += 1 + 0 
- | |■Load DB(Var):  CSelf20[Temp Storage ID] = VarDB[ "Allies":CSelf11[Processing Position]:CSelf12[Equipment Position (in DB)] ] (0:-:-) 
+ | |■Load DB(Var):  CSelf20[Temp Storage ID] = VarDB[ "Allies":CSelf11[Target Position]:CSelf12[Equipment Position (in DB)] ] (0:-:-) 
  | |■Condition (Number):   [1] CSelf14[Equipment Slot] ==  0  /  [2] CSelf14[Equipment Slot] >=  1  
  | |-◇Condition:  [1]  [ CSelf14[Equipment Slot] == 0   ] Case↓
  | | |▼ If the ID is 0 or higher, convert it to Weapon ID (20000+).
@@ -614,20 +614,20 @@ WoditorEvCOMMAND_END
  | | |■
  | |◇End◇
  | |▼ Store again.
- | |■Write to DB(Var): VarDB[ "Allies":CSelf11[Processing Position]:CSelf12[Equipment Position (in DB)] ] (0:-:-) =  CSelf20[Temp Storage ID]
+ | |■Write to DB(Var): VarDB[ "Allies":CSelf11[Target Position]:CSelf12[Equipment Position (in DB)] ] (0:-:-) =  CSelf20[Temp Storage ID]
  | |■
  |◇Loop End Point◇◇
  |▼  
  |▼ Reset auto-change amount to 0.
- |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf11[Processing Position]:"[Temp] HP Auto Change" ] (17:-:11) =  0
- |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf11[Processing Position]:"[Temp] SP Auto Change" ] (17:-:12) =  0
+ |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf11[Target Position]:"[Temp] HP Auto Change" ] (17:-:11) =  0
+ |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf11[Target Position]:"[Temp] SP Auto Change" ] (17:-:12) =  0
  |▼ Calculate temporary stats.
- |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf11[Processing Position]
- |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf11[Processing Position]
- |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf11[Processing Position]
+ |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf11[Target Position]
+ |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf11[Target Position]
+ |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf11[Target Position]
  |▼ Fill up HP and SP.
- |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf11[Processing Position] / 22:HP / 999999 / 0:No
- |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf11[Processing Position] / 23:SP / 999999 / 0:No
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf11[Target Position] / 22:HP / 999999 / 0:No
+ |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf11[Target Position] / 23:SP / 999999 / 0:No
  |■
 ◇Loop End Point◇◇
 ▼  

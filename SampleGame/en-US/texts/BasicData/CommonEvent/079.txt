@@ -80,9 +80,9 @@ CSELF_NAME_16=Max Party Size
 CSELF_NAME_17=
 CSELF_NAME_18=In-Battle Flag
 CSELF_NAME_19=
-CSELF_NAME_20=Processing Ally ID
-CSELF_NAME_21=Processing Target
-CSELF_NAME_22=Party Member Count
+CSELF_NAME_20=Target Ally ID
+CSELF_NAME_21=Target Party Member
+CSELF_NAME_22=Current Party Size
 CSELF_NAME_23=Last Empty Slot Position
 CSELF_NAME_24=
 CSELF_NAME_25=
@@ -275,23 +275,23 @@ WoditorEvCOMMAND_END
 ▼  
 ▼ [Main Common Events Calling This]
 ▼ ―――――――――――――――――――――――――――――――――――
-■Set Variable: CSelf22[Party Member Count] = 0 + 0 
-■Set Variable: CSelf21[Processing Target] = -1 + 0 
+■Set Variable: CSelf22[Current Party Size] = 0 + 0 
+■Set Variable: CSelf21[Target Party Member] = -1 + 0 
 ■Set Variable: CSelf23[Last Empty Slot Position] = 0 + 0 
 ■Load DB(Var):  CSelf16[Max Party Size] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
 ■Load DB(Var):  CSelf18[In-Battle Flag] = VarDB[ "Base System Variables":"[Battle] In Battle?":0 ] (18:68:Number) 
 ■Repeat Loop [ CSelf16[Max Party Size] ] Times
- |■Set Variable: CSelf21[Processing Target] += 1 + 0 
+ |■Set Variable: CSelf21[Target Party Member] += 1 + 0 
  |▼ Get character ID from Party database.
- |■Set Variable: CSelf10[Temp Variable A] = CSelf21[Processing Target] + 1 
- |■Load DB(Var):  CSelf20[Processing Ally ID] = VarDB[ "Party":0:CSelf10[Temp Variable A] ] (6:Main Settings:-) 
- |■Condition (Number):   [1] CSelf20[Processing Ally ID] >=  0  
- |-◇Condition:  [1]  [ CSelf20[Processing Ally ID] >= 0   ] Case↓
- | |■Set Variable: CSelf22[Party Member Count] += 1 + 0 
+ |■Set Variable: CSelf10[Temp Variable A] = CSelf21[Target Party Member] + 1 
+ |■Load DB(Var):  CSelf20[Target Ally ID] = VarDB[ "Party":0:CSelf10[Temp Variable A] ] (6:Main Settings:-) 
+ |■Condition (Number):   [1] CSelf20[Target Ally ID] >=  0  
+ |-◇Condition:  [1]  [ CSelf20[Target Ally ID] >= 0   ] Case↓
+ | |■Set Variable: CSelf22[Current Party Size] += 1 + 0 
  | |■Condition (Number):   [1] CSelf23[Last Empty Slot Position] >=  1  
  | |-◇Condition:  [1]  [ CSelf23[Last Empty Slot Position] >= 1   ] Case↓
  | | |▼ If the empty slot is at a previous position, move the data there.
- | | |■Write to DB(Var): VarDB[ "Party":0:CSelf23[Last Empty Slot Position] ] (6:Main Settings:-) =  CSelf20[Processing Ally ID]
+ | | |■Write to DB(Var): VarDB[ "Party":0:CSelf23[Last Empty Slot Position] ] (6:Main Settings:-) =  CSelf20[Target Ally ID]
  | | |■Write to DB(Var): VarDB[ "Party":0:CSelf10[Temp Variable A] ] (6:Main Settings:-) =  -1
  | | |■Condition (Number):   [1] CSelf18[In-Battle Flag] ==  1  
  | | |-◇Condition:  [1]  [ CSelf18[In-Battle Flag] == 1   ] Case↓
@@ -299,7 +299,7 @@ WoditorEvCOMMAND_END
  | | | |■Set Variable: CSelf30[Battle Destination] = CSelf23[Last Empty Slot Position] - 1 
  | | | |▼ Move data from databases 10 through 13.
  | | | |■Set Variable: CSelf40[DB Number] = 10 + 0 
- | | | |■Set Variable: CSelf41[Source] = CSelf21[Processing Target] + 0 
+ | | | |■Set Variable: CSelf41[Source] = CSelf21[Target Party Member] + 0 
  | | | |■Set Variable: CSelf42[Destination] = CSelf30[Battle Destination] + 0 
  | | | |■Repeat Loop [ 4 ] Times
  | | | | |■Load DB(Var):  CSelf45[Field Count] = VarDB[Type CSelf40[DB Number](-)'s Field Count]
@@ -346,19 +346,19 @@ WoditorEvCOMMAND_END
  |■
 ◇Loop End Point◇◇
 ▼ Store party member count.
-■Write to DB(Var): VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) =  CSelf22[Party Member Count]
-■Set Variable: CSelf21[Processing Target] = CSelf22[Party Member Count] + 0 
+■Write to DB(Var): VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) =  CSelf22[Current Party Size]
+■Set Variable: CSelf21[Target Party Member] = CSelf22[Current Party Size] + 0 
 ■Loop Start
- |■Condition (Number):   [1] CSelf21[Processing Target] >=  CSelf16[Max Party Size]  
- |-◇Condition:  [1]  [ CSelf21[Processing Target] >= CSelf16[Max Party Size]   ] Case↓
+ |■Condition (Number):   [1] CSelf21[Target Party Member] >=  CSelf16[Max Party Size]  
+ |-◇Condition:  [1]  [ CSelf21[Target Party Member] >= CSelf16[Max Party Size]   ] Case↓
  | |■Break Loop
  | |■
  |◇End◇
- |■Write to DB(Var): [Reset Type "×┏Battle Temp Status"(10) Data CSelf21[Processing Target]]
- |■Write to DB(Var): [Reset Type "×┣Element Resist Calc"(11) Data CSelf21[Processing Target]]
- |■Write to DB(Var): [Reset Type "×┣State Resist Calc"(12) Data CSelf21[Processing Target]]
- |■Write to DB(Var): [Reset Type "×┣State List"(13) Data CSelf21[Processing Target]]
- |■Set Variable: CSelf21[Processing Target] += 1 + 0 
+ |■Write to DB(Var): [Reset Type "×┏Battle Temp Status"(10) Data CSelf21[Target Party Member]]
+ |■Write to DB(Var): [Reset Type "×┣Element Resist Calc"(11) Data CSelf21[Target Party Member]]
+ |■Write to DB(Var): [Reset Type "×┣State Resist Calc"(12) Data CSelf21[Target Party Member]]
+ |■Write to DB(Var): [Reset Type "×┣State List"(13) Data CSelf21[Target Party Member]]
+ |■Set Variable: CSelf21[Target Party Member] += 1 + 0 
  |■
 ◇Loop End Point◇◇
 ■

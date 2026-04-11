@@ -83,7 +83,7 @@ CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=State Display Text
 CSELF_NAME_10=Total State Count
-CSELF_NAME_11=Processing State ID
+CSELF_NAME_11=Target State ID
 CSELF_NAME_12=Base Turns
 CSELF_NAME_13=Change Turns
 CSELF_NAME_14=Total Turns
@@ -558,10 +558,10 @@ WoditorEvCOMMAND_END
  | |■Exit Event
  | |■
  |◇End◇
- |■Set Variable: CSelf11[Processing State ID] = CSelf1[State] + 0 
+ |■Set Variable: CSelf11[Target State ID] = CSelf1[State] + 0 
  |■Load DB(User):  CSelf10[Total State Count] = UserDB[Type "States"(8)'s Data Count]
- |■Condition (Number):   [1] CSelf11[Processing State ID] >=  CSelf10[Total State Count]  
- |-◇Condition:  [1]  [ CSelf11[Processing State ID] >= CSelf10[Total State Count]   ] Case↓
+ |■Condition (Number):   [1] CSelf11[Target State ID] >=  CSelf10[Total State Count]  
+ |-◇Condition:  [1]  [ CSelf11[Target State ID] >= CSelf10[Total State Count]   ] Case↓
  | |■Debug Text: [Error]\n State ID is too large > \cself[1]
  | |■Exit Event
  | |■
@@ -569,8 +569,8 @@ WoditorEvCOMMAND_END
  |■Condition (Number):   [1] CSelf2[Remove=0, Add=1, Update=2] ==  1  /  [2] CSelf2[Remove=0, Add=1, Update=2] ==  0  
  |-◇Condition:  [1]  [ CSelf2[Remove=0, Add=1, Update=2] == 1   ] Case↓
  | |▼ If State ID is negative, do nothing.
- | |■Condition (Number):   [1] CSelf11[Processing State ID] <=  -1  
- | |-◇Condition:  [1]  [ CSelf11[Processing State ID] <= -1   ] Case↓
+ | |■Condition (Number):   [1] CSelf11[Target State ID] <=  -1  
+ | |-◇Condition:  [1]  [ CSelf11[Target State ID] <= -1   ] Case↓
  | | |■Exit Event
  | | |■
  | |◇End◇
@@ -586,8 +586,8 @@ WoditorEvCOMMAND_END
  | | | |-◇Condition:  [1]  [ CSelf17[Turns Left] != 0   ] Case↓
  | | | | |▼ Check if the state changes when stacked.
  | | | | |■Load DB(User):  CSelf31[Stacking State] = UserDB[ "States":CSelf30[Stacking State Check]:"When This State Is Stacked..." ] (8:-:10) 
- | | | | |■Condition (Number):   [1] CSelf31[Stacking State] ==  CSelf11[Processing State ID]  
- | | | | |-◇Condition:  [1]  [ CSelf31[Stacking State] == CSelf11[Processing State ID]   ] Case↓
+ | | | | |■Condition (Number):   [1] CSelf31[Stacking State] ==  CSelf11[Target State ID]  
+ | | | | |-◇Condition:  [1]  [ CSelf31[Stacking State] == CSelf11[Target State ID]   ] Case↓
  | | | | | |■Load DB(User):  CSelf32[Post-Change State] = UserDB[ "States":CSelf30[Stacking State Check]:"┗ Make It Into This State" ] (8:-:11) 
  | | | | | |▼ Process only if the new state to be added and the post-change state are different.
  | | | | | |■Condition (Number):   [1] CSelf31[Stacking State] !=  CSelf32[Post-Change State]  
@@ -625,22 +625,22 @@ WoditorEvCOMMAND_END
  | |◇Loop End Point◇◇
  | |■Repeat Loop [ 1 ] Times
  | | |▼ First, check if it's a state that causes fainting.
- | | |■Load DB(User):  CSelf20[Temp Variable A] = UserDB[ "States":CSelf11[Processing State ID]:"Count as Fainted?" ] (8:-:15) 
+ | | |■Load DB(User):  CSelf20[Temp Variable A] = UserDB[ "States":CSelf11[Target State ID]:"Count as Fainted?" ] (8:-:15) 
  | | |■Condition (Number):   [1] CSelf20[Temp Variable A] ==  2  
  | | |-◇Condition:  [1]  [ CSelf20[Temp Variable A] == 2   ] Case↓
  | | | |▼ If it's set to "On Apply: HP 0 (State 0)," cause instant death.
  | | | |▼ Set the processing state to "fainted."
  | | | |■Set Variable: CSelf1[State] = 0 + 0 
- | | | |■Set Variable: CSelf11[Processing State ID] = 0 + 0 
+ | | | |■Set Variable: CSelf11[Target State ID] = 0 + 0 
  | | | |■
  | | |◇End◇
  | | |■
  | |◇Loop End Point◇◇
  | |▼ Calculate remaining turns. (If base turn is -1, infinite)
- | |■Load DB(User):  CSelf12[Base Turns] = UserDB[ "States":CSelf11[Processing State ID]:"Duration in Turns [-1:Infinite]" ] (8:-:4) 
+ | |■Load DB(User):  CSelf12[Base Turns] = UserDB[ "States":CSelf11[Target State ID]:"Duration in Turns [-1:Infinite]" ] (8:-:4) 
  | |■Condition (Number):   [1] CSelf12[Base Turns] >=  0  
  | |-◇Condition:  [1]  [ CSelf12[Base Turns] >= 0   ] Case↓
- | | |■Load DB(User):  CSelf13[Change Turns] = UserDB[ "States":CSelf11[Processing State ID]:"┗ Duration Variance [±]" ] (8:-:5) 
+ | | |■Load DB(User):  CSelf13[Change Turns] = UserDB[ "States":CSelf11[Target State ID]:"┗ Duration Variance [±]" ] (8:-:5) 
  | | |■Set Variable: CSelf14[Total Turns] = CSelf12[Base Turns] - CSelf13[Change Turns] 
  | | |■Set Variable: CSelf13[Change Turns] *= 2 + 0 
  | | |■Set Variable: CSelf14[Total Turns] += 0  to  CSelf13[Change Turns] 
@@ -653,18 +653,18 @@ WoditorEvCOMMAND_END
  | | |■Set Variable: CSelf14[Total Turns] = -1 + 0 
  | | |■
  | |◇End◇
- | |■Write to DB(Var): VarDB[ "┗ State List":CSelf0[Ally ID]:CSelf11[Processing State ID] ] (5:-:-) =  CSelf14[Total Turns]
+ | |■Write to DB(Var): VarDB[ "┗ State List":CSelf0[Ally ID]:CSelf11[Target State ID] ] (5:-:-) =  CSelf14[Total Turns]
  | |▼ Check whether to remove all other states.
- | |■Load DB(User):  CSelf20[Temp Variable A] = UserDB[ "States":CSelf11[Processing State ID]:"All Other States..." ] (8:-:18) 
+ | |■Load DB(User):  CSelf20[Temp Variable A] = UserDB[ "States":CSelf11[Target State ID]:"All Other States..." ] (8:-:18) 
  | |■Condition (Number):   [1] CSelf20[Temp Variable A] ==  1  
  | |-◇Condition:  [1]  [ CSelf20[Temp Variable A] == 1   ] Case↓
- | | |■Set Variable: CSelf18[Remove All Flag (State ID to Keep, -1 fo..] = CSelf11[Processing State ID] + 0 
+ | | |■Set Variable: CSelf18[Remove All Flag (State ID to Keep, -1 fo..] = CSelf11[Target State ID] + 0 
  | | |■
  | |◇End◇
  | |■
  |-◇Condition:  [2]  [ CSelf2[Remove=0, Add=1, Update=2] == 0   ] Case↓
  | |▼ Set remaining turns to 0.
- | |■Write to DB(Var): VarDB[ "┗ State List":CSelf0[Ally ID]:CSelf11[Processing State ID] ] (5:-:-) =  0
+ | |■Write to DB(Var): VarDB[ "┗ State List":CSelf0[Ally ID]:CSelf11[Target State ID] ] (5:-:-) =  0
  | |■
  |◇End◇
  |■
@@ -682,7 +682,7 @@ WoditorEvCOMMAND_END
  | |▼ -1: Forcibly remove all states / -2: Remove only states that are removed on full recovery
  | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  | |■Load DB(User):  CSelf10[Total State Count] = UserDB[Type "States"(8)'s Data Count]
- | |■Set Variable: CSelf11[Processing State ID] = -1 + 0 
+ | |■Set Variable: CSelf11[Target State ID] = -1 + 0 
  | |■Condition (Number):   [1] CSelf1[State] ==  -1  
  | |-◇Condition:  [1]  [ CSelf1[State] == -1   ] Case↓
  | | |▼ Force remove all.
@@ -694,16 +694,16 @@ WoditorEvCOMMAND_END
  | |-◇Condition:  [1]  [ CSelf1[State] <= -3   ] Case↓
  | | |▼ Remove all except fainting.
  | | |■Set Variable: CSelf10[Total State Count] -= 1 + 0 
- | | |■Set Variable: CSelf11[Processing State ID] = 0 + 0 
+ | | |■Set Variable: CSelf11[Target State ID] = 0 + 0 
  | | |■Set Variable: CSelf1[State] = -2 + 0 
  | | |■
  | |◇End◇
  | |■Repeat Loop [ CSelf10[Total State Count] ] Times
- | | |■Set Variable: CSelf11[Processing State ID] += 1 + 0 
+ | | |■Set Variable: CSelf11[Target State ID] += 1 + 0 
  | | |▼ If the state is -2, remove only states that are removed on full recovery.
  | | |■Condition (Number):   [1] CSelf1[State] ==  -2  
  | | |-◇Condition:  [1]  [ CSelf1[State] == -2   ] Case↓
- | | | |■Load DB(User):  CSelf15[Full Recovery Target?] = UserDB[ "States":CSelf11[Processing State ID]:"Removed by Full Recovery?" ] (8:-:19) 
+ | | | |■Load DB(User):  CSelf15[Full Recovery Target?] = UserDB[ "States":CSelf11[Target State ID]:"Removed by Full Recovery?" ] (8:-:19) 
  | | | |■Condition (Number):   [1] CSelf15[Full Recovery Target?] ==  0  
  | | | |-◇Condition:  [1]  [ CSelf15[Full Recovery Target?] == 0   ] Case↓
  | | | | |▼ If not subject to full recovery, skip.
@@ -712,7 +712,7 @@ WoditorEvCOMMAND_END
  | | | |◇End◇
  | | | |■
  | | |◇End◇
- | | |■Write to DB(Var): VarDB[ "┗ State List":CSelf0[Ally ID]:CSelf11[Processing State ID] ] (5:-:-) =  0
+ | | |■Write to DB(Var): VarDB[ "┗ State List":CSelf0[Ally ID]:CSelf11[Target State ID] ] (5:-:-) =  0
  | | |■
  | |◇Loop End Point◇◇
  | |■
@@ -789,10 +789,10 @@ WoditorEvCOMMAND_END
  |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Temp] Sealed?" ] (17:-:16) =  0
  |▼ Check all states.
  |■Load DB(User):  CSelf10[Total State Count] = UserDB[Type "States"(8)'s Data Count]
- |■Set Variable: CSelf11[Processing State ID] = -1 + 0 
+ |■Set Variable: CSelf11[Target State ID] = -1 + 0 
  |■Repeat Loop [ CSelf10[Total State Count] ] Times
- | |■Set Variable: CSelf11[Processing State ID] += 1 + 0 
- | |■Load DB(Var):  CSelf17[Turns Left] = VarDB[ "┗ State List":CSelf0[Ally ID]:CSelf11[Processing State ID] ] (5:-:-) 
+ | |■Set Variable: CSelf11[Target State ID] += 1 + 0 
+ | |■Load DB(Var):  CSelf17[Turns Left] = VarDB[ "┗ State List":CSelf0[Ally ID]:CSelf11[Target State ID] ] (5:-:-) 
  | |■Condition (Number):   [1] CSelf17[Turns Left] !=  0  
  | |-◇Condition:  [1]  [ CSelf17[Turns Left] != 0   ] Case↓
  | | |■Condition (Number):   [1] CSelf17[Turns Left] >=  1  /  [2] CSelf17[Turns Left] ==  -1  
@@ -806,15 +806,15 @@ WoditorEvCOMMAND_END
  | | | |■
  | | |◇End◇
  | | |▼ Add HP/SP auto-change amount.
- | | |■Load DB(User):  CSelf20[Temp Variable A] = UserDB[ "States":CSelf11[Processing State ID]:"HP Change ±(1 Step on Map)" ] (8:-:36) 
+ | | |■Load DB(User):  CSelf20[Temp Variable A] = UserDB[ "States":CSelf11[Target State ID]:"HP Change ±(1 Step on Map)" ] (8:-:36) 
  | | |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Temp] HP Auto Change" ] (17:-:11) +=  CSelf20[Temp Variable A]
- | | |■Load DB(User):  CSelf20[Temp Variable A] = UserDB[ "States":CSelf11[Processing State ID]:"SP Change ± (1 Step on Map)" ] (8:-:37) 
+ | | |■Load DB(User):  CSelf20[Temp Variable A] = UserDB[ "States":CSelf11[Target State ID]:"SP Change ± (1 Step on Map)" ] (8:-:37) 
  | | |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Temp] SP Auto Change" ] (17:-:12) +=  CSelf20[Temp Variable A]
  | | |▼ Check for sealed state.
- | | |■Load DB(User):  CSelf20[Temp Variable A] = UserDB[ "States":CSelf11[Processing State ID]:"Skill Limitation" ] (8:-:17) 
+ | | |■Load DB(User):  CSelf20[Temp Variable A] = UserDB[ "States":CSelf11[Target State ID]:"Skill Limitation" ] (8:-:17) 
  | | |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Temp] Sealed?" ] (17:-:16) Lower Bound  CSelf20[Temp Variable A]
  | | |▼ If the state is displayed in the status, add it to the state name list.
- | | |■Load DB(User):  CSelf22[Display States?] = UserDB[ "States":CSelf11[Processing State ID]:"Display Type" ] (8:-:1) 
+ | | |■Load DB(User):  CSelf22[Display States?] = UserDB[ "States":CSelf11[Target State ID]:"Display Type" ] (8:-:1) 
  | | |■Condition (Number):   [1] CSelf22[Display States?] &  1  
  | | |-◇Condition:  [1]  [ CSelf22[Display States?] & 1   ] Case↓
  | | | |■Condition (Number):   [1] CSelf23[State Display Count (New Line Every 4)] >=  4  
@@ -836,7 +836,7 @@ WoditorEvCOMMAND_END
  | | | | |◇End◇
  | | | | |■
  | | | |◇End◇
- | | | |■Load DB(User):  CSelf9[State Display Text] += UserDB[ "States":CSelf11[Processing State ID]:"Display Name" ] (8:-:2) 
+ | | | |■Load DB(User):  CSelf9[State Display Text] += UserDB[ "States":CSelf11[Target State ID]:"Display Name" ] (8:-:2) 
  | | | |■Set Variable: CSelf23[State Display Count (New Line Every 4)] += 1 + 0 
  | | | |■
  | | |◇End◇
