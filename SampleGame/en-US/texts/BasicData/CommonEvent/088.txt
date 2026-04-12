@@ -177,36 +177,36 @@ COMMAND_NUM=320
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("[Process Overview]")
-[103][0,1]<0>()("　メニューコマンド一覧を表示・消去、およびカーソル位置の表示更新を行います。")
-[103][0,1]<0>()("　なお、メニューやカーソルの表示座標・サイズは、このコモン内に記述されています。")
+[103][0,1]<0>()("  Displays the menu command list, erases it, or updates the cursor display.")
+[103][0,1]<0>()("  The menu and cursor display coordinates and sizes are defined within this Common Event.")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("　この処理で表示してるメニューコマンドは、可変DBに保存されているコマンド内容です。")
-[103][0,1]<0>()("　コマンド一覧の内容は、後述の「X[移]メニュー内容算出」内で算出されます。")
+[103][0,1]<0>()("  The menu commands displayed by this process are stored in the Variable DB.")
+[103][0,1]<0>()("  The command list itself is created in <dqrt>X┗[Map]Update Menu Commands<dqrt>.")
 [103][0,1]<0>()("")
 [103][0,1]<0>()("[Databases Accessed by This Common Event]")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("[Other Common Events Called from Here]")
-[103][0,1]<0>()("　「表示」時に「X┗[移]メニューコマンド算出」を実行し、コマンド一覧を取得しています。")
+[103][0,1]<0>()("  In <dqrt>Display<dqrt> mode, <dqrt>X┗[Map]Update Menu Commands<dqrt> is executed to get the command list.")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("[Main Common Events Calling This]")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ピクチャ】")
-[103][0,1]<0>()("　基本ピクチャ＋0　＝　背景")
-[103][0,1]<0>()("　基本ピクチャ＋1　＝　メインウィンドウ")
-[103][0,1]<0>()("　基本ピクチャ＋2　＝　カーソル")
-[103][0,1]<0>()("　基本ピクチャ＋3～10　＝　各コマンド項目")
-[103][0,1]<0>()("　基本ピクチャ＋11～12　＝　所持金欄")
+[103][0,1]<0>()("[Pictures]")
+[103][0,1]<0>()("  Base Picture ID + 0 = Background")
+[103][0,1]<0>()("  Base Picture ID + 1 = Main Window")
+[103][0,1]<0>()("  Base Picture ID + 2 = Cursor")
+[103][0,1]<0>()("  Base Picture ID + 3-10 = Command Items")
+[103][0,1]<0>()("  Base Picture ID + 11-12 = Money Display Area")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()(" 　パラメータ設定")
+[103][0,1]<0>()("  Parameter Settings")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("固定値を設定")
+[103][0,1]<0>()("Set a fixed value")
 [121][4,0]<0>(1600020,10000,0,0)()
-[103][0,1]<0>()("外部パラメータ読み込み")
+[103][0,1]<0>()("Load external parameters")
 [111][4,0]<0>(1,1600000,0,2)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("ここでメニューコマンドを算出し、個数を可変DB「基本システム用変数」に格納")
-[300][2,1]<1>(0,0)("X┗[Map]Update Menu Variables")
+[103][0,1]<1>()("Update the menu commands and store the command count in the Variable DB <dqrt>Base System Variables<dqrt>")
+[300][2,1]<1>(0,0)("X┗[Map]Update Menu Commands")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [250][5,4]<0>(18,6,0,69632,1600018)("","Base System Variables","","")
@@ -214,16 +214,16 @@ WoditorEvCOMMAND_START
 [250][5,4]<0>(17,0,0,332288,1600008)("","Images/Sounds","","Window Image File")
 [250][5,4]<0>(17,0,0,332288,1600009)("","Images/Sounds","","Cursor Image File")
 [250][5,4]<0>(18,22,0,69632,1600027)("","Base System Variables","","")
-[103][0,1]<0>()("Ver2.20　座標倍率を縦横別に修正")
+[103][0,1]<0>()("v2.20: Separated the coordinate scale into X and Y values")
 [250][5,4]<0>(18,97,0,69632,1600088)("","Base System Variables","","")
 [250][5,4]<0>(18,98,0,69632,1600089)("","Base System Variables","","")
-[103][0,1]<0>()("座標設定")
+[103][0,1]<0>()("Set coordinates")
 [121][4,0]<0>(1600022,0,0,0)()
 [121][4,0]<0>(1600023,0,0,0)()
 [121][4,0]<0>(1600058,-80,0,0)()
 [121][4,0]<0>(1600059,0,0,0)()
 [121][4,0]<0>(1600024,80,0,0)()
-[103][0,1]<0>()("※縦サイズはコマンド個数に応じてサイズ変更")
+[103][0,1]<0>()("Change the height according to the number of commands")
 [121][4,0]<0>(1600025,1600019,0,0)()
 [121][4,0]<0>(1600025,1600019,4,12544)()
 [121][4,0]<0>(1600025,1600027,0,768)()
@@ -500,36 +500,36 @@ WoditorEvCOMMAND_END
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ [Process Overview]
-▼ 　メニューコマンド一覧を表示・消去、およびカーソル位置の表示更新を行います。
-▼ 　なお、メニューやカーソルの表示座標・サイズは、このコモン内に記述されています。
+▼   Displays the menu command list, erases it, or updates the cursor display.
+▼   The menu and cursor display coordinates and sizes are defined within this Common Event.
 ▼ 
-▼ 　この処理で表示してるメニューコマンドは、可変DBに保存されているコマンド内容です。
-▼ 　コマンド一覧の内容は、後述の「X[移]メニュー内容算出」内で算出されます。
+▼   The menu commands displayed by this process are stored in the Variable DB.
+▼   The command list itself is created in "X┗[Map]Update Menu Commands".
 ▼ 
 ▼ [Databases Accessed by This Common Event]
 ▼  
 ▼ [Other Common Events Called from Here]
-▼ 　「表示」時に「X┗[移]メニューコマンド算出」を実行し、コマンド一覧を取得しています。
+▼   In "Display" mode, "X┗[Map]Update Menu Commands" is executed to get the command list.
 ▼  
 ▼ [Main Common Events Calling This]
 ▼  
-▼ 【ピクチャ】
-▼ 　基本ピクチャ＋0　＝　背景
-▼ 　基本ピクチャ＋1　＝　メインウィンドウ
-▼ 　基本ピクチャ＋2　＝　カーソル
-▼ 　基本ピクチャ＋3～10　＝　各コマンド項目
-▼ 　基本ピクチャ＋11～12　＝　所持金欄
+▼ [Pictures]
+▼   Base Picture ID + 0 = Background
+▼   Base Picture ID + 1 = Main Window
+▼   Base Picture ID + 2 = Cursor
+▼   Base Picture ID + 3-10 = Command Items
+▼   Base Picture ID + 11-12 = Money Display Area
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼  　パラメータ設定
+▼   Parameter Settings
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼ 固定値を設定
+▼ Set a fixed value
 ■Set Variable: CSelf20[基本ピクチャ番号] = 10000 + 0 
-▼ 外部パラメータ読み込み
+▼ Load external parameters
 ■Condition (Number):   [1] CSelf0[処理モード] ==  0  
 -◇Condition:  [1]  [ CSelf0[処理モード] == 0   ] Case↓
- |▼ ここでメニューコマンドを算出し、個数を可変DB「基本システム用変数」に格納
- |■Call Event [Name]: ["X┗[Map]Update Menu Variables"] <CommonEv 89> 
+ |▼ Update the menu commands and store the command count in the Variable DB "Base System Variables"
+ |■Call Event [Name]: ["X┗[Map]Update Menu Commands"] <CommonEv 89> 
  |■
 ◇End◇
 ■Load DB(Var):  CSelf18[ミニフォントサイズ] = VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) 
@@ -537,16 +537,16 @@ WoditorEvCOMMAND_END
 ■Load DB(User):  CSelf8[ウィンドウ画像ファイル] = UserDB[ "Images/Sounds":0:"Window Image File" ] (16:Basic Images/Sounds:0) 
 ■Load DB(User):  CSelf9[カーソル画像ファイル] = UserDB[ "Images/Sounds":0:"Cursor Image File" ] (16:Basic Images/Sounds:1) 
 ■Load DB(Var):  CSelf27[縦項目数] = VarDB[ "Base System Variables":22:0 ] (18:Menu Command Count:Number) 
-▼ Ver2.20　座標倍率を縦横別に修正
+▼ v2.20: Separated the coordinate scale into X and Y values
 ■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
 ■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
-▼ 座標設定
+▼ Set coordinates
 ■Set Variable: CSelf22[表示X] = 0 + 0 
 ■Set Variable: CSelf23[表示Y] = 0 + 0 
 ■Set Variable: CSelf58[表示元X] = -80 + 0 
 ■Set Variable: CSelf59[表示元Y] = 0 + 0 
 ■Set Variable: CSelf24[横サイズ] = 80 + 0 
-▼ ※縦サイズはコマンド個数に応じてサイズ変更
+▼ Change the height according to the number of commands
 ■Set Variable: CSelf25[縦サイズ] = CSelf19[基本フォントサイズ] + 0 
 ■Set Variable: CSelf25[縦サイズ] += CSelf19[基本フォントサイズ] / 4 
 ■Set Variable: CSelf25[縦サイズ] *= CSelf27[縦項目数] + 0 

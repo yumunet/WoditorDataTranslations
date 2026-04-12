@@ -202,7 +202,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("    30: Equipment Status Window, 31: Equipment Status Text")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("  Set Parameters")
+[103][0,1]<0>()("  Parameter Settings")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<0>()("Set a fixed value")
 [121][4,0]<0>(1600020,12000,0,0)()
@@ -213,7 +213,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<0>(17,0,0,332288,1600008)("","Images/Sounds","","Window Image File")
 [250][5,4]<0>(17,0,0,332288,1600009)("","Images/Sounds","","Cursor Image File")
 [250][5,4]<0>(18,0,22,332288,1600027)("","System Settings","","Equippable Slots")
-[103][0,1]<0>()("Ver.2.20: Separated the coordinate scale into X and Y values")
+[103][0,1]<0>()("v2.20: Separated the coordinate scale into X and Y values")
 [250][5,4]<0>(18,97,0,69632,1600088)("","Base System Variables","","")
 [250][5,4]<0>(18,98,0,69632,1600089)("","Base System Variables","","")
 [121][4,0]<0>(1600054,60,0,0)()
@@ -746,7 +746,7 @@ WoditorEvCOMMAND_END
 ▼     30: Equipment Status Window, 31: Equipment Status Text
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼   Set Parameters
+▼   Parameter Settings
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ Set a fixed value
 ■Set Variable: CSelf20[Base Picture ID] = 12000 + 0 
@@ -757,7 +757,7 @@ WoditorEvCOMMAND_END
 ■Load DB(User):  CSelf8[Window Image File] = UserDB[ "Images/Sounds":0:"Window Image File" ] (16:Basic Images/Sounds:0) 
 ■Load DB(User):  CSelf9[Cursor Image File] = UserDB[ "Images/Sounds":0:"Cursor Image File" ] (16:Basic Images/Sounds:1) 
 ■Load DB(User):  CSelf27[Equip Status Row Count] = UserDB[ "System Settings":0:"Equippable Slots" ] (17:Basic System Settings:22) 
-▼ Ver.2.20: Separated the coordinate scale into X and Y values
+▼ v2.20: Separated the coordinate scale into X and Y values
 ■Load DB(Var):  CSelf88[Coordinate Scale X (x10)] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
 ■Load DB(Var):  CSelf89[Coordinate Scale Y (x10)] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
 ■Set Variable: CSelf54[Color R] = 60 + 0 
