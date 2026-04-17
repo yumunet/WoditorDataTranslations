@@ -124,8 +124,8 @@ CSELF_NAME_40=
 CSELF_NAME_41=Temp Item X
 CSELF_NAME_42=Temp Item Y
 CSELF_NAME_43=
-CSELF_NAME_44=Temp Item X 2
-CSELF_NAME_45=Temp Item Y 2
+CSELF_NAME_44=Temp Item X2
+CSELF_NAME_45=Temp Item Y2
 CSELF_NAME_46=Top Box Buy Offset
 CSELF_NAME_47=Top Box Sell Offset
 CSELF_NAME_48=Top Box Cursor Width
@@ -375,14 +375,14 @@ WoditorEvCOMMAND_START
 [150][12,0]<4>(64,1600021,0,1600024,1600025,1,255,1600022,1600023,100,0,1600008)()
 [179][1,0]<4>(1)()
 [103][0,1]<5>()("Animate the pictures (using the Picture Move command)")
-[103][0,1]<5>()("Shift the initial position")
+[103][0,1]<5>()("Set the starting position")
 [121][4,0]<5>(1600041,1600022,0,0)()
 [121][4,0]<5>(1600042,1600023,0,0)()
 [121][4,0]<5>(1600044,1600022,1600024,4096)()
 [121][4,0]<5>(1600045,1600042,0,0)()
 [150][2,0]<5>(3,1600021)()
 [150][13,0]<5>(4198145,1600021,0,0,0,1,-1000000,1600044,1600045,-1000000,-1000000,0,16777216)()
-[103][0,1]<5>()(" Inertial movement")
+[103][0,1]<5>()("Inertial movement")
 [150][13,0]<5>(4198145,1600021,5,0,0,1,-1000000,1600041,1600042,-1000000,-1000000,0,16777216)()
 [150][14,0]<5>(4198145,1600021,5,0,0,1,-1000000,1600041,1600042,-1000000,-1000000,0,16777216,3)()
 [150][14,0]<5>(4198145,1600021,5,0,0,1,-1000000,1600041,1600042,-1000000,-1000000,0,16777216,5)()
@@ -449,7 +449,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<4>()("Animate the pictures (using the Picture Move command)")
 [121][4,0]<4>(1600021,1600020,1,0)()
 [121][4,0]<4>(1600026,1600021,5,0)()
-[103][0,1]<4>()("Shift the initial position")
+[103][0,1]<4>()("Set the starting position")
 [121][4,0]<4>(1600044,1600022,1600024,4096)()
 [121][4,0]<4>(1600045,1600042,0,0)()
 [150][3,0]<4>(16777219,1600021,1600026)()
@@ -460,7 +460,7 @@ WoditorEvCOMMAND_START
 [150][18,0]<4>(20975361,1600021,5,0,0,1,-1000000,1600041,1600042,-1000000,-1000000,0,33554432,5,1600026,100,100,100)()
 [0][0,0]<4>()()
 [498][0,0]<3>()()
-[103][0,1]<3>()("Display processing ends here")
+[103][0,1]<3>()("End of display processing")
 [0][0,0]<3>()()
 [498][0,0]<2>()()
 [103][0,1]<2>()(" ")
@@ -477,7 +477,7 @@ WoditorEvCOMMAND_START
 [150][12,0]<4>(64,1600021,0,1600032,1600033,1,255,1600030,1600031,100,0,1600008)()
 [179][1,0]<4>(1)()
 [103][0,1]<5>()("Animate the pictures (using the Picture Move command)")
-[103][0,1]<5>()("Shift the initial position")
+[103][0,1]<5>()("Set the starting position")
 [150][2,0]<5>(3,1600021)()
 [150][13,0]<5>(4198145,1600021,0,0,0,1,-1000000,1600044,1600045,-1000000,-1000000,0,16777216)()
 [103][0,1]<5>()("Inertial movement")
@@ -494,7 +494,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(1)()
 [111][4,0]<4>(1,9000084,0,2)()
 [401][1,0]<4>(1)()
-[103][0,1]<5>()("Double-scaling required only for 320x240 resolution (due to \ax[X])")
+[103][0,1]<5>()("Double-scaling required only for 320x240 resolution (due to \ax[X] behavior)")
 [121][4,0]<5>(1600013,2,0,768)()
 [0][0,0]<5>()()
 [499][0,0]<4>()()
@@ -514,7 +514,7 @@ WoditorEvCOMMAND_START
 [290][7,0]<3>(32,0,1600021,1600021,1600012,1600012,0)()
 [179][1,0]<3>(1600057)()
 [103][0,1]<4>()("Animate the pictures (using the Picture Move command)")
-[103][0,1]<4>()("Shift the initial position")
+[103][0,1]<4>()("Set the starting position")
 [121][4,0]<4>(1600044,1600030,1600032,4096)()
 [121][4,0]<4>(1600045,1600042,0,0)()
 [150][2,0]<4>(3,1600021)()
@@ -525,7 +525,7 @@ WoditorEvCOMMAND_START
 [150][18,0]<4>(4194305,1600021,5,0,0,1,255,1600041,1600042,-1000000,0,0,33554432,5,0,100,100,100)()
 [0][0,0]<4>()()
 [498][0,0]<3>()()
-[103][0,1]<3>()("Display processing ends here")
+[103][0,1]<3>()("End of display processing")
 [0][0,0]<3>()()
 [498][0,0]<2>()()
 [179][1,0]<2>(1)()
@@ -552,7 +552,7 @@ WoditorEvCOMMAND_START
 [150][12,0]<4>(64,1600021,0,1600072,1600073,1,255,1600070,1600071,100,0,1600008)()
 [179][1,0]<4>(1)()
 [103][0,1]<5>()("Animate the pictures (using the Picture Move command)")
-[103][0,1]<5>()("Shift the initial position")
+[103][0,1]<5>()("Set the starting position")
 [150][2,0]<5>(3,1600021)()
 [150][13,0]<5>(4198145,1600021,0,0,0,1,-1000000,1600044,1600045,-1000000,-1000000,0,16777216)()
 [103][0,1]<5>()("Inertial movement")
@@ -569,7 +569,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(1)()
 [111][4,0]<4>(1,9000084,0,2)()
 [401][1,0]<4>(1)()
-[103][0,1]<5>()("Double-scaling required only for 320x240 resolution (due to \ax[X])")
+[103][0,1]<5>()("Double-scaling required only for 320x240 resolution (due to \ax[X] behavior)")
 [121][4,0]<5>(1600013,2,0,768)()
 [0][0,0]<5>()()
 [499][0,0]<4>()()
@@ -595,7 +595,7 @@ WoditorEvCOMMAND_START
 [290][7,0]<3>(32,0,1600021,1600021,1600012,1600013,0)()
 [179][1,0]<3>(1600057)()
 [103][0,1]<4>()("Animate the pictures (using the Picture Move command)")
-[103][0,1]<4>()("Shift the initial position")
+[103][0,1]<4>()("Set the starting position")
 [121][4,0]<4>(1600044,1600070,1600072,4096)()
 [121][4,0]<4>(1600045,1600042,0,0)()
 [150][2,0]<4>(3,1600021)()
@@ -606,7 +606,7 @@ WoditorEvCOMMAND_START
 [150][18,0]<4>(4194305,1600021,5,0,0,1,255,1600041,1600042,-1000000,0,0,33554432,5,0,100,100,100)()
 [0][0,0]<4>()()
 [498][0,0]<3>()()
-[103][0,1]<3>()("Display processing ends here")
+[103][0,1]<3>()("End of display processing")
 [0][0,0]<3>()()
 [498][0,0]<2>()()
 [103][0,1]<2>()(" ")
@@ -642,7 +642,7 @@ WoditorEvCOMMAND_START
 [179][1,0]<4>(1600057)()
 [179][1,0]<5>(0)()
 [103][0,1]<6>()("Animate the pictures (using the Picture Move command)")
-[103][0,1]<6>()("Shift the initial position")
+[103][0,1]<6>()("Set the starting position")
 [150][2,0]<6>(3,1600021)()
 [150][13,0]<6>(4198145,1600021,0,0,0,1,-1000000,1600044,1600045,-1000000,-1000000,0,16777216)()
 [103][0,1]<6>()("Inertial movement")
@@ -672,7 +672,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<4>()(" ")
 [179][1,0]<4>(1600057)()
 [103][0,1]<5>()("Animate the pictures (using the Picture Move command)")
-[103][0,1]<5>()("Shift the initial position")
+[103][0,1]<5>()("Set the starting position")
 [121][4,0]<5>(1600044,1600050,1600052,4096)()
 [121][4,0]<5>(1600045,1600042,0,0)()
 [150][2,0]<5>(3,1600021)()
@@ -685,7 +685,7 @@ WoditorEvCOMMAND_START
 [498][0,0]<4>()()
 [0][0,0]<4>()()
 [499][0,0]<3>()()
-[103][0,1]<3>()("Display processing ends here")
+[103][0,1]<3>()("End of display processing")
 [0][0,0]<3>()()
 [498][0,0]<2>()()
 [172][0,0]<2>()()
@@ -702,7 +702,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<1>(1600026,1600020,3,0)()
 [111][4,0]<1>(1,1600001,-2,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("If the cursor is inactive")
+[103][0,1]<2>()("If the cursor is inactive,")
 [103][0,1]<2>()("stop its blinking and darken it slightly")
 [290][7,0]<2>(80,0,1600021,1600026,0,0,0)()
 [150][15,0]<2>(21040961,1600021,0,0,0,-1000000,180,0,0,-1000000,-1000000,0,16777216,0,1600026)()
@@ -919,14 +919,14 @@ WoditorEvCOMMAND_END
  | | | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] Window (CSelf8[Window Image File]) Size [CSelf24[Top Box Width],CSelf25[Top Box Height]] X:CSelf22[Top Box X] Y:CSelf23[Top Box Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  | | | |■Repeat Loop [ 1 ] Times
  | | | | |▼ Animate the pictures (using the Picture Move command)
- | | | | |▼ Shift the initial position
+ | | | | |▼ Set the starting position
  | | | | |■Set Variable: CSelf41[Temp Item X] = CSelf22[Top Box X] + 0 
  | | | | |■Set Variable: CSelf42[Temp Item Y] = CSelf23[Top Box Y] + 0 
- | | | | |■Set Variable: CSelf44[Temp Item X 2] = CSelf22[Top Box X] - CSelf24[Top Box Width] 
- | | | | |■Set Variable: CSelf45[Temp Item Y 2] = CSelf42[Temp Item Y] + 0 
+ | | | | |■Set Variable: CSelf44[Temp Item X2] = CSelf22[Top Box X] - CSelf24[Top Box Width] 
+ | | | | |■Set Variable: CSelf45[Temp Item Y2] = CSelf42[Temp Item Y] + 0 
  | | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
- | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf44[Temp Item X 2] Y:CSelf45[Temp Item Y 2] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
- | | | | |▼  Inertial movement
+ | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf44[Temp Item X2] Y:CSelf45[Temp Item Y2] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
+ | | | | |▼ Inertial movement
  | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
  | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(3) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
  | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(5) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
@@ -993,18 +993,18 @@ WoditorEvCOMMAND_END
  | | | |▼ Animate the pictures (using the Picture Move command)
  | | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 1 
  | | | |■Set Variable: CSelf26[Temp Picture ID 2] = CSelf21[Temp Picture ID] + 5 
- | | | |▼ Shift the initial position
- | | | |■Set Variable: CSelf44[Temp Item X 2] = CSelf22[Top Box X] - CSelf24[Top Box Width] 
- | | | |■Set Variable: CSelf45[Temp Item Y 2] = CSelf42[Temp Item Y] + 0 
+ | | | |▼ Set the starting position
+ | | | |■Set Variable: CSelf44[Temp Item X2] = CSelf22[Top Box X] - CSelf24[Top Box Width] 
+ | | | |■Set Variable: CSelf45[Temp Item Y2] = CSelf42[Temp Item Y] + 0 
  | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] to CSelf26[Temp Picture ID 2] 
- | | | |■Picture Move: CSelf21[Temp Picture ID] to CSelf26[Temp Picture ID 2]  X:CSelf44[Temp Item X 2] Y:CSelf45[Temp Item Y 2] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle 0 / Scale Same / Color R[100] G[100] B[100]
+ | | | |■Picture Move: CSelf21[Temp Picture ID] to CSelf26[Temp Picture ID 2]  X:CSelf44[Temp Item X2] Y:CSelf45[Temp Item Y2] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | | |▼ Inertial movement
  | | | |■Picture Move: CSelf21[Temp Picture ID] to CSelf26[Temp Picture ID 2]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | | |■Picture Move: CSelf21[Temp Picture ID] to CSelf26[Temp Picture ID 2]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(3) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color R[100] G[100] B[100]
  | | | |■Picture Move: CSelf21[Temp Picture ID] to CSelf26[Temp Picture ID 2]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(5) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color R[100] G[100] B[100]
  | | | |■
  | | |◇Loop End Point◇◇
- | | |▼ Display processing ends here
+ | | |▼ End of display processing
  | | |■
  | |◇Loop End Point◇◇
  | |▼  
@@ -1013,17 +1013,17 @@ WoditorEvCOMMAND_END
  | | |▼ Display the money window
  | | |■Set Variable: CSelf41[Temp Item X] = CSelf30[Money Box X] + 0 
  | | |■Set Variable: CSelf42[Temp Item Y] = CSelf31[Money Box Y] + 0 
- | | |■Set Variable: CSelf44[Temp Item X 2] = CSelf30[Money Box X] - CSelf32[Money Box Width] 
- | | |■Set Variable: CSelf45[Temp Item Y 2] = CSelf42[Temp Item Y] + 0 
+ | | |■Set Variable: CSelf44[Temp Item X2] = CSelf30[Money Box X] - CSelf32[Money Box Width] 
+ | | |■Set Variable: CSelf45[Temp Item Y2] = CSelf42[Temp Item Y] + 0 
  | | |■Repeat Loop [ CSelf57[Initial Display? (1:Yes)] ] Times
  | | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 10 
  | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
  | | | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] Window (CSelf8[Window Image File]) Size [CSelf32[Money Box Width],CSelf33[Money Box Height]] X:CSelf30[Money Box X] Y:CSelf31[Money Box Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  | | | |■Repeat Loop [ 1 ] Times
  | | | | |▼ Animate the pictures (using the Picture Move command)
- | | | | |▼ Shift the initial position
+ | | | | |▼ Set the starting position
  | | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
- | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf44[Temp Item X 2] Y:CSelf45[Temp Item Y 2] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
+ | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf44[Temp Item X2] Y:CSelf45[Temp Item Y2] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
  | | | | |▼ Inertial movement
  | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
  | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(3) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
@@ -1038,7 +1038,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [1]  [ Sys115:[RO] Game.exe Version (x100) < 300   ] Case↓
  | | | |■Condition (Number):   [1] Sys84:Screen Resolution (0-2, -1:Other) ==  0  
  | | | |-◇Condition:  [1]  [ Sys84:Screen Resolution (0-2, -1:Other) == 0   ] Case↓
- | | | | |▼ Double-scaling required only for 320x240 resolution (due to \ax[X])
+ | | | | |▼ Double-scaling required only for 320x240 resolution (due to \ax[X] behavior)
  | | | | |■Set Variable: CSelf13[Temp Variable D] *= 2 + 0 
  | | | | |■
  | | | |◇End◇
@@ -1058,18 +1058,18 @@ WoditorEvCOMMAND_END
  | | |■Effect Picture: CSelf21[Temp Picture ID] [Shift Position (Final Value)] Shift X CSelf12[Temp Variable C] / Shift Y CSelf12[Temp Variable C]  [0] Frames
  | | |■Repeat Loop [ CSelf57[Initial Display? (1:Yes)] ] Times
  | | | |▼ Animate the pictures (using the Picture Move command)
- | | | |▼ Shift the initial position
- | | | |■Set Variable: CSelf44[Temp Item X 2] = CSelf30[Money Box X] - CSelf32[Money Box Width] 
- | | | |■Set Variable: CSelf45[Temp Item Y 2] = CSelf42[Temp Item Y] + 0 
+ | | | |▼ Set the starting position
+ | | | |■Set Variable: CSelf44[Temp Item X2] = CSelf30[Money Box X] - CSelf32[Money Box Width] 
+ | | | |■Set Variable: CSelf45[Temp Item Y2] = CSelf42[Temp Item Y] + 0 
  | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
- | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf44[Temp Item X 2] Y:CSelf45[Temp Item Y 2] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
+ | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf44[Temp Item X2] Y:CSelf45[Temp Item Y2] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | | |▼ Inertial movement
  | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(3) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(5) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | | |■
  | | |◇Loop End Point◇◇
- | | |▼ Display processing ends here
+ | | |▼ End of display processing
  | | |■
  | |◇Loop End Point◇◇
  | |■Repeat Loop [ 1 ] Times
@@ -1088,17 +1088,17 @@ WoditorEvCOMMAND_END
  | | |◇End◇
  | | |■Set Variable: CSelf41[Temp Item X] = CSelf70[Quantity Box X] + 0 
  | | |■Set Variable: CSelf42[Temp Item Y] = CSelf71[Quantity Box Y] + 0 
- | | |■Set Variable: CSelf44[Temp Item X 2] = CSelf70[Quantity Box X] - CSelf72[Quantity Box Width] 
- | | |■Set Variable: CSelf45[Temp Item Y 2] = CSelf42[Temp Item Y] + 0 
+ | | |■Set Variable: CSelf44[Temp Item X2] = CSelf70[Quantity Box X] - CSelf72[Quantity Box Width] 
+ | | |■Set Variable: CSelf45[Temp Item Y2] = CSelf42[Temp Item Y] + 0 
  | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 20 
  | | |■Repeat Loop [ CSelf57[Initial Display? (1:Yes)] ] Times
  | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
  | | | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] Window (CSelf8[Window Image File]) Size [CSelf72[Quantity Box Width],CSelf73[Quantity Box Height]] X:CSelf70[Quantity Box X] Y:CSelf71[Quantity Box Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  | | | |■Repeat Loop [ 1 ] Times
  | | | | |▼ Animate the pictures (using the Picture Move command)
- | | | | |▼ Shift the initial position
+ | | | | |▼ Set the starting position
  | | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
- | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf44[Temp Item X 2] Y:CSelf45[Temp Item Y 2] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
+ | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf44[Temp Item X2] Y:CSelf45[Temp Item Y2] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
  | | | | |▼ Inertial movement
  | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
  | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(3) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
@@ -1113,7 +1113,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [1]  [ Sys115:[RO] Game.exe Version (x100) < 300   ] Case↓
  | | | |■Condition (Number):   [1] Sys84:Screen Resolution (0-2, -1:Other) ==  0  
  | | | |-◇Condition:  [1]  [ Sys84:Screen Resolution (0-2, -1:Other) == 0   ] Case↓
- | | | | |▼ Double-scaling required only for 320x240 resolution (due to \ax[X])
+ | | | | |▼ Double-scaling required only for 320x240 resolution (due to \ax[X] behavior)
  | | | | |■Set Variable: CSelf13[Temp Variable D] *= 2 + 0 
  | | | | |■
  | | | |◇End◇
@@ -1139,18 +1139,18 @@ WoditorEvCOMMAND_END
  | | |■Effect Picture: CSelf21[Temp Picture ID] [Shift Position (Final Value)] Shift X CSelf12[Temp Variable C] / Shift Y CSelf13[Temp Variable D]  [0] Frames
  | | |■Repeat Loop [ CSelf57[Initial Display? (1:Yes)] ] Times
  | | | |▼ Animate the pictures (using the Picture Move command)
- | | | |▼ Shift the initial position
- | | | |■Set Variable: CSelf44[Temp Item X 2] = CSelf70[Quantity Box X] - CSelf72[Quantity Box Width] 
- | | | |■Set Variable: CSelf45[Temp Item Y 2] = CSelf42[Temp Item Y] + 0 
+ | | | |▼ Set the starting position
+ | | | |■Set Variable: CSelf44[Temp Item X2] = CSelf70[Quantity Box X] - CSelf72[Quantity Box Width] 
+ | | | |■Set Variable: CSelf45[Temp Item Y2] = CSelf42[Temp Item Y] + 0 
  | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
- | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf44[Temp Item X 2] Y:CSelf45[Temp Item Y 2] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
+ | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf44[Temp Item X2] Y:CSelf45[Temp Item Y2] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | | |▼ Inertial movement
  | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(3) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(5) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | | |■
  | | |◇Loop End Point◇◇
- | | |▼ Display processing ends here
+ | | |▼ End of display processing
  | | |■
  | |◇Loop End Point◇◇
  | |▼  
@@ -1177,8 +1177,8 @@ WoditorEvCOMMAND_END
  | | | |▼ Display instantly if not empty
  | | | |■Set Variable: CSelf41[Temp Item X] = CSelf50[Equip Status X] + 0 
  | | | |■Set Variable: CSelf42[Temp Item Y] = CSelf51[Equip Status Y] + 0 
- | | | |■Set Variable: CSelf44[Temp Item X 2] = CSelf50[Equip Status X] - CSelf52[Equip Status Width] 
- | | | |■Set Variable: CSelf45[Temp Item Y 2] = CSelf42[Temp Item Y] + 0 
+ | | | |■Set Variable: CSelf44[Temp Item X2] = CSelf50[Equip Status X] - CSelf52[Equip Status Width] 
+ | | | |■Set Variable: CSelf45[Temp Item Y2] = CSelf42[Temp Item Y] + 0 
  | | | |▼  
  | | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 30 
  | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
@@ -1186,9 +1186,9 @@ WoditorEvCOMMAND_END
  | | | |■Repeat Loop [ CSelf57[Initial Display? (1:Yes)] ] Times
  | | | | |■Repeat Loop [ 0 ] Times
  | | | | | |▼ Animate the pictures (using the Picture Move command)
- | | | | | |▼ Shift the initial position
+ | | | | | |▼ Set the starting position
  | | | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
- | | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf44[Temp Item X 2] Y:CSelf45[Temp Item Y 2] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
+ | | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf44[Temp Item X2] Y:CSelf45[Temp Item Y2] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
  | | | | | |▼ Inertial movement
  | | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
  | | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(3) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
@@ -1216,11 +1216,11 @@ WoditorEvCOMMAND_END
  | | | |▼  
  | | | |■Repeat Loop [ CSelf57[Initial Display? (1:Yes)] ] Times
  | | | | |▼ Animate the pictures (using the Picture Move command)
- | | | | |▼ Shift the initial position
- | | | | |■Set Variable: CSelf44[Temp Item X 2] = CSelf50[Equip Status X] - CSelf52[Equip Status Width] 
- | | | | |■Set Variable: CSelf45[Temp Item Y 2] = CSelf42[Temp Item Y] + 0 
+ | | | | |▼ Set the starting position
+ | | | | |■Set Variable: CSelf44[Temp Item X2] = CSelf50[Equip Status X] - CSelf52[Equip Status Width] 
+ | | | | |■Set Variable: CSelf45[Temp Item Y2] = CSelf42[Temp Item Y] + 0 
  | | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
- | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf44[Temp Item X 2] Y:CSelf45[Temp Item Y 2] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
+ | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf44[Temp Item X2] Y:CSelf45[Temp Item Y2] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | | | |▼ Inertial movement
  | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(3) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
@@ -1229,7 +1229,7 @@ WoditorEvCOMMAND_END
  | | | |◇Loop End Point◇◇
  | | | |■
  | | |◇End◇
- | | |▼ Display processing ends here
+ | | |▼ End of display processing
  | | |■
  | |◇Loop End Point◇◇
  | |■Exit Event
@@ -1246,7 +1246,7 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf26[Temp Picture ID 2] = CSelf20[Base Picture ID] + 3 
  |■Condition (Number):   [1] CSelf1[[2]Cursor Position] ==  -2  
  |-◇Condition:  [1]  [ CSelf1[[2]Cursor Position] == -2   ] Case↓
- | |▼ If the cursor is inactive
+ | |▼ If the cursor is inactive,
  | |▼ stop its blinking and darken it slightly
  | |■Effect Picture: CSelf21[Temp Picture ID] to CSelf26[Temp Picture ID 2] [Blink A (Flicker)] R0/G0/B0  Interval [0] Frames
  | |■Picture Move: CSelf21[Temp Picture ID] to CSelf26[Temp Picture ID 2]  Relative X:0 Y:0 / 0(0) Frames  / Pattern Same / Opacity 180 / Blend Mode: Same   / Angle Same / Scale Same / Color Same

@@ -8,8 +8,8 @@ MEMO=
 VALINPUT_NUM=2
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=処理モード
-VALINPUT_NAME_1=カーソル位置
+VALINPUT_NAME_0=Mode
+VALINPUT_NAME_1=Cursor Position
 VALINPUT_NAME_2=
 VALINPUT_NAME_3=
 VALINPUT_NAME_4=
@@ -32,13 +32,13 @@ LOADTYPE8=0
 LOADTYPE9=0
 CHOICE_STR_NUM=10
 CHOICE_STR_0_NUM=3
-CHOICE_STR_0_0=表示
-CHOICE_STR_0_1=更新
-CHOICE_STR_0_2=消去
+CHOICE_STR_0_0=Display
+CHOICE_STR_0_1=Update
+CHOICE_STR_0_2=Erase
 CHOICE_STR_1_NUM=3
-CHOICE_STR_1_0=フラッシュ停止
-CHOICE_STR_1_1=非表示
-CHOICE_STR_1_2=0以上…カーソル位置設定
+CHOICE_STR_1_0=Stop Blinking
+CHOICE_STR_1_1=Don't Display
+CHOICE_STR_1_2=0+ (Cursor Position)
 CHOICE_STR_2_NUM=0
 CHOICE_STR_3_NUM=0
 CHOICE_STR_4_NUM=0
@@ -72,72 +72,72 @@ DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
 RETURN_VAL_NAME=
 RETURN_VAL_TARGET=-1
-CSELF_NAME_0=処理モード
-CSELF_NAME_1=カーソル位置
+CSELF_NAME_0=Mode
+CSELF_NAME_1=Cursor Position
 CSELF_NAME_2=
 CSELF_NAME_3=
 CSELF_NAME_4=
-CSELF_NAME_5=説明文
-CSELF_NAME_6=オプション枠用
-CSELF_NAME_7=表示項目名
-CSELF_NAME_8=ウィンドウ画像ファイル
-CSELF_NAME_9=カーソル画像ファイル
-CSELF_NAME_10=一時変数A
-CSELF_NAME_11=一時変数B
-CSELF_NAME_12=一時変数C
-CSELF_NAME_13=一時変数D
-CSELF_NAME_14=一時変数E
+CSELF_NAME_5=
+CSELF_NAME_6=Extra Box Text
+CSELF_NAME_7=Display Item Name
+CSELF_NAME_8=Window Image File
+CSELF_NAME_9=Cursor Image File
+CSELF_NAME_10=Temp A
+CSELF_NAME_11=Temp B
+CSELF_NAME_12=Temp C
+CSELF_NAME_13=Temp D
+CSELF_NAME_14=Temp E
 CSELF_NAME_15=
 CSELF_NAME_16=
 CSELF_NAME_17=
-CSELF_NAME_18=ミニフォントサイズ
-CSELF_NAME_19=基本フォントサイズ
-CSELF_NAME_20=基本ピクチャ番号
-CSELF_NAME_21=一時ピクチャ番号
-CSELF_NAME_22=表示X
-CSELF_NAME_23=表示Y
-CSELF_NAME_24=横サイズ
-CSELF_NAME_25=縦サイズ
-CSELF_NAME_26=-------
-CSELF_NAME_27=縦項目数
-CSELF_NAME_28=座標倍率
-CSELF_NAME_29=全更新フラグ
-CSELF_NAME_30=説明ウィンドウX
-CSELF_NAME_31=説明ウィンドウY
-CSELF_NAME_32=説明ウィンドウ横サイズ
-CSELF_NAME_33=説明ウィンドウ縦サイズ
-CSELF_NAME_34=[保持]カーソル基本X
-CSELF_NAME_35=[保持]カーソル基本Y
-CSELF_NAME_36=[保持]カーソル横幅
-CSELF_NAME_37=[保持]カーソル縦幅
-CSELF_NAME_38=[保持]カーソル移動横幅
-CSELF_NAME_39=[保持]カーソル移動縦幅
-CSELF_NAME_40=全項目数
-CSELF_NAME_41=一時項目表示X
-CSELF_NAME_42=一時項目表示Y
-CSELF_NAME_43=処理中個数
-CSELF_NAME_44=一時項目表示X2
-CSELF_NAME_45=一時項目表示X2
+CSELF_NAME_18=Small Font Size
+CSELF_NAME_19=Base Font Size
+CSELF_NAME_20=Base Picture ID
+CSELF_NAME_21=Temp Picture ID
+CSELF_NAME_22=Display X
+CSELF_NAME_23=Display Y
+CSELF_NAME_24=Width
+CSELF_NAME_25=Height
+CSELF_NAME_26=
+CSELF_NAME_27=Vertical Item Count
+CSELF_NAME_28=
+CSELF_NAME_29=Full Update Flag
+CSELF_NAME_30=
+CSELF_NAME_31=
+CSELF_NAME_32=
+CSELF_NAME_33=
+CSELF_NAME_34=[Keep] Cursor Base X
+CSELF_NAME_35=[Keep] Cursor Base Y
+CSELF_NAME_36=[Keep] Cursor Width
+CSELF_NAME_37=[Keep] Cursor Height
+CSELF_NAME_38=[Keep] Cursor Move Amount X
+CSELF_NAME_39=[Keep] Cursor Move Amount Y
+CSELF_NAME_40=
+CSELF_NAME_41=Temp Item X
+CSELF_NAME_42=Temp Item Y
+CSELF_NAME_43=Current Count
+CSELF_NAME_44=Temp Item X2
+CSELF_NAME_45=Temp Item Y2
 CSELF_NAME_46=
-CSELF_NAME_47=数値表示シフト量
-CSELF_NAME_48=項目表示元Y
-CSELF_NAME_49=項目横拡大率
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
 CSELF_NAME_50=
 CSELF_NAME_51=
 CSELF_NAME_52=
-CSELF_NAME_53=色指定R
-CSELF_NAME_54=色指定G
-CSELF_NAME_55=色指定B
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
 CSELF_NAME_56=
 CSELF_NAME_57=
-CSELF_NAME_58=表示元X
-CSELF_NAME_59=表示元Y
-CSELF_NAME_60=おまけ欄X
-CSELF_NAME_61=おまけ欄Y
-CSELF_NAME_62=おまけ欄横サイズ
-CSELF_NAME_63=おまけ欄縦サイズ
-CSELF_NAME_64=おまけ欄表示元X
-CSELF_NAME_65=おまけ欄表示元Y
+CSELF_NAME_58=Start X
+CSELF_NAME_59=Start Y
+CSELF_NAME_60=Extra Box X
+CSELF_NAME_61=Extra Box Y
+CSELF_NAME_62=Extra Box Width
+CSELF_NAME_63=Extra Box Height
+CSELF_NAME_64=Extra Box Start X
+CSELF_NAME_65=Extra Box Start Y
 CSELF_NAME_66=
 CSELF_NAME_67=
 CSELF_NAME_68=
@@ -160,8 +160,8 @@ CSELF_NAME_84=
 CSELF_NAME_85=
 CSELF_NAME_86=
 CSELF_NAME_87=
-CSELF_NAME_88=座標倍率X[x10]
-CSELF_NAME_89=座標倍率Y[x10]
+CSELF_NAME_88=Coordinate Scale X (x10)
+CSELF_NAME_89=Coordinate Scale Y (x10)
 CSELF_NAME_90=
 CSELF_NAME_91=
 CSELF_NAME_92=
@@ -223,12 +223,12 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600058,-80,0,0)()
 [121][4,0]<0>(1600059,0,0,0)()
 [121][4,0]<0>(1600024,80,0,0)()
-[103][0,1]<0>()("Change the height according to the number of commands")
+[103][0,1]<0>()("Height changes according to the number of commands")
 [121][4,0]<0>(1600025,1600019,0,0)()
 [121][4,0]<0>(1600025,1600019,4,12544)()
 [121][4,0]<0>(1600025,1600027,0,768)()
 [121][4,0]<0>(1600025,1600089,0,256)()
-[103][0,1]<0>()("Set coordinates for the money and other info area")
+[103][0,1]<0>()("Set coordinates for the money area")
 [121][4,0]<0>(1600060,0,0,0)()
 [121][4,0]<0>(1600061,215,0,0)()
 [121][4,0]<0>(1600064,-80,0,0)()
@@ -296,24 +296,24 @@ WoditorEvCOMMAND_START
 [150][2,0]<1>(819,1600021)()
 [121][4,0]<1>(1600010,1600088,32,8192)()
 [121][4,0]<1>(1600011,1600089,24,8192)()
-[103][0,1]<1>()("縦32、横24で割り切れない画面サイズのときに一部抜けるバグ修正　Ver3.20修正")
+[103][0,1]<1>()("Fixed a bug where some areas were not displayed if the screen size wasn't divisible by 32 vertically or 24 horizontally (v3.20)")
 [121][4,0]<1>(1600010,32,0,256)()
 [121][4,0]<1>(1600011,24,0,256)()
 [150][11,1]<1>(816,1600021,10,1600010,1600011,1,255,0,0,100,0)("<GRADY-779-000>")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<1>()("メニューを表示")
+[103][0,1]<1>()("Display the menu")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [121][4,0]<1>(1600021,1600020,1,0)()
 [150][2,0]<1>(819,1600021)()
 [150][12,0]<1>(64,1600021,0,1600024,1600025,1,255,1600022,1600023,100,0,1600008)()
 [179][1,0]<1>(1)()
-[103][0,1]<2>()("ここでメニュー表示時エフェクト（「移動」コマンドで実現している）")
+[103][0,1]<2>()("Menu display animation (using the Picture Move command)")
 [121][4,0]<2>(1600041,1600058,0,0)()
 [121][4,0]<2>(1600042,1600059,0,0)()
-[103][0,1]<2>()("初期位置をシフト")
+[103][0,1]<2>()("Set the starting position")
 [150][2,0]<2>(819,1600021)()
 [150][11,0]<2>(1,1600021,0,0,0,1,255,1600041,1600042,100,0)()
-[103][0,1]<2>()("慣性移動")
+[103][0,1]<2>()("Inertial movement")
 [150][11,0]<2>(1,1600021,5,0,0,1,255,1600022,1600023,100,0)()
 [150][18,0]<2>(1,1600021,5,0,0,1,255,1600022,1600023,100,0,0,33554432,3,0,100,100,100)()
 [150][18,0]<2>(1,1600021,5,0,0,1,255,1600022,1600023,100,0,0,33554432,5,0,100,100,100)()
@@ -321,18 +321,18 @@ WoditorEvCOMMAND_START
 [498][0,0]<1>()()
 [103][0,1]<1>()(" ")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<1>()("各コマンドの表示")
+[103][0,1]<1>()("Display each command")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [121][4,0]<1>(1600043,-1,0,0)()
 [179][1,0]<1>(1600027)()
 [121][4,0]<2>(1600043,1,0,256)()
-[103][0,1]<2>()("座標計算")
+[103][0,1]<2>()("Calculate coordinates")
 [121][4,0]<2>(1600041,1600034,0,0)()
 [121][4,0]<2>(1600041,1600038,2,12544)()
 [121][4,0]<2>(1600042,1600035,0,0)()
 [121][4,0]<2>(1600042,1600039,1600043,8448)()
 [121][4,0]<2>(1600042,1600039,2,12544)()
-[103][0,1]<2>()("メニューコマンドは基本システム用変数23番～30番に入っている")
+[103][0,1]<2>()("Menu commands are stored in Base System Variables 23-30")
 [121][4,0]<2>(1600010,23,1600043,0)()
 [250][5,4]<2>(18,1600010,1,69632,1600007)("","Base System Variables","","")
 [121][4,0]<2>(1600021,1600020,1600043,0)()
@@ -340,7 +340,7 @@ WoditorEvCOMMAND_START
 [150][2,0]<2>(3,1600021)()
 [250][5,4]<2>(18,1600010,0,69632,1600014)("","Base System Variables","","")
 [179][1,0]<2>(1)()
-[103][0,1]<3>()("もしセーブコマンドなら、セーブ不能かどうかで分岐")
+[103][0,1]<3>()("If the command is <dqrt>Save<dqrt>, branch depending on whether saving is allowed")
 [111][4,0]<3>(1,1600014,4,2)()
 [401][1,0]<3>(1)()
 [250][5,4]<4>(18,33,0,69632,1600011)("","Base System Variables","","")
@@ -355,15 +355,15 @@ WoditorEvCOMMAND_START
 [498][0,0]<2>()()
 [111][7,0]<2>(2,1600014,0,1,1600014,-1,3)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("コードが1以上なら普通の文字色で表示")
+[103][0,1]<3>()("If the code is 1 or higher, display in the normal text color")
 [150][11,1]<3>(4128,1600021,0,1,1,1,255,1600041,1600042,100,0)("\f[\cself[19]]\cself[7]")
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
-[103][0,1]<3>()("コードが-1以下の場合は半透明に")
+[103][0,1]<3>()("If the code is -1 or lower, display semi-transparently")
 [150][11,1]<3>(4128,1600021,0,1,1,1,128,1600041,1600042,100,0)("\f[\cself[19]]\cself[7]")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
-[103][0,1]<2>()("メニュー内容の横幅が溢れてたら横拡大率を減少させる")
+[103][0,1]<2>()("If the command text exceeds the width, reduce the horizontal scaling")
 [124][4,0]<2>(1600011,16384,1600021,2)()
 [121][4,0]<2>(1600013,1600024,1600088,4096)()
 [111][4,0]<2>(1,1600011,1600013,0)()
@@ -376,14 +376,14 @@ WoditorEvCOMMAND_START
 [103][0,1]<2>()(" ")
 [103][0,1]<2>()(" ")
 [179][1,0]<2>(1)()
-[103][0,1]<3>()("ここでコマンド表示時エフェクト（「移動」コマンドで実現している）")
+[103][0,1]<3>()("Command display animation (using the Picture Move command)")
 [99][1,0]<3>(0)()
-[103][0,1]<3>()("初期位置をシフト（とりあえず横は、メニューの表示元Xを基点としている）")
+[103][0,1]<3>()("Set the starting position (X is the menu's start X position)")
 [121][4,0]<3>(1600044,1600058,0,0)()
 [121][4,0]<3>(1600045,1600042,0,0)()
 [150][2,0]<3>(3,1600021)()
 [150][11,0]<3>(4194305,1600021,0,0,0,1,-1000000,1600044,1600045,-1000000,0)()
-[103][0,1]<3>()("慣性移動")
+[103][0,1]<3>()("Inertial movement")
 [150][11,0]<3>(4194305,1600021,5,0,0,1,-1000000,1600041,1600042,-1000000,0)()
 [150][18,0]<3>(4194305,1600021,5,0,0,1,-1000000,1600041,1600042,-1000000,0,0,33554432,3,0,100,100,100)()
 [150][18,0]<3>(4194305,1600021,5,0,0,1,-1000000,1600041,1600042,-1000000,0,0,33554432,5,0,100,100,100)()
@@ -393,28 +393,28 @@ WoditorEvCOMMAND_START
 [498][0,0]<1>()()
 [179][1,0]<1>(1)()
 [103][0,1]<2>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<2>()("おまけ欄（所持金）を表示")
+[103][0,1]<2>()("Display the extra area (money)")
 [103][0,1]<2>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [121][4,0]<2>(1600021,1600020,11,0)()
 [150][2,0]<2>(819,1600021)()
 [150][12,0]<2>(64,1600021,0,1600062,1600063,1,255,1600060,1600061,100,0,1600008)()
 [179][1,0]<2>(1)()
-[103][0,1]<3>()("おまけ欄内の文字列を生成")
+[103][0,1]<3>()("Create the text for the extra area")
 [250][5,4]<3>(3,0,0,331776,1600011)("","Party","","Current Money")
-[103][0,1]<3>()("\axと\ay、<R>を駆使して横幅と位置を調整")
+[103][0,1]<3>()("Adjust width and position using \ax, \ay, and <R>")
 [121][4,0]<3>(1600013,1600062,1600088,4096)()
-[103][0,1]<3>()("バージョンによって右寄せの幅計算処理を変更　Ver3.00修正")
+[103][0,1]<3>()("Changed the right-alignment width calculation depending on the version (v3.00)")
 [111][7,0]<3>(2,9000115,300,4,9000115,300,1)()
 [401][1,0]<3>(1)()
 [111][4,0]<4>(1,9000084,0,2)()
 [401][1,0]<4>(1)()
-[103][0,1]<5>()("解像度が320x240の場合だけ二倍補正が必要（\ax[?]の仕様上）")
+[103][0,1]<5>()("Double-scaling required only for 320x240 resolution (due to \ax[X] behavior)")
 [121][4,0]<5>(1600013,2,0,768)()
 [0][0,0]<5>()()
 [499][0,0]<4>()()
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
-[103][0,1]<4>()("Ver3.00以降はSys119の基本画面倍率で調整　Ver3.00修正")
+[103][0,1]<4>()("From version 3.00 onward, adjust using Sys119 (Screen Resolution Multiplier)")
 [121][4,0]<4>(1600013,9000119,0,768)()
 [0][0,0]<4>()()
 [499][0,0]<3>()()
@@ -430,7 +430,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<3>()()
 [498][0,0]<2>()()
 [179][1,0]<2>(1)()
-[103][0,1]<3>()("もし文字がはみ出てたら横幅を制限（横拡大率を下げる）")
+[103][0,1]<3>()("If the text overflows, limit the width (reduce the horizontal scale)")
 [124][4,0]<3>(1600011,16384,1600021,2)()
 [121][4,0]<3>(1600013,1600062,1600088,4096)()
 [111][4,0]<3>(1,1600011,1600013,0)()
@@ -443,21 +443,21 @@ WoditorEvCOMMAND_START
 [0][0,0]<3>()()
 [498][0,0]<2>()()
 [179][1,0]<2>(1)()
-[103][0,1]<3>()("ここでおまけ欄表示エフェクト（「移動」コマンドで実現している）")
+[103][0,1]<3>()("Extra area display animation (using the Picture Move command)")
 [121][4,0]<3>(1600021,1600020,11,0)()
 [121][4,0]<3>(1600010,1600020,12,0)()
 [121][4,0]<3>(1600041,1600064,0,0)()
 [121][4,0]<3>(1600042,1600065,0,0)()
-[103][0,1]<3>()("初期位置をシフト")
+[103][0,1]<3>()("Set the starting position")
 [150][3,0]<3>(16777219,1600021,1600010)()
 [150][18,0]<3>(20971521,1600021,0,0,0,1,255,1600041,1600042,-1000000,0,0,33554432,0,1600010,100,100,100)()
-[103][0,1]<3>()("慣性移動")
+[103][0,1]<3>()("Inertial movement")
 [150][18,0]<3>(20971521,1600021,8,0,0,1,255,1600060,1600061,-1000000,0,0,33554432,0,1600010,100,100,100)()
 [150][18,0]<3>(20971521,1600021,8,0,0,1,255,1600060,1600061,-1000000,0,0,33554432,4,1600010,100,100,100)()
 [150][18,0]<3>(20971521,1600021,8,0,0,1,255,1600060,1600061,-1000000,0,0,33554432,8,1600010,100,100,100)()
 [0][0,0]<3>()()
 [498][0,0]<2>()()
-[103][0,1]<2>()("おまけ欄表示処理ここまで")
+[103][0,1]<2>()("End of extra area display processing")
 [0][0,0]<2>()()
 [498][0,0]<1>()()
 [172][0,0]<1>()()
@@ -466,23 +466,23 @@ WoditorEvCOMMAND_START
 [111][4,0]<0>(1,1600000,1,2)()
 [401][1,0]<0>(1)()
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<1>()("「更新」モード")
+[103][0,1]<1>()("<dqrt>Update<dqrt> Mode")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [121][4,0]<1>(1600021,1600020,2,0)()
 [111][7,0]<1>(2,1600001,-1,2,1600001,-2,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("カーソル消去")
+[103][0,1]<2>()("Erase the cursor")
 [150][3,0]<2>(2,1600021,0)()
 [172][0,0]<2>()()
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[103][0,1]<2>()("フラッシュ停止（暗くする）")
+[103][0,1]<2>()("Stop blinking (darken)")
 [290][7,0]<2>(80,0,1600021,1600021,0,0,0)()
 [150][18,0]<2>(4263681,1600021,0,0,0,-1000000,-1000000,0,0,-1000000,-1000000,0,33554432,0,0,80,80,80)()
 [172][0,0]<2>()()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
-[103][0,1]<1>()("座標計算")
+[103][0,1]<1>()("Calculate coordinates")
 [121][4,0]<1>(1600041,1600034,0,0)()
 [121][4,0]<1>(1600041,1600038,2,12544)()
 [121][4,0]<1>(1600042,1600035,0,0)()
@@ -524,296 +524,296 @@ WoditorEvCOMMAND_END
 ▼   Parameter Settings
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ Set a fixed value
-■Set Variable: CSelf20[基本ピクチャ番号] = 10000 + 0 
+■Set Variable: CSelf20[Base Picture ID] = 10000 + 0 
 ▼ Load external parameters
-■Condition (Number):   [1] CSelf0[処理モード] ==  0  
--◇Condition:  [1]  [ CSelf0[処理モード] == 0   ] Case↓
+■Condition (Number):   [1] CSelf0[Mode] ==  0  
+-◇Condition:  [1]  [ CSelf0[Mode] == 0   ] Case↓
  |▼ Update the menu commands and store the command count in the Variable DB "Base System Variables"
  |■Call Event [Name]: ["X┗[Map]Update Menu Commands"] <CommonEv 89> 
  |■
 ◇End◇
-■Load DB(Var):  CSelf18[ミニフォントサイズ] = VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) 
-■Load DB(Var):  CSelf19[基本フォントサイズ] = VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) 
-■Load DB(User):  CSelf8[ウィンドウ画像ファイル] = UserDB[ "Images/Sounds":0:"Window Image File" ] (16:Basic Images/Sounds:0) 
-■Load DB(User):  CSelf9[カーソル画像ファイル] = UserDB[ "Images/Sounds":0:"Cursor Image File" ] (16:Basic Images/Sounds:1) 
-■Load DB(Var):  CSelf27[縦項目数] = VarDB[ "Base System Variables":22:0 ] (18:Menu Command Count:Number) 
+■Load DB(Var):  CSelf18[Small Font Size] = VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) 
+■Load DB(Var):  CSelf19[Base Font Size] = VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) 
+■Load DB(User):  CSelf8[Window Image File] = UserDB[ "Images/Sounds":0:"Window Image File" ] (16:Basic Images/Sounds:0) 
+■Load DB(User):  CSelf9[Cursor Image File] = UserDB[ "Images/Sounds":0:"Cursor Image File" ] (16:Basic Images/Sounds:1) 
+■Load DB(Var):  CSelf27[Vertical Item Count] = VarDB[ "Base System Variables":22:0 ] (18:Menu Command Count:Number) 
 ▼ v2.20: Separated the coordinate scale into X and Y values
-■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
-■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
+■Load DB(Var):  CSelf88[Coordinate Scale X (x10)] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
+■Load DB(Var):  CSelf89[Coordinate Scale Y (x10)] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
 ▼ Set coordinates
-■Set Variable: CSelf22[表示X] = 0 + 0 
-■Set Variable: CSelf23[表示Y] = 0 + 0 
-■Set Variable: CSelf58[表示元X] = -80 + 0 
-■Set Variable: CSelf59[表示元Y] = 0 + 0 
-■Set Variable: CSelf24[横サイズ] = 80 + 0 
-▼ Change the height according to the number of commands
-■Set Variable: CSelf25[縦サイズ] = CSelf19[基本フォントサイズ] + 0 
-■Set Variable: CSelf25[縦サイズ] += CSelf19[基本フォントサイズ] / 4 
-■Set Variable: CSelf25[縦サイズ] *= CSelf27[縦項目数] + 0 
-■Set Variable: CSelf25[縦サイズ] += CSelf89[座標倍率Y[x10]] + 0 
-▼ Set coordinates for the money and other info area
-■Set Variable: CSelf60[おまけ欄X] = 0 + 0 
-■Set Variable: CSelf61[おまけ欄Y] = 215 + 0 
-■Set Variable: CSelf64[おまけ欄表示元X] = -80 + 0 
-■Set Variable: CSelf65[おまけ欄表示元Y] = 215 + 0 
-■Set Variable: CSelf62[おまけ欄横サイズ] = 80 + 0 
-■Set Variable: CSelf63[おまけ欄縦サイズ] = 25 + 0 
+■Set Variable: CSelf22[Display X] = 0 + 0 
+■Set Variable: CSelf23[Display Y] = 0 + 0 
+■Set Variable: CSelf58[Start X] = -80 + 0 
+■Set Variable: CSelf59[Start Y] = 0 + 0 
+■Set Variable: CSelf24[Width] = 80 + 0 
+▼ Height changes according to the number of commands
+■Set Variable: CSelf25[Height] = CSelf19[Base Font Size] + 0 
+■Set Variable: CSelf25[Height] += CSelf19[Base Font Size] / 4 
+■Set Variable: CSelf25[Height] *= CSelf27[Vertical Item Count] + 0 
+■Set Variable: CSelf25[Height] += CSelf89[Coordinate Scale Y (x10)] + 0 
+▼ Set coordinates for the money area
+■Set Variable: CSelf60[Extra Box X] = 0 + 0 
+■Set Variable: CSelf61[Extra Box Y] = 215 + 0 
+■Set Variable: CSelf64[Extra Box Start X] = -80 + 0 
+■Set Variable: CSelf65[Extra Box Start Y] = 215 + 0 
+■Set Variable: CSelf62[Extra Box Width] = 80 + 0 
+■Set Variable: CSelf63[Extra Box Height] = 25 + 0 
 ▼ Apply coordinate scaling
-■Set Variable: CSelf22[表示X] *= CSelf88[座標倍率X[x10]] + 0 
-■Set Variable: CSelf23[表示Y] *= CSelf89[座標倍率Y[x10]] + 0 
-■Set Variable: CSelf24[横サイズ] *= CSelf88[座標倍率X[x10]] + 0 
-■Set Variable: CSelf22[表示X] to CSelf24[横サイズ] /= 10 + 0 
+■Set Variable: CSelf22[Display X] *= CSelf88[Coordinate Scale X (x10)] + 0 
+■Set Variable: CSelf23[Display Y] *= CSelf89[Coordinate Scale Y (x10)] + 0 
+■Set Variable: CSelf24[Width] *= CSelf88[Coordinate Scale X (x10)] + 0 
+■Set Variable: CSelf22[Display X] to CSelf24[Width] /= 10 + 0 
 ▼ Height is based on the base font size, so no scaling is needed
-■Set Variable: CSelf58[表示元X] *= CSelf88[座標倍率X[x10]] + 0 
-■Set Variable: CSelf59[表示元Y] *= CSelf89[座標倍率Y[x10]] + 0 
-■Set Variable: CSelf60[おまけ欄X] *= CSelf88[座標倍率X[x10]] + 0 
-■Set Variable: CSelf61[おまけ欄Y] *= CSelf89[座標倍率Y[x10]] + 0 
-■Set Variable: CSelf62[おまけ欄横サイズ] *= CSelf88[座標倍率X[x10]] + 0 
-■Set Variable: CSelf63[おまけ欄縦サイズ] *= CSelf89[座標倍率Y[x10]] + 0 
-■Set Variable: CSelf64[おまけ欄表示元X] *= CSelf88[座標倍率X[x10]] + 0 
-■Set Variable: CSelf65[おまけ欄表示元Y] *= CSelf89[座標倍率Y[x10]] + 0 
-■Set Variable: CSelf58[表示元X] to CSelf65[おまけ欄表示元Y] /= 10 + 0 
+■Set Variable: CSelf58[Start X] *= CSelf88[Coordinate Scale X (x10)] + 0 
+■Set Variable: CSelf59[Start Y] *= CSelf89[Coordinate Scale Y (x10)] + 0 
+■Set Variable: CSelf60[Extra Box X] *= CSelf88[Coordinate Scale X (x10)] + 0 
+■Set Variable: CSelf61[Extra Box Y] *= CSelf89[Coordinate Scale Y (x10)] + 0 
+■Set Variable: CSelf62[Extra Box Width] *= CSelf88[Coordinate Scale X (x10)] + 0 
+■Set Variable: CSelf63[Extra Box Height] *= CSelf89[Coordinate Scale Y (x10)] + 0 
+■Set Variable: CSelf64[Extra Box Start X] *= CSelf88[Coordinate Scale X (x10)] + 0 
+■Set Variable: CSelf65[Extra Box Start Y] *= CSelf89[Coordinate Scale Y (x10)] + 0 
+■Set Variable: CSelf58[Start X] to CSelf65[Extra Box Start Y] /= 10 + 0 
 ▼ Initialize
-■Set Variable: CSelf29[全更新フラグ] = 0 + 0 
+■Set Variable: CSelf29[Full Update Flag] = 0 + 0 
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼   Start main processing here
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-■Condition (Number):   [1] CSelf0[処理モード] ==  -1  
--◇Condition:  [1]  [ CSelf0[処理モード] == -1   ] Case↓
+■Condition (Number):   [1] CSelf0[Mode] ==  -1  
+-◇Condition:  [1]  [ CSelf0[Mode] == -1   ] Case↓
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |▼ "Erase" Mode
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |▼ Erase only the background individually
- |■Picture [Reset Delay]: CSelf20[基本ピクチャ番号] 
- |■Picture Erase: CSelf20[基本ピクチャ番号]  / 10(0) Frames
+ |■Picture [Reset Delay]: CSelf20[Base Picture ID] 
+ |■Picture Erase: CSelf20[Base Picture ID]  / 10(0) Frames
  |▼ Erase other pictures by sliding them
- |■Set Variable: CSelf11[一時変数B] = CSelf20[基本ピクチャ番号] + 1 
- |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 12 
- |■Picture [Reset Delay]: CSelf11[一時変数B] to CSelf21[一時ピクチャ番号] 
+ |■Set Variable: CSelf11[Temp B] = CSelf20[Base Picture ID] + 1 
+ |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 12 
+ |■Picture [Reset Delay]: CSelf11[Temp B] to CSelf21[Temp Picture ID] 
  |■ Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
  |▼ For now, slide to the left
- |■Set Variable: CSelf10[一時変数A] = -120 * CSelf88[座標倍率X[x10]] 
- |■Set Variable: CSelf10[一時変数A] /= 10 + 0 
- |■Picture Move: CSelf11[一時変数B] to CSelf21[一時ピクチャ番号]  Relative X:CSelf10[一時変数A] Y:0 / 7(0) Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
- |■Picture Erase: CSelf11[一時変数B] to CSelf21[一時ピクチャ番号]  / 0(7) Frames
+ |■Set Variable: CSelf10[Temp A] = -120 * CSelf88[Coordinate Scale X (x10)] 
+ |■Set Variable: CSelf10[Temp A] /= 10 + 0 
+ |■Picture Move: CSelf11[Temp B] to CSelf21[Temp Picture ID]  Relative X:CSelf10[Temp A] Y:0 / 7(0) Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
+ |■Picture Erase: CSelf11[Temp B] to CSelf21[Temp Picture ID]  / 0(7) Frames
  |■Exit Event
  |■
 ◇End◇
-■Condition (Number):   [1] CSelf0[処理モード] ==  0  
--◇Condition:  [1]  [ CSelf0[処理モード] == 0   ] Case↓
+■Condition (Number):   [1] CSelf0[Mode] ==  0  
+-◇Condition:  [1]  [ CSelf0[Mode] == 0   ] Case↓
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |▼ "Display" Mode
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |▼ First, calculate the cursor parameters
- |■Set Variable: CSelf34[[保持]カーソル基本X] = CSelf22[表示X] + 0 
- |■Set Variable: CSelf35[[保持]カーソル基本Y] = CSelf23[表示Y] + 0 
- |■Set Variable: CSelf35[[保持]カーソル基本Y] += CSelf89[座標倍率Y[x10]] / 2 
- |■Set Variable: CSelf36[[保持]カーソル横幅] = CSelf24[横サイズ] - CSelf88[座標倍率X[x10]] 
- |■Set Variable: CSelf37[[保持]カーソル縦幅] = CSelf19[基本フォントサイズ] + 0 
- |■Set Variable: CSelf37[[保持]カーソル縦幅] += CSelf89[座標倍率Y[x10]] / 4 
- |■Set Variable: CSelf38[[保持]カーソル移動横幅] = CSelf24[横サイズ] + 0 
- |■Set Variable: CSelf39[[保持]カーソル移動縦幅] = CSelf25[縦サイズ] - CSelf89[座標倍率Y[x10]] 
- |■Set Variable: CSelf39[[保持]カーソル移動縦幅] /= CSelf27[縦項目数] + 0 
+ |■Set Variable: CSelf34[[Keep] Cursor Base X] = CSelf22[Display X] + 0 
+ |■Set Variable: CSelf35[[Keep] Cursor Base Y] = CSelf23[Display Y] + 0 
+ |■Set Variable: CSelf35[[Keep] Cursor Base Y] += CSelf89[Coordinate Scale Y (x10)] / 2 
+ |■Set Variable: CSelf36[[Keep] Cursor Width] = CSelf24[Width] - CSelf88[Coordinate Scale X (x10)] 
+ |■Set Variable: CSelf37[[Keep] Cursor Height] = CSelf19[Base Font Size] + 0 
+ |■Set Variable: CSelf37[[Keep] Cursor Height] += CSelf89[Coordinate Scale Y (x10)] / 4 
+ |■Set Variable: CSelf38[[Keep] Cursor Move Amount X] = CSelf24[Width] + 0 
+ |■Set Variable: CSelf39[[Keep] Cursor Move Amount Y] = CSelf25[Height] - CSelf89[Coordinate Scale Y (x10)] 
+ |■Set Variable: CSelf39[[Keep] Cursor Move Amount Y] /= CSelf27[Vertical Item Count] + 0 
  |▼ Display the background
- |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 0 
- |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- |■Set Variable: CSelf10[一時変数A] = CSelf88[座標倍率X[x10]] * 32 
- |■Set Variable: CSelf11[一時変数B] = CSelf89[座標倍率Y[x10]] * 24 
- |▼ 縦32、横24で割り切れない画面サイズのときに一部抜けるバグ修正　Ver3.20修正
- |■Set Variable: CSelf10[一時変数A] += 32 + 0 
- |■Set Variable: CSelf11[一時変数B] += 24 + 0 
- |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] Window [<GRADY-779-000>] Size [CSelf10[一時変数A],CSelf11[一時変数B]] X:0 Y:0 / 10(0) Frames  / Pattern 1 / Opacity 255 / Multiply  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
+ |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 0 
+ |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
+ |■Set Variable: CSelf10[Temp A] = CSelf88[Coordinate Scale X (x10)] * 32 
+ |■Set Variable: CSelf11[Temp B] = CSelf89[Coordinate Scale Y (x10)] * 24 
+ |▼ Fixed a bug where some areas were not displayed if the screen size wasn't divisible by 32 vertically or 24 horizontally (v3.20)
+ |■Set Variable: CSelf10[Temp A] += 32 + 0 
+ |■Set Variable: CSelf11[Temp B] += 24 + 0 
+ |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] Window [<GRADY-779-000>] Size [CSelf10[Temp A],CSelf11[Temp B]] X:0 Y:0 / 10(0) Frames  / Pattern 1 / Opacity 255 / Multiply  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |▼ メニューを表示
+ |▼ Display the menu
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 1 
- |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] Window (CSelf8[ウィンドウ画像ファイル]) Size [CSelf24[横サイズ],CSelf25[縦サイズ]] X:CSelf22[表示X] Y:CSelf23[表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
+ |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 1 
+ |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
+ |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] Window (CSelf8[Window Image File]) Size [CSelf24[Width],CSelf25[Height]] X:CSelf22[Display X] Y:CSelf23[Display Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  |■Repeat Loop [ 1 ] Times
- | |▼ ここでメニュー表示時エフェクト（「移動」コマンドで実現している）
- | |■Set Variable: CSelf41[一時項目表示X] = CSelf58[表示元X] + 0 
- | |■Set Variable: CSelf42[一時項目表示Y] = CSelf59[表示元Y] + 0 
- | |▼ 初期位置をシフト
- | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
- | |▼ 慣性移動
- | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf22[表示X] Y:CSelf23[表示Y] / 5(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
- | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf22[表示X] Y:CSelf23[表示Y] / 5(3) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
- | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf22[表示X] Y:CSelf23[表示Y] / 5(5) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
+ | |▼ Menu display animation (using the Picture Move command)
+ | |■Set Variable: CSelf41[Temp Item X] = CSelf58[Start X] + 0 
+ | |■Set Variable: CSelf42[Temp Item Y] = CSelf59[Start Y] + 0 
+ | |▼ Set the starting position
+ | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
+ | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
+ | |▼ Inertial movement
+ | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf22[Display X] Y:CSelf23[Display Y] / 5(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
+ | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf22[Display X] Y:CSelf23[Display Y] / 5(3) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
+ | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf22[Display X] Y:CSelf23[Display Y] / 5(5) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  | |■
  |◇Loop End Point◇◇
  |▼  
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |▼ 各コマンドの表示
+ |▼ Display each command
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |■Set Variable: CSelf43[処理中個数] = -1 + 0 
- |■Repeat Loop [ CSelf27[縦項目数] ] Times
- | |■Set Variable: CSelf43[処理中個数] += 1 + 0 
- | |▼ 座標計算
- | |■Set Variable: CSelf41[一時項目表示X] = CSelf34[[保持]カーソル基本X] + 0 
- | |■Set Variable: CSelf41[一時項目表示X] += CSelf38[[保持]カーソル移動横幅] / 2 
- | |■Set Variable: CSelf42[一時項目表示Y] = CSelf35[[保持]カーソル基本Y] + 0 
- | |■Set Variable: CSelf42[一時項目表示Y] += CSelf39[[保持]カーソル移動縦幅] * CSelf43[処理中個数] 
- | |■Set Variable: CSelf42[一時項目表示Y] += CSelf39[[保持]カーソル移動縦幅] / 2 
- | |▼ メニューコマンドは基本システム用変数23番～30番に入っている
- | |■Set Variable: CSelf10[一時変数A] = 23 + CSelf43[処理中個数] 
- | |■Load DB(Var):  CSelf7[表示項目名] = VarDB[ "Base System Variables":CSelf10[一時変数A]:1 ] (18:-:String) 
- | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + CSelf43[処理中個数] 
- | |■Set Variable: CSelf21[一時ピクチャ番号] += 3 + 0 
- | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | |■Load DB(Var):  CSelf14[一時変数E] = VarDB[ "Base System Variables":CSelf10[一時変数A]:0 ] (18:-:Number) 
+ |■Set Variable: CSelf43[Current Count] = -1 + 0 
+ |■Repeat Loop [ CSelf27[Vertical Item Count] ] Times
+ | |■Set Variable: CSelf43[Current Count] += 1 + 0 
+ | |▼ Calculate coordinates
+ | |■Set Variable: CSelf41[Temp Item X] = CSelf34[[Keep] Cursor Base X] + 0 
+ | |■Set Variable: CSelf41[Temp Item X] += CSelf38[[Keep] Cursor Move Amount X] / 2 
+ | |■Set Variable: CSelf42[Temp Item Y] = CSelf35[[Keep] Cursor Base Y] + 0 
+ | |■Set Variable: CSelf42[Temp Item Y] += CSelf39[[Keep] Cursor Move Amount Y] * CSelf43[Current Count] 
+ | |■Set Variable: CSelf42[Temp Item Y] += CSelf39[[Keep] Cursor Move Amount Y] / 2 
+ | |▼ Menu commands are stored in Base System Variables 23-30
+ | |■Set Variable: CSelf10[Temp A] = 23 + CSelf43[Current Count] 
+ | |■Load DB(Var):  CSelf7[Display Item Name] = VarDB[ "Base System Variables":CSelf10[Temp A]:1 ] (18:-:String) 
+ | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + CSelf43[Current Count] 
+ | |■Set Variable: CSelf21[Temp Picture ID] += 3 + 0 
+ | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
+ | |■Load DB(Var):  CSelf14[Temp E] = VarDB[ "Base System Variables":CSelf10[Temp A]:0 ] (18:-:Number) 
  | |■Repeat Loop [ 1 ] Times
- | | |▼ もしセーブコマンドなら、セーブ不能かどうかで分岐
- | | |■Condition (Number):   [1] CSelf14[一時変数E] ==  4  
- | | |-◇Condition:  [1]  [ CSelf14[一時変数E] == 4   ] Case↓
- | | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "Base System Variables":33:0 ] (18:[System] Can Save?:Number) 
- | | | |■Condition (Number):   [1] CSelf11[一時変数B] ==  0  
- | | | |-◇Condition:  [1]  [ CSelf11[一時変数B] == 0   ] Case↓
- | | | | |■Set Variable: CSelf14[一時変数E] = -1 + 0 
+ | | |▼ If the command is "Save", branch depending on whether saving is allowed
+ | | |■Condition (Number):   [1] CSelf14[Temp E] ==  4  
+ | | |-◇Condition:  [1]  [ CSelf14[Temp E] == 4   ] Case↓
+ | | | |■Load DB(Var):  CSelf11[Temp B] = VarDB[ "Base System Variables":33:0 ] (18:[System] Can Save?:Number) 
+ | | | |■Condition (Number):   [1] CSelf11[Temp B] ==  0  
+ | | | |-◇Condition:  [1]  [ CSelf11[Temp B] == 0   ] Case↓
+ | | | | |■Set Variable: CSelf14[Temp E] = -1 + 0 
  | | | | |■
  | | | |◇End◇
  | | | |■
  | | |◇End◇
  | | |■
  | |◇Loop End Point◇◇
- | |■Condition (Number):   [1] CSelf14[一時変数E] >=  0  /  [2] CSelf14[一時変数E] <=  -1  
- | |-◇Condition:  [1]  [ CSelf14[一時変数E] >= 0   ] Case↓
- | | |▼ コードが1以上なら普通の文字色で表示
- | | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] String [\f[\cself[19]]\c] X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
+ | |■Condition (Number):   [1] CSelf14[Temp E] >=  0  /  [2] CSelf14[Temp E] <=  -1  
+ | |-◇Condition:  [1]  [ CSelf14[Temp E] >= 0   ] Case↓
+ | | |▼ If the code is 1 or higher, display in the normal text color
+ | | |■Picture Show: CSelf21[Temp Picture ID] [Center] String [\f[\cself[19]]\c] X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  | | |■
- | |-◇Condition:  [2]  [ CSelf14[一時変数E] <= -1   ] Case↓
- | | |▼ コードが-1以下の場合は半透明に
- | | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] String [\f[\cself[19]]\c] X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0) Frames  / Pattern 1 / Opacity 128 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
+ | |-◇Condition:  [2]  [ CSelf14[Temp E] <= -1   ] Case↓
+ | | |▼ If the code is -1 or lower, display semi-transparently
+ | | |■Picture Show: CSelf21[Temp Picture ID] [Center] String [\f[\cself[19]]\c] X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 0(0) Frames  / Pattern 1 / Opacity 128 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  | | |■
  | |◇End◇
- | |▼ メニュー内容の横幅が溢れてたら横拡大率を減少させる
- | |■Set Variable+: CSelf11[一時変数B] = Picture: CSelf21[一時ピクチャ番号]'s Image Width
- | |■Set Variable: CSelf13[一時変数D] = CSelf24[横サイズ] - CSelf88[座標倍率X[x10]] 
- | |■Condition (Number):   [1] CSelf11[一時変数B] >  CSelf13[一時変数D]  
- | |-◇Condition:  [1]  [ CSelf11[一時変数B] > CSelf13[一時変数D]   ] Case↓
- | | |■Set Variable: CSelf13[一時変数D] *= 100 + 0 
- | | |■Set Variable: CSelf13[一時変数D] /= CSelf11[一時変数B] + 0 
- | | |■Picture Move: CSelf21[一時ピクチャ番号]  Relative X:0 Y:0 / 0(0) Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Scale CSelf13[一時変数D]%x100% / Color Same
+ | |▼ If the command text exceeds the width, reduce the horizontal scaling
+ | |■Set Variable+: CSelf11[Temp B] = Picture: CSelf21[Temp Picture ID]'s Image Width
+ | |■Set Variable: CSelf13[Temp D] = CSelf24[Width] - CSelf88[Coordinate Scale X (x10)] 
+ | |■Condition (Number):   [1] CSelf11[Temp B] >  CSelf13[Temp D]  
+ | |-◇Condition:  [1]  [ CSelf11[Temp B] > CSelf13[Temp D]   ] Case↓
+ | | |■Set Variable: CSelf13[Temp D] *= 100 + 0 
+ | | |■Set Variable: CSelf13[Temp D] /= CSelf11[Temp B] + 0 
+ | | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 0(0) Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Scale CSelf13[Temp D]%x100% / Color Same
  | | |■
  | |◇End◇
  | |▼  
  | |▼  
  | |■Repeat Loop [ 1 ] Times
- | | |▼ ここでコマンド表示時エフェクト（「移動」コマンドで実現している）
+ | | |▼ Command display animation (using the Picture Move command)
  | | |■ Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
- | | |▼ 初期位置をシフト（とりあえず横は、メニューの表示元Xを基点としている）
- | | |■Set Variable: CSelf44[一時項目表示X2] = CSelf58[表示元X] + 0 
- | | |■Set Variable: CSelf45[一時項目表示X2] = CSelf42[一時項目表示Y] + 0 
- | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf44[一時項目表示X2] Y:CSelf45[一時項目表示X2] / 0(0) Frames  / Pattern 1 / Opacity Same / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
- | | |▼ 慣性移動
- | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(0) Frames  / Pattern 1 / Opacity Same / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
- | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(3) Frames  / Pattern 1 / Opacity Same / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
- | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 5(5) Frames  / Pattern 1 / Opacity Same / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
+ | | |▼ Set the starting position (X is the menu's start X position)
+ | | |■Set Variable: CSelf44[Temp Item X2] = CSelf58[Start X] + 0 
+ | | |■Set Variable: CSelf45[Temp Item Y2] = CSelf42[Temp Item Y] + 0 
+ | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
+ | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf44[Temp Item X2] Y:CSelf45[Temp Item Y2] / 0(0) Frames  / Pattern 1 / Opacity Same / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
+ | | |▼ Inertial movement
+ | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(0) Frames  / Pattern 1 / Opacity Same / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
+ | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(3) Frames  / Pattern 1 / Opacity Same / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
+ | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(5) Frames  / Pattern 1 / Opacity Same / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | |■
  | |◇Loop End Point◇◇
  | |■
  |◇Loop End Point◇◇
  |■Repeat Loop [ 1 ] Times
  | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- | |▼ おまけ欄（所持金）を表示
+ | |▼ Display the extra area (money)
  | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 11 
- | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] Window (CSelf8[ウィンドウ画像ファイル]) Size [CSelf62[おまけ欄横サイズ],CSelf63[おまけ欄縦サイズ]] X:CSelf60[おまけ欄X] Y:CSelf61[おまけ欄Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
+ | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 11 
+ | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
+ | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] Window (CSelf8[Window Image File]) Size [CSelf62[Extra Box Width],CSelf63[Extra Box Height]] X:CSelf60[Extra Box X] Y:CSelf61[Extra Box Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  | |■Repeat Loop [ 1 ] Times
- | | |▼ おまけ欄内の文字列を生成
- | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "Party":0:"Current Money" ] (6:Main Settings:0) 
- | | |▼ \axと\ay、<R>を駆使して横幅と位置を調整
- | | |■Set Variable: CSelf13[一時変数D] = CSelf62[おまけ欄横サイズ] - CSelf88[座標倍率X[x10]] 
- | | |▼ バージョンによって右寄せの幅計算処理を変更　Ver3.00修正
+ | | |▼ Create the text for the extra area
+ | | |■Load DB(Var):  CSelf11[Temp B] = VarDB[ "Party":0:"Current Money" ] (6:Main Settings:0) 
+ | | |▼ Adjust width and position using \ax, \ay, and <R>
+ | | |■Set Variable: CSelf13[Temp D] = CSelf62[Extra Box Width] - CSelf88[Coordinate Scale X (x10)] 
+ | | |▼ Changed the right-alignment width calculation depending on the version (v3.00)
  | | |■Condition (Number):   [1] Sys115:[RO] Game.exe Version (x100) <  300  /  [2] Sys115:[RO] Game.exe Version (x100) >=  300  
  | | |-◇Condition:  [1]  [ Sys115:[RO] Game.exe Version (x100) < 300   ] Case↓
  | | | |■Condition (Number):   [1] Sys84:Screen Resolution (0-2, -1:Other) ==  0  
  | | | |-◇Condition:  [1]  [ Sys84:Screen Resolution (0-2, -1:Other) == 0   ] Case↓
- | | | | |▼ 解像度が320x240の場合だけ二倍補正が必要（\ax[?]の仕様上）
- | | | | |■Set Variable: CSelf13[一時変数D] *= 2 + 0 
+ | | | | |▼ Double-scaling required only for 320x240 resolution (due to \ax[X] behavior)
+ | | | | |■Set Variable: CSelf13[Temp D] *= 2 + 0 
  | | | | |■
  | | | |◇End◇
  | | | |■
  | | |-◇Condition:  [2]  [ Sys115:[RO] Game.exe Version (x100) >= 300   ] Case↓
- | | | |▼ Ver3.00以降はSys119の基本画面倍率で調整　Ver3.00修正
- | | | |■Set Variable: CSelf13[一時変数D] *= Sys119:[RO] Screen Resolution Multiplier (1-3x) + 0 
+ | | | |▼ From version 3.00 onward, adjust using Sys119 (Screen Resolution Multiplier)
+ | | | |■Set Variable: CSelf13[Temp D] *= Sys119:[RO] Screen Resolution Multiplier (1-3x) + 0 
  | | | |■
  | | |◇End◇
- | | |■Set String: CSelf6[オプション枠用] = " \ax[\cself[13]]\n<R>\ay[0]\f[\cself[19]]\cself[11]\f[\cself[18]] "
- | | |■Load DB(User):  CSelf6[オプション枠用] += UserDB[ "Terms":0:"[Stats] Currency" ] (15:Basic Terms:18) 
- | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 12 
- | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
- | | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] String [\cself[6]] X:CSelf60[おまけ欄X] Y:CSelf61[おまけ欄Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
- | | |■Set Variable: CSelf12[一時変数C] = CSelf88[座標倍率X[x10]] / 2 
- | | |■Set Variable: CSelf13[一時変数D] = CSelf89[座標倍率Y[x10]] / 2 
- | | |■Set Variable: CSelf13[一時変数D] += CSelf89[座標倍率Y[x10]] / 6 
- | | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf12[一時変数C] / Shift Y CSelf13[一時変数D]  [0] Frames
+ | | |■Set String: CSelf6[Extra Box Text] = " \ax[\cself[13]]\n<R>\ay[0]\f[\cself[19]]\cself[11]\f[\cself[18]] "
+ | | |■Load DB(User):  CSelf6[Extra Box Text] += UserDB[ "Terms":0:"[Stats] Currency" ] (15:Basic Terms:18) 
+ | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 12 
+ | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
+ | | |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] String [\cself[6]] X:CSelf60[Extra Box X] Y:CSelf61[Extra Box Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
+ | | |■Set Variable: CSelf12[Temp C] = CSelf88[Coordinate Scale X (x10)] / 2 
+ | | |■Set Variable: CSelf13[Temp D] = CSelf89[Coordinate Scale Y (x10)] / 2 
+ | | |■Set Variable: CSelf13[Temp D] += CSelf89[Coordinate Scale Y (x10)] / 6 
+ | | |■Effect Picture: CSelf21[Temp Picture ID] [Shift Position (Final Value)] Shift X CSelf12[Temp C] / Shift Y CSelf13[Temp D]  [0] Frames
  | | |■
  | |◇Loop End Point◇◇
  | |■Repeat Loop [ 1 ] Times
- | | |▼ もし文字がはみ出てたら横幅を制限（横拡大率を下げる）
- | | |■Set Variable+: CSelf11[一時変数B] = Picture: CSelf21[一時ピクチャ番号]'s Image Width
- | | |■Set Variable: CSelf13[一時変数D] = CSelf62[おまけ欄横サイズ] - CSelf88[座標倍率X[x10]] 
- | | |■Condition (Number):   [1] CSelf11[一時変数B] >  CSelf13[一時変数D]  
- | | |-◇Condition:  [1]  [ CSelf11[一時変数B] > CSelf13[一時変数D]   ] Case↓
- | | | |■Set Variable: CSelf13[一時変数D] *= 100 + 0 
- | | | |■Set Variable: CSelf13[一時変数D] /= CSelf11[一時変数B] + 0 
- | | | |■Picture Move: CSelf21[一時ピクチャ番号]  X:CSelf60[おまけ欄X] Y:CSelf61[おまけ欄Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale CSelf13[一時変数D]%x100% / Color R[100] G[100] B[100]
+ | | |▼ If the text overflows, limit the width (reduce the horizontal scale)
+ | | |■Set Variable+: CSelf11[Temp B] = Picture: CSelf21[Temp Picture ID]'s Image Width
+ | | |■Set Variable: CSelf13[Temp D] = CSelf62[Extra Box Width] - CSelf88[Coordinate Scale X (x10)] 
+ | | |■Condition (Number):   [1] CSelf11[Temp B] >  CSelf13[Temp D]  
+ | | |-◇Condition:  [1]  [ CSelf11[Temp B] > CSelf13[Temp D]   ] Case↓
+ | | | |■Set Variable: CSelf13[Temp D] *= 100 + 0 
+ | | | |■Set Variable: CSelf13[Temp D] /= CSelf11[Temp B] + 0 
+ | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf60[Extra Box X] Y:CSelf61[Extra Box Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale CSelf13[Temp D]%x100% / Color R[100] G[100] B[100]
  | | | |■
  | | |◇End◇
  | | |■
  | |◇Loop End Point◇◇
  | |■Repeat Loop [ 1 ] Times
- | | |▼ ここでおまけ欄表示エフェクト（「移動」コマンドで実現している）
- | | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 11 
- | | |■Set Variable: CSelf10[一時変数A] = CSelf20[基本ピクチャ番号] + 12 
- | | |■Set Variable: CSelf41[一時項目表示X] = CSelf64[おまけ欄表示元X] + 0 
- | | |■Set Variable: CSelf42[一時項目表示Y] = CSelf65[おまけ欄表示元Y] + 0 
- | | |▼ 初期位置をシフト
- | | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] to CSelf10[一時変数A] 
- | | |■Picture Move: CSelf21[一時ピクチャ番号] to CSelf10[一時変数A]  X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
- | | |▼ 慣性移動
- | | |■Picture Move: CSelf21[一時ピクチャ番号] to CSelf10[一時変数A]  X:CSelf60[おまけ欄X] Y:CSelf61[おまけ欄Y] / 8(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
- | | |■Picture Move: CSelf21[一時ピクチャ番号] to CSelf10[一時変数A]  X:CSelf60[おまけ欄X] Y:CSelf61[おまけ欄Y] / 8(4) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
- | | |■Picture Move: CSelf21[一時ピクチャ番号] to CSelf10[一時変数A]  X:CSelf60[おまけ欄X] Y:CSelf61[おまけ欄Y] / 8(8) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
+ | | |▼ Extra area display animation (using the Picture Move command)
+ | | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 11 
+ | | |■Set Variable: CSelf10[Temp A] = CSelf20[Base Picture ID] + 12 
+ | | |■Set Variable: CSelf41[Temp Item X] = CSelf64[Extra Box Start X] + 0 
+ | | |■Set Variable: CSelf42[Temp Item Y] = CSelf65[Extra Box Start Y] + 0 
+ | | |▼ Set the starting position
+ | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] to CSelf10[Temp A] 
+ | | |■Picture Move: CSelf21[Temp Picture ID] to CSelf10[Temp A]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
+ | | |▼ Inertial movement
+ | | |■Picture Move: CSelf21[Temp Picture ID] to CSelf10[Temp A]  X:CSelf60[Extra Box X] Y:CSelf61[Extra Box Y] / 8(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
+ | | |■Picture Move: CSelf21[Temp Picture ID] to CSelf10[Temp A]  X:CSelf60[Extra Box X] Y:CSelf61[Extra Box Y] / 8(4) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
+ | | |■Picture Move: CSelf21[Temp Picture ID] to CSelf10[Temp A]  X:CSelf60[Extra Box X] Y:CSelf61[Extra Box Y] / 8(8) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | |■
  | |◇Loop End Point◇◇
- | |▼ おまけ欄表示処理ここまで
+ | |▼ End of extra area display processing
  | |■
  |◇Loop End Point◇◇
  |■Exit Event
  |■
 ◇End◇
-■Condition (Number):   [1] CSelf0[処理モード] ==  1  
--◇Condition:  [1]  [ CSelf0[処理モード] == 1   ] Case↓
+■Condition (Number):   [1] CSelf0[Mode] ==  1  
+-◇Condition:  [1]  [ CSelf0[Mode] == 1   ] Case↓
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |▼ 「更新」モード
+ |▼ "Update" Mode
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 2 
- |■Condition (Number):   [1] CSelf1[カーソル位置] ==  -1  /  [2] CSelf1[カーソル位置] ==  -2  
- |-◇Condition:  [1]  [ CSelf1[カーソル位置] == -1   ] Case↓
- | |▼ カーソル消去
- | |■Picture Erase: CSelf21[一時ピクチャ番号]  / 0(0) Frames
+ |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 2 
+ |■Condition (Number):   [1] CSelf1[Cursor Position] ==  -1  /  [2] CSelf1[Cursor Position] ==  -2  
+ |-◇Condition:  [1]  [ CSelf1[Cursor Position] == -1   ] Case↓
+ | |▼ Erase the cursor
+ | |■Picture Erase: CSelf21[Temp Picture ID]  / 0(0) Frames
  | |■Exit Event
  | |■
- |-◇Condition:  [2]  [ CSelf1[カーソル位置] == -2   ] Case↓
- | |▼ フラッシュ停止（暗くする）
- | |■Effect Picture: CSelf21[一時ピクチャ番号] [Blink A (Flicker)] R0/G0/B0  Interval [0] Frames
- | |■Picture Move: CSelf21[一時ピクチャ番号]  Relative X:0 Y:0 / 0(0) Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color R[80] G[80] B[80]
+ |-◇Condition:  [2]  [ CSelf1[Cursor Position] == -2   ] Case↓
+ | |▼ Stop blinking (darken)
+ | |■Effect Picture: CSelf21[Temp Picture ID] [Blink A (Flicker)] R0/G0/B0  Interval [0] Frames
+ | |■Picture Move: CSelf21[Temp Picture ID]  Relative X:0 Y:0 / 0(0) Frames  / Pattern Same / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color R[80] G[80] B[80]
  | |■Exit Event
  | |■
  |◇End◇
- |▼ 座標計算
- |■Set Variable: CSelf41[一時項目表示X] = CSelf34[[保持]カーソル基本X] + 0 
- |■Set Variable: CSelf41[一時項目表示X] += CSelf38[[保持]カーソル移動横幅] / 2 
- |■Set Variable: CSelf42[一時項目表示Y] = CSelf35[[保持]カーソル基本Y] + 0 
- |■Set Variable: CSelf42[一時項目表示Y] += CSelf39[[保持]カーソル移動縦幅] * CSelf1[カーソル位置] 
- |■Set Variable: CSelf42[一時項目表示Y] += CSelf39[[保持]カーソル移動縦幅] / 2 
+ |▼ Calculate coordinates
+ |■Set Variable: CSelf41[Temp Item X] = CSelf34[[Keep] Cursor Base X] + 0 
+ |■Set Variable: CSelf41[Temp Item X] += CSelf38[[Keep] Cursor Move Amount X] / 2 
+ |■Set Variable: CSelf42[Temp Item Y] = CSelf35[[Keep] Cursor Base Y] + 0 
+ |■Set Variable: CSelf42[Temp Item Y] += CSelf39[[Keep] Cursor Move Amount Y] * CSelf1[Cursor Position] 
+ |■Set Variable: CSelf42[Temp Item Y] += CSelf39[[Keep] Cursor Move Amount Y] / 2 
  |▼  
- |■Picture Show: CSelf21[一時ピクチャ番号] [Center] Window (CSelf9[カーソル画像ファイル]) Size [CSelf36[[保持]カーソル横幅],CSelf37[[保持]カーソル縦幅]] X:CSelf41[一時項目表示X] Y:CSelf42[一時項目表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Add  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
- |■Effect Picture: CSelf21[一時ピクチャ番号] [Blink A (Flicker)] R100/G100/B100  Interval [15] Frames
+ |■Picture Show: CSelf21[Temp Picture ID] [Center] Window (CSelf9[Cursor Image File]) Size [CSelf36[[Keep] Cursor Width],CSelf37[[Keep] Cursor Height]] X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Add  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
+ |■Effect Picture: CSelf21[Temp Picture ID] [Blink A (Flicker)] R100/G100/B100  Interval [15] Frames
  |■Exit Event
  |■
 ◇End◇

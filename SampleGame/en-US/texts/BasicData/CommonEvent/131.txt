@@ -454,7 +454,7 @@ WoditorEvCOMMAND_END
  | |■Condition (Number):   [1] CSelf0[セーブ? ロード?] ==  0  /  [2] CSelf0[セーブ? ロード?] ==  1  
  | |-◇Condition:  [1]  [ CSelf0[セーブ? ロード?] == 0   ] Case↓
  | | |■Call Event [Name]: ["X[Map]Draw Save/Load Screen"] <CommonEv 94>  / -1:消去 / CSelf10[ページ内選択箇所] / CSelf11[選択ページ]
- | | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / -1:消去 / 0:0以上…カーソル位置設定
+ | | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / -1:Erase / 0:0+ (Cursor Position)
  | | |■Call Event [Name]: ["X[Map]Character Box: Draw All"] <CommonEv 92>  / -1:全員消去
  | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 8:Save Sound
  | | |■Wait: 16 Frames
@@ -480,7 +480,7 @@ WoditorEvCOMMAND_END
  | | |◇Loop End Point◇◇
  | | |■Condition (Number):   [1] CSelf1[モード] ==  0  
  | | |-◇Condition:  [1]  [ CSelf1[モード] == 0   ] Case↓
- | | | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 0:表示 / 0:0以上…カーソル位置設定
+ | | | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 0:Display / 0:0+ (Cursor Position)
  | | | |■Call Event [Name]: ["X[Map]Character Box: Draw All"] <CommonEv 92>  / 0:新規に全員描画
  | | | |■Load DB(Var):  CSelf13[一時変数A] = VarDB[ "Base System Variables":54:0 ] (18:Menu Cursor Position:Number) 
  | | | |■
@@ -489,8 +489,8 @@ WoditorEvCOMMAND_END
  | | |■Wait: 9 Frames
  | | |■Condition (Number):   [1] CSelf1[モード] ==  0  
  | | |-◇Condition:  [1]  [ CSelf1[モード] == 0   ] Case↓
- | | | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 1:更新 / CSelf13[一時変数A]
- | | | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 1:更新 / -2:フラッシュ停止
+ | | | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 1:Update / CSelf13[一時変数A]
+ | | | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 1:Update / -2:Stop Blinking
  | | | |■
  | | |◇End◇
  | | |■
@@ -520,7 +520,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [2]  [ CSelf13[一時変数A] >= 1   ] Case↓
  | | | |▼ セーブデータが存在しているときだけ処理
  | | | |■Call Event [Name]: ["X[Map]Draw Save/Load Screen"] <CommonEv 94>  / -1:消去 / CSelf10[ページ内選択箇所] / CSelf11[選択ページ]
- | | | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / -1:消去 / 0:0以上…カーソル位置設定
+ | | | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / -1:Erase / 0:0+ (Cursor Position)
  | | | |■Call Event [Name]: ["X[Map]Character Box: Draw All"] <CommonEv 92>  / -1:全員消去
  | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 9:Load Sound
  | | | |■Call Event [Name]: ["X[Com]Execute Full Effect"] <CommonEv 67>  / 1:Fade to Black / 9

@@ -405,7 +405,7 @@ WoditorEvCOMMAND_END
 ▼ 初期表示
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ メニュー欄を表示
-■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 0:表示 / 0:0以上…カーソル位置設定
+■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 0:Display / 0:0+ (Cursor Position)
 ▼ パーティー情報から一人ずつ主人公ID取得して、キャラクター一覧を表示
 ■Call Event [Name]: ["X[Map]Character Box: Draw All"] <CommonEv 92>  / 0:新規に全員描画
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -413,7 +413,7 @@ WoditorEvCOMMAND_END
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■Wait: 4 Frames
 ■Set Variable: CSelf21[現カーソル位置] = 0 + 0 
-■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 1:更新 / CSelf21[現カーソル位置]
+■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 1:Update / CSelf21[現カーソル位置]
 ■Load DB(Var):  CSelf20[コマンド最大数] = VarDB[ "Base System Variables":22:0 ] (18:Menu Command Count:Number) 
 ▼ もし上下キーが入ってたら、カーソルが動くまでの少しだけウェイト
 ■Key Input: CSelf15[直前キー状態] [Normal Input]  Confirm (10) Cancel (11)
@@ -451,7 +451,7 @@ WoditorEvCOMMAND_END
  | |■Set Variable: CSelf21[現カーソル位置] += 1 + 0 
  | |■Set Variable: CSelf21[現カーソル位置] %= CSelf20[コマンド最大数] + 0 
  | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
- | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 1:更新 / CSelf21[現カーソル位置]
+ | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 1:Update / CSelf21[現カーソル位置]
  | |■Go to Loop Start
  | |■
  |-◇Condition:  [2]  [ CSelf13[キー入力状態] == 8   ] Case↓
@@ -459,7 +459,7 @@ WoditorEvCOMMAND_END
  | |■Set Variable: CSelf21[現カーソル位置] += CSelf20[コマンド最大数] - 1 
  | |■Set Variable: CSelf21[現カーソル位置] %= CSelf20[コマンド最大数] + 0 
  | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
- | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 1:更新 / CSelf21[現カーソル位置]
+ | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 1:Update / CSelf21[現カーソル位置]
  | |■Go to Loop Start
  | |■
  |-◇Else
@@ -467,14 +467,14 @@ WoditorEvCOMMAND_END
  | |-◇Condition:  [1]  [ CSelf13[キー入力状態] == 10   ] Case↓
  | | |●Label Point [メニュー決定] <<<<<<<<<<<<<<<<★
  | | |▼ 決定キーを押した場合の処理
- | | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 1:更新 / -2:フラッシュ停止
+ | | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 1:Update / -2:Stop Blinking
  | | |■Set Variable: CSelf22[選択コード位置] = CSelf21[現カーソル位置] + 23 
  | | |■Load DB(Var):  CSelf23[選択コード番号] = VarDB[ "Base System Variables":CSelf22[選択コード位置]:0 ] (18:-:Number) 
  | | |■Condition (Number):   [1] CSelf23[選択コード番号] <=  -1  
  | | |-◇Condition:  [1]  [ CSelf23[選択コード番号] <= -1   ] Case↓
  | | | |▼ コマンド選択不能
  | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 2:Buzzer Sound
- | | | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 1:更新 / CSelf21[現カーソル位置]
+ | | | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 1:Update / CSelf21[現カーソル位置]
  | | | |■Go to Loop Start
  | | | |■
  | | |◇End◇
@@ -552,7 +552,7 @@ WoditorEvCOMMAND_END
  | | | |■Exit Event
  | | | |■
  | | |◇End◇
- | | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 1:更新 / CSelf21[現カーソル位置]
+ | | |■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / 1:Update / CSelf21[現カーソル位置]
  | | |■
  | |-◇Condition:  [2]  [ CSelf13[キー入力状態] == 11   ] Case↓
  | | |▼ キャンセルキーを押した場合の処理
@@ -575,7 +575,7 @@ WoditorEvCOMMAND_END
  |■
 ◇End◇
 ▼ メニュー・キャラクター消去
-■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / -1:消去 / 0:0以上…カーソル位置設定
+■Call Event [Name]: ["X[Map]Draw Menu"] <CommonEv 88>  / -1:Erase / 0:0+ (Cursor Position)
 ■Call Event [Name]: ["X[Map]Character Box: Draw All"] <CommonEv 92>  / -1:全員消去
 ■
 [COMMAND_TEXT_END]
