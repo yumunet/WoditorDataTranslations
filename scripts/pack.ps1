@@ -23,13 +23,13 @@ if ($Project -eq "Extras") {
                 if (Test-Path -LiteralPath $src -PathType Container) {
                     Get-ChildItem -LiteralPath $src -Recurse -File | ForEach-Object {
                         $relative = $_.FullName.Substring($src.Length + 1)
-                        $entryPath = "$DirectoryName\$relative"
+                        $entryPath = "$DirectoryName\$relative" -replace "\\", "/"
                         [System.IO.Compression.ZipFileExtensions]::CreateEntryFromFile($zip, $_.FullName, $entryPath) > $null
                     }
                 }
                 else {
                     $filename = Split-Path -Path $src -Leaf
-                    $entryPath = "$DirectoryName\$filename"
+                    $entryPath = "$DirectoryName\$filename" -replace "\\", "/"
                     [System.IO.Compression.ZipFileExtensions]::CreateEntryFromFile($zip, $src, $entryPath) > $null
                 }
             }
