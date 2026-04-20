@@ -202,7 +202,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("    30: Equipment Status Window, 31: Equipment Status Text")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("  Parameter Settings")
+[103][0,1]<0>()("  Set parameters")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<0>()("Set a fixed value")
 [121][4,0]<0>(1600020,12000,0,0)()
@@ -746,7 +746,7 @@ WoditorEvCOMMAND_END
 ▼     30: Equipment Status Window, 31: Equipment Status Text
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼   Parameter Settings
+▼   Set parameters
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ Set a fixed value
 ■Set Variable: CSelf20[Base Picture ID] = 12000 + 0 

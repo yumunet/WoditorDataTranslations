@@ -198,7 +198,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("  Base Picture ID + 11-12 = Money Display Area")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("  Parameter Settings")
+[103][0,1]<0>()("  Set parameters")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<0>()("Set a fixed value")
 [121][4,0]<0>(1600020,10000,0,0)()
@@ -521,7 +521,7 @@ WoditorEvCOMMAND_END
 ▼   Base Picture ID + 11-12 = Money Display Area
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼   Parameter Settings
+▼   Set parameters
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ Set a fixed value
 ■Set Variable: CSelf20[Base Picture ID] = 10000 + 0 
