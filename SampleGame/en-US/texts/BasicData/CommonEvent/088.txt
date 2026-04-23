@@ -178,7 +178,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("[Process Overview]")
 [103][0,1]<0>()("  Displays the menu command list, erases it, or updates the cursor display.")
-[103][0,1]<0>()("  The menu and cursor display coordinates and sizes are defined within this Common Event.")
+[103][0,1]<0>()("  The menu and cursor display coordinates and sizes are defined within this common event.")
 [103][0,1]<0>()("")
 [103][0,1]<0>()("  The menu commands displayed by this process are stored in the Variable DB.")
 [103][0,1]<0>()("  The command list itself is created in <dqrt>X┗[Map]Update Menu Commands<dqrt>.")
@@ -501,7 +501,7 @@ WoditorEvCOMMAND_END
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ [Process Overview]
 ▼   Displays the menu command list, erases it, or updates the cursor display.
-▼   The menu and cursor display coordinates and sizes are defined within this Common Event.
+▼   The menu and cursor display coordinates and sizes are defined within this common event.
 ▼ 
 ▼   The menu commands displayed by this process are stored in the Variable DB.
 ▼   The command list itself is created in "X┗[Map]Update Menu Commands".

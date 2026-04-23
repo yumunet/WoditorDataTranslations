@@ -197,9 +197,9 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("  Base Picture ID + 5 = <dqrt>Sell<dqrt> Label")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("  Base Picture ID + 10-32 =")
-[103][0,1]<0>()("    10: Money Window, 11: Money Amount")
-[103][0,1]<0>()("    20: Owned Quantity Window, 21: Owned Quantity")
-[103][0,1]<0>()("    30: Equipment Status Window, 31: Equipment Status Text")
+[103][0,1]<0>()("    10: Money Window,  11: Money Amount,")
+[103][0,1]<0>()("    20: Owned Quantity Window,  21: Owned Quantity,")
+[103][0,1]<0>()("    30: Equipment Status Window,  31: Equipment Status Text")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<0>()("  Set parameters")
@@ -741,9 +741,9 @@ WoditorEvCOMMAND_END
 ▼   Base Picture ID + 5 = "Sell" Label
 ▼  
 ▼   Base Picture ID + 10-32 =
-▼     10: Money Window, 11: Money Amount
-▼     20: Owned Quantity Window, 21: Owned Quantity
-▼     30: Equipment Status Window, 31: Equipment Status Text
+▼     10: Money Window,  11: Money Amount,
+▼     20: Owned Quantity Window,  21: Owned Quantity,
+▼     30: Equipment Status Window,  31: Equipment Status Text
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼   Set parameters

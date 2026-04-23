@@ -84,7 +84,7 @@ CSELF_NAME_2=表示主人公ID
 CSELF_NAME_3=
 CSELF_NAME_4=1キャラあたり使用ピクチャ数
 CSELF_NAME_5=
-CSELF_NAME_6=ゲージ画像ファイル
+CSELF_NAME_6=
 CSELF_NAME_7=表示項目名
 CSELF_NAME_8=ウィンドウ画像ファイル
 CSELF_NAME_9=カーソル画像ファイル
@@ -104,36 +104,36 @@ CSELF_NAME_22=表示X
 CSELF_NAME_23=表示Y
 CSELF_NAME_24=横サイズ
 CSELF_NAME_25=縦サイズ
-CSELF_NAME_26=-------
-CSELF_NAME_27=縦項目数
-CSELF_NAME_28=座標倍率
+CSELF_NAME_26=
+CSELF_NAME_27=
+CSELF_NAME_28=
 CSELF_NAME_29=
 CSELF_NAME_30=移動元X
 CSELF_NAME_31=移動元Y
 CSELF_NAME_32=表示ディレイ
 CSELF_NAME_33=
-CSELF_NAME_34=[保持]カーソル基本X
-CSELF_NAME_35=[保持]カーソル基本Y
-CSELF_NAME_36=[保持]カーソル横幅
-CSELF_NAME_37=[保持]カーソル縦幅
-CSELF_NAME_38=[保持]カーソル移動横幅
-CSELF_NAME_39=[保持]カーソル移動縦幅
-CSELF_NAME_40=全項目数
+CSELF_NAME_34=
+CSELF_NAME_35=
+CSELF_NAME_36=
+CSELF_NAME_37=
+CSELF_NAME_38=
+CSELF_NAME_39=
+CSELF_NAME_40=
 CSELF_NAME_41=一時項目表示X
 CSELF_NAME_42=一時項目表示Y
-CSELF_NAME_43=処理中個数
+CSELF_NAME_43=
 CSELF_NAME_44=
 CSELF_NAME_45=
 CSELF_NAME_46=
-CSELF_NAME_47=数値表示シフト量
-CSELF_NAME_48=項目表示元Y
-CSELF_NAME_49=項目横拡大率
+CSELF_NAME_47=
+CSELF_NAME_48=
+CSELF_NAME_49=
 CSELF_NAME_50=エフェクト表示フラグ
 CSELF_NAME_51=
 CSELF_NAME_52=
-CSELF_NAME_53=色指定R
-CSELF_NAME_54=色指定G
-CSELF_NAME_55=色指定B
+CSELF_NAME_53=
+CSELF_NAME_54=
+CSELF_NAME_55=
 CSELF_NAME_56=顔表示倍率
 CSELF_NAME_57=顔サイズX
 CSELF_NAME_58=顔サイズY
@@ -183,62 +183,62 @@ COMMAND_NUM=582
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("[Process Overview]")
-[103][0,1]<0>()("　モード別に、以下の処理を行います。")
-[103][0,1]<0>()("　　- キャラクター欄一個分の初期描画　　[※事前に座標指定が必要]")
-[103][0,1]<0>()("　　- キャラクター欄一個分の消去処理　　[※事前に座標指定が必要]")
-[103][0,1]<0>()("　　- カーソルオンオフの切り替え、全ての欄を対象にすることも可　[※座標指定不要]")
+[103][0,1]<0>()("  Performs the following processes depending on the mode:")
+[103][0,1]<0>()("  - Initial rendering of one character panel (Coordinates must be set beforehand)")
+[103][0,1]<0>()("  - Erasing one character panel (Coordinates must be set beforehand)")
+[103][0,1]<0>()("  - Toggling the cursor on/off; this can also target all panels (No coordinate setting required)")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("　アイテム使用時のエフェクトなどもこのコモン内で処理されます。")
+[103][0,1]<0>()("  Animations when using items are also handled within this common event.")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("　この処理を行う際は、一回ごとに事前に、「キャラクター欄_座標算出」を行うか、")
-[103][0,1]<0>()("　下記変数への座標指定を手動で行って下さい。")
-[103][0,1]<0>()("　（なお、以下の指定座標は「中心基点」で「倍率補正済み」となっています）")
+[103][0,1]<0>()("  Every time before calling this common event, you must either call <dqrt>X[Map]Character Box: Calc Pos<dqrt>")
+[103][0,1]<0>()("  or manually set coordinates to the following variables.")
+[103][0,1]<0>()("  (The coordinates use a center origin and already have the coordinate scales applied.)")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("　可変DB「基本システム用変数」内の、以下の変数に座標を指定してこのイベントを起動すると、")
-[103][0,1]<0>()("　「元座標」→「表示先　座標」へスライドしながらキャラクター欄が表示されます。")
-[103][0,1]<0>()("　 　35:ステータス欄表示　元座標X　")
-[103][0,1]<0>()(" 　　36:ステータス欄表示　元座標Y")
-[103][0,1]<0>()(" 　　37:ステータス欄表示先　座標X")
-[103][0,1]<0>()(" 　　38:ステータス欄表示先　座標Y")
-[103][0,1]<0>()("　※上記の座標は倍率補正済みの値である必要があります。")
+[103][0,1]<0>()("  When you call this event after setting coordinates to the following variables in the Variable DB <dqrt>Base System Variables<dqrt>,")
+[103][0,1]<0>()("  the character panel slides from the Start coordinates to the End coordinates.")
+[103][0,1]<0>()("    - 35: Status Display Start X")
+[103][0,1]<0>()("    - 36: Status Display Start Y")
+[103][0,1]<0>()("    - 37: Status Display End X")
+[103][0,1]<0>()("    - 38: Status Display End Y")
+[103][0,1]<0>()("  Note: These coordinates must have the coordinate scales applied.")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("【ピクチャ】")
-[103][0,1]<0>()("　基本ピクチャ＋0　＝　メインウィンドウ")
-[103][0,1]<0>()("　基本ピクチャ＋1　＝　カーソル")
-[103][0,1]<0>()("　基本ピクチャ＋2～24　＝　")
-[103][0,1]<0>()("　　2：顔グラフィック 　3：顔枠　4：名前　5：肩書き　6：レベル")
-[103][0,1]<0>()("　　10～12：HPゲージ 13：HP　15～17：SPゲージ 18：SP")
-[103][0,1]<0>()("　　19～21：EXPゲージ　　22：EXP　　23：状態異常")
+[103][0,1]<0>()("[Pictures]")
+[103][0,1]<0>()("  Base Picture ID + 0 = Main Window")
+[103][0,1]<0>()("  Base Picture ID + 1 = Cursor")
+[103][0,1]<0>()("  Base Picture ID + 2-24 =")
+[103][0,1]<0>()("    2: Portrait,  3: Portrait Frame,  4: Name,  5: Title,  6: Level,")
+[103][0,1]<0>()("    10-12: HP Gauge,  13: HP,  15-17: SP Gauge,  18: SP,")
+[103][0,1]<0>()("    19-21: EXP Gauge,  22: EXP,  23: State")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()(" 　パラメータ設定")
+[103][0,1]<0>()("  Set parameters")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("固定値を設定")
+[103][0,1]<0>()("Set fixed values")
 [121][4,0]<0>(1600020,10200,0,0)()
 [121][4,0]<0>(1600004,25,0,0)()
 [121][4,0]<0>(1600050,1,0,0)()
 [111][7,0]<0>(2,1600000,0,3,1600000,3,2)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("処理モードが「表示・消去」のときだけ基本ピクチャ番号を調整")
-[103][0,1]<1>()("処理モードが「カーソルオン・オフ」のときは基本ピクチャ番号をそのまま使う")
+[103][0,1]<1>()("Adjust the base picture ID only when the mode is <dqrt>Display<dqrt> or <dqrt>Erase<dqrt>.")
+[103][0,1]<1>()("When the mode is <dqrt>Cursor ON<dqrt> or <dqrt>Cursor OFF<dqrt>, the base picture ID is used as-is.")
 [121][4,0]<1>(1600020,1600001,1600004,8448)()
 [0][0,0]<1>()()
 [401][1,0]<0>(2)()
-[103][0,1]<1>()("表示（瞬間表示）")
+[103][0,1]<1>()("When the mode is <dqrt>Display (Instant)<dqrt>")
 [121][4,0]<1>(1600000,0,0,0)()
 [121][4,0]<1>(1600020,1600001,1600004,8448)()
 [121][4,0]<1>(1600050,0,0,0)()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
-[103][0,1]<0>()("基本パラメータを呼び出し")
+[103][0,1]<0>()("Load basic parameters")
 [250][5,4]<0>(18,7,0,69632,1600017)("","Base System Variables","","")
 [250][5,4]<0>(18,6,0,69632,1600018)("","Base System Variables","","")
 [250][5,4]<0>(18,5,0,69632,1600019)("","Base System Variables","","")
 [250][5,4]<0>(17,0,0,332288,1600008)("","Images/Sounds","","Window Image File")
 [250][5,4]<0>(17,0,0,332288,1600009)("","Images/Sounds","","Cursor Image File")
-[103][0,1]<0>()("Ver2.20　座標倍率を縦横別に修正")
+[103][0,1]<0>()("v2.20: Separated the coordinate scale into X and Y values")
 [250][5,4]<0>(18,97,0,69632,1600088)("","Base System Variables","","")
 [250][5,4]<0>(18,98,0,69632,1600089)("","Base System Variables","","")
 [250][5,4]<0>(18,0,17,332288,1600085)("","System Settings","","States Display")
@@ -768,62 +768,62 @@ WoditorEvCOMMAND_END
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ [Process Overview]
-▼ 　モード別に、以下の処理を行います。
-▼ 　　- キャラクター欄一個分の初期描画　　[※事前に座標指定が必要]
-▼ 　　- キャラクター欄一個分の消去処理　　[※事前に座標指定が必要]
-▼ 　　- カーソルオンオフの切り替え、全ての欄を対象にすることも可　[※座標指定不要]
+▼   Performs the following processes depending on the mode:
+▼   - Initial rendering of one character panel (Coordinates must be set beforehand)
+▼   - Erasing one character panel (Coordinates must be set beforehand)
+▼   - Toggling the cursor on/off; this can also target all panels (No coordinate setting required)
 ▼  
-▼ 　アイテム使用時のエフェクトなどもこのコモン内で処理されます。
+▼   Animations when using items are also handled within this common event.
 ▼  
-▼ 　この処理を行う際は、一回ごとに事前に、「キャラクター欄_座標算出」を行うか、
-▼ 　下記変数への座標指定を手動で行って下さい。
-▼ 　（なお、以下の指定座標は「中心基点」で「倍率補正済み」となっています）
+▼   Every time before calling this common event, you must either call "X[Map]Character Box: Calc Pos"
+▼   or manually set coordinates to the following variables.
+▼   (The coordinates use a center origin and already have the coordinate scales applied.)
 ▼ 
-▼ 　可変DB「基本システム用変数」内の、以下の変数に座標を指定してこのイベントを起動すると、
-▼ 　「元座標」→「表示先　座標」へスライドしながらキャラクター欄が表示されます。
-▼ 　 　35:ステータス欄表示　元座標X　
-▼  　　36:ステータス欄表示　元座標Y
-▼  　　37:ステータス欄表示先　座標X
-▼  　　38:ステータス欄表示先　座標Y
-▼ 　※上記の座標は倍率補正済みの値である必要があります。
+▼   When you call this event after setting coordinates to the following variables in the Variable DB "Base System Variables",
+▼   the character panel slides from the Start coordinates to the End coordinates.
+▼     - 35: Status Display Start X
+▼     - 36: Status Display Start Y
+▼     - 37: Status Display End X
+▼     - 38: Status Display End Y
+▼   Note: These coordinates must have the coordinate scales applied.
 ▼  
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼  
-▼ 【ピクチャ】
-▼ 　基本ピクチャ＋0　＝　メインウィンドウ
-▼ 　基本ピクチャ＋1　＝　カーソル
-▼ 　基本ピクチャ＋2～24　＝　
-▼ 　　2：顔グラフィック 　3：顔枠　4：名前　5：肩書き　6：レベル
-▼ 　　10～12：HPゲージ 13：HP　15～17：SPゲージ 18：SP
-▼ 　　19～21：EXPゲージ　　22：EXP　　23：状態異常
+▼ [Pictures]
+▼   Base Picture ID + 0 = Main Window
+▼   Base Picture ID + 1 = Cursor
+▼   Base Picture ID + 2-24 =
+▼     2: Portrait,  3: Portrait Frame,  4: Name,  5: Title,  6: Level,
+▼     10-12: HP Gauge,  13: HP,  15-17: SP Gauge,  18: SP,
+▼     19-21: EXP Gauge,  22: EXP,  23: State
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼  　パラメータ設定
+▼   Set parameters
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼ 固定値を設定
+▼ Set fixed values
 ■Set Variable: CSelf20[基本ピクチャ番号] = 10200 + 0 
 ■Set Variable: CSelf4[1キャラあたり使用ピクチャ数] = 25 + 0 
 ■Set Variable: CSelf50[エフェクト表示フラグ] = 1 + 0 
 ■Condition (Number):   [1] CSelf0[処理モード] <=  0  /  [2] CSelf0[処理モード] ==  3  
 -◇Condition:  [1]  [ CSelf0[処理モード] <= 0   ] Case↓
- |▼ 処理モードが「表示・消去」のときだけ基本ピクチャ番号を調整
- |▼ 処理モードが「カーソルオン・オフ」のときは基本ピクチャ番号をそのまま使う
+ |▼ Adjust the base picture ID only when the mode is "Display" or "Erase".
+ |▼ When the mode is "Cursor ON" or "Cursor OFF", the base picture ID is used as-is.
  |■Set Variable: CSelf20[基本ピクチャ番号] += CSelf1[表示位置] * CSelf4[1キャラあたり使用ピクチャ数] 
  |■
 -◇Condition:  [2]  [ CSelf0[処理モード] == 3   ] Case↓
- |▼ 表示（瞬間表示）
+ |▼ When the mode is "Display (Instant)"
  |■Set Variable: CSelf0[処理モード] = 0 + 0 
  |■Set Variable: CSelf20[基本ピクチャ番号] += CSelf1[表示位置] * CSelf4[1キャラあたり使用ピクチャ数] 
  |■Set Variable: CSelf50[エフェクト表示フラグ] = 0 + 0 
  |■
 ◇End◇
-▼ 基本パラメータを呼び出し
+▼ Load basic parameters
 ■Load DB(Var):  CSelf17[最小フォントサイズ] = VarDB[ "Base System Variables":7:0 ] (18:System Min Font Size:Number) 
 ■Load DB(Var):  CSelf18[ミニフォントサイズ] = VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) 
 ■Load DB(Var):  CSelf19[基本フォントサイズ] = VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) 
 ■Load DB(User):  CSelf8[ウィンドウ画像ファイル] = UserDB[ "Images/Sounds":0:"Window Image File" ] (16:Basic Images/Sounds:0) 
 ■Load DB(User):  CSelf9[カーソル画像ファイル] = UserDB[ "Images/Sounds":0:"Cursor Image File" ] (16:Basic Images/Sounds:1) 
-▼ Ver2.20　座標倍率を縦横別に修正
+▼ v2.20: Separated the coordinate scale into X and Y values
 ■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
 ■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
 ■Load DB(User):  CSelf85[状態異常表示方法フラグ] = UserDB[ "System Settings":0:"States Display" ] (17:Basic System Settings:19) 
