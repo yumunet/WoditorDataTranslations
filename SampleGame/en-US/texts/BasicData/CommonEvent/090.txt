@@ -183,7 +183,7 @@ COMMAND_NUM=582
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("[Process Overview]")
-[103][0,1]<0>()("  Performs the following processes depending on the mode:")
+[103][0,1]<0>()("  Performs the following processes depending on the mode.")
 [103][0,1]<0>()("  - Initial rendering of one character panel (Coordinates must be set beforehand)")
 [103][0,1]<0>()("  - Erasing one character panel (Coordinates must be set beforehand)")
 [103][0,1]<0>()("  - Toggling the cursor on/off; this can also target all panels (No coordinate setting required)")
@@ -192,15 +192,15 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("  Every time before calling this common event, you must either call <dqrt>X[Map]Character Box: Calc Pos<dqrt>")
 [103][0,1]<0>()("  or manually set coordinates to the following variables.")
-[103][0,1]<0>()("  (The coordinates use a center origin and already have the coordinate scales applied.)")
+[103][0,1]<0>()("  (The coordinates use a center origin and already have coordinate scaling applied.)")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("  When you call this event after setting coordinates to the following variables in the Variable DB <dqrt>Base System Variables<dqrt>,")
+[103][0,1]<0>()("  When this event is called after setting coordinates to the following variables in the Variable DB <dqrt>Base System Variables<dqrt>,")
 [103][0,1]<0>()("  the character panel slides from the Start coordinates to the End coordinates.")
 [103][0,1]<0>()("    - 35: Status Display Start X")
 [103][0,1]<0>()("    - 36: Status Display Start Y")
 [103][0,1]<0>()("    - 37: Status Display End X")
 [103][0,1]<0>()("    - 38: Status Display End Y")
-[103][0,1]<0>()("  Note: These coordinates must have the coordinate scales applied.")
+[103][0,1]<0>()("  Note: These coordinates must already have coordinate scaling applied.")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()(" ")
@@ -221,8 +221,8 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600050,1,0,0)()
 [111][7,0]<0>(2,1600000,0,3,1600000,3,2)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("Adjust the base picture ID only when the mode is <dqrt>Display<dqrt> or <dqrt>Erase<dqrt>.")
-[103][0,1]<1>()("When the mode is <dqrt>Cursor ON<dqrt> or <dqrt>Cursor OFF<dqrt>, the base picture ID is used as-is.")
+[103][0,1]<1>()("Adjust the base picture ID only when the mode is <dqrt>Display<dqrt> or <dqrt>Erase<dqrt>")
+[103][0,1]<1>()("When the mode is <dqrt>Cursor ON<dqrt> or <dqrt>Cursor OFF<dqrt>, the base picture ID is used as-is")
 [121][4,0]<1>(1600020,1600001,1600004,8448)()
 [0][0,0]<1>()()
 [401][1,0]<0>(2)()
@@ -244,12 +244,12 @@ WoditorEvCOMMAND_START
 [250][5,4]<0>(18,0,17,332288,1600085)("","System Settings","","States Display")
 [179][1,0]<0>(1)()
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<1>()("一個あたりのキャラクター欄のサイズ指定や、各内容の表示位置などをここで指定")
+[103][0,1]<1>()("Specify the size of the character panel and the coordinates of each element")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<1>()("以下は６人パーティーを前提とした設定です")
+[103][0,1]<1>()("The following settings assume a 6-member party")
 [121][4,0]<1>(1600024,115,0,0)()
 [121][4,0]<1>(1600025,78,0,0)()
-[103][0,1]<1>()("各表示内容の座標・サイズ指定")
+[103][0,1]<1>()("Coordinates and sizes of each element")
 [121][4,0]<1>(1600060,-28,0,0)()
 [121][4,0]<1>(1600061,1,0,0)()
 [121][4,0]<1>(1600062,-52,0,0)()
@@ -277,7 +277,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<1>(1600084,23,0,0)()
 [0][0,0]<1>()()
 [498][0,0]<0>()()
-[103][0,1]<0>()("ここで解像度補正")
+[103][0,1]<0>()("Apply coordinate scaling")
 [121][4,0]<0>(1600024,1600088,0,768)()
 [121][4,0]<0>(1600025,1600089,0,768)()
 [121][5,0]<0>(1600024,10,0,66560,1)()
@@ -307,17 +307,17 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600083,1600088,0,768)()
 [121][4,0]<0>(1600084,1600089,0,768)()
 [121][5,0]<0>(1600060,10,0,66560,24)()
-[103][0,1]<0>()("ゲーム画面比率[16:9]用の状態異常のＸ位置補正処理")
+[103][0,1]<0>()("Adjust the X position of the state text for the 16:9 aspect ratio")
 [121][4,0]<0>(1600010,48,1600088,8192)()
 [121][4,0]<0>(1600010,48,1600089,8704)()
 [121][4,0]<0>(1600083,1600010,20,12800)()
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()(" 　ここから実処理開始")
+[103][0,1]<0>()("  Start main processing here")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [111][4,0]<0>(1,1600000,-1,2)()
 [401][1,0]<0>(1)()
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<1>()("「消去」モード")
+[103][0,1]<1>()("<dqrt>Erase<dqrt> Mode")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [121][4,0]<1>(1600021,1600020,1600004,0)()
 [121][4,0]<1>(1600021,1,0,512)()
@@ -333,20 +333,20 @@ WoditorEvCOMMAND_START
 [111][4,0]<0>(1,1600000,0,2)()
 [401][1,0]<0>(1)()
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<1>()("「表示」モード")
+[103][0,1]<1>()("<dqrt>Display<dqrt> Mode")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<1>()("もし主人公IDがマイナスだったら終了")
+[103][0,1]<1>()("Exit if the ally ID is negative")
 [111][4,0]<1>(1,1600002,-1,3)()
 [401][1,0]<1>(1)()
 [172][0,0]<2>()()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
-[103][0,1]<1>()("まず表示先座標を取得する　（なお、この座標は倍率補正済み）")
+[103][0,1]<1>()("First, get the coordinates (coordinate scaling has already been applied)")
 [250][5,4]<1>(18,37,0,69632,1600022)("","Base System Variables","","")
 [250][5,4]<1>(18,38,0,69632,1600023)("","Base System Variables","","")
 [250][5,4]<1>(18,35,0,69632,1600030)("","Base System Variables","","")
 [250][5,4]<1>(18,36,0,69632,1600031)("","Base System Variables","","")
-[103][0,1]<1>()("表示するパラメータ情報をここで取得")
+[103][0,1]<1>()("Get the parameters to display")
 [250][5,4]<1>(0,1600002,5,331776,1600090)("","Allies","","HP")
 [250][5,4]<1>(21,1600002,0,331776,1600091)("","×Allies Temp Data","","[Temp] Post-Calc Max HP")
 [250][5,4]<1>(0,1600002,7,331776,1600092)("","Allies","","SP")
@@ -354,7 +354,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<1>(0,1600002,4,331776,1600094)("","Allies","","Level")
 [250][5,4]<1>(0,1600002,48,331776,1600095)("","Allies","","Current Level EXP")
 [250][5,4]<1>(0,1600002,49,331776,1600096)("","Allies","","Current Level Required EXP")
-[103][0,1]<1>()("レベル最大なら次までの必要EXPも現在EXPも0にする [Ver3.45追加]")
+[103][0,1]<1>()("If the level is max, set the required EXP for the next level to 0 (Added in v3.45)")
 [250][5,4]<1>(0,1600002,5,331776,1600099)("","Allies","","Max Level")
 [111][4,0]<1>(1,1600094,1600099,1)()
 [401][1,0]<1>(1)()
@@ -364,13 +364,13 @@ WoditorEvCOMMAND_START
 [103][0,1]<1>()(" ")
 [103][0,1]<1>()(" ")
 [179][1,0]<1>(1)()
-[103][0,1]<2>()("メインウィンドウ部分表示")
+[103][0,1]<2>()("Display the main window")
 [121][4,0]<2>(1600021,1600020,0,0)()
 [150][12,0]<2>(4160,1600021,0,1600024,1600025,1,255,1600022,1600023,100,0,1600008)()
 [0][0,0]<2>()()
 [498][0,0]<1>()()
 [179][1,0]<1>(1)()
-[103][0,1]<2>()("カーソル用画像（明るさ0で常に表示しておく）")
+[103][0,1]<2>()("Display the cursor (drawn in black here, making it invisible)")
 [121][4,0]<2>(1600021,1600020,1,0)()
 [150][12,0]<2>(4416,1600021,0,1600024,1600025,1,255,1600022,1600023,100,0,1600008)()
 [290][7,0]<2>(16,0,1600021,1600021,-100,-100,-100)()
@@ -378,15 +378,15 @@ WoditorEvCOMMAND_START
 [498][0,0]<1>()()
 [103][0,1]<1>()(" ")
 [103][0,1]<1>()(" ")
-[103][0,1]<1>()("ここから各内部項目を表示（それぞれ座標シフトで移動させる）")
+[103][0,1]<1>()("Display the inner elements (each shifted with the Shift Position effect)")
 [179][1,0]<1>(1)()
-[103][0,1]<2>()("顔グラフィック")
+[103][0,1]<2>()("Portrait")
 [250][5,4]<2>(0,1600002,3,331776,1600007)("","Allies","","Portrait [Battle/Status]")
 [121][4,0]<2>(1600021,1600020,2,0)()
-[103][0,1]<2>()("顔の枠のサイズを計算")
+[103][0,1]<2>()("Calculate the portrait frame size")
 [121][4,0]<2>(1600057,48,1600089,8192)()
 [121][4,0]<2>(1600058,48,1600089,8192)()
-[103][0,1]<2>()("Ver3.00修正　座標倍率は小さい方を使うよう修正")
+[103][0,1]<2>()("v3.00: Use the smaller coordinate scale")
 [121][4,0]<2>(1600057,48,1600088,9984)()
 [121][4,0]<2>(1600058,48,1600088,9984)()
 [103][0,1]<2>()(" ")
@@ -395,11 +395,11 @@ WoditorEvCOMMAND_START
 [150][2,0]<2>(4115,1600021)()
 [112][2,4]<2>(17,270035463)("","","","")
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("顔グラフィックファイルが指定されている場合だけ表示する")
+[103][0,1]<3>()("Display the portrait only if a portrait file is specified")
 [250][5,4]<3>(19,0,25,332288,1600056)("","System Settings","","Status Portrait Scale")
 [111][7,0]<3>(2,1600056,0,2,1600056,1,1)()
 [401][1,0]<3>(1)()
-[103][0,1]<4>()("顔の表示を、枠に合わせる場合")
+[103][0,1]<4>()("If fitting the portrait to the frame")
 [150][12,0]<4>(4112,1600021,0,1,1,1,255,1600022,1600023,0,0,1600007)()
 [121][4,0]<4>(1600010,1600057,100,8192)()
 [121][4,0]<4>(1600011,1600058,100,8192)()
@@ -408,7 +408,7 @@ WoditorEvCOMMAND_START
 [150][19,0]<4>(3149840,1600021,0,1,1,1,255,1600022,1600023,1600010,0,1600007,33554432,0,0,100,100,100,1600011)()
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
-[103][0,1]<4>()("顔の表示倍率が設定されてる場合")
+[103][0,1]<4>()("If a portrait scale is specified")
 [150][12,0]<4>(4112,1600021,0,1,1,1,255,1600022,1600023,1600056,0,1600007)()
 [0][0,0]<4>()()
 [499][0,0]<3>()()
@@ -419,33 +419,33 @@ WoditorEvCOMMAND_START
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [121][4,0]<2>(1600021,1600020,3,0)()
-[103][0,1]<2>()("枠線")
+[103][0,1]<2>()("Frame")
 [150][18,1]<2>(4400,1600021,0,1600057,1600058,1,255,1600022,1600023,100,0,0,33554432,0,0,30,30,30)("<SQUARE>FRAME")
 [290][7,0]<2>(32,0,1600021,1600021,1600060,1600061,0)()
 [0][0,0]<2>()()
 [498][0,0]<1>()()
 [179][1,0]<1>(1)()
-[103][0,1]<2>()("キャラ名")
+[103][0,1]<2>()("Character Name")
 [250][5,4]<2>(0,1600002,0,331776,1600007)("","Allies","","Character Name")
-[103][0,1]<2>()("表示位置は左上基点")
+[103][0,1]<2>()("The origin is top-left")
 [121][4,0]<2>(1600021,1600020,4,0)()
 [150][11,1]<2>(32,1600021,0,1,1,1,255,1600022,1600023,100,0)("\f[\cself[18]]\cself[7]")
 [290][7,0]<2>(32,0,1600021,1600021,1600062,1600063,0)()
 [0][0,0]<2>()()
 [498][0,0]<1>()()
 [179][1,0]<1>(1)()
-[103][0,1]<2>()("肩書き")
+[103][0,1]<2>()("Title")
 [250][5,4]<2>(0,1600002,1,331776,1600007)("","Allies","","Title")
-[103][0,1]<2>()("表示位置は右上基点")
+[103][0,1]<2>()("The origin is top-right")
 [121][4,0]<2>(1600021,1600020,5,0)()
 [150][11,1]<2>(12320,1600021,0,1,1,1,140,1600022,1600023,100,0)("\f[\cself[18]]\cself[7]")
 [290][7,0]<2>(32,0,1600021,1600021,1600064,1600065,0)()
 [0][0,0]<2>()()
 [498][0,0]<1>()()
 [179][1,0]<1>(1)()
-[103][0,1]<2>()("レベル")
+[103][0,1]<2>()("Level")
 [121][4,0]<2>(1600021,1600020,6,0)()
-[103][0,1]<2>()("表示位置は右上基点")
+[103][0,1]<2>()("The origin is top-right")
 [103][0,1]<2>()("ちなみに、カラー設定もピクチャ処理のカラーで行っている")
 [250][5,4]<2>(13,0,5,332288,1600007)("","Terms","","[Stats] Level")
 [150][11,1]<2>(12320,1600021,0,1,1,1,255,1600022,1600023,100,0)("\f[\cself[18]]\-[1]\E\cself[7] \cself[94]")
@@ -768,7 +768,7 @@ WoditorEvCOMMAND_END
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ [Process Overview]
-▼   Performs the following processes depending on the mode:
+▼   Performs the following processes depending on the mode.
 ▼   - Initial rendering of one character panel (Coordinates must be set beforehand)
 ▼   - Erasing one character panel (Coordinates must be set beforehand)
 ▼   - Toggling the cursor on/off; this can also target all panels (No coordinate setting required)
@@ -777,15 +777,15 @@ WoditorEvCOMMAND_END
 ▼  
 ▼   Every time before calling this common event, you must either call "X[Map]Character Box: Calc Pos"
 ▼   or manually set coordinates to the following variables.
-▼   (The coordinates use a center origin and already have the coordinate scales applied.)
+▼   (The coordinates use a center origin and already have coordinate scaling applied.)
 ▼ 
-▼   When you call this event after setting coordinates to the following variables in the Variable DB "Base System Variables",
+▼   When this event is called after setting coordinates to the following variables in the Variable DB "Base System Variables",
 ▼   the character panel slides from the Start coordinates to the End coordinates.
 ▼     - 35: Status Display Start X
 ▼     - 36: Status Display Start Y
 ▼     - 37: Status Display End X
 ▼     - 38: Status Display End Y
-▼   Note: These coordinates must have the coordinate scales applied.
+▼   Note: These coordinates must already have coordinate scaling applied.
 ▼  
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼  
@@ -806,8 +806,8 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf50[エフェクト表示フラグ] = 1 + 0 
 ■Condition (Number):   [1] CSelf0[処理モード] <=  0  /  [2] CSelf0[処理モード] ==  3  
 -◇Condition:  [1]  [ CSelf0[処理モード] <= 0   ] Case↓
- |▼ Adjust the base picture ID only when the mode is "Display" or "Erase".
- |▼ When the mode is "Cursor ON" or "Cursor OFF", the base picture ID is used as-is.
+ |▼ Adjust the base picture ID only when the mode is "Display" or "Erase"
+ |▼ When the mode is "Cursor ON" or "Cursor OFF", the base picture ID is used as-is
  |■Set Variable: CSelf20[基本ピクチャ番号] += CSelf1[表示位置] * CSelf4[1キャラあたり使用ピクチャ数] 
  |■
 -◇Condition:  [2]  [ CSelf0[処理モード] == 3   ] Case↓
@@ -829,12 +829,12 @@ WoditorEvCOMMAND_END
 ■Load DB(User):  CSelf85[状態異常表示方法フラグ] = UserDB[ "System Settings":0:"States Display" ] (17:Basic System Settings:19) 
 ■Repeat Loop [ 1 ] Times
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |▼ 一個あたりのキャラクター欄のサイズ指定や、各内容の表示位置などをここで指定
+ |▼ Specify the size of the character panel and the coordinates of each element
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |▼ 以下は６人パーティーを前提とした設定です
+ |▼ The following settings assume a 6-member party
  |■Set Variable: CSelf24[横サイズ] = 115 + 0 
  |■Set Variable: CSelf25[縦サイズ] = 78 + 0 
- |▼ 各表示内容の座標・サイズ指定
+ |▼ Coordinates and sizes of each element
  |■Set Variable: CSelf60[顔グラ位置X] = -28 + 0 
  |■Set Variable: CSelf61[顔グラ位置Y] = 1 + 0 
  |■Set Variable: CSelf62[キャラ名位置X] = -52 + 0 
@@ -862,7 +862,7 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf84[状態異常位置Y] = 23 + 0 
  |■
 ◇Loop End Point◇◇
-▼ ここで解像度補正
+▼ Apply coordinate scaling
 ■Set Variable: CSelf24[横サイズ] *= CSelf88[座標倍率X[x10]] + 0 
 ■Set Variable: CSelf25[縦サイズ] *= CSelf89[座標倍率Y[x10]] + 0 
 ■Set Variable: CSelf24[横サイズ] to CSelf25[縦サイズ] /= 10 + 0 
@@ -892,17 +892,17 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf83[状態異常位置X] *= CSelf88[座標倍率X[x10]] + 0 
 ■Set Variable: CSelf84[状態異常位置Y] *= CSelf89[座標倍率Y[x10]] + 0 
 ■Set Variable: CSelf60[顔グラ位置X] to CSelf84[状態異常位置Y] /= 10 + 0 
-▼ ゲーム画面比率[16:9]用の状態異常のＸ位置補正処理
+▼ Adjust the X position of the state text for the 16:9 aspect ratio
 ■Set Variable: CSelf10[一時変数A] = 48 * CSelf88[座標倍率X[x10]] 
 ■Set Variable: CSelf10[一時変数A] -= 48 * CSelf89[座標倍率Y[x10]] 
 ■Set Variable: CSelf83[状態異常位置X] -= CSelf10[一時変数A] / 20 
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼  　ここから実処理開始
+▼   Start main processing here
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■Condition (Number):   [1] CSelf0[処理モード] ==  -1  
 -◇Condition:  [1]  [ CSelf0[処理モード] == -1   ] Case↓
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |▼ 「消去」モード
+ |▼ "Erase" Mode
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + CSelf4[1キャラあたり使用ピクチャ数] 
  |■Set Variable: CSelf21[一時ピクチャ番号] -= 1 + 0 
@@ -918,20 +918,20 @@ WoditorEvCOMMAND_END
 ■Condition (Number):   [1] CSelf0[処理モード] ==  0  
 -◇Condition:  [1]  [ CSelf0[処理モード] == 0   ] Case↓
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |▼ 「表示」モード
+ |▼ "Display" Mode
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |▼ もし主人公IDがマイナスだったら終了
+ |▼ Exit if the ally ID is negative
  |■Condition (Number):   [1] CSelf2[表示主人公ID] <=  -1  
  |-◇Condition:  [1]  [ CSelf2[表示主人公ID] <= -1   ] Case↓
  | |■Exit Event
  | |■
  |◇End◇
- |▼ まず表示先座標を取得する　（なお、この座標は倍率補正済み）
+ |▼ First, get the coordinates (coordinate scaling has already been applied)
  |■Load DB(Var):  CSelf22[表示X] = VarDB[ "Base System Variables":37:0 ] (18:Status Display End X:Number) 
  |■Load DB(Var):  CSelf23[表示Y] = VarDB[ "Base System Variables":38:0 ] (18:Status Display End Y:Number) 
  |■Load DB(Var):  CSelf30[移動元X] = VarDB[ "Base System Variables":35:0 ] (18:Status Display Start X:Number) 
  |■Load DB(Var):  CSelf31[移動元Y] = VarDB[ "Base System Variables":36:0 ] (18:Status Display Start Y:Number) 
- |▼ 表示するパラメータ情報をここで取得
+ |▼ Get the parameters to display
  |■Load DB(Var):  CSelf90[HP] = VarDB[ "Allies":CSelf2[表示主人公ID]:"HP" ] (0:-:6) 
  |■Load DB(Var):  CSelf91[最大HP] = VarDB[ "×Allies Temp Data":CSelf2[表示主人公ID]:"[Temp] Post-Calc Max HP" ] (17:-:0) 
  |■Load DB(Var):  CSelf92[SP] = VarDB[ "Allies":CSelf2[表示主人公ID]:"SP" ] (0:-:8) 
@@ -939,7 +939,7 @@ WoditorEvCOMMAND_END
  |■Load DB(Var):  CSelf94[レベル] = VarDB[ "Allies":CSelf2[表示主人公ID]:"Level" ] (0:-:4) 
  |■Load DB(Var):  CSelf95[取得済EXP] = VarDB[ "Allies":CSelf2[表示主人公ID]:"Current Level EXP" ] (0:-:54) 
  |■Load DB(Var):  CSelf96[次までの必要EXP] = VarDB[ "Allies":CSelf2[表示主人公ID]:"Current Level Required EXP" ] (0:-:55) 
- |▼ レベル最大なら次までの必要EXPも現在EXPも0にする [Ver3.45追加]
+ |▼ If the level is max, set the required EXP for the next level to 0 (Added in v3.45)
  |■Load DB(Var):  CSelf99[限界レベル] = VarDB[ "Allies":CSelf2[表示主人公ID]:"Max Level" ] (0:-:5) 
  |■Condition (Number):   [1] CSelf94[レベル] >=  CSelf99[限界レベル]  
  |-◇Condition:  [1]  [ CSelf94[レベル] >= CSelf99[限界レベル]   ] Case↓
@@ -949,13 +949,13 @@ WoditorEvCOMMAND_END
  |▼  
  |▼  
  |■Repeat Loop [ 1 ] Times
- | |▼ メインウィンドウ部分表示
+ | |▼ Display the main window
  | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 0 
  | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] Window (CSelf8[ウィンドウ画像ファイル]) Size [CSelf24[横サイズ],CSelf25[縦サイズ]] X:CSelf22[表示X] Y:CSelf23[表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  | |■
  |◇Loop End Point◇◇
  |■Repeat Loop [ 1 ] Times
- | |▼ カーソル用画像（明るさ0で常に表示しておく）
+ | |▼ Display the cursor (drawn in black here, making it invisible)
  | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 1 
  | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] Window (CSelf8[ウィンドウ画像ファイル]) Size [CSelf24[横サイズ],CSelf25[縦サイズ]] X:CSelf22[表示X] Y:CSelf23[表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Add  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  | |■Effect Picture: CSelf21[一時ピクチャ番号] [Adjust Color] R-100/G-100/B-100  [0] Frames
@@ -963,15 +963,15 @@ WoditorEvCOMMAND_END
  |◇Loop End Point◇◇
  |▼  
  |▼  
- |▼ ここから各内部項目を表示（それぞれ座標シフトで移動させる）
+ |▼ Display the inner elements (each shifted with the Shift Position effect)
  |■Repeat Loop [ 1 ] Times
- | |▼ 顔グラフィック
+ | |▼ Portrait
  | |■Load DB(Var):  CSelf7[表示項目名] = VarDB[ "Allies":CSelf2[表示主人公ID]:"Portrait [Battle/Status]" ] (0:-:3) 
  | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 2 
- | |▼ 顔の枠のサイズを計算
+ | |▼ Calculate the portrait frame size
  | |■Set Variable: CSelf57[顔サイズX] = 48 * CSelf89[座標倍率Y[x10]] 
  | |■Set Variable: CSelf58[顔サイズY] = 48 * CSelf89[座標倍率Y[x10]] 
- | |▼ Ver3.00修正　座標倍率は小さい方を使うよう修正
+ | |▼ v3.00: Use the smaller coordinate scale
  | |■Set Variable: CSelf57[顔サイズX] Upper Bound= 48 * CSelf88[座標倍率X[x10]] 
  | |■Set Variable: CSelf58[顔サイズY] Upper Bound= 48 * CSelf88[座標倍率X[x10]] 
  | |▼  
@@ -980,11 +980,11 @@ WoditorEvCOMMAND_END
  | |■Picture [Reset Delay]: CSelf21[一時ピクチャ番号] 
  | |■Condition (String):   [1] CSelf7[表示項目名] Is Not Equal to ""
  | |-◇Condition:  [1] [ CSelf7[表示項目名] Is Not Equal to "" ] Case↓
- | | |▼ 顔グラフィックファイルが指定されている場合だけ表示する
+ | | |▼ Display the portrait only if a portrait file is specified
  | | |■Load DB(User):  CSelf56[顔表示倍率] = UserDB[ "System Settings":0:"Status Portrait Scale" ] (17:Basic System Settings:24) 
  | | |■Condition (Number):   [1] CSelf56[顔表示倍率] ==  0  /  [2] CSelf56[顔表示倍率] >=  1  
  | | |-◇Condition:  [1]  [ CSelf56[顔表示倍率] == 0   ] Case↓
- | | | |▼ 顔の表示を、枠に合わせる場合
+ | | | |▼ If fitting the portrait to the frame
  | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] File (CSelf7[表示項目名]) X:CSelf22[表示X] Y:CSelf23[表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 0% / Color R[100] G[100] B[100]
  | | | |■Set Variable: CSelf10[一時変数A] = CSelf57[顔サイズX] * 100 
  | | | |■Set Variable: CSelf11[一時変数B] = CSelf58[顔サイズY] * 100 
@@ -993,7 +993,7 @@ WoditorEvCOMMAND_END
  | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] File (CSelf7[表示項目名]) X:CSelf22[表示X] Y:CSelf23[表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale CSelf10[一時変数A]%xCSelf11[一時変数B]% / Color R[100] G[100] B[100]
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf56[顔表示倍率] >= 1   ] Case↓
- | | | |▼ 顔の表示倍率が設定されてる場合
+ | | | |▼ If a portrait scale is specified
  | | | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] File (CSelf7[表示項目名]) X:CSelf22[表示X] Y:CSelf23[表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale CSelf56[顔表示倍率]% / Color R[100] G[100] B[100]
  | | | |■
  | | |◇End◇
@@ -1004,33 +1004,33 @@ WoditorEvCOMMAND_END
  | | |■
  | |◇End◇
  | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 3 
- | |▼ 枠線
+ | |▼ Frame
  | |■Picture Show: CSelf21[一時ピクチャ番号] [Center] Window [<SQUARE>FRAME] Size [CSelf57[顔サイズX],CSelf58[顔サイズY]] X:CSelf22[表示X] Y:CSelf23[表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Add  / Angle 0 / Scale 100% / Color R[30] G[30] B[30]
  | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf60[顔グラ位置X] / Shift Y CSelf61[顔グラ位置Y]  [0] Frames
  | |■
  |◇Loop End Point◇◇
  |■Repeat Loop [ 1 ] Times
- | |▼ キャラ名
+ | |▼ Character Name
  | |■Load DB(Var):  CSelf7[表示項目名] = VarDB[ "Allies":CSelf2[表示主人公ID]:"Character Name" ] (0:-:0) 
- | |▼ 表示位置は左上基点
+ | |▼ The origin is top-left
  | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 4 
  | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Left] String [\f[\cself[18]]\c] X:CSelf22[表示X] Y:CSelf23[表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf62[キャラ名位置X] / Shift Y CSelf63[キャラ名位置Y]  [0] Frames
  | |■
  |◇Loop End Point◇◇
  |■Repeat Loop [ 1 ] Times
- | |▼ 肩書き
+ | |▼ Title
  | |■Load DB(Var):  CSelf7[表示項目名] = VarDB[ "Allies":CSelf2[表示主人公ID]:"Title" ] (0:-:1) 
- | |▼ 表示位置は右上基点
+ | |▼ The origin is top-right
  | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 5 
  | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Right] String [\f[\cself[18]]\c] X:CSelf22[表示X] Y:CSelf23[表示Y] / 0(0) Frames  / Pattern 1 / Opacity 140 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  | |■Effect Picture: CSelf21[一時ピクチャ番号] [Shift Position (Final Value)] Shift X CSelf64[肩書き位置X] / Shift Y CSelf65[肩書き位置Y]  [0] Frames
  | |■
  |◇Loop End Point◇◇
  |■Repeat Loop [ 1 ] Times
- | |▼ レベル
+ | |▼ Level
  | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf20[基本ピクチャ番号] + 6 
- | |▼ 表示位置は右上基点
+ | |▼ The origin is top-right
  | |▼ ちなみに、カラー設定もピクチャ処理のカラーで行っている
  | |■Load DB(User):  CSelf7[表示項目名] = UserDB[ "Terms":0:"[Stats] Level" ] (15:Basic Terms:5) 
  | |■Picture Show: CSelf21[一時ピクチャ番号] [Top-Right] String [\f[\cself[18]]\-] X:CSelf22[表示X] Y:CSelf23[表示Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
