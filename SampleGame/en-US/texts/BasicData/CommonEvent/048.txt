@@ -200,7 +200,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("Set screen size scale and base font size.")
+[103][0,1]<0>()("Set screen size scales and font sizes.")
 [103][0,1]<0>()("(By the way, these are also set on menu opening and battle start.)")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [111][7,0]<0>(2,9000115,220,1,9000115,220,4)()
@@ -446,7 +446,7 @@ WoditorEvCOMMAND_END
  |■
 ◇End◇
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼ Set screen size scale and base font size.
+▼ Set screen size scales and font sizes.
 ▼ (By the way, these are also set on menu opening and battle start.)
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■Condition (Number):   [1] Sys115:[RO] Game.exe Version (x100) >=  220  /  [2] Sys115:[RO] Game.exe Version (x100) <  220  
@@ -463,13 +463,13 @@ WoditorEvCOMMAND_END
  | |▼ Ver.3.00  Font size calculation now uses the smaller of the vertical and horizontal screen scales. 
  | |■Set Variable: CSelf26[Temp Variable B] Upper Bound= CSelf25[Temp Variable A] + 0 
  | |▼  
- | |■Write to DB(Var): VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) =  CSelf26[Temp Variable B]
+ | |■Write to DB(Var): VarDB[ "Base System Variables":5:0 ] (18:System Basic Font Size:Number) =  CSelf26[Temp Variable B]
  | |■Set Variable: CSelf25[Temp Variable A] = CSelf26[Temp Variable B] * 8 
  | |■Set Variable: CSelf25[Temp Variable A] /= 10 + 0 
- | |■Write to DB(Var): VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) =  CSelf25[Temp Variable A]
+ | |■Write to DB(Var): VarDB[ "Base System Variables":6:0 ] (18:System Min Font Size:Number) =  CSelf25[Temp Variable A]
  | |■Set Variable: CSelf25[Temp Variable A] = CSelf26[Temp Variable B] * 6 
  | |■Set Variable: CSelf25[Temp Variable A] /= 10 + 0 
- | |■Write to DB(Var): VarDB[ "Base System Variables":7:0 ] (18:System Min Font Size:Number) =  CSelf25[Temp Variable A]
+ | |■Write to DB(Var): VarDB[ "Base System Variables":7:0 ] (18:System Smallest Font Size:Number) =  CSelf25[Temp Variable A]
  | |■Set Variable: CSelf25[Temp Variable A] = CSelf26[Temp Variable B] * 12 
  | |■Set Variable: CSelf25[Temp Variable A] /= 10 + 0 
  | |■Set Variable: Sys8:Base Font Size = CSelf25[Temp Variable A] + 0 
@@ -486,9 +486,9 @@ WoditorEvCOMMAND_END
  | |-◇Condition:  [1]  [ Sys84:Screen Resolution (0-2, -1:Other) == 0   ] Case↓
  | | |■Write to DB(Var): VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) =  10
  | | |■Write to DB(Var): VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) =  10
- | | |■Write to DB(Var): VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) =  10
- | | |■Write to DB(Var): VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) =  8
- | | |■Write to DB(Var): VarDB[ "Base System Variables":7:0 ] (18:System Min Font Size:Number) =  6
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":5:0 ] (18:System Basic Font Size:Number) =  10
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":6:0 ] (18:System Min Font Size:Number) =  8
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":7:0 ] (18:System Smallest Font Size:Number) =  6
  | | |■Set Variable: Sys8:Base Font Size = 12 + 0 
  | | |■Set Variable: Sys23:Ruby Font Size = Sys8:Base Font Size / 2 
  | | |▼ Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale.
@@ -497,9 +497,9 @@ WoditorEvCOMMAND_END
  | |-◇Condition:  [2]  [ Sys84:Screen Resolution (0-2, -1:Other) == 1   ] Case↓
  | | |■Write to DB(Var): VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) =  20
  | | |■Write to DB(Var): VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) =  20
- | | |■Write to DB(Var): VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) =  20
- | | |■Write to DB(Var): VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) =  16
- | | |■Write to DB(Var): VarDB[ "Base System Variables":7:0 ] (18:System Min Font Size:Number) =  12
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":5:0 ] (18:System Basic Font Size:Number) =  20
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":6:0 ] (18:System Min Font Size:Number) =  16
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":7:0 ] (18:System Smallest Font Size:Number) =  12
  | | |■Set Variable: Sys8:Base Font Size = 24 + 0 
  | | |■Set Variable: Sys23:Ruby Font Size = Sys8:Base Font Size / 2 
  | | |▼ Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale.
@@ -508,9 +508,9 @@ WoditorEvCOMMAND_END
  | |-◇Condition:  [3]  [ Sys84:Screen Resolution (0-2, -1:Other) == 2   ] Case↓
  | | |■Write to DB(Var): VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) =  25
  | | |■Write to DB(Var): VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) =  25
- | | |■Write to DB(Var): VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) =  26
- | | |■Write to DB(Var): VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) =  20
- | | |■Write to DB(Var): VarDB[ "Base System Variables":7:0 ] (18:System Min Font Size:Number) =  15
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":5:0 ] (18:System Basic Font Size:Number) =  26
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":6:0 ] (18:System Min Font Size:Number) =  20
+ | | |■Write to DB(Var): VarDB[ "Base System Variables":7:0 ] (18:System Smallest Font Size:Number) =  15
  | | |■Set Variable: Sys8:Base Font Size = 30 + 0 
  | | |■Set Variable: Sys23:Ruby Font Size = Sys8:Base Font Size / 2 
  | | |▼ Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale.

@@ -510,9 +510,9 @@ WoditorEvCOMMAND_END
 ▼ 固定値を設定
 ■Set Variable: CSelf20[基本ピクチャ番号] = 12000 + 0 
 ▼ 外部パラメータ読み込み
-■Load DB(Var):  CSelf17[最小フォントサイズ] = VarDB[ "Base System Variables":7:0 ] (18:System Min Font Size:Number) 
-■Load DB(Var):  CSelf18[ミニフォントサイズ] = VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) 
-■Load DB(Var):  CSelf19[基本フォントサイズ] = VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) 
+■Load DB(Var):  CSelf17[最小フォントサイズ] = VarDB[ "Base System Variables":7:0 ] (18:System Smallest Font Size:Number) 
+■Load DB(Var):  CSelf18[ミニフォントサイズ] = VarDB[ "Base System Variables":6:0 ] (18:System Min Font Size:Number) 
+■Load DB(Var):  CSelf19[基本フォントサイズ] = VarDB[ "Base System Variables":5:0 ] (18:System Basic Font Size:Number) 
 ■Load DB(User):  CSelf8[ウィンドウ画像ファイル] = UserDB[ "Images/Sounds":0:"Window Image File" ] (16:Basic Images/Sounds:0) 
 ■Load DB(User):  CSelf9[カーソル画像ファイル] = UserDB[ "Images/Sounds":0:"Cursor Image File" ] (16:Basic Images/Sounds:1) 
 ■Load DB(User):  CSelf27[装備欄 縦項目数] = UserDB[ "System Settings":0:"Equippable Slots" ] (17:Basic System Settings:22) 

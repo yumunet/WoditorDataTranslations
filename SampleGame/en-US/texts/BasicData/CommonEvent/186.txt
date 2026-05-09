@@ -619,8 +619,8 @@ WoditorEvCOMMAND_END
 ▼ Ver2.20　座標倍率を縦横別に修正
 ■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
 ■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
-■Load DB(Var):  CSelf18[ミニフォントサイズ] = VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) 
-■Load DB(Var):  CSelf19[基本フォントサイズ] = VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) 
+■Load DB(Var):  CSelf18[ミニフォントサイズ] = VarDB[ "Base System Variables":6:0 ] (18:System Min Font Size:Number) 
+■Load DB(Var):  CSelf19[基本フォントサイズ] = VarDB[ "Base System Variables":5:0 ] (18:System Basic Font Size:Number) 
 ■Load DB(User):  CSelf8[ウィンドウ画像ファイル] = UserDB[ "Images/Sounds":0:"Window Image File" ] (16:Basic Images/Sounds:0) 
 ■Load DB(User):  CSelf9[カーソル画像ファイル] = UserDB[ "Images/Sounds":0:"Cursor Image File" ] (16:Basic Images/Sounds:1) 
 ■Set Variable: CSelf99[続き有り？] = 0 + 0 

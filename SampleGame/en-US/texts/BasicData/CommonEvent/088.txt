@@ -90,8 +90,8 @@ CSELF_NAME_14=Temp E
 CSELF_NAME_15=
 CSELF_NAME_16=
 CSELF_NAME_17=
-CSELF_NAME_18=Small Font Size
-CSELF_NAME_19=Base Font Size
+CSELF_NAME_18=Min Font Size
+CSELF_NAME_19=Basic Font Size
 CSELF_NAME_20=Base Picture ID
 CSELF_NAME_21=Temp Picture ID
 CSELF_NAME_22=Display X
@@ -240,7 +240,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600023,1600089,0,768)()
 [121][4,0]<0>(1600024,1600088,0,768)()
 [121][5,0]<0>(1600022,10,0,66560,2)()
-[103][0,1]<0>()("Height is based on the base font size, so no scaling is needed")
+[103][0,1]<0>()("Height is based on the basic font size, so no scaling is needed")
 [121][4,0]<0>(1600058,1600088,0,768)()
 [121][4,0]<0>(1600059,1600089,0,768)()
 [121][4,0]<0>(1600060,1600088,0,768)()
@@ -532,8 +532,8 @@ WoditorEvCOMMAND_END
  |■Call Event [Name]: ["X┗[Map]Update Menu Commands"] <CommonEv 89> 
  |■
 ◇End◇
-■Load DB(Var):  CSelf18[Small Font Size] = VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) 
-■Load DB(Var):  CSelf19[Base Font Size] = VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) 
+■Load DB(Var):  CSelf18[Min Font Size] = VarDB[ "Base System Variables":6:0 ] (18:System Min Font Size:Number) 
+■Load DB(Var):  CSelf19[Basic Font Size] = VarDB[ "Base System Variables":5:0 ] (18:System Basic Font Size:Number) 
 ■Load DB(User):  CSelf8[Window Image File] = UserDB[ "Images/Sounds":0:"Window Image File" ] (16:Basic Images/Sounds:0) 
 ■Load DB(User):  CSelf9[Cursor Image File] = UserDB[ "Images/Sounds":0:"Cursor Image File" ] (16:Basic Images/Sounds:1) 
 ■Load DB(Var):  CSelf27[Vertical Item Count] = VarDB[ "Base System Variables":22:0 ] (18:Menu Command Count:Number) 
@@ -547,8 +547,8 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf59[Start Y] = 0 + 0 
 ■Set Variable: CSelf24[Width] = 80 + 0 
 ▼ Height changes according to the number of commands
-■Set Variable: CSelf25[Height] = CSelf19[Base Font Size] + 0 
-■Set Variable: CSelf25[Height] += CSelf19[Base Font Size] / 4 
+■Set Variable: CSelf25[Height] = CSelf19[Basic Font Size] + 0 
+■Set Variable: CSelf25[Height] += CSelf19[Basic Font Size] / 4 
 ■Set Variable: CSelf25[Height] *= CSelf27[Vertical Item Count] + 0 
 ■Set Variable: CSelf25[Height] += CSelf89[Coordinate Scale Y (x10)] + 0 
 ▼ Set coordinates for the money area
@@ -563,7 +563,7 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf23[Display Y] *= CSelf89[Coordinate Scale Y (x10)] + 0 
 ■Set Variable: CSelf24[Width] *= CSelf88[Coordinate Scale X (x10)] + 0 
 ■Set Variable: CSelf22[Display X] to CSelf24[Width] /= 10 + 0 
-▼ Height is based on the base font size, so no scaling is needed
+▼ Height is based on the basic font size, so no scaling is needed
 ■Set Variable: CSelf58[Start X] *= CSelf88[Coordinate Scale X (x10)] + 0 
 ■Set Variable: CSelf59[Start Y] *= CSelf89[Coordinate Scale Y (x10)] + 0 
 ■Set Variable: CSelf60[Extra Box X] *= CSelf88[Coordinate Scale X (x10)] + 0 
@@ -609,7 +609,7 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf35[[Keep] Cursor Base Y] = CSelf23[Display Y] + 0 
  |■Set Variable: CSelf35[[Keep] Cursor Base Y] += CSelf89[Coordinate Scale Y (x10)] / 2 
  |■Set Variable: CSelf36[[Keep] Cursor Width] = CSelf24[Width] - CSelf88[Coordinate Scale X (x10)] 
- |■Set Variable: CSelf37[[Keep] Cursor Height] = CSelf19[Base Font Size] + 0 
+ |■Set Variable: CSelf37[[Keep] Cursor Height] = CSelf19[Basic Font Size] + 0 
  |■Set Variable: CSelf37[[Keep] Cursor Height] += CSelf89[Coordinate Scale Y (x10)] / 4 
  |■Set Variable: CSelf38[[Keep] Cursor Move Amount X] = CSelf24[Width] + 0 
  |■Set Variable: CSelf39[[Keep] Cursor Move Amount Y] = CSelf25[Height] - CSelf89[Coordinate Scale Y (x10)] 

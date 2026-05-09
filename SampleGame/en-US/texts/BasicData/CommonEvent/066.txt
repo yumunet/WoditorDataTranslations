@@ -78,8 +78,8 @@ CSELF_NAME_14=
 CSELF_NAME_15=
 CSELF_NAME_16=
 CSELF_NAME_17=
-CSELF_NAME_18=Small Font Size
-CSELF_NAME_19=Base Font Size
+CSELF_NAME_18=Min Font Size
+CSELF_NAME_19=Basic Font Size
 CSELF_NAME_20=Base Picture ID
 CSELF_NAME_21=Temp Picture ID
 CSELF_NAME_22=
@@ -205,8 +205,8 @@ WoditorEvCOMMAND_END
 ▼ Set fixed value.
 ■Set Variable: CSelf20[Base Picture ID] = 15000 + 0 
 ▼ Load base parameters.
-■Load DB(Var):  CSelf18[Small Font Size] = VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) 
-■Load DB(Var):  CSelf19[Base Font Size] = VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) 
+■Load DB(Var):  CSelf18[Min Font Size] = VarDB[ "Base System Variables":6:0 ] (18:System Min Font Size:Number) 
+■Load DB(Var):  CSelf19[Basic Font Size] = VarDB[ "Base System Variables":5:0 ] (18:System Basic Font Size:Number) 
 ■Load DB(User):  CSelf8[Window Image] = UserDB[ "Images/Sounds":0:"Window Image File" ] (16:Basic Images/Sounds:0) 
 ■Load DB(User):  CSelf9[Cursor Image] = UserDB[ "Images/Sounds":0:"Cursor Image File" ] (16:Basic Images/Sounds:1) 
 ▼  

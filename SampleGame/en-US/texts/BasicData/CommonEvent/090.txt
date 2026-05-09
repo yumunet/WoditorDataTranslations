@@ -818,9 +818,9 @@ WoditorEvCOMMAND_END
  |■
 ◇End◇
 ▼ Load basic parameters
-■Load DB(Var):  CSelf17[Smallest Font Size] = VarDB[ "Base System Variables":7:0 ] (18:System Min Font Size:Number) 
-■Load DB(Var):  CSelf18[Mini Font Size] = VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) 
-■Load DB(Var):  CSelf19[Basic Font Size] = VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) 
+■Load DB(Var):  CSelf17[Smallest Font Size] = VarDB[ "Base System Variables":7:0 ] (18:System Smallest Font Size:Number) 
+■Load DB(Var):  CSelf18[Mini Font Size] = VarDB[ "Base System Variables":6:0 ] (18:System Min Font Size:Number) 
+■Load DB(Var):  CSelf19[Basic Font Size] = VarDB[ "Base System Variables":5:0 ] (18:System Basic Font Size:Number) 
 ■Load DB(User):  CSelf8[Window Image File] = UserDB[ "Images/Sounds":0:"Window Image File" ] (16:Basic Images/Sounds:0) 
 ■Load DB(User):  CSelf9[Cursor Image File] = UserDB[ "Images/Sounds":0:"Cursor Image File" ] (16:Basic Images/Sounds:1) 
 ▼ v2.20: Separated the coordinate scale into X and Y values
