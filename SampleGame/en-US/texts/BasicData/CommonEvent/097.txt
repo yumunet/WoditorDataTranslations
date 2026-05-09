@@ -242,7 +242,7 @@ WoditorEvCOMMAND_END
 ■Condition (Number):   [1] CSelf1[HP回復量] >=  1  
 -◇Condition:  [1]  [ CSelf1[HP回復量] >= 1   ] Case↓
  |■Call Event [Name]: ["X[Map]Display Dmg/Recovery Popup"] <CommonEv 96>  / CSelf12[一時変数C] / CSelf13[一時変数D] / CSelf1[HP回復量] / 1:HP回復
- |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 30:回復 / CSelf0[キャラ位置[0-5]] / CSelf14[一時変数E]
+ |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 30:Recovery / CSelf0[キャラ位置[0-5]] / CSelf14[一時変数E]
  |■
 ◇End◇
 ▼ SP回復エフェクト
@@ -253,7 +253,7 @@ WoditorEvCOMMAND_END
  |■Condition (Number):   [1] CSelf1[HP回復量] ==  0  
  |-◇Condition:  [1]  [ CSelf1[HP回復量] == 0   ] Case↓
  | |▼ HPが光ってない場合だけ
- | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 30:回復 / CSelf0[キャラ位置[0-5]] / CSelf14[一時変数E]
+ | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 30:Recovery / CSelf0[キャラ位置[0-5]] / CSelf14[一時変数E]
  | |■
  |◇End◇
  |■
@@ -263,7 +263,7 @@ WoditorEvCOMMAND_END
 ▼ キャラIDを取得
 ■Call Event [Name]: CSelf14[一時変数E] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf0[キャラ位置[0-5]]
 ▼ 該当キャラのパラメータを更新
-■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 3:表示[瞬間表示] / CSelf0[キャラ位置[0-5]] / CSelf14[一時変数E]
+■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 3:Display [Instant] / CSelf0[キャラ位置[0-5]] / CSelf14[一時変数E]
 ■Wait: 1 Frames
 ■
 [COMMAND_TEXT_END]

@@ -233,11 +233,11 @@ WoditorEvCOMMAND_END
  | | |■Condition (Number):   [1] CSelf0[処理モード] ==  0  /  [2] CSelf0[処理モード] ==  1  
  | | |-◇Condition:  [1]  [ CSelf0[処理モード] == 0   ] Case↓
  | | | |▼ アニメ付き表示
- | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 0:表示 / CSelf10[キャラ位置] / CSelf11[主人公ID]
+ | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 0:Display / CSelf10[キャラ位置] / CSelf11[主人公ID]
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf0[処理モード] == 1   ] Case↓
  | | | |▼ 瞬間表示
- | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 3:表示[瞬間表示] / CSelf10[キャラ位置] / CSelf11[主人公ID]
+ | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 3:Display [Instant] / CSelf10[キャラ位置] / CSelf11[主人公ID]
  | | | |■
  | | |◇End◇
  | | |■
@@ -251,7 +251,7 @@ WoditorEvCOMMAND_END
  |▼ 全員消去する場合
  |■Set Variable: CSelf10[キャラ位置] = 0 + 0 
  |■Repeat Loop [ CSelf12[最大人数] ] Times
- | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / -1:消去 / CSelf10[キャラ位置] / -1
+ | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / -1:Erase / CSelf10[キャラ位置] / -1
  | |■Set Variable: CSelf10[キャラ位置] += 1 + 0 
  | |■
  |◇Loop End Point◇◇

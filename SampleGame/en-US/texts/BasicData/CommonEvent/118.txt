@@ -550,7 +550,7 @@ WoditorEvCOMMAND_END
  | |-◇Condition:  [1]  [ CSelf11[一時変数B] <= -1   ] Case↓
  | | |▼ キャンセルなら終了
  | | |▼ カーソル点滅を消す
- | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0
+ | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:Cursor OFF (all positions if -1) / -1 / 0
  | | |■Exit Event
  | | |■
  | |-◇Condition:  [2]  [ CSelf11[一時変数B] >= 0   ] Case↓
@@ -561,7 +561,7 @@ WoditorEvCOMMAND_END
  |-◇Condition:  [2]  [ CSelf10[一時変数A] == 2   ] Case↓
  | |▼ 2＝味方全体
  | |■Set Variable: CSelf16[使用対象フラグ] = 2 + 0 
- | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 1:カーソルON（対象位置　位置-1なら全部） / -1 / 0
+ | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 1:Cursor ON (all positions if -1) / -1 / 0
  | |▼ 決定かキャンセルか、だけ受付する
  | |■Key Input: CSelf12[一時変数C] [Wait for Input <!>]  Confirm (10) Cancel (11)
  | |■Condition (Number):   [1] CSelf12[一時変数C] ==  10  /  [2] CSelf12[一時変数C] ==  11  
@@ -572,7 +572,7 @@ WoditorEvCOMMAND_END
  | | |■
  | |-◇Condition:  [2]  [ CSelf12[一時変数C] == 11   ] Case↓
  | | |▼ キャンセルなら終了
- | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0
+ | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:Cursor OFF (all positions if -1) / -1 / 0
  | | |■Exit Event
  | | |■
  | |◇End◇
@@ -652,7 +652,7 @@ WoditorEvCOMMAND_END
  | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf14[一時キャラID] / 23:SP / CSelf35[最終SP回復値] / 0:No
  | |▼ 回復エフェクト＋表示更新
  | |■Call Event [Name]: ["X[Map]Display Char HP/SP Recovery"] <CommonEv 97>  / CSelf11[一時変数B] / CSelf33[最終HP回復値] / CSelf35[最終SP回復値]
- | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0
+ | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:Cursor OFF (all positions if -1) / -1 / 0
  | |▼  
  | |■Condition (Number):   [1] CSelf16[使用対象フラグ] ==  1  
  | |-◇Condition:  [1]  [ CSelf16[使用対象フラグ] == 1   ] Case↓

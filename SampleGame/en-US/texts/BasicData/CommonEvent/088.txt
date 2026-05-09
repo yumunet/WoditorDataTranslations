@@ -313,7 +313,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<2>()("Set the starting position")
 [150][2,0]<2>(819,1600021)()
 [150][11,0]<2>(1,1600021,0,0,0,1,255,1600041,1600042,100,0)()
-[103][0,1]<2>()("Inertial movement")
+[103][0,1]<2>()("Move with inertia")
 [150][11,0]<2>(1,1600021,5,0,0,1,255,1600022,1600023,100,0)()
 [150][18,0]<2>(1,1600021,5,0,0,1,255,1600022,1600023,100,0,0,33554432,3,0,100,100,100)()
 [150][18,0]<2>(1,1600021,5,0,0,1,255,1600022,1600023,100,0,0,33554432,5,0,100,100,100)()
@@ -383,7 +383,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<3>(1600045,1600042,0,0)()
 [150][2,0]<3>(3,1600021)()
 [150][11,0]<3>(4194305,1600021,0,0,0,1,-1000000,1600044,1600045,-1000000,0)()
-[103][0,1]<3>()("Inertial movement")
+[103][0,1]<3>()("Move with inertia")
 [150][11,0]<3>(4194305,1600021,5,0,0,1,-1000000,1600041,1600042,-1000000,0)()
 [150][18,0]<3>(4194305,1600021,5,0,0,1,-1000000,1600041,1600042,-1000000,0,0,33554432,3,0,100,100,100)()
 [150][18,0]<3>(4194305,1600021,5,0,0,1,-1000000,1600041,1600042,-1000000,0,0,33554432,5,0,100,100,100)()
@@ -403,7 +403,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<3>(3,0,0,331776,1600011)("","Party","","Current Money")
 [103][0,1]<3>()("Adjust width and position using \ax, \ay, and <R>")
 [121][4,0]<3>(1600013,1600062,1600088,4096)()
-[103][0,1]<3>()("Changed the right-alignment width calculation depending on the version (v3.00)")
+[103][0,1]<3>()("Change the width calculation for right alignment depending on the version (added in v3.00)")
 [111][7,0]<3>(2,9000115,300,4,9000115,300,1)()
 [401][1,0]<3>(1)()
 [111][4,0]<4>(1,9000084,0,2)()
@@ -451,7 +451,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<3>()("Set the starting position")
 [150][3,0]<3>(16777219,1600021,1600010)()
 [150][18,0]<3>(20971521,1600021,0,0,0,1,255,1600041,1600042,-1000000,0,0,33554432,0,1600010,100,100,100)()
-[103][0,1]<3>()("Inertial movement")
+[103][0,1]<3>()("Move with inertia")
 [150][18,0]<3>(20971521,1600021,8,0,0,1,255,1600060,1600061,-1000000,0,0,33554432,0,1600010,100,100,100)()
 [150][18,0]<3>(20971521,1600021,8,0,0,1,255,1600060,1600061,-1000000,0,0,33554432,4,1600010,100,100,100)()
 [150][18,0]<3>(20971521,1600021,8,0,0,1,255,1600060,1600061,-1000000,0,0,33554432,8,1600010,100,100,100)()
@@ -636,7 +636,7 @@ WoditorEvCOMMAND_END
  | |▼ Set the starting position
  | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
  | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
- | |▼ Inertial movement
+ | |▼ Move with inertia
  | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf22[Display X] Y:CSelf23[Display Y] / 5(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf22[Display X] Y:CSelf23[Display Y] / 5(3) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf22[Display X] Y:CSelf23[Display Y] / 5(5) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
@@ -706,7 +706,7 @@ WoditorEvCOMMAND_END
  | | |■Set Variable: CSelf45[Temp Item Y2] = CSelf42[Temp Item Y] + 0 
  | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
  | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf44[Temp Item X2] Y:CSelf45[Temp Item Y2] / 0(0) Frames  / Pattern 1 / Opacity Same / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
- | | |▼ Inertial movement
+ | | |▼ Move with inertia
  | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(0) Frames  / Pattern 1 / Opacity Same / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(3) Frames  / Pattern 1 / Opacity Same / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(5) Frames  / Pattern 1 / Opacity Same / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
@@ -726,7 +726,7 @@ WoditorEvCOMMAND_END
  | | |■Load DB(Var):  CSelf11[Temp B] = VarDB[ "Party":0:"Current Money" ] (6:Main Settings:0) 
  | | |▼ Adjust width and position using \ax, \ay, and <R>
  | | |■Set Variable: CSelf13[Temp D] = CSelf62[Extra Box Width] - CSelf88[Coordinate Scale X (x10)] 
- | | |▼ Changed the right-alignment width calculation depending on the version (v3.00)
+ | | |▼ Change the width calculation for right alignment depending on the version (added in v3.00)
  | | |■Condition (Number):   [1] Sys115:[RO] Game.exe Version (x100) <  300  /  [2] Sys115:[RO] Game.exe Version (x100) >=  300  
  | | |-◇Condition:  [1]  [ Sys115:[RO] Game.exe Version (x100) < 300   ] Case↓
  | | | |■Condition (Number):   [1] Sys84:Screen Resolution (0-2, -1:Other) ==  0  
@@ -774,7 +774,7 @@ WoditorEvCOMMAND_END
  | | |▼ Set the starting position
  | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] to CSelf10[Temp A] 
  | | |■Picture Move: CSelf21[Temp Picture ID] to CSelf10[Temp A]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
- | | |▼ Inertial movement
+ | | |▼ Move with inertia
  | | |■Picture Move: CSelf21[Temp Picture ID] to CSelf10[Temp A]  X:CSelf60[Extra Box X] Y:CSelf61[Extra Box Y] / 8(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | |■Picture Move: CSelf21[Temp Picture ID] to CSelf10[Temp A]  X:CSelf60[Extra Box X] Y:CSelf61[Extra Box Y] / 8(4) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | |■Picture Move: CSelf21[Temp Picture ID] to CSelf10[Temp A]  X:CSelf60[Extra Box X] Y:CSelf61[Extra Box Y] / 8(8) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]

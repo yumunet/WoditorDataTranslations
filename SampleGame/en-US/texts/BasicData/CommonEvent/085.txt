@@ -382,7 +382,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<5>(1600045,1600042,0,0)()
 [150][2,0]<5>(3,1600021)()
 [150][13,0]<5>(4198145,1600021,0,0,0,1,-1000000,1600044,1600045,-1000000,-1000000,0,16777216)()
-[103][0,1]<5>()("Inertial movement")
+[103][0,1]<5>()("Move with inertia")
 [150][13,0]<5>(4198145,1600021,5,0,0,1,-1000000,1600041,1600042,-1000000,-1000000,0,16777216)()
 [150][14,0]<5>(4198145,1600021,5,0,0,1,-1000000,1600041,1600042,-1000000,-1000000,0,16777216,3)()
 [150][14,0]<5>(4198145,1600021,5,0,0,1,-1000000,1600041,1600042,-1000000,-1000000,0,16777216,5)()
@@ -454,7 +454,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<4>(1600045,1600042,0,0)()
 [150][3,0]<4>(16777219,1600021,1600026)()
 [150][18,0]<4>(20975361,1600021,0,0,0,1,-1000000,1600044,1600045,-1000000,0,0,33554432,0,1600026,100,100,100)()
-[103][0,1]<4>()("Inertial movement")
+[103][0,1]<4>()("Move with inertia")
 [150][18,0]<4>(20975361,1600021,5,0,0,1,-1000000,1600041,1600042,-1000000,0,0,33554432,0,1600026,100,100,100)()
 [150][18,0]<4>(20975361,1600021,5,0,0,1,-1000000,1600041,1600042,-1000000,-1000000,0,33554432,3,1600026,100,100,100)()
 [150][18,0]<4>(20975361,1600021,5,0,0,1,-1000000,1600041,1600042,-1000000,-1000000,0,33554432,5,1600026,100,100,100)()
@@ -480,7 +480,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<5>()("Set the starting position")
 [150][2,0]<5>(3,1600021)()
 [150][13,0]<5>(4198145,1600021,0,0,0,1,-1000000,1600044,1600045,-1000000,-1000000,0,16777216)()
-[103][0,1]<5>()("Inertial movement")
+[103][0,1]<5>()("Move with inertia")
 [150][13,0]<5>(4198145,1600021,5,0,0,1,-1000000,1600041,1600042,-1000000,-1000000,0,16777216)()
 [150][14,0]<5>(4198145,1600021,5,0,0,1,-1000000,1600041,1600042,-1000000,-1000000,0,16777216,3)()
 [150][14,0]<5>(4198145,1600021,5,0,0,1,-1000000,1600041,1600042,-1000000,-1000000,0,16777216,5)()
@@ -519,7 +519,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<4>(1600045,1600042,0,0)()
 [150][2,0]<4>(3,1600021)()
 [150][11,0]<4>(4194305,1600021,0,0,0,1,255,1600044,1600045,-1000000,0)()
-[103][0,1]<4>()("Inertial movement")
+[103][0,1]<4>()("Move with inertia")
 [150][11,0]<4>(4194305,1600021,5,0,0,1,255,1600041,1600042,-1000000,0)()
 [150][18,0]<4>(4194305,1600021,5,0,0,1,255,1600041,1600042,-1000000,0,0,33554432,3,0,100,100,100)()
 [150][18,0]<4>(4194305,1600021,5,0,0,1,255,1600041,1600042,-1000000,0,0,33554432,5,0,100,100,100)()
@@ -555,7 +555,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<5>()("Set the starting position")
 [150][2,0]<5>(3,1600021)()
 [150][13,0]<5>(4198145,1600021,0,0,0,1,-1000000,1600044,1600045,-1000000,-1000000,0,16777216)()
-[103][0,1]<5>()("Inertial movement")
+[103][0,1]<5>()("Move with inertia")
 [150][13,0]<5>(4198145,1600021,5,0,0,1,-1000000,1600041,1600042,-1000000,-1000000,0,16777216)()
 [150][14,0]<5>(4198145,1600021,5,0,0,1,-1000000,1600041,1600042,-1000000,-1000000,0,16777216,3)()
 [150][14,0]<5>(4198145,1600021,5,0,0,1,-1000000,1600041,1600042,-1000000,-1000000,0,16777216,5)()
@@ -600,7 +600,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<4>(1600045,1600042,0,0)()
 [150][2,0]<4>(3,1600021)()
 [150][11,0]<4>(4194305,1600021,0,0,0,1,255,1600044,1600045,-1000000,0)()
-[103][0,1]<4>()("Inertial movement")
+[103][0,1]<4>()("Move with inertia")
 [150][11,0]<4>(4194305,1600021,5,0,0,1,255,1600041,1600042,-1000000,0)()
 [150][18,0]<4>(4194305,1600021,5,0,0,1,255,1600041,1600042,-1000000,0,0,33554432,3,0,100,100,100)()
 [150][18,0]<4>(4194305,1600021,5,0,0,1,255,1600041,1600042,-1000000,0,0,33554432,5,0,100,100,100)()
@@ -645,7 +645,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<6>()("Set the starting position")
 [150][2,0]<6>(3,1600021)()
 [150][13,0]<6>(4198145,1600021,0,0,0,1,-1000000,1600044,1600045,-1000000,-1000000,0,16777216)()
-[103][0,1]<6>()("Inertial movement")
+[103][0,1]<6>()("Move with inertia")
 [150][13,0]<6>(4198145,1600021,5,0,0,1,-1000000,1600041,1600042,-1000000,-1000000,0,16777216)()
 [150][14,0]<6>(4198145,1600021,5,0,0,1,-1000000,1600041,1600042,-1000000,-1000000,0,16777216,3)()
 [150][14,0]<6>(4198145,1600021,5,0,0,1,-1000000,1600041,1600042,-1000000,-1000000,0,16777216,5)()
@@ -677,7 +677,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<5>(1600045,1600042,0,0)()
 [150][2,0]<5>(3,1600021)()
 [150][11,0]<5>(4194305,1600021,0,0,0,1,255,1600044,1600045,-1000000,0)()
-[103][0,1]<5>()("Inertial movement")
+[103][0,1]<5>()("Move with inertia")
 [150][11,0]<5>(4194305,1600021,5,0,0,1,255,1600041,1600042,-1000000,0)()
 [150][18,0]<5>(4194305,1600021,5,0,0,1,255,1600041,1600042,-1000000,0,0,33554432,3,0,100,100,100)()
 [150][18,0]<5>(4194305,1600021,5,0,0,1,255,1600041,1600042,-1000000,0,0,33554432,5,0,100,100,100)()
@@ -926,7 +926,7 @@ WoditorEvCOMMAND_END
  | | | | |■Set Variable: CSelf45[Temp Item Y2] = CSelf42[Temp Item Y] + 0 
  | | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
  | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf44[Temp Item X2] Y:CSelf45[Temp Item Y2] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
- | | | | |▼ Inertial movement
+ | | | | |▼ Move with inertia
  | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
  | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(3) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
  | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(5) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
@@ -998,7 +998,7 @@ WoditorEvCOMMAND_END
  | | | |■Set Variable: CSelf45[Temp Item Y2] = CSelf42[Temp Item Y] + 0 
  | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] to CSelf26[Temp Picture ID 2] 
  | | | |■Picture Move: CSelf21[Temp Picture ID] to CSelf26[Temp Picture ID 2]  X:CSelf44[Temp Item X2] Y:CSelf45[Temp Item Y2] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle 0 / Scale Same / Color R[100] G[100] B[100]
- | | | |▼ Inertial movement
+ | | | |▼ Move with inertia
  | | | |■Picture Move: CSelf21[Temp Picture ID] to CSelf26[Temp Picture ID 2]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | | |■Picture Move: CSelf21[Temp Picture ID] to CSelf26[Temp Picture ID 2]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(3) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color R[100] G[100] B[100]
  | | | |■Picture Move: CSelf21[Temp Picture ID] to CSelf26[Temp Picture ID 2]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(5) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color R[100] G[100] B[100]
@@ -1024,7 +1024,7 @@ WoditorEvCOMMAND_END
  | | | | |▼ Set the starting position
  | | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
  | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf44[Temp Item X2] Y:CSelf45[Temp Item Y2] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
- | | | | |▼ Inertial movement
+ | | | | |▼ Move with inertia
  | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
  | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(3) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
  | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(5) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
@@ -1063,7 +1063,7 @@ WoditorEvCOMMAND_END
  | | | |■Set Variable: CSelf45[Temp Item Y2] = CSelf42[Temp Item Y] + 0 
  | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
  | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf44[Temp Item X2] Y:CSelf45[Temp Item Y2] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
- | | | |▼ Inertial movement
+ | | | |▼ Move with inertia
  | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(3) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(5) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
@@ -1099,7 +1099,7 @@ WoditorEvCOMMAND_END
  | | | | |▼ Set the starting position
  | | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
  | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf44[Temp Item X2] Y:CSelf45[Temp Item Y2] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
- | | | | |▼ Inertial movement
+ | | | | |▼ Move with inertia
  | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
  | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(3) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
  | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(5) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
@@ -1144,7 +1144,7 @@ WoditorEvCOMMAND_END
  | | | |■Set Variable: CSelf45[Temp Item Y2] = CSelf42[Temp Item Y] + 0 
  | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
  | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf44[Temp Item X2] Y:CSelf45[Temp Item Y2] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
- | | | |▼ Inertial movement
+ | | | |▼ Move with inertia
  | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(3) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(5) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
@@ -1189,7 +1189,7 @@ WoditorEvCOMMAND_END
  | | | | | |▼ Set the starting position
  | | | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
  | | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf44[Temp Item X2] Y:CSelf45[Temp Item Y2] / 0(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
- | | | | | |▼ Inertial movement
+ | | | | | |▼ Move with inertia
  | | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(0) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
  | | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(3) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
  | | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(5) Frames  / Pattern 1 / Opacity Same / Blend Mode: Same   / Angle Same / Scale Same / Color Same
@@ -1221,7 +1221,7 @@ WoditorEvCOMMAND_END
  | | | | |■Set Variable: CSelf45[Temp Item Y2] = CSelf42[Temp Item Y] + 0 
  | | | | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
  | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf44[Temp Item X2] Y:CSelf45[Temp Item Y2] / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
- | | | | |▼ Inertial movement
+ | | | | |▼ Move with inertia
  | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(3) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]
  | | | | |■Picture Move: CSelf21[Temp Picture ID]  X:CSelf41[Temp Item X] Y:CSelf42[Temp Item Y] / 5(5) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale Same / Color R[100] G[100] B[100]

@@ -266,7 +266,7 @@ WoditorEvCOMMAND_END
 -◇Condition:  [1]  [ CSelf20[選択キャラ位置（0～5）] == -1   ] Case↓
  |▼ キャンセル時はそのまま終了
  |▼ Ver2.22　不要なキャンセル音を消去
- |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / -1
+ |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:Cursor OFF (all positions if -1) / -1 / -1
  |■Condition (Number):   [1] CSelf0[処理モード] ==  1  
  |-◇Condition:  [1]  [ CSelf0[処理モード] == 1   ] Case↓
  | |■Call Event [Name]: ["X[Map]Character Box: Draw All"] <CommonEv 92>  / -1:全員消去

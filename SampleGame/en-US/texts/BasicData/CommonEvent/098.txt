@@ -236,7 +236,7 @@ WoditorEvCOMMAND_END
 ▼ キャラIDを取得
 ■Call Event [Name]: CSelf14[一時変数E] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf0[キャラ位置[0-5]]
 ▼ 該当キャラのパラメータを更新
-■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 3:表示[瞬間表示] / CSelf0[キャラ位置[0-5]] / CSelf14[一時変数E]
+■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 3:Display [Instant] / CSelf0[キャラ位置[0-5]] / CSelf14[一時変数E]
 ▼ 座標シフト分を追加
 ■Set Variable: CSelf90[表示Yシフト量] += CSelf89[座標倍率Y[x10]] + 0 
 ■Set Variable: CSelf90[表示Yシフト量] %= CSelf89[座標倍率Y[x10]] * 2 

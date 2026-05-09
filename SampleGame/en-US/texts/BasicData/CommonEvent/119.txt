@@ -662,7 +662,7 @@ WoditorEvCOMMAND_END
  | | | | | |■Set Variable: CSelf11[ターゲット] += 1 + 0 
  | | | | | |■
  | | | | |◇Loop End Point◇◇
- | | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 1:カーソルON（対象位置　位置-1なら全部） / CSelf11[ターゲット] / -1
+ | | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 1:Cursor ON (all positions if -1) / CSelf11[ターゲット] / -1
  | | | | |▼ 決定かキャンセルだけ受け付け
  | | | | |■Key Input: CSelf10[一時変数] [Wait for Input <!>]  Confirm (10) Cancel (11)
  | | | | |■Condition (Number):   [1] CSelf10[一時変数] ==  11  
@@ -692,7 +692,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [2]  [ CSelf29[ﾀｰｹﾞｯﾄﾀｲﾌﾟ] == 2   ] Case↓
  | | | |▼ 2＝味方全体
  | | | |■Set Variable: CSelf16[単体(1)or全体(2)] = 2 + 0 
- | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 1:カーソルON（対象位置　位置-1なら全部） / -1 / 0
+ | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 1:Cursor ON (all positions if -1) / -1 / 0
  | | | |▼ 決定かキャンセルか、だけ受付する
  | | | |■Key Input: CSelf12[一時変数２] [Wait for Input <!>]  Confirm (10) Cancel (11)
  | | | |■Condition (Number):   [1] CSelf12[一時変数２] ==  10  /  [2] CSelf12[一時変数２] ==  11  
@@ -718,7 +718,7 @@ WoditorEvCOMMAND_END
  | | | | |■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / 0:表示 / Used / at random. / 
  | | | | |■
  | | | |◇End◇
- | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 4:カーソルランダムON / -1 / 0
+ | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 4:Cursor Random ON / -1 / 0
  | | | |▼ 決定かキャンセルか、だけ受付する
  | | | |■Key Input: CSelf12[一時変数２] [Wait for Input <!>]  Confirm (10) Cancel (11)
  | | | |■Condition (Number):   [1] CSelf12[一時変数２] ==  10  /  [2] CSelf12[一時変数２] ==  11  
@@ -728,8 +728,8 @@ WoditorEvCOMMAND_END
  | | | | |■Load DB(Var):  CSelf11[ターゲット] = VarDB[ "Base System Variables":"Current Party Size":0 ] (18:4:Number) 
  | | | | |■Set Variable: CSelf11[ターゲット] -= 1 + 0 
  | | | | |■Set Variable: CSelf11[ターゲット] = 0  to  CSelf11[ターゲット] 
- | | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0
- | | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 1:カーソルON（対象位置　位置-1なら全部） / CSelf11[ターゲット] / 0
+ | | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:Cursor OFF (all positions if -1) / -1 / 0
+ | | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 1:Cursor ON (all positions if -1) / CSelf11[ターゲット] / 0
  | | | | |●Label Jump [使用処理実行] >>>>>>>>>>>>>>>>>>>>>>>>>
  | | | | |■
  | | | |-◇Condition:  [2]  [ CSelf12[一時変数２] == 11   ] Case↓
@@ -959,8 +959,8 @@ WoditorEvCOMMAND_END
  | |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf14[対象ID]
  | |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf14[対象ID]
  | |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf14[対象ID]
- | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0
- | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 3:表示[瞬間表示] / CSelf11[ターゲット] / CSelf14[対象ID]
+ | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:Cursor OFF (all positions if -1) / -1 / 0
+ | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 3:Display [Instant] / CSelf11[ターゲット] / CSelf14[対象ID]
  | |▼  
  | |■Condition (Number):   [1] CSelf16[単体(1)or全体(2)] ==  1  
  | |-◇Condition:  [1]  [ CSelf16[単体(1)or全体(2)] == 1   ] Case↓
@@ -1026,7 +1026,7 @@ WoditorEvCOMMAND_END
 ■Repeat Loop [ 0 ] Times
  |●Label Point [終了処理] <<<<<<<<<<<<<<<<★
  |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 1:Cancel Sound
- |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0
+ |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:Cursor OFF (all positions if -1) / -1 / 0
  |■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / -1:削除 /  /  / 
  |■Exit Event
  |■
