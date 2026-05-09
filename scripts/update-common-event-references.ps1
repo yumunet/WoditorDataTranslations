@@ -67,5 +67,5 @@ foreach ($file in $files) {
 
 Write-Host "Update complete. Please import."
 & "$PSScriptRoot\import.ps1" $Project $Locale || $(exit)
-Write-Host "Imported. Exporting..."
+Write-Host "Exporting..."
 & "$PSScriptRoot\export.ps1" $Project $Locale
