@@ -419,7 +419,7 @@ WoditorEvCOMMAND_END
  | |◇End◇
  | |▼ 【３】確率判定
  | |■Load DB(User):  CSelf32[確率] = UserDB[ "States":CSelf23[注目位置]:"┣ Counter Trigger Rate [%]    " ] (8:-:42) 
- | |■Set Variable: CSelf32[確率] -= 0  to  99 
+ | |■Set Variable: CSelf32[確率] -= 0 Random 99 
  | |■Condition (Number):   [1] CSelf32[確率] >=  1  
  | |-◇Condition:  [1]  [ CSelf32[確率] >= 1   ] Case↓
  | | |▼ カウンター発動に成功。この属性番号を返して処理を終了する。

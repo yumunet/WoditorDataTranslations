@@ -1294,7 +1294,7 @@ WoditorEvCOMMAND_END
  |■Repeat Loop [ CSelf16[最大パーティ数] ] Times
  | |■Set Variable: CSelf21[一時ピクチャ番号] = CSelf10[一時変数A] * CSelf4[1キャラあたり使用ピクチャ数] 
  | |■Set Variable: CSelf21[一時ピクチャ番号] += CSelf20[基本ピクチャ番号] + 1 
- | |■Set Variable: CSelf11[一時変数B] = 5  to  20 
+ | |■Set Variable: CSelf11[一時変数B] = 5 Random 20 
  | |■Effect Picture: CSelf21[一時ピクチャ番号] [Blink A (Flicker)] R100/G100/B100  Interval [CSelf11[一時変数B]] Frames
  | |■Set Variable: CSelf10[一時変数A] += 1 + 0 
  | |■

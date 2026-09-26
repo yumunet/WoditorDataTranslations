@@ -197,7 +197,7 @@ DEFAULT_VAL_NUM=0
 <<!--DATANAME--!>>[読]ゲーム名 メイン,
 <<!--DATANAME--!>>[読]ゲーム名 追記,
 <<!--DATANAME--!>> -----,
-<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>[読]ﾊﾟﾌｫｰﾏﾝｽﾓﾆﾀｰ最終出力文,
 <<!--DATANAME--!>> -----,
 <<!--DATANAME--!>> -----,
 <<!--DATANAME--!>> -----,

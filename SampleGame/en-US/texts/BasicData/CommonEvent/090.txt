@@ -1294,7 +1294,7 @@ WoditorEvCOMMAND_END
  |■Repeat Loop [ CSelf16[Max Party Size] ] Times
  | |■Set Variable: CSelf21[Temp Picture ID] = CSelf10[Temp A] * CSelf4[Pictures Per Character] 
  | |■Set Variable: CSelf21[Temp Picture ID] += CSelf20[Base Picture ID] + 1 
- | |■Set Variable: CSelf11[Temp B] = 5  to  20 
+ | |■Set Variable: CSelf11[Temp B] = 5 Random 20 
  | |■Effect Picture: CSelf21[Temp Picture ID] [Blink A (Flicker)] R100/G100/B100  Interval [CSelf11[Temp B]] Frames
  | |■Set Variable: CSelf10[Temp A] += 1 + 0 
  | |■

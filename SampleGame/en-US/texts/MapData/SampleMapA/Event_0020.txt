@@ -75,7 +75,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ■Show Message: Hi!\nI'm a horse here to talk about Z-order of pictures!
-■Show Choice: / [1] I want to see an example of Z-order 
+■Show Choices: / [1] I want to see an example of Z-order 
 -◇Case: Choice [1] I want to see an example of Z-order      ↓
  |■Show Message: Okay, let me show you an example!\nFirst, I'll show three pictures with picture IDs 10, 15,\nand 20!
  |■Picture Show: 20 [Bottom-Center] String [<C>10\n↓] X:140 Y:85 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]

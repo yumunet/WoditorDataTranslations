@@ -1639,7 +1639,7 @@ WoditorEvCOMMAND_END
  | | | |■
  | | |◇End◇
  | | |▼ 【２．２　判定】　命中判定
- | | |■Set Variable: CSelf40[成功率] -= 0  to  99 
+ | | |■Set Variable: CSelf40[成功率] -= 0 Random 99 
  | | |■Condition (Number):   [1] CSelf40[成功率] <=  0  /  [2] CSelf40[成功率] >=  1  
  | | |-◇Condition:  [1]  [ CSelf40[成功率] <= 0   ] Case↓
  | | | |▼ 【２．２　MISS】　攻撃を外した/失敗したときの処理
@@ -1747,7 +1747,7 @@ WoditorEvCOMMAND_END
  | | | | | |◇End◇
  | | | | | |■
  | | | | |◇Loop End Point◇◇
- | | | | |■Set Variable: CSelf10[一時変数A] -= 0  to  99 
+ | | | | |■Set Variable: CSelf10[一時変数A] -= 0 Random 99 
  | | | | |■Condition (Number):   [1] CSelf10[一時変数A] >=  1  
  | | | | |-◇Condition:  [1]  [ CSelf10[一時変数A] >= 1   ] Case↓
  | | | | | |■Set Variable: CSelf84[クリティカルフラグ] = 1 + 0 
@@ -1853,7 +1853,7 @@ WoditorEvCOMMAND_END
  | | | | |■Load DB(User):  CSelf12[一時変数C] = UserDB[ "Skills":CSelf1[発動技能]:"┗ Variance [±%]                     " ] (0:-:12) 
  | | | | |■Set Variable: CSelf10[一時変数A] = 100 - CSelf12[一時変数C] 
  | | | | |■Set Variable: CSelf11[一時変数B] = 100 + CSelf12[一時変数C] 
- | | | | |■Set Variable: CSelf12[一時変数C] = CSelf10[一時変数A]  to  CSelf11[一時変数B] 
+ | | | | |■Set Variable: CSelf12[一時変数C] = CSelf10[一時変数A] Random CSelf11[一時変数B] 
  | | | | |■Set Variable: [Real] CSelf41[効力総計] *= CSelf12[一時変数C] / 100 
  | | | | |■
  | | | |◇Loop End Point◇◇
@@ -2126,7 +2126,7 @@ WoditorEvCOMMAND_END
  | | | | |■Set Variable: CSelf47[付与状態１] to CSelf50[付与状態４] = -1 + 0 
  | | | | |▼ 1つ目
  | | | | |■Load DB(User):  CSelf10[一時変数A] = UserDB[ "Skills":CSelf1[発動技能]:"┗ State 1 Rate [%]" ] (0:-:23) 
- | | | | |■Set Variable: CSelf10[一時変数A] -= 0  to  99 
+ | | | | |■Set Variable: CSelf10[一時変数A] -= 0 Random 99 
  | | | | |■Condition (Number):   [1] CSelf10[一時変数A] >=  1  
  | | | | |-◇Condition:  [1]  [ CSelf10[一時変数A] >= 1   ] Case↓
  | | | | | |■Load DB(User):  CSelf47[付与状態１] = UserDB[ "Skills":CSelf1[発動技能]:"Add State 1             " ] (0:-:22) 
@@ -2134,7 +2134,7 @@ WoditorEvCOMMAND_END
  | | | | |◇End◇
  | | | | |■Load DB(User):  CSelf10[一時変数A] = UserDB[ "Skills":CSelf1[発動技能]:"┗ State 2 Rate [%]" ] (0:-:25) 
  | | | | |▼ 2つ目
- | | | | |■Set Variable: CSelf10[一時変数A] -= 0  to  99 
+ | | | | |■Set Variable: CSelf10[一時変数A] -= 0 Random 99 
  | | | | |■Condition (Number):   [1] CSelf10[一時変数A] >=  1  
  | | | | |-◇Condition:  [1]  [ CSelf10[一時変数A] >= 1   ] Case↓
  | | | | | |■Load DB(User):  CSelf48[付与状態２] = UserDB[ "Skills":CSelf1[発動技能]:"Add State 2             " ] (0:-:24) 
@@ -2142,7 +2142,7 @@ WoditorEvCOMMAND_END
  | | | | |◇End◇
  | | | | |▼ 3つ目
  | | | | |■Load DB(User):  CSelf10[一時変数A] = UserDB[ "Skills":CSelf1[発動技能]:"┗ State 3 Rate [%]" ] (0:-:27) 
- | | | | |■Set Variable: CSelf10[一時変数A] -= 0  to  99 
+ | | | | |■Set Variable: CSelf10[一時変数A] -= 0 Random 99 
  | | | | |■Condition (Number):   [1] CSelf10[一時変数A] >=  1  
  | | | | |-◇Condition:  [1]  [ CSelf10[一時変数A] >= 1   ] Case↓
  | | | | | |■Load DB(User):  CSelf49[付与状態３] = UserDB[ "Skills":CSelf1[発動技能]:"Add State 3             " ] (0:-:26) 
@@ -2153,7 +2153,7 @@ WoditorEvCOMMAND_END
  | | | | |■Condition (Number):   [1] CSelf10[一時変数A] >=  0  
  | | | | |-◇Condition:  [1]  [ CSelf10[一時変数A] >= 0   ] Case↓
  | | | | | |■Load DB(User):  CSelf11[一時変数B] = UserDB[ "Weapons":CSelf10[一時変数A]:"┗ State Rate [%]" ] (3:-:19) 
- | | | | | |■Set Variable: CSelf11[一時変数B] -= 0  to  99 
+ | | | | | |■Set Variable: CSelf11[一時変数B] -= 0 Random 99 
  | | | | | |■Condition (Number):   [1] CSelf11[一時変数B] >=  1  
  | | | | | |-◇Condition:  [1]  [ CSelf11[一時変数B] >= 1   ] Case↓
  | | | | | | |■Load DB(User):  CSelf50[付与状態４] = UserDB[ "Weapons":CSelf10[一時変数A]:"┏ Add State       " ] (3:-:18) 

@@ -727,7 +727,7 @@ WoditorEvCOMMAND_END
  | | | | |▼ キャラ探索開始を0番に
  | | | | |■Load DB(Var):  CSelf11[ターゲット] = VarDB[ "Base System Variables":"Current Party Size":0 ] (18:4:Number) 
  | | | | |■Set Variable: CSelf11[ターゲット] -= 1 + 0 
- | | | | |■Set Variable: CSelf11[ターゲット] = 0  to  CSelf11[ターゲット] 
+ | | | | |■Set Variable: CSelf11[ターゲット] = 0 Random CSelf11[ターゲット] 
  | | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:カーソルOFF（対象位置　位置-1なら全部） / -1 / 0
  | | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 1:カーソルON（対象位置　位置-1なら全部） / CSelf11[ターゲット] / 0
  | | | | |●Label Jump [使用処理実行] >>>>>>>>>>>>>>>>>>>>>>>>>
@@ -908,7 +908,7 @@ WoditorEvCOMMAND_END
  | |■Load DB(User):  CSelf39[ランダム下限％] -= UserDB[ "Skills":CSelf30[技能番号]:"┗ Variance [±%]                     " ] (0:-:12) 
  | |■Set Variable: CSelf38[ランダム上限％] Lower Bound= 0 + 0 
  | |■Set Variable: CSelf39[ランダム下限％] Lower Bound= 0 + 0 
- | |■Set Variable: CSelf35[結果値] *= CSelf39[ランダム下限％]  to  CSelf38[ランダム上限％] 
+ | |■Set Variable: CSelf35[結果値] *= CSelf39[ランダム下限％] Random CSelf38[ランダム上限％] 
  | |■Set Variable: CSelf35[結果値] /= 100 + 0 
  | |▼ ここでHPかSPに影響
  | |■Load DB(User):  CSelf32[技能TMP１] = UserDB[ "Skills":CSelf30[技能番号]:"┏ What's Affected?                 " ] (0:-:8) 

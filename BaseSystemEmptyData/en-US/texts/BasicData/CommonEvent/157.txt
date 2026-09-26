@@ -461,7 +461,7 @@ WoditorEvCOMMAND_END
  |■Condition (Number):   [1] CSelf0[発動戦闘ｽﾛｯﾄ] <  10  
  |-◇Condition:  [1]  [ CSelf0[発動戦闘ｽﾛｯﾄ] < 10   ] Case↓
  | |▼ 敏捷性に±20％のゆらぎを持たせる
- | |■Set Variable: CSelf18[敏捷性] *= 80  to  120 
+ | |■Set Variable: CSelf18[敏捷性] *= 80 Random 120 
  | |■Set Variable: CSelf18[敏捷性] /= 100 + 0 
  | |■
  |◇End◇
@@ -507,7 +507,7 @@ WoditorEvCOMMAND_END
  |■Condition (Number):   [1] CSelf0[発動戦闘ｽﾛｯﾄ] <  10  
  |-◇Condition:  [1]  [ CSelf0[発動戦闘ｽﾛｯﾄ] < 10   ] Case↓
  | |▼ 敏捷性に±20％のゆらぎを持たせる
- | |■Set Variable: CSelf18[敏捷性] *= 80  to  120 
+ | |■Set Variable: CSelf18[敏捷性] *= 80 Random 120 
  | |■Set Variable: CSelf18[敏捷性] /= 100 + 0 
  | |■
  |◇End◇

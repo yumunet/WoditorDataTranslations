@@ -105,7 +105,7 @@ WoditorEvCOMMAND_END
  |■
 ◇End◇
 ▼ Display choices.
-■Show Choice: / [1] \s[0] / [2] I'll have it to go 
+■Show Choices: / [1] \s[0] / [2] I'll have it to go 
 -◇Case: Choice [1] \s[0]                                    ↓
  |▼ When "Eat here" is selected.
  |■Show Message: Okay, just gimme a sec!

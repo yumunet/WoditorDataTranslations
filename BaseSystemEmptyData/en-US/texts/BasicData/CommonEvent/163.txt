@@ -942,7 +942,7 @@ WoditorEvCOMMAND_END
  | |◇End◇
  | |▼ 選択可能な一覧（コモンセルフ40～）からランダム選択
  | |■Set Variable: CSelf10[一時変数A] = 1600040 + 0 
- | |■Set Variable: CSelf10[一時変数A] += 1  to  CSelf39[対象数] 
+ | |■Set Variable: CSelf10[一時変数A] += 1 Random CSelf39[対象数] 
  | |■Set Variable: CSelf10[一時変数A] -= 1 + 0 
  | |■Set Variable: CSelf12[一時変数C] = V[CSelf10[一時変数A]] + 0 
  | |■Condition (Number):   [1] CSelf12[一時変数C] >=  0  

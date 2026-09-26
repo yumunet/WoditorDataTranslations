@@ -123,7 +123,7 @@ WoditorEvCOMMAND_END
 ▼ -----------------------------------------------------
 ■Show Message: Hello there, I'm the Professor!\nWhat have you come to ask today?
 ■Wait: 1 Frames
-■Show Choice: / [1] What can you tell me? / [2] Tell me about string pictures / [3] Tell me about window pictures / [4] Keyboard text input / [5] Tell me about special characters / [6] Show me lots of icons / [7] Tell me about changing fonts 
+■Show Choices: / [1] What can you tell me? / [2] Tell me about string pictures / [3] Tell me about window pictures / [4] Keyboard text input / [5] Tell me about special characters / [6] Show me lots of icons / [7] Tell me about changing fonts 
 -◇Case: Choice [1] What can you tell me?                    ↓
  |■Show Message: I can introduce you to the basic functions of the\nWOLF RPG Editor!
  |■Show Message: If you want to make your own system,\nor you want to master using WOLF RPG Editor,\nyou should really stop and listen!

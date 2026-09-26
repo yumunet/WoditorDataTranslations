@@ -118,7 +118,7 @@ WoditorEvCOMMAND_END
 ▼ Move the position of the choice window down a little.
 ■Set Variable: Sys4:Choice Window Y = 150 + 0 
 ▼ This displays the usual choices on game start.
-■Show Choice: / [1] <C>Start / [2] <C>Continue / [3] <C>Quit 
+■Show Choices: / [1] <C>Start / [2] <C>Continue / [3] <C>Quit 
 -◇Case: Choice [1] <C>Start                                 ↓
  |▼ Set the position of the choice window back to default.
  |■Set Variable: Sys4:Choice Window Y = -1 + 0 

@@ -81,7 +81,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ■Show Message: It reads...\n  "WOLF RPG Editor\n   Those who touch this will undergo a trial."
-■Show Choice: / [1] Open the chest / [2] Don't open it yet 
+■Show Choices: / [1] Open the chest / [2] Don't open it yet 
 -◇Case: Choice [1] Open the chest                           ↓
  |■Wait: 10 Frames
  |■Adjust Color:  R30 G30 B40 / 15 Frames

@@ -277,7 +277,7 @@ WoditorEvCOMMAND_END
 ◇End◇
 ■Show Message: Here comes your rival, Taiga the tiger girl!\nI'm gonna show you the new Version 3 features!
 ■Wait: 1 Frames
-■Show Choice: / [1] \s[0] / [2] How is pixel movement made? / [3] I heard it supports Unicode? / [4] You can change colors with filter effects?! / [5] You can capture the screen as a picture?! / [6] I want to see a cut-in using a mask! / [7] Please explain the cut-in using a mask 
+■Show Choices: / [1] \s[0] / [2] How is pixel movement made? / [3] I heard it supports Unicode? / [4] You can change colors with filter effects?! / [5] You can capture the screen as a picture?! / [6] I want to see a cut-in using a mask! / [7] Please explain the cut-in using a mask 
 -◇Case: Choice [1] \s[0]                                    ↓
  |■Condition (Number):   [1] This Ev Self0 ==  0  /  [2] This Ev Self0 ==  1  
  |-◇Condition:  [1]  [ This Ev Self0 == 0   ] Case↓

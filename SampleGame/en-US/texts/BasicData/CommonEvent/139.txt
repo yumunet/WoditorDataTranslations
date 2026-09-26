@@ -589,8 +589,8 @@ WoditorEvCOMMAND_END
  | | | |■Load DB(User):  CSelf38[精神攻撃で回復？] = UserDB[ "States":CSelf28[状態ID]:"┗ Removed by Magic Dmg   " ] (8:-:9) 
  | | | |■
  | | |◇End◇
- | | |■Set Variable: CSelf37[物理攻撃で回復？] -= 0  to  99 
- | | |■Set Variable: CSelf38[精神攻撃で回復？] -= 0  to  99 
+ | | |■Set Variable: CSelf37[物理攻撃で回復？] -= 0 Random 99 
+ | | |■Set Variable: CSelf38[精神攻撃で回復？] -= 0 Random 99 
  | | |■Condition (Number):   [1] CSelf37[物理攻撃で回復？] >=  1  /  [2] CSelf38[精神攻撃で回復？] >=  1  
  | | |-◇Condition:  [1]  [ CSelf37[物理攻撃で回復？] >= 1   ] Case↓
  | | | |▼ 状態を回復する

@@ -337,9 +337,9 @@ WoditorEvCOMMAND_END
  |■Load DB(Var):  CSelf34[入手防具] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Enemy] Armor Drop" ] (10:-:76) 
  |■Load DB(Var):  CSelf35[防具入手率[%]] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Enemy] Armor Drop Rate" ] (10:-:77) 
  |▼ 入手率からランダム値を引く
- |■Set Variable: CSelf31[アイテム入手率[%]] -= 0  to  99 
- |■Set Variable: CSelf33[武器入手率[%]] -= 0  to  99 
- |■Set Variable: CSelf35[防具入手率[%]] -= 0  to  99 
+ |■Set Variable: CSelf31[アイテム入手率[%]] -= 0 Random 99 
+ |■Set Variable: CSelf33[武器入手率[%]] -= 0 Random 99 
+ |■Set Variable: CSelf35[防具入手率[%]] -= 0 Random 99 
  |■Repeat Loop [ 1 ] Times
  | |▼ ここから入手処理
  | |■Set Variable: CSelf22[限界格納地点] = CSelf98[入手アイテム項目_開始位置] + CSelf97[入手アイテム最大個数] 

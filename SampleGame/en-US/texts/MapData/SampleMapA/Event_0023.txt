@@ -63,7 +63,7 @@ WoditorEvCOMMAND_END
 ▼ Since this is the English version, change the initial choice.
 ■Set Variable: Sys7:Initial Choice (0,1,2...) = 1 + 0 
 ■Show Message: I'm a witch.\nWant to hear the synthetic voice\nadded in Version 3.6?
-■Show Choice: / [1] Listen to the Japanese voice / [2] Listen to the English voice 
+■Show Choices: / [1] Listen to the Japanese voice / [2] Listen to the English voice 
 -◇Case: Choice [1] Listen to the Japanese voice             ↓
  |■Set String: S0[[Sample] Temporary String] =<Execute Special Code> "<<MS_VOICE_PLAY/SPEED=1/VOL=100/VOICE=Microsoft Haruka Desktop - Japanese>>こんにちは！　日本語でしゃべりまーす"
  |■Show Message: こんにちは！ (Hello!)\n日本語でしゃべりまーす。 (I'm speaking in Japanese!)

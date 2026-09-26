@@ -108,7 +108,7 @@ WoditorEvCOMMAND_END
 -◇Condition:  [2]  [ This Ev Self1 >= 1   ] Case↓
  |■Show Message: @3\nYuichi\n  Hey, when we get home, let's make\n  something with that WOLF RPG Editor!
  |■Show Message: @2\nP. G. Edy\n  Yeah! Let's get going soon!
- |■Show Choice: / [1] Leave (Ending) / [2] Don't leave yet 
+ |■Show Choices: / [1] Leave (Ending) / [2] Don't leave yet 
  |-◇Case: Choice [1] Leave (Ending)                           ↓
  | |■Show Message: @4\nWolfarl\n  Thank you so much for playing,\n  you in front of the screen!
  | |■Show Message: Wolfarl\n  I'll be glad if playing this made you want\n  to tinker with WOLF RPG Editor a little!

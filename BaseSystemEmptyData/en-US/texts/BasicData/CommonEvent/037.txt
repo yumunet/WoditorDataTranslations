@@ -272,7 +272,7 @@ WoditorEvCOMMAND_END
 ■Condition (Number):   [1] CSelf23[Temp Encounter Value] >=  100000  
 -◇Condition:  [1]  [ CSelf23[Temp Encounter Value] >= 100000   ] Case↓
  |▼ When encountered, store the next initial value within a ±20,000 range.
- |■Set Variable: CSelf23[Temp Encounter Value] = -20000  to  20000 
+ |■Set Variable: CSelf23[Temp Encounter Value] = -20000 Random 20000 
  |■Write to DB(Var): VarDB[ "Base System Variables":65:0 ] (18:[Encounter] Encounter Value:Number) =  CSelf23[Temp Encounter Value]
  |■Condition (Number):   [1] CSelf1[Enemy Group 1] <=  -1  
  |-◇Condition:  [1]  [ CSelf1[Enemy Group 1] <= -1   ] Case↓
@@ -290,7 +290,7 @@ WoditorEvCOMMAND_END
  |◇End◇
  |▼ Select an enemy group at random.
  |■Loop Start
- | |■Set Variable: CSelf11[Temp Variable B] = 1  to  3 
+ | |■Set Variable: CSelf11[Temp Variable B] = 1 Random 3 
  | |■Set Variable: CSelf11[Temp Variable B] += 1600000 + 0 
  | |■Set Variable: CSelf12[Temp Variable C] = V[CSelf11[Temp Variable B]] + 0 
  | |■Condition (Number):   [1] CSelf12[Temp Variable C] >=  0  

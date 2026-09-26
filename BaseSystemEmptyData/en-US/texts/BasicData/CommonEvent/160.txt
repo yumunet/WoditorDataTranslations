@@ -1000,7 +1000,7 @@ WoditorEvCOMMAND_END
  | |-◇Condition:  [1]  [ CSelf35[[AI]条件] <= 100   ] Case↓
  | | |▼ 確率　（条件％）
  | | |■Set Variable: CSelf39[条件満たすフラグ] = CSelf35[[AI]条件] + 0 
- | | |■Set Variable: CSelf39[条件満たすフラグ] -= 0  to  99 
+ | | |■Set Variable: CSelf39[条件満たすフラグ] -= 0 Random 99 
  | | |■Set Variable: CSelf39[条件満たすフラグ] Upper Bound= 1 + 0 
  | | |■Set Variable: CSelf39[条件満たすフラグ] Lower Bound= 0 + 0 
  | | |■

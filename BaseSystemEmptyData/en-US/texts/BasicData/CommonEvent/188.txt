@@ -636,7 +636,7 @@ WoditorEvCOMMAND_END
  |●Label Point [逃走処理] <<<<<<<<<<<<<<<<★
  |▼ 確率判定
  |■Load DB(User):  CSelf22[逃走可能確率] = UserDB[ "Enemy Groups":CSelf0[敵グループ番号]:"Flee Success Rate [%]" ] (13:-:11) 
- |■Set Variable: CSelf22[逃走可能確率] -= 0  to  99 
+ |■Set Variable: CSelf22[逃走可能確率] -= 0 Random 99 
  |■Condition (Number):   [1] CSelf22[逃走可能確率] >=  1  
  |-◇Condition:  [1]  [ CSelf22[逃走可能確率] >= 1   ] Case↓
  | |▼ 逃走に成功したら戦利品を全部失う

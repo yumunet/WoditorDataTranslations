@@ -643,7 +643,7 @@ WoditorEvCOMMAND_END
  | | |■Load DB(User):  CSelf13[Change Turns] = UserDB[ "States":CSelf11[Target State ID]:"┗ Duration Variance [±]" ] (8:-:5) 
  | | |■Set Variable: CSelf14[Total Turns] = CSelf12[Base Turns] - CSelf13[Change Turns] 
  | | |■Set Variable: CSelf13[Change Turns] *= 2 + 0 
- | | |■Set Variable: CSelf14[Total Turns] += 0  to  CSelf13[Change Turns] 
+ | | |■Set Variable: CSelf14[Total Turns] += 0 Random CSelf13[Change Turns] 
  | | |■Set Variable: CSelf14[Total Turns] Lower Bound= 1 + 0 
  | | |▼ If necessary, raise the steps until the next state removal in the Temp DB.
  | | |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Tmp] UntilNextStateRemove" ] (17:-:13) Lower Bound  CSelf14[Total Turns]

@@ -197,7 +197,7 @@ DEFAULT_VAL_NUM=0
 <<!--DATANAME--!>>[RO] Game Name (Main),
 <<!--DATANAME--!>>[RO] Game Name (Extra),
 <<!--DATANAME--!>> -----,
-<<!--DATANAME--!>> -----,
+<<!--DATANAME--!>>[RO] Last Performance Monitor Output,
 <<!--DATANAME--!>> -----,
 <<!--DATANAME--!>> -----,
 <<!--DATANAME--!>> -----,

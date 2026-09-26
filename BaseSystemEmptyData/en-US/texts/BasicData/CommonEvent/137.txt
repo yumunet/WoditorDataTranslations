@@ -643,7 +643,7 @@ WoditorEvCOMMAND_END
  | |◇Loop End Point◇◇
  | |▼ 付与する場合は、状態耐性に応じて率を計算
  | |■Load DB(Var):  CSelf29[状態にかかる率] = VarDB[ "×┣State Resist Calc":CSelf0[戦闘スロット]:CSelf1[付与する状態] ] (12:-:-) 
- | |■Set Variable: CSelf29[状態にかかる率] -= 0  to  99 
+ | |■Set Variable: CSelf29[状態にかかる率] -= 0 Random 99 
  | |▼ 強制付与フラグが 1 なら絶対発動
  | |■Set Variable: CSelf29[状態にかかる率] Lower Bound= CSelf30[強制付与フラグ] + 0 
  | |▼ すでに番号の小さい「これ以外を全解除」状態が付いてた場合は付与しない
@@ -691,7 +691,7 @@ WoditorEvCOMMAND_END
  | | | |■Load DB(User):  CSelf13[増減ターン] = UserDB[ "States":CSelf11[処理中状態ID]:"┗ Duration Variance [±]" ] (8:-:5) 
  | | | |■Set Variable: CSelf14[合計ターン] = CSelf12[基本ターン] - CSelf13[増減ターン] 
  | | | |■Set Variable: CSelf13[増減ターン] *= 2 + 0 
- | | | |■Set Variable: CSelf14[合計ターン] += 0  to  CSelf13[増減ターン] 
+ | | | |■Set Variable: CSelf14[合計ターン] += 0 Random CSelf13[増減ターン] 
  | | | |■Set Variable: CSelf14[合計ターン] Lower Bound= 1 + 0 
  | | | |■
  | | |-◇Else

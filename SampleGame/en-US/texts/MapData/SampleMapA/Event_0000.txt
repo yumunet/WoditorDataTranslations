@@ -83,7 +83,7 @@ WoditorEvCOMMAND_END
 ■Condition (Number):   [1] This Ev Self1 >=  1  
 -◇Condition:  [1]  [ This Ev Self1 >= 1   ] Case↓
  |▼ Display choices for whether to give bread.
- |■Show Choice: / [1] Give Tasty Bread / [2] Some other time 
+ |■Show Choices: / [1] Give Tasty Bread / [2] Some other time 
  |-◇Case: Choice [1] Give Tasty Bread                         ↓
  | |■Show Message: @3\nYuichi\n  Yaaay! Thanks!\n  *Munch, munch...*
  | |▼ Remove Tasty Bread.

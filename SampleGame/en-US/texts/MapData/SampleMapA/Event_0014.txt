@@ -65,7 +65,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ■Show Message: Good day! \nWhat do you want to try?
-■Show Choice: / [1] Flash / [2] Shake / [3] Zoom in / [4] Unzoom / [5] Shake the screen 
+■Show Choices: / [1] Flash / [2] Shake / [3] Zoom in / [4] Unzoom / [5] Shake the screen 
 -◇Case: Choice [1] Flash                                    ↓
  |■Wait: 5 Frames
  |■Effect Character: This Event[Flash] R100/G100/B100  [40] Frames

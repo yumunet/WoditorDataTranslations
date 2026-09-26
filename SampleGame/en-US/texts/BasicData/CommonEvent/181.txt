@@ -534,7 +534,7 @@ WoditorEvCOMMAND_END
  |■Load DB(User):  CSelf9[一時文字列] = UserDB[ "States":CSelf2[数値]:"State Name" ] (8:-:0) 
  |▼ 基本座標を補正
  |■Set Variable: CSelf10[一時変数] = CSelf89[座標倍率Y[x10]] * 2 
- |■Set Variable: CSelf1[表示位置Y] += CSelf89[座標倍率Y[x10]]  to  CSelf10[一時変数] 
+ |■Set Variable: CSelf1[表示位置Y] += CSelf89[座標倍率Y[x10]] Random CSelf10[一時変数] 
  |▼ ジャンプ先の座標を計算
  |■Set Variable: CSelf35[ジャンプ先X] = CSelf0[表示位置X] + 0 
  |■Set Variable: CSelf36[ジャンプ先Y] = CSelf1[表示位置Y] + 0 

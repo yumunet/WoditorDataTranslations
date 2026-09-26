@@ -236,8 +236,8 @@ WoditorEvCOMMAND_END
 ■Load DB(Var):  CSelf12[一時変数C] = VarDB[ "Base System Variables":37:0 ] (18:Status Display End X:Number) 
 ■Load DB(Var):  CSelf13[一時変数D] = VarDB[ "Base System Variables":38:0 ] (18:Status Display End Y:Number) 
 ▼ HP回復エフェクト
-■Set Variable: CSelf12[一時変数C] += 0  to  CSelf88[座標倍率X[x10]] 
-■Set Variable: CSelf13[一時変数D] += 0  to  CSelf89[座標倍率Y[x10]] 
+■Set Variable: CSelf12[一時変数C] += 0 Random CSelf88[座標倍率X[x10]] 
+■Set Variable: CSelf13[一時変数D] += 0 Random CSelf89[座標倍率Y[x10]] 
 ■Set Variable: CSelf13[一時変数D] -= 2 * CSelf89[座標倍率Y[x10]] 
 ■Condition (Number):   [1] CSelf1[HP回復量] >=  1  
 -◇Condition:  [1]  [ CSelf1[HP回復量] >= 1   ] Case↓

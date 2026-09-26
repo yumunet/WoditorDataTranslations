@@ -472,7 +472,7 @@ WoditorEvCOMMAND_END
  | |■Write to DB(Var): VarDB[ "Base System Variables":7:0 ] (18:System Min Font Size:Number) =  CSelf25[Temp Variable A]
  | |■Set Variable: CSelf25[Temp Variable A] = CSelf26[Temp Variable B] * 12 
  | |■Set Variable: CSelf25[Temp Variable A] /= 10 + 0 
- | |■Set Variable: Sys8:Base Font Size = CSelf25[Temp Variable A] + 0 
+ | |■Set Variable: Sys8:Default Font Size = CSelf25[Temp Variable A] + 0 
  | |■Set Variable: CSelf25[Temp Variable A] = CSelf26[Temp Variable B] * 5 
  | |■Set Variable: CSelf25[Temp Variable A] /= 10 + 0 
  | |■Set Variable: Sys23:Ruby Font Size = CSelf25[Temp Variable A] + 0 
@@ -489,8 +489,8 @@ WoditorEvCOMMAND_END
  | | |■Write to DB(Var): VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) =  10
  | | |■Write to DB(Var): VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) =  8
  | | |■Write to DB(Var): VarDB[ "Base System Variables":7:0 ] (18:System Min Font Size:Number) =  6
- | | |■Set Variable: Sys8:Base Font Size = 12 + 0 
- | | |■Set Variable: Sys23:Ruby Font Size = Sys8:Base Font Size / 2 
+ | | |■Set Variable: Sys8:Default Font Size = 12 + 0 
+ | | |■Set Variable: Sys23:Ruby Font Size = Sys8:Default Font Size / 2 
  | | |▼ Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale.
  | | |■Write to DB(Var): VarDB[ "Base System Variables":3:0 ] (18:[×Unused] Coord Scale [x10]:Number) =  10
  | | |■
@@ -500,8 +500,8 @@ WoditorEvCOMMAND_END
  | | |■Write to DB(Var): VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) =  20
  | | |■Write to DB(Var): VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) =  16
  | | |■Write to DB(Var): VarDB[ "Base System Variables":7:0 ] (18:System Min Font Size:Number) =  12
- | | |■Set Variable: Sys8:Base Font Size = 24 + 0 
- | | |■Set Variable: Sys23:Ruby Font Size = Sys8:Base Font Size / 2 
+ | | |■Set Variable: Sys8:Default Font Size = 24 + 0 
+ | | |■Set Variable: Sys23:Ruby Font Size = Sys8:Default Font Size / 2 
  | | |▼ Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale.
  | | |■Write to DB(Var): VarDB[ "Base System Variables":3:0 ] (18:[×Unused] Coord Scale [x10]:Number) =  20
  | | |■
@@ -511,8 +511,8 @@ WoditorEvCOMMAND_END
  | | |■Write to DB(Var): VarDB[ "Base System Variables":5:0 ] (18:System Base Font Size:Number) =  26
  | | |■Write to DB(Var): VarDB[ "Base System Variables":6:0 ] (18:System Small Font Size:Number) =  20
  | | |■Write to DB(Var): VarDB[ "Base System Variables":7:0 ] (18:System Min Font Size:Number) =  15
- | | |■Set Variable: Sys8:Base Font Size = 30 + 0 
- | | |■Set Variable: Sys23:Ruby Font Size = Sys8:Base Font Size / 2 
+ | | |■Set Variable: Sys8:Default Font Size = 30 + 0 
+ | | |■Set Variable: Sys23:Ruby Font Size = Sys8:Default Font Size / 2 
  | | |▼ Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale.
  | | |■Write to DB(Var): VarDB[ "Base System Variables":3:0 ] (18:[×Unused] Coord Scale [x10]:Number) =  25
  | | |■
