@@ -64,6 +64,9 @@ WOLF RPG Editor will be installed under `<PROJECT_NAME>\<LOCALE_ID>\_woditor`, f
     - `PROJECT_NAME`: the project folder name, such as `SampleGame`
     - `LOCALE_ID`: the locale identifier [^1]
 
+    **If you omit `PROJECT_NAME` or `LOCALE_ID`, you can select the omitted value from a list.**
+    This also applies to other scripts described below.
+
 #### Adding a new translation
 
 1. Create a folder named with the locale identifier [^1] for the language you want to add.
@@ -117,7 +120,7 @@ After renaming, follow these steps:
 4. Commit the changes after updating the references.
 5. Update the worktree for the next rename:
     ```text
-    cd scripts\update-database-references
+    cd scripts\reference-update-source
     git merge main
     ```
 
@@ -128,6 +131,30 @@ Run `pack.ps1` to package the project data into a ZIP file in the `releases` fol
 ```text
 .\scripts\pack.ps1 PROJECT_NAME LOCALE_ID
 ```
+
+### Updating WOLF RPG Editor
+
+When a new version of WOLF RPG Editor is released, run `update-all-woditor.ps1` to update the installations across all projects for the specified locales.
+List `LOCALE_ID = WODITOR_PATH` entries separated by `;`, as shown below:
+
+```text
+.\scripts\update-all-woditor.ps1 @{"ja-JP" = "C:\Woditor\Japanese"; "en-US" = "C:\Woditor\English"}
+```
+
+After updating the editor files, the script asks whether to export all projects for the specified locales.
+
+### Updating the Original Project Data
+
+If the original project data has changed in the new release, run `update-ja-jp-projects.ps1` to update all `ja-JP` project data (`BaseSystemEmptyData`, `CompletelyEmptyData`, and `SampleGame`).
+This script also requires `ResourceHacker.exe` to be available in your PATH; see [Graphic Maker setup](#generating-output-graphic-maker).
+
+```text
+.\scripts\update-ja-jp-projects.ps1 NEW_WODITOR_PATH
+```
+
+- `NEW_WODITOR_PATH`: the folder path of the extracted full Japanese WOLF RPG Editor package
+
+After running the script, review the changes, then update and export each translation manually.
 
 ## Extras
 
