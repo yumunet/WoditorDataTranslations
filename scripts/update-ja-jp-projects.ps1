@@ -67,4 +67,7 @@ foreach ($project in $projectNames) {
     & "$PSScriptRoot\export.ps1" $project "ja-JP"
 }
 
+# Replace the sample game manual
+Copy-Item -LiteralPath "$NewWoditorPath\サンプルゲーム説明書.txt" -Destination "$root\SampleGame\ja-JP"
+
 Write-Host "Please update and export the other locales manually."
