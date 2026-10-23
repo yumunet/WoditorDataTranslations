@@ -8,12 +8,8 @@ if (-not $WoditorPaths) {
 }
 
 # Get all project names
-$projectNames = @()
-foreach ($subDir in Get-ChildItem -LiteralPath $root -Directory) {
-    if (Test-Path -LiteralPath "$subDir\assets") {
-        $projectNames += $subDir.Name
-    }
-}
+. "$PSScriptRoot\.util.ps1"
+$projectNames = Get-ProjectNames
 
 # Update all Woditor files
 foreach ($path in $WoditorPaths.GetEnumerator()) {
@@ -22,10 +18,10 @@ foreach ($path in $WoditorPaths.GetEnumerator()) {
 
 # Ask whether to export all projects
 $choiceType = "System.Management.Automation.Host.ChoiceDescription"
-$choice = $host.ui.PromptForChoice("Confirm", "Do you want to export all projects?", @((New-Object $choiceType "&No", "No"), (New-Object $choiceType "&Yes", "Yes")), 0)
+$choice = $host.ui.PromptForChoice("Confirm", "Do you want to export all projects? This is necessary if the command text or Auto.txt format has changed.", @((New-Object $choiceType "&No", "No"), (New-Object $choiceType "&Yes", "Yes")), 1)
 if ($choice -eq 1) {
     # Launch and immediately close each editor (optional)
-    $choice = $host.ui.PromptForChoice("Confirm", "Have system variable or system string names changed, or have new game settings been added? If you select Yes, each editor will be launched once to update the data.", @((New-Object $choiceType "&No", "No"), (New-Object $choiceType "&Yes", "Yes")), 0)
+    $choice = $host.ui.PromptForChoice("Confirm", "Do you want to launch each editor once? This is necessary if system variable or system string names have changed, or new game settings have been added.", @((New-Object $choiceType "&No", "No"), (New-Object $choiceType "&Yes", "Yes")), 1)
     if ($choice -eq 1) {
         . "$PSScriptRoot\.util.ps1"
         foreach ($locale in $WoditorPaths.Keys) {

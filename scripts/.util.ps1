@@ -38,3 +38,41 @@ function Start-AndKillEditor([string]$EditorPath) {
     $process.WaitForExit()
     $process.Dispose()
 }
+
+function Get-ProjectNames() {
+    $projects = @()
+    $root = Split-Path -Path $PSScriptRoot -Parent
+    foreach ($dir in Get-ChildItem -LiteralPath $root -Directory) {
+        if (Test-Path -LiteralPath "$dir\assets") {
+            $projects += $dir.Name
+        }
+    }
+    return $projects
+}
+
+function Get-LocaleNames([string]$Project) {
+    $locales = @()
+    $root = Split-Path -Path $PSScriptRoot -Parent
+    foreach ($dir in Get-ChildItem -LiteralPath "$root\$Project" -Directory) {
+        if (Test-Path -LiteralPath "$dir\_woditor") {
+            $locales += $dir.Name
+        }
+    }
+    return $locales
+}
+
+function Select-Item([string]$Message, [string[]]$Items) {
+    # Supports up to 35 choices
+    $keys = "123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    $backspace = [char]8
+
+    $choices = @()
+    for ($i = 0; $i -lt $items.Count; $i++) {
+        $item = $items[$i]
+        $key = $keys[$i]
+        $choices += [Management.Automation.Host.ChoiceDescription]::new("${item}&${key}${backspace}")
+    }
+
+    $index = $Host.UI.PromptForChoice("", $Message, $choices, -1)
+    return $Items[$index]
+}

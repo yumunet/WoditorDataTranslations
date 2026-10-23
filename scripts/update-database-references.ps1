@@ -1,4 +1,4 @@
-param([Parameter(Mandatory)][string]$Project, [Parameter(Mandatory)][string]$Locale)
+param([string]$Project, [string]$Locale)
 $ErrorActionPreference = "Stop"
 
 enum DBTypes {
@@ -239,6 +239,14 @@ function Update-EventCode([string]$FilePath, [hashtable]$NewDBs, [hashtable]$Old
     }
 
     [IO.File]::WriteAllText($FilePath, $content)
+}
+
+. "$PSScriptRoot\.util.ps1"
+if (-not $Project) {
+    $Project = Select-Item "Select a project" (Get-ProjectNames) 
+}
+if (-not $Locale) { 
+    $Locale = Select-Item "Select a locale" (Get-LocaleNames $Project) 
 }
 
 $root = Split-Path -Path $PSScriptRoot -Parent

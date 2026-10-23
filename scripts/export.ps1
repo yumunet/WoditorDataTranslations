@@ -1,4 +1,4 @@
-param([Parameter(Mandatory)][string]$Project, [Parameter(Mandatory)][string]$Locale)
+param([string]$Project, [string]$Locale)
 $ErrorActionPreference = "Stop"
 
 function Split-Texts([string]$Src, [string]$Dest) {
@@ -81,6 +81,15 @@ function Split-Texts([string]$Src, [string]$Dest) {
     }
 }
 
+. "$PSScriptRoot\.util.ps1"
+
+if (-not $Project) { 
+    $Project = Select-Item "Select a project" (Get-ProjectNames) 
+}
+if (-not $Locale) { 
+    $Locale = Select-Item "Select a locale" (Get-LocaleNames $Project) 
+}
+
 $root = Split-Path -Path $PSScriptRoot -Parent
 $baseAssetsDir = "$root\$Project\assets"
 $langDir = "$root\$Project\$Locale"
@@ -98,7 +107,6 @@ Start-Process -FilePath "$woditorDir\Editor.exe" -ArgumentList "-txtoutput" -Wai
 
 Split-Texts $woditorTextDir $textsDir
 
-. "$PSScriptRoot\.util.ps1"
 if ($Locale -eq "ja-JP") {
     # For the original, update the assets directly.
     Copy-Assets $woditorDataDir $baseAssetsDir

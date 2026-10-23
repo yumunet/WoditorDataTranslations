@@ -20,12 +20,9 @@ function Copy-Woditor([string]$Dest) {
 $root = Split-Path -Path $PSScriptRoot -Parent
 if ($Project -eq "") {
     # By default, update all Woditor.
-    $subDirs = Get-ChildItem -LiteralPath $root -Directory
-    foreach ($subDir in $subDirs) {
-        # Consider any directory containing an assets directory as a project.
-        if (Test-Path -LiteralPath "$subDir\assets") {
-            Copy-Woditor "$subDir\$Locale\_woditor"
-        }
+    . "$PSScriptRoot\.util.ps1"
+    foreach ($projectName in Get-ProjectNames) {
+        Copy-Woditor "$root\$projectName\$Locale\_woditor"
     }
 }
 else {

@@ -1,7 +1,23 @@
-param([Parameter(Mandatory)][string]$Project, [Parameter(Mandatory)][string]$Locale, [string]$Tag = (Get-Date).ToString("yyyy-MM-dd"))
+param([string]$Project, [string]$Locale, [string]$Tag = (Get-Date).ToString("yyyy-MM-dd"))
 $ErrorActionPreference = "Stop"
 
 $root = Split-Path -Path $PSScriptRoot -Parent
+
+. "$PSScriptRoot\.util.ps1"
+if (-not $Project) {
+    $projects = @(Get-ProjectNames) + "Extras"
+    $Project = Select-Item "Select a project" $projects
+}
+if (-not $Locale) {
+    if ($Project -eq "Extras") {
+        $locales = Get-ChildItem -LiteralPath "$root\Extras\GraphicMaker" -Directory -Name | Where-Object { $_ -ne "original" }
+    }
+    else {
+        $locales = Get-LocaleNames $Project
+    }
+    $Locale = Select-Item "Select a locale" $locales
+}
+
 $outputDir = "$root\releases"
 $outputFile = "$outputDir\${Project}_${Locale}_${Tag}.zip"
 

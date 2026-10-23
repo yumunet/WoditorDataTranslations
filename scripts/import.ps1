@@ -1,4 +1,4 @@
-param([Parameter(Mandatory)][string]$Project, [Parameter(Mandatory)][string]$Locale)
+param([string]$Project, [string]$Locale)
 $ErrorActionPreference = "Stop"
 
 function Join-Texts([string]$Src, [string]$Dest) {
@@ -43,6 +43,15 @@ function Join-Texts([string]$Src, [string]$Dest) {
     }
 }
 
+. "$PSScriptRoot\.util.ps1"
+
+if (-not $Project) { 
+    $Project = Select-Item "Select a project" (Get-ProjectNames) 
+}
+if (-not $Locale) { 
+    $Locale = Select-Item "Select a locale" (Get-LocaleNames $Project) 
+}
+
 $root = Split-Path -Path $PSScriptRoot -Parent
 $baseAssetsDir = "$root\$Project\assets"
 $langDir = "$root\$Project\$Locale"
@@ -66,7 +75,6 @@ Join-Texts $textsDir $woditorTextDir
 
 Start-Process -FilePath "$woditorDir\Editor.exe" -ArgumentList "-txtinput" -Wait
 
-. "$PSScriptRoot\.util.ps1"
 if ($Locale -eq "ja-JP") {
     Copy-Assets $baseAssetsDir $woditorDataDir
 }
