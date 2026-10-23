@@ -74,7 +74,7 @@ function Import-OneDatabase([string]$DBTextsDir) {
     $typeIndex = 0
     foreach ($file in $files) {
         $content = [IO.File]::ReadAllText($file)
-        
+
         $typeName = [Regex]::Match($content, "(?m)^TYPENAME=([^\r\n]+)").Groups[1].Value
         $dataNameTypeRaw = [int][Regex]::Match($content, "(?m)^DATANAME_LOAD_TYPE=(\d+)").Groups[1].Value
         $loadTypeName = [Regex]::Match($content, "(?m)^DATANAME_LOAD_NAME=([^\r\n]*)").Groups[1].Value
@@ -163,7 +163,7 @@ function Get-ActualDBData([hashtable]$DBs, [DBTypes]$DBKey, [int]$TypeIndex) {
 
 function Update-EventCode([string]$FilePath, [hashtable]$NewDBs, [hashtable]$OldDBs) {
     $content = [IO.File]::ReadAllText($FilePath)
-    
+
     $eventCodes = [Regex]::Match($content, "\r\nWoditorEvCOMMAND_START\r\n([\s\S]+)\r\nWoditorEvCOMMAND_END\r\n").Groups[1].Value
     $dbCommandMatches = [Regex]::Matches($eventCodes, "(?m)^(\[(?:250|251|252)]\[\d+,\d+]<\d+>)\((-?\d+),(-?\d+),(-?\d+),(-?\d+)(,-?\d+)*\)\(""(.*?)"",""(.*?)"",""(.*?)"",""(.*?)""\)")
     foreach ($match in $dbCommandMatches) {

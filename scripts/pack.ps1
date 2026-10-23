@@ -18,7 +18,7 @@ if ($Project -eq "Extras") {
             Remove-Item -LiteralPath $Dest
         }
         try {
-            $zip = [System.IO.Compression.ZipFile]::Open($Dest, 'Create')
+            $zip = [System.IO.Compression.ZipFile]::Open($Dest, "Create")
             foreach ($src in $Sources) {
                 if (Test-Path -LiteralPath $src -PathType Container) {
                     Get-ChildItem -LiteralPath $src -Recurse -File | ForEach-Object {
@@ -38,7 +38,7 @@ if ($Project -eq "Extras") {
             $zip.Dispose()
         }
     }
-    
+
     $tempZip1 = "$outputDir\GraphicMaker.zip"
     $tempZip2 = "$outputDir\Version1Assets.zip"
     Compress-ArchiveWithDirectory "$root\$Project\GraphicMaker\$Locale\_output" $tempZip1 "GraphicMaker"
@@ -49,9 +49,9 @@ if ($Project -eq "Extras") {
 else {
     $langDir = "$root\$Project\$Locale"
     $woditorDataDir = "$langDir\_woditor\Data"
-    
+
     & "$PSScriptRoot\import.ps1" $Project $Locale || $(exit 1)
     Get-ChildItem -LiteralPath "$woditorDataDir\BasicData" -Directory -Filter "AutoBackup*" | Remove-Item -Recurse
-    
+
     Compress-Archive -LiteralPath @($woditorDataDir; Get-ChildItem -LiteralPath $langDir -File) -DestinationPath $outputFile -Force
 }

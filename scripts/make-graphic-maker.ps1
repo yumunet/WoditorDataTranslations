@@ -263,7 +263,7 @@ function New-SettingFiles() {
     for ($i = 0; $i -lt 2; $i++) {
         $filename = "setting_header$($i+1).txt"
         $content = Get-Content -LiteralPath "$langDir\$filename" -Raw
-        
+
         # Test the encoding
         $encodedContent = $enc.GetString($enc.GetBytes($content))
         if ($content -ne $encodedContent) {
@@ -328,7 +328,7 @@ function New-SettingFiles() {
                 if ($match.Success) {
                     $key = $match.Groups[1].Value
                     $value = $match.Groups[2].Value
-                    
+
                     $dirTranslation = $pathMap.Where({ $_.RelativePath -eq "$dirRelativePath\$key" })[0].Translation
                     $newKey = Split-Path -Path $dirTranslation -Leaf
 

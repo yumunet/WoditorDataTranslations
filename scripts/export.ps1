@@ -37,10 +37,10 @@ function Split-Texts([string]$Src, [string]$Dest) {
             }
             elseif ($group -eq "MapData") {
                 $parts = $content -split "(?m)^----------`r`n"
-                
+
                 # Map itself
                 [IO.File]::WriteAllText("$basePath\Map.txt", $parts[0])
-                
+
                 # Map Events
                 $sectionsContent = $parts[1]
                 $prefix = "Event_"
@@ -113,7 +113,7 @@ if ($Locale -eq "ja-JP") {
 }
 else {
     # For translations, copy asset files that differ from the original into locale-specific assets.
-    
+
     $baseAssetFiles = Get-ChildItem -LiteralPath $baseAssetsDir -Recurse -File -Exclude "MapTree.dat", "MapTreeOpenStatus.dat", ".gitkeep"
     $currentAssetFiles = Get-ChildItem -LiteralPath $woditorDataDir -Recurse -File -Exclude (@("*.mps", "*.dat", "*.project") + $OtherFiles)
     # To prevent an error, replace null with an empty array when there are no files.

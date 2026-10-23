@@ -13,7 +13,7 @@ function Import-CommonEventNames([string]$TextsDir) {
 
 function Update-EventCode([string]$FilePath, [string[]]$NewNames, [string[]]$OldNames) {
     $content = [IO.File]::ReadAllText($FilePath)
-    
+
     $eventCodes = [Regex]::Match($content, "\r\nWoditorEvCOMMAND_START\r\n([\s\S]+)\r\nWoditorEvCOMMAND_END\r\n").Groups[1].Value
     $commonEventCommandMatches = [Regex]::Matches($eventCodes, "(?m)^(\[300]\[\d+,\d+]<\d+>\(-?\d+(?:,-?\d+)*\))\(""(.*?)""((?:,"".*?"")*)\)")
     foreach ($match in $commonEventCommandMatches) {
