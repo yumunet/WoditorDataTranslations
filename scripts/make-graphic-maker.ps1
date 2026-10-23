@@ -23,30 +23,21 @@ function New-ExeFile() {
         Write-Error "ResourceHacker is not found. Please add it to PATH."
     }
 
-    $logFile = "$PSScriptRoot\temp.log"
-    function Write-LogAndError([string]$message) {
-        Write-Host (Get-Content -LiteralPath $logFile -Raw)
-        Remove-Item -LiteralPath $logFile
-        Write-Error $message
-    }
-
     # Apply resources
     $tempResourceFile = "$outputDir\temp.res"
-    cmd /c "ResourceHacker -open ""$langDir\app.rc"" -save ""$tempResourceFile"" -action compile -log ""$logFile"""
-    if ($LASTEXITCODE -ne 0) { Write-LogAndError "Failed to compile app.rc" }
+    cmd /c "ResourceHacker -open ""$langDir\app.rc"" -save ""$tempResourceFile"" -action compile"
+    if ($LASTEXITCODE -ne 0) { Write-Error "Failed to compile app.rc" }
 
-    cmd /c "ResourceHacker -open ""$originalDir\$exeName"" -save ""$outputDir\$exeName"" -action addoverwrite -resource ""$tempResourceFile"" -log ""$logFile"""
+    cmd /c "ResourceHacker -open ""$originalDir\$exeName"" -save ""$outputDir\$exeName"" -action addoverwrite -resource ""$tempResourceFile"""
     Remove-Item -LiteralPath $tempResourceFile
-    if ($LASTEXITCODE -ne 0) { Write-LogAndError "Failed to write $exeName" }
+    if ($LASTEXITCODE -ne 0) { Write-Error "Failed to write $exeName" }
 
     # If there is a manifest, apply it as well
     $manifestFile = "$langDir\app.manifest"
     if (Test-Path -LiteralPath $manifestFile) {
-        cmd /c "ResourceHacker -open ""$outputDir\$exeName"" -save ""$outputDir\$exeName"" -action addoverwrite -resource ""$manifestFile"" -mask MANIFEST,1, -log ""$logFile"""
-        if ($LASTEXITCODE -ne 0) { Write-LogAndError "Failed to write manifest to $exeName" }
+        cmd /c "ResourceHacker -open ""$outputDir\$exeName"" -save ""$outputDir\$exeName"" -action addoverwrite -resource ""$manifestFile"" -mask MANIFEST,1,"
+        if ($LASTEXITCODE -ne 0) { Write-Error "Failed to write manifest to $exeName" }
     }
-
-    Remove-Item -LiteralPath $logFile
 
     # Edit strings within the binary
     Add-Type -TypeDefinition @"

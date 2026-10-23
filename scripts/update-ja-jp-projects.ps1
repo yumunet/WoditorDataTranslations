@@ -5,14 +5,10 @@ Add-Type -AssemblyName System.IO.Compression.FileSystem
 
 function Export-ZipResource([string]$InputPath, [string]$OutputPath, [int]$ResourceID) {
     $temp = "$OutputPath.zip"
-    $logFile = "$PSScriptRoot\temp.log"
-    cmd /c "ResourceHacker -open ""$InputPath"" -save ""$temp"" -action extract -mask ZIP,$ResourceID -log ""$logFile"""
-    if ($LASTEXITCODE -ne 0) { 
-        Write-Host (Get-Content -LiteralPath $logFile -Raw)
-        Remove-Item -LiteralPath $logFile
+    cmd /c "ResourceHacker -open ""$InputPath"" -save ""$temp"" -action extract -mask ZIP,$ResourceID"
+    if (-not (Test-Path -LiteralPath $temp)) { 
         Write-Error "Failed to extract ZIP resource $ResourceID from $InputPath"
     }
-    Remove-Item -LiteralPath $logFile
 
     if (Test-Path -LiteralPath $OutputPath) { Remove-Item -LiteralPath $OutputPath -Recurse }
     # Japanese filenames use CP932 (Windows Shift_JIS)
@@ -32,8 +28,13 @@ if (-not $?) {
     Write-Error "ResourceHacker is not found. Please add it to PATH."
 }
 
-Export-ZipResource "$NewWoditorPath\Editor.exe" $baseSystemEmptyDataDir 1666
-Export-ZipResource "$NewWoditorPath\Editor.exe" $completelyEmptyDataDir 1667
+$editorPath = "$NewWoditorPath\Editor.exe"
+if (-not (Test-Path -LiteralPath $editorPath)) {
+    Write-Error "Editor.exe not found: $editorPath"
+}
+
+Export-ZipResource $editorPath $baseSystemEmptyDataDir 1666
+Export-ZipResource $editorPath $completelyEmptyDataDir 1667
 
 # Place each Data directory
 $dataDirMap = @{
