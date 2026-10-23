@@ -6,8 +6,11 @@ function Copy-Woditor([string]$Dest) {
         New-Item -Path $Dest -ItemType Directory > $null
     }
     Get-ChildItem -LiteralPath $SourceWoditorDir -File | Where-Object {
-        $_.Name -like "*.exe" -or
-        $_.Name -like "*.dll" -or
+        $_.Name -eq "Config.exe" -or
+        $_.Name -eq "Editor.exe" -or
+        $_.Name -eq "Game.exe" -or
+        $_.Name -eq "GuruGuruSMF4.dll" -or
+        $_.Name -eq "Editor.Lang.dll" -or
         $_.Name -eq "Editor.Lang.SystemString.txt" -or
         $_.Name -eq "Editor.Lang.SystemValue.txt"
     } | Copy-Item -Destination $Dest
