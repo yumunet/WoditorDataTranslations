@@ -5,7 +5,7 @@ Add-Type -AssemblyName System.IO.Compression.FileSystem
 
 function Export-ZipResource([string]$InputPath, [string]$OutputPath, [int]$ResourceID) {
     $temp = "$OutputPath.zip"
-    cmd /c "ResourceHacker -open ""$InputPath"" -save ""$temp"" -action extract -mask ZIP,$ResourceID"
+    cmd /c "ResourceHacker -open ""$InputPath"" -save ""$temp"" -action extract -mask ZIP,$ResourceID,"
     if (-not (Test-Path -LiteralPath $temp)) { 
         Write-Error "Failed to extract ZIP resource $ResourceID from $InputPath"
     }
