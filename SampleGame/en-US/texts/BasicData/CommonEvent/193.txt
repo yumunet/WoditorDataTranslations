@@ -168,15 +168,15 @@ COMMAND_NUM=48
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("　AI行動の敵・味方の、コマンド選択を自動的に行います。")
 [103][0,1]<0>()("　これはコマンド選択前に行われます。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()("Databases Accessed by This Common Event:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()("Other Common Events Called from Here:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("Main Common Events Calling This:")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("敵のAIを実行")
 [250][5,4]<0>(20,69,0,69632,1600020)("","Base System Variables","","")
@@ -219,15 +219,15 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼ 　AI行動の敵・味方の、コマンド選択を自動的に行います。
 ▼ 　これはコマンド選択前に行われます。
 ▼ 
-▼ [Databases Accessed by This Common Event]
+▼ Databases Accessed by This Common Event:
 ▼  
-▼ [Other Common Events Called from Here]
+▼ Other Common Events Called from Here:
 ▼  
-▼ [Main Common Events Calling This]
+▼ Main Common Events Calling This:
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ 敵のAIを実行
 ■Load DB(Var):  CSelf20[繰り返し回数] = VarDB[ "Base System Variables":69:0 ] (18:[Battle] Max Enemy Count (System):Number) 

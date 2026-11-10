@@ -43,14 +43,14 @@ OPTION_VAL_2=0
 COMMAND_NUM=218
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("Determine whether the player is in pixel movement by checking the Self0 variable, and switch the choice string.")
+[103][0,1]<0>()("Determine whether the player is in pixel movement by checking the Self0 variable, and switch the choice string")
 [111][7,0]<0>(2,1100000,0,2,1100000,1,2)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("If Self0 is 0, pixel movement is off, so set the on choice.")
+[103][0,1]<1>()("If Self0 is 0, pixel movement is off, so set the on choice")
 [122][3,1]<1>(3000000,0,0)("I want to try pixel movement!")
 [0][0,0]<1>()()
 [401][1,0]<0>(2)()
-[103][0,1]<1>()("If Self0 is 1, pixel movement is on, so set the off choice.")
+[103][0,1]<1>()("If Self0 is 1, pixel movement is on, so set the off choice")
 [122][3,1]<1>(3000000,0,0)("I want to stop pixel movement")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
@@ -60,9 +60,9 @@ WoditorEvCOMMAND_START
 [401][1,0]<0>(2)()
 [111][7,0]<1>(2,1100000,0,2,1100000,1,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("If Self0 is 0, start pixel movement.")
+[103][0,1]<2>()("If Self0 is 0, start pixel movement")
 [101][0,1]<2>()("Okay! I'll turn on pixel movement mode,<\n>so you'll move by pixels instead of tiles!")
-[103][0,1]<2>()("Get the Common Event ID using a trick that gets it from the Common Event name.")
+[103][0,1]<2>()("Get the common event ID using a trick that gets it from the common event name.")
 [103][0,1]<2>()("(Enter the special code in <dqrt>Execute Special Code<dqrt> under <dqrt>Set String<dqrt>.")
 [103][0,1]<2>()(" See the manual's <dqrt>Set String<dqrt> page for details!)")
 [122][3,1]<2>(3000000,262656,0)("<<GET_COMMONEVENT_ID_FROM_NAME>>■Switch Pixel Movement")
@@ -104,15 +104,15 @@ WoditorEvCOMMAND_START
 [101][0,1]<1>()("But if the font doesn't include ♥ or ✨,<\n>you can't use them, so be careful!")
 [180][1,0]<1>(4)()
 [101][0,1]<1>()("And, in the past, players outside Japan would see<\n>garbled text, and files with Japanese names wouldn't<\n>load. But that's pretty much gone now!")
-[103][0,1]<1>()("[The original text contains two lines about fonts,")
-[103][0,1]<1>()(" but these are irrelevant for English speakers and have been omitted.]")
+[103][0,1]<1>()("(The original text contains two lines about fonts,")
+[103][0,1]<1>()(" but these are irrelevant for English speakers and have been omitted.)")
 [0][0,0]<1>()()
 [401][1,0]<0>(5)()
 [101][0,1]<1>()("Yeah!<\n>You can use the filter effects to change picture colors<\n>and more!")
 [150][11,1]<1>(0,1,0,1,1,1,255,20,20,100,0)("EnemyGraphic/GD_Basilisk(Red).png")
 [101][0,1]<1>()("Just for example, let's try tweaking this monster's<\n>colors! Here goes!")
 [290][7,0]<1>(336,0,1,1,150,0,0)()
-[101][0,1]<1>()("Okay! Just change the hue with the Effect,<\n>and you get color variations of enemies like this.<\n>And...")
+[101][0,1]<1>()("Okay! Just change the hue with the effect,<\n>and you get color variations of enemies like this.<\n>And...")
 [290][7,0]<1>(336,0,1,1,0,-255,0)()
 [101][0,1]<1>()("Set the saturation to 0, and you can easily get<\n>black-and-white ones like this!")
 [150][3,0]<1>(2,1,0)()
@@ -163,7 +163,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<0>(7)()
 [101][0,1]<1>()("Okay!<\n>Oh, just think of a mask as a feature for hiding part<\n>of the area where pictures and such show up!")
 [101][0,1]<1>()("All right, let's go!")
-[103][0,1]<1>()("Display the character and background for now.")
+[103][0,1]<1>()("Display the character and background for now")
 [290][7,1]<1>(67,2,0,0,0,0,0)("")
 [150][11,1]<1>(4096,1,0,1,1,1,255,160,120,100,0)("Fog_BackGround/Background_space2_pipo.jpg")
 [150][11,1]<1>(4096,2,0,6,4,3,255,160,100,1000,0)("CharaChip/Special_Tiga.png")
@@ -171,22 +171,22 @@ WoditorEvCOMMAND_START
 [290][7,1]<1>(19,2,1,2,0,0,0)("")
 [103][0,1]<1>()("Explosion sound")
 [140][7,1]<1>(33554464,0,0,0,60,70,0)("SE/Effect_Bomb1_panop.ogg")
-[103][0,1]<1>()("Gradually expand the visible range of the mask from the center.")
+[103][0,1]<1>()("Gradually expand the visible range of the mask from the center")
 [121][4,0]<1>(1100004,0,0,0)()
 [179][1,0]<1>(30)()
-[103][0,1]<2>()("Mask effect that gradually expands the visible range.")
-[103][0,1]<2>()("First, make the entire screen invisible with a mask every frame.")
+[103][0,1]<2>()("Mask effect that gradually expands the visible range")
+[103][0,1]<2>()("First, make the entire screen invisible with a mask every frame")
 [290][7,1]<2>(67,2,0,0,0,0,0)("")
-[103][0,1]<2>()("Calculate the X position to draw (to the left as time passes).")
+[103][0,1]<2>()("Calculate the X position to draw (to the left as time passes)")
 [121][4,0]<2>(1100005,-2,1100004,8192)()
 [121][4,0]<2>(1100005,160,0,256)()
 [179][1,0]<2>(1100004)()
-[103][0,1]<3>()("Draw a single black mask (visible area) that looks like a diagonal line.")
+[103][0,1]<3>()("Draw a single black mask (visible area) that looks like a diagonal line")
 [290][7,1]<3>(83,2,0,0,1100005,120,1)("SystemFile/Mask_Draw+_Slash200x480.png")
 [121][4,0]<3>(1100005,4,0,256)()
 [0][0,0]<3>()()
 [498][0,0]<2>()()
-[103][0,1]<2>()("Increase the number of lines.")
+[103][0,1]<2>()("Increase the number of lines")
 [121][4,0]<2>(1100004,1,0,256)()
 [180][1,0]<2>(1)()
 [0][0,0]<2>()()
@@ -195,10 +195,10 @@ WoditorEvCOMMAND_START
 [101][0,1]<1>()("This is my ultimate move—TIGER AURA!!")
 [180][1,0]<1>(15)()
 [179][1,0]<1>(30)()
-[103][0,1]<2>()("Next, reduce the width of the visible area.")
-[103][0,1]<2>()("Reset every frame.")
+[103][0,1]<2>()("Next, reduce the width of the visible area")
+[103][0,1]<2>()("Reset every frame")
 [290][7,1]<2>(67,2,0,0,0,0,0)("")
-[103][0,1]<2>()("Calculate the X position to draw (to the left as time passes).")
+[103][0,1]<2>()("Calculate the X position to draw (to the left as time passes)")
 [121][4,0]<2>(1100005,-2,1100004,8192)()
 [121][4,0]<2>(1100005,160,0,256)()
 [179][1,0]<2>(1100004)()
@@ -206,7 +206,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<3>(1100005,4,0,256)()
 [0][0,0]<3>()()
 [498][0,0]<2>()()
-[103][0,1]<2>()("Decrease the number of lines.")
+[103][0,1]<2>()("Decrease the number of lines")
 [121][4,0]<2>(1100004,1,0,512)()
 [180][1,0]<2>(1)()
 [0][0,0]<2>()()
@@ -264,14 +264,14 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ Determine whether the player is in pixel movement by checking the Self0 variable, and switch the choice string.
+▼ Determine whether the player is in pixel movement by checking the Self0 variable, and switch the choice string
 ■Condition (Number):   [1] This Ev Self0 ==  0  /  [2] This Ev Self0 ==  1  
 -◇Condition:  [1]  [ This Ev Self0 == 0   ] Case↓
- |▼ If Self0 is 0, pixel movement is off, so set the on choice.
+ |▼ If Self0 is 0, pixel movement is off, so set the on choice
  |■Set String: S0[[Sample] Temporary String] = "I want to try pixel movement!"
  |■
 -◇Condition:  [2]  [ This Ev Self0 == 1   ] Case↓
- |▼ If Self0 is 1, pixel movement is on, so set the off choice.
+ |▼ If Self0 is 1, pixel movement is on, so set the off choice
  |■Set String: S0[[Sample] Temporary String] = "I want to stop pixel movement"
  |■
 ◇End◇
@@ -281,9 +281,9 @@ WoditorEvCOMMAND_END
 -◇Case: Choice [1] \s[0]                                    ↓
  |■Condition (Number):   [1] This Ev Self0 ==  0  /  [2] This Ev Self0 ==  1  
  |-◇Condition:  [1]  [ This Ev Self0 == 0   ] Case↓
- | |▼ If Self0 is 0, start pixel movement.
+ | |▼ If Self0 is 0, start pixel movement
  | |■Show Message: Okay! I'll turn on pixel movement mode,\nso you'll move by pixels instead of tiles!
- | |▼ Get the Common Event ID using a trick that gets it from the Common Event name.
+ | |▼ Get the common event ID using a trick that gets it from the common event name.
  | |▼ (Enter the special code in "Execute Special Code" under "Set String".
  | |▼  See the manual's "Set String" page for details!)
  | |■Set String: S0[[Sample] Temporary String] =<Execute Special Code> "<<GET_COMMONEVENT_ID_FROM_NAME>>■Switch Pixel Movement"
@@ -325,15 +325,15 @@ WoditorEvCOMMAND_END
  |■Show Message: But if the font doesn't include ♥ or ✨,\nyou can't use them, so be careful!
  |■Wait: 4 Frames
  |■Show Message: And, in the past, players outside Japan would see\ngarbled text, and files with Japanese names wouldn't\nload. But that's pretty much gone now!
- |▼ [The original text contains two lines about fonts,
- |▼  but these are irrelevant for English speakers and have been omitted.]
+ |▼ (The original text contains two lines about fonts,
+ |▼  but these are irrelevant for English speakers and have been omitted.)
  |■
 -◇Case: Choice [4] You can change colors with filter effects?! ↓
  |■Show Message: Yeah!\nYou can use the filter effects to change picture colors\nand more!
  |■Picture Show: 1 [Top-Left] File [EnemyGraphic/GD_Basilisk(Red).png] X:20 Y:20 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  |■Show Message: Just for example, let's try tweaking this monster's\ncolors! Here goes!
  |■Effect Picture: 1 [Filter/Hue Saturation Lightness] H150/S0/L0
- |■Show Message: Okay! Just change the hue with the Effect,\nand you get color variations of enemies like this.\nAnd...
+ |■Show Message: Okay! Just change the hue with the effect,\nand you get color variations of enemies like this.\nAnd...
  |■Effect Picture: 1 [Filter/Hue Saturation Lightness] H0/S-255/L0
  |■Show Message: Set the saturation to 0, and you can easily get\nblack-and-white ones like this!
  |■Picture Erase: 1  / 0(0) Frames
@@ -384,7 +384,7 @@ WoditorEvCOMMAND_END
 -◇Case: Choice [6] I want to see a cut-in using a mask!     ↓
  |■Show Message: Okay!\nOh, just think of a mask as a feature for hiding part\nof the area where pictures and such show up!
  |■Show Message: All right, let's go!
- |▼ Display the character and background for now.
+ |▼ Display the character and background for now
  |■Mask: [Fill Mask to Hide Entire]
  |■Picture Show: 1 [Center] File [Fog_BackGround/Background_space2_pipo.jpg] X:160 Y:120 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  |■Picture Show: 2 [Center] File [CharaChip/Special_Tiga.png] X:160 Y:100 / 0(0) Frames  / Pattern 3 / Opacity 255 / Normal  / Angle 0 / Scale 1000% / Color R[100] G[100] B[100]
@@ -392,22 +392,22 @@ WoditorEvCOMMAND_END
  |■Mask: [Enable Picture Mask] => ID 1 to 2 
  |▼ Explosion sound
  |■Sound: SE File [SE/Effect_Bomb1_panop.ogg] Vol 60% Pitch 70% (0 Channel) Play / Delay: 0 Frames
- |▼ Gradually expand the visible range of the mask from the center.
+ |▼ Gradually expand the visible range of the mask from the center
  |■Set Variable: This Ev Self4 = 0 + 0 
  |■Repeat Loop [ 30 ] Times
- | |▼ Mask effect that gradually expands the visible range.
- | |▼ First, make the entire screen invisible with a mask every frame.
+ | |▼ Mask effect that gradually expands the visible range
+ | |▼ First, make the entire screen invisible with a mask every frame
  | |■Mask: [Fill Mask to Hide Entire]
- | |▼ Calculate the X position to draw (to the left as time passes).
+ | |▼ Calculate the X position to draw (to the left as time passes)
  | |■Set Variable: This Ev Self5 = -2 * This Ev Self4 
  | |■Set Variable: This Ev Self5 += 160 + 0 
  | |■Repeat Loop [ This Ev Self4 ] Times
- | | |▼ Draw a single black mask (visible area) that looks like a diagonal line.
+ | | |▼ Draw a single black mask (visible area) that looks like a diagonal line
  | | |■Mask: [Add Visible Area (Black) to Mask] =>[SystemFile/Mask_Draw+_Slash200x480.png] X:This Ev Self5 Y:120 (Center)
  | | |■Set Variable: This Ev Self5 += 4 + 0 
  | | |■
  | |◇Loop End Point◇◇
- | |▼ Increase the number of lines.
+ | |▼ Increase the number of lines
  | |■Set Variable: This Ev Self4 += 1 + 0 
  | |■Wait: 1 Frames
  | |■
@@ -416,10 +416,10 @@ WoditorEvCOMMAND_END
  |■Show Message: This is my ultimate move—TIGER AURA!!
  |■Wait: 15 Frames
  |■Repeat Loop [ 30 ] Times
- | |▼ Next, reduce the width of the visible area.
- | |▼ Reset every frame.
+ | |▼ Next, reduce the width of the visible area
+ | |▼ Reset every frame
  | |■Mask: [Fill Mask to Hide Entire]
- | |▼ Calculate the X position to draw (to the left as time passes).
+ | |▼ Calculate the X position to draw (to the left as time passes)
  | |■Set Variable: This Ev Self5 = -2 * This Ev Self4 
  | |■Set Variable: This Ev Self5 += 160 + 0 
  | |■Repeat Loop [ This Ev Self4 ] Times
@@ -427,7 +427,7 @@ WoditorEvCOMMAND_END
  | | |■Set Variable: This Ev Self5 += 4 + 0 
  | | |■
  | |◇Loop End Point◇◇
- | |▼ Decrease the number of lines.
+ | |▼ Decrease the number of lines
  | |■Set Variable: This Ev Self4 -= 1 + 0 
  | |■Wait: 1 Frames
  | |■

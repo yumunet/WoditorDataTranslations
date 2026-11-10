@@ -164,7 +164,7 @@ COMMAND_NUM=66
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("　各キャラクター欄の基本位置を、可変DB「基本システム用変数」に代入します。")
 [103][0,1]<0>()("　取得できる座標は中央座標（ポップアップ表示位置）ですのでご注意ください。")
 [103][0,1]<0>()("")
@@ -177,11 +177,11 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("")
 [103][0,1]<0>()("")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()("Databases Accessed by This Common Event:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()("Other Common Events Called from Here:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("Main Common Events Calling This:")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<0>()(" 　パラメータ設定")
@@ -233,7 +233,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼ 　各キャラクター欄の基本位置を、可変DB「基本システム用変数」に代入します。
 ▼ 　取得できる座標は中央座標（ポップアップ表示位置）ですのでご注意ください。
 ▼ 
@@ -246,11 +246,11 @@ WoditorEvCOMMAND_END
 ▼ 
 ▼ 
 ▼  
-▼ [Databases Accessed by This Common Event]
+▼ Databases Accessed by This Common Event:
 ▼  
-▼ [Other Common Events Called from Here]
+▼ Other Common Events Called from Here:
 ▼  
-▼ [Main Common Events Calling This]
+▼ Main Common Events Calling This:
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼  　パラメータ設定

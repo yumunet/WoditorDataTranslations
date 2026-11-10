@@ -70,7 +70,7 @@ CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=
-CSELF_NAME_10=Temp Variable A
+CSELF_NAME_10=Temp A
 CSELF_NAME_11=
 CSELF_NAME_12=
 CSELF_NAME_13=
@@ -183,8 +183,8 @@ WoditorEvCOMMAND_END
 ■Repeat Loop [ CSelf22[Current Party Size] ] Times
  |■Set Variable: CSelf21[Target Party Member] += 1 + 0 
  |▼ Get the character ID from the Party database
- |■Set Variable: CSelf10[Temp Variable A] = CSelf21[Target Party Member] + 1 
- |■Load DB(Var):  CSelf20[Target Ally ID] = VarDB[ "Party":0:CSelf10[Temp Variable A] ] (6:Main Settings:-) 
+ |■Set Variable: CSelf10[Temp A] = CSelf21[Target Party Member] + 1 
+ |■Load DB(Var):  CSelf20[Target Ally ID] = VarDB[ "Party":0:CSelf10[Temp A] ] (6:Main Settings:-) 
  |■
 ◇Loop End Point◇◇
 ■

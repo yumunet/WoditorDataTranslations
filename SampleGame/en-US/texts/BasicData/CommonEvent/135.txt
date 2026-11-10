@@ -188,14 +188,14 @@ COMMAND_NUM=79
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("　戦闘システム内で主人公のパラメータを増減させるときは、必ずこのコモンイベントを使用します。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()("Databases Accessed by This Common Event:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()("Other Common Events Called from Here:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("Main Common Events Calling This:")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [121][4,0]<0>(1600099,0,0,0)()
 [111][7,0]<0>(2,1600001,22,2,1600001,23,2)()
@@ -270,14 +270,14 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼ 　戦闘システム内で主人公のパラメータを増減させるときは、必ずこのコモンイベントを使用します。
 ▼ 
-▼ [Databases Accessed by This Common Event]
+▼ Databases Accessed by This Common Event:
 ▼  
-▼ [Other Common Events Called from Here]
+▼ Other Common Events Called from Here:
 ▼  
-▼ [Main Common Events Calling This]
+▼ Main Common Events Calling This:
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Set Variable: CSelf99[戦闘不能？] = 0 + 0 
 ■Condition (Number):   [1] CSelf1[対象パラメータ] ==  22  /  [2] CSelf1[対象パラメータ] ==  23  

@@ -164,15 +164,15 @@ COMMAND_NUM=46
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("　戦闘時に使用される可変DBの「戦闘DB」から、移動時に使用する「主人公DB」へ")
 [103][0,1]<0>()("　パラメータをコピーします。戦闘によるHP・SP・状態の変化を移動時のパラメータ反映するためです。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()("Databases Accessed by This Common Event:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()("Other Common Events Called from Here:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("Main Common Events Calling This:")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<0>()("　　　　データ読み込み")
@@ -213,15 +213,15 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼ 　戦闘時に使用される可変DBの「戦闘DB」から、移動時に使用する「主人公DB」へ
 ▼ 　パラメータをコピーします。戦闘によるHP・SP・状態の変化を移動時のパラメータ反映するためです。
 ▼ 
-▼ [Databases Accessed by This Common Event]
+▼ Databases Accessed by This Common Event:
 ▼  
-▼ [Other Common Events Called from Here]
+▼ Other Common Events Called from Here:
 ▼  
-▼ [Main Common Events Calling This]
+▼ Main Common Events Calling This:
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ 　　　　データ読み込み

@@ -104,10 +104,10 @@ CSELF_NAME_6=
 CSELF_NAME_7=Temp String
 CSELF_NAME_8=Parameter Name
 CSELF_NAME_9=Message Text
-CSELF_NAME_10=Temp Variable A
-CSELF_NAME_11=Temp Variable B
-CSELF_NAME_12=Temp Variable C
-CSELF_NAME_13=Temp Variable D
+CSELF_NAME_10=Temp A
+CSELF_NAME_11=Temp B
+CSELF_NAME_12=Temp C
+CSELF_NAME_13=Temp D
 CSELF_NAME_14=
 CSELF_NAME_15=
 CSELF_NAME_16=
@@ -198,7 +198,7 @@ COMMAND_NUM=699
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("  This common event is always used to increase or decrease the ally's parameter values in the Base System.")
 [103][0,1]<0>()("  It only works on the map, but may also be called after battle. In that case, the result is displayed as a battle message.")
 [103][0,1]<0>()("")
@@ -208,7 +208,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<1>()("If not <dqrt>Recalculate<dqrt>")
 [111][4,0]<1>(1,1600002,0,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("If amount is 0, do nothing.")
+[103][0,1]<2>()("If amount is 0, do nothing")
 [172][0,0]<2>()()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
@@ -224,24 +224,24 @@ WoditorEvCOMMAND_START
 [250][5,4]<1>(0,1600000,5,327696,1600002)("","Allies","","HP")
 [250][5,4]<1>(0,1600000,5,327792,1600010)("","Allies","","HP")
 [250][5,4]<1>(0,1600000,5,327776,0)("","Allies","","HP")
-[103][0,1]<1>()("Ver.2.02  Damage taken on the map can now cause the Fainted state.")
+[103][0,1]<1>()("v2.02: Damage taken on the map can now cause the Fainted state")
 [250][5,4]<1>(17,0,21,332288,1600043)("","System Settings","","Fainted Members After Battle")
 [250][5,4]<1>(0,1600000,5,331776,1600011)("","Allies","","HP")
 [111][4,0]<1>(1,1600011,0,3)()
 [401][1,0]<1>(1)()
 [111][7,0]<2>(2,1600043,0,2,1600043,1,2)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("Set as fainted.")
+[103][0,1]<3>()("Set as fainted")
 [250][5,4]<3>(5,1600000,0,65536,-1)("","┗ State List","","")
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
-[103][0,1]<3>()("Set HP to 1.")
+[103][0,1]<3>()("Set HP to 1")
 [250][5,4]<3>(0,1600000,5,327776,1)("","Allies","","HP")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
-[103][0,1]<1>()("If fainted, unconditionally set HP to 0.")
+[103][0,1]<1>()("If fainted, unconditionally set HP to 0")
 [250][5,4]<1>(5,1600000,0,69632,1600010)("","┗ State List","","")
 [111][4,0]<1>(1,1600010,0,5)()
 [401][1,0]<1>(1)()
@@ -263,8 +263,8 @@ WoditorEvCOMMAND_START
 [101][0,1]<2>()("@1<\n>\>\cself[9]")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
-[103][0,1]<1>()("Check for party wipe.")
-[103][0,1]<1>()("Ver.3.22  The party wipe check is no longer executed for recovery (when CSelf2 is 0 or greater).")
+[103][0,1]<1>()("Check for party wipe")
+[103][0,1]<1>()("v3.22: The party wipe check is no longer executed for recovery (when CSelf2 is 0 or greater)")
 [111][4,0]<1>(1,1600002,0,1)()
 [401][1,0]<1>(1)()
 [172][0,0]<2>()()
@@ -277,15 +277,15 @@ WoditorEvCOMMAND_START
 [121][4,0]<3>(1600010,-1,0,0)()
 [179][1,0]<3>(1600019)()
 [121][4,0]<4>(1600010,1,0,256)()
-[103][0,1]<4>()("Store character ID in CSelf11.")
+[103][0,1]<4>()("Store character ID in CSelf11")
 [300][4,1]<4>(0,16777217,1600010,1600011)("X[Map]Get Ally ID")
 [111][4,0]<4>(1,1600011,0,1)()
 [401][1,0]<4>(1)()
-[103][0,1]<5>()("Check if fainted.")
+[103][0,1]<5>()("Check if fainted")
 [250][5,4]<5>(5,1600011,0,69632,1600012)("","┗ State List","","")
 [111][4,0]<5>(1,1600012,0,2)()
 [401][1,0]<5>(1)()
-[103][0,1]<6>()("If anyone isn't fainted, it's not a party wipe, so quit processing.")
+[103][0,1]<6>()("If anyone isn't fainted, it's not a party wipe, so quit processing")
 [172][0,0]<6>()()
 [0][0,0]<6>()()
 [499][0,0]<5>()()
@@ -293,7 +293,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<4>()()
 [0][0,0]<4>()()
 [498][0,0]<3>()()
-[103][0,1]<3>()("At this point, everyone is fainted, so call game over.")
+[103][0,1]<3>()("At this point, everyone is fainted, so call game over")
 [250][5,4]<3>(17,0,30,332288,1600010)("","System Settings","","[Battle] Event on Game Over")
 [111][4,0]<3>(1,1600010,0,1)()
 [401][1,0]<3>(1)()
@@ -337,7 +337,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<1>()("On level up, parameter values and required EXP increase.")
 [103][0,1]<1>()("If EXP remains, level up consecutively without exceeding the maximum level.")
 [103][0,1]<1>()(" ")
-[103][0,1]<1>()("Temporarily back up variables (because this common event is called via level-up process).")
+[103][0,1]<1>()("Temporarily back up variables (because this common event is called via level-up process)")
 [121][4,0]<1>(1600030,1600000,0,0)()
 [121][4,0]<1>(1600031,1600001,0,0)()
 [121][4,0]<1>(1600032,1600002,0,0)()
@@ -347,7 +347,7 @@ WoditorEvCOMMAND_START
 [300][6,1]<2>(0,16777219,1600000,1600002,1,1600020)("X[Map]Level Up/Down")
 [0][0,0]<2>()()
 [498][0,0]<1>()()
-[103][0,1]<1>()("Restore backed-up variables.")
+[103][0,1]<1>()("Restore backed-up variables")
 [121][4,0]<1>(1600000,1600030,0,0)()
 [121][4,0]<1>(1600001,1600031,0,0)()
 [121][4,0]<1>(1600002,1600032,0,0)()
@@ -356,7 +356,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<1>(1)()
 [111][4,0]<2>(1,1600003,1,2)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("On-map message.")
+[103][0,1]<3>()("On-map message")
 [212][0,1]<3>()("Level Up Message")
 [122][2,1]<3>(1600009,0)("")
 [250][5,4]<3>(0,1600000,0,331776,1600008)("","Allies","","Character Name")
@@ -546,10 +546,10 @@ WoditorEvCOMMAND_START
 [101][0,1]<4>()("@1<\n>\>\cself[9]")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
-[103][0,1]<3>()("Reset.")
+[103][0,1]<3>()("Reset")
 [300][5,1]<3>(0,3,1600000,0,0)("X[Map]Level Up/Down")
 [103][0,1]<3>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<3>()("End of level-up message display.")
+[103][0,1]<3>()("End of level-up message display")
 [103][0,1]<3>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
@@ -558,16 +558,16 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [401][1,0]<0>(2)()
 [103][0,1]<1>()("EXP")
-[103][0,1]<1>()("If necessary, call level-up process.")
+[103][0,1]<1>()("If necessary, call level-up process")
 [179][1,0]<1>(1)()
 [250][5,4]<2>(0,1600000,57,327696,1600002)("","Allies","","Current Level EXP")
 [250][5,4]<2>(0,1600000,57,327776,0)("","Allies","","Current Level EXP")
 [250][5,4]<2>(0,1600000,57,331776,1600010)("","Allies","","Current Level EXP")
 [250][5,4]<2>(0,1600000,58,331776,1600011)("","Allies","","Current Level Required EXP")
-[103][0,1]<2>()("If the required EXP is 0, it will cause an infinite loop, so set it to at least 1.")
+[103][0,1]<2>()("If the required EXP is 0, it will cause an infinite loop, so set it to at least 1")
 [121][4,0]<2>(1600011,1,0,1536)()
 [103][0,1]<2>()(" ")
-[103][0,1]<2>()("Temporarily back up variables (because this common event is called via level-up process).")
+[103][0,1]<2>()("Temporarily back up variables (because this common event is called via level-up process)")
 [121][4,0]<2>(1600030,1600000,0,0)()
 [121][4,0]<2>(1600031,1600001,0,0)()
 [121][4,0]<2>(1600032,1600002,0,0)()
@@ -584,11 +584,11 @@ WoditorEvCOMMAND_START
 [121][4,0]<4>(1600020,1600012,0,256)()
 [111][4,0]<4>(1,1600012,0,2)()
 [401][1,0]<4>(1)()
-[103][0,1]<5>()("If the level didn't change, end.")
+[103][0,1]<5>()("If the level didn't change, end")
 [171][0,0]<5>()()
 [0][0,0]<5>()()
 [499][0,0]<4>()()
-[103][0,1]<4>()("Leveling up many times at once causes a 500,000-command error, so wait 1 frame every 100 levels.")
+[103][0,1]<4>()("Leveling up many times at once causes a 500,000-command error, so wait 1 frame every 100 levels")
 [121][4,0]<4>(1600013,1,0,256)()
 [121][4,0]<4>(1600013,100,0,1280)()
 [111][4,0]<4>(1,1600013,0,2)()
@@ -605,14 +605,14 @@ WoditorEvCOMMAND_START
 [498][0,0]<2>()()
 [0][0,0]<2>()()
 [498][0,0]<1>()()
-[103][0,1]<1>()("Restore backed-up variables.")
+[103][0,1]<1>()("Restore backed-up variables")
 [121][4,0]<1>(1600000,1600030,0,0)()
 [121][4,0]<1>(1600001,1600031,0,0)()
 [121][4,0]<1>(1600002,1600032,0,0)()
 [121][4,0]<1>(1600003,1600033,0,0)()
 [111][4,0]<1>(1,1600003,1,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("On-map message.")
+[103][0,1]<2>()("On-map message")
 [250][5,4]<2>(0,1600000,0,331776,1600008)("","Allies","","Character Name")
 [250][5,4]<2>(14,0,17,332288,1600007)("","Terms","","[Stats] Experience")
 [111][7,0]<2>(2,1600002,1,1,1600002,-1,3)()
@@ -900,7 +900,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼   This common event is always used to increase or decrease the ally's parameter values in the Base System.
 ▼   It only works on the map, but may also be called after battle. In that case, the result is displayed as a battle message.
 ▼ 
@@ -910,7 +910,7 @@ WoditorEvCOMMAND_END
  |▼ If not "Recalculate"
  |■Condition (Number):   [1] CSelf2[Amount] ==  0  
  |-◇Condition:  [1]  [ CSelf2[Amount] == 0   ] Case↓
- | |▼ If amount is 0, do nothing.
+ | |▼ If amount is 0, do nothing
  | |■Exit Event
  | |■
  |◇End◇
@@ -922,31 +922,31 @@ WoditorEvCOMMAND_END
 ■Condition (Number):   [1] CSelf1[Target Parameter] ==  22  /  [2] CSelf1[Target Parameter] ==  23  
 -◇Condition:  [1]  [ CSelf1[Target Parameter] == 22   ] Case↓
  |▼ HP
- |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Temp] Post-Calc Max HP" ] (17:-:0) 
+ |■Load DB(Var):  CSelf10[Temp A] = VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Temp] Post-Calc Max HP" ] (17:-:0) 
  |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"HP" ] (0:-:6) +=  CSelf2[Amount]
- |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"HP" ] (0:-:6) Upper Bound  CSelf10[Temp Variable A]
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"HP" ] (0:-:6) Upper Bound  CSelf10[Temp A]
  |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"HP" ] (0:-:6) Lower Bound  0
- |▼ Ver.2.02  Damage taken on the map can now cause the Fainted state.
+ |▼ v2.02: Damage taken on the map can now cause the Fainted state
  |■Load DB(User):  CSelf43[Behavior When Fainted] = UserDB[ "System Settings":0:"Fainted Members After Battle" ] (17:Basic System Settings:21) 
- |■Load DB(Var):  CSelf11[Temp Variable B] = VarDB[ "Allies":CSelf0[Ally ID]:"HP" ] (0:-:6) 
- |■Condition (Number):   [1] CSelf11[Temp Variable B] <=  0  
- |-◇Condition:  [1]  [ CSelf11[Temp Variable B] <= 0   ] Case↓
+ |■Load DB(Var):  CSelf11[Temp B] = VarDB[ "Allies":CSelf0[Ally ID]:"HP" ] (0:-:6) 
+ |■Condition (Number):   [1] CSelf11[Temp B] <=  0  
+ |-◇Condition:  [1]  [ CSelf11[Temp B] <= 0   ] Case↓
  | |■Condition (Number):   [1] CSelf43[Behavior When Fainted] ==  0  /  [2] CSelf43[Behavior When Fainted] ==  1  
  | |-◇Condition:  [1]  [ CSelf43[Behavior When Fainted] == 0   ] Case↓
- | | |▼ Set as fainted.
+ | | |▼ Set as fainted
  | | |■Write to DB(Var): VarDB[ "┗ State List":CSelf0[Ally ID]:0 ] (5:-:\udb[8:0] Steps Left) =  -1
  | | |■
  | |-◇Condition:  [2]  [ CSelf43[Behavior When Fainted] == 1   ] Case↓
- | | |▼ Set HP to 1.
+ | | |▼ Set HP to 1
  | | |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"HP" ] (0:-:6) Lower Bound  1
  | | |■
  | |◇End◇
  | |■
  |◇End◇
- |▼ If fainted, unconditionally set HP to 0.
- |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "┗ State List":CSelf0[Ally ID]:0 ] (5:-:\udb[8:0] Steps Left) 
- |■Condition (Number):   [1] CSelf10[Temp Variable A] !=  0  
- |-◇Condition:  [1]  [ CSelf10[Temp Variable A] != 0   ] Case↓
+ |▼ If fainted, unconditionally set HP to 0
+ |■Load DB(Var):  CSelf10[Temp A] = VarDB[ "┗ State List":CSelf0[Ally ID]:0 ] (5:-:\udb[8:0] Steps Left) 
+ |■Condition (Number):   [1] CSelf10[Temp A] !=  0  
+ |-◇Condition:  [1]  [ CSelf10[Temp A] != 0   ] Case↓
  | |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"HP" ] (0:-:6) =  0
  | |■
  |◇End◇
@@ -965,8 +965,8 @@ WoditorEvCOMMAND_END
  | |■Show Message: @1\n\>\cself[9]
  | |■
  |◇End◇
- |▼ Check for party wipe.
- |▼ Ver.3.22  The party wipe check is no longer executed for recovery (when CSelf2 is 0 or greater).
+ |▼ Check for party wipe
+ |▼ v3.22: The party wipe check is no longer executed for recovery (when CSelf2 is 0 or greater)
  |■Condition (Number):   [1] CSelf2[Amount] >=  0  
  |-◇Condition:  [1]  [ CSelf2[Amount] >= 0   ] Case↓
  | |■Exit Event
@@ -976,18 +976,18 @@ WoditorEvCOMMAND_END
  | |■Load DB(Var):  CSelf19[Party Size] = VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) 
  | |■Condition (Number):   [1] CSelf19[Party Size] >=  1  
  | |-◇Condition:  [1]  [ CSelf19[Party Size] >= 1   ] Case↓
- | | |■Set Variable: CSelf10[Temp Variable A] = -1 + 0 
+ | | |■Set Variable: CSelf10[Temp A] = -1 + 0 
  | | |■Repeat Loop [ CSelf19[Party Size] ] Times
- | | | |■Set Variable: CSelf10[Temp Variable A] += 1 + 0 
- | | | |▼ Store character ID in CSelf11.
- | | | |■Call Event [Name]: CSelf11[Temp Variable B] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf10[Temp Variable A]
- | | | |■Condition (Number):   [1] CSelf11[Temp Variable B] >=  0  
- | | | |-◇Condition:  [1]  [ CSelf11[Temp Variable B] >= 0   ] Case↓
- | | | | |▼ Check if fainted.
- | | | | |■Load DB(Var):  CSelf12[Temp Variable C] = VarDB[ "┗ State List":CSelf11[Temp Variable B]:0 ] (5:-:\udb[8:0] Steps Left) 
- | | | | |■Condition (Number):   [1] CSelf12[Temp Variable C] ==  0  
- | | | | |-◇Condition:  [1]  [ CSelf12[Temp Variable C] == 0   ] Case↓
- | | | | | |▼ If anyone isn't fainted, it's not a party wipe, so quit processing.
+ | | | |■Set Variable: CSelf10[Temp A] += 1 + 0 
+ | | | |▼ Store character ID in CSelf11
+ | | | |■Call Event [Name]: CSelf11[Temp B] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf10[Temp A]
+ | | | |■Condition (Number):   [1] CSelf11[Temp B] >=  0  
+ | | | |-◇Condition:  [1]  [ CSelf11[Temp B] >= 0   ] Case↓
+ | | | | |▼ Check if fainted
+ | | | | |■Load DB(Var):  CSelf12[Temp C] = VarDB[ "┗ State List":CSelf11[Temp B]:0 ] (5:-:\udb[8:0] Steps Left) 
+ | | | | |■Condition (Number):   [1] CSelf12[Temp C] ==  0  
+ | | | | |-◇Condition:  [1]  [ CSelf12[Temp C] == 0   ] Case↓
+ | | | | | |▼ If anyone isn't fainted, it's not a party wipe, so quit processing
  | | | | | |■Exit Event
  | | | | | |■
  | | | | |◇End◇
@@ -995,12 +995,12 @@ WoditorEvCOMMAND_END
  | | | |◇End◇
  | | | |■
  | | |◇Loop End Point◇◇
- | | |▼ At this point, everyone is fainted, so call game over.
- | | |■Load DB(User):  CSelf10[Temp Variable A] = UserDB[ "System Settings":0:"[Battle] Event on Game Over" ] (17:Basic System Settings:30) 
- | | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  0  
- | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= 0   ] Case↓
- | | | |■Set Variable: CSelf10[Temp Variable A] += 500000 + 0 
- | | | |■Call Event: Variable [CSelf10[Temp Variable A]]'s Ev Page[1]
+ | | |▼ At this point, everyone is fainted, so call game over
+ | | |■Load DB(User):  CSelf10[Temp A] = UserDB[ "System Settings":0:"[Battle] Event on Game Over" ] (17:Basic System Settings:30) 
+ | | |■Condition (Number):   [1] CSelf10[Temp A] >=  0  
+ | | |-◇Condition:  [1]  [ CSelf10[Temp A] >= 0   ] Case↓
+ | | | |■Set Variable: CSelf10[Temp A] += 500000 + 0 
+ | | | |■Call Event: Variable [CSelf10[Temp A]]'s Ev Page[1]
  | | | |■
  | | |◇End◇
  | | |■
@@ -1011,9 +1011,9 @@ WoditorEvCOMMAND_END
  |■
 -◇Condition:  [2]  [ CSelf1[Target Parameter] == 23   ] Case↓
  |▼ SP
- |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Temp] Post-Calc Max SP" ] (17:-:1) 
+ |■Load DB(Var):  CSelf10[Temp A] = VarDB[ "×Allies Temp Data":CSelf0[Ally ID]:"[Temp] Post-Calc Max SP" ] (17:-:1) 
  |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"SP" ] (0:-:8) +=  CSelf2[Amount]
- |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"SP" ] (0:-:8) Upper Bound  CSelf10[Temp Variable A]
+ |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"SP" ] (0:-:8) Upper Bound  CSelf10[Temp A]
  |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"SP" ] (0:-:8) Lower Bound  0
  |■Condition (Number):   [1] CSelf3[Show Message?] ==  1  
  |-◇Condition:  [1]  [ CSelf3[Show Message?] == 1   ] Case↓
@@ -1039,7 +1039,7 @@ WoditorEvCOMMAND_END
  |▼ On level up, parameter values and required EXP increase.
  |▼ If EXP remains, level up consecutively without exceeding the maximum level.
  |▼  
- |▼ Temporarily back up variables (because this common event is called via level-up process).
+ |▼ Temporarily back up variables (because this common event is called via level-up process)
  |■Set Variable: CSelf30[Argument Temp Backup 1] = CSelf0[Ally ID] + 0 
  |■Set Variable: CSelf31[Argument Temp Backup 2] = CSelf1[Target Parameter] + 0 
  |■Set Variable: CSelf32[Argument Temp Backup 3] = CSelf2[Amount] + 0 
@@ -1049,7 +1049,7 @@ WoditorEvCOMMAND_END
  | |■Call Event [Name]: CSelf20[Level Change] = ["X[Map]Level Up/Down"] <CommonEv 74>  / CSelf0[Ally ID] / CSelf2[Amount] / 1:LvUp+Keep Changes
  | |■
  |◇Loop End Point◇◇
- |▼ Restore backed-up variables.
+ |▼ Restore backed-up variables
  |■Set Variable: CSelf0[Ally ID] = CSelf30[Argument Temp Backup 1] + 0 
  |■Set Variable: CSelf1[Target Parameter] = CSelf31[Argument Temp Backup 2] + 0 
  |■Set Variable: CSelf2[Amount] = CSelf32[Argument Temp Backup 3] + 0 
@@ -1058,14 +1058,14 @@ WoditorEvCOMMAND_END
  |-◇Condition:  [1]  [ CSelf20[Level Change] != 0   ] Case↓
  | |■Condition (Number):   [1] CSelf3[Show Message?] ==  1  
  | |-◇Condition:  [1]  [ CSelf3[Show Message?] == 1   ] Case↓
- | | |▼ On-map message.
+ | | |▼ On-map message
  | | |●Label Point [Level Up Message] <<<<<<<<<<<<<<<<★
  | | |■Set String: CSelf9[Message Text] = ""
  | | |■Load DB(Var):  CSelf8[Parameter Name] = VarDB[ "Allies":CSelf0[Ally ID]:"Character Name" ] (0:-:0) 
  | | |■Set String: CSelf9[Message Text] += "\cself[8]'s"
  | | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] Level" ] (15:Basic Terms:5) 
  | | |■Set String: CSelf9[Message Text] += " \cself[8]"
- | | |■Set Variable: CSelf11[Temp Variable B] Absolute= CSelf20[Level Change] + 0 
+ | | |■Set Variable: CSelf11[Temp B] Absolute= CSelf20[Level Change] + 0 
  | | |■Condition (Number):   [1] CSelf20[Level Change] >=  1  /  [2] CSelf20[Level Change] <=  -1  
  | | |-◇Condition:  [1]  [ CSelf20[Level Change] >= 1   ] Case↓
  | | | |■Set String: CSelf9[Message Text] += " went up by \cself[11]!"
@@ -1077,12 +1077,12 @@ WoditorEvCOMMAND_END
  | | |■Set String: CSelf9[Message Text] += "\n  "
  | | |▼  
  | | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] HP Name" ] (15:Basic Terms:7) 
- | | |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "Base System Variables":80:0 ] (18:[LvUp] Max HP Increase:Number) 
- | | |■Condition (Number):   [1] CSelf10[Temp Variable A] !=  0  
- | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] != 0   ] Case↓
+ | | |■Load DB(Var):  CSelf10[Temp A] = VarDB[ "Base System Variables":80:0 ] (18:[LvUp] Max HP Increase:Number) 
+ | | |■Condition (Number):   [1] CSelf10[Temp A] !=  0  
+ | | |-◇Condition:  [1]  [ CSelf10[Temp A] != 0   ] Case↓
  | | | |■Set String: CSelf7[Temp String] = ""
- | | | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  1  
- | | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= 1   ] Case↓
+ | | | |■Condition (Number):   [1] CSelf10[Temp A] >=  1  
+ | | | |-◇Condition:  [1]  [ CSelf10[Temp A] >= 1   ] Case↓
  | | | | |■Set String: CSelf7[Temp String] = "+"
  | | | | |■
  | | | |◇End◇
@@ -1090,12 +1090,12 @@ WoditorEvCOMMAND_END
  | | | |■
  | | |◇End◇
  | | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] SP Name" ] (15:Basic Terms:8) 
- | | |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "Base System Variables":81:0 ] (18:[LvUp] Max SP Increase:Number) 
- | | |■Condition (Number):   [1] CSelf10[Temp Variable A] !=  0  
- | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] != 0   ] Case↓
+ | | |■Load DB(Var):  CSelf10[Temp A] = VarDB[ "Base System Variables":81:0 ] (18:[LvUp] Max SP Increase:Number) 
+ | | |■Condition (Number):   [1] CSelf10[Temp A] !=  0  
+ | | |-◇Condition:  [1]  [ CSelf10[Temp A] != 0   ] Case↓
  | | | |■Set String: CSelf7[Temp String] = ""
- | | | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  1  
- | | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= 1   ] Case↓
+ | | | |■Condition (Number):   [1] CSelf10[Temp A] >=  1  
+ | | | |-◇Condition:  [1]  [ CSelf10[Temp A] >= 1   ] Case↓
  | | | | |■Set String: CSelf7[Temp String] = "+"
  | | | | |■
  | | | |◇End◇
@@ -1106,12 +1106,12 @@ WoditorEvCOMMAND_END
  | | |■Set String: CSelf9[Message Text] += "\n  "
  | | |▼  
  | | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] Attack" ] (15:Basic Terms:9) 
- | | |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "Base System Variables":82:0 ] (18:[LvUp] Attack Increase:Number) 
- | | |■Condition (Number):   [1] CSelf10[Temp Variable A] !=  0  
- | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] != 0   ] Case↓
+ | | |■Load DB(Var):  CSelf10[Temp A] = VarDB[ "Base System Variables":82:0 ] (18:[LvUp] Attack Increase:Number) 
+ | | |■Condition (Number):   [1] CSelf10[Temp A] !=  0  
+ | | |-◇Condition:  [1]  [ CSelf10[Temp A] != 0   ] Case↓
  | | | |■Set String: CSelf7[Temp String] = ""
- | | | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  1  
- | | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= 1   ] Case↓
+ | | | |■Condition (Number):   [1] CSelf10[Temp A] >=  1  
+ | | | |-◇Condition:  [1]  [ CSelf10[Temp A] >= 1   ] Case↓
  | | | | |■Set String: CSelf7[Temp String] = "+"
  | | | | |■
  | | | |◇End◇
@@ -1119,12 +1119,12 @@ WoditorEvCOMMAND_END
  | | | |■
  | | |◇End◇
  | | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] Defense" ] (15:Basic Terms:10) 
- | | |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "Base System Variables":83:0 ] (18:[LvUp] Defense Increase:Number) 
- | | |■Condition (Number):   [1] CSelf10[Temp Variable A] !=  0  
- | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] != 0   ] Case↓
+ | | |■Load DB(Var):  CSelf10[Temp A] = VarDB[ "Base System Variables":83:0 ] (18:[LvUp] Defense Increase:Number) 
+ | | |■Condition (Number):   [1] CSelf10[Temp A] !=  0  
+ | | |-◇Condition:  [1]  [ CSelf10[Temp A] != 0   ] Case↓
  | | | |■Set String: CSelf7[Temp String] = ""
- | | | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  1  
- | | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= 1   ] Case↓
+ | | | |■Condition (Number):   [1] CSelf10[Temp A] >=  1  
+ | | | |-◇Condition:  [1]  [ CSelf10[Temp A] >= 1   ] Case↓
  | | | | |■Set String: CSelf7[Temp String] = "+"
  | | | | |■
  | | | |◇End◇
@@ -1133,12 +1133,12 @@ WoditorEvCOMMAND_END
  | | |◇End◇
  | | |■Set String: CSelf9[Message Text] += "\n  "
  | | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] Magic Attack" ] (15:Basic Terms:11) 
- | | |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "Base System Variables":84:0 ] (18:[LvUp] Magic Atk Increase:Number) 
- | | |■Condition (Number):   [1] CSelf10[Temp Variable A] !=  0  
- | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] != 0   ] Case↓
+ | | |■Load DB(Var):  CSelf10[Temp A] = VarDB[ "Base System Variables":84:0 ] (18:[LvUp] Magic Atk Increase:Number) 
+ | | |■Condition (Number):   [1] CSelf10[Temp A] !=  0  
+ | | |-◇Condition:  [1]  [ CSelf10[Temp A] != 0   ] Case↓
  | | | |■Set String: CSelf7[Temp String] = ""
- | | | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  1  
- | | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= 1   ] Case↓
+ | | | |■Condition (Number):   [1] CSelf10[Temp A] >=  1  
+ | | | |-◇Condition:  [1]  [ CSelf10[Temp A] >= 1   ] Case↓
  | | | | |■Set String: CSelf7[Temp String] = "+"
  | | | | |■
  | | | |◇End◇
@@ -1146,12 +1146,12 @@ WoditorEvCOMMAND_END
  | | | |■
  | | |◇End◇
  | | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] Magic Defense" ] (15:Basic Terms:12) 
- | | |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "Base System Variables":85:0 ] (18:[LvUp] Magic Def Increase:Number) 
- | | |■Condition (Number):   [1] CSelf10[Temp Variable A] !=  0  
- | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] != 0   ] Case↓
+ | | |■Load DB(Var):  CSelf10[Temp A] = VarDB[ "Base System Variables":85:0 ] (18:[LvUp] Magic Def Increase:Number) 
+ | | |■Condition (Number):   [1] CSelf10[Temp A] !=  0  
+ | | |-◇Condition:  [1]  [ CSelf10[Temp A] != 0   ] Case↓
  | | | |■Set String: CSelf7[Temp String] = ""
- | | | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  1  
- | | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= 1   ] Case↓
+ | | | |■Condition (Number):   [1] CSelf10[Temp A] >=  1  
+ | | | |-◇Condition:  [1]  [ CSelf10[Temp A] >= 1   ] Case↓
  | | | | |■Set String: CSelf7[Temp String] = "+"
  | | | | |■
  | | | |◇End◇
@@ -1161,12 +1161,12 @@ WoditorEvCOMMAND_END
  | | |■Show Message: @1\n\>\cself[9]
  | | |■Set String: CSelf9[Message Text] = "  "
  | | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] Agility" ] (15:Basic Terms:13) 
- | | |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "Base System Variables":86:0 ] (18:[LvUp] Agility Increase:Number) 
- | | |■Condition (Number):   [1] CSelf10[Temp Variable A] !=  0  
- | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] != 0   ] Case↓
+ | | |■Load DB(Var):  CSelf10[Temp A] = VarDB[ "Base System Variables":86:0 ] (18:[LvUp] Agility Increase:Number) 
+ | | |■Condition (Number):   [1] CSelf10[Temp A] !=  0  
+ | | |-◇Condition:  [1]  [ CSelf10[Temp A] != 0   ] Case↓
  | | | |■Set String: CSelf7[Temp String] = ""
- | | | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  1  
- | | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= 1   ] Case↓
+ | | | |■Condition (Number):   [1] CSelf10[Temp A] >=  1  
+ | | | |-◇Condition:  [1]  [ CSelf10[Temp A] >= 1   ] Case↓
  | | | | |■Set String: CSelf7[Temp String] = "+"
  | | | | |■
  | | | |◇End◇
@@ -1174,12 +1174,12 @@ WoditorEvCOMMAND_END
  | | | |■
  | | |◇End◇
  | | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] Accuracy" ] (15:Basic Terms:14) 
- | | |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "Base System Variables":87:0 ] (18:[LvUp] Accuracy Increase:Number) 
- | | |■Condition (Number):   [1] CSelf10[Temp Variable A] !=  0  
- | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] != 0   ] Case↓
+ | | |■Load DB(Var):  CSelf10[Temp A] = VarDB[ "Base System Variables":87:0 ] (18:[LvUp] Accuracy Increase:Number) 
+ | | |■Condition (Number):   [1] CSelf10[Temp A] !=  0  
+ | | |-◇Condition:  [1]  [ CSelf10[Temp A] != 0   ] Case↓
  | | | |■Set String: CSelf7[Temp String] = ""
- | | | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  1  
- | | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= 1   ] Case↓
+ | | | |■Condition (Number):   [1] CSelf10[Temp A] >=  1  
+ | | | |-◇Condition:  [1]  [ CSelf10[Temp A] >= 1   ] Case↓
  | | | | |■Set String: CSelf7[Temp String] = "+"
  | | | | |■
  | | | |◇End◇
@@ -1188,12 +1188,12 @@ WoditorEvCOMMAND_END
  | | |◇End◇
  | | |■Set String: CSelf9[Message Text] += "\n  "
  | | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] Evasion" ] (15:Basic Terms:15) 
- | | |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "Base System Variables":88:0 ] (18:[LvUp] Evasion Increase:Number) 
- | | |■Condition (Number):   [1] CSelf10[Temp Variable A] !=  0  
- | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] != 0   ] Case↓
+ | | |■Load DB(Var):  CSelf10[Temp A] = VarDB[ "Base System Variables":88:0 ] (18:[LvUp] Evasion Increase:Number) 
+ | | |■Condition (Number):   [1] CSelf10[Temp A] !=  0  
+ | | |-◇Condition:  [1]  [ CSelf10[Temp A] != 0   ] Case↓
  | | | |■Set String: CSelf7[Temp String] = ""
- | | | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  1  
- | | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= 1   ] Case↓
+ | | | |■Condition (Number):   [1] CSelf10[Temp A] >=  1  
+ | | | |-◇Condition:  [1]  [ CSelf10[Temp A] >= 1   ] Case↓
  | | | | |■Set String: CSelf7[Temp String] = "+"
  | | | | |■
  | | | |◇End◇
@@ -1201,12 +1201,12 @@ WoditorEvCOMMAND_END
  | | | |■
  | | |◇End◇
  | | |■Load DB(User):  CSelf8[Parameter Name] = UserDB[ "Terms":0:"[Stats] Critical Rate" ] (15:Basic Terms:16) 
- | | |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "Base System Variables":89:0 ] (18:[LvUp] Critical Rate Increase:Number) 
- | | |■Condition (Number):   [1] CSelf10[Temp Variable A] !=  0  
- | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] != 0   ] Case↓
+ | | |■Load DB(Var):  CSelf10[Temp A] = VarDB[ "Base System Variables":89:0 ] (18:[LvUp] Critical Rate Increase:Number) 
+ | | |■Condition (Number):   [1] CSelf10[Temp A] !=  0  
+ | | |-◇Condition:  [1]  [ CSelf10[Temp A] != 0   ] Case↓
  | | | |■Set String: CSelf7[Temp String] = ""
- | | | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  1  
- | | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= 1   ] Case↓
+ | | | |■Condition (Number):   [1] CSelf10[Temp A] >=  1  
+ | | | |-◇Condition:  [1]  [ CSelf10[Temp A] >= 1   ] Case↓
  | | | | |■Set String: CSelf7[Temp String] = "+"
  | | | | |■
  | | | |◇End◇
@@ -1223,10 +1223,10 @@ WoditorEvCOMMAND_END
  | | |▼ Skill Learning Message
  | | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  | | |■Load DB(Var):  CSelf7[Temp String] = VarDB[ "Base System Variables":90:1 ] (18:[LvUp] Learned Skills [String]:String) 
- | | |■Load DB(Var):  CSelf11[Temp Variable B] = VarDB[ "Base System Variables":90:0 ] (18:[LvUp] Learned Skills [String]:Number) 
+ | | |■Load DB(Var):  CSelf11[Temp B] = VarDB[ "Base System Variables":90:0 ] (18:[LvUp] Learned Skills [String]:Number) 
  | | |■Set String: CSelf9[Message Text] = ""
- | | |■Set Variable: CSelf12[Temp Variable C] = 0 + 0 
- | | |■Repeat Loop [ CSelf11[Temp Variable B] ] Times
+ | | |■Set Variable: CSelf12[Temp C] = 0 + 0 
+ | | |■Repeat Loop [ CSelf11[Temp B] ] Times
  | | | |■Condition (String):   [1] CSelf7[Temp String] Is Equal to ""
  | | | |-◇Condition:  [1] [ CSelf7[Temp String] Is Equal to "" ] Case↓
  | | | | |■Break Loop
@@ -1234,24 +1234,24 @@ WoditorEvCOMMAND_END
  | | | |◇End◇
  | | | |■Set String: CSelf8[Parameter Name] =<Cut 1st Line> CSelf7[Temp String]
  | | | |■Set String: CSelf9[Message Text] += "\cself[8]\n"
- | | | |■Set Variable: CSelf12[Temp Variable C] += 1 + 0 
- | | | |■Set Variable: CSelf12[Temp Variable C] %= 4 + 0 
- | | | |■Condition (Number):   [1] CSelf12[Temp Variable C] ==  0  
- | | | |-◇Condition:  [1]  [ CSelf12[Temp Variable C] == 0   ] Case↓
+ | | | |■Set Variable: CSelf12[Temp C] += 1 + 0 
+ | | | |■Set Variable: CSelf12[Temp C] %= 4 + 0 
+ | | | |■Condition (Number):   [1] CSelf12[Temp C] ==  0  
+ | | | |-◇Condition:  [1]  [ CSelf12[Temp C] == 0   ] Case↓
  | | | | |■Show Message: @1\n\>\cself[9]
  | | | | |■
  | | | |◇End◇
  | | | |■
  | | |◇Loop End Point◇◇
- | | |■Condition (Number):   [1] CSelf12[Temp Variable C] !=  0  
- | | |-◇Condition:  [1]  [ CSelf12[Temp Variable C] != 0   ] Case↓
+ | | |■Condition (Number):   [1] CSelf12[Temp C] !=  0  
+ | | |-◇Condition:  [1]  [ CSelf12[Temp C] != 0   ] Case↓
  | | | |■Show Message: @1\n\>\cself[9]
  | | | |■
  | | |◇End◇
- | | |▼ Reset.
+ | | |▼ Reset
  | | |■Call Event [Name]: ["X[Map]Level Up/Down"] <CommonEv 74>  / CSelf0[Ally ID] / 0 / 0:LvUp+Reset Changes
  | | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- | | |▼ End of level-up message display.
+ | | |▼ End of level-up message display
  | | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  | | |■
  | |◇End◇
@@ -1260,16 +1260,16 @@ WoditorEvCOMMAND_END
  |■
 -◇Condition:  [2]  [ CSelf1[Target Parameter] == 11   ] Case↓
  |▼ EXP
- |▼ If necessary, call level-up process.
+ |▼ If necessary, call level-up process
  |■Repeat Loop [ 1 ] Times
  | |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Current Level EXP" ] (0:-:54) +=  CSelf2[Amount]
  | |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Current Level EXP" ] (0:-:54) Lower Bound  0
- | |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "Allies":CSelf0[Ally ID]:"Current Level EXP" ] (0:-:54) 
- | |■Load DB(Var):  CSelf11[Temp Variable B] = VarDB[ "Allies":CSelf0[Ally ID]:"Current Level Required EXP" ] (0:-:55) 
- | |▼ If the required EXP is 0, it will cause an infinite loop, so set it to at least 1.
- | |■Set Variable: CSelf11[Temp Variable B] Lower Bound= 1 + 0 
+ | |■Load DB(Var):  CSelf10[Temp A] = VarDB[ "Allies":CSelf0[Ally ID]:"Current Level EXP" ] (0:-:54) 
+ | |■Load DB(Var):  CSelf11[Temp B] = VarDB[ "Allies":CSelf0[Ally ID]:"Current Level Required EXP" ] (0:-:55) 
+ | |▼ If the required EXP is 0, it will cause an infinite loop, so set it to at least 1
+ | |■Set Variable: CSelf11[Temp B] Lower Bound= 1 + 0 
  | |▼  
- | |▼ Temporarily back up variables (because this common event is called via level-up process).
+ | |▼ Temporarily back up variables (because this common event is called via level-up process)
  | |■Set Variable: CSelf30[Argument Temp Backup 1] = CSelf0[Ally ID] + 0 
  | |■Set Variable: CSelf31[Argument Temp Backup 2] = CSelf1[Target Parameter] + 0 
  | |■Set Variable: CSelf32[Argument Temp Backup 3] = CSelf2[Amount] + 0 
@@ -1277,24 +1277,24 @@ WoditorEvCOMMAND_END
  | |■Call Event [Name]: ["X[Map]Level Up/Down"] <CommonEv 74>  / CSelf0[Ally ID] / 0 / 0:LvUp+Reset Changes
  | |■Set Variable: CSelf20[Level Change] = 0 + 0 
  | |■Loop Start
- | | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  CSelf11[Temp Variable B]  
- | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= CSelf11[Temp Variable B]   ] Case↓
- | | | |■Set Variable: CSelf10[Temp Variable A] -= CSelf11[Temp Variable B] + 0 
- | | | |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Current Level EXP" ] (0:-:54) =  CSelf10[Temp Variable A]
- | | | |■Call Event [Name]: CSelf12[Temp Variable C] = ["X[Map]Level Up/Down"] <CommonEv 74>  / CSelf0[Ally ID] / 1 / 1:LvUp+Keep Changes
- | | | |■Load DB(Var):  CSelf11[Temp Variable B] = VarDB[ "Allies":CSelf0[Ally ID]:"Current Level Required EXP" ] (0:-:55) 
- | | | |■Set Variable: CSelf20[Level Change] += CSelf12[Temp Variable C] + 0 
- | | | |■Condition (Number):   [1] CSelf12[Temp Variable C] ==  0  
- | | | |-◇Condition:  [1]  [ CSelf12[Temp Variable C] == 0   ] Case↓
- | | | | |▼ If the level didn't change, end.
+ | | |■Condition (Number):   [1] CSelf10[Temp A] >=  CSelf11[Temp B]  
+ | | |-◇Condition:  [1]  [ CSelf10[Temp A] >= CSelf11[Temp B]   ] Case↓
+ | | | |■Set Variable: CSelf10[Temp A] -= CSelf11[Temp B] + 0 
+ | | | |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Current Level EXP" ] (0:-:54) =  CSelf10[Temp A]
+ | | | |■Call Event [Name]: CSelf12[Temp C] = ["X[Map]Level Up/Down"] <CommonEv 74>  / CSelf0[Ally ID] / 1 / 1:LvUp+Keep Changes
+ | | | |■Load DB(Var):  CSelf11[Temp B] = VarDB[ "Allies":CSelf0[Ally ID]:"Current Level Required EXP" ] (0:-:55) 
+ | | | |■Set Variable: CSelf20[Level Change] += CSelf12[Temp C] + 0 
+ | | | |■Condition (Number):   [1] CSelf12[Temp C] ==  0  
+ | | | |-◇Condition:  [1]  [ CSelf12[Temp C] == 0   ] Case↓
+ | | | | |▼ If the level didn't change, end
  | | | | |■Break Loop
  | | | | |■
  | | | |◇End◇
- | | | |▼ Leveling up many times at once causes a 500,000-command error, so wait 1 frame every 100 levels.
- | | | |■Set Variable: CSelf13[Temp Variable D] += 1 + 0 
- | | | |■Set Variable: CSelf13[Temp Variable D] %= 100 + 0 
- | | | |■Condition (Number):   [1] CSelf13[Temp Variable D] ==  0  
- | | | |-◇Condition:  [1]  [ CSelf13[Temp Variable D] == 0   ] Case↓
+ | | | |▼ Leveling up many times at once causes a 500,000-command error, so wait 1 frame every 100 levels
+ | | | |■Set Variable: CSelf13[Temp D] += 1 + 0 
+ | | | |■Set Variable: CSelf13[Temp D] %= 100 + 0 
+ | | | |■Condition (Number):   [1] CSelf13[Temp D] ==  0  
+ | | | |-◇Condition:  [1]  [ CSelf13[Temp D] == 0   ] Case↓
  | | | | |■Wait: 1 Frames
  | | | | |■
  | | | |◇End◇
@@ -1307,14 +1307,14 @@ WoditorEvCOMMAND_END
  | |◇Loop End Point◇◇
  | |■
  |◇Loop End Point◇◇
- |▼ Restore backed-up variables.
+ |▼ Restore backed-up variables
  |■Set Variable: CSelf0[Ally ID] = CSelf30[Argument Temp Backup 1] + 0 
  |■Set Variable: CSelf1[Target Parameter] = CSelf31[Argument Temp Backup 2] + 0 
  |■Set Variable: CSelf2[Amount] = CSelf32[Argument Temp Backup 3] + 0 
  |■Set Variable: CSelf3[Show Message?] = CSelf33[Argument Temp Backup 4] + 0 
  |■Condition (Number):   [1] CSelf3[Show Message?] ==  1  
  |-◇Condition:  [1]  [ CSelf3[Show Message?] == 1   ] Case↓
- | |▼ On-map message.
+ | |▼ On-map message
  | |■Load DB(Var):  CSelf8[Parameter Name] = VarDB[ "Allies":CSelf0[Ally ID]:"Character Name" ] (0:-:0) 
  | |■Load DB(User):  CSelf7[Temp String] = UserDB[ "Terms":0:"[Stats] Experience" ] (15:Basic Terms:17) 
  | |■Condition (Number):   [1] CSelf2[Amount] >=  1  /  [2] CSelf2[Amount] <=  -1  

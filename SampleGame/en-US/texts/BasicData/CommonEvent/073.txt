@@ -172,8 +172,8 @@ COMMAND_NUM=28
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
-[103][0,1]<0>()("  Called when getting the ally's string parameter values.")
+[103][0,1]<0>()("Process Overview:")
+[103][0,1]<0>()("  Called when getting the ally's string parameter values")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<0>()("  Get Parameter Value")
@@ -203,8 +203,8 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
-▼   Called when getting the ally's string parameter values.
+▼ Process Overview:
+▼   Called when getting the ally's string parameter values
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼   Get Parameter Value

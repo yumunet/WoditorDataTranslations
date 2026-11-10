@@ -74,8 +74,8 @@ CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=Message Text
-CSELF_NAME_10=Temp Variable A
-CSELF_NAME_11=Temp Variable B
+CSELF_NAME_10=Temp A
+CSELF_NAME_11=Temp B
 CSELF_NAME_12=
 CSELF_NAME_13=
 CSELF_NAME_14=
@@ -108,8 +108,8 @@ CSELF_NAME_40=Accuracy Growth
 CSELF_NAME_41=Evasion Growth
 CSELF_NAME_42=Critical Rate Growth
 CSELF_NAME_43=Required EXP
-CSELF_NAME_44=Required EXP Increase Rate [%]
-CSELF_NAME_45=Required EXP Increase [Fixed Value]
+CSELF_NAME_44=Required EXP Increase Rate (%)
+CSELF_NAME_45=Required EXP Increase (Fixed Value)
 CSELF_NAME_46=
 CSELF_NAME_47=Skill Learning Level
 CSELF_NAME_48=Skill to Learn
@@ -168,7 +168,7 @@ COMMAND_NUM=206
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("  This common event is called to level up/down the ally in the Base System.")
 [103][0,1]<0>()("  Works only on the map (or during post-battle processing).")
 [103][0,1]<0>()(" ")
@@ -177,7 +177,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600099,0,0,0)()
 [111][4,0]<0>(1,1600002,0,2)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("Reset.")
+[103][0,1]<1>()("Reset")
 [212][0,1]<1>()("Reset Change Values")
 [250][5,4]<1>(21,78,0,65536,0)("","Base System Variables","","")
 [250][5,4]<1>(21,79,0,65536,-1)("","Base System Variables","","")
@@ -195,13 +195,13 @@ WoditorEvCOMMAND_START
 [250][4,4]<1>(21,90,1,65538)("","Base System Variables","","")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
-[103][0,1]<0>()("If there's no level change, end.")
+[103][0,1]<0>()("If there's no level change, end")
 [111][4,0]<0>(1,1600001,0,2)()
 [401][1,0]<0>(1)()
 [172][0,0]<1>()()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
-[103][0,1]<0>()("Load.")
+[103][0,1]<0>()("Load")
 [250][5,4]<0>(19,0,23,332288,1600021)("","System Settings","","When Increasing Stats...")
 [250][5,4]<0>(21,79,0,69632,1600032)("","Base System Variables","","")
 [103][0,1]<0>()("Level up or level down?")
@@ -212,14 +212,14 @@ WoditorEvCOMMAND_START
 [121][4,0]<1>(1600001,1600001,0,2048)()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
-[103][0,1]<0>()("Repeat.")
+[103][0,1]<0>()("Repeat")
 [250][5,4]<0>(0,1600000,5,331776,1600031)("","Allies","","Max Level")
 [179][1,0]<0>(1600001)()
-[103][0,1]<1>()("If already at maximum level, no growth.")
+[103][0,1]<1>()("If already at maximum level, no growth")
 [250][5,4]<1>(0,1600000,4,331776,1600030)("","Allies","","Level")
 [111][7,0]<1>(2,1600020,1,2,1600020,-1,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("On level up, if the target's level is already at its maximum, end.")
+[103][0,1]<2>()("On level up, if the target's level is already at its maximum, end")
 [111][4,0]<2>(1,1600030,1600031,1)()
 [401][1,0]<2>(1)()
 [172][0,0]<3>()()
@@ -227,7 +227,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<2>()()
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[103][0,1]<2>()("On level down, if the target's level is already 1, end.")
+[103][0,1]<2>()("On level down, if the target's level is already 1, end")
 [111][4,0]<2>(1,1600030,1,3)()
 [401][1,0]<2>(1)()
 [172][0,0]<3>()()
@@ -236,9 +236,9 @@ WoditorEvCOMMAND_START
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<1>()("Begin stat growth process.")
+[103][0,1]<1>()("Begin stat growth process")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<1>()("Get growth value for each stat.")
+[103][0,1]<1>()("Get growth value for each stat")
 [250][5,4]<1>(0,1600000,17,331776,1600033)("","Allies","","[Growth] Max HP Add /1Lv")
 [250][5,4]<1>(0,1600000,18,331776,1600034)("","Allies","","[Growth] Max SP Add /1Lv")
 [250][5,4]<1>(0,1600000,19,331776,1600035)("","Allies","","[Growth] Attack Add /1Lv")
@@ -264,7 +264,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<2>()()
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[103][0,1]<2>()("If -1, store Ally ID.")
+[103][0,1]<2>()("If -1, store Ally ID")
 [250][5,4]<2>(21,79,0,65536,1600000)("","Base System Variables","","")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
@@ -277,12 +277,12 @@ WoditorEvCOMMAND_START
 [103][0,1]<2>()("...do nothing.")
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[103][0,1]<2>()("If the growth rates are at 1/10, add a random number between 0 and 9 and divide by 10.")
+[103][0,1]<2>()("If the growth rates are at 1/10, add a random number between 0 and 9 and divide by 10")
 [121][5,0]<2>(1600033,0,9,90368,9)()
 [121][5,0]<2>(1600033,10,0,66560,9)()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
-[103][0,1]<1>()("If level down, multiply by -1.")
+[103][0,1]<1>()("If level down, multiply by -1")
 [121][5,0]<1>(1600033,1600020,0,66304,9)()
 [300][6,1]<1>(0,4,1600000,20,1600033,0)("X[Map]Change Parameter")
 [300][6,1]<1>(0,4,1600000,21,1600034,0)("X[Map]Change Parameter")
@@ -294,7 +294,7 @@ WoditorEvCOMMAND_START
 [300][6,1]<1>(0,4,1600000,35,1600040,0)("X[Map]Change Parameter")
 [300][6,1]<1>(0,4,1600000,36,1600041,0)("X[Map]Change Parameter")
 [300][6,1]<1>(0,4,1600000,37,1600042,0)("X[Map]Change Parameter")
-[103][0,1]<1>()("Store stat increase history.")
+[103][0,1]<1>()("Store stat increase history")
 [250][5,4]<1>(21,78,0,65552,1600020)("","Base System Variables","","")
 [121][4,0]<1>(1600099,1600020,0,256)()
 [250][5,4]<1>(21,80,0,65552,1600033)("","Base System Variables","","")
@@ -338,19 +338,19 @@ WoditorEvCOMMAND_START
 [401][1,0]<2>(1)()
 [111][4,0]<3>(1,1600047,1600030,3)()
 [401][1,0]<3>(1)()
-[103][0,1]<4>()("If the learning level is less than or equal to the nwe level, set the learning level to 0 just in case (prevents forgetting when leveling down).")
+[103][0,1]<4>()("If the learning level is less than or equal to the new level, set the learning level to 0 just in case (prevents forgetting when leveling down)")
 [250][5,4]<4>(1,1600000,1600011,65536,0)("","┣ Skill Learning Lv","","")
 [121][4,0]<4>(1600011,1600010,2,8192)()
 [121][4,0]<4>(1600011,1,0,256)()
-[103][0,1]<4>()("If the learning level is the same as the new level, add a learned message.")
+[103][0,1]<4>()("If the learning level is the same as the new level, add a learned message")
 [111][4,0]<4>(1,1600047,1600030,2)()
 [401][1,0]<4>(1)()
-[103][0,1]<5>()("Add newly learned skill.")
+[103][0,1]<5>()("Add newly learned skill")
 [250][5,4]<5>(1,1600000,1600011,69632,1600048)("","┣ Skill Learning Lv","","")
 [111][4,0]<5>(1,1600048,0,1)()
 [401][1,0]<5>(1)()
 [250][5,4]<6>(21,90,0,65552,1)("","Base System Variables","","")
-[103][0,1]<6>()("Add the string <dqrt>Learned [skill name]!<dqrt> here.")
+[103][0,1]<6>()("Add the string <dqrt>Learned [skill name]!<dqrt> here")
 [250][5,4]<6>(0,1600048,0,332288,1600009)("","Skills","","Skill Name")
 [250][4,4]<6>(18,90,1,65554)("Learned \cself[9]!<\n>","Base System Variables","","")
 [99][1,0]<6>(0)()
@@ -366,7 +366,7 @@ WoditorEvCOMMAND_START
 [498][0,0]<1>()()
 [103][0,1]<1>()("--------------------------------------------------------------")
 [179][1,0]<1>(0)()
-[103][0,1]<2>()("For test display.")
+[103][0,1]<2>()("For test display")
 [101][0,1]<2>()("\>\f[5]Level\cself[30]  / \cdb[21:78:0] \cdb[21:80:0] \cdb[21:81:0] \cdb[21:82:0] \cdb[21:83:0]<\n>\cdb[21:84:0] \cdb[21:85:0] \cdb[21:86:0] \cdb[21:87:0] \cdb[21:88:0]<\n>\cdb[21:89:0] <\cself[43]> \cself[42]? \cself[0]<\n>\cdb[21:90:1]")
 [0][0,0]<2>()()
 [498][0,0]<1>()()
@@ -377,7 +377,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼   This common event is called to level up/down the ally in the Base System.
 ▼   Works only on the map (or during post-battle processing).
 ▼  
@@ -386,7 +386,7 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf99[Actual Level Change] = 0 + 0 
 ■Condition (Number):   [1] CSelf2[Option] ==  0  
 -◇Condition:  [1]  [ CSelf2[Option] == 0   ] Case↓
- |▼ Reset.
+ |▼ Reset
  |●Label Point [Reset Change Values] <<<<<<<<<<<<<<<<★
  |■Write to DB(Var): VarDB[ "Base System Variables":78:0 ] (18:[LvUp] Level-Up Count:Number) =  0
  |■Write to DB(Var): VarDB[ "Base System Variables":79:0 ] (18:[LvUp] Level-Up Ally ID:Number) =  -1
@@ -404,13 +404,13 @@ WoditorEvCOMMAND_END
  |■Write to DB(Var): VarDB[ "Base System Variables":90:1 ] (18:[LvUp] Learned Skills [String]:String) =  
  |■
 ◇End◇
-▼ If there's no level change, end.
+▼ If there's no level change, end
 ■Condition (Number):   [1] CSelf1[Level Amount] ==  0  
 -◇Condition:  [1]  [ CSelf1[Level Amount] == 0   ] Case↓
  |■Exit Event
  |■
 ◇End◇
-▼ Load.
+▼ Load
 ■Load DB(User):  CSelf21[Growth Rate Is 1/10?] = UserDB[ "System Settings":0:"When Increasing Stats..." ] (17:Basic System Settings:23) 
 ■Load DB(Var):  CSelf32[Ally ID] = VarDB[ "Base System Variables":79:0 ] (18:[LvUp] Level-Up Ally ID:Number) 
 ▼ Level up or level down?
@@ -421,14 +421,14 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf1[Level Amount] Absolute= CSelf1[Level Amount] + 0 
  |■
 ◇End◇
-▼ Repeat.
+▼ Repeat
 ■Load DB(Var):  CSelf31[Max Level] = VarDB[ "Allies":CSelf0[Ally ID]:"Max Level" ] (0:-:5) 
 ■Repeat Loop [ CSelf1[Level Amount] ] Times
- |▼ If already at maximum level, no growth.
+ |▼ If already at maximum level, no growth
  |■Load DB(Var):  CSelf30[Target's Level] = VarDB[ "Allies":CSelf0[Ally ID]:"Level" ] (0:-:4) 
  |■Condition (Number):   [1] CSelf20[Level Up (1) or Down (-1)] ==  1  /  [2] CSelf20[Level Up (1) or Down (-1)] ==  -1  
  |-◇Condition:  [1]  [ CSelf20[Level Up (1) or Down (-1)] == 1   ] Case↓
- | |▼ On level up, if the target's level is already at its maximum, end.
+ | |▼ On level up, if the target's level is already at its maximum, end
  | |■Condition (Number):   [1] CSelf30[Target's Level] >=  CSelf31[Max Level]  
  | |-◇Condition:  [1]  [ CSelf30[Target's Level] >= CSelf31[Max Level]   ] Case↓
  | | |■Exit Event
@@ -436,7 +436,7 @@ WoditorEvCOMMAND_END
  | |◇End◇
  | |■
  |-◇Condition:  [2]  [ CSelf20[Level Up (1) or Down (-1)] == -1   ] Case↓
- | |▼ On level down, if the target's level is already 1, end.
+ | |▼ On level down, if the target's level is already 1, end
  | |■Condition (Number):   [1] CSelf30[Target's Level] <=  1  
  | |-◇Condition:  [1]  [ CSelf30[Target's Level] <= 1   ] Case↓
  | | |■Exit Event
@@ -445,9 +445,9 @@ WoditorEvCOMMAND_END
  | |■
  |◇End◇
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■
- |▼ Begin stat growth process.
+ |▼ Begin stat growth process
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■
- |▼ Get growth value for each stat.
+ |▼ Get growth value for each stat
  |■Load DB(Var):  CSelf33[Max HP Growth] = VarDB[ "Allies":CSelf0[Ally ID]:"[Growth] Max HP Add /1Lv" ] (0:-:18) 
  |■Load DB(Var):  CSelf34[Max SP Growth] = VarDB[ "Allies":CSelf0[Ally ID]:"[Growth] Max SP Add /1Lv" ] (0:-:19) 
  |■Load DB(Var):  CSelf35[Attack Growth] = VarDB[ "Allies":CSelf0[Ally ID]:"[Growth] Attack Add /1Lv" ] (0:-:20) 
@@ -460,8 +460,8 @@ WoditorEvCOMMAND_END
  |■Load DB(Var):  CSelf42[Critical Rate Growth] = VarDB[ "Allies":CSelf0[Ally ID]:"[Growth] Critical Rt Add /1Lv" ] (0:-:27) 
  |▼  
  |■Load DB(Var):  CSelf43[Required EXP] = VarDB[ "Allies":CSelf0[Ally ID]:"Current Level Required EXP" ] (0:-:55) 
- |■Load DB(Var):  CSelf44[Required EXP Increase Rate [%]] = VarDB[ "Allies":CSelf0[Ally ID]:"Required EXP Incr Rate [%]" ] (0:-:56) 
- |■Load DB(Var):  CSelf45[Required EXP Increase [Fixed Value]] = VarDB[ "Allies":CSelf0[Ally ID]:"Required EXP Incr[FixedValue]" ] (0:-:57) 
+ |■Load DB(Var):  CSelf44[Required EXP Increase Rate (%)] = VarDB[ "Allies":CSelf0[Ally ID]:"Required EXP Incr Rate [%]" ] (0:-:56) 
+ |■Load DB(Var):  CSelf45[Required EXP Increase (Fixed Value)] = VarDB[ "Allies":CSelf0[Ally ID]:"Required EXP Incr[FixedValue]" ] (0:-:57) 
  |▼  
  |▼ Check Ally ID. (If Ally ID has changed, reset.)
  |■Condition (Number):   [1] CSelf32[Ally ID] !=  -1  /  [2] CSelf32[Ally ID] ==  -1  
@@ -473,7 +473,7 @@ WoditorEvCOMMAND_END
  | |◇End◇
  | |■
  |-◇Condition:  [2]  [ CSelf32[Ally ID] == -1   ] Case↓
- | |▼ If -1, store Ally ID.
+ | |▼ If -1, store Ally ID
  | |■Write to DB(Var): VarDB[ "Base System Variables":79:0 ] (18:[LvUp] Level-Up Ally ID:Number) =  CSelf0[Ally ID]
  | |■
  |◇End◇
@@ -486,12 +486,12 @@ WoditorEvCOMMAND_END
  | |▼ ...do nothing.
  | |■
  |-◇Condition:  [2]  [ CSelf21[Growth Rate Is 1/10?] == 1   ] Case↓
- | |▼ If the growth rates are at 1/10, add a random number between 0 and 9 and divide by 10.
+ | |▼ If the growth rates are at 1/10, add a random number between 0 and 9 and divide by 10
  | |■Set Variable: CSelf33[Max HP Growth] to CSelf42[Critical Rate Growth] += 0 Random 9 
  | |■Set Variable: CSelf33[Max HP Growth] to CSelf42[Critical Rate Growth] /= 10 + 0 
  | |■
  |◇End◇
- |▼ If level down, multiply by -1.
+ |▼ If level down, multiply by -1
  |■Set Variable: CSelf33[Max HP Growth] to CSelf42[Critical Rate Growth] *= CSelf20[Level Up (1) or Down (-1)] + 0 
  |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Ally ID] / 20:Max HP / CSelf33[Max HP Growth] / 0:No
  |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Ally ID] / 21:Max SP / CSelf34[Max SP Growth] / 0:No
@@ -503,7 +503,7 @@ WoditorEvCOMMAND_END
  |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Ally ID] / 35:Accuracy / CSelf40[Accuracy Growth] / 0:No
  |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Ally ID] / 36:Evasion / CSelf41[Evasion Growth] / 0:No
  |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Ally ID] / 37:Critical Rate / CSelf42[Critical Rate Growth] / 0:No
- |▼ Store stat increase history.
+ |▼ Store stat increase history
  |■Write to DB(Var): VarDB[ "Base System Variables":78:0 ] (18:[LvUp] Level-Up Count:Number) +=  CSelf20[Level Up (1) or Down (-1)]
  |■Set Variable: CSelf99[Actual Level Change] += CSelf20[Level Up (1) or Down (-1)] + 0 
  |■Write to DB(Var): VarDB[ "Base System Variables":80:0 ] (18:[LvUp] Max HP Increase:Number) +=  CSelf33[Max HP Growth]
@@ -524,13 +524,13 @@ WoditorEvCOMMAND_END
  |▼ --------------------------------------------------------------
  |■Condition (Number):   [1] CSelf20[Level Up (1) or Down (-1)] >=  1  /  [2] CSelf20[Level Up (1) or Down (-1)] <=  -1  
  |-◇Condition:  [1]  [ CSelf20[Level Up (1) or Down (-1)] >= 1   ] Case↓
- | |■Set Variable: [Real] CSelf43[Required EXP] *= CSelf44[Required EXP Increase Rate [%]] / 100 
- | |■Set Variable: [Real] CSelf43[Required EXP] += CSelf45[Required EXP Increase [Fixed Value]] + 0 
+ | |■Set Variable: [Real] CSelf43[Required EXP] *= CSelf44[Required EXP Increase Rate (%)] / 100 
+ | |■Set Variable: [Real] CSelf43[Required EXP] += CSelf45[Required EXP Increase (Fixed Value)] + 0 
  | |■
  |-◇Condition:  [2]  [ CSelf20[Level Up (1) or Down (-1)] <= -1   ] Case↓
- | |■Set Variable: CSelf43[Required EXP] -= CSelf45[Required EXP Increase [Fixed Value]] + 0 
+ | |■Set Variable: CSelf43[Required EXP] -= CSelf45[Required EXP Increase (Fixed Value)] + 0 
  | |■Set Variable: CSelf43[Required EXP] *= 100 + 0 
- | |■Set Variable: CSelf43[Required EXP] /= CSelf44[Required EXP Increase Rate [%]] + 0 
+ | |■Set Variable: CSelf43[Required EXP] /= CSelf44[Required EXP Increase Rate (%)] + 0 
  | |■
  |◇End◇
  |■Set Variable: CSelf43[Required EXP] Lower Bound= 1 + 0 
@@ -538,28 +538,28 @@ WoditorEvCOMMAND_END
  |▼ --------------------------------------------------------------
  |▼ Check for Skills to Learn
  |▼ --------------------------------------------------------------
- |■Set Variable: CSelf10[Temp Variable A] = -1 + 0 
+ |■Set Variable: CSelf10[Temp A] = -1 + 0 
  |■Repeat Loop [ 50 ] Times
- | |■Set Variable: CSelf10[Temp Variable A] += 1 + 0 
- | |■Set Variable: CSelf11[Temp Variable B] = CSelf10[Temp Variable A] * 2 
- | |■Load DB(Var):  CSelf47[Skill Learning Level] = VarDB[ "┣ Skill Learning Lv":CSelf0[Ally ID]:CSelf11[Temp Variable B] ] (1:-:-) 
+ | |■Set Variable: CSelf10[Temp A] += 1 + 0 
+ | |■Set Variable: CSelf11[Temp B] = CSelf10[Temp A] * 2 
+ | |■Load DB(Var):  CSelf47[Skill Learning Level] = VarDB[ "┣ Skill Learning Lv":CSelf0[Ally ID]:CSelf11[Temp B] ] (1:-:-) 
  | |■Condition (Number):   [1] CSelf47[Skill Learning Level] >=  1  
  | |-◇Condition:  [1]  [ CSelf47[Skill Learning Level] >= 1   ] Case↓
  | | |■Condition (Number):   [1] CSelf47[Skill Learning Level] <=  CSelf30[Target's Level]  
  | | |-◇Condition:  [1]  [ CSelf47[Skill Learning Level] <= CSelf30[Target's Level]   ] Case↓
- | | | |▼ If the learning level is less than or equal to the nwe level, set the learning level to 0 just in case (prevents forgetting when leveling down).
- | | | |■Write to DB(Var): VarDB[ "┣ Skill Learning Lv":CSelf0[Ally ID]:CSelf11[Temp Variable B] ] (1:-:-) =  0
- | | | |■Set Variable: CSelf11[Temp Variable B] = CSelf10[Temp Variable A] * 2 
- | | | |■Set Variable: CSelf11[Temp Variable B] += 1 + 0 
- | | | |▼ If the learning level is the same as the new level, add a learned message.
+ | | | |▼ If the learning level is less than or equal to the new level, set the learning level to 0 just in case (prevents forgetting when leveling down)
+ | | | |■Write to DB(Var): VarDB[ "┣ Skill Learning Lv":CSelf0[Ally ID]:CSelf11[Temp B] ] (1:-:-) =  0
+ | | | |■Set Variable: CSelf11[Temp B] = CSelf10[Temp A] * 2 
+ | | | |■Set Variable: CSelf11[Temp B] += 1 + 0 
+ | | | |▼ If the learning level is the same as the new level, add a learned message
  | | | |■Condition (Number):   [1] CSelf47[Skill Learning Level] ==  CSelf30[Target's Level]  
  | | | |-◇Condition:  [1]  [ CSelf47[Skill Learning Level] == CSelf30[Target's Level]   ] Case↓
- | | | | |▼ Add newly learned skill.
- | | | | |■Load DB(Var):  CSelf48[Skill to Learn] = VarDB[ "┣ Skill Learning Lv":CSelf0[Ally ID]:CSelf11[Temp Variable B] ] (1:-:-) 
+ | | | | |▼ Add newly learned skill
+ | | | | |■Load DB(Var):  CSelf48[Skill to Learn] = VarDB[ "┣ Skill Learning Lv":CSelf0[Ally ID]:CSelf11[Temp B] ] (1:-:-) 
  | | | | |■Condition (Number):   [1] CSelf48[Skill to Learn] >=  0  
  | | | | |-◇Condition:  [1]  [ CSelf48[Skill to Learn] >= 0   ] Case↓
  | | | | | |■Write to DB(Var): VarDB[ "Base System Variables":90:0 ] (18:[LvUp] Learned Skills [String]:Number) +=  1
- | | | | | |▼ Add the string "Learned [skill name]!" here.
+ | | | | | |▼ Add the string "Learned [skill name]!" here
  | | | | | |■Load DB(User):  CSelf9[Message Text] = UserDB[ "Skills":CSelf48[Skill to Learn]:"Skill Name" ] (0:-:0) 
  | | | | | |■Write to DB(Var): VarDB[ "Base System Variables":90:1 ] (18:[LvUp] Learned Skills [String]:String) +=  Learned \cself[9]!\n
  | | | | | |■ Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
@@ -575,7 +575,7 @@ WoditorEvCOMMAND_END
  |◇Loop End Point◇◇
  |▼ --------------------------------------------------------------
  |■Repeat Loop [ 0 ] Times
- | |▼ For test display.
+ | |▼ For test display
  | |■Show Message: \>\f[5]Level\cself[30]  / \cdb[21:78:0] \cdb[21:80:0] \cdb[21:81:0] \cdb[21:82:0] \cdb[21:83:0]\n\cdb[21:84:0] \cdb[21:85:0] \cdb[21:86:0] \cdb[21:87:0] \cdb[21:88:0]\n\cdb[21:89:0] <\cself[43]> \cself[42]? \cself[0]\n\cdb[21:90:1]
  | |■
  |◇Loop End Point◇◇

@@ -164,16 +164,16 @@ COMMAND_NUM=23
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("　戦闘前のBGMを記憶したり、画面処理を行います（暗くするなど）。")
 [103][0,1]<0>()("　また、主人公ＤＢ＋状態ＤＢと敵キャラＤＢから、戦闘ＤＢへ能力値をコピーします。")
 [103][0,1]<0>()("　以降はすべて戦闘DBで処理が行われます。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()("Databases Accessed by This Common Event:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()("Other Common Events Called from Here:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("Main Common Events Calling This:")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [300][3,1]<0>(0,1,0)("X[Bat]Draw Background")
 [300][2,1]<0>(0,0)("X[Map]Update Party Info")
@@ -190,16 +190,16 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼ 　戦闘前のBGMを記憶したり、画面処理を行います（暗くするなど）。
 ▼ 　また、主人公ＤＢ＋状態ＤＢと敵キャラＤＢから、戦闘ＤＢへ能力値をコピーします。
 ▼ 　以降はすべて戦闘DBで処理が行われます。
 ▼ 
-▼ [Databases Accessed by This Common Event]
+▼ Databases Accessed by This Common Event:
 ▼  
-▼ [Other Common Events Called from Here]
+▼ Other Common Events Called from Here:
 ▼  
-▼ [Main Common Events Calling This]
+▼ Main Common Events Calling This:
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Call Event [Name]: ["X[Bat]Draw Background"] <CommonEv 180>  / 0:表示
 ■Call Event [Name]: ["X[Map]Update Party Info"] <CommonEv 79> 

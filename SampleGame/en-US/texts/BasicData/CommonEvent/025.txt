@@ -169,7 +169,7 @@ CSELF_NAME_99=
 COMMAND_NUM=35
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("Check skills database.")
+[103][0,1]<0>()("Check skills database")
 [121][4,0]<0>(1600030,0,0,0)()
 [300][5,1]<0>(0,16777218,1600000,10,1600010)("X[Map]Get Parameter")
 [121][4,0]<0>(1600020,-1,0,0)()
@@ -183,7 +183,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<1>(1,1600000,1600020,69632,1600021)("","┣ Skill Learning Lv","","")
 [111][4,0]<1>(1,1600021,1600001,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("If the skill ID is found.")
+[103][0,1]<2>()("If the skill ID is found")
 [121][4,0]<2>(1600020,-1,0,256)()
 [250][5,4]<2>(1,1600000,1600020,69632,1600021)("","┣ Skill Learning Lv","","")
 [121][4,0]<2>(1600020,1,0,256)()
@@ -192,7 +192,7 @@ WoditorEvCOMMAND_START
 [176][0,0]<3>()()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
-[103][0,1]<2>()("If the learning level is lower than the current level, the skill exists.")
+[103][0,1]<2>()("If the learning level is lower than the current level, the skill exists")
 [111][4,0]<2>(1,1600021,1600010,3)()
 [401][1,0]<2>(1)()
 [121][4,0]<3>(1600030,1,0,0)()
@@ -207,7 +207,7 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ Check skills database.
+▼ Check skills database
 ■Set Variable: CSelf30[If Learned, 1] = 0 + 0 
 ■Call Event [Name]: CSelf10[Current Level] = ["X[Map]Get Parameter"] <CommonEv 71>  / CSelf0[Target Ally] / 10:Level
 ■Set Variable: CSelf20[Check Position] = -1 + 0 
@@ -221,7 +221,7 @@ WoditorEvCOMMAND_END
  |■Load DB(Var):  CSelf21[Learning Level] = VarDB[ "┣ Skill Learning Lv":CSelf0[Target Ally]:CSelf20[Check Position] ] (1:-:-) 
  |■Condition (Number):   [1] CSelf21[Learning Level] ==  CSelf1[Skill]  
  |-◇Condition:  [1]  [ CSelf21[Learning Level] == CSelf1[Skill]   ] Case↓
- | |▼ If the skill ID is found.
+ | |▼ If the skill ID is found
  | |■Set Variable: CSelf20[Check Position] += -1 + 0 
  | |■Load DB(Var):  CSelf21[Learning Level] = VarDB[ "┣ Skill Learning Lv":CSelf0[Target Ally]:CSelf20[Check Position] ] (1:-:-) 
  | |■Set Variable: CSelf20[Check Position] += 1 + 0 
@@ -230,7 +230,7 @@ WoditorEvCOMMAND_END
  | | |■Go to Loop Start
  | | |■
  | |◇End◇
- | |▼ If the learning level is lower than the current level, the skill exists.
+ | |▼ If the learning level is lower than the current level, the skill exists
  | |■Condition (Number):   [1] CSelf21[Learning Level] <=  CSelf10[Current Level]  
  | |-◇Condition:  [1]  [ CSelf21[Learning Level] <= CSelf10[Current Level]   ] Case↓
  | | |■Set Variable: CSelf30[If Learned, 1] = 1 + 0 

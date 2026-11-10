@@ -200,13 +200,13 @@ COMMAND_NUM=119
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("  A common event to play sound effects.")
 [103][0,1]<0>()("  The main sound effects in the Base System are played through this common event.")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("  To change specific sound effects in the Base System, edit them manually here.")
 [103][0,1]<0>()("  (However, this will not affect cursor and selection sounds for Choice.")
-[103][0,1]<0>()("   For those, please set System Variables 17 to 19.)")
+[103][0,1]<0>()("   For those, please set system variables 17-19.)")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("  All of the sounds used here are in the <dqrt>SystemFile<dqrt> folder.")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
@@ -310,10 +310,10 @@ WoditorEvCOMMAND_START
 [499][0,0]<1>()()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
-[103][0,1]<0>()("If there's a file, play it.")
+[103][0,1]<0>()("If there's a file, play it")
 [112][2,4]<0>(1,270035465)("","","","")
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("Ver.3.44: Changed volume and pitch to 100")
+[103][0,1]<1>()("v3.44: Changed volume and pitch to 100")
 [140][8,1]<1>(33554464,0,0,0,100,100,0,0)("\cself[9]")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
@@ -322,13 +322,13 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼   A common event to play sound effects.
 ▼   The main sound effects in the Base System are played through this common event.
 ▼  
 ▼   To change specific sound effects in the Base System, edit them manually here.
 ▼   (However, this will not affect cursor and selection sounds for Choice.
-▼    For those, please set System Variables 17 to 19.)
+▼    For those, please set system variables 17-19.)
 ▼  
 ▼   All of the sounds used here are in the "SystemFile" folder.
 ▼ ―――――――――――――――――――――――――――――――――――
@@ -432,10 +432,10 @@ WoditorEvCOMMAND_END
  |◇End◇
  |■
 ◇End◇
-▼ If there's a file, play it.
+▼ If there's a file, play it
 ■Condition (String):   [1] CSelf9[Sound File] Is Not Equal to ""
 -◇Condition:  [1] [ CSelf9[Sound File] Is Not Equal to "" ] Case↓
- |▼ Ver.3.44: Changed volume and pitch to 100
+ |▼ v3.44: Changed volume and pitch to 100
  |■Sound: SE File [\cself[9]] Vol 100% Pitch 100% (0 Channel) Play / Delay: 0 Frames
  |■
 ◇End◇

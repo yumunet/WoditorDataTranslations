@@ -33,7 +33,7 @@ LOADTYPE9=0
 CHOICE_STR_NUM=10
 CHOICE_STR_0_NUM=3
 CHOICE_STR_0_0=Loop Until Selected
-CHOICE_STR_0_1=Loop Until Selected (Don't Initialize Cursor)
+CHOICE_STR_0_1=Loop Until Selected (Don't initialize cursor)
 CHOICE_STR_0_2=End with One Key Press
 CHOICE_STR_1_NUM=5
 CHOICE_STR_1_0=Play Confirm Sound
@@ -88,8 +88,8 @@ CSELF_NAME_8=
 CSELF_NAME_9=
 CSELF_NAME_10=Selected ID
 CSELF_NAME_11=Cursor Position
-CSELF_NAME_12=Temp Variable A
-CSELF_NAME_13=Temp Variable B
+CSELF_NAME_12=Temp A
+CSELF_NAME_13=Temp B
 CSELF_NAME_14=
 CSELF_NAME_15=
 CSELF_NAME_16=
@@ -180,22 +180,22 @@ COMMAND_NUM=243
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("  After the window is displayed by <dqrt>X[Com]Draw Universal Window<dqrt>, this common event takes key inputs,")
 [103][0,1]<0>()("  calculates the cursor position, and updates the window display using <dqrt>X[Com]Draw Universal Window<dqrt>.")
 [103][0,1]<0>()("  Note that the Universal Window pictures will remain even after this event ends. You must manually erase them.")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()("Databases Accessed by This Common Event:")
 [103][0,1]<0>()("  Variable DB <dqrt>Universal Window Items<dqrt>")
 [103][0,1]<0>()("  Variable DB <dqrt>Base System Variables<dqrt>")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()("Other Common Events Called from Here:")
 [103][0,1]<0>()("  X[Com]Draw Universal Window (Used to update cursor display)")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("Main Common Events Calling This:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Usage Example]")
+[103][0,1]<0>()("Usage Example:")
 [103][0,1]<0>()("  There are examples in the common event <dqrt>■■[Common: Screen Processing]■■<dqrt>.")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
@@ -210,7 +210,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<0>()()
 [111][7,0]<0>(2,1600000,0,2,1600000,1,2)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("For <dqrt>Loop Until Selected,<dqrt> initialize the cursor position.")
+[103][0,1]<1>()("For <dqrt>Loop Until Selected,<dqrt> initialize the cursor position")
 [121][4,0]<1>(1600011,0,0,0)()
 [250][5,4]<1>(20,21,0,69632,1600012)("","Base System Variables","","")
 [111][4,0]<1>(1,1600012,-1,5)()
@@ -235,7 +235,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<0>()()
 [111][4,0]<0>(1,1600000,2,2)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("For <dqrt>Loop Until Selected (Don't Initialize Cursor),<dqrt> use the external cursor value.")
+[103][0,1]<1>()("For <dqrt>Loop Until Selected (Don't initialize cursor),<dqrt> use the external cursor value")
 [121][4,0]<1>(1600000,0,0,0)()
 [250][5,4]<1>(18,21,0,69632,1600011)("","Base System Variables","","")
 [121][4,0]<1>(1600011,1600025,1,5888)()
@@ -251,9 +251,9 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600010,-200,0,0)()
 [250][5,4]<0>(18,8,0,65536,-200)("","Base System Variables","","")
 [170][0,0]<0>()()
-[103][0,1]<1>()("Update cursor display.")
+[103][0,1]<1>()("Update cursor display")
 [250][5,4]<1>(19,1600011,1,69632,1600013)("","Universal Window Items","","")
-[103][0,1]<1>()("Store the item ID at the cursor position internally.")
+[103][0,1]<1>()("Store the item ID at the cursor position internally")
 [250][5,4]<1>(18,18,0,65536,1600013)("","Base System Variables","","")
 [250][5,4]<1>(18,61,0,65536,1600011)("","Base System Variables","","")
 [300][5,1]<1>(0,3,1,1600011,-1)("X[Com]Draw Universal Window")
@@ -298,7 +298,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<1>()()
 [111][7,0]<1>(2,1600020,10,2,1600020,11,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("Confirm key: If selectable, store the currently selected item ID and end.")
+[103][0,1]<2>()("Confirm key: If selectable, store the currently selected item ID and end")
 [250][5,4]<2>(19,1600011,2,69632,1600012)("","Universal Window Items","","")
 [111][4,0]<2>(17,1600012,1,2)()
 [401][1,0]<2>(1)()
@@ -307,7 +307,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<3>(18,8,0,65536,1600010)("","Base System Variables","","")
 [111][4,0]<3>(17,1600001,1,6)()
 [401][1,0]<3>(1)()
-[103][0,1]<4>()("Case: Don't Play Confirm Sound (Replaced by another sound externally.)")
+[103][0,1]<4>()("Case: Don't Play Confirm Sound (Replaced by another sound externally)")
 [0][0,0]<4>()()
 [420][1,0]<3>(0)()
 [300][3,1]<4>(0,1,0)("X[Com]Play System Sound")
@@ -323,7 +323,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<2>()()
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[103][0,1]<2>()("Cancel key: Return -100 and end.")
+[103][0,1]<2>()("Cancel key: Return -100 and end")
 [300][3,1]<2>(0,1,1)("X[Com]Play System Sound")
 [121][4,0]<2>(1600010,-100,0,0)()
 [250][5,4]<2>(18,8,0,65536,-100)("","Base System Variables","","")
@@ -347,10 +347,10 @@ WoditorEvCOMMAND_START
 [0][0,0]<3>()()
 [498][0,0]<2>()()
 [300][3,1]<2>(0,1,5)("X[Com]Play System Sound")
-[103][0,1]<2>()("Adjust.")
+[103][0,1]<2>()("Adjust")
 [121][4,0]<2>(1600011,1600025,0,256)()
 [121][4,0]<2>(1600011,1600025,0,1280)()
-[103][0,1]<2>()("Store the item ID at the cursor position internally.")
+[103][0,1]<2>()("Store the item ID at the cursor position internally")
 [250][5,4]<2>(19,1600011,1,69632,1600013)("","Universal Window Items","","")
 [250][5,4]<2>(18,18,0,65536,1600013)("","Base System Variables","","")
 [250][5,4]<2>(18,61,0,65536,1600011)("","Base System Variables","","")
@@ -360,10 +360,10 @@ WoditorEvCOMMAND_START
 [121][4,0]<2>(1600012,1600011,1600024,0)()
 [121][4,0]<2>(1600011,1600024,0,256)()
 [300][3,1]<2>(0,1,5)("X[Com]Play System Sound")
-[103][0,1]<2>()("Adjust.")
+[103][0,1]<2>()("Adjust")
 [121][4,0]<2>(1600011,1600025,0,256)()
 [121][4,0]<2>(1600011,1600025,0,1280)()
-[103][0,1]<2>()("Store the item ID at the cursor position internally.")
+[103][0,1]<2>()("Store the item ID at the cursor position internally")
 [250][5,4]<2>(19,1600011,1,69632,1600013)("","Universal Window Items","","")
 [250][5,4]<2>(18,18,0,65536,1600013)("","Base System Variables","","")
 [250][5,4]<2>(18,61,0,65536,1600011)("","Base System Variables","","")
@@ -371,14 +371,14 @@ WoditorEvCOMMAND_START
 [499][0,0]<1>()()
 [111][7,0]<1>(2,1600020,4,2,1600020,6,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("Left key (Loop horizontally.)")
+[103][0,1]<2>()("Left key (Loop horizontally)")
 [121][4,0]<2>(1600013,1600011,1600024,12288)()
 [121][4,0]<2>(1600013,1600024,0,768)()
 [121][4,0]<2>(1600012,1600011,1600024,16384)()
 [121][4,0]<2>(1600012,1600024,1,4352)()
 [121][4,0]<2>(1600012,1600024,0,1280)()
 [121][4,0]<2>(1600011,1600012,1600013,0)()
-[103][0,1]<2>()("Adjust.")
+[103][0,1]<2>()("Adjust")
 [121][4,0]<2>(1600011,1600025,0,256)()
 [121][4,0]<2>(1600011,1600025,0,1280)()
 [103][0,1]<2>()(" ")
@@ -389,14 +389,14 @@ WoditorEvCOMMAND_START
 [300][3,1]<2>(0,1,5)("X[Com]Play System Sound")
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[103][0,1]<2>()("Right key (Loop horizontally.)")
+[103][0,1]<2>()("Right key (Loop horizontally)")
 [121][4,0]<2>(1600013,1600011,1600024,12288)()
 [121][4,0]<2>(1600013,1600024,0,768)()
 [121][4,0]<2>(1600012,1600011,1600024,16384)()
 [121][4,0]<2>(1600012,1,0,256)()
 [121][4,0]<2>(1600012,1600024,0,1280)()
 [121][4,0]<2>(1600011,1600012,1600013,0)()
-[103][0,1]<2>()("Adjust.")
+[103][0,1]<2>()("Adjust")
 [121][4,0]<2>(1600011,1600025,0,256)()
 [121][4,0]<2>(1600011,1600025,0,1280)()
 [103][0,1]<2>()(" ")
@@ -414,7 +414,7 @@ WoditorEvCOMMAND_START
 [498][0,0]<1>()()
 [111][4,0]<1>(1,1600000,1,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("If ending with a one key press, end here.")
+[103][0,1]<2>()("If ending with a one key press, end here")
 [171][0,0]<2>()()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
@@ -426,22 +426,22 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼   After the window is displayed by "X[Com]Draw Universal Window", this common event takes key inputs,
 ▼   calculates the cursor position, and updates the window display using "X[Com]Draw Universal Window".
 ▼   Note that the Universal Window pictures will remain even after this event ends. You must manually erase them.
 ▼  
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Databases Accessed by This Common Event]
+▼ Databases Accessed by This Common Event:
 ▼   Variable DB "Universal Window Items"
 ▼   Variable DB "Base System Variables"
 ▼  
-▼ [Other Common Events Called from Here]
+▼ Other Common Events Called from Here:
 ▼   X[Com]Draw Universal Window (Used to update cursor display)
 ▼  
-▼ [Main Common Events Calling This]
+▼ Main Common Events Calling This:
 ▼  
-▼ [Usage Example]
+▼ Usage Example:
 ▼   There are examples in the common event "■■[Common: Screen Processing]■■".
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -456,11 +456,11 @@ WoditorEvCOMMAND_END
 ◇End◇
 ■Condition (Number):   [1] CSelf0[Mode] ==  0  /  [2] CSelf0[Mode] ==  1  
 -◇Condition:  [1]  [ CSelf0[Mode] == 0   ] Case↓
- |▼ For "Loop Until Selected," initialize the cursor position.
+ |▼ For "Loop Until Selected," initialize the cursor position
  |■Set Variable: CSelf11[Cursor Position] = 0 + 0 
- |■Load DB(Var):  CSelf12[Temp Variable A] = VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) 
- |■Condition (Number):   [1] CSelf12[Temp Variable A] !=  -1  
- |-◇Condition:  [1]  [ CSelf12[Temp Variable A] != -1   ] Case↓
+ |■Load DB(Var):  CSelf12[Temp A] = VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) 
+ |■Condition (Number):   [1] CSelf12[Temp A] !=  -1  
+ |-◇Condition:  [1]  [ CSelf12[Temp A] != -1   ] Case↓
  | |■Load DB(Var):  CSelf11[Cursor Position] = VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) 
  | |■Set Variable: CSelf11[Cursor Position] Upper Bound= CSelf25[Total Items] - 1 
  | |■Set Variable: CSelf11[Cursor Position] Lower Bound= 0 + 0 
@@ -469,9 +469,9 @@ WoditorEvCOMMAND_END
  |■
 -◇Condition:  [2]  [ CSelf0[Mode] == 1   ] Case↓
  |▼ For "End with One Key Press," don't initialize the cursor position. (But if a cursor is set externally, use it.)
- |■Load DB(Var):  CSelf12[Temp Variable A] = VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) 
- |■Condition (Number):   [1] CSelf12[Temp Variable A] !=  -1  
- |-◇Condition:  [1]  [ CSelf12[Temp Variable A] != -1   ] Case↓
+ |■Load DB(Var):  CSelf12[Temp A] = VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) 
+ |■Condition (Number):   [1] CSelf12[Temp A] !=  -1  
+ |-◇Condition:  [1]  [ CSelf12[Temp A] != -1   ] Case↓
  | |■Load DB(Var):  CSelf11[Cursor Position] = VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) 
  | |■Set Variable: CSelf11[Cursor Position] Upper Bound= CSelf25[Total Items] - 1 
  | |■Set Variable: CSelf11[Cursor Position] Lower Bound= 0 + 0 
@@ -481,7 +481,7 @@ WoditorEvCOMMAND_END
 ◇End◇
 ■Condition (Number):   [1] CSelf0[Mode] ==  2  
 -◇Condition:  [1]  [ CSelf0[Mode] == 2   ] Case↓
- |▼ For "Loop Until Selected (Don't Initialize Cursor)," use the external cursor value.
+ |▼ For "Loop Until Selected (Don't initialize cursor)," use the external cursor value
  |■Set Variable: CSelf0[Mode] = 0 + 0 
  |■Load DB(Var):  CSelf11[Cursor Position] = VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) 
  |■Set Variable: CSelf11[Cursor Position] Upper Bound= CSelf25[Total Items] - 1 
@@ -497,10 +497,10 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf10[Selected ID] = -200 + 0 
 ■Write to DB(Var): VarDB[ "Base System Variables":8:0 ] (18:Universal Window Return ID:Number) =  -200
 ■Loop Start
- |▼ Update cursor display.
- |■Load DB(Var):  CSelf13[Temp Variable B] = VarDB[ "Universal Window Items":CSelf11[Cursor Position]:1 ] (19:-:Item ID) 
- |▼ Store the item ID at the cursor position internally.
- |■Write to DB(Var): VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) =  CSelf13[Temp Variable B]
+ |▼ Update cursor display
+ |■Load DB(Var):  CSelf13[Temp B] = VarDB[ "Universal Window Items":CSelf11[Cursor Position]:1 ] (19:-:Item ID) 
+ |▼ Store the item ID at the cursor position internally
+ |■Write to DB(Var): VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) =  CSelf13[Temp B]
  |■Write to DB(Var): VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) =  CSelf11[Cursor Position]
  |■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / 1:Update (Scroll & Cursor Draw) / CSelf11[Cursor Position] / -1
  |▼ Key input processing loop. End when Confirm or Cancel is pressed.
@@ -544,16 +544,16 @@ WoditorEvCOMMAND_END
  |◇End◇
  |■Condition (Number):   [1] CSelf20[Pressed Key] ==  10  /  [2] CSelf20[Pressed Key] ==  11  
  |-◇Condition:  [1]  [ CSelf20[Pressed Key] == 10   ] Case↓
- | |▼ Confirm key: If selectable, store the currently selected item ID and end.
- | |■Load DB(Var):  CSelf12[Temp Variable A] = VarDB[ "Universal Window Items":CSelf11[Cursor Position]:2 ] (19:-:Selectable? [1:Yes]) 
- | |■Condition (Number):   [1] CSelf12[Temp Variable A] ==  1  
- | |-◇Condition:  [1]  [ CSelf12[Temp Variable A] == 1   ] Case↓
+ | |▼ Confirm key: If selectable, store the currently selected item ID and end
+ | |■Load DB(Var):  CSelf12[Temp A] = VarDB[ "Universal Window Items":CSelf11[Cursor Position]:2 ] (19:-:Selectable? [1:Yes]) 
+ | |■Condition (Number):   [1] CSelf12[Temp A] ==  1  
+ | |-◇Condition:  [1]  [ CSelf12[Temp A] == 1   ] Case↓
  | | |▼ If selectable
  | | |■Load DB(Var):  CSelf10[Selected ID] = VarDB[ "Universal Window Items":CSelf11[Cursor Position]:1 ] (19:-:Item ID) 
  | | |■Write to DB(Var): VarDB[ "Base System Variables":8:0 ] (18:Universal Window Return ID:Number) =  CSelf10[Selected ID]
  | | |■Condition (Number):   [1] CSelf1[Option] &  1  
  | | |-◇Condition:  [1]  [ CSelf1[Option] & 1   ] Case↓
- | | | |▼ Case: Don't Play Confirm Sound (Replaced by another sound externally.)
+ | | | |▼ Case: Don't Play Confirm Sound (Replaced by another sound externally)
  | | | |■
  | | |-◇Else
  | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
@@ -569,7 +569,7 @@ WoditorEvCOMMAND_END
  | |◇End◇
  | |■
  |-◇Condition:  [2]  [ CSelf20[Pressed Key] == 11   ] Case↓
- | |▼ Cancel key: Return -100 and end.
+ | |▼ Cancel key: Return -100 and end
  | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 1:Cancel Sound
  | |■Set Variable: CSelf10[Selected ID] = -100 + 0 
  | |■Write to DB(Var): VarDB[ "Base System Variables":8:0 ] (18:Universal Window Return ID:Number) =  -100
@@ -593,61 +593,61 @@ WoditorEvCOMMAND_END
  | | |■
  | |◇Loop End Point◇◇
  | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
- | |▼ Adjust.
+ | |▼ Adjust
  | |■Set Variable: CSelf11[Cursor Position] += CSelf25[Total Items] + 0 
  | |■Set Variable: CSelf11[Cursor Position] %= CSelf25[Total Items] + 0 
- | |▼ Store the item ID at the cursor position internally.
- | |■Load DB(Var):  CSelf13[Temp Variable B] = VarDB[ "Universal Window Items":CSelf11[Cursor Position]:1 ] (19:-:Item ID) 
- | |■Write to DB(Var): VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) =  CSelf13[Temp Variable B]
+ | |▼ Store the item ID at the cursor position internally
+ | |■Load DB(Var):  CSelf13[Temp B] = VarDB[ "Universal Window Items":CSelf11[Cursor Position]:1 ] (19:-:Item ID) 
+ | |■Write to DB(Var): VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) =  CSelf13[Temp B]
  | |■Write to DB(Var): VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) =  CSelf11[Cursor Position]
  | |■
  |-◇Condition:  [2]  [ CSelf20[Pressed Key] == 2   ] Case↓
  | |▼ Down key
- | |■Set Variable: CSelf12[Temp Variable A] = CSelf11[Cursor Position] + CSelf24[Columns] 
+ | |■Set Variable: CSelf12[Temp A] = CSelf11[Cursor Position] + CSelf24[Columns] 
  | |■Set Variable: CSelf11[Cursor Position] += CSelf24[Columns] + 0 
  | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
- | |▼ Adjust.
+ | |▼ Adjust
  | |■Set Variable: CSelf11[Cursor Position] += CSelf25[Total Items] + 0 
  | |■Set Variable: CSelf11[Cursor Position] %= CSelf25[Total Items] + 0 
- | |▼ Store the item ID at the cursor position internally.
- | |■Load DB(Var):  CSelf13[Temp Variable B] = VarDB[ "Universal Window Items":CSelf11[Cursor Position]:1 ] (19:-:Item ID) 
- | |■Write to DB(Var): VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) =  CSelf13[Temp Variable B]
+ | |▼ Store the item ID at the cursor position internally
+ | |■Load DB(Var):  CSelf13[Temp B] = VarDB[ "Universal Window Items":CSelf11[Cursor Position]:1 ] (19:-:Item ID) 
+ | |■Write to DB(Var): VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) =  CSelf13[Temp B]
  | |■Write to DB(Var): VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) =  CSelf11[Cursor Position]
  | |■
  |◇End◇
  |■Condition (Number):   [1] CSelf20[Pressed Key] ==  4  /  [2] CSelf20[Pressed Key] ==  6  
  |-◇Condition:  [1]  [ CSelf20[Pressed Key] == 4   ] Case↓
- | |▼ Left key (Loop horizontally.)
- | |■Set Variable: CSelf13[Temp Variable B] = CSelf11[Cursor Position] / CSelf24[Columns] 
- | |■Set Variable: CSelf13[Temp Variable B] *= CSelf24[Columns] + 0 
- | |■Set Variable: CSelf12[Temp Variable A] = CSelf11[Cursor Position] % CSelf24[Columns] 
- | |■Set Variable: CSelf12[Temp Variable A] += CSelf24[Columns] - 1 
- | |■Set Variable: CSelf12[Temp Variable A] %= CSelf24[Columns] + 0 
- | |■Set Variable: CSelf11[Cursor Position] = CSelf12[Temp Variable A] + CSelf13[Temp Variable B] 
- | |▼ Adjust.
+ | |▼ Left key (Loop horizontally)
+ | |■Set Variable: CSelf13[Temp B] = CSelf11[Cursor Position] / CSelf24[Columns] 
+ | |■Set Variable: CSelf13[Temp B] *= CSelf24[Columns] + 0 
+ | |■Set Variable: CSelf12[Temp A] = CSelf11[Cursor Position] % CSelf24[Columns] 
+ | |■Set Variable: CSelf12[Temp A] += CSelf24[Columns] - 1 
+ | |■Set Variable: CSelf12[Temp A] %= CSelf24[Columns] + 0 
+ | |■Set Variable: CSelf11[Cursor Position] = CSelf12[Temp A] + CSelf13[Temp B] 
+ | |▼ Adjust
  | |■Set Variable: CSelf11[Cursor Position] += CSelf25[Total Items] + 0 
  | |■Set Variable: CSelf11[Cursor Position] %= CSelf25[Total Items] + 0 
  | |▼  
- | |■Load DB(Var):  CSelf13[Temp Variable B] = VarDB[ "Universal Window Items":CSelf11[Cursor Position]:1 ] (19:-:Item ID) 
- | |■Write to DB(Var): VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) =  CSelf13[Temp Variable B]
+ | |■Load DB(Var):  CSelf13[Temp B] = VarDB[ "Universal Window Items":CSelf11[Cursor Position]:1 ] (19:-:Item ID) 
+ | |■Write to DB(Var): VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) =  CSelf13[Temp B]
  | |■Write to DB(Var): VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) =  CSelf11[Cursor Position]
  | |▼  
  | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
  | |■
  |-◇Condition:  [2]  [ CSelf20[Pressed Key] == 6   ] Case↓
- | |▼ Right key (Loop horizontally.)
- | |■Set Variable: CSelf13[Temp Variable B] = CSelf11[Cursor Position] / CSelf24[Columns] 
- | |■Set Variable: CSelf13[Temp Variable B] *= CSelf24[Columns] + 0 
- | |■Set Variable: CSelf12[Temp Variable A] = CSelf11[Cursor Position] % CSelf24[Columns] 
- | |■Set Variable: CSelf12[Temp Variable A] += 1 + 0 
- | |■Set Variable: CSelf12[Temp Variable A] %= CSelf24[Columns] + 0 
- | |■Set Variable: CSelf11[Cursor Position] = CSelf12[Temp Variable A] + CSelf13[Temp Variable B] 
- | |▼ Adjust.
+ | |▼ Right key (Loop horizontally)
+ | |■Set Variable: CSelf13[Temp B] = CSelf11[Cursor Position] / CSelf24[Columns] 
+ | |■Set Variable: CSelf13[Temp B] *= CSelf24[Columns] + 0 
+ | |■Set Variable: CSelf12[Temp A] = CSelf11[Cursor Position] % CSelf24[Columns] 
+ | |■Set Variable: CSelf12[Temp A] += 1 + 0 
+ | |■Set Variable: CSelf12[Temp A] %= CSelf24[Columns] + 0 
+ | |■Set Variable: CSelf11[Cursor Position] = CSelf12[Temp A] + CSelf13[Temp B] 
+ | |▼ Adjust
  | |■Set Variable: CSelf11[Cursor Position] += CSelf25[Total Items] + 0 
  | |■Set Variable: CSelf11[Cursor Position] %= CSelf25[Total Items] + 0 
  | |▼  
- | |■Load DB(Var):  CSelf13[Temp Variable B] = VarDB[ "Universal Window Items":CSelf11[Cursor Position]:1 ] (19:-:Item ID) 
- | |■Write to DB(Var): VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) =  CSelf13[Temp Variable B]
+ | |■Load DB(Var):  CSelf13[Temp B] = VarDB[ "Universal Window Items":CSelf11[Cursor Position]:1 ] (19:-:Item ID) 
+ | |■Write to DB(Var): VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) =  CSelf13[Temp B]
  | |■Write to DB(Var): VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) =  CSelf11[Cursor Position]
  | |▼  
  | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 5:Cursor Move Sound
@@ -660,7 +660,7 @@ WoditorEvCOMMAND_END
  |◇Loop End Point◇◇
  |■Condition (Number):   [1] CSelf0[Mode] ==  1  
  |-◇Condition:  [1]  [ CSelf0[Mode] == 1   ] Case↓
- | |▼ If ending with a one key press, end here.
+ | |▼ If ending with a one key press, end here
  | |■Break Loop
  | |■
  |◇End◇

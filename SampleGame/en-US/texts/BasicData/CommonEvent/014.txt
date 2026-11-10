@@ -175,7 +175,7 @@ CSELF_NAME_99=
 COMMAND_NUM=37
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("Call the menu only when out of battle.")
+[103][0,1]<0>()("Call the menu only when out of battle")
 [250][5,4]<0>(18,68,0,200704,1600018)("","Base System Variables","[Battle] In Battle?","")
 [111][4,0]<0>(1,1600018,0,2)()
 [401][1,0]<0>(1)()
@@ -215,7 +215,7 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ Call the menu only when out of battle.
+▼ Call the menu only when out of battle
 ■Load DB(Var):  CSelf18[In-Battle Flag] = VarDB[ "Base System Variables":"[Battle] In Battle?":0 ] (18:68:Number) 
 ■Condition (Number):   [1] CSelf18[In-Battle Flag] ==  0  
 -◇Condition:  [1]  [ CSelf18[In-Battle Flag] == 0   ] Case↓

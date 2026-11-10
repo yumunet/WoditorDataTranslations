@@ -167,15 +167,15 @@ COMMAND_NUM=284
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("　「X[共]万能ウィンドウ選択実行」で、アイテムを選んだ後の挙動をここで処理します。")
 [103][0,1]<0>()("　※アイテムを使用した結果、何も変化がなければ、使用をキャンセルします（使えなかったことにする）。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()("Databases Accessed by This Common Event:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()("Other Common Events Called from Here:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("Main Common Events Calling This:")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [250][5,4]<0>(18,51,0,69632,1600037)("","Base System Variables","","")
 [121][4,0]<0>(1600099,0,0,0)()
@@ -454,15 +454,15 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼ 　「X[共]万能ウィンドウ選択実行」で、アイテムを選んだ後の挙動をここで処理します。
 ▼ 　※アイテムを使用した結果、何も変化がなければ、使用をキャンセルします（使えなかったことにする）。
 ▼ 
-▼ [Databases Accessed by This Common Event]
+▼ Databases Accessed by This Common Event:
 ▼  
-▼ [Other Common Events Called from Here]
+▼ Other Common Events Called from Here:
 ▼  
-▼ [Main Common Events Calling This]
+▼ Main Common Events Calling This:
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Load DB(Var):  CSelf37[最大パーティ人数] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
 ■Set Variable: CSelf99[結果] = 0 + 0 
@@ -550,7 +550,7 @@ WoditorEvCOMMAND_END
  | |-◇Condition:  [1]  [ CSelf11[一時変数B] <= -1   ] Case↓
  | | |▼ キャンセルなら終了
  | | |▼ カーソル点滅を消す
- | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:Cursor OFF (all positions if -1) / -1 / 0
+ | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:Cursor Off (All Positions If -1) / -1 / 0
  | | |■Exit Event
  | | |■
  | |-◇Condition:  [2]  [ CSelf11[一時変数B] >= 0   ] Case↓
@@ -561,7 +561,7 @@ WoditorEvCOMMAND_END
  |-◇Condition:  [2]  [ CSelf10[一時変数A] == 2   ] Case↓
  | |▼ 2＝味方全体
  | |■Set Variable: CSelf16[使用対象フラグ] = 2 + 0 
- | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 1:Cursor ON (all positions if -1) / -1 / 0
+ | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 1:Cursor On (All Positions If -1) / -1 / 0
  | |▼ 決定かキャンセルか、だけ受付する
  | |■Key Input: CSelf12[一時変数C] [Wait for Input <!>]  Confirm (10) Cancel (11)
  | |■Condition (Number):   [1] CSelf12[一時変数C] ==  10  /  [2] CSelf12[一時変数C] ==  11  
@@ -572,7 +572,7 @@ WoditorEvCOMMAND_END
  | | |■
  | |-◇Condition:  [2]  [ CSelf12[一時変数C] == 11   ] Case↓
  | | |▼ キャンセルなら終了
- | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:Cursor OFF (all positions if -1) / -1 / 0
+ | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:Cursor Off (All Positions If -1) / -1 / 0
  | | |■Exit Event
  | | |■
  | |◇End◇
@@ -652,7 +652,7 @@ WoditorEvCOMMAND_END
  | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf14[一時キャラID] / 23:SP / CSelf35[最終SP回復値] / 0:No
  | |▼ 回復エフェクト＋表示更新
  | |■Call Event [Name]: ["X[Map]Display Char HP/SP Recovery"] <CommonEv 97>  / CSelf11[一時変数B] / CSelf33[最終HP回復値] / CSelf35[最終SP回復値]
- | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:Cursor OFF (all positions if -1) / -1 / 0
+ | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:Cursor Off (All Positions If -1) / -1 / 0
  | |▼  
  | |■Condition (Number):   [1] CSelf16[使用対象フラグ] ==  1  
  | |-◇Condition:  [1]  [ CSelf16[使用対象フラグ] == 1   ] Case↓

@@ -181,18 +181,18 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [498][0,0]<0>()()
 [179][1,0]<0>(1)()
-[103][0,1]<1>()("Set the contents of the display window here.")
+[103][0,1]<1>()("Set the contents of the display window here")
 [250][5,4]<1>(18,9,0,196608,30)("","Base System Variables","Universal Window Display X","")
 [250][5,4]<1>(18,10,0,196608,50)("","Base System Variables","Universal Window Display Y","")
 [250][5,4]<1>(18,0,0,196608,270)("","Base System Variables","Universal Window Width","")
 [250][5,4]<1>(18,0,0,196608,90)("","Base System Variables","Universal Window Height","")
 [250][5,4]<1>(18,0,0,196608,1)("","Base System Variables","Universal Window Columns","")
 [250][5,4]<1>(18,0,0,196608,5)("","Base System Variables","Universal Window Rows","")
-[103][0,1]<1>()("First, display the window.")
+[103][0,1]<1>()("First, display the window")
 [300][5,1]<1>(0,3,0,-1,4)("X[Com]Draw Universal Window")
-[103][0,1]<1>()("Key input is processed here.")
+[103][0,1]<1>()("Key input is processed here")
 [300][2,1]<1>(0,0)("X[Com]U-Window: Select")
-[103][0,1]<1>()("If done, erase the window.")
+[103][0,1]<1>()("If done, erase the window")
 [300][5,1]<1>(0,3,-1,1100000,4)("X[Com]Draw Universal Window")
 [0][0,0]<1>()()
 [498][0,0]<0>()()
@@ -212,18 +212,18 @@ WoditorEvCOMMAND_END
  |■
 ◇Loop End Point◇◇
 ■Repeat Loop [ 1 ] Times
- |▼ Set the contents of the display window here.
+ |▼ Set the contents of the display window here
  |■Write to DB(Var): VarDB[ "Base System Variables":"Universal Window Display X":0 ] (18:9:Number) =  30
  |■Write to DB(Var): VarDB[ "Base System Variables":"Universal Window Display Y":0 ] (18:10:Number) =  50
  |■Write to DB(Var): VarDB[ "Base System Variables":"Universal Window Width":0 ] (18:11:Number) =  270
  |■Write to DB(Var): VarDB[ "Base System Variables":"Universal Window Height":0 ] (18:12:Number) =  90
  |■Write to DB(Var): VarDB[ "Base System Variables":"Universal Window Columns":0 ] (18:13:Number) =  1
  |■Write to DB(Var): VarDB[ "Base System Variables":"Universal Window Rows":0 ] (18:14:Number) =  5
- |▼ First, display the window.
+ |▼ First, display the window
  |■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / 0:Display / -1 / 4:Display Below Window
- |▼ Key input is processed here.
+ |▼ Key input is processed here
  |■Call Event [Name]: ["X[Com]U-Window: Select"] <CommonEv 65> 
- |▼ If done, erase the window.
+ |▼ If done, erase the window
  |■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / -1:Erase / This Ev Self0 / 4:Display Below Window
  |■
 ◇Loop End Point◇◇

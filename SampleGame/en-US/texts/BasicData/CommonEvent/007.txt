@@ -199,20 +199,20 @@ COMMAND_NUM=7
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("Arguments 0: Target Ally  1: Which Stat?  2: Amount  3: Show Message?")
-[103][0,1]<0>()("Update stat.")
+[103][0,1]<0>()("Update stat")
 [300][6,1]<0>(0,4,1600000,1600001,1600002,1600003)("X[Map]Change Parameter")
 [300][6,1]<0>(0,4,1600000,100,0,0)("X[Map]Change Parameter")
-[103][0,1]<0>()("If the corresponding character is in battle, store there as well.")
+[103][0,1]<0>()("If the corresponding character is in battle, store there as well")
 [300][3,1]<0>(0,1,1600000)("X[Bat]Update Ally")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ Arguments 0: Target Ally  1: Which Stat?  2: Amount  3: Show Message?
-▼ Update stat.
+▼ Update stat
 ■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Target Ally] / CSelf1[Which Stat?] / CSelf2[Amount] / CSelf3[Show Message?]
 ■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Target Ally] / 100:Recalculate Temp Values / 0 / 0:No
-▼ If the corresponding character is in battle, store there as well.
+▼ If the corresponding character is in battle, store there as well
 ■Call Event [Name]: ["X[Bat]Update Ally"] <CommonEv 142>  / CSelf0[Target Ally]
 ■
 [COMMAND_TEXT_END]

@@ -164,11 +164,11 @@ COMMAND_NUM=206
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("　メニュー実行中の主なループ処理をここで実行します。")
 [103][0,1]<0>()("　このコモンイベントが終了するときは、メニューが閉じられるときです。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("Main Common Events Calling This:")
 [103][0,1]<0>()("　「X[移]歩行時_並列キー処理」イベントから「予約」処理で呼び出されています。")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [250][5,4]<0>(18,1,0,458752,0)("","Base System Variables","Menu Close Flag","Number")
@@ -373,11 +373,11 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼ 　メニュー実行中の主なループ処理をここで実行します。
 ▼ 　このコモンイベントが終了するときは、メニューが閉じられるときです。
 ▼ 
-▼ [Main Common Events Calling This]
+▼ Main Common Events Calling This:
 ▼ 　「X[移]歩行時_並列キー処理」イベントから「予約」処理で呼び出されています。
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Write to DB(Var): VarDB[ "Base System Variables":"Menu Close Flag":"Number" ] (18:1:0) =  0

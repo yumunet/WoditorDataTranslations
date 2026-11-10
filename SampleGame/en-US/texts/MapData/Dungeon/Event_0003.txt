@@ -51,7 +51,7 @@ WoditorEvCOMMAND_START
 [210][7,0]<1>(500028,16777220,34,0,1,4,1100001)()
 [111][7,0]<1>(2,1100001,1,2,1100001,0,3)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("It's 1 if the player won the battle, so execute the commands below.")
+[103][0,1]<2>()("It's 1 if the player won the battle, so execute the commands below")
 [151][2,0]<2>(2629150,15)()
 [180][1,0]<2>(20)()
 [101][0,1]<2>()("<dqrt>Congratulations. It is your victory.<dqrt>")
@@ -65,7 +65,7 @@ WoditorEvCOMMAND_START
 [101][0,1]<2>()("You can use this on the map! Give it a try!")
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[103][0,1]<2>()("If the player lost or ran away.")
+[103][0,1]<2>()("If the player lost or ran away")
 [151][2,0]<2>(2629150,15)()
 [180][1,0]<2>(20)()
 [101][0,1]<2>()("<dqrt>Come take the challenge again...<dqrt>")
@@ -92,7 +92,7 @@ WoditorEvCOMMAND_END
  |■Call Event: This Ev Self1 = Common 28: [ ◆Start Battle ] / 34:Boss [10 Turns] / 0:Can Flee / 1:Continue / 4:Boss BGM
  |■Condition (Number):   [1] This Ev Self1 ==  1  /  [2] This Ev Self1 <=  0  
  |-◇Condition:  [1]  [ This Ev Self1 == 1   ] Case↓
- | |▼ It's 1 if the player won the battle, so execute the commands below.
+ | |▼ It's 1 if the player won the battle, so execute the commands below
  | |■Adjust Color:  R30 G30 B40 / 15 Frames
  | |■Wait: 20 Frames
  | |■Show Message: "Congratulations. It is your victory."
@@ -106,7 +106,7 @@ WoditorEvCOMMAND_END
  | |■Show Message: You can use this on the map! Give it a try!
  | |■
  |-◇Condition:  [2]  [ This Ev Self1 <= 0   ] Case↓
- | |▼ If the player lost or ran away.
+ | |▼ If the player lost or ran away
  | |■Adjust Color:  R30 G30 B40 / 15 Frames
  | |■Wait: 20 Frames
  | |■Show Message: "Come take the challenge again..."

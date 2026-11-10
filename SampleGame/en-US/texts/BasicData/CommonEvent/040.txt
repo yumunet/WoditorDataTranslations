@@ -37,7 +37,7 @@ CHOICE_STR_0_1=Turn Off
 CHOICE_STR_1_NUM=3
 CHOICE_STR_1_0=Don't Use
 CHOICE_STR_1_1=Use
-CHOICE_STR_1_2=Use + Sys73=1 (click to advance messages/choices)
+CHOICE_STR_1_2=Use + Sys73=1 (Click to advance messages/choices)
 CHOICE_STR_2_NUM=0
 CHOICE_STR_3_NUM=0
 CHOICE_STR_4_NUM=0
@@ -215,7 +215,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<2>()("Turn off left-click auto-move")
 [121][4,0]<2>(1600000,0,0,0)()
 [103][0,1]<2>()("★ Do not interrupt the leader's Move Route! An empty Move Route here would also stop movement used in event scenes!")
-[103][0,1]<2>()("Clear only the movement scheduled by this common event and remove the destination marker")
+[103][0,1]<2>()("Clear only the movement scheduled by this common event and remove the destination marker.")
 [121][4,0]<2>(1600036,0,0,0)()
 [121][4,0]<2>(1600039,0,0,0)()
 [150][3,0]<2>(2,1600090,0)()
@@ -230,8 +230,8 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<0>()("The following is the left-click auto-move logic that runs during parallel processing")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("★ Do not move the leader while an event is running, to avoid interfering with the event's Move Route and scene")
-[103][0,1]<0>()("When an event starts, cancel only this common event's scheduled movement, then wait for the next click")
+[103][0,1]<0>()("★ Do not move the leader while an event is running, to avoid interfering with the event's Move Route and scene.")
+[103][0,1]<0>()("When an event starts, cancel only this common event's scheduled movement, then wait for the next click.")
 [111][4,0]<0>(17,9000013,1,1)()
 [401][1,0]<0>(1)()
 [121][4,0]<1>(1600036,0,0,0)()
@@ -270,8 +270,8 @@ WoditorEvCOMMAND_START
 [121][4,0]<2>(1600038,1600021,2,8192)()
 [124][4,0]<2>(1600030,4096,-2,0)()
 [124][4,0]<2>(1600031,4096,-2,1)()
-[103][0,1]<2>()("Use FIND_PATH to check if the destination is reachable, considering map terrain and collisions with events other than the leader")
-[103][0,1]<2>()("Specify MOVE_EV=-2 so events such as NPCs count as obstacles and movement stays on passable tiles")
+[103][0,1]<2>()("Use FIND_PATH to check if the destination is reachable, considering map terrain and collisions with events other than the leader.")
+[103][0,1]<2>()("Specify MOVE_EV=-2 so events such as NPCs count as obstacles and movement stays on passable tiles.")
 [122][3,1]<2>(1600005,262656,0)("<<FIND_PATH_DIR\cself[53]/v2\cself[6]/SX=\cself[30]/SY=\cself[31]/EX=\cself[20]/EY=\cself[21]/LEN=1/EXE=20000/MOVE_EV=-2>>")
 [103][0,1]<2>()("Calculate the destination marker picture's size from the difference in screen positions between adjacent tiles")
 [124][4,0]<2>(1600022,1449984,1600020,1600021)()
@@ -326,7 +326,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [103][0,1]<2>()("If no path exists, shake a red square (■) and stop. Delay its removal so another click can be received during the animation.")
-[103][0,1]<2>()("Reset any pending delayed removal so it doesn't also erase the new red square (■) later")
+[103][0,1]<2>()("Reset any pending delayed removal so it doesn't also erase the new red square (■) later.")
 [150][2,0]<2>(67,1600091)()
 [112][2,4]<2>(17,538470917)("NoPath","","","")
 [401][1,0]<2>(1)()
@@ -361,7 +361,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [103][0,1]<1>()("Continue movement from here. Run at most one <dqrt>Approach Position<dqrt> command per parallel-process cycle.")
-[103][0,1]<1>()("Avoid long loops so new clicks can still be detected during movement")
+[103][0,1]<1>()("Avoid long loops so new clicks can still be detected during movement.")
 [111][4,0]<1>(1,1600036,1,1)()
 [401][1,0]<1>(1)()
 [103][0,1]<2>()("After an <dqrt>Approach Position<dqrt> command, movement may take a moment to start, so allow a short grace period before checking if movement is blocked")
@@ -568,7 +568,7 @@ WoditorEvCOMMAND_END
  | |▼ Turn off left-click auto-move
  | |■Set Variable: CSelf0[Mode] = 0 + 0 
  | |▼ ★ Do not interrupt the leader's Move Route! An empty Move Route here would also stop movement used in event scenes!
- | |▼ Clear only the movement scheduled by this common event and remove the destination marker
+ | |▼ Clear only the movement scheduled by this common event and remove the destination marker.
  | |■Set Variable: CSelf36[Movement Active Flag] = 0 + 0 
  | |■Set Variable: CSelf39[Next Tile State (0:Unset/1:Wait/2:Ready)] = 0 + 0 
  | |■Picture Erase: CSelf90[Destination Marker Picture ID]  / 0(0) Frames
@@ -583,8 +583,8 @@ WoditorEvCOMMAND_END
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ The following is the left-click auto-move logic that runs during parallel processing
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼ ★ Do not move the leader while an event is running, to avoid interfering with the event's Move Route and scene
-▼ When an event starts, cancel only this common event's scheduled movement, then wait for the next click
+▼ ★ Do not move the leader while an event is running, to avoid interfering with the event's Move Route and scene.
+▼ When an event starts, cancel only this common event's scheduled movement, then wait for the next click.
 ■Condition (Number):   [1] Sys13:Event Active? (1:Yes) >=  1  
 -◇Condition:  [1]  [ Sys13:Event Active? (1:Yes) >= 1   ] Case↓
  |■Set Variable: CSelf36[Movement Active Flag] = 0 + 0 
@@ -623,8 +623,8 @@ WoditorEvCOMMAND_END
  | |■Set Variable: CSelf38[Destination Precise Y] = CSelf21[Destination Map Y] * 2 
  | |■Set Variable+: CSelf30[Leader X] = Leader's X Position (Standard)
  | |■Set Variable+: CSelf31[Leader Y] = Leader's Y Position (Standard)
- | |▼ Use FIND_PATH to check if the destination is reachable, considering map terrain and collisions with events other than the leader
- | |▼ Specify MOVE_EV=-2 so events such as NPCs count as obstacles and movement stays on passable tiles
+ | |▼ Use FIND_PATH to check if the destination is reachable, considering map terrain and collisions with events other than the leader.
+ | |▼ Specify MOVE_EV=-2 so events such as NPCs count as obstacles and movement stays on passable tiles.
  | |■Set String: CSelf5[FIND_PATH Result] =<Execute Special Code> "<<FIND_PATH_DIR\cself[53]/v2\cself[6]/SX=\cself[30]/SY=\cself[31]/EX=\cself[20]/EY=\cself[21]/LEN=1/..."
  | |▼ Calculate the destination marker picture's size from the difference in screen positions between adjacent tiles
  | |■Set Variable+: CSelf22[Destination Screen X] = [Map] X:CSelf20[Destination Map X] Y:CSelf21[Destination Map Y] - Screen X Position (Center of Tile, Map Zoom Affected)
@@ -679,7 +679,7 @@ WoditorEvCOMMAND_END
  | | |■
  | |◇End◇
  | |▼ If no path exists, shake a red square (■) and stop. Delay its removal so another click can be received during the animation.
- | |▼ Reset any pending delayed removal so it doesn't also erase the new red square (■) later
+ | |▼ Reset any pending delayed removal so it doesn't also erase the new red square (■) later.
  | |■Picture [Reset Delay]: CSelf91[Blocked Marker Picture ID] 
  | |■Condition (String):   [1] CSelf5[FIND_PATH Result] Includes "NoPath"
  | |-◇Condition:  [1] [ CSelf5[FIND_PATH Result] Includes "NoPath" ] Case↓
@@ -714,7 +714,7 @@ WoditorEvCOMMAND_END
  | |■
  |◇End◇
  |▼ Continue movement from here. Run at most one "Approach Position" command per parallel-process cycle.
- |▼ Avoid long loops so new clicks can still be detected during movement
+ |▼ Avoid long loops so new clicks can still be detected during movement.
  |■Condition (Number):   [1] CSelf36[Movement Active Flag] >=  1  
  |-◇Condition:  [1]  [ CSelf36[Movement Active Flag] >= 1   ] Case↓
  | |▼ After an "Approach Position" command, movement may take a moment to start, so allow a short grace period before checking if movement is blocked

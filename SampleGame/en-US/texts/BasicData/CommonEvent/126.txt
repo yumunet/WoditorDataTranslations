@@ -164,7 +164,7 @@ COMMAND_NUM=127
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("　これは並列イベントで、ゲーム中、常に実行されています。主に、")
 [103][0,1]<0>()("　　・メニュー表示用のキャンセルキー受付")
 [103][0,1]<0>()("　　・一歩あるいたときの処理を実行")
@@ -176,11 +176,11 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("　「メニューを開いたときは次の一歩を歩き出さないようにする」")
 [103][0,1]<0>()("　など、安全性と便利さを向上させるための工夫がなされています。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()("Databases Accessed by This Common Event:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()("Other Common Events Called from Here:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("Main Common Events Calling This:")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("イベント実行中はキーが押されても無視")
 [111][4,0]<0>(17,9000013,0,2)()
@@ -294,7 +294,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼ 　これは並列イベントで、ゲーム中、常に実行されています。主に、
 ▼ 　　・メニュー表示用のキャンセルキー受付
 ▼ 　　・一歩あるいたときの処理を実行
@@ -306,11 +306,11 @@ WoditorEvCOMMAND_END
 ▼ 　「メニューを開いたときは次の一歩を歩き出さないようにする」
 ▼ 　など、安全性と便利さを向上させるための工夫がなされています。
 ▼ 
-▼ [Databases Accessed by This Common Event]
+▼ Databases Accessed by This Common Event:
 ▼  
-▼ [Other Common Events Called from Here]
+▼ Other Common Events Called from Here:
 ▼  
-▼ [Main Common Events Calling This]
+▼ Main Common Events Calling This:
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ イベント実行中はキーが押されても無視
 ■Condition (Number):   [1] Sys13:Event Active? (1:Yes) ==  0  

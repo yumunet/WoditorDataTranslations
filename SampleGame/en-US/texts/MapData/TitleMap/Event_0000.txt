@@ -40,7 +40,7 @@ COMMAND_NUM=89
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[For First-Time WOLF RPG Editor Users]")
+[103][0,1]<0>()("For First-Time WOLF RPG Editor Users:")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("This event handles the presentation of the title screen.")
 [103][0,1]<0>()("We recommend that you first look at the Sample Map A events,")
@@ -55,13 +55,12 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("If you don't understand anything, check the Perfect Guide below! (Japanese)")
 [103][0,1]<0>()("https://silversecond.com/WolfRPGEditor/Guide/")
 [103][0,1]<0>()("――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[About the Blue [S] Mark]")
+[103][0,1]<0>()("About the Blue [S] Mark:")
 [103][0,1]<0>()("(By the way, what's the blue [S] mark? That's the starting position of the game.")
 [103][0,1]<0>()(" If you want to change it, go to the event layer (the <dqrt>Ev<dqrt> icon), right-click on the map,")
 [103][0,1]<0>()(" and select <dqrt>Set Game Start Position<dqrt>.)")
 [103][0,1]<0>()("――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Title Event Starts Here]")
+[103][0,1]<0>()("Title Event Starts Here:")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("Display title image. (The image used here will be the title image.)")
 [103][0,1]<0>()("By default, <dqrt>TitleGraphic.png<dqrt> in the <dqrt>SystemFile<dqrt> folder is the title screen.")
@@ -72,7 +71,8 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("If you don't, the message display will be misaligned or the font size will change.")
 [180][1,0]<0>(1)()
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("If a save file is found (by Common 48: X[Com]Base System Auto-Init),")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("If a save file is found (by common 48: X[Com]Base System Auto-Init),")
 [103][0,1]<0>()("set the default value of the next choice to 1 (Continue).")
 [111][4,0]<0>(1,9000025,1,1)()
 [401][1,0]<0>(1)()
@@ -80,14 +80,14 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("Move the position of the choice window down a little.")
+[103][0,1]<0>()("Move the position of the choice window down a little")
 [121][4,0]<0>(9000004,150,0,0)()
-[103][0,1]<0>()("This displays the usual choices on game start.")
+[103][0,1]<0>()("This displays the usual choices on game start")
 [102][1,3]<0>(19)("<C>Start","<C>Continue","<C>Quit")
 [401][1,0]<0>(2)()
-[103][0,1]<1>()("Set the position of the choice window back to default.")
+[103][0,1]<1>()("Set the position of the choice window back to default")
 [121][4,0]<1>(9000004,-1,0,0)()
-[103][0,1]<1>()("Erase the title screen picture.")
+[103][0,1]<1>()("Erase the title screen picture")
 [150][3,0]<1>(2,1,0)()
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<1>()("Transfer to Sample Map A.")
@@ -100,11 +100,11 @@ WoditorEvCOMMAND_START
 [179][1,0]<1>(1)()
 [103][0,1]<2>()("Below is the opening scene of the game. You can delete the below.")
 [290][7,0]<2>(2,10,0,0,160,120,200)()
-[103][0,1]<2>()("Turn the leader.")
+[103][0,1]<2>()("Turn the leader")
 [201][1,0]<2>(-2)()(2,[22],[47,2],[22],[47,2],[22],[47,2],[22],[47,2],[22],[47,2],[22],[47,2],[22],[47,2],[22],[21,0,0])
 [202][0,0]<2>()()
 [180][1,0]<2>(7)()
-[103][0,1]<2>()("Display messages.")
+[103][0,1]<2>()("Display messages")
 [101][0,1]<2>()("Wolfarl<\n>  Welcome to the world of WOLF RPG Editor!<\n>  My name is Wolfarl and I will be your guide.")
 [101][0,1]<2>()("Wolfarl<\n>  This sample game shows you an example of<\n>  what kind of RPG you can create with<\n>  WOLF RPG Editor!")
 [101][0,1]<2>()("Wolfarl<\n>  You can also try out the included Base System,<\n>  so feel free to try anything you like!")
@@ -119,11 +119,11 @@ WoditorEvCOMMAND_START
 [498][0,0]<1>()()
 [0][0,0]<1>()()
 [401][1,0]<0>(3)()
-[103][0,1]<1>()("You can load by calling Common 14.")
+[103][0,1]<1>()("You can load by calling common 14")
 [210][3,0]<1>(500014,1,-1)()
 [0][0,0]<1>()()
 [401][1,0]<0>(4)()
-[103][0,1]<1>()("End the game.")
+[103][0,1]<1>()("End the game")
 [175][0,0]<1>()()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
@@ -132,7 +132,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ――――――――――――――――――――――――――――――――――
-▼ [For First-Time WOLF RPG Editor Users]
+▼ For First-Time WOLF RPG Editor Users:
 ▼  
 ▼ This event handles the presentation of the title screen.
 ▼ We recommend that you first look at the Sample Map A events,
@@ -147,13 +147,12 @@ WoditorEvCOMMAND_END
 ▼ If you don't understand anything, check the Perfect Guide below! (Japanese)
 ▼ https://silversecond.com/WolfRPGEditor/Guide/
 ▼ ――――――――――――――――――――――――――――――――――
-▼ [About the Blue [S] Mark]
+▼ About the Blue [S] Mark:
 ▼ (By the way, what's the blue [S] mark? That's the starting position of the game.
 ▼  If you want to change it, go to the event layer (the "Ev" icon), right-click on the map,
 ▼  and select "Set Game Start Position".)
 ▼ ――――――――――――――――――――――――――――――――――
-▼  
-▼ [Title Event Starts Here]
+▼ Title Event Starts Here:
 ▼  
 ▼ Display title image. (The image used here will be the title image.)
 ▼ By default, "TitleGraphic.png" in the "SystemFile" folder is the title screen.
@@ -164,7 +163,8 @@ WoditorEvCOMMAND_END
 ▼ If you don't, the message display will be misaligned or the font size will change.
 ■Wait: 1 Frames
 ▼  
-▼ If a save file is found (by Common 48: X[Com]Base System Auto-Init),
+▼  
+▼ If a save file is found (by common 48: X[Com]Base System Auto-Init),
 ▼ set the default value of the next choice to 1 (Continue).
 ■Condition (Number):   [1] Sys25:Current Save (0+) >=  1  
 -◇Condition:  [1]  [ Sys25:Current Save (0+) >= 1   ] Case↓
@@ -172,14 +172,14 @@ WoditorEvCOMMAND_END
  |■
 ◇End◇
 ▼  
-▼ Move the position of the choice window down a little.
+▼ Move the position of the choice window down a little
 ■Set Variable: Sys4:Choice Window Y = 150 + 0 
-▼ This displays the usual choices on game start.
+▼ This displays the usual choices on game start
 ■Show Choices: / [1] <C>Start / [2] <C>Continue / [3] <C>Quit 
 -◇Case: Choice [1] <C>Start                                 ↓
- |▼ Set the position of the choice window back to default.
+ |▼ Set the position of the choice window back to default
  |■Set Variable: Sys4:Choice Window Y = -1 + 0 
- |▼ Erase the title screen picture.
+ |▼ Erase the title screen picture
  |■Picture Erase: 1  / 0(0) Frames
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |▼ Transfer to Sample Map A.
@@ -192,11 +192,11 @@ WoditorEvCOMMAND_END
  |■Repeat Loop [ 1 ] Times
  | |▼ Below is the opening scene of the game. You can delete the below.
  | |■Effect Map: [Zoom] Center X 160 / Center Y 120 / 200%  [10] Frames
- | |▼ Turn the leader.
+ | |▼ Turn the leader
  | |■Move Route: [Skip]  Leader / Turn Right / Wait 2 Frames / Turn Right / Wait 2 Frames / Turn Right / Wait 2 Frames / Turn Right / Wait 2 Frames / Turn Right / Wait 2 Frames / Turn Right / Wait 2 Frame...
  | |■Wait for Move Route
  | |■Wait: 7 Frames
- | |▼ Display messages.
+ | |▼ Display messages
  | |■Show Message: Wolfarl\n  Welcome to the world of WOLF RPG Editor!\n  My name is Wolfarl and I will be your guide.
  | |■Show Message: Wolfarl\n  This sample game shows you an example of\n  what kind of RPG you can create with\n  WOLF RPG Editor!
  | |■Show Message: Wolfarl\n  You can also try out the included Base System,\n  so feel free to try anything you like!
@@ -211,11 +211,11 @@ WoditorEvCOMMAND_END
  |◇Loop End Point◇◇
  |■
 -◇Case: Choice [2] <C>Continue                              ↓
- |▼ You can load by calling Common 14.
+ |▼ You can load by calling common 14
  |■Call Event: Common 14: [ ○ Open Menus ] / -1:Load Menu
  |■
 -◇Case: Choice [3] <C>Quit                                  ↓
- |▼ End the game.
+ |▼ End the game
  |■Game End
  |■
 ◇End◇

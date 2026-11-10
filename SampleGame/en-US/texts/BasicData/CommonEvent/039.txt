@@ -75,12 +75,12 @@ CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=
 CSELF_NAME_10=Destination Variable
-CSELF_NAME_11=X Speed [1/10]
-CSELF_NAME_12=Y Speed [1/10]
-CSELF_NAME_13=Max X Speed [1/10]
-CSELF_NAME_14=Max Y Speed [1/10]
-CSELF_NAME_15=X Internal Remainder [1/10]
-CSELF_NAME_16=Y Internal Remainder [1/10]
+CSELF_NAME_11=X Speed (1/10)
+CSELF_NAME_12=Y Speed (1/10)
+CSELF_NAME_13=Max X Speed (1/10)
+CSELF_NAME_14=Max Y Speed (1/10)
+CSELF_NAME_15=X Internal Remainder (1/10)
+CSELF_NAME_16=Y Internal Remainder (1/10)
 CSELF_NAME_17=X Displacement
 CSELF_NAME_18=Y Displacement
 CSELF_NAME_19=Absolute Value
@@ -180,28 +180,28 @@ WoditorEvCOMMAND_START
 [103][0,1]<1>()("Turn the run condition on or off when called. Do nothing when executed in parallel.")
 [111][7,0]<1>(2,1600000,1,2,1600000,-1,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("Turn on the pixel movement.")
+[103][0,1]<2>()("Turn on the pixel movement")
 [121][4,0]<2>(1600000,0,0,0)()
-[103][0,1]<2>()("Move followers to the leader's position.")
+[103][0,1]<2>()("Move followers to the leader's position")
 [270][1,0]<2>(36)()
-[103][0,1]<2>()("Start parallel execution.")
+[103][0,1]<2>()("Start parallel execution")
 [121][4,0]<2>(1600099,1,0,0)()
 [172][0,0]<2>()()
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
 [103][0,1]<2>()("Turn off. Reset the leader's X and Y pixel offsets to 0.")
 [121][4,0]<2>(1600000,0,0,0)()
-[103][0,1]<2>()("Enable normal movement and restore the leader's condition.")
+[103][0,1]<2>()("Enable normal movement and restore the leader's condition")
 [126][1,0]<2>(240)()
 [290][7,0]<2>(193,0,-2,0,0,0,0)()
-[103][0,1]<2>()("Ver.3.10: Changed the following to the Effect command.")
+[103][0,1]<2>()("v3.10: Changed the following to the Effect command")
 [290][7,0]<2>(129,0,-2,0,0,0,0)()
 [290][7,0]<2>(129,0,-3,0,0,0,0)()
 [290][7,0]<2>(129,0,-4,0,0,0,0)()
 [290][7,0]<2>(129,0,-5,0,0,0,0)()
 [290][7,0]<2>(129,0,-6,0,0,0,0)()
 [290][7,0]<2>(129,0,-7,0,0,0,0)()
-[103][0,1]<2>()("Move followers to the leader's position.")
+[103][0,1]<2>()("Move followers to the leader's position")
 [270][1,0]<2>(36)()
 [103][0,1]<2>()("Reset pixel offsets to 0.")
 [103][0,1]<2>()("  If not reset, it may get stuck in unexpected places or prevent passage through spaces one square wide.")
@@ -209,20 +209,20 @@ WoditorEvCOMMAND_START
 [121][4,0]<2>(1600010,0,0,16)()
 [121][4,0]<2>(1600010,9180008,0,4)()
 [121][4,0]<2>(1600010,0,0,16)()
-[103][0,1]<2>()("End parallel execution.")
+[103][0,1]<2>()("End parallel execution")
 [121][4,0]<2>(1600099,0,0,0)()
 [172][0,0]<2>()()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [0][0,0]<1>()()
 [498][0,0]<0>()()
-[103][0,1]<0>()("From here, process the pixel movement behavior corresponding to the key input.")
+[103][0,1]<0>()("From here, process the pixel movement behavior corresponding to the key input")
 [111][4,0]<0>(17,9000013,0,2)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("Disable normal movement using keys, and move characters only with the Pixel Movement command in this common event.")
+[103][0,1]<1>()("Disable normal movement using keys, and move characters only with the Pixel Movement command in this common event")
 [126][1,0]<1>(496)()
-[103][0,1]<1>()("Accelerate in the direction of the held key.")
-[103][0,1]<1>()("Check the up and down keys.")
+[103][0,1]<1>()("Accelerate in the direction of the held key")
+[103][0,1]<1>()("Check the up and down keys")
 [123][2,0]<1>(1600020,7)()
 [121][4,0]<1>(1600013,1600095,0,0)()
 [121][4,0]<1>(1600014,1600095,0,0)()
@@ -238,13 +238,13 @@ WoditorEvCOMMAND_START
 [121][4,0]<2>(1600012,1600014,0,1792)()
 [0][0,0]<2>()()
 [420][1,0]<1>(0)()
-[103][0,1]<2>()("Reduce speed.")
+[103][0,1]<2>()("Reduce speed")
 [121][4,0]<2>(1600012,1600012,1600097,12800)()
 [121][4,0]<2>(1600019,1600012,0,2048)()
 [121][4,0]<2>(1600012,1600012,1600019,12800)()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
-[103][0,1]<1>()("Check the left and right keys.")
+[103][0,1]<1>()("Check the left and right keys")
 [123][2,0]<1>(1600021,8)()
 [111][7,0]<1>(18,1600021,4,2,1600021,6,2)()
 [401][1,0]<1>(1)()
@@ -258,16 +258,16 @@ WoditorEvCOMMAND_START
 [121][4,0]<2>(1600011,1600013,0,1792)()
 [0][0,0]<2>()()
 [420][1,0]<1>(0)()
-[103][0,1]<2>()("Reduce speed.")
+[103][0,1]<2>()("Reduce speed")
 [121][4,0]<2>(1600011,1600011,1600097,12800)()
 [121][4,0]<2>(1600019,1600011,0,2048)()
 [121][4,0]<2>(1600011,1600011,1600019,12800)()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
-[103][0,1]<1>()("Add speed to <dqrt>internal values.<dqrt>")
+[103][0,1]<1>()("Add speed to <dqrt>internal values<dqrt>")
 [121][4,0]<1>(1600015,1600011,0,256)()
 [121][4,0]<1>(1600016,1600012,0,256)()
-[103][0,1]<1>()("Move if the internal value is 10 or higher.")
+[103][0,1]<1>()("Move if the internal value is 10 or higher")
 [121][4,0]<1>(1600010,9180007,0,4)()
 [121][4,0]<1>(1600017,0,0,0)()
 [121][4,0]<1>(1600018,0,0,0)()
@@ -299,7 +299,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<1>()("Move")
 [290][7,0]<1>(113,0,-2,0,1600017,1600018,0)()
 [179][1,0]<1>(0)()
-[103][0,1]<2>()("Debug command for speed check.")
+[103][0,1]<2>()("Debug command for speed check")
 [150][11,1]<2>(32,999888,0,1,1,1,255,0,0,100,0)("\E\f[12]Speed X \cself[11] Y \cself[12]")
 [0][0,0]<2>()()
 [498][0,0]<1>()()
@@ -326,7 +326,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<5>()()
 [0][0,0]<5>()()
 [499][0,0]<4>()()
-[103][0,1]<4>()("Ver.3.10: Changed the following to the Effect command.")
+[103][0,1]<4>()("v3.10: Changed the following to the Effect command")
 [290][7,0]<4>(129,0,-2,0,0,0,0)()
 [290][7,0]<4>(129,0,-3,0,0,0,0)()
 [290][7,0]<4>(129,0,-4,0,0,0,0)()
@@ -337,7 +337,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(2)()
 [103][0,1]<4>()("Left")
 [121][4,0]<4>(1600010,4,0,16)()
-[103][0,1]<4>()("Ver.3.10: Changed the following to the Effect command.")
+[103][0,1]<4>()("v3.10: Changed the following to the Effect command")
 [290][7,0]<4>(129,0,-2,0,1,0,0)()
 [290][7,0]<4>(129,0,-3,0,1,0,0)()
 [290][7,0]<4>(129,0,-4,0,1,0,0)()
@@ -348,7 +348,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(3)()
 [103][0,1]<4>()("Right")
 [121][4,0]<4>(1600010,6,0,16)()
-[103][0,1]<4>()("Ver.3.10: Changed the following to the Effect command.")
+[103][0,1]<4>()("v3.10: Changed the following to the Effect command")
 [290][7,0]<4>(129,0,-2,0,1,0,0)()
 [290][7,0]<4>(129,0,-3,0,1,0,0)()
 [290][7,0]<4>(129,0,-4,0,1,0,0)()
@@ -363,7 +363,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("Up")
 [121][4,0]<4>(1600010,8,0,16)()
-[103][0,1]<4>()("Ver.3.10: Changed the following to the Effect command.")
+[103][0,1]<4>()("v3.10: Changed the following to the Effect command")
 [290][7,0]<4>(129,0,-2,0,1,0,0)()
 [290][7,0]<4>(129,0,-3,0,1,0,0)()
 [290][7,0]<4>(129,0,-4,0,1,0,0)()
@@ -374,7 +374,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(2)()
 [103][0,1]<4>()("Upper Left")
 [121][4,0]<4>(1600010,7,0,16)()
-[103][0,1]<4>()("Ver.3.10: Changed the following to the Effect command.")
+[103][0,1]<4>()("v3.10: Changed the following to the Effect command")
 [290][7,0]<4>(129,0,-2,0,1,0,0)()
 [290][7,0]<4>(129,0,-3,0,1,0,0)()
 [290][7,0]<4>(129,0,-4,0,1,0,0)()
@@ -385,7 +385,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(3)()
 [103][0,1]<4>()("Upper Right")
 [121][4,0]<4>(1600010,9,0,16)()
-[103][0,1]<4>()("Ver.3.10: Changed the following to the Effect command.")
+[103][0,1]<4>()("v3.10: Changed the following to the Effect command")
 [290][7,0]<4>(129,0,-2,0,1,0,0)()
 [290][7,0]<4>(129,0,-3,0,1,0,0)()
 [290][7,0]<4>(129,0,-4,0,1,0,0)()
@@ -400,7 +400,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("Down")
 [121][4,0]<4>(1600010,2,0,16)()
-[103][0,1]<4>()("Ver.3.10: Changed the following to the Effect command.")
+[103][0,1]<4>()("v3.10: Changed the following to the Effect command")
 [290][7,0]<4>(129,0,-2,0,1,0,0)()
 [290][7,0]<4>(129,0,-3,0,1,0,0)()
 [290][7,0]<4>(129,0,-4,0,1,0,0)()
@@ -411,7 +411,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(2)()
 [103][0,1]<4>()("Lower Left")
 [121][4,0]<4>(1600010,1,0,16)()
-[103][0,1]<4>()("Ver.3.10: Changed the following to the Effect command.")
+[103][0,1]<4>()("v3.10: Changed the following to the Effect command")
 [290][7,0]<4>(129,0,-2,0,1,0,0)()
 [290][7,0]<4>(129,0,-3,0,1,0,0)()
 [290][7,0]<4>(129,0,-4,0,1,0,0)()
@@ -422,7 +422,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(3)()
 [103][0,1]<4>()("Lower Right")
 [121][4,0]<4>(1600010,3,0,16)()
-[103][0,1]<4>()("Ver.3.10: Changed the following to the Effect command.")
+[103][0,1]<4>()("v3.10: Changed the following to the Effect command")
 [290][7,0]<4>(129,0,-2,0,1,0,0)()
 [290][7,0]<4>(129,0,-3,0,1,0,0)()
 [290][7,0]<4>(129,0,-4,0,1,0,0)()
@@ -442,7 +442,7 @@ WoditorEvCOMMAND_START
 [111][4,0]<1>(1,1600098,1,2)()
 [401][1,0]<1>(1)()
 [290][7,0]<2>(193,0,-2,0,0,0,0)()
-[103][0,1]<2>()("Ver.3.10: Changed the following to the Effect command.")
+[103][0,1]<2>()("v3.10: Changed the following to the Effect command")
 [290][7,0]<2>(129,0,-2,0,0,0,0)()
 [290][7,0]<2>(129,0,-3,0,0,0,0)()
 [290][7,0]<2>(129,0,-4,0,0,0,0)()
@@ -452,11 +452,11 @@ WoditorEvCOMMAND_START
 [121][4,0]<2>(1600098,0,0,0)()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
-[103][0,1]<1>()("Reduce X speed.")
+[103][0,1]<1>()("Reduce X speed")
 [121][4,0]<1>(1600011,1600011,10,12800)()
 [121][4,0]<1>(1600019,1600011,0,2048)()
 [121][4,0]<1>(1600011,1600011,1600019,12800)()
-[103][0,1]<1>()("Reduce Y speed.")
+[103][0,1]<1>()("Reduce Y speed")
 [121][4,0]<1>(1600012,1600012,10,12800)()
 [121][4,0]<1>(1600019,1600012,0,2048)()
 [121][4,0]<1>(1600012,1600012,1600019,12800)()
@@ -479,28 +479,28 @@ WoditorEvCOMMAND_END
  |▼ Turn the run condition on or off when called. Do nothing when executed in parallel.
  |■Condition (Number):   [1] CSelf0[Mode] ==  1  /  [2] CSelf0[Mode] ==  -1  
  |-◇Condition:  [1]  [ CSelf0[Mode] == 1   ] Case↓
- | |▼ Turn on the pixel movement.
+ | |▼ Turn on the pixel movement
  | |■Set Variable: CSelf0[Mode] = 0 + 0 
- | |▼ Move followers to the leader's position.
+ | |▼ Move followers to the leader's position
  | |■Party Sprites: Warp All Followers to Leader
- | |▼ Start parallel execution.
+ | |▼ Start parallel execution
  | |■Set Variable: CSelf99[Activation Flag] = 1 + 0 
  | |■Exit Event
  | |■
  |-◇Condition:  [2]  [ CSelf0[Mode] == -1   ] Case↓
  | |▼ Turn off. Reset the leader's X and Y pixel offsets to 0.
  | |■Set Variable: CSelf0[Mode] = 0 + 0 
- | |▼ Enable normal movement and restore the leader's condition.
+ | |▼ Enable normal movement and restore the leader's condition
  | |■Enable/Disable Input:   Down  Left  Right  Up   [ Movement ✓   Key Input ✓ ]
  | |■Effect Character: Leader[Switch Fixed Direction] => OFF 
- | |▼ Ver.3.10: Changed the following to the Effect command.
+ | |▼ v3.10: Changed the following to the Effect command
  | |■Effect Character: Leader[Force Walk Animation] => OFF 
  | |■Effect Character: Follower 1[Force Walk Animation] => OFF 
  | |■Effect Character: Follower 2[Force Walk Animation] => OFF 
  | |■Effect Character: Follower 3[Force Walk Animation] => OFF 
  | |■Effect Character: Follower 4[Force Walk Animation] => OFF 
  | |■Effect Character: Follower 5[Force Walk Animation] => OFF 
- | |▼ Move followers to the leader's position.
+ | |▼ Move followers to the leader's position
  | |■Party Sprites: Warp All Followers to Leader
  | |▼ Reset pixel offsets to 0.
  | |▼   If not reset, it may get stuck in unexpected places or prevent passage through spaces one square wide.
@@ -508,97 +508,97 @@ WoditorEvCOMMAND_END
  | |■Set Variable: V[CSelf10[Destination Variable]] = 0 + 0 
  | |■Set Variable: CSelf10[Destination Variable] = 9180008 + 0 
  | |■Set Variable: V[CSelf10[Destination Variable]] = 0 + 0 
- | |▼ End parallel execution.
+ | |▼ End parallel execution
  | |■Set Variable: CSelf99[Activation Flag] = 0 + 0 
  | |■Exit Event
  | |■
  |◇End◇
  |■
 ◇Loop End Point◇◇
-▼ From here, process the pixel movement behavior corresponding to the key input.
+▼ From here, process the pixel movement behavior corresponding to the key input
 ■Condition (Number):   [1] Sys13:Event Active? (1:Yes) ==  0  
 -◇Condition:  [1]  [ Sys13:Event Active? (1:Yes) == 0   ] Case↓
- |▼ Disable normal movement using keys, and move characters only with the Pixel Movement command in this common event.
+ |▼ Disable normal movement using keys, and move characters only with the Pixel Movement command in this common event
  |■Enable/Disable Input:   Down  Left  Right  Up   [ Movement ×   Key Input ✓ ]
- |▼ Accelerate in the direction of the held key.
- |▼ Check the up and down keys.
+ |▼ Accelerate in the direction of the held key
+ |▼ Check the up and down keys
  |■Key Input: CSelf20[Up/Down Arrow Keys] [Normal Input]  Up/Down (8, 2)
- |■Set Variable: CSelf13[Max X Speed [1/10]] = CSelf95[Max Speed (20-30 Preferred)] + 0 
- |■Set Variable: CSelf14[Max Y Speed [1/10]] = CSelf95[Max Speed (20-30 Preferred)] + 0 
+ |■Set Variable: CSelf13[Max X Speed (1/10)] = CSelf95[Max Speed (20-30 Preferred)] + 0 
+ |■Set Variable: CSelf14[Max Y Speed (1/10)] = CSelf95[Max Speed (20-30 Preferred)] + 0 
  |■Condition (Number):   [1] CSelf20[Up/Down Arrow Keys] ==  8  /  [2] CSelf20[Up/Down Arrow Keys] ==  2  
  |-◇Condition:  [1]  [ CSelf20[Up/Down Arrow Keys] == 8   ] Case↓
  | |▼ Up
- | |■Set Variable: CSelf12[Y Speed [1/10]] -= CSelf96[Acceleration (2-3 Preferred)] + 0 
- | |■Set Variable: CSelf12[Y Speed [1/10]] Lower Bound= CSelf14[Max Y Speed [1/10]] * -1 
+ | |■Set Variable: CSelf12[Y Speed (1/10)] -= CSelf96[Acceleration (2-3 Preferred)] + 0 
+ | |■Set Variable: CSelf12[Y Speed (1/10)] Lower Bound= CSelf14[Max Y Speed (1/10)] * -1 
  | |■
  |-◇Condition:  [2]  [ CSelf20[Up/Down Arrow Keys] == 2   ] Case↓
  | |▼ Down
- | |■Set Variable: CSelf12[Y Speed [1/10]] += CSelf96[Acceleration (2-3 Preferred)] + 0 
- | |■Set Variable: CSelf12[Y Speed [1/10]] Upper Bound= CSelf14[Max Y Speed [1/10]] + 0 
+ | |■Set Variable: CSelf12[Y Speed (1/10)] += CSelf96[Acceleration (2-3 Preferred)] + 0 
+ | |■Set Variable: CSelf12[Y Speed (1/10)] Upper Bound= CSelf14[Max Y Speed (1/10)] + 0 
  | |■
  |-◇Else
- | |▼ Reduce speed.
- | |■Set Variable: CSelf12[Y Speed [1/10]] -= CSelf12[Y Speed [1/10]] / CSelf97[Deceleration (Higher Is Slower; 1-10 Pre..] 
- | |■Set Variable: CSelf19[Absolute Value] Absolute= CSelf12[Y Speed [1/10]] + 0 
- | |■Set Variable: CSelf12[Y Speed [1/10]] -= CSelf12[Y Speed [1/10]] / CSelf19[Absolute Value] 
+ | |▼ Reduce speed
+ | |■Set Variable: CSelf12[Y Speed (1/10)] -= CSelf12[Y Speed (1/10)] / CSelf97[Deceleration (Higher Is Slower; 1-10 Pre..] 
+ | |■Set Variable: CSelf19[Absolute Value] Absolute= CSelf12[Y Speed (1/10)] + 0 
+ | |■Set Variable: CSelf12[Y Speed (1/10)] -= CSelf12[Y Speed (1/10)] / CSelf19[Absolute Value] 
  | |■
  |◇End◇
- |▼ Check the left and right keys.
+ |▼ Check the left and right keys
  |■Key Input: CSelf21[Left/Right Arrow Keys] [Normal Input]  Left/Right (4, 6)
  |■Condition (Number):   [1] CSelf21[Left/Right Arrow Keys] ==  4  /  [2] CSelf21[Left/Right Arrow Keys] ==  6  
  |-◇Condition:  [1]  [ CSelf21[Left/Right Arrow Keys] == 4   ] Case↓
  | |▼ Left
- | |■Set Variable: CSelf11[X Speed [1/10]] -= CSelf96[Acceleration (2-3 Preferred)] + 0 
- | |■Set Variable: CSelf11[X Speed [1/10]] Lower Bound= CSelf13[Max X Speed [1/10]] * -1 
+ | |■Set Variable: CSelf11[X Speed (1/10)] -= CSelf96[Acceleration (2-3 Preferred)] + 0 
+ | |■Set Variable: CSelf11[X Speed (1/10)] Lower Bound= CSelf13[Max X Speed (1/10)] * -1 
  | |■
  |-◇Condition:  [2]  [ CSelf21[Left/Right Arrow Keys] == 6   ] Case↓
  | |▼ Right
- | |■Set Variable: CSelf11[X Speed [1/10]] += CSelf96[Acceleration (2-3 Preferred)] + 0 
- | |■Set Variable: CSelf11[X Speed [1/10]] Upper Bound= CSelf13[Max X Speed [1/10]] + 0 
+ | |■Set Variable: CSelf11[X Speed (1/10)] += CSelf96[Acceleration (2-3 Preferred)] + 0 
+ | |■Set Variable: CSelf11[X Speed (1/10)] Upper Bound= CSelf13[Max X Speed (1/10)] + 0 
  | |■
  |-◇Else
- | |▼ Reduce speed.
- | |■Set Variable: CSelf11[X Speed [1/10]] -= CSelf11[X Speed [1/10]] / CSelf97[Deceleration (Higher Is Slower; 1-10 Pre..] 
- | |■Set Variable: CSelf19[Absolute Value] Absolute= CSelf11[X Speed [1/10]] + 0 
- | |■Set Variable: CSelf11[X Speed [1/10]] -= CSelf11[X Speed [1/10]] / CSelf19[Absolute Value] 
+ | |▼ Reduce speed
+ | |■Set Variable: CSelf11[X Speed (1/10)] -= CSelf11[X Speed (1/10)] / CSelf97[Deceleration (Higher Is Slower; 1-10 Pre..] 
+ | |■Set Variable: CSelf19[Absolute Value] Absolute= CSelf11[X Speed (1/10)] + 0 
+ | |■Set Variable: CSelf11[X Speed (1/10)] -= CSelf11[X Speed (1/10)] / CSelf19[Absolute Value] 
  | |■
  |◇End◇
- |▼ Add speed to "internal values."
- |■Set Variable: CSelf15[X Internal Remainder [1/10]] += CSelf11[X Speed [1/10]] + 0 
- |■Set Variable: CSelf16[Y Internal Remainder [1/10]] += CSelf12[Y Speed [1/10]] + 0 
- |▼ Move if the internal value is 10 or higher.
+ |▼ Add speed to "internal values"
+ |■Set Variable: CSelf15[X Internal Remainder (1/10)] += CSelf11[X Speed (1/10)] + 0 
+ |■Set Variable: CSelf16[Y Internal Remainder (1/10)] += CSelf12[Y Speed (1/10)] + 0 
+ |▼ Move if the internal value is 10 or higher
  |■Set Variable: CSelf10[Destination Variable] = 9180007 + 0 
  |■Set Variable: CSelf17[X Displacement] = 0 + 0 
  |■Set Variable: CSelf18[Y Displacement] = 0 + 0 
- |■Condition (Number):   [1] CSelf15[X Internal Remainder [1/10]] >=  10  /  [2] CSelf15[X Internal Remainder [1/10]] <=  -10  
- |-◇Condition:  [1]  [ CSelf15[X Internal Remainder [1/10]] >= 10   ] Case↓
- | |■Set Variable: CSelf17[X Displacement] = CSelf15[X Internal Remainder [1/10]] / 10 
+ |■Condition (Number):   [1] CSelf15[X Internal Remainder (1/10)] >=  10  /  [2] CSelf15[X Internal Remainder (1/10)] <=  -10  
+ |-◇Condition:  [1]  [ CSelf15[X Internal Remainder (1/10)] >= 10   ] Case↓
+ | |■Set Variable: CSelf17[X Displacement] = CSelf15[X Internal Remainder (1/10)] / 10 
  | |▼ Subtract amount moved from the internal value
- | |■Set Variable: CSelf15[X Internal Remainder [1/10]] -= CSelf17[X Displacement] * 10 
+ | |■Set Variable: CSelf15[X Internal Remainder (1/10)] -= CSelf17[X Displacement] * 10 
  | |■
- |-◇Condition:  [2]  [ CSelf15[X Internal Remainder [1/10]] <= -10   ] Case↓
- | |■Set Variable: CSelf17[X Displacement] = CSelf15[X Internal Remainder [1/10]] / 10 
+ |-◇Condition:  [2]  [ CSelf15[X Internal Remainder (1/10)] <= -10   ] Case↓
+ | |■Set Variable: CSelf17[X Displacement] = CSelf15[X Internal Remainder (1/10)] / 10 
  | |▼ Subtract amount moved from the internal value
- | |■Set Variable: CSelf15[X Internal Remainder [1/10]] -= CSelf17[X Displacement] * 10 
+ | |■Set Variable: CSelf15[X Internal Remainder (1/10)] -= CSelf17[X Displacement] * 10 
  | |■
  |◇End◇
  |■Set Variable: CSelf10[Destination Variable] = 9180008 + 0 
- |■Condition (Number):   [1] CSelf16[Y Internal Remainder [1/10]] >=  10  /  [2] CSelf16[Y Internal Remainder [1/10]] <=  -10  
- |-◇Condition:  [1]  [ CSelf16[Y Internal Remainder [1/10]] >= 10   ] Case↓
- | |■Set Variable: CSelf18[Y Displacement] = CSelf16[Y Internal Remainder [1/10]] / 10 
+ |■Condition (Number):   [1] CSelf16[Y Internal Remainder (1/10)] >=  10  /  [2] CSelf16[Y Internal Remainder (1/10)] <=  -10  
+ |-◇Condition:  [1]  [ CSelf16[Y Internal Remainder (1/10)] >= 10   ] Case↓
+ | |■Set Variable: CSelf18[Y Displacement] = CSelf16[Y Internal Remainder (1/10)] / 10 
  | |▼ Subtract amount moved from the internal value
- | |■Set Variable: CSelf16[Y Internal Remainder [1/10]] -= CSelf18[Y Displacement] * 10 
+ | |■Set Variable: CSelf16[Y Internal Remainder (1/10)] -= CSelf18[Y Displacement] * 10 
  | |■
- |-◇Condition:  [2]  [ CSelf16[Y Internal Remainder [1/10]] <= -10   ] Case↓
- | |■Set Variable: CSelf18[Y Displacement] = CSelf16[Y Internal Remainder [1/10]] / 10 
+ |-◇Condition:  [2]  [ CSelf16[Y Internal Remainder (1/10)] <= -10   ] Case↓
+ | |■Set Variable: CSelf18[Y Displacement] = CSelf16[Y Internal Remainder (1/10)] / 10 
  | |▼ Subtract amount moved from the internal value
- | |■Set Variable: CSelf16[Y Internal Remainder [1/10]] -= CSelf18[Y Displacement] * 10 
+ | |■Set Variable: CSelf16[Y Internal Remainder (1/10)] -= CSelf18[Y Displacement] * 10 
  | |■
  |◇End◇
  |▼ Move
  |■Effect Character: Leader[Pixel Movement (Beta)] =>  X CSelf17[X Displacement]  Y CSelf18[Y Displacement]
  |■Repeat Loop [ 0 ] Times
- | |▼ Debug command for speed check.
+ | |▼ Debug command for speed check
  | |■Picture Show: 999888 [Top-Left] String [\E\f[12]Speed X ] X:0 Y:0 / 0(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  | |■
  |◇Loop End Point◇◇
@@ -625,7 +625,7 @@ WoditorEvCOMMAND_END
  | | | | |◇End◇
  | | | | |■
  | | | |◇End◇
- | | | |▼ Ver.3.10: Changed the following to the Effect command.
+ | | | |▼ v3.10: Changed the following to the Effect command
  | | | |■Effect Character: Leader[Force Walk Animation] => OFF 
  | | | |■Effect Character: Follower 1[Force Walk Animation] => OFF 
  | | | |■Effect Character: Follower 2[Force Walk Animation] => OFF 
@@ -636,7 +636,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [2]  [ CSelf21[Left/Right Arrow Keys] == 4   ] Case↓
  | | | |▼ Left
  | | | |■Set Variable: V[CSelf10[Destination Variable]] = 4 + 0 
- | | | |▼ Ver.3.10: Changed the following to the Effect command.
+ | | | |▼ v3.10: Changed the following to the Effect command
  | | | |■Effect Character: Leader[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 1[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 2[Force Walk Animation] => ON 
@@ -647,7 +647,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [3]  [ CSelf21[Left/Right Arrow Keys] == 6   ] Case↓
  | | | |▼ Right
  | | | |■Set Variable: V[CSelf10[Destination Variable]] = 6 + 0 
- | | | |▼ Ver.3.10: Changed the following to the Effect command.
+ | | | |▼ v3.10: Changed the following to the Effect command
  | | | |■Effect Character: Leader[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 1[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 2[Force Walk Animation] => ON 
@@ -662,7 +662,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [1]  [ CSelf21[Left/Right Arrow Keys] == 0   ] Case↓
  | | | |▼ Up
  | | | |■Set Variable: V[CSelf10[Destination Variable]] = 8 + 0 
- | | | |▼ Ver.3.10: Changed the following to the Effect command.
+ | | | |▼ v3.10: Changed the following to the Effect command
  | | | |■Effect Character: Leader[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 1[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 2[Force Walk Animation] => ON 
@@ -673,7 +673,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [2]  [ CSelf21[Left/Right Arrow Keys] == 4   ] Case↓
  | | | |▼ Upper Left
  | | | |■Set Variable: V[CSelf10[Destination Variable]] = 7 + 0 
- | | | |▼ Ver.3.10: Changed the following to the Effect command.
+ | | | |▼ v3.10: Changed the following to the Effect command
  | | | |■Effect Character: Leader[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 1[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 2[Force Walk Animation] => ON 
@@ -684,7 +684,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [3]  [ CSelf21[Left/Right Arrow Keys] == 6   ] Case↓
  | | | |▼ Upper Right
  | | | |■Set Variable: V[CSelf10[Destination Variable]] = 9 + 0 
- | | | |▼ Ver.3.10: Changed the following to the Effect command.
+ | | | |▼ v3.10: Changed the following to the Effect command
  | | | |■Effect Character: Leader[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 1[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 2[Force Walk Animation] => ON 
@@ -699,7 +699,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [1]  [ CSelf21[Left/Right Arrow Keys] == 0   ] Case↓
  | | | |▼ Down
  | | | |■Set Variable: V[CSelf10[Destination Variable]] = 2 + 0 
- | | | |▼ Ver.3.10: Changed the following to the Effect command.
+ | | | |▼ v3.10: Changed the following to the Effect command
  | | | |■Effect Character: Leader[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 1[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 2[Force Walk Animation] => ON 
@@ -710,7 +710,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [2]  [ CSelf21[Left/Right Arrow Keys] == 4   ] Case↓
  | | | |▼ Lower Left
  | | | |■Set Variable: V[CSelf10[Destination Variable]] = 1 + 0 
- | | | |▼ Ver.3.10: Changed the following to the Effect command.
+ | | | |▼ v3.10: Changed the following to the Effect command
  | | | |■Effect Character: Leader[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 1[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 2[Force Walk Animation] => ON 
@@ -721,7 +721,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [3]  [ CSelf21[Left/Right Arrow Keys] == 6   ] Case↓
  | | | |▼ Lower Right
  | | | |■Set Variable: V[CSelf10[Destination Variable]] = 3 + 0 
- | | | |▼ Ver.3.10: Changed the following to the Effect command.
+ | | | |▼ v3.10: Changed the following to the Effect command
  | | | |■Effect Character: Leader[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 1[Force Walk Animation] => ON 
  | | | |■Effect Character: Follower 2[Force Walk Animation] => ON 
@@ -741,7 +741,7 @@ WoditorEvCOMMAND_END
  |■Condition (Number):   [1] CSelf98[Direction Fixed?] ==  1  
  |-◇Condition:  [1]  [ CSelf98[Direction Fixed?] == 1   ] Case↓
  | |■Effect Character: Leader[Switch Fixed Direction] => OFF 
- | |▼ Ver.3.10: Changed the following to the Effect command.
+ | |▼ v3.10: Changed the following to the Effect command
  | |■Effect Character: Leader[Force Walk Animation] => OFF 
  | |■Effect Character: Follower 1[Force Walk Animation] => OFF 
  | |■Effect Character: Follower 2[Force Walk Animation] => OFF 
@@ -751,14 +751,14 @@ WoditorEvCOMMAND_END
  | |■Set Variable: CSelf98[Direction Fixed?] = 0 + 0 
  | |■
  |◇End◇
- |▼ Reduce X speed.
- |■Set Variable: CSelf11[X Speed [1/10]] -= CSelf11[X Speed [1/10]] / 10 
- |■Set Variable: CSelf19[Absolute Value] Absolute= CSelf11[X Speed [1/10]] + 0 
- |■Set Variable: CSelf11[X Speed [1/10]] -= CSelf11[X Speed [1/10]] / CSelf19[Absolute Value] 
- |▼ Reduce Y speed.
- |■Set Variable: CSelf12[Y Speed [1/10]] -= CSelf12[Y Speed [1/10]] / 10 
- |■Set Variable: CSelf19[Absolute Value] Absolute= CSelf12[Y Speed [1/10]] + 0 
- |■Set Variable: CSelf12[Y Speed [1/10]] -= CSelf12[Y Speed [1/10]] / CSelf19[Absolute Value] 
+ |▼ Reduce X speed
+ |■Set Variable: CSelf11[X Speed (1/10)] -= CSelf11[X Speed (1/10)] / 10 
+ |■Set Variable: CSelf19[Absolute Value] Absolute= CSelf11[X Speed (1/10)] + 0 
+ |■Set Variable: CSelf11[X Speed (1/10)] -= CSelf11[X Speed (1/10)] / CSelf19[Absolute Value] 
+ |▼ Reduce Y speed
+ |■Set Variable: CSelf12[Y Speed (1/10)] -= CSelf12[Y Speed (1/10)] / 10 
+ |■Set Variable: CSelf19[Absolute Value] Absolute= CSelf12[Y Speed (1/10)] + 0 
+ |■Set Variable: CSelf12[Y Speed (1/10)] -= CSelf12[Y Speed (1/10)] / CSelf19[Absolute Value] 
  |■
 ◇End◇
 ■

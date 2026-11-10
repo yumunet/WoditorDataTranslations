@@ -170,7 +170,7 @@ COMMAND_NUM=43
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("　キャラクター欄の全員分の表示・消去を行います。")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [250][5,4]<0>(18,51,0,69632,1600012)("","Base System Variables","","")
@@ -216,7 +216,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼ 　キャラクター欄の全員分の表示・消去を行います。
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Load DB(Var):  CSelf12[最大人数] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
@@ -237,7 +237,7 @@ WoditorEvCOMMAND_END
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf0[処理モード] == 1   ] Case↓
  | | | |▼ 瞬間表示
- | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 3:Display [Instant] / CSelf10[キャラ位置] / CSelf11[主人公ID]
+ | | | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 3:Display (Instant) / CSelf10[キャラ位置] / CSelf11[主人公ID]
  | | | |■
  | | |◇End◇
  | | |■

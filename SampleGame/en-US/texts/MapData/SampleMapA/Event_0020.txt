@@ -56,7 +56,7 @@ WoditorEvCOMMAND_START
 [290][7,0]<1>(32,0,0,26,0,-20,0)()
 [180][1,0]<1>(15)()
 [101][0,1]<1>()("Now, three pictures are overlapping!<\n>The Z-order of the newly shown pictures is <dqrt>0<dqrt>!")
-[101][0,1]<1>()("So, let's use the Picture Effect command to change<\n>the Z-order of only Wolfarl in the middle to <dqrt>1<dqrt>!")
+[101][0,1]<1>()("So, let's use Picture in the Effect command to change<\n>the Z-order of only Wolfarl in the middle to <dqrt>1<dqrt>!")
 [180][1,0]<1>(5)()
 [290][7,0]<1>(448,0,10,10,1,0,0)()
 [290][7,0]<1>(448,0,21,21,1,0,0)()
@@ -91,7 +91,7 @@ WoditorEvCOMMAND_END
  |■Effect Picture: 0 to 26 [Shift Position (Final Value)] Shift X 0 / Shift Y -20  [0] Frames
  |■Wait: 15 Frames
  |■Show Message: Now, three pictures are overlapping!\nThe Z-order of the newly shown pictures is "0"!
- |■Show Message: So, let's use the Picture Effect command to change\nthe Z-order of only Wolfarl in the middle to "1"!
+ |■Show Message: So, let's use Picture in the Effect command to change\nthe Z-order of only Wolfarl in the middle to "1"!
  |■Wait: 5 Frames
  |■Effect Picture: 10 [Z-Order]  Change to [1]
  |■Effect Picture: 21 [Z-Order]  Change to [1]

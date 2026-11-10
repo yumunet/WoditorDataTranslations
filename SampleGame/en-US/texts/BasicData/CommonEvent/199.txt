@@ -164,15 +164,15 @@ COMMAND_NUM=20
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("　戦闘ＤＢから主人公ＤＢにデータをコピーします。")
 [103][0,1]<0>()("　これ以後は、戦闘ＤＢは使用しません。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()("Databases Accessed by This Common Event:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()("Other Common Events Called from Here:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("Main Common Events Calling This:")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [250][5,4]<0>(20,4,0,69632,1600020)("","Base System Variables","","")
 [121][4,0]<0>(1600010,-1,0,0)()
@@ -187,15 +187,15 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼ 　戦闘ＤＢから主人公ＤＢにデータをコピーします。
 ▼ 　これ以後は、戦闘ＤＢは使用しません。
 ▼ 
-▼ [Databases Accessed by This Common Event]
+▼ Databases Accessed by This Common Event:
 ▼  
-▼ [Other Common Events Called from Here]
+▼ Other Common Events Called from Here:
 ▼  
-▼ [Main Common Events Calling This]
+▼ Main Common Events Calling This:
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Load DB(Var):  CSelf20 = VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) 
 ■Set Variable: CSelf10 = -1 + 0 

@@ -176,21 +176,21 @@ COMMAND_NUM=320
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("  Displays the menu command list, erases it, or updates the cursor display.")
 [103][0,1]<0>()("  The menu and cursor display coordinates and sizes are defined within this common event.")
 [103][0,1]<0>()("")
 [103][0,1]<0>()("  The menu commands displayed by this process are stored in the Variable DB.")
 [103][0,1]<0>()("  The command list itself is created in <dqrt>X┗[Map]Update Menu Commands<dqrt>.")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()("Databases Accessed by This Common Event:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()("Other Common Events Called from Here:")
 [103][0,1]<0>()("  In <dqrt>Display<dqrt> mode, <dqrt>X┗[Map]Update Menu Commands<dqrt> is executed to get the command list.")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("Main Common Events Calling This:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Pictures]")
+[103][0,1]<0>()("Pictures:")
 [103][0,1]<0>()("  Base Picture ID + 0 = Background")
 [103][0,1]<0>()("  Base Picture ID + 1 = Main Window")
 [103][0,1]<0>()("  Base Picture ID + 2 = Cursor")
@@ -198,7 +198,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("  Base Picture ID + 11-12 = Money Display Area")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("  Set parameters")
+[103][0,1]<0>()("  Set Parameters")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<0>()("Set a fixed value")
 [121][4,0]<0>(1600020,10000,0,0)()
@@ -253,7 +253,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("Initialize")
 [121][4,0]<0>(1600029,0,0,0)()
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("  Start main processing here")
+[103][0,1]<0>()("  Start Main Processing Here")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [111][4,0]<0>(1,1600000,-1,2)()
 [401][1,0]<0>(1)()
@@ -296,12 +296,12 @@ WoditorEvCOMMAND_START
 [150][2,0]<1>(819,1600021)()
 [121][4,0]<1>(1600010,1600088,32,8192)()
 [121][4,0]<1>(1600011,1600089,24,8192)()
-[103][0,1]<1>()("Fixed a bug where some areas were not displayed if the screen size wasn't divisible by 32 vertically or 24 horizontally (v3.20)")
+[103][0,1]<1>()("v3.20: Fixed a bug where some areas were not displayed if the screen size wasn't divisible by 32 vertically or 24 horizontally")
 [121][4,0]<1>(1600010,32,0,256)()
 [121][4,0]<1>(1600011,24,0,256)()
 [150][11,1]<1>(816,1600021,10,1600010,1600011,1,255,0,0,100,0)("<GRADY-779-000>")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<1>()("Display the menu")
+[103][0,1]<1>()("Display the Menu")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [121][4,0]<1>(1600021,1600020,1,0)()
 [150][2,0]<1>(819,1600021)()
@@ -321,7 +321,7 @@ WoditorEvCOMMAND_START
 [498][0,0]<1>()()
 [103][0,1]<1>()(" ")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<1>()("Display each command")
+[103][0,1]<1>()("Display Each Command")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [121][4,0]<1>(1600043,-1,0,0)()
 [179][1,0]<1>(1600027)()
@@ -393,7 +393,7 @@ WoditorEvCOMMAND_START
 [498][0,0]<1>()()
 [179][1,0]<1>(1)()
 [103][0,1]<2>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<2>()("Display the extra area (money)")
+[103][0,1]<2>()("Display the Extra Area (Money)")
 [103][0,1]<2>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [121][4,0]<2>(1600021,1600020,11,0)()
 [150][2,0]<2>(819,1600021)()
@@ -499,21 +499,21 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼   Displays the menu command list, erases it, or updates the cursor display.
 ▼   The menu and cursor display coordinates and sizes are defined within this common event.
 ▼ 
 ▼   The menu commands displayed by this process are stored in the Variable DB.
 ▼   The command list itself is created in "X┗[Map]Update Menu Commands".
 ▼ 
-▼ [Databases Accessed by This Common Event]
+▼ Databases Accessed by This Common Event:
 ▼  
-▼ [Other Common Events Called from Here]
+▼ Other Common Events Called from Here:
 ▼   In "Display" mode, "X┗[Map]Update Menu Commands" is executed to get the command list.
 ▼  
-▼ [Main Common Events Calling This]
+▼ Main Common Events Calling This:
 ▼  
-▼ [Pictures]
+▼ Pictures:
 ▼   Base Picture ID + 0 = Background
 ▼   Base Picture ID + 1 = Main Window
 ▼   Base Picture ID + 2 = Cursor
@@ -521,7 +521,7 @@ WoditorEvCOMMAND_END
 ▼   Base Picture ID + 11-12 = Money Display Area
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼   Set parameters
+▼   Set Parameters
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ Set a fixed value
 ■Set Variable: CSelf20[Base Picture ID] = 10000 + 0 
@@ -576,7 +576,7 @@ WoditorEvCOMMAND_END
 ▼ Initialize
 ■Set Variable: CSelf29[Full Update Flag] = 0 + 0 
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼   Start main processing here
+▼   Start Main Processing Here
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■Condition (Number):   [1] CSelf0[Mode] ==  -1  
 -◇Condition:  [1]  [ CSelf0[Mode] == -1   ] Case↓
@@ -619,12 +619,12 @@ WoditorEvCOMMAND_END
  |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
  |■Set Variable: CSelf10[Temp A] = CSelf88[Coordinate Scale X (x10)] * 32 
  |■Set Variable: CSelf11[Temp B] = CSelf89[Coordinate Scale Y (x10)] * 24 
- |▼ Fixed a bug where some areas were not displayed if the screen size wasn't divisible by 32 vertically or 24 horizontally (v3.20)
+ |▼ v3.20: Fixed a bug where some areas were not displayed if the screen size wasn't divisible by 32 vertically or 24 horizontally
  |■Set Variable: CSelf10[Temp A] += 32 + 0 
  |■Set Variable: CSelf11[Temp B] += 24 + 0 
  |■Picture Show: CSelf21[Temp Picture ID] [Top-Left] Window [<GRADY-779-000>] Size [CSelf10[Temp A],CSelf11[Temp B]] X:0 Y:0 / 10(0) Frames  / Pattern 1 / Opacity 255 / Multiply  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |▼ Display the menu
+ |▼ Display the Menu
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 1 
  |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 
@@ -644,7 +644,7 @@ WoditorEvCOMMAND_END
  |◇Loop End Point◇◇
  |▼  
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |▼ Display each command
+ |▼ Display Each Command
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |■Set Variable: CSelf43[Current Count] = -1 + 0 
  |■Repeat Loop [ CSelf27[Vertical Item Count] ] Times
@@ -716,7 +716,7 @@ WoditorEvCOMMAND_END
  |◇Loop End Point◇◇
  |■Repeat Loop [ 1 ] Times
  | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- | |▼ Display the extra area (money)
+ | |▼ Display the Extra Area (Money)
  | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 11 
  | |■Picture [Reset Delay]: CSelf21[Temp Picture ID] 

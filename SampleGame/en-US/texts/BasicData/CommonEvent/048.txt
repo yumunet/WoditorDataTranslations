@@ -72,7 +72,7 @@ CSELF_NAME_8=
 CSELF_NAME_9=
 CSELF_NAME_10=Repeat Count
 CSELF_NAME_11=Target Position
-CSELF_NAME_12=Equipment Position (in DB)
+CSELF_NAME_12=Equipment Position (In DB)
 CSELF_NAME_13=Max Equipment Slots
 CSELF_NAME_14=Equipment Slot
 CSELF_NAME_15=
@@ -85,8 +85,8 @@ CSELF_NAME_21=
 CSELF_NAME_22=Second Position
 CSELF_NAME_23=Second Ally ID
 CSELF_NAME_24=
-CSELF_NAME_25=Temp Variable A
-CSELF_NAME_26=Temp Variable B
+CSELF_NAME_25=Temp A
+CSELF_NAME_26=Temp B
 CSELF_NAME_27=
 CSELF_NAME_28=
 CSELF_NAME_29=
@@ -164,22 +164,22 @@ COMMAND_NUM=243
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()("Databases Accessed by This Common Event:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()("Other Common Events Called from Here:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("Main Common Events Calling This:")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("Specify the field index where Equipped Weapon in Allies begins here.")
+[103][0,1]<0>()("Specify the field index where Equipped Weapon in Allies begins here")
 [121][4,0]<0>(1600090,28,0,0)()
 [179][1,0]<0>(1)()
-[103][0,1]<1>()("Ver.3.30  The current save slot is now read every time at startup or immediately after loading.")
+[103][0,1]<1>()("v3.30: The current save slot is now read every time at startup or immediately after loading")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<1>()("Get the last-used save slot from System.sav every time. (System.sav's Normal Variable #0 is used for the last-used save slot).")
+[103][0,1]<1>()("Get the last-used save slot from System.sav every time. (System.sav's normal variable #0 is used for the last-used save slot.)")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [122][2,1]<1>(1600005,0)("Save/System.sav")
 [221][4,0]<1>(1600020,1600005,2000000,0)()
@@ -187,11 +187,11 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [498][0,0]<0>()()
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("If initialization is already done, stop here.")
+[103][0,1]<0>()("If initialization is already done, stop here")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [111][4,0]<0>(1,1600099,1,1)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("If the finish flag is set, essentially do nothing (long wait).")
+[103][0,1]<1>()("If the finish flag is set, essentially do nothing (long wait)")
 [179][1,0]<1>(999999)()
 [180][1,0]<2>(999999)()
 [0][0,0]<2>()()
@@ -206,15 +206,15 @@ WoditorEvCOMMAND_START
 [111][7,0]<0>(2,9000115,220,1,9000115,220,4)()
 [401][1,0]<0>(1)()
 [179][1,0]<1>(1)()
-[103][0,1]<2>()("New Process: Calculate the stretch ratio from the vertical and horizontal resolutions.")
+[103][0,1]<2>()("New Process: Calculate the stretch ratio from the vertical and horizontal resolutions")
 [121][4,0]<2>(1600025,9000116,32,12288)()
 [121][4,0]<2>(1600026,9000117,24,12288)()
 [250][5,4]<2>(18,97,0,65536,1600025)("","Base System Variables","","")
 [250][5,4]<2>(18,98,0,65536,1600026)("","Base System Variables","","")
-[103][0,1]<2>()("Although not used, store the old coordinate scale for common events distributed for older versions, based on the vertical size.")
+[103][0,1]<2>()("Although not used, store the old coordinate scale for common events distributed for older versions, based on the vertical size")
 [250][5,4]<2>(18,3,0,65536,1600026)("","Base System Variables","","")
-[103][0,1]<2>()("Calculate and store font size.")
-[103][0,1]<2>()("Ver.3.00  Font size calculation now uses the smaller of the vertical and horizontal screen scales. ")
+[103][0,1]<2>()("Calculate and store font size")
+[103][0,1]<2>()("v3.00: Font size calculation now uses the smaller of the vertical and horizontal screen scales")
 [121][4,0]<2>(1600026,1600025,0,1792)()
 [103][0,1]<2>()(" ")
 [250][5,4]<2>(18,5,0,65536,1600026)("","Base System Variables","","")
@@ -235,7 +235,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [401][1,0]<0>(2)()
 [179][1,0]<1>(0)()
-[103][0,1]<2>()("Old Process: In the past, tile size and resolution were proportional, so we determined it using Sys 84.")
+[103][0,1]<2>()("Old Process: In the past, tile size and resolution were proportional, so we determined it using Sys 84")
 [111][10,0]<2>(3,9000084,0,2,9000084,1,2,9000084,2,2)()
 [401][1,0]<2>(1)()
 [250][5,4]<3>(18,97,0,65536,10)("","Base System Variables","","")
@@ -245,7 +245,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<3>(18,7,0,65536,6)("","Base System Variables","","")
 [121][4,0]<3>(9000008,12,0,0)()
 [121][4,0]<3>(9000023,9000008,2,12288)()
-[103][0,1]<3>()("Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale.")
+[103][0,1]<3>()("Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale")
 [250][5,4]<3>(18,3,0,65536,10)("","Base System Variables","","")
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
@@ -256,7 +256,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<3>(18,7,0,65536,12)("","Base System Variables","","")
 [121][4,0]<3>(9000008,24,0,0)()
 [121][4,0]<3>(9000023,9000008,2,12288)()
-[103][0,1]<3>()("Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale.")
+[103][0,1]<3>()("Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale")
 [250][5,4]<3>(18,3,0,65536,20)("","Base System Variables","","")
 [0][0,0]<3>()()
 [401][1,0]<2>(3)()
@@ -267,7 +267,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<3>(18,7,0,65536,15)("","Base System Variables","","")
 [121][4,0]<3>(9000008,30,0,0)()
 [121][4,0]<3>(9000023,9000008,2,12288)()
-[103][0,1]<3>()("Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale.")
+[103][0,1]<3>()("Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale")
 [250][5,4]<3>(18,3,0,65536,25)("","Base System Variables","","")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
@@ -278,7 +278,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600099,1,0,0)()
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("Initialize other parameters.")
+[103][0,1]<0>()("Initialize other parameters")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<0>()("Enemy/Ally Maximum")
 [250][5,4]<0>(18,51,0,65536,6)("","Base System Variables","","")
@@ -301,7 +301,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(9000037,2,0,0)()
 [300][2,1]<0>(0,0)("X[Map]Update Party Info")
 [179][1,0]<0>(1)()
-[103][0,1]<1>()("If there are duplicate members, remove them.")
+[103][0,1]<1>()("If there are duplicate members, remove them")
 [250][5,4]<1>(18,51,0,69632,1600016)("","Base System Variables","","")
 [121][4,0]<1>(1600017,-1,0,0)()
 [179][1,0]<1>(1600016)()
@@ -331,25 +331,25 @@ WoditorEvCOMMAND_START
 [300][2,1]<0>(0,0)("X[Map]Update Party Sprites")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("Convert character equipments to Weapons (ID 20000+) or Armor (ID 30000+).")
+[103][0,1]<0>()("Convert character equipments to Weapons (ID 20000+) or Armor (ID 30000+)")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [250][5,4]<0>(0,-1,33,69632,1600010)("","Allies","","")
-[103][0,1]<0>()("Loop for all characters.")
+[103][0,1]<0>()("Loop for all characters")
 [121][4,0]<0>(1600011,-1,0,0)()
 [179][1,0]<0>(1600010)()
 [121][4,0]<1>(1600011,1,0,256)()
 [250][5,4]<1>(18,0,22,332288,1600013)("","System Settings","","Equippable Slots")
-[103][0,1]<1>()("Loop to check each piece of equipment from here.")
+[103][0,1]<1>()("Loop to check each piece of equipment from here")
 [121][4,0]<1>(1600014,-1,0,0)()
 [121][4,0]<1>(1600012,1600090,1,4096)()
 [179][1,0]<1>(1600013)()
-[103][0,1]<2>()("Read the original ID (0-9999).")
+[103][0,1]<2>()("Read the original ID (0-9999)")
 [121][4,0]<2>(1600012,1,0,256)()
 [121][4,0]<2>(1600014,1,0,256)()
 [250][5,4]<2>(0,1600011,1600012,69632,1600020)("","Allies","","")
 [111][7,0]<2>(2,1600014,0,2,1600014,1,1)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("If the ID is 0 or higher, convert it to Weapon ID (20000+).")
+[103][0,1]<3>()("If the ID is 0 or higher, convert it to Weapon ID (20000+)")
 [111][4,0]<3>(1,1600020,0,1)()
 [401][1,0]<3>(1)()
 [121][4,0]<4>(1600020,1600020,10000,16384)()
@@ -358,7 +358,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<3>()()
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
-[103][0,1]<3>()("If the ID is 0 or higher, convert it to Armor ID (30000+).")
+[103][0,1]<3>()("If the ID is 0 or higher, convert it to Armor ID (30000+)")
 [111][4,0]<3>(1,1600020,0,1)()
 [401][1,0]<3>(1)()
 [121][4,0]<4>(1600020,1600020,10000,16384)()
@@ -367,28 +367,28 @@ WoditorEvCOMMAND_START
 [499][0,0]<3>()()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
-[103][0,1]<2>()("Store again.")
+[103][0,1]<2>()("Store again")
 [250][5,4]<2>(0,1600011,1600012,65536,1600020)("","Allies","","")
 [0][0,0]<2>()()
 [498][0,0]<1>()()
 [103][0,1]<1>()(" ")
-[103][0,1]<1>()("Reset auto-change amount to 0.")
+[103][0,1]<1>()("Reset auto-change amount to 0")
 [250][5,4]<1>(21,1600011,11,327680,0)("","×Allies Temp Data","","[Temp] HP Auto Change")
 [250][5,4]<1>(21,1600011,12,327680,0)("","×Allies Temp Data","","[Temp] SP Auto Change")
-[103][0,1]<1>()("Calculate temporary stats.")
+[103][0,1]<1>()("Calculate temporary stats")
 [300][3,1]<1>(0,1,1600011)("X[Map]CalcTempStats <Initialize>")
 [300][3,1]<1>(0,1,1600011)("X[Map]CalcTempStats <Equipments>")
 [300][3,1]<1>(0,1,1600011)("X[Map]CalcTempStats <StatusEffects>")
-[103][0,1]<1>()("Fill up HP and SP.")
+[103][0,1]<1>()("Fill up HP and SP")
 [300][6,1]<1>(0,4,1600011,22,999999,0)("X[Map]Change Parameter")
 [300][6,1]<1>(0,4,1600011,23,999999,0)("X[Map]Change Parameter")
 [0][0,0]<1>()()
 [498][0,0]<0>()()
 [103][0,1]<0>()(" ")
 [179][1,0]<0>(0)()
-[103][0,1]<1>()("Moved up, so commented out with 0 loops.")
+[103][0,1]<1>()("Moved up, so commented out with 0 loops")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<1>()("Get the last-used save slot from System.sav. (System.sav's Normal Variable #0 is used for the last-used save slot).")
+[103][0,1]<1>()("Get the last-used save slot from System.sav. (System.sav's normal variable #0 is used for the last-used save slot.)")
 [103][0,1]<1>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [122][2,1]<1>(1600005,0)("Save/System.sav")
 [221][4,0]<1>(1600020,1600005,2000000,0)()
@@ -396,7 +396,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [498][0,0]<0>()()
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("Ver.3.16  Changed the initial volume to 60 and corrected the font weight.")
+[103][0,1]<0>()("v3.16: Changed the initial volume to 60 and corrected the font weight")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [121][4,0]<0>(9000100,60,0,0)()
 [121][4,0]<0>(9000101,60,0,0)()
@@ -410,22 +410,22 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼ 
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Databases Accessed by This Common Event]
+▼ Databases Accessed by This Common Event:
 ▼  
-▼ [Other Common Events Called from Here]
+▼ Other Common Events Called from Here:
 ▼  
-▼ [Main Common Events Calling This]
+▼ Main Common Events Calling This:
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼ Specify the field index where Equipped Weapon in Allies begins here.
+▼ Specify the field index where Equipped Weapon in Allies begins here
 ■Set Variable: CSelf90[Equipments Check Start Position] = 28 + 0 
 ■Repeat Loop [ 1 ] Times
- |▼ Ver.3.30  The current save slot is now read every time at startup or immediately after loading.
+ |▼ v3.30: The current save slot is now read every time at startup or immediately after loading
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |▼ Get the last-used save slot from System.sav every time. (System.sav's Normal Variable #0 is used for the last-used save slot).
+ |▼ Get the last-used save slot from System.sav every time. (System.sav's normal variable #0 is used for the last-used save slot.)
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |■Set String: CSelf5 = "Save/System.sav"
  |■Read Save Data:  CSelf20[Temp Storage ID] = Save Data [CSelf5]'s V0[[Sample Game] Cook Appears]
@@ -433,11 +433,11 @@ WoditorEvCOMMAND_END
  |■
 ◇Loop End Point◇◇
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼ If initialization is already done, stop here.
+▼ If initialization is already done, stop here
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■Condition (Number):   [1] CSelf99[Finish Flag] >=  1  
 -◇Condition:  [1]  [ CSelf99[Finish Flag] >= 1   ] Case↓
- |▼ If the finish flag is set, essentially do nothing (long wait).
+ |▼ If the finish flag is set, essentially do nothing (long wait)
  |■Repeat Loop [ 999999 ] Times
  | |■Wait: 999999 Frames
  | |■
@@ -452,36 +452,36 @@ WoditorEvCOMMAND_END
 ■Condition (Number):   [1] Sys115:[RO] Game.exe Version (x100) >=  220  /  [2] Sys115:[RO] Game.exe Version (x100) <  220  
 -◇Condition:  [1]  [ Sys115:[RO] Game.exe Version (x100) >= 220   ] Case↓
  |■Repeat Loop [ 1 ] Times
- | |▼ New Process: Calculate the stretch ratio from the vertical and horizontal resolutions.
- | |■Set Variable: CSelf25[Temp Variable A] = Sys116:[RO] Screen Width / 32 
- | |■Set Variable: CSelf26[Temp Variable B] = Sys117:[RO] Screen Height / 24 
- | |■Write to DB(Var): VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) =  CSelf25[Temp Variable A]
- | |■Write to DB(Var): VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) =  CSelf26[Temp Variable B]
- | |▼ Although not used, store the old coordinate scale for common events distributed for older versions, based on the vertical size.
- | |■Write to DB(Var): VarDB[ "Base System Variables":3:0 ] (18:[×Unused] Coord Scale [x10]:Number) =  CSelf26[Temp Variable B]
- | |▼ Calculate and store font size.
- | |▼ Ver.3.00  Font size calculation now uses the smaller of the vertical and horizontal screen scales. 
- | |■Set Variable: CSelf26[Temp Variable B] Upper Bound= CSelf25[Temp Variable A] + 0 
+ | |▼ New Process: Calculate the stretch ratio from the vertical and horizontal resolutions
+ | |■Set Variable: CSelf25[Temp A] = Sys116:[RO] Screen Width / 32 
+ | |■Set Variable: CSelf26[Temp B] = Sys117:[RO] Screen Height / 24 
+ | |■Write to DB(Var): VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) =  CSelf25[Temp A]
+ | |■Write to DB(Var): VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) =  CSelf26[Temp B]
+ | |▼ Although not used, store the old coordinate scale for common events distributed for older versions, based on the vertical size
+ | |■Write to DB(Var): VarDB[ "Base System Variables":3:0 ] (18:[×Unused] Coord Scale [x10]:Number) =  CSelf26[Temp B]
+ | |▼ Calculate and store font size
+ | |▼ v3.00: Font size calculation now uses the smaller of the vertical and horizontal screen scales
+ | |■Set Variable: CSelf26[Temp B] Upper Bound= CSelf25[Temp A] + 0 
  | |▼  
- | |■Write to DB(Var): VarDB[ "Base System Variables":5:0 ] (18:System Basic Font Size:Number) =  CSelf26[Temp Variable B]
- | |■Set Variable: CSelf25[Temp Variable A] = CSelf26[Temp Variable B] * 8 
- | |■Set Variable: CSelf25[Temp Variable A] /= 10 + 0 
- | |■Write to DB(Var): VarDB[ "Base System Variables":6:0 ] (18:System Min Font Size:Number) =  CSelf25[Temp Variable A]
- | |■Set Variable: CSelf25[Temp Variable A] = CSelf26[Temp Variable B] * 6 
- | |■Set Variable: CSelf25[Temp Variable A] /= 10 + 0 
- | |■Write to DB(Var): VarDB[ "Base System Variables":7:0 ] (18:System Smallest Font Size:Number) =  CSelf25[Temp Variable A]
- | |■Set Variable: CSelf25[Temp Variable A] = CSelf26[Temp Variable B] * 12 
- | |■Set Variable: CSelf25[Temp Variable A] /= 10 + 0 
- | |■Set Variable: Sys8:Default Font Size = CSelf25[Temp Variable A] + 0 
- | |■Set Variable: CSelf25[Temp Variable A] = CSelf26[Temp Variable B] * 5 
- | |■Set Variable: CSelf25[Temp Variable A] /= 10 + 0 
- | |■Set Variable: Sys23:Ruby Font Size = CSelf25[Temp Variable A] + 0 
+ | |■Write to DB(Var): VarDB[ "Base System Variables":5:0 ] (18:System Basic Font Size:Number) =  CSelf26[Temp B]
+ | |■Set Variable: CSelf25[Temp A] = CSelf26[Temp B] * 8 
+ | |■Set Variable: CSelf25[Temp A] /= 10 + 0 
+ | |■Write to DB(Var): VarDB[ "Base System Variables":6:0 ] (18:System Min Font Size:Number) =  CSelf25[Temp A]
+ | |■Set Variable: CSelf25[Temp A] = CSelf26[Temp B] * 6 
+ | |■Set Variable: CSelf25[Temp A] /= 10 + 0 
+ | |■Write to DB(Var): VarDB[ "Base System Variables":7:0 ] (18:System Smallest Font Size:Number) =  CSelf25[Temp A]
+ | |■Set Variable: CSelf25[Temp A] = CSelf26[Temp B] * 12 
+ | |■Set Variable: CSelf25[Temp A] /= 10 + 0 
+ | |■Set Variable: Sys8:Default Font Size = CSelf25[Temp A] + 0 
+ | |■Set Variable: CSelf25[Temp A] = CSelf26[Temp B] * 5 
+ | |■Set Variable: CSelf25[Temp A] /= 10 + 0 
+ | |■Set Variable: Sys23:Ruby Font Size = CSelf25[Temp A] + 0 
  | |■
  |◇Loop End Point◇◇
  |■
 -◇Condition:  [2]  [ Sys115:[RO] Game.exe Version (x100) < 220   ] Case↓
  |■Repeat Loop [ 0 ] Times
- | |▼ Old Process: In the past, tile size and resolution were proportional, so we determined it using Sys 84.
+ | |▼ Old Process: In the past, tile size and resolution were proportional, so we determined it using Sys 84
  | |■Condition (Number):   [1] Sys84:Screen Resolution (0-2, -1:Other) ==  0  /  [2] Sys84:Screen Resolution (0-2, -1:Other) ==  1  /  [3] Sys84:Screen Resolution (0-2, -1:Other) ==  2  
  | |-◇Condition:  [1]  [ Sys84:Screen Resolution (0-2, -1:Other) == 0   ] Case↓
  | | |■Write to DB(Var): VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) =  10
@@ -491,7 +491,7 @@ WoditorEvCOMMAND_END
  | | |■Write to DB(Var): VarDB[ "Base System Variables":7:0 ] (18:System Smallest Font Size:Number) =  6
  | | |■Set Variable: Sys8:Default Font Size = 12 + 0 
  | | |■Set Variable: Sys23:Ruby Font Size = Sys8:Default Font Size / 2 
- | | |▼ Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale.
+ | | |▼ Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale
  | | |■Write to DB(Var): VarDB[ "Base System Variables":3:0 ] (18:[×Unused] Coord Scale [x10]:Number) =  10
  | | |■
  | |-◇Condition:  [2]  [ Sys84:Screen Resolution (0-2, -1:Other) == 1   ] Case↓
@@ -502,7 +502,7 @@ WoditorEvCOMMAND_END
  | | |■Write to DB(Var): VarDB[ "Base System Variables":7:0 ] (18:System Smallest Font Size:Number) =  12
  | | |■Set Variable: Sys8:Default Font Size = 24 + 0 
  | | |■Set Variable: Sys23:Ruby Font Size = Sys8:Default Font Size / 2 
- | | |▼ Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale.
+ | | |▼ Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale
  | | |■Write to DB(Var): VarDB[ "Base System Variables":3:0 ] (18:[×Unused] Coord Scale [x10]:Number) =  20
  | | |■
  | |-◇Condition:  [3]  [ Sys84:Screen Resolution (0-2, -1:Other) == 2   ] Case↓
@@ -513,7 +513,7 @@ WoditorEvCOMMAND_END
  | | |■Write to DB(Var): VarDB[ "Base System Variables":7:0 ] (18:System Smallest Font Size:Number) =  15
  | | |■Set Variable: Sys8:Default Font Size = 30 + 0 
  | | |■Set Variable: Sys23:Ruby Font Size = Sys8:Default Font Size / 2 
- | | |▼ Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale.
+ | | |▼ Although not used, it may be used in common events distributed for older versions, so it's also stored in the old coordinate scale
  | | |■Write to DB(Var): VarDB[ "Base System Variables":3:0 ] (18:[×Unused] Coord Scale [x10]:Number) =  25
  | | |■
  | |◇End◇
@@ -524,7 +524,7 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf99[Finish Flag] = 1 + 0 
 ▼  
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼ Initialize other parameters.
+▼ Initialize other parameters
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ Enemy/Ally Maximum
 ■Write to DB(Var): VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) =  6
@@ -547,7 +547,7 @@ WoditorEvCOMMAND_END
 ■Set Variable: Sys37:Distance Between Members (Steps) = 2 + 0 
 ■Call Event [Name]: ["X[Map]Update Party Info"] <CommonEv 79> 
 ■Repeat Loop [ 1 ] Times
- |▼ If there are duplicate members, remove them.
+ |▼ If there are duplicate members, remove them
  |■Load DB(Var):  CSelf16[Member Check Count] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
  |■Set Variable: CSelf17[Member Position] = -1 + 0 
  |■Repeat Loop [ CSelf16[Member Check Count] ] Times
@@ -577,25 +577,25 @@ WoditorEvCOMMAND_END
 ■Call Event [Name]: ["X[Map]Update Party Sprites"] <CommonEv 80> 
 ▼  
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼ Convert character equipments to Weapons (ID 20000+) or Armor (ID 30000+).
+▼ Convert character equipments to Weapons (ID 20000+) or Armor (ID 30000+)
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■Load DB(Var):  CSelf10[Repeat Count] = VarDB[Type "Allies"(0)'s Data Count]
-▼ Loop for all characters.
+▼ Loop for all characters
 ■Set Variable: CSelf11[Target Position] = -1 + 0 
 ■Repeat Loop [ CSelf10[Repeat Count] ] Times
  |■Set Variable: CSelf11[Target Position] += 1 + 0 
  |■Load DB(User):  CSelf13[Max Equipment Slots] = UserDB[ "System Settings":0:"Equippable Slots" ] (17:Basic System Settings:22) 
- |▼ Loop to check each piece of equipment from here.
+ |▼ Loop to check each piece of equipment from here
  |■Set Variable: CSelf14[Equipment Slot] = -1 + 0 
- |■Set Variable: CSelf12[Equipment Position (in DB)] = CSelf90[Equipments Check Start Position] - 1 
+ |■Set Variable: CSelf12[Equipment Position (In DB)] = CSelf90[Equipments Check Start Position] - 1 
  |■Repeat Loop [ CSelf13[Max Equipment Slots] ] Times
- | |▼ Read the original ID (0-9999).
- | |■Set Variable: CSelf12[Equipment Position (in DB)] += 1 + 0 
+ | |▼ Read the original ID (0-9999)
+ | |■Set Variable: CSelf12[Equipment Position (In DB)] += 1 + 0 
  | |■Set Variable: CSelf14[Equipment Slot] += 1 + 0 
- | |■Load DB(Var):  CSelf20[Temp Storage ID] = VarDB[ "Allies":CSelf11[Target Position]:CSelf12[Equipment Position (in DB)] ] (0:-:-) 
+ | |■Load DB(Var):  CSelf20[Temp Storage ID] = VarDB[ "Allies":CSelf11[Target Position]:CSelf12[Equipment Position (In DB)] ] (0:-:-) 
  | |■Condition (Number):   [1] CSelf14[Equipment Slot] ==  0  /  [2] CSelf14[Equipment Slot] >=  1  
  | |-◇Condition:  [1]  [ CSelf14[Equipment Slot] == 0   ] Case↓
- | | |▼ If the ID is 0 or higher, convert it to Weapon ID (20000+).
+ | | |▼ If the ID is 0 or higher, convert it to Weapon ID (20000+)
  | | |■Condition (Number):   [1] CSelf20[Temp Storage ID] >=  0  
  | | |-◇Condition:  [1]  [ CSelf20[Temp Storage ID] >= 0   ] Case↓
  | | | |■Set Variable: CSelf20[Temp Storage ID] = CSelf20[Temp Storage ID] % 10000 
@@ -604,7 +604,7 @@ WoditorEvCOMMAND_END
  | | |◇End◇
  | | |■
  | |-◇Condition:  [2]  [ CSelf14[Equipment Slot] >= 1   ] Case↓
- | | |▼ If the ID is 0 or higher, convert it to Armor ID (30000+).
+ | | |▼ If the ID is 0 or higher, convert it to Armor ID (30000+)
  | | |■Condition (Number):   [1] CSelf20[Temp Storage ID] >=  0  
  | | |-◇Condition:  [1]  [ CSelf20[Temp Storage ID] >= 0   ] Case↓
  | | | |■Set Variable: CSelf20[Temp Storage ID] = CSelf20[Temp Storage ID] % 10000 
@@ -613,28 +613,28 @@ WoditorEvCOMMAND_END
  | | |◇End◇
  | | |■
  | |◇End◇
- | |▼ Store again.
- | |■Write to DB(Var): VarDB[ "Allies":CSelf11[Target Position]:CSelf12[Equipment Position (in DB)] ] (0:-:-) =  CSelf20[Temp Storage ID]
+ | |▼ Store again
+ | |■Write to DB(Var): VarDB[ "Allies":CSelf11[Target Position]:CSelf12[Equipment Position (In DB)] ] (0:-:-) =  CSelf20[Temp Storage ID]
  | |■
  |◇Loop End Point◇◇
  |▼  
- |▼ Reset auto-change amount to 0.
+ |▼ Reset auto-change amount to 0
  |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf11[Target Position]:"[Temp] HP Auto Change" ] (17:-:11) =  0
  |■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf11[Target Position]:"[Temp] SP Auto Change" ] (17:-:12) =  0
- |▼ Calculate temporary stats.
+ |▼ Calculate temporary stats
  |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf11[Target Position]
  |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf11[Target Position]
  |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf11[Target Position]
- |▼ Fill up HP and SP.
+ |▼ Fill up HP and SP
  |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf11[Target Position] / 22:HP / 999999 / 0:No
  |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf11[Target Position] / 23:SP / 999999 / 0:No
  |■
 ◇Loop End Point◇◇
 ▼  
 ■Repeat Loop [ 0 ] Times
- |▼ Moved up, so commented out with 0 loops.
+ |▼ Moved up, so commented out with 0 loops
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- |▼ Get the last-used save slot from System.sav. (System.sav's Normal Variable #0 is used for the last-used save slot).
+ |▼ Get the last-used save slot from System.sav. (System.sav's normal variable #0 is used for the last-used save slot.)
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |■Set String: CSelf5 = "Save/System.sav"
  |■Read Save Data:  CSelf20[Temp Storage ID] = Save Data [CSelf5]'s V0[[Sample Game] Cook Appears]
@@ -642,7 +642,7 @@ WoditorEvCOMMAND_END
  |■
 ◇Loop End Point◇◇
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼ Ver.3.16  Changed the initial volume to 60 and corrected the font weight.
+▼ v3.16: Changed the initial volume to 60 and corrected the font weight
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■Set Variable: Sys100:BGM Volume Multiplier (%) = 60 + 0 
 ■Set Variable: Sys101:BGS Volume Multiplier (%) = 60 + 0 

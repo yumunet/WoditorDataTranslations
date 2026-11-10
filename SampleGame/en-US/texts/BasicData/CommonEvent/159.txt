@@ -170,7 +170,7 @@ COMMAND_NUM=332
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("　技能選択が実行されたときの、技能選択＋ターゲット選択処理を行います。")
 [103][0,1]<0>()("　また、コマンド選択時の直接技能発動処理や、アイテムからの技能起動処理も行います。")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
@@ -505,7 +505,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼ 　技能選択が実行されたときの、技能選択＋ターゲット選択処理を行います。
 ▼ 　また、コマンド選択時の直接技能発動処理や、アイテムからの技能起動処理も行います。
 ▼ ―――――――――――――――――――――――――――――――――――
@@ -582,7 +582,7 @@ WoditorEvCOMMAND_END
  | | |■Repeat Loop [ 1 ] Times
  | | | |▼ 万能ウィンドウ選択処理を実行
  | | | |■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) =  CSelf98
- | | | |■Call Event [Name]: CSelf22[一時技能ｺｰﾄﾞ] = ["X[Com]U-Window: Select"] <CommonEv 65>  / 2:Loop Until Selected (Don't Initialize Cursor)
+ | | | |■Call Event [Name]: CSelf22[一時技能ｺｰﾄﾞ] = ["X[Com]U-Window: Select"] <CommonEv 65>  / 2:Loop Until Selected (Don't initialize cursor)
  | | | |■Load DB(Var):  CSelf98 = VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) 
  | | | |■Call Event [Name]: ["X[Bat]Set Cursor Memory Pos"] <CommonEv 156>  / 10:[戦闘]技能(要ｷｬﾗ指定) / CSelf0[発動スロット] / CSelf98
  | | | |■

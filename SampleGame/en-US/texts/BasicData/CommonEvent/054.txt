@@ -167,15 +167,15 @@ COMMAND_NUM=28
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("  Returns the specified item quantity.")
 [103][0,1]<0>()("  This common event is always used to get the item quantity in the Base System.")
 [103][0,1]<0>()("")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()("Databases Accessed by This Common Event:")
 [103][0,1]<0>()("  Variable DB <dqrt>┣ Owned Items<dqrt>")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()("Other Common Events Called from Here:")
 [103][0,1]<0>()("  None")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
@@ -191,22 +191,22 @@ WoditorEvCOMMAND_START
 [172][0,0]<1>()()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
-[103][0,1]<0>()("Get the item quantity.")
+[103][0,1]<0>()("Get the item quantity")
 [250][5,4]<0>(4,1600000,0,69632,1600010)("","┣ Owned Items","","")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼   Returns the specified item quantity.
 ▼   This common event is always used to get the item quantity in the Base System.
 ▼ 
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Databases Accessed by This Common Event]
+▼ Databases Accessed by This Common Event:
 ▼   Variable DB "┣ Owned Items"
 ▼  
-▼ [Other Common Events Called from Here]
+▼ Other Common Events Called from Here:
 ▼   None
 ▼  
 ▼ ―――――――――――――――――――――――――――――――――――
@@ -222,7 +222,7 @@ WoditorEvCOMMAND_END
  |■Exit Event
  |■
 ◇End◇
-▼ Get the item quantity.
+▼ Get the item quantity
 ■Load DB(Var):  CSelf10[Quantity] = VarDB[ "┣ Owned Items":CSelf0[Item ID]:0 ] (7:-:Owned Quantity) 
 ■
 [COMMAND_TEXT_END]

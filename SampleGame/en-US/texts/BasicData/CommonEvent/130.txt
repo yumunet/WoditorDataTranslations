@@ -168,14 +168,14 @@ COMMAND_NUM=71
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("　装備欄を開き、使用し、終了するまでの処理を実行します。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()("Databases Accessed by This Common Event:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()("Other Common Events Called from Here:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("Main Common Events Calling This:")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [121][4,0]<0>(1600021,0,0,0)()
 [103][0,1]<0>()("パーティー情報から一人ずつ主人公ID取得して、キャラクター一覧を表示")
@@ -242,14 +242,14 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼ 　装備欄を開き、使用し、終了するまでの処理を実行します。
 ▼ 
-▼ [Databases Accessed by This Common Event]
+▼ Databases Accessed by This Common Event:
 ▼  
-▼ [Other Common Events Called from Here]
+▼ Other Common Events Called from Here:
 ▼  
-▼ [Main Common Events Calling This]
+▼ Main Common Events Calling This:
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Set Variable: CSelf21[キャラ欄選択位置] = 0 + 0 
 ▼ パーティー情報から一人ずつ主人公ID取得して、キャラクター一覧を表示
@@ -266,7 +266,7 @@ WoditorEvCOMMAND_END
 -◇Condition:  [1]  [ CSelf20[選択キャラ位置（0～5）] == -1   ] Case↓
  |▼ キャンセル時はそのまま終了
  |▼ Ver2.22　不要なキャンセル音を消去
- |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:Cursor OFF (all positions if -1) / -1 / -1
+ |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:Cursor Off (All Positions If -1) / -1 / -1
  |■Condition (Number):   [1] CSelf0[処理モード] ==  1  
  |-◇Condition:  [1]  [ CSelf0[処理モード] == 1   ] Case↓
  | |■Call Event [Name]: ["X[Map]Character Box: Draw All"] <CommonEv 92>  / -1:全員消去

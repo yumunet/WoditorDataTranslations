@@ -39,9 +39,9 @@ OPTION_VAL_2=0
 COMMAND_NUM=7
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("When Self Variable 0 is set to 1, Page 2 runs and the sprite changes.")
+[103][0,1]<0>()("When self variable 0 is set to 1, Page 2 runs and the sprite changes")
 [121][4,0]<0>(1100000,1,0,0)()
-[103][0,1]<0>()("When the chest is opened, execute the item obtain process and display a message.")
+[103][0,1]<0>()("When the chest is opened, execute the item obtain process and display a message")
 [140][6,1]<0>(33554464,0,0,0,100,100)("SE/System_Get2_wolf.ogg")
 [210][5,0]<0>(500000,3,19,1,0)()
 [101][0,1]<0>()("The chest contained the Dungeon Key!")
@@ -49,9 +49,9 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ When Self Variable 0 is set to 1, Page 2 runs and the sprite changes.
+▼ When self variable 0 is set to 1, Page 2 runs and the sprite changes
 ■Set Variable: This Ev Self0 = 1 + 0 
-▼ When the chest is opened, execute the item obtain process and display a message.
+▼ When the chest is opened, execute the item obtain process and display a message
 ■Sound: SE File [SE/System_Get2_wolf.ogg] Vol 100% Pitch 100% (0 Channel) Play / Delay: 0 Frames
 ■Call Event: Common 0: [ ○ Change Items ] / 19:Dungeon Key / 1 / 0:No
 ■Show Message: The chest contained the Dungeon Key!

@@ -168,15 +168,15 @@ COMMAND_NUM=83
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("　敵・味方のキャラクターを戦闘シーンに配置します。")
 [103][0,1]<0>()("　戦闘中に仲間が増えて、画面を再表示したい場合にも使用できます。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()("Databases Accessed by This Common Event:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()("Other Common Events Called from Here:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("Main Common Events Calling This:")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("味方のデータを戦闘DBにコピー")
 [250][5,4]<0>(20,4,0,69632,1600020)("","Base System Variables","","")
@@ -254,15 +254,15 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼ 　敵・味方のキャラクターを戦闘シーンに配置します。
 ▼ 　戦闘中に仲間が増えて、画面を再表示したい場合にも使用できます。
 ▼ 
-▼ [Databases Accessed by This Common Event]
+▼ Databases Accessed by This Common Event:
 ▼  
-▼ [Other Common Events Called from Here]
+▼ Other Common Events Called from Here:
 ▼  
-▼ [Main Common Events Calling This]
+▼ Main Common Events Calling This:
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ 味方のデータを戦闘DBにコピー
 ■Load DB(Var):  CSelf20[繰り返し回数] = VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) 

@@ -170,14 +170,14 @@ COMMAND_NUM=276
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("　マニュアル行動の「主人公」に、コマンド選択をさせます。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()("Databases Accessed by This Common Event:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()("Other Common Events Called from Here:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("Main Common Events Calling This:")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("Ver2.22　主人公をはずしたときの補正処理が必要だったので追加（入力2つめを新たに作成）")
 [111][7,0]<0>(2,1600001,1,2,1600001,2,2)()
@@ -449,14 +449,14 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼ 　マニュアル行動の「主人公」に、コマンド選択をさせます。
 ▼ 
-▼ [Databases Accessed by This Common Event]
+▼ Databases Accessed by This Common Event:
 ▼  
-▼ [Other Common Events Called from Here]
+▼ Other Common Events Called from Here:
 ▼  
-▼ [Main Common Events Calling This]
+▼ Main Common Events Calling This:
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ Ver2.22　主人公をはずしたときの補正処理が必要だったので追加（入力2つめを新たに作成）
 ■Condition (Number):   [1] CSelf1[オプション処理] ==  1  /  [2] CSelf1[オプション処理] ==  2  
@@ -575,7 +575,7 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf35[一時サイズ] /= 2 + 0 
 ■Write to DB(Var): VarDB[ "Base System Variables":16:0 ] (18:Universal Window Description Height:Number) =  CSelf35[一時サイズ]
 ▼ 万能ウィンドウ表示
-■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / 2:Display [For Battle Commands] / 0 / 2:Display at Bottom, Full Width / 0:None
+■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / 2:Display (For Battle Commands) / 0 / 2:Display at Bottom, Full Width / 0:None
 ■Repeat Loop [ 1 ] Times
  |▼ ターン始めなら初回キー連打をキャンセルする
  |■Load DB(Var):  CSelf43[キー連打] = VarDB[ "Base System Variables":58:0 ] (18:[System] Battle Key Hold:Number) 
@@ -605,7 +605,7 @@ WoditorEvCOMMAND_END
  |▼ 万能ウィンドウ選択処理を実行
  |■Call Event [Name]: CSelf31[主人公ID] = ["X[Bat]Get Ally ID in Slot"] <CommonEv 141>  / CSelf0[対象戦闘ｽﾛｯﾄ]
  |■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) =  CSelf14[保存キー位置]
- |■Call Event [Name]: CSelf20[選択コード] = ["X[Com]U-Window: Select"] <CommonEv 65>  / 2:Loop Until Selected (Don't Initialize Cursor) / 4:End with Left/Right Key
+ |■Call Event [Name]: CSelf20[選択コード] = ["X[Com]U-Window: Select"] <CommonEv 65>  / 2:Loop Until Selected (Don't initialize cursor) / 4:End with Left/Right Key
  |■Load DB(Var):  CSelf14[保存キー位置] = VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) 
  |■Call Event [Name]: ["X[Bat]Set Cursor Memory Pos"] <CommonEv 156>  / 12:[戦闘]ｺﾏﾝﾄﾞ(要ｷｬﾗ指定) / CSelf0[対象戦闘ｽﾛｯﾄ] / CSelf14[保存キー位置]
  |■
@@ -657,8 +657,8 @@ WoditorEvCOMMAND_END
  | |■Write to DB(Var): VarDB[ "Universal Window Items":0:"Selectable? [1:Yes]" ] (19::2) =  1
  | |■Write to DB(Var): VarDB[ "Universal Window Items":0:"Description" ] (19::6) =  End this turn without doing anything.
  | |■Write to DB(Var): VarDB[ "Universal Window Items":0:"Item Text" ] (19::0) =  Do Nothing
- | |■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / 2:Display [For Battle Commands] / 0 / 2:Display at Bottom, Full Width / 0:None
- | |■Call Event [Name]: CSelf20[選択コード] = ["X[Com]U-Window: Select"] <CommonEv 65>  / 2:Loop Until Selected (Don't Initialize Cursor) / 4:End with Left/Right Key
+ | |■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / 2:Display (For Battle Commands) / 0 / 2:Display at Bottom, Full Width / 0:None
+ | |■Call Event [Name]: CSelf20[選択コード] = ["X[Com]U-Window: Select"] <CommonEv 65>  / 2:Loop Until Selected (Don't initialize cursor) / 4:End with Left/Right Key
  | |■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / -1:Erase / 0 / 4:Display Below Window / 1:Expand from Top-Left
  | |■Condition (Number):   [1] CSelf20[選択コード] ==  -100  /  [2] CSelf20[選択コード] ==  -300  
  | |-◇Condition:  [1]  [ CSelf20[選択コード] == -100   ] Case↓

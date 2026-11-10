@@ -164,16 +164,16 @@ COMMAND_NUM=430
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("　これから発動しようとしているキャラ、およびその技能が、使用可能かどうかチェックします。")
 [103][0,1]<0>()("　使用不能だった場合は、この行動はキャンセルされます。")
 [103][0,1]<0>()("　行動しようとしたときのメッセージもここで表示されます。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()("Databases Accessed by This Common Event:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()("Other Common Events Called from Here:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("Main Common Events Calling This:")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [121][4,0]<0>(1600099,0,0,0)()
 [121][4,0]<0>(1600020,0,0,0)()
@@ -597,16 +597,16 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼ 　これから発動しようとしているキャラ、およびその技能が、使用可能かどうかチェックします。
 ▼ 　使用不能だった場合は、この行動はキャンセルされます。
 ▼ 　行動しようとしたときのメッセージもここで表示されます。
 ▼ 
-▼ [Databases Accessed by This Common Event]
+▼ Databases Accessed by This Common Event:
 ▼  
-▼ [Other Common Events Called from Here]
+▼ Other Common Events Called from Here:
 ▼  
-▼ [Main Common Events Calling This]
+▼ Main Common Events Calling This:
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Set Variable: CSelf99[行動可能？] = 0 + 0 
 ■Set Variable: CSelf20[スキル発動アイテム不足フラグ] = 0 + 0 

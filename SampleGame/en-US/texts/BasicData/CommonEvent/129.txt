@@ -168,14 +168,14 @@ COMMAND_NUM=109
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("　技能欄を開き、使用し、終了するまでの処理を実行します。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()("Databases Accessed by This Common Event:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()("Other Common Events Called from Here:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("Main Common Events Calling This:")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("座標倍率を取得")
 [103][0,1]<0>()("Ver2.20　座標倍率を縦横別に修正")
@@ -280,14 +280,14 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼ 　技能欄を開き、使用し、終了するまでの処理を実行します。
 ▼ 
-▼ [Databases Accessed by This Common Event]
+▼ Databases Accessed by This Common Event:
 ▼  
-▼ [Other Common Events Called from Here]
+▼ Other Common Events Called from Here:
 ▼  
-▼ [Main Common Events Calling This]
+▼ Main Common Events Calling This:
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ 座標倍率を取得
 ▼ Ver2.20　座標倍率を縦横別に修正
@@ -310,7 +310,7 @@ WoditorEvCOMMAND_END
 ■Condition (Number):   [1] CSelf20[選択キャラ位置（0～5）] ==  -1  
 -◇Condition:  [1]  [ CSelf20[選択キャラ位置（0～5）] == -1   ] Case↓
  |▼ キャンセル時はそのまま終了
- |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:Cursor OFF (all positions if -1) / -1 / -1
+ |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:Cursor Off (All Positions If -1) / -1 / -1
  |■Condition (Number):   [1] CSelf0[処理モード] ==  1  
  |-◇Condition:  [1]  [ CSelf0[処理モード] == 1   ] Case↓
  | |■Call Event [Name]: ["X[Map]Character Box: Draw All"] <CommonEv 92>  / -1:全員消去
@@ -351,7 +351,7 @@ WoditorEvCOMMAND_END
  |■Repeat Loop [ 1 ] Times
  | |▼ 万能ウィンドウ選択処理を実行
  | |■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) =  CSelf98[記憶キー位置]
- | |■Call Event [Name]: CSelf22 = ["X[Com]U-Window: Select"] <CommonEv 65>  / 2:Loop Until Selected (Don't Initialize Cursor)
+ | |■Call Event [Name]: CSelf22 = ["X[Com]U-Window: Select"] <CommonEv 65>  / 2:Loop Until Selected (Don't initialize cursor)
  | |■Load DB(Var):  CSelf98[記憶キー位置] = VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) 
  | |■Call Event [Name]: ["X[Map]Set Cursor Memory Pos"] <CommonEv 117>  / 0:[移動]技能(要ｷｬﾗ指定) / CSelf11[主人公ID] / CSelf98[記憶キー位置]
  | |■

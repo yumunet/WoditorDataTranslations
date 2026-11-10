@@ -176,7 +176,7 @@ COMMAND_NUM=164
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("　味方全員のコマンド指定と敵・味方AIのコマンド処理を呼び出します。")
 [103][0,1]<0>()("")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
@@ -343,7 +343,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼ 　味方全員のコマンド指定と敵・味方AIのコマンド処理を呼び出します。
 ▼ 
 ▼ ―――――――――――――――――――――――――――――――――――
@@ -414,11 +414,11 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf35[万能ウィンドウ用変数] = 0 + 0 
 ■Write to DB(Var): VarDB[ "Base System Variables":15:0 ] (18:Universal Window Vert. Scroll Pos:Number) =  CSelf35[万能ウィンドウ用変数]
 ▼ 万能ウィンドウ表示
-■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / 2:Display [For Battle Commands] / 0 / 0:Don't Display / 0:None
+■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / 2:Display (For Battle Commands) / 0 / 0:Don't Display / 0:None
 ■Loop Start
  |▼ 万能ウィンドウ選択処理を実行
  |■Write to DB(Var): VarDB[ "Base System Variables":21:0 ] (18:Universal Window External Cursor Set:Number) =  0
- |■Call Event [Name]: CSelf15[戦闘逃走選択] = ["X[Com]U-Window: Select"] <CommonEv 65>  / 2:Loop Until Selected (Don't Initialize Cursor) / 0:Play Confirm Sound
+ |■Call Event [Name]: CSelf15[戦闘逃走選択] = ["X[Com]U-Window: Select"] <CommonEv 65>  / 2:Loop Until Selected (Don't initialize cursor) / 0:Play Confirm Sound
  |■Condition (Number):   [1] CSelf15[戦闘逃走選択] !=  -100  
  |-◇Condition:  [1]  [ CSelf15[戦闘逃走選択] != -100   ] Case↓
  | |■Break Loop

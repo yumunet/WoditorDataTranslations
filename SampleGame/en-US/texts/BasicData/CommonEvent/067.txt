@@ -154,8 +154,8 @@ CSELF_NAME_84=
 CSELF_NAME_85=
 CSELF_NAME_86=
 CSELF_NAME_87=
-CSELF_NAME_88=Coordinate Scale X [x10]
-CSELF_NAME_89=Coordinate Scale Y [x10]
+CSELF_NAME_88=Coordinate Scale X (x10)
+CSELF_NAME_89=Coordinate Scale Y (x10)
 CSELF_NAME_90=
 CSELF_NAME_91=
 CSELF_NAME_92=
@@ -170,21 +170,21 @@ COMMAND_NUM=42
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("  Processes full-screen effects.")
 [103][0,1]<0>()("  The main screen effects in the Base System are performed through this common event.")
 [103][0,1]<0>()("")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()("Databases Accessed by This Common Event:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()("Other Common Events Called from Here:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("Main Common Events Calling This:")
 [103][0,1]<0>()("  Fade to black before loading (X┣[Map]Execute Save Screen)")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("Set fixed value.")
+[103][0,1]<0>()("Set fixed value")
 [121][4,0]<0>(1600020,19999,0,0)()
-[103][0,1]<0>()("Ver.2.20  Separated the coordinate scale into vertical and horizontal scales.")
+[103][0,1]<0>()("v2.20: Separated the coordinate scale into X and Y values")
 [250][5,4]<0>(18,97,0,69632,1600088)("","Base System Variables","","")
 [250][5,4]<0>(18,98,0,69632,1600089)("","Base System Variables","","")
 [121][4,0]<0>(1600025,1600088,32,8192)()
@@ -215,25 +215,25 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼   Processes full-screen effects.
 ▼   The main screen effects in the Base System are performed through this common event.
 ▼ 
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Databases Accessed by This Common Event]
+▼ Databases Accessed by This Common Event:
 ▼  
-▼ [Other Common Events Called from Here]
+▼ Other Common Events Called from Here:
 ▼  
-▼ [Main Common Events Calling This]
+▼ Main Common Events Calling This:
 ▼   Fade to black before loading (X┣[Map]Execute Save Screen)
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ Set fixed value.
+▼ Set fixed value
 ■Set Variable: CSelf20[Base Picture ID] = 19999 + 0 
-▼ Ver.2.20  Separated the coordinate scale into vertical and horizontal scales.
-■Load DB(Var):  CSelf88[Coordinate Scale X [x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
-■Load DB(Var):  CSelf89[Coordinate Scale Y [x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
-■Set Variable: CSelf25[Screen Width] = CSelf88[Coordinate Scale X [x10]] * 32 
-■Set Variable: CSelf26[Screen Height] = CSelf89[Coordinate Scale Y [x10]] * 24 
+▼ v2.20: Separated the coordinate scale into X and Y values
+■Load DB(Var):  CSelf88[Coordinate Scale X (x10)] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
+■Load DB(Var):  CSelf89[Coordinate Scale Y (x10)] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
+■Set Variable: CSelf25[Screen Width] = CSelf88[Coordinate Scale X (x10)] * 32 
+■Set Variable: CSelf26[Screen Height] = CSelf89[Coordinate Scale Y (x10)] * 24 
 ■Set Variable: CSelf25[Screen Width] += 32 + 0 
 ■Set Variable: CSelf26[Screen Height] += 24 + 0 
 ▼  

@@ -174,18 +174,18 @@ COMMAND_NUM=163
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("　移動時や、移動時メニューでの、ダメージ・回復の数字ポップアップ表示、")
 [103][0,1]<0>()("　および、状態付与/消去時のポップアップ表示を行います。")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("　複数の数値を表示できるようにするため、9桁の値を20セットまで")
 [103][0,1]<0>()("　同時表示できるようにしています")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()("Databases Accessed by This Common Event:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()("Other Common Events Called from Here:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("Main Common Events Calling This:")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<0>()(" 　パラメータ設定")
@@ -340,18 +340,18 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼ 　移動時や、移動時メニューでの、ダメージ・回復の数字ポップアップ表示、
 ▼ 　および、状態付与/消去時のポップアップ表示を行います。
 ▼  
 ▼ 　複数の数値を表示できるようにするため、9桁の値を20セットまで
 ▼ 　同時表示できるようにしています
 ▼ 
-▼ [Databases Accessed by This Common Event]
+▼ Databases Accessed by This Common Event:
 ▼  
-▼ [Other Common Events Called from Here]
+▼ Other Common Events Called from Here:
 ▼  
-▼ [Main Common Events Calling This]
+▼ Main Common Events Calling This:
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼  　パラメータ設定

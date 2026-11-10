@@ -174,7 +174,7 @@ CSELF_NAME_99=
 COMMAND_NUM=13
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("Level up processing.")
+[103][0,1]<0>()("Level up processing")
 [111][7,0]<0>(2,1600001,0,2,1600001,1,2)()
 [401][1,0]<0>(1)()
 [300][6,1]<1>(0,4,1600000,10,1600002,1600003)("X[Map]Change Parameter")
@@ -184,13 +184,13 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [300][6,1]<0>(0,4,1600000,100,0,0)("X[Map]Change Parameter")
-[103][0,1]<0>()("If taking part in battle, update battle-related stats here.")
+[103][0,1]<0>()("If taking part in battle, update battle-related stats here")
 [300][3,1]<0>(0,1,1600000)("X[Bat]Update Ally")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ Level up processing.
+▼ Level up processing
 ■Condition (Number):   [1] CSelf1[Action] ==  0  /  [2] CSelf1[Action] ==  1  
 -◇Condition:  [1]  [ CSelf1[Action] == 0   ] Case↓
  |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Target Ally] / 10:Level / CSelf2[Amount] / CSelf3[Show Message?]
@@ -200,7 +200,7 @@ WoditorEvCOMMAND_END
  |■
 ◇End◇
 ■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf0[Target Ally] / 100:Recalculate Temp Values / 0 / 0:No
-▼ If taking part in battle, update battle-related stats here.
+▼ If taking part in battle, update battle-related stats here
 ■Call Event [Name]: ["X[Bat]Update Ally"] <CommonEv 142>  / CSelf0[Target Ally]
 ■
 [COMMAND_TEXT_END]

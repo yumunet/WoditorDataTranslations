@@ -164,15 +164,15 @@ COMMAND_NUM=214
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("　すべての所持アイテムを計算し、名前一覧と選択可能状態を")
 [103][0,1]<0>()("　可変DB「万能ウィンドウ一時DB」に格納します。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()("Databases Accessed by This Common Event:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()("Other Common Events Called from Here:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("Main Common Events Calling This:")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [250][5,4]<0>(19,-2,0,65536,1600030)("","Universal Window Items","","")
 [121][4,0]<0>(1600032,0,0,0)()
@@ -381,15 +381,15 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼ 　すべての所持アイテムを計算し、名前一覧と選択可能状態を
 ▼ 　可変DB「万能ウィンドウ一時DB」に格納します。
 ▼ 
-▼ [Databases Accessed by This Common Event]
+▼ Databases Accessed by This Common Event:
 ▼  
-▼ [Other Common Events Called from Here]
+▼ Other Common Events Called from Here:
 ▼  
-▼ [Main Common Events Calling This]
+▼ Main Common Events Calling This:
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Write to DB(Var): [Reset Type "Universal Window Items"(19)]
 ■Set Variable: CSelf32[万能ウィンドウ登録位置] = 0 + 0 

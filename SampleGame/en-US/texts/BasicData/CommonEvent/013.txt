@@ -195,7 +195,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("Arguments 0: Target Ally  1: Which Command? (1-6)  2: Change To (Command ID)")
 [300][6,1]<0>(0,16777219,1600000,1600001,1600002,1600090)("X[Map]Change Battle Commands")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("If the corresponding character is in battle, store there as well.")
+[103][0,1]<0>()("If the corresponding character is in battle, store there as well")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [300][3,1]<0>(0,1,1600000)("X[Bat]Update Ally")
 [0][0,0]<0>()()
@@ -205,7 +205,7 @@ WoditorEvCOMMAND_END
 ▼ Arguments 0: Target Ally  1: Which Command? (1-6)  2: Change To (Command ID)
 ■Call Event [Name]: CSelf90[Change Made?] = ["X[Map]Change Battle Commands"] <CommonEv 77>  / CSelf0[Target Ally] / CSelf1[Which Cmd?] / CSelf2[Change To]
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼ If the corresponding character is in battle, store there as well.
+▼ If the corresponding character is in battle, store there as well
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■Call Event [Name]: ["X[Bat]Update Ally"] <CommonEv 142>  / CSelf0[Target Ally]
 ■

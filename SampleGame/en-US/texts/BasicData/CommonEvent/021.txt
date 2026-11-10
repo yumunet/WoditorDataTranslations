@@ -188,7 +188,7 @@ COMMAND_NUM=35
 WoditorEvCOMMAND_START
 [121][4,0]<0>(1600001,1,0,512)()
 [121][4,0]<0>(1600010,-1,0,0)()
-[103][0,1]<0>()("Get equipment ID (Weapons are 20000+, Armor is 30000+).")
+[103][0,1]<0>()("Get equipment ID (Weapons are 20000+, Armor is 30000+)")
 [300][5,1]<0>(0,16777218,1600000,1600001,1600010)("X[Map]Get Equipment ID")
 [111][4,0]<0>(1,1600010,20000,1)()
 [401][1,0]<0>(1)()
@@ -196,11 +196,11 @@ WoditorEvCOMMAND_START
 [401][1,0]<1>(1)()
 [111][7,0]<2>(2,1600002,0,2,1600002,1,2)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("Case for getting weapon.")
+[103][0,1]<3>()("Case for getting weapon")
 [121][4,0]<3>(1600010,20000,0,1280)()
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
-[103][0,1]<3>()("Case for getting armor.")
+[103][0,1]<3>()("Case for getting armor")
 [121][4,0]<3>(1600010,-1,0,0)()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
@@ -208,11 +208,11 @@ WoditorEvCOMMAND_START
 [401][1,0]<1>(2)()
 [111][7,0]<2>(2,1600002,0,2,1600002,1,2)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("Case for getting weapon.")
+[103][0,1]<3>()("Case for getting weapon")
 [121][4,0]<3>(1600010,-1,0,0)()
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
-[103][0,1]<3>()("Case for getting armor.")
+[103][0,1]<3>()("Case for getting armor")
 [121][4,0]<3>(1600010,30000,0,1280)()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
@@ -226,7 +226,7 @@ WoditorEvCOMMAND_END
 [COMMAND_TEXT_START]
 ■Set Variable: CSelf1[Slot to Get] -= 1 + 0 
 ■Set Variable: CSelf10[Equipment ID] = -1 + 0 
-▼ Get equipment ID (Weapons are 20000+, Armor is 30000+).
+▼ Get equipment ID (Weapons are 20000+, Armor is 30000+)
 ■Call Event [Name]: CSelf10[Equipment ID] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf0[Target Ally] / CSelf1[Slot to Get]
 ■Condition (Number):   [1] CSelf10[Equipment ID] >=  20000  
 -◇Condition:  [1]  [ CSelf10[Equipment ID] >= 20000   ] Case↓
@@ -234,11 +234,11 @@ WoditorEvCOMMAND_END
  |-◇Condition:  [1]  [ CSelf10[Equipment ID] <= 29999   ] Case↓
  | |■Condition (Number):   [1] CSelf2[Equipment Type] ==  0  /  [2] CSelf2[Equipment Type] ==  1  
  | |-◇Condition:  [1]  [ CSelf2[Equipment Type] == 0   ] Case↓
- | | |▼ Case for getting weapon.
+ | | |▼ Case for getting weapon
  | | |■Set Variable: CSelf10[Equipment ID] %= 20000 + 0 
  | | |■
  | |-◇Condition:  [2]  [ CSelf2[Equipment Type] == 1   ] Case↓
- | | |▼ Case for getting armor.
+ | | |▼ Case for getting armor
  | | |■Set Variable: CSelf10[Equipment ID] = -1 + 0 
  | | |■
  | |◇End◇
@@ -246,11 +246,11 @@ WoditorEvCOMMAND_END
  |-◇Condition:  [2]  [ CSelf10[Equipment ID] <= 39999   ] Case↓
  | |■Condition (Number):   [1] CSelf2[Equipment Type] ==  0  /  [2] CSelf2[Equipment Type] ==  1  
  | |-◇Condition:  [1]  [ CSelf2[Equipment Type] == 0   ] Case↓
- | | |▼ Case for getting weapon.
+ | | |▼ Case for getting weapon
  | | |■Set Variable: CSelf10[Equipment ID] = -1 + 0 
  | | |■
  | |-◇Condition:  [2]  [ CSelf2[Equipment Type] == 1   ] Case↓
- | | |▼ Case for getting armor.
+ | | |▼ Case for getting armor
  | | |■Set Variable: CSelf10[Equipment ID] %= 30000 + 0 
  | | |■
  | |◇End◇

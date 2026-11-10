@@ -164,7 +164,7 @@ COMMAND_NUM=20
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("  A wait function that can be shortened by pressing a key.")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [121][4,0]<0>(1600030,1,0,0)()
@@ -187,7 +187,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼   A wait function that can be shortened by pressing a key.
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Set Variable: CSelf30[Divisor] = 1 + 0 

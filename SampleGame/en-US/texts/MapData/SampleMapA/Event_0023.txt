@@ -39,7 +39,7 @@ OPTION_VAL_2=0
 COMMAND_NUM=18
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("Since this is the English version, change the initial choice.")
+[103][0,1]<0>()("Since this is the English version, change the initial choice")
 [121][4,0]<0>(9000007,1,0,0)()
 [101][0,1]<0>()("I'm a witch.<\n>Want to hear the synthetic voice<\n>added in Version 3.6?")
 [102][1,2]<0>(2)("Listen to the Japanese voice","Listen to the English voice")
@@ -60,7 +60,7 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ Since this is the English version, change the initial choice.
+▼ Since this is the English version, change the initial choice
 ■Set Variable: Sys7:Initial Choice (0,1,2...) = 1 + 0 
 ■Show Message: I'm a witch.\nWant to hear the synthetic voice\nadded in Version 3.6?
 ■Show Choices: / [1] Listen to the Japanese voice / [2] Listen to the English voice 

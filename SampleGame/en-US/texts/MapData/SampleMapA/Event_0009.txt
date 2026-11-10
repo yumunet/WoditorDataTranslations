@@ -40,11 +40,11 @@ COMMAND_NUM=42
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――")
-[103][0,1]<0>()("This event will not be displayed unless Normal Variable V0 is 1.")
-[103][0,1]<0>()("(This is configured in <dqrt>Conditions<dqrt> on the left.)")
+[103][0,1]<0>()("This event will not be displayed unless normal variable V0 is 1.")
+[103][0,1]<0>()("(This is configured in <dqrt>Trigger<dqrt> on the left.)")
 [103][0,1]<0>()("―――――――――――――――――――――――――――")
 [101][0,1]<0>()("Hey, I'm thinking of baking some bread.<\n>You want to have some?")
-[103][0,1]<0>()("If the player hasn't yet learned the new command, set the text to String Variable 0.")
+[103][0,1]<0>()("If the player hasn't yet learned the new command, set the text to string variable 0.")
 [103][0,1]<0>()("If the player has learned it, leave the choice blank (that choice won't appear).")
 [210][6,0]<0>(500026,16777219,12,-1,12,1100001)()
 [111][7,0]<0>(2,1100001,0,2,1100001,1,1)()
@@ -59,20 +59,20 @@ WoditorEvCOMMAND_START
 [122][2,1]<1>(3000000,0)("")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
-[103][0,1]<0>()("Display choices.")
+[103][0,1]<0>()("Display choices")
 [102][1,2]<0>(2)("\s[0]","I'll have it to go")
 [401][1,0]<0>(2)()
-[103][0,1]<1>()("When <dqrt>Eat here<dqrt> is selected.")
+[103][0,1]<1>()("When <dqrt>Eat here<dqrt> is selected")
 [101][0,1]<1>()("Okay, just gimme a sec!")
 [101][0,1]<1>()("*shff, shff, shff-shff*")
 [101][0,1]<1>()("Here's your order!<\n>Eat this, and you can use a new command!")
 [140][6,1]<1>(33554464,0,0,0,100,100)("SE/System_Get2_wolf.ogg")
 [101][0,1]<1>()("* Wolfarl learned Attack All!<\n>  This command uses 5 HP to attack all enemies!")
-[103][0,1]<1>()("Learn battle command.")
+[103][0,1]<1>()("Learn battle command")
 [210][5,0]<1>(500013,3,12,-10,12)()
 [0][0,0]<1>()()
 [401][1,0]<0>(3)()
-[103][0,1]<1>()("Shop processing.")
+[103][0,1]<1>()("Shop processing")
 [210][2,0]<1>(500033,0)()
 [210][6,0]<1>(500034,4,1,17,-1,-1)()
 [210][3,0]<1>(500035,1,2)()
@@ -85,11 +85,11 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――
-▼ This event will not be displayed unless Normal Variable V0 is 1.
-▼ (This is configured in "Conditions" on the left.)
+▼ This event will not be displayed unless normal variable V0 is 1.
+▼ (This is configured in "Trigger" on the left.)
 ▼ ―――――――――――――――――――――――――――
 ■Show Message: Hey, I'm thinking of baking some bread.\nYou want to have some?
-▼ If the player hasn't yet learned the new command, set the text to String Variable 0.
+▼ If the player hasn't yet learned the new command, set the text to string variable 0.
 ▼ If the player has learned it, leave the choice blank (that choice won't appear).
 ■Call Event: This Ev Self1 = Common 26: [ ▲Check for Battle Command ] / 12:Wolfarl / -1:Anywhere / 12:Attack All
 ■Condition (Number):   [1] This Ev Self1 ==  0  /  [2] This Ev Self1 >=  1  
@@ -104,20 +104,20 @@ WoditorEvCOMMAND_END
  |■Set String: S0[[Sample] Temporary String] = ""
  |■
 ◇End◇
-▼ Display choices.
+▼ Display choices
 ■Show Choices: / [1] \s[0] / [2] I'll have it to go 
 -◇Case: Choice [1] \s[0]                                    ↓
- |▼ When "Eat here" is selected.
+ |▼ When "Eat here" is selected
  |■Show Message: Okay, just gimme a sec!
  |■Show Message: *shff, shff, shff-shff*
  |■Show Message: Here's your order!\nEat this, and you can use a new command!
  |■Sound: SE File [SE/System_Get2_wolf.ogg] Vol 100% Pitch 100% (0 Channel) Play / Delay: 0 Frames
  |■Show Message: * Wolfarl learned Attack All!\n  This command uses 5 HP to attack all enemies!
- |▼ Learn battle command.
+ |▼ Learn battle command
  |■Call Event: Common 13: [ ○ Change Battle Commands ] / 12:Wolfarl / -10:Empty Slot (Front) / 12:Attack All
  |■
 -◇Case: Choice [2] I'll have it to go                       ↓
- |▼ Shop processing.
+ |▼ Shop processing
  |■Call Event: Common 33: [ [1] Shop: Initialize ]
  |■Call Event: Common 34: [ [2] Shop: Add Merchandise ] / 1:Item [A] / 17:Tasty Bread / -1:<None> / -1:<None>
  |■Call Event: Common 35: [ [3] Shop: Open ] / 2:Buy Only

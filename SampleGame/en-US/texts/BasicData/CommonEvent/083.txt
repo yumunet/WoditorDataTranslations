@@ -172,7 +172,7 @@ COMMAND_NUM=64
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("  Adds an item to the shop.")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [121][4,0]<0>(1600015,1600000,0,0)()
@@ -239,7 +239,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼   Adds an item to the shop.
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Set Variable: CSelf15[Item ID] = CSelf0[Item Code] + 0 

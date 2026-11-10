@@ -164,15 +164,15 @@ COMMAND_NUM=53
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("　１ターンの処理ループを行います。")
 [103][0,1]<0>()("　全員の、全ての行動内容が終わったら１ターン終了です。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()("Databases Accessed by This Common Event:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()("Other Common Events Called from Here:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("Main Common Events Calling This:")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [250][5,4]<0>(21,73,0,69632,1600019)("","Base System Variables","","")
 [121][4,0]<0>(1600019,1,0,512)()
@@ -220,15 +220,15 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼ 　１ターンの処理ループを行います。
 ▼ 　全員の、全ての行動内容が終わったら１ターン終了です。
 ▼ 
-▼ [Databases Accessed by This Common Event]
+▼ Databases Accessed by This Common Event:
 ▼  
-▼ [Other Common Events Called from Here]
+▼ Other Common Events Called from Here:
 ▼  
-▼ [Main Common Events Calling This]
+▼ Main Common Events Calling This:
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Load DB(Var):  CSelf19[全アクション数] = VarDB[ "Base System Variables":73:0 ] (18:[Battle] Command Input Pos:Number) 
 ■Set Variable: CSelf19[全アクション数] -= 1 + 0 

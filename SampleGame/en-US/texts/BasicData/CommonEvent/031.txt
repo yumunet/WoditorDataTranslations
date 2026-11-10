@@ -102,7 +102,7 @@ CSELF_NAME_8=
 CSELF_NAME_9=
 CSELF_NAME_10=Target Slot
 CSELF_NAME_11=Target Character ID
-CSELF_NAME_12=Temp Var
+CSELF_NAME_12=Temp
 CSELF_NAME_13=
 CSELF_NAME_14=
 CSELF_NAME_15=
@@ -199,13 +199,13 @@ WoditorEvCOMMAND_START
 [121][4,0]<1>(1600029,1,0,0)()
 [111][10,0]<1>(3,1600000,0,1,1600000,-1,2,1600000,-2,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("For single-target case, process and exit.")
+[103][0,1]<2>()("For single-target case, process and exit")
 [121][4,0]<2>(1600029,1,0,0)()
 [121][4,0]<2>(1600010,1600000,0,0)()
 [300][5,1]<2>(0,16777218,1600010,22,1600012)("X[Bat]Get Parameter")
 [111][4,0]<2>(1,1600012,1,1)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("Process damage only if HP remains.")
+[103][0,1]<3>()("Process damage only if HP remains")
 [213][0,1]<3>()("Process Damage to One")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
@@ -227,7 +227,7 @@ WoditorEvCOMMAND_START
 [300][5,1]<4>(0,16777218,1600010,22,1600012)("X[Bat]Get Parameter")
 [111][4,0]<4>(1,1600012,1,1)()
 [401][1,0]<4>(1)()
-[103][0,1]<5>()("Process damage only if HP remains.")
+[103][0,1]<5>()("Process damage only if HP remains")
 [121][4,0]<5>(1600029,2,0,0)()
 [213][0,1]<5>()("Process Damage to One")
 [212][0,1]<5>()("Process Damage to One, Exit 2")
@@ -256,7 +256,7 @@ WoditorEvCOMMAND_START
 [300][5,1]<4>(0,16777218,1600010,22,1600012)("X[Bat]Get Parameter")
 [111][4,0]<4>(1,1600012,1,1)()
 [401][1,0]<4>(1)()
-[103][0,1]<5>()("Process damage only if HP remains.")
+[103][0,1]<5>()("Process damage only if HP remains")
 [121][4,0]<5>(1600029,3,0,0)()
 [213][0,1]<5>()("Process Damage to One")
 [212][0,1]<5>()("Process Damage to One, Exit 3")
@@ -275,7 +275,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [179][1,0]<0>(0)()
 [212][0,1]<1>()("Process Damage to One")
-[103][0,1]<1>()("First, check if the target character is not dead.")
+[103][0,1]<1>()("First, check if the target character is not dead")
 [300][5,1]<1>(0,16777218,1600010,0,1600058)("X[Bat]Get Basic State")
 [179][1,0]<1>(1)()
 [111][7,0]<2>(2,1600010,10,4,1600010,10,1)()
@@ -291,9 +291,9 @@ WoditorEvCOMMAND_START
 [0][0,0]<2>()()
 [498][0,0]<1>()()
 [179][1,0]<1>(1)()
-[103][0,1]<2>()("Process damage.")
+[103][0,1]<2>()("Process damage")
 [121][4,0]<2>(1600041,1600001,0,0)()
-[103][0,1]<2>()("Ver.2.22  Added a branch for recovery.")
+[103][0,1]<2>()("v2.22: Added a branch for recovery")
 [111][7,0]<2>(2,1600001,-1,3,1600001,0,1)()
 [401][1,0]<2>(1)()
 [121][4,0]<3>(1600041,-1,0,768)()
@@ -309,8 +309,8 @@ WoditorEvCOMMAND_START
 [300][3,1]<2>(0,1,51)("X[Com]Play System Sound")
 [111][7,0]<2>(2,1600010,9,3,1600010,10,1)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("Damage animation effect.")
-[103][0,1]<3>()("Ver.2.22  Added a branch for recovery.")
+[103][0,1]<3>()("Damage animation effect")
+[103][0,1]<3>()("v2.22: Added a branch for recovery")
 [111][7,0]<3>(2,1600001,-1,3,1600001,0,1)()
 [401][1,0]<3>(1)()
 [300][5,1]<4>(0,3,30,1600010,1600010)("X[Bat]Ally Box: Draw One")
@@ -321,7 +321,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<3>()()
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
-[103][0,1]<3>()("Ver.2.22  Added a branch for recovery.")
+[103][0,1]<3>()("v2.22: Added a branch for recovery")
 [111][7,0]<3>(2,1600001,-1,3,1600001,0,1)()
 [401][1,0]<3>(1)()
 [300][4,1]<4>(0,2,30,1600010)("X[Bat]Enemy: Draw One")
@@ -338,16 +338,16 @@ WoditorEvCOMMAND_START
 [401][1,0]<1>(1)()
 [103][0,1]<2>()("Defeat effect")
 [103][0,1]<2>()(" ")
-[103][0,1]<2>()("Recalculate ally stats.")
+[103][0,1]<2>()("Recalculate ally stats")
 [300][4,1]<2>(0,2,1600010,1)("X[Bat]CalcTempStats <StatusEffects>")
 [300][5,1]<2>(0,3,5,1600010,1600010)("X[Bat]Ally Box: Draw One")
-[103][0,1]<2>()("If an ally has just fainted, process the defeat.")
+[103][0,1]<2>()("If an ally has just fainted, process the defeat")
 [300][5,1]<2>(0,16777218,1600010,0,1600059)("X[Bat]Get Basic State")
 [111][4,0]<2>(1,1600058,0,2)()
 [401][1,0]<2>(1)()
 [111][4,0]<3>(1,1600059,1,1)()
 [401][1,0]<3>(1)()
-[103][0,1]<4>()("Sound effect.")
+[103][0,1]<4>()("Sound effect")
 [300][3,1]<4>(0,1,52)("X[Com]Play System Sound")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
@@ -355,7 +355,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<2>()()
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[103][0,1]<2>()("If necessary, perform the defeat effect.")
+[103][0,1]<2>()("If necessary, perform the defeat effect")
 [300][3,1]<2>(0,1,1600010)("X[Bat]CalcTempStats <Initialize>")
 [300][4,1]<2>(0,2,1600010,0)("X[Bat]CalcTempStats <Equipments>")
 [300][4,1]<2>(0,2,1600010,0)("X[Bat]CalcTempStats <StatusEffects>")
@@ -363,7 +363,7 @@ WoditorEvCOMMAND_START
 [300][5,1]<2>(0,16777218,1600010,0,1600059)("X[Bat]Get Basic State")
 [111][4,0]<2>(1,1600059,1,1)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("Since it's an enemy, process the enemy's defeat.")
+[103][0,1]<3>()("Since it's an enemy, process the enemy's defeat")
 [300][4,1]<3>(0,2,1600010,0)("X[Bat]Defeat Enemy")
 [300][3,1]<3>(0,1,52)("X[Com]Play System Sound")
 [300][3,1]<3>(0,1,20)("X[Com]Wait 2(PressKeyToSpdUp)")
@@ -387,13 +387,13 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf29[Return Point] = 1 + 0 
  |■Condition (Number):   [1] CSelf0[Target] >=  0  /  [2] CSelf0[Target] ==  -1  /  [3] CSelf0[Target] ==  -2  
  |-◇Condition:  [1]  [ CSelf0[Target] >= 0   ] Case↓
- | |▼ For single-target case, process and exit.
+ | |▼ For single-target case, process and exit
  | |■Set Variable: CSelf29[Return Point] = 1 + 0 
  | |■Set Variable: CSelf10[Target Slot] = CSelf0[Target] + 0 
- | |■Call Event [Name]: CSelf12[Temp Var] = ["X[Bat]Get Parameter"] <CommonEv 136>  / CSelf10[Target Slot] / 22:HP
- | |■Condition (Number):   [1] CSelf12[Temp Var] >=  1  
- | |-◇Condition:  [1]  [ CSelf12[Temp Var] >= 1   ] Case↓
- | | |▼ Process damage only if HP remains.
+ | |■Call Event [Name]: CSelf12[Temp] = ["X[Bat]Get Parameter"] <CommonEv 136>  / CSelf10[Target Slot] / 22:HP
+ | |■Condition (Number):   [1] CSelf12[Temp] >=  1  
+ | |-◇Condition:  [1]  [ CSelf12[Temp] >= 1   ] Case↓
+ | | |▼ Process damage only if HP remains
  | | |●Label Jump [Process Damage to One] >>>>>>>>>>>>>>>>>>>>>>>>>
  | | |■
  | |◇End◇
@@ -412,10 +412,10 @@ WoditorEvCOMMAND_END
  | | |■Call Event [Name]: CSelf11[Target Character ID] = ["X[Bat]Get Ally ID in Slot"] <CommonEv 141>  / CSelf10[Target Slot]
  | | |■Condition (Number):   [1] CSelf11[Target Character ID] >=  0  
  | | |-◇Condition:  [1]  [ CSelf11[Target Character ID] >= 0   ] Case↓
- | | | |■Call Event [Name]: CSelf12[Temp Var] = ["X[Bat]Get Parameter"] <CommonEv 136>  / CSelf10[Target Slot] / 22:HP
- | | | |■Condition (Number):   [1] CSelf12[Temp Var] >=  1  
- | | | |-◇Condition:  [1]  [ CSelf12[Temp Var] >= 1   ] Case↓
- | | | | |▼ Process damage only if HP remains.
+ | | | |■Call Event [Name]: CSelf12[Temp] = ["X[Bat]Get Parameter"] <CommonEv 136>  / CSelf10[Target Slot] / 22:HP
+ | | | |■Condition (Number):   [1] CSelf12[Temp] >=  1  
+ | | | |-◇Condition:  [1]  [ CSelf12[Temp] >= 1   ] Case↓
+ | | | | |▼ Process damage only if HP remains
  | | | | |■Set Variable: CSelf29[Return Point] = 2 + 0 
  | | | | |●Label Jump [Process Damage to One] >>>>>>>>>>>>>>>>>>>>>>>>>
  | | | | |●Label Point [Process Damage to One, Exit 2] <<<<<<<<<<<<<<<<★
@@ -441,10 +441,10 @@ WoditorEvCOMMAND_END
  | | |■Call Event [Name]: CSelf11[Target Character ID] = ["X[Bat]Get Ally ID in Slot"] <CommonEv 141>  / CSelf10[Target Slot]
  | | |■Condition (Number):   [1] CSelf11[Target Character ID] >=  0  
  | | |-◇Condition:  [1]  [ CSelf11[Target Character ID] >= 0   ] Case↓
- | | | |■Call Event [Name]: CSelf12[Temp Var] = ["X[Bat]Get Parameter"] <CommonEv 136>  / CSelf10[Target Slot] / 22:HP
- | | | |■Condition (Number):   [1] CSelf12[Temp Var] >=  1  
- | | | |-◇Condition:  [1]  [ CSelf12[Temp Var] >= 1   ] Case↓
- | | | | |▼ Process damage only if HP remains.
+ | | | |■Call Event [Name]: CSelf12[Temp] = ["X[Bat]Get Parameter"] <CommonEv 136>  / CSelf10[Target Slot] / 22:HP
+ | | | |■Condition (Number):   [1] CSelf12[Temp] >=  1  
+ | | | |-◇Condition:  [1]  [ CSelf12[Temp] >= 1   ] Case↓
+ | | | | |▼ Process damage only if HP remains
  | | | | |■Set Variable: CSelf29[Return Point] = 3 + 0 
  | | | | |●Label Jump [Process Damage to One] >>>>>>>>>>>>>>>>>>>>>>>>>
  | | | | |●Label Point [Process Damage to One, Exit 3] <<<<<<<<<<<<<<<<★
@@ -463,7 +463,7 @@ WoditorEvCOMMAND_END
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■Repeat Loop [ 0 ] Times
  |●Label Point [Process Damage to One] <<<<<<<<<<<<<<<<★
- |▼ First, check if the target character is not dead.
+ |▼ First, check if the target character is not dead
  |■Call Event [Name]: CSelf58[Just Before Fainting Flag] = ["X[Bat]Get Basic State"] <CommonEv 176>  / CSelf10[Target Slot] / 0:戦闘不能状態
  |■Repeat Loop [ 1 ] Times
  | |■Condition (Number):   [1] CSelf10[Target Slot] <  10  /  [2] CSelf10[Target Slot] >=  10  
@@ -479,9 +479,9 @@ WoditorEvCOMMAND_END
  | |■
  |◇Loop End Point◇◇
  |■Repeat Loop [ 1 ] Times
- | |▼ Process damage.
+ | |▼ Process damage
  | |■Set Variable: CSelf41[Temp Damage] = CSelf1[Amount] + 0 
- | |▼ Ver.2.22  Added a branch for recovery.
+ | |▼ v2.22: Added a branch for recovery
  | |■Condition (Number):   [1] CSelf1[Amount] <=  -1  /  [2] CSelf1[Amount] >=  0  
  | |-◇Condition:  [1]  [ CSelf1[Amount] <= -1   ] Case↓
  | | |■Set Variable: CSelf41[Temp Damage] *= -1 + 0 
@@ -497,8 +497,8 @@ WoditorEvCOMMAND_END
  | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 51:Damage Sound
  | |■Condition (Number):   [1] CSelf10[Target Slot] <=  9  /  [2] CSelf10[Target Slot] >=  10  
  | |-◇Condition:  [1]  [ CSelf10[Target Slot] <= 9   ] Case↓
- | | |▼ Damage animation effect.
- | | |▼ Ver.2.22  Added a branch for recovery.
+ | | |▼ Damage animation effect
+ | | |▼ v2.22: Added a branch for recovery
  | | |■Condition (Number):   [1] CSelf1[Amount] <=  -1  /  [2] CSelf1[Amount] >=  0  
  | | |-◇Condition:  [1]  [ CSelf1[Amount] <= -1   ] Case↓
  | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 30:回復エフェクト / CSelf10[Target Slot] / CSelf10[Target Slot]
@@ -509,7 +509,7 @@ WoditorEvCOMMAND_END
  | | |◇End◇
  | | |■
  | |-◇Condition:  [2]  [ CSelf10[Target Slot] >= 10   ] Case↓
- | | |▼ Ver.2.22  Added a branch for recovery.
+ | | |▼ v2.22: Added a branch for recovery
  | | |■Condition (Number):   [1] CSelf1[Amount] <=  -1  /  [2] CSelf1[Amount] >=  0  
  | | |-◇Condition:  [1]  [ CSelf1[Amount] <= -1   ] Case↓
  | | | |■Call Event [Name]: ["X[Bat]Enemy: Draw One"] <CommonEv 179>  / 30:回復 / CSelf10[Target Slot]
@@ -526,16 +526,16 @@ WoditorEvCOMMAND_END
  |-◇Condition:  [1]  [ CSelf10[Target Slot] <= 9   ] Case↓
  | |▼ Defeat effect
  | |▼  
- | |▼ Recalculate ally stats.
+ | |▼ Recalculate ally stats
  | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf10[Target Slot] / 1:状態名のみ計算
  | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 5:表示[更新＋ゲージアニメ] / CSelf10[Target Slot] / CSelf10[Target Slot]
- | |▼ If an ally has just fainted, process the defeat.
+ | |▼ If an ally has just fainted, process the defeat
  | |■Call Event [Name]: CSelf59[Fainted Flag] = ["X[Bat]Get Basic State"] <CommonEv 176>  / CSelf10[Target Slot] / 0:戦闘不能状態
  | |■Condition (Number):   [1] CSelf58[Just Before Fainting Flag] ==  0  
  | |-◇Condition:  [1]  [ CSelf58[Just Before Fainting Flag] == 0   ] Case↓
  | | |■Condition (Number):   [1] CSelf59[Fainted Flag] >=  1  
  | | |-◇Condition:  [1]  [ CSelf59[Fainted Flag] >= 1   ] Case↓
- | | | |▼ Sound effect.
+ | | | |▼ Sound effect
  | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 52:Enemy Defeat Sound
  | | | |■
  | | |◇End◇
@@ -543,7 +543,7 @@ WoditorEvCOMMAND_END
  | |◇End◇
  | |■
  |-◇Condition:  [2]  [ CSelf10[Target Slot] >= 10   ] Case↓
- | |▼ If necessary, perform the defeat effect.
+ | |▼ If necessary, perform the defeat effect
  | |■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf10[Target Slot]
  | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf10[Target Slot] / 0:武器欄の武器を使用
  | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf10[Target Slot] / 0:パラメータ補正＋状態名計算
@@ -551,7 +551,7 @@ WoditorEvCOMMAND_END
  | |■Call Event [Name]: CSelf59[Fainted Flag] = ["X[Bat]Get Basic State"] <CommonEv 176>  / CSelf10[Target Slot] / 0:戦闘不能状態
  | |■Condition (Number):   [1] CSelf59[Fainted Flag] >=  1  
  | |-◇Condition:  [1]  [ CSelf59[Fainted Flag] >= 1   ] Case↓
- | | |▼ Since it's an enemy, process the enemy's defeat.
+ | | |▼ Since it's an enemy, process the enemy's defeat
  | | |■Call Event [Name]: ["X[Bat]Defeat Enemy"] <CommonEv 171>  / CSelf10[Target Slot] / 0:通常撃破[EXPその他入手]
  | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 52:Enemy Defeat Sound
  | | |■Call Event [Name]: ["X[Com]Wait 2(PressKeyToSpdUp)"] <CommonEv 60>  / 20

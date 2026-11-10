@@ -168,14 +168,14 @@ COMMAND_NUM=407
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("　装備欄を選択する際のキー入力処理を実行します。")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()("Databases Accessed by This Common Event:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()("Other Common Events Called from Here:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("Main Common Events Calling This:")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [300][4,1]<0>(0,16777217,1600000,1600035)("X[Map]Get Ally ID")
 [250][5,4]<0>(18,4,0,69632,1600036)("","Base System Variables","","")
@@ -578,14 +578,14 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼ 　装備欄を選択する際のキー入力処理を実行します。
 ▼ 
-▼ [Databases Accessed by This Common Event]
+▼ Databases Accessed by This Common Event:
 ▼  
-▼ [Other Common Events Called from Here]
+▼ Other Common Events Called from Here:
 ▼  
-▼ [Main Common Events Calling This]
+▼ Main Common Events Calling This:
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Call Event [Name]: CSelf35[キャラID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf0[主人公位置]
 ■Load DB(Var):  CSelf36[パーティ全員] = VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) 

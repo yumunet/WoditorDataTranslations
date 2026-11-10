@@ -193,7 +193,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<0>(1)()
 [111][4,0]<1>(1,1600002,0,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("No-overwriting case.")
+[103][0,1]<2>()("No-overwriting case")
 [300][4,1]<2>(0,16777217,1600010,1600020)("X[Bat]Get Ally ID in Slot")
 [111][4,0]<2>(1,1600020,0,1)()
 [401][1,0]<2>(1)()
@@ -204,17 +204,17 @@ WoditorEvCOMMAND_START
 [499][0,0]<2>()()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
-[103][0,1]<1>()("Ver.2.28  Changed <dqrt>equal to -1<dqrt> to <dqrt>less than or equal to -1.<dqrt>")
+[103][0,1]<1>()("v2.28: Changed <dqrt>equal to -1<dqrt> to <dqrt>less than or equal to -1<dqrt>")
 [111][7,0]<1>(2,1600001,0,1,1600001,-1,3)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("Appearing case.")
+[103][0,1]<2>()("Appearing case")
 [300][5,1]<2>(0,3,1600010,1600001,0)("X[Bat]Copy Enemies DB to Battle DB")
 [103][0,1]<2>()(" ")
 [300][3,1]<2>(0,1,1600010)("X[Bat]Enemy: Calc Position")
 [300][4,1]<2>(0,2,0,1600010)("X[Bat]Enemy: Draw One")
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[103][0,1]<2>()("If removing, make it escape.")
+[103][0,1]<2>()("If removing, make it escape")
 [300][4,1]<2>(0,2,1600010,1)("X[Bat]Defeat Enemy")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
@@ -230,7 +230,7 @@ WoditorEvCOMMAND_END
 -◇Condition:  [1]  [ CSelf18[In-Battle Flag] == 1   ] Case↓
  |■Condition (Number):   [1] CSelf2[Overwrite Option] ==  0  
  |-◇Condition:  [1]  [ CSelf2[Overwrite Option] == 0   ] Case↓
- | |▼ No-overwriting case.
+ | |▼ No-overwriting case
  | |■Call Event [Name]: CSelf20 = ["X[Bat]Get Ally ID in Slot"] <CommonEv 141>  / CSelf10[Actual Target Slot]
  | |■Condition (Number):   [1] CSelf20 >=  0  
  | |-◇Condition:  [1]  [ CSelf20 >= 0   ] Case↓
@@ -241,17 +241,17 @@ WoditorEvCOMMAND_END
  | |◇End◇
  | |■
  |◇End◇
- |▼ Ver.2.28  Changed "equal to -1" to "less than or equal to -1."
+ |▼ v2.28: Changed "equal to -1" to "less than or equal to -1"
  |■Condition (Number):   [1] CSelf1[Enemy] >=  0  /  [2] CSelf1[Enemy] <=  -1  
  |-◇Condition:  [1]  [ CSelf1[Enemy] >= 0   ] Case↓
- | |▼ Appearing case.
+ | |▼ Appearing case
  | |■Call Event [Name]: ["X[Bat]Copy Enemies DB to Battle DB"] <CommonEv 144>  / CSelf10[Actual Target Slot] / CSelf1[Enemy] / 0:全てのデータコピー+状態初期化
  | |▼  
  | |■Call Event [Name]: ["X[Bat]Enemy: Calc Position"] <CommonEv 175>  / CSelf10[Actual Target Slot]
  | |■Call Event [Name]: ["X[Bat]Enemy: Draw One"] <CommonEv 179>  / 0:表示[アニメスライド] / CSelf10[Actual Target Slot]
  | |■
  |-◇Condition:  [2]  [ CSelf1[Enemy] <= -1   ] Case↓
- | |▼ If removing, make it escape.
+ | |▼ If removing, make it escape
  | |■Call Event [Name]: ["X[Bat]Defeat Enemy"] <CommonEv 171>  / CSelf10[Actual Target Slot] / 1:逃走処理[何も取得しない]
  | |■
  |◇End◇

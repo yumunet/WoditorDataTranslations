@@ -79,10 +79,10 @@ CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=
-CSELF_NAME_10=Temp Variable A
+CSELF_NAME_10=Temp A
 CSELF_NAME_11=Ally ID
 CSELF_NAME_12=Ally ID #2
-CSELF_NAME_13=Temp Variable B
+CSELF_NAME_13=Temp B
 CSELF_NAME_14=
 CSELF_NAME_15=
 CSELF_NAME_16=
@@ -172,9 +172,9 @@ CSELF_NAME_99=
 COMMAND_NUM=132
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("First, push party to front (recalculate).")
+[103][0,1]<0>()("First, push party to front (recalculate)")
 [300][2,1]<0>(0,0)("X[Map]Update Party Info")
-[103][0,1]<0>()("Check all characters in the party.")
+[103][0,1]<0>()("Check all characters in the party")
 [250][5,4]<0>(18,51,0,69632,1600020)("","Base System Variables","","")
 [121][4,0]<0>(1600010,-1,0,0)()
 [121][4,0]<0>(1600021,-1,0,0)()
@@ -183,26 +183,26 @@ WoditorEvCOMMAND_START
 [300][4,1]<1>(0,16777217,1600010,1600011)("X[Map]Get Ally ID")
 [111][7,0]<1>(2,1600000,0,2,1600000,1,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("Case for adding a member.")
+[103][0,1]<2>()("Case for adding a member")
 [111][4,0]<2>(1,1600011,1600001,2)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("If the same character is already present, end.")
+[103][0,1]<3>()("If the same character is already present, end")
 [172][0,0]<3>()()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [111][4,0]<2>(1,1600011,-1,3)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("If there's an empty slot, set the character there.")
+[103][0,1]<3>()("If there's an empty slot, set the character there")
 [300][4,1]<3>(0,2,1600010,1600001)("X[Map]Set Ally ID")
 [171][0,0]<3>()()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[103][0,1]<2>()("Case for removing a member.")
+[103][0,1]<2>()("Case for removing a member")
 [111][4,0]<2>(1,1600011,1600001,2)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("If the corresponding member is present, remove (set -1).")
+[103][0,1]<3>()("If the corresponding member is present, remove (set -1)")
 [300][4,1]<3>(0,2,1600010,-1)("X[Map]Set Ally ID")
 [121][4,0]<3>(1600021,1600010,0,0)()
 [0][0,0]<3>()()
@@ -215,23 +215,23 @@ WoditorEvCOMMAND_START
 [401][1,0]<0>(1)()
 [111][4,0]<1>(1,1600021,-1,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("No one was removed, so return.")
+[103][0,1]<2>()("No one was removed, so return")
 [172][0,0]<2>()()
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
-[103][0,1]<0>()("Push party to front.")
+[103][0,1]<0>()("Push party to front")
 [300][2,1]<0>(0,0)("X[Map]Update Party Info")
-[103][0,1]<0>()("Update sprites.")
+[103][0,1]<0>()("Update sprites")
 [300][2,1]<0>(0,0)("X[Map]Update Party Sprites")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("If in battle, reflect changes there as well.")
+[103][0,1]<0>()("If in battle, reflect changes there as well")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [250][5,4]<0>(18,68,0,200704,1600018)("","Base System Variables","[Battle] In Battle?","")
 [111][4,0]<0>(1,1600018,1,2)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("If in battle, switch characters only where Character ID has changed.")
+[103][0,1]<1>()("If in battle, switch characters only where Character ID has changed")
 [103][0,1]<1>()(" ")
 [121][4,0]<1>(1600013,-1,0,0)()
 [179][1,0]<1>(1600020)()
@@ -239,7 +239,7 @@ WoditorEvCOMMAND_START
 [300][4,1]<2>(0,16777217,1600013,1600012)("X[Map]Get Ally ID")
 [111][4,0]<2>(17,1600012,1600001,2)()
 [401][1,0]<2>(1)()
-[103][0,1]<3>()("Added character, so initialize.")
+[103][0,1]<3>()("Added character, so initialize")
 [300][5,1]<3>(0,3,1600013,1600012,0)("X[Bat]Copy Allies DB to Battle DB")
 [300][3,1]<3>(0,1,1600013)("X[Bat]CalcTempStats <Initialize>")
 [300][4,1]<3>(0,2,1600013,-1)("X[Bat]CalcTempStats <Equipments>")
@@ -258,9 +258,9 @@ WoditorEvCOMMAND_START
 [498][0,0]<1>()()
 [111][4,0]<1>(1,1600000,1,2)()
 [401][1,0]<1>(1)()
-[103][0,1]<2>()("Ver.2.22  Correction processing when an ally is removed immediately after the <dqrt>Infinite Use<dqrt> command is selected.")
+[103][0,1]<2>()("v2.22: Correction processing when an ally is removed immediately after the <dqrt>Infinite Use<dqrt> command is selected")
 [300][5,1]<2>(0,16777218,0,2,1600010)("X┃┣◆Select Ally Command")
-[103][0,1]<2>()("Ver.2.23  A message left for testing was deleted.")
+[103][0,1]<2>()("v2.23: A message left for testing was deleted")
 [111][7,0]<2>(2,1600010,0,2,1600021,1600010,4)()
 [401][1,0]<2>(1)()
 [0][0,0]<3>()()
@@ -269,8 +269,8 @@ WoditorEvCOMMAND_START
 [300][4,1]<3>(0,2,1600021,1)("X┃┣◆Select Ally Command")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
-[103][0,1]<2>()("Ver.2.22  Bug fixed where changing a member would change the user of a selected command.")
-[103][0,1]<2>()("If removed, remove from action command processing list.")
+[103][0,1]<2>()("v2.22: Bug fixed where changing a member would change the user of a selected command")
+[103][0,1]<2>()("If removed, remove from action command processing list")
 [121][4,0]<2>(1600013,-1,0,0)()
 [250][5,4]<2>(20,73,0,200704,1600030)("","Base System Variables","[Battle] Command Input Pos","")
 [179][1,0]<2>(1600030)()
@@ -307,39 +307,39 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ First, push party to front (recalculate).
+▼ First, push party to front (recalculate)
 ■Call Event [Name]: ["X[Map]Update Party Info"] <CommonEv 79> 
-▼ Check all characters in the party.
+▼ Check all characters in the party
 ■Load DB(Var):  CSelf20[Max Party Size] = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
-■Set Variable: CSelf10[Temp Variable A] = -1 + 0 
+■Set Variable: CSelf10[Temp A] = -1 + 0 
 ■Set Variable: CSelf21[Removed Slot] = -1 + 0 
 ■Repeat Loop [ CSelf20[Max Party Size] ] Times
- |■Set Variable: CSelf10[Temp Variable A] += 1 + 0 
- |■Call Event [Name]: CSelf11[Ally ID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf10[Temp Variable A]
+ |■Set Variable: CSelf10[Temp A] += 1 + 0 
+ |■Call Event [Name]: CSelf11[Ally ID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf10[Temp A]
  |■Condition (Number):   [1] CSelf0[Type] ==  0  /  [2] CSelf0[Type] ==  1  
  |-◇Condition:  [1]  [ CSelf0[Type] == 0   ] Case↓
- | |▼ Case for adding a member.
+ | |▼ Case for adding a member
  | |■Condition (Number):   [1] CSelf11[Ally ID] ==  CSelf1[Who?]  
  | |-◇Condition:  [1]  [ CSelf11[Ally ID] == CSelf1[Who?]   ] Case↓
- | | |▼ If the same character is already present, end.
+ | | |▼ If the same character is already present, end
  | | |■Exit Event
  | | |■
  | |◇End◇
  | |■Condition (Number):   [1] CSelf11[Ally ID] <=  -1  
  | |-◇Condition:  [1]  [ CSelf11[Ally ID] <= -1   ] Case↓
- | | |▼ If there's an empty slot, set the character there.
- | | |■Call Event [Name]: ["X[Map]Set Ally ID"] <CommonEv 104>  / CSelf10[Temp Variable A] / CSelf1[Who?]
+ | | |▼ If there's an empty slot, set the character there
+ | | |■Call Event [Name]: ["X[Map]Set Ally ID"] <CommonEv 104>  / CSelf10[Temp A] / CSelf1[Who?]
  | | |■Break Loop
  | | |■
  | |◇End◇
  | |■
  |-◇Condition:  [2]  [ CSelf0[Type] == 1   ] Case↓
- | |▼ Case for removing a member.
+ | |▼ Case for removing a member
  | |■Condition (Number):   [1] CSelf11[Ally ID] ==  CSelf1[Who?]  
  | |-◇Condition:  [1]  [ CSelf11[Ally ID] == CSelf1[Who?]   ] Case↓
- | | |▼ If the corresponding member is present, remove (set -1).
- | | |■Call Event [Name]: ["X[Map]Set Ally ID"] <CommonEv 104>  / CSelf10[Temp Variable A] / -1
- | | |■Set Variable: CSelf21[Removed Slot] = CSelf10[Temp Variable A] + 0 
+ | | |▼ If the corresponding member is present, remove (set -1)
+ | | |■Call Event [Name]: ["X[Map]Set Ally ID"] <CommonEv 104>  / CSelf10[Temp A] / -1
+ | | |■Set Variable: CSelf21[Removed Slot] = CSelf10[Temp A] + 0 
  | | |■
  | |◇End◇
  | |■
@@ -350,86 +350,86 @@ WoditorEvCOMMAND_END
 -◇Condition:  [1]  [ CSelf0[Type] == 1   ] Case↓
  |■Condition (Number):   [1] CSelf21[Removed Slot] ==  -1  
  |-◇Condition:  [1]  [ CSelf21[Removed Slot] == -1   ] Case↓
- | |▼ No one was removed, so return.
+ | |▼ No one was removed, so return
  | |■Exit Event
  | |■
  |◇End◇
  |■
 ◇End◇
-▼ Push party to front.
+▼ Push party to front
 ■Call Event [Name]: ["X[Map]Update Party Info"] <CommonEv 79> 
-▼ Update sprites.
+▼ Update sprites
 ■Call Event [Name]: ["X[Map]Update Party Sprites"] <CommonEv 80> 
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼ If in battle, reflect changes there as well.
+▼ If in battle, reflect changes there as well
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■Load DB(Var):  CSelf18[In-Battle Flag] = VarDB[ "Base System Variables":"[Battle] In Battle?":0 ] (18:68:Number) 
 ■Condition (Number):   [1] CSelf18[In-Battle Flag] ==  1  
 -◇Condition:  [1]  [ CSelf18[In-Battle Flag] == 1   ] Case↓
- |▼ If in battle, switch characters only where Character ID has changed.
+ |▼ If in battle, switch characters only where Character ID has changed
  |▼  
- |■Set Variable: CSelf13[Temp Variable B] = -1 + 0 
+ |■Set Variable: CSelf13[Temp B] = -1 + 0 
  |■Repeat Loop [ CSelf20[Max Party Size] ] Times
- | |■Set Variable: CSelf13[Temp Variable B] += 1 + 0 
- | |■Call Event [Name]: CSelf12[Ally ID #2] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf13[Temp Variable B]
+ | |■Set Variable: CSelf13[Temp B] += 1 + 0 
+ | |■Call Event [Name]: CSelf12[Ally ID #2] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf13[Temp B]
  | |■Condition (Number):   [1] CSelf12[Ally ID #2] ==  CSelf1[Who?]  
  | |-◇Condition:  [1]  [ CSelf12[Ally ID #2] == CSelf1[Who?]   ] Case↓
- | | |▼ Added character, so initialize.
- | | |■Call Event [Name]: ["X[Bat]Copy Allies DB to Battle DB"] <CommonEv 143>  / CSelf13[Temp Variable B] / CSelf12[Ally ID #2] / 0:全て移動DBからコピー
- | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf13[Temp Variable B]
- | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf13[Temp Variable B] / -1:全武器を総計
- | | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf13[Temp Variable B] / 0:パラメータ補正＋状態名計算
- | | |■Call Event [Name]: ["X[Bat]Ally Box: Calc Position"] <CommonEv 174>  / CSelf13[Temp Variable B]
- | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / -1:消去 / CSelf13[Temp Variable B] / CSelf13[Temp Variable B]
- | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 0:表示 / CSelf13[Temp Variable B] / CSelf13[Temp Variable B]
+ | | |▼ Added character, so initialize
+ | | |■Call Event [Name]: ["X[Bat]Copy Allies DB to Battle DB"] <CommonEv 143>  / CSelf13[Temp B] / CSelf12[Ally ID #2] / 0:全て移動DBからコピー
+ | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf13[Temp B]
+ | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf13[Temp B] / -1:全武器を総計
+ | | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf13[Temp B] / 0:パラメータ補正＋状態名計算
+ | | |■Call Event [Name]: ["X[Bat]Ally Box: Calc Position"] <CommonEv 174>  / CSelf13[Temp B]
+ | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / -1:消去 / CSelf13[Temp B] / CSelf13[Temp B]
+ | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 0:表示 / CSelf13[Temp B] / CSelf13[Temp B]
  | | |■
  | |-◇Else
- | | |■Call Event [Name]: ["X[Bat]Ally Box: Calc Position"] <CommonEv 174>  / CSelf13[Temp Variable B]
- | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / -1:消去 / CSelf13[Temp Variable B] / CSelf13[Temp Variable B]
- | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 0:表示 / CSelf13[Temp Variable B] / CSelf13[Temp Variable B]
+ | | |■Call Event [Name]: ["X[Bat]Ally Box: Calc Position"] <CommonEv 174>  / CSelf13[Temp B]
+ | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / -1:消去 / CSelf13[Temp B] / CSelf13[Temp B]
+ | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 0:表示 / CSelf13[Temp B] / CSelf13[Temp B]
  | | |■
  | |◇End◇
  | |■
  |◇Loop End Point◇◇
  |■Condition (Number):   [1] CSelf0[Type] ==  1  
  |-◇Condition:  [1]  [ CSelf0[Type] == 1   ] Case↓
- | |▼ Ver.2.22  Correction processing when an ally is removed immediately after the "Infinite Use" command is selected.
- | |■Call Event [Name]: CSelf10[Temp Variable A] = ["X┃┣◆Select Ally Command"] <CommonEv 192>  / 0 / 2:処理中スロット番号を返す
- | |▼ Ver.2.23  A message left for testing was deleted.
- | |■Condition (Number):   [1] CSelf10[Temp Variable A] ==  0  /  [2] CSelf21[Removed Slot] <  CSelf10[Temp Variable A]  
- | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] == 0   ] Case↓
+ | |▼ v2.22: Correction processing when an ally is removed immediately after the "Infinite Use" command is selected
+ | |■Call Event [Name]: CSelf10[Temp A] = ["X┃┣◆Select Ally Command"] <CommonEv 192>  / 0 / 2:処理中スロット番号を返す
+ | |▼ v2.23: A message left for testing was deleted
+ | |■Condition (Number):   [1] CSelf10[Temp A] ==  0  /  [2] CSelf21[Removed Slot] <  CSelf10[Temp A]  
+ | |-◇Condition:  [1]  [ CSelf10[Temp A] == 0   ] Case↓
  | | |■
- | |-◇Condition:  [2]  [ CSelf21[Removed Slot] < CSelf10[Temp Variable A]   ] Case↓
+ | |-◇Condition:  [2]  [ CSelf21[Removed Slot] < CSelf10[Temp A]   ] Case↓
  | | |■Call Event [Name]: ["X┣◆Set Action"] <CommonEv 191>  / 10:主人公はずしたときの補正処理 / -1
  | | |■Call Event [Name]: ["X┃┣◆Select Ally Command"] <CommonEv 192>  / CSelf21[Removed Slot] / 1:主人公外したとき補正[対象ｽﾛｯﾄ＝はずした位置]
  | | |■
  | |◇End◇
- | |▼ Ver.2.22  Bug fixed where changing a member would change the user of a selected command.
- | |▼ If removed, remove from action command processing list.
- | |■Set Variable: CSelf13[Temp Variable B] = -1 + 0 
+ | |▼ v2.22: Bug fixed where changing a member would change the user of a selected command
+ | |▼ If removed, remove from action command processing list
+ | |■Set Variable: CSelf13[Temp B] = -1 + 0 
  | |■Load DB(Var):  CSelf30[Registered Command Count] = VarDB[ "Base System Variables":"[Battle] Command Input Pos":0 ] (18:73:Number) 
  | |■Repeat Loop [ CSelf30[Registered Command Count] ] Times
- | | |■Set Variable: CSelf13[Temp Variable B] += 1 + 0 
- | | |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "×┣Cmd Process List":CSelf13[Temp Variable B]:"User ID" ] (14:-:0) 
- | | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  10  /  [2] CSelf10[Temp Variable A] ==  CSelf21[Removed Slot]  /  [3] CSelf10[Temp Variable A] >=  CSelf21[Removed Slot]  
- | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= 10   ] Case↓
+ | | |■Set Variable: CSelf13[Temp B] += 1 + 0 
+ | | |■Load DB(Var):  CSelf10[Temp A] = VarDB[ "×┣Cmd Process List":CSelf13[Temp B]:"User ID" ] (14:-:0) 
+ | | |■Condition (Number):   [1] CSelf10[Temp A] >=  10  /  [2] CSelf10[Temp A] ==  CSelf21[Removed Slot]  /  [3] CSelf10[Temp A] >=  CSelf21[Removed Slot]  
+ | | |-◇Condition:  [1]  [ CSelf10[Temp A] >= 10   ] Case↓
  | | | |■
- | | |-◇Condition:  [2]  [ CSelf10[Temp Variable A] == CSelf21[Removed Slot]   ] Case↓
- | | | |■Write to DB(Var): VarDB[ "×┣Cmd Process List":CSelf13[Temp Variable B]:"User ID" ] (14:-:0) =  -1
+ | | |-◇Condition:  [2]  [ CSelf10[Temp A] == CSelf21[Removed Slot]   ] Case↓
+ | | | |■Write to DB(Var): VarDB[ "×┣Cmd Process List":CSelf13[Temp B]:"User ID" ] (14:-:0) =  -1
  | | | |■
- | | |-◇Condition:  [3]  [ CSelf10[Temp Variable A] >= CSelf21[Removed Slot]   ] Case↓
- | | | |■Write to DB(Var): VarDB[ "×┣Cmd Process List":CSelf13[Temp Variable B]:"User ID" ] (14:-:0) -=  1
+ | | |-◇Condition:  [3]  [ CSelf10[Temp A] >= CSelf21[Removed Slot]   ] Case↓
+ | | | |■Write to DB(Var): VarDB[ "×┣Cmd Process List":CSelf13[Temp B]:"User ID" ] (14:-:0) -=  1
  | | | |■
  | | |◇End◇
- | | |■Load DB(Var):  CSelf10[Temp Variable A] = VarDB[ "×┣Cmd Process List":CSelf13[Temp Variable B]:"Target ID" ] (14:-:2) 
- | | |■Condition (Number):   [1] CSelf10[Temp Variable A] >=  10  /  [2] CSelf10[Temp Variable A] ==  CSelf21[Removed Slot]  /  [3] CSelf10[Temp Variable A] >=  CSelf21[Removed Slot]  
- | | |-◇Condition:  [1]  [ CSelf10[Temp Variable A] >= 10   ] Case↓
+ | | |■Load DB(Var):  CSelf10[Temp A] = VarDB[ "×┣Cmd Process List":CSelf13[Temp B]:"Target ID" ] (14:-:2) 
+ | | |■Condition (Number):   [1] CSelf10[Temp A] >=  10  /  [2] CSelf10[Temp A] ==  CSelf21[Removed Slot]  /  [3] CSelf10[Temp A] >=  CSelf21[Removed Slot]  
+ | | |-◇Condition:  [1]  [ CSelf10[Temp A] >= 10   ] Case↓
  | | | |■
- | | |-◇Condition:  [2]  [ CSelf10[Temp Variable A] == CSelf21[Removed Slot]   ] Case↓
- | | | |■Write to DB(Var): VarDB[ "×┣Cmd Process List":CSelf13[Temp Variable B]:"Target ID" ] (14:-:2) =  -11
+ | | |-◇Condition:  [2]  [ CSelf10[Temp A] == CSelf21[Removed Slot]   ] Case↓
+ | | | |■Write to DB(Var): VarDB[ "×┣Cmd Process List":CSelf13[Temp B]:"Target ID" ] (14:-:2) =  -11
  | | | |■
- | | |-◇Condition:  [3]  [ CSelf10[Temp Variable A] >= CSelf21[Removed Slot]   ] Case↓
- | | | |■Write to DB(Var): VarDB[ "×┣Cmd Process List":CSelf13[Temp Variable B]:"Target ID" ] (14:-:2) -=  1
+ | | |-◇Condition:  [3]  [ CSelf10[Temp A] >= CSelf21[Removed Slot]   ] Case↓
+ | | | |■Write to DB(Var): VarDB[ "×┣Cmd Process List":CSelf13[Temp B]:"Target ID" ] (14:-:2) -=  1
  | | | |■
  | | |◇End◇
  | | |■

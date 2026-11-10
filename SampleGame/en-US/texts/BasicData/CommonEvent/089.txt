@@ -188,18 +188,18 @@ COMMAND_NUM=122
 --
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
-[103][0,1]<0>()("[Process Overview]")
+[103][0,1]<0>()("Process Overview:")
 [103][0,1]<0>()("  Determines the menu commands based on the User DB,")
 [103][0,1]<0>()("  and stores the command list in the Variable DB <dqrt>Base System Variables<dqrt>.")
 [103][0,1]<0>()("")
-[103][0,1]<0>()("[Databases Accessed by This Common Event]")
+[103][0,1]<0>()("Databases Accessed by This Common Event:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Other Common Events Called from Here]")
+[103][0,1]<0>()("Other Common Events Called from Here:")
 [103][0,1]<0>()(" ")
-[103][0,1]<0>()("[Main Common Events Calling This]")
+[103][0,1]<0>()("Main Common Events Calling This:")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("  Set parameters")
+[103][0,1]<0>()("  Set Parameters")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [250][5,4]<0>(18,0,1,332288,1600020)("","System Settings","","Menu Command 1")
 [250][5,4]<0>(18,0,2,332288,1600021)("","System Settings","","Menu Command 2")
@@ -211,7 +211,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<0>(18,0,8,332288,1600027)("","System Settings","","Menu Command 8")
 [250][5,4]<0>(18,33,0,331776,1600040)("","Base System Variables","","Number")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[103][0,1]<0>()("Initialize the command list")
+[103][0,1]<0>()("Initialize the Command List")
 [250][5,4]<0>(18,23,0,65536,0)("","Base System Variables","","")
 [250][5,4]<0>(18,24,0,65536,0)("","Base System Variables","","")
 [250][5,4]<0>(18,25,0,65536,0)("","Base System Variables","","")
@@ -313,18 +313,18 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
-▼ [Process Overview]
+▼ Process Overview:
 ▼   Determines the menu commands based on the User DB,
 ▼   and stores the command list in the Variable DB "Base System Variables".
 ▼ 
-▼ [Databases Accessed by This Common Event]
+▼ Databases Accessed by This Common Event:
 ▼  
-▼ [Other Common Events Called from Here]
+▼ Other Common Events Called from Here:
 ▼  
-▼ [Main Common Events Calling This]
+▼ Main Common Events Calling This:
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼   Set parameters
+▼   Set Parameters
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ■Load DB(User):  CSelf20[Command 1 Code] = UserDB[ "System Settings":0:"Menu Command 1" ] (17:Basic System Settings:3) 
 ■Load DB(User):  CSelf21[Command 2 Code] = UserDB[ "System Settings":0:"Menu Command 2" ] (17:Basic System Settings:4) 
@@ -336,7 +336,7 @@ WoditorEvCOMMAND_END
 ■Load DB(User):  CSelf27[Command 8 Code] = UserDB[ "System Settings":0:"Menu Command 8" ] (17:Basic System Settings:10) 
 ■Load DB(Var):  CSelf40[Can Save?] = VarDB[ "Base System Variables":33:"Number" ] (18:[System] Can Save?:0) 
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-▼ Initialize the command list
+▼ Initialize the Command List
 ■Write to DB(Var): VarDB[ "Base System Variables":23:0 ] (18:Menu Cmd 1 ID & Name:Number) =  0
 ■Write to DB(Var): VarDB[ "Base System Variables":24:0 ] (18:Menu Cmd 2 ID & Name:Number) =  0
 ■Write to DB(Var): VarDB[ "Base System Variables":25:0 ] (18:Menu Cmd 3 ID & Name:Number) =  0

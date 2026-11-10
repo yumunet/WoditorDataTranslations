@@ -166,13 +166,13 @@ CSELF_NAME_99=
 COMMAND_NUM=3
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("Get quantity owned (returns the value in CSelf10).")
+[103][0,1]<0>()("Get quantity owned (returns the value in CSelf10)")
 [300][4,1]<0>(0,16777217,1600000,1600010)("X[Com]Get Armor Quantity")
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ Get quantity owned (returns the value in CSelf10).
+▼ Get quantity owned (returns the value in CSelf10)
 ■Call Event [Name]: CSelf10[Quantity] = ["X[Com]Get Armor Quantity"] <CommonEv 56>  / CSelf0[Armor]
 ■
 [COMMAND_TEXT_END]
