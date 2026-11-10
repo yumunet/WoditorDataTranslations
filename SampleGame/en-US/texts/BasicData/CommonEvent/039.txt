@@ -4,7 +4,7 @@ COMMAND_COLOR=0
 TRIGGER=34
 TRIGGER_TARGET=1600099
 TRIGGER_VAL=1
-MEMO=Use by turning on and off. CAUTION: A few pixels of misalignment at the start of an event can prevent movement during it.
+MEMO=Use by turning on and off. Caution: A few pixels of misalignment at the start of an event can prevent movement during it.
 VALINPUT_NUM=1
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
@@ -164,7 +164,7 @@ CSELF_NAME_96=Acceleration (2-3 Preferred)
 CSELF_NAME_97=Deceleration (Higher Is Slower; 1-10 Preferred)
 CSELF_NAME_98=Direction Fixed?
 CSELF_NAME_99=Activation Flag
-COMMAND_NUM=285
+COMMAND_NUM=296
 --
 WoditorEvCOMMAND_START
 [179][1,0]<0>(1)()
@@ -315,6 +315,17 @@ WoditorEvCOMMAND_START
 [111][10,0]<3>(3,1600021,0,2,1600021,4,2,1600021,6,2)()
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("Stop")
+[103][0,1]<4>()("Turn off Fixed Direction while the character is stopped with no directional input, allowing Auto Move and other actions to change its facing (v3.37)")
+[111][4,0]<4>(1,1600017,0,2)()
+[401][1,0]<4>(1)()
+[111][4,0]<5>(1,1600018,0,2)()
+[401][1,0]<5>(1)()
+[290][7,0]<6>(193,0,-2,0,0,0,0)()
+[121][4,0]<6>(1600098,0,0,0)()
+[0][0,0]<6>()()
+[499][0,0]<5>()()
+[0][0,0]<5>()()
+[499][0,0]<4>()()
 [103][0,1]<4>()("Ver.3.10: Changed the following to the Effect command.")
 [290][7,0]<4>(129,0,-2,0,0,0,0)()
 [290][7,0]<4>(129,0,-3,0,0,0,0)()
@@ -603,6 +614,17 @@ WoditorEvCOMMAND_END
  | | |■Condition (Number):   [1] CSelf21[Left/Right Arrow Keys] ==  0  /  [2] CSelf21[Left/Right Arrow Keys] ==  4  /  [3] CSelf21[Left/Right Arrow Keys] ==  6  
  | | |-◇Condition:  [1]  [ CSelf21[Left/Right Arrow Keys] == 0   ] Case↓
  | | | |▼ Stop
+ | | | |▼ Turn off Fixed Direction while the character is stopped with no directional input, allowing Auto Move and other actions to change its facing (v3.37)
+ | | | |■Condition (Number):   [1] CSelf17[X Displacement] ==  0  
+ | | | |-◇Condition:  [1]  [ CSelf17[X Displacement] == 0   ] Case↓
+ | | | | |■Condition (Number):   [1] CSelf18[Y Displacement] ==  0  
+ | | | | |-◇Condition:  [1]  [ CSelf18[Y Displacement] == 0   ] Case↓
+ | | | | | |■Effect Character: Leader[Switch Fixed Direction] => OFF 
+ | | | | | |■Set Variable: CSelf98[Direction Fixed?] = 0 + 0 
+ | | | | | |■
+ | | | | |◇End◇
+ | | | | |■
+ | | | |◇End◇
  | | | |▼ Ver.3.10: Changed the following to the Effect command.
  | | | |■Effect Character: Leader[Force Walk Animation] => OFF 
  | | | |■Effect Character: Follower 1[Force Walk Animation] => OFF 

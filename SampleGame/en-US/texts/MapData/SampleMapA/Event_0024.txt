@@ -1,0 +1,127 @@
+EVENT_ID=24
+EVENT_NAME=Auto-Move Pirate
+EVENT_X=17
+EVENT_Y=16
+EVENT_PAGE=1
+OPTION_DATA_NUM=0
+EVENT_PAGE_NUM=1
+EVENT_PAGE=0
+EVENT_TILE_ID=-1
+GRAPHIC_FILENAME=CharaChip/Chara_Pirate_USM.png
+EVENT_DIRECTION=1
+EVENT_PATTERN=1
+EVENT_OPACITY=255
+EVENT_BLENDTYPE=0
+EVENT_TRIGGER_TYPE=0
+EVENT_CONDITION_0_USE=32
+EVENT_CONDITION_TARGET_0=1000000
+EVENT_CONDITION_VALUE_0=0
+EVENT_CONDITION_1_USE=32
+EVENT_CONDITION_TARGET_1=1000000
+EVENT_CONDITION_VALUE_1=0
+EVENT_CONDITION_2_USE=32
+EVENT_CONDITION_TARGET_2=1000000
+EVENT_CONDITION_VALUE_2=0
+EVENT_CONDITION_3_USE=32
+EVENT_CONDITION_TARGET_3=1000000
+EVENT_CONDITION_VALUE_3=0
+ANIME_SPEED=3
+MOVE_SPEED=3
+MOVE_FREQUENCY=3
+MOVE_TYPE=0
+CHARA_OPTION_FLAG=35
+ROUTE_OPTION_FLAG=2
+ROUTE_COMMAND_NUM=0
+OPTION_VAL_NUM=3
+OPTION_VAL_0=0
+OPTION_VAL_1=0
+OPTION_VAL_2=0
+COMMAND_NUM=41
+--
+WoditorEvCOMMAND_START
+[103][0,1]<0>()("Check Self0 to change the choice text based on whether click-to-move is on")
+[111][7,0]<0>(2,1100000,0,2,1100000,1,2)()
+[401][1,0]<0>(1)()
+[103][0,1]<1>()("If Self0 is 0, click-to-move is off, so set the choice to turn it on")
+[122][3,1]<1>(3000000,0,0)("Try click-to-move!")
+[0][0,0]<1>()()
+[401][1,0]<0>(2)()
+[103][0,1]<1>()("If Self0 is 1, click-to-move is on, so set the choice to turn it off")
+[122][3,1]<1>(3000000,0,0)("Turn off click-to-move")
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[101][0,1]<0>()("Hey, wanna try click-to-move?")
+[102][1,2]<0>(50)("\s[0]","Do nothing")
+[401][1,0]<0>(2)()
+[111][7,0]<1>(2,1100000,0,2,1100000,1,2)()
+[401][1,0]<1>(1)()
+[103][0,1]<2>()("If Self0 is 0, turn on click-to-move")
+[121][4,0]<2>(1100000,1,0,0)()
+[103][0,1]<2>()("Use a special code to get the common event ID from its name")
+[103][0,1]<2>()("(Select <dqrt>Execute Special Code<dqrt> in Set String, then enter the code.")
+[103][0,1]<2>()(" See the Set String page in the manual for details!)")
+[122][3,1]<2>(3000000,262656,0)("<<GET_COMMONEVENT_ID_FROM_NAME>>■Switch Left-Click Auto-Move")
+[101][0,1]<2>()("All right, let's turn on Common Event \s[0],<\n><dqrt>■Switch Left-Click Auto-Move<dqrt>...<\n>*Click!* It's on!")
+[140][7,1]<2>(33554464,0,0,0,100,100,0)("SystemFile/SE_Get.ogg")
+[101][0,1]<2>()("Once we're done talking, try clicking the map!<\n>Your character will move there on its own!")
+[300][4,1]<2>(0,2,1,0)("■Switch Left-Click Auto-Move")
+[0][0,0]<2>()()
+[401][1,0]<1>(2)()
+[103][0,1]<2>()("If Self0 is 1, turn off click-to-move")
+[121][4,0]<2>(1100000,0,0,0)()
+[140][7,1]<2>(33554464,0,0,0,100,100,0)("SystemFile/SE_LevelUp.ogg")
+[101][0,1]<2>()("Want to stop? All right,<\n>I turned off click-to-move!")
+[101][0,1]<2>()("Click-to-move could come in handy<\n>if you release a browser game.<\n>Your players might like it!")
+[300][4,1]<2>(0,2,-1,0)("■Switch Left-Click Auto-Move")
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[401][1,0]<0>(3)()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
+[0][0,0]<0>()()
+WoditorEvCOMMAND_END
+--
+[COMMAND_TEXT_START]
+▼ Check Self0 to change the choice text based on whether click-to-move is on
+■Condition (Number):   [1] This Ev Self0 ==  0  /  [2] This Ev Self0 ==  1  
+-◇Condition:  [1]  [ This Ev Self0 == 0   ] Case↓
+ |▼ If Self0 is 0, click-to-move is off, so set the choice to turn it on
+ |■Set String: S0[[Sample] Temporary String] = "Try click-to-move!"
+ |■
+-◇Condition:  [2]  [ This Ev Self0 == 1   ] Case↓
+ |▼ If Self0 is 1, click-to-move is on, so set the choice to turn it off
+ |■Set String: S0[[Sample] Temporary String] = "Turn off click-to-move"
+ |■
+◇End◇
+■Show Message: Hey, wanna try click-to-move?
+■Show Choices: / [1] \s[0] / [2] Do nothing 
+-◇Case: Choice [1] \s[0]                                    ↓
+ |■Condition (Number):   [1] This Ev Self0 ==  0  /  [2] This Ev Self0 ==  1  
+ |-◇Condition:  [1]  [ This Ev Self0 == 0   ] Case↓
+ | |▼ If Self0 is 0, turn on click-to-move
+ | |■Set Variable: This Ev Self0 = 1 + 0 
+ | |▼ Use a special code to get the common event ID from its name
+ | |▼ (Select "Execute Special Code" in Set String, then enter the code.
+ | |▼  See the Set String page in the manual for details!)
+ | |■Set String: S0[[Sample] Temporary String] =<Execute Special Code> "<<GET_COMMONEVENT_ID_FROM_NAME>>■Switch Left-Click Auto-Move"
+ | |■Show Message: All right, let's turn on Common Event \s[0],\n"■Switch Left-Click Auto-Move"...\n*Click!* It's on!
+ | |■Sound: SE File [SystemFile/SE_Get.ogg] Vol 100% Pitch 100% (0 Channel) Play / Delay: 0 Frames
+ | |■Show Message: Once we're done talking, try clicking the map!\nYour character will move there on its own!
+ | |■Call Event [Name]: ["■Switch Left-Click Auto-Move"] <CommonEv 40>  / 1:Turn On / 0:Don't Use
+ | |■
+ |-◇Condition:  [2]  [ This Ev Self0 == 1   ] Case↓
+ | |▼ If Self0 is 1, turn off click-to-move
+ | |■Set Variable: This Ev Self0 = 0 + 0 
+ | |■Sound: SE File [SystemFile/SE_LevelUp.ogg] Vol 100% Pitch 100% (0 Channel) Play / Delay: 0 Frames
+ | |■Show Message: Want to stop? All right,\nI turned off click-to-move!
+ | |■Show Message: Click-to-move could come in handy\nif you release a browser game.\nYour players might like it!
+ | |■Call Event [Name]: ["■Switch Left-Click Auto-Move"] <CommonEv 40>  / -1:Turn Off / 0:Don't Use
+ | |■
+ |◇End◇
+ |■
+-◇Case: Choice [2] Do nothing                               ↓
+ |■
+◇End◇
+■
+[COMMAND_TEXT_END]

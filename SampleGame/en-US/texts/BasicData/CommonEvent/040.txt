@@ -1,15 +1,15 @@
 COMMON_ID=40
-COMMON_NAME=---------------------------------
+COMMON_NAME=■Switch Left-Click Auto-Move
 COMMAND_COLOR=0
-TRIGGER=32
-TRIGGER_TARGET=2000000
-TRIGGER_VAL=0
-MEMO=
-VALINPUT_NUM=0
+TRIGGER=34
+TRIGGER_TARGET=1600099
+TRIGGER_VAL=1
+MEMO=Turn click-to-move on or off. Caution: This common event doesn't reset Sys73 to 0, so reset it manually!
+VALINPUT_NUM=2
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
-VALINPUT_NAME_0=
-VALINPUT_NAME_1=
+VALINPUT_NAME_0=Mode
+VALINPUT_NAME_1=Trigger Events?
 VALINPUT_NAME_2=
 VALINPUT_NAME_3=
 VALINPUT_NAME_4=
@@ -20,8 +20,8 @@ VALINPUT_NAME_8=
 VALINPUT_NAME_9=
 VALINPUT_NAME_10=
 LOADTYPE_NUM=10
-LOADTYPE0=0
-LOADTYPE1=0
+LOADTYPE0=2
+LOADTYPE1=2
 LOADTYPE2=0
 LOADTYPE3=0
 LOADTYPE4=0
@@ -31,8 +31,13 @@ LOADTYPE7=0
 LOADTYPE8=0
 LOADTYPE9=0
 CHOICE_STR_NUM=10
-CHOICE_STR_0_NUM=0
-CHOICE_STR_1_NUM=0
+CHOICE_STR_0_NUM=2
+CHOICE_STR_0_0=Turn On
+CHOICE_STR_0_1=Turn Off
+CHOICE_STR_1_NUM=3
+CHOICE_STR_1_0=Don't Use
+CHOICE_STR_1_1=Use
+CHOICE_STR_1_2=Use + Sys73=1 (click to advance messages/choices)
 CHOICE_STR_2_NUM=0
 CHOICE_STR_3_NUM=0
 CHOICE_STR_4_NUM=0
@@ -42,8 +47,13 @@ CHOICE_STR_7_NUM=0
 CHOICE_STR_8_NUM=0
 CHOICE_STR_9_NUM=0
 CHOICE_VAL_NUM=10
-CHOICE_VAL_0_NUM=0
-CHOICE_VAL_1_NUM=0
+CHOICE_VAL_0_NUM=2
+CHOICE_VAL_0_0=1
+CHOICE_VAL_0_1=-1
+CHOICE_VAL_1_NUM=3
+CHOICE_VAL_1_0=0
+CHOICE_VAL_1_1=1
+CHOICE_VAL_1_2=2
 CHOICE_VAL_2_NUM=0
 CHOICE_VAL_3_NUM=0
 CHOICE_VAL_4_NUM=0
@@ -53,24 +63,24 @@ CHOICE_VAL_7_NUM=0
 CHOICE_VAL_8_NUM=0
 CHOICE_VAL_9_NUM=0
 DEFAULT_VAL_NUM=5
-DEFAULT_VAL_0=0
+DEFAULT_VAL_0=1
 DEFAULT_VAL_1=0
 DEFAULT_VAL_2=0
 DEFAULT_VAL_3=0
 DEFAULT_VAL_4=0
 RETURN_VAL_NAME=
 RETURN_VAL_TARGET=-1
-CSELF_NAME_0=
-CSELF_NAME_1=
+CSELF_NAME_0=Mode
+CSELF_NAME_1=Run Events by Clicking
 CSELF_NAME_2=
 CSELF_NAME_3=
 CSELF_NAME_4=
-CSELF_NAME_5=
-CSELF_NAME_6=
+CSELF_NAME_5=FIND_PATH Result
+CSELF_NAME_6=FIND_PATH Loop Option
 CSELF_NAME_7=
-CSELF_NAME_8=
-CSELF_NAME_9=
-CSELF_NAME_10=
+CSELF_NAME_8=Next Tile X String
+CSELF_NAME_9=Next Tile Y String
+CSELF_NAME_10=Left-Click State
 CSELF_NAME_11=
 CSELF_NAME_12=
 CSELF_NAME_13=
@@ -80,44 +90,44 @@ CSELF_NAME_16=
 CSELF_NAME_17=
 CSELF_NAME_18=
 CSELF_NAME_19=
-CSELF_NAME_20=
-CSELF_NAME_21=
-CSELF_NAME_22=
-CSELF_NAME_23=
-CSELF_NAME_24=
-CSELF_NAME_25=
-CSELF_NAME_26=
-CSELF_NAME_27=
-CSELF_NAME_28=
-CSELF_NAME_29=
-CSELF_NAME_30=
-CSELF_NAME_31=
-CSELF_NAME_32=
-CSELF_NAME_33=
-CSELF_NAME_34=
-CSELF_NAME_35=
-CSELF_NAME_36=
-CSELF_NAME_37=
-CSELF_NAME_38=
-CSELF_NAME_39=
-CSELF_NAME_40=
-CSELF_NAME_41=
+CSELF_NAME_20=Destination Map X
+CSELF_NAME_21=Destination Map Y
+CSELF_NAME_22=Destination Screen X
+CSELF_NAME_23=Destination Screen Y
+CSELF_NAME_24=Adjacent Tile X
+CSELF_NAME_25=Adjacent Tile Y
+CSELF_NAME_26=Adjacent Tile Screen X
+CSELF_NAME_27=Adjacent Tile Screen Y
+CSELF_NAME_28=Displayed Tile Width
+CSELF_NAME_29=Displayed Tile Height
+CSELF_NAME_30=Leader X
+CSELF_NAME_31=Leader Y
+CSELF_NAME_32=Previous X
+CSELF_NAME_33=Previous Y
+CSELF_NAME_34=Last Step Start X
+CSELF_NAME_35=Last Step Start Y
+CSELF_NAME_36=Movement Active Flag
+CSELF_NAME_37=Destination Precise X
+CSELF_NAME_38=Destination Precise Y
+CSELF_NAME_39=Next Tile State (0:Unset/1:Wait/2:Ready)
+CSELF_NAME_40=Current Map ID
+CSELF_NAME_41=Map Loop Setting
 CSELF_NAME_42=
 CSELF_NAME_43=
-CSELF_NAME_44=
-CSELF_NAME_45=
-CSELF_NAME_46=
-CSELF_NAME_47=
-CSELF_NAME_48=
+CSELF_NAME_44=Map Width (Tiles)
+CSELF_NAME_45=Map Height (Tiles)
+CSELF_NAME_46=Looped Screen Width
+CSELF_NAME_47=Looped Screen Height
+CSELF_NAME_48=Loop Position Offset
 CSELF_NAME_49=
 CSELF_NAME_50=
 CSELF_NAME_51=
-CSELF_NAME_52=
-CSELF_NAME_53=
-CSELF_NAME_54=
-CSELF_NAME_55=
-CSELF_NAME_56=
-CSELF_NAME_57=
+CSELF_NAME_52=Step Check Grace Period
+CSELF_NAME_53=FIND_PATH Direction Count
+CSELF_NAME_54=Next Tile X
+CSELF_NAME_55=Next Tile Y
+CSELF_NAME_56=Next Tile Precise X
+CSELF_NAME_57=Next Tile Precise Y
 CSELF_NAME_58=
 CSELF_NAME_59=
 CSELF_NAME_60=
@@ -150,8 +160,8 @@ CSELF_NAME_86=
 CSELF_NAME_87=
 CSELF_NAME_88=
 CSELF_NAME_89=
-CSELF_NAME_90=
-CSELF_NAME_91=
+CSELF_NAME_90=Destination Marker Picture ID
+CSELF_NAME_91=Blocked Marker Picture ID
 CSELF_NAME_92=
 CSELF_NAME_93=
 CSELF_NAME_94=
@@ -159,13 +169,711 @@ CSELF_NAME_95=
 CSELF_NAME_96=
 CSELF_NAME_97=
 CSELF_NAME_98=
-CSELF_NAME_99=
-COMMAND_NUM=1
+CSELF_NAME_99=Activation Flag
+COMMAND_NUM=350
 --
 WoditorEvCOMMAND_START
+[103][0,1]<0>()("Trigger Events:")
+[103][0,1]<0>()("Enabling this option lets you run map events by clicking them.")
+[103][0,1]<0>()("Choosing <dqrt>Use + Sys73=1<dqrt> also lets you advance messages and select choices with the mouse.")
+[103][0,1]<0>()("To run a map event across a counter, click the counter.")
+[103][0,1]<0>()("This doesn't support shop, menu, or battle screen controls.")
+[103][0,1]<0>()(" ")
+[103][0,1]<0>()("Note: If self variables are reset when starting a new game, turn this common event on again and reselect its options after the reset.")
+[103][0,1]<0>()("Caution: Mode 2 sets Sys73 to 1 when turned on and whenever this common event handles a click to run map events. Turning it off doesn't restore the previous Sys73 value. Change it in your game if needed.")
+[179][1,0]<0>(1)()
+[103][0,1]<1>()("★ User settings: Change the picture IDs here!")
+[103][0,1]<1>()("Note: Use picture IDs that don't conflict with other common events or your own events. Defaults: 99999 and 99998.")
+[121][4,0]<1>(1600090,99999,0,0)()
+[121][4,0]<1>(1600091,99998,0,0)()
+[103][0,1]<1>()("★ End of settings. The following is the on/off handling and the main left-click auto-move logic.")
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[179][1,0]<0>(1)()
+[103][0,1]<1>()("★ Call this common event to turn it on or off, just like the <dqrt>Switch Pixel Movement<dqrt> common event!")
+[103][0,1]<1>()("1 = on, -1 = off. During parallel processing, CSelf0[Mode] is 0, so the switch handling is skipped.")
+[111][7,0]<1>(2,1600000,1,2,1600000,-1,2)()
+[401][1,0]<1>(1)()
+[103][0,1]<2>()("Turn on left-click auto-move")
+[121][4,0]<2>(1600000,0,0,0)()
+[103][0,1]<2>()("Reset the internal state first because leftover movement data could make the leader walk to the wrong place")
+[121][4,0]<2>(1600036,0,0,0)()
+[121][4,0]<2>(1600039,0,0,0)()
+[150][3,0]<2>(2,1600090,0)()
+[150][3,0]<2>(2,1600091,0)()
+[103][0,1]<2>()("If CSelf1 = 2, set Sys73 to 1 when turning on (and when handling clicks to run map events)")
+[111][4,0]<2>(1,1600001,2,1)()
+[401][1,0]<2>(1)()
+[121][4,0]<3>(9000073,1,0,0)()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[103][0,1]<2>()("Start parallel processing and keep waiting for left clicks")
+[121][4,0]<2>(1600099,1,0,0)()
+[172][0,0]<2>()()
+[0][0,0]<2>()()
+[401][1,0]<1>(2)()
+[103][0,1]<2>()("Turn off left-click auto-move")
+[121][4,0]<2>(1600000,0,0,0)()
+[103][0,1]<2>()("★ Do not interrupt the leader's Move Route! An empty Move Route here would also stop movement used in event scenes!")
+[103][0,1]<2>()("Clear only the movement scheduled by this common event and remove the destination marker")
+[121][4,0]<2>(1600036,0,0,0)()
+[121][4,0]<2>(1600039,0,0,0)()
+[150][3,0]<2>(2,1600090,0)()
+[150][3,0]<2>(2,1600091,0)()
+[103][0,1]<2>()("End parallel processing")
+[121][4,0]<2>(1600099,0,0,0)()
+[172][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[498][0,0]<0>()()
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("The following is the left-click auto-move logic that runs during parallel processing")
+[103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
+[103][0,1]<0>()("★ Do not move the leader while an event is running, to avoid interfering with the event's Move Route and scene")
+[103][0,1]<0>()("When an event starts, cancel only this common event's scheduled movement, then wait for the next click")
+[111][4,0]<0>(17,9000013,1,1)()
+[401][1,0]<0>(1)()
+[121][4,0]<1>(1600036,0,0,0)()
+[121][4,0]<1>(1600039,0,0,0)()
+[150][3,0]<1>(2,1600090,0)()
+[0][0,0]<1>()()
+[420][1,0]<0>(0)()
+[103][0,1]<1>()("Check for a new left click. If clicked during movement, update the destination.")
+[123][2,0]<1>(1600010,131856)()
+[111][4,0]<1>(1,1600010,20,2)()
+[401][1,0]<1>(1)()
+[103][0,1]<2>()("Get the current map's loop setting from SDB[0:Map Settings]: 0 = none, 1 = horizontal, 2 = vertical, 3 = both")
+[124][3,0]<2>(1600040,12352,0)()
+[250][5,4]<2>(0,1600040,3,4352,1600041)("","","","")
+[124][3,0]<2>(1600044,12352,15)()
+[124][3,0]<2>(1600045,12352,16)()
+[103][0,1]<2>()("Prepare the 4/8-direction count and loop option string for FIND_PATH")
+[121][4,0]<2>(1600053,9000155,0,0)()
+[122][3,1]<2>(1600006,0,0)("/NO_LOOP")
+[111][10,0]<2>(3,1600041,1,2,1600041,2,2,1600041,3,2)()
+[401][1,0]<2>(1)()
+[122][3,1]<3>(1600006,0,0)("/LOOP_X")
+[0][0,0]<3>()()
+[401][1,0]<2>(2)()
+[122][3,1]<3>(1600006,0,0)("/LOOP_Y")
+[0][0,0]<3>()()
+[401][1,0]<2>(3)()
+[122][3,1]<3>(1600006,0,0)("/LOOP_XY")
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[103][0,1]<2>()("Use the Set Variable+ calculations marked <dqrt>Map Zoom Affected<dqrt> to convert the click to a destination tile")
+[124][4,0]<2>(1600020,9969664,9000071,9000072)()
+[124][4,0]<2>(1600021,10035200,9000071,9000072)()
+[103][0,1]<2>()("Store the destination in precise positions too. Using only full-tile positions could falsely signal arrival during half-tile movement.")
+[121][4,0]<2>(1600037,1600020,2,8192)()
+[121][4,0]<2>(1600038,1600021,2,8192)()
+[124][4,0]<2>(1600030,4096,-2,0)()
+[124][4,0]<2>(1600031,4096,-2,1)()
+[103][0,1]<2>()("Use FIND_PATH to check if the destination is reachable, considering map terrain and collisions with events other than the leader")
+[103][0,1]<2>()("Specify MOVE_EV=-2 so events such as NPCs count as obstacles and movement stays on passable tiles")
+[122][3,1]<2>(1600005,262656,0)("<<FIND_PATH_DIR\cself[53]/v2\cself[6]/SX=\cself[30]/SY=\cself[31]/EX=\cself[20]/EY=\cself[21]/LEN=1/EXE=20000/MOVE_EV=-2>>")
+[103][0,1]<2>()("Calculate the destination marker picture's size from the difference in screen positions between adjacent tiles")
+[124][4,0]<2>(1600022,1449984,1600020,1600021)()
+[124][4,0]<2>(1600023,1515520,1600020,1600021)()
+[121][4,0]<2>(1600024,1600020,1,4096)()
+[121][4,0]<2>(1600025,1600021,1,4096)()
+[111][4,0]<2>(1,1600020,0,2)()
+[401][1,0]<2>(1)()
+[121][4,0]<3>(1600024,1600020,1,0)()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[111][4,0]<2>(1,1600021,0,2)()
+[401][1,0]<2>(1)()
+[121][4,0]<3>(1600025,1600021,1,0)()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[124][4,0]<2>(1600026,1449984,1600024,1600021)()
+[124][4,0]<2>(1600027,1515520,1600020,1600025)()
+[121][4,0]<2>(1600028,1600026,1600022,6144)()
+[121][4,0]<2>(1600029,1600027,1600023,6144)()
+[103][0,1]<2>()("If a looping map gives multiple marker positions, use the one closest to the center of the game screen")
+[121][4,0]<2>(1600046,1600044,1600028,8192)()
+[121][4,0]<2>(1600047,1600045,1600029,8192)()
+[111][4,0]<2>(1,1600041,1,6)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("Horizontal map looping")
+[111][4,0]<3>(1,1600046,1,1)()
+[401][1,0]<3>(1)()
+[121][4,0]<4>(1600022,1600046,0,256)()
+[121][4,0]<4>(1600022,1600046,0,1280)()
+[121][4,0]<4>(1600048,1600022,0,0)()
+[121][4,0]<4>(1600048,9000116,2,12800)()
+[121][4,0]<4>(1600048,1600046,2,13312)()
+[121][4,0]<4>(1600022,1600046,1600048,8704)()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[111][4,0]<2>(1,1600041,2,6)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("Vertical map looping")
+[111][4,0]<3>(1,1600047,1,1)()
+[401][1,0]<3>(1)()
+[121][4,0]<4>(1600023,1600047,0,256)()
+[121][4,0]<4>(1600023,1600047,0,1280)()
+[121][4,0]<4>(1600048,1600023,0,0)()
+[121][4,0]<4>(1600048,9000117,2,12800)()
+[121][4,0]<4>(1600048,1600047,2,13312)()
+[121][4,0]<4>(1600023,1600047,1600048,8704)()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[103][0,1]<2>()("If no path exists, shake a red square (■) and stop. Delay its removal so another click can be received during the animation.")
+[103][0,1]<2>()("Reset any pending delayed removal so it doesn't also erase the new red square (■) later")
+[150][2,0]<2>(67,1600091)()
+[112][2,4]<2>(17,538470917)("NoPath","","","")
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("No path! The destination may be blocked by terrain or a map event, or too far away for a path to be calculated.")
+[121][4,0]<3>(1600036,0,0,0)()
+[121][4,0]<3>(1600039,0,0,0)()
+[150][3,0]<3>(2,1600090,0)()
+[150][18,1]<3>(4144,1600091,0,1600028,1600029,1,210,1600022,1600023,90,0,0,33554432,0,0,100,0,0)("<SQUARE>")
+[290][7,0]<3>(48,2,1600091,1600091,3,0,6)()
+[150][4,0]<3>(2,1600091,6,18)()
+[0][0,0]<3>()()
+[420][1,0]<2>(0)()
+[103][0,1]<3>()("Path found! Use FIND_PATH to choose the next tile, then repeatedly move toward its position.")
+[121][4,0]<3>(1600036,1,0,0)()
+[121][4,0]<3>(1600039,0,0,0)()
+[150][3,0]<3>(2,1600091,0)()
+[103][0,1]<3>()("The white square (■) marks the destination. Its size is based on adjacent tiles' screen positions, so it adjusts to map zoom.")
+[150][18,1]<3>(4144,1600090,0,1600028,1600029,1,180,1600022,1600023,88,0,0,33554432,0,0,100,100,100)("<SQUARE>")
+[290][7,0]<3>(112,10,1600090,1600090,12,12,2)()
+[111][4,0]<3>(1,1600001,1,1)()
+[401][1,0]<3>(1)()
+[125][1,0]<4>(1)()
+[111][4,0]<4>(1,1600001,2,1)()
+[401][1,0]<4>(1)()
+[121][4,0]<5>(9000073,1,0,0)()
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[103][0,1]<1>()("Continue movement from here. Run at most one <dqrt>Approach Position<dqrt> command per parallel-process cycle.")
+[103][0,1]<1>()("Avoid long loops so new clicks can still be detected during movement")
+[111][4,0]<1>(1,1600036,1,1)()
+[401][1,0]<1>(1)()
+[103][0,1]<2>()("After an <dqrt>Approach Position<dqrt> command, movement may take a moment to start, so allow a short grace period before checking if movement is blocked")
+[111][4,0]<2>(1,1600052,1,1)()
+[401][1,0]<2>(1)()
+[121][4,0]<3>(1600052,1,0,512)()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[124][4,0]<2>(1600022,1449984,1600020,1600021)()
+[124][4,0]<2>(1600023,1515520,1600020,1600021)()
+[103][0,1]<2>()("If a looping map gives multiple marker positions, use the one closest to the center of the game screen")
+[121][4,0]<2>(1600046,1600044,1600028,8192)()
+[121][4,0]<2>(1600047,1600045,1600029,8192)()
+[111][4,0]<2>(1,1600041,1,6)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("Horizontal map looping")
+[111][4,0]<3>(1,1600046,1,1)()
+[401][1,0]<3>(1)()
+[121][4,0]<4>(1600022,1600046,0,256)()
+[121][4,0]<4>(1600022,1600046,0,1280)()
+[121][4,0]<4>(1600048,1600022,0,0)()
+[121][4,0]<4>(1600048,9000116,2,12800)()
+[121][4,0]<4>(1600048,1600046,2,13312)()
+[121][4,0]<4>(1600022,1600046,1600048,8704)()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[111][4,0]<2>(1,1600041,2,6)()
+[401][1,0]<2>(1)()
+[103][0,1]<3>()("Vertical map looping")
+[111][4,0]<3>(1,1600047,1,1)()
+[401][1,0]<3>(1)()
+[121][4,0]<4>(1600023,1600047,0,256)()
+[121][4,0]<4>(1600023,1600047,0,1280)()
+[121][4,0]<4>(1600048,1600023,0,0)()
+[121][4,0]<4>(1600048,9000117,2,12800)()
+[121][4,0]<4>(1600048,1600047,2,13312)()
+[121][4,0]<4>(1600023,1600047,1600048,8704)()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[150][11,0]<2>(1,1600090,0,0,0,1,180,1600022,1600023,88,0)()
+[111][4,0]<2>(1,9000035,0,2)()
+[401][1,0]<2>(1)()
+[124][4,0]<3>(1600032,4096,-2,2)()
+[124][4,0]<3>(1600033,4096,-2,3)()
+[103][0,1]<3>()("Use an exact match of precise positions to detect arrival so the leader doesn't stop after overlapping only a quarter of the destination tile")
+[111][4,0]<3>(1,1600032,1600037,2)()
+[401][1,0]<3>(1)()
+[111][4,0]<4>(1,1600033,1600038,2)()
+[401][1,0]<4>(1)()
+[121][4,0]<5>(1600036,0,0,0)()
+[121][4,0]<5>(1600039,0,0,0)()
+[150][3,0]<5>(2,1600090,0)()
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[103][0,1]<3>()("Keep aiming for the same position until reaching the next tile center. Don't rerun FIND_PATH between tile centers.")
+[111][4,0]<3>(1,1600039,1,2)()
+[401][1,0]<3>(1)()
+[111][4,0]<4>(1,1600032,1600056,2)()
+[401][1,0]<4>(1)()
+[111][4,0]<5>(1,1600033,1600057,2)()
+[401][1,0]<5>(1)()
+[121][4,0]<6>(1600039,0,0,0)()
+[0][0,0]<6>()()
+[499][0,0]<5>()()
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[103][0,1]<3>()("After one step, keep approaching the same position until reaching the tile center. Stop only if no movement occurred.")
+[111][4,0]<3>(1,1600039,1,2)()
+[401][1,0]<3>(1)()
+[111][4,0]<4>(1,1600032,1600034,2)()
+[401][1,0]<4>(1)()
+[111][4,0]<5>(1,1600033,1600035,2)()
+[401][1,0]<5>(1)()
+[111][4,0]<6>(1,1600052,0,2)()
+[401][1,0]<6>(1)()
+[121][4,0]<7>(1600036,0,0,0)()
+[121][4,0]<7>(1600039,0,0,0)()
+[150][3,0]<7>(2,1600090,0)()
+[0][0,0]<7>()()
+[499][0,0]<6>()()
+[0][0,0]<6>()()
+[420][1,0]<5>(0)()
+[121][4,0]<6>(1600039,2,0,0)()
+[0][0,0]<6>()()
+[499][0,0]<5>()()
+[0][0,0]<5>()()
+[420][1,0]<4>(0)()
+[121][4,0]<5>(1600039,2,0,0)()
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[111][4,0]<3>(1,1600036,1,1)()
+[401][1,0]<3>(1)()
+[111][4,0]<4>(1,1600039,0,2)()
+[401][1,0]<4>(1)()
+[124][4,0]<5>(1600030,4096,-2,0)()
+[124][4,0]<5>(1600031,4096,-2,1)()
+[103][0,1]<5>()("Use FIND_PATH v2 /POS /LEN=1 /MOVE_EV=-2 to get one next-tile position along a path that avoids NPCs, accounting for looping maps")
+[122][3,1]<5>(1600005,262656,0)("<<FIND_PATH_DIR\cself[53]/v2\cself[6]/SX=\cself[30]/SY=\cself[31]/EX=\cself[20]/EY=\cself[21]/POS/LEN=1/EXE=20000/MOVE_EV=-2>>")
+[112][2,4]<5>(17,538470917)("NoPath","","","")
+[401][1,0]<5>(1)()
+[103][0,1]<6>()("No path! A moving map event has made it impossible to calculate a path to the destination.")
+[121][4,0]<6>(1600036,0,0,0)()
+[121][4,0]<6>(1600039,0,0,0)()
+[150][3,0]<6>(2,1600090,0)()
+[0][0,0]<6>()()
+[420][1,0]<5>(0)()
+[103][0,1]<6>()("Path found! Split the result into X,Y (or X,Y/END just before the goal). If the result is END because the start and goal are the same, use the destination directly.")
+[112][2,4]<6>(17,538470917)("END","","","")
+[401][1,0]<6>(1)()
+[121][4,0]<7>(1600054,1600020,0,0)()
+[121][4,0]<7>(1600055,1600021,0,0)()
+[0][0,0]<7>()()
+[420][1,0]<6>(0)()
+[122][3,0]<7>(1600008,1,1600005)()
+[122][3,1]<7>(1600008,2560,0)(",")
+[122][3,0]<7>(1600009,1,1600005)()
+[122][3,1]<7>(1600009,2816,0)(",")
+[121][4,0]<7>(1600054,1600008,0,0)()
+[121][4,0]<7>(1600055,1600009,0,0)()
+[0][0,0]<7>()()
+[499][0,0]<6>()()
+[121][4,0]<6>(1600056,1600054,2,8192)()
+[121][4,0]<6>(1600057,1600055,2,8192)()
+[121][4,0]<6>(1600039,2,0,0)()
+[0][0,0]<6>()()
+[499][0,0]<5>()()
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[111][4,0]<3>(1,1600036,1,1)()
+[401][1,0]<3>(1)()
+[111][4,0]<4>(1,1600039,2,2)()
+[401][1,0]<4>(1)()
+[103][0,1]<5>()("Keep the normal half-step/full-step setting and repeat <dqrt>Approach Position<dqrt> until the leader reaches the next tile center")
+[121][4,0]<5>(1600034,1600032,0,0)()
+[121][4,0]<5>(1600035,1600033,0,0)()
+[201][1,0]<5>(-2)()(2,[54,1600054,1600055])
+[121][4,0]<5>(1600052,2,0,0)()
+[121][4,0]<5>(1600039,1,0,0)()
+[0][0,0]<5>()()
+[499][0,0]<4>()()
+[0][0,0]<4>()()
+[499][0,0]<3>()()
+[0][0,0]<3>()()
+[499][0,0]<2>()()
+[0][0,0]<2>()()
+[499][0,0]<1>()()
+[0][0,0]<1>()()
+[499][0,0]<0>()()
 [0][0,0]<0>()()
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
+▼ Trigger Events:
+▼ Enabling this option lets you run map events by clicking them.
+▼ Choosing "Use + Sys73=1" also lets you advance messages and select choices with the mouse.
+▼ To run a map event across a counter, click the counter.
+▼ This doesn't support shop, menu, or battle screen controls.
+▼  
+▼ Note: If self variables are reset when starting a new game, turn this common event on again and reselect its options after the reset.
+▼ Caution: Mode 2 sets Sys73 to 1 when turned on and whenever this common event handles a click to run map events. Turning it off doesn't restore the previous Sys73 value. Change it in your game if needed.
+■Repeat Loop [ 1 ] Times
+ |▼ ★ User settings: Change the picture IDs here!
+ |▼ Note: Use picture IDs that don't conflict with other common events or your own events. Defaults: 99999 and 99998.
+ |■Set Variable: CSelf90[Destination Marker Picture ID] = 99999 + 0 
+ |■Set Variable: CSelf91[Blocked Marker Picture ID] = 99998 + 0 
+ |▼ ★ End of settings. The following is the on/off handling and the main left-click auto-move logic.
+ |■
+◇Loop End Point◇◇
+■Repeat Loop [ 1 ] Times
+ |▼ ★ Call this common event to turn it on or off, just like the "Switch Pixel Movement" common event!
+ |▼ 1 = on, -1 = off. During parallel processing, CSelf0[Mode] is 0, so the switch handling is skipped.
+ |■Condition (Number):   [1] CSelf0[Mode] ==  1  /  [2] CSelf0[Mode] ==  -1  
+ |-◇Condition:  [1]  [ CSelf0[Mode] == 1   ] Case↓
+ | |▼ Turn on left-click auto-move
+ | |■Set Variable: CSelf0[Mode] = 0 + 0 
+ | |▼ Reset the internal state first because leftover movement data could make the leader walk to the wrong place
+ | |■Set Variable: CSelf36[Movement Active Flag] = 0 + 0 
+ | |■Set Variable: CSelf39[Next Tile State (0:Unset/1:Wait/2:Ready)] = 0 + 0 
+ | |■Picture Erase: CSelf90[Destination Marker Picture ID]  / 0(0) Frames
+ | |■Picture Erase: CSelf91[Blocked Marker Picture ID]  / 0(0) Frames
+ | |▼ If CSelf1 = 2, set Sys73 to 1 when turning on (and when handling clicks to run map events)
+ | |■Condition (Number):   [1] CSelf1[Run Events by Clicking] >=  2  
+ | |-◇Condition:  [1]  [ CSelf1[Run Events by Clicking] >= 2   ] Case↓
+ | | |■Set Variable: Sys73:Allow Mouse on Message/Choice? (1:ON) = 1 + 0 
+ | | |■
+ | |◇End◇
+ | |▼ Start parallel processing and keep waiting for left clicks
+ | |■Set Variable: CSelf99[Activation Flag] = 1 + 0 
+ | |■Exit Event
+ | |■
+ |-◇Condition:  [2]  [ CSelf0[Mode] == -1   ] Case↓
+ | |▼ Turn off left-click auto-move
+ | |■Set Variable: CSelf0[Mode] = 0 + 0 
+ | |▼ ★ Do not interrupt the leader's Move Route! An empty Move Route here would also stop movement used in event scenes!
+ | |▼ Clear only the movement scheduled by this common event and remove the destination marker
+ | |■Set Variable: CSelf36[Movement Active Flag] = 0 + 0 
+ | |■Set Variable: CSelf39[Next Tile State (0:Unset/1:Wait/2:Ready)] = 0 + 0 
+ | |■Picture Erase: CSelf90[Destination Marker Picture ID]  / 0(0) Frames
+ | |■Picture Erase: CSelf91[Blocked Marker Picture ID]  / 0(0) Frames
+ | |▼ End parallel processing
+ | |■Set Variable: CSelf99[Activation Flag] = 0 + 0 
+ | |■Exit Event
+ | |■
+ |◇End◇
+ |■
+◇Loop End Point◇◇
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ The following is the left-click auto-move logic that runs during parallel processing
+▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+▼ ★ Do not move the leader while an event is running, to avoid interfering with the event's Move Route and scene
+▼ When an event starts, cancel only this common event's scheduled movement, then wait for the next click
+■Condition (Number):   [1] Sys13:Event Active? (1:Yes) >=  1  
+-◇Condition:  [1]  [ Sys13:Event Active? (1:Yes) >= 1   ] Case↓
+ |■Set Variable: CSelf36[Movement Active Flag] = 0 + 0 
+ |■Set Variable: CSelf39[Next Tile State (0:Unset/1:Wait/2:Ready)] = 0 + 0 
+ |■Picture Erase: CSelf90[Destination Marker Picture ID]  / 0(0) Frames
+ |■
+-◇Else
+ |▼ Check for a new left click. If clicked during movement, update the destination.
+ |■Key Input: CSelf10[Left-Click State] [Only When Pressed]  Mouse: Left-Click (20)
+ |■Condition (Number):   [1] CSelf10[Left-Click State] ==  20  
+ |-◇Condition:  [1]  [ CSelf10[Left-Click State] == 20   ] Case↓
+ | |▼ Get the current map's loop setting from SDB[0:Map Settings]: 0 = none, 1 = horizontal, 2 = vertical, 3 = both
+ | |■Set Variable+: CSelf40[Current Map ID] = [Map] Current Map ID
+ | |■Load DB(Sys):  CSelf41[Map Loop Setting] = SysDB[ 0:CSelf40[Current Map ID]:3 ] (Map Settings:-:Loop: 1 Horz/2 Vert/3 Both) 
+ | |■Set Variable+: CSelf44[Map Width (Tiles)] = [Map] Map Width
+ | |■Set Variable+: CSelf45[Map Height (Tiles)] = [Map] Map Height
+ | |▼ Prepare the 4/8-direction count and loop option string for FIND_PATH
+ | |■Set Variable: CSelf53[FIND_PATH Direction Count] = Sys155:[RO] Character Movement Direction (4/8) + 0 
+ | |■Set String: CSelf6[FIND_PATH Loop Option] = "/NO_LOOP"
+ | |■Condition (Number):   [1] CSelf41[Map Loop Setting] ==  1  /  [2] CSelf41[Map Loop Setting] ==  2  /  [3] CSelf41[Map Loop Setting] ==  3  
+ | |-◇Condition:  [1]  [ CSelf41[Map Loop Setting] == 1   ] Case↓
+ | | |■Set String: CSelf6[FIND_PATH Loop Option] = "/LOOP_X"
+ | | |■
+ | |-◇Condition:  [2]  [ CSelf41[Map Loop Setting] == 2   ] Case↓
+ | | |■Set String: CSelf6[FIND_PATH Loop Option] = "/LOOP_Y"
+ | | |■
+ | |-◇Condition:  [3]  [ CSelf41[Map Loop Setting] == 3   ] Case↓
+ | | |■Set String: CSelf6[FIND_PATH Loop Option] = "/LOOP_XY"
+ | | |■
+ | |◇End◇
+ | |▼ Use the Set Variable+ calculations marked "Map Zoom Affected" to convert the click to a destination tile
+ | |■Set Variable+: CSelf20[Destination Map X] = [Screen] X:Sys71:Mouse X Y:Sys72:Mouse Y - Map X at Pixel Position (Map Zoom Affected)
+ | |■Set Variable+: CSelf21[Destination Map Y] = [Screen] X:Sys71:Mouse X Y:Sys72:Mouse Y - Map Y at Pixel Position (Map Zoom Affected)
+ | |▼ Store the destination in precise positions too. Using only full-tile positions could falsely signal arrival during half-tile movement.
+ | |■Set Variable: CSelf37[Destination Precise X] = CSelf20[Destination Map X] * 2 
+ | |■Set Variable: CSelf38[Destination Precise Y] = CSelf21[Destination Map Y] * 2 
+ | |■Set Variable+: CSelf30[Leader X] = Leader's X Position (Standard)
+ | |■Set Variable+: CSelf31[Leader Y] = Leader's Y Position (Standard)
+ | |▼ Use FIND_PATH to check if the destination is reachable, considering map terrain and collisions with events other than the leader
+ | |▼ Specify MOVE_EV=-2 so events such as NPCs count as obstacles and movement stays on passable tiles
+ | |■Set String: CSelf5[FIND_PATH Result] =<Execute Special Code> "<<FIND_PATH_DIR\cself[53]/v2\cself[6]/SX=\cself[30]/SY=\cself[31]/EX=\cself[20]/EY=\cself[21]/LEN=1/..."
+ | |▼ Calculate the destination marker picture's size from the difference in screen positions between adjacent tiles
+ | |■Set Variable+: CSelf22[Destination Screen X] = [Map] X:CSelf20[Destination Map X] Y:CSelf21[Destination Map Y] - Screen X Position (Center of Tile, Map Zoom Affected)
+ | |■Set Variable+: CSelf23[Destination Screen Y] = [Map] X:CSelf20[Destination Map X] Y:CSelf21[Destination Map Y] - Screen Y Position (Center of Tile, Map Zoom Affected)
+ | |■Set Variable: CSelf24[Adjacent Tile X] = CSelf20[Destination Map X] - 1 
+ | |■Set Variable: CSelf25[Adjacent Tile Y] = CSelf21[Destination Map Y] - 1 
+ | |■Condition (Number):   [1] CSelf20[Destination Map X] ==  0  
+ | |-◇Condition:  [1]  [ CSelf20[Destination Map X] == 0   ] Case↓
+ | | |■Set Variable: CSelf24[Adjacent Tile X] = CSelf20[Destination Map X] + 1 
+ | | |■
+ | |◇End◇
+ | |■Condition (Number):   [1] CSelf21[Destination Map Y] ==  0  
+ | |-◇Condition:  [1]  [ CSelf21[Destination Map Y] == 0   ] Case↓
+ | | |■Set Variable: CSelf25[Adjacent Tile Y] = CSelf21[Destination Map Y] + 1 
+ | | |■
+ | |◇End◇
+ | |■Set Variable+: CSelf26[Adjacent Tile Screen X] = [Map] X:CSelf24[Adjacent Tile X] Y:CSelf21[Destination Map Y] - Screen X Position (Center of Tile, Map Zoom Affected)
+ | |■Set Variable+: CSelf27[Adjacent Tile Screen Y] = [Map] X:CSelf20[Destination Map X] Y:CSelf25[Adjacent Tile Y] - Screen Y Position (Center of Tile, Map Zoom Affected)
+ | |■Set Variable: CSelf28[Displayed Tile Width] Absolute= CSelf26[Adjacent Tile Screen X] - CSelf22[Destination Screen X] 
+ | |■Set Variable: CSelf29[Displayed Tile Height] Absolute= CSelf27[Adjacent Tile Screen Y] - CSelf23[Destination Screen Y] 
+ | |▼ If a looping map gives multiple marker positions, use the one closest to the center of the game screen
+ | |■Set Variable: CSelf46[Looped Screen Width] = CSelf44[Map Width (Tiles)] * CSelf28[Displayed Tile Width] 
+ | |■Set Variable: CSelf47[Looped Screen Height] = CSelf45[Map Height (Tiles)] * CSelf29[Displayed Tile Height] 
+ | |■Condition (Number):   [1] CSelf41[Map Loop Setting] &  1  
+ | |-◇Condition:  [1]  [ CSelf41[Map Loop Setting] & 1   ] Case↓
+ | | |▼ Horizontal map looping
+ | | |■Condition (Number):   [1] CSelf46[Looped Screen Width] >=  1  
+ | | |-◇Condition:  [1]  [ CSelf46[Looped Screen Width] >= 1   ] Case↓
+ | | | |■Set Variable: CSelf22[Destination Screen X] += CSelf46[Looped Screen Width] + 0 
+ | | | |■Set Variable: CSelf22[Destination Screen X] %= CSelf46[Looped Screen Width] + 0 
+ | | | |■Set Variable: CSelf48[Loop Position Offset] = CSelf22[Destination Screen X] + 0 
+ | | | |■Set Variable: CSelf48[Loop Position Offset] -= Sys116:[RO] Screen Width / 2 
+ | | | |■Set Variable: CSelf48[Loop Position Offset] /= CSelf46[Looped Screen Width] / 2 
+ | | | |■Set Variable: CSelf22[Destination Screen X] -= CSelf46[Looped Screen Width] * CSelf48[Loop Position Offset] 
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇End◇
+ | |■Condition (Number):   [1] CSelf41[Map Loop Setting] &  2  
+ | |-◇Condition:  [1]  [ CSelf41[Map Loop Setting] & 2   ] Case↓
+ | | |▼ Vertical map looping
+ | | |■Condition (Number):   [1] CSelf47[Looped Screen Height] >=  1  
+ | | |-◇Condition:  [1]  [ CSelf47[Looped Screen Height] >= 1   ] Case↓
+ | | | |■Set Variable: CSelf23[Destination Screen Y] += CSelf47[Looped Screen Height] + 0 
+ | | | |■Set Variable: CSelf23[Destination Screen Y] %= CSelf47[Looped Screen Height] + 0 
+ | | | |■Set Variable: CSelf48[Loop Position Offset] = CSelf23[Destination Screen Y] + 0 
+ | | | |■Set Variable: CSelf48[Loop Position Offset] -= Sys117:[RO] Screen Height / 2 
+ | | | |■Set Variable: CSelf48[Loop Position Offset] /= CSelf47[Looped Screen Height] / 2 
+ | | | |■Set Variable: CSelf23[Destination Screen Y] -= CSelf47[Looped Screen Height] * CSelf48[Loop Position Offset] 
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇End◇
+ | |▼ If no path exists, shake a red square (■) and stop. Delay its removal so another click can be received during the animation.
+ | |▼ Reset any pending delayed removal so it doesn't also erase the new red square (■) later
+ | |■Picture [Reset Delay]: CSelf91[Blocked Marker Picture ID] 
+ | |■Condition (String):   [1] CSelf5[FIND_PATH Result] Includes "NoPath"
+ | |-◇Condition:  [1] [ CSelf5[FIND_PATH Result] Includes "NoPath" ] Case↓
+ | | |▼ No path! The destination may be blocked by terrain or a map event, or too far away for a path to be calculated.
+ | | |■Set Variable: CSelf36[Movement Active Flag] = 0 + 0 
+ | | |■Set Variable: CSelf39[Next Tile State (0:Unset/1:Wait/2:Ready)] = 0 + 0 
+ | | |■Picture Erase: CSelf90[Destination Marker Picture ID]  / 0(0) Frames
+ | | |■Picture Show: CSelf91[Blocked Marker Picture ID] [Center] Window [<SQUARE>] Size [CSelf28[Displayed Tile Width],CSelf29[Displayed Tile Height]] X:CSelf22[Destination Screen X] Y:CSelf23[Destination Screen Y] / 0(0) Frames  / Pattern 1 / Opacity 210 / Normal  / Angle 0 / Scale 90% / Color R[100] G[0] B[0]
+ | | |■Effect Picture: CSelf91[Blocked Marker Picture ID] [Shake] Shake X 3 / Shake Y 0 / 6 Times  [2] Frames
+ | | |■Picture Erase: CSelf91[Blocked Marker Picture ID]  / 6(18) Frames
+ | | |■
+ | |-◇Else
+ | | |▼ Path found! Use FIND_PATH to choose the next tile, then repeatedly move toward its position.
+ | | |■Set Variable: CSelf36[Movement Active Flag] = 1 + 0 
+ | | |■Set Variable: CSelf39[Next Tile State (0:Unset/1:Wait/2:Ready)] = 0 + 0 
+ | | |■Picture Erase: CSelf91[Blocked Marker Picture ID]  / 0(0) Frames
+ | | |▼ The white square (■) marks the destination. Its size is based on adjacent tiles' screen positions, so it adjusts to map zoom.
+ | | |■Picture Show: CSelf90[Destination Marker Picture ID] [Center] Window [<SQUARE>] Size [CSelf28[Displayed Tile Width],CSelf29[Displayed Tile Height]] X:CSelf22[Destination Screen X] Y:CSelf23[Destination Screen Y] / 0(0) Frames  / Pattern 1 / Opacity 180 / Normal  / Angle 0 / Scale 88% / Color R[100] G[100] B[100]
+ | | |■Effect Picture: CSelf90[Destination Marker Picture ID] [Auto Scale] Width 12% / Height 12% / Rest 2 Frames  Interval [10] Frames
+ | | |■Condition (Number):   [1] CSelf1[Run Events by Clicking] >=  1  
+ | | |-◇Condition:  [1]  [ CSelf1[Run Events by Clicking] >= 1   ] Case↓
+ | | | |■Auto Key Press:   Confirm  
+ | | | |■Condition (Number):   [1] CSelf1[Run Events by Clicking] >=  2  
+ | | | |-◇Condition:  [1]  [ CSelf1[Run Events by Clicking] >= 2   ] Case↓
+ | | | | |■Set Variable: Sys73:Allow Mouse on Message/Choice? (1:ON) = 1 + 0 
+ | | | | |■
+ | | | |◇End◇
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇End◇
+ | |■
+ |◇End◇
+ |▼ Continue movement from here. Run at most one "Approach Position" command per parallel-process cycle.
+ |▼ Avoid long loops so new clicks can still be detected during movement
+ |■Condition (Number):   [1] CSelf36[Movement Active Flag] >=  1  
+ |-◇Condition:  [1]  [ CSelf36[Movement Active Flag] >= 1   ] Case↓
+ | |▼ After an "Approach Position" command, movement may take a moment to start, so allow a short grace period before checking if movement is blocked
+ | |■Condition (Number):   [1] CSelf52[Step Check Grace Period] >=  1  
+ | |-◇Condition:  [1]  [ CSelf52[Step Check Grace Period] >= 1   ] Case↓
+ | | |■Set Variable: CSelf52[Step Check Grace Period] -= 1 + 0 
+ | | |■
+ | |◇End◇
+ | |■Set Variable+: CSelf22[Destination Screen X] = [Map] X:CSelf20[Destination Map X] Y:CSelf21[Destination Map Y] - Screen X Position (Center of Tile, Map Zoom Affected)
+ | |■Set Variable+: CSelf23[Destination Screen Y] = [Map] X:CSelf20[Destination Map X] Y:CSelf21[Destination Map Y] - Screen Y Position (Center of Tile, Map Zoom Affected)
+ | |▼ If a looping map gives multiple marker positions, use the one closest to the center of the game screen
+ | |■Set Variable: CSelf46[Looped Screen Width] = CSelf44[Map Width (Tiles)] * CSelf28[Displayed Tile Width] 
+ | |■Set Variable: CSelf47[Looped Screen Height] = CSelf45[Map Height (Tiles)] * CSelf29[Displayed Tile Height] 
+ | |■Condition (Number):   [1] CSelf41[Map Loop Setting] &  1  
+ | |-◇Condition:  [1]  [ CSelf41[Map Loop Setting] & 1   ] Case↓
+ | | |▼ Horizontal map looping
+ | | |■Condition (Number):   [1] CSelf46[Looped Screen Width] >=  1  
+ | | |-◇Condition:  [1]  [ CSelf46[Looped Screen Width] >= 1   ] Case↓
+ | | | |■Set Variable: CSelf22[Destination Screen X] += CSelf46[Looped Screen Width] + 0 
+ | | | |■Set Variable: CSelf22[Destination Screen X] %= CSelf46[Looped Screen Width] + 0 
+ | | | |■Set Variable: CSelf48[Loop Position Offset] = CSelf22[Destination Screen X] + 0 
+ | | | |■Set Variable: CSelf48[Loop Position Offset] -= Sys116:[RO] Screen Width / 2 
+ | | | |■Set Variable: CSelf48[Loop Position Offset] /= CSelf46[Looped Screen Width] / 2 
+ | | | |■Set Variable: CSelf22[Destination Screen X] -= CSelf46[Looped Screen Width] * CSelf48[Loop Position Offset] 
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇End◇
+ | |■Condition (Number):   [1] CSelf41[Map Loop Setting] &  2  
+ | |-◇Condition:  [1]  [ CSelf41[Map Loop Setting] & 2   ] Case↓
+ | | |▼ Vertical map looping
+ | | |■Condition (Number):   [1] CSelf47[Looped Screen Height] >=  1  
+ | | |-◇Condition:  [1]  [ CSelf47[Looped Screen Height] >= 1   ] Case↓
+ | | | |■Set Variable: CSelf23[Destination Screen Y] += CSelf47[Looped Screen Height] + 0 
+ | | | |■Set Variable: CSelf23[Destination Screen Y] %= CSelf47[Looped Screen Height] + 0 
+ | | | |■Set Variable: CSelf48[Loop Position Offset] = CSelf23[Destination Screen Y] + 0 
+ | | | |■Set Variable: CSelf48[Loop Position Offset] -= Sys117:[RO] Screen Height / 2 
+ | | | |■Set Variable: CSelf48[Loop Position Offset] /= CSelf47[Looped Screen Height] / 2 
+ | | | |■Set Variable: CSelf23[Destination Screen Y] -= CSelf47[Looped Screen Height] * CSelf48[Loop Position Offset] 
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇End◇
+ | |■Picture Move: CSelf90[Destination Marker Picture ID]  X:CSelf22[Destination Screen X] Y:CSelf23[Destination Screen Y] / 0(0) Frames  / Pattern 1 / Opacity 180 / Normal  / Angle 0 / Scale 88% / Color R[100] G[100] B[100]
+ | |■Condition (Number):   [1] Sys35:Leader Moving? (Between Tiles?) [1:Yes] ==  0  
+ | |-◇Condition:  [1]  [ Sys35:Leader Moving? (Between Tiles?) [1:Yes] == 0   ] Case↓
+ | | |■Set Variable+: CSelf32[Previous X] = Leader's X Position (Precise) [Left of Character]
+ | | |■Set Variable+: CSelf33[Previous Y] = Leader's Y Position (Precise) [Top of Character]
+ | | |▼ Use an exact match of precise positions to detect arrival so the leader doesn't stop after overlapping only a quarter of the destination tile
+ | | |■Condition (Number):   [1] CSelf32[Previous X] ==  CSelf37[Destination Precise X]  
+ | | |-◇Condition:  [1]  [ CSelf32[Previous X] == CSelf37[Destination Precise X]   ] Case↓
+ | | | |■Condition (Number):   [1] CSelf33[Previous Y] ==  CSelf38[Destination Precise Y]  
+ | | | |-◇Condition:  [1]  [ CSelf33[Previous Y] == CSelf38[Destination Precise Y]   ] Case↓
+ | | | | |■Set Variable: CSelf36[Movement Active Flag] = 0 + 0 
+ | | | | |■Set Variable: CSelf39[Next Tile State (0:Unset/1:Wait/2:Ready)] = 0 + 0 
+ | | | | |■Picture Erase: CSelf90[Destination Marker Picture ID]  / 0(0) Frames
+ | | | | |■
+ | | | |◇End◇
+ | | | |■
+ | | |◇End◇
+ | | |▼ Keep aiming for the same position until reaching the next tile center. Don't rerun FIND_PATH between tile centers.
+ | | |■Condition (Number):   [1] CSelf39[Next Tile State (0:Unset/1:Wait/2:Ready)] ==  1  
+ | | |-◇Condition:  [1]  [ CSelf39[Next Tile State (0:Unset/1:Wait/2:Ready)] == 1   ] Case↓
+ | | | |■Condition (Number):   [1] CSelf32[Previous X] ==  CSelf56[Next Tile Precise X]  
+ | | | |-◇Condition:  [1]  [ CSelf32[Previous X] == CSelf56[Next Tile Precise X]   ] Case↓
+ | | | | |■Condition (Number):   [1] CSelf33[Previous Y] ==  CSelf57[Next Tile Precise Y]  
+ | | | | |-◇Condition:  [1]  [ CSelf33[Previous Y] == CSelf57[Next Tile Precise Y]   ] Case↓
+ | | | | | |■Set Variable: CSelf39[Next Tile State (0:Unset/1:Wait/2:Ready)] = 0 + 0 
+ | | | | | |■
+ | | | | |◇End◇
+ | | | | |■
+ | | | |◇End◇
+ | | | |■
+ | | |◇End◇
+ | | |▼ After one step, keep approaching the same position until reaching the tile center. Stop only if no movement occurred.
+ | | |■Condition (Number):   [1] CSelf39[Next Tile State (0:Unset/1:Wait/2:Ready)] ==  1  
+ | | |-◇Condition:  [1]  [ CSelf39[Next Tile State (0:Unset/1:Wait/2:Ready)] == 1   ] Case↓
+ | | | |■Condition (Number):   [1] CSelf32[Previous X] ==  CSelf34[Last Step Start X]  
+ | | | |-◇Condition:  [1]  [ CSelf32[Previous X] == CSelf34[Last Step Start X]   ] Case↓
+ | | | | |■Condition (Number):   [1] CSelf33[Previous Y] ==  CSelf35[Last Step Start Y]  
+ | | | | |-◇Condition:  [1]  [ CSelf33[Previous Y] == CSelf35[Last Step Start Y]   ] Case↓
+ | | | | | |■Condition (Number):   [1] CSelf52[Step Check Grace Period] ==  0  
+ | | | | | |-◇Condition:  [1]  [ CSelf52[Step Check Grace Period] == 0   ] Case↓
+ | | | | | | |■Set Variable: CSelf36[Movement Active Flag] = 0 + 0 
+ | | | | | | |■Set Variable: CSelf39[Next Tile State (0:Unset/1:Wait/2:Ready)] = 0 + 0 
+ | | | | | | |■Picture Erase: CSelf90[Destination Marker Picture ID]  / 0(0) Frames
+ | | | | | | |■
+ | | | | | |◇End◇
+ | | | | | |■
+ | | | | |-◇Else
+ | | | | | |■Set Variable: CSelf39[Next Tile State (0:Unset/1:Wait/2:Ready)] = 2 + 0 
+ | | | | | |■
+ | | | | |◇End◇
+ | | | | |■
+ | | | |-◇Else
+ | | | | |■Set Variable: CSelf39[Next Tile State (0:Unset/1:Wait/2:Ready)] = 2 + 0 
+ | | | | |■
+ | | | |◇End◇
+ | | | |■
+ | | |◇End◇
+ | | |■Condition (Number):   [1] CSelf36[Movement Active Flag] >=  1  
+ | | |-◇Condition:  [1]  [ CSelf36[Movement Active Flag] >= 1   ] Case↓
+ | | | |■Condition (Number):   [1] CSelf39[Next Tile State (0:Unset/1:Wait/2:Ready)] ==  0  
+ | | | |-◇Condition:  [1]  [ CSelf39[Next Tile State (0:Unset/1:Wait/2:Ready)] == 0   ] Case↓
+ | | | | |■Set Variable+: CSelf30[Leader X] = Leader's X Position (Standard)
+ | | | | |■Set Variable+: CSelf31[Leader Y] = Leader's Y Position (Standard)
+ | | | | |▼ Use FIND_PATH v2 /POS /LEN=1 /MOVE_EV=-2 to get one next-tile position along a path that avoids NPCs, accounting for looping maps
+ | | | | |■Set String: CSelf5[FIND_PATH Result] =<Execute Special Code> "<<FIND_PATH_DIR\cself[53]/v2\cself[6]/SX=\cself[30]/SY=\cself[31]/EX=\cself[20]/EY=\cself[21]/POS/LE..."
+ | | | | |■Condition (String):   [1] CSelf5[FIND_PATH Result] Includes "NoPath"
+ | | | | |-◇Condition:  [1] [ CSelf5[FIND_PATH Result] Includes "NoPath" ] Case↓
+ | | | | | |▼ No path! A moving map event has made it impossible to calculate a path to the destination.
+ | | | | | |■Set Variable: CSelf36[Movement Active Flag] = 0 + 0 
+ | | | | | |■Set Variable: CSelf39[Next Tile State (0:Unset/1:Wait/2:Ready)] = 0 + 0 
+ | | | | | |■Picture Erase: CSelf90[Destination Marker Picture ID]  / 0(0) Frames
+ | | | | | |■
+ | | | | |-◇Else
+ | | | | | |▼ Path found! Split the result into X,Y (or X,Y/END just before the goal). If the result is END because the start and goal are the same, use the destination directly.
+ | | | | | |■Condition (String):   [1] CSelf5[FIND_PATH Result] Includes "END"
+ | | | | | |-◇Condition:  [1] [ CSelf5[FIND_PATH Result] Includes "END" ] Case↓
+ | | | | | | |■Set Variable: CSelf54[Next Tile X] = CSelf20[Destination Map X] + 0 
+ | | | | | | |■Set Variable: CSelf55[Next Tile Y] = CSelf21[Destination Map Y] + 0 
+ | | | | | | |■
+ | | | | | |-◇Else
+ | | | | | | |■Set String: CSelf8[Next Tile X String] = CSelf5[FIND_PATH Result]
+ | | | | | | |■Set String: CSelf8[Next Tile X String] =<Cut Up To> ","
+ | | | | | | |■Set String: CSelf9[Next Tile Y String] = CSelf5[FIND_PATH Result]
+ | | | | | | |■Set String: CSelf9[Next Tile Y String] =<Cut After> ","
+ | | | | | | |■Set Variable: CSelf54[Next Tile X] = CSelf8[Next Tile X String] + 0 
+ | | | | | | |■Set Variable: CSelf55[Next Tile Y] = CSelf9[Next Tile Y String] + 0 
+ | | | | | | |■
+ | | | | | |◇End◇
+ | | | | | |■Set Variable: CSelf56[Next Tile Precise X] = CSelf54[Next Tile X] * 2 
+ | | | | | |■Set Variable: CSelf57[Next Tile Precise Y] = CSelf55[Next Tile Y] * 2 
+ | | | | | |■Set Variable: CSelf39[Next Tile State (0:Unset/1:Wait/2:Ready)] = 2 + 0 
+ | | | | | |■
+ | | | | |◇End◇
+ | | | | |■
+ | | | |◇End◇
+ | | | |■
+ | | |◇End◇
+ | | |■Condition (Number):   [1] CSelf36[Movement Active Flag] >=  1  
+ | | |-◇Condition:  [1]  [ CSelf36[Movement Active Flag] >= 1   ] Case↓
+ | | | |■Condition (Number):   [1] CSelf39[Next Tile State (0:Unset/1:Wait/2:Ready)] ==  2  
+ | | | |-◇Condition:  [1]  [ CSelf39[Next Tile State (0:Unset/1:Wait/2:Ready)] == 2   ] Case↓
+ | | | | |▼ Keep the normal half-step/full-step setting and repeat "Approach Position" until the leader reaches the next tile center
+ | | | | |■Set Variable: CSelf34[Last Step Start X] = CSelf32[Previous X] + 0 
+ | | | | |■Set Variable: CSelf35[Last Step Start Y] = CSelf33[Previous Y] + 0 
+ | | | | |■Move Route: [Skip]  Leader / Approach X:[CSelf54[Next Tile X]] Y:[CSelf55[Next Tile Y]]
+ | | | | |■Set Variable: CSelf52[Step Check Grace Period] = 2 + 0 
+ | | | | |■Set Variable: CSelf39[Next Tile State (0:Unset/1:Wait/2:Ready)] = 1 + 0 
+ | | | | |■
+ | | | |◇End◇
+ | | | |■
+ | | |◇End◇
+ | | |■
+ | |◇End◇
+ | |■
+ |◇End◇
+ |■
+◇End◇
 ■
 [COMMAND_TEXT_END]
