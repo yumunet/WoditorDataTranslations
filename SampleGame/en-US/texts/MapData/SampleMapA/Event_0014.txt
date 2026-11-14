@@ -40,7 +40,7 @@ COMMAND_NUM=22
 --
 WoditorEvCOMMAND_START
 [101][0,1]<0>()("Good day! <\n>What do you want to try?")
-[102][1,5]<0>(5)("Flash","Shake","Zoom in","Unzoom","Shake the screen")
+[102][1,5]<0>(5)("Flash","Shake","Zoom in","Reset zoom","Shake the screen")
 [401][1,0]<0>(2)()
 [180][1,0]<1>(5)()
 [290][7,0]<1>(1,40,-1,0,100,100,100)()
@@ -65,7 +65,7 @@ WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
 ■Show Message: Good day! \nWhat do you want to try?
-■Show Choices: / [1] Flash / [2] Shake / [3] Zoom in / [4] Unzoom / [5] Shake the screen 
+■Show Choices: / [1] Flash / [2] Shake / [3] Zoom in / [4] Reset zoom / [5] Shake the screen 
 -◇Case: Choice [1] Flash                                    ↓
  |■Wait: 5 Frames
  |■Effect Character: This Event[Flash] R100/G100/B100  [40] Frames
@@ -76,7 +76,7 @@ WoditorEvCOMMAND_END
 -◇Case: Choice [3] Zoom in                                  ↓
  |■Effect Map: [Zoom] Center X 160 / Center Y 120 / 200%  [10] Frames
  |■
--◇Case: Choice [4] Unzoom                                   ↓
+-◇Case: Choice [4] Reset zoom                               ↓
  |■Effect Map: [Zoom] Center X 160 / Center Y 120 / 100%  [10] Frames
  |■
 -◇Case: Choice [5] Shake the screen                         ↓

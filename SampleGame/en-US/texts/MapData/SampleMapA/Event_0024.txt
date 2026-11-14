@@ -61,7 +61,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<2>()("(Select <dqrt>Execute Special Code<dqrt> in Set String, then enter the code.")
 [103][0,1]<2>()(" See the Set String page in the manual for details!)")
 [122][3,1]<2>(3000000,262656,0)("<<GET_COMMONEVENT_ID_FROM_NAME>>■Switch Left-Click Auto-Move")
-[101][0,1]<2>()("All right, let's turn on Common Event \s[0],<\n><dqrt>■Switch Left-Click Auto-Move<dqrt>...<\n>*Click!* It's on!")
+[101][0,1]<2>()("Alright, let's use Common Event \s[0],<\n><dqrt>■Switch Left-Click Auto-Move<dqrt>...<\n>*Click* It's on!")
 [140][7,1]<2>(33554464,0,0,0,100,100,0)("SystemFile/SE_Get.ogg")
 [101][0,1]<2>()("Once we're done talking, try clicking the map!<\n>Your character will move there on its own!")
 [300][4,1]<2>(0,2,1,0)("■Switch Left-Click Auto-Move")
@@ -70,8 +70,8 @@ WoditorEvCOMMAND_START
 [103][0,1]<2>()("If Self0 is 1, turn off click-to-move")
 [121][4,0]<2>(1100000,0,0,0)()
 [140][7,1]<2>(33554464,0,0,0,100,100,0)("SystemFile/SE_LevelUp.ogg")
-[101][0,1]<2>()("Want to stop? All right,<\n>I turned off click-to-move!")
-[101][0,1]<2>()("Click-to-move could come in handy<\n>if you release a browser game.<\n>Your players might like it!")
+[101][0,1]<2>()("Want to stop? Alright, I turned off click-to-move!")
+[101][0,1]<2>()("Click-to-move could come in handy if you release<\n>a browser game. Your players might like it!")
 [300][4,1]<2>(0,2,-1,0)("■Switch Left-Click Auto-Move")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
@@ -105,7 +105,7 @@ WoditorEvCOMMAND_END
  | |▼ (Select "Execute Special Code" in Set String, then enter the code.
  | |▼  See the Set String page in the manual for details!)
  | |■Set String: S0[[Sample] Temporary String] =<Execute Special Code> "<<GET_COMMONEVENT_ID_FROM_NAME>>■Switch Left-Click Auto-Move"
- | |■Show Message: All right, let's turn on Common Event \s[0],\n"■Switch Left-Click Auto-Move"...\n*Click!* It's on!
+ | |■Show Message: Alright, let's use Common Event \s[0],\n"■Switch Left-Click Auto-Move"...\n*Click* It's on!
  | |■Sound: SE File [SystemFile/SE_Get.ogg] Vol 100% Pitch 100% (0 Channel) Play / Delay: 0 Frames
  | |■Show Message: Once we're done talking, try clicking the map!\nYour character will move there on its own!
  | |■Call Event [Name]: ["■Switch Left-Click Auto-Move"] <CommonEv 40>  / 1:Turn On / 0:Don't Use
@@ -114,8 +114,8 @@ WoditorEvCOMMAND_END
  | |▼ If Self0 is 1, turn off click-to-move
  | |■Set Variable: This Ev Self0 = 0 + 0 
  | |■Sound: SE File [SystemFile/SE_LevelUp.ogg] Vol 100% Pitch 100% (0 Channel) Play / Delay: 0 Frames
- | |■Show Message: Want to stop? All right,\nI turned off click-to-move!
- | |■Show Message: Click-to-move could come in handy\nif you release a browser game.\nYour players might like it!
+ | |■Show Message: Want to stop? Alright, I turned off click-to-move!
+ | |■Show Message: Click-to-move could come in handy if you release\na browser game. Your players might like it!
  | |■Call Event [Name]: ["■Switch Left-Click Auto-Move"] <CommonEv 40>  / -1:Turn Off / 0:Don't Use
  | |■
  |◇End◇

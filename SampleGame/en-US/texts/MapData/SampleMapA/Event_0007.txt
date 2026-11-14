@@ -46,11 +46,11 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("-----------------------------------------------------")
 [101][0,1]<0>()("Hello there, I'm the Professor!<\n>What have you come to ask today?")
 [180][1,0]<0>(1)()
-[102][1,7]<0>(7)("What can you tell me?","Tell me about string pictures","Tell me about window pictures","Keyboard text input","Tell me about special characters","Show me lots of icons","Tell me about changing fonts")
+[102][1,7]<0>(7)("What can you tell me?","Tell me about string pictures","Tell me about window pictures","Try keyboard text input","Tell me about special characters","Show me lots of icons","Tell me about changing fonts")
 [401][1,0]<0>(2)()
 [101][0,1]<1>()("I can introduce you to the basic functions of<\n>WOLF RPG Editor!")
-[101][0,1]<1>()("If you want to make your own system,<\n>or you want to master using WOLF RPG Editor,<\n>you should really stop and listen!")
-[101][0,1]<1>()("Ah, but if you don't care to learn and find the Base <\n>System's enough, then you don't really need to listen!")
+[101][0,1]<1>()("If you want to make your own system, or you want<\n>to master using WOLF RPG Editor, you should really<\n>stop and listen!")
+[101][0,1]<1>()("Ah, but if you don't care to learn and find the<\n>Base System's enough, then you don't really<\n>need to listen!")
 [0][0,0]<1>()()
 [401][1,0]<0>(3)()
 [101][0,1]<1>()("In WOLF RPG Editor, the Picture command isn't<\n>limited to showing images—it can also show text!")
@@ -66,11 +66,11 @@ WoditorEvCOMMAND_START
 [401][1,0]<0>(4)()
 [101][0,1]<1>()("This is a function which displays a freeform-size<\n>window image as a picture!")
 [150][11,1]<1>(4096,1000,10,1,1,1,255,160,120,100,0)("SystemFile/WindowBase_amania.png")
-[101][0,1]<1>()("For example, if we just make a base image which can<\n>be divided into 3x3 segments...")
+[101][0,1]<1>()("For example, if we just make a base image which<\n>can be divided into 3x3 segments...")
 [150][11,1]<1>(4144,1000,10,100,80,1,255,160,120,100,0)("SystemFile/WindowBase_amania.png")
 [101][0,1]<1>()("Then we can make windows like this...")
 [150][11,1]<1>(4144,1000,10,150,60,1,255,160,120,100,0)("SystemFile/WindowBase_amania.png")
-[101][0,1]<1>()("Or windows like this! It's as simple as specifying what<\n>size to make the window!")
+[101][0,1]<1>()("Or windows like this! It's as simple as specifying<\n>what size to make the window!")
 [150][3,0]<1>(4146,1000,10)()
 [101][0,1]<1>()("This means there's no need to make separate<\n>windows in all different sizes! Handy, yes?!")
 [101][0,1]<1>()("Most of the menus in this sample game are made<\n>using this method!")
@@ -84,7 +84,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<2>()()
 [420][1,0]<1>(0)()
 [101][0,1]<2>()("You just entered<\n><dqrt>\s[0]<dqrt>!")
-[101][0,1]<2>()("I imagine this function will be quite handy when you<\n>want to have a name entry and the like!")
+[101][0,1]<2>()("I imagine this function will be quite handy when<\n>you want to have a name entry and the like!")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [0][0,0]<1>()()
@@ -92,7 +92,7 @@ WoditorEvCOMMAND_START
 [101][0,1]<1>()("With special characters, you can add various effects<\n>to text!")
 [101][0,1]<1>()("For example, if you put a file called icon031.png in<\n>the Data/BasicData folder, inserting <dqrt>\\i[31]Book<dqrt> in<\n>a message will make it display as <dqrt>\i[31]Book<dqrt>...")
 [101][0,1]<1>()("Also, by inserting \\r[jinsei,life], it will display as \r[jinsei,life],<\n>showing the latter as Ruby text...\f[9]<\n>(Ruby color is set in SystemDB Type 12 Data 13)")
-[101][0,1]<1>()("And if you insert \\!, the message will temporarily stop<\n>there. \!Like this.")
+[101][0,1]<1>()("And if you insert \\!, the message will temporarily<\n>stop there. \!Like this.")
 [101][0,1]<1>()("In addition, \\. will cause a 1/4-second wait,\. and \\^<\n>will end the message display without waiting for<\n>input. Let's try out \\^ in the next message.")
 [101][0,1]<1>()("\f[20]Pro\.fes\.sor\. Rocks!\.\.\^")
 [101][0,1]<1>()("Well, you get the idea. Details are in the<\n>WOLF RPG Editor manual on the official Japanese site.")
@@ -123,11 +123,11 @@ WoditorEvCOMMAND_END
 ▼ -----------------------------------------------------
 ■Show Message: Hello there, I'm the Professor!\nWhat have you come to ask today?
 ■Wait: 1 Frames
-■Show Choices: / [1] What can you tell me? / [2] Tell me about string pictures / [3] Tell me about window pictures / [4] Keyboard text input / [5] Tell me about special characters / [6] Show me lots of icons / [7] Tell me about changing fonts 
+■Show Choices: / [1] What can you tell me? / [2] Tell me about string pictures / [3] Tell me about window pictures / [4] Try keyboard text input / [5] Tell me about special characters / [6] Show me lots of icons / [7] Tell me about changing fonts 
 -◇Case: Choice [1] What can you tell me?                    ↓
  |■Show Message: I can introduce you to the basic functions of\nWOLF RPG Editor!
- |■Show Message: If you want to make your own system,\nor you want to master using WOLF RPG Editor,\nyou should really stop and listen!
- |■Show Message: Ah, but if you don't care to learn and find the Base \nSystem's enough, then you don't really need to listen!
+ |■Show Message: If you want to make your own system, or you want\nto master using WOLF RPG Editor, you should really\nstop and listen!
+ |■Show Message: Ah, but if you don't care to learn and find the\nBase System's enough, then you don't really\nneed to listen!
  |■
 -◇Case: Choice [2] Tell me about string pictures            ↓
  |■Show Message: In WOLF RPG Editor, the Picture command isn't\nlimited to showing images—it can also show text!
@@ -143,16 +143,16 @@ WoditorEvCOMMAND_END
 -◇Case: Choice [3] Tell me about window pictures            ↓
  |■Show Message: This is a function which displays a freeform-size\nwindow image as a picture!
  |■Picture Show: 1000 [Center] File [SystemFile/WindowBase_amania.png] X:160 Y:120 / 10(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
- |■Show Message: For example, if we just make a base image which can\nbe divided into 3x3 segments...
+ |■Show Message: For example, if we just make a base image which\ncan be divided into 3x3 segments...
  |■Picture Show: 1000 [Center] Window [SystemFile/WindowBase_amania.png] Size [100,80] X:160 Y:120 / 10(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
  |■Show Message: Then we can make windows like this...
  |■Picture Show: 1000 [Center] Window [SystemFile/WindowBase_amania.png] Size [150,60] X:160 Y:120 / 10(0) Frames  / Pattern 1 / Opacity 255 / Normal  / Angle 0 / Scale 100% / Color R[100] G[100] B[100]
- |■Show Message: Or windows like this! It's as simple as specifying what\nsize to make the window!
+ |■Show Message: Or windows like this! It's as simple as specifying\nwhat size to make the window!
  |■Picture Erase: 1000  / 10(0) Frames
  |■Show Message: This means there's no need to make separate\nwindows in all different sizes! Handy, yes?!
  |■Show Message: Most of the menus in this sample game are made\nusing this method!
  |■
--◇Case: Choice [4] Keyboard text input                      ↓
+-◇Case: Choice [4] Try keyboard text input                  ↓
  |■Show Message: WOLF RPG Editor even lets you input text with the\nkeyboard! Press Enter when you are done!
  |■Set String: S0[[Sample] Temporary String] = Keyboard Input 30 Bytes [Cancellable] 
  |■Condition (String):   [1] S0[[Sample] Temporary String] Is Equal to ""
@@ -161,7 +161,7 @@ WoditorEvCOMMAND_END
  | |■
  |-◇Else
  | |■Show Message: You just entered\n"\s[0]"!
- | |■Show Message: I imagine this function will be quite handy when you\nwant to have a name entry and the like!
+ | |■Show Message: I imagine this function will be quite handy when\nyou want to have a name entry and the like!
  | |■
  |◇End◇
  |■
@@ -169,7 +169,7 @@ WoditorEvCOMMAND_END
  |■Show Message: With special characters, you can add various effects\nto text!
  |■Show Message: For example, if you put a file called icon031.png in\nthe Data/BasicData folder, inserting "\\i[31]Book" in\na message will make it display as "\i[31]Book"...
  |■Show Message: Also, by inserting \\r[jinsei,life], it will display as \r[jinsei,life],\nshowing the latter as Ruby text...\f[9]\n(Ruby color is set in SystemDB Type 12 Data 13)
- |■Show Message: And if you insert \\!, the message will temporarily stop\nthere. \!Like this.
+ |■Show Message: And if you insert \\!, the message will temporarily\nstop there. \!Like this.
  |■Show Message: In addition, \\. will cause a 1/4-second wait,\. and \\^\nwill end the message display without waiting for\ninput. Let's try out \\^ in the next message.
  |■Show Message: \f[20]Pro\.fes\.sor\. Rocks!\.\.\^
  |■Show Message: Well, you get the idea. Details are in the\nWOLF RPG Editor manual on the official Japanese site.

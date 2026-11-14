@@ -19,10 +19,11 @@ Basic Controls
   You can use the following keys.
 
   [Z] [Enter] [Space] ...
-    The Confirm Button. Used to confirm choices or advance dialogue.
-  [X] [BackSpace] [Insert] [Esc] [Numpad 0 (when NumLock is on)] ...
-    The Cancel Button. Also used to open the menu.
-  [C] [Shift] ... The Sub Button. Hold during battles to speed them up (in the Base System).
+    Confirm Key: Used to confirm choices or advance dialogue.
+  [X] [Backspace] [Insert] [Esc] [Numpad 0 (when NumLock is on)] ...
+    Cancel Key: Also used to open the menu.
+  [C] [Shift] ...
+    Sub Key: Hold during battles to speed them up (in the Base System).
   [Arrow Keys] ... Used to select menu commands and choices.
   [F4] ... Change Screen Size
   [F11] ... Toggle Full Screen
@@ -44,7 +45,7 @@ Update History
 06/29/2024  Replaced Kagamiyomi's MIDI files with looped versions.
 11/12/2023  Fixed URL links in this manual.
 11/22/2022  Updated the Base System to version 3 and adapted the sample game for WOLF RPG Editor 3.
-06/02/2018  Updated the Base System continuously.
+06/02/2018  Continued updating the Base System.
 06/01/2018  Fixed broken or relocated asset source links.
 07/18/2011  Replaced assets entirely in version 2.00. Many thanks to all contributors.
 10/10/2010  Replaced sample enemy images with GD's.
@@ -59,14 +60,15 @@ Update History
 04/12/2007  Released.
 
 ―――――――――――――――――――――――――――――――――――――――――
-Asset Contributors
+Asset Credits
 
 - Character Sprite Assets
   すう(Suu)
-  pochi (Helped make 8-direction versions and parts, and also animal and monster character sprites)
-  mel (Ship sprite included with the sample game)
-  ウロボロス(Uroboros) (Camp sprite, waterfall tile, and monster character sprites included with the sample game)
-  たぴす(Tapisu) (Character sprites), まきば(Makiba) (Character sprites)
+  pochi - Helped make 8-directional versions and parts, and also animal and monster character sprites
+  mel - Ship sprite included with the sample game
+  ウロボロス (Uroboros) - Camp sprite, waterfall tile, and monster character sprites included with the sample game
+  たぴす (Tapisu) - Character sprites
+  まきば (Makiba) - Character sprites
 
 - Map Tile Assets
   ぴぽ(Pipo) (https://pipoya.net/blog/)
