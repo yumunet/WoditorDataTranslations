@@ -148,7 +148,7 @@ CSELF_NAME_54=
 CSELF_NAME_55=
 CSELF_NAME_56=
 CSELF_NAME_57=
-CSELF_NAME_58=Just Before Fainting Flag
+CSELF_NAME_58=Pre-Damage Fainted Flag
 CSELF_NAME_59=Fainted Flag
 CSELF_NAME_60=
 CSELF_NAME_61=
@@ -464,7 +464,7 @@ WoditorEvCOMMAND_END
 ■Repeat Loop [ 0 ] Times
  |●Label Point [Process Damage to One] <<<<<<<<<<<<<<<<★
  |▼ First, check if the target character is not dead
- |■Call Event [Name]: CSelf58[Just Before Fainting Flag] = ["X[Bat]Get Basic State"] <CommonEv 176>  / CSelf10[Target Slot] / 0:戦闘不能状態
+ |■Call Event [Name]: CSelf58[Pre-Damage Fainted Flag] = ["X[Bat]Get Basic State"] <CommonEv 176>  / CSelf10[Target Slot] / 0:戦闘不能状態
  |■Repeat Loop [ 1 ] Times
  | |■Condition (Number):   [1] CSelf10[Target Slot] <  10  /  [2] CSelf10[Target Slot] >=  10  
  | |-◇Condition:  [1]  [ CSelf10[Target Slot] < 10   ] Case↓
@@ -531,8 +531,8 @@ WoditorEvCOMMAND_END
  | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 5:表示[更新＋ゲージアニメ] / CSelf10[Target Slot] / CSelf10[Target Slot]
  | |▼ If an ally has just fainted, process the defeat
  | |■Call Event [Name]: CSelf59[Fainted Flag] = ["X[Bat]Get Basic State"] <CommonEv 176>  / CSelf10[Target Slot] / 0:戦闘不能状態
- | |■Condition (Number):   [1] CSelf58[Just Before Fainting Flag] ==  0  
- | |-◇Condition:  [1]  [ CSelf58[Just Before Fainting Flag] == 0   ] Case↓
+ | |■Condition (Number):   [1] CSelf58[Pre-Damage Fainted Flag] ==  0  
+ | |-◇Condition:  [1]  [ CSelf58[Pre-Damage Fainted Flag] == 0   ] Case↓
  | | |■Condition (Number):   [1] CSelf59[Fainted Flag] >=  1  
  | | |-◇Condition:  [1]  [ CSelf59[Fainted Flag] >= 1   ] Case↓
  | | | |▼ Sound effect

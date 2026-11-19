@@ -195,7 +195,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<2>(1600010,-1,0,0)()
 [179][1,0]<2>(1600020)()
 [121][4,0]<3>(1600010,1,0,256)()
-[103][0,1]<3>()("Put Character ID in CSelf15, If present, add/remove the state")
+[103][0,1]<3>()("Store the character ID in CSelf15 and add/remove the state if the character is present")
 [300][4,1]<3>(0,16777217,1600010,1600015)("X[Map]Get Ally ID")
 [111][4,0]<3>(1,1600015,0,1)()
 [401][1,0]<3>(1)()
@@ -259,7 +259,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<2>(1600010,-1,0,0)()
 [179][1,0]<2>(1600020)()
 [121][4,0]<3>(1600010,1,0,256)()
-[103][0,1]<3>()("Put Character ID in CSelf15, If present, add/remove the state")
+[103][0,1]<3>()("Store the character ID in CSelf15 and add/remove the state if the character is present")
 [300][4,1]<3>(0,16777217,1600010,1600015)("X[Bat]Get Ally ID in Slot")
 [111][4,0]<3>(1,1600015,0,1)()
 [401][1,0]<3>(1)()
@@ -298,7 +298,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<2>(1600010,-1,0,0)()
 [179][1,0]<2>(1600020)()
 [121][4,0]<3>(1600010,1,0,256)()
-[103][0,1]<3>()("Put Character ID in CSelf15, If present, add/remove the state")
+[103][0,1]<3>()("Store the character ID in CSelf15 and add/remove the state if it matches the target ally's ID")
 [300][4,1]<3>(0,16777217,1600010,1600015)("X[Bat]Get Ally ID in Slot")
 [111][4,0]<3>(1,1600015,1600000,2)()
 [401][1,0]<3>(1)()
@@ -355,7 +355,7 @@ WoditorEvCOMMAND_END
  | |■Set Variable: CSelf10[Temp A] = -1 + 0 
  | |■Repeat Loop [ CSelf20[Max Party Size] ] Times
  | | |■Set Variable: CSelf10[Temp A] += 1 + 0 
- | | |▼ Put Character ID in CSelf15, If present, add/remove the state
+ | | |▼ Store the character ID in CSelf15 and add/remove the state if the character is present
  | | |■Call Event [Name]: CSelf15[Character ID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf10[Temp A]
  | | |■Condition (Number):   [1] CSelf15[Character ID] >=  0  
  | | |-◇Condition:  [1]  [ CSelf15[Character ID] >= 0   ] Case↓
@@ -419,7 +419,7 @@ WoditorEvCOMMAND_END
  | |■Set Variable: CSelf10[Temp A] = -1 + 0 
  | |■Repeat Loop [ CSelf20[Max Party Size] ] Times
  | | |■Set Variable: CSelf10[Temp A] += 1 + 0 
- | | |▼ Put Character ID in CSelf15, If present, add/remove the state
+ | | |▼ Store the character ID in CSelf15 and add/remove the state if the character is present
  | | |■Call Event [Name]: CSelf15[Character ID] = ["X[Bat]Get Ally ID in Slot"] <CommonEv 141>  / CSelf10[Temp A]
  | | |■Condition (Number):   [1] CSelf15[Character ID] >=  0  
  | | |-◇Condition:  [1]  [ CSelf15[Character ID] >= 0   ] Case↓
@@ -458,7 +458,7 @@ WoditorEvCOMMAND_END
  | |■Set Variable: CSelf10[Temp A] = -1 + 0 
  | |■Repeat Loop [ CSelf20[Max Party Size] ] Times
  | | |■Set Variable: CSelf10[Temp A] += 1 + 0 
- | | |▼ Put Character ID in CSelf15, If present, add/remove the state
+ | | |▼ Store the character ID in CSelf15 and add/remove the state if it matches the target ally's ID
  | | |■Call Event [Name]: CSelf15[Character ID] = ["X[Bat]Get Ally ID in Slot"] <CommonEv 141>  / CSelf10[Temp A]
  | | |■Condition (Number):   [1] CSelf15[Character ID] ==  CSelf0[Target Ally]  
  | | |-◇Condition:  [1]  [ CSelf15[Character ID] == CSelf0[Target Ally]   ] Case↓

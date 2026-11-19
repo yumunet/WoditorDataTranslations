@@ -177,7 +177,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [498][0,0]<0>()()
 [179][1,0]<0>(1)()
-[103][0,1]<1>()("Turn the run condition on or off when called. Do nothing when executed in parallel.")
+[103][0,1]<1>()("Toggle the trigger when called. Skip this section during parallel execution.")
 [111][7,0]<1>(2,1600000,1,2,1600000,-1,2)()
 [401][1,0]<1>(1)()
 [103][0,1]<2>()("Turn on the pixel movement")
@@ -219,7 +219,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("From here, process the pixel movement behavior corresponding to the key input")
 [111][4,0]<0>(17,9000013,0,2)()
 [401][1,0]<0>(1)()
-[103][0,1]<1>()("Disable normal movement using keys, and move characters only with the Pixel Movement command in this common event")
+[103][0,1]<1>()("Disable normal movement using keys, and move characters only with the Pixel Movement effect in this common event")
 [126][1,0]<1>(496)()
 [103][0,1]<1>()("Accelerate in the direction of the held key")
 [103][0,1]<1>()("Check the up and down keys")
@@ -267,7 +267,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<1>()("Add speed to <dqrt>internal values<dqrt>")
 [121][4,0]<1>(1600015,1600011,0,256)()
 [121][4,0]<1>(1600016,1600012,0,256)()
-[103][0,1]<1>()("Move if the internal value is 10 or higher")
+[103][0,1]<1>()("Move if the absolute value of the remainder is 10 or higher")
 [121][4,0]<1>(1600010,9180007,0,4)()
 [121][4,0]<1>(1600017,0,0,0)()
 [121][4,0]<1>(1600018,0,0,0)()
@@ -476,7 +476,7 @@ WoditorEvCOMMAND_END
  |■
 ◇Loop End Point◇◇
 ■Repeat Loop [ 1 ] Times
- |▼ Turn the run condition on or off when called. Do nothing when executed in parallel.
+ |▼ Toggle the trigger when called. Skip this section during parallel execution.
  |■Condition (Number):   [1] CSelf0[Mode] ==  1  /  [2] CSelf0[Mode] ==  -1  
  |-◇Condition:  [1]  [ CSelf0[Mode] == 1   ] Case↓
  | |▼ Turn on the pixel movement
@@ -518,7 +518,7 @@ WoditorEvCOMMAND_END
 ▼ From here, process the pixel movement behavior corresponding to the key input
 ■Condition (Number):   [1] Sys13:Event Active? (1:Yes) ==  0  
 -◇Condition:  [1]  [ Sys13:Event Active? (1:Yes) == 0   ] Case↓
- |▼ Disable normal movement using keys, and move characters only with the Pixel Movement command in this common event
+ |▼ Disable normal movement using keys, and move characters only with the Pixel Movement effect in this common event
  |■Enable/Disable Input:   Down  Left  Right  Up   [ Movement ×   Key Input ✓ ]
  |▼ Accelerate in the direction of the held key
  |▼ Check the up and down keys
@@ -566,7 +566,7 @@ WoditorEvCOMMAND_END
  |▼ Add speed to "internal values"
  |■Set Variable: CSelf15[X Internal Remainder (1/10)] += CSelf11[X Speed (1/10)] + 0 
  |■Set Variable: CSelf16[Y Internal Remainder (1/10)] += CSelf12[Y Speed (1/10)] + 0 
- |▼ Move if the internal value is 10 or higher
+ |▼ Move if the absolute value of the remainder is 10 or higher
  |■Set Variable: CSelf10[Destination Variable] = 9180007 + 0 
  |■Set Variable: CSelf17[X Displacement] = 0 + 0 
  |■Set Variable: CSelf18[Y Displacement] = 0 + 0 
