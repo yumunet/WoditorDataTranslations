@@ -213,7 +213,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(3)()
 [103][0,1]<4>()("防具の場合")
 [121][4,0]<4>(1600012,1600011,30000,16384)()
-[300][4,1]<4>(0,2,1600012,1)("X[Com]Change Armors")
+[300][4,1]<4>(0,2,1600012,1)("X[Com]Change Armor")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [121][4,0]<3>(1600015,1,0,256)()
@@ -343,7 +343,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [3]  [ CSelf11[一時変数Ｂ] <= 39999   ] Case↓
  | | | |▼ 防具の場合
  | | | |■Set Variable: CSelf12[一時変数Ｃ] = CSelf11[一時変数Ｂ] % 30000 
- | | | |■Call Event [Name]: ["X[Com]Change Armors"] <CommonEv 52>  / CSelf12[一時変数Ｃ] / 1
+ | | | |■Call Event [Name]: ["X[Com]Change Armor"] <CommonEv 52>  / CSelf12[一時変数Ｃ] / 1
  | | | |■
  | | |◇End◇
  | | |■Set Variable: CSelf15[アイテム入手個数] += 1 + 0 

@@ -196,7 +196,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
 [121][4,0]<4>(1600031,1600012,30000,16384)()
-[250][5,4]<4>(4,1600031,1,332288,1600009)("","Armors","","Description [Up to 2 Lines]")
+[250][5,4]<4>(4,1600031,1,332288,1600009)("","Armor","","Description [Up to 2 Lines]")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [0][0,0]<3>()()
@@ -224,7 +224,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
 [121][4,0]<4>(1600031,1600012,30000,16384)()
-[250][5,4]<4>(4,1600031,16,332288,1600030)("","Armors","","Equipped, Can't Remove?")
+[250][5,4]<4>(4,1600031,16,332288,1600030)("","Armor","","Equipped, Can't Remove?")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [111][4,0]<3>(1,1600030,1,1)()
@@ -261,7 +261,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<5>()()
 [401][1,0]<4>(2)()
 [121][4,0]<5>(1600022,1600013,30000,16384)()
-[250][5,4]<5>(4,1600022,27,332288,1600023)("","Armors","","Exclusive Slots on Equip")
+[250][5,4]<5>(4,1600022,27,332288,1600023)("","Armor","","Exclusive Slots on Equip")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
 [103][0,1]<4>()("ここで対応する専有箇所の装備を内部的に外す")
@@ -318,7 +318,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<8>()()
 [401][1,0]<7>(2)()
 [121][4,0]<8>(1600022,1600026,30000,16384)()
-[250][5,4]<8>(4,1600022,27,332288,1600028)("","Armors","","Exclusive Slots on Equip")
+[250][5,4]<8>(4,1600022,27,332288,1600028)("","Armor","","Exclusive Slots on Equip")
 [0][0,0]<8>()()
 [499][0,0]<7>()()
 [111][4,0]<7>(1,1600028,1600024,6)()
@@ -402,7 +402,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<7>()()
 [401][1,0]<6>(2)()
 [121][4,0]<7>(1600022,1600013,30000,16384)()
-[250][5,4]<7>(4,1600022,27,332288,1600023)("","Armors","","Exclusive Slots on Equip")
+[250][5,4]<7>(4,1600022,27,332288,1600023)("","Armor","","Exclusive Slots on Equip")
 [0][0,0]<7>()()
 [499][0,0]<6>()()
 [103][0,1]<6>()("ここで対応する専有箇所の装備を内部的に外す")
@@ -441,7 +441,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<8>()()
 [401][1,0]<7>(2)()
 [121][4,0]<8>(1600022,1600026,30000,16384)()
-[250][5,4]<8>(4,1600022,27,332288,1600023)("","Armors","","Exclusive Slots on Equip")
+[250][5,4]<8>(4,1600022,27,332288,1600023)("","Armor","","Exclusive Slots on Equip")
 [0][0,0]<8>()()
 [499][0,0]<7>()()
 [103][0,1]<7>()("注目している箇所が、選択中の箇所のビットを満たしていたら外す")
@@ -549,7 +549,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<6>()()
 [401][1,0]<5>(2)()
 [121][4,0]<6>(1600031,1600012,30000,16384)()
-[250][5,4]<6>(4,1600031,16,332288,1600030)("","Armors","","Equipped, Can't Remove?")
+[250][5,4]<6>(4,1600031,16,332288,1600030)("","Armor","","Equipped, Can't Remove?")
 [0][0,0]<6>()()
 [499][0,0]<5>()()
 [111][4,0]<5>(1,1600030,1,1)()
@@ -606,7 +606,7 @@ WoditorEvCOMMAND_END
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf12[一時変数A] <= 39999   ] Case↓
  | | | |■Set Variable: CSelf31[一時変数C] = CSelf12[一時変数A] % 30000 
- | | | |■Load DB(User):  CSelf9[説明文] = UserDB[ "Armors":CSelf31[一時変数C]:"Description [Up to 2 Lines]" ] (4:-:1) 
+ | | | |■Load DB(User):  CSelf9[説明文] = UserDB[ "Armor":CSelf31[一時変数C]:"Description [Up to 2 Lines]" ] (4:-:1) 
  | | | |■
  | | |◇End◇
  | | |■
@@ -634,7 +634,7 @@ WoditorEvCOMMAND_END
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf12[一時変数A] <= 39999   ] Case↓
  | | | |■Set Variable: CSelf31[一時変数C] = CSelf12[一時変数A] % 30000 
- | | | |■Load DB(User):  CSelf30[外せないフラグ] = UserDB[ "Armors":CSelf31[一時変数C]:"Equipped, Can't Remove?" ] (4:-:15) 
+ | | | |■Load DB(User):  CSelf30[外せないフラグ] = UserDB[ "Armor":CSelf31[一時変数C]:"Equipped, Can't Remove?" ] (4:-:15) 
  | | | |■
  | | |◇End◇
  | | |■Condition (Number):   [1] CSelf30[外せないフラグ] >=  1  
@@ -671,7 +671,7 @@ WoditorEvCOMMAND_END
  | | | | |■
  | | | |-◇Condition:  [2]  [ CSelf13[選択された装備] <= 39999   ] Case↓
  | | | | |■Set Variable: CSelf22[装備番号] = CSelf13[選択された装備] % 30000 
- | | | | |■Load DB(User):  CSelf23[専有箇所ビット] = UserDB[ "Armors":CSelf22[装備番号]:"Exclusive Slots on Equip" ] (4:-:31) 
+ | | | | |■Load DB(User):  CSelf23[専有箇所ビット] = UserDB[ "Armor":CSelf22[装備番号]:"Exclusive Slots on Equip" ] (4:-:31) 
  | | | | |■
  | | | |◇End◇
  | | | |▼ ここで対応する専有箇所の装備を内部的に外す
@@ -728,7 +728,7 @@ WoditorEvCOMMAND_END
  | | | | | | | |■
  | | | | | | |-◇Condition:  [2]  [ CSelf26[専有箇所装備] <= 39999   ] Case↓
  | | | | | | | |■Set Variable: CSelf22[装備番号] = CSelf26[専有箇所装備] % 30000 
- | | | | | | | |■Load DB(User):  CSelf28[専有箇所ビット2] = UserDB[ "Armors":CSelf22[装備番号]:"Exclusive Slots on Equip" ] (4:-:31) 
+ | | | | | | | |■Load DB(User):  CSelf28[専有箇所ビット2] = UserDB[ "Armor":CSelf22[装備番号]:"Exclusive Slots on Equip" ] (4:-:31) 
  | | | | | | | |■
  | | | | | | |◇End◇
  | | | | | | |■Condition (Number):   [1] CSelf28[専有箇所ビット2] &  CSelf24[比較ビット]  
@@ -812,7 +812,7 @@ WoditorEvCOMMAND_END
  | | | | | | |■
  | | | | | |-◇Condition:  [2]  [ CSelf13[選択された装備] <= 39999   ] Case↓
  | | | | | | |■Set Variable: CSelf22[装備番号] = CSelf13[選択された装備] % 30000 
- | | | | | | |■Load DB(User):  CSelf23[専有箇所ビット] = UserDB[ "Armors":CSelf22[装備番号]:"Exclusive Slots on Equip" ] (4:-:31) 
+ | | | | | | |■Load DB(User):  CSelf23[専有箇所ビット] = UserDB[ "Armor":CSelf22[装備番号]:"Exclusive Slots on Equip" ] (4:-:31) 
  | | | | | | |■
  | | | | | |◇End◇
  | | | | | |▼ ここで対応する専有箇所の装備を内部的に外す
@@ -851,7 +851,7 @@ WoditorEvCOMMAND_END
  | | | | | | | |■
  | | | | | | |-◇Condition:  [2]  [ CSelf26[専有箇所装備] <= 39999   ] Case↓
  | | | | | | | |■Set Variable: CSelf22[装備番号] = CSelf26[専有箇所装備] % 30000 
- | | | | | | | |■Load DB(User):  CSelf23[専有箇所ビット] = UserDB[ "Armors":CSelf22[装備番号]:"Exclusive Slots on Equip" ] (4:-:31) 
+ | | | | | | | |■Load DB(User):  CSelf23[専有箇所ビット] = UserDB[ "Armor":CSelf22[装備番号]:"Exclusive Slots on Equip" ] (4:-:31) 
  | | | | | | | |■
  | | | | | | |◇End◇
  | | | | | | |▼ 注目している箇所が、選択中の箇所のビットを満たしていたら外す
@@ -959,7 +959,7 @@ WoditorEvCOMMAND_END
  | | | | | |■
  | | | | |-◇Condition:  [2]  [ CSelf12[一時変数A] <= 39999   ] Case↓
  | | | | | |■Set Variable: CSelf31[一時変数C] = CSelf12[一時変数A] % 30000 
- | | | | | |■Load DB(User):  CSelf30[外せないフラグ] = UserDB[ "Armors":CSelf31[一時変数C]:"Equipped, Can't Remove?" ] (4:-:15) 
+ | | | | | |■Load DB(User):  CSelf30[外せないフラグ] = UserDB[ "Armor":CSelf31[一時変数C]:"Equipped, Can't Remove?" ] (4:-:15) 
  | | | | | |■
  | | | | |◇End◇
  | | | | |■Condition (Number):   [1] CSelf30[外せないフラグ] >=  1  

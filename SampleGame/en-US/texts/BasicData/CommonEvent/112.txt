@@ -211,7 +211,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<2>(5,-1,0,69632,1600029)("","┣ Owned Weapons","","")
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
-[250][5,4]<2>(6,-1,0,69632,1600029)("","┗ Owned Armors","","")
+[250][5,4]<2>(6,-1,0,69632,1600029)("","┗ Owned Armor","","")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [121][4,0]<1>(1600030,-1,0,0)()
@@ -222,7 +222,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<3>(5,1600030,0,331776,1600034)("","┣ Owned Weapons","","Owned Quantity")
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
-[250][5,4]<3>(6,1600030,0,331776,1600034)("","┗ Owned Armors","","Owned Quantity")
+[250][5,4]<3>(6,1600030,0,331776,1600034)("","┗ Owned Armor","","Owned Quantity")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [103][0,1]<2>()("所持個数が1以上なら判定")
@@ -254,7 +254,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<7>(3,1600030,6,332288,1600037)("","Weapons","","Equippable Slots 1-4")
 [0][0,0]<7>()()
 [401][1,0]<6>(2)()
-[250][5,4]<7>(4,1600030,6,332288,1600037)("","Armors","","Equippable Slots 1-4")
+[250][5,4]<7>(4,1600030,6,332288,1600037)("","Armor","","Equippable Slots 1-4")
 [0][0,0]<7>()()
 [499][0,0]<6>()()
 [121][4,0]<6>(1600012,1600001,1,4096)()
@@ -265,7 +265,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<7>(3,1600030,7,332288,1600037)("","Weapons","","Equippable Slots 5-8")
 [0][0,0]<7>()()
 [401][1,0]<6>(2)()
-[250][5,4]<7>(4,1600030,7,332288,1600037)("","Armors","","Equippable Slots 5-8")
+[250][5,4]<7>(4,1600030,7,332288,1600037)("","Armor","","Equippable Slots 5-8")
 [0][0,0]<7>()()
 [499][0,0]<6>()()
 [121][4,0]<6>(1600012,1600001,4,4096)()
@@ -300,7 +300,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<5>(3,1600030,2,332288,1600035)("","Weapons","","Equipment Type")
 [0][0,0]<5>()()
 [401][1,0]<4>(2)()
-[250][5,4]<5>(4,1600030,2,332288,1600035)("","Armors","","Equipment Type")
+[250][5,4]<5>(4,1600030,2,332288,1600035)("","Armor","","Equipment Type")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
 [111][10,0]<4>(3,1600035,-2,3,1600035,-1,2,1600035,0,1)()
@@ -369,14 +369,14 @@ WoditorEvCOMMAND_START
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
 [103][0,1]<4>()("防具の場合")
-[250][5,4]<4>(4,1600030,0,332288,1600009)("","Armors","","Armor Name")
+[250][5,4]<4>(4,1600030,0,332288,1600009)("","Armor","","Armor Name")
 [250][5,4]<4>(19,1600032,0,327680,1600009)("","Universal Window Items","","Item Text")
 [103][0,1]<4>()("防具コードは20000～")
 [121][4,0]<4>(1600011,1600030,0,0)()
 [250][5,4]<4>(19,1600032,1,327680,1600011)("","Universal Window Items","","Item ID")
 [250][5,4]<4>(19,1600032,0,327696,30000)("","Universal Window Items","","Item ID")
 [103][0,1]<4>()("説明文")
-[250][5,4]<4>(4,1600030,1,332288,1600008)("","Armors","","Description [Up to 2 Lines]")
+[250][5,4]<4>(4,1600030,1,332288,1600008)("","Armor","","Description [Up to 2 Lines]")
 [250][5,4]<4>(19,1600032,0,327680,1600008)("","Universal Window Items","","Description")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
@@ -428,7 +428,7 @@ WoditorEvCOMMAND_END
  | |■Load DB(Var):  CSelf29[ループ実行回数] = VarDB[Type "┣ Owned Weapons"(8)'s Data Count]
  | |■
  |-◇Condition:  [2]  [ CSelf38[武器＝０　防具＝１] == 1   ] Case↓
- | |■Load DB(Var):  CSelf29[ループ実行回数] = VarDB[Type "┗ Owned Armors"(9)'s Data Count]
+ | |■Load DB(Var):  CSelf29[ループ実行回数] = VarDB[Type "┗ Owned Armor"(9)'s Data Count]
  | |■
  |◇End◇
  |■Set Variable: CSelf30[DB読み取り位置] = -1 + 0 
@@ -439,7 +439,7 @@ WoditorEvCOMMAND_END
  | | |■Load DB(Var):  CSelf34[所持個数] = VarDB[ "┣ Owned Weapons":CSelf30[DB読み取り位置]:"Owned Quantity" ] (8:-:0) 
  | | |■
  | |-◇Condition:  [2]  [ CSelf38[武器＝０　防具＝１] == 1   ] Case↓
- | | |■Load DB(Var):  CSelf34[所持個数] = VarDB[ "┗ Owned Armors":CSelf30[DB読み取り位置]:"Owned Quantity" ] (9:-:0) 
+ | | |■Load DB(Var):  CSelf34[所持個数] = VarDB[ "┗ Owned Armor":CSelf30[DB読み取り位置]:"Owned Quantity" ] (9:-:0) 
  | | |■
  | |◇End◇
  | |▼ 所持個数が1以上なら判定
@@ -471,7 +471,7 @@ WoditorEvCOMMAND_END
  | | | | | | |■Load DB(User):  CSelf37[装備箇所判定] = UserDB[ "Weapons":CSelf30[DB読み取り位置]:"Equippable Slots 1-4" ] (3:-:3) 
  | | | | | | |■
  | | | | | |-◇Condition:  [2]  [ CSelf38[武器＝０　防具＝１] == 1   ] Case↓
- | | | | | | |■Load DB(User):  CSelf37[装備箇所判定] = UserDB[ "Armors":CSelf30[DB読み取り位置]:"Equippable Slots 1-4" ] (4:-:3) 
+ | | | | | | |■Load DB(User):  CSelf37[装備箇所判定] = UserDB[ "Armor":CSelf30[DB読み取り位置]:"Equippable Slots 1-4" ] (4:-:3) 
  | | | | | | |■
  | | | | | |◇End◇
  | | | | | |■Set Variable: CSelf12[ループ回数] = CSelf1[装備欄] - 1 
@@ -482,7 +482,7 @@ WoditorEvCOMMAND_END
  | | | | | | |■Load DB(User):  CSelf37[装備箇所判定] = UserDB[ "Weapons":CSelf30[DB読み取り位置]:"Equippable Slots 5-8" ] (3:-:4) 
  | | | | | | |■
  | | | | | |-◇Condition:  [2]  [ CSelf38[武器＝０　防具＝１] == 1   ] Case↓
- | | | | | | |■Load DB(User):  CSelf37[装備箇所判定] = UserDB[ "Armors":CSelf30[DB読み取り位置]:"Equippable Slots 5-8" ] (4:-:4) 
+ | | | | | | |■Load DB(User):  CSelf37[装備箇所判定] = UserDB[ "Armor":CSelf30[DB読み取り位置]:"Equippable Slots 5-8" ] (4:-:4) 
  | | | | | | |■
  | | | | | |◇End◇
  | | | | | |■Set Variable: CSelf12[ループ回数] = CSelf1[装備欄] - 4 
@@ -517,7 +517,7 @@ WoditorEvCOMMAND_END
  | | | | |■Load DB(User):  CSelf35[装備のタイプ] = UserDB[ "Weapons":CSelf30[DB読み取り位置]:"Equipment Type" ] (3:-:2) 
  | | | | |■
  | | | |-◇Condition:  [2]  [ CSelf38[武器＝０　防具＝１] == 1   ] Case↓
- | | | | |■Load DB(User):  CSelf35[装備のタイプ] = UserDB[ "Armors":CSelf30[DB読み取り位置]:"Equipment Type" ] (4:-:2) 
+ | | | | |■Load DB(User):  CSelf35[装備のタイプ] = UserDB[ "Armor":CSelf30[DB読み取り位置]:"Equipment Type" ] (4:-:2) 
  | | | | |■
  | | | |◇End◇
  | | | |■Condition (Number):   [1] CSelf35[装備のタイプ] <=  -2  /  [2] CSelf35[装備のタイプ] ==  -1  /  [3] CSelf35[装備のタイプ] >=  0  
@@ -586,14 +586,14 @@ WoditorEvCOMMAND_END
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf38[武器＝０　防具＝１] == 1   ] Case↓
  | | | |▼ 防具の場合
- | | | |■Load DB(User):  CSelf9[一時装備名] = UserDB[ "Armors":CSelf30[DB読み取り位置]:"Armor Name" ] (4:-:0) 
+ | | | |■Load DB(User):  CSelf9[一時装備名] = UserDB[ "Armor":CSelf30[DB読み取り位置]:"Armor Name" ] (4:-:0) 
  | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Item Text" ] (19:-:0) =  CSelf9[一時装備名]
  | | | |▼ 防具コードは20000～
  | | | |■Set Variable: CSelf11[一時TMP] = CSelf30[DB読み取り位置] + 0 
  | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Item ID" ] (19:-:1) =  CSelf11[一時TMP]
  | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Item ID" ] (19:-:1) +=  30000
  | | | |▼ 説明文
- | | | |■Load DB(User):  CSelf8[一時説明文] = UserDB[ "Armors":CSelf30[DB読み取り位置]:"Description [Up to 2 Lines]" ] (4:-:1) 
+ | | | |■Load DB(User):  CSelf8[一時説明文] = UserDB[ "Armor":CSelf30[DB読み取り位置]:"Description [Up to 2 Lines]" ] (4:-:1) 
  | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Description" ] (19:-:6) =  CSelf8[一時説明文]
  | | | |■
  | | |◇End◇

@@ -1,10 +1,10 @@
 COMMON_ID=2
-COMMON_NAME=○ Change Armors
+COMMON_NAME=○ Change Armor
 COMMAND_COLOR=0
 TRIGGER=32
 TRIGGER_TARGET=2000000
 TRIGGER_VAL=0
-MEMO=Adds or removes armors. To remove, use a negative amount.
+MEMO=Adds or removes armor. To remove, use a negative amount.
 VALINPUT_NUM=3
 STRINPUT_NUM=0
 VALINPUT_NAME_NUM=11
@@ -172,8 +172,8 @@ CSELF_NAME_99=
 COMMAND_NUM=55
 --
 WoditorEvCOMMAND_START
-[103][0,1]<0>()("Gain/Lose Armors Processing")
-[300][4,1]<0>(0,2,1600000,1600001)("X[Com]Change Armors")
+[103][0,1]<0>()("Gain/Lose Armor Processing")
+[300][4,1]<0>(0,2,1600000,1600001)("X[Com]Change Armor")
 [103][0,1]<0>()("The following is message display processing (only when CSelf2 is 1 or higher)")
 [111][4,0]<0>(1,1600002,1,1)()
 [401][1,0]<0>(1)()
@@ -195,7 +195,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [103][0,1]<1>()("Get armor name")
-[250][5,4]<1>(4,1600000,0,332288,1600008)("","Armors","","Armor Name")
+[250][5,4]<1>(4,1600000,0,332288,1600008)("","Armor","","Armor Name")
 [111][7,0]<1>(2,1600002,100,1,1600002,1,1)()
 [401][1,0]<1>(1)()
 [103][0,1]<2>()("Message with no quantity")
@@ -230,8 +230,8 @@ WoditorEvCOMMAND_START
 WoditorEvCOMMAND_END
 --
 [COMMAND_TEXT_START]
-▼ Gain/Lose Armors Processing
-■Call Event [Name]: ["X[Com]Change Armors"] <CommonEv 52>  / CSelf0[Armor ID] / CSelf1[Amount (±)]
+▼ Gain/Lose Armor Processing
+■Call Event [Name]: ["X[Com]Change Armor"] <CommonEv 52>  / CSelf0[Armor ID] / CSelf1[Amount (±)]
 ▼ The following is message display processing (only when CSelf2 is 1 or higher)
 ■Condition (Number):   [1] CSelf2[Show Message?] >=  1  
 -◇Condition:  [1]  [ CSelf2[Show Message?] >= 1   ] Case↓
@@ -253,7 +253,7 @@ WoditorEvCOMMAND_END
  | |■
  |◇End◇
  |▼ Get armor name
- |■Load DB(User):  CSelf8[Armor Name] = UserDB[ "Armors":CSelf0[Armor ID]:"Armor Name" ] (4:-:0) 
+ |■Load DB(User):  CSelf8[Armor Name] = UserDB[ "Armor":CSelf0[Armor ID]:"Armor Name" ] (4:-:0) 
  |■Condition (Number):   [1] CSelf2[Show Message?] >=  100  /  [2] CSelf2[Show Message?] >=  1  
  |-◇Condition:  [1]  [ CSelf2[Show Message?] >= 100   ] Case↓
  | |▼ Message with no quantity

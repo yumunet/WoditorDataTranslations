@@ -233,10 +233,10 @@ WoditorEvCOMMAND_START
 [103][0,1]<1>()("●防具使用時の場合")
 [103][0,1]<1>()("技能発動系のみ")
 [121][4,0]<1>(1600030,1600000,30000,16384)()
-[250][5,4]<1>(4,1600030,22,332288,1600010)("","Armors","","Skill When Used As Item?     ")
+[250][5,4]<1>(4,1600030,22,332288,1600010)("","Armor","","Skill When Used As Item?     ")
 [111][4,0]<1>(1,1600010,1,2)()
 [401][1,0]<1>(1)()
-[250][5,4]<2>(4,1600030,23,332288,1600017)("","Armors","","┣ Skill to Use                          ")
+[250][5,4]<2>(4,1600030,23,332288,1600017)("","Armor","","┣ Skill to Use                          ")
 [213][0,1]<2>()("技能発動処理")
 [0][0,0]<2>()()
 [499][0,0]<1>()()
@@ -520,10 +520,10 @@ WoditorEvCOMMAND_END
  |▼ ●防具使用時の場合
  |▼ 技能発動系のみ
  |■Set Variable: CSelf30[アイテム番号] = CSelf0[使用ｱｲﾃﾑｺｰﾄﾞ] % 30000 
- |■Load DB(User):  CSelf10[一時変数A] = UserDB[ "Armors":CSelf30[アイテム番号]:"Skill When Used As Item?     " ] (4:-:20) 
+ |■Load DB(User):  CSelf10[一時変数A] = UserDB[ "Armor":CSelf30[アイテム番号]:"Skill When Used As Item?     " ] (4:-:20) 
  |■Condition (Number):   [1] CSelf10[一時変数A] ==  1  
  |-◇Condition:  [1]  [ CSelf10[一時変数A] == 1   ] Case↓
- | |■Load DB(User):  CSelf17[発動技能番号] = UserDB[ "Armors":CSelf30[アイテム番号]:"┣ Skill to Use                          " ] (4:-:21) 
+ | |■Load DB(User):  CSelf17[発動技能番号] = UserDB[ "Armor":CSelf30[アイテム番号]:"┣ Skill to Use                          " ] (4:-:21) 
  | |●Label Jump [技能発動処理] >>>>>>>>>>>>>>>>>>>>>>>>>
  | |■
  |◇End◇

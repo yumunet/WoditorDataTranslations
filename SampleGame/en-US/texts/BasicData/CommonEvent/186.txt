@@ -317,7 +317,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<5>(3)()
 [103][0,1]<6>()("防具の場合")
 [121][4,0]<6>(1600012,1600011,30000,16384)()
-[250][5,4]<6>(4,1600012,0,332304,1600005)("","Armors","","Armor Name")
+[250][5,4]<6>(4,1600012,0,332304,1600005)("","Armor","","Armor Name")
 [122][2,1]<6>(1600005,256)("<\n>")
 [0][0,0]<6>()()
 [499][0,0]<5>()()
@@ -750,7 +750,7 @@ WoditorEvCOMMAND_END
  | | | | |-◇Condition:  [3]  [ CSelf11[一時変数B] <= 39999   ] Case↓
  | | | | | |▼ 防具の場合
  | | | | | |■Set Variable: CSelf12[一時変数C] = CSelf11[一時変数B] % 30000 
- | | | | | |■Load DB(User):  CSelf5[表示文] += UserDB[ "Armors":CSelf12[一時変数C]:"Armor Name" ] (4:-:0) 
+ | | | | | |■Load DB(User):  CSelf5[表示文] += UserDB[ "Armor":CSelf12[一時変数C]:"Armor Name" ] (4:-:0) 
  | | | | | |■Set String: CSelf5[表示文] += "\n"
  | | | | | |■
  | | | | |◇End◇

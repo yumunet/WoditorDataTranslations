@@ -246,9 +246,9 @@ WoditorEvCOMMAND_START
 [401][1,0]<1>(3)()
 [103][0,1]<2>()("防具の場合")
 [121][4,0]<2>(1600010,1600000,30000,16384)()
-[250][5,4]<2>(4,1600010,24,332288,1600009)("","Armors","","┣ Message [Map]                  ")
-[250][5,4]<2>(4,1600010,23,332288,1600011)("","Armors","","Skill When Used As Item?     ")
-[250][5,4]<2>(4,1600010,27,332288,1600012)("","Armors","","┗ Item Changes After Use   ")
+[250][5,4]<2>(4,1600010,24,332288,1600009)("","Armor","","┣ Message [Map]                  ")
+[250][5,4]<2>(4,1600010,23,332288,1600011)("","Armor","","Skill When Used As Item?     ")
+[250][5,4]<2>(4,1600010,27,332288,1600012)("","Armor","","┗ Item Changes After Use   ")
 [111][4,0]<2>(1,1600011,1,2)()
 [401][1,0]<2>(1)()
 [111][10,0]<3>(3,1600012,-2,3,1600012,-1,3,1600012,0,1)()
@@ -258,12 +258,12 @@ WoditorEvCOMMAND_START
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
 [103][0,1]<4>()("アイテムが消滅")
-[300][4,1]<4>(0,2,1600010,-1)("X[Com]Change Armors")
+[300][4,1]<4>(0,2,1600010,-1)("X[Com]Change Armor")
 [0][0,0]<4>()()
 [401][1,0]<3>(3)()
 [103][0,1]<4>()("別アイテムに変化")
-[300][4,1]<4>(0,2,1600010,-1)("X[Com]Change Armors")
-[300][4,1]<4>(0,2,1600012,1)("X[Com]Change Armors")
+[300][4,1]<4>(0,2,1600010,-1)("X[Com]Change Armor")
+[300][4,1]<4>(0,2,1600012,1)("X[Com]Change Armor")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [103][0,1]<3>()("アイテムが減る場合、残りアイテム個数を調べる")
@@ -379,9 +379,9 @@ WoditorEvCOMMAND_END
  |-◇Condition:  [3]  [ CSelf0[アイテムコード] <= 39999   ] Case↓
  | |▼ 防具の場合
  | |■Set Variable: CSelf10[アイテム番号] = CSelf0[アイテムコード] % 30000 
- | |■Load DB(User):  CSelf9[表示メッセージ] = UserDB[ "Armors":CSelf10[アイテム番号]:"┣ Message [Map]                  " ] (4:-:22) 
- | |■Load DB(User):  CSelf11[アイテム消費タイプ] = UserDB[ "Armors":CSelf10[アイテム番号]:"Skill When Used As Item?     " ] (4:-:20) 
- | |■Load DB(User):  CSelf12[変化後アイテム] = UserDB[ "Armors":CSelf10[アイテム番号]:"┗ Item Changes After Use   " ] (4:-:24) 
+ | |■Load DB(User):  CSelf9[表示メッセージ] = UserDB[ "Armor":CSelf10[アイテム番号]:"┣ Message [Map]                  " ] (4:-:22) 
+ | |■Load DB(User):  CSelf11[アイテム消費タイプ] = UserDB[ "Armor":CSelf10[アイテム番号]:"Skill When Used As Item?     " ] (4:-:20) 
+ | |■Load DB(User):  CSelf12[変化後アイテム] = UserDB[ "Armor":CSelf10[アイテム番号]:"┗ Item Changes After Use   " ] (4:-:24) 
  | |■Condition (Number):   [1] CSelf11[アイテム消費タイプ] ==  1  
  | |-◇Condition:  [1]  [ CSelf11[アイテム消費タイプ] == 1   ] Case↓
  | | |■Condition (Number):   [1] CSelf12[変化後アイテム] <=  -2  /  [2] CSelf12[変化後アイテム] <=  -1  /  [3] CSelf12[変化後アイテム] >=  0  
@@ -391,12 +391,12 @@ WoditorEvCOMMAND_END
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf12[変化後アイテム] <= -1   ] Case↓
  | | | |▼ アイテムが消滅
- | | | |■Call Event [Name]: ["X[Com]Change Armors"] <CommonEv 52>  / CSelf10[アイテム番号] / -1
+ | | | |■Call Event [Name]: ["X[Com]Change Armor"] <CommonEv 52>  / CSelf10[アイテム番号] / -1
  | | | |■
  | | |-◇Condition:  [3]  [ CSelf12[変化後アイテム] >= 0   ] Case↓
  | | | |▼ 別アイテムに変化
- | | | |■Call Event [Name]: ["X[Com]Change Armors"] <CommonEv 52>  / CSelf10[アイテム番号] / -1
- | | | |■Call Event [Name]: ["X[Com]Change Armors"] <CommonEv 52>  / CSelf12[変化後アイテム] / 1
+ | | | |■Call Event [Name]: ["X[Com]Change Armor"] <CommonEv 52>  / CSelf10[アイテム番号] / -1
+ | | | |■Call Event [Name]: ["X[Com]Change Armor"] <CommonEv 52>  / CSelf12[変化後アイテム] / 1
  | | | |■
  | | |◇End◇
  | | |▼ アイテムが減る場合、残りアイテム個数を調べる
