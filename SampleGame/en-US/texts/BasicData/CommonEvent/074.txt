@@ -169,7 +169,7 @@ COMMAND_NUM=206
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("Process Overview:")
-[103][0,1]<0>()("  This common event is called to level up/down the ally in the Base System.")
+[103][0,1]<0>()("  Used when the Base System raises or lowers the ally's level.")
 [103][0,1]<0>()("  Works only on the map (or during post-battle processing).")
 [103][0,1]<0>()(" ")
 [103][0,1]<0>()("  Also, stores parameter changes and newly learned skills into Base System Variables.")
@@ -378,7 +378,7 @@ WoditorEvCOMMAND_END
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ Process Overview:
-▼   This common event is called to level up/down the ally in the Base System.
+▼   Used when the Base System raises or lowers the ally's level.
 ▼   Works only on the map (or during post-battle processing).
 ▼  
 ▼   Also, stores parameter changes and newly learned skills into Base System Variables.

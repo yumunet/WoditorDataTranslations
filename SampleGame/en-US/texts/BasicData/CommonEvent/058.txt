@@ -165,7 +165,7 @@ COMMAND_NUM=76
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("Process Overview:")
-[103][0,1]<0>()("  This common event is used to make the ally learn or forget skills through an event.")
+[103][0,1]<0>()("  Used to make the ally learn or forget skills through an event.")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [111][7,0]<0>(2,1600002,0,2,1600002,1,2)()
 [401][1,0]<0>(1)()
@@ -244,7 +244,7 @@ WoditorEvCOMMAND_END
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ Process Overview:
-▼   This common event is used to make the ally learn or forget skills through an event.
+▼   Used to make the ally learn or forget skills through an event.
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Condition (Number):   [1] CSelf2[Learn? Forget?] ==  0  /  [2] CSelf2[Learn? Forget?] ==  1  
 -◇Condition:  [1]  [ CSelf2[Learn? Forget?] == 0   ] Case↓

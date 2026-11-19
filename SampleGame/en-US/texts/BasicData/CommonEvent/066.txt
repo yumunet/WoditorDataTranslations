@@ -174,7 +174,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<0>()("Set fixed value")
 [121][4,0]<0>(1600020,15000,0,0)()
-[103][0,1]<0>()("Load base parameters")
+[103][0,1]<0>()("Load basic parameters")
 [250][5,4]<0>(18,6,0,69632,1600018)("","Base System Variables","","")
 [250][5,4]<0>(18,5,0,69632,1600019)("","Base System Variables","","")
 [250][5,4]<0>(17,0,0,332288,1600008)("","Images/Sounds","","Window Image File")
@@ -204,7 +204,7 @@ WoditorEvCOMMAND_END
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ Set fixed value
 ■Set Variable: CSelf20[Base Picture ID] = 15000 + 0 
-▼ Load base parameters
+▼ Load basic parameters
 ■Load DB(Var):  CSelf18[Min Font Size] = VarDB[ "Base System Variables":6:0 ] (18:System Min Font Size:Number) 
 ■Load DB(Var):  CSelf19[Basic Font Size] = VarDB[ "Base System Variables":5:0 ] (18:System Basic Font Size:Number) 
 ■Load DB(User):  CSelf8[Window Image] = UserDB[ "Images/Sounds":0:"Window Image File" ] (16:Basic Images/Sounds:0) 

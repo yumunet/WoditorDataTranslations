@@ -165,7 +165,7 @@ COMMAND_NUM=7
 WoditorEvCOMMAND_START
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [103][0,1]<0>()("Process Overview:")
-[103][0,1]<0>()("  This common event is always used to get the money in the Base System.")
+[103][0,1]<0>()("  Always used when the Base System gets the money.")
 [103][0,1]<0>()("  Works both on the map and in battle.")
 [103][0,1]<0>()("―――――――――――――――――――――――――――――――――――")
 [250][5,4]<0>(6,0,0,331776,1600010)("","Party","","Current Money")
@@ -175,7 +175,7 @@ WoditorEvCOMMAND_END
 [COMMAND_TEXT_START]
 ▼ ―――――――――――――――――――――――――――――――――――
 ▼ Process Overview:
-▼   This common event is always used to get the money in the Base System.
+▼   Always used when the Base System gets the money.
 ▼   Works both on the map and in battle.
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Load DB(Var):  CSelf10[Money] = VarDB[ "Party":0:"Current Money" ] (6:Main Settings:0) 

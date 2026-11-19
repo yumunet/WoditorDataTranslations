@@ -908,7 +908,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<4>()()
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
-[122][3,1]<4>(1600005,0,0)("Resets all settings to defaults.")
+[122][3,1]<4>(1600005,0,0)("Reset all settings to defaults.")
 [0][0,0]<4>()()
 [401][1,0]<3>(3)()
 [122][3,1]<4>(1600005,0,0)("Apply these settings.")
@@ -1723,7 +1723,7 @@ WoditorEvCOMMAND_END
  | | | |◇End◇
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf1[カーソル位置] == 11   ] Case↓
- | | | |■Set String: CSelf5[説明文] = "Resets all settings to defaults."
+ | | | |■Set String: CSelf5[説明文] = "Reset all settings to defaults."
  | | | |■
  | | |-◇Condition:  [3]  [ CSelf1[カーソル位置] == 12   ] Case↓
  | | | |■Set String: CSelf5[説明文] = "Apply these settings."

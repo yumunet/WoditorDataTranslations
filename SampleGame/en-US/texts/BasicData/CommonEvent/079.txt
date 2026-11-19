@@ -244,7 +244,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<1>()()
 [0][0,0]<1>()()
 [498][0,0]<0>()()
-[103][0,1]<0>()("Store party member count")
+[103][0,1]<0>()("Store the current party size")
 [250][5,4]<0>(18,4,0,65536,1600022)("","Base System Variables","","")
 [121][4,0]<0>(1600021,1600022,0,0)()
 [170][0,0]<0>()()
@@ -345,7 +345,7 @@ WoditorEvCOMMAND_END
  |◇End◇
  |■
 ◇Loop End Point◇◇
-▼ Store party member count
+▼ Store the current party size
 ■Write to DB(Var): VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) =  CSelf22[Current Party Size]
 ■Set Variable: CSelf21[Target Party Member] = CSelf22[Current Party Size] + 0 
 ■Loop Start

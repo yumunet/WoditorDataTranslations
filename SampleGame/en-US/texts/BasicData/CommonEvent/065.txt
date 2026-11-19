@@ -307,7 +307,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<3>(18,8,0,65536,1600010)("","Base System Variables","","")
 [111][4,0]<3>(17,1600001,1,6)()
 [401][1,0]<3>(1)()
-[103][0,1]<4>()("Case: Don't Play Confirm Sound (Replaced by another sound externally)")
+[103][0,1]<4>()("Case: Don't Play Confirm Sound (Play a different sound separately)")
 [0][0,0]<4>()()
 [420][1,0]<3>(0)()
 [300][3,1]<4>(0,1,0)("X[Com]Play System Sound")
@@ -553,7 +553,7 @@ WoditorEvCOMMAND_END
  | | |■Write to DB(Var): VarDB[ "Base System Variables":8:0 ] (18:Universal Window Return ID:Number) =  CSelf10[Selected ID]
  | | |■Condition (Number):   [1] CSelf1[Option] &  1  
  | | |-◇Condition:  [1]  [ CSelf1[Option] & 1   ] Case↓
- | | | |▼ Case: Don't Play Confirm Sound (Replaced by another sound externally)
+ | | | |▼ Case: Don't Play Confirm Sound (Play a different sound separately)
  | | | |■
  | | |-◇Else
  | | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
