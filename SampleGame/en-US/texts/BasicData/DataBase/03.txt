@@ -443,7 +443,7 @@ DEFAULT_VAL_29=-1
 "Weapon Name","Description (Up to 2 Lines)","Equipment Type","Equippable Slots 1-4","Equippable Slots 5-8","Attack Animation","Max HP Change","Max SP Change","Attack Change","Defense Change","Magic Attack Change","Magic Defense Change","Agility Change","Accuracy (%) Change","Evasion (%) Change","Critical Rate (%) Change","Equipped, Can't Remove?","Sell Price (0=Can't Sell)","┏ Add State       ","┗ State Rate (%)","┏ Change Battle Command","┗ New Command                ","Skill When Used As Item       ","┣ Skill to Use                          ","┣ Message (Map)                  ","┣ Message (Battle): Name...","┗ Item Changes After Use   ","Exclusive Slots on Equip","Element 1","Element 2",
 "Dagger","A dagger. Increases Attack by 10.",0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,110,-1,0,0,0,0,0,"","",-3,0,1,2,
 "Mini Blade","A very short sword. Only increases Attack by 1,
-but equippable in Left Hand.",0,1,0,3,0,0,1,0,0,0,0,0,0,0,0,300,-2,-1,0,0,0,0,"","",-3,0,-1,-1,
+but is equippable in Left Hand.",0,1,0,3,0,0,1,0,0,0,0,0,0,0,0,300,-2,-1,0,0,0,0,"","",-3,0,-1,-1,
 "Short Sword","A short sword. Increases Attack by 16.",1,0,0,0,0,0,16,0,0,0,0,0,0,0,0,200,-1,0,0,0,0,0,"","",-3,0,-1,-1,
 "Short Spear","A short spear. Increases Attack by 20.",2,0,0,7,0,0,20,0,0,0,0,0,0,0,0,250,-1,0,0,0,0,0,"","",-3,0,-1,-1,
 "Short Bow","A short bow. Increases Attack by 14. Also increases Agility.",5,0,0,6,0,0,14,0,0,0,10,0,0,0,0,220,-1,0,0,0,0,0,"","",-3,3,-1,-1,
@@ -466,7 +466,7 @@ Increases Attack by 25, and Magic Attack by 40.",6,0,0,4,0,0,25,0,40,0,0,0,0,0,0
 "","",-3,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,1,-1,0,0,0,0,0,"","",-3,0,-1,-1,
 "","",-3,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,1,-1,0,0,0,0,0,"","",-3,0,-1,-1,
 "[Sample Game Weapons Below]","",-3,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,1,-1,0,0,0,0,0,"","",-3,0,-1,-1,
-"Sword Beak","A attachable beak Yuichi starts with.
+"Sword Beak","An attachable beak Yuichi starts with.
 Increases Critical Rate by 50%.",8,0,0,5,0,0,5,0,0,0,0,0,0,50,0,1000,-1,-1,0,0,0,0,"","",-1,0,-1,-1,
 "Heal Rod","",-3,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,1,-1,0,0,0,1,3,"","",-3,0,-1,-1,
 

@@ -307,6 +307,6 @@ DEFAULT_VAL_30=0
 DEFAULT_VAL_31=0
 <<--CSV_START-->>
 "[Menu] Items","[Menu] Skills","[Menu] Equip","[Menu] Save","[Menu] System","[Stats] Level","[Stats] EXP to Next Level","[Stats] HP Name","[Stats] SP Name","[Stats] Attack","[Stats] Defense","[Stats] Magic Attack","[Stats] Magic Defense","[Stats] Agility","[Stats] Accuracy","[Stats] Evasion","[Stats] Critical Rate","[Stats] Experience","[Stats] Currency","[Equip] Slot 1 <Weapon>","[Equip] Slot 2 <Armor>","[Equip] Slot 3 <Armor>","[Equip] Slot 4 <Armor>","[Equip] Slot 5 <Armor>","[Equip] Slot 6 <Armor>","[Equip] Slot 7 <Armor>","[Equip] Slot 8 <Armor>","[Save] Save Message","[Save] Load Message","[Save] Save Data Name","[Battle] Fight Command","[Battle] Flee Command",
-"Items","Skills","Equip","Save","System","Lv","To Next Lv","HP","SP","Attack","Defense","Magic Atk","Magic Def","Agility","Accuracy","Evasion","Critical","EXP","Gold","R.Hand","L.Hand","Body","Acc. 1","Acc. 2","Acc. 3","Acc. 4","Acc. 5","Save to which Data?","Load which Data?","Data ","Fight","Flee",<<!--DATANAME--!>>Basic Terms,
+"Items","Skills","Equip","Save","System","Lv","To Next Lv","HP","SP","Attack","Defense","Magic Atk","Magic Def","Agility","Accuracy","Evasion","Critical","EXP","Gold","R.Hand","L.Hand","Body","Acc. 1","Acc. 2","Acc. 3","Acc. 4","Acc. 5","Save to which data?","Load which data?","Data ","Fight","Flee",<<!--DATANAME--!>>Basic Terms,
 
 <<--CSV_END-->>

@@ -504,7 +504,7 @@ DEFAULT_VAL_37=0
 "Leather Shield","A shield made of leather.
 Increases Defense by 4, and Evasion by 10%.",13,1,0,0,0,0,4,0,0,0,0,10,0,0,0,0,80,"",0,0,"","",-3,-1,0,-1,0,-1,0,0,-1,0,-1,0,-1,0,
 "Leather Gauntlet","A gauntlet made of leather. Increases Defense by 3.",13,1,0,0,0,0,3,0,0,0,0,0,0,0,0,0,60,"",0,0,"","",-3,-1,0,-1,0,-1,0,0,-1,0,-1,0,-1,0,
-"Thin Clothes","Clothes with thin cloth. Increases Defense by 3.",11,2,0,0,0,0,3,0,0,0,0,0,0,0,0,0,50,"",0,0,"","",0,-1,0,-1,0,-1,0,0,-1,0,-1,0,-1,0,
+"Thin Clothes","Clothes with thin cloth. Increase Defense by 3.",11,2,0,0,0,0,3,0,0,0,0,0,0,0,0,0,50,"",0,0,"","",0,-1,0,-1,0,-1,0,0,-1,0,-1,0,-1,0,
 "Leather Armor","Armor made of leather. Increases Defense by 10.",11,2,0,0,0,0,10,0,0,0,0,0,0,0,0,0,150,"",0,0,"","",-3,-1,0,-1,0,-1,0,0,-1,0,-1,0,-1,0,
 "Cotton Robe","A robe made of cotton.
 Increases Defense by 5, and Magic Defense by 5.",12,2,0,0,0,0,5,0,5,0,0,0,0,0,0,0,90,"",0,0,"","",-3,-1,0,-1,0,-1,0,0,-1,0,-1,0,-1,0,
@@ -512,7 +512,7 @@ Increases Defense by 5, and Magic Defense by 5.",12,2,0,0,0,0,5,0,5,0,0,0,0,0,0,
 "Iron Shield","A shield made of iron.
 Increases Defense by 8, and Evasion by 15%.",13,1,0,0,0,0,8,0,0,0,0,15,0,0,0,0,300,"",0,0,"","",-3,-1,0,-1,0,-1,0,0,-1,0,-1,0,-1,0,
 "Iron Gauntlet","A gauntlet made of iron. Increases Defense by 7.",13,1,0,0,0,0,7,0,0,0,0,0,0,0,0,0,230,"",0,0,"","",-3,-1,0,-1,0,-1,0,0,-1,0,-1,0,-1,0,
-"Thick Clothes","Clothes with thick cloth. Increases Defense by 8.",10,2,0,0,0,0,8,0,0,0,0,0,0,0,0,0,120,"",0,0,"","",0,-1,0,-1,0,-1,0,0,-1,0,-1,0,-1,0,
+"Thick Clothes","Clothes with thick cloth. Increase Defense by 8.",10,2,0,0,0,0,8,0,0,0,0,0,0,0,0,0,120,"",0,0,"","",0,-1,0,-1,0,-1,0,0,-1,0,-1,0,-1,0,
 "Iron Armor","Armor made of iron. Increases Defense by 18.",11,2,0,0,0,0,18,0,0,0,0,0,0,0,0,0,450,"",0,0,"","",-3,-1,0,-1,0,-1,0,0,-1,0,-1,0,-1,0,
 "Magician Robe","A robe worn by magicians.
 Increases Defense by 10, and Magic Defense by 14.",12,2,0,0,0,0,10,0,14,0,0,0,0,0,0,0,400,"",0,0,"","",-3,-1,0,-1,0,-1,0,0,-1,0,-1,0,-1,0,
@@ -537,7 +537,7 @@ Magic Attack and Magic Defense by 20 each.",-3,4,1,0,0,0,0,20,20,0,0,0,0,0,0,0,1
 "","",-3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,"",0,0,"","",-3,-1,0,-1,0,-1,0,0,-1,0,-1,0,-1,0,
 "[Sample Game Armor Below]","",-3,0,0,-1,0,0,0,0,0,0,0,0,0,0,0,1,-1,"",0,0,"","",0,-1,-1,-3,0,-1,-1,0,-1,0,-1,0,-1,0,
 "Blue Clothes","Wolfarl's regular clothes.
-Increases max HP by 10, reduces physical damage by 5.",10,2,0,10,0,0,5,0,0,0,0,0,0,0,0,0,100,"",0,0,"","",-2,-1,0,-1,0,-1,0,0,-1,0,-1,0,-1,0,
+Increase max HP by 10 and reduce physical damage by 5.",10,2,0,10,0,0,5,0,0,0,0,0,0,0,0,0,100,"",0,0,"","",-2,-1,0,-1,0,-1,0,0,-1,0,-1,0,-1,0,
 "Jacket","What Edy wears.
 Very stiff, so it reduces physical damage by 10.",10,2,0,0,0,0,10,0,0,0,0,0,0,0,0,0,200,"",0,0,"","",0,-1,0,-1,0,-1,0,0,-1,0,-1,0,-1,0,
 "Machine Gun","Equippable in Left Hand. Lets you use the

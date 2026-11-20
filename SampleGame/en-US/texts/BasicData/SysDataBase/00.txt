@@ -23,7 +23,7 @@ ITEMNAME4=Background Number
 ITEMNAME5=BGM Filename (Number=-3)
 ITEMNAME6=BGS Filename (Number=-3)
 ITEMNAME7=BG Filename (Number=-3)
-MEMO=Set map files to load<<\n>>for each ID, with BGM<<\n>>and BGS.<<\n>><<\n>>The settings you<<\n>>configured in<<\n>>"Create New Map" or<<\n>>"Map Settings" are<<\n>>reflected here.<<\n>><<\n>>Each map ID and name<<\n>>are displayed in the<<\n>>"Map Selection" window.
+MEMO=Set map files to load<<\n>>for each ID, with BGM<<\n>>and BGS.<<\n>><<\n>>The settings you<<\n>>configured in<<\n>>"Create New Map" or<<\n>>"Map Settings" are<<\n>>reflected here.<<\n>><<\n>>Each map's ID and name<<\n>>are displayed in the<<\n>>"Map Selection" window.
 ITEMTYPE_NUM=100
 ITEM_LOADTYPE_0=1
 ITEM_LOADTYPE_1=2
