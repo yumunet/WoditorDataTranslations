@@ -313,14 +313,14 @@ WoditorEvCOMMAND_END
 ■Load DB(Var):  CSelf40[Can Save?] = VarDB[ "Base System Variables":33:"Number" ] (18:[System] Can Save?:0) 
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ Initialize the Command List
-■Write to DB(Var): VarDB[ "Base System Variables":23:0 ] (18:Menu Cmd 1 ID & Name:Number) =  0
-■Write to DB(Var): VarDB[ "Base System Variables":24:0 ] (18:Menu Cmd 2 ID & Name:Number) =  0
-■Write to DB(Var): VarDB[ "Base System Variables":25:0 ] (18:Menu Cmd 3 ID & Name:Number) =  0
-■Write to DB(Var): VarDB[ "Base System Variables":26:0 ] (18:Menu Cmd 4 ID & Name:Number) =  0
-■Write to DB(Var): VarDB[ "Base System Variables":27:0 ] (18:Menu Cmd 5 ID & Name:Number) =  0
-■Write to DB(Var): VarDB[ "Base System Variables":28:0 ] (18:Menu Cmd 6 ID & Name:Number) =  0
-■Write to DB(Var): VarDB[ "Base System Variables":29:0 ] (18:Menu Cmd 7 ID & Name:Number) =  0
-■Write to DB(Var): VarDB[ "Base System Variables":30:0 ] (18:Menu Cmd 8 ID & Name:Number) =  0
+■Write to DB(Var): VarDB[ "Base System Variables":23:0 ] (18:Menu Command 1 Code & Name:Number) =  0
+■Write to DB(Var): VarDB[ "Base System Variables":24:0 ] (18:Menu Command 2 Code & Name:Number) =  0
+■Write to DB(Var): VarDB[ "Base System Variables":25:0 ] (18:Menu Command 3 Code & Name:Number) =  0
+■Write to DB(Var): VarDB[ "Base System Variables":26:0 ] (18:Menu Command 4 Code & Name:Number) =  0
+■Write to DB(Var): VarDB[ "Base System Variables":27:0 ] (18:Menu Command 5 Code & Name:Number) =  0
+■Write to DB(Var): VarDB[ "Base System Variables":28:0 ] (18:Menu Command 6 Code & Name:Number) =  0
+■Write to DB(Var): VarDB[ "Base System Variables":29:0 ] (18:Menu Command 7 Code & Name:Number) =  0
+■Write to DB(Var): VarDB[ "Base System Variables":30:0 ] (18:Menu Command 8 Code & Name:Number) =  0
 ■Set Variable: CSelf14[Command Count] = 0 + 0 
 ▼ Start processing each command one by one
 ■Set Variable: CSelf10[Target Position] = -1 + 0 

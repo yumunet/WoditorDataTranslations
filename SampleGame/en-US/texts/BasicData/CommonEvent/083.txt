@@ -181,7 +181,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<2>(2,1600015,0,332288,1600009)("","Items","","Item Name")
 [250][5,4]<2>(2,1600015,1,332288,1600008)("","Items","","Description [Up to 2 Lines]")
 [103][0,1]<2>()(" ")
-[250][5,4]<2>(16,1600016,1,327680,1600000)("","×Shop Temp Data","","Sell Item ID")
+[250][5,4]<2>(16,1600016,1,327680,1600000)("","×Shop Temp Data","","Sell Item Code")
 [250][5,4]<2>(16,1600016,0,327680,1600009)("","×Shop Temp Data","","Sell Item Name")
 [250][5,4]<2>(16,1600016,5,327680,1600008)("","×Shop Temp Data","","Description")
 [250][5,4]<2>(16,1600016,3,327680,1600019)("","×Shop Temp Data","","Quantity")
@@ -198,7 +198,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<2>(3,1600015,0,332288,1600009)("","Weapons","","Weapon Name")
 [250][5,4]<2>(3,1600015,1,332288,1600008)("","Weapons","","Description [Up to 2 Lines]")
 [103][0,1]<2>()(" ")
-[250][5,4]<2>(16,1600016,1,327680,1600000)("","×Shop Temp Data","","Sell Item ID")
+[250][5,4]<2>(16,1600016,1,327680,1600000)("","×Shop Temp Data","","Sell Item Code")
 [250][5,4]<2>(16,1600016,0,327680,1600009)("","×Shop Temp Data","","Sell Item Name")
 [250][5,4]<2>(16,1600016,5,327680,1600008)("","×Shop Temp Data","","Description")
 [250][5,4]<2>(16,1600016,3,327680,1600019)("","×Shop Temp Data","","Quantity")
@@ -215,7 +215,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<2>(4,1600015,0,332288,1600009)("","Armor","","Armor Name")
 [250][5,4]<2>(4,1600015,1,332288,1600008)("","Armor","","Description [Up to 2 Lines]")
 [103][0,1]<2>()(" ")
-[250][5,4]<2>(16,1600016,1,327680,1600000)("","×Shop Temp Data","","Sell Item ID")
+[250][5,4]<2>(16,1600016,1,327680,1600000)("","×Shop Temp Data","","Sell Item Code")
 [250][5,4]<2>(16,1600016,0,327680,1600009)("","×Shop Temp Data","","Sell Item Name")
 [250][5,4]<2>(16,1600016,5,327680,1600008)("","×Shop Temp Data","","Description")
 [250][5,4]<2>(16,1600016,3,327680,1600019)("","×Shop Temp Data","","Quantity")
@@ -248,7 +248,7 @@ WoditorEvCOMMAND_END
  | |■Load DB(User):  CSelf9[Item Name] = UserDB[ "Items":CSelf15[Item ID]:"Item Name" ] (2:-:0) 
  | |■Load DB(User):  CSelf8[Item Description] = UserDB[ "Items":CSelf15[Item ID]:"Description [Up to 2 Lines]" ] (2:-:1) 
  | |▼  
- | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[Destination]:"Sell Item ID" ] (16:-:1) =  CSelf0[Item Code]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[Destination]:"Sell Item Code" ] (16:-:1) =  CSelf0[Item Code]
  | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[Destination]:"Sell Item Name" ] (16:-:0) =  CSelf9[Item Name]
  | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[Destination]:"Description" ] (16:-:5) =  CSelf8[Item Description]
  | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[Destination]:"Quantity" ] (16:-:3) =  CSelf19[Quantity]
@@ -265,7 +265,7 @@ WoditorEvCOMMAND_END
  | |■Load DB(User):  CSelf9[Item Name] = UserDB[ "Weapons":CSelf15[Item ID]:"Weapon Name" ] (3:-:0) 
  | |■Load DB(User):  CSelf8[Item Description] = UserDB[ "Weapons":CSelf15[Item ID]:"Description [Up to 2 Lines]" ] (3:-:1) 
  | |▼  
- | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[Destination]:"Sell Item ID" ] (16:-:1) =  CSelf0[Item Code]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[Destination]:"Sell Item Code" ] (16:-:1) =  CSelf0[Item Code]
  | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[Destination]:"Sell Item Name" ] (16:-:0) =  CSelf9[Item Name]
  | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[Destination]:"Description" ] (16:-:5) =  CSelf8[Item Description]
  | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[Destination]:"Quantity" ] (16:-:3) =  CSelf19[Quantity]
@@ -282,7 +282,7 @@ WoditorEvCOMMAND_END
  | |■Load DB(User):  CSelf9[Item Name] = UserDB[ "Armor":CSelf15[Item ID]:"Armor Name" ] (4:-:0) 
  | |■Load DB(User):  CSelf8[Item Description] = UserDB[ "Armor":CSelf15[Item ID]:"Description [Up to 2 Lines]" ] (4:-:1) 
  | |▼  
- | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[Destination]:"Sell Item ID" ] (16:-:1) =  CSelf0[Item Code]
+ | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[Destination]:"Sell Item Code" ] (16:-:1) =  CSelf0[Item Code]
  | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[Destination]:"Sell Item Name" ] (16:-:0) =  CSelf9[Item Name]
  | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[Destination]:"Description" ] (16:-:5) =  CSelf8[Item Description]
  | |■Write to DB(Var): VarDB[ "×Shop Temp Data":CSelf16[Destination]:"Quantity" ] (16:-:3) =  CSelf19[Quantity]

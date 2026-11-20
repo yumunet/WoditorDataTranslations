@@ -185,7 +185,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<2>(1600010,1,0,256)()
 [300][4,1]<2>(0,16777217,1600010,1600011)("X[Map]Get Ally ID")
 [300][3,1]<2>(0,1,1600011)("X[Map]CalcTempStats <Initialize>")
-[300][3,1]<2>(0,1,1600011)("X[Map]CalcTempStats <Equipments>")
+[300][3,1]<2>(0,1,1600011)("X[Map]CalcTempStats <Equipment>")
 [300][3,1]<2>(0,1,1600011)("X[Map]CalcTempStats <StatusEffects>")
 [0][0,0]<2>()()
 [498][0,0]<1>()()
@@ -394,7 +394,7 @@ WoditorEvCOMMAND_END
  | |■Set Variable: CSelf10[パーティーメンバー位置] += 1 + 0 
  | |■Call Event [Name]: CSelf11[表示主人公ID] = ["X[Map]Get Ally ID"] <CommonEv 105>  / CSelf10[パーティーメンバー位置]
  | |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf11[表示主人公ID]
- | |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf11[表示主人公ID]
+ | |■Call Event [Name]: ["X[Map]CalcTempStats <Equipment>"] <CommonEv 123>  / CSelf11[表示主人公ID]
  | |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf11[表示主人公ID]
  | |■
  |◇Loop End Point◇◇

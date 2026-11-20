@@ -213,7 +213,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<0>()("万能ウィンドウを閉じる（自動）")
 [300][6,1]<0>(0,4,-1,0,4,1)("X[Com]Draw Universal Window")
 [103][0,1]<0>()("使用後の効果、必要ならターゲット指定")
-[250][5,4]<0>(18,8,0,200704,1600022)("","Base System Variables","Universal Window Return ID","")
+[250][5,4]<0>(18,8,0,200704,1600022)("","Base System Variables","Universal Window Return Code","")
 [106][0,1]<0>()("●アイテム欄コード > \cself[22]")
 [111][7,0]<0>(2,1600022,-100,2,1600022,0,1)()
 [401][1,0]<0>(1)()
@@ -288,7 +288,7 @@ WoditorEvCOMMAND_END
 ▼ 万能ウィンドウを閉じる（自動）
 ■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / -1:Erase / 0 / 4:Display Below Window / 1:Expand from Top-Left
 ▼ 使用後の効果、必要ならターゲット指定
-■Load DB(Var):  CSelf22[選択コード位置] = VarDB[ "Base System Variables":"Universal Window Return ID":0 ] (18:8:Number) 
+■Load DB(Var):  CSelf22[選択コード位置] = VarDB[ "Base System Variables":"Universal Window Return Code":0 ] (18:8:Number) 
 ■Debug Text: ●アイテム欄コード > \cself[22]
 ■Condition (Number):   [1] CSelf22[選択コード位置] ==  -100  /  [2] CSelf22[選択コード位置] >=  0  
 -◇Condition:  [1]  [ CSelf22[選択コード位置] == -100   ] Case↓

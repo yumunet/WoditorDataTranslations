@@ -94,7 +94,7 @@ CSELF_NAME_6=
 CSELF_NAME_7=
 CSELF_NAME_8=
 CSELF_NAME_9=
-CSELF_NAME_10=Merchandise ID
+CSELF_NAME_10=Merchandise Code
 CSELF_NAME_11=
 CSELF_NAME_12=
 CSELF_NAME_13=
@@ -221,24 +221,24 @@ WoditorEvCOMMAND_END
 -◇Condition:  [1]  [ CSelf0[What to Add?] == 1   ] Case↓
  |■Condition (Number):   [1] CSelf1[[A] Item] >=  0  
  |-◇Condition:  [1]  [ CSelf1[[A] Item] >= 0   ] Case↓
- | |■Set Variable: CSelf10[Merchandise ID] = CSelf1[[A] Item] + 10000 
- | |■Call Event [Name]: ["X[Map]Add Shop Item"] <CommonEv 83>  / CSelf10[Merchandise ID]
+ | |■Set Variable: CSelf10[Merchandise Code] = CSelf1[[A] Item] + 10000 
+ | |■Call Event [Name]: ["X[Map]Add Shop Item"] <CommonEv 83>  / CSelf10[Merchandise Code]
  | |■
  |◇End◇
  |■
 -◇Condition:  [2]  [ CSelf0[What to Add?] == 2   ] Case↓
  |■Condition (Number):   [1] CSelf2[[B] Weapon] >=  0  
  |-◇Condition:  [1]  [ CSelf2[[B] Weapon] >= 0   ] Case↓
- | |■Set Variable: CSelf10[Merchandise ID] = CSelf2[[B] Weapon] + 20000 
- | |■Call Event [Name]: ["X[Map]Add Shop Item"] <CommonEv 83>  / CSelf10[Merchandise ID]
+ | |■Set Variable: CSelf10[Merchandise Code] = CSelf2[[B] Weapon] + 20000 
+ | |■Call Event [Name]: ["X[Map]Add Shop Item"] <CommonEv 83>  / CSelf10[Merchandise Code]
  | |■
  |◇End◇
  |■
 -◇Condition:  [3]  [ CSelf0[What to Add?] == 3   ] Case↓
  |■Condition (Number):   [1] CSelf3[[C] Armor] >=  0  
  |-◇Condition:  [1]  [ CSelf3[[C] Armor] >= 0   ] Case↓
- | |■Set Variable: CSelf10[Merchandise ID] = CSelf3[[C] Armor] + 30000 
- | |■Call Event [Name]: ["X[Map]Add Shop Item"] <CommonEv 83>  / CSelf10[Merchandise ID]
+ | |■Set Variable: CSelf10[Merchandise Code] = CSelf3[[C] Armor] + 30000 
+ | |■Call Event [Name]: ["X[Map]Add Shop Item"] <CommonEv 83>  / CSelf10[Merchandise Code]
  | |■
  |◇End◇
  |■

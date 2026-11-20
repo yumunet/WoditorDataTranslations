@@ -347,7 +347,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<3>()()
 [498][0,0]<2>()()
 [300][3,1]<2>(0,1,1600014)("X[Map]CalcTempStats <Initialize>")
-[300][3,1]<2>(0,1,1600014)("X[Map]CalcTempStats <Equipments>")
+[300][3,1]<2>(0,1,1600014)("X[Map]CalcTempStats <Equipment>")
 [300][3,1]<2>(0,1,1600014)("X[Map]CalcTempStats <StatusEffects>")
 [103][0,1]<2>()("HP回復値の計算")
 [250][5,4]<2>(21,1600014,0,331776,1600033)("","×Allies Temp Data","","[Temp] Post-Calc Max HP")
@@ -634,7 +634,7 @@ WoditorEvCOMMAND_END
  | | |■
  | |◇Loop End Point◇◇
  | |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf14[一時キャラID]
- | |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf14[一時キャラID]
+ | |■Call Event [Name]: ["X[Map]CalcTempStats <Equipment>"] <CommonEv 123>  / CSelf14[一時キャラID]
  | |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf14[一時キャラID]
  | |▼ HP回復値の計算
  | |■Load DB(Var):  CSelf33[最終HP回復値] = VarDB[ "×Allies Temp Data":CSelf14[一時キャラID]:"[Temp] Post-Calc Max HP" ] (17:-:0) 

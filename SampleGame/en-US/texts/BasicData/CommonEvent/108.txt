@@ -323,14 +323,14 @@ WoditorEvCOMMAND_END
  | | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 0:Confirm Sound
  | | |■
  | |◇End◇
- | |■Write to DB(Var): VarDB[ "Base System Variables":2:0 ] (18:Selected ID:Number) =  CSelf10[選択箇所]
+ | |■Write to DB(Var): VarDB[ "Base System Variables":2:0 ] (18:Selected Code:Number) =  CSelf10[選択箇所]
  | |■Break Loop
  | |■
  |-◇Condition:  [2]  [ CSelf20[キー入力１] == 11   ] Case↓
  | |▼ キャンセルキー
  | |■Call Event [Name]: ["X[Com]Play System Sound"] <CommonEv 49>  / 1:Cancel Sound
  | |■Set Variable: CSelf10[選択箇所] = -1 + 0 
- | |■Write to DB(Var): VarDB[ "Base System Variables":2:0 ] (18:Selected ID:Number) =  CSelf10[選択箇所]
+ | |■Write to DB(Var): VarDB[ "Base System Variables":2:0 ] (18:Selected Code:Number) =  CSelf10[選択箇所]
  | |■Break Loop
  | |■
  |-◇Condition:  [3]  [ CSelf20[キー入力１] == 2   ] Case↓

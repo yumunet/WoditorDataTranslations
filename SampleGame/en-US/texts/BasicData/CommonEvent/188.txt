@@ -271,7 +271,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("キャラがいる場合だけ処理")
 [300][3,1]<4>(0,1,1600010)("X[Bat]CalcTempStats <Initialize>")
-[300][4,1]<4>(0,2,1600010,-1)("X[Bat]CalcTempStats <Equipments>")
+[300][4,1]<4>(0,2,1600010,-1)("X[Bat]CalcTempStats <Equipment>")
 [300][4,1]<4>(0,2,1600010,0)("X[Bat]CalcTempStats <StatusEffects>")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
@@ -288,7 +288,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("キャラがいる場合だけ処理")
 [300][3,1]<4>(0,1,1600010)("X[Bat]CalcTempStats <Initialize>")
-[300][4,1]<4>(0,2,1600010,-1)("X[Bat]CalcTempStats <Equipments>")
+[300][4,1]<4>(0,2,1600010,-1)("X[Bat]CalcTempStats <Equipment>")
 [300][4,1]<4>(0,2,1600010,0)("X[Bat]CalcTempStats <StatusEffects>")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
@@ -318,7 +318,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("キャラがいる場合だけ処理")
 [300][3,1]<4>(0,1,1600010)("X[Bat]CalcTempStats <Initialize>")
-[300][4,1]<4>(0,2,1600010,-1)("X[Bat]CalcTempStats <Equipments>")
+[300][4,1]<4>(0,2,1600010,-1)("X[Bat]CalcTempStats <Equipment>")
 [300][4,1]<4>(0,2,1600010,0)("X[Bat]CalcTempStats <StatusEffects>")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
@@ -335,7 +335,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("キャラがいる場合だけ処理")
 [300][3,1]<4>(0,1,1600010)("X[Bat]CalcTempStats <Initialize>")
-[300][4,1]<4>(0,2,1600010,-1)("X[Bat]CalcTempStats <Equipments>")
+[300][4,1]<4>(0,2,1600010,-1)("X[Bat]CalcTempStats <Equipment>")
 [300][4,1]<4>(0,2,1600010,0)("X[Bat]CalcTempStats <StatusEffects>")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
@@ -536,7 +536,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [1]  [ CSelf11 >= 0   ] Case↓
  | | | |▼ キャラがいる場合だけ処理
  | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf10
- | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf10 / -1:全武器を総計
+ | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipment>"] <CommonEv 147>  / CSelf10 / -1:全武器を総計
  | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf10 / 0:パラメータ補正＋状態名計算
  | | | |■
  | | |◇End◇
@@ -553,7 +553,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [1]  [ CSelf11 >= 0   ] Case↓
  | | | |▼ キャラがいる場合だけ処理
  | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf10
- | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf10 / -1:全武器を総計
+ | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipment>"] <CommonEv 147>  / CSelf10 / -1:全武器を総計
  | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf10 / 0:パラメータ補正＋状態名計算
  | | | |■
  | | |◇End◇
@@ -583,7 +583,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [1]  [ CSelf11 >= 0   ] Case↓
  | | | |▼ キャラがいる場合だけ処理
  | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf10
- | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf10 / -1:全武器を総計
+ | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipment>"] <CommonEv 147>  / CSelf10 / -1:全武器を総計
  | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf10 / 0:パラメータ補正＋状態名計算
  | | | |■
  | | |◇End◇
@@ -600,7 +600,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [1]  [ CSelf11 >= 0   ] Case↓
  | | | |▼ キャラがいる場合だけ処理
  | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf10
- | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf10 / -1:全武器を総計
+ | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipment>"] <CommonEv 147>  / CSelf10 / -1:全武器を総計
  | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf10 / 0:パラメータ補正＋状態名計算
  | | | |■
  | | |◇End◇

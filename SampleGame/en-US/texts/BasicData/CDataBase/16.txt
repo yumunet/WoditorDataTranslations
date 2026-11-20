@@ -22,7 +22,7 @@ DATA_NUM=15
 TYPENAME=×Shop Temp Data
 ITEMNAME_NUM=14
 ITEMNAME0=Sell Item Name
-ITEMNAME1=Sell Item ID
+ITEMNAME1=Sell Item Code
 ITEMNAME2=Price
 ITEMNAME3=Quantity
 ITEMNAME4=(Equipment Quantity)
@@ -198,7 +198,7 @@ DEFAULT_VAL_11=0
 DEFAULT_VAL_12=0
 DEFAULT_VAL_13=0
 <<--CSV_START-->>
-"Sell Item Name","Sell Item ID","Price","Quantity","(Equipment Quantity)","Description","(Purchasable [0/1])","(Member 1 Equippable)","(Member 2 Equippable)","(Member 3 Equippable)","(Member 4 Equippable)","(Member 5 Equippable)","(Member 6 Equippable)","(Equipment Status String)",
+"Sell Item Name","Sell Item Code","Price","Quantity","(Equipment Quantity)","Description","(Purchasable [0/1])","(Member 1 Equippable)","(Member 2 Equippable)","(Member 3 Equippable)","(Member 4 Equippable)","(Member 5 Equippable)","(Member 6 Equippable)","(Equipment Status String)",
 "",0,0,0,0,"",0,0,0,0,0,0,0,"",<<!--DATANAME--!>>,
 "",0,0,0,0,"",0,0,0,0,0,0,0,"",<<!--DATANAME--!>>,
 "",0,0,0,0,"",0,0,0,0,0,0,0,"",<<!--DATANAME--!>>,

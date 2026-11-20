@@ -521,7 +521,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<3>()()
 [498][0,0]<2>()()
 [300][3,1]<2>(0,1,1600014)("X[Map]CalcTempStats <Initialize>")
-[300][3,1]<2>(0,1,1600014)("X[Map]CalcTempStats <Equipments>")
+[300][3,1]<2>(0,1,1600014)("X[Map]CalcTempStats <Equipment>")
 [300][3,1]<2>(0,1,1600014)("X[Map]CalcTempStats <StatusEffects>")
 [300][5,1]<2>(0,3,2,-1,0)("X[Map]Draw Character Box")
 [300][5,1]<2>(0,3,3,1600011,1600014)("X[Map]Draw Character Box")
@@ -957,7 +957,7 @@ WoditorEvCOMMAND_END
  | | |■
  | |◇Loop End Point◇◇
  | |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf14[対象ID]
- | |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf14[対象ID]
+ | |■Call Event [Name]: ["X[Map]CalcTempStats <Equipment>"] <CommonEv 123>  / CSelf14[対象ID]
  | |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf14[対象ID]
  | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 2:Cursor Off (All Positions If -1) / -1 / 0
  | |■Call Event [Name]: ["X[Map]Draw Character Box"] <CommonEv 90>  / 3:Display (Instant) / CSelf11[ターゲット] / CSelf14[対象ID]

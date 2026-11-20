@@ -88,11 +88,11 @@ ITEMNAME17=
 ITEMNAME18=
 ITEMNAME19=
 ITEMNAME20=[Item Drop Count]
-ITEMNAME21=Item Drop ID
-ITEMNAME22=Item Drop ID
-ITEMNAME23=Item Drop ID
-ITEMNAME24=Item Drop ID
-ITEMNAME25=Item Drop ID
+ITEMNAME21=Item Drop Code
+ITEMNAME22=Item Drop Code
+ITEMNAME23=Item Drop Code
+ITEMNAME24=Item Drop Code
+ITEMNAME25=Item Drop Code
 ITEMNAME26=Rest Omitted
 ITEMNAME27=
 ITEMNAME28=
@@ -474,7 +474,7 @@ DEFAULT_VAL_57=0
 DEFAULT_VAL_58=0
 DEFAULT_VAL_59=0
 <<--CSV_START-->>
-"EXP Gain","Money Gain","EXP Multiplier [Base 100]","Money Multiplier [Base 100]","","","","","","","","","","","","","","","","","[Item Drop Count]","Item Drop ID","Item Drop ID","Item Drop ID","Item Drop ID","Item Drop ID","Rest Omitted","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",
+"EXP Gain","Money Gain","EXP Multiplier [Base 100]","Money Multiplier [Base 100]","","","","","","","","","","","","","","","","","[Item Drop Count]","Item Drop Code","Item Drop Code","Item Drop Code","Item Drop Code","Item Drop Code","Rest Omitted","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",
 0,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,<<!--DATANAME--!>>,
 
 <<--CSV_END-->>

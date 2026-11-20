@@ -210,7 +210,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<5>()("Clear states")
 [300][5,1]<5>(0,3,1600011,-1,0)("X[Map]Add/Remove State")
 [300][3,1]<5>(0,1,1600011)("X[Map]CalcTempStats <Initialize>")
-[300][3,1]<5>(0,1,1600011)("X[Map]CalcTempStats <Equipments>")
+[300][3,1]<5>(0,1,1600011)("X[Map]CalcTempStats <Equipment>")
 [300][3,1]<5>(0,1,1600011)("X[Map]CalcTempStats <StatusEffects>")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
@@ -228,7 +228,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<4>()()
 [103][0,1]<4>()("Recalculate stats")
 [300][3,1]<4>(0,1,1600011)("X[Map]CalcTempStats <Initialize>")
-[300][3,1]<4>(0,1,1600011)("X[Map]CalcTempStats <Equipments>")
+[300][3,1]<4>(0,1,1600011)("X[Map]CalcTempStats <Equipment>")
 [300][3,1]<4>(0,1,1600011)("X[Map]CalcTempStats <StatusEffects>")
 [300][5,1]<4>(0,3,1600011,-1,2)("X[Map]Add/Remove State")
 [0][0,0]<4>()()
@@ -273,7 +273,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<5>()("Clear states")
 [300][6,1]<5>(0,4,1600010,-1,0,1)("X[Bat]Add/Remove State")
 [300][3,1]<5>(0,1,1600010)("X[Bat]CalcTempStats <Initialize>")
-[300][4,1]<5>(0,2,1600010,-1)("X[Bat]CalcTempStats <Equipments>")
+[300][4,1]<5>(0,2,1600010,-1)("X[Bat]CalcTempStats <Equipment>")
 [300][4,1]<5>(0,2,1600010,0)("X[Bat]CalcTempStats <StatusEffects>")
 [0][0,0]<5>()()
 [499][0,0]<4>()()
@@ -300,7 +300,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<4>()()
 [103][0,1]<4>()("Recalculate stats")
 [300][3,1]<4>(0,1,1600010)("X[Bat]CalcTempStats <Initialize>")
-[300][4,1]<4>(0,2,1600010,-1)("X[Bat]CalcTempStats <Equipments>")
+[300][4,1]<4>(0,2,1600010,-1)("X[Bat]CalcTempStats <Equipment>")
 [300][4,1]<4>(0,2,1600010,0)("X[Bat]CalcTempStats <StatusEffects>")
 [300][3,1]<4>(0,1,1600010)("X[Bat]Ally Box: Calc Position")
 [300][5,1]<4>(0,3,5,1600010,1600010)("X[Bat]Ally Box: Draw One")
@@ -371,7 +371,7 @@ WoditorEvCOMMAND_END
  | | | | |▼ Clear states
  | | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf11[Target Character ID] / -1:Remove All (Force) / 0:Remove
  | | | | |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf11[Target Character ID]
- | | | | |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf11[Target Character ID]
+ | | | | |■Call Event [Name]: ["X[Map]CalcTempStats <Equipment>"] <CommonEv 123>  / CSelf11[Target Character ID]
  | | | | |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf11[Target Character ID]
  | | | | |■
  | | | |◇End◇
@@ -389,7 +389,7 @@ WoditorEvCOMMAND_END
  | | | |◇End◇
  | | | |▼ Recalculate stats
  | | | |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf11[Target Character ID]
- | | | |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf11[Target Character ID]
+ | | | |■Call Event [Name]: ["X[Map]CalcTempStats <Equipment>"] <CommonEv 123>  / CSelf11[Target Character ID]
  | | | |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf11[Target Character ID]
  | | | |■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf11[Target Character ID] / -1:Remove All (Force) / 2:Update
  | | | |■
@@ -434,7 +434,7 @@ WoditorEvCOMMAND_END
  | | | | |▼ Clear states
  | | | | |■Call Event [Name]: ["X[Bat]Add/Remove State"] <CommonEv 137>  / CSelf10[Temp A] / -1:全て消去（強制） / 0:消去 / 1:メッセージ有り
  | | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf10[Temp A]
- | | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf10[Temp A] / -1:全武器を総計
+ | | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipment>"] <CommonEv 147>  / CSelf10[Temp A] / -1:全武器を総計
  | | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf10[Temp A] / 0:パラメータ補正＋状態名計算
  | | | | |■
  | | | |◇End◇
@@ -461,7 +461,7 @@ WoditorEvCOMMAND_END
  | | | |◇End◇
  | | | |▼ Recalculate stats
  | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf10[Temp A]
- | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf10[Temp A] / -1:全武器を総計
+ | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipment>"] <CommonEv 147>  / CSelf10[Temp A] / -1:全武器を総計
  | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf10[Temp A] / 0:パラメータ補正＋状態名計算
  | | | |■Call Event [Name]: ["X[Bat]Ally Box: Calc Position"] <CommonEv 174>  / CSelf10[Temp A]
  | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 5:表示[更新＋ゲージアニメ] / CSelf10[Temp A] / CSelf10[Temp A]

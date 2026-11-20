@@ -185,7 +185,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [498][0,0]<0>()()
 [300][4,1]<0>(0,2,1600021,0)("X[Map]Select Character Box")
-[250][5,4]<0>(18,2,0,462848,1600020)("","Base System Variables","Selected ID","Number")
+[250][5,4]<0>(18,2,0,462848,1600020)("","Base System Variables","Selected Code","Number")
 [121][4,0]<0>(1600021,1600020,0,0)()
 [121][4,0]<0>(1600029,0,0,0)()
 [111][4,0]<0>(1,1600020,-1,2)()
@@ -210,7 +210,7 @@ WoditorEvCOMMAND_START
 [300][4,1]<1>(0,2,1600011,0)("X[Map]Create Equipment List")
 [103][0,1]<1>()("万能ウィンドウ表示")
 [300][5,1]<1>(0,3,0,1600011,0)("X[Map]Draw Equip Screen")
-[250][5,4]<1>(18,2,0,462848,1600010)("","Base System Variables","Selected ID","Number")
+[250][5,4]<1>(18,2,0,462848,1600010)("","Base System Variables","Selected Code","Number")
 [103][0,1]<1>()("キャンセル時はキャラ選択に戻る")
 [111][4,0]<1>(1,1600010,-1,2)()
 [401][1,0]<1>(1)()
@@ -259,7 +259,7 @@ WoditorEvCOMMAND_END
  |■
 ◇Loop End Point◇◇
 ■Call Event [Name]: ["X[Map]Select Character Box"] <CommonEv 108>  / CSelf21[キャラ欄選択位置] / 0:決定効果音を再生
-■Load DB(Var):  CSelf20[選択キャラ位置（0～5）] = VarDB[ "Base System Variables":"Selected ID":"Number" ] (18:2:0) 
+■Load DB(Var):  CSelf20[選択キャラ位置（0～5）] = VarDB[ "Base System Variables":"Selected Code":"Number" ] (18:2:0) 
 ■Set Variable: CSelf21[キャラ欄選択位置] = CSelf20[選択キャラ位置（0～5）] + 0 
 ■Set Variable: CSelf29[キャラ再表示する？] = 0 + 0 
 ■Condition (Number):   [1] CSelf20[選択キャラ位置（0～5）] ==  -1  
@@ -284,7 +284,7 @@ WoditorEvCOMMAND_END
  |■Call Event [Name]: ["X[Map]Create Equipment List"] <CommonEv 112>  / CSelf11[一時TMP２] / 0:装備欄1
  |▼ 万能ウィンドウ表示
  |■Call Event [Name]: ["X[Map]Draw Equip Screen"] <CommonEv 93>  / 0:表示A（初期表示用　スライド表示＆全表示） / CSelf11[一時TMP２] / 0
- |■Load DB(Var):  CSelf10[一時TMP１] = VarDB[ "Base System Variables":"Selected ID":"Number" ] (18:2:0) 
+ |■Load DB(Var):  CSelf10[一時TMP１] = VarDB[ "Base System Variables":"Selected Code":"Number" ] (18:2:0) 
  |▼ キャンセル時はキャラ選択に戻る
  |■Condition (Number):   [1] CSelf10[一時TMP１] ==  -1  
  |-◇Condition:  [1]  [ CSelf10[一時TMP１] == -1   ] Case↓
@@ -302,7 +302,7 @@ WoditorEvCOMMAND_END
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■
 ■Call Event [Name]: ["X[Map]Calc Equip Stat Changes"] <CommonEv 114>  / -1 / -1
 ■Call Event [Name]: CSelf21[キャラ欄選択位置] = ["X[Map]Select Equipment Box"] <CommonEv 109>  / CSelf20[選択キャラ位置（0～5）] / 1:キャラ切り替え可能
-■Load DB(Var):  CSelf10[一時TMP１] = VarDB[ "Base System Variables":2:0 ] (18:Selected ID:Number) 
+■Load DB(Var):  CSelf10[一時TMP１] = VarDB[ "Base System Variables":2:0 ] (18:Selected Code:Number) 
 ■Condition (Number):   [1] CSelf10[一時TMP１] ==  -1  
 -◇Condition:  [1]  [ CSelf10[一時TMP１] == -1   ] Case↓
  |▼ キャンセルされた場合はキャラ選択に戻る

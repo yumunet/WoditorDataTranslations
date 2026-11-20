@@ -189,7 +189,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<2>(6,1600019,1,332288,1600008)("","Battle Commands","","Description")
 [250][5,4]<2>(21,1600032,6,327680,1600008)("","Universal Window Items","","Description")
 [250][5,4]<2>(6,1600019,2,332288,1600018)("","Battle Commands","","Effect on Selection")
-[250][5,4]<2>(21,1600032,1,327680,1600018)("","Universal Window Items","","Item ID")
+[250][5,4]<2>(21,1600032,1,327680,1600018)("","Universal Window Items","","Item Code")
 [250][5,4]<2>(21,1600032,3,327680,-1)("","Universal Window Items","","Quantity Left/Point Cost")
 [103][0,1]<2>()("選択可能かどうか判定")
 [250][5,4]<2>(21,1600032,0,327680,1)("","Universal Window Items","","Selectable? [1:Yes]")
@@ -302,7 +302,7 @@ WoditorEvCOMMAND_END
  | |■Load DB(User):  CSelf8[説明文] = UserDB[ "Battle Commands":CSelf19[コマンド番号]:"Description" ] (6:-:1) 
  | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Description" ] (19:-:6) =  CSelf8[説明文]
  | |■Load DB(User):  CSelf18[技能番号(-1 -2は特）] = UserDB[ "Battle Commands":CSelf19[コマンド番号]:"Effect on Selection" ] (6:-:2) 
- | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Item ID" ] (19:-:1) =  CSelf18[技能番号(-1 -2は特）]
+ | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Item Code" ] (19:-:1) =  CSelf18[技能番号(-1 -2は特）]
  | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Quantity Left/Point Cost" ] (19:-:3) =  -1
  | |▼ 選択可能かどうか判定
  | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1:Yes]" ] (19:-:2) =  1

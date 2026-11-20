@@ -207,7 +207,7 @@ WoditorEvCOMMAND_START
 [498][0,0]<0>()()
 [179][1,0]<0>(1)()
 [103][0,1]<1>()("使用後の効果、必要ならターゲット指定")
-[250][5,4]<1>(18,8,0,200704,1600022)("","Base System Variables","Universal Window Return ID","")
+[250][5,4]<1>(18,8,0,200704,1600022)("","Base System Variables","Universal Window Return Code","")
 [111][7,0]<1>(2,1600022,-100,2,1600022,0,1)()
 [401][1,0]<1>(1)()
 [103][0,1]<2>()("キャンセル時は終了")
@@ -352,7 +352,7 @@ WoditorEvCOMMAND_END
 ◇Loop End Point◇◇
 ■Repeat Loop [ 1 ] Times
  |▼ 使用後の効果、必要ならターゲット指定
- |■Load DB(Var):  CSelf22[実行コード] = VarDB[ "Base System Variables":"Universal Window Return ID":0 ] (18:8:Number) 
+ |■Load DB(Var):  CSelf22[実行コード] = VarDB[ "Base System Variables":"Universal Window Return Code":0 ] (18:8:Number) 
  |■Condition (Number):   [1] CSelf22[実行コード] ==  -100  /  [2] CSelf22[実行コード] >=  0  
  |-◇Condition:  [1]  [ CSelf22[実行コード] == -100   ] Case↓
  | |▼ キャンセル時は終了

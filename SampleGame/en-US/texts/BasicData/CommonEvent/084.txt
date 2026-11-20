@@ -293,7 +293,7 @@ WoditorEvCOMMAND_START
 [111][7,0]<3>(2,1600019,0,2,1600019,1,2)()
 [401][1,0]<3>(1)()
 [103][0,1]<4>()("Buy process")
-[250][5,4]<4>(19,1600016,1,331776,1600020)("","Universal Window Items","","Item ID")
+[250][5,4]<4>(19,1600016,1,331776,1600020)("","Universal Window Items","","Item Code")
 [250][5,4]<4>(19,1600016,3,331776,1600022)("","Universal Window Items","","Quantity Left/Point Cost")
 [121][4,0]<4>(1600022,-1,0,768)()
 [111][4,0]<4>(1,1600020,10000,1)()
@@ -348,7 +348,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
 [103][0,1]<4>()("Sell process")
-[250][5,4]<4>(19,1600016,1,331776,1600020)("","Universal Window Items","","Item ID")
+[250][5,4]<4>(19,1600016,1,331776,1600020)("","Universal Window Items","","Item Code")
 [250][5,4]<4>(19,1600016,3,331776,1600022)("","Universal Window Items","","Quantity Left/Point Cost")
 [111][4,0]<4>(1,1600020,10000,1)()
 [401][1,0]<4>(1)()
@@ -522,7 +522,7 @@ WoditorEvCOMMAND_END
  |■Condition (Number):   [1] CSelf13 ==  -200  
  |-◇Condition:  [1]  [ CSelf13 == -200   ] Case↓
  | |▼ If only moving, get the content at the current cursor position
- | |■Load DB(Var):  CSelf15[Cursor Position Item Code] = VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) 
+ | |■Load DB(Var):  CSelf15[Cursor Position Item Code] = VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item Code:Number) 
  | |■Load DB(Var):  CSelf16[Last Cursor Position] = VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) 
  | |▼ Update the display based on the stored content
  | |■Call Event [Name]: ["X[Map]┣ Draw Shop"] <CommonEv 85>  / 1:Display B (Instant Display + Partial Update) / CSelf19[Mode (0:Buy/1:Sell)] / CSelf16[Last Cursor Position]
@@ -548,12 +548,12 @@ WoditorEvCOMMAND_END
  | | |■
  | |-◇Condition:  [3]  [ CSelf13 >= 0   ] Case↓
  | | |▼ When an item is bought or sold
- | | |■Load DB(Var):  CSelf15[Cursor Position Item Code] = VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) 
+ | | |■Load DB(Var):  CSelf15[Cursor Position Item Code] = VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item Code:Number) 
  | | |■Load DB(Var):  CSelf16[Last Cursor Position] = VarDB[ "Base System Variables":61:0 ] (18:[Temp] Universal Window Last Cursor Pos:Number) 
  | | |■Condition (Number):   [1] CSelf19[Mode (0:Buy/1:Sell)] ==  0  /  [2] CSelf19[Mode (0:Buy/1:Sell)] ==  1  
  | | |-◇Condition:  [1]  [ CSelf19[Mode (0:Buy/1:Sell)] == 0   ] Case↓
  | | | |▼ Buy process
- | | | |■Load DB(Var):  CSelf20[Target Item Code] = VarDB[ "Universal Window Items":CSelf16[Last Cursor Position]:"Item ID" ] (19:-:1) 
+ | | | |■Load DB(Var):  CSelf20[Target Item Code] = VarDB[ "Universal Window Items":CSelf16[Last Cursor Position]:"Item Code" ] (19:-:1) 
  | | | |■Load DB(Var):  CSelf22[Amount] = VarDB[ "Universal Window Items":CSelf16[Last Cursor Position]:"Quantity Left/Point Cost" ] (19:-:3) 
  | | | |■Set Variable: CSelf22[Amount] *= -1 + 0 
  | | | |■Condition (Number):   [1] CSelf20[Target Item Code] >=  10000  
@@ -608,7 +608,7 @@ WoditorEvCOMMAND_END
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf19[Mode (0:Buy/1:Sell)] == 1   ] Case↓
  | | | |▼ Sell process
- | | | |■Load DB(Var):  CSelf20[Target Item Code] = VarDB[ "Universal Window Items":CSelf16[Last Cursor Position]:"Item ID" ] (19:-:1) 
+ | | | |■Load DB(Var):  CSelf20[Target Item Code] = VarDB[ "Universal Window Items":CSelf16[Last Cursor Position]:"Item Code" ] (19:-:1) 
  | | | |■Load DB(Var):  CSelf22[Amount] = VarDB[ "Universal Window Items":CSelf16[Last Cursor Position]:"Quantity Left/Point Cost" ] (19:-:3) 
  | | | |■Condition (Number):   [1] CSelf20[Target Item Code] >=  10000  
  | | | |-◇Condition:  [1]  [ CSelf20[Target Item Code] >= 10000   ] Case↓

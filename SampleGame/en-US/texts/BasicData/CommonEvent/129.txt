@@ -193,7 +193,7 @@ WoditorEvCOMMAND_START
 [300][6,4]<0>(0,28721,0,0,0,0)("X[Map]Display Mini Window","Who will use","\cself[9]?","")
 [300][3,1]<0>(0,1,1600099)("X[Map]Select Character Box")
 [300][6,4]<0>(0,28721,-1,1600005,1600005,1600005)("X[Map]Display Mini Window","","","")
-[250][5,4]<0>(18,2,0,462848,1600020)("","Base System Variables","Selected ID","Number")
+[250][5,4]<0>(18,2,0,462848,1600020)("","Base System Variables","Selected Code","Number")
 [121][4,0]<0>(1600029,0,0,0)()
 [111][4,0]<0>(1,1600020,-1,2)()
 [401][1,0]<0>(1)()
@@ -305,7 +305,7 @@ WoditorEvCOMMAND_END
 ■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / 0:表示 / Who will use / \cself[9]? / 
 ■Call Event [Name]: ["X[Map]Select Character Box"] <CommonEv 108>  / CSelf99[キャラ初期選択位置]
 ■Call Event [Name]: ["X[Map]Display Mini Window"] <CommonEv 100>  / -1:削除 /  /  / 
-■Load DB(Var):  CSelf20[選択キャラ位置（0～5）] = VarDB[ "Base System Variables":"Selected ID":"Number" ] (18:2:0) 
+■Load DB(Var):  CSelf20[選択キャラ位置（0～5）] = VarDB[ "Base System Variables":"Selected Code":"Number" ] (18:2:0) 
 ■Set Variable: CSelf29[キャラ再表示する？] = 0 + 0 
 ■Condition (Number):   [1] CSelf20[選択キャラ位置（0～5）] ==  -1  
 -◇Condition:  [1]  [ CSelf20[選択キャラ位置（0～5）] == -1   ] Case↓

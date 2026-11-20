@@ -394,12 +394,12 @@ WoditorEvCOMMAND_END
  |-◇Condition:  [1]  [ CSelf1[発動技能] == -2   ] Case↓
  | |▼ アイテム
  | |■Call Event [Name]: CSelf19[対象者] = ["X[Bat]Select Item"] <CommonEv 158>  / CSelf0[発動戦闘ｽﾛｯﾄ]
- | |■Load DB(Var):  CSelf22[実行コード] = VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) 
+ | |■Load DB(Var):  CSelf22[実行コード] = VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item Code:Number) 
  | |■
  |-◇Condition:  [2]  [ CSelf1[発動技能] == -1   ] Case↓
  | |▼ 特殊技能一覧
  | |■Call Event [Name]: CSelf19[対象者] = ["X[Bat]Select Skill"] <CommonEv 159>  / CSelf0[発動戦闘ｽﾛｯﾄ] / -1 / 0:技能選択画面から[A欄不要]
- | |■Load DB(Var):  CSelf22[実行コード] = VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item ID:Number) 
+ | |■Load DB(Var):  CSelf22[実行コード] = VarDB[ "Base System Variables":18:0 ] (18:Universal Window Selected Item Code:Number) 
  | |■Condition (Number):   [1] CSelf22[実行コード] >=  0  
  | |-◇Condition:  [1]  [ CSelf22[実行コード] >= 0   ] Case↓
  | | |■Load DB(User):  CSelf20[先制フラグ] = UserDB[ "Skills":CSelf22[実行コード]:"Priority Option" ] (0:-:16) 

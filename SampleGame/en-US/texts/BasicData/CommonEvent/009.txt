@@ -283,7 +283,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<4>()()
 [103][0,1]<4>()("Recalculate stats")
 [300][3,1]<4>(0,1,1600010)("X[Bat]CalcTempStats <Initialize>")
-[300][4,1]<4>(0,2,1600010,-1)("X[Bat]CalcTempStats <Equipments>")
+[300][4,1]<4>(0,2,1600010,-1)("X[Bat]CalcTempStats <Equipment>")
 [300][4,1]<4>(0,2,1600010,0)("X[Bat]CalcTempStats <StatusEffects>")
 [103][0,1]<4>()("Redraw")
 [300][5,1]<4>(0,3,3,1600010,1600010)("X[Bat]Ally Box: Draw One")
@@ -322,7 +322,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<4>()()
 [103][0,1]<4>()("Recalculate stats")
 [300][3,1]<4>(0,1,1600010)("X[Bat]CalcTempStats <Initialize>")
-[300][4,1]<4>(0,2,1600010,-1)("X[Bat]CalcTempStats <Equipments>")
+[300][4,1]<4>(0,2,1600010,-1)("X[Bat]CalcTempStats <Equipment>")
 [300][4,1]<4>(0,2,1600010,0)("X[Bat]CalcTempStats <StatusEffects>")
 [103][0,1]<4>()("Redraw")
 [300][5,1]<4>(0,3,3,1600010,1600010)("X[Bat]Ally Box: Draw One")
@@ -443,7 +443,7 @@ WoditorEvCOMMAND_END
  | | | |◇End◇
  | | | |▼ Recalculate stats
  | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf10[Temp A]
- | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf10[Temp A] / -1:全武器を総計
+ | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipment>"] <CommonEv 147>  / CSelf10[Temp A] / -1:全武器を総計
  | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf10[Temp A] / 0:パラメータ補正＋状態名計算
  | | | |▼ Redraw
  | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 3:表示[瞬間表示] / CSelf10[Temp A] / CSelf10[Temp A]
@@ -482,7 +482,7 @@ WoditorEvCOMMAND_END
  | | | |◇End◇
  | | | |▼ Recalculate stats
  | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf10[Temp A]
- | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf10[Temp A] / -1:全武器を総計
+ | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipment>"] <CommonEv 147>  / CSelf10[Temp A] / -1:全武器を総計
  | | | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf10[Temp A] / 0:パラメータ補正＋状態名計算
  | | | |▼ Redraw
  | | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / 3:表示[瞬間表示] / CSelf10[Temp A] / CSelf10[Temp A]

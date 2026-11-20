@@ -242,7 +242,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<3>()("Added character, so initialize")
 [300][5,1]<3>(0,3,1600013,1600012,0)("X[Bat]Copy Allies DB to Battle DB")
 [300][3,1]<3>(0,1,1600013)("X[Bat]CalcTempStats <Initialize>")
-[300][4,1]<3>(0,2,1600013,-1)("X[Bat]CalcTempStats <Equipments>")
+[300][4,1]<3>(0,2,1600013,-1)("X[Bat]CalcTempStats <Equipment>")
 [300][4,1]<3>(0,2,1600013,0)("X[Bat]CalcTempStats <StatusEffects>")
 [300][3,1]<3>(0,1,1600013)("X[Bat]Ally Box: Calc Position")
 [300][5,1]<3>(0,3,-1,1600013,1600013)("X[Bat]Ally Box: Draw One")
@@ -377,7 +377,7 @@ WoditorEvCOMMAND_END
  | | |▼ Added character, so initialize
  | | |■Call Event [Name]: ["X[Bat]Copy Allies DB to Battle DB"] <CommonEv 143>  / CSelf13[Temp B] / CSelf12[Ally ID #2] / 0:全て移動DBからコピー
  | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf13[Temp B]
- | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf13[Temp B] / -1:全武器を総計
+ | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipment>"] <CommonEv 147>  / CSelf13[Temp B] / -1:全武器を総計
  | | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf13[Temp B] / 0:パラメータ補正＋状態名計算
  | | |■Call Event [Name]: ["X[Bat]Ally Box: Calc Position"] <CommonEv 174>  / CSelf13[Temp B]
  | | |■Call Event [Name]: ["X[Bat]Ally Box: Draw One"] <CommonEv 178>  / -1:消去 / CSelf13[Temp B] / CSelf13[Temp B]

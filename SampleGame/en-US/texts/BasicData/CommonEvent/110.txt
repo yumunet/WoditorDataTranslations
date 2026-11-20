@@ -190,7 +190,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<2>(2,1600030,0,332288,1600009)("","Items","","Item Name")
 [121][4,0]<2>(1600011,1600030,10000,0)()
 [250][5,4]<2>(19,1600032,0,327680,1600009)("","Universal Window Items","","Item Text")
-[250][5,4]<2>(19,1600032,1,327680,1600011)("","Universal Window Items","","Item ID")
+[250][5,4]<2>(19,1600032,1,327680,1600011)("","Universal Window Items","","Item Code")
 [250][5,4]<2>(19,1600032,3,327680,1600010)("","Universal Window Items","","Quantity Left/Point Cost")
 [250][4,4]<2>(19,1600032,4,327682)("x ","Universal Window Items","","Number Prefix")
 [250][5,4]<2>(2,1600030,1,332288,1600009)("","Items","","Description [Up to 2 Lines]")
@@ -264,7 +264,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<2>(3,1600030,0,332288,1600009)("","Weapons","","Weapon Name")
 [121][4,0]<2>(1600011,1600030,20000,0)()
 [250][5,4]<2>(19,1600032,0,327680,1600009)("","Universal Window Items","","Item Text")
-[250][5,4]<2>(19,1600032,1,327680,1600011)("","Universal Window Items","","Item ID")
+[250][5,4]<2>(19,1600032,1,327680,1600011)("","Universal Window Items","","Item Code")
 [250][5,4]<2>(19,1600032,3,327680,1600010)("","Universal Window Items","","Quantity Left/Point Cost")
 [250][4,4]<2>(19,1600032,4,327682)("x ","Universal Window Items","","Number Prefix")
 [103][0,1]<2>()("説明文")
@@ -324,7 +324,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<2>(4,1600030,0,332288,1600009)("","Armor","","Armor Name")
 [121][4,0]<2>(1600011,1600030,30000,0)()
 [250][5,4]<2>(19,1600032,0,327680,1600009)("","Universal Window Items","","Item Text")
-[250][5,4]<2>(19,1600032,1,327680,1600011)("","Universal Window Items","","Item ID")
+[250][5,4]<2>(19,1600032,1,327680,1600011)("","Universal Window Items","","Item Code")
 [250][5,4]<2>(19,1600032,3,327680,1600010)("","Universal Window Items","","Quantity Left/Point Cost")
 [250][4,4]<2>(19,1600032,4,327682)("x ","Universal Window Items","","Number Prefix")
 [103][0,1]<2>()("説明文")
@@ -405,7 +405,7 @@ WoditorEvCOMMAND_END
  | |■Load DB(User):  CSelf9[一時項目名] = UserDB[ "Items":CSelf30[処理対象]:"Item Name" ] (2:-:0) 
  | |■Set Variable: CSelf11[一時コード番号] = CSelf30[処理対象] + 10000 
  | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Item Text" ] (19:-:0) =  CSelf9[一時項目名]
- | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Item ID" ] (19:-:1) =  CSelf11[一時コード番号]
+ | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Item Code" ] (19:-:1) =  CSelf11[一時コード番号]
  | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Quantity Left/Point Cost" ] (19:-:3) =  CSelf10[一時変数A]
  | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Number Prefix" ] (19:-:4) =  x 
  | |■Load DB(User):  CSelf9[一時項目名] = UserDB[ "Items":CSelf30[処理対象]:"Description [Up to 2 Lines]" ] (2:-:1) 
@@ -479,7 +479,7 @@ WoditorEvCOMMAND_END
  | |■Load DB(User):  CSelf9[一時項目名] = UserDB[ "Weapons":CSelf30[処理対象]:"Weapon Name" ] (3:-:0) 
  | |■Set Variable: CSelf11[一時コード番号] = CSelf30[処理対象] + 20000 
  | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Item Text" ] (19:-:0) =  CSelf9[一時項目名]
- | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Item ID" ] (19:-:1) =  CSelf11[一時コード番号]
+ | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Item Code" ] (19:-:1) =  CSelf11[一時コード番号]
  | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Quantity Left/Point Cost" ] (19:-:3) =  CSelf10[一時変数A]
  | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Number Prefix" ] (19:-:4) =  x 
  | |▼ 説明文
@@ -539,7 +539,7 @@ WoditorEvCOMMAND_END
  | |■Load DB(User):  CSelf9[一時項目名] = UserDB[ "Armor":CSelf30[処理対象]:"Armor Name" ] (4:-:0) 
  | |■Set Variable: CSelf11[一時コード番号] = CSelf30[処理対象] + 30000 
  | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Item Text" ] (19:-:0) =  CSelf9[一時項目名]
- | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Item ID" ] (19:-:1) =  CSelf11[一時コード番号]
+ | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Item Code" ] (19:-:1) =  CSelf11[一時コード番号]
  | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Quantity Left/Point Cost" ] (19:-:3) =  CSelf10[一時変数A]
  | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Number Prefix" ] (19:-:4) =  x 
  | |▼ 説明文

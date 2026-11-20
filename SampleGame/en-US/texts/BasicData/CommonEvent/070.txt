@@ -879,7 +879,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<0>(1)()
 [103][0,1]<1>()("Recalculate Temp Values")
 [300][3,1]<1>(0,1,1600000)("X[Map]CalcTempStats <Initialize>")
-[300][3,1]<1>(0,1,1600000)("X[Map]CalcTempStats <Equipments>")
+[300][3,1]<1>(0,1,1600000)("X[Map]CalcTempStats <Equipment>")
 [300][3,1]<1>(0,1,1600000)("X[Map]CalcTempStats <StatusEffects>")
 [172][0,0]<1>()()
 [0][0,0]<1>()()
@@ -1581,7 +1581,7 @@ WoditorEvCOMMAND_END
 -◇Condition:  [1]  [ CSelf1[Target Parameter] == 100   ] Case↓
  |▼ Recalculate Temp Values
  |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf0[Ally ID]
- |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf0[Ally ID]
+ |■Call Event [Name]: ["X[Map]CalcTempStats <Equipment>"] <CommonEv 123>  / CSelf0[Ally ID]
  |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf0[Ally ID]
  |■Exit Event
  |■

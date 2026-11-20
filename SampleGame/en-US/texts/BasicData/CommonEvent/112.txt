@@ -361,8 +361,8 @@ WoditorEvCOMMAND_START
 [250][5,4]<4>(19,1600032,0,327680,1600009)("","Universal Window Items","","Item Text")
 [103][0,1]<4>()("武器コードは20000～")
 [121][4,0]<4>(1600011,1600030,0,0)()
-[250][5,4]<4>(19,1600032,1,327680,1600011)("","Universal Window Items","","Item ID")
-[250][5,4]<4>(19,1600032,0,327696,20000)("","Universal Window Items","","Item ID")
+[250][5,4]<4>(19,1600032,1,327680,1600011)("","Universal Window Items","","Item Code")
+[250][5,4]<4>(19,1600032,0,327696,20000)("","Universal Window Items","","Item Code")
 [103][0,1]<4>()("説明文")
 [250][5,4]<4>(3,1600030,0,332288,1600008)("","Weapons","","Description [Up to 2 Lines]")
 [250][5,4]<4>(19,1600032,0,327680,1600008)("","Universal Window Items","","Description")
@@ -373,8 +373,8 @@ WoditorEvCOMMAND_START
 [250][5,4]<4>(19,1600032,0,327680,1600009)("","Universal Window Items","","Item Text")
 [103][0,1]<4>()("防具コードは20000～")
 [121][4,0]<4>(1600011,1600030,0,0)()
-[250][5,4]<4>(19,1600032,1,327680,1600011)("","Universal Window Items","","Item ID")
-[250][5,4]<4>(19,1600032,0,327696,30000)("","Universal Window Items","","Item ID")
+[250][5,4]<4>(19,1600032,1,327680,1600011)("","Universal Window Items","","Item Code")
+[250][5,4]<4>(19,1600032,0,327696,30000)("","Universal Window Items","","Item Code")
 [103][0,1]<4>()("説明文")
 [250][5,4]<4>(4,1600030,1,332288,1600008)("","Armor","","Description [Up to 2 Lines]")
 [250][5,4]<4>(19,1600032,0,327680,1600008)("","Universal Window Items","","Description")
@@ -396,7 +396,7 @@ WoditorEvCOMMAND_START
 [250][4,4]<0>(19,1600032,0,327682)("Remove equipment.","Universal Window Items","","Description")
 [250][5,4]<0>(19,1600032,0,327680,1)("","Universal Window Items","","Selectable? [1:Yes]")
 [103][0,1]<0>()("装備解除はコード「-2」")
-[250][5,4]<0>(19,1600032,0,327680,-2)("","Universal Window Items","","Item ID")
+[250][5,4]<0>(19,1600032,0,327680,-2)("","Universal Window Items","","Item Code")
 [121][4,0]<0>(1600032,1,0,256)()
 [103][0,1]<0>()("万能ウィンドウ個数に登録")
 [250][5,4]<0>(18,17,0,196608,1600032)("","Base System Variables","Universal Window Item Count","")
@@ -578,8 +578,8 @@ WoditorEvCOMMAND_END
  | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Item Text" ] (19:-:0) =  CSelf9[一時装備名]
  | | | |▼ 武器コードは20000～
  | | | |■Set Variable: CSelf11[一時TMP] = CSelf30[DB読み取り位置] + 0 
- | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Item ID" ] (19:-:1) =  CSelf11[一時TMP]
- | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Item ID" ] (19:-:1) +=  20000
+ | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Item Code" ] (19:-:1) =  CSelf11[一時TMP]
+ | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Item Code" ] (19:-:1) +=  20000
  | | | |▼ 説明文
  | | | |■Load DB(User):  CSelf8[一時説明文] = UserDB[ "Weapons":CSelf30[DB読み取り位置]:"Description [Up to 2 Lines]" ] (3:-:1) 
  | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Description" ] (19:-:6) =  CSelf8[一時説明文]
@@ -590,8 +590,8 @@ WoditorEvCOMMAND_END
  | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Item Text" ] (19:-:0) =  CSelf9[一時装備名]
  | | | |▼ 防具コードは20000～
  | | | |■Set Variable: CSelf11[一時TMP] = CSelf30[DB読み取り位置] + 0 
- | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Item ID" ] (19:-:1) =  CSelf11[一時TMP]
- | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Item ID" ] (19:-:1) +=  30000
+ | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Item Code" ] (19:-:1) =  CSelf11[一時TMP]
+ | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Item Code" ] (19:-:1) +=  30000
  | | | |▼ 説明文
  | | | |■Load DB(User):  CSelf8[一時説明文] = UserDB[ "Armor":CSelf30[DB読み取り位置]:"Description [Up to 2 Lines]" ] (4:-:1) 
  | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Description" ] (19:-:6) =  CSelf8[一時説明文]
@@ -613,7 +613,7 @@ WoditorEvCOMMAND_END
 ■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Description" ] (19:-:6) =  Remove equipment.
 ■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Selectable? [1:Yes]" ] (19:-:2) =  1
 ▼ 装備解除はコード「-2」
-■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Item ID" ] (19:-:1) =  -2
+■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能DB登録位置]:"Item Code" ] (19:-:1) =  -2
 ■Set Variable: CSelf32[万能DB登録位置] += 1 + 0 
 ▼ 万能ウィンドウ個数に登録
 ■Write to DB(Var): VarDB[ "Base System Variables":"Universal Window Item Count":0 ] (18:17:Number) =  CSelf32[万能DB登録位置]

@@ -188,8 +188,8 @@ COMMAND_NUM=35
 WoditorEvCOMMAND_START
 [121][4,0]<0>(1600001,1,0,512)()
 [121][4,0]<0>(1600010,-1,0,0)()
-[103][0,1]<0>()("Get equipment ID (Weapons are 20000+, Armor is 30000+)")
-[300][5,1]<0>(0,16777218,1600000,1600001,1600010)("X[Map]Get Equipment ID")
+[103][0,1]<0>()("Get equipment code (Weapons are 20000+, Armor is 30000+)")
+[300][5,1]<0>(0,16777218,1600000,1600001,1600010)("X[Map]Get Equipment Code")
 [111][4,0]<0>(1,1600010,20000,1)()
 [401][1,0]<0>(1)()
 [111][7,0]<1>(2,1600010,29999,3,1600010,39999,3)()
@@ -226,8 +226,8 @@ WoditorEvCOMMAND_END
 [COMMAND_TEXT_START]
 ■Set Variable: CSelf1[Slot to Get] -= 1 + 0 
 ■Set Variable: CSelf10[Equipment ID] = -1 + 0 
-▼ Get equipment ID (Weapons are 20000+, Armor is 30000+)
-■Call Event [Name]: CSelf10[Equipment ID] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf0[Target Ally] / CSelf1[Slot to Get]
+▼ Get equipment code (Weapons are 20000+, Armor is 30000+)
+■Call Event [Name]: CSelf10[Equipment ID] = ["X[Map]Get Equipment Code"] <CommonEv 106>  / CSelf0[Target Ally] / CSelf1[Slot to Get]
 ■Condition (Number):   [1] CSelf10[Equipment ID] >=  20000  
 -◇Condition:  [1]  [ CSelf10[Equipment ID] >= 20000   ] Case↓
  |■Condition (Number):   [1] CSelf10[Equipment ID] <=  29999  /  [2] CSelf10[Equipment ID] <=  39999  

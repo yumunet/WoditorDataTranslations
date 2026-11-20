@@ -184,7 +184,7 @@ WoditorEvCOMMAND_START
 [300][5,1]<3>(0,3,1600010,1600011,1)("X[Bat]Copy Allies DB to Battle DB")
 [103][0,1]<3>()("パラメータ再計算")
 [300][3,1]<3>(0,1,1600010)("X[Bat]CalcTempStats <Initialize>")
-[300][4,1]<3>(0,2,1600010,-1)("X[Bat]CalcTempStats <Equipments>")
+[300][4,1]<3>(0,2,1600010,-1)("X[Bat]CalcTempStats <Equipment>")
 [300][4,1]<3>(0,2,1600010,0)("X[Bat]CalcTempStats <StatusEffects>")
 [300][6,1]<3>(0,4,1600010,-1,2,0)("X[Bat]Add/Remove State")
 [103][0,1]<3>()("描画しなおし")
@@ -224,7 +224,7 @@ WoditorEvCOMMAND_END
  | | |■Call Event [Name]: ["X[Bat]Copy Allies DB to Battle DB"] <CommonEv 143>  / CSelf10[一時変数A] / CSelf11[一時変数B] / 1:HP・SP・状態を維持してコピー
  | | |▼ パラメータ再計算
  | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf10[一時変数A]
- | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf10[一時変数A] / -1:全武器を総計
+ | | |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipment>"] <CommonEv 147>  / CSelf10[一時変数A] / -1:全武器を総計
  | | |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf10[一時変数A] / 0:パラメータ補正＋状態名計算
  | | |■Call Event [Name]: ["X[Bat]Add/Remove State"] <CommonEv 137>  / CSelf10[一時変数A] / -1:全て消去（強制） / 2:更新 / 0:メッセージなし
  | | |▼ 描画しなおし

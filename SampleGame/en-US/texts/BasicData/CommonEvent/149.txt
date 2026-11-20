@@ -205,7 +205,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<0>(0,1600001,7,327680,1600041)("","Allies","","SP")
 [103][0,1]<0>()("対象主人公DBの状態周りを更新")
 [300][3,1]<0>(0,1,1600001)("X[Map]CalcTempStats <Initialize>")
-[300][3,1]<0>(0,1,1600001)("X[Map]CalcTempStats <Equipments>")
+[300][3,1]<0>(0,1,1600001)("X[Map]CalcTempStats <Equipment>")
 [300][3,1]<0>(0,1,1600001)("X[Map]CalcTempStats <StatusEffects>")
 [300][5,1]<0>(0,3,1600001,-1,2)("X[Map]Add/Remove State")
 [0][0,0]<0>()()
@@ -254,7 +254,7 @@ WoditorEvCOMMAND_END
 ■Write to DB(Var): VarDB[ "Allies":CSelf1[格納主人公ID]:"SP" ] (0:-:8) =  CSelf41[SP]
 ▼ 対象主人公DBの状態周りを更新
 ■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf1[格納主人公ID]
-■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf1[格納主人公ID]
+■Call Event [Name]: ["X[Map]CalcTempStats <Equipment>"] <CommonEv 123>  / CSelf1[格納主人公ID]
 ■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf1[格納主人公ID]
 ■Call Event [Name]: ["X[Map]Add/Remove State"] <CommonEv 75>  / CSelf1[格納主人公ID] / -1:Remove All (Force) / 2:Update
 ■

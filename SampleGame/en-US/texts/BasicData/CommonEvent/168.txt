@@ -303,7 +303,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<1>()()
 [103][0,1]<1>()("更新　＆　再描画処理")
 [300][3,1]<1>(0,1,1600000)("X[Bat]CalcTempStats <Initialize>")
-[300][4,1]<1>(0,2,1600000,-1)("X[Bat]CalcTempStats <Equipments>")
+[300][4,1]<1>(0,2,1600000,-1)("X[Bat]CalcTempStats <Equipment>")
 [300][4,1]<1>(0,2,1600000,0)("X[Bat]CalcTempStats <StatusEffects>")
 [300][3,1]<1>(0,1,1600000)("X[Bat]Enemy: Calc Position")
 [300][4,1]<1>(0,2,1,1600000)("X[Bat]Enemy: Draw One")
@@ -449,7 +449,7 @@ WoditorEvCOMMAND_END
  |◇End◇
  |▼ 更新　＆　再描画処理
  |■Call Event [Name]: ["X[Bat]CalcTempStats <Initialize>"] <CommonEv 146>  / CSelf0[対象ｽﾛｯﾄ]
- |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf0[対象ｽﾛｯﾄ] / -1:全武器を総計
+ |■Call Event [Name]: ["X[Bat]CalcTempStats <Equipment>"] <CommonEv 147>  / CSelf0[対象ｽﾛｯﾄ] / -1:全武器を総計
  |■Call Event [Name]: ["X[Bat]CalcTempStats <StatusEffects>"] <CommonEv 148>  / CSelf0[対象ｽﾛｯﾄ] / 0:パラメータ補正＋状態名計算
  |■Call Event [Name]: ["X[Bat]Enemy: Calc Position"] <CommonEv 175>  / CSelf0[対象ｽﾛｯﾄ]
  |■Call Event [Name]: ["X[Bat]Enemy: Draw One"] <CommonEv 179>  / 1:更新[瞬間表示] / CSelf0[対象ｽﾛｯﾄ]

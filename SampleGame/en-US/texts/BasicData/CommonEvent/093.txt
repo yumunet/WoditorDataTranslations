@@ -356,7 +356,7 @@ WoditorEvCOMMAND_START
 [300][6,1]<3>(0,4,0,-1,2,1)("X[Com]Draw Universal Window")
 [103][0,1]<3>()("パラメータを計算")
 [300][3,1]<3>(0,1,1600001)("X[Map]CalcTempStats <Initialize>")
-[300][3,1]<3>(0,1,1600001)("X[Map]CalcTempStats <Equipments>")
+[300][3,1]<3>(0,1,1600001)("X[Map]CalcTempStats <Equipment>")
 [300][3,1]<3>(0,1,1600001)("X[Map]CalcTempStats <StatusEffects>")
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
@@ -687,7 +687,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<5>(1600042,1600035,0,0)()
 [121][4,0]<5>(1600042,1600039,1600043,8448)()
 [103][0,1]<5>()("装備名を取得する")
-[300][5,1]<5>(0,16777218,1600001,1600043,1600010)("X[Map]Get Equipment ID")
+[300][5,1]<5>(0,16777218,1600001,1600043,1600010)("X[Map]Get Equipment Code")
 [121][4,0]<5>(1600059,0,0,0)()
 [111][10,0]<5>(3,1600010,30000,1,1600010,20000,1,1600010,20000,4)()
 [401][1,0]<5>(1)()
@@ -1140,7 +1140,7 @@ WoditorEvCOMMAND_END
  | | |■Call Event [Name]: ["X[Com]Draw Universal Window"] <CommonEv 64>  / 0:Display / -1 / 2:Display at Bottom, Full Width / 1:Expand from Top-Left
  | | |▼ パラメータを計算
  | | |■Call Event [Name]: ["X[Map]CalcTempStats <Initialize>"] <CommonEv 122>  / CSelf1[[1]主人公ID]
- | | |■Call Event [Name]: ["X[Map]CalcTempStats <Equipments>"] <CommonEv 123>  / CSelf1[[1]主人公ID]
+ | | |■Call Event [Name]: ["X[Map]CalcTempStats <Equipment>"] <CommonEv 123>  / CSelf1[[1]主人公ID]
  | | |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf1[[1]主人公ID]
  | | |■
  | |-◇Condition:  [2]  [ CSelf0[処理モード] == 1   ] Case↓
@@ -1471,7 +1471,7 @@ WoditorEvCOMMAND_END
  | | | | |■Set Variable: CSelf42[一時項目表示Y] = CSelf35[[保持]カーソル基本Y] + 0 
  | | | | |■Set Variable: CSelf42[一時項目表示Y] += CSelf39[[保持]カーソル移動縦幅] * CSelf43[処理中個数] 
  | | | | |▼ 装備名を取得する
- | | | | |■Call Event [Name]: CSelf10[一時変数A] = ["X[Map]Get Equipment ID"] <CommonEv 106>  / CSelf1[[1]主人公ID] / CSelf43[処理中個数]
+ | | | | |■Call Event [Name]: CSelf10[一時変数A] = ["X[Map]Get Equipment Code"] <CommonEv 106>  / CSelf1[[1]主人公ID] / CSelf43[処理中個数]
  | | | | |■Set Variable: CSelf59[装備空欄フラグ] = 0 + 0 
  | | | | |■Condition (Number):   [1] CSelf10[一時変数A] >=  30000  /  [2] CSelf10[一時変数A] >=  20000  /  [3] CSelf10[一時変数A] <  20000  
  | | | | |-◇Condition:  [1]  [ CSelf10[一時変数A] >= 30000   ] Case↓

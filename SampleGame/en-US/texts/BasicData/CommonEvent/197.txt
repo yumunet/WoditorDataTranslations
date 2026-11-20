@@ -326,7 +326,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<3>(1600029,0,0,0)()
 [121][4,0]<3>(1600022,0,0,0)()
 [179][1,0]<3>(8)()
-[300][5,1]<4>(0,16777218,1600016,1600022,1600019)("X[Bat]CalcTempStats <Equipments>")
+[300][5,1]<4>(0,16777218,1600016,1600022,1600019)("X[Bat]CalcTempStats <Equipment>")
 [111][4,0]<4>(1,1600019,1,1)()
 [401][1,0]<4>(1)()
 [103][0,1]<5>()("もし該当の装備があればそれを最後とする")
@@ -564,7 +564,7 @@ WoditorEvCOMMAND_END
  | | |■Set Variable: CSelf29[最後の武器位置] = 0 + 0 
  | | |■Set Variable: CSelf22[武器位置] = 0 + 0 
  | | |■Repeat Loop [ 8 ] Times
- | | | |■Call Event [Name]: CSelf19[武器の有無] = ["X[Bat]CalcTempStats <Equipments>"] <CommonEv 147>  / CSelf16[発動スロット] / CSelf22[武器位置]
+ | | | |■Call Event [Name]: CSelf19[武器の有無] = ["X[Bat]CalcTempStats <Equipment>"] <CommonEv 147>  / CSelf16[発動スロット] / CSelf22[武器位置]
  | | | |■Condition (Number):   [1] CSelf19[武器の有無] >=  1  
  | | | |-◇Condition:  [1]  [ CSelf19[武器の有無] >= 1   ] Case↓
  | | | | |▼ もし該当の装備があればそれを最後とする
