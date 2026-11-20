@@ -321,13 +321,13 @@ WoditorEvCOMMAND_START
 [103][0,1]<3>()("武器の場合")
 [121][4,0]<3>(1600021,1600027,20000,16384)()
 [250][5,4]<3>(3,1600021,20,332288,1600030)("","Weapons","","┏ Change Battle Command")
-[250][5,4]<3>(3,1600021,21,332288,1600031)("","Weapons","","┗ Command to Change      ")
+[250][5,4]<3>(3,1600021,21,332288,1600031)("","Weapons","","┗ New Command                ")
 [0][0,0]<3>()()
 [401][1,0]<2>(2)()
 [103][0,1]<3>()("防具の場合")
 [121][4,0]<3>(1600021,1600027,30000,16384)()
 [250][5,4]<3>(4,1600021,20,332288,1600030)("","Armor","","┏ Change Battle Command")
-[250][5,4]<3>(4,1600021,21,332288,1600031)("","Armor","","┗ Command to Change      ")
+[250][5,4]<3>(4,1600021,21,332288,1600031)("","Armor","","┗ New Command                ")
 [179][1,0]<3>(1)()
 [103][0,1]<4>()("属性耐性の処理")
 [250][5,4]<4>(4,1600021,25,332288,1600080)("","Armor","","Element Resist/Weak A     ")
@@ -580,13 +580,13 @@ WoditorEvCOMMAND_END
  | | |▼ 武器の場合
  | | |■Set Variable: CSelf21[装備番号] = CSelf27[装備コード] % 20000 
  | | |■Load DB(User):  CSelf30[変更戦闘コマンド位置] = UserDB[ "Weapons":CSelf21[装備番号]:"┏ Change Battle Command" ] (3:-:20) 
- | | |■Load DB(User):  CSelf31[変更コマンド番号] = UserDB[ "Weapons":CSelf21[装備番号]:"┗ Command to Change      " ] (3:-:21) 
+ | | |■Load DB(User):  CSelf31[変更コマンド番号] = UserDB[ "Weapons":CSelf21[装備番号]:"┗ New Command                " ] (3:-:21) 
  | | |■
  | |-◇Condition:  [2]  [ CSelf27[装備コード] <= 39999   ] Case↓
  | | |▼ 防具の場合
  | | |■Set Variable: CSelf21[装備番号] = CSelf27[装備コード] % 30000 
  | | |■Load DB(User):  CSelf30[変更戦闘コマンド位置] = UserDB[ "Armor":CSelf21[装備番号]:"┏ Change Battle Command" ] (4:-:16) 
- | | |■Load DB(User):  CSelf31[変更コマンド番号] = UserDB[ "Armor":CSelf21[装備番号]:"┗ Command to Change      " ] (4:-:17) 
+ | | |■Load DB(User):  CSelf31[変更コマンド番号] = UserDB[ "Armor":CSelf21[装備番号]:"┗ New Command                " ] (4:-:17) 
  | | |■Repeat Loop [ 1 ] Times
  | | | |▼ 属性耐性の処理
  | | | |■Load DB(User):  CSelf80[属性１] = UserDB[ "Armor":CSelf21[装備番号]:"Element Resist/Weak A     " ] (4:-:25) 

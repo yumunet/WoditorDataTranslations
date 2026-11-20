@@ -400,8 +400,8 @@ WoditorEvCOMMAND_END
  |■Write to DB(Var): VarDB[ "Base System Variables":87:0 ] (18:[LvUp] Accuracy Increase:Number) =  0
  |■Write to DB(Var): VarDB[ "Base System Variables":88:0 ] (18:[LvUp] Evasion Increase:Number) =  0
  |■Write to DB(Var): VarDB[ "Base System Variables":89:0 ] (18:[LvUp] Critical Rate Increase:Number) =  0
- |■Write to DB(Var): VarDB[ "Base System Variables":90:0 ] (18:[LvUp] Learned Skills [String]:Number) =  0
- |■Write to DB(Var): VarDB[ "Base System Variables":90:1 ] (18:[LvUp] Learned Skills [String]:String) =  
+ |■Write to DB(Var): VarDB[ "Base System Variables":90:0 ] (18:[LvUp] Learned Skills (String):Number) =  0
+ |■Write to DB(Var): VarDB[ "Base System Variables":90:1 ] (18:[LvUp] Learned Skills (String):String) =  
  |■
 ◇End◇
 ▼ If there's no level change, end
@@ -558,10 +558,10 @@ WoditorEvCOMMAND_END
  | | | | |■Load DB(Var):  CSelf48[Skill to Learn] = VarDB[ "┣ Skill Learning Lv":CSelf0[Ally ID]:CSelf11[Temp B] ] (1:-:-) 
  | | | | |■Condition (Number):   [1] CSelf48[Skill to Learn] >=  0  
  | | | | |-◇Condition:  [1]  [ CSelf48[Skill to Learn] >= 0   ] Case↓
- | | | | | |■Write to DB(Var): VarDB[ "Base System Variables":90:0 ] (18:[LvUp] Learned Skills [String]:Number) +=  1
+ | | | | | |■Write to DB(Var): VarDB[ "Base System Variables":90:0 ] (18:[LvUp] Learned Skills (String):Number) +=  1
  | | | | | |▼ Add the string "Learned [skill name]!" here
  | | | | | |■Load DB(User):  CSelf9[Message Text] = UserDB[ "Skills":CSelf48[Skill to Learn]:"Skill Name" ] (0:-:0) 
- | | | | | |■Write to DB(Var): VarDB[ "Base System Variables":90:1 ] (18:[LvUp] Learned Skills [String]:String) +=  Learned \cself[9]!\n
+ | | | | | |■Write to DB(Var): VarDB[ "Base System Variables":90:1 ] (18:[LvUp] Learned Skills (String):String) +=  Learned \cself[9]!\n
  | | | | | |■ Checkpoint ■■■■■■■■■■■■■■■■■■■■■■■■
  | | | | | |■
  | | | | |◇End◇

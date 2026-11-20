@@ -213,7 +213,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<5>()()
 [499][0,0]<4>()()
 [103][0,1]<4>()("選択可能かどうか判定")
-[250][5,4]<4>(0,1600034,0,332288,1600012)("","Skills","","Usable When?")
+[250][5,4]<4>(0,1600034,0,332288,1600012)("","Skills","","Usable When")
 [111][4,0]<4>(1,1600012,0,1)()
 [401][1,0]<4>(1)()
 [111][4,0]<5>(1,1600012,1,3)()
@@ -347,7 +347,7 @@ WoditorEvCOMMAND_END
  | | | | |■
  | | | |◇End◇
  | | | |▼ 選択可能かどうか判定
- | | | |■Load DB(User):  CSelf12[一時変数B] = UserDB[ "Skills":CSelf34[技能コード]:"Usable When?" ] (0:-:6) 
+ | | | |■Load DB(User):  CSelf12[一時変数B] = UserDB[ "Skills":CSelf34[技能コード]:"Usable When" ] (0:-:6) 
  | | | |■Condition (Number):   [1] CSelf12[一時変数B] >=  0  
  | | | |-◇Condition:  [1]  [ CSelf12[一時変数B] >= 0   ] Case↓
  | | | | |■Condition (Number):   [1] CSelf12[一時変数B] <=  1  

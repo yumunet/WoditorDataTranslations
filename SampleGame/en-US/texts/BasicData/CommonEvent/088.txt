@@ -538,8 +538,8 @@ WoditorEvCOMMAND_END
 ■Load DB(User):  CSelf9[Cursor Image File] = UserDB[ "Images/Sounds":0:"Cursor Image File" ] (16:Basic Images/Sounds:1) 
 ■Load DB(Var):  CSelf27[Vertical Item Count] = VarDB[ "Base System Variables":22:0 ] (18:Menu Command Count:Number) 
 ▼ v2.20: Separated the coordinate scale into X and Y values
-■Load DB(Var):  CSelf88[Coordinate Scale X (x10)] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
-■Load DB(Var):  CSelf89[Coordinate Scale Y (x10)] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
+■Load DB(Var):  CSelf88[Coordinate Scale X (x10)] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X (x10):Number) 
+■Load DB(Var):  CSelf89[Coordinate Scale Y (x10)] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y (x10):Number) 
 ▼ Set coordinates
 ■Set Variable: CSelf22[Display X] = 0 + 0 
 ■Set Variable: CSelf23[Display Y] = 0 + 0 

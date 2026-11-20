@@ -230,8 +230,8 @@ WoditorEvCOMMAND_END
 ▼ Set fixed value
 ■Set Variable: CSelf20[Base Picture ID] = 19999 + 0 
 ▼ v2.20: Separated the coordinate scale into X and Y values
-■Load DB(Var):  CSelf88[Coordinate Scale X (x10)] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
-■Load DB(Var):  CSelf89[Coordinate Scale Y (x10)] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
+■Load DB(Var):  CSelf88[Coordinate Scale X (x10)] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X (x10):Number) 
+■Load DB(Var):  CSelf89[Coordinate Scale Y (x10)] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y (x10):Number) 
 ■Set Variable: CSelf25[Screen Width] = CSelf88[Coordinate Scale X (x10)] * 32 
 ■Set Variable: CSelf26[Screen Height] = CSelf89[Coordinate Scale Y (x10)] * 24 
 ■Set Variable: CSelf25[Screen Width] += 32 + 0 

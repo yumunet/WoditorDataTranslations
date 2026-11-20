@@ -246,7 +246,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<0>(1,1600000,1,332288,1600011)("","┗ Animations","","Image Horizontal Divisions")
 [250][5,4]<0>(1,1600000,2,332288,1600012)("","┗ Animations","","Image Vertical Divisions")
 [250][5,4]<0>(1,1600000,5,332288,1600013)("","┗ Animations","","Blend Mode")
-[250][5,4]<0>(1,1600000,6,332288,1600014)("","┗ Animations","","Zoom")
+[250][5,4]<0>(1,1600000,6,332288,1600014)("","┗ Animations","","Scale")
 [250][5,4]<0>(1,1600000,10,332288,1600015)("","┗ Animations","","Sound Effect Delay [Frames]")
 [250][5,4]<0>(1,1600000,11,332288,1600017)("","┗ Animations","","[Color] R Adjust (±100)")
 [250][5,4]<0>(1,1600000,12,332288,1600018)("","┗ Animations","","[Color] G Adjust (±100)")
@@ -281,12 +281,12 @@ WoditorEvCOMMAND_START
 [0][0,0]<2>()()
 [499][0,0]<1>()()
 [150][14,0]<1>(3841,1600025,0,0,0,1600030,255,1600020,1600021,-1000000,0,0,16777216,1600031)()
-[250][5,4]<1>(1,1600000,4,332304,1600031)("","┗ Animations","","1 Pattern Wait [Frames]")
+[250][5,4]<1>(1,1600000,4,332304,1600031)("","┗ Animations","","Wait per Pattern [Frames]")
 [0][0,0]<1>()()
 [498][0,0]<0>()()
-[250][5,4]<0>(1,1600000,4,332304,1600031)("","┗ Animations","","1 Pattern Wait [Frames]")
+[250][5,4]<0>(1,1600000,4,332304,1600031)("","┗ Animations","","Wait per Pattern [Frames]")
 [150][4,0]<0>(2,1600025,1,1600031)()
-[250][5,4]<0>(1,1600000,8,332288,1600015)("","┗ Animations","","Damage Display Wait [Frames")
+[250][5,4]<0>(1,1600000,8,332288,1600015)("","┗ Animations","","Damage Display Wait[Frames]")
 [121][4,0]<0>(1600015,1,0,1536)()
 [121][4,0]<0>(1600015,2,0,256)()
 [180][1,0]<0>(1600015)()
@@ -325,8 +325,8 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf22[基本ピクチャ番号] = 18000 + 0 
 ■Set Variable: CSelf99[全体用？] = 0 + 0 
 ▼ Ver2.20　座標倍率を縦横別に修正
-■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
-■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
+■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X (x10):Number) 
+■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y (x10):Number) 
 ▼ 単体の場合は基本座標を計算する
 ■Condition (Number):   [1] CSelf0[アニメ番号] <=  -1  
 -◇Condition:  [1]  [ CSelf0[アニメ番号] <= -1   ] Case↓
@@ -377,7 +377,7 @@ WoditorEvCOMMAND_END
 ■Load DB(User):  CSelf11[アニメ横分割数] = UserDB[ "┗ Animations":CSelf0[アニメ番号]:"Image Horizontal Divisions" ] (1:-:1) 
 ■Load DB(User):  CSelf12[アニメ縦分割数] = UserDB[ "┗ Animations":CSelf0[アニメ番号]:"Image Vertical Divisions" ] (1:-:2) 
 ■Load DB(User):  CSelf13[描画モード（通常・加算）] = UserDB[ "┗ Animations":CSelf0[アニメ番号]:"Blend Mode" ] (1:-:5) 
-■Load DB(User):  CSelf14[拡大率] = UserDB[ "┗ Animations":CSelf0[アニメ番号]:"Zoom" ] (1:-:6) 
+■Load DB(User):  CSelf14[拡大率] = UserDB[ "┗ Animations":CSelf0[アニメ番号]:"Scale" ] (1:-:6) 
 ■Load DB(User):  CSelf15[効果音ディレイ] = UserDB[ "┗ Animations":CSelf0[アニメ番号]:"Sound Effect Delay [Frames]" ] (1:-:10) 
 ■Load DB(User):  CSelf17[カラー補正R] = UserDB[ "┗ Animations":CSelf0[アニメ番号]:"[Color] R Adjust (±100)" ] (1:-:11) 
 ■Load DB(User):  CSelf18[カラー補正G] = UserDB[ "┗ Animations":CSelf0[アニメ番号]:"[Color] G Adjust (±100)" ] (1:-:12) 
@@ -412,12 +412,12 @@ WoditorEvCOMMAND_END
  | |■
  |◇End◇
  |■Picture Move: CSelf25[一時ピクチャ番号]  X:CSelf20[表示元X] Y:CSelf21[表示元Y] / 0(CSelf31[ディレイフレーム]) Frames  / Pattern CSelf30[現在アニメパターン] / Opacity 255 / Blend Mode: Same   / Angle 0 / Scale Same / Color Same
- |■Load DB(User):  CSelf31[ディレイフレーム] += UserDB[ "┗ Animations":CSelf0[アニメ番号]:"1 Pattern Wait [Frames]" ] (1:-:4) 
+ |■Load DB(User):  CSelf31[ディレイフレーム] += UserDB[ "┗ Animations":CSelf0[アニメ番号]:"Wait per Pattern [Frames]" ] (1:-:4) 
  |■
 ◇Loop End Point◇◇
-■Load DB(User):  CSelf31[ディレイフレーム] += UserDB[ "┗ Animations":CSelf0[アニメ番号]:"1 Pattern Wait [Frames]" ] (1:-:4) 
+■Load DB(User):  CSelf31[ディレイフレーム] += UserDB[ "┗ Animations":CSelf0[アニメ番号]:"Wait per Pattern [Frames]" ] (1:-:4) 
 ■Picture Erase: CSelf25[一時ピクチャ番号]  / 1(CSelf31[ディレイフレーム]) Frames
-■Load DB(User):  CSelf15[効果音ディレイ] = UserDB[ "┗ Animations":CSelf0[アニメ番号]:"Damage Display Wait [Frames" ] (1:-:8) 
+■Load DB(User):  CSelf15[効果音ディレイ] = UserDB[ "┗ Animations":CSelf0[アニメ番号]:"Damage Display Wait[Frames]" ] (1:-:8) 
 ■Set Variable: CSelf15[効果音ディレイ] Lower Bound= 1 + 0 
 ■Set Variable: CSelf15[効果音ディレイ] += 2 + 0 
 ■Wait: CSelf15[効果音ディレイ] Frames

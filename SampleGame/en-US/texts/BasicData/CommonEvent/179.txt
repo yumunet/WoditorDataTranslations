@@ -654,8 +654,8 @@ WoditorEvCOMMAND_END
 ■Load DB(Var):  CSelf18[ミニフォントサイズ] = VarDB[ "Base System Variables":6:0 ] (18:System Min Font Size:Number) 
 ■Load DB(Var):  CSelf19[基本フォントサイズ] = VarDB[ "Base System Variables":5:0 ] (18:System Basic Font Size:Number) 
 ▼ Ver2.20　座標倍率を縦横別に修正
-■Load DB(Var):  CSelf98[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
-■Load DB(Var):  CSelf99[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
+■Load DB(Var):  CSelf98[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X (x10):Number) 
+■Load DB(Var):  CSelf99[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y (x10):Number) 
 ■Load DB(Var):  CSelf30[移動元X] = VarDB[ "Base System Variables":35:0 ] (18:Status Display Start X:Number) 
 ■Load DB(Var):  CSelf31[移動元Y] = VarDB[ "Base System Variables":36:0 ] (18:Status Display Start Y:Number) 
 ■Load DB(Var):  CSelf22[表示X] = VarDB[ "Base System Variables":37:0 ] (18:Status Display End X:Number) 

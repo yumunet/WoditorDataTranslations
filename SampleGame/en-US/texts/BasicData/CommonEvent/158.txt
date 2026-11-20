@@ -273,7 +273,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(2)()
 [103][0,1]<4>()("武器なら技能発動")
 [121][4,0]<4>(1600023,1600022,20000,16384)()
-[250][5,4]<4>(3,1600023,22,332288,1600042)("","Weapons","","Skill When Used As Item?     ")
+[250][5,4]<4>(3,1600023,22,332288,1600042)("","Weapons","","Skill When Used As Item       ")
 [111][4,0]<4>(1,1600042,0,1)()
 [401][1,0]<4>(1)()
 [300][6,1]<5>(0,16777219,1600000,1600022,2,1600039)("X[Bat]Select Skill")
@@ -283,7 +283,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<3>(3)()
 [103][0,1]<4>()("防具なら技能発動")
 [121][4,0]<4>(1600023,1600022,30000,16384)()
-[250][5,4]<4>(4,1600023,22,332288,1600042)("","Armor","","Skill When Used As Item?     ")
+[250][5,4]<4>(4,1600023,22,332288,1600042)("","Armor","","Skill When Used As Item       ")
 [111][4,0]<4>(1,1600042,0,1)()
 [401][1,0]<4>(1)()
 [300][6,1]<5>(0,16777219,1600000,1600022,2,1600039)("X[Bat]Select Skill")
@@ -315,8 +315,8 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf99[使用対象] = -1 + 0 
 ■Repeat Loop [ 1 ] Times
  |▼ Ver2.20　座標倍率を縦横別に修正
- |■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
- |■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
+ |■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X (x10):Number) 
+ |■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y (x10):Number) 
  |■Call Event [Name]: CSelf11[一時変数B] = ["X[Bat]Get Cursor Memory Pos"] <CommonEv 155>  / 11:[戦闘]ｱｲﾃﾑ(要ｷｬﾗ指定) / CSelf0[発動者スロット]
  |●Label Point [アイテム開始] <<<<<<<<<<<<<<<<★
  |▼ 万能ウィンドウ設定を初期化
@@ -418,7 +418,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [2]  [ CSelf22[実行コード] <= 29999   ] Case↓
  | | | |▼ 武器なら技能発動
  | | | |■Set Variable: CSelf23[番号] = CSelf22[実行コード] % 20000 
- | | | |■Load DB(User):  CSelf42[アイテム 発動技能] = UserDB[ "Weapons":CSelf23[番号]:"Skill When Used As Item?     " ] (3:-:22) 
+ | | | |■Load DB(User):  CSelf42[アイテム 発動技能] = UserDB[ "Weapons":CSelf23[番号]:"Skill When Used As Item       " ] (3:-:22) 
  | | | |■Condition (Number):   [1] CSelf42[アイテム 発動技能] >=  0  
  | | | |-◇Condition:  [1]  [ CSelf42[アイテム 発動技能] >= 0   ] Case↓
  | | | | |■Call Event [Name]: CSelf39[使用対象] = ["X[Bat]Select Skill"] <CommonEv 159>  / CSelf0[発動者スロット] / CSelf22[実行コード] / 2:技能[A]アイテム経由実行
@@ -428,7 +428,7 @@ WoditorEvCOMMAND_END
  | | |-◇Condition:  [3]  [ CSelf22[実行コード] <= 39999   ] Case↓
  | | | |▼ 防具なら技能発動
  | | | |■Set Variable: CSelf23[番号] = CSelf22[実行コード] % 30000 
- | | | |■Load DB(User):  CSelf42[アイテム 発動技能] = UserDB[ "Armor":CSelf23[番号]:"Skill When Used As Item?     " ] (4:-:20) 
+ | | | |■Load DB(User):  CSelf42[アイテム 発動技能] = UserDB[ "Armor":CSelf23[番号]:"Skill When Used As Item       " ] (4:-:20) 
  | | | |■Condition (Number):   [1] CSelf42[アイテム 発動技能] >=  0  
  | | | |-◇Condition:  [1]  [ CSelf42[アイテム 発動技能] >= 0   ] Case↓
  | | | | |■Call Event [Name]: CSelf39[使用対象] = ["X[Bat]Select Skill"] <CommonEv 159>  / CSelf0[発動者スロット] / CSelf22[実行コード] / 2:技能[A]アイテム経由実行

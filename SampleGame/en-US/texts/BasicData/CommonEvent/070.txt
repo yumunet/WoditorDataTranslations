@@ -560,9 +560,9 @@ WoditorEvCOMMAND_START
 [103][0,1]<1>()("EXP")
 [103][0,1]<1>()("If necessary, call level-up process")
 [179][1,0]<1>(1)()
-[250][5,4]<2>(0,1600000,57,327696,1600002)("","Allies","","Current Level EXP")
-[250][5,4]<2>(0,1600000,57,327776,0)("","Allies","","Current Level EXP")
-[250][5,4]<2>(0,1600000,57,331776,1600010)("","Allies","","Current Level EXP")
+[250][5,4]<2>(0,1600000,57,327696,1600002)("","Allies","","Current Level Gained EXP")
+[250][5,4]<2>(0,1600000,57,327776,0)("","Allies","","Current Level Gained EXP")
+[250][5,4]<2>(0,1600000,57,331776,1600010)("","Allies","","Current Level Gained EXP")
 [250][5,4]<2>(0,1600000,58,331776,1600011)("","Allies","","Current Level Required EXP")
 [103][0,1]<2>()("If the required EXP is 0, it will cause an infinite loop, so set it to at least 1")
 [121][4,0]<2>(1600011,1,0,1536)()
@@ -578,7 +578,7 @@ WoditorEvCOMMAND_START
 [111][4,0]<3>(17,1600010,1600011,1)()
 [401][1,0]<3>(1)()
 [121][4,0]<4>(1600010,1600011,0,512)()
-[250][5,4]<4>(0,1600000,57,327680,1600010)("","Allies","","Current Level EXP")
+[250][5,4]<4>(0,1600000,57,327680,1600010)("","Allies","","Current Level Gained EXP")
 [300][6,1]<4>(0,16777219,1600000,1,1,1600012)("X[Map]Level Up/Down")
 [250][5,4]<4>(0,1600000,58,331776,1600011)("","Allies","","Current Level Required EXP")
 [121][4,0]<4>(1600020,1600012,0,256)()
@@ -1222,8 +1222,8 @@ WoditorEvCOMMAND_END
  | | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  | | |▼ Skill Learning Message
  | | |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
- | | |■Load DB(Var):  CSelf7[Temp String] = VarDB[ "Base System Variables":90:1 ] (18:[LvUp] Learned Skills [String]:String) 
- | | |■Load DB(Var):  CSelf11[Temp B] = VarDB[ "Base System Variables":90:0 ] (18:[LvUp] Learned Skills [String]:Number) 
+ | | |■Load DB(Var):  CSelf7[Temp String] = VarDB[ "Base System Variables":90:1 ] (18:[LvUp] Learned Skills (String):String) 
+ | | |■Load DB(Var):  CSelf11[Temp B] = VarDB[ "Base System Variables":90:0 ] (18:[LvUp] Learned Skills (String):Number) 
  | | |■Set String: CSelf9[Message Text] = ""
  | | |■Set Variable: CSelf12[Temp C] = 0 + 0 
  | | |■Repeat Loop [ CSelf11[Temp B] ] Times
@@ -1262,9 +1262,9 @@ WoditorEvCOMMAND_END
  |▼ EXP
  |▼ If necessary, call level-up process
  |■Repeat Loop [ 1 ] Times
- | |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Current Level EXP" ] (0:-:54) +=  CSelf2[Amount]
- | |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Current Level EXP" ] (0:-:54) Lower Bound  0
- | |■Load DB(Var):  CSelf10[Temp A] = VarDB[ "Allies":CSelf0[Ally ID]:"Current Level EXP" ] (0:-:54) 
+ | |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Current Level Gained EXP" ] (0:-:54) +=  CSelf2[Amount]
+ | |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Current Level Gained EXP" ] (0:-:54) Lower Bound  0
+ | |■Load DB(Var):  CSelf10[Temp A] = VarDB[ "Allies":CSelf0[Ally ID]:"Current Level Gained EXP" ] (0:-:54) 
  | |■Load DB(Var):  CSelf11[Temp B] = VarDB[ "Allies":CSelf0[Ally ID]:"Current Level Required EXP" ] (0:-:55) 
  | |▼ If the required EXP is 0, it will cause an infinite loop, so set it to at least 1
  | |■Set Variable: CSelf11[Temp B] Lower Bound= 1 + 0 
@@ -1280,7 +1280,7 @@ WoditorEvCOMMAND_END
  | | |■Condition (Number):   [1] CSelf10[Temp A] >=  CSelf11[Temp B]  
  | | |-◇Condition:  [1]  [ CSelf10[Temp A] >= CSelf11[Temp B]   ] Case↓
  | | | |■Set Variable: CSelf10[Temp A] -= CSelf11[Temp B] + 0 
- | | | |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Current Level EXP" ] (0:-:54) =  CSelf10[Temp A]
+ | | | |■Write to DB(Var): VarDB[ "Allies":CSelf0[Ally ID]:"Current Level Gained EXP" ] (0:-:54) =  CSelf10[Temp A]
  | | | |■Call Event [Name]: CSelf12[Temp C] = ["X[Map]Level Up/Down"] <CommonEv 74>  / CSelf0[Ally ID] / 1 / 1:LvUp+Keep Changes
  | | | |■Load DB(Var):  CSelf11[Temp B] = VarDB[ "Allies":CSelf0[Ally ID]:"Current Level Required EXP" ] (0:-:55) 
  | | | |■Set Variable: CSelf20[Level Change] += CSelf12[Temp C] + 0 

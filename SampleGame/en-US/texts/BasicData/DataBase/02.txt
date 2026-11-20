@@ -30,7 +30,7 @@ TYPENAME=Items
 ITEMNAME_NUM=21
 ITEMNAME0=Item Name
 ITEMNAME1=Description [Up to 2 Lines]
-ITEMNAME2=Usable When?
+ITEMNAME2=Usable When
 ITEMNAME3=■Effect Type                       
 ITEMNAME4=┣ [2]: Skill to Use                
 ITEMNAME5=┃┗ Battle Message on Use
@@ -297,7 +297,7 @@ DEFAULT_VAL_18=0
 DEFAULT_VAL_19=1
 DEFAULT_VAL_20=0
 <<--CSV_START-->>
-"Item Name","Description [Up to 2 Lines]","Usable When?","■Effect Type                       ","┣ [2]: Skill to Use                ","┃┗ Battle Message on Use","┗ [3]: Event to Call             ","Usage Limit                               ","┗ Changes When Consumed?","Effect Target","HP Recovery [X% of Max]","┗ + HP Recovery [Points]","SP Recovery [X% of Max]","┗ + SP Recovery [Points]","Remove State 1","Remove State 2","Remove State 3","Use Message [Map]","Use Message [Battle] (Name...","Sell Price [0=Can't Sell]","Sound Effect on Use",
+"Item Name","Description [Up to 2 Lines]","Usable When","■Effect Type                       ","┣ [2]: Skill to Use                ","┃┗ Battle Message on Use","┗ [3]: Event to Call             ","Usage Limit                               ","┗ Changes When Consumed?","Effect Target","HP Recovery [X% of Max]","┗ + HP Recovery [Points]","SP Recovery [X% of Max]","┗ + SP Recovery [Points]","Remove State 1","Remove State 2","Remove State 3","Use Message [Map]","Use Message [Battle] (Name...","Sell Price [0=Can't Sell]","Sound Effect on Use",
 "Herb","An herb that heals one ally for 30 HP.",1,1,0,0,0,0,-1,0,0,30,0,0,-1,-1,-1,"","",15,"",
 "Healing Water","Water that heals one ally for 100 HP.",1,1,0,0,0,0,-1,0,0,100,0,0,-1,-1,-1,"","",50,"",
 "Mana Water","Water that can recover 30 SP.",1,1,0,0,0,0,-1,0,0,0,0,30,-1,-1,-1,"","",120,"",

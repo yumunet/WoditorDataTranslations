@@ -229,7 +229,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<2>(2)()
 [103][0,1]<3>()("武器の場合")
 [121][4,0]<3>(1600010,1600001,20000,16384)()
-[250][5,4]<3>(3,1600010,22,332288,1600011)("","Weapons","","Skill When Used As Item?     ")
+[250][5,4]<3>(3,1600010,22,332288,1600011)("","Weapons","","Skill When Used As Item       ")
 [111][4,0]<3>(1,1600011,1,2)()
 [401][1,0]<3>(1)()
 [250][5,4]<4>(3,1600010,23,332288,1600001)("","Weapons","","┣ Skill to Use                          ")
@@ -239,7 +239,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<2>(3)()
 [103][0,1]<3>()("防具の場合")
 [121][4,0]<3>(1600010,1600001,30000,16384)()
-[250][5,4]<3>(4,1600010,22,332288,1600011)("","Armor","","Skill When Used As Item?     ")
+[250][5,4]<3>(4,1600010,22,332288,1600011)("","Armor","","Skill When Used As Item       ")
 [111][4,0]<3>(1,1600011,1,2)()
 [401][1,0]<3>(1)()
 [250][5,4]<4>(4,1600010,21,332288,1600001)("","Armor","","┣ Skill to Use                          ")
@@ -1373,7 +1373,7 @@ WoditorEvCOMMAND_END
  | |-◇Condition:  [2]  [ CSelf1[発動技能] <= 29999   ] Case↓
  | | |▼ 武器の場合
  | | |■Set Variable: CSelf10[一時変数A] = CSelf1[発動技能] % 20000 
- | | |■Load DB(User):  CSelf11[一時変数B] = UserDB[ "Weapons":CSelf10[一時変数A]:"Skill When Used As Item?     " ] (3:-:22) 
+ | | |■Load DB(User):  CSelf11[一時変数B] = UserDB[ "Weapons":CSelf10[一時変数A]:"Skill When Used As Item       " ] (3:-:22) 
  | | |■Condition (Number):   [1] CSelf11[一時変数B] ==  1  
  | | |-◇Condition:  [1]  [ CSelf11[一時変数B] == 1   ] Case↓
  | | | |■Load DB(User):  CSelf1[発動技能] = UserDB[ "Weapons":CSelf10[一時変数A]:"┣ Skill to Use                          " ] (3:-:23) 
@@ -1383,7 +1383,7 @@ WoditorEvCOMMAND_END
  | |-◇Condition:  [3]  [ CSelf1[発動技能] <= 39999   ] Case↓
  | | |▼ 防具の場合
  | | |■Set Variable: CSelf10[一時変数A] = CSelf1[発動技能] % 30000 
- | | |■Load DB(User):  CSelf11[一時変数B] = UserDB[ "Armor":CSelf10[一時変数A]:"Skill When Used As Item?     " ] (4:-:20) 
+ | | |■Load DB(User):  CSelf11[一時変数B] = UserDB[ "Armor":CSelf10[一時変数A]:"Skill When Used As Item       " ] (4:-:20) 
  | | |■Condition (Number):   [1] CSelf11[一時変数B] ==  1  
  | | |-◇Condition:  [1]  [ CSelf11[一時変数B] == 1   ] Case↓
  | | | |■Load DB(User):  CSelf1[発動技能] = UserDB[ "Armor":CSelf10[一時変数A]:"┣ Skill to Use                          " ] (4:-:21) 

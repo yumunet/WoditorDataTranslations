@@ -221,8 +221,8 @@ WoditorEvCOMMAND_END
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ 固定値を設定
 ▼ Ver2.20　座標倍率を縦横別に修正
-■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
-■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
+■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X (x10):Number) 
+■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y (x10):Number) 
 ▼ キャラ座標を取得
 ■Call Event [Name]: ["X[Map]Character Box: Calc Pos"] <CommonEv 91>  / CSelf0[キャラ位置[0-5]]
 ■Load DB(Var):  CSelf12[一時変数C] = VarDB[ "Base System Variables":37:0 ] (18:Status Display End X:Number) 

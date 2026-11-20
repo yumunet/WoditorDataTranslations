@@ -205,7 +205,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<2>()()
 [401][1,0]<1>(2)()
 [103][0,1]<2>()("デフォルト曲の場合")
-[250][5,4]<2>(19,0,48,332288,1600008)("","System Settings","","[Battle] Basic Battle BGM")
+[250][5,4]<2>(19,0,48,332288,1600008)("","System Settings","","[Battle] Default Battle BGM")
 [103][0,1]<2>()("戦闘BGMを再生")
 [140][7,1]<2>(33554432,10,0,0,100,100,0)("\cself[8]")
 [0][0,0]<2>()()
@@ -470,7 +470,7 @@ WoditorEvCOMMAND_END
  | |■
  |-◇Condition:  [2]  [ CSelf3[戦闘BGM] <= -2   ] Case↓
  | |▼ デフォルト曲の場合
- | |■Load DB(User):  CSelf8[再生戦闘曲] = UserDB[ "System Settings":0:"[Battle] Basic Battle BGM" ] (17:Basic System Settings:26) 
+ | |■Load DB(User):  CSelf8[再生戦闘曲] = UserDB[ "System Settings":0:"[Battle] Default Battle BGM" ] (17:Basic System Settings:26) 
  | |▼ 戦闘BGMを再生
  | |■Sound: BGM File [\cself[8]] Vol 100% Pitch 100% Loop 0 ms Play / Fade Time: 10 Frames
  | |■

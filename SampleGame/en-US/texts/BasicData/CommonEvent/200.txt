@@ -357,7 +357,7 @@ WoditorEvCOMMAND_END
  |▼ 経験値入手処理
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
  |■Load DB(Var):  CSelf22[入手経験値] = VarDB[ "×┗Reward List":0:"EXP Gain" ] (15::0) 
- |■Load DB(Var):  CSelf22[入手経験値] *= VarDB[ "Base System Variables":70:0 ] (18:[Battle] EXP Gain % [Base 100]:Number) 
+ |■Load DB(Var):  CSelf22[入手経験値] *= VarDB[ "Base System Variables":70:0 ] (18:[Battle] EXP Gain % (Base 100):Number) 
  |■Set Variable: CSelf22[入手経験値] /= 100 + 0 
  |▼  
  |■Load DB(Var):  CSelf20[繰り返し回数] = VarDB[ "Base System Variables":4:0 ] (18:Current Party Size:Number) 
@@ -410,7 +410,7 @@ WoditorEvCOMMAND_END
  |◇Loop End Point◇◇
  |▼ お金を取得
  |■Load DB(Var):  CSelf23[入手金額] = VarDB[ "×┗Reward List":0:"Money Gain" ] (15::1) 
- |■Load DB(Var):  CSelf23[入手金額] *= VarDB[ "Base System Variables":71:0 ] (18:[Battle] Money Gain % [Base 100]:Number) 
+ |■Load DB(Var):  CSelf23[入手金額] *= VarDB[ "Base System Variables":71:0 ] (18:[Battle] Money Gain % (Base 100):Number) 
  |■Set Variable: CSelf23[入手金額] /= 100 + 0 
  |■Call Event [Name]: ["X[Com]Change Money"] <CommonEv 53>  / CSelf23[入手金額]
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■

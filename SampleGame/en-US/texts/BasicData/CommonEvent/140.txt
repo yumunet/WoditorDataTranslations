@@ -177,7 +177,7 @@ WoditorEvCOMMAND_END
 ▼ Process Overview:
 ▼ 　戦闘全体で使用される変数を初期化します。
 ▼ ―――――――――――――――――――――――――――――――――――
-■Write to DB(Var): VarDB[ "Base System Variables":70:0 ] (18:[Battle] EXP Gain % [Base 100]:Number) =  100
-■Write to DB(Var): VarDB[ "Base System Variables":71:0 ] (18:[Battle] Money Gain % [Base 100]:Number) =  100
+■Write to DB(Var): VarDB[ "Base System Variables":70:0 ] (18:[Battle] EXP Gain % (Base 100):Number) =  100
+■Write to DB(Var): VarDB[ "Base System Variables":71:0 ] (18:[Battle] Money Gain % (Base 100):Number) =  100
 ■
 [COMMAND_TEXT_END]

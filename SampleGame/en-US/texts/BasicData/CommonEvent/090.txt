@@ -352,7 +352,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<1>(0,1600002,7,331776,1600092)("","Allies","","SP")
 [250][5,4]<1>(21,1600002,1,331776,1600093)("","×Allies Temp Data","","[Temp] Post-Calc Max SP")
 [250][5,4]<1>(0,1600002,4,331776,1600094)("","Allies","","Level")
-[250][5,4]<1>(0,1600002,48,331776,1600095)("","Allies","","Current Level EXP")
+[250][5,4]<1>(0,1600002,48,331776,1600095)("","Allies","","Current Level Gained EXP")
 [250][5,4]<1>(0,1600002,49,331776,1600096)("","Allies","","Current Level Required EXP")
 [103][0,1]<1>()("If the level is max, set the required EXP for the next level to 0 (Added in v3.45)")
 [250][5,4]<1>(0,1600002,5,331776,1600099)("","Allies","","Max Level")
@@ -824,8 +824,8 @@ WoditorEvCOMMAND_END
 ■Load DB(User):  CSelf8[Window Image File] = UserDB[ "Images/Sounds":0:"Window Image File" ] (16:Basic Images/Sounds:0) 
 ■Load DB(User):  CSelf9[Cursor Image File] = UserDB[ "Images/Sounds":0:"Cursor Image File" ] (16:Basic Images/Sounds:1) 
 ▼ v2.20: Separated the coordinate scale into X and Y values
-■Load DB(Var):  CSelf88[Coordinate Scale X (x10)] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
-■Load DB(Var):  CSelf89[Coordinate Scale Y (x10)] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
+■Load DB(Var):  CSelf88[Coordinate Scale X (x10)] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X (x10):Number) 
+■Load DB(Var):  CSelf89[Coordinate Scale Y (x10)] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y (x10):Number) 
 ■Load DB(User):  CSelf85[States Display Type] = UserDB[ "System Settings":0:"States Display" ] (17:Basic System Settings:19) 
 ■Repeat Loop [ 1 ] Times
  |▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
@@ -937,7 +937,7 @@ WoditorEvCOMMAND_END
  |■Load DB(Var):  CSelf92[SP] = VarDB[ "Allies":CSelf2[Ally ID]:"SP" ] (0:-:8) 
  |■Load DB(Var):  CSelf93[Max SP] = VarDB[ "×Allies Temp Data":CSelf2[Ally ID]:"[Temp] Post-Calc Max SP" ] (17:-:1) 
  |■Load DB(Var):  CSelf94[Level] = VarDB[ "Allies":CSelf2[Ally ID]:"Level" ] (0:-:4) 
- |■Load DB(Var):  CSelf95[Current EXP] = VarDB[ "Allies":CSelf2[Ally ID]:"Current Level EXP" ] (0:-:54) 
+ |■Load DB(Var):  CSelf95[Current EXP] = VarDB[ "Allies":CSelf2[Ally ID]:"Current Level Gained EXP" ] (0:-:54) 
  |■Load DB(Var):  CSelf96[EXP to Next] = VarDB[ "Allies":CSelf2[Ally ID]:"Current Level Required EXP" ] (0:-:55) 
  |▼ If the level is max, set the required EXP for the next level to 0 (Added in v3.45)
  |■Load DB(Var):  CSelf99[Max Level] = VarDB[ "Allies":CSelf2[Ally ID]:"Max Level" ] (0:-:5) 

@@ -58,8 +58,8 @@ ITEMNAME17=Sell Price [0=Can't Sell]
 ITEMNAME18=┏ Add State       
 ITEMNAME19=┗ State Rate [%]
 ITEMNAME20=┏ Change Battle Command
-ITEMNAME21=┗ Command to Change      
-ITEMNAME22=Skill When Used As Item?     
+ITEMNAME21=┗ New Command                
+ITEMNAME22=Skill When Used As Item       
 ITEMNAME23=┣ Skill to Use                          
 ITEMNAME24=┣ Message [Map]                  
 ITEMNAME25=┣ Message [Battle] (Name...
@@ -440,7 +440,7 @@ DEFAULT_VAL_27=0
 DEFAULT_VAL_28=-1
 DEFAULT_VAL_29=-1
 <<--CSV_START-->>
-"Weapon Name","Description [Up to 2 Lines]","Equipment Type","Equippable Slots 1-4","Equippable Slots 5-8","Attack Animation","Max HP Change","Max SP Change","Attack Change","Defense Change","Magic Attack Change","Magic Defense Change","Agility Change","Accuracy [%] Change","Evasion [%] Change","Critical Rate [%] Change","Equipped, Can't Remove?","Sell Price [0=Can't Sell]","┏ Add State       ","┗ State Rate [%]","┏ Change Battle Command","┗ Command to Change      ","Skill When Used As Item?     ","┣ Skill to Use                          ","┣ Message [Map]                  ","┣ Message [Battle] (Name...","┗ Item Changes After Use   ","Exclusive Slots on Equip","Element 1","Element 2",
+"Weapon Name","Description [Up to 2 Lines]","Equipment Type","Equippable Slots 1-4","Equippable Slots 5-8","Attack Animation","Max HP Change","Max SP Change","Attack Change","Defense Change","Magic Attack Change","Magic Defense Change","Agility Change","Accuracy [%] Change","Evasion [%] Change","Critical Rate [%] Change","Equipped, Can't Remove?","Sell Price [0=Can't Sell]","┏ Add State       ","┗ State Rate [%]","┏ Change Battle Command","┗ New Command                ","Skill When Used As Item       ","┣ Skill to Use                          ","┣ Message [Map]                  ","┣ Message [Battle] (Name...","┗ Item Changes After Use   ","Exclusive Slots on Equip","Element 1","Element 2",
 "Dagger","A dagger. Increases Attack by 10.",0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,110,-1,0,0,0,0,0,"","",-3,0,1,2,
 "Mini Blade","A very short sword. Only increases Attack by 1,
 but equippable in Left Hand.",0,1,0,3,0,0,1,0,0,0,0,0,0,0,0,300,-2,-1,0,0,0,0,"","",-3,0,-1,-1,

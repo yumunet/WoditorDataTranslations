@@ -822,8 +822,8 @@ WoditorEvCOMMAND_END
 ■Load DB(User):  CSelf8[ｳｨﾝﾄﾞｳ画像名/ｾｰﾌﾞﾌｧｲﾙ名] = UserDB[ "Images/Sounds":0:"Window Image File" ] (16:Basic Images/Sounds:0) 
 ■Load DB(User):  CSelf9[カーソル画像ファイル] = UserDB[ "Images/Sounds":0:"Cursor Image File" ] (16:Basic Images/Sounds:1) 
 ▼ Ver2.20　座標倍率を縦横別に修正
-■Load DB(Var):  CSelf86[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
-■Load DB(Var):  CSelf87[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
+■Load DB(Var):  CSelf86[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X (x10):Number) 
+■Load DB(Var):  CSelf87[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y (x10):Number) 
 ▼  
 ■Load DB(Var):  CSelf26[最大ページ数] = VarDB[ "Base System Variables":53:0 ] (18:Save Page Count:Number) 
 ■Load DB(Var):  CSelf27[1ページセーブデータ数] = VarDB[ "Base System Variables":52:0 ] (18:Save Slots per Page:Number) 

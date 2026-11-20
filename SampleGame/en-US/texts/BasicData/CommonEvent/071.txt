@@ -210,7 +210,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [401][1,0]<0>(2)()
 [103][0,1]<1>()("EXP")
-[250][5,4]<1>(0,1600000,53,331776,1600099)("","Allies","","Current Level EXP")
+[250][5,4]<1>(0,1600000,53,331776,1600099)("","Allies","","Current Level Gained EXP")
 [172][0,0]<1>()()
 [0][0,0]<1>()()
 [499][0,0]<0>()()
@@ -284,7 +284,7 @@ WoditorEvCOMMAND_END
  |■
 -◇Condition:  [2]  [ CSelf1[Target Parameter] == 11   ] Case↓
  |▼ EXP
- |■Load DB(Var):  CSelf99[Parameter Value] = VarDB[ "Allies":CSelf0[Ally ID]:"Current Level EXP" ] (0:-:54) 
+ |■Load DB(Var):  CSelf99[Parameter Value] = VarDB[ "Allies":CSelf0[Ally ID]:"Current Level Gained EXP" ] (0:-:54) 
  |■Exit Event
  |■
 ◇End◇

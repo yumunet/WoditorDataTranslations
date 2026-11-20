@@ -421,8 +421,8 @@ WoditorEvCOMMAND_END
 ▼  
 ■Set Variable: CSelf20[Base Picture ID] = 19500 + 0 
 ▼ v2.20: Separated the coordinate scale into X and Y values
-■Load DB(Var):  CSelf88[Coordinate Scale X (x10)] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
-■Load DB(Var):  CSelf89[Coordinate Scale Y (x10)] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
+■Load DB(Var):  CSelf88[Coordinate Scale X (x10)] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X (x10):Number) 
+■Load DB(Var):  CSelf89[Coordinate Scale Y (x10)] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y (x10):Number) 
 ■Load DB(User):  CSelf9[Window Image File] = UserDB[ "Images/Sounds":0:"Message Window Base Image" ] (16:Basic Images/Sounds:2) 
 ■Set Variable: CSelf35[Window Display Flag] = 0 + 0 
 ▼ Set the message window display position and size

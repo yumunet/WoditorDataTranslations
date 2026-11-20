@@ -50,7 +50,7 @@ ITEMNAME2=┏ Effect Target
 ITEMNAME3=(If Used) ┗ Event Number
 ITEMNAME4=┏ What to Consume?
 ITEMNAME5=┗ Points Consumed  
-ITEMNAME6=Usable When?
+ITEMNAME6=Usable When
 ITEMNAME7=SuccessRate[%] [-1:Accuracy]
 ITEMNAME8=┏ What's Affected?                 
 ITEMNAME9=┣ Base Amount [Fixed Value]
@@ -524,7 +524,7 @@ DEFAULT_VAL_34=100
 DEFAULT_VAL_35=0
 DEFAULT_VAL_36=0
 <<--CSV_START-->>
-"Skill Name","Description","┏ Effect Target   ","(If Used) ┗ Event Number","┏ What to Consume?","┗ Points Consumed  ","Usable When?","SuccessRate[%] [-1:Accuracy]","┏ What's Affected?                 ","┣ Base Amount [Fixed Value]","┣ Attack Influence [%]           ","┣ Magic Influence [%]           ","┗ Variance [±%]                     ","Use Message [Map] (Name...","Use Message [Battle] (Name...","Failure Message (Target...","Priority Option","Element","Repeat Times/Weapon Effect","Animation","Item Required? [Consume]","When Skills Are Limited...","Add State 1             ","┗ State 1 Rate [%]","Add State 2             ","┗ State 2 Rate [%]","Add State 3             ","┗ State 3 Rate [%]","Remove State 1","Remove State 2","Remove State 3","Weapon-Based Accuracy ±%","Critical Rate [%] (-1:None)","Target's Evasion","Target's Def/Magic Def","Return Effects to Self?","Timing to Execute Skill",
+"Skill Name","Description","┏ Effect Target   ","(If Used) ┗ Event Number","┏ What to Consume?","┗ Points Consumed  ","Usable When","SuccessRate[%] [-1:Accuracy]","┏ What's Affected?                 ","┣ Base Amount [Fixed Value]","┣ Attack Influence [%]           ","┣ Magic Influence [%]           ","┗ Variance [±%]                     ","Use Message [Map] (Name...","Use Message [Battle] (Name...","Failure Message (Target...","Priority Option","Element","Repeat Times/Weapon Effect","Animation","Item Required? [Consume]","When Skills Are Limited...","Add State 1             ","┗ State 1 Rate [%]","Add State 2             ","┗ State 2 Rate [%]","Add State 3             ","┗ State 3 Rate [%]","Remove State 1","Remove State 2","Remove State 3","Weapon-Based Accuracy ±%","Critical Rate [%] (-1:None)","Target's Evasion","Target's Def/Magic Def","Return Effects to Self?","Timing to Execute Skill",
 "Attack (Skill)","",10,0,0,0,2,-1,0,0,100,0,20,""," attacks!","",0,0,-1,-1,-3,0,-1,-1,-1,-1,-1,-1,-1,-1,-1,1,0,1,100,0,0,
 "-----------------------------","",0,0,0,0,2,100,0,0,0,0,0,"","","",0,-1,1,-2,-1,0,-1,100,-1,100,-1,100,-1,-1,-1,0,-1,0,100,0,0,
 "Heal","Restore the HP of one ally.",0,0,0,5,1,100,0,0,0,100,20,""," cast Heal!","",0,-1,1,-2,-1,1,-1,100,-1,100,-1,100,-1,-1,-1,0,-1,0,0,0,0,

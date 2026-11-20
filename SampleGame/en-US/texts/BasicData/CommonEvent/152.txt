@@ -226,7 +226,7 @@ WoditorEvCOMMAND_START
 [499][0,0]<3>()()
 [250][5,4]<3>(0,1600010,4,332288,1600016)("","Skills","","┏ What to Consume?")
 [250][5,4]<3>(0,1600010,5,332288,1600017)("","Skills","","┗ Points Consumed  ")
-[250][5,4]<3>(0,1600010,6,332288,1600013)("","Skills","","Usable When?")
+[250][5,4]<3>(0,1600010,6,332288,1600013)("","Skills","","Usable When")
 [250][5,4]<3>(0,1600010,20,332288,1600014)("","Skills","","Item Required? [Consume]")
 [103][0,1]<3>()("使用可能シーンが移動中のみなら使用不能")
 [111][4,0]<3>(1,1600013,0,2)()
@@ -339,7 +339,7 @@ WoditorEvCOMMAND_END
  | | |◇End◇
  | | |■Load DB(User):  CSelf16[消費するものは？] = UserDB[ "Skills":CSelf10[一時変数A]:"┏ What to Consume?" ] (0:-:4) 
  | | |■Load DB(User):  CSelf17[消費ポイント] = UserDB[ "Skills":CSelf10[一時変数A]:"┗ Points Consumed  " ] (0:-:5) 
- | | |■Load DB(User):  CSelf13[使用可能シーン] = UserDB[ "Skills":CSelf10[一時変数A]:"Usable When?" ] (0:-:6) 
+ | | |■Load DB(User):  CSelf13[使用可能シーン] = UserDB[ "Skills":CSelf10[一時変数A]:"Usable When" ] (0:-:6) 
  | | |■Load DB(User):  CSelf14[発動アイテム番号] = UserDB[ "Skills":CSelf10[一時変数A]:"Item Required? [Consume]" ] (0:-:20) 
  | | |▼ 使用可能シーンが移動中のみなら使用不能
  | | |■Condition (Number):   [1] CSelf13[使用可能シーン] ==  0  

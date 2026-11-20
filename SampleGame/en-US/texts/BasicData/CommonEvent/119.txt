@@ -180,7 +180,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600099,0,0,0)()
 [121][4,0]<0>(1600016,0,0,0)()
 [121][4,0]<0>(1600030,1600000,0,0)()
-[250][5,4]<0>(0,1600030,6,332288,1600012)("","Skills","","Usable When?")
+[250][5,4]<0>(0,1600030,6,332288,1600012)("","Skills","","Usable When")
 [111][4,0]<0>(1,1600001,0,1)()
 [401][1,0]<0>(1)()
 [250][5,4]<1>(0,1600030,0,332288,1600006)("","Skills","","Skill Name")
@@ -616,7 +616,7 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf99[使用した？] = 0 + 0 
 ■Set Variable: CSelf16[単体(1)or全体(2)] = 0 + 0 
 ■Set Variable: CSelf30[技能番号] = CSelf0[技能コード] + 0 
-■Load DB(User):  CSelf12[一時変数２] = UserDB[ "Skills":CSelf30[技能番号]:"Usable When?" ] (0:-:6) 
+■Load DB(User):  CSelf12[一時変数２] = UserDB[ "Skills":CSelf30[技能番号]:"Usable When" ] (0:-:6) 
 ■Condition (Number):   [1] CSelf1[発動者ID] >=  0  
 -◇Condition:  [1]  [ CSelf1[発動者ID] >= 0   ] Case↓
  |■Load DB(User):  CSelf6[技能名] = UserDB[ "Skills":CSelf30[技能番号]:"Skill Name" ] (0:-:0) 

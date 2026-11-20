@@ -279,7 +279,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<1>()(" ")
 [212][0,1]<1>()("使用処理2")
 [121][4,0]<1>(1600099,0,0,0)()
-[250][5,4]<1>(0,1600030,6,332288,1600012)("","Skills","","Usable When?")
+[250][5,4]<1>(0,1600030,6,332288,1600012)("","Skills","","Usable When")
 [111][4,0]<1>(1,1600012,1,1)()
 [401][1,0]<1>(1)()
 [111][4,0]<2>(1,1600012,2,3)()
@@ -511,8 +511,8 @@ WoditorEvCOMMAND_END
 ▼ ―――――――――――――――――――――――――――――――――――
 ■Set Variable: CSelf99[使用対象] = -1 + 0 
 ▼ Ver2.20　座標倍率を縦横別に修正
-■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X [x10]:Number) 
-■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y [x10]:Number) 
+■Load DB(Var):  CSelf88[座標倍率X[x10]] = VarDB[ "Base System Variables":97:0 ] (18:Coordinate Scale X (x10):Number) 
+■Load DB(Var):  CSelf89[座標倍率Y[x10]] = VarDB[ "Base System Variables":98:0 ] (18:Coordinate Scale Y (x10):Number) 
 ■Set Variable: CSelf24[即時発動] = 0 + 0 
 ■Set Variable: CSelf30[技能番号] = CSelf1[発動技能] + 0 
 ■Load DB(Var):  CSelf37 = VarDB[ "Base System Variables":51:0 ] (18:System Max Party Size:Number) 
@@ -614,7 +614,7 @@ WoditorEvCOMMAND_END
  |▼  
  |●Label Point [使用処理2] <<<<<<<<<<<<<<<<★
  |■Set Variable: CSelf99[使用対象] = 0 + 0 
- |■Load DB(User):  CSelf12[一時変数２] = UserDB[ "Skills":CSelf30[技能番号]:"Usable When?" ] (0:-:6) 
+ |■Load DB(User):  CSelf12[一時変数２] = UserDB[ "Skills":CSelf30[技能番号]:"Usable When" ] (0:-:6) 
  |■Condition (Number):   [1] CSelf12[一時変数２] >=  1  
  |-◇Condition:  [1]  [ CSelf12[一時変数２] >= 1   ] Case↓
  | |■Condition (Number):   [1] CSelf12[一時変数２] <=  2  

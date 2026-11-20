@@ -209,7 +209,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<2>()("武器の場合")
 [121][4,0]<2>(1600010,1600000,20000,16384)()
 [250][5,4]<2>(3,1600010,25,332288,1600009)("","Weapons","","┣ Message [Map]                  ")
-[250][5,4]<2>(3,1600010,22,332288,1600011)("","Weapons","","Skill When Used As Item?     ")
+[250][5,4]<2>(3,1600010,22,332288,1600011)("","Weapons","","Skill When Used As Item       ")
 [250][5,4]<2>(3,1600010,26,332288,1600012)("","Weapons","","┗ Item Changes After Use   ")
 [111][4,0]<2>(1,1600011,1,2)()
 [401][1,0]<2>(1)()
@@ -247,7 +247,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<2>()("防具の場合")
 [121][4,0]<2>(1600010,1600000,30000,16384)()
 [250][5,4]<2>(4,1600010,24,332288,1600009)("","Armor","","┣ Message [Map]                  ")
-[250][5,4]<2>(4,1600010,23,332288,1600011)("","Armor","","Skill When Used As Item?     ")
+[250][5,4]<2>(4,1600010,23,332288,1600011)("","Armor","","Skill When Used As Item       ")
 [250][5,4]<2>(4,1600010,27,332288,1600012)("","Armor","","┗ Item Changes After Use   ")
 [111][4,0]<2>(1,1600011,1,2)()
 [401][1,0]<2>(1)()
@@ -342,7 +342,7 @@ WoditorEvCOMMAND_END
  | |▼ 武器の場合
  | |■Set Variable: CSelf10[アイテム番号] = CSelf0[アイテムコード] % 20000 
  | |■Load DB(User):  CSelf9[表示メッセージ] = UserDB[ "Weapons":CSelf10[アイテム番号]:"┣ Message [Map]                  " ] (3:-:24) 
- | |■Load DB(User):  CSelf11[アイテム消費タイプ] = UserDB[ "Weapons":CSelf10[アイテム番号]:"Skill When Used As Item?     " ] (3:-:22) 
+ | |■Load DB(User):  CSelf11[アイテム消費タイプ] = UserDB[ "Weapons":CSelf10[アイテム番号]:"Skill When Used As Item       " ] (3:-:22) 
  | |■Load DB(User):  CSelf12[変化後アイテム] = UserDB[ "Weapons":CSelf10[アイテム番号]:"┗ Item Changes After Use   " ] (3:-:26) 
  | |■Condition (Number):   [1] CSelf11[アイテム消費タイプ] ==  1  
  | |-◇Condition:  [1]  [ CSelf11[アイテム消費タイプ] == 1   ] Case↓
@@ -380,7 +380,7 @@ WoditorEvCOMMAND_END
  | |▼ 防具の場合
  | |■Set Variable: CSelf10[アイテム番号] = CSelf0[アイテムコード] % 30000 
  | |■Load DB(User):  CSelf9[表示メッセージ] = UserDB[ "Armor":CSelf10[アイテム番号]:"┣ Message [Map]                  " ] (4:-:22) 
- | |■Load DB(User):  CSelf11[アイテム消費タイプ] = UserDB[ "Armor":CSelf10[アイテム番号]:"Skill When Used As Item?     " ] (4:-:20) 
+ | |■Load DB(User):  CSelf11[アイテム消費タイプ] = UserDB[ "Armor":CSelf10[アイテム番号]:"Skill When Used As Item       " ] (4:-:20) 
  | |■Load DB(User):  CSelf12[変化後アイテム] = UserDB[ "Armor":CSelf10[アイテム番号]:"┗ Item Changes After Use   " ] (4:-:24) 
  | |■Condition (Number):   [1] CSelf11[アイテム消費タイプ] ==  1  
  | |-◇Condition:  [1]  [ CSelf11[アイテム消費タイプ] == 1   ] Case↓
