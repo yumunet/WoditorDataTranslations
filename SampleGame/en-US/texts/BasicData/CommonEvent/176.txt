@@ -211,17 +211,17 @@ WoditorEvCOMMAND_START
 [111][7,0]<0>(2,1600001,10,2,1600001,11,2)()
 [401][1,0]<0>(1)()
 [103][0,1]<1>()("HP自然回復値")
-[250][5,4]<1>(11,1600000,60,331776,1600010)("","×┏Battle Temp Status","","HP Change per Turn [%]")
+[250][5,4]<1>(11,1600000,60,331776,1600010)("","×┏Battle Temp Status","","HP Change per Turn (%)")
 [250][5,4]<1>(11,1600000,44,331824,1600010)("","×┏Battle Temp Status","","[Temp] Post-Calc Max HP")
 [121][4,0]<1>(1600010,100,0,1024)()
-[250][5,4]<1>(11,1600000,61,331792,1600010)("","×┏Battle Temp Status","","HP Change per Turn [Fixed]")
+[250][5,4]<1>(11,1600000,61,331792,1600010)("","×┏Battle Temp Status","","HP Change per Turn (Fixed)")
 [0][0,0]<1>()()
 [401][1,0]<0>(2)()
 [103][0,1]<1>()("SP自然回復値")
-[250][5,4]<1>(11,1600000,62,331776,1600010)("","×┏Battle Temp Status","","SP Change per Turn [%]")
+[250][5,4]<1>(11,1600000,62,331776,1600010)("","×┏Battle Temp Status","","SP Change per Turn (%)")
 [250][5,4]<1>(11,1600000,45,331824,1600010)("","×┏Battle Temp Status","","[Temp] Post-Calc Max SP")
 [121][4,0]<1>(1600010,100,0,1024)()
-[250][5,4]<1>(11,1600000,63,331792,1600010)("","×┏Battle Temp Status","","SP Change per Turn [Fixed]")
+[250][5,4]<1>(11,1600000,63,331792,1600010)("","×┏Battle Temp Status","","SP Change per Turn (Fixed)")
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [0][0,0]<0>()()
@@ -264,17 +264,17 @@ WoditorEvCOMMAND_END
 ■Condition (Number):   [1] CSelf1[取得する状態] ==  10  /  [2] CSelf1[取得する状態] ==  11  
 -◇Condition:  [1]  [ CSelf1[取得する状態] == 10   ] Case↓
  |▼ HP自然回復値
- |■Load DB(Var):  CSelf10[結果] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"HP Change per Turn [%]" ] (10:-:62) 
+ |■Load DB(Var):  CSelf10[結果] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"HP Change per Turn (%)" ] (10:-:62) 
  |■Load DB(Var):  CSelf10[結果] *= VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Max HP" ] (10:-:44) 
  |■Set Variable: CSelf10[結果] /= 100 + 0 
- |■Load DB(Var):  CSelf10[結果] += VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"HP Change per Turn [Fixed]" ] (10:-:63) 
+ |■Load DB(Var):  CSelf10[結果] += VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"HP Change per Turn (Fixed)" ] (10:-:63) 
  |■
 -◇Condition:  [2]  [ CSelf1[取得する状態] == 11   ] Case↓
  |▼ SP自然回復値
- |■Load DB(Var):  CSelf10[結果] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"SP Change per Turn [%]" ] (10:-:64) 
+ |■Load DB(Var):  CSelf10[結果] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"SP Change per Turn (%)" ] (10:-:64) 
  |■Load DB(Var):  CSelf10[結果] *= VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Temp] Post-Calc Max SP" ] (10:-:46) 
  |■Set Variable: CSelf10[結果] /= 100 + 0 
- |■Load DB(Var):  CSelf10[結果] += VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"SP Change per Turn [Fixed]" ] (10:-:65) 
+ |■Load DB(Var):  CSelf10[結果] += VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"SP Change per Turn (Fixed)" ] (10:-:65) 
  |■
 ◇End◇
 ■

@@ -361,14 +361,14 @@ WoditorEvCOMMAND_START
 [176][0,0]<5>()()
 [0][0,0]<5>()()
 [499][0,0]<4>()()
-[250][5,4]<4>(0,1600030,10,332288,1600033)("","Skills","","┣ Attack Influence [%]           ")
+[250][5,4]<4>(0,1600030,10,332288,1600033)("","Skills","","┣ Attack Influence (%)           ")
 [250][5,4]<4>(17,1600014,2,331824,1600033)("","×Allies Temp Data","","[Temp] Post-Calc Attack")
 [121][4,0]<4>(1600033,100,0,1024)()
-[250][5,4]<4>(0,1600030,11,332288,1600034)("","Skills","","┣ Magic Influence [%]           ")
+[250][5,4]<4>(0,1600030,11,332288,1600034)("","Skills","","┣ Magic Influence (%)           ")
 [250][5,4]<4>(21,1600014,4,331824,1600034)("","×Allies Temp Data","","[Temp] Post-Calc Magic Atk")
 [121][4,0]<4>(1600034,100,0,1024)()
 [121][4,0]<4>(1600035,1600033,1600034,0)()
-[250][5,4]<4>(0,1600030,9,332304,1600035)("","Skills","","┣ Base Amount [Fixed Value]")
+[250][5,4]<4>(0,1600030,9,332304,1600035)("","Skills","","┣ Base Amount (Fixed Value)")
 [111][4,0]<4>(1,1600035,1600021,0)()
 [401][1,0]<4>(1)()
 [121][4,0]<5>(1600021,1600035,0,0)()
@@ -388,7 +388,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<1>(0,1600030,18,332288,1600010)("","Skills","","Animation")
 [111][4,0]<1>(1,1600010,0,1)()
 [401][1,0]<1>(1)()
-[250][5,4]<2>(1,1600010,14,332288,1600012)("","┗ Animations","","Process By [Ignore Settings]")
+[250][5,4]<2>(1,1600010,14,332288,1600012)("","┗ Animations","","Process By (Ignore Settings)")
 [111][4,0]<2>(1,1600012,-1,3)()
 [401][1,0]<2>(1)()
 [250][5,4]<3>(1,1600010,9,332288,1600009)("","┗ Animations","","Sound Effect")
@@ -455,21 +455,21 @@ WoditorEvCOMMAND_START
 [111][4,0]<2>(1,1600001,0,1)()
 [401][1,0]<2>(1)()
 [121][4,0]<3>(1600015,1600001,0,0)()
-[250][5,4]<3>(0,1600030,10,332288,1600033)("","Skills","","┣ Attack Influence [%]           ")
+[250][5,4]<3>(0,1600030,10,332288,1600033)("","Skills","","┣ Attack Influence (%)           ")
 [250][5,4]<3>(21,1600015,2,331824,1600033)("","×Allies Temp Data","","[Temp] Post-Calc Attack")
 [121][4,0]<3>(1600033,100,0,1024)()
-[250][5,4]<3>(0,1600030,11,332288,1600034)("","Skills","","┣ Magic Influence [%]           ")
+[250][5,4]<3>(0,1600030,11,332288,1600034)("","Skills","","┣ Magic Influence (%)           ")
 [250][5,4]<3>(21,1600015,4,331824,1600034)("","×Allies Temp Data","","[Temp] Post-Calc Magic Atk")
 [121][4,0]<3>(1600034,100,0,1024)()
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [121][4,0]<2>(1600035,1600033,1600034,0)()
-[250][5,4]<2>(0,1600030,9,332304,1600035)("","Skills","","┣ Base Amount [Fixed Value]")
+[250][5,4]<2>(0,1600030,9,332304,1600035)("","Skills","","┣ Base Amount (Fixed Value)")
 [103][0,1]<2>()("分散を計算")
 [121][4,0]<2>(1600038,100,0,0)()
-[250][5,4]<2>(0,1600030,12,332304,1600038)("","Skills","","┗ Variance [±%]                     ")
+[250][5,4]<2>(0,1600030,12,332304,1600038)("","Skills","","┗ Variance (±%)                     ")
 [121][4,0]<2>(1600039,100,0,0)()
-[250][5,4]<2>(0,1600030,12,332320,1600039)("","Skills","","┗ Variance [±%]                     ")
+[250][5,4]<2>(0,1600030,12,332320,1600039)("","Skills","","┗ Variance (±%)                     ")
 [121][4,0]<2>(1600038,0,0,1536)()
 [121][4,0]<2>(1600039,0,0,1536)()
 [121][4,0]<2>(1600035,1600039,1600038,25344)()
@@ -797,14 +797,14 @@ WoditorEvCOMMAND_END
  | | | | |■Go to Loop Start
  | | | | |■
  | | | |◇End◇
- | | | |■Load DB(User):  CSelf33[技能TMP２] = UserDB[ "Skills":CSelf30[技能番号]:"┣ Attack Influence [%]           " ] (0:-:10) 
+ | | | |■Load DB(User):  CSelf33[技能TMP２] = UserDB[ "Skills":CSelf30[技能番号]:"┣ Attack Influence (%)           " ] (0:-:10) 
  | | | |■Load DB(Var):  CSelf33[技能TMP２] *= VarDB[ "×Allies Temp Data":CSelf14[対象ID]:"[Temp] Post-Calc Attack" ] (17:-:2) 
  | | | |■Set Variable: CSelf33[技能TMP２] /= 100 + 0 
- | | | |■Load DB(User):  CSelf34[技能TMP３] = UserDB[ "Skills":CSelf30[技能番号]:"┣ Magic Influence [%]           " ] (0:-:11) 
+ | | | |■Load DB(User):  CSelf34[技能TMP３] = UserDB[ "Skills":CSelf30[技能番号]:"┣ Magic Influence (%)           " ] (0:-:11) 
  | | | |■Load DB(Var):  CSelf34[技能TMP３] *= VarDB[ "×Allies Temp Data":CSelf14[対象ID]:"[Temp] Post-Calc Magic Atk" ] (17:-:4) 
  | | | |■Set Variable: CSelf34[技能TMP３] /= 100 + 0 
  | | | |■Set Variable: CSelf35[結果値] = CSelf33[技能TMP２] + CSelf34[技能TMP３] 
- | | | |■Load DB(User):  CSelf35[結果値] += UserDB[ "Skills":CSelf30[技能番号]:"┣ Base Amount [Fixed Value]" ] (0:-:9) 
+ | | | |■Load DB(User):  CSelf35[結果値] += UserDB[ "Skills":CSelf30[技能番号]:"┣ Base Amount (Fixed Value)" ] (0:-:9) 
  | | | |■Condition (Number):   [1] CSelf35[結果値] >  CSelf21[最大効果量[Ver2.28]]  
  | | | |-◇Condition:  [1]  [ CSelf35[結果値] > CSelf21[最大効果量[Ver2.28]]   ] Case↓
  | | | | |■Set Variable: CSelf21[最大効果量[Ver2.28]] = CSelf35[結果値] + 0 
@@ -824,7 +824,7 @@ WoditorEvCOMMAND_END
  |■Load DB(User):  CSelf10[一時変数] = UserDB[ "Skills":CSelf30[技能番号]:"Animation" ] (0:-:19) 
  |■Condition (Number):   [1] CSelf10[一時変数] >=  0  
  |-◇Condition:  [1]  [ CSelf10[一時変数] >= 0   ] Case↓
- | |■Load DB(User):  CSelf12[一時変数２] = UserDB[ "┗ Animations":CSelf10[一時変数]:"Process By [Ignore Settings]" ] (1:-:14) 
+ | |■Load DB(User):  CSelf12[一時変数２] = UserDB[ "┗ Animations":CSelf10[一時変数]:"Process By (Ignore Settings)" ] (1:-:14) 
  | |■Condition (Number):   [1] CSelf12[一時変数２] <=  -1  
  | |-◇Condition:  [1]  [ CSelf12[一時変数２] <= -1   ] Case↓
  | | |■Load DB(User):  CSelf9[表示文字列] = UserDB[ "┗ Animations":CSelf10[一時変数]:"Sound Effect" ] (1:-:9) 
@@ -891,21 +891,21 @@ WoditorEvCOMMAND_END
  | |■Condition (Number):   [1] CSelf1[発動者ID] >=  0  
  | |-◇Condition:  [1]  [ CSelf1[発動者ID] >= 0   ] Case↓
  | | |■Set Variable: CSelf15[発動者ID] = CSelf1[発動者ID] + 0 
- | | |■Load DB(User):  CSelf33[技能TMP２] = UserDB[ "Skills":CSelf30[技能番号]:"┣ Attack Influence [%]           " ] (0:-:10) 
+ | | |■Load DB(User):  CSelf33[技能TMP２] = UserDB[ "Skills":CSelf30[技能番号]:"┣ Attack Influence (%)           " ] (0:-:10) 
  | | |■Load DB(Var):  CSelf33[技能TMP２] *= VarDB[ "×Allies Temp Data":CSelf15[発動者ID]:"[Temp] Post-Calc Attack" ] (17:-:2) 
  | | |■Set Variable: CSelf33[技能TMP２] /= 100 + 0 
- | | |■Load DB(User):  CSelf34[技能TMP３] = UserDB[ "Skills":CSelf30[技能番号]:"┣ Magic Influence [%]           " ] (0:-:11) 
+ | | |■Load DB(User):  CSelf34[技能TMP３] = UserDB[ "Skills":CSelf30[技能番号]:"┣ Magic Influence (%)           " ] (0:-:11) 
  | | |■Load DB(Var):  CSelf34[技能TMP３] *= VarDB[ "×Allies Temp Data":CSelf15[発動者ID]:"[Temp] Post-Calc Magic Atk" ] (17:-:4) 
  | | |■Set Variable: CSelf34[技能TMP３] /= 100 + 0 
  | | |■
  | |◇End◇
  | |■Set Variable: CSelf35[結果値] = CSelf33[技能TMP２] + CSelf34[技能TMP３] 
- | |■Load DB(User):  CSelf35[結果値] += UserDB[ "Skills":CSelf30[技能番号]:"┣ Base Amount [Fixed Value]" ] (0:-:9) 
+ | |■Load DB(User):  CSelf35[結果値] += UserDB[ "Skills":CSelf30[技能番号]:"┣ Base Amount (Fixed Value)" ] (0:-:9) 
  | |▼ 分散を計算
  | |■Set Variable: CSelf38[ランダム上限％] = 100 + 0 
- | |■Load DB(User):  CSelf38[ランダム上限％] += UserDB[ "Skills":CSelf30[技能番号]:"┗ Variance [±%]                     " ] (0:-:12) 
+ | |■Load DB(User):  CSelf38[ランダム上限％] += UserDB[ "Skills":CSelf30[技能番号]:"┗ Variance (±%)                     " ] (0:-:12) 
  | |■Set Variable: CSelf39[ランダム下限％] = 100 + 0 
- | |■Load DB(User):  CSelf39[ランダム下限％] -= UserDB[ "Skills":CSelf30[技能番号]:"┗ Variance [±%]                     " ] (0:-:12) 
+ | |■Load DB(User):  CSelf39[ランダム下限％] -= UserDB[ "Skills":CSelf30[技能番号]:"┗ Variance (±%)                     " ] (0:-:12) 
  | |■Set Variable: CSelf38[ランダム上限％] Lower Bound= 0 + 0 
  | |■Set Variable: CSelf39[ランダム下限％] Lower Bound= 0 + 0 
  | |■Set Variable: CSelf35[結果値] *= CSelf39[ランダム下限％] Random CSelf38[ランダム上限％] 

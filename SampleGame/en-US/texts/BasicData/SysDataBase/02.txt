@@ -12,8 +12,8 @@ DATA_NUM=6
 TYPENAME=BGS List
 ITEMNAME_NUM=4
 ITEMNAME0=Filename
-ITEMNAME1=Playback Volume [%]
-ITEMNAME2=Playback Pitch [%]
+ITEMNAME1=Playback Volume (%)
+ITEMNAME2=Playback Pitch (%)
 ITEMNAME3=Loop Start (ms)
 MEMO=Specify BGS selectable<<\n>>via "By Direct Selection<<\n>>(from SystemDB)" in the<<\n>>Sound command.
 ITEMTYPE_NUM=100
@@ -140,7 +140,7 @@ DEFAULT_VAL_1=100
 DEFAULT_VAL_2=100
 DEFAULT_VAL_3=0
 <<--CSV_START-->>
-"Filename","Playback Volume [%]","Playback Pitch [%]","Loop Start (ms)",
+"Filename","Playback Volume (%)","Playback Pitch (%)","Loop Start (ms)",
 "",100,100,0,<<!--DATANAME--!>>,
 "",100,100,0,<<!--DATANAME--!>>,
 "",100,100,0,<<!--DATANAME--!>>,

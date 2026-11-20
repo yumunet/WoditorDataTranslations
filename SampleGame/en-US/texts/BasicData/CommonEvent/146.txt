@@ -180,10 +180,10 @@ WoditorEvCOMMAND_START
 [250][5,4]<0>(10,1600000,58,327680,0)("","×┏Battle Temp Status","","[Action Restriction]")
 [250][5,4]<0>(10,1600000,59,327680,0)("","×┏Battle Temp Status","","[Skill Limitation] 1:Sealed")
 [250][5,4]<0>(10,1600000,61,327680,-1)("","×┏Battle Temp Status","","[Counterattack?]")
-[250][5,4]<0>(10,1600000,62,327680,0)("","×┏Battle Temp Status","","HP Change per Turn [%]")
-[250][5,4]<0>(10,1600000,63,327680,0)("","×┏Battle Temp Status","","HP Change per Turn [Fixed]")
-[250][5,4]<0>(10,1600000,64,327680,0)("","×┏Battle Temp Status","","SP Change per Turn [%]")
-[250][5,4]<0>(10,1600000,65,327680,0)("","×┏Battle Temp Status","","SP Change per Turn [Fixed]")
+[250][5,4]<0>(10,1600000,62,327680,0)("","×┏Battle Temp Status","","HP Change per Turn (%)")
+[250][5,4]<0>(10,1600000,63,327680,0)("","×┏Battle Temp Status","","HP Change per Turn (Fixed)")
+[250][5,4]<0>(10,1600000,64,327680,0)("","×┏Battle Temp Status","","SP Change per Turn (%)")
+[250][5,4]<0>(10,1600000,65,327680,0)("","×┏Battle Temp Status","","SP Change per Turn (Fixed)")
 [103][0,1]<0>()("基本値を読み込み")
 [250][5,4]<0>(10,1600000,5,331776,1600042)("","×┏Battle Temp Status","","Max HP")
 [250][5,4]<0>(10,1600000,7,331776,1600043)("","×┏Battle Temp Status","","Max SP")
@@ -192,9 +192,9 @@ WoditorEvCOMMAND_START
 [250][5,4]<0>(10,1600000,10,331776,1600046)("","×┏Battle Temp Status","","Base Magic Attack")
 [250][5,4]<0>(10,1600000,11,331776,1600047)("","×┏Battle Temp Status","","Base Magic Defense")
 [250][5,4]<0>(10,1600000,12,331776,1600048)("","×┏Battle Temp Status","","Base Agility")
-[250][5,4]<0>(10,1600000,13,331776,1600049)("","×┏Battle Temp Status","","Base Accuracy [%]")
-[250][5,4]<0>(10,1600000,14,331776,1600050)("","×┏Battle Temp Status","","Base Evasion [%]")
-[250][5,4]<0>(10,1600000,15,331776,1600051)("","×┏Battle Temp Status","","Base Critical Rate [%]")
+[250][5,4]<0>(10,1600000,13,331776,1600049)("","×┏Battle Temp Status","","Base Accuracy (%)")
+[250][5,4]<0>(10,1600000,14,331776,1600050)("","×┏Battle Temp Status","","Base Evasion (%)")
+[250][5,4]<0>(10,1600000,15,331776,1600051)("","×┏Battle Temp Status","","Base Critical Rate (%)")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
 [103][0,1]<0>()("一時値へコピー")
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
@@ -229,10 +229,10 @@ WoditorEvCOMMAND_END
 ■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Action Restriction]" ] (10:-:59) =  0
 ■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Skill Limitation] 1:Sealed" ] (10:-:60) =  0
 ■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"[Counterattack?]" ] (10:-:61) =  -1
-■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"HP Change per Turn [%]" ] (10:-:62) =  0
-■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"HP Change per Turn [Fixed]" ] (10:-:63) =  0
-■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"SP Change per Turn [%]" ] (10:-:64) =  0
-■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"SP Change per Turn [Fixed]" ] (10:-:65) =  0
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"HP Change per Turn (%)" ] (10:-:62) =  0
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"HP Change per Turn (Fixed)" ] (10:-:63) =  0
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"SP Change per Turn (%)" ] (10:-:64) =  0
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"SP Change per Turn (Fixed)" ] (10:-:65) =  0
 ▼ 基本値を読み込み
 ■Load DB(Var):  CSelf42[最大HP] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Max HP" ] (10:-:6) 
 ■Load DB(Var):  CSelf43[最大SP] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Max SP" ] (10:-:8) 
@@ -241,9 +241,9 @@ WoditorEvCOMMAND_END
 ■Load DB(Var):  CSelf46[精神攻撃] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Base Magic Attack" ] (10:-:11) 
 ■Load DB(Var):  CSelf47[精神防御] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Base Magic Defense" ] (10:-:12) 
 ■Load DB(Var):  CSelf48[敏捷性] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Base Agility" ] (10:-:13) 
-■Load DB(Var):  CSelf49[命中率] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Base Accuracy [%]" ] (10:-:14) 
-■Load DB(Var):  CSelf50[回避率] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Base Evasion [%]" ] (10:-:15) 
-■Load DB(Var):  CSelf51[クリティカル] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Base Critical Rate [%]" ] (10:-:16) 
+■Load DB(Var):  CSelf49[命中率] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Base Accuracy (%)" ] (10:-:14) 
+■Load DB(Var):  CSelf50[回避率] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Base Evasion (%)" ] (10:-:15) 
+■Load DB(Var):  CSelf51[クリティカル] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Base Critical Rate (%)" ] (10:-:16) 
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 ▼ 一時値へコピー
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■

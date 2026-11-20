@@ -129,8 +129,8 @@ DEFAULT_VAL_0=0
 DEFAULT_VAL_1=0
 <<--CSV_START-->>
 "Image Filename","Vertical Divisions (V-Div Only)",
-"SystemFile/Text_Pause.png",6,<<!--DATANAME--!>>Message Continue Icon [V-Div],
-"SystemFile/WindowBase.png",0,<<!--DATANAME--!>>Choice Window [No V-Div],
-"SystemFile/CursorBase.png",1,<<!--DATANAME--!>>Choice Cursor [V-Div],
+"SystemFile/Text_Pause.png",6,<<!--DATANAME--!>>Message Continue Icon (V-Div),
+"SystemFile/WindowBase.png",0,<<!--DATANAME--!>>Choice Window (No V-Div),
+"SystemFile/CursorBase.png",1,<<!--DATANAME--!>>Choice Cursor (V-Div),
 
 <<--CSV_END-->>

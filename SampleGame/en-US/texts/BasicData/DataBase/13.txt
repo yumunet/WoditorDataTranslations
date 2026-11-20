@@ -30,7 +30,7 @@ ITEMNAME7=┏ Win Condition
 ITEMNAME8=┗ [A] Value          
 ITEMNAME9=┏ Lose Condition
 ITEMNAME10=┗ [B] Value           
-ITEMNAME11=Flee Success Rate [%]
+ITEMNAME11=Flee Success Rate (%)
 MEMO=After setting "Enemies",<<\n>>set enemy groups here.<<\n>><<\n>>When you want enemies<<\n>>to appear in the game,<<\n>>you'll select which enemy<<\n>>group to use from here.<<\n>><<\n>>(Enemy positions are<<\n>>shown like "◇◇◇◆◇◇◇".<<\n>>This example shows an<<\n>>enemy positioned in the<<\n>>center.)
 ITEMTYPE_NUM=100
 ITEM_LOADTYPE_0=2
@@ -250,7 +250,7 @@ DEFAULT_VAL_9=0
 DEFAULT_VAL_10=0
 DEFAULT_VAL_11=100
 <<--CSV_START-->>
-"Enemy 1 (◇◇◇◆◇◇◇)","Enemy 2 (◇◇◆◇◇◇◇)","Enemy 3 (◇◇◇◇◆◇◇)","Enemy 4 (◇◆◇◇◇◇◇)","Enemy 5 (◇◇◇◇◇◆◇)","Enemy 6 (◆◇◇◇◇◇◇)","Enemy 7 (◇◇◇◇◇◇◆)","┏ Win Condition","┗ [A] Value          ","┏ Lose Condition","┗ [B] Value           ","Flee Success Rate [%]",
+"Enemy 1 (◇◇◇◆◇◇◇)","Enemy 2 (◇◇◆◇◇◇◇)","Enemy 3 (◇◇◇◇◆◇◇)","Enemy 4 (◇◆◇◇◇◇◇)","Enemy 5 (◇◇◇◇◇◆◇)","Enemy 6 (◆◇◇◇◇◇◇)","Enemy 7 (◇◇◇◇◇◇◆)","┏ Win Condition","┗ [A] Value          ","┏ Lose Condition","┗ [B] Value           ","Flee Success Rate (%)",
 1,-1,-1,-1,-1,-1,-1,0,0,0,0,100,<<!--DATANAME--!>>Wolf x1,
 0,0,0,-1,-1,-1,-1,0,0,0,0,100,<<!--DATANAME--!>>Bat x3,
 -1,1,1,-1,-1,-1,-1,0,0,0,0,100,<<!--DATANAME--!>>Wolf x2,
@@ -285,7 +285,7 @@ DEFAULT_VAL_11=100
 31,-1,-1,-1,-1,-1,-1,0,0,0,0,100,<<!--DATANAME--!>>Goblin x1,
 31,31,31,-1,-1,-1,-1,0,0,0,0,100,<<!--DATANAME--!>>Goblin x3,
 32,-3,-3,31,31,31,31,0,0,0,0,100,<<!--DATANAME--!>>Goblin Force,
-33,-1,-1,-1,-1,-1,-1,0,0,100,10,0,<<!--DATANAME--!>>Boss [10 Turns],
+33,-1,-1,-1,-1,-1,-1,0,0,100,10,0,<<!--DATANAME--!>>Boss (10 Turns),
 -1,-1,-1,-1,-1,-1,-1,0,0,0,0,100,<<!--DATANAME--!>>,
 -1,-1,-1,-1,-1,-1,-1,0,0,0,0,100,<<!--DATANAME--!>>,
 -1,-1,-1,-1,-1,-1,-1,0,0,0,0,100,<<!--DATANAME--!>>,

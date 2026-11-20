@@ -197,7 +197,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [250][5,4]<0>(0,1600001,0,331776,1600005)("","Allies","","Character Name")
-[250][5,4]<0>(0,1600001,3,331776,1600006)("","Allies","","Portrait [Battle/Status]")
+[250][5,4]<0>(0,1600001,3,331776,1600006)("","Allies","","Portrait (Battle/Status)")
 [250][5,4]<0>(0,1600001,5,331776,1600040)("","Allies","","HP")
 [250][5,4]<0>(0,1600001,7,331776,1600041)("","Allies","","SP")
 [250][5,4]<0>(0,1600001,6,331776,1600042)("","Allies","","Max HP")
@@ -207,9 +207,9 @@ WoditorEvCOMMAND_START
 [250][5,4]<0>(0,1600001,11,331776,1600046)("","Allies","","Base Magic Attack")
 [250][5,4]<0>(0,1600001,12,331776,1600047)("","Allies","","Base Magic Defense")
 [250][5,4]<0>(0,1600001,13,331776,1600048)("","Allies","","Base Agility")
-[250][5,4]<0>(0,1600001,21,331776,1600049)("","Allies","","Base Accuracy [%]")
-[250][5,4]<0>(0,1600001,22,331776,1600050)("","Allies","","Base Evasion [%]")
-[250][5,4]<0>(0,1600001,14,331776,1600051)("","Allies","","Base Critical Rate [%]")
+[250][5,4]<0>(0,1600001,21,331776,1600049)("","Allies","","Base Accuracy (%)")
+[250][5,4]<0>(0,1600001,22,331776,1600050)("","Allies","","Base Evasion (%)")
+[250][5,4]<0>(0,1600001,14,331776,1600051)("","Allies","","Base Critical Rate (%)")
 [250][5,4]<0>(0,1600001,26,331776,1600060)("","Allies","","Equipped Weapon")
 [250][5,4]<0>(0,1600001,27,331776,1600061)("","Allies","","Equipped Armor 1")
 [250][5,4]<0>(0,1600001,28,331776,1600062)("","Allies","","Equipped Armor 2")
@@ -245,10 +245,10 @@ WoditorEvCOMMAND_START
 [250][5,4]<0>(10,1600000,10,327680,1600046)("","×┏Battle Temp Status","","Base Magic Attack")
 [250][5,4]<0>(10,1600000,11,327680,1600047)("","×┏Battle Temp Status","","Base Magic Defense")
 [250][5,4]<0>(10,1600000,12,327680,1600048)("","×┏Battle Temp Status","","Base Agility")
-[250][5,4]<0>(10,1600000,13,327680,1600049)("","×┏Battle Temp Status","","Base Accuracy [%]")
-[250][5,4]<0>(10,1600000,14,327680,1600050)("","×┏Battle Temp Status","","Base Evasion [%]")
-[250][5,4]<0>(10,1600000,15,327680,1600051)("","×┏Battle Temp Status","","Base Critical Rate [%]")
-[250][5,4]<0>(10,1600000,16,327680,1600001)("","×┏Battle Temp Status","","Character ID [Enemy:10,000+]")
+[250][5,4]<0>(10,1600000,13,327680,1600049)("","×┏Battle Temp Status","","Base Accuracy (%)")
+[250][5,4]<0>(10,1600000,14,327680,1600050)("","×┏Battle Temp Status","","Base Evasion (%)")
+[250][5,4]<0>(10,1600000,15,327680,1600051)("","×┏Battle Temp Status","","Base Critical Rate (%)")
+[250][5,4]<0>(10,1600000,16,327680,1600001)("","×┏Battle Temp Status","","Character ID (Enemy: 10000+)")
 [250][5,4]<0>(10,1600000,17,327680,1600060)("","×┏Battle Temp Status","","Equipped Weapon")
 [250][5,4]<0>(10,1600000,18,327680,1600061)("","×┏Battle Temp Status","","Equipped Armor 1")
 [250][5,4]<0>(10,1600000,19,327680,1600062)("","×┏Battle Temp Status","","Equipped Armor 2")
@@ -456,7 +456,7 @@ WoditorEvCOMMAND_END
  |■
 ◇End◇
 ■Load DB(Var):  CSelf5[キャラ名] = VarDB[ "Allies":CSelf1[読込主人公ID]:"Character Name" ] (0:-:0) 
-■Load DB(Var):  CSelf6[グラフィック名] = VarDB[ "Allies":CSelf1[読込主人公ID]:"Portrait [Battle/Status]" ] (0:-:3) 
+■Load DB(Var):  CSelf6[グラフィック名] = VarDB[ "Allies":CSelf1[読込主人公ID]:"Portrait (Battle/Status)" ] (0:-:3) 
 ■Load DB(Var):  CSelf40[HP] = VarDB[ "Allies":CSelf1[読込主人公ID]:"HP" ] (0:-:6) 
 ■Load DB(Var):  CSelf41[SP] = VarDB[ "Allies":CSelf1[読込主人公ID]:"SP" ] (0:-:8) 
 ■Load DB(Var):  CSelf42[最大HP] = VarDB[ "Allies":CSelf1[読込主人公ID]:"Max HP" ] (0:-:7) 
@@ -466,9 +466,9 @@ WoditorEvCOMMAND_END
 ■Load DB(Var):  CSelf46[精神攻撃] = VarDB[ "Allies":CSelf1[読込主人公ID]:"Base Magic Attack" ] (0:-:12) 
 ■Load DB(Var):  CSelf47[精神防御] = VarDB[ "Allies":CSelf1[読込主人公ID]:"Base Magic Defense" ] (0:-:13) 
 ■Load DB(Var):  CSelf48[敏捷性] = VarDB[ "Allies":CSelf1[読込主人公ID]:"Base Agility" ] (0:-:14) 
-■Load DB(Var):  CSelf49[命中率] = VarDB[ "Allies":CSelf1[読込主人公ID]:"Base Accuracy [%]" ] (0:-:15) 
-■Load DB(Var):  CSelf50[回避率] = VarDB[ "Allies":CSelf1[読込主人公ID]:"Base Evasion [%]" ] (0:-:16) 
-■Load DB(Var):  CSelf51[クリティカル] = VarDB[ "Allies":CSelf1[読込主人公ID]:"Base Critical Rate [%]" ] (0:-:17) 
+■Load DB(Var):  CSelf49[命中率] = VarDB[ "Allies":CSelf1[読込主人公ID]:"Base Accuracy (%)" ] (0:-:15) 
+■Load DB(Var):  CSelf50[回避率] = VarDB[ "Allies":CSelf1[読込主人公ID]:"Base Evasion (%)" ] (0:-:16) 
+■Load DB(Var):  CSelf51[クリティカル] = VarDB[ "Allies":CSelf1[読込主人公ID]:"Base Critical Rate (%)" ] (0:-:17) 
 ■Load DB(Var):  CSelf60[装備武器] = VarDB[ "Allies":CSelf1[読込主人公ID]:"Equipped Weapon" ] (0:-:28) 
 ■Load DB(Var):  CSelf61[装備防具1] = VarDB[ "Allies":CSelf1[読込主人公ID]:"Equipped Armor 1" ] (0:-:29) 
 ■Load DB(Var):  CSelf62[装備防具2] = VarDB[ "Allies":CSelf1[読込主人公ID]:"Equipped Armor 2" ] (0:-:30) 
@@ -504,10 +504,10 @@ WoditorEvCOMMAND_END
 ■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"Base Magic Attack" ] (10:-:11) =  CSelf46[精神攻撃]
 ■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"Base Magic Defense" ] (10:-:12) =  CSelf47[精神防御]
 ■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"Base Agility" ] (10:-:13) =  CSelf48[敏捷性]
-■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"Base Accuracy [%]" ] (10:-:14) =  CSelf49[命中率]
-■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"Base Evasion [%]" ] (10:-:15) =  CSelf50[回避率]
-■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"Base Critical Rate [%]" ] (10:-:16) =  CSelf51[クリティカル]
-■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"Character ID [Enemy:10,000+]" ] (10:-:17) =  CSelf1[読込主人公ID]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"Base Accuracy (%)" ] (10:-:14) =  CSelf49[命中率]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"Base Evasion (%)" ] (10:-:15) =  CSelf50[回避率]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"Base Critical Rate (%)" ] (10:-:16) =  CSelf51[クリティカル]
+■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"Character ID (Enemy: 10000+)" ] (10:-:17) =  CSelf1[読込主人公ID]
 ■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"Equipped Weapon" ] (10:-:18) =  CSelf60[装備武器]
 ■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"Equipped Armor 1" ] (10:-:19) =  CSelf61[装備防具1]
 ■Write to DB(Var): VarDB[ "×┏Battle Temp Status":CSelf0[入力先戦闘DB]:"Equipped Armor 2" ] (10:-:20) =  CSelf62[装備防具2]

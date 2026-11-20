@@ -71,7 +71,7 @@ ITEMNAME25=Message Portrait Scale
 ITEMNAME26=[Battle] Default Battle BGM
 ITEMNAME27=[Battle] Display Enemy Gauge
 ITEMNAME28=[Battle] Display Enemy HP
-ITEMNAME29=[Btl]Enemy Flee Msg(Target...
+ITEMNAME29=[Btl]Enemy Flee Msg: Target...
 ITEMNAME30=[Battle] Event on Game Over
 ITEMNAME31=[Battle] Attack Multiplier
 ITEMNAME32=[Battle] Defense Multiplier
@@ -347,7 +347,7 @@ CHOICE_NAME_22_4=7 Types
 CHOICE_NAME_22_5=8 Types
 CHOICE_NAME_23_NUM=2
 CHOICE_NAME_23_0=Increase by Full Value
-CHOICE_NAME_23_1=Increase by 1/10 of Value [Probability]
+CHOICE_NAME_23_1=Increase by 1/10 of Value (Probability)
 CHOICE_NAME_24_NUM=5
 CHOICE_NAME_24_0=Fit Standard Size
 CHOICE_NAME_24_1=Display at 1/4x
@@ -376,7 +376,7 @@ CHOICE_NAME_30_2=<None>
 CHOICE_NAME_31_NUM=5
 CHOICE_NAME_31_0=Attack x0.5
 CHOICE_NAME_31_1=Attack x0.8
-CHOICE_NAME_31_2=Attack x1 [Exact Values]
+CHOICE_NAME_31_2=Attack x1 (Exact Values)
 CHOICE_NAME_31_3=Attack x1.25
 CHOICE_NAME_31_4=Attack x1.5
 CHOICE_NAME_32_NUM=3
@@ -624,7 +624,7 @@ DEFAULT_VAL_32=100
 DEFAULT_VAL_33=125
 DEFAULT_VAL_34=50
 <<--CSV_START-->>
-"Maximum Item Quantity","Max HP/SP Cap","Stats Cap","Menu Command 1","Menu Command 2","Menu Command 3","Menu Command 4","Menu Command 5","Menu Command 6","Menu Command 7","Menu Command 8","■Special Menu A Name   ","┗ A: Call Common Event","■Special Menu B Name   ","┗ B: Call Common Event","■Special Menu C Name   ","┗ C: Call Common Event","■Special Menu D Name   ","┗ D: Call Common Event","States Display","HP/SP After Battle","Fainted Members After Battle","Equippable Slots","When Increasing Stats...","Status Portrait Scale","Message Portrait Scale","[Battle] Default Battle BGM","[Battle] Display Enemy Gauge","[Battle] Display Enemy HP","[Btl]Enemy Flee Msg(Target...","[Battle] Event on Game Over","[Battle] Attack Multiplier","[Battle] Defense Multiplier","[Battle] Critical Hit Damage","[Battle] Critical Hit Resistance",
+"Maximum Item Quantity","Max HP/SP Cap","Stats Cap","Menu Command 1","Menu Command 2","Menu Command 3","Menu Command 4","Menu Command 5","Menu Command 6","Menu Command 7","Menu Command 8","■Special Menu A Name   ","┗ A: Call Common Event","■Special Menu B Name   ","┗ B: Call Common Event","■Special Menu C Name   ","┗ C: Call Common Event","■Special Menu D Name   ","┗ D: Call Common Event","States Display","HP/SP After Battle","Fainted Members After Battle","Equippable Slots","When Increasing Stats...","Status Portrait Scale","Message Portrait Scale","[Battle] Default Battle BGM","[Battle] Display Enemy Gauge","[Battle] Display Enemy HP","[Btl]Enemy Flee Msg: Target...","[Battle] Event on Game Over","[Battle] Attack Multiplier","[Battle] Defense Multiplier","[Battle] Critical Hit Damage","[Battle] Critical Hit Resistance",
 99,999,999,10,1,2,3,5,4,0,0,"Talk",212,"",-1,"",-1,"",-1,1,0,1,5,0,0,0,"BGM/Battle01_Juno.mid",1,1," ran away!",213,100,50,200,100,<<!--DATANAME--!>>Basic System Settings,
 
 <<--CSV_END-->>

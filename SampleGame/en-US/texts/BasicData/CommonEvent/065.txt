@@ -545,7 +545,7 @@ WoditorEvCOMMAND_END
  |■Condition (Number):   [1] CSelf20[Pressed Key] ==  10  /  [2] CSelf20[Pressed Key] ==  11  
  |-◇Condition:  [1]  [ CSelf20[Pressed Key] == 10   ] Case↓
  | |▼ Confirm key: If selectable, store the currently selected item code and end
- | |■Load DB(Var):  CSelf12[Temp A] = VarDB[ "Universal Window Items":CSelf11[Cursor Position]:2 ] (19:-:Selectable? [1:Yes]) 
+ | |■Load DB(Var):  CSelf12[Temp A] = VarDB[ "Universal Window Items":CSelf11[Cursor Position]:2 ] (19:-:Selectable? (1:Yes)) 
  | |■Condition (Number):   [1] CSelf12[Temp A] ==  1  
  | |-◇Condition:  [1]  [ CSelf12[Temp A] == 1   ] Case↓
  | | |▼ If selectable

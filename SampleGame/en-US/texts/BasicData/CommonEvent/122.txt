@@ -197,13 +197,13 @@ WoditorEvCOMMAND_START
 [250][5,4]<0>(0,1600000,13,331776,1600010)("","Allies","","Base Agility")
 [250][5,4]<0>(21,1600000,6,327680,1600010)("","×Allies Temp Data","","[Temp] Post-Calc Agility")
 [103][0,1]<0>()(" ")
-[250][5,4]<0>(0,1600000,21,331776,1600010)("","Allies","","Base Accuracy [%]")
+[250][5,4]<0>(0,1600000,21,331776,1600010)("","Allies","","Base Accuracy (%)")
 [250][5,4]<0>(21,1600000,7,327680,1600010)("","×Allies Temp Data","","[Temp] Post-Calc Accuracy")
 [103][0,1]<0>()(" ")
-[250][5,4]<0>(0,1600000,22,331776,1600010)("","Allies","","Base Evasion [%]")
+[250][5,4]<0>(0,1600000,22,331776,1600010)("","Allies","","Base Evasion (%)")
 [250][5,4]<0>(21,1600000,8,327680,1600010)("","×Allies Temp Data","","[Temp] Post-Calc Evasion")
 [103][0,1]<0>()(" ")
-[250][5,4]<0>(0,1600000,14,331776,1600010)("","Allies","","Base Critical Rate [%]")
+[250][5,4]<0>(0,1600000,14,331776,1600010)("","Allies","","Base Critical Rate (%)")
 [250][5,4]<0>(21,1600000,9,327680,1600010)("","×Allies Temp Data","","[Temp]Post-Calc Critical Rate")
 [103][0,1]<0>()(" ")
 [0][0,0]<0>()()
@@ -244,13 +244,13 @@ WoditorEvCOMMAND_END
 ■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "Allies":CSelf0[対象主人公ID]:"Base Agility" ] (0:-:14) 
 ■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[対象主人公ID]:"[Temp] Post-Calc Agility" ] (17:-:6) =  CSelf10[一時変数A]
 ▼  
-■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "Allies":CSelf0[対象主人公ID]:"Base Accuracy [%]" ] (0:-:15) 
+■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "Allies":CSelf0[対象主人公ID]:"Base Accuracy (%)" ] (0:-:15) 
 ■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[対象主人公ID]:"[Temp] Post-Calc Accuracy" ] (17:-:7) =  CSelf10[一時変数A]
 ▼  
-■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "Allies":CSelf0[対象主人公ID]:"Base Evasion [%]" ] (0:-:16) 
+■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "Allies":CSelf0[対象主人公ID]:"Base Evasion (%)" ] (0:-:16) 
 ■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[対象主人公ID]:"[Temp] Post-Calc Evasion" ] (17:-:8) =  CSelf10[一時変数A]
 ▼  
-■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "Allies":CSelf0[対象主人公ID]:"Base Critical Rate [%]" ] (0:-:17) 
+■Load DB(Var):  CSelf10[一時変数A] = VarDB[ "Allies":CSelf0[対象主人公ID]:"Base Critical Rate (%)" ] (0:-:17) 
 ■Write to DB(Var): VarDB[ "×Allies Temp Data":CSelf0[対象主人公ID]:"[Temp]Post-Calc Critical Rate" ] (17:-:9) =  CSelf10[一時変数A]
 ▼  
 ■

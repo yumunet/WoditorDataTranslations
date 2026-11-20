@@ -42,23 +42,23 @@ ITEMNAME5=Defense
 ITEMNAME6=Magic Attack
 ITEMNAME7=Magic Defense
 ITEMNAME8=Agility
-ITEMNAME9=Base Accuracy [%]
-ITEMNAME10=Base Evasion [%]
-ITEMNAME11=Critical Rate [%]
+ITEMNAME9=Base Accuracy (%)
+ITEMNAME10=Base Evasion (%)
+ITEMNAME11=Critical Rate (%)
 ITEMNAME12=Experience
 ITEMNAME13=Money
-ITEMNAME14=Item Drop                       
-ITEMNAME15=┗ Drop Rate [Item] [%]
-ITEMNAME16=Weapon Drop                        
-ITEMNAME17=┗ Drop Rate [Weapon] [%]
-ITEMNAME18=Armor Drop                       
-ITEMNAME19=┗ Drop Rate [Armor] [%]
+ITEMNAME14=Item Drop                    
+ITEMNAME15=┗ Item Drop Rate (%)
+ITEMNAME16=Weapon Drop                      
+ITEMNAME17=┗ Weapon Drop Rate (%)
+ITEMNAME18=Armor Drop                     
+ITEMNAME19=┗ Armor Drop Rate (%)
 ITEMNAME20=Number of Actions
 ITEMNAME21=┏ Transform Condition
 ITEMNAME22=┃┗  [A] Value                  
 ITEMNAME23=┣ Transforms Into         
 ITEMNAME24=┣ Transform Option     
-ITEMNAME25=┗ Call Event [-1:None] 
+ITEMNAME25=┗ Call Event (-1:None) 
 MEMO=■Item drops are obtained<<\n>>only when HP is 0.<<\n>><<\n>>Page 2 has the Number of<<\n>>Actions and Transform<<\n>>settings.<<\n>><<\n>>(Even if you set Max HP to<<\n>>0 or lower, it will<<\n>>automatically be set to 1.)
 ITEMTYPE_NUM=100
 ITEM_LOADTYPE_0=0
@@ -317,7 +317,7 @@ DEFAULT_VAL_23=0
 DEFAULT_VAL_24=0
 DEFAULT_VAL_25=-1
 <<--CSV_START-->>
-"Enemy Name","Image File","Max HP","Max SP","Attack","Defense","Magic Attack","Magic Defense","Agility","Base Accuracy [%]","Base Evasion [%]","Critical Rate [%]","Experience","Money","Item Drop                       ","┗ Drop Rate [Item] [%]","Weapon Drop                        ","┗ Drop Rate [Weapon] [%]","Armor Drop                       ","┗ Drop Rate [Armor] [%]","Number of Actions","┏ Transform Condition","┃┗  [A] Value                  ","┣ Transforms Into         ","┣ Transform Option     ","┗ Call Event [-1:None] ",
+"Enemy Name","Image File","Max HP","Max SP","Attack","Defense","Magic Attack","Magic Defense","Agility","Base Accuracy (%)","Base Evasion (%)","Critical Rate (%)","Experience","Money","Item Drop                    ","┗ Item Drop Rate (%)","Weapon Drop                      ","┗ Weapon Drop Rate (%)","Armor Drop                     ","┗ Armor Drop Rate (%)","Number of Actions","┏ Transform Condition","┃┗  [A] Value                  ","┣ Transforms Into         ","┣ Transform Option     ","┗ Call Event (-1:None) ",
 "Bat","EnemyGraphic/GD_Bat.png",20,0,10,0,5,0,30,80,0,0,15,8,-1,0,-1,0,-1,0,1,0,0,0,0,-1,
 "Wolf","EnemyGraphic/GD_Dog.png",40,0,20,4,10,0,15,80,0,0,20,17,-1,0,-1,0,-1,0,1,0,0,0,0,-1,
 "Rainbow Bird","EnemyGraphic/GD_Bird(Rainbow).png",40,0,17,4,10,0,25,80,30,0,20,17,-1,0,-1,0,-1,0,1,0,0,0,0,-1,

@@ -192,11 +192,11 @@ WoditorEvCOMMAND_START
 [111][7,0]<3>(2,1600012,29999,3,1600012,39999,3)()
 [401][1,0]<3>(1)()
 [121][4,0]<4>(1600031,1600012,20000,16384)()
-[250][5,4]<4>(3,1600031,1,332288,1600009)("","Weapons","","Description [Up to 2 Lines]")
+[250][5,4]<4>(3,1600031,1,332288,1600009)("","Weapons","","Description (Up to 2 Lines)")
 [0][0,0]<4>()()
 [401][1,0]<3>(2)()
 [121][4,0]<4>(1600031,1600012,30000,16384)()
-[250][5,4]<4>(4,1600031,1,332288,1600009)("","Armor","","Description [Up to 2 Lines]")
+[250][5,4]<4>(4,1600031,1,332288,1600009)("","Armor","","Description (Up to 2 Lines)")
 [0][0,0]<4>()()
 [499][0,0]<3>()()
 [0][0,0]<3>()()
@@ -602,11 +602,11 @@ WoditorEvCOMMAND_END
  | | |■Condition (Number):   [1] CSelf12[一時変数A] <=  29999  /  [2] CSelf12[一時変数A] <=  39999  
  | | |-◇Condition:  [1]  [ CSelf12[一時変数A] <= 29999   ] Case↓
  | | | |■Set Variable: CSelf31[一時変数C] = CSelf12[一時変数A] % 20000 
- | | | |■Load DB(User):  CSelf9[説明文] = UserDB[ "Weapons":CSelf31[一時変数C]:"Description [Up to 2 Lines]" ] (3:-:1) 
+ | | | |■Load DB(User):  CSelf9[説明文] = UserDB[ "Weapons":CSelf31[一時変数C]:"Description (Up to 2 Lines)" ] (3:-:1) 
  | | | |■
  | | |-◇Condition:  [2]  [ CSelf12[一時変数A] <= 39999   ] Case↓
  | | | |■Set Variable: CSelf31[一時変数C] = CSelf12[一時変数A] % 30000 
- | | | |■Load DB(User):  CSelf9[説明文] = UserDB[ "Armor":CSelf31[一時変数C]:"Description [Up to 2 Lines]" ] (4:-:1) 
+ | | | |■Load DB(User):  CSelf9[説明文] = UserDB[ "Armor":CSelf31[一時変数C]:"Description (Up to 2 Lines)" ] (4:-:1) 
  | | | |■
  | | |◇End◇
  | | |■

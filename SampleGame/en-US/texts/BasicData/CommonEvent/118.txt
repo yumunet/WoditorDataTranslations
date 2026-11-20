@@ -351,16 +351,16 @@ WoditorEvCOMMAND_START
 [300][3,1]<2>(0,1,1600014)("X[Map]CalcTempStats <StatusEffects>")
 [103][0,1]<2>()("HP回復値の計算")
 [250][5,4]<2>(21,1600014,0,331776,1600033)("","×Allies Temp Data","","[Temp] Post-Calc Max HP")
-[250][5,4]<2>(2,1600030,10,332288,1600032)("","Items","","HP Recovery [X% of Max]")
+[250][5,4]<2>(2,1600030,10,332288,1600032)("","Items","","HP Recovery (X% of Max)")
 [121][4,0]<2>(1600033,1600032,0,768)()
 [121][4,0]<2>(1600033,100,0,1024)()
-[250][5,4]<2>(2,1600030,11,332304,1600033)("","Items","","┗ + HP Recovery [Points]")
+[250][5,4]<2>(2,1600030,11,332304,1600033)("","Items","","┗ + HP Recovery (Points)")
 [103][0,1]<2>()("SP回復値の計算")
 [250][5,4]<2>(21,1600014,1,331776,1600035)("","×Allies Temp Data","","[Temp] Post-Calc Max SP")
-[250][5,4]<2>(2,1600030,12,332288,1600034)("","Items","","SP Recovery [X% of Max]")
+[250][5,4]<2>(2,1600030,12,332288,1600034)("","Items","","SP Recovery (X% of Max)")
 [121][4,0]<2>(1600035,1600034,0,768)()
 [121][4,0]<2>(1600035,100,0,1024)()
-[250][5,4]<2>(2,1600030,13,332304,1600035)("","Items","","┗ + SP Recovery [Points]")
+[250][5,4]<2>(2,1600030,13,332304,1600035)("","Items","","┗ + SP Recovery (Points)")
 [300][6,1]<2>(0,4,1600014,22,1600033,0)("X[Map]Change Parameter")
 [300][6,1]<2>(0,4,1600014,23,1600035,0)("X[Map]Change Parameter")
 [103][0,1]<2>()("回復エフェクト＋表示更新")
@@ -638,16 +638,16 @@ WoditorEvCOMMAND_END
  | |■Call Event [Name]: ["X[Map]CalcTempStats <StatusEffects>"] <CommonEv 124>  / CSelf14[一時キャラID]
  | |▼ HP回復値の計算
  | |■Load DB(Var):  CSelf33[最終HP回復値] = VarDB[ "×Allies Temp Data":CSelf14[一時キャラID]:"[Temp] Post-Calc Max HP" ] (17:-:0) 
- | |■Load DB(User):  CSelf32[HP回復％] = UserDB[ "Items":CSelf30[アイテム番号]:"HP Recovery [X% of Max]" ] (2:-:10) 
+ | |■Load DB(User):  CSelf32[HP回復％] = UserDB[ "Items":CSelf30[アイテム番号]:"HP Recovery (X% of Max)" ] (2:-:10) 
  | |■Set Variable: CSelf33[最終HP回復値] *= CSelf32[HP回復％] + 0 
  | |■Set Variable: CSelf33[最終HP回復値] /= 100 + 0 
- | |■Load DB(User):  CSelf33[最終HP回復値] += UserDB[ "Items":CSelf30[アイテム番号]:"┗ + HP Recovery [Points]" ] (2:-:11) 
+ | |■Load DB(User):  CSelf33[最終HP回復値] += UserDB[ "Items":CSelf30[アイテム番号]:"┗ + HP Recovery (Points)" ] (2:-:11) 
  | |▼ SP回復値の計算
  | |■Load DB(Var):  CSelf35[最終SP回復値] = VarDB[ "×Allies Temp Data":CSelf14[一時キャラID]:"[Temp] Post-Calc Max SP" ] (17:-:1) 
- | |■Load DB(User):  CSelf34[SP回復％] = UserDB[ "Items":CSelf30[アイテム番号]:"SP Recovery [X% of Max]" ] (2:-:12) 
+ | |■Load DB(User):  CSelf34[SP回復％] = UserDB[ "Items":CSelf30[アイテム番号]:"SP Recovery (X% of Max)" ] (2:-:12) 
  | |■Set Variable: CSelf35[最終SP回復値] *= CSelf34[SP回復％] + 0 
  | |■Set Variable: CSelf35[最終SP回復値] /= 100 + 0 
- | |■Load DB(User):  CSelf35[最終SP回復値] += UserDB[ "Items":CSelf30[アイテム番号]:"┗ + SP Recovery [Points]" ] (2:-:13) 
+ | |■Load DB(User):  CSelf35[最終SP回復値] += UserDB[ "Items":CSelf30[アイテム番号]:"┗ + SP Recovery (Points)" ] (2:-:13) 
  | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf14[一時キャラID] / 22:HP / CSelf33[最終HP回復値] / 0:No
  | |■Call Event [Name]: ["X[Map]Change Parameter"] <CommonEv 70>  / CSelf14[一時キャラID] / 23:SP / CSelf35[最終SP回復値] / 0:No
  | |▼ 回復エフェクト＋表示更新

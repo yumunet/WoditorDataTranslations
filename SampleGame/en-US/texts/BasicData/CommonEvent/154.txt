@@ -241,7 +241,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<6>()(" ")
 [103][0,1]<6>()("発動アイテムチェック")
 [121][4,0]<6>(1600014,1,0,0)()
-[250][5,4]<6>(0,1600034,20,332288,1600013)("","Skills","","Item Required? [Consume]")
+[250][5,4]<6>(0,1600034,20,332288,1600013)("","Skills","","Item Required? (Consume)")
 [111][4,0]<6>(1,1600013,0,1)()
 [401][1,0]<6>(1)()
 [300][4,1]<7>(0,16777217,1600013,1600013)("X[Com]Get Item Quantity")
@@ -261,13 +261,13 @@ WoditorEvCOMMAND_START
 [111][7,0]<7>(2,1600012,101,2,1600012,0,1)()
 [401][1,0]<7>(1)()
 [103][0,1]<8>()("イベント起動")
-[250][5,4]<8>(19,1600032,2,327680,1)("","Universal Window Items","","Selectable? [1:Yes]")
+[250][5,4]<8>(19,1600032,2,327680,1)("","Universal Window Items","","Selectable? (1:Yes)")
 [0][0,0]<8>()()
 [401][1,0]<7>(2)()
 [111][4,0]<8>(1,1600012,12,3)()
 [401][1,0]<8>(1)()
 [103][0,1]<9>()("味方に対して使用可能")
-[250][5,4]<9>(19,1600032,2,327680,1)("","Universal Window Items","","Selectable? [1:Yes]")
+[250][5,4]<9>(19,1600032,2,327680,1)("","Universal Window Items","","Selectable? (1:Yes)")
 [0][0,0]<9>()()
 [499][0,0]<8>()()
 [0][0,0]<8>()()
@@ -372,7 +372,7 @@ WoditorEvCOMMAND_END
  | | | | | |▼  
  | | | | | |▼ 発動アイテムチェック
  | | | | | |■Set Variable: CSelf14[発動アイテムチェック] = 1 + 0 
- | | | | | |■Load DB(User):  CSelf13[一時変数C] = UserDB[ "Skills":CSelf34[技能コード]:"Item Required? [Consume]" ] (0:-:20) 
+ | | | | | |■Load DB(User):  CSelf13[一時変数C] = UserDB[ "Skills":CSelf34[技能コード]:"Item Required? (Consume)" ] (0:-:20) 
  | | | | | |■Condition (Number):   [1] CSelf13[一時変数C] >=  0  
  | | | | | |-◇Condition:  [1]  [ CSelf13[一時変数C] >= 0   ] Case↓
  | | | | | | |■Call Event [Name]: CSelf13[一時変数C] = ["X[Com]Get Item Quantity"] <CommonEv 54>  / CSelf13[一時変数C]
@@ -392,13 +392,13 @@ WoditorEvCOMMAND_END
  | | | | | | |■Condition (Number):   [1] CSelf12[一時変数B] ==  101  /  [2] CSelf12[一時変数B] >=  0  
  | | | | | | |-◇Condition:  [1]  [ CSelf12[一時変数B] == 101   ] Case↓
  | | | | | | | |▼ イベント起動
- | | | | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1:Yes]" ] (19:-:2) =  1
+ | | | | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? (1:Yes)" ] (19:-:2) =  1
  | | | | | | | |■
  | | | | | | |-◇Condition:  [2]  [ CSelf12[一時変数B] >= 0   ] Case↓
  | | | | | | | |■Condition (Number):   [1] CSelf12[一時変数B] <=  12  
  | | | | | | | |-◇Condition:  [1]  [ CSelf12[一時変数B] <= 12   ] Case↓
  | | | | | | | | |▼ 味方に対して使用可能
- | | | | | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? [1:Yes]" ] (19:-:2) =  1
+ | | | | | | | | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf32[万能ウィンドウ登録位置]:"Selectable? (1:Yes)" ] (19:-:2) =  1
  | | | | | | | | |■
  | | | | | | | |◇End◇
  | | | | | | | |■

@@ -173,7 +173,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600097,12,0,0)()
 [121][4,0]<0>(1600098,4,0,0)()
 [103][0,1]<0>()("■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■")
-[250][5,4]<0>(10,1600000,17,331776,1600028)("","×┏Battle Temp Status","","Character ID [Enemy:10,000+]")
+[250][5,4]<0>(10,1600000,17,331776,1600028)("","×┏Battle Temp Status","","Character ID (Enemy: 10000+)")
 [111][7,0]<0>(18,1600028,10000,1,1600028,0,1)()
 [401][1,0]<0>(1)()
 [121][4,0]<1>(1600027,1,0,0)()
@@ -747,7 +747,7 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf97[最大アクション設定可能数] = 12 + 0 
 ■Set Variable: CSelf98[AIアクション一セット数] = 4 + 0 
 ▼ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-■Load DB(Var):  CSelf28[キャラID] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Character ID [Enemy:10,000+]" ] (10:-:17) 
+■Load DB(Var):  CSelf28[キャラID] = VarDB[ "×┏Battle Temp Status":CSelf0[対象戦闘ｽﾛｯﾄ]:"Character ID (Enemy: 10000+)" ] (10:-:17) 
 ■Condition (Number):   [1] CSelf28[キャラID] >=  10000  /  [2] CSelf28[キャラID] >=  0  
 -◇Condition:  [1]  [ CSelf28[キャラID] >= 10000   ] Case↓
  |■Set Variable: CSelf27[味方(0)or敵(1)] = 1 + 0 

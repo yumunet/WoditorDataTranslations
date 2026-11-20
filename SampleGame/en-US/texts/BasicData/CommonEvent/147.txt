@@ -234,9 +234,9 @@ WoditorEvCOMMAND_START
 [250][5,4]<3>(3,1600021,10,332304,1600054)("","Weapons","","Magic Attack Change")
 [250][5,4]<3>(3,1600021,11,332304,1600055)("","Weapons","","Magic Defense Change")
 [250][5,4]<3>(3,1600021,12,332304,1600056)("","Weapons","","Agility Change")
-[250][5,4]<3>(3,1600021,13,332304,1600057)("","Weapons","","Accuracy [%] Change")
-[250][5,4]<3>(3,1600021,14,332304,1600058)("","Weapons","","Evasion [%] Change")
-[250][5,4]<3>(3,1600021,15,332304,1600059)("","Weapons","","Critical Rate [%] Change")
+[250][5,4]<3>(3,1600021,13,332304,1600057)("","Weapons","","Accuracy (%) Change")
+[250][5,4]<3>(3,1600021,14,332304,1600058)("","Weapons","","Evasion (%) Change")
+[250][5,4]<3>(3,1600021,15,332304,1600059)("","Weapons","","Critical Rate (%) Change")
 [121][4,0]<3>(1600029,1600021,0,0)()
 [121][4,0]<3>(1600099,1,0,0)()
 [0][0,0]<3>()()
@@ -250,9 +250,9 @@ WoditorEvCOMMAND_START
 [250][5,4]<3>(4,1600021,10,332304,1600054)("","Armor","","Magic Attack Change")
 [250][5,4]<3>(4,1600021,11,332304,1600055)("","Armor","","Magic Defense Change")
 [250][5,4]<3>(4,1600021,12,332304,1600056)("","Armor","","Agility Change")
-[250][5,4]<3>(4,1600021,13,332304,1600057)("","Armor","","Accuracy [%] Change")
-[250][5,4]<3>(4,1600021,14,332304,1600058)("","Armor","","Evasion [%] Change")
-[250][5,4]<3>(4,1600021,15,332304,1600059)("","Armor","","Critical Rate [%] Change")
+[250][5,4]<3>(4,1600021,13,332304,1600057)("","Armor","","Accuracy (%) Change")
+[250][5,4]<3>(4,1600021,14,332304,1600058)("","Armor","","Evasion (%) Change")
+[250][5,4]<3>(4,1600021,15,332304,1600059)("","Armor","","Critical Rate (%) Change")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [0][0,0]<2>()()
@@ -341,9 +341,9 @@ WoditorEvCOMMAND_END
  | | |■Load DB(User):  CSelf54[精神攻撃変化値総計] += UserDB[ "Weapons":CSelf21[一時装備番号]:"Magic Attack Change" ] (3:-:10) 
  | | |■Load DB(User):  CSelf55[精神防御変化値総計] += UserDB[ "Weapons":CSelf21[一時装備番号]:"Magic Defense Change" ] (3:-:11) 
  | | |■Load DB(User):  CSelf56[敏捷度変化値総計] += UserDB[ "Weapons":CSelf21[一時装備番号]:"Agility Change" ] (3:-:12) 
- | | |■Load DB(User):  CSelf57[命中率変化値総計] += UserDB[ "Weapons":CSelf21[一時装備番号]:"Accuracy [%] Change" ] (3:-:13) 
- | | |■Load DB(User):  CSelf58[回避率変化値総計] += UserDB[ "Weapons":CSelf21[一時装備番号]:"Evasion [%] Change" ] (3:-:14) 
- | | |■Load DB(User):  CSelf59[ｸﾘﾃｨｶﾙ率変化値総計] += UserDB[ "Weapons":CSelf21[一時装備番号]:"Critical Rate [%] Change" ] (3:-:15) 
+ | | |■Load DB(User):  CSelf57[命中率変化値総計] += UserDB[ "Weapons":CSelf21[一時装備番号]:"Accuracy (%) Change" ] (3:-:13) 
+ | | |■Load DB(User):  CSelf58[回避率変化値総計] += UserDB[ "Weapons":CSelf21[一時装備番号]:"Evasion (%) Change" ] (3:-:14) 
+ | | |■Load DB(User):  CSelf59[ｸﾘﾃｨｶﾙ率変化値総計] += UserDB[ "Weapons":CSelf21[一時装備番号]:"Critical Rate (%) Change" ] (3:-:15) 
  | | |■Set Variable: CSelf29[使用中武器番号] = CSelf21[一時装備番号] + 0 
  | | |■Set Variable: CSelf99[武器ある？] = 1 + 0 
  | | |■
@@ -357,9 +357,9 @@ WoditorEvCOMMAND_END
  | | |■Load DB(User):  CSelf54[精神攻撃変化値総計] += UserDB[ "Armor":CSelf21[一時装備番号]:"Magic Attack Change" ] (4:-:9) 
  | | |■Load DB(User):  CSelf55[精神防御変化値総計] += UserDB[ "Armor":CSelf21[一時装備番号]:"Magic Defense Change" ] (4:-:10) 
  | | |■Load DB(User):  CSelf56[敏捷度変化値総計] += UserDB[ "Armor":CSelf21[一時装備番号]:"Agility Change" ] (4:-:11) 
- | | |■Load DB(User):  CSelf57[命中率変化値総計] += UserDB[ "Armor":CSelf21[一時装備番号]:"Accuracy [%] Change" ] (4:-:12) 
- | | |■Load DB(User):  CSelf58[回避率変化値総計] += UserDB[ "Armor":CSelf21[一時装備番号]:"Evasion [%] Change" ] (4:-:13) 
- | | |■Load DB(User):  CSelf59[ｸﾘﾃｨｶﾙ率変化値総計] += UserDB[ "Armor":CSelf21[一時装備番号]:"Critical Rate [%] Change" ] (4:-:14) 
+ | | |■Load DB(User):  CSelf57[命中率変化値総計] += UserDB[ "Armor":CSelf21[一時装備番号]:"Accuracy (%) Change" ] (4:-:12) 
+ | | |■Load DB(User):  CSelf58[回避率変化値総計] += UserDB[ "Armor":CSelf21[一時装備番号]:"Evasion (%) Change" ] (4:-:13) 
+ | | |■Load DB(User):  CSelf59[ｸﾘﾃｨｶﾙ率変化値総計] += UserDB[ "Armor":CSelf21[一時装備番号]:"Critical Rate (%) Change" ] (4:-:14) 
  | | |■
  | |◇End◇
  | |■

@@ -381,7 +381,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<1>()("Display the inner elements (each shifted with the Shift Position effect)")
 [179][1,0]<1>(1)()
 [103][0,1]<2>()("Portrait")
-[250][5,4]<2>(0,1600002,3,331776,1600007)("","Allies","","Portrait [Battle/Status]")
+[250][5,4]<2>(0,1600002,3,331776,1600007)("","Allies","","Portrait (Battle/Status)")
 [121][4,0]<2>(1600021,1600020,2,0)()
 [103][0,1]<2>()("Calculate the portrait frame size")
 [121][4,0]<2>(1600057,48,1600089,8192)()
@@ -966,7 +966,7 @@ WoditorEvCOMMAND_END
  |▼ Display the inner elements (each shifted with the Shift Position effect)
  |■Repeat Loop [ 1 ] Times
  | |▼ Portrait
- | |■Load DB(Var):  CSelf7[Display Item Name] = VarDB[ "Allies":CSelf2[Ally ID]:"Portrait [Battle/Status]" ] (0:-:3) 
+ | |■Load DB(Var):  CSelf7[Display Item Name] = VarDB[ "Allies":CSelf2[Ally ID]:"Portrait (Battle/Status)" ] (0:-:3) 
  | |■Set Variable: CSelf21[Temp Picture ID] = CSelf20[Base Picture ID] + 2 
  | |▼ Calculate the portrait frame size
  | |■Set Variable: CSelf57[Portrait Width] = 48 * CSelf89[Coordinate Scale Y (x10)] 

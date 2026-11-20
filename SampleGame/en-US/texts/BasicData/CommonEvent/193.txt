@@ -183,7 +183,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<0>(1600010,9,0,0)()
 [179][1,0]<0>(1600020)()
 [121][4,0]<1>(1600010,1,0,256)()
-[250][5,4]<1>(11,1600010,17,331776,1600012)("","×┏Battle Temp Status","","Character ID [Enemy:10,000+]")
+[250][5,4]<1>(11,1600010,17,331776,1600012)("","×┏Battle Temp Status","","Character ID (Enemy: 10000+)")
 [111][4,0]<1>(1,1600012,10000,1)()
 [401][1,0]<1>(1)()
 [300][3,1]<2>(0,1,1600010)("X[Bat]Process AI Actions")
@@ -199,7 +199,7 @@ WoditorEvCOMMAND_START
 [121][4,0]<1>(1600010,-1,0,0)()
 [179][1,0]<1>(1600020)()
 [121][4,0]<2>(1600010,1,0,256)()
-[250][5,4]<2>(11,1600010,17,331776,1600012)("","×┏Battle Temp Status","","Character ID [Enemy:10,000+]")
+[250][5,4]<2>(11,1600010,17,331776,1600012)("","×┏Battle Temp Status","","Character ID (Enemy: 10000+)")
 [111][4,0]<2>(1,1600012,0,1)()
 [401][1,0]<2>(1)()
 [250][5,4]<3>(0,1600012,59,331776,1600011)("","Allies","","Auto-Act with AI?")
@@ -234,7 +234,7 @@ WoditorEvCOMMAND_END
 ■Set Variable: CSelf10[一時変数A] = 9 + 0 
 ■Repeat Loop [ CSelf20[繰り返し回数] ] Times
  |■Set Variable: CSelf10[一時変数A] += 1 + 0 
- |■Load DB(Var):  CSelf12[キャラID] = VarDB[ "×┏Battle Temp Status":CSelf10[一時変数A]:"Character ID [Enemy:10,000+]" ] (10:-:17) 
+ |■Load DB(Var):  CSelf12[キャラID] = VarDB[ "×┏Battle Temp Status":CSelf10[一時変数A]:"Character ID (Enemy: 10000+)" ] (10:-:17) 
  |■Condition (Number):   [1] CSelf12[キャラID] >=  10000  
  |-◇Condition:  [1]  [ CSelf12[キャラID] >= 10000   ] Case↓
  | |■Call Event [Name]: ["X[Bat]Process AI Actions"] <CommonEv 160>  / CSelf10[一時変数A]
@@ -250,7 +250,7 @@ WoditorEvCOMMAND_END
  |■Set Variable: CSelf10[一時変数A] = -1 + 0 
  |■Repeat Loop [ CSelf20[繰り返し回数] ] Times
  | |■Set Variable: CSelf10[一時変数A] += 1 + 0 
- | |■Load DB(Var):  CSelf12[キャラID] = VarDB[ "×┏Battle Temp Status":CSelf10[一時変数A]:"Character ID [Enemy:10,000+]" ] (10:-:17) 
+ | |■Load DB(Var):  CSelf12[キャラID] = VarDB[ "×┏Battle Temp Status":CSelf10[一時変数A]:"Character ID (Enemy: 10000+)" ] (10:-:17) 
  | |■Condition (Number):   [1] CSelf12[キャラID] >=  0  
  | |-◇Condition:  [1]  [ CSelf12[キャラID] >= 0   ] Case↓
  | | |■Load DB(Var):  CSelf11[一時変数B] = VarDB[ "Allies":CSelf12[キャラID]:"Auto-Act with AI?" ] (0:-:58) 

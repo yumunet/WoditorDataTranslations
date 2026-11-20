@@ -38,7 +38,7 @@ DATA_NUM=24
 TYPENAME=Weapons
 ITEMNAME_NUM=30
 ITEMNAME0=Weapon Name
-ITEMNAME1=Description [Up to 2 Lines]
+ITEMNAME1=Description (Up to 2 Lines)
 ITEMNAME2=Equipment Type
 ITEMNAME3=Equippable Slots 1-4
 ITEMNAME4=Equippable Slots 5-8
@@ -50,19 +50,19 @@ ITEMNAME9=Defense Change
 ITEMNAME10=Magic Attack Change
 ITEMNAME11=Magic Defense Change
 ITEMNAME12=Agility Change
-ITEMNAME13=Accuracy [%] Change
-ITEMNAME14=Evasion [%] Change
-ITEMNAME15=Critical Rate [%] Change
+ITEMNAME13=Accuracy (%) Change
+ITEMNAME14=Evasion (%) Change
+ITEMNAME15=Critical Rate (%) Change
 ITEMNAME16=Equipped, Can't Remove?
-ITEMNAME17=Sell Price [0=Can't Sell]
+ITEMNAME17=Sell Price (0=Can't Sell)
 ITEMNAME18=┏ Add State       
-ITEMNAME19=┗ State Rate [%]
+ITEMNAME19=┗ State Rate (%)
 ITEMNAME20=┏ Change Battle Command
 ITEMNAME21=┗ New Command                
 ITEMNAME22=Skill When Used As Item       
 ITEMNAME23=┣ Skill to Use                          
-ITEMNAME24=┣ Message [Map]                  
-ITEMNAME25=┣ Message [Battle] (Name...
+ITEMNAME24=┣ Message (Map)                  
+ITEMNAME25=┣ Message (Battle): Name...
 ITEMNAME26=┗ Item Changes After Use   
 ITEMNAME27=Exclusive Slots on Equip
 ITEMNAME28=Element 1
@@ -274,8 +274,8 @@ CHOICE_NAME_20_13=Add If Command 5 Is Empty
 CHOICE_NAME_20_14=Add If Command 6 Is Empty
 CHOICE_NAME_20_15=Add If Command 7 Is Empty
 CHOICE_NAME_20_16=Add If Command 8 Is Empty
-CHOICE_NAME_20_17=Add to Empty Slot [Front]
-CHOICE_NAME_20_18=Add to Empty Slot [Back]
+CHOICE_NAME_20_17=Add to Empty Slot (Front)
+CHOICE_NAME_20_18=Add to Empty Slot (Back)
 CHOICE_NAME_21_NUM=0
 CHOICE_NAME_22_NUM=2
 CHOICE_NAME_22_0=<Can't Use>
@@ -288,7 +288,7 @@ CHOICE_NAME_26_0=<Disappear>
 CHOICE_NAME_26_1=<No Change>
 CHOICE_NAME_26_2=<No Change>
 CHOICE_NAME_27_NUM=5
-CHOICE_NAME_27_0=Not Exclusive [Normal]
+CHOICE_NAME_27_0=Not Exclusive (Normal)
 CHOICE_NAME_27_1=Weapon & Armor Slot 1
 CHOICE_NAME_27_2=Weapon & Armor Slots 1, 2
 CHOICE_NAME_27_3=Armor Slots 2, 3, 4
@@ -440,7 +440,7 @@ DEFAULT_VAL_27=0
 DEFAULT_VAL_28=-1
 DEFAULT_VAL_29=-1
 <<--CSV_START-->>
-"Weapon Name","Description [Up to 2 Lines]","Equipment Type","Equippable Slots 1-4","Equippable Slots 5-8","Attack Animation","Max HP Change","Max SP Change","Attack Change","Defense Change","Magic Attack Change","Magic Defense Change","Agility Change","Accuracy [%] Change","Evasion [%] Change","Critical Rate [%] Change","Equipped, Can't Remove?","Sell Price [0=Can't Sell]","┏ Add State       ","┗ State Rate [%]","┏ Change Battle Command","┗ New Command                ","Skill When Used As Item       ","┣ Skill to Use                          ","┣ Message [Map]                  ","┣ Message [Battle] (Name...","┗ Item Changes After Use   ","Exclusive Slots on Equip","Element 1","Element 2",
+"Weapon Name","Description (Up to 2 Lines)","Equipment Type","Equippable Slots 1-4","Equippable Slots 5-8","Attack Animation","Max HP Change","Max SP Change","Attack Change","Defense Change","Magic Attack Change","Magic Defense Change","Agility Change","Accuracy (%) Change","Evasion (%) Change","Critical Rate (%) Change","Equipped, Can't Remove?","Sell Price (0=Can't Sell)","┏ Add State       ","┗ State Rate (%)","┏ Change Battle Command","┗ New Command                ","Skill When Used As Item       ","┣ Skill to Use                          ","┣ Message (Map)                  ","┣ Message (Battle): Name...","┗ Item Changes After Use   ","Exclusive Slots on Equip","Element 1","Element 2",
 "Dagger","A dagger. Increases Attack by 10.",0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,110,-1,0,0,0,0,0,"","",-3,0,1,2,
 "Mini Blade","A very short sword. Only increases Attack by 1,
 but equippable in Left Hand.",0,1,0,3,0,0,1,0,0,0,0,0,0,0,0,300,-2,-1,0,0,0,0,"","",-3,0,-1,-1,

@@ -12,8 +12,8 @@ DATA_NUM=16
 TYPENAME=BGM List
 ITEMNAME_NUM=4
 ITEMNAME0=Filename
-ITEMNAME1=Playback Volume [%]
-ITEMNAME2=Playback Pitch [%]
+ITEMNAME1=Playback Volume (%)
+ITEMNAME2=Playback Pitch (%)
 ITEMNAME3=Loop Start (ms)/Key ±
 MEMO=Specify BGM selectable<<\n>>via "By Direct Selection<<\n>>(from SystemDB)" in the<<\n>>Sound command.<<\n>><<\n>>"Loop Start (ms)/Key ±"<<\n>>works as follows:<<\n>>- For OGG or MP3:<<\n>>   Loop start position (ms)<<\n>>- For MIDI:<<\n>>   Key shift (-24 to +24)
 ITEMTYPE_NUM=100
@@ -140,7 +140,7 @@ DEFAULT_VAL_1=100
 DEFAULT_VAL_2=100
 DEFAULT_VAL_3=0
 <<--CSV_START-->>
-"Filename","Playback Volume [%]","Playback Pitch [%]","Loop Start (ms)/Key ±",
+"Filename","Playback Volume (%)","Playback Pitch (%)","Loop Start (ms)/Key ±",
 "BGM/Town01_Takumi.mid",80,100,0,<<!--DATANAME--!>>Town,
 "BGM/Piece01_Takumi.mid",100,100,0,<<!--DATANAME--!>>End Credits,
 "BGM/Legend01_Takumi.mid",80,100,0,<<!--DATANAME--!>>Title Track,

@@ -225,7 +225,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<2>()("項目1個目の追加")
 [250][4,4]<2>(19,1600010,0,327682)("項目1つめ","Universal Window Items","","Item Text")
 [250][5,4]<2>(19,1600010,1,327680,100)("","Universal Window Items","","Item Code")
-[250][5,4]<2>(19,1600010,2,327680,1)("","Universal Window Items","","Selectable? [1:Yes]")
+[250][5,4]<2>(19,1600010,2,327680,1)("","Universal Window Items","","Selectable? (1:Yes)")
 [250][4,4]<2>(19,1600010,6,327682)("項目1つめの説明文です","Universal Window Items","","Description")
 [121][4,0]<2>(1600010,1,0,256)()
 [0][0,0]<2>()()
@@ -234,7 +234,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<2>()("項目2個目の追加")
 [250][4,4]<2>(19,1600010,0,327682)("項目2つめ","Universal Window Items","","Item Text")
 [250][5,4]<2>(19,1600010,1,327680,200)("","Universal Window Items","","Item Code")
-[250][5,4]<2>(19,1600010,2,327680,1)("","Universal Window Items","","Selectable? [1:Yes]")
+[250][5,4]<2>(19,1600010,2,327680,1)("","Universal Window Items","","Selectable? (1:Yes)")
 [250][4,4]<2>(19,1600010,6,327682)("項目2つめの説明文です","Universal Window Items","","Description")
 [121][4,0]<2>(1600010,1,0,256)()
 [0][0,0]<2>()()
@@ -678,7 +678,7 @@ WoditorEvCOMMAND_END
  | |▼ 項目1個目の追加
  | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf10:"Item Text" ] (19:-:0) =  項目1つめ
  | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf10:"Item Code" ] (19:-:1) =  100
- | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf10:"Selectable? [1:Yes]" ] (19:-:2) =  1
+ | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf10:"Selectable? (1:Yes)" ] (19:-:2) =  1
  | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf10:"Description" ] (19:-:6) =  項目1つめの説明文です
  | |■Set Variable: CSelf10 += 1 + 0 
  | |■
@@ -687,7 +687,7 @@ WoditorEvCOMMAND_END
  | |▼ 項目2個目の追加
  | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf10:"Item Text" ] (19:-:0) =  項目2つめ
  | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf10:"Item Code" ] (19:-:1) =  200
- | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf10:"Selectable? [1:Yes]" ] (19:-:2) =  1
+ | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf10:"Selectable? (1:Yes)" ] (19:-:2) =  1
  | |■Write to DB(Var): VarDB[ "Universal Window Items":CSelf10:"Description" ] (19:-:6) =  項目2つめの説明文です
  | |■Set Variable: CSelf10 += 1 + 0 
  | |■

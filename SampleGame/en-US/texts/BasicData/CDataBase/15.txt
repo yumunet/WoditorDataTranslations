@@ -69,8 +69,8 @@ TYPENAME=×┗Reward List
 ITEMNAME_NUM=60
 ITEMNAME0=EXP Gain
 ITEMNAME1=Money Gain
-ITEMNAME2=EXP Multiplier [Base 100]
-ITEMNAME3=Money Multiplier [Base 100]
+ITEMNAME2=EXP Multiplier (Base 100)
+ITEMNAME3=Money Multiplier (Base 100)
 ITEMNAME4=
 ITEMNAME5=
 ITEMNAME6=
@@ -474,7 +474,7 @@ DEFAULT_VAL_57=0
 DEFAULT_VAL_58=0
 DEFAULT_VAL_59=0
 <<--CSV_START-->>
-"EXP Gain","Money Gain","EXP Multiplier [Base 100]","Money Multiplier [Base 100]","","","","","","","","","","","","","","","","","[Item Drop Count]","Item Drop Code","Item Drop Code","Item Drop Code","Item Drop Code","Item Drop Code","Rest Omitted","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",
+"EXP Gain","Money Gain","EXP Multiplier (Base 100)","Money Multiplier (Base 100)","","","","","","","","","","","","","","","","","[Item Drop Count]","Item Drop Code","Item Drop Code","Item Drop Code","Item Drop Code","Item Drop Code","Rest Omitted","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",
 0,0,100,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,<<!--DATANAME--!>>,
 
 <<--CSV_END-->>

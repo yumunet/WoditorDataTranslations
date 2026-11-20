@@ -207,8 +207,8 @@ WoditorEvCOMMAND_START
 [0][0,0]<1>()()
 [499][0,0]<0>()()
 [103][0,1]<0>()("受けた技能に攻撃力と精神攻撃力が影響するか取得")
-[250][5,4]<0>(0,1600001,10,332288,1600030)("","Skills","","┣ Attack Influence [%]           ")
-[250][5,4]<0>(0,1600001,11,332288,1600031)("","Skills","","┣ Magic Influence [%]           ")
+[250][5,4]<0>(0,1600001,10,332288,1600030)("","Skills","","┣ Attack Influence (%)           ")
+[250][5,4]<0>(0,1600001,11,332288,1600031)("","Skills","","┣ Magic Influence (%)           ")
 [121][5,0]<0>(1600030,0,0,67072,1)()
 [121][5,0]<0>(1600030,1,0,67328,1)()
 [103][0,1]<0>()(" ")
@@ -282,7 +282,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [103][0,1]<2>()("【３】確率判定")
-[250][5,4]<2>(8,1600023,42,332288,1600032)("","States","","┣ Counter Trigger Rate [%]    ")
+[250][5,4]<2>(8,1600023,42,332288,1600032)("","States","","┣ Counter Trigger Rate (%)    ")
 [121][4,0]<2>(1600032,0,99,25088)()
 [111][4,0]<2>(1,1600032,1,1)()
 [401][1,0]<2>(1)()
@@ -343,8 +343,8 @@ WoditorEvCOMMAND_END
  |■
 ◇End◇
 ▼ 受けた技能に攻撃力と精神攻撃力が影響するか取得
-■Load DB(User):  CSelf30[攻撃力の影響有り？] = UserDB[ "Skills":CSelf1[技能番号]:"┣ Attack Influence [%]           " ] (0:-:10) 
-■Load DB(User):  CSelf31[精神攻撃の影響有り？] = UserDB[ "Skills":CSelf1[技能番号]:"┣ Magic Influence [%]           " ] (0:-:11) 
+■Load DB(User):  CSelf30[攻撃力の影響有り？] = UserDB[ "Skills":CSelf1[技能番号]:"┣ Attack Influence (%)           " ] (0:-:10) 
+■Load DB(User):  CSelf31[精神攻撃の影響有り？] = UserDB[ "Skills":CSelf1[技能番号]:"┣ Magic Influence (%)           " ] (0:-:11) 
 ■Set Variable: CSelf30[攻撃力の影響有り？] to CSelf31[精神攻撃の影響有り？] Lower Bound= 0 + 0 
 ■Set Variable: CSelf30[攻撃力の影響有り？] to CSelf31[精神攻撃の影響有り？] Upper Bound= 1 + 0 
 ▼  
@@ -418,7 +418,7 @@ WoditorEvCOMMAND_END
  | | |■
  | |◇End◇
  | |▼ 【３】確率判定
- | |■Load DB(User):  CSelf32[確率] = UserDB[ "States":CSelf23[注目位置]:"┣ Counter Trigger Rate [%]    " ] (8:-:42) 
+ | |■Load DB(User):  CSelf32[確率] = UserDB[ "States":CSelf23[注目位置]:"┣ Counter Trigger Rate (%)    " ] (8:-:42) 
  | |■Set Variable: CSelf32[確率] -= 0 Random 99 
  | |■Condition (Number):   [1] CSelf32[確率] >=  1  
  | |-◇Condition:  [1]  [ CSelf32[確率] >= 1   ] Case↓

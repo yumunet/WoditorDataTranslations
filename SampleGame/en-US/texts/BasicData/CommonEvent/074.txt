@@ -251,8 +251,8 @@ WoditorEvCOMMAND_START
 [250][5,4]<1>(0,1600000,26,331776,1600042)("","Allies","","[Growth] Critical Rt Add /1Lv")
 [103][0,1]<1>()(" ")
 [250][5,4]<1>(0,1600000,58,331776,1600043)("","Allies","","Current Level Required EXP")
-[250][5,4]<1>(0,1600000,59,331776,1600044)("","Allies","","Required EXP Incr Rate [%]")
-[250][5,4]<1>(0,1600000,60,331776,1600045)("","Allies","","Required EXP Incr[FixedValue]")
+[250][5,4]<1>(0,1600000,59,331776,1600044)("","Allies","","Required EXP Incr Rate (%)")
+[250][5,4]<1>(0,1600000,60,331776,1600045)("","Allies","","Required EXP Incr(FixedValue)")
 [103][0,1]<1>()(" ")
 [103][0,1]<1>()("Check Ally ID. (If Ally ID has changed, reset.)")
 [111][7,0]<1>(2,1600032,-1,5,1600032,-1,2)()
@@ -460,8 +460,8 @@ WoditorEvCOMMAND_END
  |■Load DB(Var):  CSelf42[Critical Rate Growth] = VarDB[ "Allies":CSelf0[Ally ID]:"[Growth] Critical Rt Add /1Lv" ] (0:-:27) 
  |▼  
  |■Load DB(Var):  CSelf43[Required EXP] = VarDB[ "Allies":CSelf0[Ally ID]:"Current Level Required EXP" ] (0:-:55) 
- |■Load DB(Var):  CSelf44[Required EXP Increase Rate (%)] = VarDB[ "Allies":CSelf0[Ally ID]:"Required EXP Incr Rate [%]" ] (0:-:56) 
- |■Load DB(Var):  CSelf45[Required EXP Increase (Fixed Value)] = VarDB[ "Allies":CSelf0[Ally ID]:"Required EXP Incr[FixedValue]" ] (0:-:57) 
+ |■Load DB(Var):  CSelf44[Required EXP Increase Rate (%)] = VarDB[ "Allies":CSelf0[Ally ID]:"Required EXP Incr Rate (%)" ] (0:-:56) 
+ |■Load DB(Var):  CSelf45[Required EXP Increase (Fixed Value)] = VarDB[ "Allies":CSelf0[Ally ID]:"Required EXP Incr(FixedValue)" ] (0:-:57) 
  |▼  
  |▼ Check Ally ID. (If Ally ID has changed, reset.)
  |■Condition (Number):   [1] CSelf32[Ally ID] !=  -1  /  [2] CSelf32[Ally ID] ==  -1  

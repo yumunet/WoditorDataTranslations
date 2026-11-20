@@ -876,7 +876,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<4>()("Set the item color here.")
 [103][0,1]<4>()("If selectable, white. If not selectable, dark blue.")
 [121][5,0]<4>(1600053,100,0,65536,2)()
-[250][5,4]<4>(19,1600043,0,331776,1600010)("","Universal Window Items","","Selectable? [1:Yes]")
+[250][5,4]<4>(19,1600043,0,331776,1600010)("","Universal Window Items","","Selectable? (1:Yes)")
 [111][4,0]<4>(1,1600010,0,2)()
 [401][1,0]<4>(1)()
 [121][4,0]<5>(1600053,50,0,0)()
@@ -1753,7 +1753,7 @@ WoditorEvCOMMAND_END
  | | | |▼ Set the item color here.
  | | | |▼ If selectable, white. If not selectable, dark blue.
  | | | |■Set Variable: CSelf53[Color R] to CSelf55[Color B] = 100 + 0 
- | | | |■Load DB(Var):  CSelf10[Temp A] = VarDB[ "Universal Window Items":CSelf43[Item Position Being Processed]:"Selectable? [1:Yes]" ] (19:-:2) 
+ | | | |■Load DB(Var):  CSelf10[Temp A] = VarDB[ "Universal Window Items":CSelf43[Item Position Being Processed]:"Selectable? (1:Yes)" ] (19:-:2) 
  | | | |■Condition (Number):   [1] CSelf10[Temp A] ==  0  
  | | | |-◇Condition:  [1]  [ CSelf10[Temp A] == 0   ] Case↓
  | | | | |■Set Variable: CSelf53[Color R] = 50 + 0 

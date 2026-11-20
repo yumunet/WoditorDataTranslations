@@ -295,10 +295,10 @@ WoditorEvCOMMAND_START
 [0][0,0]<3>()()
 [498][0,0]<2>()()
 [103][0,1]<2>()("Calculate remaining turns. (If base turn is -1, infinite)")
-[250][5,4]<2>(8,1600011,4,332288,1600012)("","States","","Duration in Turns [-1:Infinite]")
+[250][5,4]<2>(8,1600011,4,332288,1600012)("","States","","Duration in Turns (-1:Infinite)")
 [111][4,0]<2>(17,1600012,0,1)()
 [401][1,0]<2>(1)()
-[250][5,4]<3>(8,1600011,5,332288,1600013)("","States","","┗ Duration Variance [±]")
+[250][5,4]<3>(8,1600011,5,332288,1600013)("","States","","┗ Duration Variance (±)")
 [121][4,0]<3>(1600014,1600012,1600013,4096)()
 [121][4,0]<3>(1600013,2,0,768)()
 [121][4,0]<3>(1600014,0,1600013,24832)()
@@ -637,10 +637,10 @@ WoditorEvCOMMAND_END
  | | |■
  | |◇Loop End Point◇◇
  | |▼ Calculate remaining turns. (If base turn is -1, infinite)
- | |■Load DB(User):  CSelf12[Base Turns] = UserDB[ "States":CSelf11[Target State ID]:"Duration in Turns [-1:Infinite]" ] (8:-:4) 
+ | |■Load DB(User):  CSelf12[Base Turns] = UserDB[ "States":CSelf11[Target State ID]:"Duration in Turns (-1:Infinite)" ] (8:-:4) 
  | |■Condition (Number):   [1] CSelf12[Base Turns] >=  0  
  | |-◇Condition:  [1]  [ CSelf12[Base Turns] >= 0   ] Case↓
- | | |■Load DB(User):  CSelf13[Change Turns] = UserDB[ "States":CSelf11[Target State ID]:"┗ Duration Variance [±]" ] (8:-:5) 
+ | | |■Load DB(User):  CSelf13[Change Turns] = UserDB[ "States":CSelf11[Target State ID]:"┗ Duration Variance (±)" ] (8:-:5) 
  | | |■Set Variable: CSelf14[Total Turns] = CSelf12[Base Turns] - CSelf13[Change Turns] 
  | | |■Set Variable: CSelf13[Change Turns] *= 2 + 0 
  | | |■Set Variable: CSelf14[Total Turns] += 0 Random CSelf13[Change Turns] 

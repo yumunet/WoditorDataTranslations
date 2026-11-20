@@ -195,7 +195,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<3>()("アイテム時のメッセージ保存")
 [121][4,0]<3>(1600017,1,0,0)()
 [250][5,4]<3>(2,1600010,5,332320,1600017)("","Items","","┃┗ Battle Message on Use")
-[250][5,4]<3>(2,1600010,18,332288,1600006)("","Items","","Use Message [Battle] (Name...")
+[250][5,4]<3>(2,1600010,18,332288,1600006)("","Items","","Use Message (Battle): Name...")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [103][0,1]<2>()("ここでアイテムがなかったらアイテム不足フラグを1にする")
@@ -218,7 +218,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<3>(3,1600010,23,332288,1600034)("","Weapons","","┣ Skill to Use                          ")
 [103][0,1]<3>()("アイテム時のメッセージ保存")
 [121][4,0]<3>(1600017,1,0,0)()
-[250][5,4]<3>(3,1600010,25,332288,1600006)("","Weapons","","┣ Message [Battle] (Name...")
+[250][5,4]<3>(3,1600010,25,332288,1600006)("","Weapons","","┣ Message (Battle): Name...")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [103][0,1]<2>()("装備がなかったらアイテム不足フラグを1にする")
@@ -241,7 +241,7 @@ WoditorEvCOMMAND_START
 [250][5,4]<3>(4,1600010,21,332288,1600034)("","Armor","","┣ Skill to Use                          ")
 [103][0,1]<3>()("アイテム時のメッセージ保存")
 [121][4,0]<3>(1600017,1,0,0)()
-[250][5,4]<3>(4,1600010,23,332288,1600006)("","Armor","","┣ Message [Battle] (Name...")
+[250][5,4]<3>(4,1600010,23,332288,1600006)("","Armor","","┣ Message (Battle): Name...")
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [103][0,1]<2>()("装備がなかったらアイテム不足フラグを1にする")
@@ -431,7 +431,7 @@ WoditorEvCOMMAND_START
 [103][0,1]<1>()("とりあえず使用可能なら発動メッセージ表示")
 [111][7,0]<1>(2,1600017,0,2,1600017,1,2)()
 [401][1,0]<1>(1)()
-[250][5,4]<2>(0,1600034,14,332288,1600009)("","Skills","","Use Message [Battle] (Name...")
+[250][5,4]<2>(0,1600034,14,332288,1600009)("","Skills","","Use Message (Battle): Name...")
 [112][2,4]<2>(1,270035465)("","","","")
 [401][1,0]<2>(1)()
 [250][5,4]<3>(11,1600016,0,331776,1600008)("","×┏Battle Temp Status","","Character Name")
@@ -514,7 +514,7 @@ WoditorEvCOMMAND_START
 [401][1,0]<2>(1)()
 [103][0,1]<3>()("発動アイテムチェック")
 [121][4,0]<3>(1600014,1,0,0)()
-[250][5,4]<3>(0,1600034,20,332288,1600013)("","Skills","","Item Required? [Consume]")
+[250][5,4]<3>(0,1600034,20,332288,1600013)("","Skills","","Item Required? (Consume)")
 [111][4,0]<3>(1,1600013,0,1)()
 [401][1,0]<3>(1)()
 [300][4,1]<4>(0,16777217,1600013,1600012)("X[Com]Get Item Quantity")
@@ -556,7 +556,7 @@ WoditorEvCOMMAND_START
 [0][0,0]<3>()()
 [499][0,0]<2>()()
 [103][0,1]<2>()("使用時メッセージがあれば表示")
-[250][5,4]<2>(2,1600035,18,332288,1600009)("","Items","","Use Message [Battle] (Name...")
+[250][5,4]<2>(2,1600035,18,332288,1600009)("","Items","","Use Message (Battle): Name...")
 [112][2,4]<2>(1,270035465)("","","","")
 [401][1,0]<2>(1)()
 [250][5,4]<3>(11,1600016,0,331776,1600008)("","×┏Battle Temp Status","","Character Name")
@@ -628,7 +628,7 @@ WoditorEvCOMMAND_END
  | | |▼ アイテム時のメッセージ保存
  | | |■Set Variable: CSelf17[アイテム側メッセージ使用？] = 1 + 0 
  | | |■Load DB(User):  CSelf17[アイテム側メッセージ使用？] -= UserDB[ "Items":CSelf10[一時変数A]:"┃┗ Battle Message on Use" ] (2:-:5) 
- | | |■Load DB(User):  CSelf6[アイテム時メッセージ] = UserDB[ "Items":CSelf10[一時変数A]:"Use Message [Battle] (Name..." ] (2:-:18) 
+ | | |■Load DB(User):  CSelf6[アイテム時メッセージ] = UserDB[ "Items":CSelf10[一時変数A]:"Use Message (Battle): Name..." ] (2:-:18) 
  | | |■
  | |◇End◇
  | |▼ ここでアイテムがなかったらアイテム不足フラグを1にする
@@ -651,7 +651,7 @@ WoditorEvCOMMAND_END
  | | |■Load DB(User):  CSelf34[技能コード] = UserDB[ "Weapons":CSelf10[一時変数A]:"┣ Skill to Use                          " ] (3:-:23) 
  | | |▼ アイテム時のメッセージ保存
  | | |■Set Variable: CSelf17[アイテム側メッセージ使用？] = 1 + 0 
- | | |■Load DB(User):  CSelf6[アイテム時メッセージ] = UserDB[ "Weapons":CSelf10[一時変数A]:"┣ Message [Battle] (Name..." ] (3:-:25) 
+ | | |■Load DB(User):  CSelf6[アイテム時メッセージ] = UserDB[ "Weapons":CSelf10[一時変数A]:"┣ Message (Battle): Name..." ] (3:-:25) 
  | | |■
  | |◇End◇
  | |▼ 装備がなかったらアイテム不足フラグを1にする
@@ -674,7 +674,7 @@ WoditorEvCOMMAND_END
  | | |■Load DB(User):  CSelf34[技能コード] = UserDB[ "Armor":CSelf10[一時変数A]:"┣ Skill to Use                          " ] (4:-:21) 
  | | |▼ アイテム時のメッセージ保存
  | | |■Set Variable: CSelf17[アイテム側メッセージ使用？] = 1 + 0 
- | | |■Load DB(User):  CSelf6[アイテム時メッセージ] = UserDB[ "Armor":CSelf10[一時変数A]:"┣ Message [Battle] (Name..." ] (4:-:23) 
+ | | |■Load DB(User):  CSelf6[アイテム時メッセージ] = UserDB[ "Armor":CSelf10[一時変数A]:"┣ Message (Battle): Name..." ] (4:-:23) 
  | | |■
  | |◇End◇
  | |▼ 装備がなかったらアイテム不足フラグを1にする
@@ -864,7 +864,7 @@ WoditorEvCOMMAND_END
  |▼ とりあえず使用可能なら発動メッセージ表示
  |■Condition (Number):   [1] CSelf17[アイテム側メッセージ使用？] ==  0  /  [2] CSelf17[アイテム側メッセージ使用？] ==  1  
  |-◇Condition:  [1]  [ CSelf17[アイテム側メッセージ使用？] == 0   ] Case↓
- | |■Load DB(User):  CSelf9[一時項目名] = UserDB[ "Skills":CSelf34[技能コード]:"Use Message [Battle] (Name..." ] (0:-:14) 
+ | |■Load DB(User):  CSelf9[一時項目名] = UserDB[ "Skills":CSelf34[技能コード]:"Use Message (Battle): Name..." ] (0:-:14) 
  | |■Condition (String):   [1] CSelf9[一時項目名] Is Not Equal to ""
  | |-◇Condition:  [1] [ CSelf9[一時項目名] Is Not Equal to "" ] Case↓
  | | |■Load DB(Var):  CSelf8[キャラ名] = VarDB[ "×┏Battle Temp Status":CSelf16[発動スロット]:"Character Name" ] (10:-:0) 
@@ -947,7 +947,7 @@ WoditorEvCOMMAND_END
  | |-◇Condition:  [1]  [ CSelf16[発動スロット] <= 9   ] Case↓
  | | |▼ 発動アイテムチェック
  | | |■Set Variable: CSelf14[発動アイテムチェック] = 1 + 0 
- | | |■Load DB(User):  CSelf13[一時変数D] = UserDB[ "Skills":CSelf34[技能コード]:"Item Required? [Consume]" ] (0:-:20) 
+ | | |■Load DB(User):  CSelf13[一時変数D] = UserDB[ "Skills":CSelf34[技能コード]:"Item Required? (Consume)" ] (0:-:20) 
  | | |■Condition (Number):   [1] CSelf13[一時変数D] >=  0  
  | | |-◇Condition:  [1]  [ CSelf13[一時変数D] >= 0   ] Case↓
  | | | |■Call Event [Name]: CSelf12[一時変数C] = ["X[Com]Get Item Quantity"] <CommonEv 54>  / CSelf13[一時変数D]
@@ -989,7 +989,7 @@ WoditorEvCOMMAND_END
  | | |■
  | |◇End◇
  | |▼ 使用時メッセージがあれば表示
- | |■Load DB(User):  CSelf9[一時項目名] = UserDB[ "Items":CSelf35[アイテムコード]:"Use Message [Battle] (Name..." ] (2:-:18) 
+ | |■Load DB(User):  CSelf9[一時項目名] = UserDB[ "Items":CSelf35[アイテムコード]:"Use Message (Battle): Name..." ] (2:-:18) 
  | |■Condition (String):   [1] CSelf9[一時項目名] Is Not Equal to ""
  | |-◇Condition:  [1] [ CSelf9[一時項目名] Is Not Equal to "" ] Case↓
  | | |■Load DB(Var):  CSelf8[キャラ名] = VarDB[ "×┏Battle Temp Status":CSelf16[発動スロット]:"Character Name" ] (10:-:0) 
